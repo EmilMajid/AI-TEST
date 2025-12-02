@@ -383,6 +383,21 @@ export default function RegisterPage() {
                           )}
                         </div>
 
+                        <div>
+                          <Label htmlFor="birthDate">Doğum tarixi *</Label>
+                          <Input
+                            id="birthDate"
+                            type="date"
+                            {...studentForm.register("birthDate")}
+                            className={studentForm.formState.errors.birthDate ? "border-red-500" : ""}
+                          />
+                          {studentForm.formState.errors.birthDate && (
+                            <p className="text-red-500 text-sm mt-1">
+                              {studentForm.formState.errors.birthDate.message}
+                            </p>
+                          )}
+                        </div>
+
                         {/* Location and School */}
                         <div className="space-y-4">
                           <div>
@@ -628,6 +643,21 @@ export default function RegisterPage() {
                           {parentForm.formState.errors.fatherName && (
                             <p className="text-red-500 text-sm mt-1">
                               {parentForm.formState.errors.fatherName.message}
+                            </p>
+                          )}
+                        </div>
+
+                        <div>
+                          <Label htmlFor="parent-birthDate">Doğum tarixi *</Label>
+                          <Input
+                            id="parent-birthDate"
+                            type="date"
+                            {...parentForm.register("birthDate")}
+                            className={parentForm.formState.errors.birthDate ? "border-red-500" : ""}
+                          />
+                          {parentForm.formState.errors.birthDate && (
+                            <p className="text-red-500 text-sm mt-1">
+                              {parentForm.formState.errors.birthDate.message}
                             </p>
                           )}
                         </div>

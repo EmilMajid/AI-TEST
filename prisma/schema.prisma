@@ -19,6 +19,7 @@ model User {
   fatherName String
   region    String
   school    String
+  birthDate DateTime?
   accountType String // "student" or "parent"
   role      String?  // "parent", "teacher", "director" (for non-students)
   class     String?  // Only for students (1-11)

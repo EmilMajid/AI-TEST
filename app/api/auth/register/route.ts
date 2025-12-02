@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
             role: accountType === "student" ? undefined : (validatedData as any).role,
             class: accountType === "student" ? (validatedData as any).class : undefined,
             school: validatedData.school,
-            birthDate: (validatedData as any).birthDate,
+            birthDate: validatedData.birthDate,
           },
           session: {
             access_token: token,
@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
       father_name: validatedData.fatherName,
       region: validatedData.region,
       school: validatedData.school,
-      birth_date: (validatedData as any).birthDate,
+      birth_date: validatedData.birthDate,
       account_type: accountType,
       class: accountType === "student" ? (validatedData as any).class : null,
       role: accountType === "student" ? null : (validatedData as any).role,

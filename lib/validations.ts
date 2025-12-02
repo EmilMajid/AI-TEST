@@ -25,6 +25,8 @@ export const userRegistrationSchema = z
       .max(50, "Ata adı 50 hərfdən çox ola bilməz")
       .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
 
+    birthDate: z.string().min(1, "Doğum tarixi seçilməlidir"),
+
     region: z.string().min(1, "Ərazi seçilməlidir"),
 
     school: z.string().min(3, "Məktəb adı ən azı 3 hərf olmalıdır").max(100, "Məktəb adı 100 hərfdən çox ola bilməz"),
@@ -82,6 +84,8 @@ export const parentRegistrationSchema = z
       .min(2, "Ata adı ən azı 2 hərf olmalıdır")
       .max(50, "Ata adı 50 hərfdən çox ola bilməz")
       .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
+
+    birthDate: z.string().min(1, "Doğum tarixi seçilməlidir"),
 
     region: z.string().min(1, "Ərazi seçilməlidir"),
 
