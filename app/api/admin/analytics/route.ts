@@ -53,7 +53,7 @@ export async function GET(request: NextRequest) {
         tests: {
           total: totalTests,
           averageScore: Math.round((avgScore._avg.score || 0) * 100) / 100,
-          bySubject: testsBySubject.map((item) => ({
+          bySubject: testsBySubject.map((item: { textbook: string; _count: number; _avg: { score: number | null } }) => ({
             subject: item.textbook,
             count: item._count,
             avgScore: Math.round((item._avg.score || 0) * 100) / 100,
