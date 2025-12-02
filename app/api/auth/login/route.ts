@@ -12,10 +12,19 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // Check for demo mode
-    const isDemoMode = process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("demo") || process.env.NODE_ENV === "development"
+    // Demo mode is only for specific demo accounts, not all development logins
+    const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE === "true" || process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("demo")
 
-    if (isDemoMode) {
+    // Try real authentication first (unless explicitly demo mode)
+    let shouldTryRealAuth = true
+
+    // Check if this is a known demo account
+    const demoEmails = ["demo@example.com", "test@example.com"]
+    if (demoEmails.includes(body.email?.toLowerCase())) {
+      shouldTryRealAuth = false
+    }
+
+    if (isDemoMode && !shouldTryRealAuth) {
       // Mock Data for the specific scenario
       const mockUsers = [
         {
@@ -183,40 +192,140 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Yanlış sorğu" }, { status: 400 });
     }
 
-    // Real Supabase Auth (unchanged for now, as this feature is demo-focused)
+    // Real Supabase Auth - Handle action-based flow
     const supabase = await createClient()
-    const { email, password } = loginSchema.parse(body) // Use schema only for direct login
+    const { action, email, password, role, userId } = body
 
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
+    // ACTION: LOOKUP
+    if (action === "lookup") {
+      try {
+        // Query profiles table for users with this email
+        let query = supabase
+          .from("profiles")
+          .select("id, email, first_name, last_name, father_name, account_type, school, class, role, region")
+          .eq("email", email.toLowerCase())
 
-    if (error) {
-      return NextResponse.json({ error: "Email və ya şifrə səhvdir" }, { status: 401 })
+        // Filter by role if provided
+        if (role) {
+          query = query.eq("account_type", role)
+        }
+
+        const { data: profiles, error } = await query
+
+        if (error) {
+          console.error("Profile lookup error:", error)
+          return NextResponse.json({ error: "İstifadəçi axtarışı zamanı xəta" }, { status: 500 })
+        }
+
+        if (!profiles || profiles.length === 0) {
+          return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
+        }
+
+        return NextResponse.json({
+          success: true,
+          users: profiles.map(p => ({
+            id: p.id,
+            firstName: p.first_name,
+            lastName: p.last_name,
+            fatherName: p.father_name,
+            accountType: p.account_type,
+            school: p.school,
+            class: p.class,
+            region: p.region,
+            role: p.role
+          }))
+        })
+      } catch (err) {
+        console.error("Lookup error:", err)
+        return NextResponse.json({ error: "Xəta baş verdi" }, { status: 500 })
+      }
     }
 
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("account_type, first_name, last_name, school, class, role")
-      .eq("id", data.user.id)
-      .single()
+    // ACTION: LOGIN
+    if (action === "login") {
+      try {
+        // Validate credentials with Supabase Auth
+        const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        })
 
-    return NextResponse.json({
-      success: true,
-      message: "Uğurlu giriş",
-      user: {
-        id: data.user.id,
-        email: data.user.email,
-        accountType: profile?.account_type,
-        firstName: profile?.first_name,
-        lastName: profile?.last_name,
-        school: profile?.school,
-        class: profile?.class,
-        role: profile?.role,
-      },
-      session: data.session,
-    })
+        if (authError) {
+          return NextResponse.json({ error: "Email və ya şifrə səhvdir" }, { status: 401 })
+        }
+
+        // Get user profile
+        const { data: profile, error: profileError } = await supabase
+          .from("profiles")
+          .select("id, email, first_name, last_name, father_name, account_type, school, class, role, region")
+          .eq("id", userId || authData.user.id)
+          .single()
+
+        if (profileError || !profile) {
+          console.error("Profile fetch error:", profileError)
+          return NextResponse.json({ error: "Profil məlumatları tapılmadı" }, { status: 404 })
+        }
+
+        return NextResponse.json({
+          success: true,
+          message: "Uğurlu giriş",
+          user: {
+            id: profile.id,
+            email: profile.email,
+            accountType: profile.account_type,
+            firstName: profile.first_name,
+            lastName: profile.last_name,
+            fatherName: profile.father_name,
+            school: profile.school,
+            class: profile.class,
+            role: profile.role,
+            region: profile.region,
+          },
+          session: authData.session,
+        })
+      } catch (err) {
+        console.error("Login error:", err)
+        return NextResponse.json({ error: "Giriş zamanı xəta" }, { status: 500 })
+      }
+    }
+
+    // Fallback for old-style direct login (no action specified)
+    if (!action && email && password) {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      })
+
+      if (error) {
+        return NextResponse.json({ error: "Email və ya şifrə səhvdir" }, { status: 401 })
+      }
+
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("account_type, first_name, last_name, father_name, school, class, role, region")
+        .eq("id", data.user.id)
+        .single()
+
+      return NextResponse.json({
+        success: true,
+        message: "Uğurlu giriş",
+        user: {
+          id: data.user.id,
+          email: data.user.email,
+          accountType: profile?.account_type,
+          firstName: profile?.first_name,
+          lastName: profile?.last_name,
+          fatherName: profile?.father_name,
+          school: profile?.school,
+          class: profile?.class,
+          role: profile?.role,
+          region: profile?.region,
+        },
+        session: data.session,
+      })
+    }
+
+    return NextResponse.json({ error: "Yanlış sorğu" }, { status: 400 })
   } catch (error) {
     console.error("Login error:", error)
     return NextResponse.json({ error: "Giriş zamanı xəta baş verdi" }, { status: 500 })
