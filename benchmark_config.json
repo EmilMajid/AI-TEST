@@ -1,0 +1,78 @@
+{
+  "test_cases": [
+    {
+      "grade": 8,
+      "subject": "fizika",
+      "topic": "Nyuton qanunları",
+      "difficulty": "orta",
+      "question_type": "mcq",
+      "expected_concepts": ["qüvvə", "kütlə", "təcil", "Nyuton"]
+    },
+    {
+      "grade": 9,
+      "subject": "kimya",
+      "topic": "Kimyəvi reaksiyalar",
+      "difficulty": "çətin",
+      "question_type": "mcq",
+      "expected_concepts": ["reaksiya", "məhsul", "reaktiv", "tənlik"]
+    },
+    {
+      "grade": 10,
+      "subject": "riyaziyyat",
+      "topic": "Triqonometriya",
+      "difficulty": "sadə",
+      "question_type": "open",
+      "expected_concepts": ["sinus", "kosinus", "bucaq", "dairə"]
+    },
+    {
+      "grade": 7,
+      "subject": "biologiya",
+      "topic": "Hüceyrə quruluşu",
+      "difficulty": "orta",
+      "question_type": "mcq",
+      "expected_concepts": ["hüceyrə", "orqanoid", "nüvə", "sitoplazma"]
+    },
+    {
+      "grade": 11,
+      "subject": "fizika",
+      "topic": "Elektrik cərəyanı",
+      "difficulty": "çətin",
+      "question_type": "mcq",
+      "expected_concepts": ["cərəyan", "gərginlik", "müqavimət", "Om"]
+    },
+    {
+      "grade": 6,
+      "subject": "azərbaycan_dili",
+      "topic": "Fel və onun növləri",
+      "difficulty": "sadə",
+      "question_type": "mcq",
+      "expected_concepts": ["fel", "zaman", "şəxs", "say"]
+    },
+    {
+      "grade": 9,
+      "subject": "riyaziyyat",
+      "topic": "Kvadrat tənliklər",
+      "difficulty": "orta",
+      "question_type": "mcq",
+      "expected_concepts": ["tənlik", "kök", "diskriminant", "kvadrat"]
+    },
+    {
+      "grade": 8,
+      "subject": "coğrafiya",
+      "topic": "İqlim zonala rı",
+      "difficulty": "orta",
+      "question_type": "mcq",
+      "expected_concepts": ["iqlim", "zona", "tropik", "mülayim"]
+    }
+  ],
+  "num_questions_per_case": 3,
+  "timeout_seconds": 30,
+  "quality_thresholds": {
+    "overall_score": 0.75,
+    "question_validity": 0.85,
+    "answer_correctness": 0.8,
+    "format_compliance": 0.9,
+    "textbook_relevance": 0.8,
+    "azerbaijani_quality": 0.85
+  }
+}

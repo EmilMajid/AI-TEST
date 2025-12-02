@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!--
+  Fizika - 8
+
+
+  Copyright © The Ministry of Education, Baku 2014. All rights reserved.
+
+  The story and all images are copyrighted property of The Ministry of Education of the Azerbaijan Rebublic with all rights reserved.
+  Use and/or duplication is not permitted without written permission from Ministry of Education of the Azerbaijan Rebublic.
+
+-->
+<head>
+
+    <meta name="viewport" content="width=750, height=1000"/>
+    <title>Fizika - 8</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../../assets/bootstrap-3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/main.css?v=6"/>
+
+    <!-- scripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <link rel="stylesheet" href="../../assets/js/idangerous.swiper/idangerous.swiper.css"/>
+    <script src="../../assets/js/lightbox/lightbox.min.js"></script>
+    <link rel="stylesheet" href="../../assets/js/lightbox/lightbox.css"/>
+    <script src="../../assets/js/idangerous.swiper/idangerous.swiper.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <link rel="stylesheet" href="../../assets/colorbox/colorbox.css"/>
+    <script src="../../assets/colorbox/jquery.colorbox-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Examples of how to assign the Colorbox event to elements
+            $(".inline").colorbox({inline: true, width: "90%"});
+            //Example of preserving a JavaScript event for inline calls.
+            $("#click").click(function () {
+                $('#click').css({
+                    "background-color": "#f00",
+                    "color": "#fff",
+                    "cursor": "inherit"
+                }).text("Open this window again and this message will still be here.");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- page -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 style="margin-top: 0">5.5. Elektroskop. Elektrometr</h3>
+
+            <div class="bg-info">
+                Şəkildə cisimlərin elektriklənməsini müşahidə etmək məqsədilə müxtəlif illərdə hazırlanmış cihazlar
+                təsvir edilmişdir.
+            </div>
+            <p class="text-center">
+                <a href="../../assets/img/page125/3.jpg" data-lightbox="image-1">
+                    <img src="../../assets/img/page125/3.jpg" alt="" width="85%"/>
+                </a>
+            </p>
+
+            <ul>
+                <li>Bu cihazların iş prinsipində ümumi olan nədir?</li>
+            </ul>
+
+            <ul class="text-info">
+                <li><strong><a class="inline" href="#electroscope">Elektroskop</a></strong></li>
+            </ul>
+
+            <div class="image-right" style="width: 240px">
+                <a href="../../assets/img/page125/1.jpg" data-lightbox="image-1">
+                    <img src="../../assets/img/page125/1.jpg" alt="" width="100%"/>
+                </a>
+            </div>
+
+            <p>
+                Bir cismin yüklü olub-olmadığını, yüklüdürsə. onun hansı növ yüklə elektrikləndiyini keyfiyyətcə aşkar
+                etmək məqsədilə istifadə olunan ən sadə cihaz <em>elektroskopdur</em> (yunanca <em>elektron</em> və <em>skopeo</em> - müşahidə
+                etmək, aşkarlamaq). Onun iş prinsipi yüklənmiş cisimlərin qarşılıqlı təsirinə əsaslanır.
+                Elektroskop dielektrik ayaqlıq (<strong>1</strong>) üzərinə bərkidilmiş gövdədən (<strong>2</strong>) ibarətdir. Gövdə iki tərəfdən şüşə
+                örtüklə (<strong>3</strong>) qapanmışdır. Gövdənin üst hissəsindəki dəliyə dielektrik tıxac (<strong>5</strong>) geydirilir. Tıxacdan
+                ucuna nazik kağızdan (və ya alüminium folqadan) hazırlanan iki "yarpaq" (<strong>6</strong>) yapışdırılmış metal mil (<strong>4</strong>)
+                keçirilmişdir (<strong>a</strong>). Elektroskopun daha çox yüklənməsi məqsədilə milinin sərbəst ucu metal sfera ilə
+                təchiz olunur (<strong>b</strong>).<br/>
+                Yüklənmiş cismi elektroskopun metal milinə və ya sferaya toxundurduqda mil və yarpaqlar eyniadlı yüklə
+                elektriklənir. Nəticədə yarpaqlar bir-birindən itələnərək açılır. Elektroskop nə qədər çox yüklənərsə,
+                yarpaqlar daha çox açılır.
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+<!--/page end -->
+
+<!-- This contains the hidden content for inline calls -->
+<div style='display:none'>
+    <div id='electroscope' style='padding-left:2px; background:#fff; text-align:center;'>
+        <video src="../../assets/video/page125/1.mp4" poster="../../assets/video/page125/1.jpg" width="640" height="360"
+               controls="controls"></video>
+        <p><strong>Elektroskop</strong></p>
+    </div>
+</div>
+</body>
+</html>

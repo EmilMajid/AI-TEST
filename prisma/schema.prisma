@@ -1,0 +1,154 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  firstName String
+  lastName  String
+  fatherName String
+  region    String
+  school    String
+  accountType String // "student" or "parent"
+  role      String?  // "parent", "teacher", "director" (for non-students)
+  class     String?  // Only for students (1-11)
+  
+  // JWT token for session management
+  tokens    Token[]
+  
+  // Relations
+  studentResults TestResult[]
+  linkedAs  ParentStudentLink[] @relation("Parent")
+  linkedTo  ParentStudentLink[] @relation("Student")
+  
+  // Metadata
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  lastLogin DateTime?
+  isActive  Boolean   @default(true)
+
+  @@index([email])
+  @@index([accountType])
+}
+
+model Token {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String    @unique
+  type      String    // "access" or "refresh"
+  expiresAt DateTime
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([token])
+}
+
+model ParentStudentLink {
+  id              Int       @id @default(autoincrement())
+  parentId        Int
+  parent          User      @relation("Parent", fields: [parentId], references: [id], onDelete: Cascade)
+  studentId       Int
+  student         User      @relation("Student", fields: [studentId], references: [id], onDelete: Cascade)
+  relationshipType String   // "parent", "guardian", "teacher", "tutor"
+  status          String    @default("active") // "active", "pending", "inactive"
+  approvedAt      DateTime?
+  linkedAt        DateTime  @default(now())
+  
+  @@unique([parentId, studentId])
+  @@index([parentId])
+  @@index([studentId])
+}
+
+model TestData {
+  id        Int       @id @default(autoincrement())
+  textbook  String
+  topic     String
+  class     String
+  difficulty String
+  createdAt DateTime  @default(now())
+
+  @@unique([textbook, topic, class])
+}
+
+model Question {
+  id              Int       @id @default(autoincrement())
+  question        String
+  options         String[]
+  correctAnswer   Int
+  explanation     String
+  difficulty      String    // "easy", "medium", "hard"
+  topic           String
+  bloomLevel      String    // "knowledge", "comprehension", "application", "analysis", "synthesis", "evaluation"
+  testDataId      Int?
+  
+  testResults     TestResult[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([topic])
+  @@index([bloomLevel])
+}
+
+model TestResult {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  textbook    String
+  topic       String
+  class       String
+  score       Int       // 0-100
+  timeSpent   Int       // seconds
+  answers     Json      // Store answers as JSON
+  questions   Question[]
+  
+  completedAt DateTime
+  savedAt     DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([userId])
+  @@index([completedAt])
+  @@index([topic])
+}
+
+model PermissionLog {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  action    String
+  resource  String
+  allowed   Boolean
+  reason    String?
+  metadata  Json?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([action])
+}
+
+model AuditLog {
+  id        Int       @id @default(autoincrement())
+  userId    Int?
+  action    String    // "create", "update", "delete", "login", "logout"
+  entity    String    // "user", "test_result", "link"
+  entityId  Int?
+  oldValue  Json?
+  newValue  Json?
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([action])
+  @@index([createdAt])
+}
