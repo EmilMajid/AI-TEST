@@ -57,9 +57,16 @@ export default function Dashboard() {
 
       setTestConfig((prev) => ({ ...prev, class: parsed.class }))
 
-      // Check if region is missing
+      console.log("[Dashboard] User data loaded:", parsed.email, "Region:", parsed.region)
+
+      // Only show region modal for users without a region
+      // Registered users already have a region saved
       if (!parsed.region) {
+        console.log("[Dashboard] Region missing, showing modal")
         setShowRegionModal(true)
+      } else {
+        console.log("[Dashboard] Region exists, skipping modal")
+        setShowRegionModal(false)
       }
     }
   }, [])
