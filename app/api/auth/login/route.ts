@@ -263,6 +263,7 @@ export async function POST(request: NextRequest) {
             lastName: "İstifadəçi",
             school: "Demo Məktəb",
             class: isStudent ? (email.includes("8") ? "8" : "11") : undefined,
+            region: "Bakı",
             role: fallbackRole,
           }
         }
@@ -290,6 +291,7 @@ export async function POST(request: NextRequest) {
             lastName: user.lastName,
             school: user.school,
             class: user.class,
+            region: user.region,
             role: user.role,
           },
           session: {

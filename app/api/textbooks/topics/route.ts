@@ -11,36 +11,86 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "edebiyyat": "Ədəbiyyat",
     "fizika": "Fizika",
     "informatika": "İnformatika",
-    "ingilis-dili": "İngilis dili",
     "kimya": "Kimya",
     "riyaziyyat": "Riyaziyyat",
     "texnologiya": "Texnologiya",
     "umumi-tarix": "Ümumi tarix",
+    "musiqi": "Musiqi",
+    "ortaq-turk-tarixi": "Ortaq türk tarixi",
+    "heyat-bilgisi": "Həyat bilgisi",
+    "tesviri-inceseent": "Təsviri incəsənət",
+    // Foreign Languages
+    "ingilis-dili": "İngilis dili",
+    "ingilis-dili-ikinci": "İngilis dili",
+    "alman-dili-esas": "Alman dili",
+    "alman-dili-ikinci": "Alman dili",
+    "fransiz-dili-esas": "Fransız dili",
+    "fransiz-dili-ikinci": "Fransız dili",
+    "rus-dili-esas": "Rus dili",
+    "rus-dili-ikinci": "Rus dili"
 }
 
-function extractTopicsFromTOC(tocPath: string): string[] {
+interface Topic {
+    title: string;
+    page: number;
+    endPage?: number;
+    path: string;
+}
+
+function extractTopicsFromTOC(tocPath: string): Topic[] {
     try {
         const content = fs.readFileSync(tocPath, "utf-8")
-        const topics: string[] = []
+        const topics: Topic[] = []
 
-        // Since HTML can be minified, use global regex
-        // Pattern to match Roman numerals (I, II, III, etc.) chapters
-        const romanPattern = />([IVX]+\.?\s+(?:BÖLMƏ\s+)?[^<]{15,}?)</g
+        // Extract text content from all anchor tags
+        // Matches <a href="...">Text Content</a>
+        const linkPattern = /<a[^>]*href="([^"]*)"[^>]*>([^<]+)<\/a>/gi
         let match
 
-        while ((match = romanPattern.exec(content)) !== null) {
-            let topic = match[1].trim()
+        while ((match = linkPattern.exec(content)) !== null) {
+            const href = match[1]
+            let text = match[2].trim()
 
-            // Clean up the topic
-            topic = topic.replace(/^[IVX]+\.?\s+/, "") // Remove Roman numerals
-            topic = topic.replace(/BÖLMƏ\s+/gi, "") // Remove "BÖLMƏ" word
-            topic = topic.trim()
+            // Extract page number from href
+            const pageMatch = href.match(/page(\d+)/i) || href.match(/(\d+)\.xhtml/)
+            let page = 0
+            if (pageMatch) {
+                page = parseInt(pageMatch[1])
+            }
 
-            // Only add if it's a meaningful topic (longer than 15 chars)
-            if (topic.length > 15 && !topics.includes(topic)) {
-                // Decode HTML entities if any
-                topic = topic.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
-                topics.push(topic)
+            // Decode HTML entities
+            text = text
+                .replace(/&amp;/g, "&")
+                .replace(/&lt;/g, "<")
+                .replace(/&gt;/g, ">")
+                .replace(/&quot;/g, '"')
+                .replace(/&#39;/g, "'")
+
+            // Filter logic:
+            const isRoman = /^[IVX]+\.?\s+/i.test(text)
+            const isNumbered = /^\d+(\.\d+)*\.?\s+/.test(text)
+            const hasKeyword = /BÖLMƏ|FƏSİL/i.test(text)
+            const isLongEnough = text.length > 5
+
+            if ((isRoman || isNumbered || hasKeyword) && isLongEnough) {
+                text = text.replace(/\s+/g, " ").trim()
+
+                if (!topics.find(t => t.title === text)) {
+                    topics.push({
+                        title: text,
+                        page: page,
+                        path: href
+                    })
+                }
+            }
+        }
+
+        // Calculate end pages
+        for (let i = 0; i < topics.length; i++) {
+            if (i < topics.length - 1) {
+                topics[i].endPage = topics[i + 1].page - 1
+            } else {
+                topics[i].endPage = topics[i].page + 10 // Default buffer
             }
         }
 
@@ -70,7 +120,7 @@ export async function GET(request: NextRequest) {
             )
         }
 
-        const topics: Record<string, string[]> = {}
+        const topics: Record<string, Topic[]> = {}
 
         // Read all textbook directories
         const subjects = fs.readdirSync(textbooksPath)
@@ -96,26 +146,19 @@ export async function GET(request: NextRequest) {
                     topics[displayName] = extractedTopics
                     console.log(`✓ ${displayName}: ${extractedTopics.length} topics extracted`)
                 } else {
-                    console.log(`⚠ ${displayName}: No topics found, using fallback`)
-                    // Fallback to a generic topic
-                    topics[displayName] = [`${displayName} - Ümumi`]
+                    console.log(`⚠ ${displayName}: No topics found`)
                 }
             } else {
                 console.log(`✗ ${displayName}: toc.xhtml not found at ${tocPath}`)
-                // Fallback
-                topics[displayName] = [`${displayName} - Ümumi`]
             }
         }
 
-        return NextResponse.json({
-            success: true,
-            class: classLevel,
-            topics,
-        })
-    } catch (error) {
-        console.error("Error extracting topics:", error)
+        console.log(`[Topics API] Total subjects with topics: ${Object.keys(topics).length}`)
+        return NextResponse.json({ success: true, class: classLevel, topics })
+    } catch (error: any) {
+        console.error("[Topics API] Error:", error)
         return NextResponse.json(
-            { error: "Mövzular yüklənərkən xəta baş verdi" },
+            { success: false, error: error.message },
             { status: 500 }
         )
     }

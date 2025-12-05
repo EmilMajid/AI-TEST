@@ -1,0 +1,110 @@
+/*
+==================================================================
+    File Name: Mixins SCSS
+==================================================================
+*/
+
+
+// border radius
+@mixin radius($val) {
+  -webkit-border-radius: $val;
+     -moz-border-radius: $val;
+      -ms-border-radius: $val;
+          border-radius: $val;
+}
+
+// transition
+@mixin trans($val: 0.15) {
+  -webkit-transition: all #{$val + "s"} ease-in-out 0s;
+     -moz-transition: all #{$val + "s"} ease-in-out 0s;
+      -ms-transition: all #{$val + "s"} ease-in-out 0s;
+       -o-transition: all #{$val + "s"} ease-in-out 0s;
+          transition: all #{$val + "s"} ease-in-out 0s;
+
+}
+
+// box shadow
+@mixin shadow($shadow1, $shadow2:false, $shadow3:false) {
+  $shadows: $shadow1;
+  @if $shadow2 { $shadows: $shadow1, $shadow2; }
+  @if $shadow3 { $shadows: $shadow1, $shadow2, $shadow3; }
+  -webkit-box-shadow: $shadows;
+     -moz-box-shadow: $shadows;
+      -ms-box-shadow: $shadows;
+       -o-box-shadow: $shadows;
+          box-shadow: $shadows;
+}
+
+// cover
+@mixin cover() {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -ms-behavior: url(backgroundsize.min.htc);
+  behavior: url(backgroundsize.min.htc);
+}
+
+
+// gradient
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top, $from, $to);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+
+@mixin gradient-left($from, $to) {
+  background: -moz-linear-gradient(left,  $from 0%, $to 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  $from 0%,$to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  $from 0%,$to 100%); /* IE10+ */
+  background: linear-gradient(to right,  $from 0%,$to 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=1 ); /* IE6-8 */
+}
+
+// opacity
+@mixin opacity($val) {
+  @if $val == 100 { opacity: $val; }
+  @else { opacity: #{"." + $val}; }
+  filter: alpha(opacity=$val);
+}
+
+
+// button
+@mixin button($opacity: 80) {
+
+  &:hover {
+    @include opacity($opacity);
+  }
+
+  &:active {
+    @include shadow(0 1px 5px rgba(0,0,0,.2) inset);
+  }
+
+}
+
+// input
+@mixin input($color: false) {
+
+  &:focus {
+    @include shadow(0 2px 7px rgba(#000, .10) inset);
+    @if $color { background-color: $color; }
+  }
+
+}
+
+// sub menu
+@mixin submenu-setting() {
+    @include opacity(0);
+    visibility: hidden;
+    visibility: visible\9;
+    right: -9999px\9;
+}
+
+@mixin submenu-hover() {
+    @include opacity(100);
+    visibility: visible;
+    right: -21px\9;
+}

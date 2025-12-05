@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <!--
+İnformatika - 8
+
+
+  Copyright © The Ministry of Education, Baku 2014. All rights reserved.
+
+  The story and all images are copyrighted property of The Ministry of Education of the Azerbaijan Republic with all rights reserved.
+  Use and/or duplication is not permitted without written permission from Ministry of Education of the Azerbaijan Republic.
+-->
+
+  <head>
+    <meta name="viewport" content="width=750, height=1000" />
+    <title>İnformatika - 8</title>
+
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="../../assets/bootstrap-3.2.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/main.css?v=6" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- scripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../assets/js/idangerous.swiper/idangerous.swiper.css"
+    />
+    <script src="../../assets/js/lightbox/lightbox.min.js"></script>
+    <link rel="stylesheet" href="../../assets/js/lightbox/lightbox.css" />
+    <script src="../../assets/js/idangerous.swiper/idangerous.swiper.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- page -->
+    <div class="container">
+      <div class="row e-pt0">
+        <img src="../../assets/img/headDefault.jpg" alt="" />
+      </div>
+      <div class="row e-p-fix fs14 e-pl6 e-pr6 e-pb2">
+        <div class="col-xs-12">
+          <div>
+            <div>
+              Göründüyü kimi, proqram hər cümləni ayrıca sətirdə ekrana çıxanr.
+              Bu o deməkdir ki, print funksiyası bütün verilənləri çıxışa
+              verəndən sonra yeni sətrə keçidi yerinə yetirir. Ona görə də
+              növbəti print funksiyası verilənləri yeni sətrə çıxanr.
+            </div>
+
+            <div class="e-mt1">
+              Əgər bir neçə print funksiyasının verilənləri eyni sətrə çıxarması
+              istənilirsə, yeni sətrə keçidi ləğv etmək olar. Bunun üçün print
+              funksiyasına qiyməti boş sətir olan end arqumenti əlavə etmək
+              lazımdır:
+            </div>
+
+            <div class="e-mt1 e-background7 e-color6 e-pxf e-pyf e-ml2">
+              print ("1", end = "") <br />
+              print ("23", end = "") <br />
+              print ("456")
+            </div>
+
+            <div class="e-mt1">
+              Bu proqramın icrası nəticəsində çıxış belə olacaqdır:
+            </div>
+
+            <div class="e-mt1 e-background4 e-ml2 e-pxf">123456</div>
+
+            <div class="e-mt1">
+              Python redaktoru ilə işləyən zaman Azərbaycan əlifbasının bəzi
+              hərfləri (xüsusən “ə” hərfi) ilə bağlı problem yarana bilər, yəni
+              onlar düzgün əks olunmaya bilər. Yaxşı olar ki, bu halda proqramın
+              mətnini hər hansı mətn redaktorunda yığıb sonra aşağı siniflərdən
+              öyrəndiyiniz qaydalarla Python redaktoruna köçürəsiniz.
+            </div>
+
+            <div class="e-box-blue e-mt2">
+              <div class="e-box-blue-head">Araşdıraq-öyrənək</div>
+              <div class="e-box-blue-body">
+                <div>
+                  Aşağıdakı proqramı Python redaktorunda yazıb icra edin.
+                </div>
+
+                <div class="e-background8 e-pxf e-mt1">
+                  print ("1 kilobayt =", 2 ** 10, "bayt") <br />
+                  print ("1 meqabayt =", 2 ** 10, "kilobayt")<br />
+                  print ("1 giqabayt =", 2 ** 10, "meqabayt")
+                </div>
+
+                <div class="e-mt1f">
+                  Alınmış nəticələr ölçü vahidləri arasında münasibəti düzgün
+                  göstərirmi?
+                </div>
+              </div>
+            </div>
+
+            <div class="e-color3 e-bold fs16 e-mt1f">
+              Öyrəndiklərinizi yoxlayın
+            </div>
+
+            <div>
+              <div class="flex e-mtf">
+                <div class="e-bold e-mr1">1.</div>
+                <div>
+                  Python interpretatoru vasitəsilə hansı ədədin böyük olduğunu
+                  müəyyən edin: 19<sup class="e-pos-rel topm5">21</sup>, yoxsa
+                  21<sup class="e-pos-rel topm5">19</sup>?
+                </div>
+              </div>
+
+              <div class="flex e-mtf">
+                <div class="e-bold e-mr1">2.</div>
+                <div>
+                  Python interpretatorunun köməyi ilə radiusu 19 olan çevrənin
+                  uzunluğunu və onun dairəsinin sahəsini hesablayın.
+                </div>
+              </div>
+
+              <div class="flex e-mtf">
+                <div class="e-bold e-mr1">3.</div>
+                <div>print operatoru nə yerinə yetirir?</div>
+              </div>
+
+              <div class="flex e-mtf">
+                <div class="e-bold e-mr1">4.</div>
+                <div>
+                  Ekrana üç sətir çıxaran proqram yazın: adınız, doğum tarixiniz
+                  və ən çox sevdiyiniz fənn. Nəticə təxminən belə olmalıdır:
+                </div>
+              </div>
+
+              <div class="e-background9 e-pxf e-mt1 e-ml2">
+                Mənim adım Aysel Turanlıdır. <br />
+                Mən 15 may 2007-ci ildə doğulmuşam. <br />
+                Ən çox sevdiyim fənn Coğrafiyadır.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/page end -->
+  </body>
+</html>

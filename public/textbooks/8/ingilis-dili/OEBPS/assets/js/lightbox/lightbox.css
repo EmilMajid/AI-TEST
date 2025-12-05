@@ -187,9 +187,11 @@ body:after {
   color: #999999;
 }
 
+.lb-closeContainer {
+	text-align: center;
+}
 .lb-data .lb-close {
-  display: block;
-  float: right;
+  display: inline-block;
   width: 30px;
   height: 30px;
   background: url(../../img/lightbox/close.png) top right no-repeat;

@@ -1,20 +1,20 @@
 <?xml version="1.0"  encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/#                  ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0">
   <metadata>
-    <dc:title>İnformatika - 8</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="author">RAMİN MAHMUDZADƏ, İSMAYIL SADIQOV, NAİDƏ İSAYEVA</dc:creator>
+    <dc:title>İngilis dili - 8 əsas xarici dil</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="author">Konul Heydarova, Gunay Gurbanova, Sevinj Mammadova</dc:creator>
     <dc:identifier id="bookid">978-9952-404-38-8</dc:identifier>
     <dc:contributor id="illustrator"></dc:contributor>
     <dc:contributor></dc:contributor>
     <dc:date>2014-06-23T19:00:00+00:00</dc:date>
-    <dc:description>&lt;p class="description"&gt;İnformatika - 8&lt;/p&gt;</dc:description>
-    <dc:publisher>Azərbaycan Respublikası Elm və Təhsil Nazirliyi</dc:publisher>
+    <dc:description>&lt;p class="description"&gt;İngilis dili - 8 əsas xarici dil&lt;/p&gt;</dc:description>
+    <dc:publisher>ŞƏRQ-QƏRB</dc:publisher>
     <dc:rights>Copyright THE MINISTRY OF EDUCATION THE AZERBAIJAN REPUBLIC, Baku 2023. All rights reserved.</dc:rights>
-    <dc:subject>İnformatika</dc:subject>
+    <dc:subject>English</dc:subject>
     <dc:language>az</dc:language>
     <dc:identifier opf:scheme="calibre">cd499704-e0be-44fe-bbf6-0257e9dfa7d8</dc:identifier>
     <meta refines="#bookid" property="marc:scheme">isbn</meta>
-    <meta refines="#author" property="file-as">RAMİN MAHMUDZADƏ, İSMAYIL SADIQOV, NAİDƏ İSAYEVA</meta>
+    <meta refines="#author" property="file-as">Konul Heydarova, Gunay Gurbanova, Sevinj Mammadova</meta>
     <meta refines="#author" property="role">aut</meta>
     <meta refines="#illustrator" property="role">ill</meta>
     <meta property="ibooks:version">1.1</meta>
@@ -24,7 +24,7 @@
     <meta property="rendition:spread">auto</meta>
     <meta property="rendition:orientation">auto</meta>
     <meta property="ibooks:iphone-orientation-lock">portrait</meta>
-    <meta name="calibre:title_sort" content="İnformatika - 8"/>
+    <meta name="calibre:title_sort" content="İngilis dili - 8 əsas xarici dil"/>
     <meta name="calibre:author_link_map" content="{&quot;Ziya İbrahimli&quot;: &quot;&quot;}"/>
     <meta name="calibre:user_categories" content="{}"/>
   </metadata>
@@ -138,8 +138,63 @@
     <item id="unit1-page102" href="units/unit-1/page102.xhtml" media-type="application/xhtml+xml"/>
     <item id="unit1-page103" href="units/unit-1/page103.xhtml" media-type="application/xhtml+xml"/>
     <item id="unit1-page104" href="units/unit-1/page104.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page105" href="units/unit-1/page105.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page106" href="units/unit-1/page106.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page107" href="units/unit-1/page107.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page108" href="units/unit-1/page108.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page109" href="units/unit-1/page109.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page110" href="units/unit-1/page110.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page111" href="units/unit-1/page111.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-page112" href="units/unit-1/page112.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page113" href="units/unit-1/page113.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page114" href="units/unit-1/page114.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page115" href="units/unit-1/page115.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page116" href="units/unit-1/page116.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page117" href="units/unit-1/page117.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page118" href="units/unit-1/page118.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page119" href="units/unit-1/page119.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page120" href="units/unit-1/page120.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page121" href="units/unit-1/page121.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page122" href="units/unit-1/page122.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page123" href="units/unit-1/page123.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page124" href="units/unit-1/page124.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page125" href="units/unit-1/page125.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page126" href="units/unit-1/page126.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page127" href="units/unit-1/page127.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page128" href="units/unit-1/page128.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page129" href="units/unit-1/page129.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page130" href="units/unit-1/page130.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page131" href="units/unit-1/page131.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page132" href="units/unit-1/page132.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page133" href="units/unit-1/page133.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page134" href="units/unit-1/page134.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page135" href="units/unit-1/page135.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page136" href="units/unit-1/page136.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page137" href="units/unit-1/page137.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page138" href="units/unit-1/page138.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page139" href="units/unit-1/page139.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page140" href="units/unit-1/page140.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page141" href="units/unit-1/page141.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page142" href="units/unit-1/page142.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page143" href="units/unit-1/page143.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page144" href="units/unit-1/page144.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page145" href="units/unit-1/page145.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page146" href="units/unit-1/page146.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page147" href="units/unit-1/page147.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page148" href="units/unit-1/page148.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page149" href="units/unit-1/page149.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page150" href="units/unit-1/page150.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page151" href="units/unit-1/page151.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page152" href="units/unit-1/page152.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page153" href="units/unit-1/page153.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page154" href="units/unit-1/page154.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page155" href="units/unit-1/page155.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page156" href="units/unit-1/page156.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page157" href="units/unit-1/page157.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page158" href="units/unit-1/page158.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page159" href="units/unit-1/page159.xhtml" media-type="application/xhtml+xml"/>
+	<item id="unit1-page160" href="units/unit-1/page160.xhtml" media-type="application/xhtml+xml"/>	
 
-       
     <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
     <!-- pages end -->
 	
@@ -283,7 +338,62 @@
 	<itemref idref="unit1-page102"/>
 	<itemref idref="unit1-page103"/>
 	<itemref idref="unit1-page104"/>
+	<itemref idref="unit1-page105"/>
+	<itemref idref="unit1-page106"/>
+	<itemref idref="unit1-page107"/>
+	<itemref idref="unit1-page108"/>
+	<itemref idref="unit1-page109"/>
+	<itemref idref="unit1-page110"/>
+	<itemref idref="unit1-page111"/>
+	<itemref idref="unit1-page112"/>
+	<itemref idref="unit1-page113"/>
+	<itemref idref="unit1-page114"/>
+	<itemref idref="unit1-page115"/>
+	<itemref idref="unit1-page116"/>
+	<itemref idref="unit1-page117"/>
+	<itemref idref="unit1-page118"/>
+	<itemref idref="unit1-page119"/>
+	<itemref idref="unit1-page120"/>
+	<itemref idref="unit1-page121"/>
+	<itemref idref="unit1-page122"/>
+	<itemref idref="unit1-page123"/>
+	<itemref idref="unit1-page124"/>
+	<itemref idref="unit1-page125"/>
+	<itemref idref="unit1-page126"/>
+	<itemref idref="unit1-page127"/>
+	<itemref idref="unit1-page128"/>
+	<itemref idref="unit1-page129"/>
+	<itemref idref="unit1-page130"/>
+	<itemref idref="unit1-page131"/>
+	<itemref idref="unit1-page132"/>
+	<itemref idref="unit1-page133"/>
+	<itemref idref="unit1-page134"/>
+	<itemref idref="unit1-page135"/>
+	<itemref idref="unit1-page136"/>
+	<itemref idref="unit1-page137"/>
+	<itemref idref="unit1-page138"/>
+	<itemref idref="unit1-page139"/>
+	<itemref idref="unit1-page140"/>
+	<itemref idref="unit1-page141"/>
+	<itemref idref="unit1-page142"/>
+	<itemref idref="unit1-page143"/>
+	<itemref idref="unit1-page144"/>
+	<itemref idref="unit1-page145"/>
+	<itemref idref="unit1-page146"/>
+	<itemref idref="unit1-page147"/>
+	<itemref idref="unit1-page148"/>
+	<itemref idref="unit1-page149"/>
+	<itemref idref="unit1-page150"/>
+	<itemref idref="unit1-page151"/>
+	<itemref idref="unit1-page152"/>
+	<itemref idref="unit1-page153"/>
+	<itemref idref="unit1-page154"/>
+	<itemref idref="unit1-page155"/>
+	<itemref idref="unit1-page156"/>
+	<itemref idref="unit1-page157"/>
+	<itemref idref="unit1-page158"/>
+	<itemref idref="unit1-page159"/>
+	<itemref idref="unit1-page160"/>	
 
-		      
   </spine>
 </package>

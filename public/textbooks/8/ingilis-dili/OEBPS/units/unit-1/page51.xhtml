@@ -1,132 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-  <!--
-İnformatika - 8
-
+<!--
+  İngilis dili - 8 əsas xarici dil
 
   Copyright © The Ministry of Education, Baku 2014. All rights reserved.
-
-  The story and all images are copyrighted property of The Ministry of Education of the Azerbaijan Republic with all rights reserved.
-  Use and/or duplication is not permitted without written permission from Ministry of Education of the Azerbaijan Republic.
+  
+  The story and all images are copyrighted property of The Ministry of Education of the Azerbaijan Rebublic with all rights reserved.  
+  Use and/or duplication is not permitted without written permission from Ministry of Education of the Azerbaijan Rebublic.
+  
 -->
-
-  <head>
+<head>
     <meta name="viewport" content="width=750, height=1000" />
-    <title>İnformatika - 8</title>
+    <title>İngilis dili - 8 əsas xarici dil</title>
 
     <!-- styles -->
-    <link
-      rel="stylesheet"
-      href="../../assets/bootstrap-3.2.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../../assets/css/main.css?v=6" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../../assets/bootstrap-3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/main.css?v=6"/>
 
     <!-- scripts -->
     <script src="../../assets/js/jquery.js"></script>
-    <link
-      rel="stylesheet"
-      href="../../assets/js/idangerous.swiper/idangerous.swiper.css"
-    />
+    <link rel="stylesheet" href="../../assets/js/idangerous.swiper/idangerous.swiper.css"/>
     <script src="../../assets/js/lightbox/lightbox.min.js"></script>
-    <link rel="stylesheet" href="../../assets/js/lightbox/lightbox.css" />
+    <link rel="stylesheet" href="../../assets/js/lightbox/lightbox.css"/>
     <script src="../../assets/js/idangerous.swiper/idangerous.swiper.js"></script>
     <script src="../../assets/js/main.js"></script>
-  </head>
+</head>
+<body>
 
-  <body>
-    <!-- page -->
-    <div class="container">
-      <div class="row e-pt0">
-        <img src="../../assets/img/headDefault.jpg" alt="" />
-      </div>
-      <div class="row e-p-fix fs14 e-pl6 e-pr6 e-pb2">
-        <div class="col-xs-12">
-          <div>
-            <div>
-              Bu fraqmentdə dövr sayğacı olan i dəyişəninin alacağı qiymətlər
-              range funksiyası vasitəsilə təyin olunur. Bu funksiya tam
-              ədədlərdən ibarət ardıcıllıq yaradır. Mötərizədə göstərilmiş son
-              qiymət həmin ardıcıllığa daxil olmur. Nümunədə bu funksiya 1-dən
-              100-dək ədədlər ardıcıllığını yaradır. Əgər ardıcıllığın başlanğıc
-              qiyməti 0 olarsa, range(0, 101) əvəzinə, range(101) yazılışından
-              da istifadə etmək olar.
-            </div>
+<div class="container nPL nPR">
 
-            <div class="e-mt1">
-              <b> Dövr dəyişəninin dəyişmə addımı.</b> Susqunluqla range
-              funksiyası hər növbəti ədədin əvvəlkindən 1 vahid böyük olduğu
-              ardıcıllığı qurur. Ancaq range funksiyasına üçüncü arqument - dövr
-              dəyişəninin dəyişmə addımını əlavə etməklə bu qaydanı dəyişmək
-              olar. Növbəti proqram 10-dan 1-dək natural ədədlərin kvadratını
-              azalan sıra ilə çıxışa verir:
-            </div>
+    <div><img src="../../assets/img/51.jpg" width="750" height="1000" /></div>
 
-            <div class="e-background7 e-mt1 e-pxf e-color6 e-ml2">
-              <b>for</b> k <b>in</b> range(10, 0, -1):
-              <div class="e-ml2">print (k*k)</div>
-            </div>
+</div>
 
-            <div class="e-mt1">
-              Bu nümunədə addım -1-ə bərabərdir, yəni hər növbəti ədəd
-              əvvəlkindən 1 vahid kiçikdir. Xatırlatmaq lazımdır ki, son qiymət
-              olan 0 ardıcıllığa daxil deyil. Başqa bir nümunə:
-            </div>
 
-            <div class="e-background7 e-mt1 e-pxf e-color6 e-ml2">
-              <b>for</b> i <b>in</b> range(0, 101, 5):
-              <div class="e-ml2">print (i)</div>
-            </div>
-
-            <div class="e-mt1">
-              Bu proqram fraqmentinin icrası nəticəsində 0-dan 100-dək ədədlər 5
-              addımı ilə (0, 5, 10, ..., 100) çıxışa verilir. range funksiyasının
-              ikinci arqumenti 101 götürülüb ki, i dəyişəninin son qiyməti 100-ə
-              bərabər olsun.
-            </div>
-            <div class="e-mt2 e-color4">
-              <i>Məsələ.</i> Aşağıdakı proqram fraqmentinin icrası nəticəsində
-              ekrana nə çıxarılacaq?
-            </div>
-
-            <div class="e-background7 e-mt1 e-pxf e-color6 e-ml2">
-              <b>for</b> j <b>in</b> range(0, 11, 3):
-              <div class="e-ml2">print (j, end="")</div>
-              print (j)
-            </div>
-
-            <div class="e-mt1 e-color4">
-              <i>Həlli:</i> Dövr sayğacı 0-dan 10-dək 3 addımı ilə 0, 3, 6, 9
-              qiymətlərini alır. Ona görə də dövr daxilində bu qiymətlər
-              bir-birinin ardınca çıxışa verilir. Dövrdən çıxdıqdan sonra j
-              dəyişənin son qiyməti olan 9 ədədi yenidən həmin sətirdə çıxışa
-              verilir. Beləliklə, son olaraq çıxış sətri 03699 şəklində olur.
-            </div>
-
-            <div class="e-mt1">
-              break və continue <b>operatorları</b>. Bu operatorlar proqramda
-              bəzi hissələri adlamağa imkan verir.
-            </div>
-
-            <div class="e-mt1">
-              <ul class="e-list-simple3">
-                <li>
-                  break operatoru idarəetməni dərhal cari dövrdən sonrakı
-                  operatora ötürür.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/page end -->
-  </body>
+</body>
 </html>
