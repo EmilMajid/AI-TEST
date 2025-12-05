@@ -17,11 +17,8 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "umumi-tarix": "Ümumi tarix",
     "musiqi": "Musiqi",
     "ortaq-turk-tarixi": "Ortaq türk tarixi",
-    "heyat-bilgisi": "Həyat bilgisi",
-    "tesviri-inceseent": "Təsviri incəsənət",
     // Foreign Languages
     "ingilis-dili": "İngilis dili",
-    "ingilis-dili-ikinci": "İngilis dili",
     "alman-dili-esas": "Alman dili",
     "alman-dili-ikinci": "Alman dili",
     "fransiz-dili-esas": "Fransız dili",

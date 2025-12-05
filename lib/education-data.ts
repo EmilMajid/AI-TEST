@@ -6,7 +6,7 @@ export const subjectsByClass: Record<string, string[]> = {
     "5": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Tarix", "İnformatika", "Təbiət", "Xarici dil", "Təsviri incəsənət", "Texnologiya", "Fiziki tərbiyə", "Musiqi"],
     "6": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Təsviri incəsənət", "Texnologiya", "Fiziki tərbiyə", "Musiqi"],
     "7": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Texnologiya", "Fiziki tərbiyə"],
-    "8": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Ortaq türk tarixi", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri incəsənət", "Musiqi"],
+    "8": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Texnologiya", "Fiziki tərbiyə"],
     "9": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Fiziki tərbiyə", "Həyat bilgisi"],
     "10": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Fiziki tərbiyə", "Gənclərin çağırışaqədərki hazırlığı"],
     "11": ["Azərbaycan dili", "Ədəbiyyat", "Riyaziyyat", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "İnformatika", "Xarici dil", "Fiziki tərbiyə", "Gənclərin çağırışaqədərki hazırlığı"]

@@ -1,0 +1,315 @@
+/*
+==================================================================
+    File Name: Reset SCSS
+==================================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+
+a:active, a:focus, input {
+    outline: 0;
+    outline-style:none;
+    outline-width:0;
+}
+
+/* Clear Fix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+button, input[type="submit"] {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+img {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-size: italic;
+}
+
+
+::-webkit-input-placeholder {
+    color: #838484;
+    opacity: 1 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #838484;
+    opacity: 1 !important;
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #838484;
+    opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+    color: #838484;
+    opacity: 1 !important;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/*
+==================================================================
+                        TIPOGRAFY
+==================================================================
+*/
+.clear {
+    clear: both
+}
+
+.fLeft {
+    float: left!important;
+}
+
+.fRight {
+    float: right!important;
+}
+
+.noBG {
+    background: none !important
+}
+
+.no-border {
+    border: 0 !important
+}
+
+.nMB {
+    margin-bottom: 0 !important
+}
+
+.nMR {
+    margin-right: 0 !important
+}
+
+.nML {
+    margin-left: 0 !important
+}
+
+.nPR {
+    padding-right: 0 !important
+}
+
+.nPB {
+    padding-bottom: 0 !important
+}
+
+.nPL {
+    padding-left: 0 !important
+}
+
+.nPT {
+    padding-top: 0 !important
+}
+
+.nBR {
+    border-right: none !important
+}
+
+.nBL {
+    border-left: none !important
+}
+
+.nBB {
+    border-bottom: none !important
+}
+
+.nBT {
+    border-top: none !important
+}
+
+.mT5 {
+    margin-top: 5px;
+}
+
+.mT10 {
+    margin-top: 10px;
+}
+
+.mT15 {
+    margin-top: 15px;
+}
+
+.mT20 {
+    margin-top: 20px;
+}
+
+.mT25 {
+    margin-top: 25px;
+}
+
+.mT30 {
+    margin-top: 30px;
+}
+
+.pT30 {
+    padding-top: 30px;
+}
+
+
+.mT40 {
+    margin-top: 40px;
+}
+
+.mB5 {
+    margin-bottom: 5px;
+}
+
+.mB10 {
+    margin-bottom: 10px;
+}
+
+.mB15 {
+    margin-bottom: 15px;
+}
+
+.mB20 {
+    margin-bottom: 20px;
+}
+
+.mB25 {
+    margin-bottom: 25px;
+}
+
+.mB30 {
+    margin-bottom: 30px;
+}
+
+.mB40 {
+    margin-bottom: 40px;
+}
+
+.mB45 {
+    margin-bottom: 45px;
+}
+
+.mL5 {
+    margin-left: 5px;
+}
+
+.mL10 {
+    margin-left: 10px;
+}
+
+.mL15 {
+    margin-left: 15px;
+}
+
+.mL20 {
+    margin-left: 20px;
+}
+
+.mL30 {
+    margin-left: 30px;
+}
+
+.mL40 {
+    margin-left: 40px;
+}
+
+.center {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.i-block {
+  display: inline-block;
+  vertical-align: top;
+}

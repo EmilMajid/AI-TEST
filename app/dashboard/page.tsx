@@ -36,16 +36,13 @@ export default function Dashboard() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'messages'>('dashboard')
 
   const [selectedSubject, setSelectedSubject] = useState("")
-  const [selectedLanguage, setSelectedLanguage] = useState("")
   const [availableTextbooks, setAvailableTextbooks] = useState<Textbook[]>([])
   const [selectedTextbook, setSelectedTextbook] = useState<Textbook | null>(null)
-  const [allTopics, setAllTopics] = useState<Record<string, Array<{ title: string, page: number, endPage?: number, path: string }>>>({})
 
   const [isViewerOpen, setIsViewerOpen] = useState(false)
   const [isPdfViewerOpen, setIsPdfViewerOpen] = useState(false)
 
   const [showRegionModal, setShowRegionModal] = useState(false)
-
 
   useEffect(() => {
     const storedUserData = localStorage.getItem("userData")
@@ -60,43 +57,12 @@ export default function Dashboard() {
 
       setTestConfig((prev) => ({ ...prev, class: parsed.class }))
 
-      console.log("[Dashboard] User data loaded:", parsed.email, "Region:", parsed.region)
-
-      // Only show region modal for users without a region
-      // Registered users already have a region saved
+      // Check if region is missing
       if (!parsed.region) {
-        console.log("[Dashboard] Region missing, showing modal")
         setShowRegionModal(true)
-      } else {
-        console.log("[Dashboard] Region exists, skipping modal")
-        setShowRegionModal(false)
       }
     }
   }, [])
-
-  // Load topics from API
-  useEffect(() => {
-    async function loadTopics() {
-      if (!userData?.class) return
-
-      try {
-        console.log(`[Dashboard] Loading topics for class ${userData.class}...`)
-        const response = await fetch(`/api/textbooks/topics?class=${userData.class}`)
-        const data = await response.json()
-
-        if (data.success && data.topics) {
-          console.log(`[Dashboard] Loaded topics for ${Object.keys(data.topics).length} subjects`)
-          setAllTopics(data.topics)
-        } else {
-          console.error('[Dashboard] Failed to load topics:', data.error)
-        }
-      } catch (error) {
-        console.error('[Dashboard] Error loading topics:', error)
-      }
-    }
-
-    loadTopics()
-  }, [userData?.class])
 
   const handleRegionSelect = (region: string) => {
     if (userData) {
@@ -250,28 +216,13 @@ export default function Dashboard() {
                           onChange={(e) => {
                             const subject = e.target.value
                             setSelectedSubject(subject)
-                            setSelectedLanguage("")
-
-                            // If foreign language, don't load textbooks yet, wait for language selection
-                            if (subject === "Xarici dil" || subject === "İkinci xarici dil") {
-                              setAvailableTextbooks([])
-                              setSelectedTextbook(null)
-                              setTestConfig({ ...testConfig, textbook: "", topic: "" })
-                              return
-                            }
-
                             const textbooks = userData?.class ? getTextbooks(userData.class, subject) : []
                             setAvailableTextbooks(textbooks)
 
                             // If textbooks exist, select the first one automatically or reset
                             if (textbooks.length > 0) {
-                              const firstTextbook = textbooks[0]
-                              const textbookWithTopics = {
-                                ...firstTextbook,
-                                topics: allTopics[subject] || []
-                              }
-                              setTestConfig({ ...testConfig, textbook: firstTextbook.title, topic: "" })
-                              setSelectedTextbook(textbookWithTopics)
+                              setTestConfig({ ...testConfig, textbook: textbooks[0].title, topic: "" })
+                              setSelectedTextbook(textbooks[0])
                             } else {
                               setTestConfig({ ...testConfig, textbook: subject, topic: "" })
                               setSelectedTextbook(null)
@@ -288,45 +239,6 @@ export default function Dashboard() {
                         </select>
                       </div>
 
-                      {/* Language Selection (for Foreign Languages) */}
-                      {(selectedSubject === "Xarici dil" || selectedSubject === "İkinci xarici dil") && (
-                        <div className="space-y-2">
-                          <label className="text-sm font-medium text-gray-700">Dil</label>
-                          <select
-                            value={selectedLanguage}
-                            onChange={(e) => {
-                              const language = e.target.value
-                              setSelectedLanguage(language)
-
-                              if (userData?.class && language) {
-                                const allTextbooks = getTextbooks(userData.class, "Xarici dil")
-                                const filteredTextbooks = allTextbooks.filter(t => t.language === language)
-                                setAvailableTextbooks(filteredTextbooks)
-
-                                if (filteredTextbooks.length > 0) {
-                                  const firstTextbook = filteredTextbooks[0]
-                                  const textbookWithTopics = {
-                                    ...firstTextbook,
-                                    topics: allTopics["Xarici dil"] || [] // Note: Topics might need to be language-specific later
-                                  }
-                                  setTestConfig({ ...testConfig, textbook: firstTextbook.title, topic: "" })
-                                  setSelectedTextbook(textbookWithTopics)
-                                } else {
-                                  setSelectedTextbook(null)
-                                }
-                              }
-                            }}
-                            className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
-                          >
-                            <option value="">Dil seçin</option>
-                            <option value="İngilis dili">İngilis dili</option>
-                            <option value="Rus dili">Rus dili</option>
-                            <option value="Fransız dili">Fransız dili</option>
-                            <option value="Alman dili">Alman dili</option>
-                          </select>
-                        </div>
-                      )}
-
                       {/* Textbook Selection (if available) */}
                       {availableTextbooks.length > 0 && (
                         <div className="space-y-2">
@@ -336,19 +248,9 @@ export default function Dashboard() {
                               value={selectedTextbook?.id || ""}
                               onChange={(e) => {
                                 const textbook = availableTextbooks.find(t => t.id === e.target.value)
+                                setSelectedTextbook(textbook || null)
                                 if (textbook) {
-                                  console.log('[Dashboard] Selected textbook:', textbook.subject)
-                                  console.log('[Dashboard] Available topics for', textbook.subject, ':', allTopics[textbook.subject])
-                                  // Use cached topics from allTopics state
-                                  const textbookWithTopics = {
-                                    ...textbook,
-                                    topics: allTopics[textbook.subject] || []
-                                  }
-                                  console.log('[Dashboard] Textbook with topics:', textbookWithTopics.topics.length, 'topics')
-                                  setSelectedTextbook(textbookWithTopics)
                                   setTestConfig({ ...testConfig, textbook: textbook.title, topic: "" })
-                                } else {
-                                  setSelectedTextbook(null)
                                 }
                               }}
                               className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
@@ -393,9 +295,9 @@ export default function Dashboard() {
                             className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
                           >
                             <option value="">Mövzu seçin</option>
-                            {Array.isArray(selectedTextbook.topics) && selectedTextbook.topics.map((topic: any, index: number) => (
-                              <option key={index} value={typeof topic === 'string' ? topic : topic.title}>
-                                {typeof topic === 'string' ? topic : topic.title}
+                            {Array.isArray(selectedTextbook.topics) && selectedTextbook.topics.map((topic: string, index: number) => (
+                              <option key={index} value={topic}>
+                                {topic}
                               </option>
                             ))}
                           </select>
@@ -584,27 +486,23 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {
-        selectedTextbook && selectedTextbook.fileUrl && (
-          <TextbookViewer
-            isOpen={isViewerOpen}
-            onClose={() => setIsViewerOpen(false)}
-            title={selectedTextbook.title}
-            fileUrl={selectedTextbook.fileUrl}
-          />
-        )
-      }
+      {selectedTextbook && selectedTextbook.fileUrl && (
+        <TextbookViewer
+          isOpen={isViewerOpen}
+          onClose={() => setIsViewerOpen(false)}
+          title={selectedTextbook.title}
+          fileUrl={selectedTextbook.fileUrl}
+        />
+      )}
 
-      {
-        selectedTextbook && selectedTextbook.pdfUrl && (
-          <PdfViewer
-            isOpen={isPdfViewerOpen}
-            onClose={() => setIsPdfViewerOpen(false)}
-            title={selectedTextbook.title}
-            pdfUrl={selectedTextbook.pdfUrl}
-          />
-        )
-      }
+      {selectedTextbook && selectedTextbook.pdfUrl && (
+        <PdfViewer
+          isOpen={isPdfViewerOpen}
+          onClose={() => setIsPdfViewerOpen(false)}
+          title={selectedTextbook.title}
+          pdfUrl={selectedTextbook.pdfUrl}
+        />
+      )}
 
       <RegionModal
         isOpen={showRegionModal}
@@ -615,6 +513,6 @@ export default function Dashboard() {
         }}
         onSelect={handleRegionSelect}
       />
-    </MainLayout >
+    </MainLayout>
   )
 }

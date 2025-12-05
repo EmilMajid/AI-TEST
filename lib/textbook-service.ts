@@ -10,7 +10,6 @@ export interface Textbook {
     pdfUrl?: string;  // For PDF books
     type: 'pdf' | 'html';
     contentPath?: string; // For AI reading
-    language?: string; // For foreign languages (e.g., "İngilis dili", "Rus dili")
 }
 
 // Helper to get all textbooks
@@ -28,8 +27,7 @@ export function getAllTextbooks(): Textbook[] {
                 type: book.type,
                 fileUrl: book.type === 'html' ? book.path : undefined,
                 pdfUrl: book.type === 'pdf' ? book.path : undefined,
-                contentPath: book.contentPath,
-                language: book.language
+                contentPath: book.contentPath
             });
         });
     });
@@ -50,7 +48,6 @@ export function getTextbooksByClass(grade: string): Textbook[] {
         type: book.type,
         fileUrl: book.type === 'html' ? book.path : undefined,
         pdfUrl: book.type === 'pdf' ? book.path : undefined,
-        contentPath: book.contentPath,
-        language: book.language
+        contentPath: book.contentPath
     }));
 }
