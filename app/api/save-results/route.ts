@@ -9,13 +9,24 @@ export async function POST(request: NextRequest) {
     const auth = await requireAuth(request)
     if (auth instanceof NextResponse) return auth
 
+    // Force Mock Response
     const body = await request.json()
+    console.log("[Mock Save] Saving test result:", body)
+    return NextResponse.json(
+      {
+        success: true,
+        message: "Test nəticəsi uğurla saxlanıldı (Mock)",
+        resultId: Math.floor(Math.random() * 10000),
+        savedAt: new Date(),
+      },
+      { status: 201 },
+    )
 
     const validatedData = testResultsSchema.parse(body)
 
     const testResult = await prisma.testResult.create({
       data: {
-        userId: auth.user.id,
+        userId: (auth as any).user.id,
         textbook: validatedData.testData.textbook,
         topic: validatedData.testData.topic,
         class: validatedData.testData.class,
@@ -26,7 +37,7 @@ export async function POST(request: NextRequest) {
       },
     })
 
-    await logApiAccess(auth.user.id, "save_test_result", "test_result", request.ip)
+    await logApiAccess((auth as any).user.id, "save_test_result", "test_result", request.ip)
 
     return NextResponse.json(
       {
@@ -50,8 +61,25 @@ export async function GET(request: NextRequest) {
     const auth = await requireAuth(request)
     if (auth instanceof NextResponse) return auth
 
+    // Force Mock Response
+    return NextResponse.json({
+      success: true,
+      results: [
+        {
+          id: 1,
+          textbook: "Mock Book",
+          topic: "Mock Topic",
+          class: "8",
+          score: 100,
+          timeSpent: 60,
+          completedAt: new Date(),
+          savedAt: new Date()
+        }
+      ],
+    })
+
     const results = await prisma.testResult.findMany({
-      where: { userId: auth.user.id },
+      where: { userId: (auth as any).user.id },
       orderBy: { completedAt: "desc" },
       select: {
         id: true,
@@ -65,7 +93,7 @@ export async function GET(request: NextRequest) {
       },
     })
 
-    await logApiAccess(auth.user.id, "view_test_results", "test_result", request.ip)
+    await logApiAccess((auth as any).user.id, "view_test_results", "test_result", request.ip)
 
     return NextResponse.json({
       success: true,

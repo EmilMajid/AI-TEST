@@ -1,10 +1,10 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, SelectGroup, SelectLabel } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
 
 const TEXTBOOKS = [
@@ -21,18 +21,16 @@ const TEXTBOOKS = [
   "Musiqi"
 ]
 
-const TOPICS = {
-  "Azərbaycan dili": ["Orfoqrafiya", "Qrammatika", "Ədəbiyyat"],
-  Riyaziyyat: ["Cəbr", "Həndəsə", "Trigonometriya"],
-  Fizika: ["Mexanika", "Optika", "Elektromagnetizm"],
-  Kimya: ["Kimya əsasları", "Üzvi kimya", "Qeyri-üzvi kimya"],
-  Biologiya: ["Botnika", "Zoologiya", "Genetika"],
-  Coğrafiya: ["Fiziki coğrafiya", "İqtisadi coğrafiya", "Azərbaycanın coğrafiyası"],
-  Tarix: ["Qədim dövr", "Orta əsrlər", "Yeni dövr", "Müasir dövr"],
-  İnformatika: ["Proqramlaşdırma", "Verilənlər bazası", "Şəbəkələr", "Alqoritmlər"],
-  "Həyat bilgisi": ["Sağlam həyat tərzi", "İnsan və cəmiyyət", "Mədəniyyət və incəsənət"],
-  "Təsviri incəsənət": ["Rəsm texnikaları", "Bəzək sənəti", "Rəng nəzəriyyəsi"],
-  Musiqi: ["Musiqi tarixi", "Nəzəriyyə", "Azərbaycan musiqisi"],
+interface Topic {
+  title: string;
+  page: number;
+  path: string;
+  endPage?: number;
+}
+
+interface TopicGroup {
+  chapter: string;
+  topics: Topic[];
 }
 
 export default function TestPage() {
@@ -42,6 +40,23 @@ export default function TestPage() {
   const [difficulty, setDifficulty] = useState("medium")
   const [questionCount, setQuestionCount] = useState("5")
   const [loading, setLoading] = useState(false)
+  const [apiTopics, setApiTopics] = useState<Record<string, TopicGroup[]>>({})
+
+  // Fetch topics from API
+  useEffect(() => {
+    async function fetchTopics() {
+      try {
+        const res = await fetch("/api/textbooks/topics?class=8")
+        const data = await res.json()
+        if (data.success && data.topics) {
+          setApiTopics(data.topics)
+        }
+      } catch (error) {
+        console.error("Failed to fetch topics:", error)
+      }
+    }
+    fetchTopics()
+  }, [])
 
   async function handleGenerateTest() {
     if (!textbook || !topic) {
@@ -51,13 +66,25 @@ export default function TestPage() {
 
     setLoading(true)
     try {
+      // Find the selected topic object across all groups
+      let selectedTopicObj: Topic | undefined;
+      const groups = apiTopics[textbook] || [];
+      for (const group of groups) {
+        const found = group.topics.find(t => t.title === topic);
+        if (found) {
+          selectedTopicObj = found;
+          break;
+        }
+      }
+
       const response = await fetch("/api/tests/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           textbook,
           topic,
-          class: "10",
+          topicDetails: selectedTopicObj,
+          class: "8",
           difficulty,
           questionCount: Number.parseInt(questionCount),
         }),
@@ -77,8 +104,8 @@ export default function TestPage() {
     }
   }
 
-  const availableTopics =
-    textbook && TOPICS[textbook as keyof typeof TOPICS] ? TOPICS[textbook as keyof typeof TOPICS] : []
+  const topicGroups = textbook && apiTopics[textbook] ? apiTopics[textbook] : []
+  const hasTopics = topicGroups.some(g => g.topics.length > 0)
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -90,7 +117,7 @@ export default function TestPage() {
         <CardContent className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="textbook">Dərs</Label>
-            <Select value={textbook} onValueChange={setTextbook}>
+            <Select value={textbook} onValueChange={(val) => { setTextbook(val); setTopic(""); }}>
               <SelectTrigger id="textbook">
                 <SelectValue placeholder="Dərsi seçin" />
               </SelectTrigger>
@@ -106,15 +133,20 @@ export default function TestPage() {
 
           <div className="space-y-2">
             <Label htmlFor="topic">Mövzu</Label>
-            <Select value={topic} onValueChange={setTopic} disabled={!textbook}>
+            <Select value={topic} onValueChange={setTopic} disabled={!textbook || !hasTopics}>
               <SelectTrigger id="topic">
-                <SelectValue placeholder="Mövzunu seçin" />
+                <SelectValue placeholder={!hasTopics ? "Mövzu tapılmadı" : "Mövzunu seçin"} />
               </SelectTrigger>
               <SelectContent>
-                {availableTopics.map((t) => (
-                  <SelectItem key={t} value={t}>
-                    {t}
-                  </SelectItem>
+                {topicGroups.map((group, idx) => (
+                  <SelectGroup key={idx}>
+                    <SelectLabel>{group.chapter}</SelectLabel>
+                    {group.topics.map((t) => (
+                      <SelectItem key={t.title} value={t.title}>
+                        {t.title}
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
                 ))}
               </SelectContent>
             </Select>

@@ -13,10 +13,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
 
     // Demo mode is only for specific demo accounts, not all development logins
-    const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE === "true" || process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("demo")
+    const isDemoMode = true; // Forced for full mock mode
 
     // Try real authentication first (unless explicitly demo mode)
-    let shouldTryRealAuth = true
+    let shouldTryRealAuth = false; // Forced for full mock mode
 
 
     // Check if this is a known demo account
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
         {
           id: "parent-emil",
           email: "emil.mecidov@example.com",
-          password: "test123",
+          password: "test12345",
           accountType: "parent",
           firstName: "Emil",
           lastName: "Məcidov",
@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
         {
           id: "parent-aysel",
           email: "aysel.aliyeva@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "parent",
           firstName: "Aysel",
           lastName: "Əliyeva",
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
         {
           id: "teacher-nigar",
           email: "nigar.huseynova@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "parent",
           firstName: "Nigar",
           lastName: "Hüseynova",
@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
         {
           id: "teacher-ramiz",
           email: "ramiz.mammadov@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "parent",
           firstName: "Ramiz",
           lastName: "Məmmədov",
@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
         {
           id: "director-farid",
           email: "farid.qasimov@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "parent",
           firstName: "Farid",
           lastName: "Qasımov",
@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-inci",
           email: "inci.mecidzade@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "İnci",
           lastName: "Məcidzadə",
@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-emilia",
           email: "emilia.mecidzade@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Emilia",
           lastName: "Məcidzadə",
@@ -136,7 +136,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-ali",
           email: "ali.velizade@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Əli",
           lastName: "Vəlizadə",
@@ -148,7 +148,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-leyla",
           email: "leyla.hasanova@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Leyla",
           lastName: "Həsənova",
@@ -160,7 +160,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-murad",
           email: "murad.ibrahimov@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Murad",
           lastName: "İbrahimov",
@@ -172,7 +172,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-gunay",
           email: "gunay.rzayeva@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Günay",
           lastName: "Rzayeva",
@@ -184,7 +184,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-elvin",
           email: "elvin.quliyev@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Elvin",
           lastName: "Quliyev",
@@ -196,7 +196,7 @@ export async function POST(request: NextRequest) {
         {
           id: "student-sevinc",
           email: "sevinc.ismayilova@test.com",
-          password: "test123",
+          password: "test12345",
           accountType: "student",
           firstName: "Sevinc",
           lastName: "İsmayılova",
@@ -209,7 +209,7 @@ export async function POST(request: NextRequest) {
 
       const { action, email, password, role, userId } = body;
 
-      console.log(`[Demo Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
+      console.log(`[Mock Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
 
       // ACTION: LOOKUP
       if (action === "lookup") {
@@ -255,7 +255,16 @@ export async function POST(request: NextRequest) {
         let user;
 
         if (userId) {
+          console.log(`[Mock Auth] Looking for userId: ${userId}, password length: ${password?.length}`);
           user = mockUsers.find(u => u.id === userId && u.password === password);
+          if (!user) {
+            const userById = mockUsers.find(u => u.id === userId);
+            if (userById) {
+              console.log(`[Mock Auth] User found by ID but password mismatch. Expected: ${userById.password}, Got: ${password}`);
+            } else {
+              console.log(`[Mock Auth] No user found with ID: ${userId}`);
+            }
+          }
         } else {
           // Fallback for direct login (legacy or single user)
           user = mockUsers.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
@@ -277,6 +286,7 @@ export async function POST(request: NextRequest) {
             school: "Demo Məktəb",
             class: isStudent ? (email.includes("8") ? "8" : "11") : undefined,
             role: fallbackRole,
+            region: "Bakı", // Valid default to prevent modal
           }
         }
 
@@ -304,6 +314,7 @@ export async function POST(request: NextRequest) {
             school: user.school,
             class: user.class,
             role: user.role,
+            region: user.region,
           },
           session: {
             access_token: token,

@@ -38,7 +38,7 @@ let mockLinks: any[] = [
   }
 ]
 
-const isDemoMode = process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("demo") || process.env.NODE_ENV === "development"
+const isDemoMode = true; // Forced for full mock mode
 
 export async function POST(request: NextRequest) {
   try {

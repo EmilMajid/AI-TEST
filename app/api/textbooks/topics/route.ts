@@ -34,13 +34,51 @@ interface Topic {
     path: string;
 }
 
-function extractTopicsFromTOC(tocPath: string): Topic[] {
+interface TopicGroup {
+    chapter: string;
+    topics: Topic[];
+}
+
+// Load extracted topics from JSON file (for textbooks with empty TOC files)
+let extractedTopicsCache: Record<string, TopicGroup[]> | null = null;
+
+function loadExtractedTopics(): Record<string, TopicGroup[]> {
+    if (extractedTopicsCache) return extractedTopicsCache;
+
+    try {
+        const mergedTopics: Record<string, TopicGroup[]> = {};
+
+        // 1. Load auto-extracted topics
+        const extractedPath = path.join(process.cwd(), "scripts", "extracted-topics.json");
+        if (fs.existsSync(extractedPath)) {
+            const content = fs.readFileSync(extractedPath, "utf-8");
+            Object.assign(mergedTopics, JSON.parse(content));
+        }
+
+        // 2. Load manual topics (Overrides)
+        const manualPath = path.join(process.cwd(), "scripts", "manual-topics.json");
+        if (fs.existsSync(manualPath)) {
+            const content = fs.readFileSync(manualPath, "utf-8");
+            const manualTopics = JSON.parse(content);
+            Object.assign(mergedTopics, manualTopics);
+        }
+
+        extractedTopicsCache = mergedTopics;
+        return extractedTopicsCache!;
+    } catch (error) {
+        console.error("[Topics API] Error loading topics:", error);
+    }
+
+    return {};
+}
+
+function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
     try {
         const content = fs.readFileSync(tocPath, "utf-8")
-        const topics: Topic[] = []
+        const groups: TopicGroup[] = []
+        let currentGroup: TopicGroup | null = null
 
         // Extract text content from all anchor tags
-        // Matches <a href="...">Text Content</a>
         const linkPattern = /<a[^>]*href="([^"]*)"[^>]*>([^<]+)<\/a>/gi
         let match
 
@@ -63,17 +101,35 @@ function extractTopicsFromTOC(tocPath: string): Topic[] {
                 .replace(/&quot;/g, '"')
                 .replace(/&#39;/g, "'")
 
-            // Filter logic:
+            // Check if this is a chapter/section header
+            const isChapter = /BÖLMƏ|FƏSİL|UNIT|CHAPTER/i.test(text)
             const isRoman = /^[IVX]+\.?\s+/i.test(text)
             const isNumbered = /^\d+(\.\d+)*\.?\s+/.test(text)
-            const hasKeyword = /BÖLMƏ|FƏSİL/i.test(text)
             const isLongEnough = text.length > 5
 
-            if ((isRoman || isNumbered || hasKeyword) && isLongEnough) {
+            if (isChapter && isLongEnough) {
+                // This is a chapter header - create new group
+                if (currentGroup && currentGroup.topics.length > 0) {
+                    groups.push(currentGroup)
+                }
+                currentGroup = {
+                    chapter: text.replace(/\s+/g, " ").trim(),
+                    topics: []
+                }
+            } else if (page > 0 && isLongEnough && !href.includes("cover") && !href.includes("info")) {
+                // This is a topic - create default group if needed
+                if (!currentGroup) {
+                    currentGroup = {
+                        chapter: "Mövzular",
+                        topics: []
+                    }
+                }
+
                 text = text.replace(/\s+/g, " ").trim()
 
-                if (!topics.find(t => t.title === text)) {
-                    topics.push({
+                // Avoid duplicates
+                if (!currentGroup.topics.find(t => t.title === text)) {
+                    currentGroup.topics.push({
                         title: text,
                         page: page,
                         path: href
@@ -82,16 +138,23 @@ function extractTopicsFromTOC(tocPath: string): Topic[] {
             }
         }
 
-        // Calculate end pages
-        for (let i = 0; i < topics.length; i++) {
-            if (i < topics.length - 1) {
-                topics[i].endPage = topics[i + 1].page - 1
-            } else {
-                topics[i].endPage = topics[i].page + 10 // Default buffer
+        // Push the last group
+        if (currentGroup && currentGroup.topics.length > 0) {
+            groups.push(currentGroup)
+        }
+
+        // Calculate end pages for all topics
+        for (const group of groups) {
+            for (let i = 0; i < group.topics.length; i++) {
+                if (i < group.topics.length - 1) {
+                    group.topics[i].endPage = group.topics[i + 1].page - 1
+                } else {
+                    group.topics[i].endPage = group.topics[i].page + 10
+                }
             }
         }
 
-        return topics
+        return groups
     } catch (error) {
         console.error(`Error reading TOC from ${tocPath}:`, error)
         return []
@@ -117,7 +180,7 @@ export async function GET(request: NextRequest) {
             )
         }
 
-        const topics: Record<string, Topic[]> = {}
+        const topics: Record<string, TopicGroup[]> = {}
 
         // Read all textbook directories
         const subjects = fs.readdirSync(textbooksPath)
@@ -137,13 +200,22 @@ export async function GET(request: NextRequest) {
             const tocPath = path.join(subjectPath, "OEBPS", "toc.xhtml")
 
             if (fs.existsSync(tocPath)) {
-                const extractedTopics = extractTopicsFromTOC(tocPath)
+                const extractedGroups = extractTopicsFromTOC(tocPath)
 
-                if (extractedTopics.length > 0) {
-                    topics[displayName] = extractedTopics
-                    console.log(`✓ ${displayName}: ${extractedTopics.length} topics extracted`)
+                if (extractedGroups.length > 0) {
+                    topics[displayName] = extractedGroups
+                    const totalTopics = extractedGroups.reduce((sum, g) => sum + g.topics.length, 0)
+                    console.log(`✓ ${displayName}: ${extractedGroups.length} chapters, ${totalTopics} topics`)
                 } else {
-                    console.log(`⚠ ${displayName}: No topics found`)
+                    // TOC file exists but is empty - try extracted topics
+                    const extractedTopics = loadExtractedTopics();
+                    if (extractedTopics[subjectDir]) {
+                        topics[displayName] = extractedTopics[subjectDir];
+                        const totalTopics = extractedTopics[subjectDir].reduce((sum, g) => sum + g.topics.length, 0);
+                        console.log(`✓ ${displayName}: ${extractedTopics[subjectDir].length} chapters, ${totalTopics} topics (from extracted)`);
+                    } else {
+                        console.log(`⚠ ${displayName}: No topics found in TOC or extracted data`);
+                    }
                 }
             } else {
                 console.log(`✗ ${displayName}: toc.xhtml not found at ${tocPath}`)

@@ -102,6 +102,7 @@ export default function LoginPage() {
     e.preventDefault()
     setIsLoading(true)
     setError("")
+    console.log("Starting login attempt...")
 
     try {
       const response = await fetch("/api/auth/login", {
@@ -117,22 +118,26 @@ export default function LoginPage() {
       })
 
       const data = await response.json()
+      console.log("Login response status:", response.status, data.success)
 
       if (!response.ok) {
+        console.error("Login failed with status:", response.status, data.error)
         setError(data.error || "Giriş uğursuz oldu")
         return
       }
 
       // Store user data
+      console.log("Login success, storing data and redirecting...")
       localStorage.setItem("user", JSON.stringify(data.user))
       localStorage.setItem("session", JSON.stringify(data.session))
       // Also store userData for dashboard compatibility
       localStorage.setItem("userData", JSON.stringify(data.user))
 
+      console.log("Redirecting to /dashboard")
       router.push("/dashboard")
     } catch (err) {
       setError("Şəbəkə xətası baş verdi")
-      console.error("Login error:", err)
+      console.error("Login exception:", err)
     } finally {
       setIsLoading(false)
     }
