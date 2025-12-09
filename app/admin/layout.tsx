@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BookOpen, Settings, LogOut, ShieldAlert } from 'lucide-react'
+import { BookOpen, Settings, LogOut, ShieldAlert, Users } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
