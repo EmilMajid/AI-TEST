@@ -1,6 +1,6 @@
 import { POST as searchHandler } from "@/app/api/search/route"
 import { NextRequest } from "next/server"
-import jest from "jest"
+
 
 jest.mock("@/utils/supabaseClient")
 jest.mock("@/lib/rag/embeddings")
