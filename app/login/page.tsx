@@ -39,6 +39,7 @@ export default function LoginPage() {
     { id: "parent", label: "Valideyn", icon: "👨‍👩‍👧‍👦" },
     { id: "teacher", label: "Müəllim", icon: "👨‍🏫" },
     { id: "director", label: "Direktor", icon: "👔" },
+    { id: "admin", label: "Admin", icon: "🛡️" },
   ]
 
   const handleRoleSelect = (roleId: string) => {
@@ -133,8 +134,12 @@ export default function LoginPage() {
       // Also store userData for dashboard compatibility
       localStorage.setItem("userData", JSON.stringify(data.user))
 
-      console.log("Redirecting to /dashboard")
-      router.push("/dashboard")
+      console.log("Redirecting...")
+      if (data.user.role === 'admin') {
+        router.push("/admin/topics")
+      } else {
+        router.push("/dashboard")
+      }
     } catch (err) {
       setError("Şəbəkə xətası baş verdi")
       console.error("Login exception:", err)

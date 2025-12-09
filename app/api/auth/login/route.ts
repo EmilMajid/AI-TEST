@@ -8,6 +8,8 @@ const loginSchema = z.object({
   password: z.string().min(1, "Şifrə daxil edin"),
 })
 
+import { MOCK_USERS } from "@/lib/mock-data"
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -36,7 +38,10 @@ export async function POST(request: NextRequest) {
       "murad.ibrahimov@test.com",
       "gunay.rzayeva@test.com",
       "elvin.quliyev@test.com",
-      "sevinc.ismayilova@test.com"
+      "sevinc.ismayilova@test.com",
+      // Admin
+      "admin@edu.az",
+      ...MOCK_USERS.map(u => u.email)
     ]
     if (demoEmails.includes(body.email?.toLowerCase())) {
       shouldTryRealAuth = false
@@ -44,169 +49,7 @@ export async function POST(request: NextRequest) {
 
     if (isDemoMode && !shouldTryRealAuth) {
       // Mock Data for test users
-      const mockUsers = [
-        // Parents
-        {
-          id: "parent-emil",
-          email: "emil.mecidov@example.com",
-          password: "test12345",
-          accountType: "parent",
-          firstName: "Emil",
-          lastName: "Məcidov",
-          fatherName: "Hacıağa",
-          school: "161 saylı məktəb",
-          region: "Bakı",
-          role: "parent",
-        },
-        {
-          id: "parent-aysel",
-          email: "aysel.aliyeva@test.com",
-          password: "test12345",
-          accountType: "parent",
-          firstName: "Aysel",
-          lastName: "Əliyeva",
-          fatherName: "Əli",
-          school: "23 saylı məktəb",
-          region: "Gəncə",
-          role: "parent",
-        },
-        // Teachers
-        {
-          id: "teacher-nigar",
-          email: "nigar.huseynova@test.com",
-          password: "test12345",
-          accountType: "parent",
-          firstName: "Nigar",
-          lastName: "Hüseynova",
-          fatherName: "Hüseyn",
-          school: "161 saylı məktəb",
-          region: "Bakı",
-          role: "teacher",
-        },
-        {
-          id: "teacher-ramiz",
-          email: "ramiz.mammadov@test.com",
-          password: "test12345",
-          accountType: "parent",
-          firstName: "Ramiz",
-          lastName: "Məmmədov",
-          fatherName: "Məmməd",
-          school: "45 saylı məktəb",
-          region: "Sumqayıt",
-          role: "teacher",
-        },
-        // Director
-        {
-          id: "director-farid",
-          email: "farid.qasimov@test.com",
-          password: "test12345",
-          accountType: "parent",
-          firstName: "Farid",
-          lastName: "Qasımov",
-          fatherName: "Qasım",
-          school: "161 saylı məktəb",
-          region: "Bakı",
-          role: "director",
-        },
-        // Students
-        {
-          id: "student-inci",
-          email: "inci.mecidzade@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "İnci",
-          lastName: "Məcidzadə",
-          fatherName: "Emil",
-          school: "161 saylı məktəb",
-          class: "6",
-          region: "Bakı",
-        },
-        {
-          id: "student-emilia",
-          email: "emilia.mecidzade@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Emilia",
-          lastName: "Məcidzadə",
-          fatherName: "Emil",
-          school: "161 saylı məktəb",
-          class: "2",
-          region: "Bakı",
-        },
-        {
-          id: "student-ali",
-          email: "ali.velizade@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Əli",
-          lastName: "Vəlizadə",
-          fatherName: "Vəli",
-          school: "161 saylı məktəb",
-          class: "8",
-          region: "Bakı",
-        },
-        {
-          id: "student-leyla",
-          email: "leyla.hasanova@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Leyla",
-          lastName: "Həsənova",
-          fatherName: "Həsən",
-          school: "23 saylı məktəb",
-          class: "9",
-          region: "Gəncə",
-        },
-        {
-          id: "student-murad",
-          email: "murad.ibrahimov@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Murad",
-          lastName: "İbrahimov",
-          fatherName: "İbrahim",
-          school: "45 saylı məktəb",
-          class: "10",
-          region: "Sumqayıt",
-        },
-        {
-          id: "student-gunay",
-          email: "gunay.rzayeva@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Günay",
-          lastName: "Rzayeva",
-          fatherName: "Rza",
-          school: "12 saylı məktəb",
-          class: "7",
-          region: "Şəki",
-        },
-        {
-          id: "student-elvin",
-          email: "elvin.quliyev@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Elvin",
-          lastName: "Quliyev",
-          fatherName: "Qulu",
-          school: "34 saylı məktəb",
-          class: "11",
-          region: "Mingəçevir",
-        },
-        {
-          id: "student-sevinc",
-          email: "sevinc.ismayilova@test.com",
-          password: "test12345",
-          accountType: "student",
-          firstName: "Sevinc",
-          lastName: "İsmayılova",
-          fatherName: "İsmayıl",
-          school: "5 saylı məktəb",
-          class: "8",
-          region: "Lənkəran",
-        },
-      ];
-
+      const mockUsers = MOCK_USERS
       const { action, email, password, role, userId } = body;
 
       console.log(`[Mock Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
