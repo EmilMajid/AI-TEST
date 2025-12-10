@@ -7,45 +7,62 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/components/ui/use-toast'
 import { Loader2, Save } from 'lucide-react'
+import { subjectsByClass } from '@/lib/education-data'
 
-// Hardcoded list of textbooks we care about. 
-// In a real app, we'd fetch this from `data/textbooks.json` or API.
-const SUBJECTS = [
-    { id: 'azerbaycan-tarixi', name: 'Azərbaycan tarixi 8' },
-    { id: 'informatika', name: 'İnformatika 8' },
-    { id: 'texnologiya', name: 'Texnologiya 8' },
-    { id: 'musiqi', name: 'Musiqi 8' },
-    { id: 'tesviri-incesenet', name: 'Təsviri İncəsənət 8' },
-    { id: 'hayat-bilgisi', name: 'Həyat Bilgisi 8' },
-    { id: 'ortaq-turk-tarixi', name: 'Ortaq Türk Tarixi 8' },
-    { id: 'alman-dili-esas', name: 'Alman dili (Əsas)' },
-    { id: 'fransiz-dili-esas', name: 'Fransız dili (Əsas)' },
-    { id: 'rus-dili-esas', name: 'Rus dili (Əsas)' },
-]
+// Helper to convert subject name to key format used in manual-topics.json
+function getTopicKey(classNum: string, subject: string): string {
+    // Map subject names to their keys in manual-topics.json
+    const keyMap: Record<string, string> = {
+        'Azərbaycan tarixi': 'azerbaycan-tarixi',
+        'İnformatika': 'informatika',
+        'Texnologiya': 'texnologiya',
+        'Musiqi': 'musiqi',
+        'Təsviri incəsənət': 'tesviri-incesenet',
+        'Həyat bilgisi': 'hayat-bilgisi',
+        'Ortaq türk tarixi': 'ortaq-turk-tarixi',
+        'Alman dili': 'alman-dili-esas',
+        'Fransız dili': 'fransiz-dili-esas',
+        'Rus dili': 'rus-dili-esas',
+    }
+
+    return keyMap[subject] || subject.toLowerCase().replace(/\s+/g, '-')
+}
 
 export default function AdminTopicsPage() {
+    const [selectedClass, setSelectedClass] = useState<string>("")
     const [selectedSubject, setSelectedSubject] = useState<string>("")
-    const [topics, setTopics] = useState<any[]>([])
-    const [jsonText, setJsonText] = useState<string>("") // For manual editing
+    const [topicKey, setTopicKey] = useState<string>("")
+    const [jsonText, setJsonText] = useState<string>("")
     const [loading, setLoading] = useState(false)
     const [saving, setSaving] = useState(false)
     const { toast } = useToast()
 
-    // Load correct topics based on selection
+    // Available subjects based on selected class
+    const availableSubjects = selectedClass ? subjectsByClass[selectedClass] || [] : []
+
+    // Reset subject when class changes
     useEffect(() => {
-        if (!selectedSubject) return
+        setSelectedSubject("")
+        setTopicKey("")
+        setJsonText("")
+    }, [selectedClass])
+
+    // Load topics when subject is selected
+    useEffect(() => {
+        if (!selectedClass || !selectedSubject) return
 
         async function loadTopics() {
             setLoading(true)
             try {
-                const res = await fetch('/api/admin/topics') // Gets all
+                const key = getTopicKey(selectedClass, selectedSubject)
+                setTopicKey(key)
+
+                const res = await fetch('/api/admin/topics')
                 const data = await res.json()
 
-                if (data[selectedSubject]) {
-                    setTopics(data[selectedSubject])
-                    setJsonText(JSON.stringify(data[selectedSubject], null, 2))
+                if (data[key]) {
+                    setJsonText(JSON.stringify(data[key], null, 2))
                 } else {
-                    setTopics([])
                     setJsonText("[]")
                 }
             } catch (err) {
@@ -57,14 +74,13 @@ export default function AdminTopicsPage() {
         }
 
         loadTopics()
-    }, [selectedSubject, toast])
+    }, [selectedClass, selectedSubject, toast])
 
     const handleSave = async () => {
-        if (!selectedSubject) return
+        if (!topicKey) return
         setSaving(true)
 
         try {
-            // Validate JSON
             let dataToSave
             try {
                 dataToSave = JSON.parse(jsonText)
@@ -78,7 +94,7 @@ export default function AdminTopicsPage() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    subject: selectedSubject,
+                    subject: topicKey,
                     topics: dataToSave
                 })
             })
@@ -102,26 +118,49 @@ export default function AdminTopicsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                {/* Left: Subject Selection */}
+                {/* Left: Cascading Selectors */}
                 <Card className="md:col-span-1 h-fit">
                     <CardHeader>
-                        <CardTitle>Dərslik Seçimi</CardTitle>
+                        <CardTitle>Seçim</CardTitle>
                     </CardHeader>
-                    <CardContent>
-                        <Select onValueChange={setSelectedSubject} value={selectedSubject}>
-                            <SelectTrigger>
-                                <SelectValue placeholder="Fənn seçin..." />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {SUBJECTS.map(s => (
-                                    <SelectItem key={s.id} value={s.id}>{s.name}</SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
+                    <CardContent className="space-y-4">
+                        {/* Class Selector */}
+                        <div>
+                            <label className="text-sm font-medium mb-2 block">Sinif</label>
+                            <Select onValueChange={setSelectedClass} value={selectedClass}>
+                                <SelectTrigger>
+                                    <SelectValue placeholder="Sinif seçin..." />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(c => (
+                                        <SelectItem key={c} value={c.toString()}>{c}-ci sinif</SelectItem>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                        </div>
+
+                        {/* Subject Selector */}
+                        {selectedClass && (
+                            <div>
+                                <label className="text-sm font-medium mb-2 block">Fənn</label>
+                                <Select onValueChange={setSelectedSubject} value={selectedSubject}>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="Fənn seçin..." />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        {availableSubjects.map(s => (
+                                            <SelectItem key={s} value={s}>{s}</SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        )}
 
                         {selectedSubject && (
                             <div className="mt-4 p-4 bg-slate-100 rounded text-sm text-slate-600">
-                                Seçilmiş dərslik üçün mövzuları sağ tərəfdə redaktə edin və yadda saxlayın.
+                                <strong>{selectedClass}-ci sinif</strong><br />
+                                <strong>{selectedSubject}</strong><br />
+                                Mövzuları sağ tərəfdə redaktə edin.
                             </div>
                         )}
                     </CardContent>
@@ -131,7 +170,7 @@ export default function AdminTopicsPage() {
                 <Card className="md:col-span-3">
                     <CardHeader className="flex flex-row items-center justify-between">
                         <CardTitle>
-                            {selectedSubject ? SUBJECTS.find(s => s.id === selectedSubject)?.name : "Redaktor"}
+                            {selectedSubject ? `${selectedSubject} (${selectedClass}-ci sinif)` : "Redaktor"}
                         </CardTitle>
                         {selectedSubject && (
                             <Button onClick={handleSave} disabled={saving}>
@@ -157,7 +196,7 @@ export default function AdminTopicsPage() {
                             </div>
                         ) : (
                             <div className="flex items-center justify-center h-[300px] text-slate-400">
-                                Sol tərəfdən fənn seçin
+                                Sol tərəfdən sinif və fənn seçin
                             </div>
                         )}
                     </CardContent>
