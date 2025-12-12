@@ -1,0 +1,272 @@
+{
+  "informatika": {
+    "topicKey": "informatika",
+    "topicName": "Informatika",
+    "targetQuestions": 90,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 32,
+      "subtopicCount": 32,
+      "calculatedScore": 90
+    }
+  },
+  "tesviri-incesenet": {
+    "topicKey": "tesviri-incesenet",
+    "topicName": "Tesviri Incesenet",
+    "targetQuestions": 63,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 21,
+      "subtopicCount": 21,
+      "calculatedScore": 62.5
+    }
+  },
+  "hayat-bilgisi": {
+    "topicKey": "hayat-bilgisi",
+    "topicName": "Hayat Bilgisi",
+    "targetQuestions": 58,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 19,
+      "subtopicCount": 19,
+      "calculatedScore": 57.5
+    }
+  },
+  "texnologiya": {
+    "topicKey": "texnologiya",
+    "topicName": "Texnologiya",
+    "targetQuestions": 100,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 134,
+      "subtopicCount": 134,
+      "calculatedScore": 345
+    }
+  },
+  "ortaq-turk-tarixi": {
+    "topicKey": "ortaq-turk-tarixi",
+    "topicName": "Ortaq Turk Tarixi",
+    "targetQuestions": 100,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 222,
+      "subtopicCount": 222,
+      "calculatedScore": 565
+    }
+  },
+  "azerbaycan-tarixi": {
+    "topicKey": "azerbaycan-tarixi",
+    "topicName": "Azerbaycan Tarixi",
+    "targetQuestions": 100,
+    "currentCount": 0,
+    "distribution": {
+      "difficulty": {
+        "asan": 40,
+        "orta": 35,
+        "çətin": 20,
+        "qarışıq": 5
+      },
+      "bloom": {
+        "xatırlama": 20,
+        "anlama": 25,
+        "tətbiq": 25,
+        "təhlil": 15,
+        "qiymətləndirmə": 10,
+        "yaradıcılıq": 5
+      }
+    },
+    "current": {
+      "difficulty": {
+        "asan": 0,
+        "orta": 0,
+        "çətin": 0,
+        "qarışıq": 0
+      },
+      "bloom": {
+        "xatırlama": 0,
+        "anlama": 0,
+        "tətbiq": 0,
+        "təhlil": 0,
+        "qiymətləndirmə": 0,
+        "yaradıcılıq": 0
+      }
+    },
+    "isComplete": false,
+    "completionPercentage": 0,
+    "metrics": {
+      "totalPages": 36,
+      "subtopicCount": 36,
+      "calculatedScore": 100
+    }
+  }
+}
