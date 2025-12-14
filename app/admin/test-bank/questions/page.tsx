@@ -7,7 +7,9 @@ import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Loader2, Search, Edit, Trash2 } from 'lucide-react'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { Loader2, Search, Edit, Trash2, Check, X, AlertCircle } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function TestBankQuestionsPage() {
     const [questions, setQuestions] = useState<any[]>([])
@@ -15,27 +17,64 @@ export default function TestBankQuestionsPage() {
     const [search, setSearch] = useState("")
     const [difficultyFilter, setDifficultyFilter] = useState("all")
     const [bloomFilter, setBloomFilter] = useState("all")
+    const [statusFilter, setStatusFilter] = useState("active") // active, pending, all
+
+    async function loadQuestions() {
+        try {
+            const res = await fetch('/api/test-bank/questions')
+            const data = await res.json()
+            setQuestions(Array.isArray(data) ? data : [])
+        } catch (err) {
+            console.error(err)
+            toast.error("Sualları yükləyərkən xəta baş verdi")
+        } finally {
+            setLoading(false)
+        }
+    }
 
     useEffect(() => {
-        async function loadQuestions() {
-            try {
-                const res = await fetch('/api/test-bank/questions')
-                const data = await res.json()
-                setQuestions(Array.isArray(data) ? data : [])
-            } catch (err) {
-                console.error(err)
-            } finally {
-                setLoading(false)
-            }
-        }
         loadQuestions()
     }, [])
+
+    const handleApprove = async (id: string) => {
+        try {
+            const res = await fetch('/api/test-bank/questions', {
+                method: 'PATCH',
+                body: JSON.stringify({ id, status: 'active', isPending: false })
+            })
+            if (!res.ok) throw new Error()
+            toast.success("Sual təsdiqləndi")
+            loadQuestions()
+        } catch (e) {
+            toast.error("Xəta baş verdi")
+        }
+    }
+
+    const handleDelete = async (id: string) => {
+        if (!confirm("Sualı silmək istədiyinizə əminsiniz?")) return
+        try {
+            const res = await fetch(`/api/test-bank/questions?id=${id}`, {
+                method: 'DELETE'
+            })
+            if (!res.ok) throw new Error()
+            toast.success("Sual silindi")
+            loadQuestions()
+        } catch (e) {
+            toast.error("Xəta baş verdi")
+        }
+    }
 
     const filteredQuestions = questions.filter(q => {
         const matchesSearch = q.question?.toLowerCase().includes(search.toLowerCase())
         const matchesDifficulty = difficultyFilter === "all" || q.difficulty === difficultyFilter
         const matchesBloom = bloomFilter === "all" || q.bloomLevel === bloomFilter
-        return matchesSearch && matchesDifficulty && matchesBloom
+
+        let matchesStatus = true
+        if (statusFilter === 'active') matchesStatus = !q.isPending
+        if (statusFilter === 'pending') matchesStatus = q.isPending
+        // if 'all', matchesStatus is true
+
+        return matchesSearch && matchesDifficulty && matchesBloom && matchesStatus
     })
 
     const getDifficultyBadge = (difficulty: string) => {
@@ -54,6 +93,19 @@ export default function TestBankQuestionsPage() {
                 <h2 className="text-3xl font-bold">Sual İdarəetməsi</h2>
                 <Badge variant="outline">{filteredQuestions.length} sual</Badge>
             </div>
+
+            <Tabs defaultValue="active" onValueChange={setStatusFilter}>
+                <TabsList>
+                    <TabsTrigger value="active">Aktiv</TabsTrigger>
+                    <TabsTrigger value="pending" className="relative">
+                        Gözləmədə
+                        {questions.filter(q => q.isPending).length > 0 && (
+                            <span className="ml-2 flex h-2 w-2 rounded-full bg-orange-500" />
+                        )}
+                    </TabsTrigger>
+                    <TabsTrigger value="all">Bütün</TabsTrigger>
+                </TabsList>
+            </Tabs>
 
             {/* Filters */}
             <Card>
@@ -118,32 +170,58 @@ export default function TestBankQuestionsPage() {
                                     <TableHead>Sual</TableHead>
                                     <TableHead>Mövzu</TableHead>
                                     <TableHead>Çətinlik</TableHead>
-                                    <TableHead>Bloom</TableHead>
-                                    <TableHead>İstifadə</TableHead>
-                                    <TableHead>Uğur %</TableHead>
-                                    <TableHead className="text-right">Əməliyyatlar</TableHead>
+                                    <TableHead>Status</TableHead>
+                                    <TableHead>Əməliyyatlar</TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
                                 {filteredQuestions.map((q) => (
                                     <TableRow key={q.id}>
                                         <TableCell className="max-w-md">
-                                            <p className="truncate">{q.question}</p>
+                                            <p className="truncate font-medium">{q.question}</p>
+                                            <p className="text-xs text-slate-500 mt-1">
+                                                Düzgün: {q.options[q.correctAnswer]}
+                                            </p>
                                         </TableCell>
-                                        <TableCell className="text-sm text-slate-600">{q.subject}</TableCell>
+                                        <TableCell className="text-sm text-slate-600">{q.subject || q.topicKey}</TableCell>
                                         <TableCell>{getDifficultyBadge(q.difficulty)}</TableCell>
-                                        <TableCell className="text-sm">{q.bloomLevel}</TableCell>
-                                        <TableCell>{q.usageCount || 0}</TableCell>
                                         <TableCell>
-                                            {q.successRate !== undefined ? `${q.successRate.toFixed(0)}%` : '-'}
+                                            {q.isPending ? (
+                                                <Badge variant="outline" className="text-orange-600 border-orange-600">
+                                                    <AlertCircle className="h-3 w-3 mr-1" />
+                                                    Gözləmədə
+                                                </Badge>
+                                            ) : (
+                                                <Badge className="bg-green-600">Aktiv</Badge>
+                                            )}
                                         </TableCell>
-                                        <TableCell className="text-right">
-                                            <div className="flex justify-end gap-2">
-                                                <Button size="sm" variant="ghost">
+                                        <TableCell>
+                                            <div className="flex items-center gap-2">
+                                                {q.isPending && (
+                                                    <Button
+                                                        size="sm"
+                                                        className="bg-green-600 hover:bg-green-700 h-8 w-8 p-0"
+                                                        onClick={() => handleApprove(q.id)}
+                                                        title="Təsdiqlə"
+                                                    >
+                                                        <Check className="h-4 w-4" />
+                                                    </Button>
+                                                )}
+                                                <Button
+                                                    size="sm"
+                                                    variant="ghost"
+                                                    className="h-8 w-8 p-0 text-slate-500"
+                                                >
                                                     <Edit className="h-4 w-4" />
                                                 </Button>
-                                                <Button size="sm" variant="ghost" className="text-red-600">
-                                                    <Trash2 className="h-4 w-4" />
+                                                <Button
+                                                    size="sm"
+                                                    variant="ghost"
+                                                    className="h-8 w-8 p-0 text-red-600 hover:text-red-700 hover:bg-red-50"
+                                                    onClick={() => handleDelete(q.id)}
+                                                    title={q.isPending ? "İmtina et" : "Sil"}
+                                                >
+                                                    {q.isPending ? <X className="h-4 w-4" /> : <Trash2 className="h-4 w-4" />}
                                                 </Button>
                                             </div>
                                         </TableCell>

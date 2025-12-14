@@ -1,0 +1,52 @@
+{
+    "providers": [
+        {
+            "name": "gemini",
+            "type": "google",
+            "endpoint": "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent",
+            "apiKeyEnv": "GEMINI_API_KEY",
+            "quota": {
+                "dailyTokens": 6000000,
+                "dailyRequests": 1000
+            }
+        },
+        {
+            "name": "deepseek",
+            "type": "openai_compatible",
+            "endpoint": "https://api.deepseek.com/v1/chat/completions",
+            "apiKeyEnv": "DEEPSEEK_API_KEY",
+            "quota": {
+                "dailyTokens": 100000000,
+                "dailyRequests": 2000
+            }
+        },
+        {
+            "name": "gpt-oss",
+            "type": "huggingface",
+            "modelId": "gpt-oss-120b-medium",
+            "apiKeyEnv": "HF_API_KEY",
+            "quota": {
+                "dailyTokens": null,
+                "dailyRequests": null
+            }
+        },
+        {
+            "name": "groq",
+            "type": "openai_compatible",
+            "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+            "apiKeyEnv": "GROQ_API_KEY",
+            "quota": {
+                "dailyTokens": 5000000,
+                "dailyRequests": 500
+            }
+        }
+    ],
+    "fallbackOrder": [
+        "gemini",
+        "deepseek",
+        "gpt-oss",
+        "groq"
+    ],
+    "batchSize": 5,
+    "promptTemplate": "Siz Azərbaycan dilində təhsil məzmunu yaradan AI‑sınız. Aşağıdakı mövzu haqqında {count} çox‑seçimli sual (4 variant, yalnız 1 doğru) yaradın.\n\nMövzu: {topic}\nMövzu məzmunu: {topicContent}\nÇətinlik: {difficulty}\nBloom səviyyəsi: {bloomLevel}\nDil: azərbaycan\n\nCavab formatı JSON olmalıdır:\n{\n  \"questions\": [\n    {\n      \"question\": \"Sual mətni\",\n      \"options\": [\"Variant A\", \"Variant B\", \"Variant C\", \"Variant D\"],\n      \"correctAnswer\": 0,\n      \"explanation\": \"Qısa izah (optional)\"\n    }\n  ]\n}"
+}
