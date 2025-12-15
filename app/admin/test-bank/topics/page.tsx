@@ -46,7 +46,7 @@ export default function TestBankTopicsPage() {
             method: 'POST',
             body: JSON.stringify({
                 topicKey: selectedTopic.topicKey,
-                count: 5, // Request batch of 5
+                count: 10, // Request batch of 10 as per user request
                 autoApprove: autoApprove
             })
         }).then(async (res) => {

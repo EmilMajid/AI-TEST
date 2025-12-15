@@ -1,22 +1,26 @@
 {
-    "gemini": {
-        "tokensUsed": 0,
-        "requestsMade": 0,
-        "lastReset": "2025-12-13T00:00:00Z"
-    },
-    "deepseek": {
-        "tokensUsed": 0,
-        "requestsMade": 0,
-        "lastReset": "2025-12-13T00:00:00Z"
-    },
-    "gpt-oss": {
-        "tokensUsed": 0,
-        "requestsMade": 0,
-        "lastReset": "2025-12-13T00:00:00Z"
-    },
-    "groq": {
-        "tokensUsed": 0,
-        "requestsMade": 0,
-        "lastReset": "2025-12-13T00:00:00Z"
-    }
+  "gemini": {
+    "tokensUsed": 0,
+    "requestsMade": 0,
+    "lastReset": "2025-12-13T00:00:00Z"
+  },
+  "deepseek": {
+    "tokensUsed": 0,
+    "requestsMade": 0,
+    "lastReset": "2025-12-13T00:00:00Z"
+  },
+  "gpt-oss": {
+    "tokensUsed": 0,
+    "requestsMade": 0,
+    "lastReset": "2025-12-13T00:00:00Z"
+  },
+  "groq": {
+    "tokensUsed": 0,
+    "requestsMade": 0,
+    "lastReset": "2025-12-13T00:00:00Z"
+  },
+  "mock-provider": {
+    "tokensUsed": 144,
+    "requestsMade": 4
+  }
 }
