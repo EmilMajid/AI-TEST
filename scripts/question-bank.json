@@ -106,5 +106,140 @@
     "tags": [],
     "status": "active",
     "isPending": false
+  },
+  "informatika-1765834289242-h0d8h": {
+    "id": "informatika-1765834289242-h0d8h",
+    "topicKey": "informatika",
+    "question": "Mock sual 1: İnformasiya nədir? (Test)",
+    "options": [
+      "Məlumat",
+      "Səs",
+      "Görüntü",
+      "Kod"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İnformasiya məlumatdır.",
+    "difficulty": "orta",
+    "bloomLevel": "anlama",
+    "usageCount": 0,
+    "successRate": 0,
+    "wrongAnswerStats": {
+      "option0": 0,
+      "option1": 0,
+      "option2": 0,
+      "option3": 0
+    },
+    "isProblemDetected": false,
+    "tags": [],
+    "status": "active",
+    "isPending": false
+  },
+  "informatika-1765834289242-12h3b": {
+    "id": "informatika-1765834289242-12h3b",
+    "topicKey": "informatika",
+    "question": "Mock sual 2: Kompüterin beyni nədir?",
+    "options": [
+      "Monitor",
+      "CPU",
+      "Maus",
+      "Klaviatura"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CPU mərkəzi prosessordur.",
+    "difficulty": "orta",
+    "bloomLevel": "anlama",
+    "usageCount": 0,
+    "successRate": 0,
+    "wrongAnswerStats": {
+      "option0": 0,
+      "option1": 0,
+      "option2": 0,
+      "option3": 0
+    },
+    "isProblemDetected": false,
+    "tags": [],
+    "status": "active",
+    "isPending": false
+  },
+  "informatika-1765834289242-lw5in": {
+    "id": "informatika-1765834289242-lw5in",
+    "topicKey": "informatika",
+    "question": "Mock sual 3: Hansı əməliyyat sistemidir?",
+    "options": [
+      "Word",
+      "Excel",
+      "Windows",
+      "Paint"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Windows OS-dir.",
+    "difficulty": "orta",
+    "bloomLevel": "anlama",
+    "usageCount": 0,
+    "successRate": 0,
+    "wrongAnswerStats": {
+      "option0": 0,
+      "option1": 0,
+      "option2": 0,
+      "option3": 0
+    },
+    "isProblemDetected": false,
+    "tags": [],
+    "status": "active",
+    "isPending": false
+  },
+  "informatika-1765834289242-f1t6k": {
+    "id": "informatika-1765834289242-f1t6k",
+    "topicKey": "informatika",
+    "question": "Mock sual 4: 1 bayt neçə bitdir?",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1 bayt 8 bitdir.",
+    "difficulty": "orta",
+    "bloomLevel": "anlama",
+    "usageCount": 0,
+    "successRate": 0,
+    "wrongAnswerStats": {
+      "option0": 0,
+      "option1": 0,
+      "option2": 0,
+      "option3": 0
+    },
+    "isProblemDetected": false,
+    "tags": [],
+    "status": "active",
+    "isPending": false
+  },
+  "informatika-1765834289242-jrq3n": {
+    "id": "informatika-1765834289242-jrq3n",
+    "topicKey": "informatika",
+    "question": "Mock sual 5: Hansı giriş qurğusudur?",
+    "options": [
+      "Monitor",
+      "Printer",
+      "Klaviatura",
+      "Dinamik"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Klaviatura daxiletmə qurğusudur.",
+    "difficulty": "orta",
+    "bloomLevel": "anlama",
+    "usageCount": 0,
+    "successRate": 0,
+    "wrongAnswerStats": {
+      "option0": 0,
+      "option1": 0,
+      "option2": 0,
+      "option3": 0
+    },
+    "isProblemDetected": false,
+    "tags": [],
+    "status": "active",
+    "isPending": false
   }
 }
