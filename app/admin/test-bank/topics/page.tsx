@@ -6,7 +6,8 @@ import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@
 import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Loader2, CheckCircle, AlertCircle, Sparkles } from 'lucide-react'
+import { Input } from '@/components/ui/input'
+import { Loader2, CheckCircle, AlertCircle, Sparkles, Pencil, Save, X } from 'lucide-react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@/components/ui/dialog'
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
@@ -19,6 +20,11 @@ export default function TestBankTopicsPage() {
     const [autoApprove, setAutoApprove] = useState(false) // Default to pending review
     const [dialogOpen, setDialogOpen] = useState(false)
     const [selectedTopic, setSelectedTopic] = useState<any>(null)
+
+    // Editing state
+    const [editingTopic, setEditingTopic] = useState<string | null>(null)
+    const [editValue, setEditValue] = useState<string>("")
+    const [savingTarget, setSavingTarget] = useState(false)
 
     async function loadCoverage() {
         try {
@@ -35,6 +41,49 @@ export default function TestBankTopicsPage() {
     useEffect(() => {
         loadCoverage()
     }, [])
+
+    const startEditing = (topic: any) => {
+        setEditingTopic(topic.topicKey)
+        setEditValue(String(topic.targetQuestions))
+    }
+
+    const cancelEditing = () => {
+        setEditingTopic(null)
+        setEditValue("")
+    }
+
+    const saveTarget = async () => {
+        if (!editingTopic) return
+
+        const newValue = parseInt(editValue)
+        if (isNaN(newValue) || newValue < 0) {
+            toast.error("Zəhmət olmasa düzgün rəqəm daxil edin")
+            return
+        }
+
+        setSavingTarget(true)
+        try {
+            const res = await fetch('/api/test-bank/coverage', {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    topicKey: editingTopic,
+                    targetQuestions: newValue
+                })
+            })
+
+            if (!res.ok) throw new Error('Update failed')
+
+            toast.success("Hədəf sayı yeniləndi")
+            await loadCoverage()
+            cancelEditing()
+        } catch (err) {
+            console.error(err)
+            toast.error("Yenilənmə zamanı xəta baş verdi")
+        } finally {
+            setSavingTarget(false)
+        }
+    }
 
     const handleGenerate = async () => {
         if (!selectedTopic) return
@@ -110,7 +159,37 @@ export default function TestBankTopicsPage() {
                                 return (
                                     <TableRow key={topic.topicKey}>
                                         <TableCell className="font-medium">{topic.topicName}</TableCell>
-                                        <TableCell>{topic.targetQuestions} sual</TableCell>
+                                        <TableCell>
+                                            {editingTopic === topic.topicKey ? (
+                                                <div className="flex items-center gap-1">
+                                                    <Input
+                                                        value={editValue}
+                                                        onChange={(e) => setEditValue(e.target.value)}
+                                                        className="w-20 h-8"
+                                                        type="number"
+                                                        min="0"
+                                                    />
+                                                    <Button size="sm" variant="ghost" className="h-8 w-8 p-0 text-green-600" onClick={saveTarget} disabled={savingTarget}>
+                                                        {savingTarget ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+                                                    </Button>
+                                                    <Button size="sm" variant="ghost" className="h-8 w-8 p-0 text-red-600" onClick={cancelEditing} disabled={savingTarget}>
+                                                        <X className="h-4 w-4" />
+                                                    </Button>
+                                                </div>
+                                            ) : (
+                                                <div className="flex items-center gap-2 group">
+                                                    <span>{topic.targetQuestions} sual</span>
+                                                    <Button
+                                                        size="sm"
+                                                        variant="ghost"
+                                                        className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100 transition-opacity text-slate-400 hover:text-blue-600"
+                                                        onClick={() => startEditing(topic)}
+                                                    >
+                                                        <Pencil className="h-3 w-3" />
+                                                    </Button>
+                                                </div>
+                                            )}
+                                        </TableCell>
                                         <TableCell>{topic.currentCount} sual</TableCell>
                                         <TableCell className="w-64">
                                             <div className="flex items-center gap-2">
@@ -213,7 +292,7 @@ export default function TestBankTopicsPage() {
                         <Button variant="ghost" onClick={() => setDialogOpen(false)}>Ləğv et</Button>
                         <Button onClick={handleGenerate} className="bg-purple-600 hover:bg-purple-700 text-white">
                             <Sparkles className="h-4 w-4 mr-2" />
-                            Yarat (5 ədəd)
+                            Yarat (10 ədəd)
                         </Button>
                     </DialogFooter>
                 </DialogContent>
