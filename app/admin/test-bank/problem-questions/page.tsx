@@ -7,10 +7,14 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Loader2, AlertTriangle, TrendingDown, Edit } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
+import { TestBankFilters, FilterState } from '@/components/admin/test-bank-filters'
 
 export default function ProblemQuestionsPage() {
     const [questions, setQuestions] = useState<any[]>([])
     const [loading, setLoading] = useState(true)
+
+    // Filters
+    const [filters, setFilters] = useState<FilterState>({})
 
     useEffect(() => {
         async function loadQuestions() {
@@ -57,21 +61,29 @@ export default function ProblemQuestionsPage() {
         }))
     }
 
+    const filteredQuestions = questions.filter(q => {
+        if (filters.class && q.class !== filters.class) return false
+        if (filters.subject && q.subject !== filters.subject) return false
+        return true
+    })
+
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center">
                 <h2 className="text-3xl font-bold text-orange-600">Problemli Suallar</h2>
                 <Badge variant="outline" className="text-orange-600 border-orange-600">
                     <AlertTriangle className="h-3 w-3 mr-1" />
-                    {questions.length} problem
+                    {filteredQuestions.length} problem
                 </Badge>
             </div>
+
+            <TestBankFilters onFilterChange={setFilters} />
 
             {loading ? (
                 <div className="flex justify-center p-8">
                     <Loader2 className="h-8 w-8 animate-spin" />
                 </div>
-            ) : questions.length === 0 ? (
+            ) : filteredQuestions.length === 0 ? (
                 <Card>
                     <CardContent className="p-8 text-center">
                         <div className="text-green-600 mb-2">
@@ -83,7 +95,7 @@ export default function ProblemQuestionsPage() {
                 </Card>
             ) : (
                 <div className="space-y-4">
-                    {questions.map((q) => {
+                    {filteredQuestions.map((q) => {
                         const distribution = getWrongAnswerDistribution(q)
 
                         return (

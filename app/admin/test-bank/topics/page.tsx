@@ -12,6 +12,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import { toast } from 'sonner'
+import { TestBankFilters, FilterState } from '@/components/admin/test-bank-filters'
 
 export default function TestBankTopicsPage() {
     const [coverage, setCoverage] = useState<any>(null)
@@ -20,6 +21,9 @@ export default function TestBankTopicsPage() {
     const [autoApprove, setAutoApprove] = useState(false) // Default to pending review
     const [dialogOpen, setDialogOpen] = useState(false)
     const [selectedTopic, setSelectedTopic] = useState<any>(null)
+
+    // Filters
+    const [filters, setFilters] = useState<FilterState>({})
 
     // Editing state
     const [editingTopic, setEditingTopic] = useState<string | null>(null)
@@ -131,11 +135,19 @@ export default function TestBankTopicsPage() {
         return <div className="flex justify-center p-8"><Loader2 className="h-8 w-8 animate-spin" /></div>
     }
 
-    const topics = Object.values(coverage || {})
+    const topics = Object.values(coverage || {}).filter((topic: any) => {
+        if (filters.class && topic.class !== filters.class) return false
+        if (filters.subject && topic.subject !== filters.subject) return false
+        return true
+    })
 
     return (
         <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Mövzu Əhatəlilik</h2>
+            <div className="flex justify-between items-center">
+                <h2 className="text-3xl font-bold">Mövzu Əhatəlilik</h2>
+            </div>
+
+            <TestBankFilters onFilterChange={setFilters} />
 
             <Card>
                 <CardContent className="p-0">
@@ -143,6 +155,7 @@ export default function TestBankTopicsPage() {
                         <TableHeader>
                             <TableRow>
                                 <TableHead>Mövzu</TableHead>
+                                <TableHead>Sinif / Fənn</TableHead>
                                 <TableHead>Hədəf</TableHead>
                                 <TableHead>Cari</TableHead>
                                 <TableHead>Tamamlanma</TableHead>
@@ -159,6 +172,10 @@ export default function TestBankTopicsPage() {
                                 return (
                                     <TableRow key={topic.topicKey}>
                                         <TableCell className="font-medium">{topic.topicName}</TableCell>
+                                        <TableCell className="text-xs text-slate-500">
+                                            {topic.class && `${topic.class}-ci sinif`} <br />
+                                            {topic.subject}
+                                        </TableCell>
                                         <TableCell>
                                             {editingTopic === topic.topicKey ? (
                                                 <div className="flex items-center gap-1">

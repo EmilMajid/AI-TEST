@@ -2,6 +2,8 @@
   "informatika": {
     "topicKey": "informatika",
     "topicName": "Informatika",
+    "class": "5",
+    "subject": "Informatika",
     "targetQuestions": 90,
     "currentCount": 9,
     "distribution": {
@@ -47,6 +49,8 @@
   "tesviri-incesenet": {
     "topicKey": "tesviri-incesenet",
     "topicName": "Tesviri Incesenet",
+    "class": "5",
+    "subject": "Təsviri incəsənət",
     "targetQuestions": 63,
     "currentCount": 5,
     "distribution": {
@@ -92,6 +96,8 @@
   "hayat-bilgisi": {
     "topicKey": "hayat-bilgisi",
     "topicName": "Hayat Bilgisi",
+    "class": "5",
+    "subject": "Həyat bilgisi",
     "targetQuestions": 58,
     "currentCount": 0,
     "distribution": {
@@ -137,6 +143,8 @@
   "texnologiya": {
     "topicKey": "texnologiya",
     "topicName": "Texnologiya",
+    "class": "5",
+    "subject": "Texnologiya",
     "targetQuestions": 100,
     "currentCount": 0,
     "distribution": {
@@ -182,6 +190,8 @@
   "ortaq-turk-tarixi": {
     "topicKey": "ortaq-turk-tarixi",
     "topicName": "Ortaq Turk Tarixi",
+    "class": "8",
+    "subject": "Ortaq türk tarixi",
     "targetQuestions": 100,
     "currentCount": 0,
     "distribution": {
@@ -227,6 +237,8 @@
   "azerbaycan-tarixi": {
     "topicKey": "azerbaycan-tarixi",
     "topicName": "Azerbaycan Tarixi",
+    "class": "8",
+    "subject": "Azərbaycan tarixi",
     "targetQuestions": 100,
     "currentCount": 5,
     "distribution": {

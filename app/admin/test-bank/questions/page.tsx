@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Loader2, Search, Edit, Trash2, Check, X, AlertCircle } from 'lucide-react'
 import { toast } from 'sonner'
+import { TestBankFilters, FilterState } from '@/components/admin/test-bank-filters'
 
 export default function TestBankQuestionsPage() {
     const [questions, setQuestions] = useState<any[]>([])
@@ -18,6 +19,9 @@ export default function TestBankQuestionsPage() {
     const [difficultyFilter, setDifficultyFilter] = useState("all")
     const [bloomFilter, setBloomFilter] = useState("all")
     const [statusFilter, setStatusFilter] = useState("active") // active, pending, all
+
+    // Test Bank Filters
+    const [filters, setFilters] = useState<FilterState>({})
 
     async function loadQuestions() {
         try {
@@ -65,6 +69,10 @@ export default function TestBankQuestionsPage() {
     }
 
     const filteredQuestions = questions.filter(q => {
+        // Test Bank Filters
+        if (filters.class && q.class !== filters.class) return false
+        if (filters.subject && q.subject !== filters.subject) return false
+
         const matchesSearch = q.question?.toLowerCase().includes(search.toLowerCase())
         const matchesDifficulty = difficultyFilter === "all" || q.difficulty === difficultyFilter
         const matchesBloom = bloomFilter === "all" || q.bloomLevel === bloomFilter
@@ -93,6 +101,8 @@ export default function TestBankQuestionsPage() {
                 <h2 className="text-3xl font-bold">Sual İdarəetməsi</h2>
                 <Badge variant="outline">{filteredQuestions.length} sual</Badge>
             </div>
+
+            <TestBankFilters onFilterChange={setFilters} />
 
             <Tabs defaultValue="active" onValueChange={setStatusFilter}>
                 <TabsList>
@@ -169,6 +179,7 @@ export default function TestBankQuestionsPage() {
                                 <TableRow>
                                     <TableHead>Sual</TableHead>
                                     <TableHead>Mövzu</TableHead>
+                                    <TableHead>Sinif / Fənn</TableHead>
                                     <TableHead>Çətinlik</TableHead>
                                     <TableHead>Status</TableHead>
                                     <TableHead>Əməliyyatlar</TableHead>
@@ -183,7 +194,14 @@ export default function TestBankQuestionsPage() {
                                                 Düzgün: {q.options[q.correctAnswer]}
                                             </p>
                                         </TableCell>
-                                        <TableCell className="text-sm text-slate-600">{q.subject || q.topicKey}</TableCell>
+                                        <TableCell className="text-sm text-slate-600">
+                                            {/* Show mapped name or key */}
+                                            {q.topicKey}
+                                        </TableCell>
+                                        <TableCell className="text-xs text-slate-500">
+                                            {q.class && `${q.class}-ci sinif`} <br />
+                                            {q.subject}
+                                        </TableCell>
                                         <TableCell>{getDifficultyBadge(q.difficulty)}</TableCell>
                                         <TableCell>
                                             {q.isPending ? (
