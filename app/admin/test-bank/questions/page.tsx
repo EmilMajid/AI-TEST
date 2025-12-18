@@ -72,6 +72,8 @@ export default function TestBankQuestionsPage() {
         // Test Bank Filters
         if (filters.class && q.class !== filters.class) return false
         if (filters.subject && q.subject !== filters.subject) return false
+        // Precise topic match (if mock data supports it)
+        if (filters.topic && q.topic !== filters.topic) return false
 
         const matchesSearch = q.question?.toLowerCase().includes(search.toLowerCase())
         const matchesDifficulty = difficultyFilter === "all" || q.difficulty === difficultyFilter
