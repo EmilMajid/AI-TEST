@@ -24,7 +24,14 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "fransiz-dili-esas": "Fransız dili",
     "fransiz-dili-ikinci": "Fransız dili",
     "rus-dili-esas": "Rus dili",
-    "rus-dili-ikinci": "Rus dili"
+    "rus-dili-ikinci": "Rus dili",
+    // Grade 5 specific
+    "azerbaycan-dili-hisse-1": "Azərbaycan dili (Hissə 1)",
+    "azerbaycan-dili-hisse-2": "Azərbaycan dili (Hissə 2)",
+    "riyaziyyat-hisse-1": "Riyaziyyat (Hissə 1)",
+    "riyaziyyat-hisse-2": "Riyaziyyat (Hissə 2)",
+    "tebiet-hisse-1": "Təbiət (Hissə 1)",
+    "tebiet-hisse-2": "Təbiət (Hissə 2)"
 }
 
 interface Topic {

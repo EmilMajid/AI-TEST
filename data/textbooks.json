@@ -156,5 +156,97 @@
         "Azərbaycan musiqisi"
       ]
     }
+  ],
+  "5": [
+    {
+      "id": "informatika-5",
+      "title": "İnformatika 5",
+      "subject": "İnformatika",
+      "type": "html",
+      "path": "/textbooks/5/informatika/cover.xhtml",
+      "contentPath": "public/textbooks/5/informatika",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-dili-5-h1",
+      "title": "Azərbaycan dili 5 (hissə 1)",
+      "subject": "Azərbaycan dili (Hissə 1)",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-dili-hisse-1/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-dili-5-h2",
+      "title": "Azərbaycan dili 5 (hissə 2)",
+      "subject": "Azərbaycan dili (Hissə 2)",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-dili-hisse-2/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "riyaziyyat-5-h1",
+      "title": "Riyaziyyat 5 (hissə 1)",
+      "subject": "Riyaziyyat (Hissə 1)",
+      "type": "html",
+      "path": "/textbooks/5/riyaziyyat-hisse-1/cover.xhtml",
+      "contentPath": "public/textbooks/5/riyaziyyat-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "riyaziyyat-5-h2",
+      "title": "Riyaziyyat 5 (hissə 2)",
+      "subject": "Riyaziyyat (Hissə 2)",
+      "type": "html",
+      "path": "/textbooks/5/riyaziyyat-hisse-2/cover.xhtml",
+      "contentPath": "public/textbooks/5/riyaziyyat-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-tarixi-5",
+      "title": "Azərbaycan tarixi 5",
+      "subject": "Azərbaycan tarixi",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-tarixi/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-tarixi",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "edebiyyat-5",
+      "title": "Ədəbiyyat 5",
+      "subject": "Ədəbiyyat",
+      "type": "html",
+      "path": "/textbooks/5/edebiyyat/cover.xhtml",
+      "contentPath": "public/textbooks/5/edebiyyat",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tebiet-5-h1",
+      "title": "Təbiət 5 (hissə 1)",
+      "subject": "Təbiət (Hissə 1)",
+      "type": "html",
+      "path": "/textbooks/5/tebiet-hisse-1/cover.xhtml",
+      "contentPath": "public/textbooks/5/tebiet-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tebiet-5-h2",
+      "title": "Təbiət 5 (hissə 2)",
+      "subject": "Təbiət (Hissə 2)",
+      "type": "html",
+      "path": "/textbooks/5/tebiet-hisse-2/cover.xhtml",
+      "contentPath": "public/textbooks/5/tebiet-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "ingilis-dili-5",
+      "title": "İngilis dili 5",
+      "subject": "İngilis dili",
+      "type": "html",
+      "path": "/textbooks/5/ingilis-dili/cover.xhtml",
+      "contentPath": "public/textbooks/5/ingilis-dili",
+      "topics": "Mövzular"
+    }
   ]
 }

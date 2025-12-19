@@ -119,6 +119,20 @@ export const MOCK_USERS = [
     parentId: "parent-aysel"
   },
   {
+    id: "student-fatime",
+    email: "fatime.velizade@test.com",
+    password: "test12345",
+    accountType: "student",
+    firstName: "Fatimə",
+    lastName: "Vəlizadə",
+    fatherName: "Vəli",
+    school: "23 saylı məktəb",
+    class: "5",
+    region: "Gəncə",
+    role: "student",
+    parentId: "parent-aysel"
+  },
+  {
     id: "student-leyla",
     email: "leyla.hasanova@test.com",
     password: "test12345",

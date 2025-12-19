@@ -64,6 +64,7 @@ export default function ProblemQuestionsPage() {
     const filteredQuestions = questions.filter(q => {
         if (filters.class && q.class !== filters.class) return false
         if (filters.subject && q.subject !== filters.subject) return false
+        if (filters.textbook && q.textbook !== filters.textbook) return false
         if (filters.topic && q.topic !== filters.topic) return false
         return true
     })
