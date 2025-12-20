@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { parseStringPromise } = require('xml2js');
 
 const GRADE = '5';
 const BASE_DIR = path.join(process.cwd(), 'public', 'textbooks', GRADE);
@@ -31,7 +30,12 @@ async function verifyGrade5Textbooks() {
 
     for (const dirName of EXPECTED_DIRS) {
         const dirPath = path.join(BASE_DIR, dirName);
-        const tocPath = path.join(dirPath, 'OEBPS', 'toc.xhtml');
+        // Sometimes it's in OEBPS/toc.xhtml, sometimes just toc.xhtml. 
+        // Let's check both or search.
+        let tocPath = path.join(dirPath, 'OEBPS', 'toc.xhtml');
+        if (!fs.existsSync(tocPath)) {
+            tocPath = path.join(dirPath, 'toc.xhtml');
+        }
 
         const result = {
             name: dirName,
@@ -59,14 +63,18 @@ async function verifyGrade5Textbooks() {
 
         result.hasToc = true;
 
-        // Try to parse and count topics
+        // Try to parse and count topics using regex
         try {
             const tocContent = fs.readFileSync(tocPath, 'utf-8');
-            const parsed = await parseStringPromise(tocContent);
+            // Count <navPoint or <li in xhtml
+            const navPointMatches = tocContent.match(/<navPoint/g);
+            const liMatches = tocContent.match(/<li/g);
 
-            // Extract topics from navMap
-            const navPoints = parsed?.ncx?.navMap?.[0]?.navPoint || [];
-            result.topicCount = navPoints.length;
+            result.topicCount = (navPointMatches ? navPointMatches.length : 0) || (liMatches ? liMatches.length : 0);
+
+            if (result.topicCount === 0) {
+                result.error = 'No topics found in toc.xhtml';
+            }
 
         } catch (err) {
             result.error = `Parse error: ${err.message}`;
