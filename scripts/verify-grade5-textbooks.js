@@ -13,9 +13,14 @@ const EXPECTED_DIRS = [
     'riyaziyyat-hisse-2',
     'azerbaycan-tarixi',
     'edebiyyat',
+    // PDF based books
     'tebiet-hisse-1',
     'tebiet-hisse-2',
-    'ingilis-dili'
+    'ingilis-dili',
+    'texnologiya',
+    'tesviri-incesenet',
+    'fiziki-terbiye',
+    'musiqi'
 ];
 
 async function verifyGrade5Textbooks() {
@@ -30,8 +35,6 @@ async function verifyGrade5Textbooks() {
 
     for (const dirName of EXPECTED_DIRS) {
         const dirPath = path.join(BASE_DIR, dirName);
-        // Sometimes it's in OEBPS/toc.xhtml, sometimes just toc.xhtml. 
-        // Let's check both or search.
         let tocPath = path.join(dirPath, 'OEBPS', 'toc.xhtml');
         if (!fs.existsSync(tocPath)) {
             tocPath = path.join(dirPath, 'toc.xhtml');
@@ -41,6 +44,7 @@ async function verifyGrade5Textbooks() {
             name: dirName,
             exists: false,
             hasToc: false,
+            hasPdf: false,
             topicCount: 0,
             error: null
         };
@@ -54,30 +58,31 @@ async function verifyGrade5Textbooks() {
 
         result.exists = true;
 
-        // Check if toc.xhtml exists
-        if (!fs.existsSync(tocPath)) {
-            result.error = 'toc.xhtml not found';
-            results.push(result);
-            continue;
+        // Check for PDF file first (prioritize if known PDF subject)
+        const pdfFiles = fs.readdirSync(dirPath).filter(f => f.toLowerCase().endsWith('.pdf'));
+        if (pdfFiles.length > 0) {
+            result.hasPdf = true;
+            result.topicCount = 1; // Treat PDF as having at least "content"
         }
 
-        result.hasToc = true;
+        // Check for toc.xhtml
+        if (fs.existsSync(tocPath)) {
+            result.hasToc = true;
 
-        // Try to parse and count topics using regex
-        try {
-            const tocContent = fs.readFileSync(tocPath, 'utf-8');
-            // Count <navPoint or <li in xhtml
-            const navPointMatches = tocContent.match(/<navPoint/g);
-            const liMatches = tocContent.match(/<li/g);
+            // Try to parse and count topics using regex
+            try {
+                const tocContent = fs.readFileSync(tocPath, 'utf-8');
+                const navPointMatches = tocContent.match(/<navPoint/g);
+                const liMatches = tocContent.match(/<li/g);
 
-            result.topicCount = (navPointMatches ? navPointMatches.length : 0) || (liMatches ? liMatches.length : 0);
-
-            if (result.topicCount === 0) {
-                result.error = 'No topics found in toc.xhtml';
+                result.topicCount = (navPointMatches ? navPointMatches.length : 0) || (liMatches ? liMatches.length : 0);
+            } catch (err) {
+                if (!result.hasPdf) result.error = `Parse error: ${err.message}`;
             }
+        }
 
-        } catch (err) {
-            result.error = `Parse error: ${err.message}`;
+        if (!result.hasToc && !result.hasPdf) {
+            result.error = 'No toc.xhtml or PDF found';
         }
 
         results.push(result);

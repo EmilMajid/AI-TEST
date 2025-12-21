@@ -244,8 +244,44 @@
       "title": "İngilis dili 5",
       "subject": "İngilis dili",
       "type": "pdf",
-      "path": "/textbooks/5/ingilis-dili/english-5.pdf",
-      "contentPath": "public/textbooks/5/ingilis-dili",
+      "path": "/textbooks/5/ingilis-dili-5/english-5.pdf",
+      "contentPath": "public/textbooks/5/ingilis-dili-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "texnologiya-5",
+      "title": "Texnologiya 5",
+      "subject": "Texnologiya",
+      "type": "pdf",
+      "path": "/textbooks/5/texnologiya-5/texnologiya-5.pdf",
+      "contentPath": "public/textbooks/5/texnologiya-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tesviri-incesenet-5",
+      "title": "Təsviri İncəsənət 5",
+      "subject": "Təsviri İncəsənət",
+      "type": "pdf",
+      "path": "/textbooks/5/tesviri-incesenet-5/tesviri-incesenet-5.pdf",
+      "contentPath": "public/textbooks/5/tesviri-incesenet-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "fiziki-terbiye-5",
+      "title": "Fiziki Tərbiyə 5",
+      "subject": "Fiziki tərbiyə",
+      "type": "pdf",
+      "path": "/textbooks/5/fiziki-terbiye-5/fiziki-terbiye-5.pdf",
+      "contentPath": "public/textbooks/5/fiziki-terbiye",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "musiqi-5",
+      "title": "Musiqi 5",
+      "subject": "Musiqi",
+      "type": "pdf",
+      "path": "/textbooks/5/musiqi-5/musiqi-5.pdf",
+      "contentPath": "public/textbooks/5/musiqi",
       "topics": "Mövzular"
     }
   ]
