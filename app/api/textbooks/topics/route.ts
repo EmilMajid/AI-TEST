@@ -85,14 +85,31 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
         const groups: TopicGroup[] = []
         let currentGroup: TopicGroup | null = null
 
-        // Extract text content from all anchor tags
+        // 1. Try Anchor Tags (Common in HTML TOCs)
         const linkPattern = /<a[^>]*href="([^"]*)"[^>]*>([^<]+)<\/a>/gi
         let match
+        let foundAny = false
 
         while ((match = linkPattern.exec(content)) !== null) {
+            foundAny = true
             const href = match[1]
             let text = match[2].trim()
+            processMatch(href, text)
+        }
 
+        // 2. If no anchors found, Try NavPoints (Common in NCX/EPUB TOCs)
+        if (!foundAny) {
+            // Regex to capture navLabel text and content src
+            // Simple robust regex for <navPoint ...> ... <text>Title</text> ... <content src="File.xhtml"/>
+            const navPointPattern = /<navPoint[^>]*>[\s\S]*?<text>([^<]+)<\/text>[\s\S]*?<content src="([^"]+)"/gi
+            while ((match = navPointPattern.exec(content)) !== null) {
+                const text = match[1].trim()
+                const href = match[2]
+                processMatch(href, text)
+            }
+        }
+
+        function processMatch(href: string, text: string) {
             // Extract page number from href
             const pageMatch = href.match(/page(\d+)/i) || href.match(/(\d+)\.xhtml/)
             let page = 0
@@ -109,10 +126,8 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
                 .replace(/&#39;/g, "'")
 
             // Check if this is a chapter/section header
-            const isChapter = /BÖLMƏ|FƏSİL|UNIT|CHAPTER/i.test(text)
-            const isRoman = /^[IVX]+\.?\s+/i.test(text)
-            const isNumbered = /^\d+(\.\d+)*\.?\s+/.test(text)
-            const isLongEnough = text.length > 5
+            const isChapter = /BÖLMƏ|FƏSİL|UNIT|CHAPTER|HİSSƏ/i.test(text)
+            const isLongEnough = text.length > 3
 
             if (isChapter && isLongEnough) {
                 // This is a chapter header - create new group

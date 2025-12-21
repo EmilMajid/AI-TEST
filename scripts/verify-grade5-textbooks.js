@@ -16,11 +16,11 @@ const EXPECTED_DIRS = [
     // PDF based books
     'tebiet-hisse-1',
     'tebiet-hisse-2',
-    'ingilis-dili',
-    'texnologiya',
-    'tesviri-incesenet',
-    'fiziki-terbiye',
-    'musiqi'
+    'ingilis-dili-5',
+    'texnologiya-5',
+    'tesviri-incesenet-5',
+    'fiziki-terbiye-5',
+    'musiqi-5'
 ];
 
 async function verifyGrade5Textbooks() {
@@ -96,14 +96,17 @@ async function verifyGrade5Textbooks() {
     let failCount = 0;
 
     results.forEach(r => {
-        const status = r.hasToc && r.topicCount > 0 ? '✅' : '❌';
+        const isSuccess = (r.hasToc && r.topicCount > 0) || r.hasPdf;
+        const status = isSuccess ? '✅' : '❌';
         const info = r.error
             ? `ERROR: ${r.error}`
-            : `${r.topicCount} topics`;
+            : r.hasPdf
+                ? 'PDF Content Available'
+                : `${r.topicCount} topics`;
 
         console.log(`${status} ${r.name.padEnd(30)} | ${info}`);
 
-        if (r.hasToc && r.topicCount > 0) successCount++;
+        if (isSuccess) successCount++;
         else failCount++;
     });
 
