@@ -144,8 +144,8 @@ class ContentExtractor:
             json.dump(output_data, f, ensure_ascii=False)
             f.write("\n")
         
-    print(f"Saved to: {output_file}")
-        return str(output_file)
+        print(f"Saved to: {output_file}")
+    return str(output_file)
 
 def process_unified_pipeline():
     """Reads textbooks.json, processes PDFs, and appends to existing chunks"""
