@@ -283,6 +283,15 @@
       "path": "/textbooks/5/musiqi-5/musiqi-5.pdf",
       "contentPath": "public/textbooks/5/musiqi",
       "topics": "Mövzular"
+    },
+    {
+      "id": "hayat-bilgisi-5",
+      "title": "Həyat Bilgisi 5",
+      "subject": "Həyat bilgisi",
+      "type": "html",
+      "path": "https://www.e-derslik.edu.az/player/index3.php?book_id=451",
+      "contentPath": "public/textbooks/5/hayat-bilgisi-5",
+      "topics": "Mövzular"
     }
   ]
 }

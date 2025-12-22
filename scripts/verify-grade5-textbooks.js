@@ -20,8 +20,15 @@ const EXPECTED_DIRS = [
     'texnologiya-5',
     'tesviri-incesenet-5',
     'fiziki-terbiye-5',
-    'musiqi-5'
+    'musiqi-5',
+    'hayat-bilgisi-5'
 ];
+
+const manualTopicspath = path.join(__dirname, 'manual-topics.json');
+let manualTopics = {};
+if (fs.existsSync(manualTopicspath)) {
+    manualTopics = JSON.parse(fs.readFileSync(manualTopicspath, 'utf8'));
+}
 
 async function verifyGrade5Textbooks() {
     console.log(`\n📚 Verifying Grade ${GRADE} Textbooks\n${'='.repeat(50)}\n`);
@@ -45,6 +52,7 @@ async function verifyGrade5Textbooks() {
             exists: false,
             hasToc: false,
             hasPdf: false,
+            hasManual: false,
             topicCount: 0,
             error: null
         };
@@ -81,8 +89,18 @@ async function verifyGrade5Textbooks() {
             }
         }
 
-        if (!result.hasToc && !result.hasPdf) {
-            result.error = 'No toc.xhtml or PDF found';
+        // Check for Manual Topics from JSON
+        if (manualTopics[dirName]) {
+            result.hasManual = true;
+            const manualCount = manualTopics[dirName].reduce((acc, ch) => acc + ch.topics.length, 0);
+            result.topicCount = Math.max(result.topicCount, manualCount);
+        }
+
+        if (!result.hasToc && !result.hasPdf && !result.hasManual) {
+            result.error = 'No toc.xhtml or PDF or Manual Topics found';
+        } else {
+            // If manual/PDF present, clear error only if no serious parse error
+            if (result.error === 'No toc.xhtml or PDF found') result.error = null;
         }
 
         results.push(result);
@@ -96,13 +114,15 @@ async function verifyGrade5Textbooks() {
     let failCount = 0;
 
     results.forEach(r => {
-        const isSuccess = (r.hasToc && r.topicCount > 0) || r.hasPdf;
+        const isSuccess = (r.hasToc && r.topicCount > 0) || r.hasPdf || r.hasManual;
         const status = isSuccess ? '✅' : '❌';
         const info = r.error
             ? `ERROR: ${r.error}`
             : r.hasPdf
                 ? 'PDF Content Available'
-                : `${r.topicCount} topics`;
+                : r.hasManual
+                    ? `Manual Topics (${r.topicCount})`
+                    : `${r.topicCount} topics`;
 
         console.log(`${status} ${r.name.padEnd(30)} | ${info}`);
 
