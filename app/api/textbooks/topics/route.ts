@@ -126,10 +126,15 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
                 .replace(/&#39;/g, "'")
 
             // Check if this is a chapter/section header
-            const isChapter = /BÖLMƏ|FƏSİL|UNIT|CHAPTER|HİSSƏ/i.test(text)
-            const isLongEnough = text.length > 3
+            // Expanded regex to handle encoding issues (e.g., 'Blmt' for 'Bölmə') and Roman numerals
+            const isChapter = /BÖLMƏ|FƏSİL|UNIT|CHAPTER|HİSSƏ/i.test(text) ||
+                /B[^\w\s]lm[^\w\s]|B.lm./i.test(text) ||
+                /F[^\w\s]sil/i.test(text);
 
-            if (isChapter && isLongEnough) {
+            const isRoman = /^[IVX]+\.?\s+/i.test(text);
+            const isLongEnough = text.length > 3;
+
+            if ((isChapter || (isRoman && isLongEnough)) && isLongEnough) {
                 // This is a chapter header - create new group
                 if (grp && grp.topics.length > 0) {
                     groups.push(grp)
@@ -139,6 +144,8 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
                     topics: []
                 }
             } else if (page > 0 && isLongEnough && !href.includes("cover") && !href.includes("info")) {
+                // Ignore plain numbers if text is just digits or "page X"
+                if (/^\d+$/.test(text) || /^\d+\.\s*$/.test(text)) return grp;
                 // This is a topic - create default group if needed
                 if (!grp) {
                     grp = {

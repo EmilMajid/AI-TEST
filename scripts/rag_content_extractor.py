@@ -144,45 +144,97 @@ class ContentExtractor:
             json.dump(output_data, f, ensure_ascii=False)
             f.write("\n")
         
-        print(f"Saved to: {output_file}")
+    print(f"Saved to: {output_file}")
         return str(output_file)
 
-def process_all_textbooks(textbooks_dir: str = "textbooks"):
-    """Bütün dərslikləri emal edir"""
+def process_unified_pipeline():
+    """Reads textbooks.json, processes PDFs, and appends to existing chunks"""
     extractor = ContentExtractor()
     
-    # Example: Process textbooks by grade and subject
-    textbook_mapping = {
-        "8_fizika.pdf": (8, "fizika"),
-        "9_kimya.pdf": (9, "kimya"),
-        "10_riyaziyyat.pdf": (10, "riyaziyyat"),
-        # Add more mappings
-    }
+    # Paths
+    base_dir = Path(os.getcwd())
+    textbooks_json_path = base_dir / "data" / "textbooks.json"
+    chunks_jsonl_path = base_dir / "data" / "textbook-chunks.jsonl"
     
-    results = []
-    textbooks_path = Path(textbooks_dir)
+    if not textbooks_json_path.exists():
+        print(f"Error: {textbooks_json_path} not found")
+        return
+
+    # Load existing chunks if valid, or start fresh if corrupted
+    existing_chunks = []
+    if chunks_jsonl_path.exists():
+        print(f"Loading existing data from {chunks_jsonl_path}...")
+        try:
+            with open(chunks_jsonl_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        existing_chunks.append(json.loads(line))
+            print(f"Loaded {len(existing_chunks)} existing chunks (mostly EPUB).")
+        except Exception as e:
+            print(f"Error reading existing chunks: {e}. Starting fresh.")
     
-    if not textbooks_path.exists():
-        print(f"Error: Directory {textbooks_dir} does not exist")
-        return results
+    # Load textbooks config
+    with open(textbooks_json_path, "r", encoding="utf-8") as f:
+        textbooks_data = json.load(f)
+        
+    new_chunks = []
+    chunk_id_counter = len(existing_chunks) + 1
     
-    for pdf_file in textbooks_path.glob("*.pdf"):
-        filename = pdf_file.name
-        if filename in textbook_mapping:
-            grade, subject = textbook_mapping[filename]
-            output_path = extractor.process_textbook(str(pdf_file), grade, subject)
-            results.append({
-                "file": filename,
-                "grade": grade,
-                "subject": subject,
-                "output": output_path
-            })
+    # Iterate over all grades and books
+    for grade, books in textbooks_data.items():
+        for book in books:
+            if book.get("type") == "pdf" and book.get("path"):
+                pdf_rel_path = book["path"]
+                # Convert absolute-like path "/textbooks/..." to local path "public/textbooks/..."
+                # Or use contentPath if available and look for PDF inside
+                
+                pdf_path = None
+                # Try constructing path from contentPath first (more reliable for actual files)
+                if book.get("contentPath"):
+                    local_dir = base_dir / book["contentPath"]
+                    # Find any PDF in this dir
+                    if local_dir.exists():
+                        pdfs = list(local_dir.glob("*.pdf"))
+                        if pdfs:
+                            pdf_path = pdfs[0]
+                
+                # Fallback to 'path'
+                if not pdf_path and pdf_rel_path:
+                     # Remove leading slash if present
+                     clean_path = pdf_rel_path.lstrip("/")
+                     pdf_path = base_dir / "public" / clean_path
+
+                if pdf_path and pdf_path.exists():
+                    print(f"Processing PDF: {pdf_path.name} (Grade {grade} - {book['subject']})")
+                    try:
+                        extracted = extractor.extract_pdf(str(pdf_path))
+                        file_chunks = extractor.chunk_content(extracted["content"])
+                        
+                        for chunk in file_chunks:
+                            new_chunks.append({
+                                "grade": int(grade),
+                                "subject": book["subject"],
+                                "book_id": book["id"],
+                                "source": pdf_path.name,
+                                "text": chunk["text"],
+                                "page": chunk["page"],
+                                "type": "pdf_page"
+                            })
+                    except Exception as e:
+                        print(f"Failed to process {pdf_path.name}: {e}")
+                else:
+                    print(f"⚠️ PDF file not found for: {book['title']} (Path: {pdf_path})")
+
+    # Combine and Save
+    total_chunks = existing_chunks + new_chunks
+    print(f"Saving total {len(total_chunks)} chunks (Added {len(new_chunks)} new PDF chunks).")
     
-    return results
+    with open(chunks_jsonl_path, "w", encoding="utf-8") as f:
+        for chunk in total_chunks:
+            json.dump(chunk, f, ensure_ascii=False)
+            f.write("\n")
+            
+    print("✅ Unified Extraction Complete!")
 
 if __name__ == "__main__":
-    print("Starting RAG Content Extraction...")
-    results = process_all_textbooks()
-    print(f"\nProcessed {len(results)} textbooks:")
-    for r in results:
-        print(f"  - {r['file']} -> {r['output']}")
+    process_unified_pipeline()
