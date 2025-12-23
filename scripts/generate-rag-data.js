@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const pdfParse = require('pdf-parse');
 
 const TEXTBOOKS_JSON = path.join(process.cwd(), 'data', 'textbooks.json');
 const OUTPUT_FILE = path.join(process.cwd(), 'data', 'textbook-chunks.jsonl');
@@ -37,6 +38,39 @@ function findXhtmlFiles(dir) {
         }
     });
     return results;
+}
+
+/**
+ * Extract text from PDF file
+ */
+async function extractPdfText(pdfPath) {
+    try {
+        const dataBuffer = fs.readFileSync(pdfPath);
+        // pdf-parse returns a promise, await it
+        const pdfParser = require('pdf-parse');
+        const data = await pdfParser(dataBuffer);
+        return data.text;
+    } catch (error) {
+        console.error(`    Error extracting PDF ${path.basename(pdfPath)}: ${error.message}`);
+        return null;
+    }
+}
+
+/**
+ * Chunk text into smaller pieces (500 words per chunk)
+ */
+function chunkText(text, chunkSize = 500) {
+    const words = text.split(/\s+/);
+    const chunks = [];
+
+    for (let i = 0; i < words.length; i += chunkSize) {
+        const chunk = words.slice(i, i + chunkSize).join(' ');
+        if (chunk.trim().length > 50) {
+            chunks.push(chunk);
+        }
+    }
+
+    return chunks;
 }
 
 /**
@@ -91,18 +125,42 @@ async function main() {
                     }
                 }
             } else if (book.type === 'pdf') {
-                // For PDF, we'll note its existence. 
-                // Actual text extraction might require an external tool or Python script.
-                // For now, we add a metadata entry.
-                allChunks.push({
-                    grade: parseInt(grade),
-                    subject: book.subject,
-                    book_id: book.id,
-                    source: book.path,
-                    text: `PDF Content: ${book.title}. Note: Full text extraction for this PDF is pending advanced OCR/Parsing.`,
-                    page: 1,
-                    type: 'pdf_placeholder'
-                });
+                // For PDF, extract text using pdf-parse
+                if (!fs.existsSync(contentPath)) {
+                    console.log(`    ⚠️  Directory not found: ${book.contentPath}`);
+                    continue;
+                }
+
+                const pdfFiles = fs.readdirSync(contentPath).filter(f => f.toLowerCase().endsWith('.pdf'));
+
+                if (pdfFiles.length > 0) {
+                    const pdfPath = path.join(contentPath, pdfFiles[0]);
+                    console.log(`    Extracting from ${pdfFiles[0]}...`);
+
+                    const pdfText = await extractPdfText(pdfPath);
+
+                    if (pdfText && pdfText.trim().length > 100) {
+                        // Chunk the PDF text
+                        const chunks = chunkText(pdfText);
+                        console.log(`    Extracted ${chunks.length} chunks`);
+
+                        chunks.forEach((chunkText, idx) => {
+                            allChunks.push({
+                                grade: parseInt(grade),
+                                subject: book.subject,
+                                book_id: book.id,
+                                source: pdfFiles[0],
+                                text: chunkText,
+                                page: idx + 1, // Approximate page
+                                type: 'pdf_chunk'
+                            });
+                        });
+                    } else {
+                        console.log(`    ⚠️  No text extracted (scanned PDF?)`);
+                    }
+                } else {
+                    console.log(`    ⚠️  No PDF file found in ${book.contentPath}`);
+                }
             }
         }
     }

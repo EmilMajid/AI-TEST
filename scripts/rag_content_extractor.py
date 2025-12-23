@@ -15,8 +15,8 @@ class ContentExtractor:
     
     def __init__(self):
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
-        self.output_dir = Path("extracted_data")
-        self.output_dir.mkdir(exist_ok=True)
+        self.output_dir = Path("data")  # Changed to 'data' to match unified pipeline
+        # self.output_dir.mkdir(exist_ok=True) # Pipeline handles this
     
     def extract_pdf(self, pdf_path: str) -> Dict[str, Any]:
         """PDF fayldan məlumatları çıxarır"""
@@ -52,17 +52,6 @@ class ContentExtractor:
                                     "formula": formula,
                                     "type": "latex"
                                 })
-            
-            # Extract images (optional - requires more processing)
-            # images = convert_from_path(pdf_path, dpi=200)
-            # for idx, img in enumerate(images):
-            #     img_text = pytesseract.image_to_string(img, lang='aze+eng')
-            #     if img_text.strip():
-            #         text_content.append({
-            #             "page": idx + 1,
-            #             "text": img_text,
-            #             "type": "image_text"
-            #         })
             
             result = {
                 "content": text_content,
@@ -117,35 +106,6 @@ class ContentExtractor:
             })
         
         return chunks
-    
-    def process_textbook(self, pdf_path: str, grade: int, subject: str) -> str:
-        """Dərsliği emal edib JSONL formatında saxlayır"""
-        print(f"Processing: {pdf_path}")
-        
-        # Extract content
-        extracted = self.extract_pdf(pdf_path)
-        
-        # Chunk content
-        chunks = self.chunk_content(extracted["content"])
-        
-        # Prepare output
-        output_data = {
-            "grade": grade,
-            "subject": subject,
-            "source": extracted["metadata"]["source"],
-            "pages": extracted["metadata"]["pages"],
-            "chunks": chunks,
-            "formulas": extracted["formulas"]
-        }
-        
-        # Save to JSONL
-        output_file = self.output_dir / f"{grade}_{subject}.jsonl"
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(output_data, f, ensure_ascii=False)
-            f.write("\n")
-        
-        print(f"Saved to: {output_file}")
-    return str(output_file)
 
 def process_unified_pipeline():
     """Reads textbooks.json, processes PDFs, and appends to existing chunks"""
@@ -178,59 +138,81 @@ def process_unified_pipeline():
         textbooks_data = json.load(f)
         
     new_chunks = []
-    chunk_id_counter = len(existing_chunks) + 1
     
     # Iterate over all grades and books
     for grade, books in textbooks_data.items():
         for book in books:
-            if book.get("type") == "pdf" and book.get("path"):
-                pdf_rel_path = book["path"]
-                # Convert absolute-like path "/textbooks/..." to local path "public/textbooks/..."
-                # Or use contentPath if available and look for PDF inside
-                
+            if book.get("type") == "pdf":
+                pdf_rel_path = book.get("path")
                 pdf_path = None
-                # Try constructing path from contentPath first (more reliable for actual files)
+                
+                # 1. Try contentPath directory first
                 if book.get("contentPath"):
                     local_dir = base_dir / book["contentPath"]
-                    # Find any PDF in this dir
                     if local_dir.exists():
                         pdfs = list(local_dir.glob("*.pdf"))
                         if pdfs:
                             pdf_path = pdfs[0]
                 
-                # Fallback to 'path'
+                # 2. Fallback to direct path
                 if not pdf_path and pdf_rel_path:
-                     # Remove leading slash if present
-                     clean_path = pdf_rel_path.lstrip("/")
+                     clean_path = pdf_rel_path.lstrip("/").lstrip("\\")
                      pdf_path = base_dir / "public" / clean_path
+                     if not pdf_path.exists():
+                         # Try looking in public/textbooks
+                         pdf_path = base_dir / "public" / "textbooks" / clean_path
 
                 if pdf_path and pdf_path.exists():
                     print(f"Processing PDF: {pdf_path.name} (Grade {grade} - {book['subject']})")
                     try:
                         extracted = extractor.extract_pdf(str(pdf_path))
-                        file_chunks = extractor.chunk_content(extracted["content"])
-                        
-                        for chunk in file_chunks:
-                            new_chunks.append({
-                                "grade": int(grade),
-                                "subject": book["subject"],
-                                "book_id": book["id"],
-                                "source": pdf_path.name,
-                                "text": chunk["text"],
-                                "page": chunk["page"],
-                                "type": "pdf_page"
-                            })
+                        # Only proceed if we got content
+                        if extracted["content"]:
+                            file_chunks = extractor.chunk_content(extracted["content"])
+                            
+                            for chunk in file_chunks:
+                                new_chunks.append({
+                                    "grade": int(grade),
+                                    "subject": book["subject"],
+                                    "book_id": book["id"],
+                                    "source": pdf_path.name,
+                                    "text": chunk["text"],
+                                    "page": chunk["page"],
+                                    "type": "pdf_page"
+                                })
+                            print(f"  -> Extracted {len(file_chunks)} chunks.")
+                        else:
+                             print(f"  -> No text extracted (Scanned PDF?).")
+                             
                     except Exception as e:
                         print(f"Failed to process {pdf_path.name}: {e}")
                 else:
-                    print(f"⚠️ PDF file not found for: {book['title']} (Path: {pdf_path})")
+                    if book.get("contentPath"):
+                         print(f"⚠️ PDF file not found for: {book['title']} (Checked {book['contentPath']} and path)")
 
     # Combine and Save
-    total_chunks = existing_chunks + new_chunks
-    print(f"Saving total {len(total_chunks)} chunks (Added {len(new_chunks)} new PDF chunks).")
+    # We filter out existing 'pdf_placeholder' chunks if we have real content now?
+    # Actually, keep it simple: just append for now, or maybe replace placeholders.
+    # Let's filter out placeholders if we are adding real data.
+    
+    processed_sources = {c["source"] for c in new_chunks}
+    final_chunks = []
+    
+    # Keep existing chunks unless they are placeholders for a source we just processed
+    for c in existing_chunks:
+        if c.get("type") == "pdf_placeholder":
+            # If we found real content for this book, skip the placeholder
+            # Note: Placeholder source might differ slightly, but let's just keep everything for safety unless logical match
+            final_chunks.append(c) 
+        else:
+            final_chunks.append(c)
+            
+    final_chunks.extend(new_chunks)
+    
+    print(f"Saving total {len(final_chunks)} chunks (Added {len(new_chunks)} new PDF chunks).")
     
     with open(chunks_jsonl_path, "w", encoding="utf-8") as f:
-        for chunk in total_chunks:
+        for chunk in final_chunks:
             json.dump(chunk, f, ensure_ascii=False)
             f.write("\n")
             
