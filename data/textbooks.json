@@ -1,4 +1,186 @@
 {
+  "5": [
+    {
+      "id": "informatika-5",
+      "title": "İnformatika 5",
+      "subject": "İnformatika",
+      "type": "html",
+      "path": "/textbooks/5/informatika/cover.xhtml",
+      "contentPath": "public/textbooks/5/informatika",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-dili-5-h1",
+      "title": "Azərbaycan dili 5 (hissə 1)",
+      "subject": "Azərbaycan dili (Hissə 1)",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-dili-hisse-1/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-dili-5-h2",
+      "title": "Azərbaycan dili 5 (hissə 2)",
+      "subject": "Azərbaycan dili (Hissə 2)",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-dili-hisse-2/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "riyaziyyat-5-h1",
+      "title": "Riyaziyyat 5 (hissə 1)",
+      "subject": "Riyaziyyat (Hissə 1)",
+      "type": "html",
+      "path": "/textbooks/5/riyaziyyat-hisse-1/cover.xhtml",
+      "contentPath": "public/textbooks/5/riyaziyyat-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "riyaziyyat-5-h2",
+      "title": "Riyaziyyat 5 (hissə 2)",
+      "subject": "Riyaziyyat (Hissə 2)",
+      "type": "html",
+      "path": "/textbooks/5/riyaziyyat-hisse-2/cover.xhtml",
+      "contentPath": "public/textbooks/5/riyaziyyat-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-tarixi-5",
+      "title": "Azərbaycan tarixi 5",
+      "subject": "Azərbaycan tarixi",
+      "type": "html",
+      "path": "/textbooks/5/azerbaycan-tarixi/cover.xhtml",
+      "contentPath": "public/textbooks/5/azerbaycan-tarixi",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "edebiyyat-5",
+      "title": "Ədəbiyyat 5",
+      "subject": "Ədəbiyyat",
+      "type": "html",
+      "path": "/textbooks/5/edebiyyat/cover.xhtml",
+      "contentPath": "public/textbooks/5/edebiyyat",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tebiet-5-h1",
+      "title": "Təbiət 5 (hissə 1)",
+      "subject": "Təbiət (Hissə 1)",
+      "type": "pdf",
+      "path": "/textbooks/5/tebiet-hisse-1/tebiet-5-h1.pdf",
+      "contentPath": "public/textbooks/5/tebiet-hisse-1",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tebiet-5-h2",
+      "title": "Təbiət 5 (hissə 2)",
+      "subject": "Təbiət (Hissə 2)",
+      "type": "pdf",
+      "path": "/textbooks/5/tebiet-hisse-2/tebiet-5-h2.pdf",
+      "contentPath": "public/textbooks/5/tebiet-hisse-2",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "ingilis-dili-5",
+      "title": "İngilis dili 5",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/5/ingilis-dili-5/english-5.pdf",
+      "contentPath": "public/textbooks/5/ingilis-dili-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "texnologiya-5",
+      "title": "Texnologiya 5",
+      "subject": "Texnologiya",
+      "type": "pdf",
+      "path": "/textbooks/5/texnologiya-5/texnologiya-5.pdf",
+      "contentPath": "public/textbooks/5/texnologiya-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tesviri-incesenet-5",
+      "title": "Təsviri İncəsənət 5",
+      "subject": "Təsviri İncəsənət",
+      "type": "pdf",
+      "path": "/textbooks/5/tesviri-incesenet-5/tesviri-incesenet-5.pdf",
+      "contentPath": "public/textbooks/5/tesviri-incesenet-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "fiziki-terbiye-5",
+      "title": "Fiziki Tərbiyə 5",
+      "subject": "Fiziki tərbiyə",
+      "type": "pdf",
+      "path": "/textbooks/5/fiziki-terbiye-5/fiziki-terbiye-5.pdf",
+      "contentPath": "public/textbooks/5/fiziki-terbiye",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "musiqi-5",
+      "title": "Musiqi 5",
+      "subject": "Musiqi",
+      "type": "pdf",
+      "path": "/textbooks/5/musiqi-5/musiqi-5.pdf",
+      "contentPath": "public/textbooks/5/musiqi",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "hayat-bilgisi-5",
+      "title": "Həyat Bilgisi 5",
+      "subject": "Həyat bilgisi",
+      "type": "html",
+      "path": "https://www.e-derslik.edu.az/player/index3.php?book_id=451",
+      "contentPath": "public/textbooks/5/hayat-bilgisi-5",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "azerbaycan-dili-5",
+      "title": "Azərbaycan dili 5",
+      "subject": "Azərbaycan dili",
+      "type": "pdf",
+      "path": "/textbooks/5/azerbaycan-dili/book.pdf",
+      "contentPath": "public/textbooks/5/azerbaycan-dili",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "rus-dili-5",
+      "title": "Rus dili 5",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/5/i-kinci-xarici-dil/book.pdf",
+      "contentPath": "public/textbooks/5/i-kinci-xarici-dil",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "riyaziyyat-5",
+      "title": "Riyaziyyat 5",
+      "subject": "Riyaziyyat",
+      "type": "pdf",
+      "path": "/textbooks/5/riyaziyyat/book.pdf",
+      "contentPath": "public/textbooks/5/riyaziyyat",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tebiet-5",
+      "title": "Təbiət 5",
+      "subject": "Təbiət",
+      "type": "pdf",
+      "path": "/textbooks/5/tebiet/book.pdf",
+      "contentPath": "public/textbooks/5/tebiet",
+      "topics": "Mövzular"
+    },
+    {
+      "id": "tesviri-incesenet-5",
+      "title": "Təsviri incəsənət 5",
+      "subject": "Təsviri incəsənət",
+      "type": "pdf",
+      "path": "/textbooks/5/tesviri-incesenet/book.pdf",
+      "contentPath": "public/textbooks/5/tesviri-incesenet",
+      "topics": "Mövzular"
+    }
+  ],
   "8": [
     {
       "id": "informatika-8",
@@ -155,142 +337,23 @@
         "Nəzəriyyə",
         "Azərbaycan musiqisi"
       ]
-    }
-  ],
-  "5": [
-    {
-      "id": "informatika-5",
-      "title": "İnformatika 5",
-      "subject": "İnformatika",
-      "type": "html",
-      "path": "/textbooks/5/informatika/cover.xhtml",
-      "contentPath": "public/textbooks/5/informatika",
-      "topics": "Mövzular"
     },
     {
-      "id": "azerbaycan-dili-5-h1",
-      "title": "Azərbaycan dili 5 (hissə 1)",
-      "subject": "Azərbaycan dili (Hissə 1)",
-      "type": "html",
-      "path": "/textbooks/5/azerbaycan-dili-hisse-1/cover.xhtml",
-      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-1",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "azerbaycan-dili-5-h2",
-      "title": "Azərbaycan dili 5 (hissə 2)",
-      "subject": "Azərbaycan dili (Hissə 2)",
-      "type": "html",
-      "path": "/textbooks/5/azerbaycan-dili-hisse-2/cover.xhtml",
-      "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-2",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "riyaziyyat-5-h1",
-      "title": "Riyaziyyat 5 (hissə 1)",
-      "subject": "Riyaziyyat (Hissə 1)",
-      "type": "html",
-      "path": "/textbooks/5/riyaziyyat-hisse-1/cover.xhtml",
-      "contentPath": "public/textbooks/5/riyaziyyat-hisse-1",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "riyaziyyat-5-h2",
-      "title": "Riyaziyyat 5 (hissə 2)",
-      "subject": "Riyaziyyat (Hissə 2)",
-      "type": "html",
-      "path": "/textbooks/5/riyaziyyat-hisse-2/cover.xhtml",
-      "contentPath": "public/textbooks/5/riyaziyyat-hisse-2",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "azerbaycan-tarixi-5",
-      "title": "Azərbaycan tarixi 5",
-      "subject": "Azərbaycan tarixi",
-      "type": "html",
-      "path": "/textbooks/5/azerbaycan-tarixi/cover.xhtml",
-      "contentPath": "public/textbooks/5/azerbaycan-tarixi",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "edebiyyat-5",
-      "title": "Ədəbiyyat 5",
-      "subject": "Ədəbiyyat",
-      "type": "html",
-      "path": "/textbooks/5/edebiyyat/cover.xhtml",
-      "contentPath": "public/textbooks/5/edebiyyat",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "tebiet-5-h1",
-      "title": "Təbiət 5 (hissə 1)",
-      "subject": "Təbiət (Hissə 1)",
+      "id": "i-kinci-xarici-dil-8",
+      "title": "İkinci xarici dil 8",
+      "subject": "İkinci xarici dil",
       "type": "pdf",
-      "path": "/textbooks/5/tebiet-hisse-1/tebiet-5-h1.pdf",
-      "contentPath": "public/textbooks/5/tebiet-hisse-1",
+      "path": "/textbooks/8/i-kinci-xarici-dil/book.pdf",
+      "contentPath": "public/textbooks/8/i-kinci-xarici-dil",
       "topics": "Mövzular"
     },
     {
-      "id": "tebiet-5-h2",
-      "title": "Təbiət 5 (hissə 2)",
-      "subject": "Təbiət (Hissə 2)",
-      "type": "pdf",
-      "path": "/textbooks/5/tebiet-hisse-2/tebiet-5-h2.pdf",
-      "contentPath": "public/textbooks/5/tebiet-hisse-2",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "ingilis-dili-5",
-      "title": "İngilis dili 5",
-      "subject": "İngilis dili",
-      "type": "pdf",
-      "path": "/textbooks/5/ingilis-dili-5/english-5.pdf",
-      "contentPath": "public/textbooks/5/ingilis-dili-5",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "texnologiya-5",
-      "title": "Texnologiya 5",
-      "subject": "Texnologiya",
-      "type": "pdf",
-      "path": "/textbooks/5/texnologiya-5/texnologiya-5.pdf",
-      "contentPath": "public/textbooks/5/texnologiya-5",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "tesviri-incesenet-5",
-      "title": "Təsviri İncəsənət 5",
-      "subject": "Təsviri İncəsənət",
-      "type": "pdf",
-      "path": "/textbooks/5/tesviri-incesenet-5/tesviri-incesenet-5.pdf",
-      "contentPath": "public/textbooks/5/tesviri-incesenet-5",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "fiziki-terbiye-5",
-      "title": "Fiziki Tərbiyə 5",
+      "id": "fiziki-terbiye-8",
+      "title": "Fiziki tərbiyə 8",
       "subject": "Fiziki tərbiyə",
       "type": "pdf",
-      "path": "/textbooks/5/fiziki-terbiye-5/fiziki-terbiye-5.pdf",
-      "contentPath": "public/textbooks/5/fiziki-terbiye",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "musiqi-5",
-      "title": "Musiqi 5",
-      "subject": "Musiqi",
-      "type": "pdf",
-      "path": "/textbooks/5/musiqi-5/musiqi-5.pdf",
-      "contentPath": "public/textbooks/5/musiqi",
-      "topics": "Mövzular"
-    },
-    {
-      "id": "hayat-bilgisi-5",
-      "title": "Həyat Bilgisi 5",
-      "subject": "Həyat bilgisi",
-      "type": "html",
-      "path": "https://www.e-derslik.edu.az/player/index3.php?book_id=451",
-      "contentPath": "public/textbooks/5/hayat-bilgisi-5",
+      "path": "/textbooks/8/fiziki-terbiye/book.pdf",
+      "contentPath": "public/textbooks/8/fiziki-terbiye",
       "topics": "Mövzular"
     }
   ]
