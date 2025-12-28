@@ -2,29 +2,89 @@ const fs = require('fs');
 const path = require('path');
 
 // Robust import strategy for pdf-parse
-let pdfParse;
+let pdfMethod;
+
 try {
     const lib = require('pdf-parse');
-    if (typeof lib === 'function') {
-        pdfParse = lib;
-    } else if (typeof lib.default === 'function') {
-        pdfParse = lib.default;
-    } else if (typeof lib.PDFParse === 'function') {
-        // Some versions might export a class or function
-        pdfParse = lib.PDFParse;
-    } else {
-        // Last ditch effort: standard library behavior usually returns a promise
-        // If the library is completely broken/variant, we might need a different one.
-        // But let's try assuming 'lib' itself is the entry point if it has keys like "PDFParse"
-        // It might be we need to instantiate it or use a specific method.
-        // However, standard use is: let data = await pdf(dataBuffer);
-        // If 'lib' is an object, maybe it has a different main method?
-        // Let's print what we have to debug if this fails.
-        console.log('Warning: pdf-parse structure unknown, using as-is object');
-        pdfParse = lib;
-    }
+    // Debug what we got
+    console.log('Library type:', typeof lib);
+    if (lib.default) console.log('Has default export');
+
+    // It seems to be a class that requires 'new', or an async function
+    // But 'pdf-parse' standard usage is just specific_function(buffer)
+    // If it throws "Class constructor...", then it IS a class.
+
+    // We will define a wrapper function that tries multiple ways
+    pdfMethod = async (buffer, options) => {
+        try {
+            // Try standard way first - if it's a function
+            if (typeof lib === 'function') {
+                try {
+                    return await lib(buffer, options);
+                } catch (e) {
+                    if (e.message.includes("Class constructor")) {
+                        // It's a class!
+                        // Maybe it has a .parse method or we instantiate it?
+                        // Let's assume there's a static parse method or similar if it's a class
+                        // Or maybe we make an instance? 
+                        // Actually, looking at common pdf-parse forks, if it's a class it probably has methods.
+                        // But let's try assuming standard 'pdf-parse' behavior where module.exports is the function.
+                        // If that fails with class error, maybe we are getting a different package.
+
+                        // Let's try instantiating it if it allows, but usually we need to call a method on instance?
+                        // const instance = new lib(buffer);
+                        // return instance.text ? instance : await instance.parse();
+
+                        // BUT, looking at the previous error: "Error parsing... pdfParse is not a function"
+                        // Then we fixed it to be an object.
+                        // Then we tried to call the object and got "not a function".
+                        // Then we tried to find a function and found one, but got "Class constructor".
+
+                        // This implies 'lib' (or whatever we chose) IS a class.
+                        // So: const instance = new lib(buffer);
+                        // Does it return the data directly? Or do we need to call .text?
+                        return new Promise((resolve, reject) => {
+                            // If it's a class, maybe it doesn't return a promise directly in constructor?
+                            // Let's look for a static 'parse'
+                            if (lib.parse) {
+                                resolve(lib.parse(buffer, options));
+                            } else {
+                                // Try instantiation
+                                try {
+                                    const instance = new lib(buffer);
+                                    resolve(instance);
+                                } catch (err) { reject(err); }
+                            }
+                        });
+                    }
+                    throw e;
+                }
+            }
+
+            // If it's an object with PDFParse
+            if (lib.PDFParse) {
+                // If PDFParse is the class
+                try {
+                    return await lib.PDFParse(buffer, options);
+                } catch (e) {
+                    if (e.message.includes("Class constructor")) {
+                        const instance = new lib.PDFParse(buffer);
+                        return instance;
+                    }
+                    throw e;
+                }
+            }
+
+            // Fallback for object: manual Promise if it's really weird
+            throw new Error("Could not find suitable parse method");
+
+        } catch (err) {
+            throw err;
+        }
+    };
+
 } catch (e) {
-    console.error('Failed to import pdf-parse:', e);
+    console.error('Failed to prepare pdf-parse:', e);
 }
 
 const dataPath = 'data/textbooks.json';
@@ -38,25 +98,34 @@ async function extractTopicsFromPDF(filePath) {
     const dataBuffer = fs.readFileSync(filePath);
 
     try {
-        let pdfData;
+        let pdfData = await pdfMethod(dataBuffer, { max: 15 });
 
-        // Try to invoke the parser
-        if (typeof pdfParse === 'function') {
-            pdfData = await pdfParse(dataBuffer, { max: 15 });
-        } else {
-            // If it's the object we saw earlier with "PDFParse", "Line", etc.
-            // It might be a different library masquerading as pdf-parse or a major version change.
-            // But let's try to assume it might be callable or have a 'parse' method?
-            // If not, we can't really proceed with THIS library.
-            // Let's try one specific thing: if it has "getException", maybe it's "pdfjs-dist"?
-            // No, the keys look like "pdf-parse" internals but exposed.
+        // Ensure we got text
+        // If pdfData is a promise (rare but possible), wait for it
+        if (pdfData && typeof pdfData.then === 'function') {
+            pdfData = await pdfData;
+        }
 
-            // FALLBACK: If we can't use the library, return null.
-            console.error('❌ PDF library is not a function. Cannot parse.');
+        let text = pdfData.text;
+
+        if (typeof text !== 'string') {
+            // Debug the 'doc' property we saw earlier
+            if (pdfData.doc) {
+                console.log(`    ⚠️  Debug: pdfData.doc keys: ${Object.keys(pdfData.doc || {})}`);
+                // Sometimes it's pdfData.doc.text or similar
+            }
+            console.log(`    ⚠️  No text property found. pdfData keys: ${Object.keys(pdfData || {})}`);
             return null;
         }
 
-        const text = pdfData.text;
+        if (!text) {
+            console.log(`    ⚠️  Text is empty or null.`);
+            // Maybe it provides page stats?
+            if (pdfData.numpages && pdfData.numpages > 0) {
+                console.log(`    ⚠️  PDF has ${pdfData.numpages} pages but no text extracted. Likely scanned.`);
+            }
+            return null;
+        }
 
         // Strategy 1: Look for "Mündəricat" or "Contents"
         let lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 5);
