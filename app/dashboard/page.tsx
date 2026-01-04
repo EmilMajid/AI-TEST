@@ -96,7 +96,8 @@ export default function Dashboard() {
     async function fetchTopics() {
       if (!userData?.class) return;
       try {
-        const res = await fetch(`/api/textbooks/topics?class=${userData.class}`);
+        const subjectParam = selectedSubject ? `&subject=${encodeURIComponent(selectedSubject)}` : '';
+        const res = await fetch(`/api/textbooks/topics?class=${userData.class}${subjectParam}`);
         const data = await res.json();
         if (data.success && data.topics) {
           setApiTopics(data.topics);
@@ -106,7 +107,7 @@ export default function Dashboard() {
       }
     }
     fetchTopics();
-  }, [userData?.class])
+  }, [userData?.class, selectedSubject])
 
   const handleRegionSelect = (region: string) => {
     if (userData) {
