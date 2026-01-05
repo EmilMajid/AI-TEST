@@ -38,50 +38,83 @@ async function processBook(book) {
         return;
     }
 
-    // Step 2: OCR images
+    // Step 2: Read searchable text metadata
     const bookImgDir = path.join(TEMP_IMG_DIR, book.id);
-    if (!fs.existsSync(bookImgDir)) {
-        console.log(`[SKIP] No images generated (already searchable?).`);
+    const metaPath = path.join(bookImgDir, "searchable_text.json");
+    if (!fs.existsSync(metaPath)) {
+        console.warn(`[SKIP] No metadata generated for ${book.id}`);
         return;
     }
 
-    const images = fs.readdirSync(bookImgDir).filter(f => f.endsWith('.png')).sort((a, b) => {
-        const numA = parseInt(a.match(/\d+/)[0]);
-        const numB = parseInt(b.match(/\d+/)[0]);
-        return numA - numB;
-    });
+    const pagesData = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+    const imagesToOCR = pagesData.filter(p => p.image_path && !p.text);
 
-    console.log(`[2/3] Running OCR on ${images.length} pages...`);
+    console.log(`[2/3] Processing ${pagesData.length} pages (${imagesToOCR.length} need OCR)...`);
 
     const bookResults = [];
     const scheduler = Tesseract.createScheduler();
 
-    // Support multiple languages
-    const lang = book.subject.toLowerCase().includes('rus') ? 'aze+rus+eng' : 'aze+eng';
+    // Support multiple languages based on subject
+    let lang = 'aze+eng'; // Default
+    const sub = book.subject.toLowerCase();
+    const title = book.title.toLowerCase();
 
-    // Create 4 workers for parallel processing
-    for (let i = 0; i < 4; i++) {
-        const worker = await Tesseract.createWorker(lang);
-        scheduler.addWorker(worker);
+    if (sub.includes('rus') || title.includes('rus')) lang = 'aze+rus+eng';
+    else if (sub.includes('alman') || title.includes('alman')) lang = 'aze+deu+eng';
+    else if (sub.includes('fransız') || title.includes('fransız')) lang = 'aze+fra+eng';
+    else if (sub.includes('ingilis')) lang = 'aze+eng';
+
+    console.log(`  - Language configuration: ${lang}`);
+
+    // Create workers with specific language support
+    const workers = [];
+    if (imagesToOCR.length > 0) {
+        for (let i = 0; i < 2; i++) {
+            const worker = await Tesseract.createWorker(lang);
+            scheduler.addWorker(worker);
+            workers.push(worker);
+        }
     }
 
-    for (const img of images) {
-        const imgPath = path.join(bookImgDir, img);
-        const pageNum = img.match(/\d+/)[0];
+    const NOISE_KEYWORDS = [
+        'Dövlət Himni', 'Dövlət Bayrağı', 'Dövlət Gerbi',
+        'nəşr ili', 'tiraj', 'çapa imzalanıb', 'İpək yolu',
+        'Azərbaycan Respublikasının Təhsil Nazirliyi'
+    ];
 
-        console.log(`  - OCRing Page ${pageNum}...`);
-        const { data: { text } } = await scheduler.addJob('recognize', imgPath);
+    for (const page of pagesData) {
+        let text = page.text;
+        const pageNum = page.page;
+
+        if (!text && page.image_path) {
+            const imgPath = path.join(bookImgDir, page.image_path);
+            if (pageNum < 5) console.log(`  - OCRing Page ${pageNum}...`);
+
+            const { data: { text: ocrText } } = await scheduler.addJob('recognize', imgPath);
+            text = ocrText;
+        }
+
+        if (!text) continue;
+
+        // Basic noise filter
+        const lowerText = text.toLowerCase();
+        const isNoise = NOISE_KEYWORDS.some(k => lowerText.includes(k.toLowerCase()));
+
+        if (isNoise && pageNum < 10) {
+            console.log(`    [FILTER] Skipped metadata/noise on page ${pageNum}`);
+            continue;
+        }
 
         bookResults.push({
-            page: parseInt(pageNum),
-            text: text
+            page: pageNum,
+            text: text.trim()
         });
     }
 
-    await scheduler.terminate();
+    if (imagesToOCR.length > 0) await scheduler.terminate();
 
     // Step 3: Save results
-    console.log(`[3/3] Saving OCR results for ${book.id}`);
+    console.log(`[3/3] Saving final results for ${book.id} (${bookResults.length} pages captured)`);
     const outputPath = path.join(OUTPUT_DIR, `${book.id}.json`);
     fs.writeFileSync(outputPath, JSON.stringify(bookResults, null, 2));
 
