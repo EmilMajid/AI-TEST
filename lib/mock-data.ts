@@ -28,7 +28,7 @@ export const MOCK_USERS = [
   {
     id: "parent-aysel",
     email: "aysel.aliyeva@test.com",
-    password: "test12345",
+    password: "test123",
     accountType: "parent",
     firstName: "Aysel",
     lastName: "Əliyeva",

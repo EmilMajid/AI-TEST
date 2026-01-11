@@ -32,7 +32,7 @@ async function processBook(book) {
     // Step 1: Convert non-searchable pages to images
     console.log(`[1/3] Converting PDF to images: ${pdfPath}`);
     try {
-        execSync(`python scripts/convert_to_images.py "${pdfPath}" "${TEMP_IMG_DIR}"`, { stdio: 'inherit' });
+        execSync(`python scripts/convert_to_images.py "${pdfPath}" "${TEMP_IMG_DIR}" "${book.id}"`, { stdio: 'inherit' });
     } catch (e) {
         console.error(`[ERROR] Image conversion failed for ${book.id}: ${e.message}`);
         return;
@@ -88,7 +88,7 @@ async function processBook(book) {
 
         if (!text && page.image_path) {
             const imgPath = path.join(bookImgDir, page.image_path);
-            if (pageNum < 5) console.log(`  - OCRing Page ${pageNum}...`);
+            if (pageNum < 5 || pageNum % 10 === 0) console.log(`  - OCRing Page ${pageNum}...`);
 
             const { data: { text: ocrText } } = await scheduler.addJob('recognize', imgPath);
             text = ocrText;
@@ -123,6 +123,41 @@ async function processBook(book) {
 }
 
 async function runMaster() {
+    // CLI Arguments support
+    const args = process.argv.slice(2);
+
+    // Check if we are processing a specific file via CLI
+    if (args.length > 0 && fs.existsSync(args[0]) && args[0].endsWith('.pdf')) {
+        const pdfPath = args[0];
+
+        let bookId = path.basename(path.dirname(pdfPath));
+        const idIdx = args.indexOf('--id');
+        if (idIdx !== -1 && args[idIdx + 1]) {
+            bookId = args[idIdx + 1];
+        }
+
+        let targetPages = null;
+        const pageIdx = args.indexOf('--pages');
+        if (pageIdx !== -1 && args[pageIdx + 1]) {
+            targetPages = args[pageIdx + 1].split(',').map(Number);
+        }
+
+        console.log(`\n>>> CLI Processing: ${pdfPath} (ID: ${bookId})`);
+
+        // Mock book object for processBook
+        const mockBook = {
+            id: bookId,
+            title: bookId,
+            path: pdfPath,
+            subject: 'General'
+        };
+
+        // Custom processBook call that uses the provided path
+        await processSingleFile(pdfPath, mockBook, targetPages);
+        return;
+    }
+
+    // Default: Process all Grade 5 PDFs if no args
     const data = JSON.parse(fs.readFileSync(TEXTBOOKS_FILE, 'utf8'));
     const grade5 = data["5"];
 
@@ -133,6 +168,69 @@ async function runMaster() {
     }
 
     console.log("\n✅ ALL PDF TEXTBOOKS PROCESSED!");
+}
+
+async function processSingleFile(pdfPath, book, targetPages = null) {
+    console.log(`[1/3] Converting PDF to images: ${pdfPath}`);
+    try {
+        execSync(`python scripts/convert_to_images.py "${pdfPath}" "${TEMP_IMG_DIR}" "${book.id}"`, { stdio: 'inherit' });
+    } catch (e) {
+        console.error(`[ERROR] Image conversion failed: ${e.message}`);
+        return;
+    }
+
+    const bookImgDir = path.join(TEMP_IMG_DIR, book.id);
+    const metaPath = path.join(bookImgDir, "searchable_text.json");
+    if (!fs.existsSync(metaPath)) {
+        console.warn(`[SKIP] No metadata generated`);
+        return;
+    }
+
+    const allPagesData = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+    const pagesData = targetPages
+        ? allPagesData.filter(p => targetPages.includes(p.page))
+        : allPagesData;
+
+    const imagesToOCR = pagesData.filter(p => p.image_path && !p.text);
+    console.log(`[2/3] Processing ${pagesData.length} pages (${imagesToOCR.length} need OCR)...`);
+
+    const scheduler = Tesseract.createScheduler();
+    let lang = 'aze+rus+eng'; // Safe default for OCR
+
+    const workers = [];
+    if (imagesToOCR.length > 0) {
+        for (let i = 0; i < 2; i++) {
+            const worker = await Tesseract.createWorker(lang);
+            scheduler.addWorker(worker);
+            workers.push(worker);
+        }
+    }
+
+    const bookResults = [];
+    for (const page of pagesData) {
+        let text = page.text;
+        const pageNum = page.page;
+
+        if (!text && page.image_path) {
+            const imgPath = path.join(bookImgDir, page.image_path);
+            console.log(`  - OCRing Page ${pageNum}...`);
+            const { data: { text: ocrText } } = await scheduler.addJob('recognize', imgPath);
+            text = ocrText;
+        }
+
+        if (text) {
+            bookResults.push({ page: pageNum, text: text.trim() });
+        }
+    }
+
+    if (imagesToOCR.length > 0) await scheduler.terminate();
+
+    const outputPath = path.join(OUTPUT_DIR, `${book.id}.json`);
+    fs.writeFileSync(outputPath, JSON.stringify(bookResults, null, 2));
+    console.log(`[3/3] Results saved to ${outputPath}`);
+
+    // Return combined text for UIS piping
+    return bookResults.map(r => r.text).join('\n\n');
 }
 
 runMaster().catch(console.error);

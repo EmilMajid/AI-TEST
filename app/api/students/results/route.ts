@@ -11,30 +11,53 @@ export async function GET(request: NextRequest) {
 
     const { searchParams } = new URL(request.url)
     const studentId = searchParams.get("studentId")
+    const timeRange = searchParams.get("timeRange") || "month"
 
     if (!studentId) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, "Student ID tələb olunur", 400)
     }
 
     const studentIdNum = Number.parseInt(studentId)
+    const isNumericId = !isNaN(studentIdNum)
 
     if (isDemoMode) {
       // Mock results for demo
-      const mockResults = [
-        { id: 1, textbook: "Azərbaycan dili", topic: "Sifət", class: "6", score: 85, timeSpent: 120, completedAt: new Date().toISOString() },
-        { id: 2, textbook: "Riyaziyyat", topic: "Kəsrlər", class: "6", score: 90, timeSpent: 150, completedAt: new Date(Date.now() - 86400000).toISOString() },
-        { id: 3, textbook: "Tarix", topic: "Səfəvilər", class: "6", score: 75, timeSpent: 100, completedAt: new Date(Date.now() - 172800000).toISOString() },
-      ]
+      // Determine what subjects to show based on student
+      const isAli = studentId === "student-ali"
+      const isFatime = studentId === "student-fatime"
 
-      const totalTests = mockResults.length
-      const averageScore = Math.round(mockResults.reduce((sum: number, r: any) => sum + r.score, 0) / totalTests)
+      const subjects = isAli
+        ? ["Riyaziyyat", "Fizika", "İnformatika", "Tarix", "Coğrafiya"]
+        : ["Azərbaycan dili", "Riyaziyyat", "Həyat bilgisi", "İngilis dili", "Təsviri incəsənət"]
+
+      const mockResults = subjects.map((sub, idx) => ({
+        id: idx + 1,
+        textbook: sub,
+        topic: "Fəsil " + (idx + 1),
+        class: isAli ? "8" : "5",
+        score: Math.floor(Math.random() * 30) + (timeRange === 'year' ? 60 : 70), // Slightly lower base for year
+        timeSpent: Math.floor(Math.random() * 60) + 40,
+        completedAt: new Date(Date.now() - (idx * 86400000)).toISOString()
+      }))
+
+      const totalTests = timeRange === 'day' ? 1 : timeRange === 'week' ? 3 : timeRange === 'month' ? mockResults.length : mockResults.length * 4
+      const averageScore = Math.round(mockResults.reduce((sum: number, r: any) => sum + r.score, 0) / mockResults.length)
       const bestScore = Math.max(...mockResults.map((r: any) => r.score))
 
-      const subjectBreakdown = [
-        { subject: "Azərbaycan dili", count: 1, averageScore: 85 },
-        { subject: "Riyaziyyat", count: 1, averageScore: 90 },
-        { subject: "Tarix", count: 1, averageScore: 75 },
-      ]
+      const subjectBreakdown = subjects.map(sub => {
+        const subResults = mockResults.filter(r => r.textbook === sub)
+        const avg = Math.round(subResults.reduce((sum, r) => sum + r.score, 0) / subResults.length)
+        return {
+          subject: sub,
+          count: timeRange === 'day' ? 1 : timeRange === 'week' ? 2 : timeRange === 'month' ? subResults.length : subResults.length * 3,
+          averageScore: avg,
+          comparison: {
+            schoolAverage: Math.max(0, Math.min(100, avg + (Math.random() * 10 - 5))),
+            regionAverage: Math.max(0, Math.min(100, avg + (Math.random() * 14 - 7))),
+            nationalAverage: Math.max(0, Math.min(100, avg + (Math.random() * 20 - 10)))
+          }
+        }
+      })
 
       return NextResponse.json({
         success: true,
@@ -44,6 +67,14 @@ export async function GET(request: NextRequest) {
           averageScore,
           bestScore,
           subjectBreakdown,
+          comparisonData: subjectBreakdown.map(s => ({
+            subject: s.subject,
+            student: s.averageScore,
+            school: s.comparison.schoolAverage,
+            region: s.comparison.regionAverage,
+            national: s.comparison.nationalAverage
+          })),
+          recentTests: mockResults,
           recentActivity: mockResults.map((r: any) => ({
             id: r.id,
             subject: r.textbook,
@@ -53,15 +84,16 @@ export async function GET(request: NextRequest) {
             time: new Date(r.completedAt).toLocaleTimeString("az-AZ"),
           })),
           monthly: {
-            testsThisMonth: 3,
-            averageThisMonth: 83
+            testsThisMonth: mockResults.length,
+            averageThisMonth: averageScore
           },
-          strongAreas: [{ subject: "Riyaziyyat", averageScore: 90 }],
-          weakAreas: [{ subject: "Tarix", averageScore: 75 }],
+          strongAreas: subjectBreakdown.filter(s => s.averageScore >= 85).slice(0, 3),
+          weakAreas: subjectBreakdown.filter(s => s.averageScore < 80).slice(0, 3),
           performanceTrend: [
-            { date: "01.11", score: 70 },
-            { date: "05.11", score: 85 },
-            { date: "10.11", score: 90 },
+            { date: "Bugün", score: averageScore },
+            { date: "Keçən həftə", score: averageScore - 5 },
+            { date: "Keçən ay", score: averageScore - 10 },
+            { date: "Keçən il", score: averageScore - 15 },
           ]
         },
       })

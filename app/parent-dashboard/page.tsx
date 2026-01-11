@@ -28,6 +28,7 @@ import {
   GraduationCap,
   Mail,
   LayoutDashboard,
+  Globe,
 } from "lucide-react"
 import Link from "next/link"
 import { MessagesTab } from "@/components/messages-tab"
@@ -82,6 +83,18 @@ interface StudentStatistics {
     subject: string
     count: number
     averageScore: number
+    comparison: {
+      schoolAverage: number
+      regionAverage: number
+      nationalAverage: number
+    }
+  }>
+  comparisonData: Array<{
+    subject: string
+    student: number
+    school: number
+    region: number
+    national: number
   }>
   performanceTrend: Array<{
     date: string
@@ -118,7 +131,7 @@ export default function ParentDashboard() {
   const { theme, getThemeClasses } = useTheme()
   const [userData, setUserData] = useState<any>(null)
   const [linkedStudents, setLinkedStudents] = useState<LinkedStudent[]>([])
-  const [selectedStudent, setSelectedStudent] = useState<number | null>(null)
+  const [selectedStudent, setSelectedStudent] = useState<number | string | null>(null)
   const [studentStats, setStudentStats] = useState<StudentStatistics | null>(null)
 
   const [addStudentStep, setAddStudentStep] = useState<'choice' | 'form'>('choice')
@@ -130,6 +143,8 @@ export default function ParentDashboard() {
     school: "",
     email: ""
   })
+  const [timeRange, setTimeRange] = useState<'day' | 'week' | 'month' | 'year'>('month')
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [isAddingStudent, setIsAddingStudent] = useState(false)
   const [isAddStudentOpen, setIsAddStudentOpen] = useState(false)
@@ -141,7 +156,7 @@ export default function ParentDashboard() {
     const storedUserData = localStorage.getItem("userData")
     if (storedUserData) {
       const parsed = JSON.parse(storedUserData)
-      if (parsed.accountType !== "parent") {
+      if (parsed.accountType !== "parent" && parsed.accountType !== "teacher" && parsed.accountType !== "director") {
         router.push("/dashboard")
         return
       }
@@ -165,8 +180,9 @@ export default function ParentDashboard() {
       if (data.success) {
         setLinkedStudents(data.links)
         if (data.links.length > 0) {
-          setSelectedStudent(data.links[0].studentId)
-          loadStudentResults(data.links[0].studentId, parentId)
+          const firstStudentId = data.links[0].studentId
+          setSelectedStudent(firstStudentId)
+          loadStudentResults(firstStudentId, parentId, timeRange)
         }
       }
     } catch (error) {
@@ -174,23 +190,28 @@ export default function ParentDashboard() {
     }
   }
 
-  const loadStudentResults = async (studentId: number, parentId: number) => {
+  const loadStudentResults = async (studentId: number | string, parentId: number | string, range: string = 'month') => {
     try {
       setIsLoading(true)
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
 
-      const response = await fetch(`/api/students/results?studentId=${studentId}&parentId=${parentId}`, {
+      const response = await fetch(`/api/students/results?studentId=${studentId}&parentId=${parentId}&timeRange=${range}`, {
         headers: token ? { "Authorization": `Bearer ${token}` } : {}
       })
       const data = await response.json()
 
       if (data.success) {
         setStudentStats(data.statistics)
+        // Auto-select first subject if none selected
+        if (!selectedSubject && data.statistics.subjectBreakdown.length > 0) {
+          setSelectedSubject(data.statistics.subjectBreakdown[0].subject)
+        }
       } else {
+        const errorMsg = typeof data.error === 'object' ? data.error.message : data.error;
         toast({
           title: "Xəta",
-          description: data.error || "Nəticələr yüklənmədi",
+          description: errorMsg || "Nəticələr yüklənmədi",
           variant: "destructive",
         })
       }
@@ -307,9 +328,17 @@ export default function ParentDashboard() {
     }
   }
 
-  const handleStudentSelect = (studentId: number) => {
-    setSelectedStudent(studentId)
-    loadStudentResults(studentId, userData.id)
+  const handleStudentSelect = (studentId: number | string) => {
+    setSelectedStudent(studentId as any)
+    setSelectedSubject(null) // Reset subject when student changes
+    loadStudentResults(studentId as any, userData.id, timeRange)
+  }
+
+  const handleTimeRangeChange = (range: 'day' | 'week' | 'month' | 'year') => {
+    setTimeRange(range)
+    if (selectedStudent) {
+      loadStudentResults(selectedStudent as any, userData.id, range)
+    }
   }
 
   const getScoreColor = (score: number) => {
@@ -361,8 +390,8 @@ export default function ParentDashboard() {
             <div className="flex items-center">
               <Users className={`h-8 w-8 ${themeClasses.text} mr-3`} />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{getRoleLabel(userData.role)} Paneli</h1>
-                <p className="text-sm text-gray-600">Şagird performans izləmə</p>
+                <h1 className="text-2xl font-bold text-gray-900">{getRoleLabel(userData.role)} İdarəetmə Paneli</h1>
+                <p className="text-sm text-gray-600">Sistem Versiyası: 2.1 • Cihaz: {userData.email}</p>
               </div>
             </div>
 
@@ -582,12 +611,24 @@ export default function ParentDashboard() {
 
             {/* Main Content - Student Details */}
             <div className="lg:col-span-3">
-              {!selectedStudent || !studentStats ? (
+              {isLoading ? (
+                <Card className="text-center py-16">
+                  <CardContent>
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+                    <p className="text-gray-600">Yüklənir...</p>
+                  </CardContent>
+                </Card>
+              ) : !selectedStudent || !studentStats ? (
                 <Card className="text-center py-16">
                   <CardContent>
                     <Eye className="h-16 w-16 mx-auto mb-4 text-gray-400" />
                     <h3 className="text-lg font-semibold mb-2">Şagird Seçin</h3>
                     <p className="text-gray-600">Nəticələri görmək üçün sol tərəfdən bir şagird seçin</p>
+                    {linkedStudents.length > 0 ? (
+                      <p className="text-xs text-blue-500 mt-2 font-medium">Cəmi {linkedStudents.length} şagird tapıldı. Seçim edin.</p>
+                    ) : (
+                      <p className="text-xs text-red-500 mt-2">Heç bir şagird tapılmadı. Zəhmət olmasa "Şagird Əlavə Et" düyməsini istifadə edin.</p>
+                    )}
                   </CardContent>
                 </Card>
               ) : (
@@ -602,9 +643,30 @@ export default function ParentDashboard() {
                             {selectedStudentData?.studentClass}-ci sinif • {selectedStudentData?.studentSchool}
                           </CardDescription>
                         </div>
-                        <Badge className={getScoreBadge(studentStats.averageScore).className}>
-                          {getScoreBadge(studentStats.averageScore).text}
-                        </Badge>
+                        <div className="flex items-center space-x-2">
+                          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
+                            {[
+                              { id: 'day', label: 'Cari gün' },
+                              { id: 'week', label: 'Həftəlik' },
+                              { id: 'month', label: 'Aylıq' },
+                              { id: 'year', label: 'İllik' }
+                            ].map((range) => (
+                              <button
+                                key={range.id}
+                                onClick={() => handleTimeRangeChange(range.id as any)}
+                                className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all ${timeRange === range.id
+                                  ? 'bg-white shadow-sm text-blue-600'
+                                  : 'text-gray-500 hover:text-gray-700'
+                                  }`}
+                              >
+                                {range.label}
+                              </button>
+                            ))}
+                          </div>
+                          <Badge className={getScoreBadge(studentStats.averageScore).className}>
+                            {getScoreBadge(studentStats.averageScore).text}
+                          </Badge>
+                        </div>
                       </div>
                     </CardHeader>
                   </Card>
@@ -650,9 +712,10 @@ export default function ParentDashboard() {
 
                   {/* Tabs */}
                   <Tabs defaultValue="overview" className="space-y-6">
-                    <TabsList className="grid w-full grid-cols-4">
+                    <TabsList className="grid w-full grid-cols-5">
                       <TabsTrigger value="overview">Ümumi</TabsTrigger>
                       <TabsTrigger value="subjects">Fənlər</TabsTrigger>
+                      <TabsTrigger value="comparison">Müqayisə</TabsTrigger>
                       <TabsTrigger value="progress">Tərəqqi</TabsTrigger>
                       <TabsTrigger value="activity">Aktivlik</TabsTrigger>
                     </TabsList>
@@ -801,7 +864,168 @@ export default function ParentDashboard() {
                       </Card>
                     </TabsContent>
 
-                    {/* Progress Tab */}
+                    {/* Comparison Tab */}
+                    <TabsContent value="comparison" className="space-y-6">
+                      <Card>
+                        <CardHeader>
+                          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                              <CardTitle>Nəticələrin Müqayisəsi (%)</CardTitle>
+                              <CardDescription>
+                                Şagirdin nəticələrinin məktəb, bölgə və ölkə üzrə orta göstəricilərlə müqayisəsi
+                              </CardDescription>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              {studentStats.subjectBreakdown.map((s) => (
+                                <Button
+                                  key={s.subject}
+                                  variant={selectedSubject === s.subject ? "default" : "outline"}
+                                  size="sm"
+                                  onClick={() => setSelectedSubject(s.subject)}
+                                  className="text-xs"
+                                >
+                                  {s.subject}
+                                </Button>
+                              ))}
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent>
+                          {!selectedSubject ? (
+                            <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed">
+                              <BookOpen className="h-12 w-12 text-gray-400 mx-auto mb-3" />
+                              <h3 className="text-lg font-medium text-gray-900">Fənn Seçilməyib</h3>
+                              <p className="text-gray-500">Müqayisəli analizi görmək üçün yuxarıdakı siyahıdan bir fənn seçin</p>
+                            </div>
+                          ) : (
+                            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                              {/* Focused Comparison Card */}
+                              {(() => {
+                                const sub = studentStats.subjectBreakdown.find(s => s.subject === selectedSubject);
+                                if (!sub) return null;
+
+                                const comparisonItems = [
+                                  { label: 'Şagirdin Nəticəsi', value: sub.averageScore, color: 'bg-blue-600', icon: User },
+                                  { label: 'Məktəb Ortalaması', value: sub.comparison.schoolAverage, color: 'bg-green-600', icon: GraduationCap },
+                                  { label: 'Bölgə Ortalaması', value: sub.comparison.regionAverage, color: 'bg-orange-600', icon: Target },
+                                  { label: 'Ölkə Ortalaması', value: sub.comparison.nationalAverage, color: 'bg-red-600', icon: Globe }
+                                ];
+
+                                return (
+                                  <>
+                                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                      {comparisonItems.map((item, i) => (
+                                        <Card key={i} className="border-none shadow-sm bg-gray-50/50">
+                                          <CardContent className="p-4">
+                                            <div className="flex items-center justify-between mb-2">
+                                              <item.icon className="h-4 w-4 text-gray-500" />
+                                              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">{item.label}</span>
+                                            </div>
+                                            <div className="flex items-end gap-2">
+                                              <span className="text-2xl font-bold">{Math.round(item.value)}%</span>
+                                              <div className="flex-1 h-2 bg-gray-200 rounded-full mb-1 overflow-hidden">
+                                                <div
+                                                  className={`h-full ${item.color}`}
+                                                  style={{ width: `${item.value}%` }}
+                                                />
+                                              </div>
+                                            </div>
+                                          </CardContent>
+                                        </Card>
+                                      ))}
+                                    </div>
+
+                                    <div className="h-[350px] w-full mt-6">
+                                      <ResponsiveContainer width="100%" height="100%">
+                                        <BarChart
+                                          data={[
+                                            {
+                                              name: selectedSubject,
+                                              student: sub.averageScore,
+                                              school: sub.comparison.schoolAverage,
+                                              region: sub.comparison.regionAverage,
+                                              national: sub.comparison.nationalAverage
+                                            }
+                                          ]}
+                                          margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+                                        >
+                                          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                                          <XAxis dataKey="name" hide />
+                                          <YAxis domain={[0, 100]} />
+                                          <RechartsTooltip
+                                            cursor={{ fill: 'transparent' }}
+                                            contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
+                                          />
+                                          <Legend verticalAlign="top" height={36} />
+                                          <Bar dataKey="student" fill="#3b82f6" name="Şagird" radius={[6, 6, 0, 0]} barSize={60} />
+                                          <Bar dataKey="school" fill="#10b981" name="Məktəb" radius={[6, 6, 0, 0]} barSize={60} />
+                                          <Bar dataKey="region" fill="#f59e0b" name="Bölgə" radius={[6, 6, 0, 0]} barSize={60} />
+                                          <Bar dataKey="national" fill="#ef4444" name="Ölkə" radius={[6, 6, 0, 0]} barSize={60} />
+                                        </BarChart>
+                                      </ResponsiveContainer>
+                                    </div>
+
+                                    <div className="grid md:grid-cols-2 gap-6 mt-8">
+                                      <Card className="bg-primary/5 border-primary/20">
+                                        <CardHeader className="pb-2">
+                                          <CardTitle className="text-sm flex items-center">
+                                            <TrendingUp className="h-4 w-4 mr-2 text-primary" />
+                                            Analiz: {selectedSubject}
+                                          </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                          <div className="space-y-4">
+                                            <div className="p-4 bg-white rounded-xl shadow-sm space-y-3">
+                                              <div className="flex justify-between items-center text-sm">
+                                                <span className="text-gray-600">Ölkə ortalaması ilə müqayisə:</span>
+                                                <Badge className={sub.averageScore >= sub.comparison.nationalAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}>
+                                                  {sub.averageScore >= sub.comparison.nationalAverage ? "+" : ""}
+                                                  {(sub.averageScore - sub.comparison.nationalAverage).toFixed(1)}%
+                                                </Badge>
+                                              </div>
+                                              <div className="flex justify-between items-center text-sm">
+                                                <span className="text-gray-600">Bölgə ortalaması ilə müqayisə:</span>
+                                                <Badge className={sub.averageScore >= sub.comparison.regionAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}>
+                                                  {sub.averageScore >= sub.comparison.regionAverage ? "+" : ""}
+                                                  {(sub.averageScore - sub.comparison.regionAverage).toFixed(1)}%
+                                                </Badge>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </CardContent>
+                                      </Card>
+
+                                      <Card className="border-blue-100 bg-blue-50/30">
+                                        <CardHeader className="pb-2">
+                                          <CardTitle className="text-sm flex items-center">
+                                            <Award className="h-4 w-4 mr-2 text-blue-600" />
+                                            Xüsusi Tövsiyələr
+                                          </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                          <ul className="text-sm space-y-3 text-gray-700">
+                                            <li className="flex items-start bg-white p-2 rounded-lg shadow-sm">
+                                              <span className="text-blue-600 mr-2 font-bold">1.</span>
+                                              <span>{sub.averageScore < sub.comparison.nationalAverage
+                                                ? `${selectedSubject} üzrə nəticələr ölkə ortalamasından aşağıdır. Bu fənnə daha çox vaxt ayrılmalıdır.`
+                                                : `${selectedSubject} üzrə nəticələr ölkə ortalamasından yüksəkdir! Bu tempdə davam etmək vacibdir.`}</span>
+                                            </li>
+                                            <li className="flex items-start bg-white p-2 rounded-lg shadow-sm">
+                                              <span className="text-blue-600 mr-2 font-bold">2.</span>
+                                              <span>Mütəxəssis rəyi üçün şagirdin müəllimi ilə ətraflı məsləhətləşin.</span>
+                                            </li>
+                                          </ul>
+                                        </CardContent>
+                                      </Card>
+                                    </div>
+                                  </>
+                                );
+                              })()}
+                            </div>
+                          )}
+                        </CardContent>
+                      </Card>
+                    </TabsContent>
                     <TabsContent value="progress" className="space-y-6">
                       <Card>
                         <CardHeader>

@@ -77,7 +77,7 @@ export default function Dashboard() {
       const parsed = JSON.parse(storedUserData)
       setUserData(parsed)
 
-      if (parsed.accountType === "parent") {
+      if (parsed.accountType === "parent" || parsed.accountType === "teacher" || parsed.accountType === "director") {
         router.push("/parent-dashboard")
         return
       }

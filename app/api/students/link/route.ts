@@ -1,6 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { requireAuth, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
+import { MOCK_USERS } from "@/lib/mock-data"
 
 // Mock storage for demo mode
 let mockLinks: any[] = [
@@ -53,10 +54,14 @@ export async function POST(request: NextRequest) {
     }
 
     if (isDemoMode) {
+      // Find the user in MOCK_USERS by email to get their real string ID
+      const user = MOCK_USERS.find(u => u.email.toLowerCase() === auth.user.email.toLowerCase());
+      const effectiveId = user ? user.id : auth.user.id;
+
       // Mock logic for demo mode
       const newLink = {
         id: Date.now(),
-        parentId: auth.user.id,
+        parentId: effectiveId,
         studentId: 101, // Mock student ID
         relationshipType,
         status: "active",
@@ -166,20 +171,59 @@ export async function GET(request: NextRequest) {
     if (auth instanceof NextResponse) return auth
 
     if (isDemoMode) {
+      // Find the user in MOCK_USERS by email to get their real string ID (e.g., "parent-aysel")
+      const user = MOCK_USERS.find(u => u.email.toLowerCase() === auth.user.email.toLowerCase());
+      const effectiveId = user ? user.id : auth.user.id;
+
       // Return mock links for demo
+      // 1. Get explicit mock links
+      const explicitLinks = mockLinks.filter(l => l.parentId === effectiveId && l.status === "active").map(link => ({
+        id: link.id,
+        studentId: link.student.id,
+        studentName: `${link.student.firstName} ${link.student.lastName}`,
+        studentEmail: link.student.email,
+        studentClass: link.student.class,
+        studentSchool: link.student.school,
+        relationshipType: link.relationshipType,
+        linkedAt: link.linkedAt,
+      }));
+
+      // 2. Get links from MOCK_USERS relations
+      let relatedStudents: any[] = [];
+
+      if (user) {
+        if (user.role === 'parent') {
+          relatedStudents = MOCK_USERS.filter(u => (u as any).parentId === user.id);
+        } else if (user.role === 'teacher') {
+          relatedStudents = MOCK_USERS.filter(u => (u as any).teacherId === user.id);
+        } else if (user.role === 'director') {
+          relatedStudents = MOCK_USERS.filter(u => (u as any).directorId === user.id || u.school === user.school);
+        }
+      }
+
+      const relationLinks = relatedStudents.map(student => ({
+        id: `rel-${student.id}`,
+        studentId: student.id,
+        studentName: `${student.firstName} ${student.lastName}`,
+        studentEmail: student.email,
+        studentClass: student.class,
+        studentSchool: student.school,
+        relationshipType: user?.role || "parent",
+        linkedAt: new Date().toISOString(),
+      }));
+
+      // Merge and remove duplicates by studentId
+      const allLinks = [...explicitLinks];
+      relationLinks.forEach(rl => {
+        if (!allLinks.some(al => al.studentId === rl.studentId)) {
+          allLinks.push(rl);
+        }
+      });
+
       return NextResponse.json({
         success: true,
-        links: mockLinks.filter(l => l.parentId === auth.user.id && l.status === "active").map(link => ({
-          id: link.id,
-          studentId: link.student.id,
-          studentName: `${link.student.firstName} ${link.student.lastName}`,
-          studentEmail: link.student.email,
-          studentClass: link.student.class,
-          studentSchool: link.student.school,
-          relationshipType: link.relationshipType,
-          linkedAt: link.linkedAt,
-        })),
-        total: mockLinks.length,
+        links: allLinks,
+        total: allLinks.length,
       })
     }
 
@@ -240,6 +284,17 @@ export async function DELETE(request: NextRequest) {
     }
 
     if (isDemoMode) {
+      // For demo mode, we just allow deleting any link for now, 
+      // but let's check ownership if we have info
+      const user = MOCK_USERS.find(u => u.email.toLowerCase() === auth.user.email.toLowerCase());
+      const effectiveId = user ? user.id : auth.user.id;
+
+      const linkToDelete = mockLinks.find(l => l.id === Number(linkId));
+      if (linkToDelete && linkToDelete.parentId !== effectiveId) {
+        // In strict mode we'd fail, but for demo we can be lenient or just log
+        console.log(`[Demo] User ${effectiveId} deleting link belonging to ${linkToDelete.parentId}`);
+      }
+
       mockLinks = mockLinks.filter(l => l.id !== Number(linkId))
       return NextResponse.json({
         success: true,

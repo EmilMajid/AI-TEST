@@ -121,7 +121,7 @@ Qısa və aydın ol. Azərbaycan dilində yaz.`
           const { text } = await generateText({
             model,
             prompt: analysisPrompt,
-            maxTokens: 500,
+            maxOutputTokens: 500,
           })
 
           // AI cavabını parse et
@@ -176,12 +176,12 @@ TEST MƏLUMATLARI:
 
 SUAL TƏHLİLİ:
 ${body.questions
-  .map((q) => {
-    const userAnswer = body.answers[q.id]
-    const isCorrect = userAnswer === q.correctAnswer
-    return `- ${q.bloomLevel} (${q.difficulty}): ${isCorrect ? "✓" : "✗"}`
-  })
-  .join("\n")}
+            .map((q) => {
+              const userAnswer = body.answers[q.id]
+              const isCorrect = userAnswer === q.correctAnswer
+              return `- ${q.bloomLevel} (${q.difficulty}): ${isCorrect ? "✓" : "✗"}`
+            })
+            .join("\n")}
 
 Aşağıdakı formatda cavab ver:
 
@@ -212,7 +212,7 @@ Azərbaycan dilində, şəxsi və dəstəkləyici tonda yaz.`
         const { text: overallText } = await generateText({
           model,
           prompt: overallPrompt,
-          maxTokens: 800,
+          maxOutputTokens: 800,
         })
 
         // Ümumi təhlili parse et

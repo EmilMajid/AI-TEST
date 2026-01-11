@@ -24,6 +24,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 
 interface Question {
   id: number
@@ -108,7 +109,8 @@ export default function ResultsPage() {
       setResults(parsedResults)
       analyzeResults(parsedResults)
     } else {
-      router.push("/dashboard")
+      const user = getCurrentUser()
+      router.push(getDashboardPath(user?.accountType))
     }
   }, [router])
 
@@ -217,7 +219,7 @@ export default function ResultsPage() {
                 </p>
               </div>
             </div>
-            <Link href="/dashboard">
+            <Link href={getDashboardPath(getCurrentUser()?.accountType)}>
               <Button>Dashboard-a qayıt</Button>
             </Link>
           </div>
@@ -606,7 +608,7 @@ export default function ResultsPage() {
 
         {/* Actions */}
         <div className="flex justify-center space-x-4">
-          <Link href="/dashboard">
+          <Link href={getDashboardPath(getCurrentUser()?.accountType)}>
             <Button size="lg">
               <RotateCcw className="h-5 w-5 mr-2" />
               Yeni Test

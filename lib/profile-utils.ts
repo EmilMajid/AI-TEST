@@ -117,7 +117,7 @@ export function getRoleLabel(accountType?: string, role?: string): string {
  * Get dashboard path for user role
  */
 export function getDashboardPath(accountType?: string): string {
-    if (accountType === 'parent') {
+    if (accountType === 'parent' || accountType === 'teacher' || accountType === 'director') {
         return '/parent-dashboard'
     }
     return '/dashboard'

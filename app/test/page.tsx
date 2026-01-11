@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, CheckCircle, XCircle, RotateCcw, ArrowRight, ArrowLeft, Target, Brain } from "lucide-react"
 import { useRouter } from "next/navigation"
 import TestGenerationStatus from "@/components/test-generation-status"
+import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 
 interface Question {
   id: number
@@ -54,7 +55,8 @@ export default function TestPage() {
       setTimeLeft(config.timeLimit * 60) // dəqiqəni saniyəyə çevir
       generateTest(config)
     } else {
-      router.push("/dashboard")
+      const user = getCurrentUser()
+      router.push(getDashboardPath(user?.accountType))
     }
   }, [router])
 
@@ -225,7 +227,7 @@ export default function TestPage() {
   if (isGenerating) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10">
-        <TestGenerationStatus config={testConfig} onCancel={() => router.push("/dashboard")} />
+        <TestGenerationStatus config={testConfig} onCancel={() => router.push(getDashboardPath(getCurrentUser()?.accountType))} />
       </div>
     )
   }
@@ -247,7 +249,7 @@ export default function TestPage() {
                 <RotateCcw className="h-4 w-4 mr-2" />
                 Yenidən Cəhd Et
               </Button>
-              <Button variant="outline" onClick={() => router.push("/dashboard")} className="flex-1">
+              <Button variant="outline" onClick={() => router.push(getDashboardPath(getCurrentUser()?.accountType))} className="flex-1">
                 Geri Qayıt
               </Button>
             </div>
@@ -312,7 +314,7 @@ export default function TestPage() {
                 <Button onClick={() => router.push("/results")} className="flex-1">
                   Ətraflı Nəticələr
                 </Button>
-                <Button variant="outline" onClick={() => router.push("/dashboard")} className="flex-1">
+                <Button variant="outline" onClick={() => router.push(getDashboardPath(getCurrentUser()?.accountType))} className="flex-1">
                   Yeni Test
                 </Button>
               </div>

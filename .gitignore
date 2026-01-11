@@ -31,3 +31,5 @@ yarn-error.log*
 
 # Temp files
 temp/
+scripts/ocr_temp/
+*.png

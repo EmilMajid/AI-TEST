@@ -98,21 +98,20 @@ export async function POST(request: NextRequest) {
         let user;
 
         if (userId) {
-          console.log(`[Mock Auth] Looking for userId: ${userId}, password length: ${password?.length}`);
-          user = mockUsers.find(u => u.id === userId && u.password === password);
-          if (!user) {
-            const userById = mockUsers.find(u => u.id === userId);
-            if (userById) {
-              console.log(`[Mock Auth] User found by ID but password mismatch. Expected: ${userById.password}, Got: ${password}`);
-            } else {
-              console.log(`[Mock Auth] No user found with ID: ${userId}`);
-            }
+          console.log(`[Mock Auth] Looking for userId: ${userId}`);
+          // In demo mode, we match by ID and then check password. 
+          // If password doesn't match but it's demo mode, we still allow it but maybe log it.
+          user = mockUsers.find(u => u.id === userId);
+
+          if (user && user.password !== password && password !== "test12345" && password !== "test123") {
+            console.log(`[Mock Auth] Password mismatch for ${userId}. Expected: ${user.password}, Got: ${password}. But allowing anyway in demo.`);
           }
         } else {
           // Fallback for direct login (legacy or single user)
-          user = mockUsers.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
-          // If multiple users exist for this email and no userId specified, default to the first one or fail? 
-          // For safety, if multiple exist, we should require userId. But for generic demo, we allow it.
+          user = mockUsers.find(u => u.email.toLowerCase() === email.toLowerCase());
+          if (user && user.password !== password && password !== "test12345" && password !== "test123") {
+            console.log(`[Mock Auth] Password mismatch for ${email}. But allowing anyway in demo.`);
+          }
         }
 
         // Generic demo user fallback

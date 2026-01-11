@@ -13,6 +13,7 @@ import { useRouter } from 'next/navigation'
 import { useTheme } from "@/hooks/use-theme"
 import RegionBackground from "@/components/region-background"
 import Image from "next/image"
+import { getDashboardPath } from "@/lib/profile-utils"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -138,7 +139,8 @@ export default function LoginPage() {
       if (data.user.role === 'admin') {
         router.push("/admin/topics")
       } else {
-        router.push("/dashboard")
+        const dashboardPath = getDashboardPath(data.user.accountType)
+        router.push(dashboardPath)
       }
     } catch (err) {
       setError("Şəbəkə xətası baş verdi")

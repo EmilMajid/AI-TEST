@@ -234,8 +234,11 @@ export async function GET(request: NextRequest) {
         }
 
         // Helper to parse manual topic string with hierarchy support
-        const parseManualTopics = (topicString: string): TopicGroup[] => {
-            if (!topicString || topicString === 'Mövzular' || topicString.length < 5) return [];
+        const parseManualTopics = (topicData: string | string[]): TopicGroup[] => {
+            if (!topicData || topicData === 'Mövzular') return [];
+
+            const topicString = Array.isArray(topicData) ? topicData.join('\n') : topicData;
+            if (topicString.length < 5) return [];
 
             const lines = topicString.split('\n').map(l => l.trim()).filter(l => l.length > 0);
             const groups: TopicGroup[] = [];
