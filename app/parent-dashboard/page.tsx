@@ -46,6 +46,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+import {
   LineChart,
   Line,
   BarChart,
@@ -124,6 +131,28 @@ interface StudentStatistics {
     averageThisMonth: number
   }
 }
+
+const ALL_SUBJECTS = [
+  "Azərbaycan dili",
+  "Ədəbiyyat",
+  "Xarici dil",
+  "İkinci xarici dil",
+  "Riyaziyyat",
+  "İnformatika",
+  "Azərbaycan tarixi",
+  "Ümumi tarix",
+  "Fizika",
+  "Kimya",
+  "Biologiya",
+  "Coğrafiya",
+  "Təbiət",
+  "Həyat bilgisi",
+  "Texnologiya",
+  "Təsviri incəsənət",
+  "Musiqi",
+  "Fiziki tərbiyə",
+  "Çağırışaqədərki hazırlıq"
+]
 
 export default function ParentDashboard() {
   const router = useRouter()
@@ -875,18 +904,22 @@ export default function ParentDashboard() {
                                 Şagirdin nəticələrinin məktəb, bölgə və ölkə üzrə orta göstəricilərlə müqayisəsi
                               </CardDescription>
                             </div>
-                            <div className="flex flex-wrap gap-2">
-                              {studentStats.subjectBreakdown.map((s) => (
-                                <Button
-                                  key={s.subject}
-                                  variant={selectedSubject === s.subject ? "default" : "outline"}
-                                  size="sm"
-                                  onClick={() => setSelectedSubject(s.subject)}
-                                  className="text-xs"
-                                >
-                                  {s.subject}
-                                </Button>
-                              ))}
+                            <div className="w-full md:w-[250px]">
+                              <Select
+                                value={selectedSubject || ""}
+                                onValueChange={setSelectedSubject}
+                              >
+                                <SelectTrigger>
+                                  <SelectValue placeholder="Fənn seçin" />
+                                </SelectTrigger>
+                                <SelectContent className="max-h-[300px]">
+                                  {ALL_SUBJECTS.map((subject) => (
+                                    <SelectItem key={subject} value={subject}>
+                                      {subject}
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
                             </div>
                           </div>
                         </CardHeader>
@@ -902,7 +935,17 @@ export default function ParentDashboard() {
                               {/* Focused Comparison Card */}
                               {(() => {
                                 const sub = studentStats.subjectBreakdown.find(s => s.subject === selectedSubject);
-                                if (!sub) return null;
+                                // If subject has no data, we can either show "No Data" or simulate 0
+                                // For better UX, let's show separate view if no data
+                                if (!sub) {
+                                  return (
+                                    <div className="text-center py-12 bg-orange-50 rounded-lg border border-orange-100">
+                                      <Target className="h-12 w-12 text-orange-400 mx-auto mb-3" />
+                                      <h3 className="text-lg font-medium text-orange-900">Məlumat Tapılmadı</h3>
+                                      <p className="text-orange-700">"{selectedSubject}" fənni üzrə hələlik heç bir nəticə mövcud deyil.</p>
+                                    </div>
+                                  )
+                                }
 
                                 const comparisonItems = [
                                   { label: 'Şagirdin Nəticəsi', value: sub.averageScore, color: 'bg-blue-600', icon: User },

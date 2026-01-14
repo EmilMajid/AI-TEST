@@ -27,8 +27,8 @@ export async function GET(request: NextRequest) {
       const isFatime = studentId === "student-fatime"
 
       const subjects = isAli
-        ? ["Riyaziyyat", "Fizika", "İnformatika", "Tarix", "Coğrafiya"]
-        : ["Azərbaycan dili", "Riyaziyyat", "Həyat bilgisi", "İngilis dili", "Təsviri incəsənət"]
+        ? ["Riyaziyyat", "Fizika", "İnformatika", "Azərbaycan dili", "Ədəbiyyat", "Coğrafiya", "Kimya", "Biologiya", "Ümumi tarix"]
+        : ["Azərbaycan dili", "Riyaziyyat", "Həyat bilgisi", "İngilis dili", "Təsviri incəsənət", "Musiqi", "Texnologiya"]
 
       const mockResults = subjects.map((sub, idx) => ({
         id: idx + 1,

@@ -17,6 +17,11 @@ class RAGSystem:
         self.metadata = []
         self.index_dir = Path(index_dir)
         self.load_index()
+        
+        # Caching System
+        self._cache = {}
+        self._cache_size = 1000
+        self._cache_stats = {"hits": 0, "misses": 0}
     
     def load_index(self):
         """FAISS indeksini yükləyir"""
@@ -44,6 +49,16 @@ class RAGSystem:
         min_score: float = 0.3
     ) -> str:
         """Sorğuya uyğun kontekst məlumatları gətirir"""
+        
+        # 1. Check Cache
+        cache_key = f"ctx:{grade}:{subject}:{query.lower().strip()}:{k}:{min_score}"
+        if cache_key in self._cache:
+            self._cache_stats["hits"] += 1
+            print(f"⚡ Cache HIT for: '{query}'")
+            return self._cache[cache_key]
+        
+        self._cache_stats["misses"] += 1
+
         
         if self.index is None or not self.metadata:
             return self._get_fallback_context(grade, subject, query)
@@ -90,12 +105,19 @@ class RAGSystem:
         
         if context_parts:
             context = "\n---\n".join(context_parts)
-            return f"""Dərslik Konteksti ({grade}-ci sinif {subject}):
+            result = f"""Dərslik Konteksti ({grade}-ci sinif {subject}):
 
 {context}
 
 Yuxarıdakı dərslik məlumatlarına əsasən mövzu: {query}
 """
+            # Store in cache
+            self._cache[cache_key] = result
+            # Simple eviction policy (Random/FIFO-ish) if full
+            if len(self._cache) > self._cache_size:
+                self._cache.pop(next(iter(self._cache)))
+                
+            return result
         else:
             return self._get_fallback_context(grade, subject, query)
     
@@ -117,6 +139,11 @@ Bu mövzu üzrə dərslik konteksti hal-hazırda əlçatan deyil.
         k: int = 3
     ) -> List[str]:
         """Əlaqəli mövzuları gətirir"""
+        
+        # Check Cache
+        cache_key = f"topics:{grade}:{subject}:{query.lower().strip()}:{k}"
+        if cache_key in self._cache:
+            return self._cache[cache_key]
         
         if self.index is None:
             return []
@@ -143,8 +170,13 @@ Bu mövzu üzrə dərslik konteksti hal-hazırda əlçatan deyil.
                         
                         if len(topics) >= k:
                             break
-        
-        return list(topics)
+                            
+        result = list(topics)
+        self._cache[cache_key] = result
+        return result
+
+    def get_cache_stats(self):
+        return self._cache_stats
 
 # Singleton instance
 _rag_system = None

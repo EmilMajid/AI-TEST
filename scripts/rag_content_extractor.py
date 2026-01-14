@@ -9,6 +9,13 @@ import json
 import re
 from typing import List, Dict, Any
 from pathlib import Path
+try:
+    from llm_utils import extract_triples
+except ImportError:
+    # Fallback if running from root
+    import sys
+    sys.path.append(str(Path(__file__).parent))
+    from llm_utils import extract_triples
 
 class ContentExtractor:
     """Dərsliklərdən mətn, şəkil və düsturları çıxarır"""
@@ -87,7 +94,8 @@ class ContentExtractor:
                         "id": chunk_id,
                         "text": " ".join(current_chunk),
                         "page": item["page"],
-                        "type": "chunk"
+                        "type": "chunk",
+                        "knowledge": extract_triples(" ".join(current_chunk), provider="xai") # KAG Integration
                     })
                     chunk_id += 1
                     current_chunk = []
@@ -102,7 +110,8 @@ class ContentExtractor:
                 "id": chunk_id,
                 "text": " ".join(current_chunk),
                 "page": item["page"],
-                "type": "chunk"
+                "type": "chunk",
+                "knowledge": extract_triples(" ".join(current_chunk), provider="xai") # KAG Integration
             })
         
         return chunks
@@ -139,6 +148,15 @@ def process_unified_pipeline():
         
     new_chunks = []
     
+    # Create/Clear output file first
+    with open(chunks_jsonl_path, "w", encoding="utf-8") as f:
+        # Write existing chunks first
+        for chunk in existing_chunks:
+            # Skip old chunks if we are re-processing everything (optional, but for now keep them)
+             if chunk.get("type") != "pdf_placeholder":
+                json.dump(chunk, f, ensure_ascii=False)
+                f.write("\n")
+
     # Iterate over all grades and books
     for grade, books in textbooks_data.items():
         for book in books:
@@ -170,17 +188,25 @@ def process_unified_pipeline():
                         if extracted["content"]:
                             file_chunks = extractor.chunk_content(extracted["content"])
                             
-                            for chunk in file_chunks:
-                                new_chunks.append({
-                                    "grade": int(grade),
-                                    "subject": book["subject"],
-                                    "book_id": book["id"],
-                                    "source": pdf_path.name,
-                                    "text": chunk["text"],
-                                    "page": chunk["page"],
-                                    "type": "pdf_page"
-                                })
-                            print(f"  -> Extracted {len(file_chunks)} chunks.")
+                            # APPEND chunks to file immediately
+                            with open(chunks_jsonl_path, "a", encoding="utf-8") as f:
+                                for chunk in file_chunks:
+                                    chunk_data = {
+                                        "id": chunk["id"],
+                                        "grade": int(grade),
+                                        "subject": book["subject"],
+                                        "book_id": book["id"],
+                                        "source": pdf_path.name,
+                                        "text": chunk["text"],
+                                        "page": chunk["page"],
+                                        "type": "pdf_page",
+                                        "knowledge": extract_triples(chunk["text"], provider="xai") # KAG Integration
+                                    }
+                                    
+                                    json.dump(chunk_data, f, ensure_ascii=False)
+                                    f.write("\n")
+
+                            print(f"  -> Extracted and saved {len(file_chunks)} chunks.")
                         else:
                              print(f"  -> No text extracted (Scanned PDF?).")
                              
@@ -190,33 +216,7 @@ def process_unified_pipeline():
                     if book.get("contentPath"):
                          print(f"⚠️ PDF file not found for: {book['title']} (Checked {book['contentPath']} and path)")
 
-    # Combine and Save
-    # We filter out existing 'pdf_placeholder' chunks if we have real content now?
-    # Actually, keep it simple: just append for now, or maybe replace placeholders.
-    # Let's filter out placeholders if we are adding real data.
-    
-    processed_sources = {c["source"] for c in new_chunks}
-    final_chunks = []
-    
-    # Keep existing chunks unless they are placeholders for a source we just processed
-    for c in existing_chunks:
-        if c.get("type") == "pdf_placeholder":
-            # If we found real content for this book, skip the placeholder
-            # Note: Placeholder source might differ slightly, but let's just keep everything for safety unless logical match
-            final_chunks.append(c) 
-        else:
-            final_chunks.append(c)
-            
-    final_chunks.extend(new_chunks)
-    
-    print(f"Saving total {len(final_chunks)} chunks (Added {len(new_chunks)} new PDF chunks).")
-    
-    with open(chunks_jsonl_path, "w", encoding="utf-8") as f:
-        for chunk in final_chunks:
-            json.dump(chunk, f, ensure_ascii=False)
-            f.write("\n")
-            
-    print("✅ Unified Extraction Complete!")
+    print("✅ Unified Extraction Complete (Incremental)!")
 
 if __name__ == "__main__":
     process_unified_pipeline()

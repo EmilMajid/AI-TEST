@@ -1,0 +1,37 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "entity",
+      "id": "MockSubject"
+    },
+    {
+      "type": "entity",
+      "id": "MockObject"
+    },
+    {
+      "type": "entity",
+      "id": "Photosynthesis"
+    },
+    {
+      "type": "entity",
+      "id": "Oxygen"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "TEST_RELATION",
+      "source_chunk_id": "unknown",
+      "source": "MockSubject",
+      "target": "MockObject"
+    },
+    {
+      "relation": "CREATES",
+      "source_chunk_id": "unknown",
+      "source": "Photosynthesis",
+      "target": "Oxygen"
+    }
+  ]
+}
