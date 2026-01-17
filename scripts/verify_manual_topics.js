@@ -10,8 +10,17 @@ try {
 
     const requiredKeys = [
         "riyaziyyat-6-h1",
+        "riyaziyyat-6-h2",
+        "tebiet-6-h1",
+        "tebiet-6-h2",
         "azerbaycan-dili-6-h1",
-        "azerbaycan-dili-6-h2"
+        "azerbaycan-dili-6-h2",
+        "azerbaycan-tarixi-6",
+        "informatika-6",
+        "texnologiya-6",
+        "tesviri-incesenet-6",
+        "musiqi-6",
+        "fiziki-terbiye-6"
     ];
 
     let allFound = true;

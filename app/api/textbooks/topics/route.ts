@@ -19,19 +19,21 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "ortaq-turk-tarixi": "Ortaq türk tarixi",
     // Foreign Languages
     "ingilis-dili": "İngilis dili",
-    "alman-dili-esas": "Alman dili",
-    "alman-dili-ikinci": "Alman dili",
-    "fransiz-dili-esas": "Fransız dili",
-    "fransiz-dili-ikinci": "Fransız dili",
-    "rus-dili-esas": "Rus dili",
-    "rus-dili-ikinci": "Rus dili",
+    "rus-dili-esas": "Rus dili (əsas)",
+    "rus-dili-ikinci": "Rus dili (ikinci)",
+    "alman-dili": "Alman dili (əsas)",
+    "alman-dili-2": "Alman dili (ikinci)",
+    "rus-dili": "Rus dili (əsas)",
+    "rus-dili-2": "Rus dili (ikinci)",
+    "fransiz-dili": "Fransız dili (əsas)",
+    "fransiz-dili-2": "Fransız dili (ikinci)",
     // Grade 5 specific
-    "azerbaycan-dili-hisse-1": "Azərbaycan dili (Hissə 1)",
-    "azerbaycan-dili-hisse-2": "Azərbaycan dili (Hissə 2)",
-    "riyaziyyat-hisse-1": "Riyaziyyat (Hissə 1)",
-    "riyaziyyat-hisse-2": "Riyaziyyat (Hissə 2)",
-    "tebiet-hisse-1": "Təbiət (Hissə 1)",
-    "tebiet-hisse-2": "Təbiət (Hissə 2)",
+    "azerbaycan-dili-hisse-1": "Azərbaycan dili",
+    "azerbaycan-dili-hisse-2": "Azərbaycan dili",
+    "riyaziyyat-hisse-1": "Riyaziyyat",
+    "riyaziyyat-hisse-2": "Riyaziyyat",
+    "tebiet-hisse-1": "Təbiət",
+    "tebiet-hisse-2": "Təbiət",
     "ingilis-dili-5": "İngilis dili",
     "alman-dili-5": "Alman dili",
     "alman-dili-5-asas": "Alman dili",
@@ -42,7 +44,15 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "musiqi-5": "Musiqi",
     "texnologiya-5": "Texnologiya",
     "fiziki-terbiye-5": "Fiziki tərbiyə",
-    "tesviri-incesenet-5": "Təsviri İncəsənət"
+    "tesviri-incesenet-5": "Təsviri İncəsənət",
+    "tesviri-incesenet": "Təsviri İncəsənət",
+    "fiziki-terbiye": "Fiziki tərbiyə",
+    "hayat-bilgisi": "Həyat bilgisi",
+    "hayat-bilgisi-5": "Həyat bilgisi",
+    "tebiet": "Təbiət",
+    "tebiet-5": "Təbiət",
+    "cografiya-hisse-1": "Coğrafiya",
+    "cografiya-hisse-2": "Coğrafiya"
 }
 
 interface Topic {
@@ -303,46 +313,84 @@ export async function GET(request: NextRequest) {
             if (!fs.statSync(subjectPath).isDirectory()) continue
 
             // Get the display name
-            // CRITICAL FIX: Map specific "hisse-1/2" to generic name if desired by frontend
             let displayName = SUBJECT_MAPPING[subjectDir] || subjectDir;
 
             // Normalize Display Name: remove "(Hissə X)" to merge them
-            // REVERTED: User requested split textbooks (Hissə 1, Hissə 2) be kept separate
-            // const simplifiedName = displayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
-            // displayName = simplifiedName;
+            const simplifiedName = displayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
+            displayName = simplifiedName;
 
             // Get metadata for this directory
             const bookMetadata = metadataMap.get(subjectDir);
 
-            // FILTER: If targetSubject is provided, only process textbooks that match that subject
-            // Strengthened: If metadata is missing, skip to avoid merging untracked directories
-            if (targetSubject && (!bookMetadata || bookMetadata.subject !== targetSubject)) {
-                console.log(`[Topics API] Skipping ${subjectDir} as it doesn't match ${targetSubject} or has no metadata`);
+            // FILTER: Flexible matching for subjects
+            const metadataSubject = bookMetadata?.subject || "";
+            const matchesSubject = !targetSubject || (
+                metadataSubject === targetSubject ||
+                metadataSubject.includes(targetSubject) ||
+                targetSubject.includes(metadataSubject) ||
+                displayName === targetSubject ||
+                (targetSubject === "Xarici dil" && displayName.includes("dili") && !displayName.includes("Azərbaycan")) ||
+                (targetSubject.includes("dil") && metadataSubject.includes("dil")) // Help match "Alman dili" vs "Xarici dil"
+            );
+
+            if (!matchesSubject) {
+                console.log(`[Topics API] Skipping ${subjectDir} (Metadata: ${metadataSubject}, Display: ${displayName}) as it doesn't match ${targetSubject}`);
                 continue;
             }
 
             let strategies = [
-                // Strategy 0: Check textbooks.json "topics" field (Priority for Manual Entries)
+                // Strategy 0: Try manual/extracted topics (Priority for high-quality manual data)
                 () => {
-                    if (bookMetadata && bookMetadata.topics && bookMetadata.topics.length > 50 && bookMetadata.topics !== "Mövzular") {
-                        return parseManualTopics(bookMetadata.topics);
+                    const extractedTopics = loadExtractedTopics();
+
+                    // HIGHER PRIORITY: Try with class suffix first (to avoid mapping Grade 8 topics to Grade 6)
+                    const classKey = `${subjectDir}-${classLevel}`;
+                    if (extractedTopics[classKey] && extractedTopics[classKey].length > 0) return extractedTopics[classKey];
+
+                    // Fallback for multi-part books (e.g., tebiet-hisse-1 -> tebiet-6-h1)
+                    if (subjectDir.includes('hisse-')) {
+                        const hissMatch = subjectDir.match(/(.*)-hisse-(\d+)/);
+                        if (hissMatch) {
+                            const mappedKey = `${hissMatch[1]}-${classLevel}-h${hissMatch[2]}`;
+                            if (extractedTopics[mappedKey] && extractedTopics[mappedKey].length > 0) return extractedTopics[mappedKey];
+                        }
+                    }
+
+                    // LOWER PRIORITY: Try exact match (ONLY if we are in Grade 8, as generic keys usually target Grade 8)
+                    if (classLevel === "8" && extractedTopics[subjectDir] && extractedTopics[subjectDir].length > 0) {
+                        return extractedTopics[subjectDir];
+                    }
+
+                    return [];
+                },
+                // Strategy 1: Check textbooks.json "topics" field (Priority for Manual Entries)
+                () => {
+                    if (bookMetadata && bookMetadata.topics && bookMetadata.topics !== "Mövzular") {
+                        // If it's an array, it's valid if it has items
+                        if (Array.isArray(bookMetadata.topics) && bookMetadata.topics.length > 0) {
+                            // Check if first item looks like garbage (Strategy 1 fallback should be weak if it looks like strategy 2 output)
+                            const firstTopic = typeof bookMetadata.topics[0] === 'string' ? bookMetadata.topics[0] : "";
+                            if (firstTopic.includes('§') || firstTopic.includes('°')) return [];
+
+                            return parseManualTopics(bookMetadata.topics);
+                        }
+                        // If it's a string, it should be long enough to be real topics
+                        if (typeof bookMetadata.topics === 'string' && bookMetadata.topics.length > 30) {
+                            if (bookMetadata.topics.includes('§') || bookMetadata.topics.includes('°')) return [];
+                            return parseManualTopics(bookMetadata.topics);
+                        }
                     }
                     return [];
                 },
-                // Strategy 1: Try reading toc.xhtml (OEBPS/toc.xhtml or toc.xhtml)
+                // Strategy 2: Try reading toc.xhtml (OEBPS/toc.xhtml or toc.xhtml)
                 () => {
                     let tPath = path.join(subjectPath, "OEBPS", "toc.xhtml")
                     if (!fs.existsSync(tPath)) tPath = path.join(subjectPath, "toc.xhtml") // Try root as fallback
 
                     if (fs.existsSync(tPath)) {
-                        return extractTopicsFromTOC(tPath)
+                        return extractTopicsFromTOC(tPath);
                     }
-                    return []
-                },
-                // Strategy 2: Try manual/extracted topics (Old fallback)
-                () => {
-                    const extractedTopics = loadExtractedTopics();
-                    return extractedTopics[subjectDir] || [];
+                    return [];
                 }
             ];
 

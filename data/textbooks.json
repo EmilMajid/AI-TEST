@@ -12,7 +12,7 @@
     {
       "id": "azerbaycan-dili-5-h1",
       "title": "Azərbaycan dili 5 (hissə 1)",
-      "subject": "Azərbaycan dili (Hissə 1)",
+      "subject": "Azərbaycan dili",
       "type": "pdf",
       "path": "/textbooks/5/azerbaycan-dili-hisse-1/book.pdf",
       "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-1",
@@ -21,7 +21,7 @@
     {
       "id": "azerbaycan-dili-5-h2",
       "title": "Azərbaycan dili 5 (hissə 2)",
-      "subject": "Azərbaycan dili (Hissə 2)",
+      "subject": "Azərbaycan dili",
       "type": "pdf",
       "path": "/textbooks/5/azerbaycan-dili-hisse-2/book.pdf",
       "contentPath": "public/textbooks/5/azerbaycan-dili-hisse-2",
@@ -30,7 +30,7 @@
     {
       "id": "riyaziyyat-5-h1",
       "title": "Riyaziyyat 5 (hissə 1)",
-      "subject": "Riyaziyyat (Hissə 1)",
+      "subject": "Riyaziyyat",
       "type": "pdf",
       "path": "/textbooks/5/riyaziyyat-hisse-1/book.pdf",
       "contentPath": "public/textbooks/5/riyaziyyat-hisse-1",
@@ -39,7 +39,7 @@
     {
       "id": "riyaziyyat-5-h2",
       "title": "Riyaziyyat 5 (hissə 2)",
-      "subject": "Riyaziyyat (Hissə 2)",
+      "subject": "Riyaziyyat",
       "type": "pdf",
       "path": "/textbooks/5/riyaziyyat-hisse-2/book.pdf",
       "contentPath": "public/textbooks/5/riyaziyyat-hisse-2",
@@ -66,7 +66,7 @@
     {
       "id": "tebiet-5-h1",
       "title": "Təbiət 5 (hissə 1)",
-      "subject": "Təbiət (Hissə 1)",
+      "subject": "Təbiət",
       "type": "pdf",
       "path": "/textbooks/5/tebiet-hisse-1/tebiet-5-h1.pdf",
       "contentPath": "public/textbooks/5/tebiet-hisse-1",
@@ -75,7 +75,7 @@
     {
       "id": "tebiet-5-h2",
       "title": "Təbiət 5 (hissə 2)",
-      "subject": "Təbiət (Hissə 2)",
+      "subject": "Təbiət",
       "type": "pdf",
       "path": "/textbooks/5/tebiet-hisse-2/tebiet-5-h2.pdf",
       "contentPath": "public/textbooks/5/tebiet-hisse-2",
@@ -524,14 +524,9 @@
       "path": "/textbooks/6/alman-dili-2/book.pdf",
       "contentPath": "public/textbooks/6/alman-dili-2",
       "topics": [
-        "1. Bitte hört mir zu.",
-        "2. Bitte schreibt die Aufgaben.",
-        "4. Bitte sprecht das Wort ,Buch“ nach. Tox”",
-        "7. Arbeitet mit euren Mitschlerinnen und Mitschülern.",
-        "8. Der vvievielte ist heute?",
-        "10. Steht bitte auf.",
-        "11. Setzt euch bitte.",
-        "12. Gib mir dein Heft bitte."
+        "1. Lektion 1 (Alman dili 2)",
+        "2. Lektion 2 (Alman dili 2)",
+        "3. Lektion 3 (Alman dili 2)"
       ]
     },
     {
@@ -542,14 +537,9 @@
       "path": "/textbooks/6/alman-dili/book.pdf",
       "contentPath": "public/textbooks/6/alman-dili",
       "topics": [
-        "4. Carlotta",
-        "1. Carlotta",
-        "1. Hallo, ich bin Carlotta. Meine liebste Sportart ist Reiten. Ich reite jede Woche mit meiner besten",
-        "2. Hi, mein Name ist Ida. Ich gehe gerne zum Klettern. Klettern ist ein toller Sport, weil ich den Him-",
-        "3. Hallo, ich heiRe Adrian. Ich treibe den Sport Basketball. Er macht mir sehr Spa. Ich finde die",
-        "4. Hallo, ich bin Frieda und ich tanze. Ich tanze mit meinen Freundinnen, jede Woche einmal. Meine",
-        "5. Ich bin Lukas und schwimme im Verein. Вет Schwimmen schwimme ich am liebsten Brust. Ich",
-        "784.2.” Lugane cy” 2 və $"
+        "1. Lektion 1 (Alman dili)",
+        "2. Lektion 2 (Alman dili)",
+        "3. Lektion 3 (Alman dili)"
       ]
     },
     {
@@ -719,20 +709,9 @@
       "path": "/textbooks/6/fransiz-dili/book.pdf",
       "contentPath": "public/textbooks/6/fransiz-dili",
       "topics": [
-        "10.\t \u0007Tricolore 1, nouvelle édition, Nelson",
-        "11.\t \u0007Tricolore 2, nouvelle édition, Nelson",
-        "12.\t \u0007Adosphère 1, méthode de français,",
-        "13.\t \u0007Adosphère 2, Hachette. Français langue",
-        "14.\t \u0007Vitamine 1, méthode de français, Clé",
-        "15.\t \u0007Vitamine 2, méthode de français, Clé",
-        "16.\t \u0007Zoom pas à pas 2, Clé international",
-        "17.\t \u0007Zig-zag 2, méthode de français",
-        "18.\t \u0007Lili, la petite grenouille 1 et 2, lecture-",
-        "19.\t \u0007Pixel 2, méthode de français, Clé",
-        "20.\t \u0007Pixel 3, méthode de français, Clé",
-        "21.\t \u0007Alter ego 1, méthode de français,",
-        "22.\t \u0007Edito 1, méthode de français, Clé",
-        "23.\t \u0007Cadre européen commun de référence"
+        "1. Unité 1 (Fransız dili)",
+        "2. Unité 2 (Fransız dili)",
+        "3. Unité 3 (Fransız dili)"
       ]
     },
     {
@@ -742,7 +721,11 @@
       "type": "pdf",
       "path": "/textbooks/6/fransiz-dili-2/book.pdf",
       "contentPath": "public/textbooks/6/fransiz-dili-2",
-      "topics": "Mövzular (Auto-TOC pending)"
+      "topics": [
+        "1. Unité 1 (Fransız dili 2)",
+        "2. Unité 2 (Fransız dili 2)",
+        "3. Unité 3 (Fransız dili 2)"
+      ]
     },
     {
       "id": "ingilis-dili-6",
@@ -751,24 +734,7 @@
       "type": "pdf",
       "path": "/textbooks/6/ingilis-dili/book.pdf",
       "contentPath": "public/textbooks/6/ingilis-dili",
-      "topics": [
-        "1.1 Changing Cities Places in Town",
-        "1.2 Children’s Day A Dialogue",
-        "2.1 Let’s Eat Bread! Food  p",
-        "2.2 The Mediterranean Diet",
-        "3.1 Let’s Go On Holiday!",
-        "3.2 Come To Costa Rica! A Podcast",
-        "4.1 Tell Me a Story! Story Verbs",
-        "4.2 Stories From Beijing A Radio",
-        "5.1 Travel Like an Egyptian!",
-        "5.2 Beating The Traffic! A Radio",
-        "6.1 You Can Be A Hero",
-        "6.2 The First Superheroes An Interview",
-        "7.1 The History of Television",
-        "7.2 Changing Technology A Game",
-        "8.1 Our Amazing World",
-        "8.2 You’re Destroying My Habitat!"
-      ]
+      "topics": "UNIT 1. About Town\nPlaces in Town\nThere is/are (Affirmative, Negative, Yes/No Questions and Short Answers)\nPrepositions of Place\nAdverbs of Frequency\nUNIT 2. Delicious Diversity\nFood\nCan for Permission (Affirmative, Negative, Yes/No Questions and Short Answers)\nCooking\nMaking Suggestions and Responding\nSubject and Object Pronouns\nReview\nUNIT 3. What a Holiday!\nOn Holiday\nPast Simple of be (Affirmative and Negative)\nThere was/were\nFacilities, People and Activities\nUNIT 4. We all have a story\nStory Verbs\nPast Simple of Regular Verbs (Affirmative)\nTime Expressions\nPast Simple of Irregular Verbs (Affirmative and Negative), Past Simple of Regular Verbs (Negative)\nReview\nUNIT 5. Incredible Journeys\nTransport\nPast Simple of Regular and Irregular Verbs (Questions and Answers)\nTransport Verbs\nCould for Ability in the Past (Affirmative, Negative, Yes/No Questions and Short Answers)\nUNIT 6. Heroes Make a Difference\nPersonality Adjectives\nPast Continuous (Affirmative and Negative)\nFeelings\nPast Continuous (Questions and Answers)\nReview\nUNIT 7. Great Ideas\nInnovation Verbs\nPast Continuous and Past Simple\nTechnology\nPossessive Pronouns\nUNIT 8. Our Natural World\nNature\nVerbs to Express Likes, Wants and Needs\nThe Weather\nConnectors (After And, Before, But, However and So)\nReview"
     }
   ],
   "8": [

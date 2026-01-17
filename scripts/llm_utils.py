@@ -121,30 +121,44 @@ def generate_text_with_failover(prompt, provider="gemini"):
 def extract_triples(text, provider="gemini"):
     """
     Extracts Subject-Predicate-Object triples from a given text using an LLM.
-    Returns a list of dictionaries or raw JSON text.
+    Specifically tuned for Azerbaijan curriculum topics and definitions.
     """
     
     prompt = f"""
-    Sən KAG (Biliklə Gücləndirilmiş Yaratma) sisteminin bir hissəsisən.
-    Vəzifən: Aşağıdakı mətndən əsas bilikləri "Üçlüklər" (Triples) şəklində çıxarmaqdır.
+    Sən Azərbaycan dərslikləri üçün Bilik Qrafiki (Knowledge Graph) quran süni intellekt köməkçisisən.
+    Vəzifən: Aşağıdakı dərslik mövzusundan və ya mətndən əsas anlayışları və onların əlaqələrini "Üçlüklər" (Triples) şəklində çıxarmaqdır.
+
+    Qaydalar:
+    1. Predicate (əlaqə) qısa, böyük hərflərlə və Azərbaycan dilində olsun.
+    2. Tez-tez istifadə olunan əlaqə növləri:
+       - DAXİLDİR: Bir anlayışın digərinin tərkib hissəsi olması (məs: "İsim" -> DAXİLDİR -> "Nitq hissələri").
+       - NÜMUNƏDİR: Bir anlayışın digərinə misal olması (məs: "Bakı" -> NÜMUNƏDİR -> "Şəhər").
+       - SƏBƏB_OLUR: Səbəb-nəticə əlaqəsi.
+       - TƏQDİM_EDİR: Mövzu nəyi izah edir.
+       - ƏLAQƏDARDIR: Ümumi əlaqə.
+       - ÖYRƏNİR: Elm sahəsinin nəyi araşdırdığı.
+    3. Mövzu başlıqlarından (TOC) çıxarış edərkən mövzunun əsas mahiyyətinə diqqət yetir.
+    
     Format: JSON
     Struktur: [{{ "subject": "...", "predicate": "...", "object": "..." }}]
     
-    Qaydalar:
-    - Predicate (əlaqə) qısa və böyük hərflərlə olsun (məs: YARADIR, DAXİLDİR, SƏBƏB_OLUR).
-    - Mətn:
+    Mətn:
     {text}
     """
 
     result = generate_text_with_failover(prompt, provider)
     
     if result:
-        return result
+        # Clean up possible Markdown code blocks
+        clean_result = result.strip()
+        if clean_result.startswith("```json"):
+            clean_result = clean_result[7:]
+        if clean_result.endswith("```"):
+            clean_result = clean_result[:-3]
+        return clean_result.strip()
         
-    print("Returning MOCK triples for prototype flow.")
     return json.dumps([
-        {"subject": "MockSubject", "predicate": "TEST_RELATION", "object": "MockObject"},
-        {"subject": "Photosynthesis", "predicate": "CREATES", "object": "Oxygen"}
+        {"subject": text, "predicate": "MÖVZUDUR", "object": "Təhsil"}
     ])
 
 if __name__ == "__main__":
