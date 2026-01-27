@@ -25,7 +25,7 @@ def load_env_file(filepath):
                 os.environ[key] = value
 
 # Load .env and .env.local
-root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 load_env_file(os.path.join(root_dir, '.env'))
 load_env_file(os.path.join(root_dir, '.env.local'))
 
@@ -114,36 +114,40 @@ def generate_text_with_failover(prompt, provider="gemini"):
         else:
             print(f"Provider {current_provider} failed or returned empty. Trying next...")
             
-    # Mock fallback if everything fails (useful for prototyping without paying)
-    print("All providers failed. Returning MOCK data.")
-    return None
+    # No mock fallback - raise error if all providers fail
+    raise RuntimeError("All LLM providers failed. Please configure valid API keys in .env file.")
 
-def extract_triples(text, provider="gemini"):
+def extract_triples(text, provider="gemini", subject_context="Ümumi"):
     """
     Extracts Subject-Predicate-Object triples from a given text using an LLM.
-    Specifically tuned for Azerbaijan curriculum topics and definitions.
+    Now supports subject context for better accuracy.
     """
     
     prompt = f"""
-    Sən Azərbaycan dərslikləri üçün Bilik Qrafiki (Knowledge Graph) quran süni intellekt köməkçisisən.
-    Vəzifən: Aşağıdakı dərslik mövzusundan və ya mətndən əsas anlayışları və onların əlaqələrini "Üçlüklər" (Triples) şəklində çıxarmaqdır.
+    Sən {subject_context} fənni üzrə mütəxəssis məşğələçisən (Bilik Mühəndisisən).
+    Vəzifən: Aşağıdakı mətndən əsas anlayışları və onların əlaqələrini Bilik Qrafı (Knowledge Graph) üçün "Üçlüklər" (Triples) şəklində çıxarmaqdır.
 
-    Qaydalar:
-    1. Predicate (əlaqə) qısa, böyük hərflərlə və Azərbaycan dilində olsun.
-    2. Tez-tez istifadə olunan əlaqə növləri:
-       - DAXİLDİR: Bir anlayışın digərinin tərkib hissəsi olması (məs: "İsim" -> DAXİLDİR -> "Nitq hissələri").
-       - NÜMUNƏDİR: Bir anlayışın digərinə misal olması (məs: "Bakı" -> NÜMUNƏDİR -> "Şəhər").
-       - SƏBƏB_OLUR: Səbəb-nəticə əlaqəsi.
-       - TƏQDİM_EDİR: Mövzu nəyi izah edir.
-       - ƏLAQƏDARDIR: Ümumi əlaqə.
-       - ÖYRƏNİR: Elm sahəsinin nəyi araşdırdığı.
-    3. Mövzu başlıqlarından (TOC) çıxarış edərkən mövzunun əsas mahiyyətinə diqqət yetir.
-    
+    FƏNN KONTEKSTİ: {subject_context}
+    MƏTN: {text}
+
+    İSTİFADƏ EDİLƏCƏK PREDİKATLAR (ƏLAQƏLƏR):
+    - TƏSVİR_EDİR: Anlayışın tərifi, mahiyyəti ("Hüceyrə" -> TƏSVİR_EDİR -> "Canlının ən kiçik vahidi").
+    - NÜMUNƏDİR: Konkret misal ("Bakı" -> NÜMUNƏDİR -> "Paytaxt").
+    - XASSƏSİDİR: Xarakterik xüsusiyyət ("Su" -> XASSƏSİDİR -> "Şəffaf").
+    - ƏMƏL_EDİR: Hərəkət və ya funksiya icra edir ("Ürək" -> ƏMƏL_EDİR -> "Qan dövranı").
+    - NƏTİCƏ_VERİR: Səbəb-nəticə əlaqəsi ("İstiləşmə" -> NƏTİCƏ_VERİR -> "Buxarlanma").
+    - DAXİLDİR: Tərkib hissəsi ("Elektron" -> DAXİLDİR -> "Atom").
+    - ÖYRƏNİR: Elm sahəsinin obyekti ("Biologiya" -> ÖYRƏNİR -> "Canlı təbiət").
+    - TƏTBİQ_OLUNUR: Harada istifadə olunur ("Pifaqor teoremi" -> TƏTBİQ_OLUNUR -> "Həndəsə").
+
+    QAYDALAR:
+    1. Yalnız JSON formatında cavab ver.
+    2. Çıxarılan triple sayı mətnin həcmindən asılı olaraq 3-8 arası olsun.
+    3. Predikatlar mütləq yuxarıdakı siyahıdan olsun (əgər heç biri uyğun gəlmirsə, ƏLAQƏDARDIR istifadə et).
+    4. Subject və Object qısa, konkret anlayışlar olsun (bütöv cümlə yox).
+
     Format: JSON
     Struktur: [{{ "subject": "...", "predicate": "...", "object": "..." }}]
-    
-    Mətn:
-    {text}
     """
 
     result = generate_text_with_failover(prompt, provider)

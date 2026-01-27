@@ -96,18 +96,32 @@ export default function Dashboard() {
     async function fetchTopics() {
       if (!userData?.class) return;
       try {
+        // Prefer bookId for precise topic retrieval
+        const bookIdParam = selectedTextbook?.id ? `&bookId=${encodeURIComponent(selectedTextbook.id)}` : '';
         const subjectParam = selectedSubject ? `&subject=${encodeURIComponent(selectedSubject)}` : '';
-        const res = await fetch(`/api/textbooks/topics?class=${userData.class}${subjectParam}`);
+
+        // If we have a textbook ID, use it. Otherwise uses subject (fallback).
+        const queryParam = bookIdParam || subjectParam;
+        if (!queryParam) {
+          setApiTopics({});
+          return;
+        }
+
+        const res = await fetch(`/api/textbooks/topics?class=${userData.class}${queryParam}`);
         const data = await res.json();
         if (data.success && data.topics) {
           setApiTopics(data.topics);
+        } else {
+          setApiTopics({});
         }
       } catch (error) {
         console.error("Failed to fetch topics:", error);
+        setApiTopics({});
       }
     }
     fetchTopics();
-  }, [userData?.class, selectedSubject])
+  }, [userData?.class, selectedSubject, selectedTextbook?.id])
+
 
   const handleRegionSelect = (region: string) => {
     if (userData) {
@@ -253,7 +267,7 @@ export default function Dashboard() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {/* Subject / Textbook Dropdown */}
+                      {/* Subject Selection */}
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-gray-700">Fənn</label>
                         <select
@@ -262,32 +276,21 @@ export default function Dashboard() {
                             const subject = e.target.value
                             setSelectedSubject(subject)
 
-                            // Check if this is a foreign language subject
-                            const isForeignLang = subject === "Xarici dil" || subject === "İkinci xarici dil"
-                            setIsForeignLanguage(isForeignLang)
+                            // Get textbooks for this subject
+                            const textbooks = userData?.class ? getTextbooks(userData.class, subject) : []
+                            setAvailableTextbooks(textbooks)
 
-                            if (isForeignLang) {
-                              // For foreign languages, always show the 4 static languages
-                              setAvailableLanguages(FOREIGN_LANGUAGES)
-                              setSelectedLanguage("")
-                              setAvailableTextbooks([])
-                              setSelectedTextbook(null)
-                              setTestConfig({ ...testConfig, textbook: "", topic: "" })
+                            // Auto-select first textbook OR reset
+                            if (textbooks.length > 0) {
+                              setSelectedTextbook(textbooks[0])
+                              setTestConfig(prev => ({ ...prev, textbook: textbooks[0].title, topic: "" }))
                             } else {
-                              // For regular subjects, get textbooks as before
-                              setAvailableLanguages([])
-                              setSelectedLanguage("")
-                              const textbooks = userData?.class ? getTextbooks(userData.class, subject) : []
-                              setAvailableTextbooks(textbooks)
-
-                              if (textbooks.length > 0) {
-                                setTestConfig({ ...testConfig, textbook: textbooks[0].title, topic: "" })
-                                setSelectedTextbook(textbooks[0])
-                              } else {
-                                setTestConfig({ ...testConfig, textbook: subject, topic: "" })
-                                setSelectedTextbook(null)
-                              }
+                              setSelectedTextbook(null)
+                              setTestConfig(prev => ({ ...prev, textbook: subject, topic: "" }))
                             }
+
+                            // Reset foreign language specific state if needed
+                            setIsForeignLanguage(subject === "Xarici dil" || subject === "İkinci xarici dil")
                           }}
                           className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
                         >
@@ -300,59 +303,8 @@ export default function Dashboard() {
                         </select>
                       </div>
 
-                      {/* Foreign Language Selection (Always show 4 languages) */}
-                      {isForeignLanguage && selectedSubject && (
-                        <div className="space-y-2">
-                          <label className="text-sm font-medium text-gray-700">Dil seçin</label>
-                          <select
-                            value={selectedLanguage}
-                            onChange={(e) => {
-                              const language = e.target.value;
-                              setSelectedLanguage(language);
-
-                              if (language && userData?.class) {
-                                // Get textbooks matching the selected language and subject
-                                // For "Xarici dil" -> "İngilis dili", we look for textbooks with subject="Xarici dil" and title containing "İngilis dili"
-                                const allTextbooks = getTextbooks(userData.class, selectedSubject);
-                                const languageTextbooks = allTextbooks.filter(t =>
-                                  extractLanguageFromTitle(t.title) === language
-                                );
-
-                                setAvailableTextbooks(languageTextbooks);
-
-                                if (languageTextbooks.length > 0) {
-                                  // Auto-select first textbook if found
-                                  setSelectedTextbook(languageTextbooks[0]);
-                                  setTestConfig({ ...testConfig, textbook: language, topic: "" });
-                                } else {
-                                  // No textbook found for this language+grade
-                                  setSelectedTextbook(null);
-                                  // Still keep the language as "textbook" for topic API lookup (even if it might fail)
-                                  setTestConfig({ ...testConfig, textbook: language, topic: "" });
-                                }
-                              } else {
-                                setAvailableTextbooks([]);
-                                setSelectedTextbook(null);
-                                setTestConfig({ ...testConfig, textbook: "", topic: "" });
-                              }
-                            }}
-                            className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
-                          >
-                            <option value="">Dil seçin</option>
-                            {/* Always show the hardcoded list */}
-                            {FOREIGN_LANGUAGES.map((lang) => (
-                              <option key={lang} value={lang}>
-                                {lang}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
-
-                      {/* Textbook Selection */}
-                      {/* Show if we have textbooks OR if we are in non-foreign mode */}
-                      {/* For foreign mode: only show if a language is selected AND we actually found a textbook */}
-                      {(!isForeignLanguage || (isForeignLanguage && selectedLanguage && availableTextbooks.length > 0)) && availableTextbooks.length > 0 && (
+                      {/* Textbook Selection - Show if at least 1 option EXISTS for the selected subject */}
+                      {selectedSubject && availableTextbooks.length >= 1 && (
                         <div className="space-y-2">
                           <label className="text-sm font-medium text-gray-700">Dərslik</label>
                           <div className="flex gap-2">
@@ -362,14 +314,7 @@ export default function Dashboard() {
                                 const textbook = availableTextbooks.find(t => t.id === e.target.value)
                                 setSelectedTextbook(textbook || null)
                                 if (textbook) {
-                                  // For foreign language, we keep the language name as the primary config identifier if needed, 
-                                  // but usually we might want the Title.
-                                  // The User said: "Select language -> Select Textbook -> Select Topic from Textbook"
-                                  // The API topics usually need the Subject Name or Textbook Name.
-                                  // Let's stick to using the format likely expected by the existing API or state.
-                                  // If isForeignLanguage, we effectively used `language` as the key before.
-                                  // Let's ensure consistency.
-                                  setTestConfig({ ...testConfig, textbook: isForeignLanguage ? selectedLanguage : textbook.title, topic: "" })
+                                  setTestConfig(prev => ({ ...prev, textbook: textbook.title, topic: "" }))
                                 }
                               }}
                               className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
@@ -404,38 +349,28 @@ export default function Dashboard() {
                         </div>
                       )}
 
-                      {/* Topic Dropdown - API-based with groups */}
+                      {/* Topic Selection */}
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-gray-700">Mövzu</label>
+
                         {(() => {
-                          // Determine lookup key for API
-                          const textbookForTopics = isForeignLanguage
-                            ? selectedLanguage  // For foreign languages, key is the language name (e.g. "İngilis dili")
-                            : selectedSubject;  // For regular subjects, key is subject name
-
-                          const topicGroups = textbookForTopics && apiTopics[textbookForTopics]
-                            ? apiTopics[textbookForTopics]
-                            : [];
-
+                          const topicGroups = Object.values(apiTopics).flat();
                           const hasTopics = topicGroups.some(g => g.topics.length > 0);
-
-                          // Disable if:
-                          // 1. Foreign Language mode AND no language selected
-                          // 2. Regular mode AND no subject selected
-                          // 3. No topics found (regardless of selection)
-                          const isDisabled = (isForeignLanguage ? !selectedLanguage : !selectedSubject);
+                          const isDisabled = !selectedSubject || (availableTextbooks.length > 0 && !selectedTextbook);
 
                           return (
                             <select
                               value={testConfig.topic}
-                              onChange={(e) => setTestConfig({ ...testConfig, topic: e.target.value })}
+                              onChange={(e) => setTestConfig(prev => ({ ...prev, topic: e.target.value }))}
                               disabled={isDisabled || !hasTopics}
                               className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white disabled:bg-gray-100 disabled:cursor-not-allowed"
                             >
                               <option value="">
-                                {isDisabled
-                                  ? "Əvvəl əvvəlki xanaları seçin"
-                                  : (!hasTopics ? "Mövzu tapılmadı (Dərslik mövcud deyil)" : "Mövzunu seçin")}
+                                {!selectedSubject
+                                  ? "Əvvəl fənni seçin"
+                                  : (availableTextbooks.length > 0 && !selectedTextbook
+                                    ? "Dərsliyi seçin"
+                                    : (!hasTopics ? "Mövzu tapılmadı (Dərslik mövcud deyil)" : "Mövzunu seçin"))}
                               </option>
                               {topicGroups.map((group, idx) => (
                                 <optgroup key={idx} label={group.chapter}>
@@ -450,6 +385,7 @@ export default function Dashboard() {
                           );
                         })()}
                       </div>
+
 
                       {/* Difficulty */}
                       <div className="space-y-2">

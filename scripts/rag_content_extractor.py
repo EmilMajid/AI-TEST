@@ -42,6 +42,23 @@ class ContentExtractor:
                 for page_num, page in enumerate(pdf.pages, 1):
                     # Text extraction
                     text = page.extract_text()
+                    
+                    # Check if text is valid (not empty, not just CIDs, reasonable length)
+                    is_valid_text = text and len(text.strip()) > 50 and "(cid:" not in text
+                    
+                    if not is_valid_text:
+                        # Fallback to OCR
+                        try:
+                            # Note: Requires poppler and tesseract installed
+                            images = convert_from_path(pdf_path, first_page=page_num, last_page=page_num)
+                            if images:
+                                ocr_text = pytesseract.image_to_string(images[0], lang='aze') # Try Azerbaijani first
+                                if ocr_text and len(ocr_text.strip()) > 10:
+                                    text = ocr_text
+                        except Exception as ocr_e:
+                            # OCR failures are silent fallbacks, we rely on what we have
+                            pass
+
                     if text:
                         text_content.append({
                             "page": page_num,
@@ -77,7 +94,7 @@ class ContentExtractor:
                 "error": str(e)
             }
     
-    def chunk_content(self, content: List[Dict], chunk_size: int = 500) -> List[Dict]:
+    def chunk_content(self, content: List[Dict], subject: str = "Ümumi", chunk_size: int = 500) -> List[Dict]:
         """Məzmunu kiçik hissələrə bölür (chunking)"""
         chunks = []
         current_chunk = []
@@ -90,12 +107,13 @@ class ContentExtractor:
             
             if current_length + len(words) > chunk_size:
                 if current_chunk:
+                    chunk_text = " ".join(current_chunk)
                     chunks.append({
                         "id": chunk_id,
-                        "text": " ".join(current_chunk),
+                        "text": chunk_text,
                         "page": item["page"],
                         "type": "chunk",
-                        "knowledge": extract_triples(" ".join(current_chunk), provider="xai") # KAG Integration
+                        "knowledge": extract_triples(chunk_text, provider="xai", subject_context=subject) # KAG Integration
                     })
                     chunk_id += 1
                     current_chunk = []
@@ -106,12 +124,13 @@ class ContentExtractor:
         
         # Add last chunk
         if current_chunk:
+            chunk_text = " ".join(current_chunk)
             chunks.append({
                 "id": chunk_id,
-                "text": " ".join(current_chunk),
+                "text": chunk_text,
                 "page": item["page"],
                 "type": "chunk",
-                "knowledge": extract_triples(" ".join(current_chunk), provider="xai") # KAG Integration
+                "knowledge": extract_triples(chunk_text, provider="xai", subject_context=subject) # KAG Integration
             })
         
         return chunks
@@ -186,7 +205,7 @@ def process_unified_pipeline():
                         extracted = extractor.extract_pdf(str(pdf_path))
                         # Only proceed if we got content
                         if extracted["content"]:
-                            file_chunks = extractor.chunk_content(extracted["content"])
+                            file_chunks = extractor.chunk_content(extracted["content"], subject=book["subject"])
                             
                             # APPEND chunks to file immediately
                             with open(chunks_jsonl_path, "a", encoding="utf-8") as f:
@@ -200,7 +219,7 @@ def process_unified_pipeline():
                                         "text": chunk["text"],
                                         "page": chunk["page"],
                                         "type": "pdf_page",
-                                        "knowledge": extract_triples(chunk["text"], provider="xai") # KAG Integration
+                                        "knowledge": chunk.get("knowledge") # Already extracted in chunk_content
                                     }
                                     
                                     json.dump(chunk_data, f, ensure_ascii=False)

@@ -24,14 +24,8 @@ export function getAllTextbooks(): Textbook[] {
             if (Array.isArray(book.topics)) {
                 topics = book.topics;
             } else if (typeof book.topics === 'string') {
-                // If it's a string, it might be corrupted data from JSON.
-                // Try to fallback to the static TOPICS list if available for this subject.
-                if (TOPICS[book.subject]) {
-                    topics = TOPICS[book.subject];
-                } else {
-                    // Worst case: try to just make it a single item or empty
-                    topics = [book.topics];
-                }
+                // Split multi-line strings into individual topics
+                topics = book.topics.split('\n').filter(t => t.trim().length > 0);
             }
 
             allBooks.push({
@@ -60,11 +54,7 @@ export function getTextbooksByClass(grade: string): Textbook[] {
         if (Array.isArray(book.topics)) {
             topics = book.topics;
         } else if (typeof book.topics === 'string') {
-            if (TOPICS[book.subject]) {
-                topics = TOPICS[book.subject];
-            } else {
-                topics = [book.topics];
-            }
+            topics = book.topics.split('\n').filter(t => t.trim().length > 0);
         }
 
         return {

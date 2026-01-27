@@ -1,9 +1,6 @@
 // Təhsil Nazirliyinin vahid fənn siyahısı (19 fənn)
-// Təhsil Nazirliyinin vahid fənn siyahısı (19 fənn + Hissələr)
 export const UNIFIED_SUBJECTS = [
     "Azərbaycan dili",
-    "Azərbaycan dili (Hissə 1)",
-    "Azərbaycan dili (Hissə 2)",
     "Ədəbiyyat",
     "Xarici dil",
     "İngilis dili",
@@ -12,8 +9,6 @@ export const UNIFIED_SUBJECTS = [
     "Rus dili",
     "İkinci xarici dil",
     "Riyaziyyat",
-    "Riyaziyyat (Hissə 1)",
-    "Riyaziyyat (Hissə 2)",
     "İnformatika",
     "Azərbaycan tarixi",
     "Ümumi tarix",
@@ -22,8 +17,6 @@ export const UNIFIED_SUBJECTS = [
     "Biologiya",
     "Coğrafiya",
     "Təbiət",
-    "Təbiət (Hissə 1)",
-    "Təbiət (Hissə 2)",
     "Həyat bilgisi",
     "Texnologiya",
     "Təsviri İncəsənət",
@@ -39,8 +32,7 @@ export const subjectsByClass: Record<string, string[]> = {
     "2": ["Azərbaycan dili", "Xarici dil", "Riyaziyyat", "İnformatika", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "3": ["Azərbaycan dili", "Xarici dil", "Riyaziyyat", "İnformatika", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "4": ["Azərbaycan dili", "Xarici dil", "Riyaziyyat", "İnformatika", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
-    // Grade 5: Split Subjects enforced
-    "5": ["Azərbaycan dili (Hissə 1)", "Azərbaycan dili (Hissə 2)", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat (Hissə 1)", "Riyaziyyat (Hissə 2)", "İnformatika", "Azərbaycan tarixi", "Təbiət (Hissə 1)", "Təbiət (Hissə 2)", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
+    "5": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Təbiət", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "6": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Coğrafiya", "Təbiət", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "7": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "8": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
@@ -48,6 +40,7 @@ export const subjectsByClass: Record<string, string[]> = {
     "10": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"],
     "11": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"]
 };
+
 
 // 11-ci sinif ixtisar qrupları
 export const groups = {

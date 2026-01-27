@@ -70,7 +70,16 @@ interface TopicGroup {
 // Load extracted topics from JSON file (for textbooks with empty TOC files)
 let extractedTopicsCache: Record<string, TopicGroup[]> | null = null;
 
+const MOCK_PATTERNS = [/mocked/i, /tam m[əe]tn/i, /d[əe]rslik\s?\(pdf\)/i, /unit\s?1/i, /topic\s?1/i];
+
+function isMockContent(text: string): boolean {
+    if (!text) return true;
+    if (text === "Mövzular") return false; // Allowed as a generic group name
+    return MOCK_PATTERNS.some(p => p.test(text));
+}
+
 function loadExtractedTopics(): Record<string, TopicGroup[]> {
+
     if (extractedTopicsCache) return extractedTopicsCache;
 
     try {
@@ -177,14 +186,15 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
 
                 text = text.replace(/\s+/g, " ").trim()
 
-                // Avoid duplicates
-                if (!grp.topics.find(t => t.title === text)) {
+                // Avoid duplicates and mock content
+                if (!isMockContent(text) && !grp.topics.find(t => t.title === text)) {
                     grp.topics.push({
                         title: text,
                         page: page,
                         path: href
                     })
                 }
+
             }
             return grp
         }
@@ -216,216 +226,100 @@ export async function GET(request: NextRequest) {
     try {
         const { searchParams } = new URL(request.url)
         const classLevel = searchParams.get("class") || "8"
-        const targetSubject = searchParams.get("subject") // Optional: e.g., "Xarici dil" or "İkinci xarici dil"
-        console.log(`[Topics API] Request for class: ${classLevel}, subject: ${targetSubject || 'any'}`)
+        const targetSubject = searchParams.get("subject")
+        const targetBookId = searchParams.get("bookId")
+        console.log(`[Topics API] Request for class: ${classLevel}, subject: ${targetSubject || 'any'}, bookId: ${targetBookId || 'any'}`)
 
-        // Path to textbooks for this class
-        const textbooksPath = path.join(process.cwd(), "public", "textbooks", classLevel)
-        console.log(`[Topics API] Textbooks path: ${textbooksPath}`)
-
-        // Check if directory exists
-        if (!fs.existsSync(textbooksPath)) {
-            console.error(`[Topics API] Directory not found: ${textbooksPath}`)
-            return NextResponse.json(
-                { error: `Bu sinif üçün dərsliklər tapılmadı: ${classLevel}` },
-                { status: 404 }
-            )
-        }
-
-        const topics: Record<string, TopicGroup[]> = {}
-
-        // Read all textbook directories
-        // Actually, we should iterate based on textbooks.json metadata to get the correct mapping and topics
         const textbooksDataPath = path.join(process.cwd(), "data", "textbooks.json");
-        let textbooksMetadata: any[] = [];
-        if (fs.existsSync(textbooksDataPath)) {
-            const allData = JSON.parse(fs.readFileSync(textbooksDataPath, 'utf8'));
-            textbooksMetadata = allData[classLevel] || [];
+        if (!fs.existsSync(textbooksDataPath)) {
+            return NextResponse.json({ error: "Textbooks metadata not found" }, { status: 404 });
         }
 
-        // Helper to parse manual topic string with hierarchy support
+        const allData = JSON.parse(fs.readFileSync(textbooksDataPath, 'utf8'));
+        const textbooksMetadata = allData[classLevel] || [];
+
+        const extractedTopics = loadExtractedTopics();
+
         const parseManualTopics = (topicData: string | string[]): TopicGroup[] => {
             if (!topicData || topicData === 'Mövzular') return [];
-
             const topicString = Array.isArray(topicData) ? topicData.join('\n') : topicData;
-            if (topicString.length < 5) return [];
-
             const lines = topicString.split('\n').map(l => l.trim()).filter(l => l.length > 0);
             const groups: TopicGroup[] = [];
             let currentGroup: TopicGroup | null = null;
-
-            // Regex for headers (Units/Lektions)
-            // Added accented characters (e.g. Разде́л) and more keywords
-            const headerRegex = /^(Lektion|Unit|Étape|Разде́л|Раздел|Section|Chapter|Projektarbeit|Das kannst du jetzt|Training|Grammatik|Lernwortschatz|Ответы|Словарь|Je révise|Ma lecture|Mes actes|Training|Wortliste|Mövzular)/i;
+            const headerRegex = /^(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI)/i;
 
             for (const line of lines) {
-                // Determine if this line is a header
-                // Note: We also consider the first line a header if no group exists
-                const isHeader = headerRegex.test(line);
-
-                if (isHeader || !currentGroup) {
-                    currentGroup = {
-                        chapter: line,
-                        topics: []
-                    };
+                if (headerRegex.test(line)) {
+                    currentGroup = { chapter: line, topics: [] };
                     groups.push(currentGroup);
                 } else {
-                    currentGroup.topics.push({
-                        title: line,
-                        page: currentGroup.topics.length + 1,
-                        path: ""
-                    });
+                    if (!currentGroup) {
+                        currentGroup = { chapter: "Mövzular", topics: [] };
+                        groups.push(currentGroup);
+                    }
+                    currentGroup.topics.push({ title: line, page: currentGroup.topics.length + 1, path: "" });
                 }
             }
-
-            // Fallback: If no topics were added to groups (e.g. all lines were headers), 
-            // convert those groups to topics under a generic "Mövzular" group
-            if (groups.every(g => g.topics.length === 0)) {
-                return [{
-                    chapter: "Mövzular",
-                    topics: groups.map((g, idx) => ({
-                        title: g.chapter,
-                        page: idx + 1,
-                        path: ""
-                    }))
-                }];
-            }
-
-            return groups.filter(g => g.topics.length > 0 || headerRegex.test(g.chapter));
+            return groups;
         };
 
-        const subjects = fs.readdirSync(textbooksPath)
-        console.log(`[Topics API] Found ${subjects.length} subjects directory`)
+        const results: Record<string, TopicGroup[]> = {};
 
-        // Create a map to cache metadata by ID or Path
-        const metadataMap = new Map();
-        textbooksMetadata.forEach(book => {
-            // Normalized ID or directory matching
-            // book.contentPath is like "public/textbooks/5/azerbaycan-dili-hisse-1"
-            const dirName = path.basename(book.contentPath || "");
-            if (dirName) metadataMap.set(dirName, book);
-        });
+        for (const book of textbooksMetadata) {
+            const bookId = book.id;
+            const bookSubject = book.subject || book.title;
+            const dirName = book.contentPath ? path.basename(book.contentPath) : "";
+            const bookDisplayName = (dirName && SUBJECT_MAPPING[dirName]) ? SUBJECT_MAPPING[dirName] : bookSubject;
+            const normalizedDisplayName = bookDisplayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
 
-        for (const subjectDir of subjects) {
-            const subjectPath = path.join(textbooksPath, subjectDir)
+            // FILTER logic: support both bookId and subject
+            const matches = targetBookId
+                ? bookId === targetBookId
+                : (!targetSubject || (
+                    bookSubject === targetSubject ||
+                    normalizedDisplayName === targetSubject ||
+                    (targetSubject === "Xarici dil" && normalizedDisplayName.toLowerCase().includes("dili") && !normalizedDisplayName.includes("Azərbaycan")) ||
+                    (targetSubject.includes("dil") && normalizedDisplayName.includes("dil") && targetSubject !== "Azərbaycan dili")
+                ));
 
-            // Skip if not a directory
-            if (!fs.statSync(subjectPath).isDirectory()) continue
+            if (!matches) continue;
 
-            // Get the display name
-            let displayName = SUBJECT_MAPPING[subjectDir] || subjectDir;
 
-            // Normalize Display Name: remove "(Hissə X)" to merge them
-            const simplifiedName = displayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
-            displayName = simplifiedName;
-
-            // Get metadata for this directory
-            const bookMetadata = metadataMap.get(subjectDir);
-
-            // FILTER: Flexible matching for subjects
-            const metadataSubject = bookMetadata?.subject || "";
-            const matchesSubject = !targetSubject || (
-                metadataSubject === targetSubject ||
-                metadataSubject.includes(targetSubject) ||
-                targetSubject.includes(metadataSubject) ||
-                displayName === targetSubject ||
-                (targetSubject === "Xarici dil" && displayName.includes("dili") && !displayName.includes("Azərbaycan")) ||
-                (targetSubject.includes("dil") && metadataSubject.includes("dil")) // Help match "Alman dili" vs "Xarici dil"
-            );
-
-            if (!matchesSubject) {
-                console.log(`[Topics API] Skipping ${subjectDir} (Metadata: ${metadataSubject}, Display: ${displayName}) as it doesn't match ${targetSubject}`);
-                continue;
+            let bookTopics: TopicGroup[] = [];
+            if (extractedTopics[bookId] && extractedTopics[bookId].length > 0) {
+                bookTopics = extractedTopics[bookId];
+            } else if (dirName) {
+                const folderKey = `${dirName}-${classLevel}`;
+                if (extractedTopics[folderKey]) bookTopics = extractedTopics[folderKey];
             }
 
-            let strategies = [
-                // Strategy 0: Try manual/extracted topics (Priority for high-quality manual data)
-                () => {
-                    const extractedTopics = loadExtractedTopics();
-
-                    // HIGHER PRIORITY: Try with class suffix first (to avoid mapping Grade 8 topics to Grade 6)
-                    const classKey = `${subjectDir}-${classLevel}`;
-                    if (extractedTopics[classKey] && extractedTopics[classKey].length > 0) return extractedTopics[classKey];
-
-                    // Fallback for multi-part books (e.g., tebiet-hisse-1 -> tebiet-6-h1)
-                    if (subjectDir.includes('hisse-')) {
-                        const hissMatch = subjectDir.match(/(.*)-hisse-(\d+)/);
-                        if (hissMatch) {
-                            const mappedKey = `${hissMatch[1]}-${classLevel}-h${hissMatch[2]}`;
-                            if (extractedTopics[mappedKey] && extractedTopics[mappedKey].length > 0) return extractedTopics[mappedKey];
-                        }
-                    }
-
-                    // LOWER PRIORITY: Try exact match (ONLY if we are in Grade 8, as generic keys usually target Grade 8)
-                    if (classLevel === "8" && extractedTopics[subjectDir] && extractedTopics[subjectDir].length > 0) {
-                        return extractedTopics[subjectDir];
-                    }
-
-                    return [];
-                },
-                // Strategy 1: Check textbooks.json "topics" field (Priority for Manual Entries)
-                () => {
-                    if (bookMetadata && bookMetadata.topics && bookMetadata.topics !== "Mövzular") {
-                        // If it's an array, it's valid if it has items
-                        if (Array.isArray(bookMetadata.topics) && bookMetadata.topics.length > 0) {
-                            // Check if first item looks like garbage (Strategy 1 fallback should be weak if it looks like strategy 2 output)
-                            const firstTopic = typeof bookMetadata.topics[0] === 'string' ? bookMetadata.topics[0] : "";
-                            if (firstTopic.includes('§') || firstTopic.includes('°')) return [];
-
-                            return parseManualTopics(bookMetadata.topics);
-                        }
-                        // If it's a string, it should be long enough to be real topics
-                        if (typeof bookMetadata.topics === 'string' && bookMetadata.topics.length > 30) {
-                            if (bookMetadata.topics.includes('§') || bookMetadata.topics.includes('°')) return [];
-                            return parseManualTopics(bookMetadata.topics);
-                        }
-                    }
-                    return [];
-                },
-                // Strategy 2: Try reading toc.xhtml (OEBPS/toc.xhtml or toc.xhtml)
-                () => {
-                    let tPath = path.join(subjectPath, "OEBPS", "toc.xhtml")
-                    if (!fs.existsSync(tPath)) tPath = path.join(subjectPath, "toc.xhtml") // Try root as fallback
-
-                    if (fs.existsSync(tPath)) {
-                        return extractTopicsFromTOC(tPath);
-                    }
-                    return [];
-                }
-            ];
-
-            let foundTopics: TopicGroup[] = [];
-
-            for (const strategy of strategies) {
-                foundTopics = strategy();
-                if (foundTopics.length > 0) break;
+            if (bookTopics.length === 0 && book.topics && book.topics !== "Mövzular") {
+                bookTopics = parseManualTopics(book.topics);
             }
 
-            if (foundTopics.length > 0) {
-                // Merge logic: If key exists, append topics
-                if (topics[displayName]) {
-                    // We merge topics. 
-                    // Ideally we should merge chapters.
-                    // But strictly appending groups is easiest.
-                    topics[displayName] = [...topics[displayName], ...foundTopics];
-                } else {
-                    topics[displayName] = foundTopics;
-                }
+            if (bookTopics.length === 0 && book.contentPath) {
+                const subjectPath = path.join(process.cwd(), book.contentPath);
+                let tPath = path.join(subjectPath, "OEBPS", "toc.xhtml");
+                if (!fs.existsSync(tPath)) tPath = path.join(subjectPath, "toc.xhtml");
+                if (fs.existsSync(tPath)) bookTopics = extractTopicsFromTOC(tPath);
+            }
 
-                const totalTopics = foundTopics.reduce((sum, g) => sum + g.topics.length, 0);
-                console.log(`✓ ${displayName}: ${foundTopics.length} chapters, ${totalTopics} topics`);
-            } else {
-                console.log(`⚠ ${displayName}: No topics found (checked TOC and manual records)`);
+            const cleanGroups = bookTopics
+                .filter(g => !isMockContent(g.chapter))
+                .map(g => ({ ...g, topics: g.topics.filter(t => !isMockContent(t.title)) }))
+                .filter(g => g.topics.length > 0);
+
+            if (cleanGroups.length > 0) {
+                results[normalizedDisplayName] = results[normalizedDisplayName]
+                    ? [...results[normalizedDisplayName], ...cleanGroups]
+                    : cleanGroups;
             }
         }
 
-        console.log(`[Topics API] Total subjects with topics: ${Object.keys(topics).length}`)
-        return NextResponse.json({ success: true, class: classLevel, topics })
+        return NextResponse.json({ success: true, class: classLevel, topics: results })
     } catch (error: any) {
         console.error("[Topics API] Error:", error)
-        return NextResponse.json(
-            { success: false, error: error.message },
-            { status: 500 }
-        )
+        return NextResponse.json({ success: false, error: error.message }, { status: 500 })
     }
 }
+

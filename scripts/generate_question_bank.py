@@ -1,3 +1,5 @@
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 import json
 import os
 from pathlib import Path
@@ -88,16 +90,9 @@ def generate_question_bank():
         response = generate_text_with_failover(current_prompt, provider="gemini")
         
         if not response:
-            # Mock Data fallback if LLM failure (so the user sees something)
-            print("  -> AI failed (No Keys?), using Mock Question.")
-            questions = [
-                {
-                    "question": f"Sual {data['source']} səhifə {data['page']} haqqındadır?",
-                    "options": ["A", "B", "C", "D"],
-                    "correctAnswer": 0,
-                    "explanation": "Bu avtomatik yaradılmış mock sualdır."
-                }
-            ]
+            # Skip if LLM fails - no mock data
+            print("  -> AI failed, skipping this chunk.")
+            questions = []
         else:
             # Parse JSON response
             try:

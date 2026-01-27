@@ -8075,5 +8075,4131 @@
         }
       ]
     }
+  ],
+  "informatika-6": [
+    {
+      "chapter": "KOMPÜTER",
+      "topics": [
+        {
+          "title": "Kompüter necə işləyir",
+          "page": 8
+        },
+        {
+          "title": "İnformasiya harada saxlanılır",
+          "page": 11
+        },
+        {
+          "title": "Ədədi informasiya necə kodlaşdırılır",
+          "page": 14
+        },
+        {
+          "title": "İnformasiya nə qədər yer tutur",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "chapter": "PROQRAM TƏMİNATI",
+      "topics": [
+        {
+          "title": "Proqramı başlatmağın bir neçə üsulu",
+          "page": 22
+        },
+        {
+          "title": "Şəklin kompüterdə saxlanması və çapı",
+          "page": 24
+        },
+        {
+          "title": "Mətnin görünüşünün yaxşılaşdırılması",
+          "page": 26
+        },
+        {
+          "title": "Abzasın formatlanması",
+          "page": 29
+        },
+        {
+          "title": "Elektron təqdimatlar",
+          "page": 32
+        },
+        {
+          "title": "Slaydlarla iş",
+          "page": 35
+        },
+        {
+          "title": "Obyektin informasiya modeli",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "chapter": "ALQORİTM",
+      "topics": [
+        {
+          "title": "Alqoritmin xassələri",
+          "page": 42
+        },
+        {
+          "title": "Alqoritmin növləri",
+          "page": 45
+        },
+        {
+          "title": "Dövri alqoritmlər",
+          "page": 48
+        },
+        {
+          "title": "Əyləncəli məsələlər",
+          "page": 51
+        }
+      ]
+    }
+  ],
+  "informatika-5": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "1. İNFORMASİYA",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "1.1. İnformasiya nədir",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "1.2. İnformasiyanın kodlaşdırılması",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "1.3. İnformasiya modeli",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "1.4. İnformasiyanı ölçmək olarmı?",
+          "page": 1,
+          "path": "units/unit-1/page17.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici sual və tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "2. KOMPÜTER",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "2.1. Fərdi kompüterlər",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "2.2. Kompüter necə işləyir",
+          "page": 1,
+          "path": "units/unit-1/page25.xhtml"
+        },
+        {
+          "title": "2.3. İş masası",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "2.4. Menyu",
+          "page": 1,
+          "path": "units/unit-1/page31.xhtml"
+        },
+        {
+          "title": "2.5. Fayllar və qovluqlar",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "2.6. Pəncərə",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "3. TƏTBİQİ PROQRAMLAR",
+          "page": 1,
+          "path": "units/unit-1/page41.xhtml"
+        },
+        {
+          "title": "3.1. Kompüterdə şəkil çəkirəm",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "3.2. Şəklin fraqmenti ilə iş",
+          "page": 1,
+          "path": "units/unit-1/page45.xhtml"
+        },
+        {
+          "title": "3.3. Fraqmentin əyilməsi və döndərilməsi",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "3.4. Mətn redaktoru",
+          "page": 1,
+          "path": "units/unit-1/page51.xhtml"
+        },
+        {
+          "title": "3.5. Şəkilli mətnlər",
+          "page": 1,
+          "path": "units/unit-1/page54.xhtml"
+        },
+        {
+          "title": "3.6. Mətn redaktorunda şəkli necə çəkmək olar",
+          "page": 1,
+          "path": "units/unit-1/page57.xhtml"
+        },
+        {
+          "title": "4. ALQORİTM VƏ PROQRAM",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "4.1. Alqoritm",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "4.2. Alqoritmi necə təqdim etmək olar",
+          "page": 1,
+          "path": "units/unit-1/page65.xhtml"
+        },
+        {
+          "title": "4.3. Əyləncəli məsələlər",
+          "page": 1,
+          "path": "units/unit-1/page69.xhtml"
+        },
+        {
+          "title": "4.4. Proqram nədir",
+          "page": 1,
+          "path": "units/unit-1/page73.xhtml"
+        },
+        {
+          "title": "4.5. Bağa işə başlayır",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "4.6. Bağa sadə fiqurlar çəkir",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "5. İNTERNET",
+          "page": 1,
+          "path": "units/unit-1/page83.xhtml"
+        },
+        {
+          "title": "5.1. İnformasiya resursları",
+          "page": 1,
+          "path": "units/unit-1/page84.xhtml"
+        },
+        {
+          "title": "5.2. İnternet",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "5.3. Dünya hörümçək toru",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "5.4. İnternetdə informasiyanın axtarışı",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        }
+      ]
+    }
+  ],
+  "edebiyyat-5": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Bədii ədəbiyyat söz sənətidir",
+          "page": 1,
+          "path": "units/unit-1/page9.xhtml"
+        },
+        {
+          "title": "1. ŞİFAHİ XALQ ƏDƏBİYYATI İNCİLƏRİ",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "Ana maral (əfsanə)",
+          "page": 1,
+          "path": "units/unit-1/page12.xhtml"
+        },
+        {
+          "title": "Xalq öz vətənini necə tapdı (Şimali Amerika əfsanəsi)",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "Yetim İbrahimin nağılı",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "Üç qardaş (özbək nağılı)",
+          "page": 1,
+          "path": "units/unit-1/page33.xhtml"
+        },
+        {
+          "title": "2. YURD SEVGİSİ, ANA MƏHƏBBƏTİ",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "Əhməd Cavad. Azərbaycan! Azərbaycan!",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "Əli Tudə. Yaşayanlar görəcəkdir",
+          "page": 1,
+          "path": "units/unit-1/page49.xhtml"
+        },
+        {
+          "title": "Hüseyn Arif. Analar",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "3. MƏNƏVİ DƏYƏRLƏR, HƏMİŞƏYAŞAR HİKMƏTLƏR",
+          "page": 1,
+          "path": "units/unit-1/page59.xhtml"
+        },
+        {
+          "title": "Ənvər Əlibəyli. İlan və Qurbağa",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "Cek London. Kiş haqqında hekayət",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "4. MÜHARİBƏ VƏ İNSAN HAQQI",
+          "page": 1,
+          "path": "units/unit-1/page77.xhtml"
+        },
+        {
+          "title": "Xəlil Rza Ulutürk. Oğul həsrəti",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        },
+        {
+          "title": "Maqsud İbrahimbəyov. Püstə ağacı",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "Elçin Hüseynbəyli. Firuzə qaşlı xəncər",
+          "page": 1,
+          "path": "units/unit-1/page89.xhtml"
+        },
+        {
+          "title": "5. UŞAQ DÜNYASI, UŞAQ TALEYİ",
+          "page": 1,
+          "path": "units/unit-1/page101.xhtml"
+        },
+        {
+          "title": "Əhməd Cəmil. Can nənə, bir nağıl de",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "Mark Tven. Fərasətli oğlan",
+          "page": 1,
+          "path": "units/unit-1/page106.xhtml"
+        },
+        {
+          "title": "6. ƏMƏYƏ MƏHƏBBƏT, ZƏHMƏTƏ ÇAĞIRIŞ",
+          "page": 1,
+          "path": "units/unit-1/page115.xhtml"
+        },
+        {
+          "title": "Nizami Gəncəvi. Kərpickəsən kişinin dastanı",
+          "page": 1,
+          "path": "units/unit-1/page116.xhtml"
+        },
+        {
+          "title": "Süleyman Rəhimov. Qara torpaq və sarı qızıl",
+          "page": 1,
+          "path": "units/unit-1/page120.xhtml"
+        },
+        {
+          "title": "7. TƏBİƏTİN GÖZƏLLİYİ, TƏBİƏTƏ QAYĞI",
+          "page": 1,
+          "path": "units/unit-1/page129.xhtml"
+        },
+        {
+          "title": "Abdulla Şaiq. Köç",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "Səməd Vurğun. Çinarın şikayəti",
+          "page": 1,
+          "path": "units/unit-1/page141.xhtml"
+        },
+        {
+          "title": "Fikrət Qoca. Şuşa",
+          "page": 1,
+          "path": "units/unit-1/page145.xhtml"
+        },
+        {
+          "title": "Layihələr",
+          "page": 1,
+          "path": "units/unit-1/page149.xhtml"
+        },
+        {
+          "title": "İfadəli oxuda istifadə edilən şərti işarələr",
+          "page": 1,
+          "path": "units/unit-1/page199.xhtml"
+        },
+        {
+          "title": "Lüğət",
+          "page": 1,
+          "path": "units/unit-1/page200.xhtml"
+        },
+        {
+          "title": "Dərslikdəki bəzi terminlərin izahı",
+          "page": 1,
+          "path": "units/unit-1/page206.xhtml"
+        },
+        {
+          "title": "Oxumağı məsləhət görürük",
+          "page": 1,
+          "path": "units/unit-1/page207.xhtml"
+        }
+      ]
+    }
+  ],
+  "azerbaycan-dili": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "I BÖLMƏ. BİLİK XƏZİNƏDİR",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "1. Tətildən sonra",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "2. Qori seminariyasında Azərbaycan şöbəsi necə açıldı",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "3. Yaxşılıq itmir",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "4. Ana dili",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "5. Mədinə xanım Qiyasbəyli",
+          "page": 1,
+          "path": "units/unit-1/page26.xhtml"
+        },
+        {
+          "title": "6. Mücrü",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "7. Şuşanın körpə qartalı",
+          "page": 1,
+          "path": "units/unit-1/page33.xhtml"
+        },
+        {
+          "title": "II BÖLMƏ. TARİXİN DAŞ YADDAŞI",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "1. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "2. Nə gözəl səslənir Şuşalı vətən",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "3. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "4. Muğan",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "5. Gülüstan",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "6. Zivər bəy Əhmədbəyov",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "III BÖLMƏ. MİLLİ-MƏNƏVİ DƏYƏRLƏRİMİZ",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "1. İbrət dərsi",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "2. Duyğular adası",
+          "page": 1,
+          "path": "units/unit-1/page67.xhtml"
+        },
+        {
+          "title": "3. Səhəng içində nə varsa, onu sızdırar...",
+          "page": 1,
+          "path": "units/unit-1/page70.xhtml"
+        },
+        {
+          "title": "4. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "5. Zəhər",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        },
+        {
+          "title": "6. Qaranquşların ömrü 6 aydır...",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "7. Həmrəyliyimiz əbədidir",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "8. İnanılmaz tarixi fakt",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "9. Sədaqət",
+          "page": 1,
+          "path": "units/unit-1/page91.xhtml"
+        },
+        {
+          "title": "10. Hekayət",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "11. Tariximizin şanlı səhifəsi",
+          "page": 1,
+          "path": "units/unit-1/page98.xhtml"
+        },
+        {
+          "title": "12. Qırxıncı fəndi bu günə saxlamışdım",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "13. Qədim türklərdə tərbiyə",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "14. Yolun sonu",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "15. Nar dənəsi",
+          "page": 1,
+          "path": "units/unit-1/page108.xhtml"
+        },
+        {
+          "title": "IV BÖLMƏ. ŞƏXSİYYƏTLƏR",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "1. Azərbaycan teatrı",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "2. Hüseynqulu Sarabskinin xatirələri",
+          "page": 1,
+          "path": "units/unit-1/page114.xhtml"
+        },
+        {
+          "title": "3. Vaqif obrazından başlanan səhnə uğuru",
+          "page": 1,
+          "path": "units/unit-1/page118.xhtml"
+        },
+        {
+          "title": "4. İlk aktrisamız kimdir?",
+          "page": 1,
+          "path": "units/unit-1/page122.xhtml"
+        },
+        {
+          "title": "5. Evrika",
+          "page": 1,
+          "path": "units/unit-1/page126.xhtml"
+        },
+        {
+          "title": "6. Oqtay Eloğlu",
+          "page": 1,
+          "path": "units/unit-1/page129.xhtml"
+        },
+        {
+          "title": "V BÖLMƏ. MƏTBUAT: DÜNƏN VƏ BU GÜN",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "1. \"Günün hadisələri\"",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "2. Əhvalpürsanlıq",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "3. \"Molla Nəsrəddin\"ə gedən yol",
+          "page": 1,
+          "path": "units/unit-1/page142.xhtml"
+        },
+        {
+          "title": "4. Yalançı \"Xortdan\"",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "5. İlk redaktor. O kim imiş?",
+          "page": 1,
+          "path": "units/unit-1/page149.xhtml"
+        },
+        {
+          "title": "VI BÖLMƏ. SƏNƏT DÜNYASINA SƏYAHƏT",
+          "page": 1,
+          "path": "units/unit-1/page152.xhtml"
+        },
+        {
+          "title": "1. Şəxsiyyətlər",
+          "page": 1,
+          "path": "units/unit-1/page152.xhtml"
+        },
+        {
+          "title": "2. Hacı Zeynalabdin Şirvani",
+          "page": 1,
+          "path": "units/unit-1/page157.xhtml"
+        },
+        {
+          "title": "3. Mahmud Kaşğarlı",
+          "page": 1,
+          "path": "units/unit-1/page160.xhtml"
+        },
+        {
+          "title": "4. Qurban Səidin gizli qalmış ömrü",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "5. Fərhəng Hüseynov",
+          "page": 1,
+          "path": "units/unit-1/page167.xhtml"
+        }
+      ]
+    }
+  ],
+  "edebiyyat": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Qədim və zəngin ədəbiyyatımız",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "QƏDİM DÖVR AZƏRBAYCAN ƏDƏBİYYATI",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "Qazan bəyin oğlu Uruz bəyin dustaq olduğu boy (“Kitabi-Dədə Qorqud”dastanında)",
+          "page": 1,
+          "path": "units/unit-1/page12.xhtml"
+        },
+        {
+          "title": "İNTİBAH DÖVRÜ AZƏRBAYCAN ƏDƏBİYYATI",
+          "page": 1,
+          "path": "units/unit-1/page26.xhtml"
+        },
+        {
+          "title": "Xaqani Şirvani. Gənclərə nəsihət",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "Nizami Gəncəvi. Sultan Səncər və qarı (“Sirlər xəzinəsi”poemasından)",
+          "page": 1,
+          "path": "units/unit-1/page31.xhtml"
+        },
+        {
+          "title": "Qazılıq Qoca oğlu Yeynək boyu (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "ORTA ƏSRLƏR AZƏRBAYCAN ƏDƏBİYYATI",
+          "page": 1,
+          "path": "units/unit-1/page39.xhtml"
+        },
+        {
+          "title": "İmadəddin Nəsimi. Ağrımaz",
+          "page": 1,
+          "path": "units/unit-1/page40.xhtml"
+        },
+        {
+          "title": "Şah İlsmayıl Xətayi. Bahariyyə(“Dəhnamə”poemasından)",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "Məhəmməd Füzuli. Söz",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "Qurbani. Bənövşəni (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "ERKƏN YENİ DÖVR AZƏRBAYCAN ƏDƏBİYYATI",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "Koroğlu ilə Bolu bəy (“Koroğlu” dastanından)",
+          "page": 1,
+          "path": "units/unit-1/page54.xhtml"
+        },
+        {
+          "title": "Molla Pənah Vaqif. Hayıf ki, yoxdur...",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "Saib Təbrizi. Söz (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page75.xhtml"
+        },
+        {
+          "title": "AZƏRBAYCAN ƏDƏBİYYATINDA MAARİFÇİ REALİZM DÖVRÜ",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "Qasım bəy Zakir. Durnalar",
+          "page": 1,
+          "path": "units/unit-1/page77.xhtml"
+        },
+        {
+          "title": "Aşıq Ələsgər. Dağlar",
+          "page": 1,
+          "path": "units/unit-1/page80.xhtml"
+        },
+        {
+          "title": "Seyid Əzim Şirvani. Qafqaz müsəlmanlarına xitab",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "Aşıq Alı. Bənzərsən (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "TƏNQİDİ REALİZM VƏ ROMANTİZM DÖVRÜ",
+          "page": 1,
+          "path": "units/unit-1/page91.xhtml"
+        },
+        {
+          "title": "Cəlil Məmmədquluzadə. Qurbanəli bəy",
+          "page": 1,
+          "path": "units/unit-1/page92.xhtml"
+        },
+        {
+          "title": "Mirzə Ələkbər Sabir. Əkinçi",
+          "page": 1,
+          "path": "units/unit-1/page109.xhtml"
+        },
+        {
+          "title": "Əbdürrəhim bəy Haqverdiyev. Bomba",
+          "page": 1,
+          "path": "units/unit-1/page114.xhtml"
+        },
+        {
+          "title": "Abdulla Şaiq. Məktub yetişmədi (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page121.xhtml"
+        },
+        {
+          "title": "Məhəmməd Hadi. Türkün nəğməsi",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "Hüseyn Cavid. Ana",
+          "page": 1,
+          "path": "units/unit-1/page126.xhtml"
+        },
+        {
+          "title": "Məhmət Akif Ərsoy. İstiqlal marşı (dünya ədəbiyyatından seçmə)",
+          "page": 1,
+          "path": "units/unit-1/page154.xhtml"
+        },
+        {
+          "title": "Yusif Vəzir Çəmənzəminli. Zeynal bəy (qiymətləndirmə materialı)",
+          "page": 1,
+          "path": "units/unit-1/page159.xhtml"
+        },
+        {
+          "title": "İnformasiya xarakterli mətni-məruzəni necə yazmalı?",
+          "page": 1,
+          "path": "units/unit-1/page162.xhtml"
+        },
+        {
+          "title": "Layihələr üzrə iş",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "Sinifdənxaric oxu materialları",
+          "page": 1,
+          "path": "units/unit-1/page165.xhtml"
+        },
+        {
+          "title": "İfadəli oxuda istifadə edilən şərti işarələr",
+          "page": 1,
+          "path": "units/unit-1/page187.xhtml"
+        },
+        {
+          "title": "Lüğət",
+          "page": 1,
+          "path": "units/unit-1/page188.xhtml"
+        },
+        {
+          "title": "Qısa ədəbiyyatşünaslıq terminləri lüğəti",
+          "page": 1,
+          "path": "units/unit-1/page200.xhtml"
+        },
+        {
+          "title": "Mövzular üzrə internet mənbələri",
+          "page": 1,
+          "path": "units/unit-1/page205.xhtml"
+        },
+        {
+          "title": "Oxumağı məsləhət görürük",
+          "page": 1,
+          "path": "units/unit-1/page207.xhtml"
+        }
+      ]
+    }
+  ],
+  "umumi-tarix": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Şərq ölkələri XVII-XVIII yüzilliklərdə",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "1. Qızılbaş dövlətləri",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "2. Böyük Moğol dövləti",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "3. Çin",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "4. Osmanlı imperiyası",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "5. Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "6. Qafqaz",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "7. Mədəniyyət",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "Avropa və Amerika XVII-XVIII yüzilliklərdə",
+          "page": 1,
+          "path": "units/unit-1/page77.xhtml"
+        },
+        {
+          "title": "8. İngiltərə",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        },
+        {
+          "title": "9. Şimali Amerika",
+          "page": 1,
+          "path": "units/unit-1/page92.xhtml"
+        },
+        {
+          "title": "10. Fransa",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "11. Rusiya",
+          "page": 1,
+          "path": "units/unit-1/page118.xhtml"
+        },
+        {
+          "title": "12. Mədəniyyət",
+          "page": 1,
+          "path": "units/unit-1/page128.xhtml"
+        }
+      ]
+    }
+  ],
+  "riyaziyyat": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "1 Kvadrat kök. Həqiqi ədədlər",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "Kvadrat köklər. Hesabi kvadrat kök",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "Həqiqi ədədlər",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "Hesabi kvadrat kökün xassələri",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "Hesabi kvadrat kökün xassələrinin tətbiqi",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "Tam üstlü qüvvət",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "2 Pifaqor teoremi",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Pifaqor teoremi",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Pifaqor teoreminin tətbiqi",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "3 Kvadrat tənliklər",
+          "page": 1,
+          "path": "units/unit-1/page46.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliklər",
+          "page": 1,
+          "path": "units/unit-1/page47.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliklərin vuruqlara ayırma üsulu ilə həlli",
+          "page": 1,
+          "path": "units/unit-1/page50.xhtml"
+        },
+        {
+          "title": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli",
+          "page": 1,
+          "path": "units/unit-1/page55.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliyin qrafik üsulla həlli",
+          "page": 1,
+          "path": "units/unit-1/page57.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliklərin həlli.Kvadrat tənliyin kökləri düsturu",
+          "page": 1,
+          "path": "units/unit-1/page59.xhtml"
+        },
+        {
+          "title": "Viyet teoremi",
+          "page": 1,
+          "path": "units/unit-1/page63.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliyə gətirilən tənliklər",
+          "page": 1,
+          "path": "units/unit-1/page66.xhtml"
+        },
+        {
+          "title": "Kvadrat tənliklərin tətbiqi ilə məsələ həlli",
+          "page": 1,
+          "path": "units/unit-1/page67.xhtml"
+        },
+        {
+          "title": "4 Dördbucaqlılar",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "Dördbucaqlılar",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "Dördbucaqlının daxili və xarici bucaqları",
+          "page": 1,
+          "path": "units/unit-1/page72.xhtml"
+        },
+        {
+          "title": "Paraleloqram",
+          "page": 1,
+          "path": "units/unit-1/page75.xhtml"
+        },
+        {
+          "title": "Paraleloqramın növləri",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "Paraleloqramın xassələrinin tətbiqi",
+          "page": 1,
+          "path": "units/unit-1/page83.xhtml"
+        },
+        {
+          "title": "Üçbucağın orta xətti",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "Trapesiya",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "Trapesiyanın orta xətti",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "5 Rasional ifadələr",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        },
+        {
+          "title": "Rasional ifadələr",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        },
+        {
+          "title": "Rasional ifadələrin sadələşdirilməsi",
+          "page": 1,
+          "path": "units/unit-1/page95.xhtml"
+        },
+        {
+          "title": "Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "Rasional ifadələrin toplanması və çıxılması",
+          "page": 1,
+          "path": "units/unit-1/page103.xhtml"
+        },
+        {
+          "title": "Rasional ifadələr üzərində əməllər",
+          "page": 1,
+          "path": "units/unit-1/page109.xhtml"
+        },
+        {
+          "title": "y = k / x funksiyası və onun qrafiki",
+          "page": 1,
+          "path": "units/unit-1/page111.xhtml"
+        },
+        {
+          "title": "6 Fiqurların sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page116.xhtml"
+        },
+        {
+          "title": "Sahə aksiomları",
+          "page": 1,
+          "path": "units/unit-1/page116.xhtml"
+        },
+        {
+          "title": "Paraleloqramın sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page117.xhtml"
+        },
+        {
+          "title": "Üçbucağın sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page120.xhtml"
+        },
+        {
+          "title": "Trapesiyanın sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "Rombun sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page126.xhtml"
+        },
+        {
+          "title": "7 Rasional tənliklər",
+          "page": 1,
+          "path": "units/unit-1/page131.xhtml"
+        },
+        {
+          "title": "Rasional tənliklər",
+          "page": 1,
+          "path": "units/unit-1/page131.xhtml"
+        },
+        {
+          "title": "Rasional tənliklərin tətbiqi ilə məsələ həlli",
+          "page": 1,
+          "path": "units/unit-1/page133.xhtml"
+        },
+        {
+          "title": "8 Fiqurların oxşarlığı",
+          "page": 1,
+          "path": "units/unit-1/page139.xhtml"
+        },
+        {
+          "title": "Nisbət, tənasüb, miqyas",
+          "page": 1,
+          "path": "units/unit-1/page139.xhtml"
+        },
+        {
+          "title": "Mütənasib parçalar",
+          "page": 1,
+          "path": "units/unit-1/page142.xhtml"
+        },
+        {
+          "title": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "Üçbucaqların oxşarlıq əlamətləri",
+          "page": 1,
+          "path": "units/unit-1/page148.xhtml"
+        },
+        {
+          "title": "Düzbucaqlı üçbucaqların oxşarlığı",
+          "page": 1,
+          "path": "units/unit-1/page153.xhtml"
+        },
+        {
+          "title": "Üçbucaqların oxşarlığının tətbiqi.",
+          "page": 1,
+          "path": "units/unit-1/page156.xhtml"
+        },
+        {
+          "title": "Oxşar fiqurların sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page159.xhtml"
+        },
+        {
+          "title": "9 Bərabərsizliklər",
+          "page": 1,
+          "path": "units/unit-1/page163.xhtml"
+        },
+        {
+          "title": "Bərabərsizliklər",
+          "page": 1,
+          "path": "units/unit-1/page163.xhtml"
+        },
+        {
+          "title": "Bərabərsizliklərin xassələri",
+          "page": 1,
+          "path": "units/unit-1/page166.xhtml"
+        },
+        {
+          "title": "Bərabərsizliklərin toplanması və vurulması",
+          "page": 1,
+          "path": "units/unit-1/page171.xhtml"
+        },
+        {
+          "title": "Ədədi aralıqlar",
+          "page": 1,
+          "path": "units/unit-1/page173.xhtml"
+        },
+        {
+          "title": "Birdəyişənli xətti bərabərsizliklərin həlli",
+          "page": 1,
+          "path": "units/unit-1/page175.xhtml"
+        },
+        {
+          "title": "İkiqat bərabərsizliklərin həlli",
+          "page": 1,
+          "path": "units/unit-1/page179.xhtml"
+        },
+        {
+          "title": "Dəyişəni modul işarəsi daxilində olan sadə bərabərsizliklər",
+          "page": 1,
+          "path": "units/unit-1/page182.xhtml"
+        },
+        {
+          "title": "10 Triqonometrik nisbətlər. Koordinatlar üsulu. Fiqurların çevrilməsi",
+          "page": 1,
+          "path": "units/unit-1/page187.xhtml"
+        },
+        {
+          "title": "Düzbucaqlı üçbucaq və triqonometrik nisbətlər",
+          "page": 1,
+          "path": "units/unit-1/page187.xhtml"
+        },
+        {
+          "title": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+          "page": 1,
+          "path": "units/unit-1/page190.xhtml"
+        },
+        {
+          "title": "Triqonometrik eyniliklər",
+          "page": 1,
+          "path": "units/unit-1/page193.xhtml"
+        },
+        {
+          "title": "Parçanın orta nöqtəsinin koordinatları",
+          "page": 1,
+          "path": "units/unit-1/page195.xhtml"
+        },
+        {
+          "title": "İki nöqtədən keçən düz xəttin tənliyi",
+          "page": 1,
+          "path": "units/unit-1/page196.xhtml"
+        },
+        {
+          "title": "Fiqurların çevrilməsi.Dönmə",
+          "page": 1,
+          "path": "units/unit-1/page199.xhtml"
+        },
+        {
+          "title": "Oxşarlıq çevrilməsi.Homotetiya",
+          "page": 1,
+          "path": "units/unit-1/page203.xhtml"
+        },
+        {
+          "title": "11 Məlumatın toplanması və təqdimi. Ehtimalın hesablanması",
+          "page": 1,
+          "path": "units/unit-1/page207.xhtml"
+        },
+        {
+          "title": "Məlumatın toplanması və təqdim",
+          "page": 1,
+          "path": "units/unit-1/page207.xhtml"
+        },
+        {
+          "title": "Mərkəzə meyilli ölçülər",
+          "page": 1,
+          "path": "units/unit-1/page215.xhtml"
+        },
+        {
+          "title": "Ehtimalın hesablanması",
+          "page": 1,
+          "path": "units/unit-1/page218.xhtml"
+        },
+        {
+          "title": "Asılı olmayan və asılı hadisələr",
+          "page": 1,
+          "path": "units/unit-1/page222.xhtml"
+        },
+        {
+          "title": "Bölmələr üzrə ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page227.xhtml"
+        },
+        {
+          "title": "Özünüzü yoxlayın",
+          "page": 1,
+          "path": "units/unit-1/page232.xhtml"
+        },
+        {
+          "title": "Cavabla",
+          "page": 1,
+          "path": "units/unit-1/page234.xhtml"
+        }
+      ]
+    }
+  ],
+  "fizika": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Dərsliyinizlə tanış olun!",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "1. MOLEKULLARIN İSTİLİK HƏRƏKƏTİ. DAXİLİ ENERJİ",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "1.1. Molekulların istilik hərəkəti. Temperatur",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "1.2. Cisimlərin istidən genişlənməsi",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "1.3. İstilik tarazlığı. Temperatur şkalaları",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "1.4. Daxili enerji",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "1.5. Daxili enerjinin dəyişmə üsulları: mexaniki işgörmə və istilikvermə",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "1.6. İstilikkeçirmə",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "1.7. Konveksiya",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "1.8. Şüalanma",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page35.xhtml"
+        },
+        {
+          "title": "2. İSTİLİK HADİSƏLƏRİNDƏ ENERJİNİN SAXLANMASI QANUNU",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "2.1. İstilik miqdarı",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "2.2. Xüsusi istilik tutumu",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "2.3. Yanacağın yanma istiliyi",
+          "page": 1,
+          "path": "units/unit-1/page45.xhtml"
+        },
+        {
+          "title": "2.4. İstilik proseslərində enerjinin saxlanması qanunu",
+          "page": 1,
+          "path": "units/unit-1/page49.xhtml"
+        },
+        {
+          "title": "2.5. İstilik balansı tənliyi",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "Praktik iş. Cismin xüsusi istilik tutumunun təyini",
+          "page": 1,
+          "path": "units/unit-1/page57.xhtml"
+        },
+        {
+          "title": "3. MADDƏNİN AQREQAT HALLARININ DƏYİŞMƏSİ",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "3.1. Ərimə və bərkimə",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "3.2. Xüsusi ərimə istiliyi",
+          "page": 1,
+          "path": "units/unit-1/page66.xhtml"
+        },
+        {
+          "title": "3.3. Buxarəmələgəlmə və kondensasiya",
+          "page": 1,
+          "path": "units/unit-1/page69.xhtml"
+        },
+        {
+          "title": "3.4. Doyan və doymayan buxar. Qaynama",
+          "page": 1,
+          "path": "units/unit-1/page73.xhtml"
+        },
+        {
+          "title": "3.5. Xüsusi buxarlanma istiliyi",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "3.6. Havanın rütubəti",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "3.7. Rütubəti ölçən cihazlar",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "4. İSTİLİK MÜHƏRRİKLƏRİ",
+          "page": 1,
+          "path": "units/unit-1/page89.xhtml"
+        },
+        {
+          "title": "4.1. İstilik mühərriki. İstilik mühərrikinin faydalı iş əmsalı",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "4.2. Buxar turbini",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        },
+        {
+          "title": "4.3. Daxiliyanma mühərrikləri",
+          "page": 1,
+          "path": "units/unit-1/page97.xhtml"
+        },
+        {
+          "title": "4.4. Reaktiv mühərrik",
+          "page": 1,
+          "path": "units/unit-1/page101.xhtml"
+        },
+        {
+          "title": "4.5. İstilik mühərrikləri və ətraf mühitin mühafizəsi",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "5. ELEKTRİK YÜKÜ. ELEKTRİK SAHƏSİ",
+          "page": 1,
+          "path": "units/unit-1/page111.xhtml"
+        },
+        {
+          "title": "5.1. Cisimlərin elektriklənməsi. Elektrik yükü",
+          "page": 1,
+          "path": "units/unit-1/page112.xhtml"
+        },
+        {
+          "title": "5.2. Atomun quruluşu. Elektriklənmənin təbiəti",
+          "page": 1,
+          "path": "units/unit-1/page115.xhtml"
+        },
+        {
+          "title": "5.3. Keçiricilər və dielektriklər",
+          "page": 1,
+          "path": "units/unit-1/page119.xhtml"
+        },
+        {
+          "title": "5.4. Elektrostatik induksiya",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "5.5. Elektroskop. Elektrometr",
+          "page": 1,
+          "path": "units/unit-1/page125.xhtml"
+        },
+        {
+          "title": "5.6. Elektrik yükünün saxlanması qanunu",
+          "page": 1,
+          "path": "units/unit-1/page128.xhtml"
+        },
+        {
+          "title": "5.7. Elektrik yüklərinin qarşılıqlı təsiri: Kulon qanunu",
+          "page": 1,
+          "path": "units/unit-1/page131.xhtml"
+        },
+        {
+          "title": "5.8. Elektrik yüklərini ayıran, toplayan və ötürən qurğular",
+          "page": 1,
+          "path": "units/unit-1/page134.xhtml"
+        },
+        {
+          "title": "5.9. Elektrik sahəsi. Elektrik sahəsinin intensivliyi",
+          "page": 1,
+          "path": "units/unit-1/page136.xhtml"
+        },
+        {
+          "title": "5.10. Elektrik sahəsinin qüvvə xətləri",
+          "page": 1,
+          "path": "units/unit-1/page140.xhtml"
+        },
+        {
+          "title": "6. ELEKTRİK CƏRƏYANI",
+          "page": 1,
+          "path": "units/unit-1/page147.xhtml"
+        },
+        {
+          "title": "6.1. Elektrik cərəyanı",
+          "page": 1,
+          "path": "units/unit-1/page148.xhtml"
+        },
+        {
+          "title": "6.2. Cərəyan mənbələri",
+          "page": 1,
+          "path": "units/unit-1/page150.xhtml"
+        },
+        {
+          "title": "6.3. Elektrik dövrəsi və onun elementləri",
+          "page": 1,
+          "path": "units/unit-1/page154.xhtml"
+        },
+        {
+          "title": "6.4. Elektrik cərəyanının təsirləri",
+          "page": 1,
+          "path": "units/unit-1/page158.xhtml"
+        },
+        {
+          "title": "6.5. Cərəyan şiddəti və onun ölçülməsi",
+          "page": 1,
+          "path": "units/unit-1/page161.xhtml"
+        },
+        {
+          "title": "6.6. Gərginlik və onun ölçülməsi",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "6.7. Elektrik müqaviməti. Dövrə hissəsi üçün Om qanunu",
+          "page": 1,
+          "path": "units/unit-1/page168.xhtml"
+        },
+        {
+          "title": "6.8. Naqilin müqaviməti nədən asılıdır?",
+          "page": 1,
+          "path": "units/unit-1/page171.xhtml"
+        },
+        {
+          "title": "6.9. Naqillərin ardıcıl birləşdirilməsi",
+          "page": 1,
+          "path": "units/unit-1/page177.xhtml"
+        },
+        {
+          "title": "6.10. Naqillərin paralel birləşdirilməsi",
+          "page": 1,
+          "path": "units/unit-1/page182.xhtml"
+        },
+        {
+          "title": "6.11. Elektrik cərəyanının işi. Coul-Lens qanunu",
+          "page": 1,
+          "path": "units/unit-1/page187.xhtml"
+        },
+        {
+          "title": "6.12. Elektrik cərəyanının gücü",
+          "page": 1,
+          "path": "units/unit-1/page190.xhtml"
+        },
+        {
+          "title": "6.13. Elektrik cərəyanının canlı orqanizmə təsiri və tətbiqləri (əlavə oxu materialı)",
+          "page": 1,
+          "path": "units/unit-1/page194.xhtml"
+        }
+      ]
+    }
+  ],
+  "kimya": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "1.DÖVRİ QANUN",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "1.Dövri qanun. Kimyəvi elementlərin dövri sistemi",
+          "page": 1,
+          "path": "units/unit-1/page9.xhtml"
+        },
+        {
+          "title": "2.Atom modelləri. Elektron orbitalları",
+          "page": 1,
+          "path": "units/unit-1/page13.xhtml"
+        },
+        {
+          "title": "3.Atomların elektron örtüyünün quruluşu",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "4.Energetik səviyyələrdə orbitalların elektronlarla dolma ardıcıllığı",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "5.Kimyəvi elementlərin bəzi xassələri və bu xassələrin dövriliyi",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "6.Atomun həyəcanlanmış halı",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "2. OKSİD. ƏSAS. TURŞU. DUZ",
+          "page": 1,
+          "path": "units/unit-1/page39.xhtml"
+        },
+        {
+          "title": "7. Oksidlərin təsnifatı, adlandırılması və fiziki xassələri",
+          "page": 1,
+          "path": "units/unit-1/page41.xhtml"
+        },
+        {
+          "title": "8. Oksidlərin alınması və kimyəvi xassələri",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "9. Əsasların təsnifatı, adlandırılması və alınması",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "10. Əsasların fiziki və kimyəvi xassələri",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "11. Turşuların təsnifatı, adlandırılması və alınma üsulları",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "12. Turşuların fiziki və kimyəvi xassələri",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "13. Duzların təsnifatı, adlandırılması və alınması",
+          "page": 1,
+          "path": "units/unit-1/page63.xhtml"
+        },
+        {
+          "title": "14. Duzların fiziki və kimyəvi xassələr",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "15. Qeyri-üzvi birləşmələrin sinifləri arasında genetik əlaqə",
+          "page": 1,
+          "path": "units/unit-1/page72.xhtml"
+        },
+        {
+          "title": "3. KİMYƏVİ RABİTƏ",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "16. Kovalent rabitə",
+          "page": 1,
+          "path": "units/unit-1/page81.xhtml"
+        },
+        {
+          "title": "17. Kovalent rabitənin növləri",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "18. Molekulların fəza quruluşu. Hibridləşmə",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "19. Kovalent rabitənin xassələri",
+          "page": 1,
+          "path": "units/unit-1/page95.xhtml"
+        },
+        {
+          "title": "20. İon rabitəsi",
+          "page": 1,
+          "path": "units/unit-1/page99.xhtml"
+        },
+        {
+          "title": "21. Metal və hidrogen rabitəsi",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "22. Kristal qəfəslərin tipləri",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "23. Valentlik. Oksidləşmə dərəcəsi",
+          "page": 1,
+          "path": "units/unit-1/page109.xhtml"
+        },
+        {
+          "title": "4. KİMYƏVİ REAKSİYALARIN TƏSNİFATI. TARAZLIQ",
+          "page": 1,
+          "path": "units/unit-1/page117.xhtml"
+        },
+        {
+          "title": "24. Kimyəvi reaksiyaların təsnifatı",
+          "page": 1,
+          "path": "units/unit-1/page119.xhtml"
+        },
+        {
+          "title": "25. Oksidləşmə-reduksiya reaksiyaları",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "26. Oksidləşmə-reduksiya reaksiyalarının əmsallaşdırılması",
+          "page": 1,
+          "path": "units/unit-1/page126.xhtml"
+        },
+        {
+          "title": "27. Oksidləşmə-reduksiya reaksiyalarının növləri",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "28. Kimyəvi reaksiyanın sürəti",
+          "page": 1,
+          "path": "units/unit-1/page133.xhtml"
+        },
+        {
+          "title": "29. Kimyəvi reaksiyanın sürətinə təsir edən amillər",
+          "page": 1,
+          "path": "units/unit-1/page136.xhtml"
+        },
+        {
+          "title": "30. Kimyəvi tarazlıq",
+          "page": 1,
+          "path": "units/unit-1/page141.xhtml"
+        },
+        {
+          "title": "31. Kimyəvi tarazlığa təsir edən amillər",
+          "page": 1,
+          "path": "units/unit-1/page145.xhtml"
+        },
+        {
+          "title": "5. ELEKTROLİTİK DİSSOSİASİYA. ELEKTROLİZ. HİDROLİZ",
+          "page": 1,
+          "path": "units/unit-1/page157.xhtml"
+        },
+        {
+          "title": "32. Elektrolitik dissosiasiya. Dissosiasiya dərəcəsi",
+          "page": 1,
+          "path": "units/unit-1/page159.xhtml"
+        },
+        {
+          "title": "33. Dissosiasiya dərəcəsinə təsir edən amillər. Dissosiasiya sabiti",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "34. Turşu, əsas və duzların dissosiasiyası",
+          "page": 1,
+          "path": "units/unit-1/page168.xhtml"
+        },
+        {
+          "title": "35. İon mübadiləsi reaksiyaları",
+          "page": 1,
+          "path": "units/unit-1/page171.xhtml"
+        },
+        {
+          "title": "36. Elektroliz",
+          "page": 1,
+          "path": "units/unit-1/page176.xhtml"
+        },
+        {
+          "title": "37. Hidroliz",
+          "page": 1,
+          "path": "units/unit-1/page181.xhtml"
+        },
+        {
+          "title": "38. Hidrat nəzəriyyəsi",
+          "page": 1,
+          "path": "units/unit-1/page187.xhtml"
+        },
+        {
+          "title": "Polinqə görə elementlərin nisbi elektromənfiliyi",
+          "page": 1,
+          "path": "units/unit-1/page194.xhtml"
+        },
+        {
+          "title": "Duzların, turşuların və əsasların suda həll olması",
+          "page": 1,
+          "path": "units/unit-1/page195.xhtml"
+        },
+        {
+          "title": "İzahlı lüğət.",
+          "page": 1,
+          "path": "units/unit-1/page196.xhtml"
+        },
+        {
+          "title": "Ədəbiyyat siyahısı.",
+          "page": 1,
+          "path": "units/unit-1/page199.xhtml"
+        }
+      ]
+    }
+  ],
+  "biologiya": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "I. Biologiya elmi və insan orqanizmi",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "1. Hüceyrədən orqanizmə",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "2. Canlıların nəsil ağacında insanın yeri",
+          "page": 1,
+          "path": "units/unit-1/page11.xhtml"
+        },
+        {
+          "title": "3. İnsanı əmək yaratmışdır",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "4. İnstinkt, düşüncəli fəaliyyət və təfəkkür",
+          "page": 1,
+          "path": "units/unit-1/page17.xhtml"
+        },
+        {
+          "title": "5. Orqanizmimizi öyrənək",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "II. Orqanlar sistemlərimiz",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "Bölmə 1. Sinir və endokrin sistemləri",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "1. Canlılarda sinir sistemi",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "2. İnsanın sinir sistemi və onun reflektor funksiyası",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "3. Mərkəzi sinir sistemi",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "4. Periferik sinir sistemi",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "5. Endokrin sistemimiz",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "6. Nəzarətçi və nizamlayıcı sistemlərimizin funksiya pozğunluqları",
+          "page": 1,
+          "path": "units/unit-1/page40.xhtml"
+        },
+        {
+          "title": "Bölmə 2. Sümük və əzələ sistemləri",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "1. Bədənimizin dirəkləri",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "2. Hərəkət edə bilərik. Əzələlər, oynaqlar, bağlar",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "3. Dayaq-hərəkət aparatındakı dəyişikliklər",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "Bölmə 3. Qan-damar sistemi",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "1. Daxili maye mühitimiz",
+          "page": 1,
+          "path": "units/unit-1/page57.xhtml"
+        },
+        {
+          "title": "2. Orqanizmin yorulmayan mühərriki",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "3. Qan. Qanın damarlarda hərəkəti",
+          "page": 1,
+          "path": "units/unit-1/page63.xhtml"
+        },
+        {
+          "title": "4. Qan qrupları. Donor olmaq həyat qurtarır",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "5. Ürək-damar sisteminin gigiyenası",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "6. Qan xəstəlikləri və qanla yoluxan xəstəliklər",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "7. Orqanizmin qoruyucu sistemi",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "Bölmə 4. Tənəffüs sistemi",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "1. Havanın insan orqanizmində keçdiyi yol",
+          "page": 1,
+          "path": "units/unit-1/page80.xhtml"
+        },
+        {
+          "title": "2. Ağciyərlər, tənəffüs hərəkətləri, qaz mübadiləsi",
+          "page": 1,
+          "path": "units/unit-1/page83.xhtml"
+        },
+        {
+          "title": "3. Kim daha çox qaçar?",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "4. Tənəffüs orqanlarımızı qoruyaq",
+          "page": 1,
+          "path": "units/unit-1/page89.xhtml"
+        },
+        {
+          "title": "Bölmə 5. Həzm sistemi və maddələr mübadiləsi",
+          "page": 1,
+          "path": "units/unit-1/page92.xhtml"
+        },
+        {
+          "title": "1. Qida maddələri və həzm orqanları",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        },
+        {
+          "title": "2. Ağız boşluğunda həzm",
+          "page": 1,
+          "path": "units/unit-1/page97.xhtml"
+        },
+        {
+          "title": "3. Mədə və bağırsaqlarda həzm",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "4. Vitaminlər",
+          "page": 1,
+          "path": "units/unit-1/page104.xhtml"
+        },
+        {
+          "title": "5. Həzm orqanlarımızı qoruyaq",
+          "page": 1,
+          "path": "units/unit-1/page107.xhtml"
+        },
+        {
+          "title": "6. Maddələr mübadiləsi və enerji çevrilmələri",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "Bölmə 6. İfrazat sistemi",
+          "page": 1,
+          "path": "units/unit-1/page113.xhtml"
+        },
+        {
+          "title": "1. Bədənimizi təmizləyənlər",
+          "page": 1,
+          "path": "units/unit-1/page114.xhtml"
+        },
+        {
+          "title": "2. Böyrəklərin quruluşu, sidiyin əmələ gəlməsi",
+          "page": 1,
+          "path": "units/unit-1/page117.xhtml"
+        },
+        {
+          "title": "3. Böyrəklərimizi qoruyaq",
+          "page": 1,
+          "path": "units/unit-1/page120.xhtml"
+        },
+        {
+          "title": "Bölmə 7. Cinsiyyət sistemi",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "1. Çoxalma və çoxalma orqanları",
+          "page": 1,
+          "path": "units/unit-1/page124.xhtml"
+        },
+        {
+          "title": "2. Mayalanma. Bətndaxili inkişaf",
+          "page": 1,
+          "path": "units/unit-1/page127.xhtml"
+        },
+        {
+          "title": "3. Orqanizmin böyümə və inkişaf mərhələləri",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "4. Mən böyüdüm",
+          "page": 1,
+          "path": "units/unit-1/page133.xhtml"
+        },
+        {
+          "title": "Bölmə 8. Duyğu orqanlarımız",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "1. Duyğu orqanlarımız və analizatorlar",
+          "page": 1,
+          "path": "units/unit-1/page136.xhtml"
+        },
+        {
+          "title": "2. Görmə orqanımız",
+          "page": 1,
+          "path": "units/unit-1/page139.xhtml"
+        },
+        {
+          "title": "3. Eşitmə və müvazinət orqanı - qulaq",
+          "page": 1,
+          "path": "units/unit-1/page143.xhtml"
+        },
+        {
+          "title": "4. Dəri. Dərinin quruluşu və funksiyaları",
+          "page": 1,
+          "path": "units/unit-1/page147.xhtml"
+        },
+        {
+          "title": "5. Qoxu və dad orqanlarımız",
+          "page": 1,
+          "path": "units/unit-1/page151.xhtml"
+        },
+        {
+          "title": "6. Duyğu orqanlarımızın qüsurları",
+          "page": 1,
+          "path": "units/unit-1/page155.xhtml"
+        },
+        {
+          "title": "III. Orqanlar sistemlərimizi qoruyaq",
+          "page": 1,
+          "path": "units/unit-1/page158.xhtml"
+        },
+        {
+          "title": "1. Orqanlar sistemlərimiz nizamla çalışır",
+          "page": 1,
+          "path": "units/unit-1/page159.xhtml"
+        },
+        {
+          "title": "2. Orqan nəqli həyat verir",
+          "page": 1,
+          "path": "units/unit-1/page162.xhtml"
+        },
+        {
+          "title": "3. Zərərli vərdişlərə yox deyək!",
+          "page": 1,
+          "path": "units/unit-1/page165.xhtml"
+        },
+        {
+          "title": "4. Ətraf mühiti qoruyaq",
+          "page": 1,
+          "path": "units/unit-1/page168.xhtml"
+        },
+        {
+          "title": "5. Ətraf mühit və orqanizm",
+          "page": 1,
+          "path": "units/unit-1/page173.xhtml"
+        },
+        {
+          "title": "İstifadə edilmiş ədəbiyyat",
+          "page": 1,
+          "path": "units/unit-1/page176.xhtml"
+        }
+      ]
+    }
+  ],
+  "cografiya": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Ümumi təhsil müəssisələrinin",
+          "page": 1,
+          "path": "units/unit-1/page3.xhtml"
+        },
+        {
+          "title": "I.1. Coğrafi kəşflərin yeni mərhələsi",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "Coğrafi kəşflərdən tədqiqatlara doğru",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "I.2. Coğrafiya elminin inkişafı",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "I.3. Müasir coğrafiya elminin yeni sahələri",
+          "page": 1,
+          "path": "units/unit-1/page13.xhtml"
+        },
+        {
+          "title": "I.4. Coğrafiyada yeni biliklərin toplanması yolları",
+          "page": 1,
+          "path": "units/unit-1/page16.xhtml"
+        },
+        {
+          "title": "I.5. Azərbaycanda coğrafiya elminin inkişafı",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "I.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "II.1. Kartoqrafik təsvirlərin əhəmiyyəti",
+          "page": 1,
+          "path": "units/unit-1/page26.xhtml"
+        },
+        {
+          "title": "II.2. Kartoqrafik təsvirlər məlumat mənbəyidir",
+          "page": 1,
+          "path": "units/unit-1/page29.xhtml"
+        },
+        {
+          "title": "II.3. Xəritələrdə təsvir üsulları",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "II.4. Xəritələrin təsnifatı",
+          "page": 1,
+          "path": "units/unit-1/page35.xhtml"
+        },
+        {
+          "title": "II.5. Xəritələrdə məsafələrin və",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "II.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page41.xhtml"
+        },
+        {
+          "title": "III.1. Qurşaq vaxtı",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "III.2. Yerin illik hərəkəti",
+          "page": 1,
+          "path": "units/unit-1/page45.xhtml"
+        },
+        {
+          "title": "III.3. Qütb gecə və gündüzləri",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "III.4. İşıqlanma qurşaqları",
+          "page": 1,
+          "path": "units/unit-1/page51.xhtml"
+        },
+        {
+          "title": "III.5. Günəş şüalarının düşmə bucağının",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "III.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "IV.1. Yerin müasir üfüqi və şaquli hərəkət sahələri",
+          "page": 1,
+          "path": "units/unit-1/page58.xhtml"
+        },
+        {
+          "title": "IV.2. Litosfer tavaları",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "IV.3. Litosfer tavalarının hərəkətinin nəticələri",
+          "page": 1,
+          "path": "units/unit-1/page66.xhtml"
+        },
+        {
+          "title": "IV.4. Qədim quru və su sahələri",
+          "page": 1,
+          "path": "units/unit-1/page70.xhtml"
+        },
+        {
+          "title": "IV.5. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page72.xhtml"
+        },
+        {
+          "title": "Dünyanın fiziki xəritəsi",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "Miqyas: 1:110 000 000",
+          "page": 1,
+          "path": "units/unit-1/page75.xhtml"
+        },
+        {
+          "title": "V.1. Hava kütlələri və atmosfer cəbhələri",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "V.2. Daimi və mövsümi küləklər",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "V.3. Siklon və antisiklonlar",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "V.4. Yağıntıların paylanması",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "V.5. İqlim və onun yaranması",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "V.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "VI.1. Dünya okeanının yaranması",
+          "page": 1,
+          "path": "units/unit-1/page97.xhtml"
+        },
+        {
+          "title": "VI.2. Okeanların öyrənilməsi",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "VI.3. Okean suyunun temperaturu",
+          "page": 1,
+          "path": "units/unit-1/page103.xhtml"
+        },
+        {
+          "title": "VI.4. Okean suyunun duzluluğu və şəffaflığı",
+          "page": 1,
+          "path": "units/unit-1/page106.xhtml"
+        },
+        {
+          "title": "VI.5\n              . Okeanlarda suyun hərəkəti",
+          "page": 1,
+          "path": "units/unit-1/page109.xhtml"
+        },
+        {
+          "title": "VI.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page113.xhtml"
+        },
+        {
+          "title": "VII.1. Biosfer Yerin təbəqələri sistemində",
+          "page": 1,
+          "path": "units/unit-1/page114.xhtml"
+        },
+        {
+          "title": "VII.2. Coğrafi təbəqə",
+          "page": 1,
+          "path": "units/unit-1/page116.xhtml"
+        },
+        {
+          "title": "YERİN XARİCİ TƏBƏQƏLƏRİ ARASINDA QARŞILIQLI ƏLAQƏ",
+          "page": 1,
+          "path": "units/unit-1/page117.xhtml"
+        },
+        {
+          "title": "VII.3. Bitki və heyvanların yaşayış mühiti",
+          "page": 1,
+          "path": "units/unit-1/page119.xhtml"
+        },
+        {
+          "title": "VII.4. Təbii zonalar",
+          "page": 1,
+          "path": "units/unit-1/page123.xhtml"
+        },
+        {
+          "title": "VII.5. Azərbaycanın bitki və heyvanlar aləmi",
+          "page": 1,
+          "path": "units/unit-1/page127.xhtml"
+        },
+        {
+          "title": "VII.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "VIII.1.Ölkələrin inkişaf səviyyəsinə görə təsnifatı",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "Dünya ölkələrinin təsnifatı",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "VIII.2. İnkişaf etmiş ölkələr (İEÖ)",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "VIII.3. İnkişaf etməkdə olan ölkələr (İEOÖ)",
+          "page": 1,
+          "path": "units/unit-1/page137.xhtml"
+        },
+        {
+          "title": "VIII.4. İnsan İnkişafı İndeksi",
+          "page": 1,
+          "path": "units/unit-1/page140.xhtml"
+        },
+        {
+          "title": "VIII.5. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page142.xhtml"
+        },
+        {
+          "title": "IX.1. Əhalinin sayı",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "Əhali və təsərrüfatın ərazi təşkili",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "IX.2. Əhalinin təbii artımı və miqrasiyası",
+          "page": 1,
+          "path": "units/unit-1/page150.xhtml"
+        },
+        {
+          "title": "IX.3. Təbii ehtiyatlar",
+          "page": 1,
+          "path": "units/unit-1/page153.xhtml"
+        },
+        {
+          "title": "IX.4. Təbii ehtiyatların təsərrüfat əhəmiyyəti",
+          "page": 1,
+          "path": "units/unit-1/page156.xhtml"
+        },
+        {
+          "title": "IX.5. İstehsalın təşkili formaları",
+          "page": 1,
+          "path": "units/unit-1/page160.xhtml"
+        },
+        {
+          "title": "IX. 6. Təsərrüfatın iqtisadi inkişaf yolları",
+          "page": 1,
+          "path": "units/unit-1/page162.xhtml"
+        },
+        {
+          "title": "IX.7. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "X.1. Ətraf mühiti çirkləndirən mənbələr",
+          "page": 1,
+          "path": "units/unit-1/page165.xhtml"
+        },
+        {
+          "title": "X.2. Təsərrüfat sahələri və ekoloji mühit",
+          "page": 1,
+          "path": "units/unit-1/page168.xhtml"
+        },
+        {
+          "title": "X.3. Ətraf mühitin mühafizəsi yolları",
+          "page": 1,
+          "path": "units/unit-1/page171.xhtml"
+        },
+        {
+          "title": "X.4. Ətraf mühit və insanların sağlamlığının",
+          "page": 1,
+          "path": "units/unit-1/page175.xhtml"
+        },
+        {
+          "title": "X.5. Azərbaycanın ekoloji vəziyyəti",
+          "page": 1,
+          "path": "units/unit-1/page178.xhtml"
+        },
+        {
+          "title": "X.6. Ümumiləşdirici tapşırıqlar.",
+          "page": 1,
+          "path": "units/unit-1/page182.xhtml"
+        },
+        {
+          "title": "TERMİNLƏRİN İZAHLI LÜĞƏTİ",
+          "page": 1,
+          "path": "units/unit-1/page184.xhtml"
+        }
+      ]
+    }
+  ],
+  "ingilis-dili": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "UNIT 1. FREE TIME FUN",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: Free Time Fun",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "Vocabulary. Key words and phrases",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "Reading. Free time programmes",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "Grammar A. Present Perfect",
+          "page": 1,
+          "path": "units/unit-1/page12.xhtml"
+        },
+        {
+          "title": "Grammar B. Present Perfect with for, since, already and yet",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "Listening. A talk on an attraction",
+          "page": 1,
+          "path": "units/unit-1/page16.xhtml"
+        },
+        {
+          "title": "Use of English. Language development: Focus on vocabulary and grammar",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "Time to Watch. A video about unusual hobbies",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "Writing. What is a Paragraph?",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "Mistake Detector. Self-assessment through mistake identification",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "UNIT 2. FOOD AROUND THE WORLD",
+          "page": 1,
+          "path": "units/unit-1/page25.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: Food Around the World",
+          "page": 1,
+          "path": "units/unit-1/page25.xhtml"
+        },
+        {
+          "title": "Reading. An article about foods from different countries",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "Grammar A. Present Perfect with ever, never, Just, and recently",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "Grammar B. Present Perfect vs Past Simple",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "Listening. A talk on the history of the four most favourite foods",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Time to Watch. A famous food vlogger’s video taken in Azerbaijan",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "Writing. What is a Topic Sentence?",
+          "page": 1,
+          "path": "units/unit-1/page40.xhtml"
+        },
+        {
+          "title": "UNIT 3. NATURE",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: Nature",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "Reading. News stories about weather conditions",
+          "page": 1,
+          "path": "units/unit-1/page46.xhtml"
+        },
+        {
+          "title": "Grammar A.  Quantifiers: a few, a little, no, none, all",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "Grammar B. Both, either, neither",
+          "page": 1,
+          "path": "units/unit-1/page50.xhtml"
+        },
+        {
+          "title": "Listening. Talk on Forest Bathing",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "Time to Watch. A video about nature schools",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "Writing. What are Supporting Sentences?",
+          "page": 1,
+          "path": "units/unit-1/page58.xhtml"
+        },
+        {
+          "title": "UNIT 4. MANNERS AND RULES",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: Manners and Rules",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "Vocabulary. Keywords and phrases",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "Reading. A magazine article on etiquette mistakes",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "Grammar A. Modal verbs: must, mustn’t, have to, don’t have to, cannot",
+          "page": 1,
+          "path": "units/unit-1/page66.xhtml"
+        },
+        {
+          "title": "Grammar B. Be expressions: to be about to, to be due to, to be able to",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "Listening. A talk on bad habits",
+          "page": 1,
+          "path": "units/unit-1/page70.xhtml"
+        },
+        {
+          "title": "Time to Watch. A video about social faux pas",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "Writing. Transition Words",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "UNIT 5. A PLACE CALLED HOME",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: A Place Called Home",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "Reading. An article about one of the strangest houses in  the world",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "Grammar A. Infinitives",
+          "page": 1,
+          "path": "units/unit-1/page84.xhtml"
+        },
+        {
+          "title": "Grammar B. Gerund",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "Listening. A talk on an unusual house",
+          "page": 1,
+          "path": "units/unit-1/page88.xhtml"
+        },
+        {
+          "title": "Use of English. Language development:  Focus on vocabulary and grammar",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "Time to Watch. Episodes from the animated film Up",
+          "page": 1,
+          "path": "units/unit-1/page92.xhtml"
+        },
+        {
+          "title": "Writing. What is a Concluding Sentence?",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "UNIT 6. A PLACE CALLED HOME",
+          "page": 1,
+          "path": "units/unit-1/page97.xhtml"
+        },
+        {
+          "title": "Focus on the topic. A lead-in to the topic: Change-makers",
+          "page": 1,
+          "path": "units/unit-1/page97.xhtml"
+        },
+        {
+          "title": "Reading. An article about a football player",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "Grammar A. verb + object + infinitive with or without to",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "Grammar B. Adjectives after linking verbs",
+          "page": 1,
+          "path": "units/unit-1/page104.xhtml"
+        },
+        {
+          "title": "Listening. An interview with a change-maker",
+          "page": 1,
+          "path": "units/unit-1/page106.xhtml"
+        },
+        {
+          "title": "Time to Watch. Episodes from the animated film Zootopia",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "Writing. Five features of a well-written paragraph",
+          "page": 1,
+          "path": "units/unit-1/page112.xhtml"
+        },
+        {
+          "title": "Irregular Verbs List",
+          "page": 1,
+          "path": "units/unit-1/page115.xhtml"
+        },
+        {
+          "title": "Grammar Bank",
+          "page": 1,
+          "path": "units/unit-1/page116.xhtml"
+        },
+        {
+          "title": "Extra Practice Activities",
+          "page": 1,
+          "path": "units/unit-1/page124.xhtml"
+        },
+        {
+          "title": "Tracks",
+          "page": 1,
+          "path": "units/unit-1/page142.xhtml"
+        },
+        {
+          "title": "Wordlist",
+          "page": 1,
+          "path": "units/unit-1/page149.xhtml"
+        },
+        {
+          "title": "Picture Dictionary",
+          "page": 1,
+          "path": "units/unit-1/page158.xhtml"
+        }
+      ]
+    }
+  ],
+  "azerbaycan-dili-8": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "I BÖLMƏ. BİLİK XƏZİNƏDİR",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "1. Tətildən sonra",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "2. Qori seminariyasında Azərbaycan şöbəsi necə açıldı",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "3. Yaxşılıq itmir",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "4. Ana dili",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "5. Mədinə xanım Qiyasbəyli",
+          "page": 1,
+          "path": "units/unit-1/page26.xhtml"
+        },
+        {
+          "title": "6. Mücrü",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "7. Şuşanın körpə qartalı",
+          "page": 1,
+          "path": "units/unit-1/page33.xhtml"
+        },
+        {
+          "title": "II BÖLMƏ. TARİXİN DAŞ YADDAŞI",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "1. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "2. Nə gözəl səslənir Şuşalı vətən",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "3. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "4. Muğan",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "5. Gülüstan",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "6. Zivər bəy Əhmədbəyov",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "III BÖLMƏ. MİLLİ-MƏNƏVİ DƏYƏRLƏRİMİZ",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "1. İbrət dərsi",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "2. Duyğular adası",
+          "page": 1,
+          "path": "units/unit-1/page67.xhtml"
+        },
+        {
+          "title": "3. Səhəng içində nə varsa, onu sızdırar...",
+          "page": 1,
+          "path": "units/unit-1/page70.xhtml"
+        },
+        {
+          "title": "4. Mətn",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "5. Zəhər",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        },
+        {
+          "title": "6. Qaranquşların ömrü 6 aydır...",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "7. Həmrəyliyimiz əbədidir",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "8. İnanılmaz tarixi fakt",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "9. Sədaqət",
+          "page": 1,
+          "path": "units/unit-1/page91.xhtml"
+        },
+        {
+          "title": "10. Hekayət",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "11. Tariximizin şanlı səhifəsi",
+          "page": 1,
+          "path": "units/unit-1/page98.xhtml"
+        },
+        {
+          "title": "12. Qırxıncı fəndi bu günə saxlamışdım",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "13. Qədim türklərdə tərbiyə",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "14. Yolun sonu",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "15. Nar dənəsi",
+          "page": 1,
+          "path": "units/unit-1/page108.xhtml"
+        },
+        {
+          "title": "IV BÖLMƏ. ŞƏXSİYYƏTLƏR",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "1. Azərbaycan teatrı",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "2. Hüseynqulu Sarabskinin xatirələri",
+          "page": 1,
+          "path": "units/unit-1/page114.xhtml"
+        },
+        {
+          "title": "3. Vaqif obrazından başlanan səhnə uğuru",
+          "page": 1,
+          "path": "units/unit-1/page118.xhtml"
+        },
+        {
+          "title": "4. İlk aktrisamız kimdir?",
+          "page": 1,
+          "path": "units/unit-1/page122.xhtml"
+        },
+        {
+          "title": "5. Evrika",
+          "page": 1,
+          "path": "units/unit-1/page126.xhtml"
+        },
+        {
+          "title": "6. Oqtay Eloğlu",
+          "page": 1,
+          "path": "units/unit-1/page129.xhtml"
+        },
+        {
+          "title": "V BÖLMƏ. MƏTBUAT: DÜNƏN VƏ BU GÜN",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "1. \"Günün hadisələri\"",
+          "page": 1,
+          "path": "units/unit-1/page132.xhtml"
+        },
+        {
+          "title": "2. Əhvalpürsanlıq",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "3. \"Molla Nəsrəddin\"ə gedən yol",
+          "page": 1,
+          "path": "units/unit-1/page142.xhtml"
+        },
+        {
+          "title": "4. Yalançı \"Xortdan\"",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "5. İlk redaktor. O kim imiş?",
+          "page": 1,
+          "path": "units/unit-1/page149.xhtml"
+        },
+        {
+          "title": "VI BÖLMƏ. SƏNƏT DÜNYASINA SƏYAHƏT",
+          "page": 1,
+          "path": "units/unit-1/page152.xhtml"
+        },
+        {
+          "title": "1. Şəxsiyyətlər",
+          "page": 1,
+          "path": "units/unit-1/page152.xhtml"
+        },
+        {
+          "title": "2. Hacı Zeynalabdin Şirvani",
+          "page": 1,
+          "path": "units/unit-1/page157.xhtml"
+        },
+        {
+          "title": "3. Mahmud Kaşğarlı",
+          "page": 1,
+          "path": "units/unit-1/page160.xhtml"
+        },
+        {
+          "title": "4. Qurban Səidin gizli qalmış ömrü",
+          "page": 1,
+          "path": "units/unit-1/page164.xhtml"
+        },
+        {
+          "title": "5. Fərhəng Hüseynov",
+          "page": 1,
+          "path": "units/unit-1/page167.xhtml"
+        }
+      ]
+    }
+  ],
+  "azerbaycan-dili-5-h1": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Bölmə 1. Fərd və toplum",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Uğurun sirri",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "Sözlərdə saitlərin yazılışı",
+          "page": 1,
+          "path": "units/unit-1/page9.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Orxan və Təpəl",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "Sözlərdə samitlərin deyilişi və yazılışı",
+          "page": 1,
+          "path": "units/unit-1/page13.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Jan Valjan",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "\"K\" samitinin deyilişi və yazılışı",
+          "page": 1,
+          "path": "units/unit-1/page17.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Sözün qüdrəti",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "\"Q\" samitinin deyilişi və yazılışı",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici təkrar",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "Bölmə 2. Mənəvi dəyərlər",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Bilirdim ki, gələcəksən",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "Leksik və qrammatik məna",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "Fəsil 2. \"8\" rəqəmi və tariximiz",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "Sözün həqiqi və məcazi mənası",
+          "page": 1,
+          "path": "units/unit-1/page31.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Təcili qan lazımdır",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "Çoxmənalı sözlər. Omonimlər",
+          "page": 1,
+          "path": "units/unit-1/page35.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Ad günü hədiyyəsi",
+          "page": 1,
+          "path": "units/unit-1/page36.xhtml"
+        },
+        {
+          "title": "Cümlə sonunda durğu işarələri",
+          "page": 1,
+          "path": "units/unit-1/page39.xhtml"
+        },
+        {
+          "title": "Bölmə 3. Ana təbiət",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Yazın oğlan çağında",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "Kök və şəkilçi. Leksik və qrammatik şəkilçilər",
+          "page": 1,
+          "path": "units/unit-1/page45.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Ağac əkən adam",
+          "page": 1,
+          "path": "units/unit-1/page46.xhtml"
+        },
+        {
+          "title": "Sözün quruluşca növləri",
+          "page": 1,
+          "path": "units/unit-1/page49.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Ağıllı canlılar",
+          "page": 1,
+          "path": "units/unit-1/page50.xhtml"
+        },
+        {
+          "title": "Ahəng qanunu. İki və dörd cür yazılan şəkilçilər",
+          "page": 1,
+          "path": "units/unit-1/page53.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Meşə simfoniyası",
+          "page": 1,
+          "path": "units/unit-1/page54.xhtml"
+        },
+        {
+          "title": "Mürəkkəb sözlərin yazılışı",
+          "page": 1,
+          "path": "units/unit-1/page57.xhtml"
+        },
+        {
+          "title": "Bölmə 4. Niyə belə deyirik?",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Qədim yunan sözləri",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "Alınma sözlər və şəkilçilər",
+          "page": 1,
+          "path": "units/unit-1/page63.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Hacı Qara",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "Sinonimlər və antonimlər",
+          "page": 1,
+          "path": "units/unit-1/page67.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Onlar kimdir?",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "Sözün sətirdən sətrə keçirilməsi",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Bəs zınqırovu kim asacaq?",
+          "page": 1,
+          "path": "units/unit-1/page72.xhtml"
+        },
+        {
+          "title": "Lüğətdən istifadə",
+          "page": 1,
+          "path": "units/unit-1/page75.xhtml"
+        },
+        {
+          "title": "İzahlı sözlük",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        }
+      ]
+    }
+  ],
+  "azerbaycan-dili-5-h2": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Bölmə 5. Özünə inan",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Ala-bəzək torba",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "Əsas və köməkçi nitq hissələri",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Əlvida, \"bilmirəm\"!",
+          "page": 1,
+          "path": "units/unit-1/page12.xhtml"
+        },
+        {
+          "title": "İsim. Toplu isimlər",
+          "page": 1,
+          "path": "units/unit-1/page17.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Elektron ünvanım olsaydı...",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "İsmin mənsubiyyətə görə dəyişməsi",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Sonuncu düym",
+          "page": 1,
+          "path": "units/unit-1/page22.xhtml"
+        },
+        {
+          "title": "İsmin şəxsə görə dəyişməsi",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici təkrar",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "Bölmə 6. Səyahət",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Balaca Qara Balıq",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "Sifət",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Səyahətnamə",
+          "page": 1,
+          "path": "units/unit-1/page36.xhtml"
+        },
+        {
+          "title": "Say",
+          "page": 1,
+          "path": "units/unit-1/page41.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Qadın səyyahlar",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "Feil",
+          "page": 1,
+          "path": "units/unit-1/page48.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Azərbaycan səyyahların gözü ilə",
+          "page": 1,
+          "path": "units/unit-1/page50.xhtml"
+        },
+        {
+          "title": "Zərf",
+          "page": 1,
+          "path": "units/unit-1/page54.xhtml"
+        },
+        {
+          "title": "Bölmə 7. İdman və sağlamlıq",
+          "page": 1,
+          "path": "units/unit-1/page58.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Fiziki məşqlər və insan orqanizmi",
+          "page": 1,
+          "path": "units/unit-1/page58.xhtml"
+        },
+        {
+          "title": "Təsriflənməyən feillər. Məsdər",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Çempion ola bilərəm?",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "Təsriflənməyən feillər. Feili sifət və feili bağlama",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "Fəsil 3. İdmançı xarakteri",
+          "page": 1,
+          "path": "units/unit-1/page70.xhtml"
+        },
+        {
+          "title": "Əvəzliyin məna növləri",
+          "page": 1,
+          "path": "units/unit-1/page74.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Marafon: Afinadan Bakıya",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "İsimləşmə və sifətləşmə",
+          "page": 1,
+          "path": "units/unit-1/page80.xhtml"
+        },
+        {
+          "title": "Bölmə 8. Tarixdə qadınlar",
+          "page": 1,
+          "path": "units/unit-1/page84.xhtml"
+        },
+        {
+          "title": "Fəsil 1. Qədim türklərdə qadınlar",
+          "page": 1,
+          "path": "units/unit-1/page84.xhtml"
+        },
+        {
+          "title": "Söz birləşmələri",
+          "page": 1,
+          "path": "units/unit-1/page88.xhtml"
+        },
+        {
+          "title": "Fəsil 2. Sara xatun",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "Frazeoloji birləşmələr",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "Fəsil 3. Savadlı qadın - savadlı millət",
+          "page": 1,
+          "path": "units/unit-1/page96.xhtml"
+        },
+        {
+          "title": "Cümlə üzvləri",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "Fəsil 4. Cığır açan qadınlar",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "Sadə və mürəkkəb cümlələr",
+          "page": 1,
+          "path": "units/unit-1/page104.xhtml"
+        },
+        {
+          "title": "İzahlı sözlük",
+          "page": 1,
+          "path": "units/unit-1/page108.xhtml"
+        }
+      ]
+    }
+  ],
+  "riyaziyyat-5-h1": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Bölmə 1. Natural ədədlər və onlar üzərində əməllər",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "İlkin yoxlama",
+          "page": 1,
+          "path": "units/unit-1/page8.xhtml"
+        },
+        {
+          "title": "1.1 Natural ədədlər",
+          "page": 1,
+          "path": "units/unit-1/page9.xhtml"
+        },
+        {
+          "title": "1.2 Müqayisə və sıralama",
+          "page": 1,
+          "path": "units/unit-1/page13.xhtml"
+        },
+        {
+          "title": "1.3 Natural ədədlərin yuvarlaqlaşdırılması",
+          "page": 1,
+          "path": "units/unit-1/page16.xhtml"
+        },
+        {
+          "title": "1.4 Natural ədədlərin toplanması va çıxılması",
+          "page": 1,
+          "path": "units/unit-1/page18.xhtml"
+        },
+        {
+          "title": "1.5 Natural ədədin kvadratı va kubu",
+          "page": 1,
+          "path": "units/unit-1/page21.xhtml"
+        },
+        {
+          "title": "1.6 Natural ədədlərin vurulması və bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "1.7 Ədədi ifadələr",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "1.8 Ədədin bölən və bölünənləri",
+          "page": 1,
+          "path": "units/unit-1/page30.xhtml"
+        },
+        {
+          "title": "Xülasə",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page35.xhtml"
+        },
+        {
+          "title": "STEAM. \"Parker\" Günəş Zondu",
+          "page": 1,
+          "path": "units/unit-1/page36.xhtml"
+        },
+        {
+          "title": "Bölmə 2. Adi kəsrlər",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "2.1 Düzgün kəsrlər və düzgün olmayan kəsrlər",
+          "page": 1,
+          "path": "units/unit-1/page39.xhtml"
+        },
+        {
+          "title": "2.2 Müqayisə və sıralama",
+          "page": 1,
+          "path": "units/unit-1/page43.xhtml"
+        },
+        {
+          "title": "2.3 Məxrəcləri müxtəlif olan kəsrlərin toplanması va çıxılması",
+          "page": 1,
+          "path": "units/unit-1/page47.xhtml"
+        },
+        {
+          "title": "2.4 Qarışıq ədədlərin toplanması",
+          "page": 1,
+          "path": "units/unit-1/page51.xhtml"
+        },
+        {
+          "title": "2.5 Qarışıq ədədlərin çıxılması",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "Məsələ və misallar",
+          "page": 1,
+          "path": "units/unit-1/page62.xhtml"
+        },
+        {
+          "title": "2.6 Adi kəsrlərin vurulması",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "2.7 Qarışıq ədədlərin vurulması",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "2.8 Adi kəsrlərin bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "2.9 Qarışıq ədədlərin bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page75.xhtml"
+        },
+        {
+          "title": "2.10 Ədədin hissəsinin və hissəsinə görə ədədin tapılması",
+          "page": 1,
+          "path": "units/unit-1/page77.xhtml"
+        },
+        {
+          "title": "STEAM. Qurama",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "Bölmə 3. Onluq kəsrlər",
+          "page": 1,
+          "path": "units/unit-1/page83.xhtml"
+        },
+        {
+          "title": "3.1 Onluq kəsrlər",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "3.2 Müqayisə və sıralama",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "3.3 Onluq kəsrlərin  yuvarlaqlaşdırılması",
+          "page": 1,
+          "path": "units/unit-1/page89.xhtml"
+        },
+        {
+          "title": "3.4 Adi kəsrin onluq kəsrə, onluq kəsrin adi kəsrə çevrilməsi",
+          "page": 1,
+          "path": "units/unit-1/page91.xhtml"
+        },
+        {
+          "title": "3.5 Onluq kəsrlərin toplanması və çıxılması",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "3.6 Onluq kəsrlərin 10-un qüvvətlərinə vurulması və bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page100.xhtml"
+        },
+        {
+          "title": "3.7 Onluq kəsrın natural ədədə vurulması",
+          "page": 1,
+          "path": "units/unit-1/page103.xhtml"
+        },
+        {
+          "title": "3.8 Onluq kəsrlərin vurulması",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "3.9 Onluq kəsrin natural ədədə bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page107.xhtml"
+        },
+        {
+          "title": "3.10 Ədədin onluq kəsrə bölünməsi",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "3.11 Adi və onluq kəsrlər üzərində əməllər",
+          "page": 1,
+          "path": "units/unit-1/page113.xhtml"
+        },
+        {
+          "title": "STEAM. Yüksəksürətli qatarlar",
+          "page": 1,
+          "path": "units/unit-1/page118.xhtml"
+        },
+        {
+          "title": "Bölmə 4. Faiz",
+          "page": 1,
+          "path": "units/unit-1/page119.xhtml"
+        },
+        {
+          "title": "4.1 Faiz, adi kəsr, onluq kəsr",
+          "page": 1,
+          "path": "units/unit-1/page121.xhtml"
+        },
+        {
+          "title": "4.2 Ədədin faizi",
+          "page": 1,
+          "path": "units/unit-1/page125.xhtml"
+        },
+        {
+          "title": "4.3 Faizə görə ədədin tapılması",
+          "page": 1,
+          "path": "units/unit-1/page128.xhtml"
+        },
+        {
+          "title": "4.4 Kəmiyyətin qiymətinin müəyyən faiz artırılması və azaldılması",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "STEAM. Genealogiya",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "Birinci yarımil üzrə ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page136.xhtml"
+        },
+        {
+          "title": "Sözlük",
+          "page": 1,
+          "path": "units/unit-1/page138.xhtml"
+        },
+        {
+          "title": "Cavablar",
+          "page": 1,
+          "path": "units/unit-1/page140.xhtml"
+        }
+      ]
+    }
+  ],
+  "riyaziyyat-5-h2": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "Bölmə 5. Dəyişəni olan ifadələr. Tənlik. Bərabərsizlik",
+          "page": 1,
+          "path": "units/unit-1/page5.xhtml"
+        },
+        {
+          "title": "İlkin yoxlama",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "5.1 Dəyişəni olan ifadələr",
+          "page": 1,
+          "path": "units/unit-1/page7.xhtml"
+        },
+        {
+          "title": "5.2 Birdəyişənli ifadələrin sadələşdirilməsi",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "5.3 Bərabərlik və tənlik",
+          "page": 1,
+          "path": "units/unit-1/page13.xhtml"
+        },
+        {
+          "title": "5.4 Tənlik qurmaqla məsələ həlli",
+          "page": 1,
+          "path": "units/unit-1/page19.xhtml"
+        },
+        {
+          "title": "5.5 Bərabərsizliklər",
+          "page": 1,
+          "path": "units/unit-1/page23.xhtml"
+        },
+        {
+          "title": "5.6 Asılı dəyişənlər və asılı olmayan dəyişənlər",
+          "page": 1,
+          "path": "units/unit-1/page27.xhtml"
+        },
+        {
+          "title": "Xülasə",
+          "page": 1,
+          "path": "units/unit-1/page32.xhtml"
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page33.xhtml"
+        },
+        {
+          "title": "STEAM. Qlobal istiləşmə",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "Bölmə 6. Müstəvi fiqurlar",
+          "page": 1,
+          "path": "units/unit-1/page35.xhtml"
+        },
+        {
+          "title": "6.1 Konqruyent bucaqlar. Bucağın tənböləni",
+          "page": 1,
+          "path": "units/unit-1/page37.xhtml"
+        },
+        {
+          "title": "6.2 Qonşu və qarşılıqlı bucaqlar",
+          "page": 1,
+          "path": "units/unit-1/page41.xhtml"
+        },
+        {
+          "title": "Məsələlər",
+          "page": 1,
+          "path": "units/unit-1/page44.xhtml"
+        },
+        {
+          "title": "6.3 Düzbucaqlı üçbucağın sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page46.xhtml"
+        },
+        {
+          "title": "6.4 Düzbucaqlı və düzbucaqlı üçbucaqdan təşkil olunmuş fiqurun sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page49.xhtml"
+        },
+        {
+          "title": "6.5 Paralel və perpendikulyar düz xətlərin çəkilməsi",
+          "page": 1,
+          "path": "units/unit-1/page52.xhtml"
+        },
+        {
+          "title": "6.6 Üçbucağın çəkilməsi",
+          "page": 1,
+          "path": "units/unit-1/page56.xhtml"
+        },
+        {
+          "title": "STEAM. Avtomobil dayanacağı",
+          "page": 1,
+          "path": "units/unit-1/page60.xhtml"
+        },
+        {
+          "title": "Bölmə 7. Fəza fiqurları",
+          "page": 1,
+          "path": "units/unit-1/page61.xhtml"
+        },
+        {
+          "title": "7.1 Kub və kuboidın səthinin sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page63.xhtml"
+        },
+        {
+          "title": "7.2 Oturacağı düzbucaqlı üçbucaq olan düz prizmanın səthinin sahəsi",
+          "page": 1,
+          "path": "units/unit-1/page68.xhtml"
+        },
+        {
+          "title": "7.3 Düz prizmanın həcmi",
+          "page": 1,
+          "path": "units/unit-1/page71.xhtml"
+        },
+        {
+          "title": "7.4 Sahə vahidləri",
+          "page": 1,
+          "path": "units/unit-1/page76.xhtml"
+        },
+        {
+          "title": "7.5 Həcm vahidləri",
+          "page": 1,
+          "path": "units/unit-1/page79.xhtml"
+        },
+        {
+          "title": "STEAM. \"Quşlar bizim dostlarımızdır\".",
+          "page": 1,
+          "path": "units/unit-1/page84.xhtml"
+        },
+        {
+          "title": "Bölmə 8. Statistika və məlumatların təsviri",
+          "page": 1,
+          "path": "units/unit-1/page85.xhtml"
+        },
+        {
+          "title": "8.1 Ədədi orta",
+          "page": 1,
+          "path": "units/unit-1/page87.xhtml"
+        },
+        {
+          "title": "8.2 Dairəvi diaqram",
+          "page": 1,
+          "path": "units/unit-1/page91.xhtml"
+        },
+        {
+          "title": "8.3 Məlumatların təsviri",
+          "page": 1,
+          "path": "units/unit-1/page93.xhtml"
+        },
+        {
+          "title": "STEAM. \"COVİD-19\" infeksiyasının yayılma statistikası",
+          "page": 1,
+          "path": "units/unit-1/page98.xhtml"
+        },
+        {
+          "title": "5-ci sinif üzrə ümumiləşdirici tapşırıqlar",
+          "page": 1,
+          "path": "units/unit-1/page99.xhtml"
+        },
+        {
+          "title": "Sözlük",
+          "page": 1,
+          "path": "units/unit-1/page104.xhtml"
+        },
+        {
+          "title": "Cavablar",
+          "page": 1,
+          "path": "units/unit-1/page107.xhtml"
+        }
+      ]
+    }
+  ],
+  "azerbaycan-tarixi-5": [
+    {
+      "chapter": "Mövzular",
+      "topics": [
+        {
+          "title": "I Bölmə. Qədim Azərbaycan",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "1. Tarix necə öyrənilir?",
+          "page": 1,
+          "path": "units/unit-1/page6.xhtml"
+        },
+        {
+          "title": "2. Vətənim Azərbaycan",
+          "page": 1,
+          "path": "units/unit-1/page10.xhtml"
+        },
+        {
+          "title": "3. Azərbaycanda ilk insan məskənləri",
+          "page": 1,
+          "path": "units/unit-1/page14.xhtml"
+        },
+        {
+          "title": "4. Əmək alətləri necə yarandı?",
+          "page": 1,
+          "path": "units/unit-1/page20.xhtml"
+        },
+        {
+          "title": "5. Dövlətlər nə üçün lazımdır?",
+          "page": 1,
+          "path": "units/unit-1/page24.xhtml"
+        },
+        {
+          "title": "6. Azərbaycanın qədim dövlətləri",
+          "page": 1,
+          "path": "units/unit-1/page28.xhtml"
+        },
+        {
+          "title": "II Bölmə. Azərbaycan dövlətləri",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "7. Əsarətlə barışmayan qəhrəman",
+          "page": 1,
+          "path": "units/unit-1/page34.xhtml"
+        },
+        {
+          "title": "8. Azərbaycanı birləşdirən ilk hökmdar",
+          "page": 1,
+          "path": "units/unit-1/page38.xhtml"
+        },
+        {
+          "title": "9. Səlcuqlar və Azərbaycan",
+          "page": 1,
+          "path": "units/unit-1/page42.xhtml"
+        },
+        {
+          "title": "10. Atabəy Şəmsəddin Eldəniz",
+          "page": 1,
+          "path": "units/unit-1/page46.xhtml"
+        },
+        {
+          "title": "11. Qara Yusif kim idi?",
+          "page": 1,
+          "path": "units/unit-1/page50.xhtml"
+        },
+        {
+          "title": "12. Həsən padşah Bayandur",
+          "page": 1,
+          "path": "units/unit-1/page54.xhtml"
+        },
+        {
+          "title": "13. Şeyx necə şah oldu?",
+          "page": 1,
+          "path": "units/unit-1/page58.xhtml"
+        },
+        {
+          "title": "14. Tariximizdə qadınlar",
+          "page": 1,
+          "path": "units/unit-1/page64.xhtml"
+        },
+        {
+          "title": "15. Şərqin son fatehi",
+          "page": 1,
+          "path": "units/unit-1/page69.xhtml"
+        },
+        {
+          "title": "16. Birlik yoxdursa, dirilik də yoxdur",
+          "page": 1,
+          "path": "units/unit-1/page72.xhtml"
+        },
+        {
+          "title": "17. Azərbaycan necə parçalandı?",
+          "page": 1,
+          "path": "units/unit-1/page78.xhtml"
+        },
+        {
+          "title": "III Bölmə. Qalalar və şəhərlər",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "18. Daş keşikçilər",
+          "page": 1,
+          "path": "units/unit-1/page82.xhtml"
+        },
+        {
+          "title": "19. Şəhərlər necə yarandı?",
+          "page": 1,
+          "path": "units/unit-1/page86.xhtml"
+        },
+        {
+          "title": "20. Qədim Azərbaycan şəhərləri",
+          "page": 1,
+          "path": "units/unit-1/page90.xhtml"
+        },
+        {
+          "title": "21. Azərbaycanın taxtı - Təbriz",
+          "page": 1,
+          "path": "units/unit-1/page94.xhtml"
+        },
+        {
+          "title": "IV Bölmə. Azərbaycan respublikaları",
+          "page": 1,
+          "path": "units/unit-1/page98.xhtml"
+        },
+        {
+          "title": "22. Müsəlman Şərqinin ilk Cümhuriyyəti",
+          "page": 1,
+          "path": "units/unit-1/page98.xhtml"
+        },
+        {
+          "title": "23. Sovet işğalı",
+          "page": 1,
+          "path": "units/unit-1/page102.xhtml"
+        },
+        {
+          "title": "24. Azərbaycan xalqı faşizmə qarşı",
+          "page": 1,
+          "path": "units/unit-1/page105.xhtml"
+        },
+        {
+          "title": "25. Dövlət müstəqilliyinin bərpası",
+          "page": 1,
+          "path": "units/unit-1/page110.xhtml"
+        },
+        {
+          "title": "26. Birinci Qarabağ müharibəsi",
+          "page": 1,
+          "path": "units/unit-1/page112.xhtml"
+        },
+        {
+          "title": "27. Dövlətin xilaskarı",
+          "page": 1,
+          "path": "units/unit-1/page119.xhtml"
+        },
+        {
+          "title": "28. Müzəffər Ali Baş Komandan",
+          "page": 1,
+          "path": "units/unit-1/page124.xhtml"
+        },
+        {
+          "title": "29. Böyük Zəfərin ilk qaranquşu - Aprel döyüşləri",
+          "page": 1,
+          "path": "units/unit-1/page130.xhtml"
+        },
+        {
+          "title": "30. Qanı ilə tarix yazan qəhrəmanlar",
+          "page": 1,
+          "path": "units/unit-1/page135.xhtml"
+        },
+        {
+          "title": "31. Vətən müharibəsi",
+          "page": 1,
+          "path": "units/unit-1/page139.xhtml"
+        },
+        {
+          "title": "32. Qarabağda quruculuq",
+          "page": 1,
+          "path": "units/unit-1/page143.xhtml"
+        },
+        {
+          "title": "V Bölmə. Mədəniyyət inciləri",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "33. “Kitabi-Dədə Qorqud”.",
+          "page": 1,
+          "path": "units/unit-1/page146.xhtml"
+        },
+        {
+          "title": "34. Nizami Gəncəvi",
+          "page": 1,
+          "path": "units/unit-1/page150.xhtml"
+        },
+        {
+          "title": "35. Elmlə siyasət yürüdən alimlər",
+          "page": 1,
+          "path": "units/unit-1/page154.xhtml"
+        },
+        {
+          "title": "36. Azərbaycan tarixinin atası",
+          "page": 1,
+          "path": "units/unit-1/page157.xhtml"
+        },
+        {
+          "title": "37. “Əkinçi”dən başlanan yol",
+          "page": 1,
+          "path": "units/unit-1/page160.xhtml"
+        },
+        {
+          "title": "38. Milli operanın banisi",
+          "page": 1,
+          "path": "units/unit-1/page162.xhtml"
+        },
+        {
+          "title": "39. Lütfi Zadə",
+          "page": 1,
+          "path": "units/unit-1/page166.xhtml"
+        }
+      ]
+    }
   ]
 }
