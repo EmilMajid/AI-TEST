@@ -117,6 +117,106 @@ def generate_text_with_failover(prompt, provider="gemini"):
     # No mock fallback - raise error if all providers fail
     raise RuntimeError("All LLM providers failed. Please configure valid API keys in .env file.")
 
+def generate_gold_standard_question(subject, grade, context, bloom="Anlama", skill="General"):
+    """
+    Generates a question following the 'Gold Standard 2.0' protocol.
+    Includes anti-hallucination, psychometric distractors, and self-correction.
+    """
+    
+    # Global Constraints (Gold Core)
+    gold_core = """
+    Sən peşəkar testologiya mütəxəssisisən. 
+    ❗ YALNIZ verilmiş kontekstdən istifadə et. Fakt əlavə ETMƏ.
+    ❗ Əgər məlumat kifayət deyilsə, "Məlumat çatışmır" yaz.
+    🚫 QADAĞANDIR: "Hansı DEYİL?", "Yanlışdır?" tipli inkar suallar.
+    🚫 QADAĞANDIR: Birdən çox düzgün cavab, subyektivlik.
+    Bloom səviyyəsi MƏCBURİ tətbiq edilməlidir.
+    Distraktorlar tipik şagird səhvlərini (Konseptual səhv, Termin qarışıqlığı və s.) əks etdirməlidir.
+    """
+
+    # Subject-specific prompt blocks (from docs/gold_standard_prompts.md)
+    subject_prompts = {
+        "Azərbaycan dili": "Dilçilik termini düzgün və dəqiq istifadə olunsun. Mövzu daxili məntiqə söykənsin.",
+        "Ədəbiyyat": "Ədəbi suallarda subyektivlik YOXDUR. Simvolik analiz səhvlərini distraktor et.",
+        "Riyaziyyat": "Hesablamanı mərhələlərlə apar. Cavabı sonda YOXLA (Internal Check).",
+        "Tarix": "Səbəb-nəticə və Analiz bacarığını ölç. Başqa dövrə aid hadisələri distraktor et.",
+        "Xarici dil": "Leksika yalnız sinif səviyyəsinə uyğun olsun. Tipik zaman və ya söz forması səhvləri yarat."
+    }
+    
+    specific_rule = subject_prompts.get(subject, "Fənn prinsiplərinə uyğun dəqiq sual hazırla.")
+
+    # MOCK MODE Fallback
+    if os.environ.get("MOCK_MODE") == "true":
+        return json.dumps({
+            "question": f"{subject} fənni üzrə ({grade}-cı sinif) {skill} mövzusuna aid nümunəvi sual?",
+            "options": ["A", "B", "C", "D"],
+            "correct_index": 0,
+            "bloom_level": bloom,
+            "difficulty": "Orta",
+            "measured_skill": skill,
+            "operational_description": "...",
+            "explanation": {"correct": "...", "distractors": {"A": "...", "B": "...", "C": "..."}},
+            "distractor_diagnostics": {"A": "conceptual_error", "B": "typical_mistake", "C": "term_confusion"},
+            "solution_steps": ["step1", "step2"],
+            "estimated_time_sec": 60,
+            "irt_proxy": {"difficulty_estimate": 0.5, "discrimination_estimate": 0.4}
+        }, ensure_ascii=False)
+
+    main_prompt = f"""
+    {gold_core}
+    FƏNN: {subject}
+    SİNİF: {grade}
+    BLOOM: {bloom}
+    MÖVZU/BACARIQ: {skill}
+    
+    {specific_rule}
+    
+    KONTEKST (MƏTİN):
+    {context}
+    
+    TƏLƏB: 
+    1. Əvvəlcə daxili olaraq sualı həll et. 
+    2. Əgər daxili həllin `correct_index` ilə üst-üstə düşmürsə, sualı yenidən qur.
+    3. Yalnız yekun, yoxlanılmış sualı aşağıdakı JSON formatında ver:
+    {{
+      "question": "...",
+      "options": ["A", "B", "C", "D"],
+      "correct_index": 0,
+      "bloom_level": "{bloom}",
+      "difficulty": "Orta",
+      "measured_skill": "{skill}",
+      "operational_description": "...",
+      "explanation": {{
+        "correct": "...",
+        "distractors": {{ "A": "...", "B": "...", "C": "..." }}
+      }},
+      "distractor_diagnostics": {{
+        "A": "conceptual_error | partial_truth | typical_mistake | term_confusion",
+        "B": "...", "C": "..."
+      }},
+      "solution_steps": ["Hesablama və ya məntiq addımları"],
+      "estimated_time_sec": 60,
+      "irt_proxy": {{
+        "difficulty_estimate": 0.1-1.0 arası,
+        "discrimination_estimate": 0.1-1.0 arası
+      }}
+    }}
+    """
+    
+    # Retry Loop (Version 2.1 Enhancement)
+    for attempt in range(2):
+        try:
+            raw_response = generate_text_with_failover(main_prompt)
+            if not raw_response: continue
+            
+            # Basic validation: ensure it's JSON and has core fields
+            if "{" in raw_response and "correct_index" in raw_response:
+                return raw_response
+        except Exception as e:
+            print(f"Attempt {attempt+1} failed: {e}")
+            
+    return None
+
 def extract_triples(text, provider="gemini", subject_context="Ümumi"):
     """
     Extracts Subject-Predicate-Object triples from a given text using an LLM.

@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 import json
 import os
 from pathlib import Path
-from llm_utils import generate_text_with_failover
+from llm_utils import generate_gold_standard_question
 
 # Output files
 CHUNKS_FILE = "data/textbook-chunks.jsonl"
@@ -86,21 +86,40 @@ def generate_question_bank():
         if not current_prompt:
              current_prompt = f"Aşağıdakı mətndən 3 ədəd test sualı (JSON formatında) yarat:\n\n{full_text[:2000]}"
 
-        # Call LLM
-        response = generate_text_with_failover(current_prompt, provider="gemini")
+        # Call Gold Standard Generator
+        response = generate_gold_standard_question(
+            subject=data["subject"],
+            grade=data["grade"],
+            context=full_text,
+            bloom="Təhlil" if count % 2 == 0 else "Anlama", # Simple distribution for prototype
+            skill=f"Səhifə {data['page']} Analizi"
+        )
         
         if not response:
-            # Skip if LLM fails - no mock data
             print("  -> AI failed, skipping this chunk.")
             questions = []
         else:
-            # Parse JSON response
             try:
                 # Clean up markdown
                 clean_json = response.replace("```json", "").replace("```", "").strip()
+                # If there are multiple JSON blocks or extra text, attempt to find the JSON
+                if "{" in clean_json:
+                    start = clean_json.find("{")
+                    end = clean_json.rfind("}") + 1
+                    clean_json = clean_json[start:end]
+                
                 parsed = json.loads(clean_json)
-                questions = parsed.get("questions", [])
-                print(f"  -> Generated {len(questions)} questions.")
+                
+                # The generator now returns a single question JSON by default, 
+                # but let's handle both single and multiple for robustness.
+                if isinstance(parsed, list):
+                    questions = parsed
+                elif "questions" in parsed:
+                    questions = parsed["questions"]
+                else:
+                    questions = [parsed]
+                    
+                print(f"  -> Generated {len(questions)} Gold Standard questions.")
             except Exception as e:
                 print(f"  -> JSON Parse Error: {e}")
                 questions = []
