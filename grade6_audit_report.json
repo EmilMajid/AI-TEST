@@ -1,0 +1,59 @@
+{
+  "grade": 6,
+  "totalBooks": 23,
+  "summary": {
+    "ok": 21,
+    "suspicious": 2,
+    "noTopics": 0
+  },
+  "issues": [
+    {
+      "title": "Alman dili 6 (əsas xarici dil)",
+      "id": "alman-dili-6",
+      "subject": "Xarici dil",
+      "source": "Extracted",
+      "topicCount": 2,
+      "status": "⚠️ SUSPICIOUS-LOW (2)",
+      "topics": [
+        {
+          "title": "Səhifə sayı 176.1Hesab-nəşriyyat həcmi  15,7. Fiziki çap vərəqi 22. Formatı 57x82/8.",
+          "page": 2,
+          "path": ""
+        },
+        {
+          "title": "Pulsuz. Bakı – 20 21Bəxtiyar Ələkbərov",
+          "page": 2,
+          "path": ""
+        }
+      ],
+      "hasMore": false
+    },
+    {
+      "title": "Fransız dili 6 (ikinci xarici dil)",
+      "id": "fransiz-dili-6-2",
+      "subject": "İkinci xarici dil",
+      "source": "Extracted",
+      "topicCount": 3,
+      "status": "⚠️ SUSPICIOUS-LOW (3)",
+      "topics": [
+        {
+          "title": "Page 1",
+          "page": 0,
+          "path": ""
+        },
+        {
+          "title": "2.pdf",
+          "page": 0,
+          "path": ""
+        },
+        {
+          "title": "Page 1",
+          "page": 2,
+          "path": ""
+        }
+      ],
+      "hasMore": false
+    }
+  ],
+  "timestamp": "2026-01-27T12:37:16.124Z"
+}
