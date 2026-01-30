@@ -385,8 +385,7 @@
       "title": "İnformatika 8",
       "subject": "İnformatika",
       "type": "html",
-      "path": "/textbooks/8/informatika/cover.xhtml",
-      "epubUrl": "https://www.e-derslik.edu.az/books/369/369.epub",
+      "path": "/textbooks/8/informatika/informatika-8-az/basla.html",
       "contentPath": "public/textbooks/8/informatika"
     },
     {
@@ -394,87 +393,86 @@
       "title": "Azərbaycan dili 8",
       "subject": "Azərbaycan dili",
       "type": "html",
-      "path": "/textbooks/8/azerbaycan-dili/basla.html",
-      "contentPath": "public/textbooks/8/azerbaycan-dili",
-      "epubUrl": "https://www.e-derslik.edu.az/books/784/784.epub"
+      "path": "/textbooks/8/azerbaycan-dili/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/8/azerbaycan-dili"
     },
     {
-      "id": "edebiyyat",
+      "id": "edebiyyat-8",
       "originalId": "793",
       "subject": "Ədəbiyyat",
-      "path": "/textbooks/8/edebiyyat/cover.xhtml",
+      "path": "/textbooks/8/edebiyyat/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Ədəbiyyat 8",
       "contentPath": "public/textbooks/8/edebiyyat"
     },
     {
-      "id": "azerbaycan-tarixi",
+      "id": "azerbaycan-tarixi-8",
       "originalId": "799",
       "subject": "Azərbaycan tarixi",
-      "path": "/textbooks/8/azerbaycan-tarixi/cover.xhtml",
+      "path": "/textbooks/8/azerbaycan-tarixi/azerbaycan-tarixi-8-az/basla.html",
       "type": "html",
       "title": "Azərbaycan tarixi 8",
       "contentPath": "public/textbooks/8/azerbaycan-tarixi"
     },
     {
-      "id": "umumi-tarix",
+      "id": "umumi-tarix-8",
       "originalId": "791",
       "subject": "Ümumi tarix",
-      "path": "/textbooks/8/umumi-tarix/cover.xhtml",
+      "path": "/textbooks/8/umumi-tarix/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Ümumi tarix 8",
       "contentPath": "public/textbooks/8/umumi-tarix"
     },
     {
-      "id": "riyaziyyat",
+      "id": "riyaziyyat-8",
       "originalId": "393",
       "subject": "Riyaziyyat",
-      "path": "/textbooks/8/riyaziyyat/cover.xhtml",
+      "path": "/textbooks/8/riyaziyyat/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Riyaziyyat 8",
       "contentPath": "public/textbooks/8/riyaziyyat"
     },
     {
-      "id": "fizika",
+      "id": "fizika-8",
       "originalId": "381",
       "subject": "Fizika",
-      "path": "/textbooks/8/fizika/cover.xhtml",
+      "path": "/textbooks/8/fizika/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Fizika 8",
       "contentPath": "public/textbooks/8/fizika"
     },
     {
-      "id": "kimya",
+      "id": "kimya-8",
       "originalId": "395",
       "subject": "Kimya",
-      "path": "/textbooks/8/kimya/cover.xhtml",
+      "path": "/textbooks/8/kimya/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Kimya 8",
       "contentPath": "public/textbooks/8/kimya"
     },
     {
-      "id": "biologiya",
+      "id": "biologiya-8",
       "originalId": "383",
       "subject": "Biologiya",
-      "path": "/textbooks/8/biologiya/cover.xhtml",
+      "path": "/textbooks/8/biologiya/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Biologiya 8",
       "contentPath": "public/textbooks/8/biologiya"
     },
     {
-      "id": "cografiya",
+      "id": "cografiya-8",
       "originalId": "374",
       "subject": "Coğrafiya",
-      "path": "/textbooks/8/cografiya/cover.xhtml",
+      "path": "/textbooks/8/cografiya/OEBPS/cover.xhtml",
       "type": "html",
       "title": "Coğrafiya 8",
       "contentPath": "public/textbooks/8/cografiya"
     },
     {
-      "id": "ingilis-dili",
+      "id": "ingilis-dili-8",
       "originalId": "797",
       "subject": "Xarici dil",
-      "path": "/textbooks/8/ingilis-dili/cover.xhtml",
+      "path": "/textbooks/8/ingilis-dili/OEBPS/cover.xhtml",
       "type": "html",
       "title": "İngilis dili 8",
       "contentPath": "public/textbooks/8/ingilis-dili"
@@ -499,7 +497,7 @@
     {
       "id": "tesviri-incesenet-8",
       "title": "Təsviri incəsənət 8",
-      "subject": "Təsviri incəsənət",
+      "subject": "Təsviri İncəsənət",
       "type": "pdf",
       "path": "/textbooks/8/tesviri-incesenet/book.pdf",
       "contentPath": "public/textbooks/8/tesviri-incesenet"
@@ -519,6 +517,54 @@
       "type": "pdf",
       "path": "/textbooks/8/fiziki-terbiye/book.pdf",
       "contentPath": "public/textbooks/8/fiziki-terbiye"
+    },
+    {
+      "id": "rus-dili-8",
+      "title": "Rus dili 8 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/rus-dili-esas/book.pdf",
+      "contentPath": "public/textbooks/8/rus-dili-esas"
+    },
+    {
+      "id": "rus-dili-ikinci-8",
+      "title": "Rus dili 8 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/rus-dili-ikinci/book.pdf",
+      "contentPath": "public/textbooks/8/rus-dili-ikinci"
+    },
+    {
+      "id": "fransiz-dili-8",
+      "title": "Fransız dili 8 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/fransiz-dili-esas/book.pdf",
+      "contentPath": "public/textbooks/8/fransiz-dili-esas"
+    },
+    {
+      "id": "fransiz-dili-ikinci-8",
+      "title": "Fransız dili 8 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/fransiz-dili-ikinci/book.pdf",
+      "contentPath": "public/textbooks/8/fransiz-dili-ikinci"
+    },
+    {
+      "id": "alman-dili-8",
+      "title": "Alman dili 8 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/alman-dili-esas/book.pdf",
+      "contentPath": "public/textbooks/8/alman-dili-esas"
+    },
+    {
+      "id": "alman-dili-ikinci-8",
+      "title": "Alman dili 8 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/8/alman-dili-ikinci/book.pdf",
+      "contentPath": "public/textbooks/8/alman-dili-ikinci"
     }
   ]
 }
