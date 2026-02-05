@@ -22,7 +22,8 @@ def load_env_file(filepath):
                    (value.startswith("'") and value.endswith("'")):
                     value = value[1:-1]
                 
-                os.environ[key] = value
+                if key not in os.environ:
+                    os.environ[key] = value
 
 # Load .env and .env.local
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,7 +41,53 @@ def get_api_key(provider):
          return os.environ.get("XAI_API_KEY")
     return None
 
+import base64
+
+def get_image_data(image_path):
+    """Returns base64 encoded image data and its mime type."""
+    try:
+        with open(image_path, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+        mime_type = "image/jpeg" if image_path.lower().endswith((".jpg", ".jpeg")) else "image/png"
+        return encoded_string, mime_type
+    except Exception as e:
+        print(f"Error encoding image {image_path}: {e}")
+        return None, None
+
+def call_gemini_vision(prompt, image_paths, api_key):
+    """Calls Gemini 1.5 Flash with multiple images."""
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    headers = {"Content-Type": "application/json"}
+    
+    parts = [{"text": prompt}]
+    for path in image_paths:
+        data, mime = get_image_data(path)
+        if data:
+            parts.append({
+                "inline_data": {
+                    "mime_type": mime,
+                    "data": data
+                }
+            })
+    
+    data = {
+        "contents": [{
+            "parts": parts
+        }]
+    }
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        response.raise_for_status()
+        result = response.json()
+        return result['candidates'][0]['content']['parts'][0]['text']
+    except Exception as e:
+        print(f"Gemini Vision API Error: {e}")
+        if hasattr(e, 'response') and e.response:
+            print(f"Response: {e.response.text}")
+        return None
+
 def call_gemini(prompt, api_key):
+    """Standard Gemini 1.5 Flash text-only call."""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     data = {
@@ -48,7 +95,6 @@ def call_gemini(prompt, api_key):
             "parts": [{"text": prompt}]
         }]
     }
-    
     try:
         response = requests.post(url, headers=headers, json=data)
         response.raise_for_status()
@@ -56,11 +102,122 @@ def call_gemini(prompt, api_key):
         return result['candidates'][0]['content']['parts'][0]['text']
     except Exception as e:
         print(f"Gemini API Error: {e}")
-        try:
-             print(f"Response: {response.text}")
-        except:
-             pass
         return None
+
+def call_xai_vision(prompt, image_paths, api_key):
+    """Calls XAI Grok Vision API with multiple images."""
+    url = "https://api.x.ai/v1/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}"
+    }
+    
+    content = [{"type": "text", "text": prompt}]
+    for path in image_paths:
+        data, mime = get_image_data(path)
+        if data:
+            content.append({
+                "type": "image_url",
+                "image_url": {
+                    "url": f"data:{mime};base64,{data}"
+                }
+            })
+    
+    data = {
+        "model": "grok-vision-beta",
+        "messages": [{"role": "user", "content": content}],
+        "temperature": 0.1
+    }
+    
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        response.raise_for_status()
+        result = response.json()
+        return result['choices'][0]['message']['content']
+    except Exception as e:
+        print(f"XAI Vision API Error: {e}")
+        if hasattr(e, 'response') and e.response:
+            print(f"Response: {e.response.text}")
+        return None
+
+def generate_gold_standard_question_vision(subject, grade, image_paths, bloom="Anlama", skill="General"):
+    """
+    Generates a question from IMAGES following the 'Gold Standard 2.0' protocol.
+    With failover support: Gemini -> XAI
+    """
+    
+    # MOCK MODE Fallback
+    if os.environ.get("MOCK_MODE") == "true":
+        return json.dumps({
+            "question": f"{subject} fənni üzrə ({grade}-cı sinif) {skill} mövzusuna aid nümunəvi (VİSİON) sual?",
+            "options": ["A", "B", "C", "D"],
+            "correct_index": 0,
+            "bloom_level": bloom,
+            "difficulty": "Orta",
+            "measured_skill": skill,
+            "operational_description": "VİSİON MOCK MODE",
+            "explanation": {"correct": "...", "distractors": {"A": "...", "B": "...", "C": "..."}},
+            "distractor_diagnostics": {"A": "conceptual_error", "B": "typical_mistake", "C": "term_confusion"},
+            "solution_steps": ["step1", "step2"],
+            "estimated_time_sec": 60,
+            "irt_proxy": {"difficulty_estimate": 0.5, "discrimination_estimate": 0.4}
+        }, ensure_ascii=False)
+
+    gold_core = """
+    Sən peşəkar testologiya mütəxəssisisən. 
+    ❗ Təqdim olunan ŞƏKİLLƏRDƏKİ mətni oxu və ordakı məlumatdan istifadə et.
+    ❗ Əgər məlumat kifayət deyilsə, "Məlumat çatışmır" yaz.
+    🚫 QADAĞANDIR: "Hansı DEYİL?", "Yanlışdır?" tipli inkar suallar.
+    🚫 QADAĞANDIR: Birdən çox düzgün cavab, subyektivlik.
+    Bloom səviyyəsi MƏCBURİ tətbiq edilməlidir.
+    Distraktorlar tipik şagird səhvlərini əks etdirməlidir.
+    """
+    
+    prompt = f"""
+    {gold_core}
+    FƏNN: {subject}
+    SİNİF: {grade}
+    BLOOM: {bloom}
+    MÖVZU/BACARIQ: {skill}
+    
+    TƏLƏB: Şəkillərdəki məlumat əsasında aşağıdakı JSON formatında sual hazırla:
+    {{
+      "question": "...",
+      "options": ["A", "B", "C", "D"],
+      "correct_index": 0,
+      "bloom_level": "{bloom}",
+      "difficulty": "Orta",
+      "measured_skill": "{skill}",
+      "operational_description": "...",
+      "explanation": {{
+        "correct": "...",
+        "distractors": {{ "A": "...", "B": "...", "C": "..." }}
+      }},
+      "distractor_diagnostics": {{
+        "A": "conceptual_error", "B": "partial_truth", "C": "typical_mistake"
+      }},
+      "solution_steps": ["..."],
+      "estimated_time_sec": 60,
+      "irt_proxy": {{ "difficulty_estimate": 0.5, "discrimination_estimate": 0.5 }}
+    }}
+    """
+    
+    # Try Gemini first
+    gemini_key = get_api_key("gemini")
+    if gemini_key and "placeholder" not in gemini_key:
+        print("Attempting with Gemini Vision...")
+        res = call_gemini_vision(prompt, image_paths[:5], gemini_key)
+        if res: return res
+        
+    # Failover to XAI Vision
+    xai_key = get_api_key("xai")
+    if xai_key:
+        print("Attempting with XAI Vision (Grok)...")
+        # Ensure we don't send too many images at once
+        res = call_xai_vision(prompt, image_paths[:3], xai_key)
+        if res: return res
+            
+    return None
 
 def call_openai_compatible(prompt, api_key, base_url, model):
     headers = {
@@ -115,7 +272,8 @@ def generate_text_with_failover(prompt, provider="gemini"):
             print(f"Provider {current_provider} failed or returned empty. Trying next...")
             
     # No mock fallback - raise error if all providers fail
-    raise RuntimeError("All LLM providers failed. Please configure valid API keys in .env file.")
+    print("⚠️ All LLM providers failed. Please configure valid API keys in .env file.")
+    return None
 
 def generate_gold_standard_question(subject, grade, context, bloom="Anlama", skill="General"):
     """

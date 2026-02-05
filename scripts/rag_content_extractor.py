@@ -1,32 +1,188 @@
 """
 RAG Content Extractor - Dərslik məlumatlarını çıxarıb strukturlaşdırır
+Enhanced with multilingual OCR, logging, and quality metrics
 """
 import pdfplumber
 import pytesseract
-from pdf2image import convert_from_path
+import fitz # PyMuPDF
+from PIL import Image
+import io
 import os
 import json
 import re
-from typing import List, Dict, Any
+import logging
+from typing import List, Dict, Any, Optional
 from pathlib import Path
+from datetime import datetime
+
 try:
-    from llm_utils import extract_triples
+    from llm_utils import extract_triples, call_gemini_vision, call_xai_vision, get_api_key
 except ImportError:
     # Fallback if running from root
     import sys
     sys.path.append(str(Path(__file__).parent))
-    from llm_utils import extract_triples
+    from llm_utils import extract_triples, call_gemini_vision, call_xai_vision, get_api_key
+
+# Optional: Progress bar
+try:
+    from tqdm import tqdm
+    TQDM_AVAILABLE = True
+except ImportError:
+    TQDM_AVAILABLE = False
+
+class ChunkValidator:
+    """Validates chunk quality before adding to RAG database"""
+    
+    QUALITY_THRESHOLD_REJECT = 60
+    QUALITY_THRESHOLD_WARN = 80
+    MIN_CHUNK_LENGTH = 100
+    
+    @staticmethod
+    def validate(chunk: Dict) -> tuple[bool, str]:
+        """Validates chunk and returns (is_valid, reason)"""
+        text = chunk.get("text", "")
+        score = chunk.get("quality_score", 0)
+        
+        # Hard reject - low quality
+        if score < ChunkValidator.QUALITY_THRESHOLD_REJECT:
+            return False, "LOW_QUALITY_SCORE"
+        
+        # Hard reject - too short
+        if len(text) < ChunkValidator.MIN_CHUNK_LENGTH:
+            return False, "TOO_SHORT"
+        
+        # Hard reject - gibberish check
+        if ChunkValidator.is_gibberish(text):
+            return False, "GIBBERISH"
+        
+        # Soft warning - medium quality
+        if score < ChunkValidator.QUALITY_THRESHOLD_WARN:
+            chunk["quality_warning"] = True
+        
+        return True, "OK"
+    
+    @staticmethod
+    def is_gibberish(text: str) -> bool:
+        """Checks if text appears to be gibberish"""
+        # Check ratio of spaces to characters
+        if len(text) > 0:
+            space_ratio = text.count(' ') / len(text)
+            if space_ratio < 0.05 or space_ratio > 0.5:  # Too few or too many spaces
+                return True
+        
+        # Check for excessive special characters
+        special_chars = sum(1 for c in text if not c.isalnum() and not c.isspace())
+        if len(text) > 0 and special_chars / len(text) > 0.3:
+            return True
+        
+        return False
 
 class ContentExtractor:
-    """Dərsliklərdən mətn, şəkil və düsturları çıxarır"""
+    """Dərsliklərdən mətn, şəkil və düsturları çıxarır - Enhanced with multilingual support"""
+    
+    # Subject-based language mapping for OCR
+    SUBJECT_LANG_MAP = {
+        'Rus dili': 'rus+aze+eng',
+        'Xarici dil': 'eng+aze',  # English
+        'İkinci xarici dil': 'rus+deu+fra+aze',  # Russian/German/French
+        'default': 'aze+eng+rus'
+    }
     
     def __init__(self):
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
-        self.output_dir = Path("data")  # Changed to 'data' to match unified pipeline
-        # self.output_dir.mkdir(exist_ok=True) # Pipeline handles this
+        self.output_dir = Path("data")
+        self.setup_logging()
     
-    def extract_pdf(self, pdf_path: str) -> Dict[str, Any]:
-        """PDF fayldan məlumatları çıxarır"""
+    def setup_logging(self):
+        """Initialize logging system"""
+        log_dir = Path("logs")
+        log_dir.mkdir(exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_file = log_dir / f"extraction_{timestamp}.log"
+        
+        logging.basicConfig(
+            filename=str(log_file),
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            encoding='utf-8'
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.info("RAG Content Extractor started")
+        print(f"Logging to: {log_file}")
+    
+    def get_ocr_lang(self, subject: str) -> str:
+        """Get OCR language parameter based on subject"""
+        lang = self.SUBJECT_LANG_MAP.get(subject, self.SUBJECT_LANG_MAP['default'])
+        self.logger.info(f"OCR language for '{subject}': {lang}")
+        return lang
+    
+    def is_valid_text(self, text: str) -> bool:
+        """Enhanced text validation"""
+        if not text or len(text.strip()) < 30:
+            return False
+        if "(cid:" in text:  # PDF font encoding problems
+            return False
+        # Check for reasonable amount of letters (Azerbaijani + Latin)
+        letter_count = len(re.findall(r'[a-zA-Zəöüçşğı]', text))
+        if letter_count < 10:
+            return False
+        return True
+
+    def extract_with_vision(self, image_data: bytes, subject: str) -> Optional[str]:
+        """Fallback to Vision AI (Gemini or XAI) for OCR"""
+        temp_img_path = None
+        try:
+            # Temporarily save image
+            temp_img_path = Path(f"temp_ocr_{datetime.now().timestamp()}.png")
+            with open(temp_img_path, "wb") as f:
+                f.write(image_data)
+            
+            prompt = f"Bu dərslik səhifəsindən mətni olduğu kimi çıxart. Fənn: {subject}. Yalnız mətni qaytar."
+            
+            # 1. Try Gemini
+            api_key_gemini = get_api_key("gemini")
+            if api_key_gemini and "placeholder" not in api_key_gemini:
+                self.logger.info("Attempting Vision OCR with Gemini...")
+                text = call_gemini_vision(prompt, [str(temp_img_path)], api_key_gemini)
+                if text: return text
+                
+            # 2. Try XAI (Grok-Vision)
+            api_key_xai = get_api_key("xai")
+            if api_key_xai and "placeholder" not in api_key_xai:
+                self.logger.info("Attempting Vision OCR with XAI (Grok)...")
+                text = call_xai_vision(prompt, [str(temp_img_path)], api_key_xai)
+                if text: return text
+                
+            return None
+        except Exception as e:
+            self.logger.error(f"Vision AI fallback failed: {e}")
+            return None
+        finally:
+            if temp_img_path and temp_img_path.exists():
+                try:
+                    temp_img_path.unlink()
+                except: pass
+    
+    def calculate_quality_score(self, text: str, ocr_used: bool = False) -> int:
+        """Calculate chunk quality score (0-100)"""
+        score = 50
+        
+        # Length bonuses
+        if len(text) > 200: score += 10
+        if len(text) > 500: score += 10
+        
+        # Quality indicators
+        if "(cid:" not in text: score += 10
+        if len(re.findall(r'[a-zA-Zəöüçşğı]', text)) > 50: score += 20
+        
+        # OCR penalty
+        if ocr_used: score -= 10
+        
+        return max(0, min(100, score))
+    
+    def extract_pdf(self, pdf_path: str, subject: str = "Ümumi") -> Dict[str, Any]:
+        """PDF fayldan məlumatları çıxarır - Enhanced with subject-based OCR (PyMuPDF)"""
         text_content = []
         formulas = []
         metadata = {
@@ -34,7 +190,17 @@ class ContentExtractor:
             "pages": 0
         }
         
+        ocr_lang = self.get_ocr_lang(subject)
+        self.logger.info(f"Processing: {pdf_path} (Subject: {subject})")
+        
+        doc_fitz = None
         try:
+            # Open with fitz for OCR capability
+            try:
+                doc_fitz = fitz.open(pdf_path)
+            except Exception as e:
+                self.logger.warning(f"Could not open PDF with fitz: {e}")
+            
             # Extract text and formulas from PDF
             with pdfplumber.open(pdf_path) as pdf:
                 metadata["pages"] = len(pdf.pages)
@@ -42,28 +208,49 @@ class ContentExtractor:
                 for page_num, page in enumerate(pdf.pages, 1):
                     # Text extraction
                     text = page.extract_text()
+                    ocr_used = False
                     
-                    # Check if text is valid (not empty, not just CIDs, reasonable length)
-                    is_valid_text = text and len(text.strip()) > 50 and "(cid:" not in text
-                    
-                    if not is_valid_text:
-                        # Fallback to OCR
-                        try:
-                            # Note: Requires poppler and tesseract installed
-                            images = convert_from_path(pdf_path, first_page=page_num, last_page=page_num)
-                            if images:
-                                ocr_text = pytesseract.image_to_string(images[0], lang='aze') # Try Azerbaijani first
-                                if ocr_text and len(ocr_text.strip()) > 10:
-                                    text = ocr_text
-                        except Exception as ocr_e:
-                            # OCR failures are silent fallbacks, we rely on what we have
-                            pass
+                    # Enhanced validation
+                    if not self.is_valid_text(text):
+                        # Fallback to OCR using PyMuPDF behavior
+                        if doc_fitz:
+                            try:
+                                # Load page (0-indexed)
+                                if page_num - 1 < len(doc_fitz):
+                                    page_fitz = doc_fitz[page_num - 1]
+                                    pix = page_fitz.get_pixmap(dpi=300)
+                                    img_data = pix.tobytes("png")
+                                    image = Image.open(io.BytesIO(img_data))
+                                    
+                                    ocr_text = pytesseract.image_to_string(
+                                        image, 
+                                        lang=ocr_lang,
+                                        config='--psm 3 --oem 3'
+                                    )
+                                    if self.is_valid_text(ocr_text):
+                                        text = ocr_text
+                                        ocr_used = True
+                                        self.logger.info(f"  Page {page_num}: OCR used successfully (fitz)")
+                            except Exception as ocr_e:
+                                self.logger.warning(f"  Page {page_num}: Tesseract OCR failed - {ocr_e}")
+                                
+                                # Fallback to Vision AI
+                                try:
+                                    vision_text = self.extract_with_vision(img_data, subject)
+                                    if vision_text and self.is_valid_text(vision_text):
+                                        text = vision_text
+                                        ocr_used = True
+                                        self.logger.info(f"  Page {page_num}: Vision AI (Gemini) used successfully")
+                                except Exception as vision_e:
+                                    self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
 
-                    if text:
+                    if text and self.is_valid_text(text):
                         text_content.append({
                             "page": page_num,
                             "text": text,
-                            "type": "text"
+                            "type": "text",
+                            "ocr_used": ocr_used,
+                            "quality_score": self.calculate_quality_score(text, ocr_used)
                         })
                         
                         # Formula extraction from text
@@ -77,16 +264,24 @@ class ContentExtractor:
                                     "type": "latex"
                                 })
             
+            if doc_fitz:
+                doc_fitz.close()
+                
             result = {
                 "content": text_content,
                 "formulas": formulas,
                 "metadata": metadata
             }
             
+            self.logger.info(f"Extracted {len(text_content)} pages, {len(formulas)} formulas")
             return result
             
         except Exception as e:
-            print(f"Error extracting {pdf_path}: {str(e)}")
+            if doc_fitz:
+                doc_fitz.close()
+            error_msg = f"Error extracting {pdf_path}: {str(e)}"
+            self.logger.error(error_msg)
+            print(f"❌ {error_msg}")
             return {
                 "content": [],
                 "formulas": [],
@@ -94,12 +289,13 @@ class ContentExtractor:
                 "error": str(e)
             }
     
-    def chunk_content(self, content: List[Dict], subject: str = "Ümumi", chunk_size: int = 500) -> List[Dict]:
-        """Məzmunu kiçik hissələrə bölür (chunking)"""
+    def chunk_content(self, content: List[Dict], subject: str = "Ümumi", grade: int = None, book_id: str = None, chunk_size: int = 500) -> List[Dict]:
+        """Məzmunu kiçik hissələrə bölür (chunking) - Enhanced with quality gate"""
         chunks = []
         current_chunk = []
         current_length = 0
         chunk_id = 0
+        rejected_chunks = []
         
         for item in content:
             text = item["text"]
@@ -108,13 +304,34 @@ class ContentExtractor:
             if current_length + len(words) > chunk_size:
                 if current_chunk:
                     chunk_text = " ".join(current_chunk)
-                    chunks.append({
+                    
+                    # Build chunk with orchestrator metadata
+                    chunk_obj = {
                         "id": chunk_id,
                         "text": chunk_text,
                         "page": item["page"],
                         "type": "chunk",
-                        "knowledge": extract_triples(chunk_text, provider="xai", subject_context=subject) # KAG Integration
-                    })
+                        "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False)),
+                        "ocr_used": item.get("ocr_used", False),
+                        # Orchestrator metadata
+                        "ingestion_timestamp": datetime.now().isoformat(),
+                        "processing_pipeline": "rag_content_extractor_v2",
+                        "subject_context": subject,
+                        "grade": grade,
+                        "book_id": book_id,
+                        "knowledge": []  # KAG placeholder
+                    }
+                    
+                    # Quality gate validation
+                    is_valid, reason = ChunkValidator.validate(chunk_obj)
+                    
+                    if is_valid:
+                        chunks.append(chunk_obj)
+                    else:
+                        chunk_obj["rejection_reason"] = reason
+                        rejected_chunks.append(chunk_obj)
+                        self.logger.warning(f"Chunk {chunk_id} rejected: {reason} (score: {chunk_obj['quality_score']})")
+                    
                     chunk_id += 1
                     current_chunk = []
                     current_length = 0
@@ -125,15 +342,86 @@ class ContentExtractor:
         # Add last chunk
         if current_chunk:
             chunk_text = " ".join(current_chunk)
-            chunks.append({
+            chunk_obj = {
                 "id": chunk_id,
                 "text": chunk_text,
                 "page": item["page"],
                 "type": "chunk",
-                "knowledge": extract_triples(chunk_text, provider="xai", subject_context=subject) # KAG Integration
-            })
+                "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False)),
+                "ocr_used": item.get("ocr_used", False),
+                "ingestion_timestamp": datetime.now().isoformat(),
+                "processing_pipeline": "rag_content_extractor_v2",
+                "subject_context": subject,
+                "grade": grade,
+                "book_id": book_id,
+                "knowledge": []
+            }
+            
+            is_valid, reason = ChunkValidator.validate(chunk_obj)
+            if is_valid:
+                chunks.append(chunk_obj)
+            else:
+                chunk_obj["rejection_reason"] = reason
+                rejected_chunks.append(chunk_obj)
+                self.logger.warning(f"Chunk {chunk_id} rejected: {reason}")
+        
+        # Log rejection summary
+        if rejected_chunks:
+            self.logger.info(f"Quality Gate: {len(chunks)} chunks accepted, {len(rejected_chunks)} rejected")
+            self.save_rejected_chunks(rejected_chunks, book_id)
         
         return chunks
+    
+    def save_rejected_chunks(self, rejected_chunks: List[Dict], book_id: str):
+        """Save rejected chunks to review queue"""
+        review_queue_path = Path("data/human_review_queue.jsonl")
+        
+        with open(review_queue_path, "a", encoding="utf-8") as f:
+            for chunk in rejected_chunks:
+                review_item = {
+                    "chunk_id": f"{book_id}_chunk_{chunk['id']}",
+                    "book_id": book_id,
+                    "reason": chunk["rejection_reason"],
+                    "quality_score": chunk.get("quality_score", 0),
+                    "text_preview": chunk["text"][:150] + "...",
+                    "page": chunk.get("page"),
+                    "timestamp": datetime.now().isoformat()
+                }
+                json.dump(review_item, f, ensure_ascii=False)
+                f.write("\n")
+        
+        self.logger.info(f"Saved {len(rejected_chunks)} chunks to review queue")
+    
+    def log_extraction_event(self, book_id: str, grade: int, subject: str, result: Dict):
+        """Log extraction event for audit and monitoring"""
+        event_log_path = Path("data/extraction_events.jsonl")
+        
+        chunks = result.get("chunks", [])
+        
+        # Calculate statistics
+        total_chunks = len(chunks)
+        avg_quality = sum(c.get("quality_score", 0) for c in chunks) / total_chunks if total_chunks > 0 else 0
+        ocr_usage = sum(1 for c in chunks if c.get("ocr_used", False))
+        
+        event = {
+            "event_type": "PDF_EXTRACTION_COMPLETE",
+            "book_id": book_id,
+            "grade": grade,
+            "subject": subject,
+            "timestamp": datetime.now().isoformat(),
+            "stats": {
+                "chunks_created": total_chunks,
+                "avg_quality_score": round(avg_quality, 2),
+                "ocr_pages": ocr_usage,
+                "total_pages": result.get("metadata", {}).get("pages", 0)
+            }
+        }
+        
+        with open(event_log_path, "a", encoding="utf-8") as f:
+            json.dump(event, f, ensure_ascii=False)
+            f.write("\n")
+        
+        self.logger.info(f"Event logged: {event['event_type']} for {book_id}")
 
 def process_unified_pipeline():
     """Reads textbooks.json, processes PDFs, and appends to existing chunks"""
@@ -178,9 +466,15 @@ def process_unified_pipeline():
 
     # Iterate over all grades and books
     for grade, books in textbooks_data.items():
-        for book in books:
+        print(f"Checking Grade {grade} ({len(books)} books)")
+        
+        # Wrap with progress bar if available
+        books_iter = tqdm(books, desc=f"Grade {grade}") if TQDM_AVAILABLE else books
+        
+        for book in books_iter:
             if book.get("type") == "pdf":
                 pdf_rel_path = book.get("path")
+                print(f"  - Found PDF entry: {book['title']} ({pdf_rel_path})")
                 pdf_path = None
                 
                 # 1. Try contentPath directory first
@@ -200,12 +494,25 @@ def process_unified_pipeline():
                          pdf_path = base_dir / "public" / "textbooks" / clean_path
 
                 if pdf_path and pdf_path.exists():
-                    print(f"Processing PDF: {pdf_path.name} (Grade {grade} - {book['subject']})")
+                    print(f"    -> Processing PDF: {pdf_path.name} (Grade {grade} - {book['subject']})")
                     try:
-                        extracted = extractor.extract_pdf(str(pdf_path))
+                        extracted = extractor.extract_pdf(str(pdf_path), subject=book['subject'])
                         # Only proceed if we got content
                         if extracted["content"]:
-                            file_chunks = extractor.chunk_content(extracted["content"], subject=book["subject"])
+                            file_chunks = extractor.chunk_content(
+                                extracted["content"], 
+                                subject=book["subject"],
+                                grade=int(grade),
+                                book_id=book["id"]
+                            )
+                            
+                            # Log extraction event
+                            extractor.log_extraction_event(
+                                book_id=book["id"],
+                                grade=int(grade),
+                                subject=book["subject"],
+                                result={"chunks": file_chunks, "metadata": extracted.get("metadata", {})}
+                            )
                             
                             # APPEND chunks to file immediately
                             with open(chunks_jsonl_path, "a", encoding="utf-8") as f:
