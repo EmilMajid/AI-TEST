@@ -90,7 +90,16 @@ class ContentExtractor:
     
     def __init__(self):
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
-        self.output_dir = Path("data")
+        project_root = Path(__file__).parent.parent
+        self.output_dir = project_root / "data"
+        self.tessdata_dir = (self.output_dir / "tessdata").resolve()
+        
+        # Configure Tesseract path
+        tesseract_bin = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        if Path(tesseract_bin).exists():
+            import pytesseract
+            pytesseract.pytesseract.tesseract_cmd = tesseract_bin
+            
         self.setup_logging()
     
     def setup_logging(self):
@@ -222,10 +231,15 @@ class ContentExtractor:
                                     img_data = pix.tobytes("png")
                                     image = Image.open(io.BytesIO(img_data))
                                     
+                                    # Configure OCR with local tessdata if available
+                                    ocr_config = f'--psm 3 --oem 3'
+                                    if self.tessdata_dir.exists():
+                                        ocr_config += f' --tessdata-dir "{self.tessdata_dir}"'
+                                        
                                     ocr_text = pytesseract.image_to_string(
                                         image, 
                                         lang=ocr_lang,
-                                        config='--psm 3 --oem 3'
+                                        config=ocr_config
                                     )
                                     if self.is_valid_text(ocr_text):
                                         text = ocr_text
@@ -281,7 +295,7 @@ class ContentExtractor:
                 doc_fitz.close()
             error_msg = f"Error extracting {pdf_path}: {str(e)}"
             self.logger.error(error_msg)
-            print(f"❌ {error_msg}")
+            print(f"Error: {error_msg}")
             return {
                 "content": [],
                 "formulas": [],
@@ -540,9 +554,9 @@ def process_unified_pipeline():
                         print(f"Failed to process {pdf_path.name}: {e}")
                 else:
                     if book.get("contentPath"):
-                         print(f"⚠️ PDF file not found for: {book['title']} (Checked {book['contentPath']} and path)")
+                         print(f"Warning: PDF file not found for: {book['title']} (Checked {book['contentPath']} and path)")
 
-    print("✅ Unified Extraction Complete (Incremental)!")
+    print("Unified Extraction Complete (Incremental)!")
 
 if __name__ == "__main__":
     process_unified_pipeline()
