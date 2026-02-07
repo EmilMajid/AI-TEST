@@ -17,6 +17,11 @@ def main():
         sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
         sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
+    # Parse arguments
+    target_ids = sys.argv[1:] if len(sys.argv) > 1 else []
+    if target_ids:
+        print(f"Targeted indexing for: {', '.join(target_ids)}")
+
     base_dir = Path(__file__).parent.parent
     textbooks_json = base_dir / "data" / "textbooks.json"
     chunks_jsonl = base_dir / "data" / "textbook-chunks.jsonl"
@@ -63,9 +68,12 @@ def main():
     total = 0
     
     for i, book in enumerate(pdf_books, 1):
+        if target_ids and book['id'] not in target_ids:
+            continue
+
         print(f"\n[{i}/{len(pdf_books)}] {book['title']}")
         
-        if book['id'] in indexed_books:
+        if not target_ids and book['id'] in indexed_books:
             print(f"  [i] Already indexed, skipping.")
             continue
             

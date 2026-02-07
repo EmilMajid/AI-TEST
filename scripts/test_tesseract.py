@@ -18,13 +18,15 @@ except Exception as e:
         print(f"Verified tesseract at: {tesseract_bin}")
         pytesseract.pytesseract.tesseract_cmd = tesseract_bin
         
-        config = f'--psm 3 --oem 3'
         if local_tessdata.exists():
-            config += f' --tessdata-dir "{local_tessdata}"'
-            print(f"Using local tessdata: {local_tessdata}")
+            import os
+            os.environ['TESSDATA_PREFIX'] = str(local_tessdata)
+            print(f"Set TESSDATA_PREFIX to: {local_tessdata}")
             
         try:
-            # List languages to verify tessdata-dir works
+            # Simple config
+            config = '--psm 3 --oem 3'
+            # List languages to verify TESSDATA_PREFIX works
             langs = pytesseract.get_languages(config=config)
             print(f"Available languages: {langs}")
             if 'aze' in langs:

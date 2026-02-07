@@ -92,7 +92,11 @@ class ContentExtractor:
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
         project_root = Path(__file__).parent.parent
         self.output_dir = project_root / "data"
+        # Standard path for Tesseract stability
         self.tessdata_dir = (self.output_dir / "tessdata").resolve()
+        
+        # Set TESSDATA_PREFIX environment variable so Tesseract finds our local packs
+        os.environ['TESSDATA_PREFIX'] = str(self.tessdata_dir)
         
         # Configure Tesseract path
         tesseract_bin = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -231,11 +235,9 @@ class ContentExtractor:
                                     img_data = pix.tobytes("png")
                                     image = Image.open(io.BytesIO(img_data))
                                     
-                                    # Configure OCR with local tessdata if available
+                                    # Simple config since TESSDATA_PREFIX is set
                                     ocr_config = f'--psm 3 --oem 3'
-                                    if self.tessdata_dir.exists():
-                                        ocr_config += f' --tessdata-dir "{self.tessdata_dir}"'
-                                        
+                                    
                                     ocr_text = pytesseract.image_to_string(
                                         image, 
                                         lang=ocr_lang,
