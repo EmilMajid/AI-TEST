@@ -48,20 +48,17 @@ def main():
                     existing.append(json.loads(line))
         print(f"Loaded {len(existing)} existing chunks")
     
-    # Rewrite existing
-    with open(chunks_jsonl, "w", encoding="utf-8") as f:
-        for chunk in existing:
-            if chunk.get("type") != "pdf_placeholder":
-                json.dump(chunk, f, ensure_ascii=False)
-                f.write("\n")
-    
-    # Identify already indexed books
-    indexed_books = set()
+    # Identify already indexed pages per book
+    indexed_pages = {} # book_id -> set of pages
     for chunk in existing:
-        if chunk.get("grade") == 8 and chunk.get("book_id"):
-            indexed_books.add(chunk.get("book_id"))
+        bid = chunk.get("book_id")
+        pnum = chunk.get("page") or chunk.get("metadata", {}).get("page")
+        if bid and pnum:
+            if bid not in indexed_pages:
+                indexed_pages[bid] = set()
+            indexed_pages[bid].add(pnum)
     
-    print(f"Skipping {len(indexed_books)} already indexed books: {', '.join(indexed_books)}")
+    print(f"Found existing data for {len(indexed_pages)} books.")
     
     # Process
     extractor = ContentExtractor()
@@ -73,9 +70,12 @@ def main():
 
         print(f"\n[{i}/{len(pdf_books)}] {book['title']}")
         
-        if not target_ids and book['id'] in indexed_books:
-            print(f"  [i] Already indexed, skipping.")
-            continue
+        # We don't skip the whole book here anymore, we skip within the page loop
+        book_indexed_pages = indexed_pages.get(book['id'], set())
+        if not target_ids and book['id'] in indexed_pages and len(book_indexed_pages) > 10:
+             # Basic heuristic: if it has >10 pages, maybe skip book if not targeted
+             # But for safety, let's keep it robust and skip individually
+             pass
             
         # Find PDF
         pdf_path = None
@@ -99,36 +99,33 @@ def main():
         print(f"  [*] Processing: {pdf_path.name}")
         
         try:
-            # Extract
-            extracted = extractor.extract_pdf(str(pdf_path), subject=book['subject'])
-            if not extracted["content"]:
-                print(f"  [!] No content extracted")
-                continue
+            # Incremental Extract, Chunk and Save
+            for page_result in extractor.extract_pdf_pages(str(pdf_path), subject=book['subject']):
+                page_data = page_result["page_data"]
+                page_num = page_data["page"]
+                
+                # SKIP if already indexed
+                if page_num in book_indexed_pages:
+                    continue
+                
+                # Chunk this single page
+                chunks = extractor.chunk_content(
+                    [page_data],
+                    subject=book["subject"],
+                    grade=8,
+                    book_id=book["id"]
+                )
+                
+                if chunks:
+                    # Save immediately
+                    with open(chunks_jsonl, "a", encoding="utf-8") as f:
+                        for chunk in chunks:
+                            json.dump(chunk, f, ensure_ascii=False)
+                            f.write("\n")
+                    
+                    total += len(chunks)
             
-            # Chunk
-            chunks = extractor.chunk_content(
-                extracted["content"],
-                subject=book["subject"],
-                grade=8,
-                book_id=book["id"]
-            )
-            
-            # Log event
-            extractor.log_extraction_event(
-                book_id=book["id"],
-                grade=8,
-                subject=book["subject"],
-                result={"chunks": chunks, "metadata": extracted.get("metadata", {})}
-            )
-            
-            # Save
-            with open(chunks_jsonl, "a", encoding="utf-8") as f:
-                for chunk in chunks:
-                    json.dump(chunk, f, ensure_ascii=False)
-                    f.write("\n")
-            
-            print(f"  [+] Saved {len(chunks)} chunks")
-            total += len(chunks)
+            print(f"  [+] Book completed incrementally. Total book chunks: {total}")
             
         except Exception as e:
             print(f"  [ERROR] {e}")

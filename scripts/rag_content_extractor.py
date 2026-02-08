@@ -194,6 +194,82 @@ class ContentExtractor:
         
         return max(0, min(100, score))
     
+    def extract_pdf_pages(self, pdf_path: str, subject: str = "Ümumi"):
+        """PDF fayldan məlumatları səhifə-səhifə çıxarır (generator)"""
+        ocr_lang = self.get_ocr_lang(subject)
+        self.logger.info(f"Incremental processing: {pdf_path} (Subject: {subject})")
+        
+        doc_fitz = None
+        try:
+            try:
+                doc_fitz = fitz.open(pdf_path)
+            except Exception as e:
+                self.logger.warning(f"Could not open PDF with fitz: {e}")
+            
+            with pdfplumber.open(pdf_path) as pdf:
+                for page_num, page in enumerate(pdf.pages, 1):
+                    text = page.extract_text()
+                    ocr_used = False
+                    
+                    if not self.is_valid_text(text):
+                        if doc_fitz and page_num - 1 < len(doc_fitz):
+                            try:
+                                page_fitz = doc_fitz[page_num - 1]
+                                pix = page_fitz.get_pixmap(dpi=300)
+                                img_data = pix.tobytes("png")
+                                image = Image.open(io.BytesIO(img_data))
+                                
+                                ocr_text = pytesseract.image_to_string(
+                                    image, 
+                                    lang=ocr_lang,
+                                    config='--psm 3 --oem 3'
+                                )
+                                if self.is_valid_text(ocr_text):
+                                    text = ocr_text
+                                    ocr_used = True
+                                    self.logger.info(f"  Page {page_num}: OCR used successfully (fitz)")
+                            except Exception as ocr_e:
+                                self.logger.warning(f"  Page {page_num}: Tesseract OCR failed - {ocr_e}")
+                                try:
+                                    vision_text = self.extract_with_vision(img_data, subject)
+                                    if vision_text and self.is_valid_text(vision_text):
+                                        text = vision_text
+                                        ocr_used = True
+                                        self.logger.info(f"  Page {page_num}: Vision AI (Gemini) used successfully")
+                                except Exception as vision_e:
+                                    self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
+
+                    if text and self.is_valid_text(text):
+                        page_data = {
+                            "page": page_num,
+                            "text": text,
+                            "type": "text",
+                            "ocr_used": ocr_used,
+                            "quality_score": self.calculate_quality_score(text, ocr_used)
+                        }
+                        
+                        # Formulas
+                        math_blocks = self.math_pattern.findall(text)
+                        page_formulas = []
+                        for match in math_blocks:
+                            formula = match[0] or match[1]
+                            if formula:
+                                page_formulas.append({
+                                    "page": page_num,
+                                    "formula": formula,
+                                    "type": "latex"
+                                })
+                        
+                        yield {"page_data": page_data, "formulas": page_formulas}
+            
+            if doc_fitz:
+                doc_fitz.close()
+                
+        except Exception as e:
+            if doc_fitz:
+                doc_fitz.close()
+            self.logger.error(f"Error in extract_pdf_pages: {e}")
+
     def extract_pdf(self, pdf_path: str, subject: str = "Ümumi") -> Dict[str, Any]:
         """PDF fayldan məlumatları çıxarır - Enhanced with subject-based OCR (PyMuPDF)"""
         text_content = []
