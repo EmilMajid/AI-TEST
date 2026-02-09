@@ -100,13 +100,9 @@ def main():
         
         try:
             # Incremental Extract, Chunk and Save
-            for page_result in extractor.extract_pdf_pages(str(pdf_path), subject=book['subject']):
+            for page_result in extractor.extract_pdf_pages(str(pdf_path), subject=book['subject'], skip_pages=book_indexed_pages):
                 page_data = page_result["page_data"]
                 page_num = page_data["page"]
-                
-                # SKIP if already indexed
-                if page_num in book_indexed_pages:
-                    continue
                 
                 # Chunk this single page
                 chunks = extractor.chunk_content(

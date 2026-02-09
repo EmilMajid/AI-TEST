@@ -194,8 +194,9 @@ class ContentExtractor:
         
         return max(0, min(100, score))
     
-    def extract_pdf_pages(self, pdf_path: str, subject: str = "Ümumi"):
+    def extract_pdf_pages(self, pdf_path: str, subject: str = "Ümumi", skip_pages: set = None):
         """PDF fayldan məlumatları səhifə-səhifə çıxarır (generator)"""
+        if skip_pages is None: skip_pages = set()
         ocr_lang = self.get_ocr_lang(subject)
         self.logger.info(f"Incremental processing: {pdf_path} (Subject: {subject})")
         
@@ -208,6 +209,10 @@ class ContentExtractor:
             
             with pdfplumber.open(pdf_path) as pdf:
                 for page_num, page in enumerate(pdf.pages, 1):
+                    if page_num in skip_pages:
+                        # self.logger.debug(f"  Page {page_num}: Skipped (already indexed)")
+                        continue
+                        
                     text = page.extract_text()
                     ocr_used = False
                     
