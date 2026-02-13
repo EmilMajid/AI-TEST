@@ -65,48 +65,91 @@ def main():
                     except: pass
         print(f"Loaded existing data for {len(indexed_pages)} books.")
     
-    # Process
+    # Process books
     extractor = ContentExtractor()
     total_new_chunks = 0
     
-    for i, book in enumerate(pdf_books, 1):
+    for i, book in enumerate(grade_books, 1):
         if target_ids and book['id'] not in target_ids:
             continue
 
-        print(f"\n[{i}/{len(pdf_books)}] {book['title']} ({book['id']})")
+        print(f"\n[{i}/{len(grade_books)}] {book['title']} ({book['id']})")
         
         book_indexed_pages = indexed_pages.get(book['id'], set())
-        
-        # Find PDF
-        pdf_path = None
-        # Try different possible paths
-        search_paths = []
-        if book.get("contentPath"):
-            search_paths.append(base_dir / book["contentPath"])
-        
-        rel_path = book.get("path", "").lstrip("/").lstrip("\\")
-        if rel_path:
-            search_paths.append(base_dir / "public" / rel_path)
-            search_paths.append(base_dir / "public" / "textbooks" / rel_path)
-        
-        for p in search_paths:
-            if p.is_file():
-                pdf_path = p
-                break
-            elif p.is_dir():
-                pdfs = list(p.glob("*.pdf"))
-                if pdfs:
-                    pdf_path = pdfs[0]
-                    break
-        
-        if not pdf_path or not pdf_path.exists():
-            print(f"  [!] PDF not found in search paths")
-            continue
-        
-        print(f"  [*] Processing: {pdf_path.name}")
         book_chunks_count = 0
         
         try:
+            # Handle HTML textbooks
+            if book.get("type") == "html":
+                from html_content_extractor import HTMLContentExtractor
+                html_extractor = HTMLContentExtractor()
+                
+                content_path = base_dir / book["contentPath"]
+                if not content_path.exists():
+                    print(f"  [!] HTML directory not found: {content_path}")
+                    continue
+                
+                print(f"  [*] Processing HTML textbook: {content_path.name}")
+                
+                # Extract HTML content
+                html_content = html_extractor.extract_with_page_numbers(content_path, book["subject"])
+                
+                if not html_content:
+                    print(f"  [!] No content extracted from HTML")
+                    continue
+                
+                # Chunk and save
+                chunks = extractor.chunk_content(
+                    html_content,
+                    subject=book["subject"],
+                    grade=int(grade),
+                    book_id=book["id"]
+                )
+                
+                if chunks:
+                    with open(chunks_jsonl, "a", encoding="utf-8") as f:
+                        for chunk in chunks:
+                            json.dump(chunk, f, ensure_ascii=False)
+                            f.write("\n")
+                    
+                    book_chunks_count = len(chunks)
+                    total_new_chunks += len(chunks)
+                
+                print(f"  [+] Book completed. New chunks: {book_chunks_count}")
+                continue
+            
+            # Handle PDF textbooks (existing logic)
+            if book.get("type") != "pdf":
+                print(f"  [!] Unsupported type: {book.get('type')}")
+                continue
+            
+            # Find PDF
+            pdf_path = None
+            search_paths = []
+            if book.get("contentPath"):
+                search_paths.append(base_dir / book["contentPath"])
+            
+            rel_path = book.get("path", "").lstrip("/").lstrip("\\")
+            if rel_path:
+                search_paths.append(base_dir / "public" / rel_path)
+                search_paths.append(base_dir / "public" / "textbooks" / rel_path)
+            
+            for p in search_paths:
+                if p.is_file():
+                    pdf_path = p
+                    break
+                elif p.is_dir():
+                    pdfs = list(p.glob("*.pdf"))
+                    if pdfs:
+                        pdf_path = pdfs[0]
+                        break
+            
+            if not pdf_path or not pdf_path.exists():
+                print(f"  [!] PDF not found in search paths")
+                continue
+            
+            print(f"  [*] Processing: {pdf_path.name}")
+            
             # Incremental Extract, Chunk and Save
             for page_result in extractor.extract_pdf_pages(str(pdf_path), subject=book['subject'], skip_pages=book_indexed_pages):
                 page_data = page_result["page_data"]
@@ -133,6 +176,8 @@ def main():
             
         except Exception as e:
             print(f"  [ERROR] {e}")
+            import traceback
+            traceback.print_exc()
     
     print("\n" + "=" * 70)
     print(f"COMPLETE: {total_new_chunks} new chunks indexed for Grade {grade}")

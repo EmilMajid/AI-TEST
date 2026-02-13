@@ -14,6 +14,7 @@ import logging
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 from datetime import datetime
+import unicodedata
 
 try:
     from llm_utils import extract_triples, call_gemini_vision, call_xai_vision, get_api_key
@@ -67,14 +68,21 @@ class ChunkValidator:
         # Check ratio of spaces to characters
         if len(text) > 0:
             space_ratio = text.count(' ') / len(text)
-            if space_ratio < 0.05 or space_ratio > 0.5:  # Too few or too many spaces
+            # Tables often have high space ratio, increased from 0.5 to 0.8
+            if space_ratio < 0.05 or space_ratio > 0.8:  
                 return True
         
         # Check for excessive special characters
-        special_chars = sum(1 for c in text if not c.isalnum() and not c.isspace())
-        if len(text) > 0 and special_chars / len(text) > 0.3:
-            return True
+        # Exclude common table characters from "noise" count
+        table_chars = {'|', '+', '-', '_', '—'}
+        non_alnum = [c for c in text if not c.isalnum() and not c.isspace()]
+        non_table_special = [c for c in non_alnum if c not in table_chars]
         
+        if len(text) > 0:
+             # Standard special char ratio check (ignore table chars)
+            if len(non_table_special) / len(text) > 0.4:
+                return True
+                
         return False
 
 class ContentExtractor:
@@ -88,6 +96,7 @@ class ContentExtractor:
         'default': 'aze+eng+rus'
     }
     
+
     def __init__(self):
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
         project_root = Path(__file__).parent.parent
@@ -103,6 +112,21 @@ class ContentExtractor:
         if Path(tesseract_bin).exists():
             import pytesseract
             pytesseract.pytesseract.tesseract_cmd = tesseract_bin
+        
+        # Initialize specialized cleaners
+        try:
+            from rag_cleaner import RAGCleaner
+            from quality_scorer import QualityScorer
+            self.cleaner = RAGCleaner()
+            self.scorer = QualityScorer()
+        except ImportError:
+            # Fallback if scripts not in path (though they should be)
+            import sys
+            sys.path.append(str(Path(__file__).parent))
+            from rag_cleaner import RAGCleaner
+            from quality_scorer import QualityScorer
+            self.cleaner = RAGCleaner()
+            self.scorer = QualityScorer()
             
         self.setup_logging()
     
@@ -130,6 +154,22 @@ class ContentExtractor:
         self.logger.info(f"OCR language for '{subject}': {lang}")
         return lang
     
+    def clean_text(self, text: str, subject: str = "default") -> str:
+        """
+        Cleans and normalizes extracted text based on RAGCleaner pipeline.
+        """
+        # Use the specialized cleaner
+        return self.cleaner.clean(text)
+
+    def calculate_quality_score(self, text: str, ocr_used: bool) -> float:
+        """
+        Calculates quality score using specialized QualityScorer
+        Returns 0-100 scale
+        """
+        # Use the specialized scorer
+        result = self.scorer.score(text)
+        # Convert 0-1 scale to 0-100
+        return result["score"] * 100
     def is_valid_text(self, text: str) -> bool:
         """Enhanced text validation"""
         if not text or len(text.strip()) < 30:
@@ -177,22 +217,6 @@ class ContentExtractor:
                     temp_img_path.unlink()
                 except: pass
     
-    def calculate_quality_score(self, text: str, ocr_used: bool = False) -> int:
-        """Calculate chunk quality score (0-100)"""
-        score = 50
-        
-        # Length bonuses
-        if len(text) > 200: score += 10
-        if len(text) > 500: score += 10
-        
-        # Quality indicators
-        if "(cid:" not in text: score += 10
-        if len(re.findall(r'[a-zA-Zəöüçşğı]', text)) > 50: score += 20
-        
-        # OCR penalty
-        if ocr_used: score -= 10
-        
-        return max(0, min(100, score))
     
     def extract_pdf_pages(self, pdf_path: str, subject: str = "Ümumi", skip_pages: set = None):
         """PDF fayldan məlumatları səhifə-səhifə çıxarır (generator)"""
@@ -252,6 +276,9 @@ class ContentExtractor:
                             "ocr_used": ocr_used,
                             "quality_score": self.calculate_quality_score(text, ocr_used)
                         }
+                        
+                        # Apply text cleaning
+                        page_data["text"] = self.clean_text(page_data["text"], subject=subject)
                         
                         # Formulas
                         math_blocks = self.math_pattern.findall(text)
@@ -349,6 +376,9 @@ class ContentExtractor:
                             "ocr_used": ocr_used,
                             "quality_score": self.calculate_quality_score(text, ocr_used)
                         })
+                        
+                        # Apply text cleaning
+                        text_content[-1]["text"] = self.clean_text(text_content[-1]["text"], subject=subject)
                         
                         # Formula extraction from text
                         math_blocks = self.math_pattern.findall(text)
