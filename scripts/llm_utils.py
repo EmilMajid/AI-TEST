@@ -56,6 +56,8 @@ def get_image_data(image_path):
 
 def call_gemini_vision(prompt, image_paths, api_key):
     """Calls Gemini 1.5 Flash with multiple images."""
+    if not api_key or "placeholder" in api_key:
+        return None
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
@@ -88,6 +90,8 @@ def call_gemini_vision(prompt, image_paths, api_key):
 
 def call_gemini(prompt, api_key):
     """Standard Gemini 1.5 Flash text-only call."""
+    if not api_key or "placeholder" in api_key:
+        return None
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     data = {
@@ -106,6 +110,8 @@ def call_gemini(prompt, api_key):
 
 def call_xai_vision(prompt, image_paths, api_key):
     """Calls XAI Grok Vision API with multiple images."""
+    if not api_key or api_key.startswith("xai-B"): # xai-B... is the blocked key from logs
+        return None
     url = "https://api.x.ai/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
@@ -124,20 +130,21 @@ def call_xai_vision(prompt, image_paths, api_key):
             })
     
     data = {
-        "model": "grok-vision-beta",
+        "model": "grok-2-vision-1212",
         "messages": [{"role": "user", "content": content}],
         "temperature": 0.1
     }
     
     try:
         response = requests.post(url, headers=headers, json=data)
+        if response.status_code != 200:
+            print(f"XAI API Error Status: {response.status_code}")
+            print(f"XAI API Response body: {response.text}")
         response.raise_for_status()
         result = response.json()
         return result['choices'][0]['message']['content']
     except Exception as e:
         print(f"XAI Vision API Error: {e}")
-        if hasattr(e, 'response') and e.response:
-            print(f"Response: {e.response.text}")
         return None
 
 def generate_gold_standard_question_vision(subject, grade, image_paths, bloom="Anlama", skill="General"):

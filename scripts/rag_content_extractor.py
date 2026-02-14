@@ -36,7 +36,7 @@ class ChunkValidator:
     
     QUALITY_THRESHOLD_REJECT = 60
     QUALITY_THRESHOLD_WARN = 80
-    MIN_CHUNK_LENGTH = 100
+    MIN_CHUNK_LENGTH = 50  # Lowered from 100 for OCR fragments
     
     @staticmethod
     def validate(chunk: Dict) -> tuple[bool, str]:
@@ -65,22 +65,23 @@ class ChunkValidator:
     @staticmethod
     def is_gibberish(text: str) -> bool:
         """Checks if text appears to be gibberish"""
+        if not text: return True
+        
         # Check ratio of spaces to characters
-        if len(text) > 0:
-            space_ratio = text.count(' ') / len(text)
-            # Tables often have high space ratio, increased from 0.5 to 0.8
-            if space_ratio < 0.05 or space_ratio > 0.8:  
-                return True
+        space_ratio = text.count(' ') / len(text)
+        # Tables often have high space ratio, increased from 0.5 to 0.8
+        if space_ratio < 0.05 or space_ratio > 0.8:  
+            return True
         
         # Check for excessive special characters
         # Exclude common table characters from "noise" count
-        table_chars = {'|', '+', '-', '_', '—'}
+        table_chars = {'|', '+', '-', '_', '—', '.', ',', '?', '!', '(', ')', '[', ']', '{', '}'}
         non_alnum = [c for c in text if not c.isalnum() and not c.isspace()]
         non_table_special = [c for c in non_alnum if c not in table_chars]
         
-        if len(text) > 0:
-             # Standard special char ratio check (ignore table chars)
-            if len(non_table_special) / len(text) > 0.4:
+        # Standard special char ratio check (ignore table chars and punctuation)
+        if len(text) > 20: 
+            if len(non_table_special) / len(text) > 0.3:
                 return True
                 
         return False

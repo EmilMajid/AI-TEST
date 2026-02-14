@@ -38,8 +38,8 @@ class QualityScorer:
 
     def _noise_ratio(self, text):
         # Characters that are NOT alphanumeric, space, or common punctuation
-        # German includes äöüÄÖÜß
-        noise_chars = re.findall(r'[^a-zA-ZäöüÄÖÜß0-9\s.,!?-]', text)
+        # Including Azerbaijani (əöüçşğıƏÖÜÇŞĞİ) and Cyrillic (а-яА-ЯёЁ)
+        noise_chars = re.findall(r'[^a-zA-Z0-9\s.,!?-əöüçşğıƏÖÜÇŞĞİа-яА-ЯёЁäöüÄÖÜßàâçéèêëîïôûùÿÀÂÇÉÈÊËÎÏÔÛÙŸ]', text)
         return min(1.0, len(noise_chars) / max(len(text), 1))
 
     def _repetition_ratio(self, text):
@@ -48,6 +48,6 @@ class QualityScorer:
         return min(1.0, len(repetitions) / max(len(text), 1))
 
     def _alpha_ratio(self, text):
-        # Ratio of actual letters
-        alpha_chars = re.findall(r'[a-zA-ZäöüÄÖÜß]', text)
+        # Ratio of actual letters including Azerbaijani, Cyrillic, and European variants
+        alpha_chars = re.findall(r'[a-zA-ZəöüçşğıƏÖÜÇŞĞİа-яА-ЯёЁäöüÄÖÜßàâçéèêëîïôûùÿÀÂÇÉÈÊËÎÏÔÛÙŸ]', text)
         return min(1.0, len(alpha_chars) / max(len(text), 1))

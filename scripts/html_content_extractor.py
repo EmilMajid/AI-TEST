@@ -29,7 +29,8 @@ class HTMLContentExtractor:
         """Extract content from a single HTML/XHTML file"""
         try:
             with open(html_path, 'r', encoding='utf-8') as f:
-                soup = BeautifulSoup(f.read(), 'html.parser')
+                content = f.read()
+                soup = BeautifulSoup(content, 'html.parser')
             
             # Remove script, style, and navigation elements
             for element in soup(['script', 'style', 'nav', 'header', 'footer']):
@@ -39,13 +40,28 @@ class HTMLContentExtractor:
             text = soup.get_text(separator='\n', strip=True)
             text = self.clean_html_text(text)
             
-            # Only return if there's substantial content
-            if len(text) > 100:
+            # Find images
+            images = []
+            for img in soup.find_all('img'):
+                src = img.get('src')
+                if src:
+                    # Resolve relative path
+                    img_path = (html_path.parent / src).resolve()
+                    if img_path.exists():
+                        images.append(str(img_path))
+            
+            # Heuristic for image-only pages (e.g. Grade 8 foreign languages)
+            is_image_only = len(text) < 100 and len(images) > 0
+            
+            # Only return if there's substantial content OR it's an image-only page
+            if len(text) > 100 or is_image_only:
                 return {
                     "file": html_path.name,
                     "text": text,
                     "type": "html",
-                    "length": len(text)
+                    "length": len(text),
+                    "images": images,
+                    "is_image_only": is_image_only
                 }
         except Exception as e:
             self.logger.warning(f"Failed to extract {html_path.name}: {e}")

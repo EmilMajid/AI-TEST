@@ -92,19 +92,70 @@ def main():
                 print(f"  [*] Processing HTML textbook: {content_path.name}")
                 
                 # Extract HTML content
-                html_content = html_extractor.extract_with_page_numbers(content_path, book["subject"])
+                html_pages = html_extractor.extract_with_page_numbers(content_path, book["subject"])
                 
-                if not html_content:
+                if not html_pages:
                     print(f"  [!] No content extracted from HTML")
                     continue
                 
+                # Process pages and apply OCR if needed
+                processed_content = []
+                for entry in html_pages:
+                    if entry.get("is_image_only") and entry.get("images"):
+                        print(f"    [*] Image-only page detected ({entry['file']}). Identifying text...")
+                        image_path = entry["images"][0]
+                        
+                        ocr_text = None
+                        
+                        # Phase 1: Try Vision (if key might work)
+                        try:
+                            with open(image_path, "rb") as img_f:
+                                img_bytes = img_f.read()
+                                ocr_text = extractor.extract_with_vision(img_bytes, book["subject"])
+                                if ocr_text:
+                                    print(f"      [+] Vision OCR success: {len(ocr_text)} chars")
+                        except Exception:
+                            pass
+                        
+                        # Phase 2: Fallback to local Tesseract if Vision failed/rejected
+                        if not ocr_text or not extractor.is_valid_text(ocr_text):
+                            print(f"      [*] Falling back to local Tesseract for {entry['file']}...")
+                            try:
+                                from PIL import Image
+                                img = Image.open(image_path)
+                                # We need to reach into the internal OCR logic of ContentExtractor
+                                import pytesseract
+                                lang = extractor.get_ocr_lang(book["subject"])
+                                ocr_text = pytesseract.image_to_string(img, lang=lang)
+                                if ocr_text:
+                                    print(f"      [+] Tesseract success: {len(ocr_text)} chars")
+                                    entry["ocr_used"] = True
+                            except Exception as te:
+                                print(f"      [!] Tesseract failed: {te}")
+                        
+                        if ocr_text:
+                            entry["text"] = ocr_text
+                    
+                    if len(entry.get("text", "")) > 50: # Slightly lower threshold for OCR'd fragments
+                        processed_content.append(entry)
+                    else:
+                        print(f"      [!] Page {entry.get('file')} too short: {len(entry.get('text', ''))} chars")
+                
+                if not processed_content:
+                    print(f"  [!] All pages rejected after processing")
+                    continue
+
+                print(f"    [*] Chunking {len(processed_content)} pages...")
                 # Chunk and save
                 chunks = extractor.chunk_content(
-                    html_content,
+                    processed_content,
                     subject=book["subject"],
                     grade=int(grade),
                     book_id=book["id"]
                 )
+                
+                if not chunks:
+                    print(f"    [!] No chunks generated from {len(processed_content)} pages")
                 
                 if chunks:
                     with open(chunks_jsonl, "a", encoding="utf-8") as f:

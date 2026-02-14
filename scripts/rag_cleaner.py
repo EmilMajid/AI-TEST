@@ -19,6 +19,7 @@ class RAGCleaner:
             return ""
 
         text = self.normalize_unicode(text)
+        text = self.fix_mojibake(text)
         text = self.fix_cyrillic_mix(text)
         text = self.remove_repetition_noise(text)
         text = self.fix_letter_spacing(text)
@@ -34,9 +35,35 @@ class RAGCleaner:
     def normalize_unicode(self, text):
         return unicodedata.normalize("NFKC", text)
 
+    def fix_mojibake(self, text):
+        """Fixes common encoding errors in OCR text (UTF-8 bytes interpreted as windows-1254/1252)"""
+        if not text: return text
+        
+        # Example: "Ğ§Ñ‚Ğ¾" (Cyrillic CHTO in UTF-8 -> Windows-1254)
+        try:
+            # Detect if it looks like typical mojibake (contains Ğ, Ñ, etc. in a tight sequence)
+            if re.search(r'[ĞÑĞğ]', text):
+                # Attempt to repair: windows-1254 is common in AZ locale, then fallback to latin-1
+                repair = text.encode('windows-1254', errors='ignore').decode('utf-8', errors='ignore')
+                if len(repair) > len(text) * 0.4: # Simple sanity check
+                    return repair
+        except:
+            pass
+        return text
+
     def fix_cyrillic_mix(self, text):
-        # Only apply if text seems to be German/English but has Cyrillic chars
-        # Simple heuristic: if mixed script
+        # Only replace if we see a clear MIX of scripts (Cyrillic + Latin)
+        # and it's just a few characters.
+        # This prevents breaking purely Russian text.
+        
+        # Count alphabetic characters
+        latin_chars = len(re.findall(r'[a-zA-Z]', text))
+        cyrillic_chars = len(re.findall(r'[а-яА-ЯёЁ]', text))
+        
+        # Heuristic: If it's mostly Cyrillic, don't touch it
+        if cyrillic_chars > latin_chars * 2:
+            return text
+            
         for cyr, lat in self.cyrillic_to_latin.items():
             text = text.replace(cyr, lat)
         return text

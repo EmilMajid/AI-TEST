@@ -33,7 +33,7 @@ def scan_ids():
     found_books = {}
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
-        futures = {executor.submit(check_id, i): i for i in range(400, 500)}
+        futures = {executor.submit(check_id, i): i for i in range(700, 1001)}
         for future in concurrent.futures.as_completed(futures):
             result = future.result()
             if result:
