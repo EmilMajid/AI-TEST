@@ -1,24 +1,44 @@
-from rag_cleaner import RAGCleaner
-from auto_language_correction import AutoLanguageCorrector
+# rag_pipeline.py
+from normalizer import Normalizer
+from ocr_repair import OCRRepair
 from quality_scorer import QualityScorer
+from auto_language_correction import AutoLanguageCorrector
+from encoding_fixer import EncodingFixer
 
 class RAGIngestionPipeline:
     """
-    Təmizləmə, Dil təyini və Keyfiyyət ölçülməsini birləşdirən boru xətti.
+    Production-grade pipeline: Encoding Fix -> Normalization -> Repair -> Language -> Scoring.
     """
     def __init__(self, default_lang="az"):
-        self.cleaner = RAGCleaner()
+        self.encoder = EncodingFixer()
+        self.normalizer = Normalizer()
+        self.repairer = OCRRepair()
         self.corrector = AutoLanguageCorrector(default_lang=default_lang)
         self.scorer = QualityScorer()
 
     def process(self, raw_text: str) -> dict:
-        cleaned = self.cleaner.clean(raw_text)
-        lang = self.corrector.detect_language(cleaned)
-        # correction is optional and set to False by default in corrector
-        quality = self.scorer.score(cleaned)
+        # 0. Fix Mojibake/Encoding issues first
+        fixed_encoding = self.encoder.fix(raw_text)
+        
+        # 1. Unicode & Whitespace Normalization
+        normalized = self.normalizer.normalize(fixed_encoding)
+        
+        # 2. Azerbaijani OCR Repair (vowel recovery - initial layer)
+        repaired = self.repairer.repair(normalized)
+        
+        # 3. Language detection
+        lang = self.corrector.detect_language(repaired)
+        
+        # 4. Advanced Language Correction (contextual/probabilistic)
+        corrected = self.corrector.correct(repaired, lang=lang)
+        
+        # 5. Semantic Quality Scoring
+        quality = self.scorer.score(corrected)
         
         return {
-            "text": cleaned,
+            "text": corrected,
             "language": lang,
-            "quality": quality
+            "quality": quality,
+            "original_length": len(raw_text),
+            "processed_length": len(corrected)
         }

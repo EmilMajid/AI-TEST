@@ -91,7 +91,9 @@ class ContentExtractor:
     
     # Subject-based language mapping for OCR
     SUBJECT_LANG_MAP = {
-        'Rus dili': 'rus+aze+eng',
+        'Rus dili': 'rus',
+        'Rus dild': 'rus',
+        'Literaturnoye chteniye': 'rus',
         'Xarici dil': 'eng+aze',  # English
         'İkinci xarici dil': 'rus+deu+fra+aze',  # Russian/German/French
         'default': 'aze+eng+rus'

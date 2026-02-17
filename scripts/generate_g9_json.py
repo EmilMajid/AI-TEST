@@ -3,7 +3,10 @@ import os
 from pathlib import Path
 
 def generate_g9_json():
-    base_path = "public/textbooks/9"
+    project_root = Path(__file__).parent.parent
+    base_path = project_root / "public" / "textbooks" / "9"
+    textbooks_json = project_root / "data" / "textbooks.json"
+    
     books = []
     
     # Subject mapping for titles and subjects
@@ -35,7 +38,7 @@ def generate_g9_json():
     }
     
     for book_id, (title, subject) in mapping.items():
-        book_dir = Path(base_path) / book_id
+        book_dir = base_path / book_id
         if book_dir.exists():
             books.append({
                 "id": book_id,
@@ -47,12 +50,12 @@ def generate_g9_json():
             })
     
     # Load textbooks.json
-    with open("data/textbooks.json", "r", encoding="utf-8") as f:
+    with open(textbooks_json, "r", encoding="utf-8") as f:
         data = json.load(f)
     
     data["9"] = books
     
-    with open("data/textbooks.json", "w", encoding="utf-8") as f:
+    with open(textbooks_json, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     print(f"Successfully added {len(books)} Grade 9 books to textbooks.json")

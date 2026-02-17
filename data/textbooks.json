@@ -742,5 +742,199 @@
       "path": "/textbooks/7/kimya-7-h2/book.pdf",
       "contentPath": "public/textbooks/7/kimya-7-h2"
     }
+  ],
+  "9": [
+    {
+      "id": "fiziki-terbiye-9",
+      "title": "Fiziki tərbiyə 9",
+      "subject": "Fiziki tərbiyə",
+      "type": "pdf",
+      "path": "/textbooks/9/fiziki-terbiye-9/book.pdf",
+      "contentPath": "public/textbooks/9/fiziki-terbiye-9"
+    },
+    {
+      "id": "texnologiya-9",
+      "title": "Texnologiya 9",
+      "subject": "Texnologiya",
+      "type": "pdf",
+      "path": "/textbooks/9/texnologiya-9/book.pdf",
+      "contentPath": "public/textbooks/9/texnologiya-9"
+    },
+    {
+      "id": "hayat-bilgisi-9",
+      "title": "Həyat bilgisi 9",
+      "subject": "Həyat bilgisi",
+      "type": "pdf",
+      "path": "/textbooks/9/hayat-bilgisi-9/book.pdf",
+      "contentPath": "public/textbooks/9/hayat-bilgisi-9"
+    },
+    {
+      "id": "biologiya-9",
+      "title": "Biologiya 9",
+      "subject": "Biologiya",
+      "type": "pdf",
+      "path": "/textbooks/9/biologiya-9/book.pdf",
+      "contentPath": "public/textbooks/9/biologiya-9"
+    },
+    {
+      "id": "fizika-9",
+      "title": "Fizika 9",
+      "subject": "Fizika",
+      "type": "pdf",
+      "path": "/textbooks/9/fizika-9/book.pdf",
+      "contentPath": "public/textbooks/9/fizika-9"
+    },
+    {
+      "id": "tesviri-incesenet-9",
+      "title": "Təsviri İncəsənət 9",
+      "subject": "Təsviri İncəsənət",
+      "type": "pdf",
+      "path": "/textbooks/9/tesviri-incesenet-9/book.pdf",
+      "contentPath": "public/textbooks/9/tesviri-incesenet-9"
+    },
+    {
+      "id": "kimya-9",
+      "title": "Kimya 9",
+      "subject": "Kimya",
+      "type": "pdf",
+      "path": "/textbooks/9/kimya-9/book.pdf",
+      "contentPath": "public/textbooks/9/kimya-9"
+    },
+    {
+      "id": "riyaziyyat-9",
+      "title": "Riyaziyyat 9",
+      "subject": "Riyaziyyat",
+      "type": "pdf",
+      "path": "/textbooks/9/riyaziyyat-9/book.pdf",
+      "contentPath": "public/textbooks/9/riyaziyyat-9"
+    },
+    {
+      "id": "musiqi-9",
+      "title": "Musiqi 9",
+      "subject": "Musiqi",
+      "type": "pdf",
+      "path": "/textbooks/9/musiqi-9/book.pdf",
+      "contentPath": "public/textbooks/9/musiqi-9"
+    },
+    {
+      "id": "informatika-9",
+      "title": "İnformatika 9",
+      "subject": "İnformatika",
+      "type": "pdf",
+      "path": "/textbooks/9/informatika-9/book.pdf",
+      "contentPath": "public/textbooks/9/informatika-9"
+    },
+    {
+      "id": "edebiyyat-9",
+      "title": "Ədəbiyyat 9",
+      "subject": "Ədəbiyyat",
+      "type": "pdf",
+      "path": "/textbooks/9/edebiyyat-9/book.pdf",
+      "contentPath": "public/textbooks/9/edebiyyat-9"
+    },
+    {
+      "id": "cografiya-9",
+      "title": "Coğrafiya 9",
+      "subject": "Coğrafiya",
+      "type": "pdf",
+      "path": "/textbooks/9/cografiya-9/book.pdf",
+      "contentPath": "public/textbooks/9/cografiya-9"
+    },
+    {
+      "id": "azerbaycan-dili-dovlet-9",
+      "title": "Azərbaycan dili 9 (Dövlət dili)",
+      "subject": "Azərbaycan dili",
+      "type": "pdf",
+      "path": "/textbooks/9/azerbaycan-dili-dovlet-9/book.pdf",
+      "contentPath": "public/textbooks/9/azerbaycan-dili-dovlet-9"
+    },
+    {
+      "id": "umumi-tarix-9",
+      "title": "Ümumi tarix 9",
+      "subject": "Ümumi tarix",
+      "type": "pdf",
+      "path": "/textbooks/9/umumi-tarix-9/book.pdf",
+      "contentPath": "public/textbooks/9/umumi-tarix-9"
+    },
+    {
+      "id": "azerbaycan-dili-9",
+      "title": "Azərbaycan dili 9",
+      "subject": "Azərbaycan dili",
+      "type": "pdf",
+      "path": "/textbooks/9/azerbaycan-dili-9/book.pdf",
+      "contentPath": "public/textbooks/9/azerbaycan-dili-9"
+    },
+    {
+      "id": "azerbaycan-tarixi-9",
+      "title": "Azərbaycan tarixi 9",
+      "subject": "Azərbaycan tarixi",
+      "type": "pdf",
+      "path": "/textbooks/9/azerbaycan-tarixi-9/book.pdf",
+      "contentPath": "public/textbooks/9/azerbaycan-tarixi-9"
+    },
+    {
+      "id": "ingilis-dili-9",
+      "title": "İngilis dili 9 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/ingilis-dili-9/book.pdf",
+      "contentPath": "public/textbooks/9/ingilis-dili-9"
+    },
+    {
+      "id": "ingilis-dili-ikinci-9",
+      "title": "İngilis dili 9 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/ingilis-dili-ikinci-9/book.pdf",
+      "contentPath": "public/textbooks/9/ingilis-dili-ikinci-9"
+    },
+    {
+      "id": "alman-dili-9",
+      "title": "Alman dili 9 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/alman-dili-9/book.pdf",
+      "contentPath": "public/textbooks/9/alman-dili-9"
+    },
+    {
+      "id": "alman-dili-ikinci-9",
+      "title": "Alman dili 9 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/alman-dili-ikinci-9/book.pdf",
+      "contentPath": "public/textbooks/9/alman-dili-ikinci-9"
+    },
+    {
+      "id": "fransiz-dili-9",
+      "title": "Fransız dili 9 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/fransiz-dili-9/book.pdf",
+      "contentPath": "public/textbooks/9/fransiz-dili-9"
+    },
+    {
+      "id": "fransiz-dili-ikinci-9",
+      "title": "Fransız dili 9 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/fransiz-dili-ikinci-9/book.pdf",
+      "contentPath": "public/textbooks/9/fransiz-dili-ikinci-9"
+    },
+    {
+      "id": "rus-dili-9",
+      "title": "Rus dili 9 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/rus-dili-9/book.pdf",
+      "contentPath": "public/textbooks/9/rus-dili-9"
+    },
+    {
+      "id": "rus-dili-ikinci-9",
+      "title": "Rus dili 9 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/9/rus-dili-ikinci-9/book.pdf",
+      "contentPath": "public/textbooks/9/rus-dili-ikinci-9"
+    }
   ]
 }
