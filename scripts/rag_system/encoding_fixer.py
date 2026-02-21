@@ -36,6 +36,24 @@ class EncodingFixer:
         # Combine maps
         self.full_map = self.map.copy()
         self.full_map.update(self.ext_map)
+        
+        # 3. UTF-8 as Latin-1 Mojibake (e.g. É™ for ə)
+        self.utf8_mojibake = {
+            'É™': 'ə', 'Æ': 'ə', # ə
+            'ÅŸ': 'ş', 'Åž': 'ş', # ş
+            'Ã§': 'ç', 'Ã‡': 'ç', # ç
+            'Ã¶': 'ö', 'Ã–': 'ö', # ö
+            'Ã¼': 'ü', 'Ãœ': 'ü', # ü
+            'Ä±': 'ı', 'Ä°': 'i', # ı, İ
+            'ÄŸ': 'ğ', 'Äž': 'ğ', # ğ
+        }
+
+    def fix_utf8_mojibake(self, text: str) -> str:
+        """Fixes cases where UTF-8 bytes were decoded as Latin-1/Win-1252"""
+        if not text: return text
+        for moj, fixed in self.utf8_mojibake.items():
+            text = text.replace(moj, fixed)
+        return text
 
     def is_mojibake(self, text: str) -> bool:
         """Detects if string contains high concentration of high-byte chars."""
@@ -44,11 +62,16 @@ class EncodingFixer:
         return (high_chars / len(text)) > 0.1
 
     def fix(self, text: str) -> str:
-        if not self.is_mojibake(text):
-            return text
-            
-        fixed = []
-        for char in text:
-            fixed.append(self.full_map.get(char, char))
+        if not text: return text
         
-        return "".join(fixed)
+        # Priority 1: UTF-8 as Latin-1
+        text = self.fix_utf8_mojibake(text)
+        
+        # Priority 2: Win-1251 as Win-1252 (if still looks broken)
+        if self.is_mojibake(text):
+            fixed = []
+            for char in text:
+                fixed.append(self.full_map.get(char, char))
+            text = "".join(fixed)
+        
+        return text

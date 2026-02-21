@@ -12,6 +12,7 @@ from vector_store import VectorStoreFactory
 from monitoring import IngestionMonitor
 from semantic_filter import SemanticDeduplicator
 from embedding_cache import EmbeddingCache
+from advanced_ocr_repair import AdvancedOCRRepair
 
 class RAGOrchestrator:
     """
@@ -20,6 +21,10 @@ class RAGOrchestrator:
     def __init__(self, embedding_model=None):
         self.cfg = Config()
         self.pipeline = RAGIngestionPipeline()
+        self.advanced_repair = AdvancedOCRRepair()  # NEW: Advanced OCR repair
+        from dictionary_validator import DictionaryValidator
+        self.DictionaryValidator = DictionaryValidator # Store class ref
+        self.validators = {} # Cache for multilingual validators
         self.chunker = AdaptiveChunker(
             min_chunk_size=self.cfg.CHUNK_MIN,
             max_chunk_size=self.cfg.CHUNK_MAX,
@@ -50,6 +55,9 @@ class RAGOrchestrator:
         """
         Processes and indexes a document with full production-grade flow.
         """
+        # 0. Advanced OCR Repair (NEW: Fix systematic errors from Tesseract)
+        content = self.advanced_repair.repair(content)
+        
         # 1. Process via Pipeline (Norm -> Repair -> Lang -> Score)
         processed = self.pipeline.process(content)
         
@@ -65,6 +73,28 @@ class RAGOrchestrator:
                 "quality": quality_score,
                 "corruption": corruption_ratio,
                 "details": processed["quality"]
+            }
+
+        # 3. Linguistic Validation (Dictionary Gate - NEW RAG 2.0)
+        # Get or create validator for specific language
+        lang_code = processed["language"]
+        if lang_code not in self.validators:
+            self.validators[lang_code] = self.DictionaryValidator(lang=lang_code)
+            
+        validator = self.validators[lang_code]
+        validation = validator.validate(processed["text"])
+        
+        if not validation["valid"]:
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.warning(f"  [SKIPPED] Linguistic fail: {validation['reason']} (AvgScore: {validation.get('score', 0):.2f}, Coverage: {validation['details'].get('coverage', 0):.2f})")
+            
+            self.monitor.log_chunk(quality_score, corruption_ratio) # Log even if skipped
+            return {
+                "status": "skipped",
+                "reason": f"linguistic_fail: {validation['reason']}",
+                "quality": quality_score,
+                "details": validation
             }
 
         # 3. Adaptive Chunking
@@ -94,7 +124,10 @@ class RAGOrchestrator:
                     emb = self._get_dummy_embedding(chunk_text)
             
             if emb is not None:
-                if not self.deduplicator.is_duplicate(emb):
+                # Bypass dedup if requested (needed for re-indexing)
+                bypass_dedup = meta.get("bypass_dedup", False) if meta else False
+                
+                if bypass_dedup or not self.deduplicator.is_duplicate(emb):
                     final_chunks.append(chunk_text)
                     final_embeddings.append(emb)
                     

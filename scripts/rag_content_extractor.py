@@ -186,39 +186,46 @@ class ContentExtractor:
         return True
 
     def extract_with_vision(self, image_data: bytes, subject: str) -> Optional[str]:
-        """Fallback to Vision AI (Gemini or XAI) for OCR"""
-        temp_img_path = None
+        """
+        INTERNAL OPTIMIZATION (No External API):
+        Enhances image quality locally and retries OCR.
+        Acts as a 'Simulated Vision AI' by applying computer vision techniques.
+        """
         try:
-            # Temporarily save image
-            temp_img_path = Path(f"temp_ocr_{datetime.now().timestamp()}.png")
-            with open(temp_img_path, "wb") as f:
-                f.write(image_data)
+            # Load image with PIL
+            img = Image.open(io.BytesIO(image_data))
             
-            prompt = f"Bu dərslik səhifəsindən mətni olduğu kimi çıxart. Fənn: {subject}. Yalnız mətni qaytar."
+            # 1. Convert to Greyscale
+            img = img.convert('L')
             
-            # 1. Try Gemini
-            api_key_gemini = get_api_key("gemini")
-            if api_key_gemini and "placeholder" not in api_key_gemini:
-                self.logger.info("Attempting Vision OCR with Gemini...")
-                text = call_gemini_vision(prompt, [str(temp_img_path)], api_key_gemini)
-                if text: return text
-                
-            # 2. Try XAI (Grok-Vision)
-            api_key_xai = get_api_key("xai")
-            if api_key_xai and "placeholder" not in api_key_xai:
-                self.logger.info("Attempting Vision OCR with XAI (Grok)...")
-                text = call_xai_vision(prompt, [str(temp_img_path)], api_key_xai)
-                if text: return text
-                
-            return None
+            # 2. Enhance Contrast
+            from PIL import ImageEnhance
+            enhancer = ImageEnhance.Contrast(img)
+            img = enhancer.enhance(2.0) # High contrast
+            
+            # 3. Enhance Sharpness
+            enhancer = ImageEnhance.Sharpness(img)
+            img = enhancer.enhance(2.0)
+            
+            # 4. Retry Tesseract with stricter config
+            # Scale up for better character recognition
+            img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
+            
+            ocr_lang = self.get_ocr_lang(subject)
+            tesseract_config = (
+                '--psm 6 '  # Assume a single uniform block of text (good for reading lines)
+                '--oem 3 '
+                '-c preserve_interword_spaces=1 '
+            )
+            
+            self.logger.info("  Running Internal Vision Optimization (Contrast+Scale+PSM6)...")
+            text = pytesseract.image_to_string(img, lang=ocr_lang, config=tesseract_config)
+            
+            return text
+            
         except Exception as e:
-            self.logger.error(f"Vision AI fallback failed: {e}")
+            self.logger.error(f"Internal Vision Optimization failed: {e}")
             return None
-        finally:
-            if temp_img_path and temp_img_path.exists():
-                try:
-                    temp_img_path.unlink()
-                except: pass
     
     
     def extract_pdf_pages(self, pdf_path: str, subject: str = "Ümumi", skip_pages: set = None):
@@ -247,21 +254,57 @@ class ContentExtractor:
                         if doc_fitz and page_num - 1 < len(doc_fitz):
                             try:
                                 page_fitz = doc_fitz[page_num - 1]
-                                pix = page_fitz.get_pixmap(dpi=300)
+                                # Enhanced DPI for better OCR quality
+                                pix = page_fitz.get_pixmap(dpi=400)
                                 img_data = pix.tobytes("png")
                                 image = Image.open(io.BytesIO(img_data))
+                                
+                                # Azerbaijani-optimized Tesseract config
+                                tesseract_config = (
+                                    '--psm 3 '  # Fully automatic page segmentation
+                                    '--oem 3 '  # Default OCR Engine Mode
+                                    '-c preserve_interword_spaces=1 '  # Preserve spacing
+                                    '-c tessedit_char_whitelist=ABCÇDEƏFGĞHXIİJKLMNOÖPQRSŞTUÜVYZabcçdeəfgğhxıijklmnoöpqrsştuüvyz0123456789 .,:;!?\'\"()-–—' 
+                                )
                                 
                                 ocr_text = pytesseract.image_to_string(
                                     image, 
                                     lang=ocr_lang,
-                                    config='--psm 3 --oem 3'
+                                    config=tesseract_config
                                 )
+                                
+                                # Quality check - fallback to Vision AI if poor quality
                                 if self.is_valid_text(ocr_text):
-                                    text = ocr_text
-                                    ocr_used = True
-                                    self.logger.info(f"  Page {page_num}: OCR used successfully (fitz)")
+                                    ocr_quality = self.calculate_quality_score(ocr_text, True)
+                                    
+                                    if ocr_quality < 70:  # Quality threshold
+                                        self.logger.warning(f"  Page {page_num}: Low OCR quality ({ocr_quality:.1f}), trying Vision AI...")
+                                        try:
+                                            vision_text = self.extract_with_vision(img_data, subject)
+                                            if vision_text and self.is_valid_text(vision_text):
+                                                vision_quality = self.calculate_quality_score(vision_text, False)
+                                                if vision_quality > ocr_quality:
+                                                    text = vision_text
+                                                    ocr_used = True
+                                                    self.logger.info(f"  Page {page_num}: Vision AI used (quality: {vision_quality:.1f} > {ocr_quality:.1f})")
+                                                else:
+                                                    text = ocr_text
+                                                    ocr_used = True
+                                                    self.logger.info(f"  Page {page_num}: OCR kept (quality: {ocr_quality:.1f})")
+                                            else:
+                                                text = ocr_text
+                                                ocr_used = True
+                                                self.logger.info(f"  Page {page_num}: OCR used (Vision AI failed)")
+                                        except Exception as vision_e:
+                                            self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
+                                            text = ocr_text
+                                            ocr_used = True
+                                    else:
+                                        text = ocr_text
+                                        ocr_used = True
+                                        self.logger.info(f"  Page {page_num}: OCR used successfully (quality: {ocr_quality:.1f})")
                             except Exception as ocr_e:
-                                self.logger.warning(f"  Page {page_num}: Tesseract OCR failed - {ocr_e}")
+                                self.logger.error(f"  Page {page_num}: Tesseract OCR failed (Encoding/Other) - {repr(ocr_e)}")
                                 try:
                                     vision_text = self.extract_with_vision(img_data, subject)
                                     if vision_text and self.is_valid_text(vision_text):
@@ -346,8 +389,13 @@ class ContentExtractor:
                                     img_data = pix.tobytes("png")
                                     image = Image.open(io.BytesIO(img_data))
                                     
-                                    # Simple config since TESSDATA_PREFIX is set
-                                    ocr_config = f'--psm 3 --oem 3'
+                                    # Azerbaijani-optimized Tesseract config
+                                    ocr_config = (
+                                        '--psm 3 '  # Fully automatic page segmentation
+                                        '--oem 3 '  # Default OCR Engine Mode
+                                        '-c preserve_interword_spaces=1 '  # Preserve spacing
+                                        '-c tessedit_char_whitelist=ABCÇDEƏFGĞHXIİJKLMNOÖPQRSŞTUÜVYZabcçdeəfgğhxıijklmnoöpqrsştuüvyz0123456789 .,:;!?\'\"()-–—' 
+                                    )
                                     
                                     ocr_text = pytesseract.image_to_string(
                                         image, 
