@@ -3,7 +3,7 @@
         {
             "name": "gemini",
             "type": "google",
-            "endpoint": "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent",
+            "endpoint": "https://generativelanguage.googleapis.com/v1/models/gemini-3.1-pro:generateContent",
             "apiKeyEnv": "GEMINI_API_KEY",
             "quota": {
                 "dailyTokens": 6000000,

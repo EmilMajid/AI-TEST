@@ -1,18 +1,21 @@
-"""
-RAG Content Extractor - Dərslik məlumatlarını çıxarıb strukturlaşdırır
-Enhanced with multilingual OCR, logging, and quality metrics
-"""
+from pathlib import Path
+import os
+import sys
+
+# Ensure TESSDATA_PREFIX is set for Tesseract OCR
+project_root = Path(__file__).parent.parent
+tessdata_path = (project_root / "data" / "tessdata").resolve()
+os.environ["TESSDATA_PREFIX"] = str(tessdata_path)
+
 import pdfplumber
 import pytesseract
 import fitz # PyMuPDF
 from PIL import Image
 import io
-import os
 import json
 import re
 import logging
 from typing import List, Dict, Any, Optional
-from pathlib import Path
 from datetime import datetime
 import unicodedata
 
@@ -96,7 +99,7 @@ class ContentExtractor:
         'Literaturnoye chteniye': 'rus',
         'Xarici dil': 'eng+aze',  # English
         'İkinci xarici dil': 'rus+deu+fra+aze',  # Russian/German/French
-        'default': 'aze+eng+rus'
+        'default': 'aze+eng' # Simplified to avoid rus/cyrl issues if not needed
     }
     
 
@@ -174,13 +177,24 @@ class ContentExtractor:
         # Convert 0-1 scale to 0-100
         return result["score"] * 100
     def is_valid_text(self, text: str) -> bool:
-        """Enhanced text validation"""
+        """Enhanced text validation including DUİS anomaly detection"""
         if not text or len(text.strip()) < 30:
             return False
-        if "(cid:" in text:  # PDF font encoding problems
+        
+        # 1. PDF font encoding problems (CID maps)
+        if "(cid:" in text:
             return False
-        # Check for reasonable amount of letters (Azerbaijani + Latin)
-        letter_count = len(re.findall(r'[a-zA-Zəöüçşğı]', text))
+            
+        # 2. DUİS Anomaly Detection (ø, ù, ԥ)
+        # If ratio of these chars is > 2%, it's definitely corrupted
+        anomalies = re.findall(r'[øùԥԤԦԧԨԩԪԫ]', text)
+        anomaly_ratio = len(anomalies) / max(len(text), 1)
+        if anomaly_ratio > 0.02:
+            self.logger.warning(f"  [ANOMALY TRIGGER] Found {len(anomalies)} corrupted symbols (ratio: {anomaly_ratio:.2%})")
+            return False
+
+        # 3. Check for reasonable amount of letters (Azerbaijani + Latin)
+        letter_count = len(re.findall(r'[a-zA-ZəöüçşğıƏÖÜÇŞĞIİ]', text))
         if letter_count < 10:
             return False
         return True
@@ -208,10 +222,14 @@ class ContentExtractor:
             img = enhancer.enhance(2.0)
             
             # 4. Retry Tesseract with stricter config
-            # Scale up for better character recognition
-            img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
+            # Scale up for better character recognition (only if image is large enough)
+            if img.width > 20 and img.height > 20:
+                img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
+            else:
+                self.logger.warning(f"  Image too small for optimization ({img.width}x{img.height}), proceeding with original.")
             
             ocr_lang = self.get_ocr_lang(subject)
+            
             tesseract_config = (
                 '--psm 6 '  # Assume a single uniform block of text (good for reading lines)
                 '--oem 3 '

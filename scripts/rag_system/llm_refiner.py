@@ -8,24 +8,32 @@ from typing import Dict, Any
 # Ensure we can import from parent dir
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import llm_utils
+from skeleton_refiner import SkeletonRefiner
 
 class LLMContentRefiner:
     """
-    Uses LLMs to restore highly corrupted Azerbaijani OCR text.
+    Uses LLMs (with local Skeleton fallback) to restore highly corrupted Azerbaijani OCR text.
     Targeted at fixing vowel loss and context-dependent word borking.
     """
     def __init__(self):
         self.logger = logging.getLogger(__name__)
+        self.local_refiner = SkeletonRefiner()
 
     def refine(self, text: str, subject: str = "Təbiət") -> str:
-        if not text or len(text.strip()) < 50:
+        if not text or len(text.strip()) < 10:
             return text
             
-        self.logger.info(f"Triggering LLM Refinement for corrupted text (length: {len(text)})")
+        self.logger.info(f"Triggering Refinement for corrupted text (length: {len(text)})")
         
+        # 1. Check if we have API Keys
+        api_key = llm_utils.get_api_key("gemini")
+        if not api_key or "placeholder" in api_key:
+            self.logger.info("  [LOCAL] No API key found. Using SkeletonRefiner fallback.")
+            return self.local_refiner.refine_text(text)
+
         prompt = f"""
         Sən Azərbaycan dili üzrə redaktor və dərslik tərtibatçısısan. 
-        Aşağıdakı mətn PDF-dən OCR (tanıma) vasitəsilə çıxarılıb və bəzi hərflər (xüsusən saitlər: ə, ı, ö, ü, ğ, ş, ç, İ, Ş, Ç, Ö, Ü, Ə) itmiş və ya yanlış oxunmuşdur.
+        Aşağıdakı mətn PDF-dən OCR (tanıma) vasitəsilə çıxarılıb və bəzi hərflər (xüsusən saitlər: ə, ı, ö, ü) itmiş və ya yanlış oxunmuşdur.
         
         SƏNİN VƏZİFƏN:
         1. Mətni Azərbaycan dilinin qrammatikasına və məntiqinə uyğun bərpa et.
@@ -44,21 +52,19 @@ class LLMContentRefiner:
         """
         
         try:
-            # Using Gemini as primary for speed/cost, falls back to Grok/DeepSeek
+            # Using Gemini as primary
             refined_text = llm_utils.generate_text_with_failover(prompt, provider="gemini")
             
             if refined_text:
-                # Basic cleaning of LLM artifacts if any
                 refined_text = refined_text.strip()
                 if refined_text.startswith("---"): refined_text = refined_text.replace("---", "").strip()
-                
-                self.logger.info("LLM Refinement successful.")
+                self.logger.info("  [LLM] Refinement successful.")
                 return refined_text
                 
-            return text
+            return self.local_refiner.refine_text(text)
         except Exception as e:
-            self.logger.error(f"LLM Refinement failed: {e}")
-            return text
+            self.logger.error(f"  [LLM] Refinement error: {e}. Falling back to local.")
+            return self.local_refiner.refine_text(text)
 
 if __name__ == "__main__":
     # Quick test

@@ -16,6 +16,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "rag_sy
 from rag_orchestrator import RAGOrchestrator
 from rag_content_extractor import ContentExtractor
 from html_content_extractor import HTMLContentExtractor
+from ederslik_extractor import EDerslikExtractor
 from section_parser import SectionParser
 from noise_remover import NoiseRemover
 from dictionary_validator import DictionaryValidator
@@ -130,6 +131,7 @@ def main():
     orchestrator = RAGOrchestrator(embedding_model=model)
     extractor = ContentExtractor()
     html_extractor = HTMLContentExtractor()
+    ederslik_extractor = EDerslikExtractor()
     
     # New RAG 2.0 Components
     section_parser = SectionParser()
@@ -175,6 +177,11 @@ def main():
                         pages = html_extractor.extract_with_page_numbers(content_path, book["subject"])
                         for p in pages:
                             full_text_pages.append(p["text"])
+                elif book.get("type") == "ederslik_html" and "e_derslik_id" in book:
+                    log(f"  [*] Extracting from e-derslik (ID: {book['e_derslik_id']})...")
+                    res_pages = ederslik_extractor.fetch_book(book["e_derslik_id"])
+                    for p in res_pages:
+                        full_text_pages.append(p["text"])
                 else:
                     # PDF Search
                     pdf_path = None
@@ -241,9 +248,9 @@ def main():
                 total_books += 1
                 
             except Exception as e:
+                import traceback
+                traceback.print_exc()
                 log(f"  [!] Failed to process {book_id}: {e}")
-                # import traceback
-                # traceback.print_exc()
 
     # 4. Final Atomic Swap
     if total_books > 0:

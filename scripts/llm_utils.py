@@ -55,10 +55,10 @@ def get_image_data(image_path):
         return None, None
 
 def call_gemini_vision(prompt, image_paths, api_key):
-    """Calls Gemini 1.5 Flash with multiple images."""
+    """Calls Gemini 3.1 Pro with multiple images."""
     if not api_key or "placeholder" in api_key:
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     parts = [{"text": prompt}]
@@ -89,10 +89,10 @@ def call_gemini_vision(prompt, image_paths, api_key):
         return None
 
 def call_gemini(prompt, api_key):
-    """Standard Gemini 1.5 Flash text-only call."""
+    """Standard Gemini 3.1 Pro text-only call."""
     if not api_key or "placeholder" in api_key:
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     data = {
         "contents": [{

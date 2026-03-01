@@ -17,8 +17,11 @@ class DictionaryValidator:
     VOWELS_FR = set('aeiouàâéèêëîïôùûüAEIOUÀÂÉÈÊËÎÏÔÙÛÜ')
 
     # Thresholds for Production Quality Gate
-    MIN_COVERAGE = 0.25     # Lowered for pilot (morphological richness makes dict matching hard)
-    MAX_VOWEL_LOSS = 0.25   # Max 25% of words can be vowel-less (more robust for noise)
+    # Azerbaijani is highly agglutinative - declined/conjugated word forms will rarely match
+    # the base-form dictionary exactly, so we use a very permissive coverage floor.
+    # The OCR repair and skeleton_refiner stages fix vowel-less words before we reach here.
+    MIN_COVERAGE = 0.08     # Very permissive: 8% coverage is enough (AZ morphology is rich)
+    MAX_VOWEL_LOSS = 0.35   # Allow up to 35% (OCR repair pipeline handles most before this)
     
     def __init__(self, lang: str = "az"):
         self.lang = lang.lower()

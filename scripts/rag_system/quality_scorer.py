@@ -6,7 +6,15 @@ class QualityScorer:
     """
     def score(self, text: str) -> dict:
         if not text:
-            return {"score": 0.0}
+            return {
+                "score": 0.0,
+                "noise_ratio": 0.0,
+                "repetition_ratio": 0.0,
+                "alpha_ratio": 0.0,
+                "vowel_loss_ratio": 0.0,
+                "anomaly_ratio": 0.0,
+                "word_count": 0
+            }
 
         length = len(text)
         # Səs-küy nisbəti (xüsusi simvollar)
@@ -35,13 +43,19 @@ class QualityScorer:
         
         vowel_loss_ratio = vowel_less_count / max(word_count, 1)
 
+        # NEW: DUİS Anomaly Detection (Encoding corruption)
+        anomalies = re.findall(r'[øùԥԤԦԧԨԩԪԫ]', text)
+        anomaly_ratio = len(anomalies) / max(length, 1)
+
         # Balın hesablanması
+        # Adjust weights to include anomaly penalty
         final_score = (
-            (1 - min(noise_ratio * 2, 1)) * 0.20 + 
-            (1 - min(repetition_ratio * 5, 1)) * 0.20 + 
-            min(alpha_ratio * 1.2, 1) * 0.30 + 
+            (1 - min(noise_ratio * 2, 1)) * 0.15 + 
+            (1 - min(repetition_ratio * 5, 1)) * 0.15 + 
+            min(alpha_ratio * 1.2, 1) * 0.25 + 
             min(word_count / 50, 1) * 0.15 +
-            (1 - min(vowel_loss_ratio * 3, 1)) * 0.15
+            (1 - min(vowel_loss_ratio * 3, 1)) * 0.15 +
+            (1 - min(anomaly_ratio * 20, 1)) * 0.15 # Strong penalty for anomalies
         )
 
         return {
@@ -50,5 +64,6 @@ class QualityScorer:
             "repetition_ratio": round(repetition_ratio, 3),
             "alpha_ratio": round(alpha_ratio, 3),
             "vowel_loss_ratio": round(vowel_loss_ratio, 3),
+            "anomaly_ratio": round(anomaly_ratio, 4),
             "word_count": word_count
         }

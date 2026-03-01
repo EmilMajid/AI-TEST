@@ -25,7 +25,7 @@ def call_gemini_vision(image_paths, prompt):
         return "Error: No API Key found."
 
     # Gemini 1.5 Flash supports multiple images
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key={api_key}"
     
     parts = [{"text": prompt}]
     for img_path in image_paths:

@@ -79,6 +79,77 @@ COMMON_FIXES = {
     "mqsd": "məqsəd",
     "xsiyyt": "şəxsiyyət",
     "fiziki": "fiziki",
+    # Physics & Curriculum specific (Təbiət 5)
+    "brabrdir": "bərabərdir",
+    "brabr": "bərabər",
+    "dm": "düşmə",
+    "bucana": "bucağına",
+    "bucan": "bucağın",
+    "periskopdur": "periskopdur",
+    "grmyimiz": "görməyimiz",
+    "traf": "ətraf",
+    "trafı": "ətrafı",
+    # Hissə 2 corrections
+    "Enerii": "Enerji",
+    "Eneril": "Enerji",
+    "BRPA": "BƏRPA",
+    "ENERV4": "ENERJİ",
+    "MNBLR": "MƏNBƏLƏR",
+    "TB FLAKTLR": "TƏBİİ FƏLAKƏTLƏR",
+    "Klk": "Külək",
+    "Zlzlnin": "Zəlzələnin",
+    "evrilir": "çevrilir",
+    "evrilrkn": "çevrilərkən",
+    "shvdir": "səhvdir",
+    "ba verir": "baş verir",
+    "mhduddur": "məhduddur",
+    "irklnmsin": "çirklənməsinə",
+    "ktlsi": "kütləsi",
+    "zncir": "zəncir",
+    "canllarn": "canlıların",
+    "yrtc": "yırtıcı",
+    "ikar": "şikar",
+    "quraqlq": "quraqlıq",
+    "razid": "ərazidə",
+    "tmizlik": "təmizlik",
+    "imk": "içmək",
+    "tbil": "təbii",
+    "tknmsin": "tükənməsinə",
+    "qrlmas": "qırılması",
+    "nsillr": "nəsillərə",
+    "Eneriinin": "enerjinin",
+    "Eneriiyə": "enerjiyə",
+    "eneriisi": "enerjisi",
+    "eneriisin": "enerjisinə",
+    "eneriilrinin": "enerjilərinin",
+    "evrilmdn": "çevrilmədən",
+    "mhrrik": "mühərrik",
+    "lelevizor": "Televizor",
+    "mnblridir": "mənbələridir",
+    "kemlidir": "keçməlidir",
+    "Yanacan": "Yanacağın",
+    "ktlsi": "kütləsi",
+    "Klyin": "Küləyin",
+    "evirmk": "çevirmək",
+    "enerfisi": "enerjisi",
+    "laqlri": "əlaqələri",
+    "mhkm": "möhkəm",
+    "ardcl": "ardıcıl",
+    "gcn": "gücünü",
+    "lmy": "ölçməyə",
+    "ksiklr": "kəsiklər",
+    "silklyin": "silkələyin",
+    "ehmalca": "ehmalca",
+    "eitdikd": "eşitdikdə",
+    "yantlarn": "yağıntıların",
+    "tinliklr": "çətinliklər",
+    "Atmosferd": "Atmosferdə",
+    "srmlrinin": "səhraların",
+    "glck nsillr": "gələcək nəsillərə",
+    "maariflndirici": "maarifləndirici",
+    "istifadsi": "istifadəsi",
+    "tkrar tmizlnmsi": "təkrar təmizlənməsi",
+    "ttbiq edilmsi": "tətbiq edilməsi",
 }
 
 class OCRRepair:
@@ -102,6 +173,13 @@ class OCRRepair:
         # Common collapses: hrkt -> hərəkət, etc.
         text = re.sub(r'\bhrkt', 'hərəkət', text)
         text = re.sub(r'\bhrki', 'hərəki', text)
+        
+        # Physics specifically: "dm buca" -> "düşmə bucağı"
+        text = re.sub(r'\bdm\s+bucağ', 'düşmə bucağ', text)
+        text = re.sub(r'\bdm\s+buca', 'düşmə buca', text)
+        text = re.sub(r'\bqaytma\b', 'qayıtma', text)
+        text = re.sub(r'\biın\b', 'işığın', text)
+        text = re.sub(r'\bn\s+qaytma', 'işığın qayıtma', text)
         
         # Repair dotless 'i' and capital 'Ə' if missed by Tesseract
         # (Though Tesseract 5 is usually good at this)
