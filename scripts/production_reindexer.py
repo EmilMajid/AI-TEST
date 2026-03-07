@@ -45,7 +45,7 @@ logging.getLogger('').addHandler(console)
 def log(msg):
     logging.info(msg)
 
-def setup_files(base_dir: Path, target_file: Path, is_full_reindex: bool):
+def setup_files(base_dir: Path, target_file: Path, is_full_reindex: bool, target_ids: List[str] = None):
     """
     Implements ATOMIC WRITE strategy.
     Returns path to temporary file for writing.
@@ -70,10 +70,27 @@ def setup_files(base_dir: Path, target_file: Path, is_full_reindex: bool):
         log(f"[*] Starting FRESH re-index to atomic temp file: {temp_file.name}")
         return temp_file, set()
     
-    # If partial reindex (specific books) and no temp, copy target to temp
+    # If partial reindex (specific books) and no temp, copy target to temp (FILTERED)
     if target_file.exists():
-        log(f"[*] Copying existing {target_file.name} to temp for safe partial update...")
-        shutil.copy2(target_file, temp_file)
+        if target_ids:
+            log(f"[*] Filtering existing {target_file.name} to temp (removing old records for target books)...")
+            with open(target_file, "r", encoding="utf-8") as f_in, \
+                 open(temp_file, "w", encoding="utf-8") as f_out:
+                for line in f_in:
+                    try:
+                        c = json.loads(line)
+                        bid = c.get("book_id")
+                        if bid not in target_ids:
+                            f_out.write(line)
+                        else:
+                            # Skip this line as it will be replaced
+                            pass
+                    except:
+                        f_out.write(line)
+        else:
+            log(f"[*] Copying existing {target_file.name} to temp for safe partial update...")
+            shutil.copy2(target_file, temp_file)
+            
         with open(temp_file, "r", encoding="utf-8") as f:
             for line in f:
                 try:
@@ -139,7 +156,7 @@ def main():
     
     # 2. Setup Atomic Write
     is_full_sweep = (not target_ids) # Only do full reset if no specific books targeted
-    temp_jsonl, indexed_books = setup_files(base_dir, chunks_jsonl, is_full_sweep)
+    temp_jsonl, indexed_books = setup_files(base_dir, chunks_jsonl, is_full_sweep, target_ids)
     
     # 3. Load textbooks
     with open(textbooks_json, "r", encoding="utf-8") as f:
@@ -220,6 +237,7 @@ def main():
                 
                 # D. INGEST SECTIONS
                 book_chunk_count = 0
+                seen_chunk_texts = set() # Local deduplication within the book
                 
                 # Open temp file in append mode for each book
                 with open(temp_jsonl, "a", encoding="utf-8") as f:
@@ -237,11 +255,16 @@ def main():
                         
                         if res["status"] == "success":
                             for j, chunk_text in enumerate(res["chunks"]):
+                                # Local Deduplication Filter
+                                if chunk_text in seen_chunk_texts:
+                                    continue
+                                seen_chunk_texts.add(chunk_text)
+                                
                                 chunk_entry = res["metadata"][j]
                                 chunk_entry["section"] = sec["title"] # Enrich metadata
                                 json.dump(chunk_entry, f, ensure_ascii=False)
                                 f.write("\n")
-                            book_chunk_count += res["chunks_count"]
+                                book_chunk_count += 1
                 
                 log(f"  [+] Saved {book_chunk_count} high-quality chunks.")
                 total_chunks += book_chunk_count

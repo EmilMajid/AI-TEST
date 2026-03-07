@@ -12,10 +12,23 @@ class SectionParser:
     # Common header patterns for Azerbaijani textbooks (Expanded for RAG 2.0 with İ)
     HEADER_PATTERNS = [
         r'(?i)^(?:Fəsil|Bölmə|Mövzu|Dərs|DƏRS|BÖLMƏ|MÖVZU|FƏSİL|§)\s+\d+[:.]?.*$', 
-        r'^\d+(\.\d+){1..3}\.?\s+[A-ZƏÖÜÇŞĞIİ].{3,100}$',   # Added İ
-        r'^[A-ZƏÖÜÇŞĞIİ\s\d\.]{5,80}$',                    # Added İ
-        r'(?i)^(?:Bölmə|BÖLMƏ)\s+[IVXLCDM]+[:.]?.*$',     # BÖLMƏ I, II
-        r'^§\s?.*$'                                       # Paragraph symbol section
+        r'^\d+(\.\d+){1,3}\.?\s+[A-ZƏÖÜÇŞĞIİ].{3,100}$',   # e.g. 1.1 Topic
+        r'^[A-ZƏÖÜÇŞĞIİ][A-ZƏÖÜÇŞĞIİ\s\d\.]{4,60}$',      # ALL CAPS (e.g. SÖZÜN QÜDRƏTİ)
+        r'(?i)^(?:Bölmə|BÖLMƏ)\s+[IVXLCDM]+[:.]?.*$',     # BÖLMƏ I
+        r'(?i)^\d+[-]\w+\s+(?:fəsil|bölmə).*$',           # 1-ci fəsil
+        r'^[A-ZƏÖÜÇŞĞIİ][a-zəöüçşğıiA-ZƏÖÜÇŞĞIİ\s\d\-]{4,45}(?<![\.\!\?\,\: \-])\s*$', # Mixed Case title (Strict)
+        r'^§\s?.*$'                                       # Paragraph
+    ]
+    
+    # Non-section titles that often appear in ALL CAPS on page 1/2
+    BLACKLIST_HEADERS = [
+        "HEYDƏR ƏLİYEV AZƏRBAYCAN XALQININ ÜMUMMİLLİ LİDERİ",
+        "HEYDƏR ƏLİYEVAZƏRBAYCAN XALQININ ÜMUMMİLLİ LİDERİ",
+        "HEYDƏR ƏLİYEV",
+        "AZƏRBAYCAN XALQININ ÜMUMMİLLİ LİDERİ",
+        "ZAUR İSAYEV, MƏNSUR MƏHƏRRƏMOV, MƏHƏMMƏD KƏRİMOV",
+        "GÜNAY HÜSEYNZADƏ, VÜQAR MUSAYEV, AQŞİN ABDULLAYEV",
+        "ÜMUMİ TƏHSİL MÜƏSSİSƏLƏRİNİN 5-Cİ SİNİFLƏRİ ÜÇÜN",
     ]
     
     def __init__(self):
@@ -41,25 +54,40 @@ class SectionParser:
                 continue
                 
             is_header = False
-            for i, pattern in enumerate(self.patterns):
-                # Heuristic: Header must be short (< 100 chars) and match pattern
-                if len(stripped) < 100 and pattern.match(stripped):
-                    # Save previous section if it has content
-                    if current_section["content"]:
-                        sections.append({
-                            "title": current_section["title"],
-                            "content": "\n".join(current_section["content"]),
+            
+            # Skip blacklisted phrases or noise (more aggressive check)
+            is_noise = (
+                any(phrase in stripped for phrase in self.BLACKLIST_HEADERS) or
+                "trims.edu.az" in stripped.lower() or
+                "creative commons" in stripped.lower() or
+                "lisenziyası" in stripped.lower() or
+                "bütün hüquqlar" in stripped.lower() or
+                "nəşriyyat" in stripped.lower() or
+                "müəllif" in stripped.lower()
+            )
+
+            if is_noise:
+                is_header = False
+            else:
+                for i, pattern in enumerate(self.patterns):
+                    # Heuristic: Header must be short (< 100 chars) and match pattern
+                    if len(stripped) < 100 and pattern.match(stripped):
+                        # Save previous section if it has content
+                        if current_section["content"]:
+                            sections.append({
+                                "title": current_section["title"],
+                                "content": "\n".join(current_section["content"]),
+                                "level": i + 1
+                            })
+                        
+                        # Start new section
+                        current_section = {
+                            "title": stripped,
+                            "content": [],
                             "level": i + 1
-                        })
-                    
-                    # Start new section
-                    current_section = {
-                        "title": stripped,
-                        "content": [],
-                        "level": i + 1
-                    }
-                    is_header = True
-                    break
+                        }
+                        is_header = True
+                        break
             
             if not is_header:
                 current_section["content"].append(stripped)
