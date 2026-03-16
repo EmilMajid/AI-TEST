@@ -87,12 +87,22 @@
     },
     {
       "id": "ingilis-dili-5",
-      "title": "İngilis dili 5",
-      "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/5/ingilis-dili-5/english-5.pdf",
+      "title": "İngilis dili 5 (əsas xarici dil)",
+      "subject": "İngilis dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "850",
+      "path": "/textbooks/5/ingilis-dili-5/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/5/ingilis-dili-5",
-      "topics": "Introduction & Basics\nWelcome! (Hello, Classroom Objects)\nUnits 1-4\nUnit 1. Who am I? (Favorite Things, Personal Details)\nUnit 2. English Everywhere! (Countries and Nationalities)\nReview (Units 1-2)\nUnit 3. Where's home? (Parts of a House, Furniture)\nUnit 4. Family Matters (Family members, Adjectives)\nReview (Units 3-4)\nUnits 5-8\nUnit 5. A Day in the Life (Daily Routines, Hobbies)\nUnit 6. School Time (School Subjects, Places in School)\nReview (Units 5-6)\nUnit 7. What's he wearing? (Clothes, Modern/Traditional)\nUnit 8. Get Moving! (Sports, Healthy Living)\nReview (Units 7-8)\nAcross the Curriculum\nReading: Around the World and Across the Curriculum\nPuzzles & Games\nProjects"
+      "topics": "UNIT 1. Who am I?\nUNIT 2. English Everywhere!\nUNIT 3. Where’s home?\nUNIT 4. Family Matters\nUNIT 5. A Day in the Life\nUNIT 6. School Time\nUNIT 7. What's he wearing?\nUNIT 8. Get Moving!"
+    },
+    {
+      "id": "ingilis-dili-2-5",
+      "title": "İngilis dili 5 (ikinci xarici dil)",
+      "subject": "İkinci xarici dil",
+      "type": "pdf",
+      "path": "/textbooks/5/ingilis-dili-2-5/english-2-5.pdf",
+      "contentPath": "public/textbooks/5/ingilis-dili-2-5",
+      "topics": "1. What’s your name\n2. Numbers\n3. In my school bag\n4. Colours\n5. How old are you?\n6. My family\n7. My country – Azerbaijan!\n8. Are you happy?\n9. My school\n10. Where are the things?\n11. My house\n12. My room\n13. My clothes\n14. My body\n15. My monster avatar\n16. Yes, I CAN!\n17. Directions\n18. Calendar\n19. Time\n20. They can!\n21. Opposites\n22. What is the weather like today?\n23. My day\n24. She loves fruit and vegetables!\n25. Summer is here!"
     },
     {
       "id": "texnologiya-5",

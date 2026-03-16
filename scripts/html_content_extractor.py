@@ -15,6 +15,14 @@ class HTMLContentExtractor:
     
     def clean_html_text(self, text: str) -> str:
         """Clean extracted HTML text"""
+        # Stage 5: De-hyphenation (Remove syllabification hyphens at line breaks)
+        # e.g., "məlumat-\nlar" -> "məlumatlar"
+        text = re.sub(r'(\w+)-\n\s*(\w+)', r'\1\2', text)
+        
+        # Stage 7: Linguistic Fix (w -> vv for Azerbaijani)
+        # Azerbaijani doesn't have 'w', it's usually an OCR error for 'vv'
+        text = text.replace('w', 'vv').replace('W', 'VV')
+        
         # Remove excessive whitespace
         text = re.sub(r'\n\s*\n', '\n\n', text)
         text = re.sub(r' +', ' ', text)
@@ -32,6 +40,59 @@ class HTMLContentExtractor:
                 content = f.read()
                 soup = BeautifulSoup(content, 'html.parser')
             
+            # Stage 4/5: Merging Drop Caps (Initial decorative letters)
+            # Find elements that look like drop caps (1 char, big font classes)
+            for dropcap in soup.find_all(['div', 'span', 'b']):
+                if not dropcap.parent: continue
+                classes = dropcap.get('class', [])
+                try:
+                    text = dropcap.get_text().strip()
+                except: continue
+                
+                if len(text) == 1 and any(c in classes for c in ['fs72', 'fs44', 'e-bold2']):
+                    # Look for the next string that isn't just whitespace
+                    next_node = dropcap.find_next(string=True)
+                    while next_node and not str(next_node).strip():
+                        next_node = next_node.find_next(string=True)
+                    
+                    if next_node:
+                        # Prepend the char to the next text node WITHOUT adding spaces
+                        # We lstrip the next node to ensure we attach directly to the word part
+                        original_next = str(next_node)
+                        new_text = text + original_next.lstrip()
+                        next_node.replace_with(new_text)
+                        # Remove the dropcap element
+                        dropcap.decompose()
+
+            # Identify headers before decomposing elements
+            for tag in soup.find_all(['h1', 'h2', 'h3', 'p', 'div']):
+                if not tag.parent: continue # Already decomposed
+                is_header = False
+                
+                # Check for explicit header tags
+                if tag.name in ['h1', 'h2', 'h3']:
+                    is_header = True
+                
+                # Check for specific class combinations used in Azerbaijan History textbooks (visual headers)
+                classes = tag.get('class', [])
+                if any(c in classes for c in ['e-bold2', 'fs44', 'fs36', 'e-color7']):
+                    # Ensure it's not a huge block of text
+                    if len(tag.get_text()) < 150:
+                        is_header = True
+                
+                if is_header:
+                    header_text = tag.get_text().strip()
+                    # Stage 3/4: Selective Marking
+                    # 1. Length constraint: headers should generally be > 8 chars (Prevents single char headers)
+                    # 2. Keywords exception: Always trust official labels
+                    is_official = any(kw in header_text.lower() for kw in ['bölmə', 'mövzu', 'unit', 'dərs', 'fəsil', 'lesson'])
+                    
+                    if header_text and (len(header_text) > 8 or is_official or len(header_text) == 1):
+                        # Clean header text from internal spans/breaks before marking
+                        clean_header = " ".join(header_text.split())
+                        # Wrap in a marker that SectionParser will recognize 100%
+                        tag.string = f"[[HEADER: {clean_header}]]"
+
             # Remove script, style, and navigation elements
             for element in soup(['script', 'style', 'nav', 'header', 'footer']):
                 element.decompose()
@@ -54,7 +115,7 @@ class HTMLContentExtractor:
             is_image_only = len(text) < 100 and len(images) > 0
             
             # Only return if there's substantial content OR it's an image-only page
-            if len(text) > 100 or is_image_only:
+            if len(text) > 50 or is_image_only:
                 return {
                     "file": html_path.name,
                     "text": text,

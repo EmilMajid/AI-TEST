@@ -19,7 +19,7 @@ class SkeletonRefiner:
         
         if not dict_path:
             base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-            dict_path = os.path.join(base_dir, "data", "dictionaries", "az.txt")
+            dict_path = os.path.join(base_dir, "data", "dictionaries", "az_expanded.txt")
             
         self._load_dictionary(dict_path)
 

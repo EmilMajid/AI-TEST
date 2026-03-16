@@ -24,6 +24,10 @@ class RAGCleaner:
         text = self.remove_repetition_noise(text)
         text = self.fix_letter_spacing(text)
         text = self.fix_hyphenation(text)
+        
+        # Stage 7: Linguistic Fix (w -> vv for Azerbaijani)
+        text = text.replace('w', 'vv').replace('W', 'VV')
+        
         text = self.remove_layout_noise(text)
         text = self.normalize_whitespace(text)
 

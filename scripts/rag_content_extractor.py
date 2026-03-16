@@ -97,9 +97,10 @@ class ContentExtractor:
         'Rus dili': 'rus',
         'Rus dild': 'rus',
         'Literaturnoye chteniye': 'rus',
+        'İngilis dili': 'eng+aze',
         'Xarici dil': 'eng+aze',  # English
-        'İkinci xarici dil': 'rus+deu+fra+aze',  # Russian/German/French
-        'default': 'aze+eng' # Simplified to avoid rus/cyrl issues if not needed
+        'İkinci xarici dil': 'eng+rus+deu+fra+aze',  # Support English too
+        'default': 'aze+eng'
     }
     
 
@@ -197,6 +198,23 @@ class ContentExtractor:
         letter_count = len(re.findall(r'[a-zA-ZəöüçşğıƏÖÜÇŞĞIİ]', text))
         if letter_count < 10:
             return False
+            
+        # 4. Mirroring Detection (Reversed English/Azerbaijani)
+        # Check for common reversed words
+        mirrored_patterns = [
+            r'\beht\b', r'\bdna\b', r'\bruoy\b', r'\bym\b', r'\bdlo\b', 
+            r'\bsnobmuN\b', r'\berA\b', r'\bsi\b', r'\btahw\b', r'\beman\b',
+            r'\bma\b', r'\buoy\b'
+        ]
+        mirrored_count = 0
+        for p in mirrored_patterns:
+            if re.search(p, text, re.IGNORECASE):
+                mirrored_count += 1
+        
+        if mirrored_count >= 2:
+            self.logger.warning(f"  [MIRROR TRIGGER] Detected {mirrored_count} mirrored words. Rejecting digital text.")
+            return False
+            
         return True
 
     def extract_with_vision(self, image_data: bytes, subject: str) -> Optional[str]:

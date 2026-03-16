@@ -232,7 +232,8 @@ def main():
                 
                 # C. SECTION PARSING
                 log(f"  [*] Parsing Logical Sections...")
-                sections = section_parser.parse(clean_text)
+                is_html_source = (book.get("type") == "html")
+                sections = section_parser.parse(clean_text, subject=book.get('subject'), is_html=is_html_source)
                 log(f"  [+] Found {len(sections)} logical sections.")
                 
                 # D. INGEST SECTIONS
