@@ -90,12 +90,10 @@ class SkeletonRefiner:
         if fuzzy_skel in self.skeleton_map:
             return self._preserve_formatting(word, self.skeleton_map[fuzzy_skel][0])
             
-        # 4. Consonant skip match (very common in OCR)
-        # Try to find a skeleton that contains all letters of current skeleton in order
+        # 4. Consonant skip match
         if len(skeleton) >= 4:
             for skel in self.skeleton_map:
                 if len(skel) == len(skeleton) + 1:
-                    # Check if all chars of skeleton are in skel as a subsequence
                     it = iter(skel)
                     if all(c in it for c in skeleton):
                         return self._preserve_formatting(word, self.skeleton_map[skel][0])
@@ -113,54 +111,91 @@ class SkeletonRefiner:
         if post: res = res + post.group()
         return res
 
+    def refine_sentence(self, text: str) -> str:
+        """
+        New Stage B: Process sentences with word-joining/splitting logic.
+        """
+        # Apply global replacements first
+        text = text.replace('w', 'vv').replace('W', 'VV')
+        
+        # Initial cleanup for common OCR artifacts
+        text = re.sub(r'\bAddm\s*\.', 'Addım 1.', text)
+        text = re.sub(r'\bstkan\b', 'stəkan', text, flags=re.I)
+        
+        tokens = text.split()
+        if not tokens: return text
+        
+        refined_tokens = []
+        i = 0
+        while i < len(tokens):
+            current = tokens[i]
+            # Strip punctuation for dictionary lookup
+            clean_curr = re.sub(r'[^\w]', '', current).lower()
+            
+            # Try to Merge with next token (e.g., "məlumat", "lar" -> "məlumatlar")
+            if i + 1 < len(tokens):
+                nxt = tokens[i+1]
+                clean_nxt = re.sub(r'[^\w]', '', nxt).lower()
+                combined = clean_curr + clean_nxt
+                
+                if combined in self.dictionary:
+                    # Potential merge
+                    refined_tokens.append(self._preserve_formatting(current + nxt, combined))
+                    i += 2
+                    continue
+            
+            # Try to Split current token if unknown (e.g., "vəbu" -> "və bu")
+            if clean_curr not in self.dictionary and len(clean_curr) >= 4:
+                split_found = False
+                # Yalnız çox yayılmış birləşən kiçik sözlər üçün parçalama
+                common_glued = {"və", "bu", "ilə", "isə", "bir"}
+                for j in range(2, len(clean_curr) - 1):
+                    part1 = clean_curr[:j]
+                    part2 = clean_curr[j:]
+                    if part1 in self.dictionary and part2 in self.dictionary:
+                        if part1 in common_glued or part2 in common_glued:
+                            refined_tokens.append(self._preserve_formatting(current[:j], part1))
+                            refined_tokens.append(self._preserve_formatting(current[j:], part2))
+                            split_found = True
+                            break
+                if split_found:
+                    i += 1
+                    continue
+            
+            # Default: Individual word refinement
+            refined_tokens.append(self.refine_word(current))
+            i += 1
+            
+        return " ".join(refined_tokens)
+
     def refine_text(self, text: str) -> str:
-        # Pattern-based super fixes
-        text = re.sub(r'\bAddm\s+\.', 'Addım 1.', text)
-        text = re.sub(r'\bAddm\s+1\s*\.', 'Addım 1.', text)
-        text = re.sub(r'\bAddm\s+2\s*\.', 'Addım 2.', text)
-        text = text.replace("Stkan", "Stəkan").replace("Ntic", "Nəticə")
-        text = text.replace("qnd ", "qənd ").replace("lav ", "əlavə ")
-        text = text.replace("brabrdir", "bərabərdir").replace("brabr", "bərabər")
+        if not text: return text
+        # Physics and Biology specific pattern-based super fixes
+        text = text.replace("Ntic", "Nəticə").replace("qnd ", "qənd ")
+        text = text.replace("lav ", "əlavə ").replace("brabr", "bərabər")
         
-        # Physics specifically: "dm buca" -> "düşmə bucağı"
-        text = re.sub(r'\bdm\s+bucana', 'düşmə bucağına', text)
-        text = re.sub(r'\bdm\s+bucan', 'düşmə bucağına', text)
-        text = re.sub(r'\bdm\s+bucağ', 'düşmə bucağı', text)
-        text = re.sub(r'\bdm\s+buca', 'düşmə bucağı', text)
-        text = re.sub(r'\bbucana\b', 'bucağına', text)
-        text = re.sub(r'\bbuca\b', 'bucağı', text)
-        text = re.sub(r'\bbucaq\b', 'bucaq', text)
-        text = re.sub(r'\biın\b', 'işığın', text)
-        text = re.sub(r'\biın\s+qaytma', 'işığın qayıtma', text)
-        text = re.sub(r'\bn\s+qaytma', 'işığın qayıtma', text)
-        text = re.sub(r'\bqaytma', 'qayıtma', text)
-        text = re.sub(r'\btraf\b', 'ətraf', text)
-        text = re.sub(r'\bgrmyimiz\b', 'görməyimiz', text)
-        text = re.sub(r'\bgrmimz\b', 'görməyimiz', text)
-        text = re.sub(r'\bgöremymz\b', 'görməyimiz', text)
-        text = re.sub(r'\bgizlnrk\b', 'gizlənərək', text)
-        text = re.sub(r'\bvern\b', 'verən', text)
-        text = re.sub(r'\bcihazdr\b', 'cihazdır', text)
-        
-        # Hissə 2 specific context
-        text = re.sub(r'\bQədər\s+zncir', 'Qida zəncir', text)
-        text = re.sub(r'\bQədr\s+zncir', 'Qida zəncir', text)
-        text = re.sub(r'\benerfisi\b', 'enerjisi', text)
-        text = re.sub(r'\bfrladr\b', 'fırladır', text)
-        text = re.sub(r'\bnri\b', 'nəşri', text)
-        text = re.sub(r'\btbil\b', 'təbii', text)
-        text = re.sub(r'\bflaktlr\b', 'fəlakətlər', text)
-        text = re.sub(r'\beneriinin\s+saxlanmas\s+qanunu', 'enerjinin saxlanması qanunu', text)
-        text = re.sub(r'\bba verir\b', 'baş verir', text)
-        
-        text = re.sub(r'\bBil\b', 'Belə', text)
-        text = re.sub(r'\bBel\b', 'Belə', text)
-        words = text.split()
-        return " ".join([self.refine_word(w) for w in words])
+        # Split into blocks (potential sentences/lines)
+        blocks = re.split(r'(\n)', text)
+        result = []
+        for block in blocks:
+            if block == '\n':
+                result.append(block)
+            else:
+                result.append(self.refine_sentence(block))
+        return "".join(result)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     refiner = SkeletonRefiner()
-    test_case = "Addm . Stkanlardan birini isti su , digrini is soyuq su ilə doldurun . Addm . Stkanlarn hr birin eyni əldə qnd paras lav edib qardrn . Ntic xarn ."
-    print(f"INPUT: {test_case}")
-    print(f"OUTPUT: {refiner.refine_text(test_case)}")
+    # Test merging "məlumat" + "lar"
+    test_1 = "Dərslikdəki məlumat lar çox faydalıdır ."
+    # Test splitting "vəbu"
+    test_2 = "Ona görə vəbu işi görmək lazımdır ."
+    # Mixed test
+    test_3 = "Addm 1. Stkan larda isti su vardır ."
+    
+    for t in [test_1, test_2, test_3]:
+        print(f"INPUT:  {t}")
+        print(f"OUTPUT: {refiner.refine_text(t)}")
+        print("-" * 20)

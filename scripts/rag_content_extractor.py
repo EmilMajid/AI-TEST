@@ -161,6 +161,33 @@ class ContentExtractor:
         self.logger.info(f"OCR language for '{subject}': {lang}")
         return lang
     
+    def is_intro_page(self, text: str, page_num: int) -> bool:
+        """
+        Detects if a page is a standard textbook intro page (portrait, flag, anthem, etc.)
+        Only applies to the first ~10 pages of a book.
+        """
+        if page_num > 10: return False
+        if not text: return False
+        
+        # Standard keywords for Azerbaijani textbook intro pages
+        intro_keywords = [
+            r'HEYDƏR\s+ƏLİYEV',
+            r'DÖVLƏT\s+BAYRAĞI',
+            r'DÖVLƏT\s+HİMNİ',
+            r'Dövlət\s+rəmzləri',
+            r'Üzeyir\s+Hacıbəylinin',
+            r'Əhməd\s+Cavadındır',
+            r'Musiqisi\s+',
+            r'Sözləri\s+'
+        ]
+        
+        for kw in intro_keywords:
+            if re.search(kw, text, re.IGNORECASE):
+                self.logger.info(f"  [INTRO SKIP] Page {page_num} detected as intro page (Keyword: {kw})")
+                return True
+                
+        return False
+
     def clean_text(self, text: str, subject: str = "default") -> str:
         """
         Cleans and normalizes extracted text based on RAGCleaner pipeline.
@@ -349,6 +376,9 @@ class ContentExtractor:
                                         self.logger.info(f"  Page {page_num}: Vision AI (Gemini) used successfully")
                                 except Exception as vision_e:
                                     self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
+                    # Skip standard intro pages (Portrait, Symbols, Anthem)
+                    if text and self.is_intro_page(text, page_num):
+                        continue
 
                     if text and self.is_valid_text(text):
                         page_data = {
@@ -454,6 +484,9 @@ class ContentExtractor:
                                         self.logger.info(f"  Page {page_num}: Vision AI (Gemini) used successfully")
                                 except Exception as vision_e:
                                     self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
+                    # Skip standard intro pages (Portrait, Symbols, Anthem)
+                    if text and self.is_intro_page(text, page_num):
+                        continue
 
                     if text and self.is_valid_text(text):
                         text_content.append({
