@@ -129,12 +129,15 @@ class ContentExtractor:
         except ImportError:
             # Fallback if scripts not in path (though they should be)
             import sys
-            sys.path.append(str(Path(__file__).parent))
+            scripts_dir = Path(__file__).parent
+            sys.path.append(str(scripts_dir))
+            sys.path.append(str(scripts_dir / "rag_system"))
             from rag_cleaner import RAGCleaner
             from quality_scorer import QualityScorer
             self.cleaner = RAGCleaner()
             self.scorer = QualityScorer()
             
+        self.intro_ended = False # Added for dynamic intro skipping
         self.setup_logging()
     
     def setup_logging(self):
@@ -164,12 +167,30 @@ class ContentExtractor:
     def is_intro_page(self, text: str, page_num: int) -> bool:
         """
         Detects if a page is a standard textbook intro page (portrait, flag, anthem, etc.)
-        Only applies to the first ~10 pages of a book.
+        Stops skipping once it detects the start of actual content (TOC or first section).
         """
-        if page_num > 10: return False
-        if not text: return False
+        if self.intro_ended: 
+            return False
+            
+        if not text: 
+            return False
         
-        # Standard keywords for Azerbaijani textbook intro pages
+        # Keywords that indicate the START of real content (Stop skipping)
+        content_start_keywords = [
+            r'MÜNDƏRİCAT',
+            r'Mündəricat',
+            r'BÖLMƏ',
+            r'FƏSİL',
+            r'^§\s*\d+'
+        ]
+        
+        for stop_kw in content_start_keywords:
+            if re.search(stop_kw, text, re.IGNORECASE | re.MULTILINE):
+                self.logger.info(f"  [INTRO END] Page {page_num} detected as start of content (Keyword: {stop_kw})")
+                self.intro_ended = True
+                return False # This page is now content
+
+        # Standard keywords for Azerbaijani textbook intro pages (Keep skipping)
         intro_keywords = [
             r'HEYDƏR\s+ƏLİYEV',
             r'DÖVLƏT\s+BAYRAĞI',
@@ -670,8 +691,8 @@ class ContentExtractor:
         
         self.logger.info(f"Event logged: {event['event_type']} for {book_id}")
 
-def process_unified_pipeline():
-    """Reads textbooks.json, processes PDFs, and appends to existing chunks"""
+def process_unified_pipeline(book_id_filter: str = None):
+    """Reads textbooks.json, processes PDFs/HTML, and appends to existing chunks"""
     extractor = ContentExtractor()
     
     # Paths
@@ -692,7 +713,7 @@ def process_unified_pipeline():
                 for line in f:
                     if line.strip():
                         existing_chunks.append(json.loads(line))
-            print(f"Loaded {len(existing_chunks)} existing chunks (mostly EPUB).")
+            print(f"Loaded {len(existing_chunks)} existing chunks.")
         except Exception as e:
             print(f"Error reading existing chunks: {e}. Starting fresh.")
     
@@ -700,51 +721,62 @@ def process_unified_pipeline():
     with open(textbooks_json_path, "r", encoding="utf-8") as f:
         textbooks_data = json.load(f)
         
-    new_chunks = []
-    
-    # Create/Clear output file first
+    # Handle Book ID filtering and duplicate cleaning
+    if book_id_filter:
+        print(f"Filtering for Book ID: {book_id_filter}")
+        # Clean existing chunks for this specific book to avoid duplicates on re-index
+        initial_count = len(existing_chunks)
+        existing_chunks = [c for c in existing_chunks if c.get("book_id") != book_id_filter]
+        if initial_count > len(existing_chunks):
+            print(f"Removed {initial_count - len(existing_chunks)} existing chunks for {book_id_filter}.")
+
+    # Write back existing chunks (unified list)
     with open(chunks_jsonl_path, "w", encoding="utf-8") as f:
-        # Write existing chunks first
         for chunk in existing_chunks:
-            # Skip old chunks if we are re-processing everything (optional, but for now keep them)
              if chunk.get("type") != "pdf_placeholder":
                 json.dump(chunk, f, ensure_ascii=False)
                 f.write("\n")
 
     # Iterate over all grades and books
     for grade, books in textbooks_data.items():
-        print(f"Checking Grade {grade} ({len(books)} books)")
+        if book_id_filter:
+            target_books = [b for b in books if b['id'] == book_id_filter]
+        else:
+            target_books = books
+
+        if not target_books:
+            continue
+
+        print(f"Checking Grade {grade} ({len(target_books)} targeted books)")
         
-        # Wrap with progress bar if available
-        books_iter = tqdm(books, desc=f"Grade {grade}") if TQDM_AVAILABLE else books
+        books_iter = tqdm(target_books, desc=f"Grade {grade}") if TQDM_AVAILABLE else target_books
         
         for book in books_iter:
-            if book.get("type") == "pdf":
-                pdf_rel_path = book.get("path")
-                print(f"  - Found PDF entry: {book['title']} ({pdf_rel_path})")
+            book_type = book.get("type")
+            pdf_rel_path = book.get("path", "")
+            is_pdf_ext = pdf_rel_path.lower().endswith(".pdf")
+            
+            # Determine if we should treat as PDF or HTML
+            if book_type == "pdf" or (book_type == "ederslik_html" and is_pdf_ext):
+                print(f"  - Found PDF entry: {book['title']}")
                 pdf_path = None
                 
-                # 1. Try contentPath directory first
                 if book.get("contentPath"):
                     local_dir = base_dir / book["contentPath"]
                     if local_dir.exists():
                         pdfs = list(local_dir.glob("*.pdf"))
-                        if pdfs:
-                            pdf_path = pdfs[0]
+                        if pdfs: pdf_path = pdfs[0]
                 
-                # 2. Fallback to direct path
                 if not pdf_path and pdf_rel_path:
                      clean_path = pdf_rel_path.lstrip("/").lstrip("\\")
                      pdf_path = base_dir / "public" / clean_path
                      if not pdf_path.exists():
-                         # Try looking in public/textbooks
-                         pdf_path = base_dir / "public" / "textbooks" / clean_path
+                          pdf_path = base_dir / "public" / "textbooks" / clean_path
 
                 if pdf_path and pdf_path.exists():
-                    print(f"    -> Processing PDF: {pdf_path.name} (Grade {grade} - {book['subject']})")
+                    print(f"    -> Processing PDF: {pdf_path.name}")
                     try:
                         extracted = extractor.extract_pdf(str(pdf_path), subject=book['subject'])
-                        # Only proceed if we got content
                         if extracted["content"]:
                             file_chunks = extractor.chunk_content(
                                 extracted["content"], 
@@ -753,15 +785,13 @@ def process_unified_pipeline():
                                 book_id=book["id"]
                             )
                             
-                            # Log extraction event
                             extractor.log_extraction_event(
                                 book_id=book["id"],
                                 grade=int(grade),
                                 subject=book["subject"],
-                                result={"chunks": file_chunks, "metadata": extracted.get("metadata", {})}
+                                result={"chunks_count": len(file_chunks)}
                             )
                             
-                            # APPEND chunks to file immediately
                             with open(chunks_jsonl_path, "a", encoding="utf-8") as f:
                                 for chunk in file_chunks:
                                     chunk_data = {
@@ -773,23 +803,68 @@ def process_unified_pipeline():
                                         "text": chunk["text"],
                                         "page": chunk["page"],
                                         "type": "pdf_page",
-                                        "knowledge": chunk.get("knowledge") # Already extracted in chunk_content
+                                        "knowledge": chunk.get("knowledge")
                                     }
-                                    
                                     json.dump(chunk_data, f, ensure_ascii=False)
                                     f.write("\n")
-
-                            print(f"  -> Extracted and saved {len(file_chunks)} chunks.")
+                            print(f"  -> Saved {len(file_chunks)} chunks.")
                         else:
                              print(f"  -> No text extracted (Scanned PDF?).")
-                             
                     except Exception as e:
-                        print(f"Failed to process {pdf_path.name}: {e}")
+                        print(f"Failed PDF {book['id']}: {e}")
                 else:
-                    if book.get("contentPath"):
-                         print(f"Warning: PDF file not found for: {book['title']} (Checked {book['contentPath']} and path)")
+                    print(f"Warning: File not found for {book['title']}")
 
-    print("Unified Extraction Complete (Incremental)!")
+            elif book_type in ["html", "ederslik_html"]:
+                print(f"  - Found HTML/EPUB entry: {book['title']}")
+                try:
+                    from html_content_extractor import HTMLContentExtractor
+                    html_extractor = HTMLContentExtractor()
+                    
+                    content_dir = base_dir / book["contentPath"]
+                    if not content_dir.exists():
+                        content_dir = base_dir / "public" / book["contentPath"].lstrip("/").lstrip("\\")
+                        
+                    if content_dir.exists():
+                        html_content = html_extractor.extract_with_page_numbers(content_dir, subject=book['subject'])
+                        if html_content:
+                            file_chunks = extractor.chunk_content(
+                                html_content,
+                                subject=book["subject"],
+                                grade=int(grade),
+                                book_id=book["id"]
+                            )
+                            
+                            extractor.log_extraction_event(book_id=book["id"], grade=int(grade), subject=book["subject"], result={"chunks_count": len(file_chunks)})
+                            
+                            with open(chunks_jsonl_path, "a", encoding="utf-8") as f:
+                                for chunk in file_chunks:
+                                    chunk_data = {
+                                        "id": chunk["id"],
+                                        "grade": int(grade),
+                                        "subject": book["subject"],
+                                        "book_id": book["id"],
+                                        "source": f"{book['id']}_html",
+                                        "text": chunk["text"],
+                                        "page": chunk["page"],
+                                        "type": "html_page",
+                                        "knowledge": chunk.get("knowledge")
+                                    }
+                                    json.dump(chunk_data, f, ensure_ascii=False)
+                                    f.write("\n")
+                            print(f"  -> Saved {len(file_chunks)} HTML chunks.")
+                        else:
+                            print(f"  -> No content extracted from HTML for {book['title']}.")
+                    else:
+                        print(f"Warning: HTML dir not found: {content_dir}")
+                except Exception as e:
+                    print(f"Failed HTML {book['id']}: {e}")
+
+    print("Unified Extraction Process Complete!")
 
 if __name__ == "__main__":
-    process_unified_pipeline()
+    import argparse
+    parser = argparse.ArgumentParser(description="Unified RAG Content Extractor")
+    parser.add_argument("--book_id", type=str, help="Single book ID to process")
+    args = parser.parse_args()
+    process_unified_pipeline(book_id_filter=args.book_id)

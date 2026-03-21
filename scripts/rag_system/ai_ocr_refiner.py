@@ -1,9 +1,15 @@
-
 import os
-import torch
 import logging
-from transformers import ByT5Tokenizer, T5ForConditionalGeneration
 from typing import Optional
+
+# Graceful handling of torch/transformers loading (prevents DLL crash)
+try:
+    import torch
+    from transformers import ByT5Tokenizer, T5ForConditionalGeneration
+    HAS_AI_LIBS = True
+except (ImportError, OSError) as e:
+    logging.getLogger(__name__).error(f"AI OCR Libraries (torch/transformers) failed to load: {e}")
+    HAS_AI_LIBS = False
 
 class AIOCRRefiner:
     """
@@ -12,9 +18,16 @@ class AIOCRRefiner:
     """
     def __init__(self, model_path: str = "models/ocr_repair_byt5", base_model: str = "google/byt5-small"):
         self.logger = logging.getLogger(__name__)
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model = None
+        self.tokenizer = None
+        self.device = None
         
+        if not HAS_AI_LIBS:
+            self.logger.warning("AI OCR features are disabled due to missing/broken libraries.")
+            return
+
         try:
+            self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
             if os.path.exists(os.path.join(model_path, "config.json")):
                 self.logger.info(f"Loading local fine-tuned model from {model_path}")
                 self.tokenizer = ByT5Tokenizer.from_pretrained(model_path)
