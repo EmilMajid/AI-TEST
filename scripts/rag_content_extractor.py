@@ -1,6 +1,11 @@
 from pathlib import Path
 import os
 import sys
+import io
+
+# Force UTF-8 for stdout to avoid charmap errors in Windows terminal
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Ensure TESSDATA_PREFIX is set for Tesseract OCR
 project_root = Path(__file__).parent.parent
@@ -11,13 +16,14 @@ import pdfplumber
 import pytesseract
 import fitz # PyMuPDF
 from PIL import Image
-import io
 import json
 import re
 import logging
 from typing import List, Dict, Any, Optional
 from datetime import datetime
 import unicodedata
+
+# Internal modules will be imported inside __init__ to handle path issues
 
 try:
     from llm_utils import extract_triples, call_gemini_vision, call_xai_vision, get_api_key
@@ -42,21 +48,26 @@ class ChunkValidator:
     MIN_CHUNK_LENGTH = 50  # Lowered from 100 for OCR fragments
     
     @staticmethod
-    def validate(chunk: Dict) -> tuple[bool, str]:
+    def validate(chunk: Dict, subject: str = "default") -> tuple[bool, str]:
         """Validates chunk and returns (is_valid, reason)"""
         text = chunk.get("text", "")
         score = chunk.get("quality_score", 0)
         
+        # Technical subject detection
+        is_technical = any(s in subject.lower() for s in ["riyaziyyat", "fizika", "kimya", "texnologiya"])
+
         # Hard reject - low quality
-        if score < ChunkValidator.QUALITY_THRESHOLD_REJECT:
+        threshold = 40 if is_technical else ChunkValidator.QUALITY_THRESHOLD_REJECT
+        if score < threshold:
             return False, "LOW_QUALITY_SCORE"
         
         # Hard reject - too short
-        if len(text) < ChunkValidator.MIN_CHUNK_LENGTH:
+        min_len = 15 if is_technical else ChunkValidator.MIN_CHUNK_LENGTH
+        if len(text) < min_len:
             return False, "TOO_SHORT"
         
         # Hard reject - gibberish check
-        if ChunkValidator.is_gibberish(text):
+        if ChunkValidator.is_gibberish(text, subject):
             return False, "GIBBERISH"
         
         # Soft warning - medium quality
@@ -66,25 +77,29 @@ class ChunkValidator:
         return True, "OK"
     
     @staticmethod
-    def is_gibberish(text: str) -> bool:
+    def is_gibberish(text: str, subject: str = "default") -> bool:
         """Checks if text appears to be gibberish"""
         if not text: return True
         
+        is_technical = any(s in subject.lower() for s in ["riyaziyyat", "fizika", "kimya", "texnologiya"])
+
         # Check ratio of spaces to characters
         space_ratio = text.count(' ') / len(text)
-        # Tables often have high space ratio, increased from 0.5 to 0.8
-        if space_ratio < 0.05 or space_ratio > 0.8:  
+        # Tables often have high space ratio
+        max_space_ratio = 0.9 if is_technical else 0.8
+        if space_ratio < 0.02 or space_ratio > max_space_ratio:  
             return True
         
         # Check for excessive special characters
-        # Exclude common table characters from "noise" count
-        table_chars = {'|', '+', '-', '_', '—', '.', ',', '?', '!', '(', ')', '[', ']', '{', '}'}
+        # Exclude common table and MATH characters from "noise" count
+        table_chars = {'|', '+', '-', '_', '—', '.', ',', '?', '!', '(', ')', '[', ']', '{', '}', '=', '>', '<', '*', '/', '±', '²', '³', '√', 'π', '≈', '≠', '≤', '≥'}
         non_alnum = [c for c in text if not c.isalnum() and not c.isspace()]
         non_table_special = [c for c in non_alnum if c not in table_chars]
         
         # Standard special char ratio check (ignore table chars and punctuation)
         if len(text) > 20: 
-            if len(non_table_special) / len(text) > 0.3:
+            threshold = 0.5 if is_technical else 0.3
+            if len(non_table_special) / len(text) > threshold:
                 return True
                 
         return False
@@ -105,6 +120,7 @@ class ContentExtractor:
     
 
     def __init__(self):
+        self.setup_logging() # Initialize logger first
         self.math_pattern = re.compile(r'\$(.*?)\$|\\\[(.*?)\\\]')
         project_root = Path(__file__).parent.parent
         self.output_dir = project_root / "data"
@@ -120,12 +136,15 @@ class ContentExtractor:
             import pytesseract
             pytesseract.pytesseract.tesseract_cmd = tesseract_bin
         
-        # Initialize specialized cleaners
+        # Initialize specialized cleaners and refiners
         try:
             from rag_cleaner import RAGCleaner
-            from quality_scorer import QualityScorer
+            from rag_system.quality_scorer import QualityScorer
+            from rag_system.llm_refiner import LLMContentRefiner
             self.cleaner = RAGCleaner()
             self.scorer = QualityScorer()
+            self.refiner = LLMContentRefiner()
+            self.logger.info("ContentExtractor initialized with subject-aware Quality Gates and AI Refiner")
         except ImportError:
             # Fallback if scripts not in path (though they should be)
             import sys
@@ -133,12 +152,13 @@ class ContentExtractor:
             sys.path.append(str(scripts_dir))
             sys.path.append(str(scripts_dir / "rag_system"))
             from rag_cleaner import RAGCleaner
-            from quality_scorer import QualityScorer
+            from rag_system.quality_scorer import QualityScorer
+            from rag_system.llm_refiner import LLMContentRefiner
             self.cleaner = RAGCleaner()
             self.scorer = QualityScorer()
+            self.refiner = LLMContentRefiner()
             
         self.intro_ended = False # Added for dynamic intro skipping
-        self.setup_logging()
     
     def setup_logging(self):
         """Initialize logging system"""
@@ -216,18 +236,24 @@ class ContentExtractor:
         # Use the specialized cleaner
         return self.cleaner.clean(text)
 
-    def calculate_quality_score(self, text: str, ocr_used: bool) -> float:
+    def calculate_quality_score(self, text: str, ocr_used: bool, subject: str = "default") -> float:
         """
         Calculates quality score using specialized QualityScorer
         Returns 0-100 scale
         """
         # Use the specialized scorer
-        result = self.scorer.score(text)
+        result = self.scorer.score(text, subject=subject)
         # Convert 0-1 scale to 0-100
         return result["score"] * 100
-    def is_valid_text(self, text: str) -> bool:
+    def is_valid_text(self, text: str, subject: str = "default") -> bool:
         """Enhanced text validation including DUİS anomaly detection"""
-        if not text or len(text.strip()) < 30:
+        if not text:
+            return False
+            
+        is_technical = any(s in subject.lower() for s in ["riyaziyyat", "fizika", "kimya", "texnologiya"])
+        min_len = 15 if is_technical else 30
+        
+        if len(text.strip()) < min_len:
             return False
         
         # 1. PDF font encoding problems (CID maps)
@@ -235,20 +261,24 @@ class ContentExtractor:
             return False
             
         # 2. DUİS Anomaly Detection (ø, ù, ԥ)
-        # If ratio of these chars is > 2%, it's definitely corrupted
         anomalies = re.findall(r'[øùԥԤԦԧԨԩԪԫ]', text)
         anomaly_ratio = len(anomalies) / max(len(text), 1)
-        if anomaly_ratio > 0.02:
+        if anomaly_ratio > 0.05: # Relaxed from 0.02 to handle technical glyphs
             self.logger.warning(f"  [ANOMALY TRIGGER] Found {len(anomalies)} corrupted symbols (ratio: {anomaly_ratio:.2%})")
             return False
 
-        # 3. Check for reasonable amount of letters (Azerbaijani + Latin)
-        letter_count = len(re.findall(r'[a-zA-ZəöüçşğıƏÖÜÇŞĞIİ]', text))
-        if letter_count < 10:
+        # 3. Check for reasonable amount of content (Letters or Digits for technical)
+        if is_technical:
+            content_chars = re.findall(r'[a-zA-Z0-9əöüçşğıƏÖÜÇŞĞIİ]', text)
+            min_content = 5
+        else:
+            content_chars = re.findall(r'[a-zA-ZəöüçşğıƏÖÜÇŞĞIİ]', text)
+            min_content = 10
+            
+        if len(content_chars) < min_content:
             return False
             
         # 4. Mirroring Detection (Reversed English/Azerbaijani)
-        # Check for common reversed words
         mirrored_patterns = [
             r'\beht\b', r'\bdna\b', r'\bruoy\b', r'\bym\b', r'\bdlo\b', 
             r'\bsnobmuN\b', r'\berA\b', r'\bsi\b', r'\btahw\b', r'\beman\b',
@@ -259,7 +289,7 @@ class ContentExtractor:
             if re.search(p, text, re.IGNORECASE):
                 mirrored_count += 1
         
-        if mirrored_count >= 2:
+        if mirrored_count >= 3: # Increased from 2
             self.logger.warning(f"  [MIRROR TRIGGER] Detected {mirrored_count} mirrored words. Rejecting digital text.")
             return False
             
@@ -465,7 +495,7 @@ class ContentExtractor:
                     ocr_used = False
                     
                     # Enhanced validation
-                    if not self.is_valid_text(text):
+                    if not self.is_valid_text(text, subject=subject):
                         # Fallback to OCR using PyMuPDF behavior
                         if doc_fitz:
                             try:
@@ -489,33 +519,43 @@ class ContentExtractor:
                                         lang=ocr_lang,
                                         config=ocr_config
                                     )
-                                    if self.is_valid_text(ocr_text):
+                                    if self.is_valid_text(ocr_text, subject=subject):
                                         text = ocr_text
                                         ocr_used = True
                                         self.logger.info(f"  Page {page_num}: OCR used successfully (fitz)")
+                                        
+                                        # Apply AI Refinement for OCR text (fix missing vowels/broken words)
+                                        self.logger.info(f"  Page {page_num}: Applying AI Refinement...")
+                                        try:
+                                            text = self.refiner.refine(text, subject=subject)
+                                        except Exception as ref_e:
+                                            self.logger.warning(f"  Page {page_num}: AI Refinement failed: {ref_e}")
                             except Exception as ocr_e:
                                 self.logger.warning(f"  Page {page_num}: Tesseract OCR failed - {ocr_e}")
                                 
                                 # Fallback to Vision AI
                                 try:
                                     vision_text = self.extract_with_vision(img_data, subject)
-                                    if vision_text and self.is_valid_text(vision_text):
+                                    if vision_text and self.is_valid_text(vision_text, subject=subject):
                                         text = vision_text
                                         ocr_used = True
                                         self.logger.info(f"  Page {page_num}: Vision AI (Gemini) used successfully")
+                                        
+                                        # Refine Vision AI text as well if needed
+                                        text = self.refiner.refine(text, subject=subject)
                                 except Exception as vision_e:
                                     self.logger.warning(f"  Page {page_num}: Vision AI failed - {vision_e}")
                     # Skip standard intro pages (Portrait, Symbols, Anthem)
                     if text and self.is_intro_page(text, page_num):
                         continue
 
-                    if text and self.is_valid_text(text):
+                    if text and self.is_valid_text(text, subject=subject):
                         text_content.append({
                             "page": page_num,
                             "text": text,
                             "type": "text",
                             "ocr_used": ocr_used,
-                            "quality_score": self.calculate_quality_score(text, ocr_used)
+                            "quality_score": self.calculate_quality_score(text, ocr_used, subject=subject)
                         })
                         
                         # Apply text cleaning
@@ -579,7 +619,7 @@ class ContentExtractor:
                         "text": chunk_text,
                         "page": item["page"],
                         "type": "chunk",
-                        "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False)),
+                        "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False), subject=subject),
                         "ocr_used": item.get("ocr_used", False),
                         # Orchestrator metadata
                         "ingestion_timestamp": datetime.now().isoformat(),
@@ -591,7 +631,7 @@ class ContentExtractor:
                     }
                     
                     # Quality gate validation
-                    is_valid, reason = ChunkValidator.validate(chunk_obj)
+                    is_valid, reason = ChunkValidator.validate(chunk_obj, subject=subject)
                     
                     if is_valid:
                         chunks.append(chunk_obj)
@@ -615,7 +655,7 @@ class ContentExtractor:
                 "text": chunk_text,
                 "page": item["page"],
                 "type": "chunk",
-                "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False)),
+                "quality_score": self.calculate_quality_score(chunk_text, item.get("ocr_used", False), subject=subject),
                 "ocr_used": item.get("ocr_used", False),
                 "ingestion_timestamp": datetime.now().isoformat(),
                 "processing_pipeline": "rag_content_extractor_v2",
@@ -625,7 +665,7 @@ class ContentExtractor:
                 "knowledge": []
             }
             
-            is_valid, reason = ChunkValidator.validate(chunk_obj)
+            is_valid, reason = ChunkValidator.validate(chunk_obj, subject=subject)
             if is_valid:
                 chunks.append(chunk_obj)
             else:

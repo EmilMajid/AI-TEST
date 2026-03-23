@@ -4,7 +4,7 @@ class QualityScorer:
     """
     Chunk keyfiyyətini (0-1) ölçən modul.
     """
-    def score(self, text: str) -> dict:
+    def score(self, text: str, subject: str = "default") -> dict:
         if not text:
             return {
                 "score": 0.0,
@@ -17,16 +17,29 @@ class QualityScorer:
             }
 
         length = len(text)
+        
+        # Technical subject detection (Math, Physics, Chemistry)
+        is_technical = any(s in subject.lower() for s in ["riyaziyyat", "fizika", "kimya", "biologiya", "texnologiya"])
+
         # Səs-küy nisbəti (xüsusi simvollar)
-        noise = re.findall(r'[^a-zA-ZəğıöçüƏĞİÖÇÜ\s.,!?-]', text)
+        # For technical subjects, digits are NOT noise
+        if is_technical:
+            noise = re.findall(r'[^a-zA-Z0-9əğıöçüƏĞİÖÇÜ\s.,!?-]', text)
+        else:
+            noise = re.findall(r'[^a-zA-ZəğıöçüƏĞİÖÇÜ\s.,!?-]', text)
+            
         noise_ratio = len(noise) / max(length, 1)
         
         # Təkrar simvol nisbəti
         rep = re.findall(r'(.)\1{3,}', text)
         repetition_ratio = len(rep) / max(length, 1)
         
-        # Əlifba simvollarının nisbəti
-        alpha = re.findall(r'[a-zA-ZəğıöçüƏĞİÖÇÜ]', text)
+        # Əlifba simvollarının nisbəti (Include digits for technical)
+        if is_technical:
+            alpha = re.findall(r'[a-zA-Z0-9əğıöçüƏĞİÖÇÜ]', text)
+        else:
+            alpha = re.findall(r'[a-zA-ZəğıöçüƏĞİÖÇÜ]', text)
+            
         alpha_ratio = len(alpha) / max(length, 1)
         
         # NEW: Vowel loss detection (OCR corruption indicator)
@@ -37,6 +50,7 @@ class QualityScorer:
         
         for w in words:
             clean_w = re.sub(r'[^\w]', '', w)
+            # Skip numbers in technical subjects for vowel check
             if len(clean_w) > 2 and not clean_w.isdigit():
                 if not any(c in vowels for c in clean_w):
                     vowel_less_count += 1
@@ -48,14 +62,19 @@ class QualityScorer:
         anomaly_ratio = len(anomalies) / max(length, 1)
 
         # Balın hesablanması
-        # Adjust weights to include anomaly penalty
+        # Adjust weights for technical subjects (lower alpha requirements if digits are many)
+        if is_technical and alpha_ratio > 0.3:
+            alpha_bonus = 1.0
+        else:
+            alpha_bonus = min(alpha_ratio * 1.5, 1)
+
         final_score = (
-            (1 - min(noise_ratio * 2, 1)) * 0.15 + 
-            (1 - min(repetition_ratio * 5, 1)) * 0.15 + 
-            min(alpha_ratio * 1.2, 1) * 0.25 + 
-            min(word_count / 50, 1) * 0.15 +
+            (1 - min(noise_ratio * 3, 1)) * 0.20 + 
+            (1 - min(repetition_ratio * 5, 1)) * 0.10 + 
+            alpha_bonus * 0.25 + 
+            min(word_count / 40, 1) * 0.15 +
             (1 - min(vowel_loss_ratio * 3, 1)) * 0.15 +
-            (1 - min(anomaly_ratio * 20, 1)) * 0.15 # Strong penalty for anomalies
+            (1 - min(anomaly_ratio * 20, 1)) * 0.15
         )
 
         return {

@@ -129,6 +129,26 @@ class SkeletonRefiner:
         i = 0
         while i < len(tokens):
             current = tokens[i]
+            
+            # Stage 8: Fix specific 'ü' vs 'ii' misrecognitions (e.g., bədü -> bədii)
+            # Handle possible trailing punctuation in tokens
+            fixed_by_heuristic = False
+            if 'ü' in current:
+                # Find words ending in ü (optionally with trailing punctuation)
+                match = re.search(r'(\w+)ü([^\w]*)$', current)
+                if match:
+                    base = match.group(1)
+                    punct = match.group(2)
+                    candidate = base.lower() + 'ii'
+                    if candidate in self.dictionary:
+                        current = current[:match.start()] + self._preserve_formatting(base + 'ü', candidate) + punct
+                        fixed_by_heuristic = True
+            
+            if fixed_by_heuristic:
+                refined_tokens.append(current)
+                i += 1
+                continue
+
             # Strip punctuation for dictionary lookup
             clean_curr = re.sub(r'[^\w]', '', current).lower()
             

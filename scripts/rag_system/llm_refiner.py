@@ -7,9 +7,15 @@ from typing import Dict, Any
 
 # Ensure we can import from parent dir
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Try relative imports for package usage, fallback to standard imports for direct execution
+try:
+    from .skeleton_refiner import SkeletonRefiner
+    from .ai_ocr_refiner import AIOCRRefiner
+except (ImportError, ValueError):
+    from skeleton_refiner import SkeletonRefiner
+    from ai_ocr_refiner import AIOCRRefiner
+
 import llm_utils
-from skeleton_refiner import SkeletonRefiner
-from ai_ocr_refiner import AIOCRRefiner
 
 class LLMContentRefiner:
     """
