@@ -2,6 +2,15 @@
 
 import re
 import unicodedata
+import os
+import sys
+from pathlib import Path
+
+# Ensure we can import from rag_system subdirectory
+scripts_dir = Path(__file__).parent
+sys.path.append(str(scripts_dir / "rag_system"))
+
+from hyphen_normalizer import HyphenNormalizer
 
 class RAGCleaner:
     def __init__(self):
@@ -10,6 +19,7 @@ class RAGCleaner:
             "с": "c", "у": "y", "х": "x", "м": "m",
             "к": "k", "В": "B", "Н": "H"
         }
+        self.hyphen_normalizer = HyphenNormalizer()
 
     # =========================
     # Public API
@@ -23,7 +33,9 @@ class RAGCleaner:
         text = self.fix_cyrillic_mix(text)
         text = self.remove_repetition_noise(text)
         text = self.fix_letter_spacing(text)
-        text = self.fix_hyphenation(text)
+        
+        # Use the hybrid Hyphen Normalizer (Regex + Heuristics)
+        text = self.hyphen_normalizer.normalize(text)
         
         # Stage 7: Linguistic Fix (w -> vv for Azerbaijani)
         text = text.replace('w', 'vv').replace('W', 'VV')
@@ -86,10 +98,6 @@ class RAGCleaner:
             text
         )
 
-    def fix_hyphenation(self, text):
-        # Standard hyphenation: word- word -> wordword
-        return re.sub(r'(\w+)-\s+(\w+)', r'\1\2', text)
-
     def remove_layout_noise(self, text):
         # remove page numbers like 12 13 (isolated numbers)
         text = re.sub(r'\b\d{1,3}\s\d{1,3}\b', '', text)
@@ -100,4 +108,5 @@ class RAGCleaner:
         return text
 
     def normalize_whitespace(self, text):
+        # Basic space normalization (replaces any remaining multi-space gaps)
         return re.sub(r'\s+', ' ', text)
