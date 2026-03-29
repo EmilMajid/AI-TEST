@@ -52,19 +52,28 @@ class RAGCleaner:
         return unicodedata.normalize("NFKC", text)
 
     def fix_mojibake(self, text):
-        """Fixes common encoding errors in OCR text (UTF-8 bytes interpreted as windows-1254/1252)"""
+        """Fixes common encoding errors in OCR text (UTF-8 bytes interpreted as windows-1254/1252).
+        Tuned to avoid false positives on valid Azerbaijani characters.
+        """
         if not text: return text
         
-        # Example: "Ğ§Ñ‚Ğ¾" (Cyrillic CHTO in UTF-8 -> Windows-1254)
-        try:
-            # Detect if it looks like typical mojibake (contains Ğ, Ñ, etc. in a tight sequence)
-            if re.search(r'[ĞÑĞğ]', text):
-                # Attempt to repair: windows-1254 is common in AZ locale, then fallback to latin-1
+        # Refined pattern: Look for specific multi-byte combinations often seen in mojibake
+        # like high-entropy non-ASCII sequences, excluding single valid AZ characters.
+        # TRIGGER: Sequence of 2+ high-ANSI characters (typical of misinterpreted UTF-8)
+        if re.search(r'[\xc0-\xff]{2,}', text.encode('latin-1', errors='ignore').decode('latin-1')):
+            try:
+                # Only attempt repair if we suspect true encoding corruption
+                # Safe-pass: if text already contains common AZ chars, be cautious
+                if 'ə' in text or 'Ə' in text:
+                    # If 'ə' is already there, it's likely already UTF-8 or correctly decoded.
+                    # Don't risk a repair that might use errors='ignore'.
+                    return text
+                    
                 repair = text.encode('windows-1254', errors='ignore').decode('utf-8', errors='ignore')
-                if len(repair) > len(text) * 0.4: # Simple sanity check
+                if len(repair) > len(text) * 0.8: # Stricter sanity check
                     return repair
-        except:
-            pass
+            except:
+                pass
         return text
 
     def fix_cyrillic_mix(self, text):

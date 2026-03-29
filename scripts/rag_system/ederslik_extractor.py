@@ -35,7 +35,7 @@ class EDerslikExtractor:
                 try:
                     req = urllib.request.Request(url, headers=self.headers)
                     with urllib.request.urlopen(req, timeout=10) as response:
-                        html_content = response.read().decode('utf-8')
+                        html_content = response.read() # Read as bytes
                         text = self._parse_xhtml(html_content)
                         
                         if text.strip():
