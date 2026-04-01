@@ -678,144 +678,240 @@
       "title": "Azərbaycan tarixi 7",
       "subject": "Azərbaycan tarixi",
       "type": "pdf",
-      "path": "/textbooks/7/azerbaycan-tarixi-7/book.pdf",
-      "contentPath": "public/textbooks/7/azerbaycan-tarixi-7"
-    },
-    {
-      "id": "fiziki-terbiye-7",
-      "title": "Fiziki tərbiyə 7",
-      "subject": "Fiziki tərbiyə",
-      "type": "pdf",
-      "path": "/textbooks/7/fiziki-terbiye-7/book.pdf",
-      "contentPath": "public/textbooks/7/fiziki-terbiye-7"
+      "path": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-tarixi-quot-fanni-uzra-7-ci-sinif-ucun-darslik.pdf",
+      "contentPath": "public/textbooks/7/azerbaycan-tarixi-7",
+      "grade": 7,
+      "topics": "KİTABIN İÇİNDƏKİLƏR (PDF səh 7, Dərslik səh 5)"
     },
     {
       "id": "musiqi-7",
-      "title": "Musiqi 7",
+      "title": "Musiqi - 7",
       "subject": "Musiqi",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/musiqi-7/book.pdf",
-      "contentPath": "public/textbooks/7/musiqi-7"
+      "contentPath": "public/textbooks/7/musiqi-7",
+      "grade": 7,
+      "e_derslik_id": "712",
+      "topics": "MUSİQİ OBRAZI (I HİSSƏ)\nMUSİQİ OBRAZI (II HİSSƏ)\nMUSİQİ DRAMATURGİYASI (I HİSSƏ)\nMUSİQİ DRAMATURGİYASI (II HİSSƏ)"
     },
     {
       "id": "informatika-7",
-      "title": "İnformatika 7",
+      "title": "İnformatika - 7",
       "subject": "İnformatika",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/informatika-7/book.pdf",
-      "contentPath": "public/textbooks/7/informatika-7"
+      "contentPath": "public/textbooks/7/informatika-7",
+      "grade": 7,
+      "e_derslik_id": "708",
+      "topics": "1. KOMPÜTER\n2. TƏDİQİ PROQRAMLAR\n3. İNFORMASİYA\n4. PROQRAMLAŞDIRMA\n5. İNTERNET"
     },
     {
       "id": "tesviri-incesenet-7",
-      "title": "Təsviri İncəsənət 7",
+      "title": "Təsviri incəsənət - 7",
       "subject": "Təsviri İncəsənət",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/tesviri-incesenet-7/book.pdf",
-      "contentPath": "public/textbooks/7/tesviri-incesenet-7"
+      "contentPath": "public/textbooks/7/tesviri-incesenet-7",
+      "grade": 7,
+      "e_derslik_id": "721",
+      "topics": "1. TƏSVİRİ SƏNƏT ORTA ƏSRLƏRDƏ\n2. TƏSVİRİ SƏNƏTDƏ JANRLAR\n3. DÖVR, XALQ VƏ GEYİMLƏR\n4. DEKORATİV-TƏTBİQİ SƏNƏT VƏ BƏDİİ DİZAYN"
     },
     {
       "id": "texnologiya-7",
-      "title": "Texnologiya 7",
+      "title": "Texnologiya - 7",
       "subject": "Texnologiya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/texnologiya-7/book.pdf",
-      "contentPath": "public/textbooks/7/texnologiya-7"
+      "contentPath": "public/textbooks/7/texnologiya-7",
+      "grade": 7,
+      "e_derslik_id": "719",
+      "topics": "Məişət mədəniyyəti\nOduncağın emalı texnologiyası\nElektrotexniki işlər\nMetalın emalı texnologiyası\nƏrzaq məhsullarının emalı texnologiyası\nParçanın emalı texnologiyası"
     },
     {
       "id": "azerbaycan-dili-7",
       "title": "Azərbaycan dili 7",
       "subject": "Azərbaycan dili",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/azerbaycan-dili-7/book.pdf",
-      "contentPath": "public/textbooks/7/azerbaycan-dili-7"
+      "contentPath": "public/textbooks/7/azerbaycan-dili-7",
+      "grade": 7,
+      "e_derslik_id": "696",
+      "topics": "I BÖLMƏ. FƏRD VƏ CƏMİYYƏT\nII BÖLMƏ. HƏR SÖZÜN BİR TALEYİ VAR\nIII BÖLMƏ. ANA TƏBİƏT\nIV BÖLMƏ. KAMİLLİYƏ DOĞRU\nV BÖLMƏ. DƏYƏRLƏRİMİZ\nVI BÖLMƏ. İXTİRALAR VƏ KƏŞFLƏR\nVII BÖLMƏ. KİTABIN TARİXİ\nSÖZLÜK"
     },
     {
       "id": "umumi-tarix-7",
       "title": "Ümumi tarix 7",
       "subject": "Ümumi tarix",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/umumi-tarix-7/book.pdf",
-      "contentPath": "public/textbooks/7/umumi-tarix-7"
+      "contentPath": "public/textbooks/7/umumi-tarix-7",
+      "grade": 7,
+      "e_derslik_id": "723",
+      "topics": "Dünya ölkələri III-XI yüzilliklərdə\nDünya ölkələri XI-XVI yüzilliklərdə"
     },
     {
       "id": "edebiyyat-7",
       "title": "Ədəbiyyat 7",
       "subject": "Ədəbiyyat",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/edebiyyat-7/book.pdf",
-      "contentPath": "public/textbooks/7/edebiyyat-7"
+      "contentPath": "public/textbooks/7/edebiyyat-7",
+      "grade": 7,
+      "e_derslik_id": "701",
+      "topics": "ŞİFAHİ XALQ ƏDƏBİYYATINDAN SEÇMƏLƏR\nVƏTƏN SEVGİSİ, QƏHRƏMANLIQ SƏHİFƏLƏRİ\nMƏNƏVİ DƏYƏRLƏR, HƏMİŞƏYAŞAR HİKMƏTLƏR\nUŞAQ ALƏMİ, UŞAQ TALEYİ\nTƏBİƏTƏ VURĞUNLUQ, TƏBİƏTƏ QAYĞI\nLüğət\nQısa ədəbiyyatşünaslıq terminləri lüğəti"
     },
     {
       "id": "riyaziyyat-7",
       "title": "Riyaziyyat 7",
       "subject": "Riyaziyyat",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/riyaziyyat-7/book.pdf",
-      "contentPath": "public/textbooks/7/riyaziyyat-7"
+      "contentPath": "public/textbooks/7/riyaziyyat-7",
+      "grade": 7,
+      "e_derslik_id": "714",
+      "topics": "BÖLMƏ 1. STATİSTİKA. EHTİMAL\nBÖLMƏ 2. RASİONAL ƏDƏDLƏR\nBÖLMƏ 3. PARALELLİK. PERPENDİKULYARLIQ\nBÖLMƏ 4. BİRHƏDLİLƏR. ÇOXHƏDLİLƏR\nBÖLMƏ 5. ÜÇBUCAQLAR\nBÖLM9 6. MÜXTƏSƏR VURMA DÜSTURLARI\nBÜLM9 7. FUNKSİYA\nBÖLMƏ 8. XƏTTİ TƏNLİKLƏR SİSTEMİ\nBÖLMƏ 9. ÜÇBUCAQLARIN KONQRUYENTLİYİ\nBÖLMƏ 10.SİTUASİYA MƏSƏLƏLƏRİ\nCavablar"
     },
     {
       "id": "biologiya-7-h1",
       "title": "Biologiya 7 (1-ci hissə)",
       "subject": "Biologiya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/biologiya-7-h1/book.pdf",
-      "contentPath": "public/textbooks/7/biologiya-7-h1"
+      "contentPath": "public/textbooks/7/biologiya-7-h1",
+      "grade": 7,
+      "e_derslik_id": "863",
+      "topics": "Giriş\nBiologiya nəyi öyrənir\nBiologiyanı öyrənmək bizə nə verir\nBölmə 1. Hüceyrə və orqanizm\n1.1 Canlıların əsas xüsusiyyətləri\n1.2 İşıq mikroskopunun quruluşu\n1.3 İşıq mikroskopundan istifadə\n1.4 Hüceyrənin ümumi quruluşu\n1.5 Bitki və heyvan hüceyrələrinin quruluşu\n1.6 Bakteriyalar\n1.7 İxtisaslaşmış hüceyrələr\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 2. Bitki orqanizmi\n2.1 Orqanizmin təşkili səviyyələri\n2.2 Çiçəkli bitkilərin orqanları. Kök\n2.3 Çiçəkli bitkilərin orqanları. Gövdə\n2.4 Çiçəkli bitkilərin orqanları. Yarpaq\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 3. Bitkilərdə çoxalma\n3.1 Çiçək və onun quruluşu.\n3.2 Tozlanma.\n3.3 Çiçəkli bitkilərdə cinsiyyətli çoxalma. Mayalanma\n3.4 Toxumun quruluşu\n3.5 Toxumların cücərməsi\n3.6 Meyvə\n3.7 Meyvə və toxumların yayılması\n3.8 Çiçəkli bitkilərdə qeyri-cinsi çoxalma\n3.9 Bitkilərin həyat dövrü\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
     },
     {
       "id": "biologiya-7-h2",
       "title": "Biologiya 7 (2-ci hissə)",
       "subject": "Biologiya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/biologiya-7-h2/book.pdf",
-      "contentPath": "public/textbooks/7/biologiya-7-h2"
+      "contentPath": "public/textbooks/7/biologiya-7-h2",
+      "grade": 7,
+      "e_derslik_id": "864",
+      "topics": "Bölmə 4. Heyvanların bədən örtükləri və bədən quruluşu\n4.1 Onurğalı heyvanların xarici bədən örtükləri\n4.2 Onurğalı heyvanların bədən hissələri\n4.3 Onurğasız heyvanlarda bədənin əsas hissələri. Həlqəvi qurdlar və bağırsaqboşluqlular\n4.4 Onurğasız heyvanlarda bədənin əsas hissələri.Buğumayaqlılar\n4.5 Onurğasız heyvanlarda bədənin əsas hissələri.Molyusklar\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 5. Bioloji müxtəliflik\n5.1 Ekoloji amillər\n5.2 Təbii yaşayış mühitləri\n5.3 Biomüxtəliflik\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 6. Ekosistemlərdə enerji axını\n6.1 Ekosistemlərdə qida münasibətləri. Qida zəncirləri\n6.2 Ekosistemlərdə qida münasibətləri. Qida şəbəkəsi\n6.3 Su və quru ekosistemlərində qida şəbəkələri\n6.4 Ekoloji piramidalar\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 7. Sağlam həyat tərzi\n7.1 Fiziki sağlamlıq\n7.2 Bədən kütlə indeksi və sağlamlıq\n7.3 Psixi sağlamlıq\n7.4 Zərərli vərdişlər və sağlamlıq\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
     },
     {
       "id": "cografiya-7-h1",
       "title": "Coğrafiya 7 (1-ci hissə)",
       "subject": "Coğrafiya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/cografiya-7-h1/book.pdf",
-      "contentPath": "public/textbooks/7/cografiya-7-h1"
+      "contentPath": "public/textbooks/7/cografiya-7-h1",
+      "grade": 7,
+      "e_derslik_id": "922",
+      "topics": "Bölmə 1. Cografi mövqe\n1.1. Coğrafi mövqeyin təyini\n1.2. CİS-lə coğrafi mövqe təyini\nBölmə 2. Yerin daxili prosesləri\n2.1. Yerin daxili quruluşu\n2.2. Litosferin hərəkəti\nBölmə 3. Yer səthinin qurluşu\n3.1. Relyef nədir?\n3.2. Qitələrin və okeanların relyefi\nSÖZLÜK"
     },
     {
       "id": "cografiya-7-h2",
       "title": "Coğrafiya 7 (2-ci hissə)",
       "subject": "Coğrafiya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/cografiya-7-h2/book.pdf",
-      "contentPath": "public/textbooks/7/cografiya-7-h2"
+      "contentPath": "public/textbooks/7/cografiya-7-h2",
+      "grade": 7,
+      "e_derslik_id": "923",
+      "topics": "Bölmə 4 HAVA ŞƏRAİTİ\n4.1. Dəyişkən hava\n4.2. Havada su\nBölmə 5. İQLİM\n5.1. Məkanda iqlim\nBölmə 6. MAĞARADAN GÖYDƏLƏNƏ\n6.1. Əhali artımı və yaşayış məntəqələri\n6.2. Azıx mağarasından 'Alov qüllələri'nə\nBölmə 7. İQTİSADİ FƏALİYYƏT\n7.1. Məkanın iqtisadi mənzərəsi\n7.2. Azərbaycanın iqtisadi mənzərəsi\nSÖZLÜK"
     },
     {
       "id": "fizika-7-h1",
       "title": "Fizika 7 (1-ci hissə)",
       "subject": "Fizika",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/fizika-7-h1/book.pdf",
-      "contentPath": "public/textbooks/7/fizika-7-h1"
+      "contentPath": "public/textbooks/7/fizika-7-h1",
+      "grade": 7,
+      "e_derslik_id": "867",
+      "topics": "Giriş. Fizika nəyi öyrənir?\nFiziklər təbiət haqqında nə bilirlər?\nFiziklər təbiəti necə öyrənirlər?\nFizikanın əhəmiyyəti\nBölmə 1. Fiziki kəmiyyətlər və onların ölçülməsi\n1.1 Fiziki kəmiyyətlər\n1.2 Fiziki kəmiyyətlərin ölçülməsi\n1.3 Ölçmədə dəqiqlik\n1.4 Skalyar və vektorial kəmiyyətlər\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 2. Düzxətli hərəkət\n2.1 Trayektoriya, yol və yerdəyişmə\n2.2 Sürət\n2.3 Düzxətli bərabərsürətli hərəkət\n2.4 Yolun və yola görə sürətin qrafik təsviri\n2.5 Düzxətli dəyişənsürətli hərəkət\n2.6 Təcil\n2.7 Orta sürət\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 3. Əyrixətli hərəkət\n3.1 Çevrə üzrə bərabərsürətli hərəkət\n3.2 Çevrə üzrə bərabərsürətli hərəkətdə sürət\n3.3 Periodik rəqsi hərəkət\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 4. Atomun quruluşu və ölçüsü\n4.1 Atomun quruluşu\n4.2 Atomun ölçüsü\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
     },
     {
       "id": "fizika-7-h2",
       "title": "Fizika 7 (2-ci hissə)",
       "subject": "Fizika",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/fizika-7-h2/book.pdf",
-      "contentPath": "public/textbooks/7/fizika-7-h2"
+      "contentPath": "public/textbooks/7/fizika-7-h2",
+      "grade": 7,
+      "e_derslik_id": "868",
+      "topics": "Bölmə 5. Elektrik yükü və elektrik sahəsi\n5.1 Cisimlərin elektrik yükü\n5.2 Sürtünmə ilə elektriklənmə\n5.3 Elektroskop\n5.4 Keçiricilər və dielektriklər\n5.5 Elektrik sahəsi\n5.6 İnduksiya ilə elektriklənmə\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 6. Elektrik dövrəsi və dövrə elementləri\n6.1 Elektrik dövrəsi və dövrə elementləri\n6.2 Elektrik cərəyanı\n6.3 Gərginlik\n6.4 Om qanunu\n6.5 Naqilin müqaviməti nədən asılıdır?\n6.6 Lampaların ardıcıl və paralel birləşdirilməsi\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 7. Sabit maqnit və maqnit sahəsi\n7.1 Sabit maqnit\n7.2 Maqnit sahəsi\nElm, texnologiya, həyat\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
     },
     {
       "id": "kimya-7-h1",
       "title": "Kimya 7 (1-ci hissə)",
       "subject": "Kimya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/kimya-7-h1/book.pdf",
-      "contentPath": "public/textbooks/7/kimya-7-h1"
+      "contentPath": "public/textbooks/7/kimya-7-h1",
+      "grade": 7,
+      "e_derslik_id": "871",
+      "topics": "Giriş. Kimya nəyi öyrənir?\nKimya laboratoriyasının avadanlıqları və laboratoriyada təhlükəsizlik qaydaları\nBölmə 1. Kimyəvi elementlər\n1.1 Kimyəvi elementlər və onların simvolları\n1.2 Bioelementlər\n1.3 Cansız təbiətdə olan mühüm elementlər\n1.4 Metallar və onların xassələri\n1.5 Qeyri-metallar və onların xassələri. Allotropiya\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 2. Atomun quruluşu\n2.1 Atomun quruluşu\n2.2 Nüvə yükü və kütlə ədədi\n2.3 İzotoplar və ionlar\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 3. Kimyəvi birləşmələr\n3.1 Kimyəvi birləşmələr, onların formulları və adları\n3.2 Məişətdə istifadə edilən mühüm kimyəvi birləşmələr.\n3.3 Təbiətdə sərbəst şəkildə tapılan mühüm kimyəvi birləşmələr\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 4. Qarışıqlar\n4.1 Qarışıqların növləri\n4.2 Kimyəvi birləşmələrin və qarışıqların fərqli xüsusiyyətləri\n4.3 Həllolma. Həllolmaya təsir edən amillər\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
     },
     {
       "id": "kimya-7-h2",
       "title": "Kimya 7 (2-ci hissə)",
       "subject": "Kimya",
-      "type": "pdf",
+      "type": "ederslik_html",
       "path": "/textbooks/7/kimya-7-h2/book.pdf",
-      "contentPath": "public/textbooks/7/kimya-7-h2"
+      "contentPath": "public/textbooks/7/kimya-7-h2",
+      "grade": 7,
+      "e_derslik_id": "872",
+      "topics": "Bölmə 5. Qarışıqların ayrılma üsulları\n5.1 Kristallaşdırma üsulu\n5.2 Sadə distillə və fraksiyalı distillə üsulları\n5.3 Durultma üsulu\n5.4 Kağız xromatoqrafiyası\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 6. Kimyəvi reaksiyalar\n6.1 Fiziki və kimyəvi hadisələr\n6.2 Kimyəvi reaksiyaların əlamətləri\n6.3 Ekzotermik və endotermik reaksiyalar\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nBölmə 7. Turşular və əsaslar\n7.1 Turşular və turş mühit\n7.2 Əsaslar və əsasi mühit\n7.3 İndikatorlar və pH şkalası\n7.4 Neytrallaşma reaksiyaları\nElm, texnologiya, həyat\nLayihə\nXülasə\nÜmumiləşdirici tapşırıqlar\nSözlük"
+    },
+    {
+      "id": "ingilis-dili-7",
+      "title": "English - 7 (əsas xarici dil)",
+      "subject": "İngilis dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "710",
+      "topics": "UNIT 1.SCHOOLS AROUND THE WORLD\nUNIT 2. A WORLD OF TECHNOLOGY\nUNIT 3. WHAT A TALENT!\nUNIT 4. TRAVEL\nUNIT 5.FRIENDS FOREVER\nUNIT 6.LIFE IN THE FUTURE\nTests\nGrammar bank"
+    },
+    {
+      "id": "ingilis-dili-2-7",
+      "title": "English - 7 (ikinci xarici dil)",
+      "subject": "İngilis dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "711",
+      "topics": "ARE YOU READY FOR GRADE 7?\nLESSON 1. MEETING NEW FRIENDS!\nLESSON 2. BEFORE AND NOW\nLESSON 3. BIRTHDAY PARTY\nLESSON 4. MY DAY\nLESSON 5. THEN AND NOW\nLESSON 6. ROLE MODELS IN SPORT\nLESSON 7. WHAT A DAY!\nLESSON 8. THAT’S AMAZING!\nLESSON 9. HOW DIFFERENT THEY ARE!\nLESSON 10. WORLD RECORDS\nLESSON 11. THE LAND OF FIRE\nLESSON 12. TRAVELLING"
+    },
+    {
+      "id": "fransiz-dili-7",
+      "title": "Fransız dili - 7 (əsas xarici dil)",
+      "subject": "Fransız dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "704",
+      "topics": "UNITÉ 1. VOUPIIII, C'EST LA RENTRÉE!\nUNITÉ 2. DOMAİNES D'İNTÉRÊT\nUNITÉ 3. L'AZERBAÏDJAN - TERRE DE FEU!\nUNITÉ 4. LES PAYS DU MONDE\nUNITÉ 5. ÊTRE EN FORME\nUNITÉ 6. SOIRÉES\nUNITÉ 7. DÉPLACEMENT\nUNITÉ 8. AMITIÉ"
+    },
+    {
+      "id": "fransiz-dili-2-7",
+      "title": "Fransız dili - 7 (ikinci xarici dil)",
+      "subject": "Fransız dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "705",
+      "topics": "UNITÉ 1. VIVE LA RENTRÉE!\nUNITÉ 2. LA FAMILLE\nUNITÉ 3. BIENVENUE À BAKOU\nUNITÉ 4. LE GOÛT MUSICAL\nUNITÉ 5. LA VIE QUOTIDIENNE\nUNITÉ 6. LES VACANCES"
+    },
+    {
+      "id": "alman-dili-7",
+      "title": "Alman dili - 7 (əsas xarici dil)",
+      "subject": "Alman dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "694",
+      "topics": "Lektion 1. Mein erster Schultag\nLektion 2. Feste und Traditionen\nLektion 3. Mein Zuhause, meine Pflichten\nLektion 4. Guten Appetit\nLektion 5. Ohne mein Handy? Nein.\nLektion 6. Die Welt ist schön"
+    },
+    {
+      "id": "alman-dili-2-7",
+      "title": "Alman dili - 7 (ikinci xarici dil)",
+      "subject": "Alman dili",
+      "grade": 7,
+      "type": "ederslik_html",
+      "e_derslik_id": "695",
+      "topics": "1. LÄNDER UND SPRACHEN\n2. WETTER UND JAHRESZEITEN\n3. FREIZEIT UND HOBBYS\n4. WOHNEN"
     }
   ],
   "9": [
