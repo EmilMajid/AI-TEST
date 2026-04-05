@@ -58,7 +58,7 @@ def call_gemini_vision(prompt, image_paths, api_key):
     """Calls Gemini 3.1 Pro with multiple images."""
     if not api_key or "placeholder" in api_key:
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     
     parts = [{"text": prompt}]
@@ -75,37 +75,74 @@ def call_gemini_vision(prompt, image_paths, api_key):
     data = {
         "contents": [{
             "parts": parts
-        }]
+        }],
+        "safetySettings": [
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+        ]
     }
     try:
         response = requests.post(url, headers=headers, json=data)
         response.raise_for_status()
         result = response.json()
-        return result['candidates'][0]['content']['parts'][0]['text']
+        
+        # Diagnostic logging for empty candidates
+        if "candidates" not in result or not result["candidates"]:
+            print(f"DEBUG: Gemini Vision full response: {json.dumps(result)}", flush=True)
+            return None
+            
+        candidate = result['candidates'][0]
+        if "content" not in candidate or "parts" not in candidate["content"]:
+            print(f"DEBUG: Gemini Vision candidate without content: {json.dumps(candidate)}", flush=True)
+            if "finishReason" in candidate:
+                print(f"DEBUG: Finish Reason: {candidate['finishReason']}", flush=True)
+            return None
+            
+        return candidate['content']['parts'][0]['text']
     except Exception as e:
-        print(f"Gemini Vision API Error: {e}")
+        print(f"Gemini Vision API Error: {e}", flush=True)
         if hasattr(e, 'response') and e.response:
-            print(f"Response: {e.response.text}")
+            print(f"Response: {e.response.text}", flush=True)
         return None
 
 def call_gemini(prompt, api_key):
     """Standard Gemini 3.1 Pro text-only call."""
     if not api_key or "placeholder" in api_key:
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-pro:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     data = {
         "contents": [{
             "parts": [{"text": prompt}]
-        }]
+        }],
+        "safetySettings": [
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+        ]
     }
     try:
         response = requests.post(url, headers=headers, json=data)
         response.raise_for_status()
         result = response.json()
-        return result['candidates'][0]['content']['parts'][0]['text']
+        
+        if "candidates" not in result or not result["candidates"]:
+            print(f"DEBUG: Gemini Text full response: {json.dumps(result)}", flush=True)
+            return None
+            
+        candidate = result['candidates'][0]
+        if "content" not in candidate or "parts" not in candidate["content"]:
+            print(f"DEBUG: Gemini Text candidate without content: {json.dumps(candidate)}", flush=True)
+            return None
+            
+        return candidate['content']['parts'][0]['text']
     except Exception as e:
-        print(f"Gemini API Error: {e}")
+        print(f"Gemini API Error: {e}", flush=True)
+        if hasattr(e, 'response') and e.response:
+            print(f"Response: {e.response.text}", flush=True)
         return None
 
 def call_xai_vision(prompt, image_paths, api_key):
