@@ -1,7 +1,7 @@
 # normalizer.py
 import unicodedata
 import re
-from .hyphen_normalizer import HyphenNormalizer
+from hyphen_normalizer import HyphenNormalizer
 
 class Normalizer:
     """

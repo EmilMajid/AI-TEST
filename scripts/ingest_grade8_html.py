@@ -1,80 +1,129 @@
-import sys
 import os
+import sys
 import json
 import logging
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent))
-from html_content_extractor import HTMLContentExtractor
+# Add scripts and rag_system to path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "rag_system"))
+
+from ederslik_extractor import EDerslikExtractor
+from section_parser import SectionParser
+from noise_remover import NoiseRemover
 
 def ingest_grade8_html():
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logger = logging.getLogger(__name__)
-    
-    base_dir = Path(r"c:\Users\User\Downloads\azerbaijanaiplatform\public\textbooks\8")
-    output_path = Path(r"c:\Users\User\Downloads\azerbaijanaiplatform\data\textbook-chunks.jsonl")
-    extractor = HTMLContentExtractor()
-    
-    books = [
-        {"id": "informatika-8",       "subject": "İnformatika",   "path": "informatika",        "grade": 8},
-        {"id": "azerbaycan-dili-8",   "subject": "Azərbaycan dili","path": "azerbaycan-dili",   "grade": 8},
-        {"id": "ingilis-dili-8",      "subject": "Xarici dil",    "path": "ingilis-dili",       "grade": 8},
-        {"id": "rus-dili-8",          "subject": "Xarici dil",    "path": "rus-dili-esas",      "grade": 8},
-        {"id": "rus-dili-ikinci-8",   "subject": "İkinci xarici", "path": "rus-dili-ikinci",    "grade": 8},
-        {"id": "fransiz-dili-8",      "subject": "Xarici dil",    "path": "fransiz-dili-esas",  "grade": 8},
-        {"id": "fransiz-dili-ikinci-8","subject":"İkinci xarici", "path": "fransiz-dili-ikinci","grade": 8},
-        {"id": "alman-dili-8",        "subject": "Xarici dil",    "path": "alman-dili-esas",    "grade": 8},
-        {"id": "alman-dili-ikinci-8", "subject": "İkinci xarici", "path": "alman-dili-ikinci",  "grade": 8},
-    ]
-    
-    for book in books:
-        book_dir = base_dir / book["path"]
-        if not book_dir.exists():
-            logger.warning(f"Directory not found for {book['id']}: {book_dir}")
-            continue
-        
-        logger.info(f"Extracting {book['id']} from {book_dir}")
-        pages = extractor.extract_with_page_numbers(book_dir, subject=book["subject"])
-        
-        if not pages:
-            logger.warning(f"No content extracted for {book['id']}")
-            continue
 
-        new_chunks = [
-            {
-                "id": i,
-                "grade": book["grade"],
-                "subject": book["subject"],
-                "book_id": book["id"],
-                "source": "local_html",
-                "text": p["text"],
-                "page": p["page"],
-                "type": "html_page",
-                "knowledge": []
-            }
-            for i, p in enumerate(pages)
-        ]
+    # 1. Initialize Components
+    ederslik_extractor = EDerslikExtractor()
+    section_parser = SectionParser()
+    noise_remover = NoiseRemover()
 
-        # Replace old entries and append new ones atomically
-        temp_path = output_path.with_suffix('.tmp')
-        replaced_count = 0
-        
-        with open(output_path, 'r', encoding='utf-8') as f_in, \
-             open(temp_path, 'w', encoding='utf-8') as f_out:
+    base_dir = Path(__file__).parent.parent
+    textbooks_json = base_dir / "data" / "textbooks.json"
+    target_jsonl = base_dir / "data" / "textbook-chunks.jsonl"
+    temp_jsonl = base_dir / "data" / "textbook-chunks_temp.jsonl"
+
+    # 2. Load Grade 8 books
+    with open(textbooks_json, "r", encoding="utf-8") as f:
+        all_data = json.load(f)
+    grade8_books = all_data.get("8", [])
+    
+    # 3. Setup Atomic Write (Copy existing to temp, excluding Grade 8 if any)
+    existing_ids = set()
+    if target_jsonl.exists():
+        logger.info(f"[*] Preparing atomic temp file from {target_jsonl.name}...")
+        with open(target_jsonl, "r", encoding="utf-8") as f_in, \
+             open(temp_jsonl, "w", encoding="utf-8") as f_out:
             for line in f_in:
-                if line.strip():
-                    item = json.loads(line)
-                    if item.get('book_id') == book['id']:
-                        replaced_count += 1
-                        continue
+                try:
+                    c = json.loads(line)
+                    if str(c.get("grade")) != "8":
+                        f_out.write(line)
+                except:
                     f_out.write(line)
-            for chunk in new_chunks:
-                f_out.write(json.dumps(chunk, ensure_ascii=False) + "\n")
-        
-        os.replace(temp_path, output_path)
-        logger.info(f"  -> {len(new_chunks)} pages for {book['id']} (removed {replaced_count} old)")
 
-    logger.info("Grade 8 HTML ingestion complete!")
+    # 4. Ingest Grade 8 HTML Books
+    html_books = [b for b in grade8_books if b.get("type") == "ederslik_html"]
+    logger.info(f"[*] Found {len(html_books)} HTML books to ingest for Grade 8.")
+
+    total_chunks = 0
+    for i, book in enumerate(html_books, 1):
+        book_id = book['id']
+        logger.info(f"[{i}/{len(html_books)}] Processing {book['title']} ({book_id})...")
+        
+        try:
+            # A. Fetch from e-derslik
+            pages = ederslik_extractor.fetch_book(book['e_derslik_id'])
+            full_text = "\n".join([p['text'] for p in pages])
+            
+            # B. Noise Removal
+            clean_text = noise_remover.remove_noise(full_text)
+            
+            # C. Section Parsing
+            sections = section_parser.parse(clean_text, subject=book['subject'], is_html=True)
+            logger.info(f"  [+] Found {len(sections)} sections.")
+            
+            # D. Write Chunks
+            book_chunks = 0
+            with open(temp_jsonl, "a", encoding="utf-8") as f:
+                for sec in sections:
+                    # RAG 2.0 Segment creation (simple version without embeddings)
+                    # We create segments of ~800-1000 chars within each section
+                    content = sec["content"]
+                    # Basic chunking if content is too long
+                    chunk_size = 1200
+                    paragraphs = content.split('\n')
+                    current_chunk = []
+                    current_len = 0
+                    
+                    def save_chunk(text, s_title, seq_idx):
+                        chunk_entry = {
+                            "id": f"{book_id}_s{len(sections)}_{seq_idx}",
+                            "book_id": book_id,
+                            "grade": 8,
+                            "subject": book["subject"],
+                            "section": s_title,
+                            "text": text.strip(),
+                            "type": "ederslik_html",
+                            "metadata": {"source": "e-derslik", "id": book['e_derslik_id']}
+                        }
+                        f.write(json.dumps(chunk_entry, ensure_ascii=False) + "\n")
+
+                    seq_idx = 0
+                    for p in paragraphs:
+                        if current_len + len(p) > chunk_size and current_chunk:
+                            save_chunk("\n".join(current_chunk), sec["title"], seq_idx)
+                            current_chunk = []
+                            current_len = 0
+                            seq_idx += 1
+                        current_chunk.append(p)
+                        current_len += len(p)
+                    
+                    if current_chunk:
+                        save_chunk("\n".join(current_chunk), sec["title"], seq_idx)
+                        seq_idx += 1
+                    
+                    book_chunks += seq_idx
+            
+            logger.info(f"  [+] Saved {book_chunks} chunks.")
+            total_chunks += book_chunks
+            
+        except Exception as e:
+            logger.error(f"  [!] Failed {book_id}: {e}")
+
+    # 5. Final Atomic Swap
+    if total_chunks > 0:
+        import shutil
+        backup = target_jsonl.parent / f"{target_jsonl.stem}_backup.jsonl"
+        if target_jsonl.exists():
+            shutil.move(str(target_jsonl), str(backup))
+        shutil.move(str(temp_jsonl), str(target_jsonl))
+        logger.info(f"[*] SUCCESSFULLY integrated Grade 8. Total chunks: {total_chunks}")
+    else:
+        logger.warning("[!] No chunks generated. Check logs.")
 
 if __name__ == "__main__":
     ingest_grade8_html()
