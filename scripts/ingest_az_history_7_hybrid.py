@@ -81,8 +81,12 @@ def ingest_az_history_7_hybrid():
             
             # Step 2: Tesseract OCR (Raw)
             ocr_out_base = temp_img_dir / f"p{page_num}_ocr"
-            subprocess.run([tesseract_path, str(img_path), str(ocr_out_base), "-l", "eng"], 
-                           capture_output=True, check=True)
+            
+            env = os.environ.copy()
+            env["TESSDATA_PREFIX"] = os.path.abspath("scripts/ocr_temp/tessdata")
+            
+            subprocess.run([tesseract_path, str(img_path), str(ocr_out_base), "-l", "aze"], 
+                           env=env, capture_output=True, check=True)
             
             ocr_text_path = Path(f"{ocr_out_base}.txt")
             with open(ocr_text_path, 'r', encoding='utf-8') as f:
@@ -107,7 +111,7 @@ def ingest_az_history_7_hybrid():
                 "page": page_num,
                 "type": "pdf_page",
                 "knowledge": [],
-                "metadata": {"hybrid_mode": True, "tesseract": "eng", "healer": "gemini-1.5-pro"}
+                "metadata": {"hybrid_mode": True, "tesseract": "aze", "healer": "gemini-1.5-pro"}
             }
 
             with open(output_path, 'a', encoding='utf-8') as f:
