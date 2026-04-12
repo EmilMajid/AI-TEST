@@ -499,8 +499,8 @@
       "id": "riyaziyyat-8",
       "title": "Riyaziyyat 8",
       "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "393",
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
       "topics": "1. Kvadrat kök. Həqiqi ədədlər\n2. Pifaqor teoremi\n3. Kvadrat tənliklər\n4. Dördbucaqlılar\n5. Rasional ifadələr\n6. Fiqurların sahəsi\n7. Rasional tənliklər\n8. Fiqurların oxşarlığı\n9. Bərabərsizliklər\n10. Triqonometrik nisbətlər. Koordinatlar üsulu\n11. Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
     },
     {
@@ -561,11 +561,11 @@
     },
     {
       "id": "ingilis-dili-8",
-      "title": "İngilis dili 8",
+      "title": "İngilis dili 8 (əsas xarici dil)",
       "subject": "Xarici dil",
-      "type": "html",
-      "path": "/textbooks/8/ingilis-dili/OEBPS/cover.xhtml",
-      "contentPath": "public/textbooks/8/ingilis-dili"
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-english-quot-ingilis-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
+      "topics": "UNIT 1. FREE TIME FUN\nUNIT 2. FOOD AROUND THE WORLD\nUNIT 3. NATURE\nUNIT 4. MANNERS AND RULES\nUNIT 5. A PLACE CALLED HOME\nUNIT 6. CHANGE-MAKERS\nIrregular Verbs List\nGrammar Bank\nExtra Practice Activities\nTracks\nWordlist\nPicture Dictionary"
     },
     {
       "id": "texnologiya-8",
@@ -612,9 +612,9 @@
       "id": "rus-dili-8",
       "title": "Rus dili 8 (əsas xarici dil)",
       "subject": "Rus dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "795",
-      "topics": "РАЗДЕЛ 1. ЗНАНИЕ-СИЛА\nРАЗДЕЛ 2. ХОРОША РОДИНА МОЯ\nРАЗДЕЛ 3. ДОСТОЯНИЯ ЧЕЛОВЕЧЕСТВА\nРАЗДЕЛ 4. АЗЕРБАЙДЖАН - СТРАНА ОГНЕЙ, МУДРОСТИ И ГОСТЕПРИИМСТВА\nРАЗДЕЛ 5. ИСКУССТВО СЛОВА\nРАЗДЕЛ 6. ЖИЗНЬ ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ"
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-russkij-yazyk-quot-rus-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik-1693828461-829.pdf",
+      "topics": "РАЗДЕЛ 1. ЗНАНИЕ-СИЛА\nРАЗДЕЛ 2. ХОРОША РОДИНА МОЯ\nРАЗДЕЛ 3. ДОСТОЯНИЯ ЧЕЛОВЕЧЕСТВА\nРАЗДЕЛ 4. АЗЕРБАЙДЖАН - СТРАНА ОГНЕЙ, МУДРОСТИ И ГОСТЕПРИИМСТVA\nРАЗДЕЛ 5. ИСКУССТВО СЛОВА\nРАЗДЕЛ 6. ЖИЗНЬ ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ"
     },
     {
       "id": "rus-dili-ikinci-8",
@@ -917,20 +917,13 @@
   ],
   "9": [
     {
-      "id": "fiziki-terbiye-9",
-      "title": "Fiziki tərbiyə 9",
-      "subject": "Fiziki tərbiyə",
-      "type": "pdf",
-      "path": "/textbooks/9/fiziki-terbiye-9/book.pdf",
-      "contentPath": "public/textbooks/9/fiziki-terbiye-9"
-    },
-    {
       "id": "texnologiya-9",
       "title": "Texnologiya 9",
       "subject": "Texnologiya",
-      "type": "pdf",
-      "path": "/textbooks/9/texnologiya-9/book.pdf",
-      "contentPath": "public/textbooks/9/texnologiya-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/texnologiya-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/texnologiya-9",
+      "e_derslik_id": "477"
     },
     {
       "id": "hayat-bilgisi-9",
@@ -938,7 +931,8 @@
       "subject": "Həyat bilgisi",
       "type": "pdf",
       "path": "/textbooks/9/hayat-bilgisi-9/book.pdf",
-      "contentPath": "public/textbooks/9/hayat-bilgisi-9"
+      "contentPath": "public/textbooks/9/hayat-bilgisi-9",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-hayat-bilgisi-quot-fanni-uzra-9-cu-sinif-ucun-darslik.pdf"
     },
     {
       "id": "biologiya-9",
@@ -946,39 +940,44 @@
       "subject": "Biologiya",
       "type": "pdf",
       "path": "/textbooks/9/biologiya-9/book.pdf",
-      "contentPath": "public/textbooks/9/biologiya-9"
+      "contentPath": "public/textbooks/9/biologiya-9",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-biologiya-quot-fanni-uzra-9-cu-sinif-ucun-darslik.pdf"
     },
     {
       "id": "fizika-9",
       "title": "Fizika 9",
       "subject": "Fizika",
-      "type": "pdf",
-      "path": "/textbooks/9/fizika-9/book.pdf",
-      "contentPath": "public/textbooks/9/fizika-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/fizika-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/fizika-9",
+      "e_derslik_id": "472"
     },
     {
       "id": "tesviri-incesenet-9",
       "title": "Təsviri İncəsənət 9",
       "subject": "Təsviri İncəsənət",
-      "type": "pdf",
-      "path": "/textbooks/9/tesviri-incesenet-9/book.pdf",
-      "contentPath": "public/textbooks/9/tesviri-incesenet-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/tesviri-incesenet-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/tesviri-incesenet-9",
+      "e_derslik_id": "476"
     },
     {
       "id": "kimya-9",
       "title": "Kimya 9",
       "subject": "Kimya",
-      "type": "pdf",
-      "path": "/textbooks/9/kimya-9/book.pdf",
-      "contentPath": "public/textbooks/9/kimya-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/kimya-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/kimya-9",
+      "e_derslik_id": "505"
     },
     {
       "id": "riyaziyyat-9",
       "title": "Riyaziyyat 9",
       "subject": "Riyaziyyat",
-      "type": "pdf",
-      "path": "/textbooks/9/riyaziyyat-9/book.pdf",
-      "contentPath": "public/textbooks/9/riyaziyyat-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/riyaziyyat-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/riyaziyyat-9",
+      "e_derslik_id": "507"
     },
     {
       "id": "musiqi-9",
@@ -992,49 +991,46 @@
       "id": "informatika-9",
       "title": "İnformatika 9",
       "subject": "İnformatika",
-      "type": "pdf",
-      "path": "/textbooks/9/informatika-9/book.pdf",
-      "contentPath": "public/textbooks/9/informatika-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/informatika-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/informatika-9",
+      "e_derslik_id": "884"
     },
     {
       "id": "edebiyyat-9",
       "title": "Ədəbiyyat 9",
       "subject": "Ədəbiyyat",
-      "type": "pdf",
-      "path": "/textbooks/9/edebiyyat-9/book.pdf",
-      "contentPath": "public/textbooks/9/edebiyyat-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/edebiyyat-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/edebiyyat-9",
+      "e_derslik_id": "883"
     },
     {
       "id": "cografiya-9",
       "title": "Coğrafiya 9",
       "subject": "Coğrafiya",
-      "type": "pdf",
-      "path": "/textbooks/9/cografiya-9/book.pdf",
-      "contentPath": "public/textbooks/9/cografiya-9"
-    },
-    {
-      "id": "azerbaycan-dili-dovlet-9",
-      "title": "Azərbaycan dili 9 (Dövlət dili)",
-      "subject": "Azərbaycan dili",
-      "type": "pdf",
-      "path": "/textbooks/9/azerbaycan-dili-dovlet-9/book.pdf",
-      "contentPath": "public/textbooks/9/azerbaycan-dili-dovlet-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/cografiya-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/cografiya-9",
+      "e_derslik_id": "881"
     },
     {
       "id": "umumi-tarix-9",
       "title": "Ümumi tarix 9",
       "subject": "Ümumi tarix",
-      "type": "pdf",
-      "path": "/textbooks/9/umumi-tarix-9/book.pdf",
-      "contentPath": "public/textbooks/9/umumi-tarix-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/umumi-tarix-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/umumi-tarix-9",
+      "e_derslik_id": "879"
     },
     {
       "id": "azerbaycan-dili-9",
       "title": "Azərbaycan dili 9",
       "subject": "Azərbaycan dili",
-      "type": "pdf",
-      "path": "/textbooks/9/azerbaycan-dili-9/book.pdf",
-      "contentPath": "public/textbooks/9/azerbaycan-dili-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/azerbaycan-dili-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/azerbaycan-dili-9",
+      "e_derslik_id": "465"
     },
     {
       "id": "azerbaycan-tarixi-9",
@@ -1042,71 +1038,89 @@
       "subject": "Azərbaycan tarixi",
       "type": "pdf",
       "path": "/textbooks/9/azerbaycan-tarixi-9/book.pdf",
-      "contentPath": "public/textbooks/9/azerbaycan-tarixi-9"
+      "contentPath": "public/textbooks/9/azerbaycan-tarixi-9",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-tarixi-quot-fanni-uzra-9-cu-sinif-ucun-darslik-1733835460-925.pdf"
     },
     {
       "id": "ingilis-dili-9",
       "title": "İngilis dili 9 (əsas xarici dil)",
       "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/ingilis-dili-9/book.pdf",
-      "contentPath": "public/textbooks/9/ingilis-dili-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/ingilis-dili-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/ingilis-dili-9",
+      "e_derslik_id": "886"
     },
     {
       "id": "ingilis-dili-ikinci-9",
       "title": "İngilis dili 9 (ikinci xarici dil)",
       "subject": "İkinci xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/ingilis-dili-ikinci-9/book.pdf",
-      "contentPath": "public/textbooks/9/ingilis-dili-ikinci-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/ingilis-dili-ikinci-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/ingilis-dili-ikinci-9",
+      "e_derslik_id": "887"
     },
     {
       "id": "alman-dili-9",
       "title": "Alman dili 9 (əsas xarici dil)",
       "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/alman-dili-9/book.pdf",
-      "contentPath": "public/textbooks/9/alman-dili-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/alman-dili-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/alman-dili-9",
+      "e_derslik_id": "888"
     },
     {
       "id": "alman-dili-ikinci-9",
       "title": "Alman dili 9 (ikinci xarici dil)",
       "subject": "İkinci xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/alman-dili-ikinci-9/book.pdf",
-      "contentPath": "public/textbooks/9/alman-dili-ikinci-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/alman-dili-ikinci-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/alman-dili-ikinci-9",
+      "e_derslik_id": "889"
     },
     {
       "id": "fransiz-dili-9",
       "title": "Fransız dili 9 (əsas xarici dil)",
       "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/fransiz-dili-9/book.pdf",
-      "contentPath": "public/textbooks/9/fransiz-dili-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/fransiz-dili-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/fransiz-dili-9",
+      "e_derslik_id": "890"
     },
     {
       "id": "fransiz-dili-ikinci-9",
       "title": "Fransız dili 9 (ikinci xarici dil)",
       "subject": "İkinci xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/fransiz-dili-ikinci-9/book.pdf",
-      "contentPath": "public/textbooks/9/fransiz-dili-ikinci-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/fransiz-dili-ikinci-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/fransiz-dili-ikinci-9",
+      "e_derslik_id": "891"
     },
     {
       "id": "rus-dili-9",
       "title": "Rus dili 9 (əsas xarici dil)",
       "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/rus-dili-9/book.pdf",
-      "contentPath": "public/textbooks/9/rus-dili-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/rus-dili-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/rus-dili-9",
+      "e_derslik_id": "892"
     },
     {
       "id": "rus-dili-ikinci-9",
       "title": "Rus dili 9 (ikinci xarici dil)",
       "subject": "İkinci xarici dil",
-      "type": "pdf",
-      "path": "/textbooks/9/rus-dili-ikinci-9/book.pdf",
-      "contentPath": "public/textbooks/9/rus-dili-ikinci-9"
+      "type": "ederslik_html",
+      "path": "/textbooks/9/rus-dili-ikinci-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/rus-dili-ikinci-9",
+      "e_derslik_id": "893"
+    },
+    {
+      "id": "zefer-tarixi-9",
+      "title": "Zəfər tarixi 9",
+      "subject": "Zəfər tarixi",
+      "type": "ederslik_html",
+      "e_derslik_id": "592",
+      "path": "/textbooks/9/zefer-tarixi-9/OEBPS/cover.xhtml",
+      "contentPath": "public/textbooks/9/zefer-tarixi-9"
     }
   ]
 }
