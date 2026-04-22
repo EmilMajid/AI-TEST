@@ -6,6 +6,8 @@ import { google } from "@ai-sdk/google"
 // @ts-ignore - Package is installed, IDE cache issue
 import { anthropic } from "@ai-sdk/anthropic"
 import { type NextRequest, NextResponse } from "next/server"
+import fs from "fs"
+import path from "path"
 
 export async function POST(request: NextRequest) {
   try {
@@ -275,7 +277,31 @@ Mövzu: ${topic}`
       }
     }
 
-    // Fallback demo sualları (mövzuya və çətinliyə uyğun)
+    // ✅ STEP 1: question_bank.json-dan real sualları yoxla
+    console.log("🔄 question_bank.json-dan real suallar axtarılır...")
+    const bankQuestions = loadFromQuestionBank(grade, topic, questionCount, difficulty)
+
+    if (bankQuestions.length > 0) {
+      console.log(`✅ question_bank.json-dan ${bankQuestions.length} real sual tapıldı!`)
+      return NextResponse.json({
+        questions: bankQuestions,
+        provider: "question_bank",
+        success: true,
+        message: `${bankQuestions.length} test sualı verilənlər bazasından götürüldü (${topic})`,
+        metadata: {
+          textbook,
+          topic,
+          grade,
+          difficulty,
+          questionCount: bankQuestions.length,
+          timeLimit,
+          recommendedTime,
+          difficultyDistribution: getDifficultyDistribution(bankQuestions),
+        },
+      })
+    }
+
+    // STEP 2: Heç bir real sual tapılmadıqda ümumi fallback
     console.log("🔄 Demo suallarına keçid...")
     const fallbackQuestions = generateAdvancedFallbackQuestions(topic, textbook, grade, questionCount, difficulty)
 
@@ -311,6 +337,77 @@ Mövzu: ${topic}`
       },
       { status: 500 },
     )
+  }
+}
+
+// ✅ question_bank.json-dan real sualları yüklə
+function loadFromQuestionBank(
+  grade: string | number,
+  topic: string,
+  count: number,
+  difficulty: string
+): any[] {
+  try {
+    const bankPath = path.join(process.cwd(), "data", "question_bank.json")
+    if (!fs.existsSync(bankPath)) return []
+
+    const raw = fs.readFileSync(bankPath, "utf-8")
+    const allQuestions: any[] = JSON.parse(raw)
+
+    const gradeNum = parseInt(String(grade))
+    const topicLower = topic.toLowerCase()
+
+    // Filter by grade and topic keyword match
+    let matching = allQuestions.filter((q: any) => {
+      const meta = q.metadata || {}
+      const gradeMatch = meta.grade === gradeNum
+      const subjectText = (meta.subject || "").toLowerCase()
+      const skillText = (q.measured_skill || "").toLowerCase()
+      const questionText = (q.question || "").toLowerCase()
+
+      const topicWords = topicLower.split(/\s+/).filter((w: string) => w.length > 3)
+      const topicMatch = topicWords.some(
+        (w: string) => subjectText.includes(w) || skillText.includes(w) || questionText.includes(w)
+      )
+      return gradeMatch && topicMatch
+    })
+
+    if (matching.length === 0) return []
+
+    // Sort by difficulty if needed
+    const diffMap: Record<string, string[]> = {
+      sadə: ["Asan", "sadə"],
+      orta: ["Orta", "orta"],
+      çətin: ["Çətin", "çətin"],
+      qarışıq: ["Asan", "Orta", "Çətin", "sadə", "orta", "çətin"]
+    }
+    const allowed = diffMap[difficulty] || diffMap["qarışıq"]
+    const filtered = difficulty === "qarışıq"
+      ? matching
+      : matching.filter((q: any) => allowed.includes(q.difficulty || ""))
+
+    const pool = filtered.length > 0 ? filtered : matching
+
+    // Shuffle and take requested count
+    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+
+    // Map to the format the frontend expects
+    return shuffled.map((q: any, idx: number) => ({
+      id: idx + 1,
+      question: q.question,
+      options: q.options,
+      correctAnswer: q.correct_index ?? 0,
+      explanation: typeof q.explanation === "object"
+        ? q.explanation.correct || ""
+        : q.explanation || "",
+      difficulty: q.difficulty || difficulty,
+      topic: q.measured_skill || topic,
+      bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
+      timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
+    }))
+  } catch (e) {
+    console.error("❌ question_bank.json oxunarkən xəta:", e)
+    return []
   }
 }
 

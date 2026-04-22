@@ -150,10 +150,14 @@ export default function TestPage() {
 
   const calculateResults = () => {
     let correctAnswers = 0
+    // Build answers map: questionId -> answerIndex (used by results page)
+    const answersMap: { [key: number]: number } = {}
+
     const detailedResults = questions.map((question) => {
       const userAnswer = selectedAnswers[question.id]
       const isCorrect = userAnswer === question.correctAnswer
       if (isCorrect) correctAnswers++
+      if (userAnswer !== undefined) answersMap[question.id] = userAnswer
 
       return {
         questionId: question.id,
@@ -168,19 +172,37 @@ export default function TestPage() {
     })
 
     const score = Math.round((correctAnswers / questions.length) * 100)
+    const timeSpent = (testConfig?.timeLimit || 0) * 60 - timeLeft
+
     const results = {
       score,
       correctAnswers,
       totalQuestions: questions.length,
-      timeSpent: (testConfig?.timeLimit || 0) * 60 - timeLeft,
+      timeSpent,
       detailedResults,
       testConfig,
     }
 
     setTestResults(results)
 
-    // Nəticələri localStorage-ə saxla
+    // Nəticələri results/page.tsx-in gözlədiyi formatda saxla
+    const resultsPageFormat = {
+      testData: {
+        textbook: testConfig?.textbook || "",
+        topic: testConfig?.topic || "",
+        class: testConfig?.class || "",
+        difficulty: testConfig?.difficulty || "orta",
+      },
+      questions: questions,
+      answers: answersMap,
+      score,
+      timeSpent,
+      completedAt: new Date().toISOString(),
+    }
+
+    // Hər iki açarla saxla: köhnə uyğunluq + yeni results səhifəsi
     localStorage.setItem("lastTestResults", JSON.stringify(results))
+    localStorage.setItem("testResults", JSON.stringify(resultsPageFormat))
   }
 
   const formatTime = (seconds: number) => {
