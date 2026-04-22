@@ -208,5 +208,665 @@
       "source": "book.pdf",
       "page": 54
     }
+  },
+  {
+    "question": "Azərbaycanda Ərəb xilafətinə qarşı yönəlmiş Xürrəmilər hərəkatının ən qüdrətli dövrü kimin rəhbərliyi illərinə təsadüf edir?",
+    "options": [
+      "Cavidan",
+      "Babək",
+      "Əbu İmran",
+      "Cavanşir"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Xatırlama",
+    "difficulty": "Asan",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.2,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Babək neçənci ildə Xürrəmilər hərəkatının rəhbəri oldu?",
+    "options": [
+      "789-cu ildə",
+      "816-cı ildə",
+      "837-ci ildə",
+      "838-ci ildə"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Xatırlama",
+    "difficulty": "Asan",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.2,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xürrəmilər hərəkatının əsas mərkəzi və alınmaz hesab edilən istinadgahı hansı qala idi?",
+    "options": [
+      "Gülüstan qalası",
+      "Əlincə qalası",
+      "Bəzz qalası",
+      "Şuşa qalası"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Xatırlama",
+    "difficulty": "Asan",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.2,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xürrəmilər hərəkatı əsasən hansı dövlətə və ya imperiyaya qarşı çevrilmişdi?",
+    "options": [
+      "Sasanilər dövlətinə",
+      "Bizans imperiyasına",
+      "Xəzər xaqanlığına",
+      "Ərəb xilafətinə"
+    ],
+    "correct_index": 3,
+    "bloom_level": "Xatırlama",
+    "difficulty": "Asan",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.2,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Bəzz qalası neçənci ildə Xilafət ordusu tərəfindən işğal edildi?",
+    "options": [
+      "816-cı ildə",
+      "829-cı ildə",
+      "837-ci ildə",
+      "838-ci ildə"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Xatırlama",
+    "difficulty": "Asan",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.2,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xürrəmilər hərəkatının əsas ictimai-siyasi məqsədi nədən ibarət idi?",
+    "options": [
+      "Bizansla ittifaq qurmaq",
+      "Ərəb zülmündən qurtulmaq və torpaq bərabərsizliyinə son qoymaq",
+      "Qafqaz Albaniyasında xristianlığı yaymaq",
+      "Xilafət daxilində idarəetməni ələ keçirmək"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Anlama",
+    "difficulty": "Orta",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.5,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xilafət ordusunun uzun müddət Babəkə məğlub olmasının və hərəkatın 20 ildən çox davam etməsinin ƏSAS səbəbi nə idi?",
+    "options": [
+      "Bizansın hərbi yardımı",
+      "Xilafətin ordusunun olmaması",
+      "Babəkin mahir sərkərdəlik bacarığı və xalqın dəstəyi",
+      "Ərəb sərkərdələrinin gizli müqavilələri"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Anlama",
+    "difficulty": "Orta",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.5,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xilafət rəhbərliyi Xürrəmiləri məğlub etmək üçün sonuncu və ən güclü ordunun rəhbərliyinə hansı sərkərdəni təyin etmişdi?",
+    "options": [
+      "Afşin",
+      "Səhl ibn Sunbat",
+      "Mərvan ibn Məhəmməd",
+      "Əbu Müslüm"
+    ],
+    "correct_index": 0,
+    "bloom_level": "Anlama",
+    "difficulty": "Orta",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.5,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Cavidanın ölümündən sonra Babəkin həyata keçirdiyi İLK mühüm tədbirlərdən biri nə oldu?",
+    "options": [
+      "Xilafətə vergi ödəməyə razılaşması",
+      "Ərəb qarnizonlarının qovulması və kəndlilərin silahlandırılması",
+      "Paytaxtı Təbrizə köçürməsi",
+      "Feodal məclisi yaratması"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Anlama",
+    "difficulty": "Orta",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.5,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Babəkin Xilafət tərəfindən əsir alınması hansı hadisənin nəticəsində baş verdi?",
+    "options": [
+      "Açıq döyüşdə ordusunun məhv edilməsi",
+      "Xəstələnib təslim olması",
+      "Səhl ibn Sunbatın xəyanəti",
+      "Bizans imperatorunun onu ərəblərə satması"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Anlama",
+    "difficulty": "Orta",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.5,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Bəzz qalasının süqutu və hərəkatın məğlubiyyəti Azərbaycan və Xilafət tarixinə necə təsir göstərdi?",
+    "options": [
+      "Milli azadlıq ruhu sındı və asılılıq əbədiləşdi",
+      "Xilafətin əsaslarını sarsıtdı və onun parçalanmasına zəmin hazırladı",
+      "Babək Bizansa sığınaraq mübarizəni davam etdirdi",
+      "Xilafət bölgədəki vergiləri ləğv etdi"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Təhlil",
+    "difficulty": "Çətin",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.8,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Bəzi yerli feodalların sonradan Xilafət tərəfinə keçməsinin ƏSAS iqtisadi səbəbi nə idi?",
+    "options": [
+      "Ərəb dilini rəsmi dil qəbul etmək istəmələri",
+      "Bizans ərazilərindən torpaq vədi",
+      "Xürrəmilərin sosial bərabərlik tələbinin onların maraqlarına zidd olması",
+      "Bizans ordusunda xidmətə məcbur edilmələri"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Təhlil",
+    "difficulty": "Çətin",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.8,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xürrəmilər hərəkatını özündən əvvəlki kəndli üsyanlarından fərqləndirən ƏSAS xüsusiyyət nə idi?",
+    "options": [
+      "Yalnız şəhər əhalisi tərəfindən idarə olunması",
+      "Həm sosial bərabərsizliyə, həm də yadelli ərəb əsarətinə qarşı olması",
+      "Dini xarakter daşımaması",
+      "Qadınların iştirakına icazə verilməməsi"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Təhlil",
+    "difficulty": "Çətin",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.8,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Babəkin hərbi taktikası ilə bağlı verilən fikirlərdən hansı DAHA DƏQİQ onun uzunmüddətli uğurunu izah edir?",
+    "options": [
+      "Açıq düzənlik döyüşlərinə üstünlük verməsi",
+      "Daima Bağdada hücum etməsi",
+      "Dağlıq relyefdən istifadə edərək partizan müharibəsi aparması",
+      "Böyük dəniz donanması yaratması"
+    ],
+    "correct_index": 2,
+    "bloom_level": "Təhlil",
+    "difficulty": "Çətin",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.8,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
+  },
+  {
+    "question": "Xürrəmilər hərəkatının yatırılmasından sonra Xilafətin Azərbaycandakı idarəçilik siyasətində hansı dəyişikliklər baş verdi?",
+    "options": [
+      "Ərəb qoşunlarını Azərbaycandan çıxardı",
+      "Mərkəzləşmiş idarəetməni qoruya bilmədi və feodal dağınıqlığı gücləndi",
+      "Yerli dillərdə təhsilə tam icazə verildi",
+      "Müstəqilliyin bütün əlamətləri yox edildi"
+    ],
+    "correct_index": 1,
+    "bloom_level": "Təhlil",
+    "difficulty": "Çətin",
+    "measured_skill": "Xürrəmilər hərəkatı",
+    "operational_description": "Azərbaycan tarixi üzrə real test tapşırığı.",
+    "explanation": {
+      "correct": "Tarixi faktlara əsaslanan doğru cavab.",
+      "distractors": {
+        "A": "Tarixi uyğunsuzluq",
+        "B": "Tarixi uyğunsuzluq",
+        "C": "Tarixi uyğunsuzluq",
+        "D": "Tarixi uyğunsuzluq"
+      }
+    },
+    "distractor_diagnostics": {
+      "A": "conceptual_error",
+      "B": "typical_mistake",
+      "C": "term_confusion",
+      "D": "factual_error"
+    },
+    "solution_steps": [
+      "Dərsliyin müvafiq mövzusunu xatırlamaq",
+      "Faktı təhlil etmək"
+    ],
+    "estimated_time_sec": 60,
+    "irt_proxy": {
+      "difficulty_estimate": 0.8,
+      "discrimination_estimate": 0.5
+    },
+    "metadata": {
+      "grade": 7,
+      "subject": "Azərbaycan tarixi",
+      "source": "azerbaycan-tarixi-7",
+      "page": 17
+    }
   }
 ]
