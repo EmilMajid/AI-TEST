@@ -87,6 +87,7 @@ class EDerslikExtractor:
     def _parse_xhtml(self, html_content: str) -> str:
         """
         Parses XHTML and extracts clean text while ignoring scripts, styles, etc.
+        Identifies and marks headers for better SectionParser accuracy.
         """
         soup = BeautifulSoup(html_content, 'html.parser')
         
@@ -95,16 +96,20 @@ class EDerslikExtractor:
             tag.decompose()
             
         # Extract text using a more semantic approach by adding newlines between blocks
-        # This helps SectionParser identify headers at the start of a line.
+        # No extra newlines for bold tags - causes vertical text in some books
+
+
         for br in soup.find_all("br"):
             br.replace_with("\n")
             
         blocks = []
         # Common block-level tags in XHTML that should start a new line
-        target_tags = ['p', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'tr', 'title', 'meta']
+        # We explicitly track headers to mark them
+        header_tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+        content_tags = ['p', 'div', 'li', 'tr', 'title', 'meta', 'td']
+        target_tags = header_tags + content_tags
         
         # Find all target tags, but only keep those that are NOT inside another target tag
-        # to prevent recursive duplication of text.
         for tag in soup.find_all(target_tags):
             # Check if this tag has an ancestor that is also a target tag
             has_nested_ancestor = False
@@ -114,16 +119,30 @@ class EDerslikExtractor:
                     break
             
             if not has_nested_ancestor:
-                # Use newline separator to ensure elements like <span> are on separate lines
+                # Is it a header?
+                is_header = False
+                if tag.name in header_tags:
+                    is_header = True
+                
+                # Check for class-based headers (common in some textbooks)
+                classes = tag.get('class', [])
+                if any(c.lower() in ['title', 'heading', 'chapter-title', 'topic-title'] for c in classes):
+                    is_header = True
+
+                # Use newline separator
                 text_part = tag.get_text(separator='\n', strip=True)
                 if text_part:
-                    # Split and strip each line to ensure clean block separation
-                    for line in text_part.split('\n'):
-                        s_line = line.strip()
-                        if s_line:
-                            blocks.append(s_line)
+                    # Split into lines
+                    lines = [l.strip() for l in text_part.split('\n') if l.strip()]
+                    
+                    if is_header and lines:
+                        # Join multi-line headers into one marked header
+                        full_header = " ".join(lines)
+                        blocks.append(f"[[HEADER: {full_header}]]")
+                    else:
+                        blocks.extend(lines)
                 
-        # If no top-level blocks found using tags, fallback to stripped_strings with newlines
+        # If no top-level blocks found using tags, fallback to stripped_strings
         if not blocks:
             text = '\n'.join(soup.stripped_strings)
         else:

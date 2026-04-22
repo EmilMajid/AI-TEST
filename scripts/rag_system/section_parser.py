@@ -12,13 +12,14 @@ class SectionParser:
     # Common header patterns for Azerbaijani and English textbooks
     HEADER_PATTERNS = [
         r'^\[\[HEADER:\s*(.+?)\]\]$',                       # NEW: Explicit markers from HTML extractor
-        r'(?i)^(?:Fəsil|Bölmə|Mövzu|Dərs|DƏRS|BÖLMƏ|MÖVZU|FƏSİL|UNIT|Unit|Lesson|LESSON|§)\s+\d+[:.]?.*$', 
-        r'^\d+(?:\.\d+)*\.\s+[A-ZƏÖÜÇŞĞIİ].{3,80}$',   # e.g. 1. Title or 1.1. Topic (Must have dot)
-        r'^[A-ZƏÖÜÇŞĞIİ][A-ZƏÖÜÇŞĞIİ\s\d\.]{4,60}$',      # ALL CAPS
-        r'(?i)^(?:Bölmə|BÖLMƏ|UNIT|Unit)\s+[IVXLCDM]+[:.]?.*$', # BÖLMƏ I or UNIT I
-        r'(?i)^\d+[-]\w+\s+(?:fəsil|bölmə).*$',           # 1-ci fəsil
-        r'^[A-ZƏÖÜÇŞĞIİ][a-zəöüçşğıiA-ZƏÖÜÇŞĞIİ\s\d\-\'\?\!]{8,45}(?<![\.\,\: \-\?])\s*$', # Stricter Mixed Case (min 8 chars)
-        r'^§\s?.*$'                                       # Paragraph
+        r'(?i)^(?:Fəsil|Bölmə|Mövzu|Dərs|DƏRS|BÖLMƏ|MÖVZU|FƏSİL|UNIT|Unit|Lesson|LESSON|Глава|Раздел|Урок|УРОК|§)\s+\d+[:.]?.*$', 
+        r'^\d+(?:\.\d+)*\.\s+[A-ZƏÖÜÇŞĞIİ\u0400-\u04FF].{3,80}$',   # e.g. 1. Title or 1.1. Topic (Must have dot)
+        r'^[A-ZƏÖÜÇŞĞIİ\u0400-\u04FF][A-ZƏÖÜÇŞĞIİ\u0400-\u04FF\s\d\.]{4,60}$',      # ALL CAPS
+        r'(?i)^(?:Bölmə|BÖLMƏ|UNIT|Unit|Раздел)\s+[IVXLCDM]+[:.]?.*$', # BÖLMƏ I or UNIT I
+        r'(?i)^\d+[-]\w+\s+(?:fəsil|bölmə|глава).*$',           # 1-ci fəsil
+        r'^[A-ZƏÖÜÇŞĞIİ\u0400-\u04FF][a-zəöüçşğıi\u0400-\u04FF\s\d\-\'\?\!]{5,100}(?<![\.\,\: \-\?])\s*$', # Loose Mixed Case
+        r'^§\s?.*$',                                      # Paragraph
+        r'(?i)^(?:Focus on the topic|Vocabulary|Reading|Grammar|Listening|Speaking|Writing|TIME TO WATCH|Mistake Detector|Word Inspector|Use of English).*$' # English sub-sections
     ]
     
     # Non-section titles that often appear in ALL CAPS or specific noise
@@ -145,14 +146,14 @@ class SectionParser:
                             is_header = True
                             continue # Successfully processed line with mid-line header
 
-                for i, pattern in enumerate(self.patterns):
-                    # HTML Mode heuristic: Only trust Marker (i=0) or Numbered headers (i=2, i=4) 
-                    # as strong sources. Others are suppressed unless they are exceptionally clean.
-                    if is_html and i not in [0, 2, 4]: 
-                        # In HTML, weak patterns like ALL CAPS (3) or Mixed Case (6) 
-                        # usually detect mid-sentence breaks. Marker is better.
-                        if i in [3, 6]: continue 
+                if is_html:
+                    # If in HTML mode, we trust explicit HEADER markers, numbered patterns, and LOOSE mixed case
+                    # indices: 0 (header marker), 1 (Mövzu/Dərs), 2 (Numbered), 4 (Unit Roman), 6 (Loose Mixed Case)
+                    # Note: We skip 3 (All Caps) and 5 (1-ci fəsil) as they are prone to false positives in HTML
+                    TRUSTED_INDICES = [0, 1, 2, 4, 6]
+                    current_patterns = [(i, self.patterns[i]) for i in TRUSTED_INDICES]
 
+                for i, pattern in current_patterns:
                     match = pattern.match(stripped)
                     if len(stripped) < 150 and match:
                         title = stripped
@@ -190,7 +191,7 @@ class SectionParser:
                             
                         # 2. Minimum length for non-official titles
                         # We check against extracted title, not the marked string
-                        is_official = any(kw in title.lower() for kw in ['bölmə', 'mövzu', 'unit', 'dərs', 'fəsil', 'lesson', 'chapter'])
+                        is_official = any(kw in title.lower() for kw in ['bölmə', 'mövzu', 'unit', 'dərs', 'fəsil', 'lesson', 'chapter', 'глава', 'раздел', 'урок'])
                         if not is_official and len(title.strip()) < 5: # Slightly more lenient min length for real topics
                             is_header = False
                             continue

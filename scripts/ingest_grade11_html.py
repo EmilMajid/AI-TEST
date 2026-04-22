@@ -69,6 +69,15 @@ def main():
     html_books = [b for b in grade11_books if b.get("type") == "ederslik_html" and b["id"] not in existing_ids]
     logger.info(f"[*] Found {len(html_books)} NEW HTML books to ingest for Grade 11.")
 
+    # Setup Tesseract for Fallback
+    import pytesseract
+    TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    if os.path.exists(TESSERACT_PATH):
+        pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+        logger.info(f"[*] Tesseract fallback available at {TESSERACT_PATH}")
+    else:
+        logger.warning("[!] Tesseract NOT found. OCR fallback will be disabled.")
+
     total_chunks = 0
     for i, book in enumerate(html_books, 1):
         book_id = book['id']
@@ -77,24 +86,72 @@ def main():
         try:
             # A. Fetch from e-derslik
             pages = ederslik_extractor.fetch_book(book['e_derslik_id'])
-            if not pages:
-                logger.warning(f"  [!] No pages found for {book_id}")
-                continue
-                
-            full_text = "\n".join([p['text'] for p in pages])
             
-            # B. Clean & Parse
-            cleaned_text = noise_remover.remove_noise(full_text)
-            # Grade 11 books are HTML, so we use is_html=True for better parsing
-            sections = section_parser.parse(cleaned_text, subject=book['subject'], is_html=True)
+            # B. OCR Fallback if text-poor
+            text_content = "\n".join([p['text'] for p in pages if p['text'].strip()])
+            if len(text_content.strip()) < 1000: # Heuristic: if less than 1KB text in the whole book
+                logger.info(f"  [!] Book {book_id} appears to be image-based. Triggering OCR Fallback...")
+                import requests
+                from PIL import Image
+                import io
+                
+                ocr_pages = []
+                # Fallback: probe common image paths if no XHTML text was found
+                # We try multiple patterns because e-derslik is inconsistent
+                img_patterns = [
+                    "https://www.e-derslik.edu.az/books/{bid}/units/unit-{u}/assets/img/{p}.jpg",
+                    "https://www.e-derslik.edu.az/books/{bid}/assets/img/{p}.jpg",
+                    "https://www.e-derslik.edu.az/books/{bid}/img/{p}.jpg"
+                ]
+                
+                for pattern in img_patterns:
+                    if ocr_pages: break
+                    for u in range(1, 4):
+                        if ocr_pages: break
+                        for p in range(1, 250):
+                            img_url = pattern.format(bid=book['e_derslik_id'], u=u, p=p)
+                            try:
+                                resp = requests.get(img_url, timeout=5)
+                                if resp.status_code == 200:
+                                    img = Image.open(io.BytesIO(resp.content))
+                                    text = pytesseract.image_to_string(img, lang='aze+eng')
+                                    if text.strip():
+                                        ocr_pages.append({"text": text})
+                                        if p % 10 == 0:
+                                            logger.info(f"    [OCR] {book_id} -> {len(ocr_pages)} pages found so far...")
+                                else:
+                                    # If page 1 fails in this pattern, try next pattern or unit
+                                    if p == 1: break 
+                                    if p > 5: break 
+                            except:
+                                break
+                        if not ocr_pages and u > 1: break
+                
+                if ocr_pages:
+                    pages = ocr_pages
+                    text_content = "\n".join([p['text'] for p in pages])
+            
+            if not pages or not text_content.strip():
+                logger.warning(f"  [!] No content found for {book_id}")
+                continue
+            
+            # C. Clean & Parse
+            # Grade 11 books are HTML/OCR, so we use is_html=True for better parsing with marked headers
+            # We DON'T call noise_remover on the full text to avoid deleting potential headers that repeat as footers
+            sections = section_parser.parse(text_content, subject=book['subject'], is_html=True)
             
             if not sections:
                 logger.warning(f"  [!] No sections parsed for {book_id}")
                 continue
-
-            # C. Save Chunks
+ 
+            # D. Save Chunks
             book_chunks = []
             for j, sec in enumerate(sections):
+                chunk_text = "\n".join(sec['content'])
+                # Apply noise removal to the chunk content now
+                final_content = noise_remover.remove_noise(chunk_text)
+                if len(final_content.strip()) < 50: continue
+
                 chunk = {
                     "id": f"{book_id}_{j}",
                     "grade": "11",
@@ -102,10 +159,10 @@ def main():
                     "book_id": book_id,
                     "title": book['title'],
                     "section": sec['title'],
-                    "text": sec['content'],
+                    "text": final_content,
                     "source": f"https://e-derslik.edu.az/player/index3.php?book_id={book['e_derslik_id']}",
                     "type": "html_section",
-                    "metadata": {"version": "v1.0", "source_type": "ederslik_html"}
+                    "metadata": {"version": "v1.2", "source_type": "ederslik_html_ocr_optimized"}
                 }
                 book_chunks.append(chunk)
 
