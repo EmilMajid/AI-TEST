@@ -198,5 +198,44 @@ export const MOCK_USERS = [
     class: "8",
     region: "Bakı",
     role: "student"
+  },
+  {
+    id: "student-ayaz",
+    email: "ayaz.mammadov@test.com",
+    password: "test12345",
+    accountType: "student",
+    firstName: "Ayaz",
+    lastName: "Məmmədov",
+    fatherName: "Məmməd",
+    school: "161 saylı məktəb",
+    class: "1",
+    region: "Bakı",
+    role: "student"
+  },
+  {
+    id: "student-zara",
+    email: "zara.babayeva@test.com",
+    password: "test12345",
+    accountType: "student",
+    firstName: "Zara",
+    lastName: "Babayeva",
+    fatherName: "Babək",
+    school: "23 saylı məktəb",
+    class: "3",
+    region: "Gəncə",
+    role: "student"
+  },
+  {
+    id: "student-fuad",
+    email: "fuad.hesenov@test.com",
+    password: "test12345",
+    accountType: "student",
+    firstName: "Fuad",
+    lastName: "Həsənov",
+    fatherName: "Həsən",
+    school: "45 saylı məktəb",
+    class: "4",
+    region: "Sumqayıt",
+    role: "student"
   }
 ];

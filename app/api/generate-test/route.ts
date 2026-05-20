@@ -363,11 +363,16 @@ function loadFromQuestionBank(
       const gradeMatch = meta.grade === gradeNum
       const subjectText = (meta.subject || "").toLowerCase()
       const skillText = (q.measured_skill || "").toLowerCase()
+      const topicText = (meta.topic || "").toLowerCase()
       const questionText = (q.question || "").toLowerCase()
 
       const topicWords = topicLower.split(/\s+/).filter((w: string) => w.length > 3)
       const topicMatch = topicWords.some(
-        (w: string) => subjectText.includes(w) || skillText.includes(w) || questionText.includes(w)
+        (w: string) => 
+          subjectText.includes(w) || 
+          skillText.includes(w) || 
+          topicText.includes(w) || 
+          questionText.includes(w)
       )
       return gradeMatch && topicMatch
     })
@@ -404,6 +409,7 @@ function loadFromQuestionBank(
       topic: q.measured_skill || topic,
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
       timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
+      sourceContext: q.sourceContext || "Dərslikdəki müvafiq fəsil",
     }))
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)

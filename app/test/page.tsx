@@ -22,6 +22,7 @@ interface Question {
   topic: string
   bloomLevel: string
   timeEstimate?: number
+  sourceContext?: string
 }
 
 interface TestConfig {
@@ -168,6 +169,7 @@ export default function TestPage() {
         explanation: question.explanation,
         difficulty: question.difficulty,
         bloomLevel: question.bloomLevel,
+        sourceContext: question.sourceContext,
       }
     })
 

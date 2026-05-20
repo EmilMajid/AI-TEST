@@ -259,5 +259,95 @@
     "tags": [],
     "status": "active",
     "isPending": false
+  },
+  "aze-1-q1": {
+    "id": "aze-1-q1",
+    "topicKey": "Azərbaycan dili",
+    "class": "1",
+    "subject": "Azərbaycan dili",
+    "question": "Məktəbə gedərkən hansı ləvazimat lazımdır?",
+    "options": [
+      "Top",
+      "Qələm",
+      "Yastıq",
+      "Qaşıq"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qələm məktəb ləvazimatıdır.",
+    "difficulty": "asan",
+    "bloomLevel": "xatırlama",
+    "status": "active"
+  },
+  "aze-1-q2": {
+    "id": "aze-1-q2",
+    "topicKey": "Azərbaycan dili",
+    "class": "1",
+    "subject": "Azərbaycan dili",
+    "question": "Ailə üzvlərindən kim daha böyükdür?",
+    "options": [
+      "Bacı",
+      "Qardaş",
+      "Baba",
+      "Nəvə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ailədə baba yaşca daha böyükdür.",
+    "difficulty": "asan",
+    "bloomLevel": "anlama",
+    "status": "active"
+  },
+  "aze-1-q3": {
+    "id": "aze-1-q3",
+    "topicKey": "Azərbaycan dili",
+    "class": "1",
+    "subject": "Azərbaycan dili",
+    "question": "Hansı hərəkət yolda təhlükəlidir?",
+    "options": [
+      "Səki ilə getmək",
+      "Yolu qaçaraq keçmək",
+      "İşığa baxmaq",
+      "Dayanmaq"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yolu qaçaraq keçmək təhlükəlidir, ehtiyatlı olmaq lazımdır.",
+    "difficulty": "orta",
+    "bloomLevel": "tətbiq",
+    "status": "active"
+  },
+  "aze-1-q4": {
+    "id": "aze-1-q4",
+    "topicKey": "Azərbaycan dili",
+    "class": "1",
+    "subject": "Azərbaycan dili",
+    "question": "Hansı qida sağlamlıq üçün daha xeyirlidir?",
+    "options": [
+      "Konfet",
+      "Alma",
+      "Çips",
+      "Qazlı su"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Meyvələr (alma) sağlamlıq üçün xeyirlidir.",
+    "difficulty": "asan",
+    "bloomLevel": "anlama",
+    "status": "active"
+  },
+  "aze-1-q5": {
+    "id": "aze-1-q5",
+    "topicKey": "Azərbaycan dili",
+    "class": "1",
+    "subject": "Azərbaycan dili",
+    "question": "Göyqurşağında neçə rəng var?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Göyqurşağında 7 rəng var.",
+    "difficulty": "orta",
+    "bloomLevel": "xatırlama",
+    "status": "active"
   }
 }

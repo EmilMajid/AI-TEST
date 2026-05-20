@@ -35,6 +35,7 @@ interface Question {
   difficulty: string
   topic: string
   bloomLevel: string
+  sourceContext?: string
 }
 
 interface TestResults {
@@ -523,8 +524,20 @@ export default function ResultsPage() {
                           )}
 
                           {showExplanations && (
-                            <div className="bg-gray-50 p-4 rounded-lg mt-4">
-                              <h4 className="font-medium text-gray-800 mb-2">Əsas İzahat</h4>
+                            <div className="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200 shadow-inner">
+                              <h4 className="font-bold text-gray-800 mb-2 flex items-center">
+                                <BookOpen className="h-4 w-4 mr-2 text-primary" />
+                                Dərsliyin Müvafiq Hissəsi (Mənbə)
+                              </h4>
+                              {question.sourceContext ? (
+                                <blockquote className="border-l-4 border-primary pl-4 py-2 mb-4 text-gray-700 text-sm bg-white rounded italic">
+                                  "{question.sourceContext}"
+                                </blockquote>
+                              ) : (
+                                <p className="text-gray-500 text-sm italic mb-4">Bu sual üçün spesifik mənbə mətni əlavə edilməyib.</p>
+                              )}
+                              
+                              <h4 className="font-bold text-gray-800 mb-2">Pedaqoji İzahat</h4>
                               <p className="text-gray-700 text-sm">{question.explanation}</p>
                             </div>
                           )}
