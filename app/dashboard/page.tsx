@@ -275,22 +275,75 @@ export default function Dashboard() {
                           onChange={(e) => {
                             const subject = e.target.value
                             setSelectedSubject(subject)
+                            setSelectedLanguage("")
 
-                            // Get textbooks for this subject
-                            const textbooks = userData?.class ? getTextbooks(userData.class, subject) : []
-                            setAvailableTextbooks(textbooks)
+                            const isForeign = subject === "Xarici dil" || subject === "İkinci xarici dil"
+                            setIsForeignLanguage(isForeign)
 
-                            // Auto-select first textbook OR reset
-                            if (textbooks.length > 0) {
-                              setSelectedTextbook(textbooks[0])
-                              setTestConfig(prev => ({ ...prev, textbook: textbooks[0].title, topic: "" }))
-                            } else {
+                            if (isForeign) {
+                              // Dynamically import textbooks for this class
+                              const { getTextbooksByClass } = require("@/lib/textbook-service")
+                              const allBooks = userData?.class ? getTextbooksByClass(userData.class) : []
+                              
+                              // Filter books for this foreign language subject
+                              const foreignBooks = allBooks.filter((book: any) => {
+                                const subj = book.subject || ""
+                                const title = book.title || ""
+                                const id = book.id || ""
+
+                                const isSecondary = 
+                                  subj.includes("ikinci") || 
+                                  title.includes("ikinci") || 
+                                  id.includes("ikinci") || 
+                                  id.includes("-2") ||
+                                  id.includes("-2-")
+
+                                if (subject === "Xarici dil") {
+                                  return !isSecondary && (
+                                    subj === "Xarici dil" || 
+                                    ["İngilis dili", "Alman dili", "Fransız dili", "Rus dili"].includes(subj) ||
+                                    /ingilis|alman|fransız|fransiz|rus/i.test(title)
+                                  )
+                                } else {
+                                  return isSecondary || 
+                                    subj === "İkinci xarici dil"
+                                }
+                              })
+
+                              // Extract unique languages
+                              const languagesSet = new Set<string>()
+                              foreignBooks.forEach((book: any) => {
+                                const title = book.title || ""
+                                const subj = book.subject || ""
+                                if (["İngilis dili", "Alman dili", "Fransız dili", "Rus dili"].includes(subj)) {
+                                  languagesSet.add(subj)
+                                } else if (/ingilis|english/i.test(title)) {
+                                  languagesSet.add("İngilis dili")
+                                } else if (/alman|german/i.test(title)) {
+                                  languagesSet.add("Alman dili")
+                                } else if (/fransız|fransiz|french/i.test(title)) {
+                                  languagesSet.add("Fransız dili")
+                                } else if (/rus|russian/i.test(title)) {
+                                  languagesSet.add("Rus dili")
+                                }
+                              })
+
+                              const languages = Array.from(languagesSet)
+                              setAvailableLanguages(languages)
+                              setAvailableTextbooks([])
                               setSelectedTextbook(null)
-                              setTestConfig(prev => ({ ...prev, textbook: subject, topic: "" }))
-                            }
+                            } else {
+                              const textbooks = userData?.class ? getTextbooks(userData.class, subject) : []
+                              setAvailableTextbooks(textbooks)
 
-                            // Reset foreign language specific state if needed
-                            setIsForeignLanguage(subject === "Xarici dil" || subject === "İkinci xarici dil")
+                              if (textbooks.length > 0) {
+                                setSelectedTextbook(textbooks[0])
+                                setTestConfig(prev => ({ ...prev, textbook: textbooks[0].title, topic: "" }))
+                              } else {
+                                setSelectedTextbook(null)
+                                setTestConfig(prev => ({ ...prev, textbook: subject, topic: "" }))
+                              }
+                            }
                           }}
                           className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
                         >
@@ -302,6 +355,67 @@ export default function Dashboard() {
                           ))}
                         </select>
                       </div>
+
+                      {/* Foreign Language Dropdown */}
+                      {isForeignLanguage && (
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-gray-700">Xarici dil seçimi</label>
+                          <select
+                            value={selectedLanguage}
+                            onChange={(e) => {
+                              const lang = e.target.value
+                              setSelectedLanguage(lang)
+
+                              const { getTextbooksByClass } = require("@/lib/textbook-service")
+                              const allBooks = userData?.class ? getTextbooksByClass(userData.class) : []
+                              const filtered = allBooks.filter((book: any) => {
+                                const title = book.title || ""
+                                const subj = book.subject || ""
+                                const id = book.id || ""
+
+                                const isSecondary = 
+                                  subj.includes("ikinci") || 
+                                  title.includes("ikinci") || 
+                                  id.includes("ikinci") || 
+                                  id.includes("-2") ||
+                                  id.includes("-2-")
+
+                                const isCorrectType = selectedSubject === "Xarici dil" ? !isSecondary : isSecondary
+
+                                if (!isCorrectType) return false
+
+                                if (lang === "İngilis dili") {
+                                  return subj === "İngilis dili" || /ingilis|english/i.test(title)
+                                } else if (lang === "Alman dili") {
+                                  return subj === "Alman dili" || /alman|german/i.test(title)
+                                } else if (lang === "Fransız dili") {
+                                  return subj === "Fransız dili" || /fransız|fransiz|french/i.test(title)
+                                } else if (lang === "Rus dili") {
+                                  return subj === "Rus dili" || /rus|russian/i.test(title)
+                                }
+                                return false
+                              })
+
+                              setAvailableTextbooks(filtered)
+                              if (filtered.length > 0) {
+                                setSelectedTextbook(filtered[0])
+                                setTestConfig(prev => ({ ...prev, textbook: filtered[0].title, topic: "" }))
+                              } else {
+                                setSelectedTextbook(null)
+                                setTestConfig(prev => ({ ...prev, textbook: "", topic: "" }))
+                              }
+                            }}
+                            className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                          >
+                            <option value="">Dil seçin</option>
+                            {availableLanguages.map((lang) => (
+                              <option key={lang} value={lang}>
+                                {lang}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
 
                       {/* Textbook Selection - Show if at least 1 option EXISTS for the selected subject */}
                       {selectedSubject && availableTextbooks.length >= 1 && (

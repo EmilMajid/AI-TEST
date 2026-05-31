@@ -248,8 +248,10 @@ export async function GET(request: NextRequest) {
             let currentGroup: TopicGroup | null = null;
             const headerRegex = /^(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI)/i;
 
+            const hasSubtopics = lines.some(line => !headerRegex.test(line));
+
             for (const line of lines) {
-                if (headerRegex.test(line)) {
+                if (headerRegex.test(line) && hasSubtopics) {
                     currentGroup = { chapter: line, topics: [] };
                     groups.push(currentGroup);
                 } else {
