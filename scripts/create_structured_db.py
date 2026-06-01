@@ -1,0 +1,256 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Manual olarak düzgün struktura database yaratma
+Subject → Textbook → Topic → Difficulty → Questions
+"""
+
+import json
+
+# Azərbaycan dili testləri - düzgün strukturda
+database = {
+    "Azərbaycan dili": {
+        "Azərbaycan dili 7-ci sinif": {
+            "I BÖLMƏ. FƏRD VƏ CƏMİYYƏT": {
+                "sadə": [
+                    {
+                        "id": 1,
+                        "question": "\"Hərənin öz imzası\" mətnində əsas fikir nədir?",
+                        "options": [
+                            "Hər insanın öz xüsusiyyəti var",
+                            "İmza atmağı öyrənmək lazımdır",
+                            "Hamı eyni cür yazmalıdır",
+                            "Yazı qaydaları əhəmiyyətsizdir"
+                        ],
+                        "correctAnswer": 0,
+                        "explanation": "Əsərdə hər insanın fərdi xüsusiyyətlərə malik olduğu, cəmiyyətdə öz yeri və dəyəri olduğu vurğulanır.",
+                        "sourceContext": "Hər insanın öz imzası var, hər kəs fərqlidir. Bu fərqliliyə hörmət etmək lazımdır.",
+                        "difficulty": "sadə",
+                        "bloomLevel": "anlama"
+                    },
+                    {
+                        "id": 2,
+                        "question": "\"Mübariz\" əsərində baş qəhrəmanın əsas xüsusiyyəti nədir?",
+                        "options": [
+                            "Qorxaqlıq",
+                            "Cəsarət və mübarizlik",
+                            "Tənbəllik",
+                            "Biganəlik"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Əsərində müəllif mübariz ruhlu, cəsur qəhrəmanı göstərir.",
+                        "sourceContext": "Mübariz əsərində qəhrəman qorxudan yan çəkməyən, ədalətli olub öz prinsiplərinə sadiq qalır.",
+                        "difficulty": "sadə",
+                        "bloomLevel": "anlama"
+                    },
+                    {
+                        "id": 3,
+                        "question": "\"Son yarpaq\" əsərinin müəllifi kimdir?",
+                        "options": [
+                            "İ.Əfəndiyev",
+                            "O.Henri",
+                            "M.İbrahimov",
+                            "S.Vurğun"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "\"Son yarpaq\" məşhur amerikalı yazıçı O.Henri tərəfindən yazılmışdır.",
+                        "sourceContext": "O.Henri klassik ədəbiyyat nümunələri yazmış, \"Son yarpaq\" onun ən məşhur əsərlərindən biridir.",
+                        "difficulty": "sadə",
+                        "bloomLevel": "xatırlama"
+                    },
+                    {
+                        "id": 4,
+                        "question": "\"Polyanna\" əsərində qızın həyata münasibəti necədir?",
+                        "options": [
+                            "Pessimist",
+                            "Nikbin (optimist)",
+                            "Laqeyd",
+                            "Aqressiv"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Polyanna taş kiçik olsa da həyata optimist baxır, həmişə müsbət tərəflərini tapır.",
+                        "sourceContext": "Polyanna qəhrəmanı həyatda müsbətliyi axtarır, başqalarına da sevinci yayır.",
+                        "difficulty": "sadə",
+                        "bloomLevel": "anlama"
+                    },
+                    {
+                        "id": 5,
+                        "question": "Aşağıdakılardan hansı ismin hal kateqoriyasına aid deyil?",
+                        "options": [
+                            "Yiyəlik hal",
+                            "Təsirlik hal",
+                            "Çıxışlıq hal",
+                            "Xəbərlik hal"
+                        ],
+                        "correctAnswer": 3,
+                        "explanation": "Azərbaycan dilində ismin 9 hal kategoriyası vardır: nominativ, yiyəlik, təsirlik, çıxışlıq, yerlik, ortak-hal, müşriq, hövzə, vəsilə. Xəbərlik hal ismin kategoriyası deyil.",
+                        "sourceContext": "Ismin hal kateqoriyaları: nominativ (kim?, nə?), yiyəlik (kimin?), təsirlik (kimi?), çıxışlıq (kindən?), yerlik (kimində?), ortak-hal (kimlə?), müşriq (kimin arasından?), hövzə (kimə?), vəsilə (kimlə?).",
+                        "difficulty": "sadə",
+                        "bloomLevel": "xatırlama"
+                    }
+                ],
+                "orta": [
+                    {
+                        "id": 1,
+                        "question": "\"Səhv düşəndə yerimiz\" mətnindəki əsas mesaj nədir?",
+                        "options": [
+                            "Səhv etməyin heç bir faydası yoxdur",
+                            "Səhv edib düzəltmək inkişafın bir hissəsidir",
+                            "Səhv edənlər cəzalanmalıdır",
+                            "Heç vaxt səhv etməmək lazımdır"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Mətn göstərir ki, insan inkişafı zamanı səhvlər tökmə bir hissəsidir. Əhəmiyyətli olan səhvdən dərs çıxarmaqdır.",
+                        "sourceContext": "Səhv düşəndə yerimiz - bu cümlə göstərir ki, insan yalnız səhvlər etməklə öyrənir və inkişaf edir.",
+                        "difficulty": "orta",
+                        "bloomLevel": "şərh"
+                    },
+                    {
+                        "id": 2,
+                        "question": "\"Qayıqda dörd nəfər\" əsərindəki alleqoriya nəyi ifadə edir?",
+                        "options": [
+                            "Dəniz macərasını",
+                            "Cəmiyyətdə birgəyaşayışın vacibliyini",
+                            "Qayıqçılığın tarixini",
+                            "Balıqçılıq sənətini"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Bu əsər alleqoriyalı yazılmışdır. Qayıq cəmiyyəti, dörd nəfər müxtəlif sosial təbəqələri, su isə həyatın çətinliklərini simvollaşdırır.",
+                        "sourceContext": "Əsərdə dörd fərqli insanın (müxəlif sosial mənzilərdən) bir qayıqda oturub həyatı birlikdə keçirmələri göstərilir.",
+                        "difficulty": "orta",
+                        "bloomLevel": "analiz"
+                    },
+                    {
+                        "id": 3,
+                        "question": "Aşağıdakı cümlələrdən hansında isim çıxışlıq halda işlənib?",
+                        "options": [
+                            "Uşaqlar məktəbdən qayıtdılar.",
+                            "Kitabı stolun üstünə qoydum.",
+                            "Müəllim şagirdə baxdı.",
+                            "Azərbaycan gözəl ölkədir."
+                        ],
+                        "correctAnswer": 0,
+                        "explanation": "Çıxışlıq hali \"-(d)an, -(d)ən\" şəkilində olur. \"Məktəbdən\" sözündə isim çıxışlıq halda işlənmişdir (harada-dan gəlmə).",
+                        "sourceContext": "Çıxışlıq hal: yerin məkan məsələsində ayrılma və hərəkətə başlanğıcı bildirir. Məktəbdən (harada-dan), evdən (harada-dan).",
+                        "difficulty": "orta",
+                        "bloomLevel": "tətbiq"
+                    },
+                    {
+                        "id": 4,
+                        "question": "Feilin hansı şəkli arzu, istək bildirir?",
+                        "options": [
+                            "Xəbər şəkli",
+                            "Arzu şəkli",
+                            "Əmr şəkli",
+                            "Şərt şəkli"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Arzu şəkli \"-sa, -sə\" və ya \"-maq istəyən\" şəkilində göstərilir. Arzu, istək, ümid bildirir.",
+                        "sourceContext": "Arzu şəkli: \"Gelsin\", \"Gitməsəm\", \"Oynamaq istərdim\" kimi cümlələrdə rast gəlinir.",
+                        "difficulty": "orta",
+                        "bloomLevel": "anlama"
+                    },
+                    {
+                        "id": 5,
+                        "question": "\"Fərd və cəmiyyət\" bölməsindəki mətnlərin ortaq mövzusu nədir?",
+                        "options": [
+                            "Təbiət hadisələri",
+                            "İnsanın cəmiyyətdəki rolu və məsuliyyəti",
+                            "Tarix hadisələri",
+                            "Texnoloji inkişaf"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Bölməyə daxil olan bütün mətnlər insanın cəmiyyətdəki yeri, rolu, məsuliyyəti və digər insanlarla əlaqəsini göstərir.",
+                        "sourceContext": "Bu bölmə insanın özəllikləri, cəmiyyətdəki yeri, sosial məsuliyyət, nəsillərin birləşməsi kimi mövzuları əhatə edir.",
+                        "difficulty": "orta",
+                        "bloomLevel": "ümumiləştirmə"
+                    }
+                ],
+                "çətin": [
+                    {
+                        "id": 1,
+                        "question": "\"Hərənin öz imzası\" mətnindəki \"imza\" sözü hansı mənada işlənib?",
+                        "options": [
+                            "Həqiqi mənada (kağız üzərindəki imza)",
+                            "Məcazi mənada (insanın fərdi xüsusiyyəti)",
+                            "Terminoloji mənada",
+                            "Arxaik mənada"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "\"İmza\" burada məcazi mənada işlənmişdir. Hər insanın öz xüsusiyyətləri, həyat yolu, fərqli olmaqları simvollaşdırır.",
+                        "sourceContext": "Əsərdə \"imza\" sözü insanın fərdi xüsusiyyətləri, onun cəmiyyətə qatqısı, fərdi dünyagörüşünü simvollaşdırır.",
+                        "difficulty": "çətin",
+                        "bloomLevel": "analiz"
+                    },
+                    {
+                        "id": 2,
+                        "question": "\"Mübariz\" əsərində müəllifin istifadə etdiyi bədii təsvir vasitəsi hansıdır: \"Güllələr yağış kimi yağırdı\"?",
+                        "options": [
+                            "Mübaliğə",
+                            "Təşbeh (bənzətmə)",
+                            "Epitet",
+                            "Metonimiya"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "\"Güllələr yağış kimi yağırdı\" - bu cümlədə təşbeh (bənzətmə) vasitəsi işlənmişdir. Güllələrin yağış kimi düşməsi bənzətilir.",
+                        "sourceContext": "Təşbeh - iki müxtəlif objekti \"kimi\", \"gibi\" sözləri vasitəsilə müqayisə etməkdir. Məsələn: \"Cəngavər kimi cəsur\", \"Dəmir kimi sağlam\".",
+                        "difficulty": "çətin",
+                        "bloomLevel": "analiz"
+                    },
+                    {
+                        "id": 3,
+                        "question": "Aşağıdakı cümlələrdən hansında feili sifət işlənib?",
+                        "options": [
+                            "Gülən uşaq sevinirdi.",
+                            "Uşaq gülür.",
+                            "Uşaq güldü.",
+                            "Uşaq gülməlidir."
+                        ],
+                        "correctAnswer": 0,
+                        "explanation": "Feili sifət (-an, -ən, -ır, -ir, -acaq, -əcək) şəkilində feil sifətə çevrilir. \"Gülən\" - feilin (-an) şəkli ilə sifət halına gəlmişdir.",
+                        "sourceContext": "Feili sifət: feilin sifət vəzifəsini görən forması. \"Gülən uşaq\" - \"gülən\" feili sifətdir, uşağın hansı olduğunu göstərir.",
+                        "difficulty": "çətin",
+                        "bloomLevel": "tətbiq"
+                    },
+                    {
+                        "id": 4,
+                        "question": "\"Son yarpaq\" əsərindəki qoca rəssamın hərəkəti hansı bədii üsulla verilir?",
+                        "options": [
+                            "Kontrast",
+                            "Təkrar",
+                            "Kulminasiya",
+                            "Epiloq"
+                        ],
+                        "correctAnswer": 0,
+                        "explanation": "Qoca rəssamın son yarpağı çəkməsi ilə ağlasız kız müqayisəsi kontrast yaratır. Ölüm ilə həyat, gözəllik ilə fəsillərin dəyişməsi təzad edir.",
+                        "sourceContext": "Kontrast - iki əks anlayışın, keyfiyyətlərin, hadisələrin yanyana qoyulması. Burada rəssamın ölüm mənsəsi ilə yarpağın yeni doğulması kontrastda qoyulur.",
+                        "difficulty": "çətin",
+                        "bloomLevel": "analiz"
+                    },
+                    {
+                        "id": 5,
+                        "question": "Aşağıdakılardan hansı düzəltmə isimdir?",
+                        "options": [
+                            "Dəniz",
+                            "Müəllimlik",
+                            "Kitab",
+                            "Güzgü"
+                        ],
+                        "correctAnswer": 1,
+                        "explanation": "Düzəltmə (ya da yapma) isim isim və ya feil kökünə sonluq əlavə etməklə düzəldilən sözdür. \"Müəllim\" + \"-lik\" = \"Müəllimlik\".",
+                        "sourceContext": "Düzəltmə isim: sözlərin kökhən əlavə, birləşmə, dəyişə-dəyişə yeni söz yaranır. \"Kitabçı\", \"dostluq\", \"məktəplik\".",
+                        "difficulty": "çətin",
+                        "bloomLevel": "tətbiq"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+# JSON-ə yazma
+with open('/vercel/share/v0-project/data/offline_tests.json', 'w', encoding='utf-8') as f:
+    json.dump(database, f, ensure_ascii=False, indent=2)
+
+print("✅ Database yaradıldı!")
+print(json.dumps(database, ensure_ascii=False, indent=2)[:500] + "\n...\n")

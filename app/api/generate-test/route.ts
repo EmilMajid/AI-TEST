@@ -688,44 +688,35 @@ function loadFromOfflineDatabase(
     }
 
     const raw = fs.readFileSync(dbPath, "utf-8")
-    const allTests: Record<string, any[]> = JSON.parse(raw)
+    // Yeni struktur: Subject → Textbook → Topic → Difficulty → Questions
+    const database: Record<string, Record<string, Record<string, Record<string, any[]>>>> = JSON.parse(raw)
 
     const topicLower = topic.toLowerCase()
-
-    // Bütün mövzuları ara
     let matchingQuestions: any[] = []
 
-    for (const [subject, topicData] of Object.entries(allTests)) {
-      if (!Array.isArray(topicData)) continue
-
+    // Bütün fənnləri ara
+    for (const [subject, textbooks] of Object.entries(database)) {
       const subjectLower = subject.toLowerCase()
+      
+      // Fənn adı ilə uyğunlaşma
+      if (!subjectLower.includes(topicLower) && !topicLower.includes(subjectLower)) {
+        continue
+      }
 
-      // Fənn adında eşleşməni yoxla
-      if (subjectLower.includes(topicLower) || topicLower.includes(subjectLower)) {
-        // Nested topic_key/questions structure
-        for (const item of topicData) {
-          if (item.questions && Array.isArray(item.questions)) {
-            matchingQuestions.push(...item.questions)
-          }
-        }
-        console.log(`[v0] Found ${matchingQuestions.length} questions from subject: ${subject}`)
-      } else {
-        // topic_key-də axtarış et
-        for (const item of topicData) {
-          const topicKey = (item.topic_key || "").toLowerCase()
-          if (topicKey.includes(topicLower) || topicLower.includes(topicKey)) {
-            if (item.questions && Array.isArray(item.questions)) {
-              matchingQuestions.push(...item.questions)
+      // Təhsil kitablarını ara
+      for (const [textbook, topics] of Object.entries(textbooks)) {
+        // Mövzuları ara
+        for (const [topicName, difficultyLevels] of Object.entries(topics)) {
+          const topicNameLower = topicName.toLowerCase()
+          
+          // Bu mövzu uyğun gəlirsə, suallart əlavə et
+          if (topicNameLower.includes(topicLower) || topicLower.includes(topicNameLower) || topicLower === "ümumi") {
+            // Çətinlik səviyyəsinə əvvəl baxmadan hamısını axtrış
+            for (const [diffLevel, questions] of Object.entries(difficultyLevels)) {
+              if (Array.isArray(questions)) {
+                matchingQuestions.push(...questions)
+              }
             }
-          }
-          // Hər sualın mövzusunu da yoxla
-          else if (item.questions && Array.isArray(item.questions)) {
-            const filteredQuestions = item.questions.filter((q: any) => {
-              const qTopic = (q.topic || "").toLowerCase()
-              const qQuestion = (q.question || "").toLowerCase()
-              return qTopic.includes(topicLower) || qQuestion.includes(topicLower)
-            })
-            matchingQuestions.push(...filteredQuestions)
           }
         }
       }
@@ -738,7 +729,7 @@ function loadFromOfflineDatabase(
 
     // Çətinlik səviyyəsinə uyğun filtr et
     let filtered = matchingQuestions
-    if (difficulty !== "qarışıq") {
+    if (difficulty !== "qarışıq" && difficulty !== "hər") {
       filtered = matchingQuestions.filter((q: any) => {
         const qDifficulty = (q.difficulty || "orta").toLowerCase()
         return qDifficulty === difficulty.toLowerCase()
@@ -749,22 +740,18 @@ function loadFromOfflineDatabase(
     const pool = filtered.length > 0 ? filtered : matchingQuestions
 
     // Tələb olunan sayda sualı seç və qarış
-    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, Math.min(count, pool.length))
 
     // ID-ləri yenidən təyin et
     return shuffled.map((q: any, idx: number) => ({
       id: idx + 1,
       question: q.question || "Sual mətni tapılmadı",
-      options: (q.options || ["A", "B", "C", "D"]).map((opt: string) => 
-        typeof opt === "string" ? opt.replace(/^[A-D]\)\s*/, "") : opt
-      ),
+      options: q.options || ["A", "B", "C", "D"],
       correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
       explanation: q.explanation || "İzahat mövcud deyil",
-      sourceContext: q.sourceContext || "Offline verilənlər bazası",
+      sourceContext: q.sourceContext || "Dərslik materyalı",
       difficulty: q.difficulty || difficulty,
-      topic: q.topic || topic,
       bloomLevel: q.bloomLevel || "anlama",
-      timeEstimate: q.timeEstimate || 2,
     }))
   } catch (e) {
     console.error("[v0] Error loading from offline database:", e)
