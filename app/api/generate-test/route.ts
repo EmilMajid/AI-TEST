@@ -9,9 +9,44 @@ import { type NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 
+// Sual sayına uyğun vaxt təyin etmə (kurs-level helper)
+function getRecommendedTime(count: number, difficulty: string): number {
+  const baseTime: Record<string, number> = {
+    sadə: 1.5,
+    orta: 2,
+    çətin: 3,
+    qarışıq: 2.5,
+  }
+  return Math.ceil(count * (baseTime[difficulty] || baseTime["orta"]))
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20 } = await request.json()
+
+    // STEP 0: Offline database-dən sualları yoxla (heç bir UI indikasyonu yoxdur)
+    console.log("[v0] Checking offline database for:", { topic, grade, difficulty })
+    const offlineQuestions = loadFromOfflineDatabase(topic, grade, questionCount, difficulty)
+    
+    if (offlineQuestions.length > 0) {
+      console.log(`[v0] ✅ Found ${offlineQuestions.length} offline questions for "${topic}"`)
+      return NextResponse.json({
+        questions: offlineQuestions,
+        provider: "offline",
+        success: true,
+        message: `${offlineQuestions.length} test sualı offline verilənlər bazasından götürüldü`,
+        metadata: {
+          textbook,
+          topic,
+          grade,
+          difficulty,
+          questionCount: offlineQuestions.length,
+          timeLimit,
+          recommendedTime: getRecommendedTime(offlineQuestions.length, difficulty),
+          difficultyDistribution: getDifficultyDistribution(offlineQuestions),
+        },
+      })
+    }
 
     // Çətinlik səviyyəsinə uyğun prompt yaradılması
     const getDifficultyPrompt = (difficulty: string) => {
@@ -52,17 +87,6 @@ export async function POST(request: NextRequest) {
           - Orta səviyyədə analitik düşünmə
           `
       }
-    }
-
-    // Sual sayına uyğun vaxt təyin etmə
-    const getRecommendedTime = (count: number, difficulty: string) => {
-      const baseTime = {
-        sadə: 1.5,
-        orta: 2,
-        çətin: 3,
-        qarışıq: 2.5,
-      }
-      return Math.ceil(count * baseTime[difficulty as keyof typeof baseTime])
     }
 
     const recommendedTime = getRecommendedTime(questionCount, difficulty)
@@ -647,4 +671,103 @@ function generateAdvancedFallbackQuestions(
   }
 
   return questions
+}
+
+// ✅ Offline database-dən sualları yüklə (heç bir UI indikasyonu yoxdur)
+function loadFromOfflineDatabase(
+  topic: string,
+  grade: string | number,
+  count: number,
+  difficulty: string,
+): any[] {
+  try {
+    const dbPath = path.join(process.cwd(), "data", "offline_tests.json")
+    if (!fs.existsSync(dbPath)) {
+      console.log("[v0] Offline database not found")
+      return []
+    }
+
+    const raw = fs.readFileSync(dbPath, "utf-8")
+    const allTests: Record<string, any[]> = JSON.parse(raw)
+
+    const topicLower = topic.toLowerCase()
+
+    // Bütün mövzuları ara
+    let matchingQuestions: any[] = []
+
+    for (const [subject, topicData] of Object.entries(allTests)) {
+      if (!Array.isArray(topicData)) continue
+
+      const subjectLower = subject.toLowerCase()
+
+      // Fənn adında eşleşməni yoxla
+      if (subjectLower.includes(topicLower) || topicLower.includes(subjectLower)) {
+        // Nested topic_key/questions structure
+        for (const item of topicData) {
+          if (item.questions && Array.isArray(item.questions)) {
+            matchingQuestions.push(...item.questions)
+          }
+        }
+        console.log(`[v0] Found ${matchingQuestions.length} questions from subject: ${subject}`)
+      } else {
+        // topic_key-də axtarış et
+        for (const item of topicData) {
+          const topicKey = (item.topic_key || "").toLowerCase()
+          if (topicKey.includes(topicLower) || topicLower.includes(topicKey)) {
+            if (item.questions && Array.isArray(item.questions)) {
+              matchingQuestions.push(...item.questions)
+            }
+          }
+          // Hər sualın mövzusunu da yoxla
+          else if (item.questions && Array.isArray(item.questions)) {
+            const filteredQuestions = item.questions.filter((q: any) => {
+              const qTopic = (q.topic || "").toLowerCase()
+              const qQuestion = (q.question || "").toLowerCase()
+              return qTopic.includes(topicLower) || qQuestion.includes(topicLower)
+            })
+            matchingQuestions.push(...filteredQuestions)
+          }
+        }
+      }
+    }
+
+    if (matchingQuestions.length === 0) {
+      console.log(`[v0] No offline questions found for topic: ${topic}`)
+      return []
+    }
+
+    // Çətinlik səviyyəsinə uyğun filtr et
+    let filtered = matchingQuestions
+    if (difficulty !== "qarışıq") {
+      filtered = matchingQuestions.filter((q: any) => {
+        const qDifficulty = (q.difficulty || "orta").toLowerCase()
+        return qDifficulty === difficulty.toLowerCase()
+      })
+    }
+
+    // Əgər çətinlik səviyyəsi ilə heç bir sual tapılmazsa, hamısını istifadə et
+    const pool = filtered.length > 0 ? filtered : matchingQuestions
+
+    // Tələb olunan sayda sualı seç və qarış
+    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+
+    // ID-ləri yenidən təyin et
+    return shuffled.map((q: any, idx: number) => ({
+      id: idx + 1,
+      question: q.question || "Sual mətni tapılmadı",
+      options: (q.options || ["A", "B", "C", "D"]).map((opt: string) => 
+        typeof opt === "string" ? opt.replace(/^[A-D]\)\s*/, "") : opt
+      ),
+      correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
+      explanation: q.explanation || "İzahat mövcud deyil",
+      sourceContext: q.sourceContext || "Offline verilənlər bazası",
+      difficulty: q.difficulty || difficulty,
+      topic: q.topic || topic,
+      bloomLevel: q.bloomLevel || "anlama",
+      timeEstimate: q.timeEstimate || 2,
+    }))
+  } catch (e) {
+    console.error("[v0] Error loading from offline database:", e)
+    return []
+  }
 }
