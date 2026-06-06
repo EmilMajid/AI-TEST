@@ -80,8 +80,12 @@ export async function GET(request: Request) {
             const subjectKey = getSubjectKeyFromTitle(book.title)
             const dbTopics = subjectKey && db[subjectKey] ? db[subjectKey] : []
             
-            const topicsWithCounts = book.topics.map((tName: string) => {
-                const dt = dbTopics.find((d: any) => d.topic === tName)
+            const topicsArray = typeof book.topics === 'string' 
+                 ? book.topics.split('\n').map((t: string) => t.trim()).filter(Boolean)
+                 : Array.isArray(book.topics) ? book.topics : []
+
+            const topicsWithCounts = topicsArray.map((tName: string) => {
+                const dt = dbTopics.find((d: any) => d.topic_key === tName || d.topic === tName)
                 return {
                     name: tName,
                     questionCount: dt && dt.questions ? dt.questions.length : 0
@@ -98,8 +102,13 @@ export async function GET(request: Request) {
                  return NextResponse.json({ type: 'questions', data: [] })
             }
             const dbTopics = db[subjectKey]
-            const foundTopic = dbTopics.find((d: any) => d.topic === topic)
-            const questions = foundTopic ? foundTopic.questions : []
+            const foundTopic = dbTopics.find((d: any) => d.topic_key === topic || d.topic === topic)
+            let questions = foundTopic ? foundTopic.questions : []
+            
+            // Filter questions by grade using their passport_id (TİK)
+            const targetGradePrefix = grade.toString().padStart(2, '0') + "-";
+            questions = questions.filter((q: any) => q.passport_id && q.passport_id.startsWith(targetGradePrefix));
+
             return NextResponse.json({ type: 'questions', data: questions })
         }
 

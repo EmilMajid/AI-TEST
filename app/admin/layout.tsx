@@ -43,10 +43,24 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                         </Button>
                     </Link>
 
+                    <Link href="/admin/curriculum">
+                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
+                            <BookOpen className="h-4 w-4 mr-2" />
+                            Tədris Proqramı (Analitika)
+                        </Button>
+                    </Link>
+
                     <Link href="/admin/test-bank">
                         <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
                             <Database className="h-4 w-4 mr-2" />
                             Test Bankı
+                        </Button>
+                    </Link>
+
+                    <Link href="/admin/access-control">
+                        <Button variant="ghost" className="w-full justify-start text-blue-400 hover:text-blue-300 hover:bg-slate-800">
+                            <Settings className="h-4 w-4 mr-2" />
+                            İcazə İdarəetməsi
                         </Button>
                     </Link>
 

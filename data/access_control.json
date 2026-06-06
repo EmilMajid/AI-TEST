@@ -1,0 +1,92 @@
+{
+  "globalSettings": [
+    {
+      "id": "activityTab",
+      "name": "Son Aktivliklər Tabı",
+      "isFree": true,
+      "desc": "Şagirdin etdiyi son testlərin siyahısı"
+    },
+    {
+      "id": "progressTab",
+      "name": "İnkişaf Tərəqqisi Tabı",
+      "isFree": true,
+      "desc": "Aylıq tərəqqi və irəliləyiş qrafiki"
+    },
+    {
+      "id": "comparisonTab",
+      "name": "Məktəb/Bölgə Müqayisəsi Tabı",
+      "isFree": false,
+      "desc": "Şagirdin ölkə/məktəb ilə fənn müqayisəsi"
+    },
+    {
+      "id": "subjectsTab",
+      "name": "Fənlər Üzrə Statistika Tabı",
+      "isFree": false,
+      "desc": "Hər fənn üzrə orta ballar və qrafiklər"
+    },
+    {
+      "id": "overviewTab",
+      "name": "Ümumi Göstəricilər Tabı",
+      "isFree": false,
+      "desc": "Güclü/Zəif tərəflər və ümumi qrafik"
+    },
+    {
+      "id": "basicStats",
+      "name": "İlkin Təhlil (Descriptive Stats)",
+      "isFree": false,
+      "desc": "Tələbənin ümumi balı, doğrusu və s."
+    },
+    {
+      "id": "itemAnalysis",
+      "name": "Sual Analizi (Item Analysis)",
+      "isFree": true,
+      "desc": "Çətinlik dərəcəsi və distractor analizi"
+    },
+    {
+      "id": "behaviorAnalysis",
+      "name": "Davranış Analizi (Behavior)",
+      "isFree": false,
+      "desc": "Suala sərf olunan vaxt və drop-out rateləri"
+    },
+    {
+      "id": "clusterAnalysis",
+      "name": "Seqmentasiya (AI Profiling)",
+      "isFree": false,
+      "desc": "Tələbənin öyrənmə profilinin vizual təyini"
+    },
+    {
+      "id": "bloomAnalysis",
+      "name": "Bloom Taksonomiyası",
+      "isFree": true,
+      "desc": "Koqnitiv səviyyə üzrə bacarıqların xəritəsi"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Aysel Məmmədova (Valideyn)",
+      "email": "aysel.valideyn@gmail.com",
+      "hasVip": false,
+      "customOverrides": []
+    },
+    {
+      "id": 2,
+      "name": "Rəşad Əliyev (Valideyn)",
+      "email": "aliyev.r@mail.ru",
+      "hasVip": true,
+      "customOverrides": [
+        "itemAnalysis"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Nigar Həsənova (Valideyn)",
+      "email": "nhasanova@edu.az",
+      "hasVip": false,
+      "customOverrides": [
+        "bloomAnalysis",
+        "behaviorAnalysis"
+      ]
+    }
+  ]
+}

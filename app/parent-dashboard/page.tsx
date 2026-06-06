@@ -29,6 +29,7 @@ import {
   Mail,
   LayoutDashboard,
   Globe,
+  Lock,
 } from "lucide-react"
 import Link from "next/link"
 import { MessagesTab } from "@/components/messages-tab"
@@ -37,6 +38,7 @@ import { useTheme } from "@/hooks/use-theme"
 import { useToast } from "@/hooks/use-toast"
 import { ProfileAvatar } from "@/components/profile-avatar"
 import { logout, getRoleLabel } from "@/lib/profile-utils"
+import AnalyticsViewer from "@/components/parent/AnalyticsViewer"
 import {
   Dialog,
   DialogContent,
@@ -177,7 +179,8 @@ export default function ParentDashboard() {
   const [isLoading, setIsLoading] = useState(false)
   const [isAddingStudent, setIsAddingStudent] = useState(false)
   const [isAddStudentOpen, setIsAddStudentOpen] = useState(false)
-
+  const [accessRules, setAccessRules] = useState({ isPremium: false, customOverrides: [] as string[] })
+  const [globalPermissions, setGlobalPermissions] = useState<any>({})
 
   const themeClasses = getThemeClasses()
 
@@ -191,10 +194,58 @@ export default function ParentDashboard() {
       }
       setUserData(parsed)
       loadLinkedStudents(parsed.id)
+      
+      // Fetch access control rules based on user email
+      fetch(`/api/admin/access-control?t=${Date.now()}`, { cache: 'no-store' })
+        .then(res => res.json())
+        .then(data => {
+          if (data) {
+            if (data.globalSettings) {
+              const perms: any = {}
+              data.globalSettings.forEach((setting: any) => {
+                perms[setting.id] = setting.isFree
+              })
+              setGlobalPermissions(perms)
+            }
+            if (data.users) {
+              const userRule = data.users.find((u: any) => u.email === parsed.email)
+              if (userRule) {
+                setAccessRules({ isPremium: userRule.hasVip, customOverrides: userRule.customOverrides || [] })
+              }
+            }
+          }
+        })
+        .catch(console.error)
     } else {
       router.push("/login")
     }
   }, [router])
+
+  const canAccessTab = (tabId: string) => {
+    // If it's a completely new user who just logged in and DB isn't synced, fallback to free
+    if (Object.keys(globalPermissions).length === 0) return true;
+    if (accessRules.isPremium) return true;
+    if (accessRules.customOverrides.includes(tabId)) return true;
+    if (globalPermissions[tabId] === true) return true;
+    return false;
+  }
+
+  const renderTabOverlay = (title: string, description: string) => (
+    <Card className="relative overflow-hidden border-amber-200 bg-amber-50/50">
+      <div className="absolute inset-0 backdrop-blur-[2px] bg-white/40 z-10 flex flex-col items-center justify-center p-6 text-center">
+        <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4">
+          <Lock className="w-8 h-8" />
+        </div>
+        <h3 className="text-xl font-bold text-slate-800 mb-2">Premium Xüsusiyyət: {title}</h3>
+        <p className="text-slate-600 max-w-md mb-6">{description}</p>
+        <Button className="bg-amber-500 hover:bg-amber-600 text-white gap-2">
+           Premium Hesaba Keçid Et
+        </Button>
+      </div>
+      <CardContent className="opacity-30 h-[400px] flex items-center justify-center">
+      </CardContent>
+    </Card>
+  )
 
   const loadLinkedStudents = async (parentId: number) => {
     try {
@@ -741,18 +792,25 @@ export default function ParentDashboard() {
 
                   {/* Tabs */}
                   <Tabs defaultValue="overview" className="space-y-6">
-                    <TabsList className="grid w-full grid-cols-5">
+                    <TabsList className="grid w-full grid-cols-6">
                       <TabsTrigger value="overview">Ümumi</TabsTrigger>
                       <TabsTrigger value="subjects">Fənlər</TabsTrigger>
                       <TabsTrigger value="comparison">Müqayisə</TabsTrigger>
                       <TabsTrigger value="progress">Tərəqqi</TabsTrigger>
                       <TabsTrigger value="activity">Aktivlik</TabsTrigger>
+                      <TabsTrigger value="advanced" className="bg-gradient-to-r from-amber-100 to-orange-100 text-amber-800 border border-amber-200">
+                        ✨ Premium Analitika
+                      </TabsTrigger>
                     </TabsList>
 
                     {/* Overview Tab */}
                     <TabsContent value="overview" className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        {/* Strong Areas */}
+                      {!canAccessTab('overviewTab') ? (
+                        renderTabOverlay("Ümumi Göstəricilər", "Övladınızın güclü və zəif tərəflərini, həmçinin performans trendini görmək üçün premium hesaba keçid edin.")
+                      ) : (
+                        <>
+                        <div className="grid md:grid-cols-2 gap-6">
+                          {/* Strong Areas */}
                         <Card>
                           <CardHeader>
                             <CardTitle className="flex items-center text-green-600">
@@ -839,14 +897,20 @@ export default function ParentDashboard() {
                           )}
                         </CardContent>
                       </Card>
+                      </>
+                      )}
                     </TabsContent>
 
                     {/* Subjects Tab */}
                     <TabsContent value="subjects" className="space-y-6">
-                      <Card>
-                        <CardHeader>
-                          <CardTitle>Fənn üzrə Statistika</CardTitle>
-                        </CardHeader>
+                      {!canAccessTab('subjectsTab') ? (
+                        renderTabOverlay("Fənlər Üzrə Statistika", "Hər bir fənn üzrə orta balları və test sayı qrafiklərini görmək üçün premium hesaba keçid edin.")
+                      ) : (
+                      <>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Fənn üzrə Statistika</CardTitle>
+                          </CardHeader>
                         <CardContent>
                           {studentStats.subjectBreakdown.length === 0 ? (
                             <p className="text-sm text-gray-600 text-center py-8">Məlumat yoxdur</p>
@@ -891,10 +955,15 @@ export default function ParentDashboard() {
                           </ResponsiveContainer>
                         </CardContent>
                       </Card>
+                      </>
+                      )}
                     </TabsContent>
 
                     {/* Comparison Tab */}
                     <TabsContent value="comparison" className="space-y-6">
+                      {!canAccessTab('comparisonTab') ? (
+                        renderTabOverlay("Məktəb və Ölkə Müqayisəsi", "Övladınızın nəticələrinin məktəb, bölgə və ölkə üzrə orta göstəricilərlə müqayisəsini görmək üçün premium hesaba keçid edin.")
+                      ) : (
                       <Card>
                         <CardHeader>
                           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -1068,8 +1137,12 @@ export default function ParentDashboard() {
                           )}
                         </CardContent>
                       </Card>
+                      )}
                     </TabsContent>
                     <TabsContent value="progress" className="space-y-6">
+                      {!canAccessTab('progressTab') ? (
+                        renderTabOverlay("İnkişaf Tərəqqisi", "Aylıq tərəqqi və irəliləyiş qrafikini izləmək üçün premium hesaba keçid edin.")
+                      ) : (
                       <Card>
                         <CardHeader>
                           <CardTitle>İrəliləyiş Təhlili</CardTitle>
@@ -1132,10 +1205,14 @@ export default function ParentDashboard() {
                           </div>
                         </CardContent>
                       </Card>
+                      )}
                     </TabsContent>
 
                     {/* Activity Tab */}
                     <TabsContent value="activity" className="space-y-6">
+                      {!canAccessTab('activityTab') ? (
+                        renderTabOverlay("Son Aktivliklər", "Şagirdin etdiyi son testlərin siyahısı və detallarını görmək üçün premium hesaba keçid edin.")
+                      ) : (
                       <Card>
                         <CardHeader>
                           <CardTitle className="flex items-center">
@@ -1176,6 +1253,29 @@ export default function ParentDashboard() {
                               ))}
                             </div>
                           )}
+                        </CardContent>
+                      </Card>
+                      )}
+                    </TabsContent>
+
+                    {/* Advanced Analytics Tab */}
+                    <TabsContent value="advanced" className="space-y-6">
+                      <Card className="bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200 shadow-sm">
+                        <CardHeader>
+                          <CardTitle className="text-amber-800 flex items-center gap-2">
+                            ✨ Qabaqcıl Pedaqoji və Süni İntellekt Analitikası
+                          </CardTitle>
+                          <CardDescription className="text-amber-700/80">
+                            Bu bölmədəki xüsusi hesabatlar rəhbərlik (Admin) tərəfindən idarə olunur.
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <AnalyticsViewer 
+                            topic={studentStats.recentTests && studentStats.recentTests.length > 0 ? studentStats.recentTests[0].topic : "Ümumi Riyaziyyat"} 
+                            grade={selectedStudentData?.studentClass || "7"} 
+                            isPremiumUser={accessRules.isPremium}
+                            customOverrides={accessRules.customOverrides}
+                          />
                         </CardContent>
                       </Card>
                     </TabsContent>

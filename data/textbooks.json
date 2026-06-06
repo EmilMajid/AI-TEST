@@ -1,4 +1,389 @@
 {
+  "1": [
+    {
+      "id": "azerbaycan-dili-1-h1",
+      "title": "Azərbaycan dili 1 (hissə 1)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "413",
+      "topics": "Bölmə 1. AİLƏ VƏ MƏKTƏB\nMƏNİM AİLƏM\nMƏKTƏB BAZARLIĞI\nBABANIN HƏDİYYƏSİ\nRAMİN VƏ DOSTLARI\nÜmumiləşdirici təkrar\nBölmə 2. TƏHLÜKƏDƏN QORUNAQ\nDİQQƏT! TƏHLÜKƏ!\nYANĞIN\nYOLDA TƏHLÜKƏ\nEVDƏ TƏHLÜKƏ\nXİLASEDİCİLƏR\nÜmumiləşdirici təkrar\nBölmə 3. SAĞLAM HƏYAT\nGÜN REJİMİ\nİDMAN\nGİGİYENA QAYDALARI\nSAĞLAM QİDA\nÜmumiləşdirici təkrar\nBölmə 4. TƏBİƏTİN SİRLƏRİ\nGÖYQURŞAĞI\nİLBİZ\nGÖBƏLƏK\nBOZQULAQ\nÜmumiləşdirici təkrar"
+    },
+    {
+      "id": "azerbaycan-dili-1-h2",
+      "title": "Azərbaycan dili 1 (hissə 2)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "414",
+      "topics": "Bölmə 1. NAĞILLAR ALƏMİNDƏ\nNAĞILÇILAR\nXƏYAL DÜNYASI\nBİLƏNDƏRİN MACƏRALARI\nHEYVANLAR HAQQINDA NAĞILLAR\nÜmumiləşdirici təkrar\nBölmə 2. VƏTƏNİM AZƏRBAYCAN\nVƏTƏN NƏDİR?\nVƏTƏNİMİZİ TANIYAQ\nVƏTƏNİMİZİ SEVƏK\nÇAĞIRIR VƏTƏN!\nÜmumiləşdirici təkrar\nBölmə 3. YAXŞI NƏDİR, PİS NƏDİR\nANA MƏHƏBBƏTİ\nQARAGÖZÜN MACƏRASI\nMƏRHƏMƏT\nDOSTLUQ\nÜmumiləşdirici təkrar\nBölmə 4. DÜNYANI KƏŞF EDİRƏM\nKEÇMİŞƏ SƏYAHƏT\nÇÖRƏK\nCİZGİ FİLMLƏRİ\nKOSMOS\nÜmumiləşdirici təkrar"
+    },
+    {
+      "id": "fransiz-dili-esas-1",
+      "title": "Fransız dili 1 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "825",
+      "topics": "Tanışlıq\nSaylar\nGöyqurşağı (rənglər)\nAilə\nEvim\nMənim məktəbim\nGünlər və aylar"
+    },
+    {
+      "id": "informatika-1",
+      "title": "İnformatika 1",
+      "subject": "İnformatika",
+      "type": "ederslik_html",
+      "e_derslik_id": "417",
+      "topics": "Əşyaların təsviri və müqayisəsi\nƏlamətlər, formalar, müqayisə\nHadisələr və hərəkətlər ardıcıllığı\nİnformasiya: növləri, ötürülməsi və istifadəsi\nKompüterin əsas hissələri\nSiçan və klaviatura ilə iş\nRəsm çəkmə və yazı yazma"
+    },
+    {
+      "id": "rus-dili-esas-1",
+      "title": "Rus dili 1 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "826",
+      "topics": "Məktəb həyatı\nAilə və ev\nRənglər və rəqəmlər\nHeyvanlar aləmi\nTəqvimm (fəsillər və günlər)\nBayramlar"
+    },
+    {
+      "id": "riyaziyyat-1-h1",
+      "title": "Riyaziyyat 1 (hissə 1)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "419",
+      "topics": "Əşyanın əlaməti: yeri, rəngi, forması, ölçüsü\nƏdədlər (10-a qədər): Sayma, sıra sayları\nƏdədlərin müqayisəsi: Böyük, kiçik, bərabər\nToplama (10-a qədər): Ədəd üçlüyü, ədəd oxu"
+    },
+    {
+      "id": "riyaziyyat-1-h2",
+      "title": "Riyaziyyat 1 (hissə 2)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "420",
+      "topics": "Həndəsi fiqurlar: müstəvi və fəza fiqurları\nToplama və Çıxma (20-yə qədər)\nƏdədlər (100-ə qədər) və Pullar\nÖlçmə: Uzunluq, kütlə, tutum, zaman\nMəlumatın toplanması: Piktioqramlar"
+    },
+    {
+      "id": "musiqi-1",
+      "title": "Musiqi 1",
+      "subject": "Musiqi",
+      "type": "ederslik_html",
+      "e_derslik_id": "827",
+      "topics": "Musiqi aləmi: marş, rəqs və mahnı\nMelodiya: Musiqi əlifbası, xalq rəqsləri\nRitm: Zərb alətləri, ritmik vurğular\nMusiqi sədaları: Zil və bəm səslər"
+    },
+    {
+      "id": "alman-dili-esas-1",
+      "title": "Alman dili 1 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "896",
+      "topics": "Salamlaşma, Şəxsiyyət\nRəqəmlər, Rənglər\nHəftənin günləri, Bədən üzvləri\nAilə, Məktəb ləvazimatları, Emosiyalar"
+    },
+    {
+      "id": "texnologiya-1",
+      "title": "Texnologiya 1",
+      "subject": "Texnologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "495",
+      "topics": "Məişət mədəniyyəti: Herbari, otaq bitkiləri\nPlastilinlə yapma: ilbiz, panda, balıq\nAplikasiya və Mozaika: Kağız və təbii materiallar\nKağızla iş: Origami, gəmi, kirpi\nKonstruksiyaetmə: nəqliyyat modelləri"
+    },
+    {
+      "id": "hayat-bilgisi-1",
+      "title": "Həyat bilgisi 1",
+      "subject": "Həyat bilgisi",
+      "type": "ederslik_html",
+      "e_derslik_id": "762",
+      "topics": "Mən kiməm: Məktəbim, ailəm, ölkəm\nSağlamlıq: Bədən hissələri, gigiyena\nİnsanlar və əşyalar: Dillər və dinlər, materiallar\nƏtraf mühit: fəsillər, canlı və cansız aləm\nEhtiyatlı davranaq: nəqliyyat, təhlükəsizlik"
+    },
+    {
+      "id": "tesviri-incesenet-1",
+      "title": "Təsviri İncəsənət 1",
+      "subject": "Təsviri İncəsənət",
+      "type": "ederslik_html",
+      "e_derslik_id": "565",
+      "topics": "Ətrafa nəzər salaq: Təbiətin gözəlliyi, xətlər\nTəbiət və incəsənət: Payız naxışları, rənglər\nİnsan və məkan: Evimiz, bizim küçə\nƏyləncə və Müasirlik: Bayram geyimləri, oyuncaqlar"
+    },
+    {
+      "id": "ingilis-dili-esas-1",
+      "title": "İngilis dili 1 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "source_url": "https://trims.edu.az/noduploads/book/quot-ingilis-dili-quot-happy-campers-asas-xarici-dil-fanni-uzra-1-ci-sinif-ucun-darslik.pdf",
+      "topics": "Greetings and Numbers\nFeelings and School Supplies\nColours and Clothes\nBody Parts, Family and Pets\nAnimals and Review"
+    }
+  ],
+  "2": [
+    {
+      "id": "azerbaycan-dili-2-h1",
+      "title": "Azərbaycan dili 2 (hissə 1)",
+      "subject": "Azərbaycan dili",
+      "type": "pdf",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-dili-quot-tadris-dili-fanni-uzra-2-ci-sinif-ucun-darslik-1-ci-hissa-1738044016-583.pdf"
+    },
+    {
+      "id": "azerbaycan-dili-2-h2",
+      "title": "Azərbaycan dili 2 (hissə 2)",
+      "subject": "Azərbaycan dili",
+      "type": "pdf",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-dili-quot-tadris-dili-fanni-uzra-2-ci-sinif-ucun-darslik-2-ci-hissa.pdf"
+    },
+    {
+      "id": "riyaziyyat-2-h1",
+      "title": "Riyaziyyat 2 (hissə 1)",
+      "subject": "Riyaziyyat",
+      "type": "pdf",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-2-ci-sinif-ucun-darslik-1-ci-hissa.pdf"
+    },
+    {
+      "id": "riyaziyyat-2-h2",
+      "title": "Riyaziyyat 2 (hissə 2)",
+      "subject": "Riyaziyyat",
+      "type": "pdf",
+      "source_url": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-2-ci-sinif-ucun-darslik-2-ci-hissa.pdf"
+    },
+    {
+      "id": "ingilis-dili-2",
+      "title": "İngilis dili 2",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "517"
+    },
+    {
+      "id": "informatika-2",
+      "title": "İnformatika 2",
+      "subject": "İnformatika",
+      "type": "ederslik_html",
+      "e_derslik_id": "520"
+    },
+    {
+      "id": "tesviri-incesenet-2",
+      "title": "Təsviri İncəsənət 2",
+      "subject": "Təsviri İncəsənət",
+      "type": "ederslik_html",
+      "e_derslik_id": "529"
+    },
+    {
+      "id": "texnologiya-2",
+      "title": "Texnologiya 2",
+      "subject": "Texnologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "531"
+    },
+    {
+      "id": "hayat-bilgisi-2",
+      "title": "Həyat bilgisi 2",
+      "subject": "Həyat bilgisi",
+      "type": "ederslik_html",
+      "e_derslik_id": "829"
+    },
+    {
+      "id": "musiqi-2",
+      "title": "Musiqi 2",
+      "subject": "Musiqi",
+      "type": "ederslik_html",
+      "e_derslik_id": "576"
+    },
+    {
+      "id": "alman-dili-esas-2",
+      "title": "Alman dili 2 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "897"
+    },
+    {
+      "id": "fransiz-dili-esas-2",
+      "title": "Fransız dili 2 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "898"
+    },
+    {
+      "id": "rus-dili-esas-2",
+      "title": "Rus dili 2 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "899"
+    }
+  ],
+  "3": [
+    {
+      "id": "azerbaycan-dili-3-h1",
+      "title": "Azərbaycan dili 3 (hissə 1)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "670"
+    },
+    {
+      "id": "azerbaycan-dili-3-h2",
+      "title": "Azərbaycan dili 3 (hissə 2)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "671"
+    },
+    {
+      "id": "hayat-bilgisi-3",
+      "title": "Həyat bilgisi 3",
+      "subject": "Həyat bilgisi",
+      "type": "ederslik_html",
+      "e_derslik_id": "900"
+    },
+    {
+      "id": "informatika-3",
+      "title": "İnformatika 3",
+      "subject": "İnformatika",
+      "type": "ederslik_html",
+      "e_derslik_id": "676"
+    },
+    {
+      "id": "musiqi-3",
+      "title": "Musiqi 3",
+      "subject": "Musiqi",
+      "type": "ederslik_html",
+      "e_derslik_id": "678"
+    },
+    {
+      "id": "riyaziyyat-3-h1",
+      "title": "Riyaziyyat 3 (hissə 1)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "680"
+    },
+    {
+      "id": "riyaziyyat-3-h2",
+      "title": "Riyaziyyat 3 (hissə 2)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "681"
+    },
+    {
+      "id": "texnologiya-3",
+      "title": "Texnologiya 3",
+      "subject": "Texnologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "686"
+    },
+    {
+      "id": "tesviri-incesenet-3",
+      "title": "Təsviri İncəsənət 3",
+      "subject": "Təsviri İncəsənət",
+      "type": "ederslik_html",
+      "e_derslik_id": "688"
+    },
+    {
+      "id": "ingilis-dili-3",
+      "title": "İngilis dili 3",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "673"
+    },
+    {
+      "id": "alman-dili-esas-3",
+      "title": "Alman dili 3 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "668"
+    },
+    {
+      "id": "fransiz-dili-esas-3",
+      "title": "Fransız dili 3 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "672"
+    },
+    {
+      "id": "rus-dili-esas-3",
+      "title": "Rus dili 3 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "684"
+    }
+  ],
+  "4": [
+    {
+      "id": "azerbaycan-dili-4-h1",
+      "title": "Azərbaycan dili 4 (hissə 1)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "764"
+    },
+    {
+      "id": "azerbaycan-dili-4-h2",
+      "title": "Azərbaycan dili 4 (hissə 2)",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "765"
+    },
+    {
+      "id": "informatika-4",
+      "title": "İnformatika 4",
+      "subject": "İnformatika",
+      "type": "ederslik_html",
+      "e_derslik_id": "360"
+    },
+    {
+      "id": "texnologiya-4",
+      "title": "Texnologiya 4",
+      "subject": "Texnologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "358"
+    },
+    {
+      "id": "rus-dili-esas-4",
+      "title": "Rus dili 4 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ederslik_html",
+      "e_derslik_id": "778"
+    },
+    {
+      "id": "riyaziyyat-4-h1",
+      "title": "Riyaziyyat 4 (hissə 1)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "774"
+    },
+    {
+      "id": "riyaziyyat-4-h2",
+      "title": "Riyaziyyat 4 (hissə 2)",
+      "subject": "Riyaziyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "775"
+    },
+    {
+      "id": "musiqi-4",
+      "title": "Musiqi 4",
+      "subject": "Musiqi",
+      "type": "ederslik_html",
+      "e_derslik_id": "772"
+    },
+    {
+      "id": "hayat-bilgisi-4",
+      "title": "Həyat bilgisi 4",
+      "subject": "Həyat bilgisi",
+      "type": "ederslik_html",
+      "e_derslik_id": "769"
+    },
+    {
+      "id": "ingilis-dili-4",
+      "title": "İngilis dili 4",
+      "subject": "Xarici dil",
+      "type": "ocr",
+      "e_derslik_id": "768"
+    },
+    {
+      "id": "alman-dili-esas-4",
+      "title": "Alman dili 4 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ocr",
+      "e_derslik_id": "766"
+    },
+    {
+      "id": "fransiz-dili-esas-4",
+      "title": "Fransız dili 4 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "ocr",
+      "e_derslik_id": "771"
+    },
+    {
+      "id": "tesviri-incesenet-4",
+      "title": "Təsviri İncəsənət 4",
+      "subject": "Təsviri İncəsənət",
+      "type": "pdf",
+      "e_derslik_id": "pdf_trims"
+    }
+  ],
   "5": [
     {
       "id": "informatika-5",
@@ -6,7 +391,8 @@
       "subject": "İnformatika",
       "type": "html",
       "path": "/textbooks/5/informatika/OEBPS/cover.xhtml",
-      "contentPath": "public/textbooks/5/informatika"
+      "contentPath": "public/textbooks/5/informatika",
+      "topics": "Cild\nDərsliklə necə işləməli?\n1. İNFORMASİYA\n1.1. İnformasiya nədir\n1.2. İnformasiyanın kodlaşdırılması\n1.3. İnformasiya modeli\n1.4. İnformasiyanı ölçmək olarmı?\nÜmumiləşdirici sual və tapşırıqlar\n2. KOMPÜTER\n2.1. Fərdi kompüterlər\n2.2. Kompüter necə işləyir\n2.3. İş masası\n2.4. Menyu\n2.5. Fayllar və qovluqlar\n2.6. Pəncərə\nÜmumiləşdirici sual və tapşırıqlar\n3. TƏTBİQİ PROQRAMLAR\n3.1. Kompüterdə şəkil çəkirəm\n3.2. Şəklin fraqmenti ilə iş\n3.3. Fraqmentin əyilməsi və döndərilməsi\n3.4. Mətn redaktoru\n3.5. Şəkilli mətnlər\n3.6. Mətn redaktorunda şəkli necə çəkmək olar\nÜmumiləşdirici sual və tapşırıqlar\n4. ALQORİTM VƏ PROQRAM\n4.1. Alqoritm\n4.2. Alqoritmi necə təqdim etmək olar\n4.3. Əyləncəli məsələlər\n4.4. Proqram nədir\n4.5. Bağa işə başlayır\n4.6. Bağa sadə fiqurlar çəkir\nÜmumiləşdirici sual və tapşırıqlar\n5. İNTERNET\n5.1. İnformasiya resursları\n5.2. İnternet\n5.3. Dünya hörümçək toru\n5.4. İnternetdə informasiyanın axtarışı\nÜmumiləşdirici sual və tapşırıqlar\nCild\n1. İNFORMASİYA\n2. KOMPÜTER\n3. TƏTBİQİ PROQRAMLAR\n4. ALQORİTM VƏ PROQRAM\n5. İNTERNET\nCild"
     },
     {
       "id": "azerbaycan-dili-5-h1",
@@ -63,7 +449,8 @@
       "subject": "Ədəbiyyat",
       "type": "html",
       "path": "/textbooks/5/edebiyyat/OEBPS/cover.xhtml",
-      "contentPath": "public/textbooks/5/edebiyyat"
+      "contentPath": "public/textbooks/5/edebiyyat",
+      "topics": "Cild\nDərsliklə necə işləməli?\nBədii ədəbiyyat söz sənətidir\n1. ŞİFAHİ XALQ ƏDƏBİYYATI İNCİLƏRİ\nAna maral (əfsanə)\nXalq öz vətənini necə tapdı (Şimali Amerika əfsanəsi)\nYetim İbrahimin nağılı\nÜç qardaş (özbək nağılı)\n2. YURD SEVGİSİ, ANA MƏHƏBBƏTİ\nƏhməd Cavad. Azərbaycan! Azərbaycan!\nƏli Tudə. Yaşayanlar görəcəkdir\nHüseyn Arif. Analar\n3. MƏNƏVİ DƏYƏRLƏR, HƏMİŞƏYAŞAR HİKMƏTLƏR\nƏnvər Əlibəyli. İlan və Qurbağa\nCek London. Kiş haqqında hekayət\n4. MÜHARİBƏ VƏ İNSAN HAQQI\nXəlil Rza Ulutürk. Oğul həsrəti\nMaqsud İbrahimbəyov. Püstə ağacı\nElçin Hüseynbəyli. Firuzə qaşlı xəncər\n5. UŞAQ DÜNYASI, UŞAQ TALEYİ\nƏhməd Cəmil. Can nənə, bir nağıl de\nMark Tven. Fərasətli oğlan\n6. ƏMƏYƏ MƏHƏBBƏT, ZƏHMƏTƏ ÇAĞIRIŞ\nNizami Gəncəvi. Kərpickəsən kişinin dastanı\nSüleyman Rəhimov. Qara torpaq və sarı qızıl\n7. TƏBİƏTİN GÖZƏLLİYİ, TƏBİƏTƏ QAYĞI\nAbdulla Şaiq. Köç\nSəməd Vurğun. Çinarın şikayəti\nFikrət Qoca. Şuşa\nLayihələr\nİfadəli oxuda istifadə edilən şərti işarələr\nLüğət\nDərslikdəki bəzi terminlərin izahı\nOxumağı məsləhət görürük\nCild\nGiriş\n1. ŞİFAHİ XALQ ƏDƏBİYYATI İNCİLƏRİ\n2. YURD SEVGİSİ, ANA MƏHƏBBƏTİ\n3. MƏNƏVİ DƏYƏRLƏR, HƏMİŞƏYAŞAR HİKMƏTLƏR\n4. MÜHARİBƏ VƏ İNSAN HAQQI\n5. UŞAQ DÜNYASI, UŞAQ TALEYİ\n6. ƏMƏYƏ MƏHƏBBƏT, ZƏHMƏTƏ ÇAĞIRIŞ\n7. TƏBİƏTİN GÖZƏLLİYİ, TƏBİƏTƏ QAYĞI\nLayihələr\nCild"
     },
     {
       "id": "tebiet-5-h1",
@@ -140,7 +527,8 @@
       "type": "ederslik_html",
       "path": "/textbooks/5/hayat-bilgisi-5/hayat-bilgisi-5.pdf",
       "contentPath": "public/textbooks/5/hayat-bilgisi-5",
-      "e_derslik_id": "451"
+      "e_derslik_id": "451",
+      "topics": "Cəmiyyət - bu bizik\nMövzu 1. Hər şey ünsiyyətdən başlayır\nMövzu 2. Ailə kiçik cəmiyyətdir\nMövzu 3. Mən dəbir qrupdayam\nMövzu 4. Xalqlar\nMövzu 5. Dövlət və dövlətçilik\nMövzu 6. Dövlətim mənə xidmət edir\nMövzu 7. Hüquqlarımız qorunur\nMövzu 8. Biz im tələbatlarımız\nƏtraf mühit və sağlamlıq\nMövzu 9. Sağla m həyat tərzi\nMövzu 10. Təhlükəsiz kompüter\nMövzu 11. Sağla mlığımızı qoruyaq\nMövzu 12. Yol nişanları nə üçündür?\nMövzu 13. Yol hərəkəti qaydalarına əməl edək\nTəbiəti gəzək və tanıyaq\nMövzu 14. Təbiətdəki cisim və maddələr\nMövzu 15. Mühit amilləri və təbiət hadisələri\nMövzu 16. Təbiətin qəzəbi\nMövzu 17. Günəş sistemində baş verən hadisələr\nMövzu 18. Ekoloj i mühitin canlılara təsiri\nMövzu 19. İ nsan və təbiət\nMövzu 20. Təbiətə zərər vurmayaq!\nMövzu 21. Təbiətə borcumuz\nDin və mənəviyyat\nMövzu 22. İ nsanın gözəlliyi onun əxlaq və davranışındadır\nMövzu 23. Dini dözümlülük\nMövzu 24. Səmavi və qeyri-səmavi dinlər\nMövzu 25. İ nanc sistemində oxşarlıq və fərqlər\nİstifadə edilmiş ədəbiyyat"
     },
     {
       "id": "tesviri-incesenet-5",
@@ -159,7 +547,8 @@
       "type": "ederslik_html",
       "path": "/textbooks/5/alman-dili-5-asas/alman-asas-5.pdf",
       "contentPath": "public/textbooks/5/alman-dili-5-asas",
-      "e_derslik_id": "851"
+      "e_derslik_id": "851",
+      "topics": "Lektion 1. Kennenlernen\nStunde 1. Ich heiße Murad.\nStunde 2. Das ist ein Kind.\nStunde 3. Mein Freunde? kommt aus Japan.\nStunde 4. Spielt das Mädchen Tennis?\nStunde 5. Wiederholung\nLektion 2. Hey, Leute!\nStunde 1. Seine Oma ist Ärztin.\nStunde 2. Unsere Klasse ist super!\nStunde 3. Kannst du Deutsch   sprechen?\nStunde 4. Am Vormittag oder am Nachmittag?\nStunde 5. Wiederholung\nLektion 3. Im Zimmer\nStunde 1. Was ist im Zimmer?\nStunde 2. Wie ist der Schrank?\nStunde 3. Das ist Paulas Zimmer.\nStunde 4. Um 17:00 Uhr spielen wir Fußball.\nStunde 5. Wiederholung\nProjektarbeit: Wir und die Wochentage\nDas kannst du jetzt!\nLektion 4. Produkte\nStunde 1. Ich mag Wasser.\nStunde 2. Isst du gern Banane?\nStunde 3. Wie viel ist 2 plus 3?\nStunde 4. Wie viel kostet  ein Kilo Tomaten?\nStunde 5. Wiederholung\nLektion 5. Modewelt\nStunde 1. Die Schuhe sind cool!\nStunde 2. Ich trage einen  Rock.\nStunde 3. Ich möchte eine Bluse kaufen.\nStunde 4. Wir sind im Zirkus.\nStunde 5. Wiederholung\nLektion 6. Gestern oder heute?\nStunde 1. Gestern war ich im Kino.\nStunde 2. Was hattest du noch?\nStunde 3. Seine Haare sind blond.\nStunde 4. Hast du Zeit?\nStunde 5. Wiederholung\nProjektarbeit: Was wissen wir über unsere Freunde?\nDas kannst du jetzt!\nWortliste"
     },
     {
       "id": "alman-dili-2-5",
@@ -168,7 +557,8 @@
       "type": "ederslik_html",
       "path": "/textbooks/5/alman-dili-5/alman-5.pdf",
       "contentPath": "public/textbooks/5/alman-dili-5",
-      "e_derslik_id": "852"
+      "e_derslik_id": "852",
+      "topics": "Lektion 1. Wie bitte?\nStunde 1. Wie schreibt man das?\nStunde 2. Hallo, ich bin Hesen.\nStunde 3. Das ist ein Buch.\nStunde 4. Wiederholung\nLektion 2. Meine Familie\nStunde 1. Wer sind die Personen?\nStunde 2. Was macht sie gern?\nStunde 3. Ist er im Park?\nStunde 4. Wiederholung\nLektion 3. Meine Schulsachen\nStunde 1. Ich habe einen Bleistift.\nStunde 2. Wie ist der Ball?\nStunde 3. Was möchtest du machen?\nStunde 4. Wiederholung\nDas kannst du jetzt!\nLektion 4. Meine Kleider\nStunde 1. Mein Kleid ist schön.\nStunde 2. Was brauchst du?\nStunde 3. Wie findest du den Rock?\nStunde 4. Wiederholung\nLektion 5. Lebensmittel\nStunde 1. Isst du gern Fleisch?\nStunde 2. Ich mag lieber Wasser.\nStunde 3. Wie viel kostet ein Kilo Tomaten?\nStunde 4. Wiederholung\nLektion 6. Wann ist das?\nStunde 1. Wie spät ist es?\nStunde 2. Wann beginnt die Schule?\nStunde 3. Wann hast du Ferien?\nStunde 4. Wiederholung\nProjektarbeit: Was mögen unsere Freunde?\nDas kannst du jetzt!\nTraining: Lesen\nTraining: Schreiben\nTraining: Hören\nTraining: Sprechen\nGrammatik mit Tabellen\nLernwortschatz"
     },
     {
       "id": "fransiz-dili-5",
@@ -187,7 +577,8 @@
       "type": "ederslik_html",
       "path": "/textbooks/5/fransiz-dili-5-ikinci/fransiz-2-5.pdf",
       "contentPath": "public/textbooks/5/fransiz-dili-5-ikinci",
-      "e_derslik_id": "854"
+      "e_derslik_id": "854",
+      "topics": "Étape 1. Faisons connaissance!\nLeçon 1. Moi, c&#039;est...\nLeçon 2. Salut ! Ça va?\nLeçon 3. Qu&#039;est-ce que c&#039;est?\nLeçon 4. Tu as quel âge?\nJe révise\nÉtape 2. J&#039;aime l&#039;école!\nLeçon 1. Comment est ta salle de classe?\nLeçon 2. Qu&#039;est-ce qu&#039;il y a dans ton sac à dos?\nLeçon 3. Ma classe de français\nLeçon 4. À la cantine : hum, c&#039;est bon!\nJe révise\nÉtape 3. J&#039;habite ici!\nLeçon 1. Mon pays, c&#039;est I&#039;Azerbaïdjan!\nLeçon 2. Tu habites où?\nLeçon 3. Ma famille et moi\nLeçon 4. Chez moi\nJe révise\nÉtape 4. Mes préférences\nLeçon 1. Je fais du sport!\nLeçon 2. En hiver, je porte...\nLeçon 3. Joyeux anniversaire!\nLeçon 4. Bonnes vacances!\nJe révise\nMa lecture\nMes actes de parole\nMon dico visuel\nMes extra exercices à pratiquer"
     },
     {
       "id": "rus-dili-5",
@@ -206,7 +597,8 @@
       "type": "ederslik_html",
       "path": "/textbooks/5/rus-dili-2-5/rus-2-5.pdf",
       "contentPath": "public/textbooks/5/rus-dili-2-5",
-      "e_derslik_id": "856"
+      "e_derslik_id": "856",
+      "topics": "Разде́л 1. Нача́ло путеше́ствия в но́вый мир\n1. Приве́тствие и проща́ние\n2. Дава́йте познако́мимся\n3. На́ша семья́\n4. Все профе́ссии важны́\n5. Ци́фры и чи́сла в на́шей жи́зни\nОбобща́ющие зада́ния\nРазде́л 2. Вот он - я\n6. В ми́ре зна́ний\n7. На́ше здоро́вье в на́ших рука́х\n8. Наряди́те себя́\n9. Вы́берите о́бувь\nОбобща́ющие зада́ния\nРазде́л 3. Окружа́ющая нас приро́да\n10. Улыбни́тесь ра́дуге\n11. Когда́ э́то быва́ет?\n12. Лесны́е жи́тели\n13. Дома́шние живо́тные\n14. На́ши перна́тые друзья́\nОбобща́ющие зада́ния\nРазде́л 4. Э́то вку́сно и поле́зно\n15. Где найти́ витами́ны?\n16. Что растёт в огоро́де?\n17. В суперма́ркете\n18. Где чи́стые кастрю́ли у на́шей маму́ли?\nОбобща́ющие зада́ния\nРазде́л 5. Копи́лка тради́ций\n19. Пра́здник мам и ба́бушек\n20. Пра́здник Новру́з\n21. Наро́дные и́гры\n22. На́ше гостеприи́мство\n23. Ичеришехе́р\nОбобща́ющие зада́ния\nРазде́л 6. Мир, в кото́ром я живу́\n24. Азербайджа́н - мой край родно́й\n25. Столи́ца Азербайджа́на\n26. Береги́те приро́ду\n27. Гла́вный го́род Росси́и\n28. Традицио́нный ру́сский сувени́р\nОбобща́ющие зада́ния\nСка́зки: «Ку́рочка Ря́ба», «Ре́пка»\nСлова́рь - Lüğət"
     }
   ],
   "6": [
@@ -452,225 +844,6 @@
       "contentPath": "public/textbooks/6/ingilis-dili-2",
       "topics": "LESSONS\n1. School Subjects Are we Ready for Grade 6?\n 2. What do they Look like? \n3. My Favourite Sport \n4. What I Do\n 5. These are my Friends!\n6. Seasons and Clothes\n 7. Celebrations Around the World\n8. Free Time Activities \n9. My Family \n10. In the Street \n11. An Open-air Lesson \n12. Jobs \n13. My Birthday Party  \n4. Healthy Life\n15. Shopping \n16. My Favourite Recipe\n 17. Planning a Day Out \n18. At the Restaurant \n19. What’s the matter?\n 20. Transport\n 21. Save the Earth \n22. A Visit to Shusha\nPair Work Activities\nTests\nGrammar Bank\nWordlist",
       "chunks": 0
-    }
-  ],
-  "8": [
-    {
-      "id": "informatika-8",
-      "title": "İnformatika 8",
-      "subject": "İnformatika",
-      "type": "ederslik_html",
-      "e_derslik_id": "797",
-      "topics": "1. İNFORMASİYA\n1. İnformasiyanın kodlaşdırılması\n2. 2-lik, 8-lik və 16-lıq say sistemləri\n3. Bir say sistemindən başqasına keçid\n4. İnformasiyanın ölçülməsi\n2. MULTİMEDİA\n5. Multimedia qurğuları\n6. Elektron təqdimatda animasiya\n7. Təqdimatda səs və video\n3. PROQRAMLAŞDIRMA\n8. Proqram necə hazırlanır\n9. Python dilində ilk proqram\n10. Proqramda kəmiyyətlər\n11. Şərt operatoru\n12. Proqramda dövr\n13. Sayğaclı dövrlər\n4. KOMPÜTER\n14. İş masasının nizamlanması\n15. İnformasiya modelinin ağac forması\n16. Faylların axtarışı\n5. TƏTBİQİ PROQRAMLAR\n18. Üçölçülü qrafika\n19. Tillər və üzlər\n20. Üçölçülü modellərin qurulması\n21. Mətn redaktorunun obyektləri\n22. Elektron cədvəl\n23. Düsturlarla iş\n6. İNFORMASİYA CƏMİYYƏTİ VƏ İNTERNET\n24. Cəmiyyətin informasiyalaşdırılması\n25. Kompüter şəbəkələri\n26. İnternet xidmətləri"
-    },
-    {
-      "id": "azerbaycan-dili-8",
-      "title": "Azərbaycan dili 8",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "784",
-      "topics": "I BÖLMƏ. BİLİK XƏZİNƏDİR\n1. Tətildən sonra\n2. Qori seminariyasında Azərbaycan şöbəsi necə açıldı\n3. Yaxşılıq itmir\n4. Ana dili\n5. Mədinə xanım Qiyasbəyli\n6. Mücrü\n7. Şuşanın körpə qartalı\nII BÖLMƏ. TARİXİN DAŞ YADDAŞI\n1. Mətn\n2. Nə gözəl səslənir Şuşalı vətən\n3. Muğan\n4. Gülüstan\n5. Zivər bəy Əhmədbəyov\nIII BÖLMƏ. MİLLİ-MƏNƏVİ DƏYƏRLƏRİMİZ\n1. İbrət dərsi\n2. Duyğular adası\n3. Zəhər\n4. Qaranquşların ömrü 6 aydır\n5. Həmrəyliyimiz əbədidir\n6. Sədaqət\n7. Tariximizin şanlı səhifəsi\n8. Qədim türklərdə tərbiyə\nIV BÖLMƏ. ŞƏXSİYYƏTLƏR\n1. Azərbaycan teatrı\n2. Hüseynqulu Sarabskinin xatirələri\n3. İlk aktrisamız kimdir?\n4. Evrika\n5. Oqtay Eloğlu\nV BÖLMƏ. MƏTBUAT: DÜNƏN VƏ BU GÜN\n1. Günün hadisələri\n2. Molla Nəsrədddinə gedən yol\n3. İlk redaktor\nVI BÖLMƏ. SƏNƏT DÜNYASINA SƏYAHƏT\n1. Hacı Zeynalabdin Şirvani\n2. Mahmud Kaşğarlı\n3. Qurban Səidin gizli qalmış ömrü\n4. Fərhəng Hüseynov"
-    },
-    {
-      "id": "edebiyyat-8",
-      "title": "Ədəbiyyat 8",
-      "subject": "Ədəbiyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "793",
-      "topics": "QƏDİM DÖVR AZƏRBAYCAN ƏDƏBİYYATI\nKazan bəyin oğlu Uruz bəyin dustaq olduğu boy\nİNTİBAH DÖVRÜ AZƏRBAYCAN ƏDƏBİYYATI\nXaqani Şirvani. Gənclərə nəsihət\nNizami Gəncəvi. Sultan Səncər və qarı\nORTA ƏSRLƏR AZƏRBAYCAN ƏDƏBİYYATI\nİmadədin Nəsimi. Ağrımaz\nŞah İsmayıl Xətayi. Bahariyyə\nMəhəmməd Füzuli. Söz\nERKƏN YENİ DÖVR AZƏRBAYCAN ƏDƏBİYYATI\nKoroğlu ilə Bolu bəy\nMolla Pənah Vaqif. Hayıf ki, yoxdur\nMAARİFÇİ REALİZM\nQasım bəy Zakir. Durnalar\nAşıq Ələsgər. Dağlar\nTƏNQİDİ REALİZM VƏ ROMANTİZM\nCəlil Məmmədquluzadə. Qurbanəli bəy\nMirzə Ələkbər Sabir. Əkinçi\nƏbdürrəhim bəy Haqverdiyev. Bomba\nMəhəmməd Hadi. Türkün nəğməsi\nHüseyn Cavid. Ana"
-    },
-    {
-      "id": "azerbaycan-tarixi-8",
-      "title": "Azərbaycan tarixi 8",
-      "subject": "Azərbaycan tarixi",
-      "type": "ederslik_html",
-      "e_derslik_id": "801",
-      "topics": "1. AZƏRBAYCAN XVI ƏSRİN İKİNCİ YARISI - XVII ƏSRDƏ\n1. Azərbaycan ərazilərinin Osmanlılar tərəfindən işğalı\n2. Şah I Abbasın islahatları\n3. Cəlalilər hərəkatı\n4. XVI əsrin ikinci yarısı - XVII əsrdə sosial-iqtisadi həyat\n5. Azərbaycan beynəlxalq ticarət əlaqələrində\n6. XVII əsrdə Azərbaycan mədəniyyəti\n2. AZƏRBAYCAN XVIII ƏSRİN BİRİNCİ YARISINDA\n7. XVIII əsrin əvvəllərində iqtisadi və siyasi vəziyyət\n8. Rusiyanın Xəzər dənizi hövzəsinə yürüşə hazırlaşması\n9. Azərbaycan torpaqlarının iki imperiya tərəfindən bölüşdürülməsi\n10. Azərbaycan torpaqlarının azad edilməsi\n11. Əfşar imperiyasının yaranması\n3. AZƏRBAYCAN XVIII ƏSRİN İKİNCİ YARISINDA\n15. Azərbaycanda ilk müstəqil xanlıq\n16. Quba xanlığı\n17. Qarabağ xanlığı\n18. Qərbi Azərbaycan xanlıqları\n19. Bakı, Lənkəran və Dərbənd xanlıqları\n4. AZƏRBAYCAN XIX ƏSRİN ƏVVƏLLƏRİNDƏ\n27. Rusiyanın Azərbaycan torpaqlarının işğalına başlaması\n28. Gəncə xanlığının işğalı\n29. Qarabağ, Şəki xanlıqlarının işğalı\n30. Gülüstan müqaviləsi\n31. Naxçıvan və İrəvan xanlıqlarının işğalı\n32. Türkmənçay müqaviləsi"
-    },
-    {
-      "id": "umumi-tarix-8",
-      "title": "Ümumi tarix 8",
-      "subject": "Ümumi tarix",
-      "type": "ederslik_html",
-      "e_derslik_id": "791",
-      "topics": "Şərq ölkələri XVII-XVIII yüzilliklərdə\n1. Qızılbaş dövlətləri\n2. Böyük Moğol dövləti\n3. Çin\n4. Osmanlı imperiyası\n5. Volqaboyu türk xalqları\n6. Qafqaz\n7. Mədəniyyət\nAvropa və Amerika XVII-XVIII yüzilliklərdə\n8. İngiltərə\n9. Şimali Amerika\n10. Fransa\n11. Rusiya\n12. Mədəniyyət"
-    },
-    {
-      "id": "riyaziyyat-8",
-      "title": "Riyaziyyat 8",
-      "subject": "Riyaziyyat",
-      "type": "pdf",
-      "path": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
-      "topics": "1. Kvadrat kök. Həqiqi ədədlər\n2. Pifaqor teoremi\n3. Kvadrat tənliklər\n4. Dördbucaqlılar\n5. Rasional ifadələr\n6. Fiqurların sahəsi\n7. Rasional tənliklər\n8. Fiqurların oxşarlığı\n9. Bərabərsizliklər\n10. Triqonometrik nisbətlər. Koordinatlar üsulu\n11. Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
-    },
-    {
-      "id": "fizika-8-h1",
-      "title": "Fizika 8 (hissə 1)",
-      "subject": "Fizika",
-      "type": "ederslik_html",
-      "e_derslik_id": "931",
-      "topics": "Bölmə 1. Qüvvə\n1.1 Qüvvə və onun növləri\n1.2 Nyutonun birinci qanunu\n1.3 Nyutonun ikinci qanunu\n1.4 Nyutonun üçüncü qanunu\n1.5 Elastiklik qüvvəsi\n1.6 Sürtünmə qüvvəsi\n1.7 Qüvvə momenti\nBölmə 2. İş və enerji\n2.1 Mexaniki iş\n2.2 Güc\n2.3 Potensial və kinetik enerji\nBölmə 3. Təzyiq\n3.1 Bərk cisimlərin təzyiqi\n3.2 Maye və qazların təzyiqi\n3.3 Arximed qüvvəsi"
-    },
-    {
-      "id": "fizika-8-h2",
-      "title": "Fizika 8 (hissə 2)",
-      "subject": "Fizika",
-      "type": "ederslik_html",
-      "e_derslik_id": "932",
-      "topics": "Bölmə 4. Dalğalar\n4.1 Mexaniki dalğalar\n4.2 Səs dalğası\n4.3 Elektromaqnit dalğaları\nBölmə 5. Molekulların istilik hərəkəti\n5.1 Temperatur\n5.2 Cisimlərin istidən genişlənməsi\n5.3 Daxili enerji\n5.4 İstilikvermənin növləri\nBölmə 6. İstilik hadisələrinde enerjinin saxlanması\n6.1 İstilik miqdarı\n6.2 Maddənin aqreqat halının dəyişməsi\n6.3 İstilik mühərriki\n6.4 Daxiliyanma mühərriki\n6.5 Reaktiv mühərrik"
-    },
-    {
-      "id": "kimya-8-h1",
-      "title": "Kimya 8 (hissə 1)",
-      "subject": "Kimya",
-      "type": "ederslik_html",
-      "e_derslik_id": "935",
-      "topics": "Bölmə 1. Atomun quruluşu və dövri cədvəl\n1.1 Atomun elektron örtüyü\n1.2 Müasir dövri cədvəl\n1.3 Elementlərin xassələrinin dövriliyi\nBölmə 2. Kimyəvi rabitə\n2.1 İon rabitəsi\n2.2 Kovalent rabitə\n2.3 Metal rabitəsi\n2.4 Kristal qəfəsin tipləri\nBölmə 3. Kimyəvi reaksiyaların təsnifatı\n3.1 Kimyəvi tənliklər\n3.2 Maddə kütləsinin saxlanması qanunu\n3.3 Birləşmə, parçalanma, əvəzetmə, mübadilə reaksiyaları"
-    },
-    {
-      "id": "kimya-8-h2",
-      "title": "Kimya 8 (hissə 2)",
-      "subject": "Kimya",
-      "type": "ederslik_html",
-      "e_derslik_id": "936",
-      "topics": "Bölmə 4. Kimyəvi reaksiyaların sürəti\n4.1 Reaksiya sürətinin ölçülməsi\n4.2 Qatılığın təsiri\n4.3 Temperaturun təsiri\n4.4 Katalizatorun təsiri\nBölmə 5. Oksidləşmə və reduksiya prosesləri\n5.1 Yanma reaksiyaları\n5.2 Oksidlər\n5.3 Oksidləşmə-reduksiya reaksiyaları\nBölmə 6. Turşular və əsaslar\n6.1 Turşular\n6.2 Əsaslar\n6.3 Turşular və əsasların ümumi alınma reaksiyaları\n6.4 Duzlar\n6.5 İon tənlikləri"
-    },
-    {
-      "id": "biologiya-8-h1",
-      "title": "Biologiya 8 (hissə 1)",
-      "subject": "Biologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "927",
-      "topics": "Bölmə 1. Həyatın kimyası\n1.1 Hüceyrənin kimyəvi tərkibi. Su\n1.2 Hüceyrənin üzvi birləşmələri\n1.3 Fermentlər\n1.4 Maddələrin hüceyrə membranında daşınması\nBölmə 2. Bitki orqanizmi\n2.1 Bitki orqanizmi və qazlar mübadiləsi\n2.2 Fotosintez\n2.3 Bitki orqanizmində maddələrin daşınması\nBölmə 3. Qan dövranı sistemi\n3.1 Heyvanlarda qan dövranı\n3.2 İnsan ürəyinin quruluşu\n3.3 İnsanın qan dövranı\n3.4 Qanın tərkibi və funksiyaları\n3.5 Qanköçürmə və qan qrupları\nBölmə 4. Tənəffüs sistemi\n4.1 Heyvanlarda tənəffüs\n4.2 İnsanda tənəffüs sistemi\n4.3 Tənəffüs hərəkətləri"
-    },
-    {
-      "id": "biologiya-8-h2",
-      "title": "Biologiya 8 (hissə 2)",
-      "subject": "Biologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "928",
-      "topics": "Bölmə 5. Həzm və qidalanma\n5.1 Orqanizmdə maddələr mübadiləsi\n5.2 Həzm sisteminin quruluşu\n5.3 İnsan orqanizmində həzm prosesi\nBölmə 6. Heyvanlarda və insanda çoxalma\n6.1 Qeyri-cinsi çoxalma\n6.2 Cinsi çoxalma\n6.3 Onurğalı heyvanların həyat dövriyyəsi\n6.4 İnsanın cinsiyyət sistemi\n6.5 Mayalanma prosesi\n6.6 İnsanın yaş dövrləri\nBölmə 7. Canlı aləmin təsnifatı\n7.1 Canlı orqanizmlərin təsnifatı\n7.2 Heyvanlar aləminin təsnifatı\n7.3 Bitkilər aləminin təsnifatı\nBölmə 8. İnsan sağlamlığı və ətraf mühit\n8.1 Orqanizmin qoruyucu sistemi\n8.2 Sağlam qidalanma\n8.3 Sağlamlığa təsir edən amillər"
-    },
-    {
-      "id": "cografiya-8",
-      "title": "Coğrafiya 8",
-      "subject": "Coğrafiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "799",
-      "topics": "I. Coğrafi kəşflərdən tədqiqatlara doğru\nII. Xəritələr və onların üzərində təsvir üsulları\nIII. Yerin hərəkəti və onun coğrafi nəticələri\nIV. Yerin fəal tektonik təbəqəsi\nV. Atmosfer\nVI. Yerin su təbəqəsi\nVII. Biosfer\nVIII. Dünya ölkələrinin təsnifatı\nIX. Əhali və təsərrüfatın ərazi təşkili\nX. Ekoloji mühit və onun mühafizəsi"
-    },
-    {
-      "id": "ingilis-dili-8",
-      "title": "İngilis dili 8 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "pdf",
-      "path": "https://www.trims.edu.az/noduploads/book/quot-english-quot-ingilis-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
-      "topics": "UNIT 1. FREE TIME FUN\nUNIT 2. FOOD AROUND THE WORLD\nUNIT 3. NATURE\nUNIT 4. MANNERS AND RULES\nUNIT 5. A PLACE CALLED HOME\nUNIT 6. CHANGE-MAKERS\nIrregular Verbs List\nGrammar Bank\nExtra Practice Activities\nTracks\nWordlist\nPicture Dictionary"
-    },
-    {
-      "id": "texnologiya-8",
-      "title": "Texnologiya 8",
-      "subject": "Texnologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "371",
-      "topics": "I. MƏİŞƏT MƏDƏNİYYƏTİ\nII. AĞAC VƏ METALIN BƏDİİ EMALI TEXNOLOGİYASI\nIII. SADƏ TƏMİR İŞLƏRİ\nIV. ELEKTROTEXNİKİ İŞLƏR\nV. QİDA MƏHSULLARININ EMALI TEXNOLOGİYASI\nVI. PARÇANIN EMALI TEXNOLOGİYASI"
-    },
-    {
-      "id": "hayat-bilgisi-8",
-      "title": "Həyat bilgisi 8",
-      "subject": "Həyat bilgisi",
-      "type": "ederslik_html",
-      "e_derslik_id": "379",
-      "topics": "I BÖLMƏ. TƏBİƏTDƏKİ QANUNAUYĞUNLUQLAR\n1. Materiya - maddə və sahə\n2. Kainatda baş verən hadisələrin sirri\n3. Ekoloji tarazlıq\nII BÖLMƏ. CƏMİYYƏT VƏ DÖVLƏT\n1. Cəmiyyətin inkişafında inteqrasiyanın rolu\n2. Dövlət hakimiyyəti\n3. İnsan hüquqları\nIII BÖLMƏ. MƏNİM MƏNƏVİ DÜNYAM\n1. Münasibəti necə qururuq?\n2. İnsanlararası münasibətlər\n3. Mənim mənəvi borcum\nIV BÖLMƏ. TƏHLÜKƏSİZ VƏ SAĞLAM YAŞA\n1. Sağlam həyat - sağlam ailə\n2. Təhlükəsiz həyat\n3. Yol hərəkətinin nizamlanması"
-    },
-    {
-      "id": "tesviri-incesenet-8",
-      "title": "Təsviri incəsənət 8",
-      "subject": "Təsviri incəsənət",
-      "type": "ederslik_html",
-      "e_derslik_id": "369",
-      "topics": "1. TƏSVİRİ SƏNƏTDƏ TARİXİ HADİSƏLƏR VƏ QƏHRƏMANLIQ MÖVZUSU\n1. Təsviri sənətdə batal və tarixi janrlar\n2. Fransisko Qoyya\n3. Jak Lui David\n4. Jan Ogüst Dominik Enqr\n5. Ejen Delakrua\n2. TƏSVİRİ SƏNƏTDƏ YENİ DÖVRÜN BƏDİİ İFADƏ VASİTƏLƏRİ\n6. İmpressionizm\n7. Oskar Klod Mone\n8. Eduard Mane\n9. Ogüst Renuar\n10. Ogüst Roden\n11. Vinsent Van Qoq\n12. Pol Qogen\n13. Anri Matis\n3. AZƏRBAYCAN SƏNƏTKARLARI\n14. Böyükağa Mirzəzadə\n15. Fuad Əbdürrəhmanov\n16. Tokay Məmmədov\n17. Sadıq Dadaşov\n18. Toğrul Nərimanbəyov\n19. Eldar Mikayılzadə"
-    },
-    {
-      "id": "musiqi-8",
-      "title": "Musiqi 8",
-      "subject": "Musiqi",
-      "type": "ederslik_html",
-      "e_derslik_id": "374",
-      "topics": "I BÖLMƏ. BƏSTƏKARLARIN YARADICILIĞINDA XALQ MUSİQİSİ\nII BÖLMƏ. AZƏRBAYCAN BƏSTƏKARLARININ SİMFONİK YARADICILIĞINDA XALQ MUSİQİSİ\nIII BÖLMƏ. MUĞAMDAN OPERAYADƏK\nIV BÖLMƏ. XALQ MUSİQİSİ VƏ PROFESSİONAL MUSİQİÇİLƏR"
-    },
-    {
-      "id": "fiziki-terbiye-8",
-      "title": "Fiziki tərbiyə 8",
-      "subject": "Fiziki tərbiyə",
-      "type": "pdf",
-      "path": "/textbooks/8/fiziki-terbiye/book.pdf",
-      "contentPath": "public/textbooks/8/fiziki-terbiye",
-      "topics": "NNNƏƏƏZZZƏƏƏRRRİBBBİİİLİİİKKKLƏƏƏR\n1. “Èíôîðìàñèéà òÿìèíàòû âÿ íÿçÿðè áèëèêëÿð”. Áó áþëìÿ éåíèéåòìÿ îð-\n2. “Áàúàðûã âÿ âÿðäèøëÿð”. Áó áþëìÿäÿ èúðà òåõíèêàñûíà éèéÿëÿíìÿëè îë-\n3. “Ìöñòÿãèë ìÿøüÿëÿëÿð” áþëìÿñè ùÿð áèð øàýèðäèí ôèçèêè ùàçûðëûüûíûí\nI. İNFORMASİYA TƏMİNATI VƏ NƏZƏRİ BİLİKLƏR\n1. YENİYETMƏ ORQANİZMİNİN\ntərbiyə dərsləri, bölmələrdə məşğələlər, hərəkətlərdən məqsədli istifffadə\nMövzu üzrə suallar\n11. В.В.КККузин,С.А.Полицевский,А.Н.ГГГлейберманидр.500игри"
-    },
-    {
-      "id": "rus-dili-8",
-      "title": "Rus dili 8 (əsas xarici dil)",
-      "subject": "Rus dili",
-      "type": "pdf",
-      "path": "https://www.trims.edu.az/noduploads/book/quot-russkij-yazyk-quot-rus-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik-1693828461-829.pdf",
-      "topics": "РАЗДЕЛ 1. ЗНАНИЕ-СИЛА\nРАЗДЕЛ 2. ХОРОША РОДИНА МОЯ\nРАЗДЕЛ 3. ДОСТОЯНИЯ ЧЕЛОВЕЧЕСТВА\nРАЗДЕЛ 4. АЗЕРБАЙДЖАН - СТРАНА ОГНЕЙ, МУДРОСТИ И ГОСТЕПРИИМСТVA\nРАЗДЕЛ 5. ИСКУССТВО СЛОВА\nРАЗДЕЛ 6. ЖИЗНЬ ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ"
-    },
-    {
-      "id": "rus-dili-ikinci-8",
-      "title": "Rus dili 8 (ikinci xarici dil)",
-      "subject": "Rus dili (ikinci xarici)",
-      "type": "ederslik_html",
-      "e_derslik_id": "796",
-      "topics": "Раздел 1. Мой родной Азербайджан\nРаздел 2. Кто жить умеет по часам\nРаздел 3. Наше достояние\nРаздел 4. В союзе с природой\nРаздел 5. Кем быть?\nРаздел 6. С миру по нитке"
-    },
-    {
-      "id": "fransiz-dili-8",
-      "title": "Fransız dili 8 (əsas xarici dil)",
-      "subject": "Fransız dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "789",
-      "topics": "UNITÉ 1. ENFIN LA RENTRÉE!\nUNITÉ 2. ON S'ENTEND MIEUX!\nUNITÉ 3. AIDER LES AUTRES\nUNITÉ 4. L'AZERBAÏDJAN, PAYS AU RICHE PATRIMOINE HISTORIQUE!\nUNITÉ 5. GRANDES INVENTIONS\nUNITÉ 6. ON EST MIEUX ICI!"
-    },
-    {
-      "id": "fransiz-dili-ikinci-8",
-      "title": "Fransız dili 8 (ikinci xarici dil)",
-      "subject": "Fransız dili (ikinci xarici)",
-      "type": "ederslik_html",
-      "e_derslik_id": "790",
-      "topics": "Unité 1. Bienvenue à l'école!\nUnité 2. La lecture c'est ma passion!\nUnité 3. Terre des Feux\nUnité 4. En forme!\nUnité 5. Protégeons la mère nature!\nUnité 6. La découverte de France"
-    },
-    {
-      "id": "alman-dili-8",
-      "title": "Alman dili 8 (əsas xarici dil)",
-      "subject": "Alman dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "785",
-      "topics": "LEKTION 1. Studium und Beruf\nLEKTION 2. Klassenfahrt und Orte\nLEKTION 3. Wetterbericht\nLEKTION 4. Städte und Sehenswürdigkeiten\nLEKTION 5. Vorlieben\nLEKTION 6. Kleidung und Aussehen\nLEKTION 7. Tiere und Menschen\nLEKTION 8. Berühmte Personen"
-    },
-    {
-      "id": "alman-dili-ikinci-8",
-      "title": "Alman dili 8 (ikinci xarici dil)",
-      "subject": "Alman dili (ikinci xarici)",
-      "type": "ederslik_html",
-      "e_derslik_id": "786",
-      "topics": "LEKTION 1. Erfolgreich im neuen Schuljahr\nLEKTION 2. Die Traditionen\nLEKTION 3. Die Tourismus\nLEKTION 4. Jugend, heute!"
-    },
-    {
-      "id": "ingilis-dili-ikinci-8",
-      "title": "İngilis dili 8 (ikinci xarici dil)",
-      "subject": "İngilis dili (ikinci xarici)",
-      "type": "ederslik_html",
-      "e_derslik_id": "788",
-      "topics": "LESSON 1. SUMMER HOLIDAY\nLESSON 2. YOUNG INVENTORS\nLESSON 3. HOBBIES AROUND THE WORLD\nLESSON 4. REAL HEROES\nLESSON 5. CHOOSE TO BE KIND\nLESSON 6. TRAVEL STORIES\nLESSON 7. CELEBRATIONS\nLESSON 8. ART\nLESSON 9. HELP THE EARTH!\nLESSON 10. PEOPLE IN OUR LIFE\nLESSON 11. MODERN TECHNOLOGY\nLESSON 12. IMPORTANT SKILLS FOR TEENS"
-    },
-    {
-      "id": "ortaq-turk-tarixi-8",
-      "title": "Ortaq türk tarixi 8",
-      "subject": "Ortaq türk tarixi",
-      "type": "ederslik_html",
-      "e_derslik_id": "803",
-      "topics": "I BÖLMƏ. TÜRK DÜNYASI BƏŞƏR TARİXİ KONTEKSTİNDƏ\nII BÖLMƏ. HUN İMPERİYALARI VƏ SONRAKI TÜRK DÖVLƏTLƏRİ\nIII BÖLMƏ. TÜRK XAQANLIQLARI\nIV BÖLMƏ. İLK TÜRK-MÜSƏLMAN DÖVLƏTLƏRİ\nV BÖLMƏ. TÜRK-MONQOL DÖVLƏTLƏRİ\nVI BÖLMƏ. TÜRK DÜNYASI (XIII-XV ƏSRLƏR)\nVII BÖLMƏ. TÜRK DÜNYASININ ORTAQ MƏNƏVİ VƏ MƏDƏNİ İRSİ"
     }
   ],
   "7": [
@@ -931,6 +1104,225 @@
       "path": "/textbooks/7/rus-dili-2-7/rus-2-7.pdf",
       "contentPath": "public/textbooks/7/rus-dili-2-7",
       "topics": "1 раздел. Сно́ва о́сень, сно́ва в шко́лу!\nУро́к 1. Моя́ но́вая шко́ла\nУро́к 2. На́ша столо́вая\nУро́к 3. В шко́льной библиоте́ке\nУро́к 4. В спорти́вном за́ле\nУро́к 5. Кра́ски о́сени\n2 pаздел. Бу́дьте здорóвы!\nУро́к 6. Мой люби́мый вид спо́рта\nУро́к 7. Мой спорти́вный куми́р\nУро́к 8. Береги́те здоро́вье\nУро́к 9. У врача́\nУро́к 10. Береги́тесь - ви́рус!\n3 pаздел.Вме́сте - це́лая страна́!\nУро́к 11. Целе́бные исто́чники\nУро́к 12. Культу́рная столи́ца Азербайджа́на\nУро́к 13. Дре́вний го́род Гянджа́\nУро́к 14. Путь свобо́ды\n4 pаздел.Мой культу́рный досу́г\nУро́к 15. Я люблю́ теа́тр\nУро́к 16. В Музе́е исто́рии Азербайджа́на\nУро́к 17. Встре́тимся в бук-кафе́.\nУро́к 18. В кинотеа́тре\nУро́к 19. Незабыва́емый конце́рт\n5 раздел. Челове́к и приро́да\nУро́к 20. Е́сли бы я был де́ревом\nУро́к 21. Весе́нний лес\nУро́к 22. О мо́ре, мо́ре!\nУро́к 23. Цветы́ - улы́бка со́лнца\n6 раздел. Мы е́дем, е́дем, е́дем\nУро́к 24. То́лько в полёте живу́т самолёты\nУро́к 25. Мчи́тся п́оезд бы́стро-бы́стро!\nУро́к 26. На автовокза́ле\nУро́к 27. Бе́лый парохо́д\nУро́к 28. Тра́нспорт мо́ей мечты́"
+    }
+  ],
+  "8": [
+    {
+      "id": "informatika-8",
+      "title": "İnformatika 8",
+      "subject": "İnformatika",
+      "type": "ederslik_html",
+      "e_derslik_id": "797",
+      "topics": "1. İNFORMASİYA\n1. İnformasiyanın kodlaşdırılması\n2. 2-lik, 8-lik və 16-lıq say sistemləri\n3. Bir say sistemindən başqasına keçid\n4. İnformasiyanın ölçülməsi\n2. MULTİMEDİA\n5. Multimedia qurğuları\n6. Elektron təqdimatda animasiya\n7. Təqdimatda səs və video\n3. PROQRAMLAŞDIRMA\n8. Proqram necə hazırlanır\n9. Python dilində ilk proqram\n10. Proqramda kəmiyyətlər\n11. Şərt operatoru\n12. Proqramda dövr\n13. Sayğaclı dövrlər\n4. KOMPÜTER\n14. İş masasının nizamlanması\n15. İnformasiya modelinin ağac forması\n16. Faylların axtarışı\n5. TƏTBİQİ PROQRAMLAR\n18. Üçölçülü qrafika\n19. Tillər və üzlər\n20. Üçölçülü modellərin qurulması\n21. Mətn redaktorunun obyektləri\n22. Elektron cədvəl\n23. Düsturlarla iş\n6. İNFORMASİYA CƏMİYYƏTİ VƏ İNTERNET\n24. Cəmiyyətin informasiyalaşdırılması\n25. Kompüter şəbəkələri\n26. İnternet xidmətləri"
+    },
+    {
+      "id": "azerbaycan-dili-8",
+      "title": "Azərbaycan dili 8",
+      "subject": "Azərbaycan dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "784",
+      "topics": "I BÖLMƏ. BİLİK XƏZİNƏDİR\n1. Tətildən sonra\n2. Qori seminariyasında Azərbaycan şöbəsi necə açıldı\n3. Yaxşılıq itmir\n4. Ana dili\n5. Mədinə xanım Qiyasbəyli\n6. Mücrü\n7. Şuşanın körpə qartalı\nII BÖLMƏ. TARİXİN DAŞ YADDAŞI\n1. Mətn\n2. Nə gözəl səslənir Şuşalı vətən\n3. Muğan\n4. Gülüstan\n5. Zivər bəy Əhmədbəyov\nIII BÖLMƏ. MİLLİ-MƏNƏVİ DƏYƏRLƏRİMİZ\n1. İbrət dərsi\n2. Duyğular adası\n3. Zəhər\n4. Qaranquşların ömrü 6 aydır\n5. Həmrəyliyimiz əbədidir\n6. Sədaqət\n7. Tariximizin şanlı səhifəsi\n8. Qədim türklərdə tərbiyə\nIV BÖLMƏ. ŞƏXSİYYƏTLƏR\n1. Azərbaycan teatrı\n2. Hüseynqulu Sarabskinin xatirələri\n3. İlk aktrisamız kimdir?\n4. Evrika\n5. Oqtay Eloğlu\nV BÖLMƏ. MƏTBUAT: DÜNƏN VƏ BU GÜN\n1. Günün hadisələri\n2. Molla Nəsrədddinə gedən yol\n3. İlk redaktor\nVI BÖLMƏ. SƏNƏT DÜNYASINA SƏYAHƏT\n1. Hacı Zeynalabdin Şirvani\n2. Mahmud Kaşğarlı\n3. Qurban Səidin gizli qalmış ömrü\n4. Fərhəng Hüseynov"
+    },
+    {
+      "id": "edebiyyat-8",
+      "title": "Ədəbiyyat 8",
+      "subject": "Ədəbiyyat",
+      "type": "ederslik_html",
+      "e_derslik_id": "793",
+      "topics": "QƏDİM DÖVR AZƏRBAYCAN ƏDƏBİYYATI\nKazan bəyin oğlu Uruz bəyin dustaq olduğu boy\nİNTİBAH DÖVRÜ AZƏRBAYCAN ƏDƏBİYYATI\nXaqani Şirvani. Gənclərə nəsihət\nNizami Gəncəvi. Sultan Səncər və qarı\nORTA ƏSRLƏR AZƏRBAYCAN ƏDƏBİYYATI\nİmadədin Nəsimi. Ağrımaz\nŞah İsmayıl Xətayi. Bahariyyə\nMəhəmməd Füzuli. Söz\nERKƏN YENİ DÖVR AZƏRBAYCAN ƏDƏBİYYATI\nKoroğlu ilə Bolu bəy\nMolla Pənah Vaqif. Hayıf ki, yoxdur\nMAARİFÇİ REALİZM\nQasım bəy Zakir. Durnalar\nAşıq Ələsgər. Dağlar\nTƏNQİDİ REALİZM VƏ ROMANTİZM\nCəlil Məmmədquluzadə. Qurbanəli bəy\nMirzə Ələkbər Sabir. Əkinçi\nƏbdürrəhim bəy Haqverdiyev. Bomba\nMəhəmməd Hadi. Türkün nəğməsi\nHüseyn Cavid. Ana"
+    },
+    {
+      "id": "azerbaycan-tarixi-8",
+      "title": "Azərbaycan tarixi 8",
+      "subject": "Azərbaycan tarixi",
+      "type": "ederslik_html",
+      "e_derslik_id": "801",
+      "topics": "1. AZƏRBAYCAN XVI ƏSRİN İKİNCİ YARISI - XVII ƏSRDƏ\n1. Azərbaycan ərazilərinin Osmanlılar tərəfindən işğalı\n2. Şah I Abbasın islahatları\n3. Cəlalilər hərəkatı\n4. XVI əsrin ikinci yarısı - XVII əsrdə sosial-iqtisadi həyat\n5. Azərbaycan beynəlxalq ticarət əlaqələrində\n6. XVII əsrdə Azərbaycan mədəniyyəti\n2. AZƏRBAYCAN XVIII ƏSRİN BİRİNCİ YARISINDA\n7. XVIII əsrin əvvəllərində iqtisadi və siyasi vəziyyət\n8. Rusiyanın Xəzər dənizi hövzəsinə yürüşə hazırlaşması\n9. Azərbaycan torpaqlarının iki imperiya tərəfindən bölüşdürülməsi\n10. Azərbaycan torpaqlarının azad edilməsi\n11. Əfşar imperiyasının yaranması\n3. AZƏRBAYCAN XVIII ƏSRİN İKİNCİ YARISINDA\n15. Azərbaycanda ilk müstəqil xanlıq\n16. Quba xanlığı\n17. Qarabağ xanlığı\n18. Qərbi Azərbaycan xanlıqları\n19. Bakı, Lənkəran və Dərbənd xanlıqları\n4. AZƏRBAYCAN XIX ƏSRİN ƏVVƏLLƏRİNDƏ\n27. Rusiyanın Azərbaycan torpaqlarının işğalına başlaması\n28. Gəncə xanlığının işğalı\n29. Qarabağ, Şəki xanlıqlarının işğalı\n30. Gülüstan müqaviləsi\n31. Naxçıvan və İrəvan xanlıqlarının işğalı\n32. Türkmənçay müqaviləsi"
+    },
+    {
+      "id": "umumi-tarix-8",
+      "title": "Ümumi tarix 8",
+      "subject": "Ümumi tarix",
+      "type": "ederslik_html",
+      "e_derslik_id": "791",
+      "topics": "Şərq ölkələri XVII-XVIII yüzilliklərdə\n1. Qızılbaş dövlətləri\n2. Böyük Moğol dövləti\n3. Çin\n4. Osmanlı imperiyası\n5. Volqaboyu türk xalqları\n6. Qafqaz\n7. Mədəniyyət\nAvropa və Amerika XVII-XVIII yüzilliklərdə\n8. İngiltərə\n9. Şimali Amerika\n10. Fransa\n11. Rusiya\n12. Mədəniyyət"
+    },
+    {
+      "id": "riyaziyyat-8",
+      "title": "Riyaziyyat 8",
+      "subject": "Riyaziyyat",
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
+      "topics": "1. Kvadrat kök. Həqiqi ədədlər\n2. Pifaqor teoremi\n3. Kvadrat tənliklər\n4. Dördbucaqlılar\n5. Rasional ifadələr\n6. Fiqurların sahəsi\n7. Rasional tənliklər\n8. Fiqurların oxşarlığı\n9. Bərabərsizliklər\n10. Triqonometrik nisbətlər. Koordinatlar üsulu\n11. Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
+    },
+    {
+      "id": "fizika-8-h1",
+      "title": "Fizika 8 (hissə 1)",
+      "subject": "Fizika",
+      "type": "ederslik_html",
+      "e_derslik_id": "931",
+      "topics": "Bölmə 1. Qüvvə\n1.1 Qüvvə və onun növləri\n1.2 Nyutonun birinci qanunu\n1.3 Nyutonun ikinci qanunu\n1.4 Nyutonun üçüncü qanunu\n1.5 Elastiklik qüvvəsi\n1.6 Sürtünmə qüvvəsi\n1.7 Qüvvə momenti\nBölmə 2. İş və enerji\n2.1 Mexaniki iş\n2.2 Güc\n2.3 Potensial və kinetik enerji\nBölmə 3. Təzyiq\n3.1 Bərk cisimlərin təzyiqi\n3.2 Maye və qazların təzyiqi\n3.3 Arximed qüvvəsi"
+    },
+    {
+      "id": "fizika-8-h2",
+      "title": "Fizika 8 (hissə 2)",
+      "subject": "Fizika",
+      "type": "ederslik_html",
+      "e_derslik_id": "932",
+      "topics": "Bölmə 4. Dalğalar\n4.1 Mexaniki dalğalar\n4.2 Səs dalğası\n4.3 Elektromaqnit dalğaları\nBölmə 5. Molekulların istilik hərəkəti\n5.1 Temperatur\n5.2 Cisimlərin istidən genişlənməsi\n5.3 Daxili enerji\n5.4 İstilikvermənin növləri\nBölmə 6. İstilik hadisələrinde enerjinin saxlanması\n6.1 İstilik miqdarı\n6.2 Maddənin aqreqat halının dəyişməsi\n6.3 İstilik mühərriki\n6.4 Daxiliyanma mühərriki\n6.5 Reaktiv mühərrik"
+    },
+    {
+      "id": "kimya-8-h1",
+      "title": "Kimya 8 (hissə 1)",
+      "subject": "Kimya",
+      "type": "ederslik_html",
+      "e_derslik_id": "935",
+      "topics": "Bölmə 1. Atomun quruluşu və dövri cədvəl\n1.1 Atomun elektron örtüyü\n1.2 Müasir dövri cədvəl\n1.3 Elementlərin xassələrinin dövriliyi\nBölmə 2. Kimyəvi rabitə\n2.1 İon rabitəsi\n2.2 Kovalent rabitə\n2.3 Metal rabitəsi\n2.4 Kristal qəfəsin tipləri\nBölmə 3. Kimyəvi reaksiyaların təsnifatı\n3.1 Kimyəvi tənliklər\n3.2 Maddə kütləsinin saxlanması qanunu\n3.3 Birləşmə, parçalanma, əvəzetmə, mübadilə reaksiyaları"
+    },
+    {
+      "id": "kimya-8-h2",
+      "title": "Kimya 8 (hissə 2)",
+      "subject": "Kimya",
+      "type": "ederslik_html",
+      "e_derslik_id": "936",
+      "topics": "Bölmə 4. Kimyəvi reaksiyaların sürəti\n4.1 Reaksiya sürətinin ölçülməsi\n4.2 Qatılığın təsiri\n4.3 Temperaturun təsiri\n4.4 Katalizatorun təsiri\nBölmə 5. Oksidləşmə və reduksiya prosesləri\n5.1 Yanma reaksiyaları\n5.2 Oksidlər\n5.3 Oksidləşmə-reduksiya reaksiyaları\nBölmə 6. Turşular və əsaslar\n6.1 Turşular\n6.2 Əsaslar\n6.3 Turşular və əsasların ümumi alınma reaksiyaları\n6.4 Duzlar\n6.5 İon tənlikləri"
+    },
+    {
+      "id": "biologiya-8-h1",
+      "title": "Biologiya 8 (hissə 1)",
+      "subject": "Biologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "927",
+      "topics": "Bölmə 1. Həyatın kimyası\n1.1 Hüceyrənin kimyəvi tərkibi. Su\n1.2 Hüceyrənin üzvi birləşmələri\n1.3 Fermentlər\n1.4 Maddələrin hüceyrə membranında daşınması\nBölmə 2. Bitki orqanizmi\n2.1 Bitki orqanizmi və qazlar mübadiləsi\n2.2 Fotosintez\n2.3 Bitki orqanizmində maddələrin daşınması\nBölmə 3. Qan dövranı sistemi\n3.1 Heyvanlarda qan dövranı\n3.2 İnsan ürəyinin quruluşu\n3.3 İnsanın qan dövranı\n3.4 Qanın tərkibi və funksiyaları\n3.5 Qanköçürmə və qan qrupları\nBölmə 4. Tənəffüs sistemi\n4.1 Heyvanlarda tənəffüs\n4.2 İnsanda tənəffüs sistemi\n4.3 Tənəffüs hərəkətləri"
+    },
+    {
+      "id": "biologiya-8-h2",
+      "title": "Biologiya 8 (hissə 2)",
+      "subject": "Biologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "928",
+      "topics": "Bölmə 5. Həzm və qidalanma\n5.1 Orqanizmdə maddələr mübadiləsi\n5.2 Həzm sisteminin quruluşu\n5.3 İnsan orqanizmində həzm prosesi\nBölmə 6. Heyvanlarda və insanda çoxalma\n6.1 Qeyri-cinsi çoxalma\n6.2 Cinsi çoxalma\n6.3 Onurğalı heyvanların həyat dövriyyəsi\n6.4 İnsanın cinsiyyət sistemi\n6.5 Mayalanma prosesi\n6.6 İnsanın yaş dövrləri\nBölmə 7. Canlı aləmin təsnifatı\n7.1 Canlı orqanizmlərin təsnifatı\n7.2 Heyvanlar aləminin təsnifatı\n7.3 Bitkilər aləminin təsnifatı\nBölmə 8. İnsan sağlamlığı və ətraf mühit\n8.1 Orqanizmin qoruyucu sistemi\n8.2 Sağlam qidalanma\n8.3 Sağlamlığa təsir edən amillər"
+    },
+    {
+      "id": "cografiya-8",
+      "title": "Coğrafiya 8",
+      "subject": "Coğrafiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "799",
+      "topics": "I. Coğrafi kəşflərdən tədqiqatlara doğru\nII. Xəritələr və onların üzərində təsvir üsulları\nIII. Yerin hərəkəti və onun coğrafi nəticələri\nIV. Yerin fəal tektonik təbəqəsi\nV. Atmosfer\nVI. Yerin su təbəqəsi\nVII. Biosfer\nVIII. Dünya ölkələrinin təsnifatı\nIX. Əhali və təsərrüfatın ərazi təşkili\nX. Ekoloji mühit və onun mühafizəsi"
+    },
+    {
+      "id": "ingilis-dili-8",
+      "title": "İngilis dili 8 (əsas xarici dil)",
+      "subject": "Xarici dil",
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-english-quot-ingilis-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik.pdf",
+      "topics": "UNIT 1. FREE TIME FUN\nUNIT 2. FOOD AROUND THE WORLD\nUNIT 3. NATURE\nUNIT 4. MANNERS AND RULES\nUNIT 5. A PLACE CALLED HOME\nUNIT 6. CHANGE-MAKERS\nIrregular Verbs List\nGrammar Bank\nExtra Practice Activities\nTracks\nWordlist\nPicture Dictionary"
+    },
+    {
+      "id": "texnologiya-8",
+      "title": "Texnologiya 8",
+      "subject": "Texnologiya",
+      "type": "ederslik_html",
+      "e_derslik_id": "371",
+      "topics": "I. MƏİŞƏT MƏDƏNİYYƏTİ\nII. AĞAC VƏ METALIN BƏDİİ EMALI TEXNOLOGİYASI\nIII. SADƏ TƏMİR İŞLƏRİ\nIV. ELEKTROTEXNİKİ İŞLƏR\nV. QİDA MƏHSULLARININ EMALI TEXNOLOGİYASI\nVI. PARÇANIN EMALI TEXNOLOGİYASI"
+    },
+    {
+      "id": "hayat-bilgisi-8",
+      "title": "Həyat bilgisi 8",
+      "subject": "Həyat bilgisi",
+      "type": "ederslik_html",
+      "e_derslik_id": "379",
+      "topics": "I BÖLMƏ. TƏBİƏTDƏKİ QANUNAUYĞUNLUQLAR\n1. Materiya - maddə və sahə\n2. Kainatda baş verən hadisələrin sirri\n3. Ekoloji tarazlıq\nII BÖLMƏ. CƏMİYYƏT VƏ DÖVLƏT\n1. Cəmiyyətin inkişafında inteqrasiyanın rolu\n2. Dövlət hakimiyyəti\n3. İnsan hüquqları\nIII BÖLMƏ. MƏNİM MƏNƏVİ DÜNYAM\n1. Münasibəti necə qururuq?\n2. İnsanlararası münasibətlər\n3. Mənim mənəvi borcum\nIV BÖLMƏ. TƏHLÜKƏSİZ VƏ SAĞLAM YAŞA\n1. Sağlam həyat - sağlam ailə\n2. Təhlükəsiz həyat\n3. Yol hərəkətinin nizamlanması"
+    },
+    {
+      "id": "tesviri-incesenet-8",
+      "title": "Təsviri incəsənət 8",
+      "subject": "Təsviri incəsənət",
+      "type": "ederslik_html",
+      "e_derslik_id": "369",
+      "topics": "1. TƏSVİRİ SƏNƏTDƏ TARİXİ HADİSƏLƏR VƏ QƏHRƏMANLIQ MÖVZUSU\n1. Təsviri sənətdə batal və tarixi janrlar\n2. Fransisko Qoyya\n3. Jak Lui David\n4. Jan Ogüst Dominik Enqr\n5. Ejen Delakrua\n2. TƏSVİRİ SƏNƏTDƏ YENİ DÖVRÜN BƏDİİ İFADƏ VASİTƏLƏRİ\n6. İmpressionizm\n7. Oskar Klod Mone\n8. Eduard Mane\n9. Ogüst Renuar\n10. Ogüst Roden\n11. Vinsent Van Qoq\n12. Pol Qogen\n13. Anri Matis\n3. AZƏRBAYCAN SƏNƏTKARLARI\n14. Böyükağa Mirzəzadə\n15. Fuad Əbdürrəhmanov\n16. Tokay Məmmədov\n17. Sadıq Dadaşov\n18. Toğrul Nərimanbəyov\n19. Eldar Mikayılzadə"
+    },
+    {
+      "id": "musiqi-8",
+      "title": "Musiqi 8",
+      "subject": "Musiqi",
+      "type": "ederslik_html",
+      "e_derslik_id": "374",
+      "topics": "I BÖLMƏ. BƏSTƏKARLARIN YARADICILIĞINDA XALQ MUSİQİSİ\nII BÖLMƏ. AZƏRBAYCAN BƏSTƏKARLARININ SİMFONİK YARADICILIĞINDA XALQ MUSİQİSİ\nIII BÖLMƏ. MUĞAMDAN OPERAYADƏK\nIV BÖLMƏ. XALQ MUSİQİSİ VƏ PROFESSİONAL MUSİQİÇİLƏR"
+    },
+    {
+      "id": "fiziki-terbiye-8",
+      "title": "Fiziki tərbiyə 8",
+      "subject": "Fiziki tərbiyə",
+      "type": "pdf",
+      "path": "/textbooks/8/fiziki-terbiye/book.pdf",
+      "contentPath": "public/textbooks/8/fiziki-terbiye",
+      "topics": "NNNƏƏƏZZZƏƏƏRRRİBBBİİİLİİİKKKLƏƏƏR\n1. “Èíôîðìàñèéà òÿìèíàòû âÿ íÿçÿðè áèëèêëÿð”. Áó áþëìÿ éåíèéåòìÿ îð-\n2. “Áàúàðûã âÿ âÿðäèøëÿð”. Áó áþëìÿäÿ èúðà òåõíèêàñûíà éèéÿëÿíìÿëè îë-\n3. “Ìöñòÿãèë ìÿøüÿëÿëÿð” áþëìÿñè ùÿð áèð øàýèðäèí ôèçèêè ùàçûðëûüûíûí\nI. İNFORMASİYA TƏMİNATI VƏ NƏZƏRİ BİLİKLƏR\n1. YENİYETMƏ ORQANİZMİNİN\ntərbiyə dərsləri, bölmələrdə məşğələlər, hərəkətlərdən məqsədli istifffadə\nMövzu üzrə suallar\n11. В.В.КККузин,С.А.Полицевский,А.Н.ГГГлейберманидр.500игри"
+    },
+    {
+      "id": "rus-dili-8",
+      "title": "Rus dili 8 (əsas xarici dil)",
+      "subject": "Rus dili",
+      "type": "pdf",
+      "path": "https://www.trims.edu.az/noduploads/book/quot-russkij-yazyk-quot-rus-dili-asas-xarici-dil-fanni-uzra-8-ci-sinif-ucun-darslik-1693828461-829.pdf",
+      "topics": "РАЗДЕЛ 1. ЗНАНИЕ-СИЛА\nРАЗДЕЛ 2. ХОРОША РОДИНА МОЯ\nРАЗДЕЛ 3. ДОСТОЯНИЯ ЧЕЛОВЕЧЕСТВА\nРАЗДЕЛ 4. АЗЕРБАЙДЖАН - СТРАНА ОГНЕЙ, МУДРОСТИ И ГОСТЕПРИИМСТVA\nРАЗДЕЛ 5. ИСКУССТВО СЛОВА\nРАЗДЕЛ 6. ЖИЗНЬ ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ"
+    },
+    {
+      "id": "rus-dili-ikinci-8",
+      "title": "Rus dili 8 (ikinci xarici dil)",
+      "subject": "Rus dili (ikinci xarici)",
+      "type": "ederslik_html",
+      "e_derslik_id": "796",
+      "topics": "Раздел 1. Мой родной Азербайджан\nРаздел 2. Кто жить умеет по часам\nРаздел 3. Наше достояние\nРаздел 4. В союзе с природой\nРаздел 5. Кем быть?\nРаздел 6. С миру по нитке"
+    },
+    {
+      "id": "fransiz-dili-8",
+      "title": "Fransız dili 8 (əsas xarici dil)",
+      "subject": "Fransız dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "789",
+      "topics": "UNITÉ 1. ENFIN LA RENTRÉE!\nUNITÉ 2. ON S'ENTEND MIEUX!\nUNITÉ 3. AIDER LES AUTRES\nUNITÉ 4. L'AZERBAÏDJAN, PAYS AU RICHE PATRIMOINE HISTORIQUE!\nUNITÉ 5. GRANDES INVENTIONS\nUNITÉ 6. ON EST MIEUX ICI!"
+    },
+    {
+      "id": "fransiz-dili-ikinci-8",
+      "title": "Fransız dili 8 (ikinci xarici dil)",
+      "subject": "Fransız dili (ikinci xarici)",
+      "type": "ederslik_html",
+      "e_derslik_id": "790",
+      "topics": "Unité 1. Bienvenue à l'école!\nUnité 2. La lecture c'est ma passion!\nUnité 3. Terre des Feux\nUnité 4. En forme!\nUnité 5. Protégeons la mère nature!\nUnité 6. La découverte de France"
+    },
+    {
+      "id": "alman-dili-8",
+      "title": "Alman dili 8 (əsas xarici dil)",
+      "subject": "Alman dili",
+      "type": "ederslik_html",
+      "e_derslik_id": "785",
+      "topics": "LEKTION 1. Studium und Beruf\nLEKTION 2. Klassenfahrt und Orte\nLEKTION 3. Wetterbericht\nLEKTION 4. Städte und Sehenswürdigkeiten\nLEKTION 5. Vorlieben\nLEKTION 6. Kleidung und Aussehen\nLEKTION 7. Tiere und Menschen\nLEKTION 8. Berühmte Personen"
+    },
+    {
+      "id": "alman-dili-ikinci-8",
+      "title": "Alman dili 8 (ikinci xarici dil)",
+      "subject": "Alman dili (ikinci xarici)",
+      "type": "ederslik_html",
+      "e_derslik_id": "786",
+      "topics": "LEKTION 1. Erfolgreich im neuen Schuljahr\nLEKTION 2. Die Traditionen\nLEKTION 3. Die Tourismus\nLEKTION 4. Jugend, heute!"
+    },
+    {
+      "id": "ingilis-dili-ikinci-8",
+      "title": "İngilis dili 8 (ikinci xarici dil)",
+      "subject": "İngilis dili (ikinci xarici)",
+      "type": "ederslik_html",
+      "e_derslik_id": "788",
+      "topics": "LESSON 1. SUMMER HOLIDAY\nLESSON 2. YOUNG INVENTORS\nLESSON 3. HOBBIES AROUND THE WORLD\nLESSON 4. REAL HEROES\nLESSON 5. CHOOSE TO BE KIND\nLESSON 6. TRAVEL STORIES\nLESSON 7. CELEBRATIONS\nLESSON 8. ART\nLESSON 9. HELP THE EARTH!\nLESSON 10. PEOPLE IN OUR LIFE\nLESSON 11. MODERN TECHNOLOGY\nLESSON 12. IMPORTANT SKILLS FOR TEENS"
+    },
+    {
+      "id": "ortaq-turk-tarixi-8",
+      "title": "Ortaq türk tarixi 8",
+      "subject": "Ortaq türk tarixi",
+      "type": "ederslik_html",
+      "e_derslik_id": "803",
+      "topics": "I BÖLMƏ. TÜRK DÜNYASI BƏŞƏR TARİXİ KONTEKSTİNDƏ\nII BÖLMƏ. HUN İMPERİYALARI VƏ SONRAKI TÜRK DÖVLƏTLƏRİ\nIII BÖLMƏ. TÜRK XAQANLIQLARI\nIV BÖLMƏ. İLK TÜRK-MÜSƏLMAN DÖVLƏTLƏRİ\nV BÖLMƏ. TÜRK-MONQOL DÖVLƏTLƏRİ\nVI BÖLMƏ. TÜRK DÜNYASI (XIII-XV ƏSRLƏR)\nVII BÖLMƏ. TÜRK DÜNYASININ ORTAQ MƏNƏVİ VƏ MƏDƏNİ İRSİ"
     }
   ],
   "9": [
@@ -1367,391 +1759,6 @@
       "subject": "Xarici dil",
       "type": "ederslik_html",
       "e_derslik_id": "806"
-    }
-  ],
-  "1": [
-    {
-      "id": "azerbaycan-dili-1-h1",
-      "title": "Azərbaycan dili 1 (hissə 1)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "413",
-      "topics": "Bölmə 1. AİLƏ VƏ MƏKTƏB\nMƏNİM AİLƏM\nMƏKTƏB BAZARLIĞI\nBABANIN HƏDİYYƏSİ\nRAMİN VƏ DOSTLARI\nÜmumiləşdirici təkrar\nBölmə 2. TƏHLÜKƏDƏN QORUNAQ\nDİQQƏT! TƏHLÜKƏ!\nYANĞIN\nYOLDA TƏHLÜKƏ\nEVDƏ TƏHLÜKƏ\nXİLASEDİCİLƏR\nÜmumiləşdirici təkrar\nBölmə 3. SAĞLAM HƏYAT\nGÜN REJİMİ\nİDMAN\nGİGİYENA QAYDALARI\nSAĞLAM QİDA\nÜmumiləşdirici təkrar\nBölmə 4. TƏBİƏTİN SİRLƏRİ\nGÖYQURŞAĞI\nİLBİZ\nGÖBƏLƏK\nBOZQULAQ\nÜmumiləşdirici təkrar"
-    },
-    {
-      "id": "azerbaycan-dili-1-h2",
-      "title": "Azərbaycan dili 1 (hissə 2)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "414",
-      "topics": "Bölmə 1. NAĞILLAR ALƏMİNDƏ\nNAĞILÇILAR\nXƏYAL DÜNYASI\nBİLƏNDƏRİN MACƏRALARI\nHEYVANLAR HAQQINDA NAĞILLAR\nÜmumiləşdirici təkrar\nBölmə 2. VƏTƏNİM AZƏRBAYCAN\nVƏTƏN NƏDİR?\nVƏTƏNİMİZİ TANIYAQ\nVƏTƏNİMİZİ SEVƏK\nÇAĞIRIR VƏTƏN!\nÜmumiləşdirici təkrar\nBölmə 3. YAXŞI NƏDİR, PİS NƏDİR\nANA MƏHƏBBƏTİ\nQARAGÖZÜN MACƏRASI\nMƏRHƏMƏT\nDOSTLUQ\nÜmumiləşdirici təkrar\nBölmə 4. DÜNYANI KƏŞF EDİRƏM\nKEÇMİŞƏ SƏYAHƏT\nÇÖRƏK\nCİZGİ FİLMLƏRİ\nKOSMOS\nÜmumiləşdirici təkrar"
-    },
-    {
-      "id": "fransiz-dili-esas-1",
-      "title": "Fransız dili 1 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "825",
-      "topics": "Tanışlıq\nSaylar\nGöyqurşağı (rənglər)\nAilə\nEvim\nMənim məktəbim\nGünlər və aylar"
-    },
-    {
-      "id": "informatika-1",
-      "title": "İnformatika 1",
-      "subject": "İnformatika",
-      "type": "ederslik_html",
-      "e_derslik_id": "417",
-      "topics": "Əşyaların təsviri və müqayisəsi\nƏlamətlər, formalar, müqayisə\nHadisələr və hərəkətlər ardıcıllığı\nİnformasiya: növləri, ötürülməsi və istifadəsi\nKompüterin əsas hissələri\nSiçan və klaviatura ilə iş\nRəsm çəkmə və yazı yazma"
-    },
-    {
-      "id": "rus-dili-esas-1",
-      "title": "Rus dili 1 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "826",
-      "topics": "Məktəb həyatı\nAilə və ev\nRənglər və rəqəmlər\nHeyvanlar aləmi\nTəqvimm (fəsillər və günlər)\nBayramlar"
-    },
-    {
-      "id": "riyaziyyat-1-h1",
-      "title": "Riyaziyyat 1 (hissə 1)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "419",
-      "topics": "Əşyanın əlaməti: yeri, rəngi, forması, ölçüsü\nƏdədlər (10-a qədər): Sayma, sıra sayları\nƏdədlərin müqayisəsi: Böyük, kiçik, bərabər\nToplama (10-a qədər): Ədəd üçlüyü, ədəd oxu"
-    },
-    {
-      "id": "riyaziyyat-1-h2",
-      "title": "Riyaziyyat 1 (hissə 2)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "420",
-      "topics": "Həndəsi fiqurlar: müstəvi və fəza fiqurları\nToplama və Çıxma (20-yə qədər)\nƏdədlər (100-ə qədər) və Pullar\nÖlçmə: Uzunluq, kütlə, tutum, zaman\nMəlumatın toplanması: Piktioqramlar"
-    },
-    {
-      "id": "musiqi-1",
-      "title": "Musiqi 1",
-      "subject": "Musiqi",
-      "type": "ederslik_html",
-      "e_derslik_id": "827",
-      "topics": "Musiqi aləmi: marş, rəqs və mahnı\nMelodiya: Musiqi əlifbası, xalq rəqsləri\nRitm: Zərb alətləri, ritmik vurğular\nMusiqi sədaları: Zil və bəm səslər"
-    },
-    {
-      "id": "alman-dili-esas-1",
-      "title": "Alman dili 1 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "896",
-      "topics": "Salamlaşma, Şəxsiyyət\nRəqəmlər, Rənglər\nHəftənin günləri, Bədən üzvləri\nAilə, Məktəb ləvazimatları, Emosiyalar"
-    },
-    {
-      "id": "texnologiya-1",
-      "title": "Texnologiya 1",
-      "subject": "Texnologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "495",
-      "topics": "Məişət mədəniyyəti: Herbari, otaq bitkiləri\nPlastilinlə yapma: ilbiz, panda, balıq\nAplikasiya və Mozaika: Kağız və təbii materiallar\nKağızla iş: Origami, gəmi, kirpi\nKonstruksiyaetmə: nəqliyyat modelləri"
-    },
-    {
-      "id": "hayat-bilgisi-1",
-      "title": "Həyat bilgisi 1",
-      "subject": "Həyat bilgisi",
-      "type": "ederslik_html",
-      "e_derslik_id": "762",
-      "topics": "Mən kiməm: Məktəbim, ailəm, ölkəm\nSağlamlıq: Bədən hissələri, gigiyena\nİnsanlar və əşyalar: Dillər və dinlər, materiallar\nƏtraf mühit: fəsillər, canlı və cansız aləm\nEhtiyatlı davranaq: nəqliyyat, təhlükəsizlik"
-    },
-    {
-      "id": "tesviri-incesenet-1",
-      "title": "Təsviri İncəsənət 1",
-      "subject": "Təsviri İncəsənət",
-      "type": "ederslik_html",
-      "e_derslik_id": "565",
-      "topics": "Ətrafa nəzər salaq: Təbiətin gözəlliyi, xətlər\nTəbiət və incəsənət: Payız naxışları, rənglər\nİnsan və məkan: Evimiz, bizim küçə\nƏyləncə və Müasirlik: Bayram geyimləri, oyuncaqlar"
-    },
-    {
-      "id": "ingilis-dili-esas-1",
-      "title": "İngilis dili 1 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "pdf",
-      "source_url": "https://trims.edu.az/noduploads/book/quot-ingilis-dili-quot-happy-campers-asas-xarici-dil-fanni-uzra-1-ci-sinif-ucun-darslik.pdf",
-      "topics": "Greetings and Numbers\nFeelings and School Supplies\nColours and Clothes\nBody Parts, Family and Pets\nAnimals and Review"
-    }
-  ],
-  "2": [
-    {
-      "id": "azerbaycan-dili-2-h1",
-      "title": "Azərbaycan dili 2 (hissə 1)",
-      "subject": "Azərbaycan dili",
-      "type": "pdf",
-      "source_url": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-dili-quot-tadris-dili-fanni-uzra-2-ci-sinif-ucun-darslik-1-ci-hissa-1738044016-583.pdf"
-    },
-    {
-      "id": "azerbaycan-dili-2-h2",
-      "title": "Azərbaycan dili 2 (hissə 2)",
-      "subject": "Azərbaycan dili",
-      "type": "pdf",
-      "source_url": "https://www.trims.edu.az/noduploads/book/quot-azarbaycan-dili-quot-tadris-dili-fanni-uzra-2-ci-sinif-ucun-darslik-2-ci-hissa.pdf"
-    },
-    {
-      "id": "riyaziyyat-2-h1",
-      "title": "Riyaziyyat 2 (hissə 1)",
-      "subject": "Riyaziyyat",
-      "type": "pdf",
-      "source_url": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-2-ci-sinif-ucun-darslik-1-ci-hissa.pdf"
-    },
-    {
-      "id": "riyaziyyat-2-h2",
-      "title": "Riyaziyyat 2 (hissə 2)",
-      "subject": "Riyaziyyat",
-      "type": "pdf",
-      "source_url": "https://www.trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-2-ci-sinif-ucun-darslik-2-ci-hissa.pdf"
-    },
-    {
-      "id": "ingilis-dili-2",
-      "title": "İngilis dili 2",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "517"
-    },
-    {
-      "id": "informatika-2",
-      "title": "İnformatika 2",
-      "subject": "İnformatika",
-      "type": "ederslik_html",
-      "e_derslik_id": "520"
-    },
-    {
-      "id": "tesviri-incesenet-2",
-      "title": "Təsviri İncəsənət 2",
-      "subject": "Təsviri İncəsənət",
-      "type": "ederslik_html",
-      "e_derslik_id": "529"
-    },
-    {
-      "id": "texnologiya-2",
-      "title": "Texnologiya 2",
-      "subject": "Texnologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "531"
-    },
-    {
-      "id": "hayat-bilgisi-2",
-      "title": "Həyat bilgisi 2",
-      "subject": "Həyat bilgisi",
-      "type": "ederslik_html",
-      "e_derslik_id": "829"
-    },
-    {
-      "id": "musiqi-2",
-      "title": "Musiqi 2",
-      "subject": "Musiqi",
-      "type": "ederslik_html",
-      "e_derslik_id": "576"
-    },
-    {
-      "id": "alman-dili-esas-2",
-      "title": "Alman dili 2 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "897"
-    },
-    {
-      "id": "fransiz-dili-esas-2",
-      "title": "Fransız dili 2 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "898"
-    },
-    {
-      "id": "rus-dili-esas-2",
-      "title": "Rus dili 2 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "899"
-    }
-  ],
-  "3": [
-    {
-      "id": "azerbaycan-dili-3-h1",
-      "title": "Azərbaycan dili 3 (hissə 1)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "670"
-    },
-    {
-      "id": "azerbaycan-dili-3-h2",
-      "title": "Azərbaycan dili 3 (hissə 2)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "671"
-    },
-    {
-      "id": "hayat-bilgisi-3",
-      "title": "Həyat bilgisi 3",
-      "subject": "Həyat bilgisi",
-      "type": "ederslik_html",
-      "e_derslik_id": "900"
-    },
-    {
-      "id": "informatika-3",
-      "title": "İnformatika 3",
-      "subject": "İnformatika",
-      "type": "ederslik_html",
-      "e_derslik_id": "676"
-    },
-    {
-      "id": "musiqi-3",
-      "title": "Musiqi 3",
-      "subject": "Musiqi",
-      "type": "ederslik_html",
-      "e_derslik_id": "678"
-    },
-    {
-      "id": "riyaziyyat-3-h1",
-      "title": "Riyaziyyat 3 (hissə 1)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "680"
-    },
-    {
-      "id": "riyaziyyat-3-h2",
-      "title": "Riyaziyyat 3 (hissə 2)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "681"
-    },
-    {
-      "id": "texnologiya-3",
-      "title": "Texnologiya 3",
-      "subject": "Texnologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "686"
-    },
-    {
-      "id": "tesviri-incesenet-3",
-      "title": "Təsviri İncəsənət 3",
-      "subject": "Təsviri İncəsənət",
-      "type": "ederslik_html",
-      "e_derslik_id": "688"
-    },
-    {
-      "id": "ingilis-dili-3",
-      "title": "İngilis dili 3",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "673"
-    },
-    {
-      "id": "alman-dili-esas-3",
-      "title": "Alman dili 3 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "668"
-    },
-    {
-      "id": "fransiz-dili-esas-3",
-      "title": "Fransız dili 3 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "672"
-    },
-    {
-      "id": "rus-dili-esas-3",
-      "title": "Rus dili 3 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "684"
-    }
-  ],
-  "4": [
-    {
-      "id": "azerbaycan-dili-4-h1",
-      "title": "Azərbaycan dili 4 (hissə 1)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "764"
-    },
-    {
-      "id": "azerbaycan-dili-4-h2",
-      "title": "Azərbaycan dili 4 (hissə 2)",
-      "subject": "Azərbaycan dili",
-      "type": "ederslik_html",
-      "e_derslik_id": "765"
-    },
-    {
-      "id": "informatika-4",
-      "title": "İnformatika 4",
-      "subject": "İnformatika",
-      "type": "ederslik_html",
-      "e_derslik_id": "360"
-    },
-    {
-      "id": "texnologiya-4",
-      "title": "Texnologiya 4",
-      "subject": "Texnologiya",
-      "type": "ederslik_html",
-      "e_derslik_id": "358"
-    },
-    {
-      "id": "rus-dili-esas-4",
-      "title": "Rus dili 4 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ederslik_html",
-      "e_derslik_id": "778"
-    },
-    {
-      "id": "riyaziyyat-4-h1",
-      "title": "Riyaziyyat 4 (hissə 1)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "774"
-    },
-    {
-      "id": "riyaziyyat-4-h2",
-      "title": "Riyaziyyat 4 (hissə 2)",
-      "subject": "Riyaziyyat",
-      "type": "ederslik_html",
-      "e_derslik_id": "775"
-    },
-    {
-      "id": "musiqi-4",
-      "title": "Musiqi 4",
-      "subject": "Musiqi",
-      "type": "ederslik_html",
-      "e_derslik_id": "772"
-    },
-    {
-      "id": "hayat-bilgisi-4",
-      "title": "Həyat bilgisi 4",
-      "subject": "Həyat bilgisi",
-      "type": "ederslik_html",
-      "e_derslik_id": "769"
-    },
-    {
-      "id": "ingilis-dili-4",
-      "title": "İngilis dili 4",
-      "subject": "Xarici dil",
-      "type": "ocr",
-      "e_derslik_id": "768"
-    },
-    {
-      "id": "alman-dili-esas-4",
-      "title": "Alman dili 4 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ocr",
-      "e_derslik_id": "766"
-    },
-    {
-      "id": "fransiz-dili-esas-4",
-      "title": "Fransız dili 4 (əsas xarici dil)",
-      "subject": "Xarici dil",
-      "type": "ocr",
-      "e_derslik_id": "771"
-    },
-    {
-      "id": "tesviri-incesenet-4",
-      "title": "Təsviri İncəsənət 4",
-      "subject": "Təsviri İncəsənət",
-      "type": "pdf",
-      "e_derslik_id": "pdf_trims"
     }
   ]
 }
