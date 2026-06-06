@@ -1,257 +1,368 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table'
-import { Input } from '@/components/ui/input'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { Loader2, Search, Edit, Trash2, Check, X, AlertCircle } from 'lucide-react'
-import { toast } from 'sonner'
-import { TestBankFilters, FilterState } from '@/components/admin/test-bank-filters'
+import React, { useState, useEffect } from "react";
+import { Folder, BookOpen, Layers, List, Loader2, CheckCircle2, BarChart2, X, Lock, Unlock } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
-export default function TestBankQuestionsPage() {
-    const [questions, setQuestions] = useState<any[]>([])
-    const [loading, setLoading] = useState(true)
-    const [search, setSearch] = useState("")
-    const [difficultyFilter, setDifficultyFilter] = useState("all")
-    const [bloomFilter, setBloomFilter] = useState("all")
-    const [statusFilter, setStatusFilter] = useState("active") // active, pending, all
+// Analytics Modal Component (Demo / Mock Data)
+const AnalyticsModal = ({ isOpen, onClose, question }: any) => {
+  if (!isOpen || !question) return null;
 
-    // Test Bank Filters
-    const [filters, setFilters] = useState<FilterState>({})
-
-    async function loadQuestions() {
-        try {
-            const res = await fetch('/api/test-bank/questions')
-            const data = await res.json()
-            setQuestions(Array.isArray(data) ? data : [])
-        } catch (err) {
-            console.error(err)
-            toast.error("Sualları yükləyərkən xəta baş verdi")
-        } finally {
-            setLoading(false)
-        }
+  // Simple hash function to seed the mock data based on the question text
+  const getSeed = (str: string) => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = (hash << 5) - hash + str.charCodeAt(i);
+      hash |= 0; 
     }
+    return Math.abs(hash);
+  };
 
-    useEffect(() => {
-        loadQuestions()
-    }, [])
+  const seed = getSeed(question.question || "");
+  const seededRandom = (s: number) => {
+    const x = Math.sin(s) * 10000;
+    return x - Math.floor(x);
+  };
 
-    const handleApprove = async (id: string) => {
-        try {
-            const res = await fetch('/api/test-bank/questions', {
-                method: 'PATCH',
-                body: JSON.stringify({ id, status: 'active', isPending: false })
-            })
-            if (!res.ok) throw new Error()
-            toast.success("Sual təsdiqləndi")
-            loadQuestions()
-        } catch (e) {
-            toast.error("Xəta baş verdi")
-        }
-    }
+  // Generate consistent mock data using the seed
+  const mockDifficulty = Math.floor(seededRandom(seed) * 40) + 40; // 40-80%
+  const mockDiscrimination = (seededRandom(seed + 1) * 0.5 + 0.3).toFixed(2); // 0.3 - 0.8
+  const mockTime = Math.floor(seededRandom(seed + 2) * 30) + 15; // 15-45 sec
+  const mockDropOut = Math.floor(seededRandom(seed + 3) * 10) + 1; // 1-10%
 
-    const handleDelete = async (id: string) => {
-        if (!confirm("Sualı silmək istədiyinizə əminsiniz?")) return
-        try {
-            const res = await fetch(`/api/test-bank/questions?id=${id}`, {
-                method: 'DELETE'
-            })
-            if (!res.ok) throw new Error()
-            toast.success("Sual silindi")
-            loadQuestions()
-        } catch (e) {
-            toast.error("Xəta baş verdi")
-        }
-    }
+  return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="max-w-3xl bg-slate-900 text-white border-slate-700">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-bold flex items-center gap-2">
+            <BarChart2 className="text-blue-500" /> Sual Analitikası (Item Analysis)
+          </DialogTitle>
+        </DialogHeader>
+        
+        <div className="mt-4 space-y-6">
+          <p className="text-slate-300 bg-slate-800/50 p-4 rounded-lg italic">
+            "{question.question}"
+          </p>
 
-    const filteredQuestions = questions.filter(q => {
-        // Test Bank Filters
-        if (filters.class && q.class !== filters.class) return false
-        if (filters.subject && q.subject !== filters.subject) return false
-        // Precise topic match (if mock data supports it)
-        if (filters.topic && q.topic !== filters.topic) return false
-
-        const matchesSearch = q.question?.toLowerCase().includes(search.toLowerCase())
-        const matchesDifficulty = difficultyFilter === "all" || q.difficulty === difficultyFilter
-        const matchesBloom = bloomFilter === "all" || q.bloomLevel === bloomFilter
-
-        let matchesStatus = true
-        if (statusFilter === 'active') matchesStatus = !q.isPending
-        if (statusFilter === 'pending') matchesStatus = q.isPending
-        // if 'all', matchesStatus is true
-
-        return matchesSearch && matchesDifficulty && matchesBloom && matchesStatus
-    })
-
-    const getDifficultyBadge = (difficulty: string) => {
-        const colors: Record<string, string> = {
-            'asan': 'bg-green-600',
-            'orta': 'bg-blue-600',
-            'çətin': 'bg-orange-600',
-            'qarışıq': 'bg-purple-600'
-        }
-        return <Badge className={colors[difficulty] || 'bg-gray-600'}>{difficulty}</Badge>
-    }
-
-    return (
-        <div className="space-y-6">
-            <div className="flex justify-between items-center">
-                <h2 className="text-3xl font-bold">Sual İdarəetməsi</h2>
-                <Badge variant="outline">{filteredQuestions.length} sual</Badge>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-4 bg-slate-800 rounded-lg border border-slate-700 text-center">
+              <p className="text-sm text-slate-400 mb-1">Çətinlik İndeksi</p>
+              <p className="text-3xl font-bold text-green-400">{mockDifficulty}%</p>
+              <p className="text-xs text-slate-500 mt-1">Düzgün cavablandırma</p>
             </div>
+            <div className="p-4 bg-slate-800 rounded-lg border border-slate-700 text-center">
+              <p className="text-sm text-slate-400 mb-1">Ayıredicilik (D.I.)</p>
+              <p className="text-3xl font-bold text-blue-400">{mockDiscrimination}</p>
+              <p className="text-xs text-slate-500 mt-1">Güclü/Zəif fərqi</p>
+            </div>
+            <div className="p-4 bg-slate-800 rounded-lg border border-slate-700 text-center">
+              <p className="text-sm text-slate-400 mb-1">Ortalama Zaman</p>
+              <p className="text-3xl font-bold text-orange-400">{mockTime}s</p>
+              <p className="text-xs text-slate-500 mt-1">Həll vaxtı</p>
+            </div>
+            <div className="p-4 bg-slate-800 rounded-lg border border-slate-700 text-center">
+              <p className="text-sm text-slate-400 mb-1">Drop-out Rate</p>
+              <p className="text-3xl font-bold text-red-400">{mockDropOut}%</p>
+              <p className="text-xs text-slate-500 mt-1">Testi atıb gedənlər</p>
+            </div>
+          </div>
 
-            <TestBankFilters onFilterChange={setFilters} />
-
-            <Tabs defaultValue="active" onValueChange={setStatusFilter}>
-                <TabsList>
-                    <TabsTrigger value="active">Aktiv</TabsTrigger>
-                    <TabsTrigger value="pending" className="relative">
-                        Gözləmədə
-                        {questions.filter(q => q.isPending).length > 0 && (
-                            <span className="ml-2 flex h-2 w-2 rounded-full bg-orange-500" />
-                        )}
-                    </TabsTrigger>
-                    <TabsTrigger value="all">Bütün</TabsTrigger>
-                </TabsList>
-            </Tabs>
-
-            {/* Filters */}
-            <Card>
-                <CardContent className="p-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="relative">
-                            <Search className="absolute left-2 top-2.5 h-4 w-4 text-slate-400" />
-                            <Input
-                                placeholder="Sual axtar..."
-                                className="pl-8"
-                                value={search}
-                                onChange={(e) => setSearch(e.target.value)}
-                            />
-                        </div>
-
-                        <Select value={difficultyFilter} onValueChange={setDifficultyFilter}>
-                            <SelectTrigger>
-                                <SelectValue placeholder="Çətinlik" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="all">Hamısı</SelectItem>
-                                <SelectItem value="asan">Asan</SelectItem>
-                                <SelectItem value="orta">Orta</SelectItem>
-                                <SelectItem value="çətin">Çətin</SelectItem>
-                                <SelectItem value="qarışıq">Qarışıq</SelectItem>
-                            </SelectContent>
-                        </Select>
-
-                        <Select value={bloomFilter} onValueChange={setBloomFilter}>
-                            <SelectTrigger>
-                                <SelectValue placeholder="Bloom Səviyyəsi" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="all">Hamısı</SelectItem>
-                                <SelectItem value="xatırlama">Xatırlama</SelectItem>
-                                <SelectItem value="anlama">Anlama</SelectItem>
-                                <SelectItem value="tətbiq">Tətbiq</SelectItem>
-                                <SelectItem value="təhlil">Təhlil</SelectItem>
-                                <SelectItem value="qiymətləndirmə">Qiymətləndirmə</SelectItem>
-                                <SelectItem value="yaradıcılıq">Yaradıcılıq</SelectItem>
-                            </SelectContent>
-                        </Select>
+          <div>
+            <h4 className="text-lg font-semibold mb-3">Distractor (Çağdırıcı) Analizi</h4>
+            <div className="space-y-3">
+              {question.options?.map((opt: string, idx: number) => {
+                const letter = String.fromCharCode(65 + idx);
+                const isCorrect = question.correctAnswer === idx;
+                const pickRate = isCorrect ? mockDifficulty : Math.floor((100 - mockDifficulty) / (question.options.length - 1));
+                
+                return (
+                  <div key={idx} className="flex items-center gap-4">
+                    <span className={`w-8 h-8 rounded flex items-center justify-center font-bold ${isCorrect ? 'bg-green-500' : 'bg-slate-700'}`}>
+                      {letter}
+                    </span>
+                    <div className="flex-1 bg-slate-800 rounded-full h-4 overflow-hidden">
+                      <div 
+                        className={`h-full ${isCorrect ? 'bg-green-500' : 'bg-slate-500'}`} 
+                        style={{ width: `${pickRate}%` }}
+                      ></div>
                     </div>
-                </CardContent>
-            </Card>
+                    <span className="w-12 text-right font-medium">{pickRate}%</span>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
 
-            {/* Questions Table */}
-            <Card>
-                <CardContent className="p-0">
-                    {loading ? (
-                        <div className="flex justify-center p-8">
-                            <Loader2 className="h-8 w-8 animate-spin" />
-                        </div>
-                    ) : filteredQuestions.length === 0 ? (
-                        <div className="p-8 text-center text-slate-400">
-                            {questions.length === 0 ? "Hələ sual yoxdur" : "Heç bir sual tapılmadı"}
-                        </div>
-                    ) : (
-                        <Table>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead>Sual</TableHead>
-                                    <TableHead>Mövzu</TableHead>
-                                    <TableHead>Sinif / Fənn</TableHead>
-                                    <TableHead>Çətinlik</TableHead>
-                                    <TableHead>Status</TableHead>
-                                    <TableHead>Əməliyyatlar</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {filteredQuestions.map((q) => (
-                                    <TableRow key={q.id}>
-                                        <TableCell className="max-w-md">
-                                            <p className="truncate font-medium">{q.question}</p>
-                                            <p className="text-xs text-slate-500 mt-1">
-                                                Düzgün: {q.options[q.correctAnswer]}
-                                            </p>
-                                        </TableCell>
-                                        <TableCell className="text-sm text-slate-600">
-                                            {/* Show mapped name or key */}
-                                            {q.topicKey}
-                                        </TableCell>
-                                        <TableCell className="text-xs text-slate-500">
-                                            {q.class && `${q.class}-ci sinif`} <br />
-                                            {q.subject}
-                                        </TableCell>
-                                        <TableCell>{getDifficultyBadge(q.difficulty)}</TableCell>
-                                        <TableCell>
-                                            {q.isPending ? (
-                                                <Badge variant="outline" className="text-orange-600 border-orange-600">
-                                                    <AlertCircle className="h-3 w-3 mr-1" />
-                                                    Gözləmədə
-                                                </Badge>
-                                            ) : (
-                                                <Badge className="bg-green-600">Aktiv</Badge>
-                                            )}
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex items-center gap-2">
-                                                {q.isPending && (
-                                                    <Button
-                                                        size="sm"
-                                                        className="bg-green-600 hover:bg-green-700 h-8 w-8 p-0"
-                                                        onClick={() => handleApprove(q.id)}
-                                                        title="Təsdiqlə"
-                                                    >
-                                                        <Check className="h-4 w-4" />
-                                                    </Button>
-                                                )}
-                                                <Button
-                                                    size="sm"
-                                                    variant="ghost"
-                                                    className="h-8 w-8 p-0 text-slate-500"
-                                                >
-                                                    <Edit className="h-4 w-4" />
-                                                </Button>
-                                                <Button
-                                                    size="sm"
-                                                    variant="ghost"
-                                                    className="h-8 w-8 p-0 text-red-600 hover:text-red-700 hover:bg-red-50"
-                                                    onClick={() => handleDelete(q.id)}
-                                                    title={q.isPending ? "İmtina et" : "Sil"}
-                                                >
-                                                    {q.isPending ? <X className="h-4 w-4" /> : <Trash2 className="h-4 w-4" />}
-                                                </Button>
-                                            </div>
-                                        </TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
-                    )}
-                </CardContent>
-            </Card>
         </div>
-    )
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default function QuestionsViewerPage() {
+  const [grades, setGrades] = useState<string[]>([]);
+  const [selectedGrade, setSelectedGrade] = useState<string | null>(null);
+
+  const [subjects, setSubjects] = useState<any[]>([]);
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+
+  const [topics, setTopics] = useState<any[]>([]);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+
+  const [questions, setQuestions] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  
+  const [analyticsQuestion, setAnalyticsQuestion] = useState<any>(null);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch("/api/admin/test-bank/hierarchy")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.type === "grades") {
+          setGrades(data.data);
+        }
+        setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (selectedGrade) {
+      setLoading(true);
+      fetch(`/api/admin/test-bank/hierarchy?grade=${selectedGrade}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.type === "subjects") {
+            setSubjects(data.data);
+          }
+          setLoading(false);
+        });
+    }
+  }, [selectedGrade]);
+
+  useEffect(() => {
+    if (selectedGrade && selectedSubject) {
+      setLoading(true);
+      fetch(`/api/admin/test-bank/hierarchy?grade=${selectedGrade}&subject=${selectedSubject}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.type === "topics") {
+            setTopics(data.data);
+          }
+          setLoading(false);
+        });
+    }
+  }, [selectedGrade, selectedSubject]);
+
+  const handleTopicClick = (topicName: string) => {
+    if (selectedTopic === topicName) {
+      setSelectedTopic(null);
+      return;
+    }
+    setSelectedTopic(topicName);
+    setQuestions([]);
+    setLoading(true);
+
+    fetch(`/api/admin/test-bank/hierarchy?grade=${selectedGrade}&subject=${selectedSubject}&topic=${topicName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.type === "questions") {
+          setQuestions(data.data);
+        }
+        setLoading(false);
+      });
+  };
+
+  return (
+    <div className="p-6 font-sans">
+      <AnalyticsModal isOpen={!!analyticsQuestion} onClose={() => setAnalyticsQuestion(null)} question={analyticsQuestion} />
+      
+      <header className="mb-8 flex flex-col gap-2 border-b pb-6">
+        <h1 className="text-3xl font-bold">Sual Mərkəzi (Viewer & Analytics)</h1>
+        <p className="text-slate-500">
+          Sualları iyerarxik gəzin və hər bir sualın Element Analizini aparın.
+        </p>
+
+        {/* Breadcrumbs */}
+        <div className="flex items-center gap-3 mt-4 text-sm font-medium text-slate-600">
+          <span
+            className="cursor-pointer hover:text-blue-500 flex items-center gap-2"
+            onClick={() => {
+              setSelectedGrade(null);
+              setSelectedSubject(null);
+              setSelectedTopic(null);
+            }}
+          >
+            <Folder size={16} /> Bütün Baza
+          </span>
+          {selectedGrade && (
+            <>
+              <span>/</span>
+              <span
+                className="cursor-pointer hover:text-blue-500 flex items-center gap-2"
+                onClick={() => {
+                  setSelectedSubject(null);
+                  setSelectedTopic(null);
+                }}
+              >
+                <BookOpen size={16} /> {selectedGrade}-ci sinif
+              </span>
+            </>
+          )}
+          {selectedSubject && (
+            <>
+              <span>/</span>
+              <span className="text-blue-600 flex items-center gap-2">
+                <Layers size={16} /> {selectedSubject}
+              </span>
+            </>
+          )}
+        </div>
+      </header>
+
+      {loading && !selectedTopic && (
+        <div className="flex justify-center items-center h-40">
+          <Loader2 className="animate-spin text-blue-500" size={40} />
+        </div>
+      )}
+
+      {/* STEP 1: GRADES */}
+      {!selectedGrade && !loading && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {grades.map((grade) => (
+            <div
+              key={grade}
+              onClick={() => setSelectedGrade(grade)}
+              className="cursor-pointer rounded-xl bg-white border border-slate-200 p-6 shadow-sm transition hover:border-blue-500 hover:shadow-md"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-full bg-blue-50 text-blue-500">
+                  <Folder size={24} />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold">{grade}-ci sinif</h2>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* STEP 2: SUBJECTS */}
+      {selectedGrade && !selectedSubject && !loading && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {subjects.map((sub, idx) => (
+            <div
+              key={idx}
+              onClick={() => setSelectedSubject(sub)}
+              className="cursor-pointer rounded-xl bg-white border border-slate-200 p-5 shadow-sm transition hover:border-purple-500 hover:shadow-md flex items-center gap-4"
+            >
+              <div className="p-3 rounded-full bg-purple-50 text-purple-500">
+                <BookOpen size={24} />
+              </div>
+              <h3 className="text-lg font-bold line-clamp-1">{sub}</h3>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* STEP 3 & 4: TOPICS & QUESTIONS */}
+      {selectedGrade && selectedSubject && (
+        <div className="flex flex-col gap-3">
+          {topics.length === 0 && !loading && (
+            <div className="p-8 text-center bg-white rounded-xl border border-slate-200">
+              <p className="text-slate-500">Bu fənn üçün hələlik test bazası tapılmadı.</p>
+            </div>
+          )}
+
+          {topics.map((t, idx) => {
+            const isExpanded = selectedTopic === t.name;
+
+            return (
+              <div key={idx} className={`rounded-xl border transition-colors ${isExpanded ? "border-blue-500 bg-blue-50/10" : "border-slate-200 bg-white hover:bg-slate-50"}`}>
+                <div
+                  className="p-4 flex items-center justify-between cursor-pointer"
+                  onClick={() => handleTopicClick(t.name)}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className={`p-2 rounded-lg ${isExpanded ? "bg-blue-100 text-blue-600" : "bg-slate-100 text-slate-500"}`}>
+                      <List size={18} />
+                    </div>
+                    <h3 className="text-base font-semibold">{t.name}</h3>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="px-3 py-1 bg-slate-100 text-xs font-medium rounded-full text-slate-600 border border-slate-200">
+                      {t.questionCount} Sual
+                    </span>
+                  </div>
+                </div>
+
+                {/* Expanded Questions Area */}
+                {isExpanded && (
+                  <div className="border-t border-slate-200 p-6 bg-slate-50">
+                    {loading ? (
+                      <div className="flex items-center justify-center py-8">
+                        <Loader2 className="animate-spin text-blue-500" size={30} />
+                      </div>
+                    ) : (
+                      <div className="space-y-4">
+                        {questions.map((q, qIdx) => (
+                          <div key={q.id || qIdx} className="p-5 rounded-lg bg-white border border-slate-200 shadow-sm">
+                            <div className="flex justify-between items-start gap-4">
+                              <div className="flex gap-4 flex-1">
+                                <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-sm font-bold text-blue-700">
+                                  {qIdx + 1}
+                                </span>
+                                <div className="flex-1">
+                                  {/* Fixed: Use q.question instead of q.text */}
+                                  <p className="text-base text-slate-800 mb-4 leading-relaxed whitespace-pre-wrap font-medium">{q.question}</p>
+                                  
+                                  <div className="space-y-2 max-w-2xl">
+                                    {/* Fixed: Iterate array and convert to A, B, C, D */}
+                                    {Array.isArray(q.options) && q.options.map((optVal: string, optIdx: number) => {
+                                      const letter = String.fromCharCode(65 + optIdx);
+                                      const isCorrect = q.correctAnswer === optIdx;
+                                      return (
+                                        <div 
+                                          key={optIdx} 
+                                          className={`flex items-start gap-3 p-3 rounded-md border ${
+                                            isCorrect 
+                                              ? "bg-green-50 border-green-200 text-green-900" 
+                                              : "bg-slate-50 border-transparent text-slate-700"
+                                          }`}
+                                        >
+                                          <span className={`flex-shrink-0 w-6 h-6 rounded flex items-center justify-center text-xs font-bold ${
+                                            isCorrect ? "bg-green-500 text-white" : "bg-slate-200 text-slate-600"
+                                          }`}>
+                                            {letter}
+                                          </span>
+                                          <span className="flex-1 text-sm">{optVal}</span>
+                                          {isCorrect && <CheckCircle2 className="text-green-500" size={18} />}
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <button 
+                                onClick={() => setAnalyticsQuestion(q)}
+                                className="flex items-center gap-2 px-3 py-2 bg-slate-100 hover:bg-blue-100 hover:text-blue-600 rounded-md text-sm font-medium transition"
+                              >
+                                <BarChart2 size={16} /> Analitika
+                              </button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }

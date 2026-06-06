@@ -345,8 +345,8 @@ export default function ResultsPage() {
                       {analysis.metadata.provider === "xai" && <Zap className="h-4 w-4 text-purple-600 mr-2" />}
                       {analysis.metadata.provider === "openai" && <Brain className="h-4 w-4 text-green-600 mr-2" />}
                       <span className="text-sm font-medium">
-                        {analysis.metadata.provider === "xai" && "Grok AI tərəfindən təhlil edildi"}
-                        {analysis.metadata.provider === "openai" && "OpenAI tərəfindən təhlil edildi"}
+                        {analysis.metadata.provider === "xai" && "Süni İntellekt tərəfindən təhlil edildi"}
+                        {analysis.metadata.provider === "openai" && "Süni İntellekt tərəfindən təhlil edildi"}
                         {analysis.metadata.provider === "fallback" && "Avtomatik təhlil sistemi"}
                       </span>
                     </div>

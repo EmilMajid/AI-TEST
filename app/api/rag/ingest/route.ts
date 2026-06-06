@@ -63,8 +63,4 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-}
+// Deleted deprecated config export

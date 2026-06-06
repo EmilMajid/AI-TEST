@@ -95,4 +95,22 @@ export default function BackendStatus() {
         </div>
 
         <div>
-          <span className="font-medium">Backend URL:</span
+          <span className="font-medium">Backend URL:</span>
+          <span className="ml-2 text-sm text-gray-500 break-all">{backendUrl}</span>
+        </div>
+
+        <div>
+          <span className="font-medium">Son yoxlanış:</span>
+          <span className="ml-2 text-sm text-gray-500">{lastCheck || "Yoxlanılır..."}</span>
+        </div>
+
+        <div className="pt-2">
+          <Button variant="outline" size="sm" onClick={checkBackendStatus} disabled={status === "checking"}>
+            <RefreshCw className={`mr-2 h-4 w-4 ${status === "checking" ? "animate-spin" : ""}`} />
+            Yenilə
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
