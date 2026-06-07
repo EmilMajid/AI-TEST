@@ -1,0 +1,512 @@
+[
+  {
+    "id": 10394,
+    "category": "Riyaziyyat",
+    "question": "4205 ədədini 5-ə böldükdə qismət neçə alınır?",
+    "options": [
+      "841",
+      "8041",
+      "84",
+      "851"
+    ],
+    "correctAnswer": 0,
+    "explanation": "4205-i 5-ə böldükdə ilk olaraq 42-də 5, 8 dəfədir. Qalıq 2 qalır, yanına sıfır gəlir 20-də 5, 4 dəfədir. Sonra 5-də 5 isə 1 dəfə. Nəticə 841 alınır. Bəzən uşaqlar ortadakı sıfırı unudaraq 84 və ya yanlışlıqla 8041 yazırlar.",
+    "passport_id": "05-004-0101-B1F03-1-1-001",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 29583,
+    "category": "Riyaziyyat",
+    "question": "340 · 200 hasilini tapın.",
+    "options": [
+      "680000",
+      "6800",
+      "68000",
+      "680"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sonu sıfırlarla bitən ədədləri vurarkən sıfırları kənara qoyub 34-ü 2-yə vururuq, 68 alınır. Sonra kənara qoyduğumuz üç sıfırı (340-da bir, 200-də iki sıfır var) yanına əlavə edirik: 68000. Qaydada sıfırların sayını səhv hesablamaq yayılmış xətadır.",
+    "passport_id": "05-004-0101-B1F03-1-1-002",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 59381,
+    "category": "Riyaziyyat",
+    "question": "a · 15 = 180 tənliyindən a-nı tapın.",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məchul vuruğu tapmaq üçün hasili məlum vuruğa bölmək lazımdır. 180 ədədini 15-ə böldükdə 12 alınır. Hesablama xətası edərək və ya təxmin edərək 10 və ya 8 tapanlar olur.",
+    "passport_id": "05-004-0101-B1F03-2-1-003",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 34912,
+    "category": "Riyaziyyat",
+    "question": "56 : b = 8 tənliyindən b-ni tapın.",
+    "options": [
+      "6",
+      "9",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Məchul böləni tapmaq üçün bölünəni qismətə bölmək lazımdır. Yəni 56 : 8 = 7. Bölmə cədvəlini mükəmməl bilməyənlər bəzən 6 və ya 8 cavabını seçirlər.",
+    "passport_id": "05-004-0101-B1F03-2-1-004",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 85934,
+    "category": "Riyaziyyat",
+    "question": "147 ədədini 12-yə böldükdə qismət və qalığı tapın.",
+    "options": [
+      "qismət 12, qalıq 3",
+      "qismət 11, qalıq 5",
+      "qismət 12, qalıq 5",
+      "qismət 11, qalıq 15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "147 içərisində 12 ədədi 12 dəfə yerləşir (12 · 12 = 144). Qalıq isə 147 - 144 = 3 olur. Bəzən vurma cədvəlində səhv edərək qalığı 5 tapırlar, və ya qalığın böləndən (12) kiçik olmalı olduğunu unudub böyük qalıq qeyd edirlər.",
+    "passport_id": "05-004-0101-B1F03-2-1-005",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 48392,
+    "category": "Riyaziyyat",
+    "question": "Hansı ifadənin qiyməti ən böyükdür?",
+    "options": [
+      "15 · 4",
+      "80 : 2",
+      "12 · 6",
+      "150 : 3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İfadələri hesablasaq: 15 · 4 = 60, 80 : 2 = 40, 12 · 6 = 72, 150 : 3 = 50. Ən böyük qiymət 72-dir, yəni 12 · 6 ifadəsi ən böyükdür.",
+    "passport_id": "05-004-0101-B1F03-1-1-006",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 58392,
+    "category": "Riyaziyyat",
+    "question": "Bir yeşikdə 12 kq alma var. 8 belə yeşikdə neçə kiloqram alma var?",
+    "options": [
+      "86 kq",
+      "72 kq",
+      "96 kq",
+      "106 kq"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bir yeşikdəki almaların kütləsini yeşiklərin sayına vurmaq lazımdır: 12 · 8 = 96 kq. 12 · 8-i səhvən 86 və ya vurma xətası ilə 72 kimi hesablayanlar ola bilər.",
+    "passport_id": "05-004-0101-B1F03-3-1-007",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10482,
+    "category": "Riyaziyyat",
+    "question": "75 qələmi 5 şagird arasında bərabər böldülər. Hər şagirdə neçə qələm düşdü?",
+    "options": [
+      "12",
+      "15",
+      "13",
+      "25"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ümumi qələmlərin sayını şagirdlərin sayına bölürük: 75 : 5 = 15. 7-ni 5-ə bölüb qalıqda 2 saxlamağı unudan şagirdlər bəzən 13, bölməni səhv icra edib 25 və ya 12 tapırlar.",
+    "passport_id": "05-004-0101-B1F03-3-1-008",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 29485,
+    "category": "Riyaziyyat",
+    "question": "(120 + 40) : 8 ifadəsinin qiymətini tapın.",
+    "options": [
+      "20",
+      "55",
+      "160",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Əməllər sırasına görə əvvəlcə mötərizənin içi hesablanır: 120 + 40 = 160. Sonra isə alınan cəm 8-ə bölünür: 160 : 8 = 20. Mötərizəni nəzərə almayıb əvvəlcə 40-ı 8-ə bölənlər 55 alır.",
+    "passport_id": "05-004-0101-B1F03-2-1-009",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 48591,
+    "category": "Riyaziyyat",
+    "question": "Məchul ədədi 7-yə böldükdə qismətdə 14 alınır. Məchul ədədi tapın.",
+    "options": [
+      "2",
+      "84",
+      "108",
+      "98"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Məchul bölünəni tapmaq üçün böləni qismətə vurmaq lazımdır: 14 · 7 = 98. Məchulu tapan zaman əməli düzgün seçməyib 14-ü 7-yə bölərək 2, və ya yanlış hesablayaraq 84 tapanlar olur.",
+    "passport_id": "05-004-0101-B1F03-2-1-010",
+    "difficulty": "sadə",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 30495,
+    "category": "Riyaziyyat",
+    "question": "324 ədədini 25-ə vurduqda hasil neçə olar?",
+    "options": [
+      "8100",
+      "7100",
+      "8200",
+      "8000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "324 ədədini 25-ə vurduqda alt-alta vurma qaydasından istifadə edilir. Ya da 324 · 100 : 4 = 32400 : 4 = 8100 kimi hesablamaq daha asandır. Əldə qalanları nəzərə almamaq bəzən 8000 və ya 7100 nəticəsinə gətirib çıxarır.",
+    "passport_id": "05-004-0101-B1F03-1-2-011",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10398,
+    "category": "Riyaziyyat",
+    "question": "4050 : 18 qismətini tapın.",
+    "options": [
+      "25",
+      "225",
+      "205",
+      "215"
+    ],
+    "correctAnswer": 1,
+    "explanation": "4050-ni 18-ə böldükdə əvvəlcə 40-ın içində 18, 2 dəfə (36). 4 qalıq qalır, 5 gəlir, 45-in içində yenə 2 dəfə (36). Qalıq 9 qalır, 0 gəlir, 90-ın içində 5 dəfə. Nəticə 225. Hesablama xətası edərək 205 və ya bir rəqəm unudaraq 25 alınması distraktordur.",
+    "passport_id": "05-004-0101-B1F03-1-2-012",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 50482,
+    "category": "Riyaziyyat",
+    "question": "Bölən 14 olarsa, qalıqlı bölmədə alına biləcək ən böyük qalıq neçədir?",
+    "options": [
+      "15",
+      "14",
+      "13",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qalıqlı bölmə qaydasına görə, qalıq həmişə böləndən kiçik olmalıdır. Bölən 14-dürsə, alına biləcək ən böyük qalıq ondan bir vahid kiçik, yəni 13 olur. Çox vaxt uşaqlar bölənin özünü (14) qalıq kimi düşünürlər ki, bu yanlışdır.",
+    "passport_id": "05-004-0101-B1F03-2-2-013",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 29482,
+    "category": "Riyaziyyat",
+    "question": "Vurmanın paylama xassəsindən istifadə edərək hesablayın: 45 · 12 + 45 · 88",
+    "options": [
+      "450",
+      "5400",
+      "4050",
+      "4500"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ortaq vuruğu mötərizə xaricinə çıxarmaqla: 45 · (12 + 88) = 45 · 100 = 4500. Sıfırların sayında səhv etmək şagirdlərin 450 və ya fərqli ədəd almasına səbəb olur.",
+    "passport_id": "05-004-0101-B1F03-3-2-014",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 40938,
+    "category": "Riyaziyyat",
+    "question": "144 səhifəlik kitabı gündə 12 səhifə oxumaqla neçə günə bitirmək olar?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ümumi səhifə sayını bir gündə oxunan səhifə sayına bölmək lazımdır. 144 : 12 = 12 gün. 12 · 12 olduğunu xatırlamayanlar bölmədə xəta edib 10 və ya 14 yaza bilər.",
+    "passport_id": "05-004-0101-B1F03-3-2-015",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10489,
+    "category": "Riyaziyyat",
+    "question": "x : 15 = 24 (qalıq 8) tənliyindən x-i tapın.",
+    "options": [
+      "360",
+      "352",
+      "368",
+      "378"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qalıqlı bölmədə bölünəni tapmaq üçün qisməti bölənə vurub, üzərinə qalığı gəlmək lazımdır: 15 · 24 + 8 = 360 + 8 = 368. Bəzən uşaqlar qalığı toplamağı unudaraq 360, və ya qalığı çıxaraq 352 nəticəsini alırlar.",
+    "passport_id": "05-004-0101-B1F03-3-2-016",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 49281,
+    "category": "Riyaziyyat",
+    "question": "Bir ədədi 5-ə vurub, hasilin üzərinə 20 gəldikdə 145 alınır. Bu ədədi tapın.",
+    "options": [
+      "25",
+      "33",
+      "29",
+      "20"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Məsələni tərsinə həll edərək: Əvvəlcə 145-dən 20-ni çıxırıq, 125 alınır. Daha sonra 125-i 5-ə bölürük, 25 tapılır. 145 ilə 20-ni toplayıb bölənlər 33 alırlar.",
+    "passport_id": "05-004-0101-B1F03-2-2-017",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 38291,
+    "category": "Riyaziyyat",
+    "question": "İki ədədin hasilində vuruqlardan birini 3 dəfə, digərini isə 4 dəfə artırsaq, hasil necə dəyişər?",
+    "options": [
+      "7 dəfə artar",
+      "1 dəfə artar",
+      "12 dəfə artar",
+      "12 dəfə azalar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hasil vuruqların dəyişməsi ilə düz mütənasib dəyişir. Vuruqlar 3 və 4 dəfə artırsa, hasil bu artımların hasili qədər, yəni 3 · 4 = 12 dəfə artar. Çox zaman şagirdlər vuruqların artım dəfələrini toplayaraq \"7 dəfə artar\" distractoru ilə səhv edirlər.",
+    "passport_id": "05-004-0101-B1F03-2-2-018",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 48192,
+    "category": "Riyaziyyat",
+    "question": "64 şagirdi hərəsində 15 nəfər olmaqla avtobuslara yığmaq üçün ən azı neçə avtobus lazımdır?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "64-ü 15-ə böldükdə qismətdə 4, qalıqda 4 alınır (64 = 15 · 4 + 4). Qalan 4 şagirdin də getməsi üçün əlavə 1 avtobus da lazımdır. Beləliklə, ümumilikdə 4 + 1 = 5 avtobus tələb olunur. Sadəcə qisməti götürənlər 4 cavabını seçirlər.",
+    "passport_id": "05-004-0101-B1F03-3-2-019",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 59382,
+    "category": "Riyaziyyat",
+    "question": "İfadənin qiymətini tapın: 500 - (125 : 5) · 4",
+    "options": [
+      "300",
+      "100",
+      "400",
+      "380"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Əməllər ardıcıllığına görə ilk olaraq mötərizə içi hesablanır: 125 : 5 = 25. Sonra alınan nəticə vurulur: 25 · 4 = 100. Sonda çıxma əməli yerinə yetirilir: 500 - 100 = 400. Mötərizədən sonrakı vurma əvəzinə birbaşa çıxma edənlər 380 və ya 300 ala bilər.",
+    "passport_id": "05-004-0101-B1F03-3-2-020",
+    "difficulty": "orta",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10293,
+    "category": "Riyaziyyat",
+    "question": "İki ədədin cəmi 48-dir. Bu ədədlərdən biri digərindən 3 dəfə böyükdür. Böyük ədədi tapın.",
+    "options": [
+      "12",
+      "36",
+      "24",
+      "32"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kiçik ədədi 1 hissə (tam hissə modeli) götürsək, böyük ədəd 3 hissə olar. Cəmi 4 hissə edir. 48 : 4 = 12 (kiçik ədəd). Böyük ədədi tapmaq üçün 12 · 3 = 36 alırıq. Kiçik ədədi tapanlar 12 cavabına, və ya səhv bölmə edənlər 24 cavabına yönəlir.",
+    "passport_id": "05-004-0101-B1F03-3-3-021",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 48293,
+    "category": "Riyaziyyat",
+    "question": "1472 : 23 bölməsində alınan qismətin rəqəmləri cəmini tapın.",
+    "options": [
+      "8",
+      "12",
+      "9",
+      "10"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Əvvəlcə qisməti tapmalıyıq. 147-nin içində 23 ədədi 6 dəfədir (23 · 6 = 138). 147 - 138 = 9. Yanına 2 gətiririk: 92-nin içində 23 isə 4 dəfədir. Deməli qismət 64-dür. Rəqəmləri cəmi: 6 + 4 = 10. Qisməti səhv tapanlar üçün 8, 9, 12 distraktorları qoyulub.",
+    "passport_id": "05-004-0101-B1F03-2-3-022",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 59302,
+    "category": "Riyaziyyat",
+    "question": "12 metr uzunluğunda olan bir lenti 3 metrlik hissələrə bölmək üçün neçə dəfə kəsmək lazımdır?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "12 metrlik lenti 3 metrlik hissələrə bölərkən cəmi 12 : 3 = 4 hissə alınır. Lakin 4 hissə almaq üçün kəsimlərin sayı hissələrin sayından bir vahid az olmalıdır. Yəni 4 - 1 = 3 kəsim lazımdır. Hissə sayını birbaşa kəsim sayı kimi götürənlər 4 cavabına aldanırlar.",
+    "passport_id": "05-004-0101-B1F03-3-3-023",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 39485,
+    "category": "Riyaziyyat",
+    "question": "A ədədini 12-yə böldükdə qalıqda 7 alınır. Bu ədədi 4-ə böldükdə qalıqda neçə alınar?",
+    "options": [
+      "3",
+      "7",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A ədədi 12-yə bölündükdə qalıq 7 alınırsa, bu ədədi 12 · k + 7 kimi yaza bilərik. 12 onsuz da 4-ə tam bölünür (qalıq 0), buna görə də yalnız 7-ni 4-ə bölüb qalığı tapmaq kifayətdir: 7 : 4 = 1 (qalıq 3). Bir çox şagird birbaşa 7 olaraq qalacağını düşünür.",
+    "passport_id": "05-004-0101-B1F03-3-3-024",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 48502,
+    "category": "Riyaziyyat",
+    "question": "Sürəti 65 km/saat olan avtomobil 3 saat yolda olduqdan sonra, gedəcəyi ümumi 400 km yolun neçə kilometri qaldı?",
+    "options": [
+      "195",
+      "215",
+      "205",
+      "185"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Gedilən yolu tapmaq üçün sürət zamana vurulur: 65 · 3 = 195 km. Ümumi yoldan gedilən yolu çıxdıqda qalan yol tapılır: 400 - 195 = 205 km. Çıxma əməlində səhv edənlər 215, gedilən yolu axtaranlar isə 195 cavabını tapırlar.",
+    "passport_id": "05-004-0101-B1F03-3-3-025",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 29483,
+    "category": "Riyaziyyat",
+    "question": "Fermada inək və toyuqların birlikdə ayaqlarının sayı 64-dür. Fermada 10 inək varsa, neçə toyuq var?",
+    "options": [
+      "10",
+      "12",
+      "24",
+      "14"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İnəklərin 4 ayağı olduğu üçün 10 inəyin birlikdə 10 · 4 = 40 ayağı var. Ümumi ayaq sayından inəklərin ayaqlarını çıxırıq: 64 - 40 = 24 (toyuqların ayaqları). Toyuğun 2 ayağı olduğu üçün: 24 : 2 = 12 toyuq var. Bölməni yaddan çıxaranlar birbaşa 24 tapırlar.",
+    "passport_id": "05-004-0101-B1F03-3-3-026",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 59283,
+    "category": "Riyaziyyat",
+    "question": "Kiloqramı 15 manat olan şokoladdan 3 kq və kiloqramı 8 manat olan konfetdən 5 kq alan alıcı kassaya 100 manat verdi. Kassir ona nə qədər qalıq qaytarmalıdır?",
+    "options": [
+      "15 manat",
+      "25 manat",
+      "5 manat",
+      "85 manat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Şokolad üçün ödəniş: 15 · 3 = 45 manat. Konfet üçün ödəniş: 8 · 5 = 40 manat. Ümumi xərc: 45 + 40 = 85 manat. Alıcının alacağı qalıq: 100 - 85 = 15 manat. Bəziləri xərci hesablayıb (85) qalığı tapmağı unudur, digərləri hesablama səhvi ilə 25 manat tapır.",
+    "passport_id": "05-004-0101-B1F03-3-3-027",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 38294,
+    "category": "Riyaziyyat",
+    "question": "Tənliyi həll edin: (5x - 12) · 4 = 72",
+    "options": [
+      "10",
+      "8",
+      "6",
+      "12"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tənliyi həll etmək üçün məchulu tədricən tək saxlayırıq. (5x - 12) = 72 : 4 -> 5x - 12 = 18. İndi çıxılanı sağa keçirək: 5x = 18 + 12 -> 5x = 30. Buradan da x = 30 : 5 = 6 tapılır. Vurma və toplama xətaları edənlər üçün 8, 10, 12 distraktorları verilmişdir.",
+    "passport_id": "05-004-0101-B1F03-3-3-028",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 49201,
+    "category": "Riyaziyyat",
+    "question": "180 qələmi 3 sinif arasında elə böldülər ki, hər sonrakı sinif əvvəlkindən 20 qələm çox aldı. Ən çox qələm alan sinfə neçə qələm düşdü?",
+    "options": [
+      "60",
+      "80",
+      "100",
+      "40"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tam hissə modeli qururuq. 1-ci sinif: 1 hissə. 2-ci sinif: 1 hissə + 20. 3-cü sinif: 1 hissə + 40. Ümumi: 3 hissə + 60 = 180. 3 hissə = 180 - 60 = 120. 1 hissə (ən az alan) = 120 : 3 = 40. Ən çox alan: 40 + 40 = 80. Orta sinif 60, ən az alan 40 alır.",
+    "passport_id": "05-004-0101-B1F03-3-3-029",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 59284,
+    "category": "Riyaziyyat",
+    "question": "Bölünəni 4 dəfə artırıb, böləni 2 dəfə azaltsaq, qismət necə dəyişər?",
+    "options": [
+      "8 dəfə artar",
+      "2 dəfə artar",
+      "2 dəfə azalar",
+      "8 dəfə azalar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Qismət bölünən ilə düz, bölən ilə tərs mütənasibdir. Bölünən 4 dəfə artdığına görə qismət 4 dəfə artır. Bölən 2 dəfə azaldığına görə qismət yenə 2 dəfə artır. Beləliklə, ümumi qismət 4 · 2 = 8 dəfə artar. Çox vaxt uşaqlar bölənin azalmasının qisməti də azaltdığını düşünüb \"2 dəfə artar\" kimi səhv variantı seçirlər.",
+    "passport_id": "05-004-0101-B1F03-2-3-030",
+    "difficulty": "çətin",
+    "topic": "Vurma və bölmə",
+    "bloomLevel": "anlama"
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "id": 10001,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözün yazılışı orfoqrafiya qaydalarına tam uyğundur?",
+    "options": [
+      "Layihə",
+      "Layıhə",
+      "Layiha",
+      "Layıha"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sözün doğru yazılışı 'layihə' formasındadır. Dilimizdə ərəb mənşəli bu sözdə 'i' və 'ə' saitləri işlənir, ortada isə 'y' samiti yazılır.",
+    "passport_id": "05-001-0101-B1F01-bilmə-sadə-001",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10002,
+    "category": "Azərbaycan dili",
+    "question": "Verilmiş sözlərdən hansının orfoqrafiyası doğrudur?",
+    "options": [
+      "Məhşur",
+      "Məşhur",
+      "Məşhür",
+      "Məhşür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ərəb mənşəli bu sözün düzgün yazılışı 'məşhur'dur. Çox vaxt tələffüzdə 'h' və 'ş' yerini dəyişik salırlar, lakin yazılışda əvvəl 'ş', sonra 'h' və 'u' saiti gəlməlidir.",
+    "passport_id": "05-001-0101-B1F01-bilmə-sadə-002",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10003,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözdə 'o' saiti 'a' kimi tələffüz olunmur?",
+    "options": [
+      "Motor",
+      "Pomidor",
+      "Oçerk",
+      "Moskva"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rus və Avropa mənşəli bəzi sözlərdə 'o' saiti vurğusuz hecada 'a' kimi tələffüz edilsə də, 'oçerk', 'okean', 'obyekt' kimi sözlərdə 'o' saiti elə 'o' kimi də tələffüz olunur.",
+    "passport_id": "05-001-0101-B1F01-bilmə-sadə-003",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10004,
+    "category": "Azərbaycan dili",
+    "question": "'İ' və 'ü' saitlərinin yazılışı ilə bağlı hansı sözdə səhvə yol verilmişdir?",
+    "options": [
+      "Müdir",
+      "Münsif",
+      "Ümüd",
+      "Mühit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Düzgün yazılış 'ümid' formasındadır. Söz fars mənşəlidir və ikinci hecada 'ü' yox, 'i' saiti yazılmalı və deyilməlidir.",
+    "passport_id": "05-001-0101-B1F01-bilmə-sadə-004",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10005,
+    "category": "Azərbaycan dili",
+    "question": "Hansı cərgədəki sözlərin hamısı ahəng qanununa tabedir?",
+    "options": [
+      "Ürək, çəmənlik, odunçu",
+      "İşıq, məktəb, tərəzi",
+      "Yarpaq, səhər, vəfa",
+      "Kitab, qələm, dəftər"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ahəng qanunu sözdə qalın və ya incə saitlərin bir-birini izləməsidir. 'Ürək', 'çəmənlik' və 'odunçu' sözlərinin hər birində yalnız bir növ (ya qalın, ya incə) saitlər iştirak etdiyinə görə ahəng qanununa tabedir.",
+    "passport_id": "05-001-0101-B1F01-bilmə-sadə-005",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 10006,
+    "category": "Azərbaycan dili",
+    "question": "Sözlərdən hansının sonuna saitlə başlayan şəkilçi artırdıqda sonuncu saiti düşmür?",
+    "options": [
+      "İsim",
+      "Şəkil",
+      "Sinif",
+      "Kitab"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Kitab' sözü saitlə başlayan şəkilçi qəbul etdikdə kökündəki saiti itirmir. 'İsim', 'şəkil' və 'sinif' sözləri isə ərəb mənşəlidir və saitlə başlayan istənilən şəkilçi artırdıqda sonuncu saitini itirir.",
+    "passport_id": "05-001-0101-B1F01-anlama-sadə-006",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10007,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözün yazılışında qoşa sait iştirak etmir?",
+    "options": [
+      "Təəssüf",
+      "Səadət",
+      "Səyahət",
+      "Fəaliyyət"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Səyahət' sözündə 'ə' və 'a' saitləri arasında 'y' samiti yazılır, qoşa sait işlənməyib. Digər sözlərdə isə (təəssüf, səadət, fəaliyyət) qoşa saitlər yanaşı gəlmişdir.",
+    "passport_id": "05-001-0101-B1F01-anlama-sadə-007",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10008,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözün ilk hecasındakı sait uzun tələffüz olunur?",
+    "options": [
+      "Heca",
+      "Çiçək",
+      "Alim",
+      "Gözəl"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Alim' sözündə 'a' saiti uzun tələffüz olunur: [a:lim]. Milli sözlərimizdə (bəzi istisnalar olmaqla) uzanma yoxdur, ərəb mənşəli 'alim' sözündə isə ilk sait normaya uyğun olaraq uzanır.",
+    "passport_id": "05-001-0101-B1F01-anlama-sadə-008",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10009,
+    "category": "Azərbaycan dili",
+    "question": "Yalnız mənsubiyyət şəkilçisi qəbul edərkən ikinci hecasındakı saiti düşən söz hansıdır?",
+    "options": [
+      "Fəsil",
+      "Qarın",
+      "Nəsil",
+      "Qisim"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bədən üzvlərini bildirən bəzi milli mənşəli sözlər (qarın, ağız, beyin və s.) yalnız saitlə başlayan mənsubiyyət şəkilçisi qəbul etdikdə kökdəki saiti itirir. Alınma sözlər (fəsil, nəsil, qisim) isə həm mənsubiyyət, həm də hal şəkilçisi qəbul edəndə saitini itirir.",
+    "passport_id": "05-001-0101-B1F01-anlama-sadə-009",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10010,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözün tərkibindəki saitlərin hamısı dodaqlanmayandır?",
+    "options": [
+      "Göyərçin",
+      "Pəncərə",
+      "Avtomobil",
+      "Şokolad"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Pəncərə' sözündəki bütün saitlər ('ə') dodaqlanmayan incə saitlərdir. 'Göyərçin' sözündə ö saiti, 'avtomobil' və 'şokolad' sözlərində isə o saiti dodaqlanandır.",
+    "passport_id": "05-001-0101-B1F01-anlama-sadə-010",
+    "difficulty": "sadə",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10011,
+    "category": "Azərbaycan dili",
+    "question": "Aşağıdakı sözlərin hansında orfoqrafik səhvə yol verilmişdir?",
+    "options": [
+      "Saniyə",
+      "Qafiyə",
+      "Tövsiyyə",
+      "Tərbiyə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sözün doğru yazılışı 'tövsiyə' olmalıdır. Bu ərəb mənşəli sözdə 'y' samiti bir dəfə yazılır, əlavə 'y' hərfinin yazılması orfoqrafiya normanın pozulmasıdır.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-011",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10012,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözdə sait uzanması sözün həm leksik mənasına, həm də nitq hissəsinə aidliyinə təsir edir?",
+    "options": [
+      "Nərə",
+      "Dava",
+      "Bəzən",
+      "Əsər"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Bəzən' sözü vurğunun və uzanmanın yerinə görə həm zərf, həm də feil kimi işlənə bilir. 'Bəzən' zərf kimi işləndikdə 'ə' saiti uzanır və zaman mənasını verir, feli bağlama (bəzənmək) olduqda isə uzanma baş vermir.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-012",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10013,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözdə \"-iyyət\" şəkilçisi düzgün yazılmamışdır?",
+    "options": [
+      "Kəmiyyət",
+      "Şəxsiyyət",
+      "Xüsusiyyət",
+      "Nailiyət"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Nailiyyət' sözü iki 'y' ilə yazılmalıdır. Digər variantlardakı sözlərdə (kəmiyyət, şəxsiyyət, xüsusiyyət) qoşa 'y' hərflərindən istifadə düzgün tətbiq olunmuşdur.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-orta-013",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10014,
+    "category": "Azərbaycan dili",
+    "question": "Aşağıdakı sözlərdən hansının yazılışı orfoqrafiya qaydalarına ziddir?",
+    "options": [
+      "Zəfəran",
+      "Praqram",
+      "Rəssam",
+      "Mətanət"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Avropa mənşəli olan söz 'proqram' şəklində, yəni 'o' saiti ilə yazılmalıdır. Lakin tələffüzdə 'a' səsi ilə deyilməsi yazılışda səhvə yol açmamalıdır.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-orta-014",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10015,
+    "category": "Azərbaycan dili",
+    "question": "Tərkibində uzun tələffüz olunan sait yoxdur və ahəng qanunu pozulmuşdur:",
+    "options": [
+      "Təyyarə",
+      "İşıq",
+      "Həkim",
+      "Adət"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'İşıq' sözündə uzanan sait yoxdur və tərkibində həm incə (i), həm də qalın (ı) sait olduğu üçün ahəng qanunu pozulmuşdur. Tələffüzdə hər hansı bir sait fərqliliyi baş vermir.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-015",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10016,
+    "category": "Azərbaycan dili",
+    "question": "Sözün kökündəki ikinci hecanın saiti hansı sözdə yalnız mənsubiyyət şəkilçisi qəbul etdikdə düşür?",
+    "options": [
+      "Fikir",
+      "Ömür",
+      "Oğul",
+      "Şəkil"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Oğul' sözü milli mənşəlidir və qaydaya əsasən bədən üzvləri kimi qohumluq bildirən bəzi sözlər də yalnız mənsubiyyət şəkilçisi (saitlə başlayan) artırıldıqda ikinci saiti düşür. Ərəb və fars mənşəli sözlər isə hal şəkilçisində də bu saiti itirir.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-orta-016",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10017,
+    "category": "Azərbaycan dili",
+    "question": "Orfoqrafiya normalarına əsasən doğru yazılmış sözü seçin:",
+    "options": [
+      "Xasiyət",
+      "Səciyyə",
+      "Vəziyət",
+      "Təbiyət"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Səciyyə' sözü orfoqrafik baxımdan düzgün yazılmışdır, qoşa 'y' tələb olunur. 'Xasiyyət' və 'vəziyyət' sözlərində iki 'y' yazılmalıdır, 'təbiət' sözündə isə 'y' samiti yazılmır.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-017",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10018,
+    "category": "Azərbaycan dili",
+    "question": "Hansı söz orfoqrafik normaya zidd olaraq yanlış yazılmışdır?",
+    "options": [
+      "Ensiklopediya",
+      "Ssenari",
+      "Rəjissor",
+      "Ekspress"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sözün doğru yazılışı 'rejissor' formasındadır. Avropa mənşəli bu sözdə ilk hecada 'ə' deyil, 'e' saiti yazılmalıdır.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-018",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10019,
+    "category": "Azərbaycan dili",
+    "question": "Hansı sözün yazılışında əlavə saitin işlənməsi orfoqrafik səhv sayılır?",
+    "options": [
+      "Kariyera",
+      "Məişət",
+      "Səyahət",
+      "Xasiyyət"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Düzgün yazılış forması 'karyera'dır. Sözün mənşəyinə uyğun olaraq 'r' və 'y' samitləri arasında 'i' saiti yazılmamalıdır. Bu tipli sözlərdə saitin əlavə edilməsi orfoqrafik normanın pozulmasıdır.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-orta-019",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10020,
+    "category": "Azərbaycan dili",
+    "question": "Orfoqrafiya normalarına əsasən yanlış yazılmış sözü müəyyən edin:",
+    "options": [
+      "Quşüzümü",
+      "Təvəzökar",
+      "Mövqe",
+      "Ehtiyat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sözün doğru yazılışı 'təvazökar'dır. İkinci hecada 'ə' saiti deyil, 'a' saiti yazılmalıdır. Bu kimi sözlərdə saitlərin yerini səhv salmaq ciddi orfoqrafik xətadır.",
+    "passport_id": "05-001-0101-B1F01-anlama-orta-020",
+    "difficulty": "orta",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10021,
+    "category": "Azərbaycan dili",
+    "question": "'A' və 'o' saitlərinin yazılışı ilə bağlı orfoqrafik normanın pozulduğu söz hansıdır?",
+    "options": [
+      "Asfalt",
+      "Labaratoriya",
+      "Kolorit",
+      "Pambıq"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sözün doğru orfoqrafik yazılışı 'laboratoriya'dır. Avropa mənşəli bu sözdə üçüncü hərf 'a' yox, 'o' olmalıdır. Tələffüzdə 'a' kimi eşidilsə də, yazıda orjinal forma saxlanılır.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-021",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10022,
+    "category": "Azərbaycan dili",
+    "question": "Sözün kökündə iki samit arasına sait (məsələn, 'i' və ya 'ü') əlavə edilərək yazılması hansı sözdə orfoqrafik səhv yaradır?",
+    "options": [
+      "Şəhər",
+      "Səbir",
+      "Qəbir",
+      "Hökm"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Hökm', 'zülm', 'elm' kimi ərəb mənşəli təkhecalı sözlərdə samitlərin arasına sait (i, ü və s.) yazılmır. Lakin onlara samitlə başlayan şəkilçi artırıldıqda tələffüz zamanı araya sait girə bilir (məsələn, hökm - [höküm]). Yazılışda bu saitin yazılması səhvdir.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-022",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10023,
+    "category": "Azərbaycan dili",
+    "question": "Sözlərin hansında saitlərdən birinin yazılmaması mənaya təsir etmir, ancaq ciddi orfoqrafik səhv sayılır?",
+    "options": [
+      "Maaş",
+      "Dastan",
+      "Tarix",
+      "Dəniz"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Maaş' sözü qoşa 'a' saiti ilə yazılmalıdır. Tələffüzdə uzanma baş versə də, bir saitin yazılmaması orfoqrafik cəhətdən səhvdir.",
+    "passport_id": "05-001-0101-B1F01-anlama-çətin-023",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10024,
+    "category": "Azərbaycan dili",
+    "question": "Sait ahənginin pozulduğu, bitişik yazılan mürəkkəb sözü müəyyən edin:",
+    "options": [
+      "Gediş-gəliş",
+      "Qaraqabaq",
+      "Gülərüz",
+      "İtburnu"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'İtburnu' bitkilərə verilən ad olub bitişik yazılan mürəkkəb sözdür. Sözün tərkibindəki birinci tərəf (it) incə, ikinci tərəf (burnu) isə qalın saitli olduğu üçün ahəng qanunu pozulmuşdur.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-024",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10025,
+    "category": "Azərbaycan dili",
+    "question": "'A', 'ə', 'e' saitləri ilə bitən bəzi alınma sözlər mənsubiyyətə görə dəyişdikdə 's' deyil, 'y' bitişdiricisi qəbul edir. Bu qayda hansı sözdə özünü göstərir?",
+    "options": [
+      "Nəğmə",
+      "Tələbə",
+      "Mənbə",
+      "Dairə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dilimizdəki əksər sözlər saitlə bitdikdə üçüncü şəxsin mənsubiyyət şəkilçisi kimi '-sı/-si' qəbul edir (nəğməsi, tələbəsi, dairəsi). Lakin tale, mənbə, mənşə, mövqe, mənafe kimi alınma sözlər istisna olaraq '-yi' şəkilçisi qəbul edir (mənbəyi).",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-025",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10026,
+    "category": "Azərbaycan dili",
+    "question": "Söz birləşməsi şəklində olan mürəkkəb şəxs adlarından hansının yazılışında sait düşümü qaydası düzgün tətbiq olunmamışdır?",
+    "options": [
+      "Əlağa",
+      "Ağəli",
+      "Həsənağa",
+      "Güləli"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Əli' və 'ağa' komponentləri birləşib mürəkkəb ad yaradarkən heç bir sait düşməməli, 'Əliağa' şəklində yazılmalıdır. Yazılışda 'i' saitinin ixtisar edilərək 'Əlağa' formasında yazılması orfoqrafik xətadır.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-026",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10027,
+    "category": "Azərbaycan dili",
+    "question": "Sözlərdən hansının yazılışında iki 'y' samitindən istifadə edilməsi orfoqrafik normanın pozulmasıdır?",
+    "options": [
+      "Xüsusiyyət",
+      "Cəmiyyət",
+      "Tərbiyyə",
+      "Əziyyət"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sözün düzgün yazılışı 'tərbiyə' olmalıdır. Sonu '-iyə' ilə bitən ərəb mənşəli sözlərin çoxunda (qafiyə, saniyə, mərsiyə, tərbiyə və s.) 'y' samiti bir dəfə yazılır. Buna qoşa 'y' yazmaq qaydanı pozmaqdır.",
+    "passport_id": "05-001-0101-B1F01-anlama-çətin-027",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10028,
+    "category": "Azərbaycan dili",
+    "question": "Yalnız qapalı saitlərdən ibarət olub, ahəng qanununun pozulduğu sözü tapın:",
+    "options": [
+      "Qığılcım",
+      "İşıltı",
+      "Uğultu",
+      "Üzümlü"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ahəng qanunu eyni növ saitlərin bir-birini izləməsini tələb edir. 'İşıltı' sözü tamamilə qapalı saitlərdən (i, ı) ibarət olsa da, 'i' incə, 'ı' isə qalın sait olduğu üçün bu sözdə ahəng qanunu pozulmuşdur.",
+    "passport_id": "05-001-0101-B1F01-anlama-çətin-028",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 10029,
+    "category": "Azərbaycan dili",
+    "question": "Sözlərdən birinə saitlə başlayan həm hal, həm də mənsubiyyət şəkilçisi qoşulduqda kökdəki qapalı sait yazılışda düşməlidir. Bu qayda hansı sözə aiddir?",
+    "options": [
+      "Qayın",
+      "Könül",
+      "Qisim",
+      "Çiyin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Qisim' ərəb mənşəli sözdür və qaydaya əsasən saitlə başlayan istənilən şəkilçi (həm hal, həm də mənsubiyyət) artırıldıqda sonuncu hecasındakı qapalı sait yazılışda düşməlidir. 'Qayın', 'könül' və 'çiyin' kimi milli mənşəli sözlərdə isə yalnız mənsubiyyət şəkilçisi artırıldıqda bu hal baş verir.",
+    "passport_id": "05-001-0101-B1F01-tətbiq-çətin-029",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 10030,
+    "category": "Azərbaycan dili",
+    "question": "Hansı xüsusi ismin yazılışında saitlə bağlı orfoqrafik səhv vardır?",
+    "options": [
+      "Füzuli",
+      "Süleyman",
+      "Huseyn",
+      "Rüfət"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Şəxs adının düzgün yazılışı 'Hüseyn'dir. Birinci hecada 'u' deyil, 'ü' saiti iştirak etməlidir. Alınma mənşəli belə adlarda incə saitlərin yeri tez-tez qarışdırılsa da, rəsmi orfoqrafiya lüğətində yalnız 'ü' ilə yazılır.",
+    "passport_id": "05-001-0101-B1F01-anlama-çətin-030",
+    "difficulty": "çətin",
+    "topic": "Sözlərdə saitlərin yazılışı",
+    "bloomLevel": "anlama"
+  }
+]

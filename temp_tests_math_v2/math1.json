@@ -1,0 +1,512 @@
+[
+  {
+    "id": 41823,
+    "category": "Riyaziyyat",
+    "question": "\"Üç milyon iyirmi beş min dörd yüz altı\" ədədinin rəqəmlərlə yazılışı hansıdır?",
+    "options": [
+      "3250406",
+      "3205406",
+      "3025406",
+      "3025046"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sinfi adlara görə ayırırıq: Milyonlar sinfi: 3, Minliklər sinfi: 025, Təkliklər sinfi: 406. Birləşdirdikdə: 3025406 alınır. Şagird mərtəbələrdəki \"0\" rəqəminin yerini səhv sala bilər.",
+    "passport_id": "05-004-0101-B1F01-bilmə-01-001",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 92147,
+    "category": "Riyaziyyat",
+    "question": "684309 ədədində 8 rəqəmi hansı mərtəbədə yerləşir?",
+    "options": [
+      "Minliklər",
+      "Onminliklər",
+      "Yüzminliklər",
+      "Yüzlüklər"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ədəddəki mərtəbələr: 9-təklik, 0-onluq, 3-yüzlük, 4-minlik, 8-onminlik. 8 rəqəmi onminliklər mərtəbəsindədir. Minlik və ya yüzminlik ilə qarışdırılması tez-tez rast gəlinən səhvdir.",
+    "passport_id": "05-004-0101-B1F01-bilmə-01-002",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 13958,
+    "category": "Riyaziyyat",
+    "question": "7482 ədədini yüzlüklərə qədər yuvarlaqlaşdırdıqda hansı ədəd alınır?",
+    "options": [
+      "7400",
+      "7480",
+      "8000",
+      "7500"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Yüzlüklər mərtəbəsindəki rəqəm 4-dür. Ondan sağda gələn rəqəm 8 (5-dən böyük) olduğu üçün 4 rəqəmi 1 vahid artır və sağdakılar 0-a çevrilir. Nəticə: 7500. Artırmağı unudanlar 7400 yaza bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-01-003",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 67341,
+    "category": "Riyaziyyat",
+    "question": "Hansı müqayisə doğru verilmişdir?",
+    "options": [
+      "54312 < 54321",
+      "87600 > 87610",
+      "10200 < 10020",
+      "9999 > 10000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mərtəbə-mərtəbə müqayisə etdikdə, 54312 ədədinin onluqlar mərtəbəsi (1) 54321-in onluqlar mərtəbəsindən (2) kiçikdir. Digər variantlarda isə müqayisə işarələri tamamilə tərsinə qoyulmuşdur.",
+    "passport_id": "05-004-0101-B1F01-anlama-01-004",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 84129,
+    "category": "Riyaziyyat",
+    "question": "5-ci sinif riyaziyyat kurikulumuna əsasən natural ədədlər haqqında hansı fikir doğrudur?",
+    "options": [
+      "0 ən kiçik natural ədəddir, çünki hesablamalarda ondan istifadə edirik.",
+      "1 ən kiçik natural ədəddir, çünki 0 (sıfır) kurikuluma əsasən natural ədəd hesab edilmir.",
+      "Saymada istifadə edilən bütün kəsr ədədlər də natural ədəddir.",
+      "Ən böyük natural ədəd 1 milyarddır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Natural ədədlər əşyaları sayarkən istifadə olunan ədədlərdir. 0 (sıfır) saymada iştirak etmədiyi üçün kurikulumda natural ədəd hesab olunmur. Deməli, ən kiçik natural ədəd 1-dir.",
+    "passport_id": "05-004-0101-B1F01-bilmə-01-005",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "bilmə"
+  },
+  {
+    "id": 35284,
+    "category": "Riyaziyyat",
+    "question": "365 ədədini onluqlara qədər yuvarlaqlaşdırın.",
+    "options": [
+      "360",
+      "400",
+      "370",
+      "300"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Onluqlar mərtəbəsi 6-dır, sağındakı rəqəm 5 olduğu üçün 6 rəqəmi 1 vahid artır və 370 alınır. 5 olduqda artırmağı unudan şagird 360 cavabını ala bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-01-006",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 21975,
+    "category": "Riyaziyyat",
+    "question": "5 yüzminlik, 2 minlik və 8 onluqdan ibarət olan ədəd hansıdır?",
+    "options": [
+      "520080",
+      "502800",
+      "500208",
+      "502080"
+    ],
+    "correctAnswer": 3,
+    "explanation": "5 * 100000 + 2 * 1000 + 8 * 10 = 502080. Şagirdlər boş qalan mərtəbələrə (onminlik, yüzlük, təklik) sıfır yazmağı unudarsa və ya yerini dəyişik salarsa fərqli nəticələr alar.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-01-007",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 50821,
+    "category": "Riyaziyyat",
+    "question": "40000 ədədindən dərhal əvvəl gələn natural ədəd hansıdır?",
+    "options": [
+      "39990",
+      "39999",
+      "40001",
+      "30000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərhal əvvəl gələn ədədi tapmaq üçün verilmiş ədəddən 1 çıxmaq lazımdır. 40000 - 1 = 39999. Əgər şagird 1 toplayarsa 40001 alar.",
+    "passport_id": "05-004-0101-B1F01-anlama-01-008",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 78310,
+    "category": "Riyaziyyat",
+    "question": "89045 və 89145 ədədlərini müqayisə edərkən ilk olaraq (soldan sağa) hansı mərtəbə vahidində fərq yaranır?",
+    "options": [
+      "Yüzlüklər",
+      "Minliklər",
+      "Onluqlar",
+      "Onminliklər"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hər iki ədədin onminlik (8) və minlik (9) rəqəmləri eynidir. Lakin 89045-də yüzlüklər 0, 89145-də isə 1-dir. İlk fərq məhz yüzlüklər mərtəbəsində görünür.",
+    "passport_id": "05-004-0101-B1F01-anlama-01-009",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 43567,
+    "category": "Riyaziyyat",
+    "question": "1845032 ədədində milyonlar və minliklər sinfindəki rəqəmlərin cəmi neçədir?",
+    "options": [
+      "10",
+      "6",
+      "18",
+      "14"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Milyonlar sinfi: 1. Minliklər sinfi: 845. Rəqəmlərin cəmi: 1 + 8 + 4 + 5 = 18. Təkliklər sinfini (032) də toplayan və ya sinifləri səhv salan şagird yanlış variantı seçəcək.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-01-010",
+    "difficulty": "sadə",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 26984,
+    "category": "Riyaziyyat",
+    "question": "Minliklərə qədər yuvarlaqlaşdırdıqda 6000 alınan ən böyük natural ədəd hansıdır?",
+    "options": [
+      "6500",
+      "6499",
+      "5999",
+      "6099"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Minliklərə qədər yuvarlaqlaşdırdıqda 6000 alınan ədədlər 5500-dən 6499-a qədərdir. Ən böyüyü 6499-dur. 6500 ədədi yuvarlaqlaşdıqda 7000 olur, bu ən çox edilən səhvlərdəndir.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-011",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 91325,
+    "category": "Riyaziyyat",
+    "question": "Yüzlüklərə qədər yuvarlaqlaşdırdıqda 400 alınan ən kiçik natural ədəd hansıdır?",
+    "options": [
+      "350",
+      "349",
+      "449",
+      "401"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yüzlüklərə qədər yuvarlaqlaşdırdıqda 400 alınan ədədlər 350-dən 449-a qədərdir. Ən kiçiyi 350-dir. 349-u yuvarlaqlaşdırdıqda isə artıq 300 alınır.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-012",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 55812,
+    "category": "Riyaziyyat",
+    "question": "7 * 42 < 7342 bərabərsizliyini doğru edən * (ulduz) rəqəmlərinin cəmi neçədir?",
+    "options": [
+      "6",
+      "10",
+      "5",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Verilmiş bərabərsizliyin doğru olması üçün yüzlüklər mərtəbəsindəki ulduz yerinə 3-dən kiçik rəqəmlər yazılmalıdır: 0, 1, 2. Cəmləri: 0+1+2 = 3. 3 rəqəmini də bərabərsizliyə daxil edən şagird 6 yaza bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-013",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 73209,
+    "category": "Riyaziyyat",
+    "question": "5938 ədədinin onluqlar və minliklər mərtəbəsindəki rəqəmlərin yerini dəyişdikdə yeni yaranan ədəd əvvəlki ədəddən necə fərqlənər?",
+    "options": [
+      "1980 artar",
+      "2000 azalar",
+      "1980 azalar",
+      "2000 artar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "5938 ədədində minlik 5, onluq 3-dür. Yerlərini dəyişdikdə ədəd 3958 olur. Fərq: 5938 - 3958 = 1980. Ədəd kiçildiyi üçün nəticədə 1980 azalır.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-014",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 19485,
+    "category": "Riyaziyyat",
+    "question": "24-dən 61-ə qədər (61 də daxil olmaqla) neçə natural ədəd var?",
+    "options": [
+      "37",
+      "38",
+      "36",
+      "39"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İki ədəd daxil olmaqla aralarındakı tam ədədlərin sayını tapmaq üçün sonuncu ədəddən birincini çıxıb üzərinə 1 əlavə etmək lazımdır. 61 - 24 + 1 = 38. Şagird +1 qaydasını unudarsa 37 alar.",
+    "passport_id": "05-004-0101-B1F01-anlama-02-015",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 80314,
+    "category": "Riyaziyyat",
+    "question": "8446 ədədini əvvəlcə onluqlara, sonra isə alınan nəticəni yüzlüklərə qədər yuvarlaqlaşdırın.",
+    "options": [
+      "8500",
+      "8400",
+      "8450",
+      "8000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "8446 onluqlara yuvarlaqlaşdıqda 8450 olur (6 böyükdür 5). Alınan 8450 ədədi yüzlüklərə yuvarlaqlaşdıqda isə 8500 olur. Əgər şagird birbaşa yüzlüklərə yuvarlaqlaşdırsaydı 8400 alardı. Bu, mərhələli yuvarlaqlaşdırmanı yoxlayır.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-016",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 36192,
+    "category": "Riyaziyyat",
+    "question": "Bütün rəqəmləri fərqli olan ən böyük dördrəqəmli ədədi yüzlüklərə qədər yuvarlaqlaşdırdıqda hansı ədəd alınır?",
+    "options": [
+      "9800",
+      "10000",
+      "9900",
+      "9880"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rəqəmləri fərqli ən böyük dördrəqəmli ədəd 9876-dır. Yüzlüklərə qədər yuvarlaqlaşdırdıqda onluq mərtəbəsi 7 olduğu üçün 8 bir vahid artır və 9900 olur. \"Fərqli rəqəmlər\" şərtini unudan şagird 10000 ala bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-017",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 61405,
+    "category": "Riyaziyyat",
+    "question": "A = 45 * 1000, B = 4 * 10000 + 520, C = 45050. Bu ədədlərin kiçikdən böyüyə doğru (artma) sıralanması hansı variantda düzgün verilmişdir?",
+    "options": [
+      "A < B < C",
+      "C < B < A",
+      "B < C < A",
+      "B < A < C"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hesablayaq: A = 45000, B = 40520, C = 45050. Müqayisə edək: 40520 < 45000 < 45050. Yəni sıralama B < A < C şəklində olacaq. Hesablama zamanı sıfırların sayını qarışdırmaq səhvə səbəb olur.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-02-018",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 48217,
+    "category": "Riyaziyyat",
+    "question": "Onluqlara qədər yuvarlaqlaşdırdıqda 70 alınan ən böyük və ən kiçik natural ədədlərin fərqi neçədir?",
+    "options": [
+      "9",
+      "10",
+      "8",
+      "11"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Onluqlara qədər yuvarlaqlaşdırdıqda 70 alınan ən böyük ədəd 74, ən kiçik ədəd isə 65-dir. Fərq: 74 - 65 = 9. Şagirdlər ən böyük ədədi 75 (fərq 10) götürərək yanlış cavab ala bilərlər.",
+    "passport_id": "05-004-0101-B1F01-anlama-02-019",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 59743,
+    "category": "Riyaziyyat",
+    "question": "Verilmiş natural ədədin sonuna iki ədəd \"0\" rəqəmi yazdıqda, ədəd necə dəyişər?",
+    "options": [
+      "100 vahid artar",
+      "100 dəfə artar",
+      "1000 dəfə artar",
+      "2 dəfə artar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ədədin sonuna iki sıfır artırmaq onu 100-ə vurmaq deməkdir. Məsələn, 5 ədədi 500 olur. Şagirdlərin tez-tez etdiyi səhv bunu \"100 vahid artmaq\" kimi başa düşmələridir.",
+    "passport_id": "05-004-0101-B1F01-anlama-02-020",
+    "difficulty": "orta",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 20496,
+    "category": "Riyaziyyat",
+    "question": "Minliklərə qədər yuvarlaqlaşdırdıqda 8000 alınan, rəqəmləri fərqli ən böyük dördrəqəmli ədədin rəqəmləri cəmi neçədir?",
+    "options": [
+      "30",
+      "26",
+      "28",
+      "29"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Yuvarlaqlaşdıqda 8000 alınan ən böyük dördrəqəmli ədəd 8499-dur. Lakin 9 iki dəfə təkrarlanır. Rəqəmləri fərqli ən böyük ədəd 8497-dir (8, 4, 9, 7). Cəmi: 8+4+9+7 = 28. Səhvən 8499-u tapan şagird 30 cavabını alar.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-021",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 71852,
+    "category": "Riyaziyyat",
+    "question": "x, y və z natural ədədlərdir. x * 7 = y * 4 = z * 9 olarsa, bu ədədləri ən böyükdən ən kiçiyə doğru ardıcıllıqla necə düzmək olar?",
+    "options": [
+      "y > x > z",
+      "z > x > y",
+      "x > y > z",
+      "y > z > x"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hasillərin bərabər olması üçün kiçik vuruğun yanındakı ədəd böyük, böyük vuruğun yanındakı ədəd kiçik olmalıdır. 4 < 7 < 9 olduğundan asılılıq tərsinə y > x > z kimi olacaqdır.",
+    "passport_id": "05-004-0101-B1F01-anlama-03-022",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 39518,
+    "category": "Riyaziyyat",
+    "question": "1-dən 60-a qədər natural ədədlərin yazılışında \"4\" rəqəmindən neçə dəfə istifadə olunmuşdur?",
+    "options": [
+      "15",
+      "16",
+      "14",
+      "17"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"4\" rəqəmi təkliklər mərtəbəsində: 4, 14, 24, 34, 44, 54 (6 dəfə). Onluqlar mərtəbəsində: 40-dan 49-a qədər (10 dəfə). Cəmi 16 dəfə. 44-dəki 4-lərin birini saymayan şagird 15 ala bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-023",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 84261,
+    "category": "Riyaziyyat",
+    "question": "Rəqəmləri cəmi 14 olan ən kiçik üçrəqəmli ədədi onluqlara qədər yuvarlaqlaşdırdıqda neçə alınır?",
+    "options": [
+      "140",
+      "200",
+      "150",
+      "160"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ən kiçik üçrəqəmli ədəd üçün yüzlüklərə 1 yazırıq. Digər rəqəmlərin cəmi 13 olmalıdır. Təkliklərə maksimum 9 yazırıq, onluqlara 4 qalır. Deməli ədəd 149-dur. Onluqlara yuvarlaqlaşdırdıqda 150 alınır.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-024",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 16937,
+    "category": "Riyaziyyat",
+    "question": "İki ardıcıl cüt natural ədədin cəmi 242-dir. Bu ədədlərdən böyüyü hansıdır?",
+    "options": [
+      "120",
+      "124",
+      "121",
+      "122"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ədədlər a və a+2 kimi işarə olunarsa, 2a + 2 = 242. Buradan 2a = 240, a = 120 edir. Kiçik ədəd 120, böyük ədəd 122-dir. 242-ni birbaşa 2-yə bölən şagird 121 (tək ədəd) ala bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-025",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 65024,
+    "category": "Riyaziyyat",
+    "question": "Üç fərqli üçrəqəmli natural ədədin cəmi 2615-dir. Bu ədədlərdən ən kiçiyi ən azı neçə ola bilər?",
+    "options": [
+      "618",
+      "617",
+      "619",
+      "616"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ən kiçiyinin minimum olması üçün digər ikisi maksimum olmalıdır. Üçrəqəmli fərqli ən böyük ədədlər 999 və 998-dir. Cəmləri 1997. Üçüncü ədəd: 2615 - 1997 = 618. \"Fərqli\" sözünə diqqət etməyən 617 alacaq.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-026",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 52719,
+    "category": "Riyaziyyat",
+    "question": "0, 2, 5, 7 rəqəmlərinin hər birindən yalnız bir dəfə istifadə etməklə yazılan ən böyük və ən kiçik dördrəqəmli ədədlərin fərqini yüzlüklərə qədər yuvarlaqlaşdırın.",
+    "options": [
+      "5400",
+      "5500",
+      "5600",
+      "5000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ən böyük ədəd: 7520. Ən kiçik ədəd (0 ilə başlaya bilməz): 2057. Fərq: 7520 - 2057 = 5463. Yüzlüklərə yuvarlaqlaşdırdıqda 5500 alınır. 0 ilə başlayan rəqəm quran şagird fərqli nəticə alar.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-027",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 31846,
+    "category": "Riyaziyyat",
+    "question": "\"Dörd milyard iki yüz üç milyon əlli səkkiz min yetmiş\" ədədinin yazılışında cəmi neçə dənə sıfır (0) rəqəmi iştirak edir?",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ədədin yazılışı: 4 203 058 070. Milyonlar sinfində 1 (203), minliklər sinfində 1 (058), təkliklər sinfində isə 2 (070) sıfır var. Cəmi 4 sıfır istifadə olunub.",
+    "passport_id": "05-004-0101-B1F01-anlama-03-028",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "anlama"
+  },
+  {
+    "id": 90435,
+    "category": "Riyaziyyat",
+    "question": "Bir natural ədədin sonuna 6 rəqəmi əlavə etdikdə ədəd 411 vahid artır. Bu ədəd hansıdır?",
+    "options": [
+      "41",
+      "50",
+      "46",
+      "45"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mərtəbə qaydasına görə, ədədin sonuna 6 yazmaq onu 10-a vurub üstünə 6 gəlmək deməkdir. Ədəd özündən 9 dəfə böyük dəyər və üstəgəl 6 qədər artır. (411 - 6) / 9 = 45. Yaxud 456 - 45 = 411.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-029",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  },
+  {
+    "id": 27690,
+    "category": "Riyaziyyat",
+    "question": "Şagird 3847 ədədini birbaşa yüzlüklərə qədər yuvarlaqlaşdırmalı idi. Lakin o səhvən ədədi əvvəlcə onluqlara, sonra isə alınan nəticəni yüzlüklərə qədər yuvarlaqlaşdırdı. Şagirdin tapdığı nəticə doğru nəticədən nə qədər fərqlənir?",
+    "options": [
+      "100",
+      "0",
+      "50",
+      "10"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Doğru nəticə (birbaşa yüzlüklərə): 3800. Şagirdin etdiyi: 3847 onluqlara 3850 olur. 3850 yüzlüklərə 3900 olur. Fərq: 3900 - 3800 = 100. Şagird prosesi dərk etməsə, fərq yaranmadığını (0) düşünə bilər.",
+    "passport_id": "05-004-0101-B1F01-tətbiq-03-030",
+    "difficulty": "çətin",
+    "topic": "Natural ədədlər, Müqayisə və Yuvarlaqlaşdırma",
+    "bloomLevel": "tətbiq"
+  }
+]
