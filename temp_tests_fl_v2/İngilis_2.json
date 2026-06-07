@@ -1,0 +1,257 @@
+[
+  {
+    "id": 51001,
+    "category": "İngilis dili",
+    "question": "How do you write the number 12 in English?",
+    "options": [
+      "twelve",
+      "twelv",
+      "twelfe",
+      "twenty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct spelling for the number 12 is 'twelve'. The other options are spelled incorrectly.",
+    "passport_id": "05-011-0101-B01M02-01-01-001",
+    "difficulty": "easy",
+    "topic": "Numbers",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51002,
+    "category": "İngilis dili",
+    "question": "What is three plus four?",
+    "options": [
+      "seven",
+      "eight",
+      "twelve",
+      "six"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Three plus four equals seven (3 + 4 = 7).",
+    "passport_id": "05-011-0101-B01M02-01-01-002",
+    "difficulty": "easy",
+    "topic": "Numbers",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51003,
+    "category": "İngilis dili",
+    "question": "Choose the correct phrase.",
+    "options": [
+      "five pencil",
+      "five pencils",
+      "fives pencils",
+      "five penciles"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After the number 'five', the countable noun must be in the plural form, which is 'pencils'.",
+    "passport_id": "05-011-0101-B01M02-01-01-003",
+    "difficulty": "easy",
+    "topic": "Numbers",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51004,
+    "category": "İngilis dili",
+    "question": "How many days are there in a week?",
+    "options": [
+      "six",
+      "seven",
+      "eight",
+      "nine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "There are 7 days in a week, which is written as 'seven' in English.",
+    "passport_id": "05-011-0101-B01M02-01-01-004",
+    "difficulty": "easy",
+    "topic": "Numbers",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51005,
+    "category": "İngilis dili",
+    "question": "Which word shows the 1st position?",
+    "options": [
+      "one",
+      "first",
+      "fist",
+      "oneth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The ordinal number for 1 is 'first'. It shows the first position.",
+    "passport_id": "05-011-0101-B01M02-01-01-005",
+    "difficulty": "easy",
+    "topic": "Numbers",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51006,
+    "category": "İngilis dili",
+    "question": "How do you write the number 40 in English?",
+    "options": [
+      "fourty",
+      "forty",
+      "fourteen",
+      "fivety"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct spelling for 40 is 'forty'. 'Fourty' is a common spelling mistake.",
+    "passport_id": "05-011-0101-B01M02-02-02-006",
+    "difficulty": "medium",
+    "topic": "Numbers",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51007,
+    "category": "İngilis dili",
+    "question": "Today is the ___ of November.",
+    "options": [
+      "two",
+      "second",
+      "twoth",
+      "twenty"
+    ],
+    "correctAnswer": 1,
+    "explanation": "We use ordinal numbers to express dates, so 'second' is the correct choice here.",
+    "passport_id": "05-011-0101-B01M02-02-02-007",
+    "difficulty": "medium",
+    "topic": "Numbers",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51008,
+    "category": "İngilis dili",
+    "question": "How many months are there in a year?",
+    "options": [
+      "twelve",
+      "twenty",
+      "eleven",
+      "thirteen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "There are 12 months in a year, and the number is written as 'twelve'.",
+    "passport_id": "05-011-0101-B01M02-02-02-008",
+    "difficulty": "medium",
+    "topic": "Numbers",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51009,
+    "category": "İngilis dili",
+    "question": "What is twenty minus eight?",
+    "options": [
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Twenty minus eight equals twelve (20 - 8 = 12).",
+    "passport_id": "05-011-0101-B01M02-02-02-009",
+    "difficulty": "medium",
+    "topic": "Numbers",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51010,
+    "category": "İngilis dili",
+    "question": "How do you write the number 100?",
+    "options": [
+      "one hundred",
+      "one hundreds",
+      "a hundreds",
+      "hundred one"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The number 100 is written as 'one hundred'. We do not add 's' to the word 'hundred'.",
+    "passport_id": "05-011-0101-B01M02-02-02-010",
+    "difficulty": "medium",
+    "topic": "Numbers",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51011,
+    "category": "İngilis dili",
+    "question": "How do you read the number 85?",
+    "options": [
+      "eight five",
+      "eighty-five",
+      "eighteen-five",
+      "eighty and five"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In English, 85 is read as 'eighty-five', combining the tens and the units with a hyphen.",
+    "passport_id": "05-011-0101-B01M02-03-03-011",
+    "difficulty": "hard",
+    "topic": "Numbers",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 51012,
+    "category": "İngilis dili",
+    "question": "December is the ___ month of the year.",
+    "options": [
+      "twelve",
+      "twelfth",
+      "twelveth",
+      "twelf"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The ordinal form of 12 is 'twelfth'. 'Twelveth' is a common spelling mistake.",
+    "passport_id": "05-011-0101-B01M02-03-03-012",
+    "difficulty": "hard",
+    "topic": "Numbers",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 51013,
+    "category": "İngilis dili",
+    "question": "You have fifteen books. You give four books to your friend. How many books do you have now?",
+    "options": [
+      "eleven books",
+      "ten books",
+      "twelve books",
+      "nine books"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fifteen minus four equals eleven (15 - 4 = 11). Therefore, you have 'eleven books' left.",
+    "passport_id": "05-011-0101-B01M02-03-03-013",
+    "difficulty": "hard",
+    "topic": "Numbers",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 51014,
+    "category": "İngilis dili",
+    "question": "Choose the correct sentence.",
+    "options": [
+      "I have two hundreds cars.",
+      "I have two hundred cars.",
+      "I have two hundred car.",
+      "I has two hundred cars."
+    ],
+    "correctAnswer": 1,
+    "explanation": "We do not add 's' to 'hundred' when it follows a specific number like 'two'. So, 'two hundred cars' is correct.",
+    "passport_id": "05-011-0101-B01M02-03-03-014",
+    "difficulty": "hard",
+    "topic": "Numbers",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 51015,
+    "category": "İngilis dili",
+    "question": "Complete the sentence: \"My brother is ___.\"",
+    "options": [
+      "twelve years old",
+      "twelve year old",
+      "twelve years olds",
+      "twelve year olds"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To state someone's age, we use 'years old' in the plural form because twelve is more than one year.",
+    "passport_id": "05-011-0101-B01M02-03-03-015",
+    "difficulty": "hard",
+    "topic": "Numbers",
+    "bloomLevel": "application"
+  }
+]

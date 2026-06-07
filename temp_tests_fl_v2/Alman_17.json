@@ -1,0 +1,257 @@
+[
+  {
+    "id": 15101,
+    "category": "Alman dili",
+    "question": "Wie sagt man \"Saat 5-də\" auf Deutsch?",
+    "options": [
+      "Am fünf Uhr",
+      "Um fünf Uhr",
+      "In fünf Uhr",
+      "Auf fünf Uhr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saatları bildirmək üçün alman dilində \"um\" sözönü istifadə olunur. Məsələn: um fünf Uhr (saat 5-də).",
+    "passport_id": "05-012-0101-B01M17-01",
+    "difficulty": "easy",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 15102,
+    "category": "Alman dili",
+    "question": "Wir ______ Fußball.",
+    "options": [
+      "spiele",
+      "spielt",
+      "spielen",
+      "spielst"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Wir\" (biz) şəxs əvəzliyi ilə feil \"-en\" sonluğu qəbul edir: wir spielen.",
+    "passport_id": "05-012-0101-B01M17-02",
+    "difficulty": "easy",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15103,
+    "category": "Alman dili",
+    "question": "\"17:00\" necə oxunur?",
+    "options": [
+      "sieben Uhr",
+      "achtzehn Uhr",
+      "siebzig Uhr",
+      "siebzehn Uhr"
+    ],
+    "correctAnswer": 3,
+    "explanation": "17 rəqəmi \"siebzehn\" deməkdir, saat isə \"siebzehn Uhr\" kimi oxunur.",
+    "passport_id": "05-012-0101-B01M17-03",
+    "difficulty": "easy",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 15104,
+    "category": "Alman dili",
+    "question": "Was macht ihr um 17:00 Uhr? - Wir spielen _____.",
+    "options": [
+      "Hausaufgaben",
+      "Deutsch",
+      "Fußball",
+      "Musik"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Spielen\" feili ilə oyunlar işlənir, məsələn \"Fußball spielen\". Musiqiyə qulaq asılır (Musik hören), ev tapşırığı edilir (Hausaufgaben machen).",
+    "passport_id": "05-012-0101-B01M17-04",
+    "difficulty": "easy",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 15105,
+    "category": "Alman dili",
+    "question": "_____ 15:00 Uhr lerne ich Deutsch.",
+    "options": [
+      "In",
+      "Am",
+      "Von",
+      "Um"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Saatın qarşısında \"um\" sözönü işlənir.",
+    "passport_id": "05-012-0101-B01M17-05",
+    "difficulty": "easy",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 15106,
+    "category": "Alman dili",
+    "question": "_____ spielt ihr Fußball? - Um 17:00 Uhr.",
+    "options": [
+      "Was",
+      "Wann",
+      "Wer",
+      "Wo"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Wann\" (nə vaxt) sual əvəzliyi vaxtı soruşmaq üçün istifadə olunur.",
+    "passport_id": "05-012-0101-B01M17-06",
+    "difficulty": "medium",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 15107,
+    "category": "Alman dili",
+    "question": "Ali und Samir ______ um 16:00 Uhr Tennis.",
+    "options": [
+      "spielen",
+      "spiele",
+      "spielst",
+      "spielt"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ali und Samir\" cəm halda (sie - onlar) olduğu üçün feil \"-en\" sonluğu qəbul edir (spielen).",
+    "passport_id": "05-012-0101-B01M17-07",
+    "difficulty": "medium",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15108,
+    "category": "Alman dili",
+    "question": "_____ Montag _____ 14:00 Uhr spiele ich Gitarre.",
+    "options": [
+      "Um / am",
+      "Im / am",
+      "Am / um",
+      "Am / im"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Həftənin günləri ilə \"am\", saatlarla isə \"um\" sözönü istifadə edilir.",
+    "passport_id": "05-012-0101-B01M17-08",
+    "difficulty": "medium",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15109,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist richtig? (Hansı cümlə doğrudur?)",
+    "options": [
+      "Wir Fußball spielen um 17:00 Uhr.",
+      "Um 17:00 Uhr wir spielen Fußball.",
+      "Spielen Fußball wir um 17:00 Uhr.",
+      "Um 17:00 Uhr spielen wir Fußball."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nəqli cümlədə zaman zərfi başda gələrsə, feil ikinci yerdə, mübtəda isə üçüncü yerdə durmalıdır.",
+    "passport_id": "05-012-0101-B01M17-09",
+    "difficulty": "medium",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 15110,
+    "category": "Alman dili",
+    "question": "Was machst du am Nachmittag?",
+    "options": [
+      "Ich lerne meine Hausaufgaben.",
+      "Ich mache meine Hausaufgaben.",
+      "Ich spiele meine Hausaufgaben.",
+      "Ich höre meine Hausaufgaben."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ev tapşırığını etmək alman dilində \"Hausaufgaben machen\" kimi ifadə olunur.",
+    "passport_id": "05-012-0101-B01M17-10",
+    "difficulty": "medium",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 15111,
+    "category": "Alman dili",
+    "question": "Anna lernt um 15:00 Uhr Deutsch. Um 16:00 Uhr macht sie Hausaufgaben. Um 17:00 Uhr spielt sie Fußball. Wann spielt Anna Fußball?",
+    "options": [
+      "Um 15:00 Uhr",
+      "Um 16:00 Uhr",
+      "Um 17:00 Uhr",
+      "Um 18:00 Uhr"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətnə əsasən Anna saat 17:00-da futbol oynayır.",
+    "passport_id": "05-012-0101-B01M17-11",
+    "difficulty": "hard",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 15112,
+    "category": "Alman dili",
+    "question": "Wann _____ ihr Fußball? - Wir spielen um 17:00 Uhr.",
+    "options": [
+      "spielt",
+      "spielen",
+      "spielst",
+      "spiele"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ihr\" (siz) əvəzliyi ilə feilin kökünə \"-t\" sonluğu əlavə olunur (spielt).",
+    "passport_id": "05-012-0101-B01M17-12",
+    "difficulty": "hard",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15113,
+    "category": "Alman dili",
+    "question": "Mein Bruder _____ um 18:00 Uhr Musik.",
+    "options": [
+      "höre",
+      "hören",
+      "hörst",
+      "hört"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Mein Bruder\" (o - er) 3-cü şəxsin təkində olduğu üçün \"hören\" feili \"hört\" olur.",
+    "passport_id": "05-012-0101-B01M17-13",
+    "difficulty": "hard",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15114,
+    "category": "Alman dili",
+    "question": "Tərcüməni tapın: \"Biz saat 15:00-da məktəbə gedirik.\"",
+    "options": [
+      "Wir gehen am 15:00 Uhr zur Schule.",
+      "Wir gehen um 15:00 Uhr zur Schule.",
+      "Um 15:00 Uhr wir gehen zur Schule.",
+      "Wir gehen zur Schule in 15:00 Uhr."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saatlarla \"um\" sözönü işlənir və feil cümlədə 2-ci yerdə durmalıdır.",
+    "passport_id": "05-012-0101-B01M17-14",
+    "difficulty": "hard",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15115,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist FALSCH? (Hansı cümlə səhvdir?)",
+    "options": [
+      "Er spielt um 16:00 Uhr Fußball.",
+      "Wir machen um 14:00 Uhr Sport.",
+      "Spielt ihr um 15:00 Uhr Tennis?",
+      "Ich lerne am 17:00 Uhr Deutsch."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Saatların qarşısında \"am\" deyil, \"um\" olmalıdır. Ona görə də \"Ich lerne am 17:00 Uhr Deutsch\" cümləsi qrammatik cəhətdən səhvdir.",
+    "passport_id": "05-012-0101-B01M17-15",
+    "difficulty": "hard",
+    "topic": "Stunde 4. Um 17:00 Uhr spielen wir Fußball.",
+    "bloomLevel": "comprehension"
+  }
+]

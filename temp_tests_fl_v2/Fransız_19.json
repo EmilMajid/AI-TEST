@@ -1,0 +1,257 @@
+[
+  {
+    "id": 19001,
+    "category": "Fransız dili",
+    "question": "\"Mən şokoladı sevirəm\" cümləsinin düzgün fransızca tərcüməsini seçin.",
+    "options": [
+      "Je n'aime pas le chocolat.",
+      "J'aime le chocolat.",
+      "Je déteste le chocolat.",
+      "J'adore les bonbons."
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Aimer\" feli sevmək deməkdir. \"J'aime le chocolat\" - mən şokoladı sevirəm mənasını verir.",
+    "passport_id": "05-016-0101-B01M19-01",
+    "difficulty": "easy",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 19002,
+    "category": "Fransız dili",
+    "question": "Cümləni tamamlayın: Tu ___ le sport ?",
+    "options": [
+      "aime",
+      "aimes",
+      "aimons",
+      "aimez"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Tu\" şəxs əvəzliyi ilə \"-er\" sonluqlu fellər indiki zamanda \"-es\" şəkilçisi qəbul edir.",
+    "passport_id": "05-016-0101-B01M19-02",
+    "difficulty": "easy",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19003,
+    "category": "Fransız dili",
+    "question": "\"Détester\" felinin mənası nədir?",
+    "options": [
+      "Sevmək",
+      "Nifrət etmək",
+      "Üstünlük vermək",
+      "Pərəstiş etmək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Détester\" nifrət etmək, heç xoşlamamaq deməkdir. Aimer - sevmək, adorer - pərəstiş etmək, préférer - üstünlük verməkdir.",
+    "passport_id": "05-016-0101-B01M19-03",
+    "difficulty": "easy",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 19004,
+    "category": "Fransız dili",
+    "question": "Cümləni tamamlayın: Il ___ la musique classique.",
+    "options": [
+      "adore",
+      "adores",
+      "adorons",
+      "adorent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Il\" (o) üçüncü şəxsin təkində olduğu üçün felin sonu \"-e\" ilə bitir.",
+    "passport_id": "05-016-0101-B01M19-04",
+    "difficulty": "easy",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19005,
+    "category": "Fransız dili",
+    "question": "Hansı cümlə orfoqrafik cəhətdən düzgündür?",
+    "options": [
+      "Je préfère la lecture.",
+      "Je préféré la lecture.",
+      "Je prefer la lecture.",
+      "Je prefere la lecture."
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Préférer\" feli \"je\" şəxsində \"préfère\" kimi yazılır, yəni ikinci \"e\" hərfi üzərində qrav (açıq) aksan olur.",
+    "passport_id": "05-016-0101-B01M19-05",
+    "difficulty": "easy",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 19006,
+    "category": "Fransız dili",
+    "question": "\"J'aime ___ fruits.\" cümləsində nöqtələrin yerinə hansı artikl yazılmalıdır?",
+    "options": [
+      "les",
+      "des",
+      "de",
+      "le"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Üstünlük bildirən fellərdən (aimer, adorer, vb.) sonra ümumi məna ifadə edildiyi üçün həmişə müəyyən artikl (le, la, l', les) işlənir. \"Fruits\" cəm olduğu üçün \"les\" olur.",
+    "passport_id": "05-016-0101-B01M19-06",
+    "difficulty": "medium",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19007,
+    "category": "Fransız dili",
+    "question": "\"Nous ___ la danse.\" cümləsində felin düzgün formasını seçin.",
+    "options": [
+      "adorons",
+      "adoront",
+      "adorent",
+      "adorens"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Nous\" (biz) şəxs əvəzliyi ilə indiki zamanda felin sonu \"-ons\" ilə bitməlidir (nous adorons).",
+    "passport_id": "05-016-0101-B01M19-07",
+    "difficulty": "medium",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19008,
+    "category": "Fransız dili",
+    "question": "Cümləni tamamlayın: Vous ___ le football ou le basket-ball ?",
+    "options": [
+      "préférez",
+      "préfèrez",
+      "préferez",
+      "préféres"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Vous\" şəxsində \"préférer\" felinin kökündəki aksan dəyişmir və \"préférez\" olaraq yazılır.",
+    "passport_id": "05-016-0101-B01M19-08",
+    "difficulty": "medium",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19009,
+    "category": "Fransız dili",
+    "question": "Mənfi cümləni seçin:",
+    "options": [
+      "Il n'aime le sport.",
+      "Il n'aime pas le sport.",
+      "Il ne aime pas le sport.",
+      "Il n'aime pas de sport."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mənfi formanı düzəltmək üçün felin ətrafına \"ne... pas\" əlavə edilir. Fel saitlə başlandığı üçün \"n'aime pas\" olur.",
+    "passport_id": "05-016-0101-B01M19-09",
+    "difficulty": "medium",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 19010,
+    "category": "Fransız dili",
+    "question": "İki felin yanaşı gəldiyi halda ikinci fel hansı formada olmalıdır? \"J'adore ___ (nager).\"",
+    "options": [
+      "nage",
+      "nages",
+      "nager",
+      "nagez"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fransız dilində iki fel ard-arda gəldikdə birinci fel hallanır, ikinci fel isə məsdər (nager) formasında qalır.",
+    "passport_id": "05-016-0101-B01M19-10",
+    "difficulty": "medium",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19011,
+    "category": "Fransız dili",
+    "question": "Hansı tərcümə doğrudur: \"Onlar tərəvəzlərə nifrət edirlər, amma meyvələri sevirlər.\"",
+    "options": [
+      "Ils déteste les légumes, mais aime les fruits.",
+      "Ils détestent les légumes, mais ils aiment les fruits.",
+      "Ils détestent des légumes, mais aiment des fruits.",
+      "Ils détestent les légumes, mais ils adore les fruits."
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Ils\" şəxsində hər iki fel cəmdə, yəni \"-ent\" ilə bitməlidir (détestent, aiment) və üstünlük bildirən fellərdə müəyyən artikl (les) işlənir.",
+    "passport_id": "05-016-0101-B01M19-11",
+    "difficulty": "hard",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19012,
+    "category": "Fransız dili",
+    "question": "\"Je n'aime pas ___ viande.\" boşluğa nə yazılmalıdır?",
+    "options": [
+      "de la",
+      "de",
+      "la",
+      "une"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mənfi cümlədə olsa belə, \"aimer\", \"détester\", \"adorer\" kimi fellərdən sonra müəyyən artikl (le, la, les) dəyişmir. Buna görə də \"la\" düzgündür.",
+    "passport_id": "05-016-0101-B01M19-12",
+    "difficulty": "hard",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19013,
+    "category": "Fransız dili",
+    "question": "Felin düzgün formasını tapın: \"Mes amis ___ voyager pendant les vacances.\"",
+    "options": [
+      "préfère",
+      "préfèrent",
+      "préférent",
+      "préfèrons"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Mes amis\" (mənim dostlarım) cəmdə olduğu üçün \"ils\" əvəzliyi ilə uzlaşır. Ona görə də fel \"préfèrent\" formasında yazılır.",
+    "passport_id": "05-016-0101-B01M19-13",
+    "difficulty": "hard",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19014,
+    "category": "Fransız dili",
+    "question": "\"Ma sœur et moi, nous ___ aller au cinéma.\" cümləsində boşluğa uyğun gələn feli seçin.",
+    "options": [
+      "adorons",
+      "adore",
+      "adorent",
+      "adorez"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ma sœur et moi\" (bacım və mən) ifadəsi \"nous\" (biz) şəxsinə bərabərdir. Buna görə də fel \"-ons\" sonluğu qəbul edir.",
+    "passport_id": "05-016-0101-B01M19-14",
+    "difficulty": "hard",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 19015,
+    "category": "Fransız dili",
+    "question": "Düzgün və məntiqli cümləni seçin.",
+    "options": [
+      "J'aime ne pas le tennis.",
+      "Je ne déteste pas la boxe.",
+      "Je n'adore pas de natation.",
+      "Je ne aime pas chanter."
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Je ne déteste pas la boxe\" cümləsi qrammatik cəhətdən tamamilə doğrudur. A-da inkar hissəciyinin yeri səhvdir, C-də artikl \"la\" olmalı idi, D-də isə \"n'aime\" yazılmalı idi.",
+    "passport_id": "05-016-0101-B01M19-15",
+    "difficulty": "hard",
+    "topic": "Étape 4. Mes préférences",
+    "bloomLevel": "comprehension"
+  }
+]

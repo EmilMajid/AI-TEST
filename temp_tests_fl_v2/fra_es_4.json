@@ -1,0 +1,257 @@
+[
+  {
+    "id": 41001,
+    "category": "Fransız dili",
+    "question": "Comment on demande l'heure en français ?",
+    "options": [
+      "Quel heure est-il ?",
+      "Quelle heure est-il ?",
+      "Comment heure est-il ?",
+      "Combien d'heure est-il ?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Heure\" qadın cinsində olan isimdir, ona görə \"Quelle\" sual əvəzliyi istifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-01",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 41002,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (12:00 - günorta)",
+    "options": [
+      "Il est midi.",
+      "Il est minuit.",
+      "Il est douze heures.",
+      "Il est le matin."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Günorta saat 12 üçün fransız dilində \"midi\" sözü istifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-02",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 41003,
+    "category": "Fransız dili",
+    "question": "Trouvez la bonne réponse pour \"3:00\".",
+    "options": [
+      "Il est trois heure.",
+      "Il est trois heures.",
+      "Il est trois d'heure.",
+      "Il est trois heurest."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saat birdən çox olduqda \"heure\" sözünə cəm şəkilçisi olan \"s\" əlavə edilir.",
+    "passport_id": "05-015-0101-B01M04-03",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 41004,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (00:00 - gecə yarısı)",
+    "options": [
+      "Il est midi.",
+      "Il est minuit.",
+      "Il est zéro heures.",
+      "Il est la nuit."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gecə saat 12 (00:00) üçün \"minuit\" (gecə yarısı) sözündən istifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-04",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 41005,
+    "category": "Fransız dili",
+    "question": "Trouvez la traduction correcte : \"Saat birdir.\"",
+    "options": [
+      "Il est un heure.",
+      "Il est une heure.",
+      "Il est première heure.",
+      "Il est une heures."
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Heure\" qadın cinsində olduğu üçün \"un\" deyil, \"une\" olur. Həmçinin, 1 tək rəqəm olduğu üçün \"heure\" sözünə \"s\" yazılmır.",
+    "passport_id": "05-015-0101-B01M04-05",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 41006,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (07:15)",
+    "options": [
+      "Il est sept heures et quart.",
+      "Il est sept heures le quart.",
+      "Il est sept heures et quatre.",
+      "Il est sept heures moins le quart."
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Saat 8-in yarısıdır (7-ni 15 dəqiqə keçir)\" demək üçün \"et quart\" ifadəsindən istifadə olunur. \"Quatre\" (4) ilə \"quart\" (1/4) fərqlidir.",
+    "passport_id": "05-015-0101-B01M04-06",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 41007,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne option pour \"10:30\".",
+    "options": [
+      "Il est dix heures demi.",
+      "Il est dix heures et demie.",
+      "Il est dix heures le demi.",
+      "Il est dix heures moins demie."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saatın yarısını bildirmək üçün \"et demie\" istifadə edilir. \"Heure\" qadın cinsi olduğu üçün \"demie\" sonuna \"e\" qəbul edir.",
+    "passport_id": "05-015-0101-B01M04-07",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 41008,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (08:45)",
+    "options": [
+      "Il est huit heures moins le quart.",
+      "Il est neuf heures et quart.",
+      "Il est neuf heures moins le quart.",
+      "Il est neuf heures le quart."
+    ],
+    "correctAnswer": 2,
+    "explanation": "08:45 \"doqquza 15 dəqiqə qalır\" deməkdir. Buna görə növbəti saatdan (neuf heures) \"moins le quart\" (15 dəqiqə çıxmaqla) istifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-08",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 41009,
+    "category": "Fransız dili",
+    "question": "\"Saat səhər doqquzdur\" cümləsinin fransızca qarşılığını tapın.",
+    "options": [
+      "Il est neuf heures du matin.",
+      "Il est neuf heures du soir.",
+      "Il est neuf heures de l'après-midi.",
+      "Il est neuf heures le matin."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Səhər saatlarını bildirmək üçün saatdan sonra \"du matin\" (səhərin) ifadəsi əlavə olunur.",
+    "passport_id": "05-015-0101-B01M04-09",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41010,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (16:00)",
+    "options": [
+      "Il est quatre heures du matin.",
+      "Il est quatre heures de l'après-midi.",
+      "Il est seize heures de l'après-midi.",
+      "Il est quatre heures du soir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "16:00 günorta saat 4-dür. Buna görə \"quatre heures de l'après-midi\" deyilir. Axşam saatları üçün isə \"du soir\" işlənir.",
+    "passport_id": "05-015-0101-B01M04-10",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41011,
+    "category": "Fransız dili",
+    "question": "Complétez la phrase : Il est 12:30 (günorta). \"Il est midi et ...\"",
+    "options": [
+      "demie",
+      "demi",
+      "demies",
+      "demis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Midi\" və \"minuit\" sözləri kişi cinsində olduğu üçün \"demi\" sözü qadın cinsinin şəkilçisi olan \"e\" hərfini qəbul etmir. Doğru cavab \"demi\".",
+    "passport_id": "05-015-0101-B01M04-11",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41012,
+    "category": "Fransız dili",
+    "question": "Quelle heure est-il ? (19:50)",
+    "options": [
+      "Il est vingt heures moins dix.",
+      "Il est dix-neuf heures et dix.",
+      "Il est vingt heures et dix.",
+      "Il est dix-neuf heures moins dix."
+    ],
+    "correctAnswer": 0,
+    "explanation": "19:50 saat \"iyirmiyə on dəqiqə qalır\" (20:00 - 10 dəq) deməkdir. Fransızca bu \"vingt heures moins dix\" kimi ifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-12",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41013,
+    "category": "Fransız dili",
+    "question": "Choisissez la forme correcte pour \"23:45\".",
+    "options": [
+      "Il est minuit moins le quart.",
+      "Il est minuit et quart.",
+      "Il est vingt-trois heures moins le quart.",
+      "Il est onze heures moins le quart du matin."
+    ],
+    "correctAnswer": 0,
+    "explanation": "23:45 gecə 12-yə (minuit) 15 dəqiqə (le quart) qalmış deməkdir. Buna görə \"minuit moins le quart\" istifadə olunur.",
+    "passport_id": "05-015-0101-B01M04-13",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41014,
+    "category": "Fransız dili",
+    "question": "Que signifie \"Il est cinq heures moins vingt\" ?",
+    "options": [
+      "04:40",
+      "05:20",
+      "05:40",
+      "04:20"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Cinq heures moins vingt\" yəni saat 5-dən 20 dəqiqə çıxırıq, bu da 04:40 deməkdir.",
+    "passport_id": "05-015-0101-B01M04-14",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41015,
+    "category": "Fransız dili",
+    "question": "Mettez les mots dans le bon ordre : est / quelle / il / heure / ?",
+    "options": [
+      "Heure est-il quelle ?",
+      "Quelle il est heure ?",
+      "Quelle heure est-il ?",
+      "Quelle est heure-il ?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Saat soruşarkən əvvəlcə sual əvəzliyi və isim (Quelle heure), sonra isə feil və mübtəda (est-il) işlənir.",
+    "passport_id": "05-015-0101-B01M04-15",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Quelle heure est-il ?",
+    "bloomLevel": "application"
+  }
+]

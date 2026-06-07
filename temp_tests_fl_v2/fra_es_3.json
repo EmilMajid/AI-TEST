@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14001,
+    "category": "Fransız dili",
+    "question": "Comment dit-on \"kitab\" en français ?",
+    "options": [
+      "un cahier",
+      "un livre",
+      "un stylo",
+      "un crayon"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilində \"kitab\" - \"un livre\" deməkdir. Digər variantlar: un cahier (dəftər), un stylo (qələm), un crayon (karandaş).",
+    "passport_id": "05-015-0101-B01M03-01",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14002,
+    "category": "Fransız dili",
+    "question": "Choisissez l'article correct : C'est ... tableau.",
+    "options": [
+      "une",
+      "des",
+      "un",
+      "la"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Tableau\" (lövhə) sözü kişi cinsində (masculin) və tək haldadır, ona görə də \"un\" artiklı istifadə olunur.",
+    "passport_id": "05-015-0101-B01M03-02",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14003,
+    "category": "Fransız dili",
+    "question": "Qu'est-ce qu'il y a dans la trousse ?",
+    "options": [
+      "Un bureau",
+      "Une chaise",
+      "Un stylo",
+      "Un tableau"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"La trousse\" (qələm qabı) içərisində qələm (\"un stylo\") olar. Digər əşyalar sinif otağına aiddir.",
+    "passport_id": "05-015-0101-B01M03-03",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14004,
+    "category": "Fransız dili",
+    "question": "Le cahier est ...",
+    "options": [
+      "rouge",
+      "rouges",
+      "blances",
+      "verts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Le cahier\" tək halda olduğu üçün sifət də tək halda olmalıdır. \"Rouge\" həm kişi, həm qadın cinsi üçün uyğundur.",
+    "passport_id": "05-015-0101-B01M03-04",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14005,
+    "category": "Fransız dili",
+    "question": "Complétez : Ce sont ... gommes.",
+    "options": [
+      "le",
+      "un",
+      "une",
+      "des"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Gommes\" (pozanlar) sözü cəm halda olduğu üçün qeyri-müəyyən cəm artiklı olan \"des\" istifadə edilməlidir.",
+    "passport_id": "05-015-0101-B01M03-05",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14006,
+    "category": "Fransız dili",
+    "question": "Quelle est la question correcte pour la réponse : \"C'est une carte.\" ?",
+    "options": [
+      "Qui est-ce ?",
+      "Qu'est-ce que c'est ?",
+      "Où est le livre ?",
+      "Comment ça va ?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cansız əşyaları soruşmaq üçün (Bu nədir?) \"Qu'est-ce que c'est ?\" sualından istifadə olunur.",
+    "passport_id": "05-015-0101-B01M03-06",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14007,
+    "category": "Fransız dili",
+    "question": "Complétez la phrase logiquement : Dans ma classe, il y a un tableau et ...",
+    "options": [
+      "des chaises",
+      "un maison",
+      "une arbre",
+      "des trousse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sinifdə stullar (\"des chaises\") olar. Qrammatik olaraq \"une maison\", \"un arbre\" və \"des trousses\" olmalı idi, yəni o biri variantlarda səhvlər var.",
+    "passport_id": "05-015-0101-B01M03-07",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14008,
+    "category": "Fransız dili",
+    "question": "Trouvez le mot écrit correctement.",
+    "options": [
+      "Le caier",
+      "Le craion",
+      "La gomme",
+      "Le tablo"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Doğru orfoqrafiya \"La gomme\" (pozan) sözündədir. Digərləri düzgün yazılmayıb: le cahier, le crayon, le tableau.",
+    "passport_id": "05-015-0101-B01M03-08",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14009,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne combinaison (article et nom).",
+    "options": [
+      "un règle",
+      "une cahier",
+      "un trousse",
+      "une fenêtre"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Fenêtre\" (pəncərə) qadın cinsindədir (une). Digər sözlərin cinsləri səhv verilib: une règle, un cahier, une trousse olmalıdır.",
+    "passport_id": "05-015-0101-B01M03-09",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14010,
+    "category": "Fransız dili",
+    "question": "Le professeur écrit avec un marqueur sur ...",
+    "options": [
+      "la chaise",
+      "le sac",
+      "le tableau",
+      "la gomme"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Müəllim yazmaq üçün lövhədən (le tableau) istifadə edir.",
+    "passport_id": "05-015-0101-B01M03-10",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14011,
+    "category": "Fransız dili",
+    "question": "Comment traduit-on \"Sinifdə şagirdlər var\" en français ?",
+    "options": [
+      "Il y a des élèves dans la classe.",
+      "C'est des élèves dans la classe.",
+      "Ils sont élèves en classe.",
+      "Dans la classe ce sont élèves."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azərbaycan dilindəki \"var\" (mövcudiyyət) ifadəsi fransız dilində \"il y a\" ilə tərcümə olunur.",
+    "passport_id": "05-015-0101-B01M03-11",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14012,
+    "category": "Fransız dili",
+    "question": "Complétez : C'est ... livre. C'est ... livre de Marie.",
+    "options": [
+      "un / le",
+      "le / un",
+      "un / un",
+      "le / le"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İlk cümlədə ümumi bir əşyadan (un livre), ikinci cümlədə isə kiməsə məxsus olan müəyyən bir kitabdan (le livre de Marie) bəhs edilir.",
+    "passport_id": "05-015-0101-B01M03-12",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14013,
+    "category": "Fransız dili",
+    "question": "Quelle mini-dialogue est correct ?",
+    "options": [
+      "Qu'est-ce que c'est un stylo ?",
+      "C'est quoi une trousse ?",
+      "Qu'est-ce que c'est ? - C'est un bureau.",
+      "Qui est-ce ? - C'est une gomme."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cansız əşyalar barədə sual-cavab üçün \"Qu'est-ce que c'est ?\" və \"C'est...\" quruluşu doğrudur. Canlılar üçün \"Qui est-ce?\" istifadə olunur.",
+    "passport_id": "05-015-0101-B01M03-13",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14014,
+    "category": "Fransız dili",
+    "question": "Mettez au pluriel : \"C'est un cahier.\"",
+    "options": [
+      "Ce sont des cahiers.",
+      "Ce sont un cahiers.",
+      "C'est des cahiers.",
+      "Ce sont les cahier."
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"C'est\" cəmdə \"Ce sont\" olur, \"un\" qeyri-müəyyən artiklı \"des\" olur və isim sonuna \"s\" qəbul edir.",
+    "passport_id": "05-015-0101-B01M03-14",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14015,
+    "category": "Fransız dili",
+    "question": "Lisez et trouvez l'objet : \"C'est dans le sac à dos. C'est pour écrire sur le cahier.\"",
+    "options": [
+      "La règle",
+      "Le stylo",
+      "Le tableau",
+      "La chaise"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə deyilir ki, o çantanın içindədir və dəftərdə yazmaq üçündür. Bu qələmdir (Le stylo).",
+    "passport_id": "05-015-0101-B01M03-15",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma classe",
+    "bloomLevel": "application"
+  }
+]

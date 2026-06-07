@@ -1,0 +1,257 @@
+[
+  {
+    "id": 10001,
+    "category": "Fransız dili",
+    "question": "Trouvez le mot correct. Le père de mon père est mon ___.",
+    "options": [
+      "oncle",
+      "frère",
+      "grand-père",
+      "cousin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Babanın atası babadır, yəni 'grand-père'.",
+    "passport_id": "05-015-0101-B01M13-01",
+    "difficulty": "easy",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10002,
+    "category": "Fransız dili",
+    "question": "Choisissez le verbe correct : Tu ___ un livre.",
+    "options": [
+      "es",
+      "a",
+      "as",
+      "est"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Avoir' (malik olmaq) feilinin 2-ci şəxs təkində forması 'as' kimidir.",
+    "passport_id": "05-015-0101-B01M13-02",
+    "difficulty": "easy",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10003,
+    "category": "Fransız dili",
+    "question": "Quel jour vient après mercredi ?",
+    "options": [
+      "jeudi",
+      "mardi",
+      "lundi",
+      "vendredi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Çərşənbə günündən (mercredi) sonra cümə axşamı (jeudi) gəlir.",
+    "passport_id": "05-015-0101-B01M13-03",
+    "difficulty": "easy",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10004,
+    "category": "Fransız dili",
+    "question": "Choisissez l'article correct : Voici ___ gomme.",
+    "options": [
+      "un",
+      "une",
+      "le",
+      "les"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Gomme' (pozan) sözü qadın cinsində olduğu üçün 'une' qeyri-müəyyən artiklı istifadə olunur.",
+    "passport_id": "05-015-0101-B01M13-04",
+    "difficulty": "easy",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10005,
+    "category": "Fransız dili",
+    "question": "De quelle couleur est le ciel ?",
+    "options": [
+      "rouge",
+      "vert",
+      "jaune",
+      "bleu"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Göy (ciel) mavi (bleu) rəngdədir.",
+    "passport_id": "05-015-0101-B01M13-05",
+    "difficulty": "easy",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10006,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne terminaison : Nous parl___ français.",
+    "options": [
+      "-e",
+      "-ons",
+      "-ent",
+      "-ez"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Birinci qrup feillərinin 'nous' (biz) şəxsində sonluğu '-ons' olur.",
+    "passport_id": "05-015-0101-B01M13-06",
+    "difficulty": "medium",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10007,
+    "category": "Fransız dili",
+    "question": "Trouvez le pluriel correct : J'ai trois ___.",
+    "options": [
+      "cahier",
+      "cahieres",
+      "cahiers",
+      "cahierrs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İsimlərin cəmini düzəltmək üçün əksər hallarda sözün sonuna 's' əlavə edilir (cahiers).",
+    "passport_id": "05-015-0101-B01M13-07",
+    "difficulty": "medium",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10008,
+    "category": "Fransız dili",
+    "question": "Complétez avec l'adjectif possessif : C'est le livre de Marie. C'est ___ livre.",
+    "options": [
+      "sa",
+      "son",
+      "ses",
+      "mon"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Livre' sözü kişi cinsində (le) olduğu üçün 'son' yiyəlik əvəzliyi istifadə olunur.",
+    "passport_id": "05-015-0101-B01M13-08",
+    "difficulty": "medium",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10009,
+    "category": "Fransız dili",
+    "question": "Choisissez le mot interrogatif : ___ est-ce ? - C'est mon ami Ali.",
+    "options": [
+      "Qui",
+      "Que",
+      "Où",
+      "Quand"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Şəxs haqqında sual verdikdə 'Qui' (Kim) sual əvəzliyindən istifadə olunur.",
+    "passport_id": "05-015-0101-B01M13-09",
+    "difficulty": "medium",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10010,
+    "category": "Fransız dili",
+    "question": "Comment s'écrit le nombre 15 en français ?",
+    "options": [
+      "quatorze",
+      "seize",
+      "quinze",
+      "treize"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fransız dilində 15 rəqəmi 'quinze' kimi yazılır.",
+    "passport_id": "05-015-0101-B01M13-10",
+    "difficulty": "medium",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10011,
+    "category": "Fransız dili",
+    "question": "Mettez la phrase à la forme négative : Je regarde la télé.",
+    "options": [
+      "Je ne regarde pas la télé.",
+      "Je pas regarde la télé.",
+      "Je regarde ne pas la télé.",
+      "Je ne pas regarde la télé."
+    ],
+    "correctAnswer": 0,
+    "explanation": "İnkar formasında 'ne' və 'pas' hissəcikləri feilin iki tərəfinə qoyulur.",
+    "passport_id": "05-015-0101-B01M13-11",
+    "difficulty": "hard",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10012,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne préposition : Il habite ___ Bakou.",
+    "options": [
+      "en",
+      "au",
+      "à",
+      "dans"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Şəhər adlarının qarşısında 'à' sözönü istifadə edilir.",
+    "passport_id": "05-015-0101-B01M13-12",
+    "difficulty": "hard",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10013,
+    "category": "Fransız dili",
+    "question": "Mettez les mots en ordre : suis / je / élève / un.",
+    "options": [
+      "Je un élève suis.",
+      "Je suis un élève.",
+      "Suis je un élève.",
+      "Un élève je suis."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilində cümlə sırası adətən Mübtəda + Xəbər + Tamamlıq (Sujet + Verbe + Objet) şəklində olur.",
+    "passport_id": "05-015-0101-B01M13-13",
+    "difficulty": "hard",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10014,
+    "category": "Fransız dili",
+    "question": "Trouvez l'adjectif correct : La fille porte une ___ robe.",
+    "options": [
+      "beau",
+      "belle",
+      "bel",
+      "beaux"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Robe' qadın cinsində tək isim olduğu üçün 'belle' sifəti işlədilir.",
+    "passport_id": "05-015-0101-B01M13-14",
+    "difficulty": "hard",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10015,
+    "category": "Fransız dili",
+    "question": "Lisez et comptez : Marc a un frère et deux sœurs. Combien d'enfants y a-t-il dans la famille ?",
+    "options": [
+      "deux",
+      "trois",
+      "quatre",
+      "cinq"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Marc (1) + un frère (1) + deux sœurs (2) = quatre (4) uşaq var.",
+    "passport_id": "05-015-0101-B01M13-15",
+    "difficulty": "hard",
+    "topic": "Révision (Unité 2)",
+    "bloomLevel": "comprehension"
+  }
+]

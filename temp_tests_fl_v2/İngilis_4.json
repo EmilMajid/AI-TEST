@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14238,
+    "category": "İngilis dili",
+    "question": "What colour is a tomato?",
+    "options": [
+      "It is red.",
+      "It is blue.",
+      "It is green.",
+      "It is brown."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A tomato is naturally red.",
+    "passport_id": "05-011-0101-B01M04-01-01-001",
+    "difficulty": "easy",
+    "topic": "4. Colours",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 29814,
+    "category": "İngilis dili",
+    "question": "Choose the correct spelling of the colour.",
+    "options": [
+      "Pürple",
+      "Purple",
+      "Parple",
+      "Perple"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Purple' is the correct English spelling for this colour.",
+    "passport_id": "05-011-0101-B01M04-01-01-002",
+    "difficulty": "easy",
+    "topic": "4. Colours",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 35712,
+    "category": "İngilis dili",
+    "question": "What colour is the sky on a sunny day?",
+    "options": [
+      "Yellow",
+      "Green",
+      "Blue",
+      "Black"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The sky is usually blue on a clear, sunny day.",
+    "passport_id": "05-011-0101-B01M04-01-01-003",
+    "difficulty": "easy",
+    "topic": "4. Colours",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 48102,
+    "category": "İngilis dili",
+    "question": "Lemons are usually ________.",
+    "options": [
+      "pink",
+      "grey",
+      "yellow",
+      "brown"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lemons are typically yellow fruits.",
+    "passport_id": "05-011-0101-B01M04-01-01-004",
+    "difficulty": "easy",
+    "topic": "4. Colours",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 51928,
+    "category": "İngilis dili",
+    "question": "Which animal is black and white?",
+    "options": [
+      "A fox",
+      "A zebra",
+      "A frog",
+      "A lion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Zebras have black and white stripes.",
+    "passport_id": "05-011-0101-B01M04-01-01-005",
+    "difficulty": "easy",
+    "topic": "4. Colours",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 61039,
+    "category": "İngilis dili",
+    "question": "Choose the correct question for the answer: 'They are green.'",
+    "options": [
+      "What colour is the trees?",
+      "What colour are the trees?",
+      "What colour am the trees?",
+      "What colour the trees are?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Trees' is plural, so we use the verb 'are' after 'What colour'.",
+    "passport_id": "05-011-0101-B01M04-02-02-006",
+    "difficulty": "medium",
+    "topic": "4. Colours",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 78341,
+    "category": "İngilis dili",
+    "question": "Choose the correct sentence.",
+    "options": [
+      "I have a car red.",
+      "I have a red car.",
+      "I have red a car.",
+      "I have car a red."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In English, the adjective (colour) comes before the noun.",
+    "passport_id": "05-011-0101-B01M04-02-02-007",
+    "difficulty": "medium",
+    "topic": "4. Colours",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 84192,
+    "category": "İngilis dili",
+    "question": "Complete the sentence: The sun ____ yellow and the clouds ____ white.",
+    "options": [
+      "is / is",
+      "are / is",
+      "is / are",
+      "are / are"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'The sun' is singular (is), and 'the clouds' is plural (are).",
+    "passport_id": "05-011-0101-B01M04-02-02-008",
+    "difficulty": "medium",
+    "topic": "4. Colours",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 92314,
+    "category": "İngilis dili",
+    "question": "Which word is NOT a colour?",
+    "options": [
+      "Brown",
+      "White",
+      "Purple",
+      "Bread"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Bread' is food, not a colour. The others are colours.",
+    "passport_id": "05-011-0101-B01M04-02-02-009",
+    "difficulty": "medium",
+    "topic": "4. Colours",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 13947,
+    "category": "İngilis dili",
+    "question": "Translate into English: 'Mənim mavi qələmim var.'",
+    "options": [
+      "I have blue a pen.",
+      "I have a pen blue.",
+      "I have a blue pen.",
+      "I has a blue pen."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The adjective 'blue' comes before the noun 'pen', and we use 'have' with 'I'.",
+    "passport_id": "05-011-0101-B01M04-02-02-010",
+    "difficulty": "medium",
+    "topic": "4. Colours",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 24856,
+    "category": "İngilis dili",
+    "question": "Read the text: 'My favourite toys are a red ball, a green car, and a brown bear.' Which toy is NOT mentioned?",
+    "options": [
+      "A green car",
+      "A blue ball",
+      "A red ball",
+      "A brown bear"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The text mentions a red ball, but not a blue ball.",
+    "passport_id": "05-011-0101-B01M04-03-03-011",
+    "difficulty": "hard",
+    "topic": "4. Colours",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 31589,
+    "category": "İngilis dili",
+    "question": "Choose the INCORRECT sentence.",
+    "options": [
+      "He have a black cat.",
+      "She has a white dog.",
+      "They have grey birds.",
+      "We have brown rabbits."
+    ],
+    "correctAnswer": 0,
+    "explanation": "With the pronoun 'he', we must use 'has', not 'have'.",
+    "passport_id": "05-011-0101-B01M04-03-03-012",
+    "difficulty": "hard",
+    "topic": "4. Colours",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 48623,
+    "category": "İngilis dili",
+    "question": "Complete the dialogue: \n- What colour _____ your eyes?\n- They _____ brown.",
+    "options": [
+      "is / is",
+      "are / are",
+      "is / are",
+      "are / is"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Eyes' is plural, so we use 'are' in both the question and the answer.",
+    "passport_id": "05-011-0101-B01M04-03-03-013",
+    "difficulty": "hard",
+    "topic": "4. Colours",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 56910,
+    "category": "İngilis dili",
+    "question": "Which option has a mistake?",
+    "options": [
+      "An orange book",
+      "A pink flower",
+      "A yellow apples",
+      "A green tree"
+    ],
+    "correctAnswer": 2,
+    "explanation": "We cannot use the singular article 'a' with the plural noun 'apples'.",
+    "passport_id": "05-011-0101-B01M04-03-03-014",
+    "difficulty": "hard",
+    "topic": "4. Colours",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 67394,
+    "category": "İngilis dili",
+    "question": "Make a sentence: \n1. are \n2. My \n3. pencils \n4. purple",
+    "options": [
+      "2, 4, 3, 1",
+      "2, 3, 1, 4",
+      "3, 1, 2, 4",
+      "4, 3, 2, 1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The correct order is Subject (My pencils) + Verb (are) + Adjective (purple).",
+    "passport_id": "05-011-0101-B01M04-03-03-015",
+    "difficulty": "hard",
+    "topic": "4. Colours",
+    "bloomLevel": "application"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 16001,
+    "category": "Fransız dili",
+    "question": "Comment on dit \"Mənim qardaşım\" en français ?",
+    "options": [
+      "ma frère",
+      "mon sœur",
+      "mon frère",
+      "ma sœur"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fransız dilində 'qardaş' (frère) kişi cinsindədir. Buna görə mənsubiyyət əvəzliyi 'mon' olmalıdır: mon frère.",
+    "passport_id": "05-016-0101-B01M16-01",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 16002,
+    "category": "Fransız dili",
+    "question": "Le père de mon père est mon ...",
+    "options": [
+      "oncle",
+      "grand-père",
+      "frère",
+      "cousin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Atamın atası mənim babamdır. Fransızca baba 'grand-père' deməkdir.",
+    "passport_id": "05-016-0101-B01M16-02",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 16003,
+    "category": "Fransız dili",
+    "question": "J'___ 11 ans.",
+    "options": [
+      "as",
+      "a",
+      "ai",
+      "suis"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Yaş bildirmək üçün 'avoir' feilindən istifadə olunur. 1-ci şəxsin təkində (Je) bu feil 'ai' formasına düşür (J'ai 11 ans). Şagirdlər çox vaxt bunu 'être' (suis) ilə səhv salırlar.",
+    "passport_id": "05-016-0101-B01M16-03",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 16004,
+    "category": "Fransız dili",
+    "question": "C'est ___ mère. Elle s'appelle Sylvie.",
+    "options": [
+      "ma",
+      "mon",
+      "mes",
+      "ta"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Mère' (ana) qadın cinsində olan tək isimdir. Öz anasından bəhs edərkən 1-ci şəxsin mənsubiyyət əvəzliyi 'ma' istifadə edilməlidir.",
+    "passport_id": "05-016-0101-B01M16-04",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 16005,
+    "category": "Fransız dili",
+    "question": "La fille de ma mère est ma ...",
+    "options": [
+      "frère",
+      "cousine",
+      "tante",
+      "sœur"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Anamın qızı mənim bacımdır. Bacı fransızca 'sœur' deməkdir.",
+    "passport_id": "05-016-0101-B01M16-05",
+    "difficulty": "easy",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 16006,
+    "category": "Fransız dili",
+    "question": "Mon frère ___ une belle bicyclette.",
+    "options": [
+      "as",
+      "ont",
+      "a",
+      "ai"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Mon frère' 3-cü şəxsin təkindədir (il). 'Avoir' (malik olmaq, varı olmaq) feilinin 3-cü şəxsin təkindəki forması 'a'-dır.",
+    "passport_id": "05-016-0101-B01M16-06",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 16007,
+    "category": "Fransız dili",
+    "question": "Ce sont ___ parents. Ils sont professeurs.",
+    "options": [
+      "mon",
+      "ma",
+      "mes",
+      "le"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Parents' (valideynlər) cəm isimdir. Cəm isimlərlə birlikdə istifadə edilən mənsubiyyət əvəzliyi 'mes' olmalıdır.",
+    "passport_id": "05-016-0101-B01M16-07",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 16008,
+    "category": "Fransız dili",
+    "question": "Le frère de mon père est mon ...",
+    "options": [
+      "grand-père",
+      "cousin",
+      "oncle",
+      "neveu"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Atamın qardaşı mənim əmimdir. Əmi və ya dayı fransızca 'oncle' adlanır.",
+    "passport_id": "05-016-0101-B01M16-08",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 16009,
+    "category": "Fransız dili",
+    "question": "Ma grand-mère ___ très gentille.",
+    "options": [
+      "a",
+      "est",
+      "suis",
+      "es"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bir şəxsi və ya əşyanı təsvir edərkən 'être' (olmaq) feilindən istifadə edirik. 'Ma grand-mère' (Nənəm) 3-cü şəxsin təkidir (elle), buna görə feil 'est' olur.",
+    "passport_id": "05-016-0101-B01M16-09",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 16010,
+    "category": "Fransız dili",
+    "question": "Comment s'appelle ___ sœur ?",
+    "options": [
+      "ton",
+      "ta",
+      "tes",
+      "te"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Sœur' qadın cinsində olan tək isimdir. İkinci şəxsin təkində (sənin) qadın cinsi üçün 'ta' mənsubiyyət əvəzliyi istifadə olunur.",
+    "passport_id": "05-016-0101-B01M16-10",
+    "difficulty": "medium",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 16011,
+    "category": "Fransız dili",
+    "question": "Ils ___ deux sœurs et un frère.",
+    "options": [
+      "sont",
+      "avons",
+      "ont",
+      "as"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cümlə maliklik bildirir (\"Onların iki bacısı və bir qardaşı var\"). Buna görə 'avoir' feili lazımdır. 3-cü şəxsin cəmində 'avoir' 'ont' formasına düşür (sont isə être feilidir).",
+    "passport_id": "05-016-0101-B01M16-11",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 16012,
+    "category": "Fransız dili",
+    "question": "Mon cousin est grand, mais ma cousine est ...",
+    "options": [
+      "grand",
+      "grande",
+      "grandes",
+      "grands"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilində sifətlər aid olduqları ismin cinsinə və kəmiyyətinə görə uzlaşır. 'Ma cousine' qadın cinsində tək isimdir, bu səbəbdən 'grand' sifətinin sonuna 'e' əlavə olunur (grande).",
+    "passport_id": "05-016-0101-B01M16-12",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 16013,
+    "category": "Fransız dili",
+    "question": "Voici mes ... Ils habitent à Paris.",
+    "options": [
+      "cousine",
+      "grand-père",
+      "oncles",
+      "sœur"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Mes' cəmlik bildirən mənsubiyyət əvəzliyidir və ondan sonra gələn isim cəmdə olmalıdır. Yalnız 'oncles' sözü cəm halındadır (sonundakı '-s' şəkilçisi ilə).",
+    "passport_id": "05-016-0101-B01M16-13",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 16014,
+    "category": "Fransız dili",
+    "question": "___ âge a ton grand-père ?",
+    "options": [
+      "Quelle",
+      "Quels",
+      "Quelles",
+      "Quel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Âge' (yaş) fransız dilində kişi cinsində olan tək isimdir. Onunla birlikdə istifadə edilən sual əvəzliyi 'Quel' olmalıdır.",
+    "passport_id": "05-016-0101-B01M16-14",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 16015,
+    "category": "Fransız dili",
+    "question": "Les enfants de mon oncle sont mes ...",
+    "options": [
+      "frères",
+      "neveux",
+      "petits-enfants",
+      "cousins"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Əmimin (və ya dayımın) uşaqları mənim əmiuşaqlarım (xalauşaqlarım/dayıuşaqlarım) olur, bu da fransızca 'cousins' adlanır.",
+    "passport_id": "05-016-0101-B01M16-15",
+    "difficulty": "hard",
+    "topic": "Leçon 3. Ma famille et moi",
+    "bloomLevel": "application"
+  }
+]

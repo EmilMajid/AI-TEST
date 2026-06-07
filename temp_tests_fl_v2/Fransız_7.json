@@ -1,0 +1,257 @@
+[
+  {
+    "id": "12345",
+    "category": "Fransız dili",
+    "question": "Qu'est-ce que c'est ? C'est un objet pour écrire au tableau.",
+    "options": [
+      "Un crayon",
+      "Une craie",
+      "Une gomme",
+      "Une règle"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lövhədə yazmaq üçün təbaşir (une craie) istifadə olunur. 'Un crayon' karandaş, 'une gomme' pozan, 'une règle' xətkeşdir.",
+    "passport_id": "05-016-0101-B01M07-01",
+    "difficulty": "easy",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "23456",
+    "category": "Fransız dili",
+    "question": "Je calcule 2 + 2 = 4. J'aime les ... .",
+    "options": [
+      "mathématiques",
+      "sciences",
+      "langues",
+      "arts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'2+2=4' hesablama riyaziyyat (mathématiques) fənninə aiddir.",
+    "passport_id": "05-016-0101-B01M07-02",
+    "difficulty": "easy",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "34567",
+    "category": "Fransız dili",
+    "question": "J'adore ... école !",
+    "options": [
+      "le",
+      "la",
+      "l'",
+      "les"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'École' sözü saitlə başladığı üçün 'la' artikli kəsilərək (élision) 'l\\'' formasına düşür.",
+    "passport_id": "05-016-0101-B01M07-03",
+    "difficulty": "easy",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "45678",
+    "category": "Fransız dili",
+    "question": "J'ai ... cahier et ... trousse.",
+    "options": [
+      "un / un",
+      "une / une",
+      "un / une",
+      "une / un"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Cahier' (dəftər) kişi cinsindədir (un), 'trousse' (qələmdan) isə qadın cinsindədir (une).",
+    "passport_id": "05-016-0101-B01M07-04",
+    "difficulty": "easy",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "56789",
+    "category": "Fransız dili",
+    "question": "Le premier jour de la semaine à l'école est le ... .",
+    "options": [
+      "dimanche",
+      "lundi",
+      "mardi",
+      "samedi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məktəbdə həftənin ilk günü bazar ertəsidir, yəni 'lundi'.",
+    "passport_id": "05-016-0101-B01M07-05",
+    "difficulty": "easy",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "67890",
+    "category": "Fransız dili",
+    "question": "Nous ... le français à l'école.",
+    "options": [
+      "aime",
+      "aimes",
+      "aimons",
+      "aiment"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Nous' (biz) şəxs əvəzliyinə uyğun olaraq 'aimer' (sevmək) feili 'aimons' kimi hallanır.",
+    "passport_id": "05-016-0101-B01M07-06",
+    "difficulty": "medium",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "78901",
+    "category": "Fransız dili",
+    "question": "Trouve l'intrus (Fərqli olanı tap) :",
+    "options": [
+      "Un stylo",
+      "Un livre",
+      "Un professeur",
+      "Un sac à dos"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Stylo' (qələm), 'livre' (kitab) və 'sac à dos' (bel çantası) məktəb əşyalarıdır, lakin 'professeur' (müəllim) insandır və bu qrupa aid deyil.",
+    "passport_id": "05-016-0101-B01M07-07",
+    "difficulty": "medium",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "89012",
+    "category": "Fransız dili",
+    "question": "Je ... la géographie, c'est difficile.",
+    "options": [
+      "n'aime pas",
+      "ne aime pas",
+      "n'aime",
+      "pas aime"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İnkar formasında 'ne... pas' istifadə olunur. 'Aimer' feili saitlə başladığı üçün 'ne' qısaldılaraq 'n\\'' olur: 'n'aime pas'.",
+    "passport_id": "05-016-0101-B01M07-08",
+    "difficulty": "medium",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "90123",
+    "category": "Fransız dili",
+    "question": "Comment dit-on 'tarix' en français ?",
+    "options": [
+      "L'histoire",
+      "La musique",
+      "Le dessin",
+      "L'anglais"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Məktəb fənni olan 'tarix' fransız dilində 'l'histoire' adlanır.",
+    "passport_id": "05-016-0101-B01M07-09",
+    "difficulty": "medium",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "11234",
+    "category": "Fransız dili",
+    "question": "C'est ... école et ce sont ... professeurs.",
+    "options": [
+      "mon / mes",
+      "ma / mes",
+      "mon / mon",
+      "ma / mon"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'École' qadın cinsində olsa da, saitlə başladığı üçün mənsubiyyət əvəzliyi kimi 'mon' işlənir. Cəmdə olan isimlərlə (professeurs) isə 'mes' istifadə olunur.",
+    "passport_id": "05-016-0101-B01M07-10",
+    "difficulty": "medium",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "22345",
+    "category": "Fransız dili",
+    "question": "Remets les mots dans l'ordre : dans / a / mon / Il / des / sac / y / livres.",
+    "options": [
+      "Il a y dans mon sac des livres.",
+      "Dans mon sac, il y a des livres.",
+      "Il y a sac dans des livres mon.",
+      "Des livres y a il dans mon sac."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cümlənin doğru və məntiqli sırası: 'Dans mon sac, il y a des livres' (Mənim çantamda kitablar var). 'Il y a' ifadəsi bütöv qalmalıdır.",
+    "passport_id": "05-016-0101-B01M07-11",
+    "difficulty": "hard",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "33456",
+    "category": "Fransız dili",
+    "question": "Je n'ai pas ... dictionnaire.",
+    "options": [
+      "un",
+      "une",
+      "des",
+      "de"
+    ],
+    "correctAnswer": 3,
+    "explanation": "İnkar cümlələrində birbaşa tamamlığın qarşısındakı qeyri-müəyyən artikllər (un, une, des) 'de' ilə əvəz olunur.",
+    "passport_id": "05-016-0101-B01M07-12",
+    "difficulty": "hard",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "44567",
+    "category": "Fransız dili",
+    "question": "Dans la trousse, il y a :",
+    "options": [
+      "un tableau et un bureau",
+      "un stylo et une gomme",
+      "une chaise et un ordinateur",
+      "une porte et une fenêtre"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qələmdanın (la trousse) içində məktəb ləvazimatları olar, məsələn qələm (un stylo) və pozan (une gomme). Digər variantlar otaq və ya sinif əşyalarıdır.",
+    "passport_id": "05-016-0101-B01M07-13",
+    "difficulty": "hard",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "55678",
+    "category": "Fransız dili",
+    "question": "Qu'est-ce que tu aimes faire à l'école ? - J'aime ... .",
+    "options": [
+      "lire et écrire",
+      "lit et écrit",
+      "lis et écris",
+      "lisez et écrivez"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Aimer' (sevmək) kimi münasibət bildirən feildən sonra gələn ikinci feil mütləq məsdər (infinitive) formasında olmalıdır: lire et écrire.",
+    "passport_id": "05-016-0101-B01M07-14",
+    "difficulty": "hard",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "66789",
+    "category": "Fransız dili",
+    "question": "Complétez : Marie est une bonne élève. Elle ... l'école et elle a de bonnes ... .",
+    "options": [
+      "adore / notes",
+      "déteste / amis",
+      "regarde / classes",
+      "écoute / stylos"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Məntiqi olaraq 'yaxşı şagird' (bonne élève) məktəbi sevir (adore) və yaxşı qiymətlər (de bonnes notes) alır.",
+    "passport_id": "05-016-0101-B01M07-15",
+    "difficulty": "hard",
+    "topic": "Étape 2. J'aime l'école!",
+    "bloomLevel": "comprehension"
+  }
+]

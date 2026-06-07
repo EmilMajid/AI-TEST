@@ -1,0 +1,257 @@
+[
+  {
+    "id": 10001,
+    "category": "İngilis dili",
+    "question": "Choose the correct answer.\n\"Hello! What is your name?\"",
+    "options": [
+      "I am fine, thank you.",
+      "My name is Leyla.",
+      "She is my sister.",
+      "You are a student."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The question asks for a name, so the correct response is 'My name is Leyla'.",
+    "passport_id": "05-011-0101-B01M01-01-01-001",
+    "difficulty": "easy",
+    "topic": "1. What’s your name",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10002,
+    "category": "İngilis dili",
+    "question": "Fill in the blank.\n\"I ___ ten years old.\"",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The pronoun 'I' is always followed by the 'am' form of the verb 'to be' in the present tense.",
+    "passport_id": "05-011-0101-B01M01-01-01-002",
+    "difficulty": "easy",
+    "topic": "1. What’s your name",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10003,
+    "category": "İngilis dili",
+    "question": "Choose the correct question word.\n\"___ are you?\" - \"I am fine, thanks.\"",
+    "options": [
+      "Who",
+      "How",
+      "What",
+      "Where"
+    ],
+    "correctAnswer": 1,
+    "explanation": "We use 'How' to ask about someone's health or feelings, as in 'How are you?'.",
+    "passport_id": "05-011-0101-B01M01-01-01-003",
+    "difficulty": "easy",
+    "topic": "1. What’s your name",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10004,
+    "category": "İngilis dili",
+    "question": "Complete the dialogue.\nA: Nice to meet you.\nB: ____________.",
+    "options": [
+      "Good morning to you.",
+      "See you later, bye.",
+      "Nice to meet you too.",
+      "I am very well today."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The standard polite reply to 'Nice to meet you' is 'Nice to meet you too'.",
+    "passport_id": "05-011-0101-B01M01-01-01-004",
+    "difficulty": "easy",
+    "topic": "1. What’s your name",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10005,
+    "category": "İngilis dili",
+    "question": "Fill in the blank.\n\"This is my friend. ___ name is Tom.\"",
+    "options": [
+      "He",
+      "His",
+      "She",
+      "Her"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Tom' is a boy's name, so we use the possessive adjective 'His' to talk about him.",
+    "passport_id": "05-011-0101-B01M01-01-01-005",
+    "difficulty": "easy",
+    "topic": "1. What’s your name",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10006,
+    "category": "İngilis dili",
+    "question": "Which sentence is grammatically correct?",
+    "options": [
+      "He am a new student here.",
+      "They is my good friends.",
+      "We are in the fifth grade.",
+      "I are from Azerbaijan."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The pronoun 'We' takes the verb 'are'. 'He' takes 'is', 'They' takes 'are', and 'I' takes 'am'.",
+    "passport_id": "05-011-0101-B01M01-02-02-006",
+    "difficulty": "medium",
+    "topic": "1. What’s your name",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10007,
+    "category": "İngilis dili",
+    "question": "Find the correct word order.",
+    "options": [
+      "You how do spell name your?",
+      "How do you spell your name?",
+      "How you do spell your name?",
+      "Do you how spell your name?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In a question, the question word 'How' comes first, followed by the auxiliary 'do', subject 'you', and the main verb 'spell'.",
+    "passport_id": "05-011-0101-B01M01-02-02-007",
+    "difficulty": "medium",
+    "topic": "1. What’s your name",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10008,
+    "category": "İngilis dili",
+    "question": "Fill in the blanks.\n\"___ she your teacher?\" - \"No, she ___.\"",
+    "options": [
+      "Is / isn't",
+      "Are / aren't",
+      "Does / don't",
+      "Do / doesn't"
+    ],
+    "correctAnswer": 0,
+    "explanation": "We use 'Is' with the pronoun 'she' in questions, and 'isn't' for the negative short answer.",
+    "passport_id": "05-011-0101-B01M01-02-02-008",
+    "difficulty": "medium",
+    "topic": "1. What’s your name",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10009,
+    "category": "İngilis dili",
+    "question": "Choose the correct response.\n\"Where are you from?\"",
+    "options": [
+      "I am twelve years old.",
+      "I am from Azerbaijan.",
+      "I am a good student.",
+      "I am fine, thank you."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The question 'Where are you from?' asks about a country or place, so 'from Azerbaijan' is correct.",
+    "passport_id": "05-011-0101-B01M01-02-02-009",
+    "difficulty": "medium",
+    "topic": "1. What’s your name",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10010,
+    "category": "İngilis dili",
+    "question": "Complete the sentence correctly.\n\"My brother and I ___ at school now.\"",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'My brother and I' is a plural subject (we), so it takes the plural verb 'are'.",
+    "passport_id": "05-011-0101-B01M01-02-02-010",
+    "difficulty": "medium",
+    "topic": "1. What’s your name",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10011,
+    "category": "İngilis dili",
+    "question": "Choose the incorrect sentence.",
+    "options": [
+      "Their names are Ali and Omar.",
+      "This is my friend, her name is Aysel.",
+      "We are classmates and we are happy.",
+      "She is my sister, his name is Nigar."
+    ],
+    "correctAnswer": 3,
+    "explanation": "'She' refers to a female, so the possessive adjective should be 'her', not 'his'.",
+    "passport_id": "05-011-0101-B01M01-03-03-011",
+    "difficulty": "hard",
+    "topic": "1. What’s your name",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10012,
+    "category": "İngilis dili",
+    "question": "Match the question with the correct answer.\n\"How old is your brother?\"",
+    "options": [
+      "He has twelve years.",
+      "He is twelve years old.",
+      "His age are twelve.",
+      "He twelve years old is."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In English, we use the verb 'to be' (is/are/am) to talk about age, not 'have' or 'has'.",
+    "passport_id": "05-011-0101-B01M01-03-03-012",
+    "difficulty": "hard",
+    "topic": "1. What’s your name",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10013,
+    "category": "İngilis dili",
+    "question": "Fill in the missing words.\n\"___ are my books and ___ is my pen.\"",
+    "options": [
+      "This / these",
+      "These / this",
+      "That / those",
+      "There / these"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'These' is used for plural nouns (books), and 'this' is used for singular nouns (pen).",
+    "passport_id": "05-011-0101-B01M01-03-03-013",
+    "difficulty": "hard",
+    "topic": "1. What’s your name",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10014,
+    "category": "İngilis dili",
+    "question": "Complete the dialogue with the correct words.\nA: \"___ this your bag?\"\nB: \"No, it ___. My bag is blue.\"",
+    "options": [
+      "Are / aren't",
+      "Is / isn't",
+      "Does / doesn't",
+      "Am / am not"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Bag' is a singular noun (it), so we use 'Is' for the question and 'isn't' for the short negative answer.",
+    "passport_id": "05-011-0101-B01M01-03-03-014",
+    "difficulty": "hard",
+    "topic": "1. What’s your name",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10015,
+    "category": "İngilis dili",
+    "question": "Choose the correct option to form a logical conversation.\n1. I'm from Baku. And you?\n2. Hello! I am Murad.\n3. Hi! My name is Tofig. Where are you from?\n4. I am from Ganja.",
+    "options": [
+      "2, 3, 1, 4",
+      "3, 1, 2, 4",
+      "1, 4, 3, 2",
+      "2, 1, 4, 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The conversation starts with a greeting (2), followed by a reply and question (3), the answer to the question (1), and the final response (4).",
+    "passport_id": "05-011-0101-B01M01-03-03-015",
+    "difficulty": "hard",
+    "topic": "1. What’s your name",
+    "bloomLevel": "application"
+  }
+]
