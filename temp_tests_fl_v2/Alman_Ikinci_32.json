@@ -1,0 +1,257 @@
+[
+  {
+    "id": 48291,
+    "category": "Alman dili",
+    "question": "Wie ___ du?",
+    "options": [
+      "heiße",
+      "heißt",
+      "heißen",
+      "heiß"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İkinci şəxsin təkində (du) feil '-st' şəkilçisi qəbul edir. Doğru forma 'heißt'-dir.",
+    "passport_id": "05-014-0101-B01M32-01",
+    "difficulty": "easy",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23948,
+    "category": "Alman dili",
+    "question": "Das ___ mein Bruder. Er ___ 10 Jahre alt.",
+    "options": [
+      "ist / bist",
+      "sind / ist",
+      "ist / ist",
+      "bist / ist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Üçüncü şəxsin təkində 'sein' (olmaq) feili 'ist' formasına düşür. 'Das ist...' və 'Er ist...'.",
+    "passport_id": "05-014-0101-B01M32-02",
+    "difficulty": "easy",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 91837,
+    "category": "Alman dili",
+    "question": "Was machst du gern? - Ich ___ gern Fußball.",
+    "options": [
+      "spiele",
+      "spielt",
+      "spielen",
+      "spielst"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Birinci şəxsin təkində (ich) feil '-e' şəkilçisi qəbul edir. Doğru cavab: spiele.",
+    "passport_id": "05-014-0101-B01M32-03",
+    "difficulty": "easy",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 56102,
+    "category": "Alman dili",
+    "question": "Meine Mutter und mein Vater sind meine ___.",
+    "options": [
+      "Geschwister",
+      "Großeltern",
+      "Eltern",
+      "Kinder"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Mutter' (ana) və 'Vater' (ata) birlikdə 'Eltern' (valideynlər) adlanır.",
+    "passport_id": "05-014-0101-B01M32-04",
+    "difficulty": "easy",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 74391,
+    "category": "Alman dili",
+    "question": "Die Tomate ist ___.",
+    "options": [
+      "gelb",
+      "rot",
+      "blau",
+      "grün"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pomidor (Tomate) qırmızı (rot) rəngdə olur. 'Rot' qırmızı deməkdir.",
+    "passport_id": "05-014-0101-B01M32-05",
+    "difficulty": "easy",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 84920,
+    "category": "Alman dili",
+    "question": "Das ist Maria. ___ Hund heißt Bello.",
+    "options": [
+      "Sein",
+      "Ihr",
+      "Mein",
+      "Dein"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Maria qadın cinsində olduğuna görə (sie), ona aid mənsubiyyət əvəzliyi 'Ihr' (onun) olur. 'Sein' kişi/orta cins üçün istifadə edilir.",
+    "passport_id": "05-014-0101-B01M32-06",
+    "difficulty": "medium",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10583,
+    "category": "Alman dili",
+    "question": "Woher ___ Sie, Herr Müller?",
+    "options": [
+      "kommt",
+      "kommst",
+      "komme",
+      "kommen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nəzakət forması olan 'Sie' (Siz) ilə feil məsdər formasında, yəni 'kommen' kimi işlənir.",
+    "passport_id": "05-014-0101-B01M32-07",
+    "difficulty": "medium",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 34912,
+    "category": "Alman dili",
+    "question": "Hast du ___ Lineal?",
+    "options": [
+      "ein",
+      "einen",
+      "eine",
+      "einer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Lineal' orta cinsdədir (das Lineal). Akkusativ halda 'das' artiklinin qeyri-müəyyən forması 'ein' olaraq qalır.",
+    "passport_id": "05-014-0101-B01M32-08",
+    "difficulty": "medium",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 61729,
+    "category": "Alman dili",
+    "question": "___ Montag habe ich Deutsch.",
+    "options": [
+      "Im",
+      "Am",
+      "Um",
+      "In"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Həftənin günləri ilə həmişə 'am' (an dem) sözönü işlənir (Am Montag, am Dienstag...).",
+    "passport_id": "05-014-0101-B01M32-09",
+    "difficulty": "medium",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 29401,
+    "category": "Alman dili",
+    "question": "Ein Buch, zwei ___.",
+    "options": [
+      "Büchers",
+      "Bücher",
+      "Büche",
+      "Bucher"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Das Buch' (kitab) sözünün cəm forması umlaut və '-er' şəkilçisi qəbul edərək 'die Bücher' olur.",
+    "passport_id": "05-014-0101-B01M32-10",
+    "difficulty": "medium",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 48102,
+    "category": "Alman dili",
+    "question": "___ ihr ___ Haustier?",
+    "options": [
+      "Habt / ein",
+      "Hast / einen",
+      "Haben / eine",
+      "Habt / einen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cəmin ikinci şəxsi 'ihr' ilə 'haben' feili 'habt' olur. 'Haustier' (ev heyvanı) orta cinsdə (das) olduğu üçün Akkusativ halda 'ein' olur.",
+    "passport_id": "05-014-0101-B01M32-11",
+    "difficulty": "hard",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 18274,
+    "category": "Alman dili",
+    "question": "Er ___ sehr gut Deutsch und Englisch.",
+    "options": [
+      "sprecht",
+      "spreche",
+      "sprichst",
+      "spricht"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Sprechen' qüvvətli feildir. 3-cü şəxsin təkində (er/sie/es) kökündəki 'e' saiti 'i'-yə keçir və 'spricht' formasını alır.",
+    "passport_id": "05-014-0101-B01M32-12",
+    "difficulty": "hard",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 93481,
+    "category": "Alman dili",
+    "question": "Ist das ein Kuli? - Nein, das ist ___ Kuli. Das ist ein Bleistift.",
+    "options": [
+      "nicht",
+      "keine",
+      "kein",
+      "nichts"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Der Kuli' (qələm) kişi cinsindədir və isimləri inkar edərkən Nominativ halda qeyri-müəyyən artiklin inkarı kimi 'kein' istifadə olunur.",
+    "passport_id": "05-014-0101-B01M32-13",
+    "difficulty": "hard",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 55039,
+    "category": "Alman dili",
+    "question": "___ alt bist du und ___ wohnst du?",
+    "options": [
+      "Wie / wo",
+      "Wo / wie",
+      "Wer / woher",
+      "Wie / wer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yaşı soruşarkən 'Wie alt' (neçə yaşın var?), yaşayış yerini soruşarkən isə 'Wo' (harada) sual əvəzlikləri istifadə olunur.",
+    "passport_id": "05-014-0101-B01M32-14",
+    "difficulty": "hard",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 33910,
+    "category": "Alman dili",
+    "question": "Ich ___ heute Fußball spielen.",
+    "options": [
+      "möchtet",
+      "möchte",
+      "möchtest",
+      "möchten"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Möchten' modal feili birinci və üçüncü şəxsin təkində eyni formanı alır: ich möchte, er/sie/es möchte.",
+    "passport_id": "05-014-0101-B01M32-15",
+    "difficulty": "hard",
+    "topic": "Das kannst du jetzt!",
+    "bloomLevel": "application"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 12345,
+    "category": "Alman dili",
+    "question": "Wo ist Ali? Er ist ... Park.",
+    "options": [
+      "in der",
+      "im",
+      "am",
+      "auf"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Park\" sözü kişi cinsindədir (der Park). \"Harada?\" (Wo?) sualına cavab verdikdə Dativ halında \"in dem\" qısaldılaraq \"im\" olur.",
+    "passport_id": "05-014-0101-B01M09-01",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23456,
+    "category": "Alman dili",
+    "question": "... ist im Park? - Das ist Ali.",
+    "options": [
+      "Wo",
+      "Was",
+      "Wer",
+      "Wie"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İnsanı soruşduqda \"Wer?\" (Kim?) sual əvəzliyindən istifadə olunur.",
+    "passport_id": "05-014-0101-B01M09-02",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 34567,
+    "category": "Alman dili",
+    "question": "Ist Anna in der Schule? - Ja, ... ist in der Schule.",
+    "options": [
+      "er",
+      "es",
+      "sie",
+      "wir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anna qadın adıdır, ona görə də o, \"sie\" (o) şəxs əvəzliyi ilə əvəz olunur. Azərbaycanlı şagirdlər tez-tez ingilis dilinin təsiri ilə qadın cinsi üçün səhv əvəzliklər seçə bilirlər.",
+    "passport_id": "05-014-0101-B01M09-03",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 45678,
+    "category": "Alman dili",
+    "question": "Wo spielen die Kinder? Sie spielen ... Garten.",
+    "options": [
+      "in",
+      "im",
+      "an",
+      "auf"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Garten\" sözü kişi cinsindədir (der Garten) və məkan bildirən \"Wo?\" sualına cavabda Dativ halında \"im\" şəklində işlənir.",
+    "passport_id": "05-014-0101-B01M09-04",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 56789,
+    "category": "Alman dili",
+    "question": "Wo bist ... ? - Ich bin zu Hause.",
+    "options": [
+      "du",
+      "er",
+      "ihr",
+      "sie"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"bist\" feli \"sein\" (olmaq) felinin \"du\" (sən) şəxs əvəzliyinə uyğun olan formasıdır.",
+    "passport_id": "05-014-0101-B01M09-05",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 67890,
+    "category": "Alman dili",
+    "question": "Hans ist nicht hier. ... ist dort.",
+    "options": [
+      "Er",
+      "Sie",
+      "Es",
+      "Ich"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hans oğlan adıdır, ona görə də \"Er\" (o - kişi cinsi) şəxs əvəzliyi işlədilir.",
+    "passport_id": "05-014-0101-B01M09-06",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 78901,
+    "category": "Alman dili",
+    "question": "... ihr im Park? - Nein, wir sind zu Hause.",
+    "options": [
+      "Sind",
+      "Bist",
+      "Seid",
+      "Ist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"ihr\" (siz) cəm şəxs əvəzliyi ilə \"sein\" feli cəmdə \"seid\" formasında olur.",
+    "passport_id": "05-014-0101-B01M09-07",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 89012,
+    "category": "Alman dili",
+    "question": "Wo ist das Mädchen? ... ist im Zoo.",
+    "options": [
+      "Es",
+      "Sie",
+      "Er",
+      "Wir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Mädchen\" (qız) sözü alman dilində orta cinsdədir (das Mädchen), buna görə də məntiqi olaraq qadın olsa da, qrammatik olaraq \"es\" əvəzliyi ilə əvəz olunur.",
+    "passport_id": "05-014-0101-B01M09-08",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 90123,
+    "category": "Alman dili",
+    "question": "Wo ist der Hund? Er ist ... Hause.",
+    "options": [
+      "im",
+      "in",
+      "zu",
+      "auf"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Evdə\" demək üçün alman dilində qaydasız olaraq \"zu Hause\" ifadəsi işlədilir.",
+    "passport_id": "05-014-0101-B01M09-09",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 11234,
+    "category": "Alman dili",
+    "question": "Mein Bruder ... im Garten.",
+    "options": [
+      "bin",
+      "bist",
+      "seid",
+      "ist"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Mein Bruder\" (Mənim qardaşım) 3-cü şəxsin təkindədir (er), buna görə \"sein\" feli \"ist\" formasını alır.",
+    "passport_id": "05-014-0101-B01M09-10",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 22345,
+    "category": "Alman dili",
+    "question": "Ist ... Katze im Park? - Nein, sie ist hier.",
+    "options": [
+      "der",
+      "das",
+      "die",
+      "den"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Katze\" (pişik) sözü qadın cinsindədir, ona görə də müəyyən artikl Nominativ halda \"die\" olmalıdır.",
+    "passport_id": "05-014-0101-B01M09-11",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 33456,
+    "category": "Alman dili",
+    "question": "Herr Müller, ... Sie im Büro?",
+    "options": [
+      "ist",
+      "sind",
+      "seid",
+      "bist"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nəzakət forması olan \"Sie\" (Siz) ilə fel həmişə cəm formada, yəni \"sind\" kimi istifadə olunur.",
+    "passport_id": "05-014-0101-B01M09-12",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 44567,
+    "category": "Alman dili",
+    "question": "... ist das? - Das ist ein Park.",
+    "options": [
+      "Wer",
+      "Wie",
+      "Was",
+      "Wo"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Park cansız məkan olduğu üçün \"Bu nədir?\" sualı verilərkən \"Was?\" (Nə?) sual əvəzliyi işlədilir. Məkan soruşulsa da, burada cümlə strukturu \"Bu ...-dır\" şəklindədir.",
+    "passport_id": "05-014-0101-B01M09-13",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 55678,
+    "category": "Alman dili",
+    "question": "Wo lernen die Schüler? Sie lernen ... Klasse.",
+    "options": [
+      "in der",
+      "in dem",
+      "im",
+      "an der"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Klasse\" sözü qadın cinsindədir (die Klasse). \"Wo?\" sualına cavab olaraq Dativ halında \"in\" sözönündən sonra artikl \"der\" olur.",
+    "passport_id": "05-014-0101-B01M09-14",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 66789,
+    "category": "Alman dili",
+    "question": "Hans und Peter, wo ... ihr?",
+    "options": [
+      "sind",
+      "ist",
+      "seid",
+      "bist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İki nəfərə müraciət edildiyi üçün əvəzlik cəmdəki \"ihr\" (siz) olur. Buna uyğun olaraq da \"sein\" feli \"seid\" formasına düşür.",
+    "passport_id": "05-014-0101-B01M09-15",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Ist er im Park?",
+    "bloomLevel": "application"
+  }
+]

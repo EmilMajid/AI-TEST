@@ -1,0 +1,152 @@
+[
+  {
+    "id": "05-008-0101-B01M19-01",
+    "question": "Təbii fəlakətlər hansı halda baş verir?",
+    "A": "İnsanlar zavod və fabriklərdə yeni məhsullar istehsal etdikdə",
+    "B": "Təbiət hadisələri insanların həyatına və təsərrüfatına zərər vurduqda",
+    "C": "Meşədə ağaclar kütləvi şəkildə çiçəkləyib meyvə verdikdə",
+    "D": "Fəsillər bir-birini müntəzəm olaraq əvəz etməyə başladıqda",
+    "correct": "B",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-008-0101-B01M19-02",
+    "question": "Yerin təkinin qəfil sarsılması və hərəkəti necə adlanır?",
+    "A": "Daşqın",
+    "B": "Qasırğa",
+    "C": "Zəlzələ",
+    "D": "Torpaq sürüşməsi",
+    "correct": "C",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-008-0101-B01M19-03",
+    "question": "Güclü sualtı zəlzələlər nəticəsində okeanlarda yaranan nəhəng və dağıdıcı dalğalar necə adlanır?",
+    "A": "Daşqın",
+    "B": "Qabarma",
+    "C": "Tayfun",
+    "D": "Sunami",
+    "correct": "D",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-008-0101-B01M19-04",
+    "question": "Dağlardan qəflətən qopub sürətlə aşağıya doğru hərəkət edən nəhəng qar kütləsi nədir?",
+    "A": "Qar uçqunu",
+    "B": "Torpaq sürüşməsi",
+    "C": "Vulkan püskürməsi",
+    "D": "Sel fəlakəti",
+    "correct": "A",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-008-0101-B01M19-05",
+    "question": "Aşağıdakılardan hansı meteoroloji təbii fəlakət hesab olunur?",
+    "A": "Zəlzələ",
+    "B": "Qasırğa",
+    "C": "Vulkan",
+    "D": "Sunami",
+    "correct": "B",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-008-0101-B01M19-06",
+    "question": "Zəlzələ baş verən zaman otaqdasınızsa, ilk növbədə hansı təhlükəsizlik qaydasına əməl etməlisiniz?",
+    "A": "Sürətlə pəncərəyə yaxınlaşıb çöldəki vəziyyətə baxmaq",
+    "B": "Dərhal liftə minib binanın aşağı mərtəbəsinə düşmək",
+    "C": "Möhkəm masanın altına girərək başı və boynu qorumaq",
+    "D": "Otağın ortasında dayanaraq sarsıntının bitməsini gözləmək",
+    "correct": "C",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-008-0101-B01M19-07",
+    "question": "Daşqın və sel fəlakətindən qorunmaq üçün hansı qabaqlayıcı tədbirin görülməsi daha məqsədəuyğundur?",
+    "A": "Yüksək dağlıq ərazilərdə meşələrin qırılaraq düzənliyə çevrilməsi",
+    "B": "Evlərin yalnız çay kənarında və dərələrdə inşa edilməsi",
+    "C": "Təsərrüfat işlərinin birbaşa su mənbələrinə yaxın yerləşdirilməsi",
+    "D": "Çay yataqlarında və sahillərdə qoruyucu bəndlərin tikilməsi",
+    "correct": "D",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-008-0101-B01M19-08",
+    "question": "Vulkan püskürməsi zamanı yaranan və ətraf mühit üçün ciddi təhlükə mənbəyi olan əsas amil nədir?",
+    "A": "Yüksək temperaturlu maqmanın yer səthinə çıxaraq axması",
+    "B": "Güclü yağışların və ildırımların ardıcıl baş verməsi",
+    "C": "Dağ çaylarının donaraq böyük buzlaqlara çevrilməsi",
+    "D": "Yeraltı suların birdən-birə yer səthinə fışqırması",
+    "correct": "A",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-008-0101-B01M19-09",
+    "question": "Torpaq sürüşməsinin qarşısını almaq üçün ən səmərəli təbii üsul hansıdır?",
+    "A": "Yamaclarda çoxlu sayda yeni yaşayış binalarının tikilməsi",
+    "B": "Dağ və təpə yamaclarında ağac və kolların əkilməsi",
+    "C": "Sürüşmə zonasında olan torpağın tamamilə qazılıb çıxarılması",
+    "D": "Ərazidəki bütün bitki örtüyünün məhv edilərək təmizlənməsi",
+    "correct": "B",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-008-0101-B01M19-10",
+    "question": "Sunami təhlükəsi xəbərdarlığı edildikdə sahilboyu ərazilərdə yaşayan insanlar nə etməlidir?",
+    "A": "Təcili olaraq dəniz sahilindən uzaqlaşıb hündür yerlərə qalxmalıdırlar",
+    "B": "Gəmilərə minib dənizin daha dərin hissələrinə doğru irəliləməlidirlər",
+    "C": "Evlərinin qapı və pəncərələrini bağlayıb dənizi izləməlidirlər",
+    "D": "Sahildə toplanaraq dalğaların gəlməsini maraqla gözləməlidirlər",
+    "correct": "A",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-008-0101-B01M19-11",
+    "question": "Zəlzələnin gücünü və maqnitudasını ölçmək üçün istifadə olunan xüsusi cihaz və cədvəl necə adlanır?",
+    "A": "Barometr cihazı və Selsi şkalası",
+    "B": "Anemometr cihazı və Farenheyt şkalası",
+    "C": "Hiqrometr cihazı və Kelvin şkalası",
+    "D": "Seysmoqraf cihazı və Rixter şkalası",
+    "correct": "D",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-008-0101-B01M19-12",
+    "question": "Təbii fəlakətlərin qarşısının alınması və fəsadlarının aradan qaldırılması üçün hansı dövlət qurumu fəaliyyət göstərir?",
+    "A": "Təhsil və Elm Nazirliyi",
+    "B": "Fövqəladə Hallar Nazirliyi",
+    "C": "Kənd Təsərrüfatı Nazirliyi",
+    "D": "Rəqəmsal İnkişaf Nazirliyi",
+    "correct": "B",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-008-0101-B01M19-13",
+    "question": "Quraqlıq digər təbii fəlakətlərdən hansı xüsusiyyətinə görə əsaslı şəkildə fərqlənir?",
+    "A": "Qəflətən baş verir və qısa müddət ərzində böyük dağıntılar yaradır",
+    "B": "Yalnız dağlıq ərazilərdə müşahidə olunur və düzənliklərə təsir etmir",
+    "C": "Uzun müddət ərzində yavaş-yavaş formalaşaraq tədricən təsir göstərir",
+    "D": "İnsan fəaliyyətindən tamamilə asılı olmayaraq baş verən hadisədir",
+    "correct": "C",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-008-0101-B01M19-14",
+    "question": "Meşə yanğınlarının həm təbii, həm də antropogen (insan tərəfindən) səbəbləri ola bilər. Aşağıdakılardan hansı təbii səbəbə aiddir?",
+    "A": "Quru və isti hava şəraitində ildırım çaxması",
+    "B": "Söndürülməmiş tonqal qalıqlarının meşədə qoyulması",
+    "C": "Siqaret kötüklərinin ehtiyatsızlıqdan otluğa atılması",
+    "D": "Kənd təsərrüfatı sahələrinin bilərəkdən yandırılması",
+    "correct": "A",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-008-0101-B01M19-15",
+    "question": "İnsanların fəaliyyəti nəticəsində qlobal istiləşmənin sürətlənməsi hansı təbii fəlakətin daha tez-tez baş verməsinə səbəb olur?",
+    "A": "Yerin daxilindəki tektonik plitələrin toqquşaraq zəlzələlər yaratmasına",
+    "B": "Yeraltı suların sürətlə quruyaraq geniş miqyaslı torpaq çökmələrinə",
+    "C": "Dağ vulkanlarının qəfildən oyanaraq külli miqdarda maqma püskürməsinə",
+    "D": "Qütb buzlaqlarının əriməsi nəticəsində yaranan dağıdıcı su daşqınlarına",
+    "correct": "D",
+    "difficulty": "çətin"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 15482,
+    "category": "Alman dili",
+    "question": "Das ist mein Freund. Er ___ aus Japan.",
+    "options": [
+      "kommst",
+      "kommt",
+      "komme",
+      "kommen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "3-cü şəxsin təkində (Er - o) felin sonluğu '-t' olur. Buna görə də düzgün cavab 'kommt' olmalıdır.",
+    "passport_id": "05-012-0101-B01M04-01",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 89213,
+    "category": "Alman dili",
+    "question": "Was bedeutet \"Yaponiya\" auf Deutsch?",
+    "options": [
+      "Spanien",
+      "England",
+      "Japan",
+      "Italien"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Yaponiya\" alman dilində \"Japan\" deməkdir.",
+    "passport_id": "05-012-0101-B01M04-02",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 47291,
+    "category": "Alman dili",
+    "question": "Aysel ist meine Freundin. ___ kommt aus Aserbaidschan.",
+    "options": [
+      "Er",
+      "Du",
+      "Ich",
+      "Sie"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Aysel qız adıdır. Qadın cinsi üçün 3-cü şəxsin təkində \"sie\" (o) şəxs əvəzliyi istifadə olunur.",
+    "passport_id": "05-012-0101-B01M04-03",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 61284,
+    "category": "Alman dili",
+    "question": "Ich wohne ___ Baku.",
+    "options": [
+      "in",
+      "aus",
+      "von",
+      "zu"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Şəhər və ya ölkələrdə yaşamağı bildirmək üçün \"in\" (içində, -da, -də) sözönü istifadə olunur (in Baku).",
+    "passport_id": "05-012-0101-B01M04-04",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 34928,
+    "category": "Alman dili",
+    "question": "Mein Freund kommt ___ Deutschland.",
+    "options": [
+      "von",
+      "in",
+      "aus",
+      "auf"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Haradansa gəldiyini bildirmək üçün \"aus\" (-dan, -dən) sözönü istifadə olunur.",
+    "passport_id": "05-012-0101-B01M04-05",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 78102,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist richtig?",
+    "options": [
+      "Das ist Ali. Sie kommt aus Japan.",
+      "Das ist Ali. Ich komme aus Japan.",
+      "Das ist Ali. Er kommt aus Japan.",
+      "Das ist Ali. Du kommst aus Japan."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ali kişi adıdır. Kişi cinsi üçün \"Er\" şəxs əvəzliyi istifadə edilməlidir.",
+    "passport_id": "05-012-0101-B01M04-06",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 56239,
+    "category": "Alman dili",
+    "question": "Taro wohnt in Tokio. Tokio ist in ___.",
+    "options": [
+      "Deutschland",
+      "Japan",
+      "Frankreich",
+      "Spanien"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tokio Yaponiyanın (Japan) paytaxtıdır. Məntiqi olaraq \"Tokio ist in Japan\" olmalıdır.",
+    "passport_id": "05-012-0101-B01M04-07",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 23948,
+    "category": "Alman dili",
+    "question": "Ergänze den Dialog:\n- Woher kommst du?\n- ___",
+    "options": [
+      "Ich wohne in Japan.",
+      "Ich spreche Japan.",
+      "Ich heiße Japan.",
+      "Ich komme aus Japan."
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Woher kommst du?\" (Sən haradansan?) sualına mütləq \"Ich komme aus...\" forması ilə cavab verilir.",
+    "passport_id": "05-012-0101-B01M04-08",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 91823,
+    "category": "Alman dili",
+    "question": "Hansı cümlə qrammatik cəhətdən doğrudur?",
+    "options": [
+      "Meine Freundin heißt Sakura. Sie kommt aus Japan.",
+      "Meine Freundin heißt Sakura. Er kommt aus Japan.",
+      "Mein Freund heißt Sakura. Wir kommen aus Japan.",
+      "Meine Freundin heißt Sakura. Sie komme aus Japan."
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Freundin\" qadın cinsində olduğu üçün \"Sie\" əvəzliyi ilə əvəz olunmalıdır və fel \"kommt\" olmalıdır.",
+    "passport_id": "05-012-0101-B01M04-09",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 48102,
+    "category": "Alman dili",
+    "question": "Was passt nicht? (Was ist kein Land?)",
+    "options": [
+      "Deutschland",
+      "Aserbaidschan",
+      "Japan",
+      "Tokio"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Deutschland, Aserbaidschan və Japan ölkə (Land) adlarıdır. Tokio isə şəhər (Stadt) adıdır.",
+    "passport_id": "05-012-0101-B01M04-10",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10293,
+    "category": "Alman dili",
+    "question": "Finde den Fehler im Satz: \"Mein Freund komme aus Japan.\"",
+    "options": [
+      "Das Wort \"aus\" muss \"in\" sein.",
+      "Das Verb \"komme\" muss \"kommt\" sein.",
+      "Das Wort \"Mein\" muss \"Meine\" sein.",
+      "Das Wort \"Freund\" muss \"Freunde\" sein."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mübtəda 3-cü şəxsin təkində (Mein Freund - Er) olduğu üçün fel mütləq \"-t\" şəkilçisi qəbul etməlidir: \"kommt\".",
+    "passport_id": "05-012-0101-B01M04-11",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 83746,
+    "category": "Alman dili",
+    "question": "Lese den Text und wähle die richtige Aussage: \"Taro und Yui sind Geschwister. Sie kommen aus Tokio, aber sie wohnen jetzt in Berlin.\"",
+    "options": [
+      "Taro und Yui wohnen in Japan.",
+      "Taro und Yui kommen aus Deutschland.",
+      "Taro und Yui kommen aus Japan.",
+      "Taro und Yui wohnen in Tokio."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətnə əsasən, onlar Tokiodan (Yaponiyadan) gəlirlər, lakin hazırda Berlində (Almaniyada) yaşayırlar. Buna görə də onların Yaponiyadan gəldiyini bildirən cavab doğrudur.",
+    "passport_id": "05-012-0101-B01M04-12",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 29384,
+    "category": "Alman dili",
+    "question": "Setze die richtigen Verben ein:\nDas ___ Hans. Er ___ aus Deutschland, aber er ___ in Baku.",
+    "options": [
+      "ist / kommt / wohnt",
+      "kommt / ist / wohnt",
+      "wohnt / kommt / ist",
+      "ist / wohnt / kommt"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Düzgün ifadələr: Das ist (Bu ...-dır), er kommt aus (o ...-dan gəlir), er wohnt in (o ...-da yaşayır). Ardıcıllıq: ist, kommt, wohnt.",
+    "passport_id": "05-012-0101-B01M04-13",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 64758,
+    "category": "Alman dili",
+    "question": "Verbinde richtig:\n1. Woher kommt Maria?\n2. Wo wohnt Maria?\n3. Wie alt ist Maria?\n\na. In Madrid.\nb. Sie ist 11 Jahre alt.\nc. Aus Spanien.",
+    "options": [
+      "1-a, 2-c, 3-b",
+      "1-c, 2-a, 3-b",
+      "1-b, 2-a, 3-c",
+      "1-c, 2-b, 3-a"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1. Woher (haradan) -> Aus Spanien. 2. Wo (harada) -> In Madrid. 3. Wie alt (neçə yaş) -> Sie ist 11 Jahre alt.",
+    "passport_id": "05-012-0101-B01M04-14",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 50192,
+    "category": "Alman dili",
+    "question": "Übersetze den Satz ins Deutsche: \"Mənim rəfiqəm Yaponiyadan gəlir.\"",
+    "options": [
+      "Mein Freund kommt aus Japan.",
+      "Meine Freundin wohnt in Japan.",
+      "Mein Freund wohnt in Japan.",
+      "Meine Freundin kommt aus Japan."
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Rəfiqə\" qadın cinsində \"meine Freundin\" deməkdir. \"Gəlir\" isə \"kommt aus\" forması ilə ifadə olunur.",
+    "passport_id": "05-012-0101-B01M04-15",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Mein Freunde? kommt aus Japan.",
+    "bloomLevel": "application"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 12001,
+    "category": "Fransız dili",
+    "question": "Que dis-tu pour saluer ton ami le matin ?",
+    "options": [
+      "Bonne nuit !",
+      "Bonjour !",
+      "Au revoir !",
+      "Bonsoir !"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Le matin (səhər) görüşərkən « Bonjour ! » (Sabahınız xeyir / Salam) deyilir. « Bonne nuit » gecə, « Au revoir » sağollaşarkən, « Bonsoir » isə axşam deyilir.",
+    "passport_id": "05-016-0101-B01M12-01",
+    "difficulty": "easy",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12002,
+    "category": "Fransız dili",
+    "question": "Combien font « dix » plus « cinq » ?",
+    "options": [
+      "Quatorze",
+      "Seize",
+      "Quinze",
+      "Douze"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Riyazi hesablama: 10 (dix) + 5 (cinq) = 15. Fransız dilində 15 rəqəmi « quinze » olaraq yazılır.",
+    "passport_id": "05-016-0101-B01M12-02",
+    "difficulty": "easy",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12003,
+    "category": "Fransız dili",
+    "question": "Complétez : C'est ... gomme.",
+    "options": [
+      "un",
+      "une",
+      "le",
+      "des"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilində « gomme » (pozan) sözü qadın cinsindədir, ona görə də qeyri-müəyyən artikl olaraq « une » istifadə olunmalıdır (une gomme).",
+    "passport_id": "05-016-0101-B01M12-03",
+    "difficulty": "easy",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 12004,
+    "category": "Fransız dili",
+    "question": "Complétez avec le verbe « être » : Nous ... des élèves.",
+    "options": [
+      "sommes",
+      "sont",
+      "êtes",
+      "avons"
+    ],
+    "correctAnswer": 0,
+    "explanation": "« Nous » (biz) şəxs əvəzliyi ilə « être » (olmaq) feli indiki zamanda « sommes » formasını alır (Nous sommes).",
+    "passport_id": "05-016-0101-B01M12-04",
+    "difficulty": "easy",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12005,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne couleur : La pomme est ... .",
+    "options": [
+      "rouge",
+      "vert",
+      "bleu",
+      "noir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "« Pomme » qadın cinsində olduğu üçün sifət (rəng) də qadın cinsində olmalıdır. « Rouge » həm kişi, həm qadın cinsində eyni cür yazılır. Digər rənglər kişi cinsində verilmişdir (verte, bleue, noire olmalı idi).",
+    "passport_id": "05-016-0101-B01M12-05",
+    "difficulty": "easy",
+    "topic": "Je révise",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 12006,
+    "category": "Fransız dili",
+    "question": "Choisissez la bonne forme du verbe « avoir » : Elles ... des livres.",
+    "options": [
+      "a",
+      "ont",
+      "avez",
+      "sont"
+    ],
+    "correctAnswer": 1,
+    "explanation": "« Elles » (onlar - qadın cinsi) üçüncü şəxs cəmdədir. « Avoir » (malik olmaq) feli bu şəxslə « ont » olur. « Sont » isə être felidir.",
+    "passport_id": "05-016-0101-B01M12-06",
+    "difficulty": "medium",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12007,
+    "category": "Fransız dili",
+    "question": "C'est le père de Marie. C'est ... père.",
+    "options": [
+      "ma",
+      "sa",
+      "son",
+      "mon"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mənsubiyyət əvəzliyi ismin cinsinə görə dəyişir. « Père » (ata) kişi cinsində tək halda olduğu üçün « son » (onun) istifadə olunur: son père.",
+    "passport_id": "05-016-0101-B01M12-07",
+    "difficulty": "medium",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 12008,
+    "category": "Fransız dili",
+    "question": "Complétez : Tu ... le français. (parler)",
+    "options": [
+      "parle",
+      "parles",
+      "parlez",
+      "parlent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Birinci qrup (-er) felləri « tu » (sən) şəxsi ilə indiki zamanda təsriflənərkən sonu « -es » şəkilçisi qəbul edir: Tu parles.",
+    "passport_id": "05-016-0101-B01M12-08",
+    "difficulty": "medium",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 12009,
+    "category": "Fransız dili",
+    "question": "Quel est le pluriel du mot « un oiseau » ?",
+    "options": [
+      "des oiseaux",
+      "des oiseaus",
+      "les oiseau",
+      "une oiseaux"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sonu « -eau » ilə bitən isimlərin cəmi « -x » artırmaqla düzəlir. Həmçinin, qeyri-müəyyən artikl olan « un » cəmdə « des » olur: des oiseaux.",
+    "passport_id": "05-016-0101-B01M12-09",
+    "difficulty": "medium",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12010,
+    "category": "Fransız dili",
+    "question": "Qu'est-ce qu'il y a dans ta trousse ?",
+    "options": [
+      "Une chaise et une table.",
+      "Un cahier et un livre.",
+      "Un stylo et un crayon.",
+      "Un tableau et un bureau."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sual: Sənin qələm qabında (trousse) nə var? Qələm qabında qələm (stylo) və karandaş (crayon) olar. Digər variantlar sinif otağı əşyalarıdır.",
+    "passport_id": "05-016-0101-B01M12-10",
+    "difficulty": "medium",
+    "topic": "Je révise",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 12011,
+    "category": "Fransız dili",
+    "question": "Mettez la phrase à la forme négative : « Il aime le sport. »",
+    "options": [
+      "Il n'aime pas le sport.",
+      "Il ne aime pas le sport.",
+      "Il aime ne pas le sport.",
+      "Il pas aime le sport."
+    ],
+    "correctAnswer": 0,
+    "explanation": "İnkar cümləsi yaratmaq üçün « ne ... pas » hissəcikləri felin ətrafına artırılır. « Aime » feli saitlə başladığı üçün « ne » şəkilçisindəki 'e' düşür və « n' » olur: Il n'aime pas.",
+    "passport_id": "05-016-0101-B01M12-11",
+    "difficulty": "hard",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 12012,
+    "category": "Fransız dili",
+    "question": "Trouvez le bon mot interrogatif : ... est cette fille ? - C'est ma sœur.",
+    "options": [
+      "Qu'est-ce que",
+      "Quel",
+      "Qui",
+      "Comment"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sual şəxs haqqında (« C'est ma sœur » - O, mənim bacımdır) verildiyi üçün « kim » mənasına gələn « Qui » istifadə olunmalıdır: Qui est cette fille ? (Bu qız kimdir?)",
+    "passport_id": "05-016-0101-B01M12-12",
+    "difficulty": "hard",
+    "topic": "Je révise",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 12013,
+    "category": "Fransız dili",
+    "question": "Complétez avec la bonne préposition : Le chat se cache ... la table.",
+    "options": [
+      "dans",
+      "sous",
+      "entre",
+      "au"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pişik masanın altında (« sous ») gizlənə bilər. « Dans » (içində), « entre » (arasında) məntiqi olaraq uyğun gəlmir, « au » isə istiqamət bildirir.",
+    "passport_id": "05-016-0101-B01M12-13",
+    "difficulty": "hard",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 12014,
+    "category": "Fransız dili",
+    "question": "Trouvez le bon membre de la famille : Le frère de ma mère est mon ... .",
+    "options": [
+      "grand-père",
+      "oncle",
+      "cousin",
+      "neveu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anamın qardaşı mənim dayım (oncle) olur. Grand-père - baba, cousin - əmi/dayı oğlu, neveu - qardaş/bacı oğludur.",
+    "passport_id": "05-016-0101-B01M12-14",
+    "difficulty": "hard",
+    "topic": "Je révise",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 12015,
+    "category": "Fransız dili",
+    "question": "Complétez la phrase : Mes amis ... à l'école.",
+    "options": [
+      "va",
+      "allons",
+      "allez",
+      "vont"
+    ],
+    "correctAnswer": 3,
+    "explanation": "« Mes amis » (mənim dostlarım) cəmdə, üçüncü şəxsdədir (ils). Bu halda « aller » (getmək) feli indiki zamanda « vont » formasını alır (Ils vont).",
+    "passport_id": "05-016-0101-B01M12-15",
+    "difficulty": "hard",
+    "topic": "Je révise",
+    "bloomLevel": "application"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "05-010-0101-B01M09-01",
+    "question": "Voleybol komandasında meydanda eyni vaxtda neçə oyunçu olur?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-010-0101-B01M09-02",
+    "question": "Voleybolda topu rəqib tərəfə keçirmək üçün komandaya maksimum neçə toxunuş icazə verilir (blok istisna olmaqla)?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "3",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-010-0101-B01M09-03",
+    "question": "Voleybol oyununu başlamaq üçün oyunçu hansı hərəkəti edir?",
+    "options": [
+      "Blok",
+      "Ötürmə",
+      "Zərbə",
+      "Servis"
+    ],
+    "answer": "Servis",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-010-0101-B01M09-04",
+    "question": "Voleybolda hər set (həlledici set istisna olmaqla) neçə xala qədər oynanılır?",
+    "options": [
+      "15",
+      "21",
+      "25",
+      "30"
+    ],
+    "answer": "25",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-010-0101-B01M09-05",
+    "question": "Voleybolda arxa xətt oyunçusu hücum zərbəsini hansı xəttin arxasından vurmalıdır?",
+    "options": [
+      "Mərkəz xəttinin",
+      "Üç metrlik xəttin",
+      "Yan xəttin",
+      "Xidmət xəttinin"
+    ],
+    "answer": "Üç metrlik xəttin",
+    "difficulty": "sadə"
+  },
+  {
+    "id": "05-010-0101-B01M09-06",
+    "question": "Voleybolda həlledici set (5-ci set) tay-breyk adlanır. Bu set neçə xala qədər oynanılır?",
+    "options": [
+      "11 xala qədər",
+      "15 xala qədər",
+      "21 xala qədər",
+      "25 xala qədər"
+    ],
+    "answer": "15 xala qədər",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-010-0101-B01M09-07",
+    "question": "Libero oyunçusu hansı funksiyanı yerinə yetirə bilməz?",
+    "options": [
+      "Servis zərbəsini yerinə yetirmək",
+      "Arxa xətdən topu qəbul etmək",
+      "Müdafiə funksiyasını yerinə yetirmək",
+      "Komanda yoldaşına dəqiq pas vermək"
+    ],
+    "answer": "Servis zərbəsini yerinə yetirmək",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-010-0101-B01M09-08",
+    "question": "Rəqib komandanın hücum zərbəsinin qarşısını almaq üçün tor üzərində edilən hərəkət necə adlanır?",
+    "options": [
+      "Sığortalama",
+      "Aşağı ötürmə",
+      "Blok qoyma",
+      "Top qəbulu"
+    ],
+    "answer": "Blok qoyma",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-010-0101-B01M09-09",
+    "question": "Voleybolda komanda rəqib xidmətini (servisini) qazandıqda oyunçular necə yerdəyişmə edirlər?",
+    "options": [
+      "Saat əqrəbi istiqamətində",
+      "Saat əqrəbinin əksinə",
+      "Yalnız diaqonal üzrə",
+      "Yerdəyişmə edilmir"
+    ],
+    "answer": "Saat əqrəbi istiqamətində",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-010-0101-B01M09-10",
+    "question": "Kişilər üçün voleybol torunun standart hündürlüyü nə qədərdir?",
+    "options": [
+      "2.24 metr",
+      "2.35 metr",
+      "2.43 metr",
+      "2.55 metr"
+    ],
+    "answer": "2.43 metr",
+    "difficulty": "orta"
+  },
+  {
+    "id": "05-010-0101-B01M09-11",
+    "question": "Voleybol oyununda blok zamanı eyni oyunçunun ardıcıl olaraq topa iki dəfə toxunmasına hansı halda icazə verilir?",
+    "options": [
+      "Top qəfildən tora dəydikdən dərhal sonra",
+      "Oyunçu blokda iştirak etdikdən dərhal sonra",
+      "Top təsadüfən rəqib oyunçuya dəydikdə",
+      "Oyunçu arxa xəttdən hücum zərbəsi vurduqda"
+    ],
+    "answer": "Oyunçu blokda iştirak etdikdən dərhal sonra",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-010-0101-B01M09-12",
+    "question": "Əgər hər iki komanda setin sonunda 24:24 hesablı heç-heçə edərsə, setin qalibi necə müəyyən edilir?",
+    "options": [
+      "Oyundan əvvəl püşkatma yolu ilə seçilir",
+      "İlk 26 xal toplayan komanda qalib gəlir",
+      "İki xal fərqi yaranana qədər davam edir",
+      "Qızıl xal adlandırılan bir xal oynanılır"
+    ],
+    "answer": "İki xal fərqi yaranana qədər davam edir",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-010-0101-B01M09-13",
+    "question": "Hansı halda oyunçu tora toxunmasına baxmayaraq hakim tərəfindən qayda pozuntusu qeydə alınmır?",
+    "options": [
+      "Oyunçu güclü hücum zərbəsi vurarkən tora dəydikdə",
+      "Oyunçu blok qoyarkən rəqibin toruna toxunduqda",
+      "Topun tora vurulması nəticəsində tor oyunçuya dəydikdə",
+      "Oyunçu oyundan kənar vaxt bilərəkdən tora söykəndikdə"
+    ],
+    "answer": "Topun tora vurulması nəticəsində tor oyunçuya dəydikdə",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-010-0101-B01M09-14",
+    "question": "Voleybolda antenaların (torun üzərindəki çubuqların) əsas məqsədi nədir?",
+    "options": [
+      "Torun gərginliyini tənzimləmək üçün istifadə olunur",
+      "Oyunçuların rəqib tərəfə keçməsini məhdudlaşdırır",
+      "Topun keçəcəyi icazə verilən fəzanı müəyyənləşdirir",
+      "Baş hakimin oyunu kənardan izləməsinə kömək edir"
+    ],
+    "answer": "Topun keçəcəyi icazə verilən fəzanı müəyyənləşdirir",
+    "difficulty": "çətin"
+  },
+  {
+    "id": "05-010-0101-B01M09-15",
+    "question": "Arxa xətt oyunçusu ön zonada tullanaraq hücum zərbəsi vurarsa, hakim hansı qərarı verməlidir?",
+    "options": [
+      "Zərbə uğurlu olarsa xal verilir",
+      "Hücum zərbəsi xətası qeydə alınır",
+      "Oyun adi qaydada davam etdirilir",
+      "Yenidən oynanış qərarı təyin edilir"
+    ],
+    "answer": "Hücum zərbəsi xətası qeydə alınır",
+    "difficulty": "çətin"
+  }
+]

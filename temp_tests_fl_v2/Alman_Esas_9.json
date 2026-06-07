@@ -1,0 +1,257 @@
+[
+  {
+    "id": 15829,
+    "category": "Alman dili",
+    "question": "Welcher Artikel ist richtig? ___ Schule.",
+    "options": [
+      "der",
+      "das",
+      "die",
+      "den"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Schule\" (məktəb) sözü qadın cinsindədir, ona görə də ismin adlıq halında (Nominativ) \"die\" artikli tələb olunur.",
+    "passport_id": "05-012-0101-B01M09-01",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 27391,
+    "category": "Alman dili",
+    "question": "Wir ___ Schüler.",
+    "options": [
+      "seid",
+      "sind",
+      "bin",
+      "ist"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"wir\" (biz) şəxs əvəzliyi ilə \"sein\" (olmaq) feli indiki zamanda \"sind\" formasına düşür.",
+    "passport_id": "05-012-0101-B01M09-02",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 34812,
+    "category": "Alman dili",
+    "question": "Unsere Klasse ist ___. (gözəl)",
+    "options": [
+      "klein",
+      "groß",
+      "alt",
+      "schön"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"gözəl\" sözünün almanca tərcüməsi \"schön\" deməkdir. Digər variantlar: klein - kiçik, groß - böyük, alt - yaşlı/köhnə.",
+    "passport_id": "05-012-0101-B01M09-03",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 49210,
+    "category": "Alman dili",
+    "question": "___ ist meine Lehrerin.",
+    "options": [
+      "Sie",
+      "Er",
+      "Es",
+      "Wir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Lehrerin\" (müəllimə) qadın cinsində olduğu üçün cümlədə üçüncü şəxsin təkində qadın cinsini bildirən \"sie\" əvəzliyi istifadə olunur.",
+    "passport_id": "05-012-0101-B01M09-04",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51034,
+    "category": "Alman dili",
+    "question": "Das ist ein ___. (qələm)",
+    "options": [
+      "Heft",
+      "Buch",
+      "Kuli",
+      "Tasche"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Qələm\" sözünün almanca qarşılığı \"Kuli\" (və ya Kugelschreiber) deməkdir. Heft - dəftər, Buch - kitab, Tasche - çanta.",
+    "passport_id": "05-012-0101-B01M09-05",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 62948,
+    "category": "Alman dili",
+    "question": "Wie heißt der Plural von \"das Buch\"?",
+    "options": [
+      "die Buchen",
+      "die Bücher",
+      "die Buchs",
+      "die Buch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"das Buch\" (kitab) isminin cəm forması kökdəki saitin umlaut alması və \"-er\" şəkilçisi qəbul etməsi ilə yaranır: \"die Bücher\".",
+    "passport_id": "05-012-0101-B01M09-06",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 78103,
+    "category": "Alman dili",
+    "question": "Ist das ___ Tafel? - Nein, das ist keine Tafel.",
+    "options": [
+      "eine",
+      "ein",
+      "einen",
+      "der"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Tafel\" (lövhə) sözü qadın cinsindədir (die Tafel). Qeyri-müəyyən artikl qadın cinsi üçün Nominativ halda \"eine\" olur.",
+    "passport_id": "05-012-0101-B01M09-07",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 84592,
+    "category": "Alman dili",
+    "question": "Ist das ___ Heft, Ali?",
+    "options": [
+      "deine",
+      "deinen",
+      "dein",
+      "deiner"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Heft\" sözü orta cinsdə (das Heft) olduğu üçün və sual \"du\" (sən) şəxsinə verildiyi üçün \"dein\" yiyəlik əvəzliyi işlədilir.",
+    "passport_id": "05-012-0101-B01M09-08",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 91320,
+    "category": "Alman dili",
+    "question": "___ ihr heute Deutsch?",
+    "options": [
+      "Hast",
+      "Habt",
+      "Haben",
+      "Hat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"ihr\" (siz - cəm) şəxsinə görə \"haben\" (malik olmaq) feli indiki zamanda \"habt\" formasına düşür.",
+    "passport_id": "05-012-0101-B01M09-09",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10482,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist richtig?",
+    "options": [
+      "Heute wir haben Sport.",
+      "Wir heute haben Sport.",
+      "Haben wir Sport heute.",
+      "Wir haben heute Sport."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Almancada nəqli cümlədə xəbər (feil) həmişə ikinci yerdə durmalıdır: \"Wir haben heute Sport.\"",
+    "passport_id": "05-012-0101-B01M09-10",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23951,
+    "category": "Alman dili",
+    "question": "Ich habe ___ Radiergummi.",
+    "options": [
+      "einen",
+      "ein",
+      "eine",
+      "der"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"haben\" feli Akkusativ (Təsirlik hal) tələb edir. \"Radiergummi\" (pozan) kişi cinsində (der) olduğu üçün Akkusativ halda qeyri-müəyyən artikl \"einen\" olur.",
+    "passport_id": "05-012-0101-B01M09-11",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 38104,
+    "category": "Alman dili",
+    "question": "Das ist ___ Stift. Das ist ein Lineal.",
+    "options": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Stift\" ismi kişi cinsindədir (der Stift). İsmi inkar etmək üçün qeyri-müəyyən artiklın əvəzinə \"kein\" istifadə olunur. Burada adlıq hal (Nominativ) olduğu üçün \"kein\" qalır.",
+    "passport_id": "05-012-0101-B01M09-12",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 41295,
+    "category": "Alman dili",
+    "question": "___ ist das? - Das ist mein Freund.",
+    "options": [
+      "Wo",
+      "Was",
+      "Wer",
+      "Wie"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Şəxsləri (insanları) soruşarkən \"Wer?\" (Kim?) sual əvəzliyindən istifadə olunur. \"Was?\" (Nə?) əşyalar üçün işlənir.",
+    "passport_id": "05-012-0101-B01M09-13",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 57920,
+    "category": "Alman dili",
+    "question": "Wir lernen ___ der Schule.",
+    "options": [
+      "auf",
+      "in",
+      "an",
+      "aus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məktəbdə oxuduğunu (və ya öyrəndiyini) bildirmək üçün qapalı məkan kimi \"in der Schule\" ifadəsi işlənir.",
+    "passport_id": "05-012-0101-B01M09-14",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 69348,
+    "category": "Alman dili",
+    "question": "Wie ___ du unsere Klasse? - Ich finde sie super!",
+    "options": [
+      "finde",
+      "findet",
+      "finden",
+      "findest"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"du\" (sən) şəxsinə uyğun xəbər indiki zamanda sonuna \"-st\" şəkilçisi qəbul edir. Buna görə \"finden\" feli \"findest\" olur.",
+    "passport_id": "05-012-0101-B01M09-15",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Unsere Klasse ist super!",
+    "bloomLevel": "application"
+  }
+]

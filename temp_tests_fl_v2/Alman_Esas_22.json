@@ -1,0 +1,257 @@
+[
+  {
+    "id": "10001",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: Ich ___ gern Tomaten.",
+    "options": [
+      "esse",
+      "isst",
+      "essen",
+      "esst"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ich\" şəxs əvəzliyi ilə \"essen\" (yemək) feli indiki zamanda \"esse\" formasında olur.",
+    "passport_id": "05-012-0101-B01M22-01",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "10002",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: ___ du gern Banane?",
+    "options": [
+      "Esse",
+      "Isst",
+      "Essen",
+      "Esst"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Du\" (sən) şəxs əvəzliyi ilə \"essen\" feli \"isst\" olur. Kökdəki 'e' hərfi 'i' hərfinə keçir.",
+    "passport_id": "05-012-0101-B01M22-02",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "10003",
+    "category": "Alman dili",
+    "question": "Was ist \"pendir\" auf Deutsch?",
+    "options": [
+      "das Brot",
+      "der Käse",
+      "die Butter",
+      "die Milch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Azərbaycan dilindəki \"pendir\" sözünün alman dilində qarşılığı \"der Käse\" sözüdür.",
+    "passport_id": "05-012-0101-B01M22-03",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "10004",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: Mein Freund ___ gern Pizza.",
+    "options": [
+      "esse",
+      "isst",
+      "essen",
+      "esst"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Mein Freund\" (er - o) 3-cü şəxsin təkində olduğu üçün \"essen\" feli \"isst\" formasında işlənir.",
+    "passport_id": "05-012-0101-B01M22-04",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "10005",
+    "category": "Alman dili",
+    "question": "Welches Wort passt nicht? (Hansı söz uyğun gəlmir?)",
+    "options": [
+      "der Apfel",
+      "die Banane",
+      "die Birne",
+      "das Heft"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Das Heft\" (dəftər) məktəb ləvazimatıdır, digərləri isə meyvələrdir.",
+    "passport_id": "05-012-0101-B01M22-05",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "10006",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: Wir ___ gern Schokolade.",
+    "options": [
+      "essen",
+      "isst",
+      "esse",
+      "esst"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Wir\" (biz) şəxs əvəzliyi ilə fellər məsdər formasında, yəni \"essen\" kimi qalır.",
+    "passport_id": "05-012-0101-B01M22-06",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "10007",
+    "category": "Alman dili",
+    "question": "Finde die richtige Antwort zur Frage: \"Was isst du gern?\"",
+    "options": [
+      "Ich trinke gern Saft.",
+      "Ich esse gern Apfel.",
+      "Er isst gern Kuchen.",
+      "Wir essen gern Brot."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sual \"du\" (sən) ilə verildiyi üçün cavab \"Ich\" (mən) ilə başlamalı və \"essen\" felinin müvafiq forması (esse) istifadə olunmalıdır.",
+    "passport_id": "05-012-0101-B01M22-07",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "10008",
+    "category": "Alman dili",
+    "question": "Wie ist die richtige Wortfolge? (du / isst / Banane / gern / ?)",
+    "options": [
+      "Du isst gern Banane?",
+      "Isst du gern Banane?",
+      "Gern isst du Banane?",
+      "Banane isst gern du?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində sual cümləsində (Bəli/Xeyr sualı) fel (Isst) birinci yerdə, mübtəda (du) ikinci yerdə gəlməlidir.",
+    "passport_id": "05-012-0101-B01M22-08",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "10009",
+    "category": "Alman dili",
+    "question": "Übersetze ins Deutsche: \"Mən balıq yeməyi xoşlamıram.\"",
+    "options": [
+      "Ich esse gern Fisch.",
+      "Ich esse nicht gern Fisch.",
+      "Ich esse Fisch gern.",
+      "Ich trinke nicht gern Fisch."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bir şeyi yeməyi xoşlamamaq üçün \"nicht gern\" (xoşlamıram) ifadəsindən istifadə edilir: \"Ich esse nicht gern Fisch.\"",
+    "passport_id": "05-012-0101-B01M22-09",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "10010",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: Kinder, ___ ihr gern Suppe?",
+    "options": [
+      "isst",
+      "essen",
+      "esst",
+      "esse"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Ihr\" (siz - cəm) şəxs əvəzliyi ilə \"essen\" feli \"esst\" formasında olur, kökdə səs dəyişimi baş vermir.",
+    "passport_id": "05-012-0101-B01M22-10",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "10011",
+    "category": "Alman dili",
+    "question": "Ergänze die Sätze: Ich ___ gern Brot, aber mein Bruder ___ gern Kuchen.",
+    "options": [
+      "esse / essen",
+      "esse / isst",
+      "isst / esse",
+      "essen / isst"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Birinci hissədə \"Ich\" üçün \"esse\", ikinci hissədə \"mein Bruder\" (er - 3-cü şəxsin təki) üçün isə \"isst\" forması düzgündür.",
+    "passport_id": "05-012-0101-B01M22-11",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "10012",
+    "category": "Alman dili",
+    "question": "Was ist richtig?",
+    "options": [
+      "Sie esse gern Gurken.",
+      "Er isst gern Tomaten.",
+      "Wir isst gern Fisch.",
+      "Ich essen gern Käse."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yalnız \"Er isst gern Tomaten\" cümləsində mübtəda və xəbər (fel) düzgün uzlaşıb. Digərlərində qrammatik səhv var.",
+    "passport_id": "05-012-0101-B01M22-12",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "analysis"
+  },
+  {
+    "id": "10013",
+    "category": "Alman dili",
+    "question": "Ergänze den Dialog: \n- Isst Anna gern Fleisch? \n- Nein, sie isst ___ gern Fleisch.",
+    "options": [
+      "nicht",
+      "kein",
+      "nichts",
+      "nein"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Gern\" sözünü inkar etmək və \"xoşlamıram\" demək üçün \"nicht\" hissəciyindən istifadə edilir (\"nicht gern\").",
+    "passport_id": "05-012-0101-B01M22-13",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "10014",
+    "category": "Alman dili",
+    "question": "Lies den Text und antworte: \"Hallo, ich bin Lisa. Ich esse gern Obst. Äpfel und Bananen sind super. Aber ich esse nicht gern Gemüse. Tomaten sind nicht gut.\" - Was isst Lisa nicht gern?",
+    "options": [
+      "Obst",
+      "Äpfel",
+      "Bananen",
+      "Tomaten"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə Lisa meyvələri xoşladığını, ancaq tərəvəzləri və xüsusən pomidorları (Tomaten) xoşlamadığını deyir.",
+    "passport_id": "05-012-0101-B01M22-14",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "analysis"
+  },
+  {
+    "id": "10015",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: Ich esse zwei ___.",
+    "options": [
+      "Apfel",
+      "Äpfel",
+      "Apfeln",
+      "Äpfeln"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Apfel\" (alma) sözünün cəm forması \"Äpfel\" olur. \"Zwei\" (iki) sözü cəmlik bildirdiyi üçün isim də cəmdə olmalıdır.",
+    "passport_id": "05-012-0101-B01M22-15",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Isst du gern Banane?",
+    "bloomLevel": "application"
+  }
+]

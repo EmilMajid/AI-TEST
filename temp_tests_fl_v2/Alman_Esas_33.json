@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14201,
+    "category": "Alman dili",
+    "question": "Ich ___ gestern im Kino.",
+    "options": [
+      "bin",
+      "war",
+      "bist",
+      "warst"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ich' (mən) şəxsi üçün 'sein' (olmaq) feilinin keçmiş zamanı (Präteritum) 'war' olur. 'bin' indiki zamandır.",
+    "passport_id": "05-012-0101-B01M33-01",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23412,
+    "category": "Alman dili",
+    "question": "Wo ___ du gestern?",
+    "options": [
+      "warst",
+      "war",
+      "bist",
+      "waren"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Du' (sən) şəxsi üçün keçmiş zamanda (Präteritum) doğru forma 'warst' olur.",
+    "passport_id": "05-012-0101-B01M33-02",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 35613,
+    "category": "Alman dili",
+    "question": "Wir ___ am Wochenende im Park.",
+    "options": [
+      "war",
+      "waren",
+      "sind",
+      "wart"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Wir' (biz) cəm şəxs əvəzliyi olduğu üçün keçmiş zamanda 'waren' formasından istifadə edilir.",
+    "passport_id": "05-012-0101-B01M33-03",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 48924,
+    "category": "Alman dili",
+    "question": "Wähle das richtige Wort (Doğru sözü seçin): Heute ist Montag. ___ war Sonntag.",
+    "options": [
+      "Morgen",
+      "Heute",
+      "Gestern",
+      "Übermorgen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu gün (Heute) bazar ertəsidirsə, deməli dünən (Gestern) bazar günü (Sonntag) idi.",
+    "passport_id": "05-012-0101-B01M33-04",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51235,
+    "category": "Alman dili",
+    "question": "Mein Freund ___ gestern krank.",
+    "options": [
+      "war",
+      "warst",
+      "waren",
+      "bin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Mein Freund' 3-cü şəxsin təkindədir (er - o). Buna görə də tək forması olan 'war' feili istifadə olunur.",
+    "passport_id": "05-012-0101-B01M33-05",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 67846,
+    "category": "Alman dili",
+    "question": "Ergänze den Satz (Cümləni tamamlayın): Gestern ___ Lisa und Anna im Zoo.",
+    "options": [
+      "war",
+      "sind",
+      "waren",
+      "wart"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lisa və Anna birlikdə cəmlik (sie - onlar) bildirdiyi üçün feil cəmdə 'waren' olmalıdır.",
+    "passport_id": "05-012-0101-B01M33-06",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 74357,
+    "category": "Alman dili",
+    "question": "Wähle die richtige Präposition (Doğru sözönünü seçin): Ich war gestern ___ Kino.",
+    "options": [
+      "in",
+      "im",
+      "zu",
+      "an"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'das Kino' (kino) sözü Dativ halında 'in dem' -> 'im' formasına düşür. Məkan bildirərkən 'im Kino' deyilir.",
+    "passport_id": "05-012-0101-B01M33-07",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 81268,
+    "category": "Alman dili",
+    "question": "___ ihr gestern in der Schule?",
+    "options": [
+      "Waren",
+      "Warst",
+      "Wart",
+      "Sind"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Ihr' (siz, cəm) şəxs əvəzliyi ilə keçmiş zamanda 'wart' (idiniz) forması işlənir.",
+    "passport_id": "05-012-0101-B01M33-08",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 93479,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist richtig? (Hansı cümlə doğrudur?)",
+    "options": [
+      "Ich bin gestern im Kino.",
+      "Ich war gestern im Kino.",
+      "Ich gestern war im Kino.",
+      "Gestern ich war im Kino."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində təsdiq cümləsində feil hər zaman 2-ci yerdə gəlməlidir: Mübtəda (Ich) + Feil (war) + Zaman (gestern) + Məkan (im Kino).",
+    "passport_id": "05-012-0101-B01M33-09",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10580,
+    "category": "Alman dili",
+    "question": "Herr Müller, wo ___ Sie gestern?",
+    "options": [
+      "war",
+      "waren",
+      "wart",
+      "sind"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rəsmi müraciət (Nəzakət forması - Sie) üçün feilin keçmiş zamanı həmişə 'waren' olur.",
+    "passport_id": "05-012-0101-B01M33-10",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 11691,
+    "category": "Alman dili",
+    "question": "Lies den Text: 'Hallo, ich bin Max. Heute bin ich in der Schule. Aber gestern war Sonntag. Ich war mit meinem Hund im Park.' Wo war Max gestern?",
+    "options": [
+      "In der Schule.",
+      "Zu Hause.",
+      "Im Park.",
+      "Im Kino."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd olunur ki, Max bu gün məktəbdədir, lakin dünən (gestern) iti ilə birlikdə parkda olub ('im Park').",
+    "passport_id": "05-012-0101-B01M33-11",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 12702,
+    "category": "Alman dili",
+    "question": "Was ist das Gegenteil von 'gestern'? ('gestern' sözünün əksi nədir?)",
+    "options": [
+      "heute",
+      "morgen",
+      "die Woche",
+      "die Nacht"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Gestern' (dünən) sözünün əksi 'morgen' (sabah) sözüdür. 'Heute' bu gün deməkdir.",
+    "passport_id": "05-012-0101-B01M33-12",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 13813,
+    "category": "Alman dili",
+    "question": "Wähle die richtigen Verben: Ich ___ im Zirkus, aber mein Bruder ___ zu Hause.",
+    "options": [
+      "war / waren",
+      "war / war",
+      "bin / war",
+      "warst / war"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hər iki tərəfdə tək şəxsdir (Ich və mein Bruder). Həm 1-ci, həm də 3-cü şəxsin təki üçün keçmiş zaman forması 'war' olur.",
+    "passport_id": "05-012-0101-B01M33-13",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14924,
+    "category": "Alman dili",
+    "question": "Bilde einen Satz (Cümlə qurun): im / gestern / wir / waren / Theater / .",
+    "options": [
+      "Wir im Theater waren gestern.",
+      "Gestern wir waren im Theater.",
+      "Wir waren gestern im Theater.",
+      "Gestern im Theater wir waren."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Alman dilində qaydalı cümlə quruluşunda feil 2-ci mövqedə durmalıdır: Wir (1) waren (2) gestern (3) im Theater (4).",
+    "passport_id": "05-012-0101-B01M33-14",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15035,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist logisch richtig? (Hansı cümlə məntiqcə doğrudur?)",
+    "options": [
+      "Heute ist Dienstag. Gestern war Mittwoch.",
+      "Heute ist Dienstag. Gestern war Montag.",
+      "Heute ist Dienstag. Morgen war Montag.",
+      "Gestern war Dienstag. Heute ist Montag."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məntiqi ardıcıllıqla əgər bu gün (heute) çərşənbə axşamıdırsa (Dienstag), dünən (gestern) bazar ertəsi (Montag) idi.",
+    "passport_id": "05-012-0101-B01M33-15",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Gestern war ich im Kino.",
+    "bloomLevel": "application"
+  }
+]

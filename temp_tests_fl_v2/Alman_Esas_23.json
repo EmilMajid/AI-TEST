@@ -1,0 +1,257 @@
+[
+  {
+    "id": 84123,
+    "category": "Alman dili",
+    "question": "Wie viel ist 2 plus 3?",
+    "options": [
+      "vier",
+      "fünf",
+      "sechs",
+      "sieben"
+    ],
+    "correctAnswer": 1,
+    "explanation": "2+3=5. Alman dilində 5 rəqəmi 'fünf' adlanır.",
+    "passport_id": "05-012-0101-B01M23-01",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 92145,
+    "category": "Alman dili",
+    "question": "Wie viel ist 10 minus 4?",
+    "options": [
+      "acht",
+      "fünf",
+      "sechs",
+      "neun"
+    ],
+    "correctAnswer": 2,
+    "explanation": "10-4=6. Alman dilində 6 rəqəmi 'sechs' adlanır.",
+    "passport_id": "05-012-0101-B01M23-02",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 18234,
+    "category": "Alman dili",
+    "question": "Welche Zahl ist das: 'sieben'?",
+    "options": [
+      "7",
+      "8",
+      "6",
+      "9"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'sieben' alman dilində 7 deməkdir.",
+    "passport_id": "05-012-0101-B01M23-03",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 34981,
+    "category": "Alman dili",
+    "question": "Wie sagt man '+' auf Deutsch?",
+    "options": [
+      "minus",
+      "plus",
+      "gleich",
+      "mal"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Toplama işarəsi (+) alman dilində 'plus' adlanır.",
+    "passport_id": "05-012-0101-B01M23-04",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 65123,
+    "category": "Alman dili",
+    "question": "5 plus 5 ist ...",
+    "options": [
+      "elf",
+      "zwölf",
+      "zehn",
+      "neun"
+    ],
+    "correctAnswer": 2,
+    "explanation": "5+5=10. 10 rəqəmi alman dilində 'zehn' kimi yazılır.",
+    "passport_id": "05-012-0101-B01M23-05",
+    "difficulty": "easy",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 78345,
+    "category": "Alman dili",
+    "question": "Wie viel ist 12 plus 7?",
+    "options": [
+      "neunzehn",
+      "achtzehn",
+      "siebzehn",
+      "zwanzig"
+    ],
+    "correctAnswer": 0,
+    "explanation": "12+7=19. 19 rəqəmi 'neunzehn' (doqquz + on) kimi formalaşır.",
+    "passport_id": "05-012-0101-B01M23-06",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23489,
+    "category": "Alman dili",
+    "question": "Was bedeutet 'acht minus drei ist fünf'?",
+    "options": [
+      "8 + 3 = 11",
+      "8 - 3 = 5",
+      "8 + 5 = 13",
+      "8 - 5 = 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'acht' (8), 'minus' (-), 'drei' (3), 'ist' (=), 'fünf' (5) deməkdir.",
+    "passport_id": "05-012-0101-B01M23-07",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 91823,
+    "category": "Alman dili",
+    "question": "___ ist vierzehn.",
+    "options": [
+      "Zehn plus vier",
+      "Zehn minus vier",
+      "Zwölf plus drei",
+      "Fünf plus acht"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'vierzehn' 14 deməkdir. Zehn (10) + vier (4) = 14.",
+    "passport_id": "05-012-0101-B01M23-08",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 56231,
+    "category": "Alman dili",
+    "question": "Welche Zahl fehlt? Eins, zwei, ___, vier, fünf.",
+    "options": [
+      "sechs",
+      "drei",
+      "acht",
+      "zehn"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ardıcıllıq: 1, 2, 3, 4, 5. Çatışmayan rəqəm 3-dür, alman dilində 'drei' adlanır.",
+    "passport_id": "05-012-0101-B01M23-09",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 43901,
+    "category": "Alman dili",
+    "question": "Wie viel ist 20 minus 9?",
+    "options": [
+      "zehn",
+      "zwölf",
+      "elf",
+      "dreizehn"
+    ],
+    "correctAnswer": 2,
+    "explanation": "20-9=11. 11 alman dilində 'elf' adlanır.",
+    "passport_id": "05-012-0101-B01M23-10",
+    "difficulty": "medium",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 15893,
+    "category": "Alman dili",
+    "question": "Anna hat 5 Äpfel. Max gibt ihr 4 Äpfel. Wie viele Äpfel hat Anna jetzt?",
+    "options": [
+      "acht",
+      "neun",
+      "sieben",
+      "zehn"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Annanın 5 alması var idi, Maks ona 4 alma verdi. Cəmi: 5+4=9. 9 alman dilində 'neun' deməkdir.",
+    "passport_id": "05-012-0101-B01M23-11",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 83912,
+    "category": "Alman dili",
+    "question": "Welche Rechnung ist richtig?",
+    "options": [
+      "zwölf minus sieben ist vier",
+      "zehn plus sechs ist fünfzehn",
+      "neun plus acht ist siebzehn",
+      "zwanzig minus elf ist acht"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Doğru olan 'neun plus acht ist siebzehn' yəni 9+8=17-dir. Digərləri: 12-7=5 (deyil 4), 10+6=16 (deyil 15), 20-11=9 (deyil 8).",
+    "passport_id": "05-012-0101-B01M23-12",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 71834,
+    "category": "Alman dili",
+    "question": "Was ist das Ergebnis: 'Drei plus vier plus acht'?",
+    "options": [
+      "vierzehn",
+      "sechzehn",
+      "fünfzehn",
+      "dreizehn"
+    ],
+    "correctAnswer": 2,
+    "explanation": "3+4+8 = 15. Alman dilində 15 'fünfzehn' adlanır.",
+    "passport_id": "05-012-0101-B01M23-13",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 90128,
+    "category": "Alman dili",
+    "question": "Ich bin mehr als 10 und weniger als 12. Welche Zahl bin ich?",
+    "options": [
+      "elf",
+      "zwölf",
+      "neun",
+      "zehn"
+    ],
+    "correctAnswer": 0,
+    "explanation": "10-dan çox və 12-dən az olan tam rəqəm 11-dir. Alman dilində 'elf' adlanır.",
+    "passport_id": "05-012-0101-B01M23-14",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 26490,
+    "category": "Alman dili",
+    "question": "Wie viel ist 'fünfzehn minus sechs'?",
+    "options": [
+      "zehn",
+      "acht",
+      "sieben",
+      "neun"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fünfzehn (15) minus (-) sechs (6) = 9. 9 alman dilində 'neun' deməkdir.",
+    "passport_id": "05-012-0101-B01M23-15",
+    "difficulty": "hard",
+    "topic": "Stunde 3. Wie viel ist 2 plus 3?",
+    "bloomLevel": "application"
+  }
+]

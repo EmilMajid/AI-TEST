@@ -1,0 +1,257 @@
+[
+  {
+    "id": 10501,
+    "category": "Alman dili",
+    "question": "Wie verabschiedet man sich auf Deutsch?",
+    "options": [
+      "Guten Morgen",
+      "Auf Wiedersehen",
+      "Danke schön",
+      "Bitte sehr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Auf Wiedersehen\" sağollaşmaq üçün istifadə olunur. Digər variantlar salamlaşma və ya təşəkkür bildirmək üçündür.",
+    "passport_id": "05-012-0101-B01M12-01",
+    "difficulty": "easy",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10502,
+    "category": "Alman dili",
+    "question": "Was ist „on iki“ auf Deutsch?",
+    "options": [
+      "zwanzig",
+      "zwölf",
+      "zwei",
+      "zehn"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində 12 \"zwölf\" deməkdir. Şagirdlər tez-tez \"zwei\", \"zehn\" və \"zwanzig\" sözlərini qarışdırırlar.",
+    "passport_id": "05-012-0101-B01M12-02",
+    "difficulty": "easy",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10503,
+    "category": "Alman dili",
+    "question": "Ergänze das Verb: Ich _____ Ali.",
+    "options": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ich\" (mən) şəxs əvəzliyi ilə \"sein\" (olmaq) feli \"bin\" formasında işlənir.",
+    "passport_id": "05-012-0101-B01M12-03",
+    "difficulty": "easy",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10504,
+    "category": "Alman dili",
+    "question": "Welche Farbe ist „qırmızı“?",
+    "options": [
+      "blau",
+      "grün",
+      "rot",
+      "gelb"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qırmızı rəng alman dilində \"rot\" adlanır.",
+    "passport_id": "05-012-0101-B01M12-04",
+    "difficulty": "easy",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10505,
+    "category": "Alman dili",
+    "question": "Was ist das? (qələm)",
+    "options": [
+      "das Buch",
+      "der Kuli",
+      "das Heft",
+      "das Lineal"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qələm alman dilində \"der Kuli\" (Kugelschreiber) adlanır. Azərbaycanlı şagirdlər bəzən məktəb ləvazimatlarını qarışdırırlar.",
+    "passport_id": "05-012-0101-B01M12-05",
+    "difficulty": "easy",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10506,
+    "category": "Alman dili",
+    "question": "Woher _____ du?",
+    "options": [
+      "kommst",
+      "kommt",
+      "kommen",
+      "komme"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Du\" (sən) şəxsində fellər qaydalı olaraq \"-st\" sonluğu qəbul edir: du kommst.",
+    "passport_id": "05-012-0101-B01M12-06",
+    "difficulty": "medium",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10507,
+    "category": "Alman dili",
+    "question": "Welcher Artikel passt? _____ Tasche ist groß.",
+    "options": [
+      "Der",
+      "Das",
+      "Die",
+      "Ein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Tasche\" (çanta) qadın cinsində olan isimdir, buna görə də \"die\" artikli ilə işlənməlidir.",
+    "passport_id": "05-012-0101-B01M12-07",
+    "difficulty": "medium",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10508,
+    "category": "Alman dili",
+    "question": "Ist das _____ Buch, Leyla?",
+    "options": [
+      "mein",
+      "deine",
+      "dein",
+      "deinen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Buch\" orta cinsdədir (das Buch). Müraciət edilən şəxs \"Leyla\" olduğu üçün \"sənin kitabın\" - \"dein Buch\" olmalıdır.",
+    "passport_id": "05-012-0101-B01M12-08",
+    "difficulty": "medium",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10509,
+    "category": "Alman dili",
+    "question": "Welcher Tag kommt nach Montag?",
+    "options": [
+      "Freitag",
+      "Mittwoch",
+      "Dienstag",
+      "Donnerstag"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bazar ertəsindən (Montag) sonra Çərşənbə axşamı (Dienstag) gəlir.",
+    "passport_id": "05-012-0101-B01M12-09",
+    "difficulty": "medium",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10510,
+    "category": "Alman dili",
+    "question": "Bilde einen Satz: heißt / wie / du / ?",
+    "options": [
+      "Wie du heißt?",
+      "Heißt du wie?",
+      "Wie heißt du?",
+      "Du heißt wie?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sual sözü olan cümlələrdə əvvəlcə sual sözü (Wie), sonra xəbər (heißt), sonda mübtəda (du) gəlir.",
+    "passport_id": "05-012-0101-B01M12-10",
+    "difficulty": "medium",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10511,
+    "category": "Alman dili",
+    "question": "Das ist _____ Radiergummi. _____ Radiergummi ist klein.",
+    "options": [
+      "ein / Der",
+      "ein / Das",
+      "eine / Die",
+      "einen / Der"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Radiergummi\" kişi cinsindədir (der Radiergummi). Birinci cümlədə obyekt ilk dəfə xatırlanır (ein), ikinci cümlədə isə məlum olduğu üçün müəyyən artikl (der) işlənir.",
+    "passport_id": "05-012-0101-B01M12-11",
+    "difficulty": "hard",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10512,
+    "category": "Alman dili",
+    "question": "Das _____ Ali und das _____ seine Freunde.",
+    "options": [
+      "ist / ist",
+      "sind / ist",
+      "ist / sind",
+      "sind / sind"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tək halda olan adlar üçün \"ist\", cəm halda olan isimlər (Freunde) üçün isə \"sind\" feli işlənməlidir.",
+    "passport_id": "05-012-0101-B01M12-12",
+    "difficulty": "hard",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 10513,
+    "category": "Alman dili",
+    "question": "Ist das ein Heft? – Nein, das ist _____ Heft.",
+    "options": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Heft\" orta cinsdə olan isimdir (das Heft). İsmi inkar edərkən artiklsiz və ya qeyri-müəyyən artiklli isimlərlə orta cinsdə \"kein\" istifadə olunur.",
+    "passport_id": "05-012-0101-B01M12-13",
+    "difficulty": "hard",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10514,
+    "category": "Alman dili",
+    "question": "Wie heißt der Plural von „das Mädchen“?",
+    "options": [
+      "die Mädchens",
+      "die Mädchene",
+      "die Mädchen",
+      "die Mädchenn"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"-chen\" kiçiltmə şəkilçisi ilə bitən isimlərin cəm halı dəyişmir, yalnız artikl cəm artiklinə (die) çevrilir.",
+    "passport_id": "05-012-0101-B01M12-14",
+    "difficulty": "hard",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 10515,
+    "category": "Alman dili",
+    "question": "Ergänze den Dialog:\n- Hallo, ich bin Lukas. Und wer bist du?\n- _____.",
+    "options": [
+      "Ich bin 11 Jahre alt",
+      "Das ist mein Freund",
+      "Ich wohne in Berlin",
+      "Ich heiße Murat"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sualda \"Und wer bist du?\" (Bəs sən kimsən?) soruşulduğu üçün şəxs öz adını söyləməlidir: \"Ich heiße Murat.\"",
+    "passport_id": "05-012-0101-B01M12-15",
+    "difficulty": "hard",
+    "topic": "Stunde 5. Wiederholung",
+    "bloomLevel": "comprehension"
+  }
+]

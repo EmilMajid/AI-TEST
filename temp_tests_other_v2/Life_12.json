@@ -1,0 +1,182 @@
+[
+  {
+    "id": "05-008-0101-B01M12-01",
+    "difficulty": "sadə",
+    "question": "Kompüteri zərərli proqramlardan qorumaq üçün hansı növ proqramlardan istifadə olunur?",
+    "options": {
+      "A": "Mətn redaktorları",
+      "B": "Antivirus proqramları",
+      "C": "Qrafik redaktorlar",
+      "D": "Təqdimat proqramları"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-02",
+    "difficulty": "sadə",
+    "question": "İnternetdə şəxsi məlumatları (şifrə, ünvan) kimlərlə bölüşmək təhlükəsizdir?",
+    "options": {
+      "A": "Yalnız ailə üzvləri ilə",
+      "B": "Sosial şəbəkədəki yeni dostlarla",
+      "C": "Naməlum saytların idarəçiləri ilə",
+      "D": "Onlayn oyunlardakı rəqiblərlə"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": "05-008-0101-B01M12-03",
+    "difficulty": "sadə",
+    "question": "Güclü və təhlükəsiz şifrə necə olmalıdır?",
+    "options": {
+      "A": "Yalnız ardıcıl rəqəmlərdən ibarət",
+      "B": "İstifadəçinin öz adından ibarət",
+      "C": "Böyük-kiçik hərflər və rəqəmlərdən ibarət",
+      "D": "Yalnız eyni hərfin təkrarından ibarət"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": "05-008-0101-B01M12-04",
+    "difficulty": "sadə",
+    "question": "Kompüter arxasında düzgün əyləşmək qaydasına əsasən monitorla göz arasındakı məsafə təxminən nə qədər olmalıdır?",
+    "options": {
+      "A": "On-yirmi santimetr",
+      "B": "Əlli-yetmiş santimetr",
+      "C": "Bir-iki metr",
+      "D": "Beş-on santimetr"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-05",
+    "difficulty": "sadə",
+    "question": "Tanımadığınız şəxslərdən gələn elektron məktubdakı (e-mail) şübhəli faylı nə etmək lazımdır?",
+    "options": {
+      "A": "Dərhal açıb oxumaq",
+      "B": "Dostlara yönləndirmək",
+      "C": "Açmadan dərhal silmək",
+      "D": "Kompüterə yükləyib saxlamaq"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": "05-008-0101-B01M12-06",
+    "difficulty": "orta",
+    "question": "İnternet saytının təhlükəsiz olduğunu göstərən əsas əlamətlərdən biri hansıdır?",
+    "options": {
+      "A": "Saytın ünvanının \"http://\" ilə başlaması",
+      "B": "Saytın çoxlu rəngli reklamlarla dolu olması",
+      "C": "Ünvan sətrində qıfıl işarəsi və \"https://\" olması",
+      "D": "Saytda məşhur insanların şəkillərinin olması"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": "05-008-0101-B01M12-07",
+    "difficulty": "orta",
+    "question": "\"Fişinq\" (phishing) hücumu nə məqsəd daşıyır?",
+    "options": {
+      "A": "Kompüterin ekranının rənglərini dəyişmək",
+      "B": "Saxta saytlar vasitəsilə şəxsi məlumatları oğurlamaq",
+      "C": "Kompüterin səs sistemini sıradan çıxarmaq",
+      "D": "İnternet sürətini qəsdən yavaşlatmaq"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-08",
+    "difficulty": "orta",
+    "question": "Kompüter virusları ən çox hansı yolla yayılır?",
+    "options": {
+      "A": "Təmizlənməmiş klaviaturadan istifadə etdikdə",
+      "B": "Şübhəli saytlara daxil olduqda və fayl yüklədikdə",
+      "C": "Kompüterin monitoruna çox yaxından baxdıqda",
+      "D": "Çoxlu sayda mətn sənədi çap etdikdə"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-09",
+    "difficulty": "orta",
+    "question": "Kibertorbalama (kiberbullinq) ilə qarşılaşdıqda atılacaq ən doğru addım hansıdır?",
+    "options": {
+      "A": "Qarşı tərəfə eyni şəkildə sərt cavab vermək",
+      "B": "Hesabı dərhal silib internetdən imtina etmək",
+      "C": "Vəziyyəti böyüklərə və ya müəllimlərə bildirmək",
+      "D": "Şəxsin istəklərini yerinə yetirib susmaq"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": "05-008-0101-B01M12-10",
+    "difficulty": "orta",
+    "question": "Aşağıdakılardan hansı məlumatların ehtiyat nüsxəsinin (backup) yaradılmasının əsas məqsədidir?",
+    "options": {
+      "A": "Kompüterin yaddaşını daha sürətli işlətmək",
+      "B": "Məlumatların itirilməsi və ya zədələnməsi halında onları bərpa etmək",
+      "C": "İnternetə daha sürətli qoşulmaq",
+      "D": "Kompüterin enerjiyə qənaət etməsini təmin etmək"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-11",
+    "difficulty": "çətin",
+    "question": "Antivirus proqramının bazasının tez-tez yenilənməsi nə üçün vacibdir?",
+    "options": {
+      "A": "Proqramın dizaynını və görünüşünü yeniləmək üçün",
+      "B": "Yeni yaranan zərərli proqramları tanımaq və məhv etmək üçün",
+      "C": "Kompüterin əməliyyat sisteminin versiyasını yüksəltmək üçün",
+      "D": "İnternet provayderinə ödəniş məlumatlarını göndərmək üçün"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-12",
+    "difficulty": "çətin",
+    "question": "Şəbəkədə məlumatların təhlükəsiz ötürülməsini təmin edən şifrələmə texnologiyalarından biri necə adlanır?",
+    "options": {
+      "A": "HTML (HyperText Markup Language)",
+      "B": "SSL (Secure Sockets Layer)",
+      "C": "URL (Uniform Resource Locator)",
+      "D": "ISP (Internet Service Provider)"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-13",
+    "difficulty": "çətin",
+    "question": "İki mərhələli təsdiqləmə (2FA) sisteminin əsas məqsədi nədir?",
+    "options": {
+      "A": "Şifrəni unudan zaman onun tez bərpa edilməsini təmin etmək",
+      "B": "Hesaba giriş zamanı əlavə təhlükəsizlik qatı yaratmaq",
+      "C": "Eyni hesaba iki fərqli cihazdan eyni anda daxil olmaq",
+      "D": "Şifrə yazmadan hesabın səsli komanda ilə açılmasını təmin etmək"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": "05-008-0101-B01M12-14",
+    "difficulty": "çətin",
+    "question": "Açıq (public) Wi-Fi şəbəkələrindən istifadə edərkən hansı təhlükəsizlik qaydasına riayət etmək daha məqsədəuyğundur?",
+    "options": {
+      "A": "Şəxsi və bank məlumatları tələb edən əməliyyatlardan çəkinmək",
+      "B": "Böyük həcmli faylları yalnız açıq şəbəkələrdə yükləmək",
+      "C": "Bütün qurğuların avtomatik olaraq bu şəbəkələrə qoşulmasını təmin etmək",
+      "D": "Antivirus proqramını söndürüb şəbəkə sürətini artırmaq"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": "05-008-0101-B01M12-15",
+    "difficulty": "çətin",
+    "question": "\"Trojans\" (Troya atları) adlanan zərərli proqramların fərqləndirici xüsusiyyəti nədir?",
+    "options": {
+      "A": "Özbaşına çoxalaraq şəbəkəni həddindən artıq yükləməsi",
+      "B": "Faydalı proqram kimi görünərək istifadəçini aldatması",
+      "C": "Bütün faylları şifrələyib istifadəçidən pul tələb etməsi",
+      "D": "Səbəbsiz yerə kompüterin səs siqnalları verməsinə səbəb olması"
+    },
+    "correct_answer": "B"
+  }
+]

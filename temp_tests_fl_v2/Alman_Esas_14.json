@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14521,
+    "category": "Alman dili",
+    "question": "Was ist das? Man schläft darin.",
+    "options": [
+      "der Stuhl",
+      "das Bett",
+      "der Schrank",
+      "das Fenster"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Man schläft im Bett. (İnsan çarpayıda yatır. 'das Bett' - çarpayı deməkdir).",
+    "passport_id": "05-012-0101-B01M14-01",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 82341,
+    "category": "Alman dili",
+    "question": "Welcher Artikel ist richtig? ___ Tisch",
+    "options": [
+      "der",
+      "die",
+      "das",
+      "den"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alman dilində masa 'der Tisch' kimi işlənir, yəni kişi cinsindədir.",
+    "passport_id": "05-012-0101-B01M14-02",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 36192,
+    "category": "Alman dili",
+    "question": "Was bedeutet 'der Schrank' auf Aserbaidschanisch?",
+    "options": [
+      "stul",
+      "çarpayı",
+      "şkaf",
+      "xalça"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'der Schrank' Azərbaycan dilində 'şkaf' deməkdir.",
+    "passport_id": "05-012-0101-B01M14-03",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 92745,
+    "category": "Alman dili",
+    "question": "Welches Wort passt nicht?",
+    "options": [
+      "das Sofa",
+      "der Sessel",
+      "der Stuhl",
+      "der Apfel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'das Sofa', 'der Sessel', 'der Stuhl' mebel adlarıdır, 'der Apfel' (alma) isə meyvədir və otaq əşyalarına aid deyil.",
+    "passport_id": "05-012-0101-B01M14-04",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 51839,
+    "category": "Alman dili",
+    "question": "___ ist im Zimmer? - Ein Bett.",
+    "options": [
+      "Wer",
+      "Wie",
+      "Was",
+      "Wo"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Əşyaları soruşduqda 'Was' (Nə) sual əvəzliyindən istifadə olunur. 'Was ist im Zimmer?' (Otaqda nə var?).",
+    "passport_id": "05-012-0101-B01M14-05",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 63912,
+    "category": "Alman dili",
+    "question": "Ist das ___ Lampe? - Ja, das ist eine Lampe.",
+    "options": [
+      "ein",
+      "eine",
+      "einen",
+      "der"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Lampe' qadın cinsindədir (die Lampe). Qeyri-müəyyən artikli 'eine' olur.",
+    "passport_id": "05-012-0101-B01M14-06",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 47281,
+    "category": "Alman dili",
+    "question": "Das Bett ist weiß. ___ Schrank ist braun.",
+    "options": [
+      "Das",
+      "Die",
+      "Der",
+      "Ein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cümlədə müəyyən bir şkafdan bəhs edilir və 'Schrank' isminin artikli 'der'-dir.",
+    "passport_id": "05-012-0101-B01M14-07",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 29384,
+    "category": "Alman dili",
+    "question": "Mein Zimmer ist nicht groß. Es ist ___.",
+    "options": [
+      "klein",
+      "hell",
+      "dunkel",
+      "neu"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'groß' (böyük) sözünün əksi 'klein' (kiçik) sözüdür.",
+    "passport_id": "05-012-0101-B01M14-08",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 84102,
+    "category": "Alman dili",
+    "question": "Sind das Stühle? - Nein, das sind ____ Stühle.",
+    "options": [
+      "nicht",
+      "nein",
+      "keine",
+      "kein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İsmin cəmində inkar edərkən 'keine' istifadə olunur. 'keine Stühle' - stullar deyil.",
+    "passport_id": "05-012-0101-B01M14-09",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 75920,
+    "category": "Alman dili",
+    "question": "Welcher Plural ist richtig?",
+    "options": [
+      "das Zimmer - die Zimmern",
+      "das Zimmer - die Zimmer",
+      "das Zimmer - die Zimmers",
+      "das Zimmer - die Zimmere"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Zimmer' sözünün cəm forması tək forması ilə eynidir: 'die Zimmer'.",
+    "passport_id": "05-012-0101-B01M14-10",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 16493,
+    "category": "Alman dili",
+    "question": "Hier ist ein Regal. ___ Regal ist sehr praktisch.",
+    "options": [
+      "Der",
+      "Die",
+      "Das",
+      "Ein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Birinci cümlədə 'ein Regal' istifadə olunub (qeyri-müəyyən). İkinci cümlədə eyni əşyadan bəhs edildiyi üçün müəyyən artikl (das Regal) istifadə olunmalıdır.",
+    "passport_id": "05-012-0101-B01M14-11",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 58371,
+    "category": "Alman dili",
+    "question": "Wähle den richtigen Satz!",
+    "options": [
+      "Mein Zimmer hell ist.",
+      "Ist mein Zimmer hell.",
+      "Mein hell ist Zimmer.",
+      "Mein Zimmer ist hell."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Təsdiq cümləsində xəbər (ist) ikinci yerdə gəlməlidir: 'Mein Zimmer ist hell' (Mənim otağım işıqlıdır).",
+    "passport_id": "05-012-0101-B01M14-12",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 30485,
+    "category": "Alman dili",
+    "question": "Wie ___ Stühle sind im Zimmer?",
+    "options": [
+      "viel",
+      "viele",
+      "was",
+      "wer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sayıla bilən isimlərlə (Stühle) 'neçə dənə, nə qədər' soruşduqda cəmdə olan 'Wie viele' istifadə olunur.",
+    "passport_id": "05-012-0101-B01M14-13",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 91823,
+    "category": "Alman dili",
+    "question": "Wähle die richtige Pluralform: 'Das ist ein Sessel. Der Sessel ist grün.'",
+    "options": [
+      "Das ist Sessel. Die Sessel sind grün.",
+      "Das sind Sessel. Die Sessel sind grün.",
+      "Das sind Sessel. Die Sesseln sind grün.",
+      "Das ist Sessels. Die Sessel ist grün."
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Das ist' cəmdə 'Das sind' olur. 'ein Sessel' cəmdə artiklsiz 'Sessel' olur. 'Der Sessel' isə cəmdə 'Die Sessel' olur. 'ist' xəbəri isə 'sind' ilə əvəzlənir.",
+    "passport_id": "05-012-0101-B01M14-14",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 27491,
+    "category": "Alman dili",
+    "question": "Wir haben ein Zimmer. ___ Zimmer ist gemütlich.",
+    "options": [
+      "Mein",
+      "Dein",
+      "Unser",
+      "Euer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Wir' (biz) şəxs əvəzliyinin yiyəlik əvəzliyi 'unser' (bizim) olmalıdır. 'Zimmer' neytral (das) olduğu üçün 'unser' şəkilçisiz qalır.",
+    "passport_id": "05-012-0101-B01M14-15",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Was ist im Zimmer?",
+    "bloomLevel": "application"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 83451,
+    "category": "Alman dili",
+    "question": "Saat neçədir? (Almanca sual necə verilir?)",
+    "options": [
+      "Wie alt bist du?",
+      "Wie spät ist es?",
+      "Woher kommst du?",
+      "Was kostet das?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saatın neçə olduğunu soruşmaq üçün alman dilində 'Wie spät ist es?' (və ya 'Wie viel Uhr ist es?') sualından istifadə olunur.",
+    "passport_id": "05-014-0101-B01M28-01",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 92104,
+    "category": "Alman dili",
+    "question": "Saat 08:00-dır. Düzgün variantı seçin.",
+    "options": [
+      "Es ist acht Uhr.",
+      "Es ist sieben Uhr.",
+      "Es ist neun Uhr.",
+      "Es ist zehn Uhr."
+    ],
+    "correctAnswer": 0,
+    "explanation": "08:00 tam saat olduğu üçün birbaşa 'Es ist acht Uhr' (Saat səkkizdir) deyilir.",
+    "passport_id": "05-014-0101-B01M28-02",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 47215,
+    "category": "Alman dili",
+    "question": "Saat 09:30-dur. (Qeyri-rəsmi)",
+    "options": [
+      "Es ist halb neun.",
+      "Es ist halb zehn.",
+      "Es ist Viertel zehn.",
+      "Es ist halb acht."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində 'halb' (yarım) özündən sonrakı tam saata aid edilir. 09:30 (10-un yarısı) üçün 'halb zehn' deyilir.",
+    "passport_id": "05-014-0101-B01M28-03",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 15830,
+    "category": "Alman dili",
+    "question": "Dərs saat 8-də başlayır. -> Der Unterricht beginnt ___ 8 Uhr.",
+    "options": [
+      "am",
+      "im",
+      "um",
+      "an"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Saatlarla (dəqiq vaxtla) işlənən sözönü 'um'-dur (məsələn, um 8 Uhr - saat 8-də).",
+    "passport_id": "05-014-0101-B01M28-04",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 62948,
+    "category": "Alman dili",
+    "question": "14:15. (Qeyri-rəsmi vaxtla)",
+    "options": [
+      "Es ist Viertel nach zwei.",
+      "Es ist Viertel vor zwei.",
+      "Es ist Viertel nach vier.",
+      "Es ist Viertel vor vier."
+    ],
+    "correctAnswer": 0,
+    "explanation": "14:15 (02:15) '2-ni 15 dəqiqə (Viertel) keçib (nach)' deməkdir. Düzgün ifadə: 'Es ist Viertel nach zwei'.",
+    "passport_id": "05-014-0101-B01M28-05",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 73812,
+    "category": "Alman dili",
+    "question": "17:50",
+    "options": [
+      "Es ist zehn vor sechs.",
+      "Es ist zehn nach sechs.",
+      "Es ist zehn vor fünf.",
+      "Es ist zehn nach fünf."
+    ],
+    "correctAnswer": 0,
+    "explanation": "17:50 (05:50) '6-ya 10 dəqiqə qalıb' deməkdir. Qalıb 'vor' ilə ifadə olunur. 'Es ist zehn vor sechs.'",
+    "passport_id": "05-014-0101-B01M28-06",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 29471,
+    "category": "Alman dili",
+    "question": "20:45",
+    "options": [
+      "Es ist Viertel nach acht.",
+      "Es ist Viertel vor neun.",
+      "Es ist Viertel vor acht.",
+      "Es ist Viertel nach neun."
+    ],
+    "correctAnswer": 1,
+    "explanation": "20:45 (08:45) '9-a 15 dəqiqə (Viertel) qalıb (vor)' deməkdir. Ona görə də 'Es ist Viertel vor neun' deyilir.",
+    "passport_id": "05-014-0101-B01M28-07",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 58309,
+    "category": "Alman dili",
+    "question": "13:20 (Rəsmi vaxtla - offiziell)",
+    "options": [
+      "Es ist dreizehn Uhr zwanzig.",
+      "Es ist zwanzig Uhr dreizehn.",
+      "Es ist dreizehn zwanzig Uhr.",
+      "Es ist zwanzig nach dreizehn."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rəsmi saat formatında əvvəl saat, sonra 'Uhr' sözü, ən sonda isə dəqiqə deyilir: 'dreizehn Uhr zwanzig'.",
+    "passport_id": "05-014-0101-B01M28-08",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 31054,
+    "category": "Alman dili",
+    "question": "'Es ist fünf nach halb acht.' Rəqəmlə necə yazılır?",
+    "options": [
+      "07:35",
+      "08:35",
+      "07:25",
+      "08:25"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'halb acht' 07:30-dur. 'fünf nach' isə '5 dəqiqə keçib' deməkdir. 07:30 + 5 dəqiqə = 07:35.",
+    "passport_id": "05-014-0101-B01M28-09",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 84620,
+    "category": "Alman dili",
+    "question": "- ___ beginnt der Film?\n- Um 20 Uhr.",
+    "options": [
+      "Wie",
+      "Wo",
+      "Wann",
+      "Wer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Filmin başlama vaxtını öyrənmək üçün 'Wann?' (Nə vaxt?) sual əvəzliyindən istifadə olunur.",
+    "passport_id": "05-014-0101-B01M28-10",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 10583,
+    "category": "Alman dili",
+    "question": "Der Zug fährt um 14:15 ab. Jetzt ist es 14:00. Wie viel Zeit hast du noch?",
+    "options": [
+      "fünfzehn Minuten",
+      "zwanzig Minuten",
+      "dreißig Minuten",
+      "zehn Minuten"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Qatar 14:15-də gedir, indi 14:00-dır. Deməli, arada 15 dəqiqə (fünfzehn Minuten) fərq var.",
+    "passport_id": "05-014-0101-B01M28-11",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 48291,
+    "category": "Alman dili",
+    "question": "- Entschuldigung, wie spät ___ es?\n- Es ___ Viertel vor elf.",
+    "options": [
+      "ist / sind",
+      "sind / ist",
+      "ist / ist",
+      "bist / ist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mübtəda 'Es' (3-cü şəxsin təki) olduğu üçün hər iki boşluğa 'sein' felinin 'ist' forması uyğun gəlir.",
+    "passport_id": "05-014-0101-B01M28-12",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 69342,
+    "category": "Alman dili",
+    "question": "'Wir treffen uns um Viertel nach drei.' (Gündüz vaxtı / Nachmittag)",
+    "options": [
+      "15:15",
+      "14:45",
+      "15:45",
+      "14:15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Viertel nach drei' 3-ü 15 dəqiqə keçib deməkdir. Gündüz vaxtı (günorta) rəqəmlə 15:15 kimi yazılır.",
+    "passport_id": "05-014-0101-B01M28-13",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23815,
+    "category": "Alman dili",
+    "question": "'Saat doqquza iyirmi dəqiqə işləyib.' cümləsinin alman dilinə tərcüməsi:",
+    "options": [
+      "Es ist zwanzig vor neun.",
+      "Es ist zwanzig nach acht.",
+      "Es ist zwanzig nach neun.",
+      "Es ist acht vor zwanzig."
+    ],
+    "correctAnswer": 1,
+    "explanation": "'İşləyib' (keçib) 'nach' sözü ilə ifadə olunur. Doqquza işləyibsə, deməli saat 8-i keçib: 'zwanzig nach acht' (08:20).",
+    "passport_id": "05-014-0101-B01M28-14",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 91740,
+    "category": "Alman dili",
+    "question": "Hansı cümlə qrammatik cəhətdən DOĞRUDUR?",
+    "options": [
+      "Der Film beginnt an 20 Uhr.",
+      "Es ist Viertel auf zehn.",
+      "Mein Bus fährt um halb sieben.",
+      "Ich komme in acht Uhr nach Hause."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Saatlarla yalnız 'um' sözönü işlənir (um 20 Uhr, um acht Uhr). Buna görə A və D variantları səhvdir. B variantında 'auf' yox, 'vor/nach' olmalıdır. C variantında 'um halb sieben' tamamilə doğrudur.",
+    "passport_id": "05-014-0101-B01M28-15",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Wie spät ist es?",
+    "bloomLevel": "application"
+  }
+]

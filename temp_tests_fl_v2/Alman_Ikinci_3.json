@@ -1,0 +1,257 @@
+[
+  {
+    "id": "38412",
+    "category": "Alman dili",
+    "question": "Was sagst du am Morgen? (Səhər nə deyirsən?)",
+    "options": [
+      "Guten Morgen!",
+      "Gute Nacht!",
+      "Guten Abend!",
+      "Tschüs!"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Səhərlər 'Guten Morgen' (Sabahın xeyir) deyilir. Digər variantlar axşam, gecə və ya sağollaşmaq üçündür.",
+    "passport_id": "05-014-0101-B01M03-01",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": "94821",
+    "category": "Alman dili",
+    "question": "Wie ist die richtige Antwort auf 'Wie heißt du?'? ('Wie heißt du?' sualına doğru cavab hansıdır?)",
+    "options": [
+      "Ich bin gut.",
+      "Ich heiße Hesen.",
+      "Du bist Hesen.",
+      "Ich heißen Hesen."
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Wie heißt du?' (Adın nədir?) sualına 'Ich heiße ...' (Mənim adım ...) deyə cavab verilir. 'Ich' əvəzliyi ilə feil '-e' şəkilçisi qəbul edir.",
+    "passport_id": "05-014-0101-B01M03-02",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "15394",
+    "category": "Alman dili",
+    "question": "Finde das fehlende Wort: 'Hallo, ich ... Hesen.' (Çatışmayan sözü tapın.)",
+    "options": [
+      "bist",
+      "heißt",
+      "bin",
+      "sein"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Ich' (mən) əvəzliyi ilə 'sein' (olmaq) feili 'bin' formasına düşür (ich bin).",
+    "passport_id": "05-014-0101-B01M03-03",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "76231",
+    "category": "Alman dili",
+    "question": "Was sagst du, wenn du gehst? (Gedərkən nə deyirsən?)",
+    "options": [
+      "Hallo!",
+      "Guten Tag!",
+      "Wer bist du?",
+      "Tschüs!"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sağollaşarkən 'Tschüs!' (Hələlik/Sağ ol) istifadə olunur. 'Hallo' və 'Guten Tag' salamlamaq üçündür.",
+    "passport_id": "05-014-0101-B01M03-04",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "40218",
+    "category": "Alman dili",
+    "question": "Wähle die richtige Frage! (Doğru sualı seçin!) Antwort: 'Ich bin Ali.'",
+    "options": [
+      "Wie geht's?",
+      "Wer bist du?",
+      "Wo bist du?",
+      "Was ist das?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Ich bin Ali' (Mən Əliyəm) cavabı şəxsin kimliyini bildirir. Buna görə də sual 'Wer bist du?' (Sən kimsən?) olmalıdır.",
+    "passport_id": "05-014-0101-B01M03-05",
+    "difficulty": "easy",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "58392",
+    "category": "Alman dili",
+    "question": "Ergänze den Satz: 'Wie ... du?' (Cümləni tamamlayın.)",
+    "options": [
+      "heiße",
+      "heißen",
+      "heißt",
+      "heßt"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Du' (sən) əvəzliyi ilə 'heißen' feili 'heißt' formasında işlənir.",
+    "passport_id": "05-014-0101-B01M03-06",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "81943",
+    "category": "Alman dili",
+    "question": "Welches Wort passt? '___ Morgen, Hesen!' (Hansı söz uyğun gəlir?)",
+    "options": [
+      "Gute",
+      "Guten",
+      "Guter",
+      "Gutes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində 'Morgen' sözü kişi cinsindədir (der Morgen), buna görə də 'Guten Morgen' şəklində işlənir.",
+    "passport_id": "05-014-0101-B01M03-07",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "27105",
+    "category": "Alman dili",
+    "question": "Finde den Fehler im Satz! 'Ich heiße bist Hesen.' (Cümlədəki səhvi tapın!)",
+    "options": [
+      "Ich",
+      "heiße",
+      "bist",
+      "Hesen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Ich heiße Hesen' və ya 'Ich bin Hesen' demək lazımdır. Həm 'heiße', həm də 'bist' eyni cümlədə yanaşı işlənə bilməz, 'bist' burada yersizdir.",
+    "passport_id": "05-014-0101-B01M03-08",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "analysis"
+  },
+  {
+    "id": "63048",
+    "category": "Alman dili",
+    "question": "Ordne die Wörter zu einem Satz: bin / Hallo / ich / Anna / . (Sözlərdən cümlə qurun.)",
+    "options": [
+      "Hallo ich Anna bin.",
+      "Hallo, bin ich Anna.",
+      "Hallo, ich bin Anna.",
+      "Ich Hallo bin Anna."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Doğru söz sırası: Salamlama ('Hallo') + mübtəda ('ich') + xəbər ('bin') + ad ('Anna').",
+    "passport_id": "05-014-0101-B01M03-09",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "90516",
+    "category": "Alman dili",
+    "question": "Was ist falsch? (Hansı cümlə səhvdir?)",
+    "options": [
+      "Ich bin Leyla.",
+      "Du bist Ali.",
+      "Ich heiße Hesen.",
+      "Du heiße Anna."
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Du' (sən) əvəzliyi ilə feil '-t' şəkilçisi qəbul edir, yəni 'Du heißt Anna' olmalıdır. 'Du heiße' qrammatik cəhətdən yanlışdır.",
+    "passport_id": "05-014-0101-B01M03-10",
+    "difficulty": "medium",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "analysis"
+  },
+  {
+    "id": "51837",
+    "category": "Alman dili",
+    "question": "Wähle die richtige Kombination! '___ heißt du? - Ich ___ Samir.' (Doğru kombinasiyanı seçin!)",
+    "options": [
+      "Wer / bin",
+      "Wie / heiße",
+      "Was / heißt",
+      "Wie / bin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ad soruşarkən 'Wie heißt du?' istifadə olunur. Cavabda isə 'Ich heiße ...' deyilir. Buna görə də doğru cavab 'Wie / heiße' cütlüyüdür.",
+    "passport_id": "05-014-0101-B01M03-11",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "14298",
+    "category": "Alman dili",
+    "question": "Welcher Dialog ist komplett richtig? (Hansı dialoq tamamilə doğrudur?)",
+    "options": [
+      "- Wer bist du? - Ich heiße bin Hesen.",
+      "- Wie heißt du? - Ich bin Leyla.",
+      "- Hallo, wer bist du? - Guten Tag, du bist Ali.",
+      "- Wie heißt ich? - Ich heiße Ali."
+    ],
+    "correctAnswer": 1,
+    "explanation": "B variantında 'Wie heißt du?' sualına məna olaraq uyğun olan 'Ich bin Leyla' cavabı verilmişdir. Cümlə strukturu tamamilə səhvsizdir. Digər variantlarda qrammatik və məntiq səhvləri var.",
+    "passport_id": "05-014-0101-B01M03-12",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "analysis"
+  },
+  {
+    "id": "70324",
+    "category": "Alman dili",
+    "question": "Was sagt man, wenn man schlafen geht? (Yatmağa gedəndə nə deyilir?)",
+    "options": [
+      "Guten Nacht!",
+      "Gute Nacht!",
+      "Guten Abend!",
+      "Gute Abend!"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Nacht' sözü qadın cinsindədir (die Nacht), buna görə də 'Gute Nacht' şəklində istifadə olunur. 'Guten Nacht' və ya 'Gute Abend' yanlışdır.",
+    "passport_id": "05-014-0101-B01M03-13",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": "48619",
+    "category": "Alman dili",
+    "question": "Ergänze den Dialog! Ali: 'Hallo, ich bin Ali. Und ___ ?' Hesen: 'Ich heiße Hesen.' (Dialoqu tamamlayın.)",
+    "options": [
+      "wie heißen ich",
+      "wer bin ich",
+      "wer bist du",
+      "was bist du"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ali özünü təqdim etdikdən sonra qarşı tərəfin kim olduğunu soruşmaq üçün 'Und wer bist du?' (Bəs sən kimsən?) və ya 'Und wie heißt du?' deyə bilər. Variantlarda yalnız 'wer bist du' doğrudur.",
+    "passport_id": "05-014-0101-B01M03-14",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": "29185",
+    "category": "Alman dili",
+    "question": "Welches Pronomen fehlt? 'Hallo, ___ heiße Murad. Und wie heißt ___ ?' (Hansı əvəzliklər çatışmır?)",
+    "options": [
+      "ich / du",
+      "du / ich",
+      "er / du",
+      "ich / er"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Birinci cümlədə feil 'heiße' olduğu üçün 'ich', ikinci cümlədə feil 'heißt' olduğu üçün isə (və qarşı tərəfə xitab edildiyi üçün) 'du' əvəzliyi işlənməlidir.",
+    "passport_id": "05-014-0101-B01M03-15",
+    "difficulty": "hard",
+    "topic": "Stunde 2. Hallo, ich bin Hesen.",
+    "bloomLevel": "application"
+  }
+]

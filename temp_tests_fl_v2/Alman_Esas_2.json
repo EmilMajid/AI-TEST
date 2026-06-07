@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14001,
+    "category": "Alman dili",
+    "question": "Wie sagt man auf Deutsch \"Sabahınız xeyir\"?",
+    "options": [
+      "Guten Tag!",
+      "Guten Morgen!",
+      "Guten Abend!",
+      "Gute Nacht!"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Sabahınız xeyir\" alman dilində \"Guten Morgen\" deməkdir. \"Guten Tag\" - günortanız xeyir, \"Guten Abend\" - axşamınız xeyir deməkdir.",
+    "passport_id": "05-012-0101-B01M02-01",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14002,
+    "category": "Alman dili",
+    "question": "Ergänze den Satz! (Cümləni tamamla!)\n\"Ich ___ Murad.\"",
+    "options": [
+      "heißen",
+      "heißt",
+      "heiße",
+      "heißtst"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Ich\" (mən) əvəzliyi ilə feil \"-e\" şəkilçisi qəbul edir: Ich heiße.",
+    "passport_id": "05-012-0101-B01M02-02",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14003,
+    "category": "Alman dili",
+    "question": "Finde die richtige Frage! (Doğru sualı tap!)\nA: _______________?\nB: Ich heiße Aysel.",
+    "options": [
+      "Wer bist du?",
+      "Wie heißt du?",
+      "Wie alt bist du?",
+      "Woher kommst du?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cavabda \"Ich heiße...\" deyilirsə, sual \"Wie heißt du?\" (Sənin adın nədir?) olmalıdır.",
+    "passport_id": "05-012-0101-B01M02-03",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14004,
+    "category": "Alman dili",
+    "question": "Was sagt man beim Abschied? (Sağollaşarkən nə deyilir?)",
+    "options": [
+      "Hallo!",
+      "Guten Tag!",
+      "Tschüs!",
+      "Danke!"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sağollaşarkən \"Tschüs!\" (Hələlik/Sağ ol) deyilir. \"Hallo\" və \"Guten Tag\" görüşərkən istifadə olunur.",
+    "passport_id": "05-012-0101-B01M02-04",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14005,
+    "category": "Alman dili",
+    "question": "Ergänze das Verb \"sein\"! (Feili tamamla!)\n\"Wer ___ du?\"",
+    "options": [
+      "ist",
+      "bin",
+      "bist",
+      "sind"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"du\" (sən) şəxsi üçün \"sein\" (olmaq) feili \"bist\" formasında olur: \"Wer bist du?\" (Sən kimsən?).",
+    "passport_id": "05-012-0101-B01M02-05",
+    "difficulty": "easy",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14006,
+    "category": "Alman dili",
+    "question": "Wähle die richtige Antwort! (Doğru cavabı seç!)\n- \"Wie heißt du?\"\n- \"___ heiße Samir.\"",
+    "options": [
+      "Er",
+      "Du",
+      "Sie",
+      "Ich"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Özümüzü təqdim edərkən \"Ich\" (mən) əvəzliyindən istifadə edirik: Ich heiße Samir.",
+    "passport_id": "05-012-0101-B01M02-06",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14007,
+    "category": "Alman dili",
+    "question": "Finde die richtige Frage für das Alter! (Yaş soruşmaq üçün doğru sualı tap!)",
+    "options": [
+      "Wie alt bist du?",
+      "Was alt bist du?",
+      "Wer alt bist du?",
+      "Wo alt bist du?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yaş soruşarkən \"Wie alt bist du?\" (Neçə yaşın var?) ifadəsi istifadə olunur. \"Wie\" - necə/nə qədər mənasındadır.",
+    "passport_id": "05-012-0101-B01M02-07",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14008,
+    "category": "Alman dili",
+    "question": "Ergänze den Dialog! (Dialoqu tamamla!)\nAli: Hallo, ich bin Ali. Und ___?\nOrchan: Ich bin Orchan.",
+    "options": [
+      "wer bist du",
+      "wer heißt du",
+      "was heißt du",
+      "wie bist du"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Doğru sual \"Wer bist du?\" (Sən kimsən?) olmalıdır. \"Wer\" kim deməkdir. \"Wie bist du\" yanlış formadır.",
+    "passport_id": "05-012-0101-B01M02-08",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14009,
+    "category": "Alman dili",
+    "question": "Ergänze das Wort! (Sözü tamamla!)\n\"Auf Wieder___!\"",
+    "options": [
+      "segen",
+      "sehen",
+      "hören",
+      "sagen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Görüşənədək \"Auf Wiedersehen!\" kimi yazılır. \"sehen\" feili görmək deməkdir.",
+    "passport_id": "05-012-0101-B01M02-09",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14010,
+    "category": "Alman dili",
+    "question": "Finde den Fehler im Satz! (Cümlədəki səhvi tap!)\n\"Ich bist 11 Jahre alt.\"",
+    "options": [
+      "Ich",
+      "bist",
+      "Jahre",
+      "alt"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Ich\" şəxsi ilə \"sein\" feili \"bin\" olur. Doğru cümlə: \"Ich bin 11 Jahre alt.\" olmalıdır.",
+    "passport_id": "05-012-0101-B01M02-10",
+    "difficulty": "medium",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14011,
+    "category": "Alman dili",
+    "question": "Welches Wort passt? (Hansı söz uyğundur?)\n\"Das ___ Anna und das ___ Tom.\"",
+    "options": [
+      "ist / ist",
+      "bin / bist",
+      "sind / ist",
+      "ist / sind"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Burada şəxslər tək-tək təqdim olunur. \"Das ist Anna\" (Bu Annadır). Hər iki halda 3-cü şəxsin təki \"ist\" istifadə olunur.",
+    "passport_id": "05-012-0101-B01M02-11",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14012,
+    "category": "Alman dili",
+    "question": "Ordne die Wörter zu einem Satz! (Sözlərdən cümlə qur!)\n(1) heiße (2) Ich (3) . (4) Murad",
+    "options": [
+      "(2) (4) (1) (3)",
+      "(2) (1) (4) (3)",
+      "(4) (1) (2) (3)",
+      "(1) (2) (4) (3)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində təsdiq cümləsində feil ikinci yerdə gəlir. Doğru ardıcıllıq: Ich (2) heiße (1) Murad (4) . (3)",
+    "passport_id": "05-012-0101-B01M02-12",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14013,
+    "category": "Alman dili",
+    "question": "Wähle die logische Antwort! (Məntiqi cavabı seç!)\n- \"Guten Tag, Herr Weber!\"\n- \"___________________\"",
+    "options": [
+      "Tschüs!",
+      "Guten Tag, Frau Müller!",
+      "Ich heiße Weber.",
+      "Gute Nacht!"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rəsmi salamlama \"Guten Tag\"a eyni şəkildə \"Guten Tag\" deyə cavab verilir. Digər variantlar situasiyaya uyğun deyil.",
+    "passport_id": "05-012-0101-B01M02-13",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14014,
+    "category": "Alman dili",
+    "question": "Welches Pronomen fehlt? (Hansı əvəzlik çatmır?)\n\"Hallo, ___ bin Leyla. Wie heißt ___ ?\"",
+    "options": [
+      "ich / ich",
+      "du / ich",
+      "ich / du",
+      "du / du"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Birinci boşluğa özünü təqdim etdiyi üçün \"ich\", ikinci boşluğa qarşı tərəfə müraciət etdiyi üçün \"du\" əvəzliyi yazılmalıdır.",
+    "passport_id": "05-012-0101-B01M02-14",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14015,
+    "category": "Alman dili",
+    "question": "Was ist richtig? (Hansı doğrudur?)",
+    "options": [
+      "Gute Tag!",
+      "Guter Tag!",
+      "Gutes Tag!",
+      "Guten Tag!"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Alman dilində \"günortanız xeyir\" ifadəsi hər zaman \"Guten Tag\" kimi yazılır. Tag sözü kişi cinsində (der Tag) olduğu üçün Akkusativ halında \"guten\" olur.",
+    "passport_id": "05-012-0101-B01M02-15",
+    "difficulty": "hard",
+    "topic": "Stunde 1. Ich heiße Murad.",
+    "bloomLevel": "knowledge"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 23001,
+    "category": "Fransız dili",
+    "question": "Comment dit-on \"Xoş istirahətlər!\" en français ?",
+    "options": [
+      "Bon voyage !",
+      "Bonnes vacances !",
+      "Bonjour !",
+      "Bonne nuit !"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Bonnes vacances\" xoş istirahətlər (tətillər) deməkdir. \"Bon voyage\" isə yaxşı yol deməkdir.",
+    "passport_id": "05-016-0101-B01M23-01",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23002,
+    "category": "Fransız dili",
+    "question": "Je vais à la ... pour nager.",
+    "options": [
+      "montagne",
+      "mer",
+      "campagne",
+      "forêt"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nager (üzmək) üçün dənizə (à la mer) gedilir.",
+    "passport_id": "05-016-0101-B01M23-02",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 23003,
+    "category": "Fransız dili",
+    "question": "En été, il fait ... .",
+    "options": [
+      "froid",
+      "chaud",
+      "gris",
+      "mauvais"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yayda (en été) hava isti (chaud) olur.",
+    "passport_id": "05-016-0101-B01M23-03",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23004,
+    "category": "Fransız dili",
+    "question": "Nous ... en vacances.",
+    "options": [
+      "allons",
+      "allez",
+      "vont",
+      "aller"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Nous\" şəxs əvəzliyi ilə \"aller\" feli indiki zamanda \"allons\" kimi hallanır.",
+    "passport_id": "05-016-0101-B01M23-04",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23005,
+    "category": "Fransız dili",
+    "question": "Quel mois est en été ?",
+    "options": [
+      "Janvier",
+      "Avril",
+      "Juillet",
+      "Octobre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Juillet (İyul) yay ayıdır.",
+    "passport_id": "05-016-0101-B01M23-05",
+    "difficulty": "easy",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 23006,
+    "category": "Fransız dili",
+    "question": "Ali et Omar font ... vélo.",
+    "options": [
+      "de",
+      "du",
+      "de la",
+      "des"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Faire du vélo\" (velosiped sürmək) ifadəsində \"vélo\" kişi cinsində olduğu üçün \"du\" artiklı istifadə olunur.",
+    "passport_id": "05-016-0101-B01M23-06",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23007,
+    "category": "Fransız dili",
+    "question": "Ma famille va ... Paris pour les vacances.",
+    "options": [
+      "en",
+      "au",
+      "à",
+      "dans"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Şəhər adlarının qarşısında istiqamət bildirmək üçün \"à\" sözönü işlənir (à Paris).",
+    "passport_id": "05-016-0101-B01M23-07",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23008,
+    "category": "Fransız dili",
+    "question": "Les enfants jouent ... ballon sur la plage.",
+    "options": [
+      "le",
+      "au",
+      "à la",
+      "aux"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İdman və oyun adları ilə \"jouer au\" (jouer à + le = au) istifadə olunur. \"Ballon\" kişi cinsindədir.",
+    "passport_id": "05-016-0101-B01M23-08",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23009,
+    "category": "Fransız dili",
+    "question": "Trouvez l'intrus. (Fərqli olanı tapın)",
+    "options": [
+      "la mer",
+      "le sable",
+      "la plage",
+      "la neige"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"La neige\" (qar) qışa aiddir, digərləri isə dəniz kənarı istirahətinə (dəniz, qum, çimərlik) aiddir.",
+    "passport_id": "05-016-0101-B01M23-09",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 23010,
+    "category": "Fransız dili",
+    "question": "Je passe mes vacances ... mes grands-parents.",
+    "options": [
+      "avec",
+      "sur",
+      "sous",
+      "dans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Avec\" sözönü \"ilə\" deməkdir. Tətili nənə-baba \"ilə\" keçirmək cümlənin mənasına uyğundur.",
+    "passport_id": "05-016-0101-B01M23-10",
+    "difficulty": "medium",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 23011,
+    "category": "Fransız dili",
+    "question": "... saison préfères-tu pour les vacances ?",
+    "options": [
+      "Quel",
+      "Quels",
+      "Quelle",
+      "Quelles"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Saison\" (fəsil) qadın cinsində və tək olduğu üçün \"Quelle\" sual əvəzliyi işlənməlidir.",
+    "passport_id": "05-016-0101-B01M23-11",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23012,
+    "category": "Fransız dili",
+    "question": "Complétez la phrase : \"Il ... beau et le soleil ... .\"",
+    "options": [
+      "fait / brille",
+      "fait / briller",
+      "fais / brille",
+      "est / brille"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hava haqqında danışarkən \"Il fait beau\" ifadəsi istifadə olunur. \"Le soleil\" 3-cü şəxsin təkidir, buna görə fel \"brille\" (parlayır) olmalıdır.",
+    "passport_id": "05-016-0101-B01M23-12",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23013,
+    "category": "Fransız dili",
+    "question": "Que mettez-vous dans la valise pour la plage ?",
+    "options": [
+      "un manteau et des bottes",
+      "un maillot de bain et des lunettes de soleil",
+      "une écharpe et des gants",
+      "un bonnet et une veste"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Çimərlik (la plage) üçün çamadana çimərlik geyimi (maillot de bain) və günəş eynəyi (lunettes de soleil) qoyulur. Digər variantlar qış geyimləridir.",
+    "passport_id": "05-016-0101-B01M23-13",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 23014,
+    "category": "Fransız dili",
+    "question": "Mettez la phrase au pluriel : \"Je prépare ma valise.\"",
+    "options": [
+      "Nous préparons nos valises.",
+      "Nous préparez vos valises.",
+      "Ils préparent leurs valises.",
+      "Vous préparez nos valises."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cümləni cəmə çevirdikdə: \"Je\" -> \"Nous\", \"prépare\" -> \"préparons\", \"ma valise\" -> \"nos valises\" olur.",
+    "passport_id": "05-016-0101-B01M23-14",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 23015,
+    "category": "Fransız dili",
+    "question": "Quel verbe n'est pas au présent ?",
+    "options": [
+      "ils partent",
+      "nous faisons",
+      "vous allez",
+      "tu vas nager"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"Tu vas nager\" yaxın gələcək zamandadır (futur proche, aller + infinitif), digərləri isə indiki zamandadır (présent).",
+    "passport_id": "05-016-0101-B01M23-15",
+    "difficulty": "hard",
+    "topic": "Leçon 4. Bonnes vacances!",
+    "bloomLevel": "comprehension"
+  }
+]

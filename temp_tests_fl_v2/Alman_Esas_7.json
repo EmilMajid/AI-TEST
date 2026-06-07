@@ -1,0 +1,257 @@
+[
+  {
+    "id": 14201,
+    "category": "Alman dili",
+    "question": "Hallo, ...! Wie geht es euch?",
+    "options": [
+      "Leute",
+      "Frau",
+      "Herr",
+      "Sie"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Leute\" (insanlar/uşaqlar) qeyri-rəsmi qrupa (dostlara) müraciət edərkən istifadə olunur. \"Frau\" və \"Herr\" təkdə və rəsmi müraciətdə işlənir.",
+    "passport_id": "05-012-0101-B01M07-01",
+    "difficulty": "easy",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14202,
+    "category": "Alman dili",
+    "question": "Das ist Anna. ... ist meine Freundin.",
+    "options": [
+      "Er",
+      "Sie",
+      "Es",
+      "Ich"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Anna\" qadın adı olduğu üçün üçüncü şəxsin təkində \"sie\" (o) şəxs əvəzliyindən istifadə edilməlidir.",
+    "passport_id": "05-012-0101-B01M07-02",
+    "difficulty": "easy",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14203,
+    "category": "Alman dili",
+    "question": "Wir ... Freunde.",
+    "options": [
+      "bist",
+      "ist",
+      "sind",
+      "seid"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Wir\" (biz) əvəzliyi ilə \"sein\" (olmaq) feili indiki zamanda \"sind\" formasında olur.",
+    "passport_id": "05-012-0101-B01M07-03",
+    "difficulty": "easy",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14204,
+    "category": "Alman dili",
+    "question": "... alt bist du?",
+    "options": [
+      "Was",
+      "Wie",
+      "Wo",
+      "Wer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yaşı soruşarkən Alman dilində \"Wie alt\" (neçə yaş) ifadəsindən istifadə edilir.",
+    "passport_id": "05-012-0101-B01M07-04",
+    "difficulty": "easy",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "knowledge"
+  },
+  {
+    "id": 14205,
+    "category": "Alman dili",
+    "question": "Woher ... ihr?",
+    "options": [
+      "kommt",
+      "kommst",
+      "kommen",
+      "komme"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ihr\" (siz - cəm) əvəzliyi ilə \"kommen\" feili \"-t\" şəkilçisi qəbul edir: \"ihr kommt\".",
+    "passport_id": "05-012-0101-B01M07-05",
+    "difficulty": "easy",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14206,
+    "category": "Alman dili",
+    "question": "Das ... Felix und Max. ... kommen aus Berlin.",
+    "options": [
+      "ist / Er",
+      "sind / Sie",
+      "bist / Wir",
+      "seid / Ihr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Felix və Max iki nəfər (cəm) olduğu üçün feil cəmdə \"sind\", əvəzlik isə \"sie\" (onlar) olmalıdır.",
+    "passport_id": "05-012-0101-B01M07-06",
+    "difficulty": "medium",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14207,
+    "category": "Alman dili",
+    "question": "Ich spiele gern ...",
+    "options": [
+      "Musik",
+      "Fußball",
+      "Buch",
+      "Schwimmen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Spielen\" (oynamaq) feili oyun və idman növləri (məs. Fußball) ilə işlənir. Kitab oxunur (lesen), üzmək (schwimmen) isə özü fəaliyyət bildirən feildir.",
+    "passport_id": "05-012-0101-B01M07-07",
+    "difficulty": "medium",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14208,
+    "category": "Alman dili",
+    "question": "Hallo, ich ... Lena. Und wer ... du?",
+    "options": [
+      "bin / bist",
+      "ist / bist",
+      "bin / ist",
+      "bist / bin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ich\" (mən) əvəzliyi ilə \"sein\" feili \"bin\", \"du\" (sən) əvəzliyi ilə isə \"bist\" formasına düşür.",
+    "passport_id": "05-012-0101-B01M07-08",
+    "difficulty": "medium",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14209,
+    "category": "Alman dili",
+    "question": "Hallo zusammen! ... seid ihr? - Wir sind Leo und Mia.",
+    "options": [
+      "Wer",
+      "Wie",
+      "Was",
+      "Woher"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Şəxslərin kim olduğunu soruşarkən \"Wer\" (kim) sual əvəzliyi istifadə olunur. \"Wer seid ihr?\" = Siz kimsiniz?",
+    "passport_id": "05-012-0101-B01M07-09",
+    "difficulty": "medium",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14210,
+    "category": "Alman dili",
+    "question": "Welcher Satz ist richtig? (Hansı cümlə doğrudur?)",
+    "options": [
+      "Wie heißt dein Freund?",
+      "Wie dein Freund heißt?",
+      "Heißt wie dein Freund?",
+      "Dein Freund wie heißt?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sual cümləsində birinci yerdə sual sözü (Wie), dərhal sonra isə xəbər (heißt) gəlməlidir.",
+    "passport_id": "05-012-0101-B01M07-10",
+    "difficulty": "medium",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14211,
+    "category": "Alman dili",
+    "question": "A: Tschüs, Leute! - B: ...",
+    "options": [
+      "Guten Morgen!",
+      "Ciao, bis bald!",
+      "Danke, gut!",
+      "Ich bin 11."
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Tschüs\" (hələlik/sağ ol) vidalaşma bildirir, buna ən uyğun cavab \"Ciao, bis bald!\" (hələlik, tezliklə görüşərik) ifadəsidir.",
+    "passport_id": "05-012-0101-B01M07-11",
+    "difficulty": "hard",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "comprehension"
+  },
+  {
+    "id": 14212,
+    "category": "Alman dili",
+    "question": "Max und Moritz ... in München. Das ... in Deutschland.",
+    "options": [
+      "wohnen / ist",
+      "wohnt / ist",
+      "wohnen / sind",
+      "wohnt / sind"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Max und Moritz\" birlikdə cəm yaratdığı üçün birinci feil cəmdə (wohnen), \"Das\" isə tək əvəzlik olduğu üçün ikinci feil təkdə (ist) olmalıdır.",
+    "passport_id": "05-012-0101-B01M07-12",
+    "difficulty": "hard",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14213,
+    "category": "Alman dili",
+    "question": "Bist du neu hier? - Nein, ich bin ... neu hier.",
+    "options": [
+      "nein",
+      "nicht",
+      "kein",
+      "nichts"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sifəti (neu - yeni) inkar edərkən \"nicht\" ədatından istifadə edilir. \"Kein\" isə isimləri inkar etmək üçündür.",
+    "passport_id": "05-012-0101-B01M07-13",
+    "difficulty": "hard",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14214,
+    "category": "Alman dili",
+    "question": "Was ... ihr? - Wir ... Deutsch.",
+    "options": [
+      "sprecht / sprechen",
+      "spreche / spricht",
+      "sprichst / sprechen",
+      "sprechen / sprecht"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Ihr\" əvəzliyi üçün feilin sonuna \"-t\" artırılır (sprecht), \"Wir\" əvəzliyi üçün isə feilin məsdər forması qalır (sprechen).",
+    "passport_id": "05-012-0101-B01M07-14",
+    "difficulty": "hard",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "application"
+  },
+  {
+    "id": 14215,
+    "category": "Alman dili",
+    "question": "Das ist Herr Schmidt. ... ist mein Lehrer.",
+    "options": [
+      "Sie",
+      "Er",
+      "Es",
+      "Ich"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Herr Schmidt\" kişi cinsi olduğu üçün cümlənin davamında \"Er\" (o - kişi cinsi) şəxs əvəzliyi işlənməlidir.",
+    "passport_id": "05-012-0101-B01M07-15",
+    "difficulty": "hard",
+    "topic": "Lektion 2. Hey, Leute!",
+    "bloomLevel": "comprehension"
+  }
+]
