@@ -6,20 +6,30 @@ const dataDir = path.join(process.cwd(), "data");
 const offlinePath = path.join(dataDir, "offline_tests.json");
 const textbooksPath = path.join(dataDir, "textbooks.json");
 
-function getSubjectKey(title: string): string | null {
-  const t = title.toLowerCase();
-  if (t.includes("riyaziyyat")) return "Riyaziyyat";
-  if (t.includes("informatika")) return "İnformatika";
-  if (t.includes("biologiya")) return "Biologiya";
-  if (t.includes("fizika")) return "Fizika";
-  if (t.includes("kimya")) return "Kimya";
-  if (t.includes("azərbaycan dili")) return "Azərbaycan dili";
-  if (t.includes("ədəbiyyat")) return "Ədəbiyyat";
-  if (t.includes("azərbaycan tarixi")) return "Azərbaycan tarixi";
-  if (t.includes("ümumi tarix")) return "Ümumi tarix";
-  if (t.includes("ingilis") || t.includes("english")) return "İngilis dili";
-  if (t.includes("rus") || t.includes("русский")) return "Rus dili";
-  return null;
+function getSubjectKeys(title: string, keys: string[]): string[] {
+  const t = title.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");
+  let matchedKeys = keys.filter(k => k === title || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i") === t || t.includes(k.toLowerCase()) || k.toLowerCase().includes(t));
+  
+  if (matchedKeys.length === 0) {
+      if (t.includes("riyaziyyat")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("riyaziyyat"));
+      else if (t.includes("informatika") || t.includes("nformatika")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("informatika") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("nformatika"));
+      else if (t.includes("biologiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("biologiya"));
+      else if (t.includes("fizika")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fizika"));
+      else if (t.includes("kimya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("kimya"));
+      else if (t.includes("azərbaycan dili")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("azərbaycan dili"));
+      else if (t.includes("ədəbiyyat")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("ədəbiyyat"));
+      else if (t.includes("tarix")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("tarix"));
+      else if (t.includes("ingilis") || t.includes("english")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("ingilis") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("english"));
+      else if (t.includes("rus") || t.includes("русский")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("rus") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("русский"));
+      else if (t.includes("fransız") || t.includes("fransiz")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fransız") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fransiz"));
+      else if (t.includes("alman")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("alman"));
+      else if (t.includes("coğrafiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("coğrafiya"));
+      else if (t.includes("musiqi")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("musiqi"));
+      else if (t.includes("təsviri")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("təsviri"));
+      else if (t.includes("texnologiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("texnologiya"));
+      else if (t.includes("təbiət")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("təbiət"));
+  }
+  return matchedKeys;
 }
 
 export async function GET(request: Request) {
@@ -49,16 +59,42 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: true, type: "subjects", data: subjects });
     }
 
+    // Prepare unified questions for the subject
+    let subjectQuestions: any[] = [];
+    if (subject) {
+        const matchedKeys = getSubjectKeys(subject, Object.keys(dbData));
+        matchedKeys.forEach(k => {
+           if (Array.isArray(dbData[k])) {
+               dbData[k].forEach((item: any) => {
+                   if (item.questions && Array.isArray(item.questions)) {
+                       item.questions.forEach((q: any) => {
+                           if (!q.topic && item.topic_key) q.topic = item.topic_key;
+                           subjectQuestions.push(q);
+                       });
+                   } else if (item.question) {
+                       subjectQuestions.push(item);
+                   }
+               });
+           }
+        });
+    }
+
     // Step 3: Grade & Subject provided, no topic -> Return Topics with question counts
     if (grade && subject && !topic) {
-      const subjKey = getSubjectKey(subject);
-      if (!subjKey || !dbData[subjKey]) {
+      if (subjectQuestions.length === 0) {
         return NextResponse.json({ success: true, type: "topics", data: [] });
       }
 
-      const topicsList = dbData[subjKey].map((t: any) => ({
-        topic_key: t.topic_key,
-        questionCount: t.questions ? t.questions.length : 0
+      // Group by topic
+      const topicCounts: Record<string, number> = {};
+      subjectQuestions.forEach(q => {
+          const tName = q.topic || "Digər";
+          topicCounts[tName] = (topicCounts[tName] || 0) + 1;
+      });
+
+      const topicsList = Object.keys(topicCounts).map(tName => ({
+        topic_key: tName,
+        questionCount: topicCounts[tName]
       }));
 
       return NextResponse.json({ success: true, type: "topics", data: topicsList });
@@ -66,17 +102,16 @@ export async function GET(request: Request) {
 
     // Step 4: Grade, Subject & Topic provided -> Return exact Questions
     if (grade && subject && topic) {
-      const subjKey = getSubjectKey(subject);
-      if (!subjKey || !dbData[subjKey]) {
+      if (subjectQuestions.length === 0) {
         return NextResponse.json({ success: false, message: "Baza tapılmadı" });
       }
 
-      const topicObj = dbData[subjKey].find((t: any) => t.topic_key === topic);
-      if (!topicObj) {
+      const topicQuestions = subjectQuestions.filter(q => q.topic === topic);
+      if (topicQuestions.length === 0) {
         return NextResponse.json({ success: false, message: "Bu mövzu üzrə test tapılmadı" });
       }
 
-      return NextResponse.json({ success: true, type: "questions", data: topicObj.questions });
+      return NextResponse.json({ success: true, type: "questions", data: topicQuestions });
     }
 
     return NextResponse.json({ success: false, message: "Invalid parameters" });

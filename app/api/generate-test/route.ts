@@ -343,7 +343,7 @@ Mövzu: ${topic}`
               if (!db[subjectKey]) db[subjectKey] = []
               db[subjectKey].push({
                 topic_key: topic,
-                questions: questionsWithIds.map(q => ({
+                questions: questionsWithIds.map((q: any) => ({
                   id: q.id,
                   question: q.question,
                   options: q.options,
@@ -412,33 +412,19 @@ Mövzu: ${topic}`
       })
     }
 
-    // STEP 2: Heç bir real sual tapılmadıqda ümumi fallback
-    console.log("🔄 Demo suallarına keçid...")
-    const fallbackQuestions = generateAdvancedFallbackQuestions(topic, textbook, grade, questionCount, difficulty)
-
+    // STEP 2: Heç bir real sual tapılmadıqda və AI işləmədikdə ERROR qaytar
+    console.log("❌ Sual tapılmadı və AI aktiv deyil. Error qaytarılır.");
+    
     return NextResponse.json({
-      questions: fallbackQuestions,
-      provider: "fallback",
-      success: true,
-      message: `Demo test sualları istifadə edildi (${topic} mövzusu, ${difficulty} səviyyə)`,
-      error: errorDetails,
+      success: false,
+      error: `"${topic}" mövzusu üzrə testlər hələ bazaya əlavə edilməyib. Zəhmət olmasa, süni intellekt açarlarını (API key) yoxlayın və ya mövzu üzrə offline testlərin generasiya olunduğundan əmin olun.`,
       debug: {
         hasXaiKey,
         hasOpenAI,
         xaiKeyFormat: xaiKey ? (xaiKey.startsWith("xai-") ? "correct" : "incorrect") : "missing",
         openaiKeyFormat: openaiKey ? (openaiKey.startsWith("sk-") ? "correct" : "incorrect") : "missing",
-      },
-      metadata: {
-        textbook,
-        topic,
-        grade,
-        difficulty,
-        questionCount: fallbackQuestions.length,
-        timeLimit,
-        recommendedTime,
-        difficultyDistribution: getDifficultyDistribution(fallbackQuestions),
-      },
-    })
+      }
+    });
   } catch (error) {
     console.error("❌ Test generation xətası:", error)
     return NextResponse.json(
@@ -586,161 +572,100 @@ function loadFromOfflineTests(
 
     const raw = fs.readFileSync(bankPath, "utf-8")
     const db = JSON.parse(raw)
-
-    // Determine subject key from textbook title
-    let subjectKey = null;
-    const titleLower = textbookTitle.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");
-    if (titleLower.includes("ingilis") || titleLower.includes("english")) subjectKey = "İngilis dili";
-    else if (titleLower.includes("fransız") || titleLower.includes("fransiz")) subjectKey = "Fransız dili";
-    else if (titleLower.includes("alman")) subjectKey = "Alman dili";
-    else if (titleLower.includes("rus") || titleLower.includes("русский")) subjectKey = "Русский язык";
-    else if (titleLower.includes("azərbaycan dili")) subjectKey = "Azərbaycan dili";
-    else if (titleLower.includes("ədəbiyyat")) subjectKey = "Ədəbiyyat";
-    else if (titleLower.includes("riyaziyyat")) subjectKey = "Riyaziyyat";
-    else if (titleLower.includes("fizika")) subjectKey = "Fizika";
-    else if (titleLower.includes("kimya")) subjectKey = "Kimya";
-    else if (titleLower.includes("biologiya")) subjectKey = "Biologiya";
-    else if (titleLower.includes("ümumi tarix")) subjectKey = "Ümumi tarix";
-    else if (titleLower.includes("zəfər tarixi")) subjectKey = "Zəfər tarixi";
-    else if (titleLower.includes("tarix")) subjectKey = "Azərbaycan tarixi";
-    else if (titleLower.includes("coğrafiya")) subjectKey = "Coğrafiya";
-    else if (titleLower.includes("informatika") || titleLower.includes("nformatika")) subjectKey = "İnformatika";
-    else if (titleLower.includes("texnologiya")) subjectKey = "Texnologiya";
-    else if (titleLower.includes("təsviri")) subjectKey = "Təsviri incəsənət";
-    else if (titleLower.includes("musiqi")) subjectKey = "Musiqi";
-
-    if (!subjectKey || !db[subjectKey]) return [];
-
     const topicLower = topic.toLowerCase();
 
-    // STRATEGY 1: Direct topic_key match (exact, contains, or contained-by)
-    let topicMatches = db[subjectKey].filter((t: any) => {
-        const keyLower = t.topic_key.toLowerCase();
-        return keyLower === topicLower || 
-               topicLower.includes(keyLower) || 
-               keyLower.includes(topicLower);
-    });
-
-    // STRATEGY 2: Match against individual question's "topic" field
-    // This handles the case where offline_tests.json uses section-level topic_keys
-    // (e.g. "BÖLMƏ 1. STATİSTİKA. EHTİMAL") but the frontend sends sub-topic
-    // titles (e.g. "1. Məlumatın toplanması" or "Hadisənin ehtimalı")
-    if (topicMatches.length === 0) {
-      console.log(`[offline] Direct topic_key match failed for "${topic}", trying question-level topic match...`);
-      topicMatches = db[subjectKey].filter((t: any) => {
-        return t.questions?.some((q: any) => {
-          const qTopic = (q.topic || "").toLowerCase();
-          return qTopic === topicLower || 
-                 topicLower.includes(qTopic) || 
-                 qTopic.includes(topicLower);
-        });
-      });
+    // 1. Find matching subject keys in offline_tests.json
+    const titleLower = textbookTitle.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");
+    const keys = Object.keys(db);
+    let matchedKeys = keys.filter(k => 
+      k === textbookTitle || 
+      k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i") === titleLower || 
+      titleLower.includes(k.toLowerCase()) || 
+      k.toLowerCase().includes(titleLower)
+    );
+    
+    if (matchedKeys.length === 0) {
+        if (titleLower.includes("riyaziyyat")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("riyaziyyat"));
+        else if (titleLower.includes("informatika") || titleLower.includes("nformatika")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("informatika") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("nformatika"));
+        else if (titleLower.includes("biologiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("biologiya"));
+        else if (titleLower.includes("fizika")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fizika"));
+        else if (titleLower.includes("kimya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("kimya"));
+        else if (titleLower.includes("azərbaycan dili")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("azərbaycan dili"));
+        else if (titleLower.includes("ədəbiyyat")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("ədəbiyyat"));
+        else if (titleLower.includes("tarix")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("tarix"));
+        else if (titleLower.includes("ingilis") || titleLower.includes("english")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("ingilis") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("english"));
+        else if (titleLower.includes("rus") || titleLower.includes("русский")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("rus") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("русский"));
+        else if (titleLower.includes("fransız") || titleLower.includes("fransiz")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fransız") || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("fransiz"));
+        else if (titleLower.includes("alman")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("alman"));
+        else if (titleLower.includes("coğrafiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("coğrafiya"));
+        else if (titleLower.includes("musiqi")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("musiqi"));
+        else if (titleLower.includes("təsviri")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("təsviri"));
+        else if (titleLower.includes("texnologiya")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("texnologiya"));
+        else if (titleLower.includes("təbiət")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("təbiət"));
     }
 
-    // STRATEGY 3: Keyword-based fuzzy matching
-    // Extract meaningful words from the topic (length > 2) and check if any
-    // topic_key contains those keywords
-    if (topicMatches.length === 0) {
-      console.log(`[offline] Question-level match failed for "${topic}", trying keyword match...`);
-      const topicWords = topicLower
-        .replace(/[0-9.]/g, "") // Remove numbers and dots
-        .split(/\s+/)
-        .filter((w: string) => w.length > 2);
-      
-      if (topicWords.length > 0) {
-        topicMatches = db[subjectKey].filter((t: any) => {
-          const keyLower = t.topic_key.toLowerCase();
-          // Check if topic_key contains at least one meaningful keyword
-          return topicWords.some((word: string) => keyLower.includes(word));
-        });
-      }
-    }
-
-    // STRATEGY 4: Check if the selected topic is a sub-topic within a section
-    // by looking at the textbook's topic structure
-    if (topicMatches.length === 0) {
-      console.log(`[offline] Keyword match failed for "${topic}", trying textbook section lookup...`);
-      try {
-        const textbooksPath = path.join(process.cwd(), "data", "textbooks.json");
-        if (fs.existsSync(textbooksPath)) {
-          const textbooksData = JSON.parse(fs.readFileSync(textbooksPath, "utf-8"));
-          // Find the matching textbook
-          for (const [grade, books] of Object.entries(textbooksData)) {
-            for (const book of (books as any[])) {
-              if (book.title?.toLowerCase().includes("riyaziyyat") || 
-                  titleLower.includes(book.title?.toLowerCase() || "___")) {
-                // Parse the topics string to find which section this sub-topic belongs to
-                const topicsStr = typeof book.topics === "string" ? book.topics : "";
-                const lines = topicsStr.split("\n").map((l: string) => l.trim());
-                const sectionRegex = /^(BÖLMƏ|FƏSİL|UNIT|HİSSƏ)/i;
-                let currentSection = "";
-                
-                for (const line of lines) {
-                  if (sectionRegex.test(line)) {
-                    currentSection = line;
-                  } else if (line.toLowerCase() === topicLower || 
-                             line.toLowerCase().includes(topicLower) ||
-                             topicLower.includes(line.toLowerCase())) {
-                    // Found the sub-topic, now match using the parent section
-                    if (currentSection) {
-                      const sectionLower = currentSection.toLowerCase();
-                      topicMatches = db[subjectKey].filter((t: any) => {
-                        const keyLower = t.topic_key.toLowerCase();
-                        return keyLower === sectionLower || 
-                               sectionLower.includes(keyLower) || 
-                               keyLower.includes(sectionLower);
-                      });
-                      if (topicMatches.length > 0) {
-                        console.log(`[offline] Found section "${currentSection}" for sub-topic "${topic}"`);
-                        break;
-                      }
-                    }
-                  }
-                }
-                if (topicMatches.length > 0) break;
-              }
-            }
-            if (topicMatches.length > 0) break;
-          }
-        }
-      } catch (lookupErr) {
-        console.error("[offline] Textbook section lookup error:", lookupErr);
-      }
-    }
-
-    if (topicMatches.length === 0) {
-      console.log(`[offline] No matches found for topic "${topic}" in subject "${subjectKey}"`);
+    if (matchedKeys.length === 0) {
+      console.log(`[offline] No subject matched for textbook "${textbookTitle}"`);
       return [];
     }
 
-    console.log(`[offline] Found ${topicMatches.length} matching topic group(s) for "${topic}"`);
-
-    let allQuestions: any[] = [];
-    topicMatches.forEach((t: any) => {
-        allQuestions.push(...t.questions);
+    // 2. Flatten ONLY questions from the matched subjects into a single array
+    let subjectQuestions: any[] = [];
+    matchedKeys.forEach(subjectKey => {
+      if (Array.isArray(db[subjectKey])) {
+        db[subjectKey].forEach((item: any) => {
+          if (item.questions && Array.isArray(item.questions)) {
+            item.questions.forEach((q: any) => {
+              if (!q.topic && item.topic_key) q.topic = item.topic_key;
+              if (!q.category) q.category = subjectKey;
+              subjectQuestions.push(q);
+            });
+          } else if (item.question) {
+            if (!item.category) item.category = subjectKey;
+            subjectQuestions.push(item);
+          }
+        });
+      }
     });
 
-    if (allQuestions.length === 0) return [];
+    if (subjectQuestions.length === 0) return [];
 
-    // Yalnız bu alt mövzuya aid olan sualları götür
-    let specificTopicQuestions = allQuestions.filter((q: any) => {
+    // 3. Filter by topic
+    let specificTopicQuestions = subjectQuestions.filter((q: any) => {
         const qTopic = (q.topic || "").toLowerCase();
         return qTopic === topicLower || 
                topicLower.includes(qTopic) || 
                qTopic.includes(topicLower);
     });
 
+    // 4. Keyword fallback if exact match fails
     if (specificTopicQuestions.length === 0) {
-        specificTopicQuestions = allQuestions; // Fallback to all if somehow none matched exactly
+      console.log(`[offline] Direct match failed for "${topic}", trying keyword match within subject...`);
+      const topicWords = topicLower
+        .replace(/[0-9.]/g, "") // Remove numbers and dots
+        .split(/\s+/)
+        .filter((w: string) => w.length > 3);
+      
+      if (topicWords.length > 0) {
+        specificTopicQuestions = subjectQuestions.filter((q: any) => {
+          const qTopic = (q.topic || "").toLowerCase();
+          return topicWords.some((word: string) => qTopic.includes(word));
+        });
+      }
     }
 
-    // Filter by difficulty
+    if (specificTopicQuestions.length === 0) {
+      console.log(`[offline] No topic matches found for "${topic}" in matched subjects`);
+      return [];
+    }
+
+    // 5. Filter by difficulty
     const diffMap: Record<string, string[]> = {
-      sadə: ["sadə", "asan"],
-      asan: ["sadə", "asan"],
-      orta: ["orta"],
-      çətin: ["çətin"],
-      qarışıq: ["sadə", "asan", "orta", "çətin"]
+      sadə: ["sadə", "asan", "easy", "beginner"],
+      asan: ["sadə", "asan", "easy", "beginner"],
+      orta: ["orta", "medium", "intermediate"],
+      çətin: ["çətin", "hard", "advanced"],
+      qarışıq: ["sadə", "asan", "orta", "çətin", "easy", "medium", "hard", "beginner", "intermediate", "advanced"]
     }
     const reqDiff = difficulty.toLowerCase().trim();
     const allowed = diffMap[reqDiff] || diffMap["qarışıq"]
@@ -753,10 +678,8 @@ function loadFromOfflineTests(
        filtered = specificTopicQuestions; 
     }
 
-    const pool = filtered.length > 0 ? filtered : allQuestions
-
     // Shuffle and take requested count
-    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+    const shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, count)
 
     return shuffled.map((q: any, idx: number) => ({
       id: idx + 1,
@@ -767,7 +690,7 @@ function loadFromOfflineTests(
       difficulty: q.difficulty || difficulty,
       topic: q.topic || topic,
       bloomLevel: (q.bloomLevel || "anlama").toLowerCase(),
-      timeEstimate: q.difficulty === "sadə" || q.difficulty === "asan" ? 1 : q.difficulty === "çətin" ? 3 : 2,
+      timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan" || q.difficulty === "easy") ? 1 : (q.difficulty === "çətin" || q.difficulty === "hard") ? 3 : 2,
       sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
     }))
   } catch (e) {
