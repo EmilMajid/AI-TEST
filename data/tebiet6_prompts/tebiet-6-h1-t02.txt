@@ -1,0 +1,45 @@
+Sən Azərbaycan təhsil sistemi üçün test sualları hazırlayan mütəxəssissan.
+
+Aşağıda Azərbaycan 6-cı sinif Təbiət dərsliyinin "Ağırlıq qüvvəsi" mövzusunun məzmunu verilmişdir (Hissə 1, s.9-11):
+
+---DƏRSLIK MƏTNİ---
+. Ağırlıq qüvvəsi Alma budaqdanqopduqdan sonra hansıistiqamətdə hərəkətedəcək? Nə üçün? • Açar sözlər • • cazibə qüvvəsi • ağırlıq qüvvəsi Fəaliyyət- Cismi Yerə cəzb edən qüvvə cisminkütləsindən asılıdırmı? Ləvazimat: dinamometr, polietilenpaket, qələm qutusu, dəftər və kitab. İşin gedişi: . Aşağıdakı cədvəli dəftərinizdə çəkin. Cisimlərin adıDinamometrin göstəricisi Qələm qutusu Dəftər Kitab . Qələm qutusunu, iş dəftərini və kitabı növbə ilə polietilen torbaya qoyunvə dinamometrin göstəricilərini cədvəldə uyğun xanada qeyd edin. Müzakirə edin: - Dinamometrin göstəricisi hansı halda daha böyük oldu? Buna səbəb nədir? Ağacın budağından qopan meyvənin, yağış damcılarının və ya yuxarı atdığımız topun bir müddətsonra Yerə düşdüyünü müşahidə etmisiniz.
+
+Cisimlərin Yerə düşməsinin səbəbi onlara Yer tərəfindəncazibə qüvvəsinin təsir etməsidir. Cazibə qüvvəsi cismin kütləsindən asılıdır. Yer bütün cisimləri cəzb edir. Cazibə qüvvəsinin istiqaməti Yerin mərkəzinə doğru yönəlir. Ağacdan qopan alma Yerin cazibə qüvvəsinintəsiri ilə yerə düşür. Cismin kütləsi nə qədər böyükolarsa, ona təsir edən cazibə qüvvəsidə o qədər çox olar. Təkcə Yer deyil, Ay, Mars və Günəş kimi digər göy cisimləri də başqa cisimlərə cazibə qüvvəsi ilə təsir edir. Məsələn, Ayda olan astronavtın əlindən buraxdığı alma Ay tərəfindən cəzb olunduğuüçün Ayın səthinə düşər. Cisimlərə Yer və digər planetlər tərəfindən təsir edən cazibə qüvvəsiağırlıq qüvvəsidə adlanır. Ağırlıq qüvvəsi aşağıdakı düsturla hesablanır. F = mgBurada F - ağırlıq qüvvəsi, m - cismin kütləsi, gisə Yer planeti üçün qiymətitəqribən Nkg olansabit kəmiyyətdir. Hər bir göy cismi üçün g sabitinin qiyməti fərqlidir. Məsələn, Ay üçün g = , Nkg , Mars üçün isə g = Nkg -dir. Məsələ həlli Kütləsi kq olan cismə təsir edən ağırlıq qüvvəsini hesablayaq. Verilir: Həlli: m = kqg = Nkq F = ? F = mgF = kq / • Nkq / = NCavab: N
+
+Bilirsinizmi? Yer kürəsi cisimləri özünə cəzbetdiyi kimi, cisimlər dəYeri özünə cəzb edir. Bu qüvvələr ədədi qiymətcəbərabər istiqamətcə bir-birininəksinədir. Eyni bir cismə müxtəlif göy cisimləri tərəfindən təsir edən ağırlıqqüvvələri fərqlidir. Məsələn, astronavtın geyimlə birlikdə kütləsi Ayda və Yerdə eyniolsa da, Ayda ona təsir edən ağırlıq qüvvəsi Yerdəkindən təqribənaltı dəfə azdır. Öyrəndiklərinizi tətbiq edin Ayda olan astronavtın əlindəki çəkicə təsir edən ağırlıq qüvvəsi , N olarsa, çəkicin kütləsinihesablayın (gAy = , Nkq ). Bu çəkic Yerdəolarkən ona təsir edən ağırlıq qüvvəsi neçə nyuton idi? Öyrəndiklərinizi yoxlayın . Yerə yaxın nöqtədən sərbəst buraxılan top hansı istiqamətdə hərəkət edər? Nə üçün? . Eyni bir cismə təsir edən ağırlıq qüvvəsi Marsda daha böyükdür, yoxsa Ayda? Nə üçün? . "Qarpıza təsir edən ağırlıq qüvvəsi kq-dır" cümləsinin niyə səhv olduğunu izah edin.
+---MƏTNİN SONU---
+
+Bu mövzu üçün 18 test tapşırığı hazırla (6 sadə, 6 orta, 6 çətin).
+
+HƏR TEST TAPŞIRIĞI üçün aşağıdakı JSON formatını istifadə et:
+{
+  "grade": 6,
+  "subject": "Təbiət",
+  "topic": "Ağırlıq qüvvəsi",
+  "book_id": "tebiet-6-h1",
+  "pages": "9-11",
+  "passport": "06-003-H1-T02-{N}",
+  "question": "Sual mətni?",
+  "options": {
+    "A": "...",
+    "B": "...",
+    "C": "...",
+    "D": "..."
+  },
+  "answer": "A",
+  "difficulty": "sadə|orta|çətin",
+  "bloom": "bilik|anlama|tətbiq|təhlil|qiymətləndirmə|yaradıcılıq",
+  "explanation": "Düzgün cavabın izahı. Dərslikdə oxumaq üçün: s.9-11"
+}
+
+QAYDALAR:
+1. Suallar mövzunun məzmununa əsaslanmalıdır
+2. Hər sualın yalnız bir düzgün cavabı olmalıdır
+3. Yanlış cavablar (distraktorlar) inandırıcı olmalıdır
+4. Çətinlik: sadə=faktual bilgi, orta=anlama/izah, çətin=tətbiq/analiz
+5. İzahat bölümündə şagirdə hansı səhifəni oxumalı olduğunu da qeyd et
+6. Pasportda {N} yerinə 01-dən başlayan ardıcıl rəqəm yaz
+7. JSON massiv formatında çıxar: [test1, test2, ...]
+
+Yalnız JSON formatında cavab ver, heç bir əlavə izahat yazma.

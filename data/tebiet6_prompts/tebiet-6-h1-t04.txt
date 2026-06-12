@@ -1,0 +1,43 @@
+Sən Azərbaycan təhsil sistemi üçün test sualları hazırlayan mütəxəssissan.
+
+Aşağıda Azərbaycan 6-cı sinif Təbiət dərsliyinin "Arximed qüvvəsi" mövzusunun məzmunu verilmişdir (Hissə 1, s.16-17):
+
+---DƏRSLIK MƏTNİ---
+. Arximed qüvvəsi Topu suya batırıb əlimizdən buraxdıqda o, suyun səthinə çıxır. • Topu sudan itələyən nədir? • Açar sözlər • • Arximed qüvvəsi • həcm Fəaliyyət- Mayeyə batırılmış cismə maye tərəfindənqüvvə təsir edirmi? İşin gedişi: . Cismi dinamometrin qarmağına bağlayın və dinamometringöstəricisini dəftərinizə qeyd edin. . Cisim suya yarısına qədər batdıqda və tam batdıqdan sonradinamometrin göstəricilərini dəftərinizə qeyd edin. Müzakirə edin: - Sizcə, nə üçün dinamometrin cismi suya batırdıqdan sonrakı və əvvəlki göstəriciləri fərqlidir? Ləvazimat: dinamometr, metal cisim, laboratoriyastəkanı, su. Topu suya batırarkən müəyyən bir qüvvənin topu yuxarı itələdiyini müşahidə edirik. Topun suyabatan hissəsi artdıqca həmin qüvvə də artır. Əlimizi topdan çəkdikdə isə bu qüvvə topun suyunsəthinə çıxmasına səbəb olur. Mayeyə batırılan cisimlər maye tərəfindən itələnir. Topu suyun səthinə çıxaran qüvvə suyunitələmə qüvvəsidir. Bu qüvvəyə yunan alimi Arximedin şərəfinə Arximed qüvvəsidə deyilir. Arximed qüvvəsi cismin mayeyə batan hissəsinin həcmi artdıqca artır və bu qüvvə cismə təsir edənağırlıq qüvvəsinin əksinə yönəlir.
+
+Öyrəndiklərinizi tətbiq edin . Gəmidəki yükləri boşaltdıqdan sonra gəmiyə təsir edən Arximed qüvvəsi necə dəyişər? Nə üçün? . Nicat topu suya tam batırıb əlindən buraxır. Topun hansıvəziyyətində ona təsir edən Arximed qüvvəsi daha azdır? Nə üçün? Öyrəndiklərinizi yoxlayın . Boş xanalara uyğun gələn sözləri müəyyən edin. Tonlarla kütləsi olan nəhəng gəminin suda batmamasının səbəbi onun su tərəfindən___ . Su tərəfindən gəmiyə tətbiq olunan bu qüvvə___adlanır və istiqaməti____yönəlir. Gəminin suyabatan hissəsi artdıqca həmin qüvvənin qiyməti də___ . . Həcmləri müxtəlif olan üç top şəkildəki kimi suya batırılır. Hansı topa təsir edən Arximedqüvvəsi daha böyükdür? Nə üçün? . Birinci balıq hərəkət etmir, ikinci balıq üzür. Eyler-Venn diaqramının hissələrinə uyğun ifadələrimüəyyən edin. a. Ağırlıq qüvvəsi təsir edir. b. Arximed qüvvəsi təsir edir. c. Suyun müqavimət qüvvəsi təsir edir. d. Suyun müqavimət qüvvəsi təsir etmir.
+---MƏTNİN SONU---
+
+Bu mövzu üçün 18 test tapşırığı hazırla (6 sadə, 6 orta, 6 çətin).
+
+HƏR TEST TAPŞIRIĞI üçün aşağıdakı JSON formatını istifadə et:
+{
+  "grade": 6,
+  "subject": "Təbiət",
+  "topic": "Arximed qüvvəsi",
+  "book_id": "tebiet-6-h1",
+  "pages": "16-17",
+  "passport": "06-003-H1-T04-{N}",
+  "question": "Sual mətni?",
+  "options": {
+    "A": "...",
+    "B": "...",
+    "C": "...",
+    "D": "..."
+  },
+  "answer": "A",
+  "difficulty": "sadə|orta|çətin",
+  "bloom": "bilik|anlama|tətbiq|təhlil|qiymətləndirmə|yaradıcılıq",
+  "explanation": "Düzgün cavabın izahı. Dərslikdə oxumaq üçün: s.16-17"
+}
+
+QAYDALAR:
+1. Suallar mövzunun məzmununa əsaslanmalıdır
+2. Hər sualın yalnız bir düzgün cavabı olmalıdır
+3. Yanlış cavablar (distraktorlar) inandırıcı olmalıdır
+4. Çətinlik: sadə=faktual bilgi, orta=anlama/izah, çətin=tətbiq/analiz
+5. İzahat bölümündə şagirdə hansı səhifəni oxumalı olduğunu da qeyd et
+6. Pasportda {N} yerinə 01-dən başlayan ardıcıl rəqəm yaz
+7. JSON massiv formatında çıxar: [test1, test2, ...]
+
+Yalnız JSON formatında cavab ver, heç bir əlavə izahat yazma.
