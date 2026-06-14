@@ -1,0 +1,336 @@
+const fs = require('fs');
+const tests = [
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-01",
+    "question": "Qüvvə hansı hərflə işarə olunur?",
+    "options": {"A": "V", "B": "m", "C": "F", "D": "t"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Qüvvə F hərfi ilə işarə olunur. Təkrar üçün: Dərslik səh. 5-8 ('Qüvvənin təsiri nədən asılıdır' bölməsi)."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-02",
+    "question": "Qüvvənin vahidi nədir?",
+    "options": {"A": "Kiloqram (kq)", "B": "Nyuton (N)", "C": "Metr (m)", "D": "Saniyə (s)"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Qüvvənin vahidi Nyutondur (N). Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-03",
+    "question": "Qüvvənin qiyməti hansı cihazla ölçülür?",
+    "options": {"A": "Tərəzi", "B": "Dinamometr", "C": "Termometr", "D": "Xətkeş"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Qüvvənin qiyməti dinamometr adlanan cihazla ölçülür. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-04",
+    "question": "Cismin hərəkət istiqamətində qüvvə tətbiq olunarsa, onun sürəti necə dəyişər?",
+    "options": {"A": "Azalar", "B": "Dəyişməz", "C": "Artar", "D": "Sıfıra bərabər olar"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Cismə təsir edən qüvvə onun hərəkət istiqamətində yönələrsə, cismin sürəti artar. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-05",
+    "question": "Aşağıdakılardan hansı qüvvənin təsirindən asılı deyil?",
+    "options": {"A": "Tətbiq nöqtəsi", "B": "İstiqaməti", "C": "Cismin rəngi", "D": "Ədədi qiyməti"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Qüvvənin təsiri tətbiq nöqtəsindən, istiqamətindən və ədədi qiymətindən asılıdır. Cismin rənginin buna aidiyyəti yoxdur. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-06",
+    "question": "Topun sürətini azaltmaq üçün nə etmək lazımdır?",
+    "options": {"A": "Hərəkət istiqamətində qüvvə tətbiq etmək", "B": "Hərəkətin əksi istiqamətində qüvvə tətbiq etmək", "C": "Topu rəngləmək", "D": "Topun kütləsini azaltmaq"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "tətbiq",
+    "explanation": "Topun sürətini azaltmaq üçün ona hərəkətin əksi istiqamətində qüvvə tətbiq etmək lazımdır. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-07",
+    "question": "Qüvvəni təsvir etmək üçün hansı həndəsi fiqurdan (işarədən) istifadə olunur?",
+    "options": {"A": "Dairə", "B": "Kvadrat", "C": "Ox", "D": "Üçbucaq"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Qüvvə gözlə görünmədiyi üçün onu təsvir etmək məqsədilə oxlardan istifadə olunur. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-08",
+    "question": "Kitabı tən ortasından itələdikdə və ya kənarından itələdikdə fərqli hərəkət etməsi nəyi sübut edir?",
+    "options": {"A": "Qüvvənin qiymətinin vacib olduğunu", "B": "Qüvvənin tətbiq nöqtəsinin təsirini dəyişdiyini", "C": "Sürtünmə qüvvəsinin olmadığını", "D": "Kitabın ağırlığını"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Kitabı ortadan itələdikdə irəli gedir, kənardan itələdikdə isə fırlanır. Bu, qüvvənin təsirinin tətbiq nöqtəsindən asılı olduğunu göstərir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-09",
+    "question": "Nəyə görə oyuncaq maşını hərəkətə gətirmək asan, minik avtomobilini hərəkət etdirmək isə çətindir?",
+    "options": {"A": "Qüvvənin tətbiq nöqtəsi fərqlidir", "B": "Minik avtomobili yalnız geri hərəkət edir", "C": "Minik avtomobilini hərəkət etdirmək üçün daha böyük qüvvə lazımdır", "D": "Oyuncaq maşında sürtünmə yoxdur"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Bəzi cisimləri hərəkət etdirmək üçün daha böyük qüvvə tələb olunur, çünki qüvvənin təsiri onun qiymətindən asılıdır. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-10",
+    "question": "Hərəkət edən cismin istiqamətini dəyişmək üçün nə etmək lazımdır?",
+    "options": {"A": "Cismi rəngləmək", "B": "Qüvvə tətbiq etmək", "C": "Kütləsini artırmaq", "D": "Həcmini azaltmaq"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Hərəkət edən cismin (məsələn, tennis və ya voleybol topunun) istiqamətini dəyişmək üçün ona qüvvə tətbiq etmək lazımdır. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-11",
+    "question": "Şəkildə göstərilən oxun (qüvvə vektorunun) uzunluğu qüvvənin hansı xüsusiyyətini ifadə edir?",
+    "options": {"A": "İstiqamətini", "B": "Tətbiq nöqtəsini", "C": "Ədədi qiymətinin böyüklüyünü", "D": "Təsir müddətini"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Qüvvə nə qədər böyük olarsa, ox da bir o qədər uzun çəkilir. Yəni oxun uzunluğu qüvvənin ədədi qiymətini göstərir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-12",
+    "question": "Cismə təsir edən qüvvə hərəkətə əks yönəldikdə nə baş verir?",
+    "options": {"A": "Cismin sürəti artır", "B": "Cismin sürəti azalır", "C": "Cisim kütləsini itirir", "D": "Cisim dərhal yoxa çıxır"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Qüvvə hərəkətin əksinə yönələrsə, cismin sürəti azalar (məsələn, topun sürətini azaltmaq). Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-13",
+    "question": "Qutunun içinə daha bir kitab qoyduqda onu hərəkətə gətirmək niyə çətinləşir?",
+    "options": {"A": "Çünki qutunun rəngi dəyişdi", "B": "Çünki qutuya tətbiq olunan qüvvənin istiqaməti dəyişdi", "C": "Çünki kütlə artdığı üçün hərəkətə gətirmək üçün daha böyük qüvvə tələb olunur", "D": "Çünki qutu havada asılı qaldı"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Kütlə (kitabların sayı) artdıqca, cismi yerindən tərpətmək üçün qüvvənin qiyməti də artmalıdır. Təkrar üçün: Dərslik səh. 5-8 (Fəaliyyət bölməsi)."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-14",
+    "question": "Yelləncəyin daha sürətlə hərəkət etməsini istəyirsinizsə, qüvvəni hansı istiqamətdə tətbiq etməlisiniz?",
+    "options": {"A": "Hərəkət istiqamətində", "B": "Hərəkətin əksi istiqamətində", "C": "Aşağıya doğru", "D": "Yuxarıya doğru"},
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Sürəti artırmaq üçün qüvvə hərəkət istiqamətində tətbiq edilməlidir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-15",
+    "question": "Oyuncaq maşını sola doğru itələdikdə, maşın hansı istiqamətdə hərəkət edər və niyə?",
+    "options": {"A": "Sağa, çünki qüvvə əks istiqamətdə təsir edir", "B": "Sola, çünki cismə tətbiq olunan qüvvə istiqamətində hərəkət edir", "C": "Hərəkətsiz qalar, çünki qüvvə kiçikdir", "D": "Geri qayıdar, çünki sürtünmə yoxdur"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Sola itələdikdə cismə təsir edən qüvvə sol tərəfə yönəlir və cisim qüvvə istiqamətində hərəkət edir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-16",
+    "question": "Qüvvənin təsvirində oxun başlanğıc nöqtəsi (quyruğu) nəyi bildirir?",
+    "options": {"A": "Qüvvənin istiqamətini", "B": "Qüvvənin ədədi qiymətini", "C": "Qüvvənin tətbiq nöqtəsini", "D": "Cismin kütləsini"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Ox qüvvənin cismə tətbiq olunduğu nöqtədən çəkilir, yəni oxun başlanğıcı tətbiq nöqtəsini göstərir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-17",
+    "question": "Əgər şkafı hərəkət etdirmək üçün 50 N qüvvə tətbiq ediriksə, dinamometr bu zaman hansı qiyməti göstərəcək?",
+    "options": {"A": "0 N", "B": "100 N", "C": "50 N", "D": "Təyin etmək olmaz"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Dinamometr qüvvənin ədədi qiymətini ölçür. Tətbiq edilən qüvvə 50 N-dursa, dinamometr də 50 N göstərəcək. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-18",
+    "question": "Düzxətli hərəkət edən cismə hərəkət istiqamətində yönəlmiş 10 N və hərəkətin əksi istiqamətində 5 N qüvvə təsir edirsə, cismin sürəti necə dəyişər?",
+    "options": {"A": "Azalar, çünki əks qüvvə var", "B": "Sıfır olar, cisim dayanar", "C": "Artar, çünki hərəkət istiqamətindəki qüvvə daha böyükdür", "D": "Dəyişməz"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Hərəkət istiqamətindəki qüvvə (10 N) əks qüvvədən (5 N) böyük olduğu üçün, əvəzləyici qüvvə hərəkət istiqamətində yönəlir və sürət artır. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-19",
+    "question": "Hansı halda qüvvə cismin həm sürətini, həm də hərəkət istiqamətini eyni anda dəyişə bilər?",
+    "options": {"A": "Avtomobilin düz yolda sürətlənməsi", "B": "Yerə düşən almanın sürətinin artması", "C": "Divara çırpılıb geri qayıdan topun hərəkəti", "D": "Sükunətdə olan kitab"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "qiymətləndirmə",
+    "explanation": "Divara dəyən top qüvvənin təsiri ilə həm istiqamətini dəyişərək geri qayıdır, həm də sürəti anidən dəyişir (yavaşlayıb təkrardan sürətlənir). Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-20",
+    "question": "Əyləncə parkında toqquşan maşınların qəfildən dayanması və ya istiqamətini dəyişməsi qüvvənin hansı xüsusiyyəti ilə izah olunur?",
+    "options": {"A": "Qüvvə yalnız sürəti artırır", "B": "Qüvvə cismin hərəkətini və istiqamətini dəyişməyə qadirdir", "C": "Toqquşma zamanı qüvvə yox olur", "D": "Qüvvə cismin kütləsini azaldır"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Qüvvə cismin hərəkət istiqamətini dəyişdirə və sürətini sıfıra endirə bilər. Toqquşan maşınlar buna ən yaxşı nümunədir. Təkrar üçün: Dərslik səh. 5-8."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Qüvvənin təsiri nədən asılıdır",
+    "book_id": "tebiet-6-h1",
+    "pages": "5-8",
+    "passport": "06-003-H1-T01-21",
+    "question": "Siyirməni (çəkməcəni) açmaq və şkafı yerindən tərpətmək üçün tətbiq olunan qüvvələrin ən əsas fərqi nədir?",
+    "options": {"A": "İstiqamətləri və qiymətləri fərqlidir", "B": "Siyirməyə yalnız maqnit qüvvəsi təsir edir", "C": "Şkafı tərpətmək üçün qüvvə lazım deyil", "D": "Hər ikisinə eyni miqdarda qüvvə sərf olunur"},
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Siyirməni açmaq üçün özümüzə tərəf (istiqamət) daha az qüvvə (qiymət) tətbiq edirik. Şkafı isə itələmək üçün kənara doğru və daha çox qüvvə lazımdır. Təkrar üçün: Dərslik səh. 5-8."
+  }
+];
+
+fs.mkdirSync('data/tebiet6_prompts/generated', { recursive: true });
+fs.writeFileSync('data/tebiet6_prompts/generated/tebiet-6-h1-t01.json', JSON.stringify(tests, null, 2));
+
+// Also append to offline_tests.json
+let offline = [];
+if (fs.existsSync('data/offline_tests.json')) {
+  try { offline = JSON.parse(fs.readFileSync('data/offline_tests.json', 'utf8')); } catch(e){}
+}
+offline.push(...tests);
+fs.writeFileSync('data/offline_tests.json', JSON.stringify(offline, null, 2));
+
+// Markdown format
+let md = `\n## Mövzu: Qüvvənin təsiri nədən asılıdır\n\n`;
+tests.forEach(t => {
+  md += `**Sual (${t.passport}):** ${t.question}\n`;
+  md += `- A) ${t.options.A}\n`;
+  md += `- B) ${t.options.B}\n`;
+  md += `- C) ${t.options.C}\n`;
+  md += `- D) ${t.options.D}\n`;
+  md += `**Doğru Cavab:** ${t.answer}\n`;
+  md += `**Çətinlik:** ${t.difficulty} | **Bloom:** ${t.bloom}\n`;
+  md += `**İzahat:** ${t.explanation}\n\n`;
+});
+
+const deskDir = 'C:\\Users\\User\\OneDrive\\Desktop\\6-cı sinif testləri';
+if (!fs.existsSync(deskDir)) fs.mkdirSync(deskDir, {recursive: true});
+fs.appendFileSync(deskDir + '\\Təbiət_6_testləri_Fesil1.md', md);
+
+// Update Queue status
+let q = JSON.parse(fs.readFileSync('data/test_generation_queue_tebiet6.json', 'utf8'));
+const idx = q.findIndex(x => x.topic_id === 'tebiet-6-h1-t01');
+if(idx > -1) {
+  q[idx].status = 'done';
+  q[idx].generated_count = tests.length;
+}
+fs.writeFileSync('data/test_generation_queue_tebiet6.json', JSON.stringify(q, null, 2));
+
+console.log('T01 generated successfully.');

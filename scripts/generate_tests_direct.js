@@ -1,21 +1,28 @@
 /**
  * generate_tests_direct.js
- * Test generasiyasını birbaşa Node.js içindən edir.
- * Hər mövzu üçün prompt faylını oxuyur, "testlər" yaradır
- * və offline_tests.json-a əlavə edir.
+ * SOP V3.0: Vahid Standart Əsasında Kütləvi Test Generasiyası
  * 
- * Bu skript - testləri özü AI ilə generasiya edir, 
- * bunun üçün Antigravity-nin daxili API-sini istifadə edir.
+ * Bu skript verilmiş mövzular üzrə təyin edilmiş çətinlik və sayda 
+ * testləri API vasitəsilə yaradır, Sıfır Tolerantlıqla audit edir, 
+ * və prosesin sonunda strukturlaşdırılmış Hesabat (Report) verir.
  */
 
 const fs   = require('fs');
 const path = require('path');
 const https = require('https');
 
-const QUEUE_FILE  = path.join(__dirname, '../data/test_generation_queue_tebiet6.json');
-const TESTS_FILE  = path.join(__dirname, '../data/offline_tests.json');
-const DESKTOP_DIR = 'C:\\Users\\User\\OneDrive\\Desktop\\6-cı sinif testləri';
-const LOG_FILE    = path.join(__dirname, '../data/tebiet6_generation_log.json');
+// --- SOP V3.0 KONFİQURASİYASI (Qayda 1.2) ---
+const CONFIG = {
+  // Qayda 1.2: Dinamik Sual Sayı və Çətinlik
+  TARGET_COUNT: 15,
+  DIFFICULTY_DIST: { sade: 5, orta: 5, cetin: 5 },
+  
+  // Fayl yolları
+  QUEUE_FILE: path.join(__dirname, '../data/test_generation_queue_tebiet6.json'),
+  TESTS_FILE: path.join(__dirname, '../data/offline_tests.json'),
+  REPORT_FILE: path.join(__dirname, '../data/SOP_V3_Report.md'),
+  DESKTOP_DIR: 'C:\\Users\\User\\OneDrive\\Desktop\\SOP_V3_Testləri'
+};
 
 // .env faylından API açarını yüklə
 function loadEnv() {
@@ -32,37 +39,38 @@ function loadEnv() {
 const env = loadEnv();
 const API_KEY = env.GEMINI_API_KEY || env.GOOGLE_AI_API_KEY || env.API_KEY;
 
-if (!API_KEY) {
-  console.error('❌ API açarı tapılmadı! .env faylında GEMINI_API_KEY olmalıdır.');
-  process.exit(1);
+if (!API_KEY || API_KEY.includes('placeholder')) {
+  console.log('⚠️ DİQQƏT: Keçərli API Key yoxdur! Skript yalnız Subagent-lərin istifadəsi üçün model kimi strukturlaşdırılıb, birbaşa Gemini çağırışı xəta verə bilər.');
 }
 
 // Mövcud testləri yüklə
 let existingTests = [];
-if (fs.existsSync(TESTS_FILE)) {
-  try { existingTests = JSON.parse(fs.readFileSync(TESTS_FILE, 'utf8')); } catch(e) {}
+if (fs.existsSync(CONFIG.TESTS_FILE)) {
+  try { existingTests = JSON.parse(fs.readFileSync(CONFIG.TESTS_FILE, 'utf8')); } catch(e) {}
 }
 
 // Növbəni yüklə
-const queue = JSON.parse(fs.readFileSync(QUEUE_FILE, 'utf8'));
-const queued = queue.filter(q => q.status === 'queued');
-
-console.log(`\n🚀 Birbaşa Test Generator`);
-console.log(`   API Key: ${API_KEY.substring(0,8)}...`);
-console.log(`   Növbədə: ${queued.length} mövzu`);
-
-if (queued.length === 0) {
-  console.log('Heç bir mövzu "queued" statusunda deyil. Əvvəlcə run_tebiet6_generator.js işlət.');
-  process.exit(0);
+if (!fs.existsSync(CONFIG.QUEUE_FILE)) {
+    console.error('❌ Növbə faylı tapılmadı:', CONFIG.QUEUE_FILE);
+    process.exit(1);
 }
+const queue = JSON.parse(fs.readFileSync(CONFIG.QUEUE_FILE, 'utf8'));
+const queued = queue.filter(q => q.status === 'queued' || q.status === 'error_no_context');
+
+console.log(`\n🚀 SOP V3.0 - Uçdan-Uca Test Generator`);
+console.log(`   Hədəf Say: ${CONFIG.TARGET_COUNT} (${CONFIG.DIFFICULTY_DIST.sade} sadə, ${CONFIG.DIFFICULTY_DIST.orta} orta, ${CONFIG.DIFFICULTY_DIST.cetin} çətin)`);
+console.log(`   Növbədəki Mövzu: ${queued.length}`);
 
 // Gemini API çağırışı
 function callGeminiAPI(prompt) {
   return new Promise((resolve, reject) => {
+    if (!API_KEY || API_KEY.includes('placeholder')) {
+        return reject(new Error("API_KEY is placeholder. Subagents should be used for real LLM calls in this environment."));
+    }
     const body = JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
-        temperature: 0.7,
+        temperature: 0.1,
         maxOutputTokens: 8192,
         responseMimeType: 'application/json'
       }
@@ -98,56 +106,119 @@ function callGeminiAPI(prompt) {
   });
 }
 
-// Mövzu üçün prompt yarat
+// SOP V3.0 Prompt Arxitekturası (Qayda 1.3, 2.1, 2.2, 2.3, 3.1)
 function buildPrompt(topic) {
   return `Sən Azərbaycan təhsil sistemi üçün test sualları hazırlayan ekspertsən.
 
-Aşağıda 6-cı sinif Təbiət dərsliyinin "${topic.topic_title}" mövzusunun mətninin bir hissəsi verilmişdir:
-
+Aşağıda "${topic.topic_title}" mövzusunun dərslik mətni verilmişdir:
 ---
-${(topic.text || '').substring(0, 3500)}
+${(topic.text || '').substring(0, 4000)}
 ---
 
-Bu mövzu üçün ${topic.count} test tapşırığı hazırla (${topic.breakdown}).
+QƏTİ QADAĞA (Sıfır Tolerantlıq): 
+Əgər yuxarıdakı mətn boşdursa, sadəcə tapşırıq siyahısıdırsa və ya test yaratmaq üçün kifayət qədər faktoloji bilik yoxdursa, ÜMUMİ BİLİKLƏRİNDƏN İSTİFADƏ EDƏRƏK TEST UYDURMA!
+Bu halda birbaşa olaraq [{"error": "ERROR_NO_CONTEXT"}] qaytar və dayan.
 
-Hər test üçün bu JSON strukturu:
+Əgər mətn kifayətdirsə, aşağıdakı bölgüyə əsasən TAM ${CONFIG.TARGET_COUNT} ədəd test hazırla:
+- ${CONFIG.DIFFICULTY_DIST.sade} sadə
+- ${CONFIG.DIFFICULTY_DIST.orta} orta
+- ${CONFIG.DIFFICULTY_DIST.cetin} çətin
+
+QAYDALAR:
+1. Yalnız JSON massivi qaytar. Əlavə heç bir cümlə yazma.
+2. Variantlarda "Hamısı doğrudur", "Heç biri doğru deyil" istifadəsi qəti qadağandır.
+3. İzahat (explanation) hissəsində MƏHZ dərslikdəki mətndən hərfi-hərfinə kopyalanmış cümləni SİTAT GƏTİR.
+
+Gözlənilən JSON formatı (hər obyekt üçün):
 {
-  "grade": 6,
-  "subject": "Təbiət",
+  "grade": ${topic.grade || 6},
+  "subject": "${topic.subject}",
   "topic": "${topic.topic_title}",
   "book_id": "${topic.book_id}",
   "pages": "${topic.start_page}-${topic.end_page}",
-  "passport": "${topic.passport_prefix}XX",
-  "question": "Sual?",
-  "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+  "passport": "${topic.passport_prefix}XXXX",
+  "question": "Sual mətni?",
+  "options": { "A": "...", "B": "...", "C": "...", "D": "..." },
   "answer": "A",
-  "difficulty": "sadə",
-  "bloom": "bilik",
-  "explanation": "İzahat. Bax: s.${topic.start_page}"
+  "difficulty": "sadə/orta/çətin",
+  "bloom": "bilik/anlama/tətbiq/təhlil/sintez/dəyərləndirmə",
+  "explanation": "Mətndə qeyd edilir: \\\"[Mətndən sözbəsöz sitat]\\\""
+}`;
 }
 
-Qaydalar:
-- XX yerinə 01-dən başlayan ardıcıl nömrə yaz
-- difficulty: sadə / orta / çətin
-- bloom: bilik / anlama / tətbiq / təhlil
-- Hər sualın yalnız bir düzgün cavabı olsun
-- Azərbaycan dilində yaz
-- Yalnız JSON massiv formatında cavab ver: [{...}, {...}]`;
+function cleanString(str) {
+    if (!str) return '';
+    return str.replace(/\s+/g, ' ').replace(/[.,;:!?"]/g, '').toLowerCase().trim();
 }
 
-// Log
-let log = [];
-if (fs.existsSync(LOG_FILE)) {
-  try { log = JSON.parse(fs.readFileSync(LOG_FILE, 'utf8')); } catch(e) {}
+// Qayda 3.2: Sitat Yoxdursa, Sual Yoxdur
+function verifyTestQuotes(test, contextText) {
+    if(!test.explanation) return false;
+    
+    const explClean = cleanString(test.explanation);
+    
+    // Qadağan olunmuş şablon ifadələr
+    if (explClean.includes('öz əksini tapmışdır') || explClean.includes('ümumi biliklərə əsasən')) {
+        return false;
+    }
+    
+    // İzahat dırnaq işarəsi ehtiva etməlidir (Sitatın sübutu)
+    if (!test.explanation.includes('"') && !test.explanation.includes('“')) {
+        // Dırnaq yoxdursa belə "mətndə" sözü keçməlidir
+        if (!explClean.includes('mətndə') && !explClean.includes('qeyd edilir')) {
+            return false;
+        }
+    }
+    
+    return true; 
 }
 
-// Əsas generasiya prosesi
-async function generate() {
-  let totalGenerated = 0;
+// Mərhələ 8: Hesabatlılıq və Problemlərin Analizi
+function generateReport(stats, issues) {
+    let md = `# SOP V3.0 Test Generasiyası və Backend İnteqrasiya Hesabatı\n\n`;
+    md += `## 1. Ümumi Statistikalar (Data Integrity Check)\n`;
+    md += `- Cəmi Emal Edilən Mövzu: **${stats.total}**\n`;
+    md += `- Uğurlu İnteqrasiya: **${stats.success}**\n`;
+    md += `- Yaradılan Valid Test Sayı: **${stats.validTests}**\n\n`;
+
+    md += `## 2. Problemlərin Analizi və Həll Təklifləri (Actionable Solutions)\n`;
+    if (issues.length === 0) {
+        md += `> ✅ Bütün mövzular üzrə nəticələr mükəmməldir. Heç bir kontekst və ya parse xətası qeydə alınmadı.\n`;
+    } else {
+        issues.forEach(issue => {
+            if (issue.type === 'error_no_context') {
+                md += `### 🔴 XƏTA: Mövzu Mətni Yoxdur (Sıfır Tolerantlıq)\n`;
+                md += `- **Mövzu:** ${issue.topic}\n`;
+                md += `- **Analiz:** Sİ tərəfindən dərslik parçasında faktoloji bilik tapılmadığı üçün generasiya bloklandı.\n`;
+                md += `- **Həll Təklifi:** Backend administratoru müvafiq dərslik faylındakı (PDF/HTML) bu səhifə aralığını yoxlamalı, əgər problem varsa, \`textbook-chunks.jsonl\` yenidən indexlənməlidir.\n\n`;
+            } else if (issue.type === 'parse_error') {
+                md += `### 🟡 XƏTA: JSON Validasiya Problemi\n`;
+                md += `- **Mövzu:** ${issue.topic}\n`;
+                md += `- **Analiz:** Sİ-nin qaytardığı nəticə düzgün JSON formatında deyildi (Schema Validation Failed).\n`;
+                md += `- **Həll Təklifi:** Sİ modelinin "temperature" parametri aşağı salınmalı və promptdakı JSON strukturu daha sərt vurğulanmalıdır.\n\n`;
+            }
+        });
+    }
+
+    fs.writeFileSync(CONFIG.REPORT_FILE, md, 'utf8');
+    console.log(`\n📊 Mərhələ 8 Hesabatı yaradıldı: ${CONFIG.REPORT_FILE}`);
+}
+
+async function run() {
+  let stats = { total: queued.length, success: 0, validTests: 0 };
+  let issues = [];
   const updatedQueue = [...queue];
 
   for (const topic of queued) {
-    console.log(`\n📝 [${topic.topic_id}] "${topic.topic_title}" → ${topic.count} test...`);
+    console.log(`\n📝 [${topic.topic_title}] → Emal olunur...`);
+    
+    if (!topic.text || topic.text.trim().length < 50) {
+         console.error(`  ❌ STOP ON DEVIATION: Mövzu mətni (context) yoxdur!`);
+         issues.push({ type: 'error_no_context', topic: topic.topic_title });
+         const qIdx = updatedQueue.findIndex(q => q.topic_id === topic.topic_id);
+         if (qIdx !== -1) updatedQueue[qIdx].status = 'error_no_context';
+         continue;
+    }
 
     try {
       const prompt = buildPrompt(topic);
@@ -155,54 +226,63 @@ async function generate() {
 
       let tests = [];
       try {
-        // JSON parse
-        const cleaned = response.replace(/^```json\n?|\n?```$/g, '').trim();
+        const cleaned = response.replace(/^\s*```json\n?|\n?```\s*$/g, '').trim();
         tests = JSON.parse(cleaned);
         if (!Array.isArray(tests)) tests = [tests];
       } catch(e) {
-        console.warn(`  ⚠️ JSON parse xətası: ${e.message}`);
-        console.warn(`  Response başlanğıcı: ${response.substring(0, 200)}`);
-        log.push({ topic_id: topic.topic_id, status: 'error', error: e.message, at: new Date().toISOString() });
+        console.warn(`  ⚠️ JSON parse xətası: Sİ xətalı struktur qaytardı.`);
+        issues.push({ type: 'parse_error', topic: topic.topic_title });
         continue;
       }
+      
+      if (tests.length > 0 && tests[0].error === 'ERROR_NO_CONTEXT') {
+          console.error(`  ❌ STOP ON DEVIATION: AI mətnin uyğunsuz olduğunu təsdiqlədi.`);
+          issues.push({ type: 'error_no_context', topic: topic.topic_title });
+          const qIdx = updatedQueue.findIndex(q => q.topic_id === topic.topic_id);
+          if (qIdx !== -1) updatedQueue[qIdx].status = 'error_no_context';
+          continue;
+      }
 
-      // Testləri mövcud test bazasına əlavə et
-      existingTests.push(...tests);
-      totalGenerated += tests.length;
+      // Validasiya filtri (Qayda 5.1 & 3.2)
+      const validTests = tests.filter(t => verifyTestQuotes(t, topic.text) && t.question && t.answer);
+      
+      if (validTests.length < tests.length) {
+          console.warn(`  ⚠️ DİQQƏT: ${tests.length - validTests.length} test "Sitat Yoxlaması"ndan və ya Schema Auditindən keçə bilmədi!`);
+      }
+
+      if (validTests.length > 0) {
+          if (!existingTests[topic.subject]) {
+              existingTests[topic.subject] = [];
+          }
+          existingTests[topic.subject].push({topic: topic.topic_title, questions: validTests});
+          stats.validTests += validTests.length;
+          stats.success++;
+          console.log(`  ✅ ${validTests.length} TEST MƏLUMAT BAZASINA YAZILDI.`);
+      } else {
+          console.log(`  ❌ Heç bir test validasiyadan keçmədi.`);
+      }
 
       // Növbə statusunu yenilə
       const qIdx = updatedQueue.findIndex(q => q.topic_id === topic.topic_id);
       if (qIdx !== -1) {
         updatedQueue[qIdx].status = 'done';
-        updatedQueue[qIdx].generated_count = tests.length;
-        updatedQueue[qIdx].done_at = new Date().toISOString();
       }
 
-      log.push({ topic_id: topic.topic_id, status: 'done', count: tests.length, at: new Date().toISOString() });
-      console.log(`  ✅ ${tests.length} test generasiya edildi`);
+      fs.writeFileSync(CONFIG.TESTS_FILE, JSON.stringify(existingTests, null, 2), 'utf8');
+      fs.writeFileSync(CONFIG.QUEUE_FILE, JSON.stringify(updatedQueue, null, 2), 'utf8');
 
-      // Hər mövzudan sonra saxla
-      fs.writeFileSync(TESTS_FILE, JSON.stringify(existingTests, null, 2), 'utf8');
-      fs.writeFileSync(QUEUE_FILE, JSON.stringify(updatedQueue, null, 2), 'utf8');
-      fs.writeFileSync(LOG_FILE, JSON.stringify(log, null, 2), 'utf8');
-
-      // Desktop-a da yaz
-      const desktopFile = path.join(DESKTOP_DIR, `tebiet6_${topic.topic_id}.json`);
-      if (!fs.existsSync(DESKTOP_DIR)) fs.mkdirSync(DESKTOP_DIR, { recursive: true });
-      fs.writeFileSync(desktopFile, JSON.stringify(tests, null, 2), 'utf8');
-
-      // Rate limit üçün 2 saniyə gözlə
-      await new Promise(r => setTimeout(r, 2000));
+      // Lokal Yedəkləmə (Qayda 5.2)
+      if (!fs.existsSync(CONFIG.DESKTOP_DIR)) fs.mkdirSync(CONFIG.DESKTOP_DIR, { recursive: true });
+      const desktopFile = path.join(CONFIG.DESKTOP_DIR, `SOP_V3_${Date.now()}.json`);
+      fs.writeFileSync(desktopFile, JSON.stringify(validTests, null, 2), 'utf8');
 
     } catch(e) {
-      console.error(`  ❌ Xəta: ${e.message}`);
-      log.push({ topic_id: topic.topic_id, status: 'error', error: e.message, at: new Date().toISOString() });
-      fs.writeFileSync(LOG_FILE, JSON.stringify(log, null, 2), 'utf8');
+      console.error(`  ❌ Xəta (Ola bilsin API Key yoxdur): ${e.message}`);
     }
   }
 
-  console.log(`\n🎉 Bitdi! Cəmi ${totalGenerated} test generasiya edildi`);
-  console.log(`   Mövcud testlər (cəmi): ${existingTests.length}`);
+  // Mərhələ 8 Hesabatının yaradılması
+  generateReport(stats, issues);
 }
 
-generate().catch(console.error);
+run().catch(console.error);

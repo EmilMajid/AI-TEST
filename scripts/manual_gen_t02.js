@@ -1,0 +1,295 @@
+const fs = require('fs');
+
+const tests = [
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-01",
+    "question": "Ağacdan qopan almanın yerə düşməsinə hansı qüvvə səbəb olur?",
+    "options": {"A": "Sürtünmə qüvvəsi", "B": "Cazibə (Ağırlıq) qüvvəsi", "C": "Arximed qüvvəsi", "D": "Maqnit qüvvəsi"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Cisimlərin Yerə düşməsinin səbəbi onlara Yer tərəfindən cazibə qüvvəsinin təsir etməsidir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-02",
+    "question": "Yerin cazibə qüvvəsinin istiqaməti hara yönəlir?",
+    "options": {"A": "Yuxarıya", "B": "Sağa", "C": "Yerin mərkəzinə doğru", "D": "Sola"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Cazibə qüvvəsinin istiqaməti həmişə Yerin mərkəzinə doğru yönəlir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-03",
+    "question": "Cisimlərə Yer tərəfindən təsir edən cazibə qüvvəsi necə adlanır?",
+    "options": {"A": "Ağırlıq qüvvəsi", "B": "Sürtünmə qüvvəsi", "C": "Təzyiq", "D": "İtələmə qüvvəsi"},
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Cisimlərə Yer tərəfindən təsir edən cazibə qüvvəsi ağırlıq qüvvəsi adlanır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-04",
+    "question": "Ağırlıq qüvvəsini hesablamaq üçün hansı düsturdan istifadə olunur?",
+    "options": {"A": "F = m + g", "B": "F = m / g", "C": "F = m * g", "D": "F = g / m"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Ağırlıq qüvvəsi F = mg düsturu ilə hesablanır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-05",
+    "question": "Yer planeti üçün 'g' sabitinin qiyməti təqribən nəyə bərabərdir?",
+    "options": {"A": "1.6 N/kq", "B": "10 N/kq", "C": "3.7 N/kq", "D": "9.8 N/kq"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Yer planeti üçün g sabiti təqribən 10 N/kq-a bərabər qəbul edilir (10 N/kq və ya 9.8 N/kq əsasında dərslikdə sadələşdirmə olaraq 10 götürülür. Dərslikdə ~10 N/kq). Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-06",
+    "question": "Təkcə Yer yox, Ay, Mars və Günəş kimi digər göy cisimləri də cisimləri özünə cəzb edirmi?",
+    "options": {"A": "Bəli", "B": "Xeyr", "C": "Yalnız Ay cəzb edir", "D": "Yalnız Günəş cəzb edir"},
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Təkcə Yer deyil, Ay, Mars və digər bütün göy cisimləri də ətrafındakı cisimlərə cazibə qüvvəsi ilə təsir edir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-07",
+    "question": "Yer cismi özünə cəzb etdiyi halda, həmin cisim də Yeri cəzb edirmi?",
+    "options": {"A": "Xeyr, yalnız böyük olan cəzb edir", "B": "Bəli, ədədi qiymətcə bərabər və əks istiqamətdə qüvvə ilə cəzb edir", "C": "Xeyr, Yerin kütləsi sonsuzdur", "D": "Bəli, lakin daha zəif qüvvə ilə"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Bilirsinizmi bölməsində göstərildiyi kimi, cisimlər də Yeri cəzb edir və bu qüvvələr qiymətcə bərabər, istiqamətcə əksdir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-08",
+    "question": "Cismin kütləsi artdıqca, ona təsir edən cazibə qüvvəsi (ağırlıq qüvvəsi) necə dəyişir?",
+    "options": {"A": "Azalır", "B": "Dəyişmir", "C": "Artır", "D": "Sıfıra bərabər olur"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Cismin kütləsi nə qədər böyük olarsa, ona təsir edən cazibə qüvvəsi də bir o qədər çox olar. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-09",
+    "question": "Polietilen torbaya qələm qutusu, dəftər və kitab qoyub dinamometrlə ölçdükdə göstəricinin dəyişməsi nəyi sübut edir?",
+    "options": {"A": "Ağırlıq qüvvəsinin cismin kütləsindən asılı olduğunu", "B": "Sürtünmənin artmasını", "C": "Yer səthindən uzaqlaşdıqca cazibənin azalmasını", "D": "Cazibə qüvvəsinin yalnız kitaba təsir etdiyini"},
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Torbadakı cisimlərin kütləsi fərqli olduğu üçün (kitab ağır, qələm yüngül), dinamometrin göstəricisi artır və bu, cazibə qüvvəsinin kütlədən asılı olduğunu göstərir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-10",
+    "question": "Eyni bir cismə Yerdə və Ayda təsir edən ağırlıq qüvvəsi fərqlidirmi?",
+    "options": {"A": "Xeyr, hər yerdə eynidir", "B": "Bəli, Ayda Yerdəkindən təqribən 6 dəfə azdır", "C": "Bəli, Ayda Yerdəkindən təqribən 6 dəfə çoxdur", "D": "Bəli, Ayda ağırlıq qüvvəsi yoxdur"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Cismin kütləsi dəyişməsə də, Ayda ona təsir edən ağırlıq qüvvəsi Yerdəkindən təqribən altı dəfə azdır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-11",
+    "question": "Kütləsi 5 kq olan cismə Yerdə təsir edən ağırlıq qüvvəsi neçə Nyutondur? (g ≈ 10 N/kq)",
+    "options": {"A": "5 N", "B": "15 N", "C": "50 N", "D": "0.5 N"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "F = m * g düsturu ilə F = 5 kq * 10 N/kq = 50 N tapılır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-12",
+    "question": "Niyə \"Qarpıza təsir edən ağırlıq qüvvəsi 5 kq-dır\" cümləsi elmi cəhətdən səhvdir?",
+    "options": {"A": "Qarpızın kütləsi ola bilməz", "B": "Kq (kiloqram) kütlənin vahididir, qüvvənin yox. Qüvvə Nyutonla ölçülür", "C": "Qarpıza ağırlıq qüvvəsi təsir etmir", "D": "Qüvvə tonla ölçülür"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Ağırlıq qüvvəsi qüvvə olduğu üçün Nyutonla (N) ifadə olunmalıdır. Kiloqram (kq) isə kütlə vahididir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-13",
+    "question": "Yer səthinə yaxın sərbəst buraxılan top hansı istiqamətdə hərəkət edər və niyə?",
+    "options": {"A": "Yuxarıya doğru, çünki hava itələyir", "B": "Aşağıya doğru (Yerin mərkəzinə), çünki ağırlıq qüvvəsi təsir edir", "C": "Sağa doğru, çünki Yerin fırlanmasına tabe olur", "D": "Hərəkətsiz qalar, çünki sürəti sıfırdır"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Yerin cazibə qüvvəsi cisimləri mərkəzinə doğru cəzb etdiyinə görə sərbəst buraxılan top birbaşa aşağıya doğru hərəkət edir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-14",
+    "question": "Eyni bir cismə təsir edən ağırlıq qüvvəsi Marsda daha böyükdür (g = 3.7 N/kq), yoxsa Ayda (g = 1.6 N/kq)?",
+    "options": {"A": "Ayda", "B": "Marsda", "C": "Hər ikisində eynidir", "D": "Asılıdır cismin rəngindən"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mars üçün g sabiti (3.7) Ayın sabitindən (1.6) böyükdür. F = mg olduğuna görə Marsda qüvvə daha böyük olacaqdır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-15",
+    "question": "Ayda olan astronavtın əlindəki çəkicə təsir edən ağırlıq qüvvəsi 3.2 N olarsa, çəkicin kütləsini hesablayın (g(Ay) = 1.6 N/kq).",
+    "options": {"A": "2 kq", "B": "5.12 kq", "C": "1.6 kq", "D": "0.5 kq"},
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "m = F / g düsturundan istifadə edərək: m = 3.2 / 1.6 = 2 kq tapılır. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-16",
+    "question": "Əgər cismin kütləsi 2 kq-dırsa, Yerdə ona təsir edən ağırlıq qüvvəsi neçə Nyutondur? (g ≈ 10 N/kq)",
+    "options": {"A": "2 N", "B": "12 N", "C": "20 N", "D": "0.2 N"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Eyni çəkic Yerdə (g=10) olsaydı, ona təsir edən qüvvə F = 2 * 10 = 20 N olardı. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-17",
+    "question": "Cismin Yerdən və Aydan kütləsini ölçsək, kütləsi necə dəyişər?",
+    "options": {"A": "Ayda 6 dəfə artar", "B": "Yerdə 6 dəfə azalır", "C": "Kütlə heç vaxt dəyişməz, ancaq ağırlıq qüvvəsi dəyişir", "D": "İkisi də tamamilə dəyişir"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "qiymətləndirmə",
+    "explanation": "Kütlə cismin özünəməxsus miqdarıdır və gəzdirilən planetdən asılı olmayaraq dəyişməz qalır, ancaq ona cəzb edən qüvvə (ağırlıq qüvvəsi) planetə (g sabitinə) görə dəyişir. Təkrar üçün: Dərslik səh. 9-11."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ağırlıq qüvvəsi",
+    "book_id": "tebiet-6-h1",
+    "pages": "9-11",
+    "passport": "06-003-H1-T02-18",
+    "question": "İki eyni kütləli topdan birini Yerdə, digərini isə Marsda ölçdülər. Hansı fikir doğrudur? (g(Yer)≈10, g(Mars)≈3.7)",
+    "options": {"A": "Yerdəki topun ağırlıq qüvvəsi daha böyükdür", "B": "Marsdakı topun kütləsi daha çoxdur", "C": "Hər ikisinin ağırlıq qüvvəsi bərabərdir", "D": "Marsda top cəzb olunmur"},
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Kütlələr bərabər olsa da, Yerin g sabiti (10 N/kq) Marsın sabitindən (3.7 N/kq) böyük olduğu üçün, Yerdə topa daha güclü ağırlıq qüvvəsi təsir edir. Təkrar üçün: Dərslik səh. 9-11."
+  }
+];
+
+fs.mkdirSync('data/tebiet6_prompts/generated', { recursive: true });
+fs.writeFileSync('data/tebiet6_prompts/generated/tebiet-6-h1-t02.json', JSON.stringify(tests, null, 2));
+
+let offline = [];
+if (fs.existsSync('data/offline_tests.json')) {
+  try { 
+      const parsed = JSON.parse(fs.readFileSync('data/offline_tests.json', 'utf8')); 
+      if (Array.isArray(parsed)) offline = parsed;
+  } catch(e){}
+}
+offline.push(...tests);
+fs.writeFileSync('data/offline_tests.json', JSON.stringify(offline, null, 2));
+
+let md = `\n## Mövzu: Ağırlıq qüvvəsi\n\n`;
+tests.forEach(t => {
+  md += `**Sual (${t.passport}):** ${t.question}\n`;
+  md += `- A) ${t.options.A}\n`;
+  md += `- B) ${t.options.B}\n`;
+  md += `- C) ${t.options.C}\n`;
+  md += `- D) ${t.options.D}\n`;
+  md += `**Doğru Cavab:** ${t.answer}\n`;
+  md += `**Çətinlik:** ${t.difficulty} | **Bloom:** ${t.bloom}\n`;
+  md += `**İzahat:** ${t.explanation}\n\n`;
+});
+
+const deskDir = 'C:\\Users\\User\\OneDrive\\Desktop\\6-cı sinif testləri';
+if (!fs.existsSync(deskDir)) fs.mkdirSync(deskDir, {recursive: true});
+fs.appendFileSync(deskDir + '\\Təbiət_6_testləri_Fesil1.md', md);
+
+let q = JSON.parse(fs.readFileSync('data/test_generation_queue_tebiet6.json', 'utf8'));
+const idx = q.findIndex(x => x.topic_id === 'tebiet-6-h1-t02');
+if(idx > -1) {
+  q[idx].status = 'done';
+  q[idx].generated_count = tests.length;
+}
+fs.writeFileSync('data/test_generation_queue_tebiet6.json', JSON.stringify(q, null, 2));
+
+console.log('T02 generated successfully.');

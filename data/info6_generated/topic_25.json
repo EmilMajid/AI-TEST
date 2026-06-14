@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-01",
+    "question": "Məktub göndərmək və almaq üçün kompüter nəyə qoşulmuş olmalıdır?",
+    "options": {
+      "A": "İnternetə",
+      "B": "Printerə",
+      "C": "Skanerə",
+      "D": "Televizora"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Nəzərə alın ki, məktub göndərmək və almaq üçün kompüteriniz İnternetə qoşulmuş olmalıdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-02",
+    "question": "Elektron məktubun baş hissəsində \"To\" (Kimə) sahəsində nə yazılır?",
+    "options": {
+      "A": "Adresatın ünvanı",
+      "B": "Məktubun mövzusu",
+      "C": "Göndərənin yaşı",
+      "D": "Məktubun mətni"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə deyilir: \"Məktubun baş hissəsində – To (Kimə) sahəsində adresatın (məktubun ünvanlandığı şəxsin) ünvanı yazılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-03",
+    "question": "Yeni gələn məktublar poçt proqramında hansı qovluqda göstərilir?",
+    "options": {
+      "A": "Inbox (Gələnlər)",
+      "B": "Spam (Zibil)",
+      "C": "Sent (Göndərilənlər)",
+      "D": "Drafts (Qaralamalar)"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə yazılıb: \"Yeni gələn məktublar varsa, poçt proqramı başladılan kimi onlar Inbox (Gələnlər) qovluğunda göstərilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-04",
+    "question": "Elektron məktub yazmaq üçün hansı düyməni çıqqıldatmaq lazımdır?",
+    "options": {
+      "A": "Compose",
+      "B": "Inbox",
+      "C": "Send",
+      "D": "Spam"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə göstərilib: \"Pəncərənin sol panelində yuxarıda Compose düyməsini çıqqıldadın. Məktub yazmaq üçün New Message pəncərəsi açılacaq.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-05",
+    "question": "Yazılmış məktubu göndərmək üçün hansı düyməni sıxmaq lazımdır?",
+    "options": {
+      "A": "Send",
+      "B": "Compose",
+      "C": "Subject",
+      "D": "Inbox"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilib: \"Məktubu göndərmək üçün Send düyməsini çıqqıldadın.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-06",
+    "question": "Elektron poçtda \"Subject\" (Mövzu) sahəsində nə verilir?",
+    "options": {
+      "A": "Məktubun məzmununun qısa təsviri",
+      "B": "Adresatın ünvanı",
+      "C": "Məktubun tam mətni",
+      "D": "Məktubu göndərənin şəkli"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə vurğulanır: \"Subject (Mövzu) sahəsində məktubun məzmununun qısa təsviri başlıq şəklində verilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-07",
+    "question": "Nə üçün tanımadığınız şəxslərdən gələn faylları açmaq məsləhət görülmür?",
+    "options": {
+      "A": "Çünki onlarda virus ola bilər.",
+      "B": "Çünki onlar Spam qovluğuna düşür.",
+      "C": "Çünki poçt qutusu dola bilər.",
+      "D": "Çünki məktub dərhal silinir."
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə xəbərdarlıq edilir: \"E-poçta gələn fayllarda virus ola bilər. Ona görə də tanımadığınız şəxslərdən gələn faylları açmayın.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-08",
+    "question": "Çox vaxt mövzusu göstərilməyən məktublar poçt sistemi tərəfindən hara yerləşdirilir?",
+    "options": {
+      "A": "Spam qovluğuna",
+      "B": "Inbox qovluğuna",
+      "C": "Sent qovluğuna",
+      "D": "Trash qovluğuna"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə aydın yazılıb: \"Çox vaxt mövzusu göstərilməyən məktublar poçt sistemi tərəfindən reklam xarakterli, lazımsız hesab olunur və Spam qovluğuna yerləşdirilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-09",
+    "question": "Elektron yazışmalarda emosiyaları bildirmək üçün istifadə olunan xüsusi simvollar ardıcıllığı necə adlanır?",
+    "options": {
+      "A": "Smayl",
+      "B": "Fayl",
+      "C": "Spam",
+      "D": "Şrift"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə bildirilir: \"Məsələn, onda emosiyaları bildirmək üçün çox zaman sözlərin yerinə xüsusi simvollar ardıcıllığından ( smayl ) istifadə olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-10",
+    "question": "Elektron poçt proqramında məktub hazırlamaq nəyə bənzəyir?",
+    "options": {
+      "A": "Mətn redaktorunda sənəd hazırlamağa",
+      "B": "Qrafik redaktorda rəsm çəkməyə",
+      "C": "Cədvəl redaktorunda cədvəl qurmağa",
+      "D": "Brauzerdə axtarış aparmağa"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Elektron poçt proqramında məktub hazırlamaq mətn redaktorunda sənəd hazırlamağa çox bənzəyir\"."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-11",
+    "question": "Inbox qovluğuna daxil olarkən məktublar siyahısında hansı məlumatlar əks olunur?",
+    "options": {
+      "A": "Məktubun kimdən gəldiyi, mövzusu, poçt qutunuza hansı tarixdə qəbul edildiyi",
+      "B": "Məktubun içindəki bütün şəkillər və fayllar",
+      "C": "Məktubun həcmi və səhifələrin sayı",
+      "D": "Yalnız məktubun mətni və göndərilmə saatı"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə göstərilir: \"Orada məktubun kimdən gəldiyi, mövzusu, poçt qutunuza hansı tarixdə qəbul edildiyi əks olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-12",
+    "question": "Məktubun surətini bir neçə şəxsə göndərmək üçün onların ünvanlarını hansı sahəyə daxil etmək olar?",
+    "options": {
+      "A": "Cc",
+      "B": "To",
+      "C": "Subject",
+      "D": "Compose"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunub: \"Əgər məktubunuzun surətini bir neçə şəxsə göndərmək istəyirsinizsə, onların e-poçt ünvanlarını Cc sahəsinə daxil edə bilərsiniz.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-13",
+    "question": "Smayllarda istifadə olunan iki nöqtə, defis və mötərizə simvolları uyğun olaraq nələri bildirir?",
+    "options": {
+      "A": "Gözü, burunu, ağızı",
+      "B": "Ağızı, gözü, qulağı",
+      "C": "Burunu, ağızı, qaşı",
+      "D": "Gözü, qulağı, burunu"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə aydın verilir: \"Smayllarda istifadə olunan hər simvolun öz anlamı var: iki nöqtə gözü, defis burunu, mötərizə isə ağızı bildirir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-14",
+    "question": "Elektron məktubu özünüzə göndərmək üçün hansı addımı atmalısınız?",
+    "options": {
+      "A": "To sahəsində öz poçt ünvanınızı göstərməlisiniz.",
+      "B": "Subject sahəsində öz adınızı yazmalısınız.",
+      "C": "Compose düyməsini iki dəfə sıxmalısınız.",
+      "D": "Özünüzə məktub göndərmək mümkün deyil."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə yazılır: \"Məktubu özünüzə də göndərə bilərsiniz. Bu halda həmin sahədə öz poçt ünvanınızı göstərməlisiniz.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "book_id": "informatika-6",
+    "pages": "84",
+    "passport": "06-004-0101-B001-25-15",
+    "question": "Elektron yazışmalarda smaylları simvollarla deyil, kiçik şəkillərlə göstərmək necə adlanır?",
+    "options": {
+      "A": "Emoji",
+      "B": "Avatar",
+      "C": "Loqo",
+      "D": "Piksel"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Mətndə vurğulanır: \"Son zamanlar məktublaşmada smaylları simvollarla yox, kiçik şəkillərlə – emojilərlə göstərirlər.\""
+  }
+]

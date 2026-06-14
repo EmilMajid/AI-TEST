@@ -1,0 +1,97 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "24-25",
+    "passport": "06-011-0101-B005-01-01",
+    "question": "Mətnin müxtəlif hissələrinə müəyyən tərtibat verilməsi necə adlanır?",
+    "options": {
+      "A": "Formatlanması",
+      "B": "Redaktə edilməsi",
+      "C": "Çap edilməsi",
+      "D": "Saxlanılması"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Mətnin müxtəlif hissələrinə müəyyən tərtibatverilməsi onunformatlanması adlanır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "24-25",
+    "passport": "06-011-0101-B005-01-02",
+    "question": "Şriftin tərifi mətndə necə verilmişdir?",
+    "options": {
+      "A": "Eyni dizayna malik simvolların yığınıdır",
+      "B": "Mətnin müxtəlif hissələrinə tərtibat verilməsidir",
+      "C": "Mətni rəngləndirmək üçün istifadə olunan alətdir",
+      "D": "Başlıqları fərqləndirmək üçün xüsusi proqramdır"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Şrifteyni dizayna malik simvollarınyığınıdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "24-25",
+    "passport": "06-011-0101-B005-01-03",
+    "question": "Şriftin ölçüsü hansı vahidlə göstərilir?",
+    "options": {
+      "A": "Punktla",
+      "B": "Millimetrlə",
+      "C": "Piksellə",
+      "D": "Santimetrlə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Şriftin ölçüsüpunktla göstərilir ( punkt = , mm).\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "24-25",
+    "passport": "06-011-0101-B005-01-04",
+    "question": "Şrifti seçdikdən sonra mətni \"bəzəməyin\" ən sadə yolu hansıdır?",
+    "options": {
+      "A": "Onu qalın, kursiv, yaxud altcizgili kimi seçdirməkdir",
+      "B": "Yalnız şriftin ölçüsünü dəyişməkdir",
+      "C": "Böyük mətn bloklarını çıxıntısız şriftlə yazmaqdır",
+      "D": "Undo düyməsindən istifadə edərək son əməliyyatı ləğv etməkdir"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Şrifti seçdikdən sonra mətni “bəzəməyin” ən sadə yolu onuqalın , kursiv , yaxudaltcizgili kimi seçdirməkdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "24-25",
+    "passport": "06-011-0101-B005-01-05",
+    "question": "Başlıqlarda hansı növ şriftlərin istifadəsi daha məqsədəuyğundur?",
+    "options": {
+      "A": "Çıxıntısız şriftlərin",
+      "B": "Çıxıntılı şriftlərin",
+      "C": "Yalnız altcizgili şriftlərin",
+      "D": "Kiçik ölçülü şriftlərin"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Bununəksinə olaraq isə başlıqlardaçıxıntısız şriftlərdaha məqsədəuyğunolur\""
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-01",
+    "question": "İnformasiyanın ən kiçik ölçü vahidi nədir?",
+    "options": {
+      "A": "Bit",
+      "B": "Bayt",
+      "C": "Kilobayt",
+      "D": "Meqabayt"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Məlumdur ki, bit informasiyanın ən kiçik ölçü vahididir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-02",
+    "question": "Səkkiz bitdən ibarət ardıcıllıq necə adlanır?",
+    "options": {
+      "A": "Bayt",
+      "B": "Kilobayt",
+      "C": "Giqabayt",
+      "D": "Terabayt"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Səkkiz bitdən ibarət ardıcıllığa bayt deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-03",
+    "question": "Kompüterdə bütün növ informasiyalar (mətn, səs, qrafik və s.) hansı kodla göstərilir?",
+    "options": {
+      "A": "İkilik kodla",
+      "B": "Onluq kodla",
+      "C": "Səkkizlik kodla",
+      "D": "Onaltılıq kodla"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Kompüterdə bütün növ informasiyalar (mətn, səs, qrafik və s.) ikilik kodla göstərilir (kodlaşdırılır).\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-04",
+    "question": "1 Kilobayt neçə bayta bərabərdir?",
+    "options": {
+      "A": "1024",
+      "B": "1000",
+      "C": "8",
+      "D": "1048576"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"1 Kilobayt = 1024 bayt.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-05",
+    "question": "Faylın ölçüsünü tapmaq üçün açılan siyahıdan hansı bənd seçilməlidir?",
+    "options": {
+      "A": "Properties",
+      "B": "Size",
+      "C": "My Documents",
+      "D": "My Pictures"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Açılan siyahıdan Properties bəndini seçin. Bu zaman açılan pəncərədə də faylın ölçüsünü tapıb baxa bilərsiniz.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-06",
+    "question": "Kompüterin yaddaşında boşluq simvolu nə qədər yer tutur?",
+    "options": {
+      "A": "1 bayt",
+      "B": "1 bit",
+      "C": "8 bayt",
+      "D": "1 kilobayt"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"Başqa sözlə, hər bir simvol, o cümlədən boşluq simvolu kompüterin yaddaşında 1 bayt yer tutur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-07",
+    "question": "1 Giqabayt neçə Meqabayta bərabərdir?",
+    "options": {
+      "A": "1024",
+      "B": "1000",
+      "C": "8",
+      "D": "1024 Kilobayt"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"1 Giqabayt = 1024 Meqabayt.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-08",
+    "question": "Kompüterin yaddaşında \"A\" hərfi neçə bitdən ibarət ardıcıllıq kimi kodlaşdırılır?",
+    "options": {
+      "A": "8",
+      "B": "1",
+      "C": "1024",
+      "D": "10"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"Kompüterdə hər bir rəqəm, hərf, ümumiyyətlə, hər bir simvol 8 bitdən ibarət ardıcıllıq kimi kodlaşdırılır. Məsələn, ... A hərfi 01000001 ... şəklində kodlaşdırılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-09",
+    "question": "Siçanın göstəricisini faylın simgəsinin üzərinə gətirəndə açılan kiçik çərçivədə faylın hansı xarakteristikasını görmək olar?",
+    "options": {
+      "A": "Ölçüsünü",
+      "B": "Qovluğun adını",
+      "C": "İkilik kodunu",
+      "D": "Çap sürətini"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"Faylın xarakteristikalarının olduğu kiçik çərçivə açılacaq. Onların içərisində faylın ölçüsü də var (Size).\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-10",
+    "question": "1 Terabayt yaddaş tutumu nəyə bərabərdir?",
+    "options": {
+      "A": "1024 Giqabayta",
+      "B": "1024 Meqabayta",
+      "C": "1024 Kilobayta",
+      "D": "1024 Bayta"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"1 Terabayt = 1024 Giqabayt.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-11",
+    "question": "Mətnə əsasən, bir giqabaytda təxminən milyard bayt var. Bu yaddaşa təxminən nə qədər MPEG formatlı videoyazı yerləşər?",
+    "options": {
+      "A": "2 saatdan artıq",
+      "B": "15 dəqiqəlik",
+      "C": "20 saatlıq",
+      "D": "100 saatlıq"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Bir giqabaytda təxminən milyard bayt var. Bu həcmli yaddaşa təxminən: ... 2 saatdan artıq MPEG formatlı videoyazı yerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-12",
+    "question": "Bu dərsin başlığı kompüterin yaddaşında nə qədər yer tutur?",
+    "options": {
+      "A": "30 bayt",
+      "B": "30 bit",
+      "C": "1 kilobayt",
+      "D": "8 bayt"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: \"Məsələn, bu dərsin başlığı kompüterin yaddaşında 30 bayt yer tutacaq.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-13",
+    "question": "1 Giqabayt yaddaşa təxminən nə qədər MP3 formatlı musiqi yerləşə bilər?",
+    "options": {
+      "A": "20 saatlıq",
+      "B": "1 min",
+      "C": "100 saatlıq",
+      "D": "15 dəqiqəlik"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Bir giqabaytda təxminən milyard bayt var. Bu həcmli yaddaşa təxminən: ... 20 saatlıq MP3 formatlı musiqi ... yerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-14",
+    "question": "Yaddaş qurğusunun tutumunu bildikdə, diskin ümumi tutumu ilə yanaşı hansı digər ölçülər də görünür?",
+    "options": {
+      "A": "Tutulmuş və boş qalan sahənin ölçüləri",
+      "B": "Yalnız boş qalan sahənin ölçüsü",
+      "C": "Faylların sayının ölçüsü",
+      "D": "Qurğunun işləmə sürəti"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Bu halda diskin ümumu tutumu ilə yanaşı, diskin tutulmuş və boş qalan sahəsinin də ölçüləri görünür.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "4. İnformasiya nə qədər yer tutur",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-04-15",
+    "question": "Əgər mətn yaddaşda 1/4 kilobayt yer tutursa, bu mətndə neçə simvol var?",
+    "options": {
+      "A": "256",
+      "B": "1024",
+      "C": "512",
+      "D": "128"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: \"hər bir simvol ... kompüterin yaddaşında 1 bayt yer tutur\" və \"1 Kilobayt = 1024 bayt\". 1/4 kilobayt = 1024 / 4 = 256 bayt edir. Beləliklə, mətndə 256 simvol var."
+  }
+]

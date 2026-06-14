@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-01",
+    "question": "Gündəlik həyatımızda adətən hansı say sistemindən istifadə edirik?",
+    "options": {
+      "A": "İkilik say sistemindən",
+      "B": "Onluq say sistemindən",
+      "C": "Səkkizlik say sistemindən",
+      "D": "Onaltılıq say sistemindən"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Gündəlik həyatımızda 10-luq say sistemindən istifadə edirik.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-02",
+    "question": "İkilik say sistemində hansı rəqəmlərdən istifadə olunur?",
+    "options": {
+      "A": "1 və 2",
+      "B": "0, 1 və 2",
+      "C": "0 və 1",
+      "D": "Yalnız 1"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"İkilik say sistemində iki rəqəmdən \u2013 0 və 1-dən istifadə olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-03",
+    "question": "\"Bit\" sözü nəyin qısaltmasıdır?",
+    "options": {
+      "A": "binary digit",
+      "B": "byte term",
+      "C": "basic item",
+      "D": "binary text"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Bu rəqəmlərə ikilik rəqəm və ya bit (ingiliscə bi nary digi t \u2013 ikilik rəqəm) deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-04",
+    "question": "Kompüterlərdə hansı say sistemindən istifadəyə üstünlük verilmişdir?",
+    "options": {
+      "A": "Onluq say sisteminə",
+      "B": "Üçlük say sisteminə",
+      "C": "İkilik say sisteminə",
+      "D": "Beşlik say sisteminə"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Kompüteri yaradarkən ixtiraçılar 2-lik say sisteminə üstünlük vermişlər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-05",
+    "question": "İkilik say sistemində texniki baxımdan \"0\" rəqəmi nəyi ifadə edir?",
+    "options": {
+      "A": "Siqnal var",
+      "B": "Yeni mərtəbə",
+      "C": "Siqnal yoxdur",
+      "D": "Yanlış məlumat"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Sadəcə, iki rəqəmi (0 və 1-i) on rəqəmlə müqayisədə texniki baxımdan gerçəkləşdirmək daha asandır: 1 \u2013 siqnal var, 0 \u2013 siqnal yoxdur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-06",
+    "question": "İkilik say sistemində ən böyük rəqəm hansıdır?",
+    "options": {
+      "A": "9",
+      "B": "2",
+      "C": "1",
+      "D": "0"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Burada ən böyük rəqəm 1 olduğundan mərtəbə ən böyük qiymətinə (yəni 1-ə) çatdıqda yeni mərtəbə yaranır\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-07",
+    "question": "Onluq ədədi ikilik ədədə çevirmək üçün ədədi ardıcıl olaraq hansı rəqəmə bölmək lazımdır?",
+    "options": {
+      "A": "10-a",
+      "B": "2-yə",
+      "C": "8-ə",
+      "D": "0-a"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "\"onluq ədəd 2-yə bölünür, sonra qismət 2-yə bölünür və bu proses qismət 0 olanadək davam etdirilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-08",
+    "question": "Verilmiş ədədin hansı say sistemində yazıldığını göstərmək üçün nədən istifadə olunur?",
+    "options": {
+      "A": "Üst indeksdən",
+      "B": "Aşağı indeksdən",
+      "C": "Mötərizədən",
+      "D": "Xüsusi hərflərdən"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "\"Verilmiş ədədin hansı say sistemində yazıldığını göstərmək lazımdır. Bunun üçün aşağı indeksdən istifadə olunur;\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-09",
+    "question": "İkilik say sistemində ədədlər böyüdükcə onların uzunluğu necə dəyişir?",
+    "options": {
+      "A": "Sabit qalır",
+      "B": "Azalır",
+      "C": "Sürətlə artır",
+      "D": "Yalnız son rəqəmi dəyişir"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Göründüyü kimi, ikilik say sistemində ədədlər böyüdükcə onların uzunluğu sürətlə artır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-10",
+    "question": "Onluq say sistemində \"2\" ədədi ikilik say sistemində necə yazılır?",
+    "options": {
+      "A": "11",
+      "B": "01",
+      "C": "10",
+      "D": "100"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndəki ardıcıllıqda göstərilib: \"0 - sıfır, 1 - bir, 10 - iki, 11 - üç\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-11",
+    "question": "Onluq ədədi ikilik ədədə çevirdikdə bölmə prosesi nə vaxta qədər davam etdirilir?",
+    "options": {
+      "A": "Qismət 1 olanadək",
+      "B": "Qalıq qalmada bölmə alınanadək",
+      "C": "Qismət 0 olanadək",
+      "D": "Qalıq 0 olanadək"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "\"onluq ədəd 2-yə bölünür, sonra qismət 2-yə bölünür və bu proses qismət 0 olanadək davam etdirilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-12",
+    "question": "Mətnə əsasən 77 ədədinin ikilik say sistemində yazılışı hansıdır?",
+    "options": {
+      "A": "1100101",
+      "B": "1010111",
+      "C": "1001101",
+      "D": "1110001"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "\"Beləliklə, 77 ədədinin ikilik yazılışı 1001101 olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-13",
+    "question": "İkilik ədədi yazarkən alınan qalıqlar hansı ardıcıllıqla düzülür?",
+    "options": {
+      "A": "Düz ardıcıllıqla",
+      "B": "Tərs ardıcıllıqla",
+      "C": "Böyükdən kiçiyə",
+      "D": "Kiçikdən böyüyə"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "\"Sonda hər addımdakı qalıqların tərs ardıcıllıqla düzülüşü verilmiş ədədin 2-lik say sistemində yazılışı olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-14",
+    "question": "Onluq say sistemində onluqlar və təkliklər 9-a çatdıqdan sonra hansı mərtəbə yaranır?",
+    "options": {
+      "A": "Minliklər",
+      "B": "Milyonluqlar",
+      "C": "Yüzlüklər",
+      "D": "Onmilyonluqlar"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "\"Onluqlar və təkliklər hər ikisi 9-a çatdıqdan sonra üçüncü mərtəbə \u2013 yüzlüklər yaranır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "3. Ədədi informasiya necə kodlaşdırılır",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-03-15",
+    "question": "İkilik say sistemində yazılmış \"100010\" ədədi onluq say sistemində hansı ədədə uyğundur?",
+    "options": {
+      "A": "Otuz iki",
+      "B": "Otuz dörd",
+      "C": "İyirmi səkkiz",
+      "D": "Qırx"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndəki nümunəyə əsasən: \"... 100010 - otuz dörd\""
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T1",
+    "Prompt": "Mövzu: 1. Tarixdə il hesabı və İbtidai cəmiyyət. Mətn faylı: data/umumitarix6_chunks/topic_real_1.txt. TİK: 06-UMT-6-1-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_1.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T2",
+    "Prompt": "Mövzu: 2. Qədim Şərq: Ehramlar ölkəsi, Şumer. Mətn faylı: data/umumitarix6_chunks/topic_real_2.txt. TİK: 06-UMT-6-2-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_2.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T3",
+    "Prompt": "Mövzu: 3. Qədim Şərq: İkiçayarasının digər dövlətləri, Parfiya. Mətn faylı: data/umumitarix6_chunks/topic_real_3.txt. TİK: 06-UMT-6-3-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_3.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T4",
+    "Prompt": "Mövzu: 4. Qədim Şərq: Tanrının döyüşçüləri, İpək yolu, Şahmatın vətəni. Mətn faylı: data/umumitarix6_chunks/topic_real_4.txt. TİK: 06-UMT-6-4-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_4.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T5",
+    "Prompt": "Mövzu: 5. Qədim Qərb: Avropa mədəniyyətinin beşiyi. Mətn faylı: data/umumitarix6_chunks/topic_real_5.txt. TİK: 06-UMT-6-5-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_5.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "UmTarix6_T6",
+    "Prompt": "Mövzu: 6. Qədim Qərb: İlk Respublika yaradanlar. Mətn faylı: data/umumitarix6_chunks/topic_real_6.txt. TİK: 06-UMT-6-6-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/umumitarix6_chunks_generated/topic_6.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  }
+]

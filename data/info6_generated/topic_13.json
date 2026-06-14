@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-01",
+    "question": "Addımların yerinə yetirilmə ardıcıllığına görə alqoritmlər neçə növə ayrılır?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Addımların yerinə yetirilmə ardıcıllığına görə alqoritmlər üç növə ayrılır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-02",
+    "question": "Alqoritmdə hərəkətlər yazıldığı ardıcıllıqla icra olunursa, belə alqoritm necə adlanır?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Budaqlanan alqoritm",
+      "C": "Dövri alqoritm",
+      "D": "Natamam alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Alqoritmdə hərəkətlər yazıldığı ardıcıllıqla icra olunursa, belə alqoritmə xətti alqoritm deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-03",
+    "question": "Blok-sxemdə şərti bildirmək üçün hansı fiqurdan istifadə olunur?",
+    "options": {
+      "A": "Düzbucaqlı",
+      "B": "Romb",
+      "C": "Dairə",
+      "D": "Paraleloqram"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Blok-sxemdə şərti bildirmək üçün romb fiqurundan istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-04",
+    "question": "Alqoritmlərdə təkrar-təkrar icra olunan hərəkətlər ardıcıllığı necə adlanır?",
+    "options": {
+      "A": "Budaqlanma",
+      "B": "Şərt",
+      "C": "Dövr",
+      "D": "Xətt"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Alqoritmlərdə elə hərəkətlər olur ki, onlar təkrar-təkrar icra olunur. Belə hərəkətlər ardıcıllığı dövr adlanır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-05",
+    "question": "Blok-sxemdə şərti bildirən rombun neçə çıxışı olur?",
+    "options": {
+      "A": "Bir",
+      "B": "İki",
+      "C": "Üç",
+      "D": "Dörd"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Belə rombun bir girişi və iki çıxışı (budağı) olur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-06",
+    "question": "Alqoritmdə müəyyən şərtdən asılı olaraq bu və ya digər hərəkətlər ardıcıllığı yerinə yetirilirsə, bu alqoritm necə adlanır?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Budaqlanan alqoritm",
+      "C": "Dövri alqoritm",
+      "D": "Tam alqoritm"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Alqoritmdə müəyyən şərtdən asılı olaraq bu və ya digər hərəkətlər ardıcıllığı yerinə yetirilirsə, belə alqoritmə budaqlanan alqoritm deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-07",
+    "question": "Daxilində dövr olan alqoritmlər necə adlanır?",
+    "options": {
+      "A": "Dövri alqoritm",
+      "B": "Xətti alqoritm",
+      "C": "Budaqlanan alqoritm",
+      "D": "Natamam alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Daxilində dövr olan alqoritmlərə isə dövri alqoritm deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-08",
+    "question": "Alqoritmin tam formasında icra zamanı neçə budaq yerinə yetirilir?",
+    "options": {
+      "A": "Heç biri",
+      "B": "Yalnız bir budaq - ya 'hə', ya da 'yox'",
+      "C": "Hər iki budaq",
+      "D": "Birinci 'hə', sonra 'yox'"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "İcra zamanı alqoritmin bir budağı – ya “hə”, ya da “yox” budağı yerinə yetirilir. Alqoritmdə budaqlanmanın bu şəklinə onun tam forması deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-09",
+    "question": "Budaqlanan alqoritmin natamam formasının yazılışı hansı şəkildə ifadə olunur?",
+    "options": {
+      "A": "əgər ..., onda ..., əks halda ...",
+      "B": "əgər ... onda",
+      "C": "nə qədər ki ... onda",
+      "D": "həmişə ... əks halda ..."
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Yarımçıq forma yazılışı “əgər ... onda” şəklində ifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-10",
+    "question": "Həyatda hərəkətlər ardıcıllığı qabaqcadan məlum olan xətti alqoritmlərə nə dərəcədə rast gəlinir?",
+    "options": {
+      "A": "Çox tez-tez rast gəlinir",
+      "B": "Heç rast gəlinmir",
+      "C": "Çox az hallarda rast gəlinir",
+      "D": "Yalnız dərsliklərdə rast gəlinir"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Həyatda xətti alqoritmlərə, yəni hərəkətlər ardıcıllığı qabaqcadan məlum olan alqoritmlərə çox az hallarda rast gəlinir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-11",
+    "question": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmadıqda hansı alqoritmdən istifadə olunur?",
+    "options": {
+      "A": "Budaqlanan alqoritmin natamam formasından",
+      "B": "Budaqlanan alqoritmin tam formasından",
+      "C": "Xətti alqoritmdən",
+      "D": "Dövri alqoritmdən"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmur. Bu zaman budaqlanan alqoritmin natamam formasından istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-12",
+    "question": "Alqoritmdəki şərt “əgər ..., onda ..., əks halda ...” ifadəsi ilə göstərilmişsə, bu alqoritm necə adlanır?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Budaqlanan alqoritm",
+      "C": "Dövri alqoritm",
+      "D": "Natamam forma"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Bu şərt alqoritmdə “əgər ..., onda ..., əks halda ...” ifadəsi ilə göstərilib. Deməli, həmin alqoritm budaqlanan alqoritmdir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-13",
+    "question": "Mətndəki 'Vinni Pux qonaqlıqda' alqoritmində onun nə yeyəcəyi nədən asılı idi?",
+    "options": {
+      "A": "Onun hərəkət sürətindən",
+      "B": "Müəyyən şərtdən",
+      "C": "Dostlarının sayından",
+      "D": "Xətti ardıcıllıqdan"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Məsələn, “Vinni Pux qonaqlıqda” alqoritmində onun nə yeyəcəyi müəyyən şərtdən asılıdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-14",
+    "question": "Şərti bildirən rombun çıxışları (budaqları) hansı istiqamətləri (seçimləri) bildirir?",
+    "options": {
+      "A": "Ya “hə”, ya da “yox”",
+      "B": "Yalnız “hə”",
+      "C": "Yalnız “yox”",
+      "D": "Nə “hə”, nə də “yox”"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "İcra zamanı alqoritmin bir budağı – ya “hə”, ya da “yox” budağı yerinə yetirilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "13. Alqoritmin növləri",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-13-15",
+    "question": "İnsanlar yaranmış vəziyyətə uyğun olaraq hərəkət etdikdə bu, alqoritmin hansı növünə daha çox uyğun gəlir?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Budaqlanan alqoritm",
+      "C": "Yalnız dövri alqoritm",
+      "D": "Heç bir alqoritm növünə"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Həyatda xətti alqoritmlərə, yəni hərəkətlər ardıcıllığı qabaqcadan məlum olan alqoritmlərə çox az hallarda rast gəlinir. Çox zaman yaranmış vəziyyətə uyğun olaraq hərəkət edilir. Məsələn... onun nə yeyəcəyi müəyyən şərtdən asılıdır... Deməli, həmin alqoritm budaqlanan alqoritmdir."
+  }
+]

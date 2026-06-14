@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-1-01",
+    "question": "Aşağıdakılardan hansı dövri alqoritmdir?",
+    "options": {
+      "A": "Fəsillərin dəyişməsi",
+      "B": "Kitab oxumaq",
+      "C": "Yemək bişirmək",
+      "D": "Evə getmək"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə fəsillərin, gecə və gündüzün dəyişməsi dövri alqoritmlərə misal olaraq göstərilmişdir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-2-02",
+    "question": "Dövri alqoritmlərdə təkrarlanan hərəkətlər ardıcıllığı nə adlanır?",
+    "options": {
+      "A": "Dövrün gövdəsi",
+      "B": "Dövrün şərti",
+      "C": "Dövrün başlanğıcı",
+      "D": "Dövrün sonu"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur ki, alqoritmdə təkrar-təkrar icra olunan hərəkətlər ardıcıllığına dövrün gövdəsi deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-3-03",
+    "question": "Öncədən neçə dəfə təkrarlanacağı məlum olan dövrlər necə adlanır?",
+    "options": {
+      "A": "Sayğaclı dövr",
+      "B": "Önşərtli dövr",
+      "C": "Sonşərtli dövr",
+      "D": "Sonsuz dövr"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Əgər təkrarlanmaların sayı öncədən məlumdursa, belə dövrlər sayğaclı dövr (və ya parametrik dövr) adlanır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-4-04",
+    "question": "Dövrün gövdəsi icra olunmazdan əvvəl şərtin yoxlanıldığı dövri alqoritmlər necə adlanır?",
+    "options": {
+      "A": "Önşərtli dövr",
+      "B": "Sonşərtli dövr",
+      "C": "Sayğaclı dövr",
+      "D": "Parametrik dövr"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Şərtin doğruluğu dövrün gövdəsi icra olunmamışdan qabaq yoxlanılırsa, belə alqoritmlərə önşərtli dövri alqoritmlər deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-5-05",
+    "question": "Şərtin dövrün gövdəsindən sonra yoxlanıldığı alqoritmlərə nə deyilir?",
+    "options": {
+      "A": "Sonşərtli dövr",
+      "B": "Önşərtli dövr",
+      "C": "Sonsuz dövr",
+      "D": "Sayğaclı dövr"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Şərt dövrün gövdəsindən sonra yoxlanılarsa, belə dövri alqoritm sonşərtli adlanır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-6-06",
+    "question": "Sayğaclı dövrlərə başqa nə ad verilir?",
+    "options": {
+      "A": "Parametrik dövr",
+      "B": "Sonsuz dövr",
+      "C": "Xətti alqoritm",
+      "D": "Budaqlanan alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur ki, sayğaclı dövrlərə həmçinin parametrik dövr də deyilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-7-07",
+    "question": "Qabdakı suyu stəkanlara süzmək alqoritmində dövr nə vaxt başa çatır?",
+    "options": {
+      "A": "Sürahidə su qurtardıqda",
+      "B": "İlk stəkan dolduqda",
+      "C": "Qonaqlar gəldikdə",
+      "D": "Stəkanlar qurtardıqda"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Dövr o vaxta qədər davam edir ki, “sürahidə su var” şərti pozulur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-8-08",
+    "question": "Hansı alqoritmdə dövrün gövdəsi heç bir dəfə də icra olunmaya bilər?",
+    "options": {
+      "A": "Önşərtli dövri alqoritmdə",
+      "B": "Sonşərtli dövri alqoritmdə",
+      "C": "Budaqlanan alqoritmdə",
+      "D": "Xətti alqoritmdə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Önşərtli alqoritmlərdə elə ola bilər ki, şərt ilk başdan ödənilməsin, bu halda dövrün gövdəsi heç bir dəfə də icra olunmur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-9-09",
+    "question": "Sonşərtli dövri alqoritmlərdə dövrün gövdəsi ən azı neçə dəfə icra olunur?",
+    "options": {
+      "A": "Ən azı 1 dəfə",
+      "B": "Həmişə 0 dəfə",
+      "C": "Yalnız şərt ödəndikdə 1 dəfə",
+      "D": "Heç vaxt icra olunmur"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Sonşərtli dövri alqoritmlərdə şərt əməliyyatdan sonra yoxlanıldığı üçün dövrün gövdəsi ən azı 1 dəfə mütləq icra olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-10",
+    "question": "Futbol oyununda topun qapıya vurulması zamanı \"Qol?\" şərtinin yoxlanması hansı dövr növünə aiddir?",
+    "options": {
+      "A": "Sonşərtli dövr",
+      "B": "Önşərtli dövr",
+      "C": "Sayğaclı dövr",
+      "D": "Sonsuz dövr"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətndə göstərilən \"topu qapıya vurmaq -> qoldurmu? -> yoxsa yenidən vurmaq\" prosesi əvvəlcə hərəkəti (vurmağı) edib sonra şərti yoxladığı üçün sonşərtli dövrdür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-11",
+    "question": "Səhər oyanarkən zəng çalınması alqoritmində: əgər zəng səsini eşidib oyanırıqsa və oyanmamışıqsa zəng yenidən çalınırsa, bu hansı növ alqoritmdir?",
+    "options": {
+      "A": "Sonşərtli dövri alqoritm",
+      "B": "Önşərtli dövri alqoritm",
+      "C": "Sayğaclı alqoritm",
+      "D": "Xətti alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Əvvəlcə zəng çalınır, sonra oyanıb-oyanmadığımız yoxlanılır. Əgər oyanmamışıqsa, zəng təkrar çalınır. Şərt gövdədən sonra yoxlanıldığı üçün bu, sonşərtli dövrdür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-12",
+    "question": "Hansı halda önşərtli və sonşərtli dövrlər fərqli nəticə verə bilər?",
+    "options": {
+      "A": "Başlanğıcda şərt ödənilmədikdə",
+      "B": "Şərt həmişə doğru olduqda",
+      "C": "Dövr sonsuz olduqda",
+      "D": "Sayğacdan istifadə edildikdə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Başlanğıcda şərt ödənilmirsə, önşərtli dövrdə gövdə heç icra olunmur, lakin sonşərtli dövrdə ən azı 1 dəfə icra olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-13",
+    "question": "Musiqi əsərində nəqəratin (təkrarlanan hissənin) neçə dəfə oxunacağının qabaqcadan bəlli olması hansı dövrə nümunədir?",
+    "options": {
+      "A": "Sayğaclı dövrə",
+      "B": "Önşərtli dövrə",
+      "C": "Sonşərtli dövrə",
+      "D": "Budaqlanan alqoritmə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Əgər təkrarlanmaların sayı öncədən məlumdursa, bu sayğaclı dövrdür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-14",
+    "question": "Kitab oxuyarkən \"kitab bitdimi?\" şərtini yoxlayıb, bitməyibsə növbəti səhifəni oxumaq hansı dövri alqoritmdir?",
+    "options": {
+      "A": "Önşərtli dövri alqoritm",
+      "B": "Sonşərtli dövri alqoritm",
+      "C": "Sayğaclı dövr",
+      "D": "Xətti alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Əgər kitab bitməyibsə (şərt yoxlanılır), növbəti səhifə oxunur. Şərt əvvəldə yoxlanıldığı üçün bu, önşərtli dövrdür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Dövri alqoritmlər",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-14-15",
+    "question": "Niyə önşərtli dövrü bəzən \"hər ehtimala qarşı\" dövrü adlandırmaq olar?",
+    "options": {
+      "A": "Çünki əməliyyat icra olunmadan əvvəl şərtin uyğun olub-olmaması dəqiqləşdirilir, gərək yoxdursa icra olunmur.",
+      "B": "Çünki mütləq şəkildə bir dəfə icra olunur.",
+      "C": "Çünki sonsuz təkrarlana bilər.",
+      "D": "Çünki heç bir şərt tələb etmir."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "dəyərləndirmə",
+    "explanation": "Önşərtli dövrdə gövdə yalnız şərt ödəndikdə icra olunur. Əgər ehtiyac yoxdursa (şərt ödənmirsə), icra edilmir. Bu onu təhlükəsiz və səmərəli edir."
+  }
+]

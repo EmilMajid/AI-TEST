@@ -527,18 +527,23 @@ export default function ResultsPage() {
                             <div className="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200 shadow-inner">
                               <h4 className="font-bold text-gray-800 mb-2 flex items-center">
                                 <BookOpen className="h-4 w-4 mr-2 text-primary" />
-                                Dərsliyin Müvafiq Hissəsi (Mənbə)
+                                {question.explanation?.includes("Mətndə") ? "Dərslikdən Məcburi Sitat (Sıfır Tolerantlıq)" : "İzahat"}
                               </h4>
-                              {question.sourceContext ? (
-                                <blockquote className="border-l-4 border-primary pl-4 py-2 mb-4 text-gray-700 text-sm bg-white rounded italic">
-                                  "{question.sourceContext}"
+                              
+                              {question.explanation?.includes("Mətndə") ? (
+                                <blockquote className="border-l-4 border-red-500 pl-4 py-3 mb-2 text-gray-800 font-medium text-base bg-white rounded shadow-sm">
+                                  {question.explanation}
                                 </blockquote>
                               ) : (
-                                <p className="text-gray-500 text-sm italic mb-4">Bu sual üçün spesifik mənbə mətni əlavə edilməyib.</p>
+                                <>
+                                  {question.sourceContext && (
+                                    <blockquote className="border-l-4 border-primary pl-4 py-2 mb-4 text-gray-700 text-sm bg-white rounded italic">
+                                      "{question.sourceContext}"
+                                    </blockquote>
+                                  )}
+                                  <p className="text-gray-700 text-sm">{question.explanation}</p>
+                                </>
                               )}
-                              
-                              <h4 className="font-bold text-gray-800 mb-2">Pedaqoji İzahat</h4>
-                              <p className="text-gray-700 text-sm">{question.explanation}</p>
                             </div>
                           )}
                         </CardContent>

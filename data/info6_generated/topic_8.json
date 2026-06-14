@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-01",
+    "question": "Mətn redaktorunda növbəti abzası yaratmaq üçün hansı klaviş basılır?",
+    "options": {
+      "A": "＜Enter＞",
+      "B": "＜Shift＞",
+      "C": "＜Ctrl＞",
+      "D": "＜Alt＞"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətn redaktorunda növbəti abzası yaratmaq üçün ＜Enter＞ klavişi basılır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-02",
+    "question": "Mətn redaktorlarında adətən abzası neçə cür düzləndirmək olur?",
+    "options": {
+      "A": "4",
+      "B": "2",
+      "C": "3",
+      "D": "5"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Adətən, mətn redaktorlarında abzası dörd cür düzləndirmək olur: sola, sağa, mərkəzə və tam düzləndirmə."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-03",
+    "question": "Mətni sola düzləndirmək üçün hansı klavişlər kombinasiyasından istifadə olunur?",
+    "options": {
+      "A": "＜Ctrl+L＞",
+      "B": "＜Ctrl+R＞",
+      "C": "＜Ctrl+E＞",
+      "D": "＜Ctrl+J＞"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətni sola düzləndirmək üçün ＜Ctrl+L＞ klavişlər kombinasiyasından, yaxud düyməsindən istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-04",
+    "question": "Mərkəzə düzləndirmə əsasən hansı mətn hissələri üçün istifadə edilir?",
+    "options": {
+      "A": "Sərlövhələr",
+      "B": "Uzun abzaslar",
+      "C": "Şəkillər",
+      "D": "Haşiyələr"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mərkəzə düzləndirmədən, adətən, sərlövhələr üçün istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-05",
+    "question": "Tam düzləndirmə nə deməkdir?",
+    "options": {
+      "A": "Mətnin eyni zamanda həm sol, həm də sağ kənara görə düzləndirilməsi",
+      "B": "Mətnin yalnız sağ kənara düzləndirilməsi",
+      "C": "Mətnin bütün səhifəni doldurması",
+      "D": "Mətnin yalnız sol kənara düzləndirilməsi"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Tam düzləndirmə (Justify): Mətn eyni zamanda həm sol, həm də sağ kənara görə düzləndirilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-06",
+    "question": "Tam düzləndirmə zamanı sözlər arasındakı məsafə necə olur?",
+    "options": {
+      "A": "Həmin məsafə fərqli ola bilər",
+      "B": "Sözlər arasında məsafə ləğv edilir",
+      "C": "Bütün sözlər eyni məsafədə yerləşir",
+      "D": "Yalnız ilk sözlər arasında məsafə olur"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Bu halda sözlər arasındakı məsafələr artırılıb-azaldılmaqla buna nail olunur. Deməli, həmin məsafə fərqli ola bilər."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-07",
+    "question": "Sətirlərarası məsafə (Line spacing) nəyi bildirir?",
+    "options": {
+      "A": "Abzasın sətirləri arasındakı boşluğu",
+      "B": "Mətnin hərfləri arasındakı boşluğu",
+      "C": "Sözlər arasındakı boşluğu",
+      "D": "Mətn ilə səhifə kənarı arasındakı boşluğu"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Sətirlərarası məsafə (Line spacing). Abzasın sətirləri arasında müəyyən boşluq olur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-08",
+    "question": "Düzləndirmə növlərindən hansı klaviş kombinasiyası düzgün göstərilməyib?",
+    "options": {
+      "A": "Tam düzləndirmə – ＜Ctrl+T＞",
+      "B": "Mərkəzə düzləndirmə – ＜Ctrl+E＞",
+      "C": "Sola düzləndirmə – ＜Ctrl+L＞",
+      "D": "Sağa düzləndirmə – ＜Ctrl+R＞"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Tam düzləndirmənin qısa yolu ＜Ctrl+J＞ (Justify) kombinasiyasıdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-09",
+    "question": "Nəyə görə abzasları bir-birindən ayırmaq üçün əlavə ＜Enter＞ basmaq məsləhət görülmür?",
+    "options": {
+      "A": "Bu, mətnin düzgün formatlanmasını pozur",
+      "B": "Kompüter yavaş işləyir",
+      "C": "Mətnin rəngi dəyişir",
+      "D": "Faylın həcmi çox artır"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Abzasdan əvvəl (və ya sonra) müəyyən boşluqlar qoyulur... Çox vaxt təcrübəsiz istifadəçilər abzasları bir-birindən ayırmaq üçün boşluq qoymaq əvəzinə əlavə olaraq ＜Enter＞ klavişini basırlar ki, bu da düzgün deyil."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-10",
+    "question": "Mətni formatlayarkən yalnız şriftlərin seçilməsi kifayətdirmi?",
+    "options": {
+      "A": "Xeyr, mətnin hissələrinin vərəqdə necə yerləşməsinə də diqqət yetirmək lazımdır",
+      "B": "Bəli, yalnız şriftlərin seçilməsi bəs edir",
+      "C": "Bəli, ancaq mərkəzə düzləndirmək lazımdır",
+      "D": "Xeyr, yalnız sətirlərarası məsafəni tənzimləmək bəs edir"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətni formatlayarkən şriftlərin seçilməsi ilə bərabər, onun hissələrinin vərəqdə necə yerləşməsinə də diqqət yetirmək lazımdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-11",
+    "question": "Mətndə qeyd olunan düzləndirmə metodlarından hansı sözlər arasındakı məsafələri dəyişdirərək mətnin kənarlarını bərabərləşdirir?",
+    "options": {
+      "A": "Tam düzləndirmə",
+      "B": "Sağa düzləndirmə",
+      "C": "Sola düzləndirmə",
+      "D": "Mərkəzə düzləndirmə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Tam düzləndirmə (Justify): Mətn eyni zamanda həm sol, həm də sağ kənara görə düzləndirilir. Bu halda sözlər arasındakı məsafələr artırılıb-azaldılmaqla buna nail olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-12",
+    "question": "Mətn redaktorunda eyni bir abzas daxilində fərqli sətirlərarası məsafə tətbiq etmək mümkündürmü?",
+    "options": {
+      "A": "Xeyr, sətirlərarası məsafə bütün abzasa aid edilir",
+      "B": "Bəli, ancaq hər sətirdə ayrıca tənzimləmək şərtilə",
+      "C": "Bəli, yalnız son sətir üçün tətbiq olunur",
+      "D": "Xeyr, sətirlərarası məsafə yalnız bütün sənəd üçün olur"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Sətirlərarası məsafə (Line spacing) və abzas məsafələri bütöv abzasa tətbiq olunan parametrlərdir, yəni bir abzas daxilində sətirlərarası məsafə eyni olur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-13",
+    "question": "Nəşriyyatlarda və rəsmi sənədlərdə daha çox hansı düzləndirmə növündən istifadə olunur?",
+    "options": {
+      "A": "Tam düzləndirmə",
+      "B": "Sağa düzləndirmə",
+      "C": "Sola düzləndirmə",
+      "D": "Mərkəzə düzləndirmə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Adətən qəzetlərdə, kitablarda, rəsmi sənədlərdə mətn hər iki kənara görə (Tam) düzləndirilir ki, bu da ona səliqəli və rəsmi görünüş verir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-14",
+    "question": "Abzas məsafəsi (Spacing) ilə sətirlərarası məsafənin (Line spacing) fərqi nədir?",
+    "options": {
+      "A": "Abzas məsafəsi abzasdan əvvəl və sonrakı boşluğu, sətirlərarası məsafə isə abzasın öz daxilindəki sətirlər arasındakı boşluğu tənzimləyir.",
+      "B": "Heç bir fərqi yoxdur, hər ikisi eyni funksiyanı yerinə yetirir.",
+      "C": "Abzas məsafəsi yalnız sağ və sol kənarları nizamlayır.",
+      "D": "Sətirlərarası məsafə yalnız fərqli abzaslar arasında tətbiq olunur."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Abzas məsafələri (abzasdan əvvəl və ya sonra müəyyən boşluqlar qoyulur) ilə abzasın öz içindəki sətirlər arasındakı boşluğu tənzimləyən sətirlərarası məsafə (Line spacing) fərqli və bərabər aparılan bir əməliyyatdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "8. Abzasın formatlanması",
+    "book_id": "informatika-6",
+    "pages": "Mətn əsasında",
+    "passport": "06-004-0101-B001-08-15",
+    "question": "Mətndə eyni ifadələrin fərqli formalarda (Sola, Sağa, Mərkəzə, Tam) sıralanması əsasən nəyi nümayiş etdirir?",
+    "options": {
+      "A": "Düzləndirmə növlərinin mətnin vərəqdə yerləşməsinə necə təsir etdiyini",
+      "B": "Sətirlərarası məsafənin avtomatik nizamlanmasını",
+      "C": "Şriftlərin fərqli seçilməsi qaydasını",
+      "D": "Yalnız mərkəzə düzləndirmənin əhəmiyyətini"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətni formatlayarkən şriftlərin seçilməsi ilə bərabər, onun hissələrinin vərəqdə necə yerləşməsinə də diqqət yetirmək lazımdır. Kitabdakı dörd müxtəlif nümunə (Sola, Sağa, Mərkəzə, Tam) məhz vərəqdəki yerləşməni nümayiş etdirir."
+  }
+]

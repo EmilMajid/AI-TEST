@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-01",
+    "question": "Alqoritm nədir?",
+    "options": {
+      "A": "Müəyyən məqsədə çatmaq üçün yerinə yetirilən sonlu sayda hərəkətlər ardıcıllığı.",
+      "B": "Kompüterin işləməsini təmin edən qurğular.",
+      "C": "İnformasiyanı saxlamaq üçün istifadə olunan qovluqlar.",
+      "D": "Yalnız rəqəmlər üzərində aparılan riyazi hesablamalar."
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Müəyyən məqsədə çatmaq üçün yerinə yetirilən sonlu sayda hərəkətlər ardıcıllığına alqoritm deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-02",
+    "question": "Mətndə alqoritmin hansı əsas xassələri sadalanmışdır?",
+    "options": {
+      "A": "Müəyyənlik, kütləvilik, sonluluq, nəticəlilik, diskretlik.",
+      "B": "Sonsuzluq, dəqiqlik, qeyri-müəyyənlik, nəticəlilik.",
+      "C": "Diskretlik, mürəkkəblik, təkrarçılıq, yığcamlıq.",
+      "D": "Müəyyənlik, kütləvilik, kəsilməzlik, ehtimallıq."
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə alqoritmin 5 əsas xassəsi sadalanıb: müəyyənlik, kütləvilik, sonluluq, nəticəlilik, diskretlik."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-03",
+    "question": "Alqoritmin hər addımının aydın, dəqiq və birmənalı olması hansı xassədir?",
+    "options": {
+      "A": "Müəyyənlik",
+      "B": "Kütləvilik",
+      "C": "Sonluluq",
+      "D": "Diskretlik"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Alqoritmin hər addımı aydın, dəqiq, birmənalı olmalıdır... Buna alqoritmin müəyyənlik xassəsi deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-04",
+    "question": "Alqoritmin müəyyən addımlarından sonra axtarılan nəticənin alınması xassəsi necə adlanır?",
+    "options": {
+      "A": "Nəticəlilik",
+      "B": "Diskretlik",
+      "C": "Sonluluq",
+      "D": "Müəyyənlik"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Alqoritmin müəyyən addımlarından sonra axtarılan nəticə alınmalıdır... Bunu alqoritmin nəticəlilik xassəsi adlandırılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-05",
+    "question": "Alqoritmin icrası çətinlik törətməyən sadə addımlardan ibarət olması hansı xassədir?",
+    "options": {
+      "A": "Diskretlik",
+      "B": "Sonluluq",
+      "C": "Kütləvilik",
+      "D": "Nəticəlilik"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"O icrası çətinlik törətməyən sadə addımlardan ibarət olmalıdır. Alqoritmin bu xassəsinə diskretlik xassəsi deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-06",
+    "question": "Alqoritmin kütləvilik xassəsinin mahiyyəti nədir?",
+    "options": {
+      "A": "Eyni bir alqoritmin ilkin verilənlərin müxtəlif qiymətləri üçün yararlı olması.",
+      "B": "Alqoritmin hər addımının yalnız bir icraçı tərəfindən yerinə yetirilməsi.",
+      "C": "Alqoritmin sonlu sayda addımdan sonra başa çatması.",
+      "D": "Alqoritmin icrası çətinlik törətməyən addımlardan ibarət olması."
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Eyni bir alqoritm ilkin verilənlərin müxtəlif qiymətləri üçün yararlı olmalıdır. ... Bu, alqoritmin kütləvilik xassəsidir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-07",
+    "question": "Göstərişlərin bütün icraçılar tərəfindən eyni cür anlaşılması alqoritmin hansı xassəsinə aiddir?",
+    "options": {
+      "A": "Müəyyənlik",
+      "B": "Diskretlik",
+      "C": "Kütləvilik",
+      "D": "Nəticəlilik"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Başqa sözlə, göstərişləri bütün icraçılar eyni cür anlamalıdır. Buna alqoritmin müəyyənlik xassəsi deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-08",
+    "question": "Alqoritmin kompüterdə icrası üçün xüsusilə vacib hesab edilən xassəsi hansıdır?",
+    "options": {
+      "A": "Diskretlik",
+      "B": "Müəyyənlik",
+      "C": "Kütləvilik",
+      "D": "Sonluluq"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "\"Alqoritmin bu xassəsinə diskretlik xassəsi deyilir. Alqoritmin kompüterdə icrası üçün bu xassə çox vacibdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-09",
+    "question": "\"Keçi, canavar və kələm\" məsələsinin həll alqoritminin başa çatması hansı xassəyə misal olaraq göstərilib?",
+    "options": {
+      "A": "Sonluluq",
+      "B": "Kütləvilik",
+      "C": "Nəticəlilik",
+      "D": "Diskretlik"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "\"Məsələn, artıq sizə məlum olan “Keçi, canavar və kələm” məsələsinin həll alqoritmi sonlu sayda addımdan ibarətdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-10",
+    "question": "Buterbrod hazırlamaq üçün ilkin verilənlər mətndə necə qeyd olunub?",
+    "options": {
+      "A": "Çörək və ərzaq",
+      "B": "Yalnız çörək",
+      "C": "Çörək, kolbasa və yağ",
+      "D": "Un və su"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "\"İlkin verilənlər: çörək və ərzaq. Nəticə: buterbrod.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-11",
+    "question": "Nəyə görə istənilən hərəkətlər ardıcıllığı alqoritm adlandırıla bilməz?",
+    "options": {
+      "A": "Çünki alqoritm adlandırılması üçün müəyyən şərtlər ödənilməlidir.",
+      "B": "Çünki yalnız kompüter tərəfindən icra edilən ardıcıllıqlar alqoritmdir.",
+      "C": "Çünki ardıcıllıq həmişə sonsuz davam etməlidir.",
+      "D": "Çünki hərəkətlər ardıcıllığı yalnız rəqəmlərdən ibarət olmalıdır."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"İstənilən hərəkətlər ardıcıllığına alqoritm deyilmir, yəni hərəkətlər ardıcıllığının alqoritm adlandırılması üçün müəyyən şərtlər ödənilməlidir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-12",
+    "question": "Buterbrod hazırlanmasında kütləvilik xassəsi özünü necə göstərir?",
+    "options": {
+      "A": "Çörək ağ və ya qara, ərzaq isə kolbasa, pendir və ya yağ ola bilər.",
+      "B": "Buterbrod hazırlanması mütləq sonlu addımdan ibarət olmalıdır.",
+      "C": "Ərzaqların kəsilməsi bütün icraçılar tərəfindən eyni başa düşülməlidir.",
+      "D": "Buterbrod yalnız bir növ ərzaqdan hazırlanmalıdır."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "\"Məsələn, yuxarıdakı misalda çörək ağ da ola bilər, qara da. Ərzaq – kolbasa, pendir, yaxud yağ ola bilər. Bu, alqoritmin kütləvilik xassəsidir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-13",
+    "question": "Hansı bənddə alqoritmin \"müəyyənlik\" və \"kütləvilik\" xassələri arasında doğru fərq verilmişdir?",
+    "options": {
+      "A": "Müəyyənlik addımların aydınlığını, kütləvilik isə alqoritmin fərqli verilənlər üçün yararlılığını tələb edir.",
+      "B": "Müəyyənlik alqoritmin sonlu olmasını, kütləvilik isə çoxlu nəticə verməsini bildirir.",
+      "C": "Müəyyənlik alqoritmin yalnız bir icraçısı olmasını, kütləvilik isə qeyri-müəyyən verilənləri ifadə edir.",
+      "D": "Müəyyənlik sadə addımları, kütləvilik isə mürəkkəb addımların icrasını tələb edir."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə müəyyənlik haqqında \"Alqoritmin hər addımı aydın, dəqiq, birmənalı olmalıdır\", kütləvilik haqqında isə \"Eyni bir alqoritm ilkin verilənlərin müxtəlif qiymətləri üçün yararlı olmalıdır\" fikirləri qeyd olunub."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-14",
+    "question": "Mətndə verilmiş \"Adi kəsrlərin bölünməsi qaydası\" hansı prosesi izah edir?",
+    "options": {
+      "A": "Kəsrlərin vurulması vasitəsilə bölünmə alqoritminin ardıcıllığını.",
+      "B": "Fonetik təhlil qaydasını.",
+      "C": "Nanəli şərbətin hazırlanmasını.",
+      "D": "Faizlərin hesablanmasını."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Adi kəsrlərin bölünməsi qaydası... 1. Birinci kəsrin surətini ikinci kəsrin məxrəcinə vurmaq. 2. Birinci kəsrin məxrəcini ikinci kəsrin surətinə vurmaq.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "12. Alqoritmin xassələri",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-12-15",
+    "question": "Dəftər və qələm məsələsinin ikinci cür göstərişlər ardıcıllığında 4-cü addım necə idi?",
+    "options": {
+      "A": "1-ci addımın nəticəsini 3-cü addımın nəticəsinə bölmək və qisməti 100-ə vurmaq.",
+      "B": "Ümumi məbləği tapmaq və nəticəni çap etmək.",
+      "C": "Dəftərlərin və qələmlərin dəyərini hesablamaq.",
+      "D": "Bir qələmin qiymətini qələmlərin sayına vurmaq."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "\"1. Bir dəftərin qiymətini... 2. Bir qələmin... 3. Alınan hasilləri toplamaq. 4. 1-ci addımın nəticəsini 3-cü addımın nəticəsinə bölmək və qisməti 100-ə vurmaq.\""
+  }
+]

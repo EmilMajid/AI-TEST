@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-01",
+    "question": "ALPLogo mühitində bağanı gizlətmək üçün hansı komandadan istifadə olunur?",
+    "options": {
+      "A": "bağanıgizlə",
+      "B": "bağanıgöstər",
+      "C": "sil",
+      "D": "qələmiqaldır"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'bağanıgizlə - Bağanı gizlə.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-02",
+    "question": "'irəli N' komandasında 1 addım nəyə bərabərdir?",
+    "options": {
+      "A": "1 sm uzunluğa",
+      "B": "1 ekran nöqtəsinə (pikselə)",
+      "C": "10 pikselə",
+      "D": "Bağanın tam addımına"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: 'Burada 1 addım 1 ekran nöqtəsinə (pikselə) bərabərdir.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-03",
+    "question": "ALPLogo mühitində qələmi iz qoymadan hərəkət etdirmək üçün hansı komanda icra olunmalıdır?",
+    "options": {
+      "A": "qələmiendir",
+      "B": "bağanıgizlə",
+      "C": "qələmiqaldır",
+      "D": "sil"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'qələmiqaldır - İz qoymadan hərəkət etmək üçün qələmi qaldır.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-04",
+    "question": "İş sahəsini təmizləmək üçün hansı komandadan istifadə edilir?",
+    "options": {
+      "A": "sil",
+      "B": "ilkinvəziyyət",
+      "C": "bağanıgizlə",
+      "D": "geri"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'sil - İş sahəsini təmizlə.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-05",
+    "question": "'sağa N' komandasının vəzifəsi nədir?",
+    "options": {
+      "A": "N dərəcə sola dönmək",
+      "B": "N addım sağa getmək",
+      "C": "N dərəcə sağa dönmək",
+      "D": "İş sahəsini N dərəcə fırlatmaq"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'sağa N - N dərəcə sağa dön.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-06",
+    "question": "ALPLogo mühitində bağanın iş sahəsinin mərkəzində üzüyuxarı dayanması üçün hansı komanda tətbiq edilir?",
+    "options": {
+      "A": "mərkəz",
+      "B": "get X, Y",
+      "C": "ilkinvəziyyət",
+      "D": "geri"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'ilkinvəziyyət - İlkin vəziyyət al, yəni iş sahəsinin mərkəzində üzüyuxarı dayan.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-07",
+    "question": "Dəyişənə qiymət vermək üçün hansı işarədən istifadə olunur?",
+    "options": {
+      "A": ":",
+      "B": "-",
+      "C": "==",
+      "D": "="
+    },
+    "answer": "D",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'Dəyişənə qiymət vermək üçün mənimsətmə işarəsindən (=) istifadə olunur.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-08",
+    "question": "'musiqi N, S' komandasında S nəyi bildirir?",
+    "options": {
+      "A": "Melodiyanın səs səviyyəsini",
+      "B": "Musiqi faylının adını",
+      "C": "Melodiyanın səslənmə sürətini",
+      "D": "Musiqinin müddətini"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: 'Burada N – musiqi faylının adı, S isə melodiyanın səslənmə sürətidir.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-09",
+    "question": "'qələminrəngi N' komandasında N rəng kodu olaraq hansı aralıqda qiymət ala bilər?",
+    "options": {
+      "A": "0-dan 15-dək",
+      "B": "1-dən 10-dək",
+      "C": "0-dan 255-dək",
+      "D": "1-dən 16-dək"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'Burada N – natural ədəddir və 0-dan 15-dək qiymət alır'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-10",
+    "question": "'yazınınölçüsü N' komandasında N = 0 olduqda şriftin ölçüsü avtomatik neçə punkt götürülür?",
+    "options": {
+      "A": "10 punkt",
+      "B": "12 punkt",
+      "C": "14 punkt",
+      "D": "Şrift ölçüsü dəyişmir"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: 'N = 0 olduqda şriftin ölçüsü avtomatik 12 punkt götürülür.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-11",
+    "question": "'əgər ... əkshalda' komandasının icrası zamanı şərtin ödənilmədiyi halın əhəmiyyəti yoxdursa komanda necə yazılır?",
+    "options": {
+      "A": "Şərt mütləq tam şəkildə yazılmalıdır.",
+      "B": "Şərtin ödənilmədiyi halı (əkshalda hissəsini) göstərmək lazım deyil.",
+      "C": "Şərt yoxlanılmadan yalnız 'əkshalda' icra olunur.",
+      "D": "Proqram xəta verir və dayanır."
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: 'Şərtin ödənilmədiyi halın əhəmiyyəti yoxdursa, onu göstərmək lazım deyil.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-12",
+    "question": "İş sahəsində koordinatları (200, 300) olan nöqtəyə getmək üçün doğru komanda yazılışı hansıdır?",
+    "options": {
+      "A": "get 200; 300",
+      "B": "get (200, 300)",
+      "C": "get 200, 300",
+      "D": "get 300, 200"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: 'get 200, 300' forması komandanın nümunəsi olaraq göstərilmişdir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-13",
+    "question": "Bağanın 4 dəfə 100 addım irəli gedib 90 dərəcə sağa dönməsini təmin edən komanda hansıdır?",
+    "options": {
+      "A": "təkrarla 4 ( irəli 100 sağa 90 )",
+      "B": "təkrarla 4 [ irəli 100 sağa 90]",
+      "C": "dövr 4 [ irəli 100 sağa 90 ]",
+      "D": "təkrarla 4: irəli 100, sağa 90"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə nümunədə qeyd olunur: 'təkrarla 4 [ irəli 100 sağa 90]'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-14",
+    "question": "ALPLogo mühitində 'yaz N' komandası ilə ekrana simvollar sətri (mətn) yazmaq üçün hansı qaydaya riayət etmək lazımdır?",
+    "options": {
+      "A": "Mətn dırnaq işarəsi içərisində yazılır.",
+      "B": "Mətn mötərizə içərisində yazılır.",
+      "C": "Mətn mütləq böyük hərflərlə yazılır.",
+      "D": "Mətnin əvvəlinə bərabərlik işarəsi qoyulur."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: 'İkinci halda simvollar sətri dırnaq işarəsi içərisində yazılır.'"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "ALPLogo proqramlaşdırma mühitinin komandaları",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-26-15",
+    "question": "Qələmin rəngini tünd-qırmızı etmək üçün 'qələminrəngi' komandasına hansı ədəd verilməlidir?",
+    "options": {
+      "A": "4",
+      "B": "8",
+      "C": "11",
+      "D": "12"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə rənglər siyahısında qeyd olunur: '11 – tünd-qırmızı'"
+  }
+]

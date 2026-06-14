@@ -1,0 +1,102 @@
+[
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T01",
+    "Prompt": "Mövzu: 1.1 Qüvvənin təsiri nədən asılıdır. Mətn faylı: data/tebiet6_chunks/topic_real_1.txt. TİK: 06-003-0101-B001-01-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_1.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T02",
+    "Prompt": "Mövzu: 1.2 Ağırlıq qüvvəsi. Mətn faylı: data/tebiet6_chunks/topic_real_2.txt. TİK: 06-003-0101-B001-02-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_2.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T03",
+    "Prompt": "Mövzu: 1.3 Sürtünmə qüvvəsi. Mətn faylı: data/tebiet6_chunks/topic_real_3.txt. TİK: 06-003-0101-B001-03-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_3.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T04",
+    "Prompt": "Mövzu: 1.4 Arximed qüvvəsi. Mətn faylı: data/tebiet6_chunks/topic_real_4.txt. TİK: 06-003-0101-B001-04-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_4.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T05",
+    "Prompt": "Mövzu: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr. Mətn faylı: data/tebiet6_chunks/topic_real_5.txt. TİK: 06-003-0101-B001-05-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_5.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T06",
+    "Prompt": "Mövzu: Xülasə. Mətn faylı: data/tebiet6_chunks/topic_real_6.txt. TİK: 06-003-0101-B001-06-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_6.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T07",
+    "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar. Mətn faylı: data/tebiet6_chunks/topic_real_7.txt. TİK: 06-003-0101-B001-07-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_7.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T08",
+    "Prompt": "Mövzu: 2.1 Ürək necə işləyir. Mətn faylı: data/tebiet6_chunks/topic_real_8.txt. TİK: 06-003-0101-B002-01-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_8.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T09",
+    "Prompt": "Mövzu: 2.2 Bədəndə qan necə hərəkət edir. Mətn faylı: data/tebiet6_chunks/topic_real_9.txt. TİK: 06-003-0101-B002-02-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_9.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T10",
+    "Prompt": "Mövzu: 2.3 Ağciyərlərdə qazlar mübadiləsi necə baş verir. Mətn faylı: data/tebiet6_chunks/topic_real_10.txt. TİK: 06-003-0101-B002-03-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_10.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T11",
+    "Prompt": "Mövzu: Xülasə. Mətn faylı: data/tebiet6_chunks/topic_real_11.txt. TİK: 06-003-0101-B002-04-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_11.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T12",
+    "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar. Mətn faylı: data/tebiet6_chunks/topic_real_12.txt. TİK: 06-003-0101-B002-05-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_12.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T13",
+    "Prompt": "Mövzu: 3.1 Göbələk nədir. Mətn faylı: data/tebiet6_chunks/topic_real_13.txt. TİK: 06-003-0101-B003-01-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_13.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T14",
+    "Prompt": "Mövzu: 3.2 Bakteriya nədir. Mətn faylı: data/tebiet6_chunks/topic_real_14.txt. TİK: 06-003-0101-B003-02-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_14.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T15",
+    "Prompt": "Mövzu: Xülasə. Mətn faylı: data/tebiet6_chunks/topic_real_15.txt. TİK: 06-003-0101-B003-03-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_15.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T16",
+    "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar. Mətn faylı: data/tebiet6_chunks/topic_real_16.txt. TİK: 06-003-0101-B003-04-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_16.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T17",
+    "Prompt": "Mövzu: 4.1 Xəstəlik nədir. Mətn faylı: data/tebiet6_chunks/topic_real_17.txt. TİK: 06-003-0101-B004-01-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_17.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T18",
+    "Prompt": "Mövzu: 4.2 Yoluxucu xəstəliklərin qarşısını necə almaq olar. Mətn faylı: data/tebiet6_chunks/topic_real_18.txt. TİK: 06-003-0101-B004-02-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_18.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T19",
+    "Prompt": "Mövzu: 4.3 Bitki və heyvanların yoluxucu xəstəlikləri hansılardır. Mətn faylı: data/tebiet6_chunks/topic_real_19.txt. TİK: 06-003-0101-B004-03-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_19.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "tebiet_generator",
+    "Role": "Nat6_T20",
+    "Prompt": "Mövzu: Xülasə. Mətn faylı: data/tebiet6_chunks/topic_real_20.txt. TİK: 06-003-0101-B004-04-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_generated/topic_20.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  }
+]

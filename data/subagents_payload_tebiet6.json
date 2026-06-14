@@ -1,0 +1,129 @@
+{
+  "Subagents": [
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T01",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 1. Kompüter - 1. Kompüter necə işləyir\nSəhifələr: 8-10\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B001-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_1.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T02",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 1. Kompüter - 2. İnformasiya harada saxlanılır\nSəhifələr: 11-13\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B002-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_2.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T03",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 1. Kompüter - 3. Ədədi informasiya necə kodlaşdırılır\nSəhifələr: 14-16\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B003-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_3.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T04",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 1. Kompüter - 4. İnformasiya nə qədər yer tutur\nSəhifələr: 17-23\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B004-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_4.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T05",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 5. Proqramı başlatmağın bir neçə üsulu\nSəhifələr: 24-25\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B005-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_5.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T06",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 6. Şəklin kompüterdə saxlanması və çapı\nSəhifələr: 26-27\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B006-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_6.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T07",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 7. Mətnin görünüşünün yaxşılaşdırılması\nSəhifələr: 28-30\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B007-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_7.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T08",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 8. Abzasın formatlanması\nSəhifələr: 31-33\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B008-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_8.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T09",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 9. Elektron təqdimatlar\nSəhifələr: 34-36\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B009-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_9.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T10",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 10. Slaydlarla iş\nSəhifələr: 37-39\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0010-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_10.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T11",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 2. Proqram təminatı - 11. Obyektin informasiya modeli\nSəhifələr: 40-43\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0011-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_11.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T12",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 3. Alqoritm - 12. Alqoritmin xassələri\nSəhifələr: 44-46\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0012-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_12.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T13",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 3. Alqoritm - 13. Alqoritmin növləri\nSəhifələr: 47-49\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0013-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_13.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T14",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 3. Alqoritm - 14. Dövri alqoritmlər\nSəhifələr: 50-52\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0014-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_14.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T15",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 3. Alqoritm - 15. Əyləncəli məsələlər\nSəhifələr: 53-57\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0015-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_15.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T16",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 4. Proqramlaşdırma - 16. Proqramda dəyişənlər\nSəhifələr: 58-60\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0016-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_16.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T17",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 4. Proqramlaşdırma - 17. Proqramlaşdırma mühitində seçim\nSəhifələr: 61-64\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0017-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_17.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T18",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 4. Proqramlaşdırma - 18. Proqramlaşdırma mühitində dövr\nSəhifələr: 65-67\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0018-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_18.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T19",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 4. Proqramlaşdırma - 19. Dövrlər və naxışlar\nSəhifələr: 68-70\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0019-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_19.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T20",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 4. Proqramlaşdırma - 20. Proqramlaşdırma mühitində musiqi\nSəhifələr: 71-75\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0020-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_20.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T21",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 5. İnternet - 21. İnformasiya resursları ilə iş mərhələləri\nSəhifələr: 76-78\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0021-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_21.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T22",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 5. İnternet - 22. Dünya hörümçək torunda gəzişmə\nSəhifələr: 79-80\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0022-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_22.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T23",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 5. İnternet - 23. İnternetdə axtarış\nSəhifələr: 81-83\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0023-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_23.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T24",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 5. İnternet - 24. Elektron poçt\nSəhifələr: 84-86\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0024-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_24.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Tebiet6_T25",
+      "Prompt": "Sinif: 6\nFənn: Təbiət\nMövzu: Bölmə 5. İnternet - 25. Elektron poçtla məktublaşma\nSəhifələr: 87-89\nBook ID: tebiet-6\nTİK Prefix: 06-011-0101-B0025-01-\nTələb: 15 test (5 sadə, 5 orta, 5 çətin).\n\nKitab mətni tam olaraq C:/Users/User/Downloads/azerbaijanaiplatform/data/tebiet6_chunks/topic_25.txt faylındadır. Əvvəlcə view_file alətindən istifadə edərək bu faylı oxu, sonra yoxlanılmış \"Sıfır Tolerantlıq\" JSON nəticəsini geri qaytar."
+    }
+  ]
+}

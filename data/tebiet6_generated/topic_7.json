@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-01",
+    "question": "Nəbz nədir?",
+    "options": {
+      "A": "Hər bir ürək döyüntüsünə görə damar divarlarının ritmik hərəkəti",
+      "B": "Ürək əzələsinin zəifləməsi",
+      "C": "Qanın sümüklərdə hərəkəti",
+      "D": "Nəfəsalma tezliyi"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Hər bir ürək döyüntüsünə görə damar divarlarının ritmik hərəkəti (dalğalanması) nəbzadlanır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-02",
+    "question": "İnsanın ürəyi neçə şöbədən ibarətdir?",
+    "options": {
+      "A": "İki",
+      "B": "Üç",
+      "C": "Dörd",
+      "D": "Beş"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Beləliklə, insanın ürəyi dörd şöbədən - sol qulaqcıq, sağ qulaqcıq, sol mədəcik və sağ mədəcikdən ibarətdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-03",
+    "question": "Ürək döş boşluğunda necə yerləşir?",
+    "options": {
+      "A": "Mərkəzdən bir qədər sağda",
+      "B": "Tam mərkəzdə",
+      "C": "Mərkəzdən bir qədər solda",
+      "D": "Tam sağ tərəfdə"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Ürək döşboşluğunda mərkəzdənbir qədər soldayerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-04",
+    "question": "Ürəyin yuxarıdakı şöbələri necə adlanır?",
+    "options": {
+      "A": "Mədəciklər",
+      "B": "Qulaqcıqlar",
+      "C": "Klapanlar",
+      "D": "Arakəsmələr"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Ürəyin yuxarıdakışöbələrinə qulaqcıqlar , aşağıdakı şöbələrinə isəmədəciklər deyilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-05",
+    "question": "Hansı şöbələr qanı ağciyərlərə və bədənə qovur?",
+    "options": {
+      "A": "Yalnız sağ qulaqcıq",
+      "B": "Bütün qulaqcıqlar",
+      "C": "Mədəciklər",
+      "D": "Arakəsmələr"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Qulaqcıqlar ağciyərlərdən və bədənin digər orqanlarından qanı qəbul edir, mədəciklər isə qanıağciyərlərə və bədənə qovur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-06",
+    "question": "İnsanlarda çox sürətli, çox yavaş və ya nizamsız ürək ritmləri xəstəliyi necə adlanır?",
+    "options": {
+      "A": "Aritmiya",
+      "B": "Qan təzyiqi",
+      "C": "Dalğalanma",
+      "D": "İnfarkt"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Bəzi insanlar çox sürətli, çoxyavaş və ya nizamsız ürəkritmlərindən əziyyət çəkirlər. Buvəziyyət aritmiya adlanır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-07",
+    "question": "Ürəyin hissələri hansı quruluş vasitəsilə sağ və sol hissələrə ayrılır?",
+    "options": {
+      "A": "Qulaqcıqlar",
+      "B": "Mədəciklər",
+      "C": "Bütöv arakəsmə",
+      "D": "Damarlar"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"İnsanınürəyi bütöv arakəsmə ilə sağ və sol hissələrə ayrılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-08",
+    "question": "Aritmiyadan əziyyət çəkən insanın döş qəfəsinə və ya qarın nahiyəsinə ürək fəaliyyətinin normal ritmini nizamlamaq üçün hansı cihaz yerləşdirilir?",
+    "options": {
+      "A": "Fonendoskop",
+      "B": "Ultrasəs cihazı",
+      "C": "Kardiostimulyator",
+      "D": "Termometr"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Adətən, aritmiyadan əziyyətçəkən insanın döş qəfəsinə və ya qarın nahiyəsinəkardiostimulyator adlı kiçik bircihaz yerləşdirilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-09",
+    "question": "Mədəciklər və qulaqcıqlarla bağlı verilən fikirlərdən hansı doğrudur?",
+    "options": {
+      "A": "Qulaqcıqlar qanı bədənə qovur, mədəciklər isə qəbul edir",
+      "B": "Qulaqcıqlar ağciyərlərdən və digər orqanlardan qanı qəbul edir, mədəciklər isə onu qovur",
+      "C": "Hər iki şöbə yalnız qanı qəbul etməklə məşğuldur",
+      "D": "Mədəciklər ürəyin yuxarı şöbələrində yerləşərək qanı qəbul edir"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Qulaqcıqlar ağciyərlərdən və bədənin digər orqanlarından qanı qəbul edir, mədəciklər isə qanıağciyərlərə və bədənə qovur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-10",
+    "question": "Xəzər dənizinin Lənkəran sahilinin ən dərin nöqtəsini tapmaq üçün alimlər nədən istifadə edirlər?",
+    "options": {
+      "A": "Su altı gəmilərdən",
+      "B": "Seysmik dalğalardan",
+      "C": "Səs lokasiyasından",
+      "D": "Maqnit sahəsindən"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Xəzər dənizinin Lənkəran sahilinin ən dərinnöqtəsini tapmaq üçün alimlər səslokasiyasından istifadə edirlər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-11",
+    "question": "Nəbz vurğusu ürəyin fəaliyyəti ilə necə əlaqələnir?",
+    "options": {
+      "A": "Hər nəbz vurğusu ürəyin iki dəfə yığılmasına uyğun gəlir",
+      "B": "Hər nəbz vurğusu ürəyin bir dəfə yığılmasına uyğun gəlir",
+      "C": "Nəbz vurğusu qulaqcıqların dayanması zamanı yaranır",
+      "D": "Nəbz yalnız mədəciklərin qanı qəbul etməsi zamanı yaranır"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Hər nəbz vurğusu ürəyin bir dəfə yığılmasına uyğun gəlir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-12",
+    "question": "Aritmiyanın orqanizmə təsiri barədə mətndə hansı fikir vurğulanır?",
+    "options": {
+      "A": "Aritmiyası olan insanlarda ürək bədənə kifayət qədər qan vura bilmir",
+      "B": "Aritmiyası olan insanların ürəyi dörd yox, iki şöbədən ibarət olur",
+      "C": "Aritmiya zamanı qulaqcıqlar yuxarı, mədəciklər isə aşağı yerini dəyişir",
+      "D": "Bu xəstəlik yalnız gənc yaşlarında özünü biruzə verir"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Aritmiyası olan insanlarda ürəkbədənə kifayət qədər qan vurabilmir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-13",
+    "question": "Ürək şöbələrinin qanla dolması və boşalması prosesi necə baş verir?",
+    "options": {
+      "A": "Şöbələr qanla dolanda kiçilir, boşalanda genişlənir",
+      "B": "Qan giriş dəliklərindən axmağa başlayan kimi şöbələr qanla dolur və genişlənir, əzələlər yığıldıqda isə kiçilir və qan çıxış dəliyindən çıxır",
+      "C": "Ürək döyündükdə qan əvvəlcə çıxış dəliyindən daxil olur",
+      "D": "Ürəyin əzələləri boşaldıqda qan çıxış dəliyindən xaricə qovulur"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Qan giriş dəliklərindən axmağa başlayan kimi şöbələr qanladolur və genişlənir. Ürək döyündükdə onun əzələləri yığılır, şöbələr kiçilir və qan çıxış dəliyindən çıxır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-14",
+    "question": "Nəbz necə hiss olunur və bu nəyin göstəricisidir?",
+    "options": {
+      "A": "Biləklərdə hiss edilir və bu, bədənin digər hissələri ilə ürəyin necə əlaqəli olduğunu göstərir",
+      "B": "Yalnız ürəyin üstünə əl qoyduqda hiss edilir və ağciyərlərin həcmini göstərir",
+      "C": "Yalnız boyun nahiyəsində hiss edilir və beynin fəaliyyətini əks etdirir",
+      "D": "Damarların sərtliyini bildirir və tənəffüsün dayanması zamanı yaranır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Biz bunu biləklərimizdə və bədəninmüəyyən yerlərində hiss edə bilərik. Bu, bədənimizin digərhissələri ilə ürəyimizin necə əlaqəli olduğunu göstərir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn 1-7",
+    "passport": "06-003-0101-B001-07-15",
+    "question": "Ürək fəaliyyəti nəticəsində qanın növbəli qovulması hansı nəticəni doğurur?",
+    "options": {
+      "A": "Qanın yalnız ağciyərlərdə toplanmasına səbəb olur",
+      "B": "Qan damarları divarlarının dalğavarı hərəkətinə səbəb olur",
+      "C": "Qanın hərəkətinin dayanmasına və ürəyin istirahətinə səbəb olur",
+      "D": "Damarların daralaraq tamamilə bağlanmasına imkan verir"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Ürəkfəaliyyəti nəticəsində qanın növbəli qovulması qan damarlarıdivarlarının dalğavarı hərəkətinə səbəb olur.\""
+  }
+]

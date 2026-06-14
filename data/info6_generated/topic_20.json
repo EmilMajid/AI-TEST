@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-01",
+    "question": "Scratch proqramında musiqi ilə işləmək üçün hansı bloklar qrupundan istifadə olunur?",
+    "options": {
+      "A": "Səs (Sound)",
+      "B": "Hərəkət (Motion)",
+      "C": "Görünüş (Looks)",
+      "D": "Hadisələr (Events)"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Scratch proqramlaşdırma mühitində belə musiqilər yaratmaq üçün xüsusi Səs (Sound) bloklar qrupu nəzərdə tutulub."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-02",
+    "question": "Scratch proqramında hər bir not hansı ədədlə ifadə olunur?",
+    "options": {
+      "A": "Tam ədədlə (məsələn, 60)",
+      "B": "Kəsr ədədlə",
+      "C": "Hərflərlə",
+      "D": "Roma rəqəmləri ilə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Scratch proqramında musiqi notları ədədlərlə, məsələn, 60 ədədi birinci oktavanın “do” notu kimi işarə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-03",
+    "question": "“Cücələrim” mahnısını ifa etmək üçün proqramda alətin növünü (məsələn, royal) hansı blokla seçmək olar?",
+    "options": {
+      "A": "[aləti ... təyin et]",
+      "B": "[... notunu çal]",
+      "C": "[1 vuruş gözlə]",
+      "D": "[pəncərəni aç]"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Proqramda ifa alətini seçmək üçün “[aləti ... təyin et]” komandasından istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-04",
+    "question": "Scratch proqramında “[60 notunu 0.5 vuruş çal]” bloku nəyi bildirir?",
+    "options": {
+      "A": "60 nömrəli notun yarım vuruş müddətində səslənməsini",
+      "B": "60 nömrəli notun yarım saniyə səslənməsini",
+      "C": "60 nömrəli notun 0.5 səs səviyyəsində olmasını",
+      "D": "60 saniyə ərzində yarım vuruş çalınmasını"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "“[60 notunu 0.5 vuruş çal]” bloku birinci oktavanın “do” notunun 0.5 (yarım) vuruş ərzində çalınmasını göstərir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-05",
+    "question": "Musiqi əsərinin ritmini, yəni səslərin müddətini təyin etmək üçün Scratch proqramında hansı meyardan istifadə edilir?",
+    "options": {
+      "A": "Vuruş",
+      "B": "Saniyə",
+      "C": "Herts",
+      "D": "Oktava"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Səslərin, notların ifa müddətini bildirmək üçün vuruşlardan (0.5 vuruş, 1 vuruş və s.) istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-06",
+    "question": "Scratch-də əgər bir taktda müəyyən bir hissəni təkrar etmək lazımdırsa, hansı komanda blokundan istifadə etmək daha məqsədəuyğundur?",
+    "options": {
+      "A": "[... dəfə təkrarla]",
+      "B": "[əgər ..., onda]",
+      "C": "[1 saniyə gözlə]",
+      "D": "[... notunu çal]"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Proqram kodunu qısaltmaq və təkrarlanan hissələri asanlaşdırmaq üçün dövr, yəni “[... dəfə təkrarla]” blokundan istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-07",
+    "question": "Alqoritmdə “əvvəlcə aləti 1 təyin et, sonra 62, 64 və 65 notlarını çal” əmri verilmişsə, bu blokların sırası nəyə təsir edir?",
+    "options": {
+      "A": "Musiqinin düzgün melodiya və alətlə səslənməsinə",
+      "B": "Yalnız musiqinin səs səviyyəsinə",
+      "C": "Dövrün sayına",
+      "D": "Proqramın sürətinə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Komandaların ardıcıllığı xətti alqoritmdir və düzgün alətin seçilməsindən sonra müəyyən ardıcıllıqla notların çalınmasını təmin edir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-08",
+    "question": "Səs effektləri və notlarla işləyərkən Scratch-də daxil edilmiş klaviatura nümunəsi nəyi asanlaşdırır?",
+    "options": {
+      "A": "Hər nota uyğun olan ədədi asanlıqla tapmağı",
+      "B": "Yeni rəsmlər çəkməyi",
+      "C": "Xarakterlərin hərəkətini",
+      "D": "Rəng dəyişməsini"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Klaviatura şəkli, hər notun rəqəmsal dəyərini (məsələn, 60=do, 62=re) göstərməklə proqramlaşdırmanı asanlaşdırır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-09",
+    "question": "“Cücələrim” mahnısını proqramlaşdırarkən uzun və təkrarlanan not ardıcıllıqları varsa, proqram necə optimallaşdırıla bilər?",
+    "options": {
+      "A": "Dövr strukturundan istifadə etməklə",
+      "B": "Xətti olaraq bütün notları bir-bir yazmaqla",
+      "C": "Hər notun arasına 10 saniyəlik fasilə qoymaqla",
+      "D": "Musiqi alətini hər notdan sonra dəyişməklə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Eyni melodiya hissəsi və ya notlar qrupu təkrarlandıqda, xətti yazılışı azaltmaq üçün dövr alqoritmindən istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-10",
+    "question": "Musiqi skriptini yaratdıqdan sonra onun icrasına hansı bloku klikləməklə başlamaq olar?",
+    "options": {
+      "A": "Hadisələr (Events) qrupundan “Yaşıl bayraq klikləndikdə”",
+      "B": "Səs (Sound) qrupundan “Bütün səsləri dayandır”",
+      "C": "Hərəkət (Motion) qrupundan “10 addım at”",
+      "D": "Görünüş (Looks) qrupundan “Gizlən”"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Yazılmış skriptin işə düşməsi üçün, bir qayda olaraq, “Yaşıl bayraq klikləndikdə” tətiyi istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-11",
+    "question": "Əgər 60 notu 'do', 62 notu 're', 64 notu 'mi'dirsə, 65 notu təxminən hansı notu ifadə edir?",
+    "options": {
+      "A": "'fa'",
+      "B": "'sol'",
+      "C": "'lya'",
+      "D": "'si'"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Scratch-də notların nömrələnməsində: 60=do, 62=re, 64=mi, 65=fa kimi ardıcıllıqla gedir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-12",
+    "question": "“2 dəfə təkrarla: (60 notu 0.5 vuruş, 62 notu 0.5 vuruş)” proqramı nəticəsində cəmi neçə vuruşluq musiqi səslənəcək?",
+    "options": {
+      "A": "2 vuruş",
+      "B": "1 vuruş",
+      "C": "3 vuruş",
+      "D": "4 vuruş"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Bir təkrar 0.5 + 0.5 = 1 vuruş çəkir. İki dəfə təkrarlansa, cəmi 2 vuruşluq zaman alır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-13",
+    "question": "Proqramda səhvi (məsələn, yanlış not və ya vuruş) necə aşkar edib düzəltmək olar?",
+    "options": {
+      "A": "Skripti addım-addım işə salıb səsi dinləməklə və parametrləri dəyişməklə",
+      "B": "Kompüteri yenidən başlatmaqla",
+      "C": "Yeni bir sprayt əlavə etməklə",
+      "D": "Proqramı tamam silib sıfırdan yazmaqla"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "dəyərləndirmə",
+    "explanation": "Scratch-də debug (səhvlərin düzəldilməsi) kodu işlədib, melodiyanı dinləyib, uyğunsuzluq olduqda blokların dəyərlərini dəyişməklə aparılır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-14",
+    "question": "Səs bloklarının parametrlərində dəyişiklik etmək (məsələn, aləti 1-dən 10-a dəyişmək) nəticədə nəyi fərqləndirir?",
+    "options": {
+      "A": "Səslənən musiqi alətinin tembrini (səs rəngini)",
+      "B": "Mahnının ümumi müddətini",
+      "C": "Mahnının səs yüksəkliyini (həcmini)",
+      "D": "Səhifənin rəngini"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "“[aləti ... təyin et]” komandası səsin tembrini, yəni hansı alətdə (piano, gitara və s.) çalınacağını dəyişir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində musiqi",
+    "book_id": "informatika-6",
+    "pages": "70",
+    "passport": "06-004-0101-B001-20-15",
+    "question": "Scratch-də notların ədədlə ifadə edilməsi hansı məqsədə qulluq edir?",
+    "options": {
+      "A": "Kompüterə riyazi qiymətlərlə səslərin tezliyini emal etməyə imkan yaradır",
+      "B": "İstifadəçiyə hesab əməlləri aparmağı asanlaşdırır",
+      "C": "Ekrandakı spraytın ölçüsünü böyüdür",
+      "D": "Proqramın həcmini böyüdür"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Kompüterlər məlumatları rəqəmlərlə emal edir. Notların ədədlərə uyğunlaşdırılması MIDI sisteminə oxşar olaraq tezlikləri və səsləri emal etmək üçündür."
+  }
+]

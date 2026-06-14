@@ -1,0 +1,409 @@
+{
+  "Subagents": [
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T01",
+      "Prompt": "Mövzu: 1.1 Qüvvənin təsiri nədən asılıdır\nFayl: data/tebiet6_chunks/topic_real_1.txt\nTİK: 06-003-0101-B001-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T02",
+      "Prompt": "Mövzu: 1.2 Ağırlıq qüvvəsi\nFayl: data/tebiet6_chunks/topic_real_2.txt\nTİK: 06-003-0101-B001-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T03",
+      "Prompt": "Mövzu: 1.3 Sürtünmə qüvvəsi\nFayl: data/tebiet6_chunks/topic_real_3.txt\nTİK: 06-003-0101-B001-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T04",
+      "Prompt": "Mövzu: 1.4 Arximed qüvvəsi\nFayl: data/tebiet6_chunks/topic_real_4.txt\nTİK: 06-003-0101-B001-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T05",
+      "Prompt": "Mövzu: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr\nFayl: data/tebiet6_chunks/topic_real_5.txt\nTİK: 06-003-0101-B001-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T06",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_6.txt\nTİK: 06-003-0101-B001-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T07",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_7.txt\nTİK: 06-003-0101-B001-07-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T08",
+      "Prompt": "Mövzu: 2.1 Ürək necə işləyir\nFayl: data/tebiet6_chunks/topic_real_8.txt\nTİK: 06-003-0101-B002-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T09",
+      "Prompt": "Mövzu: 2.2 Bədəndə qan necə hərəkət edir\nFayl: data/tebiet6_chunks/topic_real_9.txt\nTİK: 06-003-0101-B002-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T10",
+      "Prompt": "Mövzu: 2.3 Ağciyərlərdə qazlar mübadiləsi necə baş verir\nFayl: data/tebiet6_chunks/topic_real_10.txt\nTİK: 06-003-0101-B002-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T11",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_11.txt\nTİK: 06-003-0101-B002-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T12",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_12.txt\nTİK: 06-003-0101-B002-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T13",
+      "Prompt": "Mövzu: 3.1 Göbələk nədir\nFayl: data/tebiet6_chunks/topic_real_13.txt\nTİK: 06-003-0101-B003-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T14",
+      "Prompt": "Mövzu: 3.2 Bakteriya nədir\nFayl: data/tebiet6_chunks/topic_real_14.txt\nTİK: 06-003-0101-B003-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T15",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_15.txt\nTİK: 06-003-0101-B003-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T16",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_16.txt\nTİK: 06-003-0101-B003-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T17",
+      "Prompt": "Mövzu: 4.1 Xəstəlik nədir\nFayl: data/tebiet6_chunks/topic_real_17.txt\nTİK: 06-003-0101-B004-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T18",
+      "Prompt": "Mövzu: 4.2 Yoluxucu xəstəliklərin qarşısını necə almaq olar\nFayl: data/tebiet6_chunks/topic_real_18.txt\nTİK: 06-003-0101-B004-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T19",
+      "Prompt": "Mövzu: 4.3 Bitki və heyvanların yoluxucu xəstəlikləri hansılardır\nFayl: data/tebiet6_chunks/topic_real_19.txt\nTİK: 06-003-0101-B004-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T20",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_20.txt\nTİK: 06-003-0101-B004-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T21",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_21.txt\nTİK: 06-003-0101-B004-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T22",
+      "Prompt": "Mövzu: 5.1 Maddənin fiziki xassələri\nFayl: data/tebiet6_chunks/topic_real_22.txt\nTİK: 06-003-0101-B005-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T23",
+      "Prompt": "Mövzu: 5.2 Maddənin sıxlığı\nFayl: data/tebiet6_chunks/topic_real_23.txt\nTİK: 06-003-0101-B005-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T24",
+      "Prompt": "Mövzu: 5.3 Maddəni təşkil edən zərrəciklər\nFayl: data/tebiet6_chunks/topic_real_24.txt\nTİK: 06-003-0101-B005-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T25",
+      "Prompt": "Mövzu: 5.4 Su molekulu\nFayl: data/tebiet6_chunks/topic_real_25.txt\nTİK: 06-003-0101-B005-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T26",
+      "Prompt": "Mövzu: 5.5 Diffuziya\nFayl: data/tebiet6_chunks/topic_real_26.txt\nTİK: 06-003-0101-B005-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T27",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_27.txt\nTİK: 06-003-0101-B005-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T28",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_28.txt\nTİK: 06-003-0101-B005-07-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T29",
+      "Prompt": "Mövzu: 6.1 Qarışıqlar\nFayl: data/tebiet6_chunks/topic_real_29.txt\nTİK: 06-003-0101-B006-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T30",
+      "Prompt": "Mövzu: 6.2 Maddələrin həllolması\nFayl: data/tebiet6_chunks/topic_real_30.txt\nTİK: 06-003-0101-B006-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T31",
+      "Prompt": "Mövzu: 6.3 Eynicinsli və müxtəlifcinsli qarışıqlar\nFayl: data/tebiet6_chunks/topic_real_31.txt\nTİK: 06-003-0101-B006-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T32",
+      "Prompt": "Mövzu: 6.4 Saf maddələr\nFayl: data/tebiet6_chunks/topic_real_32.txt\nTİK: 06-003-0101-B006-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T33",
+      "Prompt": "Mövzu: 6.5 Suyun əhəmiyyəti\nFayl: data/tebiet6_chunks/topic_real_33.txt\nTİK: 06-003-0101-B006-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T34",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_34.txt\nTİK: 06-003-0101-B006-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T35",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_35.txt\nTİK: 06-003-0101-B006-07-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T36",
+      "Prompt": "Mövzu: 7.1 Yer qabığındakı süxurlar\nFayl: data/tebiet6_chunks/topic_real_36.txt\nTİK: 06-003-0101-B007-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T37",
+      "Prompt": "Mövzu: 7.2 Hava şəraiti və süxurların aşınması\nFayl: data/tebiet6_chunks/topic_real_37.txt\nTİK: 06-003-0101-B007-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T38",
+      "Prompt": "Mövzu: 7.3 Torpaq necə yaranır\nFayl: data/tebiet6_chunks/topic_real_38.txt\nTİK: 06-003-0101-B007-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T39",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_39.txt\nTİK: 06-003-0101-B007-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T40",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_40.txt\nTİK: 06-003-0101-B007-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T41",
+      "Prompt": "Mövzu: Sözlük\nFayl: data/tebiet6_chunks/topic_real_41.txt\nTİK: 06-003-0101-B007-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T42",
+      "Prompt": "Mövzu: 8.1 Elektrik cərəyanı\nFayl: data/tebiet6_chunks/topic_real_42.txt\nTİK: 06-003-0101-B008-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T43",
+      "Prompt": "Mövzu: 8.2 Ardıcıl və paralel birləşmələr\nFayl: data/tebiet6_chunks/topic_real_43.txt\nTİK: 06-003-0101-B008-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T44",
+      "Prompt": "Mövzu: 8.3 Keçiricilər və dielektriklər\nFayl: data/tebiet6_chunks/topic_real_44.txt\nTİK: 06-003-0101-B008-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T45",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_45.txt\nTİK: 06-003-0101-B008-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T46",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_46.txt\nTİK: 06-003-0101-B008-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T47",
+      "Prompt": "Mövzu: 9.1 Səs necə yaranır\nFayl: data/tebiet6_chunks/topic_real_47.txt\nTİK: 06-003-0101-B009-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T48",
+      "Prompt": "Mövzu: 9.2 Səslər bir-birindən necə fərqlənir\nFayl: data/tebiet6_chunks/topic_real_48.txt\nTİK: 06-003-0101-B009-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T49",
+      "Prompt": "Mövzu: 9.3 Səs başqa mühitlərdə yayılırmı\nFayl: data/tebiet6_chunks/topic_real_49.txt\nTİK: 06-003-0101-B009-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T50",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_50.txt\nTİK: 06-003-0101-B009-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T51",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_51.txt\nTİK: 06-003-0101-B009-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T52",
+      "Prompt": "Mövzu: 10.1 Cisimlərin istidən genişlənməsi\nFayl: data/tebiet6_chunks/topic_real_52.txt\nTİK: 06-003-0101-B010-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T53",
+      "Prompt": "Mövzu: 10.2 İstilik tarazlığı və istilikkeçirmə\nFayl: data/tebiet6_chunks/topic_real_53.txt\nTİK: 06-003-0101-B010-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T54",
+      "Prompt": "Mövzu: 10.3 İstilik enerjisinin konveksiya ilə ötürülməsi\nFayl: data/tebiet6_chunks/topic_real_54.txt\nTİK: 06-003-0101-B010-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T55",
+      "Prompt": "Mövzu: 10.4 İstilik enerjisinin şüalanma ilə ötürülməsi\nFayl: data/tebiet6_chunks/topic_real_55.txt\nTİK: 06-003-0101-B010-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T56",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_56.txt\nTİK: 06-003-0101-B010-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T57",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_57.txt\nTİK: 06-003-0101-B010-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T58",
+      "Prompt": "Mövzu: 11.1 Uyğunlaşma nədir\nFayl: data/tebiet6_chunks/topic_real_58.txt\nTİK: 06-003-0101-B011-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T59",
+      "Prompt": "Mövzu: 11.2 Heyvanlar mühitə necə uyğunlaşır\nFayl: data/tebiet6_chunks/topic_real_59.txt\nTİK: 06-003-0101-B011-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T60",
+      "Prompt": "Mövzu: 11.3 Heyvanlar sağ qalmaq üçün necə uyğunlaşır\nFayl: data/tebiet6_chunks/topic_real_60.txt\nTİK: 06-003-0101-B011-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T61",
+      "Prompt": "Mövzu: 11.4 Bitkilər ətraf mühitə necə uyğunlaşır\nFayl: data/tebiet6_chunks/topic_real_61.txt\nTİK: 06-003-0101-B011-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T62",
+      "Prompt": "Mövzu: 11.5 Canlılar ekstremal temperaturlarda necə yaşayır\nFayl: data/tebiet6_chunks/topic_real_62.txt\nTİK: 06-003-0101-B011-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T63",
+      "Prompt": "Mövzu: 11.6 Canlılar mühitə uyğunlaşa bilmədikdə nə baş verir\nFayl: data/tebiet6_chunks/topic_real_63.txt\nTİK: 06-003-0101-B011-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T64",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_64.txt\nTİK: 06-003-0101-B011-07-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T65",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_65.txt\nTİK: 06-003-0101-B011-08-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T66",
+      "Prompt": "Mövzu: 12.1 Canlılar bir-birindən necə asılıdır\nFayl: data/tebiet6_chunks/topic_real_66.txt\nTİK: 06-003-0101-B012-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T67",
+      "Prompt": "Mövzu: 12.2 Ekoloji piramidalar nədir\nFayl: data/tebiet6_chunks/topic_real_67.txt\nTİK: 06-003-0101-B012-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T68",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_68.txt\nTİK: 06-003-0101-B012-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T69",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_69.txt\nTİK: 06-003-0101-B012-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T70",
+      "Prompt": "Mövzu: 13.1 Fosillər və fosil yanacaqlar\nFayl: data/tebiet6_chunks/topic_real_70.txt\nTİK: 06-003-0101-B013-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T71",
+      "Prompt": "Mövzu: 13.2 Yanma prosesi\nFayl: data/tebiet6_chunks/topic_real_71.txt\nTİK: 06-003-0101-B013-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T72",
+      "Prompt": "Mövzu: 13.3 Təbiətdə karbon dövranı\nFayl: data/tebiet6_chunks/topic_real_72.txt\nTİK: 06-003-0101-B013-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T73",
+      "Prompt": "Mövzu: 13.4 İstixana effekti və qlobal istiləşmə\nFayl: data/tebiet6_chunks/topic_real_73.txt\nTİK: 06-003-0101-B013-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T74",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_74.txt\nTİK: 06-003-0101-B013-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T75",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_75.txt\nTİK: 06-003-0101-B013-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T76",
+      "Prompt": "Mövzu: 14.1 Günəş sisteminin quruluşu\nFayl: data/tebiet6_chunks/topic_real_76.txt\nTİK: 06-003-0101-B014-01-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T77",
+      "Prompt": "Mövzu: 14.2 Ay və Yerin hərəkəti\nFayl: data/tebiet6_chunks/topic_real_77.txt\nTİK: 06-003-0101-B014-02-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T78",
+      "Prompt": "Mövzu: 14.3 Yer kürəsi və fəsillər\nFayl: data/tebiet6_chunks/topic_real_78.txt\nTİK: 06-003-0101-B014-03-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T79",
+      "Prompt": "Mövzu: Xülasə\nFayl: data/tebiet6_chunks/topic_real_79.txt\nTİK: 06-003-0101-B014-04-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T80",
+      "Prompt": "Mövzu: Ümumiləşdirici tapşırıqlar\nFayl: data/tebiet6_chunks/topic_real_80.txt\nTİK: 06-003-0101-B014-05-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    },
+    {
+      "TypeName": "sop_v3_test_generator",
+      "Role": "Nat6_T81",
+      "Prompt": "Mövzu: Sözlük\nFayl: data/tebiet6_chunks/topic_real_81.txt\nTİK: 06-003-0101-B014-06-\n15 test (5 sadə, 5 orta, 5 çətin) yarat. Sonda 'Hazırdır' yaz."
+    }
+  ]
+}

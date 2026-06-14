@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-1-01",
+    "question": "Kompüter proqramlarında verilənləri (məlumatları) saxlamaq üçün istifadə olunan qutu (və ya qab) necə adlanır?",
+    "options": {
+      "A": "Dəyişən",
+      "B": "Proses",
+      "C": "Alqoritm",
+      "D": "Əmr"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur ki, kompüter proqramlarında da verilənləri (məlumatları) saxlamaq üçün qutular – dəyişənlər olur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-2-02",
+    "question": "Scratch proqramında yeni dəyişən yaratmaq üçün hansı bloklar qrupuna müraciət edilir?",
+    "options": {
+      "A": "Dəyişənlər (Variables)",
+      "B": "Hadisələr (Events)",
+      "C": "Hərəkət (Motion)",
+      "D": "Görünüş (Looks)"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Dəyişən yaratmaq üçün Dəyişənlər (Variables) qrupunda olan xüsusi düymədən (Make a Variable) istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-3-03",
+    "question": "Dəyişənə ad verərkən bu adın necə olması məsləhət görülür?",
+    "options": {
+      "A": "Mənalı olması",
+      "B": "Çox uzun olması",
+      "C": "Yalnız rəqəmlərdən ibarət olması",
+      "D": "Mənasız olması"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə vurğulanır ki, adətən, dəyişənlərə mənalı ad verilir (məsələn, A və B, yaxud Xal və s.)."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-4-04",
+    "question": "Scratch proqramında dəyişən yaratdıqdan sonra səhnədə həmin dəyişənin qiyməti neçə göstərilir?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Boş qalır",
+      "D": "Rastgələ bir rəqəm"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunub: \"Dəyişən yaradıldıqdan sonra səhnədə onun adı və ilkin qiyməti (0) göstərilir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-5-05",
+    "question": "Oyunlarda toplanılan balları, hesabı saxlamaq üçün adətən nədən istifadə olunur?",
+    "options": {
+      "A": "Dəyişənlərdən",
+      "B": "Sadə əmrlərdən",
+      "C": "Yalnız səs bloklarından",
+      "D": "Rəng kodlarından"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Oyunlarda da toplanan xalları yadda saxlamaq üçün dəyişənlərdən (məsələn, \"Hesab\" və ya \"Xal\" adlı) istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-6-06",
+    "question": "Dəyişənin ilkin qiymətini 0 (sıfır) təyin etmək hansı məqsədi daşıyır?",
+    "options": {
+      "A": "Oyuna və ya proqrama hər dəfə sıfırdan, yəni əvvəldən başlamaq üçün",
+      "B": "Proqramı dayandırmaq üçün",
+      "C": "Dəyişənin adını gizlətmək üçün",
+      "D": "Proqramın sürətini artırmaq üçün"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə izah olunur ki, oyuna hər dəfə əvvəldən başlamaq üçün hesab (dəyişən) sıfırlanmalıdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-7-07",
+    "question": "Scratch-də istifadəçidən məlumat (cavab) almaq üçün hansı blokdan istifadə olunur?",
+    "options": {
+      "A": "Sorğu bloku (Sensors/Sensing qrupundan: soruş və gözlə)",
+      "B": "Görünüş bloku (de)",
+      "C": "Hərəkət bloku (get)",
+      "D": "Dəyişən bloku (təyin et)"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "İstifadəçi tərəfindən daxil edilən cavabı (ədədi) almaq üçün \"soruş və gözlə\" (ask and wait) blokundan istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-8-08",
+    "question": "İstifadəçinin \"soruş və gözlə\" blokuna daxil etdiyi məlumat kompüterin yaddaşında hansı xüsusi dəyişəndə saxlanılır?",
+    "options": {
+      "A": "Cavab (answer)",
+      "B": "Sual",
+      "C": "Xal",
+      "D": "Dəyişən1"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Daxil edilən ədəd müvəqqəti olaraq Sensorlar (Sensing) qrupundakı \"cavab\" (answer) adlı xüsusi dəyişəndə saxlanılır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-9-09",
+    "question": "İstifadəçinin daxil etdiyi “cavab”ı yaratdığımız A dəyişəninə mənimsətmək (yükləmək) üçün hansı blok istifadə olunur?",
+    "options": {
+      "A": "A dəyişənini [cavab] təyin et",
+      "B": "A dəyişənini 1 qədər dəyiş",
+      "C": "Cavabı A qədər dəyiş",
+      "D": "A dəyişənini gizlət"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Yaradılmış A dəyişəninə daxil edilən cavabı vermək üçün \"A dəyişənini [cavab] təyin et\" blokundan istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-10",
+    "question": "Hesablama prosesində dəyişənin qiymətini məsələn, 1 vahid artırmaq üçün hansı komanda tətbiq olunur?",
+    "options": {
+      "A": "[dəyişəni] 1 qədər dəyiş",
+      "B": "[dəyişəni] 1 təyin et",
+      "C": "[dəyişəni] göstər",
+      "D": "Cavabı 1 qədər dəyiş"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Dəyişənin qiymətini (məsələn, hesabı) artırmaq üçün \"[dəyişəni] 1 qədər dəyiş\" blokundan istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-11",
+    "question": "A və B dəyişənlərinin cəmini tapmaq və ekranda göstərmək üçün proqramda hansı addımlar atılmalıdır?",
+    "options": {
+      "A": "Əməllər qrupundan \"+ (toplama)\" bloku seçilməli, içinə A və B dəyişənləri qoyulmalı və \"de\" blokuna yerləşdirilməlidir",
+      "B": "Sadəcə \"A və B de\" komandası yazılmalıdır",
+      "C": "Hər iki dəyişənin qiyməti sıfırlanmalıdır",
+      "D": "A dəyişəni B dəyişəninə çevrilməlidir"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "İki dəyişəni toplamaq üçün Əməllər (Operators) qrupundan toplama bloku seçilir, A və B blokları onun içərisinə yerləşdirilir və \"de\" (say) bloku vasitəsilə ekranda göstərilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-12",
+    "question": "Əgər oyun zamanı istifadəçi düzgün cavab verirsə, “Hesab” dəyişəninin qiyməti necə dəyişməlidir və bu necə yazılır?",
+    "options": {
+      "A": "Hesab 1 qədər artırılmalıdır (“Hesab dəyişənini 1 qədər dəyiş” bloku ilə)",
+      "B": "Hesab 0 təyin olunmalıdır (“Hesab dəyişənini 0 təyin et” bloku ilə)",
+      "C": "Hesab gizlədilməlidir",
+      "D": "Hesab 1 qədər azaldılmalıdır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Doğru cavab olduqda hesabın (xalın) artması üçün \"Hesab dəyişənini 1 qədər dəyiş\" əmri yerinə yetirilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-13",
+    "question": "Nəyə görə proqram icra olunarkən “cavab” (answer) dəyişəni həmişə ən son daxil edilən məlumatı özündə saxlayır?",
+    "options": {
+      "A": "Çünki \"cavab\" bloku hər dəfə yeni məlumat daxil edildikdə köhnə məlumatı silib yenisi ilə əvəz edir",
+      "B": "Çünki \"cavab\" bloku məlumatları toplayaraq saxlayır",
+      "C": "Çünki o yalnız rəqəmləri qəbul edir",
+      "D": "Çünki \"cavab\" bloku bir dəfə işləyir"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Cavab\" xüsusi bir dəyişəndir və hər \"soruş və gözlə\" əmrindən sonra köhnə dəyəri itirərək yeni daxil edilmiş dəyəri yadda saxlayır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-14",
+    "question": "İki ədədin cəmini hesablayan proqramda \"A\" və \"B\" dəyişənlərinin olmasının üstünlüyü nədir?",
+    "options": {
+      "A": "Hər iki ədədi yaddaşda saxlamağa və üzərində əməliyyat aparmağa imkan verir",
+      "B": "Səhnəni daha rəngarəng edir",
+      "C": "Proqramın işləmə sürətini azaldır",
+      "D": "Klaviaturanı bağlayır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "dəyərləndirmə",
+    "explanation": "Dəyişənlər məlumatları (bu halda iki müxtəlif ədədi) yadda saxlamaq və onların üzərində riyazi əməliyyatlar aparmaq üçün lazımdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "16. Proqramda dəyişənlər",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-16-15",
+    "question": "Əgər proqramda həm A, həm də B dəyişəninə istifadəçidən alınan eyni \"cavab\" blokunu dərhal ard-arda mənimsətsək nə baş verər?",
+    "options": {
+      "A": "A və B dəyişənlərinin hər ikisi eyni qiyməti (ən son daxil edilən məlumatı) alar",
+      "B": "A və B fərqli qiymətlər alar",
+      "C": "Proqram xəta verər",
+      "D": "Dəyişənlərin adı silinər"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Çünki \"cavab\" blokunda sonuncu daxil edilən məlumat olur. Əgər istifadəçidən yeni məlumat istənilmədən hər iki dəyişənə \"cavab\" mənimsədilsə, ikisi də eyni qiymətə bərabər olacaq."
+  }
+]

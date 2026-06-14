@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-01",
+    "question": "İş masasında proqramın simgəsi varsa, onu necə başlatmaq olar?",
+    "options": {
+      "A": "Simgəni qoşa çıqqıldatmaqla",
+      "B": "Simgəni bir dəfə çıqqıldatmaqla",
+      "C": "Simgəni silməklə",
+      "D": "Simgəni kopyalamaqla"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Proqramın simgəsi İş masasında varsa, o, qoşa çıqqıltı vasitəsilə başladılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-02",
+    "question": "Tez başlatma zolağı harada yerləşir?",
+    "options": {
+      "A": "Tapşırıqlar zolağında, Start düyməsinin yanında",
+      "B": "İş masasının yuxarı küncündə",
+      "C": "Baş menyunun daxilində",
+      "D": "Qovluq pəncərəsinin mərkəzində"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Tapşırıqlar zolağında, Start düyməsinin yanında Tez başlatma zolağı yerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-03",
+    "question": "Tez başlatma zolağındakı proqramı başlatmaq üçün nə etmək lazımdır?",
+    "options": {
+      "A": "Simgəni yalnız bir dəfə çıqqıldatmaq kifayətdir",
+      "B": "Simgəni mütləq qoşa çıqqıldatmaq",
+      "C": "Simgəni İş masasına sürükləmək",
+      "D": "Üzərində sağ düyməni basıb Delete seçmək"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Əgər başlatmaq istədiyiniz proqramın simgəsi orada varsa, sadəcə, onu çıqqıldatmaq kifayətdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-04",
+    "question": "Faylın simgəsinin qısayol (shortcut) olduğunu nə bildirir?",
+    "options": {
+      "A": "Simgənin sol aşağı küncündə olan ox işarəsi",
+      "B": "Simgənin rənginin qırmızı olması",
+      "C": "Simgənin ölçüsünün daha böyük olması",
+      "D": "Simgənin sağ yuxarı küncündəki ulduz işarəsi"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Simgənin qısayol olduğunu onun sol aşağı küncündə olan ox işarəsi bildirir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-05",
+    "question": "Hər hansı faylın simgəsini qoşa çıqqıldatdıqda nə baş verir?",
+    "options": {
+      "A": "Uyğun proqram başladılır",
+      "B": "Fayl kompüterdən tamamilə silinir",
+      "C": "Faylın adı dəyişdirilir",
+      "D": "Faylın gizli surəti yaranır"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Hər hansı faylın simgəsini qoşa çıqqıldatmaqla da uyğun proqramı başlatmaq olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-06",
+    "question": "Faylın qısayolunu İş masasında yaratmaq üçün düzgün komanda ardıcıllığı hansıdır?",
+    "options": {
+      "A": "Sağ düymə -> Sent to -> Desktop (Create shortcut)",
+      "B": "Sol düymə -> Copy -> Desktop",
+      "C": "Sağ düymə -> Rename -> Desktop",
+      "D": "Start menyusu -> Create shortcut"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Siçanın sağ düyməsini çıqqıldadın və açılan kontekst menyusundan Sent to ⇨ Desktop (Create shortcut) komandasını seçin.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-07",
+    "question": "Hansı halda faylın qısayolunu yaratmaq istifadəçi üçün xüsusən əlverişlidir?",
+    "options": {
+      "A": "Fayl iç-içə yerləşmiş qovluqdadırsa və hər dəfə qovluğu açmaq yorucu olduqda",
+      "B": "Faylın həcmi çox böyük olduqda və kompüterin yaddaşını azaltdıqda",
+      "C": "Fayl virusa yoluxduqda və onu təmizləmək lazım gəldikdə",
+      "D": "Faylı internet vasitəsilə başqa kompüterə göndərmək istədikdə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "\"Əgər fayl iç-içə yerləşmiş qovluqdadırsa, hər dəfə onun yerləşdiyi qovluğu açmaq yorucu olur. Bu halda faylın yerləşdiyi yerə keçmədən də onu asanca başlatmaq olar. Bunun üçün iş masasında faylın qısayolu (shortcut) yaradılır...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-08",
+    "question": "Proqramın simgəsi İş masasında yoxdursa, onu qovluq pəncərəsindən necə başlatmaq olar?",
+    "options": {
+      "A": "Onun yerləşdiyi qovluğu açıb, simgəsini qoşa çıqqıldatmaqla",
+      "B": "Qovluğun üzərində sağ düyməni basıb Delete seçməklə",
+      "C": "Baş menyuya daxil olub qovluğun adını yazmaqla",
+      "D": "Qovluğu Tez başlatma zolağına sürükləməklə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "\"Proqramın simgəsi İş masasında yoxdursa, onun yerləşdiyi qovluğu açıb, simgəsini qoşa çıqqıldatmaqla başlatmaq olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-09",
+    "question": "Bəzən hər hansı faylın harada saxlandığını bilmədikdə hansı üsuldan yararlanmaq ən məqsədəuyğundur?",
+    "options": {
+      "A": "Start menyusunun və ya qovluq pəncərəsinin axtarış sahəsindən istifadə etmək",
+      "B": "Tez başlatma zolağındakı bütün simgələri bir-bir açmaq",
+      "C": "İş masasındakı qısayolları silmək",
+      "D": "Kompüteri yenidən işə salmaq"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "\"Bəzən hər hansı faylın harada saxlandığını bilmirsiniz. Bu halda müxtəlif axtarış üsullarından yararlanmaq olar. Start menyusunun və ya qovluq pəncərəsinin axtarış sahəsinin köməyi ilə lazım olan faylın necə tapılmasını araşdırın.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-10",
+    "question": "Kompüterdə quraşdırılmış hər bir proqramın adı harada mütləq əks olunur?",
+    "options": {
+      "A": "Baş menyuda",
+      "B": "Yalnız İş masasında",
+      "C": "Tez başlatma zolağında",
+      "D": "Kontekst menyusunda"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "\"Kompüterdə quraşdırılmış hər bir proqramın adı Baş menyuda əks olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-11",
+    "question": "Mətndə qeyd edilən proqram başlatma üsullarından hansı birbaşa sənəd faylı ilə əlaqəlidir və uyğun redaktorun avtomatik açılmasına səbəb olur?",
+    "options": {
+      "A": "Faylın simgəsini qoşa çıqqıldatmaqla",
+      "B": "Tez başlatma zolağından istifadə etməklə",
+      "C": "Baş menyudan proqramın adını axtarmaqla",
+      "D": "İş masasında proqram simgəsini çıqqıldatmaqla"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Hər hansı faylın simgəsini qoşa çıqqıldatmaqla da uyğun proqramı başlatmaq olar. Məsələn, mətn faylını qoşa çıqqıldatdıqda mətn redaktoru açılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-12",
+    "question": "Proqramların simgələri fərqli yerlərdə müxtəlif cür işə salınır. Aşağıdakı uyğunluqlardan hansı mətndəki qaydalara əsasən yanlışdır?",
+    "options": {
+      "A": "Tez başlatma zolağı – qoşa çıqqıltı ilə başlatmaq",
+      "B": "İş masası – qoşa çıqqıltı ilə başlatmaq",
+      "C": "Qovluq pəncərəsi – qoşa çıqqıltı ilə başlatmaq",
+      "D": "Baş menyu – adı tapıb çıqqıldatmaqla (bir dəfə) başlatmaq"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Tez başlatma zolağı... Əgər başlatmaq istədiyiniz proqramın simgəsi orada varsa, sadəcə, onu çıqqıldatmaq kifayətdir.\" (Qoşa çıqqıltıya ehtiyac yoxdur)."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-13",
+    "question": "Bir istifadəçi qovluqda yerləşən sənədinə hər dəfə asan daxil olmaq istəyir, lakin orijinal faylın həmin qovluqda qalması mütləqdir. Bu halda ən məqsədəuyğun addım hansıdır?",
+    "options": {
+      "A": "Faylın qısayolunu İş masasında yaratmaq",
+      "B": "Faylı İş masasına daşımaq (Move komandası ilə)",
+      "C": "Faylın adını dəyişdirmək",
+      "D": "Qovluğun özünü İş masasına köçürmək"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Əgər fayl iç-içə yerləşmiş qovluqdadırsa, hər dəfə onun yerləşdiyi qovluğu açmaq yorucu olur. Bu halda faylın yerləşdiyi yerə keçmədən də onu asanca başlatmaq olar. Bunun üçün iş masasında faylın qısayolu (shortcut) yaradılır...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-14",
+    "question": "Tez başlatma zolağı (Quick Launch) ilə İş masası (Desktop) arasındakı proqram başlatma fərqi barədə hansı fikir doğrudur?",
+    "options": {
+      "A": "Tez başlatma zolağındakı simgəni başlatmaq üçün sadəcə bir dəfə çıqqıldatmaq kifayətdir, İş masasında isə qoşa çıqqıltı lazımdır.",
+      "B": "Tez başlatma zolağında yalnız mətn faylları saxlanılır, İş masasında isə qovluqlar.",
+      "C": "İş masasında heç vaxt qısayol yaratmaq olmur, yalnız simgələr kopyalanır.",
+      "D": "Tez başlatma zolağında yerləşən proqramlar həmişə Baş menyudan silinir."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Proqramın simgəsi İş masasında varsa, o, qoşa çıqqıltı vasitəsilə başladılır.\" və \"Tez başlatma zolağı... Əgər başlatmaq istədiyiniz proqramın simgəsi orada varsa, sadəcə, onu çıqqıldatmaq kifayətdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "book_id": "informatika-6",
+    "pages": "Mətn",
+    "passport": "06-004-0101-B001-05-15",
+    "question": "Baş menyu (Start) və qovluq pəncərəsinin mətndə vurğulanan ortaq funksiyalarından biri nədir?",
+    "options": {
+      "A": "Hər ikisinin axtarış sahəsinin köməyi ilə lazım olan faylı tapmaq mümkündür",
+      "B": "Hər ikisi vasitəsilə yalnız proqramların simgələrini silmək olar",
+      "C": "Hər ikisində qısayol yaratmaq qadağandır",
+      "D": "Hər ikisi Tapşırıqlar zolağında yerləşir və eyni düymə ilə açılır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Start menyusunun və ya qovluq pəncərəsinin axtarış sahəsinin köməyi ilə lazım olan faylın necə tapılmasını araşdırın.\""
+  }
+]

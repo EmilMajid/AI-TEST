@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-01",
+    "question": "Təqdimat proqramında maket nəyə deyilir?",
+    "options": {
+      "A": "Slaydda olan elementlərin yerləşməsinə",
+      "B": "Təqdimatın animasiyalarının nizamlanmasına",
+      "C": "Slaydın ümumi rəng fonunun seçilməsinə",
+      "D": "Mətnlərin ölçüsünün təyin edilməsinə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Təqdimat proqramında maket dedikdə, slaydda olan elementlərin, məsələn, başlığın, mətnlərin, siyahıların, şəkil və diaqramların yerləşməsi nəzərdə tutulur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-02",
+    "question": "Təqdimata yeni slayd əlavə etmək üçün hansı menyu komandasından istifadə edilir?",
+    "options": {
+      "A": "Insert ⇨ New Slide",
+      "B": "Format ⇨ Slide",
+      "C": "File ⇨ New",
+      "D": "View ⇨ Slide"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Təqdimata yeni slayd artırılacaq və ona avtomatik olaraq əvvəlki slaydın maketi tətbiq olunacaq. Bunun üçün Insert ⇨ New Slide menyu komandasını seçin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-03",
+    "question": "Təqdimatın nümayişinə başlamaq üçün klaviaturada hansı düymədən istifadə olunur?",
+    "options": {
+      "A": "<F5>",
+      "B": "<Esc>",
+      "C": "<Enter>",
+      "D": "<Shift>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Nümayiş üçün ＜F5＞ klavişini basmaq, yaxud Slide Show ⇨ Slide Show menyu komandasını seçmək də olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-04",
+    "question": "Təqdimatın nümayişini istənilən zaman bitirmək üçün hansı klaviş basılmalıdır?",
+    "options": {
+      "A": "<Esc>",
+      "B": "<Enter>",
+      "C": "<Spacebar>",
+      "D": "<Alt>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "İstənilən zaman nümayişi bitirmək üçün ＜Esc＞ klavişini basın."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-05",
+    "question": "Təqdimatın nümayişi zamanı növbəti slayda keçmək üçün hansı klavişdən istifadə etmək olar?",
+    "options": {
+      "A": "<Spacebar>",
+      "B": "<Esc>",
+      "C": "<Shift>",
+      "D": "<Tab>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Növbəti slayda keçmək üçün ＜Spacebar＞ klavişini basın."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-06",
+    "question": "Başlıq slaydı (Title Slide) maketində doldurucu adlandırılan neçə mətn sahəsi olur?",
+    "options": {
+      "A": "İki",
+      "B": "Üç",
+      "C": "Bir",
+      "D": "Dörd"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "İş sahəsində başlıq slaydının maketi açılacaq. Bu slaydda doldurucu adlandırılan iki mətn sahəsi var."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-07",
+    "question": "Təqdimat faylını yadda saxlamaq üçün hansı menyu komandası seçilməlidir?",
+    "options": {
+      "A": "File ⇨ Save As",
+      "B": "Edit ⇨ Save",
+      "C": "Insert ⇨ Save",
+      "D": "View ⇨ Save As"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Təqdimat faylını saxlamaq üçün File ⇨ Save As menyu komandasını seçin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-08",
+    "question": "Başlığın və ya siyahı elementinin yazılışında hansı qaydaya əməl edilməlidir?",
+    "options": {
+      "A": "Sonunda nöqtə qoyulmur",
+      "B": "Həmişə böyük hərflərlə yazılır",
+      "C": "Yalnız rəngli hərflərlə yazılır",
+      "D": "Mütləq nömrələnir"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Yadda saxlayın ki, başlığın, yaxud siyahı elementinin sonunda nöqtə qoyulmur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-09",
+    "question": "Yeni yaradılmış slayd təqdimatda hansı mövqedə yerləşdirilir?",
+    "options": {
+      "A": "Aktiv (seçdirilmiş) slayddan sonra",
+      "B": "Təqdimatın ən əvvəlində",
+      "C": "Təqdimatın ən sonunda",
+      "D": "Aktiv slayddan əvvəl"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Yeni slayd həmişə aktiv (seçdirilmiş) slayddan sonra qoyulur, ancaq slaydların ardıcıllığını istənilən zaman dəyişdirmək olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-10",
+    "question": "Təqdimatın hazırlanması zamanı hər bir slaydda toxunulacaq məsələlərin sayının maksimum nə qədər olması məqsədəuyğundur?",
+    "options": {
+      "A": "5-dən çox olmaması",
+      "B": "10-dan çox olmaması",
+      "C": "3-dən az olmaması",
+      "D": "7-yə qədər olması"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Hər bir slaydda toxunulacaq məsələlərin sayının 5-dən çox olmaması məqsədəuyğundur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-11",
+    "question": "Doldurucu nə zaman mətn obyektinə çevrilir?",
+    "options": {
+      "A": "Mətn daxil etdikdən sonra",
+      "B": "Üzərində siçanın düyməsi sıxıldıqda",
+      "C": "Təqdimat yadda saxlanıldıqda",
+      "D": "Maket dəyişdirildikdə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətn daxil etdikdən sonra doldurucu mətn obyektinə çevrilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-12",
+    "question": "Təqdimatın nümayişinə başlamaq üçün Slide Show menyusundan hansı komandanı seçmək olar?",
+    "options": {
+      "A": "Slide Show ⇨ Slide Show",
+      "B": "Slide Show ⇨ View",
+      "C": "Slide Show ⇨ Start",
+      "D": "Slide Show ⇨ Play"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Nümayiş üçün ＜F5＞ klavişini basmaq, yaxud Slide Show ⇨ Slide Show menyu komandasını seçmək də olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-13",
+    "question": "Təqdimatın hazırlanması zamanı mənbələr harada göstərilməlidir?",
+    "options": {
+      "A": "Sonuncu slaydda",
+      "B": "Birinci slaydda",
+      "C": "Hər slaydın aşağısında",
+      "D": "Əlavə olunmuş mətn sənədində"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Sonuncu slaydda istifadə olunan mənbələri göstərin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-14",
+    "question": "Təqdimat proqramında Layouts (Maketlər) paneli harada yerləşir?",
+    "options": {
+      "A": "Sağ hissədəki Tapşırıqlar panelində",
+      "B": "Baş pəncərənin sol tərəfindəki zolaqda",
+      "C": "Alətlər panelinin mərkəzində",
+      "D": "Vəziyyət sətrində"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Proqramın baş pəncərəsinin sağ hissəsində Tapşırıqlar paneli (Tasks pane) açılır. Bu panel bir neçə səhifədən ibarətdir. Onlardan biri də Layouts (Maketlər) panelidir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Slaydlarla iş",
+    "book_id": "informatika-6",
+    "pages": "10",
+    "passport": "06-004-0101-B001-10-15",
+    "question": "Doldurucuya mətn daxil etməyin mümkün olduğunu nə bildirir?",
+    "options": {
+      "A": "Doldurucunun ətrafında yaranan seçdirmə çərçivəsi",
+      "B": "Kursorun qırmızı rəngdə yanıb-sönməsi",
+      "C": "Doldurucunun rənginin dəyişməsi",
+      "D": "Siçanın göstəricisinin ox formasını alması"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Doldurucunun ətrafında seçdirmə çərçivəsi yaranacaq ki, bu da ora mətn daxil etməyin mümkünlüyünü göstərir."
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Ağciyər balığı əsasən harada yaşayır?",
+    "options": {
+      "A": "Afrikanın palçıqlı çaylarında",
+      "B": "Asiyanın şirin sularında",
+      "C": "Avstraliyanın duzlu göllərində",
+      "D": "Şimali Amerikanın sahil sularında"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Ağciyər balığı Afrikanın palçıqlı çaylarında rast gəlinənqeyri-adi balıqdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Xəstəliklərin yayılmasının qarşısını almaq üçün asqırarkən və ya öskürərkən nə etmək lazımdır?",
+    "options": {
+      "A": "Ağzınızı və burnunuzu salfetlə örtmək",
+      "B": "Üzünüzü əllərinizlə tamamilə bağlamaq",
+      "C": "Su ilə ağzı və burnu dərhal yumaq",
+      "D": "Otağın pəncərəsini dərhal açmaq"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd edilir: \"Asqırarkən və ya öskürərkənağzınızı və burnunuzusalfetlə örtün\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Suiti, balina və delfin kimi su məməliləri havadakı oksigenlə necə tənəffüs edirlər?",
+    "options": {
+      "A": "Ağciyərləri vasitəsilə",
+      "B": "Qəlsəmələri vasitəsilə",
+      "C": "Dəriləri vasitəsilə",
+      "D": "Xüsusi hava kisələri vasitəsilə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Suiti, balina və delfin kimi su məməliləri suda yaşasalar da, ağciyərləri vasitəsilə havadakıoksigenlə tənəffüs edirlər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Xəstə adamlar danışdıqda, öskürdükdə və ya asqırdıqda patogenlər hansı yolla yayılır?",
+    "options": {
+      "A": "Hava-damcı yolu ilə",
+      "B": "Fiziki təmas yolu ilə",
+      "C": "Qida vasitəsilə",
+      "D": "Çirkab suları vasitəsilə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Hava-damcı yolu ilə yayılma Xəstə adamlar danışdıqda, öskürdükdə və ya asqırdıqda adi gözləgörünməyən və içərisində patogenlər olan milyonlarla kiçik sudamcıları havaya yayılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Marketlərdəki şüşə vitrinlərin qida məhsulları üçün hansı funksiyası var?",
+    "options": {
+      "A": "Müştərilərin qida məhsullarına birbaşa təmasının qarşısını alır",
+      "B": "Qidaların uzun müddət isti qalmasını təmin edir",
+      "C": "Qida məhsullarının rəngini daha parlaq göstərir",
+      "D": "Məhsulların daha tez satılmasına kömək edir"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Şüşə vitrinlər müştərilərin qidaməhsullarına birbaşa təmasınınqarşısını alır, onları milçəklərdənqoruyur, öskürək və asqırmazamanı damcıların qidanın üzərinədüşməsinə mane olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Su məməliləri suyun altında olduqları zaman burun və ya tənəffüs dəliklərinə suyun daxil olmasının qarşısını necə alırlar?",
+    "options": {
+      "A": "Xüsusi əzələləri burun və ya tənəffüs dəliklərini bağlayır",
+      "B": "Suyu ağız boşluğundan geri xaric edirlər",
+      "C": "Tənəffüs dəliklərini seliklə örtürlər",
+      "D": "Dərilərindəki məsamələri daraldırlar"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Suyun altındaolduqları zaman suyun daxil olmasının qarşısını almaq üçün xüsusi əzələləri burun və ya tənəffüs dəliklərinibağlayır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "İnfeksion xəstəliklər fiziki təmas yolu ilə hansı hallarda baş verir?",
+    "options": {
+      "A": "Sağlam adamla infeksion xəstəliyə yoluxmuş adamlar arasında birbaşa təmas olduqda",
+      "B": "Xəstə insanların olduğu otağın havasını udduqda",
+      "C": "Yalnız çirkab suları ilə yuyulmuş meyvələri yedikdə",
+      "D": "Məsafə saxlamadan xəstələrlə eyni mühitdə dayandıqda"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Fiziki təmas yolu ilə yayılma Sağlam adamla infeksion xəstəliyə yoluxmuş adamlar arasındabirbaşa təmas olduqda baş verir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Ağciyər balığı suda nəfəs almaq üçün hansı orqanlardan istifadə edir?",
+    "options": {
+      "A": "Qəlsəmələrdən",
+      "B": "Ağciyərlərdən",
+      "C": "Dəri örtüyündən",
+      "D": "Burun dəliklərindən"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Hər hansı digər balıq kimi suda nəfəsalmaq üçün qəlsəmələrdən istifadə edir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Fiziki təmas yolu ilə infeksion xəstəliklərin dolayısı ilə yayılmasına nə səbəb ola bilər?",
+    "options": {
+      "A": "Yoluxmuş şəxsin şəxsi əşyaları ilə təmasda olmaq",
+      "B": "Xəstə şəxslə qısa müddətli söhbət etmək",
+      "C": "Yoluxmuş insanın öskürdüyü otaqda oturmaq",
+      "D": "Gigiyenik qaydalara riayət edilməmiş qidalar yemək"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Belə xəstəliklər həmçinin yoluxmuşşəxsin qan və ya digər bədən mayeləri (tüpürcək, sidik), habelədolayı yolla şəxsi əşyaları ilə təmasda olduqda da yayıla bilər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "İçməli su vasitəsilə patogenlərlə yoluxma hansı halda daha təhlükəli hesab olunur?",
+    "options": {
+      "A": "İçməli su hövzələrinə çirkab suları qarışdıqda",
+      "B": "Sular xüsusi süzgəcdən keçirilmədikdə",
+      "C": "Su açıq havada uzun müddət qaldıqda",
+      "D": "Çay suları birbaşa istehlak edildikdə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"İçməli su hövzələrinə (su quyularına, çaylara və s.) çirkab sularıqarışdıqda da patogenlərlə yoluxma baş verə bilər ki, bu dahatəhlükəli hesab olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Su məməlilərinin havadan oksigen qəbul etməsini təmin edən burun və tənəffüs dəlikləri harada yerləşir?",
+    "options": {
+      "A": "Ağızlarının bir qədər yuxarısında və başlarının üst hissəsində",
+      "B": "Ağız boşluğunun daxilində və qəlsəmə yarıqlarında",
+      "C": "Bədənlərinin yan tərəflərində və qarın hissəsində",
+      "D": "Boğaz nahiyəsində və ağızlarının kənarında"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Bu heyvanların ağızlarının bir qədər yuxarısındaburun dəliklərivə yabaşlarının üsthissəsində tənəffüs dəliklərivar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Ağciyər balığı havadakı oksigeni qəbul etmək üçün hansı orqana malikdir?",
+    "options": {
+      "A": "Bir cüt ağciyərə",
+      "B": "Xüsusi hava kisələrinə",
+      "C": "Dərialtı kapilyar şəbəkəsinə",
+      "D": "Su səthinə çıxan tənəffüs borularına"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Bununla birlikdə, hava ilə nəfəs almaq üçün bir cüt ağciyəri də var.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Hava-damcı yolu ilə yayılan xəstəliklərdə sağlam orqanizm necə yoluxur?",
+    "options": {
+      "A": "Damcılar həmin adamın tənəffüs orqanlarına daxil olaraq onu xəstələndirir",
+      "B": "Xəstənin bədən mayeləri ilə birbaşa əlaqədə olduqda",
+      "C": "Qida məhsulları üzərinə düşmüş virusları qəbul etdikdə",
+      "D": "İnsanın şəxsi əşyalarındakı mikroorqanizmlərlə təmas nəticəsində"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Ətrafdakı sağlam adam nəfəs aldıqda bu damcılar həmin adamıntənəffüs orqanlarına daxil olaraq onu da xəstələndirir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Qida vasitəsilə patogenlərin yayılmasına və insanların xəstələnməsinə səbəb olan əsas insan faktoru nədir?",
+    "options": {
+      "A": "İnsanların təmizlik qaydalarına etinasız yanaşması",
+      "B": "Qidaların çox yüksək temperaturda bişirilməsi",
+      "C": "Məhsulların vaxtında anbarlara daşınmaması",
+      "D": "Fabriklərdəki hava dövriyyəsinin düzgün qurulmaması"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Ərzaq dükanlarında, qida emalı fabriklərində və mətbəxdə işləyəninsanların təmizlik qaydalarına etinasız yanaşması patogenlərinyayılmasına və yüzlərlə insanların xəstələnməsinə səbəb ola bilər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "book_id": "tebiet-6",
+    "pages": "Mətn",
+    "passport": "06-003-0101-B003-04-",
+    "question": "Ümumilikdə infeksion xəstəliklərin yayılması necə baş verir?",
+    "options": {
+      "A": "Patogenlərin yoluxmuş orqanizmdən sağlam orqanizmə ötürülməsi yolu ilə",
+      "B": "Havada yaranan yeni mikroorqanizmlərin orqanizmə daxil olması ilə",
+      "C": "İnsanın uzun müddət susuz qalması nəticəsində immunitetin zəifləməsi ilə",
+      "D": "Qida çatışmazlığından yaranan daxili infeksiyalar nəticəsində"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"İnfeksion xəstəliklərin yayılması patogenlərin yoluxmuşorqanizmdən sağlam orqanizmə ötürülməsi yolu ilə baş verir.\""
+  }
+]

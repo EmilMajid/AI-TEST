@@ -1,0 +1,295 @@
+const fs = require('fs');
+
+const tests = [
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-01",
+    "question": "Aşağıdakılardan hansında müqavimət qüvvəsinin artırılması məqsədəuyğundur?",
+    "options": {"A": "Paraşüt hazırlayarkən", "B": "Sualtı qayıq hazırlayarkən", "C": "Yarış avtomobili düzəldərkən", "D": "Təyyarə dizaynında"},
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Paraşütün funksiyası enişi yavaşlatmaqdır, bunun üçün də havanın müqavimət qüvvəsi artırılmalıdır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-02",
+    "question": "Buzlu və asfalt yol müqayisəsində avtomobil hansı yolda daha asan sürüşmədən hərəkət edər?",
+    "options": {"A": "Buzlu yolda", "B": "Asfalt yolda", "C": "Hər ikisində eynidir", "D": "Hava şəraitindən asılıdır"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Asfalt yolda səth daha kələ-kötür olduğu üçün sürtünmə daha çoxdur və sürüşmədən hərəkət etmək asandır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-03",
+    "question": "Buzlu yolda sürüşməni azaltmaq və hərəkəti təhlükəsizləşdirmək üçün aşağıdakılardan hansını etmək olar?",
+    "options": {"A": "Yola su tökmək", "B": "Yola yağ tökmək", "C": "Təkərlərə zəncir bağlamaq və ya yola qum səpmək", "D": "Avtomobilin kütləsini azaltmaq"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Zəncir və ya qum səthdəki girinti-çıxıntını (sürtünməni) artıraraq avtomobilin sürüşməsinin qarşısını alır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-04",
+    "question": "Qayığa təsir edən Arximed qüvvəsi 300 N olarsa və o, suda hərəkətsiz qalaraq üzürsə, qayığın kütləsi təqribən nə qədərdir? (g = 10 N/kq)",
+    "options": {"A": "3 kq", "B": "30 kq", "C": "300 kq", "D": "3000 kq"},
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "tətbiq",
+    "explanation": "Qayıq suda üzürsə, Arximed qüvvəsi (300 N) ağırlıq qüvvəsinə (F=mg) bərabərdir. 300 = m * 10, m = 30 kq. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-05",
+    "question": "Ördək gölə eniş edərək dayanır. Eniş edərkən (hərəkət edərkən) ördəyin hərəkətinin əksinə yönələn əsas qüvvə hansıdır?",
+    "options": {"A": "Ağırlıq qüvvəsi", "B": "Cazibə qüvvəsi", "C": "Suyun və havanın müqavimət (sürtünmə) qüvvəsi", "D": "Arximed qüvvəsi"},
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Hərəkət edən cismin hərəkətinin əksinə yönələn və sürətini azaldan qüvvə mühitin müqavimət qüvvəsidir. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-06",
+    "question": "Ördək suyun səthində hərəkətsiz dayandıqda ona hansı qüvvələr təsir edir və onlar hansı vəziyyətdədir?",
+    "options": {"A": "Ağırlıq və Arximed qüvvəsi təsir edir, onlar bir-birini tarazlaşdırır", "B": "Yalnız Arximed qüvvəsi təsir edir", "C": "Ağırlıq və sürtünmə təsir edir", "D": "Onlar tarazlaşmayan qüvvələrdir"},
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "təhlil",
+    "explanation": "Hərəkətsiz (dayanmış) ördəyi aşağı çəkən ağırlıq və yuxarı itələyən Arximed qüvvəsi bir-birini tarazlaşdırır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-07",
+    "question": "İrəliyə doğru bərabərsürətli hərəkət edən avtomobil hansı qüvvələrin təsiri altındadır?",
+    "options": {"A": "Sıfır qüvvə", "B": "Tarazlaşmayan qüvvələr", "C": "Tarazlaşan qüvvələr", "D": "Yalnız ağırlıq qüvvəsi"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Əgər hərəkət bərabərsürətlidirsə (sürət dəyişmirsə), deməli itələyici və müqavimət qüvvələri bir-birini tarazlaşdırır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-08",
+    "question": "Nə üçün buzlu yola yağ tökmək hərəkəti asanlaşdırmaq əvəzinə daha da təhlükəli edər?",
+    "options": {"A": "Yağ buzu əridir", "B": "Yağ səthdəki onsuz da az olan girinti-çıxıntını dolduraraq sürtünməni daha da azaldır və sürüşməni artırır", "C": "Yağ avtomobili ağırlaşdırır", "D": "Yağ maqnit qüvvəsi yaradır"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Buzlu yolda sürtünməni artırmaq lazımdır. Yağ isə sürtünməni daha da azaltdığı üçün sürüşmə riski çoxalır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-09",
+    "question": "Əgər suda üzən gəmiyə təsir edən ağırlıq qüvvəsi qəfildən (yük artdığı üçün) Arximed qüvvəsindən çox olarsa, nə baş verər?",
+    "options": {"A": "Gəmi sürətlənər", "B": "Gəmi yuxarı sıçrayar", "C": "Gəmi suyun dibinə batar", "D": "Hərəkətsiz qalar"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Aşağıya yönələn ağırlıq qüvvəsi yuxarı itələyən Arximed qüvvəsindən böyük olarsa (tarazlaşmayan qüvvə), gəmi aşağıya doğru hərəkət edər və batar. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-10",
+    "question": "Oyuncaq maşın yerində hərəkətsiz dayanıbsa, ona təsir edən irəli itələmə və sürtünmə qüvvələri haqqında nə demək olar?",
+    "options": {"A": "Sürtünmə yoxdur", "B": "İtələmə qüvvəsi daha çoxdur", "C": "Heç bir itələmə qüvvəsi tətbiq olunmur və ya tətbiq olunan qüvvə sükunət sürtünməsini (tarazlığı) aşa bilmir", "D": "Maşın çəkisini itirib"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Əgər hərəkət yoxdursa, qüvvələr tarazlıqdadır. Tətbiq edilən qüvvə sürtünməni üstələyə bilmir. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-11",
+    "question": "Suda yaşayan canlıların (məsələn, balıqların) və gəmilərin uclarının sivri olması qüvvələr baxımından nəyə xidmət edir?",
+    "options": {"A": "Ağırlıq qüvvəsini artırmağa", "B": "Arximed qüvvəsini azaltmağa", "C": "Suyun müqavimət qüvvəsini (sürtünməni) azaltmağa", "D": "Cazibə qüvvəsindən xilas olmağa"},
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Cisimlərin aerodinamik və ya hidrodinamik formada olması mühitin müqavimətini azaldır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-12",
+    "question": "Ördək gölə eniş edərkən ayaqlarını irəli uzadır və qanadlarını açır. Bu hərəkətin fiziki mənası nədir?",
+    "options": {"A": "Öz kütləsini artırır", "B": "Səth sahəsini artıraraq havanın və suyun müqavimət qüvvəsini artırır və sürətini azaldaraq asan eniş edir", "C": "Ağırlıq qüvvəsini yox edir", "D": "Arximed qüvvəsini artırır"},
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Paraşüt məntiqi ilə səth sahəsini böyütmək hava/su müqavimətini artırır və tormozlanmanı təmin edir. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-13",
+    "question": "Tarazlaşmayan qüvvələr mütləq olaraq cismin hansı fiziki xüsusiyyətini dəyişdirir?",
+    "options": {"A": "Rəngini", "B": "Kütləsini", "C": "Sürətini (və ya hərəkət istiqamətini)", "D": "Həcmini"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Tarazlaşmayan qüvvələrin (əvəzləyici qüvvə) ən əsas xüsusiyyəti cismin sürətini (artırmaq/azaltmaq) və ya hərəkət istiqamətini dəyişməsidir. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-14",
+    "question": "Fiziki məşq (qaçış) zamanı insanın tənəffüs və ürək döyüntüsünün sürətlənməsinin əsas səbəbi (növbəti bölməyə giriş olaraq) nədir?",
+    "options": {"A": "Orqanizmin ağırlığının artması", "B": "Müqavimət qüvvəsinin yoxa çıxması", "C": "Orqanizmin daha çox oksigen və qidaya tələbatının yaranması", "D": "Qanın azalması"},
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Dərslikdəki keçid mətninə əsasən, fiziki hərəkət zamanı hüceyrələrin oksigen və qida tələbatı artdığı üçün ürək və ağciyərlər daha sürətli işləyir. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar / Bölmə 2 giriş."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-15",
+    "question": "Bir qutuya şərqə doğru 40 N, qərbə doğru 30 N və şimala doğru 0 N qüvvə təsir edir. Bu cismin hərəkəti necə olacaq?",
+    "options": {"A": "Şərqə doğru sürətlənəcək", "B": "Qərbə doğru sürətlənəcək", "C": "Hərəkətsiz qalacaq", "D": "Şimala doğru gedəcək"},
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Şərqə 40 N, qərbə 30 N. Əvəzləyici qüvvə 10 N şərqə doğru olacaq. Tarazlaşmayan qüvvə şərqə yönəldiyi üçün qutu şərqə sürətlənəcək. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-16",
+    "question": "Sürətlə hərəkət edən avtomobilin sürücüsü qəfildən tormoz verdikdə avtomobilə təsir edən qüvvələr hansı vəziyyətə gəlir?",
+    "options": {"A": "İrəli itələmə qüvvəsi kəskin artır", "B": "Sürtünmə (müqavimət) qüvvəsi hərəkət (ətalət) istiqamətindəki qüvvəni üstələyir (tarazlaşmayan qüvvə yaranır) və avtomobili yavaşladır", "C": "Ağırlıq qüvvəsi çoxalır", "D": "Bütün qüvvələr tarazlaşır"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Tormoz zamanı təkərlərlə yol arasındakı sürtünmə qüvvəsi kəskin artır, əks istiqamətdəki tarazlaşmayan qüvvə cismin sürətini azaldır. Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-17",
+    "question": "Fəsil ərzində öyrəndiyimiz qüvvələrdən (Ağırlıq, Arximed, Sürtünmə) hansının istiqaməti həmişə cismin hərəkətindən asılı olmayaraq eyni qalır?",
+    "options": {"A": "Arximed qüvvəsi", "B": "Ağırlıq qüvvəsi", "C": "Sürtünmə qüvvəsi", "D": "Müqavimət qüvvəsi"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Ağırlıq qüvvəsi cismin hərəkətindən asılı olmayaraq həmişə Yerin mərkəzinə (aşağı) doğru yönəlir. Sürtünmə və müqavimət isə hərəkətin əksinə yönəlir (dəyişir). Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  },
+  {
+    "grade": 6,
+    "subject": "Təbiət",
+    "topic": "Ümumiləşdirici tapşırıqlar (Qüvvələr)",
+    "book_id": "tebiet-6-h1",
+    "pages": "N/A",
+    "passport": "06-003-H1-T06-18",
+    "question": "Təsəvvür edin ki, kosmosda qravitasiyanın (ağırlıq qüvvəsinin) və havanın (müqavimətin) olmadığı bir yerdəsiniz. Siz topu itələsəniz nə baş verər?",
+    "options": {"A": "Top dərhal dayanar", "B": "Top sabit sürətlə sonsuza qədər hərəkətini davam etdirər (çünki onu saxlayan heç bir qüvvə yoxdur)", "C": "Top aşağıya düşər", "D": "Topun kütləsi itər"},
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "qiymətləndirmə",
+    "explanation": "Təsir edən xarici qüvvələr (sürtünmə, qravitasiya) yoxdursa, verilən ilk itələmə (sürət) hesabına cisim bərabərsürətli düzxətli hərəkətini sonsuza qədər davam etdirər. (Nyutonun 1-ci qanunu məntiqi). Təkrar üçün: Dərslik Ümumiləşdirici tapşırıqlar."
+  }
+];
+
+fs.mkdirSync('data/tebiet6_prompts/generated', { recursive: true });
+fs.writeFileSync('data/tebiet6_prompts/generated/tebiet-6-h1-t06.json', JSON.stringify(tests, null, 2));
+
+let offline = [];
+if (fs.existsSync('data/offline_tests.json')) {
+  try { 
+      const parsed = JSON.parse(fs.readFileSync('data/offline_tests.json', 'utf8')); 
+      if (Array.isArray(parsed)) offline = parsed;
+  } catch(e){}
+}
+offline.push(...tests);
+fs.writeFileSync('data/offline_tests.json', JSON.stringify(offline, null, 2));
+
+let md = `\n## Mövzu: Ümumiləşdirici tapşırıqlar (Qüvvələr)\n\n`;
+tests.forEach(t => {
+  md += `**Sual (${t.passport}):** ${t.question}\n`;
+  md += `- A) ${t.options.A}\n`;
+  md += `- B) ${t.options.B}\n`;
+  md += `- C) ${t.options.C}\n`;
+  md += `- D) ${t.options.D}\n`;
+  md += `**Doğru Cavab:** ${t.answer}\n`;
+  md += `**Çətinlik:** ${t.difficulty} | **Bloom:** ${t.bloom}\n`;
+  md += `**İzahat:** ${t.explanation}\n\n`;
+});
+
+const deskDir = 'C:\\Users\\User\\OneDrive\\Desktop\\6-cı sinif testləri';
+if (!fs.existsSync(deskDir)) fs.mkdirSync(deskDir, {recursive: true});
+fs.appendFileSync(deskDir + '\\Təbiət_6_testləri_Fesil1.md', md);
+
+let q = JSON.parse(fs.readFileSync('data/test_generation_queue_tebiet6.json', 'utf8'));
+const idx = q.findIndex(x => x.topic_id === 'tebiet-6-h1-t06');
+if(idx > -1) {
+  q[idx].status = 'done';
+  q[idx].generated_count = tests.length;
+}
+fs.writeFileSync('data/test_generation_queue_tebiet6.json', JSON.stringify(q, null, 2));
+
+console.log('T06 generated successfully.');

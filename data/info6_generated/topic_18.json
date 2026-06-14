@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-01",
+    "question": "ALPLogo mühitində dövr yaratmaq üçün hansı komandadan istifadə olunur?",
+    "options": {
+      "A": "təkrarla",
+      "B": "dön",
+      "C": "başla",
+      "D": "dayan"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "ALPLogo mühitində də dövr yaratmaq üçün təkrarla komandasından istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-02",
+    "question": "Dövrlərin tətbiqi alqoritmin yazılışına necə təsir göstərir?",
+    "options": {
+      "A": "Alqoritmin yazılışını qısaldır",
+      "B": "Alqoritmin yazılışını uzadır",
+      "C": "Alqoritmdə xətalar yaradır",
+      "D": "Heç bir təsir göstərmir"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Dövrlər alqoritmin yazılışını qısaldır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-03",
+    "question": "\"təkrarla n [...]\" komandasında \"n\" nəyi bildirir?",
+    "options": {
+      "A": "Təkrarlanmaların sayını",
+      "B": "Dönmə bucağını",
+      "C": "Xəttin uzunluğunu",
+      "D": "Bağanın sürətini"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Burada n – təkrarlanmaların sayını bildirir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-04",
+    "question": "Təkrarlanan komandalar hansı mötərizənin içərisində göstərilir?",
+    "options": {
+      "A": "Kvadrat mötərizənin",
+      "B": "Dairəvi mötərizənin",
+      "C": "Fiqurlu mötərizənin",
+      "D": "Bucaq mötərizənin"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Kvadrat mötərizənin içərisində isə təkrarlanan komandalar göstərilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-05",
+    "question": "Düzgün çoxbucaqlı dedikdə necə fiqurlar nəzərdə tutulur?",
+    "options": {
+      "A": "Tərəfləri və bucaqları eyni olan",
+      "B": "Yalnız tərəfləri eyni olan",
+      "C": "Yalnız bucaqları eyni olan",
+      "D": "Heç bir tərəfi bərabər olmayan"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Düzgün çoxbucaqlı dedikdə tərəfləri və bucaqları eyni olan fiqurlar nəzərdə tutulur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-06",
+    "question": "Kvadrat çəkərkən bağanın tam dövrə vurması üçün o, neçə dəfə dönməlidir və dönmə bucağı nə qədər olur?",
+    "options": {
+      "A": "Dörd dəfə dönərək tam dövrə vurur və dönmə bucağı 90 dərəcə olur (360 : 4 = 90)",
+      "B": "Dörd dəfə dönərək tam dövrə vurur və dönmə bucağı 60 dərəcə olur (360 : 6 = 60)",
+      "C": "Üç dəfə dönərək tam dövrə vurur və dönmə bucağı 120 dərəcə olur (360 : 3 = 120)",
+      "D": "Beş dəfə dönərək tam dövrə vurur və dönmə bucağı 72 dərəcə olur (360 : 5 = 72)"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Kvadrat çəkərkən o, dörd dəfə dönərək tam dövrə vurur. Onda dönmə bucağını belə hesablamaq olar: 360 : 4 = 90."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-07",
+    "question": "Düzgün beşbucaqlı çəkmək üçün Bağa hər dəfə hansı dərəcəli bucaq qədər dönməlidir?",
+    "options": {
+      "A": "72",
+      "B": "60",
+      "C": "90",
+      "D": "120"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Düzgün beşbucaqlı çəkmək üçün Bağa hər dəfə 72 (360 : 5 = 72) dərəcəli bucaq qədər dönəcək."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-08",
+    "question": "\"təkrarla 4[irəli 100 sağa 90]\" komandası hansı fiquru çəkəcək?",
+    "options": {
+      "A": "Tərəfi 100 olan kvadrat",
+      "B": "Tərəfi 90 olan kvadrat",
+      "C": "Tərəfi 100 olan altıbucaqlı",
+      "D": "Tərəfi 100 olan üçbucaq"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Aşağıda solda ALPLogo proqramlaşdırma mühitində tərəfi 100 olan kvadrat çəkən proqramın... təkrarla 4[irəli 100 sağa 90]"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-09",
+    "question": "Altıbucaqlı çəkmək üçün dönmə bucağı necə hesablanır və nə qədər olur?",
+    "options": {
+      "A": "360 : 6 = 60",
+      "B": "360 : 4 = 90",
+      "C": "360 : 5 = 72",
+      "D": "360 : 3 = 120"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Altıbucaqlı halında dönmə bucağı 60 olacaq (360 : 6 = 60)."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-10",
+    "question": "\"təkrarla\" komandasında istifadə edilən təkrarlanan komandaların yazılışı barədə hansı ifadə doğrudur?",
+    "options": {
+      "A": "Bu komandaları bir sətirdə də yazmaq olar.",
+      "B": "Bu komandalar mütləq fərqli sətirlərdə yazılmalıdır.",
+      "C": "Hər komanda yalnız dörd dəfə təkrarlana bilər.",
+      "D": "Kvadrat mötərizə içərisində yalnız bir komanda yazıla bilər."
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Bu komandaları bir sətirdə də yazmaq olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-11",
+    "question": "Düzgün çoxbucaqlı çəkən zaman bağanın başlanğıc və son vəziyyəti haqqında verilmiş fikirlərdən hansı doğrudur?",
+    "options": {
+      "A": "Bağanın başlanğıc və son vəziyyəti üst-üstə düşür.",
+      "B": "Bağa hərəkətini sona çatdıranda başlanğıc nöqtəsindən uzaqda yerləşir.",
+      "C": "Bağanın son vəziyyəti yalnız altıbucaqlıda başlanğıc nöqtə ilə üst-üstə düşür.",
+      "D": "Başlanğıc və son vəziyyət arasında 90 dərəcəlik fərq olur."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Diqqət edin ki, kvadrat çəkərkən Bağa hərəkətini başladığı nöqtədə də sona çatdırır. Yəni Bağanın başlanğıc və son vəziyyəti üst-üstə düşür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-12",
+    "question": "Düzgün üçbucaq çəkmək üçün dönmə bucağı nəyə bərabərdir və bu necə tapılır?",
+    "options": {
+      "A": "Dönmə bucağı 120 dərəcədir, 360 : 3 = 120 düsturu ilə tapılır",
+      "B": "Dönmə bucağı 60 dərəcədir, 180 : 3 = 60 düsturu ilə tapılır",
+      "C": "Dönmə bucağı 90 dərəcədir, 270 : 3 = 90 düsturu ilə tapılır",
+      "D": "Dönmə bucağı 72 dərəcədir, 360 : 5 = 72 düsturu ilə tapılır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Çoxbucaqlı: Üçbucaq, Təpələrin sayı: 3, Təpədə dönmə bucağı: 360 : 3 =120"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-13",
+    "question": "\"təkrarla 10[ irəli 60 sağa 36]\" proqramı haqqında deyilənlərdən hansı doğrudur?",
+    "options": {
+      "A": "Bağa 10 dəfə 60 addım irəli gedib 36 dərəcə sağa dönəcək və düzgün onbucaqlı çəkəcək.",
+      "B": "Bağa 36 dəfə 10 addım irəli gedib 60 dərəcə sağa dönəcək.",
+      "C": "Bağa çevrə çəkmək üçün 60 dərəcə bucaq altında dönəcək.",
+      "D": "Bağa yalnız düz xətt çəkərək hərəkətini tamamlayacaq."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "təkrarla 10[ irəli 60 sağa 36] komandasında 10 dəfə təkrarlanma və 36 dərəcə dönmə var. 360:10=36 düzgün onbucaqlı verir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-14",
+    "question": "ALPLogo mühitində təkrarla komandasının düzgün sintaksisi (ümumi şəkli) necə verilib?",
+    "options": {
+      "A": "təkrarla n [ komanda 1 komanda 2 . . . ]",
+      "B": "təkrarla ( komanda 1 komanda 2 . . . ) n",
+      "C": "təkrarla n { komanda 1 komanda 2 . . . }",
+      "D": "dövr n [ komanda 1 komanda 2 . . . ]"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "ALPLogo mühitində dövr komandasının ümumi şəkli aşağıdakı kimidir: təkrarla n [ komanda 1 komanda 2 . . . ]"
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı göstərilməyib",
+    "passport": "06-004-0101-B001-18-15",
+    "question": "\"təkrarla 36[ irəli 20 sağa 10]\" proqramının nəticəsi fiqur olaraq nəyə daha çox bənzəyir?",
+    "options": {
+      "A": "Çevrəyə",
+      "B": "Üçbucağa",
+      "C": "Kvadrata",
+      "D": "Düz xəttə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Sizcə, nəyə görə ikinci proqramın nəticəsində Bağa çevrə çəkir? b qələmiendir təkrarla 36[ irəli 20 sağa 10]"
+  }
+]

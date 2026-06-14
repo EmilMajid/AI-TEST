@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-1-01",
+    "question": "İnternetə qoşulmuş istənilən kompüterin harada yerləşdiyini və hansı informasiyanı saxladığını necə tapmaq olar?",
+    "options": {
+      "A": "Kompüterin xüsusi ünvanı vasitəsilə",
+      "B": "Kompüterin ölçüsünə görə",
+      "C": "Kompüterin markasına görə",
+      "D": "Kompüterin rənginə görə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"İnternetə qoşulmuş hər bir kompüterin xüsusi ünvanı var.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-2-02",
+    "question": "İnternetdə informasiya resurslarına baxmaq üçün hansı xüsusi proqramlardan istifadə olunur?",
+    "options": {
+      "A": "Brauzerlərdən",
+      "B": "Mətn redaktorlarından",
+      "C": "Qrafik redaktorlardan",
+      "D": "Antiviruslardan"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə bildirilir: \"Bunun üçün xüsusi proqramlar – brauzerlər nəzərdə tutulub.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-3-03",
+    "question": "Aşağıdakılardan hansı məşhur brauzer deyildir?",
+    "options": {
+      "A": "Microsoft Word",
+      "B": "Google Chrome",
+      "C": "Mozilla Firefox",
+      "D": "Opera"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə ən populyar brauzerlər (Internet Explorer, Microsoft Edge, Mozilla Firefox, Google Chrome, Opera, Safari) sadalanıb. Microsoft Word isə mətn redaktorudur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-4-04",
+    "question": "Sayta (və ya veb-səhifəyə) keçmək üçün onun ünvanını brauzerin hansı hissəsinə daxil etmək lazımdır?",
+    "options": {
+      "A": "Ünvan sətrinə",
+      "B": "Alətlər panelinə",
+      "C": "Vəziyyət sətrinə",
+      "D": "İş sahəsinə"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Hər hansı sayta (yaxud veb-səhifəyə) keçmək üçün brauzerin ünvan sətrinə həmin saytın ünvanını daxil etmək lazımdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-5-05",
+    "question": "Daxil edilmiş ünvana keçmək üçün klaviaturada hansı klavişi basmaq lazımdır?",
+    "options": {
+      "A": "<Enter>",
+      "B": "<Esc>",
+      "C": "<Space>",
+      "D": "<Shift>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə izah edilir: \"...və <Enter> klavişini basmaq lazımdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-6-06",
+    "question": "Brauzerdə Back (Geri) düyməsi nə üçün istifadə olunur?",
+    "options": {
+      "A": "Əvvəlki baxılmış səhifəyə qayıtmaq üçün",
+      "B": "Səhifəni yeniləmək üçün",
+      "C": "Növbəti səhifəyə keçmək üçün",
+      "D": "Brauzeri bağlamaq üçün"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndəki şəkildə \"Back\" düyməsi geri qayıtmaq üçün göstərilmişdir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-7-07",
+    "question": "Veb-səhifə yüklənərkən xəta baş verərsə və ya səhifə tam açılmazsa, hansı düymədən istifadə olunur?",
+    "options": {
+      "A": "Refresh / Reload (Yenilə)",
+      "B": "Back (Geri)",
+      "C": "Home (Ev)",
+      "D": "Forward (İrəli)"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə göstərilir ki, yeniləmək (Refresh/Reload) düyməsi səhifəni təkrar yükləmək üçündür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-8-08",
+    "question": "Açılmış səhifədə axtarılan məlumatı tapdıqdan sonra onu necə saxlamaq məsləhət görülür?",
+    "options": {
+      "A": "Həmin məlumatı (şəkli və ya mətni) kompüterdə yadda saxlamaqla",
+      "B": "Yalnız ekranda oxumaqla",
+      "C": "Kompüteri söndürməklə",
+      "D": "Brauzeri silməklə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur ki, informasiyanı tapandan sonra \"onu kompüterinizdə yadda saxlamağı bacarmalısınız.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-9-09",
+    "question": "Veb-səhifədəki şəkli yadda saxlamaq üçün şəklin üzərində sağ düyməni vurub hansı komandanı seçmək lazımdır?",
+    "options": {
+      "A": "Save image as",
+      "B": "Copy link",
+      "C": "Open image in new tab",
+      "D": "Print"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Şəklin yadda saxlanması alqoritmində göstərilir: \"Açılan kontekst menyusundan Save image as... (Şəkli fərqli yadda saxla...) bəndini seçin.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-10",
+    "question": "Veb-səhifədən mətni Word sənədinə köçürmək üçün hansı klaviatura qısayollarından istifadə olunur?",
+    "options": {
+      "A": "Əvvəl Ctrl+C, sonra Ctrl+V",
+      "B": "Əvvəl Ctrl+S, sonra Ctrl+P",
+      "C": "Əvvəl Ctrl+X, sonra Ctrl+Z",
+      "D": "Əvvəl Alt+F4, sonra Enter"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: \"Seçilmiş fraqmenti buferə kopyalayın. Bunun üçün <Ctrl+C> klavişlərindən istifadə edə bilərsiniz... <Ctrl+V> klavişləri ilə fraqmenti sənədə daxil edin.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-11",
+    "question": "Veb-səhifədəki bir mətni öz kompüterinə köçürmək istəyən şagirdin ilk addımı nə olmalıdır?",
+    "options": {
+      "A": "Səhifədəki lazımi mətn fraqmentini seçdirməlidir (qeyd etməlidir)",
+      "B": "Word proqramını bağlamalıdır",
+      "C": "Şəkli yükləməlidir",
+      "D": "Kompüteri yenidən başlatmalıdır"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətni kopyalamaq alqoritminin 1-ci addımı: \"Veb-səhifədəki lazımi mətn fraqmentini seçdirin.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-12",
+    "question": "Dərslikdə Qız Qalası ilə bağlı mətni kopyalamaq üçün verilən misalda, mətn buferə (clipboard-a) köçürüldükdən sonra hansı proqram açılmalıdır?",
+    "options": {
+      "A": "Mətn redaktoru (məsələn, WordPad və ya Word)",
+      "B": "Qrafik redaktor (məsələn, Paint)",
+      "C": "Hesablayıcı",
+      "D": "Təqdimat proqramı (məsələn, PowerPoint)"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Alqoritmin 3-cü addımı: \"WordPad mətn redaktorunu (və ya başqa bir mətn redaktorunu) başladın.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-13",
+    "question": "Brauzerlərdəki \"Home\" (Ev) düyməsinin funksiyası nədir?",
+    "options": {
+      "A": "Brauzerin əsas (başlanğıc) səhifəsinə qayıtmaq",
+      "B": "Bütün axtarış tarixçəsini silmək",
+      "C": "İnternet bağlantısını kəsmək",
+      "D": "Cari səhifəni çap etmək"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Brauzer pəncərəsində \"Home\" düyməsi, adətən başlanğıc (əsas) səhifəyə sürətli keçid üçün istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-14",
+    "question": "Veb-səhifədəki şəkli kompüterdə yadda saxlayarkən açılan dialoq pəncərəsində (Save As) nələri təyin etmək lazımdır?",
+    "options": {
+      "A": "Şəklin saxlanılacağı yeri (qovluğu) və şəklin adını",
+      "B": "Şəklin rəngini və ölçüsünü",
+      "C": "Brauzerin adını və İnternet sürətini",
+      "D": "Şəkli çəkən şəxsin adını"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Şəkli saxlamaq alqoritmində: \"Açılan dialoq pəncərəsində şəklin adını və saxlanılacağı yeri göstərib...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "22. Dünya hörümçək torunda gəzişmə",
+    "book_id": "informatika-6",
+    "pages": "Məlum deyil",
+    "passport": "06-004-0101-B001-22-15",
+    "question": "Mətnin kopyalanması zamanı <Ctrl+C> klavişləri hansı əməliyyatı yerinə yetirir?",
+    "options": {
+      "A": "Seçilmiş fraqmenti müvəqqəti yaddaşa (buferə) kopyalayır",
+      "B": "Seçilmiş fraqmenti sənəddən tamamilə silir",
+      "C": "Sənədi yaddaşa verir",
+      "D": "Sənədi çapa göndərir"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Alqoritmdə deyilir: \"Seçilmiş fraqmenti buferə kopyalayın. Bunun üçün <Ctrl+C> klavişlərindən istifadə edə bilərsiniz.\""
+  }
+]

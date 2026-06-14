@@ -7,11 +7,16 @@
     "pages": "5-8",
     "passport": "06-003-H1-T01-01",
     "question": "Qüvvə hansı hərflə işarə olunur?",
-    "options": {"A": "G", "B": "F", "C": "P", "D": "M"},
-    "answer": "B",
+    "options": {
+      "A": "V",
+      "B": "m",
+      "C": "F",
+      "D": "t"
+    },
+    "answer": "C",
     "difficulty": "sadə",
     "bloom": "bilik",
-    "explanation": "Qüvvə F hərfi ilə işarə olunur. Bax: s.5-8"
+    "explanation": "Qüvvə F hərfi ilə işarə olunur. Təkrar üçün: Dərslik səh. 5-8 ('Qüvvənin təsiri nədən asılıdır' bölməsi)."
   },
   {
     "grade": 6,
@@ -21,11 +26,16 @@
     "pages": "5-8",
     "passport": "06-003-H1-T01-02",
     "question": "Qüvvənin vahidi nədir?",
-    "options": {"A": "Kq", "B": "Sm", "C": "N (nyuton)", "D": "J (coul)"},
-    "answer": "C",
+    "options": {
+      "A": "Kiloqram (kq)",
+      "B": "Nyuton (N)",
+      "C": "Metr (m)",
+      "D": "Saniyə (s)"
+    },
+    "answer": "B",
     "difficulty": "sadə",
     "bloom": "bilik",
-    "explanation": "Qüvvənin vahidi nyutondur (N). Bax: s.5-8"
+    "explanation": "Qüvvənin vahidi Nyutondur (N). Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -35,11 +45,16 @@
     "pages": "5-8",
     "passport": "06-003-H1-T01-03",
     "question": "Qüvvənin qiyməti hansı cihazla ölçülür?",
-    "options": {"A": "Termometr", "B": "Dinamometr", "C": "Barometr", "D": "Voltmetr"},
+    "options": {
+      "A": "Tərəzi",
+      "B": "Dinamometr",
+      "C": "Termometr",
+      "D": "Xətkeş"
+    },
     "answer": "B",
     "difficulty": "sadə",
     "bloom": "bilik",
-    "explanation": "Qüvvənin qiyməti dinamometr adlanan cihazla ölçülür. Bax: s.5-8"
+    "explanation": "Qüvvənin qiyməti dinamometr adlanan cihazla ölçülür. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -48,17 +63,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-04",
-    "question": "Qüvvə cismə tətbiq olunduqda cismin nə baş verə bilər?",
+    "question": "Cismin hərəkət istiqamətində qüvvə tətbiq olunarsa, onun sürəti necə dəyişər?",
     "options": {
-      "A": "Yalnız hərəkətsiz qalır",
-      "B": "Hərəkətsiz cisim hərəkətə gəlir və ya hərəkət edənin sürəti dəyişir",
-      "C": "Cismin rəngi dəyişir",
-      "D": "Cismin kütləsi artır"
+      "A": "Azalar",
+      "B": "Dəyişməz",
+      "C": "Artar",
+      "D": "Sıfıra bərabər olar"
     },
-    "answer": "B",
+    "answer": "C",
     "difficulty": "sadə",
     "bloom": "anlama",
-    "explanation": "Qüvvə hərəkətsiz cisimlərin hərəkət etməsinə, hərəkət edən cisimlərin sürətinin dəyişməsinə səbəb olur. Bax: s.5-8"
+    "explanation": "Cismə təsir edən qüvvə onun hərəkət istiqamətində yönələrsə, cismin sürəti artar. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -67,17 +82,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-05",
-    "question": "Qüvvənin cismə təsiri nədən asılı DEYİL?",
+    "question": "Aşağıdakılardan hansı qüvvənin təsirindən asılı deyil?",
     "options": {
-      "A": "Tətbiq nöqtəsindən",
-      "B": "İstiqamətindən",
-      "C": "Ədədi qiymətindən",
-      "D": "Cismin rəngindən"
+      "A": "Tətbiq nöqtəsi",
+      "B": "İstiqaməti",
+      "C": "Cismin rəngi",
+      "D": "Ədədi qiyməti"
     },
-    "answer": "D",
+    "answer": "C",
     "difficulty": "sadə",
     "bloom": "anlama",
-    "explanation": "Qüvvənin təsiri tətbiq nöqtəsindən, istiqamətindən və ədədi qiymətindən asılıdır. Rəng isə qüvvəyə təsir etmir. Bax: s.5-8"
+    "explanation": "Qüvvənin təsiri tətbiq nöqtəsindən, istiqamətindən və ədədi qiymətindən asılıdır. Cismin rənginin buna aidiyyəti yoxdur. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -86,17 +101,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-06",
-    "question": "Topun hərəkət istiqamətini dəyişdirmək üçün nə lazımdır?",
+    "question": "Topun sürətini azaltmaq üçün nə etmək lazımdır?",
     "options": {
-      "A": "Topa qüvvə tətbiq etmək",
-      "B": "Topu isitmək",
-      "C": "Topun rəngini dəyişmək",
-      "D": "Topa su tökməkmək"
+      "A": "Hərəkət istiqamətində qüvvə tətbiq etmək",
+      "B": "Hərəkətin əksi istiqamətində qüvvə tətbiq etmək",
+      "C": "Topu rəngləmək",
+      "D": "Topun kütləsini azaltmaq"
     },
-    "answer": "A",
+    "answer": "B",
     "difficulty": "sadə",
-    "bloom": "anlama",
-    "explanation": "Hərəkət edən cismin istiqamətini dəyişdirmək üçün ona qüvvə tətbiq etmək lazımdır. Bax: s.5-8"
+    "bloom": "tətbiq",
+    "explanation": "Topun sürətini azaltmaq üçün ona hərəkətin əksi istiqamətində qüvvə tətbiq etmək lazımdır. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -105,12 +120,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-07",
-    "question": "Qüvvəni göstərmək üçün nədən istifadə olunur?",
-    "options": {"A": "Cədvəldən", "B": "Oxdan (→)", "C": "Nöqtədən", "D": "Rəqəmdən"},
-    "answer": "B",
+    "question": "Qüvvəni təsvir etmək üçün hansı həndəsi fiqurdan (işarədən) istifadə olunur?",
+    "options": {
+      "A": "Dairə",
+      "B": "Kvadrat",
+      "C": "Ox",
+      "D": "Üçbucaq"
+    },
+    "answer": "C",
     "difficulty": "sadə",
     "bloom": "bilik",
-    "explanation": "Qüvvə gözlə görünmür, ona görə onun tətbiq nöqtəsi, istiqaməti və qiyməti oxlarla göstərilir. Bax: s.5-8"
+    "explanation": "Qüvvə gözlə görünmədiyi üçün onu təsvir etmək məqsədilə oxlardan istifadə olunur. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -119,17 +139,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-08",
-    "question": "Cismə hərəkət istiqamətinin əksinə qüvvə tətbiq edilsə, cismin sürəti necə dəyişər?",
+    "question": "Kitabı tən ortasından itələdikdə və ya kənarından itələdikdə fərqli hərəkət etməsi nəyi sübut edir?",
     "options": {
-      "A": "Artar",
-      "B": "Dəyişməz",
-      "C": "Azalar",
-      "D": "Sıfıra çatar, sonra artmaz"
+      "A": "Qüvvənin qiymətinin vacib olduğunu",
+      "B": "Qüvvənin tətbiq nöqtəsinin təsirini dəyişdiyini",
+      "C": "Sürtünmə qüvvəsinin olmadığını",
+      "D": "Kitabın ağırlığını"
     },
-    "answer": "C",
+    "answer": "B",
     "difficulty": "orta",
     "bloom": "anlama",
-    "explanation": "Qüvvə hərəkətin əksinə yönələrsə, cismin sürəti azalar. Bax: s.5-8"
+    "explanation": "Kitabı ortadan itələdikdə irəli gedir, kənardan itələdikdə isə fırlanır. Bu, qüvvənin təsirinin tətbiq nöqtəsindən asılı olduğunu göstərir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -138,17 +158,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-09",
-    "question": "Qüvvəni göstərən oxun uzunluğu nəyi ifadə edir?",
+    "question": "Nəyə görə oyuncaq maşını hərəkətə gətirmək asan, minik avtomobilini hərəkət etdirmək isə çətindir?",
     "options": {
-      "A": "Qüvvənin istiqamətini",
-      "B": "Qüvvənin tətbiq nöqtəsini",
-      "C": "Qüvvənin ədədi qiymətini",
-      "D": "Qüvvənin rəngini"
+      "A": "Qüvvənin tətbiq nöqtəsi fərqlidir",
+      "B": "Minik avtomobili yalnız geri hərəkət edir",
+      "C": "Minik avtomobilini hərəkət etdirmək üçün daha böyük qüvvə lazımdır",
+      "D": "Oyuncaq maşında sürtünmə yoxdur"
     },
     "answer": "C",
     "difficulty": "orta",
     "bloom": "anlama",
-    "explanation": "Ox qüvvəni göstərmək üçün çəkilir. Oxun uzunluğu qüvvənin ədədi qiymətini, istiqaməti isə qüvvənin istiqamətini göstərir. Bax: s.5-8"
+    "explanation": "Bəzi cisimləri hərəkət etdirmək üçün daha böyük qüvvə tələb olunur, çünki qüvvənin təsiri onun qiymətindən asılıdır. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -157,17 +177,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-10",
-    "question": "Kitabı stolun kənarından itələdikdə nə baş verir?",
+    "question": "Hərəkət edən cismin istiqamətini dəyişmək üçün nə etmək lazımdır?",
     "options": {
-      "A": "Kitab irəliyə hərəkət edir",
-      "B": "Kitab fırlanır",
-      "C": "Kitab yuxarı qalxır",
-      "D": "Kitab hərəkətsiz qalır"
+      "A": "Cismi rəngləmək",
+      "B": "Qüvvə tətbiq etmək",
+      "C": "Kütləsini artırmaq",
+      "D": "Həcmini azaltmaq"
     },
     "answer": "B",
     "difficulty": "orta",
-    "bloom": "tətbiq",
-    "explanation": "Qüvvənin tətbiq nöqtəsi kötüyün kənarından olduqda cisim fırlanır. Bax: s.5-8"
+    "bloom": "anlama",
+    "explanation": "Hərəkət edən cismin (məsələn, tennis və ya voleybol topunun) istiqamətini dəyişmək üçün ona qüvvə tətbiq etmək lazımdır. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -176,17 +196,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-11",
-    "question": "İki əşya var: oyuncaq maşın (0,5 kq) və real avtomobil (1500 kq). Eyni qüvvəni tətbiq etdikdə hansı daha sürətlə hərəkət edər?",
+    "question": "Şəkildə göstərilən oxun (qüvvə vektorunun) uzunluğu qüvvənin hansı xüsusiyyətini ifadə edir?",
     "options": {
-      "A": "Real avtomobil",
-      "B": "İkisi eyni sürətlə",
-      "C": "Oyuncaq maşın",
-      "D": "Asılıdır qüvvənin istiqamətindən"
+      "A": "İstiqamətini",
+      "B": "Tətbiq nöqtəsini",
+      "C": "Ədədi qiymətinin böyüklüyünü",
+      "D": "Təsir müddətini"
     },
     "answer": "C",
     "difficulty": "orta",
-    "bloom": "tətbiq",
-    "explanation": "Eyni qüvvə tətbiq edildikdə yüngül cisim daha sürətlə hərəkət edir. Qüvvənin cisimə təsiri onun qiymətindən asılıdır. Bax: s.5-8"
+    "bloom": "anlama",
+    "explanation": "Qüvvə nə qədər böyük olarsa, ox da bir o qədər uzun çəkilir. Yəni oxun uzunluğu qüvvənin ədədi qiymətini göstərir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -195,17 +215,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-12",
-    "question": "Yelləncəyin sürətini artırmaq üçün ona hansı istiqamətdə qüvvə tətbiq edilməlidir?",
+    "question": "Cismə təsir edən qüvvə hərəkətə əks yönəldikdə nə baş verir?",
     "options": {
-      "A": "Hərəkətin əksinə",
-      "B": "Hərəkətin istiqamətinə",
-      "C": "Yuxarıya doğru",
-      "D": "Aşağıya doğru"
+      "A": "Cismin sürəti artır",
+      "B": "Cismin sürəti azalır",
+      "C": "Cisim kütləsini itirir",
+      "D": "Cisim dərhal yoxa çıxır"
     },
     "answer": "B",
     "difficulty": "orta",
-    "bloom": "tətbiq",
-    "explanation": "Yelləncəyin sürətini artırmaq üçün ona hərəkət istiqamətində qüvvə tətbiq edilir. Bax: s.5-8"
+    "bloom": "anlama",
+    "explanation": "Qüvvə hərəkətin əksinə yönələrsə, cismin sürəti azalar (məsələn, topun sürətini azaltmaq). Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -214,17 +234,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-13",
-    "question": "Şəkildə A cisminə 10 N qüvvə sağa, B cisminə isə 10 N qüvvə sola tətbiq edilir. Hər iki cisim eyni nöqtədə birləşibdir. Nə baş verər?",
+    "question": "Qutunun içinə daha bir kitab qoyduqda onu hərəkətə gətirmək niyə çətinləşir?",
     "options": {
-      "A": "Cisimlər sağa hərəkət edər",
-      "B": "Cisimlər sola hərəkət edər",
-      "C": "Cisimlər hərəkətsiz qalar",
-      "D": "Cisimlər yuxarı qalxar"
+      "A": "Çünki qutunun rəngi dəyişdi",
+      "B": "Çünki qutuya tətbiq olunan qüvvənin istiqaməti dəyişdi",
+      "C": "Çünki kütlə artdığı üçün hərəkətə gətirmək üçün daha böyük qüvvə tələb olunur",
+      "D": "Çünki qutu havada asılı qaldı"
     },
     "answer": "C",
-    "difficulty": "çətin",
-    "bloom": "tətbiq",
-    "explanation": "Bərabər qüvvələr əks istiqamətdə tətbiq edildikdə bir-birini tarazlaşdırır, cisim hərəkətsiz qalır. Bax: s.5-8"
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Kütlə (kitabların sayı) artdıqca, cismi yerindən tərpətmək üçün qüvvənin qiyməti də artmalıdır. Təkrar üçün: Dərslik səh. 5-8 (Fəaliyyət bölməsi)."
   },
   {
     "grade": 6,
@@ -233,17 +253,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-14",
-    "question": "Dinamometrin bölgülərindən biri 4 N göstərir. Bu o deməkdir ki...",
+    "question": "Yelləncəyin daha sürətlə hərəkət etməsini istəyirsinizsə, qüvvəni hansı istiqamətdə tətbiq etməlisiniz?",
     "options": {
-      "A": "Cismin kütləsi 4 kq-dır",
-      "B": "Cismə tətbiq olunan qüvvə 4 nyutondur",
-      "C": "Cismin sürəti 4 m/s-dir",
-      "D": "Cismin ağırlığı 4 kq-dır"
+      "A": "Hərəkət istiqamətində",
+      "B": "Hərəkətin əksi istiqamətində",
+      "C": "Aşağıya doğru",
+      "D": "Yuxarıya doğru"
     },
-    "answer": "B",
-    "difficulty": "çətin",
-    "bloom": "təhlil",
-    "explanation": "Dinamometr qüvvəni ölçür, vahidi nyutondur (N). 4 N göstərirsə, tətbiq olunan qüvvə 4 nyutondur. Bax: s.5-8"
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Sürəti artırmaq üçün qüvvə hərəkət istiqamətində tətbiq edilməlidir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -252,17 +272,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-15",
-    "question": "Tennis topuna raket vuraraq onu sol tərəfə yönəldirik. Sonra yenidən sağa vuruluq. Bu misalda qüvvənin hansı xüsusiyyəti dəyişdi?",
+    "question": "Oyuncaq maşını sola doğru itələdikdə, maşın hansı istiqamətdə hərəkət edər və niyə?",
     "options": {
-      "A": "Qüvvənin qiyməti",
-      "B": "Qüvvənin istiqaməti",
-      "C": "Qüvvənin tətbiq nöqtəsi",
-      "D": "Qüvvənin vahidi"
+      "A": "Sağa, çünki qüvvə əks istiqamətdə təsir edir",
+      "B": "Sola, çünki cismə tətbiq olunan qüvvə istiqamətində hərəkət edir",
+      "C": "Hərəkətsiz qalar, çünki qüvvə kiçikdir",
+      "D": "Geri qayıdar, çünki sürtünmə yoxdur"
     },
     "answer": "B",
     "difficulty": "çətin",
     "bloom": "təhlil",
-    "explanation": "Topun istiqaməti dəyişdikdə tətbiq olunan qüvvənin istiqaməti dəyişmişdir. Hər iki vuruşda qüvvə cismin mərkəzinə tətbiq olunsa, tətbiq nöqtəsi eyni qalır. Bax: s.5-8"
+    "explanation": "Sola itələdikdə cismə təsir edən qüvvə sol tərəfə yönəlir və cisim qüvvə istiqamətində hərəkət edir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -271,17 +291,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-16",
-    "question": "Aşağıdakılardan hansı qüvvənin təsirinə nümunə DEYİL?",
+    "question": "Qüvvənin təsvirində oxun başlanğıc nöqtəsi (quyruğu) nəyi bildirir?",
     "options": {
-      "A": "Masanı sürüşdürmək",
-      "B": "Çantanı qaldırmaq",
-      "C": "Yağışın yağması",
-      "D": "Topu atmaq"
+      "A": "Qüvvənin istiqamətini",
+      "B": "Qüvvənin ədədi qiymətini",
+      "C": "Qüvvənin tətbiq nöqtəsini",
+      "D": "Cismin kütləsini"
     },
     "answer": "C",
     "difficulty": "çətin",
     "bloom": "təhlil",
-    "explanation": "Qüvvə insan tərəfindən tətbiq olunan dartma və itələmə hərəkətidir. Yağışın yağması cazibə qüvvəsinin nəticəsidir, insan tərəfindən tətbiq olunmur. Bax: s.5-8"
+    "explanation": "Ox qüvvənin cismə tətbiq olunduğu nöqtədən çəkilir, yəni oxun başlanğıcı tətbiq nöqtəsini göstərir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -290,17 +310,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-17",
-    "question": "Bir cisim sabit sürətlə hərəkət edir. Bu cisimə əks istiqamətdə qüvvə tətbiq edilsə nə olar?",
+    "question": "Əgər şkafı hərəkət etdirmək üçün 50 N qüvvə tətbiq ediriksə, dinamometr bu zaman hansı qiyməti göstərəcək?",
     "options": {
-      "A": "Cisim daha sürətli hərəkət edər",
-      "B": "Cisim yavaşıyar",
-      "C": "Cismin istiqaməti dəyişər",
-      "D": "Heç nə dəyişməz"
+      "A": "0 N",
+      "B": "100 N",
+      "C": "50 N",
+      "D": "Təyin etmək olmaz"
     },
-    "answer": "B",
+    "answer": "C",
     "difficulty": "çətin",
     "bloom": "tətbiq",
-    "explanation": "Hərəkətin əksinə qüvvə tətbiq edildikdə cismin sürəti azalır (yavaşıyır). Bax: s.5-8"
+    "explanation": "Dinamometr qüvvənin ədədi qiymətini ölçür. Tətbiq edilən qüvvə 50 N-dursa, dinamometr də 50 N göstərəcək. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -309,17 +329,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-18",
-    "question": "Voleybol topunu yuxarı atdıqda topa hansı istiqamətdə qüvvə tətbiq etmiş oluruq?",
+    "question": "Düzxətli hərəkət edən cismə hərəkət istiqamətində yönəlmiş 10 N və hərəkətin əksi istiqamətində 5 N qüvvə təsir edirsə, cismin sürəti necə dəyişər?",
     "options": {
-      "A": "Aşağıya doğru",
-      "B": "Sağa doğru",
-      "C": "Yuxarıya doğru",
-      "D": "Sola doğru"
+      "A": "Azalar, çünki əks qüvvə var",
+      "B": "Sıfır olar, cisim dayanar",
+      "C": "Artar, çünki hərəkət istiqamətindəki qüvvə daha böyükdür",
+      "D": "Dəyişməz"
     },
     "answer": "C",
-    "difficulty": "sadə",
-    "bloom": "tətbiq",
-    "explanation": "Topu yuxarı atmaq üçün ona yuxarıya doğru qüvvə tətbiq edirik. Qüvvənin istiqaməti cismin hərəkət istiqamətini müəyyən edir. Bax: s.5-8"
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Hərəkət istiqamətindəki qüvvə (10 N) əks qüvvədən (5 N) böyük olduğu üçün, əvəzləyici qüvvə hərəkət istiqamətində yönəlir və sürət artır. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -328,17 +348,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-19",
-    "question": "Qüvvənin tətbiq nöqtəsi nədir?",
+    "question": "Hansı halda qüvvə cismin həm sürətini, həm də hərəkət istiqamətini eyni anda dəyişə bilər?",
     "options": {
-      "A": "Qüvvənin vahidinin adı",
-      "B": "Qüvvənin cismə toxunduğu nöqtə",
-      "C": "Qüvvənin ölçüldüyü cihaz",
-      "D": "Qüvvənin istiqaməti"
+      "A": "Avtomobilin düz yolda sürətlənməsi",
+      "B": "Yerə düşən almanın sürətinin artması",
+      "C": "Divara çırpılıb geri qayıdan topun hərəkəti",
+      "D": "Sükunətdə olan kitab"
     },
-    "answer": "B",
-    "difficulty": "sadə",
-    "bloom": "bilik",
-    "explanation": "Qüvvənin tətbiq nöqtəsi - qüvvənin cismə tətbiq olunduğu (toxunduğu) nöqtədir. Bax: s.5-8"
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "qiymətləndirmə",
+    "explanation": "Divara dəyən top qüvvənin təsiri ilə həm istiqamətini dəyişərək geri qayıdır, həm də sürəti anidən dəyişir (yavaşlayıb təkrardan sürətlənir). Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -347,17 +367,17 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-20",
-    "question": "Siyirməni açmaq üçün ona hansı istiqamətdə qüvvə tətbiq edirik?",
+    "question": "Əyləncə parkında toqquşan maşınların qəfildən dayanması və ya istiqamətini dəyişməsi qüvvənin hansı xüsusiyyəti ilə izah olunur?",
     "options": {
-      "A": "Özümüzdən kənara (itələyirik)",
-      "B": "Özümüzə tərəf (dartırıq)",
-      "C": "Yuxarıya",
-      "D": "Aşağıya"
+      "A": "Qüvvə yalnız sürəti artırır",
+      "B": "Qüvvə cismin hərəkətini və istiqamətini dəyişməyə qadirdir",
+      "C": "Toqquşma zamanı qüvvə yox olur",
+      "D": "Qüvvə cismin kütləsini azaldır"
     },
     "answer": "B",
-    "difficulty": "sadə",
-    "bloom": "bilik",
-    "explanation": "Siyirməni açmaq üçün onu özümüzə tərəf dartırıq - bu dartma qüvvəsidir. Bax: s.5-8"
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Qüvvə cismin hərəkət istiqamətini dəyişdirə və sürətini sıfıra endirə bilər. Toqquşan maşınlar buna ən yaxşı nümunədir. Təkrar üçün: Dərslik səh. 5-8."
   },
   {
     "grade": 6,
@@ -366,16 +386,16 @@
     "book_id": "tebiet-6-h1",
     "pages": "5-8",
     "passport": "06-003-H1-T01-21",
-    "question": "Bir qutuya tən ortasından 5 N qüvvə tətbiq edilir. Başqa bir qutuya kənarından eyni 5 N qüvvə tətbiq edilir. Nə fərqli olar?",
+    "question": "Siyirməni (çəkməcəni) açmaq və şkafı yerindən tərpətmək üçün tətbiq olunan qüvvələrin ən əsas fərqi nədir?",
     "options": {
-      "A": "Birinci qutu fırlanar, ikincisi düz hərəkət edər",
-      "B": "Birinci qutu düz hərəkət edər, ikincisi fırlanar",
-      "C": "Hər ikisi eyni cür hərəkət edər",
-      "D": "Hər ikisi hərəkətsiz qalar"
+      "A": "İstiqamətləri və qiymətləri fərqlidir",
+      "B": "Siyirməyə yalnız maqnit qüvvəsi təsir edir",
+      "C": "Şkafı tərpətmək üçün qüvvə lazım deyil",
+      "D": "Hər ikisinə eyni miqdarda qüvvə sərf olunur"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": "çətin",
-    "bloom": "tətbiq",
-    "explanation": "Qüvvənin tətbiq nöqtəsi fərqli olduqda cismin hərəkəti fərqli olur. Mərkəzdən tətbiq edilən qüvvə cismi düz hərəkət etdirir, kənardan tətbiq edilən isə fırlandırır. Bax: s.5-8"
+    "bloom": "təhlil",
+    "explanation": "Siyirməni açmaq üçün özümüzə tərəf (istiqamət) daha az qüvvə (qiymət) tətbiq edirik. Şkafı isə itələmək üçün kənara doğru və daha çox qüvvə lazımdır. Təkrar üçün: Dərslik səh. 5-8."
   }
 ]

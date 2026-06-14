@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-01",
+    "question": "Proqramlarda iş zamanı nəticələr kompüterin hansı yaddaşında saxlanılır?",
+    "options": {
+      "A": "Operativ yaddaşında",
+      "B": "Sərt diskində",
+      "C": "Xarici yaddasaxlama qurğusunda",
+      "D": "Daimi yaddaşında"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Kompüter proqramlarında iş zamanı nəticələr kompüterin operativ yaddaşında saxlanılır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-02",
+    "question": "Çəkilmiş şəkli faylda saxlamaq üçün hansı menyu komandasını seçmək lazımdır?",
+    "options": {
+      "A": "File ⇨ Save",
+      "B": "File ⇨ Print",
+      "C": "Edit ⇨ Copy",
+      "D": "View ⇨ Zoom"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Onu faylda saxlamaq üçün File ⇨ Save menyu komandasını seçin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-03",
+    "question": "Qrafik redaktorda çəkilmiş rəsmi kağıza çıxarmaq (çap etmək) üçün proqramlarda olan hansı komandadan istifadə olunur?",
+    "options": {
+      "A": "Print",
+      "B": "Save As",
+      "C": "Copy",
+      "D": "Page setup"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Qrafik redaktorda çəkilmiş rəsmi bəzən kağıza çıxarmaq lazım gəlir. Bunun üçün proqramlarda olan Print komandasından istifadə olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-04",
+    "question": "Şəkli faylda saxlamaq üçün hansı klavişlər kombinasiyasından istifadə etmək olar?",
+    "options": {
+      "A": "<Ctrl+S>",
+      "B": "<Ctrl+P>",
+      "C": "<Ctrl+C>",
+      "D": "<Ctrl+V>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Bu məqsədlə ,＜Ctrl+S＞ klavişlər kombinasiyasından da istifadə etmək olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-05",
+    "question": "Çap üçün hansı klavişlər kombinasiyasından yararlanmaq olar?",
+    "options": {
+      "A": "<Ctrl+P>",
+      "B": "<Ctrl+S>",
+      "C": "<Shift+P>",
+      "D": "<Alt+P>"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Çap üçün ＜Ctrl+P＞ klavişlər kombinasiyasından da yararlanmaq olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-06",
+    "question": "Elektrik enerjisinin kəsintisi zamanı kompüterin hansı hissəsindəki informasiya silinir?",
+    "options": {
+      "A": "Operativ yaddaşdakı",
+      "B": "Sərt diskdəki",
+      "C": "Xarici yaddasaxlama qurğusundakı",
+      "D": "Flash kartdakı"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "Operativ yaddaş müvəqqəti saxlama yeridir, elektrik enerjisinin kəsintisi zamanı oradakı bütün informasiya silinir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-07",
+    "question": "Faylın adı maksimum neçə simvoldan ibarət ola bilər?",
+    "options": {
+      "A": "255 simvoldan",
+      "B": "128 simvoldan",
+      "C": "256 simvoldan",
+      "D": "512 simvoldan"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Unutmayın ki, faylın adı 255 simvoldan çox ola bilməz..."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-08",
+    "question": "Çəkdiyiniz şəkli saxlamaq istədiyiniz qovluğu tapıb açmaq üçün pəncərənin yuxarısındakı hansı siyahıdan istifadə edilir?",
+    "options": {
+      "A": "Save in siyahısından",
+      "B": "File name siyahısından",
+      "C": "Select Printer siyahısından",
+      "D": "Number of copies siyahısından"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Pəncərənin yuxarısındakı Save in siyahısından şəkli saxlamaq istədiyiniz qovluğu tapıb açın."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-09",
+    "question": "Şəkli bir neçə nüsxə çap etmək istəyirsinizsə, nüsxələrin sayını hansı sahədə göstərmək lazımdır?",
+    "options": {
+      "A": "Number of copies",
+      "B": "Select Printer",
+      "C": "File name",
+      "D": "Print preview"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Əgər şəkli bir neçə nüsxə çap etmək istəyirsinizsə, Number of copies sahəsində nüsxələrin sayını göstərin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-10",
+    "question": "Əgər kompüterə bir neçə printer qoşulubsa, istifadə etmək istədiyiniz printeri hansı bölümdən seçirsiniz?",
+    "options": {
+      "A": "Select Printer",
+      "B": "Page setup",
+      "C": "Number of copies",
+      "D": "Save in"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Əgər bir neçə printeriniz varsa, Select Printer bölümündə istifadə etmək istədiyiniz printeri seçin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-11",
+    "question": "Proqramlarda görülmüş işin nəticəsini vaxtaşırı olaraq niyə sərt diskə və ya xarici yaddasaxlama qurğusuna yazmaq lazımdır?",
+    "options": {
+      "A": "Çünki operativ yaddaş müvəqqəti saxlama yeridir və elektrik kəsintisi zamanı məlumat silinir",
+      "B": "Çünki sərt disk kompüterin ən sürətli yaddaşıdır",
+      "C": "Çünki faylları ancaq sərt diskdən çap etmək mümkündür",
+      "D": "Çünki operativ yaddaş yalnız qrafik faylları saxlamaq üçündür"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Operativ yaddaş müvəqqəti saxlama yeridir, elektrik enerjisinin kəsintisi zamanı oradakı bütün informasiya silinir. Ona görə də proqramlarda görülmüş işin nəticəsini vaxtaşırı olaraq sərt diskə, yaxud hansısa xarici yaddasaxlama qurğusuna yazmaq lazımdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-12",
+    "question": "Aşağıda verilmiş simvollardan hansıların faylın adında istifadəsinə icazə verilmir?",
+    "options": {
+      "A": "＜ ＞ ? : ” \\ * / |",
+      "B": "! @ # $ % ^ &",
+      "C": "( ) - _ + =",
+      "D": "{ } [ ] ~ `"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "...və ＜ ＞ ? : ” \\*/ | kimi simvollardan istifadəyə icazə verilmir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-13",
+    "question": "Saxlayacağınız faylın adını daxil etmək üçün hansı sahəni çıqqıldatmaq lazımdır?",
+    "options": {
+      "A": "File name",
+      "B": "Save in",
+      "C": "Select Printer",
+      "D": "Number of copies"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "File name sahəsini çıqqıldadın və saxlayacağınız faylın adını daxil edin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-14",
+    "question": "Qrafik redaktorun Print menyu bəndinə hansı altbəndlər aiddir?",
+    "options": {
+      "A": "Page setup və Print preview",
+      "B": "Save və Save As",
+      "C": "Select Printer və Number of copies",
+      "D": "File name və Save in"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Qrafik redaktorun Print menyu bəndinin Page setup və Print preview altbəndləri haqqında məlumat toplayın və həmin altbəndlərdən istifadə edin."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "book_id": "informatika-6",
+    "pages": "1-3",
+    "passport": "06-004-0101-B001-06-15",
+    "question": "Faylı saxlamaq üçün \"File ⇨ Save\" komandasını seçdikdə və ya ＜Ctrl+S＞ klavişlər kombinasiyasını basdıqda hansı pəncərə açılır?",
+    "options": {
+      "A": "Save As pəncərəsi",
+      "B": "Print pəncərəsi",
+      "C": "Page setup pəncərəsi",
+      "D": "My Documents pəncərəsi"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Onu faylda saxlamaq üçün File ⇨ Save menyu komandasını seçin. Bu məqsədlə ,＜Ctrl+S＞ klavişlər kombinasiyasından da istifadə etmək olar. Save As pəncərəsi açılacaq."
+  }
+]

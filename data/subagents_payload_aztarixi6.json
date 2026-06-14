@@ -1,0 +1,47 @@
+[
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T1",
+    "Prompt": "Mövzu: 1. Əsas tarixi anlayışlar və zaman ölçü vahidləri. Mətn faylı: data/aztarixi6_chunks/topic_real_1.txt. TİK: 06-AZT-6-1-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_1.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T2",
+    "Prompt": "Mövzu: 2. İbtidai cəmiyyət. Mətn faylı: data/aztarixi6_chunks/topic_real_2.txt. TİK: 06-AZT-6-2-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_2.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T3",
+    "Prompt": "Mövzu: 3. Erkən dövlətlər. Mətn faylı: data/aztarixi6_chunks/topic_real_3.txt. TİK: 06-AZT-6-3-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_3.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T4",
+    "Prompt": "Mövzu: 4. Manna dövləti. Mətn faylı: data/aztarixi6_chunks/topic_real_4.txt. TİK: 06-AZT-6-4-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_4.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T5",
+    "Prompt": "Mövzu: 5. Azərbaycan e.ə. VII-IV yüzilliklərdə. Mətn faylı: data/aztarixi6_chunks/topic_real_5.txt. TİK: 06-AZT-6-5-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_5.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T6",
+    "Prompt": "Mövzu: 6. Atropatena dövləti. Mətn faylı: data/aztarixi6_chunks/topic_real_6.txt. TİK: 06-AZT-6-6-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_6.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T7",
+    "Prompt": "Mövzu: 7. Albaniya dövləti. Mətn faylı: data/aztarixi6_chunks/topic_real_7.txt. TİK: 06-AZT-6-7-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_7.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T8",
+    "Prompt": "Mövzu: 8. Azərbaycanda feodal münasibətlərinin yaranması. Mətn faylı: data/aztarixi6_chunks/topic_real_8.txt. TİK: 06-AZT-6-8-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_8.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "sop_v3_test_generator",
+    "Role": "AzTarixi6_T9",
+    "Prompt": "Mövzu: 9. Azərbaycan Sasani imperiyası dövründə. Mətn faylı: data/aztarixi6_chunks/topic_real_9.txt. TİK: 06-AZT-6-9-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/aztarixi6_chunks_generated/topic_9.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  }
+]

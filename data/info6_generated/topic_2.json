@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-01",
+    "question": "Kompüterə daxil edilən və emal olunan verilənlər harada saxlanılır?",
+    "options": {
+      "A": "Sərt diskdə",
+      "B": "Operativ yaddaşda (RAM)",
+      "C": "Optik diskdə",
+      "D": "Fləş-daşıyıcıda"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə deyilir: \"Kompüterə daxil edilən və emal olunan verilənlər yaddaşda, daha dəqiq, operativ yaddaşda (qısa olaraq RAM deyilir) saxlanılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-02",
+    "question": "Operativ yaddaşda (RAM) olan məlumatlar nə zaman silinir?",
+    "options": {
+      "A": "Fləş-kart çıxarıldıqda",
+      "B": "Disk dolduqda",
+      "C": "Kompüter sönən kimi",
+      "D": "Yeni proqram yazılanda"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Bu yaddaş müvəqqətidir, yəni kompüter sönən kimi orada saxlanılan bütün verilənlər silinir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-03",
+    "question": "Kompüterin əsas yaddasaxlama qurğusu necə adlanır?",
+    "options": {
+      "A": "RAM",
+      "B": "DVD disk",
+      "C": "Sərt disk",
+      "D": "SD-kart"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə yazılıb: \"Kompüterin əsas yaddasaxlama qurğusu sərt diskdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-04",
+    "question": "Xarici yaddasaxlama qurğularından nə üçün istifadə olunur?",
+    "options": {
+      "A": "Kompüterin sürətini artırmaq üçün",
+      "B": "Kompüteri şəbəkəyə qoşmaq üçün",
+      "C": "Böyük həcmli informasiyanı saxlamaq və ya daşımaq üçün",
+      "D": "Şəkilləri çap etmək üçün"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə deyilir: \"Böyük həcmli informasiyanı saxlamaq, yaxud başqa yerə daşımaq üçün xarici yaddasaxlama qurğularından istifadə olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-05",
+    "question": "Mobil rəqəmsal qurğularda informasiya saxlamaq üçün adətən hansı daşıyıcıdan istifadə olunur?",
+    "options": {
+      "A": "SD-kartdan",
+      "B": "CD-RW diskindən",
+      "C": "Xarici sərt diskdən",
+      "D": "DVD-R diskindən"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Bu qurğuların hamısının kiçik ölçülü informasiya daşıyıcılarına ehtiyacı var. Bu məqsədlə SD-kartdan istifadə olunur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-06",
+    "question": "Aşağıdakılardan hansı xarici yaddasaxlama qurğularına aid deyildir?",
+    "options": {
+      "A": "Fləş-daşıyıcılar",
+      "B": "Optik disklər",
+      "C": "RAM (Operativ yaddaş)",
+      "D": "Xarici sərt disklər"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə deyilir: \"Xarici yaddasaxlama qurğularına optik disklər, xarici sərt disklər, fləşdaşıyıcılar aiddir.\" RAM isə daxili operativ yaddaşdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-07",
+    "question": "CD-R və DVD-R disklərinin fərqləndirici xüsusiyyəti nədir?",
+    "options": {
+      "A": "Onlara informasiyanı bir neçə dəfə yazmaq olar.",
+      "B": "Onlara informasiyanı yalnız bir dəfə yazmaq olar.",
+      "C": "Onlar müvəqqəti yaddaşdır.",
+      "D": "Onların tutumu 100 Gbaytdan çox olur."
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə yazılıb: \"CD-R (“si-di-er”) və ya DVD-R (“divi- di-er” disklərinə informasiyanı yalnız bir dəfə yazmaq olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-08",
+    "question": "Hansı optik disklərə informasiyanı bir neçə dəfə yazmaq mümkündür?",
+    "options": {
+      "A": "CD-R və CD-RW",
+      "B": "DVD-R və DVD-RW",
+      "C": "CD-RW və DVD-RW",
+      "D": "Yalnız CD-R"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Bu disklərdən fərqli olaraq, CD-RW, DVD-RW disklərinə informasiyanı bir neçə dəfə yazmaq olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-09",
+    "question": "Fləş-daşıyıcıları kompüterə taxmaq üçün adətən hansı portdan istifadə edilir?",
+    "options": {
+      "A": "Şəbəkə portundan",
+      "B": "USB-portundan",
+      "C": "Səs portundan",
+      "D": "Video portundan"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə deyilir: \"...sadəcə, onları kompüterin USB-portuna taxmaq kifayətdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-10",
+    "question": "Birinci sərt diski göstərən simgə necə işarələnir?",
+    "options": {
+      "A": "A:",
+      "B": "B:",
+      "C": "C:",
+      "D": "D:"
+    },
+    "answer": "C",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə yazılıb: \"C: işarəsi birinci sərt diski göstərir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-11",
+    "question": "Adi DVD diskinin tutumu nə qədər olur?",
+    "options": {
+      "A": "100 Gbayt",
+      "B": "5 Mbayt",
+      "C": "4,7 Gbayt",
+      "D": "1 ton"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Adi DVD diskinin tutumu 4,7 Gbayt olur, ancaq daha böyük həcmli DVD diskləri də vardır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-12",
+    "question": "DVD diskləri ilə CD diskləri arasında hansı oxşarlıq və fərq var?",
+    "options": {
+      "A": "DVD-nin tutumu azdır, ancaq görünüşcə CD-yə bənzəmir.",
+      "B": "DVD və CD eyni tutuma malikdir, lakin fərqli görünüşləri var.",
+      "C": "Tamamilə fərqli görünüşə malikdirlər və DVD disklərinə yalnız bir dəfə yazmaq olur.",
+      "D": "Görünüşcə bir-birinə çox bənzəyirlər, ancaq DVD disklərinə daha çox informasiya yerləşdirmək olur."
+    },
+    "answer": "D",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"DVD diskləri görünüşcə CD disklərinə çox bənzəyir, ancaq onlara daha çox informasiya yerləşdirmək olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-13",
+    "question": "1956-cı ildə təqdim olunan ilk sərt disk necə adlanırdı və tutumu nə qədər idi?",
+    "options": {
+      "A": "RAMAC 305, tutumu 4,7 Gbayt",
+      "B": "IBM-R, tutumu 100 Gbayt",
+      "C": "RAMAC 305, tutumu 5 Mbayt",
+      "D": "SSD-305, tutumu 5 Gbayt"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "bilik",
+    "explanation": "Mətndə yazılıb: \"RAMAC 305 adlı bu disk iki soyuducu ölçüsündə idi. Çəkisi təxminən 1 ton, tutumu isə cəmisi 5 Mbayt idi.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-14",
+    "question": "Kompüterin yaddaşından fləş-daşıyıcıya informasiya yazarkən, seçilmiş faylı kopyalamaq üçün hansı klavişlər kombinasiyasından istifadə olunur?",
+    "options": {
+      "A": "<Ctrl+V>",
+      "B": "<Ctrl+C>",
+      "C": "<Shift+C>",
+      "D": "<Alt+C>"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə fləş-daşıyıcıya informasiya yazmaq alqoritminin 3-cü addımında qeyd olunur: \"<Ctrl+C> klavişlərini basın.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "2. İnformasiya harada saxlanılır",
+    "book_id": "informatika-6",
+    "pages": "",
+    "passport": "06-004-0101-B001-02-15",
+    "question": "Aşağıdakı fikirlərdən hansı doğrudur?",
+    "options": {
+      "A": "Kompüter sönən zaman SSD-daşıyıcıdakı məlumatlar silinir.",
+      "B": "CD-R diskinə informasiya bir neçə dəfə yazmaq olar.",
+      "C": "CD-R diskinin tutumu DVD-R-in tutumundan çoxdur.",
+      "D": "Müasir kompüterlərdə sərt disklərlə yanaşı, daha sürətli SSD istifadə olunur."
+    },
+    "answer": "D",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə deyilir: \"Müasir kompüterlərdə sərt disklərlə yanaşı, daha sürətli SSD istifadə olunur.\""
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "İnformasiya resursları nədir?",
+    "options": {
+      "A": "İnsanların yaratdığı və müxtəlif daşıyıcılarda saxlanılan informasiyalar",
+      "B": "Yalnız kompüterdə yaradılan sənədlər",
+      "C": "Yalnız İnternet şəbəkəsində yayılan məlumatlar",
+      "D": "İnsanların düşünmədən yaratdığı mətnlər"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"İnformasiya resursları insanların yaratdığı və müxtəlif daşıyıcılarda saxlanılan informasiyalardır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Hansı informasiya sistemi informasiya resurslarının saxlanılması məqsədilə yaradılmamışdır?",
+    "options": {
+      "A": "Mağazalar",
+      "B": "Kitabxanalar",
+      "C": "Arxivlər",
+      "D": "Muzeylər"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Bu məqsədlə müxtəlif informasiya sistemləri – kitabxanalar, arxivlər, filmotekalar, rəsm qalereyaları, muzeylər yaradılmışdır.\" (Mağazalar qeyd olunmur)."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "İnformasiya resursları ilə işin ilk mərhələsi hansıdır?",
+    "options": {
+      "A": "Məqsədin müəyyən edilməsi",
+      "B": "İnformasiyanın toplanması",
+      "C": "İnformasiyanın yayılması",
+      "D": "Təqdimolunma formasının seçilməsi"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"İnformasiya resursları ilə işi aşağıdakı mərhələlərə bölmək olar. Məqsədin müəyyən edilməsi ⇩ İnformasiyanın toplanması...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "İnformasiya resursları ilə iş mərhələlərinin sonuncusu (beşinci) hansıdır?",
+    "options": {
+      "A": "İnformasiyanın yayılması (ötürülməsi)",
+      "B": "İnformasiyanın qruplaşdırılması",
+      "C": "İnformasiyanın toplanması",
+      "D": "Məqsədin müəyyən edilməsi"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Nəhayət, beşinci mərhələ hazırlanmış resursun yayılmasıdır – onun başqalarına çatdırılmasıdır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Gərəkli informasiyanı toplamaq üçün hansı mənbədən istifadə oluna bilər?",
+    "options": {
+      "A": "Ensiklopediyalardan",
+      "B": "Yalnız qəzetlərdən",
+      "C": "Televiziyadan",
+      "D": "Hesablama maşınlarından"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd edilir: \"Gərəkli informasiyanı dərsliklərdən, ensiklopediyalardan, sorğu kitablarından, İnternetdən əldə etmək olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Təqdimatın mövzusunu seçmək informasiya resursları ilə işin hansı mərhələsinə aiddir?",
+    "options": {
+      "A": "Görüləcək işin məqsədinin müəyyənləşdirilməsinə",
+      "B": "İnformasiyanın qruplaşdırılmasına",
+      "C": "Təqdimolunma formasının seçilməsinə",
+      "D": "İnformasiyanın yayılmasına"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Öncə təqdimatın mövzusunu seçdiniz, başqa sözlə, görəcəyiniz işin məqsədini müəyyənləşdirdiniz:\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Toplanmış materialların gözdən keçirilməsi və əlaqəli informasiyaların seçilməsi hansı mərhələdə həyata keçirilir?",
+    "options": {
+      "A": "İnformasiyanın qruplaşdırılması (üçüncü mərhələ)",
+      "B": "İnformasiyanın toplanması (ikinci mərhələ)",
+      "C": "İnformasiyanın yayılması (beşinci mərhələ)",
+      "D": "Təqdimolunma formasının seçilməsi (dördüncü mərhələ)"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Üçüncü mərhələdə topladığınız materialları gözdən keçirdiniz və əlaqəli informasiyaları qruplaşdırdınız\"."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Aşağıdakılardan hansı hazırlanan informasiya resursunun yayımlanması (yayılması) üsulu deyil?",
+    "options": {
+      "A": "Materialları gözdən keçirib əlaqəli məlumatları qruplaşdırmaq",
+      "B": "Müəyyən auditoriya qarşısında çıxış etmək",
+      "C": "Çap edib əlaqədar şəxslərə paylamaq",
+      "D": "Hansısa müsabiqəyə təqdim etmək"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətndə yayılma mərhələsi haqqında qeyd edilir: \"Bunun üçün müəyyən auditoriya qarşısında çıxış etmək, onu çap edib əlaqədar şəxslərə paylamaq, diskə yazıb dostlara vermək, hansısa müsabiqəyə təqdim etmək olar.\" Materialları qruplaşdırmaq isə qruplaşdırma mərhələsinə aiddir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Hansı hal informasiya resursunun dördüncü mərhələsinə, yəni təqdimolunma formasının seçilməsinə aid ola bilər?",
+    "options": {
+      "A": "Kağızda çap etməyə və ya İnternetdə yerləşdirməyə qərar vermək",
+      "B": "Əlaqəli informasiyaları bölmələrə ayırmaq",
+      "C": "Dərsliklərdən yeni məlumatlar axtarmaq",
+      "D": "Diskə yazıb dostlara vermək"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd edilir: \"Növbəti, dördüncü mərhələ uyğun təqdimolunma formasının seçilməsidir. ... kağızda çap edilə, İnternetdə yerləşdirilə bilər.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "\"Yer səthində hansı coğrafi obyektlər var, dağlar necə əmələ gəlib\" kimi mövzularda məlumatlar axtarmaq informasiya resursları ilə işin hansı mərhələsidir?",
+    "options": {
+      "A": "İnformasiyanın toplanması",
+      "B": "İnformasiyanın yayılması",
+      "C": "Təqdimolunma formasının seçilməsi",
+      "D": "İnformasiyanın qruplaşdırılması"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd edilir: \"Sonrakı addımda verilmiş mövzuda informasiya topladınız: Yer səthində hansı coğrafi obyektlər var, Yerin daxili quruluşu necədir, dağlar necə əmələ gəlib...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "İnformasiya resursları tərifinə əsasən, bu resurslar ilk növbədə nələrin emalı nəticəsində alınan biliklər hesab olunur?",
+    "options": {
+      "A": "Elm və texnika sahəsində əldə edilmiş faktların, informasiyaların",
+      "B": "Yalnız təbiət hadisələrinin vizual müşahidəsinin",
+      "C": "Rəsm qalereyalarında saxlanılan incəsənət əsərlərinin",
+      "D": "İnternet üzərindən əldə olunan qeyri-rəsmi məlumatların"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd edilir: \"Bu resurslar, ilk növbədə, elm və texnika sahəsində əldə edilmiş faktların, informasiyaların emalı nəticəsində alınan biliklərdir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "İnformasiya resursları ilə işin dördüncü və beşinci mərhələlərinin fərqini hansı variant düzgün ifadə edir?",
+    "options": {
+      "A": "Dördüncü mərhələdə formanın (məsələn, elektron, kağız) seçimi baş verir, beşinci mərhələdə isə həmin formada hazırlanmış resurs başqalarına çatdırılır.",
+      "B": "Dördüncü mərhələ yalnız elektron təqdimat formasını nəzərdə tutur, beşinci mərhələ isə yalnız onun çap edilməsidir.",
+      "C": "Dördüncü mərhələ informasiyaların toplanmasıdır, beşinci mərhələ isə onların gözdən keçirilməsidir.",
+      "D": "Dördüncü mərhələdə auditoriya qarşısında çıxış edilir, beşinci mərhələdə materiallar qruplaşdırılır."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə dördüncü mərhələ \"təqdimolunma formasının seçilməsidir (elektron, kağızda çap və s.)\", beşinci mərhələ isə \"hazırlanmış resursun yayılmasıdır – onun başqalarına çatdırılmasıdır\" şəklində izah olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Hansı ardıcıllıq informasiya resursları ilə iş mərhələlərini tam və düzgün əks etdirir?",
+    "options": {
+      "A": "Məqsədin müəyyən edilməsi ➔ İnformasiyanın toplanması ➔ İnformasiyanın qruplaşdırılması ➔ Təqdimolunma formasının seçilməsi ➔ İnformasiyanın yayılması",
+      "B": "Məqsədin müəyyən edilməsi ➔ İnformasiyanın qruplaşdırılması ➔ İnformasiyanın toplanması ➔ İnformasiyanın yayılması ➔ Təqdimolunma formasının seçilməsi",
+      "C": "İnformasiyanın toplanması ➔ Məqsədin müəyyən edilməsi ➔ İnformasiyanın qruplaşdırılması ➔ Təqdimolunma formasının seçilməsi ➔ İnformasiyanın yayılması",
+      "D": "Məqsədin müəyyən edilməsi ➔ İnformasiyanın toplanması ➔ Təqdimolunma formasının seçilməsi ➔ İnformasiyanın qruplaşdırılması ➔ İnformasiyanın yayılması"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "sintez",
+    "explanation": "Mətndəki ardıcıllıq bu cürdür: \"Məqsədin müəyyən edilməsi ⇩ İnformasiyanın toplanması ⇩ İnformasiyanın qruplaşdırılması ⇩ Təqdimolunma formasının seçilməsi ⇩ İnformasiyanın yayılması (ötürülməsi)\"."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Təqdimatın hazırlanması zamanı hər slayd üçün hansı informasiyaların yerləşəcəyinin müəyyən edilməsi mərhələsi mətndə necə adlandırılır?",
+    "options": {
+      "A": "İnformasiyanın qruplaşdırılması",
+      "B": "Təqdimolunma formasının seçilməsi",
+      "C": "Məqsədin müəyyənləşdirilməsi",
+      "D": "İnformasiyanın yayılması"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Üçüncü mərhələdə topladığınız materialları gözdən keçirdiniz və əlaqəli informasiyaları qruplaşdırdınız ... Hansı slaydda hansı informasiyaların yerləşəcəyini müəyyən etdiniz.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "book_id": "informatika-6",
+    "pages": "Səhifə aralığı",
+    "passport": "06-004-0101-B001-21-",
+    "question": "Mətndə \"müəyyən auditoriya qarşısında çıxış etmək, diskə yazıb dostlara vermək\" fəaliyyətləri informasiya resursunun hansı xüsusiyyəti ilə əlaqələndirilir?",
+    "options": {
+      "A": "Onun başqalarına çatdırılması (yayılması)",
+      "B": "Onun elm və texnika sahəsində əldə edilmiş fakt olması",
+      "C": "Onun müxtəlif sistemlərdə (arxiv, muzey və s.) saxlanılması",
+      "D": "Onun ilk olaraq toplanması prosesi"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd edilir: \"Nəhayət, beşinci mərhələ hazırlanmış resursun yayılmasıdır – onun başqalarına çatdırılmasıdır. Bunun üçün müəyyən auditoriya qarşısında çıxış etmək... diskə yazıb dostlara vermək...\""
+  }
+]

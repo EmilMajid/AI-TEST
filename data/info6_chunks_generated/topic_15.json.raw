@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Əsl başsındıran məsələnin həlli nə tələb edir?",
+    "options": {
+      "A": "Dərin zehni fəaliyyət, ixtiraçılıq, məntiqi və alqoritmik düşüncə",
+      "B": "Yalnız fiziki güc və sürət",
+      "C": "Heç bir xüsusi fəaliyyət və bilik",
+      "D": "Yalnız təsadüfi ardıcıl seçimlər"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Ancaq əsl başsındıran məsələnin həlli dərin zehni fəaliyyət, ixtiraçılıq, məntiqi və alqoritmik düşüncə tələb edir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Məsələ 1-də təsvir olunan ensiz, uzun şəffaf boruda cəmi neçə kürəcik var?",
+    "options": {
+      "A": "8",
+      "B": "4",
+      "C": "10",
+      "D": "5"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Məsələ 1. Ensiz, uzun şəffaf boruda 8 kürəcik var:\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Borunun sol tərəfində yerləşən kürəciklərin sayı və rəngi necədir?",
+    "options": {
+      "A": "Dörd qara kürəcik",
+      "B": "Dörd ağ kürəcik",
+      "C": "Səkkiz qara kürəcik",
+      "D": "İki ağ, iki qara kürəcik"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"dörd qara kürəcik solda, azca iri dörd ağ kürəcik isə sağda.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Borunun sağ tərəfində yerləşən ağ kürəciklərin qara kürəciklərdən fərqləndirici xüsusiyyəti nədir?",
+    "options": {
+      "A": "Azca iridirlər",
+      "B": "Daha kiçikdirlər",
+      "C": "Fərqli formadadırlar",
+      "D": "Ağırdırlar"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"azca iri dörd ağ kürəcik isə sağda.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Borunun orta hissəsinin divarındakı oyuğa neçə kürəcik yerləşə bilər?",
+    "options": {
+      "A": "Yalnız bir kürəcik",
+      "B": "İki kürəcik",
+      "C": "Dörd kürəcik",
+      "D": "Səkkiz kürəcik"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Bu oyuğa yalnız bir (ağ, yaxud qara) kürəcik yerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Borunun sağ ucundakı deşikdən hansı kürəciklər keçə bilmir?",
+    "options": {
+      "A": "Ağ kürəciklər",
+      "B": "Qara kürəciklər",
+      "C": "Hər ikisi",
+      "D": "Heç biri"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Həmin deşikdən qara kürəcik keçə bilir, ağ kürəcik isə keçə bilmir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Qara kürəcikləri borudan diyirlədib çıxarmaq üçün təsvir olunan hərəkətlər ardıcıllığı neçə dəfə təkrarlanmalıdır?",
+    "options": {
+      "A": "4",
+      "B": "2",
+      "C": "8",
+      "D": "1"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Aşağıdakı hərəkətlər ardıcıllığını 4 dəfə təkrarlamaq lazımdır:\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Birxətli dəmir yolunda qarşı-qarşıya gələn qatarların hər birində neçə vaqon var?",
+    "options": {
+      "A": "10 vaqon",
+      "B": "5 vaqon",
+      "C": "2 vaqon",
+      "D": "8 vaqon"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Onların hər birində 10 vaqon var.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Qatarların görüşdüyü yolayrıcının qollarına (A və B) ən çoxu nə qədər vaqon yerləşə bilir?",
+    "options": {
+      "A": "5 vaqon və bir lokomotiv",
+      "B": "10 vaqon",
+      "C": "2 vaqon və bir lokomotiv",
+      "D": "Yalnız 5 vaqon"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Qatarların görüşdüyü yolayrıcı iki qoldan ibarətdir ( A və B ) və onların hər birinə ən çoxu 5 vaqon və bir lokomotiv yerləşir.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Adada yaşayan 'gopçular' tayfasının əsas xüsusiyyəti nədir?",
+    "options": {
+      "A": "Həmişə yalan danışırlar",
+      "B": "Həmişə düz danışırlar",
+      "C": "Bəzən düz, bəzən yalan danışırlar",
+      "D": "Yalnız bələdçilik edirlər"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Mətndə qeyd olunur: \"Gapçılar həmişə düz, gopçular isə yalan danışırdılar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Yeni xörəyin hazırlanma qaydasında ərzaq məhsullarının birinin adında səhv buraxıldığından aşpaz onun adını oxuya bilmədikdə alqoritmin hansı xassəsi pozulmuş olur?",
+    "options": {
+      "A": "Müəyyənlik",
+      "B": "Kütləvilik",
+      "C": "Diskretlik",
+      "D": "Nəticəlilik"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Mətndəki ümumiləşdirici sualda qeyd olunur: \"Yeni xörəyin hazırlanma qaydasında ərzaq məhsullarının birinin adında səhv buraxıldığından aşpaz onun adını oxuya bilmədi. Bu zaman alqoritmin hansı xassəsi pozulmuşdu? ... B) müəyyənlik\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Qara kürəcikləri borudan çıxarmaq alqoritmində 2-ci addım kimi hansı əməliyyat göstərilmişdir?",
+    "options": {
+      "A": "Qalan kürəcikləri diyirlədib borunun sol tərəfinə keçirtmək.",
+      "B": "Qara kürəciyin birini diyirlədərək oyuğa salmaq.",
+      "C": "Qara kürəciyi oyuqdan çıxarmaq.",
+      "D": "Bütün kürəcikləri borunun sağına diyirlətmək."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"2. Qalan kürəcikləri diyirlədib borunun sol tərəfinə keçirtmək.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Məsələ 2-nin (qatarlar) həllində 1-ci addım necə başlayır?",
+    "options": {
+      "A": "Sağdakı qatar geriyə çəkilir və 5 vaqonu açır.",
+      "B": "Sağdakı qatarın lokomotivi A qoluna keçir.",
+      "C": "Soldakı qatar B qolundan yolayrıcını keçir.",
+      "D": "A qolunda dayanan lokomotiv yolun soluna keçir."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"1-ci addım. Sağdakı qatar geriyə çəkilir və 5 vaqonu açır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Amazon cəngəlliklərində çayı keçmək istəyən səyahətçilər barədə verilən məlumatlardan hansı səhvdir?",
+    "options": {
+      "A": "Onların sərəncamında dördnəfərlik qayıq var idi.",
+      "B": "Səyahət edən iki ingilis və iki yerli bələdçi idi.",
+      "C": "İngilislər bələdçilərin adamyeyən olmasından şübhələnirdilər.",
+      "D": "Səyahətçilərin yalnız ikinəfərlik qayığı var idi."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Səyahətçilərin sərəncamında yalnız ikinəfərlik qayıq vardır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "15. Buduqlanan alqoritm",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-15-",
+    "question": "Adaya gələn səyyahın rastlaşdığı birinci sakin barədə deyilənlərdən hansı doğrudur?",
+    "options": {
+      "A": "Səyyah onu özünə bələdçi tutdu.",
+      "B": "O, dərhal gopçular tayfasından olduğunu bildirdi.",
+      "C": "O, adamyeyənlər qəbiləsinə mənsub idi.",
+      "D": "O, hər zaman yalnız yalan danışırdı."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Adaya gələn səyyah qarşısına çıxan ilk sakini özünə bələdçi tutdu.\""
+  }
+]

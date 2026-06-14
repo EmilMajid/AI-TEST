@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-01",
+    "question": "ALPLogo mühitində ekrana ədədlər çıxartmaq üçün hansı komandadan istifadə olunur?",
+    "options": {
+      "A": "yaz",
+      "B": "sil",
+      "C": "ilkinvəziyyət",
+      "D": "qələmiendir"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Əgər ekrana ədədlər çıxartmaq istəyirsinizsə, onda komandanı belə vermək olar: yaz n\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-02",
+    "question": "Alqoritmin yazılışından fərqli olaraq ALPLogo-da şərtdən sonra hansı söz yazılmır?",
+    "options": {
+      "A": "onda",
+      "B": "əgər",
+      "C": "əks halda",
+      "D": "yaz"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Alqoritmin yazılışından fərqli olaraq ALPLogo-da şərtdən sonra 'onda' sözü yazılmır...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-03",
+    "question": "ALPLogo-da ekrana mətn parçasını çıxartmaq üçün mətni hansı işarələr arasında yazmaq lazımdır?",
+    "options": {
+      "A": "dırnaq arasında",
+      "B": "mötərizə arasında",
+      "C": "kvadrat mötərizə arasında",
+      "D": "tək dırnaq arasında"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Əgər ekrana mətn parçasını çıxartmaq lazımdırsa, onda onu dırnaq arasında yazmaq lazımdır. yaz 'mətn'\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-04",
+    "question": "ALPLogo mühitində şərti bildirən ifadələrdə fərqlidir (bərabər deyil) işarəsi necə yazılır?",
+    "options": {
+      "A": "＜＞",
+      "B": "!=",
+      "C": "=/=",
+      "D": "><"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Şərti bildirən ifadələrdə müqayisə işarələrindən istifadə olunur: ... ＜＞ bərabər deyil\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-05",
+    "question": "Şriftin ölçüsünü dəyişmək üçün aşağıdakı komandalardan hansı istifadə olunur?",
+    "options": {
+      "A": "yazınınölçüsü",
+      "B": "şriftinölçüsü",
+      "C": "yaz",
+      "D": "rənginölçüsü"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "\"Şriftin ölçüsünü dəyişmək də olar. Bunun üçün aşağıdakı komandadan istifadə olunur: yazınınölçüsü n\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-06",
+    "question": "ALPLogo-da şərt komandasında “əks halda” necə yazılır?",
+    "options": {
+      "A": "bitişik yazılır",
+      "B": "ayrı yazılır",
+      "C": "tire ilə yazılır",
+      "D": "mötərizədə yazılır"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "\"Alqoritmin yazılışından fərqli olaraq ALPLogo-da şərtdən sonra 'onda' sözü yazılmır, 'əks halda' isə bitişik yazılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-07",
+    "question": "ALPLogo-da yazınınölçüsü komandasında n = 0 olduqda şriftin ölçüsü neçə punkt götürülür?",
+    "options": {
+      "A": "12 punkt",
+      "B": "10 punkt",
+      "C": "14 punkt",
+      "D": "8 punkt"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "\"Burada n – natural ədəddir; n = 0 olduqda şriftin ölçüsü 12 punkt götürülür.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-08",
+    "question": "Şərt ödəndikdə və ya ödənmədikdə bir neçə komandanın və ya komandalar qrupunun yerinə yetirilməsi tələb olunarsa, bu komandalar hansı işarənin içərisində yazılır?",
+    "options": {
+      "A": "kvadrat mötərizələrin [...]",
+      "B": "dairəvi mötərizələrin (...)",
+      "C": "fiqurlu mötərizələrin {...}",
+      "D": "dırnaq işarələrinin \"...\""
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "\"Gördüyünüz kimi, bir komanda və ya komandalar qrupu kvadrat mötərizələrin [...] içərisində yazılır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-09",
+    "question": "“əgər (şərt) [komanda 1] əkshalda [komanda 2]” formasında şərt doğru olmadıqda hansı komanda icra olunacaq?",
+    "options": {
+      "A": "komanda 2",
+      "B": "komanda 1",
+      "C": "hər iki komanda",
+      "D": "heç bir komanda icra olunmayacaq"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "\"Şərt doğru olduqda komanda 1 , yəni şərtdən sonrakı komanda yerinə yetiriləcək. Əks halda komanda 2 icra olunacaq.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-10",
+    "question": "İndiyədək yazılan proqramlarda komandalar necə yerinə yetirilirdi?",
+    "options": {
+      "A": "yuxarıdan başlayaraq ardıcıl yerinə yetirilirdi və heç bir komanda buraxılmırdı",
+      "B": "yalnız şərt doğru olduqda yerinə yetirilirdi",
+      "C": "ixtiyari ardıcıllıqla yerinə yetirilirdi",
+      "D": "aşağıdan başlayaraq ardıcıl yerinə yetirilirdi"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "qavrama",
+    "explanation": "\"İndiyədək yazdığınız proqramlarda komandalar yuxarıdan başlayaraq ardıcıl yerinə yetirilirdi və heç bir komanda buraxılmırdı.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-11",
+    "question": "Proqramın bəzi hissələrinin icrası nədən asılı olur?",
+    "options": {
+      "A": "müəyyən şərtin doğru olub-olmamasından",
+      "B": "dəyişənlərin sayından",
+      "C": "proqramın uzunluğundan",
+      "D": "istifadə olunan rənglərdən"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Başqa sözlə, proqramın bəzi hissələrinin icrası müəyyən şərtin doğru olub-olmamasından asılı olur.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-12",
+    "question": "Dəyişənin müəyyən qiymətində bir fiqur, başqa qiymətlərində başqa fiqur çəkmək tələb olunduqda hansı komandadan istifadə etmək məqsədəuyğundur?",
+    "options": {
+      "A": "şərt komandasından",
+      "B": "dövr komandasından",
+      "C": "sil komandasından",
+      "D": "qələmiqaldır komandasından"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "\"Məsələn, dəyişənin müəyyən qiymətində bir fiqur, başqa qiymətlərində başqa fiqur çəkmək tələb oluna bilər. Aşağıda belə bir proqram nümunəsi ilə tanış olacaqsınız. ALPLogo mühitində şərt komandası...\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-13",
+    "question": "Aşağıdakı proqram fraqmentinin icrasından sonra ekranda nə əks olunacaq?\nk = -45\nəgər (k > 0) [ yaz “k müsbət ədəddir”] \nəkshalda [ yaz “k mənfi ədəddir”]",
+    "options": {
+      "A": "k mənfi ədəddir",
+      "B": "k müsbət ədəddir",
+      "C": "k = -45",
+      "D": "heç nə əks olunmayacaq"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "\"k = -45 olduqda (k > 0) şərti ödənmədiyinə görə əkshalda blokundakı komanda icra olunacaq və ekrana 'k mənfi ədəddir' yazısı çıxacaq. (Öyrəndiklərinizi yoxlayın bölməsindəki 2-ci tapşırıq əsasında)\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-14",
+    "question": "ALPLogo mühitində müxtəlif çəkiyə malik c1=100 və c2=120 limonlarından yüngül olanı tapan proqramda şərt hansı şəkildə yoxlanılır?",
+    "options": {
+      "A": "(c1 ＜ c2)",
+      "B": "(c1 ＞ c2)",
+      "C": "(c1 = c2)",
+      "D": "(c1 ＜＞ c2)"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "\"Limonların çəkilərini uyğun olaraq c1 və c2 dəyişənləri ilə işarə edək... əgər (c1 ＜ c2) [ yaz '1-ci limon yüngüldür'] əkshalda [ yaz '2-ci limon yüngüldür']\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "17. Proqramlaşdırma mühitində seçim",
+    "book_id": "informatika-6",
+    "pages": "N/A",
+    "passport": "06-004-0101-B001-17-15",
+    "question": "ALPLogo-da yazılan \"əgər (r = 4) [irəli x sağa 120 irəli x sağa 120 irəli x sağa 120 ] əkshalda [irəli x sağa 90 irəli x sağa 90 irəli x sağa 90 irəli x sağa 90 ]\" proqramında r=1 olduqda hansı fiqur çəkiləcək?",
+    "options": {
+      "A": "kvadrat",
+      "B": "üçbucaq",
+      "C": "beşbucaqlı",
+      "D": "altıbucaqlı"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "\"r = 1 olduqda r=4 şərti ödənmir deyə 'əkshalda' hissəsindəki dörd dəfə təkrarlanan irəli və sağa 90 komandaları icra olunaraq kvadrat çəkiləcək. (Nümunə proqramına əsasən)\""
+  }
+]

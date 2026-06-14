@@ -1,0 +1,137 @@
+[
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T1",
+    "Prompt": "Mövzu: 1. Kompüter necə işləyir. Mətn faylı: data/info6_chunks/topic_real_1.txt. TİK: 06-004-0101-B001-01-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_1.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T2",
+    "Prompt": "Mövzu: 2. İnformasiya harada saxlanılır. Mətn faylı: data/info6_chunks/topic_real_2.txt. TİK: 06-004-0101-B001-02-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_2.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T3",
+    "Prompt": "Mövzu: 3. Ədədi informasiya necə kodlaşdırılır. Mətn faylı: data/info6_chunks/topic_real_3.txt. TİK: 06-004-0101-B001-03-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_3.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T4",
+    "Prompt": "Mövzu: 4. İnformasiya nə qədər yer tutur. Mətn faylı: data/info6_chunks/topic_real_4.txt. TİK: 06-004-0101-B001-04-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_4.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T5",
+    "Prompt": "Mövzu: 5. Proqramı başlatmağın bir neçə üsulu. Mətn faylı: data/info6_chunks/topic_real_5.txt. TİK: 06-004-0101-B001-05-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_5.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T6",
+    "Prompt": "Mövzu: 6. Şəklin kompüterdə saxlanması və çapı. Mətn faylı: data/info6_chunks/topic_real_6.txt. TİK: 06-004-0101-B001-06-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_6.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T7",
+    "Prompt": "Mövzu: 7. Mətnin görünüşünün yaxşılaşdırılması. Mətn faylı: data/info6_chunks/topic_real_7.txt. TİK: 06-004-0101-B001-07-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_7.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T8",
+    "Prompt": "Mövzu: 8. Abzasın formatlanması. Mətn faylı: data/info6_chunks/topic_real_8.txt. TİK: 06-004-0101-B001-08-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_8.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T9",
+    "Prompt": "Mövzu: 9. Elektron təqdimatlar. Mətn faylı: data/info6_chunks/topic_real_9.txt. TİK: 06-004-0101-B001-09-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_9.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T10",
+    "Prompt": "Mövzu: 10. Slaydlarla iş. Mətn faylı: data/info6_chunks/topic_real_10.txt. TİK: 06-004-0101-B001-10-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_10.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T11",
+    "Prompt": "Mövzu: 11. Obyektin informasiya modeli. Mətn faylı: data/info6_chunks/topic_real_11.txt. TİK: 06-004-0101-B001-11-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_11.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T12",
+    "Prompt": "Mövzu: 12. Alqoritmin xassələri. Mətn faylı: data/info6_chunks/topic_real_12.txt. TİK: 06-004-0101-B001-12-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_12.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T13",
+    "Prompt": "Mövzu: 13. Alqoritmin növləri. Mətn faylı: data/info6_chunks/topic_real_13.txt. TİK: 06-004-0101-B001-13-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_13.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T14",
+    "Prompt": "Mövzu: 14. Dövri alqoritmlər. Mətn faylı: data/info6_chunks/topic_real_14.txt. TİK: 06-004-0101-B001-14-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_14.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T15",
+    "Prompt": "Mövzu: 15. Əyləncəli məsələlər. Mətn faylı: data/info6_chunks/topic_real_15.txt. TİK: 06-004-0101-B001-15-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_15.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T16",
+    "Prompt": "Mövzu: 16. Proqramda dəyişənlər. Mətn faylı: data/info6_chunks/topic_real_16.txt. TİK: 06-004-0101-B001-16-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_16.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T17",
+    "Prompt": "Mövzu: 17. Proqramlaşdırma mühitində seçim. Mətn faylı: data/info6_chunks/topic_real_17.txt. TİK: 06-004-0101-B001-17-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_17.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T18",
+    "Prompt": "Mövzu: 18. Proqramlaşdırma mühitində dövr. Mətn faylı: data/info6_chunks/topic_real_18.txt. TİK: 06-004-0101-B001-18-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_18.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T19",
+    "Prompt": "Mövzu: 19. Dövrlər və naxışlar. Mətn faylı: data/info6_chunks/topic_real_19.txt. TİK: 06-004-0101-B001-19-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_19.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T20",
+    "Prompt": "Mövzu: 20. Proqramlaşdırma mühitində musiqi. Mətn faylı: data/info6_chunks/topic_real_20.txt. TİK: 06-004-0101-B001-20-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_20.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T21",
+    "Prompt": "Mövzu: 21. İnformasiya resursları ilə iş mərhələləri. Mətn faylı: data/info6_chunks/topic_real_21.txt. TİK: 06-004-0101-B001-21-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_21.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T22",
+    "Prompt": "Mövzu: 22. Dünya hörümçək torunda gəzişmə. Mətn faylı: data/info6_chunks/topic_real_22.txt. TİK: 06-004-0101-B001-22-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_22.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T23",
+    "Prompt": "Mövzu: 23. İnternetdə axtarış. Mətn faylı: data/info6_chunks/topic_real_23.txt. TİK: 06-004-0101-B001-23-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_23.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T24",
+    "Prompt": "Mövzu: 24. Elektron poçt. Mətn faylı: data/info6_chunks/topic_real_24.txt. TİK: 06-004-0101-B001-24-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_24.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T25",
+    "Prompt": "Mövzu: 25. Elektron poçtla məktublaşma. Mətn faylı: data/info6_chunks/topic_real_25.txt. TİK: 06-004-0101-B001-25-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_25.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T26",
+    "Prompt": "Mövzu: ALPLogo proqramlaşdırma mühitinin komandaları. Mətn faylı: data/info6_chunks/topic_real_26.txt. TİK: 06-004-0101-B001-26-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_26.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  },
+  {
+    "TypeName": "informatika_test_generator_6",
+    "Role": "Info6_T27",
+    "Prompt": "Mövzu: Dərslikdə işlənmiş ingiliscə söz və ifadələr. Mətn faylı: data/info6_chunks/topic_real_27.txt. TİK: 06-004-0101-B001-27-. 15 test (5 sadə, 5 orta, 5 çətin) yarat. Nəticəni `write_to_file` aləti ilə tam C:/Users/User/Downloads/azerbaijanaiplatform/data/info6_generated/topic_27.json faylına yaz. Mənə heç bir JSON kodu GÖNDƏRMƏ! Yalnız 'Hazırdır' mesajı göndər."
+  }
+]

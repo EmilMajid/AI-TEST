@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-01",
+    "question": "Bir dövrün başqa dövrün içində yerləşməsi necə adlanır?",
+    "options": {
+      "A": "Təkrar dövr",
+      "B": "İç-içə dövrlər",
+      "C": "Çoxbucaqlı dövrlər",
+      "D": "Xarici dövrlər"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Belə dövrlər iç-içə dövrlər adlanır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-02",
+    "question": "ALPLogo mühitində başqa düzgün çoxbucaqlı fiqurlar almaq üçün nələri dəyişmək olar?",
+    "options": {
+      "A": "Yalnız dövrlərin sayını",
+      "B": "Təkrarlanmaların sayını və dönmə bucağını",
+      "C": "Fiqurun rəngini və qələmin ölçüsünü",
+      "D": "Yalnız dönmə bucağını"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"Təkrarlanmaların sayını və dönmə bucağını dəyişməklə başqa düzgün çoxbucaqlı fiqurlar da almaq olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-03",
+    "question": "Eyni komandalar qrupunun təkrar-təkrar icra olunması üçün hansı üsuldan istifadə etmək daha məqsədəuyğundur?",
+    "options": {
+      "A": "Komandaları hər dəfə yenidən yazmaq",
+      "B": "Komandaları silmək",
+      "C": "Onları bir dövrdə birləşdirmək",
+      "D": "Qələmi qaldırmaq"
+    },
+    "answer": "C",
+    "difficulty": "sadə",
+    "bloom": "qavrama",
+    "explanation": "Mətndə qeyd olunur: \"Onların özlərini də bir dövrdə birləşdirmək olar:\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-04",
+    "question": "Eyni fiqurların təkrar-təkrar yerini dəyişmək və ya fırlatmaqla nə yaratmaq olar?",
+    "options": {
+      "A": "Yeni proqramlaşdırma dili",
+      "B": "Maraqlı təsvirlər",
+      "C": "Mürəkkəb hesablamalar",
+      "D": "Səs effektləri"
+    },
+    "answer": "B",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə qeyd olunur: \"Eyni fiqurların təkrar-təkrar yerini dəyişmək və ya fırlatmaqla maraqlı təsvirlər yaratmaq olar.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-05",
+    "question": "\"təkrarla 36 [ irəli 10 sağa 10 ]\" komandası ilə ALPLogo mühitində hansı fiqur çəkilir?",
+    "options": {
+      "A": "Çevrə",
+      "B": "Kvadrat",
+      "C": "Altıbucaqlı",
+      "D": "Üçbucaq"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Mətndə \"Bağa birinci çevrəni çəkdikdən ( təkrarla 36 [ irəli 10 sağa 10] )\" cümləsində bu komandanın çevrə çəkdiyi göstərilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-06",
+    "question": "Dörd ədəd çevrə çəkmək və hər çevrədən sonra 90 dərəcə sağa dönmək üçün verilmiş komandalar hansı formada daha qısa yazıla bilər?",
+    "options": {
+      "A": "təkrarla 4 [təkrarla 36 [ irəli 10 sağa 10] sağa 90]",
+      "B": "təkrarla 36 [təkrarla 4 [ irəli 10 sağa 10] sağa 90]",
+      "C": "təkrarla 4 [ irəli 10 sağa 90]",
+      "D": "təkrarla 90 [təkrarla 36 [ irəli 10 sağa 10] sağa 4]"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə dörd dəfə təkrar olunan komandalar üçün deyilir: \"Göründüyü kimi, eyni komandalar qrupu dörd dəfə təkrar olunur. Onların özlərini də bir dövrdə birləşdirmək olar\"."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-07",
+    "question": "\"təkrarla 20[təkrarla 4 [irəli 100 sağa 90] sağa 18]\" proqramının icrası zamanı Bağa nə çəkir və neçə dəfə təkrarlayır?",
+    "options": {
+      "A": "Çevrə çəkir, 20 dəfə təkrarlayır",
+      "B": "Kvadrat çəkir, 20 dəfə təkrarlayır",
+      "C": "Altıbucaqlı çəkir, 18 dəfə təkrarlayır",
+      "D": "Üçbucaq çəkir, 4 dəfə təkrarlayır"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə verilmiş nümunədə yazılıb: \"Proqramda kvadratın çəkilməsi 20 dəfə təkrarlanır.\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-08",
+    "question": "Bağa kvadratı çəkdikdən sonra neçə dərəcə sağa dönməlidir ki, ümumilikdə 20 dənə kvadrat çəkilərək tam bir dövr tamamlansın?",
+    "options": {
+      "A": "18 dərəcə",
+      "B": "20 dərəcə",
+      "C": "90 dərəcə",
+      "D": "36 dərəcə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndə qeyd olunur: \"Bağa növbəti kvadratı çəkdikdən sonra 18 dərəcə sağa dönür (360 : 20 = 18).\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-09",
+    "question": "Mətndəki nümunədə \"təkrarla 3 [ irəli 200 sağa 120 ]\" komandası ilə hansı sadə fiqur çəkilir?",
+    "options": {
+      "A": "Kvadrat",
+      "B": "Üçbucaq",
+      "C": "Çevrə",
+      "D": "Səkkizbucaqlı"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətndəki \"təkrarla 3 [ irəli 200 sağa 120]\" komandası fiqurun 3 tərəfi olduğunu göstərir ki, bu da üçbucaqdır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-10",
+    "question": "\"təkrarla 36 [ irəli 10 sağa 10]\" dövrü icra olunduqdan sonra \"sağa 90\" komandası niyə istifadə olunur?",
+    "options": {
+      "A": "Fiquru silmək üçün",
+      "B": "Növbəti çevrənin çəkilməsinə keçmək üçün",
+      "C": "Proqramı dayandırmaq üçün",
+      "D": "Xəttin rəngini dəyişmək üçün"
+    },
+    "answer": "B",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur: \"Bağa birinci çevrəni çəkdikdən ... sonra növbəti çevrəni çəkmək üçün 90 dərəcə sağa dönür ( sağa 90 ) .\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-11",
+    "question": "Mətndəki \"təkrarla 20[təkrarla 4 [irəli 100 sağa 90] sağa 18]\" nümunəsinə əsaslanaraq, dönmə bucağının 18 dərəcə olmasının səbəbi hansı hesablama ilə izah olunur?",
+    "options": {
+      "A": "360 dərəcənin 20-yə bölünməsi ilə",
+      "B": "100 addımın 4-ə bölünməsi ilə",
+      "C": "36 dərəcənin 2-yə bölünməsi ilə",
+      "D": "90 dərəcənin 5-ə bölünməsi ilə"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndəki izahatda açıq şəkildə yazılıb: \"Bağa növbəti kvadratı çəkdikdən sonra 18 dərəcə sağa dönür (360 : 20 = 18).\""
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-12",
+    "question": "Verilmiş \"təkrarla 4 [ təkrarla 36 [ irəli 10 sağa 10] sağa 90 ]\" proqramının məqsədi mətndəki hansı prosesi avtomatlaşdırmaqdır?",
+    "options": {
+      "A": "4 ədəd kvadrat çəkməyi",
+      "B": "36 dəfə çevrə çəkməyi",
+      "C": "4 ədəd çevrə çəkərək onları 90 dərəcə aralıqla yerləşdirməyi",
+      "D": "Bir böyük və dörd kiçik çevrə çəkməyi"
+    },
+    "answer": "C",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə ardıcıl çevrə çəkib sağa 90 dərəcə dönmənin dörd dəfə yazıldığı və bunların \"eyni komandalar qrupu dörd dəfə təkrar olunur. Onların özlərini də bir dövrdə birləşdirmək olar\" deyilərək iç-içə dövr kimi göstərildiyi qeyd olunur."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-13",
+    "question": "\"qələmiendir təkrarla 6 [ təkrarla 3 [ irəli 200 sağa 120] sağa 60 ]\" komandası verilərsə, xarici dövr neçə dəfə icra olunacaq və naxışı təşkil edən sadə fiqur nə olacaq?",
+    "options": {
+      "A": "Xarici dövr 3 dəfə icra olunur, fiqur altıbucaqlıdır",
+      "B": "Xarici dövr 6 dəfə icra olunur, fiqur üçbucaqdır",
+      "C": "Xarici dövr 120 dəfə icra olunur, fiqur kvadratdır",
+      "D": "Xarici dövr 200 dəfə icra olunur, fiqur çevrədir"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə \"təkrarla ... [ təkrarla 3 [ irəli 200 sağa 120] sağa ...]\" sxeminə əsasən xarici dövrün sayı 6, daxildəki fiqur isə üçbucaqdır (\"təkrarla 3 [ irəli 200 sağa 120]\")."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-14",
+    "question": "Mətndə verilmiş \"təkrarla 20[təkrarla 4 [irəli 100 sağa 90] sağa 18]\" kodu daxilində bilavasitə kvadratı quran komanda bloku hansıdır?",
+    "options": {
+      "A": "təkrarla 20",
+      "B": "təkrarla 4 [irəli 100 sağa 90]",
+      "C": "sağa 18",
+      "D": "irəli 100 sağa 18"
+    },
+    "answer": "B",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Mətndə qeyd olunur ki, \"təkrarla 20[təkrarla 4 [irəli 100 sağa 90] sağa 18] Proqramda kvadratın çəkilməsi 20 dəfə təkrarlanır.\" Daxili dövr olan \"təkrarla 4 [irəli 100 sağa 90]\" kvadratı özü quran komandadır."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "19. Dövrlər və naxışlar",
+    "book_id": "informatika-6",
+    "pages": "1-5",
+    "passport": "06-004-0101-B001-19-15",
+    "question": "Mətndə iç-içə dövrlərin təyinatı hansı fikirlə daha dəqiq ifadə edilmişdir?",
+    "options": {
+      "A": "Bir dövrün başqa dövrün içində yerləşməsi naxışların yaranmasını təmin edir",
+      "B": "Proqramın işləmə sürətini artırmaq üçün istifadə edilir",
+      "C": "Fiqurun rənglərini mütəmadi dəyişmək üçündür",
+      "D": "Bağa yalnız bir istiqamətdə hərəkət edə bilsin deyə tətbiq edilir"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "sintez",
+    "explanation": "Mətndə deyilir: \"Deməli, bir dövr başqa dövrün içində yerləşə bilər. Belə dövrlər iç-içə dövrlər adlanır.\" və bu üsulla \"Eyni fiqurların təkrar-təkrar yerini dəyişmək və ya fırlatmaqla maraqlı təsvirlər yaratmaq olar.\" cümləsi ilə izah edilir."
+  }
+]

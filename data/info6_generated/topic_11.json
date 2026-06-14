@@ -1,0 +1,287 @@
+[
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-01",
+    "question": "Obyekt haqqında yazıda onun əsas əlamətləri göstərilmişsə, onu nə hesab etmək olar?",
+    "options": {
+      "A": "İnformasiya modeli",
+      "B": "Əşya",
+      "C": "Hadisə",
+      "D": "Alqoritm"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Əgər həmin yazıda obyektin əsas əlamətləri göstərilmişsə, onu obyektin informasiya modeli hesab etmək olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-02",
+    "question": "Qrafik redaktorda çəkilmiş şəkil obyektin nəyidir?",
+    "options": {
+      "A": "İnformasiya modeli",
+      "B": "Səs modeli",
+      "C": "Mətn modeli",
+      "D": "Hesablama modeli"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Obyektin qrafik redaktorda çəkdiyiniz şəkli də onun informasiya modelidir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-03",
+    "question": "İnformasiya modelini başqa hansı şəkillərdə vermək olar?",
+    "options": {
+      "A": "Sxem və cədvəl",
+      "B": "Yalnız cədvəl",
+      "C": "Yalnız sxem",
+      "D": "Səs və video"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "İnformasiya modelini sxem, cədvəl şəklində də vermək olar."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-04",
+    "question": "Obyekti təsvir etmək üçün hansı vasitələrdən istifadə edilir?",
+    "options": {
+      "A": "Mətnlərdən, qrafikadan, cədvəllərdən, sxemlərdən",
+      "B": "Yalnız mətnlərdən",
+      "C": "Yalnız qrafikadan",
+      "D": "Yalnız cədvəllərdən"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "bilik",
+    "explanation": "Obyekti təsvir etmək üçün müxtəlif informasiya modellərindən – mətnlərdən, qrafikadan, cədvəllərdən, sxemlərdən istifadə edilir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-05",
+    "question": "Obyektin fərqli informasiya modellərini nümayiş etdirmək üçün hansı proqramlar gözəl vasitədir?",
+    "options": {
+      "A": "Təqdimat proqramları",
+      "B": "Qrafik redaktorlar",
+      "C": "Mətn redaktorları",
+      "D": "Hesablama cədvəlləri"
+    },
+    "answer": "A",
+    "difficulty": "sadə",
+    "bloom": "anlama",
+    "explanation": "Bu baxımdan təqdimat proqramları obyektin fərqli informasiya modellərini nümayiş etdirmək üçün gözəl vasitədir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-06",
+    "question": "Bülbül haqqında bioqrafik mətn onun hansı modelinə aiddir?",
+    "options": {
+      "A": "İnformasiya modelinə",
+      "B": "Riyazi modelinə",
+      "C": "Maddi modelinə",
+      "D": "Qrafik modelinə"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətnlər obyektin informasiya modellərinə aid olduğundan, Bülbül haqqında bioqrafik məlumat da informasiya modelidir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-07",
+    "question": "Təqdimat proqramlarında obyektin informasiya modeli hansı formalarda verilə bilər?",
+    "options": {
+      "A": "Mətn, şəkil və cədvəl formasında",
+      "B": "Yalnız səs və video formasında",
+      "C": "Yalnız cədvəl və sxem formasında",
+      "D": "Heç biri"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Obyekti təsvir etmək üçün müxtəlif informasiya modellərindən – mətnlərdən, qrafikadan, cədvəllərdən, sxemlərdən istifadə edilir və təqdimat proqramları bunları nümayiş etdirməyə imkan verir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-08",
+    "question": "Görkəmli azərbaycanlıların təqdimatı zamanı hər bir şəxs haqqında informasiya hansı formalarda hazırlana bilər?",
+    "options": {
+      "A": "Slaydlar şəklində, şəkil və mətnlə birlikdə",
+      "B": "Yalnız qrafik fayl kimi",
+      "C": "Yalnız səs faylı kimi",
+      "D": "Heç bir halda təqdim edilə bilməz"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "tətbiq",
+    "explanation": "Mətndəki nümunədə görkəmli azərbaycanlılar haqqında təqdimat hazırlamaq tələb olunur, bu isə şəkil və mətn daxil edilən slaydlar deməkdir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-09",
+    "question": "Nə üçün sxem və cədvəllər də informasiya modeli hesab olunur?",
+    "options": {
+      "A": "Çünki onlar da obyektin əlamətlərini və strukturunu əks etdirir",
+      "B": "Çünki onlar qrafik redaktorda yaradılır",
+      "C": "Çünki onlar yalnız riyaziyyatda istifadə edilir",
+      "D": "Onlar informasiya modeli hesab olunmur"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "təhlil",
+    "explanation": "İnformasiya modelini sxem, cədvəl şəklində də vermək olar, çünki onlar obyektin quruluşunu və əlamətlərini göstərmək üçün vasitədir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-10",
+    "question": "Təqdimat proqramı hansı üstünlüyə malikdir?",
+    "options": {
+      "A": "Müxtəlif informasiya modellərini bir yerdə nümayiş etdirmək imkanı verir",
+      "B": "Yalnız mətnləri redaktə etməyə imkan verir",
+      "C": "Yalnız riyazi hesablamalar aparır",
+      "D": "Kompüterin xarici qurğularını idarə edir"
+    },
+    "answer": "A",
+    "difficulty": "orta",
+    "bloom": "anlama",
+    "explanation": "Təqdimat proqramları obyektin fərqli informasiya modellərini (mətn, qrafika, cədvəl və s.) nümayiş etdirmək üçün gözəl vasitədir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-11",
+    "question": "Aşağıdakılardan hansı obyektin informasiya modelinə aid deyil?",
+    "options": {
+      "A": "Obyektin özü (maddi varlığı)",
+      "B": "Obyektin şəkli",
+      "C": "Obyekt haqqında mətn",
+      "D": "Obyektin quruluş sxemi"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Obyektin özü (maddi nüsxəsi) informasiya modeli deyil, real varlıqdır. İnformasiya modeli obyektin mətni, şəkli, sxemi kimi vasitələrlə təsviridir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-12",
+    "question": "Obyekt haqqında yazıda onun yalnız önəmsiz detalları verilibsə və əsas əlamətləri yoxdursa, bunu dolğun informasiya modeli hesab etmək olarmı?",
+    "options": {
+      "A": "Xeyr, çünki informasiya modeli obyektin əsas əlamətlərini əks etdirməlidir.",
+      "B": "Bəli, hər cür yazı informasiya modelidir.",
+      "C": "Xeyr, çünki yalnız şəkillər informasiya modelidir.",
+      "D": "Bəli, amma yalnız təqdimatda istifadə edilsə."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "qiymətləndirmə",
+    "explanation": "Mətndə qeyd olunur ki, 'Əgər həmin yazıda obyektin əsas əlamətləri göstərilmişsə, onu obyektin informasiya modeli hesab etmək olar.' Əsas əlamətlər yoxdursa, modeli dolğun saymaq olmaz."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-13",
+    "question": "Görkəmli şəxsiyyət haqqında təqdimat hazırlayarkən mətnlə yanaşı şəklin də əlavə edilməsi nə üçün faydalıdır?",
+    "options": {
+      "A": "Obyektin həm vizual, həm də mətn formasında fərqli informasiya modellərini bir araya gətirib daha əhatəli məlumat vermək üçün",
+      "B": "Təqdimatın həcmini artırmaq üçün",
+      "C": "Mətni oxumaq istəməyənlər üçün yalnız şəkil göstərmək məqsədilə",
+      "D": "Şəkillər təqdimat proqramının işləmə sürətini artırdığı üçün"
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "tətbiq",
+    "explanation": "Müxtəlif informasiya modellərindən (mətnlər, qrafika) istifadə edərək obyekti fərqli tərəflərdən dolğun təsvir etmək və nümayiş etdirmək mümkündür."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-14",
+    "question": "Mətn, qrafika, cədvəl və sxem obyektin hansı xüsusiyyətini ifadə edir və harada nümayiş oluna bilər?",
+    "options": {
+      "A": "İnformasiya modelini ifadə edir, təqdimat proqramlarında nümayiş oluna bilər.",
+      "B": "Maddi modelini ifadə edir, yalnız qrafik redaktorda nümayiş olunur.",
+      "C": "Həcmini ifadə edir, yalnız cədvəl redaktorunda nümayiş olunur.",
+      "D": "Hesablama modelini ifadə edir, yalnız mətn redaktorunda nümayiş olunur."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "sintez",
+    "explanation": "Başqa sözlə, obyekti təsvir etmək üçün müxtəlif informasiya modellərindən – mətnlərdən, qrafikadan, cədvəllərdən, sxemlərdən istifadə edilir. Bu baxımdan təqdimat proqramları obyektin fərqli informasiya modellərini nümayiş etdirmək üçün gözəl vasitədir."
+  },
+  {
+    "grade": 6,
+    "subject": "İnformatika",
+    "topic": "11. Obyektin informasiya modeli",
+    "book_id": "informatika-6",
+    "pages": "62",
+    "passport": "06-004-0101-B001-11-15",
+    "question": "Obyektin informasiya modeli nədir və o hansı formalarda təqdim oluna bilər?",
+    "options": {
+      "A": "Obyektin əsas əlamətlərini əks etdirən təsvirdir və mətn, qrafika, cədvəl, sxem formasında ola bilər.",
+      "B": "Yalnız obyektin qrafik şəklidir və təqdimatlarda nümayiş olunur.",
+      "C": "Kompüterdə obyekt haqqında olan proqramdır və yalnız cədvəl formasında olur.",
+      "D": "Obyektin həcmini göstərən kəmiyyətdir və sxemlərlə verilir."
+    },
+    "answer": "A",
+    "difficulty": "çətin",
+    "bloom": "təhlil",
+    "explanation": "Əgər həmin yazıda obyektin əsas əlamətləri göstərilmişsə, onu obyektin informasiya modeli hesab etmək olar... obyekti təsvir etmək üçün müxtəlif informasiya modellərindən – mətnlərdən, qrafikadan, cədvəllərdən, sxemlərdən istifadə edilir."
+  }
+]
