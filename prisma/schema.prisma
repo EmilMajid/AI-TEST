@@ -22,6 +22,7 @@ model User {
   birthDate DateTime?
   accountType String // "student" or "parent"
   role      String?  // "parent", "teacher", "director" (for non-students)
+  isGlobalAdmin Boolean @default(false)
   class     String?  // Only for students (1-11)
   
   // JWT token for session management
@@ -63,6 +64,7 @@ model ParentStudentLink {
   student         User      @relation("Student", fields: [studentId], references: [id], onDelete: Cascade)
   relationshipType String   // "parent", "guardian", "teacher", "tutor"
   status          String    @default("active") // "active", "pending", "inactive"
+  accessLevel     String    @default("full")   // "full", "partial", "blocked"
   approvedAt      DateTime?
   linkedAt        DateTime  @default(now())
   
@@ -91,6 +93,7 @@ model Question {
   difficulty      String    // "easy", "medium", "hard"
   topic           String
   bloomLevel      String    // "knowledge", "comprehension", "application", "analysis", "synthesis", "evaluation"
+  status          String    @default("active") // "active", "draft", "flagged"
   testDataId      Int?
   
   testResults     TestResult[]
@@ -152,4 +155,12 @@ model AuditLog {
   @@index([userId])
   @@index([action])
   @@index([createdAt])
+}
+
+model SystemSettings {
+  id          Int      @id @default(autoincrement())
+  key         String   @unique
+  value       String   // "true" or "false" or JSON
+  description String?
+  updatedAt   DateTime @updatedAt
 }

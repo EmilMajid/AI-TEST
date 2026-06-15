@@ -2,27 +2,33 @@ import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 
-const questionBankPath = path.join(process.cwd(), "scripts", "question-bank.json")
+const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
+
+function loadDb(): Record<string, any[]> {
+    if (!fs.existsSync(offlineTestsPath)) return {}
+    return JSON.parse(fs.readFileSync(offlineTestsPath, "utf-8"))
+}
 
 export async function GET(request: NextRequest) {
     try {
         const { searchParams } = new URL(request.url)
         const topic = searchParams.get("topic")
+        const subject = searchParams.get("subject")
 
-        if (!fs.existsSync(questionBankPath)) {
-            return NextResponse.json([])
+        const db = loadDb()
+        let allQuestions: any[] = []
+
+        if (subject && db[subject]) {
+            allQuestions = db[subject]
+        } else {
+            allQuestions = Object.values(db).flat()
         }
 
-        const questionBank = JSON.parse(fs.readFileSync(questionBankPath, "utf-8"))
-
-        // If specific topic requested
         if (topic) {
-            const questions = Object.values(questionBank).filter((q: any) => q.topicKey === topic)
-            return NextResponse.json(questions)
+            allQuestions = allQuestions.filter((q: any) => q.topic === topic || q.topic_key === topic)
         }
 
-        // Return all questions
-        return NextResponse.json(Object.values(questionBank))
+        return NextResponse.json(allQuestions)
     } catch (error) {
         console.error("Error reading questions:", error)
         return NextResponse.json({ error: "Failed to read questions" }, { status: 500 })
@@ -31,25 +37,30 @@ export async function GET(request: NextRequest) {
 
 export async function PATCH(request: NextRequest) {
     try {
-        const { id, status, isPending } = await request.json()
+        const { passport_id, status } = await request.json()
 
-        if (!fs.existsSync(questionBankPath)) {
-            return NextResponse.json({ error: "Database not found" }, { status: 404 })
+        if (!passport_id) {
+            return NextResponse.json({ error: "passport_id required" }, { status: 400 })
         }
 
-        const questionBank = JSON.parse(fs.readFileSync(questionBankPath, "utf-8"))
+        const db = loadDb()
+        let found = false
 
-        if (!questionBank[id]) {
+        for (const subject of Object.keys(db)) {
+            const idx = db[subject].findIndex((q: any) => q.passport_id === passport_id)
+            if (idx !== -1) {
+                if (status !== undefined) db[subject][idx].status = status
+                found = true
+                break
+            }
+        }
+
+        if (!found) {
             return NextResponse.json({ error: "Question not found" }, { status: 404 })
         }
 
-        // Update fields
-        if (status !== undefined) questionBank[id].status = status
-        if (isPending !== undefined) questionBank[id].isPending = isPending
-
-        fs.writeFileSync(questionBankPath, JSON.stringify(questionBank, null, 2))
-
-        return NextResponse.json({ success: true, question: questionBank[id] })
+        fs.writeFileSync(offlineTestsPath, JSON.stringify(db, null, 2))
+        return NextResponse.json({ success: true })
     } catch (error) {
         console.error("Error updating question:", error)
         return NextResponse.json({ error: "Failed to update question" }, { status: 500 })
@@ -59,25 +70,29 @@ export async function PATCH(request: NextRequest) {
 export async function DELETE(request: NextRequest) {
     try {
         const { searchParams } = new URL(request.url)
-        const id = searchParams.get("id")
+        const passport_id = searchParams.get("passport_id")
 
-        if (!id) {
-            return NextResponse.json({ error: "ID required" }, { status: 400 })
+        if (!passport_id) {
+            return NextResponse.json({ error: "passport_id required" }, { status: 400 })
         }
 
-        if (!fs.existsSync(questionBankPath)) {
-            return NextResponse.json({ error: "Database not found" }, { status: 404 })
+        const db = loadDb()
+        let found = false
+
+        for (const subject of Object.keys(db)) {
+            const idx = db[subject].findIndex((q: any) => q.passport_id === passport_id)
+            if (idx !== -1) {
+                db[subject].splice(idx, 1)
+                found = true
+                break
+            }
         }
 
-        const questionBank = JSON.parse(fs.readFileSync(questionBankPath, "utf-8"))
-
-        if (!questionBank[id]) {
+        if (!found) {
             return NextResponse.json({ error: "Question not found" }, { status: 404 })
         }
 
-        delete questionBank[id]
-        fs.writeFileSync(questionBankPath, JSON.stringify(questionBank, null, 2))
-
+        fs.writeFileSync(offlineTestsPath, JSON.stringify(db, null, 2))
         return NextResponse.json({ success: true })
     } catch (error) {
         console.error("Error deleting question:", error)

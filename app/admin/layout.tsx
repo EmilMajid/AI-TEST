@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database } from 'lucide-react'
+import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
@@ -54,6 +54,20 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                         <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
                             <Database className="h-4 w-4 mr-2" />
                             Test Bankı
+                        </Button>
+                    </Link>
+
+                    <Link href="/admin/ai-generation">
+                        <Button variant="ghost" className="w-full justify-start text-yellow-400 hover:text-yellow-300 hover:bg-slate-800">
+                            <Zap className="h-4 w-4 mr-2" />
+                            Aİ Generasiya
+                        </Button>
+                    </Link>
+
+                    <Link href="/admin/global-settings">
+                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
+                            <Globe className="h-4 w-4 mr-2" />
+                            Qlobal Tənzimləmələr
                         </Button>
                     </Link>
 

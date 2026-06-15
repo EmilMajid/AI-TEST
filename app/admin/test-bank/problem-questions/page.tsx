@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Loader2, AlertTriangle, TrendingDown, Edit } from 'lucide-react'
+import { Loader2, AlertTriangle, TrendingDown, Edit, Wand2 } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
 import { TestBankFilters, FilterState } from '@/components/admin/test-bank-filters'
 
@@ -112,10 +112,16 @@ export default function ProblemQuestionsPage() {
                                                 <Badge variant="outline">{q.difficulty}</Badge>
                                             </div>
                                         </div>
-                                        <Button size="sm" variant="outline">
-                                            <Edit className="h-4 w-4 mr-2" />
-                                            Redaktə
-                                        </Button>
+                                        <div className="flex flex-col sm:flex-row gap-2">
+                                            <Button size="sm" variant="outline">
+                                                <Edit className="h-4 w-4 mr-2" />
+                                                Redaktə
+                                            </Button>
+                                            <Button size="sm" className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                                                <Wand2 className="h-4 w-4 mr-2" />
+                                                Aİ ilə Təmir Et
+                                            </Button>
+                                        </div>
                                     </div>
                                 </CardHeader>
                                 <CardContent>

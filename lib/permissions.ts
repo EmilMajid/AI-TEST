@@ -27,6 +27,9 @@ export const ROLE_PERMISSIONS: { [key: string]: string[] } = {
     "manage_teachers",
     "view_audit_logs",
     "system_settings",
+    "manage_global_settings",
+    "manage_ai_generation",
+    "override_sharing_rules"
   ],
 }
 

@@ -118,9 +118,10 @@ export default function AccessControlPage() {
       </div>
 
       <Tabs defaultValue="global" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 max-w-md mb-8">
+        <TabsList className="grid w-full grid-cols-3 max-w-3xl mb-8">
           <TabsTrigger value="global" className="py-3">🌐 Qlobal Qaydalar</TabsTrigger>
           <TabsTrigger value="users" className="py-3">👤 Fərdi İmtiyazlar (Overrides)</TabsTrigger>
+          <TabsTrigger value="parents" className="py-3">👨‍👩‍👦 Valideyn İcazələri</TabsTrigger>
         </TabsList>
 
         {/* GLOBAL TAB */}
@@ -271,6 +272,42 @@ export default function AccessControlPage() {
               </div>
             </div>
           )}
+        </TabsContent>
+
+        {/* PARENTS TAB */}
+        <TabsContent value="parents">
+          <Card>
+            <CardHeader>
+              <CardTitle>Valideyn Paylaşım İdarəetməsi</CardTitle>
+              <CardDescription>Valideynlərin öz övladlarının nəticələrini hansı səviyyədə görəcəyini tənzimləyin.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {[
+                  { id: 1, parentName: "Aysel Məmmədova", studentName: "Əli Məmmədov", access: "full" },
+                  { id: 2, parentName: "Rəşad Əliyev", studentName: "Aynur Əliyeva", access: "partial" },
+                ].map(link => (
+                  <div key={link.id} className="flex items-center justify-between p-4 border rounded-lg bg-slate-50">
+                    <div>
+                      <p className="font-medium text-slate-900">{link.parentName}</p>
+                      <p className="text-sm text-slate-500">Şagird: {link.studentName}</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <select 
+                        className="bg-white border rounded-md px-3 py-1.5 text-sm"
+                        defaultValue={link.access}
+                        onChange={(e) => alert(`İcazə ${e.target.value} olaraq dəyişdirildi (Demo)`)}
+                      >
+                        <option value="full">Tam İcazə (Bütün nəticələr)</option>
+                        <option value="partial">Qismən (Yalnız ümumi bal)</option>
+                        <option value="blocked">Bloklanmış</option>
+                      </select>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </TabsContent>
       </Tabs>
     </div>
