@@ -251,18 +251,31 @@ export default function QuestionsViewerPage() {
       {/* STEP 2: SUBJECTS */}
       {selectedGrade && !selectedSubject && !loading && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {subjects.map((sub, idx) => (
-            <div
-              key={idx}
-              onClick={() => setSelectedSubject(sub)}
-              className="cursor-pointer rounded-xl bg-white border border-slate-200 p-5 shadow-sm transition hover:border-purple-500 hover:shadow-md flex items-center gap-4"
-            >
-              <div className="p-3 rounded-full bg-purple-50 text-purple-500">
-                <BookOpen size={24} />
+          {subjects.map((sub: any, idx: number) => {
+            const title = typeof sub === 'string' ? sub : sub.title;
+            const count = typeof sub === 'string' ? null : sub.count;
+            return (
+              <div
+                key={idx}
+                onClick={() => setSelectedSubject(title)}
+                className="cursor-pointer rounded-xl bg-white border border-slate-200 p-5 shadow-sm transition hover:border-purple-500 hover:shadow-md flex flex-col gap-3"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-full bg-purple-50 text-purple-500">
+                    <BookOpen size={20} />
+                  </div>
+                  <h3 className="text-sm font-bold line-clamp-2 flex-1">{title}</h3>
+                </div>
+                {count !== null && (
+                  <span className={`text-xs font-semibold px-2 py-1 rounded-full w-fit ${
+                    count > 0 ? 'bg-green-100 text-green-700' : 'bg-slate-100 text-slate-400'
+                  }`}>
+                    {count > 0 ? `${count} sual` : 'Sual yoxdur'}
+                  </span>
+                )}
               </div>
-              <h3 className="text-lg font-bold line-clamp-1">{sub}</h3>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
