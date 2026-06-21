@@ -1,0 +1,677 @@
+[
+  {
+    "id": 200001, "category": "Informatika 8",
+    "question": "İnformasiyanın kodlaşdırılması nədir?",
+    "options": ["Məlumatın bir şəkildən digərinə çevrilməsi prosesi", "Məlumatın silinməsi prosesi", "Məlumatın yalnız rəqəmlərə çevrilməsi", "Kompüterdə faylların saxlanması"],
+    "correctAnswer": 0,
+    "explanation": "Kodlaşdırma - informasiyanı müəyyən bir sistemə (məsələn, ikili koda) çevirmək prosesidir. Məlumatın bir formatdan digərinə dönüştürülməsini əhatə edir.",
+    "difficulty": "sadə", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T01-B1-S-001"
+  },
+  {
+    "id": 200002, "category": "Informatika 8",
+    "question": "ASCII kodlaşdırma sistemi əsasən nə üçün istifadə olunur?",
+    "options": ["Şəkilləri kodlaşdırmaq üçün", "Simvolları (hərfləri, rəqəmləri, işarələri) rəqəmsal kodlara uyğunlaşdırmaq üçün", "Səsləri kodlaşdırmaq üçün", "Video məlumatlarını sıxışdırmaq üçün"],
+    "correctAnswer": 1,
+    "explanation": "ASCII (American Standard Code for Information Interchange) – hər simvola unikal ədəd (0-127) uyğunlaşdıran standart kodlaşdırma sistemidir.",
+    "difficulty": "sadə", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T01-B1-S-002"
+  },
+  {
+    "id": 200003, "category": "Informatika 8",
+    "question": "Kompüterdə bütün məlumatlar hansı formada saxlanır?",
+    "options": ["Onluq say sistemində", "İkili (0 və 1) say sistemində", "Hərflərlə", "Onaltılıq say sistemində"],
+    "correctAnswer": 1,
+    "explanation": "Kompüter yalnız iki vəziyyəti ayırd edə bilir: cərəyanın olması (1) və olmaması (0). Ona görə bütün məlumatlar ikili (binary) formada saxlanılır.",
+    "difficulty": "sadə", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T01-B1-S-003"
+  },
+  {
+    "id": 200004, "category": "Informatika 8",
+    "question": "Unicode kodlaşdırma sistemi ASCII-dən nə ilə fərqlənir?",
+    "options": ["Unicode daha az simvolu əhatə edir", "Unicode dünyanın demək olar ki, bütün yazı sistemlərini əhatə edən universal kodlaşdırma standartıdır", "Unicode yalnız ingilis hərflərini kodlayır", "Unicode yalnız rəqəmləri kodlayır"],
+    "correctAnswer": 1,
+    "explanation": "ASCII yalnız 128 simvolu əhatə edir. Unicode isə 100.000-dən çox simvolu (latın, kiril, ərəb, çin yazısı və s.) əhatə edən beynəlxalq standartdır.",
+    "difficulty": "sadə", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T01-B1-S-004"
+  },
+  {
+    "id": 200005, "category": "Informatika 8",
+    "question": "Piksel nədir?",
+    "options": ["Kompüter prosessorunun bir hissəsi", "Rəqəmsal şəkildə ən kiçik rəng nöqtəsi", "İnternetin bir protokolu", "Kompüterin yaddaş vahidi"],
+    "correctAnswer": 1,
+    "explanation": "Piksel (picture element) – rəqəmsal şəkillərin ən kiçik elementi, yəni tək bir rəng nöqtəsidir. Şəkillər minlərlə piksel-dən ibarətdir.",
+    "difficulty": "sadə", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T01-B1-S-005"
+  },
+  {
+    "id": 200006, "category": "Informatika 8",
+    "question": "RGB rəng modelində 'R', 'G', 'B' hərfləri nəyi bildirir?",
+    "options": ["Rəqəm, Göstərici, Bit", "Qırmızı (Red), Yaşıl (Green), Mavi (Blue)", "Radiasiya, Gamma, Beta", "Rast, Gözəl, Böyük"],
+    "correctAnswer": 1,
+    "explanation": "RGB – Qırmızı (Red), Yaşıl (Green) və Mavi (Blue) rəng komponentlərinin birləşməsinə əsaslanan rəng modelidir. Hər komponent 0-255 arasında dəyər alır.",
+    "difficulty": "orta", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T01-B2-O-001"
+  },
+  {
+    "id": 200007, "category": "Informatika 8",
+    "question": "24-bitlik rəng rejimində neçə fərqli rəng göstərmək mümkündür?",
+    "options": ["256", "65536", "16777216", "1048576"],
+    "correctAnswer": 2,
+    "explanation": "24-bitlik rəng rejimində (RGB, hər kanal üçün 8 bit) 2^24 = 16.777.216 fərqli rəng göstərmək mümkündür. Bu True Color (həqiqi rəng) rejimi adlanır.",
+    "difficulty": "orta", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T01-B2-O-002"
+  },
+  {
+    "id": 200008, "category": "Informatika 8",
+    "question": "Mətni kodlaşdırmaq üçün istifadə edilən ən yaygın standart hansıdır?",
+    "options": ["JPEG", "MP3", "ASCII və Unicode", "PDF"],
+    "correctAnswer": 2,
+    "explanation": "Mətn kodlaşdırması üçün ASCII (köhnə, 128 simvol) və Unicode (müasir, 100.000+ simvol) ən geniş yayılmış standartlardır. Unicode UTF-8, UTF-16 kimi formatlarda istifadə olunur.",
+    "difficulty": "orta", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T01-B2-O-003"
+  },
+  {
+    "id": 200009, "category": "Informatika 8",
+    "question": "Səs fayllarının kodlaşdırılmasında nümunəgötürmə tezliyi (sampling rate) nəyi bildirir?",
+    "options": ["Faylın ölçüsünü baytla", "Saniyədə neçə dəfə səs siqnalının ölçüldüyünü", "Səsin gücünü desibelə", "Faylın adını"],
+    "correctAnswer": 1,
+    "explanation": "Nümunəgötürmə tezliyi (sampling rate) – saniyədə neçə dəfə analoq səs siqnalının ölçülüb rəqəmsallaşdırıldığını göstərir. CD keyfiyyəti üçün 44.100 Hz istifadə olunur.",
+    "difficulty": "orta", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T01-B2-O-004"
+  },
+  {
+    "id": 200010, "category": "Informatika 8",
+    "question": "Sıxışdırma (compression) nə üçün istifadə olunur?",
+    "options": ["Faylı daha çox yer tutması üçün", "Faylın ölçüsünü azaltmaq üçün", "Faylı şifrələmək üçün", "Faylı silmək üçün"],
+    "correctAnswer": 1,
+    "explanation": "Sıxışdırma – faylın ölçüsünü azaltmaq üçün istifadə olunan texnikadır. Lossless (məlumat itkisiz) və lossy (məlumat itkili) növləri var. ZIP, JPEG, MP3 nümunədir.",
+    "difficulty": "orta", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T01-B2-O-005"
+  },
+  {
+    "id": 200011, "category": "Informatika 8",
+    "question": "ASCII kodunda 'A' hərfi 65-ə bərabərdir. 'B' hərfinin ASCII kodu neçədir?",
+    "options": ["64", "66", "67", "100"],
+    "correctAnswer": 1,
+    "explanation": "ASCII cədvəlində hərflər ardıcıl nömrələnir. 'A' = 65 olduğundan, 'B' = 66, 'C' = 67 və s. olur. Hər sonrakı hərf bir artırılır.",
+    "difficulty": "çətin", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T01-B3-C-001"
+  },
+  {
+    "id": 200012, "category": "Informatika 8",
+    "question": "100x100 piksellik şəkil 8-bitlik rəng rejimindədirsə, sıxışdırılmamış halda neçə bayt yer tutar?",
+    "options": ["800 bayt", "8000 bayt", "10000 bayt", "80000 bayt"],
+    "correctAnswer": 2,
+    "explanation": "100 × 100 = 10.000 piksel. Hər piksel 8 bit = 1 bayt. Deməli: 10.000 × 1 = 10.000 bayt. (24-bitli olsaydı 30.000 bayt olardı)",
+    "difficulty": "çətin", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T01-B3-C-002"
+  },
+  {
+    "id": 200013, "category": "Informatika 8",
+    "question": "Lossless (itkisiz) və lossy (itkili) sıxışdırma arasındakı əsas fərq nədir?",
+    "options": ["Lossless daha az yer tutur", "Lossless tam orijinal məlumatı bərpa edir, lossy isə bəzi məlumatları itirir", "Lossy yalnız şəkillər üçündür", "Fərq yoxdur"],
+    "correctAnswer": 1,
+    "explanation": "Lossless (ZIP, PNG) – bütün orijinal məlumatı saxlayır, tam geri bərpa olunur. Lossy (JPEG, MP3) – bəzi detalları itirir, lakin daha kiçik fayl ölçüsü əldə edilir.",
+    "difficulty": "çətin", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T01-B3-C-003"
+  },
+  {
+    "id": 200014, "category": "Informatika 8",
+    "question": "UTF-8 kodlaşdırması niyə ASCII-dən üstündür?",
+    "options": ["UTF-8 daha az bayt istifadə edir", "UTF-8 ASCII ilə uyğunluğunu qoruyaraq dünya dillərinin simvollarını da kodlayır", "UTF-8 yalnız ingilis hərflərini dəstəkləyir", "UTF-8 köhnəlmiş standartdır"],
+    "correctAnswer": 1,
+    "explanation": "UTF-8 ASCII ilə tam uyğundur (ilk 128 simvol eynidir), lakin əlavə baytlarla dünya dillərinin (Azərbaycan, ərəb, çin və s.) simvollarını da kodlaya bilir.",
+    "difficulty": "çətin", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T01-B3-C-004"
+  },
+  {
+    "id": 200015, "category": "Informatika 8",
+    "question": "Rəqəmsal audio faylında bit dərinliyi (bit depth) nəyi təyin edir?",
+    "options": ["Faylın ölçüsünü megabaytla", "Hər nümunənin neçə bitlə kodlandığını, yəni dinamik aralığı", "Faylın adını", "Səs kanallarının sayını"],
+    "correctAnswer": 1,
+    "explanation": "Bit dərinliyi – hər bir nümunənin neçə bitlə kodlandığını göstərir. 16-bit (CD keyfiyyəti) 65.536 müxtəlif amplitüd dəyərini təyin edə bilir. Bit dərinliyi artdıqca dinamik aralıq genişlənir.",
+    "difficulty": "çətin", "topic": "İnformasiyanın kodlaşdırılması", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T01-B3-C-005"
+  },
+  {
+    "id": 200016, "category": "Informatika 8",
+    "question": "İkili say sisteminin əsası (bazası) neçədir?",
+    "options": ["8", "10", "2", "16"],
+    "correctAnswer": 2,
+    "explanation": "İkili (binary) say sisteminin əsası 2-dir. Bu sistemdə yalnız iki rəqəm istifadə edilir: 0 və 1.",
+    "difficulty": "sadə", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T02-B1-S-001"
+  },
+  {
+    "id": 200017, "category": "Informatika 8",
+    "question": "Onaltılıq (hexadecimal) say sistemində hansı simvollar istifadə edilir?",
+    "options": ["Yalnız 0-9 rəqəmləri", "0-9 rəqəmləri və A-F hərfləri", "Yalnız A-F hərfləri", "0-9 rəqəmləri və a-z hərfləri"],
+    "correctAnswer": 1,
+    "explanation": "Onaltılıq (hex) say sistemində 16 simvol istifadə edilir: 0-9 rəqəmləri (0-9 dəyərləri üçün) və A-F hərfləri (10-15 dəyərləri üçün).",
+    "difficulty": "sadə", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T02-B1-S-002"
+  },
+  {
+    "id": 200018, "category": "Informatika 8",
+    "question": "Səkkizlik (oktal) say sisteminin əsası neçədir?",
+    "options": ["2", "8", "10", "16"],
+    "correctAnswer": 1,
+    "explanation": "Oktal (səkkizlik) say sisteminin əsası 8-dir. Bu sistemdə yalnız 0, 1, 2, 3, 4, 5, 6, 7 rəqəmləri istifadə edilir.",
+    "difficulty": "sadə", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T02-B1-S-003"
+  },
+  {
+    "id": 200019, "category": "Informatika 8",
+    "question": "İkili say sistemindəki 1010 ədədi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["8", "10", "12", "14"],
+    "correctAnswer": 1,
+    "explanation": "1010 (ikilik) = 1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8 + 0 + 2 + 0 = 10 (onluq).",
+    "difficulty": "sadə", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T02-B1-S-004"
+  },
+  {
+    "id": 200020, "category": "Informatika 8",
+    "question": "Onaltılıq sistemdə 'F' rəqəmi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["14", "15", "16", "6"],
+    "correctAnswer": 1,
+    "explanation": "Onaltılıq sistemdə: A=10, B=11, C=12, D=13, E=14, F=15. Yəni F onluq sistemdə 15-ə bərabərdir.",
+    "difficulty": "sadə", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T02-B1-S-005"
+  },
+  {
+    "id": 200021, "category": "Informatika 8",
+    "question": "İkili sistemdəki 1111 ədədi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["13", "14", "15", "16"],
+    "correctAnswer": 2,
+    "explanation": "1111 (ikilik) = 1×2³ + 1×2² + 1×2¹ + 1×2⁰ = 8 + 4 + 2 + 1 = 15 (onluq).",
+    "difficulty": "orta", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T02-B2-O-001"
+  },
+  {
+    "id": 200022, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 255 ədədi onaltılıq sistemdə necə yazılır?",
+    "options": ["EF", "FF", "FE", "1FF"],
+    "correctAnswer": 1,
+    "explanation": "255 ÷ 16 = 15 qalıq 15. Yəni 255 = 15×16 + 15 = FF (hex). Bu, 8-bitlik ən böyük ədəddir (11111111 binary).",
+    "difficulty": "orta", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T02-B2-O-002"
+  },
+  {
+    "id": 200023, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 8 ədədi ikili sistemdə necə yazılır?",
+    "options": ["100", "1000", "1100", "111"],
+    "correctAnswer": 1,
+    "explanation": "8 = 1×2³ = 1000 (ikilik). Başqa yolla: 8÷2=4 q0, 4÷2=2 q0, 2÷2=1 q0, 1÷2=0 q1. Aşağıdan yuxarı: 1000.",
+    "difficulty": "orta", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T02-B2-O-003"
+  },
+  {
+    "id": 200024, "category": "Informatika 8",
+    "question": "Oktal sistemdəki 17 ədədi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["15", "16", "17", "8"],
+    "correctAnswer": 0,
+    "explanation": "17 (oktal) = 1×8¹ + 7×8⁰ = 8 + 7 = 15 (onluq).",
+    "difficulty": "orta", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T02-B2-O-004"
+  },
+  {
+    "id": 200025, "category": "Informatika 8",
+    "question": "Niyə kompüterlər ikili say sistemindən istifadə edir?",
+    "options": ["Çünki ikili sistem daha sürətlidir", "Çünki elektron sxemlər iki vəziyyəti (cərəyan var/yox) asanlıqla ayırd edə bilir", "Çünki ikili sistem insanlar üçün daha rahatdır", "Çünki ikili sistemdə böyük ədədlər yazmaq asandır"],
+    "correctAnswer": 1,
+    "explanation": "Kompüterdəki tranzistorlar iki vəziyyəti fiziki olaraq asanlıqla ayırd edir: cərəyanın keçməsi (1) və keçməməsi (0). Bu, hardverin sadə və etibarlı olmasını təmin edir.",
+    "difficulty": "orta", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T02-B2-O-005"
+  },
+  {
+    "id": 200026, "category": "Informatika 8",
+    "question": "İkili sistemdəki 11001101 ədədi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["195", "197", "205", "201"],
+    "correctAnswer": 2,
+    "explanation": "11001101 = 1×128 + 1×64 + 0×32 + 0×16 + 1×8 + 1×4 + 0×2 + 1×1 = 128+64+8+4+1 = 205.",
+    "difficulty": "çətin", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T02-B3-C-001"
+  },
+  {
+    "id": 200027, "category": "Informatika 8",
+    "question": "Onaltılıq sistemdəki 2A ədədi onluq sistemdə neçəyə bərabərdir?",
+    "options": ["32", "40", "42", "52"],
+    "correctAnswer": 2,
+    "explanation": "2A (hex) = 2×16 + 10×1 = 32 + 10 = 42 (onluq). A=10 olduğundan 2A = 42.",
+    "difficulty": "çətin", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T02-B3-C-002"
+  },
+  {
+    "id": 200028, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 100 ədədi ikili sistemdə necə yazılır?",
+    "options": ["1100010", "1100100", "1010100", "1110100"],
+    "correctAnswer": 1,
+    "explanation": "100 = 64+32+4 = 2⁶+2⁵+2² = 1100100 (ikilik). Yoxlama: 64+32+4=100. ✓",
+    "difficulty": "çətin", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T02-B3-C-003"
+  },
+  {
+    "id": 200029, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 255 ədədi ikili sistemdə neçə bitin hamısı 1-dir?",
+    "options": ["6 bit", "7 bit", "8 bit", "16 bit"],
+    "correctAnswer": 2,
+    "explanation": "255 = 11111111 (ikilik) – 8 bit, hamısı 1. 2⁸ - 1 = 256 - 1 = 255. Bu, 1 baytla yazıla biləcək ən böyük ədəddir.",
+    "difficulty": "çətin", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T02-B3-C-004"
+  },
+  {
+    "id": 200030, "category": "Informatika 8",
+    "question": "Onaltılıq sistemdəki 1F ədədi ikili sistemdə necə yazılır?",
+    "options": ["10011", "11111", "00011111", "00010111"],
+    "correctAnswer": 2,
+    "explanation": "1 (hex) = 0001 (binary), F (hex) = 1111 (binary). Birlikdə: 00011111. Yoxlama: 16+15=31 onluq. 00011111=31 ✓",
+    "difficulty": "çətin", "topic": "2-lik, 8-lik və 16-lıq say sistemləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T02-B3-C-005"
+  },
+  {
+    "id": 200031, "category": "Informatika 8",
+    "question": "Onluq ədədi ikili sistemə çevirmək üçün hansı üsul istifadə edilir?",
+    "options": ["Ədədi 2-yə vurma üsulu", "Ədədi ardıcıl olaraq 2-yə bölüb qalıqları yazmaq", "Ədədi 16-ya bölmə üsulu", "Ədədi hərflərə çevirmə üsulu"],
+    "correctAnswer": 1,
+    "explanation": "Onluq ədədi ikili sistemə çevirmək üçün onu ardıcıl olaraq 2-yə bölürük və qalıqları (0 və ya 1) aşağıdan yuxarıya yazırıq. Nəticə ikili ədəd olur.",
+    "difficulty": "sadə", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T03-B1-S-001"
+  },
+  {
+    "id": 200032, "category": "Informatika 8",
+    "question": "İkili ədədi onluq sistemə çevirmək üçün nə edilir?",
+    "options": ["Hər rəqəm 2-yə vurulur", "Hər bit öz yerinin qüvvətinə (2^n) vurulub cəmlənir", "Hər rəqəm 10-a bölünür", "Bitlər soldan sağa sıralanır"],
+    "correctAnswer": 1,
+    "explanation": "İkili ədədi onluğa çevirmək üçün hər bitin dəyərini (0 ya 1) onun yerinin qüvvəti ilə (sağdan sola: 2⁰, 2¹, 2², ...) vurub cəmləyirik.",
+    "difficulty": "sadə", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T03-B1-S-002"
+  },
+  {
+    "id": 200033, "category": "Informatika 8",
+    "question": "İkili sistemdəki hər 3 bit neçəlik say sisteminin bir rəqəminə uyğundur?",
+    "options": ["2-lik", "8-lik", "10-luq", "16-lıq"],
+    "correctAnswer": 1,
+    "explanation": "8-lik sistemdə 8 = 2³, yəni 3 bitlə 0-7 arası bütün rəqəmlər ifadə edilir. Buna görə ikili ədədi sağdan sola 3-lük qruplara bölüb oktal rəqəmlərə çevirmək olar.",
+    "difficulty": "sadə", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T03-B1-S-003"
+  },
+  {
+    "id": 200034, "category": "Informatika 8",
+    "question": "İkili sistemdəki hər 4 bit neçəlik say sisteminin bir rəqəminə uyğundur?",
+    "options": ["2-lik", "8-lik", "10-luq", "16-lıq"],
+    "correctAnswer": 3,
+    "explanation": "16-lıq (hex) sistemdə 16 = 2⁴, yəni 4 bitlə 0-15 arası bütün dəyərlər (0-9 və A-F) ifadə edilir. Buna görə hər 4 bit bir hex rəqəminə uyğundur.",
+    "difficulty": "sadə", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T03-B1-S-004"
+  },
+  {
+    "id": 200035, "category": "Informatika 8",
+    "question": "Onaltılıq (hex) ədədi onluq sistemə çevirmək üçün nə edilir?",
+    "options": ["Hər rəqəm 16-ya vurulur", "Hər rəqəm öz yerinin 16-nın qüvvətinə vurulub cəmlənir", "Hər rəqəm 10-a bölünür", "Hər rəqəm 2-yə bölünür"],
+    "correctAnswer": 1,
+    "explanation": "Hex ədədi onluğa çevirmək üçün hər rəqəmi onun yerinin qüvvəti ilə (sağdan sola: 16⁰, 16¹, 16², ...) vurub cəmləyirik. Məs: 1A hex = 1×16 + 10×1 = 26.",
+    "difficulty": "sadə", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T03-B1-S-005"
+  },
+  {
+    "id": 200036, "category": "Informatika 8",
+    "question": "İkili ədədi 1101 onaltılıq sistemdə necə yazılır?",
+    "options": ["C", "D", "E", "13"],
+    "correctAnswer": 1,
+    "explanation": "1101 (ikili) = 1×8+1×4+0×2+1×1 = 8+4+1 = 13 (onluq) = D (hex). Çünki D=13.",
+    "difficulty": "orta", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T03-B2-O-001"
+  },
+  {
+    "id": 200037, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 56 ədədi oktal (8-lik) sistemdə necə yazılır?",
+    "options": ["68", "70", "78", "56"],
+    "correctAnswer": 1,
+    "explanation": "56 ÷ 8 = 7 qalıq 0; 7 ÷ 8 = 0 qalıq 7. Aşağıdan yuxarıya: 70. Yoxlama: 7×8+0 = 56. ✓",
+    "difficulty": "orta", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T03-B2-O-002"
+  },
+  {
+    "id": 200038, "category": "Informatika 8",
+    "question": "Onaltılıq sistemdəki B4 ədədi onluq sistemdə neçədir?",
+    "options": ["164", "180", "176", "144"],
+    "correctAnswer": 1,
+    "explanation": "B4 (hex) = 11×16 + 4×1 = 176 + 4 = 180 (onluq). B=11 olduğundan 11×16=176, 176+4=180.",
+    "difficulty": "orta", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T03-B2-O-003"
+  },
+  {
+    "id": 200039, "category": "Informatika 8",
+    "question": "Oktal sistemdəki 37 ədədi ikili sistemdə necə yazılır?",
+    "options": ["011111", "011110", "100111", "111011"],
+    "correctAnswer": 0,
+    "explanation": "Oktaldan ikiliyə: hər oktal rəqəmini 3 bitlə ifadə edirik. 3 (oktal) = 011 (ikili), 7 (oktal) = 111 (ikili). Birlikdə: 011111.",
+    "difficulty": "orta", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T03-B2-O-004"
+  },
+  {
+    "id": 200040, "category": "Informatika 8",
+    "question": "İkili sistemdəki 10110100 ədədi onaltılıq sistemdə necə yazılır?",
+    "options": ["A4", "B4", "C4", "B3"],
+    "correctAnswer": 1,
+    "explanation": "İkilini 4-lük qruplara bölürük: 1011 0100. 1011=B(11), 0100=4. Nəticə: B4 (hex). Yoxlama: B4 hex = 11×16+4 = 180 onluq. 10110100 ikili = 128+32+16+4 = 180. ✓",
+    "difficulty": "orta", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T03-B2-O-005"
+  },
+  {
+    "id": 200041, "category": "Informatika 8",
+    "question": "Onluq 200 ədədi ikili, oktal və hex sistemlərinin hansında düzgün yazılmışdır?",
+    "options": ["11001000 (ikilik), 310 (oktal), C8 (hex)", "11001000 (ikilik), 300 (oktal), C8 (hex)", "11001100 (ikilik), 308 (oktal), C8 (hex)", "10001000 (ikilik), 310 (oktal), D8 (hex)"],
+    "correctAnswer": 0,
+    "explanation": "200 = 11001000 (ikili: 128+64+8=200). 200÷8=25 q0, 25÷8=3 q1, 3÷8=0 q3 → 310 oktal. 200÷16=12 q8, 12=C → C8 hex. Hamısı doğrudur.",
+    "difficulty": "çətin", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T03-B3-C-001"
+  },
+  {
+    "id": 200042, "category": "Informatika 8",
+    "question": "Onaltılıq sistemdəki FF ədədi ikili sistemdə necədir?",
+    "options": ["11110000", "11111110", "11111111", "10101010"],
+    "correctAnswer": 2,
+    "explanation": "F (hex) = 1111 (ikili). FF = 11111111 (ikili). Bu 8 bitin hamısı 1-dir = 255 (onluq). 8-bitlik ədədin maksimum dəyəridir.",
+    "difficulty": "çətin", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T03-B3-C-002"
+  },
+  {
+    "id": 200043, "category": "Informatika 8",
+    "question": "Onluq 1000 ədədi ikili sistemdə neçə bit tələb edir?",
+    "options": ["8 bit", "9 bit", "10 bit", "12 bit"],
+    "correctAnswer": 2,
+    "explanation": "2⁹=512, 2¹⁰=1024. 1000 ≤ 1024=2¹⁰, ona görə 10 bit kifayətdir. 1000 (ikilik) = 1111101000. Bit sayı = 10.",
+    "difficulty": "çətin", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T03-B3-C-003"
+  },
+  {
+    "id": 200044, "category": "Informatika 8",
+    "question": "İkili sistemdəki 11111111 + 00000001 toplama əməliyyatının nəticəsi nədir?",
+    "options": ["11111110", "100000000", "11111110", "11111111"],
+    "correctAnswer": 1,
+    "explanation": "11111111 + 00000001 = 100000000 (9 bit). Onluq hesabla: 255+1=256=2⁸. Bu ikili arifmetikada daşmanın (overflow) baş verməsidir.",
+    "difficulty": "çətin", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T03-B3-C-004"
+  },
+  {
+    "id": 200045, "category": "Informatika 8",
+    "question": "Hex sistemdəki 3C ədədi oktal sistemdə necədir?",
+    "options": ["70", "74", "60", "76"],
+    "correctAnswer": 1,
+    "explanation": "3C (hex) = 3×16+12 = 60 (onluq). 60÷8=7 q4, 7÷8=0 q7 → 74 (oktal). Yoxlama: 7×8+4=60. ✓",
+    "difficulty": "çətin", "topic": "Bir say sistemindən başqasına keçid", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T03-B3-C-005"
+  },
+  {
+    "id": 200046, "category": "Informatika 8",
+    "question": "İnformasiyanın ölçülməsinin ən kiçik vahidi hansıdır?",
+    "options": ["Bayt", "Kilobayt", "Bit", "Meqabayt"],
+    "correctAnswer": 2,
+    "explanation": "Bit (binary digit) – informasiyanın ən kiçik vahididir. 0 və ya 1 qiymətini qəbul edə bilər. 8 bit = 1 bayt.",
+    "difficulty": "sadə", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T04-B1-S-001"
+  },
+  {
+    "id": 200047, "category": "Informatika 8",
+    "question": "1 bayt neçə bitə bərabərdir?",
+    "options": ["4", "8", "16", "32"],
+    "correctAnswer": 1,
+    "explanation": "1 bayt = 8 bit. Bu standart ölçü vahididir. 8 bit ilə 2⁸=256 müxtəlif dəyər ifadə edilə bilir (0-255).",
+    "difficulty": "sadə", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T04-B1-S-002"
+  },
+  {
+    "id": 200048, "category": "Informatika 8",
+    "question": "1 kilobayt (KB) neçə bayta bərabərdir?",
+    "options": ["100 bayt", "512 bayt", "1000 bayt", "1024 bayt"],
+    "correctAnswer": 3,
+    "explanation": "Kompüter elmində 1 KB = 2¹⁰ = 1024 bayt. (Bəzən yuvarlaqlaşdırılmış 1000 bayt kimi qəbul edilsə də, kompüter texnologiyasında standart 1024-dür.)",
+    "difficulty": "sadə", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T04-B1-S-003"
+  },
+  {
+    "id": 200049, "category": "Informatika 8",
+    "question": "Vahidlər arasındakı düzgün sıralamanı seçin (kiçikdən böyüyə):",
+    "options": ["Bit, Bayt, KB, MB, GB, TB", "Bayt, Bit, KB, MB, GB, TB", "Bit, KB, Bayt, MB, GB", "Bayt, KB, Bit, MB, GB, TB"],
+    "correctAnswer": 0,
+    "explanation": "Düzgün sıra: Bit → Bayt (8 bit) → Kilobayt-KB (1024 B) → Meqabayt-MB (1024 KB) → Giqabayt-GB (1024 MB) → Terabayt-TB (1024 GB).",
+    "difficulty": "sadə", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T04-B1-S-004"
+  },
+  {
+    "id": 200050, "category": "Informatika 8",
+    "question": "1 GB neçə MB-a bərabərdir?",
+    "options": ["100 MB", "512 MB", "1000 MB", "1024 MB"],
+    "correctAnswer": 3,
+    "explanation": "1 GB (Giqabayt) = 1024 MB (Meqabayt). Eyni qaydada: 1 MB = 1024 KB, 1 KB = 1024 Bayt.",
+    "difficulty": "sadə", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T04-B1-S-005"
+  },
+  {
+    "id": 200051, "category": "Informatika 8",
+    "question": "8 bitlə maksimum neçə fərqli dəyər ifadə etmək mümkündür?",
+    "options": ["8", "128", "256", "512"],
+    "correctAnswer": 2,
+    "explanation": "8 bitlə 2⁸ = 256 fərqli dəyər (0-dan 255-ə qədər) ifadə etmək mümkündür. Hər bit 2 qat artırır: 1 bit→2, 2 bit→4, ..., 8 bit→256.",
+    "difficulty": "orta", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T04-B2-O-001"
+  },
+  {
+    "id": 200052, "category": "Informatika 8",
+    "question": "2 MB-lıq bir fayl neçə bayta bərabərdir?",
+    "options": ["2000 bayt", "2048 bayt", "2097152 bayt", "2000000 bayt"],
+    "correctAnswer": 2,
+    "explanation": "2 MB = 2 × 1024 KB = 2 × 1024 × 1024 bayt = 2 × 1.048.576 = 2.097.152 bayt.",
+    "difficulty": "orta", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T04-B2-O-002"
+  },
+  {
+    "id": 200053, "category": "Informatika 8",
+    "question": "İnternet sürəti adətən hansı vahidlə ölçülür?",
+    "options": ["Bayt/saniyə", "Megabayt/saat", "Megabit/saniyə (Mbps)", "Kilobit/dəqiqə"],
+    "correctAnswer": 2,
+    "explanation": "İnternet sürəti adətən Mbps (Megabit per second – Meqabit/saniyə) ilə ölçülür. Məlumat köçürmə sürəti isə MB/s (Meqabayt/saniyə) ilə göstərilir. 1 Bayt = 8 bit.",
+    "difficulty": "orta", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T04-B2-O-003"
+  },
+  {
+    "id": 200054, "category": "Informatika 8",
+    "question": "Bir səhifəlik (2000 simvol) mətn faylı ASCII kodlaşdırması ilə neçə bayt tutar?",
+    "options": ["200 bayt", "1000 bayt", "2000 bayt", "16000 bayt"],
+    "correctAnswer": 2,
+    "explanation": "ASCII-də hər simvol 1 bayt (8 bit) tutur. 2000 simvol × 1 bayt/simvol = 2000 bayt.",
+    "difficulty": "orta", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T04-B2-O-004"
+  },
+  {
+    "id": 200055, "category": "Informatika 8",
+    "question": "n bit ilə neçə fərqli dəyər ifadə etmək mümkündür?",
+    "options": ["n", "2n", "2^n", "n^2"],
+    "correctAnswer": 2,
+    "explanation": "n bit ilə 2^n fərqli dəyər ifadə etmək mümkündür. Hər yeni bit mümkün kombinasiyaların sayını 2 dəfə artırır.",
+    "difficulty": "orta", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T04-B2-O-005"
+  },
+  {
+    "id": 200056, "category": "Informatika 8",
+    "question": "100 Mbps sürətli internet bağlantısı ilə 1 GB faylı ən azı neçə saniyəyə endirmək mümkündür?",
+    "options": ["10.24 saniyə", "80 saniyə", "81.92 saniyə", "8 saniyə"],
+    "correctAnswer": 2,
+    "explanation": "1 GB = 8 Gbit = 8192 Mbit. Vaxt = 8192 Mbit ÷ 100 Mbps = 81.92 saniyə. Diqqət: 1 Bayt = 8 bit, ona görə baytı bite çeviririk.",
+    "difficulty": "çətin", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T04-B3-C-001"
+  },
+  {
+    "id": 200057, "category": "Informatika 8",
+    "question": "1920×1080 piksellik şəkil 24-bitlik rəng rejimindədirsə, sıxışdırılmamış ölçüsü neçə MB-dır?",
+    "options": ["2 MB", "4 MB", "6 MB", "5.93 MB"],
+    "correctAnswer": 3,
+    "explanation": "1920 × 1080 × 3 bayt (24 bit = 3 bayt) = 6.220.800 bayt ÷ 1024 ÷ 1024 ≈ 5.93 MB.",
+    "difficulty": "çətin", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T04-B3-C-002"
+  },
+  {
+    "id": 200058, "category": "Informatika 8",
+    "question": "500 GB-lıq sabit diskdə 700 MB-lıq fayldan neçəsi yerləşə bilər?",
+    "options": ["Yaklasik 700 fayl", "Yaklasik 730 fayl", "Yaklasik 512000 fayl", "500 fayl"],
+    "correctAnswer": 1,
+    "explanation": "500 GB = 500 × 1024 MB = 512.000 MB. 512.000 MB ÷ 700 MB ≈ 731 fayl. Ən yaxın seçim 730-dur.",
+    "difficulty": "çətin", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T04-B3-C-003"
+  },
+  {
+    "id": 200059, "category": "Informatika 8",
+    "question": "44100 Hz nümunəgötürmə tezliyi və 16-bit dərinliyi olan stereo (2 kanal) audio faylı 1 dəqiqə üçün neçə MB yer tutar?",
+    "options": ["5 MB", "10.09 MB", "20 MB", "2.5 MB"],
+    "correctAnswer": 1,
+    "explanation": "44100 nümunə/s × 2 bayt (16 bit) × 2 kanal × 60 s = 10.584.000 bayt ÷ 1024 ÷ 1024 ≈ 10.09 MB. Bu, sıxışdırılmamış WAV formatı üçündür.",
+    "difficulty": "çətin", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T04-B3-C-004"
+  },
+  {
+    "id": 200060, "category": "Informatika 8",
+    "question": "4 TB-lıq disk, 4 GB-lıq diskdən neçə dəfə böyükdür?",
+    "options": ["10 dəfə", "100 dəfə", "1000 dəfə", "1024 dəfə"],
+    "correctAnswer": 3,
+    "explanation": "1 TB = 1024 GB. 4 TB = 4096 GB. 4096 GB ÷ 4 GB = 1024 dəfə. Deməli, 4 TB-lıq disk 4 GB-lıq diskdən 1024 dəfə böyükdür.",
+    "difficulty": "çətin", "topic": "İnformasiyanın ölçülməsi", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T04-B3-C-005"
+  },
+  {
+    "id": 200061, "category": "Informatika 8",
+    "question": "Aşağıdakılardan hansı informasiyanın ölçülməsi vahidi deyil?",
+    "options": ["Bit", "Bayt", "Hertz", "Kilobayt"],
+    "correctAnswer": 2,
+    "explanation": "Hertz (Hz) – tezlik vahididir (saniyədəki titrəyiş sayı), informasiya ölçü vahidi deyil. Bit, Bayt, Kilobayt isə informasiya həcminin vahidləridir.",
+    "difficulty": "sadə", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T05-B1-S-001"
+  },
+  {
+    "id": 200062, "category": "Informatika 8",
+    "question": "İkili say sistemi nə üçün kompüterdə istifadə olunur?",
+    "options": ["Çünki iki rəqəm yazmaq rahatdır", "Çünki elektron elementlər fiziki olaraq iki vəziyyəti (0 və 1) asanlıqla ifadə edə bilir", "Çünki matematikada ən sadə sistemdir", "Çünki insanlar ikili saymağı yaxşı anlayır"],
+    "correctAnswer": 1,
+    "explanation": "Tranzistorlar elektrik cərəyanını keçirir (1) ya keçirmir (0). Bu iki fiziki vəziyyət rəqəmsal sistemlərin əsasını təşkil edir.",
+    "difficulty": "sadə", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T05-B1-S-002"
+  },
+  {
+    "id": 200063, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 16 ədədi ikili sistemdə necədir?",
+    "options": ["1100", "10000", "10100", "1111"],
+    "correctAnswer": 1,
+    "explanation": "16 = 2⁴ = 10000 (ikilik). Yalnız 5-ci bitin dəyəri 1-dir (soldan sağa sayıldıqda birinci bit).",
+    "difficulty": "sadə", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T05-B1-S-003"
+  },
+  {
+    "id": 200064, "category": "Informatika 8",
+    "question": "ASCII cədvəlində rəqəm simvolu olan '0'-ın kodu 48-dir. '5' rəqəminin ASCII kodu neçədir?",
+    "options": ["5", "50", "53", "48"],
+    "correctAnswer": 2,
+    "explanation": "ASCII-də rəqəm simvolları ardıcıldır: '0'=48, '1'=49, '2'=50, '3'=51, '4'=52, '5'=53. Yəni '5' = 48+5 = 53.",
+    "difficulty": "sadə", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T05-B1-S-004"
+  },
+  {
+    "id": 200065, "category": "Informatika 8",
+    "question": "Hansı vahid digərlərindən daha böyükdür?",
+    "options": ["1 KB", "1000 Bayt", "1 MB", "1024 KB"],
+    "correctAnswer": 2,
+    "explanation": "1 MB = 1024 KB = 1.048.576 Bayt. 1 KB = 1024 Bayt. 1000 Bayt < 1 KB. 1024 KB = 1 MB. Ən böyük seçim – 1 MB (amma 1024 KB ilə bərabərdir). Sualda ən böyük tək dəyər 1 MB-dır.",
+    "difficulty": "sadə", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "bilmə",
+    "passport_id": "08-INF-T05-B1-S-005"
+  },
+  {
+    "id": 200066, "category": "Informatika 8",
+    "question": "İkili 10101010 ədədi onaltılıq sistemdə necədir?",
+    "options": ["A0", "AA", "AB", "5A"],
+    "correctAnswer": 1,
+    "explanation": "4-lük qruplara: 1010 1010. 1010 = A (10 onluq = A hex). Nəticə: AA. Yoxlama: AA = 10×16+10 = 170. 10101010 = 128+32+8+2 = 170. ✓",
+    "difficulty": "orta", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T05-B2-O-001"
+  },
+  {
+    "id": 200067, "category": "Informatika 8",
+    "question": "100x100 piksellik şəkil 24-bit rəngdədirsə, ölçüsü neçə KB-dır?",
+    "options": ["10 KB", "29.3 KB", "100 KB", "300 KB"],
+    "correctAnswer": 1,
+    "explanation": "100 × 100 = 10.000 piksel × 3 bayt (24 bit) = 30.000 bayt. 30.000 ÷ 1024 ≈ 29.3 KB.",
+    "difficulty": "orta", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T05-B2-O-002"
+  },
+  {
+    "id": 200068, "category": "Informatika 8",
+    "question": "Onluq sistemdəki 128 ədədi hansı say sistemlərindəki ifadənin hamısında düzgündür?",
+    "options": ["10000000 (ikilik), 200 (oktal), 80 (hex)", "11000000 (ikilik), 200 (oktal), 80 (hex)", "10000000 (ikilik), 100 (oktal), 8F (hex)", "10000000 (ikilik), 200 (oktal), 8F (hex)"],
+    "correctAnswer": 0,
+    "explanation": "128 = 2⁷ = 10000000 (ikilik). 128÷8=16 q0, 16÷8=2 q0 → 200 (oktal). 128÷16=8 q0 → 80 (hex). Hamısı doğrudur.",
+    "difficulty": "orta", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T05-B2-O-003"
+  },
+  {
+    "id": 200069, "category": "Informatika 8",
+    "question": "Bir şəkil faylı 1.5 MB, bir musiqi faylı 4 MB, bir video fayl 700 MB-dır. Ümumi yer neçə GB-dır?",
+    "options": ["Yaklasik 0.69 GB", "Yaklasik 705.5 MB", "Yaklasik 0.69 GB ve 705.5 MB eynidir", "1 GB-dan cox deyil"],
+    "correctAnswer": 0,
+    "explanation": "Ümumi = 1.5 + 4 + 700 = 705.5 MB. 705.5 MB ÷ 1024 ≈ 0.689 GB ≈ 0.69 GB.",
+    "difficulty": "orta", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T05-B2-O-004"
+  },
+  {
+    "id": 200070, "category": "Informatika 8",
+    "question": "Hex sistemdəki 7F ədədi onluq sistemdə neçədir?",
+    "options": ["111", "126", "127", "128"],
+    "correctAnswer": 2,
+    "explanation": "7F (hex) = 7×16 + 15×1 = 112 + 15 = 127 (onluq). F=15 olduğunu nəzərə alırıq.",
+    "difficulty": "orta", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "anlama",
+    "passport_id": "08-INF-T05-B2-O-005"
+  },
+  {
+    "id": 200071, "category": "Informatika 8",
+    "question": "İki kompüter arasında 10 Mbps sürətlə 4 GB fayl ötürülürsə, neçə saniyə lazım olacaq?",
+    "options": ["400 saniyə", "3276.8 saniyə", "409.6 saniyə", "4096 saniyə"],
+    "correctAnswer": 1,
+    "explanation": "4 GB = 4×1024 MB = 4096 MB = 4096×8 Mbit = 32768 Mbit. Vaxt = 32768 Mbit ÷ 10 Mbps = 3276.8 saniyə.",
+    "difficulty": "çətin", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T05-B3-C-001"
+  },
+  {
+    "id": 200072, "category": "Informatika 8",
+    "question": "Hex renk kodu #FF6400 hansı RGB dəyərlərinə uyğundur?",
+    "options": ["R:255, G:100, B:0", "R:255, G:100, B:64", "R:255, G:64, B:0", "R:255, G:64, B:64"],
+    "correctAnswer": 0,
+    "explanation": "#FF6400: FF=255 (R), 64=100 (G), 00=0 (B). 64 hex = 6×16+4 = 96+4 = 100 onluq. Nəticə: R=255, G=100, B=0.",
+    "difficulty": "çətin", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T05-B3-C-002"
+  },
+  {
+    "id": 200073, "category": "Informatika 8",
+    "question": "1 saatlıq Full HD video (1920x1080, 30 kare/s, 24-bit rəng) sıxışdırılmamış olaraq neçə GB yer tutar?",
+    "options": ["Yaklasik 200 GB", "Yaklasik 641 GB", "Yaklasik 20 GB", "Yaklasik 6 GB"],
+    "correctAnswer": 1,
+    "explanation": "1920×1080×3 bayt×30 kare/s = 186.624.000 bayt/s. 1 saat = 3600 s. Cəmi: 186.624.000×3600 = 672.046.080.000 bayt ÷ 1024³ ≈ 626 GB. (Ən yaxın seçim 641 GB-dır.)",
+    "difficulty": "çətin", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T05-B3-C-003"
+  },
+  {
+    "id": 200074, "category": "Informatika 8",
+    "question": "İkili arifmetikada 1011 + 1101 toplamı neçədir?",
+    "options": ["10110", "11000", "11010", "10011"],
+    "correctAnswer": 1,
+    "explanation": "1011 (11 onluq) + 1101 (13 onluq) = 11000 (24 onluq). İkili toplama: 1+1=10 (daşqınla). 11000 = 16+8 = 24. ✓",
+    "difficulty": "çətin", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T05-B3-C-004"
+  },
+  {
+    "id": 200075, "category": "Informatika 8",
+    "question": "10 bitlə kaç fərqli rəng kodu yazmaq mümkündür və bu neçə rəngə uyğundur?",
+    "options": ["512 kod, 512 rəng", "1000 kod, 1000 rəng", "1024 kod, 1024 rəng", "2048 kod, 2048 rəng"],
+    "correctAnswer": 2,
+    "explanation": "n bit ilə 2^n fərqli dəyər ifadə edilir. 10 bit → 2¹⁰ = 1024. Deməli 10 bitlə 1024 fərqli kod (rəng) ifadə etmək mümkündür.",
+    "difficulty": "çətin", "topic": "Ümumiləşdirici tapşırıqlar", "bloomLevel": "tətbiq",
+    "passport_id": "08-INF-T05-B3-C-005"
+  }
+]

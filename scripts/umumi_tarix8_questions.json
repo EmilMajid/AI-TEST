@@ -1,0 +1,947 @@
+[
+  {
+    "id": 500001, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş (Səfəvi) dövləti hansı əsrdə qurulmuşdur?",
+    "options": ["XIV əsr", "XV əsr", "XVI əsr", "XVII əsr"],
+    "correctAnswer": 2,
+    "explanation": "Qızılbaş və ya Səfəvi dövləti 1501-ci ildə (XVI əsrin əvvəli) Şah İsmayıl Xətai tərəfindən qurulmuşdur.",
+    "difficulty": "sadə", "topic": "Qızılbaş dövlətləri", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T01-B1-S-001"
+  },
+  {
+    "id": 500002, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş dövlətinin əsas hərbi qüvvəsi kimlərdən ibarət idi?",
+    "options": ["Avropa muzdlularından", "Qızılbaş adlanan türk-oğuz tayfalarından", "Ərəb süvarilərindən", "Monqol döyüşçülərindən"],
+    "correctAnswer": 1,
+    "explanation": "Dövlətin hərbi dayağını Qızılbaş (başına 12 zolaqlı qırmızı çalma bağlayan) türk tayfaları (Şamlı, Rumlu, Ustaclı, Qacar və s.) təşkil edirdi.",
+    "difficulty": "sadə", "topic": "Qızılbaş dövlətləri", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T01-B1-S-002"
+  },
+  {
+    "id": 500003, "category": "Ümumi tarix 8",
+    "question": "XVII əsrin əvvəllərində Qızılbaş dövlətini zəiflikdən qurtararaq ən güclü dövrünü yaşadan hökmdar kimdir?",
+    "options": ["Şah İsmayıl", "Şah Təhmasib", "Şah I Abbas", "Nadir Şah"],
+    "correctAnswer": 2,
+    "explanation": "Şah I Abbas (1587-1629) həyata keçirdiyi islahatlarla dövləti tənəzzüldən qurtardı, Osmanlıları məğlub etdi və dövlətin qüdrətini bərpa etdi.",
+    "difficulty": "sadə", "topic": "Qızılbaş dövlətləri", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T01-B1-S-003"
+  },
+  {
+    "id": 500004, "category": "Ümumi tarix 8",
+    "question": "1736-cı ildə Qızılbaş (Səfəvi) dövlətinə son qoyub Əfşarlar sülaləsinin əsasını qoyan sərkərdə kimdir?",
+    "options": ["Şah Sultan Hüseyn", "Nadir xan (Nadir şah)", "Ağa Məhəmməd şah", "II Təhmasib"],
+    "correctAnswer": 1,
+    "explanation": "1736-cı ildə Muğan qurultayında Nadir xan özünü şah elan edərək Səfəvilər sülaləsinə son qoydu və Əfşar dövlətini qurdu.",
+    "difficulty": "sadə", "topic": "Qızılbaş dövlətləri", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T01-B1-S-004"
+  },
+  {
+    "id": 500005, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş dövlətində mərkəzi hakimiyyətin zəifləməsi hansı amillə bağlı idi?",
+    "options": ["Şahların ölkəni yaxşı idarə etməsi", "Qızılbaş əmirlərinin (tayfa başçılarının) separatizmi və daxili çəkişmələri", "Ticarətin artması", "Xalqın inkişafı"],
+    "correctAnswer": 1,
+    "explanation": "Qızılbaş əmirləri arasındakı çəkişmələr və mərkəzdənqaçma (separatizm) meyilləri mərkəzi hakimiyyətin zəifləməsinə və böhranlara səbəb olurdu.",
+    "difficulty": "sadə", "topic": "Qızılbaş dövlətləri", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T01-B1-S-005"
+  },
+  {
+    "id": 500006, "category": "Ümumi tarix 8",
+    "question": "Nadir şah Əfşar Hindistana hücum edərkən Dehlini tutduqdan sonra hansı sərvətləri ələ keçirdi?",
+    "options": ["Köhnə əlyazmaları", "Tavus taxtı, Kuhi-nur almazı və böyük xəzinəni", "Yalnız atlar və fillər", "Heç bir qənimət əldə etmədi"],
+    "correctAnswer": 1,
+    "explanation": "1739-cu ildə Nadir şah Dehlini tutdu və Böyük Moğol imperiyasından Tavus taxtı, Kuhi-nur almazı da daxil olmaqla çox böyük miqdarda sərvət ələ keçirdi.",
+    "difficulty": "orta", "topic": "Qızılbaş dövlətləri", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T01-B2-O-001"
+  },
+  {
+    "id": 500007, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş tayfalarının dövlət idarəçiliyindəki yeri necə idi?",
+    "options": ["Yalnız kənd təsərrüfatı ilə məşğul idilər", "Dövlətin həm hərbi (ordu rəhbərliyi), həm də inzibati (əyalət hakimləri) vəzifələrini tuturdular", "Dövlət işlərinə buraxılmırdılar", "Yalnız ticarətlə məşğul idilər"],
+    "correctAnswer": 1,
+    "explanation": "Səfəvi dövlətində ən mühüm siyasi, hərbi və inzibati vəzifələr - əyalət hakimliyi, qoşun sərkərdəliyi - qızılbaş əmirlərinin əlində idi.",
+    "difficulty": "orta", "topic": "Qızılbaş dövlətləri", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T01-B2-O-002"
+  },
+  {
+    "id": 500008, "category": "Ümumi tarix 8",
+    "question": "Şah I Abbas Qızılbaş tayfalarının gücünü məhdudlaşdırmaq üçün hansı tədbiri gördü?",
+    "options": ["Bütün tayfaları sürgün etdi", "Tayfaların hakimiyyət inhisarını qırmaq üçün şaha tabe olan 'qulam' (qafqazlılardan ibarət) və 'tüfəngçilər' qoşunu yaratdı", "Onlara daha çox torpaq verdi", "Din xadimlərinə çevirdi"],
+    "correctAnswer": 1,
+    "explanation": "Şah Abbas mərkəzi hakimiyyəti gücləndirmək və qızılbaş əmirlərindən asılılığı azaltmaq üçün şaha birbaşa sadiq yeni peşəkar qoşun (qulam və tüfəngçi) yaratdı.",
+    "difficulty": "orta", "topic": "Qızılbaş dövlətləri", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T01-B2-O-003"
+  },
+  {
+    "id": 500009, "category": "Ümumi tarix 8",
+    "question": "1722-ci ildə Səfəvilər dövlətinin paytaxtı İsfahanı işğal edərək dövləti faktiki çökdürən qüvvə kim idi?",
+    "options": ["Osmanlılar", "Əfqanlar", "Ruslar", "Özbəklər"],
+    "correctAnswer": 1,
+    "explanation": "Dövlətin dərin böhranı zamanı Mahmud xanın başçılığı ilə əfqanlar İsfahanı mühasirəyə alıb işğal etdilər (1722). Bu, Səfəvi dövlətinin faktiki sonunun başlanğıcı idi.",
+    "difficulty": "orta", "topic": "Qızılbaş dövlətləri", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T01-B2-O-004"
+  },
+  {
+    "id": 500010, "category": "Ümumi tarix 8",
+    "question": "Ağa Məhəmməd xan Qacarın fəaliyyətinin əsas nəticəsi nə oldu?",
+    "options": ["Hindistanı fəth etdi", "1795-ci ildə Tehranda taxta çıxaraq İranda Qacarlar dövlətinin əsasını qoydu və mərkəzi hakimiyyəti bərpa etdi", "Osmanlıları darmadağın etdi", "Dövləti Avropa ölkələrinə tabe etdi"],
+    "correctAnswer": 1,
+    "explanation": "Ağa Məhəmməd xan Qacar XVIII əsrin sonlarında İranda mərkəzi hakimiyyəti yenidən bərpa edərək türk mənşəli Qacarlar sülaləsinin (1795-1925) əsasını qoydu.",
+    "difficulty": "orta", "topic": "Qızılbaş dövlətləri", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T01-B2-O-005"
+  },
+  {
+    "id": 500011, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş dövlətlərinin (Səfəvi, Əfşar, Qacar) idarəçilik sistemindəki ən zəif həlqə nə idi və bu necə təzahür edirdi?",
+    "options": ["Vergi sisteminin olmaması", "Hakimiyyətin tayfa ənənələrinə əsaslanması, şah zəiflədikdə tayfa başçılarının mərkəzə tabe olmamaq və əyalətləri müstəqilləşdirmək meyli", "Ordunun böyüklüyü", "Avropa ölkələrinin müdaxiləsi"],
+    "correctAnswer": 1,
+    "explanation": "Tayfa ənənəsinə söykənən idarəçilik güclü liderin (şahın) mövcudluğundan asılı idi. Lider zəiflədikdə və ya öldükdə, xanlar (əmirlər) arasında qanlı taxt-tac mübarizəsi başlayır, əyalətlər parçalanırdı (separatizm).",
+    "difficulty": "çətin", "topic": "Qızılbaş dövlətləri", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T01-B4-C-001"
+  },
+  {
+    "id": 500012, "category": "Ümumi tarix 8",
+    "question": "Nadir şahın ölümü (1747) Qafqaz və İranın siyasi xəritəsində hansı prosesə təkan verdi?",
+    "options": ["Tam birləşməyə", "Böyük mərkəzləşdirilmiş dövlətin parçalanmasına və kiçik müstəqil xanlıqların (Azərbaycanda və digər ərazilərdə) yaranmasına", "Osmanlıların bütün regionu tutmasına", "Rusiya imperiyasının qurulmasına"],
+    "correctAnswer": 1,
+    "explanation": "Nadir şah öldürüldükdən sonra mərkəzi hakimiyyət çökdü. Onun yaratdığı imperiya parçalandı və yerlərdə (o cümlədən Azərbaycanda) müstəqil feodal dövlətləri - xanlıqlar yarandı.",
+    "difficulty": "çətin", "topic": "Qızılbaş dövlətləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T01-B3-C-001"
+  },
+  {
+    "id": 500013, "category": "Ümumi tarix 8",
+    "question": "XVII-XVIII əsrlərdə Qızılbaş dövlətlərinin xarici siyasətində hansı iki böyük dövlət əsas rəqib hesab olunurdu?",
+    "options": ["İngiltərə və Fransa", "Qərbdə Osmanlı imperiyası, şimalda Rusiya imperiyası", "Çin və Hindistan", "Misir və İspaniya"],
+    "correctAnswer": 1,
+    "explanation": "Səfəvi və Əfşar dövlətləri qərbdə ərazi iddialarına görə Osmanlı, şimalda isə Qafqaza can atan Rusiya ilə daimi rəqabət və müharibə vəziyyətində idilər.",
+    "difficulty": "çətin", "topic": "Qızılbaş dövlətləri", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T01-B3-C-002"
+  },
+  {
+    "id": 500014, "category": "Ümumi tarix 8",
+    "question": "Səfəvilər dövründə şiəliyin dövlət dini səviyyəsinə qaldırılmasının Osmanlı ilə münasibətlərə təsiri necə oldu?",
+    "options": ["Münasibətləri yaxşılaşdırdı", "İki türk-islam dövləti arasında həm siyasi, həm də ideoloji (məzhəb) düşmənçilik yaradaraq uzunmüddətli müharibələrə səbəb oldu", "Heç bir təsir etmədi", "İttifaq yarandı"],
+    "correctAnswer": 1,
+    "explanation": "Səfəvilərin şiəliyi dövlət dini etməsi Osmanlıların (sünni) narahatlığına səbəb oldu və siyasi-ərazi konfliktinə dərin ideoloji/dini rəng qataraq müharibələri daha qanlı etdi.",
+    "difficulty": "çətin", "topic": "Qızılbaş dövlətləri", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T01-B4-C-002"
+  },
+  {
+    "id": 500015, "category": "Ümumi tarix 8",
+    "question": "Qızılbaş dövlətlərinin hərbi gücü hansı səbəbdən Avropa dövlətlərindən geri qalmağa başladı?",
+    "options": ["Əhali az olduğu üçün", "Atlı-süvari tayfa qoşunlarına həddən artıq arxalanma və odlu silah-artilleriyanın ləng mənimsənilməsi səbəbindən", "Heç vaxt geri qalmadılar", "Dəniz donanması böyük olduğu üçün"],
+    "correctAnswer": 1,
+    "explanation": "XVIII əsrdə Avropada peşəkar ordular və atəşli silahlar sürətlə inkişaf edərkən, Qızılbaş dövlətləri hələ də ənənəvi süvari tayfa döyüşçülərinə (qılınc, nizə) arxalanırdılar ki, bu da onların texnoloji geriliyinə səbəb olurdu.",
+    "difficulty": "çətin", "topic": "Qızılbaş dövlətləri", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T01-B4-C-003"
+  },
+  {
+    "id": 500016, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövləti hansı ölkənin ərazisində yaranmışdır?",
+    "options": ["Çin", "Hindistan", "Mərkəzi Asiya", "İran"],
+    "correctAnswer": 1,
+    "explanation": "Böyük Moğol (Moğol imperiyası) dövləti 1526-cı ildə Hindistanda Zahirəddin Məhəmməd Babur tərəfindən qurulmuşdur.",
+    "difficulty": "sadə", "topic": "Böyük Moğol dövləti", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T02-B1-S-001"
+  },
+  {
+    "id": 500017, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövlətinin əsasını qoyan tarixi şəxsiyyət kimdir?",
+    "options": ["Çingiz xan", "Əmir Teymur", "Zahirəddin Məhəmməd Babur", "Şah Cahan"],
+    "correctAnswer": 2,
+    "explanation": "Əmir Teymurun soyundan olan Babur (Zahirəddin Məhəmməd) 1526-cı ildə Panipat döyüşündə qalib gələrək Böyük Moğol dövlətini qurdu.",
+    "difficulty": "sadə", "topic": "Böyük Moğol dövləti", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T02-B1-S-002"
+  },
+  {
+    "id": 500018, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol imperiyasını ən qüdrətli dövrünə çatdıran və bütün Hindistanı birləşdirməyə çalışan imperator kim idi?",
+    "options": ["Babur", "Əkbər şah", "Hümayun", "Bahadır şah"],
+    "correctAnswer": 1,
+    "explanation": "Əkbər şah (1556-1605) Moğol imperiyasının ən böyük hökmdarı hesab edilir. O, həm əraziləri genişləndirmiş, həm də vergi və din sahəsində islahatlar aparmışdır.",
+    "difficulty": "sadə", "topic": "Böyük Moğol dövləti", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T02-B1-S-003"
+  },
+  {
+    "id": 500019, "category": "Ümumi tarix 8",
+    "question": "Məşhur Tac Mahal türbəsi hansı Moğol imperatoru tərəfindən tikdirilmişdir?",
+    "options": ["Babur", "Şah Cahan", "övrəngzib", "Cahangir"],
+    "correctAnswer": 1,
+    "explanation": "Şah Cahan öz sevimli həyat yoldaşı Mümtaz Mahalın xatirəsinə XVII əsrdə (Aqrda şəhərində) möhtəşəm Tac Mahal türbəsini inşa etdirdi.",
+    "difficulty": "sadə", "topic": "Böyük Moğol dövləti", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T02-B1-S-004"
+  },
+  {
+    "id": 500020, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövləti əsasən hansı dindən olan əhalini idarə edirdi?",
+    "options": ["Yalnız xristianları", "Əsasən hinduları (özləri isə müsəlman idilər)", "Yalnız bütpərəstləri", "Yalnız yəhudiləri"],
+    "correctAnswer": 1,
+    "explanation": "Moğol hökmdarları müsəlman (türk-monqol mənşəli) idilər, lakin idarə etdikləri əhalinin böyük əksəriyyəti hinduizmə etiqad edən hindular idi.",
+    "difficulty": "sadə", "topic": "Böyük Moğol dövləti", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T02-B1-S-005"
+  },
+  {
+    "id": 500021, "category": "Ümumi tarix 8",
+    "question": "Əkbər şahın din sahəsində apardığı siyasətin mahiyyəti nə idi?",
+    "options": ["Bütün hinduları islama məcbur etdi", "Dini dözümlülük (tolerantlıq) siyasəti yürütdü, hindu və müsəlmanları bərabər tutmağa çalışdı", "Bütün məscidləri dağıtdı", "Hindistanı tərk etdi"],
+    "correctAnswer": 1,
+    "explanation": "Əkbər şah hinduların qəlbinə yol tapmaq üçün dini dözümlülük nümayiş etdirdi. Cizyə vergisini ləğv etdi və fərqli din nümayəndələrini dövlət qulluğuna cəlb etdi.",
+    "difficulty": "orta", "topic": "Böyük Moğol dövləti", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T02-B2-O-001"
+  },
+  {
+    "id": 500022, "category": "Ümumi tarix 8",
+    "question": "Moğol imperatoru Övrəngzibin siyasəti əvvəlki hökmdarlardan (məs. Əkbər şahdan) nə ilə fərqlənirdi?",
+    "options": ["Sülhsevər idi", "Dini dözümsüzlük nümayiş etdirdi, qeyri-müsəlmanlara (hindulara, siqhlərə) qarşı ağır vergilər (cizyə) qoydu və üsyanlara səbəb oldu", "Yeni torpaqlar fəth etmədi", "Ölkəni Avropaya bağışladı"],
+    "correctAnswer": 1,
+    "explanation": "Övrəngzib ənənəvi islam qaydalarını sərtləşdirdi, hinduların məbədlərini dağıtdı, cizyəni bərpa etdi. Bu isə marathalar, siqhlər kimi yerli xalqların güclü üsyanlarına səbəb oldu.",
+    "difficulty": "orta", "topic": "Böyük Moğol dövləti", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T02-B2-O-002"
+  },
+  {
+    "id": 500023, "category": "Ümumi tarix 8",
+    "question": "1739-cu ildə Böyük Moğol dövlətinə böyük zərbə vuran xarici hücum kim tərəfindən həyata keçirildi?",
+    "options": ["İngilislər", "Nadir şah Əfşar (İran-Qızılbaş qoşunu)", "Çin imperatoru", "Rus çarı"],
+    "correctAnswer": 1,
+    "explanation": "1739-cu ildə Nadir şah Dehlini fəth edərək imperiyanı talamış və Moğol dövlətinin zəifliyini bütün dünyaya nümayiş etdirmişdir.",
+    "difficulty": "orta", "topic": "Böyük Moğol dövləti", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T02-B2-O-003"
+  },
+  {
+    "id": 500024, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrdə Böyük Moğol dövlətinin zəifləməsindən istifadə edərək Hindistana daxil olan əsas Avropa gücü hansı şirkət idi?",
+    "options": ["Fransız Şərqi Hind şirkəti", "İngiltərə (Ost-Hind şirkəti)", "Hollandiya Qərbi Hind şirkəti", "İspaniya Armadası"],
+    "correctAnswer": 1,
+    "explanation": "Dövlətin zəifləməsindən istifadə edən İngiltərə Ost-Hind Şirkəti ticarət mərkəzləri qurmaqla başlayaraq yavaş-yavaş Hindistanın torpaqlarını siyasi cəhətdən ələ keçirməyə başladı.",
+    "difficulty": "orta", "topic": "Böyük Moğol dövləti", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T02-B2-O-004"
+  },
+  {
+    "id": 500025, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövlətində mülkiyyət formalarından olan 'Cagir' nə idi?",
+    "options": ["Pul vahidi", "Hərbi və dövlət xidməti müqabilində verilən torpaq (Səfəvilərdəki tiyul kimi)", "Dini vergi", "Qul adı"],
+    "correctAnswer": 1,
+    "explanation": "Cagir sistemi ilə imperator hərbi və ya mülki xidmət müqabilində əmirlərə (cagirdarlara) müəyyən torpağın vergi yığma hüququnu verirdi.",
+    "difficulty": "orta", "topic": "Böyük Moğol dövləti", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T02-B2-O-005"
+  },
+  {
+    "id": 500026, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövlətinin süqutunun əsas səbəblərini necə xarakterizə etmək olar?",
+    "options": ["Yalnız dəniz donanmasının zəifliyi", "Övrəngzibin dini siyasəti nəticəsindəki daxili üsyanlar, feodal separatizmi, xarici hücumlar (Nadir şah) və Avropa (İngiltərə) müstəmləkəçiliyi", "Zəlzələ nəticəsində", "Əhalinin birdən-birə köçməsi"],
+    "correctAnswer": 1,
+    "explanation": "Süqut çoxşaxəli idi: içəridə hinduların və yerli feodalların mərkəzə qaldırdığı üsyanlar, xaricdə isə əvvəl İran/Əfqan hücumları, sonra isə İngiltərənin (Ost-Hind şirkəti) addım-addım işğalı.",
+    "difficulty": "çətin", "topic": "Böyük Moğol dövləti", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T02-B4-C-001"
+  },
+  {
+    "id": 500027, "category": "Ümumi tarix 8",
+    "question": "Əkbər şahın Hindistanda 'sülhi-küll' (hamı üçün sülh) siyasətinin dövlət idarəçiliyinə nə kimi müsbət təsiri oldu?",
+    "options": ["Heç bir təsiri olmadı", "Çoxmilli və çoxdinli ölkədə daxili sabitliyi təmin etdi, hinduları dövlət idarəetməsinə qataraq imperiyanın ictimai bazasını genişləndirdi", "Müsəlmanları ölkədən qovdu", "İqtisadiyyatı çökdürdü"],
+    "correctAnswer": 1,
+    "explanation": "Sülhi-küll siyasəti sayəsində Əkbər şah raçput (hindu) tayfaları ilə müttəfiq oldu, qeyri-müsəlmanların rəğbətini qazandı. Bu, nəhəng imperiyanı birləşdirən sement rolunu oynadı.",
+    "difficulty": "çətin", "topic": "Böyük Moğol dövləti", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T02-B3-C-001"
+  },
+  {
+    "id": 500028, "category": "Ümumi tarix 8",
+    "question": "İngiltərə Ost-Hind şirkətinin Hindistanda hakimiyyəti ələ almasını asanlaşdıran əsas daxili siyasi amil nə idi?",
+    "options": ["Hindistanın könüllü tabe olması", "Moğol imperatorluğunun mərkəzi gücünü itirməsi və yerli hakimlərin (nəvvabların) bir-biri ilə savaşması", "İngilislərin dini yayması", "Yerli əhalinin ingilisləri kral kimi qəbul etməsi"],
+    "correctAnswer": 1,
+    "explanation": "XVIII əsrin ortalarında Moğol şahı yalnız simvolik gücə malik idi. İngilislər 'parçala və hökm sür' taktikası ilə yerli hakimlərin münaqişələrindən istifadə edərək bölgələri bir-bir ələ keçirdilər.",
+    "difficulty": "çətin", "topic": "Böyük Moğol dövləti", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T02-B4-C-002"
+  },
+  {
+    "id": 500029, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol mədəniyyətini bənzərsiz edən əsas xüsusiyyət nə idi?",
+    "options": ["Yalnız Avropa üslubunda olması", "İslam, Türk-Fars və yerli Hindu memarlıq və sənət ənənələrinin möhtəşəm sintezi (hind-müsəlman üslubu)", "Yalnız ərəb mədəniyyətini təmsil etməsi", "Mədəniyyət nümunələrinin qalmamaşı"],
+    "correctAnswer": 1,
+    "explanation": "Moğol dövrü mədəniyyəti (özəlliklə memarlıq - Tac Mahal, Qırmızı Qala) türk, fars (islam) və yerli hind incəsənətinin unikal və zəngin sintezi kimi formalaşmışdı.",
+    "difficulty": "çətin", "topic": "Böyük Moğol dövləti", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T02-B3-C-002"
+  },
+  {
+    "id": 500030, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol imperiyası ilə Səfəvi dövləti arasındakı ziddiyyətlərin əsas coğrafi nöqtəsi hara idi?",
+    "options": ["Təbriz", "Qəndəhar və Əfqanıstan ərazisi", "Dehli", "İstanbul"],
+    "correctAnswer": 1,
+    "explanation": "Hər iki imperiya Orta Asiyadan Hindistana gedən ticarət və hərbi yolların açarı olan Qəndəhar (Əfqanıstan) uğrunda əsrlərlə mübarizə aparmış, şəhər dəfələrlə əldən-ələ keçmişdir.",
+    "difficulty": "çətin", "topic": "Böyük Moğol dövləti", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T02-B3-C-003"
+  },
+  {
+    "id": 500031, "category": "Ümumi tarix 8",
+    "question": "XVII əsrin ortalarında (1644-cü ildə) Çində Min sülaləsini devirib hakimiyyətə gələn xarici mənşəli sülalə hansıdır?",
+    "options": ["Xan sülaləsi", "Tsin (Mancur) sülaləsi", "Yuan sülaləsi", "Sun sülaləsi"],
+    "correctAnswer": 1,
+    "explanation": "1644-cü ildə kəndli üsyanından istifadə edən mancurlar Çin səddini keçərək Pekini tutdular və Çində Tsin sülaləsinin (1644-1912) əsasını qoydular.",
+    "difficulty": "sadə", "topic": "Çin", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T03-B1-S-001"
+  },
+  {
+    "id": 500032, "category": "Ümumi tarix 8",
+    "question": "Tsin (Mancur) sülaləsinin çinlilərə qarşı siyasətinin bir göstəricisi olaraq kişilərə məcburi qoyulan qayda nə idi?",
+    "options": ["Gündə 10 saat işləmək", "Saçlarını mancurlar kimi hörük etmək", "Ölkəni tərk etmək", "Ancaq Avropa paltarı geyinmək"],
+    "correctAnswer": 1,
+    "explanation": "Mancurlar çinlilərə tabeçilik rəmzi olaraq alınlarını qırxıb, saçlarını arxadan hörük etməyi məcbur etdilər. Buna qarşı çıxanlar edam edilirdi.",
+    "difficulty": "sadə", "topic": "Çin", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T03-B1-S-002"
+  },
+  {
+    "id": 500033, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrdə Tsin (Çin) imperatorunun xarici siyasətində tətbiq etdiyi 'qapalı qapılar' siyasəti nə demək idi?",
+    "options": ["Bütün qonşu dövlətləri işğal etmək", "Avropa tacirləri və gəmiləri üçün Çin limanlarını (Quançjoudan başqa) bağlamaq, xarici ticarəti məhdudlaşdırmaq", "Ölkəni tamamilə Avropaya açmaq", "Yeni ticarət mərkəzləri qurmaq"],
+    "correctAnswer": 1,
+    "explanation": "Tsin dövləti xarici (əsasən Avropa) təsirinin ölkədə yayılmasının qarşısını almaq üçün XVIII əsrin ortalarında əcnəbilərə ölkəyə daxil olmağı və ticarəti qadağan etdi (izolyasiya).",
+    "difficulty": "sadə", "topic": "Çin", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T03-B1-S-003"
+  },
+  {
+    "id": 500034, "category": "Ümumi tarix 8",
+    "question": "Çində cəmiyyət hansı fəlsəfi/dini təlimin qaydalarına uyğun idarə olunurdu?",
+    "options": ["İslam", "Konfutsiçilik", "Xristianlıq", "Şamanizm"],
+    "correctAnswer": 1,
+    "explanation": "Çin imperiyası minilliklər boyu olduğu kimi, böyüklərə hörmət, dövlətə tabeçilik, ənənələrə bağlılığı təbliğ edən Konfutsiçilik təlimi əsasında idarə edilirdi.",
+    "difficulty": "sadə", "topic": "Çin", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T03-B1-S-004"
+  },
+  {
+    "id": 500035, "category": "Ümumi tarix 8",
+    "question": "Çində ali dövlət vəzifələrinə təyinat hansı yolla həyata keçirilirdi?",
+    "options": ["Ziyalıların səsverməsi ilə", "Xüsusi dövlət imtahanları (məmur imtahanı) verməklə", "Yalnız hərbi nailiyyətlə", "Maaş verərək satın almaqla"],
+    "correctAnswer": 1,
+    "explanation": "Məmurları seçmək üçün xüsusi imtahan sistemi mövcud idi. İmtahanda Konfutsi əsərlərini bilmək tələb olunurdu. Lakin mancurlar dövründə ən yüksək vəzifələrə mancurlar təyin edilirdi.",
+    "difficulty": "sadə", "topic": "Çin", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T03-B1-S-005"
+  },
+  {
+    "id": 500036, "category": "Ümumi tarix 8",
+    "question": "Mancurların Çində qurduğu dövlət idarəetmə aparatı necə idi?",
+    "options": ["Demokratik seçki sistemi", "Çinlilərin qurduğu köhnə idarə aparatını saxlayıb özləri onu idarə etdilər", "Bütün məmurları öldürüb Avropalıları gətirdilər", "Dövləti kilsəyə tabe etdilər"],
+    "correctAnswer": 1,
+    "explanation": "Mancurlar (Tsin sülaləsi) sayca az olduqları üçün mövcud olan bürokratik Çin idarə sistemini olduğu kimi saxladılar, ancaq ali vəzifələrə mancurları təyin etməklə Çini asanlıqla idarə etdilər.",
+    "difficulty": "orta", "topic": "Çin", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T03-B2-O-001"
+  },
+  {
+    "id": 500037, "category": "Ümumi tarix 8",
+    "question": "Avropalılar Çinlə ticarət etməyə can atırdılar. Çindən əsasən hansı mallar ixrac edilirdi?",
+    "options": ["Yalnız qızıl", "Çay, ipək, çini qablar", "Neft və kömür", "Silah və texnika"],
+    "correctAnswer": 1,
+    "explanation": "Avropada Çin çayına, yüksək keyfiyyətli ipəyinə və naxışlı çini (farfor) qablarına böyük tələbat var idi.",
+    "difficulty": "orta", "topic": "Çin", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T03-B2-O-002"
+  },
+  {
+    "id": 500038, "category": "Ümumi tarix 8",
+    "question": "Çin imperatoru tərəfindən 'Qapalı qapılar' siyasətinin tətbiq edilməsinin səbəbi nə idi?",
+    "options": ["Kifayət qədər malları yox idi", "Avropalıların müstəmləkə işğallarından və missionerlərin çinlilər arasında fəaliyyətindən ehtiyat etmələri", "İngiltərə kralı ilə şəxsi düşmənçilik", "Çinlilərin dənizçiliyi bilməməsi"],
+    "correctAnswer": 1,
+    "explanation": "İmperatorluq Avropalıların Hindistandakı fəaliyyətini görürdü. Missionerlərin (xristian dinini yayanların) fəaliyyətinin Çin ənənələrinə zidd olduğu və dövlət üçün təhlükə yaratdığı düşünülürdü.",
+    "difficulty": "orta", "topic": "Çin", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T03-B2-O-003"
+  },
+  {
+    "id": 500039, "category": "Ümumi tarix 8",
+    "question": "Tsin imperiyası XVIII əsrdə qonşu ölkələrə qarşı necə bir siyasət yürüdürdü?",
+    "options": ["Sülhsevər", "Aqressiv işğalçı; Tibet, Monqolustan, Şərqi Türkistan kimi əraziləri işğal etdilər", "Ticarət müqavilələri bağlamaqla kifayətləndilər", "Bütün ordu ləğv edildi"],
+    "correctAnswer": 1,
+    "explanation": "XVIII əsr Tsin imperiyasının sərhədlərinin ən çox genişləndiyi dövrdür. Onlar aqressiv müharibələrlə Monqolustan, Tibet, Cunqariya və Şərqi Türkistanı (Sincan) zəbt etdilər.",
+    "difficulty": "orta", "topic": "Çin", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T03-B2-O-004"
+  },
+  {
+    "id": 500040, "category": "Ümumi tarix 8",
+    "question": "Çində kəndlilərin əsas iqtisadi problemi nə idi?",
+    "options": ["Torpaqların feodalların (məmurların, mancur zadəganların) əlində cəmləşməsi, vergilərin ağırlığı", "Yalnız su çatışmazlığı", "Əkinçilik alətlərinin olmaması", "Çoxlu məhsul bolluğu"],
+    "correctAnswer": 1,
+    "explanation": "Çində əsas problem torpaq azlığı idi. Torpaqların böyük hissəsi imperator və zadəganların əlində idi. Kəndlilər icarədar kimi çalışır, ağır vergilər verirdilər.",
+    "difficulty": "orta", "topic": "Çin", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T03-B2-O-005"
+  },
+  {
+    "id": 500041, "category": "Ümumi tarix 8",
+    "question": "'Qapalı qapılar' siyasətinin Çin üçün uzunmüddətli (XIX əsrə qədərki) nəticələrini qiymətləndirin.",
+    "options": ["Çini dünyanın ən inkişaf etmiş ölkəsinə çevirdi", "Avropadan gələn texnoloji, sənaye və elmi inkişafdan təcrid edərək Çinin geri qalmasına və sonradan asan müstəmləkəyə çevrilməsinə səbəb oldu", "Yalnız ticarəti gücləndirdi", "Çin mədəniyyətini bütün dünyaya yaydı"],
+    "correctAnswer": 1,
+    "explanation": "İzolyasiya siyasəti Çini xarici təhlükədən qısa müddətə qorusa da, Avropada baş verən Sənaye İnqilabından kənarda qoydu. Texnoloji cəhətdən geri qalan Çin, XIX əsrdə Avropaya məğlub oldu.",
+    "difficulty": "çətin", "topic": "Çin", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T03-B4-C-001"
+  },
+  {
+    "id": 500042, "category": "Ümumi tarix 8",
+    "question": "Mancurların Çində asimilyasiyası prosesini necə izah etmək olar?",
+    "options": ["Çinlilər mancur dilini qəbul etdilər", "Mancurlar siyasi hakimiyyəti ələ almalarına baxmayaraq, zamanla Çinin qədim mədəniyyətinə, dilinə və dövlət idarəçiliyinə (Konfutsiçiliyə) uyğunlaşıb asimilyasiya oldular", "Mancurlar fərqli qaldılar", "Avropa mədəniyyəti yayıldı"],
+    "correctAnswer": 1,
+    "explanation": "Bu, tarixdə tez-tez rast gəlinən prosesdir: hərbi cəhətdən qalib gələn qüvvə (Mancurlar), mədəni cəhətdən daha qədim və böyük olan məğlub qüvvənin (Çin) mədəniyyətinə hopur.",
+    "difficulty": "çətin", "topic": "Çin", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T03-B3-C-001"
+  },
+  {
+    "id": 500043, "category": "Ümumi tarix 8",
+    "question": "Çinin ticarət balansı XVIII əsrdə Avropa ilə müqayisədə necə idi və Avropalılar (xüsusən İngiltərə) bunu necə dəyişməyə çalışırdı?",
+    "options": ["Avropa Çinə çox mal satırdı", "Çin çox ixrac edir (çay, ipək), lakin Avropadan heç nə almırdı (müsbət balans). İngilislər bu fərqi ödəmək üçün daha sonra Çinə tiryək satmağa başladılar", "Balans bərabər idi", "Çin həmişə borcda idi"],
+    "correctAnswer": 1,
+    "explanation": "Çinin özünü təmin edən iqtisadiyyatı var idi, Avropa mallarına ehtiyacı yox idi və yalnız gümüşlə ödəniş tələb edirdi. Bu İngiltərənin gümüş ehtiyatını tükətdiyindən, onlar Çinə Hindistandan gətirilən tiryək (narkotik) satmağa başladılar.",
+    "difficulty": "çətin", "topic": "Çin", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T03-B4-C-002"
+  },
+  {
+    "id": 500044, "category": "Ümumi tarix 8",
+    "question": "Min sülaləsinin devrilməsini şərtləndirən sinfi qarşıdurmaların mahiyyəti nə idi?",
+    "options": ["Tacirlər kəndlilərə qarşı vuruşurdu", "Zadəganların torpaqları inhisara alması, ağır vergilər və kəndli kütlələrinin yoxsullaşaraq mütəşəkkil üsyan (Li Zıçen) qaldırması", "Dinlərarası müharibə idi", "Dəniz quldurlarının hücumu idi"],
+    "correctAnswer": 1,
+    "explanation": "1644-cü ildə Min sülaləsi kənardan Mancurların zərbəsindən əvvəl içəridən böyük kəndli üsyanı (Li Zıçen rəhbərliyi ilə) nəticəsində çökmüşdü. Mancurlar sadəcə bu xaotik vəziyyətdən istifadə etdilər.",
+    "difficulty": "çətin", "topic": "Çin", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T03-B3-C-002"
+  },
+  {
+    "id": 500045, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrdə Çinin əhalisinin sürətlə artmasının iqtisadi-sosial təsiri necə oldu?",
+    "options": ["Cəmiyyət zənginləşdi", "Torpaq çatışmazlığını daha da kəskinləşdirdi, aclıq və üsyan ehtimallarını artırdı", "Sənayeləşməyə səbəb oldu", "İş qüvvəsi Avropaya köçdü"],
+    "correctAnswer": 1,
+    "explanation": "Ərazi genişlənməsinə baxmayaraq, əkinəyararlı torpaqlar məhdud idi. Əhalinin 300 milyona çatması torpaq aclığını kəskinləşdirdi və cəmiyyəti daxili partlayış həddinə gətirdi.",
+    "difficulty": "çətin", "topic": "Çin", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T03-B4-C-003"
+  },
+  {
+    "id": 500046, "category": "Ümumi tarix 8",
+    "question": "XVI əsrdə Osmanlı imperiyasının qüdrətinin zirvəsi hansı sultanın adı ilə bağlıdır?",
+    "options": ["II Mehmed (Fatih)", "I Səlim (Yavuz)", "Süleyman Qanuni (Möhtəşəm)", "I Əhməd"],
+    "correctAnswer": 2,
+    "explanation": "I Süleymanın (1520-1566) dövrü Osmanlı imperiyasının həm siyasi-hərbi, həm də iqtisadi-mədəni cəhətdən ən güclü, qızıl dövrü hesab edilir.",
+    "difficulty": "sadə", "topic": "Osmanlı imperiyası", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T04-B1-S-001"
+  },
+  {
+    "id": 500047, "category": "Ümumi tarix 8",
+    "question": "Osmanlı ordusunun əsas zərbə qüvvəsi, piyada bölməsi necə adlanırdı?",
+    "options": ["Sipahilər", "Yeniçərilər", "Akkoyunlular", "Məmlüklər"],
+    "correctAnswer": 1,
+    "explanation": "Yeniçərilər – Osmanlı imperiyasının odlu silahlarla təchiz olunmuş elit daimi piyada qoşunu idi. Onlar sultanın şəxsi qvardiyası rolunu da oynayırdılar.",
+    "difficulty": "sadə", "topic": "Osmanlı imperiyası", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T04-B1-S-002"
+  },
+  {
+    "id": 500048, "category": "Ümumi tarix 8",
+    "question": "1683-cü ildə Osmanlı ordusunun hansı şəhər qarşısındakı məğlubiyyəti Avropada irəliləməsini dayandırdı və geriləmə dövrünü başlatdı?",
+    "options": ["Vyana (Avstriya)", "Budapeşt", "Roma", "Paris"],
+    "correctAnswer": 0,
+    "explanation": "1683-cü il II Vyana mühasirəsində Osmanlı ordusunun məğlubiyyəti (Qara Mustafa Paşanın komandanlığı altında) imperiyanın Avropada geriləmə dövrünün başlanğıcı oldu.",
+    "difficulty": "sadə", "topic": "Osmanlı imperiyası", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T04-B1-S-003"
+  },
+  {
+    "id": 500049, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında hərbi-feodal torpaq sahibliyi (xidmətə görə verilən) necə adlanırdı?",
+    "options": ["Tiyul", "Timar və Ziyamət", "Vəqf", "İqta"],
+    "correctAnswer": 1,
+    "explanation": "Timar sistemi hərbi xidmət müqabilində sipahilərə torpağın (vergi gəlirlərinin) verilməsidir. Bu Osmanlı ordusunun iqtisadi təməli idi.",
+    "difficulty": "sadə", "topic": "Osmanlı imperiyası", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T04-B1-S-004"
+  },
+  {
+    "id": 500050, "category": "Ümumi tarix 8",
+    "question": "Osmanlı dövlətində ölkənin baş vəziri (hökumət başçısı) hansı titulu daşıyırdı?",
+    "options": ["Bəylərbəyi", "Sədrəzəm (Böyük vəzir)", "Şeyxülislam", "Xan"],
+    "correctAnswer": 1,
+    "explanation": "Sədrəzəm (Sədr-əzəm) sultandan sonra dövlətdə ikinci şəxs idi, sultanın möhürünü daşıyır və dövləti onun adından idarə edirdi.",
+    "difficulty": "sadə", "topic": "Osmanlı imperiyası", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T04-B1-S-005"
+  },
+  {
+    "id": 500051, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrin əvvəllərində (1718-1730) Osmanlı imperiyasında mədəni və sosial islahatlar, Avropa ilə yaxınlaşma dövrü necə adlanır?",
+    "options": ["Tənzimat dövrü", "Lalə dövrü", "Məşrutiyyət", "Cümhuriyyət"],
+    "correctAnswer": 1,
+    "explanation": "Lalə dövründə III Əhmədin hakimiyyəti zamanı ilk dəfə Avropaya elçilər göndərildi, mətbəə açıldı, çiçək xəstəliyinə qarşı peyvənd gətirildi, sənət və memarlıq inkişaf etdi.",
+    "difficulty": "orta", "topic": "Osmanlı imperiyası", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T04-B2-O-001"
+  },
+  {
+    "id": 500052, "category": "Ümumi tarix 8",
+    "question": "XVII-XVIII əsrlərdə Osmanlıların xarici siyasətində ən böyük iki rəqibi kimlər idi?",
+    "options": ["Avstriya (Habsburqlar) və Rusiya", "İngiltərə və Fransa", "İspaniya və Portuqaliya", "Çin və Yaponiya"],
+    "correctAnswer": 0,
+    "explanation": "Osmanlı imperiyası qərbdə Mərkəzi Avropa və Balkanlar uğrunda Avstriya ilə, şimalda isə Qara dəniz və Qafqaz uğrunda Rusiya ilə şiddətli müharibələr aparırdı.",
+    "difficulty": "orta", "topic": "Osmanlı imperiyası", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T04-B2-O-002"
+  },
+  {
+    "id": 500053, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında Teymardan (torpaqdan) əldə edilən vergilərin azalması dövlətə necə təsir etdi?",
+    "options": ["Dövlət daha da zənginləşdi", "Sipahi (atlı) ordusunun zəifləməsinə və yeniçərilərin (maaşlı əsgərlərin) sayının artması xəzinəyə ağır yük oldu", "Heç bir təsiri olmadı", "Dəniz donanmasını gücləndirdi"],
+    "correctAnswer": 1,
+    "explanation": "Timar sisteminin pozulması (torpaqların qeyri-hərbçilərə verilməsi) kənd təsərrüfatını çökdürdü, sipahi ordusunu azaltdı. Dövlət maaş ödəyəcəyi yeniçərilərin sayını artırdı ki, bu da inflyasiyaya gətirib çıxardı.",
+    "difficulty": "orta", "topic": "Osmanlı imperiyası", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T04-B2-O-003"
+  },
+  {
+    "id": 500054, "category": "Ümumi tarix 8",
+    "question": "Karlovitsa sülhünün (1699) Osmanlı imperiyası üçün əhəmiyyəti nədir?",
+    "options": ["Böyük qələbə idi", "Osmanlı tarixində ilk böyük torpaq itkisi (Macarıstan Avstriyaya verildi) idi və Avropada müdafiə mövqeyinə keçməsinin rəmzi idi", "Osmanlı-Rusiya dostluğunu başlatdı", "Lalə dövrünü bitirdi"],
+    "correctAnswer": 1,
+    "explanation": "Müqəddəs İttifaqa qarşı aparılan uzun müharibədən sonra imzalanan Karlovitsa sülhü ilə Osmanlılar böyük əraziləri itirdilər. Bu, geriləmə və parçalanma prosesinin başlanğıcı oldu.",
+    "difficulty": "orta", "topic": "Osmanlı imperiyası", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T04-B2-O-004"
+  },
+  {
+    "id": 500055, "category": "Ümumi tarix 8",
+    "question": "Osmanlı cəmiyyətində 'Əhli-Bərat' (Kapitulyasiyalar) nə idi və iqtisadiyyata necə təsir edirdi?",
+    "options": ["Yerli tacirlərə dəstək idi", "Avropa dövlətlərinə verilən iqtisadi və hüquqi imtiyazlar (aşağı gömrük) idi ki, bu yerli istehsalı çökdürüb ölkəni xarici bazara çevirdi", "Kəndlilərin azadlığı idi", "Dini bir təriqət idi"],
+    "correctAnswer": 1,
+    "explanation": "Kapitulyasiyalar (imtiyazlar) ilk vaxtlar ticarəti təşviq etmək üçün verilsə də, sonradan Avropa sənaye mallarının ucuz rüsumla Osmanlı bazarına girməsinə və yerli sənətkarlığın məhvinə səbəb oldu.",
+    "difficulty": "orta", "topic": "Osmanlı imperiyası", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T04-B2-O-005"
+  },
+  {
+    "id": 500056, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında XVII-XVIII əsrlərdə mərkəzi hakimiyyətin zəifləməsinin hərbi-siyasi səbəbini (Yeniçəri ocağının transformasiyasını) necə izah etmək olar?",
+    "options": ["Yeniçərilər sayca azaldılar", "Yeniçərilər əvvəllər sultanın sadiq ordusu ikən, sonradan siyasətə qarışan, üsyanlar edən və dövlət islahatlarına mane olan mühafizəkar bir gücə çevrildilər", "Yeniçərilər ticarətə başladılar", "Yeniçərilər donanmaya keçdilər"],
+    "correctAnswer": 1,
+    "explanation": "Yeniçəri ocağı vaxtilə Osmanlının gücü idi. Lakin sonradan onlar evlənməyə, sənətlə məşğul olmağa başladılar, 'Dövlət ocaq üçündür' prinsipi ilə çıxış edərək sultanları devirir, Avropa tipli ordunun yaranmasına əngəl olurdular.",
+    "difficulty": "çətin", "topic": "Osmanlı imperiyası", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T04-B4-C-001"
+  },
+  {
+    "id": 500057, "category": "Ümumi tarix 8",
+    "question": "Osmanlı və Rusiya imperiyaları arasındakı rəqabətin əsas geosiyasi hədəfini müəyyənləşdirin (XVIII əsr).",
+    "options": ["Rusiya Osmanlı paytaxtını köçürmək istəyirdi", "Rusiyanın isti dənizlərə (Qara dəniz, Boğazlar və Aralıq dənizi) çıxış əldə etmək üçün Osmanlını sıxışdırması", "Rusiya İslamı yaymaq istəyirdi", "Osmanlı Rusiyanı fəth etmək istəyirdi"],
+    "correctAnswer": 1,
+    "explanation": "Piotr I və Yekaterina II-nin dövründə Rusiyanın əsas hədəfi dəniz ticarəti və hərbi güc üçün Qara dənizə və Bosfor/Dardanel boğazlarına yiyələnmək idi. Bu Osmanlı üçün ölümcül təhlükə idi.",
+    "difficulty": "çətin", "topic": "Osmanlı imperiyası", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T04-B3-C-001"
+  },
+  {
+    "id": 500058, "category": "Ümumi tarix 8",
+    "question": "Osmanlı İmperiyasının Avropadakı torpaq itkilərinin (məs. Karlovitsa müqaviləsi) imperiyanın demoqrafik strukturuna necə təsir etdi?",
+    "options": ["Əhali artdı", "İtirilmiş Balkan torpaqlarından kütləvi halda türk-müsəlman əhalisi (mühacirlər) Anadoluya köç etməyə başladı, iqtisadi və sosial yük artdı", "Xristian əhali Anadoluya köçdü", "Heç bir təsiri olmadı"],
+    "correctAnswer": 1,
+    "explanation": "Torpaqlar itirildikcə oradakı türk və müsəlman əhali qırğınlardan xilas olmaq üçün imperiyanın daxilinə (Anadoluya) sığınırdı. Bu, dövlətin sosial və iqtisadi yükünü ağırlaşdırırdı.",
+    "difficulty": "çətin", "topic": "Osmanlı imperiyası", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T04-B3-C-002"
+  },
+  {
+    "id": 500059, "category": "Ümumi tarix 8",
+    "question": "Coğrafi kəşflərin Osmanlı imperiyasının iqtisadi geriləməsindəki rolunu təhlil edin.",
+    "options": ["Heç bir rolu yox idi", "Yeni dəniz yollarının tapılması ilə ənənəvi İpək və Ədviyyat yolları (Osmanlı nəzarətindəki) öz əhəmiyyətini itirdi, tranzit ticarət gəlirləri kəskin azaldı", "Osmanlı yeni koloniyalar qurdu", "Avropadan gümüş axını Osmanlı xəzinəsini zənginləşdirdi"],
+    "correctAnswer": 1,
+    "explanation": "Ümid burnundan keçən yeni dəniz yolu tapılandan sonra Avropa tacirləri Asiyaya (Hindistan) Osmanlı torpaqlarından keçmədən getdilər. Nəticədə Osmanlı böyük gömrük/tranzit gəlirlərindən məhrum oldu.",
+    "difficulty": "çətin", "topic": "Osmanlı imperiyası", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T04-B4-C-002"
+  },
+  {
+    "id": 500060, "category": "Ümumi tarix 8",
+    "question": "Lalə dövrü (1718-1730) nə üçün Osmanlı tarixində həm müsbət, həm də ziddiyyətli bir dönüş nöqtəsi hesab olunur?",
+    "options": ["Çünki hərbi zəfərlər əldə olundu", "Müsbətdir, çünki ilk dəfə Avropadan (Qərbdən) mədəni və elmi yeniliklər öyrənilməyə başlandı; Ziddiyyətlidir, çünki israfçılıq və lüks xalqın üsyanına (Patrona Xəlil) səbəb oldu", "Çünki lalə çiçəyi kəşf edildi", "Çünki respublika elan edildi"],
+    "correctAnswer": 1,
+    "explanation": "Bu dövrdə Qərbi öyrənmək təşəbbüsü (mətbəə, mühəndislik) başladı, lakin eyni zamanda sarayın hədsiz əyləncəsi və israfı yoxsul xalqın və yeniçərilərin qəzəbinə tuş gəlib qanlı üsyanla bitdi.",
+    "difficulty": "çətin", "topic": "Osmanlı imperiyası", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T04-B4-C-003"
+  },
+  {
+    "id": 500061, "category": "Ümumi tarix 8",
+    "question": "XVI əsrdə Rusiyanın zərbələri altında süqut edən və Volqaboyu (İdil) ərazisində yerləşən iki mühüm türk (tatar) xanlığı hansılar idi?",
+    "options": ["Krım və Sibir", "Kazan və Həştərxan", "Xivə və Buxara", "Böyük Orda və Noqay"],
+    "correctAnswer": 1,
+    "explanation": "Rus çarı IV İvan Qroznı 1552-ci ildə Kazan xanlığını, 1556-cı ildə isə Həştərxan xanlığını işğal edərək Volqa çayı boyunda Rusiya hakimiyyətini qurdu.",
+    "difficulty": "sadə", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T05-B1-S-001"
+  },
+  {
+    "id": 500062, "category": "Ümumi tarix 8",
+    "question": "Kazan xanlığının işğalından sonra rusların Şərqə doğru irəliləməsinin qarşısında dayanan növbəti türk xanlığı hansı idi?",
+    "options": ["Krım xanlığı", "Sibir xanlığı", "Qazax xanlığı", "Osmanlı imperiyası"],
+    "correctAnswer": 1,
+    "explanation": "Kazan və Həştərxanın süqutundan sonra ruslar (Yermakın başçılığı ilə kazak dəstələri) Ural dağlarını aşaraq Küçüm xanın idarə etdiyi Sibir xanlığına hücum etdilər.",
+    "difficulty": "sadə", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T05-B1-S-002"
+  },
+  {
+    "id": 500063, "category": "Ümumi tarix 8",
+    "question": "Mərkəzi Asiyada (Türküstanda) yaranmış özbək xanlıqları əsasən hansılar idi?",
+    "options": ["Kazan və Həştərxan", "Buxara, Xivə və Kokand", "Krım və Sibir", "Naxçıvan və Qarabağ"],
+    "correctAnswer": 1,
+    "explanation": "Mərkəzi Asiyada parçalanma nəticəsində üç əsas müstəqil özbək xanlığı yaranmışdı: Buxara əmirliyi, Xivə xanlığı və Hokand (Kokand) xanlığı.",
+    "difficulty": "sadə", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T05-B1-S-003"
+  },
+  {
+    "id": 500064, "category": "Ümumi tarix 8",
+    "question": "Sibir xanlığına qarşı rusların hərbi yürüşünə kim başçılıq edirdi?",
+    "options": ["Piotr I", "Yermak", "Aleksandr Nevski", "İvan Qroznı şəxsən"],
+    "correctAnswer": 1,
+    "explanation": "Sibirin işğalı Stroqanov tacirləri tərəfindən maliyyələşdirilən və kazak atamanı Yermakın başçılıq etdiyi dəstələr tərəfindən həyata keçirildi.",
+    "difficulty": "sadə", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T05-B1-S-004"
+  },
+  {
+    "id": 500065, "category": "Ümumi tarix 8",
+    "question": "Rusiya imperiyasının ələ keçirdiyi türk torpaqlarında əhaliyə qarşı yeritdiyi xüsusi dini siyasət nə idi?",
+    "options": ["İslama tam azadlıq vermək", "Xristianlaşdırma (ruslaşdırma) siyasəti: müsəlmanları zorla xristianlığa keçirmək, məscidləri dağıtmaq", "Bütün dinləri ləğv etmək", "Buddizmi yaymaq"],
+    "correctAnswer": 1,
+    "explanation": "İşğal edilmiş Volqaboyu və Ural ərazilərində rus hökuməti yerli türk-müsəlman əhalini asimilyasiya etmək üçün məcburi xristianlaşdırma (vəftiz) siyasəti həyata keçirirdi.",
+    "difficulty": "sadə", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T05-B1-S-005"
+  },
+  {
+    "id": 500066, "category": "Ümumi tarix 8",
+    "question": "Volqaboyu (İdil) xanlıqlarının Rusiya tərəfindən işğalının ən böyük strateji nəticəsi nə oldu?",
+    "options": ["Rusiya Avropaya çıxış əldə etdi", "Rusiya bütün Volqa ticarət yolunu ələ keçirdi, Xəzər dənizinə çıxış əldə etdi və Sibirə, Qafqaza doğru yol açıldı", "Rusiya zəiflədi", "Türk dövlətləri birləşdi"],
+    "correctAnswer": 1,
+    "explanation": "Kazan və Həştərxanın süqutu Rusiyanı regional knyazlıqdan imperiyaya çevirdi. Xəzər dənizinə çıxış Səfəvilərlə birbaşa əlaqə (və sonradan işğal) üçün qapı açdı.",
+    "difficulty": "orta", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T05-B2-O-001"
+  },
+  {
+    "id": 500067, "category": "Ümumi tarix 8",
+    "question": "Mərkəzi Asiya xanlıqlarının iqtisadiyyatının zəifləməsinin əsas səbəblərindən biri nə idi?",
+    "options": ["Yalnız əhalinin tənbəlliyi", "Böyük Coğrafi Kəşflərdən sonra Quru İpək Yolunun öz əhəmiyyətini itirməsi və ticarətin okeanlara keçməsi", "Quraqlıq", "Sənayenin həddən artıq inkişafı"],
+    "correctAnswer": 1,
+    "explanation": "Mərkəzi Asiyanın zənginliyi İpək Yolu karvanlarından gəlirdi. Dəniz ticarət yolları açılandan sonra bu şəhərlər (Buxara, Səmərqənd) qlobal ticarətdən kənarda qalaraq kasıblaşdı.",
+    "difficulty": "orta", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T05-B2-O-002"
+  },
+  {
+    "id": 500068, "category": "Ümumi tarix 8",
+    "question": "Başqırdlar və tatarlar rus işğalına qarşı hansı yollarla mübarizə aparırdılar?",
+    "options": ["Yalnız məktub yazaraq", "Daimi üsyanlar qaldıraraq (məsələn, Puqaçov üsyanına qoşularaq Salavat Yulayev kimi qəhrəmanlarla mübarizə)", "Ölkədən kütləvi halda qaçaraq", "Sakitcə tabe oldular"],
+    "correctAnswer": 1,
+    "explanation": "Ural və İdil boyu türkləri kəndli müharibələrinə (E. Puqaçov üsyanı kimi) qoşulur, mütəmadi silahlı üsyanlar qaldırırdılar. Başqırd Salavat Yulayev azadlıq mübarizəsinin simvoludur.",
+    "difficulty": "orta", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T05-B2-O-003"
+  },
+  {
+    "id": 500069, "category": "Ümumi tarix 8",
+    "question": "Cunqarlar Mərkəzi Asiyanın qazax tayfalarına hansı zərbəni vurdular?",
+    "options": ["Ticarət etdilər", "Qazax cüzlərinə hücum edərək onları ağır məğlubiyyətə uğratdılar (Aktaban şuburındı - Böyük fəlakət illəri)", "Qazaxları xristian etdilər", "Heç bir müharibə olmadı"],
+    "correctAnswer": 1,
+    "explanation": "XVIII əsrin əvvəllərində qərbdən cunqarlar (oyrat-monqol) qazax torpaqlarına amansız hücumlar etdilər. Bu dövr qazax tarixində \"Böyük fəlakət illəri\" adlanır və onları Rusiya himayəsi axtarmağa məcbur etdi.",
+    "difficulty": "orta", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T05-B2-O-004"
+  },
+  {
+    "id": 500070, "category": "Ümumi tarix 8",
+    "question": "Sibir xanlığının məğlubiyyətinin əsas hərbi səbəbi nə idi?",
+    "options": ["Ordunun olmaması", "Rus kazaklarının odlu silahlara (tüfəng, top) malik olması, sibirlilərin isə yalnız ox və yayla vuruşması", "Sibir xanının satqınlığı", "İqlim şəraiti"],
+    "correctAnswer": 1,
+    "explanation": "Küçüm xanın ordusu sayca çox olsa da, atəşli silahlardan məhrum idi. Yermakın dəstələri isə odlu silahlarla təchiz edildiyi üçün asanlıqla qələbə çaldılar.",
+    "difficulty": "orta", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T05-B2-O-005"
+  },
+  {
+    "id": 500071, "category": "Ümumi tarix 8",
+    "question": "Mərkəzi Asiya xanlıqlarının xarici təhlükələr qarşısında ən böyük siyasi zəifliyini təhlil edin.",
+    "options": ["Coğrafi olaraq çox böyük olmaları", "Feodal pərakəndəliyi: Xivə, Buxara və Kokandın birləşmək əvəzinə bir-biri ilə daim savaşması", "Avropa ilə əlaqə qurmaları", "Şəhərlərin olmaması"],
+    "correctAnswer": 1,
+    "explanation": "Ən böyük zəiflik vahid dövlətin olmaması idi. Buxara, Xivə və Kokand xanlıqları arasındakı bitməyən müharibələr bölgəni zəiflətdi və sonradan Rusiya işğalını asanlaşdırdı.",
+    "difficulty": "çətin", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T05-B4-C-001"
+  },
+  {
+    "id": 500072, "category": "Ümumi tarix 8",
+    "question": "Rusiyanın qazax cüzlərini (tayfa ittifaqlarını) mərhələ-mərhələ işğal etməsində hansı taktikadan istifadə edilmişdir?",
+    "options": ["Hamısını bir gündə hərbi yolla tutdu", "Böyük fəlakət dövründə qazaxların təhlükəsizlik axtarışından istifadə edərək 'himayə' adı altında sərhəd qalaları tikdi və tədricən müstəqilliklərini əlindən aldı", "Qazaxlara torpaq verdi", "Avropa ordularını köməyə çağırdı"],
+    "correctAnswer": 1,
+    "explanation": "Rusiya Cunqar təhlükəsindən qorunmaq istəyən Kiçik, Orta və Böyük qazax cüzlərinə \"himayə\" (protektorat) təklif etdi, torpaqlarında qalalar tikərək tədricən idarəni ələ keçirdi.",
+    "difficulty": "çətin", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T05-B3-C-001"
+  },
+  {
+    "id": 500073, "category": "Ümumi tarix 8",
+    "question": "Qızıl Orda dövlətinin parçalanmasından yaranan tatar xanlıqlarının süqutunun türk dünyası üçün ümumi geosiyasi nəticəsi nə oldu?",
+    "options": ["Türk dövlətləri Avropanı fəth etdi", "Şərqi Avropa və Şimali Asiya torpaqlarında türk hakimiyyəti bitdi, Rusiya Qafqaza, Mərkəzi Asiyaya və Sakit okeana çıxan yollara sahib oldu", "Ticarət artdı", "Xanlıqlar yenidən birləşdi"],
+    "correctAnswer": 1,
+    "explanation": "Kazan, Həştərxan və Sibirin süqutu türk dünyasını iki yerə böldü. Rusiyanın nəhəng bir Avrasiya imperiyasına çevrilməsinin bünövrəsi məhz bu türk dövlətlərinin məhvi üzərində quruldu.",
+    "difficulty": "çətin", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T05-B4-C-002"
+  },
+  {
+    "id": 500074, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasının Kazan və Həştərxan xanlıqlarını rus işğalından xilas etmək cəhdlərinin (məs. Həştərxan səfəri) uğursuz olmasının əsas səbəbi nə idi?",
+    "options": ["Osmanlıların gücünün çatmaması", "Coğrafi uzaqlıq, logistik problemlər, Səfəvilərlə arxa cəbhədəki müharibələr və rusların ərazidə artıq möhkəmlənməsi", "Kazan xalqının Osmanlıları istəməməsi", "Osmanlıların dənizlə getməsi"],
+    "correctAnswer": 1,
+    "explanation": "Osmanlı (və müttəfiqi Krım) Həştərxanı geri almaq üçün ordu göndərsə də (Don-Volqa kanalı layihəsi), məsafənin uzaqlığı, qışın sərtliyi və Səfəvi təhlükəsi bu cəhdi boşa çıxardı.",
+    "difficulty": "çətin", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T05-B3-C-002"
+  },
+  {
+    "id": 500075, "category": "Ümumi tarix 8",
+    "question": "Cədidçilik (Usuli-cədid) hərəkatının Volqaboyu (Tatarıstan) və Mərkəzi Asiya türkləri üçün əhəmiyyəti nə idi?",
+    "options": ["Köhnə adətləri qaytarmaq", "Rusiya işğalı altında olan türk-müsəlman xalqlarının milli kimliyini qorumaq üçün maarifçilik, dünyəvi təhsil və mədəni oyanış hərəkatı idi", "Dini ləğv etmək", "Ruslaşdırma siyasətini dəstəkləmək"],
+    "correctAnswer": 1,
+    "explanation": "İsmayıl bəy Qaspıralının rəhbərliyi ilə yaranan Cədidçilik (yenilikçilik) məktəb və təhsil islahatı vasitəsilə türk xalqlarını cəhalətdən qurtarmaq və milli oyanış yaratmaq məqsədi güdürdü.",
+    "difficulty": "çətin", "topic": "Volqaboyu və Ural, Sibir, Mərkəzi Asiyanın türk xalqları", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T05-B4-C-003"
+  },
+  {
+    "id": 500076, "category": "Ümumi tarix 8",
+    "question": "Qafqazın XVIII əsrdə ən çox diqqət çəkən siyasi-coğrafi xüsusiyyəti nə idi?",
+    "options": ["Vahid, güclü bir imperiya olması", "Səfəvi, Osmanlı və Rusiya kimi üç böyük imperiyanın kəsişdiyi və rəqabət apardığı region olması", "Heç bir dövlətin maraqlanmadığı boş ərazi olması", "Yalnız dəniz ticarəti mərkəzi olması"],
+    "correctAnswer": 1,
+    "explanation": "Qafqazın geosiyasi mövqeyi onu regional nəhənglərin (Osmanlı, Səfəvi/İran və Rusiya) cəbhə xəttinə və nüfuz dairəsi uğrunda savaş meydanına çevirmişdi.",
+    "difficulty": "sadə", "topic": "Qafqaz", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T06-B1-S-001"
+  },
+  {
+    "id": 500077, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrin əvvəllərində Gürcüstan siyasi cəhətdən necə bir vəziyyətdə idi?",
+    "options": ["Vahid krallıq idi", "Bir neçə müstəqil çarlıq (Kartli, Kaxetiya, İmeretiya) və knyazlıqlara parçalanmışdı", "Rusiyanın bir əyaləti idi", "Osmanlının tam mərkəzi idi"],
+    "correctAnswer": 1,
+    "explanation": "Gürcüstan feodal dağınıqlığı dövrünü yaşayırdı və Kartli, Kaxetiya, İmereti kimi çarlıqlara, eləcə də Meqreliya, Quriya kimi kiçik knyazlıqlara bölünmüşdü.",
+    "difficulty": "sadə", "topic": "Qafqaz", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T06-B1-S-002"
+  },
+  {
+    "id": 500078, "category": "Ümumi tarix 8",
+    "question": "1722-ci ildə Rusiya imperatoru I Pyotr Qafqaza hansı istiqamətdən yürüş etdi?",
+    "options": ["Qara dəniz sahillərinə", "Xəzəryanı ərazilərə (Dərbənd, Bakı)", "Gürcüstanın içinə", "Ermənistana"],
+    "correctAnswer": 1,
+    "explanation": "I Pyotr Səfəvi dövlətinin zəifləməsindən istifadə edərək Şərqlə ticarət yollarını ələ keçirmək üçün Xəzər dənizinin qərb və cənub sahillərinə (Xəzəryanı yürüş) qoşun yeritdi.",
+    "difficulty": "sadə", "topic": "Qafqaz", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T06-B1-S-003"
+  },
+  {
+    "id": 500079, "category": "Ümumi tarix 8",
+    "question": "Rusiyanın Şimali Qafqazda yerli dağlı xalqlara qarşı siyasəti necə idi?",
+    "options": ["Hədiyyələr verirdi", "Hərbi qalalar (istehkam xətləri) tikir və dağlıları öz torpaqlarından sıxışdırırdı", "Dağlılara müstəqillik verirdi", "Sakitcə ticarət edirdi"],
+    "correctAnswer": 1,
+    "explanation": "Rusiya Şimali Qafqazda öz mövqeyini möhkəmlətmək üçün Terek və Quban çayları boyu hərbi qalalar xətti tikir, казакları (rus hərbçiləri) köçürür və dağlıları dağlara sıxışdırırdı.",
+    "difficulty": "sadə", "topic": "Qafqaz", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T06-B1-S-004"
+  },
+  {
+    "id": 500080, "category": "Ümumi tarix 8",
+    "question": "Kartli-Kaxetiya çarlığı 1783-cü ildə hansı sənədlə Rusiya himayəsinə keçdi?",
+    "options": ["Gülüstan müqaviləsi", "Georgiyevsk traktatı", "Türkmənçay müqaviləsi", "İstanbul müqaviləsi"],
+    "correctAnswer": 1,
+    "explanation": "1783-cü ildə gürcü çarı II İrakli Rusiya imperatriçası II Yekaterina ilə Georgiyevsk traktatını imzalayaraq İranın/Osmanlının asılılığından imtina edib Rusiya himayəsinə (protektoratına) keçdi.",
+    "difficulty": "sadə", "topic": "Qafqaz", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T06-B1-S-005"
+  },
+  {
+    "id": 500081, "category": "Ümumi tarix 8",
+    "question": "1724-cü ildə Rusiya və Osmanlı imperiyaları arasında bağlanan İstanbul müqaviləsinin Qafqaz üçün nəticəsi nə oldu?",
+    "options": ["Qafqaz tamamilə müstəqil oldu", "İki imperiya Səfəvi ərazilərini (Qafqazı) öz aralarında böldülər: Xəzəryanı Rusiyaya, qalan Azərbaycan və Gürcüstan əraziləri Osmanlıya verildi", "Rusiya Qafqazdan çəkildi", "Səfəvilər gücləndi"],
+    "correctAnswer": 1,
+    "explanation": "I Pyotrun Xəzəryanı yürüşü və Osmanlının Şərqə hərəkəti qarşıdurmaya səbəb oldu, lakin müharibə etməmək üçün 1724-cü ildə İstanbul müqaviləsi ilə Qafqazı paylaşdılar.",
+    "difficulty": "orta", "topic": "Qafqaz", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T06-B2-O-001"
+  },
+  {
+    "id": 500082, "category": "Ümumi tarix 8",
+    "question": "Nadir şah Qafqazda Osmanlı və Rusiya qüvvələrinə qarşı hansı siyasəti həyata keçirdi?",
+    "options": ["Torpaqları onlara verdi", "Rusiya ilə Rəşt və Gəncə müqavilələrini (1732, 1735) imzalayıb onları sülhlə çıxardı, Osmanlıları isə hərbi yolla məğlub edib Qafqazdan qovdu", "Özü də Qafqazdan getdi", "Rusiya ilə müharibəyə başladı"],
+    "correctAnswer": 1,
+    "explanation": "Nadir hərbi diplomatiya ilə Rusiyanı savaşsız Xəzəryanıdan geri çəkilməyə məcbur etdi, Osmanlıları isə ardıcıl döyüşlərdə məğlub edərək Azərbaycan və Gürcüstanı geri qaytardı.",
+    "difficulty": "orta", "topic": "Qafqaz", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T06-B2-O-002"
+  },
+  {
+    "id": 500083, "category": "Ümumi tarix 8",
+    "question": "Dağıstanda rus işğalına və zülmünə qarşı XVIII əsrin sonlarında xalq-azadlıq hərəkatına kim başçılıq edirdi?",
+    "options": ["Şamil", "Şeyx Mənsur", "Hacı Davud", "Uşurma"],
+    "correctAnswer": 1,
+    "explanation": "Şimali Qafqazda ruslara qarşı Müridizm/Qəzavat hərəkatının ilk rəhbərlərindən biri olan çeçen mənşəli Şeyx Mənsur (Uşurma) XVIII əsrin 80-ci illərində dağlıları birləşdirərək üsyan qaldırmışdı.",
+    "difficulty": "orta", "topic": "Qafqaz", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T06-B2-O-003"
+  },
+  {
+    "id": 500084, "category": "Ümumi tarix 8",
+    "question": "Ermənilərin Qafqaza, xüsusilə Azərbaycan torpaqlarına kütləvi şəkildə köçürülməsi planı hansı dövlət tərəfindən himayə edilirdi?",
+    "options": ["Fransa", "Rusiya (I Pyotrdan başlayaraq)", "İran", "Osmanlı"],
+    "correctAnswer": 1,
+    "explanation": "Rusiya imperiyası Qafqazda özünə etnik/dini dayaq yaratmaq məqsədilə erməniləri İran və Osmanlıdan Qafqaza (Azərbaycana) köçürmək siyasətinin əsasını hələ I Pyotrun dövründə qoymuşdu.",
+    "difficulty": "orta", "topic": "Qafqaz", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T06-B2-O-004"
+  },
+  {
+    "id": 500085, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrdə Ağa Məhəmməd xan Qacarın Tiflisi (Gürcüstanı) dağıtmasının əsas səbəbi nə idi?",
+    "options": ["Gürcüstanın vergi verməməsi", "Gürcü çarı II İraklinin İrandan asılılığı rədd edərək Rusiya ilə Georgiyevsk traktatını (himayə müqaviləsini) imzalaması", "Gürcüstanın Osmanlılara qoşulması", "Şəxsi düşmənçilik"],
+    "correctAnswer": 1,
+    "explanation": "Qacar hökmdarı Ağa Məhəmməd şah Cənubi Qafqazı yenidən İrana tabe etmək istəyirdi. II İrakli Rusiya himayəsini qəbul etdiyi üçün Qacar 1795-ci ildə Tiflisə hücum edərək şəhəri yandırdı.",
+    "difficulty": "orta", "topic": "Qafqaz", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T06-B2-O-005"
+  },
+  {
+    "id": 500086, "category": "Ümumi tarix 8",
+    "question": "XVIII əsrin sonlarında Rusiyanın Cənubi Qafqaz siyasətinin metodunu necə xarakterizə etmək olar?",
+    "options": ["Yalnız dinc ticarət", "Xanlıqlar və çarlıqlar (Gürcüstan) arasındakı ziddiyyətlərdən, eləcə də xristian-müsəlman amilindən məharətlə istifadə edərək regionu daxildən parçalamaq və ilhaq etmək", "Bütün ərazini bir hücumla tutmaq", "Qafqazı İrana vermək"],
+    "correctAnswer": 1,
+    "explanation": "Rusiya \"parçala və hökm sür\" taktikasından, xristianlara (gürcü, erməni) xilaskar rolunda çıxış etməkdən və yerli xanların hakimiyyət mübarizəsindən istifadə edərək Qafqazı tədricən özünə tabe edirdi.",
+    "difficulty": "çətin", "topic": "Qafqaz", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T06-B4-C-001"
+  },
+  {
+    "id": 500087, "category": "Ümumi tarix 8",
+    "question": "Ağa Məhəmməd xan Qacarın ölümündən (1797) sonra Cənubi Qafqazda yaranan siyasi boşluq regionun taleyinə necə təsir etdi?",
+    "options": ["Yerli xanlıqlar qüdrətli bir dövlət yaratdı", "İranın zəifləməsi Rusiya üçün qapıları tam açdı, 1801-ci ildə Gürcüstanın Rusiyaya birbaşa ilhaq edilməsi və xanlıqların işğalı prosesi sürətləndi", "Osmanlılar regionu tutdu", "Qafqaz Avropaya tabe oldu"],
+    "correctAnswer": 1,
+    "explanation": "Qacarın Şuşada qətli İranın Qafqaza iddialarını zəiflətdi. Rusiya yaranan boşluqdan istifadə etdi: 1801-ci ildə Şərqi Gürcüstanı bilavasitə Rusiyaya qatdı və Azərbaycan xanlıqlarının işğalına başladı.",
+    "difficulty": "çətin", "topic": "Qafqaz", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T06-B3-C-001"
+  },
+  {
+    "id": 500088, "category": "Ümumi tarix 8",
+    "question": "Nə üçün XVIII əsrin ortalarında Qafqazda vahid müstəqil dövlət yarana bilmədi?",
+    "options": ["Coğrafiyanın düzənlik olması", "Dərin feodal pərakəndəliyi (çoxlu kiçik xanlıqlar), etnik-dini rəngarənglik və qonşu 3 imperiyanın daxili işlərə daimi müdaxiləsi", "Hamı Rusiya hakimiyyətini istəyirdi", "Qafqazda əhali yox idi"],
+    "correctAnswer": 1,
+    "explanation": "Qafqazın daxili siyasi mənzərəsi (müstəqil və bir-birilə savaşan onlarla xanlıq, çarlıq) birləşməyə imkan vermirdi. Qonşu imperiyalar da istənilən güclənmə cəhdinin qarşısını alırdılar.",
+    "difficulty": "çətin", "topic": "Qafqaz", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T06-B4-C-002"
+  },
+  {
+    "id": 500089, "category": "Ümumi tarix 8",
+    "question": "I Pyotrun Xəzəryanı əraziləri tutmaq cəhdinin əsl qlobal-iqtisadi səbəbi nə idi?",
+    "options": ["Xəzər dənizində balıq tutmaq", "Hindistan və Çinlə Avropa arasındakı İpək/Ədviyyat tranzit ticarət yolunu Xəzər-Volqa marşrutuna salaraq Rusiyanı qlobal ticarət mərkəzinə çevirmək", "Səfəvi şahına kömək etmək", "Bakı neftini sənayedə işlətmək"],
+    "correctAnswer": 1,
+    "explanation": "I Pyotr Avropa ilə Şərq ticarətində vasitəçi olmaq istəyirdi. Xəzər sahillərinin (Bakı, Dərbənd, Rəşt) işğalı Hindistan ticarətini Rusiya üzərindən Avropaya yönəltmək kimi nəhəng iqtisadi strategiyanın bir parçası idi.",
+    "difficulty": "çətin", "topic": "Qafqaz", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T06-B3-C-002"
+  },
+  {
+    "id": 500090, "category": "Ümumi tarix 8",
+    "question": "Şimali Qafqazda Şeyx Mənsur hərəkatının gələcək üçün buraxdığı irsi necə qiymətləndirmək olar?",
+    "options": ["Tez unuduldu", "Qafqaz xalqlarının rus işğalına qarşı islam (qəzavat) bayrağı altında birləşmə ideologiyasının əsasını qoydu və XIX əsrdəki Şamil hərəkatı üçün zəmin yaratdı", "Xristianlığı qəbul etdi", "Rusiya ilə sülhün əsasını qoydu"],
+    "correctAnswer": 1,
+    "explanation": "Şeyx Mənsur Dağıstan və Çeçenistan tayfalarını din (islam qardaşlığı) ətrafında birləşdirən ilk siyasi-dini lider idi. Bu ideologiya (Müridizm) sonradan XIX əsrdə İmam Şamil tərəfindən sistemləşdirildi.",
+    "difficulty": "çətin", "topic": "Qafqaz", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T06-B4-C-003"
+  },
+  {
+    "id": 500091, "category": "Ümumi tarix 8",
+    "question": "XVII-XVIII əsrlərdə Şərq mədəniyyətinin Qərb (Avropa) mədəniyyətindən fərqləndirən əsas cəhət nə idi?",
+    "options": ["Şərq mədəniyyəti tamamilə dünyəvi idi", "Şərq mədəniyyəti ənənəvi və daha çox dinə (islama, konfutsiçiliyə) bağlı qaldığı halda, Avropa sənaye və elmi inqilab nəticəsində sürətlə modernləşirdi", "Şərq mədəniyyəti yox idi", "Qərb mədəniyyəti Şərqdən kopyalanırdı"],
+    "correctAnswer": 1,
+    "explanation": "XVIII əsrdə Avropada maarifçilik, elmi inqilab baş verərkən, Şərq cəmiyyətləri (Osmanlı, Səfəvi, Çin) ənənəvi inkişaf yollarında qalaraq mühafizəkar xarakter daşıyırdı.",
+    "difficulty": "sadə", "topic": "Mədəniyyət", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T07-B1-S-001"
+  },
+  {
+    "id": 500092, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında ilk dəfə mətbəə (kitab çapı) kim tərəfindən qurulmuşdur?",
+    "options": ["Katib Çələbi", "İbrahim Mütəfərrika (1727-ci ildə)", "Memar Sinan", "Nədim"],
+    "correctAnswer": 1,
+    "explanation": "Lalə dövründə (1727) İbrahim Mütəfərrika tərəfindən İstanbulda ilk türk mətbəəsi quruldu. Dini əsərlərin çapı qadağan olunsa da, tarix, coğrafiya kitabları çap edildi.",
+    "difficulty": "sadə", "topic": "Mədəniyyət", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T07-B1-S-002"
+  },
+  {
+    "id": 500093, "category": "Ümumi tarix 8",
+    "question": "Lalə dövrünün məşhur şairi, Osmanlı divan ədəbiyyatının nümayəndəsi kim idi?",
+    "options": ["Füzuli", "Nədim", "Baki", "Nəsimi"],
+    "correctAnswer": 1,
+    "explanation": "Nədim (Nedim) Lalə dövrünün ən böyük şairidir. O, şeirlərində İstanbulun gözəlliklərini, əyləncə və zövqü tərənnüm edirdi.",
+    "difficulty": "sadə", "topic": "Mədəniyyət", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T07-B1-S-003"
+  },
+  {
+    "id": 500094, "category": "Ümumi tarix 8",
+    "question": "Şərq ölkələrində, xüsusən Çin və Yaponiyada Avropa sənəti ilə necə bir əlaqə qurulurdu?",
+    "options": ["Tamamilə açıq idi", "Çox məhdud idi, xaricilər ölkəyə buraxılmadığı üçün Qərb incəsənəti yalnız müəyyən limanlarda və az miqdarda təsir edirdi", "Avropa sənəti Şərqi ələ keçirmişdi", "Şərq rəssamları Avropaya köçdü"],
+    "correctAnswer": 1,
+    "explanation": "İzolyasiya siyasətinə görə Avropa mədəniyyətinin Çinə təsiri çox az idi. Mədəniyyət sırf daxili ənənələr çərçivəsində inkişaf edirdi.",
+    "difficulty": "sadə", "topic": "Mədəniyyət", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T07-B1-S-004"
+  },
+  {
+    "id": 500095, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol memarlığının incisi, dünyanın möcüzələrindən biri olan bina hansıdır?",
+    "options": ["Qırmızı Qala", "Tac Mahal", "Ayasofya", "Sultan Əhməd məscidi"],
+    "correctAnswer": 1,
+    "explanation": "Aqrda yerləşən Tac Mahal (XVII əsr) Şah Cahan tərəfindən tikilmiş və islam, fars, osmanlı, hind memarlıq elementlərini özündə birləşdirən sənət əsəridir.",
+    "difficulty": "sadə", "topic": "Mədəniyyət", "bloomLevel": "bilmə",
+    "passport_id": "08-UTAR-T07-B1-S-005"
+  },
+  {
+    "id": 500096, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında 'Lalə dövrü'ndə memarlıqda hansı Qərb üslubunun təsiri görülməyə başlandı?",
+    "options": ["Qotik", "Barokko və Rokoko", "Roman", "Modernizm"],
+    "correctAnswer": 1,
+    "explanation": "Avropa ilə əlaqələrin artması nəticəsində Osmanlı memarlığında klassik sərt xətlər yerini Qərbin bəzəkli Barokko və Rokoko üslublarına (məsələn, Nuruosmaniyə məscidi) buraxmağa başladı.",
+    "difficulty": "orta", "topic": "Mədəniyyət", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T07-B2-O-001"
+  },
+  {
+    "id": 500097, "category": "Ümumi tarix 8",
+    "question": "Şərq miniatür sənəti XVII-XVIII əsrlərdə nəyi təsvir edirdi?",
+    "options": ["Yalnız təbiət mənzərələrini", "Kitab illüstrasiyaları kimi istifadə olunur, saray həyatını, döyüş səhnələrini, ov mərasimlərini incə detallarla əks etdirirdi", "Yalnız dini rəsmləri", "Abstrakt fiqurları"],
+    "correctAnswer": 1,
+    "explanation": "Səfəvi və Moğol saraylarında inkişaf edən miniatür rəssamlığı kölgəsiz və perspektivsiz şəkildə epik əsərləri və saray həyatını çox incə rənglərlə təsvir edirdi.",
+    "difficulty": "orta", "topic": "Mədəniyyət", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T07-B2-O-002"
+  },
+  {
+    "id": 500098, "category": "Ümumi tarix 8",
+    "question": "Osmanlı dövlətində XVII əsrin ən məşhur coğrafiyaşünas və səyyahı kim olmuşdur?",
+    "options": ["Memar Sinan", "Övliya Çələbi", "Nəvai", "Babur"],
+    "correctAnswer": 1,
+    "explanation": "Övliya Çələbi 10 cildlik \"Səyahətnamə\" əsərinin müəllifidir. O, Osmanlı imperiyasının bütün bölgələrini, o cümlədən Azərbaycanı və Qafqazı gəzərək tarix, coğrafiya və mədəniyyət haqqında bənzərsiz məlumatlar toplamışdır.",
+    "difficulty": "orta", "topic": "Mədəniyyət", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T07-B2-O-003"
+  },
+  {
+    "id": 500099, "category": "Ümumi tarix 8",
+    "question": "Böyük Moğol dövlətində hakim zümrənin (sarayın) dili ilə xalqın dili arasındakı fərq necə idi?",
+    "options": ["Hamı ərəbcə danışırdı", "Saray dili farsca və türkcə, ədəbiyyat dili əsasən farsca, xalq arasında isə urdu və hindi dilləri yayılmışdı", "Saray yalnız ingiliscə bilirdi", "Hamı farsca danışırdı"],
+    "correctAnswer": 1,
+    "explanation": "Mədəni ikilik var idi: zadəganlar və ədəbiyyat nümayəndələri farsca/türkcə ünsiyyət qurur, yerli əhali öz dillərində (hindi) danışırdı. Bu iki mədəniyyətin qarışığından isə Urdu dili yarandı.",
+    "difficulty": "orta", "topic": "Mədəniyyət", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T07-B2-O-004"
+  },
+  {
+    "id": 500100, "category": "Ümumi tarix 8",
+    "question": "Çində bu dövrdə memarlığın ən diqqət çəkən nümunəsi hansıdır?",
+    "options": ["Tac Mahal", "Pekindəki 'Qadağan olunmuş şəhər' (imperator sarayı kompleksi)", "Ayasofya", "Piza qülləsi"],
+    "correctAnswer": 1,
+    "explanation": "Mancurlar Min sülaləsindən qalan, divarlarla əhatə olunmuş, adi vətəndaşların girişinə icazə verilməyən nəhəng və möhtəşəm imperator sarayı kompleksindən (Qadağan olunmuş şəhər) istifadə edirdilər.",
+    "difficulty": "orta", "topic": "Mədəniyyət", "bloomLevel": "anlama",
+    "passport_id": "08-UTAR-T07-B2-O-005"
+  },
+  {
+    "id": 500101, "category": "Ümumi tarix 8",
+    "question": "Osmanlı imperiyasında ilk mətbəənin (1727) açılmasına dini ulamaların reaksiyasını və nəticəsini necə təhlil etmək olar?",
+    "options": ["Ulamalar dəstəklədi", "Ulamalar (din xadimləri) və xəttatlar (kalliqraflar) müqavimət göstərdi, nəticədə mətbəədə yalnız qeyri-dini (dünyəvi) kitabların çapına icazə verildi", "Mətbəə dərhal bağlandı", "Yalnız Quran çap edildi"],
+    "correctAnswer": 1,
+    "explanation": "Dini təbəqə və gəlirini kitab köçürməkdən alan xəttatlar yeniliyə qarşı idilər. Sədrəzəm kompromis olaraq dini kitabların əllə yazılmasına, lügət/tarix kitablarının isə çapına fətva aldı. Bu, Şərqdə yeniliklərin necə çətinliklə qəbul edildiyini göstərir.",
+    "difficulty": "çətin", "topic": "Mədəniyyət", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T07-B4-C-001"
+  },
+  {
+    "id": 500102, "category": "Ümumi tarix 8",
+    "question": "Tac Mahalın memarlıq elementlərindəki sintezi mədəni baxımdan necə izah edirsiniz?",
+    "options": ["Yalnız ərəb memarlığıdır", "Moğol hökmdarlarının fəth etdikləri Hindistan mühiti ilə öz Orta Asiya/İran (İslam) köklərini harmonik şəkildə birləşdirməsi (simmetriya, günbəz, bəyaz mərmər və hind oymaları)", "Yalnız Avropa layihəsidir", "Bütpərəst məbədidir"],
+    "correctAnswer": 1,
+    "explanation": "Tac Mahal hindustanlı sənətkarlar tərəfindən islam (fars) arxitekturası (Böyük günbəz, minarələr, həndəsi naxışlar) və hind sənətinin (çiçək oymaları, mərmər işləməsi) unikal birləşməsi kimi inşa edilmişdir.",
+    "difficulty": "çətin", "topic": "Mədəniyyət", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T07-B3-C-001"
+  },
+  {
+    "id": 500103, "category": "Ümumi tarix 8",
+    "question": "Qərbdə Renessans və Elmi inqilab yaşanarkən Şərqdə (Osmanlı, Çin, Hindistan) elmin vəziyyətinin geriləməsinin fundamental səbəbi nə idi?",
+    "options": ["Şərqdə ağıllı adamların olmaması", "Şərqdə təhsil sisteminin yalnız sxolastik (dini-ənənəvi) çərçivədə qalması, sərbəst tənqidi düşüncənin və təcrübi elmlərin (fizika, kimya) dövlət himayəsindən kənarda qalması", "Universitetlərin fiziki cəhətdən dağılması", "Şərqin kitablardan nifrət etməsi"],
+    "correctAnswer": 1,
+    "explanation": "Avropada kilsə doqmalarından azad olan elmi düşüncə inkişaf edirdi. Şərqdə isə mədrəsələrdə daha çox dini elmlərə diqqət yetirilir, dövlət və din xadimləri qərb texnologiyalarına şübhə ilə yanaşırdılar.",
+    "difficulty": "çətin", "topic": "Mədəniyyət", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T07-B4-C-002"
+  },
+  {
+    "id": 500104, "category": "Ümumi tarix 8",
+    "question": "Çinin və Yaponiyanın Qərb dünyasına qapanması (izolyasiyası) bu ölkələrin daxili mədəniyyətinə necə təsir etdi?",
+    "options": ["Mədəniyyət tamamilə məhv oldu", "Xarici təsirlərdən uzaq olduqları üçün öz milli incəsənətləri, ədəbiyyatları və ənənələri konservativ formada qorundu, lakin dünya tərəqqisindən təcrid olundular", "Avropalılar zorla mədəniyyəti dəyişdi", "Xristianlıq yayıldı"],
+    "correctAnswer": 1,
+    "explanation": "İzolyasiya Şərq cəmiyyətlərinə yad təsirlərdən (missionerlər, qərb geyimi, ideyaları) qorunaraq öz saf ənənəvi mədəniyyətlərini (rəsm, çini qab, çay mərasimi, poeziya) qoruyub saxlamaq imkanı verdi. Amma bunun bədəli elmi və texnoloji gerilik oldu.",
+    "difficulty": "çətin", "topic": "Mədəniyyət", "bloomLevel": "təhlil",
+    "passport_id": "08-UTAR-T07-B4-C-003"
+  },
+  {
+    "id": 500105, "category": "Ümumi tarix 8",
+    "question": "XVIII əsr Osmanlısında 'Lalə dövrü'nün Avropa mərkəzli xarici siyasəti və mədəniyyəti necə bir araya gətirdiyini izah edin.",
+    "options": ["Avropa ilə bütün əlaqələr kəsildi", "Osmanlı ilk dəfə hərbi qüdrətlə deyil, diplomatiya ilə Avropaya elçilər göndərdi, oradakı memarlıq və yaşayış tərzini (barokko, bağçalar) Osmanlı sarayına gətirdi", "Osmanlı Avropanı işğal etdi", "Yalnız dini kitablar tərcümə edildi"],
+    "correctAnswer": 1,
+    "explanation": "Lalə dövrü Osmanlının Qərb qarşısında hərbi geriliyini anladığı dövrdür. Parisə göndərilən İyirmisəkkiz Çələbi Mehmedin hesabatı Osmanlı sarayında Avropa tipli bağçaların, köşklərin tikilməsinə və qərb modasının yayılmasına səbəb oldu.",
+    "difficulty": "çətin", "topic": "Mədəniyyət", "bloomLevel": "tətbiq",
+    "passport_id": "08-UTAR-T07-B3-C-002"
+  }
+]

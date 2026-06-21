@@ -1,0 +1,2297 @@
+[
+  {
+    "id": 100516,
+    "category": "Kimya 8",
+    "question": "Orbital nədir?",
+    "options": [
+      "Elektronun nüvə ətrafında tam dövr etdiyi konkret trayektoriya",
+      "Elektronun hər hansı bir anda tapılma ehtimalının yüksək olduğu fəza bölgəsi",
+      "Elektron təbəqəsindəki neytronların fəza bölgəsi",
+      "Nüvənin protonlarla dolu olan hissəsi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Orbital, elektronun hər hansı bir anda tapılma ehtimalının yüksək olduğu fəza bölgəsidir.",
+    "difficulty": "sadə",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T01-B1-S-001"
+  },
+  {
+    "id": 100517,
+    "category": "Kimya 8",
+    "question": "Bir orbitalda maksimum neçə elektron yerləşə bilər?",
+    "options": [
+      "Bir",
+      "İki",
+      "Üç",
+      "Dörd"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hər orbitalda eyni anda maksimum iki elektron yerləşə bilər.",
+    "difficulty": "sadə",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T01-B1-S-002"
+  },
+  {
+    "id": 100518,
+    "category": "Kimya 8",
+    "question": "s-orbitalının forması necədir?",
+    "options": [
+      "Qantel formasında",
+      "Kürə formasında",
+      "Toroid (halqa) formasında",
+      "Piramida formasında"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: s-orbitalı kürə formasında olub, nüvənin ətrafında simmetrik bir ehtimal bölgəsi yaradır.",
+    "difficulty": "sadə",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T01-B1-S-003"
+  },
+  {
+    "id": 100519,
+    "category": "Kimya 8",
+    "question": "p-yarımsəviyyəsindəki orbital sayı neçədir?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hər p-yarımsəviyyəsində üç orbital mövcuddur.",
+    "difficulty": "sadə",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T01-B1-S-004"
+  },
+  {
+    "id": 100520,
+    "category": "Kimya 8",
+    "question": "Elektron təbəqələrini ifadə etmək üçün hansı simvollar istifadə edilir?",
+    "options": [
+      "Yalnız Rum rəqəmləri (I, II, III...)",
+      "Rəqəmlər (1, 2, 3...) və ya hərflər (K, L, M, N...)",
+      "Yalnız yunan hərfləri",
+      "Yalnız latın hərfləri (a, b, c...)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektron təbəqələri rəqəmlər (1, 2, 3, 4 və s.) və ya hərflər (K, L, M, N və s.) ilə ifadə oluna bilər.",
+    "difficulty": "sadə",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T01-B1-S-005"
+  },
+  {
+    "id": 100521,
+    "category": "Kimya 8",
+    "question": "p-yarımsəviyyəsində maksimum neçə elektron ola bilər?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Bir orbitalda maksimum iki elektron olduğundan s-yarımsəviyyəsi ən çoxu 2, p-yarımsəviyyəsi 6, d-yarımsəviyyəsi 10, f-yarımsəviyyəsi isə 14 elektrondan təşkil olunur.",
+    "difficulty": "orta",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T01-B2-O-006"
+  },
+  {
+    "id": 100522,
+    "category": "Kimya 8",
+    "question": "d-yarımsəviyyəsi neçə orbitaldan ibarətdir?",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: d-yarımsəviyyəsi beş, f-yarımsəviyyəsi isə yeddi orbitaldan ibarətdir.",
+    "difficulty": "orta",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T01-B2-O-007"
+  },
+  {
+    "id": 100523,
+    "category": "Kimya 8",
+    "question": "Nüvəyə ən yaxın yerləşən elektronların enerjisi barədə hansı fikir doğrudur?",
+    "options": [
+      "Nüvəyə yaxın elektronların enerjisi ən çox olur",
+      "Nüvəyə yaxın elektronların enerjisi ən az olur",
+      "Bütün elektronların enerjisi eyni olur",
+      "Elektron enerjisi orbitalın formasından asılı deyil"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Nüvəyə ən yaxın yerləşən elektronların enerjisi ən az, nüvədən ən uzaqda yerləşən elektronların enerjisi isə ən çox olur.",
+    "difficulty": "orta",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T01-B2-O-008"
+  },
+  {
+    "id": 100524,
+    "category": "Kimya 8",
+    "question": "Atom çoxmərtəbəli binaya bənzədildikdə, orbitallar nəyə uyğundur?",
+    "options": [
+      "Binanın mərtəbələri",
+      "Mənzillərin içindəki otaqlar",
+      "Bu mərtəbədəki mənzillər",
+      "Həmin otaqlarda yaşayan insanlar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Binanın hər bir mərtəbəsi atomun elektron təbəqəsini, bu mərtəbədəki mənzillər yarımsəviyyələri, mənzillərin içindəki otaqlar orbitalları, elektronlar isə həmin otaqlarda yaşayan insanları təmsil edir.",
+    "difficulty": "orta",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T01-B2-O-009"
+  },
+  {
+    "id": 100525,
+    "category": "Kimya 8",
+    "question": "f-yarımsəviyyəsi neçə orbitaldan ibarətdir və orada maksimum neçə elektron ola bilər?",
+    "options": [
+      "5 orbital, 10 elektron",
+      "7 orbital, 14 elektron",
+      "5 orbital, 14 elektron",
+      "7 orbital, 10 elektron"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: f-yarımsəviyyəsi isə yeddi orbitaldan ibarətdir. f-yarımsəviyyəsi isə 14 elektrondan təşkil olunur.",
+    "difficulty": "orta",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T01-B2-O-010"
+  },
+  {
+    "id": 100526,
+    "category": "Kimya 8",
+    "question": "2-ci energetik səviyyədə (L təbəqəsi) maksimum neçə elektron ola bilər?",
+    "options": [
+      "2",
+      "6",
+      "8",
+      "18"
+    ],
+    "correctAnswer": 2,
+    "explanation": "2-ci energetik səviyyədə s (2 elektron) və p (6 elektron) yarımsəviyyələri var: 2+6=8. Orijinal mətn: 2-ci energetik səviyyədə s- və p-yarımsəviyyələri var.",
+    "difficulty": "çətin",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T01-B3-C-011"
+  },
+  {
+    "id": 100527,
+    "category": "Kimya 8",
+    "question": "p-orbitalı s-orbitalından nə ilə fərqlənir?",
+    "options": [
+      "p-orbitalı kürə formasında, s-orbitalı qantel formasındadır",
+      "p-orbitalı qantel formasında iki ehtimal sahəsindən ibarətdir, s-orbitalı kürə formasındadır",
+      "p-orbitalında maksimum 1 elektron, s-orbitalında isə 2 elektron ola bilər",
+      "p-orbitalları yalnız 1-ci energetik səviyyədə olur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: p-orbitalları qantel formasında olan iki ehtimal sahəsindən ibarətdir. s-orbitalı kürə formasında olub.",
+    "difficulty": "çətin",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T01-B3-C-012"
+  },
+  {
+    "id": 100528,
+    "category": "Kimya 8",
+    "question": "3-cü energetik səviyyədə (M təbəqəsi) hansı yarımsəviyyələr mövcuddur?",
+    "options": [
+      "Yalnız s",
+      "s və p",
+      "s, p və d",
+      "s, p, d və f"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: 3-cü energetik səviyyədə s-, p- və d-yarımsəviyyələri var.",
+    "difficulty": "çətin",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T01-B3-C-013"
+  },
+  {
+    "id": 100529,
+    "category": "Kimya 8",
+    "question": "Elektron buludu anlayışı nəyi ifadə edir?",
+    "options": [
+      "Orbitalda olan elektronların dəqiq yerini göstərir",
+      "Elektronun müəyyən ehtimalla rast gəlinə biləcəyi fəza sahəsini ifadə edir",
+      "Orbitalda olan elektronların sayını müəyyən edir",
+      "Elektronun konkret trayektoriyasını əks etdirir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bu sahələrə bəzən elektron buludları da deyilir. Yəni orbital elektronun hərəkət etdiyi konkret bir trayektoriya deyil, əksinə, onun müəyyən ehtimalla rast gəlinə biləcəyi fəza sahəsidir.",
+    "difficulty": "çətin",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T01-B3-C-014"
+  },
+  {
+    "id": 100530,
+    "category": "Kimya 8",
+    "question": "Bir orbitalda olan iki elektron necə hərəkət edir?",
+    "options": [
+      "Eyni istiqamətdə hərəkət edir",
+      "Bir-birinin əksinə hərəkət edir",
+      "Hər ikisi dayaz vəziyyətdədir",
+      "Hər biri ayrı-ayrı nüvə ətrafında dövrü tamamlayır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hər orbitalda eyni anda maksimum iki elektron yerləşə bilər. Bu elektronlar bir-birinin əksinə hərəkət edir.",
+    "difficulty": "çətin",
+    "topic": "Atomun elektron örtüyü",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T01-B3-C-015"
+  },
+  {
+    "id": 100531,
+    "category": "Kimya 8",
+    "question": "Elektron formulu (elektron konfiqurasiyası) nədir?",
+    "options": [
+      "Atomun nüvəsindəki proton və neytron sayının ifadəsi",
+      "Yarımsəviyyələrdəki elektron saylarının yarımsəviyyə hərflərinin qüvvətinə yazılmış ifadəsi",
+      "Orbitalların fəza formasının riyazi göstəricisi",
+      "Atomun kütlə ədədinin proton nömrəsinə nisbəti"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hər yarımsəviyyədə olan elektron saylarını yarımsəviyyələri ifadə edən hərflərin qüvvətinə yazdıqda atomun elektron formulu (elektron konfiqurasiyası) formalaşır.",
+    "difficulty": "sadə",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T02-B1-S-001"
+  },
+  {
+    "id": 100532,
+    "category": "Kimya 8",
+    "question": "Elektron orbitalları qrafik təsvir edildikdə cütləşməmiş elektron necə göstərilir?",
+    "options": [
+      "Xanada iki əks oxla",
+      "Xanada tək bir oxla",
+      "Xanada sıfır işarəsi ilə",
+      "Xana boş buraxılır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Orbitalda bir elektron olduqda bu, cütləşməmiş elektron adlanır.",
+    "difficulty": "sadə",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T02-B1-S-002"
+  },
+  {
+    "id": 100533,
+    "category": "Kimya 8",
+    "question": "Elektronlar yarımsəviyyələri hansı ardıcıllıqla doldurur?",
+    "options": [
+      "1s 2p 3s 2s 3p...",
+      "1s 2s 2p 3s 3p 4s...",
+      "4s 3p 2s 1s...",
+      "Enerjisi çox olan yarımsəviyyədən başlayır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektronların yarımsəviyyələr üzrə paylanması 1s 2s 2p 3s 3p 4s... ardıcıllığı ilə baş verir.",
+    "difficulty": "sadə",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T02-B1-S-003"
+  },
+  {
+    "id": 100534,
+    "category": "Kimya 8",
+    "question": "Atomun xarici təbəqəsi nədir?",
+    "options": [
+      "Birinci (K) elektron təbəqəsi",
+      "Sonuncu (ən uzaq) elektron təbəqəsi",
+      "İkinci (L) elektron təbəqəsi",
+      "Nüvəyə ən yaxın olan elektron təbəqəsi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Azot atomu üçün ikinci, kükürd atomu üçün üçüncü elektron təbəqəsi sonuncu olub xarici təbəqə adlanır.",
+    "difficulty": "sadə",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T02-B1-S-004"
+  },
+  {
+    "id": 100535,
+    "category": "Kimya 8",
+    "question": "Neytral atomlarda elektron sayı nəyə bərabərdir?",
+    "options": [
+      "Neytron sayına",
+      "Proton sayına",
+      "Kütlə ədədinə",
+      "Atom nömrəsinin yarısına"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Neytral atomlarda elektron sayı proton sayına bərabər olduğu üçün onların proton sayına əsasən elektron formulları yazıla bilər.",
+    "difficulty": "sadə",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T02-B1-S-005"
+  },
+  {
+    "id": 100536,
+    "category": "Kimya 8",
+    "question": "Atomun qısa elektron formulu nədir?",
+    "options": [
+      "Atomun bütün yarımsəviyyələrinin göstərildiyi tam formula",
+      "Yalnız xarici təbəqənin göstərildiyi qısaldılmış elektron formula",
+      "Nüvənin quruluşunu əks etdirən formula",
+      "Orbitalların qrafik təsviri"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bəzən elektron formulları yazılarkən yalnız sonuncu təbəqə təsvir olunur. Elektron formullarının bu formada yazılışı atomun qısa elektron formulu adlanır.",
+    "difficulty": "orta",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T02-B2-O-006"
+  },
+  {
+    "id": 100537,
+    "category": "Kimya 8",
+    "question": "p-yarımsəviyyəsindəki elektronlar qrafik olaraq necə dolur?",
+    "options": [
+      "Əvvəlcə cüt-cüt, sonra tək-tək",
+      "Əvvəlcə tək-tək və eyni istiqamətdə, sonra əks istiqamətli cütlər",
+      "Orbitallar ixtiyari sıra ilə doldurulur",
+      "Əvvəlcə əks istiqamətli, sonra eyni istiqamətli doldurulur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektronlar p-yarımsəviyyəsində olan orbitallarda əvvəlcə tək-tək və eyni istiqamətdə yerləşir.",
+    "difficulty": "orta",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T02-B2-O-007"
+  },
+  {
+    "id": 100538,
+    "category": "Kimya 8",
+    "question": "Na (natrium) atomunun elektron sayı 11-dir. Bu atomun xarici təbəqəsindəki elektron sayı neçədir?",
+    "options": [
+      "2",
+      "8",
+      "1",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Na-nın elektron formulu: 1s2 2s2 2p6 3s1. Xarici (3-cü) təbəqədə 1 elektron var.",
+    "difficulty": "orta",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T02-B2-O-008"
+  },
+  {
+    "id": 100539,
+    "category": "Kimya 8",
+    "question": "Bir yarımsəviyyənin elektronlarla dolmasına dair hansı qayda doğrudur?",
+    "options": [
+      "Bir yarımsəviyyə dolmadan digərinə keçmək olar",
+      "Bir yarımsəviyyə elektronlarla tam dolmadan digər yarımsəviyyəyə elektron dola bilməz",
+      "Elektronlar eyni anda bütün yarımsəviyyələrə bərabər paylanır",
+      "Enerjisi böyük olan yarımsəviyyə əvvəlcə dolur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bir yarımsəviyyə elektronlarla tam dolmadan digər yarımsəviyyəyə elektron dola bilməz.",
+    "difficulty": "orta",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T02-B2-O-009"
+  },
+  {
+    "id": 100540,
+    "category": "Kimya 8",
+    "question": "F anionunun (F mənfi) elektron sayı neçədir və bu, proton sayı neçə olan neytral atomun elektron formuluna uyğundur?",
+    "options": [
+      "8 elektron, O (oksigen) atomuna uyğundur",
+      "10 elektron, Ne (neon) atomuna uyğundur",
+      "9 elektron, F (flüor) atomuna uyğundur",
+      "12 elektron, Mg (maqnezium) atomuna uyğundur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "F atomunun proton sayı 9, elektron sayı 9-dur. F mənfi ioni 1 elektron aldığından elektron sayı 10 olur. Bu Ne (neon) atomunun 10 elektronuna bərabərdir.",
+    "difficulty": "orta",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T02-B2-O-010"
+  },
+  {
+    "id": 100541,
+    "category": "Kimya 8",
+    "question": "Azot (N) atomunun elektron sayı 7-dir. Bu atomun tam elektron formulu hansıdır?",
+    "options": [
+      "1s2 2s2 2p2",
+      "1s2 2s2 2p3",
+      "1s2 2s2 2p5",
+      "1s2 2s5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "N üçün: 1s2(2) + 2s2(2) + 2p3(3) = 7 elektron. Dərslik cədvəlindən: azot atomunun elektron formulu 1s2 2s2 2p3.",
+    "difficulty": "çətin",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T02-B3-C-011"
+  },
+  {
+    "id": 100542,
+    "category": "Kimya 8",
+    "question": "Mg2+ ionunun elektron formulu hansı neytral atomun elektron formulu ilə eynidir?",
+    "options": [
+      "Na (11 proton)",
+      "Ne (10 proton)",
+      "Al (13 proton)",
+      "Ca (20 proton)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mg proton sayı 12, elektron sayı 12. Mg2+ 2 elektron verdiğindən 10 elektrona malik olur. Bu, Ne (neon) atomunun 10 elektronuna bərabərdir.",
+    "difficulty": "çətin",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T02-B3-C-012"
+  },
+  {
+    "id": 100543,
+    "category": "Kimya 8",
+    "question": "Silisium (Si, atom nömrəsi 14) atomunun qısa elektron formulu hansıdır?",
+    "options": [
+      "...3s1",
+      "...3s2 3p2",
+      "...2s2 2p6",
+      "...3s2 3p6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Si-nin tam elektron formulu: 1s2 2s2 2p6 3s2 3p2. Qısa elektron formulu p-yarımsəviyyəsi ilə bitdiyi üçün sonuncu s- və p-yarımsəviyyəsi göstərilir: ...3s2 3p2.",
+    "difficulty": "çətin",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T02-B3-C-013"
+  },
+  {
+    "id": 100544,
+    "category": "Kimya 8",
+    "question": "S2- (kükürd anionunun) elektron sayı neçədir?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kükürd (S) atom nömrəsi 16, elektron sayı 16. S2- ioni 2 elektron aldığından elektron sayı 16+2=18 olur. Bu, arqon (Ar) atomunun elektron sayına bərabərdir.",
+    "difficulty": "çətin",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T02-B3-C-014"
+  },
+  {
+    "id": 100545,
+    "category": "Kimya 8",
+    "question": "P (fosfor, atom nömrəsi 15) atomunun xarici təbəqəsindəki cütləşməmiş elektron sayı neçədir?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "P-nin elektron formulu: 1s2 2s2 2p6 3s2 3p3. 3p3 yarımsəviyyəsindəki 3 elektron tək-tək orbitallaşdığından (Hund qaydası) 3 cütləşməmiş elektron var.",
+    "difficulty": "çətin",
+    "topic": "Elektronların energetik səviyyələr üzrə paylanması",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T02-B3-C-015"
+  },
+  {
+    "id": 100546,
+    "category": "Kimya 8",
+    "question": "Döbereynerin Triadalar qanununa görə ortadakı elementin kütlə ədədi hansı şərtə uyğundur?",
+    "options": [
+      "Birinci elementin kütlə ədədinə bərabərdir",
+      "Birinci və üçüncü elementlərin kütlə ədədləri cəminin yarısına bərabərdir",
+      "Üçüncü elementin kütlə ədədinə bərabərdir",
+      "Üç elementin kütlə ədədlərinin cəminə bərabərdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: oxşar xassəli 3 element götürmüş, ortadakı elementin kütlə ədədi təqribən birinci və üçüncü elementlərin kütlə ədədləri cəminin yarısına bərabər olmuşdur.",
+    "difficulty": "sadə",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-S-001"
+  },
+  {
+    "id": 100547,
+    "category": "Kimya 8",
+    "question": "Con Nyuland öz sistemini nəyə bənzətdiyinə görə Oktavalar qanunu adı vermişdir?",
+    "options": [
+      "Riyaziyyat aksiomlarına",
+      "Musiqi notlarına",
+      "Həndəsi formalara",
+      "Astronomik hesablamalara"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Nyuland bu qanunu musiqi notlarına bənzətdiyi üçün ona Oktavalar qanunu adını vermişdir.",
+    "difficulty": "sadə",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-S-002"
+  },
+  {
+    "id": 100548,
+    "category": "Kimya 8",
+    "question": "Nyuland Oktavalar qanununa görə neçəinci elementin birinci elementlə oxşar xassəli olduğunu müəyyən etmişdir?",
+    "options": [
+      "Hər dördüncü element",
+      "Hər səkkizinci element",
+      "Hər onuncu element",
+      "Hər üçüncü element"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: hər səkkizinci elementin birinci element ilə oxşar xassəli olduğunu müəyyən etmişdir.",
+    "difficulty": "sadə",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-S-003"
+  },
+  {
+    "id": 100549,
+    "category": "Kimya 8",
+    "question": "Mendeleyevin Elementlərin dövri cədvəli hansı ildə ilk dəfə nəşr edilmişdir?",
+    "options": [
+      "1850",
+      "1869",
+      "1870",
+      "1907"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: D.Mendeleyev elementlərin sistemləşdirilməsi ilə bağlı gördüyü işləri ilk dəfə 1869-cu ildə bir alman jurnalında nəşr etdirmişdir.",
+    "difficulty": "sadə",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-S-004"
+  },
+  {
+    "id": 100550,
+    "category": "Kimya 8",
+    "question": "Triadalar qanununun müəllifi kim olmuşdur?",
+    "options": [
+      "Con Nyuland",
+      "Lotar Meyer",
+      "Dmitri Mendeleyev",
+      "Yohan Döbereyner"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Orijinal mətn: İlk dəfə alman kimyaçısı Yohan Döbereyner bəzi elementləri üçlü qruplar halında sıralamış və buna Triadalar qanunu adını vermişdir.",
+    "difficulty": "sadə",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-S-005"
+  },
+  {
+    "id": 100551,
+    "category": "Kimya 8",
+    "question": "Mendeleyevin dövri cədvəlini Meyerin cədvəlindən fərqləndirən ən mühüm özəllik hansıdır?",
+    "options": [
+      "Yalnız 8 element əhatə edirdi",
+      "Boş xanalar qoyularaq kəşf olunmamış elementlər üçün yer saxlanması",
+      "Elementlər musiqi notları ilə adlandırılmışdır",
+      "Cədvəldə yalnız qeyri-metallara yer verilmişdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: bəzi yerləri boş buraxmaqla daha sonra kəşf ediləcək elementlər üçün yer saxlamış və bu elementlər haqqında bəzi fikirlər də söyləmişdir.",
+    "difficulty": "orta",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T03-B2-O-006"
+  },
+  {
+    "id": 100552,
+    "category": "Kimya 8",
+    "question": "Mendeleyevin cədvəlindəki boş xanalara əsasən sonradan kəşf edilən elementlərə hansı misallar göstərilir?",
+    "options": [
+      "Helium, neon, arqon",
+      "Qallium, germanium, skandium",
+      "Uran, plutonium, texnesium",
+      "Dəmir, mis, sink"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə yeri boş buraxılan qallium (Ga), germanium (Ge), skandium (Sc), hafnium (Hf) kimi elementlər daha sonralar kəşf olunmuşdur.",
+    "difficulty": "orta",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T03-B2-O-007"
+  },
+  {
+    "id": 100553,
+    "category": "Kimya 8",
+    "question": "XIX əsrə kimi elementlərin sistemləşdirilməsinin aparılmammasının əsas səbəbi nə idi?",
+    "options": [
+      "Elementlər o dövrdə heç bilinmirdi",
+      "Elementlərin fiziki və kimyəvi xassələri haqqında kifayət qədər məlumatın olmaması",
+      "Kimya elmi o dövrdə mövcud deyildi",
+      "Alimlər buna maraq göstərmirdi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bunun əsas səbəblərindən biri bu elementlərin fiziki və kimyəvi xassələri haqqında kifayət qədər məlumatın olmaması idi.",
+    "difficulty": "orta",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T03-B2-O-008"
+  },
+  {
+    "id": 100554,
+    "category": "Kimya 8",
+    "question": "Lotar Meyer öz cədvəlini hansı ildə jurnalda nəşr etmişdir?",
+    "options": [
+      "1864",
+      "1867",
+      "1869",
+      "1870"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Orijinal mətn: L.Meyer təklif etdiyi cədvəli 1870-ci ildə nəşr edilən bir jurnalda yayımlamışdır.",
+    "difficulty": "orta",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T03-B2-O-009"
+  },
+  {
+    "id": 100555,
+    "category": "Kimya 8",
+    "question": "Mendeleyevin adını daşıyan Mendelevium elementinin atom nömrəsi neçədir?",
+    "options": [
+      "92",
+      "99",
+      "101",
+      "118"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: amerikalı fiziklər 1955-ci ildə atomunun proton sayı 101 olan yeni element kəşf etmiş və onu Mendeleyevin şərəfinə Mendelevium adlandırmışlar.",
+    "difficulty": "orta",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T03-B2-O-010"
+  },
+  {
+    "id": 100556,
+    "category": "Kimya 8",
+    "question": "Nyulandın Oktavalar qanunu öz dövrünün alimləri tərəfindən ciddi qəbul edilmədi. Bunun ehtimal olunan əsas səbəbi nə idi?",
+    "options": [
+      "Nyuland elementləri yanlış sıralamışdı",
+      "Dövrün alimlərinin çoxu elementlər haqqında yetərli biliyə sahib deyildi",
+      "Cədvəldə yalnız musiqi terminlərindən istifadə edilmişdi",
+      "Nyulandın fizik olması, kimyaçı olmaması"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətnə görə alimlər bu cədvəli ciddi qəbul etmədi, lakin illər sonra onun fikirlərinin bir çoxunun həqiqəti əks etdirdiyi məlum oldu. Alimlər o dövrdə elementlərin xassələri haqqında tam məlumata malik deyildilər.",
+    "difficulty": "çətin",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "təhlil",
+    "passport_id": "08-KIM-T03-B4-C-011"
+  },
+  {
+    "id": 100557,
+    "category": "Kimya 8",
+    "question": "Döbereynerin triada sisteminin əsas zəifliyi nə idi?",
+    "options": [
+      "Bütün elementləri əhatə edə bilmirdi, yalnız üçlü qruplara uyğun gəlirdi",
+      "Elementlər yalnız kütlə ədədinə görə sıralanmışdı",
+      "Cədvəldə qeyri-metallar yer almırdı",
+      "Triadalar 4 elementdən ibarət idi, 3 deyil"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Döbereyner yalnız oxşar xassəli elementləri üçlü qruplara bölmüşdü, ancaq bu sistem bütün məlum elementləri sistematik əhatə edə bilmirdi.",
+    "difficulty": "çətin",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "təhlil",
+    "passport_id": "08-KIM-T03-B4-C-012"
+  },
+  {
+    "id": 100558,
+    "category": "Kimya 8",
+    "question": "Mendeleyev elementləri düzərkən neçə üfüqi sıra (dövr) və neçə şaquli sütun (qrup) istifadə etmişdir?",
+    "options": [
+      "7 dövr, 18 qrup",
+      "12 dövr, 8 qrup",
+      "7 dövr, 8 qrup",
+      "9 dövr, 12 qrup"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: 63 elementdən ibarət cədvəldə 12 üfüqi sıra (dövr) və 8 şaquli sütun (qrup) istifadə etmiş.",
+    "difficulty": "çətin",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T03-B3-C-013"
+  },
+  {
+    "id": 100559,
+    "category": "Kimya 8",
+    "question": "Mendeleyev Lotar Meyerdən daha məşhur oldu. Bunun əsas səbəbi nə idi?",
+    "options": [
+      "Meyerin cədvəlinin Mendeleyevinkinə oxşar olması",
+      "Meyerin cədvəlinin Mendeleyevinkinə oxşar olması və ondan sonra nəşr olunması",
+      "Meyerin cədvəlinin tamamilə yanlış olması",
+      "Mendeleyevin müharibə dövründə kəşf etməsi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Buna səbəb bu cədvəlin D.Mendeleyevin daha əvvəl nəşr olunan cədvəlinə oxşar olması idi.",
+    "difficulty": "çətin",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T03-B3-C-014"
+  },
+  {
+    "id": 100560,
+    "category": "Kimya 8",
+    "question": "Hazırda elmə məlum olan elementlərin ümumi sayı neçədir? Bunların neçəsi təbiətdə mövcuddur?",
+    "options": [
+      "100 element, 80-i təbiətdə",
+      "118 element, 92-si təbiətdə",
+      "92 element, hamısı təbiətdə",
+      "100 element, hamısı süni yolla alınmışdır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hazırda elmə 118 kimyəvi element məlumdur. Məlum olan elementlərin 92-si təbiətdə mövcuddur, digərləri isə süni yolla əldə edilmişdir.",
+    "difficulty": "çətin",
+    "topic": "Dövri cədvəlin tarixi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T03-B1-C-015"
+  },
+  {
+    "id": 100561,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəldə neçə şaquli sütun (qrup) vardır?",
+    "options": [
+      "8",
+      "12",
+      "18",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Dövri cədvəldə 18 şaquli sütun var və bu sütunlar qruplar formasında IUPAC-a görə 1-dən 18-ə qədər nömrələnir.",
+    "difficulty": "sadə",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T04-B1-S-001"
+  },
+  {
+    "id": 100562,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəldə neçə üfüqi sıra (dövr) vardır?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Dövri cədvəldə hər bir üfüqi sıraya dövr deyilir. Cədvəldə cəmi 7 dövr var.",
+    "difficulty": "sadə",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T04-B1-S-002"
+  },
+  {
+    "id": 100563,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəldə elementlər nəyin artması ilə sıralanmışdır?",
+    "options": [
+      "Kütlə ədədi",
+      "Atom nömrəsi (nüvə yükü)",
+      "Atom radiusu",
+      "Elektron sayı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə elementlər atom nömrələrinin (nüvə yükünün) artması ilə düzülüb.",
+    "difficulty": "sadə",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T04-B1-S-003"
+  },
+  {
+    "id": 100564,
+    "category": "Kimya 8",
+    "question": "1, 2 və 3-cü dövrlərin kiçik dövr adlanmasının səbəbi nədir?",
+    "options": [
+      "Həmin dövrlər az sayda elementdən ibarətdir",
+      "Həmin dövrlər yalnız əsas qrup elementlərindən təşkil olunmuşdur",
+      "Həmin dövrlərdə heç bir metal yoxdur",
+      "Həmin dövrlər yalnız qeyri-metallardan ibarətdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: 1, 2 və 3-cü dövrlər yalnız əsas qrup elementlərindən. Bu səbəbdən 1, 2 və 3-cü dövrlər kiçik dövrlər adlanır.",
+    "difficulty": "sadə",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T04-B1-S-004"
+  },
+  {
+    "id": 100565,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəlin meydana gəlməsinə kimin araşdırmaları səbəb olmuşdur?",
+    "options": [
+      "Dmitri Mendeleyev",
+      "Lotar Meyer",
+      "Henri Mozli",
+      "Con Nyuland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Henri Mozlinin araşdırmaları müasir dövri cədvəlin meydana gəlməsinə səbəb oldu.",
+    "difficulty": "sadə",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T04-B1-S-005"
+  },
+  {
+    "id": 100566,
+    "category": "Kimya 8",
+    "question": "Əsas qruplar (A qrupları) ilə əlavə qruplar (B qrupları) arasında əsas fərq nədir?",
+    "options": [
+      "A qruplarında yalnız metallar, B qruplarında yalnız qeyri-metallar var",
+      "Əlavə qrupların (B) elementləri 4-cü dövrdən başlayır; 1-3-cü dövrlərdə əlavə qrup elementi yoxdur",
+      "A qruplarında atom nömrəsi böyük, B qruplarında kiçikdir",
+      "B qruplarının sayı A qruplarından azdır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: çünki əlavə qrupların (3-12-ci qrupların) elementləri 4-cü dövrdən başlayır.",
+    "difficulty": "orta",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T04-B2-O-006"
+  },
+  {
+    "id": 100567,
+    "category": "Kimya 8",
+    "question": "Henri Mozli atomların hansı xüsusiyyətini kəşf etmiş, bu kəşf müasir dövri cədvəlin əsasını qoymuşdur?",
+    "options": [
+      "Atom kütlələrini",
+      "Atom nömrələrini (proton sayını)",
+      "Neytron sayını",
+      "Elektron enerji səviyyələrini"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: H.Mozli elektronlarla bombardman etdiyi atomların yaydığı şüaların dalğa uzunluğuna əsasən onların elektron və proton saylarını göstərən atom nömrələrini kəşf etdi.",
+    "difficulty": "orta",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T04-B2-O-007"
+  },
+  {
+    "id": 100568,
+    "category": "Kimya 8",
+    "question": "Eyni qrupa daxil olan elementlərin elektron formulları arasında hansı oxşarlıq var?",
+    "options": [
+      "Atom kütlələri eynidir",
+      "Eyni qrupa daxil olan elementlərin elektron formulu oxşardır",
+      "Eyni xarici elektron sayı var, ancaq tam müxtəlifdir",
+      "Nüvə yükü eynidir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: eyni qrupa daxil olan elementlərin elektron formulu oxşardır. Bu səbəbdən onların bəzi fiziki və kimyəvi xassələri bir-birinə oxşayır.",
+    "difficulty": "orta",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T04-B2-O-008"
+  },
+  {
+    "id": 100569,
+    "category": "Kimya 8",
+    "question": "VIIA qrupu elementləri hansı ümumi adla tanınır?",
+    "options": [
+      "Qələvi metallar",
+      "Halogenlər",
+      "Xalkogenlər",
+      "Təsirsiz qazlar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: VIIA halogenlər ...ns2 np5.",
+    "difficulty": "orta",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T04-B2-O-009"
+  },
+  {
+    "id": 100570,
+    "category": "Kimya 8",
+    "question": "Birinci dövr hansı elementlə başlayır, digər dövrlər isə hansı cür elementlərlə başlayır?",
+    "options": [
+      "Birinci dövr He ilə, qalan dövrlər halogenlə başlayır",
+      "Birinci dövr H ilə, digər dövrlər qələvi metallarla başlayır",
+      "Bütün dövrlər qələvi metallarla başlayır",
+      "Birinci dövr Li ilə, sonrakılar Na ilə başlayır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Birinci dövr hidrogen (H), digər dövrlər isə qələvi metallarla (Li, Na, K, Rb və s.) başlayır.",
+    "difficulty": "orta",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T04-B2-O-010"
+  },
+  {
+    "id": 100571,
+    "category": "Kimya 8",
+    "question": "Atom nömrəsi 17 olan Cl (xlor) elementi dövri cədvəlin hansı qrupu və dövründə yerləşir?",
+    "options": [
+      "VIIA qrupu, 3-cü dövr",
+      "VIA qrupu, 3-cü dövr",
+      "VIIA qrupu, 2-ci dövr",
+      "IA qrupu, 4-cü dövr"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cl-nin elektron formulu: 1s2 2s2 2p6 3s2 3p5. Xarici təbəqə 3-cü dövrdə, 7 xarici elektronu VIIA qrupuna aiddir.",
+    "difficulty": "çətin",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T04-B3-C-011"
+  },
+  {
+    "id": 100572,
+    "category": "Kimya 8",
+    "question": "4-cü dövr elementlər niyə böyük dövr adlanır?",
+    "options": [
+      "Yalnız daha çox qeyri-metal elementi var",
+      "Həm əsas (A), həm də əlavə (B) qrup elementlərini əhatə etdiyi üçün",
+      "Yalnız ağır metallardan ibarətdir",
+      "Dövrdəki elementlər çox atomlu birləşmələr yaradır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: 1, 2 və 3-cü dövrlər yalnız əsas qrup elementlərindən, 4, 5, 6 və 7-ci dövrlər isə həm əsas, həm də əlavə qrup elementlərindən təşkil olunur.",
+    "difficulty": "çətin",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T04-B3-C-012"
+  },
+  {
+    "id": 100573,
+    "category": "Kimya 8",
+    "question": "Atom nömrəsi 19 olan kalium (K) s-element, yoxsa p-elementidir?",
+    "options": [
+      "p-element, çünki xarici p-yarımsəviyyəsini doldurur",
+      "s-element, çünki sonuncu elektronu 4s orbitalını doldurur",
+      "d-element, çünki daxili d-yarımsəviyyəsi var",
+      "f-element, çünki energetik səviyyəsi 4-dür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "K-nın elektron formulu: 1s2 2s2 2p6 3s2 3p6 4s1. Sonuncu elektron s-orbitalını doldurduğundan s-elementdir.",
+    "difficulty": "çətin",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T04-B3-C-013"
+  },
+  {
+    "id": 100574,
+    "category": "Kimya 8",
+    "question": "Mozlinin kəşfi elementlərin kütləyə görə sıralanmasında mövcud olan qeyri-müntəzəmliyi necə həll etdi?",
+    "options": [
+      "Mozli platinin kütlə ədədinin yanlış hesablandığını göstərdi",
+      "Mozli elementlər arasındakı əlaqənin kütləyə deyil, atom nömrəsinə əsaslandığını sübut etdi",
+      "Mozli qızılın əslində platindən çox proton sayına malik olduğunu kəşf etdi",
+      "Mozli cədvəldə yeni bir dövr əlavə etdi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: H.Mozli müəyyən etdi ki, elementlərin xassələri atomların kütləsindən yox, atom nömrəsindən asılıdır.",
+    "difficulty": "çətin",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T04-B3-C-014"
+  },
+  {
+    "id": 100575,
+    "category": "Kimya 8",
+    "question": "Texnesium (Tc) elementinin dövri cədvəl tarixindəki əhəmiyyəti nədir?",
+    "options": [
+      "İlk kəşf edilən element idi",
+      "Molibdendən (Mo) sonrakı boşluğu dolduran ilk süni elementdir",
+      "Ən çox atomlu elementdir",
+      "Radioaktiv olmayan yeganə süni elementdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: molibdendən (Mo) sonrakı boşluq alimləri çox maraqlandırırdı. Nəticədə təbiətdə olmayan yeni bir element yarandı. Bu element texnesium (Tc) adlandırıldı.",
+    "difficulty": "çətin",
+    "topic": "Müasir dövri cədvəl",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T04-B3-C-015"
+  },
+  {
+    "id": 100576,
+    "category": "Kimya 8",
+    "question": "Atom radiusu nədir?",
+    "options": [
+      "Orbitalın maksimal diametri",
+      "Nüvədən ən uzaqdakı elektrona qədər olan məsafə",
+      "İki atom arasındakı rabitənin uzunluğu",
+      "Atomun ağırlıq mərkəzindən xarici səthinə qədər olan məsafə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Atom radiusu nüvədən ən uzaqdakı elektrona qədər olan məsafədir.",
+    "difficulty": "sadə",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T05-B1-S-001"
+  },
+  {
+    "id": 100577,
+    "category": "Kimya 8",
+    "question": "Metallıq xassəsi nədir?",
+    "options": [
+      "Atomun elektron almaq qabiliyyəti",
+      "Atomun elektron vermək qabiliyyəti",
+      "Atomun işıq yaymaq qabiliyyəti",
+      "Atomun istilik keçirməsi qabiliyyəti"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Metallıq xassəsi atomun elektron vermək, qeyri-metallıq xassəsi isə elektron almaq qabiliyyətidir.",
+    "difficulty": "sadə",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T05-B1-S-002"
+  },
+  {
+    "id": 100578,
+    "category": "Kimya 8",
+    "question": "Dövri cədvəldə qruplar üzrə yuxarıdan aşağıya doğru A qrup elementlərinin atom radiusu necə dəyişir?",
+    "options": [
+      "Azalır",
+      "Artır",
+      "Sabit qalır",
+      "Əvvəl artır, sonra azalır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: qruplar üzrə yuxarıdan aşağıya doğru atomda energetik səviyyələrin sayı artdığı üçün A qrup elementlərinin atom radiusu da artır.",
+    "difficulty": "sadə",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T05-B1-S-003"
+  },
+  {
+    "id": 100579,
+    "category": "Kimya 8",
+    "question": "Dövri cədvəldə dövrlər üzrə soldan sağa doğru A qrup elementlərinin atom radiusu necə dəyişir?",
+    "options": [
+      "Artır",
+      "Azalır",
+      "Sabit qalır",
+      "Qeyri-müəyyən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövrlər üzrə soldan sağa doğru atomlarda energetik səviyyələrin sayı sabit qalır, nüvənin yükü artır, ona görə atom radiusu kiçilir.",
+    "difficulty": "sadə",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T05-B1-S-004"
+  },
+  {
+    "id": 100580,
+    "category": "Kimya 8",
+    "question": "Qeyri-metallıq xassəsi nədir?",
+    "options": [
+      "Atomun elektron vermək qabiliyyəti",
+      "Atomun elektron almaq qabiliyyəti",
+      "Atomun kimyəvi cəhətdən inert olması",
+      "Atomun metal kimi davranması"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Metallıq xassəsi atomun elektron vermək, qeyri-metallıq xassəsi isə elektron almaq qabiliyyətidir.",
+    "difficulty": "sadə",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T05-B1-S-005"
+  },
+  {
+    "id": 100581,
+    "category": "Kimya 8",
+    "question": "Qruplar üzrə yuxarıdan aşağıya doğru metallıq xassəsi necə dəyişir?",
+    "options": [
+      "Azalır",
+      "Artır",
+      "Sabit qalır",
+      "Qeyri-müəyyən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə qruplar üzrə yuxarıdan aşağıya doğru atom radiusu artdığı üçün elementlərin metallıq xassəsi artır, qeyri-metallıq xassəsi isə azalır.",
+    "difficulty": "orta",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T05-B2-O-006"
+  },
+  {
+    "id": 100582,
+    "category": "Kimya 8",
+    "question": "Dövrlər üzrə soldan sağa doğru qeyri-metallıq xassəsi necə dəyişir?",
+    "options": [
+      "Azalır",
+      "Artır",
+      "Sabit qalır",
+      "Qeyri-müəyyən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövr üzrə soldan sağa doğru atom radiusunun azalması ilə qeyri-metallıq xassəsi də artır.",
+    "difficulty": "orta",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T05-B2-O-007"
+  },
+  {
+    "id": 100583,
+    "category": "Kimya 8",
+    "question": "Atom radiusu artdıqda atomun elektron verməsi necə dəyişir?",
+    "options": [
+      "Çətinləşir",
+      "Asanlaşır",
+      "Dəyişmir",
+      "Elektron verilmür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bu səbəbdən atomun elektron verməsi asanlaşır. Bu isə metallıq xassəsinin artmasına səbəb olur.",
+    "difficulty": "orta",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T05-B2-O-008"
+  },
+  {
+    "id": 100584,
+    "category": "Kimya 8",
+    "question": "Dövri cədvəldə metallar əsasən hansı hissədə yerləşir?",
+    "options": [
+      "Sağ və yuxarı hissəsində",
+      "Sol və aşağı hissəsində",
+      "Ortada",
+      "Üst sətirdə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: metallar dövri cədvəlin sol və aşağı, qeyri-metallar isə sağ və yuxarı hissəsində yerləşir.",
+    "difficulty": "orta",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T05-B2-O-009"
+  },
+  {
+    "id": 100585,
+    "category": "Kimya 8",
+    "question": "Nüvəyə yaxın elektrona nisbətən nüvədən uzaq elektronun nüvə tərəfindən cəzb olunması necədir?",
+    "options": [
+      "Daha güclü cəzb olunur",
+      "Daha zəif cəzb olunur",
+      "Eyni güclə cəzb olunur",
+      "Cəzb olunma olmur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektron nüvəyə yaxın olduğu üçün güclü cəzb olunur. Elektron nüvədən uzaq olduğu üçün zəif cəzb olunur.",
+    "difficulty": "orta",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T05-B2-O-010"
+  },
+  {
+    "id": 100586,
+    "category": "Kimya 8",
+    "question": "Natrium (Na) və kalium (K) eyni qrupdadır. Hansının atom radiusu böyükdür?",
+    "options": [
+      "Na, çünki Na-nın kütlə ədədi böyükdür",
+      "K, çünki K aşağıda yerləşdiyindən energetik səviyyəsi çox olur",
+      "Bərabərdir, çünki eyni qrupdadırlar",
+      "Na, çünki Na-nın atom nömrəsi kiçikdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qruplar üzrə yuxarıdan aşağıya doğru atomda energetik səviyyələrin sayı artdığı üçün A qrup elementlərinin atom radiusu da artır. K, Na-dan aşağıda yerləşir, ona görə K daha böyük radiusa malikdir.",
+    "difficulty": "çətin",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T05-B3-C-011"
+  },
+  {
+    "id": 100587,
+    "category": "Kimya 8",
+    "question": "Na (metal) və P (qeyri-metal) eyni dövrdədir. Bu, elementlərin xassələrinin dövriliyi ilə necə izah olunur?",
+    "options": [
+      "Na-nın atom radiusu P-dən kiçik olduğu üçün elektron almaq qabiliyyəti var",
+      "Na-nın atom radiusu P-dən böyük olduğu üçün elektron vermək asandır; P-nin isə atom radiusu kiçikdir, nüvə elektronu güclü cəzb edir",
+      "Hər ikisi metallaşma meylindədir, sadəcə dərəcəsi fərqlidir",
+      "Na-nın proton sayı az olduğu üçün metal deyil"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövr üzrə soldan sağa doğru xarici təbəqədə olan elektronların nüvə tərəfindən cəzb olunması artdığından atom radiusunun azalması ilə qeyri-metallıq xassəsi də artır. Na sol tərəfdə, P sağ tərəfdə, ona görə Na metal, P qeyri-metaldır.",
+    "difficulty": "çətin",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T05-B3-C-012"
+  },
+  {
+    "id": 100588,
+    "category": "Kimya 8",
+    "question": "Dövri cədvəldə bor (B) ilə astat (At) arasında çəkilən şərti diaqonal nəyi ayırır?",
+    "options": [
+      "Metalları qeyri-metallardan",
+      "Kiçik dövrlü elementləri böyük dövrlü elementlərdən",
+      "Əsas qrup elementlərini əlavə qrup elementlərindən",
+      "Aktiv elementləri qeyri-aktiv elementlərdən"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Orijinal mətn: Elementlərin dövri cədvəlində bor və astat (At) elementlərini birləşdirən şərti diaqonal çəksək, bu diaqonal metalları və qeyri-metalları ayırır.",
+    "difficulty": "çətin",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T05-B3-C-013"
+  },
+  {
+    "id": 100589,
+    "category": "Kimya 8",
+    "question": "Flüor (F) elementinin qeyri-metallıq xassəsi xlor (Cl) ilə müqayisədə necədir?",
+    "options": [
+      "Flüor xlordan az, çünki xlor daha böyük atom radiusuna malikdir",
+      "Flüor xlordan çox, çünki flüor eyni qrupun yuxarısında yerləşir, atom radiusu kiçikdir",
+      "Flüor xlora bərabərdir, çünki eyni qrupdadırlar",
+      "Flüor xlordan az, çünki flüorun atom nömrəsi kiçikdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qruplar üzrə atom radiusu artdığı üçün xarici təbəqədə olan elektronların cəzb olunması zəifləyir, nəticədə qeyri-metallıq xassəsi azalır. Yuxarıdan aşağıya azaldığı üçün F Cl-dan çox qeyri-metallıqdır.",
+    "difficulty": "çətin",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T05-B3-C-014"
+  },
+  {
+    "id": 100590,
+    "category": "Kimya 8",
+    "question": "Li (litium) və Na (natrium) eyni qrupdadır. Hansının metallıq xassəsi daha güclüdür?",
+    "options": [
+      "Li, çünki Li-nin atom nömrəsi daha kiçikdir",
+      "Na, çünki Na eyni qrupun aşağısında yerləşir, atom radiusu daha böyükdür, elektron verməsi asandır",
+      "Hər ikisi bərabərdir, çünki eyni qrupdadırlar",
+      "Li, çünki Li-nin elektronları nüvəyə daha yaxındır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə qruplar üzrə yuxarıdan aşağıya doğru atom radiusu artdığı üçün atomun elektron verməsi asanlaşır. Bu isə metallıq xassəsinin artmasına səbəb olur. Na aşağıda yerləşir, ona görə Na-nın metallıq xassəsi Li-dən güclüdür.",
+    "difficulty": "çətin",
+    "topic": "Elementlərin xassələrinin dövriliyi",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T05-B3-C-015"
+  },
+  {
+    "id": 100591,
+    "category": "Kimya 8",
+    "question": "Texnesium elementi nə ilə xarakterizə olunur?",
+    "options": [
+      "Ən çox kütlə ədədinə malik olan elementdir",
+      "Təbiətdə mövcud olmayan, süni yolla alınan ilk elementdir",
+      "Dövri cədvəldə ən son kəşf edilən elementdir",
+      "Hidrogeni yanacaq kimi əvəz edən elementdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Nəticədə təbiətdə olmayan yeni bir element yarandı. Bu element texnesium (Tc) adlandırıldı.",
+    "difficulty": "sadə",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T06-B1-S-001"
+  },
+  {
+    "id": 100592,
+    "category": "Kimya 8",
+    "question": "Süni elementlər, əsasən, hansı üsulla əldə olunur?",
+    "options": [
+      "Laboratoriyada maddələri sadəcə qızdırmaqla",
+      "Elementlərin sürətləndirilmiş proton, neytron və kiçik atom nüvələri ilə bombardmanı nəticəsində",
+      "Küləş yanmasından alınan kimyəvi reaksiyalarla",
+      "Elementlər bir-biri ilə birləşdirildikdə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Onlar, əsasən, təbiətdə tapılan elementlərin sürətləndirilmiş proton, neytron və kiçik atom nüvələri ilə bombardmanı nəticəsində əldə olunurdu.",
+    "difficulty": "sadə",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T06-B1-S-002"
+  },
+  {
+    "id": 100593,
+    "category": "Kimya 8",
+    "question": "Texnesiumun tibdə tətbiqi nə ilə əlaqəlidir?",
+    "options": [
+      "Yaraları sağaltmaq üçün",
+      "Ürək, sümük və xərçəng xəstəliklərinin diaqnostikasında",
+      "Bədəni ağrıdan qorumaq üçün",
+      "İmmunitet sistemini gücləndirmək üçün"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Texnesium tibdə ürək, sümük və xərçəng xəstəliklərinin diaqnostikasında tətbiq edilir.",
+    "difficulty": "sadə",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T06-B1-S-003"
+  },
+  {
+    "id": 100594,
+    "category": "Kimya 8",
+    "question": "Amerisium-241 izotopundan məişətdə nə üçün istifadə edilir?",
+    "options": [
+      "Yanacaq kimi",
+      "Duman detektorlarında",
+      "Su təmizlənməsində",
+      "Elektrik enerjisi istehsalında"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Amerisium-241 izotopundan məişət üçün olan duman detektorlarında geniş istifadə edilir.",
+    "difficulty": "sadə",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T06-B1-S-004"
+  },
+  {
+    "id": 100595,
+    "category": "Kimya 8",
+    "question": "Texnesiumun yarısının parçalanmasına nə qədər vaxt sərf olunur?",
+    "options": [
+      "6 gün",
+      "6 saat",
+      "6 il",
+      "6 dəqiqə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Onun yarısının parçalanmasına 6 saat vaxt sərf olunduğundan insan bədənindən daha tez kənarlaşır.",
+    "difficulty": "sadə",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T06-B1-S-005"
+  },
+  {
+    "id": 100596,
+    "category": "Kimya 8",
+    "question": "Texnesiumun tibbi diaqnostikada istifadə olunmasının üstünlüyü nədir?",
+    "options": [
+      "Çox baha olduğu üçün yalnız cərrahiyyə üçündür",
+      "Yarısının parçalanma müddəti 6 saat olduğundan insan bədənindən tez kənarlaşır",
+      "Bədəni tam müalicə edir",
+      "Radioaktiv olmadığı üçün təhlükəsizdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Onun yarısının parçalanmasına 6 saat vaxt sərf olunduğundan insan bədənindən daha tez kənarlaşır.",
+    "difficulty": "orta",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T06-B2-O-006"
+  },
+  {
+    "id": 100597,
+    "category": "Kimya 8",
+    "question": "Plutonium-238 izotopu hansı missiyanın güc mənbəyi kimi istifadə olunmuşdur?",
+    "options": [
+      "Aya gedən missiyanın",
+      "Marsa göndərilən Voyager və Plutona gedən New Horizons missiyalarının",
+      "Beynəlxalq Kosmik Stansiya missiyasının",
+      "Venera missiyasının"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Plutonium-238 izotopu isə Marsa göndərilən Voyager missiyasında, Plutona gedən New Horizons missiyasında termoelektrik generator güc mənbəyi kimi istifadə olunub.",
+    "difficulty": "orta",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T06-B2-O-007"
+  },
+  {
+    "id": 100598,
+    "category": "Kimya 8",
+    "question": "Amerisium-241 məişət duman detektorlarında geniş istifadəyə uyğun olmasının səbəbi nədir?",
+    "options": [
+      "Çox ucuz olduğu üçün",
+      "Yarısının parçalanma müddəti 432 il olduğu üçün uzun müddət istifadəsinə imkan yaradır",
+      "Suya bənzər xassəsinə görə",
+      "Kimyəvi cəhətdən tamamilə inertdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Onun yarısının parçalanmasına 432 il sərf olunur və vaxtın belə çox olması onun daha uzun müddət istifadəsinə imkan yaradır.",
+    "difficulty": "orta",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T06-B2-O-008"
+  },
+  {
+    "id": 100599,
+    "category": "Kimya 8",
+    "question": "Süni elementlərin əksəriyyəti niyə geniş istifadə sahəsinə malik deyil?",
+    "options": [
+      "Çox bahalı olduqları üçün",
+      "Radioaktiv olduqları üçün parçalanırlar, bəzən yaşama müddəti 1 millisaniyədən az olur",
+      "Kimyəvi cəhətdən inert olduqları üçün",
+      "Yalnız kosmik şəraitdə mövcud ola bilirlər"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Lakin süni elementlərin əksəriyyəti radioaktiv olduqları üçün parçalanır. Bəzən onların yaşama müddəti 1 millisaniyədən az olur.",
+    "difficulty": "orta",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T06-B2-O-009"
+  },
+  {
+    "id": 100600,
+    "category": "Kimya 8",
+    "question": "Qısa ömürlü elementlər ilə uzun ömürlü elementlər arasındakı əsas fərq praktik tətbiq baxımından nədir?",
+    "options": [
+      "Qısa ömürlülər daha güclü işıq yayır",
+      "Qısa ömürlülər əsasən elmi nəticə üçün, uzun ömürlülər isə geniş praktik tətbiq sahəsi üçün istifadə edilir",
+      "İkisi arasında fərq yoxdur",
+      "Uzun ömürlülərin praktik tətbiqi qeyri-mümkündür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qısa ömürlü olan elementlərin, əsasən, elmi nəticələri daha çox maraq doğurur.",
+    "difficulty": "orta",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T06-B2-O-010"
+  },
+  {
+    "id": 100601,
+    "category": "Kimya 8",
+    "question": "Emilio Seqre texnesium elementini əldə etmək üçün hansı metoddan istifadə etdi?",
+    "options": [
+      "Oksigen ilə birləşdirmə üsulundan",
+      "Molibden nümunəsini deyterium atomları ilə bombardman etməkdən",
+      "Ağır su ilə xüsusi kimyəvi reaksiyadan",
+      "Uran atomlarını parçalamaqdan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: O, Kaliforniyadan İtaliyaya gətirdiyi molibden nümunəsini deyterium atomları ilə öz laboratoriyasında bombardman etdi.",
+    "difficulty": "çətin",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T06-B3-C-011"
+  },
+  {
+    "id": 100602,
+    "category": "Kimya 8",
+    "question": "Texnesium adı mənası etibarilə nəyi bildirir?",
+    "options": [
+      "Qısa ömürlü mənasında",
+      "Süni mənasında, yunan dilindəki technetos sözündən",
+      "Kosmik mənasında",
+      "Metal mənasında, latın dilindən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qədim yunan dilində technetos süni deməkdir.",
+    "difficulty": "çətin",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T06-B3-C-012"
+  },
+  {
+    "id": 100603,
+    "category": "Kimya 8",
+    "question": "Uran-238 nüvəsinin neytronlarla bombardmanı nəticəsində hansı element əldə edilmişdir?",
+    "options": [
+      "Texnesium",
+      "Plutonium",
+      "Amerisium",
+      "Mendelevium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: uran-238 nüvəsini neytronlarla bombardman etdikdə plutonium əldə edilmişdi.",
+    "difficulty": "çətin",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T06-B3-C-013"
+  },
+  {
+    "id": 100604,
+    "category": "Kimya 8",
+    "question": "Süni elementlər kimya elmi üçün niyə böyük əhəmiyyət daşıyır?",
+    "options": [
+      "Yalnız tibbi tətbiqləri var",
+      "Elmdə yeni üfüqlər açır, elementlərin xassələri haqqında biliklərimizi genişləndirir",
+      "Enerji istehsalında daha ucuzdur",
+      "Süni elementlər atom nüvəsini sabitləşdirir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: bu sahədə yeniliklər elmdə yeni üfüqlər açır.",
+    "difficulty": "çətin",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T06-B3-C-014"
+  },
+  {
+    "id": 100605,
+    "category": "Kimya 8",
+    "question": "Molibden (Mo) ilə texnesium (Tc) arasındakı münasibət dövri cədvəl baxımından nə ifadə edir?",
+    "options": [
+      "Eyni qrupdadırlar",
+      "Tc, Mo-dan sonra gəlir; dövri cədvəldə Mo-dan sonrakı boşluğu doldurur",
+      "Hər ikisi qeyri-metaldır",
+      "Tc, Mo-nun bir izotopudur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: molibdendən (Mo) sonrakı boşluq alimləri çox maraqlandırırdı. Tc (atom nömrəsi 43) Mo-dan (42) sonra gəlir.",
+    "difficulty": "çətin",
+    "topic": "Elm, texnologiya, həyat",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T06-B3-C-015"
+  },
+  {
+    "id": 100606,
+    "category": "Kimya 8",
+    "question": "Layihə tapşırığında atomlar hansı formalı hesab edilir?",
+    "options": [
+      "Kub formasında",
+      "Kürə formasında",
+      "Silindr formasında",
+      "Konusvari formada"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Bu zaman atomları kürə formasında fərz edərək onun həcmi üçün V = (4/3)πr3 formulundan istifadə edin.",
+    "difficulty": "sadə",
+    "topic": "Layihə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T07-B1-S-001"
+  },
+  {
+    "id": 100607,
+    "category": "Kimya 8",
+    "question": "Layihədə atomun həcmini hesablamaq üçün hansı düsturdan istifadə edilir?",
+    "options": [
+      "V = 4πr2",
+      "V = (4/3)πr3",
+      "V = πr2h",
+      "V = 2πr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: atomları kürə formasında fərz edərək onun həcmi üçün V = (4/3)πr3 formulundan istifadə edin (burada r atomun radiusudur).",
+    "difficulty": "sadə",
+    "topic": "Layihə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T07-B1-S-002"
+  },
+  {
+    "id": 100608,
+    "category": "Kimya 8",
+    "question": "Layihə tapşırığında birinci qrafikdə üfüqi oxda nə göstərilir?",
+    "options": [
+      "Atom nömrəsi",
+      "Elementlərin kütlə ədədi",
+      "Atom radiusu",
+      "Yarımsəviyyə sayı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elementlərin kütlə ədədləri ilə atomlarının həcmi arasındakı asılılığı göstərən qrafik qurun (qrafik 1).",
+    "difficulty": "sadə",
+    "topic": "Layihə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T07-B1-S-003"
+  },
+  {
+    "id": 100609,
+    "category": "Kimya 8",
+    "question": "İkinci qrafikdə üfüqi oxda nə göstərilir?",
+    "options": [
+      "Elementlərin kütlə ədədi",
+      "Atom nömrəsi",
+      "Atom radiusu",
+      "Elektron sayı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elementlərin atom nömrələri ilə atomların həcmi arasındakı asılılığı göstərən qrafik qurun (qrafik 2).",
+    "difficulty": "sadə",
+    "topic": "Layihə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T07-B1-S-004"
+  },
+  {
+    "id": 100610,
+    "category": "Kimya 8",
+    "question": "Layihənin rolunu kim oynayır?",
+    "options": [
+      "D.Mendeleyevin laboratoriyasındakı köməkçi tədqiqatçı",
+      "Lotar Meyerin laboratoriyasındakı köməkçi tədqiqatçı",
+      "Henri Mozlinin laboratoriyasındakı köməkçi tədqiqatçı",
+      "Con Nyulandın laboratoriyasındakı köməkçi tədqiqatçı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Təsəvvür edin ki, Lotar Meyerin laboratoriyasında köməkçi tədqiqatçılardan birisiniz.",
+    "difficulty": "sadə",
+    "topic": "Layihə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T07-B1-S-005"
+  },
+  {
+    "id": 100611,
+    "category": "Kimya 8",
+    "question": "Layihə tapşırığında iki qrafikin qurulmasından əsas məqsəd nədir?",
+    "options": [
+      "Elementlərin rəngini müəyyən etmək",
+      "Atom kütləsinin atom nömrəsindən daha dəqiq olub-olmadığını müəyyən etmək",
+      "Atomların elektron formulunu əyaniləşdirmək",
+      "Yarımsəviyyənin enerjisini ölçmək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qrafik 1 və qrafik 2-dən hansı daha dəqiqdir? Müşahidələrinizə əsasən dövri cədvəldə elementlər atom nömrələrinə, yoxsa kütlə ədədlərinə uyğun düzülməlidir?",
+    "difficulty": "orta",
+    "topic": "Layihə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T07-B2-O-006"
+  },
+  {
+    "id": 100612,
+    "category": "Kimya 8",
+    "question": "Layihənin tapşırığına əsasən Mendeleyevin dövri cədvəlindəki elementlər arasında hansı qanunauyğunluqlar araşdırılır?",
+    "options": [
+      "Rəng dövrilikləri",
+      "Dövriliklər və qanunauyğunluqlar",
+      "Temperatur dəyişmələri",
+      "Atom kütlələri"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Əsas tapşırığınız D.Mendeleyevin dövri cədvəlindəki elementlər arasında dövriliklərin və qanunauyğunluqların tədqiqidir.",
+    "difficulty": "orta",
+    "topic": "Layihə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T07-B2-O-007"
+  },
+  {
+    "id": 100613,
+    "category": "Kimya 8",
+    "question": "Layihənin nəticəsinə əsasən dövri cədvəldə elementlər hansı parametrə görə düzülməlidir?",
+    "options": [
+      "Cədvəldə yalnız qeyri-metallar yerləşdirilməlidir",
+      "Dövri cədvəldə elementlər atom nömrəsinə görə düzülməsi daha dəqiqdir",
+      "Kütlə ədədinə görə sıralama daha dəqiqdir",
+      "Atom radiusu yeganə əsas parametrdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Layihə suallarından: Müşahidələrinizə əsasən dövri cədvəldə elementlər atom nömrələrinə, yoxsa kütlə ədədlərinə uyğun düzülməlidir?",
+    "difficulty": "orta",
+    "topic": "Layihə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T07-B2-O-008"
+  },
+  {
+    "id": 100614,
+    "category": "Kimya 8",
+    "question": "Layihədə hansı elementlərə dair məlumatlar verilmişdir?",
+    "options": [
+      "Yalnız metallar (Li-dən K-ya qədər)",
+      "H-dən Ca-ya qədər olan elementlər",
+      "Yalnız qeyri-metallar",
+      "Yalnız nadir torpaq metalları"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətnin cədvəlindən: He, Li, Be, B, C, N, O, F, Ne, Na, Mg, Al, Si, P, S, Cl, Ar, K, Ca göstərilmişdir.",
+    "difficulty": "orta",
+    "topic": "Layihə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T07-B2-O-009"
+  },
+  {
+    "id": 100615,
+    "category": "Kimya 8",
+    "question": "Layihənin nəticəsini L.Meyerə hesabat formasında təqdim etmək üçün neçə söz həcmində yazılmalıdır?",
+    "options": [
+      "50 söz",
+      "100 söz",
+      "500 söz",
+      "1000 söz"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Nəticələrinizi ümumiləşdirib L.Meyerə təqribən 100 sözlük hesabat təqdim edin.",
+    "difficulty": "orta",
+    "topic": "Layihə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T07-B2-O-010"
+  },
+  {
+    "id": 100616,
+    "category": "Kimya 8",
+    "question": "Kürə fərziyyəsinə əsasən, atom radiusu 2 dəfə artdıqda atom həcmi neçə dəfə artır?",
+    "options": [
+      "2 dəfə",
+      "4 dəfə",
+      "8 dəfə",
+      "6 dəfə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "V = (4/3)πr3 düsturuna görə r 2 dəfə artdıqda V = (4/3)π(2r)3 = 8·(4/3)πr3 olur. Yəni həcm 8 dəfə artır.",
+    "difficulty": "çətin",
+    "topic": "Layihə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T07-B3-C-011"
+  },
+  {
+    "id": 100617,
+    "category": "Kimya 8",
+    "question": "Layihə nəticəsi Mozlinin kəşfini vizual olaraq necə sübut edir?",
+    "options": [
+      "Kütlə ədədi daha dəqiq parametrdir",
+      "Atom nömrəsi (proton sayı) dövri cədvəldə elementlər üçün daha dəqiq parametrdir",
+      "Atom radiusu yeganə parametrdir",
+      "Elementlər yalnız rənglərinə görə sıralanmalıdır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Layihə Mozlinin kəşfini vizual olaraq sübut edir: atom nömrəsi kütlə ədədindən daha dəqiq parametrdir. Orijinal mətn: H.Mozli müəyyən etdi ki, elementlərin xassələri atomların kütləsindən yox, atom nömrəsindən asılıdır.",
+    "difficulty": "çətin",
+    "topic": "Layihə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T07-B3-C-012"
+  },
+  {
+    "id": 100618,
+    "category": "Kimya 8",
+    "question": "Qrafik 2-də (atom nömrəsi əsasında atom həcmi) hansı qanunauyğunluq müşahidə edilir?",
+    "options": [
+      "Atom nömrəsi artdıqca həcm daim artır",
+      "Hər dövrün əvvəlindəki elementlər həcm maksimumu verir, dövr üzrə soldan sağa doğru həcm azalır",
+      "Atom həcmi sabit qalır",
+      "Yalnız metalların həcmi artır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dövri cədvəldə hər dövrün əvvəlindəki qələvi metalların atom radiusu ən böyük olur. Soldan sağa atom radiusu azalır, buna görə atom həcmi də azalır.",
+    "difficulty": "çətin",
+    "topic": "Layihə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T07-B3-C-013"
+  },
+  {
+    "id": 100619,
+    "category": "Kimya 8",
+    "question": "Litiumun (Li, atom nömrəsi 3) atom radiusu 152 pm, berilliumun (Be, atom nömrəsi 4) atom radiusu isə 112 pm-dir. Bu hansı qanunauyğunluğu göstərir?",
+    "options": [
+      "Li-dən Be-yə: atom radiusu artır, çünki atom nömrəsi artır",
+      "Li-dən Be-yə: atom radiusu azalır, çünki eyni dövrdə nüvə yükü artır, elektronlar daha güclü cəzb olunur",
+      "Li-dən Be-yə: atom radiusu sabit qalır",
+      "Li-dən Be-yə: atom radiusu qeyri-müəyyən dəyişir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövrlər üzrə soldan sağa doğru nüvənin yükü artır. Ona görə nüvə elektronları özünə daha çox cəzb edir və nəticədə atom radiusu kiçilir.",
+    "difficulty": "çətin",
+    "topic": "Layihə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T07-B3-C-014"
+  },
+  {
+    "id": 100620,
+    "category": "Kimya 8",
+    "question": "Litiumun atom radiusu 152 pm olduqda, kürə fərziyyəsi ilə atomun həcmi təqribən hansı qiymətdir? (π ≈ 3.14)",
+    "options": [
+      "Yaklasik 1,000,000 pm3",
+      "Yaklasik 14,700,000 pm3",
+      "Yaklasik 700,000 pm3",
+      "Yaklasik 36,000 pm3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "V = (4/3) × 3.14 × 1523 = (4/3) × 3.14 × 3,511,808 ≈ 4.19 × 3,511,808 ≈ 14,714,000 pm3. Ən yaxın cavab B seçimidir.",
+    "difficulty": "çətin",
+    "topic": "Layihə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T07-B3-C-015"
+  },
+  {
+    "id": 100621,
+    "category": "Kimya 8",
+    "question": "Xülasəyə əsasən atom nədən ibarətdir?",
+    "options": [
+      "Yalnız nüvədən",
+      "Nüvədən və onun ətrafında dövr edən elektronlardan",
+      "Yalnız protonlardan",
+      "Nüvə, elektronlar və fotonlardan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Atom nüvədən və onun ətrafında dövr edən elektronlardan ibarətdir.",
+    "difficulty": "sadə",
+    "topic": "Xülasə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T08-B1-S-001"
+  },
+  {
+    "id": 100622,
+    "category": "Kimya 8",
+    "question": "Xülasəyə görə elektronlar atomda nə əmələ gətirir?",
+    "options": [
+      "Yarımsəviyyələr birbaşa enerji səviyyəsi yaradır",
+      "Elektronlar orbitalar əmələ gətirir, orbitallar yarımsəviyyələri, yarımsəviyyələr isə energetik səviyyələri əmələ gətirir",
+      "Elektronlar birbaşa atom nüvəsini formalaşdırır",
+      "Elektronlar dövri cədvəli yaradır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektronlar orbitallar əmələ gətirir. Orbitallar yarımsəviyyələri, yarımsəviyyələr isə energetik səviyyələri əmələ gətirir.",
+    "difficulty": "sadə",
+    "topic": "Xülasə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T08-B1-S-002"
+  },
+  {
+    "id": 100623,
+    "category": "Kimya 8",
+    "question": "Xülasəyə görə elementlərin xassələri nədən asılıdır?",
+    "options": [
+      "Atom kütlələrindən",
+      "Atom nömrələrindən",
+      "Neytron sayından",
+      "Elektron yarımsəviyyəsindən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elementlərin xassələri onların atom nömrələrindən asılıdır.",
+    "difficulty": "sadə",
+    "topic": "Xülasə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T08-B1-S-003"
+  },
+  {
+    "id": 100624,
+    "category": "Kimya 8",
+    "question": "Xülasəyə görə dövri cədvəl neçə şaquli sütundan (qrupdan) ibarətdir?",
+    "options": [
+      "8",
+      "12",
+      "18",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: 18 şaquli sütundan (qrupdan) və 7 sıradan (dövrdən) ibarətdir.",
+    "difficulty": "sadə",
+    "topic": "Xülasə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T08-B1-S-004"
+  },
+  {
+    "id": 100625,
+    "category": "Kimya 8",
+    "question": "Xülasəyə görə hər dövr hansı elementlə başlayır (birinci dövr istisna)?",
+    "options": [
+      "Halogenlə",
+      "Qələvi metalla",
+      "Keçid metalı ilə",
+      "Qeyri-metalla"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Hər dövr qələvi metallarla (birinci dövr hidrogenlə) başlayır və təsirsiz qazla bitir.",
+    "difficulty": "sadə",
+    "topic": "Xülasə",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T08-B1-S-005"
+  },
+  {
+    "id": 100626,
+    "category": "Kimya 8",
+    "question": "Elektron formulları nə üçün istifadə olunur?",
+    "options": [
+      "Atomun kütlə ədədini hesablamaq üçün",
+      "Atomun energetik səviyyələrindəki, yarımsəviyyələrindəki və orbitalındakı elektronları şərti olaraq göstərmək üçün",
+      "Reaktiv maddələri müəyyən etmək üçün",
+      "Atom nüvəsinin quruluşunu göstərmək üçün"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Atomun energetik səviyyələri, yarımsəviyyələri və orbitalında olan elektronlar şərti olaraq elektron formulları (elektron konfiqurasiyaları) ilə göstərilir.",
+    "difficulty": "orta",
+    "topic": "Xülasə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T08-B2-O-006"
+  },
+  {
+    "id": 100627,
+    "category": "Kimya 8",
+    "question": "Xülasəyə görə dövrlər nə ilə bitir?",
+    "options": [
+      "Keçid metalı ilə",
+      "Halogen ilə",
+      "Təsirsiz qaz ilə",
+      "Qələvi torpaq metalı ilə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Hər dövr qələvi metallarla (birinci dövr hidrogenlə) başlayır və təsirsiz qazla bitir.",
+    "difficulty": "orta",
+    "topic": "Xülasə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T08-B2-O-007"
+  },
+  {
+    "id": 100628,
+    "category": "Kimya 8",
+    "question": "Atom nömrəsinə əsasən elementlərin sıralanması niyə atom kütləsinə əsaslanaraq sıralamadan üstündür?",
+    "options": [
+      "Atom nömrəsi daha böyük rəqəmdir",
+      "Elementlərin kimyəvi xassələri atom kütləsindən deyil, atom nömrəsindən (proton sayından) asılıdır",
+      "Atom nömrəsi hesablaması daha sadədir",
+      "Atom nömrəsi hər zaman kütlə ədədindən kiçikdir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: H.Mozli müəyyən etdi ki, elementlərin xassələri atomların kütləsindən yox, atom nömrəsindən asılıdır.",
+    "difficulty": "orta",
+    "topic": "Xülasə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T08-B2-O-008"
+  },
+  {
+    "id": 100629,
+    "category": "Kimya 8",
+    "question": "Elektron formulu (elektron konfiqurasiyası) nəyi əks etdirir?",
+    "options": [
+      "Yalnız elektron sayını",
+      "Energetik səviyyələr, yarımsəviyyələr və orbitallardakı elektronların paylanmasını",
+      "Nüvənin quruluşunu",
+      "Yalnız xarici təbəqənin elektronlarını"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Atomun energetik səviyyələri, yarımsəviyyələri və orbitalında olan elektronlar şərti olaraq elektron formulları ilə göstərilir.",
+    "difficulty": "orta",
+    "topic": "Xülasə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T08-B2-O-009"
+  },
+  {
+    "id": 100630,
+    "category": "Kimya 8",
+    "question": "Xülasədə dövri cədvəlin qrupları hansı üsulla nömrələnir?",
+    "options": [
+      "1-dən 7-yə qədər",
+      "1-dən 18-ə qədər",
+      "I-dən VIII-ə qədər Rum rəqəmləri ilə",
+      "A-dan Z-yə qədər hərflərlə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Qruplar 1-dən 18-ə qədər nömrələnir.",
+    "difficulty": "orta",
+    "topic": "Xülasə",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T08-B2-O-010"
+  },
+  {
+    "id": 100631,
+    "category": "Kimya 8",
+    "question": "1-ci energetik səviyyədə yalnız s yarımsəviyyəsi varsa, bu səviyyədə maksimum neçə elektron ola bilər?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1-ci energetik səviyyədə yalnız s yarımsəviyyəsi var. s-yarımsəviyyəsindəki 1 orbitalda maksimum 2 elektron olur.",
+    "difficulty": "çətin",
+    "topic": "Xülasə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T08-B3-C-011"
+  },
+  {
+    "id": 100632,
+    "category": "Kimya 8",
+    "question": "Dövri cədvəlin xülasəsinə görə, qruplar üzrə aşağıya doğru atom radiusu artır. Bu, elementlərin hansı iki xassəsinə necə təsir edir?",
+    "options": [
+      "Metallıq xassəsi azalır, qeyri-metallıq xassəsi artır",
+      "Metallıq xassəsi artır, qeyri-metallıq xassəsi azalır",
+      "Hər ikisi artır",
+      "Hər ikisi azalır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə qruplar üzrə yuxarıdan aşağıya doğru elementlərin atom radiusu artdığı üçün onların metallıq xassəsi artır, qeyri-metallıq xassəsi isə azalır.",
+    "difficulty": "çətin",
+    "topic": "Xülasə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T08-B3-C-012"
+  },
+  {
+    "id": 100633,
+    "category": "Kimya 8",
+    "question": "Dövrlər üzrə soldan sağa doğru atom radiusu azaldığında elementlərin metallıq və qeyri-metallıq xassəsi necə dəyişir?",
+    "options": [
+      "Metallıq artır, qeyri-metallıq azalır",
+      "Metallıq azalır, qeyri-metallıq artır",
+      "Hər ikisi sabit qalır",
+      "Metallıq artır, qeyri-metallıq da artır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə dövrlər üzrə soldan sağa doğru elementlərin atom radiusu azaldığı üçün onların metallıq xassəsi azalır, qeyri-metallıq xassəsi isə artır.",
+    "difficulty": "çətin",
+    "topic": "Xülasə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T08-B3-C-013"
+  },
+  {
+    "id": 100634,
+    "category": "Kimya 8",
+    "question": "Atom elektron formulunu bilmək niyə vacibdir?",
+    "options": [
+      "Atomun rəngini müəyyən edir",
+      "Elementin dövri cədvəldəki yerini, valent elektronlarını, kimyəvi xassələrini müəyyən etməyə imkan yaradır",
+      "Yalnız atomun kütlə ədədini müəyyən edir",
+      "Yalnız laboratoriya şəraitində istifadə olunur"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Elektron formulu atomun xarici təbəqəsini, valent elektronlarını, hansı qrupda olduğunu, metallıq/qeyri-metallıq xassəsini müəyyən etməyə imkan verir.",
+    "difficulty": "çətin",
+    "topic": "Xülasə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T08-B3-C-014"
+  },
+  {
+    "id": 100635,
+    "category": "Kimya 8",
+    "question": "Bölmə 1-in bütün mövzularını ən dəqiq ümumiləşdirən hansı variantdır?",
+    "options": [
+      "Bölmə 1 yalnız orbit hesablamaları ilə məşğul olur",
+      "Bölmə 1 atomun elektron quruluşunu, dövri cədvəlin tarixini, müasir dövri cədvəlin quruluşunu və elementlərin xassələrinin dövriliyi qanunlarını əhatə edir",
+      "Bölmə 1 yalnız Mendeleyevin həyatını öyrədir",
+      "Bölmə 1 kimyəvi reaksiyalar haqqında məlumat verir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Xülasə bölümündən: Atom, elektron orbitalları, yarımsəviyyələr, energetik səviyyələr, elektron formullar, dövri cədvəlin tarixi, müasir dövri cədvəl, elementlərin xassələrinin dövriliyi kimi bütün əsas mövzular əhatə olunur.",
+    "difficulty": "çətin",
+    "topic": "Xülasə",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T08-B3-C-015"
+  },
+  {
+    "id": 100636,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəldə elementlər hansı parametrə görə sıralanır?",
+    "options": [
+      "Kütlə ədədinə",
+      "Atom nömrəsinə (nüvə yükü)",
+      "Atom radiusuna",
+      "Elektron sayına"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövri cədvəldə elementlər atom nömrələrinin (nüvə yükünün) artması ilə düzülüb.",
+    "difficulty": "sadə",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T09-B1-S-001"
+  },
+  {
+    "id": 100637,
+    "category": "Kimya 8",
+    "question": "1-ci energetik səviyyədə hansı yarımsəviyyə var?",
+    "options": [
+      "Yalnız p",
+      "Yalnız s",
+      "s və p",
+      "s, p və d"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: 1-ci energetik səviyyədə yalnız s yarımsəviyyəsi var.",
+    "difficulty": "sadə",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T09-B1-S-002"
+  },
+  {
+    "id": 100638,
+    "category": "Kimya 8",
+    "question": "Müasir dövri cədvəldə neçə dövr vardır?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Orijinal mətn: Cədvəldə cəmi 7 dövr var.",
+    "difficulty": "sadə",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T09-B1-S-003"
+  },
+  {
+    "id": 100639,
+    "category": "Kimya 8",
+    "question": "Döbereynerin triada qanununda neçə element bir qrup təşkil edirdi?",
+    "options": [
+      "İki",
+      "Üç",
+      "Dörd",
+      "Beş"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: İlk dəfə alman kimyaçısı Yohan Döbereyner bəzi elementləri üçlü qruplar halında sıralamış.",
+    "difficulty": "sadə",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T09-B1-S-004"
+  },
+  {
+    "id": 100640,
+    "category": "Kimya 8",
+    "question": "Aşağıdakı yarımsəviyyə növlərindən hansı atomda mövcud deyil?",
+    "options": [
+      "1s",
+      "2p",
+      "1p",
+      "3d"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1-ci energetik səviyyədə yalnız s-yarımsəviyyəsi mövcuddur; 1p yarımsəviyyəsi olmur.",
+    "difficulty": "sadə",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "bilmə",
+    "passport_id": "08-KIM-T09-B1-S-005"
+  },
+  {
+    "id": 100641,
+    "category": "Kimya 8",
+    "question": "Atom nömrəsi 20 olan kalsium (Ca) elementinin dövri cədvəldəki mövqeyi necədir?",
+    "options": [
+      "2-ci dövr, IIA qrupu",
+      "3-cü dövr, IIA qrupu",
+      "4-cü dövr, IIA qrupu",
+      "5-ci dövr, IIA qrupu"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ca-nın elektron formulu: 1s2 2s2 2p6 3s2 3p6 4s2. Sonuncu elektron 4s orbitalını doldurur → 4-cü dövr. 2 xarici elektron (4s2) → IIA qrupu (qələvi torpaq metalları).",
+    "difficulty": "orta",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T09-B2-O-006"
+  },
+  {
+    "id": 100642,
+    "category": "Kimya 8",
+    "question": "Flüor (F, atom nömrəsi 9) atomunun xarici təbəqəsindəki elektron sayı neçədir?",
+    "options": [
+      "2",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "explanation": "F-nin elektron formulu: 1s2 2s2 2p5. Xarici (2-ci) təbəqədəki elektronlar: 2s2+2p5 = 2+5 = 7 elektron.",
+    "difficulty": "orta",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T09-B2-O-007"
+  },
+  {
+    "id": 100643,
+    "category": "Kimya 8",
+    "question": "Aşağıdakılardan hansı metalın xassələrinə uyğundur?",
+    "options": [
+      "Atom radiusu kiçik, nüvə elektronu güclü cəzb edir",
+      "Atom radiusu böyük, xarici elektron zəif cəzb olunur, elektron vermək asandır",
+      "Yalnız qeyri-metallarla reaksiyaya girir",
+      "Elektron almaq meyli güclüdür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Atom radiusunun artması səbəbindən elektronun atomdan ayrılması asanlaşır... Bu isə metallıq xassəsinin artmasına səbəb olur.",
+    "difficulty": "orta",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T09-B2-O-008"
+  },
+  {
+    "id": 100644,
+    "category": "Kimya 8",
+    "question": "Eyni dövrdə olan Na (11) və Cl (17) elementlərini atom radiusu baxımından müqayisə edin.",
+    "options": [
+      "Na = Cl, çünki eyni dövrdədirlər",
+      "Na > Cl, çünki dövr üzrə soldan sağa atom radiusu azalır",
+      "Cl > Na, çünki Cl-nin atom nömrəsi böyükdür",
+      "Na < Cl, çünki Na-nın elektron sayı azdır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Dövrlər üzrə soldan sağa doğru atom radiusu kiçilir. Na solda, Cl sağda yerləşdiyi üçün Na-nın atom radiusu böyükdür.",
+    "difficulty": "orta",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T09-B2-O-009"
+  },
+  {
+    "id": 100645,
+    "category": "Kimya 8",
+    "question": "Aşağıdakı ifadələrdən hansı yanlışdır?",
+    "options": [
+      "Eyni qrupa daxil olan elementlərin elektron formulu oxşardır",
+      "4, 5, 6, 7-ci dövrlər böyük dövrlər adlanır",
+      "Müasir dövri cədvəldə elementlər atom nömrəsinə görə düzülüb",
+      "B qruplarının sayı A qruplarının sayından çoxdur"
+    ],
+    "correctAnswer": 3,
+    "explanation": "IUPAC-a görə A qrupları (1-2, 13-18 qrup) = 8 qrup; B qrupları (3-12 qrup) = 10 qrup. Ənənəvi adlandırmada isə A=8, B=8 (VIIIB 3 sütundan ibarətdir). B qruplarının sayı A-dan çox deyil.",
+    "difficulty": "orta",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "anlama",
+    "passport_id": "08-KIM-T09-B2-O-010"
+  },
+  {
+    "id": 100646,
+    "category": "Kimya 8",
+    "question": "Qısa elektron formulu ...2s2 2p1 olan element hansıdır?",
+    "options": [
+      "Be (atom nömrəsi 4)",
+      "B (atom nömrəsi 5)",
+      "C (atom nömrəsi 6)",
+      "N (atom nömrəsi 7)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tam elektron formulu: 1s2 2s2 2p1. Ümumi elektron sayı: 2+2+1=5. Atom nömrəsi 5 → Bor (B).",
+    "difficulty": "çətin",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T09-B3-C-011"
+  },
+  {
+    "id": 100647,
+    "category": "Kimya 8",
+    "question": "Na+ ionunun elektron formulu hansı neytral atomun elektron formulu ilə eynidir?",
+    "options": [
+      "Ne (atom nömrəsi 10)",
+      "Mg (atom nömrəsi 12)",
+      "Na (atom nömrəsi 11)",
+      "F (atom nömrəsi 9)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Na (11 proton, 11 elektron) 1 elektron verdikdə Na+ (11 proton, 10 elektron) əmələ gəlir. 10 elektrona malik neytral atom Ne (neon, atom nömrəsi 10) dir.",
+    "difficulty": "çətin",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T09-B3-C-012"
+  },
+  {
+    "id": 100648,
+    "category": "Kimya 8",
+    "question": "Aşağıdakı atomların hansının xarici energetik səviyyəsi tam dolmuşdur?",
+    "options": [
+      "N (atom nömrəsi 7)",
+      "O (atom nömrəsi 8)",
+      "Ne (atom nömrəsi 10)",
+      "Na (atom nömrəsi 11)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ne-nin elektron formulu: 1s2 2s2 2p6. 2-ci energetik səviyyədə s(2)+p(6)=8 elektron, bu isə 2-ci səviyyənin maksimal elektron sayına bərabərdir. Beləliklə Ne-nin xarici energetik səviyyəsi tam dolmuşdur.",
+    "difficulty": "çətin",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T09-B3-C-013"
+  },
+  {
+    "id": 100649,
+    "category": "Kimya 8",
+    "question": "p-yarımsəviyyəsindəki 3 elektronun (p3) düzgün yerləşdirilməsi hansıdır?",
+    "options": [
+      "Bir orbitalda 2 elektron (cüt), digər ikisi tək",
+      "Hər üç elektron ayrı-ayrı orbitallarda eyni istiqamətli oxlarla",
+      "Hər üç elektron eyni orbitaldadır",
+      "Birinci orbitalda 2 elektron (əks istiqamətli), ikinci orbitalda 1 tək elektron"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Orijinal mətn: Elektronlar p-yarımsəviyyəsindəki orbitallarda əvvəlcə tək-tək və eyni istiqamətdə yerləşir. 3 elektron → hər biri ayrı orbitallarda, eyni istiqamətli (Hund qaydası).",
+    "difficulty": "çətin",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T09-B3-C-014"
+  },
+  {
+    "id": 100650,
+    "category": "Kimya 8",
+    "question": "Atom nömrəsi 16 olan S (kükürd) elementi dövri cədvəlin hansı qrupunda yerləşir?",
+    "options": [
+      "IVA",
+      "VA",
+      "VIA",
+      "VIIA"
+    ],
+    "correctAnswer": 2,
+    "explanation": "S-nin tam elektron formulu: 1s2 2s2 2p6 3s2 3p4. Xarici təbəqədə 6 elektron (3s2+3p4=2+4=6) → VIA qrupu (xalkogenlər). Orijinal mətn: VIA xalkogenlər ...ns2 np4.",
+    "difficulty": "çətin",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "bloomLevel": "tətbiq",
+    "passport_id": "08-KIM-T09-B3-C-015"
+  }
+]

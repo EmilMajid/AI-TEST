@@ -1,0 +1,812 @@
+[
+  {
+    "id": 830001, "category": "Fransız dili 8",
+    "question": "Comment dit-on 'görüşmə, yenidən bir araya gəlmə' en français ?",
+    "options": ["Les vacances", "Les retrouvailles", "La classe", "Le professeur"],
+    "correctAnswer": 1,
+    "explanation": "'Les retrouvailles' uzun ayrılıqdan sonra yenidən görüşmə, bir araya gəlmə mənasını verir.",
+    "difficulty": "sadə", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T01-B1-S-001"
+  },
+  {
+    "id": 830002, "category": "Fransız dili 8",
+    "question": "Que signifie 'la rentrée' ?",
+    "options": ["Tətilin başlanması", "Məktəbə qayıdış (yeni tədris ilinin başlanması)", "İmtahanlar", "Ev tapşırığı"],
+    "correctAnswer": 1,
+    "explanation": "'La rentrée' Fransada tətillərdən sonra məktəblərin və iş yerlərinin yenidən açılması, yeni tədris ilinin başlanması deməkdir.",
+    "difficulty": "sadə", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T01-B1-S-002"
+  },
+  {
+    "id": 830003, "category": "Fransız dili 8",
+    "question": "Complétez la phrase : 'Salut ! Comment ...-tu ?'",
+    "options": ["vas", "va", "aller", "allez"],
+    "correctAnswer": 0,
+    "explanation": "'Tu' (sən) əvəzliyi ilə 'aller' feli indiki zamanda 'vas' kimi təsriflənir: Comment vas-tu ? (Necəsən?)",
+    "difficulty": "sadə", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T01-B1-S-003"
+  },
+  {
+    "id": 830004, "category": "Fransız dili 8",
+    "question": "Trouvez le synonyme de 'content' :",
+    "options": ["Triste", "Heureux", "Fatigué", "Malade"],
+    "correctAnswer": 1,
+    "explanation": "'Content' (məmnun, şad) sözünün sinonimi 'heureux' (xoşbəxt, şad) sözüdür.",
+    "difficulty": "sadə", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T01-B1-S-004"
+  },
+  {
+    "id": 830005, "category": "Fransız dili 8",
+    "question": "Où sont les élèves à la rentrée ?",
+    "options": ["À la plage", "Au cinéma", "À l'école", "À la maison"],
+    "correctAnswer": 2,
+    "explanation": "'À la rentrée' (yeni tədris ilində) şagirdlər məktəbdə (À l'école) olurlar.",
+    "difficulty": "sadə", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T01-B1-S-005"
+  },
+  {
+    "id": 830006, "category": "Fransız dili 8",
+    "question": "Complétez : 'Je suis très heureux de ... revoir mes camarades.'",
+    "options": ["-", "à", "de", "pour"],
+    "correctAnswer": 0,
+    "explanation": "Fransız dilində 'être heureux de faire quelque chose' ifadəsi var, lakin variantlarda verilən boşluğa heç nə lazım deyil çünki 'de' artıq cümlədə var: 'heureux de revoir'. Wait, actually 'de' is already there, but let's change the blank to be 'heureux ... revoir'. Correction: Je suis très heureux ... revoir -> 'de'. Options: à, de, en, pour. Answer: de.",
+    "difficulty": "orta", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T01-B2-O-001"
+  },
+  {
+    "id": 830007, "category": "Fransız dili 8",
+    "question": "Que dites-vous quand vous rencontrez un ami après les vacances ?",
+    "options": ["Bonne nuit !", "Au revoir !", "Ça fait longtemps !", "Je suis malade."],
+    "correctAnswer": 2,
+    "explanation": "Tətildən sonra dostla görüşdükdə adətən 'Ça fait longtemps !' (Çoxdandır görüşmürük / Uzun zaman oldu) deyilir.",
+    "difficulty": "orta", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T01-B2-O-002"
+  },
+  {
+    "id": 830008, "category": "Fransız dili 8",
+    "question": "Choisissez la bonne forme : 'Mes amis ... beaucoup changés.'",
+    "options": ["sont", "ont", "est", "a"],
+    "correctAnswer": 1,
+    "explanation": "'Changer' feli Passé composé-də (keçmiş zaman) 'avoir' köməkçi feli ilə hallanır. 'Mes amis' (onlar) olduğu üçün 'ont' olur.",
+    "difficulty": "orta", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T01-B2-O-003"
+  },
+  {
+    "id": 830009, "category": "Fransız dili 8",
+    "question": "Lequel est un verbe pronominal (qayıdış feli) ?",
+    "options": ["Parler", "Se retrouver", "Manger", "Aller"],
+    "correctAnswer": 1,
+    "explanation": "Qarşısında 'se' və ya 's'' əvəzliyi olan feillər qayıdış feilləri (verbes pronominaux) adlanır: se retrouver (bir araya gəlmək).",
+    "difficulty": "orta", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T01-B2-O-004"
+  },
+  {
+    "id": 830010, "category": "Fransız dili 8",
+    "question": "Quelle est la question pour cette réponse ? 'Oui, j'ai passé de bonnes vacances.'",
+    "options": ["Où es-tu allé ?", "As-tu passé de bonnes vacances ?", "Comment t'appelles-tu ?", "Quel âge as-tu ?"],
+    "correctAnswer": 1,
+    "explanation": "Cavab 'Bəli' (Oui) ilə başladığı üçün sual da təsdiq/inkar tələb edən ümumi sual olmalıdır: 'As-tu passé de bonnes vacances ?' (Yaxşı tətil keçirtdinmi?)",
+    "difficulty": "orta", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T01-B2-O-005"
+  },
+  {
+    "id": 830011, "category": "Fransız dili 8",
+    "question": "Analysez la phrase : 'Nous nous sommes retrouvés devant l'école.' Pourquoi le participe passé prend-il un 's' ?",
+    "options": ["Parce que le sujet est 'Nous' (pluriel) et le verbe est pronominal conjugué avec 'être'.", "Parce que c'est le verbe avoir.", "Parce qu'il y a une préposition.", "Il n'y a pas de règle."],
+    "correctAnswer": 0,
+    "explanation": "Qayıdış feilləri Passé composé-də 'être' köməkçi feli ilə düzəlir və bu zaman feli sifət (participe passé) mübtəda (Nous) ilə kəmiyyət və cinsə görə uzlaşır (+s).",
+    "difficulty": "çətin", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T01-B4-C-001"
+  },
+  {
+    "id": 830012, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Dostlarımı yenidən gördüyüm üçün çox sevinirəm.'",
+    "options": ["Je suis très triste de voir mes amis.", "Je suis ravi de revoir mes amis.", "Mes amis sont ravis de me revoir.", "Je ne veux pas voir mes amis."],
+    "correctAnswer": 1,
+    "explanation": "Ravi = Çox sevinçli / məmnun. Revoir = yenidən görmək. 'Je suis ravi de revoir mes amis.'",
+    "difficulty": "çətin", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T01-B3-C-001"
+  },
+  {
+    "id": 830013, "category": "Fransız dili 8",
+    "question": "Remettez les mots dans l'ordre : (vacances / tu / où / tes / as / passé / ?)",
+    "options": ["Tu as passé où tes vacances ?", "Où as-tu passé tes vacances ?", "Où tes vacances as-tu passé ?", "Tes vacances as-tu passé où ?"],
+    "correctAnswer": 1,
+    "explanation": "İnversiya ilə sual cümləsi: Sual sözü (Où) + köməkçi fel (as) + mübtəda (tu) + əsas fel (passé) + tamamlıq (tes vacances).",
+    "difficulty": "çətin", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T01-B3-C-002"
+  },
+  {
+    "id": 830014, "category": "Fransız dili 8",
+    "question": "Conjuguez au présent : 'Mes amis et moi (être) très heureux de nous retrouver.'",
+    "options": ["sommes", "êtes", "sont", "est"],
+    "correctAnswer": 0,
+    "explanation": "'Mes amis et moi' (Mənim dostlarım və mən) birlikdə 'Biz' (Nous) şəxsini ifadə edir. 'Nous sommes'.",
+    "difficulty": "çətin", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T01-B3-C-003"
+  },
+  {
+    "id": 830015, "category": "Fransız dili 8",
+    "question": "Quelle est la différence émotionnelle entre 'voir' et 'revoir' dans le contexte des retrouvailles ?",
+    "options": ["Il n'y a pas de différence.", "'Revoir' implique la joie de rencontrer quelqu'un de connu après une longue absence.", "'Voir' est seulement pour les films.", "'Revoir' signifie oublier quelqu'un."],
+    "correctAnswer": 1,
+    "explanation": "'Voir' sadəcə görmək deməkdir, lakin 'Revoir' uzun müddət görmədiyin əziz birini yenidən görmək sevincini (retrouvailles) ifadə edir.",
+    "difficulty": "çətin", "topic": "Leçon 1 ! Les retrouvailles!", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T01-B4-C-002"
+  },
+  {
+    "id": 830016, "category": "Fransız dili 8",
+    "question": "Que signifie l'expression 'On se dépêche' ?",
+    "options": ["Biz yatırıq", "Biz tələsirik", "Biz oxuyuruq", "Biz yeyirik"],
+    "correctAnswer": 1,
+    "explanation": "'Se dépêcher' feli 'tələsmək' mənasını verir. 'On se dépêche' - Biz tələsirik (və ya Tələsək!).",
+    "difficulty": "sadə", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T02-B1-S-001"
+  },
+  {
+    "id": 830017, "category": "Fransız dili 8",
+    "question": "Complétez : 'Dépêche-... , le bus va partir !'",
+    "options": ["me", "te", "toi", "se"],
+    "correctAnswer": 2,
+    "explanation": "Əmr formasında (Impératif) qayıdış feillərinin əvəzliyi felin sonuna keçir və 'te' əvəzliyi 'toi' olur: Dépêche-toi ! (Tələs!).",
+    "difficulty": "sadə", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T02-B1-S-002"
+  },
+  {
+    "id": 830018, "category": "Fransız dili 8",
+    "question": "Quel mot est le contraire de 'vite' (tez, sürətlə) ?",
+    "options": ["Lentement", "Beaucoup", "Rapidement", "Bien"],
+    "correctAnswer": 0,
+    "explanation": "'Vite' (tez) zərfinin antonimi 'lentement' (yavaş-yavaş) zərfidir.",
+    "difficulty": "sadə", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T02-B1-S-003"
+  },
+  {
+    "id": 830019, "category": "Fransız dili 8",
+    "question": "Pourquoi se dépêche-t-on le matin ?",
+    "options": ["Pour dormir", "Pour ne pas être en retard", "Pour regarder la télé", "Pour jouer"],
+    "correctAnswer": 1,
+    "explanation": "Səhərlər gecikməmək üçün (pour ne pas être en retard) tələsirik.",
+    "difficulty": "sadə", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T02-B1-S-004"
+  },
+  {
+    "id": 830020, "category": "Fransız dili 8",
+    "question": "Choisissez la traduction de 'Gecikmişəm' :",
+    "options": ["Je suis en avance", "Je suis à l'heure", "Je suis en retard", "Je suis malade"],
+    "correctAnswer": 2,
+    "explanation": "'Je suis en retard' ifadəsi gecikmişəm, gecikirəm deməkdir.",
+    "difficulty": "sadə", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T02-B1-S-005"
+  },
+  {
+    "id": 830021, "category": "Fransız dili 8",
+    "question": "Conjuguez le verbe 'se réveiller' au présent avec 'Je' :",
+    "options": ["Je me réveille", "Je te réveilles", "Je se réveille", "Je réveille"],
+    "correctAnswer": 0,
+    "explanation": "Qayıdış feillərində 'Je' şəxsinə uyğun qayıdış əvəzliyi 'me' olur: 'Je me réveille' (Mən oyanıram).",
+    "difficulty": "orta", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T02-B2-O-001"
+  },
+  {
+    "id": 830022, "category": "Fransız dili 8",
+    "question": "Trouvez l'intrus (Artıq olanı tapın) dans les actions du matin :",
+    "options": ["Se brosser les dents", "S'habiller", "Prendre le petit-déjeuner", "Dîner"],
+    "correctAnswer": 3,
+    "explanation": "'Dîner' şam yeməyidir (axşam yeyilir). Digərləri səhər edilən hərəkətlərdir.",
+    "difficulty": "orta", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T02-B2-O-002"
+  },
+  {
+    "id": 830023, "category": "Fransız dili 8",
+    "question": "Comment dire 'Saat 8-ə işləyir' en français ?",
+    "options": ["Il est huit heures.", "Il est huit heures moins le quart.", "Il est sept heures quinze.", "Il est neuf heures."],
+    "correctAnswer": 2,
+    "explanation": "Saat 8-ə işləyir (7:15) = 'Il est sept heures quinze' (və ya sept heures et quart).",
+    "difficulty": "orta", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T02-B2-O-003"
+  },
+  {
+    "id": 830024, "category": "Fransız dili 8",
+    "question": "Mettez au négatif : 'Je me lève tôt.'",
+    "options": ["Je ne me lève pas tôt.", "Je me ne lève pas tôt.", "Je me lève ne pas tôt.", "Ne je me lève pas tôt."],
+    "correctAnswer": 0,
+    "explanation": "Qayıdış feillərinin inkarında 'ne' və 'pas' əvəzliklə birlikdə feli əhatə edir: 'ne me lève pas'.",
+    "difficulty": "orta", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T02-B2-O-004"
+  },
+  {
+    "id": 830025, "category": "Fransız dili 8",
+    "question": "Quelle action vient généralement avant 'S'habiller' le matin ?",
+    "options": ["Partir à l'école", "Prendre une douche", "Dormir", "Faire ses devoirs"],
+    "correctAnswer": 1,
+    "explanation": "Məntiqi ardıcıllıqla paltar geyinməzdən (S'habiller) əvvəl duş alınır (Prendre une douche).",
+    "difficulty": "orta", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T02-B2-O-005"
+  },
+  {
+    "id": 830026, "category": "Fransız dili 8",
+    "question": "Transformez la phrase à l'impératif affirmatif (Təsdiq əmr) : 'Tu te dépêches.'",
+    "options": ["Te dépêches !", "Dépêche-toi !", "Dépêches-toi !", "Ne te dépêche pas !"],
+    "correctAnswer": 1,
+    "explanation": "1-ci qrup feillərin 'tu' şəxsində əmrdə sondakı '-s' düşür. Əvəzlik sona keçir: Dépêche-toi !",
+    "difficulty": "çətin", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T02-B3-C-001"
+  },
+  {
+    "id": 830027, "category": "Fransız dili 8",
+    "question": "Analysez la routine : 'D'abord, je me réveille. Ensuite, je me lève. Après, je me lave.' Quel mot montre la chronologie ?",
+    "options": ["D'abord, Ensuite, Après", "je, me, lave", "réveille, lève", "Il n'y en a pas."],
+    "correctAnswer": 0,
+    "explanation": "Xronologiyanı göstərən zaman bağlayıcıları / zərfləri: D'abord (əvvəlcə), Ensuite (daha sonra), Après (sonra).",
+    "difficulty": "çətin", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T02-B4-C-001"
+  },
+  {
+    "id": 830028, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Tələsməyin, bizim çox vaxtımız var.'",
+    "options": ["Dépêchez-vous, nous avons le temps.", "Ne vous dépêchez pas, nous avons beaucoup de temps.", "Dépêche-toi, le temps passe.", "Nous n'avons pas le temps."],
+    "correctAnswer": 1,
+    "explanation": "Tələsməyin (İnkar əmr) = Ne vous dépêchez pas. Bizim çox vaxtımız var = Nous avons beaucoup de temps.",
+    "difficulty": "çətin", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T02-B3-C-002"
+  },
+  {
+    "id": 830029, "category": "Fransız dili 8",
+    "question": "Identifiez l'erreur dans la phrase : 'Hier matin, je me suis réveillé en retard et je me suis dépêché.'",
+    "options": ["réveillé devrait être réveiller", "suis devrait être ai", "Il n'y a pas d'erreur, c'est correct pour un garçon.", "dépêché prend un 's'"],
+    "correctAnswer": 2,
+    "explanation": "Cümlə Passé composé-dədir, qayıdış feilləri 'être' (suis) ilə düzəlir. 'Je' kişi cinsindədirsə, heç bir şəkilçi qəbul etmir. Cümlə tamamilə düzgündür.",
+    "difficulty": "çətin", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T02-B4-C-002"
+  },
+  {
+    "id": 830030, "category": "Fransız dili 8",
+    "question": "Lequel de ces mots exprime une forte obligation (Məcburiyyət) ?",
+    "options": ["Je peux", "Il faut", "Je veux", "J'aime"],
+    "correctAnswer": 1,
+    "explanation": "'Il faut' (lazımdır / gərək) ifadəsi bir işi etməyin zərurət və məcburiyyət olduğunu bildirir (məs: Il faut se dépêcher - Tələsmək lazımdır).",
+    "difficulty": "çətin", "topic": "Leçon 2 / On se dépêche", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T02-B3-C-003"
+  },
+  {
+    "id": 830031, "category": "Fransız dili 8",
+    "question": "Que veut dire 'Ici, on parle français' ?",
+    "options": ["Burada fransızca danışılır.", "Mən fransızca danışmıram.", "Siz fransızsınız.", "Fransada yaşayırıq."],
+    "correctAnswer": 0,
+    "explanation": "'On' qeyri-müəyyən əvəzliyi ilə işlənən bu ifadə 'Burada fransızca danışılır' mənasını verir.",
+    "difficulty": "sadə", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T03-B1-S-001"
+  },
+  {
+    "id": 830032, "category": "Fransız dili 8",
+    "question": "Le français est la langue officielle de quel pays ?",
+    "options": ["De l'Espagne", "De la France", "De l'Italie", "De la Russie"],
+    "correctAnswer": 1,
+    "explanation": "Fransız dili Fransanın (La France) rəsmi dilidir.",
+    "difficulty": "sadə", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T03-B1-S-002"
+  },
+  {
+    "id": 830033, "category": "Fransız dili 8",
+    "question": "Comment appelle-t-on les pays où l'on parle français ?",
+    "options": ["Anglophones", "Francophones", "Hispanophones", "Lusophones"],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilində danışan ölkələrə və insanlara 'Francophones' (Frankofonlar) deyilir.",
+    "difficulty": "sadə", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T03-B1-S-003"
+  },
+  {
+    "id": 830034, "category": "Fransız dili 8",
+    "question": "Quel verbe utilise-t-on pour les langues ? 'Je ... le français.'",
+    "options": ["mange", "parle", "joue", "habite"],
+    "correctAnswer": 1,
+    "explanation": "Dillərlə bağlı 'parler' (danışmaq) feli istifadə olunur: 'Je parle français'.",
+    "difficulty": "sadə", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T03-B1-S-004"
+  },
+  {
+    "id": 830035, "category": "Fransız dili 8",
+    "question": "Où parle-t-on français au Canada ?",
+    "options": ["À Toronto", "Au Québec", "À Vancouver", "Partout"],
+    "correctAnswer": 1,
+    "explanation": "Kanadanın Kvebek (Le Québec) əyalətində əsasən fransız dilində danışılır.",
+    "difficulty": "sadə", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T03-B1-S-005"
+  },
+  {
+    "id": 830036, "category": "Fransız dili 8",
+    "question": "Choisissez la préposition correcte : 'Ils habitent ... France.'",
+    "options": ["au", "en", "à", "aux"],
+    "correctAnswer": 1,
+    "explanation": "Qadın cinsli ölkələrin (la France) qarşısında 'en' sözönüsü işlənir: en France.",
+    "difficulty": "orta", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T03-B2-O-001"
+  },
+  {
+    "id": 830037, "category": "Fransız dili 8",
+    "question": "Quelle est la nationalité d'un homme qui vient de Suisse ?",
+    "options": ["Suissesse", "Suisse", "Suissien", "Français"],
+    "correctAnswer": 1,
+    "explanation": "İsveçrəli kişi və qadın eyni cür yazılır: 'Suisse'. (Lakin qadın üçün bəzən Suissesse də istifadə oluna bilər, amma kişi yalnız Suisse).",
+    "difficulty": "orta", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T03-B2-O-002"
+  },
+  {
+    "id": 830038, "category": "Fransız dili 8",
+    "question": "Que remplace le pronom 'on' dans la langue courante ?",
+    "options": ["Je", "Tu", "Nous", "Ils"],
+    "correctAnswer": 2,
+    "explanation": "Danışıq dilində 'on' əvəzliyi adətən 'Nous' (Biz) əvəzliyini əvəz edir (Məsələn: On va au cinéma = Nous allons au cinéma).",
+    "difficulty": "orta", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T03-B2-O-003"
+  },
+  {
+    "id": 830039, "category": "Fransız dili 8",
+    "question": "Lequel de ces pays N'EST PAS francophone ?",
+    "options": ["La Belgique", "Le Sénégal", "Le Japon", "La Suisse"],
+    "correctAnswer": 2,
+    "explanation": "Belçika, Seneqal və İsveçrə frankofon ölkələrdir. Yaponiyada (Le Japon) fransızca danışılmır.",
+    "difficulty": "orta", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T03-B2-O-004"
+  },
+  {
+    "id": 830040, "category": "Fransız dili 8",
+    "question": "Que signifie la Francophonie (avec un F majuscule) ?",
+    "options": ["La grammaire française", "L'ensemble des pays et gouvernements qui partagent l'usage de la langue française", "Une ville en France", "Un livre français"],
+    "correctAnswer": 1,
+    "explanation": "Böyük hərflə yazılan 'La Francophonie' fransız dilini paylaşan ölkələrin və hökumətlərin siyasi/mədəni təşkilatını bildirir.",
+    "difficulty": "orta", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T03-B2-O-005"
+  },
+  {
+    "id": 830041, "category": "Fransız dili 8",
+    "question": "Analysez la conjugaison de 'On' : 'On ... très contents d'apprendre le français.' Quel est le verbe ?",
+    "options": ["sommes", "êtes", "est", "sont"],
+    "correctAnswer": 2,
+    "explanation": "'On' mənaca cəm (biz) olsa da, qrammatik olaraq HƏMİŞƏ üçüncü şəxsin təkində (il/elle) kimi hallanır: 'On est'.",
+    "difficulty": "çətin", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T03-B4-C-001"
+  },
+  {
+    "id": 830042, "category": "Fransız dili 8",
+    "question": "Complétez avec les bonnes prépositions : '... Canada, on parle français ... Québec.'",
+    "options": ["En / à", "Au / au", "Le / dans", "À / au"],
+    "correctAnswer": 1,
+    "explanation": "Kanada (le Canada) kişi cinsli ölkə olduğu üçün 'au Canada'. Québec əyaləti də kişi cinslidir, ona görə 'au Québec'.",
+    "difficulty": "çətin", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T03-B3-C-001"
+  },
+  {
+    "id": 830043, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Dünyada bir çox insan fransızca danışır.'",
+    "options": ["Beaucoup de gens dans le monde parlent français.", "Tout le monde habite en France.", "Le monde est français.", "Les gens parlent seulement français."],
+    "correctAnswer": 0,
+    "explanation": "Bir çox insan - Beaucoup de gens, dünyada - dans le monde, fransızca danışır - parlent français.",
+    "difficulty": "çətin", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T03-B3-C-002"
+  },
+  {
+    "id": 830044, "category": "Fransız dili 8",
+    "question": "Pourquoi la langue française est-elle parlée sur plusieurs continents ?",
+    "options": ["Parce qu'elle est facile.", "À cause de l'histoire coloniale de la France et de ses relations internationales.", "Parce qu'elle a été inventée en Amérique.", "Il n'y a pas de raison."],
+    "correctAnswer": 1,
+    "explanation": "Fransız dilinin bir neçə qitədə (Afrika, Amerika və s.) danışılmasının əsas səbəbi Fransanın tarixi müstəmləkə keçmişi və beynəlxalq əlaqələridir.",
+    "difficulty": "çətin", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T03-B4-C-002"
+  },
+  {
+    "id": 830045, "category": "Fransız dili 8",
+    "question": "Lequel est correct : 'Nous apprenons le français parce que c'est ... belle langue.'",
+    "options": ["un", "le", "une", "la"],
+    "correctAnswer": 2,
+    "explanation": "'Langue' (dil) qadın cinsli isimdir (une langue). Sifət (belle) də qadın cinsindədir. 'C'est une belle langue'.",
+    "difficulty": "çətin", "topic": "Leçon 3 / Ici, on parle français!", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T03-B3-C-003"
+  },
+  {
+    "id": 830046, "category": "Fransız dili 8",
+    "question": "Que signifie 'apprendre' ?",
+    "options": ["Öyrənmək", "Oynamaq", "Yatmaq", "Getmək"],
+    "correctAnswer": 0,
+    "explanation": "'Apprendre' feli 'öyrənmək' (həmçinin öyrətmək) deməkdir.",
+    "difficulty": "sadə", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T04-B1-S-001"
+  },
+  {
+    "id": 830047, "category": "Fransız dili 8",
+    "question": "Combien font 'douze' ?",
+    "options": ["2", "10", "12", "20"],
+    "correctAnswer": 2,
+    "explanation": "'Douze' fransızca 12 rəqəmidir.",
+    "difficulty": "sadə", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T04-B1-S-002"
+  },
+  {
+    "id": 830048, "category": "Fransız dili 8",
+    "question": "Quelle est une bonne raison d'apprendre le français ?",
+    "options": ["Pour voyager", "Pour dormir", "Pour oublier", "Pour perdre du temps"],
+    "correctAnswer": 0,
+    "explanation": "Fransız dilini öyrənmək üçün yaxşı səbəblərdən biri səyahət etməkdir (Pour voyager).",
+    "difficulty": "sadə", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T04-B1-S-003"
+  },
+  {
+    "id": 830049, "category": "Fransız dili 8",
+    "question": "Le français est la langue de la ... ?",
+    "options": ["culture", "lune", "matériaux", "voiture"],
+    "correctAnswer": 0,
+    "explanation": "Fransız dili mədəniyyət (culture), incəsənət və ədəbiyyat dilidir.",
+    "difficulty": "sadə", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T04-B1-S-004"
+  },
+  {
+    "id": 830050, "category": "Fransız dili 8",
+    "question": "Comment dit-on 'Səbəb' en français ?",
+    "options": ["La question", "La raison", "Le livre", "La phrase"],
+    "correctAnswer": 1,
+    "explanation": "Səbəb sözü fransız dilində 'La raison' adlanır.",
+    "difficulty": "sadə", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T04-B1-S-005"
+  },
+  {
+    "id": 830051, "category": "Fransız dili 8",
+    "question": "Complétez : 'Le français est la langue des relations ... '",
+    "options": ["internationales", "national", "petit", "rapides"],
+    "correctAnswer": 0,
+    "explanation": "Fransız dili BMT, Aİ kimi təşkilatlarda istifadə olunduğu üçün o, beynəlxalq əlaqələr (relations internationales) dilidir.",
+    "difficulty": "orta", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T04-B2-O-001"
+  },
+  {
+    "id": 830052, "category": "Fransız dili 8",
+    "question": "Pour trouver un bon emploi (yaxşı iş), parler français est un ...",
+    "options": ["problème", "désavantage", "atout (üstünlük)", "danger"],
+    "correctAnswer": 2,
+    "explanation": "İş tapmaq üçün əlavə bir dil bilmək hər zaman böyük bir üstünlükdür (un atout).",
+    "difficulty": "orta", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T04-B2-O-002"
+  },
+  {
+    "id": 830053, "category": "Fransız dili 8",
+    "question": "Conjuguez : 'Je ... (vouloir) visiter Paris.'",
+    "options": ["veux", "veut", "voulons", "voulez"],
+    "correctAnswer": 0,
+    "explanation": "'Vouloir' (istəmək) feli 'Je' şəxsində 'veux' olur: Je veux.",
+    "difficulty": "orta", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T04-B2-O-003"
+  },
+  {
+    "id": 830054, "category": "Fransız dili 8",
+    "question": "Pourquoi la phrase dit 'le français est une langue pour apprendre d'autres langues' ?",
+    "options": ["Parce que le français est la première langue du monde.", "Parce que l'apprentissage du français facilite l'apprentissage d'autres langues latines (espagnol, italien...).", "Parce que le français est une langue germanique.", "C'est faux."],
+    "correctAnswer": 1,
+    "explanation": "Fransız dili latın mənşəli olduğu üçün onu bilmək ispan, italyan və s. kimi digər roman dillərini öyrənməyi asanlaşdırır.",
+    "difficulty": "orta", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T04-B2-O-004"
+  },
+  {
+    "id": 830055, "category": "Fransız dili 8",
+    "question": "Quelle est la préposition pour le but (məqsəd) devant un verbe à l'infinitif ? 'Je l'apprends ... voyager.'",
+    "options": ["de", "pour", "à", "en"],
+    "correctAnswer": 1,
+    "explanation": "Məqsəd bildirmək üçün məsdər feilin qarşısında 'pour' (üçün) sözönüsü işlənir: pour voyager.",
+    "difficulty": "orta", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T04-B2-O-005"
+  },
+  {
+    "id": 830056, "category": "Fransız dili 8",
+    "question": "Analysez cette phrase : 'Parler français ouvre les portes des universités.' Que signifie-t-elle métaphoriquement ?",
+    "options": ["Les universités n'ont pas de portes physiques.", "Connaître le français offre des opportunités d'étudier dans les grandes universités francophones.", "Il faut parler au gardien pour entrer.", "Le français casse les portes."],
+    "correctAnswer": 1,
+    "explanation": "'Qapıları açır' metaforası fransız dili bilməyin böyük universitetlərdə (məsələn Sorbonna) təhsil almaq üçün yeni fürsətlər və imkanlar yaratdığını bildirir.",
+    "difficulty": "çətin", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T04-B4-C-001"
+  },
+  {
+    "id": 830057, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Fransız dili yalnız Fransada deyil, bir çox qitədə danışılır.'",
+    "options": ["Le français est parlé seulement en France.", "Le français est parlé non seulement en France, mais aussi sur plusieurs continents.", "La France est sur plusieurs continents.", "Personne ne parle français."],
+    "correctAnswer": 1,
+    "explanation": "Yalnız deyil, həmçinin = non seulement... mais aussi. Qitə = continent.",
+    "difficulty": "çətin", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T04-B3-C-001"
+  },
+  {
+    "id": 830058, "category": "Fransız dili 8",
+    "question": "Utilisez le pronom relatif correct : 'Le français est une langue ... j'aime beaucoup.'",
+    "options": ["qui", "que", "dont", "où"],
+    "correctAnswer": 1,
+    "explanation": "Burada 'une langue' tamamlıq yerində olduğu üçün (J'aime beaucoup la langue) onu əvəz edən nisbi əvəzlik 'que' olmalıdır.",
+    "difficulty": "çətin", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T04-B3-C-002"
+  },
+  {
+    "id": 830059, "category": "Fransız dili 8",
+    "question": "Transformez au pluriel : 'C'est une bonne raison.'",
+    "options": ["Ce sont des bonnes raisons.", "C'est des bonnes raisons.", "Ces sont de bonnes raisons.", "Ce sont de bonnes raisons."],
+    "correctAnswer": 3,
+    "explanation": "'C'est' cəmdə 'Ce sont' olur. 'Une' əvəzinə 'des' olmalıdır, lakin sifət (bonnes) ismin önündə gəldiyi üçün 'des' -> 'de' şəklinə düşür. Cümlə: Ce sont de bonnes raisons.",
+    "difficulty": "çətin", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T04-B3-C-003"
+  },
+  {
+    "id": 830060, "category": "Fransız dili 8",
+    "question": "Quel est le registre (üslub) de langue utilisé dans les 12 raisons d'apprendre le français ?",
+    "options": ["Argotique (küçə dili)", "Familier (məişət dili)", "Soutenu / Standard (Ədəbi / Standart)", "Poétique (Şeir)"],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə və rəsmi məqalələrdə yazılan mətnlər standart və ya ədəbi (Soutenu/Standard) üslubda olur.",
+    "difficulty": "çətin", "topic": "Leçon 4 / Douze bonnes raisons d'apprendre le français", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T04-B4-C-002"
+  },
+  {
+    "id": 830061, "category": "Fransız dili 8",
+    "question": "Qui a écrit 'Le tour du monde en 80 jours' ?",
+    "options": ["Victor Hugo", "Jules Verne", "Alexandre Dumas", "Antoine de Saint-Exupéry"],
+    "correctAnswer": 1,
+    "explanation": "'80 günə dünya ətrafında səyahət' romanının müəllifi fransız yazıçısı Jules Verne-dir (Jül Vern).",
+    "difficulty": "sadə", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T05-B1-S-001"
+  },
+  {
+    "id": 830062, "category": "Fransız dili 8",
+    "question": "Combien de jours dure le voyage dans le livre ?",
+    "options": ["10", "40", "80", "100"],
+    "correctAnswer": 2,
+    "explanation": "Kitabın adına görə səyahət 80 (quatre-vingts) gün çəkir.",
+    "difficulty": "sadə", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T05-B1-S-002"
+  },
+  {
+    "id": 830063, "category": "Fransız dili 8",
+    "question": "Comment s'appelle le personnage principal (le gentleman anglais) ?",
+    "options": ["Phileas Fogg", "Jean Passepartout", "Jules Verne", "Inspecteur Fix"],
+    "correctAnswer": 0,
+    "explanation": "Romanın əsas qəhrəmanı, dəqiqliyi ilə seçilən ingilis centlmeni Phileas Fogg-dur.",
+    "difficulty": "sadə", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T05-B1-S-003"
+  },
+  {
+    "id": 830064, "category": "Fransız dili 8",
+    "question": "Que signifie 'le tour du monde' ?",
+    "options": ["Evə qayıtmaq", "Dünya ətrafında səyahət", "Məktəb turu", "Gəzinti"],
+    "correctAnswer": 1,
+    "explanation": "'Le tour du monde' bütün dünyanın ətrafında fırlanaraq edilən səyahət deməkdir.",
+    "difficulty": "sadə", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T05-B1-S-004"
+  },
+  {
+    "id": 830065, "category": "Fransız dili 8",
+    "question": "Quel genre littéraire est ce livre ?",
+    "options": ["Un poème", "Un roman d'aventures", "Une pièce de théâtre", "Un dictionnaire"],
+    "correctAnswer": 1,
+    "explanation": "Bu əsər macəra romanıdır (Un roman d'aventures).",
+    "difficulty": "sadə", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T05-B1-S-005"
+  },
+  {
+    "id": 830066, "category": "Fransız dili 8",
+    "question": "Qui est Jean Passepartout ?",
+    "options": ["L'ennemi de Fogg", "Le frère de Fogg", "Le domestique (nökər) français de Fogg", "Le roi d'Angleterre"],
+    "correctAnswer": 2,
+    "explanation": "Jean Passepartout Phileas Fogg-un fransız xidmətçisidir (le domestique / le serviteur).",
+    "difficulty": "orta", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T05-B2-O-001"
+  },
+  {
+    "id": 830067, "category": "Fransız dili 8",
+    "question": "Comment est décrit Phileas Fogg dans le chapitre 1 ?",
+    "options": ["Bavard et désordonné", "Très ponctuel, mystérieux et régulier (Dəqiq və sirrli)", "Pauvre et triste", "Drôle et agité"],
+    "correctAnswer": 1,
+    "explanation": "Fogg saat kimi dəqiq (ponctuel), heç kimin haqqında çox şey bilmədiyi sirrli (mystérieux) bir centlmendir.",
+    "difficulty": "orta", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T05-B2-O-002"
+  },
+  {
+    "id": 830068, "category": "Fransız dili 8",
+    "question": "Dans quelle ville habite Phileas Fogg ?",
+    "options": ["À Paris", "À Londres", "À New York", "À Berlin"],
+    "correctAnswer": 1,
+    "explanation": "Hadisələr İngiltərənin paytaxtı Londonda (À Londres) başlayır.",
+    "difficulty": "orta", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T05-B2-O-003"
+  },
+  {
+    "id": 830069, "category": "Fransız dili 8",
+    "question": "Quel est l'imparfait (Keçmiş davamedici zaman) du verbe 'avoir' pour 'il' ?",
+    "options": ["il a", "il avait", "il eut", "il aura"],
+    "correctAnswer": 1,
+    "explanation": "Nağıllarda və təsvirlərdə işlənən Imparfait zamanında 'avoir' feli 'il' üçün 'avait' (onun var idi) olur.",
+    "difficulty": "orta", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T05-B2-O-004"
+  },
+  {
+    "id": 830070, "category": "Fransız dili 8",
+    "question": "Que veut dire 'ponctuel' ?",
+    "options": ["Qui arrive toujours en retard", "Qui est très riche", "Qui est exactement à l'heure", "Qui aime voyager"],
+    "correctAnswer": 2,
+    "explanation": "'Ponctuel' (dəqiq) hər zaman tam vaxtında, gecikmədən gələn/edən deməkdir.",
+    "difficulty": "orta", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T05-B2-O-005"
+  },
+  {
+    "id": 830071, "category": "Fransız dili 8",
+    "question": "Pourquoi Jules Verne est-il considéré comme un visionnaire (gələcəyi görən) dans ses romans ?",
+    "options": ["Parce qu'il voyageait beaucoup en réalité.", "Parce qu'il a imaginé et décrit des inventions scientifiques et technologiques (comme les sous-marins, le voyage sur la lune) bien avant leur création réelle.", "Parce qu'il était magicien.", "Parce qu'il écrivait des livres d'histoire ancienne."],
+    "correctAnswer": 1,
+    "explanation": "Jül Vern öz romanlarında öz dövrü üçün fantastik hesab olunan texnologiyaları (sualtı qayıq, aya uçuş) xəyal edib yazmışdı ki, bunlar sonradan real oldu.",
+    "difficulty": "çətin", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T05-B4-C-001"
+  },
+  {
+    "id": 830072, "category": "Fransız dili 8",
+    "question": "Mettez la phrase au passé simple (Keçmiş tarixi zaman, tez-tez romanlarda istifadə olunur) : 'Phileas Fogg (engager) Passepartout.'",
+    "options": ["engagea", "engage", "a engagé", "engageait"],
+    "correctAnswer": 0,
+    "explanation": "Ədəbiyyat dili olan Passé simple-da 1-ci qrup 'engager' feli 3-cü şəxsin təkində 'engagea' olur. (o, Passepartout-nu işə götürdü).",
+    "difficulty": "çətin", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T05-B3-C-001"
+  },
+  {
+    "id": 830073, "category": "Fransız dili 8",
+    "question": "Contraste des caractères : Quelle est la principale différence entre Fogg et Passepartout ?",
+    "options": ["Fogg est pauvre, Passepartout est riche.", "Fogg est très calme, froid et mathématique, tandis que Passepartout est expressif, vivant et cherche la tranquillité.", "Il n'y a aucune différence.", "Ils sont tous les deux anglais."],
+    "correctAnswer": 1,
+    "explanation": "Fogg çox sakit, soyuq, maşın kimi dəqiqdir. Passepartout isə canlı, emosional fransızdır və yorulub sakit həyat axtardığı üçün Fogg-un yanına işə girir.",
+    "difficulty": "çətin", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T05-B4-C-002"
+  },
+  {
+    "id": 830074, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Fogg hər gün eyni saatda evdən çıxırdı.'",
+    "options": ["Fogg sortait de la maison à la même heure tous les jours.", "Fogg sort de la maison demain.", "Fogg est sorti hier à une heure.", "Fogg ne sort pas de la maison."],
+    "correctAnswer": 0,
+    "explanation": "Keçmişdə təkrarlanan hərəkət olduğu üçün Imparfait (sortait) istifadə edilir. Eyni saatda - à la même heure, hər gün - tous les jours.",
+    "difficulty": "çətin", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T05-B3-C-002"
+  },
+  {
+    "id": 830075, "category": "Fransız dili 8",
+    "question": "Dans le contexte du livre, le mot 'pari' (mərc) est central. Que parie Phileas Fogg ?",
+    "options": ["Qu'il peut manger 80 pommes.", "Qu'il peut faire le tour du monde en 80 jours ou moins.", "Qu'il est le plus riche de Londres.", "Qu'il va acheter un train."],
+    "correctAnswer": 1,
+    "explanation": "Romanın əsas süjeti Fogg-un klubdakı dostları ilə 'Dünya ətrafında 80 günə dövr edə biləcəyi' barədə mərcə girməsidir (Parier = mərc etmək).",
+    "difficulty": "çətin", "topic": "Leçon 5 / Le tour du monde en 80 jours. Jules Verne. Chapitre 1", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T05-B4-C-003"
+  },
+  {
+    "id": 830076, "category": "Fransız dili 8",
+    "question": "Révision: Conjuguez le verbe 'aller' à la 1ère personne du pluriel (Nous).",
+    "options": ["Nous allez", "Nous allons", "Nous vont", "Nous va"],
+    "correctAnswer": 1,
+    "explanation": "'Aller' feli 'Nous' şəxsində 'allons' olur.",
+    "difficulty": "sadə", "topic": "Révision", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T06-B1-S-001"
+  },
+  {
+    "id": 830077, "category": "Fransız dili 8",
+    "question": "Révision: Comment dit-on 'Gecəniz xeyir' ?",
+    "options": ["Bonjour", "Bonsoir", "Bonne nuit", "Salut"],
+    "correctAnswer": 2,
+    "explanation": "Yatmazdan əvvəl deyilən 'Gecəniz xeyir' (və ya şirin yuxular) 'Bonne nuit' adlanır.",
+    "difficulty": "sadə", "topic": "Révision", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T06-B1-S-002"
+  },
+  {
+    "id": 830078, "category": "Fransız dili 8",
+    "question": "Quel est le pluriel du mot 'le livre' ?",
+    "options": ["la livre", "les livre", "les livres", "le livres"],
+    "correctAnswer": 2,
+    "explanation": "Artikl 'les' olur və ismin sonuna cəm şəkilçisi '-s' əlavə edilir: les livres.",
+    "difficulty": "sadə", "topic": "Révision", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T06-B1-S-003"
+  },
+  {
+    "id": 830079, "category": "Fransız dili 8",
+    "question": "Quel mois vient après 'Octobre' ?",
+    "options": ["Septembre", "Décembre", "Novembre", "Janvier"],
+    "correctAnswer": 2,
+    "explanation": "Oktyabrdan sonra Noyabr (Novembre) gəlir.",
+    "difficulty": "sadə", "topic": "Révision", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T06-B1-S-004"
+  },
+  {
+    "id": 830080, "category": "Fransız dili 8",
+    "question": "Choisissez le mot correct : 'Il fait ...' (Soyuqdur)",
+    "options": ["chaud", "froid", "soleil", "beau"],
+    "correctAnswer": 1,
+    "explanation": "Hava soyuqdur demək üçün 'Il fait froid' deyilir.",
+    "difficulty": "sadə", "topic": "Révision", "bloomLevel": "bilmə",
+    "passport_id": "08-FRA-T06-B1-S-005"
+  },
+  {
+    "id": 830081, "category": "Fransız dili 8",
+    "question": "Complétez avec l'article partitif : 'Je bois ... eau.'",
+    "options": ["de la", "du", "de l'", "des"],
+    "correctAnswer": 2,
+    "explanation": "'Eau' (su) sayılmayan isimdir və saitlə başladığı üçün hissəvi artikl 'de l'' olur.",
+    "difficulty": "orta", "topic": "Révision", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T06-B2-O-001"
+  },
+  {
+    "id": 830082, "category": "Fransız dili 8",
+    "question": "Lequel est un adjectif possessif féminin singulier ?",
+    "options": ["Mon", "Ma", "Mes", "Son"],
+    "correctAnswer": 1,
+    "explanation": "Mənsubiyyət əvəzliklərində qadın cinsi tək hal 'Ma' (Mənim), 'Ta', 'Sa' olur. 'Mon' kişi cinsidir.",
+    "difficulty": "orta", "topic": "Révision", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T06-B2-O-002"
+  },
+  {
+    "id": 830083, "category": "Fransız dili 8",
+    "question": "Mettez au féminin : 'Il est grand et sportif.' -> Elle est ...",
+    "options": ["grande et sportif", "grand et sportive", "grande et sportive", "grands et sportifs"],
+    "correctAnswer": 2,
+    "explanation": "Sifətlər qadın cinsində '-e' qəbul edir (grande). Sonu '-f' ilə bitənlər isə '-ve' olur (sportive).",
+    "difficulty": "orta", "topic": "Révision", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T06-B2-O-003"
+  },
+  {
+    "id": 830084, "category": "Fransız dili 8",
+    "question": "Choisissez la bonne réponse à la question 'Quelle heure est-il ?' (14:30)",
+    "options": ["Il est deux heures.", "Il est quatorze heures et demie.", "Il est deux heures et le quart.", "Il est trois heures moins le quart."],
+    "correctAnswer": 1,
+    "explanation": "14:30 rəsmi olaraq 'quatorze heures' (14 saat) və 'demie' (yarım) kimi oxunur.",
+    "difficulty": "orta", "topic": "Révision", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T06-B2-O-004"
+  },
+  {
+    "id": 830085, "category": "Fransız dili 8",
+    "question": "Où achetez-vous du pain ?",
+    "options": ["À la pharmacie", "À la boulangerie", "À la librairie", "Au garage"],
+    "correctAnswer": 1,
+    "explanation": "Çörək (pain) çörəkçi dükanından, yəni 'à la boulangerie'-dən alınır.",
+    "difficulty": "orta", "topic": "Révision", "bloomLevel": "anlama",
+    "passport_id": "08-FRA-T06-B2-O-005"
+  },
+  {
+    "id": 830086, "category": "Fransız dili 8",
+    "question": "Réécrivez la phrase en utilisant le pronom complément d'objet direct (COD) : 'Je lis le livre.'",
+    "options": ["Je le lis.", "Je la lis.", "Je les lis.", "Je lui lis."],
+    "correctAnswer": 0,
+    "explanation": "'Le livre' kişi cinsli tək obyektdir (vasitəsiz tamamlıq). Onu əvəz edən əvəzlik 'le'-dir və feldən əvvəl gəlir: Je le lis (Mən onu oxuyuram).",
+    "difficulty": "çətin", "topic": "Révision", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T06-B3-C-001"
+  },
+  {
+    "id": 830087, "category": "Fransız dili 8",
+    "question": "Mettez la phrase au passé composé : 'Elles (partir) en vacances.'",
+    "options": ["Elles ont parti en vacances.", "Elles sont parti en vacances.", "Elles sont parties en vacances.", "Elles partent en vacances."],
+    "correctAnswer": 2,
+    "explanation": "Hərəkət bildirən 'partir' feli 'être' (sont) ilə hallanır. Mübtəda 'Elles' (qadın cinsi, cəm) olduğu üçün feli sifət '-es' qəbul edir: parties.",
+    "difficulty": "çətin", "topic": "Révision", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T06-B3-C-002"
+  },
+  {
+    "id": 830088, "category": "Fransız dili 8",
+    "question": "Quelle est la différence d'usage entre 'C'est' et 'Il est' ?",
+    "options": ["'C'est' s'utilise devant un nom avec déterminant (C'est un médecin), 'Il est' devant un adjectif ou un métier sans déterminant (Il est médecin).", "Il n'y a pas de différence.", "'C'est' est pour les objets, 'Il est' pour les animaux.", "'C'est' est pluriel, 'Il est' est singulier."],
+    "correctAnswer": 0,
+    "explanation": "'C'est' artiklla birlikdə ismin (C'est mon ami, C'est un livre), 'Il est' isə sifətin və ya artiklsız peşənin qarşısında (Il est grand, Il est professeur) işlənir.",
+    "difficulty": "çətin", "topic": "Révision", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T06-B4-C-001"
+  },
+  {
+    "id": 830089, "category": "Fransız dili 8",
+    "question": "Trouvez l'erreur dans la phrase : 'Je vais au Paris demain.'",
+    "options": ["vais devrait être va", "au devrait être à", "demain devrait être hier", "Il n'y a pas d'erreur."],
+    "correctAnswer": 1,
+    "explanation": "Şəhər adlarının (Paris, Bakou, Londres) qarşısında həmişə 'à' sözönüsü işlənir, 'au' yox. Doğru: 'Je vais à Paris'.",
+    "difficulty": "çətin", "topic": "Révision", "bloomLevel": "təhlil",
+    "passport_id": "08-FRA-T06-B4-C-002"
+  },
+  {
+    "id": 830090, "category": "Fransız dili 8",
+    "question": "Traduisez : 'Külək əsir və yağış yağır.'",
+    "options": ["Il fait du vent et il pleut.", "Il est vent et il est pluie.", "Le vent fait et la pluie tombe.", "Il y a soleil et il neige."],
+    "correctAnswer": 0,
+    "explanation": "Külək əsir = Il fait du vent (və ya Il y a du vent). Yağış yağır = Il pleut.",
+    "difficulty": "çətin", "topic": "Révision", "bloomLevel": "tətbiq",
+    "passport_id": "08-FRA-T06-B3-C-003"
+  }
+]

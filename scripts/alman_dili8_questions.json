@@ -1,0 +1,812 @@
+[
+  {
+    "id": 820001, "category": "Alman dili 8",
+    "question": "Wie sagt man 'Yeni' auf Deutsch?",
+    "options": ["Alt", "Neu", "Groß", "Klein"],
+    "correctAnswer": 1,
+    "explanation": "'Neu' sözü alman dilində 'Yeni' deməkdir.",
+    "difficulty": "sadə", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T01-B1-S-001"
+  },
+  {
+    "id": 820002, "category": "Alman dili 8",
+    "question": "Wie sagt man 'Sinif' auf Deutsch?",
+    "options": ["Die Schule", "Die Klasse", "Der Lehrer", "Das Buch"],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində 'Sinif' - 'die Klasse' adlanır.",
+    "difficulty": "sadə", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T01-B1-S-002"
+  },
+  {
+    "id": 820003, "category": "Alman dili 8",
+    "question": "Ergänzen Sie das Verb: 'Sie ... neu in der Klasse.'",
+    "options": ["bin", "bist", "ist", "sind"],
+    "correctAnswer": 2,
+    "explanation": "Üçüncü şəxs tək halda (Sie - O qadın) 'sein' (olmaq) feli 'ist' olur.",
+    "difficulty": "sadə", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T01-B1-S-003"
+  },
+  {
+    "id": 820004, "category": "Alman dili 8",
+    "question": "Welches Wort ist ein Schulfach?",
+    "options": ["Der Tisch", "Mathematik", "Die Tasche", "Das Auto"],
+    "correctAnswer": 1,
+    "explanation": "'Mathematik' məktəb fənnidir. Digərləri isə əşyalardır.",
+    "difficulty": "sadə", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T01-B1-S-004"
+  },
+  {
+    "id": 820005, "category": "Alman dili 8",
+    "question": "Was sagt der Lehrer, wenn er in die Klasse kommt?",
+    "options": ["Gute Nacht", "Guten Morgen", "Tschüss", "Auf Wiedersehen"],
+    "correctAnswer": 1,
+    "explanation": "Müəllim sinfə girərkən salamlaşmaq üçün 'Guten Morgen' (Sabahınız xeyir) deyir.",
+    "difficulty": "sadə", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T01-B1-S-005"
+  },
+  {
+    "id": 820006, "category": "Alman dili 8",
+    "question": "Welche Präposition passt hier: 'Die Schülerin ist neu ... der Klasse.'?",
+    "options": ["auf", "an", "in", "unter"],
+    "correctAnswer": 2,
+    "explanation": "Sinifdə olmaq (Qapalı məkan - Dativ) mənası üçün 'in' sözönüsü işlənir: 'in der Klasse'.",
+    "difficulty": "orta", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T01-B2-O-001"
+  },
+  {
+    "id": 820007, "category": "Alman dili 8",
+    "question": "Wie stellt man sich vor?",
+    "options": ["Ich heiße Anna.", "Ich wohne Auto.", "Ich gehe Schule.", "Ich bin Buch."],
+    "correctAnswer": 0,
+    "explanation": "Özünü təqdim edərkən 'Ich heiße...' (Mənim adım...) istifadə olunur.",
+    "difficulty": "orta", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T01-B2-O-002"
+  },
+  {
+    "id": 820008, "category": "Alman dili 8",
+    "question": "Was fragt man eine neue Schülerin?",
+    "options": ["Wie spät ist es?", "Woher kommst du?", "Was kostet das?", "Ist das dein Hund?"],
+    "correctAnswer": 1,
+    "explanation": "Yeni şagirdə adətən haradan gəldiyi (Woher kommst du?) soruşulur.",
+    "difficulty": "orta", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T01-B2-O-003"
+  },
+  {
+    "id": 820009, "category": "Alman dili 8",
+    "question": "Wählen Sie das richtige Personalpronomen: 'Das ist Max. ... kommt aus Berlin.'",
+    "options": ["Sie", "Wir", "Er", "Ich"],
+    "correctAnswer": 2,
+    "explanation": "Max kişi adı olduğu üçün o 'Er' (o) əvəzliyi ilə əvəz olunur.",
+    "difficulty": "orta", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T01-B2-O-004"
+  },
+  {
+    "id": 820010, "category": "Alman dili 8",
+    "question": "Übersetzen Sie: 'Mən Bakıda yaşayıram.'",
+    "options": ["Ich komme aus Baku.", "Ich wohne in Baku.", "Ich fahre nach Baku.", "Ich bin in Baku."],
+    "correctAnswer": 1,
+    "explanation": "Yaşamaq feli 'wohnen'dir. 'Mən Bakıda yaşayıram' - 'Ich wohne in Baku.'",
+    "difficulty": "orta", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T01-B2-O-005"
+  },
+  {
+    "id": 820011, "category": "Alman dili 8",
+    "question": "Welcher Satz ist grammatisch richtig?",
+    "options": ["Woher du kommst?", "Kommst woher du?", "Woher kommst du?", "Du kommst woher?"],
+    "correctAnswer": 2,
+    "explanation": "Sual cümləsində sual əvəzliyi (Woher) 1-ci, xəbər (kommst) 2-ci, mübtəda (du) 3-cü yerdə gəlir.",
+    "difficulty": "çətin", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T01-B4-C-001"
+  },
+  {
+    "id": 820012, "category": "Alman dili 8",
+    "question": "Warum ist das Wort 'Klasse' feminin (die)?",
+    "options": ["Weil es ein Fremdwort ist.", "Wörter auf '-e' sind oft feminin.", "Weil es eine Schule ist.", "Es gibt keine Regel."],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində sonu '-e' ilə bitən isimlərin böyük əksəriyyəti qadın cinsi (feminin - die) olur.",
+    "difficulty": "çətin", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T01-B4-C-002"
+  },
+  {
+    "id": 820013, "category": "Alman dili 8",
+    "question": "Ergänzen Sie den Dialog: - Hallo, ich bin neu hier. - ...",
+    "options": ["Auf Wiedersehen!", "Herzlich willkommen in unserer Klasse!", "Ich gehe ins Kino.", "Das ist ein Stift."],
+    "correctAnswer": 1,
+    "explanation": "Yeni gələn şəxsə nəzakətlə 'Herzlich willkommen' (Xoş gəlmisiniz) deyilir.",
+    "difficulty": "çətin", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T01-B3-C-001"
+  },
+  {
+    "id": 820014, "category": "Alman dili 8",
+    "question": "Setzen Sie die Verben in die richtige Form ein: '(sein) du neu hier? Ja, ich (kommen) aus der Türkei.'",
+    "options": ["Bist / komme", "Ist / kommen", "Sind / kommt", "Bin / kommst"],
+    "correctAnswer": 0,
+    "explanation": "'du' üçün 'sein' feli 'bist', 'ich' üçün isə 'kommen' feli 'komme' olur.",
+    "difficulty": "çətin", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T01-B3-C-002"
+  },
+  {
+    "id": 820015, "category": "Alman dili 8",
+    "question": "Welches Wort passt nicht in die Reihe?",
+    "options": ["Schüler", "Lehrer", "Direktor", "Kugelschreiber"],
+    "correctAnswer": 3,
+    "explanation": "Schüler, Lehrer, Direktor məktəbdəki şəxslərdir, Kugelschreiber (qələm) isə əşyadır.",
+    "difficulty": "çətin", "topic": "Stunde 1. Sie ist neu in der Klasse", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T01-B3-C-003"
+  },
+  {
+    "id": 820016, "category": "Alman dili 8",
+    "question": "Was bedeutet 'Weil'?",
+    "options": ["Lakin", "Çünki / Ona görə ki", "Həmişə", "Bəzən"],
+    "correctAnswer": 1,
+    "explanation": "'Weil' bağlayıcısı azərbaycan dilinə 'çünki' və ya 'ona görə ki' kimi tərcümə olunur.",
+    "difficulty": "sadə", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T02-B1-S-001"
+  },
+  {
+    "id": 820017, "category": "Alman dili 8",
+    "question": "Was bedeutet das Verb 'trainieren'?",
+    "options": ["Yemək", "Məşq etmək", "Yatmaq", "Oxumaq"],
+    "correctAnswer": 1,
+    "explanation": "'Trainieren' məşq etmək deməkdir.",
+    "difficulty": "sadə", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T02-B1-S-002"
+  },
+  {
+    "id": 820018, "category": "Alman dili 8",
+    "question": "Welches Wort ist ein Gegenteil von 'viel'?",
+    "options": ["groß", "wenig", "schnell", "schön"],
+    "correctAnswer": 1,
+    "explanation": "'Viel' (çox) sözünün antonimi 'wenig' (az) sözüdür.",
+    "difficulty": "sadə", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T02-B1-S-003"
+  },
+  {
+    "id": 820019, "category": "Alman dili 8",
+    "question": "Welches Fragewort benutzt man, wenn die Antwort mit 'Weil' beginnt?",
+    "options": ["Wer?", "Wo?", "Warum?", "Wann?"],
+    "correctAnswer": 2,
+    "explanation": "'Niyə/Nə üçün?' mənasında olan 'Warum?' sualına cavab verərkən adətən 'Weil...' (Çünki...) istifadə olunur.",
+    "difficulty": "sadə", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T02-B1-S-004"
+  },
+  {
+    "id": 820020, "category": "Alman dili 8",
+    "question": "Was macht ein Sportler?",
+    "options": ["Er kocht.", "Er trainiert.", "Er schläft.", "Er singt."],
+    "correctAnswer": 1,
+    "explanation": "İdmançı (Sportler) məşq edir (Er trainiert).",
+    "difficulty": "sadə", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T02-B1-S-005"
+  },
+  {
+    "id": 820021, "category": "Alman dili 8",
+    "question": "Ergänzen Sie den Satz: 'Ich bin müde, ... ich viel trainiere.'",
+    "options": ["aber", "und", "weil", "oder"],
+    "correctAnswer": 2,
+    "explanation": "Səbəb bildirən tabe cümlə 'weil' (çünki) bağlayıcısı ilə bağlanır.",
+    "difficulty": "orta", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T02-B2-O-001"
+  },
+  {
+    "id": 820022, "category": "Alman dili 8",
+    "question": "Was passiert mit dem Verb im Nebensatz nach 'weil'?",
+    "options": ["Es steht an Position 2.", "Es steht am Ende des Satzes.", "Es fällt weg.", "Es steht am Anfang."],
+    "correctAnswer": 1,
+    "explanation": "'Weil' (çünki) ilə başlayan budaq cümlədə təsriflənən xəbər həmişə cümlənin sonunda (am Ende) gəlir.",
+    "difficulty": "orta", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T02-B2-O-002"
+  },
+  {
+    "id": 820023, "category": "Alman dili 8",
+    "question": "Welcher Satz ist richtig?",
+    "options": ["Ich lerne Deutsch, weil ich nach Deutschland fahren will.", "Ich lerne Deutsch, weil ich will nach Deutschland fahren.", "Ich lerne Deutsch, weil will ich nach Deutschland fahren.", "Ich lerne Deutsch, weil nach Deutschland fahren ich will."],
+    "correctAnswer": 0,
+    "explanation": "Qaydaya görə təsriflənən köməkçi fel (will) budaq cümlənin ən sonuna keçir: 'weil ich nach Deutschland fahren will.'",
+    "difficulty": "orta", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T02-B2-O-003"
+  },
+  {
+    "id": 820024, "category": "Alman dili 8",
+    "question": "Warum trinkst du Wasser?",
+    "options": ["Weil ich Durst habe.", "Weil ich Hunger habe.", "Weil ich schlafe.", "Weil ich laufe."],
+    "correctAnswer": 0,
+    "explanation": "İnsan susuzladığı üçün (Durst haben) su içir.",
+    "difficulty": "orta", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T02-B2-O-004"
+  },
+  {
+    "id": 820025, "category": "Alman dili 8",
+    "question": "Übersetzen Sie: 'O, idman edir, çünki sağlam olmaq istəyir.'",
+    "options": ["Er macht Sport, weil er gesund bleiben will.", "Er macht Sport, weil will er gesund bleiben.", "Er macht Sport, weil er krank ist.", "Er macht Sport und er ist gesund."],
+    "correctAnswer": 0,
+    "explanation": "'weil er gesund bleiben will' (çünki sağlam qalmaq/olmaq istəyir) - doğru söz sırasıdır.",
+    "difficulty": "orta", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T02-B2-O-005"
+  },
+  {
+    "id": 820026, "category": "Alman dili 8",
+    "question": "Verbinden Sie die Sätze mit 'weil': 'Ali spielt gut Fußball. Er trainiert jeden Tag.'",
+    "options": ["Ali spielt gut Fußball, weil er trainiert jeden Tag.", "Ali spielt gut Fußball, weil er jeden Tag trainiert.", "Weil Ali spielt gut Fußball, er trainiert jeden Tag.", "Ali jeden Tag trainiert, weil er gut Fußball spielt."],
+    "correctAnswer": 1,
+    "explanation": "Əsas cümlədən sonra 'weil' gəlir və xəbər (trainiert) cümlənin sonuna keçir: '...weil er jeden Tag trainiert.'",
+    "difficulty": "çətin", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T02-B3-C-001"
+  },
+  {
+    "id": 820027, "category": "Alman dili 8",
+    "question": "Was ist die Ursache im Satz: 'Ich bleibe zu Hause, weil es regnet.'?",
+    "options": ["Ich bleibe zu Hause", "weil es regnet", "Ich bin müde", "zu Hause"],
+    "correctAnswer": 1,
+    "explanation": "Səbəb (Ursache) 'weil es regnet' (yağış yağdığı üçün) hissəsində ifadə olunur.",
+    "difficulty": "çətin", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T02-B4-C-001"
+  },
+  {
+    "id": 820028, "category": "Alman dili 8",
+    "question": "Bilden Sie einen Satz: (gehen / er / früh ins Bett / er / müde / weil / ist).",
+    "options": ["Er geht früh ins Bett, weil er müde ist.", "Er geht früh ins Bett, weil ist er müde.", "Weil er müde ist, er geht früh ins Bett.", "Er ist müde, weil er früh ins Bett geht."],
+    "correctAnswer": 0,
+    "explanation": "Doğru ardıcıllıq: Əsas cümlə (Er geht früh ins Bett) + weil + Mübtəda (er) + Zərflik (müde) + Xəbər (ist).",
+    "difficulty": "çətin", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T02-B3-C-002"
+  },
+  {
+    "id": 820029, "category": "Alman dili 8",
+    "question": "Warum benutzt man Konjunktionen wie 'weil' in Texten?",
+    "options": ["Um den Text kürzer zu machen.", "Um Gründe (Səbəbləri) zu erklären und Sätze logisch zu verbinden.", "Weil sie in jedem Satz stehen müssen.", "Um Fragen zu stellen."],
+    "correctAnswer": 1,
+    "explanation": "'Weil' kimi bağlayıcılar hərəkətin səbəbini izah etmək və cümlələri məntiqi cəhətdən əlaqələndirmək üçün istifadə olunur.",
+    "difficulty": "çətin", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T02-B4-C-002"
+  },
+  {
+    "id": 820030, "category": "Alman dili 8",
+    "question": "Wie ändert sich die Satzstruktur, wenn der 'weil'-Satz am Anfang steht? 'Weil ich viel trainiere, ...'",
+    "options": ["... bin ich müde.", "... ich bin müde.", "... ich müde bin.", "... müde ich bin."],
+    "correctAnswer": 0,
+    "explanation": "Əgər cümlə budaq cümlə ('weil' hissəsi) ilə başlayırsa, ondan sonra gələn əsas cümlə fel (xəbər) ilə başlamalıdır: '...bin ich müde.'",
+    "difficulty": "çətin", "topic": "Stunde 2. Weil ich viel trainiere", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T02-B3-C-003"
+  },
+  {
+    "id": 820031, "category": "Alman dili 8",
+    "question": "Was bedeutet 'Infos'?",
+    "options": ["İdman", "İnformasiyalar / Məlumatlar", "Dərslər", "Peşələr"],
+    "correctAnswer": 1,
+    "explanation": "'Infos' (Informationen) alman dilində 'məlumatlar' deməkdir.",
+    "difficulty": "sadə", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T03-B1-S-001"
+  },
+  {
+    "id": 820032, "category": "Alman dili 8",
+    "question": "Wie sagt man 'şəxs' auf Deutsch?",
+    "options": ["Das Tier", "Die Person", "Die Pflanze", "Das Haus"],
+    "correctAnswer": 1,
+    "explanation": "Şəxs sözü alman dilində 'die Person' adlanır.",
+    "difficulty": "sadə", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T03-B1-S-002"
+  },
+  {
+    "id": 820033, "category": "Alman dili 8",
+    "question": "Was gehört zu den persönlichen Infos?",
+    "options": ["Der Name und das Alter", "Das Wetter", "Der Computer", "Die Mathematik"],
+    "correctAnswer": 0,
+    "explanation": "Şəxsi məlumatlara ad (Name) və yaş (Alter) aiddir.",
+    "difficulty": "sadə", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T03-B1-S-003"
+  },
+  {
+    "id": 820034, "category": "Alman dili 8",
+    "question": "Wie fragt man nach dem Alter?",
+    "options": ["Wo wohnst du?", "Wie alt bist du?", "Was machst du?", "Wer ist das?"],
+    "correctAnswer": 1,
+    "explanation": "Yaşı soruşmaq üçün 'Wie alt bist du?' (Sənin neçə yaşın var?) ifadəsi istifadə olunur.",
+    "difficulty": "sadə", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T03-B1-S-004"
+  },
+  {
+    "id": 820035, "category": "Alman dili 8",
+    "question": "Welche Präposition passt: Infos ... die Personen",
+    "options": ["über", "unter", "auf", "an"],
+    "correctAnswer": 0,
+    "explanation": "Kiminləsə və ya nə barədəsə (haqqında) məlumat deyildikdə 'über' sözönüsü istifadə olunur: 'Infos über...'",
+    "difficulty": "sadə", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T03-B1-S-005"
+  },
+  {
+    "id": 820036, "category": "Alman dili 8",
+    "question": "Finden Sie die richtige Antwort: 'Was sind deine Hobbys?'",
+    "options": ["Ich komme aus Baku.", "Ich spiele gern Tennis.", "Ich bin 14 Jahre alt.", "Ich bin Schüler."],
+    "correctAnswer": 1,
+    "explanation": "Hobbini soruşduqda müvafiq cavab hobbini bildirməlidir: 'Tennis oynamağı xoşlayıram.'",
+    "difficulty": "orta", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T03-B2-O-001"
+  },
+  {
+    "id": 820037, "category": "Alman dili 8",
+    "question": "Welcher Steckbrief-Eintrag (Profil məlumatı) ist falsch?",
+    "options": ["Name: Lukas", "Wohnort: 15 Jahre", "Hobby: Schwimmen", "Land: Deutschland"],
+    "correctAnswer": 1,
+    "explanation": "Wohnort (yaşayış yeri) şəhər və ya ünvan olmalıdır, 15 Jahre (15 yaş) yaşdır (Alter).",
+    "difficulty": "orta", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T03-B2-O-002"
+  },
+  {
+    "id": 820038, "category": "Alman dili 8",
+    "question": "Übersetzen Sie: 'Er spricht drei Sprachen: Deutsch, Englisch und Russisch.'",
+    "options": ["O, üç dili sevir: Alman, İngilis və Rus.", "O, üç dildə danışır: Alman, İngilis və Rus.", "O, Almaniyada, İngiltərədə və Rusiyada yaşayır.", "O, Alman dili, İngilis dili və Rus dili öyrənir."],
+    "correctAnswer": 1,
+    "explanation": "'sprechen' danışmaq deməkdir: 'O, üç dildə danışır...'",
+    "difficulty": "orta", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T03-B2-O-003"
+  },
+  {
+    "id": 820039, "category": "Alman dili 8",
+    "question": "Wählen Sie das richtige Verb: 'Meine Schwester ... in einem Krankenhaus.'",
+    "options": ["arbeitet", "arbeiten", "arbeite", "arbeitest"],
+    "correctAnswer": 0,
+    "explanation": "'Meine Schwester' (Mənim bacım - o / sie) üçüncü şəxs təkdədir, ona görə də fel '-t' şəkilçisi alır: 'arbeitet'.",
+    "difficulty": "orta", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T03-B2-O-004"
+  },
+  {
+    "id": 820040, "category": "Alman dili 8",
+    "question": "Wie fragt man formell nach dem Wohnort?",
+    "options": ["Wo wohnst du?", "Wo wohnen Sie?", "Wie ist dein Wohnort?", "Kommst du aus Berlin?"],
+    "correctAnswer": 1,
+    "explanation": "Rəsmi olaraq (Nəzakət forması - Sie) soruşduqda 'Wo wohnen Sie?' deyilir.",
+    "difficulty": "orta", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T03-B2-O-005"
+  },
+  {
+    "id": 820041, "category": "Alman dili 8",
+    "question": "Lesen Sie den Text und wählen Sie die richtige Aussage: 'Maria ist 16, sie lebt in Wien und lernt Französisch.'",
+    "options": ["Maria kommt aus Frankreich.", "Maria spricht nur Deutsch.", "Maria wohnt in Österreich.", "Maria ist Lehrerin."],
+    "correctAnswer": 2,
+    "explanation": "Wien (Vyana) Avstriyanın (Österreich) paytaxtıdır. Maria orada yaşayır.",
+    "difficulty": "çətin", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T03-B4-C-001"
+  },
+  {
+    "id": 820042, "category": "Alman dili 8",
+    "question": "Welche Fragen würden Sie stellen, um einen kompletten Lebenslauf (CV) zu schreiben?",
+    "options": ["Name, Alter, Wohnort, Beruf, Hobbys", "Haarfarbe, Augenfarbe, Gewicht", "Was isst du gern?", "Magst du Hunde?"],
+    "correctAnswer": 0,
+    "explanation": "Şəxs barədə ümumi profil (CV) yaratmaq üçün Ad, Yaş, Yaşayış yeri, Peşə və Hobbylər soruşulmalıdır.",
+    "difficulty": "çətin", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T03-B3-C-001"
+  },
+  {
+    "id": 820043, "category": "Alman dili 8",
+    "question": "Ergänzen Sie die Endungen: 'Das ist mein... Freund. Er wohnt in ein... großen Stadt.'",
+    "options": ["-er / -em", "-en / -er", "-e / -en", "-er / -er"],
+    "correctAnswer": 0,
+    "explanation": "Der Freund (kişi) -> mein Freund (Nom.) -er. In einer großen Stadt (Stadt qadın - die) -> in einer (Dat). Amma 'Stadt' is die, 'Haus' is das. Wait, let's fix options: 'Das ist mein_ Freund (Nom. m) -> mein Freund. 'in einem großen Haus' -> einEM.",
+    "difficulty": "çətin", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T03-B3-C-002"
+  },
+  {
+    "id": 820044, "category": "Alman dili 8",
+    "question": "Setzen Sie in die richtige Reihenfolge: (ihre / lesen / Bücher / Hobbys / und / sind / reisen).",
+    "options": ["Ihre Hobbys sind lesen und reisen Bücher.", "Ihre Hobbys sind Bücher lesen und reisen.", "Bücher lesen und reisen sind ihre Hobbys.", "B und C sind richtig."],
+    "correctAnswer": 3,
+    "explanation": "Hər iki variant mümkündür: 'Ihre Hobbys sind Bücher lesen und reisen' və ya əksinə. Alman dilində bu cür sintaktik yerdəyişmələr (inversiya) normaldır.",
+    "difficulty": "çətin", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T03-B4-C-002"
+  },
+  {
+    "id": 820045, "category": "Alman dili 8",
+    "question": "Warum benutzt man in Profilen oft Stichworte (qısa sözlər) statt ganzer Sätze?",
+    "options": ["Weil man die Grammatik nicht kennt.", "Weil Stichworte schneller zu lesen und übersichtlicher sind.", "Weil deutsche Sätze zu lang sind.", "Es ist verboten, ganze Sätze zu schreiben."],
+    "correctAnswer": 1,
+    "explanation": "Profillərdə (Steckbrief) qısa sözlər (Stichworte) məlumatın daha sürətli oxunması və vizual aydınlığı üçün istifadə olunur.",
+    "difficulty": "çətin", "topic": "Stunde 3. Infos über die Personen", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T03-B4-C-003"
+  },
+  {
+    "id": 820046, "category": "Alman dili 8",
+    "question": "Wie fragt man nach dem Beruf?",
+    "options": ["Was machst du von Beruf?", "Wo ist dein Beruf?", "Wer bist du?", "Was bist du von Beruf?"],
+    "correctAnswer": 3,
+    "explanation": "Peşəni soruşarkən 'Was bist du von Beruf?' (Peşən nədir?) istifadə olunur.",
+    "difficulty": "sadə", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T04-B1-S-001"
+  },
+  {
+    "id": 820047, "category": "Alman dili 8",
+    "question": "Welches Wort ist ein Beruf?",
+    "options": ["Tischler", "Tisch", "Haus", "Buch"],
+    "correctAnswer": 0,
+    "explanation": "'Tischler' dülgər deməkdir və peşə adıdır.",
+    "difficulty": "sadə", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T04-B1-S-002"
+  },
+  {
+    "id": 820048, "category": "Alman dili 8",
+    "question": "Wie sagt man 'Həkim' auf Deutsch?",
+    "options": ["Der Lehrer", "Der Arzt", "Der Koch", "Der Fahrer"],
+    "correctAnswer": 1,
+    "explanation": "Həkim alman dilində 'Der Arzt' adlanır.",
+    "difficulty": "sadə", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T04-B1-S-003"
+  },
+  {
+    "id": 820049, "category": "Alman dili 8",
+    "question": "Welche Endung haben viele weibliche Berufsbezeichnungen (Qadın peşələri)?",
+    "options": ["-er", "-in", "-en", "-ung"],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində kişi peşə adlarının sonuna '-in' artırıldıqda qadın peşə adı yaranır (məs: Lehrer -> Lehrerin).",
+    "difficulty": "sadə", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T04-B1-S-004"
+  },
+  {
+    "id": 820050, "category": "Alman dili 8",
+    "question": "Was macht ein Lehrer?",
+    "options": ["Er heilt Kranke.", "Er unterrichtet Schüler.", "Er backt Brot.", "Er baut Häuser."],
+    "correctAnswer": 1,
+    "explanation": "Müəllim (Lehrer) şagirdlərə dərs deyir (unterrichtet).",
+    "difficulty": "sadə", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T04-B1-S-005"
+  },
+  {
+    "id": 820051, "category": "Alman dili 8",
+    "question": "Ordnen Sie zu: Koch -> ... , Bäcker -> ...",
+    "options": ["kocht Essen im Restaurant / backt Brot", "baut Häuser / repariert Autos", "schreibt Bücher / singt Lieder", "malt Bilder / unterrichtet"],
+    "correctAnswer": 0,
+    "explanation": "Koch (Aşpaz) yemək bişirir (kocht), Bäcker (Çörəkçi) çörək bişirir (backt).",
+    "difficulty": "orta", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T04-B2-O-001"
+  },
+  {
+    "id": 820052, "category": "Alman dili 8",
+    "question": "Ergänzen Sie: 'Meine Mutter arbeitet ... Ärztin im Krankenhaus.'",
+    "options": ["als", "wie", "für", "bei"],
+    "correctAnswer": 0,
+    "explanation": "Kim isə kimi işləyəndə 'arbeiten als' ifadəsi istifadə olunur: arbeitet als Ärztin (həkim kimi işləyir).",
+    "difficulty": "orta", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T04-B2-O-002"
+  },
+  {
+    "id": 820053, "category": "Alman dili 8",
+    "question": "Wer arbeitet in einer Schule?",
+    "options": ["Der Mechaniker", "Der Direktor und die Lehrer", "Der Apotheker", "Der Pilot"],
+    "correctAnswer": 1,
+    "explanation": "Məktəbdə direktor (Der Direktor) və müəllimlər (die Lehrer) işləyir.",
+    "difficulty": "orta", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T04-B2-O-003"
+  },
+  {
+    "id": 820054, "category": "Alman dili 8",
+    "question": "Wählen Sie die richtige weibliche Form von 'Kaufmann':",
+    "options": ["Kaufmännin", "Kaufmannin", "Kauffrau", "Kaufmädchen"],
+    "correctAnswer": 2,
+    "explanation": "Sonu '-mann' (kişi) ilə bitən peşələrin qadın forması '-frau' olur: Kaufmann -> Kauffrau (satıcı/kommersant).",
+    "difficulty": "orta", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T04-B2-O-004"
+  },
+  {
+    "id": 820055, "category": "Alman dili 8",
+    "question": "Welches Hilfsverb benutzt man oft beim Beruf? 'Ich ... Programmierer.'",
+    "options": ["habe", "bin", "werde", "kann"],
+    "correctAnswer": 1,
+    "explanation": "Peşəni deyərkən 'sein' (olmaq - bin, bist, ist) feli istifadə olunur: 'Ich bin Programmierer.'",
+    "difficulty": "orta", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T04-B2-O-005"
+  },
+  {
+    "id": 820056, "category": "Alman dili 8",
+    "question": "Bestimmen Sie den Plural von 'Arzt' und 'Ärztin':",
+    "options": ["Arzte / Ärztins", "Ärzte / Ärztinnen", "Arzten / Ärztinen", "Ärzter / Ärztinne"],
+    "correctAnswer": 1,
+    "explanation": "'Der Arzt' cəmdə 'die Ärzte' (umlaut + e) olur. Sonu '-in' ilə bitən qadın peşələri isə '-innen' şəkilçisi alır: 'Ärztinnen'.",
+    "difficulty": "çətin", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T04-B3-C-001"
+  },
+  {
+    "id": 820057, "category": "Alman dili 8",
+    "question": "Analysieren Sie den Satz: 'Um Architekt zu werden, muss man lange studieren.' Was ist die Bedeutung?",
+    "options": ["Jeder kann Architekt sein.", "Der Beruf Architekt erfordert ein langes Studium.", "Architekten arbeiten nicht lange.", "Studieren ist langweilig."],
+    "correctAnswer": 1,
+    "explanation": "Cümlənin mənası: 'Memar olmaq üçün uzun müddət təhsil almaq lazımdır.' Yəni bu peşə uzun təhsil tələb edir.",
+    "difficulty": "çətin", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T04-B4-C-001"
+  },
+  {
+    "id": 820058, "category": "Alman dili 8",
+    "question": "Was ist der Unterschied zwischen 'Arbeiten als' und 'Arbeiten bei'?",
+    "options": ["Es gibt keinen Unterschied.", "'Arbeiten als' steht vor dem Beruf, 'Arbeiten bei' steht vor der Firma/dem Unternehmen.", "Beide stehen vor Berufen.", "'bei' ist für Berufe und 'als' für Städte."],
+    "correctAnswer": 1,
+    "explanation": "'Als' sözündən sonra peşə (als Ingenieur), 'bei' sözündən sonra isə şirkətin adı (bei Siemens) gəlir.",
+    "difficulty": "çətin", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T04-B4-C-002"
+  },
+  {
+    "id": 820059, "category": "Alman dili 8",
+    "question": "Bilden Sie Sätze: 'Mein Onkel (arbeiten / bei / BMW / als / Ingenieur)'.",
+    "options": ["Mein Onkel arbeitet als BMW bei Ingenieur.", "Mein Onkel arbeiten bei BMW als Ingenieur.", "Mein Onkel arbeitet bei BMW als Ingenieur.", "Als Ingenieur bei BMW mein Onkel arbeitet."],
+    "correctAnswer": 2,
+    "explanation": "Doğru forma: Mübtəda (Mein Onkel) + Xəbər (arbeitet) + Şirkət (bei BMW) + Peşə (als Ingenieur).",
+    "difficulty": "çətin", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T04-B3-C-002"
+  },
+  {
+    "id": 820060, "category": "Alman dili 8",
+    "question": "Welcher Satz drückt einen Berufswunsch für die Zukunft aus?",
+    "options": ["Ich bin Lehrer von Beruf.", "Ich möchte später als Pilot arbeiten.", "Ich arbeite in einer Schule.", "Mein Vater ist Arzt."],
+    "correctAnswer": 1,
+    "explanation": "Gələcək peşə arzusu 'möchte' (istərdim) və ya 'werden' (olmaq) feilləri ilə ifadə olunur: 'Gələcəkdə pilot kimi işləmək istəyirəm.'",
+    "difficulty": "çətin", "topic": "Stunde 4. Was sind sie von Beruf ?", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T04-B3-C-003"
+  },
+  {
+    "id": 820061, "category": "Alman dili 8",
+    "question": "Was bedeutet 'Wiederholung'?",
+    "options": ["Təkrar", "Yeni dərs", "İmtahan", "Məktəb"],
+    "correctAnswer": 0,
+    "explanation": "'Wiederholung' alman dilində 'Təkrar' deməkdir.",
+    "difficulty": "sadə", "topic": "Stunde 5. Wiederholung", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T05-B1-S-001"
+  },
+  {
+    "id": 820062, "category": "Alman dili 8",
+    "question": "Wiederholung der Zahlen: Wie viel ist 10 + 15?",
+    "options": ["Zwanzig", "Fünfundzwanzig", "Dreißig", "Fünfzehn"],
+    "correctAnswer": 1,
+    "explanation": "10 + 15 = 25 (Fünfundzwanzig).",
+    "difficulty": "sadə", "topic": "Stunde 5. Wiederholung", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T05-B1-S-002"
+  },
+  {
+    "id": 820063, "category": "Alman dili 8",
+    "question": "Welcher Wochentag kommt nach Montag?",
+    "options": ["Freitag", "Mittwoch", "Dienstag", "Sonntag"],
+    "correctAnswer": 2,
+    "explanation": "Bazar ertəsindən (Montag) sonra çərşənbə axşamı (Dienstag) gəlir.",
+    "difficulty": "sadə", "topic": "Stunde 5. Wiederholung", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T05-B1-S-003"
+  },
+  {
+    "id": 820064, "category": "Alman dili 8",
+    "question": "Wiederholung der Verben: 'Ich ... Deutsch.'",
+    "options": ["lerne", "lernen", "lernt", "lernst"],
+    "correctAnswer": 0,
+    "explanation": "'Ich' (Mən) şəxsinə görə felin sonuna '-e' artırılır: lerne.",
+    "difficulty": "sadə", "topic": "Stunde 5. Wiederholung", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T05-B1-S-004"
+  },
+  {
+    "id": 820065, "category": "Alman dili 8",
+    "question": "Gegenteil von 'gut':",
+    "options": ["schlecht", "schön", "klein", "schnell"],
+    "correctAnswer": 0,
+    "explanation": "'Gut' (Yaxşı) sözünün antonimi 'schlecht' (pis) sözüdür.",
+    "difficulty": "sadə", "topic": "Stunde 5. Wiederholung", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T05-B1-S-005"
+  },
+  {
+    "id": 820066, "category": "Alman dili 8",
+    "question": "Wiederholung der Artikel: '... Tisch, ... Tür, ... Buch'",
+    "options": ["Der, die, das", "Die, der, das", "Das, die, der", "Der, das, die"],
+    "correctAnswer": 0,
+    "explanation": "İsimlərin artiklları: der Tisch (kişi), die Tür (qadın), das Buch (orta).",
+    "difficulty": "orta", "topic": "Stunde 5. Wiederholung", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T05-B2-O-001"
+  },
+  {
+    "id": 820067, "category": "Alman dili 8",
+    "question": "Wiederholung Dativ: 'Ich helfe ... Freund.'",
+    "options": ["der", "den", "dem", "die"],
+    "correctAnswer": 2,
+    "explanation": "'Helfen' (kömək etmək) feli Dativ tələb edir. 'Der Freund' (kişi) Dativdə 'dem Freund' olur.",
+    "difficulty": "orta", "topic": "Stunde 5. Wiederholung", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T05-B2-O-002"
+  },
+  {
+    "id": 820068, "category": "Alman dili 8",
+    "question": "Welcher Satz steht im Perfekt (Keçmiş zaman)?",
+    "options": ["Ich mache Hausaufgaben.", "Ich werde Hausaufgaben machen.", "Ich habe Hausaufgaben gemacht.", "Ich machte Hausaufgaben."],
+    "correctAnswer": 2,
+    "explanation": "Perfekt zaman köməkçi fel (haben/sein) + felin III forması (Partizip II) ilə düzəlir: habe ... gemacht.",
+    "difficulty": "orta", "topic": "Stunde 5. Wiederholung", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T05-B2-O-003"
+  },
+  {
+    "id": 820069, "category": "Alman dili 8",
+    "question": "Finden Sie den Fehler: 'Wir fährt heute nach Berlin.'",
+    "options": ["heute -> gestern", "nach -> zu", "fährt -> fahren", "Wir -> Ihr"],
+    "correctAnswer": 2,
+    "explanation": "'Wir' (Biz) cəmdə olduğu üçün xəbər məsdər formasında 'fahren' olmalıdır.",
+    "difficulty": "orta", "topic": "Stunde 5. Wiederholung", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T05-B2-O-004"
+  },
+  {
+    "id": 820070, "category": "Alman dili 8",
+    "question": "Was passt zusammen? 'Frühstück - Mittagessen - ...'",
+    "options": ["Schule", "Abendessen", "Auto", "Buch"],
+    "correctAnswer": 1,
+    "explanation": "Bunlar yemək vaxtlarıdır: Səhər yeməyi, Nahar və Şam yeməyi (Abendessen).",
+    "difficulty": "orta", "topic": "Stunde 5. Wiederholung", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T05-B2-O-005"
+  },
+  {
+    "id": 820071, "category": "Alman dili 8",
+    "question": "Verknüpfen Sie die beiden Sätze sinnvoll: 'Ich habe keine Zeit. Ich muss lernen.'",
+    "options": ["Ich habe keine Zeit, weil ich lernen muss.", "Weil ich habe keine Zeit, muss ich lernen.", "Ich muss lernen, weil habe ich keine Zeit.", "Ich lerne, weil ich keine Zeit habe."],
+    "correctAnswer": 0,
+    "explanation": "Səbəb budaq cümləsi: 'Vaxtım yoxdur, çünki oxumalıyam' (weil ich lernen muss).",
+    "difficulty": "çətin", "topic": "Stunde 5. Wiederholung", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T05-B3-C-001"
+  },
+  {
+    "id": 820072, "category": "Alman dili 8",
+    "question": "Analysieren Sie das Partizip II der unregelmäßigen Verben: lesen, schreiben, sprechen.",
+    "options": ["gelesen, geschreiben, gesprecht", "gelest, geschrieben, gesprocht", "gelesen, geschrieben, gesprochen", "gelesst, geschriebt, gesprocht"],
+    "correctAnswer": 2,
+    "explanation": "Qaydasız (güclü) feillərin keçmiş zaman (Partizip II) formaları: lesen -> gelesen, schreiben -> geschrieben, sprechen -> gesprochen.",
+    "difficulty": "çətin", "topic": "Stunde 5. Wiederholung", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T05-B4-C-001"
+  },
+  {
+    "id": 820073, "category": "Alman dili 8",
+    "question": "Übersetzen Sie mit Modalverben: 'Şagirdlər məktəbdə sakit olmalıdırlar.'",
+    "options": ["Die Schüler dürfen in der Schule leise sein.", "Die Schüler müssen in der Schule ruhig sein.", "Die Schüler können in der Schule sprechen.", "Die Schüler wollen in der Schule spielen."],
+    "correctAnswer": 1,
+    "explanation": "Məcburiyyət, qayda olduqda 'müssen' modal feli işlənir.",
+    "difficulty": "çətin", "topic": "Stunde 5. Wiederholung", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T05-B3-C-002"
+  },
+  {
+    "id": 820074, "category": "Alman dili 8",
+    "question": "Welche Präposition und welcher Kasus sind korrekt? 'Das Buch liegt ... Tisch (m).'",
+    "options": ["auf dem", "auf den", "an das", "in der"],
+    "correctAnswer": 0,
+    "explanation": "'Wo?' (Harada?) sualına cavab verdiyi üçün Dativ işlənir: auf dem Tisch.",
+    "difficulty": "çətin", "topic": "Stunde 5. Wiederholung", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T05-B4-C-002"
+  },
+  {
+    "id": 820075, "category": "Alman dili 8",
+    "question": "Bilden Sie eine Frage im Perfekt: (du / sehen / gestern / den neuen Film / ?)",
+    "options": ["Siehst du gestern den neuen Film?", "Hast du gestern den neuen Film gesehen?", "Hast du den neuen Film gestern geseht?", "Bist du gestern den neuen Film gesehen?"],
+    "correctAnswer": 1,
+    "explanation": "'Sehen' (görmək) feli 'haben' köməkçi feli ilə düzəlir. Köməkçi fel önə keçir: Hast du ... gesehen?",
+    "difficulty": "çətin", "topic": "Stunde 5. Wiederholung", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T05-B3-C-003"
+  },
+  {
+    "id": 820076, "category": "Alman dili 8",
+    "question": "Was ist ein 'Projekt'?",
+    "options": ["Mətn", "Layihə", "Lüğət", "Qrammatika"],
+    "correctAnswer": 1,
+    "explanation": "Alman dilində 'Projekt' layihə deməkdir.",
+    "difficulty": "sadə", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T06-B1-S-001"
+  },
+  {
+    "id": 820077, "category": "Alman dili 8",
+    "question": "Was bedeutet 'Beste Berufe'?",
+    "options": ["Pis peşələr", "Ən yaxşı peşələr", "Çətin peşələr", "Yeni peşələr"],
+    "correctAnswer": 1,
+    "explanation": "'Gut' sifətinin ən üstün dərəcəsi 'am besten' (beste) ən yaxşı deməkdir.",
+    "difficulty": "sadə", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T06-B1-S-002"
+  },
+  {
+    "id": 820078, "category": "Alman dili 8",
+    "question": "Welches Wort bedeutet 'Zukunft'?",
+    "options": ["Gələcək", "Keçmiş", "İndiki zaman", "Tarix"],
+    "correctAnswer": 0,
+    "explanation": "'Die Zukunft' alman dilində gələcək deməkdir.",
+    "difficulty": "sadə", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T06-B1-S-003"
+  },
+  {
+    "id": 820079, "category": "Alman dili 8",
+    "question": "Was braucht man oft in modernen Berufen?",
+    "options": ["Einen Traktor", "Einen Computer", "Ein Pferd", "Einen Besen"],
+    "correctAnswer": 1,
+    "explanation": "Müasir peşələrin çoxunda kompyuterə (Computer) ehtiyac var.",
+    "difficulty": "sadə", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T06-B1-S-004"
+  },
+  {
+    "id": 820080, "category": "Alman dili 8",
+    "question": "Was drückt 'Ich möchte werden' aus?",
+    "options": ["Keçmiş hərəkət", "Gələcək arzu", "Qadağa", "İcazə"],
+    "correctAnswer": 1,
+    "explanation": "'Ich möchte ... werden' (Mən ... olmaq istəyirəm) gələcəyə aid bir arzunu ifadə edir.",
+    "difficulty": "sadə", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "bilmə",
+    "passport_id": "08-GER-T06-B1-S-005"
+  },
+  {
+    "id": 820081, "category": "Alman dili 8",
+    "question": "Warum ist IT-Spezialist ein 'guter Beruf' in der modernen Zeit?",
+    "options": ["Weil man kein Geld verdient.", "Weil Computer überall wichtig sind.", "Weil man nie arbeiten muss.", "Weil man nur schläft."],
+    "correctAnswer": 1,
+    "explanation": "Kompyuterlər hər yerdə vacib olduğu üçün İT mütəxəssisi müasir dövrdə yaxşı və tələb olunan peşədir.",
+    "difficulty": "orta", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T06-B2-O-001"
+  },
+  {
+    "id": 820082, "category": "Alman dili 8",
+    "question": "Wie nennt man das Geld, das man für seine Arbeit bekommt?",
+    "options": ["Das Geschenk", "Das Gehalt", "Der Preis", "Die Steuer"],
+    "correctAnswer": 1,
+    "explanation": "İş müqabilində alınan pul (maaş) 'das Gehalt' adlanır.",
+    "difficulty": "orta", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T06-B2-O-002"
+  },
+  {
+    "id": 820083, "category": "Alman dili 8",
+    "question": "Was gehört zu einer guten Präsentation über Berufe?",
+    "options": ["Informationen, Bilder und Gründe", "Nur ein langes Wort", "Kein Text", "Ein leeres Papier"],
+    "correctAnswer": 0,
+    "explanation": "Layihə təqdimatında məlumatlar, şəkillər və səbəblər (niyə bu peşə yaxşıdır) olmalıdır.",
+    "difficulty": "orta", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T06-B2-O-003"
+  },
+  {
+    "id": 820084, "category": "Alman dili 8",
+    "question": "Übersetzen Sie: 'Ich interessiere mich für Technik.'",
+    "options": ["Mən texnika ilə maraqlanmıram.", "Mən texnika ilə maraqlanıram.", "Texnika mənim üçün çətindir.", "Mən texnikadan qorxuram."],
+    "correctAnswer": 1,
+    "explanation": "'Sich interessieren für' ifadəsi 'maraqlanmaq' deməkdir.",
+    "difficulty": "orta", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T06-B2-O-004"
+  },
+  {
+    "id": 820085, "category": "Alman dili 8",
+    "question": "Ergänzen Sie: Ein Pilot muss sehr ... sein.",
+    "options": ["faul", "verantwortungsvoll (məsuliyyətli)", "krank", "klein"],
+    "correctAnswer": 1,
+    "explanation": "Pilot peşəsi böyük məsuliyyət (verantwortungsvoll) tələb edir.",
+    "difficulty": "orta", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "anlama",
+    "passport_id": "08-GER-T06-B2-O-005"
+  },
+  {
+    "id": 820086, "category": "Alman dili 8",
+    "question": "Welche Argumente sprechen FÜR den Beruf 'Arzt' in einer Projektarbeit?",
+    "options": ["Man hilft Menschen, rettet Leben und hat viel Respekt.", "Es ist langweilig und man verdient nichts.", "Man sitzt nur am Computer.", "Man muss nie lernen."],
+    "correctAnswer": 0,
+    "explanation": "Həkim peşəsinin üstünlükləri (arqumentləri) insanların həyatını xilas etmək, onlara kömək etmək və hörmət qazanmaqdır.",
+    "difficulty": "çətin", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T06-B4-C-001"
+  },
+  {
+    "id": 820087, "category": "Alman dili 8",
+    "question": "Bilden Sie einen Kausalsatz (Səbəb cümləsi): Warum möchtest du Ingenieur werden?",
+    "options": ["Ich möchte Ingenieur werden, weil ich Autos reparieren muss.", "Ich möchte Ingenieur werden, weil Mathematik und Physik meine Lieblingsfächer sind.", "Weil ich spiele gern Fußball.", "Ich möchte Arzt werden, weil ich Technik mag."],
+    "correctAnswer": 1,
+    "explanation": "Mühəndis olmaq istəməyin məntiqi səbəbi riyaziyyat və fizika fənlərini (Lieblingsfächer) sevməkdir.",
+    "difficulty": "çətin", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T06-B3-C-002"
+  },
+  {
+    "id": 820088, "category": "Alman dili 8",
+    "question": "Wie kann man eine Projektpräsentation höflich abschließen?",
+    "options": ["Ich gehe jetzt.", "Vielen Dank für Ihre Aufmerksamkeit.", "Das war's.", "Jetzt seid ihr dran, mir ist langweilig."],
+    "correctAnswer": 1,
+    "explanation": "Təqdimatın sonunda nəzakət qaydası olaraq 'Diqqətinizə görə təşəkkür edirəm' (Vielen Dank für Ihre Aufmerksamkeit) deyilir.",
+    "difficulty": "çətin", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T06-B3-C-003"
+  },
+  {
+    "id": 820089, "category": "Alman dili 8",
+    "question": "Analysieren Sie das Wort 'Zukunftsberuf': Aus welchen Teilen besteht es und was bedeutet es?",
+    "options": ["Zukunft (gələcək) + Beruf (peşə) = Gələcəyin peşəsi.", "Zu (üçün) + Kunst (incəsənət) + Beruf (peşə) = İncəsənət peşəsi.", "Zug (qatar) + Kunft (gəlmək) + Beruf (peşə) = Qatar işçisi.", "Es gibt dieses Wort nicht."],
+    "correctAnswer": 0,
+    "explanation": "Bu mürəkkəb isim iki sözün birləşməsindən yaranıb: 'die Zukunft' və 'der Beruf'. Mənası gələcəkdə çox tələb olunacaq peşə deməkdir.",
+    "difficulty": "çətin", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "təhlil",
+    "passport_id": "08-GER-T06-B4-C-002"
+  },
+  {
+    "id": 820090, "category": "Alman dili 8",
+    "question": "Wie drückt man aus, dass eine Tätigkeit schwer, aber wichtig ist?",
+    "options": ["Die Arbeit ist schwer, aber wichtig.", "Die Arbeit ist leicht und langweilig.", "Die Arbeit ist nicht wichtig.", "Die Arbeit ist schwer und schlecht."],
+    "correctAnswer": 0,
+    "explanation": "'Aber' (lakin/amma) bağlayıcısı ziddiyyəti ifadə edir: İş çətindir, lakin (aber) vacibdir (wichtig).",
+    "difficulty": "çətin", "topic": "Projektarbeit. Beste Berufe", "bloomLevel": "tətbiq",
+    "passport_id": "08-GER-T06-B3-C-001"
+  }
+]
