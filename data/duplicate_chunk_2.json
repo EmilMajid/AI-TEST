@@ -1,0 +1,668 @@
+[
+  {
+    "id": "08-004-048-06-çətin-15-3483",
+    "passport_id": "08-004-048-06-çətin-15-3483",
+    "question": "Müşahidəçi ağacın hündürlüyünü tapmaq üçün ağacdan 8 m aralıda yerə güzgü qoydu. Özü isə güzgüdən 2 m aralıda elə dayandı ki, güzgüdə ağacın təpəsini gördü. Müşahidəçinin göz səviyyəsinə qədər boyu 1,6 m olarsa, ağacın hündürlüyünü hesablayın. (Düşmə bucağı qayıtma bucağına bərabərdir).",
+    "options": [
+      "12,8 m",
+      "6,4 m",
+      "3,2 m",
+      "10 m"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Düzbucaqlı üçbucaqların oxşarlığına görə (yerlə ağac/adam düz bucaq əmələ gətirir və güzgüyə düşmə/qayıtma bucaqları bərabərdir), uyğun katetlərin nisbəti bərabərdir. Yəni H_ağac / 1.6 = 8 / 2. Buradan H_ağac = 4 * 1.6 = 6.4 m alınır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların oxşarlığı: Üçbucaqların oxşarlıq əlamətləri",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Sahəsinə görə (iri,\nböyük, kiçik və\nmikro dövlətlər)"
+  },
+  {
+    "id": "08-004-49-3-1-05-1072",
+    "passport_id": "08-004-49-3-1-05-1072",
+    "question": "Düzbucaqlı üçbucaqda düz bucaq təpəsindən çəkilmiş hündürlük 8 sm-dir. Bu hündürlüyün hipotenuzdan ayırdığı parçalardan biri 4 sm olarsa, digər parçanın uzunluğunu tapın.",
+    "options": [
+      "2 sm",
+      "16 sm",
+      "32 sm",
+      "12 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hündürlük hipotenuzu ayırdığı parçaların həndəsi ortasıdır: h² = m × n. Şərtə görə 8² = 4 × n, yəni 64 = 4n, buradan n = 16 sm alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Düzbucaqlı üçbucaqların oxşarlığı",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-49-4-2-10-01f2",
+    "passport_id": "08-004-49-4-2-10-01f2",
+    "question": "Düzbucaqlı üçbucağın katetləri 15 sm və 20 sm-dir. Düz bucaq təpəsindən çəkilmiş hündürlüyün hipotenuzdan ayırdığı parçaların uzunluqlarını tapın.",
+    "options": [
+      "9 sm və 16 sm",
+      "10 sm və 15 sm",
+      "8 sm və 17 sm",
+      "12 sm və 13 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hipotenuz c = √(15² + 20²) = √(225 + 400) = √625 = 25 sm. Katetlərin proyeksiyaları həndəsi orta düsturundan tapılır: m = a² / c = 15² / 25 = 225 / 25 = 9 sm; n = b² / c = 20² / 25 = 400 / 25 = 16 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Düzbucaqlı üçbucaqların oxşarlığı",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-09-anlama-sadə-01-1d32",
+    "passport_id": "08-004-09-anlama-sadə-01-1d32",
+    "question": "$a - b = 5$ olarsa, aşağıdakı müqayisələrdən hansı doğrudur?",
+    "options": [
+      "$a = b$",
+      "$a \\le b$",
+      "$a > b$",
+      "$a < b$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bərabərsizliyin xassəsinə görə $a - b > 0$ olarsa, deməli $a > b$-dir. Burada fərq 5, yəni müsbət olduğu üçün $a > b$ alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-09-təhlil-çətin-03-659a",
+    "passport_id": "08-004-09-təhlil-çətin-03-659a",
+    "question": "$a$-nın istənilən qiymətində $a^2 - 4a$ ifadəsinin $2a - 10$ ifadəsindən böyük olduğunu isbat etmək üçün onların fərqini tapsaq hansı nəticə alınar?",
+    "options": [
+      "$(a - 2)^2 - 4 > 0$",
+      "$(a + 3)^2 + 1 > 0$",
+      "$(a - 4)^2 + 2 > 0$",
+      "$(a - 3)^2 + 1 > 0$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İki ifadəni müqayisə etmək üçün onların fərqinə baxırıq: $(a^2 - 4a) - (2a - 10) = a^2 - 6a + 10$. Bu ifadəni tam kvadrata ayırsaq: $a^2 - 6a + 9 + 1 = (a - 3)^2 + 1$ alınır. $(a - 3)^2 \\ge 0$ olduğu üçün onun üzərinə 1 gəldikdə nəticə həmişə müsbət olur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-09-tətbiq-çətin-05-e4b1",
+    "passport_id": "08-004-09-tətbiq-çətin-05-e4b1",
+    "question": "$-4 < x \\le 3$ bərabərsizliyi verilmişdir. $2 - 3x$ ifadəsinin ala biləcəyi ən böyük tam qiyməti tapın.",
+    "options": [
+      "13",
+      "-7",
+      "14",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bərabərsizliyin hər iki tərəfini $-3$-ə vursaq (işarələr əksinə dəyişir): $12 > -3x \\ge -9$, yəni $-9 \\le -3x < 12$. Sonra hər tərəfə 2 əlavə etsək: $-7 \\le 2 - 3x < 14$. İfadənin ala biləcəyi ən böyük tam qiymət 14-dən kiçik ən böyük tam ədəd olan 13-dür.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-09-3-3-13-d843",
+    "passport_id": "08-004-09-3-3-13-d843",
+    "question": "c-nin hansı qiymətlərində x^2 - 2x + c = 0 tənliyinin həqiqi kökü yoxdur?",
+    "options": [
+      "c < 1",
+      "c >= 1",
+      "c <= 1",
+      "c > 1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Kvadrat tənliyin həqiqi kökünün olmaması üçün diskriminantı (D) sıfırdan kiçik olmalıdır. D = (-2)^2 - 4*1*c = 4 - 4c. D < 0 yəni 4 - 4c < 0 bərabərsizliyini həll etsək, 4c > 4 => c > 1 alarıq.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklər: Ümumiləşdirici tapşırıqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Nümunədə verilmiş sxemə uyğun olaraq coğrafiyanın digər\nfənlərlə ümumi tədqiqat obyektlərinə aid misallar göstərin. Bu\nfənlərin verilən tədqiqat obyektinin hansı xüsusiyyətlərini\nöyrəndiyini qeyd edin. Uyğunluğu müəyyən edin:\nI.Konus\nproyeksiyaları\nII."
+  },
+  {
+    "id": "08-004-11-1-01-02-bf5d",
+    "passport_id": "08-004-11-1-01-02-bf5d",
+    "question": "Səpələnmə diaqramında kəmiyyətlərdən birinin qiyməti artdıqca digərinin qiyməti də qanunauyğun şəkildə artırsa, bu qarşılıqlı əlaqə necə adlanır?",
+    "options": [
+      "Mənfi korrelyasiya",
+      "Müsbət korrelyasiya",
+      "Sıfır korrelyasiya",
+      "Tərs asılılıq"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kəmiyyətlərdən birinin qiymətinin artması digərinin də artması ilə müşayiət olunursa, bu əlaqə müsbət korrelyasiya adlanır. Mənfi korrelyasiyada isə biri artdıqda digəri azalır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "vəinformasiya\nsözlərinin leksik\nmənalarını müəyyənləşdirin.\nTəbiətdə və cəmiyyətdə bizi əhatə edən obyektlər, hadisələr,\nonların xassələri, qarşılıqlı münasibətləri haqqında\nxəbərlər yığımı olub onlara dair bilikləri çoxaltmaq məqsədi\ndaşıyır. vəməmulat\nsözlərinin mənalarını\nfərqləndirin.\n17.\nÇeşni\nvənöv\nsözləri sinonim hesab edilə bilərmi?\nNiyə?\n18.\nMətndən (səh. 166-168) düzəltmə sözləri seçib onlan mənşəyinə\ngörə fərqləndirin.\n19.\nMətndə (səh. 166-167) tünd şriftlə verilmiş cümlənin sxemi\naşağıdakılardan hansına\nuyğundur?\nA)B)C)D)E)20.\nMətndə (səh. 168) dırnaq işarələrinin düzgün işlənməsi hansı\nzəruriyyətdən irəli gəlir?\nFikrinizi əsaslandırın.\n21.\nMətndə fərqləndirilmiş cümlələri (səh. 168) bir cümlə şəklində\nifadə edin. Sizcə, bu tipli cümlələrin nitqdə hansı əhəmiyyəti\nvardır?\n22.\nMətndə (səh. 166-168) hansı abzaslar arasında əlaqə yaratmaq\nüçün əlavə cümlələrə ehtiyac vardır? Həmin cümlələri yazın.\n23.\nQəzet, jurnal və ya internet səhifələrindən xalça mövzusunda\nyazılmış hər hansı bir mətn seçin.\nMətnin dili və üslubu üzərində iş aparın. yoxdur.\n3950\n25450\n34900\n40300\nTank\n2800\n4750\n24700\n24000\n29000\nABŞ və SSRİ-də 1942-ci ildə hərbi istehsalın Almaniyadan neçə\ndəfə çox artdığını müəyyənləşdirin. Sizcə, hərbi istehsalın\nartmasının müharibədə dönüşün yaranması ilə nə əlaqəsi var?\nHOLOKOST\nMüharibə illərində Avropada nasistlər tərəfindən yəhudilərə\nqarşı soyqırımı həyata keçirildi. Təxmini hesablamalara görə 6\nmilyona yaxın yəhudi qətl edilmiş, insanların üzərində qorxu"
+  },
+  {
+    "id": "08-004-11-04-03-05-3c29",
+    "passport_id": "08-004-11-04-03-05-3c29",
+    "question": "İki eyni oyun zəri eyni anda atılır. Düşən xallar cəminin 8 olması ehtimalını tapın.",
+    "options": [
+      "1/9",
+      "5/36",
+      "1/6",
+      "1/12"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İki zər atıldıqda bütün mümkün halların sayı 6 * 6 = 36-dır. Düşən xallar cəminin 8 olduğu hallar (əlverişli hallar) bunlardır: (2,6), (3,5), (4,4), (5,3), (6,2). Cəmi 5 belə hal var. Deməli, tələb olunan hadisənin ehtimalı 5/36-ya bərabərdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Ehtimalın hesablanması\nMümkün halların sayı\nBir çox məsələlərdə, məsələn, iki və ya daha çox sayda zərin birlikdə atılması,\nmetal pul ilə zərin birlikdə atılması kimi məsələlərdə mümkün hallar və əlverişli\nhallar sayını tapmaq üçün müxtəlif kombinasiyalara baxıb variantları saymaq\nlazım gəlir. Müxtəlif variantların sayını: 1) şaxələnmə diaqramından, 2) siyahı tutmadan, 3) cədvəldən: 4) vurma qaydasından istifadə etməklə tapmaq olar.\nVurma prinsipi: a elementini ? üsulla seçmək və hər bir belə seçimə qarşı ? elementini y? üsulla seçmək mümkündürsə, (a,5) cütünü p - m üsulla seçmək olar.\nBu qayda üç və daha çox elementin seçildiyi halda da doğrudur.\nNümunə 1. Cədvəl qurmaqla. ·\nBir zər və bir metal pul birlikdə atıldıqda müm- 11213141516\nkün hadisələrin sayı: 12 hadisə. · IR İ2Rİ3R İ4Rİ 5Rİ 6R\nVurma prinsipinə görə: metal pulla 2 hadisənin ·\n(m “ 2), zərlə 6 hadisənin ( — 6) baş verməsi\nix 12X 13X1l4X15X16X\nMümkün halların sayı: 2.6 — 12 X XXX\nNümunə 2. Şaxələnmə diaqramı qurmaqla. X <R XXR\nÜç metal pulu atdıqda mümkün hadisələrin sayı: $ X R <X XRX\nVurma prinsipinə görə: Hər bir metal pulla 2 hadisə /ğ XRR\nmümkündür: R X ·XR ğğğ\nMümkün hall 12225\nümkün halların sayı 8 Rz X RRX\n— RRR\n@ 1) Şəkildəki çarxların hər birini bir dəfə fırlatdıqda\nmümkün hadisələrin sayını tapın.\n2) Oxlardan birinin ulduz şəkli, digərinin isə 5 rəqəmi üzərində dayanması ehtimalını hesablayın.\n11 >> Vurma prinsipindən istifadə et- MP3 musiqi mərkəzi\nməklə musiqi mərkəzinin müm- Yaddaş İ 8 GB, 12 GB, 16 "
+  },
+  {
+    "id": "08-004-11-03-01-02-c568",
+    "passport_id": "08-004-11-03-01-02-c568",
+    "question": "Metal pul 40 dəfə atılmış və 15 dəfə xəritə üzü düşmüşdür. Təcrübənin nəticələrinə əsasən, rəqəm üzünün düşməsinin təcrübi ehtimalını tapın.",
+    "options": [
+      "5/13",
+      "3/8",
+      "5/8",
+      "1/2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mümkün sınaqların sayı 40-dır. Rəqəm üzünün düşməsi hallarının sayı: 40 - 15 = 25. Təcrübi ehtimal = Əlverişli halların sayı / Sınaqların sayı = 25/40 = 5/8.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Ehtimalın hesablanması",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "r=80m\n-?s-? = 0 →\n= 0\n= 5\n= 18\nm/san\n= 10\n= 30\nm/san\nΔ-? Δ\n-?ΔΔ-?ΔΔ-?ΔΔΔΔ....\n....\n....\n....\nUçuş zolağının hansı hissəsində təyyarənin sürət dəyişməsi daha yeyindir?\nSürətin dəyişmə yeyinliyinin fiziki mahiyyəti nədir və onu bilmək nə dərəcədə vacibdir?\n● Düzxətli hərəkətdə bərabər zaman fasilələrində müxtəlif yerdəyişmələr icra edən\nmaddi nöqtənin hərəkəti düzxətli dəyişənsürətli hərəkət adlanır.\nDəyişənsürətli hərəkətdə sürət sabit qiyməti ilə xarakterizə oluna bilmir. Belə hərəkətdə\nyaorta sürət\nadlanan sürətdən istifadə edilir.\nOrta sürət.\n● Dəyişənsürətli hərəkət edən maddi nöqtənin trayektoriyanın verilən hissəsindəki orta sürəti, onun bu\nhissəsindəki yerdəyişməsinin həmin yerdəyişməyə sərf etdiyi zamana nisbətinə bərabərdir.\n(1.7)\n● Dəyişənsürətli hərəkət edən maddi nöqtənin yola görə orta sürəti gedilən ümumi yolun bu yolu getməyə\nsərf etdiyi zamana nisbətinə bərabərdir:\norüü(1.8)\nTəcil.\nDəyişənsürətli hərəkətdə ani sürətin qiymət və istiqamətinin dəyişmə yeyinliyi\ntəcil adlanan\nkəmiyyətlə xarakterizə olunur:\n● Təcil - sürət dəyişməsinin bu dəyişmənin baş verdiyi zaman fasiləsinə nisbətinə bərabər olan fiziki\nkəmiyyətdir:\n(1.9)\nƏgər zamanın hesablanması sıfırdan başlayırsa Δ\n— 0 =\nolur, bu halda:\n(1.10) ...\nYolun iki bərabər hissəsi üçün orta sürət hansı düsturla təyin olunar?\nVelosipedçinin iki ardıcıl bərabər zaman fasiləsində (\n= t\n)sürəti uyğun olaraq\nvə v\nolubsa, onun orta sürəti hansı\ndüsturla təyin olunar?\nGündəlik həyatınızla əlaqələndirin:\nSpidometr avtomobi"
+  },
+  {
+    "id": "08-004-11-04-02-10-702f",
+    "passport_id": "08-004-11-04-02-10-702f",
+    "question": "Zər 60 dəfə atılmışdır və nəticələrə görə 5 xalının düşməsi 12 dəfə qeydə alınmışdır. Zərin bir atılışında 5 xalının düşməsinin təcrübi ehtimalı ilə nəzəri ehtimalı arasındakı fərqi (təcrübi ehtimal çıxılsın nəzəri ehtimal) tapın.",
+    "options": [
+      "1/15",
+      "1/30",
+      "11/60",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nəzəri olaraq zərdə 5 xalının düşmə ehtimalı 1/6-dir. Sınaq nəticələrinə görə təcrübi ehtimal = 12/60 = 1/5-dir. Onlar arasındakı fərq: 1/5 - 1/6 = 6/30 - 5/30 = 1/30.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Ehtimalın hesablanması",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "r=80m\n-?s-? = 0 →\n= 0\n= 5\n= 18\nm/san\n= 10\n= 30\nm/san\nΔ-? Δ\n-?ΔΔ-?ΔΔ-?ΔΔΔΔ....\n....\n....\n....\nUçuş zolağının hansı hissəsində təyyarənin sürət dəyişməsi daha yeyindir?\nSürətin dəyişmə yeyinliyinin fiziki mahiyyəti nədir və onu bilmək nə dərəcədə vacibdir?\n● Düzxətli hərəkətdə bərabər zaman fasilələrində müxtəlif yerdəyişmələr icra edən\nmaddi nöqtənin hərəkəti düzxətli dəyişənsürətli hərəkət adlanır.\nDəyişənsürətli hərəkətdə sürət sabit qiyməti ilə xarakterizə oluna bilmir. Belə hərəkətdə\nyaorta sürət\nadlanan sürətdən istifadə edilir.\nOrta sürət.\n● Dəyişənsürətli hərəkət edən maddi nöqtənin trayektoriyanın verilən hissəsindəki orta sürəti, onun bu\nhissəsindəki yerdəyişməsinin həmin yerdəyişməyə sərf etdiyi zamana nisbətinə bərabərdir.\n(1.7)\n● Dəyişənsürətli hərəkət edən maddi nöqtənin yola görə orta sürəti gedilən ümumi yolun bu yolu getməyə\nsərf etdiyi zamana nisbətinə bərabərdir:\norüü(1.8)\nTəcil.\nDəyişənsürətli hərəkətdə ani sürətin qiymət və istiqamətinin dəyişmə yeyinliyi\ntəcil adlanan\nkəmiyyətlə xarakterizə olunur:\n● Təcil - sürət dəyişməsinin bu dəyişmənin baş verdiyi zaman fasiləsinə nisbətinə bərabər olan fiziki\nkəmiyyətdir:\n(1.9)\nƏgər zamanın hesablanması sıfırdan başlayırsa Δ\n— 0 =\nolur, bu halda:\n(1.10) ...\nYolun iki bərabər hissəsi üçün orta sürət hansı düsturla təyin olunar?\nVelosipedçinin iki ardıcıl bərabər zaman fasiləsində (\n= t\n)sürəti uyğun olaraq\nvə v\nolubsa, onun orta sürəti hansı\ndüsturla təyin olunar?\nGündəlik həyatınızla əlaqələndirin:\nSpidometr avtomobi"
+  },
+  {
+    "id": "08-004-73-04-02-02-5007",
+    "passport_id": "08-004-73-04-02-02-5007",
+    "question": "Zər 100 dəfə atılmış və aşağıdakı nəticələr alınmışdır: 1 xalı 18 dəfə, 2 xalı 15 dəfə, 3 xalı 14 dəfə, 4 xalı 20 dəfə, 5 xalı 17 dəfə, 6 xalı 16 dəfə. Bu təcrübəyə əsasən, atılan zərin mürəkkəb ədəd düşməsinin təcrübi ehtimalı neçə faizdir?",
+    "options": [
+      "36%",
+      "16%",
+      "50%",
+      "35%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zərin üzərindəki mürəkkəb ədədlər 4 və 6-dır (1 nə sadə, nə mürəkkəbdir; 2, 3, 5 isə sadədir). Təcrübədə 4 xalı 20 dəfə, 6 xalı isə 16 dəfə düşmüşdür. Əlverişli halların sayı: 20 + 16 = 36. Təcrübi ehtimal: Əlverişli hallar / Ümumi hallar = 36 / 100 = 36%.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Ehtimalın hesablanması\nMümkün halların sayı\nBir çox məsələlərdə, məsələn, iki və ya daha çox sayda zərin birlikdə atılması,\nmetal pul ilə zərin birlikdə atılması kimi məsələlərdə mümkün hallar və əlverişli\nhallar sayını tapmaq üçün müxtəlif kombinasiyalara baxıb variantları saymaq\nlazım gəlir. Müxtəlif variantların sayını: 1) şaxələnmə diaqramından, 2) siyahı tutmadan, 3) cədvəldən: 4) vurma qaydasından istifadə etməklə tapmaq olar.\nVurma prinsipi: a elementini ? üsulla seçmək və hər bir belə seçimə qarşı ? elementini y? üsulla seçmək mümkündürsə, (a,5) cütünü p - m üsulla seçmək olar.\nBu qayda üç və daha çox elementin seçildiyi halda da doğrudur.\nNümunə 1. Cədvəl qurmaqla. ·\nBir zər və bir metal pul birlikdə atıldıqda müm- 11213141516\nkün hadisələrin sayı: 12 hadisə. · IR İ2Rİ3R İ4Rİ 5Rİ 6R\nVurma prinsipinə görə: metal pulla 2 hadisənin ·\n(m “ 2), zərlə 6 hadisənin ( — 6) baş verməsi\nix 12X 13X1l4X15X16X\nMümkün halların sayı: 2.6 — 12 X XXX\nNümunə 2. Şaxələnmə diaqramı qurmaqla. X <R XXR\nÜç metal pulu atdıqda mümkün hadisələrin sayı: $ X R <X XRX\nVurma prinsipinə görə: Hər bir metal pulla 2 hadisə /ğ XRR\nmümkündür: R X ·XR ğğğ\nMümkün hall 12225\nümkün halların sayı 8 Rz X RRX\n— RRR\n@ 1) Şəkildəki çarxların hər birini bir dəfə fırlatdıqda\nmümkün hadisələrin sayını tapın.\n2) Oxlardan birinin ulduz şəkli, digərinin isə 5 rəqəmi üzərində dayanması ehtimalını hesablayın.\n11 >> Vurma prinsipindən istifadə et- MP3 musiqi mərkəzi\nməklə musiqi mərkəzinin müm- Yaddaş İ 8 GB, 12 GB, 16 "
+  },
+  {
+    "id": "08-004-73-03-02-05-7510",
+    "passport_id": "08-004-73-03-02-05-7510",
+    "question": "Qutuda 5 qırmızı, 3 mavi və 2 yaşıl kürə var. Təsadüfən bir kürə çıxarılır, rənginə baxılır və YENİDƏN qutuya qaytarılır. Bundan sonra ikinci kürə çıxarılır. Hər iki çıxarılan kürənin mavi rəngdə olması ehtimalını tapın.",
+    "options": [
+      "6/100",
+      "1/15",
+      "9/100",
+      "3/10"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kürə geri qaytarıldığı üçün hadisələr asılı deyil (hər dəfə qutuda 10 kürə olur). Birinci dəfə mavi çıxma ehtimalı 3/10-dür. İkinci dəfə mavi çıxma ehtimalı yenə 3/10-dür. Hər ikisinin mavi olması ehtimalı ehtimalların hasili ilə tapılır: P = 3/10 * 3/10 = 9/100.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Ehtimalın hesablanması\nMümkün halların sayı\nBir çox məsələlərdə, məsələn, iki və ya daha çox sayda zərin birlikdə atılması,\nmetal pul ilə zərin birlikdə atılması kimi məsələlərdə mümkün hallar və əlverişli\nhallar sayını tapmaq üçün müxtəlif kombinasiyalara baxıb variantları saymaq\nlazım gəlir. Müxtəlif variantların sayını: 1) şaxələnmə diaqramından, 2) siyahı tutmadan, 3) cədvəldən: 4) vurma qaydasından istifadə etməklə tapmaq olar.\nVurma prinsipi: a elementini ? üsulla seçmək və hər bir belə seçimə qarşı ? elementini y? üsulla seçmək mümkündürsə, (a,5) cütünü p - m üsulla seçmək olar.\nBu qayda üç və daha çox elementin seçildiyi halda da doğrudur.\nNümunə 1. Cədvəl qurmaqla. ·\nBir zər və bir metal pul birlikdə atıldıqda müm- 11213141516\nkün hadisələrin sayı: 12 hadisə. · IR İ2Rİ3R İ4Rİ 5Rİ 6R\nVurma prinsipinə görə: metal pulla 2 hadisənin ·\n(m “ 2), zərlə 6 hadisənin ( — 6) baş verməsi\nix 12X 13X1l4X15X16X\nMümkün halların sayı: 2.6 — 12 X XXX\nNümunə 2. Şaxələnmə diaqramı qurmaqla. X <R XXR\nÜç metal pulu atdıqda mümkün hadisələrin sayı: $ X R <X XRX\nVurma prinsipinə görə: Hər bir metal pulla 2 hadisə /ğ XRR\nmümkündür: R X ·XR ğğğ\nMümkün hall 12225\nümkün halların sayı 8 Rz X RRX\n— RRR\n@ 1) Şəkildəki çarxların hər birini bir dəfə fırlatdıqda\nmümkün hadisələrin sayını tapın.\n2) Oxlardan birinin ulduz şəkli, digərinin isə 5 rəqəmi üzərində dayanması ehtimalını hesablayın.\n11 >> Vurma prinsipindən istifadə et- MP3 musiqi mərkəzi\nməklə musiqi mərkəzinin müm- Yaddaş İ 8 GB, 12 GB, 16 "
+  },
+  {
+    "id": "08-004-11-4-3-11-776c",
+    "passport_id": "08-004-11-4-3-11-776c",
+    "question": "Qutuda müəyyən sayda ağ və 6 qara kürə var. Qutudan geri qaytarılmamaqla ardıcıl çıxarılan 2 kürənin hər ikisinin qara olması ehtimalı 1/3-dir. Qutuda neçə ağ kürə var?",
+    "options": [
+      "5",
+      "4",
+      "10",
+      "6"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tutaq ki, qutuda cəmi N kürə var. Birinci qara kürənin çıxması ehtimalı 6/N, ikincinin isə 5/(N-1) olur. Hasil: (6/N) × (5/(N-1)) = 1/3 => 30 / (N² - N) = 1/3 => N² - N = 90. Buradan N = 10 alınır. Cəmi 10 kürə var, onlardan 6-sı qaradırsa, ağ kürələrin sayı 10 - 6 = 4 olar.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "vəinformasiya\nsözlərinin leksik\nmənalarını müəyyənləşdirin.\nTəbiətdə və cəmiyyətdə bizi əhatə edən obyektlər, hadisələr,\nonların xassələri, qarşılıqlı münasibətləri haqqında\nxəbərlər yığımı olub onlara dair bilikləri çoxaltmaq məqsədi\ndaşıyır. vəməmulat\nsözlərinin mənalarını\nfərqləndirin.\n17.\nÇeşni\nvənöv\nsözləri sinonim hesab edilə bilərmi?\nNiyə?\n18.\nMətndən (səh. 166-168) düzəltmə sözləri seçib onlan mənşəyinə\ngörə fərqləndirin.\n19.\nMətndə (səh. 166-167) tünd şriftlə verilmiş cümlənin sxemi\naşağıdakılardan hansına\nuyğundur?\nA)B)C)D)E)20.\nMətndə (səh. 168) dırnaq işarələrinin düzgün işlənməsi hansı\nzəruriyyətdən irəli gəlir?\nFikrinizi əsaslandırın.\n21.\nMətndə fərqləndirilmiş cümlələri (səh. 168) bir cümlə şəklində\nifadə edin. Sizcə, bu tipli cümlələrin nitqdə hansı əhəmiyyəti\nvardır?\n22.\nMətndə (səh. 166-168) hansı abzaslar arasında əlaqə yaratmaq\nüçün əlavə cümlələrə ehtiyac vardır? Həmin cümlələri yazın.\n23.\nQəzet, jurnal və ya internet səhifələrindən xalça mövzusunda\nyazılmış hər hansı bir mətn seçin.\nMətnin dili və üslubu üzərində iş aparın. yoxdur.\n3950\n25450\n34900\n40300\nTank\n2800\n4750\n24700\n24000\n29000\nABŞ və SSRİ-də 1942-ci ildə hərbi istehsalın Almaniyadan neçə\ndəfə çox artdığını müəyyənləşdirin. Sizcə, hərbi istehsalın\nartmasının müharibədə dönüşün yaranması ilə nə əlaqəsi var?\nHOLOKOST\nMüharibə illərində Avropada nasistlər tərəfindən yəhudilərə\nqarşı soyqırımı həyata keçirildi. Təxmini hesablamalara görə 6\nmilyona yaxın yəhudi qətl edilmiş, insanların üzərində qorxu"
+  },
+  {
+    "id": "08-004-02-03-01-02-0eca",
+    "passport_id": "08-004-02-03-01-02-0eca",
+    "question": "Düzbucaqlı üçbucağın hipotenuzu 17 sm, katetlərindən biri 8 sm-dir. Bu üçbucağın perimetrini tapın.",
+    "options": [
+      "30 sm",
+      "40 sm",
+      "42 sm",
+      "25 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pifaqor teoreminə görə naməlum kateti tapırıq: $x = \\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15$ sm. Üçbucağın perimetri tərəflərinin cəmidir: $P = 17 + 8 + 15 = 40$ sm.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Pifaqor teoremi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Tam üstlü qüvvət\nMənfi tam üstlü qüvvət\n10 ədədinin 0, 1, 2 və s. üstlü qüvvətlərini ardıcıl yazaq: 109, 101, 10?, 105, ...\nBu sətirdə hər bir ədəd sonra gələn ədəddən 10 dəfə kiçikdir. Bu sətri həmin\nqayda ilə sola davam etdırsək 107 ədədindən əvvəl 11—0 — %01 ədədini,\n707 ədədindən əvvəl —, ədədini və s. yazmalıyıq.\n— ——.1 1, 100, 101, 107, 103, ...\n103 10? 101\n109 ədədindən sağda hər bir qüvvətin üstü sonra gələn qüvvətin üstündən bir\nvahid kiçikdir. Bu qanunauyğunluğu 109 ədədindən soldakı ədədlər üçün\ndavam etdirsək, onları 10 ədədinin mənfi üstlü qüvvəti şəklində:\nEDİ əvəzinə 10”1, 1—2 əvəzinə 107 və s. yazmalıyıq.\nÜlmumiyyətlə isə, a z 0 olduqda, a””— a\" qəbul edilir.\nDoğrudan da, qüvvətin əsas xassəsinin saxlanılmasını nəzərə alsaq, a z 0 üçün\na qn “q — g1 oldugundan qazıın qəbul etməlıyık\nNümunə. a) 2- -İ-— -x-: b) (-3)?- e ) : c) - 4)–3–( mə\nÖyrənmə tapşırıqları\n-12) Mənfi tam üstlü qüvvəti kəsrlə əvəz .2) Kəsri mənfi tam üstlü qüvvətlə\nedin. əvəz edin.\na) 107 b) a? c) (ab)? 1 1 1\nI11 ı ı . z ı d\nD) a) 16, S, 4, 2, 5 28 ədədlərini əsası 2 olan qüvvət şəklində göstərin.\nb) 27 ğ ğ $: 1, 3, 9, 27 ədədlərini əsası 3 olan qüvvət şəklində göstərin.\n:>> Hesablayın.\na) 67 b) (-1)” c) (-3y“ 1Y mgZly\nd) — 42 e) (-4y2 9-cayı 9 (2) .(az)\nE) Qüvvətin qiymətini sıfırla E> Doğrudurmu:\nmüqayisə edin. a)a” 0 və n-tam ədəd olarsa, a” € 0,\na) 7? b) 1,63 b) a c 0 və n-mənfi cüt ədəd olarsa, a” ” 0,\nc) (-3,2)? d) (c6,1)5 c)a “ 0 və n-mənfi tək ədəd olarsa, a” c 0?\nD> Ifadənı mənfı üstlü"
+  },
+  {
+    "id": "08-004-08-03-02-06-5b12",
+    "passport_id": "08-004-08-03-02-06-5b12",
+    "question": "$3(x - 2) \\le 5x + 4$ bərabərsizliyini ödəyən ən kiçik tam ədədi tapın.",
+    "options": [
+      "-4",
+      "5",
+      "-6",
+      "-5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mötərizəni açırıq: $3x - 6 \\le 5x + 4$. Dəyişənləri sağa, ədədləri sola keçiririk: $-6 - 4 \\le 5x - 3x \\implies -10 \\le 2x \\implies -5 \\le x$. Yəni $x \\ge -5$. Bərabərsizliyi ödəyən ən kiçik tam ədəd -5-dir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Birdəyişənli xətti bərabərsizliklərin həlli\n@ Araşdırmalar göstərir ki, yük daşımaq üçün ən çox istifadə olunan çanta növü\nkürək çantasıdır. Lakin bu cür çantalardan mütəmadi istifadə edənlərə\nçantanın ağırlığına diqqət yetirilməsi tövsiyə olunur. Dolu çantanın kütləsi\nonu daşıyan insanın kütləsindən 3 dəfə az olmalıdır. Təsəvvür edin ki, sizin\nkütləniz 54 kq-dır. Boş çanta isə 4 kq-dır. Siz çantaya ən çoxu neçə kiloqram\nyük yığa bilərsiniz?\n20>> Ülviyyə işdə nahar üçün kredit kartına bu ay 80 manat pul qoyub. Naharın\nqiyməti 4 manat 50 qəpik olarsa, Ülviyyənin neçə gündən sonra kartında 20\nmanatdan az pul qalacaq? Uyğun bərabərsizliyi yazın və həll edin.\nE) n -bucaqlının daxili bucaqlarının cəmi 1809(z — 2) düsturu ilə hesablanır.\nÇoxbucaqlının tərəflərinin sayı ən azı neçə olmalıdır ki, onun daxili\nbucaqlarının cəmi 9000-dən böyük olsun?\n22>> Turist 4 km/saat sürətlə hərəkətə başladı və düşərgədən 24 km məsafədə\nyerləşən şəhərə yollandı. 2 saatdan sonra onun ardınca ikinci turist çıxdı. İkinci turist hansı surətlə getməlidir ki, şəhərə birincidən tez çatsın?\n@ 16 şagirdi mükafatlandırmaq üçün şəkilli kitab və rəsm albomları alındı.\nŞəkilli kitab 1 manat 50 qəpik, rəsm albomu isə 80 qəpikdir. Neçə şəkilli kitab\nalmaq lazımdır ki, alınan hədiyyələrin dəyəri 17 manatdan çox olmasın?\n24>> Rəşad mobil telefon danışıqları xidməti üçün ayda 10 manat və əlavə hər\ndəqiqə üçün 0,02 manat ödəməlidir. O, bu ay xidmət haqqının 25 manatı\nkeçməməsinə çalışır. Bunun üçün Rəşad ən çoxu neçə"
+  },
+  {
+    "passport_id": "11-riyaz-3-2",
+    "question": "P(x) = (x - 4)^2 (x + 2) çoxhədlisi üçün x = 4 kökü neçə dəfə təkrarlanan kökdür?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "P(x) = (x - m)^k Q(x) şəklində verilən ayrılışda k təkrarlanma sayını göstərir. Burada x - 4 vuruğunun qüvvəti 2-dir, yəni x = 4 kökü 2 dəfə təkrarlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Çoxhədlinin vuruqları haqqında teorem",
+    "category": "Riyaziyyat 11",
+    "_duplicate_of": "Riyaziyyat 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "passport_id": "11-riyaz-3-13",
+    "question": "P(x) = x^3 - 4x^2 + x + 6 = 0 tənliyinin köklərindən birinin (-1) olduğunu bilərək, bütün köklərin hasilini tapın.",
+    "options": [
+      "6",
+      "4",
+      "-4",
+      "-6"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sərbəst hədd 6-dır, tənliyin dərəcəsi isə 3-dür. Tək dərəcəli çoxhədlinin kökləri hasili (x1*x2*x3) = -a0/a3 düsturu ilə tapılır. Bu halda -6/1 = -6. Alternativ olaraq, tənliyi x+1-ə bölməklə x^2-5x+6 = 0 alırıq ki, onun da kökləri 2 və 3-dür. Köklərin hasili: (-1)*2*3 = -6.",
+    "difficulty": "mürəkkəb",
+    "bloom_level": "təhlil",
+    "topic": "Çoxhədlinin vuruqları haqqında teorem",
+    "category": "Riyaziyyat 11",
+    "_duplicate_of": "Riyaziyyat 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "passport_id": "11-riyaz-7-5",
+    "question": "$f(x) = \\frac{a_m x^m + ...}{b_n x^n + ...}$ rasional funksiyasında surət və məxrəcdəki çoxhədlilərin dərəcələri bərabər ($m = n$) olduqda, üfüqi asimptot necə müəyyən edilir?",
+    "options": [
+      "$y = \\frac{a_m}{b_n}$",
+      "Üfüqi asimptotu yoxdur",
+      "$y = 0$",
+      "$y = a_m \\cdot b_n$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd olunan qaydaya əsasən, m = n olarsa, y = a_m / b_n düz xətti qrafikin üfüqi asimptotudur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional funksiya",
+    "category": "Riyaziyyat 11",
+    "_duplicate_of": "Riyaziyyat 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-13-11",
+    "passport_id": "06-004-0101-B001-13-11",
+    "question": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmadıqda hansı alqoritmdən istifadə olunur?",
+    "options": [
+      "Dövri alqoritmdən",
+      "Budaqlanan alqoritmin tam formasından",
+      "Xətti alqoritmdən",
+      "Budaqlanan alqoritmin natamam formasından"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmur. Bu zaman budaqlanan alqoritmin natamam formasından istifadə olunur.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "13. Alqoritmin növləri",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-14-9-09",
+    "passport_id": "06-004-0101-B001-14-9-09",
+    "question": "Sonşərtli dövri alqoritmlərdə dövrün gövdəsi ən azı neçə dəfə icra olunur?",
+    "options": [
+      "Həmişə 0 dəfə",
+      "Heç vaxt icra olunmur",
+      "Yalnız şərt ödəndikdə 1 dəfə",
+      "Ən azı 1 dəfə"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sonşərtli dövri alqoritmlərdə şərt əməliyyatdan sonra yoxlanıldığı üçün dövrün gövdəsi ən azı 1 dəfə mütləq icra olunur.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dövri alqoritmlər",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "müasir informasiya texnologiyalarının əsasını təşkil edir. Əslində, alqoritm məsələnin həllinin informasiya modelidir. Alqoritmin icraçısı qoyulan məsələnin mahiyyətinə varmadan alqoritmi formal olaraq yerinə yetirir.\nAlqoritmlərin hazırlanması və icra olunması zamanı insan blok-sxemlərdən istifadə edir. Blok-sxem alqoritmi daha əyani təsvir etməyə və onda əsas alqoritmik strukturları (xətti, budaqlanma, dövr) müəyyənləşdirməyə imkan verir. İnsan blok-sxem əsasında alqoritmin yerinə yetirilməsini izləyə bilər, çünki blok-sxemin elementlərini birləşdirən oxlar əməllər ardıcıllığını göstərir.\nMəktəbiniz və ona ən yaxın məsafədə yerləşən 5-6 məktəb əsasında qraf informasiya modeli qurun. Məktəblər arasında təxmini məsafələri bu qrafın tilləri üzərində qeyd edin. Qrafı çəki matrisi şəklində göstərin.\nBu qrafın ən yaxın iki təpəsi hansıdır? Çəki matrisinin Python dilində təsviri necə olacaq və həmin təsviri də informasiya modeli hesab etmək olarmı?\nMaddi və informasiya modellərinə nümunələr göstərin.\nFormallaşdırma nədir? Formal modellərə nümunələr göstərin.\nS\n=vtdüsturunu hansı növ modelə aid etmək olar?\nDüzbucaqlı üçbucaqda katetlər ilə hipotenuz arasında münasibətləri formal model əsasında göstərin.\nGöstərilmiş sxem hansı riyazi məsələnin modelidir? Bu modeli düstur vasitəsilə necə təqdim etmək olar?\n2.3"
+  },
+  {
+    "id": "06-004-0101-B001-14-14",
+    "passport_id": "06-004-0101-B001-14-14",
+    "question": "Kitab oxuyarkən \"kitab bitdimi?\" şərtini yoxlayıb, bitməyibsə növbəti səhifəni oxumaq hansı dövri alqoritmdir?",
+    "options": [
+      "Sonşərtli dövri alqoritm",
+      "Önşərtli dövri alqoritm",
+      "Sayğaclı dövr",
+      "Xətti alqoritm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Əgər kitab bitməyibsə (şərt yoxlanılır), növbəti səhifə oxunur. Şərt əvvəldə yoxlanıldığı üçün bu, önşərtli dövrdür.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Dövri alqoritmlər",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "müasir informasiya texnologiyalarının əsasını təşkil edir. Əslində, alqoritm məsələnin həllinin informasiya modelidir. Alqoritmin icraçısı qoyulan məsələnin mahiyyətinə varmadan alqoritmi formal olaraq yerinə yetirir.\nAlqoritmlərin hazırlanması və icra olunması zamanı insan blok-sxemlərdən istifadə edir. Blok-sxem alqoritmi daha əyani təsvir etməyə və onda əsas alqoritmik strukturları (xətti, budaqlanma, dövr) müəyyənləşdirməyə imkan verir. İnsan blok-sxem əsasında alqoritmin yerinə yetirilməsini izləyə bilər, çünki blok-sxemin elementlərini birləşdirən oxlar əməllər ardıcıllığını göstərir.\nMəktəbiniz və ona ən yaxın məsafədə yerləşən 5-6 məktəb əsasında qraf informasiya modeli qurun. Məktəblər arasında təxmini məsafələri bu qrafın tilləri üzərində qeyd edin. Qrafı çəki matrisi şəklində göstərin.\nBu qrafın ən yaxın iki təpəsi hansıdır? Çəki matrisinin Python dilində təsviri necə olacaq və həmin təsviri də informasiya modeli hesab etmək olarmı?\nMaddi və informasiya modellərinə nümunələr göstərin.\nFormallaşdırma nədir? Formal modellərə nümunələr göstərin.\nS\n=vtdüsturunu hansı növ modelə aid etmək olar?\nDüzbucaqlı üçbucaqda katetlər ilə hipotenuz arasında münasibətləri formal model əsasında göstərin.\nGöstərilmiş sxem hansı riyazi məsələnin modelidir? Bu modeli düstur vasitəsilə necə təqdim etmək olar?\n2.3"
+  },
+  {
+    "id": "06-004-0101-B001-16-2-02",
+    "passport_id": "06-004-0101-B001-16-2-02",
+    "question": "Scratch proqramında yeni dəyişən yaratmaq üçün hansı bloklar qrupuna müraciət edilir?",
+    "options": [
+      "Hadisələr (Events)",
+      "Görünüş (Looks)",
+      "Hərəkət (Motion)",
+      "Dəyişənlər (Variables)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dəyişən yaratmaq üçün Dəyişənlər (Variables) qrupunda olan xüsusi düymədən (Make a Variable) istifadə olunur.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "16. Proqramda dəyişənlər",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-18-01",
+    "passport_id": "06-004-0101-B001-18-01",
+    "question": "ALPLogo mühitində dövr yaratmaq üçün hansı komandadan istifadə olunur?",
+    "options": [
+      "dön",
+      "təkrarla",
+      "dayan",
+      "başla"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ALPLogo mühitində də dövr yaratmaq üçün təkrarla komandasından istifadə olunur.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "Proqramlaşdırma mühitində dövr",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-21-10",
+    "passport_id": "06-004-0101-B001-21-10",
+    "question": "\"Yer səthində hansı coğrafi obyektlər var, dağlar necə əmələ gəlib\" kimi mövzularda məlumatlar axtarmaq informasiya resursları ilə işin hansı mərhələsidir?",
+    "options": [
+      "Təqdimolunma formasının seçilməsi",
+      "İnformasiyanın qruplaşdırılması",
+      "İnformasiyanın yayılması",
+      "İnformasiyanın toplanması"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd edilir: \"Sonrakı addımda verilmiş mövzuda informasiya topladınız: Yer səthində hansı coğrafi obyektlər var, Yerin daxili quruluşu necədir, dağlar necə əmələ gəlib...\"",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "vəməlumat\nsözlərinin leksik məna baxımından fərqi varmı? Cümlələrdə istifadə etməklə fikrinizi sübuta yetirin.\nŞəbəkə\nsözünün omonimliyini əsaslandırın.\nİstər radio və televiziyada, istərsə də gündəlik əlaqələrdə Azərbaycan dili qayda-qanunlarının\nardıcıl olaraq pozulmasının şahidi oluruq. Xüsusilə də orfoepik normalara tam şəkildə riayət\nolunmur. Orfoqrafik və orfoepik normalara əməl etməyin vacibliyinin dilin qorunmasında mühüm vasitə\nolması hər kəsin şüurunda, qəlbində özünə yer etməlidir. Radio və televiziya işçilərinin danışıq\norqanlarında heç bir çatışmazlıq olmamalıdır.\nKüçə və meydan reklamları, afişalar dilin ən böyük təbliğat göstəriciləridir. Onlarda buraxılan hər\nbir səhv gələcək problemlərin əsasında durur. İstənilən hamar səthə yapışdırılan qeyri-rəsmi afişa\nvə elanları tərtib edənlər onların təsir gücünü əvvəlcədən hiss etmir. Leksik və qrammatik qaydalara\nəməl edilməyən, mənası aydın olmayan belə afişa və elanları oxuyan məktəbli onu daha inandırıcı\nhesab edir və öz bildiklərini kənara qoyub onu “qəbul edir”.\nYerli-yersiz böyük hərflərlə yazılış, sonda qoyulan müxtəlif durğu işarələri və bu kimi\npozuntulardan yaxa qurtarmaq üçün mərkəzləşdirilmiş praktik bürolar yaratmağın, onlara\nmütəxəssislərin rəhbərliyini təmin etməyin də vaxtı çatmışdır. İnternet resurslarında və sosial\nşəbəkələrdə ədəbi dilin pozulması halları da istənilən qədərdir.\nHər bir millətin öz ana dilini inkişaf etdirib yaşatması onun şərəf işidir.\nFikrət Xalıqov,\nfilologiya elmləri doktoru, pro"
+  },
+  {
+    "id": "06-004-0101-B001-27-6-06",
+    "passport_id": "06-004-0101-B001-27-6-06",
+    "question": "\"Undo\" əmrinin vəzifəsi dərslikdə necə qeyd olunub?",
+    "options": [
+      "Sənədi saxlamaq",
+      "Çap etmək",
+      "Geri qayıtmaq, son əməliyyatı ləğv etmək",
+      "İrəli getmək"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə \"Undo\" sözünün tərcüməsi olaraq \"Geri qayıtmaq, son əməliyyatı ləğv etmək\" ifadəsi verilmişdir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-27-10",
+    "passport_id": "06-004-0101-B001-27-10",
+    "question": "\"DVD\" qısaltmasının tərcüməsi hansı variantda qeyd edilib?",
+    "options": [
+      "Kompakt disk",
+      "Operativ yaddaş",
+      "Sərt disk qurğusu",
+      "Rəqəmsal videodisk"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə \"DVD\" qısaltmasının açılışı \"Digital Video Disk\", tərcüməsi isə \"rəqəmsal videodisk\" olaraq verilmişdir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-27-11",
+    "passport_id": "06-004-0101-B001-27-11",
+    "question": "\"HDD\" qısaltmasının açılışı və tərcüməsi hansı variantda doğru göstərilmişdir?",
+    "options": [
+      "Compact Disc Read-Write - təkrar yazılabilən kompakt-disk",
+      "Hard Disk Drive - rəqəmsal videodisk",
+      "Hard Disk Drive - sərt disk qurğusu",
+      "Random Access Memory - ixtiyari erişimli yaddaş"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunur ki, \"HDD\" qısaltmasının açılışı \"Hard Disk Drive\", tərcüməsi isə \"sərt disk qurğusu\" deməkdir.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-06-05",
+    "passport_id": "06-004-0101-B001-06-05",
+    "question": "Çap üçün hansı klavişlər kombinasiyasından yararlanmaq olar?",
+    "options": [
+      "<Alt+P>",
+      "<Ctrl+S>",
+      "<Ctrl+P>",
+      "<Shift+P>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Çap üçün ＜Ctrl+P＞ klavişlər kombinasiyasından da yararlanmaq olar.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "İnformatika - 3 Sözlük Qovluq Qovluq pəncərəsi Proqram kimi, hər qovluq ayrıca pəncərədə açılır. Qovluqda sənədlər varsa, onda onlar pəncərənin içində əks olunacaq. Bir qovluğun içərisində başqa qovluqlar da ola bilər. İş masasında qovluğun yerini dəyişmək üçün aşağıdakı alqoritmi yerinə yetirmək olar: İş masasında qovluğun yerinin dəyişdirilməsi alqoritmi 1 Siçanın göstəricisini qovluğun üzərinə aparın. 2 Siçanın sol düyməsini basıb saxlayın. 3 Göstəricini iş masasında istədiyiniz boş yerə hərəkət etdirin. 4 Siçanın düyməsini buraxın. İnformatika - 3 Q RAFİK REDAKTOR 20 . PAINT PROQRAMI İnsan hansı növ informasiyaları qəbul edir? Kompüter onlardan hansı ilə işləyə bilir? İnsan ona lazım olan informasiyanın əksəriyyətini gözlə alır. Ona görə də informasiyanın qrafik formada verilməsi bəzən çox faydalı olur. Qrafik informasiya ilə işləmək üçün kompüterdə xüsusi proqramlardan — qrafik redaktorlardan istifadə olunur. Belə proqramlardan biri də Paint proqramıdır. Paint proqramını başlatmaq üçün siçanın göstəricisini iş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat (qoşa) çıqqıldatmaq lazımdır. Bu zaman proqramın pəncərəsi açılacaq. Siz rəsm çəkərkən cürbəcür alətlərdən istifadə edirsiniz. Paint proqramında da rəsm çəkmək üçün uyğun alətlər nəzərdə tutulub. Alətlər qutusundan lazım olan alət, rənglər qutusundan (palitradan) isə uyğun rəng seçilir. Kompüterdə çəkilmiş şəkli çap etmək üçün printerdən istifadə olunur. Şəklin ölçüsündən asılı olaraq uyğun kağız seçm"
+  },
+  {
+    "id": "06-004-0101-B001-06-11",
+    "passport_id": "06-004-0101-B001-06-11",
+    "question": "Proqramlarda görülmüş işin nəticəsini vaxtaşırı olaraq niyə sərt diskə və ya xarici yaddasaxlama qurğusuna yazmaq lazımdır?",
+    "options": [
+      "Çünki operativ yaddaş müvəqqəti saxlama yeridir və elektrik kəsintisi zamanı məlumat silinir",
+      "Çünki operativ yaddaş yalnız qrafik faylları saxlamaq üçündür",
+      "Çünki faylları ancaq sərt diskdən çap etmək mümkündür",
+      "Çünki sərt disk kompüterin ən sürətli yaddaşıdır"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Operativ yaddaş müvəqqəti saxlama yeridir, elektrik enerjisinin kəsintisi zamanı oradakı bütün informasiya silinir. Ona görə də proqramlarda görülmüş işin nəticəsini vaxtaşırı olaraq sərt diskə, yaxud hansısa xarici yaddasaxlama qurğusuna yazmaq lazımdır.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "İnformatika - 3 Sözlük Qovluq Qovluq pəncərəsi Proqram kimi, hər qovluq ayrıca pəncərədə açılır. Qovluqda sənədlər varsa, onda onlar pəncərənin içində əks olunacaq. Bir qovluğun içərisində başqa qovluqlar da ola bilər. İş masasında qovluğun yerini dəyişmək üçün aşağıdakı alqoritmi yerinə yetirmək olar: İş masasında qovluğun yerinin dəyişdirilməsi alqoritmi 1 Siçanın göstəricisini qovluğun üzərinə aparın. 2 Siçanın sol düyməsini basıb saxlayın. 3 Göstəricini iş masasında istədiyiniz boş yerə hərəkət etdirin. 4 Siçanın düyməsini buraxın. İnformatika - 3 Q RAFİK REDAKTOR 20 . PAINT PROQRAMI İnsan hansı növ informasiyaları qəbul edir? Kompüter onlardan hansı ilə işləyə bilir? İnsan ona lazım olan informasiyanın əksəriyyətini gözlə alır. Ona görə də informasiyanın qrafik formada verilməsi bəzən çox faydalı olur. Qrafik informasiya ilə işləmək üçün kompüterdə xüsusi proqramlardan — qrafik redaktorlardan istifadə olunur. Belə proqramlardan biri də Paint proqramıdır. Paint proqramını başlatmaq üçün siçanın göstəricisini iş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat (qoşa) çıqqıldatmaq lazımdır. Bu zaman proqramın pəncərəsi açılacaq. Siz rəsm çəkərkən cürbəcür alətlərdən istifadə edirsiniz. Paint proqramında da rəsm çəkmək üçün uyğun alətlər nəzərdə tutulub. Alətlər qutusundan lazım olan alət, rənglər qutusundan (palitradan) isə uyğun rəng seçilir. Kompüterdə çəkilmiş şəkli çap etmək üçün printerdən istifadə olunur. Şəklin ölçüsündən asılı olaraq uyğun kağız seçm"
+  },
+  {
+    "id": "06-004-0101-B001-07-03",
+    "passport_id": "06-004-0101-B001-07-03",
+    "question": "Azərbaycan əlifbasında olan bəzi xüsusi hərfləri (ə, ö, ü, ç, ş, ğ) düzgün göstərməyən şriftlər necə xarakterizə olunur?",
+    "options": [
+      "Azərbaycan əlifbasını dəstəkləməyən şriftlər",
+      "Rəngli şriftlər",
+      "Standard şriftlər",
+      "Böyük ölçülü şriftlər"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunub: “Bəzi şriftlər Azərbaycan əlifbasında olan hərfləri (ə, ö, ü, ç, ş, ğ hərflərini) dəstəkləmir.”",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "7. Mətnin görünüşünün yaxşılaşdırılması",
+    "_duplicate_of": "İnformatika",
+    "context_chunk": "- olduğunuz ərazinin təsvirini dəftərdə yazın;"
+  },
+  {
+    "id": "06-004-0101-B001-05-06",
+    "passport_id": "06-004-0101-B001-05-06",
+    "question": "Faylın qısayolunu İş masasında yaratmaq üçün düzgün komanda ardıcıllığı hansıdır?",
+    "options": [
+      "Sağ düymə -> Rename -> Desktop",
+      "Sol düymə -> Copy -> Desktop",
+      "Start menyusu -> Create shortcut",
+      "Sağ düymə -> Sent to -> Desktop (Create shortcut)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Siçanın sağ düyməsini çıqqıldadın və açılan kontekst menyusundan Sent to ⇨ Desktop (Create shortcut) komandasını seçin.\"",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "_duplicate_of": "İnformatika 6",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-05-12",
+    "passport_id": "06-004-0101-B001-05-12",
+    "question": "Proqramların simgələri fərqli yerlərdə müxtəlif cür işə salınır. Aşağıdakı uyğunluqlardan hansı mətndəki qaydalara əsasən yanlışdır?",
+    "options": [
+      "Tez başlatma zolağı – qoşa çıqqıltı ilə başlatmaq",
+      "Baş menyu – adı tapıb çıqqıldatmaqla (bir dəfə) başlatmaq",
+      "Qovluq pəncərəsi – qoşa çıqqıltı ilə başlatmaq",
+      "İş masası – qoşa çıqqıltı ilə başlatmaq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\"Tez başlatma zolağı... Əgər başlatmaq istədiyiniz proqramın simgəsi orada varsa, sadəcə, onu çıqqıldatmaq kifayətdir.\" (Qoşa çıqqıltıya ehtiyac yoxdur).",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Proqramı başlatmağın bir neçə üsulu",
+    "_duplicate_of": "İnformatika 6",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "06-004-0101-B001-25-06",
+    "passport_id": "06-004-0101-B001-25-06",
+    "question": "Elektron poçtda \"Subject\" (Mövzu) sahəsində nə verilir?",
+    "options": [
+      "Məktubu göndərənin şəkli",
+      "Adresatın ünvanı",
+      "Məktubun məzmununun qısa təsviri",
+      "Məktubun tam mətni"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə vurğulanır: \"Subject (Mövzu) sahəsində məktubun məzmununun qısa təsviri başlıq şəklində verilir.\"",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "25. Elektron poçtla məktublaşma",
+    "_duplicate_of": "İnformatika 4",
+    "context_chunk": "vasitəsilə yazışma məktublaşanlar arasında münasibətdən asılı olaraq\nişgüzar\n, yaxud\nşəxsi\nola bilər. Şəxsi məktublara etika baxımından ciddi tələblər qoyulmur. Yaxın dostunuza yazdığınız istər adi, istərsə də elektron məktubda özünüz üçün məqbul olan istənilən sözdən istifadə edə bilərsiniz. Şəxsi yazışmada məktubun üslubu və ifadə tərzi məktublaşan insanların tanışlıq səviyyəsindən asılı olur.\nAdi işgüzar yazışmalarda qəbul olunmuş “qızıl” qaydalar isə bunlardır:\nYalnız məğzini verməklə fikirlərinizi qısaca ifadə edin.\nSavadlı yazın.\nBaşqalarından nəzakət tələb edirsinizsə, özünüz də nəzakətli olun.\nAldığınız məktubun cavabını gecikdirməyin.\nÜmumi ifadələrlə “canınızı qurtarmayın”. Deməyə sözünüz yoxdursa, bunu nəzakətlə bildirib yazışmaya son qoyun.\nElektron yazışmalarda bu göstərilənlərə aşağıdakı qaydalar da əlavə olunmalıdır:\nMəktubun mövzusunu göstərin. İstifadəçilərin çoxu virusların qorxusundan mövzusu olmayan, yaxud mövzusu şübhəli olan məktubları oxumadan uzaqlaşdırırlar.\nElan etdiyiniz mövzuya uyğun fikirlər yazın.\nMəktubunuzun sonunda kimliyinizi bildirin.\nQabaqcadan arxivləşdirmədən irihəcmli fayllar göndərməyin.\nƏgər məktubunuzda adresatların hamısı üçün mühüm və faydalı informasiya yoxdursa, onu bir neçə ünvana “səpələməyin”. Sizin ünvanınızı arzuolunmaz adresat kimi “qara siyahı”ya sala bilərlər."
+  },
+  {
+    "id": "gen-2cef9e0a",
+    "passport_id": "gen-2cef9e0a",
+    "question": "III Vaçaqanın xristianlığı möhkəmləndirmək cəhdlərinin və həyata keçirdiyi islahatların əsas məqsədi nədən ibarət idi?",
+    "options": [
+      "Ölkədə dini birlik yaratmaq və Alban kilsəsinin müstəqilliyini təmin etmək",
+      "Sasanilərin zərdüştilik siyasətini dəstəkləmək",
+      "Roma imperiyasının tam himayəsinə keçmək",
+      "Albaniyanı Bizansın tabeliyinə vermək"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd edilir: \"Vaçaqan xristianlığı möhkəmləndirməklə ölkədə dini birlik yaratmağa çalışır, islahatlar həyata keçirirdi. III Vaçaqan Alban kilsəsinin müstəqilliyini təmin etmək üçün xüsusi kilsə məclisi çağırmışdı.\"",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan tarixi 7 | 4. Xürrəmilər hərəkatı. Babək",
+    "_duplicate_of": "Azərbaycan tarixi",
+    "context_chunk": "6,8\n51\nİran\n0,5 ədəbiyyatı mərhələsi kimi dəyərləndirilir. Farsdilli Azərbaycan poeziyasının\nilk görkəmli nümayəndəsi olan Qətran Təbrizinin yaradıcılığı ilə\nşeirimizin yeni inkişaf mərhələsi başlanır. XII əsrdə yazıb-yaratmış\nƏfzələddin Xaqaninin, Məhsəti Gəncəvinin və digər sənətkarların yaradıcılığı\nideya istiqamətinə, ictimai motivlərinin genişliyinə, bədii keyfiyyətinə\ngörə ədəbiyyatımızda dərin iz buraxmışdır.\nİntibah poeziyasının zirvəsi olan dahi sənətkarımız Nizami Gəncəvinin\nyaradıcılığı, onun sənət incisi sayılan “Xəmsə”si həmin dövrdə və\nsonralar yaranan ədəbiyyatın inkişafında misilsiz rol oynamışdır.\nXIII—XVI\nyüzilliklər orta əsrlər Azərbaycan ədəbiyyatı mərhələsi\nhesab olunur. Bu dövrdə ən mühüm hadisə farsca yazmaq ənənəsinin getdikcə\nzəifləməsi, ana dilində yaranan ədəbiyyatın güclənməsidir. Bu\nmərhələdə ədəbiyyatımızın inkişafı ilk növbədə Qazi Bürhanəddin,\nİmadəddin Nəsimi, Şah İsmayıl Xətayi kimi görkəmli sənətkarların adı\nilə bağlıdır. XIII əsrdə yazıb-yaratmış Şeyx İzzəddin Həsənoğlunun\nqəzəlləri ana dilində bizə çatan ilk nümunələrdir. Lakin bu nümunələrin\nyüksək bədii keyfiyyəti onlardan çox-çox əvvəl ana dilimizdə əsərlərin\nyazıldığını deməyə əsas verir. Müəllifi məlum olmayan “Dastani-Əhməd\nHərami” poeması isə ana dilində ilk epik poeziya örnəyidir.\nXIV əsrin son rübündə Azərbaycanda yeni cərəyan [[MERGE_NEXT]]\nhürufizm\nyaranmışdır.\nHürufilik fəlsəfi təlimi İmadəddin Nəsiminin yaradıcılığında\nyüksək bədii ifadəsini tapmışdır.\nXV-XVI əsrlərdə Azərbayc"
+  },
+  {
+    "id": "gen-2c4977fe",
+    "passport_id": "gen-2c4977fe",
+    "question": "Sasanilər dövründə vergi sistemində VI yüzillikdə edilən dəyişikliklərdən sonra vergilərin toplanma qaydası necə dəyişdi?",
+    "options": [
+      "Tacirlərdən alınan vergilər dinc əhaliyə paylandı",
+      "Bütün vergilər ləğv edildi və yalnız məhsuldan natural formada ödəniş saxlanıldı",
+      "Vergilər məhsulun həcminə görə deyil, torpaq sahələrinə görə təyin edilməyə başladı və bir hissəsi pul vergisi ilə əvəz edildi",
+      "Vergilərin miqdarı azalmadığı üçün kəndlilər şəhərlərə köçürüldü"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə qeyd edilir: \"Vergilər məhsulun həcminə görə deyil, torpaq sahələrinə görə təyin edilməyə başladı. ... Həmin dəyişiklikdən sonra natural şəkildə toplanan məhsulun bir hissəsi pul vergisi ilə əvəz edildi.\"",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan tarixi 7 | 4. Xürrəmilər hərəkatı. Babək",
+    "_duplicate_of": "Azərbaycan tarixi",
+    "context_chunk": "6,8\n51\nİran\n0,5 ədəbiyyatı mərhələsi kimi dəyərləndirilir. Farsdilli Azərbaycan poeziyasının\nilk görkəmli nümayəndəsi olan Qətran Təbrizinin yaradıcılığı ilə\nşeirimizin yeni inkişaf mərhələsi başlanır. XII əsrdə yazıb-yaratmış\nƏfzələddin Xaqaninin, Məhsəti Gəncəvinin və digər sənətkarların yaradıcılığı\nideya istiqamətinə, ictimai motivlərinin genişliyinə, bədii keyfiyyətinə\ngörə ədəbiyyatımızda dərin iz buraxmışdır.\nİntibah poeziyasının zirvəsi olan dahi sənətkarımız Nizami Gəncəvinin\nyaradıcılığı, onun sənət incisi sayılan “Xəmsə”si həmin dövrdə və\nsonralar yaranan ədəbiyyatın inkişafında misilsiz rol oynamışdır.\nXIII—XVI\nyüzilliklər orta əsrlər Azərbaycan ədəbiyyatı mərhələsi\nhesab olunur. Bu dövrdə ən mühüm hadisə farsca yazmaq ənənəsinin getdikcə\nzəifləməsi, ana dilində yaranan ədəbiyyatın güclənməsidir. Bu\nmərhələdə ədəbiyyatımızın inkişafı ilk növbədə Qazi Bürhanəddin,\nİmadəddin Nəsimi, Şah İsmayıl Xətayi kimi görkəmli sənətkarların adı\nilə bağlıdır. XIII əsrdə yazıb-yaratmış Şeyx İzzəddin Həsənoğlunun\nqəzəlləri ana dilində bizə çatan ilk nümunələrdir. Lakin bu nümunələrin\nyüksək bədii keyfiyyəti onlardan çox-çox əvvəl ana dilimizdə əsərlərin\nyazıldığını deməyə əsas verir. Müəllifi məlum olmayan “Dastani-Əhməd\nHərami” poeması isə ana dilində ilk epik poeziya örnəyidir.\nXIV əsrin son rübündə Azərbaycanda yeni cərəyan [[MERGE_NEXT]]\nhürufizm\nyaranmışdır.\nHürufilik fəlsəfi təlimi İmadəddin Nəsiminin yaradıcılığında\nyüksək bədii ifadəsini tapmışdır.\nXV-XVI əsrlərdə Azərbayc"
+  },
+  {
+    "id": "10-002-02-Tətbiq-Çətin-2-e5e5",
+    "passport_id": "10-002-02-Tətbiq-Çətin-2-e5e5",
+    "question": "Kuti dövlət qurumunun qüdrətli dövründə onun siyasi və hərbi təsir dairəsinə daxil olan coğrafi hüdudları müəyyən edin:",
+    "options": [
+      "Şimalda Urmiya gölünün qərbindən başlayıb cənubda İran körfəzinə qədər uzanan ərazi",
+      "Şimalda Kür çayından başlayaraq cənubda Babilə qədər olan böyük və geniş bir ərazi",
+      "Şimalda Araz çayından başlayaraq cənubda Elam dövlətinə qədər olan dağlıq zonalar",
+      "Şərqdə Xəzər dənizi sahillərindən başlayaraq qərbdə Aralıq dənizinə qədər olan vilayətlər"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslik mətnində dəqiq xəritə və coğrafi bilik olaraq qeyd edilir ki, qüdrətli dövründə Kuti dövlət qurumunun ərazisi şimalda Urmiya gölünün qərbinə, cənubda isə İran körfəzinə qədər uzanırdı.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan ərazisində ilk tayfa ittifaqları və dövlət qurumları",
+    "_duplicate_of": "Azərbaycan tarixi 10",
+    "context_chunk": "psevdovulkanlar (yalançı vulkanlar)\nadlanan\npalçıq vulkanları püskürür. Onların sayı 300-dən artıqdır. Ən\nböyükləri Torağay (400 m), Şıxzahirli, Axtarma-Paşalı, Qalmaz,\nKeyrəki, Otman-Bozdağ və s.-dir. Palçıq vulkanları, əsasən, çökmə\nsüxurlarda 4–6 km dərinliklərdə yaranır. Bu vulkanlar püskürən\nzaman Yer səthinə qaynar gil-palçıq kütləsi –\nsalza\nçıxır. Salza\nsoyuduqdan sonra bərkiyirək\nbrekçiyaya\nçevrilir. Ən çox\nneftli-qazlı sahələrdə müşahidə edilir. Palçıq vulkanları\nbizim milli və təbii sərvətimiz olmaqla yanaşı, bir sıra\nxəstəliklərin – əsəb sistemi, dəri və oynaq xəstəliklərinin\nmüalicəsində uğurla istifadə olunur.\nPalçıq vulkanları xəritə-sxeminə əsasən müəyyən edin: küləklərin sürətinə\ngörə qruplaşdırılması"
+  }
+]

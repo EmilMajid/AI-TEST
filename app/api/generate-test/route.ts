@@ -577,12 +577,23 @@ function loadFromOfflineTests(
     // 1. Find matching subject keys in offline_tests.json
     const titleLower = textbookTitle.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");
     const keys = Object.keys(db);
-    let matchedKeys = keys.filter(k => 
-      k === textbookTitle || 
-      k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i") === titleLower || 
-      titleLower.includes(k.toLowerCase()) || 
-      k.toLowerCase().includes(titleLower)
-    );
+    
+    // First try EXACT matches
+    let matchedKeys = keys.filter(k => k === textbookTitle || k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i") === titleLower);
+    
+    // If no exact match, try safe substring matching but avoid pulling generic buckets (like "Riyaziyyat" for "Riyaziyyat 3")
+    if (matchedKeys.length === 0) {
+      matchedKeys = keys.filter(k => 
+        titleLower.includes(k.toLowerCase()) || 
+        k.toLowerCase().includes(titleLower)
+      );
+      
+      // If we matched multiple, try to filter out generic ones if a more specific one exists
+      if (matchedKeys.length > 1) {
+          const specific = matchedKeys.filter(k => k.match(/\d/));
+          if (specific.length > 0) matchedKeys = specific;
+      }
+    }
     
     if (matchedKeys.length === 0) {
         if (titleLower.includes("riyaziyyat")) matchedKeys = keys.filter(k => k.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").includes("riyaziyyat"));
@@ -681,18 +692,34 @@ function loadFromOfflineTests(
     // Shuffle and take requested count
     const shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, count)
 
-    return shuffled.map((q: any, idx: number) => ({
-      id: idx + 1,
-      question: q.question,
-      options: Array.isArray(q.options) ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/i, "").trim()) : q.options,
-      correctAnswer: q.correctAnswer ?? 0,
-      explanation: q.explanation || "",
-      difficulty: q.difficulty || difficulty,
-      topic: q.topic || topic,
-      bloomLevel: (q.bloomLevel || "anlama").toLowerCase(),
-      timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan" || q.difficulty === "easy") ? 1 : (q.difficulty === "çətin" || q.difficulty === "hard") ? 3 : 2,
-      sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
-    }))
+    return shuffled.map((q: any, idx: number) => {
+      let correctAnswerIndex = 0;
+      const cleanOptions = Array.isArray(q.options) 
+        ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/i, "").trim()) 
+        : q.options;
+
+      if (typeof q.correctAnswer === "number") {
+        correctAnswerIndex = q.correctAnswer;
+      } else if (typeof q.answer === "string" && Array.isArray(q.options)) {
+        const foundIdx = cleanOptions.findIndex((opt: string) => opt === q.answer.trim() || q.options.findIndex((o: string) => o.trim() === q.answer.trim()) === cleanOptions.indexOf(opt));
+        correctAnswerIndex = foundIdx !== -1 ? foundIdx : 0;
+      } else {
+        correctAnswerIndex = q.correctAnswer ?? 0;
+      }
+
+      return {
+        id: idx + 1,
+        question: q.question,
+        options: cleanOptions,
+        correctAnswer: correctAnswerIndex,
+        explanation: q.explanation || "",
+        difficulty: q.difficulty || difficulty,
+        topic: q.topic || topic,
+        bloomLevel: (q.bloomLevel || "anlama").toLowerCase(),
+        timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan" || q.difficulty === "easy") ? 1 : (q.difficulty === "çətin" || q.difficulty === "hard") ? 3 : 2,
+        sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
+      };
+    })
   } catch (e) {
     console.error("❌ offline_tests.json oxunarkən xəta:", e)
     return []

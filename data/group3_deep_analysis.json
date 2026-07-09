@@ -1,0 +1,214 @@
+{
+  "Negative_Questions": [
+    {
+      "id": "gen-4b3ad566",
+      "passport_id": "gen-4b3ad566",
+      "question": "Aşağıdakılardan hansı litosfer tavası deyil?",
+      "options": [
+        "Sakit okean",
+        "Qrenlandiya",
+        "Şimali Amerika",
+        "Avrasiya"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Qrenlandiya Şimali Amerika litosfer tavasının bir hissəsidir, müstəqil tava deyil.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Dəyərləndirmə (Bölmə 2.2)",
+      "cat": "Coğrafiya 7"
+    },
+    {
+      "id": "05-007-0101-B3F04-01-01-004",
+      "passport_id": "05-007-0101-B3F04-01-01-004",
+      "question": "Aşağıdakılardan hansı yağıntı növü deyil?",
+      "options": [
+        "Dolu",
+        "Duman",
+        "Yağış",
+        "Qar"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Duman yer səthinə yaxın olan buluddur, yerə düşən yağıntı (yağış, qar, dolu) növü deyil.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Mövzusuz",
+      "cat": "Təbiət"
+    },
+    {
+      "id": "05-007-0101-B6F04-01-01-007",
+      "passport_id": "05-007-0101-B6F04-01-01-007",
+      "question": "Aşağıdakılardan hansı qalıq (qazıntı) yanacağı deyildir?",
+      "options": [
+        "Təbii qaz",
+        "Külək",
+        "Kömür",
+        "Neft"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Külək təbii proseslərlə yaranan bərpa olunan enerjidir, yer altından çıxarılan qazıntı yanacağı deyil.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Mövzusuz",
+      "cat": "Təbiət"
+    }
+  ],
+  "Roman_Numerals_or_Combinations": [
+    {
+      "id": "gen-c4903809",
+      "passport_id": "gen-c4903809",
+      "question": "Dərslikdəki dil qaydaları tapşırığına əsasən \"Şuşanın körpə qartalı\" ifadəsi qrammatik baxımdan nədir?",
+      "options": [
+        "Sadə ad",
+        "Mürəkkəb söz",
+        "İsmi birləşmə",
+        "Feili birləşmə"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Şuşanın körpə qartalı\" əsas tərəfi (qartalı) isimlə ifadə olunduğu üçün ismi birləşmədir (III növ təyini söz birləşməsi). MƏNBƏ: Dərslikdəki \"Mətnin adı söz birləşməsi, yoxsa mürəkkəb addır?\" tapşırığı.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "I BÖLMƏ: 7. Şuşanın körpə qartalı",
+      "cat": "Azərbaycan dili 8"
+    },
+    {
+      "id": "gen-1c8ae139",
+      "passport_id": "gen-1c8ae139",
+      "question": "Which pair of sentences shows the correct past and present contrast according to the textbook examples?",
+      "options": [
+        "Years ago: I used to drink coffee a lot. Today: I never drank coffee.",
+        "Years ago: I used to have a parrot. Today: I have a parrot.",
+        "Years ago: I didn't use to run. Today: I didn't use to run.",
+        "Years ago: I didn't play chess. Today: I often play chess."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"used to\" contrasts a past habit with a present one. SOURCE: Unit 2, Review, Section 5: \"Compare what Omar said 10 years ago and what he says today... 10 years ago: I didn't play chess. Today: I often play chess.\"",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Unit 2: Grammar (Adjectives and infinitives; Used to)",
+      "cat": "İngilis dili 7"
+    },
+    {
+      "id": "gen-d416bb7d",
+      "passport_id": "gen-d416bb7d",
+      "question": "Neytral atomda protonların sayı hansı zərrəciklərin sayına bərabərdir?",
+      "options": [
+        "Molekulların",
+        "Neytronların",
+        "İonların",
+        "Elektronların"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Neytral atomda müsbət yüklü protonların sayı mənfi yüklü elektronların sayına bərabər olur.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "4.1 Atomun quruluşu",
+      "cat": "Fizika 7"
+    }
+  ],
+  "Option_Comparison_in_Expl": [
+    {
+      "id": "10-006-08-02-orta-03",
+      "passport_id": "10-006-08-02-orta-03",
+      "question": "Metanın yüksək temperaturda parçalanması müxtəlif şəraitlərdə fərqli məhsullar verir. 1000°C və 1500°C-də metanın parçalanmasından əsasən hansı maddələr alınır?",
+      "options": [
+        "1000°C-də etilen və hidrogen, 1500°C-də karbon və hidrogen.",
+        "Hər iki temperaturda yalnız karbon-dioksid və su buxarı ayrılır.",
+        "1000°C-də etan və hidrogen, 1500°C-də propan və karbon.",
+        "1000°C-də karbon (his) və hidrogen, 1500°C-də asetilen (C2H2) və hidrogen."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Metanın parçalanması temperaturdan asılıdır. 1000°C-də metan karbona (C) və hidrogenə (2H2) parçalanır. 1500°C-də isə qısa müddətli qızdırma zamanı asetilen (C2H2) və hidrogen (3H2) əmələ gəlir.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Alkanların fiziki və kimyəvi xassələri",
+      "cat": "Kimya 10"
+    },
+    {
+      "id": "05-001-0101-B1F01-tətbiq-orta-013",
+      "passport_id": "05-001-0101-B1F01-tətbiq-orta-013",
+      "question": "Hansı sözdə \"-iyyət\" şəkilçisi düzgün yazılmamışdır?",
+      "options": [
+        "Xüsusiyyət",
+        "Şəxsiyyət",
+        "Kəmiyyət",
+        "Nailiyət"
+      ],
+      "correctAnswer": 3,
+      "explanation": "'Nailiyyət' sözü iki 'y' ilə yazılmalıdır. Digər variantlardakı sözlərdə (kəmiyyət, şəxsiyyət, xüsusiyyət) qoşa 'y' hərflərindən istifadə düzgün tətbiq olunmuşdur.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Sözlərdə saitlərin yazılışı",
+      "cat": "Azərbaycan dili"
+    },
+    {
+      "id": "gen-a667f044",
+      "passport_id": "gen-a667f044",
+      "question": "1539-cu ildə Səfəvi hökmdarı I Təhmasibin sifarişi ilə toxunmuş və hazırda Londonun Viktoriya və Albert muzeyində saxlanılan dünyaca məşhur sənət əsəri nədir?",
+      "options": [
+        "Təbriz qızılbaş zirehi",
+        "Çaldıran zəfər tağı",
+        "'Şeyx Səfi' xalçası",
+        "'Şah Abbas' xalçası"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Şeyx Səfi' xalçası 1539-cu ildə Şah I Təhmasibin göstərişi ilə Ərdəbil məscidi üçün toxunmuş dünya xalçaçılıq sənətinin şah əsəridir və hazırda Londonda saxlanılır. 'Şah Abbas xalçası' XVII əsr ornament üslubuna verilən ümumi addır, digər variantlar isə xalçaçılıq sənətinə aid olan gerçək incəsənət nümunələri deyil.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "26. XV-XVI əsrlərdə Azərbaycan mədəniyyəti",
+      "cat": "Azərbaycan tarixi 7"
+    }
+  ],
+  "Keyword_Overlap_Only": [
+    {
+      "id": "gen-a1abb563",
+      "passport_id": "gen-a1abb563",
+      "question": "Orta əsr Azərbaycan şəhərləri əsasən üç hissədən ibarət olurdu. Şəhərin sənətkarlar və yoxsul əhali yaşayan, qala divarlarından kənarda yerləşən hissəsi necə adlanırdı?",
+      "options": [
+        "Məhəllə",
+        "Narınqala",
+        "Şəhristan",
+        "Rəbəd"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Klassik şərq şəhəri quruluşunda Narınqala (hökmdar və əyanların idarə mərkəzi), Şəhristan (əsas əhalinin və zənginlərin yaşadığı mərkəzi hissə) və Rəbəd (şəhər kənarı, sənətkar və tacirlərin məskəni) mövcud idi.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "11. IX-XI əsrlərdə Azərbaycan mədəniyyəti",
+      "cat": "Azərbaycan tarixi 7"
+    },
+    {
+      "id": "gen-5727dbf3",
+      "passport_id": "gen-5727dbf3",
+      "question": "Tikintidə geniş istifadə olunan sementin istehsalı kimyanın hansı sahəsi ilə bağlıdır?",
+      "options": [
+        "Neft kimyası",
+        "Silikat sənayesi",
+        "Əczaçılıq",
+        "Üzvi kimya"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sement, şüşə, keramika kimi materialların istehsalı qeyri-üzvi kimyanın bir qolu olan silikat sənayesinə aiddir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+      "cat": "Kimya 7"
+    },
+    {
+      "id": "05-013-0101-B03M02-02-02-016",
+      "passport_id": "05-013-0101-B03M02-02-02-016",
+      "question": "Сестра вытирает руки ...",
+      "options": [
+        "салфеткой",
+        "салфетке",
+        "салфетка",
+        "салфетку"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Вытирать (чем?) - творительный падеж. Правильная форма от слова «салфетка» — «салфеткой».",
+      "difficulty": "medium",
+      "bloom_level": "bilmə",
+      "topic": "Урок 18. Я накрываю стол.",
+      "cat": "Rus dili"
+    }
+  ]
+}

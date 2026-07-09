@@ -1,0 +1,830 @@
+[
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 12,
+    "q": "Hansı sözdə \"-iyyət\" şəkilçisi düzgün yazılmamışdır?",
+    "options": [
+      "Xüsusiyyət",
+      "Şəxsiyyət",
+      "Kəmiyyət",
+      "Nailiyət"
+    ],
+    "expl": "'Nailiyyət' sözü iki 'y' ilə yazılmalıdır. Digər variantlardakı sözlərdə (kəmiyyət, şəxsiyyət, xüsusiyyət) qoşa 'y' hərflərindən istifadə düzgün tətbiq olunmuşdur."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 60,
+    "q": "Aşağıdakı sözlərdən hansının yazılışı doğrudur?",
+    "options": [
+      "Mator",
+      "Matar",
+      "Motor",
+      "Motar"
+    ],
+    "expl": "Dilimizə başqa dillərdən keçmiş bəzi sözlərin yazılışı tələffüzündən fərqlənir. Tələffüzdə 'mator' deyilsə də, yazılışda 'motor' olmalıdır."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 122,
+    "q": "Sözlərdən hansının sonundakı 'k' hərfi [k'] (incə k) kimi tələffüz olunur?",
+    "options": [
+      "Çiyələk",
+      "Əlcək",
+      "Tək",
+      "Böyürtkən"
+    ],
+    "expl": "Təkhecalı söz olan 'tək' sözünün sonundakı 'k' hərfi [k'] kimi tələffüz olunur. 'Əlcək' və 'çiyələk' sözlərinin sonundakı 'k' [x'] səsini verir, 'böyürtkən' sözündə isə 'k' sonda deyil."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 202,
+    "q": "Aşağıdakı sözlərdən hansı cümlədəki yerindən asılı olaraq gah yalnız qrammatik məna, gah da həm leksik, həm qrammatik məna daşımaq (omonimlik) xüsusiyyətinə malik deyil?",
+    "options": [
+      "Doğru",
+      "Səhər",
+      "Kimi",
+      "Yalnız"
+    ],
+    "expl": "\"Səhər\" sözü həmişə əsas nitq hissəsidir (isim və ya zərf kimi). Yəni həmişə həm leksik, həm qrammatik mənası olur. Digərləri isə köməkçi nitq hissəsi kimi də işlənə bilir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 288,
+    "q": "Aşağıdakı cümlənin sonuna hansı durğu işarələri uyğundur?\n- Bəli, mən razıyam",
+    "options": [
+      "Sual işarəsi",
+      "Nida işarəsi",
+      "Nöqtə",
+      "Üç nöqtə"
+    ],
+    "expl": "Məlumat xarakterli nəqli cümlədir, sonuna nöqtə qoyulur."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 417,
+    "q": "Hansı mürəkkəb sifətin yazılışı doğrudur?",
+    "options": [
+      "Gülü-gülzar",
+      "Uca boylu",
+      "Açıq-aydın",
+      "Məqsədə uyğun"
+    ],
+    "expl": "'Açıq-aydın' yaxın mənalı sözlərin birləşməsindən yaranan mürəkkəb sifətdir və defislə yazılır. 'Ucaboylu' və 'məqsədəuyğun' bitişik olmalıdır."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 449,
+    "q": "Sinonimlər nəyə deyilir?",
+    "options": [
+      "Həm həqiqi, həm də məcazi mənası olan sözlərə.",
+      "Mənaca bir-birinin əksi olan sözlərə.",
+      "Yazılışı və tələffüzü eyni, mənası fərqli olan sözlərə.",
+      "Yazılışı və tələffüzü fərqli, mənası eyni və ya yaxın olan sözlərə."
+    ],
+    "expl": "Sinonimlər yazılışı və tələffüzü fərqli, leksik mənasına görə eyni və ya yaxın olan sözlərdir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 466,
+    "q": "\"Gənc\" sözünün antonimi hansı variantdadır?",
+    "options": [
+      "Uşaq",
+      "Qoca",
+      "Cavan",
+      "Körpə"
+    ],
+    "expl": "\"Gənc\" və \"cavan\" sinonimdir. Bunların əksi olan söz \"qoca\" və ya \"ixtiyar\"dır."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 490,
+    "q": "Ad və soyadların qısaltmaları sətirdən sətrə keçirilərkən hansı qayda pozulmuşdur?",
+    "options": [
+      "M. F.- Axundzadə",
+      "H. Cavid",
+      "Səməd Vurğun",
+      "M. F. Axundzadə"
+    ],
+    "expl": "Ad və atanın adının qısaltmasını (M.F.) soyaddan (Axundzadə) ayırıb başqa sətrə keçirmək və ya tire ilə ayırmaq səhvdir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 506,
+    "q": "Sətirdən sətrə keçirmə baxımından məntiqi ardıcıllığı pozan sözü tapın.",
+    "options": [
+      "Odun",
+      "Kömür",
+      "Üzüm",
+      "İşıq"
+    ],
+    "expl": "'İşıq', 'Odun', 'Üzüm' sözlərinin ilk hecası tək saitdir deyə sətrə keçirilə bilmirlər. 'Kömür' isə (kö-mür) keçirilə bilər."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 565,
+    "q": "Ədatla bağlayıcının omonimliyinə aid edilə bilməyən sözü müəyyən edin:",
+    "options": [
+      "Da, də",
+      "Belə",
+      "Ki",
+      "Ancaq"
+    ],
+    "expl": "\"Ki\", \"da, də\" və \"ancaq\" sözləri həm bağlayıcı, həm də ədat ola bilər. \"Belə\" isə əvəzlik və ədat ola bilər, ancaq bağlayıcı kimi işlənmir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 574,
+    "q": "Aşağıdakı toplu isimlərdən hansı cəm şəkilçisi qəbul edə bilir?",
+    "options": [
+      "Əhali",
+      "İctimaiyyət",
+      "Camaat",
+      "Ordu"
+    ],
+    "expl": "'Ordu' toplu ismi 'ordular' şəklində cəm şəkilçisi qəbul edə bilər. Lakin 'camaat' və 'əhali' qəbul etmir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 611,
+    "q": "Aşağıdakılardan biri yalnız mənsubiyyət şəkilçisi artırıldıqda sonuncu saitin düşməsi qaydasına tabedir:",
+    "options": [
+      "Sinif",
+      "Şəkil",
+      "Beyin",
+      "Fəsil"
+    ],
+    "expl": "Bədən üzvlərini bildirən əsl Azərbaycan sözləri (beyin, burun, ağız və s.) yalnız mənsubiyyət şəkilçisi qəbul etdikdə son saitini itirir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 627,
+    "q": "Aşağıdakı ifadələrdən hansı Azərbaycan dili qrammatikasında reallığı əks etdirmir?",
+    "options": [
+      "Dilimizdə qeyri-müəyyən mənsubiyyət anlayışı yoxdur.",
+      "Qeyri-müəyyən mənsubiyyət şəkilçisi anlayışı mövcuddur.",
+      "İsimlərdə mənsubiyyət daim hal şəkilçilərindən əvvəl gəlir.",
+      "Mənsubiyyət mütləq olaraq sahiblik məzmunu daşıyır."
+    ],
+    "expl": "Dilimizdə qeyri-müəyyən yiyəlik hal mövcuddur, lakin mənsubiyyət mütləq müəyyən bir şəxsə aidliyi bildirdiyi üçün \"qeyri-müəyyən mənsubiyyət\" anlayışı yoxdur."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 662,
+    "q": "Çoxaltma dərəcəsində olan sifəti seçin.",
+    "options": [
+      "Sapsarı",
+      "Saralmaq",
+      "Sarı",
+      "Sarımtıl"
+    ],
+    "expl": "\"Sapsarı\" m, p, r, s samitlərinin köməyi ilə yaranmış çoxaltma dərəcəli sifətdir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 744,
+    "q": "\"Bilmək\" feilini şərt şəklinin III şəxs cəmində göstərin.",
+    "options": [
+      "Bilirlərsə",
+      "Bilməlidirlər",
+      "Bilsələr",
+      "Biləcəklərsə"
+    ],
+    "expl": "Şərt şəkli feilin kökünə və ya başlanğıc formasına birbaşa -sa, -sə şəkilçisi qoşulmaqla yaranır. \"Bilsələr\" (bil+sə+lər) şərt şəklindədir. \"Bilirlərsə\" xəbər şəklinin şərtidir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 839,
+    "q": "Verilənlərdən biri təyini əvəzlik deyil:",
+    "options": [
+      "filan",
+      "hər",
+      "bütün",
+      "elə"
+    ],
+    "expl": "\"Elə\" işarə əvəzliyidir. Təyini əvəzliklərə isə hər, öz, bütün, filan, eyni daxildir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 863,
+    "q": "\"O\" və \"bu\" əvəzliklərinin cümlədə sintaktik rolu haqqında deyilənlərdən hansı doğrudur?",
+    "options": [
+      "İsmi əvəz etdikdə cümlədə təyin olurlar.",
+      "Yalnız mübtəda və tamamlıq ola bilir.",
+      "Həmişə təyin rolunda çıxış edirlər.",
+      "Sifəti əvəz etdikdə təyin, ismi əvəz etdikdə isə mübtəda və tamamlıq ola bilirlər."
+    ],
+    "expl": "\"O\" və \"bu\" əvəzlikləri sifəti əvəz etdikdə (hansı?) təyin, ismi əvəz etdikdə (kim?, nə?) cümlədə mübtəda və ya tamamlıq ola bilir."
+  },
+  {
+    "cat": "Azərbaycan dili",
+    "array_index": 891,
+    "q": "\"Açıq qapıdan içəri girəndə, otaqdakı sükut məni qorxutdu\" cümləsində isimləşmə və sifətləşmə ilə bağlı düzgün variantı seçin.",
+    "options": [
+      "C) Cümlədə nə isimləşmə, nə də sifətləşmə var",
+      "A) Cümlədə ismin sifətləşməsi var",
+      "B) Cümlədə sifətin isimləşməsi var",
+      "D) Həm isimləşmə, həm də sifətləşmə var"
+    ],
+    "expl": "\"Açıq qapı\" birləşməsində \"açıq\" sözü zatən sifətdir, qapı isə isimdir. Bu cümlədə heç bir isimləşmə və ya sifətləşmə hadisəsi baş verməmişdir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 95,
+    "q": "Bir məktub (hərf) kompüterdə orta hesabla neçə bayt yer tutur?",
+    "options": [
+      "1 bayt",
+      "8 bayt",
+      "1 bit",
+      "1024 bayt"
+    ],
+    "expl": "Standart kodlaşdırmada (ASCII) hər bir hərf 1 bayt (8 bit) yer tutur. Buna görə 1 hərf ≈ 1 baytdır."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 108,
+    "q": "Bir kompüterin yaddaşı 4 kilobaytdır. Bu neçə bitə bərabərdir?",
+    "options": [
+      "32000 bit",
+      "4096 bit",
+      "4000 bit",
+      "32768 bit"
+    ],
+    "expl": "4 kilobayt = 4 × 1024 = 4096 bayt. 4096 bayt × 8 bit = 32768 bit."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 127,
+    "q": "Hansı qurğu həm giriş, həm də çıxış qurğusu kimi işləyə bilər?",
+    "options": [
+      "Toxunma ekranlı monitor (sensorlu ekran)",
+      "Monitor",
+      "Siçan",
+      "Klaviatura"
+    ],
+    "expl": "Toxunma ekranlı (sensorlu) monitor həm çıxış qurğusu (məlumatları göstərir), həm də giriş qurğusu (istifadəçinin toxunuşunu qəbul edir) kimi fəaliyyət göstərir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 143,
+    "q": "Kompüterin \"beyin\" adlandırılan əsas hissəsi nədir?",
+    "options": [
+      "Yaddaş",
+      "Klaviatura",
+      "Prosessor",
+      "Monitor"
+    ],
+    "expl": "Prosessor kompüterin beyni sayılır, çünki bütün hesablamaları və əmrlərin icrasını o yerinə yetirir. Yaddaş məlumatları saxlayır, monitor isə çıxış qurğusudur."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 207,
+    "q": "Menyunu açıb heç bir bənd seçmədən bağlamaq üçün nə etmək lazımdır?",
+    "options": [
+      "F5 düyməsini basmaq",
+      "Kompüteri söndürmək",
+      "Başqa yerə tıklamaq və ya Esc düyməsini basmaq",
+      "Enter düyməsini basmaq"
+    ],
+    "expl": "Açıq menyunu heç bir əmr seçmədən bağlamaq üçün menyudan kənar hər hansı yerə tıklamaq və ya klaviaturadakı Esc (Escape) düyməsini basmaq kifayətdir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 242,
+    "q": "Aşağıdakı fayl yolunu təhlil edin: C:\\Məktəb\\Sinif5\\riyaziyyat.docx — Bu faylın adı nədir?",
+    "options": [
+      "Məktəb",
+      "riyaziyyat.docx",
+      "Sinif5",
+      "C:"
+    ],
+    "expl": "C:\\Məktəb\\Sinif5\\riyaziyyat.docx yolunda: C: – disk, Məktəb – qovluq, Sinif5 – alt qovluq, riyaziyyat.docx – faylın adıdır. Sonuncu hissə həmişə faylın adıdır."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 269,
+    "q": "Pəncərə üzərindəki hansı hərəkət onun ölçüsünü dəyişmir, yalnız yerini dəyişir?",
+    "options": [
+      "Başlıq çubuğundan sürükləmək",
+      "Böyütmə düyməsini sıxmaq",
+      "Kaydırma çubuğunu istifadə etmək",
+      "Kənardan sürükləmək"
+    ],
+    "expl": "Başlıq çubuğundan tutub sürükləmək pəncərənin ölçüsünü dəyişmir, yalnız iş masasındakı mövqeyini dəyişdirir. Kənardan sürükləmək isə ölçünü dəyişdirir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 273,
+    "q": "Proqram pəncərəsindəki bağlama düyməsi (X) ilə kiçiltmə düyməsi (–) arasındakı fərq nədir?",
+    "options": [
+      "Kiçiltmə düyməsi proqramı bağlayır, bağlama düyməsi isə gizlədir",
+      "Hər ikisi pəncərəni kiçildir",
+      "Heç bir fərq yoxdur, hər ikisi eyni işi görür",
+      "Bağlama düyməsi proqramı tamamilə bağlayır, kiçiltmə düyməsi isə yalnız pəncərəni gizlədir"
+    ],
+    "expl": "Bağlama düyməsi (X) proqramı tamamilə bağlayır və yaddaşdan silir. Kiçiltmə düyməsi (–) isə pəncərəni yalnız ekrandan gizlədib tapşırıqlar panelinə köçürür, proqram isə fonda işləməyə davam edir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 308,
+    "q": "Paint proqramında bir şəkli açıb üzərinə rəsm çəkdikdən sonra fərqli ad ilə saxlamaq üçün hansı əmr istifadə edilir?",
+    "options": [
+      "Saxla (Save / Ctrl+S)",
+      "Çap et (Print)",
+      "Fərqli saxla (Save As)",
+      "Yeni (New)"
+    ],
+    "expl": "'Fərqli saxla' (Save As) əmri ilə fayla yeni ad, yeni format və ya yeni yer seçərək saxlamaq mümkündür. Belə orijinal fayl dəyişməz qalır, yeni versiya ayrıca saxlanılır."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 334,
+    "q": "Şagird şəkildən düzbucaqlı seçmə aləti ilə 50×50 piksellik sahə seçir, kopyalayır (Ctrl+C) və yapışdırır (Ctrl+V). Yapışdırılmış fraqmentin ölçüsü nə qədər olacaq?",
+    "options": [
+      "100×100 piksel",
+      "50×50 piksel (eyni ölçü)",
+      "Ölçü dəyişir, müəyyənləşdirilə bilməz",
+      "25×25 piksel"
+    ],
+    "expl": "Kopyalama-yapışdırma əməliyyatında fraqmentin ölçüsü dəyişmir. 50×50 piksellik fraqment yapışdırıldıqda da 50×50 piksel ölçüsündə olacaq."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 350,
+    "q": "Fraqmentin üfüqi əyilməsi ilə şaquli əyilməsi arasındakı fərq nədir?",
+    "options": [
+      "Üfüqi əyilmə şəkli sol-sağ, şaquli əyilmə isə yuxarı-aşağı əks etdirir",
+      "Heç bir fərq yoxdur, ikisi eynidir",
+      "Şaquli əyilmə şəkli sol-sağ, üfüqi əyilmə isə yuxarı-aşağı əks etdirir",
+      "Üfüqi əyilmə şəkli döndürür, şaquli əyilmə isə böyüdür"
+    ],
+    "expl": "Üfüqi əyilmə (flip horizontal) şəkli sol-sağ istiqamətdə güzgüdə əks etdirir. Şaquli əyilmə (flip vertical) isə şəkli yuxarı-aşağı istiqamətdə əks etdirir. Bu iki əməliyyat bir-birindən fərqlidir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 403,
+    "q": "Word proqramında şəkli seçmək üçün nə etmək lazımdır?",
+    "options": [
+      "Şəkilin üzərinə iki dəfə klikləmək",
+      "Klaviaturada Enter düyməsini basmaq",
+      "Şəkilin üzərinə bir dəfə sol siçan düyməsi ilə klikləmək",
+      "Ctrl+S düymələrini basmaq"
+    ],
+    "expl": "Word proqramında şəkli seçmək üçün şəkilin üzərinə bir dəfə sol siçan düyməsi ilə klikləmək kifayətdir. Seçildikdən sonra şəkilin ətrafında idarəetmə tutacaqları görünür."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 707,
+    "q": "Bir veb saytın strukturunu düşünün. 'www.kitab.az' saytına girəndə ilk açılan ana səhifədən 'Uşaq ədəbiyyatı' bölməsinə, oradan da 'Nağıllar' səhifəsinə keçdiniz. Bu naviqasiya növü necə adlanır?",
+    "options": [
+      "Server yönləndirməsi",
+      "Protokol dəyişikliyi",
+      "Hipermətn naviqasiyası",
+      "URL naviqasiyası"
+    ],
+    "expl": "Veb səhifələr arasında keçid etmək hipermətn naviqasiyası adlanır. WWW-nin əsas prinsipi — veb səhifələrin hiperəlaqələr (linklər) vasitəsilə bir-birinə bağlanmasıdır. Bu, hörümçək toruna bənzər bir şəbəkə yaradır."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 727,
+    "q": "Axtarış zamanı daha az, lakin daha dəqiq nəticə almaq üçün nə etmək lazımdır?",
+    "options": [
+      "Daha az açar söz yazmaq",
+      "Yalnız rəqəm yazmaq",
+      "Heç bir söz yazmamaq",
+      "Daha çox və dəqiq açar söz yazmaq"
+    ],
+    "expl": "Daha çox və dəqiq açar söz yazmaq axtarışı daraldır və lazımsız nəticələri azaldır. Məsələn, \"Bakı\" əvəzinə \"Bakı şəhərinin tarixi abidələri\" yazmaq daha dəqiq nəticə verir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 783,
+    "q": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmadıqda hansı alqoritmdən istifadə olunur?",
+    "options": [
+      "Dövri alqoritmdən",
+      "Budaqlanan alqoritmin tam formasından",
+      "Xətti alqoritmdən",
+      "Budaqlanan alqoritmin natamam formasından"
+    ],
+    "expl": "Bəzən şərtin ödənilmədiyi halın elə bir əhəmiyyəti olmur. Bu zaman budaqlanan alqoritmin natamam formasından istifadə olunur."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 842,
+    "q": "İndiyədək yazılan proqramlarda komandalar necə yerinə yetirilirdi?",
+    "options": [
+      "yalnız şərt doğru olduqda yerinə yetirilirdi",
+      "ixtiyari ardıcıllıqla yerinə yetirilirdi",
+      "aşağıdan başlayaraq ardıcıl yerinə yetirilirdi",
+      "yuxarıdan başlayaraq ardıcıl yerinə yetirilirdi və heç bir komanda buraxılmırdı"
+    ],
+    "expl": "\"İndiyədək yazdığınız proqramlarda komandalar yuxarıdan başlayaraq ardıcıl yerinə yetirilirdi və heç bir komanda buraxılmırdı.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 888,
+    "q": "Adi DVD diskinin tutumu nə qədər olur?",
+    "options": [
+      "1 ton",
+      "4,7 Gbayt",
+      "100 Gbayt",
+      "5 Mbayt"
+    ],
+    "expl": "Mətndə qeyd olunur: \"Adi DVD diskinin tutumu 4,7 Gbayt olur, ancaq daha böyük həcmli DVD diskləri də vardır.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 943,
+    "q": "\"Undo\" əmrinin vəzifəsi dərslikdə necə qeyd olunub?",
+    "options": [
+      "Sənədi saxlamaq",
+      "Çap etmək",
+      "Geri qayıtmaq, son əməliyyatı ləğv etmək",
+      "İrəli getmək"
+    ],
+    "expl": "Mətndə \"Undo\" sözünün tərcüməsi olaraq \"Geri qayıtmaq, son əməliyyatı ləğv etmək\" ifadəsi verilmişdir."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 958,
+    "q": "Kompüterin yaddaşında boşluq simvolu nə qədər yer tutur?",
+    "options": [
+      "1 bit",
+      "1 bayt",
+      "1 kilobayt",
+      "8 bayt"
+    ],
+    "expl": "Mətndə qeyd olunur: \"Başqa sözlə, hər bir simvol, o cümlədən boşluq simvolu kompüterin yaddaşında 1 bayt yer tutur.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 972,
+    "q": "Çap üçün hansı klavişlər kombinasiyasından yararlanmaq olar?",
+    "options": [
+      "<Alt+P>",
+      "<Ctrl+S>",
+      "<Ctrl+P>",
+      "<Shift+P>"
+    ],
+    "expl": "Çap üçün ＜Ctrl+P＞ klavişlər kombinasiyasından da yararlanmaq olar."
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 1042,
+    "q": "Bu dərsin başlığı kompüterin yaddaşında nə qədər yer tutur?",
+    "options": [
+      "1 kilobayt",
+      "30 bit",
+      "30 bayt",
+      "8 bayt"
+    ],
+    "expl": "Mətndə qeyd olunur: \"Məsələn, bu dərsin başlığı kompüterin yaddaşında 30 bayt yer tutacaq.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 1178,
+    "q": "Kompüterin əsas yaddasaxlama qurğusu necə adlanır?",
+    "options": [
+      "DVD disk",
+      "Sərt disk",
+      "SD-kart",
+      "RAM"
+    ],
+    "expl": "Mətndə yazılıb: \"Kompüterin əsas yaddasaxlama qurğusu sərt diskdir.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 1186,
+    "q": "Adi DVD diskinin tutumu nə qədər olur?",
+    "options": [
+      "100 Gbayt",
+      "5 Mbayt",
+      "1 ton",
+      "4,7 Gbayt"
+    ],
+    "expl": "Mətndə qeyd olunur: \"Adi DVD diskinin tutumu 4,7 Gbayt olur, ancaq daha böyük həcmli DVD diskləri də vardır.\""
+  },
+  {
+    "cat": "İnformatika",
+    "array_index": 1263,
+    "q": "Kompüterlərdə mətn yığmaq üçün ən çox istifadə olunan standart şrift hansıdır?",
+    "options": [
+      "Comic Sans",
+      "Times New Roman",
+      "Arial Black",
+      "Courier"
+    ],
+    "expl": "Mətndə verilib: “Çox zaman mətnləri Times New Roman, Arial, yaxud Courier şrifti ilə yığırlar.”"
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 9,
+    "q": "İkilik say sistemində texniki baxımdan \"0\" rəqəmi nəyi ifadə edir?",
+    "options": [
+      "Yanlış məlumat",
+      "Siqnal var",
+      "Yeni mərtəbə",
+      "Siqnal yoxdur"
+    ],
+    "expl": "\"Sadəcə, iki rəqəmi (0 və 1-i) on rəqəmlə müqayisədə texniki baxımdan gerçəkləşdirmək daha asandır: 1 – siqnal var, 0 – siqnal yoxdur.\""
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 12,
+    "q": "Verilmiş ədədin hansı say sistemində yazıldığını göstərmək üçün nədən istifadə olunur?",
+    "options": [
+      "Mötərizədən",
+      "Üst indeksdən",
+      "Xüsusi hərflərdən",
+      "Aşağı indeksdən"
+    ],
+    "expl": "\"Verilmiş ədədin hansı say sistemində yazıldığını göstərmək lazımdır. Bunun üçün aşağı indeksdən istifadə olunur;\""
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 39,
+    "q": "İkilik say sistemində texniki baxımdan \"0\" rəqəmi nəyi ifadə edir?",
+    "options": [
+      "Siqnal yoxdur",
+      "Yeni mərtəbə",
+      "Yanlış məlumat",
+      "Siqnal var"
+    ],
+    "expl": "\"Sadəcə, iki rəqəmi (0 və 1-i) on rəqəmlə müqayisədə texniki baxımdan gerçəkləşdirmək daha asandır: 1 – siqnal var, 0 – siqnal yoxdur.\""
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 45,
+    "q": "Onluq ədədi ikilik ədədə çevirdikdə bölmə prosesi nə vaxta qədər davam etdirilir?",
+    "options": [
+      "Qismət 0 olanadək",
+      "Qalıq 0 olanadək",
+      "Qalıq qalmada bölmə alınanadək",
+      "Qismət 1 olanadək"
+    ],
+    "expl": "\"onluq ədəd 2-yə bölünür, sonra qismət 2-yə bölünür və bu proses qismət 0 olanadək davam etdirilir.\""
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 47,
+    "q": "İkilik ədədi yazarkən alınan qalıqlar hansı ardıcıllıqla düzülür?",
+    "options": [
+      "Düz ardıcıllıqla",
+      "Böyükdən kiçiyə",
+      "Tərs ardıcıllıqla",
+      "Kiçikdən böyüyə"
+    ],
+    "expl": "\"Sonda hər addımdakı qalıqların tərs ardıcıllıqla düzülüşü verilmiş ədədin 2-lik say sistemində yazılışı olur.\""
+  },
+  {
+    "cat": "İnformatika 6",
+    "array_index": 81,
+    "q": "Onluq ədədi ikilik say sisteminə çevirdikdən sonra, əldə olunan qalıqlar necə düzülməlidir?",
+    "options": [
+      "Artan sıra ilə",
+      "Tərs ardıcıllıqla",
+      "Azalan sıra ilə",
+      "Düz ardıcıllıqla"
+    ],
+    "expl": "\"Sondahər addımdakı qalıqların tərs ardıcıllıqla düzülüşü verilmiş ədədin -lik say sistemində yazılışı olur.\""
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 16,
+    "q": "'irəli N' komandasında 1 addım nəyə bərabərdir?",
+    "options": [
+      "1 sm uzunluğa",
+      "Bağanın tam addımına",
+      "1 ekran nöqtəsinə (pikselə)",
+      "10 pikselə"
+    ],
+    "expl": "Mətndə qeyd olunur: 'Burada 1 addım 1 ekran nöqtəsinə (pikselə) bərabərdir.'"
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 20,
+    "q": "ALPLogo mühitində bağanın iş sahəsinin mərkəzində üzüyuxarı dayanması üçün hansı komanda tətbiq edilir?",
+    "options": [
+      "geri",
+      "ilkinvəziyyət",
+      "mərkəz",
+      "get X, Y"
+    ],
+    "expl": "Mətndə qeyd olunur: 'ilkinvəziyyət - İlkin vəziyyət al, yəni iş sahəsinin mərkəzində üzüyuxarı dayan.'"
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 70,
+    "q": "Aşağıdakı uzantılardan hansı şəkil (rəsm) faylına aiddir?",
+    "options": [
+      ".mp4",
+      ".png",
+      ".xlsx",
+      ".docx"
+    ],
+    "expl": ".png — şəkil faylı uzantısıdır. .docx — Word sənədi, .mp4 — video fayl, .xlsx isə Excel cədvəlidir."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 74,
+    "q": "Aşağıdakılardan hansı faylın adında istifadə edilməsi QADAĞAN olan simvollardandır (Windows-da)?",
+    "options": [
+      "Bölmə işarəsi ( / )",
+      "Tire işarəsi ( - )",
+      "Nöqtə ( . )",
+      "Alt xətt ( _ )"
+    ],
+    "expl": "Windows əməliyyat sistemində fayl adında / \\ : * ? \" < > | kimi simvollardan istifadə etmək qadağandır. Tire (-), alt xətt (_) və nöqtə (.) isə fayl adında istifadə edilə bilər."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 114,
+    "q": "CPU abbreviaturasının ingilis dilindən açılışı hansıdır?",
+    "options": [
+      "Control Power Unit",
+      "Computer Personal Unit",
+      "Central Process Unit",
+      "Central Processing Unit"
+    ],
+    "expl": "CPU ingilis dilində \"Central Processing Unit\" (Mərkəzi Emal Qurğusu) sözlərinin baş hərflərindən yaranmışdır."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 121,
+    "q": "Aşağıdakılardan hansı giriş qurğusudur?",
+    "options": [
+      "Səs dınamikləri",
+      "Skaner",
+      "Printer",
+      "Monitor"
+    ],
+    "expl": "Skaner kağız üzərindəki məlumatı rəqəmsallaşdırıb kompüterə daxil edən giriş qurğusudur. Monitor, printer və dinamiklər çıxış qurğularıdır."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 297,
+    "q": "Mətn faylının həcmi 2 KB-dır. Bu faylda təxminən neçə simvol var? (Mətn ASCII sistemində kodlaşdırılıb)",
+    "options": [
+      "4096",
+      "2000",
+      "1024",
+      "2048"
+    ],
+    "expl": "1 KB = 1024 baytdır, yəni 2 KB = 2048 bayt. ASCII sistemində 1 simvol 1 bayt olduğu üçün mətndə 2048 simvol var."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 363,
+    "q": "Qlobal və yerli dəyişənlərin eyni adlı olması halında altproqram daxilində həmin ada müraciət etdikdə hansı dəyişən çağırılır?",
+    "options": [
+      "Hər ikisi eyni vaxtda",
+      "Qlobal dəyişən",
+      "Yerli dəyişən",
+      "Proqram xəta verir"
+    ],
+    "expl": "Əgər yerli və qlobal dəyişənlərin adları eynidirsə, altproqram daxilində yerli dəyişən üstünlük təşkil edir."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 398,
+    "q": "Kompüteri yerli şəbəkəyə və ya modemə qoşmaq üçün istifadə edilən kabel növü necə adlanır?",
+    "options": [
+      "VGA",
+      "USB kabel",
+      "HDMI",
+      "Şəbəkə kabeli (Ethernet kabeli)"
+    ],
+    "expl": "Qurğuları şəbəkəyə birləşdirmək üçün ən çox Ethernet (şəbəkə kabeli) istifadə olunur."
+  },
+  {
+    "cat": "İnformatika 7",
+    "array_index": 436,
+    "q": "Bağanı görünməz etmək üçün hansı komanda tətbiq edilir?",
+    "options": [
+      "İLK_VƏZİYYƏT",
+      "GİZLƏN",
+      "SİL",
+      "GÖRÜN"
+    ],
+    "expl": "GİZLƏN komandası bağanı ekranda görünməz edir ki, çəkilən şəkil daha aydın görünsün."
+  },
+  {
+    "cat": "İnformatika 4",
+    "array_index": 15,
+    "q": "İnternetin ən sürətli ünsiyyət növü hansıdır?",
+    "options": [
+      "Sosial şəbəkə",
+      "Adi poçt",
+      "Elektron poçt",
+      "Axtarış sistemi"
+    ],
+    "expl": "\"Məhz ən sürətli ünsiyyət növünün – elektron poçtun (e-poçtun) meydana çıxması İnterneti milyonların sevimlisinə çevirdi.\""
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 74,
+    "q": "İbtidai insanların təbiətin hazır məhsullarından istifadə etməsi necə adlanır?",
+    "options": [
+      "İstehsal",
+      "Mənimsəmə",
+      "Ticarət",
+      "Mübadilə"
+    ],
+    "expl": "Təbiətin hazır meyvə, bitki və heyvanlarından istifadə prosesi mənimsəmə adlanır, çünki insanlar özləri hələ heç nə istehsal etmirdilər."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 563,
+    "q": "1192-ci il zəlzələsinə qədər Şirvanşahlar dövlətinin paytaxtı hansı şəhər olmuşdur?",
+    "options": [
+      "Şamaxı",
+      "Gəncə",
+      "Bərdə",
+      "Bakı"
+    ],
+    "expl": "Şirvanşahlar dövlətinin ilk əsas paytaxtı Şamaxı şəhəri olmuş, 1192-ci il zəlzələsindən sonra isə Bakıya köçürülmüşdür."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 624,
+    "q": "Azərbaycan Xalq Cümhuriyyətinin ilk paytaxtı hansı şəhər olmuşdur?",
+    "options": [
+      "Təbriz",
+      "Gəncə",
+      "Şamaxı",
+      "Bakı"
+    ],
+    "expl": "Bakı şəhəri yadelli qüvvələrin işğalında olduğu üçün AXC hökuməti əvvəlcə Gəncə şəhərində fəaliyyətə başlamış və Gəncə ilk paytaxt olmuşdur."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 742,
+    "q": "Xocalı soyqırımı nə vaxt baş vermişdir?",
+    "options": [
+      "1990-cı il 20 yanvar",
+      "1993-cü il 23 iyul",
+      "1992-ci il 26 fevral",
+      "1992-ci il 8 may"
+    ],
+    "expl": "Xocalı faciəsi 1992-ci il fevralın 25-dən 26-na keçən gecə erməni silahlı qüvvələri tərəfindən törədilmişdir."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 889,
+    "q": "Azərbaycanda Zəfər Günü hər il hansı tarixdə qeyd edilir?",
+    "options": [
+      "26 iyun",
+      "27 sentyabr",
+      "8 noyabr",
+      "10 noyabr"
+    ],
+    "expl": "Şuşa şəhərinin işğaldan azad edildiyi gün - 8 noyabr tarixi Azərbaycanda hər il Zəfər Günü kimi qeyd olunur."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 972,
+    "q": "Dahi şairimiz Nizami Gəncəvinin əsl adı nə olmuşdur?",
+    "options": [
+      "Yusif",
+      "Məhəmməd",
+      "Nizami",
+      "İlyas"
+    ],
+    "expl": "Nizami onun təxəllüsüdür, şairin əsl adı isə İlyas, atasının adı isə Yusif olmuşdur."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 974,
+    "q": "Nizami Gəncəvinin atası necə adlanırdı?",
+    "options": [
+      "Yusif",
+      "Zəki",
+      "İlyas",
+      "Fəxrəddin"
+    ],
+    "expl": "Nizami Gəncəvinin tam adı İlyas Yusif oğludur. Yəni atasının adı Yusifdir."
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 1174,
+    "q": "Qobustanda qədim qayaüstü təsvirlər ilk dəfə neçənci ildə və kim tərəfindən qeydə alınmışdır?",
+    "options": [
+      "1966-cı ildə Məmmədəli Hüseynov tərəfindən",
+      "1939-cu ildə Həsən Əliyev tərəfindən",
+      "1939-cu ildə İshaq Cəfərzadə tərəfindən",
+      "1968-ci ildə İshaq Cəfərzadə tərəfindən"
+    ],
+    "expl": "Mətndə qeyd edilir: \"Azərbaycanda qədim qayaüstü təsvirlər ilk dəfə Qobustanda 1939-cu ildə arxeoloq İshaq Cəfərzadə tərəfindən qeydə alınmışdır.\""
+  },
+  {
+    "cat": "Azərbaycan tarixi",
+    "array_index": 1213,
+    "q": "Albaniyanın şimal-qərbində hansı vilayət yerləşirdi?",
+    "options": [
+      "Kaspiana",
+      "Qəbələ",
+      "Çola",
+      "Kambisena"
+    ],
+    "expl": "Mətndə qeyd edilir: \"Ölkənin şimal-qərbində Kambisena, şimal-şərqində Çola vilayətləri yerləşirdi.\""
+  }
+]

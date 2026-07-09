@@ -1,0 +1,546 @@
+[
+  {
+    "id": "11-003-1.2-xatırlama-sadə-05-58ca",
+    "passport_id": "11-003-1.2-xatırlama-sadə-05-58ca",
+    "question": "Bircins mühitdə elektrik sahəsinin intensivliyinin vakuumdakı intensivlikdən neçə dəfə kiçik olduğunu hansı fiziki kəmiyyət göstərir?",
+    "options": [
+      "Sərbəst düşmə təcili",
+      "Mühitin dielektrik nüfuzluğu",
+      "Kulon mütənasiblik əmsalı",
+      "Elektrik yükünün səth sıxlığı"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dərslikdə qeyd edildiyi kimi, mühitin dielektrik nüfuzluğu (ε) bircins dielektrik daxilinə elektrik yükünün yaratdığı sahənin intensivliyinin vakuumdakından neçə dəfə kiçik olduğunu göstərən kəmiyyətdir (ε = E0 / E).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.2. Elektrostatik sahə. Elektrostatik sahənin intensivliyi",
+    "_duplicate_of": "Fizika 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "11-003-1.3-anlama-orta-06-459c",
+    "passport_id": "11-003-1.3-anlama-orta-06-459c",
+    "question": "Elektrik sahəsində intensivlik vektorunun istiqaməti potensiala görə necə yönəlir?",
+    "options": [
+      "Potensialı böyük olan nöqtədən kiçik olan nöqtəyə doğru",
+      "Potensialı kiçik olan nöqtədən böyük olan nöqtəyə doğru",
+      "Potensialın sabit qaldığı hər hansı ixtiyari istiqamətdə",
+      "Ekvipotensial səthlərə paralel istiqamətdə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə açıq şəkildə qeyd olunur ki, sahənin intensivliyinin istiqaməti potensialı böyük olan nöqtədən kiçik olan nöqtəyə doğrudur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
+    "_duplicate_of": "Fizika 11",
+    "context_chunk": "ixtiyari\nbir nöqtəsi ilə sahənin potensialının sıfır qəbul olunan digər nöqtəsi arasındakı potensiallar fərqi\nsahənin həmin nöqtəsindəki potensialı adlanır.\nAdətən, potensialm hesablanması sonsuzluğa nəzərən\naparılır.\n• Potensial - ədədi qiymətcə müsbət vahid sınaq yükünün müsbət q yükündən itələnməsi nəticəsində onun\nsonsuzluğa yerdəyişməsi zamanı görülən işə bərabərdir:\nφ=φ\n1\n-φ=A\nq(6)"
+  },
+  {
+    "id": "11-003-1.3-anlama-orta-07-22d6",
+    "passport_id": "11-003-1.3-anlama-orta-07-22d6",
+    "question": "Nöqtəvi elektrik yükü tərəfindən yaradılan elektrik sahəsinin ekvipotensial səthləri həndəsi olaraq hansı formadadır?",
+    "options": [
+      "Qüvvə xətlərinə perpendikulyar müstəvilər",
+      "Mərkəzi həmin yükdə yerləşən konsentrik sferalar",
+      "Bir-birini kəsən müxtəlif radiuslu çevrələr",
+      "Qüvvə xətlərinə paralel müstəvilər"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd edilir ki, nöqtəvi yük üçün ekvipotensial səthlər mərkəzi bu yükdə olan konsentrik sferalardır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
+    "_duplicate_of": "Fizika 11",
+    "context_chunk": "ixtiyari\nbir nöqtəsi ilə sahənin potensialının sıfır qəbul olunan digər nöqtəsi arasındakı potensiallar fərqi\nsahənin həmin nöqtəsindəki potensialı adlanır.\nAdətən, potensialm hesablanması sonsuzluğa nəzərən\naparılır.\n• Potensial - ədədi qiymətcə müsbət vahid sınaq yükünün müsbət q yükündən itələnməsi nəticəsində onun\nsonsuzluğa yerdəyişməsi zamanı görülən işə bərabərdir:\nφ=φ\n1\n-φ=A\nq(6)"
+  },
+  {
+    "id": "11-003-1.4-təhlil-orta-5-d19f",
+    "passport_id": "11-003-1.4-təhlil-orta-5-d19f",
+    "question": "Akkumulyatordan fərqli olaraq kondensatorun enerjidən istifadəsindəki əsas fərqləndirici xüsusiyyəti nədir?",
+    "options": [
+      "Mexaniki enerjini birbaşa elektrik enerjisinə çevirmək xassəsinə malikdir",
+      "Elektrik enerjisini qeyri-məhdud müddətə və itkisiz özündə saxlaya bilir",
+      "Cərəyanın istiqamətini dövrədə periodik olaraq dəyişə bilir",
+      "Malik olduğu enerjini kiçik müqavimətli dövrələrdə ani boşalda bilir"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dərslikdə qeyd edilir ki, kondensator uzun müddət enerji saxlayan akkumulyator ola bilməz, çünki yük itkisi baş verir. Lakin o, akkumulyatordan fərqli olaraq malik olduğu enerjini kiçik müqavimətli dövrələrdə ani boşalda bilir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Kondensator. Elektrik tutumu",
+    "_duplicate_of": "Fizika 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "11-003-1_5-A-sadə-3-e213",
+    "passport_id": "11-003-1_5-A-sadə-3-e213",
+    "question": "Elektrik tutumları C₁ və C₂ olan iki kondensator paralel birləşdirildikdə batareyanın ümumi elektrik tutumu hansı düsturla hesablanır?",
+    "options": [
+      "C = (C₁ + C₂) / 2",
+      "C = C₁ + C₂",
+      "C = C₁ * C₂ / (C₁ + C₂)",
+      "C = C₁ - C₂"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Paralel birləşdirilmiş kondensatorlar batareyasının ümumi elektrik tutumu ayrı-ayrı kondensatorların elektrik tutumlarının cəminə bərabərdir: C = C₁ + C₂.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.5. Kondensatorların birləşdirilməsi",
+    "_duplicate_of": "Fizika 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "11-004-01-1-S-03-4e41",
+    "passport_id": "11-004-01-1-S-03-4e41",
+    "question": "Yer səthinin müəyyən hissəsinin şaquli kəsiyinin təsviri necə adlanır?",
+    "options": [
+      "Kartodiaqram",
+      "Profil",
+      "Telluri",
+      "Anamorfoz xəritə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yer səthinin müəyyən hissəsinin şaquli kəsiyinin təsviri profil adlanır. Ondan relyef formalarının öyrənilməsində, yamacların meyilliyinin təyin edilməsində istifadə olunur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Diaqnostik qiymətləndirmə",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "(AZN)\n1\nUn məhsulları (çörək və çörək məhsulları)\n136,8\n0,50-1,00\n2 (AZN)\n1\n2\nTərtib etdiyiniz siyahı və illik xərcləriniz üçün aldığınız nəticəni evdə valideynlərinizlə müzakirə edin.\nAilə büdcəsinə qənaət etmək barədə təkliflər hazırlayın.\n5.6\nTULLANTILAR VƏ ONLARDAN İSTİFADƏ\nSizə\nməlumdur\nMütəxəssislərin fikrincə, iri şəhərlərdə gün ərzində bir nəfər 1 kq məişət\ntullantısı atır. Bu tullantılar ətraf mühitin çirklənməsində əsas mənbə\nsayılsa da, onlar qiymətli xammal hesab olunur. Tullantılardan səmərəli\nistifadə sayəsində faydalı qazıntılara qənaət etmək mümkündür.\nTƏDQİQAT İŞİ •\nŞəklə əsasən tullantıların hansı metodlarla utilizasiyasının məqsədəuyğun olduğunu təhlil edin.\nMüzakirə edin və nəticə çıxarın:\n- Hansı metodu daha üstün hesab edirsiniz?\n- Məqsədəuyğun hesab etdiyiniz metodun hansı iqtisadi, sosial və ekoloji üstünlükləri vardır?\nTullantılar ətraf mühitin çirklənməsində mühüm problemlərdən biridir. Tullantılar\n2 qrupa ayrılır.\n• Məişət tullantıları\n- gündəlik istifadə\nolunan kağız, sellofan, plastik və şüşə\nqablar, qida tullantıları. Təmir zamanı\natılan tullantılar da məişət tullantıları\nsayılır.\n• İstehsalat tullantıları\n- tibb ocaqlarında,\nsənaye və kənd təsərrüfatı müəssisələrində\natılan, eləcə də radioaktiv\nmaddələrdir."
+  },
+  {
+    "id": "11-004-01-04-orta-09-aca1",
+    "passport_id": "11-004-01-04-orta-09-aca1",
+    "question": "Sənaye xəritələrində elektrik enerjisinin istehsal olunduğu böyük SES-lərin yaxınlığında adətən hansı sənaye sahəsinin mərkəzləri yerləşdirilir və bunun əsas səbəbi nədir?",
+    "options": [
+      "Alüminium istehsalı müəssisələri; çünki bu istehsal sahəsi yüksək enerji tutumludur və ucuz enerji tələb edir",
+      "Kənd təsərrüfatı maşınqayırması; çünki ağır texnikalar birbaşa çətin dağlıq relyefdə sınaqdan keçirilməlidir",
+      "Yüngül sənaye müəssisələri; çünki onların xammalı bilavasitə çaykənarı və dağətəyi ərazilərdə yetişdirilir",
+      "Meşə və ağac emalı sənayesi; çünki bu tip istehsal müəssisələri fəaliyyət üçün çoxlu su ehtiyatına ehtiyac duyur"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunur ki, ucuz enerji mərkəzlərinə yaxın ərazilərdə (məsələn, SES-lərin yanında) enerji tutumlu istehsal sahələri, o cümlədən alüminium istehsalı yerləşdirilir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Ümumiləşdirici sual və tapşırıqlar (1-ci bölmə)",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "A\nvəB\nnöqtələri arasında məsafəni meridian üzrə dərəcə və km-lə hesablayın. 40° şm.e.-də yerləşən Bakı (50° ş.u.) və Ankara (33° ş.u.) şəhərləri arasında\nməsafəni paralel üzrə dərəcə və km-lə hesablayın (40°-lik paraleldə\n1° = 85,4 km). Dünya xəritəsində 20° q.u. və 40° ş.u. arasında 40°-lik paralel üzrə məsafə\n20 sm olarsa, xəritənin bu hissəsi üçün xüsusi miqyası tapın (1° = 85,4 km). Baş miqyası 1: 100 000 000 olan dünya xəritəsində 30° şm.e. və 60° şm.e.\narasında meridian üzrə məsafə 4 sm-dir. Xəritənin bu hissəsi üçün xüsusi\nmiqyası tapın və baş miqyasla müqayisə edin.\nXəritədə istənilən iki nöqtə arasındakı məsafənin nə qədər təhrif olunduğunu bilmək üçün\nəvvəlcə xəritənin baş miqyasına əsasən bu nöqtələr arasındakı məsafə tapılır. Sonra bu iki\nnöqtə arasındakı məsafə 1°-lik meridian və paralel qövsləri\nvasitəsilə hesablanır. Alınan cavabların fərqi xəritədə həmin\nnöqtələr arasındakı məsafənin nə qədər təhrif olunduğunu göstərir. Miqyası 1: 20 000 000 olan xəritə-sxemdə\nA\nvəB\nnöqtələri\narasında məsafə 12,5 sm-dir. Onların arasındakı məsafəni\nmeridian qövsünə və miqyasa görə hesablayın. Xəritədə bu\nməsafənin neçə km təhrif edildiyini hesablayın. Miqyası 1: 100 000 000 olan xəritədə\nC\nvəD\nnöqtələri arasında\nməsafə 3 sm-dir. Verilən məntəqələr 50° c.e. (1° = 71,7 km)\nüzərində yerləşir.\nC\nnöqtəsinin coğrafi uzunluğunun 70° ş.u.,\nD\n-nin isə 30° ş.u. olduğunu nəzərə alaraq onlar arasında\ndərəcə və km-lə məsafəni paralel qövsünə və miqyasa görə\nhesablayın. Xəritədə bu məsafəni"
+  },
+  {
+    "id": "11-004-1.1-tetbiq-orta-09-24ca",
+    "passport_id": "11-004-1.1-tetbiq-orta-09-24ca",
+    "question": "Ərazidə geoloji axtarış işləri aparan qrup süxur laylarının və torpaq qatlarının yatım formalarını dəqiq vizuallaşdırmaq istəyirsə, xəritə üzərində hansı təhlil növünü aparmalıdır?",
+    "options": [
+      "Qrafik təhlil",
+      "Qlobal kartometrik təhlil",
+      "Dərəcə torunun təhlili",
+      "Kartoqrafik generalizasiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dərslikdə qeyd edildiyi kimi, qrafik təhlil vasitəsilə ərazinin profili qurulur. Profil isə torpaq qatlarının və süxur laylarının yatım formalarının təyinində istifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.1. Kartoqrafik tədqiqat metodları",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "1.2.\nPraktik dərs."
+  },
+  {
+    "id": "11-004-1.2-ANL-C-13-3d46",
+    "passport_id": "11-004-1.2-ANL-C-13-3d46",
+    "question": "Mətnə görə, vizual təhlil zamanı yalnız kəmiyyət yox, həm də obyektlərin keyfiyyət xüsusiyyətlərini də oxumaq mümkündür. Quba-Xaçmazın \"Keyfiyyət-fon üsulu ilə tərtib edilmişdir\" xüsusiyyətini vurğulamaq vizual təhlilin hansı ardıcıl mərhələsinə aiddir?",
+    "options": [
+      "Dərslikdəki ardıcıllığa görə ikinci addım sayılan, xəritədə obyekt və hadisələrin təsvir olunduğu üsulun aydınlaşdırılması mərhələsinə.",
+      "Məlumatlar toplandıqdan sonra ümumi coğrafi qanunauyğunluqların tətbiq edilərək yekun elmi nəticənin formalaşdırılması mərhələsinə.",
+      "Koordinatların təyini bitdikdən sonra relyef profillərinin qrafik təsvirə çevrilərək riyazi əsasların hesablanması mərhələsinə.",
+      "Təsərrüfat sahələrinin coğrafi məkanda fəzavi yerləşməsini izah edən iqtisadi mənfəət göstəricilərinin ixtisaslaşma üzrə təhlili mərhələsinə."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qaydaya əsasən, təsvir üsulunun (o cümlədən keyfiyyət-fon üsulu) qeyd olunması, vizual təhlilin 2-ci ardıcıl bəndi olan \"xəritədə təsvir üsulları aydınlaşdırılır\" mərhələsinin birbaşa təzahürüdür.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Coğrafi xəritələrin vizual təhlili",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "Layihə:\n\"Qarabağ iqtisadi rayonunun\nkompleks səciyyəsi\"\n1.3."
+  },
+  {
+    "id": "11-004-02-1-1-02-81c3",
+    "passport_id": "11-004-02-1-1-02-81c3",
+    "question": "Dairəvi diaqramlardan daha çox hansı məqsədlə istifadə olunur?",
+    "options": [
+      "Kəmiyyətlərin zamana görə artım sürətini ardıcıl xətlərlə birləşdirmək üçün",
+      "Ərazinin relyefinin şaquli kəsiyini vizual olaraq mərhələli şəkildə təqdim etmək üçün",
+      "Bir neçə kəmiyyət arasında olan nisbəti bütövün hissələri kimi əyani göstərmək üçün",
+      "Obyektlərin coğrafi koordinatlarını rəqəmsal formada dəqiq təyin etmək üçün"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə göstərilir ki, dairəvi diaqramlar kəmiyyətlər arasında nisbəti əyani şəkildə göstərmək üçündür, burada hər bir kəmiyyət 360 dərəcəlik bütövün müəyyən dərəcə və ya faizlə ifadə olunan hissəsini təşkil edir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Qrafik təsvirlər",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "1.4.\nPraktik dərs."
+  },
+  {
+    "id": "11-004-1.4-tətbiq-orta-06-64bf",
+    "passport_id": "11-004-1.4-tətbiq-orta-06-64bf",
+    "question": "Gamışdağ - Sabirabad xətti boyunca profil qurularkən şaquli oxun hündürlük şkalasında nəzərə alınmalı olan ən vacib amil hansıdır?",
+    "options": [
+      "Hər iki məntəqə arasındakı məsafənin yalnız ekvator oxuna görə dəqiq hesablanması",
+      "Qurulan bölgüdə məntəqələrin minimum və maksimum hündürlüklərinin nəzərə alınması",
+      "Yalnız mütləq hündürlüyü müsbət olan məntəqə rəqəmlərinin ardıcıl yerləşdirilməsi",
+      "Kəsişən bütün horizontalların əvəzinə sualtı izobatların tətbiqinin zəruriliyi"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə nümunə kimi verilmiş ardıcıllıqda profil qurularkən şaquli oxda minimum (Sabirabad: -11 m) və maksimum (Gamışdağ: 3724 m) hündürlüklərin nəzərə alınmalı olduğu xüsusi qeyd edilmişdir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Praktik dərs. Coğrafi xəritələrin qrafik təhlili",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "- xəritələrə əsasən qurulmuş qrafik təsvirlər vasitəsilə aparılan\ntədqiqatlardır; məsələn, ərazinin profili qrafik təhlil vasitəsilə qurulur. 2.Statistik məlumatlar əsasında sütunlu diaqram qurun."
+  },
+  {
+    "id": "11-004-0105-ANL-1-05-1043",
+    "passport_id": "11-004-0105-ANL-1-05-1043",
+    "question": "Hansı növ emal müəssisələrinin mütləq şəkildə meşə massivlərinə yaxın ərazilərdə yerləşdirilməsi qanunauyğun hesab edilir?",
+    "options": [
+      "Şəkər tozu və bitki yağı istehsalı müəssisələrinin",
+      "Ağac emalı və sellüloz-kağız istehsalı müəssisələrinin",
+      "Maşınqayırma və cihazqayırma zavodlarının",
+      "Pambıqtəmizləmə və meyvə-konserv zavodlarının"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dərslikdə sənaye xəritələrində ağac emalı və sellüloz-kağız istehsalı mərkəzlərinin meşə massivlərinin mövcudluğu barədə məlumat verdiyi xüsusi olaraq qeyd edilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.5. Təsərrüfat sahələrinin yerləşməsinin xəritələrə əsasən təhlili",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "11-004-CIS-TEH-O-10-f11a",
+    "passport_id": "11-004-CIS-TEH-O-10-f11a",
+    "question": "Operativ kartoqrafiyanın əhalinin və əlaqədar təşkilatların vaxtında məlumatlandırılmasında rolu nədən ibarətdir?",
+    "options": [
+      "Xəritələrdə ancaq seysmik zonaların uzunmüddətli tarixini arxivləşdirərək ənənəvi təhlilə şərait yaratması",
+      "Xəritələşdirmə zamanı bazaya daxil edilən məlumatların dərhal təhlil edilərək təhlükəli proseslərin inkişafının izlənməsi",
+      "Ərazidə yalnız faydalı qazıntı yataqlarının mövqeyini müəyyən edərək sənaye mərkəzlərinə məlumat göndərilməsi",
+      "Püskürən vulkanların qalıqlarının yerüstü nəqliyyatla daşınması üçün optimal marşrutların hesablanması"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə operativ kartoqrafiyanın əsas mahiyyəti məlumatların dərhal təhlil olunub meşə yanğınları, radiasiya yayılması kimi proseslərin inkişafını izləmək və arealını proqnozlaşdırmaqla insanları vaxtında xəbərdar etməsi kimi göstərilib.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Layihə: CİS-lə axtarış",
+    "_duplicate_of": "Coğrafiya 11",
+    "context_chunk": "Mövzu:\nGenomumodifikasiya olunmuş orqanizmlər (GMO)\nMəqsəd:"
+  },
+  {
+    "topic": "THEMA 4: Sitten und Bräuche",
+    "category": "Alman dili 11",
+    "question": "Lesen Sie den folgenden Satz:\n„Allerdings kleiden sich nicht alle Thailänder an den Wochentagen immer mit der passenden Farbe.“\n\nWas lässt sich aus dieser Aussage über die thailändische Tradition schlussfolgern?",
+    "options": [
+      "Die Regierung hat das Tragen von farbiger Kleidung strengstens verboten.",
+      "Die Thailänder interessieren sich überhaupt nicht für ihre alten Traditionen.",
+      "Es ist eine freiwillige Tradition und keine strenge Pflicht für jeden Bürger.",
+      "Die Farben haben ihre Bedeutung in der hinduistischen Mythologie völlig verloren."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cümlədə 'Ancaq bütün tailandlılar həftənin günlərində həmişə uyğun rəngdə geyinmirlər' deyilir. Bu, həmin ənənənin məcburi olmadığını, insanların öz seçiminə buraxıldığını göstərir. B, C və D variantları isə mətndəki fikri təhrif edən uydurma mülahizələrdir.",
+    "difficulty": "sadə",
+    "bloom_level": "anlama",
+    "passport_id": "11-alman-gold-4-2",
+    "_duplicate_of": "Alman dili 11",
+    "context_chunk": "Bräuche\n1\nSehen Sie die Bilder\nan: Welche Sitten und\nBräuche kann man auf\nden Bildern erkennen?\nWas wissen Sie\nüber diese\nTraditionen?\n2\nA) Recherchieren Sie\nverschiedene Sitten und\nBräuche in Nachbarländern.\nB) Entscheiden Sie, ob Sie für oder gegen Tradition sind und machen\nSie Ihre eigene Liste."
+  },
+  {
+    "topic": "THEMA 3: Aserbaidschan / Deutschland",
+    "category": "Alman dili 11",
+    "difficulty": "orta",
+    "question": "Lesen Sie: 'Das Grab von Momina Khatun ist das einzige Denkmal aus diesem Komplex, das unsere Zeit erreicht hat.' Was bedeutet dieser Satz im Kontext?",
+    "options": [
+      "Momina Khatun hat das Gebäude selbst errichtet.",
+      "Das Mausoleum wurde erst kürzlich gebaut.",
+      "Das Mausoleum wurde von der UNESCO neu gebaut.",
+      "Von einem größeren Denkmalensemble ist nur dieses Gebäude bis heute erhalten geblieben."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu cümlə çıxarım (Inference) bacarığını ölçür. 'Das unsere Zeit erreicht hat' ifadəsi 'bu günümüzə qədər gəlib çatmış' deməkdir. 'Aus diesem Komplex' isə bir kompleksin hissəsi olduğunu göstərir – deməli başqa hissələr dağılıb məhv olub. A, C, D isə mətnin dəqiq ifadəsindən yanlış nəticə çıxarır.",
+    "bloom_level": "tətbiq",
+    "passport_id": "11-alman-gold-3-5",
+    "_duplicate_of": "Alman dili 11",
+    "context_chunk": "Matthias, 16 1\nWelche Bundesländer kennen Sie? Finden Sie die\nLandeshauptstädte den Bundesländern zu.\n2\nFinden Sie die folgenden Sehenswürdigkeiten in Deutschland\nund diskutieren Sie, zu welchem Bundesland sie gehören!"
+  },
+  {
+    "topic": "THEMA 4: Sitten und Bräuche",
+    "category": "Alman dili 11",
+    "question": "„Somit steht die Farbe Gelb für den Montag, Rosa für Dienstag, am Mittwoch ist Grün angesagt...“\n\nWas bedeutet das Wort „angesagt“ in diesem Zusammenhang?",
+    "options": [
+      "üblich oder empfohlen",
+      "offiziell storniert",
+      "laut gerufen",
+      "streng verboten"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə 'angesagt' sözü həmin gün üçün 'məsləhət görülən, dəbdə olan, uyğun bilinən' (üblich oder empfohlen) mənasında işlənir. 'Laut gerufen' hərfi tərcümədir və burada uyğun deyil, C və D isə tamamilə zidd mənalardır.",
+    "difficulty": "orta",
+    "bloom_level": "tətbiq",
+    "passport_id": "11-alman-gold-4-5",
+    "_duplicate_of": "Alman dili 11",
+    "context_chunk": "Bräuche\n1\nSehen Sie die Bilder\nan: Welche Sitten und\nBräuche kann man auf\nden Bildern erkennen?\nWas wissen Sie\nüber diese\nTraditionen?\n2\nA) Recherchieren Sie\nverschiedene Sitten und\nBräuche in Nachbarländern.\nB) Entscheiden Sie, ob Sie für oder gegen Tradition sind und machen\nSie Ihre eigene Liste."
+  },
+  {
+    "topic": "THEMA 4: Sitten und Bräuche",
+    "category": "Alman dili 11",
+    "question": "Welcher der folgenden Sätze drückt den Inhalt von „Das Hennapulver wird für kunstvolle Bemalung verwendet“ korrekt im Aktiv aus?",
+    "options": [
+      "Man hat das Hennapulver für kunstvolle Bemalung verwendet.",
+      "Man wird das Hennapulver für kunstvolle Bemalung verwenden.",
+      "Man verwendet das Hennapulver für kunstvolle Bemalung.",
+      "Man verwendete das Hennapulver für kunstvolle Bemalung."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Verilmiş cümlə Präsens (İndiki zaman) Passivdədir (wird + Partizip II). Onu Aktiv (Məlum) növə çevirərkən zaman qorunmalıdır. A variantı düzgün Präsens Aktivdir. B (Perfekt), C (Futur I) və D (Präteritum) zaman formalarında olduğu üçün yanlışdır.",
+    "difficulty": "orta",
+    "bloom_level": "tətbiq",
+    "passport_id": "11-alman-gold-4-6",
+    "_duplicate_of": "Alman dili 11",
+    "context_chunk": "Bräuche\n1\nSehen Sie die Bilder\nan: Welche Sitten und\nBräuche kann man auf\nden Bildern erkennen?\nWas wissen Sie\nüber diese\nTraditionen?\n2\nA) Recherchieren Sie\nverschiedene Sitten und\nBräuche in Nachbarländern.\nB) Entscheiden Sie, ob Sie für oder gegen Tradition sind und machen\nSie Ihre eigene Liste."
+  },
+  {
+    "topic": "THEMA 4: Sitten und Bräuche",
+    "category": "Alman dili 11",
+    "question": "Warum erwähnt der Autor im Text über Henna explizit auch Länder wie den Sudan und Ägypten?",
+    "options": [
+      "Um zu betonen, dass die Hennapflanze bestimmte heiße und trockene klimatische Bedingungen benötigt.",
+      "Weil das Holi Festival heutzutage am meisten im Sudan gefeiert wird.",
+      "Da die Regierungen dieser Länder den Export von Henna nach Indien streng kontrollieren.",
+      "Um zu beweisen, dass die indische Kultur ursprünglich aus Nordafrika stammt."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Müəllif Hindistanın isti və quraq yerlərində bitən xına bitkisinin həmçinin Sudan və Misir kimi bənzər iqlimə malik ölkələrdə tapıldığını qeyd etməklə, bitkinin inkişafı üçün tələb olunan iqlim şərtlərini vurğulayır. Digər variantlar mətndə yer almayan yanlış fərziyyələrdir.",
+    "difficulty": "orta",
+    "bloom_level": "tətbiq",
+    "passport_id": "11-alman-gold-4-7",
+    "_duplicate_of": "Alman dili 11",
+    "context_chunk": "Bräuche\n1\nSehen Sie die Bilder\nan: Welche Sitten und\nBräuche kann man auf\nden Bildern erkennen?\nWas wissen Sie\nüber diese\nTraditionen?\n2\nA) Recherchieren Sie\nverschiedene Sitten und\nBräuche in Nachbarländern.\nB) Entscheiden Sie, ob Sie für oder gegen Tradition sind und machen\nSie Ihre eigene Liste."
+  },
+  {
+    "question": "Mətndəki ata oğluna dükandan niyə çərəz və şirni almadı?",
+    "options": [
+      "Çünki pulu az idi",
+      "Çünki oğlunun sağlamlığına zərər idi",
+      "Çünki mağaza bağlı idi",
+      "Çünki oğluna alma almaq istəyirdi"
+    ],
+    "explanation": "Mətndə ata qeyd edir: \"Mən heç birini almadım, çünki pulum az idi.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-1",
+    "correctAnswer": 0,
+    "original_answer_text": "Çünki pulu az idi",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Ata almaları haradan və necəyə aldı?",
+    "options": [
+      "Dəniz kənarındakı meyvə dükanından, hərəsi bir şahıya",
+      "Məktəbin yanındakı dükandan, hərəsi bir abbasıya",
+      "Tramvay dayanacağından, iki şahıya",
+      "Bazar yerindən, hərəsi bir qəpiyə"
+    ],
+    "explanation": "Mətndə deyilir: \"Dəniz kənarında meyvə dükanından hərəsi bir şahıya iki dənə yaxşı qırmızı alma aldım.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-2",
+    "correctAnswer": 0,
+    "original_answer_text": "Dəniz kənarındakı meyvə dükanından, hərəsi bir şahıya",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Vaqondakı dilənçi uşağın xarici görünüşü necə təsvir edilir?",
+    "options": [
+      "Əyin-başı cır-cındır içində, üz-gözü çirkli",
+      "Səliqəli və təmiz geyimli",
+      "Çox kədərli və yorğun",
+      "Məktəbli geyimində, əlində çanta"
+    ],
+    "explanation": "Mətndə qeyd olunur: \"Əyin-başı cır-cındır içində, üz-gözü çirkli idi.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-4",
+    "correctAnswer": 0,
+    "original_answer_text": "Əyin-başı cır-cındır içində, üz-gözü çirkli",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Ata dilənçi uşağa niyə pul verə bilmədi?",
+    "options": [
+      "Xırdası olmadığına görə",
+      "Uşağı tanımadığına görə",
+      "Cibində ümumiyyətlə pul qalmadığı üçün",
+      "Uşaq pulu götürməkdən imtina etdiyi üçün"
+    ],
+    "explanation": "Mətndə birbaşa yazılıb: \"Xırdam olmadığına görə uşağa pul verə bilmədim.\"",
+    "difficulty": "medium",
+    "bloomLevel": "anlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-5",
+    "correctAnswer": 0,
+    "original_answer_text": "Xırdası olmadığına görə",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Alma alandan sonra atanın cibində nə qədər pul qalmışdı?",
+    "options": [
+      "Bir abbası",
+      "Bir şahı",
+      "Beş qəpik",
+      "İyirmi qəpik və bir şahı"
+    ],
+    "explanation": "Mətndə deyilir: \"Alma alandan sonra cibimdə bir abbası qalmışdı.\"",
+    "difficulty": "medium",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-6",
+    "correctAnswer": 0,
+    "original_answer_text": "Bir abbası",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Tramvay yerindən tərpənəndə ata pəncərədən nə gördü?",
+    "options": [
+      "Dilənçi uşağın qırmızı almanı ləzzətlə yediyini",
+      "Oğlunun almaların ikisini də yediyini",
+      "Dilənçi uşağın ağladığını",
+      "Dükançının onlara tərəf gəldiyini"
+    ],
+    "explanation": "Mətndə yazılıb: \"...gördüm ki, həmin dilənçi uşaq tramvay dayanacağında durub bir qırmızı almanı ləzzətlə yeyir.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-7",
+    "correctAnswer": 0,
+    "original_answer_text": "Dilənçi uşağın qırmızı almanı ləzzətlə yediyini",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Oğlunun hərəkətindən sonra ata hansı hissləri keçirdi?",
+    "options": [
+      "Yüngüllük və könül xoşluğu",
+      "Peşmanlıq və kədər",
+      "Qəzəb və narazılıq",
+      "Qorxu və təəccüb"
+    ],
+    "explanation": "Atanın sözlərinə görə: \"Bu işdən oğlum və mən çox razı qaldıq. Mən yüngüllük və könül xoşluğu duydum.\"",
+    "difficulty": "medium",
+    "bloomLevel": "anlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-8",
+    "correctAnswer": 0,
+    "original_answer_text": "Yüngüllük və könül xoşluğu",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Vaqonda ata və oğlundan başqa kim var idi?",
+    "options": [
+      "Oğlan boyda bir rus uşağı",
+      "İki dənə yaşlı qadın",
+      "Bilet yoxlayan nəzarətçi",
+      "Heç kim yox idi"
+    ],
+    "explanation": "Mətndə qeyd olunur: \"Vaqonda bizim ikimizdən başqa, oğlum boyda bir rus uşağı var idi.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-11",
+    "correctAnswer": 0,
+    "original_answer_text": "Oğlan boyda bir rus uşağı",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Ata uşağın kefsiz olmasının səbəbini niyə soruşmadı?",
+    "options": [
+      "Səbəbi ataya məlum olduğu üçün",
+      "Uşaq suallara cavab vermədiyi üçün",
+      "Vaqonda səs-küy olduğu üçün",
+      "Ata uşaqdan küsdüyü üçün"
+    ],
+    "explanation": "Mətndə ata düşünür: \"Ondan bunun səbəbini soruşmadım. Səbəbi mənə məlum idi.\"",
+    "difficulty": "hard",
+    "bloomLevel": "təhlil",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-12",
+    "correctAnswer": 0,
+    "original_answer_text": "Səbəbi ataya məlum olduğu üçün",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Uşaq dilənçiyə nə verdi?",
+    "options": [
+      "Almalarının birini",
+      "Cibindəki qəpiyi",
+      "Aldığı çərəzi",
+      "Öz oyuncağını"
+    ],
+    "explanation": "Uşaq atasına deyir: \"Dədə, almanın birini verdim dilənçi uşağa.\"",
+    "difficulty": "easy",
+    "bloomLevel": "xatırlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-14",
+    "correctAnswer": 0,
+    "original_answer_text": "Almalarının birini",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  },
+  {
+    "question": "Ata dilənçi uşağa pul verə bilməyəndə nə hiss etdi?",
+    "options": [
+      "Fikir onu götürdü, qanı qaraldı",
+      "Çox sevindi və rahatlaşdı",
+      "Əsəbiləşib uşağa qışqırdı",
+      "Heç nə hiss etmədi və uşağa fikir vermədi"
+    ],
+    "explanation": "Mətndə yazılıb: \"Burada məni fikir götürdü, dilənçi uşağa pul verə bilmədiyimdən qanım qaralmışdı.\"",
+    "difficulty": "medium",
+    "bloomLevel": "anlama",
+    "topic": "MƏRHƏMƏT",
+    "type": "Reading",
+    "category": "Azərbaycan dili 3",
+    "passport_id": "3-az-1720113165-15",
+    "correctAnswer": 0,
+    "original_answer_text": "Fikir onu götürdü, qanı qaraldı",
+    "_duplicate_of": "Azərbaycan dili 3",
+    "context_chunk": "sayəsində biz qalib gəldik..."
+  }
+]

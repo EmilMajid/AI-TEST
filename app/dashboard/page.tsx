@@ -302,7 +302,7 @@ export default function Dashboard() {
                                   return !isSecondary && (
                                     subj === "Xarici dil" || 
                                     ["İngilis dili", "Alman dili", "Fransız dili", "Rus dili"].includes(subj) ||
-                                    /ingilis|alman|fransız|fransiz|rus/i.test(title)
+                                    /ingilis|İngilis|alman|fransız|fransiz|rus/i.test(title)
                                   )
                                 } else {
                                   return isSecondary || 
@@ -317,7 +317,7 @@ export default function Dashboard() {
                                 const subj = book.subject || ""
                                 if (["İngilis dili", "Alman dili", "Fransız dili", "Rus dili"].includes(subj)) {
                                   languagesSet.add(subj)
-                                } else if (/ingilis|english/i.test(title)) {
+                                } else if (/ingilis|english|İngilis/i.test(title)) {
                                   languagesSet.add("İngilis dili")
                                 } else if (/alman|german/i.test(title)) {
                                   languagesSet.add("Alman dili")
@@ -385,7 +385,7 @@ export default function Dashboard() {
                                 if (!isCorrectType) return false
 
                                 if (lang === "İngilis dili") {
-                                  return subj === "İngilis dili" || /ingilis|english/i.test(title)
+                                  return subj === "İngilis dili" || /ingilis|english|İngilis/i.test(title)
                                 } else if (lang === "Alman dili") {
                                   return subj === "Alman dili" || /alman|german/i.test(title)
                                 } else if (lang === "Fransız dili") {

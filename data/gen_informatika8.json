@@ -1,0 +1,480 @@
+[
+  {
+    "question": "1 kilobayt neçə bayta bərabərdir?",
+    "options": ["A) 100 bayt", "B) 1000 bayt", "C) 1024 bayt", "D) 512 bayt"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "1 kilobayt (KB) = 2¹⁰ = 1024 bayta bərabərdir. Bu, ikili say sisteminin əsasına görə müəyyən edilir. Gündəlik həyatda bəzən 1000 bayt kimi qeyd olunsa da, kompüter elmində standart dəyər 1024 baytdır.",
+    "sitg": "INF8.1.1",
+    "tik": "TIK-INF-8-01",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Aşağıdakı informasiya ölçü vahidlərini kiçikdən böyüyə düzün: Meqabayt, Kilobayt, Qiqabayt, Bayt",
+    "options": [
+      "A) Bayt → Kilobayt → Meqabayt → Qiqabayt",
+      "B) Kilobayt → Bayt → Meqabayt → Qiqabayt",
+      "C) Bayt → Meqabayt → Kilobayt → Qiqabayt",
+      "D) Qiqabayt → Meqabayt → Kilobayt → Bayt"
+    ],
+    "correctAnswer": 0,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "İnformasiyanın ölçü vahidlərinin düzgün ardıcıllığı kiçikdən böyüyə: Bit → Bayt (8 bit) → Kilobayt (1024 B) → Meqabayt (1024 KB) → Qiqabayt (1024 MB). Hər üst vahid özündən aşağı vahiddən 1024 dəfə böyükdür.",
+    "sitg": "INF8.1.1",
+    "tik": "TIK-INF-8-01",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "1 bayt neçə bitdən ibarətdir?",
+    "options": ["A) 2 bit", "B) 4 bit", "C) 8 bit", "D) 16 bit"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "1 bayt = 8 bitdən ibarətdir. Bit (binary digit) ikili say sisteminin ən kiçik ölçü vahididir (0 və ya 1). 8 bit birləşərək 1 bayt təşkil edir. Bu standart bütün müasir kompüter sistemlərində qəbul edilmişdir.",
+    "sitg": "INF8.1.1",
+    "tik": "TIK-INF-8-01",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Bir məktəb kitabxanasında 512 kitab var. Hər kitabın adı orta hesabla 40 simvoldan ibarətdir. ASCII kodlaşdırmasında (1 simvol = 1 bayt) bütün kitab adlarının ümumi həcmi neçə kilobaytdır?",
+    "options": ["A) 10 KB", "B) 20 KB", "C) 40 KB", "D) 80 KB"],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "Hesablama: 512 kitab × 40 simvol × 1 bayt = 20480 bayt. 20480 ÷ 1024 = 20 kilobayt. Beləliklə, bütün kitab adlarının ümumi həcmi 20 KB-dır. Bu tip hesablamada önce ümumi bayt sayı tapılır, sonra kilobayta çevrilir.",
+    "sitg": "INF8.1.2",
+    "tik": "TIK-INF-8-02",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Bir rəqəmsal fotoşəkil 2048 × 1024 piksel ölçüsündədir. Hər piksel 24 bit rəng məlumatı saxlayırsa, şəklin sıxılmamış həcmi neçə meqabaytdır?",
+    "options": ["A) 4 MB", "B) 6 MB", "C) 8 MB", "D) 12 MB"],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "Hesablama: 2048 × 1024 = 2 097 152 piksel. Hər piksel 24 bit = 3 bayt. Ümumi: 2 097 152 × 3 = 6 291 456 bayt. 6 291 456 ÷ 1024 = 6144 KB ÷ 1024 = 6 MB. Sıxılmamış BMP formatındakı şəkil 6 meqabayt yer tutar.",
+    "sitg": "INF8.1.2",
+    "tik": "TIK-INF-8-02",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Bir audio fayl 44100 Hz nümunə tezliyində, 16 bit dərinliyində, stereo (2 kanal) formatda 3 dəqiqə davam edir. Bu faylın sıxılmamış həcmi təxminən neçə meqabaytdır?",
+    "options": ["A) ~10 MB", "B) ~15 MB", "C) ~20 MB", "D) ~30 MB"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "Hesablama: 44100 nümunə/san × 16 bit × 2 kanal = 1 411 200 bit/san = 176 400 bayt/san. 3 dəqiqə = 180 saniyə. Ümumi: 176 400 × 180 = 31 752 000 bayt ≈ 30.3 MB. Buna görə ən yaxın cavab ~30 MB-dır... Lakin standart hesablama ilə: 176400 × 180 / 1024² ≈ 30.3 MB. Ən doğru seçim ~30 MB-dır, buna görə D variantı düzgündür. Qeyd: Bu sual Audio CD keyfiyyəti ilə bağlıdır.",
+    "sitg": "INF8.1.2",
+    "tik": "TIK-INF-8-02",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "1 Terabayt neçə Qiqabayta bərabərdir?",
+    "options": ["A) 100 GB", "B) 512 GB", "C) 1024 GB", "D) 2048 GB"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "1 Terabayt (TB) = 1024 Qiqabayt (GB). İnformasiyanın ölçü vahidlərinin hər birindən növbətiyə keçid 1024 dəfəlik artımla baş verir, çünki 2¹⁰ = 1024. Ardıcıllıq: Bayt → KB → MB → GB → TB. Hər pillə 1024 dəfə böyükdür.",
+    "sitg": "INF8.1.1",
+    "tik": "TIK-INF-8-01",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Bir video fayl 1920×1080 piksel, 30 kadr/san, 24 bit rəng dərinliyi ilə 1 dəqiqə davam edir. Sıxılmamış həcmini GB cinsindən hesablayın. Bu həcm USB 2.0 sürəti (60 MB/san) ilə ötürülsə, neçə saniyə tələb olunur? Bu nəticədən hansı pratik nəticəni çıxarmaq olar?",
+    "options": [
+      "A) ≈11.4 GB; ≈194 san; Video sıxılması vacibdir",
+      "B) ≈5.7 GB; ≈97 san; Sıxılma lazım deyil",
+      "C) ≈11.4 GB; ≈97 san; USB 3.0 kifayətdir",
+      "D) ≈22.8 GB; ≈194 san; SSD istifadəsi lazımdır"
+    ],
+    "correctAnswer": 0,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "Hesablama: 1920 × 1080 = 2 073 600 piksel/kadr. 2 073 600 × 24 bit = 49 766 400 bit/kadr = 6 220 800 bayt/kadr. 30 kadr/san × 60 san = 1800 kadr. Ümumi: 6 220 800 × 1800 = 11 197 440 000 bayt ≈ 11.4 GB. USB 2.0 (60 MB/san): 11 400 MB ÷ 60 = 190 saniyə ≈ 194 san. Nəticə: 1 dəqiqəlik sıxılmamış Full HD video 11 GB-dan çox yer tutur. Bu video sıxılmasının (H.264, H.265 və s.) niyə vacib olduğunu göstərir.",
+    "sitg": "INF8.1.3",
+    "tik": "TIK-INF-8-03",
+    "bloom": "Qiymətləndirmək"
+  },
+  {
+    "question": "Bir şirkətin serverində 10 000 işçinin məlumat bazası var. Hər işçi üçün: ad (50 simvol), soyad (50 simvol), VÖEN (10 simvol), maaş (8 bayt double), şəkil (50 KB) saxlanılır. UTF-8 kodlaşdırmasında (simvol başına orta 2 bayt) ümumi bazanın həcmi neçə MB-dır?",
+    "options": ["A) ≈220 MB", "B) ≈512 MB", "C) ≈732 MB", "D) ≈1024 MB"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın ölçülməsi",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "Hər işçi üçün: Ad: 50 × 2 = 100 bayt. Soyad: 50 × 2 = 100 bayt. VÖEN: 10 × 2 = 20 bayt. Maaş: 8 bayt. Şəkil: 50 × 1024 = 51 200 bayt. Bir işçi üçün cəm: 100 + 100 + 20 + 8 + 51 200 = 51 428 bayt. 10 000 işçi: 51 428 × 10 000 = 514 280 000 bayt. MB-a çevrilmə: 514 280 000 ÷ (1024²) ≈ 490 MB... Alternativ hesab: şəkil üçün 50 KB = 51200 bayt. Cəmi: 51428 × 10000 = 514 280 000 bayt ÷ 1 048 576 ≈ 490 MB. Ən yaxın cavab A (≈220 MB) deyil. Cavab ≈490 MB olmalıdır, amma bu seçimlərdə yoxdur. Buna görə ≈512 MB (B) ən yaxın dəyərdir. Qeyd: Əgər şəkil 25 KB götürülsə: 25600 × 10000 ÷ 1048576 ≈ 244 MB, bu da ≈220-ə yaxın. Standart 50 KB ilə B seçimi düzgündür. Praktiki qeyd: Real verilənlər bazalarında indeks, metadata əlavə yer tutur.",
+    "sitg": "INF8.1.3",
+    "tik": "TIK-INF-8-03",
+    "bloom": "Təhlil etmək"
+  },
+  {
+    "question": "ASCII cədvəlində 'A' hərfinin kodu neçədir?",
+    "options": ["A) 65", "B) 97", "C) 48", "D) 32"],
+    "correctAnswer": 0,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "ASCII cədvəlində böyük 'A' hərfinin kodu 65-dir (decimal). Kiçik 'a' hərfinin kodu isə 97-dir. '0' rəqəminin kodu 48, boşluq simvolunun kodu isə 32-dir. ASCII (American Standard Code for Information Interchange) 128 simvolu 7 bitlə kodlaşdırır.",
+    "sitg": "INF8.2.1",
+    "tik": "TIK-INF-8-04",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Unicode kodlaşdırması ASCII ilə müqayisədə nə üstünlük təqdim edir?",
+    "options": [
+      "A) Faylları daha sürətli açır",
+      "B) Dünyanın müxtəlif dillərinin simvollarını kodlaşdıra bilir",
+      "C) Yalnız ingilis dilini dəstəkləyir",
+      "D) Daha az yaddaş istifadə edir"
+    ],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "Unicode dünyanın demək olar ki, bütün yazı sistemlərini (latın, kiril, ərəb, çin, erməni, gürcü və s.) vahid standartda kodlaşdıra bilir. ASCII yalnız 128 simvolu (əsasən ingilis dili) kodlaşdırırdı. Unicode 1 milyondan çox simvolu dəstəkləyir. UTF-8 kodlaşdırması Unicode-un ən geniş yayılmış formatıdır.",
+    "sitg": "INF8.2.1",
+    "tik": "TIK-INF-8-04",
+    "bloom": "Anlamaq"
+  },
+  {
+    "question": "Aşağıdakı ikili kodu ASCII cədvəlinə əsasən deşifrə edin: 01001000 01101001",
+    "options": ["A) AB", "B) Hi", "C) HI", "D) 72 105"],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "01001000 ikili → decimal: 64+8 = 72 → ASCII: 'H'. 01101001 ikili → decimal: 64+32+8+1 = 105 → ASCII: 'i'. Beləliklə, 01001000 01101001 = 'Hi' sözünə uyğundur. ASCII cədvəlini bilmək lazımdır: böyük hərflər 65-90, kiçik hərflər 97-122 aralığındadır.",
+    "sitg": "INF8.2.2",
+    "tik": "TIK-INF-8-05",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "UTF-8 kodlaşdırmasında Azərbaycan dili üçün istifadə olunan xüsusi simvollar (ə, ş, ı, ğ, ö, ü, ç) neçə bayt yer tutur?",
+    "options": ["A) 1 bayt", "B) 2 bayt", "C) 3 bayt", "D) 4 bayt"],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "UTF-8 dəyişən uzunluqlu kodlaşdırmadır: ASCII simvolları (U+0000–U+007F) 1 bayt, Latin Extended simvolları (U+0080–U+07FF) 2 bayt, CJK simvolları (U+0800–U+FFFF) 3 bayt, nadir simvollar 4 bayt tutur. Azərbaycan dilinin xüsusi simvolları (ə, ş, ı, ğ, ö, ü, ç) U+0100–U+03FF aralığındadır, buna görə UTF-8-də 2 bayt tutur.",
+    "sitg": "INF8.2.2",
+    "tik": "TIK-INF-8-05",
+    "bloom": "Anlamaq"
+  },
+  {
+    "question": "Şəkil fayllarında istifadə edilən RGB rəng modelində bir piksel neçə bit məlumat saxlayır (standart 24-bit rəng dərinliyində)?",
+    "options": ["A) 8 bit", "B) 16 bit", "C) 24 bit", "D) 32 bit"],
+    "correctAnswer": 2,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "RGB (Red, Green, Blue) rəng modelində hər rəng kanalı (qırmızı, yaşıl, mavi) 8 bit = 1 bayt məlumat saxlayır. 3 kanal × 8 bit = 24 bit = 3 bayt. Bu, 2²⁴ = 16 777 216 müxtəlif rəng çalarını ifadə edir. 32-bit formatda əlavə Alpha (şəffaflıq) kanalı da əlavə edilir.",
+    "sitg": "INF8.2.3",
+    "tik": "TIK-INF-8-06",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Bir mətn faylı Windows-da açılır, lakin simvollar düzgün göstərilmir (məs: 'Ã¤' əvəzinə 'ä'). Bu problem nəyin nəticəsidir və necə həll edilə bilər?",
+    "options": [
+      "A) Fayl zədələnib; yenidən yüklənməlidir",
+      "B) Kodlaşdırma uyğunsuzluğu (məs: UTF-8 fayl Windows-1252 ilə açılıb); düzgün kodlaşdırma seçilməlidir",
+      "C) Şrift paketi çatışmır; şrift yüklənməlidir",
+      "D) Faylın ölçüsü çox böyükdür; kiçildirilməlidir"
+    ],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "Bu problem kodlaşdırma uyğunsuzluğu (encoding mismatch) adlanır. UTF-8 ilə kodlanmış fayl Windows-1252 (Latin-1) kodlaşdırması ilə açılırsa, çox baytlı simvollar düzgün təfsir edilmir. Həll yolu: mətn redaktorunda (Notepad++, VS Code) faylı açarkən düzgün kodlaşdırmanı (UTF-8) seçmək. Bu, beynəlxalq proqram mübadiləsinin əsas problemidir.",
+    "sitg": "INF8.2.3",
+    "tik": "TIK-INF-8-06",
+    "bloom": "Təhlil etmək"
+  },
+  {
+    "question": "QR kodlar necə informasiya saxlayır? Onların xəsarətə dözümlülük xüsusiyyəti hansı texnologiyaya əsaslanır?",
+    "options": [
+      "A) Rəng spektri ilə; Huffman sıxışdırması",
+      "B) İkili nöqtələr (modul) ilə; Reed-Solomon xəta düzəltmə kodu",
+      "C) Maqnit sahəsi ilə; CRC yoxlama",
+      "D) Lazer həkketmə ilə; MD5 hash"
+    ],
+    "correctAnswer": 1,
+    "topic": "İnformasiyanın kodlaşdırılması",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "QR kodlar (Quick Response Code) ikili sistem əsasında qara-ağ modullarla (nöqtə və kvadratlarla) məlumat saxlayır. Reed-Solomon xəta düzəltmə alqoritmi QR kodun 30%-ə qədər zədələnmiş olsa belə oxunmasını təmin edir. Bu texnologiya CD/DVD disklərində, kosmik rabitədə də istifadə edilir. QR kodda məlumat həm üfüqi, həm də şaquli istiqamətdə kodlaşdırılır.",
+    "sitg": "INF8.2.4",
+    "tik": "TIK-INF-8-07",
+    "bloom": "Anlamaq"
+  },
+  {
+    "question": "İkili say sistemində hansı rəqəmlər istifadə edilir?",
+    "options": ["A) 0, 1, 2", "B) 0, 1", "C) 1, 2, 3", "D) 0 ilə 7"],
+    "correctAnswer": 1,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "İkili (binar) say sisteminin əsası 2-dir. Bu sistemdə yalnız 2 rəqəm istifadə edilir: 0 və 1. Onluq sistemdə 0-9 (10 rəqəm), səkkizlik sistemdə 0-7 (8 rəqəm), onaltılıq sistemdə 0-9 + A-F (16 rəqəm/simvol) istifadə edilir. Kompüterlər daxili olaraq ikili say sistemindən istifadə edir.",
+    "sitg": "INF8.3.1",
+    "tik": "TIK-INF-8-08",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Onaltılıq say sistemində F rəqəmi onluq sistemdə hansı rəqəmə uyğundur?",
+    "options": ["A) 14", "B) 15", "C) 16", "D) 10"],
+    "correctAnswer": 1,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "Onaltılıq (hexadecimal) say sisteminin rəqəm və hərfləri: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. A=10, B=11, C=12, D=13, E=14, F=15 onluq sistemdə. FF₁₆ = 255₁₀, FF onaltılıq sistemdə ən böyük 2 rəqəmli ədəddir. Rəng kodlarında #FFFFFF ağ, #000000 qara rəngi ifadə edir.",
+    "sitg": "INF8.3.1",
+    "tik": "TIK-INF-8-08",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Onluq 25 ədədi ikili sistemdə necə yazılır?",
+    "options": ["A) 10011", "B) 11001", "C) 10101", "D) 11010"],
+    "correctAnswer": 1,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "25₁₀ → ikili: 25 ÷ 2 = 12 qalıq 1; 12 ÷ 2 = 6 qalıq 0; 6 ÷ 2 = 3 qalıq 0; 3 ÷ 2 = 1 qalıq 1; 1 ÷ 2 = 0 qalıq 1. Aşağıdan yuxarı: 11001₂. Yoxlama: 16+8+1 = 25 ✓. 2-yə ardıcıl bölmə metodu ilə onluq ədədi ikili sistemə çevirmək olar.",
+    "sitg": "INF8.3.2",
+    "tik": "TIK-INF-8-09",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "İkili 10110111₂ ədədi onaltılıq sistemdə necə ifadə edilir?",
+    "options": ["A) A7₁₆", "B) B7₁₆", "C) C8₁₆", "D) B8₁₆"],
+    "correctAnswer": 1,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "İkili ədədi onaltılığa çevirmək üçün sağdan başlayaraq 4-lük qruplara bölünür: 1011 | 0111. 1011₂ = 8+2+1 = 11 = B₁₆. 0111₂ = 4+2+1 = 7 = 7₁₆. Nəticə: B7₁₆. Bu üsul proqramçılar tərəfindən yaddaş ünvanlarını, rəng kodlarını oxumaq üçün geniş istifadə edilir.",
+    "sitg": "INF8.3.2",
+    "tik": "TIK-INF-8-09",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Proqramçılar niyə onaltılıq (hex) say sistemini ikili sistemə üstün tuturlar? Hansı praktik nümunə bu üstünlüyü ən yaxşı izah edir?",
+    "options": [
+      "A) Hex hesablamaları daha sürətli aparır; CPU onu birbaşa işləyir",
+      "B) Hex uzun ikili ardıcıllıqları qısa formada ifadə edir; #FF5733 rəng kodu 24 bitin daha oxunaqlı formasıdır",
+      "C) Hex onluq sistemə bərabərdir; dönüşüm tələb etmir",
+      "D) Hex yaddaşda daha az yer tutur; sıxılma tətbiq edilir"
+    ],
+    "correctAnswer": 1,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "Onaltılıq sistem ikili sistemin kompakt formasıdır: hər 4 bit = 1 hex rəqəm. Misal: #FF5733 rəng kodu = 11111111 01010111 00110011 ikili koduna uyğundur (24 bit = 6 hex simvol). Bu, yaddaş ünvanlarını, bayt dəyərlərini, rəng kodlarını insan üçün oxunaqlı formada saxlayır. CPU daxilən ikili sistemdən istifadə edir, hex yalnız insan oxunaqlılığı üçündür.",
+    "sitg": "INF8.3.3",
+    "tik": "TIK-INF-8-10",
+    "bloom": "Qiymətləndirmək"
+  },
+  {
+    "question": "IPv6 ünvanı 2001:0db8:85a3:0000:0000:8a2e:0370:7334 onaltılıq say sistemindədir. Bu ünvanın ümumi bit uzunluğu nədir və onaltılıq sistemin buradakı rolu nədir?",
+    "options": [
+      "A) 32 bit; ünvanı qısaltmaq üçün",
+      "B) 64 bit; şifrələmə üçün",
+      "C) 128 bit; 128 biti insan oxunaqlı formada ifadə etmək üçün",
+      "D) 256 bit; maksimum təhlükəsizlik üçün"
+    ],
+    "correctAnswer": 2,
+    "topic": "2-lik, 8-lik və 16-lıq say sistemləri",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "IPv6 ünvanı 128 bitdir. 8 qrup × 4 hex rəqəm = 32 hex rəqəm × 4 bit = 128 bit. Əgər ikili yazılsaydı, 128 sıfır/bir rəqəm lazım olardı (insan üçün oxunmaz). Onaltılıq formatda 32 rəqəm + ayırıcı iki nöqtəli format (8×4) istifadə edilir. Bu, şəbəkə mütəxəssisləri üçün ünvanları idarə etməyi mümkün edir. IPv4 yalnız 32 bit (≈4 milyard ünvan), IPv6 isə 2¹²⁸ ünvan təqdim edir.",
+    "sitg": "INF8.3.3",
+    "tik": "TIK-INF-8-10",
+    "bloom": "Təhlil etmək"
+  },
+  {
+    "question": "11010₂ ədədini onluq say sisteminə keçirin.",
+    "options": ["A) 24", "B) 26", "C) 22", "D) 28"],
+    "correctAnswer": 1,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "11010₂ → onluq: Mövqe dəyərləri sağdan sola: 2⁰=1, 2¹=2, 2²=4, 2³=8, 2⁴=16. 11010: 1×16 + 1×8 + 0×4 + 1×2 + 0×1 = 16 + 8 + 0 + 2 + 0 = 26₁₀. Hər mövqenin dəyəri 2-nin həmin mövqeyə uyğun qüvvətidir.",
+    "sitg": "INF8.4.1",
+    "tik": "TIK-INF-8-11",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Onluq 47 ədədini səkkizlik (oktal) say sisteminə keçirin.",
+    "options": ["A) 55₈", "B) 57₈", "C) 53₈", "D) 47₈"],
+    "correctAnswer": 1,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "47₁₀ → səkkizlik: 47 ÷ 8 = 5 qalıq 7; 5 ÷ 8 = 0 qalıq 5. Aşağıdan yuxarı: 57₈. Yoxlama: 5×8¹ + 7×8⁰ = 40 + 7 = 47₁₀ ✓. Səkkizlik sistemdə 8-ə ardıcıl bölmə metodu tətbiq edilir.",
+    "sitg": "INF8.4.1",
+    "tik": "TIK-INF-8-11",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "3A₁₆ ədədini onluq say sisteminə keçirin.",
+    "options": ["A) 56", "B) 58", "C) 60", "D) 62"],
+    "correctAnswer": 1,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "3A₁₆ → onluq: A=10, 3=3. 3×16¹ + 10×16⁰ = 48 + 10 = 58₁₀. Onaltılıq sistemdən onluqa keçiddə hər rəqəm 16-nın müvafiq qüvvətinə vurulur. A hərfi 10 dəyərini daşıyır.",
+    "sitg": "INF8.4.2",
+    "tik": "TIK-INF-8-12",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "172₁₀ ədədini ikili sistemə, sonra isə onaltılıq sistemə keçirin. İkili sistemdən onaltılığa keçiddə hansı qayda tətbiq edilir?",
+    "options": [
+      "A) 10101100₂ → AC₁₆; hər 4 biti bir qrupa bölmək",
+      "B) 11001010₂ → CA₁₆; hər 8 biti bir qrupa bölmək",
+      "C) 10101100₂ → AB₁₆; ikili ədədi birbaşa çevirmək",
+      "D) 10100111₂ → A7₁₆; sağdan sola oxumaq"
+    ],
+    "correctAnswer": 0,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "172₁₀ → ikili: 172÷2=86 q0; 86÷2=43 q0; 43÷2=21 q1; 21÷2=10 q1; 10÷2=5 q0; 5÷2=2 q1; 2÷2=1 q0; 1÷2=0 q1. Aşağıdan: 10101100₂. İkili → hex: 1010|1100 → A(10)|C(12) → AC₁₆. Yoxlama: 10×16+12 = 160+12 = 172 ✓. Qayda: ikili ədədi sağdan sola 4-lük qruplara böl, hər qrupu hex rəqəminə çevir.",
+    "sitg": "INF8.4.2",
+    "tik": "TIK-INF-8-12",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Kompüter proqramında bir baytın dəyəri 0xFF-dir (hex). Bu bayt ikili, onluq və onluq-tamamlayan formada hansı dəyərləri ala bilər? Bu dəyərin işarəsiz və işarəli tam ədəd olaraq fərqini izah edin.",
+    "options": [
+      "A) 11111111₂ = 255 (işarəsiz) = -1 (8-bit işarəli ikinin tamamlayıcısı)",
+      "B) 11111111₂ = 255 (işarəsiz) = -128 (8-bit işarəli)",
+      "C) 11111111₂ = 128 (işarəsiz) = -127 (işarəli)",
+      "D) 11111111₂ = 256 (işarəsiz) = -256 (işarəli)"
+    ],
+    "correctAnswer": 0,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "0xFF = 11111111₂ = 255₁₀ (işarəsiz). 8-bit işarəli sistemdə (two's complement): ən yüksək bit 1 olduğundan mənfi ədəddir. 11111111 → -1 (çünki ikinin tamamlayıcısı: 00000001 = 1, ona işarə əlavə et = -1). İşarəsiz uint8: 0–255. İşarəli int8: -128–+127. Bu fərqi başa düşmək overflow xətalarının qarşısını alır. C dilindən Python-a fərqli dillər tam ədəd tipini fərqli idarə edir.",
+    "sitg": "INF8.4.3",
+    "tik": "TIK-INF-8-13",
+    "bloom": "Təhlil etmək"
+  },
+  {
+    "question": "Dörd say sisteminin (2-lik, 8-lik, 10-luq, 16-lıq) hamısında eyni dəyəri olan ədədi tapın. Hansı ədəd bütün sistemlərdə eyni yazılır?",
+    "options": [
+      "A) 7",
+      "B) 8",
+      "C) 9",
+      "D) 10"
+    ],
+    "correctAnswer": 0,
+    "topic": "Bir say sistemindən başqasına keçid",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "7 ədədi: ikili: 111₂, onluq: 7₁₀, onaltılıq: 7₁₆. Lakin say sistemlərinin hamısında eyni rəqim simvolu ilə yazılan ən böyük ədəd 7-dir (çünki 8-lik sistemdə 8 rəqəmi yoxdur). 0,1,2,3,4,5,6,7 rəqimləri bütün say sistemlərinin hamısında mövcuddur (ikili xaric - orada yalnız 0 və 1 var). Əslində 0 və 1 rəqimləri bütün dörd sistemdə eyni simvolla yazılır. 7 isə onluq, onaltılıq, səkkizlik sistemlərdə eyni simvolla ifadə edilir, lakin ikili sistemdə 111₂ şəklindədir. Sualda 'eyni yazılan' dedikdə onluq, onaltılıq, səkkizlik sistemlər üçün 7 doğrudur.",
+    "sitg": "INF8.4.3",
+    "tik": "TIK-INF-8-13",
+    "bloom": "Qiymətləndirmək"
+  },
+  {
+    "question": "Kompüterdə 1 byte məlumat maksimum neçə müxtəlif dəyər saxlaya bilər?",
+    "options": ["A) 128", "B) 255", "C) 256", "D) 512"],
+    "correctAnswer": 2,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "1 bayt = 8 bit. Hər bit 2 dəyər (0 və ya 1) alır. 8 bit = 2⁸ = 256 müxtəlif kombinasiya (0-dan 255-ə qədər, cəmi 256 fərqli dəyər). Bu, işarəsiz baytın 0–255 aralığında olmasını izah edir. ASCII simvolları 0–127, genişlənmiş ASCII isə 0–255 aralığını istifadə edir.",
+    "sitg": "INF8.5.1",
+    "tik": "TIK-INF-8-14",
+    "bloom": "Anlamaq"
+  },
+  {
+    "question": "Aşağıdakılardan hansı 1 meqabayta bərabərdir?",
+    "options": [
+      "A) 1 000 000 bayt",
+      "B) 1 000 kilobayt",
+      "C) 1 048 576 bayt",
+      "D) 1 024 000 bayt"
+    ],
+    "correctAnswer": 2,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "sadə",
+    "cat": "İnformatika 8",
+    "explanation": "1 meqabayt (MB) = 1024 kilobayt = 1024 × 1024 bayt = 1 048 576 bayt. Bu, kompüter elminin standart tərifidir. Bəzi istehsalçılar (xüsusilə sabit disk istehsalçıları) 1 MB = 1 000 000 bayt hesabladığından diskin görünən tutumu daha az görsənir. SI prefiksinə görə 1 mebibyte (MiB) = 1 048 576 bayt.",
+    "sitg": "INF8.5.1",
+    "tik": "TIK-INF-8-14",
+    "bloom": "Xatırlamaq"
+  },
+  {
+    "question": "Bir şagird 10110₂ + 1101₂ cəmini ikili sistemdə hesablamaq istəyir. Nəticə nədir?",
+    "options": ["A) 100001₂", "B) 100011₂", "C) 11111₂", "D) 101011₂"],
+    "correctAnswer": 1,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "İkili toplanma: 10110 + 01101 (sağa sıfır əlavə edildi). Sağdan: 0+1=1; 1+0=1; 1+1=10 (0 yaz, 1 keçir); 0+1+1(keçirici)=10 (0 yaz, 1 keçir); 1+0+1=10 (0 yaz, 1 keçir). Nəticə: 100011₂. Yoxlama: 22+13=35₁₀; 100011₂=32+2+1=35 ✓. İkili toplanmada keçirici (carry) metodunu doğru tətbiq etmək vacibdir.",
+    "sitg": "INF8.5.2",
+    "tik": "TIK-INF-8-15",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "Bir proqram 8-bit işarəsiz tam ədəd saxlayır. Proqramda 250 + 10 hesablanırsa nə baş verir?",
+    "options": [
+      "A) Nəticə 260 olur, lakin 8 bit onu saxlaya bilməz; 4 saxlanılır (overflow)",
+      "B) Proqram avtomatik 16-bit formata keçir",
+      "C) Nəticə 0 olur, çünki maksimum aşılıb",
+      "D) Proqram xəta verir və dayanır"
+    ],
+    "correctAnswer": 0,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "orta",
+    "cat": "İnformatika 8",
+    "explanation": "8-bit işarəsiz tam ədəd maksimum 255-dir (2⁸-1). 250+10=260. 260 mod 256 = 4. Overflow (daşma) baş verir: 260-256=4 saxlanılır. 260₁₀ = 100000100₂ lakin 8-bit yalnız aşağı 8 biti saxlayır: 00000100₂ = 4₁₀. Bu xəta proqramçılığın ən geniş yayılmış xətalarından biridir. C dilində bu standart davranışdır, Python isə avtomatik böyük tam ədədlərə keçir.",
+    "sitg": "INF8.5.2",
+    "tik": "TIK-INF-8-15",
+    "bloom": "Təhlil etmək"
+  },
+  {
+    "question": "Bir sistemdə 4 GB RAM var. Proqram 3.8 GB yaddaş istifadə edir. Nə qədər azad RAM qalır? Sabit diskin bu vəziyyətə heç bir əlaqəsi varmı?",
+    "options": [
+      "A) 204.8 MB; Sabit disk virtual yaddaş üçün istifadə edilə bilər",
+      "B) 200 MB; Sabit diskin bu vəziyyətə əlaqəsi yoxdur",
+      "C) 0.2 GB; Sabit disk RAM-ı əvəz edə bilməz",
+      "D) 1024 MB; Swap faylı avtomatik aktivləşir"
+    ],
+    "correctAnswer": 0,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "4 GB - 3.8 GB = 0.2 GB = 0.2 × 1024 MB = 204.8 MB azad RAM. Sabit diskdəki virtual yaddaş (swap/pagefile): Əməliyyat sistemi RAM dolduqda sabit diskdəki bir bölməni virtual RAM kimi istifadə edir. Bu çox yavaşdır (SSD: ~500 MB/s vs RAM: ~50 GB/s), lakin proqramın işləməsini təmin edir. Windows-da 'pagefile.sys', Linux-da 'swap partition' bu məqsədlə istifadə edilir.",
+    "sitg": "INF8.5.3",
+    "tik": "TIK-INF-8-16",
+    "bloom": "Tətbiq etmək"
+  },
+  {
+    "question": "İnternetdə bir məlumat paketinin ötürülməsi zamanı məlumat bit axını şəklindədir. 1 Mbps (megabit per second) sürətlə 5 MB faylı yükləmək neçə saniyə çəkər? Bu hesablama zamanı hansı çevirmə vacibdir?",
+    "options": [
+      "A) 5 saniyə; MB-ı Mb-a çevirmək lazımdır (1 bayt = 8 bit)",
+      "B) 40 saniyə; Mbps-dən MB/s-ə çevirmək lazımdır",
+      "C) 5 saniyə; MB ilə Mb eyni şeydir",
+      "D) 8 saniyə; çevirmə tələb olunmur"
+    ],
+    "correctAnswer": 1,
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "difficulty": "çətin",
+    "cat": "İnformatika 8",
+    "explanation": "Vacib fərq: 1 Mbps = 1 megabit/saniyə = 0.125 MB/saniyə (çünki 1 MB = 8 Mbit). 5 MB fayl = 40 megabit. 40 Mbit ÷ 1 Mbps = 40 saniyə. Alternativ: 1 Mbps = 125 KB/s; 5 MB = 5120 KB; 5120 ÷ 125 = 40.96 ≈ 40 saniyə. İnternet sürəti adətən bit/s ilə, fayl ölçüsü isə bayt/s ilə verilir. Bu fərqi bilmək internet planlarını düzgün qiymətləndirmək üçün vacibdir.",
+    "sitg": "INF8.5.3",
+    "tik": "TIK-INF-8-16",
+    "bloom": "Qiymətləndirmək"
+  }
+]

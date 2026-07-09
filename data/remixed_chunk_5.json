@@ -1,0 +1,594 @@
+[
+  {
+    "id": "09-007-0106-B1F01-01-01-076-eac0-r1",
+    "passport_id": "09-007-0106-B1F01-01-01-076-eac0-r1",
+    "question": "Qığılcım boşalması kanalında cərəyan şiddəti nə qədər ola bilər?",
+    "options": [
+      "500 A",
+      "1000 A",
+      "5000 A",
+      "10 000 A"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd olunur ki, boşalma kanalında cərəyan şiddəti 5000 A-a qədər ola bilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.6. Müstəqil qaz boşalması və onun növləri"
+  },
+  {
+    "id": "09-007-0106-B1F01-01-01-077-ce62-r1",
+    "passport_id": "09-007-0106-B1F01-01-01-077-ce62-r1",
+    "question": "Qığılcım boşalması kanalında gərginlik nə qədər ola bilir?",
+    "options": [
+      "10^3 V",
+      "10^4 V",
+      "10^5 V",
+      "100 V"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətnə əsasən, qığılcım boşalması zamanı gərginlik 10^4 V-a qədər ola bilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.6. Müstəqil qaz boşalması və onun növləri"
+  },
+  {
+    "id": "09-007-0107-B1F01-03-02-098-6a5c-r1",
+    "passport_id": "09-007-0107-B1F01-03-02-098-6a5c-r1",
+    "question": "Xüsusi elektrik keçiriciliyi hansı fiziki kəmiyyətin tərs qiymətinə bərabərdir?",
+    "options": [
+      "Elektrik tutumu",
+      "Xüsusi müqavimət",
+      "Cərəyan şiddəti",
+      "Gərginlik"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə verildiyi kimi, xüsusi keçiricilik ədədi qiymətcə maddənin xüsusi müqavimətinin tərs qiymətinə bərabərdir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.7. Yarımkeçiricilər. Yarımkeçiricilərin məxsusi elektrik keçiriciliyi"
+  },
+  {
+    "id": "09-007-0108-B1F01-02-01-119-f3e9-r1",
+    "passport_id": "09-007-0108-B1F01-02-01-119-f3e9-r1",
+    "question": "Aşağıdakılardan hansı ümumi pedaqoji biliklərin tətbiqi sahəsinə aiddir?",
+    "options": [
+      "Tədris prosesinin planlaşdırılması",
+      "Fiziki proseslərin riyazi modelləşdirilməsi",
+      "Kimyəvi reaksiyaların ölçülməsi",
+      "Maddi nöqtənin kinematikası"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ümumi pedaqoji biliklər tədris proseslərinin idarə edilməsi ilə bağlıdır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.8. Yarımkeçiricilərin aşqar keçiriciliyi"
+  },
+  {
+    "id": "09-007-0102-B1F01-01-01-019-ce2b-r1",
+    "passport_id": "09-007-0102-B1F01-01-01-019-ce2b-r1",
+    "question": "Dəniz səthindən yuxarı dağlıq zonaya qalxdıqca temperatur hər 100 metr yüksəklikdə neçə dərəcə azalır?",
+    "options": [
+      "1°C",
+      "0,5°C",
+      "2°C",
+      "0,1°C"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə qeyd edildiyi kimi, dağlıq zonaya qalxdıqca temperatur hər 100 m yüksəklikdə 0,5°C azalır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.2. Metalların müqavimətinin temperaturdan asılılığı"
+  },
+  {
+    "id": "09-007-0103-B1F01-04-02-044-e36a-r1",
+    "passport_id": "09-007-0103-B1F01-04-02-044-e36a-r1",
+    "question": "L.Şahbazlının inşasında üzgüçülüklə məşğul olub yarışlarda qalib gələn hansı şəxs nümunə göstərilmişdir?",
+    "options": [
+      "Əli Məmmədov",
+      "Həsən Əliyev",
+      "İmran Cəfərzadə",
+      "Vüqar Həşimov"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Ləmanın İmran Cəfərzadəni nümunə göstərdiyi qeyd olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.3. Elektrolitlərdə elektrik cərəyanı"
+  },
+  {
+    "id": "09-007-0105-B1F01-05-03-069-6e81-r1",
+    "passport_id": "09-007-0105-B1F01-05-03-069-6e81-r1",
+    "question": "İnşa ilə bağlı verilmiş rəydə hansı tövsiyə qeyd olunmuşdur?",
+    "options": [
+      "Mətni daha da qısaltmaq",
+      "Sitatlardan və atalar sözlərindən istifadə etmək",
+      "Giriş hissəsini yenidən yazmaq",
+      "Faktlardan qaçınmaq"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rəydə inşada diqqət yetirilməsi lazım olan məsələ kimi sitatlardan və atalar sözlərindən istifadə etməyin məqsədəmüvafiq olacağı vurğulanıb.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1.5. Qazlarda elektrik cərəyanı. Qeyri-müstəqil boşalma"
+  },
+  {
+    "id": "09-007-0109-B1F01-02-02-127-bad1-r1",
+    "passport_id": "09-007-0109-B1F01-02-02-127-bad1-r1",
+    "question": "Pedaqoji fəaliyyətdə dərslikdən əlavə hansı biliklərdən istifadə edilməsi vacibdir?",
+    "options": [
+      "Yalnız texniki biliklərdən",
+      "Ümumi pedaqoji biliklərdən",
+      "Yalnız tibbi biliklərdən",
+      "Hüquqi normalardan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mövzu dərslikdə tapılmadıqda ümumi pedaqoji biliklərdən istifadə etməyin zəruriliyi qeyd olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.9. p-n keçidi. Yarımkeçirici diod"
+  },
+  {
+    "id": "09-001-0303-G1F01-02-02-016-ee8d-r1",
+    "passport_id": "09-001-0303-G1F01-02-02-016-ee8d-r1",
+    "question": "Ölkələr arasında coğrafi əmək bölgüsünün əsasını maddi istehsalın hansı sahəsi təşkil edir?",
+    "options": [
+      "Kənd təsərrüfatı",
+      "Sənaye",
+      "Nəqliyyat",
+      "Tikinti"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə nəqliyyatın maddi istehsalın üçüncü sahəsi olaraq coğrafi əmək bölgüsünün əsasını təşkil etdiyi qeyd olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Avropanın relyefi"
+  },
+  {
+    "id": "09-001-0707-G1F01-04-03-087-90c4-r1",
+    "passport_id": "09-001-0707-G1F01-04-03-087-90c4-r1",
+    "question": "Verilmiş cədvəl qırıntısına əsasən, Şimali Amerikanın göstəricilərindən (min km2) biri neçəyə bərabərdir?",
+    "options": [
+      "750",
+      "1260",
+      "1140",
+      "47,5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə Şimali Amerikaya aid sıralamalardan birində 750 ədədi qeyd edilmişdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi"
+  },
+  {
+    "id": "09-001-0909-G1F01-02-01-119-bc13-r1",
+    "passport_id": "09-001-0909-G1F01-02-01-119-bc13-r1",
+    "question": "Ana dilində bizə çatan ilk epik poeziya örnəyi hansı əsər hesab olunur?",
+    "options": [
+      "Xəmsə",
+      "Dastani-Əhməd Hərami",
+      "Hürufnamə",
+      "Şikayətnamə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə vurğulanır ki, müəllifi məlum olmayan \"Dastani-Əhməd Hərami\" poeması ana dilində ilk epik poeziya örnəyidir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "9. Azərbaycanın relyefi və tektonik quruluşu"
+  },
+  {
+    "id": "09-001-0505-G1F01-01-01-055-9f0f-r1",
+    "passport_id": "09-001-0505-G1F01-01-01-055-9f0f-r1",
+    "question": "Cədvəldə ABŞ üçün verilmiş göstəricilərdən biri neçədir?",
+    "options": [
+      "10,5",
+      "12,4",
+      "15,2",
+      "9,1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə ABŞ-a aid 12,4 və 8,4 ədədləri qeyd olunmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Şimali Amerikanın relyefi"
+  },
+  {
+    "id": "09-001-0505-G1F01-05-03-059-7dec-r1",
+    "passport_id": "09-001-0505-G1F01-05-03-059-7dec-r1",
+    "question": "Verilmiş statistik fraqmentdə hansı ölkənin adı çəkilir?",
+    "options": [
+      "Kanada",
+      "Meksika",
+      "Braziliya",
+      "ABŞ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fraqmentdə yalnız ABŞ və ona aid rəqəmlər göstərilib.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5. Şimali Amerikanın relyefi"
+  },
+  {
+    "id": "09-001-0606-G1F01-01-01-062-02ae-r1",
+    "passport_id": "09-001-0606-G1F01-01-01-062-02ae-r1",
+    "question": "Fraqmentdə hansı materikin adı və ona aid rəqəm öz əksini tapmışdır?",
+    "options": [
+      "Avropa",
+      "Asiya",
+      "Afrika",
+      "Avstraliya"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə \"Afrika 13\" qeyd edilmişdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi"
+  },
+  {
+    "id": "09-001-0606-G1F01-04-03-063-be40-r1",
+    "passport_id": "09-001-0606-G1F01-04-03-063-be40-r1",
+    "question": "Mətndə göstərilən materik adını müəyyən edin:",
+    "options": [
+      "Avropa",
+      "Asiya",
+      "Avstraliya",
+      "Afrika"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Qısa mətndə \"Afrika\" sözü yer alıb.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi"
+  },
+  {
+    "id": "09-001-0606-G1F01-02-02-071-e0eb-r1",
+    "passport_id": "09-001-0606-G1F01-02-02-071-e0eb-r1",
+    "question": "Verilmiş fraqmentə görə 13 rəqəmi hansı materikə aid edilmişdir?",
+    "options": [
+      "Şimali Amerika",
+      "Avstraliya",
+      "Afrika",
+      "Antarktida"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fraqmentdə birbaşa \"Afrika 13\" yazılıb.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi"
+  },
+  {
+    "id": "09-001-0707-G1F01-01-01-076-8e2b-r1",
+    "passport_id": "09-001-0707-G1F01-01-01-076-8e2b-r1",
+    "question": "Verilmiş məlumatlara görə Nigerin göstəricisi nə qədərdir?",
+    "options": [
+      "1260",
+      "27,2",
+      "47,5",
+      "750"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Nigerin göstəricisi 47,5 olaraq qeyd edilib.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi"
+  },
+  {
+    "id": "09-001-0707-G1F01-01-01-079-c09e-r1",
+    "passport_id": "09-001-0707-G1F01-01-01-079-c09e-r1",
+    "question": "Cənubi Amerika üçün verilmiş rəqəmsal göstərici neçədir?",
+    "options": [
+      "750",
+      "27,2",
+      "1260",
+      "47,5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Cənubi Amerikanın göstəricisi 1260 kimi verilib.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi"
+  },
+  {
+    "id": "09-001-0707-G1F01-02-02-086-e209-r1",
+    "passport_id": "09-001-0707-G1F01-02-02-086-e209-r1",
+    "question": "Göstəricilər siyahısında 27,2 rəqəmi hansı dövlətə aid edilmişdir?",
+    "options": [
+      "Misir",
+      "Niger",
+      "ABŞ",
+      "Çin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə Misirin göstəricisi 27,2 olaraq qeyd edilmişdir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi"
+  },
+  {
+    "id": "09-002-0104-I1F01-04-03-057-d2d5-r1",
+    "passport_id": "09-002-0104-I1F01-04-03-057-d2d5-r1",
+    "question": "Görüntünün bir pikselinin rəngini kodlaşdırmaq üçün istifadə olunan bitlərin miqdarına nə deyilir?",
+    "options": [
+      "Rəng dərinliyi",
+      "Rastr şəbəkəsi",
+      "Piksel ölçüsü",
+      "Vektor qrafikası"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə aydın şəkildə qeyd olunur ki, bir pikselin rəngini kodlaşdırmaq üçün istifadə olunan bitlərin miqdarına rəng dərinliyi deyilir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "4. Qrafik informasiyanın kodlaşdırılması"
+  },
+  {
+    "id": "09-002-0105-I1F01-01-01-066-7193-r1",
+    "passport_id": "09-002-0105-I1F01-01-01-066-7193-r1",
+    "question": "Verilmiş siyahı hansı növ qrafikanın əsas anlayışlarını əhatə edir?",
+    "options": [
+      "Rastr qrafikası",
+      "Vektor qrafikası",
+      "Fraktal qrafikası",
+      "3D modelləşdirmə"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Siyahıdakı Piksel, Rastr və BMP formatı anlayışları məhz rastr qrafikasına aiddir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Səs informasiyasının kodlaşdırılması"
+  },
+  {
+    "id": "09-002-0105-I1F01-02-01-072-d770-r1",
+    "passport_id": "09-002-0105-I1F01-02-01-072-d770-r1",
+    "question": "Siyahıda hansı qrafik fayl formatının adı çəkilmişdir?",
+    "options": [
+      "PNG",
+      "BMP",
+      "JPG",
+      "GIF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə birbaşa \"BMP formatı\" ifadəsi verilmişdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Səs informasiyasının kodlaşdırılması"
+  },
+  {
+    "id": "09-002-0101-I1F01-02-02-005-d437-r1",
+    "passport_id": "09-002-0101-I1F01-02-02-005-d437-r1",
+    "question": "Ekranda görüntünü əmələ gətirən nöqtələrin düzbucaqlı şəbəkəsi necə adlanır?",
+    "options": [
+      "Rəng palitrası",
+      "Vektor",
+      "Rastr",
+      "Şablon"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə birbaşa göstərilir ki, ekranda görüntünü əmələ gətirən nöqtələrin düzbucaqlı şəbəkəsi rastr adlanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Rastr qrafikası"
+  },
+  {
+    "id": "09-002-0101-I1F01-04-03-010-4fd4-r1",
+    "passport_id": "09-002-0101-I1F01-04-03-010-4fd4-r1",
+    "question": "Rastrın hər bir nöqtəsi hansı iki parametrlə xarakterizə olunur?",
+    "options": [
+      "Ölçüsü və forması",
+      "Mövqeyi və rəngi",
+      "Kütləsi və həcmi",
+      "Sıxlığı və şəffaflığı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətnə görə, rastrın hər bir nöqtəsi ekrandakı mövqeyi və rəngi ilə xarakterizə edilir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1. Rastr qrafikası"
+  },
+  {
+    "id": "09-002-0102-I1F01-02-02-018-0738-r1",
+    "passport_id": "09-002-0102-I1F01-02-02-018-0738-r1",
+    "question": "Vektor qrafikasında ekrana çıxarılan xətlərin yerini, uzunluğunu və istiqamətini müəyyən etmək üçün nədən istifadə edilir?",
+    "options": [
+      "Piksellərin sıxlığından",
+      "Riyazi düsturlardan",
+      "Rəng palitralarından",
+      "Rastr cədvəllərindən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə qeyd olunur ki, vektor qrafikasında xətlərin xüsusiyyətlərini müəyyən etmək üçün riyazi düsturlardan istifadə edilir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Vektor qrafikası"
+  },
+  {
+    "id": "09-002-0104-I1F01-03-02-059-7a3f-r1",
+    "passport_id": "09-002-0104-I1F01-03-02-059-7a3f-r1",
+    "question": "Rənglərin gerçək foto keyfiyyətində olması üçün ən azı neçə bit lazımdır?",
+    "options": [
+      "8 bit",
+      "15 bit",
+      "24 bit",
+      "32 bit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə vurğulanır ki, rənglərin gerçək foto keyfiyyətində olması üçün ən azı 24 bit lazımdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "4. Qrafik informasiyanın kodlaşdırılması"
+  },
+  {
+    "id": "09-003-0101-H1F01-02-02-007-9f63-r1",
+    "passport_id": "09-003-0101-H1F01-02-02-007-9f63-r1",
+    "question": "Cədvəldə təqdim olunan rəqəmsal dəyərlər (12,4 və 8,4) hansı dövlətə aiddir?",
+    "options": [
+      "Fransa",
+      "Böyük Britaniya",
+      "Almaniya",
+      "ABŞ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə yeganə dövlət adı olaraq ABŞ göstərilib.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Amerika Birləşmiş Ştatları"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-026-a56f-r1",
+    "passport_id": "09-003-0102-H1F01-01-01-026-a56f-r1",
+    "question": "Siyahıda hansı şəxsin adı çəkilmişdir?",
+    "options": [
+      "Napoleon Bonapart",
+      "Oliver Kromvel",
+      "Kral Artur",
+      "Janna d'Ark"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Verilmiş mətndə \"Oliver Kromvel\" adı açıq şəkildə qeyd olunub.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa"
+  },
+  {
+    "id": "09-003-0103-H1F01-02-02-040-e662-r1",
+    "passport_id": "09-003-0103-H1F01-02-02-040-e662-r1",
+    "question": "Mətndə adı çəkilən beynəlxalq konfransda hansı iki dövlətin iştirakı xüsusi vurğulanmışdır?",
+    "options": [
+      "ABŞ və İngiltərə",
+      "Fransa və İtaliya",
+      "Sovet Rusiyası və Almaniya",
+      "Yaponiya və Çin"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd edilir ki, konfransda Sovet Rusiyası və Almaniya da iştirak edirdi.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya"
+  },
+  {
+    "id": "09-003-0107-H1F01-01-01-095-9cea-r1",
+    "passport_id": "09-003-0107-H1F01-01-01-095-9cea-r1",
+    "question": "Azərbaycan SSR-in ərəb qrafikalı əlifbadan yeni əlifbaya keçməsi rəsmən neçənci ildən elan edildi?",
+    "options": [
+      "1926-cı",
+      "1929-cu",
+      "1932-ci",
+      "1937-ci"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə göstərilir ki, 1929-cu ildən yeni əlifbaya keçid rəsmən elan edilib.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Birinci dünya müharibəsi"
+  },
+  {
+    "id": "09-003-0108-H1F01-01-01-114-2af8-r1",
+    "passport_id": "09-003-0108-H1F01-01-01-114-2af8-r1",
+    "question": "Verilmiş mətn parçasında adı çəkilən beynəlxalq təşkilatlardan biri hansıdır?",
+    "options": [
+      "NATO",
+      "UNESCO",
+      "BMT",
+      "ÜST"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə UNESCO təşkilatının adı çəkilib.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "8. Mədəniyyət"
+  },
+  {
+    "id": "09-003-0101-H1F01-02-02-002-eb22-r1",
+    "passport_id": "09-003-0101-H1F01-02-02-002-eb22-r1",
+    "question": "Fraqmentdə hansı ölkənin adı verilmişdir?",
+    "options": [
+      "ABŞ",
+      "Kanada",
+      "Meksika",
+      "Kuba"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə yalnız ABŞ ölkəsinin adı yer alır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Amerika Birləşmiş Ştatları"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-020-2a9e-r1",
+    "passport_id": "09-003-0102-H1F01-01-01-020-2a9e-r1",
+    "question": "Siyahıda hansı ölkənin tarixi inqilabı xüsusi olaraq qeyd edilib?",
+    "options": [
+      "ABŞ inqilabı",
+      "Fransa inqilabı",
+      "Rusiya inqilabı",
+      "İngiltərə inqilabı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə \"1789-cu il Fransa inqilabı\" ifadəsi var.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-029-6da2-r1",
+    "passport_id": "09-003-0102-H1F01-01-01-029-6da2-r1",
+    "question": "Mətndə xatırladılan tarixi sülalə hansıdır?",
+    "options": [
+      "Tüdorlar",
+      "Burbonlar",
+      "Stüartlar",
+      "Romanovlar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə \"Stüartlar\" qeyd edilmişdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa"
+  },
+  {
+    "id": "09-003-0103-H1F01-01-01-037-b93d-r1",
+    "passport_id": "09-003-0103-H1F01-01-01-037-b93d-r1",
+    "question": "Mətndə qeyd olunan beynəlxalq konfrans hansı ilin avqustunda baş vermişdir?",
+    "options": [
+      "1945",
+      "1975",
+      "1980",
+      "1991"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fraqmentdə \"1975-ci il, avqust\" tarixi göstərilib.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya"
+  },
+  {
+    "id": "09-003-0103-H1F01-04-03-041-94eb-r1",
+    "passport_id": "09-003-0103-H1F01-04-03-041-94eb-r1",
+    "question": "Sovet Rusiyası beynəlxalq konfransda hansı borcların ona aid olmadığını bildirdi?",
+    "options": [
+      "Müharibə təzminatlarının",
+      "Çar hakimiyyəti dövründə alınmış borcların",
+      "Sovet İttifaqı borclarının",
+      "Lenin dövründə alınmış borcların"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə Sovet Rusiyasının çar hakimiyyətinin dövründə alınmış borcların ona aid olmadığını bildirdiyi yazılıb.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya"
+  },
+  {
+    "id": "09-003-0103-H1F01-04-03-045-8d34-r1",
+    "passport_id": "09-003-0103-H1F01-04-03-045-8d34-r1",
+    "question": "Konfransın gedişində sovet Rusiyası və hansı dövlət arasında müzakirələr xatırlanır?",
+    "options": [
+      "Fransa",
+      "İtaliya",
+      "Almaniya",
+      "Yunanıstan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Sovet Rusiyası ilə Almaniyanın iştirakı və onların adı yanaşı çəkilib.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya"
+  }
+]

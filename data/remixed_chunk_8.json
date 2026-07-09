@@ -1,0 +1,594 @@
+[
+  {
+    "id": "08-007-04-05-03-15-56da",
+    "passport_id": "08-007-04-05-03-15-56da-r1",
+    "question": "2008-ci ildə \"Xocalıya ədalət\" kampaniyası kimin təşəbbüsü ilə başlamışdır?",
+    "options": [
+      "Mehriban xanım Əliyeva",
+      "Heydər Əliyev Fondu",
+      "Leyla Əliyeva",
+      "BMT-nin Baş Assambleyası"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə 2008-ci ildə Heydər Əliyev Fondunun vitse-prezidenti Leyla Əliyevanın təşəbbüsü ilə kampaniyanın başladığı qeyd olunur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Coğrafiyada yeni biliklərin toplanması yolları"
+  },
+  {
+    "id": "09-015-02-01-01-03-21b8",
+    "passport_id": "09-015-02-01-01-03-21b8-r1",
+    "question": "Mətnə əsasən 1929-cu ildə Azərbaycan SSR-də hansı mühüm hadisə baş verdi?",
+    "options": [
+      "Ümumittifaq Türkoloji Qurultay keçirildi",
+      "Ərəb qrafikalı əlifbadan yeni əlifbaya keçildi",
+      "Çinlə müharibə başladı",
+      "Tiryək müharibəsi başa çatdı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə açıq şəkildə 1929-cu ildən Azərbaycan SSR-in yeni əlifbaya rəsmən keçdiyi vurğulanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Birinci Qarabağ müharibəsi"
+  },
+  {
+    "id": "09-015-02-04-03-14-5429",
+    "passport_id": "09-015-02-04-03-14-5429-r1",
+    "question": "Tiryək müharibəsi kimin məğlubiyyəti ilə əlaqədardır?",
+    "options": [
+      "Türk xalqlarının",
+      "Azərbaycanın",
+      "Çinin",
+      "Haydutların"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Verilmiş parçada 'Tiryək' müharibəsinin başlaması və Çinin məğlubiyyəti qeyd olunub.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Birinci Qarabağ müharibəsi"
+  },
+  {
+    "id": "09-015-03-4-3-12-a1c7",
+    "passport_id": "09-015-03-4-3-12-a1c7-r1",
+    "question": "Heydər Əliyev Azərbaycanda hakimiyyətə qayıtdıqdan sonra hansı qrupun fəaliyyətinin canlanmasına nail oldu?",
+    "options": [
+      "Avropa Şurasının",
+      "ATƏT-in",
+      "Minsk qrupunun",
+      "Təhlükəsizlik Şurasının"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sitatda qeyd olunur ki, Heydər Əliyev hakimiyyətə qayıtdıqdan sonra Minsk qrupunun fəaliyyətinin canlanmasına nail oldu.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Atəşkəs"
+  },
+  {
+    "id": "09-015-05-2-2-07-8957",
+    "passport_id": "09-015-05-2-2-07-8957-r1",
+    "question": "Mövzu dərslikdə tapılmadıqda müəllim nə etməlidir?",
+    "options": [
+      "Şagirdlərdən soruşmalıdır",
+      "Ümumi pedaqoji biliklərdən istifadə etməlidir",
+      "Mövzunu buraxmalıdır",
+      "Məktəb rəhbərliyinə bildirməlidir"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Təlimata əsasən mövzu dərslikdə olmadıqda ümumi pedaqoji biliklərdən istifadə etmək lazımdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Böyük zəfərə doğru"
+  },
+  {
+    "id": "09-015-07-Xatırlama-01-02-284a",
+    "passport_id": "09-015-07-Xatırlama-01-02-284a-r1",
+    "question": "Tədris zamanı müvafiq məlumat dərslikdə yer almadıqda, metodiki tövsiyə nədir?",
+    "options": [
+      "Mənbələri internetdən tapmaq",
+      "Test tapşırıqlarını ixtisar etmək",
+      "Valideynləri məlumatlandırmaq",
+      "Ümumi pedaqoji biliklərdən yararlanmaq"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Qeyd olunur ki, mövzu tapılmadıqda ümumi pedaqoji biliklərə əsaslanmaq gərəkir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "§7 Qəhrəmanlar unudulmur"
+  },
+  {
+    "id": "09-015-08-1-1-001-bfed",
+    "passport_id": "09-015-08-1-1-001-bfed-r1",
+    "question": "Əgər şagird üçün lazım olan mövzu dərslikdə yoxdursa, hansı yanaşma tələb olunur?",
+    "options": [
+      "Ümumi pedaqoji biliklərdən istifadə etmək",
+      "Dərsi dayandırmaq",
+      "Şagirdi evə göndərmək",
+      "Yeni dərslik tələb etmək"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tövsiyə olunur ki, dərslikdə olmayan mövzularda ümumi pedaqoji biliklərdən çıxış edilsin.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "§8 Müzəffər Ali Baş Komandan"
+  },
+  {
+    "id": "09-015-08-2-2-008-a4f8",
+    "passport_id": "09-015-08-2-2-008-a4f8-r1",
+    "question": "Dərslikdə çatışmayan mövzuların izahı üçün əsas istinad mənbəyi nə olmalıdır?",
+    "options": [
+      "Sosial şəbəkələr",
+      "Digər məktəblərin təcrübəsi",
+      "Ümumi pedaqoji biliklər",
+      "Sinxron tərcümələr"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə yalnız ümumi pedaqoji biliklərdən istifadə edilməsi vurğulanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "§8 Müzəffər Ali Baş Komandan"
+  },
+  {
+    "id": "09-001-01-4-3-18-eda3",
+    "passport_id": "09-001-01-4-3-18-eda3-r1",
+    "question": "In the provided grammar task, what is the tag question for 'Don't be late for the meeting'?",
+    "options": [
+      "are you?",
+      "do you?",
+      "will you?",
+      "can you?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The example gives: 'Don't be late for the meeting, will you?'.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "UNIT 1. MY LANGUAGE - MY IDENTITY!"
+  },
+  {
+    "id": "09-001-U2-03-02-12-a0d4",
+    "passport_id": "09-001-U2-03-02-12-a0d4-r1",
+    "question": "What should Student A mime to their partner in Grammar B activity?",
+    "options": [
+      "A sentence",
+      "The first adjective",
+      "A tag question",
+      "A strong noun"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The text instructs Student A: 'Mime the first adjective to your partner.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "UNIT 2"
+  },
+  {
+    "id": "09-001-U2-02-03-16-b0eb",
+    "passport_id": "09-001-U2-02-03-16-b0eb-r1",
+    "question": "Which of the following is given as the strong version of the adjective 'angry'?",
+    "options": [
+      "exhausted",
+      "furious",
+      "delighted",
+      "terrified"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The table explicitly shows 'angry-furious'.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "UNIT 2"
+  },
+  {
+    "id": "09-001-01-5-3-11-6519",
+    "passport_id": "09-001-01-5-3-11-6519-r1",
+    "question": "Если тема не найдена в учебнике, что следует сделать согласно тексту?",
+    "options": [
+      "Оставить вопрос без ответа",
+      "Использовать общие педагогические знания",
+      "Попросить учеников найти информацию",
+      "Использовать словарь"
+    ],
+    "correctAnswer": 1,
+    "explanation": "В тексте дано указание использовать общие педагогические знания ('Ümumi pedaqoji biliklərdən istifadə edin').",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Урок 1. Язык - одежда мыслей."
+  },
+  {
+    "id": "09-001-02-təhlil-çətin-12-53b8",
+    "passport_id": "09-001-02-təhlil-çətin-12-53b8-r1",
+    "question": "Согласно короткой инструкции, к чему должен обратиться учитель, если тема отсутствует в книге?",
+    "options": [
+      "К интернету",
+      "К коллегам",
+      "К общим педагогическим знаниям",
+      "К энциклопедии"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Текст явно предписывает опираться на общие педагогические знания.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Урок 2. Универсальный язык"
+  },
+  {
+    "id": "09-001-03-1-1-01-ca14",
+    "passport_id": "09-001-03-1-1-01-ca14-r1",
+    "question": "Какое педагогическое решение предложено для ситуаций, когда учебник не содержит нужной темы?",
+    "options": [
+      "Игнорировать тему",
+      "Применить общие педагогические знания",
+      "Отменить урок",
+      "Прочитать другой текст"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Указано: 'Ümumi pedaqoji biliklərdən istifadə edin'.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Урок 3. Словари"
+  },
+  {
+    "id": "09-001-05-04-çətin-11-4018",
+    "passport_id": "09-001-05-04-çətin-11-4018-r1",
+    "question": "Каково основное руководство к действию при отсутствии материала в учебнике?",
+    "options": [
+      "Написать жалобу",
+      "Спросить директора",
+      "Воспользоваться общими педагогическими знаниями",
+      "Опираться на личный опыт"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Инструкция гласит: использовать общие педагогические знания.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Урок 5. Лермонтов и Кавказ"
+  },
+  {
+    "id": "09-001-04-02-orta-05-57a4",
+    "passport_id": "09-001-04-02-orta-05-57a4-r1",
+    "question": "Mətnə görə aşağıdakı verilənlərdən hansı cədvəldə açar sahə ola bilər?",
+    "options": [
+      "Yaşadığı şəhər",
+      "Soyadı",
+      "Evin nömrəsi",
+      "Şəxsiyyət vəsiqəsinin nömrəsi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə açar sahə olma ehtimalı olan məlumatlar sırasında şəxsiyyət vəsiqəsinin nömrəsi soruşulur və o unikal olduğu üçün açar sahə sayılır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Thema 4. Sprachen und Biografien"
+  },
+  {
+    "id": "09-001-1-3-1-03-9d59",
+    "passport_id": "09-001-1-3-1-03-9d59-r1",
+    "question": "Selon le texte, comment Teymour dit-il bonjour à Céline ?",
+    "options": [
+      "Salut, Céline.",
+      "Bonjour, Céline.",
+      "Comment ça va, Céline?",
+      "Je vais bien, Céline."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dans le dialogue, Teymour dit explicitement : 'Salut, Céline.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport"
+  },
+  {
+    "id": "09-001-02-3-2-1-77ae",
+    "passport_id": "09-001-02-3-2-1-77ae-r1",
+    "question": "D'après l'activité 2, quelle est la réponse à la question 'Quel âge as-tu?' ?",
+    "options": [
+      "Je m'appelle Arzou.",
+      "J'ai sept ans.",
+      "J'ai 8 ans.",
+      "J'ai 35 ans."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dans l'activité 2, la réponse (a) à la question 'Quel âge as-tu?' est 'J'ai 8 ans.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+  },
+  {
+    "id": "10-001-04-deyerlendirme-cetin-5-fd30",
+    "passport_id": "10-001-04-deyerlendirme-cetin-5-fd30-r1",
+    "question": "Mətnə görə, Pyer Tiloyun bədii rəhbəri olduğu orkestr necə adlanır?",
+    "options": [
+      "L' Amoureux",
+      "Dövlət Filarmoniyası",
+      "Ü.Hacıbəyli",
+      "M.Maqomayev"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə Pyer Tiloyun 'L' Amoureux' orkestrinin bədii rəhbəri olduğu göstərilir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "4. Bəşəriyyətin yaddaşı - yazı"
+  },
+  {
+    "id": "10-001-05-Təhlil-Çətin-13-db41",
+    "passport_id": "10-001-05-Təhlil-Çətin-13-db41-r1",
+    "question": "Mətndə 'peşəkar ədəbi işçi' kimi təsvir olunan fəaliyyət sahəsi hansıdır?",
+    "options": [
+      "Jurnalistika",
+      "Müəllimlik",
+      "Tərcüməçilik",
+      "Siyasət"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə 'jurnalistika ilə məşğul olan peşəkar ədəbi işçi' ifadəsi yer alır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5. Arzum jurnalist olmaq idi"
+  },
+  {
+    "id": "10-003-01-anlama-orta-01-78f0",
+    "passport_id": "10-003-01-anlama-orta-01-78f0-r1",
+    "question": "Mətnə əsasən, kərtənkələnin divardan düşməməsinin fiziki səbəbi nədir?",
+    "options": [
+      "Cazibə qüvvəsi",
+      "Elektrostatik qüvvə",
+      "Maqnit sahəsi",
+      "Sürtünmə qüvvəsi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə göstərilir ki, barmaqların yumşaq yastıqcıqlarındakı törəmələrlə yapışdığı yer arasında möhkəm elektrostatik qüvvə meydana gəlir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Canlılarda qidalanma"
+  },
+  {
+    "id": "10-003-01-anlama-orta-04-3de5",
+    "passport_id": "10-003-01-anlama-orta-04-3de5-r1",
+    "question": "Canlılarda gedən bioloji proseslər, o cümlədən əzələlərin və sümüklərin fəaliyyəti üçün lazım olan enerji əsasən nə ilə ödənilir?",
+    "options": [
+      "Hərəkətlə",
+      "Qidalanma ilə",
+      "İşıqla",
+      "Temperaturla"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə 'Enerji isə qidalanma ilə ödənilir' cümləsi yer alır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Canlılarda qidalanma"
+  },
+  {
+    "id": "10-003-01-deyerlendirme-cetin-04-9f26",
+    "passport_id": "10-003-01-deyerlendirme-cetin-04-9f26-r1",
+    "question": "Mətnə görə hansı orqanlar sistemlərinin əlaqəli işləməsi üçün enerji sərf olunur?",
+    "options": [
+      "Yalnız əzələ və sümük sistemlərinin",
+      "Əzələ, dayaq və sinir sistemlərinin",
+      "Yalnız sinir sisteminin",
+      "Həzm və tənəffüs sistemlərinin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə qeyd olunur ki, 'Hərəkətə xidmət edən əzələlərin, dayaq rolunu oynayan sümüklərin, onların işinə nəzarət edən sinir sisteminin əlaqəli işləməsi üçün enerji sərf olunur.'",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Canlılarda qidalanma"
+  },
+  {
+    "id": "10-003-10-anlama-orta-5-e9bb",
+    "passport_id": "10-003-10-anlama-orta-5-e9bb-r1",
+    "question": "Mətndə qeyd olunanlara əsasən fotosintezin sürətinə təsir edən xarici amillərdən biri hansıdır?",
+    "options": [
+      "Xlorofilin miqdarı",
+      "Ağızcıqların sayı",
+      "İşıq şiddəti",
+      "Fermentlərin miqdarı"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə xarici amillər sırasında işıq şiddəti xüsusi olaraq qeyd edilib, digərləri daxili amillərdir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fotosintezin mexanizmi"
+  },
+  {
+    "id": "10-003-02-3-2-10-0837",
+    "passport_id": "10-003-02-3-2-10-0837-r1",
+    "question": "Mətndə oksigenin hüceyrələrdəki əsas rolu necə təsvir olunur?",
+    "options": [
+      "Oksigen qida maddələrinin tərkibindəki üzvi birləşmələri oksidləşdirir.",
+      "Oksigen su molekullarını parçalayır.",
+      "Oksigen hüceyrələrdə fotosintezi təmin edir.",
+      "Oksigen qeyri-üzvi maddələrin sintezini sürətləndirir."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunur ki, 'Qəbul olunan oksigen qida maddələrinin tərkibində olan üzvi birləşmələri oksidləşdirir.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Canlılarda tənəffüs"
+  },
+  {
+    "id": "10-003-02-4-3-12-a6ac",
+    "passport_id": "10-003-02-4-3-12-a6ac-r1",
+    "question": "Mətnə görə isti bölgələrdə yaşayan böcəklərin ölçüsü soyuq bölgələrdəkilərlə müqayisədə necə olur?",
+    "options": [
+      "Eyni ölçüdə olurlar",
+      "Daha kiçik olurlar",
+      "Daha böyük ölçüdə olurlar",
+      "Heç bir asılılıq yoxdur"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə birbaşa yazılır: 'İsti bölgələrdə yaşayan böcəklər soyuq bölgələrdə yaşayanlara nisbətən daha böyük ölçüdə olur.'",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Canlılarda tənəffüs"
+  },
+  {
+    "id": "10-003-05-04-3-13-b134",
+    "passport_id": "10-003-05-04-3-13-b134-r1",
+    "question": "Canlı orqanizmlərin müxtəlifliyini, təsvirini və təsnifatını biologiyanın hansı sahəsi öyrənir?",
+    "options": [
+      "Ekologiya",
+      "Fiziologiya",
+      "Sistematika",
+      "Anatomiya"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə biologiyanın sistematika sahəsinin təsnifat və təsvirlə məşğul olduğu vurğulanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5. Canlılarda qıcıqlanma"
+  },
+  {
+    "id": "10-003-6-Tehlil-orta-10-40d1",
+    "passport_id": "10-003-6-Tehlil-orta-10-40d1-r1",
+    "question": "Atmosfer havasında karbon qazının miqdarını azaldan və oksigen qazını artıran proses hansıdır?",
+    "options": [
+      "Tənəffüs",
+      "Çürümə",
+      "Minerallaşma",
+      "Fotosintez"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə üzvi maddə istehsalçılarının fotosintez nəticəsində karbon qazını azaltdığı və oksigeni artırdığı yazılıb.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Üzvi maddə istehsalçıları"
+  },
+  {
+    "id": "10-003-7-4-3-2-19f4",
+    "passport_id": "10-003-7-4-3-2-19f4-r1",
+    "question": "Zülal biosintezi prosesinin xüsusiyyəti kimi mətndə hansı fikir qeyd olunub?",
+    "options": [
+      "Aşağı enerji tələb edir",
+      "Yalnız RNT iştirakı ilə baş verir",
+      "Çoxlu sayda fermentlərin iştirakı ilə gedir və yüksək enerji tələb edir",
+      "Hüceyrədən kənarda həyata keçirilir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə 'Zülal biosintezi çoxlu sayda fermentlərin iştirakı ilə gedən və yüksək enerji tələb edən prosesdir' cümləsi verilib.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Zülal biosintezinin mexanizmi"
+  },
+  {
+    "id": "10-004-01-TET-CET-011-18f7",
+    "passport_id": "10-004-01-TET-CET-011-18f7-r1",
+    "question": "Mövzu dərslikdə olmadıqda, verilən göstərişə əsasən hansı yoldan istifadə etmək lazımdır?",
+    "options": [
+      "Ümumi pedaqoji biliklərdən",
+      "Riyazi hesablamalardan",
+      "Valideynlərin məsləhətindən",
+      "Sinifdəki şagirdlərin rəyindən"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Təlimatda 'Ümumi pedaqoji biliklərdən istifadə edin' yazılmışdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1. Coğrafiya təbiət elmləri sistemində"
+  },
+  {
+    "id": "10-004-06-01-Sadə-02-e9c4",
+    "passport_id": "10-004-06-01-Sadə-02-e9c4-r1",
+    "question": "Mətndə təqdim olunan siyahıya əsasən hansı forma Yerin əsl fiziki forması olaraq qəbul edilir?",
+    "options": [
+      "Ellips",
+      "Kürə",
+      "Kardioid",
+      "Geoid"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə 'Geoid' variantı var və Coğrafiyada Yerin forması Geoid kimi adlanır. Verilmiş siyahıda bu anlayış mövcuddur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "6. Yerin forması və ölçüləri"
+  },
+  {
+    "id": "10-004-06-04-Çətin-13-d296",
+    "passport_id": "10-004-06-04-Çətin-13-d296-r1",
+    "question": "Verilən formalardan hansı coğrafiyada geniş istifadə edilən termindir?",
+    "options": [
+      "Geoid",
+      "Ellips",
+      "Kardioid",
+      "Kürə"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndəki formalar siyahısında 'Geoid' xüsusi olaraq coğrafi termindir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "6. Yerin forması və ölçüləri"
+  },
+  {
+    "id": "10-004-07-ANL-SADƏ-04-07b4",
+    "passport_id": "10-004-07-ANL-SADƏ-04-07b4-r1",
+    "question": "Aşağıdakı dərəcə ölçülərindən hansı mətndə verilmiş rəqəmlər siyahısında mövcuddur?",
+    "options": [
+      "80°",
+      "47,5°",
+      "45°",
+      "100°"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə '47,5°' xüsusi olaraq qeyd edilmişdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Yer səthində günəş şüalarının düşmə bucağının və vaxt fərqlərinin hesablanması"
+  },
+  {
+    "id": "10-005-1.1-Dəy-Çətin-5-2fb2",
+    "passport_id": "10-005-1.1-Dəy-Çətin-5-2fb2-r1",
+    "question": "Cismin fəzada başqa cisimlərə nəzərən vəziyyətinin zaman keçdikcə dəyişməsi necə adlanır?",
+    "options": [
+      "Yerdəyişmə",
+      "Sürət",
+      "Mexaniki hərəkət",
+      "Təcil"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə verilən tərif mexaniki hərəkəti təsvir edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Mexaniki hərəkət və onun təsviri"
+  },
+  {
+    "id": "10-005-04-3-2-008-e725",
+    "passport_id": "10-005-04-3-2-008-e725-r1",
+    "question": "Bərabər zaman fasilələrində fərqli yerdəyişmələr icra edən maddi nöqtənin düzxətli hərəkəti necə adlanır?",
+    "options": [
+      "Bərabərsürətli hərəkət",
+      "Dəyişənsürətli hərəkət",
+      "Çevrə üzrə hərəkət",
+      "Qeyri-müntəzəm hərəkət"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tərifdə fərqli yerdəyişmələrin olduğu bildirildiyi üçün bu, dəyişənsürətli hərəkətdir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Düzxətli dəyişənsürətli hərəkət. Təcil."
+  },
+  {
+    "id": "10-005-04-2-2-010-751b",
+    "passport_id": "10-005-04-2-2-010-751b-r1",
+    "question": "Mətndəki tərifə görə düzxətli dəyişənsürətli hərəkətin xüsusiyyəti nədir?",
+    "options": [
+      "Həmişə eyni sürətlə getmək",
+      "Bərabər zaman fasilələrində müxtəlif yerdəyişmələr etmək",
+      "Sabit təcillə hərəkət etmək",
+      "Fırlanma hərəkəti etmək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə 'bərabər zaman fasilələrində müxtəlif yerdəyişmələr icra edən' şərti qeyd olunub.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Düzxətli dəyişənsürətli hərəkət. Təcil."
+  },
+  {
+    "id": "10-006-02-3-çətin-4-add2",
+    "passport_id": "10-006-02-3-çətin-4-add2-r1",
+    "question": "Verilmiş mətndəki nömrələnmiş hissələrdən birində qeyd olunan '109°28'' ölçüsü nəyi ifadə edə bilər?",
+    "options": [
+      "Karbon atomları arasındakı valent bucağını",
+      "Suyun qaynama temperaturunu",
+      "İşığın sınma bucağını",
+      "Alkanlarda karbon zəncirinin uzunluğunu"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə verilmiş 109°28' bucağı alkanlarda sp3 hibridləşməsinə uyğun valent bucağını (və 0,154 nm uzunluğu) göstərir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Alkanların molekullarının fəza quruluşu"
+  }
+]

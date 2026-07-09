@@ -1,0 +1,594 @@
+[
+  {
+    "id": "08-004-46-4-3-13-42b7-r1",
+    "passport_id": "08-004-46-4-3-13-42b7-r1",
+    "question": "DEF üçbucağının DK və EL medianları M nöqtəsində kəsişir. Əgər DK = 18 sm, və EM = 10 sm olarsa, MK və ML parçalarının uzunluqları cəmini tapın.",
+    "options": [
+      "10 sm",
+      "11 sm",
+      "12 sm",
+      "15 sm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ağırlıq mərkəzi olan M nöqtəsi medianları təpədən başlayaraq 2:1 nisbətində bölür. DK = 18 sm olduğundan, MK = 18 / 3 = 6 sm olur. EM təpəyə qədər olan hissədir və EM = 10 sm-dirsə, ML = 10 / 2 = 5 sm olar. Bu halda MK + ML = 6 + 5 = 11 sm edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Mütənasib parçalar"
+  },
+  {
+    "id": "08-004-65-3-2-01-3c51-r1",
+    "passport_id": "08-004-65-3-2-01-3c51-r1",
+    "question": "P(2; 5) və Q(3; 2) nöqtələrindən keçən düz xəttin tənliyini yazın.",
+    "options": [
+      "y = -3x + 11",
+      "y = 3x - 1",
+      "y = -3x + 8",
+      "y = 3x + 11"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bucaq əmsalı: k = (2 - 5) / (3 - 2) = -3 / 1 = -3. Tənliyi qururuq: y - 5 = -3(x - 2) => y = -3x + 6 + 5 => y = -3x + 11.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "İki nöqtədən keçən düz xəttin tənliyi"
+  },
+  {
+    "id": "08-004-66-4-2-10-c32f-r1",
+    "passport_id": "08-004-66-4-2-10-c32f-r1",
+    "question": "M(b; 5) nöqtəsi koordinat başlanğıcı ətrafında saat əqrəbi hərəkətinin əksi istiqamətində 90° döndükdə M1(-5; 8) nöqtəsi alınır. 'b'-nin qiymətini tapın.",
+    "options": [
+      "-8",
+      "5",
+      "8",
+      "-5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "(x; y) nöqtəsi 90° əks istiqamətdə döndükdə (-y; x) olur. M(b; 5) nöqtəsi (-5; b) olar. M1(-5; 8) ilə müqayisədə b = 8 alınır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların çevrilməsi. Dönmə"
+  },
+  {
+    "id": "08-004-67-3-1-03-c771-r1",
+    "passport_id": "08-004-67-3-1-03-c771-r1",
+    "question": "C(2; 4) və D(4; 10) nöqtələrindən keçən düz xəttin bucaq əmsalını (k) tapın.",
+    "options": [
+      "1/3",
+      "2",
+      "3",
+      "-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "k = (y2 - y1) / (x2 - x1) = (10 - 4) / (4 - 2) = 6 / 2 = 3.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Triqonometrik nisbətlər. Koordinatlar üsulu. Fiqurların çevrilməsi"
+  },
+  {
+    "id": "08-004-01-04-03-15-860f-r1",
+    "passport_id": "08-004-01-04-03-15-860f-r1",
+    "question": "y = √x funksiyasının qrafiki üzərində ordinatı 3,5 olan nöqtənin absisi hansı iki ardıcıl tam ədəd arasında yerləşir?",
+    "options": [
+      "10 və 11",
+      "11 və 12",
+      "12 və 13",
+      "13 və 14"
+    ],
+    "correctAnswer": 2,
+    "explanation": "y = √x düsturunda y = 3,5 verilibsə, x = 3,5² = 12,25. Bu ədəd 12 və 13 tam ədədləri arasında yerləşir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1 Kvadrat kök. Həqiqi ədədlər: Kvadrat köklər. Hesabi kvadrat kök"
+  },
+  {
+    "id": "08-004-01-04-02-03-8fb2-r1",
+    "passport_id": "08-004-01-04-02-03-8fb2-r1",
+    "question": "x < 0 olduqda, \\sqrt{36x^2} ifadəsini sadələşdirin.",
+    "options": [
+      "6x",
+      "36x",
+      "-6x",
+      "-36x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "\\sqrt{36x^2} = |6x| = 6|x|. x < 0 olduğu üçün |x| = -x. Nəticə -6x olur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Həqiqi ədədlər"
+  },
+  {
+    "id": "08-004-01-05-03-14-1ca3-r1",
+    "passport_id": "08-004-01-05-03-14-1ca3-r1",
+    "question": "$y = \\frac{\\sqrt{5} + 1}{2}$ olarsa, $4y^2 - 4y + 2$ ifadəsinin qiymətini tapın.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "$2y - 1 = \\sqrt{5} \\implies (2y - 1)^2 = 5 \\implies 4y^2 - 4y + 1 = 5 \\implies 4y^2 - 4y = 4$. Nəticədə $4y^2 - 4y + 2 = 4 + 2 = 6$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat kök. Həqiqi ədədlər"
+  },
+  {
+    "id": "08-004-9-4-3-1-f581-r1",
+    "passport_id": "08-004-9-4-3-1-f581-r1",
+    "question": "Düzbucaqlı üçbucağın tərəflərinin uzunluqları ardıcıl cüt ədədlərlə ifadə olunur. Bu üçbucağın kiçik katetinin uzunluğunu tapın.",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ardıcıl cüt ədədlər x, x+2, x+4. Pifaqordan x^2 + (x+2)^2 = (x+4)^2. x=6. Katetlər 6 və 8, hipotenuz 10-dur. Kiçik katet 6-dır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2 Pifaqor teoremi: Pifaqor teoreminin tətbiqi"
+  },
+  {
+    "id": "08-004-11-03-02-06-b9ff-r1",
+    "passport_id": "08-004-11-03-02-06-b9ff-r1",
+    "question": "x^2 - 2x - 35 = 0 tənliyini vuruqlara ayırma üsulu ilə həll edin və böyük kökü tapın.",
+    "options": [
+      "-5",
+      "7",
+      "5",
+      "-7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "(x - 7)(x + 5) = 0. Köklər x = 7 və x = -5. Böyük kök 7-dir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər"
+  },
+  {
+    "id": "08-004-13-2-sadə-01-d690-r1",
+    "passport_id": "08-004-13-2-sadə-01-d690-r1",
+    "question": "\"y^2 - 12y\" ifadəsini ikihədlinin tam kvadratına tamamlamaq üçün hansı ədəd əlavə edilməlidir?",
+    "options": [
+      "12",
+      "144",
+      "24",
+      "36"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Tam kvadrata ayırmaq üçün (b/2)^2 əlavə olunur. b = -12. (-12/2)^2 = (-6)^2 = 36.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli"
+  },
+  {
+    "id": "08-004-13-2-orta-10-c7b4-r1",
+    "passport_id": "08-004-13-2-orta-10-c7b4-r1",
+    "question": "\"x^2 + 6x\" ifadəsinə uyğun sahə modelini tam kvadrata tamamladıqda, yaranan böyük kvadratın sahəsini hansı ifadə göstərir?",
+    "options": [
+      "(x - 3)^2",
+      "(x + 3)^2",
+      "x^2 + 9",
+      "(x + 6)^2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "(6/2)^2 = 9 vahid sahəli cəbr kartı əlavə edirik: x^2 + 6x + 9 = (x + 3)^2. Kvadratın sahəsi (x + 3)^2 olar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli"
+  },
+  {
+    "id": "08-004-14-anlama-01-01-5fc1-r1",
+    "passport_id": "08-004-14-anlama-01-01-5fc1-r1",
+    "question": "Qrafik üsulla kvadrat tənliyi ($x^2+px+q=0$) həll etdikdə sol və sağ tərəflərdə hansı funksiyaların qrafikləri qurulur?",
+    "options": [
+      "Hiperbola və düz xətt",
+      "Parabola və düz xətt",
+      "Parabola və hiperbola",
+      "İki parabola"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tənlik $x^2 = -px - q$ şəklinə gətirilir, beləliklə parabola ($y=x^2$) və düz xətt ($y=-px-q$) qrafikləri kəsişdirilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliyin qrafik üsulla həlli"
+  },
+  {
+    "id": "08-004-16-02-01-05-5438-r1",
+    "passport_id": "08-004-16-02-01-05-5438-r1",
+    "question": "Çevrilmiş kvadrat tənlikdə ($x^2 + px + q = 0$) köklərin hər ikisi müsbətdirsə, $p$ və $q$-nün işarəsini müəyyən edin.",
+    "options": [
+      "p < 0, q > 0",
+      "p > 0, q < 0",
+      "p > 0, q > 0",
+      "p < 0, q < 0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Köklərin hər ikisi müsbətdirsə, x_1+x_2 > 0 və x_1 x_2 > 0. Viyetə görə -p = x_1+x_2 > 0 => p < 0, və q = x_1 x_2 > 0. Yəni p < 0, q > 0.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Viyet teoremi"
+  },
+  {
+    "id": "08-004-18-03-03-14-f756-r1",
+    "passport_id": "08-004-18-03-03-14-f756-r1",
+    "question": "Bir şirkət məhsulun qiymətini eyni faizlə iki dəfə ardıcıl ucuzlaşdırdıqdan sonra qiymət 800 manatdan 512 manata düşdü. Məhsul hər dəfə neçə faiz ucuzlaşdırılıb?",
+    "options": [
+      "25%",
+      "20%",
+      "16%",
+      "36%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "800 * (1 - x/100)^2 = 512 => (1 - x/100)^2 = 512 / 800 = 0.64 => 1 - x/100 = 0.8 => x = 20%.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Kvadrat tənliklərin tətbiqi ilə məsələ həlli"
+  },
+  {
+    "id": "08-004-03-04-02-06-32a1-r1",
+    "passport_id": "08-004-03-04-02-06-32a1-r1",
+    "question": "(y + 3)² + 4 = 0 tənliyinin kökləri haqqında aşağıdakılardan hansı doğrudur?",
+    "options": [
+      "-3 və 2 ədədləri kökləridir",
+      "Yalnız -3 ədədi köküdür",
+      "Həqiqi kökü yoxdur",
+      "Yalnız 4 ədədi köküdür"
+    ],
+    "correctAnswer": 2,
+    "explanation": "(y + 3)² = -4. Kvadrat mənfi ola bilməz, ona görə də həqiqi kökü yoxdur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-004-03-06-03-13-3da6-r1",
+    "passport_id": "08-004-03-06-03-13-3da6-r1",
+    "question": "x1 və x2 ədədləri x² - 2x - 3 = 0 tənliyinin kökləridir. Kökləri 1/x1 və 1/x2 olan kvadrat tənlik qurun.",
+    "options": [
+      "3y² + 2y - 1 = 0",
+      "3x² - 2x + 1 = 0",
+      "x² + 2x - 3 = 0",
+      "x² - 2x + 3 = 0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x1+x2 = 2, x1*x2 = -3. Yeni köklər cəmi: (x1+x2)/(x1*x2) = 2/(-3) = -2/3. Yeni hasili: 1/(-3) = -1/3. Tənlik y² + (2/3)y - 1/3 = 0 => 3y² + 2y - 1 = 0.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-004-25-tətbiq-orta-08-81a6-r1",
+    "passport_id": "08-004-25-tətbiq-orta-08-81a6-r1",
+    "question": "Düzbucaqlı üçbucağın katetləri 9 sm və 12 sm-dir. Hipotenuza paralel olan orta xəttin uzunluğunu hesablayın.",
+    "options": [
+      "6 sm",
+      "7,5 sm",
+      "8 sm",
+      "15 sm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hipotenuza c = √(9² + 12²) = 15 sm. Orta xətt hipotenuzun yarısıdır: 15 / 2 = 7,5 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Dördbucaqlılar: Üçbucağın orta xətti"
+  },
+  {
+    "id": "08-004-04-2-1-00005-dca2-r1",
+    "passport_id": "08-004-04-2-1-00005-dca2-r1",
+    "question": "Aşağıdakı fiqurlardan hansının düz 2 simmetriya oxu var?",
+    "options": [
+      "Düzbucaqlı",
+      "Kvadrat",
+      "Bərabəryanlı trapesiya",
+      "Müxtəliftərəfli üçbucaq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kvadratın 4, rombun və düzbucaqlının 2, bərabəryanlı trapesiyanın 1 simmetriya oxu var.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "4 Dördbucaqlılar: Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-004-04-4-2-00006-c0c1-r1",
+    "passport_id": "08-004-04-4-2-00006-c0c1-r1",
+    "question": "Paraleloqramın diaqonalları onu dörd üçbucağa ayırır. Paraleloqramın perimetri 40 sm-dir. Bu üçbucaqlardan qonşu olan ikisinin perimetrləri fərqi 4 sm olarsa, paraleloqramın tərəflərinin uzunluqlarını tapın.",
+    "options": [
+      "12 sm və 8 sm",
+      "14 sm və 6 sm",
+      "10 sm və 10 sm",
+      "15 sm və 5 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "a - b = 4. Perimetri 40 sm olduğundan a + b = 20. Buradan 2a = 24 => a = 12 sm, b = 8 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "4 Dördbucaqlılar: Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-004-05-03-02-10-ee46-r1",
+    "passport_id": "08-004-05-03-02-10-ee46-r1",
+    "question": "$\\frac{2x}{x^2-4} + \\frac{1}{x+2}$ cəmini tapın.",
+    "options": [
+      "$\\frac{3x+2}{x^2-4}$",
+      "$\\frac{3x-2}{x^2-4}$",
+      "$\\frac{2x-1}{x^2-4}$",
+      "$\\frac{x-2}{x^2-4}$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ortaq məxrəc $(x-2)(x+2) = x^2-4$. İkinci kəsrin surətini $x-2$-yə vururuq. Alınır: $\\frac{2x + x - 2}{x^2-4} = \\frac{3x-2}{x^2-4}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional ifadələr"
+  },
+  {
+    "id": "08-004-05-3-01-05-7b62-r1",
+    "passport_id": "08-004-05-3-01-05-7b62-r1",
+    "question": "$\\frac{a^3}{b^2} \\cdot \\left(\\frac{b}{a^2}\\right)^2$ ifadəsini sadələşdirin.",
+    "options": [
+      "$a$",
+      "$\\frac{1}{a}$",
+      "$b$",
+      "$\\frac{1}{b}$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "$\\left(\\frac{b}{a^2}\\right)^2 = \\frac{b^2}{a^4}$. Vurma zamanı: $\\frac{a^3 \\cdot b^2}{b^2 \\cdot a^4} = \\frac{1}{a}$.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi"
+  },
+  {
+    "id": "08-004-05-3-02-01-db09-r1",
+    "passport_id": "08-004-05-3-02-01-db09-r1",
+    "question": "$\\frac{x^2-16}{x^2-6x+9} : \\frac{x+4}{x-3}$ ifadəsini sadələşdirin.",
+    "options": [
+      "$\\frac{x+4}{x-3}$",
+      "$\\frac{x-3}{x-4}$",
+      "$\\frac{x-4}{x-3}$",
+      "$\\frac{x-4}{x+3}$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "$\\frac{(x-4)(x+4)}{(x-3)^2} \\cdot \\frac{x-3}{x+4}$. İxtisardan sonra qalır $\\frac{x-4}{x-3}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi"
+  },
+  {
+    "id": "08-004-05-4-02-04-f091-r1",
+    "passport_id": "08-004-05-4-02-04-f091-r1",
+    "question": "İfadəni sadələşdirin: $\\left(\\frac{x^2-3x}{x+2}\\right)^2 \\cdot \\frac{x^2+4x+4}{x^4-9x^2}$",
+    "options": [
+      "$\\frac{x+3}{x-3}$",
+      "$\\frac{x-3}{x+3}$",
+      "$\\frac{x}{x+3}$",
+      "$\\frac{x-3}{x}$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "$\\frac{x^2(x-3)^2}{(x+2)^2} \\cdot \\frac{(x+2)^2}{x^2(x-3)(x+3)} = \\frac{x-3}{x+3}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi"
+  },
+  {
+    "id": "08-004-05-4-03-01-fd8b-r1",
+    "passport_id": "08-004-05-4-03-01-fd8b-r1",
+    "question": "İfadəni sadələşdirin: $\\frac{y^3+27}{y^2-3y+9} : \\frac{y^2-9}{y-3}$",
+    "options": [
+      "$y+3$",
+      "$y-3$",
+      "$1$",
+      "$\\frac{1}{y-3}$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "$\\frac{(y+3)(y^2-3y+9)}{y^2-3y+9} \\cdot \\frac{y-3}{(y-3)(y+3)} = (y+3) \\cdot \\frac{1}{y+3} = 1$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi"
+  },
+  {
+    "id": "08-004-34-3-03-01-dd34-r1",
+    "passport_id": "08-004-34-3-03-01-dd34-r1",
+    "question": "M(5; -2) və N(-10; y) nöqtələri eyni bir tərs mütənasiblik funksiyasının qrafiki üzərində olarsa, y-in qiymətini tapın.",
+    "options": [
+      "-1",
+      "2",
+      "1",
+      "-2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "$k = 5 \\cdot (-2) = -10$. İkinci nöqtə üçün: $-10 \\cdot y = -10 \\implies y = 1$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "y = k / x funksiyası və onun qrafiki"
+  },
+  {
+    "id": "08-004-36-04-01-05-d2f9-r1",
+    "passport_id": "08-004-36-04-01-05-d2f9-r1",
+    "question": "Sahəsi 81 sm² olan kvadratın perimetrinə bərabər perimetrə malik olan bərabərtərəfli üçbucağın bir tərəfi neçə santimetrdir?",
+    "options": [
+      "9 sm",
+      "12 sm",
+      "18 sm",
+      "27 sm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kvadratın sahəsi 81 olduğundan, tərəfi 9 sm-dir. Kvadratın perimetri P = 4 · 9 = 36 sm. Bərabərtərəfli üçbucağın perimetri 3x = 36 => x = 12 sm.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Sahə aksiomları"
+  },
+  {
+    "id": "08-004-36-04-02-09-203a-r1",
+    "passport_id": "08-004-36-04-02-09-203a-r1",
+    "question": "Kvadratın tərəfini 4 dəfə artırsaq, onun sahəsi neçə dəfə artar?",
+    "options": [
+      "4 dəfə",
+      "8 dəfə",
+      "16 dəfə",
+      "12 dəfə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "S = a². Tərəfi 4 dəfə artırsaq, (4a)² = 16a². Sahə 16 dəfə artar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Sahə aksiomları"
+  },
+  {
+    "id": "08-004-38-tətbiq-sadə-03-98b2-r1",
+    "passport_id": "08-004-38-tətbiq-sadə-03-98b2-r1",
+    "question": "Sahəsi 60 sm² olan üçbucağın bir tərəfi 12 sm-dir. Bu tərəfə çəkilmiş hündürlüyü tapın.",
+    "options": [
+      "10 sm",
+      "5 sm",
+      "20 sm",
+      "12 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "60 = (12 * h) / 2. Buradan 6 * h = 60 => h = 10 sm.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Üçbucağın sahəsi"
+  },
+  {
+    "id": "08-004-40-03-01-02-006e-r1",
+    "passport_id": "08-004-40-03-01-02-006e-r1",
+    "question": "Diaqonalları 12 sm və 18 sm olan rombun sahəsini tapın.",
+    "options": [
+      "54 sm²",
+      "108 sm²",
+      "216 sm²",
+      "60 sm²"
+    ],
+    "correctAnswer": 1,
+    "explanation": "S = (d1 * d2) / 2 = (12 * 18) / 2 = 216 / 2 = 108 sm².",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Rombun sahəsi"
+  },
+  {
+    "id": "08-004-40-03-02-01-5d24-r1",
+    "passport_id": "08-004-40-03-02-01-5d24-r1",
+    "question": "Diaqonalları 10 sm və 24 sm olan rombun tərəfini tapın.",
+    "options": [
+      "17 sm",
+      "15 sm",
+      "13 sm",
+      "26 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Diaqonalların yarısı 5 və 12-dir. Pifaqora görə tərəf: a² = 5² + 12² = 25 + 144 = 169 => a = 13 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Rombun sahəsi"
+  },
+  {
+    "id": "08-004-07-1-01-5-c0fa-r1",
+    "passport_id": "08-004-07-1-01-5-c0fa-r1",
+    "question": "Hansı tənliklərə rasional tənliklər deyilir?",
+    "options": [
+      "Tənliyin yalnız bir tərəfi rasional olanlara",
+      "Hər iki tərəfi rasional ifadələr olan tənliklərə",
+      "Yalnız dəyişəni məxrəcdə olan tənliklərə",
+      "Dəyişəni olmayan tənliklərə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Həm sağ, həm də sol tərəfi rasional ifadələr olan tənliklərə rasional tənliklər deyilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər"
+  },
+  {
+    "id": "08-004-07-4-02-3-1403-r1",
+    "passport_id": "08-004-07-4-02-3-1403-r1",
+    "question": "$\\frac{x^2 + x - 12}{x - 3} = 0$ tənliyini həll edin.",
+    "options": [
+      "Yalnız 3",
+      "Yalnız -4",
+      "-4 və 3",
+      "Yalnız 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Surəti sıfıra bərabər edək: $x^2 + x - 12 = 0$. Köklər -4 və 3-dür. x=3 məxrəci sıfır etdiyi üçün kənar kökdür. Yeganə kök -4-dür.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər"
+  },
+  {
+    "id": "08-004-07-4-03-1-ad52-r1",
+    "passport_id": "08-004-07-4-03-1-ad52-r1",
+    "question": "Qayıq axın istiqamətində 60 km yolu getdi və həmin yolu geri qayıtdı. Geri qayıtmağa axınla getdiyindən 1 saat çox vaxt sərf etdi. Çayın axın sürəti 5 km/saat olarsa, qayığın durğun sudakı sürətini tapın.",
+    "options": [
+      "20 km/saat",
+      "25 km/saat",
+      "30 km/saat",
+      "15 km/saat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "60/(x-5) - 60/(x+5) = 1 => 60(x+5) - 60(x-5) = x^2 - 25 => 600 = x^2 - 25 => x^2 = 625 => x = 25 km/saat.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər"
+  },
+  {
+    "id": "08-004-43-05-03-01-1f6a-r1",
+    "passport_id": "08-004-43-05-03-01-1f6a-r1",
+    "question": "İki maşın birlikdə tarlanı 6 saata şumlayır. Birinci maşın 3 saat, ikinci maşın 4 saat işləsə, tarlanın 60%-i şumlanar. Sürətli maşın bütün tarlanı neçə saata şumlayar?",
+    "options": [
+      "15 saat",
+      "12 saat",
+      "10 saat",
+      "8 saat"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1/x + 1/y = 1/6 və 3/x + 4/y = 0.6. Sistemi həll etdikdə y = 10, x = 15 alınır. Sürətli maşın 10 saata şumlayar.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər: Rasional tənliklərin tətbiqi ilə məsələ həlli"
+  },
+  {
+    "id": "08-004-47-4-2-08-708e-r1",
+    "passport_id": "08-004-47-4-2-08-708e-r1",
+    "question": "KMNP trapesiyasının (KP || MN) diaqonalları O nöqtəsində kəsişir. KP = 18 sm, MN = 12 sm. Əgər MO = 8 sm olarsa, OK parçasının uzunluğunu tapın.",
+    "options": [
+      "12 sm",
+      "10 sm",
+      "14 sm",
+      "16 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ΔKOP ~ ΔMON. KP / MN = OK / OM => 18 / 12 = OK / 8 => 12 * OK = 144 => OK = 12 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Oxşar dördbucaqlılar,oxşar üçbucaqlar"
+  },
+  {
+    "id": "08-004-47-4-3-11-56a3-r1",
+    "passport_id": "08-004-47-4-3-11-56a3-r1",
+    "question": "ABC düzbucaqlı üçbucağının (∠C = 90°) CD hündürlüyü çəkilmişdir. AD = 1,8 sm, BD = 3,2 sm olarsa, ABC üçbucağının perimetrini tapın.",
+    "options": [
+      "10 sm",
+      "12 sm",
+      "14 sm",
+      "15 sm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hipotenuz c = 1,8 + 3,2 = 5 sm. AC = √(1,8 * 5) = 3 sm, BC = √(3,2 * 5) = 4 sm. Perimetr = 3 + 4 + 5 = 12 sm.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Oxşar dördbucaqlılar,oxşar üçbucaqlar"
+  },
+  {
+    "id": "08-004-048-03-orta-08-d59e-r1",
+    "passport_id": "08-004-048-03-orta-08-d59e-r1",
+    "question": "DEF və D1E1F1 oxşar üçbucaqlardır. DE=4 sm, EF=6 sm, DF=8 sm. D1E1F1 üçbucağının perimetri 54 sm-dir. D1E1 tərəfinin uzunluğu nə qədərdir?",
+    "options": [
+      "12 sm",
+      "18 sm",
+      "24 sm",
+      "10 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DEF perimetri 4+6+8=18 sm. k = 54 / 18 = 3. D1E1 = 4 * 3 = 12 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların oxşarlığı: Üçbucaqların oxşarlıq əlamətləri"
+  }
+]

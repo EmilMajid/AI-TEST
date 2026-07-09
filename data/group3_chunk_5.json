@@ -1,0 +1,830 @@
+[
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 61,
+    "q": "Выберите правильный вариант: Моя мама работает ... .",
+    "options": [
+      "на школу",
+      "на школе",
+      "в школе",
+      "в школа"
+    ],
+    "expl": "Слово «школа» в предложном падеже (Где?) имеет окончание -е и употребляется с предлогом «в» (в школе)."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 69,
+    "q": "Выберите правильный ответ на вопрос «Где работает твой дедушка?»:",
+    "options": [
+      "В стройке.",
+      "На стройке.",
+      "Со стройки.",
+      "На стройка."
+    ],
+    "expl": "Со словом «стройка» используется предлог «на» и окончание «-е» в предложном падеже (на стройке)."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 82,
+    "q": "Решите задачу: \"У Али три яблока, а у Самира пять яблок. Сколько всего яблок?\"",
+    "options": [
+      "Шесть",
+      "Восемь",
+      "Девять",
+      "Семь"
+    ],
+    "expl": "Три (3) плюс пять (5) равно восемь (8)."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 100,
+    "q": "Дополните предложение в прошедшем времени: «Вчера мама ... вкусный обед».",
+    "options": [
+      "приготовило",
+      "приготовила",
+      "приготовил",
+      "приготовили"
+    ],
+    "expl": "Существительное «мама» женского рода, поэтому глагол в прошедшем времени имеет окончание -а: «приготовила»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 123,
+    "q": "Какой предмет нужен ученику на уроке математики?",
+    "options": [
+      "словарь",
+      "линейка",
+      "мяч",
+      "краски"
+    ],
+    "expl": "На уроке математики ученикам нужна линейка. Словарь нужен на уроке языка, краски — на рисовании, мяч — на физкультуре."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 126,
+    "q": "Закончите предложение: «Ученики сидят в ...».",
+    "options": [
+      "класса",
+      "классом",
+      "классе",
+      "класс"
+    ],
+    "expl": "После предлога «в» (где?) существительное должно стоять в предложном падеже — «в классе»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 146,
+    "q": "Закончите предложение: «Если у тебя болит горло, ты должен пойти к ...».",
+    "options": [
+      "враче",
+      "врачом",
+      "врачу",
+      "врач"
+    ],
+    "expl": "После предлога «к» (к кому? куда?) нужен дательный падеж — «врачу»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 157,
+    "q": "Дополните предложение: Завтра в школу я надену белую ...",
+    "options": [
+      "рубашки",
+      "рубашкой",
+      "рубашка",
+      "рубашку"
+    ],
+    "expl": "Глагол «надену» требует винительного падежа, поэтому «рубашка» меняется на «рубашку»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 206,
+    "q": "Дополните предложение в винительном падеже: «Мы любим нашу ...».",
+    "options": [
+      "природу",
+      "природы",
+      "природа",
+      "природе"
+    ],
+    "expl": "Глагол «любить» требует после себя винительный падеж (кого? что?). Слово «природа» (ж.р.) меняет окончание «-а» на «-у» — «природу»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 230,
+    "q": "Какой месяц не относится к весне?",
+    "options": [
+      "Май",
+      "Март",
+      "Апрель",
+      "Август"
+    ],
+    "expl": "Август — это летний месяц, а март, апрель и май — весенние месяцы."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 233,
+    "q": "Какое слово отвечает на вопрос «Когда?»",
+    "options": [
+      "Ночёвка",
+      "Ночь",
+      "Ночью",
+      "Ночной"
+    ],
+    "expl": "Слово «ночью» — это наречие, которое отвечает на вопрос «Когда?». Остальные слова отвечают на вопросы «Что?» или «Какой?»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 234,
+    "q": "Выберите правильный ответ на вопрос: Когда начинается учебный год в Азербайджане?",
+    "options": [
+      "Сентябрь",
+      "На сентябре",
+      "Сентябрю",
+      "В сентябре"
+    ],
+    "expl": "Для указания месяца, в котором происходит действие (Когда?), используется предлог «в» и предложный падеж: в сентябре."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 259,
+    "q": "Выберите правильную форму множественного числа слова «собака».",
+    "options": [
+      "Собаки",
+      "Собакам",
+      "Собакы",
+      "Собака"
+    ],
+    "expl": "Множественное число слова «собака» — «собаки». После буквы «к» пишется буква «и»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 269,
+    "q": "Дедушка даёт воду ____.",
+    "options": [
+      "лошадю",
+      "лошадью",
+      "лошади",
+      "лошадь"
+    ],
+    "expl": "Глагол «даёт» требует дательного падежа (кому?): лошади. Окончание слова «лошадь» в дательном падеже — «-и»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 270,
+    "q": "Как называется деревянный домик, который люди делают для птиц?",
+    "options": [
+      "Кормушка",
+      "Гнездо",
+      "Клетка",
+      "Скворечник"
+    ],
+    "expl": "Специальный домик для птиц (особенно для скворцов) называется скворечник. Гнездо птицы строят сами."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 271,
+    "q": "Как правильно написать слово «птица» во множественном числе?",
+    "options": [
+      "Птицей",
+      "Птицу",
+      "Птица",
+      "Птицы"
+    ],
+    "expl": "Слово «птица» во множественном числе (quşlar) — это «птицы»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 284,
+    "q": "Как правильно закончить фразу: «В парке на деревьях мы увидели много ...»?",
+    "options": [
+      "птицы",
+      "птицами",
+      "птицов",
+      "птиц"
+    ],
+    "expl": "После слова «много» существительные используются в родительном падеже множественного числа. Правильная форма слова «птица» — «птиц». Форма «птицов» не существует."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 289,
+    "q": "Какое слово стоит во множественном числе?",
+    "options": [
+      "Брат",
+      "Дети",
+      "Ребёнок",
+      "Друг"
+    ],
+    "expl": "Слово «дети» — это форма множественного числа слова «ребёнок»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 327,
+    "q": "Вставьте нужные слова в правильном падеже: «Мама приготовила полезный салат из ...»",
+    "options": [
+      "морковью и капустой",
+      "моркови и капусту",
+      "морковь и капуста",
+      "моркови и капусты"
+    ],
+    "expl": "Предлог «из» требует родительного падежа (из чего?). Форма родительного падежа для слов «морковь» и «капуста» — «моркови» и «капусты»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 346,
+    "q": "Какое слово относится к среднему роду?",
+    "options": [
+      "Сыр",
+      "Кефир",
+      "Колбаса",
+      "Молоко"
+    ],
+    "expl": "Слово «молоко» оканчивается на «-о», поэтому оно относится к среднему роду. Сыр и кефир — мужской род, колбаса — женский."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 361,
+    "q": "Как правильно сказать во множественном числе слово «кастрюля»?",
+    "options": [
+      "кастрюль",
+      "кастрюли",
+      "кастрюля",
+      "кастрюлы"
+    ],
+    "expl": "Слово «кастрюля» женского рода, во множественном числе оканчивается на «-и» — кастрюли."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 402,
+    "q": "Как правильно продолжить предложение: «Гости пришли, и мы пригласили их ...»?",
+    "options": [
+      "за столом",
+      "за стол",
+      "на столе",
+      "в стол"
+    ],
+    "expl": "Пригласить можно (Куда?) «за стол» (винительный падеж направления). «За столом» означает место (Где?)."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 412,
+    "q": "Закончите предложение: «Восьмое марта – это Международный женский ...».",
+    "options": [
+      "год",
+      "праздник",
+      "месяц",
+      "день"
+    ],
+    "expl": "Официальное название праздника 8 Марта – Международный женский день. Слово «день» здесь является правильным дополнением фразы."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 425,
+    "q": "Что красят на праздник Новруз?",
+    "options": [
+      "яйца",
+      "яйц",
+      "яйцо",
+      "яйцев"
+    ],
+    "expl": "Форма множественного числа винительного падежа от слова «яйцо» — «яйца». Варианты «яйц» и «яйцев» грамматически неверны."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 428,
+    "q": "Какая сладость круглая и похожа на солнце?",
+    "options": [
+      "конфета",
+      "пахлава",
+      "шекербура",
+      "гогал"
+    ],
+    "expl": "Гогал традиционно выпекают круглой формы, и он символизирует солнце. Пахлава символизирует звезду, а шекербура луну."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 436,
+    "q": "Выберите правильный глагол.\nДети ... во дворе в прятки.",
+    "options": [
+      "играем",
+      "играю",
+      "играют",
+      "играет"
+    ],
+    "expl": "Существительное «дети» стоит во множественном числе, поэтому глагол тоже должен быть во множественном числе – «играют»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 470,
+    "q": "В Ичеришехер есть очень узкие ... .",
+    "options": [
+      "улицов",
+      "улица",
+      "улицы",
+      "улицам"
+    ],
+    "expl": "Множественное число слова «улица» – «улицы»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 483,
+    "q": "Выберите правильный глагол. «Я … книгу».",
+    "options": [
+      "читаем",
+      "читать",
+      "читаю",
+      "читает"
+    ],
+    "expl": "С местоимением «я» глагол «читать» имеет форму «читаю»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 507,
+    "q": "Прочитайте текст и выберите слово, которое подходит по смыслу. «Я люблю свой город. У нас есть большие ..., где можно гулять с друзьями».",
+    "options": [
+      "деревья",
+      "магазины",
+      "машины",
+      "парки"
+    ],
+    "expl": "По смыслу предложения для прогулок лучше всего подходят «парки». Гулять в машинах или деревьях нельзя."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 541,
+    "q": "В каком слове пропущена буква «и»?",
+    "options": [
+      "В..да",
+      "Л..са",
+      "Д..рево",
+      "Пр..рода"
+    ],
+    "expl": "В корне слова «природа» пишется буква «и». В остальных словах: дерево (е), леса (е), вода (о)."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 592,
+    "q": "Куда идут дети утром?",
+    "options": [
+      "В школе",
+      "В школу",
+      "На школе",
+      "На школу"
+    ],
+    "expl": "На вопрос «Куда?» с глаголами движения используется предлог «в» с винительным падежом — «в школу»."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 599,
+    "q": "Найдите антоним к слову «большой».",
+    "options": [
+      "Высокий",
+      "Длинный",
+      "Маленький",
+      "Огромный"
+    ],
+    "expl": "Антонимы — это слова с противоположным значением. Антоним к слову «большой» — «маленький». Слово «огромный» является синонимом."
+  },
+  {
+    "cat": "Rus dili 5 (ikinci xarici dil)",
+    "array_index": 603,
+    "q": "Кто разбил золотое яичко?",
+    "options": [
+      "Курочка",
+      "Дед",
+      "Мышка",
+      "Баба"
+    ],
+    "expl": "Яичко разбила мышка, когда махнула хвостиком. Дед и баба пытались, но не смогли."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 22,
+    "q": "Ergänze den Dialog! (Dialoqu tamamla!)\nAli: Hallo, ich bin Ali. Und ___?\nOrchan: Ich bin Orchan.",
+    "options": [
+      "wer heißt du",
+      "was heißt du",
+      "wie bist du",
+      "wer bist du"
+    ],
+    "expl": "Doğru sual \"Wer bist du?\" (Sən kimsən?) olmalıdır. \"Wer\" kim deməkdir. \"Wie bist du\" yanlış formadır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 29,
+    "q": "Was ist richtig? (Hansı doğrudur?)",
+    "options": [
+      "Guter Tag!",
+      "Guten Tag!",
+      "Gute Tag!",
+      "Gutes Tag!"
+    ],
+    "expl": "Alman dilində \"günortanız xeyir\" ifadəsi hər zaman \"Guten Tag\" kimi yazılır. Tag sözü kişi cinsində (der Tag) olduğu üçün Akkusativ halında \"guten\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 41,
+    "q": "Was passt? \"Das ist Herr Müller. Er ist ... Mann. Das ist Frau Braun. Sie ist ... Frau.\"",
+    "options": [
+      "kein / keine",
+      "ein / eine",
+      "der / die",
+      "eine / ein"
+    ],
+    "expl": "Birinci boşluğa kişi cinsi üçün \"ein\" (ein Mann), ikinci boşluğa isə qadın cinsi üçün \"eine\" (eine Frau) uyğun gəlir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 78,
+    "q": "Wie ______ du? - Ich bin Anna.",
+    "options": [
+      "heisse",
+      "heißtst",
+      "heißt",
+      "heißen"
+    ],
+    "expl": "Alman dilində 'du' (sən) şəxs əvəzliyi ilə fel adətən '-st' şəkilçisi qəbul edir. Lakin 'heißen' feli '-ß' ilə bitdiyinə görə əlavə 's' düşür və sadəcə '-t' əlavə olunur: 'du heißt'."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 82,
+    "q": "Der Bruder von meinem Vater ist mein ______.",
+    "options": [
+      "Onkel",
+      "Bruder",
+      "Opa",
+      "Cousin"
+    ],
+    "expl": "Atanın və ya ananın qardaşı alman dilində 'Onkel' (əmi/dayı) adlanır. Şagirdlər qohumluq əlaqələrini öyrənərkən 'Cousin' (əmi/dayı oğlu) sözü ilə çaşa bilərlər."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 83,
+    "q": "Ist das ______ Kuli, Peter? - Nein, das ist nicht mein Kuli.",
+    "options": [
+      "mein",
+      "dein",
+      "deine",
+      "meine"
+    ],
+    "expl": "Kuli kişi cinsində (der) olduğu üçün təkdə olan yiyəlik əvəzliyi şəkilçisiz istifadə olunur ('dein'). 'deine' qadın cinsi və ya cəm üçündür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 94,
+    "q": "Woher ... ihr?",
+    "options": [
+      "kommst",
+      "kommt",
+      "komme",
+      "kommen"
+    ],
+    "expl": "\"Ihr\" (siz - cəm) əvəzliyi ilə \"kommen\" feili \"-t\" şəkilçisi qəbul edir: \"ihr kommt\"."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 96,
+    "q": "Ich spiele gern ...",
+    "options": [
+      "Schwimmen",
+      "Musik",
+      "Buch",
+      "Fußball"
+    ],
+    "expl": "\"Spielen\" (oynamaq) feili oyun və idman növləri (məs. Fußball) ilə işlənir. Kitab oxunur (lesen), üzmək (schwimmen) isə özü fəaliyyət bildirən feildir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 102,
+    "q": "Bist du neu hier? - Nein, ich bin ... neu hier.",
+    "options": [
+      "nicht",
+      "nichts",
+      "nein",
+      "kein"
+    ],
+    "expl": "Sifəti (neu - yeni) inkar edərkən \"nicht\" ədatından istifadə edilir. \"Kein\" isə isimləri inkar etmək üçündür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 106,
+    "q": "Das ist mein Freund Ali. _____ Oma ist Ärztin.",
+    "options": [
+      "Ihr",
+      "Ihre",
+      "Sein",
+      "Seine"
+    ],
+    "expl": "Ali oğlan adı olduğu üçün \"seine\" (onun) istifadə olunur. \"Oma\" qadın cinsində (die) olduğu üçün \"sein\" yox, \"seine\" olur. \"Ihre\" isə qadınlar üçün işlənir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 111,
+    "q": "Herr Müller hat eine Tochter. _____ Tochter heißt Lisa.",
+    "options": [
+      "Ihre",
+      "Ihr",
+      "Seine",
+      "Sein"
+    ],
+    "expl": "Herr Müller kişi olduğu üçün \"seine\" və ya \"sein\" istifadə edirik. \"Tochter\" qadın cinsində (die) olduğu üçün əvəzlik -e sonluğu qəbul edir: \"Seine\"."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 118,
+    "q": "Lies den Text: \"Hallo, ich bin Lukas. Das ist mein Opa. Er heißt Hans. Er arbeitet nicht. Er ist Rentner.\" Was ist richtig?",
+    "options": [
+      "Der Opa arbeitet als Arzt.",
+      "Hans ist der Vater von Lukas.",
+      "Lukas ist Rentner.",
+      "Lukas' Opa ist Rentner."
+    ],
+    "expl": "Mətndə qeyd olunub ki, Lukasın babası (Hans) işləmir, o təqaüdçüdür (Rentner). Digər variantlar mətndəki məlumatlarla ziddiyyət təşkil edir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 122,
+    "q": "Unsere Klasse ist ___. (gözəl)",
+    "options": [
+      "schön",
+      "klein",
+      "groß",
+      "alt"
+    ],
+    "expl": "\"gözəl\" sözünün almanca tərcüməsi \"schön\" deməkdir. Digər variantlar: klein - kiçik, groß - böyük, alt - yaşlı/köhnə."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 125,
+    "q": "Wie heißt der Plural von \"das Buch\"?",
+    "options": [
+      "die Bücher",
+      "die Buchen",
+      "die Buch",
+      "die Buchs"
+    ],
+    "expl": "\"das Buch\" (kitab) isminin cəm forması kökdəki saitin umlaut alması və \"-er\" şəkilçisi qəbul etməsi ilə yaranır: \"die Bücher\"."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 128,
+    "q": "___ ihr heute Deutsch?",
+    "options": [
+      "Haben",
+      "Hat",
+      "Hast",
+      "Habt"
+    ],
+    "expl": "\"ihr\" (siz - cəm) şəxsinə görə \"haben\" (malik olmaq) feli indiki zamanda \"habt\" formasına düşür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 158,
+    "q": "Ergänze das Verb richtig: Er _____ am Abend ein Buch.",
+    "options": [
+      "lest",
+      "lese",
+      "lesen",
+      "liest"
+    ],
+    "expl": "\"lesen\" qüvvətli feildir və 3-cü şəxsin təkində (er) kökündəki sait dəyişir: \"liest\" formasına düşür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 189,
+    "q": "Finde den Fehler im Satz: \"Das ist eine Schrank.\"",
+    "options": [
+      "eine",
+      "Das",
+      "ist",
+      "Schrank"
+    ],
+    "expl": "\"Schrank\" sözünün artiklı \"der\"-dir. Buna görə \"ein Schrank\" olmalıdır. Səhv \"eine\" sözündədir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 203,
+    "q": "Sind das Stühle? - Nein, das sind ____ Stühle.",
+    "options": [
+      "nein",
+      "kein",
+      "nicht",
+      "keine"
+    ],
+    "expl": "İsmin cəmində inkar edərkən 'keine' istifadə olunur. 'keine Stühle' - stullar deyil."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 220,
+    "q": "Der Schrank ist neu. Er ist ____ alt.",
+    "options": [
+      "kein",
+      "keine",
+      "nicht",
+      "nichts"
+    ],
+    "expl": "Sifətləri (burada: alt) inkar etmək üçün alman dilində \"nicht\" (deyil) inkar ədatından istifadə olunur. \"Kein\" yalnız isimləri inkar edir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 223,
+    "q": "Das Zimmer ist klein, aber der Schrank ist ___. Das ist ein Problem.",
+    "options": [
+      "schön",
+      "groß",
+      "klein",
+      "gut"
+    ],
+    "expl": "Cümlədə ziddiyyət var: Otaq kiçikdir (klein), lakin (aber) şkaf böyükdür (groß). Şkafın otağa sığmaması problemi izah edilir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 236,
+    "q": "Bilde den verneinten Satz: \"Ist das ein Stuhl? – Nein, das ist ___ Stuhl. Das ist ein Sessel.\"",
+    "options": [
+      "keine",
+      "kein",
+      "nicht",
+      "nichts"
+    ],
+    "expl": "\"Stuhl\" isminin qarşısında qeyri-müəyyən artikl \"ein\" olduğu üçün, ismin inkarında \"kein\" istifadə edilir. \"Stuhl\" kişi cinsindədir deyə \"kein\" olur. Qadın cinsi üçün \"keine\" olardı."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 250,
+    "q": "Lies den Text und ergänze: 'Ich gehe um 8:00 Uhr in die Schule. Um 15:00 Uhr ___ ich meine Hausaufgaben.'",
+    "options": [
+      "machst",
+      "machen",
+      "macht",
+      "mache"
+    ],
+    "expl": "Cümlənin mübtədası 'Ich' (mən) olduğu üçün 'machen' feili '-e' sonluğu qəbul edərək 'mache' formasına düşür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 251,
+    "q": "Wie fragt man richtig nach der Zeit?",
+    "options": [
+      "Wer spät ist es?",
+      "Was Uhr ist es?",
+      "Wie viel Uhr ist es?",
+      "Wann Uhr ist es?"
+    ],
+    "expl": "Saatın neçə olduğunu soruşarkən 'Wie spät ist es?' və ya 'Wie viel Uhr ist es?' istifadə olunur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 263,
+    "q": "Was ist die richtige Pluralform? \"das Heft\"",
+    "options": [
+      "die Hefts",
+      "das Hefte",
+      "die Heften",
+      "die Hefte"
+    ],
+    "expl": "\"Das Heft\" (dəftər) sözünün cəmi \"-e\" şəkilçisi qəbul edərək \"die Hefte\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 283,
+    "q": "Welches Fragewort ist richtig? ... kommst du? - Aus Baku.",
+    "options": [
+      "Wohin",
+      "Woher",
+      "Wie",
+      "Wo"
+    ],
+    "expl": "Cavabda \"Aus Baku\" (Bakıdan) olduğu üçün sual sözü \"haradan\" yəni \"Woher\" olmalıdır. Wo - harada, Wohin - haraya deməkdir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 307,
+    "q": "Ergänze den Dialog: \n- Magst du Tee? \n- Nein, ich trinke _________ Kaffee.",
+    "options": [
+      "gut",
+      "lieber",
+      "viel",
+      "gern"
+    ],
+    "expl": "Təzad yaradarkən və bir şeyi digərindən üstün tutarkən 'gern' (həvəslə) əvəzinə müqayisə dərəcəsində 'lieber' (daha çox həvəslə) istifadə olunur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 311,
+    "q": "Ergänze den Dialog: \n- Was trinkt ihr zum Frühstück? \n- Wir _________ gern Kakao.",
+    "options": [
+      "trinkt",
+      "trinke",
+      "trinkst",
+      "trinken"
+    ],
+    "expl": "Sual 'ihr' (siz) ilə verilsə də, cavab 'wir' (biz) ilə başlayır. 'Wir' şəxsinə görə fel cəm formada, yəni 'trinken' olmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 316,
+    "q": "Ergänze den Satz: ___ du gern Banane?",
+    "options": [
+      "Esse",
+      "Esst",
+      "Isst",
+      "Essen"
+    ],
+    "expl": "\"Du\" (sən) şəxs əvəzliyi ilə \"essen\" feli \"isst\" olur. Kökdəki 'e' hərfi 'i' hərfinə keçir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 320,
+    "q": "Ergänze den Satz: Wir ___ gern Schokolade.",
+    "options": [
+      "isst",
+      "essen",
+      "esst",
+      "esse"
+    ],
+    "expl": "\"Wir\" (biz) şəxs əvəzliyi ilə fellər məsdər formasında, yəni \"essen\" kimi qalır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 344,
+    "q": "Wie viel ist 'fünfzehn minus sechs'?",
+    "options": [
+      "acht",
+      "neun",
+      "zehn",
+      "sieben"
+    ],
+    "expl": "Fünfzehn (15) minus (-) sechs (6) = 9. 9 alman dilində 'neun' deməkdir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 362,
+    "q": "Ergänze das Verb 'heißen' in der richtigen Form: Ich ... Anna.",
+    "options": [
+      "heißt",
+      "heißen",
+      "heiße",
+      "heiß"
+    ],
+    "expl": "'Ich' (mən) şəxs əvəzliyi ilə fellər adətən '-e' şəkilçisi qəbul edir. Buna görə də doğru forma 'heiße' olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 370,
+    "q": "Finde die richtige Verbform: Wir ... Deutsch und Englisch in der Schule.",
+    "options": [
+      "lerne",
+      "lernst",
+      "lernt",
+      "lernen"
+    ],
+    "expl": "'Wir' (biz) şəxsində fel məsdər formasında, yəni kökə '-en' şəkilçisi artırılmaqla (lernen) işlənir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 371,
+    "q": "Welcher Artikel ist im Akkusativ richtig? Ich habe ... Kuli.",
+    "options": [
+      "eine",
+      "einen",
+      "einem",
+      "ein"
+    ],
+    "expl": "'Der Kuli' kişi cinsindədir. 'Haben' feli həmişə Təsirlik hal (Akkusativ) tələb etdiyi üçün 'ein' məqaləsi 'einen' olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 373,
+    "q": "Ergänze den richtigen negativen Artikel: Das ist ... Lineal. Das ist ein Radiergummi.",
+    "options": [
+      "nicht",
+      "keinen",
+      "keine",
+      "kein"
+    ],
+    "expl": "'Das Lineal' orta cinsdə (das) olduğu üçün ismin inkarı olaraq 'kein' istifadə edilir. 'Nicht' adətən felləri və sifətləri inkar edir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 378,
+    "q": "Mən cins şalvar geyinməyi xoşlayıram. (Ich ___ gern Jeans.) Boşluğa hansı fel uyğun gəlir?",
+    "options": [
+      "trägt",
+      "tragen",
+      "trage",
+      "trägst"
+    ],
+    "expl": "\"Ich\" (mən) şəxsi ilə \"tragen\" (geyinmək, daşımaq) feli sonu \"-e\" şəkilçisi qəbul edir: \"Ich trage\"."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 386,
+    "q": "Markus ___ ___ Hose und ___ T-Shirt. Boşluqları düzgün tamamlayın.",
+    "options": [
+      "tragt / eine / ein",
+      "trage / eine / einen",
+      "trägt / ein / eine",
+      "trägt / eine / ein"
+    ],
+    "expl": "3-cü şəxsin təkində fel \"trägt\" olur. \"Die Hose\" qadın cinsi olduğu üçün \"eine\", \"das T-Shirt\" orta cins olduğu üçün \"ein\" istifadə olunur (Akkusativdə dəyişmir)."
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "Cause_1_Index_Mismatch": [
+    {
+      "cat": "İnformatika 7",
+      "q": "Əməliyyat sistemləri proqram təminatının hansı növünə aiddir?",
+      "options": [
+        "Baza",
+        "Sistem",
+        "Tətbiqi",
+        "İnstrumental"
+      ],
+      "old_idx": 0,
+      "expl": "Əməliyyat sistemləri kompüterin aparat hissəsini idarə etmək üçün nəzərdə tutulmuş sistem proqram təminatıdır.",
+      "suggested_idx": 1
+    },
+    {
+      "cat": "Ümumi tarix 7",
+      "q": "Hindistanda Böyük Moğol dövlətini quran Babur şah hansı məşhur sərkərdənin nəslindən idi?",
+      "options": [
+        "Sultan Mahmud Qəznəlinin",
+        "Şah İsmayıl Xətainin",
+        "Çingiz xanın",
+        "Əmir Teymurun"
+      ],
+      "old_idx": 0,
+      "expl": "Dərslikdə qeyd olunur ki, Əmir Teymurun nəslindən olan Babur 1526-cı ildə Dehli sultanlığına hücum edərək Böyük Moğol dövlətinin əsasını qoymuşdur.",
+      "suggested_idx": 3
+    },
+    {
+      "cat": "Azərbaycan dili 8",
+      "q": "Mətnə əsasən, Xəzər dənizinin ilk azərbaycanlı araşdırıcısı kim olmuşdur?",
+      "options": [
+        "İbn Sina",
+        "Abbasqulu ağa Bakıxanov",
+        "Həsən bəy Zərdabi",
+        "Bəhmənyar"
+      ],
+      "old_idx": 0,
+      "expl": "Dərslikdə qeyd olunur ki, Abbasqulu ağa Bakıxanov Xəzər dənizinin ilk azərbaycanlı araşdırıcısı olub. MƏNBƏ: 'Sən demə, o, Xəzər dənizinin ilk azərbaycanlı araşdırıcısı olub.'",
+      "suggested_idx": 1
+    },
+    {
+      "cat": "Fransız dili 10",
+      "q": "Quelle est la terminaison de la première personne du pluriel (nous) au conditionnel présent ?",
+      "options": [
+        "-aient",
+        "-ons",
+        "-iez",
+        "-ions"
+      ],
+      "old_idx": 1,
+      "expl": "'Conditionnel présent' zamanında 'nous' (biz) şəxsi üçün xarakterik olan şəkilçi '-ions'-dur. Məsələn: nous raconterions.",
+      "suggested_idx": 3
+    },
+    {
+      "cat": "İnformatika",
+      "q": "HOME əmri nə edir?",
+      "options": [
+        "Tısbağanı gizlədir",
+        "Proqramı bağlayır",
+        "Tısbağanı mərkəzə qaytarır və üzünü yuxarıya tutur",
+        "Ekranı tamamilə silir"
+      ],
+      "old_idx": 1,
+      "expl": "HOME əmri tısbağanı ekranın mərkəzinə (başlanğıc nöqtəsinə) qaytarır və üzünü yuxarı istiqamətə tutur. Əgər qələm açıqdırsa, mərkəzə gedən xətt çəkilir.",
+      "suggested_idx": 2
+    }
+  ],
+  "Cause_2_No_Match": [
+    {
+      "cat": "Təbiət",
+      "q": "Qışda nəfəs verdikdə havada duman yaranmasının səbəbi nədir?",
+      "options": [
+        "Nəfəsimizdəki su buxarının soyuq havada kondensasiya etməsi",
+        "Nəfəsimizin rəngli olması",
+        "Havanın isinməsi",
+        "Ağzımızdan buz çıxması"
+      ],
+      "old_idx": 1,
+      "expl": "İsti nəfəsimizdəki görünməz su buxarı soyuq hava ilə təmasda dərhal xırda su damcılarına (dumana) çevrilir, yəni kondensasiya edir."
+    },
+    {
+      "cat": "Fransız dili 5 (ikinci xarici dil)",
+      "q": "Choisissez l'article correct : \"Elle fait ... natation.\"",
+      "options": [
+        "de la",
+        "au",
+        "du",
+        "à la"
+      ],
+      "old_idx": 1,
+      "expl": "\"Faire\" feli idman növləri ilə işlənəndə \"de\" (du, de la) artiklları tələb edir. \"Natation\" qadın cinsində olduğu üçün \"de la\" seçilir."
+    },
+    {
+      "cat": "Həyat bilgisi 9",
+      "q": "Mətnə əsasən, hələ eramızdan 5-6 əsr öncə qədim Misirdə havanı korladıqlarına və açıq suları çirkləndirdiklərinə görə kimlərə qarşı xüsusi cəza tədbirləri nəzərdə tutulmuşdu?",
+      "options": [
+        "Sena çayını çirkləndirənlərə",
+        "Tarlaları şoranlaşdıran əkinçilərə",
+        "Dəmir döyən dəmirçilərə",
+        "Mis əridən misgərlərə"
+      ],
+      "old_idx": 0,
+      "expl": "Mətndə ekoloji problemlərin tarixiliyinə toxunularkən qeyd olunur ki, 'hələ eramızdan 5-6 əsr öncə Misirdə mis əridən zaman havanı korladıqlarına, açıq suları çirkləndirdiklərinə görə 6 nəfər misgərə qarşı xüsusi cəza tədbirləri nəzərdə tutulmuşdu.'"
+    },
+    {
+      "cat": "Fizika 9",
+      "q": "Donor aşqarlı (n-tip) Si-nın xalis Si-dan ən əsas fərqi nədir?",
+      "options": [
+        "n-tip Si-da Si atomları yoxdur.",
+        "n-tip Si-da hər donor atomu bir əlavə sərbəst elektron verir; buna görə elektron yük daşıyıcısı (çoxluq) sayı xalis Si-dakına nisbətən çox dəfə böyük olur.",
+        "n-tip Si-da yalnız müsbət ionlar hərəkət edir.",
+        "n-tip Si-da temperaturla keçiricilik dəyişmir."
+      ],
+      "old_idx": 1,
+      "expl": "Xalis Si-da otaq temperaturunda elektron konsentrasiyası n ≈ 10¹⁰/cm³ (çox az). n-tip Si-a donor aşqar (P, konsentrasiya 10¹⁵/cm³) əlavə etdikdə elektron konsentrasiyası n ≈ 10¹⁵/cm³ olur — 100 000 dəfə artır! Bu böyük fərq tranzistorun açar kimi (ON/OFF) işləməsini mümkün edir."
+    },
+    {
+      "cat": "Fizika 10",
+      "q": "Divar saatının saniyə əqrəbinin uzunluğu 15 sm-dir. Saniyə əqrəbi tam olaraq 30 saniyə ərzində hansı yolu (l) və nə qədər yerdəyişmə (s) icra edər? (π ≈ 3 qəbul edin)",
+      "options": [
+        "l = 45 sm, s = 30 sm",
+        "l = 90 sm, s = 0 sm",
+        "l = 30 sm, s = 45 sm",
+        "l = 90 sm, s = 30 sm"
+      ],
+      "old_idx": 1,
+      "expl": "Saniyə əqrəbi 1 tam dövrü 60 saniyəyə vurur. 30 saniyə tam yarım dövr deməkdir. Gedilən yol yarım çevrə qövsüdür: l = πR = 3 * 15 = 45 sm. Yerdəyişmənin modulu isə başlanğıc (0 san) və son (30 san) nöqtələri birləşdirən diametrdir: s = 2R = 2 * 15 = 30 sm."
+    }
+  ],
+  "Cause_3_Multiple_Matches": [
+    {
+      "cat": "Coğrafiya 7",
+      "q": "Aşağıdakılardan hansı litosfer tavası deyil?",
+      "options": [
+        "Sakit okean",
+        "Qrenlandiya",
+        "Şimali Amerika",
+        "Avrasiya"
+      ],
+      "old_idx": 0,
+      "expl": "Qrenlandiya Şimali Amerika litosfer tavasının bir hissəsidir, müstəqil tava deyil.",
+      "suggested_idx": [
+        1,
+        2
+      ]
+    },
+    {
+      "cat": "İngilis dili 3",
+      "q": "A: Is this your pencil?\nB: Yes, ___.",
+      "options": [
+        "it is",
+        "it are",
+        "they is",
+        "they are"
+      ],
+      "old_idx": 0,
+      "expl": "'Is this...?' sualına təsdiq cavabı 'Yes, it is' kimi verilir. 'Pencil' təkdə olduğu üçün 'they' yox, 'it' işlənir və 'it' ilə 'is' istifadə olunur.",
+      "suggested_idx": [
+        2,
+        3
+      ]
+    },
+    {
+      "cat": "Biologiya",
+      "q": "Mikroskop altında tədqiq edilən obyekti kobud (sürətli) şəkildə tapmaq və tubusu nəzərəçarpacaq dərəcədə yuxarı-aşağı hərəkət etdirmək üçün hansı hissədən istifadə edilir?",
+      "options": [
+        "Mikrovint",
+        "Əşya kürsüsü",
+        "Revolver",
+        "Makrovint"
+      ],
+      "old_idx": 2,
+      "expl": "Makrovint (kobud tənzimləmə vinti) obyekti tədqiq edərkən xəyalı ilk dəfə tapmaq üçün tubusu (bəzi modellərdə əşya kürsüsünü) geniş diapazonda yuxarı-aşağı hərəkət etdirir.",
+      "suggested_idx": [
+        1,
+        3
+      ]
+    },
+    {
+      "cat": "İngilis dili 5 (əsas xarici dil)",
+      "q": "What do you carry your books to school in?",
+      "options": [
+        "A textbook",
+        "A pencil",
+        "A notebook",
+        "A schoolbag"
+      ],
+      "old_idx": 1,
+      "expl": "A 'schoolbag' is used to carry books, notebooks, and other school supplies.",
+      "suggested_idx": [
+        2,
+        3
+      ]
+    },
+    {
+      "cat": "Rus dili",
+      "q": "Как переводится слово «Ailə» на русский язык?",
+      "options": [
+        "Дом",
+        "Семья",
+        "Школа",
+        "Брат"
+      ],
+      "old_idx": 0,
+      "expl": "Слово «Ailə» на русском языке означает «семья». Остальные слова означают: qardaş (брат), ev (дом), məktəb (школа).",
+      "suggested_idx": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

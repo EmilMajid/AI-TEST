@@ -108,10 +108,10 @@ def call_gemini_vision(prompt, image_paths, api_key):
         return None
 
 def call_gemini(prompt, api_key):
-    """Standard Gemini 3.1 Pro text-only call."""
+    """Gemini text-only call."""
     if not api_key or "placeholder" in api_key:
         return None
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
     headers = {"Content-Type": "application/json"}
     data = {
         "contents": [{
@@ -306,7 +306,7 @@ def generate_text_with_failover(prompt, provider="gemini"):
         elif current_provider == "deepseek":
             result = call_openai_compatible(prompt, api_key, "https://api.deepseek.com/v1/chat/completions", "deepseek-chat")
         elif current_provider == "xai":
-            result = call_openai_compatible(prompt, api_key, "https://api.x.ai/v1/chat/completions", "grok-beta")
+            result = call_openai_compatible(prompt, api_key, "https://api.x.ai/v1/chat/completions", "grok-3-mini")
         elif current_provider == "openai":
              result = call_openai_compatible(prompt, api_key, "https://api.openai.com/v1/chat/completions", "gpt-4o")
         

@@ -70,7 +70,7 @@ interface TopicGroup {
 // Load extracted topics from JSON file (for textbooks with empty TOC files)
 let extractedTopicsCache: Record<string, TopicGroup[]> | null = null;
 
-const MOCK_PATTERNS = [/mocked/i, /tam m[əe]tn/i, /d[əe]rslik\s?\(pdf\)/i, /unit\s?1/i, /topic\s?1/i];
+const MOCK_PATTERNS = [/mocked/i, /tam m[əe]tn/i, /d[əe]rslik\s?\(pdf\)/i];
 
 function isMockContent(text: string): boolean {
     if (!text) return true;
@@ -80,7 +80,8 @@ function isMockContent(text: string): boolean {
 
 function loadExtractedTopics(): Record<string, TopicGroup[]> {
 
-    if (extractedTopicsCache) return extractedTopicsCache;
+    // Cache disabled temporarily to pick up new manual-topics
+    // if (extractedTopicsCache) return extractedTopicsCache;
 
     try {
         const mergedTopics: Record<string, TopicGroup[]> = {};
@@ -271,7 +272,10 @@ export async function GET(request: NextRequest) {
             const bookId = book.id;
             const bookSubject = book.subject || book.title;
             const dirName = book.contentPath ? path.basename(book.contentPath) : "";
-            const bookDisplayName = (dirName && SUBJECT_MAPPING[dirName]) ? SUBJECT_MAPPING[dirName] : bookSubject;
+            let bookDisplayName = (dirName && SUBJECT_MAPPING[dirName]) ? SUBJECT_MAPPING[dirName] : bookSubject;
+            if (bookDisplayName === "Xarici dil" || bookDisplayName === "İkinci xarici dil") {
+                bookDisplayName = book.title;
+            }
             const normalizedDisplayName = bookDisplayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
 
             // FILTER logic: support both bookId and subject
@@ -280,8 +284,8 @@ export async function GET(request: NextRequest) {
                 : (!targetSubject || (
                     bookSubject === targetSubject ||
                     normalizedDisplayName === targetSubject ||
-                    (targetSubject === "Xarici dil" && normalizedDisplayName.toLowerCase().includes("dili") && !normalizedDisplayName.includes("Azərbaycan")) ||
-                    (targetSubject.includes("dil") && normalizedDisplayName.includes("dil") && targetSubject !== "Azərbaycan dili")
+                    normalizedDisplayName.startsWith(targetSubject) ||
+                    (targetSubject === "Xarici dil" && normalizedDisplayName.toLowerCase().includes("dili") && !normalizedDisplayName.includes("Azərbaycan"))
                 ));
 
             if (!matches) continue;

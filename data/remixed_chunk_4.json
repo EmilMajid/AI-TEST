@@ -1,0 +1,594 @@
+[
+  {
+    "id": "05-013-0101-B04M03-01-01-010-4125-r1",
+    "passport_id": "05-013-0101-B04M03-01-01-010-4125-r1",
+    "question": "Выберите правильный вариант: «Бабушка всегда говорит правду. Она ...»",
+    "options": [
+      "Честная",
+      "Честное",
+      "Честный",
+      "Честные"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Бабушка — это женский род, поэтому правильно использовать форму «честная».",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "Урок 26. Мой характер."
+  },
+  {
+    "id": "10-008-01-3-orta-2-ad34-r1",
+    "passport_id": "10-008-01-3-orta-2-ad34-r1",
+    "question": "E.ə. I minilliyin əvvəllərində Qədim Misirin zəifləməsi və parçalanmasının əsas səbəbi nə olmuşdur?",
+    "options": [
+      "Hakimiyyət uğrunda daxili mübarizələrin baş verməsi",
+      "Fərat çayının daşması nəticəsində iqtisadiyyatın zəifləməsi",
+      "Hetlərlə bağlanmış Kadeş sülh müqaviləsinin pozulması",
+      "Qonşu tayfaların kütləvi hücumları"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətnə əsasən e.ə. I minilliyin əvvəllərində Misir hakimiyyət uğrunda mübarizələr nəticəsində zəifləmiş və ayrı-ayrı hissələrə parçalanmışdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Qədim Misir"
+  },
+  {
+    "id": "10-008-02-05-3-12-4457-r1",
+    "passport_id": "10-008-02-05-3-12-4457-r1",
+    "question": "Mətnə əsasən, ibtidai cəmiyyətin hansı dövründə toxa əkinçiliyi daha məhsuldar olan xış əkinçiliyi ilə əvəz edilmişdir?",
+    "options": [
+      "Paleolit dövründə",
+      "Mezolit dövründə",
+      "Neolit dövründə",
+      "Tunc dövründə"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətnə görə, Tunc dövründə əkinçilikdə əsas yenilik toxa əkinçiliyinin xış əkinçiliyi ilə əvəz edilməsi olmuşdur ki, bu da məhsuldarlığı artırmışdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "İbtidai cəmiyyət"
+  },
+  {
+    "id": "10-008-03-4-C-14-77e2-r1",
+    "passport_id": "10-008-03-4-C-14-77e2-r1",
+    "question": "Yunan dilində 'ikiçayarası' mənasını verən Mesopotamiya coğrafi olaraq hansı çayların arasındakı ərazini əhatə edir?",
+    "options": [
+      "Nil və Fərat",
+      "Dəclə və Fərat",
+      "Amudərya və Sırdərya",
+      "Sinxua və Yanszı"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə açıq şəkildə qeyd olunur ki, Mesopotamiya Dəclə və Fərat çayları arasını əhatə edir və yunan dilində 'ikiçayarası' deməkdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Qədim Misir və Mesopotamiya"
+  },
+  {
+    "id": "10-008-04-02-2-3-f881-r1",
+    "passport_id": "10-008-04-02-2-3-f881-r1",
+    "question": "Mətndə verilmiş T_o = E/Ə düsturuna əsasən, resursla təminolunma (T_o) göstəricisini hesablamaq üçün ehtiyatın miqdarını (E) hansı göstəriciyə bölmək tələb olunur?",
+    "options": [
+      "Ərazinin ümumi sahəsinə",
+      "Əhalinin illik artım tempinə",
+      "Əhalinin sayına (Ə)",
+      "İllik hasilatın həcminə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə verilmiş düstura (T_o = E/Ə) əsasən, təminolunma ehtiyatın əhalinin sayına bölünməsi ilə tapılır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Qədim İran və Hindistan"
+  },
+  {
+    "id": "10-008-06-02-S-04-cbc8-r1",
+    "passport_id": "10-008-06-02-S-04-cbc8-r1",
+    "question": "Avropada ilk dövlət nə vaxt və harada yaranmışdır?",
+    "options": [
+      "E.ə. II minillikdə Spartada",
+      "E.ə. I minillikdə Afinada",
+      "E.ə. IV minillikdə Roma imperiyasında",
+      "E.ə. III minilliyin birinci yarısında Krit adasında"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətnə görə, Avropada ilk dövlət e.ə. III minilliyin birinci yarısında Krit adasında yaranmışdır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Qədim Yunanıstan, Makedoniya və Roma"
+  },
+  {
+    "id": "08-006-01-01-1-01-79c5-r1",
+    "passport_id": "08-006-01-01-1-01-79c5-r1",
+    "question": "Canlı orqanizmlərin tərkibində kütləcə ən çox paya malik olan element hansıdır?",
+    "options": [
+      "Karbon",
+      "Oksigen",
+      "Hidrogen",
+      "Azot"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Canlı orqanizmlərdə kütləcə ən çox yayılan element oksigendir (təqribən 65-70%), çünki orqanizmin böyük hissəsi sudan ibarətdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Bölmə 1. Həyatın kimyası"
+  },
+  {
+    "id": "08-006-01-02-2-07-b0b4-r1",
+    "passport_id": "08-006-01-02-2-07-b0b4-r1",
+    "question": "Heyvan və göbələk hüceyrələrində ehtiyat qida maddəsi funksiyasını yerinə yetirən polisaxarid hansıdır?",
+    "options": [
+      "Nişasta",
+      "Sellüloza",
+      "Qlikogen",
+      "Saxaroza"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Heyvan və göbələklərdə ehtiyat karbohidrat qlikogendir. Bitkilərdə isə bu funksiyanı nişasta yerinə yetirir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Bölmə 1. Həyatın kimyası"
+  },
+  {
+    "id": "08-006-01-02-2-08-b101-r1",
+    "passport_id": "08-006-01-02-2-08-b101-r1",
+    "question": "Bioloji reaksiyaları sürətləndirən fermentlərin əsas iş prinsipi nədən ibarətdir?",
+    "options": [
+      "Reaksiyanın aktivləşmə enerjisini artırmaqdan",
+      "Reaksiyanın aktivləşmə enerjisini azaltmaqdan",
+      "Hüceyrədaxili hərarəti kəskin qaldırmaqdan",
+      "Substratı dönməz olaraq parçalamaqdan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fermentlər zülal mənşəli bioloji katalizatorlardır. Onlar reaksiyanın aktivləşmə enerjisini azaldaraq onu sürətləndirir və özləri prosesdə sərf olunmurlar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Bölmə 1. Həyatın kimyası"
+  },
+  {
+    "id": "08-006-01-04-3-12-cfb1-r1",
+    "passport_id": "08-006-01-04-3-12-cfb1-r1",
+    "question": "DNT molekuluna xas olan, lakin RNT molekulunda heç vaxt rast gəlinməyən azotlu əsas hansıdır?",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Adenin",
+      "Timin"
+    ],
+    "correctAnswer": 3,
+    "explanation": "DNT-də adenin, quanin, sitozin və timin olur. RNT-də isə timin əvəzinə urasil iştirak edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bölmə 1. Həyatın kimyası"
+  },
+  {
+    "id": "08-006-1.2-1-01-01-f07e-r1",
+    "passport_id": "08-006-1.2-1-01-01-f07e-r1",
+    "question": "Üzvi birləşmələrin əsas skeletini hansı elementin atomları təşkil edir?",
+    "options": [
+      "Karbon",
+      "Fosfor",
+      "Kalsium",
+      "Kükürd"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Karbon bütün üzvi birləşmələrin əsasını təşkil edir, çünki xarici elektron təbəqəsində 4 elektron var və həm öz atomları ilə, həm də digər elementlərlə möhkəm kovalent rabitələr quraraq zəncirlər yarada bilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.2 Hüceyrənin üzvi birləşmələri"
+  },
+  {
+    "id": "08-006-1.2-2-02-09-0762-r1",
+    "passport_id": "08-006-1.2-2-02-09-0762-r1",
+    "question": "DNT molekulundakı karbohidrat (pentoza şəkəri) hansıdır?",
+    "options": [
+      "Riboza",
+      "Qlükoza",
+      "Dezoksiriboza",
+      "Fruktoza"
+    ],
+    "correctAnswer": 2,
+    "explanation": "RNT-nin (ribonuklein turşusunun) tərkibindəki beşkarbonlu şəkər (pentoza) ribozadır. DNT-də isə dezoksiribozadır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.2 Hüceyrənin üzvi birləşmələri"
+  },
+  {
+    "id": "08-006-ETH-THL-03-11-31fb-r1",
+    "passport_id": "08-006-ETH-THL-03-11-31fb-r1",
+    "question": "TAVİ proseduru hansı məqsədlə həyata keçirilir?",
+    "options": [
+      "Böyrək köçürülməsi üçün",
+      "Aorta qapağının kateter vasitəsilə dəyişdirilməsi üçün",
+      "Koronar damarların stendlənməsi üçün",
+      "Mədəkiçiltmə əməliyyatı üçün"
+    ],
+    "correctAnswer": 1,
+    "explanation": "TAVİ (Transcatheter Aortic Valve Implantation) açıq ürək əməliyyatına ehtiyac olmadan, kateter vasitəsilə daralmış aorta qapağının yeni süni qapaqla əvəz edilməsidir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Elm, texnologiya, həyat"
+  },
+  {
+    "id": "08-006-10-2-01-05-4ebc-r1",
+    "passport_id": "08-006-10-2-01-05-4ebc-r1",
+    "question": "Hazır anticisimlərdən ibarət müalicəvi zərdabın yeridilməsi orqanizmdə hansı immuniteti yaradır?",
+    "options": [
+      "Təbii aktiv",
+      "Süni aktiv",
+      "Təbii passiv",
+      "Süni passiv"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Zərdabın tərkibində hazır anticisimlər olduğu üçün orqanizm özü onları sintez etmir. Buna görə də bu immunitet süni passiv immunitet adlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Xülasə"
+  },
+  {
+    "id": "gen-318fe420-r1",
+    "passport_id": "gen-318fe420-r1",
+    "question": "XII əsrdə Naxçıvanda Möminə xatun türbəsini və Darülmülk sarayını inşa edən məşhur memar kimdir?",
+    "options": [
+      "Əcəmi Əbubəkr oğlu Naxçıvani",
+      "Memar Əli",
+      "Bəhaəddin",
+      "Memar Sinan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunduğu kimi, Yusif ibn Küseyr, Möminə xatun türbələri, Qoşaminarə və Darülmülk kimi abidələr Əcəmi Naxçıvaninin yaratdığı memarlıq inciləridir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "15. Monqol yürüşlərinə qarşı mübarizə"
+  },
+  {
+    "id": "08-005-12-1-01-04-fa31-r1",
+    "passport_id": "08-005-12-1-01-04-fa31-r1",
+    "question": "AES-lərdə enerji hansı fiziki proses nəticəsində alınır?",
+    "options": [
+      "Nüvə sintezi nəticəsində",
+      "Ağır nüvələrin bölünməsi nəticəsində",
+      "Elektron emissiyası nəticəsində",
+      "Kimyəvi yanma reaksiyası nəticəsində"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nüvə reaktorlarında əsasən uran və ya plutoniya kimi ağır elementlərin nüvələrinin neytronların təsiri altında bölünməsi nəticəsində böyük miqdarda enerji ayrılır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Elm, texnologiya, həyat"
+  },
+  {
+    "id": "08-005-12-3-03-12-8b52-r1",
+    "passport_id": "08-005-12-3-03-12-8b52-r1",
+    "question": "Gücü 1100 Vt olan elektrik cihazı 2 saat fasiləsiz işləyərsə, nə qədər iş görər?",
+    "options": [
+      "7 920 000 C",
+      "3 960 000 C",
+      "2 200 C",
+      "11 000 C"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Güc P = U * I = 220 * 5 = 1100 Vt. Zaman t = 2 saat = 7200 s. İş A = P * t = 1100 * 7200 = 7 920 000 Coul.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Elm, texnologiya, həyat"
+  },
+  {
+    "id": "08-005-14-2-01-05-99c5-r1",
+    "passport_id": "08-005-14-2-01-05-99c5-r1",
+    "question": "Xəritələrin tərtibində coğrafiya ilə həndəsənin ortaq tədqiqat metodlarından biri olan proyeksiya növü hansıdır?",
+    "options": [
+      "Müstəvi və Konus proyeksiyaları",
+      "Qravitasiya proyeksiyaları",
+      "Dinamik xəritələşdirmə",
+      "Topoqrafik spektrasiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə verilmiş nümunədə coğrafiyanın digər fənlərlə ortaq mövzularından biri kimi xəritəşünaslıqda istifadə edilən \"Konus proyeksiyaları\" qeyd olunmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-005-14-3-02-09-c83e-r1",
+    "passport_id": "08-005-14-3-02-09-c83e-r1",
+    "question": "Konus proyeksiyalarının öyrənilməsində coğrafiya əsasən hansı dəqiq elmin prinsiplərinə istinad edir?",
+    "options": [
+      "Biologiyanın",
+      "Riyaziyyat və həndəsənin",
+      "Kvant fizikasının",
+      "Kimyanın"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Konus proyeksiyaları və digər kartoqrafik ölçmə metodları bilavasitə riyaziyyat və həndəsə ilə ortaq tədqiqat sahələridir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "09-001-0101-B1F01-01-01-034-337b-r1",
+    "passport_id": "09-001-0101-B1F01-01-01-034-337b-r1",
+    "question": "Azərbaycan Xalq Cümhuriyyətində Milli Şuranın sədri vəzifəsini kim icra edirdi?",
+    "options": [
+      "Fətəli xan Xoyski",
+      "Məhəmməd Əmin Rəsulzadə",
+      "Əlimərdan bəy Topçubaşov",
+      "Xəlil bəy Xasməmmədov"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AXC-nin parlamentinin ilk sədri Əlimərdan bəy Topçubaşov olmuşdur. Fətəli xan Xoyski ilk Baş nazir, M.Ə.Rəsulzadə isə Milli Şuranın sədri idi.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Məhəmməd Sadıq bəy Ağabəyzadə"
+  },
+  {
+    "id": "09-001-0101-B1F01-04-03-058-c5fe-r1",
+    "passport_id": "09-001-0101-B1F01-04-03-058-c5fe-r1",
+    "question": "Mətnin girişində yuxudan oyanıb, qarşısındakı varlığın İblis olduğunu anlayan və dəhşətə gələn qəhrəman kimdir?",
+    "options": [
+      "İxtiyar",
+      "İbn Yəmin",
+      "Arif",
+      "Zənci çavuş"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Arif şaşqınlıqla 'Qarşımdakı İblis imiş, eyvah, nə dəhşət!' deyərək qarşısındakının İblis olduğunu anlayır və heyrətlənir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Maarifçi fədailər -Aşurbəylilər"
+  },
+  {
+    "id": "09-001-0101-B1F01-05-03-082-f2a1-r1",
+    "passport_id": "09-001-0101-B1F01-05-03-082-f2a1-r1",
+    "question": "Mətndə qeyd edilən 'eyni yaranma tarixinə, dini təsəvvürlərə və adətlərə malik nəsillərin birliyi' anlayışı hansı terminə uyğun gəlir?",
+    "options": [
+      "Qəbilə / Tayfa",
+      "Sinif",
+      "İrq",
+      "Partiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Verilən tərif ibtidai və ya ənənəvi cəmiyyətlərdə eyni soydan (qan qohumluğundan) və adət-ənənədən gələn nəsillərin birliyini ifadə edən tayfa (qəbilə) anlayışına aiddir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "“Amalım millətimi səadətə qovuşdurmaqdır”"
+  },
+  {
+    "id": "09-001-0101-B1F01-04-03-095-6a3b-r1",
+    "passport_id": "09-001-0101-B1F01-04-03-095-6a3b-r1",
+    "question": "Hacı Zeynalabdin Tağıyev tərəfindən 1901-ci ildə Bakıda açılmış ilk qız məktəbinin əsas tarixi əhəmiyyəti nədən ibarətdir?",
+    "options": [
+      "Yalnız yoxsul uşaqlara oxuma-yazma öyrətməsindən",
+      "Müsəlman Şərqində ilk dünyəvi qadın məktəbi olmasından və ziyalı Azərbaycan qadınları yetişdirməsindən",
+      "İlk dəfə dərslərin yalnız ərəb dilində keçilməsindən",
+      "Azərbaycanda ilk universitetin əsasını qoymasından"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Müsəlman Şərqində ilk dünyəvi qız məktəbi (Aleksandra Qadın Müsəlman Məktəbi) 1901-ci ildə Bakıda Hacı Zeynalabdin Tağıyevin təşəbbüsü və maddi vəsaiti hesabına açılmışdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "“Sizi təbrik edirəm, qızlar!”"
+  },
+  {
+    "id": "09-001-0101-B1F01-04-03-020-aed6-r1",
+    "passport_id": "09-001-0101-B1F01-04-03-020-aed6-r1",
+    "question": "Müəlliflərin bədii əsərdə obrazların nitqini ədəbi dilin yazılı normalarına deyil, birbaşa şivəyə (məsələn, 'dannadıxdan') uyğun verməsinin məqsədi nədir?",
+    "options": [
+      "Tələffüz qaydalarını ləğv etmək",
+      "Obrazın mənsub olduğu mühiti təbii göstərmək, nitqinə fərdi kolorit qatmaq",
+      "Mətnin bədii üslubdan uzaqlaşmasını təmin etmək",
+      "Şagirdlərə köhnəlmiş sözləri öyrətmək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yazıçı qəhrəmanın danışığını onun aid olduğu mühitə, şivəyə uyğunlaşdıraraq əsərə yerli kolorit qatır və obrazı daha real, təbii canlandırır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Ana qucağı"
+  },
+  {
+    "id": "09-001-0101-B1F01-05-03-030-4adb-r1",
+    "passport_id": "09-001-0101-B1F01-05-03-030-4adb-r1",
+    "question": "Pis vərdişlərin vaxtında qarşısı alınmadıqda sonda ağır nəticələrə gətirib çıxarması ideyasını ən yaxşı hansı məsəl ifadə edir?",
+    "options": [
+      "Dama-dama göl olar",
+      "Zərərin yarısından qayıtmaq da kardır",
+      "Yumurtanı oğurlayan atı da oğurlayar",
+      "Qonşu qonşuya baxar, canını oda yaxar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu məsəl kiçik oğurluğa və ya xətaya göz yummağın gələcəkdə böyük cinayətlərə transformasiya edəcəyi fəlsəfəsini ifadə edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Ana qucağı"
+  },
+  {
+    "id": "09-001-0101-B1F01-03-02-038-00cf-r1",
+    "passport_id": "09-001-0101-B1F01-03-02-038-00cf-r1",
+    "question": "Tarixizmlərlə arxaizmlərin əsas fərqi nədədir?",
+    "options": [
+      "Tarixizmlərdə əşyanın və ya anlayışın özü köhnəldiyi halda, arxaizmlərdə yalnız onu ifadə edən söz dəyişir.",
+      "Tarixizmlər yalnız alınma sözlərdir, arxaizmlər isə milli sözlər.",
+      "Tarixizmlər aktiv fondda qalır, arxaizmlər isə yox.",
+      "Arxaizmlər həmişə xüsusi isimlərdən ibarətdir."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Anlayışın və ya əşyanın özünün tarixin səhnəsindən çıxması səbəbindən köhnələn sözlərə tarixizmlər (məsələn, komsomol, qorodovoy, rəncbər) deyilir. Arxaizmlərdə isə anlayış qalır, yalnız söz dəyişir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Məhəmməd Sadıq bəy Ağabəyzadə"
+  },
+  {
+    "id": "09-001-0101-B1F01-01-01-050-5ec1-r1",
+    "passport_id": "09-001-0101-B1F01-01-01-050-5ec1-r1",
+    "question": "Mətndəki qəhrəman eyni anda hansı iki qadın obrazını (biri yanında, digəri isə təsəvvüründə və ya qarşısında) xatırlayaraq dərin iztirab keçirir?",
+    "options": [
+      "Xavər və Rəbiyyə",
+      "Rəna və Xavər",
+      "Zöhrə və Rəna",
+      "Afaq və Xavər"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə göstərilir ki, 'İxtiyar ilə bərabər, İbn Yəmin, Rəna, zənci çavuş və bir əskər... daxil olurlar.' Həmçinin Arif onu görərkən 'Ah, o, Rəna, nazənin afət!' deyir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Maarifçi fədailər -Aşurbəylilər"
+  },
+  {
+    "id": "09-001-0101-B1F01-02-01-061-148e-r1",
+    "passport_id": "09-001-0101-B1F01-02-01-061-148e-r1",
+    "question": "Bədii əsərdə məkan və zaman təsvirləri (xronotop) hansı mühüm funksiyanı yerinə yetirir?",
+    "options": [
+      "Cümlələrin qrammatik quruluşunu müəyyən etməyi",
+      "Hadisələrin baş verdiyi tarixi, ictimai və məişət şəraitini təyin edərək süjetin reallığını artırmağı",
+      "Yalnız qəhrəmanın adını izah etməyi",
+      "Əsərin əsas ideyasını gizlətməyi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məkan və zaman hadisələrin konkretliyini, ictimai şəraiti (məsələn, müharibənin üçüncü ili kimi detal) oxucuya çatdıraraq obrazların daxili və xarici münaqişələrini anlamağa xidmət edir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Üçüncü il"
+  },
+  {
+    "id": "09-001-0101-B1F01-03-02-089-2c23-r1",
+    "passport_id": "09-001-0101-B1F01-03-02-089-2c23-r1",
+    "question": "Xitab cümlədə sintaktik cəhətdən hansı rol oynayır?",
+    "options": [
+      "Əsas etibarilə mübtəda olur.",
+      "Heç bir cümlə üzvü vəzifəsində çıxış etmir.",
+      "Həmişə ismi xəbərlə əlaqəyə girir.",
+      "Zərflik kimi məkan bildirir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cümlə: Sizi təbrik edirəm, qızlar! 'Qızlar' xitabdır, cümlənin sonunda gəlib, özündən əvvəl vergül qoyulur və nidaya görə cümlə nida işarəsi ilə bitir. Xitablar cümlə üzvü olmurlar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "“Sizi təbrik edirəm, qızlar!”"
+  },
+  {
+    "id": "09-001-0101-B1F01-01-01-003-5e4d-r1",
+    "passport_id": "09-001-0101-B1F01-01-01-003-5e4d-r1",
+    "question": "Mətn redaktorunda mürəkkəb olmayan riyazi ifadələrdəki (məsələn, x²) dərəcə göstəricilərini yazmaq üçün hansı düymədən istifadə olunur?",
+    "options": [
+      "Qalınlaşdırma (Bold)",
+      "Üst indeks",
+      "Alt indeks",
+      "Sətirarası məsafə"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə vurğulanır ki, riyazi ifadələri (məs. x^2 - 3x + 4x - 23 = 0) yazmaq üçün mətn redaktorunun alətlər zolağındakı 'üst indeks' və 'alt indeks' düymələri və ya xüsusi düstur aləti tətbiq edilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Mətn"
+  },
+  {
+    "id": "09-001-0101-B1F01-05-03-012-633a-r1",
+    "passport_id": "09-001-0101-B1F01-05-03-012-633a-r1",
+    "question": "Təqdim olunmuş mətndə bəbirin fiziki xüsusiyyətləri hansı obyekt formasında sistemləşdirilərək verilmişdir?",
+    "options": [
+      "Audio cədvəl formasında",
+      "Sütun və sətirlərdən ibarət cədvəl formasında",
+      "Həndəsi diaqram formasında",
+      "Yalnız ardıcıl abzaslar formasında"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə göstərildiyi kimi, Bəbirin adını, rəngini, hündürlüyünü və çəkisini sətir-sütun şəklində vermək üçün ən əyani və rahat üsul cədvəl obyektindən istifadə etməkdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Mətn"
+  },
+  {
+    "id": "09-001-0101-B1F01-05-03-013-e044-r1",
+    "passport_id": "09-001-0101-B1F01-05-03-013-e044-r1",
+    "question": "Mətn redaktorunda yeni yaradılmış faylı saxlamaq üçün verilən düzgün təlimat hansıdır?",
+    "options": [
+      "Sadəcə redaktoru bağlamaq",
+      "Sənədi dərhal çap etmək",
+      "Sənədə uyğun ad verib yadda saxlamaq",
+      "Bütün mətni silmək"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndəki təlimatda qeyd olunduğu kimi: 'Sənədə uyğun ad verib yadda saxlayın'. Bu əməliyyat kompüterdə yaradılmış hər bir faylın qorunması üçün zəruridir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Mətn"
+  },
+  {
+    "id": "09-007-0110-B1F01-02-02-141-6869-r1",
+    "passport_id": "09-007-0110-B1F01-02-02-141-6869-r1",
+    "question": "Bipolyar tranzistorlarda elektron axınını idarə edən və adətən çox nazik olan orta təbəqə necə adlanır?",
+    "options": [
+      "Kollektor",
+      "Baza",
+      "Emitent",
+      "Katod"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bipolyar tranzistor (BJT) iki p-n keçidindən təşkil olunur və üç yarımkeçirici zonadan ibarətdir: Emitent (Emitter) — yük daşıyıcılarını buraxan; Baza (Base) — çox nazik orta təbəqə olub yük axınını idarə edən; Kollektor (Collector) — emitentdən gələn yükləri toplayan zona. Struktura görə n-p-n və ya p-n-p tipli olur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.10. Yarımkeçirici cihazlar"
+  },
+  {
+    "id": "09-007-0110-B1F01-03-02-145-ed95-r1",
+    "passport_id": "09-007-0110-B1F01-03-02-145-ed95-r1",
+    "question": "Bir tək silisium hüceyrəsindən (fotoelementdən) işıqlanma zamanı təxminən nə qədər gərginlik alınır?",
+    "options": [
+      "1.5 - 2 V",
+      "0.5 - 0.6 V",
+      "12 V",
+      "220 V"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Günəş batareyası fotoelektrik effektin p-n keçidində təzahürüdür. Fotonlar elektron-deşik cütü yaradır və daxili sahə onları ayıraraq EMF yaradır. Standart bir silisium (Si) fotoelement hüceyrəsi işıqlandırıldıqda təxminən 0.5-0.6 V açıq dövrə gərginliyi verir. Daha yüksək gərginlik almaq üçün bu hüceyrələr ardıcıl birləşdirilərək batareya (panel) təşkil edilir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.10. Yarımkeçirici cihazlar"
+  },
+  {
+    "id": "09-007-0102-B1F01-02-02-029-0235-r1",
+    "passport_id": "09-007-0102-B1F01-02-02-029-0235-r1",
+    "question": "Mətnə görə dəniz səviyyəsindən yuxarıya, dağlıq zonaya qalxdıqca temperaturun dəyişmə qanunauyğunluğu necədir?",
+    "options": [
+      "Hər 10 metr yüksəklikdə 1°C artır",
+      "Hər 100 m yüksəklikdə 0,5°C azalır",
+      "Yüksəkliklə əlaqədar sabit qalır",
+      "Hər 50 m yüksəklikdə 2°C azalır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə açıq şəkildə qeyd edilir ki, işıq, temperatur və rütubət əsas abiotik (cansız təbiət) amillərə aiddir və hər 100 m yüksəklikdə 0,5°C azalır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.2. Metalların müqavimətinin temperaturdan asılılığı"
+  },
+  {
+    "id": "09-007-0104-B1F01-04-03-052-b56d-r1",
+    "passport_id": "09-007-0104-B1F01-04-03-052-b56d-r1",
+    "question": "İnşa müəllifi, fiziki cəhətdən qüsurlu olub böyük əzmkarlıqla uğur qazanan insanlara mətndə kimi nümunə göstərmişdir?",
+    "options": [
+      "İmran Cəfərzadəni",
+      "Ləman Şahbazlını",
+      "Məşhur xarici idmançıları",
+      "Adsız bir qəhrəmanı"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə aydın yazılır: 'O, müqayisələr aparmış... ayaqlarını itirən, lakin mübarizə apararaq öz yolunu müəyyənləşdirən, üzgüçülüklə məşğul olan və yarışlarda qalib gələn İmran Cəfərzadəni nümunə göstərmişdir.'",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Vakuumda elektrik cərəyanı"
+  },
+  {
+    "id": "09-007-0104-B1F01-02-02-058-8738-r1",
+    "passport_id": "09-007-0104-B1F01-02-02-058-8738-r1",
+    "question": "Rəyçi yazılmış inşanın yekun hissəsi üçün hansı tövsiyəni vermişdir?",
+    "options": [
+      "Əlavə rəsmlərin çəkilməsini",
+      "Ümumi ideyanın (nəticənin) daha aydın əsaslandırılmasını",
+      "Mətnin bütövlükdə yenidən yazılmasını",
+      "Qrammatik səhvlərin düzəldilməsinə ehtiyac olmadığını"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə açıq şəkildə qeyd olunur ki, 'İnşanın nəticə hissəsində ümumi ideya əsaslandırılmalıdır'.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.4. Vakuumda elektrik cərəyanı"
+  }
+]

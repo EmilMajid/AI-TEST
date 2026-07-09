@@ -1,0 +1,594 @@
+[
+  {
+    "id": "08-004-048-06-çətin-15-3483-r1",
+    "passport_id": "08-004-048-06-çətin-15-3483-r1",
+    "question": "Müşahidəçi ağacın hündürlüyünü tapmaq üçün ağacdan 10 m aralıda yerə güzgü qoydu. Özü isə güzgüdən 2 m aralıda elə dayandı ki, güzgüdə ağacın təpəsini gördü. Müşahidəçinin göz səviyyəsinə qədər boyu 1,8 m olarsa, ağacın hündürlüyünü hesablayın.",
+    "options": [
+      "7 m",
+      "9 m",
+      "10 m",
+      "12 m"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Düzbucaqlı üçbucaqların oxşarlığına görə (yerlə ağac/adam düz bucaq əmələ gətirir və güzgüyə düşmə/qayıtma bucaqları bərabərdir), uyğun katetlərin nisbəti bərabərdir. Yəni H_ağac / 1.8 = 10 / 2. Buradan H_ağac = 5 * 1.8 = 9 m alınır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların oxşarlığı: Üçbucaqların oxşarlıq əlamətləri"
+  },
+  {
+    "id": "08-004-49-3-1-05-1072-r1",
+    "passport_id": "08-004-49-3-1-05-1072-r1",
+    "question": "Düzbucaqlı üçbucaqda düz bucaq təpəsindən çəkilmiş hündürlük 6 sm-dir. Bu hündürlüyün hipotenuzdan ayırdığı parçalardan biri 3 sm olarsa, digər parçanın uzunluğunu tapın.",
+    "options": [
+      "9 sm",
+      "10 sm",
+      "12 sm",
+      "15 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hündürlük hipotenuzu ayırdığı parçaların həndəsi ortasıdır: h² = m × n. Şərtə görə 6² = 3 × n, yəni 36 = 3n, buradan n = 12 sm alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Düzbucaqlı üçbucaqların oxşarlığı"
+  },
+  {
+    "id": "08-004-49-4-2-10-01f2-r1",
+    "passport_id": "08-004-49-4-2-10-01f2-r1",
+    "question": "Düzbucaqlı üçbucağın katetləri 6 sm və 8 sm-dir. Düz bucaq təpəsindən çəkilmiş hündürlüyün hipotenuzdan ayırdığı parçaların uzunluqlarını tapın.",
+    "options": [
+      "3.6 sm və 6.4 sm",
+      "4 sm və 6 sm",
+      "3 sm və 7 sm",
+      "2.6 sm və 7.4 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hipotenuz c = √(6² + 8²) = 10 sm. Katetlərin proyeksiyaları həndəsi orta düsturundan tapılır: m = a² / c = 36 / 10 = 3.6 sm; n = b² / c = 64 / 10 = 6.4 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Düzbucaqlı üçbucaqların oxşarlığı"
+  },
+  {
+    "id": "08-004-09-anlama-sadə-01-1d32-r1",
+    "passport_id": "08-004-09-anlama-sadə-01-1d32-r1",
+    "question": "$x - y = -3$ olarsa, aşağıdakı müqayisələrdən hansı doğrudur?",
+    "options": [
+      "$x = y$",
+      "$x > y$",
+      "$x < y$",
+      "$x \\ge y$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bərabərsizliyin xassəsinə görə $x - y < 0$ olarsa, deməli $x < y$-dir. Burada fərq -3, yəni mənfi olduğu üçün $x < y$ alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri"
+  },
+  {
+    "id": "08-004-09-təhlil-çətin-03-659a-r1",
+    "passport_id": "08-004-09-təhlil-çətin-03-659a-r1",
+    "question": "$x$-in istənilən qiymətində $x^2 - 6x$ ifadəsinin $2x - 17$ ifadəsindən böyük olduğunu isbat etmək üçün onların fərqini tapsaq hansı nəticə alınar?",
+    "options": [
+      "$(x - 4)^2 + 1 > 0$",
+      "$(x - 3)^2 + 2 > 0$",
+      "$(x - 4)^2 - 1 > 0$",
+      "$(x + 4)^2 + 1 > 0$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İki ifadəni müqayisə etmək üçün onların fərqinə baxırıq: $(x^2 - 6x) - (2x - 17) = x^2 - 8x + 17$. Bu ifadəni tam kvadrata ayırsaq: $x^2 - 8x + 16 + 1 = (x - 4)^2 + 1$ alınır. $(x - 4)^2 \\ge 0$ olduğu üçün onun üzərinə 1 gəldikdə nəticə həmişə müsbət olur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri"
+  },
+  {
+    "id": "08-004-09-tətbiq-çətin-05-e4b1-r1",
+    "passport_id": "08-004-09-tətbiq-çətin-05-e4b1-r1",
+    "question": "$-2 \\le x < 5$ bərabərsizliyi verilmişdir. $4 - 2x$ ifadəsinin ala biləcəyi ən böyük tam qiyməti tapın.",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bərabərsizliyin hər iki tərəfini $-2$-yə vursaq (işarələr əksinə dəyişir): $4 \\ge -2x > -10$, yəni $-10 < -2x \\le 4$. Sonra hər tərəfə 4 əlavə etsək: $-6 < 4 - 2x \\le 8$. İfadənin ala biləcəyi ən böyük tam qiymət 8-dir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklərin xassələri"
+  },
+  {
+    "id": "08-004-09-3-3-13-d843-r1",
+    "passport_id": "08-004-09-3-3-13-d843-r1",
+    "question": "k-nın hansı qiymətlərində x^2 + 4x + k = 0 tənliyinin həqiqi kökü yoxdur?",
+    "options": [
+      "k < 4",
+      "k > 4",
+      "k >= 4",
+      "k <= 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kvadrat tənliyin həqiqi kökünün olmaması üçün diskriminantı (D) sıfırdan kiçik olmalıdır. D = 4^2 - 4*1*k = 16 - 4k. D < 0 yəni 16 - 4k < 0 bərabərsizliyini həll etsək, 4k > 16 => k > 4 alarıq.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklər: Ümumiləşdirici tapşırıqlar"
+  },
+  {
+    "id": "08-004-11-1-01-02-bf5d-r1",
+    "passport_id": "08-004-11-1-01-02-bf5d-r1",
+    "question": "Səpələnmə diaqramında kəmiyyətlərdən birinin qiyməti artdıqca digərinin qiyməti qanunauyğun şəkildə azalırsa, bu asılılıq necə adlanır?",
+    "options": [
+      "Sıfır korrelyasiya",
+      "Müsbət korrelyasiya",
+      "Mənfi korrelyasiya",
+      "Düz mütənasiblik"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kəmiyyətlərdən birinin qiymətinin artması digərinin azalması ilə müşayiət olunursa, bu əlaqə mənfi korrelyasiya adlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi"
+  },
+  {
+    "id": "08-004-11-04-03-05-3c29-r1",
+    "passport_id": "08-004-11-04-03-05-3c29-r1",
+    "question": "İki oyun zəri eyni anda atılır. Düşən xallar cəminin 5 olması ehtimalını tapın.",
+    "options": [
+      "1/6",
+      "1/12",
+      "1/9",
+      "5/36"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İki zər atıldıqda bütün mümkün halların sayı 6 * 6 = 36-dır. Düşən xallar cəminin 5 olduğu hallar bunlardır: (1,4), (2,3), (3,2), (4,1). Cəmi 4 belə hal var. Deməli, ehtimal 4/36 = 1/9-a bərabərdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
+  },
+  {
+    "id": "08-004-11-03-01-02-c568-r1",
+    "passport_id": "08-004-11-03-01-02-c568-r1",
+    "question": "Metal pul 50 dəfə atılmış və 20 dəfə rəqəm üzü düşmüşdür. Xəritə üzünün düşməsinin təcrübi ehtimalını tapın.",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/2",
+      "3/10"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mümkün sınaqların sayı 50-dir. Xəritə üzünün düşməsi hallarının sayı: 50 - 20 = 30. Təcrübi ehtimal = Əlverişli halların sayı / Sınaqların sayı = 30/50 = 3/5.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Ehtimalın hesablanması"
+  },
+  {
+    "id": "08-004-11-04-02-10-702f-r1",
+    "passport_id": "08-004-11-04-02-10-702f-r1",
+    "question": "Zər 120 dəfə atılmışdır. Nəticələrə görə 3 xalının düşməsi 25 dəfə qeydə alınmışdır. 3 xalının düşməsinin təcrübi ehtimalı ilə nəzəri ehtimalı arasındakı fərqi tapın.",
+    "options": [
+      "1/12",
+      "1/24",
+      "1/20",
+      "1/6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Nəzəri ehtimal 1/6-dir. Təcrübi ehtimal = 25/120 = 5/24. Fərq: 5/24 - 1/6 = 5/24 - 4/24 = 1/24.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Ehtimalın hesablanması"
+  },
+  {
+    "id": "08-004-73-04-02-02-5007-r1",
+    "passport_id": "08-004-73-04-02-02-5007-r1",
+    "question": "Zər 100 dəfə atılmış və nəticələr: 1 xalı 10 dəfə, 2 xalı 20 dəfə, 3 xalı 15 dəfə, 4 xalı 25 dəfə, 5 xalı 18 dəfə, 6 xalı 12 dəfə qeydə alınmışdır. Sadə ədəd düşməsinin təcrübi ehtimalı neçə faizdir?",
+    "options": [
+      "47%",
+      "50%",
+      "53%",
+      "55%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Zərdəki sadə ədədlər 2, 3 və 5-dir. Təcrübədə düşmə sayları uyğun olaraq 20, 15 və 18-dir. Əlverişli hallar: 20 + 15 + 18 = 53. Təcrübi ehtimal: 53 / 100 = 53%.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
+  },
+  {
+    "id": "08-004-73-03-02-05-7510-r1",
+    "passport_id": "08-004-73-03-02-05-7510-r1",
+    "question": "Qutuda 4 qırmızı, 5 mavi və 1 yaşıl kürə var. Təsadüfən bir kürə çıxarılır və YENİDƏN qutuya qaytarılır. Sonra ikinci kürə çıxarılır. Hər iki kürənin qırmızı rəngdə olması ehtimalını tapın.",
+    "options": [
+      "1/4",
+      "2/5",
+      "4/25",
+      "4/15"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Birinci dəfə qırmızı çıxma ehtimalı 4/10 = 2/5-dir. Kürə qaytarıldığı üçün ikinci dəfə də ehtimal 2/5-dir. P = 2/5 * 2/5 = 4/25.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi. Ehtimalın hesablanması"
+  },
+  {
+    "id": "08-004-11-4-3-11-776c-r1",
+    "passport_id": "08-004-11-4-3-11-776c-r1",
+    "question": "Qutuda müəyyən sayda ağ və 5 qara kürə var. Ardıcıl çıxarılan 2 kürənin hər ikisinin qara olması ehtimalı 2/9-dur. Ağ kürələrin sayını tapın.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cəmi N kürə var. P = (5/N) * (4/(N-1)) = 2/9 => 20 / (N² - N) = 2/9 => N² - N = 90. N = 10. Ağ kürələrin sayı: 10 - 5 = 5.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Məlumatın toplanması və təqdimi"
+  },
+  {
+    "id": "08-004-02-03-01-02-0eca-r1",
+    "passport_id": "08-004-02-03-01-02-0eca-r1",
+    "question": "Düzbucaqlı üçbucağın hipotenuzu 13 sm, katetlərindən biri 5 sm-dir. Üçbucağın perimetrini tapın.",
+    "options": [
+      "30 sm",
+      "25 sm",
+      "40 sm",
+      "28 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pifaqor teoreminə görə: $x = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = 12$ sm. Perimetr: $P = 13 + 5 + 12 = 30$ sm.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Pifaqor teoremi"
+  },
+  {
+    "id": "08-004-08-03-02-06-5b12-r1",
+    "passport_id": "08-004-08-03-02-06-5b12-r1",
+    "question": "$2(x - 3) \\le 4x + 6$ bərabərsizliyini ödəyən ən kiçik tam ədədi tapın.",
+    "options": [
+      "-5",
+      "-7",
+      "-6",
+      "0"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mötərizəni açırıq: $2x - 6 \\le 4x + 6$. Dəyişənləri sağa, ədədləri sola keçiririk: $-6 - 6 \\le 4x - 2x \\implies -12 \\le 2x \\implies -6 \\le x$. Yəni $x \\ge -6$. Bərabərsizliyi ödəyən ən kiçik tam ədəd -6-dır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Bərabərsizliklər"
+  },
+  {
+    "passport_id": "11-riyaz-3-2-r1",
+    "question": "P(x) = (x - 5)^3 (x - 1)^2 çoxhədlisi üçün x = 5 kökü neçə dəfə təkrarlanan kökdür?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "P(x) = (x - m)^k Q(x) şəklində verilən ayrılışda k təkrarlanma sayını göstərir. Burada x = 5 kökünə uyğun vuruq (x - 5)-dir. Onun qüvvəti 3 olduğu üçün, bu kök 3 dəfə təkrarlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Çoxhədlinin vuruqları haqqında teorem",
+    "category": "Riyaziyyat 11"
+  },
+  {
+    "passport_id": "11-riyaz-3-13-r1",
+    "question": "P(x) = x^3 - 2x^2 - 5x + 6 = 0 tənliyinin köklərindən birinin 1 olduğunu bilərək, bütün köklərin hasilini tapın.",
+    "options": [
+      "6",
+      "-6",
+      "5",
+      "-5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sərbəst hədd 6-dır, tənliyin dərəcəsi isə 3-dür. Tək dərəcəli çoxhədlinin kökləri hasili -a_0/a_n düsturu ilə tapılır. a_0 = 6, a_3 = 1. Nəticə: -6/1 = -6.",
+    "difficulty": "mürəkkəb",
+    "bloom_level": "təhlil",
+    "topic": "Çoxhədlinin vuruqları haqqında teorem",
+    "category": "Riyaziyyat 11"
+  },
+  {
+    "passport_id": "11-riyaz-7-5-r1",
+    "question": "$f(x) = \\frac{P(x)}{Q(x)}$ rasional funksiyasında surətdəki çoxhədlinin dərəcəsi məxrəcdəkindən kiçik ($m < n$) olduqda, üfüqi asimptot necə müəyyən edilir?",
+    "options": [
+      "$y = 0$",
+      "$y = \\frac{a_m}{b_n}$",
+      "Üfüqi asimptotu yoxdur",
+      "$y = 1$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Qaydaya əsasən, məxrəcin dərəcəsi surətin dərəcəsindən böyük (m < n) olduqda, funksiyanın üfüqi asimptotu y = 0 düz xəttidir (absis oxu).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional funksiya",
+    "category": "Riyaziyyat 11"
+  },
+  {
+    "id": "06-004-0101-B001-13-11-r1",
+    "passport_id": "06-004-0101-B001-13-11-r1",
+    "question": "Şərtin ödənilməsindən və ya ödənilməməsindən asılı olaraq iki fərqli əməliyyat qrupu icra olunursa, bu hansı alqoritm növünə aiddir?",
+    "options": [
+      "Xətti alqoritm",
+      "Budaqlanan alqoritmin tam forması",
+      "Budaqlanan alqoritmin natamam forması",
+      "Dövri alqoritm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hər iki halda (şərt ödəndikdə və ödənmədikdə) fərqli addımlar icra edilirsə, bu budaqlanan alqoritmin tam formasıdır.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "13. Alqoritmin növləri"
+  },
+  {
+    "id": "06-004-0101-B001-14-9-09-r1",
+    "passport_id": "06-004-0101-B001-14-9-09-r1",
+    "question": "Önşərtli dövri alqoritmlərdə dövrün gövdəsi ən azı neçə dəfə icra oluna bilər?",
+    "options": [
+      "Ən azı 1 dəfə",
+      "Ən azı 2 dəfə",
+      "0 dəfə (şərt ödənmədikdə icra olunmaya bilər)",
+      "Sonsuz sayda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Önşərtli dövrlərdə əvvəlcə şərt yoxlanılır. Əgər şərt ilk dəfədən ödənməzsə, dövrün gövdəsi heç vaxt (0 dəfə) icra olunmur.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dövri alqoritmlər"
+  },
+  {
+    "id": "06-004-0101-B001-14-14-r1",
+    "passport_id": "06-004-0101-B001-14-14-r1",
+    "question": "Hər hansı bir hərəkəti etməzdən əvvəl \"havanın günəşli olub-olmadığını\" yoxlamaq və günəşlidirsə gəzintiyə davam etmək hansı alqoritm növünə aiddir?",
+    "options": [
+      "Xətti alqoritm",
+      "Budaqlanan alqoritm",
+      "Önşərtli dövri alqoritm",
+      "Sonşərtli dövri alqoritm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hərəkət (gəzinti) öncədən qoyulmuş şərtə (havanın günəşli olmasına) əsasən təkrarlandığı üçün bu, önşərtli dövri alqoritmdir.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Dövri alqoritmlər"
+  },
+  {
+    "id": "06-004-0101-B001-16-2-02-r1",
+    "passport_id": "06-004-0101-B001-16-2-02-r1",
+    "question": "Scratch proqramında dəyişənin qiymətini sıfırlamaq üçün hansı bloklar qrupundan istifadə olunur?",
+    "options": [
+      "Hərəkət (Motion)",
+      "Hadisələr (Events)",
+      "Görünüş (Looks)",
+      "Dəyişənlər (Variables)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dəyişənlərlə bağlı bütün əməliyyatlar (yaratmaq, qiymət vermək, dəyişmək) Dəyişənlər (Variables) qrupunda yerləşir.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "16. Proqramda dəyişənlər"
+  },
+  {
+    "id": "06-004-0101-B001-18-01-r1",
+    "passport_id": "06-004-0101-B001-18-01-r1",
+    "question": "ALPLogo mühitində eyni hərəkəti bir neçə dəfə təkrar etmək üçün proqramçı hansı komandanı yazmalıdır?",
+    "options": [
+      "dön",
+      "başla",
+      "təkrarla",
+      "qələmi_endir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ALPLogo mühitində dövrləri təşkil etmək üçün təkrarla komandası istifadə edilir.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "Proqramlaşdırma mühitində dövr"
+  },
+  {
+    "id": "06-004-0101-B001-21-10-r1",
+    "passport_id": "06-004-0101-B001-21-10-r1",
+    "question": "Mövzu üzrə tapılmış materialların müəyyən ardıcıllıqla qruplara ayrılması informasiya ilə işin hansı mərhələsinə aiddir?",
+    "options": [
+      "İnformasiyanın toplanması",
+      "İnformasiyanın qruplaşdırılması",
+      "Təqdimolunma",
+      "Axtarış"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tapılmış müxtəlif məlumatların təsnif edilməsi və qruplara bölünməsi informasiyanın qruplaşdırılması mərhələsidir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "21. İnformasiya resursları ilə iş mərhələləri"
+  },
+  {
+    "id": "06-004-0101-B001-27-6-06-r1",
+    "passport_id": "06-004-0101-B001-27-6-06-r1",
+    "question": "Kompüter proqramlarında ləğv edilmiş sonuncu əməliyyatı yenidən bərpa etmək üçün hansı əmrdən istifadə olunur?",
+    "options": [
+      "Undo",
+      "Copy",
+      "Redo",
+      "Paste"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Redo əmri Undo ilə ləğv olunmuş əməliyyatı yenidən bərpa etmək (irəli qaytarmaq) üçün istifadə edilir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr"
+  },
+  {
+    "id": "06-004-0101-B001-27-10-r1",
+    "passport_id": "06-004-0101-B001-27-10-r1",
+    "question": "\"CD\" qısaltmasının tam forması və mənası nədir?",
+    "options": [
+      "Compact Disk - kompakt disk",
+      "Central Device - mərkəzi qurğu",
+      "Control Disk - idarəedici disk",
+      "Computer Drive - kompüter qurğusu"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CD qısaltması Compact Disk deməkdir və Azərbaycan dilinə yığcam və ya kompakt disk kimi tərcümə olunur.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr"
+  },
+  {
+    "id": "06-004-0101-B001-27-11-r1",
+    "passport_id": "06-004-0101-B001-27-11-r1",
+    "question": "\"RAM\" qısaltmasının açılışı və vəzifəsi nədir?",
+    "options": [
+      "Read Access Memory - daimi yaddaş",
+      "Random Access Memory - operativ yaddaş",
+      "Real Active Memory - əsas yaddaş",
+      "Run Application Mode - proqram rejimi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RAM (Random Access Memory) kompüterin operativ yaddaşını ifadə edən qısaltmadır.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Dərslikdə işlənmiş ingiliscə söz və ifadələr"
+  },
+  {
+    "id": "06-004-0101-B001-06-05-r1",
+    "passport_id": "06-004-0101-B001-06-05-r1",
+    "question": "Kompüterdə olan sənədi yadda saxlamaq üçün hansı klavişlər kombinasiyası istifadə edilir?",
+    "options": [
+      "<Ctrl+C>",
+      "<Ctrl+V>",
+      "<Ctrl+S>",
+      "<Ctrl+P>"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sənədi yadda saxlamaq (Save) üçün <Ctrl+S> qısayolundan istifadə olunur.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı"
+  },
+  {
+    "id": "06-004-0101-B001-06-11-r1",
+    "passport_id": "06-004-0101-B001-06-11-r1",
+    "question": "Kompüter qəflətən sönərsə, operativ yaddaşda (RAM) olan məlumatların aqibəti necə olur?",
+    "options": [
+      "Sərt diskə köçürülür",
+      "Silinir",
+      "Qorunub saxlanılır",
+      "Fleş karta yazılır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Operativ yaddaş müvəqqəti (enerjidən asılı) yaddaşdır. Kompüter söndükdə və ya elektrik kəsildikdə oradakı bütün məlumatlar silinir.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "6. Şəklin kompüterdə saxlanması və çapı"
+  },
+  {
+    "id": "06-004-0101-B001-07-03-r1",
+    "passport_id": "06-004-0101-B001-07-03-r1",
+    "question": "Mətn redaktorunda Azərbaycan şriftləri ilə yazılan mətnin bəzi hərfləri (məsələn, 'ə', 'ğ', 'ş') düzgün görünmürsə, bunun əsas səbəbi nə ola bilər?",
+    "options": [
+      "Seçilmiş şriftin həmin hərfləri dəstəkləməməsi",
+      "Mətn redaktorunun köhnə olması",
+      "Kompüterdə virus olması",
+      "Klaviaturanın xarab olması"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bəzi xarici şriftlər Azərbaycan dilinin spesifik hərflərini (ə, ö, ü, ç, ş, ğ) dəstəkləmədiyi üçün həmin simvollar kvadrat və ya digər qeyri-adi işarələrlə əvəz olunur.",
+    "difficulty": "easy",
+    "bloom_level": "bilmə",
+    "topic": "7. Mətnin görünüşünün yaxşılaşdırılması"
+  },
+  {
+    "id": "06-004-0101-B001-05-06-r1",
+    "passport_id": "06-004-0101-B001-05-06-r1",
+    "question": "Qovluğun və ya faylın qısayolunu (shortcut) silmək onun orijinal faylına necə təsir edir?",
+    "options": [
+      "Orijinal fayl da silinir",
+      "Heç bir təsir etmir, orijinal fayl qalır",
+      "Orijinal fayl zədələnir",
+      "Fayl zibil qutusuna düşmür"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qısayol sadəcə olaraq əsas fayla aparan bir keçiddir. Onu sildikdə orijinal fayla heç bir təsir göstərmir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "Proqramı başlatmağın bir neçə üsulu"
+  },
+  {
+    "id": "06-004-0101-B001-05-12-r1",
+    "passport_id": "06-004-0101-B001-05-12-r1",
+    "question": "İş masasında yerləşən proqram simgəsini siçanla hansı üsulla işə salmaq qəbul olunmuşdur?",
+    "options": [
+      "Simgənin üzərində sol düyməni bir dəfə çıqqıldatmaqla",
+      "Simgənin üzərində sağ düyməni qoşa çıqqıldatmaqla",
+      "Simgənin üzərində sol düyməni qoşa (ikiqat) çıqqıldatmaqla",
+      "Simgəni sürüşdürməklə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "İş masasında yerləşən simgələri açmaq üçün adətən onların üzərində siçanın sol düyməsi qoşa çıqqıldadılır.",
+    "difficulty": "hard",
+    "bloom_level": "bilmə",
+    "topic": "Proqramı başlatmağın bir neçə üsulu"
+  },
+  {
+    "id": "06-004-0101-B001-25-06-r1",
+    "passport_id": "06-004-0101-B001-25-06-r1",
+    "question": "Elektron poçtla məktub göndərərkən faylı məktuba əlavə etmək üçün hansı əmrdən (və ya işarədən) istifadə olunur?",
+    "options": [
+      "Reply",
+      "Forward",
+      "Attach (Sancaq)",
+      "Send"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Məktuba hər hansı sənəd, şəkil və ya fayl əlavə etmək üçün 'Attach' (Sancaq işarəsi) əmrindən istifadə edilir.",
+    "difficulty": "medium",
+    "bloom_level": "bilmə",
+    "topic": "25. Elektron poçtla məktublaşma"
+  },
+  {
+    "id": "gen-2cef9e0a-r1",
+    "passport_id": "gen-2cef9e0a-r1",
+    "question": "III Vaçaqan Alban kilsəsinin müstəqilliyini qorumaq və dini məsələləri nizama salmaq üçün hansı addımı atmışdı?",
+    "options": [
+      "Sasanilərlə hərbi ittifaq bağladı",
+      "Aqven kilsə məclisini çağırdı",
+      "Bütün kilsələri bağlatdı",
+      "Zərdüştiliyi dövlət dini elan etdi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "III Vaçaqan dini islahatlar həyata keçirmiş və kilsənin müstəqilliyini möhkəmləndirmək üçün xüsusi kilsə məclisi (Aqven məclisi) çağırmışdı.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan tarixi 7 | 4. Xürrəmilər hərəkatı. Babək"
+  },
+  {
+    "id": "gen-2c4977fe-r1",
+    "passport_id": "gen-2c4977fe-r1",
+    "question": "VI yüzillikdə Sasanilər dövlətində vergi islahatına qədər vergilər əsasən nəyə əsasən toplanırdı?",
+    "options": [
+      "Məhsulun həcminə görə",
+      "Torpaq sahəsinin böyüklüyünə görə",
+      "Ailə üzvlərinin sayına görə",
+      "Can vergisi olaraq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə qeyd olunduğu kimi, islahatdan sonra vergilər məhsulun həcminə görə deyil, torpaq sahələrinə görə alınmağa başlandı. Deməli, əvvəl məhsulun həcminə görə alınırdı.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan tarixi 7 | 4. Xürrəmilər hərəkatı. Babək"
+  },
+  {
+    "id": "10-002-02-Tətbiq-Çətin-2-e5e5-r1",
+    "passport_id": "10-002-02-Tətbiq-Çətin-2-e5e5-r1",
+    "question": "Qüdrətli Kuti dövlət qurumunun şimal sərhədləri haradan başlayırdı?",
+    "options": [
+      "Kür çayından",
+      "Urmiya gölünün qərbindən",
+      "Araz çayından",
+      "Xəzər dənizindən"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslik mətninə əsasən, Kuti dövlət qurumunun ərazisi şimalda Urmiya gölünün qərbindən başlayıb cənubda İran körfəzinə qədər uzanırdı.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Azərbaycan ərazisində ilk tayfa ittifaqları və dövlət qurumları"
+  }
+]

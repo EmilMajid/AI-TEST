@@ -1,0 +1,668 @@
+[
+  {
+    "id": "09-007-0106-B1F01-01-01-076-eac0",
+    "passport_id": "09-007-0106-B1F01-01-01-076-eac0",
+    "question": "Müstəqil qaz boşalması nədir?",
+    "options": [
+      "Yalnız elektrolitlərdə baş verən proses.",
+      "Yalnız metalların xüsusi şərtlər altında elektrik keçirməsi.",
+      "Yalnız radioaktiv mənbənin köməyi ilə saxlanılan boşalma.",
+      "Xarici ionlaşdırıcı mənbə olmadan öz-özünə davam edən — avalanş ionlaşma mexanizmi ilə özünü saxlayan boşalma."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Müstəqil boşalma: Güclü elektrik sahəsinin təsiri ilə ionlaşmış qazda elektronlar böyük kinetik enerji qazanır → yeni molekullarla toqquşub onları ionlaşdırır → hər elektron ikinci elektronu yaradır (avalanş) → mənbəsiz özünü saxlayan boşalma yaranır. Şimşək, neon lmpası, ark boşalması — müstəqil boşalmanın nümunələri.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.6. Müstəqil qaz boşalması və onun növləri",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "boşalmanın növlərindən biri qığılcım boşalmasıdır.\n• Qığılcım boşalması\n- havada elektrodlar arasında yüksək gərginlik olduqda baş verir və\nnazik\nziqzaq formalı işıqlı kanallar dəstəsi şəklində müşahidə edilir. Boşalma kanalında temperatur 10 000\n°C, cərəyan şiddəti 5000 A, gərginlik isə 10\n4\nV-a qədər ola bilir. Dövlətlər Birliyi\n(MDB) yaradılması haqqında\nmüqavilə bağladılar. Bununla da SSRİ\nbeynəlxalq hüquq subyekti kimi tarix\nsəhnəsindən silindi. dövlətlər və\npaytaxt\nşəhərləri\nƏrazi,\nmin km\n2\n-lə\nDövlət sub[[MERGE_NEXT]]\nyekti olan [[MERGE_NEXT]]\nrespubllkalar\nvə paytaxt\nşəhərləri\nƏrazi,\nmin km\n2\n-lə"
+  },
+  {
+    "id": "09-007-0106-B1F01-01-01-077-ce62",
+    "passport_id": "09-007-0106-B1F01-01-01-077-ce62",
+    "question": "Plazma nədir?",
+    "options": [
+      "Yüksək temperaturda tamamilə ionlaşmış qaz — müsbət ionlar və elektronlardan ibarət kvazineytral mühit.",
+      "Elektrolit məhlulunun xüsusi forması.",
+      "Güclü soyudulmuş qaz.",
+      "Metalların ərimə məhsulu."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd olunur: 'Plazma – ...' Plazma maddənin dördüncü halı hesab olunur. Çox yüksək temperaturda (10⁴ K və daha yuxarı) qaz atomları tamamilə ionlaşır — hamısı müsbət ion və elektron şəklindədir. Müsbət ionların ümumi yükü elektronların ümumi yükünə bərabər olduğu üçün plazma ümumilikdə elektrik cəhətdən neytraldır (kvazineytral).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.6. Müstəqil qaz boşalması və onun növləri",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "boşalmanın növlərindən biri qığılcım boşalmasıdır.\n• Qığılcım boşalması\n- havada elektrodlar arasında yüksək gərginlik olduqda baş verir və\nnazik\nziqzaq formalı işıqlı kanallar dəstəsi şəklində müşahidə edilir. Boşalma kanalında temperatur 10 000\n°C, cərəyan şiddəti 5000 A, gərginlik isə 10\n4\nV-a qədər ola bilir. Dövlətlər Birliyi\n(MDB) yaradılması haqqında\nmüqavilə bağladılar. Bununla da SSRİ\nbeynəlxalq hüquq subyekti kimi tarix\nsəhnəsindən silindi. dövlətlər və\npaytaxt\nşəhərləri\nƏrazi,\nmin km\n2\n-lə\nDövlət sub[[MERGE_NEXT]]\nyekti olan [[MERGE_NEXT]]\nrespubllkalar\nvə paytaxt\nşəhərləri\nƏrazi,\nmin km\n2\n-lə"
+  },
+  {
+    "id": "09-007-0107-B1F01-03-02-098-6a5c",
+    "passport_id": "09-007-0107-B1F01-03-02-098-6a5c",
+    "question": "İşıqlanma şiddəti artdıqda fotorezistorun dövrəsindəki cərəyan necə dəyişir?",
+    "options": [
+      "Dəyişmir.",
+      "Əvvəl artır, sonra sıfıra enir.",
+      "Artır — işıq fotorezistorun müqavimətini azaldır, cərəyan isə I = U/R düsturuna görə artır.",
+      "Azalır — çünki işıq müqaviməti artırır."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Praktik iş tapşırığından: Kitabı fotorezistordan uzaqlaşdırdıqda (işıq artır) cərəyan artır. Fiziki izah: İşıq↑ → foton sayı↑ → elektron-deşik cütü yaranması↑ → yük daşıyıcısı↑ → müqavimət R↓ → sabit gərginlik U-da I = U/R↑. Bu, işıq sensoru kimi istifadənin əsasıdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.7. Yarımkeçiricilər. Yarımkeçiricilərin məxsusi elektrik keçiriciliyi",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "(Və ya sadəcə:\nkeçiricilik\n) [[MERGE_NEXT]]\nmaddənin elektrik\ncərəyanını keçirə bilmək\nxassəsidir\n. Maddənin bu xassəsi ədədi qiymətcə\nxüsusi elektrik keçiriciliyi\n(və ya:\nxüsusi keçiricilik\n)adlı fiziki kəmiyyətlə xarakterizə olunur.\nXüsusi keçiricilik—ədədi qiymətcə maddənin xüsusi müqavimətinin tərs qiymətinə bərabər\nfiziki\nkəmiyyətdir\n.σ=1\nρ.(1)"
+  },
+  {
+    "id": "09-007-0108-B1F01-02-01-119-f3e9",
+    "passport_id": "09-007-0108-B1F01-02-01-119-f3e9",
+    "question": "Donor aşqarlı (n-tip) Si-nın xalis Si-dan ən əsas fərqi nədir?",
+    "options": [
+      "n-tip Si-da temperaturla keçiricilik dəyişmir.",
+      "n-tip Si-da Si atomları yoxdur.",
+      "n-tip Si-da hər donor atomu bir əlavə sərbəst elektron verir; buna görə elektron yük daşıyıcısı (çoxluq) sayı xalis Si-dakına nisbətən çox dəfə böyük olur.",
+      "n-tip Si-da yalnız müsbət ionlar hərəkət edir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Xalis Si-da otaq temperaturunda elektron konsentrasiyası n ≈ 10¹⁰/cm³ (çox az). n-tip Si-a donor aşqar (P, konsentrasiya 10¹⁵/cm³) əlavə etdikdə elektron konsentrasiyası n ≈ 10¹⁵/cm³ olur — 100 000 dəfə artır! Bu böyük fərq tranzistorun açar kimi (ON/OFF) işləməsini mümkün edir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.8. Yarımkeçiricilərin aşqar keçiriciliyi",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "09-007-0102-B1F01-01-01-019-ce2b",
+    "passport_id": "09-007-0102-B1F01-01-01-019-ce2b",
+    "question": "İfratkeçiricilik hadisəsi nədir və kim tərəfindən kəşf edilmişdir?",
+    "options": [
+      "Temperatur 0°C-yə çatdıqda bütün metalların müqavimətinin sıfıra düşməsi; Faradey tərəfindən kəşf edilmişdir.",
+      "Metalların oda davamlı olmağı bacarması; 2010-cu ildə kəşf edilmişdir.",
+      "Müəyyən kritik temperaturda (4,15 K) civənin elektrik müqavimətinin sıçrayışla sıfıra enməsi; Kamerlinq-Onnes tərəfindən kəşf edilmişdir.",
+      "Müəyyən temperaturda metalın müqavimətinin sonsuz artması; Edison tərəfindən kəşf edilmişdir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə yazılır: 'O, təcrübi olaraq müəyyən etmişdir ki, 4,15 K temperaturda civənin müqaviməti sıçrayışla sıfıra qədər azalır.' Bu hadisəni 1911-ci ildə holland fiziki Kamerlinq-Onnes kəşf etmişdir. Müqavimət tam sıfıra çatdığı üçün bu material üzərindən heç bir enerji itkisi olmadan cərəyan axır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1.2. Metalların müqavimətinin temperaturdan asılılığı",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "Rütubət\nİşıq\nƏsas abiotik amillərə işıq, temperatur, rütubət və s. aiddir. Bu amillərin canlıların həyatında böyük\nəhəmiyyəti var.\nTemperatur.\nYer üzərində temperatur rejimi mövsümdən, bölgələrdən asılı olaraq müxtəlif\ncür dəyişir.\nMəsələn, yanvar ayında müxtəlif coğrafi zonalarda havanın orta temperaturu -40°C ilə +30°C arasında\ntərəddüd edir. Yay ayında isə 0°C-dən aşağı və 40°C-dən yuxarı ola bilər. Amma ekvatorda daimi temperatur\norta hesabla +25-30°C olur. Müəyyən olmuşdur ki, dəniz səthindən yuxarı dağlıq zonaya qalxdıqca\ntemperatur aşağı düşür, yəni hər 100 m yüksəklikdə 0,5°C azalır.\nTemperatur bitkilərin, heyvanların və insanların həyatına müxtəlif cür təsir göstərir. Məsələn,\nontogenezin\ngedişində, ömrün uzunluğunda, balavermə qabiliyyətində və s. bunu müşahidə etmək olur."
+  },
+  {
+    "id": "09-007-0103-B1F01-04-02-044-e36a",
+    "passport_id": "09-007-0103-B1F01-04-02-044-e36a",
+    "question": "Niyə distillə edilmiş su elektrik keçirmir, adi kran suyu isə keçirir?",
+    "options": [
+      "Çünki kran suyunda mineral duzlar həll olmuş vəziyyətdədir — bu duzlar ionlaşaraq yük daşıyıcıları əmələ gətirir; distillə edilmiş suda isə ionlar yoxdur.",
+      "Çünki kran suyunun sıxlığı distillə edilmiş sudan böyükdür.",
+      "Çünki distillə edilmiş su daha soyuqdur.",
+      "Çünki distillə edilmiş suda hidrogen atomları yoxdur."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə izolyatorların sırasında 'distillə edilmiş su' qeyd olunur. Distillə edilmiş suda ionlaşmış maddə yoxdur, yük daşıyıcıları demək olar ki, yoxdur. Kran suyunda Ca²⁺, Mg²⁺, Na⁺, Cl⁻ kimi mineral ionlar həll vəziyyətindədir — bunlar elektrik keçiriciliyini təmin edir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.3. Elektrolitlərdə elektrik cərəyanı",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "L.Şahbazlının “Fiziki qüsurlu insanlarda istedad” mövzusunda yazdığı inşa məzmunu tam əhatə etmişdir.\nMüəllif mövzunu işləyərkən müxtəlif mənbələrə müraciət etmiş, fikirlərini faktlarla əsaslandırmağı\nbacarmışdır. Ləman həmçinin müqayisələr aparmaqla fiziki cəhətdən qüsurlu insanların heç də hamısının\nistedadlı olmaması məsələsinə də toxunmuşdur.\nO, müqayisələr aparmış, istirahət mərkəzlərinin birində ayaqlarını itirən, lakin mübarizə apararaq öz\nyolunu müəyyənləşdirən, üzgüçülüklə məşğul olan və yarışlarda qalib gələn İmran Cəfərzadəni nümunə\ngöstərmişdir.\nMüsbət keyfiyyətlərlə yanaşı, inşada diqqət yetirilməsi lazım olan müəyyən məsələlər də vardır:\nİnşa yazılarkən sitatlardan, atalar sözlərindən istifadə etmək məqsədəmüvafıq olardı.\nMüəyyən durğu işarələri səhvlərinə yol verilmişdir.\nİnşanın nəticə hissəsində ümumi ideya əsaslandırılmalıdır.\nFikrimcə, kiçik nöqsanlar aradan qaldırılmaqla L.Şahbazlının yazı işi müsabiqəyə təqdim edilə bilər.\nİmza:"
+  },
+  {
+    "id": "09-007-0105-B1F01-05-03-069-6e81",
+    "passport_id": "09-007-0105-B1F01-05-03-069-6e81",
+    "question": "İonlaşmış qazda rekombinasiya prosesi nədir və onu ionlaşmaya qarşı qoymaq olarmı?",
+    "options": [
+      "Rekombinasiya — yeni ionlar yaranır; ionlaşmanı gücləndirir.",
+      "Rekombinasiya — müsbət ionla elektron yenidən birləşərək neytral molekul əmələ gətirir; ionlaşmanın əks prosesidir.",
+      "Rekombinasiya — müsbət ionların kərpic kimi sıralanması; ionlaşmanın əksi deyil.",
+      "Rekombinasiya — yalnız elektrolitlərdə baş verir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rekombinasiya — ionlaşmanın tam tərsi prosesidir: Müsbət ion + Elektron → Neytral molekul + enerji. İonlaşmış qazda həm ionlaşma (yeni ionlar yaranır), həm rekombinasiya (ionlar yox olur) eyni anda baş verir. Tarazlıq şəraitdə bu iki prosesin sürəti bərabərdir. İonlaşdırıcı mənbə kəsildikdə ionlaşma dayanır, rekombinasiya davam edir — qaz yenidən neytrallaşır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1.5. Qazlarda elektrik cərəyanı. Qeyri-müstəqil boşalma",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "L.Şahbazlının “Fiziki qüsurlu insanlarda istedad” mövzusunda yazdığı inşa məzmunu tam əhatə etmişdir.\nMüəllif mövzunu işləyərkən müxtəlif mənbələrə müraciət etmiş, fikirlərini faktlarla əsaslandırmağı\nbacarmışdır. Ləman həmçinin müqayisələr aparmaqla fiziki cəhətdən qüsurlu insanların heç də hamısının\nistedadlı olmaması məsələsinə də toxunmuşdur.\nO, müqayisələr aparmış, istirahət mərkəzlərinin birində ayaqlarını itirən, lakin mübarizə apararaq öz\nyolunu müəyyənləşdirən, üzgüçülüklə məşğul olan və yarışlarda qalib gələn İmran Cəfərzadəni nümunə\ngöstərmişdir.\nMüsbət keyfiyyətlərlə yanaşı, inşada diqqət yetirilməsi lazım olan müəyyən məsələlər də vardır:\nİnşa yazılarkən sitatlardan, atalar sözlərindən istifadə etmək məqsədəmüvafıq olardı.\nMüəyyən durğu işarələri səhvlərinə yol verilmişdir.\nİnşanın nəticə hissəsində ümumi ideya əsaslandırılmalıdır.\nFikrimcə, kiçik nöqsanlar aradan qaldırılmaqla L.Şahbazlının yazı işi müsabiqəyə təqdim edilə bilər.\nİmza:"
+  },
+  {
+    "id": "09-007-0109-B1F01-02-02-127-bad1",
+    "passport_id": "09-007-0109-B1F01-02-02-127-bad1",
+    "question": "p-n keçidinin tükənmə (depletion) zonasında nə var?",
+    "options": [
+      "Yalnız fotonlar.",
+      "Yalnız neytral atomlar.",
+      "Kristal qəfəsdə bağlı qalan ionlar (n tərəfidən artı ionlar, p tərəfidən mənfi ionlar) — yük daşıyıcısı yoxdur.",
+      "Çoxlu sayda sərbəst elektron və deşik."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tükənmə zonası: Diffuziya zamanı p→n keçən deşiklər n-tərəfdəki donor ionları ilə rekombinasiya edir, n→p keçən elektronlar p-tərəfdəki akseptor ionları ilə rekombinasiya edir. Sınırın ətrafında yalnız bağlı ionlar qalır (hərəkət edə bilməz): n-tərəfdə müsbət donor ionları, p-tərəfdə mənfi akseptor ionları. Buna görə bu zona yük daşıyıcısıdan 'tükənmişdir' — izolyator kimi davranır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.9. p-n keçidi. Yarımkeçirici diod",
+    "_duplicate_of": "Fizika 9",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "09-001-0303-G1F01-02-02-016-ee8d",
+    "passport_id": "09-001-0303-G1F01-02-02-016-ee8d",
+    "question": "Şimali Avropada Skandinaviya dağlarının mövcud relyefinin əmələ gəlməsində 20 min il əvvələ qədər davam etmiş hansı təbii prosesin böyük rolu olmuşdur?",
+    "options": [
+      "Buzlaşmanın — buzlaqların fəaliyyəti nəticəsində moren tirələri, təpələri və troq dərələri yaranmışdır.",
+      "Səhra küləklərinin (eol proseslər).",
+      "Karst yuyulmasının.",
+      "Vulkan püskürmələrinin."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd olunur ki, Skandinaviya yarımadası 20 min il əvvələ qədər buzlaqlarla örtülü olmuşdur. Hazırda buzlaqlar olmasa da, onların yaratdığı relyef formaları (moren təpələri, tirələri, troq dərələri, fyordlar) geniş yayılmışdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Avropanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "nəqliyyat\nsistemi\nƏhəmiyyətinə görə nəqliyyat maddi istehsalın üçüncü sahəsidir. Bu\nsahə ölkələr arasında\ncoğrafi əmək bölgüsünün əsasını\ntəşkil edir."
+  },
+  {
+    "id": "09-001-0707-G1F01-04-03-087-90c4",
+    "passport_id": "09-001-0707-G1F01-04-03-087-90c4",
+    "question": "Aşağıda verilmiş materik zirvələri cütlüklərindən hansı doğrudur?",
+    "options": [
+      "Avropa - Elbrus; Afrika - Mitçell",
+      "Cənubi Amerika - Tubkal; Avropa - Monblan",
+      "Asiya - Kilimancaro; Afrika - Akonqaqua",
+      "Afrika - Kilimancaro (5895 m); Şimali Amerika - Mak-Kinli (6194 m)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mövzuların inteqrasiyası: Afrika (Kilimancaro - 5895m), Şimali Amerika (Mak-Kinli / Denali - 6194m), Cənubi Amerika (Akonqaqua - 6960m), Avropa / Alp (Monblan - 4807m). Doğru cavab A variantıdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "1140\n22,2\n56\n14,6\nŞimali Amerika\n750\n14,7\n53\n13,8\nCənubi Amerika\n1260\n24,5\n110\n28,6 Şimali Amerika\nCənubi Amerika Misir\n27,2\n4,3\nNiger\n47,5\n9,9"
+  },
+  {
+    "id": "09-001-0909-G1F01-02-01-119-bc13",
+    "passport_id": "09-001-0909-G1F01-02-01-119-bc13",
+    "question": "Ceyrançöl-Acınohur ön dağlığı hansı tektonik zonanın tərkib hissəsidir?",
+    "options": [
+      "Kür çökəkliyi zonası",
+      "Ön Qafqaz çökmə zonası",
+      "Böyük Qafqaz qalxma zonası",
+      "Orta Araz əyilməsi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kür çökəkliyi zonası dörd fərqli hissədən ibarətdir: Qanıx-Əyriçay çökəkliyi, Ceyrançöl-Acınohur ön dağlığı, Lənkəran və Kür-Araz ovalığı. Dərslikdə bu birbaşa verilib.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "9. Azərbaycanın relyefi və tektonik quruluşu",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "6,8\n51\nİran\n0,5 ədəbiyyatı mərhələsi kimi dəyərləndirilir. Farsdilli Azərbaycan poeziyasının\nilk görkəmli nümayəndəsi olan Qətran Təbrizinin yaradıcılığı ilə\nşeirimizin yeni inkişaf mərhələsi başlanır. XII əsrdə yazıb-yaratmış\nƏfzələddin Xaqaninin, Məhsəti Gəncəvinin və digər sənətkarların yaradıcılığı\nideya istiqamətinə, ictimai motivlərinin genişliyinə, bədii keyfiyyətinə\ngörə ədəbiyyatımızda dərin iz buraxmışdır.\nİntibah poeziyasının zirvəsi olan dahi sənətkarımız Nizami Gəncəvinin\nyaradıcılığı, onun sənət incisi sayılan “Xəmsə”si həmin dövrdə və\nsonralar yaranan ədəbiyyatın inkişafında misilsiz rol oynamışdır.\nXIII—XVI\nyüzilliklər orta əsrlər Azərbaycan ədəbiyyatı mərhələsi\nhesab olunur. Bu dövrdə ən mühüm hadisə farsca yazmaq ənənəsinin getdikcə\nzəifləməsi, ana dilində yaranan ədəbiyyatın güclənməsidir. Bu\nmərhələdə ədəbiyyatımızın inkişafı ilk növbədə Qazi Bürhanəddin,\nİmadəddin Nəsimi, Şah İsmayıl Xətayi kimi görkəmli sənətkarların adı\nilə bağlıdır. XIII əsrdə yazıb-yaratmış Şeyx İzzəddin Həsənoğlunun\nqəzəlləri ana dilində bizə çatan ilk nümunələrdir. Lakin bu nümunələrin\nyüksək bədii keyfiyyəti onlardan çox-çox əvvəl ana dilimizdə əsərlərin\nyazıldığını deməyə əsas verir. Müəllifi məlum olmayan “Dastani-Əhməd\nHərami” poeması isə ana dilində ilk epik poeziya örnəyidir.\nXIV əsrin son rübündə Azərbaycanda yeni cərəyan [[MERGE_NEXT]]\nhürufizm\nyaranmışdır.\nHürufilik fəlsəfi təlimi İmadəddin Nəsiminin yaradıcılığında\nyüksək bədii ifadəsini tapmışdır.\nXV-XVI əsrlərdə Azərbayc"
+  },
+  {
+    "id": "09-001-0505-G1F01-01-01-055-9f0f",
+    "passport_id": "09-001-0505-G1F01-01-01-055-9f0f",
+    "question": "Materikin şərq hissəsində yerləşən, çox parçalanmış və qədim olan dağ sistemi hansıdır?",
+    "options": [
+      "Appalaç dağları.",
+      "Skandinaviya dağları.",
+      "Kaskad dağları.",
+      "Tyan-Şan dağları."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslik: 'Materikin şərq hissəsində yeganə qədim dağ sistemi Appalaçdır. Onun ən yüksək zirvəsi Mitçelldir (2037 m). Dağlar güclü parçalanmaya məruz qalmışdır.' (Şimali Amerika qəsdi).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Şimali Amerikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "ABŞ\n12,4\n8,4"
+  },
+  {
+    "id": "09-001-0505-G1F01-05-03-059-7dec",
+    "passport_id": "09-001-0505-G1F01-05-03-059-7dec",
+    "question": "Aşağıda verilən hansı dağ zirvələri düzgün eşləşdirilməyib?",
+    "options": [
+      "Appalaç - Mitçell (2037 m)",
+      "Kordilyer - Monblan (4807 m)",
+      "Skandinaviya - Qalxepiggen (2469 m)",
+      "Kordilyer - Mak-Kinli / Denali (6194 m)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Monblan Alp dağlarının ən hündür zirvəsidir və Avropada yerləşir. Kordilyerin ən hündür zirvəsi isə Mak-Kinlidir (Denali). Digər eşləşdirmələr dərslikdəki rəqəmlərlə tam üst-üstə düşür.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5. Şimali Amerikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "ABŞ\n12,4\n8,4"
+  },
+  {
+    "id": "09-001-0606-G1F01-01-01-062-02ae",
+    "passport_id": "09-001-0606-G1F01-01-01-062-02ae",
+    "question": "And dağlarının (və ümumilikdə Cənub və Şimali Amerikanın) ən yüksək zirvəsi hansıdır?",
+    "options": [
+      "Mak-Kinli",
+      "Akonqaqua (6960 m)",
+      "Monblan",
+      "Kilimancaro"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə verilib: And dağları Şimali Amerikadakı Kordilyerlərdən daha yüksəkdir. Onun və bütün Qərb yarımkürəsinin ən hündür zirvəsi Akonqaquadır (6960 m).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "Afrika\n13\nD"
+  },
+  {
+    "id": "09-001-0606-G1F01-04-03-063-be40",
+    "passport_id": "09-001-0606-G1F01-04-03-063-be40",
+    "question": "And dağlarında seysmikliyin (zəlzələlərin) və vulkanizmin yüksək olmasının geoloji (tektonik) səbəbi nədir?",
+    "options": [
+      "Buzlaqların sürətlə əriməsi.",
+      "Bu dağların qədim platforma mərkəzində yerləşməsi.",
+      "Naska (okean tavası) və Cənubi Amerika (materik tavası) litosfer tavalarının toqquşma sərhədində — subduksiya zonasında yerləşməsi.",
+      "Dağların çox hündür olması səbəbindən ağırlığın artması."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə subduksiya anlayışı belə izah olunur: Okean litosfer tavasının materik litosfer tavasının altına girməsi prosesi subduksiyadır. And dağları məhz Naska (okean) tavasının Cənubi Amerika (materik) tavası altına girdiyi fəal 'Odlu halqa' zonasında yarandığı üçün çox seysmikdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "Afrika\n13\nD"
+  },
+  {
+    "id": "09-001-0606-G1F01-02-02-071-e0eb",
+    "passport_id": "09-001-0606-G1F01-02-02-071-e0eb",
+    "question": "Amazon ovalığı hansı səciyyəvi xüsusiyyətlərə malikdir?",
+    "options": [
+      "Allüvial mənşəli çökmə süxurlarla örtülüdür, hamar relyefə malikdir və platformanın üzərində yerləşir.",
+      "Qədim maqmatik süxurlardan ibarətdir və vulkan kraterləri ilə doludur.",
+      "Səthi çox dağlıqdır və tektonik cəhətdən fəaldır.",
+      "Aralıq dənizi qırışıqlığı zonasına daxildir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon ovalığı dünyanın ən böyük ovalığıdır. Cənubi Amerika platformasının çökmə əyilməsində yerləşir. Amazon çayının gətirdiyi gilli-qumlu (allüvial) çöküntülərlə dolmuşdur, çox hamardır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "6. Cənubi Amerikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "Afrika\n13\nD"
+  },
+  {
+    "id": "09-001-0707-G1F01-01-01-076-8e2b",
+    "passport_id": "09-001-0707-G1F01-01-01-076-8e2b",
+    "question": "Relyef xüsusiyyətlərinə görə Afrikanı hansı iki böyük hissəyə ayırırlar?",
+    "options": [
+      "Şimali və Qərbi Afrika (düzənliklər üstündür), Cənubi və Şərqi Afrika (dağlıqdır).",
+      "Mərkəzi (hündür dağlar) və Şimali (yalnız okean sahilləri).",
+      "Yalnız qərbdə dağlar, qalan hissələr hamısı səhradır.",
+      "Şərq (düzənliklər) və Qərb (dağlar)."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdəki bölgü: 'Afrikanı relyefinə görə iki hissəyə ayırmaq olar. Şimali və Qərbi Afrikada denudasion və akkumulyativ mənşəli düzənliklər, Cənubi və Şərqi Afrikada isə dağlıq relyeflər üstündür.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "1140\n22,2\n56\n14,6\nŞimali Amerika\n750\n14,7\n53\n13,8\nCənubi Amerika\n1260\n24,5\n110\n28,6 Şimali Amerika\nCənubi Amerika Misir\n27,2\n4,3\nNiger\n47,5\n9,9"
+  },
+  {
+    "id": "09-001-0707-G1F01-01-01-079-c09e",
+    "passport_id": "09-001-0707-G1F01-01-01-079-c09e",
+    "question": "Atlas dağlarının ən yüksək nöqtəsi hansıdır?",
+    "options": [
+      "Tubkal zirvəsi (4165 m).",
+      "Kilimancaro (5895 m).",
+      "Elbrus (5642 m).",
+      "Akonqaqua (6960 m)."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətndə konkret verilib: 'Atlas dağlarının ən yüksək nöqtəsi Tubkal zirvəsidir (4165 m).' Kilimancaro isə Şərqi Afrikada yerləşir və bütün materikin ən yüksək zirvəsidir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "1140\n22,2\n56\n14,6\nŞimali Amerika\n750\n14,7\n53\n13,8\nCənubi Amerika\n1260\n24,5\n110\n28,6 Şimali Amerika\nCənubi Amerika Misir\n27,2\n4,3\nNiger\n47,5\n9,9"
+  },
+  {
+    "id": "09-001-0707-G1F01-02-02-086-e209",
+    "passport_id": "09-001-0707-G1F01-02-02-086-e209",
+    "question": "Niger və Seneqal çaylarının Afrikanın qərbində okeana töküldüyü yerlərdə yaratdığı relyef formaları nədir?",
+    "options": [
+      "Buzlaq gölləri.",
+      "Böyük kanyonlar.",
+      "Nəhəng allüvial düzənliklər və deltalar.",
+      "Qum təpələri (barxanlar)."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətn məlumatı: 'Qərbi Afrikada çayların (Niger, Seneqal və s.) fəaliyyəti (akkumulyasiyası) nəticəsində geniş allüvial düzənliklər və deltalar yaranmışdır.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "7. Afrikanın relyefi",
+    "_duplicate_of": "Coğrafiya 9",
+    "context_chunk": "1140\n22,2\n56\n14,6\nŞimali Amerika\n750\n14,7\n53\n13,8\nCənubi Amerika\n1260\n24,5\n110\n28,6 Şimali Amerika\nCənubi Amerika Misir\n27,2\n4,3\nNiger\n47,5\n9,9"
+  },
+  {
+    "id": "09-002-0104-I1F01-04-03-057-d2d5",
+    "passport_id": "09-002-0104-I1F01-04-03-057-d2d5",
+    "question": "Əgər 1024x1024 piksel ölçülü rastr görüntünün rəng palitrası 65536 fərqli rəngdən ibarətdirsə, bu faylın həcmi neçə meqabaytdır? (1 Mbayt = 1024 Kbayt = 1024x1024 bayt)",
+    "options": [
+      "8 Mbayt",
+      "4 Mbayt",
+      "1 Mbayt",
+      "2 Mbayt"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Həlli yolu (tətbiq/təhlil): Palitra 65536 = 2^16, yəni rəng dərinliyi n=16 bit = 2 baytdır. V = a * b * n = 1024 * 1024 * 2 bayt. Bu da 2 * (1024*1024) bayt = 2 Mbayt edir. Qrafik fayl 2 Mbayt yer tutar.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "4. Qrafik informasiyanın kodlaşdırılması",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "• İnformasiyanın hansı növləri var?\n• Kompüterdə mətn informasiyası necə kodlaşdırılır?\nDamalı vərəqdə aşağıdakı cədvəllərin sətir və\nsütunlarının sayına uyğun düzbucaqlılar çəkin.\n“1” olan xanalara uyğun\ndamaları kağızda\nmüəyyənləşdirin və\nhəmin damaları\nrəngləyin.\nAlınan görüntüləri\nmüqayisə edin.\nNəticəni müzakirə edək:\n- Hansı cədvələ uyğun görüntü daha “dəqiq” alındı? Sizcə, niyə? İkinci görüntünü\ndaha da “dəqiq” vermək üçün nə etmək lazımdır?\n- 0 və 1-lərdən ibarət cədvəlləri uyğun görüntülərin kodu hesab etmək olarmı?\nTəqdimolunma formasından (rastr və ya vektor) asılı olmayaraq, qrafik informasiya\nkompüterin ekranında\nrastr formatında\nkodlaşdırılır. Bu zaman hər bir görüntü\nrəngli nöqtələrdən - piksellərdən təşkil edilmiş düzbucaqlı cədvəldən ibarət olur.\nHər bir nöqtənin rəngi və parlaqlığı ədədlə ifadə olunur ki, bu da qrafik\ninformasiyanı təqdim etmək üçün ikilik koddan istifadə etməyə imkan verir.\nGörüntünün bir pikselinin rəngini kodlaşdırmaq üçün istifadə olunan bitlərin\nmiqdarına\nrəng dərinliyi\ndeyilir. Bildiyiniz kimi, 1 bitlə 2 rəngi\n(2), 2 bitlə 4 rəngi\n(2), 4 bitlə 16 rəngi (2\n), 8 bitlə 256 rəngi (2\n)kodlaşdırmaq\nmümkündür.\n24bit(16 777 216 rəng)\n8 bit (256 rəng)\n4 bit (16 rəng) Rəqəmsal videoda rəng dərinliyi üçün 15 bit yetərli olur. Rənglərin gerçək foto\nkeyfiyyətində olması üçün ən azı 24 bit lazımdır.\nQrafik faylın həcmini tapmaq üçün onun uzunluğunda və enində olan piksellərin\nsayını (uyğun olaraq, a və b) və rəngin dərinliyini (\n) bilmək lazımdır. O"
+  },
+  {
+    "id": "09-002-0105-I1F01-01-01-066-7193",
+    "passport_id": "09-002-0105-I1F01-01-01-066-7193",
+    "question": "Diskdə daha az yer tutması üçün tətbiq edilən 'sıxılmış səs faylları' formatı hansıdır? (Bunun hər dəqiqəsi təxminən 1 Mbayt təşkil edir).",
+    "options": [
+      "wav",
+      "mp3",
+      "midi",
+      "bmp"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə qeyd olunur: 'MP3. Bu fayllar diskdə az yer tutması üçün sıxılmış səs fayllarıdır. MP3 faylının hər dəqiqəsi təxminən 1 Mbaytdır.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Səs informasiyasının kodlaşdırılması",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "Piksel\nRastr\nRastr qrafikası\nBMP formatı"
+  },
+  {
+    "id": "09-002-0105-I1F01-02-01-072-d770",
+    "passport_id": "09-002-0105-I1F01-02-01-072-d770",
+    "question": "Aşağıdakılardan hansı səs siqnallarını bir formatdan başqasına (məsələn, wav-ı mp3-ə) çevirən proqramları axtarmaq üçün istifadə olunan terminə (açar sözünə) uyğundur?",
+    "options": [
+      "'vector graphics editor' (vektor qrafika redaktoru)",
+      "'sound conversion software' (səs çevirmə proqram təminatı)",
+      "'3D animation engine' (3D animasiya mühərriki)",
+      "'spreadsheet application' (elektron cədvəl)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dərslikdəki praktiki tapşırıqda göstərilir: 'Belə proqram təminatlarını İnternetdə tapmaq üçün www.google.com saytında “sound conversion software” sözlərinə görə axtarış aparmaq olar.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Səs informasiyasının kodlaşdırılması",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "Piksel\nRastr\nRastr qrafikası\nBMP formatı"
+  },
+  {
+    "id": "09-002-0101-I1F01-02-02-005-d437",
+    "passport_id": "09-002-0101-I1F01-02-02-005-d437",
+    "question": "Rastr qrafikasının əsas çatışmazlıqları nədən ibarətdir?",
+    "options": [
+      "Həcminin çox böyük olması və görüntünün miqyasını böyüdəndə təhrif olunması (piksellərin görünməsi).",
+      "Real fotoşəkilləri təsvir edə bilməməsi.",
+      "Proqramlarının çox bahalı olması.",
+      "Yalnız qara-ağ rənglərdən istifadə olunması."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə göstərilir: 'Rastr qrafikasının çatışmazlıqları: Birincisi, yüksək çözümlülüyə malik rastr görüntülərin həcmi çox böyük olur. İkincisi, miqyası böyüdəndə rastr elementləri görünür və nəticədə görüntü təhrif olunur (pikselləşir).'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Rastr qrafikası",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "• Hansı qrafik redaktorları tanıyırsınız?\n• Sizcə, Paint qrafik redaktorunun hansı üstünlükləri və çatışmazlıqları var?\nPaint qrafik redaktorunda hər hansı qrafik faylı açın.\nMagnifier (Böyüdücü) alətini\nseçin. Göstərici həmin alətin şəklini alacaq.\nGöstəricini iş sahəsinə aparın və siçanın sol düyməsini çıqqıldadın. Şəklin ölçüsü iki\ndəfə böyüyəcək. (Şəkli kiçiltmək üçün siçanın sağ düyməsindən istifadə etmək\nlazımdır.)\nBu hərəkəti bir neçə dəfə təkrar edin.\nNəticəni müzakirə edək:\n- Böyüdülmüş şəklə baxmaqla ekranda görüntünün necə formalaşması haqqında nə\ndemək olar?\nEkranda görüntünün eyniölçülü çox kiçik nöqtələrdən [[MERGE_NEXT]]\npiksellərdən\nformalaşdığını\nbilirsiniz. Ekranda görüntünü əmələ gətirən nöqtələrin düzbucaqlı şəbəkəsi\nrastr\nadlanır. (“Rastr” termini latın dilindəki “rastrum” sözündəndir və “dırmıq” deməkdir.) Hesablama\ntexnikası vasitəsilə\nKodlaşdırma\nyaradılan və kompüterin yaddaşında\npiksellərinə uyğun olan bitlər yığını şəklində saxlanılan görüntüyə isə\nrastr qrafikası\ndeyilir.\nEkranda nöqtələr birləşərək bütöv bir şəkil əmələ gətirsə də, rastr görüntünü çox\nböyütdükdə o, kiçik xanalardan təşkil olunmuş mozaikaya (tora) bənzəyir. Rastrın hər bir nöqtəsi iki parametrlə xarakterizə olunur: ekrandakı mövqeyi ilə və əgər\nmonitor rənglidirsə, rəngi ilə, ag-qaradırsa, parlaqlıq dərəcəsi ilə.\nRastr görüntülər yaratmaq və onlar üzərində əməliyyatlar aparmaq üçün çoxlu sayda\nproqramlar mövcuddur. Windows əməliyyat sisteminin tərkibinə daxil olan\nPaint\nproqramı il"
+  },
+  {
+    "id": "09-002-0101-I1F01-04-03-010-4fd4",
+    "passport_id": "09-002-0101-I1F01-04-03-010-4fd4",
+    "question": "Aşağıdakı rastr qrafika formatları ilə bağlı hansı fikir doğrudur?",
+    "options": [
+      ".bmp formatında bütün fayllar maksimal dərəcədə itkili sıxılır.",
+      ".tiff formatı yalnız mətn sənədlərini saxlamaq üçündür.",
+      ".png formatında fayl sıxıldıqda görüntünün keyfiyyəti kəskin şəkildə aşağı düşür.",
+      ".jpeg və .gif formatlarından əsasən İnternetdə geniş istifadə edilir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə verilib: 'Uzantısı .gif və ya .jpeg olan rastr görüntülərdən də geniş istifadə edilir (başlıca olaraq İnternetdə).' Digər variantlar yanlışdır, çünki PNG-də keyfiyyət, demək olar ki, azalmır; BMP adətən sıxılmır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1. Rastr qrafikası",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "• Hansı qrafik redaktorları tanıyırsınız?\n• Sizcə, Paint qrafik redaktorunun hansı üstünlükləri və çatışmazlıqları var?\nPaint qrafik redaktorunda hər hansı qrafik faylı açın.\nMagnifier (Böyüdücü) alətini\nseçin. Göstərici həmin alətin şəklini alacaq.\nGöstəricini iş sahəsinə aparın və siçanın sol düyməsini çıqqıldadın. Şəklin ölçüsü iki\ndəfə böyüyəcək. (Şəkli kiçiltmək üçün siçanın sağ düyməsindən istifadə etmək\nlazımdır.)\nBu hərəkəti bir neçə dəfə təkrar edin.\nNəticəni müzakirə edək:\n- Böyüdülmüş şəklə baxmaqla ekranda görüntünün necə formalaşması haqqında nə\ndemək olar?\nEkranda görüntünün eyniölçülü çox kiçik nöqtələrdən [[MERGE_NEXT]]\npiksellərdən\nformalaşdığını\nbilirsiniz. Ekranda görüntünü əmələ gətirən nöqtələrin düzbucaqlı şəbəkəsi\nrastr\nadlanır. (“Rastr” termini latın dilindəki “rastrum” sözündəndir və “dırmıq” deməkdir.) Hesablama\ntexnikası vasitəsilə\nKodlaşdırma\nyaradılan və kompüterin yaddaşında\npiksellərinə uyğun olan bitlər yığını şəklində saxlanılan görüntüyə isə\nrastr qrafikası\ndeyilir.\nEkranda nöqtələr birləşərək bütöv bir şəkil əmələ gətirsə də, rastr görüntünü çox\nböyütdükdə o, kiçik xanalardan təşkil olunmuş mozaikaya (tora) bənzəyir. Rastrın hər bir nöqtəsi iki parametrlə xarakterizə olunur: ekrandakı mövqeyi ilə və əgər\nmonitor rənglidirsə, rəngi ilə, ag-qaradırsa, parlaqlıq dərəcəsi ilə.\nRastr görüntülər yaratmaq və onlar üzərində əməliyyatlar aparmaq üçün çoxlu sayda\nproqramlar mövcuddur. Windows əməliyyat sisteminin tərkibinə daxil olan\nPaint\nproqramı il"
+  },
+  {
+    "id": "09-002-0102-I1F01-02-02-018-0738",
+    "passport_id": "09-002-0102-I1F01-02-02-018-0738",
+    "question": "Vektor qrafikasının ən böyük çatışmazlığı nə hesab olunur?",
+    "options": [
+      "Rənglərin arasında rəvan keçidi, səlis sərhədləri və xətləri (fotoqrafiya keyfiyyətini) təsvir etməyin çətin olması.",
+      "Düsturların kompüterdə silinməsi ehtimalı.",
+      "Fayllarının çox böyük həcmə malik olması.",
+      "Görüntünü böyüdəndə pikselləşib təhrif olunması."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdəki fakt: 'Bununla belə, vektor qrafikasında rənglərin arasında rəvan keçidi, səlis sərhədləri və xətləri təsvir etmək çətin olur. Bu elementlər fotoqrafiya və rəsm əsərlərinə xasdır.' Buna görə vektor daha çox çertyojlar üçündür.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Vektor qrafikası",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "• Riyaziyyatdan funksiyanın hansı təqdimolunma formalarını bilirsiniz?\nHansı düsturun hansı qrafikə uyğun olduğunu müəyyən edin.\nNəticəni müzakirə edək:\n- Verilmiş düsturlar, yoxsa onlara uyğun şəkillər kompüterin yaddaşında daha çox yer\ntutar?\nKompüterdə qrafik informasiyanın təqdim olunması üçün iki yanaşmadan istifadə\nedilir. Onlardan birinin [[MERGE_NEXT]]\nrastr qrafikasının\nmahiyyəti və onun çatışmazlıqları ilə\nötən dərsdə tanış oldunuz. Rastr qrafikasında olan problemləri həll etmək üçün ikinci\nyanaşmadan [[MERGE_NEXT]]\nvektor qrafikasından\nistifadə olunur. Şəkil, sxem,\nçertyoj kimi\nrəsmlərdə obyektlərin konturlarını yüksək dəqiqliklə və aydın göstərmək lazım\nolduqda vektor görüntülərin üstünlüyü üzə çıxır.\nVektor qrafikasında obyektlər ayrı-ayrı nöqtələrin (piksellərin) yığını kimi deyil,\nxətlər toplusu kimi yaradılır. Xəttin forması riyazi qanunauyğunluqlar vasitəsilə təsvir\nolunur. Başqa sözlə, vektor qrafikasında ekrana, yaxud çapa çıxarılan xətlərin\nyerinin, uzunluğunun və istiqamətinin müəyyən olunması üçün riyazi düsturlardan\nistifadə edilir. Məsələn, bildiyiniz kimi, düz xətti göstərmək üçün iki parametr\nkifayətdir. Düz xəttin tənliyi\ny = kx + b\ndüsturu ilə verilir. Koordinat sistemində parametrlərini bilməklə düz xətti çəkmək mümkündür.\nKodlaşdırma\nYəni bu halda düz xətt\nboyunca yerləşən hər bir nöqtənin yerini və rəngini göstərmək tələb olunmur. Nəticədə\ngörüntünün həcmi azalır və onu heç bir təhrif olmadan böyüdüb-kiçiltmək imkanı\nyaranır.\nRastr və vektor qra"
+  },
+  {
+    "id": "09-002-0104-I1F01-03-02-059-7a3f",
+    "passport_id": "09-002-0104-I1F01-03-02-059-7a3f",
+    "question": "Paint proqramında '256 Color Bitmap' rejimində saxlanan şəklin rəng dərinliyi necə olar?",
+    "options": [
+      "4 bit",
+      "16 bit",
+      "24 bit",
+      "8 bit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rənglərin sayı 256-dırsa, n=8 olur (2^8 = 256). Deməli, belə fayllarda hər piksel yaddaşda 8 bit (1 bayt) yer tutur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "4. Qrafik informasiyanın kodlaşdırılması",
+    "_duplicate_of": "İnformatika 9",
+    "context_chunk": "• İnformasiyanın hansı növləri var?\n• Kompüterdə mətn informasiyası necə kodlaşdırılır?\nDamalı vərəqdə aşağıdakı cədvəllərin sətir və\nsütunlarının sayına uyğun düzbucaqlılar çəkin.\n“1” olan xanalara uyğun\ndamaları kağızda\nmüəyyənləşdirin və\nhəmin damaları\nrəngləyin.\nAlınan görüntüləri\nmüqayisə edin.\nNəticəni müzakirə edək:\n- Hansı cədvələ uyğun görüntü daha “dəqiq” alındı? Sizcə, niyə? İkinci görüntünü\ndaha da “dəqiq” vermək üçün nə etmək lazımdır?\n- 0 və 1-lərdən ibarət cədvəlləri uyğun görüntülərin kodu hesab etmək olarmı?\nTəqdimolunma formasından (rastr və ya vektor) asılı olmayaraq, qrafik informasiya\nkompüterin ekranında\nrastr formatında\nkodlaşdırılır. Bu zaman hər bir görüntü\nrəngli nöqtələrdən - piksellərdən təşkil edilmiş düzbucaqlı cədvəldən ibarət olur.\nHər bir nöqtənin rəngi və parlaqlığı ədədlə ifadə olunur ki, bu da qrafik\ninformasiyanı təqdim etmək üçün ikilik koddan istifadə etməyə imkan verir.\nGörüntünün bir pikselinin rəngini kodlaşdırmaq üçün istifadə olunan bitlərin\nmiqdarına\nrəng dərinliyi\ndeyilir. Bildiyiniz kimi, 1 bitlə 2 rəngi\n(2), 2 bitlə 4 rəngi\n(2), 4 bitlə 16 rəngi (2\n), 8 bitlə 256 rəngi (2\n)kodlaşdırmaq\nmümkündür.\n24bit(16 777 216 rəng)\n8 bit (256 rəng)\n4 bit (16 rəng) Rəqəmsal videoda rəng dərinliyi üçün 15 bit yetərli olur. Rənglərin gerçək foto\nkeyfiyyətində olması üçün ən azı 24 bit lazımdır.\nQrafik faylın həcmini tapmaq üçün onun uzunluğunda və enində olan piksellərin\nsayını (uyğun olaraq, a və b) və rəngin dərinliyini (\n) bilmək lazımdır. O"
+  },
+  {
+    "id": "09-003-0101-H1F01-02-02-007-9f63",
+    "passport_id": "09-003-0101-H1F01-02-02-007-9f63",
+    "question": "ABŞ-də 1861-1865-ci illəri əhatə edən Vətəndaş müharibəsinin əsas səbəbi nə idi?",
+    "options": [
+      "Yalnız dini ziddiyyətlər.",
+      "Alyaska torpaqlarının Rusiyaya satılması üzrə narazılıqlar.",
+      "Şimal sənaye burjuaziyası ilə Cənub quldarlıq tərəfdarları arasında mübarizənin kəskinləşməsi.",
+      "Xarici müdaxilə (İngiltərənin yenidən hücumu)."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə göstərilir: 'Vətəndaş müharibəsinin əsas səbəbi sənaye burjuaziyası ilə quldarlıq tərəfdarları arasında mübarizənin kəskinləşməsi idi.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Amerika Birləşmiş Ştatları",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "ABŞ\n12,4\n8,4"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-026-a56f",
+    "passport_id": "09-003-0102-H1F01-01-01-026-a56f",
+    "question": "I Napoleonun Avropa üzərindəki hegemonluğuna (işğallarına) son qoyan və 1815-ci ildə onun qəti məğlubiyyəti ilə nəticələnən sonuncu böyük döyüş hansıdır?",
+    "options": [
+      "Vaterloo döyüşü",
+      "Sedan döyüşü",
+      "Borodino döyüşü",
+      "Austerlits döyüşü"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdəki ardıcıllıq: '1815-ci ilin yazında əsirlikdən qaçan Napoleon Fransada hakimiyyətini bərpa etdi. Lakin Vaterloo döyüşündə müttəfiqlərə məğlub olaraq yenidən sürgün edildi.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "\"Məğlubedilməz Armada\", Oliver Kromvel, Stüartlar,\nPuritanlar, aqrar inqilab, sənayə çevrilişi, 1789-cu\nil Fransa inqilabı, İnsan və Vətəndaş Hüquqları\nBəyannaməsi, direktoriya"
+  },
+  {
+    "id": "09-003-0103-H1F01-02-02-040-e662",
+    "passport_id": "09-003-0103-H1F01-02-02-040-e662",
+    "question": "İtaliyanın birləşdirilməsinin başa çatması və paytaxtın köçürülməsi hansı tarixi hadisə ilə rəsmiləşdi?",
+    "options": [
+      "1882-ci ildə Üçlər ittifaqının yaradılması ilə.",
+      "1859-cu ildə Lombardiyanın Avstriyadan azad edilməsi ilə.",
+      "1870-ci ildə Romanın tutulması və paytaxt elan edilməsi ilə.",
+      "1861-ci ildə İtaliya krallığının yaradılması ilə."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətn: '1870-ci ildə Romanın tutulması nəticəsində İtaliyanın birləşdirilməsi başa çatdı. Roma İtaliya krallığının paytaxtı oldu.'",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": ") beynəlxalq konfrans keçirildi. Konfransda Sovet\nRusiyası və Almaniya da iştirak edirdi. Sovet Rusiyası çar\nhakimiyyətinin dövründə alınmış borcların ona aid olmadığını\nbildirdi. Konfransın gedişində sovet Rusiyası və Almaniya arasında 2500 nəfər\n1975-ci il, avqust"
+  },
+  {
+    "id": "09-003-0107-H1F01-01-01-095-9cea",
+    "passport_id": "09-003-0107-H1F01-01-01-095-9cea",
+    "question": "1915-1916-cı illərdə ingilis-fransız donanmasının İstanbulu ələ keçirmək məqsədilə hücum etdiyi, lakin Osmanlı ordusunun qəhrəmanlığı və Seyid onbaşının fədakarlığı ilə məğlub edildiyi cəbhə/döyüş necə adlanır?",
+    "options": [
+      "Marna döyüşü",
+      "Çanaqqala döyüşü",
+      "Sarıqamış döyüşü",
+      "Kutül-Amarə döyüşü"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətn: 'Osmanlı dövlətinin diqqətini Qafqaz cəbhəsindən yayındırmaq üçün ingilis-fransız donanması Çanaqqala boğazına yeridildi... Çanaqqala döyüşündə böyük qəhrəmanlıq göstərən Osmanlı ordusu qalib gəldi.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "7. Birinci dünya müharibəsi",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "h a y d u t\n(tüfənglə nişan alır)\nAltınları ver!..\ni k i n c i\nh a y d u t\n(xəncərini Arifin\nköksünə dayar) Ümumittifaq Türkoloji Qurultay\ntürk xalqlarının\nmədəni həyatında mühüm rol oynayan\nböyük hadisə oldu.\n1929-cu ildən Azərbaycan SSR-in ərəb qrafikalı\nəlifbadan yeni əlifbaya keçməsi rəsmən\nelan edildi. “Tiryək” müharibəsi\nadlanan müharibə başladı. Çinin məğlubiyyəti"
+  },
+  {
+    "id": "09-003-0108-H1F01-01-01-114-2af8",
+    "passport_id": "09-003-0108-H1F01-01-01-114-2af8",
+    "question": "XIX əsrdə qazax realist ədəbiyyatının görkəmli nümayəndəsi olan, şeirləri ilə cəmiyyətdəki ədalətsizliyə qarşı mübarizə aparan ədib kimdir?",
+    "options": [
+      "Çingiz Aytmatov",
+      "Kenesar xan",
+      "Abay Kunanbayev",
+      "Muxtar Auezov"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mətn: 'Qazax realist ədəbiyyatının görkəmli nümayəndəsi Abay Kunanbayev şeirləri vasitəsilə cəmiyyətdəki qüsurlara və ədalətsizliyə qarşı mübarizə aparırdı.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "8. Mədəniyyət",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "Milli Elmlər Akademiyası, Dövlət İmtahan\nMərkəzi, TÜRKSOY, UNESCO, ISESCO\nA\nzərbaycan xalqı öz qədim və zəngin\nmədəniyyəti ilə dünya miqyasında tanınır.\nMüstəqil Azərbaycan Respublikasının\nmövcud olduğu müddətdə də mədəniyyətin\nmüxtəlif sahələrində ciddi irəliləyişlərə\nnail olunmuşdur."
+  },
+  {
+    "id": "09-003-0101-H1F01-02-02-002-eb22",
+    "passport_id": "09-003-0101-H1F01-02-02-002-eb22",
+    "question": "ABŞ-nin 3-cü prezidenti Tomas Ceffersonun hakimiyyəti (1801-1809) illərində həyata keçirilən tədbirlərə aid DEYİL:",
+    "options": [
+      "Seçkilərdə iştirak üçün əmlak senzi ləğv olundu.",
+      "Alyaska ərazisi Rusiya imperiyasından satın alındı.",
+      "Qərbdəki boş torpaqların məskunlaşdırılması geniş vüsət aldı.",
+      "Ölkəyə qul gətirilməsi qadağan olundu."
+    ],
+    "correctAnswer": 3,
+    "explanation": "T.Ceffersonun dövründə Luiziana Fransadan satın alınmışdı (Alyaska yox). Alyaskanın satın alınması isə Vətəndaş müharibəsindən sonra həyata keçirildi. Digər variantlar birbaşa Ceffersonun islahatlarıdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Amerika Birləşmiş Ştatları",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "ABŞ\n12,4\n8,4"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-020-2a9e",
+    "passport_id": "09-003-0102-H1F01-01-01-020-2a9e",
+    "question": "1867-ci ildə qəbul edilən aktla İngiltərə tərəfindən Kanadaya verilən özünüidarə hüququ necə adlanır?",
+    "options": [
+      "Protektorat",
+      "Dominion",
+      "Mandat",
+      "Kondominium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə tərifi var: '1867-ci ildə qəbul edilən aktla İngiltərə Kanadaya dominion hüququ verdi. Dominion özünüidarə hüququ almış müstəmləkə ölkədir.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "\"Məğlubedilməz Armada\", Oliver Kromvel, Stüartlar,\nPuritanlar, aqrar inqilab, sənayə çevrilişi, 1789-cu\nil Fransa inqilabı, İnsan və Vətəndaş Hüquqları\nBəyannaməsi, direktoriya"
+  },
+  {
+    "id": "09-003-0102-H1F01-01-01-029-6da2",
+    "passport_id": "09-003-0102-H1F01-01-01-029-6da2",
+    "question": "1871-ci il Fransa-Prussiya müharibəsinin nəticəsində Fransa tərəfindən Almaniya imperiyasına güzəştə gedilən vilayətlər hansılar idi?",
+    "options": [
+      "Alyaska və Havay",
+      "Kataloniya və Bask",
+      "Lombardiya və Venesiya",
+      "Elzas və Lotaringiya"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə konkret yazılıb: 'Sülhün şərtlərinə görə Fransa Elzas və Lotaringiya vilayətlərini Almaniyaya verməli və təzminat ödəməli idi.' Bu sonradan Fransada revanşizm hərəkatına səbəb oldu.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Böyük Britaniya və Fransa",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": "\"Məğlubedilməz Armada\", Oliver Kromvel, Stüartlar,\nPuritanlar, aqrar inqilab, sənayə çevrilişi, 1789-cu\nil Fransa inqilabı, İnsan və Vətəndaş Hüquqları\nBəyannaməsi, direktoriya"
+  },
+  {
+    "id": "09-003-0103-H1F01-01-01-037-b93d",
+    "passport_id": "09-003-0103-H1F01-01-01-037-b93d",
+    "question": "1905-ci ildə Almaniyanın Baş qərargah rəisi tərəfindən hazırlanmış və 'qısa müddət ərzində Fransanı məğlub etdikdən sonra Rusiya ilə müharibənin aparılmasına' əsaslanan hərbi plan necə adlanırdı?",
+    "options": [
+      "Sedan planı",
+      "Mərakeş planı",
+      "Bismark planı",
+      "Şliffen planı"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Dərslikdə xüsusi vurğulanır: '1905-ci ildə A.Şliffenin rəhbərliyi ilə ... “Şliffen planı” qısa müddət ərzində Fransanı məğlub etdikdən sonra Rusiya ilə müharibənin aparılmasına əsaslanırdı.'",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": ") beynəlxalq konfrans keçirildi. Konfransda Sovet\nRusiyası və Almaniya da iştirak edirdi. Sovet Rusiyası çar\nhakimiyyətinin dövründə alınmış borcların ona aid olmadığını\nbildirdi. Konfransın gedişində sovet Rusiyası və Almaniya arasında 2500 nəfər\n1975-ci il, avqust"
+  },
+  {
+    "id": "09-003-0103-H1F01-04-03-041-94eb",
+    "passport_id": "09-003-0103-H1F01-04-03-041-94eb",
+    "question": "XIX əsrin birinci yarısında həm Almaniya, həm də İtaliyanın birləşdirilməsi qarşısında duran ən əsas 'xarici (Avropalı)' maneə hansı dövlət idi?",
+    "options": [
+      "Osmanlı imperiyası",
+      "Avstriya imperiyası",
+      "İngiltərə",
+      "Rusiya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətnin təhlili göstərir ki, həm Almaniyanın birləşməsi Prussiya-Avstriya (1866) müharibəsi hesabına baş verdi, həm də İtaliyanın ən inkişaf etmiş hissələri (Lombardiya, Venesiya) Avstriyanın hakimiyyəti altında idi. Yəni hər iki dövlətin yaranmasına Avstriya böyük maneə idi.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": ") beynəlxalq konfrans keçirildi. Konfransda Sovet\nRusiyası və Almaniya da iştirak edirdi. Sovet Rusiyası çar\nhakimiyyətinin dövründə alınmış borcların ona aid olmadığını\nbildirdi. Konfransın gedişində sovet Rusiyası və Almaniya arasında 2500 nəfər\n1975-ci il, avqust"
+  },
+  {
+    "id": "09-003-0103-H1F01-04-03-045-8d34",
+    "passport_id": "09-003-0103-H1F01-04-03-045-8d34",
+    "question": "Aşağıdakı hadisələrdən hansı ardıcıllıqla ən sonda baş vermişdir?",
+    "options": [
+      "Üçlər ittifaqının yaradılması (1882)",
+      "Sadova döyüşü (1866)",
+      "Romanın tutulması və İtaliyanın birləşdirilməsinin başa çatması (1870)",
+      "İtaliya krallığının yaradılması (1861)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndəki xronologiyaya əsasən: 1861 (İtaliya krallığı) -> 1866 (Sadova döyüşü, Venesiyanın İtaliyaya verilməsi) -> 1870 (Romanın tutulması) -> 1882 (Üçlər ittifaqının yaradılması). Ən sonda olan Üçlər ittifaqının qurulmasıdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Almaniya və İtaliya",
+    "_duplicate_of": "Ümumi tarix 9",
+    "context_chunk": ") beynəlxalq konfrans keçirildi. Konfransda Sovet\nRusiyası və Almaniya da iştirak edirdi. Sovet Rusiyası çar\nhakimiyyətinin dövründə alınmış borcların ona aid olmadığını\nbildirdi. Konfransın gedişində sovet Rusiyası və Almaniya arasında 2500 nəfər\n1975-ci il, avqust"
+  }
+]

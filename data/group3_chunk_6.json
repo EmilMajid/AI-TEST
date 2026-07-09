@@ -1,0 +1,830 @@
+[
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 410,
+    "q": "Ergänzen Sie das Verb \"tragen\" in der richtigen Form:\nIch ___ heute eine Jeans.",
+    "options": [
+      "trägt",
+      "trage",
+      "tragen",
+      "trägst"
+    ],
+    "expl": "\"Ich\" (mən) şəxs əvəzliyi ilə \"tragen\" feli sonuna \"-e\" şəkilçisi qəbul edərək \"trage\" formasına düşür."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 425,
+    "q": "Ergänzen Sie! (Tamamlayın!)\nIch möchte _______ Pullover kaufen.",
+    "options": [
+      "der",
+      "eine",
+      "ein",
+      "einen"
+    ],
+    "expl": "'Pullover' sözünün artikli 'der'-dir. Təsirlik halda (Akkusativ) 'einen' olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 426,
+    "q": "Ergänzen Sie! (Tamamlayın!)\n_______ du eine Bluse kaufen?",
+    "options": [
+      "Möchtest",
+      "Möchtet",
+      "Möchten",
+      "Möchte"
+    ],
+    "expl": "'du' şəxsinə görə 'möchten' modal feili 'möchtest' formasında işlənir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 444,
+    "q": "Düzgün inkar formasını seçin: \"Das ist ... Hund, das ist ein Löwe.\"",
+    "options": [
+      "nichts",
+      "nicht",
+      "kein",
+      "keine"
+    ],
+    "expl": "\"Hund\" isimdir və kişi cinsindədir (der Hund). İsimləri inkar edərkən \"kein/keine\" istifadə olunur. \"Der Hund\" üçün \"kein\" yazılmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 458,
+    "q": "Finde den Plural von \"das Heft\"! (\"Das Heft\" sözünün cəmini tap)",
+    "options": [
+      "die Hefte",
+      "die Heft",
+      "die Hefts",
+      "die Heften"
+    ],
+    "expl": "\"Das Heft\" (dəftər) sözünün cəm forması sonuna '-e' şəkilçisi əlavə olunmaqla \"die Hefte\" (dəftərlər) kimi düzəlir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 467,
+    "q": "Wir ___ gestern viel Zeit.",
+    "options": [
+      "waren",
+      "hatten",
+      "hattet",
+      "haben"
+    ],
+    "expl": "\"Gestern\" keçmiş zamana işarə edir. \"wir\" (biz) şəxsinə görə \"haben\" (malik olmaq) feilinin keçmiş zaman forması \"hatten\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 470,
+    "q": "Früher ___ meine Familie ein kleines Auto.",
+    "options": [
+      "hat",
+      "war",
+      "hatte",
+      "hatten"
+    ],
+    "expl": "\"Früher\" (əvvəllər) keçmiş zaman bildirir. \"Familie\" tək isim olduğu üçün \"hatte\" işlənir (çox vaxt cəm qəbul edilib \"hatten\" yazılması xətası edilir)."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 472,
+    "q": "Heute habe ich ein Buch, aber gestern ___ ich keins.",
+    "options": [
+      "war",
+      "bin",
+      "habe",
+      "hatte"
+    ],
+    "expl": "Birinci hissə indiki (heute), ikinci hissə isə keçmiş (gestern) zamandadır. \"ich\" (mən) üçün \"haben\" feilinin keçmişi \"hatte\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 491,
+    "q": "Was ist das Gegenteil von 'gestern'? ('gestern' sözünün əksi nədir?)",
+    "options": [
+      "heute",
+      "die Woche",
+      "morgen",
+      "die Nacht"
+    ],
+    "expl": "'Gestern' (dünən) sözünün əksi 'morgen' (sabah) sözüdür. 'Heute' bu gün deməkdir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 496,
+    "q": "Was ___ du am Montag in der Schule?",
+    "options": [
+      "hast",
+      "hattest",
+      "hattet",
+      "hatte"
+    ],
+    "expl": "\"du\" (sən) şəxsi üçün \"haben\" feilinin keçmiş zaman forması \"hattest\" olur. Cümlədə keçmiş zamana aid zaman zərfi olmadığı halda belə dialoq və mətn daxilində tez-tez istifadə edilir."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 501,
+    "q": "Kinder, ___ ihr gestern Hausaufgaben?",
+    "options": [
+      "hattet",
+      "hattest",
+      "hatten",
+      "habt"
+    ],
+    "expl": "\"ihr\" (siz - cəm) şəxsi üçün Präteritum-da \"hattet\" forması istifadə edilir. Distraktor olaraq indiki zaman \"habt\" qoyulub, lakin \"gestern\" (dünən) olduğuna görə keçmiş zaman olmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 506,
+    "q": "Die Schüler ___ gestern eine Prüfung in Englisch.",
+    "options": [
+      "hattet",
+      "hatte",
+      "haben",
+      "hatten"
+    ],
+    "expl": "\"Die Schüler\" (şagirdlər) cəmdədir (sie - onlar), buna görə də cəm forması olan \"hatten\" istifadə olunmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 509,
+    "q": "Was hattest du heute? - Ich ___ Kunst. Und was ___ du?",
+    "options": [
+      "habe / hast",
+      "hattest / hatte",
+      "hatte / hattest",
+      "hatten / hattet"
+    ],
+    "expl": "Birinci boşluq \"ich\" üçün \"hatte\", ikinci boşluq isə \"du\" üçün \"hattest\" olmalıdır. Hər ikisi keçmiş zamandadır."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 515,
+    "q": "Das ist Ali. _____ Augen sind braun.",
+    "options": [
+      "Ihr",
+      "Seine",
+      "Ihre",
+      "Sein"
+    ],
+    "expl": "Ali oğlandır, ona görə \"sein\" istifadə olunur. \"Augen\" cəmdə olduğu üçün sonluq \"e\" qəbul edir: \"Seine\"."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 523,
+    "q": "Ordne zu: \"Das ist meine Mutter. _____ Augen sind braun und _____ Haare sind blond.\"",
+    "options": [
+      "Ihr / ihr",
+      "Seine / seine",
+      "Ihre / ihr",
+      "Ihre / ihre"
+    ],
+    "expl": "Ana (Mutter) qadın cinsidir, yiyəlik əvəzliyi \"ihr\" olur. \"Augen\" və \"Haare\" hər ikisi cəmdədir, ona görə də hər iki yerdə \"Ihre\" istifadə olunur."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 551,
+    "q": "Welche Antwort passt NICHT zur Frage?\n- Wie geht es dir?",
+    "options": [
+      "Ich komme aus Baku.",
+      "Es geht.",
+      "Danke, gut.",
+      "Sehr gut, danke."
+    ],
+    "expl": "\"Wie geht es dir?\" (Necəsən?) sualına əhval-ruhiyyə ilə bağlı cavab verilir, \"Ich komme aus Baku\" isə mənşəyi bildirir və bu suala uyğun deyil."
+  },
+  {
+    "cat": "Alman dili 5 (əsas xarici dil)",
+    "array_index": 559,
+    "q": "Ergänze das Verb. Wir ___ aus Aserbaidschan.",
+    "options": [
+      "kommst",
+      "komme",
+      "kommen",
+      "kommt"
+    ],
+    "expl": "I şəxsin cəmində (Wir) feil məsdər formasında qalır və -en şəkilçisi qəbul edir: \"Wir kommen\"."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 0,
+    "q": "Wie sagt man am Morgen?",
+    "options": [
+      "Guten Morgen!",
+      "Tschüs!",
+      "Gute Nacht!",
+      "Guten Tag!"
+    ],
+    "expl": "Səhərlər salamlaşarkən 'Guten Morgen' deyilir. 'Guten Tag' gündüzlər işlənir, 'Gute Nacht' gecəniz xeyrə qalsın deməkdir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 10,
+    "q": "Welche Antwort ist grammatikalisch richtig? \"Wer ist das?\"",
+    "options": [
+      "Das ist Herr Müller.",
+      "Das bist mein Freund.",
+      "Ich bin Herr Müller.",
+      "Er heißen Herr Müller."
+    ],
+    "expl": "\"Wer ist das?\" (Bu kimdir?) sualına \"Das ist...\" (Bu ...-dır) şəklində cavab verilir. \"Das ist Herr Müller.\" tamamilə doğru quruluşdur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 33,
+    "q": "Was sagst du, wenn du gehst? (Gedərkən nə deyirsən?)",
+    "options": [
+      "Guten Tag!",
+      "Hallo!",
+      "Tschüs!",
+      "Wer bist du?"
+    ],
+    "expl": "Sağollaşarkən 'Tschüs!' (Hələlik/Sağ ol) istifadə olunur. 'Hallo' və 'Guten Tag' salamlamaq üçündür."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 37,
+    "q": "Finde den Fehler im Satz! 'Ich heiße bist Hesen.' (Cümlədəki səhvi tapın!)",
+    "options": [
+      "bist",
+      "heiße",
+      "Ich",
+      "Hesen"
+    ],
+    "expl": "'Ich heiße Hesen' və ya 'Ich bin Hesen' demək lazımdır. Həm 'heiße', həm də 'bist' eyni cümlədə yanaşı işlənə bilməz, 'bist' burada yersizdir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 55,
+    "q": "Dialoqu tamamlayın:\n- Ist das eine Schultasche?\n- Nein, das ist ___ Schultasche. Das ist ___ Rucksack.",
+    "options": [
+      "nicht / ein",
+      "keine / ein",
+      "keine / eine",
+      "kein / eine"
+    ],
+    "expl": "\"Schultasche\" qadın cinsində olduğu üçün inkarı \"keine\" olur. \"Rucksack\" kişi cinsində (der Rucksack) olduğu üçün təsdiqi \"ein\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 66,
+    "q": "Woher kommst du? - Ich _____ aus Aserbaidschan.",
+    "options": [
+      "komme",
+      "kommst",
+      "kommen",
+      "kommt"
+    ],
+    "expl": "Birinci şəxsin təkində (ich) 'kommen' (gəlmək) feili sonuna '-e' şəkilçisi qəbul edir: ich komme."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 71,
+    "q": "Was ist die Pluralform von 'das Buch'?",
+    "options": [
+      "die Bücher",
+      "die Büch",
+      "die Buchen",
+      "die Buchs"
+    ],
+    "expl": "'das Buch' (kitab) sözünün cəm forması qaydasızdır və 'die Bücher'-dir. Həm umlaut (ü), həm də '-er' şəkilçisi qəbul edir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 75,
+    "q": "Wie heißt „Ata“ auf Deutsch?",
+    "options": [
+      "der Opa",
+      "der Vater",
+      "der Bruder",
+      "die Mutter"
+    ],
+    "expl": "„Ata“ alman dilində „der Vater“ deməkdir. Digər sözlər: qardaş (der Bruder), ana (die Mutter), baba (der Opa)."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 79,
+    "q": "Welches Wort passt? „Mənim babam“",
+    "options": [
+      "meine Opa",
+      "mein Oma",
+      "meine Oma",
+      "mein Opa"
+    ],
+    "expl": "„Opa“ kişi cinsindədir (der Opa), ona görə də yiyəlik əvəzliyi sonluqsuz olaraq „mein“ olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 156,
+    "q": "Ist das ein Kuli? - Nein, das ist _____ Kuli.",
+    "options": [
+      "keinen",
+      "keine",
+      "kein",
+      "nicht"
+    ],
+    "expl": "İsimləri inkar edərkən \"kein/keine\" istifadə olunur. \"Der Kuli\" kişi cinsində olduğu üçün nominativ halda \"kein\" yazılır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 157,
+    "q": "Das sind zwei _____ .",
+    "options": [
+      "Buch",
+      "Buchen",
+      "Bücher",
+      "Buchs"
+    ],
+    "expl": "\"Das Buch\" (kitab) isminin cəm forması \"die Bücher\"-dir. \"Zwei\" (iki) sayı ismin cəmdə olmasını tələb edir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 166,
+    "q": "Ergänze das Verb (Feli tamamlayın): Ich _____ einen Bleistift.",
+    "options": [
+      "haben",
+      "habe",
+      "hat",
+      "hast"
+    ],
+    "expl": "\"Ich\" (mən) şəxs əvəzliyi ilə \"haben\" (malik olmaq) feli \"habe\" formasında işlənir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 170,
+    "q": "Ergänze den Artikel (Artikli tamamlayın): Ich habe _____ Kuli. (der Kuli)",
+    "options": [
+      "eine",
+      "einen",
+      "ein",
+      "dem"
+    ],
+    "expl": "\"Kuli\" kişi cinsindədir (der). Təsirlik halda (Akkusativ) kişi cinsinin qeyri-müəyyən artikli \"einen\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 175,
+    "q": "Ergänze die Lücken im Dialog:\n- Was hast du?\n- Ich habe ___ Buch und ___ Kuli.",
+    "options": [
+      "ein / ein",
+      "ein / einen",
+      "eine / einen",
+      "einen / ein"
+    ],
+    "expl": "\"Buch\" orta cinsdədir (das Buch -> ein Buch), \"Kuli\" isə kişi cinsindədir (der Kuli -> einen Kuli)."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 218,
+    "q": "Ergänze das Verb! \"Ich ... Deutsch und Englisch.\"",
+    "options": [
+      "sprechen",
+      "sprecht",
+      "spricht",
+      "spreche"
+    ],
+    "expl": "\"Sprechen\" (danışmaq) feli 1-ci şəxsin təkində (Ich) \"-e\" şəkilçisi qəbul edir: \"Ich spreche\"."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 234,
+    "q": "Welches Wort ist im Satz falsch konjugiert? 'Mein Freund spielen gern Tennis.'",
+    "options": [
+      "Mein",
+      "Freund",
+      "gern",
+      "spielen"
+    ],
+    "expl": "'Mein Freund' 3-cü şəxsin təkində (er - o) olduğuna görə xəbər 'spielt' olmalıdır, 'spielen' səhvdir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 245,
+    "q": "\"Der Schuh\" sözünün cəm forması hansıdır?",
+    "options": [
+      "die Schühe",
+      "die Schuh",
+      "die Schuhe",
+      "die Schuhen"
+    ],
+    "expl": "\"Der Schuh\" (ayaqqabı) sözünün cəm forması \"die Schuhe\"-dir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 253,
+    "q": "Nöqtələrin yerinə hansı fel forması uyğundur? Lisa und Tom _____ neue Schuhe.",
+    "options": [
+      "trägt",
+      "tragen",
+      "trägst",
+      "trage"
+    ],
+    "expl": "Lisa və Tom cəmdədir (onlar - sie), buna görə də cəm forması üçün felin \"tragen\" məsdər forması istifadə olunur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 260,
+    "q": "Ergänzen Sie! \"Das ist ... Bluse.\"",
+    "options": [
+      "meines",
+      "meinen",
+      "mein",
+      "meine"
+    ],
+    "expl": "\"Die Bluse\" qadın cinsində olduğu üçün (Feminimum) yiyəlik əvəzliyi şəkilçi qəbul edərək \"meine\" olur. \"Mein\" isə kişi və orta cins üçündür."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 263,
+    "q": "Ergänzen Sie! \"Das sind ... Schuhe. Sie sind sehr schön.\"",
+    "options": [
+      "meine",
+      "meines",
+      "meinen",
+      "mein"
+    ],
+    "expl": "\"Schuhe\" (ayaqqabılar) cəmdədir. Cəm isimlərin (Plural) qarşısında yiyəlik əvəzliyi adlıq halda \"meine\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 264,
+    "q": "Was passt nicht in die Reihe?",
+    "options": [
+      "gelb",
+      "blau",
+      "klein",
+      "rot"
+    ],
+    "expl": "\"Rot, blau, gelb\" rəng bildirən sözlərdir. \"Klein\" (kiçik) isə ölçü bildirən sifətdir, fərqli olan budur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 271,
+    "q": "Ergänzen Sie das Verb richtig: Ich ___ einen Kuli.",
+    "options": [
+      "braucht",
+      "brauchst",
+      "brauchen",
+      "brauche"
+    ],
+    "expl": "\"Ich\" (mən) şəxsinə görə \"brauchen\" feli \"brauche\" şəklində hallanır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 272,
+    "q": "Was ist richtig? Ich brauche ___ Bleistift.",
+    "options": [
+      "eine",
+      "ein",
+      "der",
+      "einen"
+    ],
+    "expl": "\"Bleistift\" (karandaş) kişi cinsindədir (der). \"Brauchen\" feli Akkusativ (Təsirlik hal) tələb edir, buna görə kişi cinsində artikl \"einen\" olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 274,
+    "q": "Wie fragt man richtig?",
+    "options": [
+      "Was brauchen du?",
+      "Was braucht du?",
+      "Was brauchst du?",
+      "Was brauche du?"
+    ],
+    "expl": "\"Du\" (sən) şəxsinə görə \"brauchen\" feli \"brauchst\" olmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 277,
+    "q": "Hast du einen Radiergummi? - Nein, ich habe ___ Radiergummi.",
+    "options": [
+      "kein",
+      "keine",
+      "nicht",
+      "keinen"
+    ],
+    "expl": "\"Radiergummi\" kişi cinsindədir (der) və cümlədə Akkusativ (təsirlik) halındadır. Buna görə inkar forması \"keinen\" işlənir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 281,
+    "q": "Wählen Sie die richtige negative Form: Brauchst du ein Lineal? - Nein, ich brauche ___ Lineal.",
+    "options": [
+      "kein",
+      "keinen",
+      "keine",
+      "nicht"
+    ],
+    "expl": "\"Lineal\" orta cinsdədir (das). Orta cinsin Akkusativ halında ismin inkar artikli \"kein\" olur. Felin inkarı üçün \"nicht\" istifadə olunur, lakin burda ismin önündə inkar qoyulur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 284,
+    "q": "Ergänzen Sie den Dialog:\n- ___ du eine Schere?\n- Ja, ich ___ ___ Schere.",
+    "options": [
+      "Brauchst / brauche / eine",
+      "Braucht / brauchen / eine",
+      "Brauchst / brauche / ein",
+      "Braucht / brauche / einen"
+    ],
+    "expl": "Suala görə 2-ci şəxsin təki (brauchst), cavaba görə 1-ci şəxsin təki (brauche) fel forması lazımdır. \"Schere\" qadın cinsi olduğu üçün Akkusativdə artikl \"eine\" olaraq qalır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 301,
+    "q": "Ergänzen Sie das Verb: \"Ich _____ aus Aserbaidschan.\" (Feli tamamlayın)",
+    "options": [
+      "kommen",
+      "kommt",
+      "komme",
+      "kommst"
+    ],
+    "expl": "\"Ich\" (mən) şəxsi üçün \"kommen\" feli \"-e\" şəkilçisi alır: \"komme\"."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 317,
+    "q": "Ergänze das Verb richtig! Ich ___ gern Pizza.",
+    "options": [
+      "esse",
+      "esst",
+      "isst",
+      "essen"
+    ],
+    "expl": "'Ich' (mən) şəxs əvəzliyi ilə 'essen' feli 'esse' formasında işlənir. Qaydasız fel olsa da, birinci şəxsin təkində kök dəyişmir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 323,
+    "q": "Ich trinke ___ Milch.",
+    "options": [
+      "keine",
+      "kein",
+      "nicht",
+      "keinen"
+    ],
+    "expl": "'Milch' isimdir və qadın cinsindədir (die). İsimləri inkar edərkən 'kein' sözündən istifadə olunur və qadın cinsində Akkusativ halda bu, 'keine' olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 345,
+    "q": "\"Su\" sözünün almanca qarşılığı hansıdır?",
+    "options": [
+      "die Milch",
+      "der Tee",
+      "das Wasser",
+      "der Saft"
+    ],
+    "expl": "Alman dilində su \"das Wasser\" deməkdir. Meyvə şirəsi - der Saft, süd - die Milch, çay - der Tee."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 349,
+    "q": "Düzgün yazılmış sözü seçin.",
+    "options": [
+      "Wasser",
+      "Vasser",
+      "vasser",
+      "wasser"
+    ],
+    "expl": "Alman dilində bütün isimlər böyük hərflə yazılır. Buna görə də düzgün forma \"Wasser\" olmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 351,
+    "q": "Cümləni tamamlayın: \"Ich trinke gern Tee, aber ich trinke ... Wasser.\"",
+    "options": [
+      "lieber",
+      "sehr",
+      "gut",
+      "gern"
+    ],
+    "expl": "\"gern\" (həvəslə) zərfinin müqayisə dərəcəsi \"lieber\" (daha çox) sözüdür. Çayı xoşlayır, amma suyu daha üstün tutur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 362,
+    "q": "Ergänzen Sie: \"Ich brauche ein ... Milch.\"",
+    "options": [
+      "Gramm",
+      "Kilo",
+      "Pfund",
+      "Liter"
+    ],
+    "expl": "Süd (Milch) maye olduğu üçün ölçü vahidi kimi \"Liter\" istifadə edilir. Kilo, qram, və funt çəki vahidləridir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 371,
+    "q": "Welche Pluralform ist richtig?",
+    "options": [
+      "die Apfel",
+      "die Gurken",
+      "die Banane",
+      "die Kartoffels"
+    ],
+    "expl": "\"die Gurke\" sözünün cəmi \"die Gurken\" olur. Digərlərinin düzgün cəmi: die Äpfel, die Kartoffeln, die Bananen."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 385,
+    "q": "\"Sind das _______ Stifte?\" - \"Ja, das sind meine Stifte.\"",
+    "options": [
+      "deinen",
+      "deine",
+      "deiner",
+      "dein"
+    ],
+    "expl": "\"Stifte\" (qələmlər) cəm isimdir. Cəm isimlərin qarşısında yiyəlik əvəzliyi (dein) nominativ halda \"-e\" şəkilçisi qəbul edir: deine Stifte."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 441,
+    "q": "Ergänze den Satz: Wir _____ im Winter drei Wochen Ferien.",
+    "options": [
+      "hat",
+      "habe",
+      "haben",
+      "habt"
+    ],
+    "expl": "\"Wir\" (biz) cəm şəxs əvəzliyi ilə fel həmişə məsdər formasında, yəni \"haben\" olaraq qalır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 451,
+    "q": "Was ist richtig? 14 = ?",
+    "options": [
+      "zweiundvierzig",
+      "vierzehn",
+      "vierzig",
+      "zwölf"
+    ],
+    "expl": "Alman dilində 14 rəqəmi 'vierzehn' (4 + 10) kimi yazılır. 'Vierzig' 40, 'zwölf' isə 12 deməkdir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 455,
+    "q": "Ergänzen Sie: Woher _____ du?",
+    "options": [
+      "kommen",
+      "komme",
+      "kommst",
+      "kommt"
+    ],
+    "expl": "'kommen' feili 2-ci şəxsin təkində (du) '-st' şəkilçisi qəbul edir: kommst. Doğru sual 'Woher kommst du?' olmalıdır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 465,
+    "q": "Wie ___ du?",
+    "options": [
+      "heiß",
+      "heißen",
+      "heiße",
+      "heißt"
+    ],
+    "expl": "İkinci şəxsin təkində (du) feil '-st' şəkilçisi qəbul edir. Doğru forma 'heißt'-dir."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 474,
+    "q": "Ein Buch, zwei ___.",
+    "options": [
+      "Bucher",
+      "Büchers",
+      "Bücher",
+      "Büche"
+    ],
+    "expl": "'Das Buch' (kitab) sözünün cəm forması umlaut və '-er' şəkilçisi qəbul edərək 'die Bücher' olur."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 476,
+    "q": "Er ___ sehr gut Deutsch und Englisch.",
+    "options": [
+      "spreche",
+      "sprecht",
+      "spricht",
+      "sprichst"
+    ],
+    "expl": "'Sprechen' qüvvətli feildir. 3-cü şəxsin təkində (er/sie/es) kökündəki 'e' saiti 'i'-yə keçir və 'spricht' formasını alır."
+  },
+  {
+    "cat": "Alman dili 5 (ikinci xarici dil)",
+    "array_index": 479,
+    "q": "Ich ___ heute Fußball spielen.",
+    "options": [
+      "möchtet",
+      "möchtest",
+      "möchte",
+      "möchten"
+    ],
+    "expl": "'Möchten' modal feili birinci və üçüncü şəxsin təkində eyni formanı alır: ich möchte, er/sie/es möchte."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 8,
+    "q": "Səhra bitkisi olan kaktusun yarpaqlarının tikanlara çevrilməsi və gövdəsinin su ehtiyatı toplaması canlıların hansı qabiliyyətini göstərir?",
+    "options": [
+      "Çoxalma",
+      "Qıcıqlanma",
+      "Uyğunlaşma",
+      "İfrazat"
+    ],
+    "expl": "Uyğunlaşma (adaptasiya) canlıların yaşadıqları mühit şəraitinə (məsələn, sərt quraqlıq və ya soyuq) tab gətirərək sağ qalmasını və çoxalmasını təmin edən qazanılmış morfoloji və fizioloji xüsusiyyətlərdir."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 26,
+    "q": "Mikroskop altında tədqiq edilən obyekti kobud (sürətli) şəkildə tapmaq və tubusu nəzərəçarpacaq dərəcədə yuxarı-aşağı hərəkət etdirmək üçün hansı hissədən istifadə edilir?",
+    "options": [
+      "Mikrovint",
+      "Əşya kürsüsü",
+      "Revolver",
+      "Makrovint"
+    ],
+    "expl": "Makrovint (kobud tənzimləmə vinti) obyekti tədqiq edərkən xəyalı ilk dəfə tapmaq üçün tubusu (bəzi modellərdə əşya kürsüsünü) geniş diapazonda yuxarı-aşağı hərəkət etdirir."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 32,
+    "q": "Mikroskopda baxılan obyektin görüntüsünü netləşdirmək (fokuslamaq) üçün hansı hissədən istifadə olunur?",
+    "options": [
+      "Okulyar",
+      "Vintlər",
+      "Obyektiv",
+      "Əşya kürsüsü"
+    ],
+    "expl": "Vintlər (makrovint və mikrovint) tubusu və ya əşya kürsüsünü aşağı-yuxarı hərəkət etdirərək obyektin xəyalını aydınlaşdırmağa, yəni fokusu tənzimləməyə xidmət edir."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 115,
+    "q": "Sinir sistemi müxtəlif orqanlardan ibarətdir. Bu sistemdə yer alan baş beyin hansı təşkil səviyyəsinin nümayəndəsidir?",
+    "options": [
+      "Orqan",
+      "Hüceyrə",
+      "Orqanizm",
+      "Toxuma"
+    ],
+    "expl": "Baş beyin əsasən sinir toxumasından təşkil olunmuş, müəyyən forma, yerləşmə və mürəkkəb funksiyalara (məlumatı idarə etmək) malik olan spesifik bir orqandır."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 212,
+    "q": "Toxum cücərərkən rüşeym tumurcuğundan nə inkişaf edir?",
+    "options": [
+      "Əsas kök",
+      "Toxum qabığı",
+      "Yan köklər",
+      "Gələcək bitkinin yerüstü hissəsi (gövdə və yarpaqlar)"
+    ],
+    "expl": "Toxum cücərərkən rüşeym tumurcuğundan gələcək bitkinin yerüstü hissəsi - əsas gövdə və ilk yarpaqlar inkişaf edir. Bu hissə fotosintez prosesinin başlanması üçün vacibdir."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 330,
+    "q": "Həşəratların bədəni hansı əsas şöbələrdən təşkil olunmuşdur?",
+    "options": [
+      "Baş, ayaqlar və qanadlar",
+      "Baş, döş və qarıncıq",
+      "Baş, gövdə və quyruq",
+      "Baş-döş və qarıncıq"
+    ],
+    "expl": "Həşəratlar sinfinə aid olan canlıların bədəni təkamül nəticəsində 3 aydın seçilən şöbədən - baş, döş və qarıncıqdan ibarət formaya düşmüşdür."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 423,
+    "q": "Verilmiş qida zəncirində birinci dərəcəli istehlakçını (konsumenti) müəyyən edin: Yonca -> Dovşan -> Tülkü -> Qartal",
+    "options": [
+      "Tülkü",
+      "Qartal",
+      "Dovşan",
+      "Yonca"
+    ],
+    "expl": "Birinci dərəcəli istehlakçılar bilavasitə istehsalçılarla (bitkilərlə) qidalanan ot yeyən heyvanlardır. Bu zəncirdə yoncadan (istehsalçıdan) qidalanan dovşandır."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 529,
+    "q": "Zülalların monomerləri, yəni onların quruluşunu təşkil edən ən kiçik sadə tərkib hissələri hansılardır?",
+    "options": [
+      "Aminturşular",
+      "Yağ turşuları",
+      "Monosaxaridlər",
+      "Nukleotidlər"
+    ],
+    "expl": "Zülallar çoxsaylı aminturşu molekullarının birləşməsindən əmələ gələn irimolekullu üzvi birləşmələrdir. Nukleotidlər nuklein turşularının, monosaxaridlər mürəkkəb karbohidratların, yağ turşuları isə lipidlərin tərkib hissəsidir."
+  },
+  {
+    "cat": "Biologiya",
+    "array_index": 558,
+    "q": "Nukleotidin tərkibinə hansı üç komponent daxildir?",
+    "options": [
+      "Riboza şəkəri, oksigen atomu, hidrogen rabitəsi",
+      "Heksoza şəkəri, aminturşu, fosfat qrupu",
+      "Pentoza şəkəri, azotlu əsas, fosfat qrupu",
+      "Qliserol, yağ turşusu, azotlu əsas"
+    ],
+    "expl": "Nukleotidlər üç hissədən ibarətdir: beş karbon atomu olan pentoza şəkəri, azotlu əsas və fosfat qrupu. Aminturşu zülallara, qliserol və yağ turşuları isə lipidlərə aid olduğu üçün digər variantlar səhvdir."
+  }
+]

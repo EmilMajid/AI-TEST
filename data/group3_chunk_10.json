@@ -1,0 +1,758 @@
+[
+  {
+    "cat": "İnformatika 10",
+    "array_index": 13,
+    "q": "Hərbi dəniz qüvvələrində istifadə olunan qədim şifrləmə alqoritmi məlumatı aşağıdakı qaydada emal edir: orijinal məlumat 32 simvoldan ibarət olan baza əlifbasında yazılıb və uzunluğu 400 simvoldur. Təhlükəsizliyi artırmaq üçün şifrləmə prosesi (kodlaşdırma emalı) həyata keçirilir və orijinal məlumatın hər bir simvolu genişləndirilmiş 256 simvollu yeni əlifbanın bir simvolu ilə əvəzlənir (yəni simvolların ümumi sayı dəyişmir). Yeni şifrlənmiş faylı göndərdikdə onun informasiya həcmi ilkin məlumatın həcminə nəzərən nə qədər bit artacaq?",
+    "options": [
+      "1600 bit",
+      "800 bit",
+      "3200 bit",
+      "1200 bit"
+    ],
+    "expl": "1. Orijinal məlumatın əlifbası: N=32, Hartli düsturu ilə (2^i = 32) i=5 bit. Orijinal məlumatın həcmi = 400 simvol * 5 bit = 2000 bit. \n2. Şifrlənmiş məlumatın əlifbası: N=256, (2^i = 256) i=8 bit. Şifrlənmiş məlumatın həcmi = 400 simvol * 8 bit = 3200 bit. \n3. Həcm artımı = Yekun həcm - İlkin həcm = 3200 - 2000 = 1200 bit. (Distraktor olan 3200 yekun həcmdir, lakin sual nə qədər artdığını soruşur)."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 55,
+    "q": "Təhlükəsizlik sistemində daxil olan verilənləri şifrələmək üçün əvvəlcə simvolların ardıcıllığı əksinə dəyişdirilir (çeşidləmə), sonra isə hər bir simvol ingilis əlifbasında özündən 2 addım sonrakı simvolla əvəz edilir. Əgər sistemə giriş informasiyası kimi \"INFO\" parolu daxil edilərsə, bu parol yaddaşda (çıxış informasiyası kimi) hansı formada saxlanılacaq və sistemdə hansı informasiya prosesləri həyata keçirilir? (İngilis əlifbası üzrə irəliləyərkən: I->K, N->P, F->H, O->Q)",
+    "options": [
+      "PKQH; Proseslər: Qəbul -> Ötürmə -> Emal",
+      "KPHQ; Proseslər: Saxlanma -> Emal (çeşidləmə) -> Ötürmə",
+      "OFNI; Proseslər: Saxlanma -> Qəbul -> Emal",
+      "QHPK; Proseslər: Qəbul -> Emal (kodlaşdırma) -> Saxlanma"
+    ],
+    "expl": "İlkin parol \"INFO\" sistemə daxil edildikdə İnformasiyanın Qəbulu prosesi baş verir. Əvvəlcə sırası əksinə çevrilir (çeşidləmə/emal): OFNI. Sonra hər hərf 2 addım sürüşdürülür (kodlaşdırma/emal): O->Q, F->H, N->P, I->K. Nəticə QHPK alınır. Nəhayət yaddaşda Saxlanma prosesi baş verir. Deməli düzgün ardıcıllıq və kod QHPK və Qəbul -> Emal -> Saxlanma-dır."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 81,
+    "q": "1984-cü ildə Andi Hopkins tərəfindən yaradılmış və BIOS vasitəsilə yerinə yetirilən yazma və formatlama əməliyyatlarını xüsusi olaraq tutan utilit necə adlanırdı?",
+    "options": [
+      "CHK4BOMB.COM",
+      "Elk Cloner",
+      "Kaspersky AntiVirus",
+      "BOMBSQAD.COM"
+    ],
+    "expl": "Mətndə vurğulanır ki, CHK4BOMB yüklənən modulları təhlil edib şübhəli yerləri (məs. diskə yazma) aşkarlayırdı, BOMBSQAD.COM proqramı isə məhz BIOS vasitəsilə yerinə yetirilən yazma və formatlama əməliyyatlarını tuturdu."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 107,
+    "q": "Asimmetrik şifrləmə alqoritmlərinin simmetrik alqoritmlərdən (gizli açarlı şifrləmədən) əsas fərqi nədədir?",
+    "options": [
+      "Həm şifrləmə, həm də deşifrləmə üçün eyni vahid açardan istifadə edilir",
+      "Məlumatlar yalnız rəqəmsal sertifikatlar vasitəsilə kodlaşdırılır",
+      "Şifrlənmiş məlumatın oxunması üçün xüsusi proqram təminatı tələb olunmur",
+      "Şifrləmə və deşifrləmə üçün iki fərqli açardan (açıq və gizli) istifadə edilir"
+    ],
+    "expl": "Asimmetrik (açıq açarlı) alqoritmlərdə şifrləmə üçün açıq, deşifrləmə üçün isə gizli olmaqla iki ayrı-ayrı açardan istifadə edilir. Simmetrik şifrləmədə isə hər iki əməliyyat eyni (gizli) açarla aparılır."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 127,
+    "q": "Elektron kitabın hər səhifəsində 60 sətir və hər sətrində 80 simvol mövcuddur. Kitab 100 səhifədən ibarətdir və mətni tərtib etmək üçün standart ASCII kodlaşdırmasından (1 simvol = 1 bayt) istifadə edilmişdir. Bu kitabın yaddaşda tutduğu informasiya həcmi riyazi olaraq nə qədərdir?",
+    "options": [
+      "480000 bit",
+      "468.75 Kbayt",
+      "480.00 Kbayt",
+      "4.68 Mbayt"
+    ],
+    "expl": "1. Mətndəki ümumi simvolların sayı: 100 səhifə * 60 sətir * 80 simvol = 480.000 simvol. 2. ASCII əlifbasında hər simvol 1 bayt (8 bit) yer tutur. Beləliklə, sənədin ümumi həcmi 480.000 baytdır. 3. Baytı kilobayta (Kbayt) çevirmək üçün mütləq şəkildə 1024-ə bölmək lazımdır: 480.000 / 1024 = 468.75 Kbayt. Tənbəl qayda ilə 1000-ə bölmək (480 Kbayt) informasiya ölçü vahidləri baxımından yanlışdır."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 133,
+    "q": "Hərbi dəniz qüvvələrində istifadə olunan qədim şifrləmə alqoritmi məlumatı aşağıdakı qaydada emal edir: orijinal məlumat 32 simvoldan ibarət olan baza əlifbasında yazılıb və uzunluğu 400 simvoldur. Təhlükəsizliyi artırmaq üçün şifrləmə prosesi (kodlaşdırma emalı) həyata keçirilir və orijinal məlumatın hər bir simvolu genişləndirilmiş 256 simvollu yeni əlifbanın bir simvolu ilə əvəzlənir (yəni simvolların ümumi sayı dəyişmir). Yeni şifrlənmiş faylı göndərdikdə onun informasiya həcmi ilkin məlumatın həcminə nəzərən nə qədər bit artacaq?",
+    "options": [
+      "800 bit",
+      "1600 bit",
+      "1200 bit",
+      "3200 bit"
+    ],
+    "expl": "1. Orijinal məlumatın əlifbası: N=32, Hartli düsturu ilə (2^i = 32) i=5 bit. Orijinal məlumatın həcmi = 400 simvol * 5 bit = 2000 bit. \n2. Şifrlənmiş məlumatın əlifbası: N=256, (2^i = 256) i=8 bit. Şifrlənmiş məlumatın həcmi = 400 simvol * 8 bit = 3200 bit. \n3. Həcm artımı = Yekun həcm - İlkin həcm = 3200 - 2000 = 1200 bit. (Distraktor olan 3200 yekun həcmdir, lakin sual nə qədər artdığını soruşur)."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 199,
+    "q": "1984-cü ildə Andi Hopkins tərəfindən yaradılmış və BIOS vasitəsilə yerinə yetirilən yazma və formatlama əməliyyatlarını xüsusi olaraq tutan utilit necə adlanırdı?",
+    "options": [
+      "Kaspersky AntiVirus",
+      "Elk Cloner",
+      "CHK4BOMB.COM",
+      "BOMBSQAD.COM"
+    ],
+    "expl": "Mətndə vurğulanır ki, CHK4BOMB yüklənən modulları təhlil edib şübhəli yerləri (məs. diskə yazma) aşkarlayırdı, BOMBSQAD.COM proqramı isə məhz BIOS vasitəsilə yerinə yetirilən yazma və formatlama əməliyyatlarını tuturdu."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 224,
+    "q": "Asimmetrik şifrləmə alqoritmlərinin simmetrik alqoritmlərdən (gizli açarlı şifrləmədən) əsas fərqi nədədir?",
+    "options": [
+      "Məlumatlar yalnız rəqəmsal sertifikatlar vasitəsilə kodlaşdırılır",
+      "Şifrlənmiş məlumatın oxunması üçün xüsusi proqram təminatı tələb olunmur",
+      "Şifrləmə və deşifrləmə üçün iki fərqli açardan (açıq və gizli) istifadə edilir",
+      "Həm şifrləmə, həm də deşifrləmə üçün eyni vahid açardan istifadə edilir"
+    ],
+    "expl": "Asimmetrik (açıq açarlı) alqoritmlərdə şifrləmə üçün açıq, deşifrləmə üçün isə gizli olmaqla iki ayrı-ayrı açardan istifadə edilir. Simmetrik şifrləmədə isə hər iki əməliyyat eyni (gizli) açarla aparılır."
+  },
+  {
+    "cat": "Ədəbiyyat 10",
+    "array_index": 91,
+    "q": "VII əsrin məhsulu olan və ilk yazılı ortaq ədəbi-tarixi abidələr hesab edilən nümunə necə adlanır?",
+    "options": [
+      "Orxon-Yenisey kitabələri",
+      "Divanü lüğət-it-türk",
+      "Dastani-Əhməd Hərami",
+      "Avesta"
+    ],
+    "expl": "Mətndə qeyd edilir ki, ilk yazılı ortaq ədəbi-tarixi abidələr VII yüzilliyin məhsulu olan Orxon-Yenisey kitabələri hesab edilir. Avesta islamdan çox əvvəlki, Dastani-Əhməd Hərami isə XIII əsr epik nümunəsidir."
+  },
+  {
+    "cat": "İngilis dili 10",
+    "array_index": 3,
+    "q": "Complete the sentence with the correct word from the unit: 'Coffee can ___ of a tired and sleepy person.'",
+    "options": [
+      "feel real grief",
+      "speed through",
+      "uplift the spirit",
+      "shovel snow"
+    ],
+    "expl": "Dərslikdəki lüğət tapşırığına əsasən, qəhvə yorğun insanın əhvalını qaldıra bilər ('uplift the spirit'). 'Grief' kədər, 'speed through' sürətlə keçmək, 'shovel snow' isə qar kütləsini təmizləməkdir."
+  },
+  {
+    "cat": "İngilis dili 10",
+    "array_index": 13,
+    "q": "Complete the sentence using the correct conditional form: 'If you ___ Zulfiyya, you ___ probably be surprised to learn that she is a teacher.'",
+    "options": [
+      "will see / will",
+      "see / will",
+      "had seen / would have",
+      "saw / would"
+    ],
+    "expl": "Bu cümlə Birinci Şərt (First Conditional) tipli cümlədir. Şərt budaq cümləsi İndiki Sadə zamanda (Present Simple - 'see'), baş cümlə isə Gələcək Sadə zamanda (Future Simple - 'will be') olmalıdır. Təsvir olunan situasiya real gələcək ehtimalı bildirir (Dərslikdəki mətndə eyni struktur istifadə olunub)."
+  },
+  {
+    "cat": "İngilis dili 10",
+    "array_index": 31,
+    "q": "Choose the correct relative pronoun to complete the sentence: 'Zulfiyya is a teacher ___ always dresses simply.'",
+    "options": [
+      "whose",
+      "who",
+      "which",
+      "where"
+    ],
+    "expl": "İnsanlara aid təyinedici budaq cümlələrdə (Adjective clauses) mübtəda funksiyasında 'who' nisbi əvəzliyi istifadə olunur. 'Which' əşyalar, 'whose' mənsubiyyət, 'where' isə məkan üçündür."
+  },
+  {
+    "cat": "İngilis dili 10",
+    "array_index": 47,
+    "q": "Choose the correct option to complete the sentence: \"My little brother saved up his pocket money ___ he could send it to the army.\"",
+    "options": [
+      "for",
+      "so that",
+      "because of",
+      "in order to"
+    ],
+    "expl": "Məqsəd budaq cümləsində (Adverb clause of purpose) \"so that\" istifadə olunur və özündən sonra mübtəda və xəbər (he could send) gəlir. \"In order to\" və \"for\" isə özündən sonra bütöv cümlə yox, müvafiq olaraq məsdər (verb) və ya isim tələb edir."
+  },
+  {
+    "cat": "İngilis dili 10",
+    "array_index": 53,
+    "q": "Choose the correct option to complete the sentence: \"The Special Forces team took the map of the area ___ get lost in the forests.\"",
+    "options": [
+      "in order to not",
+      "so that not",
+      "because of not",
+      "in order not to"
+    ],
+    "expl": "Məqsəd bildirən \"in order to\" ifadəsinin inkar forması \"in order not to\" (etməmək üçün) kimi qurulur. Özündən sonra məsdər (\"get lost\") tələb edir. \"So that\" dən sonra isə bütöv cümlə gəlməlidir (so that they wouldn't get lost). Dərslik səh. 35."
+  },
+  {
+    "cat": "Fransız dili 10",
+    "array_index": 59,
+    "q": "Dans la phrase \"elles sont obligatoires comme un moyen efficace pour l’échange de l'information\", par quel synonyme pourrait-on remplacer \"obligatoires\" dans ce contexte sans changer le sens profond de la nécessité ?",
+    "options": [
+      "Secondaires",
+      "Facultatives",
+      "Interdites",
+      "Indispensables"
+    ],
+    "expl": "Kontekstdə \"obligatoires\" sözü \"zəruri, mütləq lazım olan\" mənasında işlənib, çünki xarici dillərin məlumat mübadiləsi üçün çox əhəmiyyətli olduğu vurğulanır. Buna görə də \"indispensables\" (əvəzolunmaz, zəruri) ən uyğun sinonimdir. \"Facultatives\" isə onun antonimidir."
+  },
+  {
+    "cat": "Fransız dili 10",
+    "array_index": 93,
+    "q": "Complétez la phrase avec la forme correcte du verbe: \"Il faut que tu (réfléchir) à ce problème.\"",
+    "options": [
+      "réfléchisses",
+      "réfléchissez",
+      "réfléchisse",
+      "réfléchis"
+    ],
+    "expl": "\"Il faut que\" şəxsiyyətsiz ifadəsi (expression impersonnelle) özündən sonra Subjonctif (Arzu şəkli) tələb edir. \"Réfléchir\" felinin 2-ci qrup qaydalı fel kimi Subjonctif-də 2-ci şəxsin təkində (tu) forması \"réfléchisses\" olmalıdır."
+  },
+  {
+    "cat": "Fransız dili 10",
+    "array_index": 164,
+    "q": "Choisissez la forme correcte du verbe \"être\" à la première personne du singulier au conditionnel présent.",
+    "options": [
+      "je serrait",
+      "j'étais",
+      "je serais",
+      "je serai"
+    ],
+    "expl": "\"Être\" felinin conditionnel présent forması \"je serais\" şəklindədir. \"Je serai\" gələcək zaman, \"j'étais\" isə keçmiş zamandır (imparfait)."
+  },
+  {
+    "cat": "Rus dili 10",
+    "array_index": 21,
+    "q": "Укажите правильную форму глагола «показать» в будущем времени для местоимения 3-го лица единственного числа.",
+    "options": [
+      "показал",
+      "покажет",
+      "будет показать",
+      "показывает"
+    ],
+    "expl": "«Показать» feli bitkin tərzi (совершенный вид) bildirir, buna görə də onun gələcək zaman forması mürəkkəb (будет + məsdər) deyil, sadə formada yaranır: он/она/оно покажет."
+  },
+  {
+    "cat": "Biologiya 11",
+    "array_index": 78,
+    "q": "Təkamülün ilkin mərhələlərində formalaşan ikiqatlı orqanizmlərdə xarici qat hüceyrələri əsasən hansı funksiyanı icra edirdi?",
+    "options": [
+      "Həzm",
+      "Hərəkət",
+      "Tənəffüs",
+      "Müdafiə"
+    ],
+    "expl": "Dərslikdə qeyd olunduğu kimi, ilk çoxhüceyrəlilərdə xarici qat hüceyrələri hərəkət, daxili qat hüceyrələri isə həzmə xidmət etmişdir."
+  },
+  {
+    "cat": "Biologiya 11",
+    "array_index": 194,
+    "q": "Təkamülün ilkin mərhələlərində formalaşan ikiqatlı orqanizmlərdə xarici qat hüceyrələri əsasən hansı funksiyanı icra edirdi?",
+    "options": [
+      "Müdafiə",
+      "Hərəkət",
+      "Həzm",
+      "Tənəffüs"
+    ],
+    "expl": "Dərslikdə qeyd olunduğu kimi, ilk çoxhüceyrəlilərdə xarici qat hüceyrələri hərəkət, daxili qat hüceyrələri isə həzmə xidmət etmişdir."
+  },
+  {
+    "cat": "Fizika 11",
+    "array_index": 30,
+    "q": "Sükunətdə olan elektrik yüklərinin yaratdığı sahə necə adlanır?",
+    "options": [
+      "Elektromaqnit dalğası",
+      "Maqnit sahəsi",
+      "Bircins qravitasiya sahəsi",
+      "Elektrostatik sahə"
+    ],
+    "expl": "Dərslikdə qeyd edildiyi kimi, sükunətdə olan elektrik yüklərinin yaratdığı sahə elektrostatik sahə adlanır. Maqnit sahəsi isə hərəkətdə olan yüklərin yaratdığı sahədir."
+  },
+  {
+    "cat": "Fizika 11",
+    "array_index": 112,
+    "q": "Maqnit sahəsində hər hansı bir nöqtədə maqnit induksiyası vektorunun istiqaməti olaraq hansı istiqamət qəbul edilir?",
+    "options": [
+      "Sərbəst dönə bilən maqnit əqrəbinin şimal qütbünün yönəldiyi istiqamət",
+      "Naqildən keçən sərbəst elektronların hərəkət istiqaməti",
+      "Həmin nöqtədəki sərbəst müsbət yükə təsir edən qüvvənin istiqaməti",
+      "Sərbəst dönə bilən maqnit əqrəbinin cənub qütbünün yönəldiyi istiqamət"
+    ],
+    "expl": "Dərslikdə bildirilir ki, maqnit induksiyası vektorunun istiqaməti olaraq maqnit sahəsində sərbəst dönə bilən maqnit əqrəbinin şimal qütbünün yönəldiyi istiqamət götürülür."
+  },
+  {
+    "cat": "Fizika 11",
+    "array_index": 174,
+    "q": "Konturdan keçən cərəyan şiddəti 3 dəfə artarsa, maqnit sahəsinin enerjisi necə dəyişər?",
+    "options": [
+      "3 dəfə azalar",
+      "Dəyişməz",
+      "3 dəfə artar",
+      "9 dəfə artar"
+    ],
+    "expl": "Maqnit sahəsinin enerjisi W = (L * I^2) / 2 düsturu ilə hesablanır. L sabit olduqda, cərəyan şiddəti (I) 3 dəfə artarsa, enerji cərəyanın kvadratı ilə mütənasib olduğu üçün 3^2 = 9 dəfə artar."
+  },
+  {
+    "cat": "Fizika 11",
+    "array_index": 178,
+    "q": "Maqnit sahəsinin enerji sıxlığı 4 dəfə, mühitin maqnit nüfuzluğu isə 2 dəfə artırılarsa, maqnit induksiyası necə dəyişər?",
+    "options": [
+      "4 dəfə artar",
+      "Dəyişməz",
+      "2√2 dəfə artar",
+      "2 dəfə artar"
+    ],
+    "expl": "Enerji sıxlığı düsturuna görə w_m = B^2 / (2 * μ_0 * μ), buradan B = √(w_m * 2 * μ_0 * μ). Enerji sıxlığı (w_m) 4 dəfə, maqnit nüfuzluğu (μ) 2 dəfə artarsa, maqnit induksiyası B √(4 * 2) = √8 = 2√2 dəfə artar."
+  },
+  {
+    "cat": "Fizika 11",
+    "array_index": 259,
+    "q": "Bircins maqnit sahəsində yerləşdirilmiş düz naqildən keçən cərəyan şiddətini 3 dəfə, naqilin maqnit sahəsindəki aktiv uzunluğunu isə 2 dəfə artırdıqda ona təsir edən Amper qüvvəsi necə dəyişər? (Bucağı sabit qəbul edirik)",
+    "options": [
+      "Dəyişməz qalar",
+      "6 dəfə azalar",
+      "6 dəfə artar",
+      "1,5 dəfə artar"
+    ],
+    "expl": "Amper qüvvəsi F_A = IBl*sin(α) düsturu ilə tapılır. Cərəyan şiddəti (I) 3 dəfə, naqilin uzunluğu (l) 2 dəfə artarsa, hasil 3 * 2 = 6 dəfə artar."
+  },
+  {
+    "cat": "Coğrafiya 11",
+    "array_index": 31,
+    "q": "Bir çayın uzunluğunun xəritə üzərində ölçülməsi kartometrik təhlilin hansı növünə aiddir?",
+    "options": [
+      "Vizual kartoqrafik təhlil",
+      "Sahəvi qrafik təhlil",
+      "Qlobal kartometrik təhlil",
+      "Lokal kartometrik təhlil"
+    ],
+    "expl": "Dərslik mətninə əsasən, bir çayın uzunluğunun ölçülməsi lokal kartometrik təhlilə, ərazidə olan çayların birgə uzunluğunun hesablanması isə qlobal təhlilə aiddir."
+  },
+  {
+    "cat": "Coğrafiya 11",
+    "array_index": 78,
+    "q": "Xəritə əsasında qrafik təhlil apararkən Yer səthinin müəyyən hissəsinin şaquli kəsiyinin təsviri necə adlanır?",
+    "options": [
+      "Sahəvi diaqram",
+      "Kartoqram",
+      "Profil",
+      "İzohips"
+    ],
+    "expl": "Relyef profili Yer səthinin müəyyən hissəsinin şaquli kəsiyinin təsviridir və o, topoqrafik və ya fiziki xəritələrdə horizontallar (izohipslər) əsasında xüsusi qayda ilə tərtib edilir."
+  },
+  {
+    "cat": "Coğrafiya 11",
+    "array_index": 152,
+    "q": "Statistik məlumatların əyani təsviri üçün kəmiyyətlər arasında nisbəti ən aydın göstərən diaqram növü hansıdır?",
+    "options": [
+      "Sütunlu diaqram",
+      "Dairəvi diaqram",
+      "Profil",
+      "Kartoqram"
+    ],
+    "expl": "Dərslikdə qeyd olunur ki, dairəvi diaqramlar kəmiyyətlər arasında nisbəti əyani şəkildə göstərir. Sütunlu diaqramlardan isə daha çox kəmiyyətləri müqayisə etmək üçün istifadə olunur."
+  },
+  {
+    "cat": "Coğrafiya 11",
+    "array_index": 239,
+    "q": "Profil vasitəsilə ərazidə hansı coğrafi göstəriciləri təyin etmək MÜMKÜN DEYİLDİR?",
+    "options": [
+      "Müxtəlif süxur laylarının yatım formaları",
+      "Dağ və təpə yamaclarının ümumi meyilliyi",
+      "Torpaq qatlarının dərinlik yatım formaları",
+      "Ərazinin iqlimi və illik yağıntı miqdarı"
+    ],
+    "expl": "Profil əsasən relyef formalarının öyrənilməsində, yamacların meyilliyinin, torpaq qatlarının və süxur laylarının yatım formalarının təyinində istifadə olunur. İqlim göstəriciləri profil vasitəsilə öyrənilmir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 5,
+    "q": "Butanol-2-nin qatı sulfat turşusunun iştirakı ilə 150°C-dən yüksək temperaturda dehidratlaşması zamanı Zaytsev qaydasına əsasən əsas məhsul olaraq hansı karbohidrogen alınacaq?",
+    "options": [
+      "2-metilpropen",
+      "Buten-2",
+      "Buten-1",
+      "Butin-2"
+    ],
+    "expl": "140°C-dən yüksək temperaturda spirtlərin molekuldaxili dehidratlaşması baş verir. Zaytsev qaydasına əsasən, hidrogen atomu əsasən daha az hidrogenləşmiş qonşu karbon atomundan qopur. Butanol-2-də -OH qrupu ikinci karbon atomundadır, su qoparkən hidrogen 1-ci deyil, 3-cü (daha az hidrogenli) karbondan ayrıldığı üçün buten-1 yox, əsasən buten-2 alınır."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 27,
+    "q": "Xalkogenlər ailəsinə mənsub olan hansı element aldehidlərin karbonil qrupundakı oksigenin analoqu olaraq, eyni formalı üzvi birləşmələr (tioaldehidlər) əmələ gətirir və metanal molekulunda karbonun sp2 hibrid orbitalları arasındakı bucaq neçə dərəcədir?",
+    "options": [
+      "Selen (Se), 180°",
+      "Kükürd (S), təqribən 120°",
+      "Kükürd (S), təqribən 109.5°",
+      "Fosfor (P), 120°"
+    ],
+    "expl": "Aldehidlərin karbonil qrupundakı (>C=O) oksigen atomu dövri sistemdə VI qrup əsas yarımqrup elementidir. Onun birbaşa analoqu kükürddür (S) və tioaldehidlər (>C=S) yaradır. Metanal molekulunda karbon atomu sp2 hibridləşmə halında olduğundan hibrid orbitalları bir müstəvi üzərində yerləşir və aralarındakı valent bucağı təqribən 120°-yə bərabərdir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 28,
+    "q": "Alkenlərin ozonolizi (ozonla reaksiyası və ardınca hidrolizi) aldehid və ya ketonların alınması üçün istifadə olunur. Hansı alkenin ozonolizindən YALNIZ sirkə aldehidi (etanal) alınar?",
+    "options": [
+      "Buten-1",
+      "2-metilpropen",
+      "Propen",
+      "Buten-2"
+    ],
+    "expl": "Alkenlərin ozonolizi zamanı ikiqat rabitənin qırılması baş verir və rabitənin hər iki tərəfindəki karbon atomları karbonil qrupuna çevrilir. Yalnız eyni aldehid molekullarının (2 molekul etanal) alınması üçün simmetrik quruluşlu alken lazımdır. CH3-CH=CH-CH3 (buten-2) ozonlaşdırılıb parçalandıqda 2 molekul CH3CHO (etanal) verir. Buten-1-dən isə propanal və metanal qarışığı alınır."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 78,
+    "q": "Spirtlərdə sinifdaxili quruluş izomerliyi karbon zəncirinin quruluşuna görə ilk dəfə hansı homoloqdan başlayır?",
+    "options": [
+      "Etanoldan",
+      "Propanoldan",
+      "Butanoldan",
+      "Pentanoldan"
+    ],
+    "expl": "Spirtlərdə sinifdaxili quruluş izomerliyi iki səbəbdən yaranır: -OH qrupunun yerinə görə izomerlik propanoldan, karbon zəncirinin quruluşuna görə izomerlik isə ancaq şaxələnmə imkanı olan butanoldan (C4H9OH) başlayır."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 79,
+    "q": "Doymuş biratomlu spirtlərdə optiki izomerlik ilk dəfə hansı birləşmənin molekulunda müşahidə olunur?",
+    "options": [
+      "Propanol-2",
+      "Butanol-2",
+      "2-metilpropanol-1",
+      "Butanol-1"
+    ],
+    "expl": "Optiki izomerlik molekulda 4 müxtəlif qrupla birləşmiş asimmetrik karbon atomunun olmasını tələb edir. Butanol-2 (CH3-CH(OH)-C2H5) molekulunda 2-ci karbon atomu -H, -OH, -CH3 və -C2H5 qrupları ilə birləşdiyi üçün asimmetrikdir və spirtlərdə optiki izomerliyin ilk nümayəndəsidir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 95,
+    "q": "Propenin katalizator iştirakı ilə hidratlaşmasından alınan əsas üzvi məhsul hansıdır?",
+    "options": [
+      "Propanol-2",
+      "Propanal",
+      "Propanol-1",
+      "Propanon"
+    ],
+    "expl": "Propenin hidratlaşması Markovnikov qaydası üzrə gedir. Hidrogen atomu hidrogeni çox olan karbona, OH qrupu isə hidrogeni az olan karbona (ortadakı) birləşir. CH2=CH-CH3 + H2O -> CH3-CH(OH)-CH3 (propanol-2). Bu məhsul ikili spirtdir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 96,
+    "q": "Tərkibində 3 karbon atomu olan ketonun tam reduksiyası (hidrogenləşməsi) zamanı hansı spirt əmələ gəlir?",
+    "options": [
+      "Propanol-2",
+      "2-metilpropanol-2",
+      "Butanol-2",
+      "Propanol-1"
+    ],
+    "expl": "3 karbonlu keton propanondur (aseton). Ketonların hidrogenləşdirilməsindən (reduksiyasından) həmişə ikili spirtlər alınır. CH3-CO-CH3 + H2 -> CH3-CH(OH)-CH3. Alınan maddə propanol-2-dir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 97,
+    "q": "İzopropilxloridə natrium hidroksidin suda məhlulu ilə təsir etdikdə əsasən hansı maddə alınır?",
+    "options": [
+      "Propanol-2",
+      "Propen qazı",
+      "Propanol-1",
+      "Dipropil efiri"
+    ],
+    "expl": "İzopropilxlorid (2-xlorpropan) qələvinin suda məhlulu ilə reaksiyaya girdikdə əvəzetmə reaksiyası baş verir. Xlor atomu hidroksil qrupu ilə əvəz olunur: CH3-CHCl-CH3 + NaOH(suda) -> CH3-CH(OH)-CH3 + NaCl. Məhsul propanol-2-dir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 125,
+    "q": "Zaytsev qaydasına əsaslanaraq, butanol-2-nin 140°C-dən yuxarı temperaturda molekuldaxili dehidratlaşması nəticəsində alınan əsas məhsulu müəyyən edin.",
+    "options": [
+      "Buten-2",
+      "Dietil efiri",
+      "Butadien-1,3",
+      "Buten-1"
+    ],
+    "expl": "Zaytsev qaydasına görə, ikili və üçlü spirtlərin molekuldaxili dehidratlaşması zamanı ayrılan su molekulunda oksigen spirtin hidroksil qrupundan, hidrogen isə əsasən qonşu karbon atomlarından hidrogeni daha az olandan ayrılır. Butanol-2 (CH3-CH2-CH(OH)-CH3) molekulunda OH qrupu 2-ci karbondadır. Hidrogen 1-ci yox, 3-cü karbondan (CH2 qrupundan) ayrıldığı üçün əsasən Buten-2 (CH3-CH=CH-CH3) alınır."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 150,
+    "q": "Beynəlxalq nomenklaturaya əsasən ikiatomlu doymuş spirtlərin ən sadə nümayəndəsi olan etilenqlikol necə adlandırılır?",
+    "options": [
+      "Etanol-1,2",
+      "Propandiol-1,2",
+      "Etandiol-1,2",
+      "Etandiol-1,1"
+    ],
+    "expl": "Beynəlxalq nomenklaturaya görə ikiatomlu spirtləri adlandırmaq üçün -OH qruplarının birləşdiyi ən uzun karbon zəncirinə uyğun alkanın adına 'diol' şəkilçisi əlavə edilir və -OH qruplarının yeri rəqəmlə göstərilir. Etilenqlikol iki karbon atomuna malik olduğundan və hər karbona bir -OH qrupu birləşdiyindən 'etandiol-1,2' adlanır."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 187,
+    "q": "1-xlor-3-metilbutanın qələvinin suda duru məhlulu ilə hidrolizi zamanı əsasən hansı spirt alınır?",
+    "options": [
+      "Pentanol-1",
+      "3-metilbutanol-2",
+      "2-metilbutanol-2",
+      "3-metilbutanol-1"
+    ],
+    "expl": "Sənayedə doymuş biratomlu spirtləri alkilhalogenidlərə qələvilərin suda duru məhlulu ilə təsir etməklə alırlar (nukleofil əvəzetmə). 1-xlor-3-metilbutan hidroliz olunduqda birli karbona birləşmiş xlor atomu -OH qrupu ilə əvəz olunur və izoamil spirti, yəni 3-metilbutanol-1 əmələ gəlir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 197,
+    "q": "Fenol bromlu su ilə qızdırılmadan reaksiyaya girərək hansı birləşməni əmələ gətirir?",
+    "options": [
+      "2,4-dibromfenol",
+      "3,5-dibromfenol",
+      "2,4,6-tribromfenol",
+      "2-bromfenol"
+    ],
+    "expl": "Fenol molekulunda -OH qrupunun həlqəyə təsiri nəticəsində benzoldan fərqli olaraq qızdırılmadan bromlu su ilə reaksiyaya girir və ağ çöküntü olan 2,4,6-tribromfenol əmələ gətirir."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 228,
+    "q": "Aşağıda verilmiş spirtlərdən hansı ikili spirtdir?",
+    "options": [
+      "Butanol-2",
+      "Butanol-1",
+      "2-metilpropanol-1",
+      "2-metilpropanol-2"
+    ],
+    "expl": "İkili spirtlərdə hidroksil (-OH) qrupu ikili karbon atomuna, yəni bilavasitə başqa iki karbon atomu ilə birləşmiş karbona birləşir. Butanol-2 molekulunda OH qrupu 2-ci karbondadır ki, o da ikili karbondur."
+  },
+  {
+    "cat": "Kimya 11",
+    "array_index": 233,
+    "q": "Butanol (C4H9OH) üçün fəza (optiki) izomerliyinə malik olan quruluş izomeri hansı variantda verilmişdir?",
+    "options": [
+      "Butanol-2",
+      "2-metilpropanol-1",
+      "2-metilpropanol-2",
+      "Butanol-1"
+    ],
+    "expl": "Optik izomerliyin yaranması üçün molekulda asimmetrik karbon atomu (dörd müxtəlif atom/qrupla birləşmiş) olmalıdır. Butanol-2-nin (CH3-CH(OH)-CH2-CH3) ikinci karbon atomu dörd müxtəlif qrupla (-H, -OH, -CH3, -C2H5) birləşdiyi üçün optik aktivdir."
+  },
+  {
+    "cat": "Ədəbiyyat 11",
+    "array_index": 90,
+    "q": "Əhməd Cavadın ilk şeirlər kitabı necə adlanır?",
+    "options": [
+      "Qoşma",
+      "İstiqlal",
+      "Dalğa",
+      "Səsli qız"
+    ],
+    "expl": "Əhməd Cavadın ilk şeirlər kitabı 1916-cı ildə çap edilmiş \"Qoşma\" kitabıdır. Bu kitabda şairin ilkin lirik şeirləri toplanmışdır. \"Dalğa\" onun ikinci kitabıdır. \"Səsli qız\" isə ədibin poemasıdır."
+  },
+  {
+    "cat": "Ümumi tarix 11",
+    "array_index": 65,
+    "q": "Sipahilər üsyanından sonra ingilis hökumətinin Hindistanın idarəçiliyində etdiyi ən mühüm dəyişiklik nə oldu?",
+    "options": [
+      "Ost-Hind şirkətinin siyasi hüquqları genişləndirildi.",
+      "Hindistan tam müstəqil respublika elan olundu.",
+      "Hindistana dominion hüququ verildi.",
+      "Ost-Hind şirkətinin siyasi hüquqları ləğv edildi və idarəçilik ingilis taxtına keçdi."
+    ],
+    "expl": "Üsyandan sonra (1858-ci ildə qəbul edilmiş akta görə) Ost-Hind şirkətinin siyasi hüquqları ləğv edildi və ali hakimiyyət ingilis taxtına keçdi."
+  },
+  {
+    "cat": "İngilis dili 11",
+    "array_index": 108,
+    "q": "The teacher looked at the students and wanted to know _____ they were ready for the final presentation.",
+    "options": [
+      "which",
+      "what",
+      "that",
+      "if"
+    ],
+    "expl": "Cümlədə 'Bəli/Xeyr' tipli sualın (yes/no question) vasitəli nitqə və ya mürəkkəb cümlənin tamamlığına çevrilməsi tələb olunur (Included yes/no question). İngilis dilində belə daxili suallar 'if' və ya 'whether' bağlayıcıları ilə qurulur. 'That' və sual əvəzlikləri (what, which) bu kontekstdə məntiqi və qrammatik olaraq yanlışdır. Buna görə də doğru cavab D variantıdır."
+  },
+  {
+    "cat": "İngilis dili 11",
+    "array_index": 127,
+    "q": "Older employees are sometimes ________ to new software systems because they are used to the old ways of doing things and fear losing their efficiency.",
+    "options": [
+      "responsive",
+      "vivid",
+      "resistant",
+      "self-conscious"
+    ],
+    "expl": "\"Resistant to change/systems\" yeniliklərə, dəyişikliklərə qarşı müqavimət göstərən, qəbul etmək istəməyən şəxsləri təsvir edir. Yaşlı işçilərin köhnə qaydalara öyrəşib yeni proqramlardan ehtiyat etməsi onların \"resistant\" olduğunu göstərir. \"Responsive\" tam əksinə - tez qavrayıb reaksiya verən deməkdir."
+  },
+  {
+    "cat": "İngilis dili 11",
+    "array_index": 137,
+    "q": "The contestant wasn't sure ______ to take a risk or use a lifeline for the difficult question.",
+    "options": [
+      "whether",
+      "that",
+      "if",
+      "how"
+    ],
+    "expl": "Cümlədə \"to take a risk or...\" (risk etmək, yoxsa...) seçimi ifadə olunur. İngilis dilində infinitivdən (to do) əvvəl və xüsusilə \"or\" (yoxsa) bağlayıcısı olan alternativ məqamlarda \"if\" yox, \"whether\" istifadə edilir. \"That\" qətilik bildirir, \"how\" isə məna baxımından uzlaşmır."
+  },
+  {
+    "cat": "İngilis dili 11",
+    "array_index": 158,
+    "q": "Choose the correct pair of words to complete the sentence.\n'The school aims to ______ a sense of community among students while also helping them to ______ their knowledge of global issues.'",
+    "options": [
+      "support / participate",
+      "justify / reflect",
+      "foster / broaden",
+      "resist / figure out"
+    ],
+    "expl": "Məktəbin məqsədi şagirdlər arasında icma hissini 'inkişaf etdirmək, dəstəkləmək' (foster) və onların qlobal məsələlər barədə biliklərini 'genişləndirməkdir' (broaden). 'Resist' (müqavimət göstərmək) və ya 'figure out' (həll etmək) bu məntiqi tamamlamır. Şagird 'foster a sense' və 'broaden knowledge' kimi akademik kollokasiyaları bilməlidir."
+  },
+  {
+    "cat": "İngilis dili 11",
+    "array_index": 163,
+    "q": "Read the paragraph and choose the best logical connector for the blank.\n'Many people believe that studying online is less effective than attending traditional classes. ______, recent studies indicate that students who take online courses often perform just as well, if not better, because they can learn at their own pace.'",
+    "options": [
+      "Therefore",
+      "However",
+      "For example",
+      "Additionally"
+    ],
+    "expl": "Birinci cümlədə çoxlarının onlayn təhsili ənənəvi dərslərdən daha zəif hesab etdiyi bildirilir. İkinci cümlədə isə tədqiqatların əksini göstərdiyi - onlayn dərslərin eyni dərəcədə və ya daha yaxşı nəticə verdiyi deyilir. İki cümlə arasında ziddiyyət olduğu üçün 'However' (Bununla belə / ancaq) keçid sözü işlədilməlidir. 'Therefore' (buna görə də) və 'Additionally' (əlavə olaraq) məntiqi əlaqəni pozur."
+  },
+  {
+    "cat": "Alman dili 11",
+    "array_index": 33,
+    "q": "Das Goethe-Schiller-Denkmal in Weimar ___ seit 1998 zum UNESCO-Weltkulturerbe. Welche Verbform ist korrekt?",
+    "options": [
+      "hat gehört",
+      "wird gehören",
+      "gehörte",
+      "gehört"
+    ],
+    "expl": "Mətnə görə: 'Seit 1998 gehört das klassische Weimar zum UNESCO-Weltkulturerbe.' 'Seit' prepoziysiyası ilə indiki zaman (Präsens) işlədilir, çünki hərəkət keçmişdə başlayıb indi də davam edir. A (gehörte – Präteritum) bitmiş hadisəni bildirir. C (hat gehört – Perfekt) 'seit' ilə işlənmir. D gələcəkdən danışır."
+  },
+  {
+    "cat": "Alman dili 11",
+    "array_index": 37,
+    "q": "Der folgende Satz enthält eine Lücke. Welche Version ist grammatisch korrekt? 'Die Skulptur Viktoria, die sich ganz oben auf der Siegessäule befindet, ___ 8,3 Meter groß und über 30 Tonnen schwer.'",
+    "options": [
+      "ist",
+      "waren",
+      "sind",
+      "werden"
+    ],
+    "expl": "Relativsatz içindəki əsas isim 'die Skulptur Viktoria' təkdir (Singular, feminin). Buna görə yüklem 'ist' (3. şəxs, tək) olmalıdır. B (sind) cəm formadır. C (waren) Präteritum-dur, lakin mətn hal-hazırkı vəziyyətdən danışır. D (werden) Futur formasıdır."
+  },
+  {
+    "cat": "Alman dili 11",
+    "array_index": 49,
+    "q": "„Somit steht die Farbe Gelb für den Montag, Rosa für Dienstag, am Mittwoch ist Grün angesagt...“\n\nWas bedeutet das Wort „angesagt“ in diesem Zusammenhang?",
+    "options": [
+      "offiziell storniert",
+      "üblich oder empfohlen",
+      "streng verboten",
+      "laut gerufen"
+    ],
+    "expl": "Mətndə 'angesagt' sözü həmin gün üçün 'məsləhət görülən, dəbdə olan, uyğun bilinən' (üblich oder empfohlen) mənasında işlənir. 'Laut gerufen' hərfi tərcümədir və burada uyğun deyil, C və D isə tamamilə zidd mənalardır."
+  },
+  {
+    "cat": "İnformatika 3",
+    "array_index": 84,
+    "q": "Rebusda 'ÇƏRPƏLƏNG' şəkli verilmiş və şəkildən sonra 6 vergül qoyulmuşdur. Gizlənmiş söz hansıdır?",
+    "options": [
+      "LƏNG",
+      "ÇƏR",
+      "PƏLƏNG",
+      "ÇƏRPƏ"
+    ],
+    "expl": "Şəkildən sonra qoyulan 6 vergül sözün sonundan 6 hərfin silinməsini bildirir. 'ÇƏRPƏLƏNG' sözündən 6 hərf silindikdə 'ÇƏR' qalır."
+  },
+  {
+    "cat": "İngilis dili 3",
+    "array_index": 2,
+    "q": "A: Is this your pencil?\nB: Yes, ___.",
+    "options": [
+      "it is",
+      "it are",
+      "they is",
+      "they are"
+    ],
+    "expl": "'Is this...?' sualına təsdiq cavabı 'Yes, it is' kimi verilir. 'Pencil' təkdə olduğu üçün 'they' yox, 'it' işlənir və 'it' ilə 'is' istifadə olunur."
+  },
+  {
+    "cat": "İngilis dili 3",
+    "array_index": 46,
+    "q": "A: Is she wearing a red dress?\nB: No, she ___. She is wearing a blue skirt.",
+    "options": [
+      "isn't",
+      "aren't",
+      "doesn't",
+      "hasn't"
+    ],
+    "expl": "Sual 'Is she...?' ilə verildiyi üçün qısa inkar cavabı 'No, she isn't' olmalıdır. 'doesn't' və ya 'hasn't' qrammatik olaraq səhvdir."
+  },
+  {
+    "cat": "İngilis dili 3",
+    "array_index": 102,
+    "q": "A: The cat is sleeping. Where is it?\nB: It is ___ the sofa.",
+    "options": [
+      "on",
+      "between",
+      "front",
+      "next"
+    ],
+    "expl": "Divanın (sofa) üstündə (on) yatır. 'Between' iki şeyin arasında olmağı bildirir, 'front' (of) və 'next' (to) sözlərinin ardı yoxdur."
+  },
+  {
+    "cat": "Русский язык 3",
+    "array_index": 68,
+    "q": "В каком слове пропущена буква «И»? (Hansı sözdə «И» hərfi buraxılıb?)",
+    "options": [
+      "Л...са",
+      "Мураве...",
+      "Попуга...",
+      "Трамва..."
+    ],
+    "expl": "Правильное слово — «Лиса» (tülkü). В словах трамвай, муравей, попугай в конце пишется буква Й."
+  },
+  {
+    "cat": "Русский язык 3",
+    "array_index": 101,
+    "q": "Какое слово лишнее в этом ряду: Коты, Мосты, Сады, Дом?",
+    "options": [
+      "Дом",
+      "Сады",
+      "Мосты",
+      "Коты"
+    ],
+    "expl": "Слова «коты, мосты, сады» стоят во множественном числе (окончание -ы), а «дом» — в единственном."
+  },
+  {
+    "cat": "Русский язык 3",
+    "array_index": 182,
+    "q": "Какое слово начинается на тот же звук, что и слово «Шкаф»?",
+    "options": [
+      "Щит",
+      "Щука",
+      "Щенок",
+      "Шар"
+    ],
+    "expl": "«Шкаф» və «Шар» sözləri Ş (Ш) hərfi və səsi ilə başlayır. Щит, Щука, Щенок isə ŞÇ (Щ) hərfi ilə başlayır."
+  },
+  {
+    "cat": "Alman dili 3",
+    "array_index": 31,
+    "q": "A: Welche Farbe hat der Apfel? B: Der Apfel ist ...",
+    "options": [
+      "blau",
+      "schwarz",
+      "rot",
+      "grau"
+    ],
+    "expl": "Alma (Apfel) adətən qırmızı (rot) və ya yaşıl olur. Variantlar arasında ən uyğunu qırmızıdır (rot). Mavi (blau), qara (schwarz) və ya boz (grau) deyil."
+  },
+  {
+    "cat": "İngilis dili 4",
+    "array_index": 88,
+    "q": "Ali: How do you usually go to school?\nOmar: My school is very far, so I always go by _____.",
+    "options": [
+      "walk",
+      "foot",
+      "bus",
+      "run"
+    ],
+    "expl": "Məktəb uzaq olduğu üçün avtobusla (by bus) getmək məntiqlidir. 'Piyada' demək üçün 'on foot' istifadə olunur, 'by foot' və ya 'by walk' deyilməz."
+  },
+  {
+    "cat": "İngilis dili 4",
+    "array_index": 91,
+    "q": "Mary: My father works in a hospital. He ________ sick people every day.\nJane: That is a great job!",
+    "options": [
+      "helps",
+      "help",
+      "is helping",
+      "to help"
+    ],
+    "expl": "'every day' (hər gün) ifadəsi Present Simple (İndiki sadə zaman) göstəricisidir. 3-cü şəxsin təkində (My father) fel 's' şəkilçisi qəbul edir. Tələbələr adətən 'is helping' ilə səhv salırlar."
+  }
+]

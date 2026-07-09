@@ -1,0 +1,830 @@
+[
+  {
+    "cat": "Texnologiya 9",
+    "array_index": 30,
+    "q": "Ev heyvanları üçün ən çox istifadə olunan, bitkilərin yaşıl hissələrindən qıcqırma yolu ilə konservləşdirilmiş yem necə adlanır?",
+    "options": [
+      "Silos",
+      "Şrot",
+      "Cecə",
+      "Yaşıl un"
+    ],
+    "expl": "Dərslikdəki lüğət mənasında açıq verilir: 'Silos — bitkilərin yaşıl hissələrindən qıcqırma yolu ilə konservləşdirilmiş heyvan və quş yemi.'"
+  },
+  {
+    "cat": "Texnologiya 9",
+    "array_index": 74,
+    "q": "Ev heyvanları üçün ən çox istifadə olunan, bitkilərin yaşıl hissələrindən qıcqırma yolu ilə konservləşdirilmiş yem necə adlanır?",
+    "options": [
+      "Silos",
+      "Yaşıl un",
+      "Cecə",
+      "Şrot"
+    ],
+    "expl": "Dərslikdəki lüğət mənasında açıq verilir: 'Silos — bitkilərin yaşıl hissələrindən qıcqırma yolu ilə konservləşdirilmiş heyvan və quş yemi.'"
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 116,
+    "q": "RNT-nin karbohidrat komponenti nədir?",
+    "options": [
+      "Qlükoza",
+      "Riboza",
+      "Saxaroza",
+      "Dezoksiriboza"
+    ],
+    "expl": "Mətndən: RNT-də DNT-dən fərqli olaraq karbohidrat qalığı dezoksiriboza deyil, ribozadır. Bu səbəbdən onu ribonuklein turşusu adlandırırlar."
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 203,
+    "q": "Aminturşuların bir-birindən fərqlənməsinin əsas səbəbi nədir?",
+    "options": [
+      "Radikal (R) qruplarının fərqliliyi",
+      "Amin qruplarının sayı",
+      "Atomların sayı",
+      "Karboksil qruplarının fərqliliyi"
+    ],
+    "expl": "Dərslikdən: Aminturşular karboksil (-COOH) və amin qruplarının olmasına görə bir-birinə oxşasalar da, onlarda həm də oxşar olmayan radikallar vardır. Beləliklə, fərqliliyi radikal (R) müəyyən edir."
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 225,
+    "q": "Nuklein turşularının monomer halqası nədir?",
+    "options": [
+      "Yağ turşuları",
+      "Qlükoza",
+      "Aminturşular",
+      "Nukleotidlər"
+    ],
+    "expl": "Mətndən: Öz quruluşuna görə nuklein turşuları biopolimerlərdir. Onların monomer halqası nukleotidlərdir."
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 235,
+    "q": "RNT-nin karbohidrat komponenti nədir?",
+    "options": [
+      "Dezoksiriboza",
+      "Riboza",
+      "Qlükoza",
+      "Saxaroza"
+    ],
+    "expl": "Mətndən: RNT-də DNT-dən fərqli olaraq karbohidrat qalığı dezoksiriboza deyil, ribozadır. Bu səbəbdən onu ribonuklein turşusu adlandırırlar."
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 317,
+    "q": "Aminturşuların bir-birindən fərqlənməsinin əsas səbəbi nədir?",
+    "options": [
+      "Karboksil qruplarının fərqliliyi",
+      "Amin qruplarının sayı",
+      "Atomların sayı",
+      "Radikal (R) qruplarının fərqliliyi"
+    ],
+    "expl": "Dərslikdən: Aminturşular karboksil (-COOH) və amin qruplarının olmasına görə bir-birinə oxşasalar da, onlarda həm də oxşar olmayan radikallar vardır. Beləliklə, fərqliliyi radikal (R) müəyyən edir."
+  },
+  {
+    "cat": "Biologiya 9",
+    "array_index": 336,
+    "q": "Nuklein turşularının monomer halqası nədir?",
+    "options": [
+      "Nukleotidlər",
+      "Aminturşular",
+      "Qlükoza",
+      "Yağ turşuları"
+    ],
+    "expl": "Mətndən: Öz quruluşuna görə nuklein turşuları biopolimerlərdir. Onların monomer halqası nukleotidlərdir."
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 46,
+    "q": "H.Z.Tağıyev 1900-cü ildə Bakıda hansı müəssisənin açılmasına nail oldu?",
+    "options": [
+      "İlk toxuculuq fabriki",
+      "İlk neft zavodu",
+      "İlk çay fabriki",
+      "Metallurgiya zavodu"
+    ],
+    "expl": "Dərslikdən: 'H.Z.Tağıyev 1900-cü ildə Bakıda ilk toxuculuq fabrikinin açılmasına nail oldu. Bu fabrik Şimali Azərbaycanda hazır məhsul istehsal edən ilk müəssisə idi.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 62,
+    "q": "Çar hökuməti azərbaycanlıları rəsmi sənədlərdə necə adlandırırdı?",
+    "options": [
+      "Müsəlman, Tatar",
+      "Azərbaycanlı",
+      "Qafqazlı",
+      "Türk"
+    ],
+    "expl": "Mətndən: 'Azərbaycan və azərbaycanlı anlayışlarının işlədilməsinə icazə verilmir, azərbaycanlıları müsəlman, tatar adlandırırdılar.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 150,
+    "q": "XIX yüzilliyin 80-ci illərindəki Bakı neft sənayesini inhisar edən hansı xarici kapital nümayəndəsi güclü yer tutmağa başladı?",
+    "options": [
+      "Fransız kapitalını təmsil edən Rotşild",
+      "Nobel qardaşları",
+      "İngilis kapitalı",
+      "Amerikalı Rokfeller"
+    ],
+    "expl": "Dərslikdən: 'XIX yüzilliyin 80-ci illərində fransız kapitalını təmsil edən Rotşild, 90-cı illərində isə ingilis kapitalının nümayəndələri neft sənayesində müəyyən nüfuz qazanmışdılar.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 173,
+    "q": "Çar hökuməti azərbaycanlıları rəsmi sənədlərdə necə adlandırırdı?",
+    "options": [
+      "Müsəlman, Tatar",
+      "Türk",
+      "Qafqazlı",
+      "Azərbaycanlı"
+    ],
+    "expl": "Mətndən: 'Azərbaycan və azərbaycanlı anlayışlarının işlədilməsinə icazə verilmir, azərbaycanlıları müsəlman, tatar adlandırırdılar.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 177,
+    "q": "Kəşkül qəzetinin xüsusi əhəmiyyəti nə idi?",
+    "options": [
+      "İlk Azərbaycan qəzeti idi",
+      "O, Rusiyada nəşr edilirdi",
+      "O, ən uzun müddət çıxan qəzet idi",
+      "Onda ilk dəfə Azərbaycan milləti ifadəsi işlədildi"
+    ],
+    "expl": "Mətndən: 'Kəşkül qəzetində ilk dəfə Azərbaycan milləti ifadəsi işlədildi.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 267,
+    "q": "H.Z.Tağıyev 1900-cü ildə Bakıda hansı müəssisənin açılmasına nail oldu?",
+    "options": [
+      "İlk çay fabriki",
+      "Metallurgiya zavodu",
+      "İlk toxuculuq fabriki",
+      "İlk neft zavodu"
+    ],
+    "expl": "Dərslikdən: 'H.Z.Tağıyev 1900-cü ildə Bakıda ilk toxuculuq fabrikinin açılmasına nail oldu. Bu fabrik Şimali Azərbaycanda hazır məhsul istehsal edən ilk müəssisə idi.'"
+  },
+  {
+    "cat": "Azərbaycan tarixi 9",
+    "array_index": 284,
+    "q": "Kəşkül qəzetinin xüsusi əhəmiyyəti nə idi?",
+    "options": [
+      "İlk Azərbaycan qəzeti idi",
+      "O, ən uzun müddət çıxan qəzet idi",
+      "Onda ilk dəfə Azərbaycan milləti ifadəsi işlədildi",
+      "O, Rusiyada nəşr edilirdi"
+    ],
+    "expl": "Mətndən: 'Kəşkül qəzetində ilk dəfə Azərbaycan milləti ifadəsi işlədildi.'"
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 2,
+    "q": "Cismə üfüqi olaraq sağa doğru 40 N və eyni istiqamətdə daha 30 N qüvvə təsir edir. Bu qüvvələrin əvəzləyicisi nə qədərdir və hansı istiqamətə yönəlir?",
+    "options": [
+      "10 N, sağa",
+      "10 N, sola",
+      "70 N, sola",
+      "70 N, sağa"
+    ],
+    "expl": "Bir düz xətt boyunca eyni istiqamətdə yönələn qüvvələrin əvəzləyicisi bu qüvvələrin cəminə bərabərdir və onlarla eyni istiqamətə yönəlir. F_əv = 40 N + 30 N = 70 N, sağa."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 27,
+    "q": "Tarazlıqda olan lingin hər iki ucundan müəyyən kütləli yüklər asılmışdır və dayaq nöqtəsi sistemin ağırlıq mərkəzinin altındadır. Əgər lingin sağ ucundakı yükün kütləsini 2 dəfə artırsaq, lingin yenidən tarazlığa gəlməsi üçün dayaq nöqtəsini hansı istiqamətdə sürüşdürmək lazımdır?",
+    "options": [
+      "Sağ qola doğru",
+      "Hərəkət istiqaməti yüklərin asılma hündürlüyündən asılıdır",
+      "Sol qola doğru",
+      "Dayaq nöqtəsinin yeri dəyişməməlidir"
+    ],
+    "expl": "F1 · l1 = F2 · l2 şərtinə əsasən, əgər F2 (sağdakı qüvvə) 2 dəfə artarsa, momentləri bərabərləşdirmək üçün l2 (sağ qol) qısalmalı, l1 isə uzanmalıdır. Bunun üçün dayaq nöqtəsi ağır yük olan tərəfə, yəni sağ qola doğru sürüşdürülməlidir."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 29,
+    "q": "Lingə tətbiq olunan iki qüvvə onu əks istiqamətlərdə fırlatmağa çalışır. Qüvvələrdən biri 60 N və onun qolu 20 sm-dir. İkinci qüvvə isə 30 N-dur. Əgər ling tarazlıqda olarsa və biz birinci qüvvəni 15 N azaltsaq, lingi yenidən tarazlaşdırmaq üçün ikinci qüvvənin qolunun uzunluğunu necə dəyişmək lazımdır?",
+    "options": [
+      "20 sm artmalıdır",
+      "10 sm azalmalıdır",
+      "10 sm artmalıdır",
+      "15 sm azalmalıdır"
+    ],
+    "expl": "Əvvəlki tarazlıq şərtinə görə ikinci qüvvənin qolu: 60 · 20 = 30 · l2 → 1200 = 30 · l2 → l2 = 40 sm. Birinci qüvvə 15 N azalarsa, yeni qüvvə F1 = 60 - 15 = 45 N olar. Yeni tarazlıq üçün: 45 · 20 = 30 · l2' → 900 = 30 · l2' → l2' = 30 sm. Deməli, qol 40 - 30 = 10 sm azalmalıdır."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 72,
+    "q": "Gəmi suyun səthində sükunətdədir. Ona Yer tərəfindən 50000 N ağırlıq qüvvəsi təsir edir. Göyərtəyə 10000 N ağırlıq qüvvəsi təsir edən əlavə yük mindirilir və gəmi yenə sükunətdə qalır. Bu halda gəmiyə təsir edən Arximed qüvvəsi nə qədər olar?",
+    "options": [
+      "10000 N",
+      "50000 N",
+      "40000 N",
+      "60000 N"
+    ],
+    "expl": "Gəmi və yük birlikdə sükunətdədir. Aşağı doğru təsir edən ümumi qüvvə ağırlıq qüvvələrinin cəmidir: 50000 N + 10000 N = 60000 N. Sükunətdə qalması üçün əvəzləyici qüvvə sıfır olmalıdır, buna görə də yuxarı yönələn Arximed qüvvəsi tam olaraq 60000 N olmalıdır."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 100,
+    "q": "Kütləsi 1200 kq olan avtomobilin başlanğıc sürəti 15 m/s-dir. Avtomobil tormozlanaraq 20 saniyədən sonra dayanarsa, ona təsir edən əvəzləyici qüvvənin qiymətini və istiqamətini tapın.",
+    "options": [
+      "900 N, hərəkətin əksinə",
+      "900 N, hərəkət istiqamətində",
+      "1200 N, hərəkətin əksinə",
+      "1500 N, hərəkət istiqamətində"
+    ],
+    "expl": "Təcili hesablayaq: a = (v - v_0)/t = (0 - 15)/20 = -0.75 m/s². Nyutonun ikinci qanununa görə F_əv = m·a = 1200 · (-0.75) = -900 N. Mənfi işarə qüvvənin hərəkətin əksinə yönəldiyini göstərir."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 117,
+    "q": "Bir cismin Yerdəki çəkisi 400 N-dur. Həmin cisim sərbəst düşərkən ona təsir edən ağırlıq qüvvəsi və çəkisi haqqında nə demək olar? (Havanın müqaviməti nəzərə alınmır)",
+    "options": [
+      "Hər ikisi 400 N-dur",
+      "Hər ikisi 0 N-dur",
+      "Ağırlıq qüvvəsi 400 N, çəkisi 0 N",
+      "Ağırlıq qüvvəsi 0 N, çəkisi 400 N"
+    ],
+    "expl": "Cisim sərbəst düşərkən dayaq və ya asqı olmadığı üçün çəkisizlik yaranır, yəni çəki (P) sıfıra bərabər olur. Lakin cismə Yerin cazibə qüvvəsi (ağırlıq qüvvəsi) təsir etməkdə davam edir və o, 400 N olaraq qalır."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 167,
+    "q": "Cismə üfüqi olaraq sağa doğru 40 N və eyni istiqamətdə daha 30 N qüvvə təsir edir. Bu qüvvələrin əvəzləyicisi nə qədərdir və hansı istiqamətə yönəlir?",
+    "options": [
+      "70 N, sağa",
+      "10 N, sağa",
+      "70 N, sola",
+      "10 N, sola"
+    ],
+    "expl": "Bir düz xətt boyunca eyni istiqamətdə yönələn qüvvələrin əvəzləyicisi bu qüvvələrin cəminə bərabərdir və onlarla eyni istiqamətə yönəlir. F_əv = 40 N + 30 N = 70 N, sağa."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 171,
+    "q": "Cismə üfüqi istiqamətdə sağa doğru 80 N, sola doğru isə 50 N qüvvə təsir edir. Cismə təsir edən əvəzləyici qüvvəni tapın.",
+    "options": [
+      "30 N, sola",
+      "30 N, sağa",
+      "130 N, sola",
+      "130 N, sağa"
+    ],
+    "expl": "Əks istiqamətdə təsir edən qüvvələrin əvəzləyicisi onların fərqinə bərabərdir və istiqaməti böyük qüvvə istiqamətinə yönəlir. F_əv = 80 N - 50 N = 30 N. Böyük qüvvə sağa olduğu üçün əvəzləyici də sağa yönəlir."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 191,
+    "q": "Tarazlıqda olan lingin hər iki ucundan müəyyən kütləli yüklər asılmışdır və dayaq nöqtəsi sistemin ağırlıq mərkəzinin altındadır. Əgər lingin sağ ucundakı yükün kütləsini 2 dəfə artırsaq, lingin yenidən tarazlığa gəlməsi üçün dayaq nöqtəsini hansı istiqamətdə sürüşdürmək lazımdır?",
+    "options": [
+      "Sol qola doğru",
+      "Dayaq nöqtəsinin yeri dəyişməməlidir",
+      "Sağ qola doğru",
+      "Hərəkət istiqaməti yüklərin asılma hündürlüyündən asılıdır"
+    ],
+    "expl": "F1 · l1 = F2 · l2 şərtinə əsasən, əgər F2 (sağdakı qüvvə) 2 dəfə artarsa, momentləri bərabərləşdirmək üçün l2 (sağ qol) qısalmalı, l1 isə uzanmalıdır. Bunun üçün dayaq nöqtəsi ağır yük olan tərəfə, yəni sağ qola doğru sürüşdürülməlidir."
+  },
+  {
+    "cat": "Fizika",
+    "array_index": 193,
+    "q": "Lingə tətbiq olunan iki qüvvə onu əks istiqamətlərdə fırlatmağa çalışır. Qüvvələrdən biri 60 N və onun qolu 20 sm-dir. İkinci qüvvə isə 30 N-dur. Əgər ling tarazlıqda olarsa və biz birinci qüvvəni 15 N azaltsaq, lingi yenidən tarazlaşdırmaq üçün ikinci qüvvənin qolunun uzunluğunu necə dəyişmək lazımdır?",
+    "options": [
+      "10 sm artmalıdır",
+      "20 sm artmalıdır",
+      "10 sm azalmalıdır",
+      "15 sm azalmalıdır"
+    ],
+    "expl": "Əvvəlki tarazlıq şərtinə görə ikinci qüvvənin qolu: 60 · 20 = 30 · l2 → 1200 = 30 · l2 → l2 = 40 sm. Birinci qüvvə 15 N azalarsa, yeni qüvvə F1 = 60 - 15 = 45 N olar. Yeni tarazlıq üçün: 45 · 20 = 30 · l2' → 900 = 30 · l2' → l2' = 30 sm. Deməli, qol 40 - 30 = 10 sm azalmalıdır."
+  },
+  {
+    "cat": "Coğrafiya",
+    "array_index": 1,
+    "q": "Tarixdə Cənub qütbünə çatan ilk insan kim olmuşdur?",
+    "options": [
+      "Rual Amundsen",
+      "Robert Piri",
+      "David Livinqston",
+      "Robert Skott"
+    ],
+    "expl": "Dərslik mətnində tarixi fakt olaraq qeyd edilir ki, Cənub qütbünə ilk dəfə 1911-ci ildə norveçli tədqiqatçı Rual Amundsen çatmışdır. Robert Skott isə ondan bir il sonra, 1912-ci ildə ora çata bilmişdi."
+  },
+  {
+    "cat": "Coğrafiya",
+    "array_index": 20,
+    "q": "İqlimin Günəşin üfüqdəki hündürlüyündən asılı olaraq dəyişməsini, eləcə də Yerin öz oxu və Günəş ətrafında fırlanmasını antik dövrdə izah edən alim kim olmuşdur?",
+    "options": [
+      "Eratosfen",
+      "Ptolomey",
+      "Herodot",
+      "Hipparx"
+    ],
+    "expl": "Dərslik materialına görə, Eratosfen Yerin ölçülərini hesablasa da, Günəşin üfüqdə hündürlüyündən asılı olaraq iqlimin dəyişməsini və Yerin fırlanmasını məhz Hipparx söyləmişdir."
+  },
+  {
+    "cat": "Zəfər tarixi 9",
+    "array_index": 63,
+    "q": "2013-cü ildə Avropa dövlətləri ilə imzalanan və Azərbaycanın neft-qaz strategiyasında yeni dövrün başlanğıcını qoyan sənəd necə adlandırılmışdır?",
+    "options": [
+      "\"XXI əsrin müqaviləsi\"",
+      "\"Əsrin müqaviləsi\"",
+      "\"İpək yolu\" sazişi",
+      "\"Qarabağ Bəyannaməsi\""
+    ],
+    "expl": "Dərslikdə vurğulanır: \"2013-cü ildə Avropa dövlətləri ilə 'XXI əsrin müqaviləsi' adlandırılan və Azərbaycanın qaz istehsalının artırılmasına şərait yaradan müqavilə imzalandı.\""
+  },
+  {
+    "cat": "İngilis dili 9",
+    "array_index": 18,
+    "q": "Complete the sentence with the correct form: \"To become a good reader requires ________ and patience.\"",
+    "options": [
+      "practices",
+      "the practices",
+      "practice",
+      "a practice"
+    ],
+    "expl": "\"Practice\" sözü burada mücərrəd və sayılmayan isim kimi işlənir, ona görə də qarşısında \"a/an\" artiklı və ya cəm şəkilçisi (-s) qəbul etmir. Doğru forma \"practice\"-dir."
+  },
+  {
+    "cat": "Rus dili 9",
+    "array_index": 20,
+    "q": "Укажите синоним к слову «необычный», данный в словаре к тексту.",
+    "options": [
+      "Привычный",
+      "Странный",
+      "Скучный",
+      "Непривычный"
+    ],
+    "expl": "В словарной статье к тексту слово «необычный» объясняется синонимом «непривычный»."
+  },
+  {
+    "cat": "Rus dili 9",
+    "array_index": 29,
+    "q": "Выберите правильную форму существительного для данного предложения: «В комнате стоят четыре ...»",
+    "options": [
+      "стула",
+      "стулья",
+      "стульев",
+      "стул"
+    ],
+    "expl": "После числительных 2, 3, 4 существительные мужского рода употребляются в родительном падеже единственного числа (четыре стула)."
+  },
+  {
+    "cat": "Rus dili 9",
+    "array_index": 61,
+    "q": "Укажите синоним к слову «необычный», данный в словаре к тексту.",
+    "options": [
+      "Непривычный",
+      "Скучный",
+      "Странный",
+      "Привычный"
+    ],
+    "expl": "В словарной статье к тексту слово «необычный» объясняется синонимом «непривычный»."
+  },
+  {
+    "cat": "Rus dili 9",
+    "array_index": 70,
+    "q": "Выберите правильную форму существительного для данного предложения: «В комнате стоят четыре ...»",
+    "options": [
+      "стула",
+      "стул",
+      "стулья",
+      "стульев"
+    ],
+    "expl": "После числительных 2, 3, 4 существительные мужского рода употребляются в родительном падеже единственного числа (четыре стула)."
+  },
+  {
+    "cat": "Rus dili 9",
+    "array_index": 78,
+    "q": "С каким глаголом из списка лучше всего сочетаются слова «грамматика» и «история» в контексте учебной деятельности?",
+    "options": [
+      "изучать",
+      "выполнять",
+      "слушать",
+      "писать"
+    ],
+    "expl": "Грамматику и историю как науки или учебные предметы обычно «изучают». Глагол «выполнять» подходит к слову «задание», «писать» – к «письмо»."
+  },
+  {
+    "cat": "Həyat bilgisi 9",
+    "array_index": 0,
+    "q": "Yeni dərs ilinin başlanması ilə əlaqədar respublikamızda uşaq və yeniyetmələrin iştirakçı olduqları yol-nəqliyyat hadisələrinin qarşısını almaq üçün hansı aylıq keçirilir?",
+    "options": [
+      "\"Diqqət, uşaqlar!\"",
+      "\"Təhlükəsiz məktəb yolu\"",
+      "\"Piyadalar və sürücülər\"",
+      "\"Təhlükəsiz yol\""
+    ],
+    "expl": "Dərslikdə qeyd edilir ki, Daxili İşlər Nazirliyinin müvafiq göstərişinə əsasən, hər il yeni dərs ilinin başlanması ilə əlaqədar respublikamızda \"Diqqət, uşaqlar!\" adlı hərəkətin təhlükəsizliyi aylığı keçirilir."
+  },
+  {
+    "cat": "Həyat bilgisi 9",
+    "array_index": 42,
+    "q": "Yeni dərs ilinin başlanması ilə əlaqədar respublikamızda uşaq və yeniyetmələrin iştirakçı olduqları yol-nəqliyyat hadisələrinin qarşısını almaq üçün hansı aylıq keçirilir?",
+    "options": [
+      "\"Piyadalar və sürücülər\"",
+      "\"Təhlükəsiz məktəb yolu\"",
+      "\"Təhlükəsiz yol\"",
+      "\"Diqqət, uşaqlar!\""
+    ],
+    "expl": "Dərslikdə qeyd edilir ki, Daxili İşlər Nazirliyinin müvafiq göstərişinə əsasən, hər il yeni dərs ilinin başlanması ilə əlaqədar respublikamızda \"Diqqət, uşaqlar!\" adlı hərəkətin təhlükəsizliyi aylığı keçirilir."
+  },
+  {
+    "cat": "Alman dili 9",
+    "array_index": 5,
+    "q": "Ergänze den richtigen Possessivartikel im Dativ: 'Sahila hat ein neues Auto. Sie hat ___ Schwester ihr altes Auto geschenkt.'",
+    "options": [
+      "ihrem",
+      "ihre",
+      "ihren",
+      "ihrer"
+    ],
+    "expl": "Das Verb 'schenken' steht mit dem Dativ. Da 'Schwester' feminin ist, lautet die korrekte Dativform des Possessivartikels 'ihrer'."
+  },
+  {
+    "cat": "Alman dili 9",
+    "array_index": 34,
+    "q": "Welches Wort ist ein Synonym für „eine Aufgabe oder Arbeit, die sehr anspruchsvoll ist“?",
+    "options": [
+      "Die Herausforderung",
+      "Die Fortbildung",
+      "Der Erfolg",
+      "Die Erfahrung"
+    ],
+    "expl": "Laut den Begriffsdefinitionen im Buch wird eine sehr anspruchsvolle und schwierige Aufgabe als „Herausforderung“ bezeichnet. „Fortbildung“ hingegen ist die Erweiterung von beruflichen Kenntnissen."
+  },
+  {
+    "cat": "Alman dili 9",
+    "array_index": 41,
+    "q": "Ergänze den richtigen Possessivartikel im Akkusativ: 'Ich besuche heute ___ Onkel.'",
+    "options": [
+      "meinen",
+      "mein",
+      "meinem",
+      "meines"
+    ],
+    "expl": "Das Verb 'besuchen' verlangt ein Akkusativobjekt. Da 'Onkel' maskulin ist (der Onkel), lautet die richtige Form 'meinen'."
+  },
+  {
+    "cat": "Alman dili 9",
+    "array_index": 63,
+    "q": "Welcher Begriff passt zu der Definition: „Wissen und Fähigkeiten erwerben“?",
+    "options": [
+      "Die Herausforderung",
+      "Der Erfolg",
+      "Die Bildung",
+      "Die Erfahrung"
+    ],
+    "expl": "Im Text (Wortschatz-Teil) wird 'die Bildung' als 'Wissen und Fähigkeiten erwerben' definiert. 'Erfahrung' ist durch praktische Arbeit gewonnene Kenntnis."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 14,
+    "q": "Quel est le lieu exclusif où l'on a le droit d'acheter des médicaments selon le texte ?",
+    "options": [
+      "À la clinique privée",
+      "Au supermarché",
+      "Au cabinet médical",
+      "À la pharmacie"
+    ],
+    "expl": "Mətndə \"seules les pharmacies sont habilitées à vendre des médicaments. Vous n’en trouverez pas en supermarché\" qeyd olunur. Buna görə də yalnız apteklərdə dərman satıla bilər."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 15,
+    "q": "Quel est le gérondif correct du verbe irrégulier « avoir » ?",
+    "options": [
+      "En avons",
+      "En étant",
+      "En ayant",
+      "En avouant"
+    ],
+    "expl": "\"Avoir\" feli istisna (irrégulier) olaraq qəbul edilir və onun \"gérondif\" forması \"en ayant\" kimi yazılır. \"En étant\" isə \"être\" felinin formasıdır."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 26,
+    "q": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+    "options": [
+      "trouve",
+      "trouvaient",
+      "trouvent",
+      "trouveront"
+    ],
+    "expl": "L'expression 'Il est important que' exige l'emploi du subjonctif présent. 'Scientifiques' étant pluriel, on emploie 'trouvent'."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 82,
+    "q": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+    "options": [
+      "trouvent",
+      "trouveront",
+      "trouve",
+      "trouvaient"
+    ],
+    "expl": "L'expression 'Il est important que' exige l'emploi du subjonctif présent. 'Scientifiques' étant pluriel, on emploie 'trouvent'."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 89,
+    "q": "Quelles dates correspondent à l'organisation des Jeux Paralympiques de Paris 2024 ?",
+    "options": [
+      "Du 26 juillet au 11 août",
+      "Durant le mois d'avril",
+      "Du 28 août au 8 septembre",
+      "Du 11 août au 28 août"
+    ],
+    "expl": "Le texte indique de manière explicite que « Les jeux Paralympiques ont eu lieu le 28 août et jusqu’au 8 septembre. »"
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 93,
+    "q": "Quel mot correspond à la définition : \"C’est une altération, un trouble de l'organisme\" ?",
+    "options": [
+      "La santé",
+      "La maladie",
+      "L’aliment",
+      "La sécurité"
+    ],
+    "expl": "Orqanizmin normal fəaliyyətinin pozulması xəstəlik (\"la maladie\") adlanır. \"La santé\" sağlamlıq, \"la sécurité\" təhlükəsizlik deməkdir."
+  },
+  {
+    "cat": "Fransız dili 9",
+    "array_index": 105,
+    "q": "Mettez le verbe au conditionnel présent : \"Si j'étais toi, j'_____ plus souvent à la mer.\" (aller)",
+    "options": [
+      "allais",
+      "irait",
+      "irais",
+      "irai"
+    ],
+    "expl": "\"Si + imparfait, conditionnel présent\" qaydasına əsasən, şərt cümləsindəki \"aller\" felinin 1-ci şəxsin təkində (je) conditionnel présent forması \"irais\" olmalıdır."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 18,
+    "q": "Fotosintezin qaranlıq mərhələsində atmosferdən hansı qaz udulur və üzvi maddə sintezində istifadə edilir?",
+    "options": [
+      "Oksigen",
+      "Karbon qazı",
+      "Azot",
+      "Hidrogen"
+    ],
+    "expl": "Qaranlıq mərhələdə atmosferdən udulmuş karbon qazı (CO2) hidrogenlə birləşdirilərək karbohidratların (qlükozanın) sintezində əsas karbon mənbəyi kimi istifadə olunur."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 60,
+    "q": "Çiyələk və buğda kimi bitkilərdə suyun damcılar şəklində, özü ilə bərabər duz və digər maddələri xaric etməsi prosesi necə adlanır?",
+    "options": [
+      "Transpirasiya",
+      "Osmos",
+      "Quttasiya",
+      "Diffuziya"
+    ],
+    "expl": "Dərslikdə qeyd olunur ki, çiyələk və buğda kimi bitkilərdə damcılar şəklində ayrılan su özü ilə duz və digər maddələri də çıxarır. Bu proses quttasiya adlanır. Transpirasiya isə suyun buxar şəklində xaric olmasıdır."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 95,
+    "q": "Mamır və qıjının spermatozoidlərinin yumurtahüceyrənin ifraz etdiyi maddələrə doğru üzməsi bitkilərdə hansı bioloji prosesə misaldır?",
+    "options": [
+      "Refleks",
+      "Partenogenez",
+      "Taksis",
+      "Tropizm"
+    ],
+    "expl": "Mətnə əsasən, spermatozoidlərin ifraz olunan maddələrə doğru üzməsi hərəkəti çoxhüceyrəli bitkilərdə taksis adlanır. Çünki bu, hüceyrə səviyyəsində istiqamətlənmiş bütöv yerdəyişmədir, bitki hissəsinin əyilməsi (tropizm) deyil."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 96,
+    "q": "Amöblərin olduğu suya duz kristalları qoyduqda onların yalançı ayaqlarını yığması və mühitdən uzaqlaşmağa çalışması, ovunu hiss etdikdə isə yalançı ayaqlarını uzatması hansı prosesin təzahürüdür?",
+    "options": [
+      "Quttasiya",
+      "Taksis",
+      "Tropizm",
+      "Refleks"
+    ],
+    "expl": "Birhüceyrəli orqanizm olan amöbün xarici amilə (duza və ya ova) doğru istiqamətli və ya ondan əksinə olan tam yerdəyişməsi və hüceyrə hərəkəti taksis adlanır. Onlarda sinir sistemi olmadığı üçün bu refleks sayıla bilməz."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 219,
+    "q": "Çiyələk və buğda kimi bitkilərdə suyun damcılar şəklində, özü ilə bərabər duz və digər maddələri xaric etməsi prosesi necə adlanır?",
+    "options": [
+      "Quttasiya",
+      "Osmos",
+      "Transpirasiya",
+      "Diffuziya"
+    ],
+    "expl": "Dərslikdə qeyd olunur ki, çiyələk və buğda kimi bitkilərdə damcılar şəklində ayrılan su özü ilə duz və digər maddələri də çıxarır. Bu proses quttasiya adlanır. Transpirasiya isə suyun buxar şəklində xaric olmasıdır."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 254,
+    "q": "Mamır və qıjının spermatozoidlərinin yumurtahüceyrənin ifraz etdiyi maddələrə doğru üzməsi bitkilərdə hansı bioloji prosesə misaldır?",
+    "options": [
+      "Taksis",
+      "Refleks",
+      "Partenogenez",
+      "Tropizm"
+    ],
+    "expl": "Mətnə əsasən, spermatozoidlərin ifraz olunan maddələrə doğru üzməsi hərəkəti çoxhüceyrəli bitkilərdə taksis adlanır. Çünki bu, hüceyrə səviyyəsində istiqamətlənmiş bütöv yerdəyişmədir, bitki hissəsinin əyilməsi (tropizm) deyil."
+  },
+  {
+    "cat": "Biologiya 10",
+    "array_index": 295,
+    "q": "Hüceyrədə mövcud olan ATF ehtiyatı əzələnin fəaliyyəti üçün təxminən nə qədər kifayət edir?",
+    "options": [
+      "10-15 dəqiqə fasiləsiz işləməsinə",
+      "Gün ərzində bütün hərəkətlərin icrasına",
+      "Əzələnin 20-30 dəfə yığılmasına",
+      "Əzələnin 80-100 dəfə yığılmasına"
+    ],
+    "expl": "Dərslikdə orqanizmdəki ATF ehtiyatının əzələnin cəmi 20-30 dəfə yığılmasına kifayət etdiyi xüsusi vurğulanmışdır. Buna görə də hüceyrədə ATF-in fasiləsiz sintezi getməlidir."
+  },
+  {
+    "cat": "Coğrafiya 10",
+    "array_index": 15,
+    "q": "Coğrafi tədqiqatların aparılmasında istifadə olunan ənənəvi metodlardan biri hansıdır?",
+    "options": [
+      "Coğrafi proqnozlaşdırma",
+      "Tarixi metod",
+      "Coğrafi informasiya sistemi",
+      "Aerokosmik metod"
+    ],
+    "expl": "Dərslikdə coğrafi tədqiqat metodları ənənəvi və müasir qruplara bölünür. Kartoqrafik, tarixi, müqayisə, çöl tədqiqatları və riyazi-statistik metodlar ənənəvi; aerokosmik, CİS və coğrafi proqnozlaşdırma isə müasir metodlardır."
+  },
+  {
+    "cat": "Coğrafiya 10",
+    "array_index": 49,
+    "q": "Yer qabığında dərinliyə doğru getdikcə süxurların temperaturunun hər 100 metrdə təqribən 3°C artması necə adlanır?",
+    "options": [
+      "Geotermik pillə",
+      "Geoloji qradiyent",
+      "Geotermik qradiyent",
+      "Maqnit anomaliyası"
+    ],
+    "expl": "Yer qabığında hər 100 m dərinlikdə temperaturun təqribən 3°C artmasına geotermik qradiyent deyilir. Temperaturun 1°C artması üçün lazım olan dərinlik isə geotermik pillə adlanır."
+  },
+  {
+    "cat": "Coğrafiya 10",
+    "array_index": 155,
+    "q": "Geotermik pillənin kəmiyyət göstəricisi ərazinin tektonik xüsusiyyətlərindən asılı olaraq dəyişir. Aşağıdakı ərazilərin hansında geotermik pillənin daha az olması gözlənilir?",
+    "options": [
+      "Böyük Çin düzənliyində yerləşən çökəkliklərdə",
+      "Şərqi Avropa və Qərbi Avstraliya kimi qədim platformalarda",
+      "Daimi donuşluq rayonlarında və qədim dağ sistemlərində",
+      "And dağları və Yapon adaları kimi seysmik cəhətdən fəal ərazilərdə"
+    ],
+    "expl": "Dərslikdə qeyd olunur ki, seysmik cəhətdən fəal ərazilərdə geotermik pillə az (yəni temperatur daha qısa məsafədə 1 dərəcə artır), qədim platformalarda və daimi donuşluq rayonlarında isə nisbətən çox olur. And dağları və Yapon adaları seysmik cəhətdən aktiv ərazilərdir."
+  },
+  {
+    "cat": "Coğrafiya 10",
+    "array_index": 164,
+    "q": "Yerin ətrafında yaranan və onu zərərli kosmik şüalardan qoruyan maqnit qatı necə adlanır?",
+    "options": [
+      "Stratosfer",
+      "Ozonosfer",
+      "Maqnetosfer",
+      "Litosfer"
+    ],
+    "expl": "Dərslikdəki materiallara əsasən, Yerin ətrafında onu Günəş küləyindən və zərərli kosmik radiasiyadan qoruyan görünməz qoruyucu qat maqnetosfer adlanır. Ozonosfer isə ultrabənövşəyi şüaları udur, bilavasitə maqnit təsirinə malik deyil."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 37,
+    "q": "Pentan izomeri olan 2,2-dimetilpropan molekulunda əmələ gələn karbon-karbon rabitələrini və karbon atomlarının növlərini necə səciyyələndirmək olar?",
+    "options": [
+      "Bütün karbon atomları birli karbondur və C-C rabitələri heterolitik qırılma mexanizmi ilə yaranır",
+      "4 ədəd birli və 1 ədəd dördlü karbon atomu var, molekulda cəmi 4 ədəd C-C təkqat rabitəsi mövcuddur",
+      "3 ədəd birli və 2 ədəd üçlü karbon atomu var, qeyri-polyar molekuldur və fəza quruluşu tam xəttidir",
+      "2 ədəd birli və 3 ədəd ikili karbon atomu var, molekulda cəmi 3 ədəd C-C təkqat rabitəsi mövcuddur"
+    ],
+    "expl": "2,2-dimetilpropan molekulu (neopentan) bir ədəd mərkəzi dördlü karbon atomuna birləşmiş dörd ədəd birli karbon atomundan ibarətdir. Cəmi 5 karbon atomu olduğu üçün onların aralarında 5-1=4 ədəd C-C təkqat rabitəsi mövcuddur."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 58,
+    "q": "Molekulunda ümumi sp3 hibrid orbitallarının sayı 24 olan şaxəli alkanın tərkibində iki ədəd üçlü karbon atomu mövcuddur. Bu karbohidrogenin IUPAC nomenklaturası ilə adı hansıdır?",
+    "options": [
+      "2,4-dimetilpentan",
+      "2,3-dimetilbutan",
+      "3-metilpentan",
+      "2,2-dimetilbutan"
+    ],
+    "expl": "Alkan molekulunda karbon atomları yalnız sp3 hibrid vəziyyətindədir. 24 hibrid orbitalı karbonların sayını tapmaq üçün 4-ə bölünür: 24/4 = 6 karbon atomu (heksan). İki ədəd üçlü karbon atomuna malik şaxəli heksan izomerinin formulu CH3-CH(CH3)-CH(CH3)-CH3, yəni 2,3-dimetilbutandır. Distraktorlardan 2,2-dimetilbutanda üçlü deyil, dördlü karbon atomu var."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 64,
+    "q": "Yalnız izopropilxlorid molekullarının natrium metalı ilə reaksiyasına (Vürs reaksiyası) əsasən hansı simmetrik alkan əmələ gəlir?",
+    "options": [
+      "2-metilpentan",
+      "Normal heksan",
+      "2,2-dimetilbutan",
+      "2,3-dimetilbutan"
+    ],
+    "expl": "Vürs reaksiyası zamanı alkil radikalları bir-biri ilə birləşir. İzopropil radikalı CH3-CH(CH3)- quruluşundadır. İki izopropil radikalının ikili karbonlardan birləşməsi nəticəsində 2,3-dimetilbutan (CH3-CH(CH3)-CH(CH3)-CH3) əmələ gəlir. Digər alkanlar fərqli radikalların birləşməsindən yaranır."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 82,
+    "q": "Metanın yüksək temperaturda parçalanması müxtəlif şəraitlərdə fərqli məhsullar verir. 1000°C və 1500°C-də metanın parçalanmasından əsasən hansı maddələr alınır?",
+    "options": [
+      "1000°C-də etilen və hidrogen, 1500°C-də karbon və hidrogen.",
+      "Hər iki temperaturda yalnız karbon-dioksid və su buxarı ayrılır.",
+      "1000°C-də etan və hidrogen, 1500°C-də propan və karbon.",
+      "1000°C-də karbon (his) və hidrogen, 1500°C-də asetilen (C2H2) və hidrogen."
+    ],
+    "expl": "Metanın parçalanması temperaturdan asılıdır. 1000°C-də metan karbona (C) və hidrogenə (2H2) parçalanır. 1500°C-də isə qısa müddətli qızdırma zamanı asetilen (C2H2) və hidrogen (3H2) əmələ gəlir."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 108,
+    "q": "Alkanlarda karbon zəncirinin şaxələnməsi ilə əlaqədar yaranan quruluş izomerliyi homoloji sıranın ilk dəfə hansı nümayəndəsindən başlayır?",
+    "options": [
+      "Heksan",
+      "Propan",
+      "Pentan",
+      "Butan"
+    ],
+    "expl": "Alkanlarda molekulunda 1-3 karbon olan nümayəndələrdə (metan, etan, propan) karbon atomları fəzada yalnız bir cür, şaxəsiz birləşə bilir. Lakin molekulunda 4 karbon atomu olan butandan (C4H10) etibarən karbon atomları həm normal (şaxəsiz) n-butan, həm də şaxəli izobutan (2-metilpropan) formasında birləşə bilir. Deməli izomerlik butandan başlayır."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 141,
+    "q": "Pentan izomeri olan 2,2-dimetilpropan molekulunda əmələ gələn karbon-karbon rabitələrini və karbon atomlarının növlərini necə səciyyələndirmək olar?",
+    "options": [
+      "3 ədəd birli və 2 ədəd üçlü karbon atomu var, qeyri-polyar molekuldur və fəza quruluşu tam xəttidir",
+      "4 ədəd birli və 1 ədəd dördlü karbon atomu var, molekulda cəmi 4 ədəd C-C təkqat rabitəsi mövcuddur",
+      "Bütün karbon atomları birli karbondur və C-C rabitələri heterolitik qırılma mexanizmi ilə yaranır",
+      "2 ədəd birli və 3 ədəd ikili karbon atomu var, molekulda cəmi 3 ədəd C-C təkqat rabitəsi mövcuddur"
+    ],
+    "expl": "2,2-dimetilpropan molekulu (neopentan) bir ədəd mərkəzi dördlü karbon atomuna birləşmiş dörd ədəd birli karbon atomundan ibarətdir. Cəmi 5 karbon atomu olduğu üçün onların aralarında 5-1=4 ədəd C-C təkqat rabitəsi mövcuddur."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 149,
+    "q": "Səmərəli (rasional) adlandırma nomenklaturasına əsasən, mürəkkəb quruluşlu alkanlar hansı karbohidrogenin törəməsi kimi qəbul edilir?",
+    "options": [
+      "Etanın",
+      "Metanın",
+      "Propanın",
+      "Butanın"
+    ],
+    "expl": "Dərslikdəki səmərəli (rasional) adlandırma qaydasına əsasən, bütün alkanlara ən sadə karbohidrogen olan metan (CH4) molekulunda hidrogen atomlarının qismən və ya tamamilə alkil radikalları ilə əvəz olunması nəticəsində alınan məhsul kimi baxılır. Məsələn, etana metanın bir metil radikalı ilə əvəz olunmuş törəməsi (metilmetan) kimi yanaşılır."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 154,
+    "q": "«Metildipropilmetan» səmərəli adı ilə verilmiş alkanın beynəlxalq (IUPAC) nomenklaturası ilə adı nədir?",
+    "options": [
+      "3-metilheptan",
+      "2-metiloktan",
+      "3-metilheksan",
+      "4-metilheptan"
+    ],
+    "expl": "Səmərəli ad olan 'metildipropilmetan' mərkəzi 'metan' karbonuna bir metil (-CH3) və iki propil (-CH2-CH2-CH3) radikalının birləşdiyini göstərir. Zəncir açılışı: CH3-CH2-CH2-CH(CH3)-CH2-CH2-CH3. Ən uzun zəncir 7 karbonludur (heptan). Şaxə hər iki tərəfdən eyni uzaqlıqdadır, yəni mərkəzdəki 4-cü karbona düşür. Düzgün beynəlxalq ad 4-metilheptan olur."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 161,
+    "q": "Molekulunda ümumi sp3 hibrid orbitallarının sayı 24 olan şaxəli alkanın tərkibində iki ədəd üçlü karbon atomu mövcuddur. Bu karbohidrogenin IUPAC nomenklaturası ilə adı hansıdır?",
+    "options": [
+      "2,2-dimetilbutan",
+      "3-metilpentan",
+      "2,4-dimetilpentan",
+      "2,3-dimetilbutan"
+    ],
+    "expl": "Alkan molekulunda karbon atomları yalnız sp3 hibrid vəziyyətindədir. 24 hibrid orbitalı karbonların sayını tapmaq üçün 4-ə bölünür: 24/4 = 6 karbon atomu (heksan). İki ədəd üçlü karbon atomuna malik şaxəli heksan izomerinin formulu CH3-CH(CH3)-CH(CH3)-CH3, yəni 2,3-dimetilbutandır. Distraktorlardan 2,2-dimetilbutanda üçlü deyil, dördlü karbon atomu var."
+  },
+  {
+    "cat": "Kimya 10",
+    "array_index": 183,
+    "q": "Metanın yüksək temperaturda parçalanması müxtəlif şəraitlərdə fərqli məhsullar verir. 1000°C və 1500°C-də metanın parçalanmasından əsasən hansı maddələr alınır?",
+    "options": [
+      "1000°C-də etilen və hidrogen, 1500°C-də karbon və hidrogen.",
+      "Hər iki temperaturda yalnız karbon-dioksid və su buxarı ayrılır.",
+      "1000°C-də karbon (his) və hidrogen, 1500°C-də asetilen (C2H2) və hidrogen.",
+      "1000°C-də etan və hidrogen, 1500°C-də propan və karbon."
+    ],
+    "expl": "Metanın parçalanması temperaturdan asılıdır. 1000°C-də metan karbona (C) və hidrogenə (2H2) parçalanır. 1500°C-də isə qısa müddətli qızdırma zamanı asetilen (C2H2) və hidrogen (3H2) əmələ gəlir."
+  },
+  {
+    "cat": "İnformatika 10",
+    "array_index": 7,
+    "q": "Elektron kitabın hər səhifəsində 60 sətir və hər sətrində 80 simvol mövcuddur. Kitab 100 səhifədən ibarətdir və mətni tərtib etmək üçün standart ASCII kodlaşdırmasından (1 simvol = 1 bayt) istifadə edilmişdir. Bu kitabın yaddaşda tutduğu informasiya həcmi riyazi olaraq nə qədərdir?",
+    "options": [
+      "480000 bit",
+      "480.00 Kbayt",
+      "468.75 Kbayt",
+      "4.68 Mbayt"
+    ],
+    "expl": "1. Mətndəki ümumi simvolların sayı: 100 səhifə * 60 sətir * 80 simvol = 480.000 simvol. 2. ASCII əlifbasında hər simvol 1 bayt (8 bit) yer tutur. Beləliklə, sənədin ümumi həcmi 480.000 baytdır. 3. Baytı kilobayta (Kbayt) çevirmək üçün mütləq şəkildə 1024-ə bölmək lazımdır: 480.000 / 1024 = 468.75 Kbayt. Tənbəl qayda ilə 1000-ə bölmək (480 Kbayt) informasiya ölçü vahidləri baxımından yanlışdır."
+  }
+]

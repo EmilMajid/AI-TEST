@@ -1,0 +1,668 @@
+[
+  {
+    "id": "10-006-04-6-3-13-2d9c",
+    "passport_id": "10-006-04-6-3-13-2d9c",
+    "question": "Vürs üsulu ilə alkanların alınması zamanı, izopropilxlorid və etilxlorid qarışığının natrium metalı ilə reaksiyasından hansı alkanlar (beynəlxalq adlandırma ilə) qarışığı əmələ gələr?",
+    "options": [
+      "yalnız 2-metilbutan və pentan",
+      "izobutan, n-pentan və 2,2-dimetilbutan",
+      "n-butan, 2-metilbutan və 2,3-dimetilbutan",
+      "n-butan, 2-metilpentan və heksan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Vürs reaksiyasında iki fərqli alkilhalogenid iştirak etdikdə radikalların üç fərqli kombinasiyada (R-R, R'-R', R-R') birləşməsi mümkündür. Etil (C2H5-) radikallarının birləşməsindən n-butan (C4H10); İzopropil [(CH3)2CH-] radikallarının birləşməsindən 2,3-dimetilbutan; Etil və İzopropil radikallarının hibridləşərək birləşməsindən isə 2-metilbutan alınır. Bu proses fərqli alkan qarışığı yaradır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "4. Alkanların adlandırılması",
+    "_duplicate_of": "Kimya 10",
+    "context_chunk": "M.F.Axundzadə adına Azərbaycan Milli Kitabxanası Azərbaycanın ən böyük kitabxanasıdır.\nKitabxana fondunda 4,5 milyondan çox nüsxə çap məhsulu saxlanılır. Müəyyən\nqaydalarla rəflərə düzülən bu kitabların hər biri yerləşdiyi yerə görə müəyyən\nkoda malik olur. Bu kod əsasında hər bir kitabxanaçı istənilən kitabı qısa müddətdə\ntaparaq oxucuya təqdim edir.\nƏgər kitabxanada olan kitablar rəflərə pərakəndə (nizamsız) yerləşdin İsə idi, onları qısa\nvaxt ərzində taparaq oxucuya təqdim etmək mümkün olardımı?\nAlkanların sayının çox olduğunu nəzərə alaraq, onları adlandırmaq üçün müəyyən qaydalar\nəsasında verilmiş adlardan istifadə etmək olarmı?\nAlkanların adlandırılması qaydalarını necə müəyyən etmək olar?\nXIX əsrin sonlarına qədər üzvi maddələrin adlandırılması üçün ümumi bir üsul mövcud\ndeyildi. Bu vaxta qədər kəşf olunan maddələrə təsadüfi adlar verilirdi. Bu adlar hazırda\nmaddələrin\ntarixi (trivial) adları\nkimi saxlanılmışdır. Məsələn, metan, etan, propan, butan,\nizobutan bu maddələrə verilən tarixi adlardır.\nmetan\nTarixi (trivial) adlar\netan\npropan\nbutan\n- CH (CH\n) - CH\nizobutan\nYeni üzvi maddələrin kəşfi və sintez olunması İlə onların sayı kəskin artdı. Hər bir maddəyə\nayrıca tarixi adın verilməsi bir sıra çətinliklər yaradırdı. Bu səbəbdən maddələrin\nmüəyyən qaydalar əsasında adlandırılması zərurəti yarandı və müxtəlif adlandırma üsulları\ntəklif olundu. Bu üsulların müəyyən qaydalarını tətbiq etməklə üzvi birləşmələr asanlıqla\nadlandırılır. 1. II\n2.1,2,3\n3. 2,4-dİmetilheksan\n4.di"
+  },
+  {
+    "id": "10-006-05-2-1-05-eae6",
+    "passport_id": "10-006-05-2-1-05-eae6",
+    "question": "Yalnız izopropilxlorid molekullarının natrium metalı ilə reaksiyasına (Vürs reaksiyası) əsasən hansı simmetrik alkan əmələ gəlir?",
+    "options": [
+      "2-metilpentan",
+      "Normal heksan",
+      "2,2-dimetilbutan",
+      "2,3-dimetilbutan"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vürs reaksiyası zamanı alkil radikalları bir-biri ilə birləşir. İzopropil radikalı CH3-CH(CH3)- quruluşundadır. İki izopropil radikalının ikili karbonlardan birləşməsi nəticəsində 2,3-dimetilbutan (CH3-CH(CH3)-CH(CH3)-CH3) əmələ gəlir. Digər alkanlar fərqli radikalların birləşməsindən yaranır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5. Alkanların təbiətdə tapılması və alınması",
+    "_duplicate_of": "Kimya 10",
+    "context_chunk": "tapılması və alınması\nAntarktidada buz təbəqələrinin altında nəhəng metan\nyataqları var. Buzlaşma dövründə bu ərazidə\nolan qalın meşələr buz təbəqələri altında qalmış və\nonların qalıqları mikroorqanizmlər tərəfindən parçalanaraq\ntədricən metana çevrilmişdir.\nMetan və onun homoloqlarının təbiətdə başqa hansı\nmənbələri var?\nAlkanları hansı üsullarla almaq olar?"
+  },
+  {
+    "id": "10-006-05-3-2-07-57a1",
+    "passport_id": "10-006-05-3-2-07-57a1",
+    "question": "Natrium-propionatın bərk natrium-hidroksidlə reaksiyasından alınan üzvi maddənin molekulunda neçə siqma (σ) rabitə mövcuddur?",
+    "options": [
+      "4 ədəd",
+      "13 ədəd",
+      "10 ədəd",
+      "7 ədəd"
+    ],
+    "correctAnswer": 3,
+    "explanation": "C2H5COONa + NaOH -> C2H6 (etan) + Na2CO3 reaksiyası baş verir. Alınan üzvi maddə etandır (C2H6). Etan molekulunda 2 karbon və 6 hidrogen atomu var. Karbonlar arasında 1 ədəd C-C siqma rabitəsi və karbonla hidrogenlər arasında 6 ədəd C-H siqma rabitəsi var. Cəmi: 1 + 6 = 7 ədəd siqma rabitə mövcuddur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5. Alkanların təbiətdə tapılması və alınması",
+    "_duplicate_of": "Kimya 10",
+    "context_chunk": "tapılması və alınması\nAntarktidada buz təbəqələrinin altında nəhəng metan\nyataqları var. Buzlaşma dövründə bu ərazidə\nolan qalın meşələr buz təbəqələri altında qalmış və\nonların qalıqları mikroorqanizmlər tərəfindən parçalanaraq\ntədricən metana çevrilmişdir.\nMetan və onun homoloqlarının təbiətdə başqa hansı\nmənbələri var?\nAlkanları hansı üsullarla almaq olar?"
+  },
+  {
+    "id": "10-007-01-xatırlama-sadə-02-598a",
+    "passport_id": "10-007-01-xatırlama-sadə-02-598a",
+    "question": "Ordinat oxuna paralel çəkilmiş düz xətt asılılığın qrafikini iki fərqli nöqtədə kəsirsə, bu asılılıq haqqında nə demək olar?",
+    "options": [
+      "Bu asılılıq yalnız müsbət x-lər üçün təyin olunmuş funksiyadır",
+      "Bu asılılıq xətti funksiyadır",
+      "Bu asılılıq kvadratik funksiyadır",
+      "Bu asılılıq funksiya deyil"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd olunduğu kimi, ordinat (y) oxuna paralel çəkilmiş istənilən şaquli düz xətt qrafiki ən çoxu bir nöqtədə kəsərsə, bu asılılıq funksiyadır. Əgər iki (və ya daha çox) nöqtədə kəsirsə, deməli, arqumentin (x-in) eyni qiymətinə asılı dəyişənin (y-in) bir neçə fərqli qiyməti uyğun gəlir. Bu isə funksiyanın birmənalılıq şərtinə (tərifinə) ziddir. Deməli, qrafik funksiya təyin etmir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Funksiya və onun verilmə üsulları",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-10-4-3-14-d31f",
+    "passport_id": "10-007-10-4-3-14-d31f",
+    "question": "$f(x) = \\frac{3x - 1}{x + 2}$ funksiyasının qiymətlər çoxluğunu tapın.",
+    "options": [
+      "$(-\\infty, +\\infty)$",
+      "$(-\\infty, 0) \\cup (0, +\\infty)$",
+      "$(-\\infty, 3) \\cup (3, +\\infty)$",
+      "$(-\\infty, -2) \\cup (-2, +\\infty)$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kəsr-xətti funksiyanın qiymətlər çoxluğunu asanlıqla tərs funksiyanı taparaq müəyyən etmək olar. $y = \\frac{3x - 1}{x + 2}$ tənliyindən $x$-i $y$ ilə ifadə edək: $y(x + 2) = 3x - 1 \\implies yx + 2y = 3x - 1 \\implies x(y - 3) = -2y - 1 \\implies x = \\frac{-2y - 1}{y - 3}$. Tərs funksiyanın məxrəci sıfır ola bilməz: $y - 3 \\neq 0 \\implies y \\neq 3$. Deməli, ilkin funksiya 3 qiymətini ala bilmir, qiymətlər çoxluğu $(-\\infty, 3) \\cup (3, +\\infty)$ olur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Bəzi funksiyaların təyin oblastı və qiymətlər çoxluğu",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "(AZN)\n1\nUn məhsulları (çörək və çörək məhsulları)\n136,8\n0,50-1,00\n2 (AZN)\n1\n2\nTərtib etdiyiniz siyahı və illik xərcləriniz üçün aldığınız nəticəni evdə valideynlərinizlə müzakirə edin.\nAilə büdcəsinə qənaət etmək barədə təkliflər hazırlayın.\n5.6\nTULLANTILAR VƏ ONLARDAN İSTİFADƏ\nSizə\nməlumdur\nMütəxəssislərin fikrincə, iri şəhərlərdə gün ərzində bir nəfər 1 kq məişət\ntullantısı atır. Bu tullantılar ətraf mühitin çirklənməsində əsas mənbə\nsayılsa da, onlar qiymətli xammal hesab olunur. Tullantılardan səmərəli\nistifadə sayəsində faydalı qazıntılara qənaət etmək mümkündür.\nTƏDQİQAT İŞİ •\nŞəklə əsasən tullantıların hansı metodlarla utilizasiyasının məqsədəuyğun olduğunu təhlil edin.\nMüzakirə edin və nəticə çıxarın:\n- Hansı metodu daha üstün hesab edirsiniz?\n- Məqsədəuyğun hesab etdiyiniz metodun hansı iqtisadi, sosial və ekoloji üstünlükləri vardır?\nTullantılar ətraf mühitin çirklənməsində mühüm problemlərdən biridir. Tullantılar\n2 qrupa ayrılır.\n• Məişət tullantıları\n- gündəlik istifadə\nolunan kağız, sellofan, plastik və şüşə\nqablar, qida tullantıları. Təmir zamanı\natılan tullantılar da məişət tullantıları\nsayılır.\n• İstehsalat tullantıları\n- tibb ocaqlarında,\nsənaye və kənd təsərrüfatı müəssisələrində\natılan, eləcə də radioaktiv\nmaddələrdir."
+  },
+  {
+    "id": "10-007-03-04-orta-08-47b6",
+    "passport_id": "10-007-03-04-orta-08-47b6",
+    "question": "$f(x)$ cüt, $g(x)$ isə tək funksiyadır (və hər ikisinin təyin oblastı eyni, simmetrik çoxluqdur). $h(x) = f(x) \\cdot g(x)$ funksiyasının tək-cütlüyü haqqında nə demək olar?",
+    "options": [
+      "Daimi (sabit) funksiyadır",
+      "Tək funksiyadır",
+      "Cüt funksiyadır",
+      "Nə tək, nə də cüt funksiyadır"
+    ],
+    "correctAnswer": 1,
+    "explanation": "$h(x)$ funksiyasında $-x$ yazaraq xassəni yoxlayaq: $h(-x) = f(-x) \\cdot g(-x)$. Şərtə görə $f(x)$ cüt ($f(-x) = f(x)$), $g(x)$ tək ($g(-x) = -g(x)$) funksiyadır. Yerinə yazsaq, $h(-x) = f(x) \\cdot (-g(x)) = -(f(x) \\cdot g(x)) = -h(x)$. Deməli, $h(x)$ hasil tək funksiyadır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Cüt funksiya, tək funksiya",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-05-04-çətin-2-ce04",
+    "passport_id": "10-007-05-04-çətin-2-ce04",
+    "question": "$y = x^n$ ($n \\in \\mathbb{N}$) qüvvət funksiyası və $y = 81$ düz xəttinin kəsişmə nöqtələrinin absisləri fərqinin modulu 6 olarsa, bu qüvvət funksiyasının $x = -2$ nöqtəsindəki qiymətini tapın.",
+    "options": [
+      "-8",
+      "64",
+      "-16",
+      "16"
+    ],
+    "correctAnswer": 0,
+    "explanation": "$y = x^n$ və $y = 81$ xətlərinin kəsişməsi üçün tənlik $x^n = 81$-dir. İki kəsişmə nöqtəsi olması $n$-in cüt olduğunu göstərir. Köklər $x_1 = \\sqrt[n]{81}$ və $x_2 = -\\sqrt[n]{81}$ olur. Şərtə görə: $\\sqrt[n]{81} - (-\\sqrt[n]{81}) = 6 \\Rightarrow 2\\sqrt[n]{81} = 6 \\Rightarrow \\sqrt[n]{81} = 3 \\Rightarrow 3^{4/n} = 3^1 \\Rightarrow n = 4$. Funksiya $y = x^4$ olduğundan, $x = -2$ üçün $y = (-2)^4 = 16$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5. y = x^n (n in N) qüvvət funksiyaları",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-06-3-1-03-96c1",
+    "passport_id": "10-007-06-3-1-03-96c1",
+    "question": "Hissə-hissə verilmiş $f(x) = \\begin{cases} 3x - 1, & x \\le 2 \\\\ k - x, & x > 2 \\end{cases}$ funksiyasının qrafikini \"qələmi vərəqdən ayırmadan\" çəkmək mümkündürsə (yəni kəsilməzdirsə), $k$ parametrinin qiymətini tapın.",
+    "options": [
+      "7",
+      "3",
+      "5",
+      "-1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd edildiyi kimi, qələmi vərəqdən ayırmadan qrafiki təsvir etmək olursa, funksiya kəsilməzdir. Funksiyanın $x = 2$ nöqtəsində kəsilməz olması üçün hər iki düsturun bu nöqtədəki qiymətləri (limitləri) bərabər olmalıdır.\nBirinci düstura görə: $f(2) = 3(2) - 1 = 5$.\nİkinci düstur üzrə də qiymət $5$-ə bərabər olmalıdır: $k - 2 = 5 \\implies k = 7$.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Hissə-hissə verilmiş funksiyalar",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-08-05-3-12-e78f",
+    "passport_id": "10-007-08-05-3-12-e78f",
+    "question": "$f(x) = x^2 - 3x$ və $g(x) = 2x - 1$ olarsa, $f(g(x))$ funksiyasının ən kiçik qiymətini tapın.",
+    "options": [
+      "-2",
+      "-2.25",
+      "1.25",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Xarici funksiya $f(t) = t^2 - 3t$ kvadratik funksiyadır və qolları yuxarı yönəlib. Onun ən kiçik qiyməti parabolanın təpə nöqtəsində $t = -\\frac{b}{2a} = \\frac{3}{2} = 1.5$ olduqda alınır. \nDaxili funksiya $g(x) = 2x - 1$ bütün həqiqi qiymətləri, o cümlədən 1.5-i ala bilir (bu halda $x = 1.25$). \nDeməli, $f(g(x))$-in ən kiçik qiyməti $f(1.5)$ olacaq: $f(1.5) = (1.5)^2 - 3(1.5) = 2.25 - 4.5 = -2.25$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Mürəkkəb funksiya",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-09-3-orta-4-62af",
+    "passport_id": "10-007-09-3-orta-4-62af",
+    "question": "$f(x) = -\\frac{1}{2}x + 3$ funksiyasının qrafiki ilə onun tərsinin qrafikinin kəsişmə nöqtəsinin koordinatlarını tapın.",
+    "options": [
+      "$(3; 3)$",
+      "$(2; 2)$",
+      "$(4; 4)$",
+      "$(6; 6)$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azalan funksiyanın qrafiki ilə tərsinin kəsişmə nöqtəsi əsasən $y = x$ düz xətti üzərində yerləşir. Kəsişmə nöqtəsini tapmaq üçün $f(x) = x$ tənliyini həll edə bilərik: $-\\frac{1}{2}x + 3 = x \\implies \\frac{3}{2}x = 3 \\implies x = 2$. Onda $y = 2$. Kəsişmə nöqtəsi $(2; 2)$-dir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Tərs funksiya",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-007-09-6-çətin-3-b5c6",
+    "passport_id": "10-007-09-6-çətin-3-b5c6",
+    "question": "$f(x) = -x^2 + 4x - 3$ funksiyası $(-\\infty; 2]$ aralığında verilmişdir. Bu funksiyanın tərsini tapın.",
+    "options": [
+      "$f^{-1}(x) = 2 - \\sqrt{1 - x}$",
+      "$f^{-1}(x) = -2 + \\sqrt{1 - x}$",
+      "$f^{-1}(x) = 2 + \\sqrt{1 - x}$",
+      "$f^{-1}(x) = 2 - \\sqrt{x + 1}$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Verilmiş funksiyanı tam kvadrat ayırmaqla yazaq: $y = -(x^2 - 4x + 4) + 1 = 1 - (x - 2)^2$. Tənliyi $x$-ə görə həll edək: $(x - 2)^2 = 1 - y \\implies |x - 2| = \\sqrt{1 - y}$. Təyin oblastına görə $x \\le 2$ olduğundan $x - 2 \\le 0$, yəni $|x - 2| = -(x - 2) = 2 - x$. Onda $2 - x = \\sqrt{1 - y} \\implies x = 2 - \\sqrt{1 - y}$. Dəyişənləri dəyişdikdə: $f^{-1}(x) = 2 - \\sqrt{1 - x}$ alınır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Tərs funksiya",
+    "_duplicate_of": "Riyaziyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-009-1-3-tətbiq-orta-8-b895",
+    "passport_id": "10-009-1-3-tətbiq-orta-8-b895",
+    "question": "Azərbaycan əlifbasında (32 hərf) yazılmış 50 simvolluq məlumatın ümumi informasiya tutumu nə qədərdir?",
+    "options": [
+      "320 bit",
+      "250 bit",
+      "160 bit",
+      "500 bit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Azərbaycan əlifbası 32 hərfdən ibarətdir, N = 32. Hartli düsturuna əsasən, 32 = 2^5, yəni bir hərfin informasiya tutumu 5 bitdir. Məlumatda 50 simvol varsa, ümumi tutum = 50 * 5 = 250 bit təşkil edir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.3. İnformasiyanın miqdarı",
+    "_duplicate_of": "İnformatika 10",
+    "context_chunk": "vəməlumat\nsözlərinin leksik məna baxımından fərqi varmı? Cümlələrdə istifadə etməklə fikrinizi sübuta yetirin.\nŞəbəkə\nsözünün omonimliyini əsaslandırın.\nİstər radio və televiziyada, istərsə də gündəlik əlaqələrdə Azərbaycan dili qayda-qanunlarının\nardıcıl olaraq pozulmasının şahidi oluruq. Xüsusilə də orfoepik normalara tam şəkildə riayət\nolunmur. Orfoqrafik və orfoepik normalara əməl etməyin vacibliyinin dilin qorunmasında mühüm vasitə\nolması hər kəsin şüurunda, qəlbində özünə yer etməlidir. Radio və televiziya işçilərinin danışıq\norqanlarında heç bir çatışmazlıq olmamalıdır.\nKüçə və meydan reklamları, afişalar dilin ən böyük təbliğat göstəriciləridir. Onlarda buraxılan hər\nbir səhv gələcək problemlərin əsasında durur. İstənilən hamar səthə yapışdırılan qeyri-rəsmi afişa\nvə elanları tərtib edənlər onların təsir gücünü əvvəlcədən hiss etmir. Leksik və qrammatik qaydalara\nəməl edilməyən, mənası aydın olmayan belə afişa və elanları oxuyan məktəbli onu daha inandırıcı\nhesab edir və öz bildiklərini kənara qoyub onu “qəbul edir”.\nYerli-yersiz böyük hərflərlə yazılış, sonda qoyulan müxtəlif durğu işarələri və bu kimi\npozuntulardan yaxa qurtarmaq üçün mərkəzləşdirilmiş praktik bürolar yaratmağın, onlara\nmütəxəssislərin rəhbərliyini təmin etməyin də vaxtı çatmışdır. İnternet resurslarında və sosial\nşəbəkələrdə ədəbi dilin pozulması halları da istənilən qədərdir.\nHər bir millətin öz ana dilini inkişaf etdirib yaşatması onun şərəf işidir.\nFikrət Xalıqov,\nfilologiya elmləri doktoru, pro"
+  },
+  {
+    "id": "10-009-1.5-tetbiq-orta-4-315d",
+    "passport_id": "10-009-1.5-tetbiq-orta-4-315d",
+    "question": "Kompüterinizin fəaliyyətində aşkar virus əlamətləri (qəfil asılıb qalma, yersiz pəncərələr, ləngimə) hiss etdikdə, təhlükəsizlik qaydalarına əsasən edəcəyiniz ilk və ən vacib addım nədən ibarət olmalıdır?",
+    "options": [
+      "Brauzeri açıb dərhal yeni bir kommersiya antivirus proqramı satın alaraq quraşdırmağa cəhd etmək",
+      "Kompüteri söndürüb sərt diski tamamilə çıxarmaq və digər kompüterə köməkçi disk kimi taxmaq",
+      "Mühüm işlərin nəticəsini xarici daşıyıcıya kopyalayıb kompüteri şəbəkədən və İnternetdən ayırmaq",
+      "Kompüterin əməliyyat sistemini İnternet vasitəsilə avtomatik ən son versiyaya qədər yeniləmək"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərslikdə açıq göstərilir ki, ilk addım olaraq istifadəçi gördüyü vacib işləri xarici daşıyıcıda (fləş-kart və s.) saxlamalı və virusun məlumat ötürməsinin/yayılmasının qarşısını almaq üçün kompüteri dərhal lokal şəbəkə və İnternetdən ayırmalıdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1.5. Kompüter virusları",
+    "_duplicate_of": "İnformatika 10",
+    "context_chunk": "İnformatika - 3 Sözlük Qovluq Qovluq pəncərəsi Proqram kimi, hər qovluq ayrıca pəncərədə açılır. Qovluqda sənədlər varsa, onda onlar pəncərənin içində əks olunacaq. Bir qovluğun içərisində başqa qovluqlar da ola bilər. İş masasında qovluğun yerini dəyişmək üçün aşağıdakı alqoritmi yerinə yetirmək olar: İş masasında qovluğun yerinin dəyişdirilməsi alqoritmi 1 Siçanın göstəricisini qovluğun üzərinə aparın. 2 Siçanın sol düyməsini basıb saxlayın. 3 Göstəricini iş masasında istədiyiniz boş yerə hərəkət etdirin. 4 Siçanın düyməsini buraxın. İnformatika - 3 Q RAFİK REDAKTOR 20 . PAINT PROQRAMI İnsan hansı növ informasiyaları qəbul edir? Kompüter onlardan hansı ilə işləyə bilir? İnsan ona lazım olan informasiyanın əksəriyyətini gözlə alır. Ona görə də informasiyanın qrafik formada verilməsi bəzən çox faydalı olur. Qrafik informasiya ilə işləmək üçün kompüterdə xüsusi proqramlardan — qrafik redaktorlardan istifadə olunur. Belə proqramlardan biri də Paint proqramıdır. Paint proqramını başlatmaq üçün siçanın göstəricisini iş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat (qoşa) çıqqıldatmaq lazımdır. Bu zaman proqramın pəncərəsi açılacaq. Siz rəsm çəkərkən cürbəcür alətlərdən istifadə edirsiniz. Paint proqramında da rəsm çəkmək üçün uyğun alətlər nəzərdə tutulub. Alətlər qutusundan lazım olan alət, rənglər qutusundan (palitradan) isə uyğun rəng seçilir. Kompüterdə çəkilmiş şəkli çap etmək üçün printerdən istifadə olunur. Şəklin ölçüsündən asılı olaraq uyğun kağız seçm"
+  },
+  {
+    "id": "10-009-1.7-ANL-S-04-b3b8",
+    "passport_id": "10-009-1.7-ANL-S-04-b3b8",
+    "question": "Müəlliflik hüququ ilə qorunmayan və istifadəçilər tərəfindən sərbəst şəkildə üzü köçürülüb yayıla bilən proqram təminatı növü hansıdır?",
+    "options": [
+      "Şərti ödənişsiz proqram təminatı (shareware)",
+      "Özəl proqram təminatı (proprietary software)",
+      "İctimaiyyətə məxsus proqram təminatı (public-domain software)",
+      "Ödənişsiz proqram təminatı (freeware)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İctimaiyyətə məxsus proqram təminatı (public-domain software) müəlliflik hüququ ilə qorunmayan və sərbəst olaraq üzü köçürülə bilən proqram təminatıdır. Shareware və freeware isə müəlliflik hüququ ilə qorunur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Kompüter cinayətkarlığı",
+    "_duplicate_of": "İnformatika 10",
+    "context_chunk": "İnformatika - 3 Sözlük Qovluq Qovluq pəncərəsi Proqram kimi, hər qovluq ayrıca pəncərədə açılır. Qovluqda sənədlər varsa, onda onlar pəncərənin içində əks olunacaq. Bir qovluğun içərisində başqa qovluqlar da ola bilər. İş masasında qovluğun yerini dəyişmək üçün aşağıdakı alqoritmi yerinə yetirmək olar: İş masasında qovluğun yerinin dəyişdirilməsi alqoritmi 1 Siçanın göstəricisini qovluğun üzərinə aparın. 2 Siçanın sol düyməsini basıb saxlayın. 3 Göstəricini iş masasında istədiyiniz boş yerə hərəkət etdirin. 4 Siçanın düyməsini buraxın. İnformatika - 3 Q RAFİK REDAKTOR 20 . PAINT PROQRAMI İnsan hansı növ informasiyaları qəbul edir? Kompüter onlardan hansı ilə işləyə bilir? İnsan ona lazım olan informasiyanın əksəriyyətini gözlə alır. Ona görə də informasiyanın qrafik formada verilməsi bəzən çox faydalı olur. Qrafik informasiya ilə işləmək üçün kompüterdə xüsusi proqramlardan — qrafik redaktorlardan istifadə olunur. Belə proqramlardan biri də Paint proqramıdır. Paint proqramını başlatmaq üçün siçanın göstəricisini iş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat (qoşa) çıqqıldatmaq lazımdır. Bu zaman proqramın pəncərəsi açılacaq. Siz rəsm çəkərkən cürbəcür alətlərdən istifadə edirsiniz. Paint proqramında da rəsm çəkmək üçün uyğun alətlər nəzərdə tutulub. Alətlər qutusundan lazım olan alət, rənglər qutusundan (palitradan) isə uyğun rəng seçilir. Kompüterdə çəkilmiş şəkli çap etmək üçün printerdən istifadə olunur. Şəklin ölçüsündən asılı olaraq uyğun kağız seçm"
+  },
+  {
+    "id": "10-010-02-05-çətin-14-f8fb",
+    "passport_id": "10-010-02-05-çətin-14-f8fb",
+    "question": "Tapmaca və yanıltmac janrlarının bədii tərtibatı, forma xüsusiyyətləri və insanın idrak fəaliyyətinə təsiri baxımından fərqləndirilməsindəki hansı mühakimə dərslikdəki faktlarla uyuşmur?",
+    "options": [
+      "Yanıltmaclar yalnız nəzm şəklində yaradılaraq oxşar səs və sözlərin əvəzlənməsinə əsaslanır və heç bir halda nəsrlə təzahür edə bilmir.",
+      "Hər iki epik janr insanın qavrama və idrak qabiliyyətini inkişaf etdirir; yanıltmaclar xüsusilə uşaqların nitqinin və tələffüzünün rəvanlığına müsbət təsir göstərir.",
+      "Tapmacalarda obyektin məcazi təsviri və səciyyəvi əlamətləri üstüörtülü verildiyi halda, yanıltmaclar əsasən səs oyunu üzərində qurulmuş yumoristik mətndir.",
+      "Tapmacaların cavabını tapmaq üçün hadisələri və ya əşyaları sadəcə hərfi mənada anlamaq kifayət etmir, geniş obrazlı və məntiqi düşüncə tələb olunur."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yanıltmacların yalnız nəzmlə (şeirlə) yaranması fikri kökündən yanlışdır. Dərslikdə birmənalı şəkildə qeyd olunur ki, yanıltmaclar həm nəzm, həm də nəsr şəklində olur. Onların əsas xüsusiyyəti alliterasiya və səs oyunu vasitəsilə nitqi inkişaf etdirməsidir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Azərbaycan şifahi xalq yaradıcılığı",
+    "_duplicate_of": "Ədəbiyyat 10",
+    "context_chunk": "6,8\n51\nİran\n0,5 ədəbiyyatı mərhələsi kimi dəyərləndirilir. Farsdilli Azərbaycan poeziyasının\nilk görkəmli nümayəndəsi olan Qətran Təbrizinin yaradıcılığı ilə\nşeirimizin yeni inkişaf mərhələsi başlanır. XII əsrdə yazıb-yaratmış\nƏfzələddin Xaqaninin, Məhsəti Gəncəvinin və digər sənətkarların yaradıcılığı\nideya istiqamətinə, ictimai motivlərinin genişliyinə, bədii keyfiyyətinə\ngörə ədəbiyyatımızda dərin iz buraxmışdır.\nİntibah poeziyasının zirvəsi olan dahi sənətkarımız Nizami Gəncəvinin\nyaradıcılığı, onun sənət incisi sayılan “Xəmsə”si həmin dövrdə və\nsonralar yaranan ədəbiyyatın inkişafında misilsiz rol oynamışdır.\nXIII—XVI\nyüzilliklər orta əsrlər Azərbaycan ədəbiyyatı mərhələsi\nhesab olunur. Bu dövrdə ən mühüm hadisə farsca yazmaq ənənəsinin getdikcə\nzəifləməsi, ana dilində yaranan ədəbiyyatın güclənməsidir. Bu\nmərhələdə ədəbiyyatımızın inkişafı ilk növbədə Qazi Bürhanəddin,\nİmadəddin Nəsimi, Şah İsmayıl Xətayi kimi görkəmli sənətkarların adı\nilə bağlıdır. XIII əsrdə yazıb-yaratmış Şeyx İzzəddin Həsənoğlunun\nqəzəlləri ana dilində bizə çatan ilk nümunələrdir. Lakin bu nümunələrin\nyüksək bədii keyfiyyəti onlardan çox-çox əvvəl ana dilimizdə əsərlərin\nyazıldığını deməyə əsas verir. Müəllifi məlum olmayan “Dastani-Əhməd\nHərami” poeması isə ana dilində ilk epik poeziya örnəyidir.\nXIV əsrin son rübündə Azərbaycanda yeni cərəyan [[MERGE_NEXT]]\nhürufizm\nyaranmışdır.\nHürufilik fəlsəfi təlimi İmadəddin Nəsiminin yaradıcılığında\nyüksək bədii ifadəsini tapmışdır.\nXV-XVI əsrlərdə Azərbayc"
+  },
+  {
+    "id": "10-010-03-4-çətin-5-8839",
+    "passport_id": "10-010-03-4-çətin-5-8839",
+    "question": "Dastandakı surətlərin müqayisəli xarakteristikasına əsasən hansı obrazın səciyyəvi xüsusiyyəti yanlış verilmişdir?",
+    "options": [
+      "Qaragünə – Qazan xanın qardaşıdır, acığı tutanda qara daşı kül eyləyən, Qazana köməyə birinci yetişən igidlər igididir.",
+      "Yeynək bəy – İcazəsiz Bayındır xanın düşmənini basan, at ağızlı, Qazanın ən qoca və müdrik silahdaşı kimi məsləhətlər verən obrazdır.",
+      "Şöklü Məlik – Təkbətək, açıq döyüşdən çəkinən, oğuzlara yalnız xaincəsinə hücum edən, rəzil, amansız və hiyləgər düşmən obrazıdır.",
+      "Burla xatun – Oğuz elinin mənəvi dəyərlərinin ləyaqətli daşıyıcısıdır, övladı Uruzun çətin sınağında ailə namusunu hər şeydən üstün tutur."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətndə 'At ağızlı' epitetinə malik olan Aruz Qocadır. 'İcazəsiz Bayındır xanın düşmənini basan' isə Şir Şəmsəddindir. Yeynək bəy isə 'Çalım-çarpaz çalmalı... Qazlıq qoca oğlu' olaraq tamam başqa cür təsvir edilir. Yəni D variantında bir neçə ayrı obrazın xüsusiyyətləri qəsdən qarışdırılmışdır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. \"Kitabi-Dədə Qorqud\" eposu",
+    "_duplicate_of": "Ədəbiyyat 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-010-06-4-3-11-18c1",
+    "passport_id": "10-010-06-4-3-11-18c1",
+    "question": "Feyləqus və İskəndərin idarəçilik üsullarını müqayisə etdikdə, onlar üçün ortaq olan ən mühüm siyasi-əxlaqi keyfiyyət kimi nəyi dəyərləndirmək olar?",
+    "options": [
+      "Onlar yalnız elmi bilikləri inkişaf etdirir, ordudan və hərbi hərəkətlərdən qətiyyətlə imtina edirlər.",
+      "Hər ikisi idarəçilikdə ədalətli qanunlara əsaslanır, zülmü ortadan qaldırıb xalqın rəğbətini qazanmağa çalışır.",
+      "Hər iki hökmdar sonda təkallahlılığı yayan peyğəmbər məqamına qədər mənəvi təkamül keçirir.",
+      "Hər ikisi düşmənlə mübarizədə geri çəkilmək və tabe olaraq daim xərac vermək taktikasını prioritet seçir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə İskəndərin ayaq basdığı hər yerdə ədalətin bərqərar olmasına çalışdığı, Feyləqusun isə ədalətli qanun və tədbirləri ilə zülmü ortadan qaldırıb xalqın rəğbətini qazandığı bildirilir. Hər ikisinin idarəçilik fəlsəfəsinin təməlində ədalət və anti-zülm mövqeyi dayanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "İskəndərnamə",
+    "_duplicate_of": "Ədəbiyyat 10",
+    "context_chunk": "( i x t i s a r l a )\nI dərs\n• Məzmun üzrə iş"
+  },
+  {
+    "id": "10-012-1-anlama-orta-10-907e",
+    "passport_id": "10-012-1-anlama-orta-10-907e",
+    "question": "Was zeigt die Studie der Humboldt-Universität zu Berlin in Bezug auf Computernutzung an Schulen?",
+    "options": [
+      "Sie zeigt einen starken Verlust der Handschrift bei allen Schülern.",
+      "Sie zeigt, dass Eltern lieber herkömmliche Bücher als Tablets für ihre Kinder kaufen.",
+      "Sie stellt einen positiven Einfluss der Computernutzung auf Deutschleistungen und Motivation fest.",
+      "Sie beweist, dass Schüler durch Tablets weniger Interesse an Hausaufgaben haben."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Humboldt Universitetinin apardığı tədqiqatın nəticələri olaraq, kompyuter istifadəsinin alman dili nəticələrinə müsbət təsir etdiyi və ev tapşırıqlarında motivasiyanı artırdığı göstərilir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Medien und Technologie",
+    "_duplicate_of": "Alman dili 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-013-1-2-2-1-a4b6",
+    "passport_id": "10-013-1-2-2-1-a4b6",
+    "question": "Concernant la rentrée scolaire en France, quelle affirmation est correcte ?",
+    "options": [
+      "Elle commence juste après les vacances de la Toussaint pour tous les élèves.",
+      "La rentrée a toujours lieu à la fin du mois d'octobre.",
+      "Tous les élèves reprennent les cours exactement le 15 septembre.",
+      "Pour les élèves travaillant 4 jours par semaine, elle a lieu entre début septembre et début octobre."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətnə görə (səh 10), həftədə 4 gün oxuyan şagirdlər istisna olmaqla ('Sauf pour les élèves travaillant 4 jours par semaine'), dərslər adətən sentyabrın əvvəlindən oktyabrın əvvəlinə kimi başlayır. Digər variantlar yanlışdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1. Au revoir les vacances",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "Quluzadə\nGünay\nKamal\nAzTU\n...\n...\n...\n...\n...\nVerilənlər modeli nədir?\nRelyasiyalı model ağac və qraf modellərindən nə ilə fərqlənir?\nHər bir mobil telefonun yaddaşında telefon sahibinin dost və tanışlarının telefon nömrələri vardır. Bu məlumatlar toplusunu relyasiyalı model hesab etmək olarmı? Cavabı izah edin.\nCədvəldə açar sahə digər sahələrdən nə ilə fərqlənir?\nAşağıdakı verilənlərdən hansı açar sahə ola bilər?\nSoyadı, adı, şəxsiyyət vəsiqəsinin nömrəsi, evin nömrəsi, avtomobilin qeydiyyat nömrəsi, yaşadığı şəhər, işin yerinə yetirilmə tarixi\n3.3\nV"
+  },
+  {
+    "id": "10-013-1-2-2-4-b033",
+    "passport_id": "10-013-1-2-2-4-b033",
+    "question": "Quelles activités sont typiques pour les vacances de la Toussaint selon le manuel ?",
+    "options": [
+      "Faire du ski et du snowboard à la montagne.",
+      "Faire des châteaux de sable au bord de la mer.",
+      "Ouvrir tous les cadeaux et fêter en famille.",
+      "S'amuser avec des sorcières, des squelettes et récolter des bonbons."
+    ],
+    "correctAnswer": 0,
+    "explanation": "15-ci səhifədə 'Vacances de la Toussaint' (Bütün Müqəddəslər Günü) tətili üçün küpəgirən qarılar (sorcières), skeletlər (squelettes) və konfet yığmaq ('récolter des bonbons') kimi fəaliyyətlər uyğunlaşdırılmışdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1. Au revoir les vacances",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "Quluzadə\nGünay\nKamal\nAzTU\n...\n...\n...\n...\n...\nVerilənlər modeli nədir?\nRelyasiyalı model ağac və qraf modellərindən nə ilə fərqlənir?\nHər bir mobil telefonun yaddaşında telefon sahibinin dost və tanışlarının telefon nömrələri vardır. Bu məlumatlar toplusunu relyasiyalı model hesab etmək olarmı? Cavabı izah edin.\nCədvəldə açar sahə digər sahələrdən nə ilə fərqlənir?\nAşağıdakı verilənlərdən hansı açar sahə ola bilər?\nSoyadı, adı, şəxsiyyət vəsiqəsinin nömrəsi, evin nömrəsi, avtomobilin qeydiyyat nömrəsi, yaşadığı şəhər, işin yerinə yetirilmə tarixi\n3.3\nV"
+  },
+  {
+    "id": "10-013-02-04-3-14-b384",
+    "passport_id": "10-013-02-04-3-14-b384",
+    "question": "Lisez la description : \"Je ne participe jamais, je dessine sur mon agenda pendant les cours parce que je les trouve ennuyeux.\" À quel type de sentiment correspond cette attitude et qui la partage dans le texte ?",
+    "options": [
+      "La persévérance, partagée par Christine qui écoute toujours ses professeurs.",
+      "L'ambition, partagée par Maxime qui est fasciné par les mathématiques.",
+      "L'enthousiasme, partagé par Lise qui aime lever la main.",
+      "Le désintérêt, partagé par David qui voudrait choisir ses matières."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dərsdə gündəliyini qaralamaq və fənləri sıxıcı (\"ennuyeux\") adlandırmaq maraqsızlığın (le désintérêt) əlamətidir. Forumdakı müzakirədə məhz David bu cür davranışı sərgilədiyini qeyd edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. C'est la rentrée",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-L4-1-1-03-6b8e",
+    "passport_id": "10-013-L4-1-1-03-6b8e",
+    "question": "Quel est le radical du verbe \"pouvoir\" au conditionnel présent ?",
+    "options": [
+      "peuv-",
+      "pourr-",
+      "pouv-",
+      "pour-"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Pouvoir\" feli 3-cü qrupa aid qaydasız feldir və Conditionnel présent zamanında kökü \"pourr-\" olur (məsələn: je pourrais).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4. Ma matière préférée",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-L4-4-3-12-4e93",
+    "passport_id": "10-013-L4-4-3-12-4e93",
+    "question": "Remplissez les espaces vides avec la forme appropriée : \"S'il ... la vérité, il ... furieux.\"",
+    "options": [
+      "apprendrait / serait",
+      "apprenait / serait",
+      "apprend / serait",
+      "apprenait / est"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qaydaya əsasən \"Si + imparfait + conditionnel présent\" strukturu tələb olunur. \"Apprendre\" felinin imparfait forması \"apprenait\", \"être\" felinin conditionnel forması isə \"serait\" olur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4. Ma matière préférée",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-06-2-1-03-6dbc",
+    "passport_id": "10-013-06-2-1-03-6dbc",
+    "question": "Quelle phrase est utilisée pour faire un compliment sur l’apparence de quelqu’un ?",
+    "options": [
+      "Je pense que l'on nous oblige à acheter ces choses.",
+      "Tu ne trouves pas que ce pantalon me grossit ?",
+      "Je ne suis pas un peu jeune pour porter cette robe ?",
+      "La couleur de ce pull met tes yeux en valeur."
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"La couleur de ce pull met tes yeux en valeur\" (Bu sviterin rəngi sənin gözlərini vurğulayır) kiminsə xarici görünüşünə tərif vermək üçün istifadə olunur. Digər variantlar tərifə verilən cavab, şübhə və ya moda haqqında ümumi fikirdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Le vêtement comme marque de distinction",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-06-4-2-06-ce66",
+    "passport_id": "10-013-06-4-2-06-ce66",
+    "question": "D'après Jade, quelle est la conséquence si un adolescent refuse de suivre la mode ?",
+    "options": [
+      "Il reçoit plus d'attention et d'admiration de la part de ses professeurs.",
+      "Il risque d'être mis à l'écart et rejeté par les autres élèves.",
+      "Il peut devenir un célèbre designer de mode dans le futur.",
+      "Il est considéré comme une personne très originale et créative."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jade-in sözlərinə görə, modanı izləməmək həmyaşıdları tərəfindən rədd edilməyə (\"être rejeté par ses camarades\") və kənarda qalmağa səbəb ola bilər.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Le vêtement comme marque de distinction",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-L7-Tet-Orta-02-d499",
+    "passport_id": "10-013-L7-Tet-Orta-02-d499",
+    "question": "Choisissez la bonne forme du verbe pour compléter la phrase : \"Il est dommage que vous _____ cet après-midi.\"",
+    "options": [
+      "travaillaient",
+      "travaillerez",
+      "travailliez",
+      "travaillez"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Il est dommage que\" təəssüf bildirən şəxsiyyətsiz ifadədir və Subjonctif tələb edir. 1-ci qrup \"travailler\" felinin 2-ci şəxsin cəmində (vous) Subjonctif forması \"travailliez\" olur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 7. Les années collège selon",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-08-1-sadə-05-1e00",
+    "passport_id": "10-013-08-1-sadə-05-1e00",
+    "question": "Quel métier les parents de Mélissa souhaitent-ils qu'elle choisisse ?",
+    "options": [
+      "Professeur",
+      "Cuisinier",
+      "Médecin",
+      "Journaliste de mode"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mətndə Mélissa-nın valideynlərinin həkim (médecins) olduğu və qızlarının da məktəbi bitirdikdən sonra tibb təhsili alıb bu peşəni (médecine) seçməsini istədikləri qeyd olunur. Mélissa özü isə moda jurnalisti olmaq istəyir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 8. Ma famille est mon refuge",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-013-08-4-çətin-03-ee72",
+    "passport_id": "10-013-08-4-çətin-03-ee72",
+    "question": "Quel terme appartient au champ lexical du \"désamour\" ou de la \"séparation\" ?",
+    "options": [
+      "La lune de miel",
+      "Les noces",
+      "La rupture",
+      "Le coup de foudre"
+    ],
+    "correctAnswer": 3,
+    "explanation": "\"La rupture\" əlaqələrin kəsilməsi, ayrılıq (désamour/séparation) mənasına gəlir. Variantlardakı digər sözlər isə birliyi, sevgini və evliliyi ifadə edir: bal ayı (la lune de miel), ilk baxışdan eşq (le coup de foudre) və toy (les noces).",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 8. Ma famille est mon refuge",
+    "_duplicate_of": "Fransız dili 10",
+    "context_chunk": "HEYDAR ALIYEV\nLEADER NATIONAL DU PEUPLE AZERBAÏDJANAIS Je m'appelle\nMoumou, moappals\nLouzou,\nm'appelle\nm'appelle 2\nMatou, y 75 samedi\nMardi\nJeudi\nDimanche\nTN\nMercredi\nLundi\nA « Pi-Vendredi Fransız dili 2 (əsas xarici dil) ILAHA CHIRIYEVA pour la 2 e classe des écoles secondaires (première langue étrangère) © “Şərq-Qərb” OJSC Veuillez envoyer vos commentaires et suggestions concernant cette publication aux adresses e-mail ci-dessous: info@eastwest.az et derslik@edu.gov.az Merci d'avance pour votre coopération! Fransız dili 2 (əsas xarici dil) 1 Écoutez les dessins et montrez. Bonjour, Monsieur. Bonjour, Samira. Comment ça va, Sona? Ça va bien, merci. Et toi? Comment allez-vous, madame? Je vais bien, merci Ali. Salut, Teymour. Salut, Céline. Fransız dili 2 (əsas xarici dil) 2 Écoutez et associez les expressions aux dessins ci-dessus. 3 Faites parler les personnes suivantes. 4 Écoutez et répétez. Comment tu t'appelles? Comment vous vous appelez? Fransız dili 2 (əsas xarici dil) 5 Écoutez et répétez. Quel âge avez-vous, monsieur? J'ai 35 ans. Et toi, quel âge as-tu? J'ai sept ans. 6 Jouez un dialogue, utilisez les expressions des activités: 1, 4 et 5. 7 Utilisez le code QR pour écouter la chanson. 8 Observez et prononcez les lettres suivantes. Fransız dili 2 (əsas xarici dil) 1 Les élèves se présentent. Écoutez et répétez. 2 Écoutez, répétez et associez les questions aux réponses. 1 Comment t'appelles-tu? 2 Quel âge as-tu? a J’ai 8 ans. b Je m'appelle Arzou. 3 Utilisez le code QR"
+  },
+  {
+    "id": "10-014-1-2-2-1-ac42",
+    "passport_id": "10-014-1-2-2-1-ac42",
+    "question": "По какой причине в древности Каспийское море часто называли Бакинским?",
+    "options": [
+      "Из-за строительства Приморского бульвара вдоль побережья",
+      "Из-за большого количества нефтяных скважин в море",
+      "Из-за того, что город стал резиденцией ширваншахов",
+      "Из-за выгодного торгового положения и вывоза товаров"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mətnə əsasən, Bakı ticarət yollarının kəsişməsində yerləşdiyi və buradan neft, xalça, ipək və s. mallar ixrac edildiyi üçün Xəzər dənizi tez-tez Bakı dənizi adlandırılırdı (səh. 9).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Город ветров",
+    "_duplicate_of": "Rus dili 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-014-1-3-2-2-907c",
+    "passport_id": "10-014-1-3-2-2-907c",
+    "question": "Укажите правильный вариант предлога: «Наш класс скоро отправится ... экскурсию».",
+    "options": [
+      "на",
+      "за",
+      "в",
+      "к"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə (səh. 11) yerlik bildirən sözlərlə 'в/на' sözönülərinin istifadəsi yoxlanılır. Tədbir, hərəkət və ya proses bildirən sözlərlə (məsələn, экскурсия, выставка) qrammatik olaraq 'на' sözönüsü işlənir: 'отправиться на экскурсию'.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Город ветров",
+    "_duplicate_of": "Rus dili 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-014-03-4-3-11-f662",
+    "passport_id": "10-014-03-4-3-11-f662",
+    "question": "Прочитайте фрагмент: «Долгое время он был столицей государства Ширван. Находясь на пересечении караванных путей, Шамахы являлся одним из крупных торгово-ремесленных центров на Ближнем Востоке». Какой вывод можно сделать на основе данного фрагмента?",
+    "options": [
+      "Выгодное географическое положение способствовало экономическому развитию.",
+      "Торговля шёлком была единственным занятием местных жителей в средние века.",
+      "Город стал столицей государства Ширван благодаря частым визитам купцов.",
+      "Пересечение караванных путей защищало город от разрушительных землетрясений."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndən məntiqi olaraq aydın olur ki, Şamaxının karvan yollarının kəsişməsində yerləşməsi (yəni əlverişli coğrafi mövqeyi) onun mühüm ticarət və sənətkarlıq mərkəzinə çevrilməsinə (iqtisadi inkişafına) güclü təkan vermişdir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Древняя столица",
+    "_duplicate_of": "Rus dili 10",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "10-014-6-4-sadə-3-a7c3",
+    "passport_id": "10-014-6-4-sadə-3-a7c3",
+    "question": "Найдите ошибку в сочетании числительного с существительным.",
+    "options": [
+      "два медали",
+      "пять месяцев",
+      "два часа",
+      "три тетради"
+    ],
+    "correctAnswer": 2,
+    "explanation": "«Медаль» sözü qadın cinsindədir (женский род). İki miqdar sayı qadın cinsində olan isimlərlə «две» kimi işlənir. Buna görə «две медали» olmalıdır, «два медали» ifadəsi qrammatik cəhətdən yanlışdır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "6. Тестовые задания",
+    "_duplicate_of": "Rus dili 10",
+    "context_chunk": "1.Выберите верный вариант.\nA\nоба\nдруга,\nоба\nполки\nC\nобе\nокна,\nобе"
+  },
+  {
+    "id": "11-001-004-xatırlama-sadə-1-8a8e",
+    "passport_id": "11-001-004-xatırlama-sadə-1-8a8e",
+    "question": "Sinqapur təhsil sisteminin devizi olaraq qəbul edilmiş əsas məqsəd nədir?",
+    "options": [
+      "Şagirdlərə daha çox informasiya vermək və texnologiyadan istifadəni artırmaq.",
+      "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq və onda həyatı boyu öyrənməni inkişaf etdirmək.",
+      "İmtahanlarda yüksək nəticə toplamaq üçün şagirdləri daim sınaqlardan keçirmək.",
+      "Yalnız seçilmiş şagirdlərin akademik biliklərini inkişaf etdirərək onları universitetə hazırlamaq."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mətndə açıq şəkildə qeyd olunur ki, “Hər uşağın ən yaxşı tərəfini üzə çıxarmaq” Sinqapur təhsil sisteminin devizinə çevrilmişdir və əsas məqsəd uşağın istedadını kəşf etmək, potensialını reallaşdırmaqdır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "4. Hər uşağın ən yaxşı tərəfini üzə çıxarmaq",
+    "_duplicate_of": "Azərbaycan dili 11",
+    "context_chunk": "Gəncə Müsəlman Qız Məktəbi\nMətn\nDoroti Meri Kroufut Hodgkin\nMaddə 52.\nAzərbaycan dövlətinə mənsub olan, onunla siyasi və hüquqi bağlı[[MERGE_NEXT]]\nlığı, habelə qarşılıqlı hüquq və vəzifələri olan şəxs Azərbaycan\nRespublikasının vətəndaşıdır.\nAzərbaycan Respublikasının Konstitusiyası\nVətəndaş dedikdə nə başa düşürsünüz? Sizcə, kim vətəndaş he[[MERGE_NEXT]]\nsab edilir?\nNə üçün Ümummilli lider Vətənin taleyini insan taleyinə bərabər\ntu[[MERGE_NEXT]]\ntur? O bu sözlərlə xalqına hansı fikirləri çatdırmaq istəyir?\nFilosof Əbu Turxan deyir ki,\ntarixə düşmək özü də uğur hesab edi[[MERGE_NEXT]]\nlir, amma ən böyük uğur tarixin qatarında bu günə gəlib-çatmaq\nvəgələcəyə getməkdir.\nSizcə, dünəndən gələcəyə yol alan insan vətəndaş hesab edilə\nbilərmi?\nBölmədə tanış olacağınız mətnlər vasitəsilə oxuduğunuz və eşitdi[[MERGE_NEXT]]\nyiniz fikirləri təsdiq etməyə çalışın.\nBÖYÜK ÖMRÜN DAN YERİ\n(ixtisarla)"
+  },
+  {
+    "id": "11-002-01-1-sadə-4-efca",
+    "passport_id": "11-002-01-1-sadə-4-efca",
+    "question": "M.V. Volkenşteynin fikrincə canlı vücudları təşkil edən əsas biopolimerlər hansılardır?",
+    "options": [
+      "Karbohidratlar və lipidlər",
+      "Zülallar və nuklein turşuları",
+      "Zülallar və karbohidratlar",
+      "Lipidlər və nuklein turşuları"
+    ],
+    "correctAnswer": 0,
+    "explanation": "M.V. Volkenşteynin tərifində qeyd olunur ki, canlı vücudlar biopolimerlərdən - zülal və nuklein turşularından qurulmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Yer planetinin yaranması. Həyat anlayışı",
+    "_duplicate_of": "Biologiya 11",
+    "context_chunk": "Alimlər Yer üzərindəki dəyişiklikləri izləmək üçün onun tarixi inkişafını, aşağıdakı sxemdə göstərildiyi\nkimi, mərhələlərə bölmüşlər. Bu, həyatın yaranması və inkişafı haqqındakı təsəvvürlərin başa düşülməsini\nasanlaşdırır. Onlar həyatın necə yarandığını, ilk canlının meydana çıxmasını, növlərin yaranmasını, bir\nçox növlərin nəslinin kəsilmə səbəblərini müxtəlif geoloji dövrlərdə baş verən dəyişmələrin nəticəsi\nolduğunu isbat etməyə çalışmışlar.\nCanlılara xas olan həyat nədir?\nYer planeti və onun üzərində həyat necə yaranıb?\nBizə elə gəlir ki, canlını cansızdan asanlıqla fərqləndirmək olar. Məsələn, qaranquş qidalanır, tənəffüs\nedir, qıcığa qarşı cavab reaksiyası verir, böyüyür və çoxalır, uçaraq uzaq məsafələr qət edir. Günəbaxan\nda qidalanır, tənəffüs edir, çiçək açır, meyvə və toxum əmələ gətirir, lakin məkan etibarilə yer dəyişə\nbilmir. Bu əlamətlər canlılara məxsusdur. Cansızlarda isə sadalanan əlamətlərin əksəriyyətinin\nolmamasına baxmayaraq bəzi kənaraçıxmalara rast gəlinir. Məsələn, su cansızdır, lakin onun axması\nhərəkətdir. Küləyin torpağı sovurub yayması da hərəkətdir. Onda belə suallar meydana çıxır:\n- Canlını cansızdan fərqləndirən nədir?\n- Yer planetində həyatın yaranması prosesi necə gedə bilərdi?\nPlanetimiz və onun üzərində həyatın yaranması haqqında fikirlərinizi müzakirə edin.\nYer planeti və onun üzərində həyatın əmələ gəlməsi haqqında mübahisəli təsəvvürlər mövcuddur. Onlardan\nbirində deyilir ki, təxminən 4-5 milyard il əvvəl daha sonralar insanlar tərəfind"
+  },
+  {
+    "id": "11-002-02-04-çətin-1-8dd3",
+    "passport_id": "11-002-02-04-çətin-1-8dd3",
+    "question": "\"Buzlaqlar\" fərziyyəsi nəzəriyyəçilərinə görə, buz qatı altında zülalların və amin turşularının sintezi üçün zəruri olan ilkin kimyəvi maddələr hansılar idi?",
+    "options": [
+      "Meteoritlərdən ayrılan kosmik tozlar və dəmir oksidləri",
+      "Hidrogen-sulfid, azot və vulkan püskürmələrindəki ağır metallar",
+      "Maye halında tapılan azot və təmiz oksigen ehtiyatları",
+      "Qədim atmosferi təşkil edən qazlar və sianid duzları"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dərslik mətnində açıq şəkildə bildirilir ki, fərziyyəçilər buzlaqlar altında qədim atmosferi təşkil edən qazların və sianid duzlarının qarşılıqlı təsirindən amin turşularının, hətta zülalların yaranmasını söyləmişlər.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Həyatın yaranması haqqında fərziyyələr",
+    "_duplicate_of": "Biologiya 11",
+    "context_chunk": "Həyatın yaranması haqqında ən qədim fikir “öz-özünə yaranma” fərziyyəsidir.\nSizcə, həyat öz-özünə necə yarana bilərdi?\nHəyatın yaranması haqqında hansı fərziyyələr mövcuddur?\nElm adamlarından Van Helmont siçanların çirkli paltarlardan yarandığını, həkim-kimyagər Parasels isə\n“homunkulus”, yəni insanın süni hazırlanması fikrini irəli sürmüşdür.\nBu haqda fikirlərinizi bildirin və əsaslandırmağa çalışın.\nKeçmişdə insanlar böcəklərin yemək artıqlarından, güvələrin yundan, qurbağaların lildən, siçanların\nbuğdadan və çirkli paltardan əmələ gəldiyinə inanırdılar. Hətta bəzi səyyahlar getdikləri yerlərdə\nağaclar üzərində yemişəbənzər meyvələrin içərisində quzuların yetişdiyini deyirdilər. Sonralar\nhəyatın əmələ gəlməsi haqqında müxtəlif təsəvvürlər yaranmağa başladı.\n1.Vulkan püskürməsi:"
+  },
+  {
+    "id": "11-002-03-2-1-05-a663",
+    "passport_id": "11-002-03-2-1-05-a663",
+    "question": "Alman alimi Preyer tərəfindən irəli sürülən fərziyyəyə əsasən həyat haqqında nə iddia edilir?",
+    "options": [
+      "Maddələrin qıcqırmasından yaranır.",
+      "Suda reaksiyalarla yaranmışdır.",
+      "Digər planetlərdən gətirilmişdir.",
+      "Əbədidir və qeyri-üzviyə çevrilir."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Həyatın əbədiliyi fərziyyəsinə görə (Preyer və V.Vernadski), həyat əbədidir və cansızlar da canlılardan əmələ gəlmişdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Həyatın yaranması haqqında təsəvvürlərin inkişafı",
+    "_duplicate_of": "Biologiya 11",
+    "context_chunk": "təsəvvürlərin inkişafı"
+  },
+  {
+    "id": "11-002-05-2-orta-02-f85c",
+    "passport_id": "11-002-05-2-orta-02-f85c",
+    "question": "Membranın əmələ gəlməsi ilə bağlı dərslikdəki fərziyyəyə əsasən, membran necə formalaşmışdır?",
+    "options": [
+      "Koaservat damcılarının parçalanaraq ətraf mühitdən karbonhidratları udması sayəsində",
+      "Suyun səthindəki lipid pərdəsinin suya yönələn hissəsinin zülalları toplaması və sonradan ikinci zülal-lipid qatı ilə örtülməsi hesabına",
+      "Zülal molekullarının polinukleotidləri birbaşa bürüməsi nəticəsində",
+      "Sianobakteriyaların ifraz etdiyi xüsusi maddələrin polimerləşməsi nəticəsində"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd edilir ki, nohurlarda suyun səthi lipid pərdəsi ilə örtülü olmuş, suya yönələn hissə zülalları toplamış və külək vasitəsilə başqa yerə aparılaraq ikinci zülal-lipid qatı ilə örtülmüşdür.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5. Bioloji monomer və polimerlərin yaranması",
+    "_duplicate_of": "Biologiya 11",
+    "context_chunk": "yaranması\nÇikaqo Universitetinin əməkdaşı H.Yuri Yer planetində bir neçə milyon il\nbundan əvvəl hansı şəraitin olduğu barədə fikirləşir və üzvi birləşmələrin necə yarandığı haqqında\nbəzi mülahizələr söyləyir.\nH.Yuri hansı mülahizələri irəli sürmüşdür?\nHəyatın yaranmasının I mərhələsini, yəni abiogen yolla (canlının iştirakı olmadan qeyri-üzvi maddələrdən\nüzvi maddələrin sintezi) sintezin hansı şəraitdə getdiyini 1953-cü ildə amerikalı alim S.Miller özünün\ndüzəltdiyi aparatla isbat etməyə çalışmışdır.\nŞəklə əsasən həyat elementlərinin necə əmələ gəldiyi haqqında öz fikirlərinizi bildirin.\nStenli Miller həyatın yaranması sahəsində araşdırmalar apararaq məşhurlaşmışdır.\nAraşdırma nəticəsində məlum olmuşdur ki, üzvi maddələr (o cümlədən amin turşuları) həyatın yaranması\nzamanı qeyri-üzvi maddələrdən əmələ gəlmişdir.\nStenli Miller aparata su tökür və ora ilkin atmosferdə olduğu güman edilən qazları daxil edir. Su\ndaima qızdırılır.\nOndan su buxarları ayrılmağa başlayır. Su soyuducu rolu oynayan hissədən keçib soyuyur və yenidən\nqızaraq buxarlanır.\nO dövrün ildırım boşalmalarını əvəz edən qığılcım yaradan elektrodlar da daima qığılcım saçırdı.\nQaba heç bir yerdən hava və digər maddələr daxil olmurdu. Təqribən bir həftədən sonra suyun rəngi\ndəyişməyə başlayır, onun içində amin turşuları, aldehidlər, spirtlər, süd turşusu və s. maddələrin\nolduğu aşkar edilir. Millerin təcrübələrini nəzərə alaraq, bəzi elm adamları bu yolla ilk üzvi\npolimerlərin də yarandığı fikrinə gəlmişlər. Bununla "
+  }
+]

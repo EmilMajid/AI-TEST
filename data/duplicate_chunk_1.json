@@ -1,0 +1,668 @@
+[
+  {
+    "id": "08-004-46-4-3-13-42b7",
+    "passport_id": "08-004-46-4-3-13-42b7",
+    "question": "ABC üçbucağının AN və CM medianları O nöqtəsində kəsişir. Əgər AN = 15 sm, və CO = 8 sm olarsa, ON və OM parçalarının uzunluqları cəmini tapın.",
+    "options": [
+      "14 sm",
+      "13 sm",
+      "9 sm",
+      "10 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ağırlıq mərkəzi olan O nöqtəsi medianları təpədən başlayaraq 2:1 nisbətində bölür. AN = 15 sm olduğundan, ON (tərəfə qədər hissə) 15 / 3 = 5 sm olur. CO təpəyə qədər olan hissədir və CO = 8 sm-dirsə, OM (tərəfə qədər olan hissə) 8 / 2 = 4 sm olar. Bu halda ON + OM = 5 + 4 = 9 sm edir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Mütənasib parçalar",
+    "_duplicate_of": "Riyaziyyat",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-65-3-2-01-3c51",
+    "passport_id": "08-004-65-3-2-01-3c51",
+    "question": "M(1; 4) və N(2; 1) nöqtələrindən keçən düz xəttin tənliyini yazın.",
+    "options": [
+      "y = -3x + 7",
+      "y = 3x + 1",
+      "y = -3x + 4",
+      "y = 3x + 7"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Əvvəlcə bucaq əmsalını tapırıq: k = (1 - 4) / (2 - 1) = -3 / 1 = -3. Tənliyi qururuq: y - y₁ = k(x - x₁) => y - 4 = -3(x - 1) => y - 4 = -3x + 3 => y = -3x + 7. Mörtərizəni açarkən vurma işarəsində səhv edən şagird y = -3x + 4 alacaqdır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "İki nöqtədən keçən düz xəttin tənliyi",
+    "_duplicate_of": "Riyaziyyat",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-66-4-2-10-c32f",
+    "passport_id": "08-004-66-4-2-10-c32f",
+    "question": "K(a; 4) nöqtəsi koordinat başlanğıcı ətrafında saat əqrəbi hərəkətinin əksi istiqamətində 90° döndükdə K1(-4; 7) nöqtəsi alınır. 'a'-nın qiymətini tapın.",
+    "options": [
+      "-7",
+      "7",
+      "4",
+      "-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Saat əqrəbi hərəkətinin əksi istiqamətində 90° dönmə zamanı (x; y) nöqtəsi (-y; x) nöqtəsinə çevrilir. K(a; 4) nöqtəsi üçün bu qayda tətbiq edildikdə (-4; a) olacaq. Verilən K1(-4; 7) ilə müqayisə etdikdə a = 7 alınır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların çevrilməsi. Dönmə",
+    "_duplicate_of": "Riyaziyyat",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-67-3-1-03-c771",
+    "passport_id": "08-004-67-3-1-03-c771",
+    "question": "A(1; 3) və B(3; 7) nöqtələrindən keçən düz xəttin bucaq əmsalını (k) tapın.",
+    "options": [
+      "2",
+      "-2",
+      "1/2",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "İki nöqtədən keçən düz xəttin bucaq əmsalı k = (y2 - y1) / (x2 - x1) düsturu ilə tapılır. k = (7 - 3) / (3 - 1) = 4 / 2 = 2.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Triqonometrik nisbətlər. Koordinatlar üsulu. Fiqurların çevrilməsi",
+    "_duplicate_of": "Riyaziyyat",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-01-04-03-15-860f",
+    "passport_id": "08-004-01-04-03-15-860f",
+    "question": "y = √x funksiyasının qrafiki üzərində ordinatı 2,5 olan nöqtənin absisi hansı iki ardıcıl tam ədəd arasında yerləşir?",
+    "options": [
+      "2 və 3",
+      "4 və 5",
+      "5 və 6",
+      "6 və 7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Funksiyanın düsturu y = √x kimidir. Ordinat, yəni y = 2,5 verilibsə, √x = 2,5 bərabərliyindən x-i tapmalıyıq. Hər iki tərəfi kvadrata yüksəltsək, x = 2,5² = 6,25 alarıq. 6,25 ədədi ədəd oxunda 6 və 7 ardıcıl tam ədədləri arasında yerləşir.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "1 Kvadrat kök. Həqiqi ədədlər: Kvadrat köklər. Hesabi kvadrat kök",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-01-04-02-03-8fb2",
+    "passport_id": "08-004-01-04-02-03-8fb2",
+    "question": "a < 0 olduqda, \\sqrt{25a^2} ifadəsini sadələşdirin.",
+    "options": [
+      "-5a",
+      "5a",
+      "25a",
+      "-25a"
+    ],
+    "correctAnswer": 0,
+    "explanation": "\\sqrt{25a^2} = \\sqrt{(5a)^2} = |5a| = 5|a|. Şərtdə a < 0 verildiyi üçün |a| = -a olur. Buna görə də cavab 5 \\cdot (-a) = -5a alınır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Həqiqi ədədlər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-01-05-03-14-1ca3",
+    "passport_id": "08-004-01-05-03-14-1ca3",
+    "question": "$x = \\frac{\\sqrt{3} + 1}{2}$ olarsa, $4x^2 - 4x + 3$ ifadəsinin qiymətini tapın.",
+    "options": [
+      "$5$",
+      "$6$",
+      "$3$",
+      "$4$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Verilmiş $x = \\frac{\\sqrt{3} + 1}{2}$ tənliyindən $2x = \\sqrt{3} + 1$, yəni $2x - 1 = \\sqrt{3}$ alırıq. Hər iki tərəfi kvadrata yüksəltsək: $(2x - 1)^2 = (\\sqrt{3})^2 \\implies 4x^2 - 4x + 1 = 3$. Buradan $4x^2 - 4x = 2$ alırıq. Tapdığımız qiyməti axtarılan ifadədə yerinə yazsaq: $4x^2 - 4x + 3 = 2 + 3 = 5$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat kök. Həqiqi ədədlər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-9-4-3-1-f581",
+    "passport_id": "08-004-9-4-3-1-f581",
+    "question": "Düzbucaqlı üçbucağın tərəflərinin uzunluqları ardıcıl cüt ədədlərlə ifadə olunur. Bu üçbucağın perimetrini tapın.",
+    "options": [
+      "24",
+      "12",
+      "30",
+      "20"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ardıcıl cüt ədədləri x, x+2, x+4 kimi yazaq. Pifaqor teoreminə əsasən: $x^2 + (x+2)^2 = (x+4)^2$. Bunu sadələşdirsək, $x^2 - 4x - 12 = 0$ alınar. Köklər 6 və -2-dir. Uzunluq müsbət olmalıdır (x=6). Tərəflər 6, 8, 10-dur. Perimetr: 6+8+10 = 24.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2 Pifaqor teoremi: Pifaqor teoreminin tətbiqi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": ". Doymuş aminlərdən üzvi əsas, inhibitor, flotoreagent və ekstragent kimi, həmçinin bəzi\ndərman\npreparatlarının, sintetik liflərin (neylon lifinin) alınmasında istifadə olunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\nAminlərlə bağlı anlayışlar xəritəsini tərtib edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Alkilaminlər suda məhlulda lakmusu ..., çünki ... əmələ gəlir.\n• Aminlər turşularla qarşılıqlı təsirdə olduqda aminin azot atomu ... hesabına ... özünə birləşdirir.\n■ II. Suala cavab verməklə mövzu haqqında rəyinizi bildirin.\n- Hansı məlumat sizin daha çox marağınızı çəkdi?\n■ III. Tapşırıqları yerinə yetirin.\nA\n1. Aminlə hansı reaksiya baş verməz?\nB . Canlı orqanizmlərdə zülallar aminturşulardan sintez olunur. İnsanlar və heyvanlar\naminturşuları\nzülali qidalarla əldə edir. Aminturşulardan təbabətdə müalicə vasitəsi kimi (qlisin, histidin,\ntriptofan, metionin), kənd təsərrüfatında heyvan yemlərinə əlavə kimi (lizin, metionin) istifadə edilir.\nŞaxəsiz quruluşa malik ε-aminkapron və ω-aminenant turşularından kapron və enant lifləri istehsal\nolunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\na,bvəcvə aminturşularının üçünün də qarşılıqlı təsirindən alınması\nmümkün olan\ntripeptidlərin formullarını tərtib edin və tripeptidlərin nə üçün müxtəlif xassələrə malik\nolduğunun səbəbini izah edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Bərk halda aminturşu \"molekulları\" arasında "
+  },
+  {
+    "id": "08-004-11-03-02-06-b9ff",
+    "passport_id": "08-004-11-03-02-06-b9ff",
+    "question": "x^2 - 4x - 21 = 0 tənliyini vuruqlara ayırma üsulu ilə həll edin və kiçik kökü tapın.",
+    "options": [
+      "3",
+      "-7",
+      "7",
+      "-3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tənliyi həll etmək üçün hasili -21, cəmi 4 olan ədədlər axtarılır. Bu ədədlər 7 və -3-dür. Tənlik (x - 7)(x + 3) = 0 şəklinə gətirilir. Köklər x = 7 və x = -3 olur. Bizdən kiçik kök soruşulduğu üçün cavab -3-dür.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Kvadrat tənliklər\n7 >> k-nın elə qiymətlərini göstərin ki, verilmiş tənlik natamam kvadrat\ntənliyə çevrilsin. £-nın bu qiymətləri üçün uyğun tənliyi yazın və həll edin.\na) 2x “ (k — 2)x — (k3 6) -0 b) 2x? — (k e 1)x — 154k-0\nD x? £ c € Q şəklində elə tənlik yazın ki: a) iki müxtəlif kökü olsun,\nb) iki bərabər kökü olsun, c) həqiqi kökü olmasın.\nD Göstərin ki, x? — 4 və İxl “ 2 tənliklərinin kökləri eynidir.\n@ Tənliyi həll edin.\n2—1 21 x.—1 xo5 1\na) X yö b R l\n) 3 2 ə ) 2 6 2\n2x? E 9x 1 1 8\nc) x42x- — d ( ––)(x+–)=_\n) 6 Asr 3) 9\nE) Kvadratdan eni 2 sm olan zolaq kəsildi. Kəsilmiş zolağın\nsahəsinin qalan sahədən 2 dəfə az olduğunu bilərək, kvadratın\ntərəfini tapın. 2[\nTətbiq tapşırıqları ”\n> 1) Hansı natural ədədin kvadratı həmin ədədin üç mislinə bərabərdir?\n2) Uzunluğu enindən 4 dəfə böyük olan düzbucaqlının sahəsi 100 m”-dir.\nDüzbucaqlının perimetrini tapın.\n3) Sahəsi 16z sm? olan dairənin radiusu neçə santimetrdir?\n@ Bağban tərəfi 7 m olan kvadratşəkilli güllüyü eyni sahəli dairə şəklinə gətirmək istəyir.\n1) Yeni sahənin radiusu təxminən neçə metr olmalıdır?\n2) Sahələri eyni olan kvadratın tərəfi (a) ilə dairənin radiusu (7) arasındakı asılılığı yazın.\n@ Cisim müəyyən hündürlükdən sərbəst düşdükdə\nonun £f saniyədən sonra yer səthindən olan\nməsafəsini (metrlə) 2 — —4,97” “ 2o düsturu ilə\nhesablamaq olar (bu zaman havanın müqaviməti\nnəzərə alınmır). Burada 7c başlanğıc hündürlüyü\ngöstərir. Cisim yerə çatdıqda / ” 0 olur.\nŞəkildə 60 m hündürlükdən üfüqi istiqamətdə\natılan cism"
+  },
+  {
+    "id": "08-004-13-2-sadə-01-d690",
+    "passport_id": "08-004-13-2-sadə-01-d690",
+    "question": "\"x^2 - 8x\" ifadəsini ikihədlinin tam kvadratına tamamlamaq üçün hansı ədəd əlavə edilməlidir?",
+    "options": [
+      "16",
+      "8",
+      "4",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tam kvadrat ayırma üsuluna görə x^2 + bx ifadəsinə (b/2)^2 əlavə olunmalıdır. Burada b = -8. (-8/2)^2 = (-4)^2 = 16.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-13-2-orta-10-c7b4",
+    "passport_id": "08-004-13-2-orta-10-c7b4",
+    "question": "\"x^2 + 10x\" ifadəsinə uyğun sahə modelini tam kvadrata tamamladıqda, yaranan böyük kvadratın sahəsini hansı ifadə göstərir?",
+    "options": [
+      "(x - 5)^2",
+      "(x + 5)^2",
+      "x^2 + 25",
+      "(x + 10)^2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "İfadəni tam kvadrata tamamlamaq üçün (10/2)^2 = 25 vahid sahəli cəbr kartı əlavə edilməlidir: x^2 + 10x + 25 = (x + 5)^2. Deməli, böyük kvadratın sahəsi (x + 5)^2 olar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-14-anlama-01-01-5fc1",
+    "passport_id": "08-004-14-anlama-01-01-5fc1",
+    "question": "Kvadrat tənliyi qrafik üsulla həll edərkən $x^2+px+q=0$ tənliyini adətən hansı şəkildə yazmaq əlverişlidir?",
+    "options": [
+      "$x^2 = -px - q$",
+      "$x^2 + q = -px$",
+      "$px = -x^2 - q$",
+      "$x^2 + px = -q$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dərslikdə qeyd olunub ki, tənliyi $x^2 = -px - q$ şəklinə gətirməklə sol tərəfdə parabola ($y=x^2$), sağ tərəfdə isə düz xətt ($y=-px-q$) funksiyaları qurulur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliyin qrafik üsulla həlli",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-16-02-01-05-5438",
+    "passport_id": "08-004-16-02-01-05-5438",
+    "question": "Çevrilmiş kvadrat tənlikdə ($x^2 + px + q = 0$) köklərin hər ikisi mənfidirsə, $p$ və $q$-nün işarəsini müəyyən edin.",
+    "options": [
+      "$p < 0, q < 0$",
+      "$p > 0, q < 0$",
+      "$p > 0, q > 0$",
+      "$p < 0, q > 0$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Köklərin hər ikisi mənfi olduqda, onların cəmi mənfi ($x_1+x_2 < 0$), hasili isə müsbət ($x_1x_2 > 0$) olur. Viyet teoreminə görə $-p = x_1+x_2 < 0 \\implies p > 0$, və $q = x_1x_2 > 0$ alınır. Deməli həm $p$, həm də $q$ müsbətdir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Viyet teoremi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-18-03-03-14-f756",
+    "passport_id": "08-004-18-03-03-14-f756",
+    "question": "Bir şirkət məhsulun qiymətini eyni faizlə iki dəfə ardıcıl ucuzlaşdırdıqdan sonra qiymət 500 manatdan 320 manata düşdü. Məhsul hər dəfə neçə faiz ucuzlaşdırılıb?",
+    "options": [
+      "16%",
+      "20%",
+      "36%",
+      "18%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Məhsulun hər dəfə x faiz ucuzlaşdığını fərz edək. Düstur: 500*(1 - x/100)² = 320 => (1 - x/100)² = 320/500 = 0.64 => 1 - x/100 = 0.8 => x/100 = 0.2 => x = 20%.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Kvadrat tənliklərin tətbiqi ilə məsələ həlli",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": ". Doymuş aminlərdən üzvi əsas, inhibitor, flotoreagent və ekstragent kimi, həmçinin bəzi\ndərman\npreparatlarının, sintetik liflərin (neylon lifinin) alınmasında istifadə olunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\nAminlərlə bağlı anlayışlar xəritəsini tərtib edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Alkilaminlər suda məhlulda lakmusu ..., çünki ... əmələ gəlir.\n• Aminlər turşularla qarşılıqlı təsirdə olduqda aminin azot atomu ... hesabına ... özünə birləşdirir.\n■ II. Suala cavab verməklə mövzu haqqında rəyinizi bildirin.\n- Hansı məlumat sizin daha çox marağınızı çəkdi?\n■ III. Tapşırıqları yerinə yetirin.\nA\n1. Aminlə hansı reaksiya baş verməz?\nB . Canlı orqanizmlərdə zülallar aminturşulardan sintez olunur. İnsanlar və heyvanlar\naminturşuları\nzülali qidalarla əldə edir. Aminturşulardan təbabətdə müalicə vasitəsi kimi (qlisin, histidin,\ntriptofan, metionin), kənd təsərrüfatında heyvan yemlərinə əlavə kimi (lizin, metionin) istifadə edilir.\nŞaxəsiz quruluşa malik ε-aminkapron və ω-aminenant turşularından kapron və enant lifləri istehsal\nolunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\na,bvəcvə aminturşularının üçünün də qarşılıqlı təsirindən alınması\nmümkün olan\ntripeptidlərin formullarını tərtib edin və tripeptidlərin nə üçün müxtəlif xassələrə malik\nolduğunun səbəbini izah edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Bərk halda aminturşu \"molekulları\" arasında "
+  },
+  {
+    "id": "08-004-03-04-02-06-32a1",
+    "passport_id": "08-004-03-04-02-06-32a1",
+    "question": "(x - 2)² + 1 = 0 tənliyinin kökləri haqqında aşağıdakılardan hansı doğrudur?",
+    "options": [
+      "2 və -2 ədədləri tənliyin kökləridir",
+      "Həqiqi kökü yoxdur",
+      "1 və 3 ədədləri tənliyin kökləridir",
+      "Yalnız 2 ədədi tənliyin köküdür"
+    ],
+    "correctAnswer": 0,
+    "explanation": "(x - 2)² + 1 = 0 tənliyindən (x - 2)² = -1 alınır. İstənilən həqiqi ədədin kvadratı mənfi olmayan ədəd olduğu üçün bu bərabərliyin həqiqi kökü yoxdur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Ümumiləşdirici tapşırıqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Nümunədə verilmiş sxemə uyğun olaraq coğrafiyanın digər\nfənlərlə ümumi tədqiqat obyektlərinə aid misallar göstərin. Bu\nfənlərin verilən tədqiqat obyektinin hansı xüsusiyyətlərini\nöyrəndiyini qeyd edin. Uyğunluğu müəyyən edin:\nI.Konus\nproyeksiyaları\nII."
+  },
+  {
+    "id": "08-004-03-06-03-13-3da6",
+    "passport_id": "08-004-03-06-03-13-3da6",
+    "question": "x1 və x2 ədədləri x² - x - 1 = 0 tənliyinin kökləridir. Kökləri 1/x1 və 1/x2 olan kvadrat tənlik qurun.",
+    "options": [
+      "x² - 2x - 1 = 0",
+      "x² + x - 1 = 0",
+      "x² - x + 1 = 0",
+      "x² + x + 1 = 0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Viyet teoreminə görə x1 + x2 = 1, x1 * x2 = -1. Yeni tənliyin köklərinin cəmi: 1/x1 + 1/x2 = (x1+x2)/(x1*x2) = 1/(-1) = -1. Yeni tənliyin köklərinin hasili: (1/x1)*(1/x2) = 1/(x1*x2) = 1/(-1) = -1. Deməli, yeni çevrilmiş kvadrat tənlik y² - (-1)y + (-1) = 0 => y² + y - 1 = 0 formasında olacaq.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Kvadrat tənliklər: Ümumiləşdirici tapşırıqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Nümunədə verilmiş sxemə uyğun olaraq coğrafiyanın digər\nfənlərlə ümumi tədqiqat obyektlərinə aid misallar göstərin. Bu\nfənlərin verilən tədqiqat obyektinin hansı xüsusiyyətlərini\nöyrəndiyini qeyd edin. Uyğunluğu müəyyən edin:\nI.Konus\nproyeksiyaları\nII."
+  },
+  {
+    "id": "08-004-25-tətbiq-orta-08-81a6",
+    "passport_id": "08-004-25-tətbiq-orta-08-81a6",
+    "question": "Düzbucaqlı üçbucağın katetləri 6 sm və 8 sm-dir. Hipotenuza paralel olan orta xəttin uzunluğunu hesablayın.",
+    "options": [
+      "10 sm",
+      "7 sm",
+      "5 sm",
+      "4 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pifaqor teoreminə görə hipotenuz: c = √(6² + 8²) = 10 sm. Hipotenuza paralel orta xətt hipotenuzun yarısına bərabərdir: 10 / 2 = 5 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Dördbucaqlılar: Üçbucağın orta xətti",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-04-2-1-00005-dca2",
+    "passport_id": "08-004-04-2-1-00005-dca2",
+    "question": "Aşağıdakı dördbucaqlılardan hansının yalnız 1 simmetriya oxu var?",
+    "options": [
+      "Düzbucaqlı",
+      "Bərabəryanlı trapesiya",
+      "Romb",
+      "Kvadrat"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bərabəryanlı trapesiyanın yalnız oturacaqların ortasından keçən 1 simmetriya oxu var. Kvadratın 4, rombun və düzbucaqlının isə hər birinin 2 simmetriya oxu mövcuddur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "4 Dördbucaqlılar: Ümumiləşdirici tapşırıqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Nümunədə verilmiş sxemə uyğun olaraq coğrafiyanın digər\nfənlərlə ümumi tədqiqat obyektlərinə aid misallar göstərin. Bu\nfənlərin verilən tədqiqat obyektinin hansı xüsusiyyətlərini\nöyrəndiyini qeyd edin. Uyğunluğu müəyyən edin:\nI.Konus\nproyeksiyaları\nII."
+  },
+  {
+    "id": "08-004-04-4-2-00006-c0c1",
+    "passport_id": "08-004-04-4-2-00006-c0c1",
+    "question": "Paraleloqramın diaqonalları onu dörd üçbucağa ayırır. Paraleloqramın perimetri 28 sm-dir. Bu üçbucaqlardan qonşu olan ikisinin perimetrləri fərqi 2 sm olarsa, paraleloqramın tərəflərinin uzunluqlarını tapın.",
+    "options": [
+      "10 sm və 4 sm",
+      "7 sm və 7 sm",
+      "8 sm və 6 sm",
+      "9 sm və 5 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Diaqonallar kəsişmə nöqtəsində yarıya bölündüyü üçün əmələ gələn qonşu üçbucaqların perimetrlərinin fərqi yalnız paraleloqramın həmin üçbucaqlara aid tərəflərinin fərqinə bərabər olur (a - b = 2). Perimetri 28 sm olduğundan tərəflərin cəmi a + b = 14 sm-dir. Tənliklər sistemindən 2a = 16 => a = 8 sm, b = 6 sm tapılır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "4 Dördbucaqlılar: Ümumiləşdirici tapşırıqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Nümunədə verilmiş sxemə uyğun olaraq coğrafiyanın digər\nfənlərlə ümumi tədqiqat obyektlərinə aid misallar göstərin. Bu\nfənlərin verilən tədqiqat obyektinin hansı xüsusiyyətlərini\nöyrəndiyini qeyd edin. Uyğunluğu müəyyən edin:\nI.Konus\nproyeksiyaları\nII."
+  },
+  {
+    "id": "08-004-05-03-02-10-ee46",
+    "passport_id": "08-004-05-03-02-10-ee46",
+    "question": "$\\frac{x}{x^2-1} + \\frac{1}{x+1}$ cəmini tapın.",
+    "options": [
+      "$\\frac{2x+1}{x^2-1}$",
+      "$\\frac{x+1}{x^2-1}$",
+      "$\\frac{2x-1}{x^2-1}$",
+      "$\\frac{1}{x-1}$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Birinci kəsrin məxrəci $x^2-1 = (x-1)(x+1)$ olduğundan, elə ən sadə ortaq məxrəc $(x-1)(x+1)$ olacaq. İkinci kəsrin surət və məxrəcini tamamlayıcı vuruq olan $(x-1)$-ə vururuq. Alınır: $\\frac{x + 1(x-1)}{(x-1)(x+1)} = \\frac{x+x-1}{x^2-1} = \\frac{2x-1}{x^2-1}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional ifadələr",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Siz bu bölmədə öyrənəcəksiniz:\n- rasional ifadələri sadələşdirməyi,\n- rasional ifadələr üzərində əməlləri yerinə yetirməyi,\n- rasional ifadələr qurulmasını tələb edən məsələlər həll etməyi,\nRasional ifadələr iqtisadiyyatda, tibdə, nəqliyyatda, kosmik\ntədqiqatlarda, işıqlandırmada, akustikada və s. kimi müxtəlif\nsahələrə aid problemlərin həllində geniş istifadə edilir.\nBu maraqlıdırl\nBelçikalı Marsel Tolkovski 21 yaşında ikən brilyantların\ncilalanması üçün dəqiq riyazi model fikirləşdi. Tolkovski bu\nmodellə elə ölçü nisbətlərini müəyyən etdi ki, daş bu ölçülərə\nyonulduqda 1deal dairəvi formada görünməklə işığı maksimum\nəksetdirmə keyfiyyətinə - şəffaflığa malik olur. Marsel\nTolkovskinin verdiyi riyazi model sayəsində brilyantın cilalanması avtomatlaşdırıldı. İndi Belçika dünyada brilyant emalı\nsahəsində aparıcı ölkədir. Rasional ifadələr\nAraşdırma. Kəmiyyətlərə uyğun ifadələrin oxşar və fərqli cəhətlərini söyləyin.\n1) Tərəfləri (x £ 2) və (x “ 3) olan düzbücaqlının sahəsi: S;'-\n(x52)(xE3)-xE5x16 x3\n2) Sahəsi x? - 2x — 3 olan düzbucaqlının uzunluğu (x “F3) olarsa, eni:\nx 12x-3\nı3” x 3\nRasional ifadə\nÇoxhədlilərin cəmi, fərqi çoxhədlidir (xüsusi halda birhədlidir). Çoxhədlilərin\nhasili də çoxhədlidir. Çoxhədlilərin nisbəti isə çoxhədli olmaya da bilər. Məsələn,\n(x3 — 4) çoxhədlisinin (x? £ 2)-yə nisbəti çoxhədlidir, çünki elə çoxhədli var ki,\nonun (x? 4. 2) ilə hasili (x? — 4)-ə bərabər olur: (x? .2) : (x2—2) “ x—4.\nLakin (x“ r 4)-ün (? “ 2) çoxhədlisinə nisbəti isə çoxhədli dey"
+  },
+  {
+    "id": "08-004-05-3-01-05-7b62",
+    "passport_id": "08-004-05-3-01-05-7b62",
+    "question": "$\\frac{x^2}{y^3} \\cdot \\left(\\frac{y^2}{x}\\right)^2$ ifadəsini sadələşdirin.",
+    "options": [
+      "$y$",
+      "$x^2y$",
+      "$\\frac{1}{y}$",
+      "$\\frac{y}{x}$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Əvvəlcə qüvvətə yüksəldirik: $\\left(\\frac{y^2}{x}\\right)^2 = \\frac{y^4}{x^2}$. Sonra vururuq: $\\frac{x^2}{y^3} \\cdot \\frac{y^4}{x^2} = \\frac{x^2 \\cdot y^4}{y^3 \\cdot x^2} = y$.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-05-3-02-01-db09",
+    "passport_id": "08-004-05-3-02-01-db09",
+    "question": "$\\frac{x^2-9}{x^2-4x+4} : \\frac{x+3}{x-2}$ ifadəsini sadələşdirin.",
+    "options": [
+      "$\\frac{x-3}{x+2}$",
+      "$\\frac{x-2}{x-3}$",
+      "$\\frac{x-3}{x-2}$",
+      "$\\frac{x+3}{x-2}$"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kəsrləri vuruqlara ayırırıq: $\\frac{(x-3)(x+3)}{(x-2)^2}$. Bölməni vurma ilə əvəz edirik: $\\frac{(x-3)(x+3)}{(x-2)^2} \\cdot \\frac{x-2}{x+3}$. $(x+3)$ və $(x-2)$-lər ixtisar olunur, qalır $\\frac{x-3}{x-2}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-05-4-02-04-f091",
+    "passport_id": "08-004-05-4-02-04-f091",
+    "question": "İfadəni sadələşdirin: $\\left(\\frac{a^2-2a}{a+3}\\right)^2 \\cdot \\frac{a^2+6a+9}{a^4-4a^2}$",
+    "options": [
+      "$\\frac{a-2}{a+2}$",
+      "$\\frac{a-2}{a}$",
+      "$\\frac{a+2}{a-2}$",
+      "$\\frac{a}{a+2}$"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Əvvəlcə ifadələri vuruqlara ayırırıq: $\\left(\\frac{a(a-2)}{a+3}\\right)^2 \\cdot \\frac{(a+3)^2}{a^2(a^2-4)}$. Qüvvətə yüksəltsək: $\\frac{a^2(a-2)^2}{(a+3)^2} \\cdot \\frac{(a+3)^2}{a^2(a-2)(a+2)}$. Burada $(a+3)^2$ və $a^2$ ixtisar olunur. $(a-2)^2$-nın bir vuruğu məxrəcdəki $(a-2)$ ilə ixtisar olunur və surətdə $a-2$, məxrəcdə isə $a+2$ qalır: $\\frac{a-2}{a+2}$.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-05-4-03-01-fd8b",
+    "passport_id": "08-004-05-4-03-01-fd8b",
+    "question": "İfadəni sadələşdirin: $\\frac{x^3-8}{x^2+2x+4} : \\frac{x^2-4}{x+2}$",
+    "options": [
+      "$\\frac{x-2}{x+2}$",
+      "$x-2$",
+      "$1$",
+      "$\\frac{1}{x-2}$"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kublar fərqi düsturundan $x^3-8 = (x-2)(x^2+2x+4)$ alırıq. Bölməni vurma ilə əvəz etdikdə: $\\frac{(x-2)(x^2+2x+4)}{x^2+2x+4} \\cdot \\frac{x+2}{(x-2)(x+2)}$. $x^2+2x+4$ ixtisar olunur, qalır $(x-2) \\cdot \\frac{x+2}{(x-2)(x+2)}$. Həm $x-2$, həm də $x+2$ ixtisar olunduğundan cavab $1$ olur.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "5 Rasional ifadələr: Rasional ifadələrin vurulması,bölünməsi və qüvvətə yüksəldilməsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-34-3-03-01-dd34",
+    "passport_id": "08-004-34-3-03-01-dd34",
+    "question": "K(4; -3) və L(-2; y) nöqtələri eyni bir tərs mütənasiblik funksiyasının qrafiki üzərində olarsa, y-in qiymətini tapın.",
+    "options": [
+      "8",
+      "-6",
+      "-8",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tərs mütənasib asılılıqda nöqtələrin koordinatları hasili sabit $k$-ya bərabərdir. Birinci nöqtə üçün $k = 4 \\cdot (-3) = -12$. İkinci nöqtə üçün də bu hasil eyni olmalıdır: $-2 \\cdot y = -12 \\implies y = 6$.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "y = k / x funksiyası və onun qrafiki",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-36-04-01-05-d2f9",
+    "passport_id": "08-004-36-04-01-05-d2f9",
+    "question": "Sahəsi 144 sm² olan kvadratın perimetrinə bərabər perimetrə malik olan bərabərtərəfli üçbucağın bir tərəfi neçə santimetrdir?",
+    "options": [
+      "36 sm",
+      "12 sm",
+      "24 sm",
+      "16 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kvadratın sahəsi S = a² = 144 olduğundan, tərəfi a = 12 sm-dir. Kvadratın perimetri P = 4 · 12 = 48 sm-dir. Bərabərtərəfli üçbucağın da perimetri 48 sm olmalıdır. Üçbucağın tərəfi x olarsa, 3x = 48, x = 16 sm olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Sahə aksiomları",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "mlrd.\nha%-lə\nmln. ha\n%-lə"
+  },
+  {
+    "id": "08-004-36-04-02-09-203a",
+    "passport_id": "08-004-36-04-02-09-203a",
+    "question": "Kvadratın tərəfini 3 dəfə artırsaq, onun sahəsi neçə dəfə artar?",
+    "options": [
+      "9 dəfə",
+      "12 dəfə",
+      "6 dəfə",
+      "3 dəfə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Kvadratın sahəsi S = a² düsturu ilə hesablanır. Tərəfi 3 dəfə artırıldıqda yeni tərəf 3a olar. Yeni sahə S = (3a)² = 9a² olur. Deməli, sahə ilkin sahədən 9 dəfə böyük olar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Sahə aksiomları",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "mlrd.\nha%-lə\nmln. ha\n%-lə"
+  },
+  {
+    "id": "08-004-38-tətbiq-sadə-03-98b2",
+    "passport_id": "08-004-38-tətbiq-sadə-03-98b2",
+    "question": "Sahəsi 40 sm² olan üçbucağın bir tərəfi 10 sm-dir. Bu tərəfə çəkilmiş hündürlüyü tapın.",
+    "options": [
+      "4 sm",
+      "5 sm",
+      "8 sm",
+      "20 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "S = (a * h) / 2 düsturuna əsasən, 40 = (10 * h) / 2. Buradan 5 * h = 40 və h = 8 sm alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Üçbucağın sahəsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "mlrd.\nha%-lə\nmln. ha\n%-lə"
+  },
+  {
+    "id": "08-004-40-03-01-02-006e",
+    "passport_id": "08-004-40-03-01-02-006e",
+    "question": "Diaqonalları 10 sm və 14 sm olan rombun sahəsini tapın.",
+    "options": [
+      "70 sm²",
+      "140 sm²",
+      "35 sm²",
+      "24 sm²"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rombun sahəsi diaqonalları hasilinin yarısına bərabərdir. Düstura əsasən, S = (d1 * d2) / 2 = (10 * 14) / 2 = 140 / 2 = 70 sm² alınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Rombun sahəsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "mlrd.\nha%-lə\nmln. ha\n%-lə"
+  },
+  {
+    "id": "08-004-40-03-02-01-5d24",
+    "passport_id": "08-004-40-03-02-01-5d24",
+    "question": "Diaqonalları 12 sm və 16 sm olan rombun tərəfini tapın.",
+    "options": [
+      "28 sm",
+      "14 sm",
+      "20 sm",
+      "10 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rombun diaqonalları düz bucaq altında kəsişir və kəsişmə nöqtəsində yarıya bölünür. Diaqonalların yarısı 6 sm və 8 sm olan düzbucaqlı üçbucaq yaranır. Pifaqor teoreminə görə rombun tərəfi (hipotenuz): a² = 6² + 8² = 36 + 64 = 100, buradan a = 10 sm tapılır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların sahəsi: Rombun sahəsi",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "mlrd.\nha%-lə\nmln. ha\n%-lə"
+  },
+  {
+    "id": "08-004-07-1-01-5-c0fa",
+    "passport_id": "08-004-07-1-01-5-c0fa",
+    "question": "Rasional tənliyin tərifi hansı variantda doğru verilmişdir?",
+    "options": [
+      "Heç bir həqiqi kökü olmayan tənliklərə deyilir.",
+      "Yalnız bir tərəfi rasional ifadə olan tənliyə deyilir.",
+      "Tənliyin sağ və sol tərəfi rasional ifadələr olan tənliyə deyilir.",
+      "Dəyişəni yalnız məxrəcdə iştirak edən tənliklərə deyilir."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dərslikdəki tərifə əsasən, həm sağ, həm də sol tərəfi rasional ifadələr olan tənliklərə rasional tənliklər deyilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Rasional tənliklərin tətbiqi ilə məsələ həlli\nHərəkətə aid məsələlər\nMəsələ. 480 km uzunluqda yolun 80 km-i torpaq, qalanı asfaltdır. Avtomobil\ntorpaq yolu asfalt yola nisbətən saatda 40 km az sürətlə qət etdi. Bütün yola\nsərf olunan zaman cəmi 7 saat olarsa, avtomobil yolun torpaq hissəsini neçə\nsaata qət edər? 1-ci üsul:\nHəlli: Yol Gedilən yol Sürət Zaman Yol — sürət x zaman\n(km) km/saat: — (saat)\nTorpaq yol 80 V t v — 80\nCədvəlin 2-ci sətrindən: v — %\nCədvəlin 3-cü sətrindən: y - 40 — % . y— w\n80 120140:7 .\nBuradan ” 7-, rasional tənliyini alarıq.\n2 34f\nBu tənliyin hər iki tərəfini 40-a bölək: TENEFT\nTənasübün xassəsini tətbiq edək: £? £ 57 — 14 — Ü, fı — 2, fə — —7.\n(2” —7 məsələnin şərtinə ziddir. Cavab: Torpaq yol 2 saata qət edilib.\n2-ci üsul: Avtomobil asfalt yolu 9 İOŞO saata, torpaq yolu % saata qət edər.\nAvtomobilin bütün yola 7 saat sərf etdiyini nəzərə alaraq aşağıdakı tənliyi yaza\nbilərik: — 90 — , 80\nv+740 V 7 Bu tənliyi həll etməklə v — 40 km/saat taparıq.\nTorpaq yol 80 : 40 — 2 saata qət edilər.\n>> Avtomobil v km/saat sürətlə A şəhərindən B şəhərinə 10 saata gəlmişdir. Avtomobil yolun birinci yarısını - sürətilə, ikinci yarısını isə— sürətilə hərəkət\nedərsə, A şəhərindən B şəhərinə nə qədər vaxta gələr?\nE) A şəhərindən B şəhərinə yola düşən avtomobil 2 saat getdikdən sonra\nsürətini saatda 10 km artıraraq qalan yolu 4 saata qət etdi. A və B şəhərləri\narasındakı məsafənin 460 km olduğunu bilərək, avtomobilin ilk 2 saatdakı\nsürətini tapın.\nD) Xizəkçilərdən biri "
+  },
+  {
+    "id": "08-004-07-4-02-3-1403",
+    "passport_id": "08-004-07-4-02-3-1403",
+    "question": "$\\frac{x^2 - x - 6}{x - 3} = 0$ tənliyini həll edin.",
+    "options": [
+      "Yalnız -2",
+      "Yalnız 3",
+      "2 və -3",
+      "3 və -2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kəsrin sıfıra bərabər olması üçün surət sıfır olmalı, məxrəc isə sıfırdan fərqli olmalıdır (x-3 ≠ 0 ⇒ x ≠ 3). Surəti sıfıra bərabər edək: $x^2 - x - 6 = 0$. Viyet teoreminə görə köklər 3 və -2-dir. x=3 məxrəci sıfır etdiyi üçün kənar kökdür. Yeganə kök -2-dir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Rasional tənliklərin tətbiqi ilə məsələ həlli\nHərəkətə aid məsələlər\nMəsələ. 480 km uzunluqda yolun 80 km-i torpaq, qalanı asfaltdır. Avtomobil\ntorpaq yolu asfalt yola nisbətən saatda 40 km az sürətlə qət etdi. Bütün yola\nsərf olunan zaman cəmi 7 saat olarsa, avtomobil yolun torpaq hissəsini neçə\nsaata qət edər? 1-ci üsul:\nHəlli: Yol Gedilən yol Sürət Zaman Yol — sürət x zaman\n(km) km/saat: — (saat)\nTorpaq yol 80 V t v — 80\nCədvəlin 2-ci sətrindən: v — %\nCədvəlin 3-cü sətrindən: y - 40 — % . y— w\n80 120140:7 .\nBuradan ” 7-, rasional tənliyini alarıq.\n2 34f\nBu tənliyin hər iki tərəfini 40-a bölək: TENEFT\nTənasübün xassəsini tətbiq edək: £? £ 57 — 14 — Ü, fı — 2, fə — —7.\n(2” —7 məsələnin şərtinə ziddir. Cavab: Torpaq yol 2 saata qət edilib.\n2-ci üsul: Avtomobil asfalt yolu 9 İOŞO saata, torpaq yolu % saata qət edər.\nAvtomobilin bütün yola 7 saat sərf etdiyini nəzərə alaraq aşağıdakı tənliyi yaza\nbilərik: — 90 — , 80\nv+740 V 7 Bu tənliyi həll etməklə v — 40 km/saat taparıq.\nTorpaq yol 80 : 40 — 2 saata qət edilər.\n>> Avtomobil v km/saat sürətlə A şəhərindən B şəhərinə 10 saata gəlmişdir. Avtomobil yolun birinci yarısını - sürətilə, ikinci yarısını isə— sürətilə hərəkət\nedərsə, A şəhərindən B şəhərinə nə qədər vaxta gələr?\nE) A şəhərindən B şəhərinə yola düşən avtomobil 2 saat getdikdən sonra\nsürətini saatda 10 km artıraraq qalan yolu 4 saata qət etdi. A və B şəhərləri\narasındakı məsafənin 460 km olduğunu bilərək, avtomobilin ilk 2 saatdakı\nsürətini tapın.\nD) Xizəkçilərdən biri "
+  },
+  {
+    "id": "08-004-07-4-03-1-ad52",
+    "passport_id": "08-004-07-4-03-1-ad52",
+    "question": "Qayıq axın istiqamətində 48 km yolu müəyyən müddətə getdi. Bu yolu geri qayıtmağa isə bundan 1,6 saat çox vaxt sərf etdi. Çayın axın sürəti 4 km/saat olarsa, qayığın durğun sudakı sürətini tapın.",
+    "options": [
+      "24 km/saat",
+      "12 km/saat",
+      "16 km/saat",
+      "20 km/saat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qayığın durğun sudakı sürəti x olsun. Geri qayıtmağa sərf olunan zaman $\\frac{48}{x-4}$, axınla gedilən zaman isə $\\frac{48}{x+4}$-dür. Tənlik: $\\frac{48}{x-4} - \\frac{48}{x+4} = 1.6$. Hər iki tərəfi ortaq məxrəcə (x²-16) vursaq: 48(x+4) - 48(x-4) = 1.6(x²-16) ⇒ 384 = 1.6x² - 25.6 ⇒ 1.6x² = 409.6 ⇒ x² = 256 ⇒ x = 16. (Sürət mənfi ola bilməz deyə yalnız 16 götürülür).",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Rasional tənliklərin tətbiqi ilə məsələ həlli\nHərəkətə aid məsələlər\nMəsələ. 480 km uzunluqda yolun 80 km-i torpaq, qalanı asfaltdır. Avtomobil\ntorpaq yolu asfalt yola nisbətən saatda 40 km az sürətlə qət etdi. Bütün yola\nsərf olunan zaman cəmi 7 saat olarsa, avtomobil yolun torpaq hissəsini neçə\nsaata qət edər? 1-ci üsul:\nHəlli: Yol Gedilən yol Sürət Zaman Yol — sürət x zaman\n(km) km/saat: — (saat)\nTorpaq yol 80 V t v — 80\nCədvəlin 2-ci sətrindən: v — %\nCədvəlin 3-cü sətrindən: y - 40 — % . y— w\n80 120140:7 .\nBuradan ” 7-, rasional tənliyini alarıq.\n2 34f\nBu tənliyin hər iki tərəfini 40-a bölək: TENEFT\nTənasübün xassəsini tətbiq edək: £? £ 57 — 14 — Ü, fı — 2, fə — —7.\n(2” —7 məsələnin şərtinə ziddir. Cavab: Torpaq yol 2 saata qət edilib.\n2-ci üsul: Avtomobil asfalt yolu 9 İOŞO saata, torpaq yolu % saata qət edər.\nAvtomobilin bütün yola 7 saat sərf etdiyini nəzərə alaraq aşağıdakı tənliyi yaza\nbilərik: — 90 — , 80\nv+740 V 7 Bu tənliyi həll etməklə v — 40 km/saat taparıq.\nTorpaq yol 80 : 40 — 2 saata qət edilər.\n>> Avtomobil v km/saat sürətlə A şəhərindən B şəhərinə 10 saata gəlmişdir. Avtomobil yolun birinci yarısını - sürətilə, ikinci yarısını isə— sürətilə hərəkət\nedərsə, A şəhərindən B şəhərinə nə qədər vaxta gələr?\nE) A şəhərindən B şəhərinə yola düşən avtomobil 2 saat getdikdən sonra\nsürətini saatda 10 km artıraraq qalan yolu 4 saata qət etdi. A və B şəhərləri\narasındakı məsafənin 460 km olduğunu bilərək, avtomobilin ilk 2 saatdakı\nsürətini tapın.\nD) Xizəkçilərdən biri "
+  },
+  {
+    "id": "08-004-43-05-03-01-1f6a",
+    "passport_id": "08-004-43-05-03-01-1f6a",
+    "question": "İki printer birlikdə işləyərək sənədləri 6 saata çap edir. Əgər birinci printer 3 saat, ikinci printer isə 4 saat işləyərsə, sənədlərin 60%-i çap olunar. Sürətli printer bütün sənədləri təklikdə neçə saata çap edər?",
+    "options": [
+      "12 saat",
+      "8 saat",
+      "15 saat",
+      "10 saat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1/x + 1/y = 1/6 və 3/x + 4/y = 0,6 (yəni 3/5) sistemini quraq. Birinci tənliyi 3-ə vursaq: 3/x + 3/y = 1/2. Tənlikləri çıxsaq: 1/y = 3/5 - 1/2 = 1/10 => y=10. Yerini yazsaq 1/x = 1/6 - 1/10 = 1/15 => x=15. Sürətli printer 10 saata çap edər.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Rasional tənliklər: Rasional tənliklərin tətbiqi ilə məsələ həlli",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": ". Doymuş aminlərdən üzvi əsas, inhibitor, flotoreagent və ekstragent kimi, həmçinin bəzi\ndərman\npreparatlarının, sintetik liflərin (neylon lifinin) alınmasında istifadə olunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\nAminlərlə bağlı anlayışlar xəritəsini tərtib edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Alkilaminlər suda məhlulda lakmusu ..., çünki ... əmələ gəlir.\n• Aminlər turşularla qarşılıqlı təsirdə olduqda aminin azot atomu ... hesabına ... özünə birləşdirir.\n■ II. Suala cavab verməklə mövzu haqqında rəyinizi bildirin.\n- Hansı məlumat sizin daha çox marağınızı çəkdi?\n■ III. Tapşırıqları yerinə yetirin.\nA\n1. Aminlə hansı reaksiya baş verməz?\nB . Canlı orqanizmlərdə zülallar aminturşulardan sintez olunur. İnsanlar və heyvanlar\naminturşuları\nzülali qidalarla əldə edir. Aminturşulardan təbabətdə müalicə vasitəsi kimi (qlisin, histidin,\ntriptofan, metionin), kənd təsərrüfatında heyvan yemlərinə əlavə kimi (lizin, metionin) istifadə edilir.\nŞaxəsiz quruluşa malik ε-aminkapron və ω-aminenant turşularından kapron və enant lifləri istehsal\nolunur.\nÖYRƏNDİKLƏRİNİZİ TƏKMİLLƏŞDİRİN\na,bvəcvə aminturşularının üçünün də qarşılıqlı təsirindən alınması\nmümkün olan\ntripeptidlərin formullarını tərtib edin və tripeptidlərin nə üçün müxtəlif xassələrə malik\nolduğunun səbəbini izah edin.\nREFLEKSİYA VƏ QİYMƏTLƏNDİRMƏ\n■ I. Fikirləri tamamlayın və onların düzgünlüyünü mətnə əsasən yoxlayın.\n• Bərk halda aminturşu \"molekulları\" arasında "
+  },
+  {
+    "id": "08-004-47-4-2-08-708e",
+    "passport_id": "08-004-47-4-2-08-708e",
+    "question": "ABCD trapesiyasının (AD || BC) diaqonalları O nöqtəsində kəsişir. AD = 15 sm, BC = 10 sm. Əgər BO = 6 sm olarsa, OD parçasının uzunluğunu tapın.",
+    "options": [
+      "12 sm",
+      "4 sm",
+      "9 sm",
+      "7,5 sm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Trapesiyanın diaqonalları onu iki oxşar üçbucağa ayırır: ΔAOD ~ ΔCOB (daxili çarpaz bucaqların bərabərliyinə görə). Uyğun tərəflərin nisbəti: AD / BC = OD / OB şərtindən 15 / 10 = OD / 6; 10 * OD = 90; OD = 9 sm alınır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-47-4-3-11-56a3",
+    "passport_id": "08-004-47-4-3-11-56a3",
+    "question": "ABC düzbucaqlı üçbucağının (∠C = 90°) CD hündürlüyü çəkilmişdir. AD = 9 sm, BD = 16 sm olarsa, ABC üçbucağının perimetrini tapın.",
+    "options": [
+      "47 sm",
+      "84 sm",
+      "60 sm",
+      "72 sm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hipotenuz c = AD + BD = 9 + 16 = 25 sm. Katetlər hipotenuz və onun üzərindəki proyeksiyalarının həndəsi ortasıdır: AC = √(9 * 25) = 15 sm, BC = √(16 * 25) = 20 sm. Perimetr = 15 + 20 + 25 = 60 sm.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "8 Fiqurların oxşarlığı: Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Mövzu dərslikdə tapılmadı. Ümumi pedaqoji biliklərdən istifadə edin."
+  },
+  {
+    "id": "08-004-048-03-orta-08-d59e",
+    "passport_id": "08-004-048-03-orta-08-d59e",
+    "question": "AABC və A1B1C1 oxşar üçbucaqlardır. AB=5 sm, BC=7 sm, AC=9 sm. A1B1C1 üçbucağının perimetri 63 sm-dir. A1B1 tərəfinin uzunluğu nə qədərdir?",
+    "options": [
+      "27 sm",
+      "15 sm",
+      "5 sm",
+      "11 sm"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AABC-nin perimetri 5+7+9 = 21 sm-dir. Oxşarlıq əmsalı k = 63 / 21 = 3. A1B1 tərəfi AB tərəfinə uyğun olduğundan, A1B1 = 5 * 3 = 15 sm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Fiqurların oxşarlığı: Üçbucaqların oxşarlıq əlamətləri",
+    "_duplicate_of": "Riyaziyyat 8",
+    "context_chunk": "Sahəsinə görə (iri,\nböyük, kiçik və\nmikro dövlətlər)"
+  }
+]
