@@ -1,0 +1,578 @@
+[
+  {
+    "question": "Paraleloqramın tərəfi 8 sm, bu tərəfə çəkilmiş hündürlüyü isə 5 sm-dir. Paraleloqramın sahəsini tapın.",
+    "options": {
+      "A": "20 sm²",
+      "B": "30 sm²",
+      "C": "40 sm²",
+      "D": "50 sm²",
+      "E": "60 sm²"
+    },
+    "correctAnswer": "C",
+    "explanation": "Paraleloqramın sahəsi tərəf ilə bu tərəfə çəkilmiş hündürlüyün hasilinə bərabərdir: S = a × h = 8 × 5 = 40 sm².",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Sahəsi 72 sm² olan paraleloqramın bir tərəfi 12 sm-dir. Bu tərəfə çəkilmiş hündürlüyü tapın.",
+    "options": {
+      "A": "5 sm",
+      "B": "6 sm",
+      "C": "7 sm",
+      "D": "8 sm",
+      "E": "9 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Sahə düsturuna əsasən hündürlük sahənin tərəfə nisbətinə bərabərdir: h = S / a = 72 / 12 = 6 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın iti bucağı 30°, bitişik tərəfləri isə 10 sm və 8 sm-dir. Paraleloqramın sahəsini tapın.",
+    "options": {
+      "A": "30 sm²",
+      "B": "40 sm²",
+      "C": "50 sm²",
+      "D": "60 sm²",
+      "E": "80 sm²"
+    },
+    "correctAnswer": "B",
+    "explanation": "Paraleloqramın sahəsi S = a × b × sin(α) düsturu ilə hesablanır: S = 10 × 8 × sin(30°) = 80 × 0.5 = 40 sm².",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın diaqonalları 12 sm və 16 sm, aralarındakı bucaq isə 30°-dir. Paraleloqramın sahəsini tapın.",
+    "options": {
+      "A": "48 sm²",
+      "B": "96 sm²",
+      "C": "24 sm²",
+      "D": "36 sm²",
+      "E": "72 sm²"
+    },
+    "correctAnswer": "A",
+    "explanation": "Sahə S = (d1 × d2 × sin(α)) / 2 düsturu ilə hesablanır: S = (12 × 16 × 0.5) / 2 = 96 / 2 = 48 sm².",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın tərəfləri 6 sm və 8 sm, kor bucağı isə 150°-dir. Paraleloqramın sahəsini hesablayın.",
+    "options": {
+      "A": "12 sm²",
+      "B": "24 sm²",
+      "C": "48 sm²",
+      "D": "30 sm²",
+      "E": "36 sm²"
+    },
+    "correctAnswer": "B",
+    "explanation": "Kor bucaq 150° olduqda, iti bucaq 180° - 150° = 30° olur. S = a × b × sin(30°) = 6 × 8 × 0.5 = 24 sm².",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın sahəsi 120 sm², tərəfləri isə 10 sm və 15 sm-dir. Paraleloqramın kiçik hündürlüyünü tapın.",
+    "options": {
+      "A": "8 sm",
+      "B": "10 sm",
+      "C": "12 sm",
+      "D": "15 sm",
+      "E": "6 sm"
+    },
+    "correctAnswer": "A",
+    "explanation": "Kiçik hündürlük böyük tərəfə çəkilmiş hündürlükdür. h = S / b = 120 / 15 = 8 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın hündürlükləri 4 sm və 6 sm, perimetri isə 40 sm-dir. Paraleloqramın sahəsini tapın.",
+    "options": {
+      "A": "48 sm²",
+      "B": "36 sm²",
+      "C": "60 sm²",
+      "D": "24 sm²",
+      "E": "72 sm²"
+    },
+    "correctAnswer": "A",
+    "explanation": "2(a + b) = 40 => a + b = 20. S = 4a = 6b => a = 1.5b. 1.5b + b = 20 => 2.5b = 20 => b = 8 sm. a = 12 sm. S = 12 × 4 = 48 sm².",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Paraleloqramın sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucağın katetləri 6 sm və 8 sm-dir. Hipotenuzun uzunluğunu tapın.",
+    "options": {
+      "A": "10 sm",
+      "B": "12 sm",
+      "C": "14 sm",
+      "D": "8 sm",
+      "E": "9 sm"
+    },
+    "correctAnswer": "A",
+    "explanation": "Pifaqor teoreminə görə c² = a² + b² = 6² + 8² = 36 + 64 = 100. Buradan c = 10 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilmə",
+    "topic": "Pifaqor teoreminin tətbiqi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucağın hipotenuzu 13 sm, katetlərindən biri 5 sm-dir. Digər kateti tapın.",
+    "options": {
+      "A": "10 sm",
+      "B": "11 sm",
+      "C": "12 sm",
+      "D": "14 sm",
+      "E": "15 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Pifaqor teoreminə əsasən b² = c² - a² = 13² - 5² = 169 - 25 = 144. Buradan b = 12 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Pifaqor teoreminin tətbiqi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Tərəfləri 7 sm, 24 sm və 25 sm olan üçbucağın növünü müəyyən edin.",
+    "options": {
+      "A": "İtibucaqlı üçbucaq",
+      "B": "Korbucaqlı üçbucaq",
+      "C": "Düzbucaqlı üçbucaq",
+      "D": "Bərabəryanlı üçbucaq",
+      "E": "Bərabərtərəfli üçbucaq"
+    },
+    "correctAnswer": "C",
+    "explanation": "Pifaqor teoreminin tərsinə görə: 7² + 24² = 49 + 576 = 625, və 25² = 625. Kvadratların cəmi hipotenuzun kvadratına bərabər olduğundan bu düzbucaqlı üçbucaqdır.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Pifaqor teoreminin tətbiqi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(2x/y) × (y² / 4x²) ifadəsini sadələşdirin (x≠0, y≠0).",
+    "options": {
+      "A": "y / 2x",
+      "B": "x / 2y",
+      "C": "2x / y",
+      "D": "y / x",
+      "E": "xy / 2"
+    },
+    "correctAnswer": "A",
+    "explanation": "Kəsrlərin vurulması qaydasına görə: (2x × y²) / (y × 4x²) = y / (2x).",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(a³ / b²) : (a² / b³) ifadəsinin qiymətini tapın (a≠0, b≠0).",
+    "options": {
+      "A": "ab",
+      "B": "a/b",
+      "C": "b/a",
+      "D": "a² / b²",
+      "E": "1 / (ab)"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bölmə əməliyyatını vurma ilə əvəz edib ikinci kəsri tərsinə çeviririk: (a³ / b²) × (b³ / a²) = ab.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(x² - y²) / (x + y) ifadəsini sadələşdirin (x ≠ -y).",
+    "options": {
+      "A": "x + y",
+      "B": "x - y",
+      "C": "x²",
+      "D": "y²",
+      "E": "1"
+    },
+    "correctAnswer": "B",
+    "explanation": "Müxtəsər vurma düsturuna əsasən x² - y² = (x - y)(x + y). O zaman, (x - y)(x + y) / (x + y) = x - y.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(m / n)³ ifadəsi aşağıdakılardan hansına bərabərdir? (n ≠ 0).",
+    "options": {
+      "A": "m³ / n",
+      "B": "m / n³",
+      "C": "m³ / n³",
+      "D": "3m / n",
+      "E": "m / n"
+    },
+    "correctAnswer": "C",
+    "explanation": "Kəsrin qüvvəti onun surət və məxrəcinin uyğun qüvvətləri nisbətinə bərabərdir: m³ / n³.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilmə",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(3a² / 2b) × (4b² / 9a) ifadəsini sadələşdirin (a≠0, b≠0).",
+    "options": {
+      "A": "2ab / 3",
+      "B": "3ab / 2",
+      "C": "2a / 3b",
+      "D": "3b / 2a",
+      "E": "6ab"
+    },
+    "correctAnswer": "A",
+    "explanation": "Surətləri bir, məxrəcləri bir vurub ixtisar etdikdə: (12a²b²) / (18ab) = (2/3)ab = 2ab / 3.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(x² - 4x + 4) / (x - 2) ifadəsini sadələşdirin (x ≠ 2).",
+    "options": {
+      "A": "x + 2",
+      "B": "x - 2",
+      "C": "x - 4",
+      "D": "4 - x",
+      "E": "x"
+    },
+    "correctAnswer": "B",
+    "explanation": "Surəti tam kvadrata ayırırıq: x² - 4x + 4 = (x - 2)². O zaman (x - 2)² / (x - 2) = x - 2.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "15x³y / (5x²y²) kəsrini ixtisar edin (x≠0, y≠0).",
+    "options": {
+      "A": "3x / y",
+      "B": "3y / x",
+      "C": "3xy",
+      "D": "x / 3y",
+      "E": "y / 3x"
+    },
+    "correctAnswer": "A",
+    "explanation": "Ədədləri ayrı, dəyişənləri ayrı ixtisar edirik: 15/5 = 3, x³/x² = x, y/y² = 1/y. Nəticə: 3x / y.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(a - b)/(a + b) : (a² - b²)/(a + b)² ifadəsini sadələşdirin (a ≠ ±b).",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "a - b",
+      "D": "a + b",
+      "E": "(a - b) / (a + b)"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bölməni vurma ilə əvəz edib, kəsri tərsinə çeviririk: (a - b)/(a + b) × (a + b)² / ((a - b)(a + b)). İxtisar etdikdən sonra nəticə 1 alınır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(-2p / q²)³ ifadəsini qüvvətə yüksəldin (q ≠ 0).",
+    "options": {
+      "A": "-8p³ / q⁵",
+      "B": "-6p³ / q⁶",
+      "C": "8p³ / q⁶",
+      "D": "-8p³ / q⁶",
+      "E": "-2p³ / q⁶"
+    },
+    "correctAnswer": "D",
+    "explanation": "Tək dərəcədən qüvvət mənfi işarəni saxlayır: (-2)³ × p³ / (q²)³ = -8p³ / q⁶.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun diaqonalları 10 sm və 12 sm-dir. Onun sahəsini tapın.",
+    "options": {
+      "A": "120 sm²",
+      "B": "60 sm²",
+      "C": "30 sm²",
+      "D": "22 sm²",
+      "E": "44 sm²"
+    },
+    "correctAnswer": "B",
+    "explanation": "Rombun sahəsi diaqonalları hasilinin yarısına bərabərdir: S = (d1 × d2) / 2 = (10 × 12) / 2 = 60 sm².",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun tərəfi 8 sm, iti bucağı 30°-dir. Sahəsini hesablayın.",
+    "options": {
+      "A": "64 sm²",
+      "B": "16 sm²",
+      "C": "32 sm²",
+      "D": "48 sm²",
+      "E": "24 sm²"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sahə S = a² × sin(α) düsturu ilə hesablanır: S = 8² × sin(30°) = 64 × 0.5 = 32 sm².",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Sahəsi 48 sm², hündürlüyü isə 6 sm olan rombun tərəfini tapın.",
+    "options": {
+      "A": "6 sm",
+      "B": "8 sm",
+      "C": "10 sm",
+      "D": "12 sm",
+      "E": "14 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Rombun sahəsi S = a × h düsturu ilə hesablanır. Buradan a = S / h = 48 / 6 = 8 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun diaqonallarından biri 16 sm, tərəfi isə 10 sm-dir. Onun sahəsini tapın.",
+    "options": {
+      "A": "96 sm²",
+      "B": "48 sm²",
+      "C": "160 sm²",
+      "D": "80 sm²",
+      "E": "120 sm²"
+    },
+    "correctAnswer": "A",
+    "explanation": "Diaqonallar perpendikulyardır və kəsişmə nöqtəsində yarıya bölünür. Yarıdiaqonal 8 sm-dir. Pifaqor teoreminə görə digər yarıdiaqonal x = √(10² - 8²) = 6 sm. Digər diaqonal 12 sm. S = (16 × 12) / 2 = 96 sm².",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun perimetri 40 sm, hündürlüyü isə 5 sm-dir. Sahəsini tapın.",
+    "options": {
+      "A": "50 sm²",
+      "B": "100 sm²",
+      "C": "200 sm²",
+      "D": "150 sm²",
+      "E": "20 sm²"
+    },
+    "correctAnswer": "A",
+    "explanation": "Rombun bütün tərəfləri bərabərdir, tərəf a = P / 4 = 40 / 4 = 10 sm. S = a × h = 10 × 5 = 50 sm².",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun kor bucağı 150°, sahəsi isə 18 sm²-dir. Rombun tərəfini tapın.",
+    "options": {
+      "A": "3 sm",
+      "B": "4 sm",
+      "C": "5 sm",
+      "D": "6 sm",
+      "E": "8 sm"
+    },
+    "correctAnswer": "D",
+    "explanation": "İti bucaq 180° - 150° = 30°-dir. S = a² × sin(30°) => 18 = a² × 0.5 => a² = 36 => a = 6 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Rombun sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Aşağıdakı təkliflərdən hansı sahə aksiomlarına aid deyil?",
+    "options": {
+      "A": "Bərabər fiqurların sahələri bərabərdir.",
+      "B": "Fiqur hissələrə bölündükdə, onun sahəsi bu hissələrin sahələri cəminə bərabərdir.",
+      "C": "Sahəsi olan hər bir çoxbucaqlının sahəsi müsbət ədəddir.",
+      "D": "Kvadratın sahəsi onun tərəfinin kvadratına bərabərdir.",
+      "E": "İstənilən iki üçbucağın sahələri cəmi həmişə sabitdir."
+    },
+    "correctAnswer": "E",
+    "explanation": "A, B, C və D variantlarındakı təkliflər sahə aksiomlarıdır. İstənilən iki üçbucağın sahələri cəminin sabit olması haqqında aksiom yoxdur.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilmə",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Tərəfi 1 ölçü vahidi olan kvadratın sahəsi nə qəbul edilir?",
+    "options": {
+      "A": "2",
+      "B": "0.5",
+      "C": "1",
+      "D": "10",
+      "E": "4"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sahə aksiomlarına görə tərəfi 1 ölçü vahidinə bərabər olan kvadratın sahəsi 1 kv. vahid qəbul edilir.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilmə",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Sahəsi 50 sm² olan fiqur daxili ortaq nöqtəsi olmayan iki (S1 və S2) hissəyə bölünüb. S1 = 20 sm² olarsa, S2 neçə sm²-dir?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40",
+      "E": "50"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sahə aksiomuna görə ümumi sahə hissələrin sahələri cəminə bərabərdir. S = S1 + S2 => 50 = 20 + S2 => S2 = 30 sm².",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Fiqur ortaq daxili nöqtələri olmayan üç hissəyə bölünüb. Bu hissələrin sahələri uyğun olaraq 12, 15 və 8 sm²-dir. Fiqurun ümumi sahəsini tapın.",
+    "options": {
+      "A": "30 sm²",
+      "B": "35 sm²",
+      "C": "40 sm²",
+      "D": "27 sm²",
+      "E": "20 sm²"
+    },
+    "correctAnswer": "B",
+    "explanation": "Ümumi sahə bütün hissələrin sahələrinin cəminə bərabərdir: S = 12 + 15 + 8 = 35 sm².",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Bərabər olan iki fiqurun sahələri nisbəti nəyə bərabərdir?",
+    "options": {
+      "A": "0.5",
+      "B": "1",
+      "C": "2",
+      "D": "4",
+      "E": "Təyin edilə bilməz"
+    },
+    "correctAnswer": "B",
+    "explanation": "Sahə aksiomuna görə bərabər fiqurların sahələri də bərabərdir, deməli onların nisbəti 1-ə bərabər olar.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Əgər F fiquru daxilindəki F1 fiqurunu tam örtürsə, bu fiqurların sahələri üçün hansı münasibət doğrudur?",
+    "options": {
+      "A": "S(F) < S(F1)",
+      "B": "S(F) ≤ S(F1)",
+      "C": "S(F) ≥ S(F1)",
+      "D": "S(F) = S(F1)",
+      "E": "S(F) + S(F1) = 0"
+    },
+    "correctAnswer": "C",
+    "explanation": "Bir fiqur digərini öz daxilinə alırsa, həmin fiqurun sahəsi digərinin sahəsindən böyük və ya ona bərabər olar: S(F) ≥ S(F1).",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Kvadratın tərəfini 3 dəfə artırsaq, onun sahəsi necə dəyişər?",
+    "options": {
+      "A": "3 dəfə artar",
+      "B": "3 dəfə azalar",
+      "C": "6 dəfə artar",
+      "D": "9 dəfə artar",
+      "E": "Dəyişməz"
+    },
+    "correctAnswer": "D",
+    "explanation": "Kvadratın sahəsi S = a² düsturu ilə hesablanır. Tərəf 3 dəfə artdıqda, sahə 3² = 9 dəfə artar.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki kvadratın tərəfləri nisbəti 1:2 kimidir. Onların sahələri nisbəti neçədir?",
+    "options": {
+      "A": "1:2",
+      "B": "1:4",
+      "C": "1:8",
+      "D": "1:16",
+      "E": "2:1"
+    },
+    "correctAnswer": "B",
+    "explanation": "Sahələrin nisbəti tərəflərin kvadratları nisbətinə bərabərdir: (1/2)² = 1/4 (1:4).",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Aşağıdakılardan hansı sahənin ölçü vahidi deyil?",
+    "options": {
+      "A": "sm²",
+      "B": "m²",
+      "C": "ar",
+      "D": "hektar",
+      "E": "litr"
+    },
+    "correctAnswer": "E",
+    "explanation": "Litr mayelərin həcmini ölçmək üçündür. Ar, hektar, m², sm² isə sahə vahidləridir.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilmə",
+    "topic": "Sahə aksiomları",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Trapesiyanın oturacaqları 6 sm və 10 sm-dir. Onun orta xəttini tapın.",
+    "options": {
+      "A": "4 sm",
+      "B": "8 sm",
+      "C": "16 sm",
+      "D": "12 sm",
+      "E": "5 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Trapesiyanın orta xətti oturacaqların cəminin yarısına bərabərdir: (6 + 10) / 2 = 16 / 2 = 8 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Trapesiya",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Bərabəryanlı trapesiyanın oturacaqları 8 sm və 14 sm, yan tərəfi isə 5 sm-dir. Onun hündürlüyünü tapın.",
+    "options": {
+      "A": "3 sm",
+      "B": "4 sm",
+      "C": "5 sm",
+      "D": "6 sm",
+      "E": "7 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oturacağa çəkilmiş hündürlüklərin ayırdığı parçanın uzunluğu (14 - 8) / 2 = 3 sm-dir. Pifaqor teoreminə görə h = √(5² - 3²) = √16 = 4 sm.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Trapesiya",
+    "cat": "Riyaziyyat 8"
+  }
+]

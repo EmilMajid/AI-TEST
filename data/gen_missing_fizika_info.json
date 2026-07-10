@@ -1,0 +1,386 @@
+[
+  {
+    "question": "Nyutonun birinci qanunu necə ifadə olunur?",
+    "options": {
+      "A": "Cismə təsir edən qüvvələrin əvəzləyicisi sıfırdırsa, o sükunətdədir və ya düzxətli bərabərsürətli hərəkət edir.",
+      "B": "Cismin təcili ona təsir edən qüvvə ilə düz, kütləsi ilə tərs mütənasibdir.",
+      "C": "İki cismin bir-birinə göstərdiyi təsir qüvvələri modulca bərabər, istiqamətcə əksdir.",
+      "D": "Qüvvə impulsunun dəyişməsi cismin impulsunun dəyişməsinə bərabərdir.",
+      "E": "Qüvvə momenti sıfır olduqda cisim fırlanmır."
+    },
+    "correctAnswer": "A",
+    "explanation": "Nyutonun birinci qanununa görə, cismə digər cisimlər təsir etmirsə və ya bu təsirlər bir-birini tarazlaşdırırsa (əvəzləyici qüvvə sıfırdırsa), cisim öz sükunət halını və ya düzxətli bərabərsürətli hərəkət halını saxlayır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Nyutonun birinci qanunu",
+    "cat": "Fizika 8"
+  },
+  {
+    "question": "Nyutonun birinci qanunu hansı hesablama sistemlərinin mövcudluğunu təsdiq edir?",
+    "options": {
+      "A": "Təcilli",
+      "B": "Fırlanan",
+      "C": "İnersial",
+      "D": "Qeyri-inersial",
+      "E": "Qravitasiya"
+    },
+    "correctAnswer": "C",
+    "explanation": "Nyutonun birinci qanunu həm də inersiya qanunu adlanır və təbiətdə inersial hesablama sistemlərinin mövcudluğunu təsdiq edir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Nyutonun birinci qanunu",
+    "cat": "Fizika 8"
+  },
+  {
+    "question": "Əgər hərəkətdə olan avtomobil qəfildən tormozlanarsa, sərnişinlər hansı istiqamətə əyiləcək? Bu hansı qanuna əsaslanır?",
+    "options": {
+      "A": "Arxaya, Nyutonun üçüncü qanununa.",
+      "B": "İrəli, Nyutonun birinci qanununa.",
+      "C": "İrəli, Nyutonun ikinci qanununa.",
+      "D": "Arxaya, Arximed qanununa.",
+      "E": "Yana, inersiya qanununa."
+    },
+    "correctAnswer": "B",
+    "explanation": "Avtomobil qəfildən tormozlandıqda sərnişinlər inersiya (Nyutonun birinci qanunu) nəticəsində öz hərəkət hallarını saxlamağa çalışırlar, ona görə də irəli doğru əyilirlər.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Nyutonun birinci qanunu",
+    "cat": "Fizika 8"
+  },
+  {
+    "question": "Təbiətdə təsadüf olunan qüvvələrdən hansı elektromaqnit təbiətli deyil?",
+    "options": {
+      "A": "Sürtünmə qüvvəsi",
+      "B": "Elastiklik qüvvəsi",
+      "C": "Arximed qüvvəsi",
+      "D": "Ağırlıq qüvvəsi",
+      "E": "Elektrik qüvvəsi"
+    },
+    "correctAnswer": "D",
+    "explanation": "Ağırlıq qüvvəsi qravitasiya təbiətli qüvvədir. Sürtünmə və elastiklik qüvvələri isə elektromaqnit təbiətlidir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Qüvvə və onun növləri",
+    "cat": "Fizika 8"
+  },
+  {
+    "question": "Kompüterin əsas qurğularına hansı daxil deyil?",
+    "options": {
+      "A": "Monitor",
+      "B": "Sistem bloku",
+      "C": "Klaviatura",
+      "D": "Printer",
+      "E": "Mouse"
+    },
+    "correctAnswer": "D",
+    "explanation": "Kompüterin əsas qurğularına monitor, sistem bloku, klaviatura və siçan (mouse) aiddir. Printer isə əlavə (periferik) qurğudur.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "İnformasiyanın ölçü vahidlərindən ən kiçiyi hansıdır?",
+    "options": {
+      "A": "Bayt",
+      "B": "Bit",
+      "C": "Kilobayt",
+      "D": "Meqabayt",
+      "E": "Qiqabayt"
+    },
+    "correctAnswer": "B",
+    "explanation": "İnformasiyanın ən kiçik ölçü vahidi bit-dir. O, 0 və ya 1 qiymətlərini ala bilir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "1 Bayt neçə bitə bərabərdir?",
+    "options": {
+      "A": "4",
+      "B": "8",
+      "C": "10",
+      "D": "16",
+      "E": "32"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 Bayt 8 bitdən ibarətdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Alqoritmin əsas xassələrindən olmayan hansıdır?",
+    "options": {
+      "A": "Diskretlik",
+      "B": "Müəyyənlik",
+      "C": "Kütləvilik",
+      "D": "Nəticəvilik",
+      "E": "Sonsuzluq"
+    },
+    "correctAnswer": "E",
+    "explanation": "Alqoritm mütləq sonlu addımlardan ibarət olmalıdır. Sonsuzluq alqoritmin xassəsi deyil.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Elektron cədvəl redaktorlarında xanaların ünvanı necə göstərilir?",
+    "options": {
+      "A": "Yalnız rəqəmlərlə",
+      "B": "Yalnız hərflərlə",
+      "C": "Sütun hərfi və sətir rəqəmi ilə",
+      "D": "Sətir rəqəmi və sütun hərfi ilə",
+      "E": "Heç biri"
+    },
+    "correctAnswer": "C",
+    "explanation": "MS Excel kimi elektron cədvəllərdə xananın ünvanı əvvəlcə sütunun hərfi, sonra isə sətrin nömrəsi ilə (məsələn, A1) qeyd olunur.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Əməliyyat sistemi nədir?",
+    "options": {
+      "A": "İnternetə daxil olmaq üçün proqramdır",
+      "B": "Kompüterin donanım və proqram təminatını idarə edən sistem proqramıdır",
+      "C": "Mətnlər yazmaq üçün redaktordur",
+      "D": "Qrafik təsvirlər yaratmaq üçün proqramdır",
+      "E": "Məlumat bazası idarəetmə sistemidir"
+    },
+    "correctAnswer": "B",
+    "explanation": "Əməliyyat sistemi (məsələn, Windows, Linux, macOS) kompüterin resurslarını idarə edən və istifadəçi ilə kompüter arasında əlaqə yaradan əsas proqram təminatıdır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Kompüter virusları nədir?",
+    "options": {
+      "A": "Kompüterdə toplanan tozlar",
+      "B": "Özünü çoxaltdıraraq sistemə zərər vuran kiçik proqramlar",
+      "C": "Səhv yazılmış kod sətirləri",
+      "D": "Lazımsız qovluqlar",
+      "E": "Antivirus proqramları"
+    },
+    "correctAnswer": "B",
+    "explanation": "Kompüter virusları kompüterə icazəsiz daxil olub məlumatları silmək, korlamaq və ya oğurlamaq məqsədi daşıyan zərərli proqramlardır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Şəbəkə topologiyalarından hansı mövcud deyil?",
+    "options": {
+      "A": "Ulduz",
+      "B": "Həlqə",
+      "C": "Şin",
+      "D": "Kvadrat",
+      "E": "Ağac"
+    },
+    "correctAnswer": "D",
+    "explanation": "Əsas şəbəkə topologiyaları Ulduz, Həlqə, Şin və Ağacdır. Kvadrat adında şəbəkə topologiyası yoxdur.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "İnformasiya proseslərinə hansı aid deyil?",
+    "options": {
+      "A": "İnformasiyanın toplanması",
+      "B": "İnformasiyanın saxlanması",
+      "C": "İnformasiyanın emalı",
+      "D": "İnformasiyanın yox edilməsi",
+      "E": "İnformasiyanın ötürülməsi"
+    },
+    "correctAnswer": "D",
+    "explanation": "Əsas informasiya prosesləri toplanma, saxlanma, emal və ötürülmədir. Yox edilmə əsas proses kimi qeyd edilmir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Python proqramlaşdırma dilində ekrana məlumat çıxarmaq üçün hansı funksiyadan istifadə olunur?",
+    "options": {
+      "A": "read()",
+      "B": "write()",
+      "C": "print()",
+      "D": "echo",
+      "E": "input()"
+    },
+    "correctAnswer": "C",
+    "explanation": "Python-da nəticəni ekrana yazdırmaq üçün print() funksiyası istifadə edilir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Səhifələri internetdə tapmaq və baxmaq üçün istifadə olunan proqramlar necə adlanır?",
+    "options": {
+      "A": "Brauzerlər",
+      "B": "Axtarış sistemləri",
+      "C": "Əməliyyat sistemləri",
+      "D": "Mətn redaktorları",
+      "E": "Dili tərcümə edənlər"
+    },
+    "correctAnswer": "A",
+    "explanation": "Veb-səhifələrə daxil olmaq üçün brauzerlərdən (məs: Chrome, Safari, Firefox) istifadə olunur.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "İnternet şəbəkəsində kompüteri birmənalı təyin edən unikal ünvan necə adlanır?",
+    "options": {
+      "A": "MAC ünvan",
+      "B": "IP ünvan",
+      "C": "URL",
+      "D": "Domen",
+      "E": "E-poçt"
+    },
+    "correctAnswer": "B",
+    "explanation": "Hər bir internetə qoşulmuş cihazın unikal IP (Internet Protocol) ünvanı olur.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Qrafik informasiyanı kompüterə daxil etmək üçün hansı qurğudan istifadə edilir?",
+    "options": {
+      "A": "Skaner",
+      "B": "Monitor",
+      "C": "Printer",
+      "D": "Səs ucaldan",
+      "E": "Proyektor"
+    },
+    "correctAnswer": "A",
+    "explanation": "Skaner kağız üzərindəki qrafik və ya mətn informasiyasını rəqəmsal formata çevirib kompüterə daxil edən qurğudur.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "RAM (Random Access Memory) nədir?",
+    "options": {
+      "A": "Daxili daimi yaddaşdır",
+      "B": "Prosessordur",
+      "C": "Əməli yaddaşdır (müvəqqəti)",
+      "D": "Xarici yaddaş qurğusudur",
+      "E": "Optik diskdir"
+    },
+    "correctAnswer": "C",
+    "explanation": "RAM kompüterin işlədiyi zaman proqramların və məlumatların müvəqqəti saxlanıldığı əməli yaddaşdır. Enerji kəsildikdə məlumatlar silinir.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Hansı HTML teqi mətnin ən böyük başlıq (header) formasında yazılmasını təmin edir?",
+    "options": {
+      "A": "<head>",
+      "B": "<h6>",
+      "C": "<b>",
+      "D": "<h1>",
+      "E": "<title>"
+    },
+    "correctAnswer": "D",
+    "explanation": "HTML-də başlıqlar <h1>-dən <h6>-ya qədərdir, ən böyüyü isə <h1> teqidir.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Alqoritmin xassəsi olan 'Müəyyənlik' nə deməkdir?",
+    "options": {
+      "A": "Hər bir addımın birmənalı və dəqiq olması",
+      "B": "Alqoritmin hər kəs tərəfindən istifadə edilə bilməsi",
+      "C": "Alqoritmin mütləq bir nəticə verməsi",
+      "D": "Alqoritmin sonlu sayda addımlardan ibarət olması",
+      "E": "Məsələnin hissələrə bölünməsi"
+    },
+    "correctAnswer": "A",
+    "explanation": "Müəyyənlik - alqoritmin hər bir addımının icraçı üçün dəqiq, anlaşılan və birmənalı olmasıdır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Təqdimat proqramlarında (məsələn, PowerPoint) hər bir səhifə necə adlanır?",
+    "options": {
+      "A": "Sənəd",
+      "B": "Cədvəl",
+      "C": "Slayd",
+      "D": "Vərəq",
+      "E": "Veb-səhifə"
+    },
+    "correctAnswer": "C",
+    "explanation": "Təqdimat proqramlarında yaradılan informasiya vərəqləri slayd adlanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "1 Kilobayt (KB) neçə bayta bərabərdir?",
+    "options": {
+      "A": "1000",
+      "B": "1024",
+      "C": "1048576",
+      "D": "8",
+      "E": "512"
+    },
+    "correctAnswer": "B",
+    "explanation": "İnformatikada ikilik say sistemi əsas götürüldüyü üçün 1 KB = 2^10 = 1024 Bayt hesablanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "İnformasiyanın qorunması məqsədilə hansı proqramlardan istifadə edilir?",
+    "options": {
+      "A": "Arxivatorlar",
+      "B": "Qrafik redaktorlar",
+      "C": "Antiviruslar",
+      "D": "Brauzerlər",
+      "E": "Əməliyyat sistemləri"
+    },
+    "correctAnswer": "C",
+    "explanation": "Antivirus proqramları zərərli proqramları (virusları) tapmaq və zərərsizləşdirmək üçün istifadə olunur, beləliklə informasiya qorunur.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  },
+  {
+    "question": "Qovluq (Folder) nə üçündür?",
+    "options": {
+      "A": "Faylları nizamlı şəkildə qruplaşdırmaq və saxlamaq üçün",
+      "B": "Mətn yazmaq üçün",
+      "C": "Şəkil çəkmək üçün",
+      "D": "Hesablama aparmaq üçün",
+      "E": "İnternetə girmək üçün"
+    },
+    "correctAnswer": "A",
+    "explanation": "Qovluqlar (kataloqlar) diskdəki faylları müəyyən əlamətlərinə görə bir yerə yığmaq və asan tapılmasını təmin etmək üçün istifadə edilir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Əlavə anlayışlar",
+    "cat": "İnformatika 8"
+  }
+]

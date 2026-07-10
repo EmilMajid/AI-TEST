@@ -1,0 +1,578 @@
+[
+  {
+    "question": "Qabarıq dördbucaqlının daxili bucaqlarının nisbəti 1:2:3:4 kimidir. Ən böyük bucağı tapın.",
+    "options": {
+      "A": "36°",
+      "B": "72°",
+      "C": "108°",
+      "D": "144°",
+      "E": "150°"
+    },
+    "correctAnswer": "D",
+    "explanation": "Daxili bucaqların cəmi 360°-dir. x+2x+3x+4x = 10x = 360, x = 36. Ən böyük bucaq 4x = 4*36 = 144°.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Dördbucaqlılar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Qabarıq dördbucaqlının xarici bucaqlarının cəmi neçə dərəcədir?",
+    "options": {
+      "A": "180°",
+      "B": "270°",
+      "C": "360°",
+      "D": "540°",
+      "E": "720°"
+    },
+    "correctAnswer": "C",
+    "explanation": "İstənilən qabarıq çoxbucaqlının (o cümlədən dördbucaqlının) hər təpədən bir bucaq götürülməklə xarici bucaqlarının cəmi 360°-yə bərabərdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Dördbucaqlılar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Dördbucaqlının diaqonallarının sayı neçədir?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "correctAnswer": "B",
+    "explanation": "n-bucaqlının diaqonallarının sayı n(n-3)/2 düsturu ilə hesablanır. Dördbucaqlı üçün 4(4-3)/2 = 2-dir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Dördbucaqlılar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar çoxbucaqlının perimetrlərinin nisbəti 3:5 kimidir. Bu çoxbucaqlıların uyğun tərəflərinin nisbəti neçədir?",
+    "options": {
+      "A": "9:25",
+      "B": "3:5",
+      "C": "5:3",
+      "D": "√3:√5",
+      "E": "27:125"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxşar fiqurların perimetrlərinin nisbəti onların uyğun xətti ölçülərinin (tərəflərin) nisbətinə, yəni oxşarlıq əmsalına (k) bərabərdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar fiqurun oxşarlıq əmsalı k = 2-dir. Birinci fiqurun hər hansı tərəfi 4 sm olarsa, ikinci fiqurun uyğun tərəfinin uzunluğu neçə sm olar?",
+    "options": {
+      "A": "2 sm",
+      "B": "6 sm",
+      "C": "8 sm",
+      "D": "10 sm",
+      "E": "16 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Oxşarlıq əmsalı tərəflərin nisbətidir. İkinci fiqurun tərəfi birinci fiqurun tərəfindən 2 dəfə böyükdür: 4 * 2 = 8 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oxşar fiqurların xassələrindən hansı həmişə doğrudur?",
+    "options": {
+      "A": "Uyğun tərəfləri bərabərdir.",
+      "B": "Uyğun bucaqları bərabərdir.",
+      "C": "Sahələri bərabərdir.",
+      "D": "Perimetrləri bərabərdir.",
+      "E": "Yalnız formaları fərqlidir."
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxşar fiqurların uyğun bucaqları bərabərdir, uyğun tərəfləri isə mütənasibdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlama",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Müstəvi üzərində iki çevrənin oxşar olduğu məlumdur. Onların hansı ölçüləri mütənasibdir?",
+    "options": {
+      "A": "Yalnız radiusları",
+      "B": "Yalnız diametrləri",
+      "C": "Radiusları, diametrləri və uzunluqları",
+      "D": "Sahələri xətti mütənasibdir",
+      "E": "Mərkəzi bucaqları"
+    },
+    "correctAnswer": "C",
+    "explanation": "Bütün çevrələr bir-birinə oxşardır. Onların xətti ölçüləri olan radiusları, diametrləri və uzunluqları uyğun olaraq mütənasibdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Aşağıdakılardan hansı həmişə oxşardır?",
+    "options": {
+      "A": "İxtiyari iki romb",
+      "B": "İxtiyari iki düzbucaqlı",
+      "C": "İxtiyari iki bərabəryanlı üçbucaq",
+      "D": "İxtiyari iki kvadrat",
+      "E": "İxtiyari iki trapesiya"
+    },
+    "correctAnswer": "D",
+    "explanation": "Kvadratların bütün bucaqları 90°-dir (bərabərdir) və tərəfləri nisbəti də həmişə eynidir. Digər fiqurların bucaqları fərqli ola bilər.",
+    "difficulty": "Çətin",
+    "bloom_level": "Dəyərləndirmə",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Uzunluğu 12 sm olan parça, oxşarlıq əmsalı 1/3 olan çevrilmədə uzunluğu neçə sm olan parçaya keçir?",
+    "options": {
+      "A": "3 sm",
+      "B": "4 sm",
+      "C": "6 sm",
+      "D": "9 sm",
+      "E": "36 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxşarlıq çevrilməsində xətti ölçülər oxşarlıq əmsalına vurulur: 12 * (1/3) = 4 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Miqyas anlayışı hansı mövzu ilə birbaşa əlaqəlidir?",
+    "options": {
+      "A": "Sahələrin hesablanması",
+      "B": "Pifaqor teoremi",
+      "C": "Fiqurların oxşarlığı",
+      "D": "Çoxhədlilər",
+      "E": "Xətti funksiya"
+    },
+    "correctAnswer": "C",
+    "explanation": "Miqyas xəritədəki və ya plandakı ölçünün həqiqi ölçüyə nisbətidir ki, bu da fiqurların oxşarlığı anlayışına və oxşarlıq əmsalına əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Fiqurların oxşarlığı",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "√81 - √25 ifadəsinin qiymətini tapın.",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "8"
+    },
+    "correctAnswer": "B",
+    "explanation": "√81 = 9 və √25 = 5. Onların fərqi: 9 - 5 = 4.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Hesabi kvadrat kök üçün aşağıdakılardan hansı həmişə doğrudur?",
+    "options": {
+      "A": "Mənfi ədədlərdən hesablanır",
+      "B": "Nəticəsi mənfi ola bilər",
+      "C": "Nəticəsi mənfi olmayan ədəddir",
+      "D": "Həmişə irrasional ədəddir",
+      "E": "Cüt ədəddir"
+    },
+    "correctAnswer": "C",
+    "explanation": "Tərifə görə, a mənfi olmayan ədəddirsə, kvadratı a-ya bərabər olan mənfi olmayan ədədə a-nın hesabi kvadrat kökü deyilir (√a ≥ 0).",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "√(-5)² ifadəsinin qiyməti nəyə bərabərdir?",
+    "options": {
+      "A": "-5",
+      "B": "5",
+      "C": "-25",
+      "D": "25",
+      "E": "Mənası yoxdur"
+    },
+    "correctAnswer": "B",
+    "explanation": "√(a²) = |a|. Buna görə də √(-5)² = |-5| = 5.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Aşağıdakı ədədlərdən hansı irrasionaldır?",
+    "options": {
+      "A": "√16",
+      "B": "√2.25",
+      "C": "√20",
+      "D": "-√49",
+      "E": "√0.04"
+    },
+    "correctAnswer": "C",
+    "explanation": "√16 = 4, √2.25 = 1.5, -√49 = -7, √0.04 = 0.2 rasionallardır. √20 isə kökdən tam çıxmadığı üçün irrasionaldır (2√5).",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "x^4 - 5x^2 + 4 = 0 bikvadrat tənliyinin köklərinin cəmini tapın.",
+    "options": {
+      "A": "0",
+      "B": "4",
+      "C": "-5",
+      "D": "5",
+      "E": "1"
+    },
+    "correctAnswer": "A",
+    "explanation": "x^2 = t əvəzləməsi etsək, t^2 - 5t + 4 = 0 tənliyi alınır. t_1=1, t_2=4. Buradan x_1=1, x_2=-1, x_3=2, x_4=-2. Bütün köklərin cəmi: 1-1+2-2 = 0.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Kəsr-rasional tənlikləri həll edərkən alınan köklər üçün hansı yoxlama mütləq aparılmalıdır?",
+    "options": {
+      "A": "Köklərin cüt olub-olmaması",
+      "B": "Köklərin tam ədəd olması",
+      "C": "Məxrəci sıfıra çevirən kənar köklərin müəyyən edilməsi",
+      "D": "Diskriminantın yoxlanması",
+      "E": "Köklərin hasilinin yoxlanması"
+    },
+    "correctAnswer": "C",
+    "explanation": "Kəsr-rasional tənliklərdə məxrəci 0-a çevirən qiymətlər tənliyin kökü ola bilməz, onlar kənar köklərdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(x² - 1)/(x - 1) = 0 tənliyinin neçə kökü var?",
+    "options": {
+      "A": "Kökü yoxdur",
+      "B": "1",
+      "C": "2",
+      "D": "3",
+      "E": "Sonsuz sayda"
+    },
+    "correctAnswer": "B",
+    "explanation": "Kəsrin sıfıra bərabər olması üçün surət sıfır (x² - 1 = 0 => x=1, x=-1), məxrəc isə sıfırdan fərqli olmalıdır (x - 1 ≠ 0 => x ≠ 1). Deməli, yalnız x = -1 kökdür. 1 kökü var.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "x^6 - 9x^3 + 8 = 0 tənliyini həll etmək üçün hansı əvəzləmədən istifadə etmək məqsədəuyğundur?",
+    "options": {
+      "A": "x^2 = t",
+      "B": "x^3 = t",
+      "C": "x^4 = t",
+      "D": "1/x = t",
+      "E": "√x = t"
+    },
+    "correctAnswer": "B",
+    "explanation": "Tənlikdə dəyişənin qüvvətləri 6 və 3-dür. x^6 = (x^3)^2 olduğu üçün x^3 = t əvəzləməsi tənliyi t^2 - 9t + 8 = 0 şəklinə gətirir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Bikvadrat tənlik hansı şəkildədir? (a≠0)",
+    "options": {
+      "A": "ax^3 + bx^2 + cx + d = 0",
+      "B": "ax^2 + bx + c = 0",
+      "C": "ax^4 + bx^2 + c = 0",
+      "D": "ax^4 + bx^3 + c = 0",
+      "E": "ax^2 + c = 0"
+    },
+    "correctAnswer": "C",
+    "explanation": "ax^4 + bx^2 + c = 0 şəkilli tənliyə bikvadrat tənlik deyilir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "(x - 2)^2 - 3(x - 2) - 4 = 0 tənliyində x - 2 = t əvəzləməsi aparılarsa, hansı kvadrat tənlik alınar?",
+    "options": {
+      "A": "t^2 - 3t + 4 = 0",
+      "B": "t^2 + 3t - 4 = 0",
+      "C": "t^2 - 3t - 4 = 0",
+      "D": "t^2 - 4t - 3 = 0",
+      "E": "2t^2 - 3t - 4 = 0"
+    },
+    "correctAnswer": "C",
+    "explanation": "x - 2 ifadəsinin yerinə t yazıldıqda (x - 2)^2 yerinə t^2, 3(x - 2) yerinə isə 3t yazılır və t^2 - 3t - 4 = 0 tənliyi alınır.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "y^4 - 13y^2 + 36 = 0 tənliyinin ən böyük və ən kiçik köklərinin hasilini tapın.",
+    "options": {
+      "A": "36",
+      "B": "-9",
+      "C": "9",
+      "D": "-36",
+      "E": "0"
+    },
+    "correctAnswer": "B",
+    "explanation": "y^2 = t => t^2 - 13t + 36 = 0 => t_1 = 4, t_2 = 9. y^2 = 4 => y = ±2. y^2 = 9 => y = ±3. Köklər: -3, -2, 2, 3. Ən böyük kök 3, ən kiçik kök -3. Hasil: 3 * (-3) = -9.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Kvadrat tənliyə gətirilən tənliklər",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki üçbucağın oxşarlığının birinci (BB) əlaməti necə ifadə olunur?",
+    "options": {
+      "A": "Bir üçbucağın iki tərəfi digərinin iki tərəfinə bərabərdirsə",
+      "B": "Bir üçbucağın iki bucağı uyğun olaraq digər üçbucağın iki bucağına bərabərdirsə",
+      "C": "Bir üçbucağın üç tərəfi digərinin üç tərəfinə mütənasibdirsə",
+      "D": "Bir üçbucağın sahəsi digərinin sahəsinə bərabərdirsə",
+      "E": "Bir üçbucağın hündürlüyü digərinin hündürlüyünə mütənasibdirsə"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçbucaqların oxşarlığının BB (Bucaq-Bucaq) əlamətinə görə, bir üçbucağın iki bucağı digər üçbucağın iki bucağına bərabərdirsə, bu üçbucaqlar oxşardır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "ABC və A1B1C1 üçbucaqları oxşardır (ΔABC ~ ΔA1B1C1). Əgər AB = 6, BC = 8, A1B1 = 9 olarsa, B1C1 tərəfini tapın.",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "15",
+      "E": "16"
+    },
+    "correctAnswer": "B",
+    "explanation": "Uyğun tərəflərin nisbəti bərabərdir: AB/A1B1 = BC/B1C1 => 6/9 = 8/x => 2/3 = 8/x => 2x = 24 => x = 12.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oxşar üçbucaqların uyğun hündürlüklərinin nisbəti nəyə bərabərdir?",
+    "options": {
+      "A": "Oxşarlıq əmsalının kvadratına",
+      "B": "Oxşarlıq əmsalının yarısına",
+      "C": "Uyğun medianların nisbətinin kvadratına",
+      "D": "Oxşarlıq əmsalına",
+      "E": "Sahələrin nisbətinə"
+    },
+    "correctAnswer": "D",
+    "explanation": "Oxşar üçbucaqlarda bütün uyğun xətti ölçülərin (tərəf, perimetr, hündürlük, median, tənbölən, radius) nisbəti oxşarlıq əmsalına (k) bərabərdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Bütün dördbucaqlılar üçün hansı halda onların mütləq oxşar olduğunu demək olar?",
+    "options": {
+      "A": "Yalnız uyğun bucaqları bərabər olduqda",
+      "B": "Yalnız uyğun tərəfləri mütənasib olduqda",
+      "C": "Həm uyğun bucaqları bərabər, həm də uyğun tərəfləri mütənasib olduqda",
+      "D": "Perimetrləri bərabər olduqda",
+      "E": "Diaqonalları bərabər olduqda"
+    },
+    "correctAnswer": "C",
+    "explanation": "Üçbucaqlardan fərqli olaraq, dördbucaqlıların oxşar olması üçün həm uyğun bucaqlar bərabər olmalı, həm də bütün uyğun tərəflər mütənasib olmalıdır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Tərəfləri 4 sm, 5 sm və 6 sm olan üçbucağa oxşar olan üçbucağın ən böyük tərəfi 18 sm-dir. Bu üçbucağın ən kiçik tərəfini tapın.",
+    "options": {
+      "A": "8 sm",
+      "B": "10 sm",
+      "C": "12 sm",
+      "D": "14 sm",
+      "E": "15 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Oxşarlıq əmsalı ən böyük tərəflərin nisbətidir: 18 / 6 = 3. Ən kiçik tərəf də 3 dəfə böyük olacaq: 4 * 3 = 12 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar dördbucaqlılar,oxşar üçbucaqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oxşar iki çoxbucaqlının sahələri nisbəti 16:25-dir. Bu fiqurların oxşarlıq əmsalını (k) tapın.",
+    "options": {
+      "A": "16:25",
+      "B": "4:5",
+      "C": "256:625",
+      "D": "2:3",
+      "E": "8:12.5"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxşar fiqurların sahələri nisbəti onların oxşarlıq əmsalının kvadratına (k^2) bərabərdir. k^2 = 16/25 => k = 4/5.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oxşarlıq əmsalı k=3 olan iki oxşar fiqurdan kiçiyinin sahəsi 10 sm²-dir. Böyük fiqurun sahəsini tapın.",
+    "options": {
+      "A": "30 sm²",
+      "B": "60 sm²",
+      "C": "90 sm²",
+      "D": "100 sm²",
+      "E": "120 sm²"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sahələrin nisbəti k^2 = 3^2 = 9-a bərabərdir. Böyük fiqurun sahəsi S_b = S_k * 9 = 10 * 9 = 90 sm².",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar üçbucağın perimetrlərinin nisbəti 1:2 kimidir. Birinci üçbucağın sahəsi S olarsa, ikinci üçbucağın sahəsi nəyə bərabərdir?",
+    "options": {
+      "A": "2S",
+      "B": "3S",
+      "C": "4S",
+      "D": "8S",
+      "E": "0.5S"
+    },
+    "correctAnswer": "C",
+    "explanation": "Perimetrlərin nisbəti oxşarlıq əmsalı k=1/2-dir (və ya k=2-dir böyükdən kiçiyə). Sahələrin nisbəti k^2 = 4 olacaq. Deməli, ikinci üçbucağın sahəsi 4S-dir.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Xəritənin miqyası 1:1000-dir. Xəritədə sahəsi 5 sm² olan gölün həqiqi sahəsi nə qədərdir?",
+    "options": {
+      "A": "5000 sm²",
+      "B": "50 000 sm²",
+      "C": "500 000 sm²",
+      "D": "5 000 000 sm²",
+      "E": "50 000 000 sm²"
+    },
+    "correctAnswer": "D",
+    "explanation": "Həqiqi sahə xəritədəki sahənin miqyasın məxrəcinin kvadratına vurulması ilə tapılır. S = 5 * 1000^2 = 5 * 1 000 000 = 5 000 000 sm².",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar rombun sahələri 18 sm² və 50 sm²-dir. Onların uyğun hündürlüklərinin nisbətini tapın.",
+    "options": {
+      "A": "9:25",
+      "B": "3:5",
+      "C": "18:50",
+      "D": "81:625",
+      "E": "2:3"
+    },
+    "correctAnswer": "B",
+    "explanation": "Sahələrin nisbəti k^2-na bərabərdir. 18/50 = 9/25. k^2 = 9/25 => k = 3/5. Hündürlüklərin nisbəti k-ya, yəni 3:5-ə bərabərdir.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oxşar fiqurların xətti ölçüləri 4 dəfə artırılarsa, sahəsi neçə dəfə artar?",
+    "options": {
+      "A": "2 dəfə",
+      "B": "4 dəfə",
+      "C": "8 dəfə",
+      "D": "16 dəfə",
+      "E": "32 dəfə"
+    },
+    "correctAnswer": "D",
+    "explanation": "Xətti ölçülər n dəfə artarsa, sahə n^2 dəfə artar. 4^2 = 16 dəfə.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Oxşar fiqurların sahəsi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın qarşı bucaqları haqqında hansı fikir doğrudur?",
+    "options": {
+      "A": "Cəmi 180°-dir",
+      "B": "Bir-birinə bərabərdir",
+      "C": "Cəmi 360°-dir",
+      "D": "Nisbəti 1:2-dir",
+      "E": "Həmişə 90°-dir"
+    },
+    "correctAnswer": "B",
+    "explanation": "Paraleloqramın xassəsinə görə onun qarşı bucaqları bərabərdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Paraleloqram",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın bir tərəfinə bitişik bucaqlarının cəmi neçə dərəcədir?",
+    "options": {
+      "A": "90°",
+      "B": "180°",
+      "C": "270°",
+      "D": "360°",
+      "E": "120°"
+    },
+    "correctAnswer": "B",
+    "explanation": "Paraleloqramın paralel tərəflərini kəsən üçüncü düz xəttə görə daxili birtərəfli bucaqların cəmi 180°-dir.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlama",
+    "topic": "Paraleloqram",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Paraleloqramın bucaqlarından biri 45°-dir. Onun digər bucaqlarını tapın.",
+    "options": {
+      "A": "45°, 45°, 135°",
+      "B": "45°, 135°, 135°",
+      "C": "90°, 90°, 135°",
+      "D": "135°, 135°, 135°",
+      "E": "45°, 90°, 90°"
+    },
+    "correctAnswer": "B",
+    "explanation": "Paraleloqramın qarşı bucaqları bərabərdir: 45° və 45°. Bitişik bucaqların cəmi 180° olduğundan, digər bucaq 180° - 45° = 135°-dir (iki ədəd qarşı bucaq: 135°, 135°).",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Paraleloqram",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Hansı dördbucaqlının diaqonalları kəsişmə nöqtəsində yarıya bölünür?",
+    "options": {
+      "A": "Yalnız kvadratın",
+      "B": "Yalnız rombun",
+      "C": "Paraleloqramın",
+      "D": "İxtiyari trapesiyanın",
+      "E": "Deltoidin"
+    },
+    "correctAnswer": "C",
+    "explanation": "Paraleloqramın (və onun xüsusi halları olan düzbucaqlı, romb, kvadratın) diaqonalları kəsişir və kəsişmə nöqtəsində yarıya bölünür.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Paraleloqram",
+    "cat": "Riyaziyyat 8"
+  }
+]

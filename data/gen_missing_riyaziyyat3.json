@@ -1,0 +1,578 @@
+[
+  {
+    "question": "Düzbucaqlı üçbucağın katetləri 3 sm və 4 sm-dir. Kiçik bucağın sinusunu tapın.",
+    "options": {
+      "A": "0.6",
+      "B": "0.8",
+      "C": "0.75",
+      "D": "1.25",
+      "E": "0.5"
+    },
+    "correctAnswer": "A",
+    "explanation": "Katetlər 3 və 4 olduqda, Pifaqor teoreminə görə hipotenuz 5-dir. Kiçik bucaq kiçik katetin (3 sm) qarşısındadır. Sinus bərabərdir qarşı katet / hipotenuz = 3/5 = 0.6.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Ağacın kölgəsinin uzunluğu 10 m-dir. Günəş şüalarının yer səthi ilə əmələ gətirdiyi bucaq 30° olarsa, ağacın hündürlüyünü tapın.",
+    "options": {
+      "A": "10√3/3 m",
+      "B": "5√3 m",
+      "C": "10 m",
+      "D": "5 m",
+      "E": "10√2 m"
+    },
+    "correctAnswer": "A",
+    "explanation": "Ağacın hündürlüyünün (h) kölgənin uzunluğuna (10) nisbəti tan30°-yə bərabərdir. h/10 = 1/√3. h = 10/√3 = 10√3/3.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucaqda iti bucaqlardan birinin tangensi 3/4-ə bərabərdir. Bu bucağın kosinusunu tapın.",
+    "options": {
+      "A": "0.6",
+      "B": "0.5",
+      "C": "0.8",
+      "D": "0.4",
+      "E": "0.75"
+    },
+    "correctAnswer": "C",
+    "explanation": "Tangens 3/4 olarsa, qarşı katet 3k, bitişik katet 4k olar. Hipotenuz 5k olur. Kosinus bərabərdir bitişik katet / hipotenuz = 4k/5k = 0.8.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Binadan 20 metr aralıda dayanan müşahidəçi binanın təpə nöqtəsini 45° bucaq altında görür. Müşahidəçinin göz səviyyəsinin yerdən hündürlüyü 1.5 m olarsa, binanın ümumi hündürlüyünü tapın.",
+    "options": {
+      "A": "20 m",
+      "B": "21.5 m",
+      "C": "22.5 m",
+      "D": "18.5 m",
+      "E": "23 m"
+    },
+    "correctAnswer": "B",
+    "explanation": "Müşahidə səviyyəsindən binanın təpəsinə qədər olan hissə h = 20 * tan45° = 20 * 1 = 20 m. Ümumi hündürlük = 20 + 1.5 = 21.5 m.",
+    "difficulty": "Çətin",
+    "bloom_level": "Sintez",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Təyyarə 30° bucaq altında yuxarı qalxır. 2 km uçduqdan sonra təyyarə yerdən hansı hündürlüyə qalxar?",
+    "options": {
+      "A": "1.5 km",
+      "B": "√3 km",
+      "C": "2 km",
+      "D": "1 km",
+      "E": "0.5 km"
+    },
+    "correctAnswer": "D",
+    "explanation": "Hündürlük (katet) uçuş məsafəsinin (hipotenuz) və qalxma bucağının sinusunun hasilinə bərabərdir. h = 2 * sin30° = 2 * 0.5 = 1 km.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucaqda hipotenuz 13 sm, bir katet isə 5 sm-dir. Bu katetə bitişik iti bucağın kosinusunu tapın.",
+    "options": {
+      "A": "12/13",
+      "B": "5/12",
+      "C": "5/13",
+      "D": "12/5",
+      "E": "1/2"
+    },
+    "correctAnswer": "C",
+    "explanation": "Kosinus bitişik katetin hipotenuza nisbətidir. Bitişik katet 5 sm, hipotenuz 13 sm olduğundan, kosinus = 5/13.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Qüllənin hündürlüyü 50 metrdir. Qüllənin təpəsindən yerdəki cismə qədər olan enmə bucağı 60°-dir. Cisim qüllənin oturacağından hansı məsafədədir?",
+    "options": {
+      "A": "25√3 m",
+      "B": "50 m",
+      "C": "100/√3 m",
+      "D": "50√3/3 m",
+      "E": "50√2 m"
+    },
+    "correctAnswer": "D",
+    "explanation": "Enmə bucağı oturacaqdakı qalxma bucağına bərabərdir (60°). x * tan60° = 50. x = 50 / √3 = 50√3/3 m.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucağın iti bucağının sinusu 1/2-dir. Bu bucağın tangensini tapın.",
+    "options": {
+      "A": "√3/3",
+      "B": "√3",
+      "C": "1",
+      "D": "1/2",
+      "E": "√2/2"
+    },
+    "correctAnswer": "A",
+    "explanation": "Sinusu 1/2 olan iti bucaq 30°-dir. 30 dərəcəli bucağın tangensi isə √3/3 (və ya 1/√3) -ə bərabərdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Triqonometrik nisbətlərin tətbiqi ilə məsələ həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "x² - 5x + 6 = 0 tənliyinin kökləri x₁ və x₂ olarsa, x₁ + x₂ cəmini tapın.",
+    "options": {
+      "A": "-5",
+      "B": "5",
+      "C": "6",
+      "D": "-6",
+      "E": "1"
+    },
+    "correctAnswer": "B",
+    "explanation": "Çevrilmiş kvadrat tənlikdə Viyet teoreminə əsasən, köklərin cəmi x-in əmsalının əks işarəsinə bərabərdir: x₁ + x₂ = -(-5) = 5.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "Viyet teoremi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Kökləri -3 və 4 olan çevrilmiş kvadrat tənliyi göstərin.",
+    "options": {
+      "A": "x² + x - 12 = 0",
+      "B": "x² - x + 12 = 0",
+      "C": "x² - x - 12 = 0",
+      "D": "x² + x + 12 = 0",
+      "E": "x² - 7x - 12 = 0"
+    },
+    "correctAnswer": "C",
+    "explanation": "Viyet teoreminə görə köklərin cəmi: -3 + 4 = 1. p = -1. Köklərin hasili: -3 * 4 = -12. q = -12. Tənlik: x² - x - 12 = 0.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Viyet teoremi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "2x² - 7x + 3 = 0 tənliyinin kökləri hasilini tapın.",
+    "options": {
+      "A": "3",
+      "B": "7",
+      "C": "3.5",
+      "D": "1.5",
+      "E": "-1.5"
+    },
+    "correctAnswer": "D",
+    "explanation": "Tənliyin hər tərəfini 2-yə bölüb çevrilmiş tənliyə gətiririk: x² - 3.5x + 1.5 = 0. Köklərin hasili Viyet teoreminə görə sərbəst həddə (1.5) bərabərdir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Viyet teoremi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "x² + bx + c = 0 tənliyinin köklərindən biri 2+√3 -dür (əmsallar rasionaldır). c əmsalını tapın.",
+    "options": {
+      "A": "2",
+      "B": "-1",
+      "C": "4",
+      "D": "1",
+      "E": "3"
+    },
+    "correctAnswer": "D",
+    "explanation": "Rasional əmsallı kvadrat tənliyin irrasional kökləri qoşma olur. Digər kök: 2-√3. Viyet teoreminə görə c köklərin hasilidir: (2+√3)(2-√3) = 4 - 3 = 1.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Viyet teoremi",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Rombun diaqonalları 10 sm və 24 sm-dir. Rombun perimetrini tapın.",
+    "options": {
+      "A": "48 sm",
+      "B": "52 sm",
+      "C": "60 sm",
+      "D": "40 sm",
+      "E": "68 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Rombun diaqonalları kəsişdikdə 90°-li bucaq altında yarıya bölünür. Düzbucaqlı üçbucağın katetləri 5 və 12 olur. Hipotenuz (rombun tərəfi) = √(5² + 12²) = 13 sm. Perimetr = 4 * 13 = 52 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "x² - 9 = 0 tənliyinin köklərinin cəmini tapın.",
+    "options": {
+      "A": "9",
+      "B": "-9",
+      "C": "3",
+      "D": "0",
+      "E": "-3"
+    },
+    "correctAnswer": "D",
+    "explanation": "Tənliyin kökləri 3 və -3-dür. Onların cəmi 3 + (-3) = 0 edir. (Eyni zamanda Viyet teoreminə görə x əmsalı 0 olduğundan cəm 0-dır).",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar üçbucağın uyğun tərəfləri 4 sm və 6 sm-dir. Onların perimetrləri nisbətini tapın.",
+    "options": {
+      "A": "4/9",
+      "B": "2/3",
+      "C": "3/2",
+      "D": "16/36",
+      "E": "1/2"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxşar üçbucaqların perimetrlərinin nisbəti onların uyğun tərəflərinin nisbətinə (oxşarlıq əmsalına) bərabərdir: 4/6 = 2/3.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki oxşar üçbucağın sahələri 25 sm² və 49 sm²-dir. Onların uyğun hündürlükləri nisbətini tapın.",
+    "options": {
+      "A": "25/49",
+      "B": "7/5",
+      "C": "5/14",
+      "D": "5/7",
+      "E": "10/7"
+    },
+    "correctAnswer": "D",
+    "explanation": "Oxşar üçbucaqların sahələrinin nisbəti oxşarlıq əmsalının kvadratına bərabərdir. k² = 25/49, deməli k = 5/7. Hündürlüklərin nisbəti də 5/7 olar.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "ABC və A₁B₁C₁ üçbucaqları oxşardır. AB=8, BC=10, AC=12 və A₁B₁=4 olarsa, A₁B₁C₁ üçbucağının perimetrini tapın.",
+    "options": {
+      "A": "30",
+      "B": "10",
+      "C": "15",
+      "D": "20",
+      "E": "60"
+    },
+    "correctAnswer": "C",
+    "explanation": "ABC üçbucağının perimetri = 8 + 10 + 12 = 30. Oxşarlıq əmsalı k = AB/A₁B₁ = 8/4 = 2. Onda A₁B₁C₁-in perimetri 30 / 2 = 15 olar.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Düzbucaqlı üçbucaqda düz bucaq təpəsindən hipotenuza çəkilmiş hündürlük onu 4 sm və 9 sm uzunluğunda iki hissəyə ayırır. Bu hündürlüyü tapın.",
+    "options": {
+      "A": "36 sm",
+      "B": "13 sm",
+      "C": "6 sm",
+      "D": "5 sm",
+      "E": "12 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Düzbucaqlı üçbucaqda düz bucaq təpəsindən çəkilən hündürlüyün kvadratı hipotenuzun ayrıldığı parçaların hasilinə bərabərdir (oxşarlıqdan alınır). h² = 4 * 9 = 36, h = 6 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Oturacaqları 10 sm və 15 sm olan trapesiyanın diaqonalları kəsişir və bu kəsişmə nöqtəsi böyük oturacağa bitişik üçbucağın hündürlüyünü 9 sm edir. Kiçik oturacağa bitişik üçbucağın hündürlüyünü tapın.",
+    "options": {
+      "A": "5 sm",
+      "B": "4 sm",
+      "C": "6 sm",
+      "D": "7 sm",
+      "E": "8 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Trapesiyanın diaqonallarının kəsişməsi ilə alınan oturacaqlara bitişik üçbucaqlar oxşardır. Oxşarlıq əmsalı 15/10 = 1.5. Hündürlüklər nisbəti də 1.5 olmalıdır: 9 / x = 1.5, x = 6 sm.",
+    "difficulty": "Çətin",
+    "bloom_level": "Sintez",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "İki üçbucağın iki bucağı uyğun olaraq bərabərdir. Birinci üçbucağın perimetri 24 sm, böyük üçbucağın kiçiyə nisbətindən yaranan oxşarlıq əmsalı isə 3-dür. Birinci üçbucaq kiçik üçbucaq olarsa, böyük üçbucağın perimetrini tapın.",
+    "options": {
+      "A": "24 sm",
+      "B": "8 sm",
+      "C": "48 sm",
+      "D": "72 sm",
+      "E": "36 sm"
+    },
+    "correctAnswer": "D",
+    "explanation": "İki bucağı bərabər olan üçbucaqlar oxşardır. Oxşarlıq əmsalı 3 olduğundan və kiçik üçbucağın perimetri 24 sm verildiyindən, böyük üçbucağın perimetri 24 * 3 = 72 sm olar.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçbucaqların oxşarlıq əlamətləri",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın tərəfləri 6 sm, 8 sm və 10 sm-dir. Bu üçbucağın orta xətlərindən yaranan yeni üçbucağın perimetrini tapın.",
+    "options": {
+      "A": "24 sm",
+      "B": "12 sm",
+      "C": "6 sm",
+      "D": "18 sm",
+      "E": "48 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Böyük üçbucağın perimetri = 6 + 8 + 10 = 24 sm. Orta xətlərdən ibarət üçbucağın tərəfləri əsas üçbucağın tərəflərinin yarısıdır. Perimetri də yarısı olur: 24 / 2 = 12 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın oturacağı 14 sm-dir. Bu oturacağa paralel olan orta xəttin uzunluğunu tapın.",
+    "options": {
+      "A": "14 sm",
+      "B": "28 sm",
+      "C": "7 sm",
+      "D": "10 sm",
+      "E": "3.5 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Üçbucağın orta xətti paralel olduğu tərəfin yarısına bərabərdir: 14 / 2 = 7 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın orta xətləri 3 sm, 4 sm və 5 sm-dir. Verilmiş üçbucağın ən böyük tərəfinin uzunluğunu tapın.",
+    "options": {
+      "A": "8 sm",
+      "B": "10 sm",
+      "C": "6 sm",
+      "D": "12 sm",
+      "E": "15 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Orta xətlər əsas tərəflərin yarısına bərabərdir. Ən böyük orta xətt 5 sm-dir. Deməli, ona paralel olan ən böyük tərəf 5 * 2 = 10 sm olar.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Bərabəryanlı üçbucağın yan tərəfi 12 sm-dir. Oturacağa paralel olmayan orta xəttin uzunluğunu tapın.",
+    "options": {
+      "A": "12 sm",
+      "B": "24 sm",
+      "C": "8 sm",
+      "D": "6 sm",
+      "E": "4 sm"
+    },
+    "correctAnswer": "D",
+    "explanation": "Oturacağa paralel olmayan orta xətt yan tərəfə paraleldir. Orta xətt ona paralel olan tərəfin yarısına bərabərdir: 12 / 2 = 6 sm.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın orta xətti ondan sahəsi 15 sm² olan üçbucaq ayırır. Verilmiş böyük üçbucağın sahəsini tapın.",
+    "options": {
+      "A": "30 sm²",
+      "B": "60 sm²",
+      "C": "45 sm²",
+      "D": "75 sm²",
+      "E": "15 sm²"
+    },
+    "correctAnswer": "B",
+    "explanation": "Orta xəttin ayırdığı kiçik üçbucağın tərəfləri əsas üçbucağın tərəflərinin yarısıdır, yəni oxşarlıq əmsalı 1/2-dir. Sahələr nisbəti (1/2)² = 1/4 olur. Böyük sahə = 15 * 4 = 60 sm².",
+    "difficulty": "Çətin",
+    "bloom_level": "Sintez",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın tərəflərinin orta nöqtələrini birləşdirdikdə alınan üçbucağın perimetri 16 sm-dir. Əsas üçbucağın perimetrini tapın.",
+    "options": {
+      "A": "16 sm",
+      "B": "8 sm",
+      "C": "32 sm",
+      "D": "24 sm",
+      "E": "48 sm"
+    },
+    "correctAnswer": "C",
+    "explanation": "Orta nöqtələri birləşdirən üçbucağın tərəfləri orta xətlərdir. Onun perimetri əsas üçbucağın perimetrinin yarısına bərabərdir. 16 * 2 = 32 sm.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlama",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "Üçbucağın orta xətti ona paralel olan tərəfdən 5 sm kiçikdir. Bu tərəfin uzunluğunu tapın.",
+    "options": {
+      "A": "5 sm",
+      "B": "10 sm",
+      "C": "15 sm",
+      "D": "2.5 sm",
+      "E": "20 sm"
+    },
+    "correctAnswer": "B",
+    "explanation": "Tərəfi x, orta xətti x/2 qəbul etsək: x - x/2 = 5 sm. x/2 = 5, burdan x = 10 sm alınır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçbucağın orta xətti",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "-2 < x - 3 < 5 bərabərsizliyinin tam həllərinin cəmini tapın.",
+    "options": {
+      "A": "28",
+      "B": "30",
+      "C": "27",
+      "D": "35",
+      "E": "25"
+    },
+    "correctAnswer": "C",
+    "explanation": "Hər tərəfə 3 əlavə etsək: 1 < x < 8. Tam həllər: 2, 3, 4, 5, 6, 7. Cəm: 2+3+4+5+6+7 = 27.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "-5 ≤ 2x + 1 < 9 bərabərsizliyini həll edin.",
+    "options": {
+      "A": "(-3; 4]",
+      "B": "[-3; 4]",
+      "C": "(-3; 4)",
+      "D": "[-3; 4)",
+      "E": "[-4; 3)"
+    },
+    "correctAnswer": "D",
+    "explanation": "Hər tərəfdən 1 çıxaq: -6 ≤ 2x < 8. Hər tərəfi 2-yə bölək: -3 ≤ x < 4. Həll aralığı: [-3; 4).",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "4 < 3x - 2 < 13 bərabərsizliyinin neçə tam həlli var?",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "2",
+      "D": "4",
+      "E": "5"
+    },
+    "correctAnswer": "C",
+    "explanation": "Hər tərəfə 2 əlavə etsək: 6 < 3x < 15. 3-ə bölək: 2 < x < 5. Tam həllər 3 və 4. Cəmi 2 tam həll var.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "-1 < (x+2)/3 ≤ 2 bərabərsizliyinin ən kiçik və ən böyük tam həllərinin hasilini tapın.",
+    "options": {
+      "A": "-20",
+      "B": "-16",
+      "C": "-15",
+      "D": "-12",
+      "E": "-25"
+    },
+    "correctAnswer": "B",
+    "explanation": "Hər tərəfi 3-ə vuraq: -3 < x + 2 ≤ 6. 2 çıxaq: -5 < x ≤ 4. Ən kiçik tam həll: -4. Ən böyük tam həll: 4. Hasil: -4 * 4 = -16.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "10 ≤ 4 - 2x ≤ 20 bərabərsizliyini həll edin.",
+    "options": {
+      "A": "[-3; 8]",
+      "B": "[-8; 3]",
+      "C": "(-8; -3)",
+      "D": "[-8; -3]",
+      "E": "[3; 8]"
+    },
+    "correctAnswer": "D",
+    "explanation": "Hər tərəfdən 4 çıxaq: 6 ≤ -2x ≤ 16. Hər tərəfi -2-yə böldükdə işarələr dəyişir: -8 ≤ x ≤ -3. Həll aralığı: [-8; -3].",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "-2 < 5 - x < 3 bərabərsizliyinin tam həllərinin sayını tapın.",
+    "options": {
+      "A": "5",
+      "B": "3",
+      "C": "4",
+      "D": "6",
+      "E": "2"
+    },
+    "correctAnswer": "C",
+    "explanation": "Hər tərəfdən 5 çıxaq: -7 < -x < -2. İşarəni dəyişək: 2 < x < 7. Tam həllər: 3, 4, 5, 6. Sayı 4 dənədir.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "0 < |x| < 4 bərabərsizliyinin tam həllərinin cəmini tapın.",
+    "options": {
+      "A": "12",
+      "B": "6",
+      "C": "0",
+      "D": "-6",
+      "E": "4"
+    },
+    "correctAnswer": "C",
+    "explanation": "Tam həllər: x = -3, -2, -1, 1, 2, 3. Onların cəmi 0-a bərabərdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlama",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "-3 < 2x - 1 < 3 bərabərsizliyini ödəyən x tam ədədlərinin hasili neçədir?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "-1",
+      "D": "2",
+      "E": "-2"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 əlavə edək: -2 < 2x < 4. 2-yə bölək: -1 < x < 2. Tam həllər: 0 və 1. Hasili: 0 * 1 = 0.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  },
+  {
+    "question": "7 ≤ 3x + 1 ≤ 16 ikiqat bərabərsizliyinin ən böyük tam həllini tapın.",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "2",
+      "D": "5",
+      "E": "3"
+    },
+    "correctAnswer": "D",
+    "explanation": "1 çıxaq: 6 ≤ 3x ≤ 15. 3-ə bölək: 2 ≤ x ≤ 5. Ən böyük tam həll: 5.",
+    "difficulty": "Asan",
+    "bloom_level": "Bilik",
+    "topic": "İkiqat bərabərsizliklərin həlli",
+    "cat": "Riyaziyyat 8"
+  }
+]
