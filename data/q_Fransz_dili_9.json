@@ -1,0 +1,2831 @@
+{
+  "category": "Fransız dili 9",
+  "text": "",
+  "tests": [
+    {
+      "id": "09-001-1-2-1-02",
+      "passport_id": "09-001-1-2-1-02",
+      "question": "Que signifie le mot \"débutant\" dans le contexte sportif ?",
+      "options": [
+        "Un entraîneur professionnel.",
+        "Une personne qui ne fait pas de sport.",
+        "Un médecin pour les sportifs.",
+        "Une personne qui commence à pratiquer un sport."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Débutant\" sözü idmana və ya hər hansı bir işə yeni başlayan şəxs mənasını verir. Mətndə Seymour \"je suis débutant\" deyərək məşq təcrübəsinin olmadığını bildirir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-3-1-03",
+      "passport_id": "09-001-1-3-1-03",
+      "question": "Choisissez l'option correcte pour compléter la phrase : \"Je ... faire de la musculation.\"",
+      "options": [
+        "voulez",
+        "veux",
+        "veut",
+        "voulons"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Vouloir\" modal felinin 1-ci şəxsin təkində (Je) düzgün təsriflənməsi \"veux\" formasıdır. Qaydaya əsasən cümlə \"Je veux\" olmalıdır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-3-1-04",
+      "passport_id": "09-001-1-3-1-04",
+      "question": "Complétez la phrase correctement : \"Il adore jouer ... tennis.\"",
+      "options": [
+        "à la",
+        "du",
+        "de la",
+        "au"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Topla oynanılan oyunlar və komanda idman növləri \"jouer\" feli ilə işlənərkən \"à + le/la/les\" artiklları tələb edir. \"Tennis\" kişi cinsində olduğu üçün \"à + le = au\" olur.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-1-1-05",
+      "passport_id": "09-001-1-1-1-05",
+      "question": "Trouvez le synonyme du mot \"renseigner\" selon le vocabulaire de la leçon.",
+      "options": [
+        "jouer",
+        "inscrire",
+        "payer",
+        "informer"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Dərslikdə lüğət hissəsində \"renseigner - informer\" kimi verilmişdir. Hər ikisi \"məlumatlandırmaq, məlumat vermək\" mənasını daşıyır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-2-2-06",
+      "passport_id": "09-001-1-2-2-06",
+      "question": "Pourquoi Seymour demande-t-il un entraîneur ?",
+      "options": [
+        "Parce qu'il veut devenir un professeur de yoga.",
+        "Parce qu'il est débutant et ne sait pas faire de la musculation.",
+        "Parce qu'il ne veut pas payer par carte bancaire.",
+        "Parce qu'il veut participer aux cours collectifs."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dialoqda Seymour qeyd edir: \"J’ai un problème, je suis débutant. Je ne sais pas faire de la musculation. Vous avez des professeurs ?\". Bu səbəbdən ona məşqçi (entraîneur) lazımdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-3-2-07",
+      "passport_id": "09-001-1-3-2-07",
+      "question": "Complétez avec le verbe modal qui convient : \"Pour avoir une bonne note, elles ... travailler et réviser.\"",
+      "options": [
+        "doivent",
+        "devons",
+        "doit",
+        "devez"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cümlənin mübtədası cəm halında olan 3-cü şəxsdir (elles). \"Devoir\" (məcbur olmaq, etməli olmaq) felinin \"elles\" üçün təsriflənmə forması \"doivent\" olmalıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-1-2-09",
+      "passport_id": "09-001-1-1-2-09",
+      "question": "Qu'est-ce que \"l'abonnement\" selon la définition du livre ?",
+      "options": [
+        "Contrat qui permet au client de recevoir un service régulier.",
+        "Les heures de travail d’un établissement.",
+        "Méthode d'entraînement sportif.",
+        "Une entrée ou un passage dans la salle."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lüğət bölməsində \"l'abonnement\" sözü \"contrat qui permet au client de recevoir un service régulier\" kimi izah olunur, yəni mütəmadi xidmət almaq üçün müqavilə (abunəlik).",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-2-10",
+      "passport_id": "09-001-1-4-2-10",
+      "question": "Combien Seymour doit-il payer s'il choisit l'abonnement à la salle de musculation ET aux cours collectifs ?",
+      "options": [
+        "45 manats par mois.",
+        "60 manats par mois.",
+        "15 manats par mois.",
+        "30 manats par mois."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mətndə qəbul pəncərəsində işləyən şəxs deyir: \"l’abonnement à la salle de musculation et aux cours collectifs c’est 45 manats par mois.\" 30 manat yalnız trenajor zalı üçündür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-3-11",
+      "passport_id": "09-001-1-4-3-11",
+      "question": "Quelle phrase est grammaticalement correcte en utilisant les verbes \"faire\" ou \"jouer\" ?",
+      "options": [
+        "Mes amis jouent de l'escalade et font aux échecs.",
+        "Mes amis font du escalade et jouent au échecs.",
+        "Mes amis font de l'escalade et jouent aux échecs.",
+        "Mes amis jouent à l'escalade et font des échecs."
+      ],
+      "correctAnswer": 2,
+      "explanation": "İdman növləri \"faire de/du/de la/de l'/des\", oyunlar isə \"jouer à/au/à la/à l'/aux\" ilə istifadə olunur. L'escalade (qaya dırmanması) saitlə başladığı üçün \"faire de l'escalade\", échecs (şahmat) cəm oyun adı olduğu üçün \"jouer aux échecs\" olur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-5-3-12",
+      "passport_id": "09-001-1-5-3-12",
+      "question": "Trouvez la faute dans la phrase suivante : \"Elle sais faire du natation chaque jour.\"",
+      "options": [
+        "Il faut écrire \"sait\" et \"au natation\".",
+        "Il faut écrire \"sais\" et \"de le natation\".",
+        "Il faut écrire \"savent\" et \"du natation\".",
+        "Il faut écrire \"sait\" et \"de la natation\"."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cümlədə iki qrammatik xəta var: 3-cü şəxsin təkində (Elle) \"savoir\" feli \"sait\" kimi təsriflənir. Həmçinin \"natation\" (üzgüçülük) qadın cinsində olduğuna görə \"faire de la natation\" olmalıdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-3-14",
+      "passport_id": "09-001-1-4-3-14",
+      "question": "Quel mot complète logiquement cette série : \"les heures de travail, l'entrée, par mois, ...\" ? (Trouvez les mots correspondants dans la leçon)",
+      "options": [
+        "un horaire d'ouverture, un entraîneur, mensuel.",
+        "l'abonnement, en liquide, mensuel.",
+        "un accès, la musculation, en espèces.",
+        "un horaire d'ouverture, un accès, mensuel."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Lüğətdə verilən sözlərin tərifi ilə uyğunlaşdırsaq: \"les heures de travail\" = un horaire d'ouverture, \"l'entrée\" = un accès, \"par mois\" = mensuel. Üçüncü variant bu qanunauyğunluğu doğru əks etdirir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-02-1-1-1",
+      "passport_id": "09-001-02-1-1-1",
+      "question": "C’est un document écrit par le médecin qui précise le traitement à suivre. Qu'est-ce que c'est ?",
+      "options": [
+        "Un pansement",
+        "Un diagnostic",
+        "Une consultation",
+        "Une ordonnance"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dərslikdə qeyd olunur ki, həkim müalicəni dəqiqləşdirən \"ordonnance\" (resept) yazır. \"Consultation\" baxış, \"diagnostic\" diaqnoz, \"pansement\" isə sarğıdır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-1-2",
+      "passport_id": "09-001-02-2-1-2",
+      "question": "Selon le texte, quel est le rôle principal des protéines dans notre corps ?",
+      "options": [
+        "Elles sont essentielles pour la constitution des muscles.",
+        "Elles remplacent complètement l'eau dans le corps.",
+        "Elles aident à dormir sans prendre de médicaments.",
+        "Elles soignent toutes les maladies chroniques."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə \"Les protéines sont un élément essentiel pour la constitution des muscles\" cümləsi birbaşa zülalların əzələlərin qurulmasında əsas rol oynadığını göstərir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-1-1-3",
+      "passport_id": "09-001-02-1-1-3",
+      "question": "Comment forme-t-on correctement le gérondif du verbe « chanter » ?",
+      "options": [
+        "En chantant",
+        "En chanté",
+        "En chantons",
+        "En chanter"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Gérondif\" düzəltmək üçün \"en\" hissəciyi və feli sifət (participe présent) istifadə olunur. \"Chanter\" felinin birinci şəxsin cəmindəki forması \"chantons\" kökündən \"en chantant\" yaranır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-1-4",
+      "passport_id": "09-001-02-2-1-4",
+      "question": "Quel est le lieu exclusif où l'on a le droit d'acheter des médicaments selon le texte ?",
+      "options": [
+        "À la clinique privée",
+        "Au supermarché",
+        "Au cabinet médical",
+        "À la pharmacie"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə \"seules les pharmacies sont habilitées à vendre des médicaments. Vous n’en trouverez pas en supermarché\" qeyd olunur. Buna görə də yalnız apteklərdə dərman satıla bilər.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-3-2-1",
+      "passport_id": "09-001-02-3-2-1",
+      "question": "Quel est le gérondif correct du verbe irrégulier « avoir » ?",
+      "options": [
+        "En avons",
+        "En étant",
+        "En ayant",
+        "En avouant"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Avoir\" feli istisna (irrégulier) olaraq qəbul edilir və onun \"gérondif\" forması \"en ayant\" kimi yazılır. \"En étant\" isə \"être\" felinin formasıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-2-3",
+      "passport_id": "09-001-02-4-2-3",
+      "question": "Quelle nuance exprime le gérondif dans cette phrase : « Il s’est fracturé le genou en jouant au foot. » ?",
+      "options": [
+        "La cause directe",
+        "La condition",
+        "Le moyen / la manière",
+        "La simultanéité"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dərslik qaydasına əsasən, \"en jouant au foot\" (futbol oynayarkən/oynamaqla) dizini sındırması hərəkətin \"le moyen ou la manière\" (üsul/tərz) mənasını ifadə edir.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-2-4",
+      "passport_id": "09-001-02-2-2-4",
+      "question": "Quel terme décrit l'état d'un patient qui se repose après les soins pour retrouver son état de santé habituel ?",
+      "options": [
+        "La convalescence",
+        "L'ordonnance",
+        "L'auscultation",
+        "Le diagnostic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə qeyd edilir: \"Après les soins, le patient est en convalescence. En se reposant, il retrouve son état de santé habituel.\" Bu, xəstənin sağalma (bərpa) dövrüdür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-1",
+      "passport_id": "09-001-02-4-3-1",
+      "question": "Quelle idée exprime le gérondif dans la phrase suivante : « Tu pourrais gagner la compétition en t’entraînant davantage. » ?",
+      "options": [
+        "La condition",
+        "La simultanéité",
+        "L'opposition",
+        "Le moyen / la manière"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bu cümlədə \"en t’entraînant davantage\" gérondif forması \"si tu t'entraînes davantage\" (daha çox məşq etsən) mənasını verir, yəni qalib gəlmək üçün qoyulan \"la condition\" (şərt) ifadə olunur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-2",
+      "passport_id": "09-001-02-4-3-2",
+      "question": "Par quel processus le docteur fait-il généralement un diagnostic lors d'une consultation ?",
+      "options": [
+        "En faisant de la rééducation",
+        "En délivrant les médicaments",
+        "En vendant une ordonnance",
+        "En auscultant le malade"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə açıq şəkildə yazılıb: \"En auscultant le malade, le docteur fait un diagnostic.\" Yəni həkim xəstəni müayinə edərək (dinləyərək) diaqnoz qoyur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-4",
+      "passport_id": "09-001-02-4-3-4",
+      "question": "Quelle phrase utilise correctement un gérondif irrégulier ?",
+      "options": [
+        "Elle aide les patients en soyant toujours souriante et gentille.",
+        "Tu améliores ton français en lisons beaucoup de livres.",
+        "Il gère la situation calmement en ayant confiance en lui.",
+        "Nous réussissons l'examen en savant toutes les règles de grammaire."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Avoir\" feli qeyri-nizami (irrégulier) olaraq gérondif formasında \"en ayant\" kimi düzəlir. Digər variantlardakı \"être\" feli \"en étant\", \"savoir\" feli \"en sachant\", \"lire\" feli isə \"en lisant\" olmalıdır, lakin yanlış yazılıblar (\"en soyant\", \"en savant\", \"en lisons\").",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-5",
+      "passport_id": "09-001-02-4-3-5",
+      "question": "D'après les recommandations médicales évoquées dans le manuel, quelle action n'est PAS conseillée pour maintenir une bonne santé ?",
+      "options": [
+        "Boire de l'eau en quantité suffisante chaque jour.",
+        "Manger cinq fruits et légumes par jour.",
+        "Manger beaucoup de viande chaque jour.",
+        "Faire 30 minutes d'activité physique au quotidien."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dərslikdəki sual və tapşırıqlarda \"Manger beaucoup de viande\" (Çoxlu ət yemək) yanlış fikir kimi təqdim olunur. Əksinə \"Manger 5 fruits et légumes\", \"30 minutes d'activité physique\" tövsiyə olunan sağlam həyat tərzidir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-L03-XAT-S-04",
+      "passport_id": "09-001-L03-XAT-S-04",
+      "question": "Qui a reçu le prix Nobel de la paix en 2007 pour son travail de sensibilisation sur le réchauffement planétaire ?",
+      "options": [
+        "Tedros Adhanom",
+        "Un scientifique français",
+        "Léopold Sédar Senghor",
+        "Al Gore"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le texte indique clairement qu'en 2007, l'ancien vice-président des États-Unis Al Gore a reçu ce prix pour son engagement écologique.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-ANL-S-05",
+      "passport_id": "09-001-L03-ANL-S-05",
+      "question": "Comment appelle-t-on le phénomène qui entraîne la hausse progressive de la température de la Terre ?",
+      "options": [
+        "Le covoiturage écologique",
+        "L'épuisement de l'ozone",
+        "La fonte polaire",
+        "Le réchauffement planétaire"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le réchauffement planétaire (ou réchauffement de la Terre) est l'expression employée pour décrire l'augmentation de la température.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-ANL-O-07",
+      "passport_id": "09-001-L03-ANL-O-07",
+      "question": "Selon le texte, quelle serait la conséquence directe de la fonte de la glace polaire ?",
+      "options": [
+        "La réduction des ouragans",
+        "Le refroidissement de l'atmosphère",
+        "La diminution des gaz nocifs",
+        "L'augmentation du niveau de l'eau des océans"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Le texte explique que si la glace polaire et les icebergs fondent, cela fera augmenter le niveau d'eau des océans, inondant les côtes.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-O-08",
+      "passport_id": "09-001-L03-TET-O-08",
+      "question": "Quelle phrase exprime correctement une restriction signifiant 'Il prend seulement une valise' ?",
+      "options": [
+        "Il prend ne qu'une valise.",
+        "Il ne prend aucune valise.",
+        "Il ne prend pas de valise.",
+        "Il ne prend qu'une valise."
+      ],
+      "correctAnswer": 2,
+      "explanation": "L'expression 'ne... que' équivaut à 'seulement'. Elle encadre le verbe : 'Il ne prend qu'une valise'. Les autres expriment une négation ou sont incorrectes syntaxiquement.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-11",
+      "passport_id": "09-001-L03-TET-C-11",
+      "question": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+      "options": [
+        "trouve",
+        "trouvaient",
+        "trouvent",
+        "trouveront"
+      ],
+      "correctAnswer": 2,
+      "explanation": "L'expression 'Il est important que' exige l'emploi du subjonctif présent. 'Scientifiques' étant pluriel, on emploie 'trouvent'.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TEH-C-12",
+      "passport_id": "09-001-L03-TEH-C-12",
+      "question": "Que met en évidence le livre 'Une vérité qui dérange' d'Al Gore selon le texte ?",
+      "options": [
+        "L'obligation de cesser d'utiliser toute forme de technologie.",
+        "L'impossibilité totale de réduire les gaz à effet de serre.",
+        "Les désastres qui sont absolument sûrs d'arriver demain.",
+        "Les conséquences graves possibles du réchauffement climatique si rien n'est fait."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Le texte indique qu'Al Gore présente les pires possibilités et dangers (inondations, disparitions), tout en précisant que ces désastres ne vont pas 'nécessairement se produire' si l'on agit.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-13",
+      "passport_id": "09-001-L03-TET-C-13",
+      "question": "Choisissez la bonne forme verbale dans le cadre d'une hypothèse : 'Si nous utilisions davantage les vélos, nous ... la production des gaz.'",
+      "options": [
+        "diminuions",
+        "diminuerons",
+        "diminuons",
+        "diminuerions"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Dans une condition avec 'Si + imparfait' (utilisions), la proposition principale doit être au conditionnel présent (diminuerions).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-14",
+      "passport_id": "09-001-L03-TET-C-14",
+      "question": "Remplacez la proposition relative 'qui utilisent' par le participe présent adéquat : 'Les usines ... encore des produits chimiques dangereux doivent fermer.'",
+      "options": [
+        "utilisation",
+        "utilisent",
+        "utilisés",
+        "utilisant"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le participe présent (utilisant) est invariable et remplace fréquemment 'qui + verbe' (qui utilisent) à l'écrit.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-04-1-sadə-01",
+      "passport_id": "09-001-04-1-sadə-01",
+      "question": "Où se sont tenus les Jeux Olympiques en été 2024 ?",
+      "options": [
+        "À Athènes",
+        "À Londres",
+        "À Tokyo",
+        "À Paris"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le texte indique clairement que « En été 2024, Paris a accueilli les Jeux Olympiques ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-1-sadə-02",
+      "passport_id": "09-001-04-1-sadə-02",
+      "question": "Quelle compétition sportive s'est déroulée au parc du château de Versailles ?",
+      "options": [
+        "L'escrime",
+        "Le cyclisme",
+        "Les épreuves d'équitation",
+        "Le volleyball de plage"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Selon le texte, « les épreuves d’équitation se sont tenues au parc du château de Versailles ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-3-sadə-04",
+      "passport_id": "09-001-04-3-sadə-04",
+      "question": "Complétez la phrase : « La semaine dernière, ma cousine ______ de son vélo. »",
+      "options": [
+        "est tombée",
+        "a tombé",
+        "a tombée",
+        "est tombé"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Le verbe « tomber » se conjugue avec l'auxiliaire « être ». Le participe passé doit s'accorder en genre et en nombre avec le sujet féminin singulier « ma cousine », on écrit donc « tombée ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-1-orta-07",
+      "passport_id": "09-001-04-1-orta-07",
+      "question": "Quelles dates correspondent à l'organisation des Jeux Paralympiques de Paris 2024 ?",
+      "options": [
+        "Du 26 juillet au 11 août",
+        "Du 28 août au 8 septembre",
+        "Durant le mois d'avril",
+        "Du 11 août au 28 août"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Le texte indique de manière explicite que « Les jeux Paralympiques ont eu lieu le 28 août et jusqu’au 8 septembre. »",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-2-çətin-13",
+      "passport_id": "09-001-04-2-çətin-13",
+      "question": "Dans le texte, on trouve plusieurs mots qui expriment une idée exceptionnelle ou symbolique. Quel adjectif qualifie l'expérience des Jeux pour signifier qu'elle est nouvelle et jamais vue auparavant ?",
+      "options": [
+        "Populaire",
+        "Inédite",
+        "Originel",
+        "Emblématique"
+      ],
+      "correctAnswer": 1,
+      "explanation": "L'expression « une expérience inédite » emploie l'adjectif « inédite » pour signifier que la situation est entièrement nouvelle, exceptionnelle et qu'elle ne s'est jamais produite auparavant.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-3-çətin-15",
+      "passport_id": "09-001-04-3-çətin-15",
+      "question": "Observez la phrase : « Les épreuves d'équitation se sont _____ au parc du château de Versailles. » Quel participe passé la complète correctement ?",
+      "options": [
+        "tenues",
+        "tenu",
+        "tenus",
+        "tenue"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le verbe pronominal « se tenir » s'accorde ici avec le sujet « Les épreuves » (féminin pluriel). Le pronom « se » ayant la fonction de COD placé avant le verbe, l'accord se fait au féminin pluriel (« tenues »).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-05-XAT-S-03",
+      "passport_id": "09-001-05-XAT-S-03",
+      "question": "En quelle année l’OMS a-t-elle été créée ?",
+      "options": [
+        "En 1990",
+        "En 1948",
+        "En 1945",
+        "En 2017"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə açıq şəkildə bildirilir ki, Təşkilat 1948-ci ildə yaradılmışdır (\"créée en 1948\"). 2017 isə Tedros Adhanom Ghebreyesus-un baş direktor olduğu ildir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-ANL-S-04",
+      "passport_id": "09-001-05-ANL-S-04",
+      "question": "Quel mot correspond à la définition : \"C’est une altération, un trouble de l'organisme\" ?",
+      "options": [
+        "L’aliment",
+        "La sécurité",
+        "La maladie",
+        "La santé"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Orqanizmin normal fəaliyyətinin pozulması xəstəlik (\"la maladie\") adlanır. \"La santé\" sağlamlıq, \"la sécurité\" təhlükəsizlik deməkdir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-ANL-S-05",
+      "passport_id": "09-001-05-ANL-S-05",
+      "question": "Complétez la phrase : \"Tu n’as pas goûté le gâteau ... ma mère a cuisiné.\"",
+      "options": [
+        "dont",
+        "auquel",
+        "qui",
+        "que"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Burada nisbi əvəzlik \"le gâteau\" sözünü əvəz edərək tamamlıq (objet direct) rolunda çıxış edir. Cümlənin öz mübtədası (\"ma mère\") olduğu üçün \"que\" əvəzliyi seçilməlidir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-TEH-O-06",
+      "passport_id": "09-001-05-TEH-O-06",
+      "question": "D'après le texte, quelle affirmation est vraie à propos du rôle de l'OMS ?",
+      "options": [
+        "Elle fonctionne indépendamment de l'ONU.",
+        "Elle dirige le Conseil économique de l'ONU.",
+        "Elle aide à préserver la sécurité mondiale.",
+        "Elle ne combat que les maladies infectieuses."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə açıqca deyilir: \"La mission de l'OMS est de préserver la sécurité mondiale\". Digər variantlar yalandır: Təşkilat həm də qeyri-yoluxucu xəstəliklərlə mübarizə aparır və BMT-dən asılıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-TET-O-07",
+      "passport_id": "09-001-05-TET-O-07",
+      "question": "Trouvez la phrase correcte avec le pronom relatif \"dont\".",
+      "options": [
+        "Le dîner dont tu nous as servi était délicieux.",
+        "C'est le livre dont je t'ai donné hier.",
+        "La pollution est un problème dont nous concerne tous.",
+        "Voilà le dictionnaire dont j'ai besoin."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Dont\" nisbi əvəzliyi \"de\" sözönüsü tələb edən feillərlə (avoir besoin de) işlənir. A və C variantlarında tamamlıq (\"que\"), D variantında isə mübtəda (\"qui\") lazımdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-ANL-O-08",
+      "passport_id": "09-001-05-ANL-O-08",
+      "question": "Quel est le synonyme de \"le bureau central\" utilisé dans le texte pour l’OMS ?",
+      "options": [
+        "Le but",
+        "Le personnel",
+        "La mission",
+        "Le siège"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Təşkilatın əsas ofisi, yəni \"mərkəzi büro\" mətndə \"le siège\" (baş qərargah) sözü ilə ifadə olunur. Digər sözlər \"missiya\", \"məqsəd\" və \"işçi heyəti\" deməkdir.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-DEY-C-11",
+      "passport_id": "09-001-05-DEY-C-11",
+      "question": "Quelle déduction peut-on faire concernant les champs d'action de l'OMS ?",
+      "options": [
+        "Elle intervient seulement en Europe pour réduire les infections.",
+        "Elle se limite uniquement aux soins médicaux directs dans les hôpitaux.",
+        "Son action inclut l'environnement, l'alimentation et la qualité de l'eau.",
+        "Elle a pour but unique de financer les recherches sur la grippe."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə bildirilir ki, ÜST havanın sanitar təhlükəsizliyinə, qidalara və suya nəzarət edir. Bu o deməkdir ki, onun fəaliyyəti yalnız tibbi deyil, həm də ətraf mühit və qida ilə bağlıdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-TEH-C-12",
+      "passport_id": "09-001-05-TEH-C-12",
+      "question": "Lisez et choisissez les pronoms relatifs corrects dans l'ordre pour les deux phrases : 1. C’est une attitude ... il n’est pas fier. 2. Elle raconte une histoire ... me fascine.",
+      "options": [
+        "1 - que, 2 - qui",
+        "1 - dont, 2 - que",
+        "1 - dont, 2 - qui",
+        "1 - que, 2 - dont"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Birinci cümlədə \"être fier de\" ifadəsinə görə \"dont\" istifadə olunur (C’est une attitude dont il n’est pas fier). İkinci cümlədə isə \"histoire\" sözü cümlənin mübtədası funksiyasını daşıdığı üçün \"qui\" istifadə edilməlidir (une histoire qui me fascine).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-ANL-C-13",
+      "passport_id": "09-001-05-ANL-C-13",
+      "question": "Trouvez le mot du texte qui signifie \"assurer la protection, garder à l'abri du danger\" et correspond à \"préserver\" ou \"assurer\".",
+      "options": [
+        "Surveiller",
+        "Adhérer",
+        "Préserver",
+        "Combattre"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mətndə missiyanın məqsədlərindən biri kimi \"préserver la sécurité mondiale\" (qlobal təhlükəsizliyi qorumaq) qeyd olunub. \"Préserver\" qorumaq, təhlükədən uzaq tutmaq mənasına gəlir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-DEY-C-15",
+      "passport_id": "09-001-05-DEY-C-15",
+      "question": "Quel est le message principal que les membres du personnel de l'OMS partagent selon le texte ?",
+      "options": [
+        "S'efforcer d'améliorer la santé pour tous les individus, partout dans le monde.",
+        "Accroître le nombre d'États Membres dans les six régions du monde.",
+        "Obliger les pays à financer des traitements coûteux contre le cancer.",
+        "Réduire le nombre de réunions du Conseil économique des Nations Unies."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mətndə işçilərin ortaq vədi açıq şəkildə ifadə edilir: \"Les membres du personnel de l’OMS partagent un même [but] : améliorer la santé pour tous et partout.\" Digər variantlar mətnlə əlaqədar yanlış nəticələrdir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-06-1-1-01",
+      "passport_id": "09-001-06-1-1-01",
+      "question": "Complétez la phrase : \"Il est possible que le rendez-vous _____ annulé.\"",
+      "options": [
+        "soit",
+        "était",
+        "sera",
+        "est"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Il est possible que\" ifadəsindən sonra fel həmişə subjonctif (arzu) formasında işlənməlidir. \"être\" felinin subjonctif forması 3-cü şəxsin təkində \"soit\" olur.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-2-1-04",
+      "passport_id": "09-001-06-2-1-04",
+      "question": "Que signifie la phrase \"Azad ne boit que de l’eau\" ?",
+      "options": [
+        "Azad n'aime pas l'eau.",
+        "Azad boit beaucoup d'eau.",
+        "Azad ne boit pas d'eau.",
+        "Azad boit seulement de l'eau."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Ne... que\" konstruksiyası məhdudiyyət bildirir və \"seulement\" (yalnız/təkcə) sözünün sinonimidir. Yəni cümlənin mənası Azadın yalnız su içməsidir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-1-1-05",
+      "passport_id": "09-001-06-1-1-05",
+      "question": "D'après les textes révisés, quel est le but principal de l'OMS (Organisation Mondiale de la Santé) ?",
+      "options": [
+        "Améliorer la santé pour tous et partout",
+        "Organiser les Jeux Olympiques",
+        "Protéger les espèces animales menacées",
+        "Lutter contre le réchauffement planétaire"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dərslik mətninə əsasən, Ümumdünya Səhiyyə Təşkilatının (OMS) əsas məqsədi hər kəs üçün və hər yerdə sağlamlığı yaxşılaşdırmaqdır (améliorer la santé pour tous et partout).",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-06",
+      "passport_id": "09-001-06-3-2-06",
+      "question": "Mettez le verbe au conditionnel présent : \"Si j'étais toi, j'_____ plus souvent à la mer.\" (aller)",
+      "options": [
+        "irai",
+        "irais",
+        "irait",
+        "allais"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Si + imparfait, conditionnel présent\" qaydasına əsasən, şərt cümləsindəki \"aller\" felinin 1-ci şəxsin təkində (je) conditionnel présent forması \"irais\" olmalıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-07",
+      "passport_id": "09-001-06-3-2-07",
+      "question": "Complétez avec le verbe au passé composé : \"Dimanche, Sarah et sa mère ne _____ pas _____ au marché.\"",
+      "options": [
+        "sont / allées",
+        "ont / allé",
+        "ont / allées",
+        "sont / allés"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Aller\" hərəkət feli olduğu üçün keçmiş zamanda (passé composé) \"être\" köməkçi feli ilə hallanır. \"Sarah et sa mère\" qadın cinsi və cəm (elles) olduğu üçün feli sifət (participe passé) uzlaşır və \"allées\" formasına düşür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-09",
+      "passport_id": "09-001-06-3-2-09",
+      "question": "Transformez le verbe en utilisant le participe présent : \"Nous cherchons une vendeuse (connaître) bien le métier.\"",
+      "options": [
+        "connais",
+        "connue",
+        "connaissant",
+        "connaissante"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Connaître\" felinin indiki zaman feli sifət (participe présent) forması \"connaissant\"dır. Participe présent cümlədəki isimlə cinsə və kəmiyyətə görə uzlaşmır (invariable olaraq qalır).",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-10",
+      "passport_id": "09-001-06-3-2-10",
+      "question": "Réécrivez la phrase à l'imparfait : \"Chaque année, les élèves _____ en classe verte.\" (aller)",
+      "options": [
+        "iront",
+        "allaient",
+        "allons",
+        "sont allés"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Chaque année\" ifadəsi keçmişdə təkrarlanan hərəkəti bildirir, buna görə də imparfait (davamlı keçmiş zaman) istifadə olunmalıdır. \"Aller\" felinin 3-cü şəxsin cəmində (ils) imparfait forması \"allaient\" olur.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-4-3-11",
+      "passport_id": "09-001-06-4-3-11",
+      "question": "Complétez avec la forme correcte : \"Tu feras des exercices jusqu’à ce que tu _____ ta leçon.\" (comprendre)",
+      "options": [
+        "comprennes",
+        "comprendras",
+        "as compris",
+        "comprends"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Jusqu'à ce que\" (ta ki, ... qədər) bağlayıcısından sonra mütləq subjonctif (arzu şəkli) işlənməlidir. \"Comprendre\" felinin 2-ci şəxsin təkində (tu) subjonctif forması \"comprennes\" olur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-12",
+      "passport_id": "09-001-06-3-3-12",
+      "question": "Complétez la phrase avec les verbes devoir et vouloir : \"S’ils _____ être en forme, ils _____ faire de l’exercice.\"",
+      "options": [
+        "voulons / devez",
+        "veulent / devont",
+        "voulaient / devraient",
+        "veulent / doivent"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Şərt budaq cümləsində (Si + présent, présent) hər iki fel indiki zamanda (présent) olmalıdır. 3-cü şəxsin cəmində (ils) \"vouloir\" feli \"veulent\", \"devoir\" feli isə \"doivent\" formasına çevrilir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-4-3-13",
+      "passport_id": "09-001-06-4-3-13",
+      "question": "Mettez les verbes au passé composé : \"Elle _____ (tomber) par terre et les enfants _____ (se réveiller) de bonne heure.\"",
+      "options": [
+        "est tombé / se sont réveillées",
+        "a tombé / se sont réveillés",
+        "est tombée / se sont réveillés",
+        "a tombée / ont réveillé"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Hərəkət feli olan \"tomber\" və qayıdış feli olan \"se réveiller\" keçmiş zamanda \"être\" köməkçi feli ilə hallanır və mübtəda ilə uzlaşır. \"Elle\" qadın cinsi olduğu üçün \"tombée\", \"les enfants\" (kişi cinsi cəm) olduğu üçün isə \"réveillés\" yazılır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-14",
+      "passport_id": "09-001-06-3-3-14",
+      "question": "Comment transformer la phrase \"Aujourd’hui il travaille seulement une heure\" en utilisant la restriction (ne... que) ?",
+      "options": [
+        "Aujourd’hui il travaille ne qu'une heure.",
+        "Aujourd’hui ne il travaille qu'une heure.",
+        "Aujourd’hui il n'a travaillé qu'une heure.",
+        "Aujourd’hui il ne travaille qu'une heure."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Ne... que\" (yalnız) məhdudlaşdırıcı konstruksiyasında \"ne\" inkar ədatı feldən əvvəl, \"que\" isə məhdudlaşdırılan sözdən (une heure) əvvəl gəlir. Orijinal cümlə indiki zamanda olduğu üçün \"ne travaille qu'une heure\" ən doğru variantdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-15",
+      "passport_id": "09-001-06-3-3-15",
+      "question": "Complétez la phrase avec le gérondif du verbe commencer : \"Il a évité de répondre _____ à parler d’autre chose.\"",
+      "options": [
+        "commençant",
+        "en commenceant",
+        "en commencent",
+        "en commençant"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Gérondif \"en + participe présent\" forması ilə düzəlir. \"-cer\" ilə bitən fellərdə \"c\" hərfindən sonra qalın \"a\" saiti gəldiyi üçün səs dəyişməsinin (k səsinin) qarşısını almaq məqsədilə \"ç\" (cédille) yazılır: \"en commençant\".",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-1-2-1-02-9254",
+      "passport_id": "09-001-1-2-1-02-9254",
+      "question": "Que signifie le mot \"débutant\" dans le contexte sportif ?",
+      "options": [
+        "Un entraîneur professionnel.",
+        "Une personne qui ne fait pas de sport.",
+        "Une personne qui commence à pratiquer un sport.",
+        "Un médecin pour les sportifs."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Débutant\" sözü idmana və ya hər hansı bir işə yeni başlayan şəxs mənasını verir. Mətndə Seymour \"je suis débutant\" deyərək məşq təcrübəsinin olmadığını bildirir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-3-1-04-3187",
+      "passport_id": "09-001-1-3-1-04-3187",
+      "question": "Complétez la phrase correctement : \"Il adore jouer ... tennis.\"",
+      "options": [
+        "du",
+        "à la",
+        "de la",
+        "au"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Topla oynanılan oyunlar və komanda idman növləri \"jouer\" feli ilə işlənərkən \"à + le/la/les\" artiklları tələb edir. \"Tennis\" kişi cinsində olduğu üçün \"à + le = au\" olur.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-1-1-05-1fad",
+      "passport_id": "09-001-1-1-1-05-1fad",
+      "question": "Trouvez le synonyme du mot \"renseigner\" selon le vocabulaire de la leçon.",
+      "options": [
+        "jouer",
+        "payer",
+        "informer",
+        "inscrire"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dərslikdə lüğət hissəsində \"renseigner - informer\" kimi verilmişdir. Hər ikisi \"məlumatlandırmaq, məlumat vermək\" mənasını daşıyır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-2-2-06-8ddc",
+      "passport_id": "09-001-1-2-2-06-8ddc",
+      "question": "Pourquoi Seymour demande-t-il un entraîneur ?",
+      "options": [
+        "Parce qu'il veut devenir un professeur de yoga.",
+        "Parce qu'il ne veut pas payer par carte bancaire.",
+        "Parce qu'il est débutant et ne sait pas faire de la musculation.",
+        "Parce qu'il veut participer aux cours collectifs."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dialoqda Seymour qeyd edir: \"J’ai un problème, je suis débutant. Je ne sais pas faire de la musculation. Vous avez des professeurs ?\". Bu səbəbdən ona məşqçi (entraîneur) lazımdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-3-2-07-fd79",
+      "passport_id": "09-001-1-3-2-07-fd79",
+      "question": "Complétez avec le verbe modal qui convient : \"Pour avoir une bonne note, elles ... travailler et réviser.\"",
+      "options": [
+        "devons",
+        "doivent",
+        "doit",
+        "devez"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cümlənin mübtədası cəm halında olan 3-cü şəxsdir (elles). \"Devoir\" (məcbur olmaq, etməli olmaq) felinin \"elles\" üçün təsriflənmə forması \"doivent\" olmalıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-1-2-09-faf2",
+      "passport_id": "09-001-1-1-2-09-faf2",
+      "question": "Qu'est-ce que \"l'abonnement\" selon la définition du livre ?",
+      "options": [
+        "Les heures de travail d’un établissement.",
+        "Méthode d'entraînement sportif.",
+        "Une entrée ou un passage dans la salle.",
+        "Contrat qui permet au client de recevoir un service régulier."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Lüğət bölməsində \"l'abonnement\" sözü \"contrat qui permet au client de recevoir un service régulier\" kimi izah olunur, yəni mütəmadi xidmət almaq üçün müqavilə (abunəlik).",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-2-10-62ea",
+      "passport_id": "09-001-1-4-2-10-62ea",
+      "question": "Combien Seymour doit-il payer s'il choisit l'abonnement à la salle de musculation ET aux cours collectifs ?",
+      "options": [
+        "30 manats par mois.",
+        "15 manats par mois.",
+        "45 manats par mois.",
+        "60 manats par mois."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mətndə qəbul pəncərəsində işləyən şəxs deyir: \"l’abonnement à la salle de musculation et aux cours collectifs c’est 45 manats par mois.\" 30 manat yalnız trenajor zalı üçündür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-3-11-6d67",
+      "passport_id": "09-001-1-4-3-11-6d67",
+      "question": "Quelle phrase est grammaticalement correcte en utilisant les verbes \"faire\" ou \"jouer\" ?",
+      "options": [
+        "Mes amis font de l'escalade et jouent aux échecs.",
+        "Mes amis font du escalade et jouent au échecs.",
+        "Mes amis jouent à l'escalade et font des échecs.",
+        "Mes amis jouent de l'escalade et font aux échecs."
+      ],
+      "correctAnswer": 2,
+      "explanation": "İdman növləri \"faire de/du/de la/de l'/des\", oyunlar isə \"jouer à/au/à la/à l'/aux\" ilə istifadə olunur. L'escalade (qaya dırmanması) saitlə başladığı üçün \"faire de l'escalade\", échecs (şahmat) cəm oyun adı olduğu üçün \"jouer aux échecs\" olur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-5-3-12-b731",
+      "passport_id": "09-001-1-5-3-12-b731",
+      "question": "Trouvez la faute dans la phrase suivante : \"Elle sais faire du natation chaque jour.\"",
+      "options": [
+        "Il faut écrire \"sait\" et \"au natation\".",
+        "Il faut écrire \"sais\" et \"de le natation\".",
+        "Il faut écrire \"sait\" et \"de la natation\".",
+        "Il faut écrire \"savent\" et \"du natation\"."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cümlədə iki qrammatik xəta var: 3-cü şəxsin təkində (Elle) \"savoir\" feli \"sait\" kimi təsriflənir. Həmçinin \"natation\" (üzgüçülük) qadın cinsində olduğuna görə \"faire de la natation\" olmalıdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-1-4-3-14-ec77",
+      "passport_id": "09-001-1-4-3-14-ec77",
+      "question": "Quel mot complète logiquement cette série : \"les heures de travail, l'entrée, par mois, ...\" ? (Trouvez les mots correspondants dans la leçon)",
+      "options": [
+        "un horaire d'ouverture, un entraîneur, mensuel.",
+        "un accès, la musculation, en espèces.",
+        "l'abonnement, en liquide, mensuel.",
+        "un horaire d'ouverture, un accès, mensuel."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Lüğətdə verilən sözlərin tərifi ilə uyğunlaşdırsaq: \"les heures de travail\" = un horaire d'ouverture, \"l'entrée\" = un accès, \"par mois\" = mensuel. Üçüncü variant bu qanunauyğunluğu doğru əks etdirir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-02-1-1-1-9e25",
+      "passport_id": "09-001-02-1-1-1-9e25",
+      "question": "C’est un document écrit par le médecin qui précise le traitement à suivre. Qu'est-ce que c'est ?",
+      "options": [
+        "Un pansement",
+        "Une ordonnance",
+        "Une consultation",
+        "Un diagnostic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dərslikdə qeyd olunur ki, həkim müalicəni dəqiqləşdirən \"ordonnance\" (resept) yazır. \"Consultation\" baxış, \"diagnostic\" diaqnoz, \"pansement\" isə sarğıdır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-1-2-e7aa",
+      "passport_id": "09-001-02-2-1-2-e7aa",
+      "question": "Selon le texte, quel est le rôle principal des protéines dans notre corps ?",
+      "options": [
+        "Elles sont essentielles pour la constitution des muscles.",
+        "Elles aident à dormir sans prendre de médicaments.",
+        "Elles remplacent complètement l'eau dans le corps.",
+        "Elles soignent toutes les maladies chroniques."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə \"Les protéines sont un élément essentiel pour la constitution des muscles\" cümləsi birbaşa zülalların əzələlərin qurulmasında əsas rol oynadığını göstərir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-1-1-3-17e7",
+      "passport_id": "09-001-02-1-1-3-17e7",
+      "question": "Comment forme-t-on correctement le gérondif du verbe « chanter » ?",
+      "options": [
+        "En chantons",
+        "En chanté",
+        "En chanter",
+        "En chantant"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Gérondif\" düzəltmək üçün \"en\" hissəciyi və feli sifət (participe présent) istifadə olunur. \"Chanter\" felinin birinci şəxsin cəmindəki forması \"chantons\" kökündən \"en chantant\" yaranır.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-1-4-008f",
+      "passport_id": "09-001-02-2-1-4-008f",
+      "question": "Quel est le lieu exclusif où l'on a le droit d'acheter des médicaments selon le texte ?",
+      "options": [
+        "Au supermarché",
+        "Au cabinet médical",
+        "À la clinique privée",
+        "À la pharmacie"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə \"seules les pharmacies sont habilitées à vendre des médicaments. Vous n’en trouverez pas en supermarché\" qeyd olunur. Buna görə də yalnız apteklərdə dərman satıla bilər.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-2-3-1277",
+      "passport_id": "09-001-02-4-2-3-1277",
+      "question": "Quelle nuance exprime le gérondif dans cette phrase : « Il s’est fracturé le genou en jouant au foot. » ?",
+      "options": [
+        "La cause directe",
+        "La simultanéité",
+        "La condition",
+        "Le moyen / la manière"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Dərslik qaydasına əsasən, \"en jouant au foot\" (futbol oynayarkən/oynamaqla) dizini sındırması hərəkətin \"le moyen ou la manière\" (üsul/tərz) mənasını ifadə edir.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-2-2-4-f96d",
+      "passport_id": "09-001-02-2-2-4-f96d",
+      "question": "Quel terme décrit l'état d'un patient qui se repose après les soins pour retrouver son état de santé habituel ?",
+      "options": [
+        "L'auscultation",
+        "L'ordonnance",
+        "La convalescence",
+        "Le diagnostic"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mətndə qeyd edilir: \"Après les soins, le patient est en convalescence. En se reposant, il retrouve son état de santé habituel.\" Bu, xəstənin sağalma (bərpa) dövrüdür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-1-81c6",
+      "passport_id": "09-001-02-4-3-1-81c6",
+      "question": "Quelle idée exprime le gérondif dans la phrase suivante : « Tu pourrais gagner la compétition en t’entraînant davantage. » ?",
+      "options": [
+        "La condition",
+        "Le moyen / la manière",
+        "La simultanéité",
+        "L'opposition"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bu cümlədə \"en t’entraînant davantage\" gérondif forması \"si tu t'entraînes davantage\" (daha çox məşq etsən) mənasını verir, yəni qalib gəlmək üçün qoyulan \"la condition\" (şərt) ifadə olunur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-2-d059",
+      "passport_id": "09-001-02-4-3-2-d059",
+      "question": "Par quel processus le docteur fait-il généralement un diagnostic lors d'une consultation ?",
+      "options": [
+        "En auscultant le malade",
+        "En délivrant les médicaments",
+        "En vendant une ordonnance",
+        "En faisant de la rééducation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə açıq şəkildə yazılıb: \"En auscultant le malade, le docteur fait un diagnostic.\" Yəni həkim xəstəni müayinə edərək (dinləyərək) diaqnoz qoyur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-4-3065",
+      "passport_id": "09-001-02-4-3-4-3065",
+      "question": "Quelle phrase utilise correctement un gérondif irrégulier ?",
+      "options": [
+        "Elle aide les patients en soyant toujours souriante et gentille.",
+        "Il gère la situation calmement en ayant confiance en lui.",
+        "Tu améliores ton français en lisons beaucoup de livres.",
+        "Nous réussissons l'examen en savant toutes les règles de grammaire."
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Avoir\" feli qeyri-nizami (irrégulier) olaraq gérondif formasında \"en ayant\" kimi düzəlir. Digər variantlardakı \"être\" feli \"en étant\", \"savoir\" feli \"en sachant\", \"lire\" feli isə \"en lisant\" olmalıdır, lakin yanlış yazılıblar (\"en soyant\", \"en savant\", \"en lisons\").",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-02-4-3-5-230b",
+      "passport_id": "09-001-02-4-3-5-230b",
+      "question": "D'après les recommandations médicales évoquées dans le manuel, quelle action n'est PAS conseillée pour maintenir une bonne santé ?",
+      "options": [
+        "Faire 30 minutes d'activité physique au quotidien.",
+        "Boire de l'eau en quantité suffisante chaque jour.",
+        "Manger cinq fruits et légumes par jour.",
+        "Manger beaucoup de viande chaque jour."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dərslikdəki sual və tapşırıqlarda \"Manger beaucoup de viande\" (Çoxlu ət yemək) yanlış fikir kimi təqdim olunur. Əksinə \"Manger 5 fruits et légumes\", \"30 minutes d'activité physique\" tövsiyə olunan sağlam həyat tərzidir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "id": "09-001-L03-XAT-S-04-b346",
+      "passport_id": "09-001-L03-XAT-S-04-b346",
+      "question": "Qui a reçu le prix Nobel de la paix en 2007 pour son travail de sensibilisation sur le réchauffement planétaire ?",
+      "options": [
+        "Tedros Adhanom",
+        "Léopold Sédar Senghor",
+        "Un scientifique français",
+        "Al Gore"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le texte indique clairement qu'en 2007, l'ancien vice-président des États-Unis Al Gore a reçu ce prix pour son engagement écologique.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-ANL-S-05-65e7",
+      "passport_id": "09-001-L03-ANL-S-05-65e7",
+      "question": "Comment appelle-t-on le phénomène qui entraîne la hausse progressive de la température de la Terre ?",
+      "options": [
+        "L'épuisement de l'ozone",
+        "Le covoiturage écologique",
+        "Le réchauffement planétaire",
+        "La fonte polaire"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Le réchauffement planétaire (ou réchauffement de la Terre) est l'expression employée pour décrire l'augmentation de la température.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-ANL-O-07-a974",
+      "passport_id": "09-001-L03-ANL-O-07-a974",
+      "question": "Selon le texte, quelle serait la conséquence directe de la fonte de la glace polaire ?",
+      "options": [
+        "L'augmentation du niveau de l'eau des océans",
+        "La diminution des gaz nocifs",
+        "La réduction des ouragans",
+        "Le refroidissement de l'atmosphère"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Le texte explique que si la glace polaire et les icebergs fondent, cela fera augmenter le niveau d'eau des océans, inondant les côtes.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-O-08-56ea",
+      "passport_id": "09-001-L03-TET-O-08-56ea",
+      "question": "Quelle phrase exprime correctement une restriction signifiant 'Il prend seulement une valise' ?",
+      "options": [
+        "Il prend ne qu'une valise.",
+        "Il ne prend pas de valise.",
+        "Il ne prend qu'une valise.",
+        "Il ne prend aucune valise."
+      ],
+      "correctAnswer": 2,
+      "explanation": "L'expression 'ne... que' équivaut à 'seulement'. Elle encadre le verbe : 'Il ne prend qu'une valise'. Les autres expriment une négation ou sont incorrectes syntaxiquement.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-11-34c9",
+      "passport_id": "09-001-L03-TET-C-11-34c9",
+      "question": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+      "options": [
+        "trouvent",
+        "trouveront",
+        "trouve",
+        "trouvaient"
+      ],
+      "correctAnswer": 0,
+      "explanation": "L'expression 'Il est important que' exige l'emploi du subjonctif présent. 'Scientifiques' étant pluriel, on emploie 'trouvent'.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TEH-C-12-0cc4",
+      "passport_id": "09-001-L03-TEH-C-12-0cc4",
+      "question": "Que met en évidence le livre 'Une vérité qui dérange' d'Al Gore selon le texte ?",
+      "options": [
+        "L'impossibilité totale de réduire les gaz à effet de serre.",
+        "Les conséquences graves possibles du réchauffement climatique si rien n'est fait.",
+        "L'obligation de cesser d'utiliser toute forme de technologie.",
+        "Les désastres qui sont absolument sûrs d'arriver demain."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Le texte indique qu'Al Gore présente les pires possibilités et dangers (inondations, disparitions), tout en précisant que ces désastres ne vont pas 'nécessairement se produire' si l'on agit.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-13-6310",
+      "passport_id": "09-001-L03-TET-C-13-6310",
+      "question": "Choisissez la bonne forme verbale dans le cadre d'une hypothèse : 'Si nous utilisions davantage les vélos, nous ... la production des gaz.'",
+      "options": [
+        "diminuerions",
+        "diminuions",
+        "diminuerons",
+        "diminuons"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dans une condition avec 'Si + imparfait' (utilisions), la proposition principale doit être au conditionnel présent (diminuerions).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-L03-TET-C-14-b03c",
+      "passport_id": "09-001-L03-TET-C-14-b03c",
+      "question": "Remplacez la proposition relative 'qui utilisent' par le participe présent adéquat : 'Les usines ... encore des produits chimiques dangereux doivent fermer.'",
+      "options": [
+        "utilisation",
+        "utilisés",
+        "utilisent",
+        "utilisant"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le participe présent (utilisant) est invariable et remplace fréquemment 'qui + verbe' (qui utilisent) à l'écrit.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 3. En faveur de l’écologie"
+    },
+    {
+      "id": "09-001-04-1-sadə-01-f0ef",
+      "passport_id": "09-001-04-1-sadə-01-f0ef",
+      "question": "Où se sont tenus les Jeux Olympiques en été 2024 ?",
+      "options": [
+        "À Paris",
+        "À Londres",
+        "À Tokyo",
+        "À Athènes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Le texte indique clairement que « En été 2024, Paris a accueilli les Jeux Olympiques ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-1-sadə-02-8477",
+      "passport_id": "09-001-04-1-sadə-02-8477",
+      "question": "Quelle compétition sportive s'est déroulée au parc du château de Versailles ?",
+      "options": [
+        "Les épreuves d'équitation",
+        "Le cyclisme",
+        "Le volleyball de plage",
+        "L'escrime"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Selon le texte, « les épreuves d’équitation se sont tenues au parc du château de Versailles ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-3-sadə-04-4f70",
+      "passport_id": "09-001-04-3-sadə-04-4f70",
+      "question": "Complétez la phrase : « La semaine dernière, ma cousine ______ de son vélo. »",
+      "options": [
+        "est tombé",
+        "est tombée",
+        "a tombée",
+        "a tombé"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Le verbe « tomber » se conjugue avec l'auxiliaire « être ». Le participe passé doit s'accorder en genre et en nombre avec le sujet féminin singulier « ma cousine », on écrit donc « tombée ».",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-1-orta-07-b7a0",
+      "passport_id": "09-001-04-1-orta-07-b7a0",
+      "question": "Quelles dates correspondent à l'organisation des Jeux Paralympiques de Paris 2024 ?",
+      "options": [
+        "Du 26 juillet au 11 août",
+        "Durant le mois d'avril",
+        "Du 28 août au 8 septembre",
+        "Du 11 août au 28 août"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Le texte indique de manière explicite que « Les jeux Paralympiques ont eu lieu le 28 août et jusqu’au 8 septembre. »",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-2-çətin-13-b91a",
+      "passport_id": "09-001-04-2-çətin-13-b91a",
+      "question": "Dans le texte, on trouve plusieurs mots qui expriment une idée exceptionnelle ou symbolique. Quel adjectif qualifie l'expérience des Jeux pour signifier qu'elle est nouvelle et jamais vue auparavant ?",
+      "options": [
+        "Emblématique",
+        "Inédite",
+        "Originel",
+        "Populaire"
+      ],
+      "correctAnswer": 1,
+      "explanation": "L'expression « une expérience inédite » emploie l'adjectif « inédite » pour signifier que la situation est entièrement nouvelle, exceptionnelle et qu'elle ne s'est jamais produite auparavant.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-04-3-çətin-15-c197",
+      "passport_id": "09-001-04-3-çətin-15-c197",
+      "question": "Observez la phrase : « Les épreuves d'équitation se sont _____ au parc du château de Versailles. » Quel participe passé la complète correctement ?",
+      "options": [
+        "tenues",
+        "tenus",
+        "tenue",
+        "tenu"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Le verbe pronominal « se tenir » s'accorde ici avec le sujet « Les épreuves » (féminin pluriel). Le pronom « se » ayant la fonction de COD placé avant le verbe, l'accord se fait au féminin pluriel (« tenues »).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport"
+    },
+    {
+      "id": "09-001-05-XAT-S-03-9c82",
+      "passport_id": "09-001-05-XAT-S-03-9c82",
+      "question": "En quelle année l’OMS a-t-elle été créée ?",
+      "options": [
+        "En 1948",
+        "En 1945",
+        "En 1990",
+        "En 2017"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə açıq şəkildə bildirilir ki, Təşkilat 1948-ci ildə yaradılmışdır (\"créée en 1948\"). 2017 isə Tedros Adhanom Ghebreyesus-un baş direktor olduğu ildir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-ANL-S-04-ddd7",
+      "passport_id": "09-001-05-ANL-S-04-ddd7",
+      "question": "Quel mot correspond à la définition : \"C’est une altération, un trouble de l'organisme\" ?",
+      "options": [
+        "La santé",
+        "La maladie",
+        "L’aliment",
+        "La sécurité"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Orqanizmin normal fəaliyyətinin pozulması xəstəlik (\"la maladie\") adlanır. \"La santé\" sağlamlıq, \"la sécurité\" təhlükəsizlik deməkdir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-ANL-S-05-b3cd",
+      "passport_id": "09-001-05-ANL-S-05-b3cd",
+      "question": "Complétez la phrase : \"Tu n’as pas goûté le gâteau ... ma mère a cuisiné.\"",
+      "options": [
+        "que",
+        "auquel",
+        "dont",
+        "qui"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Burada nisbi əvəzlik \"le gâteau\" sözünü əvəz edərək tamamlıq (objet direct) rolunda çıxış edir. Cümlənin öz mübtədası (\"ma mère\") olduğu üçün \"que\" əvəzliyi seçilməlidir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-TEH-O-06-c2ed",
+      "passport_id": "09-001-05-TEH-O-06-c2ed",
+      "question": "D'après le texte, quelle affirmation est vraie à propos du rôle de l'OMS ?",
+      "options": [
+        "Elle aide à préserver la sécurité mondiale.",
+        "Elle dirige le Conseil économique de l'ONU.",
+        "Elle fonctionne indépendamment de l'ONU.",
+        "Elle ne combat que les maladies infectieuses."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Mətndə açıqca deyilir: \"La mission de l'OMS est de préserver la sécurité mondiale\". Digər variantlar yalandır: Təşkilat həm də qeyri-yoluxucu xəstəliklərlə mübarizə aparır və BMT-dən asılıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-TET-O-07-fa7b",
+      "passport_id": "09-001-05-TET-O-07-fa7b",
+      "question": "Trouvez la phrase correcte avec le pronom relatif \"dont\".",
+      "options": [
+        "La pollution est un problème dont nous concerne tous.",
+        "Le dîner dont tu nous as servi était délicieux.",
+        "Voilà le dictionnaire dont j'ai besoin.",
+        "C'est le livre dont je t'ai donné hier."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Dont\" nisbi əvəzliyi \"de\" sözönüsü tələb edən feillərlə (avoir besoin de) işlənir. A və C variantlarında tamamlıq (\"que\"), D variantında isə mübtəda (\"qui\") lazımdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-ANL-O-08-8cfb",
+      "passport_id": "09-001-05-ANL-O-08-8cfb",
+      "question": "Quel est le synonyme de \"le bureau central\" utilisé dans le texte pour l’OMS ?",
+      "options": [
+        "Le personnel",
+        "La mission",
+        "Le but",
+        "Le siège"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Təşkilatın əsas ofisi, yəni \"mərkəzi büro\" mətndə \"le siège\" (baş qərargah) sözü ilə ifadə olunur. Digər sözlər \"missiya\", \"məqsəd\" və \"işçi heyəti\" deməkdir.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-DEY-C-11-15cd",
+      "passport_id": "09-001-05-DEY-C-11-15cd",
+      "question": "Quelle déduction peut-on faire concernant les champs d'action de l'OMS ?",
+      "options": [
+        "Elle a pour but unique de financer les recherches sur la grippe.",
+        "Elle intervient seulement en Europe pour réduire les infections.",
+        "Elle se limite uniquement aux soins médicaux directs dans les hôpitaux.",
+        "Son action inclut l'environnement, l'alimentation et la qualité de l'eau."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mətndə bildirilir ki, ÜST havanın sanitar təhlükəsizliyinə, qidalara və suya nəzarət edir. Bu o deməkdir ki, onun fəaliyyəti yalnız tibbi deyil, həm də ətraf mühit və qida ilə bağlıdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-05-TEH-C-12-e915",
+      "passport_id": "09-001-05-TEH-C-12-e915",
+      "question": "Lisez et choisissez les pronoms relatifs corrects dans l'ordre pour les deux phrases : 1. C’est une attitude ... il n’est pas fier. 2. Elle raconte une histoire ... me fascine.",
+      "options": [
+        "1 - dont, 2 - qui",
+        "1 - que, 2 - qui",
+        "1 - que, 2 - dont",
+        "1 - dont, 2 - que"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Birinci cümlədə \"être fier de\" ifadəsinə görə \"dont\" istifadə olunur (C’est une attitude dont il n’est pas fier). İkinci cümlədə isə \"histoire\" sözü cümlənin mübtədası funksiyasını daşıdığı üçün \"qui\" istifadə edilməlidir (une histoire qui me fascine).",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples"
+    },
+    {
+      "id": "09-001-05-ANL-C-13-111d",
+      "passport_id": "09-001-05-ANL-C-13-111d",
+      "question": "Trouvez le mot du texte qui signifie \"assurer la protection, garder à l'abri du danger\" et correspond à \"préserver\" ou \"assurer\".",
+      "options": [
+        "Adhérer",
+        "Combattre",
+        "Préserver",
+        "Surveiller"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mətndə missiyanın məqsədlərindən biri kimi \"préserver la sécurité mondiale\" (qlobal təhlükəsizliyi qorumaq) qeyd olunub. \"Préserver\" qorumaq, təhlükədən uzaq tutmaq mənasına gəlir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Vocabulaire"
+    },
+    {
+      "id": "09-001-05-DEY-C-15-8d1a",
+      "passport_id": "09-001-05-DEY-C-15-8d1a",
+      "question": "Quel est le message principal que les membres du personnel de l'OMS partagent selon le texte ?",
+      "options": [
+        "S'efforcer d'améliorer la santé pour tous les individus, partout dans le monde.",
+        "Obliger les pays à financer des traitements coûteux contre le cancer.",
+        "Réduire le nombre de réunions du Conseil économique des Nations Unies.",
+        "Accroître le nombre d'États Membres dans les six régions du monde."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mətndə işçilərin ortaq vədi açıq şəkildə ifadə edilir: \"Les membres du personnel de l’OMS partagent un même [but] : améliorer la santé pour tous et partout.\" Digər variantlar mətnlə əlaqədar yanlış nəticələrdir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS"
+    },
+    {
+      "id": "09-001-06-1-1-01-40bf",
+      "passport_id": "09-001-06-1-1-01-40bf",
+      "question": "Complétez la phrase : \"Il est possible que le rendez-vous _____ annulé.\"",
+      "options": [
+        "était",
+        "soit",
+        "est",
+        "sera"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Il est possible que\" ifadəsindən sonra fel həmişə subjonctif (arzu) formasında işlənməlidir. \"être\" felinin subjonctif forması 3-cü şəxsin təkində \"soit\" olur.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-2-1-04-b954",
+      "passport_id": "09-001-06-2-1-04-b954",
+      "question": "Que signifie la phrase \"Azad ne boit que de l’eau\" ?",
+      "options": [
+        "Azad ne boit pas d'eau.",
+        "Azad n'aime pas l'eau.",
+        "Azad boit beaucoup d'eau.",
+        "Azad boit seulement de l'eau."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Ne... que\" konstruksiyası məhdudiyyət bildirir və \"seulement\" (yalnız/təkcə) sözünün sinonimidir. Yəni cümlənin mənası Azadın yalnız su içməsidir.",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-1-1-05-06d2",
+      "passport_id": "09-001-06-1-1-05-06d2",
+      "question": "D'après les textes révisés, quel est le but principal de l'OMS (Organisation Mondiale de la Santé) ?",
+      "options": [
+        "Lutter contre le réchauffement planétaire",
+        "Protéger les espèces animales menacées",
+        "Organiser les Jeux Olympiques",
+        "Améliorer la santé pour tous et partout"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Dərslik mətninə əsasən, Ümumdünya Səhiyyə Təşkilatının (OMS) əsas məqsədi hər kəs üçün və hər yerdə sağlamlığı yaxşılaşdırmaqdır (améliorer la santé pour tous et partout).",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-06-38b2",
+      "passport_id": "09-001-06-3-2-06-38b2",
+      "question": "Mettez le verbe au conditionnel présent : \"Si j'étais toi, j'_____ plus souvent à la mer.\" (aller)",
+      "options": [
+        "allais",
+        "irait",
+        "irais",
+        "irai"
+      ],
+      "correctAnswer": 2,
+      "explanation": "\"Si + imparfait, conditionnel présent\" qaydasına əsasən, şərt cümləsindəki \"aller\" felinin 1-ci şəxsin təkində (je) conditionnel présent forması \"irais\" olmalıdır.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-07-2052",
+      "passport_id": "09-001-06-3-2-07-2052",
+      "question": "Complétez avec le verbe au passé composé : \"Dimanche, Sarah et sa mère ne _____ pas _____ au marché.\"",
+      "options": [
+        "ont / allé",
+        "sont / allés",
+        "sont / allées",
+        "ont / allées"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Aller\" hərəkət feli olduğu üçün keçmiş zamanda (passé composé) \"être\" köməkçi feli ilə hallanır. \"Sarah et sa mère\" qadın cinsi və cəm (elles) olduğu üçün feli sifət (participe passé) uzlaşır və \"allées\" formasına düşür.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-09-5842",
+      "passport_id": "09-001-06-3-2-09-5842",
+      "question": "Transformez le verbe en utilisant le participe présent : \"Nous cherchons une vendeuse (connaître) bien le métier.\"",
+      "options": [
+        "connaissant",
+        "connue",
+        "connais",
+        "connaissante"
+      ],
+      "correctAnswer": 0,
+      "explanation": "\"Connaître\" felinin indiki zaman feli sifət (participe présent) forması \"connaissant\"dır. Participe présent cümlədəki isimlə cinsə və kəmiyyətə görə uzlaşmır (invariable olaraq qalır).",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-2-10-8d31",
+      "passport_id": "09-001-06-3-2-10-8d31",
+      "question": "Réécrivez la phrase à l'imparfait : \"Chaque année, les élèves _____ en classe verte.\" (aller)",
+      "options": [
+        "sont allés",
+        "iront",
+        "allons",
+        "allaient"
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"Chaque année\" ifadəsi keçmişdə təkrarlanan hərəkəti bildirir, buna görə də imparfait (davamlı keçmiş zaman) istifadə olunmalıdır. \"Aller\" felinin 3-cü şəxsin cəmində (ils) imparfait forması \"allaient\" olur.",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-4-3-11-27ac",
+      "passport_id": "09-001-06-4-3-11-27ac",
+      "question": "Complétez avec la forme correcte : \"Tu feras des exercices jusqu’à ce que tu _____ ta leçon.\" (comprendre)",
+      "options": [
+        "as compris",
+        "comprennes",
+        "comprendras",
+        "comprends"
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Jusqu'à ce que\" (ta ki, ... qədər) bağlayıcısından sonra mütləq subjonctif (arzu şəkli) işlənməlidir. \"Comprendre\" felinin 2-ci şəxsin təkində (tu) subjonctif forması \"comprennes\" olur.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-12-9f09",
+      "passport_id": "09-001-06-3-3-12-9f09",
+      "question": "Complétez la phrase avec les verbes devoir et vouloir : \"S’ils _____ être en forme, ils _____ faire de l’exercice.\"",
+      "options": [
+        "veulent / devont",
+        "voulons / devez",
+        "voulaient / devraient",
+        "veulent / doivent"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Şərt budaq cümləsində (Si + présent, présent) hər iki fel indiki zamanda (présent) olmalıdır. 3-cü şəxsin cəmində (ils) \"vouloir\" feli \"veulent\", \"devoir\" feli isə \"doivent\" formasına çevrilir.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-4-3-13-bb7f",
+      "passport_id": "09-001-06-4-3-13-bb7f",
+      "question": "Mettez les verbes au passé composé : \"Elle _____ (tomber) par terre et les enfants _____ (se réveiller) de bonne heure.\"",
+      "options": [
+        "a tombée / ont réveillé",
+        "a tombé / se sont réveillés",
+        "est tombé / se sont réveillées",
+        "est tombée / se sont réveillés"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Hərəkət feli olan \"tomber\" və qayıdış feli olan \"se réveiller\" keçmiş zamanda \"être\" köməkçi feli ilə hallanır və mübtəda ilə uzlaşır. \"Elle\" qadın cinsi olduğu üçün \"tombée\", \"les enfants\" (kişi cinsi cəm) olduğu üçün isə \"réveillés\" yazılır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-14-0092",
+      "passport_id": "09-001-06-3-3-14-0092",
+      "question": "Comment transformer la phrase \"Aujourd’hui il travaille seulement une heure\" en utilisant la restriction (ne... que) ?",
+      "options": [
+        "Aujourd’hui ne il travaille qu'une heure.",
+        "Aujourd’hui il travaille ne qu'une heure.",
+        "Aujourd’hui il ne travaille qu'une heure.",
+        "Aujourd’hui il n'a travaillé qu'une heure."
+      ],
+      "correctAnswer": 1,
+      "explanation": "\"Ne... que\" (yalnız) məhdudlaşdırıcı konstruksiyasında \"ne\" inkar ədatı feldən əvvəl, \"que\" isə məhdudlaşdırılan sözdən (une heure) əvvəl gəlir. Orijinal cümlə indiki zamanda olduğu üçün \"ne travaille qu'une heure\" ən doğru variantdır.",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-06-3-3-15-d0ba",
+      "passport_id": "09-001-06-3-3-15-d0ba",
+      "question": "Complétez la phrase avec le gérondif du verbe commencer : \"Il a évité de répondre _____ à parler d’autre chose.\"",
+      "options": [
+        "commençant",
+        "en commençant",
+        "en commencent",
+        "en commenceant"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Gérondif \"en + participe présent\" forması ilə düzəlir. \"-cer\" ilə bitən fellərdə \"c\" hərfindən sonra qalın \"a\" saiti gəldiyi üçün səs dəyişməsinin (k səsinin) qarşısını almaq məqsədilə \"ç\" (cédille) yazılır: \"en commençant\".",
+      "difficulty": "çətin",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 6. Révision"
+    },
+    {
+      "id": "09-001-1-3-1-03-9d59",
+      "passport_id": "09-001-1-3-1-03-9d59-r1",
+      "question": "Selon le texte, comment Teymour dit-il bonjour à Céline ?",
+      "options": [
+        "Salut, Céline.",
+        "Bonjour, Céline.",
+        "Comment ça va, Céline?",
+        "Je vais bien, Céline."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dans le dialogue, Teymour dit explicitement : 'Salut, Céline.'",
+      "difficulty": "sadə",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 1 / À la salle de sport"
+    },
+    {
+      "id": "09-001-02-3-2-1-77ae",
+      "passport_id": "09-001-02-3-2-1-77ae-r1",
+      "question": "D'après l'activité 2, quelle est la réponse à la question 'Quel âge as-tu?' ?",
+      "options": [
+        "Je m'appelle Arzou.",
+        "J'ai sept ans.",
+        "J'ai 8 ans.",
+        "J'ai 35 ans."
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dans l'activité 2, la réponse (a) à la question 'Quel âge as-tu?' est 'J'ai 8 ans.'",
+      "difficulty": "orta",
+      "bloom_level": "bilmə",
+      "topic": "Leçon 2. Une pomme par jour éloigne le médecin !"
+    },
+    {
+      "question": "'L'écologie' sözünün mənası nədir?",
+      "options": {
+        "A": "ekologiya",
+        "B": "iqtisadiyyat",
+        "C": "tarix",
+        "D": "coğrafiya",
+        "E": "fizika"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'écologie fransızca ekologiya deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 3. En faveur de l’écologie",
+      "cat": "Fransız dili 9",
+      "id": "05ade057-5596-4c9f-bad6-e4b74087d9d5"
+    },
+    {
+      "question": "'La pollution' nə deməkdir?",
+      "options": {
+        "A": "çirklənmə",
+        "B": "təmizlik",
+        "C": "qorunma",
+        "D": "təbiət",
+        "E": "ağac"
+      },
+      "correctAnswer": "A",
+      "explanation": "La pollution çirklənmə mənasını verir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 3. En faveur de l’écologie",
+      "cat": "Fransız dili 9",
+      "id": "a12ebc97-dbe3-4b19-b8ff-f850f6e67e47"
+    },
+    {
+      "question": "Təbiəti qorumaq üçün nə etmək lazımdır?",
+      "options": {
+        "A": "Protéger la nature",
+        "B": "Détruire la forêt",
+        "C": "Polluer l'eau",
+        "D": "Couper les arbres",
+        "E": "Tuer les animaux"
+      },
+      "correctAnswer": "A",
+      "explanation": "Protéger la nature - təbiəti qorumaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Təhlil etmək",
+      "topic": "Leçon 3. En faveur de l’écologie",
+      "cat": "Fransız dili 9",
+      "id": "b0f86163-5b56-4b95-b069-75cac7e77d03"
+    },
+    {
+      "question": "'Təbiət' sözünün fransızca qarşılığı hansıdır?",
+      "options": {
+        "A": "la nature",
+        "B": "la ville",
+        "C": "la maison",
+        "D": "le livre",
+        "E": "la voiture"
+      },
+      "correctAnswer": "A",
+      "explanation": "La nature təbiət deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 3. En faveur de l’écologie",
+      "cat": "Fransız dili 9",
+      "id": "3ce8f0cd-66d3-4a92-81d5-b9bd5ae7e8d8"
+    },
+    {
+      "question": "'Qorumaq' feili fransız dilində necədir?",
+      "options": {
+        "A": "protéger",
+        "B": "manger",
+        "C": "parler",
+        "D": "écrire",
+        "E": "lire"
+      },
+      "correctAnswer": "A",
+      "explanation": "Protéger - qorumaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 3. En faveur de l’écologie",
+      "cat": "Fransız dili 9",
+      "id": "56937e26-dee1-41c5-9f79-e4d571e70219"
+    },
+    {
+      "question": "'Le sport' sözünün mənası nədir?",
+      "options": {
+        "A": "idman",
+        "B": "musiqi",
+        "C": "rəqs",
+        "D": "teatr",
+        "E": "kino"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le sport fransızca idman deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "c419f77c-4ef0-492d-aa2a-2f1fc00471ce"
+    },
+    {
+      "question": "'Futbol oynamaq' fransızca necə deyilir?",
+      "options": {
+        "A": "jouer au football",
+        "B": "faire du ski",
+        "C": "jouer au tennis",
+        "D": "faire de la natation",
+        "E": "jouer du piano"
+      },
+      "correctAnswer": "A",
+      "explanation": "Jouer au football futbol oynamaq deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "1570bb50-3748-430f-8fdd-1ac6caf12859"
+    },
+    {
+      "question": "'İdmançı' sözünün fransızca qarşılığı nədir?",
+      "options": {
+        "A": "le sportif",
+        "B": "le chanteur",
+        "C": "le danseur",
+        "D": "le professeur",
+        "E": "le médecin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le sportif idmançı deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "a1fa6043-b306-4a50-a024-1ed9c35659ce"
+    },
+    {
+      "question": "'Nouvelles' sözünün mənası nədir?",
+      "options": {
+        "A": "xəbərlər",
+        "B": "köhnələr",
+        "C": "kitablar",
+        "D": "jurnallar",
+        "E": "filmlər"
+      },
+      "correctAnswer": "A",
+      "explanation": "Nouvelles xəbərlər deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "ae10573e-07c7-48eb-955b-6c0f58becca4"
+    },
+    {
+      "question": "'Olimpiya oyunları' fransız dilində necə adlanır?",
+      "options": {
+        "A": "Les Jeux Olympiques",
+        "B": "La Coupe du Monde",
+        "C": "Le Championnat",
+        "D": "Le Tournoi",
+        "E": "Le Match"
+      },
+      "correctAnswer": "A",
+      "explanation": "Les Jeux Olympiques Olimpiya oyunları deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "a1dfe856-c856-4bf9-9efd-e1cd05e3491f"
+    },
+    {
+      "question": "Aşağıdakılardan hansı qış idman növüdür?",
+      "options": {
+        "A": "le ski",
+        "B": "le football",
+        "C": "le tennis",
+        "D": "le basketball",
+        "E": "la natation"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le ski qış idman növüdür.",
+      "difficulty": "Asan",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "ddb5e2c8-fc5d-4d1a-a4f1-1b2ce23772c2"
+    },
+    {
+      "question": "'Qaçış' fransızca necə adlanır?",
+      "options": {
+        "A": "la course",
+        "B": "le saut",
+        "C": "le lancer",
+        "D": "la marche",
+        "E": "le cyclisme"
+      },
+      "correctAnswer": "A",
+      "explanation": "La course qaçış mənasını verir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "58af0b89-6592-4083-a97a-a9ae59963314"
+    },
+    {
+      "question": "'Üzgüçülük' sözünün fransızca qarşılığı hansıdır?",
+      "options": {
+        "A": "la natation",
+        "B": "le judo",
+        "C": "la boxe",
+        "D": "le karaté",
+        "E": "l'escrime"
+      },
+      "correctAnswer": "A",
+      "explanation": "La natation üzgüçülük deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "2bb60f35-27f0-426b-a125-ec2710713ba9"
+    },
+    {
+      "question": "'Məşqçi' fransızca necə deyilir?",
+      "options": {
+        "A": "l'entraîneur",
+        "B": "l'arbitre",
+        "C": "le joueur",
+        "D": "le spectateur",
+        "E": "le gardien"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'entraîneur məşqçi deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+      "cat": "Fransız dili 9",
+      "id": "19be6384-4a8a-4c83-8dde-412c7cefb877"
+    },
+    {
+      "question": "'L'OMS' abbreviaturasının açılışı nədir?",
+      "options": {
+        "A": "Organisation Mondiale de la Santé",
+        "B": "Organisation Médicale Secrète",
+        "C": "Ordre Mondial du Sport",
+        "D": "Office",
+        "E": "Organisation"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'OMS - Ümumdünya Səhiyyə Təşkilatıdır.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "6691f18f-a5e3-4580-8ea3-c51fada315ad"
+    },
+    {
+      "question": "'La santé' nə deməkdir?",
+      "options": {
+        "A": "sağlamlıq",
+        "B": "xəstəlik",
+        "C": "dərman",
+        "D": "həkim",
+        "E": "xəstəxana"
+      },
+      "correctAnswer": "A",
+      "explanation": "La santé sağlamlıq deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "d0993c20-90ab-4e59-8908-c3f423d17f40"
+    },
+    {
+      "question": "'La maladie' sözünün mənası nədir?",
+      "options": {
+        "A": "xəstəlik",
+        "B": "sağlamlıq",
+        "C": "müalicə",
+        "D": "dərman",
+        "E": "resept"
+      },
+      "correctAnswer": "A",
+      "explanation": "La maladie xəstəlik deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "f824fa0a-892c-4b4c-831c-05858f048255"
+    },
+    {
+      "question": "ÜST (L'OMS) nə üçün fəaliyyət göstərir?",
+      "options": {
+        "A": "Dünyada sağlamlığı qorumaq üçün",
+        "B": "İdman yarışları təşkil etmək üçün",
+        "C": "Təhsil vermək üçün",
+        "D": "Filmlər çəkmək üçün",
+        "E": "Turizmi inkişaf etdirmək üçün"
+      },
+      "correctAnswer": "A",
+      "explanation": "ÜST-nin əsas məqsədi dünya əhalisinin sağlamlığını qorumaqdır.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "e82b6b64-7671-4461-b687-5f56a0c2867d"
+    },
+    {
+      "question": "'Le médecin' nə deməkdir?",
+      "options": {
+        "A": "həkim",
+        "B": "müəllim",
+        "C": "mühəndis",
+        "D": "idmançı",
+        "E": "sürücü"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le médecin həkim deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "8f33f1be-b5d6-411b-bb21-d9e42ee8a196"
+    },
+    {
+      "question": "'Le médicament' sözünün tərcüməsi nədir?",
+      "options": {
+        "A": "dərman",
+        "B": "su",
+        "C": "yemək",
+        "D": "kitab",
+        "E": "geyim"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le médicament dərman deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "70717f3b-2555-4127-908b-9ed8f9017e8e"
+    },
+    {
+      "question": "'L'hôpital' nə deməkdir?",
+      "options": {
+        "A": "xəstəxana",
+        "B": "məktəb",
+        "C": "muzey",
+        "D": "teatr",
+        "E": "park"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'hôpital xəstəxana deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "55a04b80-dacd-4981-8686-a0c499c3bf99"
+    },
+    {
+      "question": "'Müalicə etmək' feili fransız dilində necədir?",
+      "options": {
+        "A": "soigner",
+        "B": "chanter",
+        "C": "danser",
+        "D": "pleurer",
+        "E": "rire"
+      },
+      "correctAnswer": "A",
+      "explanation": "Soigner müalicə etmək deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "b0cc102c-d761-4ebb-bb2f-2b95afa42a27"
+    },
+    {
+      "question": "'Sağlam olmaq' fransızca necə ifadə olunur?",
+      "options": {
+        "A": "être en bonne santé",
+        "B": "être malade",
+        "C": "avoir faim",
+        "D": "avoir soif",
+        "E": "être fatigué"
+      },
+      "correctAnswer": "A",
+      "explanation": "Être en bonne santé sağlam olmaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "12c7ea5e-66de-4893-8a31-b3da149b7ca0"
+    },
+    {
+      "question": "'Le symptôme' nə deməkdir?",
+      "options": {
+        "A": "simptom",
+        "B": "dərman",
+        "C": "həb",
+        "D": "iynə",
+        "E": "resept"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le symptôme xəstəliyin əlaməti deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "704cb1fd-b04c-46e7-a0ed-6b5f0e72ca74"
+    },
+    {
+      "question": "'Virus' sözü fransızca necə yazılır?",
+      "options": {
+        "A": "le virus",
+        "B": "la viruse",
+        "C": "le virous",
+        "D": "la vierus",
+        "E": "le viros"
+      },
+      "correctAnswer": "A",
+      "explanation": "Virus fransızca le virus kimi yazılır.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "5187e30c-b286-45d3-9320-52af8c8bec42"
+    },
+    {
+      "question": "L'OMS təşkilatının mənzil-qərargahı harada yerləşir?",
+      "options": {
+        "A": "Cenevrədə",
+        "B": "Parisdə",
+        "C": "Londonda",
+        "D": "Nyu-Yorkda",
+        "E": "Tokioda"
+      },
+      "correctAnswer": "A",
+      "explanation": "ÜST-nin (L'OMS) baş ofisi Cenevrədədir.",
+      "difficulty": "Çətin",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "6f02d4d7-ce21-4b76-a92a-2b754b40e992"
+    },
+    {
+      "question": "'L'alimentation' nə deməkdir?",
+      "options": {
+        "A": "qidalanma",
+        "B": "idman",
+        "C": "təhsil",
+        "D": "səyahət",
+        "E": "iş"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'alimentation qidalanma deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Compréhension écrite : L’OMS",
+      "cat": "Fransız dili 9",
+      "id": "4eec4cbf-2a3a-40f7-b774-4ba21c6138aa"
+    },
+    {
+      "question": "'Bədən' sözünün fransızca qarşılığı nədir?",
+      "options": {
+        "A": "le corps",
+        "B": "la tête",
+        "C": "le bras",
+        "D": "la jambe",
+        "E": "le dos"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le corps bədən deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "1fc047bb-b67d-4f7c-a2d5-e0ae05c80212"
+    },
+    {
+      "question": "'La tête' nə deməkdir?",
+      "options": {
+        "A": "baş",
+        "B": "qol",
+        "C": "qıç",
+        "D": "göz",
+        "E": "qulaq"
+      },
+      "correctAnswer": "A",
+      "explanation": "La tête baş deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "0adc16bc-749f-4689-9ed4-a5ef3c1c870a"
+    },
+    {
+      "question": "'Başım ağrıyır' fransızca necə deyilir?",
+      "options": {
+        "A": "J'ai mal à la tête",
+        "B": "J'ai mal au ventre",
+        "C": "J'ai mal aux dents",
+        "D": "J'ai mal au dos",
+        "E": "J'ai mal à la gorge"
+      },
+      "correctAnswer": "A",
+      "explanation": "Avoir mal à la tête - başı ağrımaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "06adf60e-729b-4759-b111-0ef9d046f236"
+    },
+    {
+      "question": "'L'infirmière' sözünün mənası nədir?",
+      "options": {
+        "A": "tibb bacısı",
+        "B": "həkim",
+        "C": "cərrah",
+        "D": "xəstə",
+        "E": "aptekçi"
+      },
+      "correctAnswer": "A",
+      "explanation": "L'infirmière tibb bacısı deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "5780ddb3-0ac1-4951-988c-6ef447436e85"
+    },
+    {
+      "question": "'La pharmacie' nə deməkdir?",
+      "options": {
+        "A": "aptek",
+        "B": "xəstəxana",
+        "C": "klinika",
+        "D": "laboratoriya",
+        "E": "məktəb"
+      },
+      "correctAnswer": "A",
+      "explanation": "La pharmacie aptek deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "62442358-0465-4a21-9ed7-9ddddf66c6d2"
+    },
+    {
+      "question": "'Sağalmaq' feilinin fransızca tərcüməsi hansıdır?",
+      "options": {
+        "A": "guérir",
+        "B": "tomber",
+        "C": "rester",
+        "D": "sortir",
+        "E": "partir"
+      },
+      "correctAnswer": "A",
+      "explanation": "Guérir sağalmaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "dad27174-b21f-4cef-9667-e5a1395d7da0"
+    },
+    {
+      "question": "'Xəstələnmək' ifadəsi fransızca necədir?",
+      "options": {
+        "A": "tomber malade",
+        "B": "être en forme",
+        "C": "guérir vite",
+        "D": "aller bien",
+        "E": "se réveiller"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tomber malade xəstələnmək deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "76166e7e-fdcd-4d80-aa3b-644e990fc1a4"
+    },
+    {
+      "question": "'La fièvre' nə deməkdir?",
+      "options": {
+        "A": "qızdırma",
+        "B": "öskürək",
+        "C": "zökəm",
+        "D": "baş ağrısı",
+        "E": "mədə ağrısı"
+      },
+      "correctAnswer": "A",
+      "explanation": "La fièvre qızdırma deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "4aa530a5-6f0a-466e-8c44-067a2957604c"
+    },
+    {
+      "question": "'Le rhume' sözünün mənası nədir?",
+      "options": {
+        "A": "zökəm",
+        "B": "qızdırma",
+        "C": "qrip",
+        "D": "öskürək",
+        "E": "allergiya"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le rhume zökəm deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "9034a6ef-2b03-4e37-9be1-bb98ca57df07"
+    },
+    {
+      "question": "'Öskürmək' feili fransızca necədir?",
+      "options": {
+        "A": "tousser",
+        "B": "respirer",
+        "C": "manger",
+        "D": "boire",
+        "E": "dormir"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tousser öskürmək deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "75978a16-73f5-42af-ad42-a171bddf4687"
+    },
+    {
+      "question": "'Respirer' nə deməkdir?",
+      "options": {
+        "A": "nəfəs almaq",
+        "B": "öskürmək",
+        "C": "asqırmaq",
+        "D": "ağlamaq",
+        "E": "gülmək"
+      },
+      "correctAnswer": "A",
+      "explanation": "Respirer nəfəs almaq deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "ddede3ea-9687-4c0a-a283-e3363955ccc0"
+    },
+    {
+      "question": "'Qan' sözünün fransızca qarşılığı nədir?",
+      "options": {
+        "A": "le sang",
+        "B": "l'eau",
+        "C": "le lait",
+        "D": "le jus",
+        "E": "le vin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le sang qan deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "279af3eb-a5e4-42a0-b8fc-ecda91d295db"
+    },
+    {
+      "question": "'Le cœur' nə deməkdir?",
+      "options": {
+        "A": "ürək",
+        "B": "mədə",
+        "C": "ciyər",
+        "D": "böyrək",
+        "E": "beyin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Le cœur ürək deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Xatırlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "9f473f28-22f2-4662-a193-cc3e2658f0fc"
+    },
+    {
+      "question": "'Boğazım ağrıyır' cümləsi necə tərcümə olunur?",
+      "options": {
+        "A": "J'ai mal à la gorge.",
+        "B": "J'ai mal au dos.",
+        "C": "J'ai mal au ventre.",
+        "D": "J'ai mal aux pieds.",
+        "E": "J'ai mal aux yeux."
+      },
+      "correctAnswer": "A",
+      "explanation": "La gorge boğaz deməkdir.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "0854c24b-df59-447f-acae-092241cfb2de"
+    },
+    {
+      "question": "Düzgün tibbi termindir:",
+      "options": {
+        "A": "une ordonnance",
+        "B": "une voiture",
+        "C": "une table",
+        "D": "un livre",
+        "E": "un stylo"
+      },
+      "correctAnswer": "A",
+      "explanation": "Une ordonnance həkim resepti deməkdir.",
+      "difficulty": "Asan",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Vocabulaire",
+      "cat": "Fransız dili 9",
+      "id": "50aaf774-d04e-4d34-972b-f61e6a9a8277"
+    },
+    {
+      "question": "Cümləni tamamlayın: L'homme ___ parle est mon oncle.",
+      "options": {
+        "A": "qui",
+        "B": "que",
+        "C": "dont",
+        "D": "où",
+        "E": "quand"
+      },
+      "correctAnswer": "A",
+      "explanation": "Mübtəda əvəzliyi kimi 'qui' istifadə olunur.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "9e0afe72-0e43-46d7-9887-ae18effc5090"
+    },
+    {
+      "question": "Cümləni tamamlayın: Le livre ___ je lis est intéressant.",
+      "options": {
+        "A": "que",
+        "B": "qui",
+        "C": "dont",
+        "D": "où",
+        "E": "comment"
+      },
+      "correctAnswer": "A",
+      "explanation": "Tamamlıq əvəzliyi kimi 'que' istifadə edilir.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "66ac836c-d899-4d35-b8f7-b6b8195c7482"
+    },
+    {
+      "question": "Cümləni tamamlayın: La ville ___ j'habite est grande.",
+      "options": {
+        "A": "où",
+        "B": "qui",
+        "C": "que",
+        "D": "dont",
+        "E": "pourquoi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Məkan bildirdikdə 'où' nisbi əvəzliyi işlənir.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "9ac887b8-1b0a-4ad0-befa-d5789318bc98"
+    },
+    {
+      "question": "Cümləni tamamlayın: C'est le film ___ je t'ai parlé.",
+      "options": {
+        "A": "dont",
+        "B": "qui",
+        "C": "que",
+        "D": "où",
+        "E": "quel"
+      },
+      "correctAnswer": "A",
+      "explanation": "Parler de nəsə haqqında danışmaq deməkdir.",
+      "difficulty": "Çətin",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "8e55eedd-87ba-43c0-89be-77d81ee8d6a4"
+    },
+    {
+      "question": "'Qui' nisbi əvəzliyi cümlədə hansı cümlə üzvü olur?",
+      "options": {
+        "A": "Mübtəda",
+        "B": "Tamamlıq",
+        "C": "Zərflik",
+        "D": "Təyin",
+        "E": "Xəbər"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Qui' mübtəda funksiyasında çıxış edir.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "8766ae50-ef8d-4449-93da-7b79862009b3"
+    },
+    {
+      "question": "'Que' nisbi əvəzliyi cümlədə hansı cümlə üzvü olur?",
+      "options": {
+        "A": "Tamamlıq",
+        "B": "Mübtəda",
+        "C": "Zərflik",
+        "D": "Xəbər",
+        "E": "Təyin"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Que' adətən vasitəsiz tamamlıq rolunda çıxış edir.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "e3d0444c-5253-49a4-91fc-7e55ed4afb08"
+    },
+    {
+      "question": "Hansı əvəzlik həm yer, həm də zaman bildirə bilər?",
+      "options": {
+        "A": "Où",
+        "B": "Qui",
+        "C": "Que",
+        "D": "Dont",
+        "E": "Lequel"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Où' məkan və zaman zərfliyi ola bilər.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "8d12720b-d6be-49d6-8e42-41eae114f599"
+    },
+    {
+      "question": "Cümləni tamamlayın: L'amie ___ vient est très sympathique.",
+      "options": {
+        "A": "qui",
+        "B": "que",
+        "C": "dont",
+        "D": "où",
+        "E": "quand"
+      },
+      "correctAnswer": "A",
+      "explanation": "Burada 'qui' mübtədadır.",
+      "difficulty": "Orta",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "88b988f3-806d-4f05-8fac-d537ad073232"
+    },
+    {
+      "question": "Cümləni tamamlayın: La robe ___ j'ai achetée est rouge.",
+      "options": {
+        "A": "que",
+        "B": "qui",
+        "C": "dont",
+        "D": "où",
+        "E": "qui est"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Que' vasitəsiz tamamlıq olduğu üçün istifadə olunur.",
+      "difficulty": "Çətin",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "2da8d7f0-8b84-44eb-bca8-1bc10b9586d1"
+    },
+    {
+      "question": "Cümləni tamamlayın: C'est le professeur ___ je connais la fille.",
+      "options": {
+        "A": "dont",
+        "B": "qui",
+        "C": "que",
+        "D": "où",
+        "E": "de qui"
+      },
+      "correctAnswer": "A",
+      "explanation": "'Dont' yiyəlik əlaqəsi yaradır.",
+      "difficulty": "Çətin",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "436cf224-60a5-4952-b188-5fd7fdc2a1a0"
+    },
+    {
+      "question": "Cümləni tamamlayın: Le moment ___ il est parti était triste.",
+      "options": {
+        "A": "où",
+        "B": "qui",
+        "C": "que",
+        "D": "dont",
+        "E": "quand"
+      },
+      "correctAnswer": "A",
+      "explanation": "Zaman məfhumu bildirdiyi üçün 'où' işlənir.",
+      "difficulty": "Çətin",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "2b84a5e9-f519-4dcb-ba8c-f79018036411"
+    },
+    {
+      "question": "Hansı variantda 'qui' düzgün işlənib?",
+      "options": {
+        "A": "L'enfant qui pleure a faim.",
+        "B": "Le livre qui je lis.",
+        "C": "La maison qui j'habite.",
+        "D": "Le garçon qui j'aime.",
+        "E": "La ville qui je visite."
+      },
+      "correctAnswer": "A",
+      "explanation": "Qui mübtədadır və ondan sonra birbaşa xəbər gəlir.",
+      "difficulty": "Orta",
+      "bloom_level": "Təhlil etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "4794d45f-deb0-46ac-b543-b7c50db5b01c"
+    },
+    {
+      "question": "Hansı variantda 'que' düzgün işlənib?",
+      "options": {
+        "A": "La pomme que je mange.",
+        "B": "La pomme que est rouge.",
+        "C": "La pomme que tombe.",
+        "D": "La pomme que est sur la table.",
+        "E": "La pomme que m'appartient."
+      },
+      "correctAnswer": "A",
+      "explanation": "'Que' tamamlıqdır və ondan sonra mübtəda+xəbər gəlir.",
+      "difficulty": "Orta",
+      "bloom_level": "Təhlil etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "2f62824c-3576-4737-b007-996725f50333"
+    },
+    {
+      "question": "Cümləni tamamlayın: L'ordinateur ___ j'ai besoin est cher.",
+      "options": {
+        "A": "dont",
+        "B": "qui",
+        "C": "que",
+        "D": "où",
+        "E": "qu'il"
+      },
+      "correctAnswer": "A",
+      "explanation": "Avoir besoin de - olduğuna görə 'dont' işlənir.",
+      "difficulty": "Çətin",
+      "bloom_level": "Tətbiq etmək",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "0d1bdc8e-316e-48f5-9e76-370b345cc9c7"
+    },
+    {
+      "question": "Nisbi əvəzliklərdən hansı 'de' sözönü ilə başlayan tamamlığı əvəz edir?",
+      "options": {
+        "A": "dont",
+        "B": "qui",
+        "C": "que",
+        "D": "où",
+        "E": "quand"
+      },
+      "correctAnswer": "A",
+      "explanation": "Dont əvəzliyi 'de' ilə başlayan konstruksiyaları əvəz edir.",
+      "difficulty": "Orta",
+      "bloom_level": "Anlamaq",
+      "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+      "cat": "Fransız dili 9",
+      "id": "e74826a9-0edc-45fc-9630-3d00c1a02b1d"
+    }
+  ]
+}

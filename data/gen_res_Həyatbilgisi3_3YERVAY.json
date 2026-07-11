@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Bədənin formasını təyin edən, onu dik saxlayan və daxili üzvləri xarici təsirlərdən qoruyan nədir?",
+    "options": {
+      "A": "Skelet",
+      "B": "Mədə",
+      "C": "Qəlsəmə",
+      "D": "Beyin"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Bədənin forması skeletdən asılıdır. Skelet insanın bədənini dik saxlamaqdan başqa, daxili üzvləri xarici təsirlərdən qoruyur.",
+      "B": "Yanlışdır. Mədə həzm prosesi üçündür.",
+      "C": "Yanlışdır. Qəlsəmə su canlılarının tənəffüsü üçündür.",
+      "D": "Yanlışdır. Beyin idarəetmə mərkəzidir, formanı təyin etmir."
+    },
+    "passport_id": "03-HEY-3-01",
+    "explanation": "Bədənin forması skeletdən asılıdır. Skelet insanın bədənini dik saxlamaqdan başqa, daxili üzvləri xarici təsirlərdən qoruyur."
+  },
+  {
+    "question": "Sümüklərə hərəkət etmək imkanı yaradan, onları əhatə edən və yığılıb boşala bilən nədir?",
+    "options": {
+      "A": "Ağciyərlər",
+      "B": "Elastik əzələlər",
+      "C": "Qan damarları",
+      "D": "Ürək"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Ağciyərlər tənəffüs orqanıdır.",
+      "B": "Doğru cavabdır. Sümüklər bu işi onları əhatə edən və yığılıb boşala bilən elastik əzələlərlə birlikdə yerinə yetirir.",
+      "C": "Yanlışdır. Qan damarları qanın hərəkətini təmin edir.",
+      "D": "Yanlışdır. Ürək də bir əzələli orqandır, lakin sümükləri birbaşa hərəkət etdirmir."
+    },
+    "passport_id": "03-HEY-3-02",
+    "explanation": "Sümüklər bu işi onları əhatə edən və yığılıb boşala bilən elastik əzələlərlə birlikdə yerinə yetirir."
+  },
+  {
+    "question": "Diş xəstəlikləri və qara ləkə kimi görünən kariyes nədən əmələ gəlir?",
+    "options": {
+      "A": "Dişləri tez-tez fırçalamaqdan",
+      "B": "Sağlam qidalanmaqdan",
+      "C": "Dişlərə düzgün qulluq etmədikdə və şəkərli qidalardan çox istifadə etdikdə",
+      "D": "Sümüklərin böyüməsindən"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Dişləri fırçalamaq kariyesin qarşısını alır.",
+      "B": "Yanlışdır. Sağlam qidalanmaq xəstəlikləri azaldır.",
+      "C": "Doğru cavabdır. Onlara düzgün qulluq etmədikdə diş xəstəlikləri və dişlərdə qara ləkə kimi görünən kariyes əmələ gəlir. Şəkərli qidalar diş çürüməsinə səbəb ola bilər.",
+      "D": "Yanlışdır. Sümüklərin böyüməsinin kariyesə aidiyyəti yoxdur."
+    },
+    "passport_id": "03-HEY-3-03",
+    "explanation": "Onlara düzgün qulluq etmədikdə diş xəstəlikləri və dişlərdə qara ləkə kimi görünən kariyes əmələ gəlir. Kökəlməklə bərabər, şəkərli qidalar diş çürüməsinə səbəb ola bilər."
+  },
+  {
+    "question": "Sağlam olmaq üçün uşaqların hər gün neçə saat yatması əhəmiyyətlidir?",
+    "options": {
+      "A": "5 və ya 6 saat",
+      "B": "2 və ya 3 saat",
+      "C": "15 və ya 16 saat",
+      "D": "10 və ya 11 saat"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Bu uşaqlar üçün azdır.",
+      "B": "Yanlışdır. Bu qədər yuxu zərərlidir.",
+      "C": "Yanlışdır. Bu qədər yuxu çoxdur.",
+      "D": "Doğru cavabdır. Alimlər uşaqların hər gün 10 və ya 11 saat yatmasının əhəmiyyətini vurğulayırlar."
+    },
+    "passport_id": "03-HEY-3-04",
+    "explanation": "Alimlər yuxunun sağlam qidalanmaq qədər vacib olduğunu və uşaqların hər gün 10 və ya 11 saat yatmasının əhəmiyyətini vurğulayırlar."
+  },
+  {
+    "question": "İnsan sağlamlığı üçün təhlükəli olan və dişlərin çürüməsinə, həmçinin kökəlməyə səbəb ola bilən qidalar hansılardır?",
+    "options": {
+      "A": "Yağlar və şirniyyatlar",
+      "B": "Süd və qatıq",
+      "C": "Tərəvəzlər və meyvələr",
+      "D": "Çörək və taxıl"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Kökəlməklə bərabər, şəkərli qidalar diş çürüməsinə səbəb ola bilər.",
+      "B": "Yanlışdır. Bunlar sümük və dişlər üçün xeyirlidir.",
+      "C": "Yanlışdır. Meyvə-tərəvəz sağlamlığa kömək edir.",
+      "D": "Yanlışdır. Çörək və taxıl enerji verir."
+    },
+    "passport_id": "03-HEY-3-05",
+    "explanation": "Yağlar və şirniyyatlar. Bu qidalardan çox az yeyin. Kökəlməklə bərabər, şəkərli qidalar diş çürüməsinə səbəb ola bilər."
+  },
+  {
+    "question": "Sümüklərin və dişlərin inkişafı üçün vacib olan, tərkibində çoxlu qida maddələri olan məhsullar hansılardır?",
+    "options": {
+      "A": "Yalnız şirniyyatlar",
+      "B": "Süd, qatıq və pendir",
+      "C": "Yalnız makaron",
+      "D": "Plastik qabdakı sular"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Şirniyyat zərərlidir.",
+      "B": "Doğru cavabdır. Onların tərkibində çoxlu müxtəlif qida maddələri var ki, sümüklərin və dişlərin inkişafı üçün vacibdir.",
+      "C": "Yanlışdır. Makaron əsasən enerji verir.",
+      "D": "Yanlışdır. Plastik qabdakı su əsas qida deyil."
+    },
+    "passport_id": "03-HEY-3-06",
+    "explanation": "Süd, qatıq və pendir. Onların tərkibində çoxlu müxtəlif qida maddələri var ki, sümüklərin və dişlərin inkişafı üçün vacibdir."
+  },
+  {
+    "question": "Qida məhsulunu alarkən, ilk növbədə onun qabı üzərində yazılan hansı məlumata baxmaq vacibdir?",
+    "options": {
+      "A": "Məhsulun rənginə",
+      "B": "Şəklinin gözəlliyinə",
+      "C": "Son istifadə tarixinə və saxlanma şərtlərinə",
+      "D": "Reklamlarına"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Rəng əsas məlumat deyil.",
+      "B": "Yanlışdır. Şəkil aldadıcı ola bilər.",
+      "C": "Doğru cavabdır. Məhsulu alarkən onun son istifadə tarixinə baxmaq vacibdir. Qabın üstündə məhsulun saxlanma şərtləri də göstərilir.",
+      "D": "Yanlışdır. Reklamlar sağlamlığı təmin etmir."
+    },
+    "passport_id": "03-HEY-3-07",
+    "explanation": "Məhsulu alarkən onun son istifadə tarixinə baxmaq vacibdir. Bu məlumat məhsulun qabı üzərində yazılır. Qabın üstündə məhsulun saxlanma şərtləri də göstərilir."
+  },
+  {
+    "question": "Vaxtı keçmiş, yararlılığını itirmiş məhsullardan istifadə etdikdə hansı hallar baş verə bilər?",
+    "options": {
+      "A": "Həyati proseslər sürətlənər",
+      "B": "Dişlər ağarar",
+      "C": "Əzələlər güclənər",
+      "D": "Qida zəhərlənməsi və müxtəlif xəstəliklər"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Yararsız qida zərər verir.",
+      "B": "Yanlışdır. Bunun dişlərlə əlaqəsi yoxdur.",
+      "C": "Yanlışdır. Vaxtı keçmiş qida gücləndirmir, xəstələndirir.",
+      "D": "Doğru cavabdır. Vaxtı keçmiş, yararlılığını itirmiş məhsullar qida zəhərlənməsinə və müxtəlif xəstəliklərə səbəb ola bilər."
+    },
+    "passport_id": "03-HEY-3-08",
+    "explanation": "Vaxtı keçmiş, yararlılığını itirmiş məhsullar qida zəhərlənməsinə və müxtəlif xəstəliklərə səbəb ola bilər."
+  },
+  {
+    "question": "Günəşin və isti havanın təsiri altında qaldıqda hansı məhsulun tərkibi dəyişir və sağlamlıq üçün zərərli olur?",
+    "options": {
+      "A": "Plastik qabdakı suyun",
+      "B": "Meyvə və tərəvəzlərin",
+      "C": "Düyü və makaronun",
+      "D": "Şirniyyatların"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Günəşin və isti havanın təsiri ilə plastik qabdakı suyun tərkibi dəyişir.",
+      "B": "Yanlışdır. Meyvələr də xarab ola bilər, lakin dərslikdə plastik qabdakı sudan bəhs edilir.",
+      "C": "Yanlışdır. Quru qidalar günəşdən çox təsirlənmir.",
+      "D": "Yanlışdır. Dərslikdə plastik qabdakı su qeyd olunur."
+    },
+    "passport_id": "03-HEY-3-09",
+    "explanation": "Günəşin və isti havanın təsiri ilə plastik qabdakı suyun tərkibi dəyişir. Belə su sağlamlıq üçün zərərlidir."
+  },
+  {
+    "question": "Qida zəhərlənməsi zamanı ürəkbulanma, qusma, qarında ağrı kimi hallar müşahidə olunarsa nə etmək lazımdır?",
+    "options": {
+      "A": "Evdə yatıb dincəlmək",
+      "B": "Dərhal həkimə müraciət etmək",
+      "C": "Bol şirniyyat yemək",
+      "D": "İdmanla məşğul olmaq"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Zəhərlənmə tibbi müdaxilə tələb edə bilər.",
+      "B": "Doğru cavabdır. Belə hallar baş verərsə, dərhal həkimə müraciət etmək lazımdır.",
+      "C": "Yanlışdır. Şirniyyat vəziyyəti pisləşdirə bilər.",
+      "D": "Yanlışdır. Zəhərlənmiş adam idmanla məşğul olmamalıdır."
+    },
+    "passport_id": "03-HEY-3-10",
+    "explanation": "Belə hallar baş verərsə, dərhal həkimə müraciət etmək lazımdır."
+  },
+  {
+    "question": "Xəstəliyin əlamətləri hansılar ola bilər?",
+    "options": {
+      "A": "Çox yatmaq və sağlam qidalanmaq",
+      "B": "Dişləri gündə iki dəfə fırçalamaq",
+      "C": "Öskürmə, asqırma, yüksək bədən temperaturu, dəridə qızartı və qaşınma",
+      "D": "Asudə vaxtda kitab oxumaq"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Sağlam qidalanmaq xəstəlik əlaməti deyil.",
+      "B": "Yanlışdır. Dişləri fırçalamaq gigiyena qaydasıdır.",
+      "C": "Doğru cavabdır. Xəstəliklər öskürmə, asqırma, yüksək bədən temperaturu, dəridə qızartı və qaşınma kimi əlamətlərlə özünü göstərir.",
+      "D": "Yanlışdır. Kitab oxumaq sağlamlığa aid deyil."
+    },
+    "passport_id": "03-HEY-3-11",
+    "explanation": "Xəstəliklər öskürmə, asqırma, yüksək bədən temperaturu, dəridə qızartı və qaşınma kimi əlamətlərlə özünü göstərir."
+  },
+  {
+    "question": "Bədənin enerjisini ən çox təmin edən qidalar piramidada hansılardır?",
+    "options": {
+      "A": "Meyvə və tərəvəzlər",
+      "B": "Ət, toyuq və balıq",
+      "C": "Süd, qatıq və pendir",
+      "D": "Çörək, taxıl, düyü və makaron"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Meyvə və tərəvəzlər daha çox sağlamlığa kömək edir.",
+      "B": "Yanlışdır. Bu qidalar əsasən bədənin inkişafına kömək edir.",
+      "C": "Yanlışdır. Onlar sümük və dişlər üçün faydalıdır.",
+      "D": "Doğru cavabdır. Ən çox bu qidalar bədəninizi enerji ilə təmin edir."
+    },
+    "passport_id": "03-HEY-3-12",
+    "explanation": "Çörək, taxıl, düyü və makaron. Ən çox bu qidalar bədəninizi enerji ilə təmin edir."
+  },
+  {
+    "question": "Sağlamlıq üçün dişlərimizi gündə ən azı neçə dəfə fırçalamalıyıq?",
+    "options": {
+      "A": "İki dəfə − səhər və axşam",
+      "B": "Hər yeməkdən sonra",
+      "C": "Yalnız axşamlar",
+      "D": "Həftədə bir dəfə"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Gündə ən azı iki dəfə − səhər və axşam dişlərinizi fırçalayın.",
+      "B": "Yanlışdır. Kitabda minimum iki dəfə tövsiyə olunur.",
+      "C": "Yanlışdır. Yalnız axşam kifayət etmir.",
+      "D": "Yanlışdır. Həftədə bir dəfə dişlərə zərər verər."
+    },
+    "passport_id": "03-HEY-3-13",
+    "explanation": "Gündə ən azı iki dəfə − səhər və axşam dişlərinizi fırçalayın."
+  },
+  {
+    "question": "Xəstələnməmək üçün riayət edilməli olan əsas qaydalar hansılardır?",
+    "options": {
+      "A": "Yalnız meyvə yemək və az yatmaq",
+      "B": "Düzgün qidalanmaq, təmizliyə diqqət yetirmək və xəstə insanlarla məsafə saxlamaq",
+      "C": "Qida piramidasına baxmadan hər şeyi yemək",
+      "D": "Kəskin qoxulu məhsullardan istifadə etmək"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Balanslı qidalanmaq və kifayət qədər yatmaq lazımdır.",
+      "B": "Doğru cavabdır. Xəstələnməmək üçün düzgün qidalanmalı, təmizliyimizə diqqət yetirməli və xəstə insanlarla məsafə saxlamalıyıq.",
+      "C": "Yanlışdır. Sağlamlıq üçün düzgün qidalanmaq vacibdir.",
+      "D": "Yanlışdır. Kəskin qoxulu məhsulların xəstəliyin qarşısını almaqla birbaşa əlaqəsi yoxdur."
+    },
+    "passport_id": "03-HEY-3-14",
+    "explanation": "Xəstələnməmək üçün düzgün qidalanmalı, təmizliyimizə diqqət yetirməli və xəstə insanlarla məsafə saxlamalıyıq."
+  },
+  {
+    "question": "Uşaqlarda və böyüklərdə normal olaraq müvafiq neçə diş olur?",
+    "options": {
+      "A": "Uşaqlarda 15, böyüklərdə 25",
+      "B": "Uşaqlarda 32, böyüklərdə 20",
+      "C": "Uşaqlarda 20 süd dişi, böyüklərdə 32 diş",
+      "D": "Hər ikisində eyni sayda diş"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Bu rəqəmlər səhvdir.",
+      "B": "Yanlışdır. Tam əksinə göstərilib.",
+      "C": "Doğru cavabdır. Uşaqlarda 20 süd dişi olur. Böyüklərdə 32 diş olur.",
+      "D": "Yanlışdır. Uşaqlarla böyüklərin diş sayı eyni deyil."
+    },
+    "passport_id": "03-HEY-3-15",
+    "explanation": "Uşaqlarda 20 süd dişi olur. Böyüklərdə 32 diş olur."
+  }
+]

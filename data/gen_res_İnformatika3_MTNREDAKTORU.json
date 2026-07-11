@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-01",
+    "question": "Kompüterdə adi kalkulyatorun bənzəri olan proqram hansıdır?",
+    "options": {
+      "A": "Paint proqramı",
+      "B": "WordPad proqramı",
+      "C": "Calculator proqramı",
+      "D": "Əməliyyat sistemi"
+    },
+    "correct_answer": "C",
+    "explanation": "Kompüterdə adi kalkulyatorun bənzəri — Calculator proqramı var.",
+    "distractor_diagnostics": {
+      "A": "Qrafik redaktordur.",
+      "B": "Mətn redaktorudur.",
+      "D": "Kompüteri idarə edən sistemdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-02",
+    "question": "Calculator proqramını başlatmaq üçün hansı əməliyyatı yerinə yetirmək lazımdır?",
+    "options": {
+      "A": "İş masasında proqramın simgəsini bir dəfə çıqqıldatmaq",
+      "B": "İş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat çıqqıldatmaq",
+      "C": "Klaviaturada <Enter> klavişini basmaq",
+      "D": "Simgənin üzərində siçanın sağ düyməsini çıqqıldatmaq"
+    },
+    "correct_answer": "B",
+    "explanation": "Calculator proqramını başlatmaq üçün siçanın göstəricisini iş masasında proqramın simgəsinin üzərinə aparıb sol düyməni ikiqat çıqqıldatmaq lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Bir dəfə çıqqıldatmaqla proqram açılmır.",
+      "C": "Simgə seçilmədən Enter klavişi işləməz.",
+      "D": "Sağ düymə menyu açır, proqramı başlatmır."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-03",
+    "question": "Calculator proqramında hesablamanın başa çatdığını və nəticəni görmək üçün hansı düymə basılır?",
+    "options": {
+      "A": "= düyməsi",
+      "B": "+ düyməsi",
+      "C": "* düyməsi",
+      "D": "Ekranı təmizləmək düyməsi"
+    },
+    "correct_answer": "A",
+    "explanation": "Nəticəyə baxmaq üçün = düyməsini çıqqıldadın. = düyməsi basıldıqdan sonra hesablama başa çatır.",
+    "distractor_diagnostics": {
+      "B": "Toplama əməliyyatını daxil edir.",
+      "C": "Vurma əməliyyatını daxil edir.",
+      "D": "Hesablamanı silib təmizləyir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-04",
+    "question": "Calculator proqramında yeni hesablama aparmaq istədikdə ilk növbədə nə etmək lazımdır?",
+    "options": {
+      "A": "Kompüteri yenidən başlatmaq lazımdır",
+      "B": "Proqramı bağlayıb yenidən açmaq lazımdır",
+      "C": "Yaddaşı təmizləmək lazımdır",
+      "D": "Ekranı təmizləmək lazımdır"
+    },
+    "correct_answer": "D",
+    "explanation": "Əgər siz yeni hesablama aparmaq istəyirsinizsə, ekranı təmizləmək lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Çox vaxt aparan gərəksiz prosesdir.",
+      "B": "Buna ehtiyac yoxdur, yalnız ekranı təmizləmək kifayətdir.",
+      "C": "Aralıq nəticələr yaddaşda qala bilər, əsas məsələ ekranı təmizləməkdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-05",
+    "question": "İfadələrin qiymətini hesablayarkən aralıq nəticələri yadda saxlamaq üçün kalkulyatorda nədən istifadə olunur?",
+    "options": {
+      "A": "Çap düyməsindən",
+      "B": "Axtarış düyməsindən",
+      "C": "Yaddaşla işləyən düymələrdən",
+      "D": "Seçdirmə alətindən"
+    },
+    "correct_answer": "C",
+    "explanation": "Aralıq nəticələri yadda saxlamaq lazım gəlir. Bunun üçün kalkulyatorda yaddaşla işləyən düymələr var.",
+    "distractor_diagnostics": {
+      "A": "Nəticəni çapa verir, yaddaşda saxlamır.",
+      "B": "Calculator-da bu məqsədlə axtarış düyməsi yoxdur.",
+      "D": "Qrafik redaktorda istifadə olunur."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-06",
+    "question": "Yaddaşa yazma düyməsini (MS) basdıqda nə baş verir?",
+    "options": {
+      "A": "Yaddaşdakı ədəd silinir",
+      "B": "Ekranda olan ədəd kompüterin yaddaşına yazılır",
+      "C": "Yaddaşda olan ədəd ekrana çıxarılır",
+      "D": "Ekran təmizlənir"
+    },
+    "correct_answer": "B",
+    "explanation": "Bu düyməni basdıqda ekranda olan ədəd kompüterin yaddaşına yazılır.",
+    "distractor_diagnostics": {
+      "A": "Bu, MC (Memory Clear) düyməsinin funksiyasıdır.",
+      "C": "Bu, MR (Memory Recall) düyməsinin funksiyasıdır.",
+      "D": "Bu, C və ya CE düyməsinin funksiyasıdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-07",
+    "question": "Yaddaşdan oxuma düyməsini (MR) basdıqda nə baş verir?",
+    "options": {
+      "A": "Kompüterin yaddaşında olan ədəd ekrana çıxarılır",
+      "B": "Ekranda olan ədəd yaddaşa yazılır",
+      "C": "Hesablama dayanır",
+      "D": "Yeni hesablama başlayır"
+    },
+    "correct_answer": "A",
+    "explanation": "Bu düyməni basdıqda kompüterin yaddaşında olan ədəd ekrana çıxarılır.",
+    "distractor_diagnostics": {
+      "B": "Bu, MS düyməsinin funksiyasıdır.",
+      "C": "Bu düymə hesablamanı dayandırmır.",
+      "D": "Bunun üçün ekranı təmizləmək lazımdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-08",
+    "question": "Kalkulyatorda işləyəndə aralıq nəticələri yazmaq üçün kağıza ehtiyac qalmamaq üçün nədən istifadə etmək lazımdır?",
+    "options": {
+      "A": "Qrafik redaktordan",
+      "B": "Mətn redaktorundan",
+      "C": "Yaddaş düymələrindən",
+      "D": "Kvantor sözlərdən"
+    },
+    "correct_answer": "C",
+    "explanation": "Bu düymələrdən istifadə etsəniz kalkulyatorda işləyəndə sizə aralıq nəticələri yazmaq üçün kağız lazım olmayacaq.",
+    "distractor_diagnostics": {
+      "A": "Şəkillər üçündür, hesablama üçün deyil.",
+      "B": "Mətnlər üçündür, Calculator daxilindəki əməliyyat deyil.",
+      "D": "Kvantor sözlər məntiqi anlayışlardır."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-09",
+    "question": "İlk cib kalkulyatoru neçənci ildə yaradılıb?",
+    "options": {
+      "A": "1990-cı ildə",
+      "B": "1985-ci ildə",
+      "C": "1965-ci ildə",
+      "D": "1971-ci ildə"
+    },
+    "correct_answer": "D",
+    "explanation": "İlk cib kalkulyatoru 1971-ci ildə Yaponiyada yaradılıb.",
+    "distractor_diagnostics": {
+      "A": "Mətndə qeyd olunan tarixdən çox sonradır.",
+      "B": "Mətndə qeyd olunan tarixdən sonradır.",
+      "C": "Mətndə qeyd olunan tarixdən əvvəldir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-10",
+    "question": "İlk cib kalkulyatoru hansı ölkədə yaradılıb?",
+    "options": {
+      "A": "Amerikada",
+      "B": "Yaponiyada",
+      "C": "Çində",
+      "D": "Almaniyada"
+    },
+    "correct_answer": "B",
+    "explanation": "İlk cib kalkulyatoru 1971-ci ildə Yaponiyada yaradılıb.",
+    "distractor_diagnostics": {
+      "A": "Mətndə Yaponiya olaraq qeyd edilib.",
+      "C": "Mətndə Yaponiya olaraq qeyd edilib.",
+      "D": "Mətndə Yaponiya olaraq qeyd edilib."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-11",
+    "question": "İlk cib kalkulyatorunun ölçüləri necə idi?",
+    "options": {
+      "A": "Uzunluğu 10 sm, eni 5 sm, qalınlığı 2 sm",
+      "B": "Uzunluğu 15 sm, eni 10 sm, qalınlığı 5 sm",
+      "C": "Uzunluğu 13 sm, eni 8 sm, qalınlığı 4 sm",
+      "D": "Uzunluğu 20 sm, eni 12 sm, qalınlığı 6 sm"
+    },
+    "correct_answer": "C",
+    "explanation": "Uzunluğu 13 sm, eni 8 sm və qalınlığı 4 sm olan bu kalkulyator yalnız dörd hesab əməlini yerinə yetirirdi.",
+    "distractor_diagnostics": {
+      "A": "Səhv ölçülərdir.",
+      "B": "Səhv ölçülərdir.",
+      "D": "Səhv ölçülərdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-12",
+    "question": "İlk cib kalkulyatoru neçə hesab əməlini yerinə yetirirdi?",
+    "options": {
+      "A": "Yalnız dörd hesab əməlini",
+      "B": "Bütün riyazi əməlləri",
+      "C": "Yalnız toplama və çıxmanı",
+      "D": "Yalnız vurma və bölməni"
+    },
+    "correct_answer": "A",
+    "explanation": "Bu kalkulyator yalnız dörd hesab əməlini yerinə yetirirdi.",
+    "distractor_diagnostics": {
+      "B": "Bütün əməlləri yox, yalnız dördünü edirdi.",
+      "C": "Dörd əməl daxilində hamısı var idi, yalnız iki deyildi.",
+      "D": "Yalnız iki deyil, dörd əməl idi."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-13",
+    "question": "Calculator proqramında ədədləri daxil edərkən hər hansı yanlışlığa yol verildikdə nə etmək mümkündür?",
+    "options": {
+      "A": "Proqramı yenidən yükləmək lazımdır",
+      "B": "Kompüteri söndürmək lazımdır",
+      "C": "Düzəltmək mümkün deyil",
+      "D": "Asanca düzəltmək olar"
+    },
+    "correct_answer": "D",
+    "explanation": "Ədədləri daxil edərkən hər hansı yanlışlığı asanca düzəltmək olar (sonuncu rəqəmi silmək və s.).",
+    "distractor_diagnostics": {
+      "A": "Çox vaxt itkisidir, gərəksizdir.",
+      "B": "Yanlış rəqəm yazıldıqda belə edilmir.",
+      "C": "Silmək və düzəltmək funksiyası var."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-14",
+    "question": "Yaddaşla işləyən düymələrin əsas məqsədi nədir?",
+    "options": {
+      "A": "Rəng çalarlarını dəyişmək",
+      "B": "Aralıq nəticələri yadda saxlamaq",
+      "C": "Mətnin şriftini dəyişmək",
+      "D": "Şəkli yaddaşda saxlamaq"
+    },
+    "correct_answer": "B",
+    "explanation": "Lakin elə ifadələr var ki, onların qiymətini hesablayarkən aralıq nəticələri yadda saxlamaq lazım gəlir. Bunun üçün kalkulyatorda yaddaşla işləyən düymələr var.",
+    "distractor_diagnostics": {
+      "A": "Paint proqramına aiddir.",
+      "C": "WordPad proqramına aiddir.",
+      "D": "Paint proqramına aiddir."
+    }
+  },
+  {
+    "passport_id": "03-INF-MTNREDAKTORU-15",
+    "question": "İnsanlar kalkulyatordan ən çox hansı halda istifadə etməli olurlar?",
+    "options": {
+      "A": "Mürəkkəb hesablamalar zamanı",
+      "B": "Rəsm çəkərkən",
+      "C": "Mətn redaktə edərkən",
+      "D": "Musiqi dinləyərkən"
+    },
+    "correct_answer": "A",
+    "explanation": "Mürəkkəb hesablamalar zamanı isə kalkulyatordan istifadə etməli olursunuz.",
+    "distractor_diagnostics": {
+      "B": "Bu zaman qrafik redaktor istifadə edilir.",
+      "C": "Bu zaman mətn redaktoru istifadə edilir.",
+      "D": "Musiqi dinləmək üçün media player istifadə olunur."
+    }
+  }
+]

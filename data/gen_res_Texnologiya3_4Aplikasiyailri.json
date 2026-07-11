@@ -1,0 +1,257 @@
+[
+  {
+    "question": "Əgər hər hansı bir həşəratın təsvirini təsəvvürümüzdə yandan qatlasaq və onun iki hissəsi üst-üstə düşərsə, bu qat xətti necə adlanır?",
+    "options": {
+      "A": "Diaqonal",
+      "B": "Simmetriya oxu",
+      "C": "Diametr",
+      "D": "Radius"
+    },
+    "answer": "B",
+    "explanation": "Əgər bu təsviri təsəvvürümüzdə yandan qatlasaq, onda onun iki hissəsi üst-üstə düşəcək. Bu qat xətti təsvirin simmetriya oxu adlanır.",
+    "distractor_diagnostics": {
+      "A": "Mətndə diaqonal barədə məlumat yoxdur, doğru cavab simmetriya oxudur.",
+      "C": "Diametr çevrəyə aid anlayışdır, təsvirin qat xəttinə simmetriya oxu deyilir.",
+      "D": "Radius çevrə mərkəzini kənarla birləşdirən xətdir, qat xətti deyil."
+    },
+    "passport_id": "03-TEX-001"
+  },
+  {
+    "question": "Qar dənəcikləri hansı formalara və quruluşa malikdir?",
+    "options": {
+      "A": "Qalın su damcılarından ibarətdir və dördbucaqlıdır.",
+      "B": "Bərk buz parçalarından ibarətdir və beşbucaqlıdır.",
+      "C": "Nazik buz iynəciklərdən ibarətdir və altıbucaqlıdır.",
+      "D": "Yumşaq qar dənələrindən ibarətdir və səkkizbucaqlıdır."
+    },
+    "answer": "C",
+    "explanation": "Qeyd etmək lazımdır ki, qar dənəcikləri nazik buz iynəciklərdən ibarətdir və altıbucaqlıdır.",
+    "distractor_diagnostics": {
+      "A": "Qar dənəcikləri su damcılarından ibarət deyil və dördbucaqlı deyillər.",
+      "B": "Qar dənəcikləri beşbucaqlı deyil, altıbucaqlıdır.",
+      "D": "Qar dənəcikləri səkkizbucaqlı deyil, mətndə altıbucaqlı olduğu bildirilib."
+    },
+    "passport_id": "03-TEX-002"
+  },
+  {
+    "question": "Mətnə görə, qar dənəciyi kəsmək üçün hansı kağızdan istifadə etmək məsləhət görülür?",
+    "options": {
+      "A": "Qalın karton, qəzet kağızı",
+      "B": "Rəngli karton, ofis kağızı",
+      "C": "Xüsusi şəffaf fayllar, dəftər vərəqi",
+      "D": "Kalka, kağız salfet, folqa"
+    },
+    "answer": "D",
+    "explanation": "Qar dənəciyini kəsmək üçün nazik kağız götürün. Bu, kalka, kağız salfet, folqa ola bilər.",
+    "distractor_diagnostics": {
+      "A": "Qar dənəciyi üçün qalın kağız yox, nazik kağız (kalka, salfet) götürülür.",
+      "B": "Karton qalındır və ondan zərif qar dənəciyi kəsmək olmur.",
+      "C": "Mətndə fayl və ya dəftər vərəqi yox, kalka və salfet göstərilmişdir."
+    },
+    "passport_id": "03-TEX-003"
+  },
+  {
+    "question": "Nə üçün qar dənəciyi kəsdiyimiz kağız mütləq nazik olmalıdır?",
+    "options": {
+      "A": "Qar dənəciyi nə qədər zərif naxışlı olsa, o qədər incə görünər.",
+      "B": "Qalın kağızı qayçı ilə kəsmək mümkün deyil.",
+      "C": "Nazik kağız yapışqanla daha tez yapışır.",
+      "D": "Nazik kağız əlimizi kəsmək təhlükəsi yaratmır."
+    },
+    "answer": "A",
+    "explanation": "Qar dənəciyi nə qədər zərif naxışlı olsa, o qədər incə görünər. Ona görə də qar dənəciyi kəsdiyimiz kağız nazik olmalıdır.",
+    "distractor_diagnostics": {
+      "B": "Mətndə səbəb kimi qayçının kəsə bilməməsi yox, zərif naxışların incə görünməsi qeyd edilib.",
+      "C": "Mətndə yapışqan məsələsinə toxunulmayıb.",
+      "D": "Əli kəsmək təhlükəsi mətndə verilməyib."
+    },
+    "passport_id": "03-TEX-004"
+  },
+  {
+    "question": "Altıbucaqlı qar dənəciyini kəsmək üçün nişanlama hansı tərəfdən edilir?",
+    "options": {
+      "A": "Sol tərəfdən",
+      "B": "Sağ tərəfdən",
+      "C": "Yuxarıdan",
+      "D": "Aşağıdan"
+    },
+    "answer": "A",
+    "explanation": "Altıbucaqlı qar dənəciyini kəsmək üçün nişanlama ardıcıllığı belə yerinə yetirilir: Nişanlamanı sol tərəfdən edirik.",
+    "distractor_diagnostics": {
+      "B": "Mətnə görə şəkil sağ tərəfdən çəkilsə, qar dənəciyi alınmaz, nişanlama sol tərəfdən olmalıdır.",
+      "C": "Nişanlamanın yuxarıdan edildiyi yazılmayıb.",
+      "D": "Nişanlamanın aşağıdan edildiyi yazılmayıb."
+    },
+    "passport_id": "03-TEX-005"
+  },
+  {
+    "question": "Məzəli köpək aplikasiyasındakı \"Pekines\" cinsi hansı şəhərin adından götürülmüşdür?",
+    "options": {
+      "A": "Tokio",
+      "B": "Pekin",
+      "C": "Seul",
+      "D": "Şanxay"
+    },
+    "answer": "B",
+    "explanation": "Bu balaca, qısaayaqlı köpəyin adı Pekinesdir. Cinsin adı Pekin şəhərindən gəlir.",
+    "distractor_diagnostics": {
+      "A": "Mətndə Tokio şəhəri yox, Pekin qeyd edilib.",
+      "C": "Mətndə Seul şəhəri qeyd edilməyib.",
+      "D": "Cinsin adı Şanxaydan yox, Pekin şəhərinin adından gəlir."
+    },
+    "passport_id": "03-TEX-006"
+  },
+  {
+    "question": "Çinlilər pekinesləri necə adlandırırlar?",
+    "options": {
+      "A": "Məzəli itlər",
+      "B": "Şahzadə itləri",
+      "C": "Fu itləri",
+      "D": "Saray itləri"
+    },
+    "answer": "C",
+    "explanation": "Çinlilər pekinesləri Fu itləri adlandırırlar.",
+    "distractor_diagnostics": {
+      "A": "Mətndə \"Məzəli itlər\" olaraq adlandırıldıqları yazılmayıb.",
+      "B": "Onlar imperator ailəsinə məxsus olub, lakin \"Şahzadə itləri\" adlandırılmayıblar.",
+      "D": "Onlar sarayda saxlanılırdı, amma \"Fu itləri\" adlanırdılar."
+    },
+    "passport_id": "03-TEX-007"
+  },
+  {
+    "question": "Pekineslər Çində kimin ailəsinə mənsub idi və harada saxlanılırdı?",
+    "options": {
+      "A": "Kəndlilərin ailəsinə mənsub idi, tarlalarda saxlanılırdı.",
+      "B": "Çin imperatorunun ailəsinə mənsub idi, sarayda saxlanılırdı.",
+      "C": "Tacirlərin ailəsinə mənsub idi, bazarda saxlanılırdı.",
+      "D": "Sərkərdələrin ailəsinə mənsub idi, hərbi düşərgədə saxlanılırdı."
+    },
+    "answer": "B",
+    "explanation": "Pekineslər Çin imperatorunun ailəsinə mənsub idi, sarayda saxlanılırdı.",
+    "distractor_diagnostics": {
+      "A": "Pekineslər kəndlilərə deyil, imperator ailəsinə mənsub idi.",
+      "C": "Onlar tacirlərə məxsus olmayıb, sarayda yaşayırdılar.",
+      "D": "Mətndə hərbi düşərgədə saxlanıldıqları qeyd edilməmişdir."
+    },
+    "passport_id": "03-TEX-008"
+  },
+  {
+    "question": "Rəngli kağızlardan məzəli köpək aplikasiyası düzəldərkən müxtəlifdiametrli dairələri kəsmək üçün hansı alətdən istifadə olunur?",
+    "options": {
+      "A": "Xətkeş",
+      "B": "Göyə",
+      "C": "Pərgar",
+      "D": "Flomaster"
+    },
+    "answer": "C",
+    "explanation": "3 rəngdə kağız götürün və pərgarın köməyi ilə müxtəlifdiametrli dairələr kəsin.",
+    "distractor_diagnostics": {
+      "A": "Xətkeş dairə çəkmək üçün deyil, düz xətt çəkmək və ölçmək üçündür.",
+      "B": "Göyə sözü mətndə yoxdur.",
+      "D": "Flomaster xətt çəkmək və ya boyamaq üçündür, dairələrin əsasını kəsmək üçün pərgardan istifadə olunur."
+    },
+    "passport_id": "03-TEX-009"
+  },
+  {
+    "question": "Mətndə diametr necə izah edilir?",
+    "options": {
+      "A": "Çevrənin xaricindən keçən və kəsişməyən xətdir.",
+      "B": "Çevrənin mərkəzindən keçib, onun iki nöqtəsini birləşdirən düz xətdir.",
+      "C": "Çevrənin mərkəzini onun kənarı ilə birləşdirən xətdir.",
+      "D": "Dairənin sahəsini yarıya bölən əyri xətdir."
+    },
+    "answer": "B",
+    "explanation": "Diametr - çevrənin mərkəzindən keçib, onun iki nöqtəsini birləşdirən düz xətdir.",
+    "distractor_diagnostics": {
+      "A": "Diametr çevrənin daxilindən, mərkəzdən keçməlidir.",
+      "C": "Mərkəzi kənara birləşdirən xətt radius adlanır, mətndə diametr izah olunub.",
+      "D": "Diametr əyri xətt yox, düz xətdir."
+    },
+    "passport_id": "03-TEX-010"
+  },
+  {
+    "question": "Köpək aplikasiyasında baş və qulaqlar üçün hansı fiqurlar nəzərdə tutulub?",
+    "options": {
+      "A": "Böyük dairənin yarısı",
+      "B": "Kvadratlar",
+      "C": "Kiçik dairələr",
+      "D": "Düzbucaqlılar"
+    },
+    "answer": "C",
+    "explanation": "Böyük dairənin yarısı gövdə, kiçik dairələr baş, qulaqlar və qısa tüklər üçündür.",
+    "distractor_diagnostics": {
+      "A": "Böyük dairənin yarısı gövdə üçün istifadə olunur.",
+      "B": "Mətndə aplikasiyada kvadratlardan istifadə edildiyi yazılmayıb.",
+      "D": "Aplikasiyada dairə və yarımdairələrdən istifadə olunur, düzbucaqlılardan yox."
+    },
+    "passport_id": "03-TEX-011"
+  },
+  {
+    "question": "Məzəli köpək aplikasiyasında gövdə üçün hansı hissədən istifadə edilir?",
+    "options": {
+      "A": "Kiçik dairənin yarısından",
+      "B": "Böyük dairənin tam özündən",
+      "C": "Kiçik dairənin dörddə bir hissəsindən",
+      "D": "Böyük dairənin yarısından"
+    },
+    "answer": "D",
+    "explanation": "Böyük dairənin yarısı gövdə, kiçik dairələr baş, qulaqlar və qısa tüklər üçündür.",
+    "distractor_diagnostics": {
+      "A": "Kiçik dairələr gövdə üçün deyil.",
+      "B": "Böyük dairə yarıya bölünərək istifadə olunur.",
+      "C": "Dörddə bir hissə yox, yarısı istifadə edilir."
+    },
+    "passport_id": "03-TEX-012"
+  },
+  {
+    "question": "Köpəyin sifəti necə formalaşdırılır?",
+    "options": {
+      "A": "Yalnız rəngli kağızları yapışdıraraq",
+      "B": "Qara, qəhvəyi və ağ flomasterlə",
+      "C": "Pambıqla",
+      "D": "Karandaşla sadə cizgilər çəkərək"
+    },
+    "answer": "B",
+    "explanation": "Qara, qəhvəyi və ağ flomasterlə köpəyin sifətini formalaşdırın.",
+    "distractor_diagnostics": {
+      "A": "Sifəti formalaşdırmaq üçün kağızdan yox, flomasterlərdən istifadə edilir.",
+      "C": "Mətndə pambıqdan istifadə barədə məlumat yoxdur.",
+      "D": "Sifət xüsusi olaraq qara, qəhvəyi və ağ flomasterlə formalaşdırılır."
+    },
+    "passport_id": "03-TEX-013"
+  },
+  {
+    "question": "Uzun tüklərin üzərinə nə yapışdırmaq olar?",
+    "options": {
+      "A": "Nisbətən qısa tüklər",
+      "B": "Plastilin",
+      "C": "Folqa parçaları",
+      "D": "Böyük dairələr"
+    },
+    "answer": "A",
+    "explanation": "Uzun tüklərin üzərinə nisbətən qısa tüklər yapışdırmaq olar.",
+    "distractor_diagnostics": {
+      "B": "Mətndə uzun tüklərin üzərinə plastilin yapışdırmaq qeyd olunmayıb.",
+      "C": "Folqa yalnız qar dənəciyi mətnində keçir.",
+      "D": "Tüklərin üzərinə böyük dairələr yox, qısa tüklər yapışdırılır."
+    },
+    "passport_id": "03-TEX-014"
+  },
+  {
+    "question": "Aplikasiyada qulaqlara və quyruğa hansı tüklər yapışdırılır?",
+    "options": {
+      "A": "Kiçik dairədən kəsilmiş tüklər",
+      "B": "Böyük dairə hissələrindən kəsilmiş tüklər",
+      "C": "Karton hissələrindən kəsilmiş tüklər",
+      "D": "Mavi kağızdan kəsilmiş tüklər"
+    },
+    "answer": "A",
+    "explanation": "Qulaqlara və quyruğa kiçik dairədən kəsilmiş tükləri, gövdəyə isə böyük dairə hissələrindən kəsilmiş tükləri yapışdırın.",
+    "distractor_diagnostics": {
+      "B": "Böyük dairədən kəsilmiş tüklər gövdəyə yapışdırılır, qulaq və quyruğa deyil.",
+      "C": "Karton arxa fon üçündür.",
+      "D": "Mavi kağız fon materialıdır, tüklər açıq və tünd-qəhvəyi, narıncı kağızdan kəsilir."
+    },
+    "passport_id": "03-TEX-015"
+  }
+]

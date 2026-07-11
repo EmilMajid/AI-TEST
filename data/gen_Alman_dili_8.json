@@ -1,0 +1,4556 @@
+[
+  {
+    "id": "08-GER-T01-B1-S-001",
+    "passport_id": "08-ALM-1000",
+    "question": "Wie sagt man 'Yeni' auf Deutsch?",
+    "options": [
+      "Neu",
+      "Alt",
+      "Groß",
+      "Klein"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B1-S-002",
+    "passport_id": "08-ALM-1001",
+    "question": "Wie sagt man 'Sinif' auf Deutsch?",
+    "options": [
+      "Die Schule",
+      "Der Lehrer",
+      "Die Klasse",
+      "Das Buch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B1-S-003",
+    "passport_id": "08-ALM-1002",
+    "question": "Ergänzen Sie das Verb: 'Sie ... neu in der Klasse.'",
+    "options": [
+      "bin",
+      "ist",
+      "sind",
+      "bist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B1-S-004",
+    "passport_id": "08-ALM-1003",
+    "question": "Welches Wort ist ein Schulfach?",
+    "options": [
+      "Der Tisch",
+      "Mathematik",
+      "Die Tasche",
+      "Das Auto"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B1-S-005",
+    "passport_id": "08-ALM-1004",
+    "question": "Was sagt der Lehrer, wenn er in die Klasse kommt?",
+    "options": [
+      "Guten Morgen",
+      "Gute Nacht",
+      "Tschüss",
+      "Auf Wiedersehen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sie ist neu in unserer\nKlasse.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B2-O-001",
+    "passport_id": "08-ALM-1005",
+    "question": "Welche Präposition passt hier: 'Die Schülerin ist neu ... der Klasse.'?",
+    "options": [
+      "unter",
+      "in",
+      "an",
+      "auf"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B2-O-002",
+    "passport_id": "08-ALM-1006",
+    "question": "Wie stellt man sich vor?",
+    "options": [
+      "Ich gehe Schule.",
+      "Ich bin Buch.",
+      "Ich heiße Anna.",
+      "Ich wohne Auto."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reisegruppe\nOrte\nAnreise und Abreise\nEssen\nAktivitäten\nÜbernachtung\nKosten\nErstellt ein Reiseprogramm.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B2-O-003",
+    "passport_id": "08-ALM-1007",
+    "question": "Was fragt man eine neue Schülerin?",
+    "options": [
+      "Woher kommst du?",
+      "Was kostet das?",
+      "Wie spät ist es?",
+      "Ist das dein Hund?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Er fragt, ob der Preis mit Frühstück\nist.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B2-O-004",
+    "passport_id": "08-ALM-1008",
+    "question": "Wählen Sie das richtige Personalpronomen: 'Das ist Max. ... kommt aus Berlin.'",
+    "options": [
+      "Ich",
+      "Er",
+      "Wir",
+      "Sie"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Wer die richtige Person\nfindet, bekommt einen Punkt.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B2-O-005",
+    "passport_id": "08-ALM-1009",
+    "question": "Übersetzen Sie: 'Mən Bakıda yaşayıram.'",
+    "options": [
+      "Ich komme aus Baku.",
+      "Ich wohne in Baku.",
+      "Ich bin in Baku.",
+      "Ich fahre nach Baku."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B4-C-001",
+    "passport_id": "08-ALM-1010",
+    "question": "Welcher Satz ist grammatisch richtig?",
+    "options": [
+      "Woher kommst du?",
+      "Du kommst woher?",
+      "Woher du kommst?",
+      "Kommst woher du?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B4-C-002",
+    "passport_id": "08-ALM-1011",
+    "question": "Warum ist das Wort 'Klasse' feminin (die)?",
+    "options": [
+      "Weil es eine Schule ist.",
+      "Wörter auf '-e' sind oft feminin.",
+      "Es gibt keine Regel.",
+      "Weil es ein Fremdwort ist."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Warum machen die Schüler\neine Klassenfahrt?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B3-C-001",
+    "passport_id": "08-ALM-1012",
+    "question": "Ergänzen Sie den Dialog: - Hallo, ich bin neu hier. - ...",
+    "options": [
+      "Ich gehe ins Kino.",
+      "Das ist ein Stift.",
+      "Herzlich willkommen in unserer Klasse!",
+      "Auf Wiedersehen!"
+    ],
+    "correctAnswer": 1,
+    "explanation": "B\nAls es letzten Sommer zu heiß\nwar, war ich nicht hier.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B3-C-002",
+    "passport_id": "08-ALM-1013",
+    "question": "Setzen Sie die Verben in die richtige Form ein: '(sein) du neu hier? Ja, ich (kommen) aus der Türkei.'",
+    "options": [
+      "Sind / kommt",
+      "Bist / komme",
+      "Ist / kommen",
+      "Bin / kommst"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ergänze die Verben.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T01-B3-C-003",
+    "passport_id": "08-ALM-1014",
+    "question": "Welches Wort passt nicht in die Reihe?",
+    "options": [
+      "Lehrer",
+      "Direktor",
+      "Schüler",
+      "Kugelschreiber"
+    ],
+    "correctAnswer": 3,
+    "explanation": "2bWelches Bild passt nicht zum Wetterbericht?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B1-S-001",
+    "passport_id": "08-ALM-1015",
+    "question": "Was bedeutet 'Weil'?",
+    "options": [
+      "Həmişə",
+      "Lakin",
+      "Çünki / Ona görə ki",
+      "Bəzən"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1cWas bedeutet das?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B1-S-002",
+    "passport_id": "08-ALM-1016",
+    "question": "Was bedeutet das Verb 'trainieren'?",
+    "options": [
+      "Məşq etmək",
+      "Oxumaq",
+      "Yemək",
+      "Yatmaq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1cWas bedeutet das?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B1-S-003",
+    "passport_id": "08-ALM-1017",
+    "question": "Welches Wort ist ein Gegenteil von 'viel'?",
+    "options": [
+      "schön",
+      "schnell",
+      "wenig",
+      "groß"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B1-S-004",
+    "passport_id": "08-ALM-1018",
+    "question": "Welches Fragewort benutzt man, wenn die Antwort mit 'Weil' beginnt?",
+    "options": [
+      "Wer?",
+      "Wann?",
+      "Warum?",
+      "Wo?"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Benutzt die passenden Adjektive bei den Antworten.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B1-S-005",
+    "passport_id": "08-ALM-1019",
+    "question": "Was macht ein Sportler?",
+    "options": [
+      "Er kocht.",
+      "Er schläft.",
+      "Er trainiert.",
+      "Er singt."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Denn ich habe viel Sport gemacht.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B2-O-001",
+    "passport_id": "08-ALM-1020",
+    "question": "Ergänzen Sie den Satz: 'Ich bin müde, ... ich viel trainiere.'",
+    "options": [
+      "und",
+      "aber",
+      "oder",
+      "weil"
+    ],
+    "correctAnswer": 3,
+    "explanation": "müde, traurig, kaputt,\nruhig, lustig, sportlich,\nfroh, glücklich, böse ...",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B2-O-002",
+    "passport_id": "08-ALM-1021",
+    "question": "Was passiert mit dem Verb im Nebensatz nach 'weil'?",
+    "options": [
+      "Es steht am Ende des Satzes.",
+      "Es steht am Anfang.",
+      "Es steht an Position 2.",
+      "Es fällt weg."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Er erzählt uns,\ndamals passiert ist.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B2-O-003",
+    "passport_id": "08-ALM-1022",
+    "question": "Welcher Satz ist richtig?",
+    "options": [
+      "Ich lerne Deutsch, weil nach Deutschland fahren ich will.",
+      "Ich lerne Deutsch, weil will ich nach Deutschland fahren.",
+      "Ich lerne Deutsch, weil ich nach Deutschland fahren will.",
+      "Ich lerne Deutsch, weil ich will nach Deutschland fahren."
+    ],
+    "correctAnswer": 0,
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B2-O-004",
+    "passport_id": "08-ALM-1023",
+    "question": "Warum trinkst du Wasser?",
+    "options": [
+      "Weil ich schlafe.",
+      "Weil ich Durst habe.",
+      "Weil ich laufe.",
+      "Weil ich Hunger habe."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Warum trinkst du viel Wasser?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B2-O-005",
+    "passport_id": "08-ALM-1024",
+    "question": "Übersetzen Sie: 'O, idman edir, çünki sağlam olmaq istəyir.'",
+    "options": [
+      "Er macht Sport, weil er krank ist.",
+      "Er macht Sport, weil er gesund bleiben will.",
+      "Er macht Sport und er ist gesund.",
+      "Er macht Sport, weil will er gesund bleiben."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B3-C-001",
+    "passport_id": "08-ALM-1025",
+    "question": "Verbinden Sie die Sätze mit 'weil': 'Ali spielt gut Fußball. Er trainiert jeden Tag.'",
+    "options": [
+      "Ali spielt gut Fußball, weil er jeden Tag trainiert.",
+      "Ali spielt gut Fußball, weil er trainiert jeden Tag.",
+      "Ali jeden Tag trainiert, weil er gut Fußball spielt.",
+      "Weil Ali spielt gut Fußball, er trainiert jeden Tag."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Er trainiert jeden tag.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B4-C-001",
+    "passport_id": "08-ALM-1026",
+    "question": "Was ist die Ursache im Satz: 'Ich bleibe zu Hause, weil es regnet.'?",
+    "options": [
+      "zu Hause",
+      "Ich bin müde",
+      "Ich bleibe zu Hause",
+      "weil es regnet"
+    ],
+    "correctAnswer": 3,
+    "explanation": "zuhause, frei,\naufgeregt, furchtlos,\nböse, traurig, lustig,\nsuper, gut, erfolgreich,\nschön, allein, unruhig,\n\nglücklich, furchtbar,\nstressig, wohl, krank,\nmunter, zufrieden\n4aWie sehen deine Mitschülerinnen /\nMitschüler aus?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B3-C-002",
+    "passport_id": "08-ALM-1027",
+    "question": "Bilden Sie einen Satz: (gehen / er / früh ins Bett / er / müde / weil / ist).",
+    "options": [
+      "Weil er müde ist, er geht früh ins Bett.",
+      "Er geht früh ins Bett, weil ist er müde.",
+      "Er geht früh ins Bett, weil er müde ist.",
+      "Er ist müde, weil er früh ins Bett geht."
+    ],
+    "correctAnswer": 0,
+    "explanation": "=== Bölmə: Giriş ===\nILHAMA MAMMADOVA\n8\nDEUTSCH\nals erste Fremdsprache\nLEHRBUCH\nfür allgemeinbildende\nBildungsinstitutionen\n© \"Şərq-Qərb\" Offene Aktiengesellschaft\nFür Ihre Hinweise und Ratschläge sind\nwir Ihnen jederzeit dankbar.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B4-C-002",
+    "passport_id": "08-ALM-1028",
+    "question": "Warum benutzt man Konjunktionen wie 'weil' in Texten?",
+    "options": [
+      "Weil sie in jedem Satz stehen müssen.",
+      "Um den Text kürzer zu machen.",
+      "Um Fragen zu stellen.",
+      "Um Gründe (Səbəbləri) zu erklären und Sätze logisch zu verbinden."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Warum machen die Schüler\neine Klassenfahrt?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T02-B3-C-003",
+    "passport_id": "08-ALM-1029",
+    "question": "Wie ändert sich die Satzstruktur, wenn der 'weil'-Satz am Anfang steht? 'Weil ich viel trainiere, ...'",
+    "options": [
+      "... bin ich müde.",
+      "... ich bin müde.",
+      "... müde ich bin.",
+      "... ich müde bin."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dann haben sie\nalles aufgeschrieben und auch etwas geändert.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B1-S-001",
+    "passport_id": "08-ALM-1030",
+    "question": "Was bedeutet 'Infos'?",
+    "options": [
+      "İdman",
+      "Peşələr",
+      "Dərslər",
+      "İnformasiyalar / Məlumatlar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1cWas bedeutet das?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B1-S-002",
+    "passport_id": "08-ALM-1031",
+    "question": "Wie sagt man 'şəxs' auf Deutsch?",
+    "options": [
+      "Die Pflanze",
+      "Die Person",
+      "Das Haus",
+      "Das Tier"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B1-S-003",
+    "passport_id": "08-ALM-1032",
+    "question": "Was gehört zu den persönlichen Infos?",
+    "options": [
+      "Der Name und das Alter",
+      "Der Computer",
+      "Das Wetter",
+      "Die Mathematik"
+    ],
+    "correctAnswer": 0,
+    "explanation": "obdass\nobwer\nwas\nobdass\nwas\nWir haben gehört,\ner bald nach Berlin fährt.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B1-S-004",
+    "passport_id": "08-ALM-1033",
+    "question": "Wie fragt man nach dem Alter?",
+    "options": [
+      "Wer ist das?",
+      "Was machst du?",
+      "Wo wohnst du?",
+      "Wie alt bist du?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Er fragt, ob der Preis mit Frühstück\nist.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B1-S-005",
+    "passport_id": "08-ALM-1034",
+    "question": "Welche Präposition passt: Infos ... die Personen",
+    "options": [
+      "unter",
+      "auf",
+      "an",
+      "über"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Infos über die Personen\nHor zu und lies var.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B2-O-001",
+    "passport_id": "08-ALM-1035",
+    "question": "Finden Sie die richtige Antwort: 'Was sind deine Hobbys?'",
+    "options": [
+      "Ich komme aus Baku.",
+      "Ich bin Schüler.",
+      "Ich bin 14 Jahre alt.",
+      "Ich spiele gern Tennis."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Schau die Bilder an\nund sag deine Meinung.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B2-O-002",
+    "passport_id": "08-ALM-1036",
+    "question": "Welcher Steckbrief-Eintrag (Profil məlumatı) ist falsch?",
+    "options": [
+      "Land: Deutschland",
+      "Hobby: Schwimmen",
+      "Wohnort: 15 Jahre",
+      "Name: Lukas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B2-O-003",
+    "passport_id": "08-ALM-1037",
+    "question": "Übersetzen Sie: 'Er spricht drei Sprachen: Deutsch, Englisch und Russisch.'",
+    "options": [
+      "O, Almaniyada, İngiltərədə və Rusiyada yaşayır.",
+      "O, üç dili sevir: Alman, İngilis və Rus.",
+      "O, Alman dili, İngilis dili və Rus dili öyrənir.",
+      "O, üç dildə danışır: Alman, İngilis və Rus."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Englisch und Russisch spricht er gut.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B2-O-004",
+    "passport_id": "08-ALM-1038",
+    "question": "Wählen Sie das richtige Verb: 'Meine Schwester ... in einem Krankenhaus.'",
+    "options": [
+      "arbeiten",
+      "arbeitest",
+      "arbeite",
+      "arbeitet"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Deshalb\nwohnt sie hier mit ihren Eltern und mit ihrer\nSchwester.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B2-O-005",
+    "passport_id": "08-ALM-1039",
+    "question": "Wie fragt man formell nach dem Wohnort?",
+    "options": [
+      "Wo wohnen Sie?",
+      "Wo wohnst du?",
+      "Wie ist dein Wohnort?",
+      "Kommst du aus Berlin?"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Er fragt, ob der Preis mit Frühstück\nist.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B4-C-001",
+    "passport_id": "08-ALM-1040",
+    "question": "Lesen Sie den Text und wählen Sie die richtige Aussage: 'Maria ist 16, sie lebt in Wien und lernt Französisch.'",
+    "options": [
+      "Maria wohnt in Österreich.",
+      "Maria ist Lehrerin.",
+      "Maria spricht nur Deutsch.",
+      "Maria kommt aus Frankreich."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ihre Schwester lernt auch\nin unserer Schule.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B3-C-001",
+    "passport_id": "08-ALM-1041",
+    "question": "Welche Fragen würden Sie stellen, um einen kompletten Lebenslauf (CV) zu schreiben?",
+    "options": [
+      "Was isst du gern?",
+      "Haarfarbe, Augenfarbe, Gewicht",
+      "Magst du Hunde?",
+      "Name, Alter, Wohnort, Beruf, Hobbys"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stelle Fragen und sammle Infos von deinen\nMitschülern.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B3-C-002",
+    "passport_id": "08-ALM-1042",
+    "question": "Ergänzen Sie die Endungen: 'Das ist mein... Freund. Er wohnt in ein... großen Stadt.'",
+    "options": [
+      "-e / -en",
+      "-en / -er",
+      "-er / -em",
+      "-er / -er"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Malik wohnt in einer großen Stadt.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B4-C-002",
+    "passport_id": "08-ALM-1043",
+    "question": "Setzen Sie in die richtige Reihenfolge: (ihre / lesen / Bücher / Hobbys / und / sind / reisen).",
+    "options": [
+      "Bücher lesen und reisen sind ihre Hobbys.",
+      "B und C sind richtig.",
+      "Ihre Hobbys sind Bücher lesen und reisen.",
+      "Ihre Hobbys sind lesen und reisen Bücher."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Das ist die perfekte App für Leute, die gerne Bücher\nlesen.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T03-B4-C-003",
+    "passport_id": "08-ALM-1044",
+    "question": "Warum benutzt man in Profilen oft Stichworte (qısa sözlər) statt ganzer Sätze?",
+    "options": [
+      "Weil man die Grammatik nicht kennt.",
+      "Es ist verboten, ganze Sätze zu schreiben.",
+      "Weil Stichworte schneller zu lesen und übersichtlicher sind.",
+      "Weil deutsche Sätze zu lang sind."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Name:\nAdresse:\nLage:\nSterne:\nAnreise:\nAbreise:\nPreis:\nZimmerausstattung:\nBesonderheiten:\nSchreibt zwei Texte über diese Hotels und begründet, warum\nihr diese Hotels besser gefunden habt.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 3. Infos über die Personen",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B1-S-001",
+    "passport_id": "08-ALM-1045",
+    "question": "Wie fragt man nach dem Beruf?",
+    "options": [
+      "Was machst du von Beruf?",
+      "Wo ist dein Beruf?",
+      "Was bist du von Beruf?",
+      "Wer bist du?"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Was sind sie von Beruf?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B1-S-002",
+    "passport_id": "08-ALM-1046",
+    "question": "Welches Wort ist ein Beruf?",
+    "options": [
+      "Tisch",
+      "Buch",
+      "Haus",
+      "Tischler"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B1-S-003",
+    "passport_id": "08-ALM-1047",
+    "question": "Wie sagt man 'Həkim' auf Deutsch?",
+    "options": [
+      "Der Lehrer",
+      "Der Arzt",
+      "Der Fahrer",
+      "Der Koch"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B1-S-004",
+    "passport_id": "08-ALM-1048",
+    "question": "Welche Endung haben viele weibliche Berufsbezeichnungen (Qadın peşələri)?",
+    "options": [
+      "-er",
+      "-en",
+      "-ung",
+      "-in"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sie haben\nviele Denkmäler in Schuscha\nzerstört\n.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B1-S-005",
+    "passport_id": "08-ALM-1049",
+    "question": "Was macht ein Lehrer?",
+    "options": [
+      "Er unterrichtet Schüler.",
+      "Er backt Brot.",
+      "Er heilt Kranke.",
+      "Er baut Häuser."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Denn ich habe viel Sport gemacht.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B2-O-001",
+    "passport_id": "08-ALM-1050",
+    "question": "Ordnen Sie zu: Koch -> ... , Bäcker -> ...",
+    "options": [
+      "kocht Essen im Restaurant / backt Brot",
+      "schreibt Bücher / singt Lieder",
+      "malt Bilder / unterrichtet",
+      "baut Häuser / repariert Autos"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B2-O-002",
+    "passport_id": "08-ALM-1051",
+    "question": "Ergänzen Sie: 'Meine Mutter arbeitet ... Ärztin im Krankenhaus.'",
+    "options": [
+      "für",
+      "als",
+      "bei",
+      "wie"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Samir arbeitet als\nIngenieur bei Socar.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B2-O-003",
+    "passport_id": "08-ALM-1052",
+    "question": "Wer arbeitet in einer Schule?",
+    "options": [
+      "Der Apotheker",
+      "Der Direktor und die Lehrer",
+      "Der Mechaniker",
+      "Der Pilot"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sie arbeitet als Webdesignerin in einer Bank.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B2-O-004",
+    "passport_id": "08-ALM-1053",
+    "question": "Wählen Sie die richtige weibliche Form von 'Kaufmann':",
+    "options": [
+      "Kaufmännin",
+      "Kauffrau",
+      "Kaufmannin",
+      "Kaufmädchen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Wähle die richtige Variante.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B2-O-005",
+    "passport_id": "08-ALM-1054",
+    "question": "Welches Hilfsverb benutzt man oft beim Beruf? 'Ich ... Programmierer.'",
+    "options": [
+      "habe",
+      "werde",
+      "bin",
+      "kann"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B3-C-001",
+    "passport_id": "08-ALM-1055",
+    "question": "Bestimmen Sie den Plural von 'Arzt' und 'Ärztin':",
+    "options": [
+      "Arzte / Ärztins",
+      "Ärzte / Ärztinnen",
+      "Arzten / Ärztinen",
+      "Ärzter / Ärztinne"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Schlagt ihre Pluralform im Wörterbuch nach.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B4-C-001",
+    "passport_id": "08-ALM-1056",
+    "question": "Analysieren Sie den Satz: 'Um Architekt zu werden, muss man lange studieren.' Was ist die Bedeutung?",
+    "options": [
+      "Der Beruf Architekt erfordert ein langes Studium.",
+      "Architekten arbeiten nicht lange.",
+      "Jeder kann Architekt sein.",
+      "Studieren ist langweilig."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ich hatte\nsie lange nicht gesehen, deshalb hatte ich nach ihnen Sehnsucht.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B4-C-002",
+    "passport_id": "08-ALM-1057",
+    "question": "Was ist der Unterschied zwischen 'Arbeiten als' und 'Arbeiten bei'?",
+    "options": [
+      "'bei' ist für Berufe und 'als' für Städte.",
+      "Beide stehen vor Berufen.",
+      "'Arbeiten als' steht vor dem Beruf, 'Arbeiten bei' steht vor der Firma/dem Unternehmen.",
+      "Es gibt keinen Unterschied."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Das Einzelzimmer/Doppelzimmer kostet zwischen\nManat.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B3-C-002",
+    "passport_id": "08-ALM-1058",
+    "question": "Bilden Sie Sätze: 'Mein Onkel (arbeiten / bei / BMW / als / Ingenieur)'.",
+    "options": [
+      "Mein Onkel arbeitet als BMW bei Ingenieur.",
+      "Mein Onkel arbeiten bei BMW als Ingenieur.",
+      "Mein Onkel arbeitet bei BMW als Ingenieur.",
+      "Als Ingenieur bei BMW mein Onkel arbeitet."
+    ],
+    "correctAnswer": 2,
+    "explanation": "=== Bölmə: Giriş ===\nILHAMA MAMMADOVA\n8\nDEUTSCH\nals erste Fremdsprache\nLEHRBUCH\nfür allgemeinbildende\nBildungsinstitutionen\n© \"Şərq-Qərb\" Offene Aktiengesellschaft\nFür Ihre Hinweise und Ratschläge sind\nwir Ihnen jederzeit dankbar.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T04-B3-C-003",
+    "passport_id": "08-ALM-1059",
+    "question": "Welcher Satz drückt einen Berufswunsch für die Zukunft aus?",
+    "options": [
+      "Ich bin Lehrer von Beruf.",
+      "Ich arbeite in einer Schule.",
+      "Ich möchte später als Pilot arbeiten.",
+      "Mein Vater ist Arzt."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jetzt\nwohnt sie in Baku, denn ihr Vater hat einen\nneuen Job in Baku bekommen.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B1-S-001",
+    "passport_id": "08-ALM-1060",
+    "question": "Was bedeutet 'Wiederholung'?",
+    "options": [
+      "Təkrar",
+      "İmtahan",
+      "Məktəb",
+      "Yeni dərs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1cWas bedeutet das?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B1-S-002",
+    "passport_id": "08-ALM-1061",
+    "question": "Wiederholung der Zahlen: Wie viel ist 10 + 15?",
+    "options": [
+      "Fünfundzwanzig",
+      "Fünfzehn",
+      "Zwanzig",
+      "Dreißig"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Wiederholung\nWie oft...",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B1-S-003",
+    "passport_id": "08-ALM-1062",
+    "question": "Welcher Wochentag kommt nach Montag?",
+    "options": [
+      "Sonntag",
+      "Mittwoch",
+      "Dienstag",
+      "Freitag"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nil kommt aus der Türkei.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B1-S-004",
+    "passport_id": "08-ALM-1063",
+    "question": "Wiederholung der Verben: 'Ich ... Deutsch.'",
+    "options": [
+      "lerne",
+      "lernen",
+      "lernt",
+      "lernst"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Wiederholung\nWie oft...",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B1-S-005",
+    "passport_id": "08-ALM-1064",
+    "question": "Gegenteil von 'gut':",
+    "options": [
+      "schlecht",
+      "schnell",
+      "klein",
+      "schön"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B2-O-001",
+    "passport_id": "08-ALM-1065",
+    "question": "Wiederholung der Artikel: '... Tisch, ... Tür, ... Buch'",
+    "options": [
+      "Das, die, der",
+      "Die, der, das",
+      "Der, das, die",
+      "Der, die, das"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Wiederholung\nWie oft...",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B2-O-002",
+    "passport_id": "08-ALM-1066",
+    "question": "Wiederholung Dativ: 'Ich helfe ... Freund.'",
+    "options": [
+      "die",
+      "dem",
+      "der",
+      "den"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Helfen die Filme beim\nSprachenlernen?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B2-O-003",
+    "passport_id": "08-ALM-1067",
+    "question": "Welcher Satz steht im Perfekt (Keçmiş zaman)?",
+    "options": [
+      "Ich habe Hausaufgaben gemacht.",
+      "Ich machte Hausaufgaben.",
+      "Ich werde Hausaufgaben machen.",
+      "Ich mache Hausaufgaben."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B2-O-004",
+    "passport_id": "08-ALM-1068",
+    "question": "Finden Sie den Fehler: 'Wir fährt heute nach Berlin.'",
+    "options": [
+      "fährt -> fahren",
+      "heute -> gestern",
+      "Wir -> Ihr",
+      "nach -> zu"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Viele Infos über den Film\n„Nicos Weg\" kannst du unter\n\ndem folgenden Link finden:\nhttps://lmy.de/z1LYy\n2aLies die Texte in la noch einmal.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B2-O-005",
+    "passport_id": "08-ALM-1069",
+    "question": "Was passt zusammen? 'Frühstück - Mittagessen - ...'",
+    "options": [
+      "Auto",
+      "Schule",
+      "Abendessen",
+      "Buch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B3-C-001",
+    "passport_id": "08-ALM-1070",
+    "question": "Verknüpfen Sie die beiden Sätze sinnvoll: 'Ich habe keine Zeit. Ich muss lernen.'",
+    "options": [
+      "Ich habe keine Zeit, weil ich lernen muss.",
+      "Ich muss lernen, weil habe ich keine Zeit.",
+      "Ich lerne, weil ich keine Zeit habe.",
+      "Weil ich habe keine Zeit, muss ich lernen."
+    ],
+    "correctAnswer": 0,
+    "explanation": "a) mit Murka spazieren gehen\nb) keinen Hund bekommen\nc) einen Hund haben\n2aLies die Sätze vor.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B4-C-001",
+    "passport_id": "08-ALM-1071",
+    "question": "Analysieren Sie das Partizip II der unregelmäßigen Verben: lesen, schreiben, sprechen.",
+    "options": [
+      "gelesst, geschriebt, gesprocht",
+      "gelest, geschrieben, gesprocht",
+      "gelesen, geschrieben, gesprochen",
+      "gelesen, geschreiben, gesprecht"
+    ],
+    "correctAnswer": 2,
+    "explanation": "viel Sport machen, viel lesen, mit der\nAufgabe fertig sein, neues Handy kaufen, der\nComputer funktioniert nicht, eine Zwei in Bio\nbekommen, nach Italien fahren, Fußball spielen,...",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B3-C-002",
+    "passport_id": "08-ALM-1072",
+    "question": "Übersetzen Sie mit Modalverben: 'Şagirdlər məktəbdə sakit olmalıdırlar.'",
+    "options": [
+      "Die Schüler können in der Schule sprechen.",
+      "Die Schüler müssen in der Schule ruhig sein.",
+      "Die Schüler wollen in der Schule spielen.",
+      "Die Schüler dürfen in der Schule leise sein."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B4-C-002",
+    "passport_id": "08-ALM-1073",
+    "question": "Welche Präposition und welcher Kasus sind korrekt? 'Das Buch liegt ... Tisch (m).'",
+    "options": [
+      "in der",
+      "auf dem",
+      "auf den",
+      "an das"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T05-B3-C-003",
+    "passport_id": "08-ALM-1074",
+    "question": "Bilden Sie eine Frage im Perfekt: (du / sehen / gestern / den neuen Film / ?)",
+    "options": [
+      "Bist du gestern den neuen Film gesehen?",
+      "Siehst du gestern den neuen Film?",
+      "Hast du den neuen Film gestern geseht?",
+      "Hast du gestern den neuen Film gesehen?"
+    ],
+    "correctAnswer": 1,
+    "explanation": "auf der Facebook-Seite\na) besprechen / schreiben\nb) per Video Anruf oder Chat\nsprechen\nc) ansehen\nd) markieren\ne) erstellen\nf) senden\ng) schicken\nh) kommentieren\ni) Beiträge teilen\nj) kommunizieren\nk) benutzen\ni) auf die Fragen finden\nm) suchen\nn) schreiben / lesen\no) stehen\n2bWas passt nicht?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Stunde 5. Wiederholung",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B1-S-001",
+    "passport_id": "08-ALM-1075",
+    "question": "Was ist ein 'Projekt'?",
+    "options": [
+      "Lüğət",
+      "Mətn",
+      "Layihə",
+      "Qrammatika"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B1-S-002",
+    "passport_id": "08-ALM-1076",
+    "question": "Was bedeutet 'Beste Berufe'?",
+    "options": [
+      "Çətin peşələr",
+      "Pis peşələr",
+      "Ən yaxşı peşələr",
+      "Yeni peşələr"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1cWas bedeutet das?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B1-S-003",
+    "passport_id": "08-ALM-1077",
+    "question": "Welches Wort bedeutet 'Zukunft'?",
+    "options": [
+      "Keçmiş",
+      "Gələcək",
+      "Tarix",
+      "İndiki zaman"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Welches Bild passt?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B1-S-004",
+    "passport_id": "08-ALM-1078",
+    "question": "Was braucht man oft in modernen Berufen?",
+    "options": [
+      "Ein Pferd",
+      "Einen Besen",
+      "Einen Traktor",
+      "Einen Computer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Was meinst du, braucht er einen Internetanschluss?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B1-S-005",
+    "passport_id": "08-ALM-1079",
+    "question": "Was drückt 'Ich möchte werden' aus?",
+    "options": [
+      "Gələcək arzu",
+      "Keçmiş hərəkət",
+      "İcazə",
+      "Qadağa"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Am Wochenende möchten wir eine Klassenfahrt machen.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B2-O-001",
+    "passport_id": "08-ALM-1080",
+    "question": "Warum ist IT-Spezialist ein 'guter Beruf' in der modernen Zeit?",
+    "options": [
+      "Weil man nur schläft.",
+      "Weil man kein Geld verdient.",
+      "Weil Computer überall wichtig sind.",
+      "Weil man nie arbeiten muss."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Warum machen die Schüler\neine Klassenfahrt?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B2-O-002",
+    "passport_id": "08-ALM-1081",
+    "question": "Wie nennt man das Geld, das man für seine Arbeit bekommt?",
+    "options": [
+      "Das Gehalt",
+      "Das Geschenk",
+      "Der Preis",
+      "Die Steuer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Seine Hobbys sind Angeln\nund im Garten arbeiten.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B2-O-003",
+    "passport_id": "08-ALM-1082",
+    "question": "Was gehört zu einer guten Präsentation über Berufe?",
+    "options": [
+      "Informationen, Bilder und Gründe",
+      "Ein leeres Papier",
+      "Nur ein langes Wort",
+      "Kein Text"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Oder gibt\nes neue Schüler in deiner Klasse?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B2-O-004",
+    "passport_id": "08-ALM-1083",
+    "question": "Übersetzen Sie: 'Ich interessiere mich für Technik.'",
+    "options": [
+      "Mən texnika ilə maraqlanıram.",
+      "Texnika mənim üçün çətindir.",
+      "Mən texnikadan qorxuram.",
+      "Mən texnika ilə maraqlanmıram."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B2-O-005",
+    "passport_id": "08-ALM-1084",
+    "question": "Ergänzen Sie: Ein Pilot muss sehr ... sein.",
+    "options": [
+      "faul",
+      "verantwortungsvoll (məsuliyyətli)",
+      "klein",
+      "krank"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Zubereitung\nA\nDie Kartoffeln müssen trocken sein.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B4-C-001",
+    "passport_id": "08-ALM-1085",
+    "question": "Welche Argumente sprechen FÜR den Beruf 'Arzt' in einer Projektarbeit?",
+    "options": [
+      "Man hilft Menschen, rettet Leben und hat viel Respekt.",
+      "Es ist langweilig und man verdient nichts.",
+      "Man muss nie lernen.",
+      "Man sitzt nur am Computer."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Welchen Beruf findest du\ninteressant?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B3-C-002",
+    "passport_id": "08-ALM-1086",
+    "question": "Bilden Sie einen Kausalsatz (Səbəb cümləsi): Warum möchtest du Ingenieur werden?",
+    "options": [
+      "Weil ich spiele gern Fußball.",
+      "Ich möchte Ingenieur werden, weil ich Autos reparieren muss.",
+      "Ich möchte Ingenieur werden, weil Mathematik und Physik meine Lieblingsfächer sind.",
+      "Ich möchte Arzt werden, weil ich Technik mag."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Warum trinkst du keinen Cappuccino?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B3-C-003",
+    "passport_id": "08-ALM-1087",
+    "question": "Wie kann man eine Projektpräsentation höflich abschließen?",
+    "options": [
+      "Vielen Dank für Ihre Aufmerksamkeit.",
+      "Ich gehe jetzt.",
+      "Das war's.",
+      "Jetzt seid ihr dran, mir ist langweilig."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Du bist nicht nur höflich, sondern auch sehr aufmerksam.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B4-C-002",
+    "passport_id": "08-ALM-1088",
+    "question": "Analysieren Sie das Wort 'Zukunftsberuf': Aus welchen Teilen besteht es und was bedeutet es?",
+    "options": [
+      "Zu (üçün) + Kunst (incəsənət) + Beruf (peşə) = İncəsənət peşəsi.",
+      "Zug (qatar) + Kunft (gəlmək) + Beruf (peşə) = Qatar işçisi.",
+      "Es gibt dieses Wort nicht.",
+      "Zukunft (gələcək) + Beruf (peşə) = Gələcəyin peşəsi."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Der Körper der Bienen\nbesteht - wie bei allen Insekten [[MERGE_NEXT]]\naus drei Teilen: Kopf, Brust, Hinterleib.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "08-GER-T06-B3-C-001",
+    "passport_id": "08-ALM-1089",
+    "question": "Wie drückt man aus, dass eine Tätigkeit schwer, aber wichtig ist?",
+    "options": [
+      "Die Arbeit ist schwer, aber wichtig.",
+      "Die Arbeit ist schwer und schlecht.",
+      "Die Arbeit ist leicht und langweilig.",
+      "Die Arbeit ist nicht wichtig."
+    ],
+    "correctAnswer": 0,
+    "explanation": "1dLies den Text nocn einmal, sammle wichtige\nInformationen und erzähl über Nil.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Projektarbeit. Beste Berufe",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "question": "Was bedeutet die Aussage 'Sie ist neu in der Klasse'?",
+    "options": [
+      "A) Sie kennt alle Schüler schon.",
+      "B) Sie ist zum ersten Mal in dieser Klasse und kennt noch niemanden.",
+      "C) Sie ist die Klassenlehrerin.",
+      "D) Sie hat die Klasse gewechselt und ist unglücklich."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1cWas bedeutet das?",
+    "sitg": "A8.1.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "381f4568-db34-4a56-b2f9-0666ecef98b1",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1090",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Wie stellt man sich auf Deutsch vor? Wähle die richtige Form.",
+    "options": [
+      "A) Ich bin Name heißen.",
+      "B) Ich heiße Anna. Ich komme aus Baku.",
+      "C) Mein Name Anna ist.",
+      "D) Heißen ich Anna."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "Wähle die richtige Variante.",
+    "sitg": "A8.1.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "e73cb4cf-a5c7-44d2-a82b-a5ed59f76af6",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1091",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welche Frage stellt man, wenn man den Namen einer neuen Schülerin erfahren möchte?",
+    "options": [
+      "A) Woher kommst du?",
+      "B) Wie heißt du? / Wie ist dein Name?",
+      "C) Wie alt bist du?",
+      "D) Was machst du gern?"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "1dWelche neuen Informationen hast du erfahren?",
+    "sitg": "A8.1.2",
+    "tik": "TİK-2.1",
+    "bloom": "Tətbiq etmək",
+    "id": "eea9eeab-a5bc-42ab-b784-7dbfa1c5d826",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1092",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Anna ist neu in der Klasse. Sie sagt: 'Ich komme aus München und ich wohne jetzt in Berlin.' Was erfährt man aus diesem Satz?",
+    "options": [
+      "A) Anna wohnt in München.",
+      "B) Anna ist aus Berlin gebürtig, wohnt aber jetzt in München.",
+      "C) Anna stammt aus München, lebt jetzt aber in Berlin.",
+      "D) Anna kommt aus Berlin und München."
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Jetzt\nwohnt sie in Baku, denn ihr Vater hat einen\nneuen Job in Baku bekommen.",
+    "sitg": "A8.1.2",
+    "tik": "TİK-2.2",
+    "bloom": "Anlamaq",
+    "id": "da0208a4-ab0a-4549-a553-dca88be62b6c",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1093",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "In einem Klassengespräch fragt der Lehrer: 'Welche Hobbys hast du, Lisa?' Lisa antwortet mit zwei falschen grammatischen Strukturen. Welche Antwort ist grammatisch korrekt?",
+    "options": [
+      "A) Ich Fußball spiele und lese Bücher gern.",
+      "B) Ich spiele gern Fußball und ich lese gern Bücher.",
+      "C) Gern Fußball spielen ich und Bücher lesen.",
+      "D) Ich bin gern Fußball und Bücher."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "nach Ismajilli gefahren\nviel im Bus gelacht\nzusammen gesungen\nFische geangelt und gegrillt\nim Fluss gebadet\nam Feuer gegessen\nan den Fluss gefahren\n\nim Wald spazieren gegangen\neine Klassenfahrt gemacht\nKomödien angeschaut\nin einem Hotel übernachtet\neine Nachtwanderung gemacht\n1eBeantworte Fragen.",
+    "sitg": "A8.1.3",
+    "tik": "TİK-3.1",
+    "bloom": "Təhlil etmək",
+    "id": "782b8884-ced8-46f1-99d4-7fc4ff744928",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1094",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Analysiere den folgenden Dialog auf sprachliche und soziale Korrektheit und begründe deine Wahl: Schüler A: 'Hey, ich bin neu. Was ist dein Name?' Schüler B: 'Ich heiße Mia. Ich freue mich, dich kennenzulernen. Woher kommst du?' Welche Aussage trifft am besten zu?",
+    "options": [
+      "A) Der Dialog ist falsch, weil man sich nicht so vorstellt.",
+      "B) Schüler A macht einen Fehler: 'Was ist dein Name?' ist falsch.",
+      "C) Der Dialog ist sprachlich korrekt und sozial angemessen; beide Schüler nutzen passende Ausdrücke zur Vorstellung und für erste Kontakte.",
+      "D) Schüler B antwortet nicht richtig auf die Frage."
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 1. Sie ist neu in der Klasse",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "zuhause, frei,\naufgeregt, furchtlos,\nböse, traurig, lustig,\nsuper, gut, erfolgreich,\nschön, allein, unruhig,\n\nglücklich, furchtbar,\nstressig, wohl, krank,\nmunter, zufrieden\n4aWie sehen deine Mitschülerinnen /\nMitschüler aus?",
+    "sitg": "A8.1.3",
+    "tik": "TİK-4.1",
+    "bloom": "Qiymətləndirmək",
+    "id": "96d532d7-9d80-4fb3-abb1-e18745739234",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1095",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was bedeutet 'weil' im Deutschen grammatisch?",
+    "options": [
+      "A) Eine koordinierende Konjunktion, die die Wortstellung nicht verändert.",
+      "B) Eine subordinierende Konjunktion, die das Verb an das Satzende schickt.",
+      "C) Ein Adverb, das am Satzanfang steht.",
+      "D) Ein Pronomen."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1cWas bedeutet das?",
+    "sitg": "A8.2.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "d80ecba6-f2c6-4d41-8aa9-3cbcc1739347",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1096",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welcher Satz ist grammatisch korrekt?",
+    "options": [
+      "A) Ich bin gut in Sport, weil ich trainiere viel.",
+      "B) Ich bin gut in Sport, weil ich viel trainiere.",
+      "C) Weil ich viel trainiere, bin Sport ich gut.",
+      "D) Ich trainiere viel, weil bin ich gut in Sport."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "sitg": "A8.2.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "cb1744f5-6668-4f05-a80e-9249a940a258",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1097",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Ergänze den Satz: 'Ich esse viel Obst, _____ ich gesund leben möchte.'",
+    "options": [
+      "A) denn",
+      "B) aber",
+      "C) weil",
+      "D) oder"
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Ich fühle mich gesund.",
+    "sitg": "A8.2.2",
+    "tik": "TİK-2.1",
+    "bloom": "Tətbiq etmək",
+    "id": "f0c70689-ee78-470b-9ab3-72e1839254c7",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1098",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen 'denn' und 'weil' im Deutschen?",
+    "options": [
+      "A) Es gibt keinen Unterschied, beide sind identisch.",
+      "B) 'Denn' ist eine koordinierende Konjunktion (Verb an 2. Stelle im Satz), 'weil' ist eine subordinierende Konjunktion (Verb am Ende des Nebensatzes).",
+      "C) 'Weil' steht am Satzanfang, 'denn' am Satzende.",
+      "D) 'Denn' leitet Fragesätze ein, 'weil' Aussagesätze."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Das Einzelzimmer/Doppelzimmer kostet zwischen\nManat.",
+    "sitg": "A8.2.2",
+    "tik": "TİK-2.2",
+    "bloom": "Anlamaq",
+    "id": "00ccc2b3-43ef-470b-b047-7633b927bfe0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1099",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Schreibe einen komplexen Satz, der 'weil' korrekt verwendet, und erkläre gleichzeitig eine sportliche Aktivität. Welche Option ist sprachlich und inhaltlich korrekt?",
+    "options": [
+      "A) Ich schwimme jeden Tag, weil es macht mir Spaß.",
+      "B) Weil ich jeden Tag schwimme, bin ich jetzt viel besser geworden und ich fühle mich fit.",
+      "C) Ich schwimme, weil jeden Tag ich besser bin.",
+      "D) Weil schwimme ich, bin ich fit."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "STÄDTE UND\nSEHENSWÜRDIGKEITEN\nKommunikation\neinen Weg beschreiben\nüber Städte sprechen\ndie Wichtigkeit des zweiten\nElements betonen\neine Handlung oder einen\nProzess\nbeschreiben\ndie Daten des Geschehens nennen\nGrammatik\nTemporale Adverbien\nPräposition\nbis zu + Dativ\nDoppelkonjunktion\nnicht nur ...",
+    "sitg": "A8.2.3",
+    "tik": "TİK-3.1",
+    "bloom": "Yaratmaq",
+    "id": "c1157252-5ded-453a-896b-5ec0cc8ccf31",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1100",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Ein Schüler sagt: 'Ich bin der beste Läufer in der Klasse, weil ich jeden Morgen um 6 Uhr aufstehe und ich dann eine Stunde laufe.' Ist diese Aussage grammatisch korrekt? Analysiere sie kritisch.",
+    "options": [
+      "A) Völlig korrekt, keine Fehler.",
+      "B) Falsch, 'weil' darf nicht verwendet werden.",
+      "C) Im zweiten Teil des 'weil'-Satzes ('und ich dann eine Stunde laufe') wird 'und' als Koordinator korrekt verwendet; jedoch ist es stilistisch besser, den zweiten Nebensatz parallel zu formulieren: '...weil ich jeden Morgen aufstehe und eine Stunde laufe.'",
+      "D) Der Satz ist falsch, weil das Verb nicht am Anfang steht."
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 2. Weil ich viel trainiere",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "9\nBei diesen Temperaturen scheint die Sonne bis\n\nzu 10-11 Stunden pro Tag.",
+    "sitg": "A8.2.3",
+    "tik": "TİK-4.1",
+    "bloom": "Qiymətləndirmək",
+    "id": "7b88d1a3-a4d7-41d2-ab9a-387af33e5a31",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1101",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was bedeutet 'Infos über die Personen' auf Deutsch?",
+    "options": [
+      "A) Informationen über Dinge",
+      "B) Informationen über Personen/Menschen",
+      "C) Informationen über Orte",
+      "D) Informationen über Ereignisse"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1cWas bedeutet das?",
+    "sitg": "A8.3.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "f78689c9-9b93-45d5-a888-4c87bb54809e",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1102",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welche Fragen können Informationen über eine Person liefern? Wähle die vollständigste Antwort.",
+    "options": [
+      "A) Nur 'Wie heißt du?'",
+      "B) Wie heißt du? Wie alt bist du? Woher kommst du? Was sind deine Hobbys? Was machst du in der Freizeit?",
+      "C) Nur Fragen zum Beruf",
+      "D) Nur Fragen zur Adresse"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "Welche Berufe passen zu diesen Personen?",
+    "sitg": "A8.3.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "7c930bce-d574-4589-9d9d-89b145dce3e0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1103",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Lies die Information: 'Max: 14 Jahre alt, kommt aus Hamburg, spielt Gitarre, mag Filme.' Welcher Satz beschreibt Max korrekt auf Deutsch?",
+    "options": [
+      "A) Max hat 14, er ist Hamburg, Gitarre spielt er.",
+      "B) Max ist 14 Jahre alt. Er kommt aus Hamburg. Er spielt Gitarre und er mag Filme.",
+      "C) Max, 14 Jahre, Hamburg kommen, Gitarre spielen.",
+      "D) Der Max aus Hamburg ist und 14 hat."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Mein Schüler spielt nicht nur Gitarre, sondern auch Klavier.",
+    "sitg": "A8.3.2",
+    "tik": "TİK-2.1",
+    "bloom": "Tətbiq etmək",
+    "id": "43b47d99-e14e-4c18-a484-3488997f7131",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1104",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Vergleiche zwei Personenbeschreibungen und finde heraus, welche Information fehlt: Person A: 'Sarah, 15, Berlin, liest Bücher.' Person B: 'Tom, ?, München, spielt Tennis.' Was fehlt bei Person B?",
+    "options": [
+      "A) Der Wohnort",
+      "B) Die Hobbys",
+      "C) Das Alter",
+      "D) Der Name"
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Welche Berufe passen zu diesen Personen?",
+    "sitg": "A8.3.2",
+    "tik": "TİK-2.2",
+    "bloom": "Təhlil etmək",
+    "id": "e2e4e145-8dfa-447c-bbd8-a959ef21241e",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1105",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du bekommst folgende Steckbriefkarte: 'Name: Lena / Alter: 13 / Wohnort: Wien / Lieblingsfarbe: Blau / Hobby: Tanzen / Lieblingstier: Hund.' Schreibe eine vollständige Personenbeschreibung. Welche Option ist am besten?",
+    "options": [
+      "A) Lena ist blau und tanzt Hund.",
+      "B) Lena hat 13 und Wien wohnt sie.",
+      "C) Lena ist 13 Jahre alt. Sie wohnt in Wien. Ihre Lieblingsfarbe ist Blau. Sie tanzt gern und ihr Lieblingstier ist der Hund.",
+      "D) Lena, 13 Jahre, Wien, blau, tanzen, Hund."
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "eine Rolle\nBenzin mit hoher Oktanzahl\nunvergessliche Geschichte\neine Ausbildung\nals Medikament bekannt\nauf das Tor\na)schreiben\nb)sein\nc)schießen\nd)spielen\ne)bekommen\nf)erfinden\nZu welchen Themen passen sie?",
+    "sitg": "A8.3.3",
+    "tik": "TİK-3.1",
+    "bloom": "Yaratmaq",
+    "id": "53c40a27-69ca-4b64-a259-83f97ceee80c",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1106",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Kritisch denken: Zwei Schüler beschreiben dieselbe Person. Schüler A: 'Er kommt aus der Türkei und spricht Türkisch.' Schüler B: 'Er ist Türke und er kann Türkisch.' Welche Beschreibung ist sprachlich präziser und warum?",
+    "options": [
+      "A) Schüler A ist besser, weil er längere Sätze schreibt.",
+      "B) Schüler B ist besser: 'ist Türke' drückt Nationalität mit Nomen aus; 'kann Türkisch' drückt Sprachkompetenz mit Modalverb aus – beide Strukturen sind präziser und vielfältiger als Schüler A.",
+      "C) Beide sind gleich gut.",
+      "D) Schüler A ist besser, weil er Herkunft und Sprache trennt."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 3. Infos über die Personen",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Ein Schüler\nsagt einen Satz über eine Person.",
+    "sitg": "A8.3.3",
+    "tik": "TİK-4.1",
+    "bloom": "Qiymətləndirmək",
+    "id": "aced4364-d61a-44ac-ba3f-c5b23954b6f7",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1107",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was bedeutet die Frage 'Was sind sie von Beruf?' auf Deutsch?",
+    "options": [
+      "A) Was machen sie in der Freizeit?",
+      "B) Was ist ihr Beruf? / Welche Arbeit machen sie?",
+      "C) Wie alt sind sie?",
+      "D) Woher kommen sie?"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1cWas bedeutet das?",
+    "sitg": "A8.4.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "4abba5ec-4b12-4e31-ac10-6e7c65edee7c",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1108",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welche Antwort ist korrekt auf die Frage: 'Was bist du von Beruf?'",
+    "options": [
+      "A) Ich bin ein Arzt.",
+      "B) Ich bin Arzt.",
+      "C) Ich habe Arzt.",
+      "D) Ich arbeite als ein Lehrer."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "Welche Antwort passt?",
+    "sitg": "A8.4.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "ec06bf7d-98d1-4a13-b7d3-945a4876d9a0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1109",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Wie lautet die weibliche Form von 'Lehrer' auf Deutsch?",
+    "options": [
+      "A) Lehrerin",
+      "B) Lehrere",
+      "C) Lehrerix",
+      "D) Frau Lehrer"
+    ],
+    "correctAnswer": 0,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "sitg": "A8.4.2",
+    "tik": "TİK-2.1",
+    "bloom": "Anlamaq",
+    "id": "ccd0ba8a-d1f3-4998-92c2-250f8a4a4b3d",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1110",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Ordne die Berufe den Beschreibungen zu: 1. behandelt kranke Menschen 2. unterrichtet Schüler 3. kocht in einem Restaurant 4. schreibt für eine Zeitung",
+    "options": [
+      "A) 1-Lehrer, 2-Arzt, 3-Koch, 4-Journalist",
+      "B) 1-Arzt, 2-Lehrer, 3-Koch, 4-Journalist",
+      "C) 1-Koch, 2-Journalist, 3-Arzt, 4-Lehrer",
+      "D) 1-Journalist, 2-Koch, 3-Lehrer, 4-Arzt"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Lehrer\nWer untersucht und behandelt im Krankenhaus?",
+    "sitg": "A8.4.2",
+    "tik": "TİK-2.2",
+    "bloom": "Tətbiq etmək",
+    "id": "76bbe55e-bb3b-4d94-906a-92a7106a1c76",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1111",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Lies den Text: 'Mein Vater ist Ingenieur. Er arbeitet bei einer großen Firma in Frankfurt. Er fährt jeden Morgen um 7 Uhr zur Arbeit und kommt abends um 18 Uhr nach Hause. Er verdient gut.' Welche Information über den Beruf des Vaters ist NICHT im Text?",
+    "options": [
+      "A) Der Beruf",
+      "B) Der Arbeitsort",
+      "C) Die Ausbildung/das Studium",
+      "D) Die Arbeitszeit"
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Er arbeitet in einer Firma.",
+    "sitg": "A8.4.3",
+    "tik": "TİK-3.1",
+    "bloom": "Təhlil etmək",
+    "id": "d53029fb-7b41-441b-ae2c-44215bf01245",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1112",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du sollst einen kurzen Steckbrief über eine Person mit Beruf schreiben. Welche Version ist sprachlich vollständig und grammatisch korrekt?",
+    "options": [
+      "A) Name: Maria. Beruf: Ärztin. Arbeiten Krankenhaus Berlin.",
+      "B) Maria ist Ärztin von Beruf. Sie arbeitet in einem Krankenhaus in Berlin. Sie hilft täglich vielen Patienten. Ihr Beruf macht ihr viel Freude.",
+      "C) Maria Ärztin. Berlin Krankenhaus. Patienten helfen.",
+      "D) Maria ist eine Ärztin und sie ein Krankenhaus hat in Berlin."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 4. Was sind sie von Beruf?",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Welche Berufe passen zu diesen Personen?",
+    "sitg": "A8.4.3",
+    "tik": "TİK-4.1",
+    "bloom": "Yaratmaq",
+    "id": "778ac2f6-ec43-46da-85a0-1c3f168d9ed7",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1113",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was ist das Ziel einer 'Wiederholung' im Sprachunterricht?",
+    "options": [
+      "A) Neues Thema einführen",
+      "B) Bereits gelernte Inhalte festigen, Lücken schließen und das Gelernte systematisch wiederholen",
+      "C) Hausaufgaben machen",
+      "D) Prüfung schreiben"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "Oder gibt\nes neue Schüler in deiner Klasse?",
+    "sitg": "A8.5.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "ef9d681e-ad8b-479f-83f6-d32b432ae651",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1114",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welcher Satz fasst die wichtigste Grammatikregel der Stunden 1-4 zusammen?",
+    "options": [
+      "A) Im Deutschen steht das Verb immer am Satzanfang.",
+      "B) Im deutschen Hauptsatz steht das konjugierte Verb an zweiter Stelle; im Nebensatz (z. B. mit 'weil') steht es am Ende.",
+      "C) Im Deutschen gibt es keine feste Wortstellung.",
+      "D) Das Verb steht immer am Satzende."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "sitg": "A8.5.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "5159cb8d-e5af-427d-8b0a-1c7b6b96aceb",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1115",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Verbinde die Sätze sinnvoll mit 'weil': 'Ich lerne Deutsch.' + 'Es ist eine wichtige Sprache.'",
+    "options": [
+      "A) Ich lerne Deutsch, weil es ist eine wichtige Sprache.",
+      "B) Ich lerne Deutsch, weil es eine wichtige Sprache ist.",
+      "C) Weil eine wichtige Sprache ist, lerne ich Deutsch.",
+      "D) Ich weil Deutsch lerne, es ist wichtig."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "Verbinde die Sätze mit\nnicht nur..., sondern auch ...",
+    "sitg": "A8.5.2",
+    "tik": "TİK-2.1",
+    "bloom": "Tətbiq etmək",
+    "id": "0256c37d-d613-43e0-867f-499d8efaa50d",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1116",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Überprüfe alle vier Lektionen (1-4) und bestimme: Welches Thema verbindet alle vier Lektionen thematisch?",
+    "options": [
+      "A) Das Wetter",
+      "B) Personen, ihre Identität, Beschreibung und Berufe – Stunde 1: neue Schüler; Stunde 2: persönliche Begründungen; Stunde 3: Personeninfos; Stunde 4: Berufe",
+      "C) Reisen und Urlaub",
+      "D) Sport und Ernährung"
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "(Lektionen 1-4)\nÜberprüfe dich selbst Schreib passende Antworten zu den Punkten.",
+    "sitg": "A8.5.2",
+    "tik": "TİK-2.2",
+    "bloom": "Təhlil etmək",
+    "id": "989dfeff-e792-4fa0-bbfb-eed7fc16318a",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1117",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du schreibst einen kurzen Text über dich selbst, der alle Inhalte aus den Lektionen 1-4 einbezieht. Welche Version ist am vollständigsten und sprachlich korrektesten?",
+    "options": [
+      "A) Ich bin Ali. 14. Baku. Ich Sport.",
+      "B) Ich heiße Ali und ich bin 14 Jahre alt. Ich komme aus Baku. Ich lerne Deutsch, weil es eine wichtige Sprache ist. Mein Vater ist Ingenieur von Beruf. In der Zukunft möchte ich auch Ingenieur werden.",
+      "C) Ali heiße ich, 14 bin ich alt, Baku komme ich.",
+      "D) Ich Ali. Deutsch lernen. Ingenieur Vater."
+    ],
+    "correctAnswer": 1,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Schreibst du einen Text?",
+    "sitg": "A8.5.3",
+    "tik": "TİK-3.1",
+    "bloom": "Yaratmaq",
+    "id": "d9ac51b9-5462-4fb2-9795-79d0c365473e",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1118",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Bewerte kritisch: Ein Schüler schreibt zur Wiederholung: 'Ich bin neu in der Klasse. Ich komme aus Wien weil mein Vater ist Arzt und er arbeitet in Berlin.' Welche Fehler sind enthalten und wie wären sie zu korrigieren?",
+    "options": [
+      "A) Keine Fehler, alles korrekt.",
+      "B) 'ich komme aus Wien' ist falsch.",
+      "C) Zwei Fehler: 1) Kein Komma vor 'weil'; 2) Im 'weil'-Satz steht 'ist' nicht am Ende – korrekt: '...weil mein Vater Arzt ist...' Außerdem fehlt der Artikel vor 'Arzt' – korrekt: kein Artikel bei Berufen.",
+      "D) Der Satz 'ich bin neu' ist falsch."
+    ],
+    "correctAnswer": 2,
+    "topic": "Stunde 5. Wiederholung",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Jetzt\nwohnt sie in Baku, denn ihr Vater hat einen\nneuen Job in Baku bekommen.",
+    "sitg": "A8.5.3",
+    "tik": "TİK-4.1",
+    "bloom": "Qiymətləndirmək",
+    "id": "ed5c2fdd-5546-43c8-a622-aa7836190df2",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1119",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Was bedeutet 'Projektarbeit' im schulischen Kontext?",
+    "options": [
+      "A) Eine Einzelhausaufgabe",
+      "B) Eine eigenständige, oft gruppenbasierte Lernaufgabe zu einem Thema, die kreative und forschende Elemente verbindet",
+      "C) Ein kurzer Diktattest",
+      "D) Eine mündliche Prüfung"
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1cWas bedeutet das?",
+    "sitg": "A8.6.1",
+    "tik": "TİK-1.1",
+    "bloom": "Xatırlamaq",
+    "id": "11544017-e3fb-42d3-b024-4a1089d11930",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1120",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Welche Informationen gehören typischerweise in ein Berufsprofil ('Beste Berufe') auf Deutsch?",
+    "options": [
+      "A) Nur der Name des Berufs",
+      "B) Berufsname, Aufgaben, Ausbildung, Arbeitszeit, Gehalt, Vor- und Nachteile",
+      "C) Nur das Gehalt",
+      "D) Nur die Arbeitszeiten"
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "sadə",
+    "cat": "Alman dili 8",
+    "explanation": "1dWelche neuen Informationen hast du erfahren?",
+    "sitg": "A8.6.1",
+    "tik": "TİK-1.2",
+    "bloom": "Anlamaq",
+    "id": "dd433149-be87-4f17-b7df-5e91f585f43a",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1121",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du schreibst über den Beruf 'Tierarzt'. Welcher Satz beschreibt seine Hauptaufgabe korrekt auf Deutsch?",
+    "options": [
+      "A) Ein Tierarzt macht Tiere krank.",
+      "B) Ein Tierarzt behandelt kranke Tiere und sorgt für ihre Gesundheit.",
+      "C) Ein Tierarzt verkauft Tiere.",
+      "D) Ein Tierarzt unterrichtet über Tiere."
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "sitg": "A8.6.2",
+    "tik": "TİK-2.1",
+    "bloom": "Tətbiq etmək",
+    "id": "895803a0-11e6-4ac4-8f5d-1e23c57d1cdc",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1122",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Vergleiche zwei Berufe: Arzt und Lehrer. Welcher Vergleichssatz ist grammatisch und inhaltlich korrekt?",
+    "options": [
+      "A) Ein Arzt ist besser als Lehrer.",
+      "B) Sowohl Ärzte als auch Lehrer helfen anderen Menschen: Ärzte helfen körperlich, Lehrer helfen beim Lernen.",
+      "C) Lehrer verdienen mehr als Ärzte immer.",
+      "D) Arzt und Lehrer sind gleich."
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "orta",
+    "cat": "Alman dili 8",
+    "explanation": "In welcher Klasse lernt Nalan?",
+    "sitg": "A8.6.2",
+    "tik": "TİK-2.2",
+    "bloom": "Təhlil etmək",
+    "id": "9a8a80e4-db68-41d1-b92c-9eff39602963",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1123",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du präsentierst dein Berufsprojekt auf Deutsch. Deine Eröffnung ist: 'Mein Lieblingsberuf ist Programmier, weil ich Technologie mag sehr.' Welche Korrekturen sind nötig?",
+    "options": [
+      "A) Keine Korrekturen nötig.",
+      "B) Zwei Korrekturen: 1) 'Programmier' → 'Programmierer' (Berufsbezeichnung mit Suffix); 2) 'ich mag Technologie sehr' (Adverb 'sehr' nach dem Objekt, nicht am Satzende vor dem Verb)",
+      "C) Nur 'weil' muss ersetzt werden.",
+      "D) Der ganze Satz ist falsch."
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "b)Welche Stadt ist deine Traumstadt?",
+    "sitg": "A8.6.3",
+    "tik": "TİK-3.1",
+    "bloom": "Qiymətləndirmək",
+    "id": "bf33868d-ac7d-4d1f-9900-ea306746d5bc",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1124",
+    "bloom_level": "Anlama"
+  },
+  {
+    "question": "Du entwickelst eine Projektarbeit über 'Die besten Berufe der Zukunft' auf Deutsch. Welche Berufe und welche Begründungen (mit 'weil') wären am überzeugendsten für eine moderne, zukunftsorientierte Präsentation?",
+    "options": [
+      "A) Koch und Bäcker, weil sie Essen machen.",
+      "B) Programmierer, Umweltingenieur und Datenwissenschaftler – weil die digitale Transformation und der Klimawandel neue Fachkräfte brauchen, weil diese Berufe gut bezahlt werden und weil sie gesellschaftliche Probleme lösen.",
+      "C) Nur Berufe aus dem 19. Jahrhundert nennen.",
+      "D) Alle Berufe sind gleich gut für die Zukunft."
+    ],
+    "correctAnswer": 1,
+    "topic": "Projektarbeit. Beste Berufe",
+    "difficulty": "çətin",
+    "cat": "Alman dili 8",
+    "explanation": "Welche Berufe passen zu diesen Personen?",
+    "sitg": "A8.6.3",
+    "tik": "TİK-4.1",
+    "bloom": "Yaratmaq",
+    "id": "5b98cb08-a1b0-4248-bf0f-de592ccd99df",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    },
+    "passport_id": "08-ALM-1125",
+    "bloom_level": "Anlama"
+  }
+]

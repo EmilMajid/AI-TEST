@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-HEY-05-01",
+    "question": "Rezinin dartıldıqda uzanması, sərbəst buraxıldıqda yenidən öz formasına qayıtması xassəsi necə adlanır?",
+    "options": {
+      "A": "Kövrəklik",
+      "B": "Plastiklik",
+      "C": "Şəffaflıq",
+      "D": "Elastiklik"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Kövrəklik asanlıqla sınmağa deyilir.",
+      "B": "Plastiklik əşyanın formasını dəyişib o formada qalmasına deyilir.",
+      "C": "Şəffaflıq işığı keçirmə xüsusiyyətidir."
+    },
+    "explanation": "Rezinin əsas xassələrindən biri də dartıldıqda uzanması, sərbəst buraxıldıqda isə yenidən öz formasına qayıtmasıdır. Belə xassəyə elastiklik deyilir."
+  },
+  {
+    "passport_id": "03-HEY-05-02",
+    "question": "Şüşənin zərbənin təsirindən asanlıqla parçalanması onun hansı xassəsini göstərir?",
+    "options": {
+      "A": "Kövrəklik",
+      "B": "Plastiklik",
+      "C": "Elastiklik",
+      "D": "İstiyədavamlılıq"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Plastiklik şüşəyə aid deyil, metallara xasdır.",
+      "C": "Şüşə uzanmır, ona görə elastik deyil.",
+      "D": "İstiyədavamlılıq sınma ilə deyil, istiliklə əlaqədardır."
+    },
+    "explanation": "Şüşə bərk, sukeçirməyən, şəffaf və istiliyə davamlı olmaqla yanaşı, zərbənin təsirindən asanlıqla parçalanır. Bu, şüşənin kövrək xassəli olduğunu göstərir."
+  },
+  {
+    "passport_id": "03-HEY-05-03",
+    "question": "Metaldan hazırlanmış məftili əymək, döyəcləməklə istənilən formaya salmaq onun hansı xassəli olduğunu göstərir?",
+    "options": {
+      "A": "Kövrək",
+      "B": "Plastik",
+      "C": "Şəffaf",
+      "D": "Sukeçirən"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Metal asanlıqla parçalanmır, deməli kövrək deyil.",
+      "C": "Metalların əksəriyyəti qeyri-şəffafdır.",
+      "D": "Metallar sukeçirməyəndir."
+    },
+    "explanation": "Metaldan hazırlanmış məftil kimi əşyaları asanlıqla əymək, həmçinin döyəcləməklə istənilən formaya salmaq mümkündür. Bu, metalların plastik xassəli olduğunu göstərir."
+  },
+  {
+    "passport_id": "03-HEY-05-04",
+    "question": "Kağız materialı hansı xassələrə malikdir?",
+    "options": {
+      "A": "Bərk, sukeçirməyən, zərbəyədavamlı",
+      "B": "Şəffaf, istiyədavamlı, kövrək",
+      "C": "Yumşaq, yanıcı, suda asanlıqla islanan və cırılan",
+      "D": "Elastik, sukeçirməyən, bərk"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Kağız yumşaqdır və suyu asanlıqla keçirir.",
+      "B": "Kağız şəffaf və istiyədavamlı deyil.",
+      "D": "Kağız elastik və bərk deyil."
+    },
+    "explanation": "Kağız yumşaq, yanıcı, suda asanlıqla islanan və cırılan materialdır."
+  },
+  {
+    "passport_id": "03-HEY-05-05",
+    "question": "Nə üçün xüsusi sukeçirməyən geyimlərin hazırlanmasında rezindən istifadə edilir?",
+    "options": {
+      "A": "Çünki rezin çox bərkdir və zərbələrə davamlıdır.",
+      "B": "Çünki rezin kövrək materialdır.",
+      "C": "Çünki rezin suyu özünə çox yaxşı hopdurur.",
+      "D": "Çünki rezin yumşaq və sukeçirməyən materialdır."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Rezin çox bərk deyil, yumşaqdır.",
+      "B": "Rezin kövrək deyil, elastikdir.",
+      "C": "Rezin sukeçirməyəndir, suyu hopdurmur."
+    },
+    "explanation": "Rezin yumşaq, həm də sukeçirməyən olduğu üçün ondan xüsusi geyimlər hazırlanır."
+  },
+  {
+    "passport_id": "03-HEY-05-06",
+    "question": "Nə üçün dam örtüklərinin hazırlanmasında metallardan istifadə olunur?",
+    "options": {
+      "A": "Bərk, istiyədavamlı və sukeçirməyən olduqlarına görə.",
+      "B": "Suyu yaxşı hopdurduqlarına görə.",
+      "C": "Kövrək olub asanlıqla parçalandıqlarına görə.",
+      "D": "Şəffaf olduqlarına görə."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Metallar suyu hopdurmur.",
+      "C": "Metallar kövrək deyil, plastik xassəlidir.",
+      "D": "Metallar qeyri-şəffafdır."
+    },
+    "explanation": "Bir çox metal bərk, istiyədavamlı və sukeçirməyəndir. Ona görə də həmin metallardan avtomobillərin, istiyədavamlı əşyaların və dam örtüklərinin hazırlanmasında istifadə olunur."
+  },
+  {
+    "passport_id": "03-HEY-05-07",
+    "question": "Plastik materialların çox istifadə olunmasının əsas səbəblərindən biri nədir?",
+    "options": {
+      "A": "İstiliyə qarşı çox davamlı olması",
+      "B": "Ucuz olması",
+      "C": "Təbiətdə çox sürətlə parçalanması",
+      "D": "Tamamilə zərərsiz olması və təbiəti təmizləməsi"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Plastik materiallar istiliyə qarşı davamsızdır.",
+      "C": "Plastik təbiətdə çox gec parçalanır və çirkləndirir.",
+      "D": "Plastik təbiəti çirkləndirir, təmizləmir."
+    },
+    "explanation": "Plastik materialların çox istifadə olunmasının əsas səbəblərindən biri də onun ucuz olmasıdır."
+  },
+  {
+    "passport_id": "03-HEY-05-08",
+    "question": "Parçanın kağızdan fərqli xüsusiyyəti nədir?",
+    "options": {
+      "A": "Heç vaxt islanmır və suyu özündən itələyir.",
+      "B": "Suda asanlıqla əriyir və yox olur.",
+      "C": "İslanıb suyu özündə saxlayır, lakin cırılıb dağılmır və quruduqda əvvəlki vəziyyətinə qayıdır.",
+      "D": "İslanan kimi asanlıqla cırılır."
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Parça su itələyici deyil, islanıb su saxlayır.",
+      "B": "Parça suda ərimir.",
+      "D": "Bu, kağıza aid xüsusiyyətdir, parçaya deyil."
+    },
+    "explanation": "Kağızdan fərqli olaraq islandıqdan sonra cırılıb dağılmır və quruduqda yenidən əvvəlki vəziyyətinə qayıdır."
+  },
+  {
+    "passport_id": "03-HEY-05-09",
+    "question": "Yanacaq nədir?",
+    "options": {
+      "A": "Yalnız maye halında olan və təbiəti çirkləndirən maddə.",
+      "B": "Canlıların qidalandığı maddə.",
+      "C": "Təbiətdə öz-özünə çoxalan və çox soyuq olan maddə.",
+      "D": "Yandırıldıqda ətrafa işıq və istilik yayan maddə."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanacaq yalnız maye deyil, qaz və bərk də ola bilər (qaz, kömür).",
+      "B": "Bu, qidadır.",
+      "C": "Bu ifadə mətnə uyğun deyil."
+    },
+    "explanation": "Qaz yanacaqdır, onu yandırdıqda ətrafa işıq və istilik yayılır."
+  },
+  {
+    "passport_id": "03-HEY-05-10",
+    "question": "İstilik hansı cihazla ölçülür və dərəcəsi necə ifadə edilir?",
+    "options": {
+      "A": "Termometrlə ölçülür, dərəcə selsi ilə ifadə edilir.",
+      "B": "Tərəzi ilə ölçülür, kiloqramla ifadə edilir.",
+      "C": "Saat ilə ölçülür, dəqiqə ilə ifadə edilir.",
+      "D": "Xətkeşlə ölçülür, santimetrlə ifadə edilir."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Tərəzi çəki ölçür.",
+      "C": "Saat vaxtı ölçür.",
+      "D": "Xətkeş uzunluğu ölçür."
+    },
+    "explanation": "İstilik termometr adlanan cihazla ölçülür. Temperatur dərəcə selsi ilə ifadə edilir."
+  },
+  {
+    "passport_id": "03-HEY-05-11",
+    "question": "Temperaturları fərqli olan iki əşyanı bir-birinə toxundurduqda nə baş verir?",
+    "options": {
+      "A": "Heç bir dəyişiklik olmur, temperaturlar sabit qalır.",
+      "B": "İsti əşya soyuyur, soyuq əşya isə isinir və bir müddətdən sonra temperaturları bərabərləşir.",
+      "C": "Soyuq əşya daha da soyuyur, isti əşya daha da isinir.",
+      "D": "Hər iki əşya dərhal eyni anda soyuyur."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Əşyalar arasında istilik mübadiləsi gedir.",
+      "C": "İstilik həmişə isti əşyadan soyuğa keçir.",
+      "D": "Biri isinir, digəri soyuyur."
+    },
+    "explanation": "Temperaturları fərqli olan iki əşyanı bir-birinə toxundurduqda isti əşya soyuyur, soyuq əşya isə isinir. Bir müddətdən sonra onların temperaturları bərabərləşir."
+  },
+  {
+    "passport_id": "03-HEY-05-12",
+    "question": "Nə üçün isti su ilə dolu stəkandakı metal və plastik qaşıqları çıxardıqda metal qaşıq daha isti hiss olunur?",
+    "options": {
+      "A": "Çünki plastik ümumiyyətlə isinmir.",
+      "B": "Çünki metal qaşıq suyu daha çox canına çəkir.",
+      "C": "Çünki metal istiliyi plastikdən daha yaxşı keçirir.",
+      "D": "Çünki metal suyun temperaturunu artırır."
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Plastik isinir, amma istiliyi pis keçirir.",
+      "B": "Metal qaşıq suyu canına çəkmir.",
+      "D": "Qaşıq suyun temperaturunu artırmır."
+    },
+    "explanation": "Metal istiliyi plastikdən daha yaxşı keçirdiyi üçün biz elə hiss edirik."
+  },
+  {
+    "passport_id": "03-HEY-05-13",
+    "question": "Taxta və plastik materialların istilik keçirmə xüsusiyyəti necədir?",
+    "options": {
+      "A": "İstiliyi çox tez keçirirlər və tez qızırlar.",
+      "B": "İstiliyi yalnız çox yüksək temperaturda keçirirlər.",
+      "C": "İstiliyi tamamilə eyni bərabərlikdə paylayırlar.",
+      "D": "İstiliyi pis keçirirlər."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Taxta və plastik istiliyi tez keçirmir.",
+      "B": "Temperaturun çox yüksək olması vacib deyil, onlar ümumiyyətlə pis keçiricilərdir.",
+      "C": "Onlar istiliyi yaxşı paylamır."
+    },
+    "explanation": "Plastik kimi, taxta da istiliyi pis keçirən materialdır."
+  },
+  {
+    "passport_id": "03-HEY-05-14",
+    "question": "Çaydan və qazan metaldan hazırlandığı halda, onların tutacaqları nə üçün plastik və ya taxtadan olur?",
+    "options": {
+      "A": "Əlimiz yanmasın deyə, çünki bu materiallar istiliyi pis keçirir.",
+      "B": "Onların görünüşünü gözəlləşdirmək üçün.",
+      "C": "Qabların daha yüngül olması üçün.",
+      "D": "Qabın içindəki suyun daha tez qızması üçün."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Görünüş üçün deyil, təhlükəsizlik üçündür.",
+      "C": "Məqsəd yüngüllük deyil, istilik izolyasiyasıdır.",
+      "D": "Tutacaq suyun qızmasına təsir etmir."
+    },
+    "explanation": "Çaydan və qazan metaldan hazırlanır. Əlimiz yanmasın deyə onların tutacaq hissələri plastik və ya taxtadan olur."
+  },
+  {
+    "passport_id": "03-HEY-05-15",
+    "question": "Plastik materialın çatışmayan ən əsas xüsusiyyəti nədir?",
+    "options": {
+      "A": "Çox bahalı olması.",
+      "B": "Ondan hazırlanmış əşyaların təbiəti çirkləndirməsi.",
+      "C": "Suyu çox tez keçirməsi.",
+      "D": "Tez sınması."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Plastik ucuzdur.",
+      "C": "Plastik sukeçirməyəndir.",
+      "D": "Plastik zərbələrə davamlıdır."
+    },
+    "explanation": "Bu materialın çatışmayan xüsusiyyəti isə ondan hazırlanmış əşyaların təbiəti çirkləndirməsidir."
+  }
+]

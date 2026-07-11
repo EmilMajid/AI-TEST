@@ -1,0 +1,297 @@
+[
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-005",
+    "question": "1245 + 378 + 755 cəmini səmərəli üsulla hesablayın.",
+    "explanation": "Toplamanın yerdəyişmə və qruplaşdırma xassəsindən istifadə etməklə: (1245 + 755) + 378 = 2000 + 378 = 2378."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-006",
+    "question": "Mağazada birinci gün 120 kq, ikinci gün isə bundan 45 kq çox alma satıldı. İki günə cəmi neçə kiloqram alma satılıb?",
+    "explanation": "İkinci gün satılan alma: 120 + 45 = 165 kq. İki günə cəmi: 120 + 165 = 285 kq alma satılmışdır."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-01-008",
+    "question": "Çıxılanı 50 vahid artırıb, azalanı dəyişməsək, fərq necə dəyişər?",
+    "explanation": "Fərq = Azalan - Çıxılan. Çıxılan artdıqca fərq bir o qədər kiçilir. Deməli, fərq 50 vahid azalar."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-015",
+    "question": "Avtobusda bir neçə sərnişin var idi. Birinci dayanacaqda 14 nəfər düşdü, 10 nəfər mindi. İkinci dayanacaqda 7 nəfər düşdü, 12 nəfər mindi. Bundan sonra avtobusda 30 sərnişin oldu. Əvvəlcə avtobusda neçə sərnişin var idi?",
+    "explanation": "Başlanğıc say x olsun. x - 14 + 10 - 7 + 12 = 30. Sadələşdirsək, x + 1 = 30, buradan x = 29."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-023",
+    "question": "Rəqəmləri cəmi 12 olan ən böyük üçrəqəmli ədədlə, rəqəmləri cəmi 15 olan ən kiçik üçrəqəmli ədədin fərqini tapın.",
+    "explanation": "Rəqəmləri cəmi 12 olan ən böyük üçrəqəmli ədəd 930-dur (9+3+0=12). Rəqəmləri cəmi 15 olan ən kiçik üçrəqəmli ədəd isə 159-dur (yüzlüyü ən kiçik olan və 1+5+9=15). Fərq: 930 - 159 = 771."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-03-024",
+    "question": "Kvadratın tərəfini 5 sm artırdıqda, onun perimetri neçə santimetr artar?",
+    "explanation": "Kvadratın 4 tərəfi var. Hər tərəf 5 sm artdıqda, perimetr ümumilikdə 4 * 5 = 20 sm artır."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-025",
+    "question": "Anbarda olan 1200 kq şəkər tozunun birinci gün 345 kq-ı, ikinci gün isə qalan şəkər tozundan 420 kq satıldı. Anbarda neçə kiloqram şəkər tozu qaldı?",
+    "explanation": "Birinci gün satıldıqdan sonra qalan şəkər tozu: 1200 - 345 = 855 kq. İkinci gün bundan 420 kq satıldı: 855 - 420 = 435 kq qaldı."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-027",
+    "question": "Fermada inəklər və qoyunlar var. İnəklərin sayı qoyunların sayından 45 baş azdır. Fermaya 20 inək və 30 qoyun da gətirildikdən sonra qoyunların sayı inəklərdən neçə baş çox olar?",
+    "explanation": "Əvvəlcə qoyunlar inəklərdən 45 baş çox idi. Fermaya 30 qoyun və 20 inək gətirildikdə qoyunların üstünlüyü: 45 + 30 - 20 = 55 baş təşkil edəcək."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-029",
+    "question": "Ailədə ata, ana və iki uşaq var. Bütün ailə üzvlərinin 5-dən çox yaşı olduğunu bilərək, onların hazırkı yaşları cəminin 96 olduğunu nəzərə alıb, 4 il əvvəlki yaşları cəmini tapın.",
+    "explanation": "Ailədə 4 nəfər var və hər birinin 4 il əvvəl yaşadığı məlumdur (çünki yaşları 5-dən çoxdur). 4 il əvvəl hər biri 4 yaş kiçik olub. Ümumi fərq: 4 * 4 = 16. Yaşları cəmi: 96 - 16 = 80 olacaq."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-001",
+    "question": "Təkliklər və yüzlüklər mərtəbəsində 4, onluqlar və minliklər mərtəbəsində 2 olan dördrəqəmli ədədlə 1587-nin cəmini tapın.",
+    "explanation": "Şərtdə təsvir olunan dördrəqəmli ədəd 2424-dür. Bu ədədlə 1587-ni topladıqda: 2424 + 1587 = 4011 alınır."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-002",
+    "question": "Ən böyük dördrəqəmli ədəddən 3456 çıxdıqda alınan fərqi tapın.",
+    "explanation": "Rəqəmləri təkrarlana bilən ən böyük dördrəqəmli ədəd 9999-dur. 9999 - 3456 = 6543."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-01-003",
+    "question": "Toplananlardan biri 345, cəm isə 1000 olarsa, digər toplananı tapın.",
+    "explanation": "Məchul toplananı tapmaq üçün cəmdən məlum toplananı çıxmaq lazımdır: 1000 - 345 = 655."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-01-004",
+    "question": "Azalan 5432, fərq isə 1234 olarsa, çıxılanı tapın.",
+    "explanation": "Məchul çıxılanı tapmaq üçün azalandan fərqi çıxmaq lazımdır: 5432 - 1234 = 4198."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-007",
+    "question": "560 - (230 + 140) ifadəsinin qiymətini tapın.",
+    "explanation": "Əvvəlcə mötərizənin içi hesablanır: 230 + 140 = 370. Sonra isə fərq tapılır: 560 - 370 = 190."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-009",
+    "question": "3 minlik, 4 yüzlük, 5 onluq və 2 təklikdən ibarət olan ədədlə 1 minlik, 2 yüzlük, 3 onluq və 4 təkliyi olan ədədin fərqini tapın.",
+    "explanation": "Birinci ədəd 3452, ikinci ədəd isə 1234-dür. Onların fərqi: 3452 - 1234 = 2218."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-01-010",
+    "question": "a + 45 = 120 və b - 30 = 40 olarsa, a + b cəmini tapın.",
+    "explanation": "Məchulları tapırıq: a = 120 - 45 = 75, b = 40 + 30 = 70. Onların cəmi: 75 + 70 = 145."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-011",
+    "question": "Üç ardıcıl natural ədədin cəmi 126-dır. Bu ədədlərdən ən böyüyünü tapın.",
+    "explanation": "Ardıcıl ədədləri x, x+1, x+2 kimi işarə etsək, 3x + 3 = 126. Buradan 3x = 123, x = 41. Ədədlər 41, 42 və 43-dür. Ən böyüyü 43-dür."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-012",
+    "question": "İki ədədin cəmi 540-dır. Onlardan biri digərindən 80 vahid böyükdür. Kiçik ədədi tapın.",
+    "explanation": "Kiçik ədəd x, böyük ədəd x + 80 olsun. x + (x + 80) = 540. 2x = 460, x = 230. Kiçik ədəd 230-dur."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-013",
+    "question": "Bütün rəqəmləri müxtəlif olan ən böyük dördrəqəmli ədədlə, rəqəmləri müxtəlif olan ən kiçik üçrəqəmli ədədin fərqini tapın.",
+    "explanation": "Rəqəmləri müxtəlif ən böyük dördrəqəmli ədəd 9876, rəqəmləri müxtəlif ən kiçik üçrəqəmli ədəd isə 102-dir. Fərq: 9876 - 102 = 9774."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-02-014",
+    "question": "Şagird 458 ilə 327-ni toplayarkən, birinci ədədin onluqlar mərtəbəsindəki rəqəmi 2 vahid kiçik, ikinci ədədin yüzlüklər mərtəbəsindəki rəqəmi 1 vahid böyük yazdı. O, nəticəni neçə aldı?",
+    "explanation": "Birinci ədəd 438, ikinci ədəd isə 427 olaraq yazılıb. Yeni nəticə: 438 + 427 = 865. Əslində orijinal cəm 785 idi, dəyişiklik (-20 + 100 = +80) olduğu üçün yeni cəm 785+80=865 oldu."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-02-016",
+    "question": "Azalan, çıxılan və fərqin cəmi 246-dır. Fərq çıxılandan 23 vahid böyükdür. Çıxılanı tapın.",
+    "explanation": "Azalan + Çıxılan + Fərq = 246. Azalan = Çıxılan + Fərq olduğundan, 2 * Azalan = 246, yəni Azalan = 123. Çıxılan + Fərq = 123. Fərq = Çıxılan + 23 qoyduqda: 2 * Çıxılan + 23 = 123, buradan Çıxılan = 50 tapılır."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-02-017",
+    "question": "1-dən 100-ə qədər olan natural ədədlərin içərisində rəqəmləri cəmi 8 olan neçə ədəd var?",
+    "explanation": "Rəqəmləri cəmi 8 olan ədədlər: 8, 17, 26, 35, 44, 53, 62, 71, 80. Ümumilikdə 9 belə ədəd var."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-018",
+    "question": "Kənddən şəhərə gedən yol 145 km-dir. Avtomobil yolun bir hissəsini getdikdən sonra, qalan yol gedilən yoldan 25 km çox oldu. Avtomobil neçə kilometr yol gedib?",
+    "explanation": "Gedilən yola x desək, qalan yol x + 25 olar. x + (x + 25) = 145. 2x = 120, x = 60 km. Avtomobil 60 km yol gedib."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-02-019",
+    "question": "(a + b) - c ifadəsində toplananların hər birini 15 vahid artırıb, çıxılanı 10 vahid azaltsaq, nəticə necə dəyişər?",
+    "explanation": "Yeni ifadə: (a + 15 + b + 15) - (c - 10) = (a + b + 30) - c + 10 = (a + b - c) + 40. Gördüyümüz kimi nəticə 40 vahid artar."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-02-020",
+    "question": "A = 4523, B = 2145 və C = 3120 olarsa, A - (C - B) ifadəsinin qiymətini tapın.",
+    "explanation": "Əvvəlcə mötərizənin içi hesablanır: C - B = 3120 - 2145 = 975. Sonra fərq tapılır: A - 975 = 4523 - 975 = 3548."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-021",
+    "question": "Cəmi 440 olan üç ədəddən birincisi ikincidən 20 vahid böyük, üçüncüdən isə 10 vahid kiçikdir. Bu ədədlərdən ən kiçiyi neçədir?",
+    "explanation": "İkinci ədədi x qəbul edək. Birinci ədəd x + 20 olur. Birinci üçüncüdən 10 vahid kiçikdirsə, üçüncü ədəd x + 30 olur. Cəm: (x+20) + x + (x+30) = 440. 3x + 50 = 440, 3x = 390, x = 130. Ədədlər 150, 130 və 160-dır. Ən kiçiyi 130-dur."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-022",
+    "question": "İki rəqəmli bir ədədin rəqəmlərinin yerini dəyişdikdə alınan yeni ədəd əvvəlki ədəddən 45 vahid böyük olur. Bu şərti ödəyən ən kiçik iki rəqəmli ədədi tapın.",
+    "explanation": "Ədədi 10a + b qəbul etsək, yeni ədəd 10b + a olur. Fərq: 9(b - a) = 45, buradan b - a = 5. Şərti ödəyən rəqəmlər: (1 və 6), (2 və 7), (3 və 8), (4 və 9). Ən kiçik ədəd 16-dır (61 - 16 = 45)."
+  },
+  {
+    "id": "05-004-0101-B1F02-anlama-03-026",
+    "question": "5 ardıcıl tək natural ədədin cəmi 135-dir. Bu ədədlərin ən böyüyü ilə ən kiçiyinin fərqini tapın.",
+    "explanation": "5 ardıcıl tək natural ədəd: x, x+2, x+4, x+6, x+8 şəklindədir. Ən böyük ilə ən kiçiyinin fərqi ədədlərin qiymətindən asılı olmayaraq həmişə (x+8) - x = 8-dir."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-028",
+    "question": "İki ədədin fərqi 150-dir. Azalanı 40 vahid artırıb, çıxılanı 30 vahid azaltdıqda yeni fərq neçə olar?",
+    "explanation": "Fərq azalan artdıqca artır, çıxılan azaldıqca da artır. Hər iki dəyişiklik fərqi artırır: 150 + 40 + 30 = 220."
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-030",
+    "question": "Velosipedçi 3 saat ərzində müəyyən yol getdi. O, birinci saatda 14 km, ikinci saatda birinci saatdan 3 km çox, üçüncü saatda isə ilk iki saatda getdiyi yolun cəmindən 15 km az yol getdi. Velosipedçi üç saata cəmi neçə kilometr yol gedib?",
+    "explanation": "Birinci saat: 14 km. İkinci saat: 14 + 3 = 17 km. İlk iki saatın cəmi: 14 + 17 = 31 km. Üçüncü saat: 31 - 15 = 16 km. Ümumi yol: 14 + 17 + 16 = 47 km."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-001",
+    "question": "456 və 465 ədədlərini müqayisə edin.",
+    "explanation": "Ədədlərin mərtəbə vahidlərinə baxdıqda yüzlükləri bərabər (4=4), onluqlarında isə 5 < 6 olduğu üçün 456 ədədi 465-dən kiçikdir."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-002",
+    "question": "1205 və 1205 ədədlərini müqayisə edin.",
+    "explanation": "Hər iki ədədin bütün mərtəbə vahidləri və rəqəmləri tam olaraq eyni olduğuna görə bu ədədlər bir-birinə bərabərdir."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-003",
+    "question": "10000 və 9999 ədədlərini müqayisə edin.",
+    "explanation": "Rəqəmlərinin sayı çox olan natural ədəd hər zaman daha böyükdür. 10000 beşrəqəmli, 9999 isə dördrəqəmli olduğundan 10000 > 9999."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-004",
+    "question": "Verilmiş ədədlərdən ən böyüyünü tapın: 543, 534, 453, 435.",
+    "explanation": "Ədədlərin yüzlüklərinə baxsaq 5 rəqəmi ilə başlayanlar (543 və 534) daha böyükdür. Onluqlarına görə 4 > 3 olduğundan 543 ən böyük ədəddir."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-005",
+    "question": "Verilmiş ədədlərdən ən kiçiyini tapın: 876, 867, 786, 768.",
+    "explanation": "Yüzlükləri ən kiçik olan ədədlər 786 və 768-dir. Onluqlarına görə 6 < 8 olduğundan 768 ən kiçik ədəddir."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-006",
+    "question": "1023 > 102* bərabərsizliyində * yerinə hansı rəqəm ola bilməz?",
+    "explanation": "Bərabərsizliyin doğru olması üçün * yerinə 3-dən kiçik rəqəmlər yazılmalıdır (0, 1, 2). 3 yazılsa 1023 > 1023 yanlış olar."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-007",
+    "question": "Artma sırası ilə düzülmüş sıranı göstərin:",
+    "explanation": "Artma sırası ədədlərin kiçikdən böyüyə doğru düzülməsidir. 21 < 25 < 30 şərti bu sıranın doğru olduğunu göstərir."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-008",
+    "question": "Azalma sırası ilə düzülmüş sıranı göstərin:",
+    "explanation": "Azalma sırası ədədlərin böyükdən kiçiyə doğru düzülməsidir. 100 > 90 > 80 sırası buna uyğundur."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-009",
+    "question": "5 rəqəmli ən kiçik natural ədəd ilə 4 rəqəmli ən böyük natural ədədi müqayisə edin.",
+    "explanation": "Beşrəqəmli ən kiçik natural ədəd 10000, dördrəqəmli ən böyük isə 9999-dur. Rəqəmlərinin sayı çox olan ədəd həmişə böyükdür."
+  },
+  {
+    "id": "05-004-0101-B1F02-01-01-010",
+    "question": "7894 ədədi hansı ədəddən bir vahid böyükdür?",
+    "explanation": "Bir ədədin hansı ədəddən 1 vahid böyük olduğunu tapmaq üçün ondan 1 çıxmaq lazımdır: 7894 - 1 = 7893."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-011",
+    "question": "A = 4589, B = 4598, C = 4859, D = 4895. Bu ədədləri artma sırası ilə düzün.",
+    "explanation": "Ədədləri mərtəbə vahidlərinə görə müqayisə etsək: 4589 < 4598 < 4859 < 4895 alınır. Beləliklə sıra A < B < C < D kimidir."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-012",
+    "question": "a = 5 minlik + 3 yüzlük + 2 onluq, b = 5 minlik + 2 yüzlük + 9 onluq. a və b-ni müqayisə edin.",
+    "explanation": "Mərtəbə toplananlarının cəmi şəklində verilmiş ədədlər: a = 5320, b = 5290. Yüzlüklərə görə 3 > 2 olduğundan a > b."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-013",
+    "question": "X > 450 bərabərsizliyini ödəyən ən kiçik natural ədədlə ən böyük iki rəqəmli natural ədədin cəmini tapın.",
+    "explanation": "X > 450 olduğu üçün X-in ən kiçik natural qiyməti 451-dir. Ən böyük iki rəqəmli ədəd 99-dur. Onların cəmi: 451 + 99 = 550."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-014",
+    "question": "3, 0, 7, 5 rəqəmlərinin hərəsindən bir dəfə istifadə etməklə yazılan ən böyük və ən kiçik dördrəqəmli ədədlərin fərqini tapın.",
+    "explanation": "Bu rəqəmlərlə yazılan ən böyük ədəd 7530, ən kiçiyi isə 3057-dir (0 başda ola bilməz). Fərq: 7530 - 3057 = 4473."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-015",
+    "question": "245*7 < 24538 bərabərsizliyində * yerinə yazıla biləcək rəqəmlərin cəmini tapın.",
+    "explanation": "Bərabərsizliyin ödənməsi üçün * rəqəmi 3-dən kiçik və ya ona bərabər ola bilər (çünki * = 3 olduqda 24537 < 24538 doğrudur). Rəqəmlər 0, 1, 2, 3-dür. Cəmi: 0 + 1 + 2 + 3 = 6."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-016",
+    "question": "x, y və z natural ədədlərdir. x + 15 = y + 20 = z + 10. Bu ədədləri azalma sırası ilə düzün.",
+    "explanation": "Cəmlərin bərabərliyində ən kiçik toplananı olan ədəd ən böyük, ən böyük toplananı olan ədəd isə ən kiçikdir. 10 < 15 < 20 olduğundan z > x > y olur."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-017",
+    "question": "Ədəd oxu üzərində 125 ədədindən sağda, 130 ədədindən solda yerləşən natural ədədlərin cəmini tapın.",
+    "explanation": "Aralıqda yerləşən ədədlər 126, 127, 128 və 129-dur. Onların cəmi 126 + 127 + 128 + 129 = 510 təşkil edir."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-018",
+    "question": "4 ardıcıl tək natural ədədi artma sırası ilə yazdıqda üçüncü ədəd 15 olarsa, bu ədədlərin ən kiçiyi neçədir?",
+    "explanation": "Ardıcıl tək ədədlər arasındakı fərq 2-dir. Üçüncü ədəd 15-dirsə, ikinci ədəd 15-2=13, birinci (ən kiçik) ədəd isə 13-2=11 olar."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-019",
+    "question": "84*5 < 8432 bərabərsizliyini doğru edən rəqəmlərin sayı neçədir?",
+    "explanation": "* yerinə 3 yazsaq 8435 < 8432 səhv olur. Ona görə * ancaq 0, 1 və ya 2 ola bilər. Belə rəqəmlərin ümumi sayı 3-dür."
+  },
+  {
+    "id": "05-004-0101-B1F02-02-02-020",
+    "question": "A = 245000, B = 24500 və C = 240500 ədədlərini müqayisə edin.",
+    "explanation": "Əvvəlcə rəqəmlərin sayına baxılır: B(24500) beşrəqəmli olduğundan ən kiçikdir. C(240500) və A(245000) müqayisə edildikdə 240 min < 245 min. Nəticədə B < C < A olur."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-021",
+    "question": "a, b, c natural ədədləri üçün a * 4 = b * 5 = c * 3 olarsa, a, b və c-ni artma sırası ilə sıralayın.",
+    "explanation": "Hasillər bərabərdirsə, böyük vuruğun yanındakı ədəd kiçik olmalıdır. 5 > 4 > 3 olduğundan, ədədlərin böyüklük sırası b < a < c kimi olacaq."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-022",
+    "question": "a > b > c natural ədədlərdir və a + b + c = 40. a-nın ala biləcəyi ən kiçik qiyməti tapın.",
+    "explanation": "a-nın ən kiçik olması üçün ədədlər bir-birinə ən yaxın olmalıdır. 40/3 təxminən 13.3 edir. a=14 olsa, b=13, c=12 cəmi 39 edir. Beləliklə, ən yaxın uyğunluq a=15, b=14, c=11 və ya b=13, c=12 olur. Yəni a ən az 15 ola bilər."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-023",
+    "question": "x, y, z müxtəlif natural ədədlərdir. 3x + 4y + 5z = 60 tənliyində x-in ala biləcəyi ən böyük qiyməti tapın.",
+    "explanation": "x-in maksimum olması üçün y və z minimum olmalıdır. Tənlikdə z=1, y=4 qəbul etdikdə 3x + 16 + 5 = 60 => 3x = 39 => x=13 alınır. (x, y, z müxtəlif: 13, 4, 1 uyğundur)."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-024",
+    "question": "A = 10^5 + 3, B = 10^5 - 3. A və B ədədləri arasında yerləşən natural ədədlərin cəmini tapın.",
+    "explanation": "A = 100003, B = 99997. Bu ədədlər arasındakı tam ədədlər: 99998, 99999, 100000, 100001, 100002. Beş ədədin cəmi: 5 * 100000 = 500000 edir."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-025",
+    "question": "1-dən 100-ə qədər (100 daxil olmaqla) ədədlərin yazılışında neçə dəfə 7 rəqəmindən istifadə olunub?",
+    "explanation": "Təkliklərdə 7 rəqəmi 10 dəfə (7, 17, 27... 97), onluqlarda 7 rəqəmi 10 dəfə (70, 71... 79) istifadə olunur. 77 ədədində isə iki dəfədir və hər mərtəbədə ayrı sayılıb. Cəmi: 10 + 10 = 20 dəfə."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-027",
+    "question": "a və b natural ədədlərdir. a > 15 və b < 8 olarsa, a - b fərqinin ən kiçik qiymətini tapın.",
+    "explanation": "Fərqin minimum olması üçün azalan (a) ən kiçik, çıxılan (b) isə ən böyük olmalıdır. a-nın ən kiçik qiyməti 16, b-nin ən böyük qiyməti 7-dir. 16 - 7 = 9."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-028",
+    "question": "Üç fərqli ikirəqəmli natural ədədin cəmi 250-dir. Bu ədədlərin ən kiçiyi ən azı neçə ola bilər?",
+    "explanation": "Ən kiçiyin minimum olması üçün digər ikisi maksimum (99 və 98) olmalıdır. Onların cəmi 197. Üçüncü ədəd = 250 - 197 = 53 ola bilər."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-029",
+    "question": "İki ardıcıl natural ədədin hasili onların cəmindən 11 vahid böyükdür. Bu ədədlərin böyüyünü tapın.",
+    "explanation": "Ədədləri x və x+1 qəbul edək. Tənlik: x(x+1) = x + (x+1) + 11 => x^2 - x - 12 = 0. Natural kök x=4-dür. Ədədlər 4 və 5-dir, onların böyüyü 5-dir."
+  },
+  {
+    "id": "05-004-0101-B1F02-03-03-030",
+    "question": "n natural ədəddir. 12 < 3n - 5 ≤ 25 bərabərsizliyini ödəyən n-lərin cəmini tapın.",
+    "explanation": "Hər tərəfə 5 əlavə edirik: 17 < 3n ≤ 30. 3-ə bölürük: 5.66 < n ≤ 10. n-in ala biləcəyi qiymətlər: 6, 7, 8, 9, 10. Cəmi: 6 + 7 + 8 + 9 + 10 = 40."
+  }
+]

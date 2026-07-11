@@ -1,0 +1,5886 @@
+[
+  {
+    "id": "09-001-1-2-1-02",
+    "passport_id": "09-FRA-1000",
+    "question": "Que signifie le mot \"débutant\" dans le contexte sportif ?",
+    "options": [
+      "Un entraîneur professionnel.",
+      "Une personne qui ne fait pas de sport.",
+      "Un médecin pour les sportifs.",
+      "Une personne qui commence à pratiquer un sport."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-1-03",
+    "passport_id": "09-FRA-1001",
+    "question": "Choisissez l'option correcte pour compléter la phrase : \"Je ... faire de la musculation.\"",
+    "options": [
+      "voulez",
+      "veux",
+      "veut",
+      "voulons"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-1-04",
+    "passport_id": "09-FRA-1002",
+    "question": "Complétez la phrase correctement : \"Il adore jouer ... tennis.\"",
+    "options": [
+      "à la",
+      "du",
+      "de la",
+      "au"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-1-1-05",
+    "passport_id": "09-FRA-1003",
+    "question": "Trouvez le synonyme du mot \"renseigner\" selon le vocabulaire de la leçon.",
+    "options": [
+      "jouer",
+      "inscrire",
+      "payer",
+      "informer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-2-2-06",
+    "passport_id": "09-FRA-1004",
+    "question": "Pourquoi Seymour demande-t-il un entraîneur ?",
+    "options": [
+      "Parce qu'il veut devenir un professeur de yoga.",
+      "Parce qu'il est débutant et ne sait pas faire de la musculation.",
+      "Parce qu'il ne veut pas payer par carte bancaire.",
+      "Parce qu'il veut participer aux cours collectifs."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-2-07",
+    "passport_id": "09-FRA-1005",
+    "question": "Complétez avec le verbe modal qui convient : \"Pour avoir une bonne note, elles ... travailler et réviser.\"",
+    "options": [
+      "doivent",
+      "devons",
+      "doit",
+      "devez"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-1-2-09",
+    "passport_id": "09-FRA-1006",
+    "question": "Qu'est-ce que \"l'abonnement\" selon la définition du livre ?",
+    "options": [
+      "Contrat qui permet au client de recevoir un service régulier.",
+      "Les heures de travail d’un établissement.",
+      "Méthode d'entraînement sportif.",
+      "Une entrée ou un passage dans la salle."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-2-10",
+    "passport_id": "09-FRA-1007",
+    "question": "Combien Seymour doit-il payer s'il choisit l'abonnement à la salle de musculation ET aux cours collectifs ?",
+    "options": [
+      "45 manats par mois.",
+      "60 manats par mois.",
+      "15 manats par mois.",
+      "30 manats par mois."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-3-11",
+    "passport_id": "09-FRA-1008",
+    "question": "Quelle phrase est grammaticalement correcte en utilisant les verbes \"faire\" ou \"jouer\" ?",
+    "options": [
+      "Mes amis jouent de l'escalade et font aux échecs.",
+      "Mes amis font du escalade et jouent au échecs.",
+      "Mes amis font de l'escalade et jouent aux échecs.",
+      "Mes amis jouent à l'escalade et font des échecs."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-5-3-12",
+    "passport_id": "09-FRA-1009",
+    "question": "Trouvez la faute dans la phrase suivante : \"Elle sais faire du natation chaque jour.\"",
+    "options": [
+      "Il faut écrire \"sait\" et \"au natation\".",
+      "Il faut écrire \"sais\" et \"de le natation\".",
+      "Il faut écrire \"savent\" et \"du natation\".",
+      "Il faut écrire \"sait\" et \"de la natation\"."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-3-14",
+    "passport_id": "09-FRA-1010",
+    "question": "Quel mot complète logiquement cette série : \"les heures de travail, l'entrée, par mois, ...\" ? (Trouvez les mots correspondants dans la leçon)",
+    "options": [
+      "un horaire d'ouverture, un entraîneur, mensuel.",
+      "l'abonnement, en liquide, mensuel.",
+      "un accès, la musculation, en espèces.",
+      "un horaire d'ouverture, un accès, mensuel."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-1-1-1",
+    "passport_id": "09-FRA-1011",
+    "question": "C’est un document écrit par le médecin qui précise le traitement à suivre. Qu'est-ce que c'est ?",
+    "options": [
+      "Un pansement",
+      "Un diagnostic",
+      "Une consultation",
+      "Une ordonnance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-1-2",
+    "passport_id": "09-FRA-1012",
+    "question": "Selon le texte, quel est le rôle principal des protéines dans notre corps ?",
+    "options": [
+      "Elles sont essentielles pour la constitution des muscles.",
+      "Elles remplacent complètement l'eau dans le corps.",
+      "Elles aident à dormir sans prendre de médicaments.",
+      "Elles soignent toutes les maladies chroniques."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-1-1-3",
+    "passport_id": "09-FRA-1013",
+    "question": "Comment forme-t-on correctement le gérondif du verbe « chanter » ?",
+    "options": [
+      "En chantant",
+      "En chanté",
+      "En chantons",
+      "En chanter"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-1-4",
+    "passport_id": "09-FRA-1014",
+    "question": "Quel est le lieu exclusif où l'on a le droit d'acheter des médicaments selon le texte ?",
+    "options": [
+      "À la clinique privée",
+      "Au supermarché",
+      "Au cabinet médical",
+      "À la pharmacie"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-3-2-1",
+    "passport_id": "09-FRA-1015",
+    "question": "Quel est le gérondif correct du verbe irrégulier « avoir » ?",
+    "options": [
+      "En avons",
+      "En étant",
+      "En ayant",
+      "En avouant"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-2-3",
+    "passport_id": "09-FRA-1016",
+    "question": "Quelle nuance exprime le gérondif dans cette phrase : « Il s’est fracturé le genou en jouant au foot. » ?",
+    "options": [
+      "La cause directe",
+      "La condition",
+      "Le moyen / la manière",
+      "La simultanéité"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-2-4",
+    "passport_id": "09-FRA-1017",
+    "question": "Quel terme décrit l'état d'un patient qui se repose après les soins pour retrouver son état de santé habituel ?",
+    "options": [
+      "La convalescence",
+      "L'ordonnance",
+      "L'auscultation",
+      "Le diagnostic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-1",
+    "passport_id": "09-FRA-1018",
+    "question": "Quelle idée exprime le gérondif dans la phrase suivante : « Tu pourrais gagner la compétition en t’entraînant davantage. » ?",
+    "options": [
+      "La condition",
+      "La simultanéité",
+      "L'opposition",
+      "Le moyen / la manière"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-2",
+    "passport_id": "09-FRA-1019",
+    "question": "Par quel processus le docteur fait-il généralement un diagnostic lors d'une consultation ?",
+    "options": [
+      "En faisant de la rééducation",
+      "En délivrant les médicaments",
+      "En vendant une ordonnance",
+      "En auscultant le malade"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-4",
+    "passport_id": "09-FRA-1020",
+    "question": "Quelle phrase utilise correctement un gérondif irrégulier ?",
+    "options": [
+      "Elle aide les patients en soyant toujours souriante et gentille.",
+      "Tu améliores ton français en lisons beaucoup de livres.",
+      "Il gère la situation calmement en ayant confiance en lui.",
+      "Nous réussissons l'examen en savant toutes les règles de grammaire."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-5",
+    "passport_id": "09-FRA-1021",
+    "question": "D'après les recommandations médicales évoquées dans le manuel, quelle action n'est PAS conseillée pour maintenir une bonne santé ?",
+    "options": [
+      "Boire de l'eau en quantité suffisante chaque jour.",
+      "Manger cinq fruits et légumes par jour.",
+      "Manger beaucoup de viande chaque jour.",
+      "Faire 30 minutes d'activité physique au quotidien."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-XAT-S-04",
+    "passport_id": "09-FRA-1022",
+    "question": "Qui a reçu le prix Nobel de la paix en 2007 pour son travail de sensibilisation sur le réchauffement planétaire ?",
+    "options": [
+      "Tedros Adhanom",
+      "Un scientifique français",
+      "Léopold Sédar Senghor",
+      "Al Gore"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-ANL-S-05",
+    "passport_id": "09-FRA-1023",
+    "question": "Comment appelle-t-on le phénomène qui entraîne la hausse progressive de la température de la Terre ?",
+    "options": [
+      "Le covoiturage écologique",
+      "L'épuisement de l'ozone",
+      "La fonte polaire",
+      "Le réchauffement planétaire"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-ANL-O-07",
+    "passport_id": "09-FRA-1024",
+    "question": "Selon le texte, quelle serait la conséquence directe de la fonte de la glace polaire ?",
+    "options": [
+      "La réduction des ouragans",
+      "Le refroidissement de l'atmosphère",
+      "La diminution des gaz nocifs",
+      "L'augmentation du niveau de l'eau des océans"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-O-08",
+    "passport_id": "09-FRA-1025",
+    "question": "Quelle phrase exprime correctement une restriction signifiant 'Il prend seulement une valise' ?",
+    "options": [
+      "Il prend ne qu'une valise.",
+      "Il ne prend aucune valise.",
+      "Il ne prend pas de valise.",
+      "Il ne prend qu'une valise."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-11",
+    "passport_id": "09-FRA-1026",
+    "question": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+    "options": [
+      "trouve",
+      "trouvaient",
+      "trouvent",
+      "trouveront"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TEH-C-12",
+    "passport_id": "09-FRA-1027",
+    "question": "Que met en évidence le livre 'Une vérité qui dérange' d'Al Gore selon le texte ?",
+    "options": [
+      "L'obligation de cesser d'utiliser toute forme de technologie.",
+      "L'impossibilité totale de réduire les gaz à effet de serre.",
+      "Les désastres qui sont absolument sûrs d'arriver demain.",
+      "Les conséquences graves possibles du réchauffement climatique si rien n'est fait."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-13",
+    "passport_id": "09-FRA-1028",
+    "question": "Choisissez la bonne forme verbale dans le cadre d'une hypothèse : 'Si nous utilisions davantage les vélos, nous ... la production des gaz.'",
+    "options": [
+      "diminuions",
+      "diminuerons",
+      "diminuons",
+      "diminuerions"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-14",
+    "passport_id": "09-FRA-1029",
+    "question": "Remplacez la proposition relative 'qui utilisent' par le participe présent adéquat : 'Les usines ... encore des produits chimiques dangereux doivent fermer.'",
+    "options": [
+      "utilisation",
+      "utilisent",
+      "utilisés",
+      "utilisant"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-sadə-01",
+    "passport_id": "09-FRA-1030",
+    "question": "Où se sont tenus les Jeux Olympiques en été 2024 ?",
+    "options": [
+      "À Athènes",
+      "À Londres",
+      "À Tokyo",
+      "À Paris"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-sadə-02",
+    "passport_id": "09-FRA-1031",
+    "question": "Quelle compétition sportive s'est déroulée au parc du château de Versailles ?",
+    "options": [
+      "L'escrime",
+      "Le cyclisme",
+      "Les épreuves d'équitation",
+      "Le volleyball de plage"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-3-sadə-04",
+    "passport_id": "09-FRA-1032",
+    "question": "Complétez la phrase : « La semaine dernière, ma cousine ______ de son vélo. »",
+    "options": [
+      "est tombée",
+      "a tombé",
+      "a tombée",
+      "est tombé"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-orta-07",
+    "passport_id": "09-FRA-1033",
+    "question": "Quelles dates correspondent à l'organisation des Jeux Paralympiques de Paris 2024 ?",
+    "options": [
+      "Du 26 juillet au 11 août",
+      "Du 28 août au 8 septembre",
+      "Durant le mois d'avril",
+      "Du 11 août au 28 août"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-2-çətin-13",
+    "passport_id": "09-FRA-1034",
+    "question": "Dans le texte, on trouve plusieurs mots qui expriment une idée exceptionnelle ou symbolique. Quel adjectif qualifie l'expérience des Jeux pour signifier qu'elle est nouvelle et jamais vue auparavant ?",
+    "options": [
+      "Populaire",
+      "Inédite",
+      "Originel",
+      "Emblématique"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-3-çətin-15",
+    "passport_id": "09-FRA-1035",
+    "question": "Observez la phrase : « Les épreuves d'équitation se sont _____ au parc du château de Versailles. » Quel participe passé la complète correctement ?",
+    "options": [
+      "tenues",
+      "tenu",
+      "tenus",
+      "tenue"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-XAT-S-03",
+    "passport_id": "09-FRA-1036",
+    "question": "En quelle année l’OMS a-t-elle été créée ?",
+    "options": [
+      "En 1990",
+      "En 1948",
+      "En 1945",
+      "En 2017"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-S-04",
+    "passport_id": "09-FRA-1037",
+    "question": "Quel mot correspond à la définition : \"C’est une altération, un trouble de l'organisme\" ?",
+    "options": [
+      "L’aliment",
+      "La sécurité",
+      "La maladie",
+      "La santé"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-S-05",
+    "passport_id": "09-FRA-1038",
+    "question": "Complétez la phrase : \"Tu n’as pas goûté le gâteau ... ma mère a cuisiné.\"",
+    "options": [
+      "dont",
+      "auquel",
+      "qui",
+      "que"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TEH-O-06",
+    "passport_id": "09-FRA-1039",
+    "question": "D'après le texte, quelle affirmation est vraie à propos du rôle de l'OMS ?",
+    "options": [
+      "Elle fonctionne indépendamment de l'ONU.",
+      "Elle dirige le Conseil économique de l'ONU.",
+      "Elle aide à préserver la sécurité mondiale.",
+      "Elle ne combat que les maladies infectieuses."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TET-O-07",
+    "passport_id": "09-FRA-1040",
+    "question": "Trouvez la phrase correcte avec le pronom relatif \"dont\".",
+    "options": [
+      "Le dîner dont tu nous as servi était délicieux.",
+      "C'est le livre dont je t'ai donné hier.",
+      "La pollution est un problème dont nous concerne tous.",
+      "Voilà le dictionnaire dont j'ai besoin."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-O-08",
+    "passport_id": "09-FRA-1041",
+    "question": "Quel est le synonyme de \"le bureau central\" utilisé dans le texte pour l’OMS ?",
+    "options": [
+      "Le but",
+      "Le personnel",
+      "La mission",
+      "Le siège"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-DEY-C-11",
+    "passport_id": "09-FRA-1042",
+    "question": "Quelle déduction peut-on faire concernant les champs d'action de l'OMS ?",
+    "options": [
+      "Elle intervient seulement en Europe pour réduire les infections.",
+      "Elle se limite uniquement aux soins médicaux directs dans les hôpitaux.",
+      "Son action inclut l'environnement, l'alimentation et la qualité de l'eau.",
+      "Elle a pour but unique de financer les recherches sur la grippe."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TEH-C-12",
+    "passport_id": "09-FRA-1043",
+    "question": "Lisez et choisissez les pronoms relatifs corrects dans l'ordre pour les deux phrases : 1. C’est une attitude ... il n’est pas fier. 2. Elle raconte une histoire ... me fascine.",
+    "options": [
+      "1 - que, 2 - qui",
+      "1 - dont, 2 - que",
+      "1 - dont, 2 - qui",
+      "1 - que, 2 - dont"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-C-13",
+    "passport_id": "09-FRA-1044",
+    "question": "Trouvez le mot du texte qui signifie \"assurer la protection, garder à l'abri du danger\" et correspond à \"préserver\" ou \"assurer\".",
+    "options": [
+      "Surveiller",
+      "Adhérer",
+      "Préserver",
+      "Combattre"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-DEY-C-15",
+    "passport_id": "09-FRA-1045",
+    "question": "Quel est le message principal que les membres du personnel de l'OMS partagent selon le texte ?",
+    "options": [
+      "S'efforcer d'améliorer la santé pour tous les individus, partout dans le monde.",
+      "Accroître le nombre d'États Membres dans les six régions du monde.",
+      "Obliger les pays à financer des traitements coûteux contre le cancer.",
+      "Réduire le nombre de réunions du Conseil économique des Nations Unies."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-1-1-01",
+    "passport_id": "09-FRA-1046",
+    "question": "Complétez la phrase : \"Il est possible que le rendez-vous _____ annulé.\"",
+    "options": [
+      "soit",
+      "était",
+      "sera",
+      "est"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-2-1-04",
+    "passport_id": "09-FRA-1047",
+    "question": "Que signifie la phrase \"Azad ne boit que de l’eau\" ?",
+    "options": [
+      "Azad n'aime pas l'eau.",
+      "Azad boit beaucoup d'eau.",
+      "Azad ne boit pas d'eau.",
+      "Azad boit seulement de l'eau."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-1-1-05",
+    "passport_id": "09-FRA-1048",
+    "question": "D'après les textes révisés, quel est le but principal de l'OMS (Organisation Mondiale de la Santé) ?",
+    "options": [
+      "Améliorer la santé pour tous et partout",
+      "Organiser les Jeux Olympiques",
+      "Protéger les espèces animales menacées",
+      "Lutter contre le réchauffement planétaire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-06",
+    "passport_id": "09-FRA-1049",
+    "question": "Mettez le verbe au conditionnel présent : \"Si j'étais toi, j'_____ plus souvent à la mer.\" (aller)",
+    "options": [
+      "irai",
+      "irais",
+      "irait",
+      "allais"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-07",
+    "passport_id": "09-FRA-1050",
+    "question": "Complétez avec le verbe au passé composé : \"Dimanche, Sarah et sa mère ne _____ pas _____ au marché.\"",
+    "options": [
+      "sont / allées",
+      "ont / allé",
+      "ont / allées",
+      "sont / allés"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-09",
+    "passport_id": "09-FRA-1051",
+    "question": "Transformez le verbe en utilisant le participe présent : \"Nous cherchons une vendeuse (connaître) bien le métier.\"",
+    "options": [
+      "connais",
+      "connue",
+      "connaissant",
+      "connaissante"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-10",
+    "passport_id": "09-FRA-1052",
+    "question": "Réécrivez la phrase à l'imparfait : \"Chaque année, les élèves _____ en classe verte.\" (aller)",
+    "options": [
+      "iront",
+      "allaient",
+      "allons",
+      "sont allés"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-4-3-11",
+    "passport_id": "09-FRA-1053",
+    "question": "Complétez avec la forme correcte : \"Tu feras des exercices jusqu’à ce que tu _____ ta leçon.\" (comprendre)",
+    "options": [
+      "comprennes",
+      "comprendras",
+      "as compris",
+      "comprends"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-12",
+    "passport_id": "09-FRA-1054",
+    "question": "Complétez la phrase avec les verbes devoir et vouloir : \"S’ils _____ être en forme, ils _____ faire de l’exercice.\"",
+    "options": [
+      "voulons / devez",
+      "veulent / devont",
+      "voulaient / devraient",
+      "veulent / doivent"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-4-3-13",
+    "passport_id": "09-FRA-1055",
+    "question": "Mettez les verbes au passé composé : \"Elle _____ (tomber) par terre et les enfants _____ (se réveiller) de bonne heure.\"",
+    "options": [
+      "est tombé / se sont réveillées",
+      "a tombé / se sont réveillés",
+      "est tombée / se sont réveillés",
+      "a tombée / ont réveillé"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-14",
+    "passport_id": "09-FRA-1056",
+    "question": "Comment transformer la phrase \"Aujourd’hui il travaille seulement une heure\" en utilisant la restriction (ne... que) ?",
+    "options": [
+      "Aujourd’hui il travaille ne qu'une heure.",
+      "Aujourd’hui ne il travaille qu'une heure.",
+      "Aujourd’hui il n'a travaillé qu'une heure.",
+      "Aujourd’hui il ne travaille qu'une heure."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-15",
+    "passport_id": "09-FRA-1057",
+    "question": "Complétez la phrase avec le gérondif du verbe commencer : \"Il a évité de répondre _____ à parler d’autre chose.\"",
+    "options": [
+      "commençant",
+      "en commenceant",
+      "en commencent",
+      "en commençant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-2-1-02-9254",
+    "passport_id": "09-FRA-1058",
+    "question": "Que signifie le mot \"débutant\" dans le contexte sportif ?",
+    "options": [
+      "Un entraîneur professionnel.",
+      "Une personne qui ne fait pas de sport.",
+      "Une personne qui commence à pratiquer un sport.",
+      "Un médecin pour les sportifs."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-1-04-3187",
+    "passport_id": "09-FRA-1059",
+    "question": "Complétez la phrase correctement : \"Il adore jouer ... tennis.\"",
+    "options": [
+      "du",
+      "à la",
+      "de la",
+      "au"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-1-1-05-1fad",
+    "passport_id": "09-FRA-1060",
+    "question": "Trouvez le synonyme du mot \"renseigner\" selon le vocabulaire de la leçon.",
+    "options": [
+      "jouer",
+      "payer",
+      "informer",
+      "inscrire"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-2-2-06-8ddc",
+    "passport_id": "09-FRA-1061",
+    "question": "Pourquoi Seymour demande-t-il un entraîneur ?",
+    "options": [
+      "Parce qu'il veut devenir un professeur de yoga.",
+      "Parce qu'il ne veut pas payer par carte bancaire.",
+      "Parce qu'il est débutant et ne sait pas faire de la musculation.",
+      "Parce qu'il veut participer aux cours collectifs."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-2-07-fd79",
+    "passport_id": "09-FRA-1062",
+    "question": "Complétez avec le verbe modal qui convient : \"Pour avoir une bonne note, elles ... travailler et réviser.\"",
+    "options": [
+      "devons",
+      "doivent",
+      "doit",
+      "devez"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-1-2-09-faf2",
+    "passport_id": "09-FRA-1063",
+    "question": "Qu'est-ce que \"l'abonnement\" selon la définition du livre ?",
+    "options": [
+      "Les heures de travail d’un établissement.",
+      "Méthode d'entraînement sportif.",
+      "Une entrée ou un passage dans la salle.",
+      "Contrat qui permet au client de recevoir un service régulier."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-2-10-62ea",
+    "passport_id": "09-FRA-1064",
+    "question": "Combien Seymour doit-il payer s'il choisit l'abonnement à la salle de musculation ET aux cours collectifs ?",
+    "options": [
+      "30 manats par mois.",
+      "15 manats par mois.",
+      "45 manats par mois.",
+      "60 manats par mois."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-3-11-6d67",
+    "passport_id": "09-FRA-1065",
+    "question": "Quelle phrase est grammaticalement correcte en utilisant les verbes \"faire\" ou \"jouer\" ?",
+    "options": [
+      "Mes amis font de l'escalade et jouent aux échecs.",
+      "Mes amis font du escalade et jouent au échecs.",
+      "Mes amis jouent à l'escalade et font des échecs.",
+      "Mes amis jouent de l'escalade et font aux échecs."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-5-3-12-b731",
+    "passport_id": "09-FRA-1066",
+    "question": "Trouvez la faute dans la phrase suivante : \"Elle sais faire du natation chaque jour.\"",
+    "options": [
+      "Il faut écrire \"sait\" et \"au natation\".",
+      "Il faut écrire \"sais\" et \"de le natation\".",
+      "Il faut écrire \"sait\" et \"de la natation\".",
+      "Il faut écrire \"savent\" et \"du natation\"."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-4-3-14-ec77",
+    "passport_id": "09-FRA-1067",
+    "question": "Quel mot complète logiquement cette série : \"les heures de travail, l'entrée, par mois, ...\" ? (Trouvez les mots correspondants dans la leçon)",
+    "options": [
+      "un horaire d'ouverture, un entraîneur, mensuel.",
+      "un accès, la musculation, en espèces.",
+      "l'abonnement, en liquide, mensuel.",
+      "un horaire d'ouverture, un accès, mensuel."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-1-1-1-9e25",
+    "passport_id": "09-FRA-1068",
+    "question": "C’est un document écrit par le médecin qui précise le traitement à suivre. Qu'est-ce que c'est ?",
+    "options": [
+      "Un pansement",
+      "Une ordonnance",
+      "Une consultation",
+      "Un diagnostic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-1-2-e7aa",
+    "passport_id": "09-FRA-1069",
+    "question": "Selon le texte, quel est le rôle principal des protéines dans notre corps ?",
+    "options": [
+      "Elles sont essentielles pour la constitution des muscles.",
+      "Elles aident à dormir sans prendre de médicaments.",
+      "Elles remplacent complètement l'eau dans le corps.",
+      "Elles soignent toutes les maladies chroniques."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-1-1-3-17e7",
+    "passport_id": "09-FRA-1070",
+    "question": "Comment forme-t-on correctement le gérondif du verbe « chanter » ?",
+    "options": [
+      "En chantons",
+      "En chanté",
+      "En chanter",
+      "En chantant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-1-4-008f",
+    "passport_id": "09-FRA-1071",
+    "question": "Quel est le lieu exclusif où l'on a le droit d'acheter des médicaments selon le texte ?",
+    "options": [
+      "Au supermarché",
+      "Au cabinet médical",
+      "À la clinique privée",
+      "À la pharmacie"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-2-3-1277",
+    "passport_id": "09-FRA-1072",
+    "question": "Quelle nuance exprime le gérondif dans cette phrase : « Il s’est fracturé le genou en jouant au foot. » ?",
+    "options": [
+      "La cause directe",
+      "La simultanéité",
+      "La condition",
+      "Le moyen / la manière"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-2-2-4-f96d",
+    "passport_id": "09-FRA-1073",
+    "question": "Quel terme décrit l'état d'un patient qui se repose après les soins pour retrouver son état de santé habituel ?",
+    "options": [
+      "L'auscultation",
+      "L'ordonnance",
+      "La convalescence",
+      "Le diagnostic"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-1-81c6",
+    "passport_id": "09-FRA-1074",
+    "question": "Quelle idée exprime le gérondif dans la phrase suivante : « Tu pourrais gagner la compétition en t’entraînant davantage. » ?",
+    "options": [
+      "La condition",
+      "Le moyen / la manière",
+      "La simultanéité",
+      "L'opposition"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-2-d059",
+    "passport_id": "09-FRA-1075",
+    "question": "Par quel processus le docteur fait-il généralement un diagnostic lors d'une consultation ?",
+    "options": [
+      "En auscultant le malade",
+      "En délivrant les médicaments",
+      "En vendant une ordonnance",
+      "En faisant de la rééducation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-4-3065",
+    "passport_id": "09-FRA-1076",
+    "question": "Quelle phrase utilise correctement un gérondif irrégulier ?",
+    "options": [
+      "Elle aide les patients en soyant toujours souriante et gentille.",
+      "Il gère la situation calmement en ayant confiance en lui.",
+      "Tu améliores ton français en lisons beaucoup de livres.",
+      "Nous réussissons l'examen en savant toutes les règles de grammaire."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-4-3-5-230b",
+    "passport_id": "09-FRA-1077",
+    "question": "D'après les recommandations médicales évoquées dans le manuel, quelle action n'est PAS conseillée pour maintenir une bonne santé ?",
+    "options": [
+      "Faire 30 minutes d'activité physique au quotidien.",
+      "Boire de l'eau en quantité suffisante chaque jour.",
+      "Manger cinq fruits et légumes par jour.",
+      "Manger beaucoup de viande chaque jour."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-XAT-S-04-b346",
+    "passport_id": "09-FRA-1078",
+    "question": "Qui a reçu le prix Nobel de la paix en 2007 pour son travail de sensibilisation sur le réchauffement planétaire ?",
+    "options": [
+      "Tedros Adhanom",
+      "Léopold Sédar Senghor",
+      "Un scientifique français",
+      "Al Gore"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-ANL-S-05-65e7",
+    "passport_id": "09-FRA-1079",
+    "question": "Comment appelle-t-on le phénomène qui entraîne la hausse progressive de la température de la Terre ?",
+    "options": [
+      "L'épuisement de l'ozone",
+      "Le covoiturage écologique",
+      "Le réchauffement planétaire",
+      "La fonte polaire"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-ANL-O-07-a974",
+    "passport_id": "09-FRA-1080",
+    "question": "Selon le texte, quelle serait la conséquence directe de la fonte de la glace polaire ?",
+    "options": [
+      "L'augmentation du niveau de l'eau des océans",
+      "La diminution des gaz nocifs",
+      "La réduction des ouragans",
+      "Le refroidissement de l'atmosphère"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-O-08-56ea",
+    "passport_id": "09-FRA-1081",
+    "question": "Quelle phrase exprime correctement une restriction signifiant 'Il prend seulement une valise' ?",
+    "options": [
+      "Il prend ne qu'une valise.",
+      "Il ne prend pas de valise.",
+      "Il ne prend qu'une valise.",
+      "Il ne prend aucune valise."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-11-34c9",
+    "passport_id": "09-FRA-1082",
+    "question": "Complétez la phrase en utilisant le mode approprié : 'Il est important que les scientifiques ... une alternative écologique.'",
+    "options": [
+      "trouvent",
+      "trouveront",
+      "trouve",
+      "trouvaient"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TEH-C-12-0cc4",
+    "passport_id": "09-FRA-1083",
+    "question": "Que met en évidence le livre 'Une vérité qui dérange' d'Al Gore selon le texte ?",
+    "options": [
+      "L'impossibilité totale de réduire les gaz à effet de serre.",
+      "Les conséquences graves possibles du réchauffement climatique si rien n'est fait.",
+      "L'obligation de cesser d'utiliser toute forme de technologie.",
+      "Les désastres qui sont absolument sûrs d'arriver demain."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-13-6310",
+    "passport_id": "09-FRA-1084",
+    "question": "Choisissez la bonne forme verbale dans le cadre d'une hypothèse : 'Si nous utilisions davantage les vélos, nous ... la production des gaz.'",
+    "options": [
+      "diminuerions",
+      "diminuions",
+      "diminuerons",
+      "diminuons"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-L03-TET-C-14-b03c",
+    "passport_id": "09-FRA-1085",
+    "question": "Remplacez la proposition relative 'qui utilisent' par le participe présent adéquat : 'Les usines ... encore des produits chimiques dangereux doivent fermer.'",
+    "options": [
+      "utilisation",
+      "utilisés",
+      "utilisent",
+      "utilisant"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-sadə-01-f0ef",
+    "passport_id": "09-FRA-1086",
+    "question": "Où se sont tenus les Jeux Olympiques en été 2024 ?",
+    "options": [
+      "À Paris",
+      "À Londres",
+      "À Tokyo",
+      "À Athènes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-sadə-02-8477",
+    "passport_id": "09-FRA-1087",
+    "question": "Quelle compétition sportive s'est déroulée au parc du château de Versailles ?",
+    "options": [
+      "Les épreuves d'équitation",
+      "Le cyclisme",
+      "Le volleyball de plage",
+      "L'escrime"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-3-sadə-04-4f70",
+    "passport_id": "09-FRA-1088",
+    "question": "Complétez la phrase : « La semaine dernière, ma cousine ______ de son vélo. »",
+    "options": [
+      "est tombé",
+      "est tombée",
+      "a tombée",
+      "a tombé"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-1-orta-07-b7a0",
+    "passport_id": "09-FRA-1089",
+    "question": "Quelles dates correspondent à l'organisation des Jeux Paralympiques de Paris 2024 ?",
+    "options": [
+      "Du 26 juillet au 11 août",
+      "Durant le mois d'avril",
+      "Du 28 août au 8 septembre",
+      "Du 11 août au 28 août"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-2-çətin-13-b91a",
+    "passport_id": "09-FRA-1090",
+    "question": "Dans le texte, on trouve plusieurs mots qui expriment une idée exceptionnelle ou symbolique. Quel adjectif qualifie l'expérience des Jeux pour signifier qu'elle est nouvelle et jamais vue auparavant ?",
+    "options": [
+      "Emblématique",
+      "Inédite",
+      "Originel",
+      "Populaire"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-04-3-çətin-15-c197",
+    "passport_id": "09-FRA-1091",
+    "question": "Observez la phrase : « Les épreuves d'équitation se sont _____ au parc du château de Versailles. » Quel participe passé la complète correctement ?",
+    "options": [
+      "tenues",
+      "tenus",
+      "tenue",
+      "tenu"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-XAT-S-03-9c82",
+    "passport_id": "09-FRA-1092",
+    "question": "En quelle année l’OMS a-t-elle été créée ?",
+    "options": [
+      "En 1948",
+      "En 1945",
+      "En 1990",
+      "En 2017"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-S-04-ddd7",
+    "passport_id": "09-FRA-1093",
+    "question": "Quel mot correspond à la définition : \"C’est une altération, un trouble de l'organisme\" ?",
+    "options": [
+      "La santé",
+      "La maladie",
+      "L’aliment",
+      "La sécurité"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-S-05-b3cd",
+    "passport_id": "09-FRA-1094",
+    "question": "Complétez la phrase : \"Tu n’as pas goûté le gâteau ... ma mère a cuisiné.\"",
+    "options": [
+      "que",
+      "auquel",
+      "dont",
+      "qui"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TEH-O-06-c2ed",
+    "passport_id": "09-FRA-1095",
+    "question": "D'après le texte, quelle affirmation est vraie à propos du rôle de l'OMS ?",
+    "options": [
+      "Elle aide à préserver la sécurité mondiale.",
+      "Elle dirige le Conseil économique de l'ONU.",
+      "Elle fonctionne indépendamment de l'ONU.",
+      "Elle ne combat que les maladies infectieuses."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TET-O-07-fa7b",
+    "passport_id": "09-FRA-1096",
+    "question": "Trouvez la phrase correcte avec le pronom relatif \"dont\".",
+    "options": [
+      "La pollution est un problème dont nous concerne tous.",
+      "Le dîner dont tu nous as servi était délicieux.",
+      "Voilà le dictionnaire dont j'ai besoin.",
+      "C'est le livre dont je t'ai donné hier."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-O-08-8cfb",
+    "passport_id": "09-FRA-1097",
+    "question": "Quel est le synonyme de \"le bureau central\" utilisé dans le texte pour l’OMS ?",
+    "options": [
+      "Le personnel",
+      "La mission",
+      "Le but",
+      "Le siège"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-DEY-C-11-15cd",
+    "passport_id": "09-FRA-1098",
+    "question": "Quelle déduction peut-on faire concernant les champs d'action de l'OMS ?",
+    "options": [
+      "Elle a pour but unique de financer les recherches sur la grippe.",
+      "Elle intervient seulement en Europe pour réduire les infections.",
+      "Elle se limite uniquement aux soins médicaux directs dans les hôpitaux.",
+      "Son action inclut l'environnement, l'alimentation et la qualité de l'eau."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-TEH-C-12-e915",
+    "passport_id": "09-FRA-1099",
+    "question": "Lisez et choisissez les pronoms relatifs corrects dans l'ordre pour les deux phrases : 1. C’est une attitude ... il n’est pas fier. 2. Elle raconte une histoire ... me fascine.",
+    "options": [
+      "1 - dont, 2 - qui",
+      "1 - que, 2 - qui",
+      "1 - que, 2 - dont",
+      "1 - dont, 2 - que"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-ANL-C-13-111d",
+    "passport_id": "09-FRA-1100",
+    "question": "Trouvez le mot du texte qui signifie \"assurer la protection, garder à l'abri du danger\" et correspond à \"préserver\" ou \"assurer\".",
+    "options": [
+      "Adhérer",
+      "Combattre",
+      "Préserver",
+      "Surveiller"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Vocabulaire",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-05-DEY-C-15-8d1a",
+    "passport_id": "09-FRA-1101",
+    "question": "Quel est le message principal que les membres du personnel de l'OMS partagent selon le texte ?",
+    "options": [
+      "S'efforcer d'améliorer la santé pour tous les individus, partout dans le monde.",
+      "Obliger les pays à financer des traitements coûteux contre le cancer.",
+      "Réduire le nombre de réunions du Conseil économique des Nations Unies.",
+      "Accroître le nombre d'États Membres dans les six régions du monde."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-1-1-01-40bf",
+    "passport_id": "09-FRA-1102",
+    "question": "Complétez la phrase : \"Il est possible que le rendez-vous _____ annulé.\"",
+    "options": [
+      "était",
+      "soit",
+      "est",
+      "sera"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-2-1-04-b954",
+    "passport_id": "09-FRA-1103",
+    "question": "Que signifie la phrase \"Azad ne boit que de l’eau\" ?",
+    "options": [
+      "Azad ne boit pas d'eau.",
+      "Azad n'aime pas l'eau.",
+      "Azad boit beaucoup d'eau.",
+      "Azad boit seulement de l'eau."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-1-1-05-06d2",
+    "passport_id": "09-FRA-1104",
+    "question": "D'après les textes révisés, quel est le but principal de l'OMS (Organisation Mondiale de la Santé) ?",
+    "options": [
+      "Lutter contre le réchauffement planétaire",
+      "Protéger les espèces animales menacées",
+      "Organiser les Jeux Olympiques",
+      "Améliorer la santé pour tous et partout"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-06-38b2",
+    "passport_id": "09-FRA-1105",
+    "question": "Mettez le verbe au conditionnel présent : \"Si j'étais toi, j'_____ plus souvent à la mer.\" (aller)",
+    "options": [
+      "allais",
+      "irait",
+      "irais",
+      "irai"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-07-2052",
+    "passport_id": "09-FRA-1106",
+    "question": "Complétez avec le verbe au passé composé : \"Dimanche, Sarah et sa mère ne _____ pas _____ au marché.\"",
+    "options": [
+      "ont / allé",
+      "sont / allés",
+      "sont / allées",
+      "ont / allées"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-09-5842",
+    "passport_id": "09-FRA-1107",
+    "question": "Transformez le verbe en utilisant le participe présent : \"Nous cherchons une vendeuse (connaître) bien le métier.\"",
+    "options": [
+      "connaissant",
+      "connue",
+      "connais",
+      "connaissante"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-2-10-8d31",
+    "passport_id": "09-FRA-1108",
+    "question": "Réécrivez la phrase à l'imparfait : \"Chaque année, les élèves _____ en classe verte.\" (aller)",
+    "options": [
+      "sont allés",
+      "iront",
+      "allons",
+      "allaient"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-4-3-11-27ac",
+    "passport_id": "09-FRA-1109",
+    "question": "Complétez avec la forme correcte : \"Tu feras des exercices jusqu’à ce que tu _____ ta leçon.\" (comprendre)",
+    "options": [
+      "as compris",
+      "comprennes",
+      "comprendras",
+      "comprends"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-12-9f09",
+    "passport_id": "09-FRA-1110",
+    "question": "Complétez la phrase avec les verbes devoir et vouloir : \"S’ils _____ être en forme, ils _____ faire de l’exercice.\"",
+    "options": [
+      "veulent / devont",
+      "voulons / devez",
+      "voulaient / devraient",
+      "veulent / doivent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-4-3-13-bb7f",
+    "passport_id": "09-FRA-1111",
+    "question": "Mettez les verbes au passé composé : \"Elle _____ (tomber) par terre et les enfants _____ (se réveiller) de bonne heure.\"",
+    "options": [
+      "a tombée / ont réveillé",
+      "a tombé / se sont réveillés",
+      "est tombé / se sont réveillées",
+      "est tombée / se sont réveillés"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-14-0092",
+    "passport_id": "09-FRA-1112",
+    "question": "Comment transformer la phrase \"Aujourd’hui il travaille seulement une heure\" en utilisant la restriction (ne... que) ?",
+    "options": [
+      "Aujourd’hui ne il travaille qu'une heure.",
+      "Aujourd’hui il travaille ne qu'une heure.",
+      "Aujourd’hui il ne travaille qu'une heure.",
+      "Aujourd’hui il n'a travaillé qu'une heure."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-06-3-3-15-d0ba",
+    "passport_id": "09-FRA-1113",
+    "question": "Complétez la phrase avec le gérondif du verbe commencer : \"Il a évité de répondre _____ à parler d’autre chose.\"",
+    "options": [
+      "commençant",
+      "en commençant",
+      "en commencent",
+      "en commenceant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 6. Révision",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-1-3-1-03-9d59",
+    "passport_id": "09-FRA-1114",
+    "question": "Selon le texte, comment Teymour dit-il bonjour à Céline ?",
+    "options": [
+      "Salut, Céline.",
+      "Bonjour, Céline.",
+      "Comment ça va, Céline?",
+      "Je vais bien, Céline."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 1 / À la salle de sport",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-001-02-3-2-1-77ae",
+    "passport_id": "09-FRA-1115",
+    "question": "D'après l'activité 2, quelle est la réponse à la question 'Quel âge as-tu?' ?",
+    "options": [
+      "Je m'appelle Arzou.",
+      "J'ai sept ans.",
+      "J'ai 8 ans.",
+      "J'ai 35 ans."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "Leçon 2. Une pomme par jour éloigne le médecin !",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "question": "'L'écologie' sözünün mənası nədir?",
+    "options": {
+      "A": "ekologiya",
+      "B": "iqtisadiyyat",
+      "C": "tarix",
+      "D": "coğrafiya"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "cat": "Fransız dili 9",
+    "id": "05ade057-5596-4c9f-bad6-e4b74087d9d5",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1116"
+  },
+  {
+    "question": "'La pollution' nə deməkdir?",
+    "options": {
+      "A": "çirklənmə",
+      "B": "təmizlik",
+      "C": "qorunma",
+      "D": "təbiət"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "cat": "Fransız dili 9",
+    "id": "a12ebc97-dbe3-4b19-b8ff-f850f6e67e47",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1117"
+  },
+  {
+    "question": "Təbiəti qorumaq üçün nə etmək lazımdır?",
+    "options": {
+      "A": "Protéger la nature",
+      "B": "Détruire la forêt",
+      "C": "Polluer l'eau",
+      "D": "Couper les arbres"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil etmək",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "cat": "Fransız dili 9",
+    "id": "b0f86163-5b56-4b95-b069-75cac7e77d03",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1118"
+  },
+  {
+    "question": "'Təbiət' sözünün fransızca qarşılığı hansıdır?",
+    "options": {
+      "A": "la nature",
+      "B": "la ville",
+      "C": "la maison",
+      "D": "le livre"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "cat": "Fransız dili 9",
+    "id": "3ce8f0cd-66d3-4a92-81d5-b9bd5ae7e8d8",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1119"
+  },
+  {
+    "question": "'Qorumaq' feili fransız dilində necədir?",
+    "options": {
+      "A": "protéger",
+      "B": "manger",
+      "C": "parler",
+      "D": "écrire"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 3. En faveur de l’écologie",
+    "cat": "Fransız dili 9",
+    "id": "56937e26-dee1-41c5-9f79-e4d571e70219",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1120"
+  },
+  {
+    "question": "'Le sport' sözünün mənası nədir?",
+    "options": {
+      "A": "idman",
+      "B": "musiqi",
+      "C": "rəqs",
+      "D": "teatr"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "c419f77c-4ef0-492d-aa2a-2f1fc00471ce",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1121"
+  },
+  {
+    "question": "'Futbol oynamaq' fransızca necə deyilir?",
+    "options": {
+      "A": "jouer au football",
+      "B": "faire du ski",
+      "C": "jouer au tennis",
+      "D": "faire de la natation"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "1570bb50-3748-430f-8fdd-1ac6caf12859",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1122"
+  },
+  {
+    "question": "'İdmançı' sözünün fransızca qarşılığı nədir?",
+    "options": {
+      "A": "le sportif",
+      "B": "le chanteur",
+      "C": "le danseur",
+      "D": "le professeur"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "a1fa6043-b306-4a50-a024-1ed9c35659ce",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1123"
+  },
+  {
+    "question": "'Nouvelles' sözünün mənası nədir?",
+    "options": {
+      "A": "xəbərlər",
+      "B": "köhnələr",
+      "C": "kitablar",
+      "D": "jurnallar"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "ae10573e-07c7-48eb-955b-6c0f58becca4",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1124"
+  },
+  {
+    "question": "'Olimpiya oyunları' fransız dilində necə adlanır?",
+    "options": {
+      "A": "Les Jeux Olympiques",
+      "B": "La Coupe du Monde",
+      "C": "Le Championnat",
+      "D": "Le Tournoi"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "a1dfe856-c856-4bf9-9efd-e1cd05e3491f",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1125"
+  },
+  {
+    "question": "Aşağıdakılardan hansı qış idman növüdür?",
+    "options": {
+      "A": "le ski",
+      "B": "le football",
+      "C": "le tennis",
+      "D": "le basketball"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "ddb5e2c8-fc5d-4d1a-a4f1-1b2ce23772c2",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1126"
+  },
+  {
+    "question": "'Qaçış' fransızca necə adlanır?",
+    "options": {
+      "A": "la course",
+      "B": "le saut",
+      "C": "le lancer",
+      "D": "la marche"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "58af0b89-6592-4083-a97a-a9ae59963314",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1127"
+  },
+  {
+    "question": "'Üzgüçülük' sözünün fransızca qarşılığı hansıdır?",
+    "options": {
+      "A": "la natation",
+      "B": "le judo",
+      "C": "la boxe",
+      "D": "le karaté"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "2bb60f35-27f0-426b-a125-ec2710713ba9",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1128"
+  },
+  {
+    "question": "'Məşqçi' fransızca necə deyilir?",
+    "options": {
+      "A": "l'entraîneur",
+      "B": "l'arbitre",
+      "C": "le joueur",
+      "D": "le spectateur"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 4 / Page culture : Nouvelles de sport",
+    "cat": "Fransız dili 9",
+    "id": "19be6384-4a8a-4c83-8dde-412c7cefb877",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1129"
+  },
+  {
+    "question": "'L'OMS' abbreviaturasının açılışı nədir?",
+    "options": {
+      "A": "Organisation Mondiale de la Santé",
+      "B": "Organisation Médicale Secrète",
+      "C": "Ordre Mondial du Sport",
+      "D": "Office"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "6691f18f-a5e3-4580-8ea3-c51fada315ad",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1130"
+  },
+  {
+    "question": "'La santé' nə deməkdir?",
+    "options": {
+      "A": "sağlamlıq",
+      "B": "xəstəlik",
+      "C": "dərman",
+      "D": "həkim"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "d0993c20-90ab-4e59-8908-c3f423d17f40",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1131"
+  },
+  {
+    "question": "'La maladie' sözünün mənası nədir?",
+    "options": {
+      "A": "xəstəlik",
+      "B": "sağlamlıq",
+      "C": "müalicə",
+      "D": "dərman"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "f824fa0a-892c-4b4c-831c-05858f048255",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1132"
+  },
+  {
+    "question": "ÜST (L'OMS) nə üçün fəaliyyət göstərir?",
+    "options": {
+      "A": "Dünyada sağlamlığı qorumaq üçün",
+      "B": "İdman yarışları təşkil etmək üçün",
+      "C": "Təhsil vermək üçün",
+      "D": "Filmlər çəkmək üçün"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "e82b6b64-7671-4461-b687-5f56a0c2867d",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1133"
+  },
+  {
+    "question": "'Le médecin' nə deməkdir?",
+    "options": {
+      "A": "həkim",
+      "B": "müəllim",
+      "C": "mühəndis",
+      "D": "idmançı"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "8f33f1be-b5d6-411b-bb21-d9e42ee8a196",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1134"
+  },
+  {
+    "question": "'Le médicament' sözünün tərcüməsi nədir?",
+    "options": {
+      "A": "dərman",
+      "B": "su",
+      "C": "yemək",
+      "D": "kitab"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "70717f3b-2555-4127-908b-9ed8f9017e8e",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1135"
+  },
+  {
+    "question": "'L'hôpital' nə deməkdir?",
+    "options": {
+      "A": "xəstəxana",
+      "B": "məktəb",
+      "C": "muzey",
+      "D": "teatr"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "55a04b80-dacd-4981-8686-a0c499c3bf99",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1136"
+  },
+  {
+    "question": "'Müalicə etmək' feili fransız dilində necədir?",
+    "options": {
+      "A": "soigner",
+      "B": "chanter",
+      "C": "danser",
+      "D": "pleurer"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "b0cc102c-d761-4ebb-bb2f-2b95afa42a27",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1137"
+  },
+  {
+    "question": "'Sağlam olmaq' fransızca necə ifadə olunur?",
+    "options": {
+      "A": "être en bonne santé",
+      "B": "être malade",
+      "C": "avoir faim",
+      "D": "avoir soif"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "12c7ea5e-66de-4893-8a31-b3da149b7ca0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1138"
+  },
+  {
+    "question": "'Le symptôme' nə deməkdir?",
+    "options": {
+      "A": "simptom",
+      "B": "dərman",
+      "C": "həb",
+      "D": "iynə"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "704cb1fd-b04c-46e7-a0ed-6b5f0e72ca74",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1139"
+  },
+  {
+    "question": "'Virus' sözü fransızca necə yazılır?",
+    "options": {
+      "A": "le virus",
+      "B": "la viruse",
+      "C": "le virous",
+      "D": "la vierus"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "5187e30c-b286-45d3-9320-52af8c8bec42",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1140"
+  },
+  {
+    "question": "L'OMS təşkilatının mənzil-qərargahı harada yerləşir?",
+    "options": {
+      "A": "Cenevrədə",
+      "B": "Parisdə",
+      "C": "Londonda",
+      "D": "Nyu-Yorkda"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "6f02d4d7-ce21-4b76-a92a-2b754b40e992",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1141"
+  },
+  {
+    "question": "'L'alimentation' nə deməkdir?",
+    "options": {
+      "A": "qidalanma",
+      "B": "idman",
+      "C": "təhsil",
+      "D": "səyahət"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Compréhension écrite : L’OMS",
+    "cat": "Fransız dili 9",
+    "id": "4eec4cbf-2a3a-40f7-b774-4ba21c6138aa",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1142"
+  },
+  {
+    "question": "'Bədən' sözünün fransızca qarşılığı nədir?",
+    "options": {
+      "A": "le corps",
+      "B": "la tête",
+      "C": "le bras",
+      "D": "la jambe"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "1fc047bb-b67d-4f7c-a2d5-e0ae05c80212",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1143"
+  },
+  {
+    "question": "'La tête' nə deməkdir?",
+    "options": {
+      "A": "baş",
+      "B": "qol",
+      "C": "qıç",
+      "D": "göz"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "0adc16bc-749f-4689-9ed4-a5ef3c1c870a",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1144"
+  },
+  {
+    "question": "'Başım ağrıyır' fransızca necə deyilir?",
+    "options": {
+      "A": "J'ai mal à la tête",
+      "B": "J'ai mal au ventre",
+      "C": "J'ai mal aux dents",
+      "D": "J'ai mal au dos"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "06adf60e-729b-4759-b111-0ef9d046f236",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1145"
+  },
+  {
+    "question": "'L'infirmière' sözünün mənası nədir?",
+    "options": {
+      "A": "tibb bacısı",
+      "B": "həkim",
+      "C": "cərrah",
+      "D": "xəstə"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "5780ddb3-0ac1-4951-988c-6ef447436e85",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1146"
+  },
+  {
+    "question": "'La pharmacie' nə deməkdir?",
+    "options": {
+      "A": "aptek",
+      "B": "xəstəxana",
+      "C": "klinika",
+      "D": "laboratoriya"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "62442358-0465-4a21-9ed7-9ddddf66c6d2",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1147"
+  },
+  {
+    "question": "'Sağalmaq' feilinin fransızca tərcüməsi hansıdır?",
+    "options": {
+      "A": "guérir",
+      "B": "tomber",
+      "C": "rester",
+      "D": "sortir"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "dad27174-b21f-4cef-9667-e5a1395d7da0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1148"
+  },
+  {
+    "question": "'Xəstələnmək' ifadəsi fransızca necədir?",
+    "options": {
+      "A": "tomber malade",
+      "B": "être en forme",
+      "C": "guérir vite",
+      "D": "aller bien"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "76166e7e-fdcd-4d80-aa3b-644e990fc1a4",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1149"
+  },
+  {
+    "question": "'La fièvre' nə deməkdir?",
+    "options": {
+      "A": "qızdırma",
+      "B": "öskürək",
+      "C": "zökəm",
+      "D": "baş ağrısı"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "4aa530a5-6f0a-466e-8c44-067a2957604c",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1150"
+  },
+  {
+    "question": "'Le rhume' sözünün mənası nədir?",
+    "options": {
+      "A": "zökəm",
+      "B": "qızdırma",
+      "C": "qrip",
+      "D": "öskürək"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "9034a6ef-2b03-4e37-9be1-bb98ca57df07",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1151"
+  },
+  {
+    "question": "'Öskürmək' feili fransızca necədir?",
+    "options": {
+      "A": "tousser",
+      "B": "respirer",
+      "C": "manger",
+      "D": "boire"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "75978a16-73f5-42af-ad42-a171bddf4687",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1152"
+  },
+  {
+    "question": "'Respirer' nə deməkdir?",
+    "options": {
+      "A": "nəfəs almaq",
+      "B": "öskürmək",
+      "C": "asqırmaq",
+      "D": "ağlamaq"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "ddede3ea-9687-4c0a-a283-e3363955ccc0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1153"
+  },
+  {
+    "question": "'Qan' sözünün fransızca qarşılığı nədir?",
+    "options": {
+      "A": "le sang",
+      "B": "l'eau",
+      "C": "le lait",
+      "D": "le jus"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "279af3eb-a5e4-42a0-b8fc-ecda91d295db",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1154"
+  },
+  {
+    "question": "'Le cœur' nə deməkdir?",
+    "options": {
+      "A": "ürək",
+      "B": "mədə",
+      "C": "ciyər",
+      "D": "böyrək"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Xatırlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "9f473f28-22f2-4662-a193-cc3e2658f0fc",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1155"
+  },
+  {
+    "question": "'Boğazım ağrıyır' cümləsi necə tərcümə olunur?",
+    "options": {
+      "A": "J'ai mal à la gorge.",
+      "B": "J'ai mal au dos.",
+      "C": "J'ai mal au ventre.",
+      "D": "J'ai mal aux pieds."
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "0854c24b-df59-447f-acae-092241cfb2de",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1156"
+  },
+  {
+    "question": "Düzgün tibbi termindir:",
+    "options": {
+      "A": "une ordonnance",
+      "B": "une voiture",
+      "C": "une table",
+      "D": "un livre"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Vocabulaire",
+    "cat": "Fransız dili 9",
+    "id": "50aaf774-d04e-4d34-972b-f61e6a9a8277",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1157"
+  },
+  {
+    "question": "Cümləni tamamlayın: L'homme ___ parle est mon oncle.",
+    "options": {
+      "A": "qui",
+      "B": "que",
+      "C": "dont",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "9e0afe72-0e43-46d7-9887-ae18effc5090",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1158"
+  },
+  {
+    "question": "Cümləni tamamlayın: Le livre ___ je lis est intéressant.",
+    "options": {
+      "A": "que",
+      "B": "qui",
+      "C": "dont",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "66ac836c-d899-4d35-b8f7-b6b8195c7482",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1159"
+  },
+  {
+    "question": "Cümləni tamamlayın: La ville ___ j'habite est grande.",
+    "options": {
+      "A": "où",
+      "B": "qui",
+      "C": "que",
+      "D": "dont"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "9ac887b8-1b0a-4ad0-befa-d5789318bc98",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1160"
+  },
+  {
+    "question": "Cümləni tamamlayın: C'est le film ___ je t'ai parlé.",
+    "options": {
+      "A": "dont",
+      "B": "qui",
+      "C": "que",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "8e55eedd-87ba-43c0-89be-77d81ee8d6a4",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1161"
+  },
+  {
+    "question": "'Qui' nisbi əvəzliyi cümlədə hansı cümlə üzvü olur?",
+    "options": {
+      "A": "Mübtəda",
+      "B": "Tamamlıq",
+      "C": "Zərflik",
+      "D": "Təyin"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "8766ae50-ef8d-4449-93da-7b79862009b3",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1162"
+  },
+  {
+    "question": "'Que' nisbi əvəzliyi cümlədə hansı cümlə üzvü olur?",
+    "options": {
+      "A": "Tamamlıq",
+      "B": "Mübtəda",
+      "C": "Zərflik",
+      "D": "Xəbər"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "e3d0444c-5253-49a4-91fc-7e55ed4afb08",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1163"
+  },
+  {
+    "question": "Hansı əvəzlik həm yer, həm də zaman bildirə bilər?",
+    "options": {
+      "A": "Où",
+      "B": "Qui",
+      "C": "Que",
+      "D": "Dont"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "8d12720b-d6be-49d6-8e42-41eae114f599",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1164"
+  },
+  {
+    "question": "Cümləni tamamlayın: L'amie ___ vient est très sympathique.",
+    "options": {
+      "A": "qui",
+      "B": "que",
+      "C": "dont",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "88b988f3-806d-4f05-8fac-d537ad073232",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1165"
+  },
+  {
+    "question": "Cümləni tamamlayın: La robe ___ j'ai achetée est rouge.",
+    "options": {
+      "A": "que",
+      "B": "qui",
+      "C": "dont",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "2da8d7f0-8b84-44eb-bca8-1bc10b9586d1",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1166"
+  },
+  {
+    "question": "Cümləni tamamlayın: C'est le professeur ___ je connais la fille.",
+    "options": {
+      "A": "dont",
+      "B": "qui",
+      "C": "que",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "436cf224-60a5-4952-b188-5fd7fdc2a1a0",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1167"
+  },
+  {
+    "question": "Cümləni tamamlayın: Le moment ___ il est parti était triste.",
+    "options": {
+      "A": "où",
+      "B": "qui",
+      "C": "que",
+      "D": "dont"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "2b84a5e9-f519-4dcb-ba8c-f79018036411",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1168"
+  },
+  {
+    "question": "Hansı variantda 'qui' düzgün işlənib?",
+    "options": {
+      "A": "L'enfant qui pleure a faim.",
+      "B": "Le livre qui je lis.",
+      "C": "La maison qui j'habite.",
+      "D": "Le garçon qui j'aime."
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "4794d45f-deb0-46ac-b543-b7c50db5b01c",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1169"
+  },
+  {
+    "question": "Hansı variantda 'que' düzgün işlənib?",
+    "options": {
+      "A": "La pomme que je mange.",
+      "B": "La pomme que est rouge.",
+      "C": "La pomme que tombe.",
+      "D": "La pomme que est sur la table."
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "2f62824c-3576-4737-b007-996725f50333",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1170"
+  },
+  {
+    "question": "Cümləni tamamlayın: L'ordinateur ___ j'ai besoin est cher.",
+    "options": {
+      "A": "dont",
+      "B": "qui",
+      "C": "que",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "0d1bdc8e-316e-48f5-9e76-370b345cc9c7",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1171"
+  },
+  {
+    "question": "Nisbi əvəzliklərdən hansı 'de' sözönü ilə başlayan tamamlığı əvəz edir?",
+    "options": {
+      "A": "dont",
+      "B": "qui",
+      "C": "que",
+      "D": "où"
+    },
+    "correctAnswer": "A",
+    "explanation": "Bu mövzu dərslikdəki qaydalara əsaslanır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Leçon 5. Grammaire : Pronoms relatifs simples",
+    "cat": "Fransız dili 9",
+    "id": "e74826a9-0edc-45fc-9630-3d00c1a02b1d",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: B"
+      },
+      "C": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: C"
+      },
+      "D": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: D"
+      }
+    },
+    "passport_id": "09-FRA-1172"
+  }
+]

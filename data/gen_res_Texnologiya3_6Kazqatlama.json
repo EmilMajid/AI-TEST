@@ -1,0 +1,257 @@
+[
+  {
+    "question": "Hava şarları hansı vasitə ilə uçur?",
+    "options": {
+      "A": "Qızdırılmış havanın köməyi ilə",
+      "B": "Yüngül hidrogen qazının köməyi ilə",
+      "C": "Dizel mühərrikinin köməyi ilə",
+      "D": "Elektrik enerjisinin köməyi ilə"
+    },
+    "answer": "A",
+    "explanation": "Hava şarları qızdırılmış havanın, dirijabl yüngül qaz (hidrogen qazı) və mühərrikin köməyi ilə uçur.",
+    "distractor_diagnostics": {
+      "B": "Yüngül qaz dirijablların uçmasına kömək edir.",
+      "C": "Hava şarlarında dizel mühərriki barədə məlumat yoxdur.",
+      "D": "Elektrik enerjisi mətnə görə hava şarlarında istifadə olunmur."
+    },
+    "passport_id": "03-TEX-6-01"
+  },
+  {
+    "question": "İnsanın əməyini yüngülləşdirən, enerjini, materialları və informasiyaları dəyişən texniki qurğu necə adlanır?",
+    "options": {
+      "A": "Dəzgah",
+      "B": "Maşın",
+      "C": "Alət",
+      "D": "Motor"
+    },
+    "answer": "B",
+    "explanation": "Eneıjini, materialları və informasiyaları dəyişən texniki qurğuya maşın deyilir. Maşın insanın əməyini yüngülləşdirir.",
+    "distractor_diagnostics": {
+      "A": "Dəzgah xüsusi texnoloji maşın növüdür, ümumi tərif maşına aiddir.",
+      "C": "Alət sadə əmək vasitəsidir, bu tərif alətə deyil, maşına verilir.",
+      "D": "Motor maşının yalnız bir hissəsidir."
+    },
+    "passport_id": "03-TEX-6-02"
+  },
+  {
+    "question": "Kompüter sözünün mənası nədir?",
+    "options": {
+      "A": "İnternet şəbəkəsi",
+      "B": "Avtomatik hesabat verən sistem",
+      "C": "Elektron hesablayıcı maşın",
+      "D": "Qrafik dizayn aparatı"
+    },
+    "answer": "C",
+    "explanation": "Kompüter sözünün mənası “elektron hesablayıcı maşın” deməkdir.",
+    "distractor_diagnostics": {
+      "A": "İnternet şəbəkəsi mətndə yalnız məlumatların ötürülməsi vasitəsi kimi keçir.",
+      "B": "Bu, kompüter sözünün tərcüməsi deyil.",
+      "D": "Qrafik dizayn onun yalnız bir funksiyası ola bilər."
+    },
+    "passport_id": "03-TEX-6-03"
+  },
+  {
+    "question": "İlk sadə hesablayıcı maşınlar - mexaniki arifmometrlər neçənci ildə kəşf olunmuşdur?",
+    "options": {
+      "A": "1905-ci ildə",
+      "B": "1950-ci ildə",
+      "C": "1915-ci ildə",
+      "D": "1920-ci ildə"
+    },
+    "answer": "D",
+    "explanation": "İlk sadə hesablayıcı maşınlar - mexaniki arifmometrlər 1920-ci ildə kəşf olunmuşdur.",
+    "distractor_diagnostics": {
+      "A": "Mətndə 1905-ci il qeyd edilməyib.",
+      "B": "Mətndə 1950-ci il qeyd edilməyib.",
+      "C": "Mətndə 1915-ci il qeyd edilməyib."
+    },
+    "passport_id": "03-TEX-6-04"
+  },
+  {
+    "question": "Oxvari qanadları olan, quyruğu olmayan, motorlu və ya motorsuz uçan qurğu necə adlanır?",
+    "options": {
+      "A": "Deltaplan",
+      "B": "Planer",
+      "C": "Dirijabl",
+      "D": "Təyyarə"
+    },
+    "answer": "A",
+    "explanation": "Deltaplan - Oxvari qanadları olan, quyruğu olmayan, motorlu və ya motorsuz uçan qurğudur.",
+    "distractor_diagnostics": {
+      "B": "Planer motorsuz uçucu aparatdır, quyruğu barədə oxvari tərif verilmir.",
+      "C": "Dirijabl idarə edilən, qazla uçan qurğudur.",
+      "D": "Təyyarə qanadları və quyruğu olan mühərrikli aparatdır."
+    },
+    "passport_id": "03-TEX-6-05"
+  },
+  {
+    "question": "Aşağıdakılardan hansı nəqledici maşınların funksiyasıdır?",
+    "options": {
+      "A": "Dənli bitkiləri üyüdmək",
+      "B": "Müxtəlif yükləri qaldırmaq və nəql etmək",
+      "C": "Pəstahları kəsmək və yonmaq",
+      "D": "Havanı soyutmaq"
+    },
+    "answer": "B",
+    "explanation": "Bu maşınlara tikinti meydançalarında daha çox rast gəlinir. Çünki onlardan müxtəlif yüklərin qaldırılmasında və nəql edilməsində istifadə edilir.",
+    "distractor_diagnostics": {
+      "A": "Bu qəhvəüyüdənin funksiyasıdır.",
+      "C": "Bu, texnoloji dəzgahların işidir.",
+      "D": "Havanı kondisioner soyudur."
+    },
+    "passport_id": "03-TEX-6-06"
+  },
+  {
+    "question": "Neft və digər duru yükləri daşıyan gəmiyə nə deyilir?",
+    "options": {
+      "A": "Bərə",
+      "B": "Kater",
+      "C": "Tanker",
+      "D": "Dirijabl"
+    },
+    "answer": "C",
+    "explanation": "Tanker - neft və digər duru yüklər daşıyan gəmi.",
+    "distractor_diagnostics": {
+      "A": "Bərə sərnişin və nəqliyyat vasitəsi daşıyır.",
+      "B": "Kater kiçik həcmli gəmidir, duru yük daşımır.",
+      "D": "Dirijabl hava nəqliyyatıdır, su deyil."
+    },
+    "passport_id": "03-TEX-6-07"
+  },
+  {
+    "question": "Kağızqatlama üsulu ilə mamont fiquru hazırlayarkən onun dişlərini almaq üçün hansı hissəni kəsmək lazımdır?",
+    "options": {
+      "A": "Başının bir hissəsini",
+      "B": "Quyruğunun bir hissəsini",
+      "C": "Arxa ayaqlarının bir hissəsini",
+      "D": "Xortumunun bir hissəsini"
+    },
+    "answer": "D",
+    "explanation": "Mamontun dişlərinin alınması üçün xortumun bir hissəsini, quyruğunun alınması üçün arxa ayaqlarının bir hissəsini kəsin.",
+    "distractor_diagnostics": {
+      "A": "Başı kəsmək barədə mətndə məlumat yoxdur.",
+      "B": "Quyruğunun alınması üçün arxa ayaqlarının bir hissəsi kəsilir.",
+      "C": "Arxa ayaqlar quyruq üçün kəsilir, dişlər üçün deyil."
+    },
+    "passport_id": "03-TEX-6-08"
+  },
+  {
+    "question": "Paltarlarda ilgəkləri hansı tikiş növü ilə tikirlər?",
+    "options": {
+      "A": "“Kənar” tikişlə",
+      "B": "“İlgək” tikişlə",
+      "C": "“İkiqat kənar” tikişlə",
+      "D": "“Çarpaz” tikişlə"
+    },
+    "answer": "B",
+    "explanation": "Paltarlarda ilgəkləri “ilgək” tikişlə tikirlər.",
+    "distractor_diagnostics": {
+      "A": "Kənar tikiş salfet qıraqları üçündür, ilgəklər üçün deyil.",
+      "C": "İkiqat kənar tikiş ilgək üçün qeyd edilməyib.",
+      "D": "Çarpaz tikiş barədə mətndə məlumat verilmir."
+    },
+    "passport_id": "03-TEX-6-09"
+  },
+  {
+    "question": "“Şən aslan” oyuncağının hazırlanmasında ipliyi əlin neçə barmağına dolamaq lazımdır?",
+    "options": {
+      "A": "İki barmağına",
+      "B": "Üç barmağına",
+      "C": "Dörd barmağına",
+      "D": "Beş barmağına"
+    },
+    "answer": "C",
+    "explanation": "Qırmızı yumşaq ipliyi əlinizin dörd barmağına dolayın.",
+    "distractor_diagnostics": {
+      "A": "İki barmaq deyilmir.",
+      "B": "Üç barmaq deyilmir.",
+      "D": "Beş barmaq yazılmayıb, 4 barmaq tələb olunur."
+    },
+    "passport_id": "03-TEX-6-10"
+  },
+  {
+    "question": "Çoxfunksiyalı oduncaq dəzgahlarında hansı əməliyyatları yerinə yetirirlər?",
+    "options": {
+      "A": "Yalnız oduncağı yonurlar",
+      "B": "Armaturu əyirlər",
+      "C": "Şüşə kəsirlər",
+      "D": "Oduncağı kəsirlər, həm də yonurlar"
+    },
+    "answer": "D",
+    "explanation": "Çoxfunksiyalı oduncaq dəzgahlarında oduncağı kəsirlər, həm də yonurlar.",
+    "distractor_diagnostics": {
+      "A": "Onlar yalnız yonmurlar, həm də kəsirlər.",
+      "B": "Armatur əymək üçün əl dəzgahı var.",
+      "C": "Şüşəkəsən dəzgah var."
+    },
+    "passport_id": "03-TEX-6-11"
+  },
+  {
+    "question": "Ürəkşəkilli çərçivənin hazırlanması üçün cəmi neçə modul lazımdır?",
+    "options": {
+      "A": "48 modul (24 qırmızı, 24 ağ)",
+      "B": "24 modul (12 qırmızı, 12 ağ)",
+      "C": "36 modul (18 qırmızı, 18 ağ)",
+      "D": "50 modul (25 qırmızı, 25 ağ)"
+    },
+    "answer": "A",
+    "explanation": "Ürəkşəkilli çərçivənin hazırlanması üçün 48 (24 qırmızı və 24 ağ) modul lazımdır.",
+    "distractor_diagnostics": {
+      "B": "Mətndə 24 yox, 48 modul yazılıb.",
+      "C": "36 modul yalnış cavabdır.",
+      "D": "50 modul yalnış cavabdır."
+    },
+    "passport_id": "03-TEX-6-12"
+  },
+  {
+    "question": "Beton nasosu tikinti meydançasında hansı işi görür?",
+    "options": {
+      "A": "Yükü müxtəlif hündürlüyə qaldırır",
+      "B": "Maye betonu tikilən binanın müxtəlif hündürlüyünə nəql edir",
+      "C": "Torpağın və ya daşın yerini dəyişir",
+      "D": "Sərnişinləri endirib-qaldırır"
+    },
+    "answer": "B",
+    "explanation": "Beton nasosu betonqarışdırıcıdan maye betonu tikilən binanın müxtəlif hündürlüyünə nəql edir.",
+    "distractor_diagnostics": {
+      "A": "Bu işi qaldırıcı kran və yükqaldıran maşın görür.",
+      "C": "Bu işi ekskavator, buldozer və qreyder görür.",
+      "D": "Bu eskalatorun işidir."
+    },
+    "passport_id": "03-TEX-6-13"
+  },
+  {
+    "question": "Hərəkətli detalları olan “Şən ayı balası” oyuncağında birləşmə yerlərində ayı balasının pəncələrini və gövdəsini nə ilə deşirlər?",
+    "options": {
+      "A": "Qayçı ilə",
+      "B": "Bıçaqla",
+      "C": "Bizlə",
+      "D": "İynə ilə"
+    },
+    "answer": "C",
+    "explanation": "Birləşmə yerlərində ayı balasının pəncələrini və gövdəsini bizlə deşin.",
+    "distractor_diagnostics": {
+      "A": "Mətndə qayçı kəsmək üçün verilib, deşmək üçün biz tələb olunur.",
+      "B": "Bıçaqdan istifadə göstərilməyib.",
+      "D": "İynədən deyil, bizdən istifadə edilir."
+    },
+    "passport_id": "03-TEX-6-14"
+  },
+  {
+    "question": "Hansı məişət avadanlığı müxtəlif dənli bitkiləri üyüdüb toz halına salır?",
+    "options": {
+      "A": "Qəhvəüyüdən",
+      "B": "Şirəçəkən maşın",
+      "C": "Elektrik ətçəkən maşın",
+      "D": "Qabyuyan maşın"
+    },
+    "answer": "A",
+    "explanation": "Qəhvəüyüdən müxtəlif dənli bitkiləri üyüdüb toz halına salır.",
+    "distractor_diagnostics": {
+      "B": "Şirəçəkən maşın meyvələrin şirəsini çıxarır.",
+      "C": "Ətçəkən maşın mexaniki işi əvəz edir, lakin dənli bitkiləri üyütmür.",
+      "D": "Qabyuyan maşın qabları yuyur."
+    },
+    "passport_id": "03-TEX-6-15"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-TEX-3-01",
+    "question": "Yemək yeyərkən payın hamısını niyə birdən hissələrə doğramaq olmaz?",
+    "options": [
+      "Yemək dadını itirər.",
+      "Bıçaq kütləşər.",
+      "Yeməyi həzm etmək çətin olar.",
+      "Nimçə səliqəsiz görünər və yemək tez soyuyar."
+    ],
+    "correct_answer": "D",
+    "explanation": "Bütün payı hissələrə doğramayın: onda sizin nimçəniz səliqəsiz görünər, yemək isə tez soyuyar.",
+    "distractor_diagnostics": {
+      "A": "Mətndə dadın itməsi barədə məlumat yoxdur.",
+      "B": "Yemək kəsmək bıçağı kütləşdirmir.",
+      "C": "Bunun həzm ilə birbaşa əlaqəsi mətndə qeyd edilməyib."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-02",
+    "question": "Balığın qılçıqlarını əllə çıxararkən barmaqları nə etmək lazımdır?",
+    "options": [
+      "Yalamaq lazımdır",
+      "Barmaqları yalamır, salfetlə silirlər",
+      "Su ilə yumaq lazımdır",
+      "Süfrəyə silmək lazımdır"
+    ],
+    "correct_answer": "B",
+    "explanation": "Balığın qılçıqlarını çəngəllə və əllə çıxarmaq olar. Lakin bu zaman barmaqları yalamır, salfetlə silirlər.",
+    "distractor_diagnostics": {
+      "A": "Barmaqları yalamaq davranış qaydalarına ziddir.",
+      "C": "Həmin an su ilə deyil, salfetlə silinir.",
+      "D": "Süfrəyə silmək ədəbsizlikdir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-03",
+    "question": "Kompotdan çıxan çəyirdəkləri necə çıxarmaq lazımdır?",
+    "options": [
+      "Qaşığı ağıza yaxınlaşdırıb çəyirdəyi çıxararaq nəlbəkiyə qoymaqla",
+      "Əllə götürüb atmaqla",
+      "Nəlbəkiyə tüpürüb atmaqla",
+      "Stəkanın dibində saxlamaqla"
+    ],
+    "correct_answer": "A",
+    "explanation": "Kompotdan çıxan çəyirdəkləri nəlbəkiyə tüpürüb atmayın. Qaşığı ağıza yaxınlaşdırıb çəyirdəyi çıxarın və nəlbəkiyə qoyun.",
+    "distractor_diagnostics": {
+      "B": "Əllə götürmək mədəniyyət qaydalarına daxil deyil.",
+      "C": "Nəlbəkiyə tüpürmək məsləhət görülmür.",
+      "D": "Çəyirdək stəkanda deyil, nəlbəkidə saxlanılmalıdır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-04",
+    "question": "Ümumi qabdan hansı tikəni götürmək düzgündür?",
+    "options": [
+      "Ən böyük tikəni",
+      "Ortada olan tikəni",
+      "Özünə tərəf olan tikəni",
+      "Ən kiçik tikəni"
+    ],
+    "correct_answer": "C",
+    "explanation": "Ümumi qabdan sizə tərəf olan tikəni götürün.",
+    "distractor_diagnostics": {
+      "A": "Ən böyük tikəni seçmək ədəbsizlik sayılır.",
+      "B": "Ortadan götürmək başqalarına mane ola bilər.",
+      "D": "Məqsəd ölçüsünə görə seçmək deyil, özünə yaxın olanı götürməkdir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-05",
+    "question": "Yeməyi kəsmək lazımdırsa, bıçaq və çəngəl hansı əllərdə tutulmalıdır?",
+    "options": [
+      "Çəngəl sağ, bıçaq sol əldə",
+      "İkisi də sağ əldə",
+      "İkisi də sol əldə",
+      "Çəngəl sol, bıçaq sağ əldə"
+    ],
+    "correct_answer": "D",
+    "explanation": "Hər hansı bir yeməyi kəsmək lazımdırsa, çəngəli sol, bıçağı isə sağ əldə tutun.",
+    "distractor_diagnostics": {
+      "A": "Bu, qaydalara görə tərsinədir.",
+      "B": "Hər iki aləti eyni əldə tutmaq mümkün deyil və qaydalara ziddir.",
+      "C": "Hər iki alət fərqli əllərdə olmalıdır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-06",
+    "question": "Çay içəndə çay qaşığını nə üçün stəkanda saxlamaq olmaz?",
+    "options": [
+      "Çay tez soyuyar",
+      "Stəkan çevrilə bilər",
+      "Qaşıq isinər və əli yandırar",
+      "Çayın rəngi dəyişər"
+    ],
+    "correct_answer": "B",
+    "explanation": "Çay içəndə çay qaşığını stəkanda saxlamayın - o çevrilə bilər.",
+    "distractor_diagnostics": {
+      "A": "Mətndə əsas səbəb soyuma deyil, təhlükəsizlikdir.",
+      "C": "Əsas səbəb stəkanın çevrilməsidir.",
+      "D": "Qaşığın çayın rənginə təsiri yoxdur."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-07",
+    "question": "Səkkizayaqlı ilbiz necə canlıdır?",
+    "options": [
+      "Ayaqlarında çoxlu sormaclar olan suda yaşayan canlıdır",
+      "Səhrada yaşayan canlıdır",
+      "Ağaclarda yaşayan canlıdır",
+      "Tikanlı bədəni olan quruda yaşayan canlıdır"
+    ],
+    "correct_answer": "A",
+    "explanation": "Səkkizayaqlı ilbiz - ayaqlarında çoxlu sormaclar olan suda yaşayan canlıdır.",
+    "distractor_diagnostics": {
+      "B": "Səkkizayaqlı ilbiz suda yaşayır.",
+      "C": "Ağacda deyil, suda yaşayır.",
+      "D": "Quruda yaşamır və sormacları var."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-08",
+    "question": "Səkkizayaqlı ilbizin ağzında nə var?",
+    "options": [
+      "Çox iti tikanlar",
+      "Yalnız yumşaq dil",
+      "Tutuquşu dimdiyinə bənzəyən iki güclü çənə",
+      "Uzun sormaclar"
+    ],
+    "correct_answer": "C",
+    "explanation": "Səkkizayaqlı ilbizin ağzında tutuquşu dimdiyinə bənzəyən iki güclü çənəsi, boğazında yeməkləri üyütməyə imkan verən sürtgəc var.",
+    "distractor_diagnostics": {
+      "A": "Ağzında tikan deyil, çənə var.",
+      "B": "Onun güclü çənələri mövcuddur.",
+      "D": "Sormaclar onun ayaqlarındadır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-09",
+    "question": "Plastilindən səkkizayaqlı ilbiz düzəldərkən qəhvəyi plastilin tirciyi neçə hissəyə ayrılır?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "B",
+    "explanation": "Qəhvəyi plastilin tirciyi biri digərlərindən böyük olmaqla 5 hissəyə ayırın və bütün hissələrdən kürəciklər yuvarlayın.",
+    "distractor_diagnostics": {
+      "A": "Hissələrin sayı 4 deyil, 5-dir.",
+      "C": "Hissələrin sayı 6 yox, 5 olmalıdır.",
+      "D": "8 onun ayaqlarının sayıdır, hissələrin deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-10",
+    "question": "Zebr harada yaşayır?",
+    "options": [
+      "Yalnız Şimali Amerikada",
+      "Avropanın meşələrində",
+      "Asiyanın dağlarında",
+      "Yalnız Mərkəzi və Cənubi Afrikada"
+    ],
+    "correct_answer": "D",
+    "explanation": "Zebrlərə yalnız Mərkəzi və Cənubi Afrikada rast gəlinir.",
+    "distractor_diagnostics": {
+      "A": "Zebrlər Amerikada deyil, Afrikada yaşayır.",
+      "B": "Avropa meşələrində zebrlər yaşamır.",
+      "C": "Asiyada təbii halda zebrlər mövcud deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-11",
+    "question": "Zebralar necə yatırlar?",
+    "options": [
+      "Bütün atlar kimi ayaq üstə",
+      "Ağaclara söykənərək",
+      "Uzanaraq",
+      "Yalnız gündüzlər ayaq üstə"
+    ],
+    "correct_answer": "C",
+    "explanation": "Maraqlıdır ki, zebralar bütün atlar kimi ayaq üstə deyil, uzanaraq yatırlar.",
+    "distractor_diagnostics": {
+      "A": "Digər atlardan fərqli olaraq onlar uzanırlar.",
+      "B": "Ağaclara söykənərək yatmaq barədə məlumat yoxdur.",
+      "D": "Gündüzlər ayaq üstə yatmaq fikri mətndə yoxdur."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-12",
+    "question": "İlk qayçı hansı məqsədlə yaradılmışdır?",
+    "options": [
+      "Qoyunları qırxmaq üçün",
+      "Kağız kəsmək üçün",
+      "Parça kəsmək üçün",
+      "Ağac budamaq üçün"
+    ],
+    "correct_answer": "A",
+    "explanation": "Bu, qoyunları qırxmaq üçün nəzərdə tutulmuş qayçı idi.",
+    "distractor_diagnostics": {
+      "B": "İlk qayçı kağız deyil, yun qırxmaq üçün idi.",
+      "C": "Parça kəsmək məqsədi daha sonra inkişaf etmişdir.",
+      "D": "Ağac budama qayçısı sonralar yaranıb."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-13",
+    "question": "Panda hansı ölkənin cənubunda yaşayan nadir heyvandır?",
+    "options": [
+      "Yaponiyanın",
+      "Çinin",
+      "Hindistanın",
+      "Afrikanın"
+    ],
+    "correct_answer": "B",
+    "explanation": "Panda - Çinin cənubunda yaşayan çox nadir heyvanı belə adlandırırlar.",
+    "distractor_diagnostics": {
+      "A": "Pandalar Yaponiyanın deyil, Çinin heyvanıdır.",
+      "C": "Hindistanda pandaların yaşaması mətndə qeyd edilmir.",
+      "D": "Afrika zebrlərin yaşadığı qitədir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-14",
+    "question": "Təbiətin mühafizəsi üzrə təşkilat pandalar üçün nəyə nəzarət edir?",
+    "options": [
+      "Bambuk meşələrinin mühafizəsinə",
+      "Çayların təmizliyinə",
+      "Şam ağaclarının əkilməsinə",
+      "Zolaqlı atların qorunmasına"
+    ],
+    "correct_answer": "A",
+    "explanation": "Bu təşkilat pandanın əsas qida mənbəyi olan bambuk meşələrinin mühafizəsinə nəzarət edir.",
+    "distractor_diagnostics": {
+      "B": "Mətndə çayların təmizliyinə nəzarət qeyd edilməyib.",
+      "C": "Pandalar şam ağaclarında deyil, bambuk meşələrində yaşayır.",
+      "D": "Zolaqlı atlar (zebrlər) tamam fərqli heyvan növüdür."
+    }
+  },
+  {
+    "passport_id": "03-TEX-3-15",
+    "question": "Hansı alətlə yemək təhlükəlidir?",
+    "options": [
+      "Qaşıqla",
+      "Çəngəllə",
+      "Bıçaqla",
+      "Ağac çubuqlarla"
+    ],
+    "correct_answer": "C",
+    "explanation": "Bıçaqla yemək təhlükəlidir.",
+    "distractor_diagnostics": {
+      "A": "Qaşıqla yemək tam təhlükəsiz və qaydalara uyğundur.",
+      "B": "Çəngəl yemək yemək üçün ən əsas alətdir.",
+      "D": "Ağac çubuqlarla yemək mətndə qeyd olunmayıb."
+    }
+  }
+]

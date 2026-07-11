@@ -1,0 +1,354 @@
+[
+  {
+    "question": "Aşağıdakılardan hansı yolda davranış mədəniyyətinə aid deyil?",
+    "options": {
+      "A": "İşıqforun tələblərinə riayət etmək",
+      "B": "Piyada keçidlərindən istifadə etmək",
+      "C": "İctimai nəqliyyatda ucadan danışmaq",
+      "D": "Yaşlı insanlara yolu keçməyə kömək etmək",
+      "E": "Yol hərəkəti qaydalarını öyrənmək və tətbiq etmək"
+    },
+    "correctAnswer": "C",
+    "explanation": "İctimai nəqliyyatda ucadan danışmaq həm yolda davranış mədəniyyətinə, həm də ümumi ictimai davranış qaydalarına ziddir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "Yolda davranış mədəniyyəti",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Fövqəladə hal baş verdikdə ilk növbədə nə edilməlidir?",
+    "options": {
+      "A": "Panikaya düşüb qaçmaq",
+      "B": "Yaranmış vəziyyəti düzgün qiymətləndirib müvafiq qurumlara xəbər vermək",
+      "C": "Hadisəni videoya çəkib sosial şəbəkələrdə paylaşmaq",
+      "D": "Heç nə olmamış kimi davranmaq",
+      "E": "Yalnız öz əşyalarını xilas etməyə çalışmaq"
+    },
+    "correctAnswer": "B",
+    "explanation": "Fövqəladə hallar zamanı ən vacib addım soyuqqanlılığı qorumaq, vəziyyəti dəyərləndirmək və dərhal xilasedici qurumlara (məsələn, 112) məlumat verməkdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Hansı hərəkət qaz sızması zamanı təhlükəsizlik qaydalarının pozulması hesab olunur?",
+    "options": {
+      "A": "Qapı və pəncərələri dərhal açmaq",
+      "B": "Qazın ümumi kranını bağlamaq",
+      "C": "İşığı yandırmaq və ya söndürmək",
+      "D": "Qaz idarəsinə zəng etmək",
+      "E": "Otağı tərk etmək"
+    },
+    "correctAnswer": "C",
+    "explanation": "Qaz sızması zamanı işığı yandırmaq və ya söndürmək, həmçinin elektrik cihazlarından istifadə etmək qığılcım yarada və partlayışa səbəb ola bilər.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Zəlzələ zamanı binanın içərisində olan şəxs hansı hərəkəti etməlidir?",
+    "options": {
+      "A": "Dərhal liftlə aşağı düşməlidir",
+      "B": "Pilləkənlərlə sürətlə qaçmalıdır",
+      "C": "Pəncərəyə yaxınlaşmalı və çölə baxmalıdır",
+      "D": "Etibarlı masanın və ya çarpayının altına girib başını qorumalıdır",
+      "E": "Eyvana çıxıb kömək çağırmalıdır"
+    },
+    "correctAnswer": "D",
+    "explanation": "Zəlzələ zamanı daxildə olarkən 'çök, qorun, tutun' qaydasına əməl etmək, etibarlı əşyaların altında qorunmaq ən təhlükəsiz yoldur.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "İnternetdən istifadə zamanı təhlükəsizliyi təmin etmək üçün nə tövsiyə olunmur?",
+    "options": {
+      "A": "Güclü və mürəkkəb şifrələrdən istifadə etmək",
+      "B": "Şəxsi məlumatları tanımadığımız şəxslərlə paylaşmaq",
+      "C": "Naməlum mənbələrdən gələn linklərə daxil olmamaq",
+      "D": "Antivirus proqramlarından istifadə etmək",
+      "E": "Sosial şəbəkə hesablarının məxfilik parametrlərini tənzimləmək"
+    },
+    "correctAnswer": "B",
+    "explanation": "Şəxsi məlumatları (ünvan, şifrə, şəxsiyyət vəsiqəsinin nömrəsi və s.) tanımadığımız şəxslərlə paylaşmaq kibercinayətkarlığa və fırıldaqçılığa yol aça bilər.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Məktəbdə yanğın təhlükəsi zamanı təxliyyə (evakuasiya) planının əsas məqsədi nədir?",
+    "options": {
+      "A": "İnsanların ən qısa vaxtda, təhlükəsiz şəkildə binanı tərk etməsini təmin etmək",
+      "B": "Yanğını təkbaşına söndürmək üçün yollar axtarmaq",
+      "C": "Məktəb əşyalarını xilas etmək",
+      "D": "Yanğınsöndürənlərin işinə nəzarət etmək",
+      "E": "Gizlənmək üçün ən yaxşı yeri tapmaq"
+    },
+    "correctAnswer": "A",
+    "explanation": "Təxliyyə planı fövqəladə hal zamanı insanların təşvişə düşmədən, nizamlı və təhlükəsiz şəkildə binanı tərk etmələrini təşkil etmək üçündür.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "İlk tibbi yardımın əsas məqsədi nədən ibarətdir?",
+    "options": {
+      "A": "Xəstəyə tam tibbi müalicə tətbiq etmək",
+      "B": "Həkim gələnə qədər zərərçəkənin həyatını xilas etmək və vəziyyətinin ağırlaşmasının qarşısını almaq",
+      "C": "Xəstəxanaya ehtiyac qalmadan xəstəni sağaltmaq",
+      "D": "Zərərçəkənə diaqnoz qoymaq",
+      "E": "Cərrahi müdaxilə həyata keçirmək"
+    },
+    "correctAnswer": "B",
+    "explanation": "İlk tibbi yardım ixtisaslaşmış tibbi heyət gələnə qədər həyati təhlükəni aradan qaldırmaq və vəziyyətin pisləşməsinin qarşısını almaq üçün göstərilən təxirəsalınmaz tədbirlərdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Bilmək",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Aşağıdakılardan hansı məişət təhlükəsizliyi qaydalarının pozulmasına nümunədir?",
+    "options": {
+      "A": "Elektrik cihazlarını nəzarətsiz qoymamaq",
+      "B": "Dərmanları uşaqların əli çatmayan yerdə saxlamaq",
+      "C": "Kimyəvi təmizləyici maddələri qida məhsulları ilə eyni yerdə saxlamaq",
+      "D": "Evdən çıxarkən qazı və işığı söndürmək",
+      "E": "Kəsici alətlərlə ehtiyatla davranmaq"
+    },
+    "correctAnswer": "C",
+    "explanation": "Kimyəvi təmizləyici maddələrin qida məhsullarına yaxın və ya eyni yerdə saxlanılması zəhərlənmə riskini artırır və ciddi təhlükə mənbəyidir.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "Təhlükəsizliyimizə laqeyd qalmayaq",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Sağlam ailə mühitinin formalaşmasında əsas şərtlərdən biri hesab olunur:",
+    "options": {
+      "A": "Ailə üzvlərinin bir-biri ilə az ünsiyyətdə olması",
+      "B": "Valideynlərin yalnız maddi təminatla maraqlanması",
+      "C": "Qarşılıqlı hörmət, sevgi və anlayış",
+      "D": "Bütün qərarların yalnız bir nəfər tərəfindən qəbul edilməsi",
+      "E": "Uşaqların fikirlərinə məhəl qoyulmaması"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sağlam ailənin təməli qarşılıqlı hörmətə, sevgiyə, mənəvi dəyərlərə və anlayışa əsaslanır. Bu cür mühitdə fərdlər psixoloji cəhətdən daha sağlam böyüyür.",
+    "difficulty": "Asan",
+    "bloom_level": "Anlamaq",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Ailədə sağlam həyat tərzinin təbliği nəyə xidmət edir?",
+    "options": {
+      "A": "Yalnız fiziki gücün artmasına",
+      "B": "Xəstəliklərin çoxalmasına",
+      "C": "Ailə büdcəsinin israf olunmasına",
+      "D": "Fiziki və psixoloji cəhətdən sağlam gələcək nəslin yetişməsinə",
+      "E": "Ailə daxilində konfliktlərin yaranmasına"
+    },
+    "correctAnswer": "D",
+    "explanation": "Sağlam həyat tərzi idman, düzgün qidalanma və psixoloji rifahı əhatə edir. Ailədə bu dəyərlərin tətbiqi həm fiziki, həm də psixoloji olaraq sağlam cəmiyyətin formalaşmasına xidmət edir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Valideyn-övlad münasibətlərində yaranan problemlərin ən effektiv həlli yolu hansıdır?",
+    "options": {
+      "A": "Problemi görməzdən gəlmək",
+      "B": "Zorakılıq və təzyiq tətbiq etmək",
+      "C": "Açıq dialoq və empatiya qurmaq",
+      "D": "Övladı daim tənqid etmək",
+      "E": "Kənar şəxslərin işə qarışmasını tələb etmək"
+    },
+    "correctAnswer": "C",
+    "explanation": "Problemlərin həllində səmimi ünsiyyət, tərəflərin bir-birini dinləməsi və empatiya nümayiş etdirməsi ən səmərəli yoldur.",
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Erkən nikahların cəmiyyət və ailə üçün yaratdığı əsas təhlükə hansıdır?",
+    "options": {
+      "A": "Ailənin maddi vəziyyətinin dərhal yaxşılaşması",
+      "B": "Gənclərin fiziki və psixoloji inkişafının ləngiməsi, reproduktiv sağlamlığın zərər görməsi",
+      "C": "Təhsil səviyyəsinin kəskin artması",
+      "D": "Gənclərin daha tez müstəqil olması",
+      "E": "Karyera imkanlarının genişlənməsi"
+    },
+    "correctAnswer": "B",
+    "explanation": "Erkən yaşda qurulan nikahlar həm qızların, həm də oğlanların təhsildən yayınmasına, psixoloji travmalara və ciddi sağlamlıq problemlərinə səbəb olur.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil etmək",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Ailə planlaşdırılması anlayışı özündə nəyi ehtiva edir?",
+    "options": {
+      "A": "Təsadüfi olaraq çoxlu sayda övlad sahibi olmağı",
+      "B": "Övladların sayının və doğumlar arasındakı müddətin şüurlu şəkildə müəyyən edilməsini",
+      "C": "Yalnız maddi qazanc əldə etmək üçün planlar qurmağı",
+      "D": "Uşaqların təhsil almasının qarşısını almağı",
+      "E": "Ailədə tibbi xidmətlərdən tamamilə imtina etməyi"
+    },
+    "correctAnswer": "B",
+    "explanation": "Ailə planlaşdırılması ana və uşaq sağlamlığını qorumaq məqsədilə doğulacaq uşaqların sayının və onların arasındakı yaş fərqinin düzgün müəyyən edilməsidir.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Ailə daxili zorakılıqla üzləşən şəxs ilk növbədə hansı addımı atmalıdır?",
+    "options": {
+      "A": "Vəziyyəti gizlətməli və dözməlidir",
+      "B": "Eyni şəkildə zorakılıqla cavab verməlidir",
+      "C": "Hüquq-mühafizə orqanlarına, sığınacaqlara və ya qaynar xətlərə müraciət etməlidir",
+      "D": "Özünü cəmiyyətdən təcrid etməlidir",
+      "E": "Bütün günahı özündə axtarmalıdır"
+    },
+    "correctAnswer": "C",
+    "explanation": "Ailədaxili zorakılıq cinayətdir və zərərçəkən şəxs dərhal polisə, qaynar xətlərə (məsələn, 860) və ya müvafiq yardım mərkəzlərinə müraciət edərək hüquqlarını qorumalıdır.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Ailədə uşağın hüquqlarının pozulmasına aid edilə bilməz:",
+    "options": {
+      "A": "Uşağın təhsil almaqdan yayındırılması",
+      "B": "Uşağın fiziki və ya psixoloji təzyiqə məruz qalması",
+      "C": "Uşağın öz fikrini sərbəst ifadə etməsinə şərait yaradılması",
+      "D": "Uşağın ağır fiziki əməyə məcbur edilməsi",
+      "E": "Uşağa lazımi tibbi xidmətin göstərilməməsi"
+    },
+    "correctAnswer": "C",
+    "explanation": "Uşağın öz fikrini sərbəst şəkildə ifadə etməsi onun təməl hüquqlarından biridir. Bu, hüququn pozulması deyil, əksinə, təmin edilməsidir.",
+    "difficulty": "Orta",
+    "bloom_level": "Təhlil etmək",
+    "topic": "3. Sağlam ailə sağlam gələcəyin təminatıdır",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Aşağıdakılardan hansı qlobal istiləşmənin əsas səbəblərindən biridir?",
+    "options": {
+      "A": "Meşələrin sahəsinin genişləndirilməsi",
+      "B": "Atmosferdə istixana qazlarının (CO2, metan və s.) miqdarının artması",
+      "C": "Günəş və külək enerjisindən istifadənin çoxalması",
+      "D": "Tullantıların təkrar emalı",
+      "E": "Elektromobillərin istehsalının artması"
+    },
+    "correctAnswer": "B",
+    "explanation": "Sənayeləşmə, avtomobillərdən çıxan qazlar və meşələrin qırılması nəticəsində atmosferdə toplanan istixana qazları Yerin səthində temperaturun artmasına, yəni qlobal istiləşməyə səbəb olur.",
+    "difficulty": "Orta",
+    "bloom_level": "Bilmək",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "'Ozon dəliyinin' yaranması bəşəriyyət üçün hansı təhlükəni yaradır?",
+    "options": {
+      "A": "Torpaqların şoranlaşmasını sürətləndirir",
+      "B": "Yerin cazibə qüvvəsini zəiflədir",
+      "C": "Zərərli ultrabənövşəyi şüaların Yer səthinə birbaşa düşməsinə və dəri xəstəliklərinin artmasına səbəb olur",
+      "D": "Okeanlarda suyun səviyyəsini kəskin aşağı salır",
+      "E": "Zəlzələlərin sayını və gücünü artırır"
+    },
+    "correctAnswer": "C",
+    "explanation": "Ozon qatı Yeri Günəşin zərərli ultrabənövşəyi şüalarından qoruyur. Bu qatın nazilməsi dərinin xərçəngi, göz xəstəlikləri və ekosistemlərin məhvi riskini artırır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Səhralaşmanın qarşısını almaq üçün ən effektiv tədbir hansıdır?",
+    "options": {
+      "A": "Su hövzələrini qurutmaq",
+      "B": "Ağac əkini və yaşıllaşdırma işlərini genişləndirmək",
+      "C": "Kənd təsərrüfatında kimyəvi gübrələrdən həddindən artıq istifadə etmək",
+      "D": "Otlaqları həddindən artıq otarmaq",
+      "E": "Meşələri kütləvi şəkildə qırmaq"
+    },
+    "correctAnswer": "B",
+    "explanation": "Səhralaşmanın əsas qarşısını alan amil bitki örtüyüdür. Ağaclar və bitkilər torpağın eroziyasını dayandırır və rütubəti qoruyur.",
+    "difficulty": "Asan",
+    "bloom_level": "Tətbiq etmək",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Turşu yağışlarının yaranmasına əsasən hansı maddələr səbəb olur?",
+    "options": {
+      "A": "Kükürd və azot oksikləri",
+      "B": "Saf oksigen",
+      "C": "Su buxarı",
+      "D": "Təsirsiz qazlar",
+      "E": "Ozon"
+    },
+    "correctAnswer": "A",
+    "explanation": "Sənaye müəssisələrindən və nəqliyyatdan atmosferə atılan kükürd-dioksid (SO2) və azot oksikləri (NOx) su buxarı ilə reaksiyaya girərək turşu yağışlarını yaradır.",
+    "difficulty": "Çətin",
+    "bloom_level": "Bilmək",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Tullantıların idarə olunmasında '3R' prinsipi (Reduce, Reuse, Recycle) nəyi ifadə edir?",
+    "options": {
+      "A": "Azaltmaq, yenidən istifadə etmək, təkrar emal etmək",
+      "B": "Yandırmaq, basdırmaq, dənizə atmaq",
+      "C": "Artırmaq, məhv etmək, gizlətmək",
+      "D": "Çoxaltmaq, toplamaq, satmaq",
+      "E": "Atmaq, unutmaq, yenisini almaq"
+    },
+    "correctAnswer": "A",
+    "explanation": "Təbiəti qorumaq üçün tullantıların həcmini azaltmaq (reduce), əşyaları yenidən istifadə etmək (reuse) və xammal kimi təkrar emal etmək (recycle) müasir ekoloji yanaşmanın əsasıdır.",
+    "difficulty": "Orta",
+    "bloom_level": "Anlamaq",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "Dünya okeanının çirklənməsində ən böyük paya sahib olan ekoloji problem hansıdır?",
+    "options": {
+      "A": "Balıqların təbii miqrasiyası",
+      "B": "Plastik tullantılar və neft sızıntıları",
+      "C": "Yosunların çoxalması",
+      "D": "Okean axınlarının istiqamətinin dəyişməsi",
+      "E": "Sualtı vulkanların püskürməsi"
+    },
+    "correctAnswer": "B",
+    "explanation": "İnsan fəaliyyəti nəticəsində dənizlərə atılan milyonlarla ton plastik tullantı və gəmilərdən sızan neft okean florasını və faunasını məhv edən əsas amillərdir.",
+    "difficulty": "Orta",
+    "bloom_level": "Bilmək",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  },
+  {
+    "question": "'Dayanıqlı inkişaf' konsepsiyasının əsas məğzi nədir?",
+    "options": {
+      "A": "İqtisadi inkişaf naminə bütün təbii sərvətləri qısa zamanda tükətmək",
+      "B": "Yalnız inkişaf etmiş ölkələrin ehtiyaclarını ödəmək",
+      "C": "İndiki nəsillərin ehtiyaclarını ödəyərkən gələcək nəsillərin də öz ehtiyaclarını ödəmək imkanlarını təhlükə altına almamaq",
+      "D": "Texnoloji inkişafı tamamilə dayandıraraq ibtidai həyat tərzinə qayıtmaq",
+      "E": "Sənayeni dayandırıb yalnız kənd təsərrüfatı ilə məşğul olmaq"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dayanıqlı inkişaf (Sustainable development) iqtisadi tərəqqi, sosial ədalət və ekoloji tarazlığın birgə təmin olunmasıdır. Gələcək nəsillərə təmiz və yaşana bilən bir dünya qoymaq bu konsepsiyanın hədəfidir.",
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil etmək",
+    "topic": "5. Müasir dövrün qlobal ekoloji problemləri",
+    "cat": "Həyat bilgisi 9"
+  }
+]

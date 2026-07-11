@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-TEX-1-01",
+    "question": "Texnologiya nədir?",
+    "options": [
+      "Təbiət tərəfindən yaradılmış məmulatların toplusudur.",
+      "İnsan əli ilə məmulatların və xidmətlərin yaradılması prosesidir.",
+      "Yalnız kənd təsərrüfatında istifadə olunan vasitələrdir.",
+      "Yalnız informasiya ötürmək üçün yaradılan maşınlardır."
+    ],
+    "correct_answer": "B",
+    "explanation": "Texnologiya - insan əli ilə məmulatların və xidmətlərin yaradılması prosesidir.",
+    "distractor_diagnostics": {
+      "A": "Texnologiya təbiət tərəfindən deyil, insan əli ilə yaradılır.",
+      "C": "Texnologiya yalnız kənd təsərrüfatı ilə məhdudlaşmır.",
+      "D": "Texnologiya yalnız informasiya ötürmək üçün deyil, müxtəlif xidmət və məmulatlar yaratmaq üçündür."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-02",
+    "question": "Buğda, meyvə və tərəvəz hansı texnologiyaların köməyi ilə becərilir?",
+    "options": [
+      "Kənd təsərrüfatı texnologiyalarının",
+      "Yeyinti texnologiyalarının",
+      "İnformasiya texnologiyalarının",
+      "Emal texnologiyalarının"
+    ],
+    "correct_answer": "A",
+    "explanation": "Kənd təsərrüfatı texnologiyalarının köməyi ilə buğda, meyvə və tərəvəz becərilir.",
+    "distractor_diagnostics": {
+      "B": "Yeyinti texnologiyaları qida hazırlamaq üçündür.",
+      "C": "İnformasiya texnologiyaları əlaqə və məlumat üçündür.",
+      "D": "Emal texnologiyaları becərmə prosesi üçün deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-03",
+    "question": "Telefonla ünsiyyət saxlamaq üçün hansı texnologiyadan istifadə edilir?",
+    "options": [
+      "Kənd təsərrüfatı texnologiyaları",
+      "Yeyinti texnologiyaları",
+      "İnformasiya texnologiyaları",
+      "Mexaniki texnologiyalar"
+    ],
+    "correct_answer": "C",
+    "explanation": "İnformasiya texnologiyaları telefonla ünsiyyət saxlamaq, televizora baxmaq, məlumat əldə etmək və onu ötürmək üçün yaradılır və istifadə edilir.",
+    "distractor_diagnostics": {
+      "A": "Kənd təsərrüfatı texnologiyaları bitki becərmək üçündür.",
+      "B": "Yeyinti texnologiyaları qida məhsulları hazırlamaq üçündür.",
+      "D": "Mexaniki texnologiyalar ünsiyyət vasitəsi deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-04",
+    "question": "Alət nəyə deyilir?",
+    "options": [
+      "Mexanizmin hərəkətə gətirildiyi cihaza",
+      "Yalnız elektriklə işləyən maşınlara",
+      "Yalnız təbiət tərəfindən yaradılmış obyektlərə",
+      "Materialın formasını, ölçüsünü və şəklini dəyişən əmək vasitəsinə"
+    ],
+    "correct_answer": "D",
+    "explanation": "Alət - materialın formasını, ölçüsünü və şəklini dəyişən əmək vasitəsidir.",
+    "distractor_diagnostics": {
+      "A": "Mexanizm alət deyil, onun bir hissəsi ola bilər.",
+      "B": "Alətlər həm əl, həm də elektrik ola bilər.",
+      "C": "Alətlər təbiət tərəfindən deyil, insan tərəfindən yaradılır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-05",
+    "question": "Mexanizmin hissələrinə nə deyilir?",
+    "options": [
+      "Alət",
+      "Aparat",
+      "Detal",
+      "Pəstah"
+    ],
+    "correct_answer": "C",
+    "explanation": "Mexanizmin hissələrinə detal deyilir.",
+    "distractor_diagnostics": {
+      "A": "Alət iş prosesində istifadə olunan vasitədir.",
+      "B": "Aparat mexanizmin işlətdiyi daha böyük qurğudur.",
+      "D": "Pəstah emal edilən materialdır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-06",
+    "question": "Elektriklə işləyən mexaniki əl alətlərinə nə deyilir?",
+    "options": [
+      "Əl alətləri",
+      "Elektrik alətləri",
+      "Deşici alətlər",
+      "Mexaniki əl alətləri"
+    ],
+    "correct_answer": "B",
+    "explanation": "Elektriklə işləyən mexaniki əl alətlərinə elektrik alətləri deyilir.",
+    "distractor_diagnostics": {
+      "A": "Əl alətləri elektriksiz işləyə bilər.",
+      "C": "Deşici alətlər alətin yalnız bir növüdür.",
+      "D": "Mexaniki əl alətləri elektriksiz də mexanizmə malik ola bilər."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-07",
+    "question": "Qayçını yoldaşınıza necə ötürmək lazımdır?",
+    "options": [
+      "Dəstəyi irəli olmaqla bağlı şəkildə",
+      "Açıq şəkildə, ağzı irəli olmaqla",
+      "Ağzı yuxarı tutmaqla",
+      "Xüsusi qabda olmadan ataraq"
+    ],
+    "correct_answer": "A",
+    "explanation": "Qayçını yoldaşınıza dəstəyi irəli olmaqla bağlı şəkildə ötürün.",
+    "distractor_diagnostics": {
+      "B": "Qayçını açıq və ağzı irəli ötürmək təhlükəlidir.",
+      "C": "Qayçının ağzı yuxarı tutulmamalıdır.",
+      "D": "Qayçını atmaq qaydalara ziddir və xəsarətə səbəb olar."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-08",
+    "question": "Qayçı ilə dairəvi detalları kəsərkən nə etmək lazımdır?",
+    "options": [
+      "Qayçını düzünə hərəkət etdirmək",
+      "Qayçını şaquli vəziyyətdə tutmaq",
+      "Əvvəlcə boşluqları kəsmək",
+      "Pəstahı fırlatmaq"
+    ],
+    "correct_answer": "D",
+    "explanation": "Dairəvi detalları kəsərkən pəstahı fırladın.",
+    "distractor_diagnostics": {
+      "A": "Düzünə hərəkət etdirmək düz xətt üzrə kəsimə aiddir.",
+      "B": "Qayçını şaquli tutmaq dairəvi forma almaq üçün yetərli deyil.",
+      "C": "Boşluqları kəsmək mürəkkəb konturlu detallara aiddir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-09",
+    "question": "Qayçı ilə mürəkkəbkonturlu detalları rahat kəsmək üçün nə etmək lazımdır?",
+    "options": [
+      "Əvvəlcə boşluqları ümumi şəkildə, sonra isə xırda hissələrlə kəsmək",
+      "Yalnız düzünə hərəkət etdirmək",
+      "Pəstahı heç fırlatmamaq",
+      "Kağızı təsvirin istiqamətinə döndərməmək"
+    ],
+    "correct_answer": "A",
+    "explanation": "Mürəkkəbkonturlu detalları rahat kəsmək üçün əvvəlcə boşluqları ümumi şəkildə, sonra isə xırda hissələrlə kəsin.",
+    "distractor_diagnostics": {
+      "B": "Düzünə hərəkət yalnız düz xətlər üçündür.",
+      "C": "Pəstahı fırlatmaq detalları dəqiq kəsmək üçün vacibdir.",
+      "D": "Kağızı döndərmədən kəsmək xətti poza bilər."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-10",
+    "question": "Biz ilə işləyərkən deşməni necə yerinə yetirmək lazımdır?",
+    "options": [
+      "Onu yalnız dəmir altlıq üzərində vurmaqla",
+      "Dəstəyi yalnız yuxarı dartmaqla",
+      "Dəstəyi sağa və sola fırlatmaqla",
+      "Bıçağın ülgücünü irəli çəkməklə"
+    ],
+    "correct_answer": "C",
+    "explanation": "Dəstəyi sağa və sola fırlatmaqla deşməni yerinə yetirin.",
+    "distractor_diagnostics": {
+      "A": "Biz ilə iş taxta altlıq üzərində olmalıdır, dəmir deyil.",
+      "B": "Dəstəyi dartmaq deşmə yaratmır.",
+      "D": "Ülgücü çəkmək dəftərxana bıçağına aiddir, bizə deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-11",
+    "question": "Dəftərxana bıçağı ilə kağızı kəsərkən onu hansı vəziyyətdə tutmaq lazımdır?",
+    "options": [
+      "Şaquli vəziyyətdə",
+      "Maili bucaq altında",
+      "Üfüqi vəziyyətdə",
+      "Tamamilə qapalı vəziyyətdə"
+    ],
+    "correct_answer": "B",
+    "explanation": "Kağızı kəsərkən bıçağı maili bucaq altında tutun.",
+    "distractor_diagnostics": {
+      "A": "Şaquli vəziyyət karton kəsmək üçündür.",
+      "C": "Üfüqi vəziyyətdə bıçaq kağızı kəsməz.",
+      "D": "Qapalı vəziyyətdə kəsmə işi aparıla bilməz."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-12",
+    "question": "Dəftərxana bıçağı ilə kartonu kəsərkən onu necə tutmaq və hərəkət etdirmək lazımdır?",
+    "options": [
+      "Maili bucaq altında və astaca çəkmək",
+      "Yalnız fırça ilə sürtmək",
+      "Üfüqi vəziyyətdə tutmaq",
+      "Şaquli vəziyyətdə tutmaq və ona möhkəm sıxmaq"
+    ],
+    "correct_answer": "D",
+    "explanation": "Kartonu kəsərkən bıçağı şaquli vəziyyətdə tutun və onu kartona möhkəm sıxın.",
+    "distractor_diagnostics": {
+      "A": "Maili bucaq kağızı kəsmək üçündür.",
+      "B": "Fırça yapışqan üçün istifadə edilir.",
+      "C": "Üfüqi vəziyyət kəsmə üçün yaramır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-13",
+    "question": "İynəni yoldaşınıza necə ötürmək lazımdır?",
+    "options": [
+      "Ancaq saplı, dəliyi irəli olmaqla",
+      "Sapsız və ucu irəli olmaqla",
+      "Açıq şəkildə dəstəyi irəli olmaqla",
+      "Qutuya qoymadan, ucu geriyə olmaqla"
+    ],
+    "correct_answer": "A",
+    "explanation": "İynəni ancaq saplı, dəliyi irəli olmaqla ötürün.",
+    "distractor_diagnostics": {
+      "B": "Ucu irəli ötürmək yoldaşı yaralaya bilər.",
+      "C": "İynədə dəstək olmur, dəlik və uc olur.",
+      "D": "İynə saplı olmalıdır, sapsız halda ötürmək təhlükəlidir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-14",
+    "question": "Nəyə görə paslı iynə ilə tikmək olmaz?",
+    "options": [
+      "Çünki o parçaya asan girir, lakin pis görünür",
+      "Çünki o barmaqları zəhərləyir",
+      "O parçaya pis girir, onu korlayır və tikiş zamanı qırıla bilər",
+      "Çünki o parçanı daha tez yapışdırır"
+    ],
+    "correct_answer": "C",
+    "explanation": "Paslı iynə ilə tikməyin: o, parçaya pis girir, onu korlayır və tikiş zamanı qırıla bilər.",
+    "distractor_diagnostics": {
+      "A": "Paslı iynə parçaya asan girmir.",
+      "B": "Mətndə qeyd olunan səbəb onun barmaq zəhərləməsi deyil.",
+      "D": "İynə parçanı yapışdırmır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-1-15",
+    "question": "Yapışqanı məmulatın səthinə necə sürtmək lazımdır?",
+    "options": [
+      "Barmaqlarla",
+      "Yalnız fırça ilə",
+      "Qayçının ucu ilə",
+      "Pambıqla"
+    ],
+    "correct_answer": "B",
+    "explanation": "Yapışqanı məmulatın səthinə yalnız fırça ilə sürtün.",
+    "distractor_diagnostics": {
+      "A": "Yapışqanı barmaqla sürtmək təhlükəlidir, o zəhərlidir.",
+      "C": "Qayçı kəsmək üçündür, yapışqan sürtmək üçün deyil.",
+      "D": "Mətndə yalnız fırçadan istifadə qeyd edilib."
+    }
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-HEY-06-01",
+    "question": "Novruz bayramı hansı dəyərlərin rəmzidir?",
+    "options": {
+      "A": "Döyüş və qələbənin",
+      "B": "İnsanların yalnız istirahət etməsinin",
+      "C": "Bərəkətin, təmizliyin, xeyirxahlığın və bolluğun",
+      "D": "Qışın gəlişi və soyuqların başlamasının"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Novruz müharibə və qələbə bayramı deyil.",
+      "B": "Yalnız istirahət deyil, bir çox adət-ənənələr var.",
+      "D": "Novruz baharın gəlişi bayramıdır, qışın yox."
+    },
+    "explanation": "Novruz bərəkətin, təmizliyin, xeyirxahlığın, bolluğun rəmzidir."
+  },
+  {
+    "passport_id": "03-HEY-06-02",
+    "question": "Yəhudilərin Roş-Ha-Şana Yeni il bayramında almanı bala batırıb yeməyin mənası nədir?",
+    "options": {
+      "A": "Almanı daha çox sevdiklərinə görə.",
+      "B": "İnsanların bir-birinə küsülü qalmamasına görə.",
+      "C": "Bu, onların ən qədim adətlərindən biri olmadığına görə.",
+      "D": "İl şirin və xoş təəssüratlarla keçsin deyə."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Alma və bal mənəvi inanc məqsədilə yeyilir.",
+      "B": "Küsülülərin barışması mətndəki bu adətlə əlaqələndirilmir.",
+      "C": "Bu adət məhz şirin bir il diləyidir."
+    },
+    "explanation": "Adətə görə, almanı bala batırıb yeyirlər ki, il şirin və xoş təəssüratlarla keçsin."
+  },
+  {
+    "passport_id": "03-HEY-06-03",
+    "question": "Xristianların Pasxa bayramı hansı duyğuların ifadəsidir?",
+    "options": {
+      "A": "Xeyirxahlığın, yeniliyin, mərhəmət və şəfqət duyğularının",
+      "B": "Yalnız baharın gəlişi duyğularının",
+      "C": "Yeni ilin gəlişi və şənlənmə duyğularının",
+      "D": "Müharibələrdən qaçmaq duyğularının"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Baharın gəlişi sırf Novruza aiddir.",
+      "C": "Yeni ilin gəlişi Yeni il bayramına aiddir.",
+      "D": "Mərhəmət və xeyirxahlıq əsasdır, müharibədən qaçmaq deyil."
+    },
+    "explanation": "Pasxa bayramı xeyirxahlığın, yeniliyin, mərhəmət və şəfqət duyğularının ifadəsidir."
+  },
+  {
+    "passport_id": "03-HEY-06-04",
+    "question": "Azərbaycan Xalq Cümhuriyyəti nə vaxt yaradılmışdır?",
+    "options": {
+      "A": "1918-ci il aprelin 28-də",
+      "B": "1918-ci il mayın 28-də",
+      "C": "1920-ci il mayın 28-də",
+      "D": "1991-ci il oktyabrın 18-də"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Aprelin 28-də fərqli tarixi hadisə olub.",
+      "C": "1920-ci ildə Xalq Cümhuriyyəti süqut edib.",
+      "D": "1991-ci il müstəqilliyin bərpası günüdür."
+    },
+    "explanation": "Nəhayət, 1918-ci ilin mayın 28-də Azərbaycanın vətənsevər ziyalıları... Azərbaycan Xalq Cümhuriyyəti adlanan müstəqil dövlətimizi qurdular."
+  },
+  {
+    "passport_id": "03-HEY-06-05",
+    "question": "Qənaətcillik nə deməkdir?",
+    "options": {
+      "A": "Pulu heç nəyə xərcləməmək və toplamaqdır.",
+      "B": "Çoxlu ərzaq alıb anbara yığmaqdır.",
+      "C": "Resurslardan qədərində istifadə etməkdir.",
+      "D": "Yalnız ehtiyacı olanlara kömək etməkdir."
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Qənaət heç xərcləməmək deyil, qədərində xərcləməkdir.",
+      "B": "Bu, ehtiyat toplamaqdır, qənaət isə qədərində istifadədir.",
+      "D": "Bu, xeyriyyəçilikdir."
+    },
+    "explanation": "Qənaətcillik resurslardan qədərində istifadə etməkdir."
+  },
+  {
+    "passport_id": "03-HEY-06-06",
+    "question": "Resurslara nələr aiddir?",
+    "options": {
+      "A": "Yalnız pul və qızıl aiddir.",
+      "B": "İnsanların yalnız istirahəti üçün lazım olan əşyalar aiddir.",
+      "C": "Yalnız təbiətdə olan canlılar aiddir.",
+      "D": "İnsanların yaşaması və fəaliyyəti üçün lazım olan qida məhsulları, geyim, yanacaq, tikinti materialları və başqa vacib ehtiyaclardır."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Resurs yalnız pul deyil, həm də maddi və qeyri-maddi sərvətlərdir.",
+      "B": "İstirahət deyil, yaşamaq və fəaliyyət üçündür.",
+      "C": "Təkcə təbii canlılar deyil."
+    },
+    "explanation": "Resurslar insanların yaşaması və fəaliyyəti üçün lazım olan qida məhsulları, geyim, yanacaq, tikinti materialları və başqa vacib ehtiyaclardır."
+  },
+  {
+    "passport_id": "03-HEY-06-07",
+    "question": "İsrafçılıq nəyə səbəb olur?",
+    "options": {
+      "A": "Resursların azalmasına və tükənməsinə.",
+      "B": "İnsanların daha çox qazanmasına və varlanmasına.",
+      "C": "Əşyaların daha keyfiyyətli olmasına.",
+      "D": "Təbiətin daha da gözəlləşməsinə."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "İsrafçılıq varlanmağa deyil, itkiyə səbəb olur.",
+      "C": "İsraf keyfiyyəti artırmır.",
+      "D": "İsraf təbiəti çirkləndirir və ehtiyatları məhv edir."
+    },
+    "explanation": "İsrafçılıq resursların azalmasına və tükənməsinə səbəb olur."
+  },
+  {
+    "passport_id": "03-HEY-06-08",
+    "question": "Külək nədir?",
+    "options": {
+      "A": "Havanın kəskin isinməsi hadisəsidir.",
+      "B": "Havanın müəyyən ərazidən digər bir əraziyə doğru üfüqi hərəkətidir.",
+      "C": "Göy üzündə buludların toplanmasıdır.",
+      "D": "Yağış və qarın eyni vaxtda yağmasıdır."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Külək isinmə deyil, havanın hərəkətidir.",
+      "C": "Buludların toplanması buludlu havadır.",
+      "D": "Bu yağıntı növləridir."
+    },
+    "explanation": "Havanın müəyyən ərazidən digər bir əraziyə doğru üfüqi hərəkəti külək adlanır."
+  },
+  {
+    "passport_id": "03-HEY-06-09",
+    "question": "Şimşək və ildırımın fərqi nədir?",
+    "options": {
+      "A": "İldırım işıqdır, şimşək isə səsin formasıdır.",
+      "B": "Şimşək qışda, ildırım isə yayda olur.",
+      "C": "Şimşək səmada xətt formasında görünən işıq, ildırım isə şimşəyin Yer səthinə düşən formasıdır.",
+      "D": "Şimşək təhlükəli deyil, ildırım isə zərərsizdir."
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Göy gurultusu səsdir, şimşək isə işıqdır.",
+      "B": "Hər ikisi eyni təbiət hadisəsi zamanı yaranır.",
+      "D": "Hər ikisi də təhlükəli ola bilər, ildırım da zərərsiz deyil."
+    },
+    "explanation": "Tutqun və ya yağışlı hava şəraitində səmada xətt formasında görünən işıq şimşək adlanır. Şimşəyin Yer səthinə düşən forması ildırımdır."
+  },
+  {
+    "passport_id": "03-HEY-06-10",
+    "question": "Dolu necə yaranır?",
+    "options": {
+      "A": "Havanın çox isti olması nəticəsində su buxarının artması ilə.",
+      "B": "Buludların bir-birinə toqquşaraq partlaması ilə.",
+      "C": "Küləyin güclənməsi nəticəsində yaranan qum fırtınası ilə.",
+      "D": "Havanın istiliyinin kəskin azalması nəticəsində yağış və su damlalarının donması ilə."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Çox istilik buxarlanmaya səbəb olur, doluya deyil.",
+      "B": "Buludların toqquşması dolu yaratmır.",
+      "C": "Qum fırtınası fərqli təbiət hadisəsidir."
+    },
+    "explanation": "Bəzən havanın istiliyi kəskin azalır. Bu zaman havadakı yağış və su damlaları donaraq Yer səthinə düşür. Bu, dolu adlanır."
+  },
+  {
+    "passport_id": "03-HEY-06-11",
+    "question": "Güclü külək və doludan qorunmaq üçün hansı qaydaya əməl edilməlidir?",
+    "options": {
+      "A": "Açıq ərazidəsinizsə, dərhal bina və ya evə getmək lazımdır.",
+      "B": "Pəncərələrin və şüşə qapıların yaxınlığında durmaq lazımdır.",
+      "C": "Açıq ərazidəki hündür ağacların altında dayanmaq lazımdır.",
+      "D": "Çətirdən istifadə edərək gəzmək lazımdır."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Pəncərə və şüşələrin yaxınlığında durmaq təhlükəlidir.",
+      "C": "Hündür ağacların altında dayanmaq şimşək zamanı çox təhlükəlidir.",
+      "D": "Küləkli havada çətirdən istifadə çətindir və qorumur."
+    },
+    "explanation": "Güclü külək və doludan qorunmaq üçün qaydalar: ... 2. Açıq ərazidəsinizsə, dərhal bina və ya evə gedin."
+  },
+  {
+    "passport_id": "03-HEY-06-12",
+    "question": "Hidrodinamik qəzalar nələrdir?",
+    "options": {
+      "A": "Zəhərli qazların havaya yayılmasıdır.",
+      "B": "Müxtəlif səbəblərdən su bəndlərinin dağılması və su kanallarının daşması nəticəsində yaranan qəzalardır.",
+      "C": "Avtomobillərin yolda toqquşmasıdır.",
+      "D": "Güclü küləyin gətirdiyi quraqlıqdır."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Zəhərli qazların yayılması ekoloji çirklənmədir.",
+      "C": "Avtomobil qəzaları fərqli qəza növüdür.",
+      "D": "Quraqlıq təbii fəlakət ola bilər, hidrodinamik qəza deyil."
+    },
+    "explanation": "Müxtəlif səbəblərdən su bəndləri dağıla, su kanalları daşa bilər. Belə hadisələr hidrodinamik qəzalardır."
+  },
+  {
+    "passport_id": "03-HEY-06-13",
+    "question": "Xəbərdaredici və qadağanedici nişanlar adətən hansı rəngdə tərtib olunur?",
+    "options": {
+      "A": "Xəbərdaredici nişanlar yaşıl, qadağanedici nişanlar göy.",
+      "B": "Xəbərdaredici nişanlar ağ, qadağanedici nişanlar qara.",
+      "C": "Xəbərdaredici nişanlar sarı, qadağanedici nişanlar qırmızı.",
+      "D": "Xəbərdaredici nişanlar narıncı, qadağanedici nişanlar ağ."
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Göy məlumatverici nişanlara aiddir.",
+      "B": "Ağ və qara yalnız köməkçi ola bilər, əsas deyil.",
+      "D": "Narıncı və ağ deyil."
+    },
+    "explanation": "Xəbərdaredici nişanlar sarı, qadağanedici nişanlar isə qırmızı rəngdə tərtib olunur."
+  },
+  {
+    "passport_id": "03-HEY-06-14",
+    "question": "Məlumatverici-göstərici nişanlar necə görünür?",
+    "options": {
+      "A": "Qırmızı haşiyəli dairə formasındadır.",
+      "B": "Sarı rəngli və üçbucaq formasındadır.",
+      "C": "Yaşıl rəngli və oval formasındadır.",
+      "D": "Dördbucaq formasında və göy rəngdədir."
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Bu qadağan nişanlarına aiddir.",
+      "B": "Bu xəbərdarlıq nişanlarına aiddir.",
+      "C": "Bu, doğru deyil."
+    },
+    "explanation": "Məlumatverici-göstərici nişanlar Bu nişanlar dördbucaq formasında və göy rəngdədir."
+  },
+  {
+    "passport_id": "03-HEY-06-15",
+    "question": "Qatar stansiyasında hansı davranış qaydası təhlükəsizlik üçün vacibdir?",
+    "options": {
+      "A": "Qatar tam dayanmamış vaqonlara yaxınlaşmamaq və platforma kənarında olan xətti keçməmək.",
+      "B": "Qatar hərəkət edərkən pəncərədən boylanmaq.",
+      "C": "Qatara minərkən qapıya söykənmək.",
+      "D": "Qatarın hərəkəti vaxtı vaqonlar arasında dayanmaq."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Pəncərədən boylanmaq çox təhlükəlidir.",
+      "C": "Qapıya söykənmək olmaz.",
+      "D": "Vaqonlar arasında dayanmaq ölümcül ola bilər."
+    },
+    "explanation": "Qatar tam dayanmamış vaqonlara yaxınlaşmayın... Platforma kənarında olan xətti keçməyin."
+  }
+]

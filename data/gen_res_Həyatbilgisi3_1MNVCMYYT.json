@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Hansı halda vətəndaşın hüquqları pozulur?",
+    "options": {
+      "A": "Təhsildən yayındırılarsa, sağlamlığına ziyan vurularsa və istirahətinə imkan verilməzsə",
+      "B": "Məktəbdə oxuduqda və əla qiymətlər aldıqda",
+      "C": "Boş vaxtlarında dostları ilə oynadıqda",
+      "D": "Valideynlərinin sözünə qulaq asdıqda"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Vətəndaş təhsildən yayındırılarsa, sağlamlığına ziyan vurularsa və istirahətinə imkan verilməzsə, onun hüquqları pozulur.",
+      "B": "Yanlışdır. Bu, təhsil hüququnun təmin olunmasıdır.",
+      "C": "Yanlışdır. Bu, istirahət hüququndan istifadədir.",
+      "D": "Yanlışdır. Bu, ailə münasibətləri və tərbiyəyə aiddir, hüquq pozuntusu deyil."
+    },
+    "passport_id": "03-HEY-1-01",
+    "explanation": "Vətəndaş təhsildən yayındırılarsa, sağlamlığına ziyan vurularsa və istirahətinə imkan verilməzsə, onun hüquqları pozulur."
+  },
+  {
+    "question": "Şagird məktəbdə hansısa hüququnun pozulduğunu düşünürsə, ilk növbədə kimə bildirməlidir?",
+    "options": {
+      "A": "Dostlarına",
+      "B": "Sinif rəhbərinə, yaxud məktəbin direktoruna",
+      "C": "Tanımadığı şəxslərə",
+      "D": "Yalnız özündən kiçiklərə"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Dostlar hüquqi məsələləri həll edə bilməz.",
+      "B": "Doğru cavabdır. Şagird məktəbdə hansısa hüququnun pozulduğunu düşünürsə, bunu sinif rəhbərinə, yaxud məktəbin direktoruna bildirməlidir.",
+      "C": "Yanlışdır. Tanımadığı şəxslərə məlumat vermək təhlükəsiz deyil.",
+      "D": "Yanlışdır. Özündən kiçiklər bu cür problemləri həll edə bilməzlər."
+    },
+    "passport_id": "03-HEY-1-02",
+    "explanation": "Şagird məktəbdə hansısa hüququnun pozulduğunu düşünürsə, bunu sinif rəhbərinə, yaxud məktəbin direktoruna bildirməlidir."
+  },
+  {
+    "question": "Hər bir vətəndaşın hansı hüquqları var?",
+    "options": {
+      "A": "Yalnız təhsil almaq hüququ",
+      "B": "Yalnız sağlamlığını qorumaq hüququ",
+      "C": "Təhsil almaq, sağlamlığını qorumaq və istirahət etmək hüququ",
+      "D": "İstədiyi vaxt məktəbə getməmək hüququ"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Təhsil almaq hüquqlardan yalnız biridir.",
+      "B": "Yanlışdır. Sağlamlığı qorumaq da yalnız bir hüquqdur.",
+      "C": "Doğru cavabdır. Hər bir vətəndaşın təhsil almaq, sağlamlığını qorumaq və istirahət etmək hüququ var.",
+      "D": "Yanlışdır. Təhsil almaq həm də vəzifədir, dərsdən yayınmaq hüquq deyil."
+    },
+    "passport_id": "03-HEY-1-03",
+    "explanation": "Hər bir vətəndaşın təhsil almaq, sağlamlığını qorumaq və istirahət etmək hüququ var."
+  },
+  {
+    "question": "Məktəbdən kənarda şagirdin hüququ pozularsa, o nə etməlidir?",
+    "options": {
+      "A": "Heç kimə bu barədə danışmamalıdır",
+      "B": "Özü məsələni təkbaşına həll etməyə çalışmalıdır",
+      "C": "Bu vəziyyətə laqeyd qalmalıdır",
+      "D": "Valideynlərini xəbərdar etməlidir"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Gizlətmək problemi həll etmir.",
+      "B": "Yanlışdır. Uşaqlar təkbaşına belə məsələləri həll etməməlidirlər.",
+      "C": "Yanlışdır. Öz hüquqlarına laqeyd yanaşmaq olmaz.",
+      "D": "Doğru cavabdır. Məktəbdən kənarda belə hal baş verərsə, valideynlərini xəbərdar etməlidir."
+    },
+    "passport_id": "03-HEY-1-04",
+    "explanation": "Məktəbdən kənarda belə hal baş verərsə, valideynlərini xəbərdar etməlidir."
+  },
+  {
+    "question": "Şahmat yarışında birinci yeri tutan, lakin lovğalanmayan şagird hansı müsbət keyfiyyətə malikdir?",
+    "options": {
+      "A": "Təvazökarlıq",
+      "B": "Səbirlilik",
+      "C": "Cəsarətlilik",
+      "D": "Səbirsizlik"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. O lovğalanmır, çünki təvazökardır.",
+      "B": "Yanlışdır. Bu vəziyyət səbirliliklə yox, təvazökarlıqla bağlıdır.",
+      "C": "Yanlışdır. Cəsarətlilik başqa vəziyyətlərdə özünü göstərir.",
+      "D": "Yanlışdır. Səbirsizlik mənfi keyfiyyətdir."
+    },
+    "passport_id": "03-HEY-1-05",
+    "explanation": "Dostum Samir şahmat yarışında birinci yeri tutub. O lovğalanmır, çünki təvazökardır."
+  },
+  {
+    "question": "Səbirsizlik etdiyinizi hiss edəndə nə etməlisiniz?",
+    "options": {
+      "A": "Dərhal qərar qəbul edib hərəkətə keçməlisiniz",
+      "B": "Dərindən nəfəs alıb özünüzü sakitləşdirməlisiniz",
+      "C": "Başqalarını günahlandırmağa başlamalısınız",
+      "D": "Hamının sizi dinləməsini tələb etməlisiniz"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Tələsik qərar qəbul etmək səhvlərə səbəb olar.",
+      "B": "Doğru cavabdır. Səbirsizlik etdiyinizi hiss edəndə dərindən nəfəs alıb özünüzü sakitləşdirin.",
+      "C": "Yanlışdır. Başqalarını günahlandırmaq düzgün deyil.",
+      "D": "Yanlışdır. Hamını yalnız sizi dinləməyə məcbur etmək xudbinlikdir."
+    },
+    "passport_id": "03-HEY-1-06",
+    "explanation": "Səbirsizlik etdiyinizi hiss edəndə dərindən nəfəs alıb özünüzü sakitləşdirin."
+  },
+  {
+    "question": "Başqalarına hörmətlə yanaşmağa və onlarla səmərəli ünsiyyət qurmağa hansı keyfiyyət kömək edir?",
+    "options": {
+      "A": "Lovğalıq",
+      "B": "Səbirsizlik",
+      "C": "Təvazökarlıq",
+      "D": "Laqeydlik"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Lovğalıq ünsiyyətə zərər verir.",
+      "B": "Yanlışdır. Səbirsizlik səmərəli ünsiyyəti pozur.",
+      "C": "Doğru cavabdır. Təvazökarlıq insanların bizimlə səmərəli ünsiyyət qurmasına kömək edir.",
+      "D": "Yanlışdır. Laqeydlik digərlərinə qarşı hörmətsizlikdir."
+    },
+    "passport_id": "03-HEY-1-07",
+    "explanation": "Təvazökar olmaq başqalarına hörmətlə yanaşmağa, insanların bizimlə səmərəli ünsiyyət qurmasına kömək edir."
+  },
+  {
+    "question": "Qorxuya qalib gələrək səhvini etiraf etmək və baş verənləri olduğu kimi danışmaq nəyin göstəricisidir?",
+    "options": {
+      "A": "Lovğalığın",
+      "B": "Təvazökarlığın",
+      "C": "Səbirliliyin",
+      "D": "Cəsarətliliyin"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Lovğalığın bununla əlaqəsi yoxdur.",
+      "B": "Yanlışdır. Təvazökarlıq özünü öyməməkdir, səhvini etiraf etmək cəsarət tələb edir.",
+      "C": "Yanlışdır. Səbirlilik başqa keyfiyyətdir.",
+      "D": "Doğru cavabdır. Səhv etdiyim zaman bunu gizlətmir və çəkinmədən etiraf edirəm; bu, cəsarətlilikdir."
+    },
+    "passport_id": "03-HEY-1-08",
+    "explanation": "Səhv etdiyim zaman bunu gizlətmir və çəkinmədən etiraf edirəm. Qorxuya qalib gəlmək və baş verənləri olduğu kimi danışmaq cəsarətlilikdir."
+  },
+  {
+    "question": "İnsanları daha yaxşı başa düşmək istəyirsinizsə, onlarla ünsiyyətdə nə etmək vacibdir?",
+    "options": {
+      "A": "Onları dinləmək",
+      "B": "Öz fikrini onlara qəbul etdirmək",
+      "C": "Müzakirədən kənar durmaq",
+      "D": "Yalnız öz dediklərini təkrar etmək"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. İnsanları daha yaxşı başa düşmək istəyirsinizsə, onları dinləmək vacibdir.",
+      "B": "Yanlışdır. Təkid etmək başqasını anlamağa kömək etmir.",
+      "C": "Yanlışdır. Kənar durmaqla heç nə anlamaq olmaz.",
+      "D": "Yanlışdır. Yalnız özünü dinləmək ünsiyyəti zəiflədir."
+    },
+    "passport_id": "03-HEY-1-09",
+    "explanation": "İnsanları daha yaxşı başa düşmək istəyirsinizsə, onları dinləmək vacibdir."
+  },
+  {
+    "question": "Başqasının fikrini dinləmək nə demək deyil?",
+    "options": {
+      "A": "Onu anlamağa çalışmaq",
+      "B": "Öz fikirlərinizi dəyişdirmək məcburiyyətində olmaq",
+      "C": "Fərqli fikirlərə hörmət etmək",
+      "D": "Müzakirədə digərlərini eşitmək"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Dinləmək məhz onu anlamağa çalışmaqdır.",
+      "B": "Doğru cavabdır. Başqasının fikrini dinləmək o demək deyil ki, siz öz fikirlərinizi dəyişdirməlisiniz.",
+      "C": "Yanlışdır. Dinləmək fərqli fikrə hörmət etməkdir.",
+      "D": "Yanlışdır. Dinləmək digərlərini eşitməyi əhatə edir."
+    },
+    "passport_id": "03-HEY-1-10",
+    "explanation": "Başqasının fikrini dinləmək o demək deyil ki, siz öz fikirlərinizi dəyişdirməlisiniz."
+  },
+  {
+    "question": "İnsanların arasındakı dostluğu qoruyan vacib amil nədir?",
+    "options": {
+      "A": "Həmişə eyni fikirdə olmaq",
+      "B": "Bir-birindən daima üstün olmağa çalışmaq",
+      "C": "Bir-birinin fərqli fikirlərinə hörmətlə yanaşmaq",
+      "D": "Mübahisələrdə həmişə qalib gəlmək"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. İnsanlar həmişə eyni fikirdə ola bilməzlər.",
+      "B": "Yanlışdır. Üstünlük qurmağa çalışmaq dostluğu zəiflədir.",
+      "C": "Doğru cavabdır. İnsanların bir-birinin fərqli fikirlərinə hörmətlə yanaşması onların arasındakı dostluğu qoruyur.",
+      "D": "Yanlışdır. Həmişə qalib gəlməyə çalışmaq hörmətsizlik ola bilər."
+    },
+    "passport_id": "03-HEY-1-11",
+    "explanation": "İnsanların bir-birinin fərqli fikirlərinə hörmətlə yanaşması onların arasındakı dostluğu qoruyur."
+  },
+  {
+    "question": "Müzakirə zamanı fərqli fikirləri yaxşı başa düşmək üçün hansı sualları vermək olar?",
+    "options": {
+      "A": "Kim haqlıdır? və Kim haqsızdır?",
+      "B": "Nə vaxt? və Harada?",
+      "C": "Kiminlə? və Kimdən?",
+      "D": "Niyə? və Necə?"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Bu suallar günahkar axtarışına oxşayır.",
+      "B": "Yanlışdır. Bu suallar fikri anlamaqdan çox hadisəni təsvir edir.",
+      "C": "Yanlışdır. Bu suallar fərqli fikrin məğzini açmır.",
+      "D": "Doğru cavabdır. Müzakirə zamanı “niyə?” və \"necə?\" kimi suallar verməklə fərqli fikirləri yaxşı başa düşmək olar."
+    },
+    "passport_id": "03-HEY-1-12",
+    "explanation": "Müzakirə zamanı “niyə?” və \"necə?\" kimi suallar verməklə fərqli fikirləri yaxşı başa düşmək olar."
+  },
+  {
+    "question": "Hər hansı bir hərəkəti etməzdən əvvəl nə barədə düşünmək lazımdır?",
+    "options": {
+      "A": "Hərəkətinizin başqalarına necə təsir edəcəyi barədə",
+      "B": "Bunun sizə nə qədər faydalı olacağı barədə",
+      "C": "Başqalarının bu hərəkəti təkrarlayıb-təkrarlamayacağı barədə",
+      "D": "Hərəkətin nə qədər vaxt aparacağı barədə"
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "A": "Doğru cavabdır. Hər hansı hərəkəti etməzdən əvvəl düşünün: sizin hərəkətiniz başqalarına necə təsir edər?",
+      "B": "Yanlışdır. Mətnə görə əsas məsələ başqalarına təsirdir.",
+      "C": "Yanlışdır. Başqalarının təkrarlaması hərəkətin dəyərini müəyyən etmir.",
+      "D": "Yanlışdır. Vaxt əsas prioritet deyil."
+    },
+    "passport_id": "03-HEY-1-13",
+    "explanation": "Hər hansı hərəkəti etməzdən əvvəl düşünün: sizin hərəkətiniz başqalarına necə təsir edər?"
+  },
+  {
+    "question": "Hər bir vətəndaş öz hüquqlarından əlavə, daha kimin hüquqlarının pozulmasına laqeyd qalmamalıdır?",
+    "options": {
+      "A": "Yalnız ailə üzvlərinin",
+      "B": "Yoldaşlarının",
+      "C": "Tanımadığı şəxslərin",
+      "D": "Yalnız özündən kiçiklərin"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Yalnız ailə deyil, dostların hüquqları da vacibdir.",
+      "B": "Doğru cavabdır. Hər bir vətəndaş yalnız öz hüquqlarının deyil, yoldaşlarının da hüquqlarının pozulmasına laqeyd qalmamalıdır.",
+      "C": "Yanlışdır. Dərsliyə əsasən xüsusilə yoldaşların hüquqları qeyd olunur.",
+      "D": "Yanlışdır. Hüquqların yaşı yoxdur."
+    },
+    "passport_id": "03-HEY-1-14",
+    "explanation": "Hər bir vətəndaş yalnız öz hüquqlarının deyil, yoldaşlarının da hüquqlarının pozulmasına laqeyd qalmamalıdır."
+  },
+  {
+    "question": "Başqalarının fikirləri sizin fikirlərinizdən fərqli olduqda necə davranmalısınız?",
+    "options": {
+      "A": "Onlarla əlaqəni kəsmək lazımdır",
+      "B": "Öz fikrinizi zorla qəbul etdirməlisiniz",
+      "C": "Razılaşmasaq da, onlara hörmətlə yanaşmalıyıq",
+      "D": "Müzakirəni yarımçıq saxlamalısınız"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır. Əlaqəni kəsmək hörmətsizlik olar.",
+      "B": "Yanlışdır. Zorakılıq və təkid heç nəyi həll etmir.",
+      "C": "Doğru cavabdır. Başqalarının fikirləri ilə razılaşmasaq da, onlara hörmətlə yanaşmalıyıq.",
+      "D": "Yanlışdır. Müzakirədən qaçmaq səmərəli çıxış yolu deyil."
+    },
+    "passport_id": "03-HEY-1-15",
+    "explanation": "Başqalarının fikirləri ilə razılaşmasaq da, onlara hörmətlə yanaşmalıyıq."
+  }
+]

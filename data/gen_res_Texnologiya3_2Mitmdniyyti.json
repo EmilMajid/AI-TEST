@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-TEX-2-01",
+    "question": "Çevrə nədir?",
+    "options": [
+      "Dairəni məhdudlaşdıran xətdir.",
+      "Dairənin mərkəzindən kənara olan məsafədir.",
+      "Dəqiq dairə çəkmək üçün alətdir.",
+      "Yalnız düz xətt çəkmək üçün xətdir."
+    ],
+    "correct_answer": "A",
+    "explanation": "Çevrə dairəni məhdudlaşdıran xətdir.",
+    "distractor_diagnostics": {
+      "B": "Bu tərif radiusa aiddir.",
+      "C": "Dairə çəkmək üçün alət pərgardır.",
+      "D": "Çevrə düz xətt deyil, dairəvi formada olur."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-02",
+    "question": "Radius nəyə deyilir?",
+    "options": [
+      "Dairəni məhdudlaşdıran xəttə.",
+      "Dairənin mərkəzində yerləşən nöqtəyə.",
+      "Pərgarın başlığına.",
+      "Dairənin mərkəzindən çevrəyə qədər olan məsafədir."
+    ],
+    "correct_answer": "D",
+    "explanation": "Radius dairənin mərkəzindən çevrəyə qədər olan məsafədir.",
+    "distractor_diagnostics": {
+      "A": "Dairəni məhdudlaşdıran xətt çevrə adlanır.",
+      "B": "Mərkəz nöqtəsi radiusun başlandığı yerdir, onun özü deyil.",
+      "C": "Pərgarın başlığı radius ölçüsü deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-03",
+    "question": "Pərgarı yoldaşınıza necə ötürmək lazımdır?",
+    "options": [
+      "Açıq şəkildə, ucu irəli olmaqla",
+      "Başı irəli olmaqla, bağlanmış şəkildə",
+      "Qutuda açıq vəziyyətdə",
+      "Qələm tərəfi irəli olmaqla"
+    ],
+    "correct_answer": "B",
+    "explanation": "Pərgarı başı irəli olmaqla, bağlanmış şəkildə ötürün.",
+    "distractor_diagnostics": {
+      "A": "Açıq və ucu irəli halda ötürmək yaralaya bilər.",
+      "C": "Pərgar ötürülərkən bağlanmış vəziyyətdə olmalıdır.",
+      "D": "Baş hissəsi irəli olmalıdır ki, təhlükəsiz olsun."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-04",
+    "question": "Dişləri fırça və diş məcunu ilə nə qədər müddətə yumaq lazımdır?",
+    "options": [
+      "Bir dəqiqədən çox olmayaraq",
+      "Beş dəqiqədən çox",
+      "Üç dəqiqədən az olmayaraq",
+      "Yalnız on saniyə"
+    ],
+    "correct_answer": "C",
+    "explanation": "Dişləri üç dəqiqədən az olmayaraq fırça və diş məcunu ilə yumaq lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Bir dəqiqə yetərli deyil, ən azı üç dəqiqə olmalıdır.",
+      "B": "Mətndə qeyd olunan norma üç dəqiqədən az olmayaraqdır.",
+      "D": "On saniyə dişlərin tam təmizlənməsi üçün kifayət etmir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-05",
+    "question": "Yatmazdan əvvəl ayaqları necə yumaq lazımdır?",
+    "options": [
+      "Həmişə yalnız isti su ilə",
+      "Soyuq su (qışda ilıq su) və sabunla",
+      "Qışda soyuq, yayda isti su ilə",
+      "Yalnız nəm salfetlə silmək lazımdır"
+    ],
+    "correct_answer": "B",
+    "explanation": "Yatmazdan əvvəl ayaqları soyuq su (qışda ilıq su) və sabunla yumaq lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Daima isti su ilə yumaq qeyd olunmayıb.",
+      "C": "Əksinə, qışda ilıq su ilə yuyulmalıdır.",
+      "D": "Ayaqları nəm salfetlə deyil, su və sabunla yumaq vacibdir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-06",
+    "question": "Şəhər mühitində tozu və səsi udaraq insanın rahat yaşamasına nə şərait yaradır?",
+    "options": [
+      "Binalar",
+      "Mexaniki alətlər",
+      "Bitkilər",
+      "Maşınlar"
+    ],
+    "correct_answer": "C",
+    "explanation": "Bitkilər şəhər mühitində tozu və səsi udaraq insanın rahat yaşamasına şərait yaradır.",
+    "distractor_diagnostics": {
+      "A": "Binalar tozu udmur.",
+      "B": "Mexaniki alətlər rahatlıq yaratsa da, səs və tozu udmurlar.",
+      "D": "Maşınlar səs və toz mənbəyidir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-07",
+    "question": "Çiçək ləklərinin, güllüklərin yaradılması və parkların bəzədilməsi üçün becərilən bitkilər necə adlanır?",
+    "options": [
+      "Tərəvəz bitkiləri",
+      "Yabanı bitkilər",
+      "Meyvə bitkiləri",
+      "Dekorativ bitkilər"
+    ],
+    "correct_answer": "D",
+    "explanation": "Çiçək ləklərinin, güllüklərin yaradılması və parkların bəzədilməsi üçün becərilən bitkilər dekorativ bitkilər adlanır.",
+    "distractor_diagnostics": {
+      "A": "Tərəvəz bitkiləri qidalanma üçündür.",
+      "B": "Yabanı bitkilər park bəzədilməsi üçün xüsusi becərilmir.",
+      "C": "Meyvə bitkiləri meyvə əldə etmək üçün becərilir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-08",
+    "question": "Dekorativ bitkiləri neçə qrupa bölürlər?",
+    "options": [
+      "Üç (birillik, ikiillik və çoxillik)",
+      "İki (birillik və çoxillik)",
+      "Dörd",
+      "Bölmürlər"
+    ],
+    "correct_answer": "A",
+    "explanation": "Odur ki, onları üç qrupa bölürlər: birillik, ikiillik və çoxillik dekorativ bitkilər.",
+    "distractor_diagnostics": {
+      "B": "Qrupların sayı iki deyil, üçdür.",
+      "C": "Dörd deyil, üç qrupa bölünür.",
+      "D": "Bitkilərin ömrünə görə qruplara ayrılırlar."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-09",
+    "question": "Meyvəçilik kənd təsərrüfatının hansı sahəsidir?",
+    "options": [
+      "Tərəvəzlərin becərilməsi ilə məşğul olur.",
+      "Meyvə və giləmeyvələrin becərilməsi ilə məşğul olur.",
+      "Taxıl bitkilərinin becərilməsi ilə məşğul olur.",
+      "Dekorativ bitkilərin becərilməsi ilə məşğul olur."
+    ],
+    "correct_answer": "B",
+    "explanation": "Meyvəçilik - kənd təsərrüfatının bir sahəsi olub meyvə və giləmeyvələrin becərilməsi ilə məşğul olur.",
+    "distractor_diagnostics": {
+      "A": "Tərəvəzçilik fərqli sahədir.",
+      "C": "Taxıl bitkiləri taxılçılığa aiddir.",
+      "D": "Dekorativ bitkilər bəzək üçündür, meyvəçiliyə aid deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-10",
+    "question": "Səhər süfrəsini hazırlayarkən nimçənin soluna nə qoyulur?",
+    "options": [
+      "İti bıçaq",
+      "Çay qaşığı",
+      "Ağzı yuxarı baxan çəngəl",
+      "Fincan"
+    ],
+    "correct_answer": "C",
+    "explanation": "Nimçənin soluna ağzı yuxarı baxan çəngəl, sağına isə iti bıçaq qoyulur.",
+    "distractor_diagnostics": {
+      "A": "Bıçaq nimçənin sağına qoyulur.",
+      "B": "Çay qaşığı nəlbəkidə fincanın yanında olur.",
+      "D": "Fincan bıçağın yanında qoyulur, nimçənin solunda deyil."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-11",
+    "question": "Səhər süfrəsində fincanın dəstəyi və nəlbəkidəki çay qaşığı necə yerləşməlidir?",
+    "options": [
+      "Fincanın dəstəyi sağda, qaşıq solda",
+      "Fincanın dəstəyi solda, qaşıq sağda",
+      "İkisi də solda",
+      "İkisi də sağda"
+    ],
+    "correct_answer": "B",
+    "explanation": "Fincanın dəstəyi solda və nəlbəkidəki çay qaşığı sağda olmalıdır.",
+    "distractor_diagnostics": {
+      "A": "Qaydaya görə dəstək solda olmalıdır.",
+      "C": "Qaşıq sağda yerləşməlidir.",
+      "D": "Dəstək solda yerləşməlidir."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-12",
+    "question": "Masanı nahara hazırlamaq nə deməkdir?",
+    "options": [
+      "Yalnız qabları yumaqdır",
+      "Yeməkləri bişirməkdir",
+      "Süfrəyə yalnız salfet qoymaqdır",
+      "Süfrənin nahar üçün tərtib edilməsi, bəzədilməsidir"
+    ],
+    "correct_answer": "D",
+    "explanation": "Masanı nahara hazırlamaq - süfrənin nahar üçün tərtib edilməsi, bəzədilməsidir.",
+    "distractor_diagnostics": {
+      "A": "Qab yumaq tərtibata aid deyil.",
+      "B": "Masanı hazırlamaq yemək bişirmək prosesini əhatə etmir.",
+      "C": "Yalnız salfet qoymaq tam tərtibat sayılmır."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-13",
+    "question": "Paltarı ləkələrdən qorumaq üçün hansı salfetdən istifadə edirlər?",
+    "options": [
+      "Parça salfetdən",
+      "Nəm salfetdən",
+      "Kağız salfetdən",
+      "Ümumiyyətlə salfet istifadə olunmur"
+    ],
+    "correct_answer": "A",
+    "explanation": "Paltarı ləkələrdən qorumaq üçün parça salfetdən istifadə edirlər.",
+    "distractor_diagnostics": {
+      "B": "Nəm salfet əlləri silmək üçündür, paltarı qorumaq üçün deyil.",
+      "C": "Kağız salfet dodaqları və əlləri silmək üçündür.",
+      "D": "Paltarı qorumaq üçün salfetdən istifadə olunur."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-14",
+    "question": "Şam yeməyini nə üçün yatmazdan iki-üç saat əvvəl qəbul etmək lazımdır?",
+    "options": [
+      "Yemək rahat həzm olunsun deyə",
+      "Yemək soyusun deyə",
+      "Yuxu gəlməsin deyə",
+      "Qabları yumağa vaxt qalsın deyə"
+    ],
+    "correct_answer": "A",
+    "explanation": "Yeməyi yatmazdan iki-üç saat əvvəl qəbul etmək lazımdır ki, rahat həzm olunsun.",
+    "distractor_diagnostics": {
+      "B": "Yeməyin soyuması ilə bunun əlaqəsi yoxdur.",
+      "C": "Əsas səbəb yeməyin rahat həzm olunmasıdır.",
+      "D": "Bunun qab yumağa aidiyyəti yoxdur."
+    }
+  },
+  {
+    "passport_id": "03-TEX-2-15",
+    "question": "Pərgarla işləyərkən kağızın altına nə qoymaq lazımdır?",
+    "options": [
+      "Şüşə",
+      "Dəmir",
+      "Karton",
+      "Rezin"
+    ],
+    "correct_answer": "C",
+    "explanation": "İşləyərkən kağızın altına karton qoyun.",
+    "distractor_diagnostics": {
+      "A": "Şüşə üzərində pərgarın iynəsi sürüşə bilər.",
+      "B": "Dəmir altlıq üzərində işləmək məsləhət deyil.",
+      "D": "Mətndə rezin deyil, karton qoyulması göstərilmişdir."
+    }
+  }
+]

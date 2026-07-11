@@ -1,0 +1,257 @@
+[
+  {
+    "question": "Dövlətin özünütəsdiq rəmzi nə sayılır?",
+    "options": {
+      "A": "Himn",
+      "B": "Bayraq",
+      "C": "Gerb",
+      "D": "Konstitusiya"
+    },
+    "answer": "B",
+    "explanation": "Bayraq dövlətin özünütəsdiq rəmzi sayılır. Dövlətin varlığının, tarixinin və taleyinin göstəricisidir.",
+    "distractor_diagnostics": {
+      "A": "Mətndə dövlətin özünütəsdiq rəmzi kimi bayraq qeyd edilib, himn deyil.",
+      "C": "Gerb dövlət rəmzi olsa da, mətndə bayraq haqqında danışılır.",
+      "D": "Mətndə konstitusiya haqqında məlumat yoxdur."
+    },
+    "passport_id": "03-TEX-5-01"
+  },
+  {
+    "question": "Azərbaycan bayrağında mavi rəng nəyi ifadə edir?",
+    "options": {
+      "A": "İslam sivilizasiyasına mənsubluğu",
+      "B": "Müasir cəmiyyət qurmaq istəyini",
+      "C": "Təbiətin zənginliyini",
+      "D": "Azərbaycan xalqının türkmənşəli olmasını"
+    },
+    "answer": "D",
+    "explanation": "Dövlət Bayrağında mavi rəng Azərbaycan xalqının türkmənşəli olmasını ifadə edir.",
+    "distractor_diagnostics": {
+      "A": "İslam sivilizasiyasına mənsubluğu yaşıl rəng ifadə edir.",
+      "B": "Müasir cəmiyyət qurmaq istəyini qırmızı rəng ifadə edir.",
+      "C": "Mətndə təbiətin zənginliyi barədə fikir yoxdur."
+    },
+    "passport_id": "03-TEX-5-02"
+  },
+  {
+    "question": "Bayrağımızda qırmızı zolağın ortasında nə təsvir olunub?",
+    "options": {
+      "A": "Günəş və ay",
+      "B": "Qartal və qalxan",
+      "C": "Aypara və səkkizguşəli ulduz",
+      "D": "Qılınc və nizə"
+    },
+    "answer": "C",
+    "explanation": "Qırmızı zolağın ortasında aypara və səkkizguşəli ulduz təsviri vardır.",
+    "distractor_diagnostics": {
+      "A": "Günəş təsviri yoxdur.",
+      "B": "Qartal və qalxan gerbimizdəki təsvirlərə aiddir, bayraqda yoxdur.",
+      "D": "Qılınc və nizə bayraqda təsvir olunmayıb."
+    },
+    "passport_id": "03-TEX-5-03"
+  },
+  {
+    "question": "Xarıbülbül hansı şəhərin və ümumilikdə hansı bölgənin rəmzinə çevrilib?",
+    "options": {
+      "A": "Şuşanın və Qarabağın",
+      "B": "Ağdamın və Şirvanın",
+      "C": "Gəncənin və Gədəbəyin",
+      "D": "Qubanın və Qusarın"
+    },
+    "answer": "A",
+    "explanation": "Xarıbülbül Şuşanın və ümumilikdə Qarabağın rəmzinə çevrilib.",
+    "distractor_diagnostics": {
+      "B": "Mətndə Ağdam və Şirvan yox, Şuşa və Qarabağ göstərilib.",
+      "C": "Gəncə şəhəri qeyd edilməyib.",
+      "D": "Quba və Qusar bölgələri mətndə yoxdur."
+    },
+    "passport_id": "03-TEX-5-04"
+  },
+  {
+    "question": "Xarıbülbülə bu ad nəyə görə verilib?",
+    "options": {
+      "A": "Rənginin qırmızılığına görə",
+      "B": "Yarpaqlarının formasına görə",
+      "C": "Qoxusuna görə",
+      "D": "Bülbülə bənzədiyinə görə"
+    },
+    "answer": "D",
+    "explanation": "Gülə bu ad bülbülə bənzədiyinə görə verilib.",
+    "distractor_diagnostics": {
+      "A": "Adının verilməsi səbəbi rəngi deyil, bülbülə bənzəməsidir.",
+      "B": "Yarpaqlarının formasına görə verildiyi deyilmir.",
+      "C": "Qoxusuna görə belə adlanmır."
+    },
+    "passport_id": "03-TEX-5-05"
+  },
+  {
+    "question": "\"Xar\" sözünün mənası nədir?",
+    "options": {
+      "A": "Qızılgül",
+      "B": "Dağ",
+      "C": "Tikan",
+      "D": "Bülbül"
+    },
+    "answer": "C",
+    "explanation": "“Xar” sözü isə tikan mənasını verir, yəni “tikanlı bülbül”.",
+    "distractor_diagnostics": {
+      "A": "Xar sözü qızılgül mənası daşımır.",
+      "B": "Xar sözü dağ demək deyil.",
+      "D": "Bülbül gülün bənzədiyi quşdur, \"xar\" isə tikan deməkdir."
+    },
+    "passport_id": "03-TEX-5-06"
+  },
+  {
+    "question": "Xarıbülbülün digər elmi adı nədir?",
+    "options": {
+      "A": "Qarabağ qızılgülü",
+      "B": "Dağ bənövşəsi",
+      "C": "Şuşa zanbağı",
+      "D": "Qafqaz Qaş Səhləbi"
+    },
+    "answer": "D",
+    "explanation": "Xarıbülbülün digər adı Qafqaz Qaş Səhləbidir.",
+    "distractor_diagnostics": {
+      "A": "Mətndə Qarabağ qızılgülü deyilmir.",
+      "B": "Dağ bənövşəsi yanlış addır.",
+      "C": "Şuşa zanbağı qeyd edilməyib."
+    },
+    "passport_id": "03-TEX-5-07"
+  },
+  {
+    "question": "Plastilindən xarıbülbül mozaikasında hansı rəng plastilinlərdən kürəciklər yuvarlanır?",
+    "options": {
+      "A": "Qırmızı, ağ və mavi",
+      "B": "Sarı, qara və narıncı",
+      "C": "Açıq-yaşıl, açıq və tünd-bənövşəyi",
+      "D": "Qəhvəyi və göy"
+    },
+    "answer": "C",
+    "explanation": "Açıq-yaşıl, açıq və tünd-bənövşəyi plastilindən çoxlu sayda kürəciklər yuvarlayın.",
+    "distractor_diagnostics": {
+      "A": "Qırmızı, ağ, mavi rənglər bu mozaika üçün qeyd olunmayıb.",
+      "B": "Sarı və narıncı göstərilmir.",
+      "D": "Qəhvəyi və göy rənglərindən istifadə edilmir."
+    },
+    "passport_id": "03-TEX-5-08"
+  },
+  {
+    "question": "Muncuqdan tovuzquşu mozaikasında muncuqlar kartona nə ilə bərkidilir?",
+    "options": {
+      "A": "İplə",
+      "B": "Yapışqanla",
+      "C": "Mismar və çəkiclə",
+      "D": "Plastilinlə"
+    },
+    "answer": "B",
+    "explanation": "Tovuzquşunun konturuna yapışqan yaxın və müxtəlifrəngli muncuqları mərkəzdən başlayaraq konturun üzərinə yapışdırın.",
+    "distractor_diagnostics": {
+      "A": "Muncuqlar iplə toxunmur, kartona yapışdırılır.",
+      "C": "Mismar burada istifadə edilmir.",
+      "D": "Bu işdə plastilindən deyil, yapışqandan istifadə edilir."
+    },
+    "passport_id": "03-TEX-5-09"
+  },
+  {
+    "question": "Muncuqdan tovuzquşunun mozaikasını hazırlayarkən muncuqları haradan başlayaraq yapışdırırlar?",
+    "options": {
+      "A": "Mərkəzdən",
+      "B": "Kənardan",
+      "C": "Yuxarıdan",
+      "D": "Aşağıdan"
+    },
+    "answer": "A",
+    "explanation": "Müxtəlifrəngli muncuqları mərkəzdən başlayaraq konturun üzərinə yapışdırın.",
+    "distractor_diagnostics": {
+      "B": "Kənardan başlamaq məsləhət görülmür.",
+      "C": "Yuxarıdan yox, mərkəzdən başlanır.",
+      "D": "Aşağıdan başlamaq mətndə göstərilməyib."
+    },
+    "passport_id": "03-TEX-5-10"
+  },
+  {
+    "question": "Quzu mozaikasını hazırlamaq üçün əsasən hansı materialdan istifadə edilir?",
+    "options": {
+      "A": "Muncuq",
+      "B": "Rəngli kağızlar",
+      "C": "Plastilin",
+      "D": "Pambıqlı çöplər"
+    },
+    "answer": "D",
+    "explanation": "Pambıqlı çöplərdən quzu mozaikası. Çubuqların pambıqlı hissələrini qayçı ilə kəsin və gövdəyə yapışdırın.",
+    "distractor_diagnostics": {
+      "A": "Muncuq tovuzquşu mozaikası üçündür.",
+      "B": "Rəngli kağızlar bayraq mozaikasında istifadə olunur.",
+      "C": "Plastilin xarıbülbül üçündür."
+    },
+    "passport_id": "03-TEX-5-11"
+  },
+  {
+    "question": "Azərbaycan bayrağının qırmızı rəngi nəyi ifadə edir?",
+    "options": {
+      "A": "Türkmənşəli olmağı",
+      "B": "Müasir cəmiyyət qurmaq, demokratiyanı inkişaf etdirmək istəyini",
+      "C": "İslam sivilizasiyasına mənsubluğu",
+      "D": "Torpaqlarımızın zənginliyini"
+    },
+    "answer": "B",
+    "explanation": "Qırmızı rəng müasir cəmiyyət qurmaq, demokratiyanı inkişaf etdirmək istəyini ifadə edir.",
+    "distractor_diagnostics": {
+      "A": "Türkmənşəli olmağı mavi rəng bildirir.",
+      "C": "İslam sivilizasiyasına mənsubluğu yaşıl rəng bildirir.",
+      "D": "Mətndə torpaqların zənginliyi barədə məlumat yoxdur."
+    },
+    "passport_id": "03-TEX-5-12"
+  },
+  {
+    "question": "Pambıqlı çöplərdən quzu mozaikasında quzunun konturu hansı rəngli kartona köçürülür?",
+    "options": {
+      "A": "Qırmızı kartona",
+      "B": "Yaşıl kartona",
+      "C": "Mavi kartona",
+      "D": "Qara kartona"
+    },
+    "answer": "C",
+    "explanation": "Quzunun konturunu mavi kartona köçürün.",
+    "distractor_diagnostics": {
+      "A": "Qırmızı karton mətndə bu məqsədlə verilmir.",
+      "B": "Yaşıl karton mətndə yoxdur.",
+      "D": "Qara karton mətndə qeyd olunmur."
+    },
+    "passport_id": "03-TEX-5-13"
+  },
+  {
+    "question": "Rəngli kağızlardan Azərbaycan bayrağı mozaikasını düzəldərkən kiçik dairələri kəsmək üçün hansı alətdən istifadə olunur?",
+    "options": {
+      "A": "Qayçı",
+      "B": "Deşikaçan",
+      "C": "Bıçaq",
+      "D": "Xətkeş"
+    },
+    "answer": "B",
+    "explanation": "Mavi, qırmızı və yaşıl kağızlardan deşikaçanla kiçik dairələr kəsin.",
+    "distractor_diagnostics": {
+      "A": "Qayçı ilə konturlar kəsilə bilər, amma kiçik dairələr deşikaçanla kəsilir.",
+      "C": "Bıçaqla işləmək məsləhət görülmür və mətndə yoxdur.",
+      "D": "Xətkeş kəsmək üçün yox, ölçmək üçündür."
+    },
+    "passport_id": "03-TEX-5-14"
+  },
+  {
+    "question": "Pambıqlı çöplərdən quzu mozaikasında quzunun üz cizgilərini və dırnaqlarını nə ilə çəkirlər?",
+    "options": {
+      "A": "Qara flomasterlə",
+      "B": "Fırça və boya ilə",
+      "C": "Qələmlə",
+      "D": "Təbaşirlə"
+    },
+    "answer": "A",
+    "explanation": "Qara flomasterlə quzunun üz cizgilərini və dırnaqlarını çəkin.",
+    "distractor_diagnostics": {
+      "B": "Fırça yalnız yapışqan çəkmək üçün nəzərdə tutulur.",
+      "C": "Mətndə qələm yox, qara flomaster qeyd olunub.",
+      "D": "Təbaşir mətndə istifadə edilmir."
+    },
+    "passport_id": "03-TEX-5-15"
+  }
+]

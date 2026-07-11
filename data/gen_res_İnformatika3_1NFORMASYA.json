@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-INF-1NFORMASYA-01",
+    "question": "İnsan qəbul etdiyi informasiya neçə növə bölünür və onlar hansılardır?",
+    "options": {
+      "A": "4 növə: şirin, duzlu, turş, acı",
+      "B": "5 növə: vizual, səs, qoxu, dad, taktil",
+      "C": "2 növə: təbii və süni",
+      "D": "3 növə: görmə, eşitmə, iyləmə"
+    },
+    "correct_answer": "B",
+    "explanation": "Qəbul olunan informasiya da uyğun olaraq beş növə bölünür: vizual, səs, qoxu, dad, taktil.",
+    "distractor_diagnostics": {
+      "A": "Dörd əsas dada aiddir, informasiya növlərinə yox.",
+      "C": "İnformasiya mənbələrinin növləridir.",
+      "D": "Bütün növləri əhatə etmir və terminlər tam dəqiq deyil."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-02",
+    "question": "Mətndə verilən məlumata görə, yalnız hansı dörd əsas dad mövcuddur?",
+    "options": {
+      "A": "Şirin, acı, şor və turş",
+      "B": "Duzlu, şirin, kəskin və acı",
+      "C": "Şirin, duzlu, turş və acı",
+      "D": "Turş, acı, yumşaq və şirin"
+    },
+    "correct_answer": "C",
+    "explanation": "Yalnız dörd əsas dad var: şirin, duzlu, turş və acı.",
+    "distractor_diagnostics": {
+      "A": "Şor dadı əsas dad kimi qeyd olunmayıb.",
+      "B": "Kəskin dadı əsas dad kimi qeyd olunmayıb.",
+      "D": "Yumşaq dadı əsas dad kimi qeyd olunmayıb."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-03",
+    "question": "Aşağıdakılardan hansı süni informasiya mənbələrinə aid nümunədir?",
+    "options": {
+      "A": "Şəlalə, ağac yarpaqları",
+      "B": "Çiçəklər, şəlalə",
+      "C": "Avtomobil, çiçəklər, ağac",
+      "D": "Stol, avtomobil, çanta"
+    },
+    "correct_answer": "D",
+    "explanation": "İnsanın yaratdığı obyektlər isə, məsələn, stol, avtomobil, çanta süni informasiya mənbələridir.",
+    "distractor_diagnostics": {
+      "A": "Bunlar təbii informasiya mənbələridir.",
+      "B": "Bunlar təbii informasiya mənbələridir.",
+      "C": "Çiçəklər və ağac təbii mənbələrdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-04",
+    "question": "Ağacın gövdəsindəki halqalardan hansı məlumatı öyrənmək mümkündür?",
+    "options": {
+      "A": "Ağacın yaşını və əvvəlki illərin yağmurlu, yaxud quraqlıq keçdiyini",
+      "B": "Ağacın hansı növə aid olduğunu və nə vaxt çiçək açacağını",
+      "C": "Təbii informasiya mənbəyinin hündürlüyünü",
+      "D": "Qəbul olunan informasiyanın hansı növə aid olduğunu"
+    },
+    "correct_answer": "A",
+    "explanation": "Məsələn, ağacın gövdəsindəki halqalardan onun yaşını, əvvəlki illərin yağmurlu, yaxud quraqlıq keçdiyini öyrənmək mümkündür.",
+    "distractor_diagnostics": {
+      "B": "Mətndə çiçək açma və ya növü barədə qeyd yoxdur.",
+      "C": "Hündürlüyü halqalardan bilinmir.",
+      "D": "Bu, ümumi məlumatdır və ağac halqalarına aid deyil."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-05",
+    "question": "Yağış zamanı bir yarpağına su damcısı düşən kimi bütün yarpaqları büzüşən və bu informasiyanı digər bitkilərə ötürən bitki hansıdır?",
+    "options": {
+      "A": "Çinar ağacı",
+      "B": "Şam ağacı",
+      "C": "Küsdümgülü (mimoza)",
+      "D": "Ağac yarpaqları"
+    },
+    "correct_answer": "C",
+    "explanation": "Yağış zamanı bitkinin bir yarpağına su damcısı düşən kimi onun bütün yarpaqları büzüşür... Beləliklə, yağış haqqında informasiya bircə anda bütün küsdümgülü bitkilərinə yayılır.",
+    "distractor_diagnostics": {
+      "A": "Çinar ağacında belə xüsusiyyət qeyd olunmayıb.",
+      "B": "Şam ağacında belə xüsusiyyət qeyd olunmayıb.",
+      "D": "Bu, ümumi anlayışdır, spesifik bitki adı deyil."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-06",
+    "question": "İnformasiyanın qəbul edilməsi, saxlanması, emalı, ötürülməsi, axtarılması, kodlaşdırılması və qorunması ümumilikdə necə adlanır?",
+    "options": {
+      "A": "İnformasiya mübadiləsi",
+      "B": "İnformasiya prosesləri",
+      "C": "Kütləvi informasiya vasitələri",
+      "D": "İnformasiya mənbəyi"
+    },
+    "correct_answer": "B",
+    "explanation": "İnformasiya ilə görülən bütün bu işlərə informasiya prosesləri deyilir.",
+    "distractor_diagnostics": {
+      "A": "İnformasiya mübadiləsi yalnız bir hissəsini əhatə edir.",
+      "C": "Vasitələrə aiddir, proseslərə yox.",
+      "D": "İnformasiyanı verən tərəfə deyilir."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-07",
+    "question": "İnformasiyanın ötürülməsində həmişə iştirak edən iki tərəf necə adlanır?",
+    "options": {
+      "A": "İnformasiya mənbəyi və informasiya qəbuledicisi",
+      "B": "İlkin informasiya və nəticə",
+      "C": "Kəmiyyət və keyfiyyət əlamətləri",
+      "D": "Təbii və süni mənbə"
+    },
+    "correct_answer": "A",
+    "explanation": "İnformasiyanın ötürülməsində həmişə iki tərəf iştirak edir: informasiya mənbəyi (informasiyanı verən) və informasiya qəbuledicisi (informasiyanı alan).",
+    "distractor_diagnostics": {
+      "B": "Bunlar emal prosesinə aid terminlərdir.",
+      "C": "Bunlar obyektin fərqləndirici əlamətləridir.",
+      "D": "Bunlar informasiya mənbələrinin növləridir."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-08",
+    "question": "Arı ailəsində çiçəklərin yeri haqqında informasiya toplayıb digər arılara ötürən arılar necə adlanır?",
+    "options": {
+      "A": "\"İşçi\" arılar",
+      "B": "\"Qoruyucu\" arılar",
+      "C": "\"Ana\" arı",
+      "D": "\"Kəşfiyyatçı\" arılar"
+    },
+    "correct_answer": "D",
+    "explanation": "Arı ailəsində “kəşfiyyatçı” arılar olur. Onlar çiçəklərin yeri haqqında informasiya toplayıb digər arılara ötürürlər.",
+    "distractor_diagnostics": {
+      "A": "Mətndə qeyd olunmayıb.",
+      "B": "Mətndə qeyd olunmayıb.",
+      "C": "Mətndə qeyd olunmayıb."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-09",
+    "question": "İnformasiyanı daha çox sayda insana ötürmək üçün istifadə edilən vasitələr necə adlanır?",
+    "options": {
+      "A": "İnformasiya prosesləri",
+      "B": "Təbii informasiya mənbələri",
+      "C": "Kütləvi informasiya vasitələri",
+      "D": "İnformasiyanın kodlaşdırılması"
+    },
+    "correct_answer": "C",
+    "explanation": "İnformasiyanı daha çox sayda insana ötürmək üçün kitab, jurnal, qəzet, radio, televiziya, İnternet kimi kütləvi informasiya vasitələrindən istifadə edilir.",
+    "distractor_diagnostics": {
+      "A": "Bu informasiya ilə görülən işlərə aiddir.",
+      "B": "Bu, təbiətdən gələn mənbələrə aiddir.",
+      "D": "Bu informasiyanın kodlarla ifadə olunmasıdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-10",
+    "question": "İnformasiyanın kodlarla ifadə olunması prosesi necə adlandırılır?",
+    "options": {
+      "A": "İnformasiyanın emalı",
+      "B": "Kodlaşdırma",
+      "C": "İnformasiya mübadiləsi",
+      "D": "İnformasiya ötürülməsi"
+    },
+    "correct_answer": "B",
+    "explanation": "İnformasiyanın kodlarla ifadə olunması kodlaşdırma adlanır.",
+    "distractor_diagnostics": {
+      "A": "İlkin informasiyadan nəticə çıxarmağa deyilir.",
+      "C": "Obyektlər arasında informasiya qəbul edilib verilməsinə deyilir.",
+      "D": "İnformasiyanın bir tərəfdən digərinə verilməsinə deyilir."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-11",
+    "question": "Şəkillər və işarələrlə kodlaşdırılmış informasiya növü hansıdır?",
+    "options": {
+      "A": "Rebus",
+      "B": "Kodlaşdırma cədvəli",
+      "C": "Bayraq əlifbası",
+      "D": "Təbii informasiya"
+    },
+    "correct_answer": "A",
+    "explanation": "Rebus şəkillər və işarələrlə kodlaşdırılmış informasiyadır.",
+    "distractor_diagnostics": {
+      "B": "Mətndə şəkillərlə kodlaşdırılma kimi təsvir olunmur.",
+      "C": "Dənizdə gəmilər arasında informasiya ötürmək üçün vasitədir.",
+      "D": "Mənbə növüdür."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-12",
+    "question": "Rebuslarda şəklin önündəki vergüllər nəyi bildirir?",
+    "options": {
+      "A": "Uyğun sözün sonundan vergüllərin sayı qədər hərfin silinməsini",
+      "B": "Sözdə hərfin başqa hərflə əvəzlənməsini",
+      "C": "Sözün sağdan sola oxunacağını",
+      "D": "Uyğun sözün başlanğıcından vergüllərin sayı qədər hərfin silinməsini"
+    },
+    "correct_answer": "D",
+    "explanation": "Şəklin önündəki vergüllər uyğun sözün başlanğıcından vergüllərin sayı qədər hərfin silinməsini bildirir.",
+    "distractor_diagnostics": {
+      "A": "Bu şəkildən sonrakı vergüllərin mənasıdır.",
+      "B": "Bu bərabərlik işarəsinin mənasıdır.",
+      "C": "Bu şəklin baş-ayaq verilməsinin mənasıdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-13",
+    "question": "İlkin informasiyanın emalından sonra alınan nəticə necə adlanır?",
+    "options": {
+      "A": "Kod",
+      "B": "Təbii mənbə",
+      "C": "Yeni informasiya",
+      "D": "Rebus"
+    },
+    "correct_answer": "C",
+    "explanation": "İlkin informasiyanın emalından sonra alınan nəticə artıq yeni informasiyadır.",
+    "distractor_diagnostics": {
+      "A": "İnformasiyanın ifadə olunması üçün işarələrdir.",
+      "B": "İnformasiya alınan təbii obyektdir.",
+      "D": "Şəkillərlə kodlaşdırılmış informasiyadır."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-14",
+    "question": "Obyektin rəngi, dadı, hərəkətləri, tərkib hissələri, materialı kimi ölçə bilmədiyimiz əlamətləri necə adlanır?",
+    "options": {
+      "A": "Kəmiyyət əlamətləri",
+      "B": "Keyfiyyət əlamətləri",
+      "C": "Ümumi adlar",
+      "D": "Xüsusi adlar"
+    },
+    "correct_answer": "B",
+    "explanation": "Obyektin ölçə bilmədiyimiz əlamətləri isə, məsələn, rəngi, dadı, hərəkətləri, tərkib hissələri, materialı keyfiyyət əlamətləridir.",
+    "distractor_diagnostics": {
+      "A": "Ölçə bildiyimiz əlamətlərə deyilir.",
+      "C": "Qrupa daxil olan bütün obyektlərə aid addır.",
+      "D": "Obyekti fərqləndirmək üçün verilən addır."
+    }
+  },
+  {
+    "passport_id": "03-INF-1NFORMASYA-15",
+    "question": "İnformasiyanı emal edən həm insan, həm də texniki qurğu ola bilən tərəf necə adlandırılır?",
+    "options": {
+      "A": "İcraçı",
+      "B": "İnformasiya mənbəyi",
+      "C": "İnformasiya qəbuledicisi",
+      "D": "Rebus"
+    },
+    "correct_answer": "A",
+    "explanation": "Bu halda siz informasiyanı emal edən icraçı olursunuz. İcraçı təkcə insan deyil, həm də texniki qurğu (məsələn, kompüter) ola bilər.",
+    "distractor_diagnostics": {
+      "B": "İnformasiyanı verən tərəfə aiddir.",
+      "C": "İnformasiyanı alan tərəfə aiddir.",
+      "D": "Şəkillərlə kodlaşdırılmış informasiya formasıdır."
+    }
+  }
+]

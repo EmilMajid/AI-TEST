@@ -1,0 +1,2774 @@
+[
+  {
+    "id": "05-004-0101-B1F02-anlama-01-008",
+    "passport_id": "03-004-0101-B1F02-anlama-01-008",
+    "question": "Çıxılanı 50 vahid artırıb, azalanı dəyişməsək, fərq necə dəyişər?",
+    "options": {
+      "A": "50 vahid artar",
+      "B": "Dəyişməz",
+      "C": "50 vahid azalar",
+      "D": "100 vahid azalar"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, fərqi tapmaq üçün azalan və çıxılan əlaqəlidir. Çıxılan artdıqca fərq azalır. Çıxılanı 50 vahid artırsaq, fərq 50 vahid azalar.",
+    "distractor_diagnostics": {
+      "A": "Fərqin tərs mütənasibliyini bilməmək",
+      "B": "Dəyişikliyi nəzərə almamaq",
+      "D": "Səhv hesablama"
+    },
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "Çıxmanın digər üsulları",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-023",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-023",
+    "question": "Rəqəmləri cəmi 12 olan ən böyük üçrəqəmli ədədlə, rəqəmləri cəmi 15 olan ən kiçik üçrəqəmli ədədin fərqini tapın.",
+    "options": {
+      "A": "762",
+      "B": "771",
+      "C": "801",
+      "D": "780"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. Rəqəmləri cəmi 12 olan ən böyük ədəd 930, 15 olan ən kiçik ədəd isə 159-dur. 930 - 159 = 771.",
+    "distractor_diagnostics": {
+      "A": "Ədədləri səhv qurmaq",
+      "C": "Toplama əməli ilə qarışdırmaq",
+      "D": "Səhv çıxma əməliyyatı"
+    },
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "05-004-0101-B1F02-tətbiq-03-028",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-028",
+    "question": "İki ədədin fərqi 150-dir. Azalanı 40 vahid artırıb, çıxılanı 30 vahid azaltdıqda yeni fərq neçə olar?",
+    "options": {
+      "A": "220",
+      "B": "140",
+      "C": "160",
+      "D": "80"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərslikdəki asan hesablamalar kimi, azalan artdıqca fərq artır, çıxılan azaldıqca da fərq artır. 150 + 40 + 30 = 220.",
+    "distractor_diagnostics": {
+      "B": "Əməliyyatların təsirini səhv anlamaq",
+      "C": "Yalnız bir şərti nəzərə almaq",
+      "D": "Səhv hesablama istiqaməti"
+    },
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "Çıxmanın digər üsulları",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "62df5a8e-3f46-4849-bc2b-d107d9eb0630",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-029",
+    "question": "345 - 123 fərqini tapın.",
+    "options": {
+      "A": "212",
+      "B": "232",
+      "C": "222",
+      "D": "242"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 345 - 123 = 222.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv çıxma",
+      "B": "Onluq mərtəbəsində toplama səhvi",
+      "D": "Təkliklərdə diqqətsizlik"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "40095789-992e-4b87-8355-640b06954cb6",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-030",
+    "question": "456 - 234 fərqini tapın.",
+    "options": {
+      "A": "222",
+      "B": "212",
+      "C": "232",
+      "D": "242"
+    },
+    "correctAnswer": "A",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 456 - 234 = 222.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda səhv",
+      "C": "Artıq hesablama",
+      "D": "Yüzlüklərdə səhv hesablama"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "1877534b-28ab-4c35-939e-3885621aeb62",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-031",
+    "question": "567 - 345 fərqini tapın.",
+    "options": {
+      "A": "212",
+      "B": "232",
+      "C": "242",
+      "D": "222"
+    },
+    "correctAnswer": "D",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 567 - 345 = 222.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədə xəta",
+      "B": "Toplama ilə qarışdırma",
+      "C": "Təkliklərdə səhv"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e45c7963-f2b2-4ada-a119-fcb2ec4e8e14",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-032",
+    "question": "678 - 456 fərqini tapın.",
+    "options": {
+      "A": "212",
+      "B": "222",
+      "C": "232",
+      "D": "242"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 678 - 456 = 222.",
+    "distractor_diagnostics": {
+      "A": "Təkliklərdə hesablama səhvi",
+      "C": "Onluqlarda hesablama səhvi",
+      "D": "Yüzlüklərdə hesablama səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "aa8dec0b-80ad-43b0-8a9c-daf25993d48e",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-033",
+    "question": "789 - 567 fərqini tapın.",
+    "options": {
+      "A": "222",
+      "B": "212",
+      "C": "232",
+      "D": "242"
+    },
+    "correctAnswer": "A",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 789 - 567 = 222.",
+    "distractor_diagnostics": {
+      "B": "Onluq mərtəbəsində səhv",
+      "C": "Rəqəmləri düzgün çıxmamaq",
+      "D": "Yüzlüklərdə səhv"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b0c2bb9b-4148-40d1-8ef2-a139bc9f8232",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-034",
+    "question": "899 - 678 fərqini tapın.",
+    "options": {
+      "A": "211",
+      "B": "231",
+      "C": "221",
+      "D": "241"
+    },
+    "correctAnswer": "C",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 899 - 678 = 221.",
+    "distractor_diagnostics": {
+      "A": "Onluq səhvi",
+      "B": "Toplama əvəzinə çıxma xətası",
+      "D": "Təklik xətası"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "fd34e03a-f80e-4e50-a3e6-25c2c6d3f17c",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-035",
+    "question": "987 - 765 fərqini tapın.",
+    "options": {
+      "A": "212",
+      "B": "232",
+      "C": "242",
+      "D": "222"
+    },
+    "correctAnswer": "D",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 987 - 765 = 222.",
+    "distractor_diagnostics": {
+      "A": "Diqqətsizlik",
+      "B": "Onluqlarda səhv",
+      "C": "Yüzlüklərdə səhv hesablama"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "95373c12-a8e1-4980-aa61-f286fbaa701c",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-036",
+    "question": "854 - 342 fərqini tapın.",
+    "options": {
+      "A": "502",
+      "B": "512",
+      "C": "522",
+      "D": "532"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 854 - 342 = 512.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab xətası",
+      "C": "Təkliklərdə xəta",
+      "D": "Əlavə onluq çıxılması"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "77a27780-a366-4f13-a0eb-79a8f2c2baa8",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-037",
+    "question": "765 - 431 fərqini tapın.",
+    "options": {
+      "A": "324",
+      "B": "344",
+      "C": "334",
+      "D": "314"
+    },
+    "correctAnswer": "C",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 765 - 431 = 334.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv",
+      "B": "Diqqətsizlik",
+      "D": "Rəqəm səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "bdc85fc3-574e-408e-b3ab-22ee3d83f028",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-038",
+    "question": "976 - 543 fərqini tapın.",
+    "options": {
+      "A": "423",
+      "B": "433",
+      "C": "443",
+      "D": "413"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 976 - 543 = 433.",
+    "distractor_diagnostics": {
+      "A": "Onluq səhvi",
+      "C": "Hesablama səhvi",
+      "D": "Təklik səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "0faff038-bbb3-4bc9-a9f7-744162a1ebb4",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-039",
+    "question": "888 - 444 fərqini tapın.",
+    "options": {
+      "A": "434",
+      "B": "454",
+      "C": "424",
+      "D": "444"
+    },
+    "correctAnswer": "D",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 888 - 444 = 444.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv",
+      "B": "Diqqətsizlik",
+      "C": "Hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "04e2e6d0-93ee-4a58-b57b-fbbc768cd170",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-040",
+    "question": "777 - 333 fərqini tapın.",
+    "options": {
+      "A": "444",
+      "B": "434",
+      "C": "454",
+      "D": "424"
+    },
+    "correctAnswer": "A",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 777 - 333 = 444.",
+    "distractor_diagnostics": {
+      "B": "Onluq xətası",
+      "C": "Artıq vahid çıxılması",
+      "D": "Təklik xətası"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d45cb4e7-2902-4305-931b-0ee780433f5c",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-041",
+    "question": "666 - 222 fərqini tapın.",
+    "options": {
+      "A": "434",
+      "B": "424",
+      "C": "454",
+      "D": "444"
+    },
+    "correctAnswer": "D",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 666 - 222 = 444.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv",
+      "B": "Yüzlüklərdə səhv",
+      "C": "Toplama əməli ilə qarışdırma"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "396b421c-76c9-4453-8b29-1f6e796f6e60",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-042",
+    "question": "555 - 111 fərqini tapın.",
+    "options": {
+      "A": "434",
+      "B": "444",
+      "C": "424",
+      "D": "454"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 555 - 111 = 444.",
+    "distractor_diagnostics": {
+      "A": "Rəqəm səhvi",
+      "C": "Səhv çıxma",
+      "D": "Toplama tətbiq etmək"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "6b5fbcc4-c81e-4d4c-8c87-3e495ae5797b",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-043",
+    "question": "Mağazada 500 kq un var idi, 200 kq satıldı. Neçə kq un qaldı?",
+    "options": {
+      "A": "250",
+      "B": "350",
+      "C": "300",
+      "D": "400"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, qalan miqdarı tapmaq üçün azalandan çıxılanı çıxırıq: 500 - 200 = 300 kq.",
+    "distractor_diagnostics": {
+      "A": "Səhv hesablama",
+      "B": "Diqqətsizlik",
+      "D": "100-lük xətası"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "013bb123-0212-4746-b25f-83b3745791d9",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-044",
+    "question": "750 m yolun 420 m-i gedildi. Qalan yol neçə metrdir?",
+    "options": {
+      "A": "320",
+      "B": "330",
+      "C": "340",
+      "D": "350"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən mərtəbələrə görə çıxılır: 750 - 420 = 330 m.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv",
+      "C": "Yüzlüklərdə səhv",
+      "D": "Diqqətsiz hesablama"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "7ecea6fa-a496-47b9-b573-599598b9a612",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-045",
+    "question": "860 manat pulun 340 manatı xərcləndi. Nə qədər pul qaldı?",
+    "options": {
+      "A": "510",
+      "B": "530",
+      "C": "540",
+      "D": "520"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə uyğun olaraq, qalan məbləği tapmaq üçün çıxma əməlini yerinə yetiririk: 860 - 340 = 520 manat.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv hesablama",
+      "B": "Təkliklərdə diqqətsizlik",
+      "C": "Toplama səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5a28b385-7f7c-4bee-a86d-66b9c66f422f",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-046",
+    "question": "Kitabın 945 səhifəsindən 523 səhifəsi oxundu. Neçə səhifə oxunmamış qaldı?",
+    "options": {
+      "A": "412",
+      "B": "422",
+      "C": "402",
+      "D": "432"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən mərtəbə ardıcıllığı qorunur: 945 - 523 = 422 səhifə.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədə hesablama xətası",
+      "C": "Təklik mərtəbəsində səhv",
+      "D": "Səhv toplama"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d0ee512b-36c8-4e80-b6d4-f2542257a890",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-047",
+    "question": "Bağdakı 678 ağacın 456-sı kəsildi. Neçə ağac qaldı?",
+    "options": {
+      "A": "212",
+      "B": "202",
+      "C": "222",
+      "D": "232"
+    },
+    "correctAnswer": "C",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən əvvəlcə təkliklər, sonra onluqlar, axırda isə yüzlüklər çıxılır. 678 - 456 = 222 ağac.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda xəta",
+      "B": "Hesablama səhvi",
+      "D": "Yüzlüklərdə hesablama səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "1aa6f514-9e9f-469e-960a-fac1e000e51f",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-048",
+    "question": "Məktəbdəki 894 şagirddən 672-si oğlandır. Qızların sayı nə qədərdir?",
+    "options": {
+      "A": "222",
+      "B": "212",
+      "C": "232",
+      "D": "242"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən, fərqi tapmaqla sayı müəyyən etmək olar. 894 - 672 = 222 qız.",
+    "distractor_diagnostics": {
+      "B": "Onluq səhvi",
+      "C": "Təklik səhvi",
+      "D": "Yüzlüklərdə diqqətsizlik"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "0e01e700-e03d-4c1a-b2ab-01c838e0fbfc",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-049",
+    "question": "567 qutu qənddən 345 qutu satıldı. Neçə qutu qaldı?",
+    "options": {
+      "A": "212",
+      "B": "222",
+      "C": "232",
+      "D": "242"
+    },
+    "correctAnswer": "B",
+    "explanation": "Üçrəqəmli ədədlərin fərqini taparkən uyğun mərtəbə qiymətləri çıxılır. 567 - 345 = 222 qutu.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində çıxma xətası",
+      "C": "Təklik mərtəbəsində səhv",
+      "D": "Hesablama prosesində diqqətsizlik"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "9bb7ed30-943c-4dc3-8c9d-8833cad49c63",
+    "passport_id": "03-004-0101-B1F02-anlama-01-050",
+    "question": "345 - 128 fərqini tapın.",
+    "options": {
+      "A": "207",
+      "B": "217",
+      "C": "227",
+      "D": "237"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, azalanın təklikləri çıxılanın təkliklərindən kiçik olduqda, azalanın onluqlarından 1 onluq ayırıb təkliklərinə əlavə edilir. 15-8=7, qalan onluqlardan çıxılır: 3-2=1. 345 - 128 = 217.",
+    "distractor_diagnostics": {
+      "A": "Onluğun ayrılmasını düzgün nəzərə almamaq",
+      "C": "Onluq ayırmadan səhv hesablama",
+      "D": "Toplama əməliyyatı səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b5db310e-71df-4f42-84b7-4c015f1dbfba",
+    "passport_id": "03-004-0101-B1F02-anlama-01-051",
+    "question": "456 - 239 fərqini tapın.",
+    "options": {
+      "A": "207",
+      "B": "227",
+      "C": "217",
+      "D": "237"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, azalanın təklikləri kiçik olduqda 1 onluq ayrılır. 16-9=7 təklik, 4-3=1 onluq qalır. 456 - 239 = 217.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsini azaltmağı unudub 1 vahid daha çıxmaq",
+      "B": "Onluq mərtəbəsini azaltmamaq",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "4cb5da5c-2b89-428e-a4ff-de32e6cb4c75",
+    "passport_id": "03-004-0101-B1F02-anlama-01-052",
+    "question": "562 - 345 fərqini tapın.",
+    "options": {
+      "A": "217",
+      "B": "227",
+      "C": "207",
+      "D": "237"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən, təkliklər çıxılmırsa 1 onluq ayrılır. 12-5=7, 5-4=1, 5-3=2. Nəticə: 217.",
+    "distractor_diagnostics": {
+      "B": "Onluqdan bir vahid kiçiltməmək",
+      "C": "Onluqlarda hesablama xətası",
+      "D": "Rəqəmlərin səhv köçürülməsi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "93683888-b4ad-44ca-bf12-3b60cb897785",
+    "passport_id": "03-004-0101-B1F02-anlama-01-053",
+    "question": "673 - 456 fərqini tapın.",
+    "options": {
+      "A": "207",
+      "B": "217",
+      "C": "227",
+      "D": "237"
+    },
+    "correctAnswer": "B",
+    "explanation": "Azalanın onluqlarından 1 onluq ayrılır və 10 təklik kimi təkliklərinə əlavə edilir. 13-6=7, 6-5=1, 6-4=2. Fərq 217-dir.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədəki dəyişikliyi 2 dəfə hesablamaq",
+      "C": "Onluq ayrılmasını yaddan çıxarmaq",
+      "D": "Toplama ilə səhv salmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "6e7ecc9d-67ac-49f3-acba-b414adbe216f",
+    "passport_id": "03-004-0101-B1F02-anlama-01-054",
+    "question": "784 - 567 fərqini tapın.",
+    "options": {
+      "A": "217",
+      "B": "207",
+      "C": "227",
+      "D": "237"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən, 4-dən 7 çıxıla bilmədiyi üçün onluqdan 1 vahid ayrılır: 14 - 7 = 7. 7 - 6 = 1. Nəticə: 217.",
+    "distractor_diagnostics": {
+      "B": "Onluqda əskiklik",
+      "C": "Onluqda artıqlıq",
+      "D": "Hesablama mexaniki səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "9c4b9698-1e2f-4af2-881b-12bc8a89d211",
+    "passport_id": "03-004-0101-B1F02-anlama-01-055",
+    "question": "895 - 678 fərqini tapın.",
+    "options": {
+      "A": "207",
+      "B": "227",
+      "C": "217",
+      "D": "237"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən azalanın təklikləri kiçik olduqda 1 onluq ayrılır. 15-8=7, 8-7=1, 8-6=2. Fərq: 217.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində çıxma səhvi",
+      "B": "Onluq ayrılmasını unudaraq hesablama",
+      "D": "Yüzlük mərtəbəsində səhv"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "db1ad669-4e8e-4bd2-9014-ae9853cc05ca",
+    "passport_id": "03-004-0101-B1F02-anlama-01-056",
+    "question": "981 - 765 fərqini tapın.",
+    "options": {
+      "A": "206",
+      "B": "216",
+      "C": "226",
+      "D": "236"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən azalanın təklikləri çıxılanın təkliklərindən kiçik olduqda onluq ayrılır. 11-5=6, 7-6=1, 9-7=2. Nəticə: 216.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda yadda qalanı səhv çıxmaq",
+      "C": "Onluq ayrılmasını hesaba qatmamaq",
+      "D": "Ümumi hesablama səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "7c949c5c-142e-4e1a-a672-4acf4278e64d",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-057",
+    "question": "852 - 347 fərqini tapın.",
+    "options": {
+      "A": "505",
+      "B": "515",
+      "C": "495",
+      "D": "525"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən təkliklər çıxıla bilmədikdə 1 onluq ayrılır: 12-7=5. Onluqlarda 4 qalır: 4-4=0. Yüzlüklərdə 8-3=5. Fərq: 505.",
+    "distractor_diagnostics": {
+      "B": "Onluğun ayrıldığını nəzərə almamaq",
+      "C": "Onluqlarda əlavə bir dəfə çıxma",
+      "D": "Toplama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "1a202b7d-ed19-4d66-938b-b9018ffde624",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-058",
+    "question": "763 - 438 fərqini tapın.",
+    "options": {
+      "A": "305",
+      "B": "315",
+      "C": "335",
+      "D": "325"
+    },
+    "correctAnswer": "D",
+    "explanation": "Azalanın onluqlarından 1 onluq ayrılır: 13-8=5, 5-3=2, 7-4=3. Fərq 325-dir.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda düzgün çıxmamaq",
+      "B": "Mexaniki hesablama xətası",
+      "C": "Onluğun ayrılmasını unudaraq 6-3 hesablamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "6954691f-2812-4876-b293-fedb13997bd1",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-059",
+    "question": "974 - 549 fərqini tapın.",
+    "options": {
+      "A": "425",
+      "B": "415",
+      "C": "435",
+      "D": "445"
+    },
+    "correctAnswer": "A",
+    "explanation": "Azalanın onluqlarından 1 onluq ayrılır və təkliklərinə əlavə edilir: 14 - 9 = 5. Onluqlar: 6 - 4 = 2. Yüzlüklər: 9 - 5 = 4. 425 alınır.",
+    "distractor_diagnostics": {
+      "B": "Onluq mərtəbəsində çıxmada xəta",
+      "C": "Ayrılan onluğu onluqlar fərqindən çıxmamaq",
+      "D": "Toplama qarışığı"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "4bd689aa-0695-4125-b50b-e9ff4aab0a24",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-060",
+    "question": "885 - 448 fərqini tapın.",
+    "options": {
+      "A": "427",
+      "B": "447",
+      "C": "437",
+      "D": "457"
+    },
+    "correctAnswer": "C",
+    "explanation": "Onluq ayırmaqla fərqi tapırıq: 15-8=7, 7-4=3, 8-4=4. Cavab 437.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədə artıq vahid çıxmaq",
+      "B": "Onluq ayrılmasını unudaraq hesablamaq",
+      "D": "Təkliklərdə hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "acec3ccf-65b0-45ca-9c90-b63831c652f4",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-061",
+    "question": "776 - 339 fərqini tapın.",
+    "options": {
+      "A": "417",
+      "B": "427",
+      "C": "437",
+      "D": "447"
+    },
+    "correctAnswer": "C",
+    "explanation": "Onluqdan 1 vahid ayırırıq: 16-9=7, 6-3=3, 7-3=4. Fərq 437.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 2 vahid səhvi",
+      "B": "Onluqda 1 vahid az hesablamaq",
+      "D": "Onluq ayrılmasını unudub 7-3 hesablamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "db52606c-2a7d-4bb3-8f81-524c7419a9b4",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-062",
+    "question": "661 - 224 fərqini tapın.",
+    "options": {
+      "A": "437",
+      "B": "427",
+      "C": "447",
+      "D": "417"
+    },
+    "correctAnswer": "A",
+    "explanation": "Onluq ayrılır: 11-4=7, 5-2=3, 6-2=4. Fərq 437.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda çıxmada səhv",
+      "C": "Onluq ayrılmasını unudaraq 6-2 etmək",
+      "D": "Diqqətsizlik"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "9992b03c-6b09-4922-a4a9-fdc76f5a9adb",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-063",
+    "question": "552 - 115 fərqini tapın.",
+    "options": {
+      "A": "417",
+      "B": "427",
+      "C": "447",
+      "D": "437"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, azalanın onluqlarından 1 onluq ayrılır. 12-5=7, 4-1=3, 5-1=4. Cavab 437.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda çıxma səhvi",
+      "B": "Mexaniki hesablama xətası",
+      "C": "Onluq ayrılmasını tətbiq etməmək"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "39db7856-da20-4e2d-a5dc-3b2cf033e73c",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-064",
+    "question": "543 səhifə kitabdan 218 səhifə oxundu. Neçə səhifə qaldı?",
+    "options": {
+      "A": "325",
+      "B": "315",
+      "C": "335",
+      "D": "345"
+    },
+    "correctAnswer": "A",
+    "explanation": "Qalan səhifələrin tapılması üçün çıxma aparılır və onluq ayrılır: 543 - 218 = 325.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda xəta",
+      "C": "Onluq ayrılmasını unudaraq 4-1 etmək",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "86f25b6c-7a12-425f-ba3c-b64434ec7821",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-065",
+    "question": "654 km yoldan 329 km gedildi. Nə qədər yol qaldı?",
+    "options": {
+      "A": "315",
+      "B": "325",
+      "C": "335",
+      "D": "345"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, azalanın təkliklərindən 1 onluq ayrılır və çıxılır: 654 - 329 = 325 km.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv hesablama",
+      "C": "Ayrılmış onluğu onluqlar fərqində unudaraq hesablamaq",
+      "D": "Rəqəmləri ardıcıl səhv hesablamaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "ca19bffd-5bf5-4a1b-9ca6-010d4dce9669",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-066",
+    "question": "765 qutudan 438 qutu satıldı. Neçə qutu qaldı?",
+    "options": {
+      "A": "307",
+      "B": "317",
+      "C": "327",
+      "D": "337"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, azalanın təkliklərindən 1 onluq ayrılaraq çıxılır: 765 - 438 = 327 qutu.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 2 vahid səhvi",
+      "B": "Onluqda 1 vahid xətası",
+      "D": "Onluq ayrılmasını unudaraq 6-3 hesablamaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "4b29c18d-112b-45ea-b036-0dff09737be7",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-067",
+    "question": "876 kq almadan 549 kq satıldı. Nə qədər alma qaldı?",
+    "options": {
+      "A": "307",
+      "B": "317",
+      "C": "337",
+      "D": "327"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, 16-9=7, 6-4=2, 8-5=3. Qalan alma 327 kq-dır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda və yüzlüklərdə səhv",
+      "B": "Onluq hesablama xətası",
+      "C": "Onluq ayrılmasını tətbiq etməmək"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b727ab63-b4ca-4271-97a1-303e0efbade2",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-068",
+    "question": "987 manat pulun 659 manatı xərcləndi. Neçə manat qaldı?",
+    "options": {
+      "A": "308",
+      "B": "318",
+      "C": "338",
+      "D": "328"
+    },
+    "correctAnswer": "D",
+    "explanation": "Azalanın təkliklərindən 1 onluq ayrılır: 17-9=8. 7-5=2. 9-6=3. Qalan pul 328 manat.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv hesablama",
+      "B": "Onluq ayrılmasında xəta",
+      "C": "Onluq ayrılmasını unudaraq hesablamaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "ff157857-7220-42d4-866e-16ffbccff2b0",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-069",
+    "question": "432 litr sudan 115 litri içildi. Nə qədər su qaldı?",
+    "options": {
+      "A": "317",
+      "B": "307",
+      "C": "327",
+      "D": "337"
+    },
+    "correctAnswer": "A",
+    "explanation": "Azalanın təkliklərindən 1 onluq ayrılır: 12-5=7, 2-1=1, 4-1=3. Fərq 317.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda 1 vahid xətası",
+      "C": "Onluq ayrılmasını unudub 3-1 etmək",
+      "D": "Toplama əməli ilə qarışdırmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5fc26eb4-f7b6-4074-b924-f71f653457cd",
+    "passport_id": "03-004-0101-B1F02-anlama-01-070",
+    "question": "426 - 164 fərqini tapın.",
+    "options": {
+      "A": "252",
+      "B": "272",
+      "C": "262",
+      "D": "282"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən, azalanın onluqları çıxılanın onluqlarından kiçik olduqda, yüzlüklərdən 1 yüzlük ayrılır. 12-6=6. Nəticə 262.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda çıxma səhvi",
+      "B": "Yüzlükləri azaltmağı unutmaq",
+      "D": "Toplama tətbiqi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "f099a775-9e4b-431c-8dfe-dc9392a6fb47",
+    "passport_id": "03-004-0101-B1F02-anlama-01-071",
+    "question": "536 - 274 fərqini tapın.",
+    "options": {
+      "A": "262",
+      "B": "252",
+      "C": "272",
+      "D": "282"
+    },
+    "correctAnswer": "A",
+    "explanation": "Azalanın yüzlüklərindən 1 yüzlük ayrılır və 10 onluq kimi onluqlara əlavə edilir: 13-7=6. 4-2=2. Nəticə 262.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda hesablama səhvi",
+      "C": "Yüzlük ayrılmasını unudaraq hesablamaq",
+      "D": "Yüzlüklərdə toplama etmək"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5233c31c-1533-4bfa-93cb-df8ced3c0dc2",
+    "passport_id": "03-004-0101-B1F02-anlama-01-072",
+    "question": "647 - 385 fərqini tapın.",
+    "options": {
+      "A": "222",
+      "B": "242",
+      "C": "232",
+      "D": "262"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, 1 yüzlük ayrılaraq onluğa əlavə olunur. 14-8=6, 5-3=2. Nəticə: 262.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv xəta",
+      "B": "Onluqlarda 2 vahid xətası",
+      "C": "Yüzlüklərdə hesablama xətası"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "eef22609-123c-4831-bc16-c557e17d3524",
+    "passport_id": "03-004-0101-B1F02-anlama-01-073",
+    "question": "758 - 496 fərqini tapın.",
+    "options": {
+      "A": "262",
+      "B": "252",
+      "C": "272",
+      "D": "242"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlüklərdən 1 yüzlük ayrılır: 15-9=6 onluq. 6-4=2 yüzlük qalır. Cavab 262.",
+    "distractor_diagnostics": {
+      "B": "Onluqda çıxma xətası",
+      "C": "Yüzlük ayırmadan çıxma xətası",
+      "D": "Mexaniki xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e2cd24fb-41e8-40d2-8836-c1f90cee8568",
+    "passport_id": "03-004-0101-B1F02-anlama-01-074",
+    "question": "819 - 557 fərqini tapın.",
+    "options": {
+      "A": "252",
+      "B": "262",
+      "C": "272",
+      "D": "282"
+    },
+    "correctAnswer": "B",
+    "explanation": "Azalanın yüzlüklərindən 1 yüzlük ayrılıb 10 onluq kimi onluqlara əlavə edilir: 11-5=6. Yüzlüklər: 7-5=2. Nəticə: 262.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid səhv",
+      "C": "Yüzlük ayrılmasını nəzərə almamaq",
+      "D": "Toplama əməliyyatı səhvi"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "2d7d336a-4fcb-43dd-b7f5-9267ef1e628a",
+    "passport_id": "03-004-0101-B1F02-anlama-01-075",
+    "question": "928 - 665 fərqini tapın.",
+    "options": {
+      "A": "243",
+      "B": "253",
+      "C": "263",
+      "D": "273"
+    },
+    "correctAnswer": "C",
+    "explanation": "1 yüzlük ayrılır: 12-6=6. Yüzlüklər: 8-6=2. Təkliklər: 8-5=3. 263.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda xəta",
+      "B": "Onluqlarda 1 vahid xəta",
+      "D": "Yüzlük ayrılmasını unudub çıxmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "f12ddd9b-d6c1-4017-806b-e25e7052ce98",
+    "passport_id": "03-004-0101-B1F02-anlama-01-076",
+    "question": "314 - 152 fərqini tapın.",
+    "options": {
+      "A": "132",
+      "B": "142",
+      "C": "162",
+      "D": "172"
+    },
+    "correctAnswer": "C",
+    "explanation": "1 yüzlük ayrılır: 11-5=6 onluq. Yüzlüklər 2-1=1 yüzlük. Fərq 162.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda çıxma xətası",
+      "B": "Hesablama səhvi",
+      "D": "Yüzlükləri azaltmağı unutmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "f5724a23-c091-4238-8ec7-789c58f89a88",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-077",
+    "question": "835 - 372 fərqini tapın.",
+    "options": {
+      "A": "423",
+      "B": "433",
+      "C": "443",
+      "D": "463"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, azalanın onluqları kiçik olduqda yüzlük ayrılır. 13-7=6 onluq, 7-3=4 yüzlük. Nəticə: 463.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv",
+      "B": "Yüzlüklərdə hesablama səhvi",
+      "C": "Onluqlarda xəta"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "65eff490-3c3a-4820-8904-9b7b7434f99e",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-078",
+    "question": "746 - 483 fərqini tapın.",
+    "options": {
+      "A": "263",
+      "B": "253",
+      "C": "273",
+      "D": "243"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlükdən onluq ayrılır: 14-8=6, 6-4=2. Fərq 263-dür.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda çıxma səhvi",
+      "C": "Yüzlüyün azaldılmasını nəzərə almamaq",
+      "D": "Rəqəmlərin səhv köçürülməsi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "382ec773-07b9-4a1e-9b65-e8812511f10d",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-079",
+    "question": "957 - 594 fərqini tapın.",
+    "options": {
+      "A": "353",
+      "B": "363",
+      "C": "373",
+      "D": "383"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlüklərdən 1 yüzlük ayrılıb 10 onluq kimi əlavə edilir: 15-9=6, 8-5=3. 363 alınır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid xətası",
+      "C": "Yüzlüyün azaldılmaması",
+      "D": "Toplama tətbiq etmək"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "3efe562b-1a9a-44f2-b182-72e5f0155479",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-080",
+    "question": "868 - 495 fərqini tapın.",
+    "options": {
+      "A": "353",
+      "B": "363",
+      "C": "373",
+      "D": "383"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlüklərdən 1 vahid ayrılır: 16-9=7, 7-4=3. Fərq 373.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda xəta",
+      "B": "Hesablama səhvi",
+      "D": "Yüzlükləri azaltmadan hesablamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e2258223-c3ec-43f3-8a02-19aea2517dbb",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-081",
+    "question": "709 - 346 fərqini tapın.",
+    "options": {
+      "A": "333",
+      "B": "343",
+      "C": "353",
+      "D": "363"
+    },
+    "correctAnswer": "D",
+    "explanation": "Onluq 0 olduğu üçün yüzlükdən ayrılır: 10-4=6 onluq. 6-3=3 yüzlük. 363 alınır.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv",
+      "B": "Yüzlüklərdə əlavə səhv",
+      "C": "Onluqlarda xəta"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "586bba6a-109c-45d9-83af-c3b20a092172",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-082",
+    "question": "618 - 255 fərqini tapın.",
+    "options": {
+      "A": "343",
+      "B": "353",
+      "C": "373",
+      "D": "363"
+    },
+    "correctAnswer": "D",
+    "explanation": "Yüzlükdən 1 vahid ayrılır: 11-5=6 onluq. 5-2=3 yüzlük. 363-dür.",
+    "distractor_diagnostics": {
+      "A": "Onluq xətası",
+      "B": "Təklik xətası",
+      "C": "Yüzlükləri azaltmağı unutmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "10f7732d-2028-4931-afed-8655b37994f5",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-083",
+    "question": "527 - 164 fərqini tapın.",
+    "options": {
+      "A": "363",
+      "B": "353",
+      "C": "373",
+      "D": "343"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlüklərdən 1 yüzlük ayrılır: 12-6=6. 4-1=3. Nəticə 363.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda 1 vahid səhvi",
+      "C": "Yüzlüklərin azalmasını nəzərə almamaq",
+      "D": "Çıxma əvəzinə mexaniki səhv"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "7533aa26-4d0a-46c1-b74e-eb17708a230f",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-084",
+    "question": "Mağazadakı 625 kq kartofun 283 kq-ı satıldı. Neçə kq kartof qaldı?",
+    "options": {
+      "A": "332",
+      "B": "342",
+      "C": "352",
+      "D": "362"
+    },
+    "correctAnswer": "B",
+    "explanation": "Qalan kartofu tapmaq üçün çıxılır. Yüzlük ayrılır: 12-8=4. 5-2=3. Nəticə 342 kq.",
+    "distractor_diagnostics": {
+      "A": "Onluq səhvi",
+      "C": "Yüzlükdə ayrılmanı nəzərə almamaq",
+      "D": "Toplama əməliyyatı səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "ee71e93a-bb68-46aa-89a7-410ed1835d85",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-085",
+    "question": "736 manatın 394 manatı xərcləndi. Nə qədər pul qaldı?",
+    "options": {
+      "A": "322",
+      "B": "332",
+      "C": "342",
+      "D": "352"
+    },
+    "correctAnswer": "C",
+    "explanation": "Dərsliyə əsasən yüzlük ayrılır: 13-9=4. 6-3=3. Qalan pul 342 manatdır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv hesablama",
+      "B": "1 vahid xətası",
+      "D": "Yüzlükləri azaltmadan çıxma"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b8deca4f-1a0b-4f93-9213-09662ee086ea",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-086",
+    "question": "847 litr benzinin 595 litri işləndi. Nə qədər benzin qaldı?",
+    "options": {
+      "A": "222",
+      "B": "232",
+      "C": "242",
+      "D": "252"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə görə, 1 yüzlük onluqlara ayrılır: 14-9=5. 7-5=2. Nəticə: 252.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda və yüzlüklərdə hesab xətası",
+      "B": "2 vahid fərqi",
+      "C": "1 vahid fərqi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5e3c0adf-ecb2-4ad7-a861-18abb02265c3",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-087",
+    "question": "Bağdakı 958 ağacdan 686-sı meyvəsizdir. Meyvəli ağacların sayı neçədir?",
+    "options": {
+      "A": "232",
+      "B": "242",
+      "C": "252",
+      "D": "272"
+    },
+    "correctAnswer": "D",
+    "explanation": "Yüzlükdən 1 onluq ayrılır: 15-8=7 onluq, 8-6=2 yüzlük. Fərq 272.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda çıxma səhvi",
+      "B": "Mexaniki hesab xətası",
+      "C": "Yüzlük ayrılmasını unudaraq səhv rəqəm"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "9cfec88f-6a57-469a-a8d6-552a387a509d",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-088",
+    "question": "Kənddəki 519 adamdan 267-si qadındır. Kişilərin sayı neçədir?",
+    "options": {
+      "A": "252",
+      "B": "242",
+      "C": "262",
+      "D": "232"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlük ayrılır: 11-6=5 onluq. 4-2=2 yüzlük. Nəticə: 252.",
+    "distractor_diagnostics": {
+      "B": "Onluqda 1 vahid az",
+      "C": "Yüzlük ayrılmasını nəzərə almamaq",
+      "D": "Onluqda 2 vahid az"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "02757abd-67d4-41da-902d-9c118f89ea69",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-089",
+    "question": "428 m yolun 175 m-i gedildi. Qalan yol neçə metrdir?",
+    "options": {
+      "A": "243",
+      "B": "253",
+      "C": "263",
+      "D": "273"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, yüzlüklərdən ayrılma baş verir: 12-7=5 onluq. 3-1=2 yüzlük. Nəticə 253.",
+    "distractor_diagnostics": {
+      "A": "Onluqda hesab səhvi",
+      "C": "Yüzlüyü kiçiltməmək",
+      "D": "Toplama ilə qarışdırmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e5fc1705-0cba-49aa-8f62-24cc92fd534e",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-090",
+    "question": "837 kq qənddən 485 kq-ı satıldı. Neçə kq qənd qaldı?",
+    "options": {
+      "A": "332",
+      "B": "342",
+      "C": "352",
+      "D": "362"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlüklərdən 1 vahid ayrılır: 13-8=5 onluq. 7-4=3 yüzlük. Qalan qənd 352 kq-dır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 2 vahid səhv",
+      "B": "Onluqda 1 vahid az",
+      "D": "Yüzlük azalmasını unutmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d74f2459-3fba-4b96-9903-47577a85d243",
+    "passport_id": "03-004-0101-B1F02-anlama-01-091",
+    "question": "432 - 158 fərqini tapın.",
+    "options": {
+      "A": "244",
+      "B": "254",
+      "C": "264",
+      "D": "274"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, həm təkliklər həm onluqlar kiçik olduqda azalandan 1 onluq və 1 yüzlük ayrılır. 12-8=4, 12-5=7, 3-1=2. Fərq 274.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində səhv",
+      "B": "Onluq və yüzlük ayırmalarında səhv",
+      "C": "Onluq ayrılmasını yadda saxlamamaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "78ab6ac5-46a2-44af-9654-4128190b1027",
+    "passport_id": "03-004-0101-B1F02-anlama-01-092",
+    "question": "543 - 269 fərqini tapın.",
+    "options": {
+      "A": "234",
+      "B": "244",
+      "C": "254",
+      "D": "274"
+    },
+    "correctAnswer": "D",
+    "explanation": "Həm 1 onluq həm 1 yüzlük ayrılır. 13-9=4, 13-6=7, 4-2=2. Fərq: 274.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesablanma səhvi",
+      "B": "Yadda saxlama qaydasını qarışdırmaq",
+      "C": "Rəqəmlərin mexaniki yazılışı"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d1831c33-83a1-447f-a069-c363bf1be9d0",
+    "passport_id": "03-004-0101-B1F02-anlama-01-093",
+    "question": "654 - 375 fərqini tapın.",
+    "options": {
+      "A": "279",
+      "B": "269",
+      "C": "289",
+      "D": "259"
+    },
+    "correctAnswer": "A",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 14-5=9, 14-7=7, 5-3=2. Nəticə: 279.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda 1 vahid əskik hesab",
+      "C": "Yüzlükləri azaltmağı unutmaq",
+      "D": "Mexaniki xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "c56f5858-85b9-4ad4-89d1-5504860ebc91",
+    "passport_id": "03-004-0101-B1F02-anlama-01-094",
+    "question": "765 - 487 fərqini tapın.",
+    "options": {
+      "A": "268",
+      "B": "278",
+      "C": "288",
+      "D": "258"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, 1 onluq ayırıb təkliklərə, 1 yüzlük ayırıb onluqlara əlavə edilir. 15-7=8. 15-8=7. 6-4=2. 278.",
+    "distractor_diagnostics": {
+      "A": "Onluqda çıxma xətası",
+      "C": "Yüzlük azaldılmasını nəzərə almamaq",
+      "D": "Onluqlarda iki vahid əskiklik"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "54fbc7ea-6312-48f6-8457-0e8e32bcbe61",
+    "passport_id": "03-004-0101-B1F02-anlama-01-095",
+    "question": "876 - 598 fərqini tapın.",
+    "options": {
+      "A": "258",
+      "B": "268",
+      "C": "278",
+      "D": "288"
+    },
+    "correctAnswer": "C",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 16-8=8, 16-9=7, 7-5=2. Nəticə: 278.",
+    "distractor_diagnostics": {
+      "A": "Hesablama səhvi",
+      "B": "Onluq mərtəbəsində çıxma xətası",
+      "D": "Yüzlük azalmasını unutmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "172558f8-7802-44fe-9caa-1f201ac4bc68",
+    "passport_id": "03-004-0101-B1F02-anlama-01-096",
+    "question": "987 - 699 fərqini tapın.",
+    "options": {
+      "A": "258",
+      "B": "268",
+      "C": "278",
+      "D": "288"
+    },
+    "correctAnswer": "D",
+    "explanation": "1 onluq və 1 yüzlük ayrılır. 17-9=8. 17-9=8. 8-6=2. Fərq: 288.",
+    "distractor_diagnostics": {
+      "A": "Onluqda hesablama səhvi",
+      "B": "Yadda saxlama qaydasında xəta",
+      "C": "Onluqların çıxılmasında səhv"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "2da72d50-4dc7-4e55-9a10-5007865ace11",
+    "passport_id": "03-004-0101-B1F02-anlama-01-097",
+    "question": "321 - 145 fərqini tapın.",
+    "options": {
+      "A": "136",
+      "B": "146",
+      "C": "156",
+      "D": "176"
+    },
+    "correctAnswer": "D",
+    "explanation": "1 onluq ayırılır: 11-5=6. Sonra 1 yüzlük ayırılır: 11-4=7. Yüzlüklər: 2-1=1. 176.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 4 vahid xətası",
+      "B": "Onluq mərtəbəsində böyük fərq",
+      "C": "Onluqlarda çıxma xətası"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "20f5197e-331e-4e1e-bcdf-2d43cd286894",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-098",
+    "question": "823 - 356 fərqini tapın.",
+    "options": {
+      "A": "467",
+      "B": "457",
+      "C": "477",
+      "D": "447"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən, 1 onluq və 1 yüzlük ayrılır: 13-6=7. 11-5=6. 7-3=4. Cavab 467.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda 1 vahid xətası",
+      "C": "Yüzlükləri azaltmağı unutmaq",
+      "D": "Onluq mərtəbəsində çıxma səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "f0343549-b474-4834-8f09-947cdadf338e",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-099",
+    "question": "734 - 468 fərqini tapın.",
+    "options": {
+      "A": "256",
+      "B": "266",
+      "C": "276",
+      "D": "246"
+    },
+    "correctAnswer": "B",
+    "explanation": "Həm 1 onluq, həm 1 yüzlük ayrılır. 14-8=6, 12-6=6, 6-4=2. Fərq: 266.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid az",
+      "C": "Yüzlükləri azaldarkən onluq yaddan çıxması",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b7e47d02-c05f-45fe-8d4a-7484abeafac2",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-100",
+    "question": "945 - 579 fərqini tapın.",
+    "options": {
+      "A": "346",
+      "B": "356",
+      "C": "366",
+      "D": "376"
+    },
+    "correctAnswer": "C",
+    "explanation": "1 onluq və 1 yüzlük ayrılır. 15-9=6, 13-7=6, 8-5=3. Nəticə: 366.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesablama xətası",
+      "B": "Onluqlarda 1 vahid fərq",
+      "D": "Yüzlüklərdə ayırmanı unudaraq hesablamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "6d10119b-66a6-496e-8624-f116f0ccbb18",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-101",
+    "question": "856 - 489 fərqini tapın.",
+    "options": {
+      "A": "347",
+      "B": "357",
+      "C": "377",
+      "D": "367"
+    },
+    "correctAnswer": "D",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 16-9=7, 14-8=6, 7-4=3. Fərq: 367.",
+    "distractor_diagnostics": {
+      "A": "Onluqda xəta",
+      "B": "Onluqda 1 vahid xəta",
+      "C": "Yüzlükləri azaltmağı unutmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "c14de84e-bc92-4646-9d14-82d93b5c939a",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-102",
+    "question": "712 - 345 fərqini tapın.",
+    "options": {
+      "A": "347",
+      "B": "357",
+      "C": "377",
+      "D": "367"
+    },
+    "correctAnswer": "D",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 12-5=7, 10-4=6, 6-3=3. Cavab: 367.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv",
+      "B": "Onluqlarda 1 vahid xəta",
+      "C": "Yüzlükləri azaltmadan çıxmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "358fe4f1-1620-4e18-9ee5-dd168224ac3d",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-103",
+    "question": "623 - 257 fərqini tapın.",
+    "options": {
+      "A": "366",
+      "B": "356",
+      "C": "376",
+      "D": "346"
+    },
+    "correctAnswer": "A",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 13-7=6, 11-5=6, 5-2=3. Nəticə: 366.",
+    "distractor_diagnostics": {
+      "B": "Onluq mərtəbəsində çıxma səhvi",
+      "C": "Yüzlüklərin ayrılmaması",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "33e459ff-25b4-49e0-8044-d3b9cb0f4012",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-104",
+    "question": "534 - 168 fərqini tapın.",
+    "options": {
+      "A": "356",
+      "B": "366",
+      "C": "376",
+      "D": "346"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 14-8=6, 12-6=6, 4-1=3. Cavab 366.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədə hesablama xətası",
+      "C": "Yüzlükləri azaltmağı unutmaq",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "03c23952-aaa6-4041-a0e8-5a679a2c7946",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-105",
+    "question": "624 səhifə kitabın 259 səhifəsi oxundu. Neçə səhifə oxunmamış qaldı?",
+    "options": {
+      "A": "345",
+      "B": "355",
+      "C": "365",
+      "D": "375"
+    },
+    "correctAnswer": "C",
+    "explanation": "Həm təkliklər, həm də onluqlar çıxılandan kiçik olduğu üçün 1 onluq və 1 yüzlük ayrılır. 624 - 259 = 365.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda böyük hesablama xətası",
+      "B": "Onluqlarda 1 vahid fərq",
+      "D": "Yüzlük azalmasını unutmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "787ca16f-1175-4d7a-af3f-55734563a62f",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-106",
+    "question": "735 kq kartofdan 368 kq satıldı. Nə qədər kartof qaldı?",
+    "options": {
+      "A": "367",
+      "B": "357",
+      "C": "377",
+      "D": "347"
+    },
+    "correctAnswer": "A",
+    "explanation": "Dərsliyə əsasən, 1 onluq və 1 yüzlük ayrılır: 15-8=7, 12-6=6, 6-3=3. Qalan kartof 367 kq.",
+    "distractor_diagnostics": {
+      "B": "Onluqda çıxma xətası",
+      "C": "Yüzlükləri azaltmağı unutmaq",
+      "D": "Onluqlarda 2 vahid xəta"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "771e1645-a7b6-419b-a0d3-3563a35a6b0c",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-107",
+    "question": "846 km yoldan 479 km gedildi. Nə qədər yol qaldı?",
+    "options": {
+      "A": "357",
+      "B": "367",
+      "C": "377",
+      "D": "347"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlük və onluq ayrılır: 16-9=7, 13-7=6, 7-4=3. Qalan yol 367 km.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesablama xətası",
+      "C": "Yüzlüklərdə ayırmanı nəzərə almamaq",
+      "D": "Onluqlarda 2 vahid səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "dcfd6bc9-4b68-466a-bc93-b715a31b4009",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-108",
+    "question": "957 adamdan 588-i qadındır. Kişilərin sayı neçədir?",
+    "options": {
+      "A": "359",
+      "B": "379",
+      "C": "369",
+      "D": "349"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlük və onluq ayrılaraq hesablanır: 17-8=9, 14-8=6, 8-5=3. Nəticə: 369.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda çıxma səhvi",
+      "B": "Yüzlükləri azaltmadan hesablamaq",
+      "D": "Onluqlarda xəta"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "6d9e03d3-8f0a-42cd-9426-ed1f08bd6e59",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-109",
+    "question": "412 manat pulun 145 manatı xərcləndi. Neçə manat qaldı?",
+    "options": {
+      "A": "267",
+      "B": "257",
+      "C": "277",
+      "D": "247"
+    },
+    "correctAnswer": "A",
+    "explanation": "1 onluq və 1 yüzlük ayrılır. 12-5=7. 10-4=6. 3-1=2. Fərq 267 manat.",
+    "distractor_diagnostics": {
+      "B": "Onluq mərtəbəsində çıxma xətası",
+      "C": "Yüzlükləri azaldarkən səhv",
+      "D": "Çıxma əməliyyatında ardıcıl səhv"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "eec18251-14ab-45e0-b6aa-453086eb293a",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-110",
+    "question": "523 litr südün 256 litri satıldı. Nə qədər süd qaldı?",
+    "options": {
+      "A": "257",
+      "B": "267",
+      "C": "277",
+      "D": "247"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 onluq və 1 yüzlük ayrılır: 13-6=7, 11-5=6, 4-2=2. Qalan süd 267 litrdir.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab xətası",
+      "C": "Yüzlüklərdə ayırmanı yaddan çıxartmaq",
+      "D": "Hesabda fərqin böyüdülməsi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d0e65306-03c0-4382-b13c-cc2c638e8334",
+    "passport_id": "03-004-0101-B1F02-anlama-01-111",
+    "question": "405 - 128 fərqini tapın.",
+    "options": {
+      "A": "267",
+      "B": "277",
+      "C": "287",
+      "D": "257"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, azalanın onluqları sıfır olduqda əvvəlcə yüzlüklərdən 1 yüzlük ayrılıb onluqlara əlavə edilir, sonra oradan 1 onluq təkliklərə verilir. 15-8=7, 9-2=7, 3-1=2. Fərq 277.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda səhv hesablama",
+      "C": "Yüzlükləri azaldarkən yaranan onluğu səhv hesablamaq",
+      "D": "Onluqlarda 2 vahid xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e9bd5536-6089-4b68-b7c1-ddc5c4e38e68",
+    "passport_id": "03-004-0101-B1F02-anlama-01-112",
+    "question": "506 - 239 fərqini tapın.",
+    "options": {
+      "A": "257",
+      "B": "267",
+      "C": "277",
+      "D": "287"
+    },
+    "correctAnswer": "B",
+    "explanation": "Onluqlar 0 olduğu üçün yüzlükdən ayrılır: 16-9=7, 9-3=6, 4-2=2. Fərq 267.",
+    "distractor_diagnostics": {
+      "A": "Onluqları səhv çıxmaq",
+      "C": "9-dan yox 10-dan çıxmaq",
+      "D": "Yüzlükləri azaltmağı unutmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e45db620-edcd-4c86-8a71-12c8b982baef",
+    "passport_id": "03-004-0101-B1F02-anlama-01-113",
+    "question": "607 - 348 fərqini tapın.",
+    "options": {
+      "A": "259",
+      "B": "249",
+      "C": "269",
+      "D": "239"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlük ayrılır: 17-8=9, 9-4=5, 5-3=2. Fərq: 259.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda hesab xətası",
+      "C": "10-dan çıxıb onluq ayırmamaq",
+      "D": "Mexaniki xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e48b8b9b-8ce4-43cb-b097-f584e11cd7a1",
+    "passport_id": "03-004-0101-B1F02-anlama-01-114",
+    "question": "708 - 459 fərqini tapın.",
+    "options": {
+      "A": "239",
+      "B": "249",
+      "C": "259",
+      "D": "269"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 yüzlükdən onluqlara və təkliklərə ayrılır: 18-9=9, 9-5=4, 6-4=2. Fərq 249.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid xətası",
+      "C": "Onluq mərtəbəsini azaltmamaq",
+      "D": "Yüzlükləri azaldarkən xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "d0408560-6dd1-447a-aba1-28cf085b34cc",
+    "passport_id": "03-004-0101-B1F02-anlama-01-115",
+    "question": "809 - 568 fərqini tapın.",
+    "options": {
+      "A": "231",
+      "B": "251",
+      "C": "241",
+      "D": "261"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlük ayrılır: 9-8=1, 10-6=4, 7-5=2. Nəticə: 241.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid əskik hesab",
+      "B": "Yüzlüklərdən ayrılanı unudaraq çıxmaq",
+      "D": "Onluqlarda artıq hesab"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e6a147e8-b80c-4573-a62c-806950293db2",
+    "passport_id": "03-004-0101-B1F02-anlama-01-116",
+    "question": "901 - 674 fərqini tapın.",
+    "options": {
+      "A": "217",
+      "B": "227",
+      "C": "237",
+      "D": "247"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlükdən ayrılır: 11-4=7, 9-7=2, 8-6=2. Fərq: 227.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab səhvi",
+      "C": "Onluq mərtəbəsini azaltmamaq",
+      "D": "Yüzlükləri səhv çıxmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "ab670868-b710-449e-b956-2dbb7edefb06",
+    "passport_id": "03-004-0101-B1F02-anlama-01-117",
+    "question": "302 - 145 fərqini tapın.",
+    "options": {
+      "A": "147",
+      "B": "167",
+      "C": "157",
+      "D": "177"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlükdən ayrılır: 12-5=7, 9-4=5, 2-1=1. 157.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab xətası",
+      "B": "Onluq mərtəbəsini azaltmamaq",
+      "D": "Yüzlükləri səhv köçürmək"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "76bd37f1-739c-45a9-8395-5806440263f0",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-118",
+    "question": "804 - 356 fərqini tapın.",
+    "options": {
+      "A": "438",
+      "B": "448",
+      "C": "458",
+      "D": "468"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 yüzlük ayrılır: 14-6=8. Onluqlarda 9 qalır: 9-5=4. Yüzlüklərdə 7-3=4. Cavab 448.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab xətası",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Yüzlükləri azaltmadan çıxmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "bb6a6fb0-9c16-4af5-b3e6-ee30cc7c5057",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-119",
+    "question": "703 - 468 fərqini tapın.",
+    "options": {
+      "A": "225",
+      "B": "235",
+      "C": "245",
+      "D": "255"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlükdən ayrılır: 13-8=5, 9-6=3, 6-4=2. Fərq: 235.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbədə hesablama xətası",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Yüzlükləri azaltmamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "00a89d3d-c124-4f81-9b1b-0ed7f44d576a",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-120",
+    "question": "905 - 579 fərqini tapın.",
+    "options": {
+      "A": "316",
+      "B": "326",
+      "C": "336",
+      "D": "346"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlükdən ayrılır: 15-9=6, 9-7=2, 8-5=3. 326 alınır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesablama xətası",
+      "C": "10-dan çıxıb onluq mərtəbəni nəzərə almamaq",
+      "D": "Yüzlükləri yaddan çıxarmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "c1d428de-91b4-4b53-ae3f-365287f311c1",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-121",
+    "question": "806 - 489 fərqini tapın.",
+    "options": {
+      "A": "307",
+      "B": "317",
+      "C": "327",
+      "D": "337"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlüklərdən onluğa və təkliklərə ayrılır: 16-9=7, 9-8=1, 7-4=3. Fərq: 317.",
+    "distractor_diagnostics": {
+      "A": "Onluqda çıxma xətası",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "eec0f61f-1327-4a0b-9df9-59eb4a4a5009",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-122",
+    "question": "702 - 345 fərqini tapın.",
+    "options": {
+      "A": "357",
+      "B": "347",
+      "C": "367",
+      "D": "377"
+    },
+    "correctAnswer": "A",
+    "explanation": "Yüzlüklərdən 1 vahid ayrılır: 12-5=7, 9-4=5, 6-3=3. Cavab 357.",
+    "distractor_diagnostics": {
+      "B": "Onluqlarda hesablama xətası",
+      "C": "10-dan çıxıb onluq mərtəbəni nəzərə almamaq",
+      "D": "Yüzlükləri azaltmadan çıxmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "0b3dc5d8-c64d-4952-b8ec-f5bc8fc9a224",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-123",
+    "question": "603 - 257 fərqini tapın.",
+    "options": {
+      "A": "336",
+      "B": "346",
+      "C": "356",
+      "D": "366"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlük ayrılır: 13-7=6, 9-5=4, 5-2=3. Nəticə: 346.",
+    "distractor_diagnostics": {
+      "A": "Onluq mərtəbəsində çıxma xətası",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Yüzlüklərdə ayırmanı nəzərə almamaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "df2020e6-a812-4d2b-b4a1-0985552b781e",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-124",
+    "question": "504 - 168 fərqini tapın.",
+    "options": {
+      "A": "326",
+      "B": "336",
+      "C": "346",
+      "D": "356"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 yüzlük ayrılır. 14-8=6, 9-6=3, 4-1=3. Cavab 336.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab xətası",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Yüzlükləri azaltmağı unutmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "a1ecf89d-077d-4113-9092-d6ffb475ed88",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-125",
+    "question": "405 səhifə kitabdan 178 səhifə oxundu. Neçə səhifə qaldı?",
+    "options": {
+      "A": "217",
+      "B": "227",
+      "C": "237",
+      "D": "247"
+    },
+    "correctAnswer": "B",
+    "explanation": "Qalan səhifələri tapmaq üçün fərq hesablanır. 15-8=7, 9-7=2, 3-1=2. Fərq: 227.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda hesab səhvi",
+      "C": "9 əvəzinə 10-dan çıxmaq",
+      "D": "Yüzlükləri azaltmadan hesablamaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e21147db-1153-4876-b605-e9df25f0535e",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-126",
+    "question": "506 litr sudan 289 litri içildi. Nə qədər su qaldı?",
+    "options": {
+      "A": "227",
+      "B": "217",
+      "C": "207",
+      "D": "237"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, yüzlük ayrılır. 16-9=7, 9-8=1, 4-2=2. Qalan su 217 litrdir.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid səhv",
+      "C": "Onluqlarda 1 vahid az",
+      "D": "Yüzlük azalmasını unutmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b304677d-f4d0-4de2-bc51-0a69a8da2de9",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-127",
+    "question": "607 kq almadan 348 kq-ı satıldı. Neçə kq alma qaldı?",
+    "options": {
+      "A": "269",
+      "B": "249",
+      "C": "259",
+      "D": "239"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlüklərdən 1 vahid ayrılır: 17-8=9, 9-4=5, 5-3=2. Qalan alma 259 kq-dır.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid xəta",
+      "B": "Yüzlükdən 2 onluq ayrılması səhvi",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e818816c-0e2d-4f38-bc02-b2fdb8d4bb98",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-128",
+    "question": "708 manat pulun 459 manatı xərcləndi. Neçə manat qaldı?",
+    "options": {
+      "A": "259",
+      "B": "239",
+      "C": "269",
+      "D": "249"
+    },
+    "correctAnswer": "D",
+    "explanation": "Dərsliyə əsasən, 1 yüzlük ayrılır: 18-9=9, 9-5=4, 6-4=2. Qalan pul 249 manat.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda 1 vahid səhv",
+      "B": "Onluqlarda əlavə çıxma xətası",
+      "C": "Yüzlükləri azaltmadan çıxmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "ff916053-ec52-4752-9f37-124b810d7a6e",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-129",
+    "question": "809 ağacdan 568-i kəsildi. Neçə ağac qaldı?",
+    "options": {
+      "A": "231",
+      "B": "251",
+      "C": "241",
+      "D": "261"
+    },
+    "correctAnswer": "C",
+    "explanation": "Yüzlük ayrılır. 9-8=1. 10-6=4. 7-5=2. Qalan ağac 241.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda xəta",
+      "B": "Onluqlarda əksinə əlavə",
+      "D": "Yüzlüklərdə ayırmanı yadda saxlamamaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "eecb8f41-a6cd-4d82-8c17-0ad0ddbc6f82",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-130",
+    "question": "901 qutudan 674-ü satıldı. Neçə qutu qaldı?",
+    "options": {
+      "A": "217",
+      "B": "227",
+      "C": "237",
+      "D": "247"
+    },
+    "correctAnswer": "B",
+    "explanation": "Yüzlük ayrılaraq hesablanır: 11-4=7, 9-7=2, 8-6=2. Fərq: 227 qutu.",
+    "distractor_diagnostics": {
+      "A": "Onluqlarda xəta",
+      "C": "Onluq mərtəbəsini azaltmamaq",
+      "D": "Hesablama səhvi"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Üçrəqəmli ədədlərin çıxılması (sıfır olan halda)",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5fa236d6-0c9f-4db4-a95c-9c716298533c",
+    "passport_id": "03-004-0101-B1F02-anlama-01-131",
+    "question": "Əli 5 manat verdi və 2 manat 40 qəpiklik dondurma aldı. Nə qədər qalıq qaytarılmalıdır?",
+    "options": {
+      "A": "2 manat 50 qəpik",
+      "B": "2 manat 60 qəpik",
+      "C": "3 manat 60 qəpik",
+      "D": "3 manat 40 qəpik"
+    },
+    "correctAnswer": "B",
+    "explanation": "Dərsliyə əsasən, 1 manat 100 qəpik kimi xırdalanır: 4 manat 100 qəpik - 2 manat 40 qəpik = 2 manat 60 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Qəpiklərdə hesab səhvi",
+      "C": "Manat mərtəbəsini azaltmamaq",
+      "D": "Sadəcə qəpikləri yazmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "31bfa23b-0e54-47b1-91d4-839f9b5c2df0",
+    "passport_id": "03-004-0101-B1F02-anlama-01-132",
+    "question": "Aysel 10 manat verdi və 4 manat 30 qəpiklik kitab aldı. Nə qədər qalıq qaytarılmalıdır?",
+    "options": {
+      "A": "6 manat 70 qəpik",
+      "B": "5 manat 30 qəpik",
+      "C": "5 manat 70 qəpik",
+      "D": "6 manat 30 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "10 manat = 9 manat 100 qəpik. 9 manat 100 qəpik - 4 manat 30 qəpik = 5 manat 70 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatdan 1 vahid xırdalamamaq",
+      "B": "Qəpikləri 100-dən çıxmamaq",
+      "D": "Hesab xətası"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "bd0a32ad-d713-43ef-b922-a98cdb930b5d",
+    "passport_id": "03-004-0101-B1F02-anlama-01-133",
+    "question": "Cavid 20 manat verdi və 12 manat 50 qəpiklik oyuncaq aldı. Nə qədər qalıq qaytarılmalıdır?",
+    "options": {
+      "A": "8 manat 50 qəpik",
+      "B": "7 manat 50 qəpik",
+      "C": "7 manat",
+      "D": "8 manat"
+    },
+    "correctAnswer": "B",
+    "explanation": "20 manatı 19 manat 100 qəpik edib 12 manat 50 qəpik çıxırıq: 7 manat 50 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalayanda yadda saxlamamaq",
+      "C": "Qəpiyi unudaraq yalnız manatları çıxmaq",
+      "D": "Qəpikləri yuvarlaqlaşdırmaq"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "1894d0c9-94b1-4f9e-bc43-26154628ee3f",
+    "passport_id": "03-004-0101-B1F02-anlama-01-134",
+    "question": "Nərmin 50 manat verdi və 35 manat 20 qəpiklik paltar aldı. Nə qədər qalıq qaytarılmalıdır?",
+    "options": {
+      "A": "15 manat 80 qəpik",
+      "B": "14 manat 20 qəpik",
+      "C": "14 manat 80 qəpik",
+      "D": "15 manat 20 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "50 manat = 49 manat 100 qəpik. Bundan 35 manat 20 qəpik çıxılır: 14 manat 80 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdaladığını unutmaq",
+      "B": "Qəpiyi 100-dən yox, elə 20 kimi saxlamaq",
+      "D": "Mexaniki xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5bd45e2d-327c-473d-9d41-e94d80a13d7e",
+    "passport_id": "03-004-0101-B1F02-anlama-01-135",
+    "question": "Orxan 100 manat verdi və 78 manat 90 qəpiklik velosiped aldı. Nə qədər qalıq qaytarılmalıdır?",
+    "options": {
+      "A": "22 manat 10 qəpik",
+      "B": "21 manat 90 qəpik",
+      "C": "21 manat 10 qəpik",
+      "D": "22 manat 90 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "100 manatı 99 manat 100 qəpik edib 78 manat 90 qəpik çıxırıq. Qalıq 21 manat 10 qəpikdir.",
+    "distractor_diagnostics": {
+      "A": "Manatda 1 vahid xətası",
+      "B": "Qəpik hesablamasında səhv",
+      "D": "Hər ikisində mexaniki xəta"
+    },
+    "difficulty": "Sadə",
+    "bloom_level": "Xatırlama",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e43b1772-23f2-4521-8840-7ecdfd556c47",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-136",
+    "question": "3 manat 50 qəpiklik şokolad və 1 manat 20 qəpiklik su aldınız. 5 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "40 qəpik",
+      "B": "20 qəpik",
+      "C": "30 qəpik",
+      "D": "50 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "Xərc: 3 manat 50 qəpik + 1 manat 20 qəpik = 4 manat 70 qəpik. Qalıq: 5 manat (4 manat 100 qəpik) - 4 manat 70 qəpik = 30 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Toplama və çıxmada hesablama səhvi",
+      "B": "Qəpiklərin fərqində xəta",
+      "D": "Mexaniki xəta"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "18fba814-afb5-4f4d-ae02-0e9e1c2b53bd",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-137",
+    "question": "6 manat 40 qəpiklik dəftər və 2 manat 10 qəpiklik qələm aldınız. 10 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "2 manat 50 qəpik",
+      "B": "1 manat 40 qəpik",
+      "C": "1 manat 50 qəpik",
+      "D": "1 manat 60 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "Xərc: 6m 40q + 2m 10q = 8 manat 50 qəpik. Qalıq: 10 manat (9m 100q) - 8m 50q = 1 manat 50 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manat xırdalanmasını nəzərə almamaq",
+      "B": "Qəpiyi səhv çıxmaq",
+      "D": "Toplamada səhv"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "1283cdcf-b5ce-4927-a068-07202390a07d",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-138",
+    "question": "15 manat 30 qəpiklik çanta və 4 manat 50 qəpiklik boya aldınız. 20 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "10 qəpik",
+      "B": "30 qəpik",
+      "C": "40 qəpik",
+      "D": "20 qəpik"
+    },
+    "correctAnswer": "D",
+    "explanation": "Xərc: 15m 30q + 4m 50q = 19 manat 80 qəpik. 20 manatdan (19m 100q) 19m 80q çıxdıqda 20 qəpik qalır.",
+    "distractor_diagnostics": {
+      "A": "Hesablama səhvi",
+      "B": "Qəpiklərin fərqində xəta",
+      "C": "Toplamada mexaniki səhv"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "761c4f74-6f81-4209-a1b7-a309e02c61ce",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-139",
+    "question": "25 manat 80 qəpiklik ayaqqabı və 12 manat 10 qəpiklik corab aldınız. 50 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "13 manat 10 qəpik",
+      "B": "12 manat 10 qəpik",
+      "C": "12 manat 20 qəpik",
+      "D": "11 manat 10 qəpik"
+    },
+    "correctAnswer": "B",
+    "explanation": "Cəmi xərc 37 manat 90 qəpikdir. 50 manatdan (49m 100q) 37m 90q çıxılır: 12 manat 10 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatın ayrılmasını unudaraq səhv",
+      "C": "Qəpik hesablamasında xəta",
+      "D": "Manatda 1 vahid xətası"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "5cd8f9b9-d379-4d69-b57d-41ddb4bdce2e",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-140",
+    "question": "65 manat 50 qəpiklik gödəkçə və 18 manat 30 qəpiklik papaq aldınız. 100 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "17 manat 20 qəpik",
+      "B": "15 manat 20 qəpik",
+      "C": "16 manat 20 qəpik",
+      "D": "16 manat 80 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "Cəmi xərc 83 manat 80 qəpik. 100 manat (99m 100q) - 83m 80q = 16 manat 20 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamamaq",
+      "B": "Toplamada səhv",
+      "D": "Qəpiyi səhv çıxmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e93ab634-c782-4467-bcaf-1d4e2297eb09",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-141",
+    "question": "Məktəbli çantası 24 manat 60 qəpikdir. Sizin 30 manatınız var. Çantanı aldıqdan sonra nə qədər pulunuz qalacaq?",
+    "options": {
+      "A": "6 manat 40 qəpik",
+      "B": "5 manat 40 qəpik",
+      "C": "5 manat 60 qəpik",
+      "D": "4 manat 40 qəpik"
+    },
+    "correctAnswer": "B",
+    "explanation": "30 manatı 29 manat 100 qəpik kimi yazıb 24 manat 60 qəpiyi çıxırıq: 5 manat 40 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamağı unudaraq",
+      "C": "Qəpiyi olduğu kimi yazmaq",
+      "D": "Manatda hesablama səhvi"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "3139de6d-d790-44ed-baec-f04c6e93eb7d",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-142",
+    "question": "1 kiloqram ət 14 manat 80 qəpikdir. 20 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "6 manat 20 qəpik",
+      "B": "5 manat 80 qəpik",
+      "C": "5 manat 20 qəpik",
+      "D": "4 manat 20 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "20 manatdan (19m 100q) 14 manat 80 qəpik çıxırıq. Fərq 5 manat 20 qəpikdir.",
+    "distractor_diagnostics": {
+      "A": "Manatdan 1 vahid xırdalamamaq",
+      "B": "Qəpiklərin fərqində xəta",
+      "D": "Manatda çıxma xətası"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "8432b4b7-8ca1-4256-acde-b7157849e793",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-143",
+    "question": "Kino bileti 7 manat 50 qəpikdir. 10 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "3 manat 50 qəpik",
+      "B": "2 manat 50 qəpik",
+      "C": "2 manat",
+      "D": "3 manat"
+    },
+    "correctAnswer": "B",
+    "explanation": "10 manatı 9 manat 100 qəpik şəklində yazaraq hesablanır: 9m 100q - 7m 50q = 2 manat 50 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamamaq",
+      "C": "Qəpikləri nəzərə almamaq",
+      "D": "Yuvarlaqlaşdırmaq"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "e2ba34cb-cc17-48f5-937d-c20e408ecbb4",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-144",
+    "question": "Muzeyə giriş 3 manat 20 qəpikdir. 5 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "2 manat 80 qəpik",
+      "B": "1 manat 20 qəpik",
+      "C": "2 manat 20 qəpik",
+      "D": "1 manat 80 qəpik"
+    },
+    "correctAnswer": "D",
+    "explanation": "5 manat (4m 100q) - 3 manat 20 qəpik = 1 manat 80 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manat hissəsində səhv",
+      "B": "100-dən 20 çıxmamaq",
+      "C": "Mexaniki xəta"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "4020a109-c1eb-4752-9ba6-cd66ba2b44dd",
+    "passport_id": "03-004-0101-B1F02-tətbiq-03-145",
+    "question": "Avtobus bileti 40 qəpikdir. 1 manat verdiniz. Qalıq nə qədərdir?",
+    "options": {
+      "A": "50 qəpik",
+      "B": "60 qəpik",
+      "C": "40 qəpik",
+      "D": "70 qəpik"
+    },
+    "correctAnswer": "B",
+    "explanation": "1 manat 100 qəpikdir. 100 - 40 = 60 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Hesablama səhvi",
+      "C": "Ədədi olduğu kimi saxlamaq",
+      "D": "Çıxmada kiçik xəta"
+    },
+    "difficulty": "Orta",
+    "bloom_level": "Tətbiq",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "b3f06af3-e4d5-450f-90e6-99dd6c32104d",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-146",
+    "question": "Tofiqin 45 manat pulu var idi. O, 18 manat 70 qəpiyə kitab aldı. Tofiqin nə qədər pulu qaldı?",
+    "options": {
+      "A": "27 manat 30 qəpik",
+      "B": "26 manat 70 qəpik",
+      "C": "26 manat 30 qəpik",
+      "D": "25 manat 30 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "45 manatı 44 manat 100 qəpik kimi ifadə edirik: 44m 100q - 18m 70q = 26 manat 30 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamadan hesablamaq",
+      "B": "Qəpiklərin fərqini səhv tapmaq",
+      "D": "Manatlarda 1 vahid səhv"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "18f9da07-ab66-419b-b0b2-4d7a8e030eb9",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-147",
+    "question": "Lalənin 80 manat pulu var idi. O, 56 manat 40 qəpiyə don aldı. Lalənin nə qədər pulu qaldı?",
+    "options": {
+      "A": "24 manat 60 qəpik",
+      "B": "23 manat 60 qəpik",
+      "C": "23 manat 40 qəpik",
+      "D": "22 manat 60 qəpik"
+    },
+    "correctAnswer": "B",
+    "explanation": "80 manatdan (79m 100q) 56 manat 40 qəpik çıxdıqda 23 manat 60 qəpik qalır.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamağı yaddan çıxartmaq",
+      "C": "Qəpiklərin çıxılmasında səhv",
+      "D": "Manatlarda səhv"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "4020a6e0-261c-43f9-ba2a-35ffc2020295",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-148",
+    "question": "Ramilin 120 manat pulu var idi. O, 85 manat 90 qəpiyə telefon aldı. Ramilin nə qədər pulu qaldı?",
+    "options": {
+      "A": "35 manat 10 qəpik",
+      "B": "34 manat 90 qəpik",
+      "C": "34 manat 10 qəpik",
+      "D": "33 manat 10 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "120 manatdan (119m 100q) 85 manat 90 qəpik çıxdıqda 34 manat 10 qəpik qalır.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamamaq",
+      "B": "Qəpikləri çıxmaq əvəzinə yazmaq",
+      "D": "Manatlarda xəta"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "7649d8c0-c3d5-4521-b4ec-ce177823f663",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-149",
+    "question": "Səbinənin 150 manat pulu var idi. O, 112 manat 50 qəpiyə planşet aldı. Səbinənin nə qədər pulu qaldı?",
+    "options": {
+      "A": "38 manat 50 qəpik",
+      "B": "37 manat 50 qəpik",
+      "C": "36 manat 50 qəpik",
+      "D": "37 manat"
+    },
+    "correctAnswer": "B",
+    "explanation": "150 manat (149m 100q) - 112m 50q = 37 manat 50 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamağı unudaraq",
+      "C": "Manatlarda çıxmada səhv",
+      "D": "Qəpikləri unudaraq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "0bc69614-25e1-4560-84c4-de525eb270a6",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-150",
+    "question": "Anarın 200 manat pulu var idi. O, 168 manat 80 qəpiyə saat aldı. Anarın nə qədər pulu qaldı?",
+    "options": {
+      "A": "32 manat 20 qəpik",
+      "B": "31 manat 80 qəpik",
+      "C": "30 manat 20 qəpik",
+      "D": "31 manat 20 qəpik"
+    },
+    "correctAnswer": "D",
+    "explanation": "200 manat (199m 100q) - 168m 80q = 31 manat 20 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamadan hesablama",
+      "B": "Qəpikləri çıxmamaq",
+      "C": "Manatlarda xəta"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  },
+  {
+    "id": "92f76807-60a6-4ab9-91ee-e4cae42ff314",
+    "passport_id": "03-004-0101-B1F02-təhlil-03-151",
+    "question": "Günel 5 manat 50 qəpiyə tort və 2 manat 30 qəpiyə meyvə suyu aldı. O, satıcıya 10 manat verdi. Satıcı ona nə qədər qalıq qaytarmalıdır?",
+    "options": {
+      "A": "3 manat 20 qəpik",
+      "B": "2 manat 80 qəpik",
+      "C": "2 manat 20 qəpik",
+      "D": "3 manat 80 qəpik"
+    },
+    "correctAnswer": "C",
+    "explanation": "Xərc: 5m 50q + 2m 30q = 7 manat 80 qəpik. Qalıq: 10 manat (9m 100q) - 7m 80q = 2 manat 20 qəpik.",
+    "distractor_diagnostics": {
+      "A": "Manatı xırdalamadan çıxmaq",
+      "B": "Qəpiyi səhv hesablamaq",
+      "D": "Sadəcə xərci başqa bir ədəddən çıxmaq"
+    },
+    "difficulty": "Çətin",
+    "bloom_level": "Təhlil",
+    "topic": "Pulların hesablanması",
+    "cat": "Riyaziyyat 3"
+  }
+]

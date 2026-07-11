@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-HEY-04-01",
+    "question": "Peyk nədir?",
+    "options": {
+      "A": "Planetin ətrafında hərəkət edən səma cismidir.",
+      "B": "Günəşin ətrafında hərəkət edən ən böyük planetdir.",
+      "C": "Gecələr səmada parlayan ən böyük ulduzdur.",
+      "D": "Yalnız süni şəkildə yaradılmış qurğudur."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Peyk planet deyil, planetin ətrafında fırlanan cisimdir.",
+      "C": "Peyk ulduz deyil.",
+      "D": "Təbii peyklər də var, məsələn Ay."
+    },
+    "explanation": "Peyk planetin ətrafında hərəkət edir. Ay Yer planeti ətrafında saat əqrəbinin əksi istiqamətində hərəkət edən peykdir."
+  },
+  {
+    "passport_id": "03-HEY-04-02",
+    "question": "Ay Yer planeti ətrafında hansı istiqamətdə hərəkət edir?",
+    "options": {
+      "A": "Saat əqrəbi istiqamətində.",
+      "B": "Saat əqrəbinin əksi istiqamətində.",
+      "C": "Şimaldan cənuba doğru.",
+      "D": "Hərəkət etmir, sabit dayanır."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Ay saat əqrəbinin əksi istiqamətində hərəkət edir.",
+      "C": "Ayın hərəkət istiqaməti şimaldan cənuba deyil.",
+      "D": "Ay sabit dayanmır, Yer ətrafında fırlanır."
+    },
+    "explanation": "Ay Yer planeti ətrafında saat əqrəbinin əksi istiqamətində hərəkət edən peykdir."
+  },
+  {
+    "passport_id": "03-HEY-04-03",
+    "question": "Planetlərin və peyklərin qət etdiyi yol necə adlanır?",
+    "options": {
+      "A": "Günəş sistemi",
+      "B": "Xəyali ox",
+      "C": "Orbit",
+      "D": "Kosmos"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Günəş sistemi planetlərin və digər səma cisimlərinin cəmidir.",
+      "B": "Xəyali ox Yerin mərkəzindən keçən təsəvvür edilən oxdur.",
+      "D": "Kosmos ümumi fəzanın adıdır."
+    },
+    "explanation": "Planetlərin Günəş ətrafında, peyklərin planetlər ətrafında qət etdiyi yol orbit adlanır."
+  },
+  {
+    "passport_id": "03-HEY-04-04",
+    "question": "Ay Yer ətrafında tam dövrünü nə qədər vaxta başa vurur?",
+    "options": {
+      "A": "Bir sutkaya",
+      "B": "Bir həftəyə",
+      "C": "Bir ilə",
+      "D": "Təqribən bir aya"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Bir sutkaya Yer öz oxu ətrafında fırlanır.",
+      "B": "Ayın tam dövrü bir həftədən çox çəkir.",
+      "C": "Bir ilə Yer Günəş ətrafında fırlanır."
+    },
+    "explanation": "Ay peyki Yer planeti ətrafında tam dövrünü təqribən bir aya başa vurur."
+  },
+  {
+    "passport_id": "03-HEY-04-05",
+    "question": "Ayın bir ay ərzində səmada müxtəlif formalarda görünməsinin səbəbi nədir?",
+    "options": {
+      "A": "Yer kürəsinin Ay ilə birlikdə Günəş ətrafında dövr etməsi.",
+      "B": "Ayın yalnız öz oxu ətrafında fırlanması.",
+      "C": "Ayın Günəş ətrafında müstəqil dövr etməsi.",
+      "D": "Ayın Yerdən çox uzaqlaşması."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Ayın öz oxu ətrafında fırlanması formalarının dəyişməsinə tam səbəb deyil.",
+      "C": "Ay Günəş ətrafında sərbəst deyil, Yerlə birlikdə dövr edir.",
+      "D": "Ayın formalara düşməsi onun uzaqlaşması ilə deyil, mövqeyi ilə bağlıdır."
+    },
+    "explanation": "Yer kürəsi isə Ay ilə birlikdə Günəş ətrafında dövr edir. Bu da bir ay ərzində Ayın səmada müxtəlif formalarda görünməsinə səbəb olur."
+  },
+  {
+    "passport_id": "03-HEY-04-06",
+    "question": "Yerin xəyali oxu nədir?",
+    "options": {
+      "A": "Yerin Günəş ətrafında cızdığı orbitdir.",
+      "B": "Yerin hərəkətini öyrənmək üçün onun mərkəzindən keçən bir oxdur.",
+      "C": "Yerin Ay ilə birləşdiyi xətdir.",
+      "D": "Yerin səthində çəkilmiş xəttdir."
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Orbit fərqli anlayışdır.",
+      "C": "Belə bir birləşdirici ox mövcud deyil.",
+      "D": "Bu ox səthdə deyil, mərkəzdən keçən təsəvvür edilən xətdir."
+    },
+    "explanation": "Yerin hərəkətini öyrənmək üçün onun mərkəzindən keçən bir ox təsəvvür edək. Bu oxa “Yerin xəyali oxu” deyilir."
+  },
+  {
+    "passport_id": "03-HEY-04-07",
+    "question": "Yerin öz oxu ətrafında tam fırlanması təxminən nə qədər vaxta başa çatır?",
+    "options": {
+      "A": "12 saat",
+      "B": "Bir ay",
+      "C": "24 saat və ya bir sutka",
+      "D": "Bir il"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "12 saat yalnız günün bir hissəsidir.",
+      "B": "Bir aya Ayın Yer ətrafında fırlanması başa çatır.",
+      "D": "Bir ilə Yer Günəş ətrafında fırlanır."
+    },
+    "explanation": "Yerin öz oxu ətrafında tam fırlanması təxminən 24 saat və ya bir sutka ərzində başa çatır."
+  },
+  {
+    "passport_id": "03-HEY-04-08",
+    "question": "Gecə və gündüzün yaranmasına səbəb nədir?",
+    "options": {
+      "A": "Yerin Günəş ətrafında fırlanması",
+      "B": "Ayın Yer ətrafında fırlanması",
+      "C": "Günəşin Yer ətrafında fırlanması",
+      "D": "Yer planetinin öz oxu ətrafında fırlanması"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Yerin Günəş ətrafında fırlanması fəsilləri yaradır.",
+      "B": "Ayın fırlanması ayın fazalarını yaradır.",
+      "C": "Günəş Yer ətrafında fırlanmır."
+    },
+    "explanation": "Yer planeti öz oxu ətrafında fırlanarkən onun Günəşə tərəf olan hissəsi işıqlandığı üçün gündüz, əks tərəfində isə gecə yaranır."
+  },
+  {
+    "passport_id": "03-HEY-04-09",
+    "question": "Günün eyni vaxtında müxtəlif ölkələrdə saat göstəricilərinin fərqlənməsinin səbəbi nədir?",
+    "options": {
+      "A": "Yerin öz xəyali oxu ətrafında fırlanmasının fərqli vaxt bölgüsü yaratması.",
+      "B": "İnsanların vaxtı fərqli təyin etməsi.",
+      "C": "Hər ölkənin öz saatını istəyinə uyğun qurması.",
+      "D": "Ayın Yerin ətrafında fırlanması."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "İnsanların təyinatından əvvəl bu, Yerin fırlanması ilə bağlı təbii hadisədir.",
+      "C": "Saatlar coğrafi mövqeyə əsaslanır.",
+      "D": "Saat fərqlərinin Ayın fırlanması ilə əlaqəsi yoxdur."
+    },
+    "explanation": "Yerin öz xəyali oxu ətrafında fırlanması fərqli vaxt bölgüsü də yaradır."
+  },
+  {
+    "passport_id": "03-HEY-04-10",
+    "question": "Şəffaf materiallara hansılar aiddir?",
+    "options": {
+      "A": "Taxta və dəmir",
+      "B": "Şüşə və su",
+      "C": "Plastik və rezin",
+      "D": "Karton və gips"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Taxta və dəmir qeyri-şəffaf materiallardır.",
+      "C": "Rezin işığı keçirmir.",
+      "D": "Karton və gips qeyri-şəffaf materiallardır."
+    },
+    "explanation": "İşığı keçirən materiallar şəffaf materiallardır. Şüşə və su şəffafdır."
+  },
+  {
+    "passport_id": "03-HEY-04-11",
+    "question": "Qeyri-şəffaf materialların xüsusiyyəti nədir?",
+    "options": {
+      "A": "İşığı yaxşı keçirmələri",
+      "B": "Arxasındakı əşyanın aydın görünməsi",
+      "C": "İşığı keçirməmələri və kölgə yaratmaları",
+      "D": "Yalnız günəş işığını keçirmələri"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Qeyri-şəffaf materiallar işığı keçirmir.",
+      "B": "Arxasındakı əşya şəffaf materiallarda görünür.",
+      "D": "Onlar heç bir işığı keçirmir."
+    },
+    "explanation": "İşığı keçirməyən materiallar qeyri-şəffaf materiallardır. Qeyri-şəffaf materiallar işığı keçirmədiyinə görə onlardan hazırlanmış əşyaların kölgəsi yaranır."
+  },
+  {
+    "passport_id": "03-HEY-04-12",
+    "question": "Əşyanı işıq mənbəyinə yaxınlaşdırdıqda onun kölgəsinin ölçüsü necə dəyişir?",
+    "options": {
+      "A": "Daha kiçik olur",
+      "B": "Dəyişmir",
+      "C": "Tamamilə yox olur",
+      "D": "Daha böyük olur"
+    },
+    "correct_answer": "D",
+    "distractor_diagnostics": {
+      "A": "Mənbədən uzaqlaşdırdıqda kölgə kiçilir.",
+      "B": "İşıq məsafəsinə görə kölgənin ölçüsü dəyişir.",
+      "C": "Kölgə yox olmur."
+    },
+    "explanation": "Əşyalar işıq mənbəyinə yaxın olduqda kölgələri daha böyük olur."
+  },
+  {
+    "passport_id": "03-HEY-04-13",
+    "question": "Nə üçün qaranlıqda əşyaların kölgəsi yaranmır?",
+    "options": {
+      "A": "Çünki kölgənin yaranması üçün işıq mənbəyi və qeyri-şəffaf material lazımdır.",
+      "B": "Çünki qaranlıqda əşyalar şəffaf olur.",
+      "C": "Çünki əşyalar yalnız gündüzlər kölgə salır.",
+      "D": "Çünki gecələr Ayın işığı kölgə yarada bilmir."
+    },
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "B": "Qaranlıq əşyaların materialını dəyişmir.",
+      "C": "Gecə işıq mənbəyi (fənər, lampa) ilə də kölgə yaratmaq olar.",
+      "D": "Ay işığı da kölgə yarada bilər."
+    },
+    "explanation": "Qeyri-şəffaf materiallar işığı keçirmədiyinə görə onlardan hazırlanmış əşyaların kölgəsi yaranır."
+  },
+  {
+    "passport_id": "03-HEY-04-14",
+    "question": "Gün ərzində bina və ağacların kölgəsinin yerini dəyişməsinin səbəbi nədir?",
+    "options": {
+      "A": "Günəşin Yerin ətrafında fırlanması",
+      "B": "Yerin öz oxu ətrafında fırlanması",
+      "C": "Binanın və ağacların böyüməsi",
+      "D": "Küləyin əsməsi"
+    },
+    "correct_answer": "B",
+    "distractor_diagnostics": {
+      "A": "Günəş Yerin ətrafında fırlanmır.",
+      "C": "Böyümə kölgənin qısa müddətli yer dəyişməsinə səbəb ola bilməz.",
+      "D": "Külək binanın kölgəsinin istiqamətini dəyişdirə bilməz."
+    },
+    "explanation": "Kölgələrin yerinin dəyişməsinin səbəbi Yerin öz oxu ətrafında fırlanmasıdır."
+  },
+  {
+    "passport_id": "03-HEY-04-15",
+    "question": "Qədim zamanlarda insanlar kölgənin yerinin dəyişməsindən istifadə edərək hansı cihazı ixtira etmişdilər?",
+    "options": {
+      "A": "Termometri",
+      "B": "Mikroskopu",
+      "C": "Günəş saatını",
+      "D": "Teleskopu"
+    },
+    "correct_answer": "C",
+    "distractor_diagnostics": {
+      "A": "Termometr istilik ölçür.",
+      "B": "Mikroskop kiçik cisimləri böyüdür.",
+      "D": "Teleskop kosmosu müşahidə etmək üçündür."
+    },
+    "explanation": "Qədim zamanlarda insanlar kölgənin yerini dəyişməsindən istifadə edərək günəş saatı ixtira etmişdilər."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_1MNVCMYYT.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_1MNVCMYYT.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 1 MƏN VƏ CƏMİYY Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_2NSANVSALAMLIQ.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_2NSANVSALAMLIQ.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 2 İNSAN VƏ SAĞL Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_3YERVAY.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_3YERVAY.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 3 YER VƏ AY Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_4MATERALLARVXASSLR.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_4MATERALLARVXASSLR.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 4 MATERİALLAR V Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_5BAYRAMLARVQNAT.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_5BAYRAMLARVQNAT.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 5 BAYRAMLAR VƏ  Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Həyatbilgisi3_6THLKSZLKVQAYDALAR.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Həyatbilgisi3_6THLKSZLKVQAYDALAR.json' faylına yaz.",
+    "Role": "Həyat bilgisi 3 - 6 TƏHLÜKƏSİZLİK Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_1Texnolojivasitlr.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_1Texnolojivasitlr.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 1. Texnoloji va Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_2Mitmdniyyti.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_2Mitmdniyyti.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 2. Məişət mədən Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_3Plastilindnyapmailri.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_3Plastilindnyapmailri.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 3. Plastilindən Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_4Aplikasiyailri.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_4Aplikasiyailri.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 4. Aplikasiya i Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_5Mozaikailri.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_5Mozaikailri.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 5. Mozaika işlə Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_Texnologiya3_6Kazqatlama.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_Texnologiya3_6Kazqatlama.json' faylına yaz.",
+    "Role": "Texnologiya 3 - 6. Kağızqatlama Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_İnformatika3_1NFORMASYA.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_İnformatika3_1NFORMASYA.json' faylına yaz.",
+    "Role": "İnformatika 3 - 1 İNFORMASİYA Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_İnformatika3_2ALQORTM.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_İnformatika3_2ALQORTM.json' faylına yaz.",
+    "Role": "İnformatika 3 - 2 ALQORİTM Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_İnformatika3_3KOMPTER.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_İnformatika3_3KOMPTER.json' faylına yaz.",
+    "Role": "İnformatika 3 - 3 KOMPÜTER Generator",
+    "TypeName": "self"
+  },
+  {
+    "Prompt": "Sən SİTG test yaradıcısısan (Gold Standart 2.1). Sənə 'data/gen_req_İnformatika3_MTNREDAKTORU.json' faylı təqdim edilir. \nFaylda 'text' sahəsində dərslik materialı və 'needed' sahəsində sənə lazım olan test sayı (15) var.\nTapşırıqlar:\n1. Mətndəki faktlara əsaslanaraq DƏQİQ 15 ədəd, bir-birini təkrarlamayan (unique), fərqli qavrayış səviyyələrini (Anlama, Tətbiq, Təhlil) əhatə edən test yaz.\n2. Hər testin MÜTLƏQ 4 variantı (A, B, C, D) olmalıdır. E variantı YOXDUR.\n3. Hər bir yanlış variant üçün MÜTLƏQ 'distractor_diagnostics' (məs: diqqətsizlik, anlayış səhvi, hesablama) yaz.\n4. Testlərə 'passport_id' təyin et.\n5. İzahatları (explanation) YALNIZ mətndəki cümlələrdən istifadə edərək yaz.\nNəticəni YALNIZ JSON array formatında 'data/gen_res_İnformatika3_MTNREDAKTORU.json' faylına yaz.",
+    "Role": "İnformatika 3 - MƏTN REDAKTORU Generator",
+    "TypeName": "self"
+  }
+]

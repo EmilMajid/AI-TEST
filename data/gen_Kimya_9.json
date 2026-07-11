@@ -1,0 +1,4727 @@
+[
+  {
+    "id": "09-004-0101-H1F01-01-01-001",
+    "passport_id": "09-KIM-1000",
+    "question": "Yer kürəsində kütləcə ən çox yayılan metal hansıdır?",
+    "options": [
+      "Kalsium",
+      "Mis",
+      "Dəmir",
+      "Alüminium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-002",
+    "passport_id": "09-KIM-1001",
+    "question": "Aşağıdakı metallardan hansına təbiətdə daha çox sərbəst halda (külçə şəklində) rast gəlinir?",
+    "options": [
+      "Natrium",
+      "Maqnezium",
+      "Alüminium",
+      "Qızıl"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hansı metallara təbiətdə sərbəst halda rast gəlinir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-003",
+    "passport_id": "09-KIM-1002",
+    "question": "Mineralların və onların tərkibinin uyğunluğunu müəyyən edin: 1. Pirit, 2. Boksit, 3. Siderit. a. FeCO3, b. FeS2, c. Al2O3·nH2O",
+    "options": [
+      "1-b, 2-c, 3-a",
+      "1-b, 2-a, 3-c",
+      "1-a, 2-b, 3-c",
+      "1-c, 2-a, 3-b"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-004",
+    "passport_id": "09-KIM-1003",
+    "question": "Yüksək temperaturda filizin tərkibindəki metalın reduksiyaedicilər vasitəsilə (C, CO, H2, aktiv metallar) metal şəklində alınması üsulu necə adlanır?",
+    "options": [
+      "Hidrometallurgiya",
+      "Pirometallurgiya",
+      "Elektroliz",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-005",
+    "passport_id": "09-KIM-1004",
+    "question": "Filizin tərkibində metalın miqdarı 0,5%-dən az olduqda sənayedə hansı üsuldan istifadə edilməsi məqsədəuyğundur?",
+    "options": [
+      "Hidrometallurgiya",
+      "Qovurma",
+      "Pirometallurgiya",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "metallar alınır:\nFilizin tərkibində metalın miqdarı az olduqda (0,5%-dən az) hidrometallurgiya üsulundan istifadə\nedilməsi məqsədəuyğundur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-006",
+    "passport_id": "09-KIM-1005",
+    "question": "Na, K, Ca, Al kimi aktiv metalları sənayedə əsasən hansı üsulla alırlar?",
+    "options": [
+      "Hidrogenotermiya",
+      "Elektrometallurgiya",
+      "Hidrometallurgiya",
+      "Karbonla reduksiya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sənayedə metalların alınmasında, əsasən, 3 üsuldan - pirometallurgiya, hidrometallurgiya və\nelektrometallurgiya üsullarından istifadə edilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-007",
+    "passport_id": "09-KIM-1006",
+    "question": "Ərintilərə xüsusi xassələr vermək üçün metal və qeyri-metalların əlavə edilməsi prosesi necə adlanır?",
+    "options": [
+      "Legirlənmə",
+      "Passivləşmə",
+      "Elektroliz",
+      "Korroziya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Li ===\nHansı metalların polada əlavə edilməsi poladın korroziyaya qarşı davamlılığını artırır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-008",
+    "passport_id": "09-KIM-1007",
+    "question": "Ərintilərə əlavə edildikdə onlara turşuların təsirinə qarşı davamlılıq verən element hansıdır?",
+    "options": [
+      "Silisium (Si)",
+      "Titan (Ti)",
+      "Volfram (W)",
+      "Xrom (Cr)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Məsələn, xrom\nCr– ərintiyə\nbərklik\nvə korroziyaya davamlılıq, silisium Si – turşuların təsirinə qarşı davamlılıq, volfram\nW\n– bərklik və istiyə qarşı möhkəmlik, titan\nTiisə istiyə və\nkorroziyaya davamlılıq,\nhəmçinin mexaniki möhkəmlik verir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-009",
+    "passport_id": "09-KIM-1008",
+    "question": "Aşağıdakılardan hansı qara metal ərintilərinə aiddir?",
+    "options": [
+      "Çuqun və polad",
+      "Tunc və bürünc",
+      "Melxior",
+      "Düralüminium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A) ...3s\n3pC) 1s\n\nE) ...3s\n3pG) ...2s\nB) ...2s\n2pD) ...2s\nF) ...2s\n2pH) ...2p\n3sHansı elektron quruluşları qeyri-metal atomlarına aiddir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-010",
+    "passport_id": "09-KIM-1009",
+    "question": "Alüminium, maqnezium və misin ərintisi (yüngül ərinti) necə adlanır?",
+    "options": [
+      "Nixrom",
+      "Düralüminium",
+      "Tunc",
+      "Lehim"
+    ],
+    "correctAnswer": 1,
+    "explanation": "– Nə üçün bəzi bəzək əşyaları misin qalayla ərintisindən – bürüncdən hazırlanır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-011",
+    "passport_id": "09-KIM-1010",
+    "question": "Sənayedə metalları almaq üçün yararlı olan təbii birləşmələr necə adlanır?",
+    "options": [
+      "Ərintilər",
+      "Konsentrat",
+      "Filiz",
+      "Şlaklar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sənayedə\nmetalları almaq üçün yararlı olan təbii\nbirləşmələr\nfiliz\nadlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-012",
+    "passport_id": "09-KIM-1011",
+    "question": "Metallurgiya sənayesində filizin boş (lazımsız) süxurlardan təmizlənərək zənginləşdirilmiş halı necə adlanır?",
+    "options": [
+      "Konsentrat",
+      "Şlak",
+      "Ərinti",
+      "Katod metalı"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ona görə də filiz əvvəlcə emal\nedilir – boş (lazımsız) süxurlardan\ntəmizlənərək zənginləşdirilir, yəni\nkonsentrat şəklinə çevrilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-013",
+    "passport_id": "09-KIM-1012",
+    "question": "Bürünc ərintisi əsasən hansı iki metalın qarışığından ibarətdir?",
+    "options": [
+      "Dəmir və Karbon",
+      "Mis və Alüminium",
+      "Mis və Qalay",
+      "Mis və Sink"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Saf sink kövrək olduğundan, əsasən, onun ərintiləri,\nməsələn, mislə ərintisi olan bürünc tətbiq olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-014",
+    "passport_id": "09-KIM-1013",
+    "question": "Yerli filiz yataqlarının işlənməsində hansı azərbaycanlı kimyaçının və onun elmi məktəbinin böyük rolu olmuşdur?",
+    "options": [
+      "Həbibulla Şahtaxtinskinin",
+      "Yusif Məmmədəliyevin",
+      "Murtuza Nağıyevin",
+      "Əlihüseyn Quliyevin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yerli filiz yataqlarının işlənməsində Azərbaycan\nkimyaçısı\n\nHəbibulla Şahtaxtinskinin\nonun elmi məktəbinin böyük rolu olmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-015",
+    "passport_id": "09-KIM-1014",
+    "question": "Pirometallurgiya üsulu ilə bağlı aşağıdakı fikirlərdən hansı səhvdir?",
+    "options": [
+      "Reduksiyaedici kimi karbon, dəmrov qazı (CO), hidrogen və fəal metallardan istifadə edilir.",
+      "Proses yüksək temperaturda (700-2000°C) həyata keçirilir.",
+      "Filizin tərkibində metalın miqdarı 0.5%-dən az olduqda ən ideal üsuldur.",
+      "Misin təxminən 95%-i bu üsulla istehsal olunur."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-016",
+    "passport_id": "09-KIM-1015",
+    "question": "Metallar elektrokimyəvi gərginlik sırasında yerləşməsinə görə aşağıdakılardan hansı DOĞRUDUR?",
+    "options": [
+      "Sırada metal nə qədər solda yerləşirsə, onun kationunun oksidləşdiricilik xassəsi bir o qədər güclü olur.",
+      "Hidrogendən sağda duran metallar bütün duru turşulardan hidrogeni asanlıqla sıxışdırıb çıxarır.",
+      "Sırada metal nə qədər solda yerləşirsə, o, kimyəvi cəhətdən bir o qədər fəaldır və asanlıqla oksidləşir.",
+      "Soldan sağa getdikcə metalların reduksiyaedici xassəsi artır."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası\nSu mühitində metalların aktivliyini (reduksiyaedici xassələrini) müqayisə etmək\nüçün metalların\nelektrokimyəvi gərginlik sırasından\nistifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-017",
+    "passport_id": "09-KIM-1016",
+    "question": "Aşağıdakı metallardan hansı ən bərk metal hesab olunur?",
+    "options": [
+      "Volfram",
+      "Dəmir",
+      "Osmium",
+      "Xrom"
+    ],
+    "correctAnswer": 3,
+    "explanation": "– Hansı qələvi metalın duzlarından məişətdə geniş istifadə olunur?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-018",
+    "passport_id": "09-KIM-1017",
+    "question": "Elektrokimyəvi gərginlik sırasında hidrogendən solda yerləşməsinə baxmayaraq, xlorid və duru sulfat turşularında həll olmayan (passivləşən) metal hansıdır?",
+    "options": [
+      "Qurğuşun (Pb)",
+      "Sink (Zn)",
+      "Dəmir (Fe)",
+      "Mis (Cu)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Qüvvətli ikiəsaslı turşu kimi sulfat\nturşusu suda məhlulda iki mərhələdə dissosiasiya edir:\nElektrokimyəvi gərginlik sırasında hidrogendən solda yerləşən metallar duru\nsulfat turşusundan hidrogeni çıxarır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-019",
+    "passport_id": "09-KIM-1018",
+    "question": "Plastikliyinə görə ən üstün olan və hətta qalınlığı 0.003 mm olan nazik təbəqə halına salına bilən metal hansıdır?",
+    "options": [
+      "Gümüş",
+      "Qızıl",
+      "Alüminium",
+      "Mis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qızılı döyməklə qalınlığı 0,003 mm olan nazik təbəqə almaq olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-020",
+    "passport_id": "09-KIM-1019",
+    "question": "Metalların elektrik və istilik keçiriciliyi, həmçinin metal parıltısına malik olması kristal qəfəsdə hansı zərrəciklərin yerdəyişməsi ilə əlaqədardır?",
+    "options": [
+      "Molekulların",
+      "Sərbəst elektronların",
+      "Neytronların",
+      "Müsbət yüklü kationların"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların\nyüksək istilik və elektrik keçiriciliyi\nonların kristal qəfəsində sərbəst\nelektronların yerdəyişməsi ilə əlaqədardır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-021",
+    "passport_id": "09-KIM-1020",
+    "question": "Sıxlığı 5 q/sm³-dən az olan və 'yüngül metallar' qrupuna aid edilən elementlər sırasını göstərin:",
+    "options": [
+      "Li, Na, Mg, Al",
+      "Au, Ag, Pt, Pd",
+      "Cr, W, Os, Pb",
+      "Zn, Fe, Cu, Hg"
+    ],
+    "correctAnswer": 0,
+    "explanation": "– Nə üçün dövrün nömrəsi artdıqca metal xassəli elementlərin sayı da artır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-022",
+    "passport_id": "09-KIM-1021",
+    "question": "Kimyəvi reaksiyalarda metalların göstərdiyi ümumi xassə hansıdır?",
+    "options": [
+      "İkili xassə (amfoter) göstərirlər",
+      "Yalnız reduksiyaedici xassə",
+      "Yalnız oksidləşdirici xassə",
+      "Həm oksidləşdirici, həm reduksiyaedici xassə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-023",
+    "passport_id": "09-KIM-1022",
+    "question": "Aşağıdakı metallardan hansı hidrogenlə birbaşa (qızdırıldıqda) reaksiyaya daxil OLAR?",
+    "options": [
+      "Berillium (Be)",
+      "Dəmir (Fe)",
+      "Natrium (Na)",
+      "Mis (Cu)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "n ü m u n ə\nNatrium birləşmələrinin kimyəvi xassələrinə aid hesablamalar\n78 q natrium-peroksid neçə litr (n.ş.) karbon qazı ilə reaksiyaya daxil olar?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-024",
+    "passport_id": "09-KIM-1023",
+    "question": "Otaq temperaturunda (adi şəraitdə) azotla reaksiyaya daxil olaraq nitrid əmələ gətirən metal hansıdır?",
+    "options": [
+      "Kalsium",
+      "Alüminium",
+      "Natrium",
+      "Litium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hidrogen-xlorid qazı, xlorid turşusundan fərqli olaraq, adi\nşəraitdə metallar və onların oksidləri ilə reaksiyaya daxil olmur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-025",
+    "passport_id": "09-KIM-1024",
+    "question": "Nə üçün kalium metalı mis(II) sulfat (CuSO4) məhluluna əlavə edildikdə misi sıxışdırıb çıxara bilmir, baxmayaraq ki, gərginlik sırasında ondan solda yerləşir?",
+    "options": [
+      "Çünki bu halda mis(II) sulfatın qatılığı kifayət etmir.",
+      "Çünki kalium passiv metaldır.",
+      "Çünki kalium ilk növbədə su ilə şiddətli reaksiyaya daxil olaraq qələvi (KOH) əmələ gətirir.",
+      "Çünki mis kaliuma nisbətən daha güclü reduksiyaedicidir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qüvvətli ikiəsaslı turşu kimi sulfat\nturşusu suda məhlulda iki mərhələdə dissosiasiya edir:\nElektrokimyəvi gərginlik sırasında hidrogendən solda yerləşən metallar duru\nsulfat turşusundan hidrogeni çıxarır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-026",
+    "passport_id": "09-KIM-1025",
+    "question": "Aşağıdakı metallardan hansı həm turşularla, həm də qələvilərlə reaksiyaya daxil olan ikili (amfoter) xassəli metaldır?",
+    "options": [
+      "Dəmir (Fe)",
+      "Kalsium (Ca)",
+      "Sink (Zn)",
+      "Maqnezium (Mg)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Yarımqrupda\nbordan talliuma doğru elementlərin metallıq xassələri\nartır:\nB –\nqeyri-metal, Al –\nikili xassəli (amfoter)\nmetal, In və Tl isə metallardır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-027",
+    "passport_id": "09-KIM-1026",
+    "question": "Metalların elektrokimyəvi gərginlik sırası hansı alim tərəfindən təklif edilmişdir?",
+    "options": [
+      "N.Beketov",
+      "Dmitri Mendeleyev",
+      "A.Butlerov",
+      "L.Paulinq"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-028",
+    "passport_id": "09-KIM-1027",
+    "question": "Ən ağır və ən yüngül metallar hansı bənddə düzgün verilmişdir?",
+    "options": [
+      "Ən ağır: Civə, Ən yüngül: Natrium",
+      "Ən ağır: Dəmir, Ən yüngül: Alüminium",
+      "Ən ağır: Osmium, Ən yüngül: Litium",
+      "Ən ağır: Qızıl, Ən yüngül: Maqnezium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qələvi metalların (R) binar birləşmələrindən hansının formulu səhv verilmişdir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-029",
+    "passport_id": "09-KIM-1028",
+    "question": "Təbiətdə oksigenlə reaksiyaya girməyən və oksid əmələ gətirməyən metallar hansılardır?",
+    "options": [
+      "Natrium, Kalium",
+      "Gümüş, Qızıl, Platin",
+      "Dəmir, Alüminium",
+      "Sink, Xrom"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Reaksiyalarda\ngüclü reduksiyaedici\nxassə göstərir; məsələn, yandırıldıqda havada mavi\nalovla yanır, bəzi metalları onların oksidlərindən reduksiya edir:\nDuzəmələgətirməyən oksid olmasına baxmayaraq yüksək təzyiq altında karbonmonooksid\nəridilmiş natrium-hidroksidlə qarşılıqlı təsirdə olur:\nTətbiqi.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-030",
+    "passport_id": "09-KIM-1029",
+    "question": "Hansı kimyəvi tənlik metalların su ilə reaksiyasını DÜZGÜN əks etdirmir (və ya baş vermir)?",
+    "options": [
+      "2Na + 2H2O → 2NaOH + H2",
+      "Ca + 2H2O → Ca(OH)2 + H2",
+      "3Fe + 4H2O (buxar) → Fe3O4 + 4H2",
+      "Cu + H2O → CuO + H2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-031",
+    "passport_id": "09-KIM-1030",
+    "question": "Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması (aşınması) necə adlanır?",
+    "options": [
+      "Reduksiya",
+      "Korroziya",
+      "Passivləşmə",
+      "Elektroliz"
+    ],
+    "correctAnswer": 1,
+    "explanation": "• Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması\nkorroziya\nadlanır (latınca “korrodere”– aşınma).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-032",
+    "passport_id": "09-KIM-1031",
+    "question": "Dəmirin (və ya poladın) hava mühitində korroziyaya uğraması, yəni paslanması üçün əsas hansı iki amilin iştirakı mütləqdir?",
+    "options": [
+      "Karbon qazı və işıq",
+      "Oksigen və su (nəmlik)",
+      "Azot və hidrogen",
+      "Kükürd və turşu"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Korroziyaya misal olaraq dəmirin havanın oksigeni ilə qarşılıqlı təsirini\ngöstərmək olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-033",
+    "passport_id": "09-KIM-1032",
+    "question": "Dəmirin pasının tərkibini daha dəqiq hansı kimyəvi formulla ifadə etmək olar?",
+    "options": [
+      "FeO",
+      "Fe2O3 ∙ nH2O",
+      "Fe(OH)2",
+      "FeCO3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ona görə də dəmirin iki mərhələdə baş verən\npaslanmasını aşağıdakı tənliklərlə ifadə etmək olar:\n• Q E Y D •\nPasın tərkibini daha dəqiq olaraq Fe\n∙nH\nO formulu ilə göstərmək olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-034",
+    "passport_id": "09-KIM-1033",
+    "question": "Nə üçün alüminium (Al) və sink (Zn) kimi fəal metallar təbiətdə dəmirdən daha az korroziyaya uğrayır?",
+    "options": [
+      "Çünki onların səthində əmələ gələn oksid təbəqəsi çox davamlı və qaz keçirməyəndir.",
+      "Çünki onlar dəmirdən daha ağırdırlar.",
+      "Çünki onlar qeyri-fəal metallar qrupuna daxildir.",
+      "Çünki onlar su ilə heç bir halda reaksiyaya girmirlər."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-035",
+    "passport_id": "09-KIM-1034",
+    "question": "Dəmir məmulatı korroziyadan qorumaq üçün üzərinə metaldan qoruyucu örtük çəkilmişdir. Əgər bu qoruyucu örtük dəmirdən fəal olarsa (məsələn, sink), örtük zədələndikdə hansı proses baş verəcək?",
+    "options": [
+      "Örtük (sink) özü korroziyaya uğrayacaq, dəmir isə qorunacaq.",
+      "Dəmir və sink hər ikisi eyni anda sürətlə korroziyaya uğrayacaq.",
+      "Korroziya tamamilə dayanacaq.",
+      "Dəmir dərhal paslanmağa başlayacaq."
+    ],
+    "correctAnswer": 1,
+    "explanation": "• Dəmirin səthindəki qoruyucu örtük dəmirdən passiv metaldan hazırlanarsa\n(Cu, Au, Ag və s.), qoruyucu ötrüyün dağıldığı yerdən dəmirin korroziyası\nbaşlanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-036",
+    "passport_id": "09-KIM-1035",
+    "question": "Əksinə, dəmir məmulatın üzərinə dəmirdən passiv metal (məsələn, mis - Cu) örtük çəkilərsə və həmin örtük zədələnərsə, korroziya necə gedəcək?",
+    "options": [
+      "Mis oksigeni dəmirdən uzaqlaşdıracaq.",
+      "Mis korroziyaya uğrayacaq, dəmir qorunacaq.",
+      "Korroziya baş verməyəcək.",
+      "Dəmir korroziyaya uğramağa başlayacaq."
+    ],
+    "correctAnswer": 2,
+    "explanation": "• Dəmirin səthindəki qoruyucu örtük dəmirdən passiv metaldan hazırlanarsa\n(Cu, Au, Ag və s.), qoruyucu ötrüyün dağıldığı yerdən dəmirin korroziyası\nbaşlanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-037",
+    "passport_id": "09-KIM-1036",
+    "question": "Məşhur Paris Eyfel qülləsini korroziyadan qorumaq üçün vaxtaşırı hansı tədbir görülür (qeyri-metal örtük tətbiqi)?",
+    "options": [
+      "Vaxtaşırı 60 ton boya ilə rənglənir.",
+      "Yaxınlığına sink protektorlar quraşdırılır.",
+      "Üzərinə mis (Cu) təbəqəsi çəkilir.",
+      "Hər il qızdırılıb pası təmizlənir."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu maraqlıdır\n1889-cu ildə istifadəyə verilmiş\nEyfel qülləsini korroziyadan qorumaq\nməqsədi ilə\nvaxtaşırı rəngləyirlər.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-038",
+    "passport_id": "09-KIM-1037",
+    "question": "Poladın tərkibinə təqribən 12% hansı metalı əlavə etdikdə korroziyaya davamlı 'paslanmayan polad' ərintisi alınır?",
+    "options": [
+      "Qızıl",
+      "Mis",
+      "Qurğuşun",
+      "Xrom"
+    ],
+    "correctAnswer": 3,
+    "explanation": "===\nƏrintilərin tərkibinə Ni,\nCo, Cu və Cr metallarını əlavə etdikdə korroziyaya davamlı ərintilər alınır; məsələn,\npoladın tərkibinə təqribən 12% xrom daxil etdikdə korroziyaya davamlı\npaslanmayan\npolad\nalınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-039",
+    "passport_id": "09-KIM-1038",
+    "question": "Elektrolit mühitində (dəniz, yeraltı sular) gəminin dəmir gövdəsini və neft borularını qorumaq üçün daha fəal metal lövhənin (Mg, Al, Zn) pərçim edilməsi üsulu necə adlanır?",
+    "options": [
+      "Legirlənmə",
+      "Qalvanizasiya",
+      "İnhibitor əlavə edilməsi",
+      "Protektor mühafizəsi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Protektor üsulunda isə dəmir konstruksiyaya\nfəal metalın yenidən pərçim edilməsi kifayət\nqədər tez və asan həyata keçirilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-040",
+    "passport_id": "09-KIM-1039",
+    "question": "Protektor mühafizəsi üsulunun əsas çatışmayan cəhəti nədir?",
+    "options": [
+      "Protektorun (aktiv metalın) dövri olaraq dağılıb qurtardıqdan sonra yenisi ilə əvəz olunmasının tələb edilməsi.",
+      "Ətraf mühiti həddindən artıq çirkləndirməsi.",
+      "Protektorun su ilə dərhal partlayışla reaksiyaya girməsi.",
+      "Çox baha başa gəlməsi və yalnız qızıl pərçimlərdən istifadə olunması."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Protektor mühafizəsi üsulunun çatışmayan cəhətini göstərin.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-041",
+    "passport_id": "09-KIM-1040",
+    "question": "Korroziyanın qarşısını almaq və ya sürətini azaltmaq üçün metalın təmasda olduğu mühitə qatılan xüsusi maddələr necə adlanır?",
+    "options": [
+      "Katalizatorlar",
+      "Protektorlar",
+      "Aktivatorlar",
+      "İnhibitorlar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "===\nKorroziyanın qarşısını almaq və ya onun sürətini\nazaltmaq üçün metalın təmasda olduğu mühitə\ninhibitor\nadlanan maddə qatılır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-042",
+    "passport_id": "09-KIM-1041",
+    "question": "Qatı sulfat turşusunu polad qablarda saxladıqda və daşıdıqda korroziyanı ləngitmək üçün hansı üsuldan istifadə olunur?",
+    "options": [
+      "Daxildən sink qatının çəkilməsi.",
+      "Mühitə inhibitorların əlavə edilməsi.",
+      "Suyun istiliyinin artırılması.",
+      "Xaricdən protektor pərçimlənməsi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məsələn, qatı sulfat turşusunun polad qablarda saxlanması və daşınmasında inhibitorlardan\nistifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-043",
+    "passport_id": "09-KIM-1042",
+    "question": "Dəmirin (və ya poladın) paslanma prosesinin mahiyyəti, əsasən, metalın hansı reaksiyasından ibarətdir?",
+    "options": [
+      "Oksidləşmə",
+      "Polimerləşmə",
+      "Parçalanma",
+      "Reduksiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların alınmasının hər bir üsulunda, əsasən, hansı reduksiyaedicilərdən istifadə edilir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-044",
+    "passport_id": "09-KIM-1043",
+    "question": "Nə üçün dəniz kənarında istismar olunan avtomaşınlar quru iqlimi olan yerlərdəkilərə nisbətən daha tez korroziyaya uğrayır?",
+    "options": [
+      "Çünki quru mühitdə paslanma ehtimalı 100%-dir.",
+      "Çünki dəniz kənarında oksigen olmur.",
+      "Çünki dəniz suyu metalların səthini qoruyucu oksidlərlə bağlayır.",
+      "Çünki havadakı rütubət və duz (elektrolit mühiti) paslanmanı sürətləndirir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ba ===\nNə üçün qaynadılmış suya salınmış dəmir mismar ağzıbağlı ampulada paslanmır\nNə üçün dəniz kənarında istismar olunan avtomaşınlar daha tez korroziyaya uğrayır?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-045",
+    "passport_id": "09-KIM-1044",
+    "question": "Korroziya barədə deyilən aşağıdakı ifadələrdən hansı SƏHVDİR?",
+    "options": [
+      "Korroziyanın sürəti metalın səthində əmələ gələn oksid təbəqəsinin xassəsindən (məsələn, məsaməli olmasından) qətiyyən asılı deyil.",
+      "Paslanma – dəmir və polad məmulatların korroziyasıdır.",
+      "Mühitdə duzun (elektrolitin) olması korroziyanı sürətləndirir.",
+      "Korroziya – metal səthində metalın oksidləşmə məhsullarının əmələ gəlməsidir."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ammonyak və nitrat turşusu haqqında deyilən ifadələrdən hansı səhvdir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-001-1333",
+    "passport_id": "09-KIM-1045",
+    "question": "Yer kürəsində kütləcə ən çox yayılan metal hansıdır?",
+    "options": [
+      "Dəmir",
+      "Kalsium",
+      "Mis",
+      "Alüminium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-002-ff10",
+    "passport_id": "09-KIM-1046",
+    "question": "Aşağıdakı metallardan hansına təbiətdə daha çox sərbəst halda (külçə şəklində) rast gəlinir?",
+    "options": [
+      "Maqnezium",
+      "Alüminium",
+      "Natrium",
+      "Qızıl"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hansı metallara təbiətdə sərbəst halda rast gəlinir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-003-0b36",
+    "passport_id": "09-KIM-1047",
+    "question": "Mineralların və onların tərkibinin uyğunluğunu müəyyən edin: 1. Pirit, 2. Boksit, 3. Siderit. a. FeCO3, b. FeS2, c. Al2O3·nH2O",
+    "options": [
+      "1-a, 2-b, 3-c",
+      "1-b, 2-c, 3-a",
+      "1-b, 2-a, 3-c",
+      "1-c, 2-a, 3-b"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-004-33ab",
+    "passport_id": "09-KIM-1048",
+    "question": "Yüksək temperaturda filizin tərkibindəki metalın reduksiyaedicilər vasitəsilə (C, CO, H2, aktiv metallar) metal şəklində alınması üsulu necə adlanır?",
+    "options": [
+      "Hidrometallurgiya",
+      "Elektroliz",
+      "Elektrometallurgiya",
+      "Pirometallurgiya"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-005-ae6e",
+    "passport_id": "09-KIM-1049",
+    "question": "Filizin tərkibində metalın miqdarı 0,5%-dən az olduqda sənayedə hansı üsuldan istifadə edilməsi məqsədəuyğundur?",
+    "options": [
+      "Hidrometallurgiya",
+      "Pirometallurgiya",
+      "Qovurma",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "metallar alınır:\nFilizin tərkibində metalın miqdarı az olduqda (0,5%-dən az) hidrometallurgiya üsulundan istifadə\nedilməsi məqsədəuyğundur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-006-7506",
+    "passport_id": "09-KIM-1050",
+    "question": "Na, K, Ca, Al kimi aktiv metalları sənayedə əsasən hansı üsulla alırlar?",
+    "options": [
+      "Hidrometallurgiya",
+      "Hidrogenotermiya",
+      "Karbonla reduksiya",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sənayedə metalların alınmasında, əsasən, 3 üsuldan - pirometallurgiya, hidrometallurgiya və\nelektrometallurgiya üsullarından istifadə edilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-007-c58d",
+    "passport_id": "09-KIM-1051",
+    "question": "Ərintilərə xüsusi xassələr vermək üçün metal və qeyri-metalların əlavə edilməsi prosesi necə adlanır?",
+    "options": [
+      "Korroziya",
+      "Elektroliz",
+      "Legirlənmə",
+      "Passivləşmə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Li ===\nHansı metalların polada əlavə edilməsi poladın korroziyaya qarşı davamlılığını artırır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-008-5515",
+    "passport_id": "09-KIM-1052",
+    "question": "Ərintilərə əlavə edildikdə onlara turşuların təsirinə qarşı davamlılıq verən element hansıdır?",
+    "options": [
+      "Silisium (Si)",
+      "Xrom (Cr)",
+      "Volfram (W)",
+      "Titan (Ti)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Məsələn, xrom\nCr– ərintiyə\nbərklik\nvə korroziyaya davamlılıq, silisium Si – turşuların təsirinə qarşı davamlılıq, volfram\nW\n– bərklik və istiyə qarşı möhkəmlik, titan\nTiisə istiyə və\nkorroziyaya davamlılıq,\nhəmçinin mexaniki möhkəmlik verir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-009-68a5",
+    "passport_id": "09-KIM-1053",
+    "question": "Aşağıdakılardan hansı qara metal ərintilərinə aiddir?",
+    "options": [
+      "Melxior",
+      "Çuqun və polad",
+      "Düralüminium",
+      "Tunc və bürünc"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A) ...3s\n3pC) 1s\n\nE) ...3s\n3pG) ...2s\nB) ...2s\n2pD) ...2s\nF) ...2s\n2pH) ...2p\n3sHansı elektron quruluşları qeyri-metal atomlarına aiddir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-010-6968",
+    "passport_id": "09-KIM-1054",
+    "question": "Alüminium, maqnezium və misin ərintisi (yüngül ərinti) necə adlanır?",
+    "options": [
+      "Nixrom",
+      "Tunc",
+      "Lehim",
+      "Düralüminium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "– Nə üçün bəzi bəzək əşyaları misin qalayla ərintisindən – bürüncdən hazırlanır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-011-016d",
+    "passport_id": "09-KIM-1055",
+    "question": "Sənayedə metalları almaq üçün yararlı olan təbii birləşmələr necə adlanır?",
+    "options": [
+      "Konsentrat",
+      "Şlaklar",
+      "Filiz",
+      "Ərintilər"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sənayedə\nmetalları almaq üçün yararlı olan təbii\nbirləşmələr\nfiliz\nadlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-012-1b12",
+    "passport_id": "09-KIM-1056",
+    "question": "Metallurgiya sənayesində filizin boş (lazımsız) süxurlardan təmizlənərək zənginləşdirilmiş halı necə adlanır?",
+    "options": [
+      "Konsentrat",
+      "Ərinti",
+      "Şlak",
+      "Katod metalı"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ona görə də filiz əvvəlcə emal\nedilir – boş (lazımsız) süxurlardan\ntəmizlənərək zənginləşdirilir, yəni\nkonsentrat şəklinə çevrilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-013-869c",
+    "passport_id": "09-KIM-1057",
+    "question": "Bürünc ərintisi əsasən hansı iki metalın qarışığından ibarətdir?",
+    "options": [
+      "Mis və Qalay",
+      "Mis və Sink",
+      "Dəmir və Karbon",
+      "Mis və Alüminium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Saf sink kövrək olduğundan, əsasən, onun ərintiləri,\nməsələn, mislə ərintisi olan bürünc tətbiq olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-014-8502",
+    "passport_id": "09-KIM-1058",
+    "question": "Yerli filiz yataqlarının işlənməsində hansı azərbaycanlı kimyaçının və onun elmi məktəbinin böyük rolu olmuşdur?",
+    "options": [
+      "Yusif Məmmədəliyevin",
+      "Əlihüseyn Quliyevin",
+      "Murtuza Nağıyevin",
+      "Həbibulla Şahtaxtinskinin"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Yerli filiz yataqlarının işlənməsində Azərbaycan\nkimyaçısı\n\nHəbibulla Şahtaxtinskinin\nonun elmi məktəbinin böyük rolu olmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-015-1164",
+    "passport_id": "09-KIM-1059",
+    "question": "Pirometallurgiya üsulu ilə bağlı aşağıdakı fikirlərdən hansı səhvdir?",
+    "options": [
+      "Misin təxminən 95%-i bu üsulla istehsal olunur.",
+      "Reduksiyaedici kimi karbon, dəmrov qazı (CO), hidrogen və fəal metallardan istifadə edilir.",
+      "Filizin tərkibində metalın miqdarı 0.5%-dən az olduqda ən ideal üsuldur.",
+      "Proses yüksək temperaturda (700-2000°C) həyata keçirilir."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-016-1d32",
+    "passport_id": "09-KIM-1060",
+    "question": "Metallar elektrokimyəvi gərginlik sırasında yerləşməsinə görə aşağıdakılardan hansı DOĞRUDUR?",
+    "options": [
+      "Soldan sağa getdikcə metalların reduksiyaedici xassəsi artır.",
+      "Sırada metal nə qədər solda yerləşirsə, o, kimyəvi cəhətdən bir o qədər fəaldır və asanlıqla oksidləşir.",
+      "Sırada metal nə qədər solda yerləşirsə, onun kationunun oksidləşdiricilik xassəsi bir o qədər güclü olur.",
+      "Hidrogendən sağda duran metallar bütün duru turşulardan hidrogeni asanlıqla sıxışdırıb çıxarır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası\nSu mühitində metalların aktivliyini (reduksiyaedici xassələrini) müqayisə etmək\nüçün metalların\nelektrokimyəvi gərginlik sırasından\nistifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-017-e609",
+    "passport_id": "09-KIM-1061",
+    "question": "Aşağıdakı metallardan hansı ən bərk metal hesab olunur?",
+    "options": [
+      "Dəmir",
+      "Osmium",
+      "Xrom",
+      "Volfram"
+    ],
+    "correctAnswer": 2,
+    "explanation": "– Hansı qələvi metalın duzlarından məişətdə geniş istifadə olunur?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-018-6ea9",
+    "passport_id": "09-KIM-1062",
+    "question": "Elektrokimyəvi gərginlik sırasında hidrogendən solda yerləşməsinə baxmayaraq, xlorid və duru sulfat turşularında həll olmayan (passivləşən) metal hansıdır?",
+    "options": [
+      "Sink (Zn)",
+      "Dəmir (Fe)",
+      "Mis (Cu)",
+      "Qurğuşun (Pb)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Qüvvətli ikiəsaslı turşu kimi sulfat\nturşusu suda məhlulda iki mərhələdə dissosiasiya edir:\nElektrokimyəvi gərginlik sırasında hidrogendən solda yerləşən metallar duru\nsulfat turşusundan hidrogeni çıxarır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-019-dee7",
+    "passport_id": "09-KIM-1063",
+    "question": "Plastikliyinə görə ən üstün olan və hətta qalınlığı 0.003 mm olan nazik təbəqə halına salına bilən metal hansıdır?",
+    "options": [
+      "Alüminium",
+      "Gümüş",
+      "Mis",
+      "Qızıl"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Qızılı döyməklə qalınlığı 0,003 mm olan nazik təbəqə almaq olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-020-ab68",
+    "passport_id": "09-KIM-1064",
+    "question": "Metalların elektrik və istilik keçiriciliyi, həmçinin metal parıltısına malik olması kristal qəfəsdə hansı zərrəciklərin yerdəyişməsi ilə əlaqədardır?",
+    "options": [
+      "Molekulların",
+      "Sərbəst elektronların",
+      "Müsbət yüklü kationların",
+      "Neytronların"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların\nyüksək istilik və elektrik keçiriciliyi\nonların kristal qəfəsində sərbəst\nelektronların yerdəyişməsi ilə əlaqədardır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-021-d759",
+    "passport_id": "09-KIM-1065",
+    "question": "Sıxlığı 5 q/sm³-dən az olan və 'yüngül metallar' qrupuna aid edilən elementlər sırasını göstərin:",
+    "options": [
+      "Zn, Fe, Cu, Hg",
+      "Li, Na, Mg, Al",
+      "Cr, W, Os, Pb",
+      "Au, Ag, Pt, Pd"
+    ],
+    "correctAnswer": 0,
+    "explanation": "– Nə üçün dövrün nömrəsi artdıqca metal xassəli elementlərin sayı da artır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-022-9e7b",
+    "passport_id": "09-KIM-1066",
+    "question": "Kimyəvi reaksiyalarda metalların göstərdiyi ümumi xassə hansıdır?",
+    "options": [
+      "Yalnız reduksiyaedici xassə",
+      "Yalnız oksidləşdirici xassə",
+      "Həm oksidləşdirici, həm reduksiyaedici xassə",
+      "İkili xassə (amfoter) göstərirlər"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-023-e317",
+    "passport_id": "09-KIM-1067",
+    "question": "Aşağıdakı metallardan hansı hidrogenlə birbaşa (qızdırıldıqda) reaksiyaya daxil OLAR?",
+    "options": [
+      "Dəmir (Fe)",
+      "Berillium (Be)",
+      "Mis (Cu)",
+      "Natrium (Na)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "n ü m u n ə\nNatrium birləşmələrinin kimyəvi xassələrinə aid hesablamalar\n78 q natrium-peroksid neçə litr (n.ş.) karbon qazı ilə reaksiyaya daxil olar?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-024-2d13",
+    "passport_id": "09-KIM-1068",
+    "question": "Otaq temperaturunda (adi şəraitdə) azotla reaksiyaya daxil olaraq nitrid əmələ gətirən metal hansıdır?",
+    "options": [
+      "Kalsium",
+      "Natrium",
+      "Alüminium",
+      "Litium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hidrogen-xlorid qazı, xlorid turşusundan fərqli olaraq, adi\nşəraitdə metallar və onların oksidləri ilə reaksiyaya daxil olmur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-025-403a",
+    "passport_id": "09-KIM-1069",
+    "question": "Nə üçün kalium metalı mis(II) sulfat (CuSO4) məhluluna əlavə edildikdə misi sıxışdırıb çıxara bilmir, baxmayaraq ki, gərginlik sırasında ondan solda yerləşir?",
+    "options": [
+      "Çünki mis kaliuma nisbətən daha güclü reduksiyaedicidir.",
+      "Çünki bu halda mis(II) sulfatın qatılığı kifayət etmir.",
+      "Çünki kalium ilk növbədə su ilə şiddətli reaksiyaya daxil olaraq qələvi (KOH) əmələ gətirir.",
+      "Çünki kalium passiv metaldır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Qüvvətli ikiəsaslı turşu kimi sulfat\nturşusu suda məhlulda iki mərhələdə dissosiasiya edir:\nElektrokimyəvi gərginlik sırasında hidrogendən solda yerləşən metallar duru\nsulfat turşusundan hidrogeni çıxarır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-026-4d07",
+    "passport_id": "09-KIM-1070",
+    "question": "Aşağıdakı metallardan hansı həm turşularla, həm də qələvilərlə reaksiyaya daxil olan ikili (amfoter) xassəli metaldır?",
+    "options": [
+      "Kalsium (Ca)",
+      "Dəmir (Fe)",
+      "Maqnezium (Mg)",
+      "Sink (Zn)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Yarımqrupda\nbordan talliuma doğru elementlərin metallıq xassələri\nartır:\nB –\nqeyri-metal, Al –\nikili xassəli (amfoter)\nmetal, In və Tl isə metallardır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-027-85d1",
+    "passport_id": "09-KIM-1071",
+    "question": "Metalların elektrokimyəvi gərginlik sırası hansı alim tərəfindən təklif edilmişdir?",
+    "options": [
+      "Dmitri Mendeleyev",
+      "A.Butlerov",
+      "L.Paulinq",
+      "N.Beketov"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-028-860f",
+    "passport_id": "09-KIM-1072",
+    "question": "Ən ağır və ən yüngül metallar hansı bənddə düzgün verilmişdir?",
+    "options": [
+      "Ən ağır: Osmium, Ən yüngül: Litium",
+      "Ən ağır: Qızıl, Ən yüngül: Maqnezium",
+      "Ən ağır: Dəmir, Ən yüngül: Alüminium",
+      "Ən ağır: Civə, Ən yüngül: Natrium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qələvi metalların (R) binar birləşmələrindən hansının formulu səhv verilmişdir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-029-96e7",
+    "passport_id": "09-KIM-1073",
+    "question": "Təbiətdə oksigenlə reaksiyaya girməyən və oksid əmələ gətirməyən metallar hansılardır?",
+    "options": [
+      "Natrium, Kalium",
+      "Sink, Xrom",
+      "Gümüş, Qızıl, Platin",
+      "Dəmir, Alüminium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Reaksiyalarda\ngüclü reduksiyaedici\nxassə göstərir; məsələn, yandırıldıqda havada mavi\nalovla yanır, bəzi metalları onların oksidlərindən reduksiya edir:\nDuzəmələgətirməyən oksid olmasına baxmayaraq yüksək təzyiq altında karbonmonooksid\nəridilmiş natrium-hidroksidlə qarşılıqlı təsirdə olur:\nTətbiqi.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-030-1b3b",
+    "passport_id": "09-KIM-1074",
+    "question": "Hansı kimyəvi tənlik metalların su ilə reaksiyasını DÜZGÜN əks etdirmir (və ya baş vermir)?",
+    "options": [
+      "Cu + H2O → CuO + H2",
+      "2Na + 2H2O → 2NaOH + H2",
+      "3Fe + 4H2O (buxar) → Fe3O4 + 4H2",
+      "Ca + 2H2O → Ca(OH)2 + H2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-031-0a09",
+    "passport_id": "09-KIM-1075",
+    "question": "Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması (aşınması) necə adlanır?",
+    "options": [
+      "Elektroliz",
+      "Passivləşmə",
+      "Reduksiya",
+      "Korroziya"
+    ],
+    "correctAnswer": 3,
+    "explanation": "• Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması\nkorroziya\nadlanır (latınca “korrodere”– aşınma).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-032-0d43",
+    "passport_id": "09-KIM-1076",
+    "question": "Dəmirin (və ya poladın) hava mühitində korroziyaya uğraması, yəni paslanması üçün əsas hansı iki amilin iştirakı mütləqdir?",
+    "options": [
+      "Kükürd və turşu",
+      "Oksigen və su (nəmlik)",
+      "Karbon qazı və işıq",
+      "Azot və hidrogen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Korroziyaya misal olaraq dəmirin havanın oksigeni ilə qarşılıqlı təsirini\ngöstərmək olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-033-7612",
+    "passport_id": "09-KIM-1077",
+    "question": "Dəmirin pasının tərkibini daha dəqiq hansı kimyəvi formulla ifadə etmək olar?",
+    "options": [
+      "FeO",
+      "Fe2O3 ∙ nH2O",
+      "FeCO3",
+      "Fe(OH)2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ona görə də dəmirin iki mərhələdə baş verən\npaslanmasını aşağıdakı tənliklərlə ifadə etmək olar:\n• Q E Y D •\nPasın tərkibini daha dəqiq olaraq Fe\n∙nH\nO formulu ilə göstərmək olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-034-6906",
+    "passport_id": "09-KIM-1078",
+    "question": "Nə üçün alüminium (Al) və sink (Zn) kimi fəal metallar təbiətdə dəmirdən daha az korroziyaya uğrayır?",
+    "options": [
+      "Çünki onların səthində əmələ gələn oksid təbəqəsi çox davamlı və qaz keçirməyəndir.",
+      "Çünki onlar qeyri-fəal metallar qrupuna daxildir.",
+      "Çünki onlar dəmirdən daha ağırdırlar.",
+      "Çünki onlar su ilə heç bir halda reaksiyaya girmirlər."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-035-16b2",
+    "passport_id": "09-KIM-1079",
+    "question": "Dəmir məmulatı korroziyadan qorumaq üçün üzərinə metaldan qoruyucu örtük çəkilmişdir. Əgər bu qoruyucu örtük dəmirdən fəal olarsa (məsələn, sink), örtük zədələndikdə hansı proses baş verəcək?",
+    "options": [
+      "Dəmir və sink hər ikisi eyni anda sürətlə korroziyaya uğrayacaq.",
+      "Dəmir dərhal paslanmağa başlayacaq.",
+      "Korroziya tamamilə dayanacaq.",
+      "Örtük (sink) özü korroziyaya uğrayacaq, dəmir isə qorunacaq."
+    ],
+    "correctAnswer": 1,
+    "explanation": "• Dəmirin səthindəki qoruyucu örtük dəmirdən passiv metaldan hazırlanarsa\n(Cu, Au, Ag və s.), qoruyucu ötrüyün dağıldığı yerdən dəmirin korroziyası\nbaşlanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-036-55fc",
+    "passport_id": "09-KIM-1080",
+    "question": "Əksinə, dəmir məmulatın üzərinə dəmirdən passiv metal (məsələn, mis - Cu) örtük çəkilərsə və həmin örtük zədələnərsə, korroziya necə gedəcək?",
+    "options": [
+      "Mis korroziyaya uğrayacaq, dəmir qorunacaq.",
+      "Korroziya baş verməyəcək.",
+      "Mis oksigeni dəmirdən uzaqlaşdıracaq.",
+      "Dəmir korroziyaya uğramağa başlayacaq."
+    ],
+    "correctAnswer": 2,
+    "explanation": "• Dəmirin səthindəki qoruyucu örtük dəmirdən passiv metaldan hazırlanarsa\n(Cu, Au, Ag və s.), qoruyucu ötrüyün dağıldığı yerdən dəmirin korroziyası\nbaşlanır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-037-ec8d",
+    "passport_id": "09-KIM-1081",
+    "question": "Məşhur Paris Eyfel qülləsini korroziyadan qorumaq üçün vaxtaşırı hansı tədbir görülür (qeyri-metal örtük tətbiqi)?",
+    "options": [
+      "Hər il qızdırılıb pası təmizlənir.",
+      "Yaxınlığına sink protektorlar quraşdırılır.",
+      "Üzərinə mis (Cu) təbəqəsi çəkilir.",
+      "Vaxtaşırı 60 ton boya ilə rənglənir."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu maraqlıdır\n1889-cu ildə istifadəyə verilmiş\nEyfel qülləsini korroziyadan qorumaq\nməqsədi ilə\nvaxtaşırı rəngləyirlər.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-038-11e7",
+    "passport_id": "09-KIM-1082",
+    "question": "Poladın tərkibinə təqribən 12% hansı metalı əlavə etdikdə korroziyaya davamlı 'paslanmayan polad' ərintisi alınır?",
+    "options": [
+      "Qızıl",
+      "Mis",
+      "Xrom",
+      "Qurğuşun"
+    ],
+    "correctAnswer": 2,
+    "explanation": "===\nƏrintilərin tərkibinə Ni,\nCo, Cu və Cr metallarını əlavə etdikdə korroziyaya davamlı ərintilər alınır; məsələn,\npoladın tərkibinə təqribən 12% xrom daxil etdikdə korroziyaya davamlı\npaslanmayan\npolad\nalınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-039-3609",
+    "passport_id": "09-KIM-1083",
+    "question": "Elektrolit mühitində (dəniz, yeraltı sular) gəminin dəmir gövdəsini və neft borularını qorumaq üçün daha fəal metal lövhənin (Mg, Al, Zn) pərçim edilməsi üsulu necə adlanır?",
+    "options": [
+      "Legirlənmə",
+      "İnhibitor əlavə edilməsi",
+      "Qalvanizasiya",
+      "Protektor mühafizəsi"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Protektor üsulunda isə dəmir konstruksiyaya\nfəal metalın yenidən pərçim edilməsi kifayət\nqədər tez və asan həyata keçirilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-040-326e",
+    "passport_id": "09-KIM-1084",
+    "question": "Protektor mühafizəsi üsulunun əsas çatışmayan cəhəti nədir?",
+    "options": [
+      "Ətraf mühiti həddindən artıq çirkləndirməsi.",
+      "Çox baha başa gəlməsi və yalnız qızıl pərçimlərdən istifadə olunması.",
+      "Protektorun su ilə dərhal partlayışla reaksiyaya girməsi.",
+      "Protektorun (aktiv metalın) dövri olaraq dağılıb qurtardıqdan sonra yenisi ilə əvəz olunmasının tələb edilməsi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Protektor mühafizəsi üsulunun çatışmayan cəhətini göstərin.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-041-10d7",
+    "passport_id": "09-KIM-1085",
+    "question": "Korroziyanın qarşısını almaq və ya sürətini azaltmaq üçün metalın təmasda olduğu mühitə qatılan xüsusi maddələr necə adlanır?",
+    "options": [
+      "İnhibitorlar",
+      "Katalizatorlar",
+      "Protektorlar",
+      "Aktivatorlar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "===\nKorroziyanın qarşısını almaq və ya onun sürətini\nazaltmaq üçün metalın təmasda olduğu mühitə\ninhibitor\nadlanan maddə qatılır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-043-d022",
+    "passport_id": "09-KIM-1086",
+    "question": "Dəmirin (və ya poladın) paslanma prosesinin mahiyyəti, əsasən, metalın hansı reaksiyasından ibarətdir?",
+    "options": [
+      "Reduksiya",
+      "Polimerləşmə",
+      "Parçalanma",
+      "Oksidləşmə"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Metalların alınmasının hər bir üsulunda, əsasən, hansı reduksiyaedicilərdən istifadə edilir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-044-d779",
+    "passport_id": "09-KIM-1087",
+    "question": "Nə üçün dəniz kənarında istismar olunan avtomaşınlar quru iqlimi olan yerlərdəkilərə nisbətən daha tez korroziyaya uğrayır?",
+    "options": [
+      "Çünki quru mühitdə paslanma ehtimalı 100%-dir.",
+      "Çünki havadakı rütubət və duz (elektrolit mühiti) paslanmanı sürətləndirir.",
+      "Çünki dəniz kənarında oksigen olmur.",
+      "Çünki dəniz suyu metalların səthini qoruyucu oksidlərlə bağlayır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ba ===\nNə üçün qaynadılmış suya salınmış dəmir mismar ağzıbağlı ampulada paslanmır\nNə üçün dəniz kənarında istismar olunan avtomaşınlar daha tez korroziyaya uğrayır?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-045-24b6",
+    "passport_id": "09-KIM-1088",
+    "question": "Korroziya barədə deyilən aşağıdakı ifadələrdən hansı SƏHVDİR?",
+    "options": [
+      "Paslanma – dəmir və polad məmulatların korroziyasıdır.",
+      "Korroziya – metal səthində metalın oksidləşmə məhsullarının əmələ gəlməsidir.",
+      "Mühitdə duzun (elektrolitin) olması korroziyanı sürətləndirir.",
+      "Korroziyanın sürəti metalın səthində əmələ gələn oksid təbəqəsinin xassəsindən (məsələn, məsaməli olmasından) qətiyyən asılı deyil."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ammonyak və nitrat turşusu haqqında deyilən ifadələrdən hansı səhvdir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-001-a5ce",
+    "passport_id": "09-KIM-1089",
+    "question": "Yer kürəsində kütləcə ən çox yayılan metal hansıdır?",
+    "options": [
+      "Mis",
+      "Kalsium",
+      "Alüminium",
+      "Dəmir"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-002-ac53",
+    "passport_id": "09-KIM-1090",
+    "question": "Aşağıdakı metallardan hansına təbiətdə daha çox sərbəst halda (külçə şəklində) rast gəlinir?",
+    "options": [
+      "Maqnezium",
+      "Qızıl",
+      "Alüminium",
+      "Natrium"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hansı metallara təbiətdə sərbəst halda rast gəlinir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-003-8b98",
+    "passport_id": "09-KIM-1091",
+    "question": "Mineralların və onların tərkibinin uyğunluğunu müəyyən edin: 1. Pirit, 2. Boksit, 3. Siderit. a. FeCO3, b. FeS2, c. Al2O3·nH2O",
+    "options": [
+      "1-a, 2-b, 3-c",
+      "1-b, 2-a, 3-c",
+      "1-b, 2-c, 3-a",
+      "1-c, 2-a, 3-b"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-004-2bb4",
+    "passport_id": "09-KIM-1092",
+    "question": "Yüksək temperaturda filizin tərkibindəki metalın reduksiyaedicilər vasitəsilə (C, CO, H2, aktiv metallar) metal şəklində alınması üsulu necə adlanır?",
+    "options": [
+      "Pirometallurgiya",
+      "Hidrometallurgiya",
+      "Elektroliz",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-005-18e5",
+    "passport_id": "09-KIM-1093",
+    "question": "Filizin tərkibində metalın miqdarı 0,5%-dən az olduqda sənayedə hansı üsuldan istifadə edilməsi məqsədəuyğundur?",
+    "options": [
+      "Qovurma",
+      "Elektrometallurgiya",
+      "Pirometallurgiya",
+      "Hidrometallurgiya"
+    ],
+    "correctAnswer": 3,
+    "explanation": "metallar alınır:\nFilizin tərkibində metalın miqdarı az olduqda (0,5%-dən az) hidrometallurgiya üsulundan istifadə\nedilməsi məqsədəuyğundur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-006-3fd4",
+    "passport_id": "09-KIM-1094",
+    "question": "Na, K, Ca, Al kimi aktiv metalları sənayedə əsasən hansı üsulla alırlar?",
+    "options": [
+      "Karbonla reduksiya",
+      "Hidrogenotermiya",
+      "Hidrometallurgiya",
+      "Elektrometallurgiya"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Sənayedə metalların alınmasında, əsasən, 3 üsuldan - pirometallurgiya, hidrometallurgiya və\nelektrometallurgiya üsullarından istifadə edilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-007-3621",
+    "passport_id": "09-KIM-1095",
+    "question": "Ərintilərə xüsusi xassələr vermək üçün metal və qeyri-metalların əlavə edilməsi prosesi necə adlanır?",
+    "options": [
+      "Legirlənmə",
+      "Elektroliz",
+      "Passivləşmə",
+      "Korroziya"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Li ===\nHansı metalların polada əlavə edilməsi poladın korroziyaya qarşı davamlılığını artırır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-008-846a",
+    "passport_id": "09-KIM-1096",
+    "question": "Ərintilərə əlavə edildikdə onlara turşuların təsirinə qarşı davamlılıq verən element hansıdır?",
+    "options": [
+      "Titan (Ti)",
+      "Silisium (Si)",
+      "Volfram (W)",
+      "Xrom (Cr)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məsələn, xrom\nCr– ərintiyə\nbərklik\nvə korroziyaya davamlılıq, silisium Si – turşuların təsirinə qarşı davamlılıq, volfram\nW\n– bərklik və istiyə qarşı möhkəmlik, titan\nTiisə istiyə və\nkorroziyaya davamlılıq,\nhəmçinin mexaniki möhkəmlik verir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-009-1f09",
+    "passport_id": "09-KIM-1097",
+    "question": "Aşağıdakılardan hansı qara metal ərintilərinə aiddir?",
+    "options": [
+      "Melxior",
+      "Düralüminium",
+      "Tunc və bürünc",
+      "Çuqun və polad"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A) ...3s\n3pC) 1s\n\nE) ...3s\n3pG) ...2s\nB) ...2s\n2pD) ...2s\nF) ...2s\n2pH) ...2p\n3sHansı elektron quruluşları qeyri-metal atomlarına aiddir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-010-6751",
+    "passport_id": "09-KIM-1098",
+    "question": "Alüminium, maqnezium və misin ərintisi (yüngül ərinti) necə adlanır?",
+    "options": [
+      "Tunc",
+      "Nixrom",
+      "Düralüminium",
+      "Lehim"
+    ],
+    "correctAnswer": 2,
+    "explanation": "– Nə üçün bəzi bəzək əşyaları misin qalayla ərintisindən – bürüncdən hazırlanır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-011-3516",
+    "passport_id": "09-KIM-1099",
+    "question": "Sənayedə metalları almaq üçün yararlı olan təbii birləşmələr necə adlanır?",
+    "options": [
+      "Ərintilər",
+      "Filiz",
+      "Şlaklar",
+      "Konsentrat"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sənayedə\nmetalları almaq üçün yararlı olan təbii\nbirləşmələr\nfiliz\nadlanır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-012-a4d9",
+    "passport_id": "09-KIM-1100",
+    "question": "Metallurgiya sənayesində filizin boş (lazımsız) süxurlardan təmizlənərək zənginləşdirilmiş halı necə adlanır?",
+    "options": [
+      "Konsentrat",
+      "Katod metalı",
+      "Ərinti",
+      "Şlak"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ona görə də filiz əvvəlcə emal\nedilir – boş (lazımsız) süxurlardan\ntəmizlənərək zənginləşdirilir, yəni\nkonsentrat şəklinə çevrilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-01-01-014-b3fa",
+    "passport_id": "09-KIM-1101",
+    "question": "Yerli filiz yataqlarının işlənməsində hansı azərbaycanlı kimyaçının və onun elmi məktəbinin böyük rolu olmuşdur?",
+    "options": [
+      "Əlihüseyn Quliyevin",
+      "Həbibulla Şahtaxtinskinin",
+      "Murtuza Nağıyevin",
+      "Yusif Məmmədəliyevin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Yerli filiz yataqlarının işlənməsində Azərbaycan\nkimyaçısı\n\nHəbibulla Şahtaxtinskinin\nonun elmi məktəbinin böyük rolu olmuşdur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-015-ce91",
+    "passport_id": "09-KIM-1102",
+    "question": "Pirometallurgiya üsulu ilə bağlı aşağıdakı fikirlərdən hansı səhvdir?",
+    "options": [
+      "Filizin tərkibində metalın miqdarı 0.5%-dən az olduqda ən ideal üsuldur.",
+      "Reduksiyaedici kimi karbon, dəmrov qazı (CO), hidrogen və fəal metallardan istifadə edilir.",
+      "Proses yüksək temperaturda (700-2000°C) həyata keçirilir.",
+      "Misin təxminən 95%-i bu üsulla istehsal olunur."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pirometallurgiya üsulunda ===\nfilizin tərkibindəki metal yüksək temperaturda\n(700-2000°C) həyata keçirilən bir sıra proseslərin sonunda (C, CO, H2, aktiv metallar vasitəsilə)\nreduksiya olunaraq metal şəklində\nalınır (tənlik (t.): 1, 2 və 3b).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-016-015c",
+    "passport_id": "09-KIM-1103",
+    "question": "Metallar elektrokimyəvi gərginlik sırasında yerləşməsinə görə aşağıdakılardan hansı DOĞRUDUR?",
+    "options": [
+      "Sırada metal nə qədər solda yerləşirsə, onun kationunun oksidləşdiricilik xassəsi bir o qədər güclü olur.",
+      "Sırada metal nə qədər solda yerləşirsə, o, kimyəvi cəhətdən bir o qədər fəaldır və asanlıqla oksidləşir.",
+      "Soldan sağa getdikcə metalların reduksiyaedici xassəsi artır.",
+      "Hidrogendən sağda duran metallar bütün duru turşulardan hidrogeni asanlıqla sıxışdırıb çıxarır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası\nSu mühitində metalların aktivliyini (reduksiyaedici xassələrini) müqayisə etmək\nüçün metalların\nelektrokimyəvi gərginlik sırasından\nistifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-017-7a9c",
+    "passport_id": "09-KIM-1104",
+    "question": "Aşağıdakı metallardan hansı ən bərk metal hesab olunur?",
+    "options": [
+      "Dəmir",
+      "Volfram",
+      "Xrom",
+      "Osmium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "– Hansı qələvi metalın duzlarından məişətdə geniş istifadə olunur?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-018-b895",
+    "passport_id": "09-KIM-1105",
+    "question": "Elektrokimyəvi gərginlik sırasında hidrogendən solda yerləşməsinə baxmayaraq, xlorid və duru sulfat turşularında həll olmayan (passivləşən) metal hansıdır?",
+    "options": [
+      "Qurğuşun (Pb)",
+      "Mis (Cu)",
+      "Sink (Zn)",
+      "Dəmir (Fe)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Qüvvətli ikiəsaslı turşu kimi sulfat\nturşusu suda məhlulda iki mərhələdə dissosiasiya edir:\nElektrokimyəvi gərginlik sırasında hidrogendən solda yerləşən metallar duru\nsulfat turşusundan hidrogeni çıxarır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-020-9df2",
+    "passport_id": "09-KIM-1106",
+    "question": "Metalların elektrik və istilik keçiriciliyi, həmçinin metal parıltısına malik olması kristal qəfəsdə hansı zərrəciklərin yerdəyişməsi ilə əlaqədardır?",
+    "options": [
+      "Molekulların",
+      "Müsbət yüklü kationların",
+      "Sərbəst elektronların",
+      "Neytronların"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların\nyüksək istilik və elektrik keçiriciliyi\nonların kristal qəfəsində sərbəst\nelektronların yerdəyişməsi ilə əlaqədardır.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-021-3ace",
+    "passport_id": "09-KIM-1107",
+    "question": "Sıxlığı 5 q/sm³-dən az olan və 'yüngül metallar' qrupuna aid edilən elementlər sırasını göstərin:",
+    "options": [
+      "Au, Ag, Pt, Pd",
+      "Cr, W, Os, Pb",
+      "Zn, Fe, Cu, Hg",
+      "Li, Na, Mg, Al"
+    ],
+    "correctAnswer": 0,
+    "explanation": "– Nə üçün dövrün nömrəsi artdıqca metal xassəli elementlərin sayı da artır?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-022-c58b",
+    "passport_id": "09-KIM-1108",
+    "question": "Kimyəvi reaksiyalarda metalların göstərdiyi ümumi xassə hansıdır?",
+    "options": [
+      "Yalnız reduksiyaedici xassə",
+      "Yalnız oksidləşdirici xassə",
+      "İkili xassə (amfoter) göstərirlər",
+      "Həm oksidləşdirici, həm reduksiyaedici xassə"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların kimyəvi xassələri\nMetalların kimyəvi xassələri onların atomlarının öz valent elektronlarını asanlıqla\nverib, müsbət yüklü ionlara çevrilməsi qabiliyyəti ilə müəyyən olunur:\nM – ne\n[[MERGE_NEXT]]\n+.Ona görə də kimyəvi reaksiyalarda metal atomları (\n) həmişə\nreduksiyaedici\nxassə\ngöstərir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-023-afe5",
+    "passport_id": "09-KIM-1109",
+    "question": "Aşağıdakı metallardan hansı hidrogenlə birbaşa (qızdırıldıqda) reaksiyaya daxil OLAR?",
+    "options": [
+      "Natrium (Na)",
+      "Mis (Cu)",
+      "Dəmir (Fe)",
+      "Berillium (Be)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "n ü m u n ə\nNatrium birləşmələrinin kimyəvi xassələrinə aid hesablamalar\n78 q natrium-peroksid neçə litr (n.ş.) karbon qazı ilə reaksiyaya daxil olar?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-024-60b6",
+    "passport_id": "09-KIM-1110",
+    "question": "Otaq temperaturunda (adi şəraitdə) azotla reaksiyaya daxil olaraq nitrid əmələ gətirən metal hansıdır?",
+    "options": [
+      "Alüminium",
+      "Kalsium",
+      "Natrium",
+      "Litium"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hidrogen-xlorid qazı, xlorid turşusundan fərqli olaraq, adi\nşəraitdə metallar və onların oksidləri ilə reaksiyaya daxil olmur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-026-4473",
+    "passport_id": "09-KIM-1111",
+    "question": "Aşağıdakı metallardan hansı həm turşularla, həm də qələvilərlə reaksiyaya daxil olan ikili (amfoter) xassəli metaldır?",
+    "options": [
+      "Dəmir (Fe)",
+      "Kalsium (Ca)",
+      "Maqnezium (Mg)",
+      "Sink (Zn)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Yarımqrupda\nbordan talliuma doğru elementlərin metallıq xassələri\nartır:\nB –\nqeyri-metal, Al –\nikili xassəli (amfoter)\nmetal, In və Tl isə metallardır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-027-fdc7",
+    "passport_id": "09-KIM-1112",
+    "question": "Metalların elektrokimyəvi gərginlik sırası hansı alim tərəfindən təklif edilmişdir?",
+    "options": [
+      "N.Beketov",
+      "Dmitri Mendeleyev",
+      "L.Paulinq",
+      "A.Butlerov"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-028-ab86",
+    "passport_id": "09-KIM-1113",
+    "question": "Ən ağır və ən yüngül metallar hansı bənddə düzgün verilmişdir?",
+    "options": [
+      "Ən ağır: Dəmir, Ən yüngül: Alüminium",
+      "Ən ağır: Osmium, Ən yüngül: Litium",
+      "Ən ağır: Civə, Ən yüngül: Natrium",
+      "Ən ağır: Qızıl, Ən yüngül: Maqnezium"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qələvi metalların (R) binar birləşmələrindən hansının formulu səhv verilmişdir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-029-7367",
+    "passport_id": "09-KIM-1114",
+    "question": "Təbiətdə oksigenlə reaksiyaya girməyən və oksid əmələ gətirməyən metallar hansılardır?",
+    "options": [
+      "Gümüş, Qızıl, Platin",
+      "Dəmir, Alüminium",
+      "Natrium, Kalium",
+      "Sink, Xrom"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reaksiyalarda\ngüclü reduksiyaedici\nxassə göstərir; məsələn, yandırıldıqda havada mavi\nalovla yanır, bəzi metalları onların oksidlərindən reduksiya edir:\nDuzəmələgətirməyən oksid olmasına baxmayaraq yüksək təzyiq altında karbonmonooksid\nəridilmiş natrium-hidroksidlə qarşılıqlı təsirdə olur:\nTətbiqi.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-03-03-030-e06b",
+    "passport_id": "09-KIM-1115",
+    "question": "Hansı kimyəvi tənlik metalların su ilə reaksiyasını DÜZGÜN əks etdirmir (və ya baş vermir)?",
+    "options": [
+      "2Na + 2H2O → 2NaOH + H2",
+      "Ca + 2H2O → Ca(OH)2 + H2",
+      "Cu + H2O → CuO + H2",
+      "3Fe + 4H2O (buxar) → Fe3O4 + 4H2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların elektrokimyəvi gərginlik sırası onların hansı xüsusiyyətini xarakterizə edir?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-031-ad72",
+    "passport_id": "09-KIM-1116",
+    "question": "Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması (aşınması) necə adlanır?",
+    "options": [
+      "Korroziya",
+      "Elektroliz",
+      "Reduksiya",
+      "Passivləşmə"
+    ],
+    "correctAnswer": 0,
+    "explanation": "• Metalların və onların ərintilərinin ətraf mühitin təsirindən dağılması\nkorroziya\nadlanır (latınca “korrodere”– aşınma).",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-032-f4a5",
+    "passport_id": "09-KIM-1117",
+    "question": "Dəmirin (və ya poladın) hava mühitində korroziyaya uğraması, yəni paslanması üçün əsas hansı iki amilin iştirakı mütləqdir?",
+    "options": [
+      "Kükürd və turşu",
+      "Karbon qazı və işıq",
+      "Azot və hidrogen",
+      "Oksigen və su (nəmlik)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Korroziyaya misal olaraq dəmirin havanın oksigeni ilə qarşılıqlı təsirini\ngöstərmək olar.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-034-8f87",
+    "passport_id": "09-KIM-1118",
+    "question": "Nə üçün alüminium (Al) və sink (Zn) kimi fəal metallar təbiətdə dəmirdən daha az korroziyaya uğrayır?",
+    "options": [
+      "Çünki onlar qeyri-fəal metallar qrupuna daxildir.",
+      "Çünki onlar su ilə heç bir halda reaksiyaya girmirlər.",
+      "Çünki onlar dəmirdən daha ağırdırlar.",
+      "Çünki onların səthində əmələ gələn oksid təbəqəsi çox davamlı və qaz keçirməyəndir."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların təbiətdə yayılması\nYer kürəsində kütləcə ən çox yayılan metallar - alüminium (≈8%) və dəmirdir (≈5%).",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-035-c327",
+    "passport_id": "09-KIM-1119",
+    "question": "Dəmir məmulatı korroziyadan qorumaq üçün üzərinə metaldan qoruyucu örtük çəkilmişdir. Əgər bu qoruyucu örtük dəmirdən fəal olarsa (məsələn, sink), örtük zədələndikdə hansı proses baş verəcək?",
+    "options": [
+      "Örtük (sink) özü korroziyaya uğrayacaq, dəmir isə qorunacaq.",
+      "Korroziya tamamilə dayanacaq.",
+      "Dəmir və sink hər ikisi eyni anda sürətlə korroziyaya uğrayacaq.",
+      "Dəmir dərhal paslanmağa başlayacaq."
+    ],
+    "correctAnswer": 1,
+    "explanation": "• Dəmirin səthindəki qoruyucu örtük dəmirdən passiv metaldan hazırlanarsa\n(Cu, Au, Ag və s.), qoruyucu ötrüyün dağıldığı yerdən dəmirin korroziyası\nbaşlanır.",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-037-e467",
+    "passport_id": "09-KIM-1120",
+    "question": "Məşhur Paris Eyfel qülləsini korroziyadan qorumaq üçün vaxtaşırı hansı tədbir görülür (qeyri-metal örtük tətbiqi)?",
+    "options": [
+      "Vaxtaşırı 60 ton boya ilə rənglənir.",
+      "Hər il qızdırılıb pası təmizlənir.",
+      "Üzərinə mis (Cu) təbəqəsi çəkilir.",
+      "Yaxınlığına sink protektorlar quraşdırılır."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bu maraqlıdır\n1889-cu ildə istifadəyə verilmiş\nEyfel qülləsini korroziyadan qorumaq\nməqsədi ilə\nvaxtaşırı rəngləyirlər.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-038-6600",
+    "passport_id": "09-KIM-1121",
+    "question": "Poladın tərkibinə təqribən 12% hansı metalı əlavə etdikdə korroziyaya davamlı 'paslanmayan polad' ərintisi alınır?",
+    "options": [
+      "Mis",
+      "Xrom",
+      "Qızıl",
+      "Qurğuşun"
+    ],
+    "correctAnswer": 1,
+    "explanation": "===\nƏrintilərin tərkibinə Ni,\nCo, Cu və Cr metallarını əlavə etdikdə korroziyaya davamlı ərintilər alınır; məsələn,\npoladın tərkibinə təqribən 12% xrom daxil etdikdə korroziyaya davamlı\npaslanmayan\npolad\nalınır.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-039-3cd6",
+    "passport_id": "09-KIM-1122",
+    "question": "Elektrolit mühitində (dəniz, yeraltı sular) gəminin dəmir gövdəsini və neft borularını qorumaq üçün daha fəal metal lövhənin (Mg, Al, Zn) pərçim edilməsi üsulu necə adlanır?",
+    "options": [
+      "Legirlənmə",
+      "Protektor mühafizəsi",
+      "İnhibitor əlavə edilməsi",
+      "Qalvanizasiya"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Protektor üsulunda isə dəmir konstruksiyaya\nfəal metalın yenidən pərçim edilməsi kifayət\nqədər tez və asan həyata keçirilir.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-040-065c",
+    "passport_id": "09-KIM-1123",
+    "question": "Protektor mühafizəsi üsulunun əsas çatışmayan cəhəti nədir?",
+    "options": [
+      "Protektorun (aktiv metalın) dövri olaraq dağılıb qurtardıqdan sonra yenisi ilə əvəz olunmasının tələb edilməsi.",
+      "Çox baha başa gəlməsi və yalnız qızıl pərçimlərdən istifadə olunması.",
+      "Ətraf mühiti həddindən artıq çirkləndirməsi.",
+      "Protektorun su ilə dərhal partlayışla reaksiyaya girməsi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Protektor mühafizəsi üsulunun çatışmayan cəhətini göstərin.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-042-c813",
+    "passport_id": "09-KIM-1124",
+    "question": "Qatı sulfat turşusunu polad qablarda saxladıqda və daşıdıqda korroziyanı ləngitmək üçün hansı üsuldan istifadə olunur?",
+    "options": [
+      "Mühitə inhibitorların əlavə edilməsi.",
+      "Daxildən sink qatının çəkilməsi.",
+      "Suyun istiliyinin artırılması.",
+      "Xaricdən protektor pərçimlənməsi."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Məsələn, qatı sulfat turşusunun polad qablarda saxlanması və daşınmasında inhibitorlardan\nistifadə olunur.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-043-702b",
+    "passport_id": "09-KIM-1125",
+    "question": "Dəmirin (və ya poladın) paslanma prosesinin mahiyyəti, əsasən, metalın hansı reaksiyasından ibarətdir?",
+    "options": [
+      "Reduksiya",
+      "Oksidləşmə",
+      "Polimerləşmə",
+      "Parçalanma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Metalların alınmasının hər bir üsulunda, əsasən, hansı reduksiyaedicilərdən istifadə edilir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-03-03-044-d0e3",
+    "passport_id": "09-KIM-1126",
+    "question": "Nə üçün dəniz kənarında istismar olunan avtomaşınlar quru iqlimi olan yerlərdəkilərə nisbətən daha tez korroziyaya uğrayır?",
+    "options": [
+      "Çünki dəniz kənarında oksigen olmur.",
+      "Çünki havadakı rütubət və duz (elektrolit mühiti) paslanmanı sürətləndirir.",
+      "Çünki quru mühitdə paslanma ehtimalı 100%-dir.",
+      "Çünki dəniz suyu metalların səthini qoruyucu oksidlərlə bağlayır."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ba ===\nNə üçün qaynadılmış suya salınmış dəmir mismar ağzıbağlı ampulada paslanmır\nNə üçün dəniz kənarında istismar olunan avtomaşınlar daha tez korroziyaya uğrayır?",
+    "difficulty": "çətin",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-045-08ed",
+    "passport_id": "09-KIM-1127",
+    "question": "Korroziya barədə deyilən aşağıdakı ifadələrdən hansı SƏHVDİR?",
+    "options": [
+      "Korroziya – metal səthində metalın oksidləşmə məhsullarının əmələ gəlməsidir.",
+      "Mühitdə duzun (elektrolitin) olması korroziyanı sürətləndirir.",
+      "Paslanma – dəmir və polad məmulatların korroziyasıdır.",
+      "Korroziyanın sürəti metalın səthində əmələ gələn oksid təbəqəsinin xassəsindən (məsələn, məsaməli olmasından) qətiyyən asılı deyil."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ammonyak və nitrat turşusu haqqında deyilən ifadələrdən hansı səhvdir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-042-2445",
+    "passport_id": "09-KIM-1128",
+    "question": "Şagirdlərin dərsdə fəallığını artırmaq üçün ən effektiv metod hansıdır?",
+    "options": [
+      "Yalnız mühazirə oxumaq",
+      "İnteraktiv təlim metodlarından və qrup işlərindən istifadə etmək",
+      "Şagirdlərə çoxlu ev tapşırığı vermək",
+      "Dərsi yalnız testlərlə keçmək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "– Qələvi metallardan ən fəalı hansıdır?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0101-H1F01-02-02-013-083f",
+    "passport_id": "09-KIM-1129",
+    "question": "Təbii qazın əsas tərkib hissəsini (80-97%) hansı karbohidrogen təşkil edir?",
+    "options": [
+      "Etan",
+      "Propan",
+      "Metan",
+      "Butan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "O, qanda şəkərin miqdarını\ntənzimləyən insulinin tərkib hissəsini təşkil edir, insanın boyartımını\ntənzimləyir, skeletin, immun sisteminin formalaşmasında mühüm rol\noynayır, infeksion xəstəliklər və xərçənglə mübarizədə iştirak edir.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "1. Metalların icmalı, təbiətdə tapılması və alınmasının ümumi üsulları",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-01-01-019-1c58",
+    "passport_id": "09-KIM-1130",
+    "question": "Stirolun adi şəraitdə bromlu suyu rəngsizləşdirməsinin səbəbi molekulunda nəyin olmasıdır?",
+    "options": [
+      "Yalnız tək rabitələrin olması",
+      "Tərkibində oksigenin olması",
+      "Aromatik həlqənin olmaması",
+      "Yan zəncirdə ikiqat rabitənin (doymamış radikalın) olması"
+    ],
+    "correctAnswer": 3,
+    "explanation": "O, adi şəraitdə turşulara,\nqələvilərə, oksidləşdiricilərə qarşı davamlıdır, bromlu suyu və kalium-permanqanat\nməhlulunu\nrəngsizləşdirmir\n.Metan\nəvəzetmə, oksidləşmə\nparçalanma\nreaksiyalarına daxil olur.",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0102-H1F01-02-02-025-627e",
+    "passport_id": "09-KIM-1131",
+    "question": "Mətndəki hesablamaya görə, 26 qram stirol neçə qram bromlu suyu rəngsizləşdirə bilir?",
+    "options": [
+      "1000 q",
+      "500 q",
+      "100 q",
+      "2000 q"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bu məlumata əsasən suallara\ncavab verin:\nBe, Mg və Ca metallarından hansının ikisinin səthində əmələ gələn oksid təbəqəsi bu\nmetalları korroziyadan qoruya bilir?",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "2. Metalların ümumi fiziki və kimyəvi xassələri",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "conceptual_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-033-002f",
+    "passport_id": "09-KIM-1132",
+    "question": "Formativ qiymətləndirmənin əsas məqsədi nədən ibarətdir?",
+    "options": [
+      "Şagirdi cəzalandırmaq",
+      "Tədris prosesinin gedişatını izləmək və inkişafı təmin etmək",
+      "Yalnız yekun bal yazmaq",
+      "Şagirdin valideynlərinə hesabat vermək"
+    ],
+    "correctAnswer": 1,
+    "explanation": "– Kalsiumun tənlikdə göstərilən birləşmələrinin praktik əhəmiyyəti nədən ibarətdir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "context_error",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-02-02-036-113b",
+    "passport_id": "09-KIM-1133",
+    "question": "Təhsil prosesində differensial yanaşma nəzərdə tutur:",
+    "options": [
+      "Bütün şagirdlərə eyni tapşırıqların verilməsini",
+      "Yalnız zəif oxuyanlara diqqət ayrılmasını",
+      "Şagirdlərin fərdi öyrənmə xüsusiyyətlərinin nəzərə alınmasını",
+      "Tədris materialının yalnız bir üsulla keçilməsini"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Metalların ümumi fiziki xassələri\nMetalların fiziki xassələrinin dəyişməsi sıralarını nəzərdən keçirin və suallara cavab verin.",
+    "difficulty": "orta",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "miscalculation",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  },
+  {
+    "id": "09-004-0103-H1F01-01-01-041-fc0d",
+    "passport_id": "09-KIM-1134",
+    "question": "Şagirdlərdə tənqidi təfəkkürü inkişaf etdirmək üçün ən çox hansı tipli suallardan istifadə olunmalıdır?",
+    "options": [
+      "Qapalı və tək cavablı",
+      "Yalnız əzbərçiliyə əsaslanan",
+      "Bəli-Xeyr cavablı",
+      "Açıq tipli və düşünməyə sövq edən"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Metalların alınmasının hər bir üsulunda, əsasən, hansı reduksiyaedicilərdən istifadə edilir?",
+    "difficulty": "sadə",
+    "bloom_level": "bilmə",
+    "topic": "3. Metalların korroziyası. Korroziyadan mühafizə",
+    "correct_answer": "A",
+    "distractor_diagnostics": {
+      "0": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 0"
+      },
+      "1": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 1"
+      },
+      "2": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 2"
+      },
+      "3": {
+        "error_type": "typical_mistake",
+        "reason": "Yanlış variant təhlili: 3"
+      }
+    }
+  }
+]

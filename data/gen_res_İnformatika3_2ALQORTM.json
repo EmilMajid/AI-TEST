@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-INF-2ALQORTM-01",
+    "question": "İnsanlar bir qrupa aid obyektlər haqqında danışarkən istifadə etdikləri “hamısı”, “heç biri”, “bəzisi” sözləri informatikada necə adlanır?",
+    "options": {
+      "A": "Ümumi adlar",
+      "B": "Xüsusi adlar",
+      "C": "Kvantor sözlər",
+      "D": "Keyfiyyət əlamətləri"
+    },
+    "correct_answer": "C",
+    "explanation": "İnsanlar bir qrupa aid obyektlər haqqında danışarkən “hamısı”, “heç biri”, “bəzisi” sözlərindən istifadə edirlər. Belə sözlərə informatikada kvantor sözlər deyilir.",
+    "distractor_diagnostics": {
+      "A": "Bütün obyektlərə aid ümumi addır, lakin bu sözlər ad deyil.",
+      "B": "Qrupda obyekti seçdirmək üçün olan addır.",
+      "D": "Obyektin ölçə bilmədiyimiz xüsusiyyətləridir."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-02",
+    "question": "Cümlədə “hamısı” və “heç biri” sözləri varsa, fikir nəyə aid olur?",
+    "options": {
+      "A": "Qrupa daxil olan bütün obyektlərə",
+      "B": "Qrupdakı obyektlərin bir hissəsinə",
+      "C": "Yalnız təbii informasiya mənbələrinə",
+      "D": "Heç bir obyektə"
+    },
+    "correct_answer": "A",
+    "explanation": "Əgər cümlədə “hamısı” və “heç biri” sözləri varsa, onda fikir qrupa daxil olan bütün obyektlərə aiddir.",
+    "distractor_diagnostics": {
+      "B": "Bu 'bəzisi' sözü olduqda aiddir.",
+      "C": "Təbii informasiya mənbəyi ilə birbaşa əlaqəsi yoxdur.",
+      "D": "'Heç biri' sözü belə bütün qrup obyektlərinə tətbiq olunur."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-03",
+    "question": "Bəzi hadisələrin hər hansı qayda ilə bir-birini əvəzləməsi necə adlanır?",
+    "options": {
+      "A": "Kvantor söz",
+      "B": "Qanunauyğunluq",
+      "C": "Budaqlanma",
+      "D": "Dövr"
+    },
+    "correct_answer": "B",
+    "explanation": "Bəzi hadisələr hər hansı qayda ilə bir-birini əvəzləyir. Bu halda deyirlər ki, hadisələr ardıcıllığında müəyyən qanunauyğunluq var.",
+    "distractor_diagnostics": {
+      "A": "Söz növləridir.",
+      "C": "Alqoritmdə şərtə görə yaranan ayrılmadır.",
+      "D": "Alqoritmdə təkrarlanan addımlardır."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-04",
+    "question": "Bir qrupdakı qanunauyğunluğun başqa qrupdakı qanunauyğunluğa oxşar olması qaydası ilə alınan qanunauyğunluğa nə deyilir?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Şərti qanunauyğunluq",
+      "C": "Dövri ardıcıllıq",
+      "D": "Bənzər qanunauyğunluq"
+    },
+    "correct_answer": "D",
+    "explanation": "Bu qayda ilə alınan qanunauyğunluğa bənzər qanunauyğunluq deyirlər.",
+    "distractor_diagnostics": {
+      "A": "Ardıcıllıqla icra edilən alqoritm növüdür.",
+      "B": "Belə bir termin mətndə yoxdur.",
+      "C": "Təkrarlanan addımlara aiddir, qanunauyğunluğa yox."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-05",
+    "question": "Müəyyən məqsədə çatmaq üçün yerinə yetirilən hərəkətlər ardıcıllığı nə adlanır?",
+    "options": {
+      "A": "Alqoritm",
+      "B": "Qanunauyğunluq",
+      "C": "Prosessor",
+      "D": "Əməliyyat sistemi"
+    },
+    "correct_answer": "A",
+    "explanation": "Müəyyən məqsədə çatmaq üçün yerinə yetirilən hərəkətlər ardıcıllığı alqoritm adlanır.",
+    "distractor_diagnostics": {
+      "B": "Hadisələrin bir qayda ilə əvəzləməsidir.",
+      "C": "Kompüter qurğusudur.",
+      "D": "Kompüteri idarə edən proqramdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-06",
+    "question": "İnformasiya kimi, alqoritmi də müxtəlif formalarda təqdim etmək olar. Bu formalar hansılardır?",
+    "options": {
+      "A": "Yalnız sözlə",
+      "B": "Səs, qoxu və dadla",
+      "C": "Sözlə, işarətlərlə, sxemlə",
+      "D": "Yalnız blok-sxemlə"
+    },
+    "correct_answer": "C",
+    "explanation": "İnformasiya kimi, alqoritmi də müxtəlif formalarda təqdim etmək olar: sözlə, işarətlərlə, sxemlə.",
+    "distractor_diagnostics": {
+      "A": "Digər təqdimat formaları da var.",
+      "B": "Bunlar informasiya növləridir.",
+      "D": "Digər formalarda da təqdim oluna bilər."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-07",
+    "question": "Əgər alqoritmdə hərəkətlər yazıldıqları ardıcıllıqla icra olunursa, belə alqoritmə nə deyilir?",
+    "options": {
+      "A": "Budaqlanan alqoritm",
+      "B": "Xətti, yaxud ardıcıl alqoritm",
+      "C": "Dövri alqoritm",
+      "D": "Şərti alqoritm"
+    },
+    "correct_answer": "B",
+    "explanation": "Əgər alqoritmdə hərəkətlər yazıldıqları ardıcıllıqla icra olunursa, belə alqoritmə ardıcıl, yaxud xətti alqoritm deyilir.",
+    "distractor_diagnostics": {
+      "A": "Şərtdən asılı olan alqoritmdir.",
+      "C": "Addımları təkrarlanan alqoritmdir.",
+      "D": "Şərtdən asılı olan alqoritmdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-08",
+    "question": "Alqoritmdə addımların yerinə yetirilmə ardıcıllığı müəyyən şərtdən asılı olarsa, belə alqoritm necə adlanır?",
+    "options": {
+      "A": "Xətti alqoritm",
+      "B": "Ardıcıl alqoritm",
+      "C": "Dövri alqoritm",
+      "D": "Şərti, yaxud budaqlanan alqoritm"
+    },
+    "correct_answer": "D",
+    "explanation": "Alqoritmdə addımların yerinə yetirilmə ardıcıllığı müəyyən şərtdən asılı olarsa, belə alqoritmə şərti, yaxud budaqlanan alqoritm deyilir.",
+    "distractor_diagnostics": {
+      "A": "Hərəkətlərin ardıcıl icra olunduğu alqoritmdir.",
+      "B": "Hərəkətlərin ardıcıl icra olunduğu alqoritmdir.",
+      "C": "Təkrarlanan addımları olan alqoritmdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-09",
+    "question": "Şərti alqoritmlərin blok-sxemlərində budaqlanma hansı həndəsi fiqurla göstərilir?",
+    "options": {
+      "A": "Kvadrat şəklində",
+      "B": "Üçbucaq şəklində",
+      "C": "Romb şəklində",
+      "D": "Dairə şəklində"
+    },
+    "correct_answer": "C",
+    "explanation": "Budaqlanma romb şəklində göstərilir. Bu rombun bir girişi, iki çıxışı olur.",
+    "distractor_diagnostics": {
+      "A": "Budaqlanma bloku kimi istifadə olunmur.",
+      "B": "Budaqlanma bloku kimi istifadə olunmur.",
+      "D": "Budaqlanma bloku kimi istifadə olunmur."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-10",
+    "question": "Məqsədəuyğun yolun seçilməsi ilə bağlı hansı fikir doğrudur?",
+    "options": {
+      "A": "Ən qısa yol həmişə məqsədəuyğun yol olmur",
+      "B": "Ən qısa yol həmişə məqsədəuyğun yoldur",
+      "C": "Məqsədəuyğun yol həmişə ən uzun yoldur",
+      "D": "Bütün yollar məqsədəuyğun yoldur"
+    },
+    "correct_answer": "A",
+    "explanation": "Deməli, ən qısa yol həmişə məqsədəuyğun yol olmur. Seçim məqsəddən asılı olaraq dəyişə bilər.",
+    "distractor_diagnostics": {
+      "B": "Məqsəddən asılı olaraq ən qısa yol uyğun olmaya bilər.",
+      "C": "Yolun uzunluğu məqsəddən asılıdır, həmişə uzun olmur.",
+      "D": "Məqsəddən kənara çıxan yollar uyğun deyil."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-11",
+    "question": "Alqoritmdə təkrarlanan addımlar ardıcıllığı necə adlanır?",
+    "options": {
+      "A": "Budaqlanma",
+      "B": "Dövr",
+      "C": "Şərt",
+      "D": "Xətti ardıcıllıq"
+    },
+    "correct_answer": "B",
+    "explanation": "Alqoritmdə təkrarlanan addımlar ardıcıllığı dövr adlanır.",
+    "distractor_diagnostics": {
+      "A": "Şərtə görə fərqli yolların seçilməsidir.",
+      "C": "Alqoritmin gedişatını təyin edən qərardır.",
+      "D": "Addımların təkrar olunmadan ardıcıl icrasıdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-12",
+    "question": "Kompüterin verilən informasiyanı emal edən, nəticəni yaddaşda saxlayan və lazım olduqda çıxışa verən əsas qurğusu hansıdır?",
+    "options": {
+      "A": "Monitor",
+      "B": "Klaviatura",
+      "C": "Siçan",
+      "D": "Prosessor"
+    },
+    "correct_answer": "D",
+    "explanation": "Kompüterin əsas qurğusu olan prosessor ona verilən informasiyanı emal edir, nəticəni yaddaşda saxlayır, lazım olduqda çıxışa verir.",
+    "distractor_diagnostics": {
+      "A": "Çıxış qurğusudur.",
+      "B": "Giriş qurğusudur.",
+      "C": "Giriş qurğusudur."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-13",
+    "question": "Kompüterin digər proqramları və qurğularını idarə edən başlıca proqram necə adlanır?",
+    "options": {
+      "A": "Əməliyyat sistemi",
+      "B": "Qrafik redaktor",
+      "C": "Mətn redaktoru",
+      "D": "Calculator"
+    },
+    "correct_answer": "A",
+    "explanation": "Kompüterin başlıca proqramı əməliyyat sistemi adlanır. Əməliyyat sistemi digər proqramları və kompüterin qurğularını idarə edir.",
+    "distractor_diagnostics": {
+      "B": "Yalnız şəkillərlə işləmək üçündür.",
+      "C": "Yalnız mətnlə işləmək üçündür.",
+      "D": "Hesablama aparmaq üçün proqramdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-14",
+    "question": "Kompüter işə salınarkən açılan iş masasında olan balaca nişanlar necə adlanır?",
+    "options": {
+      "A": "Qovluqlar",
+      "B": "Menyu zolağı",
+      "C": "Simgələr",
+      "D": "Başlıq zolağı"
+    },
+    "correct_answer": "C",
+    "explanation": "İş masasında cürbəcür balaca nişanlar — simgələr görmək olar.",
+    "distractor_diagnostics": {
+      "A": "Simgələrin altında yaradılan və informasiya saxlayan vasitələrdir.",
+      "B": "Pəncərənin elementi olub menyuları göstərir.",
+      "D": "Pəncərənin elementi olub başlığı göstərir."
+    }
+  },
+  {
+    "passport_id": "03-INF-2ALQORTM-15",
+    "question": "Kompüterdə informasiyanın nizamlı saxlanması üçün nədən istifadə olunur?",
+    "options": {
+      "A": "Yalnız simgələrdən",
+      "B": "Qovluqlardan",
+      "C": "Paint proqramından",
+      "D": "Alətlər zolağından"
+    },
+    "correct_answer": "B",
+    "explanation": "Kompüterdə də informasiyanın nizamlı saxlanmasının önəmi böyükdür. Bu məqsədlə kompüterdə qovluqlardan istifadə olunur.",
+    "distractor_diagnostics": {
+      "A": "Simgələr nişanlardır, informasiya saxlamaq üçün əsas vasitə deyil.",
+      "C": "Qrafik redaktordur, məlumatların saxlanma strukturunu qurmur.",
+      "D": "Pəncərədə alətləri əks etdirir."
+    }
+  }
+]

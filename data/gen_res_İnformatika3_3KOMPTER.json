@@ -1,0 +1,257 @@
+[
+  {
+    "passport_id": "03-INF-3KOMPTER-01",
+    "question": "Qrafik informasiya ilə işləmək üçün kompüterdə istifadə olunan qrafik redaktorlardan biri hansıdır?",
+    "options": {
+      "A": "WordPad",
+      "B": "Calculator",
+      "C": "Paint",
+      "D": "Əməliyyat sistemi"
+    },
+    "correct_answer": "C",
+    "explanation": "Qrafik informasiya ilə işləmək üçün kompüterdə xüsusi proqramlardan — qrafik redaktorlardan istifadə olunur. Belə proqramlardan biri də Paint proqramıdır.",
+    "distractor_diagnostics": {
+      "A": "Mətn redaktorudur.",
+      "B": "Hesablama aparmaq üçün proqramdır.",
+      "D": "Kompüteri idarə edən sistemdir, redaktor deyil."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-02",
+    "question": "Paint proqramında rəsm çəkmək üçün lazım olan alət və rəng haradan seçilir?",
+    "options": {
+      "A": "Menyu zolağından və başlıq zolağından",
+      "B": "Alətlər qutusundan və rənglər qutusundan (palitradan)",
+      "C": "İş masasından və baş menyudan",
+      "D": "Axtarış pəncərəsindən"
+    },
+    "correct_answer": "B",
+    "explanation": "Alətlər qutusundan lazım olan alət, rənglər qutusundan (palitradan) isə uyğun rəng seçilir.",
+    "distractor_diagnostics": {
+      "A": "Menyu zolağından müəyyən əmrlər verilir, alət seçilmir.",
+      "C": "Bunlar əməliyyat sisteminin hissələridir.",
+      "D": "Paint proqramında axtarış pəncərəsindən rəng seçilmir."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-03",
+    "question": "\"Təsviri incəsənət\" dərslərində istifadə edilən rəsm albomunun vərəqi necə adlanır?",
+    "options": {
+      "A": "A1 ölçülü vərəq",
+      "B": "A2 ölçülü vərəq",
+      "C": "A3 ölçülü vərəq",
+      "D": "A4 ölçülü vərəq"
+    },
+    "correct_answer": "D",
+    "explanation": "“Təsviri incəsənət” dərslərində istifadə etdiyiniz rəsm albomunun vərəqi A4 ölçülü vərəq adlanır.",
+    "distractor_diagnostics": {
+      "A": "Mətndə qeyd olunmayıb.",
+      "B": "Mətndə qeyd olunmayıb.",
+      "C": "Mətndə qeyd olunmayıb."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-04",
+    "question": "Vərəqin istiqaməti adətən necə adlandırılır?",
+    "options": {
+      "A": "Mənzərə və portret",
+      "B": "Kəmiyyət və keyfiyyət",
+      "C": "Xətti və budaqlanan",
+      "D": "Ümumi və xüsusi"
+    },
+    "correct_answer": "A",
+    "explanation": "Adətən, mənzərə şəkilləri vərəqdə üfüqi, portretlər isə şaquli istiqamətdə yerləşdirilir. Buna uyğun olaraq, vərəqin istiqaməti də mənzərə, yaxud portret adlandırılır.",
+    "distractor_diagnostics": {
+      "B": "Obyektin əlamətləridir.",
+      "C": "Alqoritm növləridir.",
+      "D": "Obyekt adlarıdır."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-05",
+    "question": "Palitrada əsas rəngi və fon rəngini seçmək üçün uyğun olaraq nədən istifadə olunur?",
+    "options": {
+      "A": "Yalnız klaviaturadan",
+      "B": "Yalnız siçanın sol düyməsindən",
+      "C": "Siçanın sol və sağ düyməsindən",
+      "D": "Monitorun ekranından"
+    },
+    "correct_answer": "C",
+    "explanation": "Əsas rəngi seçmək üçün siçanın göstəricisini palitrada uyğun rəngin üzərinə aparıb sol düyməni çıqqıldadın. Fonun rəngini seçmək üçün siçanın sağ düyməsindən istifadə edin.",
+    "distractor_diagnostics": {
+      "A": "Seçim siçan vasitəsilə edilir.",
+      "B": "Sağ düymə də lazımdır.",
+      "D": "Ekrandan yalnız baxmaq olur, seçimi siçan edir."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-06",
+    "question": "İnsan gözü boz rəngin nə qədər çalarını fərqləndirir?",
+    "options": {
+      "A": "100-ə qədər",
+      "B": "500-ə qədər",
+      "C": "1000-ə qədər",
+      "D": "50-yə qədər"
+    },
+    "correct_answer": "B",
+    "explanation": "İnsan gözü boz rəngin 500-ə qədər çalarını fərqləndirir.",
+    "distractor_diagnostics": {
+      "A": "Rəqəm səhvdir.",
+      "C": "Rəqəm səhvdir.",
+      "D": "Rəqəm səhvdir."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-07",
+    "question": "Qrafik redaktorda çəkilmiş şəklin bir hissəsinin yerini dəyişmək, üzünü köçürmək, yaxud silmək üçün nədən istifadə olunur?",
+    "options": {
+      "A": "Seçdirmə alətlərindən",
+      "B": "Rənglər qutusundan",
+      "C": "Çap düyməsindən",
+      "D": "Baş menyudan"
+    },
+    "correct_answer": "A",
+    "explanation": "Şəklin bir hissəsinin — fraqmentinin yerini dəyişmək, üzünü köçürmək, yaxud silmək çox rahatdır. Bunun üçün seçdirmə alətlərindən istifadə olunur.",
+    "distractor_diagnostics": {
+      "B": "Rəng seçimi üçündür.",
+      "C": "Sənədi çapa vermək üçündür.",
+      "D": "Sistem komandaları üçündür."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-08",
+    "question": "Şəklin fraqmentinin üzünü çıxararkən komandaları təkrar-təkrar yerinə yetirməmək üçün klaviaturanın hansı klavişindən istifadə etmək daha əlverişlidir?",
+    "options": {
+      "A": "<Delete> klavişindən",
+      "B": "<Enter> klavişindən",
+      "C": "<Alt> klavişindən",
+      "D": "<Ctrl> klavişindən"
+    },
+    "correct_answer": "D",
+    "explanation": "Bu halda klaviaturanın <Ctrl> klavişindən istifadə etmək daha əlverişli olur. Bunun üçün <Ctrl> klavişini basıb saxlamaq və seçdirilmiş fraqmentin yerini dəyişmək lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Silmək üçündür.",
+      "B": "Yeni sətrə keçmək və ya təsdiqləmək üçündür.",
+      "C": "Başqa qısayollar üçündür."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-09",
+    "question": "Çəkilmiş şəkli kompüterin yaddaşında saxlamaq üçün hansı bənddən istifadə olunur?",
+    "options": {
+      "A": "Open",
+      "B": "Print",
+      "C": "Save As və ya Save",
+      "D": "Page setup"
+    },
+    "correct_answer": "C",
+    "explanation": "Şəklin kompüterdə saxlanması üçün Save As (və ya şəkildə dəyişiklik edildikdə Save) bəndindən istifadə olunur.",
+    "distractor_diagnostics": {
+      "A": "Saxlanmış sənədi açmaq üçündür.",
+      "B": "Çap etmək üçündür.",
+      "D": "Səhifə parametrlərini təyin etmək üçündür."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-10",
+    "question": "Kompüterdə mətn yazmaq, səhvləri düzəltmək və mətnə şəkillər əlavə etmək üçün nəzərdə tutulmuş mətn redaktoru hansıdır?",
+    "options": {
+      "A": "Paint",
+      "B": "WordPad",
+      "C": "Calculator",
+      "D": "Windows"
+    },
+    "correct_answer": "B",
+    "explanation": "Hər bir kompüterdə mətnlərlə işləmək üçün xüsusi proqramlar — mətn redaktorları olur. Belə redaktorlardan biri WordPad proqramıdır.",
+    "distractor_diagnostics": {
+      "A": "Qrafik redaktordur.",
+      "C": "Hesablama proqramıdır.",
+      "D": "Əməliyyat sistemidir."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-11",
+    "question": "Mətni redaktə etmək üçün mətnin dəyişdiriləcək hissəsi seçdirildikdə ekranda necə əks olunur?",
+    "options": {
+      "A": "Ağ simvollar qara fonda görünür",
+      "B": "Qara simvollar ağ fonda görünür",
+      "C": "Simvollar qırmızı rəngdə görünür",
+      "D": "Simvollar görünməz olur"
+    },
+    "correct_answer": "A",
+    "explanation": "Seçdirilmiş hissə ekranda əks rənglə, yəni ağ simvollar qara fonda görünür.",
+    "distractor_diagnostics": {
+      "B": "Bu, mətnin standart seçilməmiş vəziyyətidir.",
+      "C": "Qırmızı rəng xüsusi vurğulanmadıqca görünmür.",
+      "D": "Simvollar seçildikdə itmir, əksinə diqqətə çarpır."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-12",
+    "question": "Mətn yığarkən durğu işarələrindən sonra nəyə diqqət etmək lazımdır?",
+    "options": {
+      "A": "Dərhal növbəti söz yazılmalıdır",
+      "B": "İki boşluq qoyulmalıdır",
+      "C": "Yeni sətrə keçilməlidir",
+      "D": "Boşluq olmalıdır"
+    },
+    "correct_answer": "D",
+    "explanation": "Durğu işarələrindən sonra boşluq olmalıdır.",
+    "distractor_diagnostics": {
+      "A": "Bu səhv yanaşmadır, boşluq mütləqdir.",
+      "B": "Yalnız bir boşluq tələb olunur.",
+      "C": "Hər durğu işarəsindən sonra yeni sətirə keçilmir."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-13",
+    "question": "Mətndə ayrı-ayrı sözlər dəfələrlə təkrarlanırsa, nə etmək daha əlverişlidir?",
+    "options": {
+      "A": "Hər dəfə klaviaturadan yenidən yığmaq",
+      "B": "Həmin sözləri silmək",
+      "C": "Təkrarlanan fraqment bir dəfə yığılır, üzü çıxarılır və lazım olan yerə yapışdırılır",
+      "D": "Yalnız şəkildən istifadə etmək"
+    },
+    "correct_answer": "C",
+    "explanation": "Mətn redaktorlarında belə sözləri, yaxud cümlələri təkrar-təkrar yığmağa gərək yoxdur. Bunun üçün təkrarlanan fraqment bir dəfə yığılır, sonra onun üzü çıxarılır və lazım olan yerə “yapışdırılır”.",
+    "distractor_diagnostics": {
+      "A": "Vaxt itkisidir, mətn redaktoru bu işi asanlaşdırır.",
+      "B": "Sözlər təkrarlanmalıdırsa silinməməlidir.",
+      "D": "Mətnin təkrarlanması şəkillə həll olunmur."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-14",
+    "question": "Mətndə axtarılan sözün növbəti dəfə harada işləndiyini tapmaq üçün hansı düymədən istifadə olunur?",
+    "options": {
+      "A": "Find Next düyməsini çıqqıldatmaqla",
+      "B": "Replace All düyməsini çıqqıldatmaqla",
+      "C": "Cancel düyməsini çıqqıldatmaqla",
+      "D": "Copy düyməsini çıqqıldatmaqla"
+    },
+    "correct_answer": "A",
+    "explanation": "Hər dəfə Find Next düyməsini çıqqıldatmaqla mətndəki qalan eyni sözləri tapmaq olur.",
+    "distractor_diagnostics": {
+      "B": "Bütün sözləri başqası ilə əvəz etmək üçündür.",
+      "C": "Axtarışdan çıxmaq üçündür.",
+      "D": "Sözün üzünü çıxarmaq üçündür."
+    }
+  },
+  {
+    "passport_id": "03-INF-3KOMPTER-15",
+    "question": "WordPad proqramının yardım menyusunu çağırmaq üçün klaviaturanın hansı klavişindən istifadə etmək olar?",
+    "options": {
+      "A": "<F2> klavişindən",
+      "B": "<F1> klavişindən",
+      "C": "<F5> klavişindən",
+      "D": "<Ctrl> klavişindən"
+    },
+    "correct_answer": "B",
+    "explanation": "Yardım menyusunu proqramın istənilən yerindən çağırmaq üçün <F1> klavişindən istifadə etmək olar.",
+    "distractor_diagnostics": {
+      "A": "Bunun üçün nəzərdə tutulmayıb.",
+      "C": "Daha çox səhifəni yeniləmək üçündür.",
+      "D": "Komanda düyməsidir."
+    }
+  }
+]
