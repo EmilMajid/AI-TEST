@@ -1,0 +1,1644 @@
+{
+  "failed_tests": [
+    {
+      "test_id": "unknown_89",
+      "assigned_topic": "Unknown",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 1,
+        "bloom_alignment": 1,
+        "distractors": 1
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": [
+        "Sualda mövzu ilə əlaqədar heç bir məlumat verilməyib."
+      ]
+    },
+    {
+      "test_id": "unknown_95",
+      "assigned_topic": "Naxışvurma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 1,
+        "bloom_alignment": 1,
+        "distractors": 1
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Sualda verilən variantlar arasında heç bir fərqli fikir və ya texnika verilmədiyindən, sualın cavabı da dəqiqlik baxımından zəifdir."
+      },
+      "issues": [
+        "Sualın mövzuya uyğunluğu yoxlanıla bilməz.",
+        "Sualın özü dəqiqlik baxımından zəifdir."
+      ]
+    }
+  ],
+  "warning_tests": [],
+  "passed_tests": [
+    {
+      "test_id": "unknown_0",
+      "assigned_topic": "Məişət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_1",
+      "assigned_topic": "Məişət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_2",
+      "assigned_topic": "Məişət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_3",
+      "assigned_topic": "1. İctimai yerlərdə davranış və ünsiyyət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_4",
+      "assigned_topic": "1. İctimai yerlərdə davranış və ünsiyyət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_5",
+      "assigned_topic": "1. İctimai yerlərdə davranış və ünsiyyət mədəniyyəti",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_6",
+      "assigned_topic": "2. Ailə xərclərinin təyin edilməsi. Qidalanmaya ayrılmış vəsait",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_7",
+      "assigned_topic": "2. Ailə xərclərinin təyin edilməsi. Qidalanmaya ayrılmış vəsait",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_8",
+      "assigned_topic": "2. Ailə xərclərinin təyin edilməsi. Qidalanmaya ayrılmış vəsait",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_9",
+      "assigned_topic": "3. Ev quşlarının bəslənməsi texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_10",
+      "assigned_topic": "3. Ev quşlarının bəslənməsi texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Sualda verilən məlumatlar '3. Ev quşlarının bəslənməsi texnologiyası' mövzusu ilə uyğun gəlir və bu mövzuda tətbiq edilən əsas Texnologiya standartlarına tam şəkildə uyğundur."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_11",
+      "assigned_topic": "3. Ev quşlarının bəslənməsi texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_12",
+      "assigned_topic": "4. Şagird partalarının və məişət masalarının təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mövzular siyahısında mövcud olan mövzularla uyğun gəldiyi üçün B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_13",
+      "assigned_topic": "4. Şagird partalarının və məişət masalarının təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_14",
+      "assigned_topic": "4. Şagird partalarının və məişət masalarının təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_15",
+      "assigned_topic": "5. Stulların təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_16",
+      "assigned_topic": "4. Şagird partalarının və məişət masalarının təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 4,
+        "bloom_alignment": 4,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_17",
+      "assigned_topic": "4. Şagird partalarının və məişət masalarının təmiri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 4,
+        "bloom_alignment": 4,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_18",
+      "assigned_topic": "Oduncağın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_19",
+      "assigned_topic": "Oduncağın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_20",
+      "assigned_topic": "Oduncağın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_21",
+      "assigned_topic": "6. Quraşdırma elementləri olan məmulatların spesifikasiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_22",
+      "assigned_topic": "6. Quraşdırma elementləri olan məmulatların spesifikasiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_23",
+      "assigned_topic": "6. Quraşdırma elementləri olan məmulatların spesifikasiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_24",
+      "assigned_topic": "Oduncağın əsas fiziki və mexaniki xassələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_25",
+      "assigned_topic": "Oduncağın əsas fiziki və mexaniki xassələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_26",
+      "assigned_topic": "Oduncağın əsas fiziki və mexaniki xassələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_27",
+      "assigned_topic": "Oduncağın zivana ilə birləşdirilməsi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mövzu ilə əlaqədar dərslik konteksti tapılmadığından, ümumi elmi-pedaqoji biliyimdən istifadə edərək, B variantının düzgün olduğu qənaətinə gəlindi."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_28",
+      "assigned_topic": "8. Oduncağın zivana ilə birləşdirilməsi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_29",
+      "assigned_topic": "Oduncağın zivana ilə birləşdirilməsi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_30",
+      "assigned_topic": "9. Nəfəslik üçün çərçivənin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_31",
+      "assigned_topic": "9. Nəfəslik üçün çərçivənin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_32",
+      "assigned_topic": "9. Nəfəslik üçün çərçivənin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_33",
+      "assigned_topic": "Elektrotexniki işlər",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_34",
+      "assigned_topic": "Elektrotexniki işlər",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_35",
+      "assigned_topic": "Elektrotexniki işlər",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_36",
+      "assigned_topic": "10. Maşın və mexanizmlər haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_37",
+      "assigned_topic": "10. Maşın və mexanizmlər haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_38",
+      "assigned_topic": "10. Maşın və mexanizmlər haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_39",
+      "assigned_topic": "11. Elektrik çaydanının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_40",
+      "assigned_topic": "11. Elektrik çaydanının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_41",
+      "assigned_topic": "11. Elektrik çaydanının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_42",
+      "assigned_topic": "12. Elektrik ütüsünün quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_43",
+      "assigned_topic": "12. Elektrik ütüsünün quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_44",
+      "assigned_topic": "12. Elektrik ütüsünün quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_45",
+      "assigned_topic": "13. Fenin quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Sualda verilən mövzu ilə uyğunluğu yoxlanılmaqla yanaşı, sualın özü dəqiqlik baxımından qiymətləndirilməlidir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_46",
+      "assigned_topic": "Fenin quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_47",
+      "assigned_topic": "13. Fenin quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_48",
+      "assigned_topic": "Metalın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_49",
+      "assigned_topic": "Metalın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_50",
+      "assigned_topic": "Metalın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_51",
+      "assigned_topic": "14. Metalların növləri və xassələri. Prokat haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_52",
+      "assigned_topic": "14. Metalların növləri və xassələri. Prokat haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mövzu ilə uyğun variant seçilib."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_53",
+      "assigned_topic": "14. Metalların növləri və xassələri. Prokat haqqında məlumat",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_54",
+      "assigned_topic": "15. Metalın çapılma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_55",
+      "assigned_topic": "Metalın çapılma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_56",
+      "assigned_topic": "Metalın çapılma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_57",
+      "assigned_topic": "16. Mətbəx bıçağının itilənmə texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_58",
+      "assigned_topic": "Metalın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_59",
+      "assigned_topic": "16. Mətbəx bıçağının itilənmə texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_60",
+      "assigned_topic": "17. Detalların yivli birləşmələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_61",
+      "assigned_topic": "17. Detalların yivli birləşmələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_62",
+      "assigned_topic": "17. Detalların yivli birləşmələri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_63",
+      "assigned_topic": "18. Burğu dəzgahının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_64",
+      "assigned_topic": "18. Burğu dəzgahının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_65",
+      "assigned_topic": "18. Burğu dəzgahının quruluşu və iş prinsipi",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_66",
+      "assigned_topic": "Ərzaq məhsullarının emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_67",
+      "assigned_topic": "Ərzaq məhsullarının emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_68",
+      "assigned_topic": "Ərzaq məhsullarının emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_69",
+      "assigned_topic": "19. Balığın mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_70",
+      "assigned_topic": "19. Balığın mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_71",
+      "assigned_topic": "19. Balığın mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_72",
+      "assigned_topic": "20. Balığın isti emalı. Balıq yeməkləri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_73",
+      "assigned_topic": "20. Balığın isti emalı. Balıq yeməkləri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_74",
+      "assigned_topic": "20. Balığın isti emalı. Balıq yeməkləri",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_75",
+      "assigned_topic": "21. Quş ətinin mexaniki mətbəx emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_76",
+      "assigned_topic": "21. Quş ətinin mexaniki mətbəx emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_77",
+      "assigned_topic": "Quş ətinin mexaniki mətbəx emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mövzu ilə bağlı dərslik konteksti tapılmadı, lakin mövzu '21. Quş ətinin mexaniki mətbəx emalı texnologiyası' mövzusu çərçivəsində tətbiq edilən əsas Texnologiya standartlarına tam şəkildə uyğundur."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_78",
+      "assigned_topic": "22. Ətin mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_79",
+      "assigned_topic": "22. Ətin mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür, çünki sualda ətin mexaniki emalı texnologiyası mövzusu çərçivəsində tətbiq edilən əsas Texnologiya standartlarına uyğunluq barədə fikirlər verilir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_80",
+      "assigned_topic": "22. Ətin mexaniki emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_81",
+      "assigned_topic": "23. Duru yeməklərin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_82",
+      "assigned_topic": "Duru yeməklərin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən C variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_83",
+      "assigned_topic": "23. Duru yeməklərin hazırlanması texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_84",
+      "assigned_topic": "Parçanın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_85",
+      "assigned_topic": "Parçanın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_86",
+      "assigned_topic": "Parçanın emalı texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_87",
+      "assigned_topic": "24. Süni və sintetik liflərdən parçalar",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_88",
+      "assigned_topic": "24. Süni və sintetik liflərdən parçalar",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən D variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_90",
+      "assigned_topic": "25. Əl ilə yerinə yetirilən tikiş əməliyyatları",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_91",
+      "assigned_topic": "25. Əl ilə yerinə yetirilən tikiş əməliyyatları",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_92",
+      "assigned_topic": "25. Əl ilə yerinə yetirilən tikiş əməliyyatları",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_93",
+      "assigned_topic": "Naxışvurma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "unknown_94",
+      "assigned_topic": "Naxışvurma texnologiyası",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 5
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Mövzu ilə bağlı dərslik konteksti tapılmadığından, ümumi elmi-pedaqoji biliyimdən istifadə edərək mövzu ilə bağlı qiymətləndirmə aparılmışdır."
+      },
+      "issues": []
+    }
+  ]
+}

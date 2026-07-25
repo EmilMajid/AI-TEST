@@ -1,0 +1,943 @@
+{
+  "failed_tests": [
+    {
+      "test_id": "11-gen-math11-ch1-040",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 4,
+        "distractors": 3
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Funksiya tək dərəcəlidir (dərəcə = 3) və baş həddi -x^3-dür. Baş əmsal mənfi olduğundan x -> +∞ zamanı f(x) -> -∞ olar."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü təsdiqlənməyib",
+        "Faktoloji doğruluq mövzuya uyğun deyil"
+      ]
+    },
+    {
+      "test_id": "11-gen-math11-004",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "B",
+        "answer_matches": false,
+        "justification": "Bölmə əməlinin tərifinə görə: bölünən = qismət * bölən + qalıq. Düstur P(x) = Q(x) \\cdot B(x) + R(x) şəklindədir."
+      },
+      "issues": [
+        "Doğru cavabın hesablanması səhvdir."
+      ]
+    },
+    {
+      "test_id": "11-gen-math11-014",
+      "audit_type": "deterministic",
+      "issues": [
+        "Invalid bloom level: qiymətləndirmə"
+      ]
+    },
+    {
+      "test_id": "11-gen-math11-015",
+      "audit_type": "deterministic",
+      "issues": [
+        "Invalid bloom level: qiymətləndirmə"
+      ]
+    },
+    {
+      "test_id": "gen-afe9b4f2",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mətnə əsasən B variantı düzgündür, çünki məlumat toplayarkən ən geniş yayılmış və səmərəli üsullar müşahidə aparmaq və sorğu (anket) keçirməkdir."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü, Construct Validity & Fact-checking"
+      ]
+    },
+    {
+      "test_id": "gen-02b50b53",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mətnə əsasən, müəyyən bir tədqiqat üçün seçilmiş kiçik qrupa 'seçmə' (və ya nümunə) deyilir, bu variant D-dir."
+      },
+      "issues": [
+        "Doğru cavab indeksi səhvdir",
+        "Bloom taksonomiyasına uyğun deyil"
+      ]
+    },
+    {
+      "test_id": "gen-dcd62c51",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Məlumatları topladıqdan sonra onları daha əyani və anlaşılan etmək üçün cədvəl və diaqramların qurulması üsulundan istifadə olunur."
+      },
+      "issues": [
+        "Doğru cavab variantı A deyil, B-dir.",
+        "Sualın çətinlik səviyyəsi və Bloom taksonomiyası uyğun deyil."
+      ]
+    },
+    {
+      "test_id": "gen-cf336527",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mətnə əsasən 20 şagirddən 5 nəfər qırmızı, 8 nəfər mavi, 4 nəfər yaşıl, qalanları isə sarı deyib. Beləliklə, sarı rəngi seçənlərin sayı 20 - (5 + 8 + 4) = 3 nəfərdir. Lakin, verilmiş cavab A) 4 deyil, C) 3 olmalıdır."
+      },
+      "issues": [
+        "Doğru cavab indeksi səhvdir"
+      ]
+    },
+    {
+      "test_id": "gen-e0b8ec55",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mətnə əsasən eksperiment adlanan üsul fiziki bir hərəkət edərək (zər atmaq, qəpik atmaq) alınan nəticələri qeyd etməkdir."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü təsdiqlənməyib",
+        "Bloom taksonomiyasına uyğunluq zəifdir"
+      ]
+    },
+    {
+      "test_id": "gen-ef8d6af9",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Məlumatların tezliyini asan saymaq üçün çubuqlarla (tally) işarələmə aparılır və hər 5-ci işarə əvvəlki dörd şaquli işarənin üzərindən diaqonal olaraq çəkilir."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü təsdiqlənmədi",
+        "Bloom taksonomiyasına uyğunluqda zəiflik var"
+      ]
+    },
+    {
+      "test_id": "gen-6319f20e",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Seçmənin həcmini böyütmək, baş topluya yaxınlaşdıqca, alınan nəticələr daha dəqiq və etibarlı olacaq."
+      },
+      "issues": [
+        "Doğru cavabın tapılması, Bloom taksonomiyasının uyğunluğu"
+      ]
+    },
+    {
+      "test_id": "gen-090c2db2",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Dəqiq statistik nəticə almaq üçün seçilmiş nümunə reprezentativ (təmsiledici) olmalıdır. Yəni seçmə baş toplunun bütün xüsusiyyətlərini balanslı şəkildə əks etdirməlidir. Bu, variant D ilə uyğunlaşır."
+      },
+      "issues": [
+        "Doğru cavab variantı A deyil, D-dir.",
+        "Bloom taksonomiyasına uyğun deyil, çünki sual daha çox 'anlama' və 'tətbiq' səviyyəsindədir."
+      ]
+    },
+    {
+      "test_id": "gen-feed8ab3",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Histoqram əsasən fasiləsiz məlumatların intervallar üzrə paylanmasını göstərmək üçün istifadə olunur."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü təsdiqlənmədi",
+        "Sualın Bloom taksonomiyasına uyğunluğu zəifdir"
+      ]
+    },
+    {
+      "test_id": "gen-67c5d542",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Tam dairə $360^{\\circ}$-dir. Sektorun payı: $\frac{90^{\\circ}}{360^{\\circ}} = \frac{1}{4}$. Bu hesabata əsasən, doğru cavab D variantı olmalıdır."
+      },
+      "issues": [
+        "Doğru cavabın hesabatı düzgün aparılmayıb"
+      ]
+    },
+    {
+      "test_id": "gen-bd9a6bfc",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Məlumatın 'ən böyük fərqi' (vüsəti) ən böyük ədəddən ən kiçik ədədi çıxmaqla tapılır."
+      },
+      "issues": [
+        "Doğru cavabın düzgünlüyü təsdiqlənmədi",
+        "Bloom taksonomiyasına uyğunluq zəifdir"
+      ]
+    },
+    {
+      "test_id": "gen-723de715",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Orta arifmetik düsturuna əsasən hesablamalar aparıldı və x-in dəyəri 12 olaraq tapıldı."
+      },
+      "issues": [
+        "Doğru cavab tapılmadı"
+      ]
+    },
+    {
+      "test_id": "gen-6407a63d",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 2,
+        "bloom_alignment": 3,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Zərin 6 üzü var və hər üzün düşmə ehtimalı bərabərdir. 5 xalı yalnız bir üzdə olduğu üçün ehtimal $\frac{1}{6}$-dir."
+      },
+      "issues": [
+        "Doğru cavab tapılmadı",
+        "Bloom taksonomiyasına uyğun deyil"
+      ]
+    },
+    {
+      "test_id": "gen-df276240",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Qırmızı topların sayı 4, cəmi top sayı 12-dir. Ehtimal: 4/12 = 1/3. Doğru cavab D variantı olmalıdır."
+      },
+      "issues": [
+        "Doğru cavab variantı səhv göstərilib"
+      ]
+    },
+    {
+      "test_id": "gen-72e97a0e",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "1-dən 20-yə qədər olan sadə ədədlər: 2, 3, 5, 7, 11, 13, 17, 19. Bunların sayı 8-dir. Ehtimal: $\frac{8}{20} = \frac{2}{5}$."
+      },
+      "issues": [
+        "Doğru cavab tapılmayıb"
+      ]
+    },
+    {
+      "test_id": "gen-7516dd51",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 4,
+        "distractors": 3
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Mümkün halların sayı: (xəritə, xəritə), (xəritə, gerb), (gerb, xəritə), (gerb, gerb) - cəmi 4 hal. Hər ikisinin xəritə olması yalnız 1 haldır. Ehtimal $\frac{1}{4}$."
+      },
+      "issues": [
+        "Doğru cavab tapılmadı",
+        "Sualın çətinlik səviyyəsi və Bloom taksonomiyası uyğun deyil"
+      ]
+    }
+  ],
+  "warning_tests": [
+    {
+      "test_id": "gen-11e04439",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 3,
+        "bloom_alignment": 4,
+        "distractors": 3
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Statistik məlumat toplamaq üçün daha uyğun sual növü B variantıdır, çünki bu sualda müxtəliflik (variasiya) mövcuddur və şəxslərə görə fərqlilik göstərə bilər."
+      },
+      "issues": [
+        "Doğru cavabın hesablanması zamanı uyğun variantın B olduğu müəyyən edildi, lakin testdə A variantı doğru hesab olunub.",
+        "Sualın dilində və quruluşunda ikidəyərlilik mövcuddur."
+      ]
+    },
+    {
+      "test_id": "gen-bc66421b",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Zamanla dəyişən asılılıqları ən aydın ifadə edən vizual vasitə xətti qrafikdir."
+      },
+      "issues": [
+        "Doğru cavab variantı A deyil, C-dir."
+      ]
+    },
+    {
+      "test_id": "gen-90e94bd7",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Sırada cüt sayda element var. Median ortadakı iki ədədin (6 və 8) orta arifmetikinə bərabərdir: (6 + 8)/2 = 7. Bu, variant B-ni düzgün cavab edir."
+      },
+      "issues": [
+        "Doğru cavabın indeksi səhvdir. Doğru cavab B variantı olmalıdır."
+      ]
+    },
+    {
+      "test_id": "gen-c6b905e5",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 4,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "A",
+        "answer_matches": false,
+        "justification": "Piktoqramda 1 ulduz simvolu 10 kitabı təmsil edir. 3 tam ulduz 30 kitabı, 1 yarım ulduz isə 5 kitabı təmsil edir. Cəmi 35 kitab var."
+      },
+      "issues": [
+        "Doğru cavab A deyil, C-dir"
+      ]
+    }
+  ],
+  "passed_tests": [
+    {
+      "test_id": "11-gen-math11-ch1-036",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 4,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Tənliyinin kökləri hesablandıqda, -2, 2 və 5 variantı əldə edilir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-ch1-037",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Qalıq teoreminə görə P(-1) qiymətini hesablayaq: (-1)^3 + 2(-1)^2 - (-1) - 2 = -1 + 2 + 1 - 2 = 0. Qalıq 0-dır, lakin sualda qalıq 0-a bərabər olan variant A deyil, C variantıdır. Lakin sualda qalıq 0-a bərabər olan variant A deyil, C variantıdır. Lakin cavab A variantıdır."
+      },
+      "issues": [
+        "Sualda qalıq 0-a bərabər olan variant A deyil, C variantıdır."
+      ]
+    },
+    {
+      "test_id": "11-gen-math11-ch1-038",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "P(-4) = (-4)^3 - (-4)^2 - 20(-4) = -64 - 16 + 80 = 0 hesabına əsasən A variantı düzgündür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-ch1-039",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "x^2 = t əvəzləməsi ilə t^2 - 13t + 36 = (t - 4)(t - 9) alınır. Beləliklə, (x^2 - 4)(x^2 - 9) və tam olaraq (x - 2)(x + 2)(x - 3)(x + 3) kimi ayrılır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-001",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Qalıq haqqında teoremə əsasən qalıq P(3)-ə bərabərdir: P(3) = 3^3 - 2(3)^2 - 4(3) + 5 = 27 - 18 - 12 + 5 = 2."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-002",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Vuruqlar haqqında teoremə görə əgər P(m) = 0 olarsa, x - m ikihədlisi çoxhədlinin vuruğudur. P(-2) = (-2)^3 - (-2)^2 - 5(-2) + 2 = -8 - 4 + 10 + 2 = 0 olduğundan x + 2 vuruqdur."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-003",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Tam əmsallı çoxhədlinin tam kökü sərbəst həddin (yəni 6-nın) böləni olmalıdır. Verilmiş variantlardan yalnız 2 ədədi 6-nın bölənidir və P(2)=0 şərtini ödəyir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-005",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Qalıq haqqında teoremə (Bezu teoreminə) görə P(x) çoxhədlisinin x - m ikihədlisinə bölünməsindən alınan qalıq çoxhədlinin x = m nöqtəsindəki qiymətinə bərabərdir, yəni r = P(m)."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-006",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Polinomun qalıqsız bölünməsi üçün qalıq sıfır olmalıdır. P(-3) = (-3)^3 - 5(-3)^2 - 5(-3) + c = -27 - 45 + 15 + c = -57 + c = 0. Buradan c = 57 alınır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-007",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Qalıq teoreminə görə P(-k) = 14 olmalıdır. 3(-k)^2 + 6(-k) - 10 = 14 => 3k^2 - 6k - 24 = 0 => k^2 - 2k - 8 = 0. Bu tənliyin kökləri k = 4 və k = -2 olur. k > 0 olduğu üçün k = 4 götürülür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-008",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Çoxhədli x+5 ikihədlisinə qalıqsız bölünür və sintetik bölmə aparsaq, qismətdə x^2 - 6x + 9 alınır. Bu isə (x-3)^2=0 deməkdir, yəni digər kök 3-dür (2 dəfə təkrarlanan)."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-009",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 4,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Tam kök sərbəst həddin, yəni 5-in böləni olmalıdır (± 1, ± 5). Yoxladıqda P(-5) = (-5)^3 + (-5)^2 - 19(-5) + 5 = -125 + 25 + 95 + 5 = 0 alınır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-010",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Vuruqlar haqqında teoremə görə P(-2) = 0 olmalıdır. (-2)^3 + 4(-2)^2 + (-2) + k = 0 => -8 + 16 - 2 + k = 0 => 6 + k = 0 => k = -6."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-011",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Həcmi V(x) = 2x^3 + 17x^2 + 40x + 25 çoxhədlisi ilə ifadə olunur. Əgər onun hündürlüyü x+1 çoxhədlisi olarsa, oturacağının sahəsini tapmaq üçün 2x^3 + 17x^2 + 40x + 25 çoxhədlisini x+1 ikihədlisinə bölmək lazımdır. Sintetik bölmə ilə qismətdə 2x^2 + 15x + 25 alınır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-012",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Viyet teoreminə görə tam kub tənlik x^3 + px^2 + qx + r = 0 üçün köklərin cəmi -p, köklərin hasili isə -r-dir. Burada x^2-nin əmsalı 0 olduğundan cəm 0-dır. Sərbəst hədd 6 olduğundan hasil -6 olur."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "11-gen-math11-013",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Qalıqların bərabərliyinə görə P(2) = P(-1) olmalıdır. P(2) = -16 + 4c - 10 + 2 = 4c - 24. P(-1) = 2 + c + 5 + 2 = c + 9. Bərabərləşdirək: 4c - 24 = c + 9 => 3c = 33 => c = 11."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-4ad9a4c2",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Tədqiqatın aid olduğu obyeklərin və ya insanların ümumi sayı baş toplu adlanır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-9057f30e",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən B variantı düzgündür, çünki anket sorğusu, təcrübə və müşahidə məlumat toplama üsullarıdır, lakin çoxaldılma (reproduksiya) statistika və məlumat toplanmasına aid deyil."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-1ae1e100",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Sadalanan rəqəmləri saysaq, onların sayı 9-dur. Yəni 9 nəfərin nəticəsi qeyd olunub."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-53dc9be0",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür, çünki boy, çəki, temperatur kimi kəmiyyətlər cihazlarla ölçüldüyünə görə bu proses ölçmə və qeydiyyat adlanır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-58ce947c",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Dairəvi diaqram bütövlüyü 100% (və ya $360^\\circ$) qəbul edərək onun fərqli hissələrə bölünməsini aydın şəkildə nümayiş etdirir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-83011f20",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Məlumatlar toplandıqdan sonra onlar üzərində hesablamalar aparmaq və müxtəlif statistik parametrləri (moda, median, ədədi orta) tapmaq məlumatın emalı mərhələsidir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-e671a200",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Dairəvi diaqram hissələrin tam içindəki payını vizual olaraq göstərmək üçün ən uyğun qrafik növüdür."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-637e0798",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Verilmiş sırada 5 qiyməti daha çox (4 dəfə) təkrarlandığı üçün moda 5-dir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-d78c00c1",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "C",
+        "expected_correct_answer": "C",
+        "answer_matches": true,
+        "justification": "Verilmiş sıra artıq artan sıra ilə düzülüb və 5 elementi var. Tək sayda element olduqda ortadakı element mediandır. Deməli, median 145-dir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-9ca306f5",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Mətnə əsasən A variantı düzgündür. Sektorun bucağı: 8/20 × 360° = 144° hesablandı."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-16122905",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Sırada ən böyük ədəd 21, ən kiçik ədəd isə 5-dir. Ən böyük fərq: $21 - 5 = 16$."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-1ddf8240",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "D",
+        "expected_correct_answer": "D",
+        "answer_matches": true,
+        "justification": "Sıraya əlavə olunan ədəd əvvəlki orta arifmetikə bərabərdirsə, yeni orta arifmetik dəyişmir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-3c453b2d",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "B",
+        "expected_correct_answer": "B",
+        "answer_matches": true,
+        "justification": "Orta arifmetik bütün ədədlərin cəminə əsaslandığı üçün kəskin fərqlənən (ekstremal) qiymətlərin təsirinə ən çox məruz qalan göstəricidir."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-73b75825",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Nisbi tezlik hadisənin tezliyinin ümumi saya nisbətidir: 12/40 = 3/10 = 0.3. Faizlə ifadə etdikdə: 0.3 × 100% = 30%."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-102953e7",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Təsadüfi seçilmiş iki rəqəmli ədədin sonunun 0 rəqəmi ilə bitməsi ehtimalı hesablandıqda, doğru cavab A variantıdır."
+      },
+      "issues": []
+    },
+    {
+      "test_id": "gen-1b3270e7",
+      "audit_type": "llm_expert",
+      "scores": {
+        "validity": 5,
+        "bloom_alignment": 5,
+        "distractors": 4
+      },
+      "correct_answer_verification": {
+        "computed_correct_answer": "A",
+        "expected_correct_answer": "A",
+        "answer_matches": true,
+        "justification": "Zərin tək üzləri: 1, 3, 5. Ümumi üzlərin sayı 6-dır. Ehtimal: 3/6 = 1/2."
+      },
+      "issues": []
+    }
+  ]
+}
