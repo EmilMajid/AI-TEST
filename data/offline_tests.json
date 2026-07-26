@@ -320154,6 +320154,455 @@
       "topic": "2.2 İon rabitəsi",
       "cat": "Kimya 8",
       "passport_id": "08-CHM-ÇƏT-e7b68ac9"
+    },
+    {
+      "question": "Elementlərin və kimyəvi birləşmələrin tərkibi necə müəyyən edilir?",
+      "options": [
+        "Yalnız atomlardan",
+        "Yalnız ionlardan",
+        "Atomlar və ya ionlardan",
+        "Molekullardan"
+      ],
+      "correctAnswer": 2,
+      "bloom_level": "Tətbiq",
+      "difficulty": "Orta",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Elementlər eyni növ atomlardan, kimyəvi birləşmələr isə ən azı iki fərqli atomdan təşkil olunur.",
+        "distractors": {
+          "A": "Elementlər yalnız atomlardan ibarət ola bilər, lakin kimyəvi birləşmələr ən azı iki fərqli atomdan ibarət olur.",
+          "B": "Ionlar kimyəvi birləşmələrin tərkib hissəsi ola bilər, lakin elementlər yalnız atomlardan ibarət ola bilər.",
+          "D": "Molekullar kimyəvi birləşmələrin tərkib hissəsi ola bilər, lakin elementlər yalnız atomlardan ibarət ola bilər."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Elementlərin və kimyəvi birləşmələrin tərkibini müəyyən et",
+        "Atomlar və ya ionlar arasında fərqi ayırd et"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ORT-7af6793f"
+    },
+    {
+      "question": "Təsirsiz qazların atomları necə davranır?",
+      "options": [
+        "Bir-biri ilə birləşir",
+        "Bir-biri ilə birləşmir",
+        "Bəzi hallarda bir-biri ilə birləşir",
+        "Müəyyən şəraitdə bir-biri ilə birləşir"
+      ],
+      "correctAnswer": 1,
+      "bloom_level": "Tətbiq",
+      "difficulty": "Orta",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Təsirsiz qazların atomları, məsələn helium və neon, bir-biri ilə birləşmir.",
+        "distractors": {
+          "A": "Təsirsiz qazların atomları bir-biri ilə birləşir, bu səbəbdən onlar təsirsizdir.",
+          "C": "Bəzi hallarda təsirsiz qazların atomları bir-biri ilə birləşir, lakin bu nadir hallardır.",
+          "D": "Müəyyən şəraitdə təsirsiz qazların atomları bir-biri ilə birləşir, məsələn yüksək təzyiqdə."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Təsirsiz qazların xassələrini öyrən",
+        "Atomların davranışını müəyyən et"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ORT-988bfc7f"
+    },
+    {
+      "question": "Natrium atomu ilə xlorid ionu arasında hansı kimyəvi rabitə forması mövcuddur?",
+      "options": [
+        "İonik rabitə",
+        "Kovalent rabitə",
+        "Metal rabitə",
+        "Van der Vaals rabitəsi"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Natrium (Na) və xlorid (Cl) ionları arasında ionik rabitə mövcuddur, çünki natrium atomu elektron itərək, xlorid ionu isə elektron qəbul edərək ionik rabitə əmələ gətirir.",
+        "distractors": {
+          "A": "Natrium və xlorid arasında ionik rabitə mövcuddur.",
+          "B": "Kovalent rabitə, əsasən, atomların elektronlarından ibarət olan elektron cütləri vasitəsilə əmələ gəlir.",
+          "C": "Metal rabitə, əsasən, metal atomları arasında mövcuddur.",
+          "D": "Van der Vaals rabitəsi, əsasən, molekullar arasında mövcuddur."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Natriumun elektron konfiqurasiyasını öyrən",
+        "Xloridin elektron konfiqurasiyasını öyrən",
+        "Ionik rabitənin xüsusiyyətlərini öyrən"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-821f61ba"
+    },
+    {
+      "question": "Helium atomları arasında hansı kimyəvi rabitə forması mövcuddur?",
+      "options": [
+        "İonik rabitə",
+        "Kovalent rabitə",
+        "Metal rabitə",
+        "Heç bir rabitə"
+      ],
+      "correctAnswer": 3,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Helium atomları arasında heç bir kimyəvi rabitə mövcud deyil, çünki helium atomları təsirsizdir və elektron konfiqurasiyaları sabitdir.",
+        "distractors": {
+          "A": "İonik rabitə, əsasən, ionlar arasında mövcuddur.",
+          "B": "Kovalent rabitə, əsasən, atomların elektronlarından ibarət olan elektron cütləri vasitəsilə əmələ gəlir.",
+          "C": "Metal rabitə, əsasən, metal atomları arasında mövcuddur.",
+          "D": "Helium atomları təsirsizdir və elektron konfiqurasiyaları sabitdir."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Heliumun elektron konfiqurasiyasını öyrən",
+        "Təsirsiz qazların xüsusiyyətlərini öyrən"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-e476a373"
+    },
+    {
+      "question": "Oktet qaydası hansı elementlərə aiddir?",
+      "options": [
+        "Yalnız metal elementlər",
+        "Yalnız qeyri-metal elementlər",
+        "Həm metal, həm də qeyri-metal elementlər",
+        "Heç bir elementə aid deyil"
+      ],
+      "correctAnswer": 2,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Oktet qaydası, əsasən, həm metal, həm də qeyri-metal elementlərə aiddir, çünki bu qayda atomların elektron konfiqurasiyalarının stabilliyini izah edir.",
+        "distractors": {
+          "A": "Metal elementlər, əsasən, metal rabitəsi vasitəsilə birləşirlər.",
+          "B": "Qeyri-metal elementlər, əsasən, kovalent rabitə vasitəsilə birləşirlər.",
+          "C": "Oktet qaydası, həm metal, həm də qeyri-metal elementlərə aiddir.",
+          "D": "Oktet qaydası, heç bir elementə aid deyil."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Oktet qaydasının xüsusiyyətlərini öyrən",
+        "Metal və qeyri-metal elementlərin xüsusiyyətlərini öyrən"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-f29f8765"
+    },
+    {
+      "question": "Helium, neon və digər təsirsiz qazların atomları bir-biri ilə birləşməməsinin səbəbi nədir?",
+      "options": [
+        "A) Atomların elektron konfiqurasiyaları doldur",
+        "B) Atomların elektron konfiqurasiyaları boşdur",
+        "C) Atomların elektron konfiqurasiyaları qarışıqdır",
+        "D) Atomların elektron konfiqurasiyaları fərqlidir"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Helium, neon və digər təsirsiz qazların atomları bir-biri ilə birləşməməsinin səbəbi, onların elektron konfiqurasiyalarının doldurmasıdır. Bu, oktet qaydasına uyğun gəlir.",
+        "distractors": {
+          "A": "Səbəbi yoxdur, elektron konfiqurasiyaları boşdur",
+          "B": "Səbəbi yoxdur, elektron konfiqurasiyaları qarışıqdır",
+          "C": "Səbəbi yoxdur, elektron konfiqurasiyaları fərqlidir"
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Addım 1: Helium, neon və digər təsirsiz qazların atomlarının elektron konfiqurasiyalarını öyrən",
+        "Addım 2: Oktet qaydasını tətbiq et"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-0b2347f5"
+    },
+    {
+      "question": "Kimyəvi birləşmələrdə atomlar bir-birinə necə birləşir?",
+      "options": [
+        "A) İonik rabitə",
+        "B) Kovalent rabitə",
+        "C) Metalik rabitə",
+        "D) Hər üçü"
+      ],
+      "correctAnswer": 3,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Kimyəvi birləşmələrdə atomlar bir-birinə müxtəlif üsullarla birləşir, o cümlədən, ionik rabitə, kovalent rabitə və metalik rabitə.",
+        "distractors": {
+          "A": "Səbəbi yoxdur, yalnız ionik rabitə mövcuddur",
+          "B": "Səbəbi yoxdur, yalnız kovalent rabitə mövcuddur",
+          "C": "Səbəbi yoxdur, yalnız metalik rabitə mövcuddur"
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Addım 1: Kimyəvi birləşmələrdə atomların birləşmə formasını öyrən",
+        "Addım 2: İonik, kovalent və metalik rabitəni tətbiq et"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-005dc801"
+    },
+    {
+      "question": "Oktet qaydası nədir və necə tətbiq olunur?",
+      "options": [
+        "A) Atomların elektron konfiqurasiyalarının doldurulması",
+        "B) Atomların elektron konfiqurasiyalarının boşdurması",
+        "C) Atomların elektron konfiqurasiyalarının qarışıqdurması",
+        "D) Atomların elektron konfiqurasiyalarının fərqlidurması"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Oktet qaydası, atomların elektron konfiqurasiyalarının doldurulmasını nəzərdə tutur. Bu, kimyəvi birləşmələrin formalaşması üçün əsasdır.",
+        "distractors": {
+          "A": "Səbəbi yoxdur, elektron konfiqurasiyaları boşdur",
+          "B": "Səbəbi yoxdur, elektron konfiqurasiyaları qarışıqdır",
+          "C": "Səbəbi yoxdur, elektron konfiqurasiyaları fərqlidir"
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Addım 1: Oktet qaydasını öyrən",
+        "Addım 2: Atomların elektron konfiqurasiyalarını tətbiq et"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-e28e4f95"
+    },
+    {
+      "question": "Elementlərin və kimyəvi birləşmələrin tərkibi necə formalaşır?",
+      "options": [
+        "Yalnız eyni növ atomlardan",
+        "Ən azı iki fərqli atomdan",
+        "Yalnız ionlardan",
+        "Yalnız molekullardan"
+      ],
+      "correctAnswer": 1,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Elementlərin tərkibi eyni növ atomlardan, kimyəvi birləşmələrin tərkibi isə ən azı iki fərqli atomdan formalaşır.",
+        "distractors": {
+          "A": "Yalnız eyni növ atomlardan ibarət olan variant səhvdir, çünki kimyəvi birləşmələr ən azı iki fərqli atomdan ibarət olur.",
+          "C": "Yalnız ionlardan ibarət olan variant səhvdir, çünki elementlər və kimyəvi birləşmələr molekullardan və ya atomlardan ibarət ola bilər.",
+          "D": "Yalnız molekullardan ibarət olan variant səhvdir, çünki elementlər və kimyəvi birləşmələr ionlardan və ya atomlardan ibarət ola bilər."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Elementlərin və kimyəvi birləşmələrin tərkibini müəyyən edin",
+        "Ən azı iki fərqli atomdan ibarət olan variantı seçin"
+      ],
+      "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-bf1c40f9"
+    },
+    {
+      "question": "İon rabitəsi nəticəsində əmələ gələn birləşmələrə nə ad verilir?",
+      "options": [
+        "Kovalent birləşmələr",
+        "İon birləşmələr",
+        "Metal birləşmələr",
+        "Qeyri-metal birləşmələr"
+      ],
+      "correctAnswer": 1,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "İon rabitəsi nəticəsində əmələ gələn birləşmələrə ion birləşmələr adlanır.",
+        "distractors": {
+          "A": "Kovalent birləşmələr elektronların ümumi istifadəsi nəticəsində əmələ gəlir.",
+          "B": "İon birləşmələr ion rabitəsi nəticəsində əmələ gəlir.",
+          "C": "Metal birləşmələr metal atomlarının bir-biri ilə birləşməsi nəticəsində əmələ gəlir.",
+          "D": "Qeyri-metal birləşmələr qeyri-metal atomlarının bir-biri ilə birləşməsi nəticəsində əmələ gəlir."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "İon rabitəsi nəticəsində əmələ gələn birləşmələri izah edin.",
+        "İon birləşmələrin xüsusiyyətlərini nəzərinizdən keçirin."
+      ],
+      "topic": "2.2 İon rabitəsi",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-f72d455e"
+    },
+    {
+      "question": "Natrium xlorid (NaCl) əmələ gələrkən natrium atomu xlor atomuna nə edir?",
+      "options": [
+        "Elektronu udurur",
+        "Elektronu verir",
+        "Elektronu əvəz edir",
+        "Elektronu buraxır"
+      ],
+      "correctAnswer": 1,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Natrium xlorid (NaCl) əmələ gələrkən natrium atomu xlor atomuna elektron verir.",
+        "distractors": {
+          "A": "Natrium atomu xlor atomuna elektron udurmaz.",
+          "B": "Natrium atomu xlor atomuna elektron verir.",
+          "C": "Natrium atomu xlor atomuna elektron əvəz etmir.",
+          "D": "Natrium atomu xlor atomuna elektron buraxmaz."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Natrium xloridin (NaCl) əmələ gəlmə prosesini izah edin.",
+        "Elektronların transferini nəzərinizdən keçirin."
+      ],
+      "topic": "2.2 İon rabitəsi",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-960a8a5c"
+    },
+    {
+      "question": "İon rabitəsi hansı qüvvənin təsiri nəticəsində əmələ gəlir?",
+      "options": [
+        "Elektrostatik cazibə qüvvəsi",
+        "Elektrostatik itələ qüvvəsi",
+        "Qravitasion qüvvə",
+        "Maqnit qüvvəsi"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "İon rabitəsi elektrostatik cazibə qüvvəsinin təsiri nəticəsində əmələ gəlir.",
+        "distractors": {
+          "A": "İon rabitəsi elektrostatik cazibə qüvvəsinin təsiri nəticəsində əmələ gəlir.",
+          "B": "Elektrostatik itələ qüvvəsi ion rabitəsinin əmələ gəlməsinə səbəb olmur.",
+          "C": "Qravitasion qüvvə ion rabitəsi ilə əlaqəli deyil.",
+          "D": "Maqnit qüvvəsi ion rabitəsi ilə əlaqəli deyil."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "İon rabitəsinin əmələ gəlmə səbəblərini izah edin.",
+        "Elektrostatik qüvvələrin təsirini nəzərinizdən keçirin."
+      ],
+      "topic": "2.2 İon rabitəsi",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-1ea743f5"
+    },
+    {
+      "question": "Natrium xlorid əmələ gələrkən natrium atomu hansı proses keçirir?",
+      "options": [
+        "Elektron alır",
+        "Elektron verir",
+        "Elektron dəyişdirir",
+        "Heç bir proses keçirmir"
+      ],
+      "correctAnswer": 1,
+      "bloom_level": "Qiymətləndirmə",
+      "difficulty": "Çətin",
+      "measured_skill": "Kimya bacarığı",
+      "explanation": {
+        "correct": "Natrium xlorid əmələ gələrkən natrium atomu xlor atomuna bir elektron verir.",
+        "distractors": {
+          "A": "Natrium atomu elektron almaq üçün qeyri-metal xüsusiyyətlərinə malik deyil.",
+          "C": "Elektron dəyişdirmə prosesi kovalent birləşmələrə xasdır, ion birləşmələrə deyil.",
+          "D": "Natrium atomu ion rabitəsi prosesində iştirak edir və elektron verir."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Natrium xloridin əmələ gəlməsini izah edin",
+        "Natrium və xlor atomlarının xüsusiyyətlərini nəzərə alın"
+      ],
+      "topic": "2.2 İon rabitəsi",
+      "cat": "Kimya 8",
+      "passport_id": "08-CHM-ÇƏT-d2d81fdc"
     }
   ],
   "Azərbaycan tarixi 8": [
@@ -367039,6 +367488,110 @@
       "topic": "UNIT 6. CHANGE-MAKERS",
       "cat": "İngilis dili 8",
       "passport_id": "08-ENG-ORT-ca5b4892"
+    },
+    {
+      "question": "What is the correct response to 'Hi, I'm Ellis.'?",
+      "options": [
+        "Hi, I'm...",
+        "Hello!",
+        "Nice to meet you.",
+        "What's your name?"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Bilik",
+      "difficulty": "Sadə",
+      "measured_skill": "Reading comprehension / Vocabulary / Grammar",
+      "explanation": {
+        "correct": "The correct answer is 'Hi, I'm...' because it is a common way to respond to an introduction in English, as seen in the dialogue between Ellis and the other person.",
+        "distractors": {
+          "A": "This option is incorrect because 'Hello!' is a more general greeting.",
+          "B": "This option is incorrect because 'Nice to meet you.' is a response to an introduction, but not a introduction itself.",
+          "C": "This option is incorrect because 'What's your name?' is a question to ask someone else, not to respond to an introduction."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Step 1: Read the dialogue between Ellis and the other person.",
+        "Step 2: Identify the correct response to an introduction."
+      ],
+      "topic": "UNIT 4. MANNERS AND RULES",
+      "cat": "İngilis dili 8",
+      "passport_id": "08-ENG-SAD-42c41cb8"
+    },
+    {
+      "question": "What is the polite way to ask someone's name when you meet them for the first time?",
+      "options": [
+        "What's your name?",
+        "Who are you?",
+        "What do you do?",
+        "Where are you from?"
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Tətbiq",
+      "difficulty": "Orta",
+      "measured_skill": "Reading comprehension / Vocabulary / Grammar",
+      "explanation": {
+        "correct": "When meeting someone for the first time, it's polite to ask for their name directly and simply, as seen in the dialogue between Jayla and Anthony.",
+        "distractors": {
+          "A": "This option is too direct and might be considered impolite in some cultures.",
+          "B": "This option is too general and doesn't specifically ask for the person's name.",
+          "C": "This option asks about the person's occupation, not their name.",
+          "D": "This option asks about the person's location, not their name."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Step 1: Identify the context of the question, which is about meeting someone for the first time.",
+        "Step 2: Recognize the polite way to ask for someone's name in this context."
+      ],
+      "topic": "UNIT 4. MANNERS AND RULES",
+      "cat": "İngilis dili 8",
+      "passport_id": "08-ENG-ORT-f5dc0e7e"
+    },
+    {
+      "question": "What does Jayla say when she meets Anthony?",
+      "options": [
+        "Hi, I'm Jayla. Nice to meet you.",
+        "My name's Anthony.",
+        "What's your name?",
+        "Nice to meet you, too."
+      ],
+      "correctAnswer": 0,
+      "bloom_level": "Bilik",
+      "difficulty": "Sadə",
+      "measured_skill": "Reading comprehension",
+      "explanation": {
+        "correct": "Jayla introduces herself and greets Anthony.",
+        "distractors": {
+          "A": "This is Jayla's introduction.",
+          "B": "This is Anthony's introduction.",
+          "C": "This is a question Jayla asks Anthony.",
+          "D": "This is Anthony's response to Jayla."
+        }
+      },
+      "distractor_diagnostics": {
+        "0": "conceptual_error",
+        "1": "typical_mistake",
+        "2": "term_confusion",
+        "3": "partial_truth"
+      },
+      "solution_steps": [
+        "Read the dialogue between Jayla and Anthony.",
+        "Identify Jayla's first statement."
+      ],
+      "topic": "UNIT 5. A PLACE CALLED HOME",
+      "cat": "İngilis dili 8",
+      "passport_id": "08-ENG-SAD-a6f50f22"
     }
   ],
   "Alman dili 8": [
