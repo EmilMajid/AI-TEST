@@ -44,12 +44,49 @@ TOTAL_COMPLETION_TOKENS = 0
 # ── NVIDIA modelləri ─────────────────────────────────────────────────────────
 NVIDIA_BASE = "https://integrate.api.nvidia.com/v1"
 
-MODELS = [
-    "deepseek-ai/deepseek-v4-pro",
+# Sınaqdan keçirilmiş modellər (üstündən aşağıya prioritet sırasında)
+CANDIDATE_MODELS = [
     "meta/llama-3.3-70b-instruct",
-    "qwen/qwen2.5-72b-instruct",
-    "mistralai/mistral-large-2-instruct",
+    "nvidia/llama-3.3-nemotron-super-49b-v1",
 ]
+
+MODELS = [
+    "meta/llama-3.3-70b-instruct",
+    "nvidia/llama-3.3-nemotron-super-49b-v1",
+]
+
+
+def detect_working_models(api_key: str, max_models: int = 3) -> list:
+    """Sürətlə işlək modelləri aşkar et."""
+    print("🔍 İşlək modellər axtarılır...")
+    client = OpenAI(base_url=NVIDIA_BASE, api_key=api_key)
+    test_msg = [{"role": "user", "content": 'Reply with just: {"ok":1}'}]
+    working = []
+
+    for m in CANDIDATE_MODELS:
+        if len(working) >= max_models:
+            break
+        try:
+            r = client.chat.completions.create(
+                model=m, messages=test_msg, max_tokens=20, temperature=0.1
+            )
+            _ = r.choices[0].message.content
+            print(f"  ✅ {m}")
+            working.append(m)
+        except Exception as e:
+            err = str(e)[:60]
+            if "429" in err:
+                print(f"  ⏳ {m} → rate limit (əlavə edildi, yavaş ola bilər)")
+                working.append(m)
+            else:
+                print(f"  ❌ {m} → {err}")
+
+    if not working:
+        working = ["deepseek-ai/deepseek-v4-pro"]  # fallback
+        print(f"  ⚠️  Heç biri cavab vermədi, deepseek-v4-pro istifadə olunur")
+
+    print(f"\n✅ Seçilən modellər ({len(working)}): {', '.join(m.split('/')[-1] for m in working)}\n")
+    return working
 
 # ── Tək test üçün API çağırışı ────────────────────────────────────────────────
 def call_one(client: OpenAI, model: str, user_prompt: str,
@@ -192,15 +229,27 @@ def generate_parallel(
 
     results = [None] * count
 
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    executor = ThreadPoolExecutor(max_workers=max_workers)
+    try:
         future_map = {executor.submit(generate_one_test, t): t[3]-1 for t in tasks}
-        for future in as_completed(future_map):
-            idx = future_map[future]
-            try:
-                v, t_num, cp, bloom, diff = future.result()
-                results[idx] = v
-            except Exception as ex:
-                print(f"  Thread xətası (test {idx+1}): {ex}")
+        try:
+            for future in as_completed(future_map, timeout=240):
+                idx = future_map[future]
+                try:
+                    v, t_num, cp, bloom, diff = future.result(timeout=60)
+                    results[idx] = v
+                    import sys; sys.stdout.flush()
+                except TimeoutError:
+                    print(f"  ⏰ Test {idx+1} future timeout (60s) → atlandı")
+                except Exception as ex:
+                    print(f"  Thread xətası (test {idx+1}): {ex}")
+        except TimeoutError:
+            done = sum(1 for r in results if r is not None)
+            print(f"  ⏰ Ümumi timeout (240s) → {done}/{count} test toplandı, saxlanılır...")
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
+
+
 
     generated = [r for r in results if r is not None]
     failed = count - len(generated)
@@ -236,9 +285,11 @@ def main():
     parser.add_argument("--workers",  type=int, default=7)
     parser.add_argument("--models",   nargs="+", default=None,
                         help="İstifadə ediləcək model adları (space ilə ayrılmış)")
+    parser.add_argument("--append",   action="store_true", default=False,
+                        help="Mövcud testlərə əlavə et (silmə)")
     args = parser.parse_args()
 
-    model_list = args.models or MODELS[:3]
+    model_list = args.models or detect_working_models(args.api_key, max_models=3)
 
     tests = generate_parallel(
         subject=args.subject,
@@ -250,10 +301,19 @@ def main():
     )
 
     if tests:
-        save_to_db(args.subject, args.topic, tests, replace=True)
-        export_to_markdown(args.subject, args.topic, tests)
+        replace_mode = not args.append
+        db = save_to_db(args.subject, args.topic, tests, replace=replace_mode)
+        # MD ixracı: append rejimində bütün mövzu testlərini ixrac et
+        if args.append:
+            all_topic_tests = [t for t in db.get(args.subject, [])
+                               if t.get('topic', '') == args.topic]
+            export_to_markdown(args.subject, args.topic, all_topic_tests)
+        else:
+            export_to_markdown(args.subject, args.topic, tests)
     else:
         print("❌ Heç bir test generasiya olunmadı.")
+    sys.stdout.flush()
+    os._exit(0)
 
 
 if __name__ == "__main__":

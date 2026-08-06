@@ -169,23 +169,22 @@ def make_passport_id(subject: str, topic: str, grade: int,
 GS3_SYSTEM = """Sən Azərbaycan Təhsil İnstitutu və DİM (Dövlət İmtahan Mərkəzi) üçün mütəxəssis müəllim-metodistsən.
 Gold Standard 3.0 spesifikasiyasına (Bölmə 1-18) TAM ƏMƏL ETMƏLİSƏN:
 
-GOLD STANDARD 3.0 MƏCBURİ SPESİFİKASİYA QAYDALARI:
-1. RULE-004 & 006 (SOURCE ISOLATION & HALLUCINATION): YALNIZ verilən dərslik RAG datasındakı həqiqi riyazi düsturlar, misallar, ədədlər və teorem müddəalarından istifadə et. Şablon və ya metadil uydurmaq MÜTLƏQ QADAĞANDIR!
-2. RULE-010 (STEM CONSTRUCTION): Sual kökü konkret академик riyazi tapşırıq və ya hesablamadan ibarət olmalıdır (Məsələn: "$P(x) = 2x^3 - 3x + 6$ çoxhədlisini $x - 2$ ikihədlisinə böldükdə alınan natamam qisməti tapın."). "Dərslikdə qeyd olunur...", "Bu mövzuda...", "1-ci teorem nədir..." kimi meta-dil ifadələri YASAQDIR.
+GOLD STANDARD 3.0 MƏCBURİ SPESİFİKASİYA QAYDALARI (AZƏRBAYCAN DİLİ VƏ ƏDƏBİYYAT):
+1. RULE-004 & 006 (SOURCE ISOLATION & HALLUCINATION): YALNIZ verilən dərslik RAG datasındakı mətnlərdən, obrazlardan, lüğət tərkibindən, orfoqrafik və qrammatik qaydalardan istifadə et. Riyaziyyat, fizika və ya başqa fənn sualları uydurmaq MÜTLƏQ QADAĞANDIR!
+2. RULE-010 (STEM CONSTRUCTION): Sual kökü konkret akademik dil/ədəbiyyat tapşırığından ibarət olmalıdır (Məsələn: "Mətndə tünd şriftlə verilmiş sözün kontekstə uyğun mənasını tapın.", "Mətnin əsas ideyasını əks etdirən fikri müəyyən edin."). "Dərslikdə qeyd olunur...", "Bu mövzuda..." kimi meta-dil ifadələri YASAQDIR.
 3. RULE-011 (NEGATIVE QUESTION ELIMINATION): İNKAR FORMALI SUALLAR YASAQDIR! "DEYİL", "YANLIŞ", "İSTİSNA", "AŞAĞIDAKILARDAN HANSI DEYİL" işlətmək MÜTLƏQ QADAĞANDIR. Sual yalnız təsdiq formasında olmalıdır.
-4. RULE-014 - 016 (DIAGNOSTIC DISTRACTORS): 3 distraktorun hər biri rəsmi diaqnostik xətanı (konkret riyazi xətanı və ya yanlış hesablama cavabını) ölçməlidir:
-   - "conceptual_error" (bölən və ya qismət dərəcəsinin səhv götürülməsi)
-   - "calculation_error" (hesablama və ya işarə xətası)
-   - "term_swap" (sərbəst həddin və ya əmsalların yerinin qarışdırılması)
-5. RULE-018 (OPTION LENGTH PARITY): Doğru cavab (correctOption) digər variantlardan uzun görünməməlidir! Ən az bir distraktor doğru cavab ilə EYNİ SİMVOL HƏCMİNDƏ olmalıdır (fərq MAX 15 simvol).
-6. RULE-021 - 025 (BLOOM & DIFFICULTY): sadə=bilmə (konkret tərif/qayda), orta=anlama/tətbiq (hesablama/budaqlı bölmə), çətin=təhlil (parametr tapılması, sintetik bölmə və qalıq hesablama).
-7. RULE-027 & 028 (PEDAGOGICAL EXPLANATION): Hər test üçün pedaqoji izah (doğru cavabın həll məntiqi və addım-addım hesablanması) + 3 yanlış variant üçün diaqnostik izahlar.
-8. LaTeX FORMATI: Bütün riyazi ifadələr, çoxhədlilər və düsturlar $...$ daxilində yazılmalıdır. Kəsrlər $\\frac{a}{b}$ formatında, vurma $\\cdot$, dərəcə $x^3$ formatında.
+4. RULE-014 - 016 (DIAGNOSTIC DISTRACTORS): 3 distraktorun hər biri rəsmi diaqnostik xətanı ölçməlidir:
+   - "conceptual_error" (kontekstual və ya məntiqi səhv şərh)
+   - "calculation_error" (orfoqrafik/grammatik qayda yanlışlığı)
+   - "term_swap" (fakt və ya obrazların yerinin qarışdırılması)
+5. RULE-018 (OPTION LENGTH PARITY): Doğru cavab (correctOption) digər variantlardan uzun görünməməlidir! Ən az bir distraktor doğru cavab ilə EYNİ SİMVOL HƏCMİNDƏ olmalıdır.
+6. RULE-021 - 025 (BLOOM & DIFFICULTY): sadə=bilmə (orfoqrafiya, leksik məna), orta=anlama/tətbiq (ümlə təhlili, mətnin strukturu), çətin=təhlil (ideya, üslub, kontekstdən çıxarılan nəticə).
+7. RULE-027 & 028 (PEDAGOGICAL EXPLANATION): Hər test üçün pedaqoji izah + 3 yanlış variant üçün diaqnostik izahlar.
 
 ÇIXIŞ FORMATI - YALNIZ JSON obyekti (başqa heç nə yazma):
 {
-  "question": "Concret riyazi sual mətni (LaTeX $...$ ilə)...",
-  "options": ["A variantı", "B variantı", "C variantı", "D variantı"],
+  "question": "Konkret Azərbaycan dili / mətn təhlili sualı...",
+  "options": ["Variant A", "Variant B", "Variant C", "Variant D"],
   "correctAnswer": 0,
   "explanation": {
     "correct": "💡 PEDAQOJİ İZAH: ...",
@@ -217,17 +216,17 @@ MÖVZU: {topic}
 TEST №{test_num}/{total} | SƏVİYYƏ: {diff_label} | BLUM: {bloom}
 DÜZGÜN CAVAB MÖVQEYİ: {correct_pos} (0=A, 1=B, 2=C, 3=D)
 
-HƏMİN MÖVZU ÜÇÜN RAG DƏRSLİK DATASI:
+HƏMİN MÖVZU ÜÇÜN 100% RƏSMİ DƏRSLİK RAG DATASI (YALNIZ BU MƏTNƏ ƏSASLAN):
 ---
 {rag_text[:6000]}
 ---
 
-TƏLƏBLƏR:
-1. Konkret real riyazi misal, çoxhədli bölünməsi hesablama tapşırığı və ya teoremin tətbiqi sualı tərtib et.
-2. Bütün riyazi ifadələrdə LaTeX ($...$) istifadə et.
-3. correctAnswer MÜTLƏQ {correct_pos} olsun (0=A, 1=B, 2=C, 3=D).
-4. options massivindəki {correct_pos}-ci element HƏQİQİ DOĞRU CAVABDIR.
-5. Sual kökündə və ya variantlarda "teorem 1 nədir", "dərslikdə qeyd olunur", "11-ci sinif dərslik proqramında" kimi META-DİL İŞLƏTMƏ!
+ÇOX MÜHÜM VƏ MƏCBURİ TƏLƏBLƏR:
+1. YALNIZ YUXARIDA VERİLƏN RAG DƏRSLİK MƏTNİNDƏN İSTİFADƏ ET. Başqa fənlərdən (riyaziyyat, hüquq, konstitusiya, ingilis dili) VƏ YA UYDURMA MƏTN DƏXİL ETMƏK MÜTLƏQ QADAĞANDIR!
+2. Azərbaycan dilində olmayan, yad və ya səhv tərcümə olunmuş sözlərdən ("documenti", "defensə", "barjomi", "konkret riyazi", "step funksiyası" və s.) İSTİFADƏ ETMƏK MÜTLƏQ YASAQDIR! Bütün cümlələr təmiz, rəsmi Azərbaycan ədəbi dilində olmalıdır.
+3. Sual kökü dərslikdəki mətndən mətn təhlili, orfoqrafiya, leksika, cümlənin sintaktik təhlili, sözün leksik mənası və ya əsərin ideyası üzrə akademik tapşırıq olmalıdır.
+4. correctAnswer MÜTLƏQ {correct_pos} olsun (0=A, 1=B, 2=C, 3=D).
+5. Sual kökündə "dərslikdə qeyd olunur", "11-ci sinifdə" kimi META-DİL İŞLƏTMƏ!
 6. Sual kökündə DEYİL, YANLIŞ, İSTİSNA işlətmə (Rule 011)!
 7. YALNIZ JSON OBYEKTİNİ YAZ."""
 
@@ -321,9 +320,37 @@ TEMPLATE_RE = [
 ]
 
 
+def sanitize_latex(text: str) -> str:
+    if not text:
+        return text
+    # Replace LaTeX fraction & root commands
+    text = re.sub(r'\\frac\{([^}]+)\}\{([^}]+)\}', r'(\1/\2)', text)
+    text = re.sub(r'\\sqrt\{([^}]+)\}', r'√(\1)', text)
+    text = re.sub(r'\\sqrt\s*([a-zA-Z0-9]+)', r'√\1', text)
+    text = re.sub(r'\\cdot|\\times', '×', text)
+    text = re.sub(r'\\leq|\\le', '≤', text)
+    text = re.sub(r'\\geq|\\ge', '≥', text)
+    text = re.sub(r'\\neq|\\ne', '≠', text)
+    text = re.sub(r'\\pm', '±', text)
+    
+    # Exponents
+    text = re.sub(r'\^2\b|\^\{2\}', '²', text)
+    text = re.sub(r'\^3\b|\^\{3\}', '³', text)
+    text = re.sub(r'\^4\b|\^\{4\}', '⁴', text)
+    text = re.sub(r'\^5\b|\^\{5\}', '⁵', text)
+    text = re.sub(r'\^n\b|\^\{n\}', 'ⁿ', text)
+
+    # Remove all dollar signs & backslashes
+    text = text.replace('$', '')
+    return text
+
+
 def clean(text: str) -> str:
+    if not text:
+        return text
     for pat, repl in TURK_MAP:
         text = re.sub(pat, repl, text)
+    text = sanitize_latex(text)
     return text
 
 
@@ -362,6 +389,13 @@ def validate(obj: dict, correct_pos: int, bloom: str, difficulty: str) -> Option
 
     obj["question"] = clean(q)
     obj["options"]  = [clean(o) for o in opts]
+    if isinstance(obj.get("explanation"), dict):
+        if "correct" in obj["explanation"]:
+            obj["explanation"]["correct"] = clean(obj["explanation"]["correct"])
+        if isinstance(obj["explanation"].get("distractors"), dict):
+            for k, v in obj["explanation"]["distractors"].items():
+                obj["explanation"]["distractors"][k] = clean(v)
+
     obj["bloom_level"] = bloom
     obj["difficulty"]  = difficulty
 
@@ -502,9 +536,7 @@ def export_to_markdown(subject: str, topic: str, tests: list):
 
     lines = [
         f"# {subject} — Mövzu: {topic}",
-        f"**Test sayı:** {len(tests)}  |  **Standart:** Gold Standard 3.0 (NVIDIA DeepSeek V4 Pro)",
-        "",
-        "> Düsturlar LaTeX formatındadır ($...$). MathJax/KaTeX ilə render olunur.",
+        f"**Test sayı:** {len(tests)}  |  **Standart:** Gold Standard 3.0 (NVIDIA llama-3.3-70b + nemotron-49b)",
         "",
         "---", "",
     ]
