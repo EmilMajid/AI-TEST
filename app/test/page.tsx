@@ -34,6 +34,19 @@ interface TestConfig {
   timeLimit: number
 }
 
+const cleanFormattedText = (text: string): string => {
+  if (!text || typeof text !== "string") return text || "";
+  return text
+    .replace(/\$([^\$]+)\$/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/^\s*\*\s+/gm, "")
+    .replace(/\\cdot/g, "·")
+    .replace(/\\times/g, "×")
+    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1 / $2")
+    .replace(/\{([^}]+)\}/g, "$1")
+    .trim();
+};
+
 export default function TestPage() {
   const router = useRouter()
   const [testConfig, setTestConfig] = useState<TestConfig | null>(null)
@@ -103,6 +116,7 @@ export default function TestPage() {
         // Sualları konfiqurasiyaya uyğun olaraq filtrələ
         const filteredQuestions = data.questions.slice(0, config.questionCount)
         setQuestions(filteredQuestions)
+        setIsTestStarted(true)
 
         console.log(`✅ ${filteredQuestions.length} sual yaradıldı:`, {
           requestedCount: config.questionCount,
@@ -467,7 +481,7 @@ export default function TestPage() {
             </div>
           </CardHeader>
           <CardContent>
-            <p className="text-lg mb-6">{currentQuestion.question}</p>
+            <p className="text-lg mb-6">{cleanFormattedText(currentQuestion.question)}</p>
             <RadioGroup
               value={selectedAnswers[currentQuestion.id]?.toString() || ""}
               onValueChange={(value) => handleAnswerSelect(currentQuestion.id, Number.parseInt(value))}
@@ -476,7 +490,7 @@ export default function TestPage() {
                 <div key={index} className="flex items-center space-x-2 p-3 rounded-lg hover:bg-gray-50">
                   <RadioGroupItem value={index.toString()} id={`option-${index}`} />
                   <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer">
-                    {option}
+                    {cleanFormattedText(option)}
                   </Label>
                 </div>
               ))}

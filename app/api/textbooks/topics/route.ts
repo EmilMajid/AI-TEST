@@ -223,6 +223,51 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
     }
 }
 
+function getTopicsFromOfflineTests(bookId: string, bookSubject: string, classLevel: string): TopicGroup[] {
+    try {
+        const offlinePath = path.join(process.cwd(), "data", "offline_tests.json");
+        if (!fs.existsSync(offlinePath)) return [];
+        
+        const db = JSON.parse(fs.readFileSync(offlinePath, "utf-8"));
+        const norm = (s: string) => s.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").replace(/[\s\-_]+/g, " ").trim();
+        
+        const targetNorm = norm(bookSubject) + " " + classLevel;
+        const bookIdNorm = norm(bookId);
+
+        const matchedKey = Object.keys(db).find(k => {
+            const kNorm = norm(k);
+            return kNorm === targetNorm || 
+                   kNorm === bookIdNorm || 
+                   (kNorm.includes(norm(bookSubject)) && k.includes(classLevel)) ||
+                   (kNorm.includes(bookIdNorm.replace(/\-\d+$/, "")));
+        });
+
+        if (!matchedKey || !Array.isArray(db[matchedKey])) return [];
+
+        const topicsSet = new Set<string>();
+        db[matchedKey].forEach((item: any) => {
+            const t = item.topic || item.topic_key;
+            if (t && typeof t === "string" && t.trim().length > 0 && !isMockContent(t)) {
+                topicsSet.add(t.trim());
+            }
+        });
+
+        if (topicsSet.size === 0) return [];
+
+        return [{
+            chapter: "Mövzular",
+            topics: Array.from(topicsSet).map((t, idx) => ({
+                title: t,
+                page: idx + 1,
+                path: ""
+            }))
+        }];
+    } catch (e) {
+        console.error("[Topics API] Offline fallback error:", e);
+        return [];
+    }
+}
+
 export async function GET(request: NextRequest) {
     try {
         const { searchParams } = new URL(request.url)
@@ -278,13 +323,19 @@ export async function GET(request: NextRequest) {
             }
             const normalizedDisplayName = bookDisplayName.replace(/\s*\(Hissə \d+\)/i, "").trim();
 
-            // FILTER logic: support both bookId and subject
+            const normSubj = (s: string) => s.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i").replace(/ğ/g, "g").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ş/g, "s").replace(/ç/g, "c").replace(/ə/g, "e").replace(/[\s\-_]+/g, " ").trim();
+            const targetSubjectNorm = targetSubject ? normSubj(targetSubject) : "";
+            const bookSubjectNorm = normSubj(bookSubject);
+            const normalizedDisplayNameNorm = normSubj(normalizedDisplayName);
+
+            // FILTER logic: support both bookId and subject with unicode normalization
             const matches = targetBookId
                 ? bookId === targetBookId
                 : (!targetSubject || (
-                    bookSubject === targetSubject ||
-                    normalizedDisplayName === targetSubject ||
-                    normalizedDisplayName.startsWith(targetSubject) ||
+                    bookSubjectNorm === targetSubjectNorm ||
+                    normalizedDisplayNameNorm === targetSubjectNorm ||
+                    normalizedDisplayNameNorm.includes(targetSubjectNorm) ||
+                    targetSubjectNorm.includes(bookSubjectNorm) ||
                     (targetSubject === "Xarici dil" && normalizedDisplayName.toLowerCase().includes("dili") && !normalizedDisplayName.includes("Azərbaycan"))
                 ));
 
@@ -310,10 +361,14 @@ export async function GET(request: NextRequest) {
                 if (fs.existsSync(tPath)) bookTopics = extractTopicsFromTOC(tPath);
             }
 
-            const cleanGroups = bookTopics
+            let cleanGroups = bookTopics
                 .filter(g => !isMockContent(g.chapter))
                 .map(g => ({ ...g, topics: g.topics.filter(t => !isMockContent(t.title)) }))
                 .filter(g => g.topics.length > 0);
+
+            if (cleanGroups.length === 0) {
+                cleanGroups = getTopicsFromOfflineTests(bookId, normalizedDisplayName, classLevel);
+            }
 
             if (cleanGroups.length > 0) {
                 results[normalizedDisplayName] = results[normalizedDisplayName]

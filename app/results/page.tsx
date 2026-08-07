@@ -95,6 +95,90 @@ interface TestAnalysis {
   }
 }
 
+const cleanMath = (str: string): string => {
+  if (!str || typeof str !== "string") return str || "";
+  return str
+    .replace(/\$([^\$]+)\$/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/^\s*\*\s+/gm, "")
+    .replace(/\\cdot/g, "·")
+    .replace(/\\times/g, "×")
+    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1 / $2")
+    .replace(/\{([^}]+)\}/g, "$1")
+    .trim();
+};
+
+// Safe helper to convert any potential object/array/primitive into safe React child
+const renderSafe = (val: any): React.ReactNode => {
+  if (val === null || val === undefined) return "";
+  if (typeof val === "string") return cleanMath(val);
+  if (typeof val === "number" || typeof val === "boolean") {
+    return String(val);
+  }
+  if (Array.isArray(val)) {
+    return val.map((item, idx) => (
+      <span key={idx}>
+        {idx > 0 ? ", " : ""}
+        {renderSafe(item)}
+      </span>
+    ));
+  }
+  if (typeof val === "object") {
+    if (val.correct !== undefined || val.distractors !== undefined) {
+      const opts = [val.correct, ...(Array.isArray(val.distractors) ? val.distractors : [])].filter(Boolean);
+      return opts.map((o) => (typeof o === "string" ? cleanMath(o) : JSON.stringify(o))).join(", ");
+    }
+    if (val.text) return renderSafe(val.text);
+    if (val.label) return renderSafe(val.label);
+    if (val.title) return renderSafe(val.title);
+    if (val.message) return renderSafe(val.message);
+    if (val.name) return renderSafe(val.name);
+    try {
+      return JSON.stringify(val);
+    } catch {
+      return String(val);
+    }
+  }
+  return String(val);
+};
+
+// Safe helper to extract option string from array or {correct, distractors} object
+const getOptionText = (options: any, index: any): string => {
+  if (!options) return "";
+  
+  if (Array.isArray(options)) {
+    const item = options[index];
+    if (item === undefined || item === null) return "";
+    if (typeof item === "string" || typeof item === "number") return String(item);
+    if (typeof item === "object") {
+      return item.text || item.label || item.value || JSON.stringify(item);
+    }
+    return String(item);
+  }
+  
+  if (typeof options === "object") {
+    const { correct, distractors } = options;
+    const allOptions: string[] = [];
+    if (typeof correct === "string") allOptions.push(correct);
+    else if (correct) allOptions.push(String(correct));
+    
+    if (Array.isArray(distractors)) {
+      distractors.forEach((d: any) => {
+        if (typeof d === "string") allOptions.push(d);
+        else if (d) allOptions.push(String(d));
+      });
+    }
+    
+    const idx = Number(index);
+    if (!isNaN(idx) && allOptions[idx] !== undefined) {
+      return String(allOptions[idx]);
+    }
+    return typeof options === "string" ? options : JSON.stringify(options);
+  }
+  
+  return String(options);
+};
+
 export default function ResultsPage() {
   const router = useRouter()
   const [results, setResults] = useState<TestResults | null>(null)
@@ -442,11 +526,11 @@ export default function ResultsPage() {
                               )}
                               Sual {index + 1}
                             </CardTitle>
-                            <p className="text-sm text-gray-600 mt-1">{question.question}</p>
+                            <p className="text-sm text-gray-600 mt-1">{renderSafe(question.question)}</p>
                           </div>
                           <div className="flex items-center space-x-2 ml-4">
-                            <Badge className={getDifficultyColor(question.difficulty)}>{question.difficulty}</Badge>
-                            <Badge className={getBloomColor(question.bloomLevel)}>{question.bloomLevel}</Badge>
+                            <Badge className={getDifficultyColor(question.difficulty)}>{renderSafe(question.difficulty)}</Badge>
+                            <Badge className={getBloomColor(question.bloomLevel)}>{renderSafe(question.bloomLevel)}</Badge>
                             <Button variant="ghost" size="sm" onClick={() => toggleQuestionExpansion(question.id)}>
                               {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                             </Button>
@@ -461,15 +545,15 @@ export default function ResultsPage() {
                               <span className="text-sm font-medium text-gray-600">Sizin cavabınız:</span>
                               <p className={`font-medium ${isCorrect ? "text-green-600" : "text-red-600"}`}>
                                 {userAnswer !== undefined
-                                  ? `${String.fromCharCode(65 + userAnswer)}) ${question.options[userAnswer]}`
+                                  ? `${String.fromCharCode(65 + Number(userAnswer))}) ${getOptionText(question.options, userAnswer)}`
                                   : "Cavab verilməyib"}
                               </p>
                             </div>
                             <div>
                               <span className="text-sm font-medium text-gray-600">Düzgün cavab:</span>
                               <p className="text-green-600 font-medium">
-                                {String.fromCharCode(65 + question.correctAnswer)}){" "}
-                                {question.options[question.correctAnswer]}
+                                {String.fromCharCode(65 + Number(question.correctAnswer))}){" "}
+                                {getOptionText(question.options, question.correctAnswer)}
                               </p>
                             </div>
                           </div>
@@ -482,11 +566,11 @@ export default function ResultsPage() {
                                   <Brain className="h-4 w-4 mr-2" />
                                   AI Təhlili
                                 </h4>
-                                <p className="text-blue-700 text-sm">{questionAnalysis.aiExplanation}</p>
+                                <p className="text-blue-700 text-sm">{renderSafe(questionAnalysis.aiExplanation)}</p>
                               </div>
 
                               {/* Improvement Tips */}
-                              {questionAnalysis.improvementTips.length > 0 && (
+                              {questionAnalysis.improvementTips?.length > 0 && (
                                 <div className="bg-yellow-50 p-4 rounded-lg">
                                   <h4 className="font-medium text-yellow-800 mb-2 flex items-center">
                                     <Lightbulb className="h-4 w-4 mr-2" />
@@ -496,7 +580,7 @@ export default function ResultsPage() {
                                     {questionAnalysis.improvementTips.map((tip, tipIndex) => (
                                       <li key={tipIndex} className="flex items-start">
                                         <span className="mr-2">•</span>
-                                        <span>{tip}</span>
+                                        <span>{renderSafe(tip)}</span>
                                       </li>
                                     ))}
                                   </ul>
@@ -504,7 +588,7 @@ export default function ResultsPage() {
                               )}
 
                               {/* Concepts to Review */}
-                              {questionAnalysis.conceptsToReview.length > 0 && (
+                              {questionAnalysis.conceptsToReview?.length > 0 && (
                                 <div className="bg-purple-50 p-4 rounded-lg">
                                   <h4 className="font-medium text-purple-800 mb-2">Təkrar Edilməli Mövzular</h4>
                                   <div className="flex flex-wrap gap-2">
@@ -514,7 +598,7 @@ export default function ResultsPage() {
                                         variant="outline"
                                         className="text-purple-700 border-purple-300"
                                       >
-                                        {concept}
+                                        {renderSafe(concept)}
                                       </Badge>
                                     ))}
                                   </div>
@@ -527,12 +611,12 @@ export default function ResultsPage() {
                             <div className="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200 shadow-inner">
                               <h4 className="font-bold text-gray-800 mb-2 flex items-center">
                                 <BookOpen className="h-4 w-4 mr-2 text-primary" />
-                                {question.explanation?.includes("Mətndə") ? "Dərslikdən Məcburi Sitat (Sıfır Tolerantlıq)" : "İzahat"}
+                                {typeof question.explanation === 'string' && question.explanation.includes("Mətndə") ? "Dərslikdən Məcburi Sitat (Sıfır Tolerantlıq)" : "İzahat"}
                               </h4>
                               
-                              {question.explanation?.includes("Mətndə") ? (
+                              {typeof question.explanation === 'string' && question.explanation.includes("Mətndə") ? (
                                 <blockquote className="border-l-4 border-red-500 pl-4 py-3 mb-2 text-gray-800 font-medium text-base bg-white rounded shadow-sm">
-                                  {question.explanation}
+                                  {typeof question.explanation === 'string' ? question.explanation : String(question.explanation || '')}
                                 </blockquote>
                               ) : (
                                 <>
@@ -541,7 +625,13 @@ export default function ResultsPage() {
                                       "{question.sourceContext}"
                                     </blockquote>
                                   )}
-                                  <p className="text-gray-700 text-sm">{question.explanation}</p>
+                                  <p className="text-gray-700 text-sm">
+                                    {typeof question.explanation === 'string' 
+                                      ? question.explanation 
+                                      : (typeof question.explanation === 'object' && question.explanation !== null
+                                          ? (question.explanation.text || question.explanation.citation || JSON.stringify(question.explanation))
+                                          : String(question.explanation || ''))}
+                                  </p>
                                 </>
                               )}
                             </div>
