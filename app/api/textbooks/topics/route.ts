@@ -55,6 +55,29 @@ const SUBJECT_MAPPING: Record<string, string> = {
     "cografiya-hisse-2": "Coğrafiya"
 }
 
+const DEFAULT_SUBJECT_TOPICS: Record<string, string[]> = {
+    "Azərbaycan dili": ["Fonetika və Orfoepiya", "Leksikologiya və Semantika", "Morfologiya və Nitq hissələri", "Sintaksis və Cümlə üzvləri", "Mətn üzərində iş və Üslubiyyat"],
+    "Ədəbiyyat": ["Şifahi xalq ədəbiyyatı və Dastanlar", "Klassik Azərbaycan ədəbiyyatı", "Müasir Azərbaycan ədəbiyyatı", "Mətn təhlili və Ədəbiyyat nəzəriyyəsi"],
+    "İnformatika": ["İnformasiya və İnformasiya prosesləri", "Kompüterin arxitekturası və Aparat təminatı", "Proqramlaşdırma əsasları (Python)", "Alqoritmlər və Say sistemləri", "Kompüter şəbəkələri və İT təhlükəsizlik"],
+    "Kimya": ["Atomun quruluşu və Dövri qanun", "Kimyəvi rabitə və Maddənin tərkibi", "Kimyəvi reaksiyalar və Tarazlıq", "Məhlullar və Dissosiasiya", "Qeyri-üzvi birləşmələr və Üzvi kimyaya giriş"],
+    "Fizika": ["Mexaniki hərəkət və Dinamika", "Molekulyar fizika və Termodinamika", "Elektrostatika və Sabit cərəyan", "Optika və Dalğa fizikası", "Kvant və Atom fizikası"],
+    "Biologiya": ["Hüceyrənin quruluşu və Biokimya", "Canlıların müxtəlifliyi və Botanika", "İnsan anatomiyası və Fiziologiyası", "Genetika və Selektsiya", "Ekologiya və Biosfer"],
+    "Coğrafiya": ["Kartoqrafiya və Coğrafi informasiya", "Litosfer və Yer qabığı processes", "Atmsofer, İqlim və Hidrosfer", "Dünyanın və Azərbaycanın Əhalisi", "İqtisadi və Sosial coğrafiya"],
+    "Azərbaycan tarixi": ["Qədim dövr dövlətləri", "Orta əsrlər Azərbaycan dövlətləri", "Yeni dövr və Xanlıqlar mübarizəsi", "Azərbaycan Xalq Cümhuriyyəti və XX əsr", "Müasir Azərbaycan Respublikası və Zəfər tarixi"],
+    "Ümumi tarix": ["Qədim Şərq və Qədim Dünya tarixi", "Orta əsrlər Avropa və Asiya", "Yeni dövr dünya diplomatiyası", "Ən yeni tarix və Beynəlxalq münasibətlər"],
+    "Riyaziyyat": ["Ədədlər və cəbri ifadələr", "Tənliklər və Tənliklər sistemi", "Funksiyalar və Qrafiklər", "Həndəsə fiqurları və Sahələr", "Trigonometriya və Statistika"],
+    "Xarici dil": ["Lexicon & Vocabulary", "Grammar & Syntax", "Reading Comprehension", "Writing & Expression"],
+    "İngilis dili": ["Lexicon & Vocabulary", "Grammar & Syntax", "Reading Comprehension", "Writing & Expression"],
+    "Alman dili": ["Wortschatz & Grammatik", "Leseverstehen", "Schreiben & Ausdruck"],
+    "Fransız dili": ["Vocabulaire & Grammaire", "Compréhension écrite", "Expression écrite"],
+    "Rus dili": ["Лексика и Грамматика", "Чтение и Понимание", "Письменная речь"],
+    "Həyat bilgisi": ["Sağlam həyat tərzi və Təhlükəsizlik", "İnsan, Cəmiyyət və Mədəniyyət", "Mənəvi dəyərlər və Hüquqlarımız"],
+    "Təbiət": ["Canlılar aləmi və Hüceyrə", "Maddə və Enerji çevrilmələri", "Yer kürəsi və Kainat"],
+    "Texnologiya": ["Qrafika və Modelləşdirmə", "Materialların emalı texnologiyası", "Elektronika əsasları və Məişət"],
+    "Təsviri İncəsənət": ["Rəsm texnikaları və Kompozisiya", "Rəngşünaslıq və Tətbiqi sənət", "Dünya İncəsənət tarixi"],
+    "Musiqi": ["Musiqi nəzəriyyəsi və Not savadı", "Azərbaycan Xalq musiqisi və Muğam", "Klassik Bəstəkar yaradıcılığı"]
+};
+
 interface Topic {
     title: string;
     page: number;
@@ -368,6 +391,14 @@ export async function GET(request: NextRequest) {
 
             if (cleanGroups.length === 0) {
                 cleanGroups = getTopicsFromOfflineTests(bookId, normalizedDisplayName, classLevel);
+            }
+
+            if (cleanGroups.length === 0) {
+                const defaultList = DEFAULT_SUBJECT_TOPICS[bookSubject] || DEFAULT_SUBJECT_TOPICS[normalizedDisplayName] || DEFAULT_SUBJECT_TOPICS["Azərbaycan dili"];
+                cleanGroups = [{
+                    chapter: "Mövzular",
+                    topics: defaultList.map((t, idx) => ({ title: t, page: idx + 1, path: "" }))
+                }];
             }
 
             if (cleanGroups.length > 0) {
