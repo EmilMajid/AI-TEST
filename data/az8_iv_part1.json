@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Azərbaycan milli peşəkar teatrının əsası neçənci ildə qoyulmuşdur?",
+    "options": [
+      "1873-cü ildə",
+      "1905-ci ildə",
+      "1918-ci ildə",
+      "1920-ci ildə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Azərbaycan teatr tarixinin əsas tarixlərini bilmək",
+    "explanation": {
+      "correct": "Azərbaycan milli peşəkar teatrının əsası 1873-cü il martın 10-da M.F.Axundzadənin «Sərgüzəşti-vəziri-xani-Lənkəran» komediyasının tamaşaya qoyulması ilə qoyulmuşdur.",
+      "distractors": {
+        "1": "1905-ci il birinci rus inqilabı dövrüdür.",
+        "2": "1918-ci il Xalq Cümhuriyyətinin yaranma ilidir.",
+        "3": "1920-ci il sovet hakimiyyətinin qurulması ilidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R01-01-01-001"
+  },
+  {
+    "question": "Azərbaycan milli teatrının yaranmasında həlledici rol oynamış dramaturq kimdir?",
+    "options": [
+      "Cəlil Məmmədquluzadə",
+      "Mirzə Fətəli Axundzadə",
+      "Hüseyn Cavid",
+      "Cəfər Cabbarlı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Milli teatrın banisi olan dramaturqu tanımaq",
+    "explanation": {
+      "correct": "Mirzə Fətəli Axundzadə yazdığı 6 komediya ilə Şərqdə və Azərbaycanda dramaturqiyanın və milli teatrın təməlini qoymuşdur.",
+      "distractors": {
+        "0": "C.Məmmədquluzadə «Molla Nəsrəddin» jurnalının banisidir.",
+        "2": "H.Cavid romantik dramaturqiyanın nümayəndəsidir.",
+        "3": "C.Cabbarlı 20-ci əsr teatrının görkəmli simasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R01-01-01-002"
+  },
+  {
+    "question": "1873-cü ildə ilk teatr tamaşasını hazırlayan ziyalılarımız kimlər olmuşdur?",
+    "options": [
+      "Həsən bəy Zərdabi və Nəcəf bəy Vəzirov",
+      "Üzeyir Hacıbəyli və Əhməd Ağaoğlu",
+      "Cəlil Məmmədquluzadə və Mirzə Ələkbər Sabir",
+      "Səməd Vurğun və Cəfər Cabbarlı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İlk teatr tamaşasının təşkilatçılarını bilmək",
+    "explanation": {
+      "correct": "İlk teatr tamaşası Bakı realnı məktəbinin şagirdləri tərəfindən Həsən bəy Zərdabi və Nəcəf bəy Vəzirovun rəhbərliyi ilə nümayiş etdirilmişdir.",
+      "distractors": {
+        "1": "Ü.Hacıbəyli opera teatrının banisidir.",
+        "2": "C.Məmmədquluzadə və M.Ə.Sabir satiroqrafiyaya rəhbərlik ediblər.",
+        "3": "S.Vurğun və C.Cabbarlı sonrakı dövrdə fəaliyyət göstəriblər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R01-01-01-003"
+  },
+  {
+    "question": "İlk teatr tamaşasında M.F.Axundzadənin hansı əsəri səhnələşdirilmişdir?",
+    "options": [
+      "«Xırs quldurbasan»",
+      "«Sərgüzəşti-vəziri-xani-Lənkəran»",
+      "«Hacı Qara»",
+      "«Müsyo Jordan və dərviş Məstəli şah»"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İlk səhnələşdirilən teatr əsərini bilmək",
+    "explanation": {
+      "correct": "1873-cü il martın 10-da nümayiş olunan ilk peşəkar tamaşa «Sərgüzəşti-vəziri-xani-Lənkəran» komediyası olmuşdur.",
+      "distractors": {
+        "0": "«Xırs quldurbasan» M.F.Axundzadənin digər komediyasıdır.",
+        "2": "«Hacı Qara» ikinci nümayiş olunan tamaşadır (1873 aprel).",
+        "3": "«Müsyo Jordan» dramaturqun 1-ci komediyasıdır, lakin ilk nümayiş olunan bu deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R01-01-01-004"
+  },
+  {
+    "question": "Azərbaycanda hər il 10 Mart günü hansı peşə bayramı kimi qeyd olunur?",
+    "options": [
+      "Milli Mətbuat Günü",
+      "Milli Teatr Günü",
+      "Milli Kino Günü",
+      "Milli Musiqi Günü"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Milli Teatr Gününün tarixini bilmək",
+    "explanation": {
+      "correct": "1873-cü il 10 mart ilk teatr tamaşasının tarixi olduğu üçün hər il 10 mart Azərbaycanda Milli Teatr Günü kimi qeyd edilir.",
+      "distractors": {
+        "0": "Milli Mətbuat Günü 22 İyuldur (Əkinçi).",
+        "2": "Milli Kino Günü 2 Avqustdur.",
+        "3": "Milli Musiqi Günü 18 Sentyabrdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R01-01-01-005"
+  },
+  {
+    "question": "Azərbaycan teatrının inkişafında məktəb teatrlarının və həvəskar teatr dəstələrinin rolunu nə müəyyən edirdi?",
+    "options": [
+      "Yalnız kommersiya mənfəəti götürmək",
+      "Xalq arasında maarifçilik, ana dili sevgisi və estetik zövq formalaşdırmaq",
+      "Xarici dilləri təbliğ etmək",
+      "Dini ayinləri icra etmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Milli teatrın sosial-maarifçi missiyasını izah etmək",
+    "explanation": {
+      "correct": "Milli teatrın təməli maarifçilik ideyaları üzərində qurulmuşdu; məqsəd xalqı savadlandırmaq və milli şüuru oyatmaq idi.",
+      "distractors": {
+        "0": "İbtidai teatr dəstələri mənfəət üçün deyil, maarif üçün işləyirdi.",
+        "2": "Milli teatr xarici dili deyil, ana dilini təbliğ edirdi.",
+        "3": "Teatr dini ayinlərlə bağlı deyildi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R02-02-02-006"
+  },
+  {
+    "question": "Mətndə verilmiş sintaktik vahidləri təhlil edərkən: «Teatr xalqın mənəvi aynasıdır» cümləsində xəbər hansı nitq hissəsi ilə ifadə olunmuşdur?",
+    "options": [
+      "Feil ilə",
+      "İsim ilə (və ya ismi birləşmə ilə)",
+      "Sifət ilə",
+      "Zərf ilə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cümlənin xəbərini grammatik cəhətdən təhlil etmək",
+    "explanation": {
+      "correct": "«Mənəvi aynasıdır» ifadəsi mənsubiyyət şəkilçili ismi birləşmədir və cümlənin ismi xəbəridir.",
+      "distractors": {
+        "0": "Cümlədə feil işlənməmişdir.",
+        "2": "Ayna isimdir, sifət deyil.",
+        "3": "Zərf hərəkətin tərzini bildirir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R02-02-02-007"
+  },
+  {
+    "question": "Şərqdə ilk opera olan «Leyli və Məcnun» operası neçənci ildə səhnəyə qoyulmuşdur?",
+    "options": [
+      "1873-cü ildə",
+      "1908-ci ildə",
+      "1918-ci ildə",
+      "1928-ci ildə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərqin ilk operasinin yaranma tarixini bilmək",
+    "explanation": {
+      "correct": "Üzeyir Hacıbəylinin «Leyli və Məcnun» operası 1908-ci il yanvarın 12-də Tağıyev teatrında səhnəyə qoyulmuşdur.",
+      "distractors": {
+        "0": "1873 dram teatrının yaranmasıdır.",
+        "2": "1918 Xalq Cümhuriyyətinin yaranma ilidir.",
+        "3": "1928 sonrakı dövrə təsadüf edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R02-02-02-008"
+  },
+  {
+    "question": "Cümlədə hemcins mübtədaların işlənmə qaydasına əsasən hansı nümunədə həmcins mübtədalar var?",
+    "options": [
+      "Həsən bəy və Nəcəf bəy teatrın bünövrəsini qoydular.",
+      "Teatr zalı bəzədildi və işıqlandırıldı.",
+      "Səhnədə aktyorlar gözəl və təsirli danışırdılar.",
+      "Tamaşaçılar salonu sürətlə doldurdular."
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Həmcins mübtədaları cümlə daxilində müəyyən etmək",
+    "explanation": {
+      "correct": "«Həsən bəy və Nəcəf bəy» cümlədə eyni suala (kim?) cavab verən və eyni xəbərə bağlanan həmcins mübtədalardır.",
+      "distractors": {
+        "1": "Bu cümlədə həmcins xəbərlər var (bəzədildi, işıqlandırıldı).",
+        "2": "Bu cümlədə həmcins zərfliklər var (gözəl, təsirli).",
+        "3": "Bu cümlədə həmcins üzv yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R02-02-02-009"
+  },
+  {
+    "question": "«Səhnə mədəniyyəti» ifadəsinin sintaktik təhlilində hansı növ ismi birləşmə olduğu göstərilir?",
+    "options": [
+      "I növ təyini söz birləşməsi",
+      "II növ təyini söz birləşməsi",
+      "III növ təyini söz birləşməsi",
+      "Feili birləşmə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Söz birləşmələrinin növünü təyin etmək",
+    "explanation": {
+      "correct": "«Səhnə mədəniyyəti» birləşməsində 1-ci tərəf qeyri-müəyyən yiyəlik halda, 2-ci tərəf III şəxs mənsubiyyət şəkilçisindədir, deməli II növ təyini söz birləşməsidir.",
+      "distractors": {
+        "0": "I növ birləşmədə şəkilçi olmur.",
+        "2": "III növ birləşmədə 1-ci tərəf müəyyən yiyəlik halda olur (səhnənin mədəniyyəti).",
+        "3": "Asılı tərəf feil olmadığı üçün feili birləşmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R02-02-02-010"
+  },
+  {
+    "question": "«Azərbaycan teatrı» mətninin ideyasını və tarixi inkişaf mərhələlərini təhlil edərək, teatrın 19-cu əsrin sonlarında milli özünüdərk prosesinə təsirini qiymətləndirin.",
+    "options": [
+      "Teatr yalnız əyləncə vasitəsi olduğu üçün milli özünüdərkə təsir etməmişdir.",
+      "Teatr cəmiyyətdəki sosial qüsurları tənqid edərək xalqın cəhalətdən oyanmasına və milli kimliyini dərk etməsinə güclü təkan vermişdir.",
+      "Teatr yalnız saray əyanlarının marağına xidmət etmişdir.",
+      "Teatr dili xalqın başa düşmədiyi qəliz ərəb-fars sözləri ilə dolu idi."
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətnin ideyasını və teatrın sosial-tarixi rolunu dərin təhlil etmək",
+    "explanation": {
+      "correct": "Milli teatr maarifçilik missiyasını daşıyaraq cəmiyyətdəki xurafatı və savadsızlığı tənqid etmiş, milli oyyanışa xidmət etmişdir.",
+      "distractors": {
+        "0": "Teatr əyləncə deyil, maarifləndirmə aləti idi.",
+        "2": "Teatr avam xalq kütlələrinə yönəlmişdi.",
+        "3": "Teatr dili sadə və xalqın başa düşdüyü ana dili idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R04-03-03-011"
+  },
+  {
+    "question": "Mətndəki qrammatik strukturları təhlil edin: «Teatrın inkişafı zəhmətkeş ziyalıların fədakar əməyi sayəsində mümkün olmuşdur» cümləsində mürəkkəb sintaktik təhlili hansı cavabda düzgün verilmişdir?",
+    "options": [
+      "Mübtəda — teatrın; Xəbər — olmuşdur",
+      "Mübtəda — Teatrın inkişafı; Xəbər — zəhmətkeş ziyalıların fədakar əməyi sayəsində mümkün olmuşdur",
+      "Mübtəda — ziyalıların; Zərflik — fədakar",
+      "Mübtəda — əməyi; Tamamlıq — teatrın"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb cümlə üzvlərini sintaktik təhlil etmək",
+    "explanation": {
+      "correct": "«Teatrın inkişafı» (III növ təyini söz birləşməsi) cümlənin mübtədasıdır, geri qalan tərkib isə mürəkkəb ismi xəbərdir.",
+      "distractors": {
+        "0": "Yalnız «teatrın» yiyəlik haldadır, təkbaşına mübtəda ola bilməz.",
+        "2": "Ziyalıların yiyəlik halda tək mübtəda ola bilməz.",
+        "3": "Əməyi sözü mənsubiyyətdədir, mübtəda deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R04-03-03-012"
+  },
+  {
+    "question": "Mətndəki frazeoloji birləşmələrin üslubi imkanlarını təhlil edərək, «can bəxş etmək» ifadəsinin hansı məcontextdə düzgün işləndiyini müəyyən edin.",
+    "options": [
+      "Aktyorun məharətli oyunu səhnədəki obraza yeni can bəxş etdi.",
+      "Rejissor teatr binasına can bəxş etdi.",
+      "Tamaşaçılar bilet alaraq teatra can bəxş etdilər.",
+      "Qrimçi aktyorun paltarına can bəxş etdi."
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Frazeoloji birləşmələrin kontekstual üslubi tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "«Can bəxş etmək» (canlandırmaq, ruh vermək) məcazi frazeoloji vahid kimi aktyorun obrazı ustadlıqla canlandırmasını ifadə edir.",
+      "distractors": {
+        "1": "Binaya can bəxş edilmir, bu uyğunsuzdur.",
+        "2": "Bilet almaq maddi dəstəkdir, məcazi canlılıq vermək deyil.",
+        "3": "Paltara can bəxş edilmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R04-03-03-013"
+  },
+  {
+    "question": "Cümlələrin sintaktik təhlili zamanı tabesiz mürəkkəb cümlələrdə tərəflər arasında səbəb-nəticə əlaqəsini göstərən nümunəni seçin:",
+    "options": [
+      "Zəng vuruldu və tamaşa başladı.",
+      "Aktyorlar səhnəyə çıxdılar, tamaşaçılar onları hərarətlə alqışladılar.",
+      "Hava soyuq idi, lakin teatr salonu insanlarla dolu idi.",
+      "Yağış yağdı, teatrın həyəti islandı."
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tabesiz mürəkkəb cümlələrdə məna əlaqələrini təhlil etmək",
+    "explanation": {
+      "correct": "«Yağış yağdı (səbəb), teatrın həyəti islandı (nəticə)» cümləsində bir-biri ilə səbəb-nəticə əlaqəsində olan iki tərəf var.",
+      "distractors": {
+        "0": "Bu zaman ardıcıllığı əlaqəsidir.",
+        "1": "Bu da eynizamani və ya ardıcıllıq əlaqəsidir.",
+        "2": "Bu qarşılaşdırma əlaqəsidir (lakin bağlayıcısı var)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R04-03-03-014"
+  },
+  {
+    "question": "Mətndəki hansı cümlədə durğu işarələrinin (dodaqlar, tire, vergül) tətbiqində səhvə yol verilmişdir?",
+    "options": [
+      "Həsən bəy Zərdabi — böyük maarifçi — teatrın inkişafına çox kömək etdi.",
+      "«Sərgüzəşti-vəziri-xani-Lənkəran» komediyası ilk dəfə 1873-cü ildə oynanıldı.",
+      "Rejissor dedi: «Aktyorlar səhnəyə çıxmağa hazırdırlar».",
+      "Teatr, cəmiyyətin mənəvi: güzgüsüdür."
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Durğu işarələrinin qaydalarına uyğunluğunu təhlil etmək",
+    "explanation": {
+      "correct": "«Teatr, cəmiyyətin mənəvi: güzgüsüdür» cümləsində iki nöqtə işarəsi tamamilə yersiz və səhv qoyulmuşdur.",
+      "distractors": {
+        "0": "Əlavənin hər iki tərəfində tire düzgün qoyulub.",
+        "1": "Əsər adı dırnaqda düzgün verilib.",
+        "2": "Vasitəsiz nitqdə iki nöqtə və dırnaqlar düzgündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "IV BÖLMƏ: 1. Azərbaycan teatrı",
+    "cat": "Azərbaycan dili 8",
+    "passport_id": "08-001-0401-11R04-03-03-015"
+  }
+]

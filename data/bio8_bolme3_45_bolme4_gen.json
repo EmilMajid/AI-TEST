@@ -1,0 +1,3191 @@
+[
+  {
+    "question": "İnsan ürəyi neçə kameradan ibarətdir?",
+    "options": [
+      "İki",
+      "Üç",
+      "Dörd",
+      "Bir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ürəyin kamera sayını bilmək",
+    "explanation": {
+      "correct": "İnsan ürəyi 4 kameradan ibarətdir: 2 qulaqcıq (atrium) və 2 mədəcik (ventrikul). Sol tərəf oksigenli, sağ tərəf deoксigenli qanı daşıyır.",
+      "distractors": {
+        "0": "İki kameralı ürək balıqlara aiddir.",
+        "1": "Üç kameralı ürək amfibiya və əksər sürünənlərə aiddir.",
+        "3": "Bir kameralı ürək mövcud deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H01-01-01-061"
+  },
+  {
+    "question": "Ürəyin sağ tərəfindən sol tərəfinə keçişi mane edən əsas anatomik struktur nədir?",
+    "options": [
+      "Aorta",
+      "Mədəciklərarası arakəsmə",
+      "Mitral qapaqcıq",
+      "Plevra"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ürəyin sağ-sol ayrılmasını bilmək",
+    "explanation": {
+      "correct": "Mədəciklərarası arakəsmə (interventrikular septum) sol və sağ mədəcikləri tam ayırır. Deoксigenli qan sağda, oksigenli qan soldadır, bu arakəsmə sayəsindən qarışmır.",
+      "distractors": {
+        "0": "Aorta sol mədəcikdən çıxan ən böyük arteriyad.",
+        "2": "Mitral qapaqcıq sol qulaqcıq ilə sol mədəcik arasındadır.",
+        "3": "Plevra ağciyəri örtən qişadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H01-01-01-062"
+  },
+  {
+    "question": "Ürəkdə kardiak ritmi yaradan əsas düyün hansıdır?",
+    "options": [
+      "AV düyün",
+      "Sinüs (SA) düyünü",
+      "His dəstəsi",
+      "Purkinye liflər"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ürəyin keşikçi düyününü bilmək",
+    "explanation": {
+      "correct": "Sinüs (sinoatrial — SA) düyünü sağ qulaqcıqda yerləşir və ürəyin kardiopeysmeyker (stimulyatoru) rolunu oynayır. O, elektrik impulsları yaradaraq ürəyin ritmik döyüntüsünü idarə edir.",
+      "distractors": {
+        "0": "AV düyün impulsları mədəciklərə ötürür, onları yaratmır.",
+        "2": "His dəstəsi impulsları mədəciklərə aparır.",
+        "3": "Purkinye liflər impulsları mədəcik divarına yayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H01-01-01-063"
+  },
+  {
+    "question": "Sistola nə deməkdir?",
+    "options": [
+      "Ürəyin rahatlaması",
+      "Ürəyin yığılması",
+      "Qanın damarlardan keçməsi",
+      "Qapaqcıqların açılması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sistola anlayışını bilmək",
+    "explanation": {
+      "correct": "Sistola ürək əzələsinin yığılma fazasıdır. Bu zaman qan mədəciklərdən pompalanaraq ağciyər arteriyasına (sağ mədəcikdən) və aortaya (sol mədəcikdən) verilir.",
+      "distractors": {
+        "0": "Diastola ürəyin rahatlamasıdır.",
+        "2": "Qanın damarlardan keçməsi ümumi axın prosesidir.",
+        "3": "Qapaqcıqların açılması sistoladan əvvəl baş verir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H01-01-01-064"
+  },
+  {
+    "question": "Sol mədəciyin divarı sağ mədəciyin divarından daha qalındır. Niyə?",
+    "options": [
+      "Sol tərəf daha çox qan daşıyır",
+      "Sol mədəcik qanı bütün bədənə pompalamaq üçün daha çox güc tələb edir",
+      "Sol tərəf daha çox oksigen işlədilir",
+      "Sağ mədəciyin qapaqcıqları daha böyükdür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sol mədəciyin divarının qalınlığını izah etmək",
+    "explanation": {
+      "correct": "Sol mədəcik qanı sistemik (böyük) dövranla bütün bədənə pompalayır — bu uzun məsafədir, yüksək təzyiq tələb edir. Sağ mədəcik isə yaxın olan ağciyərlərə pompalayır. Buna görə sol mədəciyin divarı daha qalındır.",
+      "distractors": {
+        "0": "Hər iki tərəf eyni miqdarda qan pompalayır.",
+        "2": "Oksigen işlənməsi divar qalınlığını deyil, metabolizmi müəyyənləşdirir.",
+        "3": "Qapaqcıq ölçüsü divar qalınlığına birbaşa bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H01-01-01-065"
+  },
+  {
+    "question": "EKQ (elektrokardioqram) nəyi ölçür?",
+    "options": [
+      "Qanın axın sürətini",
+      "Ürəyin elektrik fəaliyyətini",
+      "Qanın oksigen miqdarını",
+      "Damarlardakı təzyiqi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "EKQ-nin nəyi ölçdüyünü izah etmək",
+    "explanation": {
+      "correct": "EKQ ürəyin elektrik impulslarını qeydə alır. P dalğası qulaqcıqların depolarizasiyasını, QRS kompleksi mədəciklərin depolarizasiyasını, T dalğası isə mədəciklərin repolarizasiyasını göstərir.",
+      "distractors": {
+        "0": "Qanın axın sürəti Doppler ultrasəs ilə ölçülür.",
+        "2": "Qanın oksigeni pulse oksimetr ilə ölçülür.",
+        "3": "Damar təzyiqi tonometr ilə ölçülür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H02-02-02-066"
+  },
+  {
+    "question": "Ürəyin qapaqcıqlarının əsas funksiyası nədir?",
+    "options": [
+      "Qanı istehsal etmək",
+      "Qanın geri axmasının qarşısını almaq",
+      "Ürək döyüntüsünü tənzimləmək",
+      "Elektrik impulsu yaratmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ürəyin qapaqcıqlarının funksiyasını izah etmək",
+    "explanation": {
+      "correct": "Ürəyin qapaqcıqları qanın yalnız bir istiqamətdə axmasını təmin edir. Mədəciklər yığıldıqda qapaqcıqlar bağlanır, qanın qulaqcıqlara geri axması önlənir.",
+      "distractors": {
+        "0": "Qanı ümumiyyətlə sümük iliyi istehsal edir.",
+        "2": "Ürək döyüntüsünü SA düyünü tənzimləyir.",
+        "3": "Elektrik impulsunu SA düyünü yaradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H02-02-02-067"
+  },
+  {
+    "question": "İnsanın istirahətdə ürək döyüntüsü neçədir?",
+    "options": [
+      "20-40 dəfə/dəq",
+      "60-80 dəfə/dəq",
+      "120-150 dəfə/dəq",
+      "200+ dəfə/dəq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Normal ürək döyüntüsü diapazonunu bilmək",
+    "explanation": {
+      "correct": "Sağlam yetkin insanda istirahətdəki ürək döyüntüsü 60-100 dəfə/dəqiqə aralığındadır (adətən 60-80 normal sayılır). İdmançılarda bradikardiya (55 aşağı) normal ola bilər.",
+      "distractors": {
+        "0": "20-40 kəskin bradikardiya vəziyyətidir.",
+        "2": "120-150 fiziki fəaliyyət zamanı olur.",
+        "3": "200+ kəskin taxikardiya vəziyyətidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H02-02-02-068"
+  },
+  {
+    "question": "Koronar arteriyalar niyə vacibdir?",
+    "options": [
+      "Ağciyərə qan aparır",
+      "Ürək əzələsini özünü qida ilə təmin edir",
+      "Qanı bədən toxumalarına aparır",
+      "Qulaqcıqları mədəciklərlə birləşdirir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Koronar arteriyaların funksiyasını izah etmək",
+    "explanation": {
+      "correct": "Koronar arteriyalar ürək əzələsinin özünü qida maddəsi və oksigenlə təmin edir. Onların tıxanması miokard infarktına (ürək tutmasına) gətirib çıxarır.",
+      "distractors": {
+        "0": "Ağciyərə qan sağ mədəcikdən ağciyər arteriyası ilə aparılır.",
+        "2": "Qanı bədən toxumalarına aorta və sistemik arteriyalar aparır.",
+        "3": "Qulaqcıq-mədəcik keçidini AV qapaqcıqlar həyata keçirir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H02-02-02-069"
+  },
+  {
+    "question": "Ürəyin yığılma gücü (kontraksiya) kəskin azalırsa, bu vəziyyət nə adlanır?",
+    "options": [
+      "Taxikardiya",
+      "Ürək çatışmazlığı",
+      "Bradikardiya",
+      "Hipertenziya"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ürək çatışmazlığını izah etmək",
+    "explanation": {
+      "correct": "Ürək əzələsinin kontraksiya gücü azaldıqda ürək bədənin ehtiyaclarını ödəmək üçün lazımi miqdarda qan pompalaya bilmir. Bu vəziyyət ürək çatışmazlığı (kardiak insufficiency) adlanır.",
+      "distractors": {
+        "0": "Taxikardiya sürətli ürək döyüntüsüdür.",
+        "2": "Bradikardiya yavaş ürək döyüntüsüdür.",
+        "3": "Hipertenziya yüksək qan təzyiqidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H02-02-02-070"
+  },
+  {
+    "question": "Ürəyin kardiak output (CO) formulu CO = HR × SV-dır, burada HR ürək döyüntüsü, SV sistol həcmidir. İstirahətdə HR=70, SV=70 ml olsa, kardiak output nədir?",
+    "options": [
+      "700 ml/dəq",
+      "4900 ml/dəq",
+      "140 ml/dəq",
+      "7000 ml/dəq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Kardiak output hesablamasını tətbiq etmək",
+    "explanation": {
+      "correct": "CO = HR × SV = 70 dəfə/dəq × 70 ml = 4900 ml/dəq ≈ 5 litr/dəqiqə. Bu, istirahətdə normal kardiak output dəyəridir.",
+      "distractors": {
+        "0": "700 ml/dəq = 70×10 hesablaması xətadır.",
+        "2": "140 ml/dəq = 70+70 toplama xətasıdır.",
+        "3": "7000 ml/dəq = 70×100 hesablaması xətadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "CO = HR × SV",
+      "CO = 70 × 70 ml",
+      "CO = 4900 ml/dəq ≈ 5 litr/dəq"
+    ],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H03-03-03-071"
+  },
+  {
+    "question": "Frank-Starling qanununa görə ürəyə daxil olan qan miqdarı artdıqda mədəcik daha güclü yığılır. Bu mexanizm nəyi izah edir?",
+    "options": [
+      "Ürək döyüntüsünün artmasını",
+      "Ürəyin artan qan sərfinə uyğunlaşmasını",
+      "Ürəyin yorulmasını",
+      "Qapaqcıqların bağlanmasını"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Frank-Starling mexanizmini tətbiq etmək",
+    "explanation": {
+      "correct": "Frank-Starling qanunu: mədəciyin dolma həcmi (preload) artdıqda əzələ liflər uzanır, bu da daha güclü kontraksiyaya səbəb olur. Nəticədə ürək öz-özlüyündən gələn qanı tam pompalamasına uyğunlaşır.",
+      "distractors": {
+        "0": "Ürək döyüntüsü sürəti Frank-Starling qanununun birbaşa predmeti deyil.",
+        "2": "Yorulma bu qanunla izah edilmir.",
+        "3": "Qapaqcıqların bağlanması sistola/diastola ilə bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H03-03-03-072"
+  },
+  {
+    "question": "Mitral qapaqcıq çatışmazlığında qan sol mədəcikdən sol qulaqcığa geri axır. Bu vəziyyətin ilk nəticəsi nə olacaq?",
+    "options": [
+      "Sağ mədəcikdə təzyiq artır",
+      "Sol qulaqcıqda yüklənmə və böyümə baş verir",
+      "Ağciyər arteriyası tıxanır",
+      "Koronar arteriyalar genişlənir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Mitral qapaqcıq çatışmazlığının nəticəsini analiz etmək",
+    "explanation": {
+      "correct": "Mitral qapaqcıq bağlanmadıqda qan sistola zamanı sol qulaqcığa geri axır. Bu həm sol qulaqcıqda həcm artımına, həm də kiçik qan dövranında təzyiq artmasına (ağciyər kongestiyasına) gətirib çıxarır.",
+      "distractors": {
+        "0": "Sağ mədəcik yalnız ağciyər dövranını pompalayır, mitral xəstəlik birbaşa onu etkiləmir.",
+        "2": "Ağciyər arteriyası tıxanması ayrı bir xəstəlikdir.",
+        "3": "Koronar arteriyalar genişlənməsi bu vəziyyətlə bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H03-03-03-073"
+  },
+  {
+    "question": "Atletlər istirahət ürək döyüntüsü daha azdır (bradikardiya). Bu niyədir?",
+    "options": [
+      "Atletlər daha az qana ehtiyac duyur",
+      "Atletlərin ürəyi daha böyük sistol həcmi ilə daha az döyüntüylə eyni kardiak output-u təmin edir",
+      "Atletlərdə ürək kiçilir",
+      "Atletlər daha az oksigen istifadə edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Atletik bradikardiyasının mexanizmini analiz etmək",
+    "explanation": {
+      "correct": "Müntəzəm məşq ürəyin SV (sistol həcmini) artırır. Daha böyük SV ilə eyni kardiak output-u daha az HR (ürək döyüntüsü) ilə əldə etmək mümkündür. Buna görə atletlər istirahətdə daha yavaş ürək döyüntüsünə malikdir.",
+      "distractors": {
+        "0": "Atletlər fəaliyyət zamanı daha çox qana ehtiyac duyur.",
+        "2": "Atletlərin ürəyi hipertrofiya (böyümə) keçirir, kiçilmir.",
+        "3": "Atletlər daha çox oksigen işlədilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H03-03-03-074"
+  },
+  {
+    "question": "AV blokda sinüs düyünündən gələn impuls mədəciklərə çatmır. Bu xəstə simptomun səbəbi nədir?",
+    "options": [
+      "Sol mədəcik böyüyür",
+      "Mədəciklər həddindən artıq yavaş yığılır, buna görə qan dövranı çatışmır",
+      "Qan dövranı dayanır",
+      "Ağciyər arteriyası tıxanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "AV blokun funksional nəticəsini şərh etmək",
+    "explanation": {
+      "correct": "SA düyünündən gələn impuls AV düyündən keçə bilmədikdə mədəciklər öz alternativ ritmini (ventricular escape rhythm, ≈40 dəfə/dəq) yaradır. Bu yavaş ritm qan dövranı çatışmazlığına gətirir — baş gicəllənmə, huş itkisi baş verir.",
+      "distractors": {
+        "0": "Sol mədəciyin böyüməsi AV blokun birbaşa nəticəsi deyil.",
+        "2": "Qan dövranı tam dayanmır, yavaşlayır.",
+        "3": "Ağciyər arteriyasının tıxanması ayrı bir xəstəlikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsan ürəyinin quruluşu və işi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0302-03H03-03-03-075"
+  },
+  {
+    "question": "Böyük qan dövranı (sistemik) haradan başlayır?",
+    "options": [
+      "Sağ mədəcikdən",
+      "Sol mədəcikdən",
+      "Sol qulaqcıqdan",
+      "Sağ qulaqcıqdan"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Böyük qan dövranının başlanğıcını bilmək",
+    "explanation": {
+      "correct": "Böyük dövran sol mədəcikdən başlayır. Sol mədəcik oksigenli qanı aorta vasitəsilə bütün bədənə göndərir.",
+      "distractors": {
+        "0": "Sağ mədəcik kiçik (ağciyər) dövranı başladır.",
+        "2": "Sol qulaqcıq ağciyərlərdən gələn qanı sol mədəciyə ötürür.",
+        "3": "Sağ qulaqcıq böyük dövranın son nöqtəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q01-01-01-076"
+  },
+  {
+    "question": "Kiçik qan dövranında qan hansı ardıcıllıqla hərəkət edir?",
+    "options": [
+      "Sol mədəcik → Aorta → Bədən → Vena kava → Sağ qulaqcıq",
+      "Sağ mədəcik → Ağciyər arteriyası → Ağciyər → Ağciyər venası → Sol qulaqcıq",
+      "Sağ qulaqcıq → Ağciyər → Sol mədəcik → Aorta",
+      "Sol qulaqcıq → Ağciyər arteriyası → Ağciyər → Sağ mədəcik"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kiçik qan dövranının ardıcıllığını bilmək",
+    "explanation": {
+      "correct": "Kiçik (ağciyər) dövranı: Sağ mədəcik → Ağciyər arteriyası (deoксigenli qan) → Ağciyər kapillyarları (qaz mübadiləsi) → Ağciyər venası (oksigenli qan) → Sol qulaqcıq.",
+      "distractors": {
+        "0": "Bu böyük qan dövranının ardıcıllığıdır.",
+        "2": "Bu ardıcıllıq anatomik cəhətdən yanlışdır.",
+        "3": "Ağciyər arteriyası sol qulaqcıqdan deyil, sağ mədəcikdən çıxır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q01-01-01-077"
+  },
+  {
+    "question": "Ağciyər venası hansı xüsusiyyəti ilə digər venalardan fərqlənir?",
+    "options": [
+      "Daha böyükdür",
+      "Oksigenli qan daşıyır",
+      "Daha sürətli axır",
+      "Birbaşa aortaya qoşulur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağciyər venasının xüsusiyyətini bilmək",
+    "explanation": {
+      "correct": "Adətən venalar deoксigenli qan daşıyır. Ağciyər venası isə istisna olub, ağciyərlərdə oksigenlənmiş qanı sol qulaqcığa aparır. Bu anatomik xüsusiyyəti bilmək vacibdir.",
+      "distractors": {
+        "0": "Ağciyər venasının ölçüsü bu kontekstdə fərqləndirici deyil.",
+        "2": "Qan axın sürəti bu kontekstdə fərqləndirici deyil.",
+        "3": "Ağciyər venası sol qulaqcığa qoşulur, aortaya deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q01-01-01-078"
+  },
+  {
+    "question": "Vena kava ürəyin hansı kamerasına qanı daşıyır?",
+    "options": [
+      "Sol mədəciyə",
+      "Sol qulaqcığa",
+      "Sağ mədəciyə",
+      "Sağ qulaqcığa"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Vena kavanın qanı hara daşıdığını bilmək",
+    "explanation": {
+      "correct": "Böyük dövranın sonu: bədən venozunu toplayan yuxarı (superior) və aşağı (inferior) vena kava — hər ikisi sağ qulaqcığa qanı boşaldır.",
+      "distractors": {
+        "0": "Sol mədəciyə ağciyər venası qanı daşıyır.",
+        "1": "Sol qulaqcığa ağciyər venası qanı daşıyır.",
+        "2": "Sağ mədəciyə ağciyər arteriyası bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q01-01-01-079"
+  },
+  {
+    "question": "Kapillyar nə üçün çox vacibdir?",
+    "options": [
+      "Qanı ürəkdən bədənə aparır",
+      "Qanda oksigen yaradır",
+      "Qan ilə toxuma arasında maddə mübadiləsini həyata keçirir",
+      "Deoксigenli qanı ürəyə aparır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kapillyarın funksiyasını bilmək",
+    "explanation": {
+      "correct": "Kapillyarlar çox nazik divara malik (bir hüceyrə qatı) damarlardır. Bu nazik divar O2, CO2, qlükoza, metabolik tullantıların diffuziya ilə keçməsinə imkan verir. Maddə mübadiləsi yalnız kapillyar səviyyəsindən baş verir.",
+      "distractors": {
+        "0": "Qanı ürəkdən bədənə arteriyalar aparır.",
+        "1": "Qanda oksigen ağciyərlərdə yaranır.",
+        "3": "Deoксigenli qanı ürəyə venalar aparır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q01-01-01-080"
+  },
+  {
+    "question": "Portal qan dövranı nədir?",
+    "options": [
+      "Ağciyəri bypass edən dövran",
+      "Bağırsaqlardan gələn qanın qaraciyərə getdiyi xüsusi dövran",
+      "Baş beynin qan dövranı",
+      "Böyrəklərin xüsusi qan dövranı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Portal qan dövranını izah etmək",
+    "explanation": {
+      "correct": "Portal dövran: bağırsaqlardan mənimsənilən qida maddələri portal vena vasitəsilə birbaşa qaraciyərə aparılır. Qaraciyər bu maddələri metabolize edir, zərərsizləşdirir, saxlayır. Sonra qan qaraciyər venalarına keçir.",
+      "distractors": {
+        "0": "Portal dövran ağciyəri bypass etmir.",
+        "2": "Baş beynin xüsusi qan dövranı mövcuddur amma o portal deyil.",
+        "3": "Böyrəklərin öz filtrasiyon sistemi var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q02-02-02-081"
+  },
+  {
+    "question": "Hipertenziya (yüksək qan təzyiqi) niyə ürək üçün zərərlidir?",
+    "options": [
+      "Qanda oksigen azalır",
+      "Sol mədəcik daha çox güclə işləmək məcburiyyətindədir, zamanla hipertrofiya yaranır",
+      "Ürək ritmi pozulur",
+      "Kapillyarlar geniş açılır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Hipertenziyanın ürəyə təsirini izah etmək",
+    "explanation": {
+      "correct": "Yüksək sistemik damar müqaviməti ilə sol mədəciyin üzərinə yük artır. Davamlı yüklənmə sol mədəciyin divarının qalınlaşmasına (hipertrofiyaya) gətirir. Zamanla bu yenidənqurulma ürəyin pompalamasını zəiflədib ürək çatışmazlığına gətirib çıxara bilər.",
+      "distractors": {
+        "0": "Hipertenziya qandakı oksigeni birbaşa azaltmır.",
+        "2": "Ürək ritmi hipertenziyanın birbaşa ilk nəticəsi deyil.",
+        "3": "Hipertenziya kapillyarları geniş açmır, əksinə damar müqaviməti artır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q02-02-02-082"
+  },
+  {
+    "question": "Ateroskleroz nədir və qan dövranına necə təsir edir?",
+    "options": [
+      "Damarın ani yırtılması",
+      "Damar divarında yağ plakasının toplanması ilə damarın daraldığı proses",
+      "Qanın pıxtalaşması",
+      "Kapillyarın genişlənməsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Aterosklerozun qan dövranına təsirini izah etmək",
+    "explanation": {
+      "correct": "Ateroskleroz xolesterol (LDL) plakasının arteriya divarında toplanması nəticəsindən yaranan xronik xəstəlikdir. Plakalar damarlara darlıq yaradır, qan axını azalır. Koronar arteriyadə olsa, miokard infarktı riskini artırır.",
+      "distractors": {
+        "0": "Damarın yırtılması anevrizm şəraitidə baş verir.",
+        "2": "Qanın pıxtalaşması tromboz adlanır.",
+        "3": "Kapillyarın genişlənməsi vazodilatsiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q02-02-02-083"
+  },
+  {
+    "question": "Lenfatik sistem qan dövranı sistemi ilə necə əlaqəlidir?",
+    "options": [
+      "Lenfatik sistem qanı ürəyə qaytarır",
+      "Lenfatik sistem toxumalarda toplanan artıq mayeni venoz sisteme qaytarır",
+      "Lenfatik sistem arteryalara paralel işləyir",
+      "Limfa qan plazmasından fərqsizdir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Lenfatik sistemin qan dövranı ilə əlaqəsini izah etmək",
+    "explanation": {
+      "correct": "Kapillyar filtrasiya zamanı toxumalara çıxan mayenin bir hissəsi venoz ucdan sorulmur. Bu artıq maye lenfatik kapillyarlara toplanır, limfaya çevrilir. Lenfatik damarlar onu boyun bölgəsindəki vena sistemə qaytarır.",
+      "distractors": {
+        "0": "Limfa öz xüsusi damarları vasitəsilə axır.",
+        "2": "Lenfatik sistem arteriyalara paralel yox, venalara bağlanır.",
+        "3": "Limfa zülal baxımından daha az konsentrasiyalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q02-02-02-084"
+  },
+  {
+    "question": "Arteriyalar venaların əksindən hansı struktur xüsusiyyətinə malikdir?",
+    "options": [
+      "Daha nazik divara malik",
+      "Daha qalın əzələli divara malik",
+      "Qapaqcıqları var",
+      "Daha böyük lümeni var"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arteriya strukturunu venadan fərqləndirmək",
+    "explanation": {
+      "correct": "Arteriyalar ürəkdən yüksək təzyiqlə gələn qanı daşıdığı üçün qalın hamar əzələ qatına malikdir. Venalar isə nazik divarlı, geniş lümenli, çox zaman qapaqcıqlara malikdir.",
+      "distractors": {
+        "0": "Venalar arteriyalara nisbətən daha nazik divarlıdır.",
+        "2": "Qapaqcıqlar venaların xüsusiyyətidir, arteriyaların deyil.",
+        "3": "Venalar daha geniş lümenə malikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q02-02-02-085"
+  },
+  {
+    "question": "Bağırsaqlardan udulmuş yağlar lenfatik sisteminə daxil olur, portal venaya deyil. Bu niyədir?",
+    "options": [
+      "Yağlar suda həll olmur, portal vena sulu mühitdir",
+      "Yağlar çox böyükdür",
+      "Lenfatik sistem daha sürətlidir",
+      "Bu xüsusi anatomik quruluş nəticəsidir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Yağların lenfatik yolla daşınmasının mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Lipidlər su bazalı plazma içindən diffuziya ilə kapillyar divarını keçə bilmir. Bunun əvəzinə lakteal adlanan xüsusi lenfatik kapillyarlar bağırsaq xovunda yağ absorbsiyasını edir. Yağlar kilomikron kimi xilusa keçir, lenfatik damarlar vasitəsilə qana qatılır.",
+      "distractors": {
+        "1": "Molekul ölçüsü əsas mexanizm deyil.",
+        "2": "Lenfatik sistemin sürəti əsas amil deyil.",
+        "3": "Anatomik quruluş sebebi izah etmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "Lipidlər suda həll olmur",
+      "Kapillyar divarını diffuziya ilə keçə bilmir",
+      "Lakteallara → xilus → lenfatik → qan"
+    ],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q03-03-03-086"
+  },
+  {
+    "question": "İki insan: biri yüksəklikdə, biri dəniz səviyyəsindəki yaşayır. Yüksəklikdəki insanın eritrosit sayı artır. Bu adaptasiya qan dövranını necə dəyişir?",
+    "options": [
+      "Ürək döyüntüsü azalır",
+      "Qanın oksigen daşıma kapasitesi artır, eyni kardiak output daha çox O2 daşıyır",
+      "Qan daha lüzumsuz yoğunlaşır",
+      "Kapillyarlar genişlənir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Yüksəklik adaptasiyasının qan dövranına funksional təsirini analiz etmək",
+    "explanation": {
+      "correct": "Eritrosit sayı artdıqda hər litr qanda daha çox hemoglobin var. Bu da qanın oksigen daşıma kapasitesini artırır. Eyni kardiak output ilə toxumalara daha çox O2 çatdırılır — az O2 parsial təzyiqini kompensasiya edir.",
+      "distractors": {
+        "0": "Ürək döyüntüsü ilkin olaraq artır, sonra adaptasiya ilə sabitlənir.",
+        "2": "Viskozite artması qan axınına müqavimət yaradır.",
+        "3": "Kapillyar genişlənməsi ayrı bir mexanizmdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q03-03-03-087"
+  },
+  {
+    "question": "Şok vəziyyətindən (massiv qan itkisi) bədən hansı kompensasiya mexanizmləri ilə cavab verir?",
+    "options": [
+      "Ürək yavaşlayır",
+      "Ürək döyüntüsü artır, periferik damarlar daralır, böyrəklər su saxlayır",
+      "Bədən qanı bərabər paylaşdırır",
+      "Limfa sistemi qanı əvəz edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Hemodinamik şoka bədənin cavabını analiz etmək",
+    "explanation": {
+      "correct": "Massiv qan itkisindən qan həcmi azalır. Bədən cavabı: simpatik sinir sistemi aktivləşir → taxikardiya (ürək döyüntüsü artır) + vazokonstriksiyon (periferik damarlar daralır → qan vacib üzvlərə yönləndirilir) + aldosteron/ADH ifrazı artır → böyrəklər su tutur → qan həcmi artar.",
+      "distractors": {
+        "0": "Şok zamanı ürək yavaşlamır, əksinə taxikardiya baş verir.",
+        "2": "Periferik damarlar daralır, bərabər paylaşıtma olmur.",
+        "3": "Limfa sistemi qanı əvəz edə bilmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Qan azaldı → simpatik aktivasiya",
+      "Taxikardiya + vazokonstriksiyon",
+      "Aldosteron → su tutulması → həcm artır"
+    ],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q03-03-03-088"
+  },
+  {
+    "question": "Varikoz venalar (varisler) adətən ayaqlarda olur. Niyə ayaqlar daha çox risk altındadır?",
+    "options": [
+      "Ayaqlarda qan çox olduğu üçün",
+      "Ayaqlarda qanın ürəyə qayıtması ağırlıq qüvvəsinə qarşı olur, qapaqcıq çatışmazlığında qan toplanır",
+      "Ayaqlar daha çox hərəkət edir",
+      "Kapillyarlar ayaqda daha çoxdur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Varikoz venaların mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Ayaqlardaki venalarda qan yuxarıya — ürəyə — doğru hərəkət etmək məcburiyyətindədir. Qapaqcıqlar qanın geri axmasını önləyir. Qapaqcıqlar zəiflədikdə qan venadə toplanır, vena genişlənir, varikoz yaranır.",
+      "distractors": {
+        "0": "Ayaqlar qan həcmi baxımından xüsusi deyil.",
+        "2": "Hərəkət venoz axını asanlaşdırır, risk azaldır.",
+        "3": "Kapillyar sayı varikoz ilə bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q03-03-03-089"
+  },
+  {
+    "question": "Dərmanlar kapillyar keçiriciliyini artırırsa toxumalarda nə baş verir?",
+    "options": [
+      "Daha az qida toxumalara çatır",
+      "Daha çox maye toxumalara çıxır, ödem yarana bilər",
+      "Qan axını yavaşlayır",
+      "Oksigen daşınması azalır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Kapillyar keçiriciliyinin artmasının nəticəsini şərh etmək",
+    "explanation": {
+      "correct": "Kapillyar keçiriciliyi artdıqda plasma proteinləri və maye toxumalara daha çox çıxır. Osmotik balans pozulur — maye geri sorulmur. Nəticədə toxumalarda maye toplanması (ödem) baş verir. Allergik reaksiyalarda da bu mexanizm işə düşür.",
+      "distractors": {
+        "0": "Kapillyar keçiriciliyinin artması maddə çıxımını artırır.",
+        "2": "Qan axını kapillyar keçiriciliyindən birbaşa asılı deyil.",
+        "3": "Oksigen diffuziya ilə keçdiği üçün bu vəziyyəti ilk etkiləmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanın qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0303-03Q03-03-03-090"
+  },
+  {
+    "question": "Qanda oksigen daşıyan piqment hansıdır?",
+    "options": [
+      "Mioglobin",
+      "Hemoglobin",
+      "Melanin",
+      "Klorofil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Hemoglobinin funksiyasını bilmək",
+    "explanation": {
+      "correct": "Hemoglobin eritrositlərdə olan dəmir (Fe) ehtiva edən zülaldır. O2 ilə birləşərək oksihemoglobin əmələ gətirir və oksigeni toxumalara daşıyır.",
+      "distractors": {
+        "0": "Mioglobin əzələlerdə oksigen saxlayan piqmentdir.",
+        "2": "Melanin dəri piqmentidir.",
+        "3": "Klorofil bitkilərdə fotosintezdə iştirak edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T01-01-01-091"
+  },
+  {
+    "question": "Leykositlər (ağ qan cisimcikləri) əsas funksiyası nədir?",
+    "options": [
+      "Oksigen daşımaq",
+      "İmmun müdafiəni həyata keçirmək",
+      "Qanın laxtalanmasını təmin etmək",
+      "Qida maddəsi daşımaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Leykositlərin funksiyasını bilmək",
+    "explanation": {
+      "correct": "Leykositlər immunitet sisteminin əsas hüceyrələridir. Onlar bakteriya, virus, xarici cisimlərə qarşı mübarizə aparır. Fagositoz, antikor istehsalı kimi mexanizmlərlə orqanizmi qoruyur.",
+      "distractors": {
+        "0": "Oksigen daşımaq eritrositlərin funksiyasıdır.",
+        "2": "Qanın laxtalanması trombositlər vasitəsilə baş verir.",
+        "3": "Qida maddəsi plazma vasitəsilə daşınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T01-01-01-092"
+  },
+  {
+    "question": "Qanın maye hissəsi — plazma — hansı maddədən əsasən ibarətdir?",
+    "options": [
+      "Eritrositlər",
+      "Su (~90%)",
+      "Hemoglobin",
+      "Trombositlər"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Plazmanın əsas tərkibini bilmək",
+    "explanation": {
+      "correct": "Plazma qanın maye hissəsidir və əsasən ~90% su ehtiva edir. Bundan əlavə zülallar (albumin, fibrinogen, immunoqlobulinlər), qida maddələri, hormonlar, mineral ionlar da var.",
+      "distractors": {
+        "0": "Eritrositlər hüceyrədir, plazmanın maye hissəsi deyil.",
+        "2": "Hemoglobin eritrositlər içindədir.",
+        "3": "Trombositlər hüceyrə fraqmentidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T01-01-01-093"
+  },
+  {
+    "question": "Trombositlər hansı prosesin əsas iştirakçısıdır?",
+    "options": [
+      "Oksigen daşımaq",
+      "Qanın laxtalanması",
+      "Antikor sintezi",
+      "CO2 daşımaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Trombositlərin funksiyasını bilmək",
+    "explanation": {
+      "correct": "Trombositlər kiçik, nüvəsiz hüceyrə fraqmentlərdir. Damar zədələnəndə toplanaraq tıxac əmələ gətirir və laxtalanma kaskadını başladır. Kanama zamanı hemostazı (kanamanı dayandırmanı) həyata keçirir.",
+      "distractors": {
+        "0": "Oksigen daşımaq eritrositlərin funksiyasıdır.",
+        "2": "Antikor sintezi B-leykositlərin funksiyasıdır.",
+        "3": "CO2 daşımaq plazma + eritrositlərin funksiyasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T01-01-01-094"
+  },
+  {
+    "question": "Hemoglobin dəmirdən ibarətdir. Dəmir çatışmazlığında nə baş verir?",
+    "options": [
+      "Leykosit sayı artır",
+      "Anemiya — oksigen daşıma azalır",
+      "Qan laxtalanır",
+      "Plazma artır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dəmir çatışmazlığının nəticəsini bilmək",
+    "explanation": {
+      "correct": "Dəmir hemoglobinin əsas komponentidir. Dəmir çatışmazlığında hemoglobin sintezi azalır, eritrositlər daha kiçik və solğun olur. Bu, qanın oksigen daşıma kapasitesini azaldır — dəmir çatışmazlığı anemiyası (sideropenik anemiya) yaranır.",
+      "distractors": {
+        "0": "Leykosit sayı dəmir çatışmazlığında artmır.",
+        "2": "Qanın laxtalanması dəmirdən asılı deyil.",
+        "3": "Plazma artımı dəmir çatışmazlığının nəticəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T01-01-01-095"
+  },
+  {
+    "question": "Niyə karbon oksid (CO) zəhərləməsi həyat üçün təhlükəlidir?",
+    "options": [
+      "CO ağciyərləri yandırır",
+      "CO hemoglobinlə O2-dən 200 dəfə daha güclü birləşir, oksigen daşımaz edir",
+      "CO qan təzyiqini artırır",
+      "CO eritrositləri məhv edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "CO zəhərlənməsinin mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Karbonmonoksid (CO) hemoglobinin O2 bağlayan sahəsinə O2-dən ~200 dəfə daha güclü bağlanır. Bu birləşmə karboksihemoglobin (HbCO) əmələ gətirir. HbCO O2 daşıya bilmir — toxumalar oksigensiz qalır, hüceyrə ölümü baş verir.",
+      "distractors": {
+        "0": "CO ağciyərləri yandırmır, kimyəvi zəhərlənmə yaradır.",
+        "2": "CO qan təzyiqinə birbaşa bu şəkildə təsir etmir.",
+        "3": "CO eritrositləri məhv etmir, yalnız hemoglobini blokir edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T02-02-02-096"
+  },
+  {
+    "question": "CO2 qanda hansı şəkillərdə daşınır?",
+    "options": [
+      "Yalnız plazma ilə həll olmuş",
+      "Bikarbonat ioni (HCO3-) kimi, karbaminohemoglobin kimi və plazma ilə həll olaraq",
+      "Yalnız eritrositlər içindən",
+      "Yalnız hemoglobin ilə birləşərək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "CO2-nin qanda daşınma formalarını izah etmək",
+    "explanation": {
+      "correct": "CO2-nin ~70%-i bikarbonat ioni (HCO3-) kimi daşınır (karboanhidraz fermenti ilə). ~20-si karbaminohemoglobin kimi (Hb-CO2), ~7-8%-i isə plazma ilə həll olaraq. Bu üç forma birlikdə CO2 daşınmasını həyata keçirir.",
+      "distractors": {
+        "0": "Yalnız plazma əgər olsaydı kifayətsiz olardı.",
+        "2": "CO2 yalnız eritrositlərdə deyil, əsasən bikarbonat kimi daşınır.",
+        "3": "Hemoglobin CO2-ni karbaminoforma kimi bağlayır, amma bu az hissədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T02-02-02-097"
+  },
+  {
+    "question": "Qanın pH-ı normada 7.35-7.45 arasındadır. pH 7.2-yə düşsə nə baş verər?",
+    "options": [
+      "Qan daha oksigenli olur",
+      "Asidoz — fermentlər zədələnir, metabolizm pozulur",
+      "Leykositlər artır",
+      "Qan rəngi dəyişir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Qan pH-nın homeostazının əhəmiyyətini izah etmək",
+    "explanation": {
+      "correct": "Qanın turşuluğu artdıqda (pH 7.2-yə düşdükdə) acidoz yaranır. Bu zaman fermentlər öz optimal pH-dan kənara çıxdığı üçün fəaliyyəti azalır. Hüceyrə funksiyaları pozulur, hemoglobinin O2 birləşdirmə qabiliyyəti dəyişir.",
+      "distractors": {
+        "0": "pH dəyişməsi qanın oksigen miqdarına birbaşa bağlı deyil.",
+        "2": "Leykosit artımı infeksiya ilə bağlıdır.",
+        "3": "Qan rəngi pH ilə birbaşa dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T02-02-02-098"
+  },
+  {
+    "question": "Plazmada albumin zülalının əsas funksiyası nədir?",
+    "options": [
+      "Antikor kimi müdafiə",
+      "Osmotik təzyiq saxlayaraq mayeni damarlar içindən saxlamaq",
+      "Oksigen daşımaq",
+      "Qanı laxtalandırmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Albüminin funksiyasını izah etmək",
+    "explanation": {
+      "correct": "Albumin qandakı ən bol zülaldır. Onun osmotik (onkotik) təzyiqi kapillyar divarından mayenin artıq çıxmasının qarşısını alır. Albumin azaldıqda (məsələn qaraciyər xəstəliyindən) ödem yaranır.",
+      "distractors": {
+        "0": "Antikor kimi müdafiəni immunoqlobulinlər (IgG, IgM) həyata keçirir.",
+        "2": "Oksigen daşımaq hemoglobinin funksiyasıdır.",
+        "3": "Qanı laxtalandırmaq fibrinogen və trombositlərin funksiyasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T02-02-02-099"
+  },
+  {
+    "question": "Leykositlərin hansı növü antikor (immunoqlobulin) istehsal edir?",
+    "options": [
+      "Neytrofil",
+      "B-limfositlər",
+      "T-limfositlər",
+      "Eosinofil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Antikor istehsal edən hüceyrəni izah etmək",
+    "explanation": {
+      "correct": "B-limfositlər plazma hüceyrələrinə differensiasiya edərək antikor (immunoqlobulin) istehsal edir. Bu, humoral immunitetin əsasını təşkil edir.",
+      "distractors": {
+        "0": "Neytrofillər fagositozla bakteriyaları məhv edir.",
+        "2": "T-limfositlər hüceyrə immunitetini idarə edir, antikor istehsal etmir.",
+        "3": "Eosinofillər parazitlərə qarşı mübarizə aparır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T02-02-02-100"
+  },
+  {
+    "question": "Böhran eritrositopenia zamanı (eritrositlər kəskin azalır) bədənin kompensasiya mexanizmi nədir?",
+    "options": [
+      "Plazmada daha çox oksigen həll olur",
+      "Ürək döyüntüsü artır, eritropoiez (eritrosit istehsalı) güclənir",
+      "Leykositlər oksigen daşımağa başlayır",
+      "Böyrəklər oksigen saxlayır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Eritropeniyanın kompensasiyasını analiz etmək",
+    "explanation": {
+      "correct": "Eritrosit azalması oksigen çatmazlığına (hipoksiyaya) gətirir. Hipoksiya böyrəkdə eritropoetin (EPO) hormonunun ifrazını artırır. EPO sümük iliyini stimulyasiya edərək eritropoiezi gücləndirir. Eyni zamanda ürək döyüntüsü artaraq qan dövranını sürətləndirir.",
+      "distractors": {
+        "0": "Plazma sınırlı O2 saxlaya bilir.",
+        "2": "Leykositlər oksigen daşıyan hemoglobinə malik deyil.",
+        "3": "Böyrəklər oksigeni saxlamır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Eritrosit azaldı → hipoksiya",
+      "Böyrək → EPO → sümük iliyi → eritropoiez artır"
+    ],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T03-03-03-101"
+  },
+  {
+    "question": "Orak hüceyrəli anemiyada hemoglobin mutasiyası var — eritrositlər orak formasına düşür. Bu niyə problematikdir?",
+    "options": [
+      "Eritrositlər ağ olur",
+      "Deformasiyalı eritrositlər kapilyarları tıxayır, ağrı böhranlarına səbəb olur",
+      "Eritrositlər daha çox O2 daşıyır",
+      "Hemoglobin CO2-ni daşıya bilmir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Orak hüceyrəli anemiyasının mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "HbS mutasiyasında eritrositlər O2 azaldıqda orak formalı olur. Orak hüceyrələr kapilyar lümenindən keçə bilmir, tıxanma yaradır. Bu ischemiyaya (oksigen azlığına) gətirir — böhran şiddətli ağrıya, orqan zədəsinə səbəb olur.",
+      "distractors": {
+        "0": "Eritrositlər ağ olmur.",
+        "2": "Orak hüceyrələr O2-i daha az effektiv daşıyır.",
+        "3": "CO2 daşıma mexanizmi hemoglobinin digər sahəsi ilə bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T03-03-03-102"
+  },
+  {
+    "question": "Hemoliz (eritrositlərin kütləvi parçalanması) zamanı qanda hansı maddənin konsentrasiyası kəskin artır?",
+    "options": [
+      "Albumin",
+      "Bilirubin",
+      "Fibrinogen",
+      "Qlükoza"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Hemolizin biokimyəvi nəticəsini şərh etmək",
+    "explanation": {
+      "correct": "Eritrositlər parçalandıqda hemoglobin xaric olur. Hemoglobin hemoqlobin oksidaza yolu ilə bilirubinə çevrilir. Bilirubin qaraciyər tərəfindən metabolize edilir. Kütləvi hemolizde isə qaraciyər bütün bilirubini emal edə bilmir — qanda bilirubin yığılır, sarılıq (jaundice) yaranır.",
+      "distractors": {
+        "0": "Albumin hemolizlə birbaşa artmır.",
+        "2": "Fibrinogen laxtalanma zülalıdır.",
+        "3": "Qlükoza hemolizlə birbaşa bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T03-03-03-103"
+  },
+  {
+    "question": "Aspirini qəbul etdikdə trombositlər fəaliyyəti azalır. Bu niyə cərrahi əməliyyatdan əvvəl dayandırılmalıdır?",
+    "options": [
+      "Aspirini qan təzyiqini artırır",
+      "Trombosit fəaliyyəti azaldığı üçün kəsilmə zamanı qan dayanmaya bilər",
+      "Aspirin ağciyəri zədələyir",
+      "Aspirin eritrosit sayını azaldır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Aspirinin hemostaza təsirinin kliniki əhəmiyyətini şərh etmək",
+    "explanation": {
+      "correct": "Aspirin siklooksigenaza (COX) fermentini irreversibel inhibə edir. COX tromboxan A2 (TXA2) sintezi üçün lazımdır. TXA2 trombositlərin aktivasiyasında rol oynayır. Aspirin TXA2 azaldıb trombosit agreqasiyasını zəiflətdiyindən qanaxma riski artır.",
+      "distractors": {
+        "0": "Aspirin qan təzyiqini azaldır, artırmır.",
+        "2": "Aspirin ağciyəri zədələmir.",
+        "3": "Aspirin eritrosit sayını azaltmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T03-03-03-104"
+  },
+  {
+    "question": "Qan pH-ı 7.2-yə düşdükdə hemoglobinin O2 daşıma əyrisi necə dəyişir?",
+    "options": [
+      "Sol tarafa sürüşür — hemoglobin O2-i daha güclü bağlayır",
+      "Sağa sürüşür — hemoglobin O2-i daha asan buraxır (Bohr effekti)",
+      "Dəyişmir",
+      "Hemoglobin O2-ni tamamilə itiririr"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Bohr effektini analiz etmək",
+    "explanation": {
+      "correct": "Bohr effekti: pH azaldıqda (turşuluq artdıqda, CO2 artdıqda) hemoglobinin O2-ə affinliyi azalır. Bu, oksihemoglobin əyrisinin sağa sürüşməsi deməkdir. Nəticədə hemoglobin O2-i daha asan buraxır — aktiv metabolizm edən toxumalara daha çox O2 çatır.",
+      "distractors": {
+        "0": "Sol tarafa sürüşmə pH artdıqda baş verir.",
+        "2": "pH dəyişimi hemoglobin davranışına əhəmiyyətli təsir göstərir.",
+        "3": "Hemoglobin O2-ni tamamilə itirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanın tərkibi və funksiyaları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0304-03T03-03-03-105"
+  },
+  {
+    "question": "ABO sistemdə universal donor qan qrupu hansıdır?",
+    "options": [
+      "AB",
+      "A",
+      "B",
+      "O"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Universal donoru bilmək",
+    "explanation": {
+      "correct": "O qan qrupu universal donordur. O qrupunda eritrositlər üzərindəki A və B antigenləri yoxdur. Buna görə O qrupunun eritrositləri digər qan qrupları tərəfindən rədd edilmir.",
+      "distractors": {
+        "0": "AB qrupu universal resipiyentdir, donor deyil.",
+        "1": "A qrupu yalnız A və O qruplara uyğundur.",
+        "2": "B qrupu yalnız B və O qruplara uyğundur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K01-01-01-106"
+  },
+  {
+    "question": "Hansı qan qrupu universal resipiyentdir?",
+    "options": [
+      "O+",
+      "A+",
+      "B+",
+      "AB+"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Universal resipiyenti bilmək",
+    "explanation": {
+      "correct": "AB+ qan qrupu universal resipiyentdir. AB+ şəxslərin plazmanda nə anti-A, nə anti-B antikoru var. Bundan əlavə Rh+ olduğu üçün Rh+ qanı da qəbul edə bilər.",
+      "distractors": {
+        "0": "O+ universal donor deyil, universal resipiyent deyil.",
+        "1": "A+ yalnız A+ və O+ qəbul edə bilər.",
+        "2": "B+ yalnız B+ və O+ qəbul edə bilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K01-01-01-107"
+  },
+  {
+    "question": "Rh faktoru nədir?",
+    "options": [
+      "Qan qrupunu müəyyən edən gen",
+      "Eritrositin üzərindəki xüsusi D antigeni",
+      "Qan laxtalanma faktoru",
+      "Plazma zülalı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Rh faktorunu bilmək",
+    "explanation": {
+      "correct": "Rh faktoru eritrositin üzərindəki D antigenidir. D antigeni varsa Rh+ (pozitiv), yoxsa Rh- (neqativ) adlanır. Qanköçürmədə ABO ilə yanaşı Rh uyğunluğu da yoxlanılır.",
+      "distractors": {
+        "0": "Rh faktoru bir gen adı deyil, antigen adıdır.",
+        "2": "Qan laxtalanma faktoru ayrı sistemdir.",
+        "3": "Rh faktoru plazma zülalı deyil, hüceyrə səthi antigenidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K01-01-01-108"
+  },
+  {
+    "question": "Qanın agqlütinasiyası nə deməkdir?",
+    "options": [
+      "Qanın laxtalanması",
+      "Eritrositlərin antikoreaktivlərlə birləşərək topaq əmələ gətirməsi",
+      "Plazmanın ayrılması",
+      "Leykositlərin artması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Agqlütinasiya anlayışını bilmək",
+    "explanation": {
+      "correct": "Agqlütinasiya eritrositlər üzərindəki antigenlərlə uyğun antikorların birləşib eritrositləri bir-birinə yapışdırmasıdır. Bu uyuşmaz qan köçürülməsindən yarana bilər və kapillyarları tıxayır.",
+      "distractors": {
+        "0": "Qanın laxtalanması koaqulyasiya (tromboz) adlanır.",
+        "2": "Plazmanın ayrılması sentrifuqlaşdırma ilə baş verir.",
+        "3": "Leykositlərin artması leykositoz adlanır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K01-01-01-109"
+  },
+  {
+    "question": "Qanköçürmədən qabaq uyğunluq testi niyə aparılır?",
+    "options": [
+      "Qanın rəngini yoxlamaq üçün",
+      "Donor qanının resipiyentlə agqlütinasiya vermədiyini yoxlamaq üçün",
+      "Qan qrupunu tapmaq üçün",
+      "Qan miqdarını ölçmək üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Uyğunluq testinin məqsədini bilmək",
+    "explanation": {
+      "correct": "Qanköçürmədən əvvəl aparılan kross-uyğunluq testi donor qanı ilə resipiyent qanını laboratoriyada qarışdıraraq agqlütinasiya olub-olmadığını yoxlayır. Bu, həyati təhlükəli uyuşmazlıq reaksiyasının qarşısını alır.",
+      "distractors": {
+        "0": "Qanın rəngi klinik qiymətləndirmə üçündür, uyğunluq testi bunun üçün yox.",
+        "2": "Qan qrupu ayrıca tipləşdirmə ilə müəyyən edilir.",
+        "3": "Qan miqdarı həcm ölçüsü ilə müəyyən edilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K01-01-01-110"
+  },
+  {
+    "question": "A qan qrupu olan insanın plazmanda hansı antikor var?",
+    "options": [
+      "Anti-A",
+      "Anti-B",
+      "Nə anti-A, nə anti-B",
+      "Həm anti-A, həm anti-B"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "A qan qrupundakı antikorları izah etmək",
+    "explanation": {
+      "correct": "A qan qrupu: eritrositdə A antigeni var, plazmada isə anti-B antikoru var. Bu qayda — plazmada öz antigeninə qarşı antikor olmur — ABO sisteminin əsasıdır.",
+      "distractors": {
+        "0": "Anti-A olsaydı, öz eritrositlərini məhv edərdi.",
+        "2": "A qrupunda anti-B var.",
+        "3": "Həm anti-A həm anti-B AB qrupunda olmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K02-02-02-111"
+  },
+  {
+    "question": "Rh- ana ilə Rh+ körpəsi arasında niyə problem yaranır?",
+    "options": [
+      "Ana körpənin qanını itirdirir",
+      "Birinci doğuşdan sonra ana Rh+ antigenlərə qarşı antikor yaradır, ikinci Rh+ körpəni hücuma keçirir",
+      "Ana körpəyə O qrup qan verir",
+      "Rh- qan daha az oksigen daşıyır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Rh uyuşmazlığının mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Birinci Rh+ körpənin doğuşunda az miqdarda Rh+ eritrosit anaya keçir. Ana immun sistem anti-D antikoru istehsal edir. İkinci hamiləlikdə bu anti-D antikorları xorionla keçib Rh+ körpənin eritrositlərini parçalayır — hemolitik xəstəlik yaranır.",
+      "distractors": {
+        "0": "Ana körpənin qanını itirmir.",
+        "2": "Ana körpəyə qan köçürmür.",
+        "3": "Rh- oksigen daşımada zəif deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K02-02-02-112"
+  },
+  {
+    "question": "B qan qrupu olan adam A qrupundan qan alsaydı nə baş verərdi?",
+    "options": [
+      "Heç bir reaksiya olmazdı",
+      "Agqlütinasiya — B qrupunun anti-A antikoru donor A antigeninə hücum ederdi",
+      "Qan daha faydalı olardı",
+      "Leykositlər artardı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Uyuşmaz qan köçürmənin nəticəsini izah etmək",
+    "explanation": {
+      "correct": "B qrupunun plazmanda anti-A antikoru var. A qrupunun eritrositlərindən A antigeni var. Bu iki əks komponent birləşdikdə agqlütinasiya — eritrositlər topaqlaşır — baş verər. Bu həyati təhlükəli transfuziya reaksiyasına gətirir.",
+      "distractors": {
+        "0": "Uyuşmaz qan köçürmə kəskin reaksiya verir.",
+        "2": "Uyuşmaz qan köçürmə fayda deyil, zərər verir.",
+        "3": "Leykosit artması agqlütinasiyanın əsas nəticəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K02-02-02-113"
+  },
+  {
+    "question": "Qan bankında qan necə saxlanılır?",
+    "options": [
+      "Artıq oksigen vurularaq",
+      "4°C-də, antikoaqulyant əlavə edilərək",
+      "Dondurularaq -80°C-dəsarft",
+      "İşıqda otaq temperaturda"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Qanın saxlanma şərtlərini izah etmək",
+    "explanation": {
+      "correct": "Qan 4°C-dəki soyuducuda saxlanılır. Bu temperatur eritrositlər metabolizmini yavaşladır, həyat müddətini uzadır. Antikoaqulyant (EDTA, sitrat) qanın banka saxlananarkən laxtalanmasının qarşısını alır.",
+      "distractors": {
+        "0": "Əlavə O2 qanı saxlamaqda kömək etmir.",
+        "2": "Dondurmaq eritrositləri zədələyir.",
+        "3": "Otaq temperaturunda metabolizm artır, eritrositlər tez məhv olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K02-02-02-114"
+  },
+  {
+    "question": "AB qrupu olan insan niyə universal resipiyentdir?",
+    "options": [
+      "AB qanı çox nadirdir",
+      "AB qanında nə anti-A, nə anti-B antikoru olmadığı üçün heç bir donor eritrositini rədd etmir",
+      "AB qanı daha güclü immunitə malikdir",
+      "AB qanı daha çox oksigen daşıyır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "AB qrupunun universal resipiyent olmasını izah etmək",
+    "explanation": {
+      "correct": "AB qan qrupunda A və B antigenləri var — amma plazmada nə anti-A, nə anti-B antikoru yoxdur. Buna görə AB şəxsə istənilən ABO qrupundan eritrosit köçürəndə agqlütinasiya baş vermir.",
+      "distractors": {
+        "0": "AB nadirlik bu kontekstdə əsas amil deyil.",
+        "2": "AB güclü immunitə bu kontekstdə fərqləndirici deyil.",
+        "3": "AB oksigen daşıması digər qruplardan fərqli deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K02-02-02-115"
+  },
+  {
+    "question": "O- qan qrupu olan şəxsin qanı niyə kritik vəziyyətdə kənar qan qrupu bilinmədən verilir?",
+    "options": [
+      "O- ucuzdur",
+      "O- eritrositlərindən nə A, nə B antigeni, nə D (Rh) antigeni yoxdur — agqlütinasiya riski minimumdur",
+      "O- daha çox eritrosit ehtiva edir",
+      "O- plazmada antikor yoxdur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "O- qanının emergency istifadəsinin əsasını şərh etmək",
+    "explanation": {
+      "correct": "O- eritrositlərinin üzərindəki A, B və D antigenləri yoxdur. Buna görə istənilən ABO və Rh qan qrupuna malik resipiyentə verilsə, agqlütinasiya riski minimaldır. Kənar vəziyyətlərdə qan qrupu yoxlanmağa vaxt olmur — O- həyat xilas edir.",
+      "distractors": {
+        "0": "Qiymət tibbi seçim kriteriyası deyil.",
+        "2": "O-nin eritrosit miqdarı digərlərlə eynidir.",
+        "3": "O-nin plazmasında anti-A və anti-B antikorları var — plazma deyil, eritrosit köçürülür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "O-: A antigeni yox + B antigeni yox + D antigeni yox",
+      "Heç bir resipiyent bu eritrositlərə qarşı antikor reaktivliyi göstərmir"
+    ],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K03-03-03-116"
+  },
+  {
+    "question": "Rh- anaya anti-D immunoqlobulin (RhoGAM) vurulur. Bu niyədir?",
+    "options": [
+      "Ananın immunitetini artırmaq üçün",
+      "Ananın immun sisteminin Rh+ antigenlərə qarşı sensitizasiyasının qarşısını almaq üçün",
+      "Körpənin qan qrupunu dəyişdirmək üçün",
+      "Qanın laxtalanmasını artırmaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "RhoGAM-ın mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Doğuşdan sonra Rh+ eritrositlər anaya keçirsə, anti-D immunoqlobulin (RhoGAM) bu Rh+ eritrositlərini ana immun sistemi tanımadan məhv edir. Beləliklə, ana sensitizasiya olmur — gələcək Rh+ körpəsinə qarşı antikor yaratmır.",
+      "distractors": {
+        "0": "RhoGAM ümumi immunitet artırmır.",
+        "2": "Körpənin qan qrupu dəyişdirilmir.",
+        "3": "RhoGAM laxtalanmayla bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K03-03-03-117"
+  },
+  {
+    "question": "ABO sisteminin genetik əsasını düşünün. AB qan qrupu olması üçün şəxsin genotipi nə olmalıdır?",
+    "options": [
+      "I^A I^A",
+      "I^B I^B",
+      "I^A I^B",
+      "I^A i^O"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "ABO sisteminin genetikasını tətbiq etmək",
+    "explanation": {
+      "correct": "ABO sistemi 3 allelli (I^A, I^B, i^O) bir gen ilə idarə olunur. I^A və I^B allellər kodominantdır. AB qan qrupu I^A I^B genotipi ilə ifadə olunur — hər iki allel ekspressiya olunur, həm A, həm B antigeni var.",
+      "distractors": {
+        "0": "I^A I^A genotipi A qan qrupunu verir.",
+        "1": "I^B I^B genotipi B qan qrupunu verir.",
+        "3": "I^A i^O genotipi A qan qrupunu verir (I^A dominantdır)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K03-03-03-118"
+  },
+  {
+    "question": "Plazmaferez nədir və hansı hallarda istifadə olunur?",
+    "options": [
+      "Eritrositlərin ayrılması",
+      "Plazmadan zərərli antikor və ya metabolit çıxarılması",
+      "Trombosit köçürməsi",
+      "Leykosit azaldılması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Plazmaferezin məqsədini şərh etmək",
+    "explanation": {
+      "correct": "Plazmaferez zamanı xəstənin qanı aparatdan keçirilir — hüceyrəvi komponentlər saxlanılır, plazma süzülür. Zərərli antikorları (autoimmun xəstəliklərdə), zəhərli maddələri, eğri lipidləri çıxarmaq üçün istifadə olunur.",
+      "distractors": {
+        "0": "Eritrositlərin ayrılması eritrositafrez adlanır.",
+        "2": "Trombosit köçürməsi trombositafrez adlanır.",
+        "3": "Leykosit azaldılması leykositafrez adlanır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K03-03-03-119"
+  },
+  {
+    "question": "Qanköçürmə uyuşmazlığı reaksiyasının (hemolitik transfuziya reaksiyası) mexanizmi nədir?",
+    "options": [
+      "Qan daha sürətli axır",
+      "Resipiyent antikorları donor eritrositlərini agqlütinasiya edib komplementi aktivasiya edərək eritrositləri həll edir — kəskin hemoliz baş verir",
+      "Leykositlər artır",
+      "Qan daha sürətli laxtalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Hemolitik transfuziya reaksiyasının mexanizmini analiz etmək",
+    "explanation": {
+      "correct": "Resipiyentin antikorları (məsələn, anti-A) donor eritrositlərindəki antigenə (məsələn, A) bağlanır. Antikor-antigen kompleksi komplement sistemini aktivasiya edir. Komplement eritrositlərin membranını parçalayır — hemoglobin xaric olur. Bu kəskin hemoliz böyrək çatışmazlığı, şok, hətta ölümə gətirib çıxara bilər.",
+      "distractors": {
+        "0": "Qan axın sürəti bu reaksiyada əsas hadisə deyil.",
+        "2": "Leykosit artması bu reaksiyanın birincil hadisəsi deyil.",
+        "3": "Laxtalanma bu reaksiyanın birincil hadisəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Donor eritrositlər → resipiyent antikoru bağlanır",
+      "Komplement aktivasiya → eritrosit membranı parçalanır",
+      "Kəskin hemoliz → böyrək çatışmazlığı"
+    ],
+    "topic": "Qanköçürmə və qan qrupları",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0305-03K03-03-03-120"
+  },
+  {
+    "question": "Böcəklərdə oksigen toxumalara hansı sistem vasitəsilə çatdırılır?",
+    "options": [
+      "Qan dövranı",
+      "Traxeya sistemi",
+      "Ağciyərlər",
+      "Dəri"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Böcəklərdə oksigen çatdırma sistemini bilmək",
+    "explanation": {
+      "correct": "Böcəklərdə qan (hemolimfa) oksigen daşımır. Oksigen traxeya sistemi adlanan budaqlanan hava boruları sistemi ilə birbaşa toxumalara çatdırılır.",
+      "distractors": {
+        "0": "Böcəklərin qanı (hemolimfa) oksigen daşımır.",
+        "2": "Böcəklərdə ağciyər yoxdur.",
+        "3": "Dəri böcəklərdə əsas tənəffüs orqanı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T01-01-01-121"
+  },
+  {
+    "question": "Balıqlarda tənəffüs hansı üzv vasitəsilə baş verir?",
+    "options": [
+      "Ağciyər",
+      "Dəri",
+      "Qəlsəmə",
+      "Traxeya"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Balıqlarda tənəffüs orqanını bilmək",
+    "explanation": {
+      "correct": "Balıqlar qəlsəmə (gill) vasitəsilə tənəffüs edir. Qəlsəmə lamellerinin böyük səthi sudan effektiv O2 udulmasını və CO2 verilməsini həyata keçirir.",
+      "distractors": {
+        "0": "Ağciyər quşlar, məməlilər, sürünənlər, amfibiyalara aiddir.",
+        "1": "Dəri bəzi amfibiyalara aiddir.",
+        "3": "Traxeya böcəklərdə tənəffüs sistemidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T01-01-01-122"
+  },
+  {
+    "question": "Qurbağalar dəri tənəffüsüdən istifadə edir. Bu üçün dərinin əsas şərti nədir?",
+    "options": [
+      "Quru olmalıdır",
+      "Nəm olmalıdır",
+      "Qalın olmalıdır",
+      "Rəngli olmalıdır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dəri tənəffüsü üçün şərti bilmək",
+    "explanation": {
+      "correct": "Dəri tənəffüsü üçün dəri nəm olmalıdır. Qazlar (O2, CO2) yalnız nəm səthdən diffuziya edə bilər. Qurbağa quru mühitdə tezliklə tənəffüs qabiliyyətini itirir.",
+      "distractors": {
+        "0": "Quru dəri qaz diffuziyasına mane olur.",
+        "2": "Qalın dəri diffuziya yolunu artırır, azaldır.",
+        "3": "Rəng diffuziya ilə bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T01-01-01-123"
+  },
+  {
+    "question": "Quşların hava kisəsi sistemi hansı üstünlüyü verir?",
+    "options": [
+      "Daha az ağciyər var",
+      "Hava ağciyərdən hər zaman bir istiqamətdə axır — qaz mübadiləsi daha effektivdir",
+      "Quşlar daha az oksigen istifadə edir",
+      "Hava kisəsi ağciyəri əvəz edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Quşların tənəffüs sisteminin üstünlüyünü bilmək",
+    "explanation": {
+      "correct": "Quşlarda hava kisəsi sistemi hava axınını tək istiqamətli edir: həm nəfəs alanda, həm verəndə hava ağciyərdən eyni istiqamətdə keçir. Bu, məməlilərin əks istiqamətli (tidal) tənəffüzündən daha effektiv qaz mübadiləsi təmin edir.",
+      "distractors": {
+        "0": "Quşların ağciyəri var.",
+        "2": "Quşlar uçmaq üçün çox oksigen lazımdır.",
+        "3": "Hava kisəsi ağciyəri əvəz etmir, ona kömək edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T01-01-01-124"
+  },
+  {
+    "question": "Planaryalar (yasıqurdlar) ağciyərsiz tənəffüs edir. Bu necə mümkündür?",
+    "options": [
+      "Qaz mübadiləsinə ehtiyac yoxdur",
+      "Bədəni çox yastı olduğu üçün diffuziya ilə bütün hüceyrələrinə O2 çatır",
+      "Xüsusi tənəffüs piqmenti var",
+      "Anaerob yaşayır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sadə heyvanlarda diffuziya tənəffüsünü bilmək",
+    "explanation": {
+      "correct": "Planaryaların bədəni çox yastı və kiçikdir. Bu quruluş hüceyrələrin dəri səthinə yaxın olmasını təmin edir. O2 birbaşa diffuziya ilə bütün hüceyrələrə çata bilir, xüsusi tənəffüs sisteminə ehtiyac yoxdur.",
+      "distractors": {
+        "0": "Bütün aerob canlılar qaz mübadiləsi həyata keçirir.",
+        "2": "Xüsusi piqmenti yoxdur.",
+        "3": "Planaryalar aerob canlılardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T01-01-01-125"
+  },
+  {
+    "question": "Qəlsəmə tənəffüsündə suyun axını ilə qanın axını əks istiqamətdə olur (qarşı-cərəyan). Bu niyə üstünlük yaradır?",
+    "options": [
+      "Daha çox su saxlanılır",
+      "Konsentrasiya gradiyenti daim mənfidə qalır, maksimum O2 udulması baş verir",
+      "Qan daha sürətli axır",
+      "CO2 daha az xaric olur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Qarşı-cərəyan mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Paralel axında su O2 verir, qan O2 alır — tarazlaşana qədər. Qarşı-cərəyanda isə hər nöqtədə su qandan daha çox O2 ehtiva edir — diffuziya gradiyenti axın boyunca davam edir. Bu, O2 udulmasını ~90% səmərəliliyə çatdırır.",
+      "distractors": {
+        "0": "Su saxlanması bu mexanizmin məqsədi deyil.",
+        "2": "Qanın axın sürəti bu mexanizmin əsası deyil.",
+        "3": "CO2 xaric olması bu mexanizmin əsas hədəfi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T02-02-02-126"
+  },
+  {
+    "question": "Balıqlar suyun O2 konsentrasiyası azaldıqda ağzı ilə sudan daha çox keçirir. Bu davranış niyə məntiqlıdir?",
+    "options": [
+      "Temperatur azaldı",
+      "Tənəffüs sistemi effektivliyini artırmaq — daha çox su → daha çox O2",
+      "Suyu süzmək",
+      "Yemək tapmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tənəffüs davranışının adaptiv məntiqini izah etmək",
+    "explanation": {
+      "correct": "Suda O2 miqdarı azaldıqda (isti mühit, çirklənmə), balıqlar su axınını artırır. Qəlsəmə lamellerindən daha çox su keçirdikdə daha çox O2 ekstrakdetsiya mümkündür.",
+      "distractors": {
+        "0": "Temperatur azalmada bu davranış baş vermir.",
+        "2": "Balıqlar su süzür amma tənəffüs üçün deyil.",
+        "3": "Yemək axtarmaq bu davranışın əsas motivasiyası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T02-02-02-127"
+  },
+  {
+    "question": "Sümüklü balıqların üzgəc kisəsi həm üzüb, həm tənəffüs edə bilir. Bu, ağciyərlərin evoluсiya ilə hansı orqandan inkişaf etdiyini göstərir?",
+    "options": [
+      "Qəlsəmədən",
+      "Üzgəc kisəsindən",
+      "Ağızdan",
+      "Böyrəkdən"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağciyərin evolusiyasını izah etmək",
+    "explanation": {
+      "correct": "Evolusiya baxımından ağciyərlər üzgəc kisəsindən inkişaf etmişdir. Bəzi ibtidai balıqlarda (məsələn ciyər balığı) üzgəc kisəsi həm boylanmaq, həm tənəffüs etmək üçün istifadə olunur. Bu keçid forma evoluesiyanı sübut edir.",
+      "distractors": {
+        "0": "Qəlsəmə su ilə tənəffüs üçün adaptasiya olunmuşdur.",
+        "2": "Ağız həzm sisteminə aiddir.",
+        "3": "Böyrək filtrasiyon orqandır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T02-02-02-128"
+  },
+  {
+    "question": "Ağciyərlərin yastılanması (atelektaz) zamanı hava kisəcikləri söküb yumulur. Bu niyə baş verir?",
+    "options": [
+      "Oksigen azalır",
+      "Sürfaktant (yüzey aktiv maddə) azaldıqda alveolyar gərginlik artır, alveoller yumulur",
+      "Ağciyər böyüyür",
+      "Qan laxtalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Atelektazın mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Alveoller içindəki su örtüyü səthi gərginlik yaradır, alveolləri yumuldurmağa çalışır. Sürfaktant (pnevmositlər tərəfindən ifraz edilən yağ-zülal qarışığı) səthi gərginliyi azaldır, alveolləri açıq saxlayır. Sürfaktant azaldıqda (prematur körpələrdə çox olur) atelektaz baş verir.",
+      "distractors": {
+        "0": "Oksigen azalması atelektazın birbaşa səbəbi deyil.",
+        "2": "Ağciyər böyüməsi atelektaz deyil.",
+        "3": "Qan laxtalanması bu proseslə bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T02-02-02-129"
+  },
+  {
+    "question": "Sudan quruya keçən ilk onurğalılar amfibiyalar olub, dəri ilə yanaşı ibtidai ağciyərlərdən istifadə etdilər. Bu adaptasiya niyə dəri tənəffüsünü tamamlamalı idi?",
+    "options": [
+      "Dəri çox böyükdür",
+      "İbtidai ağciyər səthi kiçik, tənəffüs ehtiyacını tam ödəyə bilmirdi",
+      "Dəri su keçirmir",
+      "Ağciyər daha sürətlidir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "İlk quru onurğalılarının tənəffüz adaptasiyasını şərh etmək",
+    "explanation": {
+      "correct": "İlk amfibiyaların ağciyər səthi kifayətsiz idi. Buna görə dəri tənəffüsü qaz mübadiləsinin əhəmiyyətli hissəsini əhatə edirdi. Bu ikili tənəffüs sistemi quru mühitə adaptasiyanın ilk pilləsidir.",
+      "distractors": {
+        "0": "Dərinin böyüklüyü ağciyər çatışmazlığını kompensasiya edir.",
+        "2": "Nəm amfibiya dərisi qaz keçirir.",
+        "3": "Tənəffüz hızı burada əsas amil deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T02-02-02-130"
+  },
+  {
+    "question": "Dərin sudalda (skuba dalğıcı) tez qalxdıqda dekompressiya xəstəliyi yaranır. Bu hava qabarcıqlarının qanda yaranmasından qaynaqlanır. Hansı fiziki qanun bunu izah edir?",
+    "options": [
+      "Boyl qanunu",
+      "Henry qanunu — yüksək təzyiqdə qanda daha çox N2 həll olur, ani azalma qabarcıq yaradır",
+      "Dalton qanunu",
+      "Avogadro qanunu"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Henry qanunu ilə dərinlik effektini şərh etmək",
+    "explanation": {
+      "correct": "Henry qanununa görə qazın maye içindəki həllolması onun partial təzyiqinə proporsionaldır. Dərin suda azot (N2) yüksək təzyiqdə qanda daha çox həll olur. Sürətlə qalxdıqda ətrafdakı təzyiq azalır — həll olmuş N2 sürətlə qabarcıq halına keçir. Bu, damarları tıxayır.",
+      "distractors": {
+        "0": "Boyl qanunu həcm-təzyiq münasibətidir, həlolma deyil.",
+        "2": "Dalton qanunu qarışıq qazların parsial təzyiqlərini izah edir.",
+        "3": "Avogadro qanunu qaz həcmi-mol münasibətidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "Dərinlik → yüksək təzyiq → N2 qanda çox həll olur",
+      "Sürətli qalxma → təzyiq azalır → N2 qabarcıq yaradır → damarlar tıxanır"
+    ],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T03-03-03-131"
+  },
+  {
+    "question": "Quşlar 10000 metr hündürlükdə uçur (insan hüşünü itirəcək yerdə). Bunun əsas adaptasiyaları hansılardır?",
+    "options": [
+      "Quşların ağciyəri yoxdur",
+      "Hava kisəsi sistemi (hava axınının tək istiqaməti) + hemoglobin O2-ə yüksək affinlik + hiperventilasiya",
+      "Quşlar oksigenə ehtiyac duymur",
+      "Quşların ağciyəri daha böyükdür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Quş tənəffüz adaptasiyalarını analiz etmək",
+    "explanation": {
+      "correct": "Quşların yüksək irtifada tənəffüz uğurunun arxasında: 1) tək istiqamətli hava axını effektiv qaz mübadiləsi verir; 2) quş hemoglobin insan hemoglobinindən daha yüksək O2 affinliyinə malikdir; 3) hiperventilasiya CO2 xaricini artırır.",
+      "distractors": {
+        "0": "Quşların ağciyəri var.",
+        "2": "Quşlar aerob canlılardır.",
+        "3": "Ağciyər ölçüsü insan ilə müqayisəlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T03-03-03-132"
+  },
+  {
+    "question": "İlin quraq mövsümündə bəzi balıqlar (ciyər balığı) palçıqda kapsul içinə girir, dərisi ilə tənəffüs edir. Bu davranışın adı nədir?",
+    "options": [
+      "Hibernasiya",
+      "Estivasyasiya (yay yuxusu)",
+      "Migrasyasiya",
+      "Metameorfoz"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Estivasiyasıyanın mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Estivasyasiya (yay yuxusu) quraqlıq mövsümündə canlıların fəaliyyəti azaltdığı adaptasiya mexanizmidir. Ciyər balığı palçıqda oksigen mübadiləsini dəri/ibtidai ağciyərlə həyata keçirir, metabolizmi yavaşladır, su itkisini azaldır.",
+      "distractors": {
+        "0": "Hibernasiya qış yuxusudur.",
+        "2": "Migrasyasiya hərəkətsiz qalmaq deyil, köç etməkdir.",
+        "3": "Metamorfoz inkişaf prosesidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T03-03-03-133"
+  },
+  {
+    "question": "Böcəklər spirakl (nəfəs dəlikləri) vasitəsilə traxeya sisteminə hava buraxır. Böyük böcəklər bədənini ritmik əzaraq havanı içəriyə basır. Bu niyə lazımdır?",
+    "options": [
+      "Ovlamaq üçün",
+      "Böyük bədəndə diffuziya kifayət etmir, aktiv ventilasiya lazımdır",
+      "Dərisini isitdirmek üçün",
+      "Qaçmaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Böyük böcəklərdə aktiv ventilasiyasının səbəbini şərh etmək",
+    "explanation": {
+      "correct": "Kiçik böcəklərdə diffuziya ilə O2 bütün traxea sisteminə çata bilir. Böyük böcəklərdə traxeya uzunluğu artdığında diffuziya yavaşlayır. Aktiv bədən hərəkəti ilə traxeya sistemi pompalanaraq havanı daha dərindən dövriyyəyə sokar.",
+      "distractors": {
+        "0": "Ovlamaq bu davranışın əsas funksiyası deyil.",
+        "2": "Dərini isitmək traxeya sistemiylə bağlı deyil.",
+        "3": "Qaçmaq bu spesifik davranışın funksiyası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T03-03-03-134"
+  },
+  {
+    "question": "Heyvanların tənəffüz üzvi — qəlsəmə, ağciyər, traxeya — hər birinin böyük səthi var. Bu ümumi xüsusiyyət niyə vacibdir?",
+    "options": [
+      "Daha böyük görünmək üçün",
+      "Böyük səthi sahə diffuziya sürətini artırır (Fick qanunu)",
+      "Daha çox su saxlamaq üçün",
+      "Bədəni geniş saxlamaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Tənəffüz üzvlərinin böyük səthinin funksional əsasını şərh etmək",
+    "explanation": {
+      "correct": "Fick diffuziya qanununa görə diffuziya sürəti səthi sahəyə proporsional, məsafəyə (qat qalınlığına) inverslidir. Tənəffüz üzvlərinin böyük səthi daha çox O2/CO2 eyni anda diffuziya etməyə imkan verir. Bu, bütün tənəffüz sistemlərinin universal prinsipiddir.",
+      "distractors": {
+        "0": "Böyük görünmə bioloji funksiya deyil.",
+        "2": "Su saxlama tənəffüz səthi üçün əsas funksiya deyil.",
+        "3": "Bədən genişliyi tənəffüz səthi ilə bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda tənəffüs",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0401-04T03-03-03-135"
+  },
+  {
+    "question": "Qırtlaq hansı funksiyası yerinə yetirir?",
+    "options": [
+      "Həzm",
+      "Qaz mübadiləsi",
+      "Səs yaratmaq və hava yolunu açıq saxlamaq",
+      "Qan süzgündən keçirmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Qırtlağın funksiyasını bilmək",
+    "explanation": {
+      "correct": "Qırtlaq (larinks) iki funksiyası yerinə yetirir: səs yaratmaq (səs telləri sayəsindən) və havanın traxeyaya keçişini idarə etmək. Udinərkən epiqlottis qırtlağı örtərək yeməyin nəfəs borusuna keçməsinin qarşısını alır.",
+      "distractors": {
+        "0": "Həzm sistemin funksiyasıdır.",
+        "1": "Qaz mübadiləsi alveolyar səviyyədən baş verir.",
+        "3": "Qan süzgündən böyrəkdə keçir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ01-01-01-136"
+  },
+  {
+    "question": "Alveolların əsas funksiyası nədir?",
+    "options": [
+      "Havanı istiqamətləndirmək",
+      "Qan ilə hava arasında qaz mübadiləsi",
+      "Hava nəmlendirmek",
+      "Toksinleri süzmek"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Alveolun funksiyasını bilmək",
+    "explanation": {
+      "correct": "Alveollar ağciyərin kiçik hava kisəcikləridir. Çox nazik divarları (bir hüceyrə qatı) kapilyarlarla sıx təmasda olub O2 qana keçməsini, CO2 isə alveola keçməsini diffuziya ilə həyata keçirir.",
+      "distractors": {
+        "0": "Havanı istiqamətləndirmək bronxların funksiyasıdır.",
+        "2": "Havanı nəmləndirmək burun boşluğunun funksiyasıdır.",
+        "3": "Toksinleri süzmek qaraciyərin funksiyasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ01-01-01-137"
+  },
+  {
+    "question": "Nəfər borusu (traxeya) içini örtən kirpikli epitel hansı funksiyanı yerinə yetirir?",
+    "options": [
+      "Qaz mübadiləsi",
+      "Zərərli hissəcikləri tutub boğaza doğru atmaq",
+      "Hava isitmek",
+      "Ses yaratmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kirpikli epitelin funksiyasını bilmək",
+    "explanation": {
+      "correct": "Traxeyanın daxili səthi mukus (selik) ifraz edən epitel ilə örtülüdür. Kirpiklər ritmik hərəkətiylə toz, mikrob, zərərli hissəcikləri tutan mukusu boğaza doğru sürür. Bu mühüm müdafiə mexanizmidir.",
+      "distractors": {
+        "0": "Qaz mübadiləsi alveolda baş verir.",
+        "2": "Hava isitməyi burun boşluğu həyata keçirir.",
+        "3": "Səs yaratmaq qırtlağın funksiyasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ01-01-01-138"
+  },
+  {
+    "question": "Plevra nədir?",
+    "options": [
+      "Alveolları örtən zülal",
+      "Ağciyəri əhatə edən iki qatlı zar",
+      "Bronxların içi örtüyü",
+      "Tənəffüz əzaləsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Plevranın quruluşunu bilmək",
+    "explanation": {
+      "correct": "Plevra ağciyəri əhatə edən iki qatlı serosal zardır. İki qat arasındakı boşluqda az miqdarda sıvı var. Bu sıvı tənəffüz zamanı sürtünməni azaldır.",
+      "distractors": {
+        "0": "Alveolları örtən sürfaktantdır.",
+        "2": "Bronxların içini kirpikli mukoz epitel örtür.",
+        "3": "Tənəffüz əzaləsi diafragma və qabırğaarası əzalərdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ01-01-01-139"
+  },
+  {
+    "question": "İnsanda hava hansı ardıcıllıqla tənəffüs sistemi boyunca keçir?",
+    "options": [
+      "Ağız → Traxeya → Bronx → Alveol",
+      "Burun → Udlaq → Qırtlaq → Traxeya → Bronx → Alveol",
+      "Burun → Qırtlaq → Alveol → Bronx",
+      "Udlaq → Bronx → Traxeya → Alveol"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tənəffüs yolunun ardıcıllığını bilmək",
+    "explanation": {
+      "correct": "Havanın yolu: Burun (süzülmə, nəmlənmə, isitmə) → Udlaq → Qırtlaq → Traxeya → Bronxlar → Bronxiollar → Alveollar.",
+      "distractors": {
+        "0": "Traxeya bronxdan əvvəl gəlir.",
+        "2": "Bu ardıcıllıq anatomik cəhətdən yanlışdır.",
+        "3": "Traxeya bronxdan əvvəl gəlir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ01-01-01-140"
+  },
+  {
+    "question": "Alveolyar divarın çox nazik olması niyə vacibdir?",
+    "options": [
+      "Ağciyəri kiçiltmək",
+      "Diffuziya məsafəsini azaldıb qaz mübadiləsini sürətləndirmək",
+      "Ağciyəri möhkəmləşdirmək",
+      "Ağciyəri yumşatmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Alveolyar divar qalınlığının funksional əhəmiyyətini izah etmək",
+    "explanation": {
+      "correct": "Fick qanununa görə diffuziya sürəti səthi sahəyə proporsional, divar qalınlığına inversdir. Alveolyar divar çox nazikdir (0.1-0.2 mikron) — bu O2 və CO2-nin sürətli keçişini mümkün edir.",
+      "distractors": {
+        "0": "Ağciyər ölçüsü divar qalınlığından asılı deyil.",
+        "2": "Nazik divar mexaniki möhkəmliyi azaldır, artırmır.",
+        "3": "Nazik divar yumşaqlığa yox, funksionallığa xidmət edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ02-02-02-141"
+  },
+  {
+    "question": "Sigaret çəkənlərdə kirpikli epitel zədələnir. Bu niyə tənəffüz xəstəliklərinə gətirib çıxarır?",
+    "options": [
+      "Oksigen azalır",
+      "Zərərli hissəciklər, mikroorqanizmlər öz-özünü təmizləmə mexanizmi olmadan ağciyərə çatır",
+      "Traxeya daralır",
+      "Qan dövranı azalır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kirpikli epitelin zədələnməsinin nəticəsini izah etmək",
+    "explanation": {
+      "correct": "Kirpikli epitel mukusu boğaza doğru itirərək ağciyəri qoruyur. Sigaret bu kirpikləri parçalayır. Nəticədə toz, virus, bakteriya, karsinojen maddələr ağciyərə enib infeksiya, XOAX (xroniki obstruktiv ağciyər xəstəliyi), xərçəng riskini artırır.",
+      "distractors": {
+        "0": "Oksigen azalması birbaşa bu mexanizmin nəticəsi deyil.",
+        "2": "Traxeyanın daralması digər mexanizmdir.",
+        "3": "Qan dövranı azalması birbaşa bu mexanizmin nəticəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ02-02-02-142"
+  },
+  {
+    "question": "Astmada bronxiollar daralır. Bu tənəffüzü necə çətinləşdirir?",
+    "options": [
+      "O2 plazma ilə daşınmır",
+      "Hava müqaviməti artır, ekspirasyasiya çətinləşir — xırıltılı nəfəs yaranır",
+      "Alveollar söküb yumulur",
+      "Pnevmotoraks yaranır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Astmanın tənəffüzə mexaniki təsirini izah etmək",
+    "explanation": {
+      "correct": "Bronxiol daralması (bronxospazm) hava axınına müqaviməti artırır. Xüsusilə ekspirasiyanın (nəfəs vermənin) çətinlənməsi baş verir — hava alveollarda tıxanır. Bu xırıltılı (hırıltılı) nəfəsə, oksigen çatışmazlığına gətirib çıxarır.",
+      "distractors": {
+        "0": "O2 daşınması hemoglobin ilə baş verir.",
+        "2": "Alveollar astmada söküb yumulur, bu atelektazdır.",
+        "3": "Pnevmotoraks plevra boşluğuna hava daxil olmasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ02-02-02-143"
+  },
+  {
+    "question": "Burun boşluğunun üç əsas funksiyası nədir?",
+    "options": [
+      "Qaz mübadiləsi, qan süzmə, səs yaratma",
+      "Havanı süzmə, nəmləndirmə, istitmə",
+      "Yalnız havanı süzmə",
+      "Yalnız havanı nəmləndirmə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Burun boşluğunun funksiyalarını izah etmək",
+    "explanation": {
+      "correct": "Burun boşluğu havanı 3 şəkildə hazırlayır: 1) Burun tükləri və mukus hissəcikləri süzür; 2) mukoz membran havanı nəmləndirir; 3) zəngin damar şəbəkəsi havanı bədən temperaturuna qədər istidir. Bu, alveollar üçün optimal hava şəraiti yaradır.",
+      "distractors": {
+        "0": "Qaz mübadiləsi alveollarda, qan süzmə böyrəkdədir.",
+        "2": "Burun yalnız süzmür, 3 funksiyası var.",
+        "3": "Burun yalnız nəmləndirmir, 3 funksiyası var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ02-02-02-144"
+  },
+  {
+    "question": "Pnevmotoraks zamanı plevra boşluğuna hava girər. Bu niyə ağciyərin söküb yumulmasına gətirib çıxarır?",
+    "options": [
+      "Hava çox soyuqdur",
+      "Plevra boşluğundakı mənfi təzyiq pozulur, ağciyərlər elastikliyi ilə söküb yumulur",
+      "Qan itkisi baş verir",
+      "Bronxlar tıxanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Pnevmotoraksın mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Normada plevra boşluğunda mənfi (atmosferdən az) təzyiq var. Bu mənfi təzyiq ağciyəri gərilmiş saxlayır. Pnevmotoraksda hava daxil olur, mənfi təzyiq aradan qalxır. Ağciyər öz elastikliyi ilə söküb yumulur.",
+      "distractors": {
+        "0": "Hava temperaturu bu proseslə bağlı deyil.",
+        "2": "Qan itkisi pnevmotoraksın birbaşa nəticəsi deyil.",
+        "3": "Bronxlar tıxanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ02-02-02-145"
+  },
+  {
+    "question": "Sürfaktant əskikliyi yeni doğulmuş prematur körpələrdə baş verir. Niyə bu xüsusilə körpəlarda risk oluşdurur?",
+    "options": [
+      "Körpəlarin ağciyəri çox böyükdür",
+      "Sürfaktant 28-32 hafta gestasiyada yetişir, prematur körpəlarda az olduğu üçün alveolyar gərginlik artır — nəfəs almaq çox çətin olur",
+      "Körpəlarin hemoglobin yoxdur",
+      "Körpəlarin traxeası incədir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Yeni doğulan körpələrdə sürfaktant çatışmazlığının mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Sürfaktant pnevmosit tip-II hüceyrələr tərəfindən sintez edilir. Bu proses 28-32. gestasiya həftəsindəyərişir. Prematur doğulanda kifayətsiz sürfaktant alveolyar gərginliyi artırır. Nəticədə alveoller hər nəfəs almaq üçün maksimum güc tələb edir — respirator distress sindromu (RDS) yaranır.",
+      "distractors": {
+        "0": "Prematur körpənin ağciyəri kiçikdir.",
+        "2": "Körpələrda hemoglobin var.",
+        "3": "Traxeya ölçüsü bu xəstəliyin əsas mexanizmi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ03-03-03-146"
+  },
+  {
+    "question": "Müxtəlif hissəcik ölçüsündə toz bronxus sisteminə daxil olduqda, hansı ölçüdəkini alveolyar makrofaqlar zərərsizləşdirə bilmir?",
+    "options": [
+      "Iri hissəciklər (>10 mikron) — burun tutub saxlayır",
+      "Orta hissəciklər (2-10 mikron) — mukosiliyer sistem çıxarır",
+      "Kiçik hissəciklər (<1 mikron) — alveolyar makrofaqlar fagositoz edir",
+      "Ultra kiçik nanoparçacıqlar (<0.1 mikron) — makrofaqların udmasına müqavimət göstərə bilər"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Toz hissəcik ölçüsü ilə müdafiə mexanizmi arasındakı əlaqəni analiz etmək",
+    "explanation": {
+      "correct": "Ultra kiçik nanoparçacıqlar (<0.1 mikron) alveolyar makrofaqların fagositoz qabiliyyətini aşa bilər, hüceyrə içinə girib zədə verə bilər. Bu, müasir nanomaterial təhlükəsizliyi araştırmalarının əsas narahatlığıdır.",
+      "distractors": {
+        "0": "Böyük hissəcikləri burun tutur — bu doğrudur.",
+        "1": "Mukosiliyer sistem orta hissəcikləri çıxarır — bu doğrudur.",
+        "2": "Kiçik hissəcikləri makrofaqlar udur — bu doğrudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ03-03-03-147"
+  },
+  {
+    "question": "Amfizem xəstəliyindən alveollar birləşib böyüyür, səth sahəsi azalır. Bu xəstənin niyə oksigen çatışmazlığı yaşayır?",
+    "options": [
+      "Hemoglobin azalır",
+      "Azalan alveolyar səth sahəsi diffuziya sürətini azaldır — qanın O2 tutumu azalır",
+      "Ürək zəifləyir",
+      "Bronxlar tıxanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Amfizemin qaz mübadiləsinə təsirini analiz etmək",
+    "explanation": {
+      "correct": "Normal ağciyərdə 70 m² alveolyar səthi var. Amfizemdə alveolların birləşməsi bu səthi kəskin azaldır. Fick qanununa görə kiçilən səthi sahə diffuziya sürətini azaldır. Nəticədə eyni vaxtda daha az O2 qana keçir.",
+      "distractors": {
+        "0": "Hemoglobin amfizemdə azalmır.",
+        "2": "Ürək zəifliyi amfizemon birbaşa nəticəsi deyil.",
+        "3": "Bronxlar amfizemdə tıxanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Amfizem → alveollar birləşir → səth azalır",
+      "Diffuziya ∝ səth → O2 keçidi azalır"
+    ],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ03-03-03-148"
+  },
+  {
+    "question": "Qaraciyər xərçəngi metastaz verərək ağciyərdə yığım yaradır. Bu tənəffüzü necə pozmur?",
+    "options": [
+      "Ağciyərdə yığım hava yollarını tıxayır, alveol həcmini azaldır",
+      "Metastaz ağciyər kapilyarlarını doldurub qaz mübadiləsini azaldır",
+      "Ağciyər tamamilə işini dayandırır",
+      "Traxeya genişlənir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Ağciyər metastazının tənəffüzə təsirini şərh etmək",
+    "explanation": {
+      "correct": "Metastaz ağciyərdə kütlə yaratdıqda hava yollarını tıxaya bilər (atelektaz) və ya funksional alveol həcmini azaldır. Bundan əlavə plevral effuziya (mayeləşmə) ağciyəri sıxışdırır. Nəticədə qaz mübadiləsi azalır, oksigenasiya pisləşir.",
+      "distractors": {
+        "1": "Metastaz kapilyarları da doldura bilər, amma əsas mexanizm hava yolu tıxanması/alveolyar alan azalmasıdır.",
+        "2": "Ağciyər tamamilə işini dayandırmır.",
+        "3": "Traxeya genişlənmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ03-03-03-149"
+  },
+  {
+    "question": "Ağciyər transplantasiyasından sonra donor ağciyəri rədd edilməsin deyə immünosupressant dərmanlar verilir. Bu niyə infeksiya riskini artırır?",
+    "options": [
+      "İmmünosuppressant qanı dondurur",
+      "İmmün sistem zəiflədildiyi üçün bakteriya, virus, göbələk infeksiyalarına qarşı müdafiə azalır",
+      "Dərman bronxları daraldır",
+      "Dərman eritrositləri azaldır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "İmmünosuppressiyanın qoruyucu mexanizmə təsirini şərh etmək",
+    "explanation": {
+      "correct": "İmmünosuppressant dərmanlar T-limfositlər və digər immün hüceyrələrin fəaliyyətini azaldır. Bu, donor toxumanın rəddini önləyir, amma eyni zamanda bədənin infeksiyalara qarşı müdafiəsini zəiflədir. Transplant xəstələri xüsusi infeksiya profilaksiyası alır.",
+      "distractors": {
+        "0": "İmmünosuppressant qanı dondurmaır.",
+        "2": "Dərman bronxları daraltmır.",
+        "3": "Dərman birbaşa eritrositləri azaltmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "İnsanda tənəffüs sistemi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0402-04İ03-03-03-150"
+  },
+  {
+    "question": "Nəfəs alma (inspirasiya) zamanı diafragma nə edir?",
+    "options": [
+      "Yuxarıya qalxır",
+      "Aşağıya enir",
+      "Sağa hərəkət edir",
+      "Dəyişmir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Diafragmanın inspirasiya zamanı hərəkətini bilmək",
+    "explanation": {
+      "correct": "İnspirasiyadə diafragma aşağıya enir (yastılaşır). Bu, döş qəfəsinin həcmini artırır, ağciyər içindəki təzyiqi azaldır. Atmosfer təzyiqi daha yüksək olduğu üçün hava ağciyərə axır.",
+      "distractors": {
+        "0": "Diafragma yuxarıya ekspirasiyadə qalxır.",
+        "2": "Diafragma yalnız aşağı-yuxarı hərəkət edir.",
+        "3": "Diafragma inspirasiyada mütləq hərəkət edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H01-01-01-151"
+  },
+  {
+    "question": "Nəfəs vermə (ekspirasiyanın) passiv formada nə ilə baş verir?",
+    "options": [
+      "Diafragmanın aktiv yığılması",
+      "Ağciyərin elastik geri çəkilişi ilə",
+      "Qabırğaarası əzalərin yığılması ilə",
+      "Hava boşluğunun yaranması ilə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Passiv ekspirasiyanın mexanizmini bilmək",
+    "explanation": {
+      "correct": "Normal istirahət ekspirasiyası passivdir. Diafragma və qabırğaarası əzalər rahatladıqda ağciyərlər öz elastikliyi sayəsindən yığılır. Bu, döş həcmini azaldır, ağciyər içindəki təzyiqi artırır — hava xaricə çıxır.",
+      "distractors": {
+        "0": "Diafragmanın aktiv yığılması inspirasyada baş verir.",
+        "2": "Qabırğaarası əzalə yığılması məcburi ekspirasiyadə baş verir.",
+        "3": "Hava boşluğunun yaranması mexaniki olaraq doğru deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H01-01-01-152"
+  },
+  {
+    "question": "Alveol ilə kapilyar arasında O2 və CO2 hansı mexanizmlə mübadiləsi baş verir?",
+    "options": [
+      "Aktiv daşınma",
+      "Osmos",
+      "Diffuziya",
+      "Filtrasiya"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Alveolyar qaz mübadiləsi mexanizmini bilmək",
+    "explanation": {
+      "correct": "Alveollarda qaz mübadiləsi yalnız diffuziya ilə baş verir. O2 alveolyar havadan (yüksək pO2) kapillyar qanına (aşağı pO2) keçir. CO2 isə əksini — qandan alveola — diffuziya edir.",
+      "distractors": {
+        "0": "Aktiv daşınma enerji tələb edir, alveolyar qaz mübadiləsi passivdir.",
+        "1": "Osmos suyun keçişidir.",
+        "3": "Filtrasiya kapilyar mübadiləsinin maye hissəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H01-01-01-153"
+  },
+  {
+    "question": "Tibbi müdaxilə zamanı tənəffüs dayanırsa süni tənəffüs aparılır. Ağız-ağız üsulunda niyə nəfəsi qarşıdakının ağzına veririk?",
+    "options": [
+      "Oksigenimiz daha çoxdur",
+      "Nəfəs verilen hava hələ də oksigen ehtiva edir (~16% O2), diffuziya baş verir",
+      "Biz CO2 veririk",
+      "Ağciyəri qızdırmaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağız-ağız tənəffüzünün əsasını bilmək",
+    "explanation": {
+      "correct": "Ekspirasiya edilmiş hava ~16% O2 ehtiva edir (normal 21%-dən az, amma hələ faydalı). Bu O2 diffuziya ilə xəstənin ağciyərinə keçir. Bundan əlavə mexaniki ventilasiya ağciyəri açıq saxlayır.",
+      "distractors": {
+        "0": "Ekspirasiya edilmiş havada O2 azalır amma qalır.",
+        "2": "CO2 verilir, amma O2 daha vacibdir.",
+        "3": "Hava qızdırmaq bu texnikanın məqsədi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H01-01-01-154"
+  },
+  {
+    "question": "Tənəffüzü idarə edən əsas mərkəz beynin hansı hissəsindədir?",
+    "options": [
+      "Beyin yarımkürəsi",
+      "Beyin kötüyü (uzunsov beyin)",
+      "Beyincik",
+      "Hipotalamus"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tənəffüz mərkəzinin yerini bilmək",
+    "explanation": {
+      "correct": "Tənəffüz ritmi uzunsov beyin (medulla oblongata) və körpü (pons) daxilindəki tənəffüz mərkəzləri tərəfindən idarə edilir. Bu mərkəzlər qandakı CO2, O2 və pH-a həssasdır.",
+      "distractors": {
+        "0": "Beyin yarımkürəsi ixtiyari hərəkətləri idarə edir.",
+        "2": "Beyincik koordinasiya mərkəzidir.",
+        "3": "Hipotalamus homeostazı idarə edir, tənəffüzü birbaşa yox."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H01-01-01-155"
+  },
+  {
+    "question": "Fiziki məşq zamanı tənəffüs dərinləşir və sürətlənir. Bu hansı stimulla idarə olunur?",
+    "options": [
+      "O2 azalması",
+      "CO2 artması qan pH-ını azaldır — bu tənəffüz mərkəzini stimulyasiya edir",
+      "Ağciyər böyüyür",
+      "Hemoglobin artır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Fiziki məşq zamanı tənəffüzün artmasının mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Məşq zamanı maddə mübadiləsi artır → CO2 istehsalı artır → qan pCO2 artır → pH azalır. Bu dəyişiklikləri kimoreseptorlar hiss edir → tənəffüz mərkəzini stimulyasiya edir → tənəffüz dərinliyі və sürəti artır.",
+      "distractors": {
+        "0": "O2 azalması da stimul verir, amma CO2/pH əsas amildir.",
+        "2": "Ağciyər ölçüsü fiziki məşqlə dəyişmir.",
+        "3": "Hemoglobin artımı uzunmüddətli adaptasiya, ani reaksiya deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H02-02-02-156"
+  },
+  {
+    "question": "Hiperventilasiya (çox sürətli nəfəs alma) zamanı nə baş verir?",
+    "options": [
+      "CO2 artır",
+      "CO2 çox xaric edilir, qan pH-ı artır, başgicəllənmə yaranır",
+      "O2 azalır",
+      "Qan laxtalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Hiperventilasiyasının mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Hiperventilasiyada CO2 həddindən çox xaric edilir (hypocapnia). CO2 azaldığında qan pH-ı artır (alkaloz). Bu beyin damarlarının daralmasına gətirib çıxarır, beyinə qan axını azalır, başgicəllənmə, keyimə, hətta huş itkisi baş verə bilər.",
+      "distractors": {
+        "0": "Hiperventilasiyada CO2 azalır, artmır.",
+        "2": "O2 çox nəfəs aldıqda artır, azalmır.",
+        "3": "Qan laxtalanması hiperventilasyasının birbaşa nəticəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H02-02-02-157"
+  },
+  {
+    "question": "O2-hemoglobin dissosiasiya əyrisinin sağa sürüşməsi nəyi bildirir?",
+    "options": [
+      "Hemoglobin O2-ni daha möhkəm bağlayır",
+      "Hemoglobin O2-ni daha asan buraxır — aktiv toxumalara daha çox O2 çatır",
+      "Qan daha sürətli axır",
+      "Alveolyar O2 artır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Hemoglobinin dissosiasiya əyrisini izah etmək",
+    "explanation": {
+      "correct": "Sağa sürüşmə (yüksək CO2, aşağı pH, yüksək temperatur şəraitindən) hemoglobinin O2-ə affinliyinin azaldığını bildirir. Bu Bohr effektidir — məşq edən toxumalarda daha çox O2 sərbəst buraxılır.",
+      "distractors": {
+        "0": "Sola sürüşmə hemoglobinin O2-ni möhkəm bağladığını bildirir.",
+        "2": "Qan axın sürəti bu əyri ilə birbaşa bağlı deyil.",
+        "3": "Alveolyar O2 dəyişməsi bu kontekstdə əsas amil deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H02-02-02-158"
+  },
+  {
+    "question": "CO2 qanda ən çox hansı formada daşınır?",
+    "options": [
+      "Həll olmuş CO2 kimi plazma içindən",
+      "Karbaminohemoglobin kimi",
+      "Bikarbonat ioni (HCO3-) kimi",
+      "CO2 eritrositlər içindən daşınmır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "CO2 daşınma formalarını müqayisə etmək",
+    "explanation": {
+      "correct": "CO2-nin ~70%-i bikarbonat (HCO3-) şəklindən, ~20%-i karbaminohemoglobin kimi, ~7-8%-i isə plazma ilə həll olaraq daşınır. Bikarbonat ən böyük fraksiyandır.",
+      "distractors": {
+        "0": "Həll olmuş forma yalnız ~7-8%-dir.",
+        "1": "Karbaminohemoglobin ~20%-dir.",
+        "3": "CO2 müxtəlif formada eritrosit və plazmada daşınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H02-02-02-159"
+  },
+  {
+    "question": "Ağciyər kapilyarında CO2-nin bikarbonat şəklindən CO2-yə çevrilməsi hansı ferment vasitəsilə baş verir?",
+    "options": [
+      "Hemoglobin",
+      "Karboanhidraz",
+      "Triyin",
+      "ATPaza"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Karboanhidrazın funksiyasını izah etmək",
+    "explanation": {
+      "correct": "Karboanhidraz (CA) fermenti CO2 + H2O ↔ H2CO3 ↔ H+ + HCO3- reaksiyasını hər iki istiqamətdə kataliz edir. Toxumalarda CO2-ni bikarbonat kimi çevirərək daşımasını, ağciyər kapilyarında isə geri çevirərək CO2-nin ayrılmasını sürətləndirir.",
+      "distractors": {
+        "0": "Hemoglobin karbaminoforma ilə CO2 bağlayır, karboanhidraz deyil.",
+        "2": "Tripsin həzm sistemi fermentdir.",
+        "3": "ATPaza ATP hidrolizini katalizlayir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H02-02-02-160"
+  },
+  {
+    "question": "Dağcı 8000 metrə qalxdıqda O2 parsial təzyiqi çox azalır. Hemoglobin doyumluğu kəskin azalır. Buna baxmayaraq bədən niyə bir müddət kompensasiya edir?",
+    "options": [
+      "Ağciyər böyüyür",
+      "Hiperventilasiya + eritrositoz (eritrosit artımı) + 2,3-DPG artışı hemoglobini O2 buraxmağa məcbur edir",
+      "Ürək dayandıqda qan axımı artır",
+      "Hüceyrələr anaerob keçir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Yüksəklik adaptasiyasının kompleks mexanizmini analiz etmək",
+    "explanation": {
+      "correct": "Ani kompensasiya: hiperventilasiya pO2-ni maksimuma çatdırmaq üçün artır. Eritrositoz (EPO vasitəsilə) qanın O2 daşıma kapasitesini artırır. 2,3-DPG (eritrosit içindəki metabolit) hemoglobinin O2 affinliyini azaldır — O2-i daha asan buraxır. Bu üç mexanizm birlikdə kompensasiya edir.",
+      "distractors": {
+        "0": "Ağciyər ölçüsü dəyişmir.",
+        "2": "Ürək döyüntüsü artır, dayandıqda deyil.",
+        "3": "Kəskin anaerob keçid həyat üçün zərərlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Yüksəklik → pO2 azaldı → hiperventilasiya",
+      "EPO → eritrositoz → O2 kapasitesi artdı",
+      "2,3-DPG → Hb O2 buraxır → toxumalara daha çox O2"
+    ],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H03-03-03-161"
+  },
+  {
+    "question": "Suda boğulma zamanı su ağciyərə dolur. Bu niyə ölümcül ola bilər?",
+    "options": [
+      "Su O2-ni məhv edir",
+      "Su alveolyar səthi örtür — diffuziya tamamilə dayanır, oksigenasiya mümkün olmur",
+      "Qan donur",
+      "Ürək dayanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Suya boğulmanın mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Alveolyar boşlüğa su dolduqda hava ilə temas kəsilir. Qaz mübadiləsi (diffuziya) yalnız hava-maye sərhəddindən mümkündür. Su doldurduqda bu sərhəd yox olur. Beş dəqiqədən az müddətdə beyin hüceyrələri hipoksik zədəni alır.",
+      "distractors": {
+        "0": "Su O2-ni kimyəvi olaraq məhv etmir.",
+        "2": "Qan donmur.",
+        "3": "Ürək birbaşa dayanmır, amma O2 yoxluğu ürəyi də zədələyir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "Su → alveollar dolu → diffuziya yox",
+      "Qan O2 almır → hipoksiya → beyin zədəsi"
+    ],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H03-03-03-162"
+  },
+  {
+    "question": "Xonik obstruktif ağciyər xəstəliyındən (XOAX/COPD) CO2 qanda toplanır. Bu xəstə niyə oksigen terapiyasından yüksək konsentrasiyada qorxmalıdır?",
+    "options": [
+      "Oksigen yanğın yaradır",
+      "Xəstə artıq CO2 ilə deyil, aşağı O2 ilə nəfəs almağa stimullaşmışdır — yüksək O2 bu stimulu yox edir, tənəffüz dayanır",
+      "Oksigen CO2-ni artırır",
+      "Oksigen ağciyəri büzmürür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "XOAX-da yüksək O2 terapiyasının riskini şərh etmək",
+    "explanation": {
+      "correct": "Xronik hiperkapniyada (yüksək CO2) normal kimoreseptorlar desensitize olur. Bədən aşağı O2-ə (hipoksik sürücülük) güvənməyə başlayır. Əgər yüksək O2 verilərsə, bu aşağı O2 stimulunu aradan qaldırır — tənəffüz mərkəzi stimulasiyasını itirir, tənəffüz yavaşlayır, CO2 daha da artır.",
+      "distractors": {
+        "0": "Oksigen yanğın yaratmır (yalnız yanmağı dəstəkləyir).",
+        "2": "Oksigen CO2-yi artırmır birbaşa, amma bu mexanizm dolayı yoldan CO2 artmasına gətirib çıxarır.",
+        "3": "Oksigen ağciyəri büzmürür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H03-03-03-163"
+  },
+  {
+    "question": "Hiccup (hıçqırıq) diafragmanın qeyri-ixtiyari yığılmasından yaranır. Havanın qırtlağa sürətlə girmə səsi haradan gəlir?",
+    "options": [
+      "Diafragmanın açılmasından",
+      "Glottis (səs tellərinin arasındakı açıq) ani bağlanmasından",
+      "Ağciyərin sıxılmasından",
+      "Bronxların əsasından"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Hıçqırıq mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Diafragmanın ani yığılması hava qırtlağa güclü axınına səbəb olur. Eyni zamanda vokal tellərin arası (glottis) refleks olaraq ani bağlanır. Bu bağlanma havanın kəskin dayandırılmasından xarakterik səsi yaradır.",
+      "distractors": {
+        "0": "Diafragmanın açılması nəfəs alma prosesidir, səs yaratmır.",
+        "2": "Ağciyərin sıxılması bu kontekstdə əsas amil deyil.",
+        "3": "Bronxların əsasından bu səs gəlmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H03-03-03-164"
+  },
+  {
+    "question": "Dalğıclar dərinə getmədən əvvəl hiperventilasiya edirlər. Bu niyə su altında bihuşluğa (shallow water blackout) gətirib çıxara bilər?",
+    "options": [
+      "CO2 artır",
+      "Hiperventilasiya CO2-ni çox azaldır, tənəffüz stimulu gecikir — O2 kritik həddə düşdükdə bihuşluq baş verir",
+      "O2 artıq çox olur",
+      "Ağciyər dolur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Shallow water blackout mexanizmini şərh etmək",
+    "explanation": {
+      "correct": "Hiperventilasiya CO2-ni azaldır (hypocapnia). Su altında O2 sərflənir. Normal olaraq artan CO2 tənəffüz siqnalı verir. Amma hypocapnia bu siqnalı gecikdirir — tənəffüz stimulu gəlmədən O2 kritik həddə düşür. Beyin O2 olmadan birdən bihuşluqla reaksiya verir.",
+      "distractors": {
+        "0": "Hiperventilasiya CO2-ni azaldır, artırmır.",
+        "2": "Çox O2 bu kontekstdə ikinci dərəcəlidir.",
+        "3": "Ağciyərin dolması bu mexanizmin səbəbi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Hiperventilasiya → CO2 azaldı",
+      "Su altında O2 sərflənir",
+      "CO2 stimulu gec gəlir → O2 kritik düşür → bihuşluq"
+    ],
+    "topic": "Tənəffüs hərəkətləri və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0403-04H03-03-03-165"
+  }
+]

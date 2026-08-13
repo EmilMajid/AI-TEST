@@ -1,0 +1,458 @@
+[
+  {
+    "question": "Açıq qan dövranı sistemi olan canlıya nümunə hansıdır?",
+    "options": [
+      "İnsan",
+      "Balıq",
+      "Çəyirtkə",
+      "Qurbağa"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Açıq qan dövranının nümunəsini bilmək",
+    "explanation": {
+      "correct": "Böcəklər (çəyirtkə daxil olmaqla) açıq qan dövranı sisteminə malikdir. Onlarda qan (hemolimfa) hemosel adlanan boşluqda sərbəst dövr edir, bağlı damarlarda axmır.",
+      "distractors": {
+        "0": "İnsan qapalı qan dövranı sisteminə malikdir.",
+        "1": "Balıqlarda qapalı qan dövranı var.",
+        "3": "Qurbağalarda qapalı qan dövranı sistemi var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B01-01-01-046"
+  },
+  {
+    "question": "Balıqlarda qan dövrası neçə çevrədən ibarətdir?",
+    "options": [
+      "Bir çevrə",
+      "İki çevrə",
+      "Üç çevrə",
+      "Çevrəsiz axır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Balıqlarda qan dövranının çevrə sayını bilmək",
+    "explanation": {
+      "correct": "Balıqlarda bir qan dövranı çevrəsi mövcuddur: ürək → qəlsəmə (oksigenləşmə) → bədən toxumaları → ürək. Hər ikitərəfli dövrə olmadığından qan oksigenləşdikdən dərhal bədənə gedir.",
+      "distractors": {
+        "1": "İki çevrə sürünənlər, amfibiya, quşlar, məməlilərə aiddir.",
+        "2": "Üç çevrə mövcud deyil.",
+        "3": "Bütün heyvanlarda qan müəyyən ardıcıllıqla axır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B01-01-01-047"
+  },
+  {
+    "question": "Qapalı qan dövranı sisteminin açıq sistemdən əsas üstünlüyü nədir?",
+    "options": [
+      "Daha az enerji xərcləyir",
+      "Oksigen daha sürətli toxumalara çatır",
+      "Qan boşluqlarda toplanır",
+      "Damarlar lazım deyil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Qapalı qan dövranının üstünlüyünü bilmək",
+    "explanation": {
+      "correct": "Qapalı sistemdə qan damarlar içindən yüksək təzyiqlə axır. Bu, oksigenin toxumalara daha sürətli çatmasını, maddə mübadiləsinin daha effektiv olmasını təmin edir. Açıq sistemdə isə hemolimfa yavaş hərəkət edir.",
+      "distractors": {
+        "0": "Qapalı sistem daha çox enerji xərcləyir, amma daha effektivdir.",
+        "2": "Açıq sistemdə hemolimfa boşluqlarda toplanır.",
+        "3": "Qapalı sistemdə damarlar vacibdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B01-01-01-048"
+  },
+  {
+    "question": "Qurbağalarda qan dövrası neçə çevrədən ibarətdir?",
+    "options": [
+      "Bir çevrə",
+      "İki çevrə",
+      "Üç çevrə",
+      "Qan dövranı yoxdur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Amfibiyalarda qan dövranının quruluşunu bilmək",
+    "explanation": {
+      "correct": "Qurbağalar amfibiyalar olduğu üçün iki qan dövranı çevrəsinə malikdir: böyük (sistemik) çevrə bədəni qidalandırır, kiçik (ağciyər-dəri) çevrə isə oksigenləşməni həyata keçirir.",
+      "distractors": {
+        "0": "Bir çevrə balıqlara aiddir.",
+        "2": "Üç çevrə əsas heyvanlarda mövcud deyil.",
+        "3": "Bütün onurğalılarda qan dövranı var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B01-01-01-049"
+  },
+  {
+    "question": "Heyvanlarda qanı ürəyə qaytaran damarlar hansı adla bilinir?",
+    "options": [
+      "Arteriyalar",
+      "Venalar",
+      "Kapilyarlar",
+      "Lenfatik damarlar"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Venaların funksiyasını bilmək",
+    "explanation": {
+      "correct": "Venalar bədən toxumalarından ürəyə qanı qaytaran damarlardır. Adətən deoksigenləşmiş qan daşıyırlar (kiçik qan dövranı venası istisnadır).",
+      "distractors": {
+        "0": "Arteriyalar ürəkdən bədənə qan aparır.",
+        "2": "Kapilyarlar damar eni ən dar olanlardır, maddə mübadiləsi burada baş verir.",
+        "3": "Lenfatik damarlar limfanı daşıyır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B01-01-01-050"
+  },
+  {
+    "question": "Quşlar məməlilərlə müqayisədə eyni qan dövranı sistemini paylaşır. Quşların 4 kameralı ürəyinin əsas üstünlüyü nədir?",
+    "options": [
+      "Qan daha sürətli axır",
+      "Oksigenli və deoксigenli qan tam ayrılır, enerji səmərəliliyi artır",
+      "Quşlar daha çox qan istehsal edir",
+      "Ürək daha böyük olur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "4 kameralı ürəyin funksional üstünlüyünü izah etmək",
+    "explanation": {
+      "correct": "4 kameralı ürəkdə sol və sağ tərəf tamamilə ayrılır. Sol tərəf oksigenli, sağ tərəf isə deoксigenli qanı daşıyır. Bu tam ayrılma istilik enerjisinə yüksək tələbata cavab verən quş və məməlilərdə oksigen çatdırmada maksimum effektivlik təmin edir.",
+      "distractors": {
+        "0": "Qanın sürəti ürəyin kamera sayından birbaşa asılı deyil.",
+        "2": "Kamera sayı qan istehsalını artırmır.",
+        "3": "4 kameralı ürək ölçü üstünlüyü yaratmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B02-02-02-051"
+  },
+  {
+    "question": "Sürünənlərdə qan dövranı sistemini amfibiyaların sistemi ilə müqayisə edin. Hansı fərq var?",
+    "options": [
+      "Sürünənlər bir çevrəlidir",
+      "Sürünənlər 3 kameralı ürəyə malikdir (əksər növlər), amma kameralararası bölmə daha inkişaf etmişdir",
+      "Sürünənlər açıq qan dövranına malikdir",
+      "Sürünənlər qan dövranına malik deyil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Sürünən və amfibiya qan sistemlərini müqayisəli izah etmək",
+    "explanation": {
+      "correct": "Həm sürünənlər, həm amfibiyalar 2 dövrəli sisteme malikdir. Lakin sürünənlərin (əksər növlər) ürəyindəki mədəciklərarası bölmə daha inkişaf etmişdir. Timsahlar istisnadır — onların 4 kameralı ürəyi var.",
+      "distractors": {
+        "0": "Sürünənlər də 2 çevrəlidir.",
+        "2": "Sürünənlər qapalı qan dövranına malikdir.",
+        "3": "Bütün onurğalıların qan dövranı var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B02-02-02-052"
+  },
+  {
+    "question": "Kapilyarlarda maddə mübadiləsi hansı mexanizmlə baş verir?",
+    "options": [
+      "Aktiv daşınma ilə",
+      "Osmoz ilə",
+      "Diffuziya və filtrasiya ilə",
+      "Fagositoz ilə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kapilyarlarda maddə mübadiləsinin mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Kapilyarların divarı çox nazik (bir hüceyrə qatı) olduğundan O₂, qlükoza, CO₂, metabolik tullantılar diffuziya ilə keçir. Bundan əlavə, kapilyar başında hidrostatik təzyiq yüksək olduğundan maye toxumalara süzülür (filtrasiya), sonunda isə osmotik təzyiq artdığından geri sorulur.",
+      "distractors": {
+        "0": "Kapilyar mübadiləsi enerji xərclənmədən baş verir.",
+        "1": "Osmoz yalnız suyun keçişinə aiddir.",
+        "3": "Fagositoz hüceyrə daxilinə maddə udulmasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B02-02-02-053"
+  },
+  {
+    "question": "Böcəklərdə (açıq sistem) hemolimfa oksigen daşımır. Oksigen necə toxumalara çatır?",
+    "options": [
+      "Floyem vasitəsilə",
+      "Traxeya sistemi ilə birbaşa toxumalara",
+      "Limfa sısistemi ilə",
+      "Diffuziya ilə dəridən"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Böcəklərdə oksigen çatdırma mexanizmini izah etmək",
+    "explanation": {
+      "correct": "Böcəklərdə qan (hemolimfa) qida maddələri daşıyır, lakin oksigeni daşımır. Oksigen traxeya sistemi adlanan boru şəbəkəsi ilə birbaşa toxumalara çatır. Bu, hava birbaşa hüceyrə səviyyəsinə qədər gedir.",
+      "distractors": {
+        "0": "Floyem bitkiyə aiddir.",
+        "2": "Limfa sistemi böcəkdə fərqli funksiya daşıyır.",
+        "3": "Dəridən diffuziya böcəklərdə əsas mexanizm deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B02-02-02-054"
+  },
+  {
+    "question": "İnsanda sistemik (böyük) qan dövranı çevrəsinin başlanğıc nöqtəsi hansıdır?",
+    "options": [
+      "Sağ mədəcik",
+      "Sol mədəcik",
+      "Sol qulaqcıq",
+      "Sağ qulaqcıq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Böyük qan dövranının başladığı nöqtəni izah etmək",
+    "explanation": {
+      "correct": "Böyük (sistemik) qan dövranı sol mədəcikdən başlayır. Sol mədəcik oksigenli qanı aorta vasitəsilə bütün bədənə göndərir. Qan bədəni dolaşdıqdan sonra venalar vasitəsilə sağ qulaqcığa qayıdır.",
+      "distractors": {
+        "0": "Sağ mədəcik kiçik (ağciyər) qan dövranını başladır.",
+        "2": "Sol qulaqcıq ağciyərlərdən gələn qanı sol mədəciykə ötürür.",
+        "3": "Sağ qulaqcıq böyük dövranın son nöqtəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B02-02-02-055"
+  },
+  {
+    "question": "Balıqlarda qan yalnız bir çevrə edir. Bu, balıqların enerji mübadiləsini məməlilərlə müqayisədə niyə məhdudlaşdırır?",
+    "options": [
+      "Balıqlarda hemoglobin yoxdur",
+      "Qəlsəmədən çıxan qan təzyiqi azalır, toxumalara çatma yavaşlayır",
+      "Balıqlarda ürək daha kiçikdir",
+      "Bir çevrə daha çox oksigen daşıyır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Bir çevrəli sistemin funksional məhdudiyyətini analiz etmək",
+    "explanation": {
+      "correct": "Balıqlarda qan qəlsəmə kapilyarlarından keçdikdən sonra təzyiqi xeyli azalır. Bu azalmış təzyiqlə qan bədən toxumalarına çatır, nəticədə maddə mübadiləsinin sürəti məhdudlaşır. İki çevrəli sistemdə ürək ikinci dəfə pompalar, yüksək təzyiqlə qan bədənə göndərilir.",
+      "distractors": {
+        "0": "Balıqlarda hemoglobin var.",
+        "2": "Ürəyin böyüklüyü əsas məhdudiyyət deyil.",
+        "3": "Bir çevrə qanın oksigen daşıma həcmini deyil, effektivliyini azaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Qəlsəmə → kapilyarlar → təzyiq azalır → bədən toxumalarına yavaş çatır"
+    ],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B03-03-03-056"
+  },
+  {
+    "question": "Dəniz donuzunun (Limulus) qanı mavi rənglidir. Bu niyədir?",
+    "options": [
+      "Xüsusi piqment olduğu üçün",
+      "Oksigen daşıyan hemosianin (mis əsaslı) var, hemoglobin (dəmir əsaslı) yox",
+      "Qanı soyuqdur",
+      "Oksigensiz qandır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Fərqli oksigen daşıyıcı zülalların mövcudluğunu şərh etmək",
+    "explanation": {
+      "correct": "Bəzi onurğasızlarda (Limulus, ahtapot) hemoglobin əvəzinə hemosianin adlı mis (Cu) əsaslı piqment var. Oksigenlənmiş hemosianin mavi, deoксigenli forma isə rəngsizdir. Müqayisə üçün: hemoglobin dəmirə (Fe) əsaslanır və qırmızıdır.",
+      "distractors": {
+        "0": "Mavi rəng xüsusi piqmentdən gəlir, amma bu piqmentin adı və xüsusiyyəti vacibdir.",
+        "2": "Qan temperaturu rəngi dəyişmir.",
+        "3": "Oksigensiz hemosianin rəngsizdir, mavi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B03-03-03-057"
+  },
+  {
+    "question": "Yüksəklikdə yaşayan heyvanların qanında daha çox eritrosit olur. Bu adaptasiyanın əsas mexanizmi nədir?",
+    "options": [
+      "Yüksəkdə hava daha sıx olur",
+      "Yüksəkdə O₂ parsial təzyiqi azdır, eritrosit sayının artması oksigen daşımağı kompensasiya edir",
+      "Yüksəkdə qan daha tez buxarlanır",
+      "Yüksəkdə ürək daha güclü döyünür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Yüksəkliyə adaptasiyanı qan dövranı çərçivəsindən şərh etmək",
+    "explanation": {
+      "correct": "Yüksəklikdə havanın ümumi təzyiqi azaldığı üçün O₂ parsial təzyiqi də azalır. Orqanizm bu vəziyyətə daha çox eritrosit (və hemoglobin) istehsal edərək cavab verir. Daha çox eritrosit az O₂ parsial təzyiqli mühitdə effektiv oksigen daşıyır.",
+      "distractors": {
+        "0": "Yüksəkdə hava seyrekdir, sıx deyil.",
+        "2": "Qan buxarlanmır.",
+        "3": "Ürək sürəti artsa da, əsas uzunmüddətli adaptasiya eritrosit artımıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "Yüksəklik → O₂ parsial təzyiqi azaldı → EPO hormonu artar → eritropoez artır → O₂ daşıma kapasitesi artar"
+    ],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B03-03-03-058"
+  },
+  {
+    "question": "Kapilyar mübadiləsidə Starling qüvvələri nəzəriyyəsinə görə kapilyarın arterial ucunda maye toxumalara çıxır, venoz ucunda isə geri sorulur. Bu balanssız olduqda nə baş verir?",
+    "options": [
+      "Qan damarları genişlənir",
+      "Toxumalarda maye toplanır (ödem)",
+      "Ürək sürəti artır",
+      "Eritrositlər parçalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Kapilyar mübadiləsinin pozulmasının nəticəsini analiz etmək",
+    "explanation": {
+      "correct": "Normalda arterial ucda süzülən maye ilə venoz ucda geri sorulun maye bərabərdir. Əgər osmotik təzyiq azalarsa (zülal azalığı — hipoproteinemiya) və ya hidrostatik təzyiq artarsa, maye toxumalarda toplanır. Bu vəziyyət ödem adlanır.",
+      "distractors": {
+        "0": "Damarların genişlənməsi ödemin birbaşa nəticəsi deyil.",
+        "2": "Ürək sürəti artması ayrı mexanizmdir.",
+        "3": "Eritrositlər bu prosesdə parçalanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Osmotik < Hidrostatik → maye toxumalara çıxır → geri sorulmur → ödem"
+    ],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B03-03-03-059"
+  },
+  {
+    "question": "Ahtapotun (Octopus) qanında 3 ürək var: 1 sistemik ürək, 2 qəlsəmə ürəyi. Bu quruluşun üstünlüyü nədir?",
+    "options": [
+      "Daha çox qan istehsal edir",
+      "Qəlsəmə ürəkləri qanı qəlsəmələrə yüksək təzyiqlə göndərib oksigenləşməni artırır",
+      "Qan dövranı daha yavaş olur",
+      "Bu sadəcə arxaik quruluşdur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Ahtapotun ürək sisteminin adaptiv üstünlüyünü şərh etmək",
+    "explanation": {
+      "correct": "Ahtapotun 2 qəlsəmə ürəyi sistematik ürəkdən gələn deoксigenli qanı yüksək təzyiqlə qəlsəmə kapilyarlarına göndərir. Bu, qəlsəmə oksigenləşməsini gücləndirir. Sistematik ürək isə oksigenli qanı bədənə pompalayır. Bu ayrılmış funksiya effektivliyi artırır.",
+      "distractors": {
+        "0": "Ürək sayı qan istehsalını artırmır.",
+        "2": "Ahtapotlar aktiv yırtıcılar olduğu üçün qan dövranları yavaş deyil.",
+        "3": "Bu quruluş adaptiv üstünlük daşıyır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Heyvanlarda qan dövranı",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0301-03B03-03-03-060"
+  }
+]

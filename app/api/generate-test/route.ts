@@ -635,7 +635,8 @@ function loadFromOfflineTests(
     }
 
     if (specificTopicQuestions.length === 0) {
-      specificTopicQuestions = subjectQuestions
+      console.log(`[offline] No tests found for specific topic "${topic}" in offline_tests.json. Returning [] to trigger topic-specific AI generation.`)
+      return []
     }
 
     const diffMap: Record<string, string[]> = {
@@ -691,12 +692,41 @@ function loadFromOfflineTests(
         }
       }
 
+      let expText = ""
+      if (typeof q.explanation === "string") {
+        expText = q.explanation
+      } else if (typeof q.explanation === "object" && q.explanation !== null) {
+        expText = q.explanation.correct || ""
+        if (q.explanation.distractors && typeof q.explanation.distractors === "object") {
+          const distStr = Object.entries(q.explanation.distractors)
+            .map(([k, v]) => `- ${k} Variantı: ${v}`)
+            .join("\n")
+          if (distStr) expText += "\n\nSəhv variantlar:\n" + distStr
+        }
+      } else if (q.izah) {
+        if (typeof q.izah === "string") {
+          expText = q.izah
+        } else if (typeof q.izah === "object") {
+          expText = q.izah.doğru_cavab_səbəbi || ""
+          if (q.izah.səhv_variantlar) {
+            const dists = Object.entries(q.izah.səhv_variantlar)
+              .map(([k, v]: [string, any]) => `- ${k} Variantı: ${typeof v === "object" ? v.səbəb : v}`)
+              .join("\n")
+            if (dists) expText += "\n\nSəhv variantlar:\n" + dists
+          }
+        }
+      }
+
+      if (!expText) {
+        expText = "Dərslik mətninə əsasən düzgün cavab təyin edilmişdir."
+      }
+
       return {
         id: idx + 1,
         question: q.question,
         options: cleanOptions,
         correctAnswer: correctAnswerIndex,
-        explanation: q.explanation || "Dərslik mətninə əsasən düzgün cavab təyin edilmişdir.",
+        explanation: expText,
         difficulty: q.difficulty || difficulty,
         topic: q.topic || topic,
         bloomLevel: (q.bloomLevel || "anlama").toLowerCase(),

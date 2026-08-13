@@ -1,0 +1,922 @@
+[
+  {
+    "question": "Bitkilərdə qazlar mübadiləsi əsasən hansı orqan vasitəsilə həyata keçirilir?",
+    "options": [
+      "Kök",
+      "Yarpaq",
+      "Gövdə",
+      "Çiçək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bitkilərdə qaz mübadiləsi prosesini izah etmək",
+    "explanation": {
+      "correct": "Yarpaqda yerləşən ağızcıqlar (stomalar) vasitəsilə CO2 daxil olur, O2 isə xaricə verilir.",
+      "distractors": {
+        "0": "Kök su mənimsəyir.",
+        "2": "Gövdə dayaq funksiyasını yerinə yetirir.",
+        "3": "Çiçək çoxalma orqanıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B01-01-01-001"
+  },
+  {
+    "question": "Ağızcıqlar (stomalar) yarpağın hansı hissəsində daha çox yerləşir?",
+    "options": [
+      "Üst epidermisdə",
+      "Alt epidermisdə",
+      "Damar sistemində",
+      "Kütikuldə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağızcıqların yerləşmə məkanını bilmək",
+    "explanation": {
+      "correct": "Stomalar yarpağın alt epidermisində daha sıx yerləşir. Bu yerləşmə su buxarlanmasını azaldır.",
+      "distractors": {
+        "0": "Üst epidermisdə stomalar az olur.",
+        "2": "Damar sistemi maddə daşıyır.",
+        "3": "Kutikul mum qatıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B01-01-01-002"
+  },
+  {
+    "question": "Bitkilərdə aerob tənəffüs zamanı hansı qaz udulur?",
+    "options": [
+      "O2",
+      "CO2",
+      "N2",
+      "H2"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Aerob tənəffüzdə istifadə olunan qazı bilmək",
+    "explanation": {
+      "correct": "Aerob tənəffüzdə bitkilər oksigen (O2) udur, karbon qazı (CO2) isə xaric edir.",
+      "distractors": {
+        "1": "CO2 tənəffüsdə xaric edilir.",
+        "2": "N2 bu prosesdə rol oynamır.",
+        "3": "H2 bu prosesdə rol oynamır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B01-01-01-003"
+  },
+  {
+    "question": "Bitkinin gecə ərzində hansı qaz mübadiləsi prosesi baş verir?",
+    "options": [
+      "Yalnız fotosintez",
+      "Yalnız tənəffüs",
+      "Həm fotosintez, həm tənəffüs",
+      "Heç bir proses"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Gecə vaxtı bitkidə baş verən qaz mübadiləsini bilmək",
+    "explanation": {
+      "correct": "Gecə işıq olmadığı üçün fotosintez dayanır. Ancaq tənəffüs gecə-gündüz davam edir.",
+      "distractors": {
+        "0": "Fotosintez işıq tələb edir, gecə baş vermir.",
+        "2": "Gecə fotosintez dayanır.",
+        "3": "Tənəffüs gecə də davam edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B01-01-01-004"
+  },
+  {
+    "question": "Ağızcıqların açılıb-bağlanmasını hansı hüceyrələr tənzimləyir?",
+    "options": [
+      "Epidermis hüceyrələri",
+      "Keşikçi hüceyrələri",
+      "Parenxim hüceyrələri",
+      "Damar hüceyrələri"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Stomalar ətrafındakı keşikçi hüceyrələrin funksiyasını bilmək",
+    "explanation": {
+      "correct": "Hər ağızcığın ətrafında iki keşikçi hüceyrəsi var. Bu hüceyrələr su alıb şişdikdə ağızcıq açılır.",
+      "distractors": {
+        "0": "Epidermis hüceyrələri qoruyucu funksiya daşıyır.",
+        "2": "Parenxim hüceyrələri fotosinteztə iştirak edir.",
+        "3": "Damar hüceyrələri maddə daşıyır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B01-01-01-005"
+  },
+  {
+    "question": "Gündüz günəşli havada bitki xalis olaraq hansı qaz buraxır?",
+    "options": [
+      "CO2",
+      "O2",
+      "N2",
+      "H2O buxarı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Fotosintez və tənəffüzün qaz balansını izah etmək",
+    "explanation": {
+      "correct": "Gündüz fotosintezin sürəti tənəffüz sürətindən çox olduğu üçün bitki xalis olaraq O2 buraxır.",
+      "distractors": {
+        "0": "Gündüz fotosintez güclü olduğu üçün CO2 udulur, buraxılmır.",
+        "2": "N2 bu prosesdə iştirak etmir.",
+        "3": "Su buxarı transpirasyonla bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "Fotosintez: CO2+H2O → Qlikoza+O2",
+      "Gündüz fotosintez > tənəffüs → xalis O2 buraxılır"
+    ],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B02-02-02-006"
+  },
+  {
+    "question": "Stomalar günün hansı vaxtında ümumiyyətlə qapalı olur ki, su itkisi minimuma ensin?",
+    "options": [
+      "Sübh vaxtı",
+      "Günün ən isti saatlarında",
+      "Gecə yarısı",
+      "Yağışlı havada"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Stomalar vasitəsilə su buxarlanmasını tənzimləməni izah etmək",
+    "explanation": {
+      "correct": "İsti və quru havada bitkilər su itkisini azaltmaq üçün stomalarını bağlayır.",
+      "distractors": {
+        "0": "Sübh vaxtı nəm çox olduğu üçün stomalar açıq olur.",
+        "2": "Gecə stomalar bağlıdır amma bu işığın olmamasındandır.",
+        "3": "Yağışlı havada stomalar açıq olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B02-02-02-007"
+  },
+  {
+    "question": "Bitkinin yarpaq səthinə mum qatı (kutikul) niyə örtür?",
+    "options": [
+      "Fotosintezi artırmaq üçün",
+      "Su itkisini azaltmaq üçün",
+      "Oksigen udulmasını artırmaq üçün",
+      "Klorofil sintezini sürətləndirmək üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kutikulun funksiyasını anlayış səviyyəsindən izah etmək",
+    "explanation": {
+      "correct": "Kutikul yarpağın xarici epidermisini örtən su keçirməyən mum qatıdır. O, transpirasiya yolu ilə su itkisini minimuma endirir.",
+      "distractors": {
+        "0": "Kutikul işığı əks etdirir, fotosintezi artırmır.",
+        "2": "Oksigen mübadiləsi stomalar vasitəsilə baş verir.",
+        "3": "Klorofil sintezi xloroplastlarda gedən biokimyəvi prosesdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B02-02-02-008"
+  },
+  {
+    "question": "Keşikçi hüceyrələrinin turqoru artdıqda ağızcıq nə edir?",
+    "options": [
+      "Bağlanır",
+      "Açılır",
+      "Dəyişmir",
+      "Parçalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Turqorun stomaya təsirini anlayış səviyyəsindən izah etmək",
+    "explanation": {
+      "correct": "Keşikçi hüceyrələri su alıb şişdikdə hüceyrə divarlarının nazik tərəfi uzanır, bu da ağızcığın açılmasına səbəb olur.",
+      "distractors": {
+        "0": "Turqor artdıqda stomalar açılır — bağlanmır.",
+        "2": "Turqor dəyişimi stomalar üzərindən birbaşa təsir göstərir.",
+        "3": "Turqor artması hüceyrəni parçalamır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B02-02-02-009"
+  },
+  {
+    "question": "Kükürd dioksid (SO2) stomalar vasitəsilə bitkiyə daxil olaraq zərər verir. Bu fakt hansı prosesi sübut edir?",
+    "options": [
+      "Stomalar yalnız O2 buraxır",
+      "Stomalar hər iki istiqamətdə qaz mübadiləsini həyata keçirir",
+      "SO2 klorofil sintezini artırır",
+      "Bitkilər SO2-ni istifadə edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Stomalar vasitəsilə qaz mübadiləsinin iki istiqamətdə olduğunu izah etmək",
+    "explanation": {
+      "correct": "Stomalar həm CO2 udmaq, həm O2 buraxmaq, həm də digər qazların daxil olmasını mümkün edir.",
+      "distractors": {
+        "0": "Stomalar yalnız O2 deyil, CO2 və digər qazları da keçirir.",
+        "2": "SO2 zəhərli qaz olduğu üçün klorofili parçalayır.",
+        "3": "SO2 bitkinin qida maddəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B02-02-02-010"
+  },
+  {
+    "question": "Gecə saatlarında yarpaqda CO2 konsentrasiyası artır. Bu prosesin iki əsas səbəbini izah edən cavab hansıdır?",
+    "options": [
+      "Fotosintez CO2 istehsal edir, tənəffüs isə O2 istehsal edir",
+      "Tənəffüs CO2 buraxır, fotosintez isə gecə dayanır",
+      "Stomalar gecə bağlı olduğu üçün CO2 xaricə çıxa bilmir",
+      "Bitki gecə CO2 udur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Gecə qaz balansını mürəkkəb səviyyədə izah etmək",
+    "explanation": {
+      "correct": "Gecə fotosintez işığın olmaması səbəbindən tamamilə dayanır. Tənəffüs isə CO2 buraxmağa davam edir. Bu iki amil CO2 konsentrasiyasının artmasına gətirib çıxarır.",
+      "distractors": {
+        "0": "Fotosintez CO2 udur, istehsal etmir.",
+        "2": "Stomalar bağlılığı CO2-nin artmasına qismən kömək edər, amma əsas səbəb deyil.",
+        "3": "Bitkilər CO2-ni ehtiyat saxlamaq üçün udmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Gecə: işıq yoxdur → fotosintez dayanır",
+      "Tənəffüs davam edir → CO2 istehsalı gedir",
+      "CO2 konsentrasiya artır"
+    ],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B03-03-03-011"
+  },
+  {
+    "question": "Bitki süni olaraq CO2-dən məhrum edilmiş mühitdə saxlanılırsa, fotosintez nə üçün dayanır, tənəffüs isə niyə davam edir?",
+    "options": [
+      "Fotosintez O2 tələb edir, tənəffüs CO2 tələb edir",
+      "Fotosintez CO2-ni xammal kimi istifadə edir, tənəffüs isə qlikozadan enerji alır",
+      "Hər ikisi CO2 olmadan işləyə bilər",
+      "CO2 tənəffüzü dayandırır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Fotosintez və tənəffüzün substrat tələblərini müqayisəli izah etmək",
+    "explanation": {
+      "correct": "Fotosintezdə CO2 karbon mənbəyi kimi istifadə olunur. Tənəffüs isə hazır qlikozadan enerji alır, CO2 yox O2 tələb edir.",
+      "distractors": {
+        "0": "Fotosintez O2 deyil CO2 tələb edir.",
+        "2": "Fotosintez CO2 olmadan işləyə bilməz.",
+        "3": "CO2 tənəffüzü dayandırmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Fotosintez: CO2 → karbon skeleti → qlikoza",
+      "Tənəffüs: qlikoza + O2 → enerji"
+    ],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B03-03-03-012"
+  },
+  {
+    "question": "İki bitki: birincisi yüksək CO2 konsentrasiyasında, ikincisi normal havada saxlanılır. Hansı bitki daha sürətli böyüyər?",
+    "options": [
+      "İkincisi, normal hava oksigen verir",
+      "Birincisi, fotosintez üçün daha çox CO2 var",
+      "Hər ikisi eyni sürətlə böyüyür",
+      "İkincisi, CO2 bitkiyə zərərlidir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "CO2 konsentrasiyasının fotosintezə və böyüməyə təsirini tətbiq etmək",
+    "explanation": {
+      "correct": "CO2 konsentrasiyası artdıqda fotosintez sürəti artır, daha çox qlikoza istehsal olunur, böyümə güclənir.",
+      "distractors": {
+        "0": "Normal havada CO2 konsentrasiyası daha azdır.",
+        "2": "CO2 fərqi fotosintez sürətini fərqli edir.",
+        "3": "CO2 normal konsentrasiyada bitki üçün zərərli deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "CO2 artdı → fotosintez sürəti artdı → qlikoza çox → böyümə sürəti artar"
+    ],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B03-03-03-013"
+  },
+  {
+    "question": "Quraqlıq şəraitdə stomalar bağlanır. Bu halda fotosintez niyə yavaşlayır?",
+    "options": [
+      "Klorofil parçalanır",
+      "CO2 bitkiyə daxil ola bilmir",
+      "O2 bitkidə toplanır",
+      "Işıq reaksiyası dayanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Stomalar, CO2 daxilolması və fotosintez arasındakı əlaqəni tətbiq etmək",
+    "explanation": {
+      "correct": "Stomalar bağlandıqda CO2 yarpağa daxil ola bilmir. CO2 əsas xammal olduğu üçün fotosintez sürəti kəskin azalır.",
+      "distractors": {
+        "0": "Quraqlıq şəraitdə klorofil parçalanmır.",
+        "2": "O2 toplanması fotosintezi yavaşladır amma ikinci dərəcəli amildir.",
+        "3": "Işıq reaksiyası stomalardan asılı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "Quraqlıq → stomalar bağlanır → CO2 azalır → fotosintez yavaşlayır"
+    ],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B03-03-03-014"
+  },
+  {
+    "question": "Bitki axşam saatlarında istixanaya gətirilir. İstixanada CO2 yüksəkdir. Bitkinin gecə apardığı qaz mübadiləsi necə olacaq?",
+    "options": [
+      "Yalnız fotosintez aparılacaq",
+      "Yalnız tənəffüs aparılacaq, CO2 buraxılacaq",
+      "Həm fotosintez, həm tənəffüs aparılacaq",
+      "CO2 yüksəkdirsə tənəffüs dayanacaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Gecə şəraitdə qaz mübadiləsini tətbiq səviyyəsindən izah etmək",
+    "explanation": {
+      "correct": "Gecə işıq olmadığı üçün fotosintez baş vermir. Tənəffüs isə gecə davam edir: bitki O2 udur, CO2 buraxır.",
+      "distractors": {
+        "0": "Gecə fotosintez baş vermir.",
+        "2": "Gecə fotosintez olmur.",
+        "3": "CO2 tənəffüsü dayandırmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmi və qazlar mübadiləsi",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0201-02B03-03-03-015"
+  },
+  {
+    "question": "Fotosintez prosesi bitkinin hansı orqanoidlərindən baş verir?",
+    "options": [
+      "Mitoxondriya",
+      "Kloroplast",
+      "Nüvə",
+      "Ribosomlar"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Fotosintez orqanoidini bilmək",
+    "explanation": {
+      "correct": "Fotosintez xloroplastlarda baş verir. Xloroplastlar xlorofil piqmenti saxlayan orqanoidlərdir.",
+      "distractors": {
+        "0": "Mitoxondriya tənəffüs orqanoiddir.",
+        "2": "Nüvə genetik material saxlayır.",
+        "3": "Ribosomlar zülal sintezini həyata keçirir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B01-01-01-016"
+  },
+  {
+    "question": "Fotosintez üçün əsas enerji mənbəyi hansıdır?",
+    "options": [
+      "İstilik enerjisi",
+      "Kimyəvi enerji",
+      "İşıq enerjisi",
+      "Elektrik enerji"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Fotosintezin enerji mənbəyini bilmək",
+    "explanation": {
+      "correct": "Fotosintez işıq enerjisini udur və onu kimyəvi enerji şəklinə çevirir.",
+      "distractors": {
+        "0": "İstilik fotosintez üçün istifadə edilmir.",
+        "1": "Kimyəvi enerji fotosintezin məhsuludur, mənbəyi deyil.",
+        "3": "Elektrik enerjisi bu prosesdə rol oynamır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B01-01-01-017"
+  },
+  {
+    "question": "Fotosintezin sadələşdirilmiş tənliyi hansıdır?",
+    "options": [
+      "C6H12O6 + O2 → CO2 + H2O + Enerji",
+      "CO2 + H2O + İşıq enerjisi → C6H12O6 + O2",
+      "O2 + CO2 → H2O + C6H12O6",
+      "H2O → O2 + H2 + Enerji"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Fotosintez tənliyini bilmək",
+    "explanation": {
+      "correct": "Fotosintezin tənliyi: CO2 + H2O + işıq enerjisi → C6H12O6 + O2.",
+      "distractors": {
+        "0": "Bu tənlik aerob tənəffüzü göstərir.",
+        "2": "Reaksiya tərəfləri yerdəyişdirilmişdir.",
+        "3": "Bu fotoliz tənliyinin bir hissəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B01-01-01-018"
+  },
+  {
+    "question": "Fotosintezdə su (H2O) hansı rol oynayır?",
+    "options": [
+      "Son məhsul kimi yaranır",
+      "Hidrogen mənbəyi kimi parçalanır",
+      "Klorofili sintez edir",
+      "CO2-ni daşıyır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Suyun fotosintezdəki rolunu bilmək",
+    "explanation": {
+      "correct": "Fotosintezdə su işığın enerjisi ilə hidrogen (H) və oksigenə (O2) parçalanır.",
+      "distractors": {
+        "0": "Fotosintezdə su giriş maddəsidir, son məhsul deyil.",
+        "2": "Klorofili xloroplastlar sintez edir.",
+        "3": "CO2 stomalar vasitəsilə daxil olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B01-01-01-019"
+  },
+  {
+    "question": "Klorofil hansı işıq dalğalarını əsasən udur?",
+    "options": [
+      "Yaşıl dalğaları",
+      "Qırmızı və mavi dalğaları",
+      "Sarı dalğaları",
+      "Bütün dalğaları bərabər udur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Klorofilin işıq udma xüsusiyyətini bilmək",
+    "explanation": {
+      "correct": "Klorofil əsasən qırmızı (650-700 nm) və mavi (430-450 nm) dalğalarını udur.",
+      "distractors": {
+        "0": "Klorofil yaşıl rəngi udmur, əks edir.",
+        "2": "Sarı dalğalar az udulur.",
+        "3": "Klorofil bütün dalğaları bərabər udmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B01-01-01-020"
+  },
+  {
+    "question": "Fotosintezdə oksigenin mənbəyi nədir?",
+    "options": [
+      "CO2-nin parçalanması",
+      "H2O-nun fotolizi",
+      "Klorofilin oksidləşməsi",
+      "ATP-nin parçalanması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Fotosintezdə oksigenin haradan gəldiyini izah etmək",
+    "explanation": {
+      "correct": "Fotosintezdə ayrılan O2 suyun (H2O) fotolizi nəticəsindən əmələ gəlir.",
+      "distractors": {
+        "0": "CO2 parçalanmır, karbon kimi qlikozaya daxil olur.",
+        "2": "Klorofil oksidləşmir.",
+        "3": "ATP parçalandıqda O2 deyil ADP yaranır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "H2O + işıq → H+ + O2 (fotoliz)",
+      "O2 bitkidən xaricə verilir"
+    ],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B02-02-02-021"
+  },
+  {
+    "question": "İşıq mərhələsinin əsas məhsulları hansılardır?",
+    "options": [
+      "Qlikoza və CO2",
+      "ATP, NADPH və O2",
+      "Qlikoza, O2 və su",
+      "CO2 və su"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İşıq mərhələsinin məhsullarını izah etmək",
+    "explanation": {
+      "correct": "İşıq mərhələsindən ATP, NADPH əmələ gəlir, O2 isə yan məhsul kimi xaric edilir.",
+      "distractors": {
+        "0": "Qlikoza qaranlıq mərhələnin məhsuludur.",
+        "2": "Qlikoza Calvin dövrəsindən çıxır.",
+        "3": "CO2 udulan xammal, məhsul deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B02-02-02-022"
+  },
+  {
+    "question": "İşıq intensivliyi artdıqca fotosintez sürəti müəyyən bir həddə qədər artır, sonra sabitləşir. Buna nə deyilir?",
+    "options": [
+      "Fotoinhibisiya",
+      "İşıq doyum nöqtəsi",
+      "Temperatur kompensasiyası",
+      "Klorofil doyumu"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İşıq intensivliyi ilə fotosintez arasındakı əlaqəni izah etmək",
+    "explanation": {
+      "correct": "İşıq intensivliyi müəyyən həddə çatdıqda fotosintez sürəti artmır, çünki xloroplastların bütün piqmentləri maksimum işlə məşğuldur.",
+      "distractors": {
+        "0": "Fotoinhibisiya həddindən artıq işıqda klorofilin zədələnməsidir.",
+        "2": "Temperatur kompensasiyası temperaturla bağlıdır.",
+        "3": "Klorofil doyumu elmi termin deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B02-02-02-023"
+  },
+  {
+    "question": "Fotosintez prosesinin qaranlıq mərhələsi üçün hansı maddə əsas karbon mənbəyidir?",
+    "options": [
+      "H2O",
+      "O2",
+      "CO2",
+      "ATP"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Calvin dövrəsinin karbon mənbəyini izah etmək",
+    "explanation": {
+      "correct": "Calvin dövrəsindən CO2 əsas karbon mənbəyidir. CO2 RuBisCO fermenti ilə fiksasiya edilərək üzvi birləşmələrə çevrilir.",
+      "distractors": {
+        "0": "Su işıq mərhələsindəki fotolizin substratıdır.",
+        "1": "O2 fotosintezin məhsuludur.",
+        "3": "ATP enerji daşıyıcısıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B02-02-02-024"
+  },
+  {
+    "question": "Yaşıl bitki heyvanlarla müqayisədə qidalanma növünə görə nə ilə fərqlənir?",
+    "options": [
+      "Heterotrofla qidalanır",
+      "Autotrofla qidalanır",
+      "Parazit qidalanır",
+      "Saprotrofla qidalanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Fotosintez ilə autotrofluq arasındakı əlaqəni izah etmək",
+    "explanation": {
+      "correct": "Yaşıl bitkilər fotosintez sayəsindən qeyri-üzvi maddələrdən öz üzvi qidasını hazırlayır — bunlar autotroflardır.",
+      "distractors": {
+        "0": "Heterotroflar hazır üzvi maddə qəbul edir.",
+        "2": "Parazitlər başqa canlıların hesabına yaşayır.",
+        "3": "Saprotroflar ölü üzvi maddəni parçalayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B02-02-02-025"
+  },
+  {
+    "question": "18O izotoplu su ilə aparılan eksperiment fotosintezdə ayrılan O2-nin suyun fotolizindən gəldiyini sübut edir. Bunu hansı mərhələ izah edir?",
+    "options": [
+      "CO2 fiksasiyası",
+      "Suyun fotolizi",
+      "ATP sintezi",
+      "Qlikoza parçalanması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "İzotop eksperimentinin nəticəsini şərh etmək",
+    "explanation": {
+      "correct": "18O işarəli su istifadə edildikdə, ayrılan O2-dən 18O aşkar edilir — bu O2-nin suyun fotolizindən gəldiyini sübut edir.",
+      "distractors": {
+        "0": "CO2 fiksasiyası karbon dövrəsi ilə bağlıdır.",
+        "2": "ATP sintezi enerji saxlama prosesidir.",
+        "3": "Qlikoza parçalanması tənəffüzdədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "18O işarəli H2O → O2-dən 18O tapıldı",
+      "Deməli O2 H2O-dan gəlir"
+    ],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B03-03-03-026"
+  },
+  {
+    "question": "Bitki CO2-siz (amma işıqlı) mühitdə saxlanılır. Calvin dövrəsinin aralıq məhsulları toplanmağa başlayır. Bu niyə baş verir?",
+    "options": [
+      "CO2 olmadığı üçün işıq mərhələsi dayanır",
+      "CO2 fiksasiyası mümkün olmadığı üçün dövrə irəliləyə bilmir",
+      "Klorofil parçalanır",
+      "ATP istehsalı artır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Calvin dövrəsinin CO2-ə asılılığını tətbiq etmək",
+    "explanation": {
+      "correct": "Calvin dövrəsindən CO2 olmadıqda fiksasiya baş vermir, dövrə irəliləyə bilmir, amma işıq mərhələsi ATP/NADPH istehsal etməyə davam edir.",
+      "distractors": {
+        "0": "İşıq mərhələsi CO2-dən deyil, işıqdan asılıdır.",
+        "2": "Qısa müddətdə klorofil parçalanmır.",
+        "3": "CO2 azaldıqda ATP sərfi azalır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B03-03-03-027"
+  },
+  {
+    "question": "Fotosintez sürəti həm işıqdan, həm CO2-dən, həm temperaturdan asılıdır. Hansı faktor 'məhdudlaşdırıcı amil' adlanır?",
+    "options": [
+      "Daima CO2 məhdudlaşdırıcı amildir",
+      "O an ən az miqdarda olan resursu təmin edən amil",
+      "Həmişə işıq məhdudlaşdırıcı amildir",
+      "Temperatur heç vaxt məhdudlaşdırıcı amil ola bilməz"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Məhdudlaşdırıcı amil konsepsiyasını şərh etmək",
+    "explanation": {
+      "correct": "Məhdudlaşdırıcı amil o anda ən az olan resursdur. Bu konsepsiya F. Blackman tərəfindən inkişaf etdirilmişdir.",
+      "distractors": {
+        "0": "Hər zaman CO2 məhdudlaşdırıcı deyil.",
+        "2": "İşıq bəzən, amma hər zaman məhdudlaşdırıcı deyil.",
+        "3": "Temperatur da məhdudlaşdırıcı amil ola bilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B03-03-03-028"
+  },
+  {
+    "question": "Yüksəkdağlıq bitkilərinin yarpaqlarında xloroplastlar daha çox xlorofil sintez edir. Bu adaptasiyanın əsas səbəbi nədir?",
+    "options": [
+      "Dağlarda CO2 daha azdır",
+      "Dağlarda hava seyrek, CO2 az — bitki daha çox xlorofil sintez edərək işıqdan səmərəli istifadə edir",
+      "Dağlarda su çox olduğu üçün fotosintez artır",
+      "Dağlarda temperatur yüksəkdir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Ekoloji adaptasiya ilə fotosintez mexanizmini əlaqələndirmək",
+    "explanation": {
+      "correct": "Yüksəklikdə hava seyrek olduğu üçün CO2 konsentrasiyası bir qədər azdır. Bitkilər daha çox xlorofil sintez edərək işıqdan daha səmərəli istifadə edir.",
+      "distractors": {
+        "0": "CO2 az olması bir amildir, amma əsas mexanizm xlorofil artımıdır.",
+        "2": "Dağlarda su miqdarı əraziyə görə dəyişir.",
+        "3": "Dağlarda temperatur ümumiyyətlə aşağıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B03-03-03-029"
+  },
+  {
+    "question": "CAM bitkiləri (kaktus kimi) gecə CO2 toplayıb malat şəklindən saxlayır, gündüz fotosintezdə istifadə edir. Bu strategiyanın əsas üstünlüyü nədir?",
+    "options": [
+      "Gecə fotosintezi sürətləndirir",
+      "Su itkisini azaldır: stomalar gecə açıq, gündüz bağlıdır",
+      "ATP istehsalını artırır",
+      "CO2-ni daimi olaraq artırır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "CAM fotosintez strategiyasının adaptiv üstünlüyünü şərh etmək",
+    "explanation": {
+      "correct": "CAM bitkiləri stomalarını gecə açıb CO2 toplayır, gündüz isə bağlayır. Bu, isti və quru iqlimlərdə su itkisini minimuma endirir.",
+      "distractors": {
+        "0": "Gecə işıq olmadığı üçün fotosintez baş vermir.",
+        "2": "ATP istehsalı birbaşa CAM üstünlüyü deyil.",
+        "3": "CO2 müvəqqəti saxlanılır, daimi artırılmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Fotosintez",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0202-02B03-03-03-030"
+  }
+]

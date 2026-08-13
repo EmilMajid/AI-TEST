@@ -1,0 +1,454 @@
+[
+  {
+    "question": "Bitkidə su və mineral maddələr hansı toxuma vasitəsilə daşınır?",
+    "options": [
+      "Floyem",
+      "Ksilema",
+      "Parenxim",
+      "Meristem"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ksilema toxumasının funksiyasını bilmək",
+    "explanation": {
+      "correct": "Ksilema bitkidə suyun və ona həll olmuş mineral maddələrin köklərden yuxarıya — gövdə, yarpaq, çiçəklərə — daşınmasını həyata keçirir. Bu daşıma ağızcıqlardan buxarlanmanın yaratdığı sorma qüvvəsi sayəsindən baş verir.",
+      "distractors": {
+        "0": "Floyem üzvi maddələri (şəkər) daşıyır.",
+        "2": "Parenxim qida maddəsi saxlayan doldurucu toxumadır.",
+        "3": "Meristem bölünən, böyüyən toxumadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B01-01-01-031"
+  },
+  {
+    "question": "Bitkilərdə fotosintez nəticəsindəki qlükoza hansı toxuma vasitəsilə daşınır?",
+    "options": [
+      "Ksilema",
+      "Floyem",
+      "Damar cəngəli",
+      "Epidermis"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Floyem toxumasının funksiyasını bilmək",
+    "explanation": {
+      "correct": "Floyem üzvi maddələri (qlükoza və sucrose kimi şəkərlər) yarpaqlardan gövdəyə, köklərə və bütün həyat fəaliyyəti göstərən üzvlərə daşıyır. Bu proses 'translokasiya' adlanır.",
+      "distractors": {
+        "0": "Ksilema su daşıyır, üzvi maddə deyil.",
+        "2": "Damar cəngəli həm ksilema, həm floyem ehtiva edir.",
+        "3": "Epidermis qoruyucu örtük toxumasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B01-01-01-032"
+  },
+  {
+    "question": "Bitkidə suyun kökdən yarpağa doğru yüksəlməsini əsasən hansı proses təmin edir?",
+    "options": [
+      "Aktiv daşınma",
+      "Transpirasiya sorma qüvvəsi",
+      "Köklər basıncı",
+      "Osmosun azalması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bitkidə suyun yüksəlmə mexanizmini bilmək",
+    "explanation": {
+      "correct": "Yarpaqlardan su buxarlanması (transpirasiya) ksilema borusunda mənfi təzyiq (sorma qüvvəsi) yaradır. Bu güc suyu kökdən yarpağa doğru dartır. Böyük ağaclarda suyun yüzlərlə metr yüksəlməsi əsasən bu mexanizmlə izah olunur.",
+      "distractors": {
+        "0": "Ksilema daşınması əsasən passivdir, enerji sərf etmir.",
+        "2": "Köklər basıncı da var, amma əsas mexanizm transpirasiya soruculuğudur.",
+        "3": "Osmosun azalması suyu ksilema borusundan çıxarardı, yüksəltməzdi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B01-01-01-033"
+  },
+  {
+    "question": "Ksilema borularından fərqli olaraq, floyem hüceyrələri canlı qalır. Bu niyə vacibdir?",
+    "options": [
+      "Su daşımaq üçün enerji lazımdır",
+      "Üzvi maddələri aktiv daşımaq üçün enerji lazımdır",
+      "Floyem hüceyrəyi bölünməsi üçün canlı olmalıdır",
+      "Canlı hüceyrə su keçirməyə kömək edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Floyem hüceyrəsinin canlılığının funksional əhəmiyyətini bilmək",
+    "explanation": {
+      "correct": "Floyemdə üzvi maddələrin daşınması enerji tələb edən aktiv prosesdir. Buna görə floyem hüceyrələri (süzgəc borusu hüceyrələri) canlı qalır, mitoxondriyalarından istifadə edərək daşıma üçün lazımi ATF istehsal edir.",
+      "distractors": {
+        "0": "Ksilema ölü boş borulardan ibarətdir, su passiv keçir.",
+        "2": "Floem daşıma, bölünmə prosesi ilə bağlı deyil.",
+        "3": "Canlı hüceyrə su keçirmə qabiliyyəti floemin əsas funksiyası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B01-01-01-034"
+  },
+  {
+    "question": "Mineral maddələr bitkiyə ilk öncə hansı üzv vasitəsilə mənimsənilir?",
+    "options": [
+      "Yarpaq",
+      "Gövdə",
+      "Kök tükcükləri",
+      "Çiçək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mineral maddələrin mənimsənilmə yerini bilmək",
+    "explanation": {
+      "correct": "Kök tükcükləri torpaq ilə əlaqə sahəsini kəskin artırır. Mineral maddələr (ionlar şəklindəki azot, fosfor, kalium və s.) əsasən kök tükcükləri vasitəsilə aktiv daşınmayla mənimsənilir.",
+      "distractors": {
+        "0": "Yarpaq mineral maddəni torpaqdan almır.",
+        "1": "Gövdənin əsas funksiyası dayaqlıq, daşıma, fotosintez saxlayıcılığıdır.",
+        "3": "Çiçək çoxalma orqanıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B01-01-01-035"
+  },
+  {
+    "question": "Bitkinin gövdəsini zəng şəkilli kəsib floyem toxumasını zədələsək, bitki nə ilə üzləşər?",
+    "options": [
+      "Köklər su almaz",
+      "Köklər üzvi maddə almaz, ölər",
+      "Yarpaqlar su almaz",
+      "Gövdə böyüməz"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Floyem zədəsinin nəticələrini izah etmək",
+    "explanation": {
+      "correct": "Floyem yarpaqlardan köklərə üzvi qida daşıyır. Floyem kəsilsə, köklər lazımi enerji mənbəyindən (qlükozadan) məhrum olar və zaman keçdikcə ölər. Kök öldükdə bitki bütünlüklə məhv olar.",
+      "distractors": {
+        "0": "Su ksilema vasitəsilə gedir, floyem zədəsi suyu dayandırmaz.",
+        "2": "Yarpaqlar su almaqla bağlı ksilema vasitəsilə qidalanır.",
+        "3": "Gövdə böyüməsi meristem toxumalarından asılıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B02-02-02-036"
+  },
+  {
+    "question": "Su ksilema boru sistemini yüksələrkən niyə hava boşluğu əmələ gəlmir?",
+    "options": [
+      "Hüceyrələr onu blok edir",
+      "Suyun koheziya (bir-birinə yapışma) xassəsi sayəsindən",
+      "Aktiv pompalama ilə",
+      "Buxarlanma suyun yüksəlməsini dayandırır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Su sütununun ksilema içindəki bütövlüyünü izah etmək",
+    "explanation": {
+      "correct": "Su molekulları arasında güclü koheziya (hidrogen bağları) mövcuddur. Bu, ksilema içindəki su sütununun davamlı və kəsilməz olmasını təmin edir. Transpirasiya sorucu qüvvəsi yarandıqda, su sütunu bütövlükdə dartılır — su molekulları bir-birini tutaraq yuxarı çəkilir.",
+      "distractors": {
+        "0": "Ksilema ölü borulardan ibarətdir, canlı hüceyrə blokajı etmir.",
+        "2": "Ksilema daşınması passivdir, enerji xərcləmir.",
+        "3": "Buxarlanma suyun yüksəlməsinə kömək edir, mane olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B02-02-02-037"
+  },
+  {
+    "question": "Floem vasitəsilə üzvi maddələr yalnız yuxarıdan aşağıya, yəni yarpaqdan köklərə doğru gedir. Bu fikir doğrudurmu?",
+    "options": [
+      "Bəli, hər zaman yuxarıdan aşağıya",
+      "Xeyr, floyem hər iki istiqamətdə daşıya bilər",
+      "Bəli, yalnız gecə",
+      "Xeyr, floyem yalnız aşağıdan yuxarıya daşıyır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Floyem daşınmasının istiqamətini izah etmək",
+    "explanation": {
+      "correct": "Floyem maddələri 'qaynaqdan' (source — fotosintez edən yarpaq) 'yuva'ya (sink — böyüyən meristem, kök, meyvə, toxum) daşıyır. Bu qaynaq-yuva cütü şərtdən asılı olaraq dəyişə bilər, buna görə floyem həm yuxarı, həm aşağı daşıya bilir.",
+      "distractors": {
+        "0": "Floyem meyvə, toxuma, böyüyən uçlara da daşıyır — bunlar yuxarıda ola bilər.",
+        "2": "İstiqamət vaxtdan yox, qaynaq-yuva münasibətindən asılıdır.",
+        "3": "Floyem ksilema kimi yalnız bir istiqamətdə deyil, hər iki istiqamətdə daşıyır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B02-02-02-038"
+  },
+  {
+    "question": "Köklər basıncı hansı şəraitdə daha çox özünü göstərir?",
+    "options": [
+      "İsti, quru havada",
+      "Soyuq, rütubətli gecə saatlarında",
+      "Günün ən isti saatında",
+      "Güclü küləkdə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Köklər basıncının hansı şəraitdə fəal olduğunu izah etmək",
+    "explanation": {
+      "correct": "Köklər basıncı torpaq suyu ilə kök hüceyrəsinin ozmotik fərqindən yaranır. Transpirasiya az olduqda (soyuq, rütubətli gecə), köklər basıncı daha çox özünü büruzə verir. Guttasiya (damcılama) bu prosesinin görünən nəticəsidir.",
+      "distractors": {
+        "0": "İsti, quru havada transpirasiya güclü olur, köklər basıncının rolu azalır.",
+        "2": "Günün ən isti saatında da transpirasiya güclüdür.",
+        "3": "Küləkdə transpirasiya artır, köklər basıncının rolu azalır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B02-02-02-039"
+  },
+  {
+    "question": "Mineral ionlar ksilema daxilinə keçərkən passiv diffuziya ilə gedə bilməz. Niyə?",
+    "options": [
+      "Ksilema suyun konsentrasiyası yüksəkdir",
+      "İon konsentrasiyası torpaqda hüceyrədən azdır, buna görə aktiv daşınma lazımdır",
+      "Ksilema hüceyrələri ölüdür",
+      "Ionlar ksilema borularında həll olmur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mineral daşınmada aktiv transportun niyə lazım olduğunu izah etmək",
+    "explanation": {
+      "correct": "Torpaqda mineral ion konsentrasiyası kök hüceyrəsindəkindən çox aşağıdır. Buna görə ionları passiv diffuziya ilə (konsentrasiya gradienti boyunca) ksilema içinə aparmaq mümkün deyil; əksinə, enerji (ATP) xərcləyən aktiv daşınma lazımdır.",
+      "distractors": {
+        "0": "Ksilema suyun konsentrasiyası mineralla bağlı gradient yaradan amil deyil.",
+        "2": "Ksilema ölü olsa da, daşınma hüceyrə içinə keçirkən aktiv olur.",
+        "3": "İonlar suda həll olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B02-02-02-040"
+  },
+  {
+    "question": "Bitki yarpağının su itkisi artdıqda ksilema daxilindəki su sütunu gərginliyə məruz qalır. Bu gərginlik həddindən artıq artarsa nə baş verər?",
+    "options": [
+      "Floyem parçalanır",
+      "Ksilema borusu içindəki su sütunu qırılır (embolizm)",
+      "Kök tükcükləri inkişaf edir",
+      "Ksilema su yerinə hava ilə dolar"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Ksilema embolizmini tətbiq səviyyəsində şərh etmək",
+    "explanation": {
+      "correct": "Həddindən artıq transpirasiya zamanı ksilema daxilindəki su sütununa tətbiq edilən mənfi təzyiq su molekullarının bir-birindən ayrılmasına gətirib çıxara bilər. Bu halda buxar qabarcığı (hava kisəciyi) əmələ gəlir — bu proses embolizm adlanır. Embolizm həmin boruyu funksiyasız edir.",
+      "distractors": {
+        "0": "Floem embolizmdən təsirlənmir.",
+        "2": "Kök tükcüklərinin inkişafı uzunmüddətli adaptasiya, ani reaksiya deyil.",
+        "3": "Su sütunu qırılanda buxar boşluğu əmələ gəlir, hava deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "Transpirasiya artar → ksilema gərginliyi artır → su sütunu qırılır → embolizm"
+    ],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B03-03-03-041"
+  },
+  {
+    "question": "Radioaktiv ¹⁴C işarəli CO₂ ilə bir yarpaq fotosintetiz etsə, bu ¹⁴C işarəli qlükoza bitkinin hansı hissələrinə nə vasitəsilə çatacaq?",
+    "options": [
+      "Ksilema vasitəsilə bütün hissələrə",
+      "Floyem vasitəsilə qaynaq-yuva mexanizmi ilə",
+      "Diffuziya ilə yaxın hüceyrələrə",
+      "Transpirasiya axınıyla köklərə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "İzotop tədqiqatların floyem daşınmasını sübut etməsini şərh etmək",
+    "explanation": {
+      "correct": "¹⁴C işarəli fotosintet məhsul (qlükoza/sucrose) floyem vasitəsilə 'qaynaqdan' (fotosintez edən yarpaqdan) 'yuvalara' (böyüyən uclara, meyvələrə, köklərə) daşınır. Floyem ¹⁴C-nin hərəkət yolunu izləmək üçün ən aydın sübut üsuludur.",
+      "distractors": {
+        "0": "Ksilema su daşıyır, üzvi maddə deyil.",
+        "2": "Diffuziya uzaq məsafəyə üzvi maddə daşıya bilməz.",
+        "3": "Transpirasiya axını su sütununu yuxarıya çəkir, floyem məhsullarını deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B03-03-03-042"
+  },
+  {
+    "question": "Ağır qış şəraitindən sonra yazda ağaclarda guttasiya (damcılama) hadisəsi baş verir. Bu proses hansı mexanizm əsasında izah olunur?",
+    "options": [
+      "Transpirasiya güclənir",
+      "Köklərdə ozmotik basınc artır, köklər basıncı suyu yuxarıya itələyir",
+      "Ksilema embolizm azalır",
+      "Floyem aktiv qazanır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Guttasiyanın mexanizmini tətbiq səviyyəsinde izah etmək",
+    "explanation": {
+      "correct": "Soyuq gecələrdə transpirasiya minimaldır. Eyni zamanda, torpaqda mineral ion konsentrasiyasının yüksəlməsi kök hüceyrələrindəki ozmotik basıncı artırır. Bu, köklər basıncı yaradır ki, su ksilema içinə itələnir. Su yarpağın uclardakı hidatoda hüceyrələrindən damcı şəklindən çıxır.",
+      "distractors": {
+        "0": "Guttasiya zaman transpirasiya azdır, yüksək deyil.",
+        "2": "Ksilema embolizm guttasiya ilə bağlı deyil.",
+        "3": "Floem guttasiyanın mexanizmi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B03-03-03-043"
+  },
+  {
+    "question": "Kükürd dioksid (SO₂) çirklənməsi niyə xüsusilə floyem toxumasına zərər verir?",
+    "options": [
+      "SO₂ su daşınmasını bloklayır",
+      "SO₂ floem hüceyrələrinin mitoxondriyasını məhv edib ATP istehsalını dayandırır",
+      "SO₂ ksilema borularını tıxayır",
+      "SO₂ torpaqdan mineral daşınmasını bloklayır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "SO₂-nin floyemə spesifik zərərini analiz etmək",
+    "explanation": {
+      "correct": "Floyem canlı hüceyrələrə əsaslanır və üzvi maddə daşımaq üçün enerji (ATP) tələb edir. SO₂ hüceyrə daxilinə daxil olaraq mitoxondriyanı zədələyir, ATP istehsalını azaldır. Bu da floyemin aktiv daşınma qabiliyyətini pozur.",
+      "distractors": {
+        "0": "Su daşınması ölü ksilema borularından keçir, SO₂ bunu birbaşa etkiləmir.",
+        "2": "Ksilema borularını tıxamaq ayrı mexanizmdir.",
+        "3": "Torpaqdan daşınma ksilema vasitəsilə olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B03-03-03-044"
+  },
+  {
+    "question": "Bitki suya qərq edildikdə kök boğulmasına məruz qalır. Bu halda ksilema vasitəsilə mineral daşınması niyə pozulur?",
+    "options": [
+      "Ksilema boruları su ilə dolur",
+      "Kök hüceyrələri oksigensiz qalır, aktiv daşınma üçün ATP istehsal edə bilmir",
+      "Floyem hüceyrələri işini dayandırır",
+      "Torpaqda minerallar əriyib yox olur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "çətin",
+    "measured_skill": "Anaerob şəraitdə mineral daşınmasının pozulmasını şərh etmək",
+    "explanation": {
+      "correct": "Mineral ionların ksilema içinə alınması aktiv daşınma tələb edir (ATP lazımdır). Kök boğulmasında kök hüceyrələri anaerobik şəraitə keçir, aerob tənəffüs azalır, ATP istehsalı azalır. Nəticədə kök mineral ionlarını aktiv daşıya bilmir.",
+      "distractors": {
+        "0": "Ksilema yəni borudan su keçir, suyun mövcudluğu mineral daşınmanı dayandırmır.",
+        "2": "Floyem mineral daşımır, üzvi maddə daşıyır.",
+        "3": "Torpaqda minerallar qalır, amma kök onları ala bilmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Bitki orqanizmində maddələrin daşınması",
+    "cat": "Biologiya 8",
+    "passport_id": "08-009-0203-02B03-03-03-045"
+  }
+]
