@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Müasir Dövri cədvəldə elementlər hansı əsas kəmiyyətin artması sırası ilə yerləşdirilmişdir?",
+    "options": [
+      "Neytron sayının N",
+      "Atom nömrəsinin (nüvə yükünün Z)",
+      "Nisbi atom kütləsinin Ar",
+      "Valens elektron sayının"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Müasir Dövri qanuna əsasən elementlər atom nüvələrinin müsbət yükünün (Z) artması sırası ilə düzülmüşdür.",
+      "distractors": {
+        "0": "Neytron Z-dən fərqlidir.",
+        "2": "Kütlə Mendeleyevin ilk cədvəlində idi.",
+        "3": "Valens elektronu qrupu verir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K01-01-01-001"
+  },
+  {
+    "question": "Dövri cədvəldə üfüqi sıralar necə adlanır?",
+    "options": [
+      "Yarımqrup",
+      "Yarımsəviyyə",
+      "Dövr",
+      "Qrup"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri cədvəldəki üfüqi sıralara dövr deyilir. Cədvəldə cəmi 7 dövr var.",
+      "distractors": {
+        "0": "Yarımqrup qrupun tərkibidir.",
+        "1": "Yarımsəviyyə s, p, d, f-dir.",
+        "3": "Qrup şaquli sütundur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K01-01-01-002"
+  },
+  {
+    "question": "IUPAC beynəlxalq sisteminə görə Dövri cədvəldə neçə şaquli sütun (qrup) var?",
+    "options": [
+      "7 qrup",
+      "10 qrup",
+      "18 qrup",
+      "8 qrup"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Beynəlxalq IUPAC sistemində Dövri cədvəl 1-dən 18-ə qədər nömrələnmiş 18 şaquli sütundan ibarətdir.",
+      "distractors": {
+        "0": "7 dövr var.",
+        "1": "10 d-elementləri sırasıdır.",
+        "3": "8 qrup qısa dövr cədvəlində A/B yarımqrupları idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K01-01-01-003"
+  },
+  {
+    "question": "Elementin yerləşdiyi dövrün nömrəsi atomda nəyi göstərir?",
+    "options": [
+      "Xarici təbəqədəki elektron sayını",
+      "Energetik səviyyələrin (təbəqələrin) sayını",
+      "Proton sayını",
+      "Neytron sayını"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elementin Dövri cədvəldəki dövr nömrəsi onun atomundakı elektron təbəqələrinin sayını bildirir.",
+      "distractors": {
+        "0": "Xarici təbəqə e⁻ sayısı əsas qrup nömrəsidir.",
+        "2": "Proton atom nömrəsidir.",
+        "3": "Neytron A - Z-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K01-01-01-004"
+  },
+  {
+    "question": "Əsas yarımqrup elementlərində (A qrupu) qrupun nömrəsi nəyə bərabərdir?",
+    "options": [
+      "Proton sayına",
+      "Dövr sayına",
+      "Xarici təbəqədəki valent elektronlarının sayını",
+      "Atom kütləsinə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əsas yarımqrup (A qrupu) elementləri üçün qrupun nömrəsi atomun xarici təbəqəsindəki elektronların sayına bərabərdir.",
+      "distractors": {
+        "0": "Proton atom nömrəsidir.",
+        "1": "Dövr sayısı təbəqə sayıdır.",
+        "3": "Kütlə Ar-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K01-01-01-005"
+  },
+  {
+    "question": "1s² 2s² 2p⁶ 3s² 3p⁵ elektron konfiqurasiyasına malik X elementinin Dövri cədvəldə mövqeyini tapın.",
+    "options": [
+      "3-cü dövr, VII A qrupu (17-ci qrup - 17Cl)",
+      "3-cü dövr, V A qrupu",
+      "4-cü dövr, VII A qrupu",
+      "2-ci dövr, V A qrupu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Baş kvant n=3 (3-cü dövr), xarici elektronlar 3s² 3p⁵ (cəmi 7 valens e⁻ = VII A qrupu Xlor).",
+      "distractors": {
+        "1": "Xarici e⁻ sayısı 7-dir.",
+        "2": "Dövr 3-dür.",
+        "3": "Dövr 3-dür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K02-02-02-006"
+  },
+  {
+    "question": "VIII A qrupunda (18-ci qrup) yerləşən Helium (He), Neon (Ne), Arqon (Ar) elementləri necə adlanır?",
+    "options": [
+      "Halogenlər",
+      "Xalkogenlər",
+      "Təsirsiz (nəcib) qazlar",
+      "Qələvi metallar"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VIII A qrupunda yerləşən nəcib qazların xarici səviyyəsi tam dolmuşdur (oktet).",
+      "distractors": {
+        "0": "Halogenlər VII A qrupudur.",
+        "1": "Xalkogenlər VI A qrupudur.",
+        "3": "Qələvi metallar I A qrupudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K02-02-02-007"
+  },
+  {
+    "question": "d-elementləri Dövri cədvəldə hansı yarımqrupları təşkil edir?",
+    "options": [
+      "Əlavə yarımqrupları (B qrupları)",
+      "Lantanoidləri",
+      "Təsirsiz qazları",
+      "Əsas yarımqrupları (A qrupları)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: d-yarımsəviyyəsi dolan keçid metalları Dövri cədvəldə Əlavə yarımqrupları (B qruplarını - 3-12-ci qrupları) təşkil edir.",
+      "distractors": {
+        "1": "Lantanoidlər f-elementidir.",
+        "2": "Təsirsiz p-elementidir.",
+        "3": "Əsas yarımqruplar s və p elementləridir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K02-02-02-008"
+  },
+  {
+    "question": "20Ca (Kalsium) atomunun elektron formuluna görə Dövri cədvəldəki yerini təyin edin.",
+    "options": [
+      "3-cü dövr, II A qrupu",
+      "4-cü dövr, IV A qrupu",
+      "4-cü dövr, II B qrupu",
+      "4-cü dövr, II A qrupu (s-elementi)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 20Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Baş kvant n=4 (4-cü dövr), xarici s-də 2 elektron var (II A qrupu s-elementi).",
+      "distractors": {
+        "0": "Dövr 4-dür.",
+        "1": "Valent e⁻ 2-dir.",
+        "2": "s-elementi A qrupudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K02-02-02-009"
+  },
+  {
+    "question": "Dövri cədvəldə 1-ci dövrdə cəmi neçə element yerləşir?",
+    "options": [
+      "2 element (H və He)",
+      "18 element",
+      "8 element",
+      "32 element"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1-ci dövrdə cəmi 2 element (1H və 2He) yerləşir.",
+      "distractors": {
+        "1": "18 element 4 və 5-ci dövrdədir.",
+        "2": "8 element 2 və 3-cü dövrdədir.",
+        "3": "32 element 6-cı dövrdədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K02-02-02-010"
+  },
+  {
+    "question": "X³⁻ ionunda 18 elektron var. Neytral X atomunun Dövri cədvəldəki mövqeyini təhlil edin.",
+    "options": [
+      "2-ci dövr, V A qrupu",
+      "4-cü dövr, I A qrupu",
+      "3-cü dövr, VIII A qrupu",
+      "3-cü dövr, V A qrupu (15P)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: X³⁻ 3 e⁻ alıb 18 e⁻ olubsa, neytral Z = 18 - 3 = 15. 15P: 1s² 2s² 2p⁶ 3s² 3p³ (3-cü dövr, V A qrupu).",
+      "distractors": {
+        "0": "2-ci dövr 7N-dir.",
+        "1": "4-cü dövr 19K-dır.",
+        "2": "18Ar neytraldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K04-03-03-011"
+  },
+  {
+    "question": "Qələvi metallar (I A qrupu) və Halogenlər (VII A qrupu) valent elektronlarını müqayisə edin.",
+    "options": [
+      "Qələvi metallar ns² np⁶ formadadır",
+      "Hər ikisi ns² formadadır",
+      "Qələvi metallar ns¹ (1 e⁻), Halogenlər ns² np⁵ (7 e⁻)",
+      "Halogenlər ns¹-dir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: I A metalları 1 valent elektronuna (ns¹), VII A halogenləri 7 valent elektronuna (ns² np⁵) malikdir.",
+      "distractors": {
+        "0": "ns² np⁶ nəcib qazdır.",
+        "1": "ns² II A qrupudur.",
+        "3": "Halogenlər 7 e⁻-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K04-03-03-012"
+  },
+  {
+    "question": "4-cü dövrdə yerləşən X atomunun xarici elektronları 3d⁵ 4s²-dir. X-in atom nömrəsini və qrupunu təhlil edin.",
+    "options": [
+      "Z = 20 (Kalsium)",
+      "Z = 30 (Sink)",
+      "Z = 27 (Kobalt)",
+      "Z = 25 (25Mn), 4-cü dövr, VII B qrupu"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: [Ar] 3d⁵ 4s² cəmi 18 + 5 + 2 = 25 proton deməkdir. d-elementi olduğu üçün VII B əlavə yarımqrupunda yerləşir (25Mn).",
+      "distractors": {
+        "0": "Z=20 4s²-dir s-elementidir.",
+        "1": "Z=30 3d¹⁰ 4s² edər.",
+        "2": "Z=27 Co (3d⁷ 4s²) edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K04-03-03-013"
+  },
+  {
+    "question": "Elementin d-yarımsəviyyəsinin dolması hansı dövrdən başlanır və niyə?",
+    "options": [
+      "2-ci dövrdən",
+      "1-ci dövrdən",
+      "4-cü dövrdən, çünki Kleçkovski qaydasına görə 4s-in enerjisi 3d-dən kiçikdir",
+      "Yalnız 6-cı dövrdən"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kleçkovski n+l qaydasına görə 4s (4+0=4) 3d-dən (3+2=5) əvvəl dolur, buna görə d-elementləri 4-cü dövrdən (21Sc) başlayır.",
+      "distractors": {
+        "0": "2-ci dövrdə d yoxdur.",
+        "1": "1-ci dövrdə d yoxdur.",
+        "3": "4-cü dövrdən başlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K04-03-03-014"
+  },
+  {
+    "question": "Dövri cədvəldə f-elementlərinin (Lantanoid və Aktinoidlər) ayrıca cədvəlin altında yerləşdirilməsinin səbəbini təhlil edin.",
+    "options": [
+      "Qaz olduqları üçün",
+      "Qrupları olmadığı üçün",
+      "Cədvəlin ölçüsünün həddən artıq uzanmaması və f-orbitallarının daxili təbəqədə (n-2) f dolması üçün",
+      "Onların element olmaması"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 14 lantanoid və 14 aktinoid (f-elementləri) daxili f-yarımsəviyyəsini doldurduğu üçün cədvəlin quruluşunu pozmamaq üçün aşağıda 2 sıra şəklində verilir.",
+      "distractors": {
+        "0": "Metaldırlar.",
+        "1": "III B qrupuna aiddirlər.",
+        "3": "Elementdirlər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.4. Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0104-04K04-03-03-015"
+  },
+  {
+    "question": "Dövrlər üzrə soldan sağa doğru gedildikdə atom radiusu necə dəyişir?",
+    "options": [
+      "Atom radiusu böyüyür",
+      "Atom radiusu kiçilir",
+      "Dəyişməz qalır",
+      "Əvvəl böyüyür sonra kiçilir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövr üzrə soldan sağa təbəqə sayısı eyni qalır, lakin nüvə yükü Z artdığı üçün nüvə elektronları daha bərk cəzb edir və atom radiusu kiçilir.",
+      "distractors": {
+        "0": "Nüvə cəzbi artdığı üçün kiçilir.",
+        "2": "Dəyişir.",
+        "3": "Ardıcıl kiçilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K01-01-01-001"
+  },
+  {
+    "question": "Qruplar üzrə yuxarıdan aşağıya doğru gedildikdə metallıq xassəsi necə dəyişir?",
+    "options": [
+      "Dəyişmir",
+      "Qeyri-metallıq artır",
+      "Metallıq xassəsi (elektron vermə qabiliyyəti) artır",
+      "Metallıq xassəsi azalır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qrup üzrə aşağı gedildikdə təbəqə sayısı artır, atom radiusu böyüyür, atom xarici elektronlarını daha asan verir və metallıq artır.",
+      "distractors": {
+        "0": "Dəyişir.",
+        "1": "Qeyri-metallıq azalır.",
+        "3": "Azalmır, artır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K01-01-01-002"
+  },
+  {
+    "question": "Elektromənfilik (EM) nəyi ifadə edir?",
+    "options": [
+      "Atomun neytron sayını",
+      "Atomun proton vermək qabiliyyətini",
+      "İonlaşma enerjisinin sıfır olmasını",
+      "Atomun kimyəvi rabitə əmələ gətirərkən özünə elektron cəzb etmə qabiliyyətini"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektromənfilik atomun molekulda rabitəçi elektron cütünü özünə taraf çəkmək qabiliyyətinin nisbi ölçüsüdür.",
+      "distractors": {
+        "0": "Neytronla bağlı deyil.",
+        "1": "Proton verilmir.",
+        "2": "İonlaşma enerjisi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K01-01-01-003"
+  },
+  {
+    "question": "Dövri cədvəldə nisbi elektromənfiliyi ən yüksək olan element hansıdır?",
+    "options": [
+      "Oksigen (O)",
+      "Sezium (Cs)",
+      "Flüor (F)",
+      "Xlor (Cl)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri cədvəldə Flüor (F) elementi ən yüksək elektromənfiliyə (~4.0) malik olan ən aktiv qeyri-metaldır.",
+      "distractors": {
+        "0": "Oksigen 2-ci yüksək EM-lidir.",
+        "1": "Sezium ən aşağı EM-li metaldır.",
+        "3": "Xlor 3-cüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K01-01-01-004"
+  },
+  {
+    "question": "İonlaşma enerjisi (İE) nədir?",
+    "options": [
+      "Nüvənin parçalanma energiyası",
+      "Atoma elektron birləşdikdə ayrılan energiya",
+      "Rabitənin qırılma energiyası",
+      "Qaz halındakı neytral atomdan 1 elektron qoparmaq üçün tələb olunan minimum energiya"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İonlaşma enerjisi qaz halındakı neytral atomdan 1 elektronu tam qoparıb kation əmələ gətirmək üçün sərf edilən energiyadır.",
+      "distractors": {
+        "0": "Nüvə energiyası deyil.",
+        "1": "Elektron birləşdikdə ayrılan energiya elektrona hərislikdir.",
+        "2": "Rabitə energiyası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K01-01-01-005"
+  },
+  {
+    "question": "3Li, 11Na, 19K elementlərinin atom radiuslarının artma sırasını müəyyən edin.",
+    "options": [
+      "Li < K < Na",
+      "Na < Li < K",
+      "K < Na < Li",
+      "Li < Na < K"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: I A qrupunda aşağı gedildikdə təbəqə sayısı artdığı üçün atom radiusu böyüyür: Li (2 təbəqə) < Na (3 təbəqə) < K (4 təbəqə).",
+      "distractors": {
+        "0": "K Na-dan böyükdür.",
+        "1": "Na Li-dən böyükdür.",
+        "2": "Tərs sıradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K02-02-02-006"
+  },
+  {
+    "question": "11Na, 12Mg, 13Al elementlərinin qeyri-metallıq xassəsinin dəyişməsini təhlil edin.",
+    "options": [
+      "Na-dan Al-a doğru qeyri-metallıq xassəsi artır",
+      "Na ən aktiv qeyri-metaldır",
+      "Xassələr eyni qalır",
+      "Na-dan Al-a doğru qeyri-metallıq azalır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3-cü dövrdə soldan sağa gedildikdə nüvə yükü artır, metallıq azalır və qeyri-metallıq xassəsi artır (Na < Mg < Al).",
+      "distractors": {
+        "1": "Na metaldır.",
+        "2": "Eyni qalmır.",
+        "3": "Qeyri-metallıq azalmır, artır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K02-02-02-007"
+  },
+  {
+    "question": "Oksigen (8O), Kükürd (16S), Selen (34Se) VI A qrupu elementlərinin H₂O, H₂S, H₂Se birləşmələrinin turşuluq xassəsini müqayisə edin.",
+    "options": [
+      "Dəyişmir",
+      "Turşuluq azalır",
+      "H₂O-dan H₂Se-yə doğru turşuluq xassəsi artır (H₂O < H₂S < H₂Se)",
+      "H₂O ən qüvvətli turşudur"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qrup üzrə aşağı gedildikdə atom radiusu böyüyür, H-X rabitəsi uzanır və H⁺ ionunun ayrılması asanlaşdığı üçün turşuluq güclənir.",
+      "distractors": {
+        "0": "Dəyişir.",
+        "1": "Turşuluq artır.",
+        "3": "H₂O neytral/zəifdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K02-02-02-008"
+  },
+  {
+    "question": "II A qrupu BeO, MgO, CaO, SrO, BaO oksidlərinin əsaslıq xassəsi yuxarıdan aşağı necə dəyişir?",
+    "options": [
+      "Əsaslıq xassəsi artır (BaO ən qüvvətli əsasdır)",
+      "Turşuluq xassəsi artır",
+      "Əsaslıq xassəsi azalır",
+      "Dəyişmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qrup üzrə aşağı gedildikdə metallıq xassəsi artdığı üçün onların oksid və hidroksidlərinin əsaslıq xassəsi güclənir.",
+      "distractors": {
+        "1": "Turşuluq azalır.",
+        "2": "Əsaslıq azalmır artır.",
+        "3": "Dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K02-02-02-009"
+  },
+  {
+    "question": "Atoma 1 elektron birləşdikdə baş verən energiya dəyişməsi necə adlanır?",
+    "options": [
+      "Elektrona hərislik",
+      "Elektromənfilik",
+      "Rabitə energiyası",
+      "İonlaşma enerjisi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Neytral atomun elektron qəbul edərək anion əmələ gətirməsi zamanı baş verən energiya dəyişməsinə elektrona hərislik deyilir.",
+      "distractors": {
+        "1": "Elektromənfilik nisbi qabiliyyətdir.",
+        "2": "Rabitə energiyası molekuldadır.",
+        "3": "İonlaşma enerjisi elektron qoparılmasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K02-02-02-010"
+  },
+  {
+    "question": "11Na⁺, 10Ne, 9F⁻ izoelektron zərrəciklərinin radiuslarını müqayisə edin.",
+    "options": [
+      "r(Na⁺) > r(Ne) > r(F⁻)",
+      "Radiuslar bərabərdir",
+      "r(Ne) ən böyükdür",
+      "r(F⁻) > r(Ne) > r(Na⁺)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İzoelektron zərrəciklərdə (10 e⁻) nüvə yükü böyük olanın (11Na⁺) elektron cəzbi güclü olduğundan radiusu ən kiçikdir: r(F⁻) > r(Ne) > r(Na⁺).",
+      "distractors": {
+        "0": "Na⁺ protonu çox olduğu üçün ən kiçikdir.",
+        "1": "Proton sayı fərqlidir radiuslar bərabər deyil.",
+        "2": "F⁻ ən böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K04-03-03-011"
+  },
+  {
+    "question": "Halogenlərin (F, Cl, Br, I) oksidləşdiricilik (qeyri-metallıq) aktivliyinin azalma sırasını təhlil edin.",
+    "options": [
+      "I₂ > Br₂ > Cl₂ > F₂",
+      "Cl₂ > F₂ > I₂ > Br₂",
+      "F₂ > Cl₂ > Br₂ > I₂",
+      "F₂ = Cl₂ = Br₂ = I₂"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VII A qrupunda aşağı gedildikdə atom radiusu böyüyür, elektron alma qabiliyyəti (oksidləşdiricilik) zəifləyir. Ən qüvvətli oksidləşdirici F₂-dir.",
+      "distractors": {
+        "0": "I₂ ən zəifdir.",
+        "1": "F₂ Cl₂-dən qüvvətlidir.",
+        "3": "Xassələr fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K04-03-03-012"
+  },
+  {
+    "question": "3-cü dövr elementlərinin baş oksidləri Na₂O, SiO₂, Cl₂O₇ xassələrinin dəyişməsini təhlil edin.",
+    "options": [
+      "Hamısı turşu oksididir",
+      "Hamısı əsasi oksiddir",
+      "Cl₂O₇ əsasi oksiddir",
+      "Na₂O (əsasi) -> SiO₂ (amfoter/zəif turşu) -> Cl₂O₇ (qüvvətli turşu)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövr üzrə soldan sağa gedildikdə oksidlərin əsaslıq xassəsi zəifləyir və turşuluq xassəsi artır (Na₂O əsasi, Cl₂O₇ qüvvətli turşu oksididir).",
+      "distractors": {
+        "0": "Cl₂O₇ qeyri-metaldır.",
+        "1": "Na₂O metaldır.",
+        "2": "Cl₂O₇ turşu oksididir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K04-03-03-013"
+  },
+  {
+    "question": "Mendeleyevin dövri cədvəlində Ar (39.9) və K (39.1) kütlə sırasının pozulmasının müasir elmi izahını verin.",
+    "options": [
+      "Kütlələr yanlış ölçülmüşdü",
+      "Neytron sayı nəzərə alınmır",
+      "Müasir cədvəldə əsas parametr kütlə deyil, nüvə yüküdür (Ar: Z=18, K: Z=19)",
+      "Mendeleyev səhv etmişdi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ar-ın atom kütləsi K-dan böyük olsa da, nüvə yükü Z=18 (Ar) K-dan (Z=19) kiçik olduğu üçün Müasir cədvəldə Ar K-dan əvvəl gəlir.",
+      "distractors": {
+        "0": "Kütlələr izotop tərkibinə bağlıdır.",
+        "1": "Neytron kütləyə təsir edir.",
+        "3": "Səhv deyil şüurlu addım idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K04-03-03-014"
+  },
+  {
+    "question": "Elementin ionlaşma enerjisinin kəskin (sıçrayışlı) artması nəyi göstərir?",
+    "options": [
+      "Protonun ayrıldığını",
+      "Kütlənin azaldığını",
+      "Atomun daxili (qapalı) təbəqəsindən elektron qopardığını və valent elektronlarının bitdiyini",
+      "Elektronun bitmədiyini"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Al üçün İE₁, İE₂, İE₃ müqayisəli artır, lakin İE₄ kəskin sıçrayır; bu 3 valent elektronundan sonra təsirsiz qaz təbəqəsinə keçildiyini göstərir.",
+      "distractors": {
+        "0": "Proton ayrılmır.",
+        "1": "Kütlə azalmır.",
+        "3": "Valent elektronları bitir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.5. Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0105-05K04-03-03-015"
+  }
+]

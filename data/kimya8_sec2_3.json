@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Oktet qaydasına görə atomlar kimyəvi rabitə əmələ gətirərkən xarici təbəqələrini neçə elektrona tamamlamağa çalışırlar?",
+    "options": [
+      "2 elektrona (duplet)",
+      "10 elektrona",
+      "6 elektrona",
+      "8 elektrona (oktet)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Oktet qaydasına əsasən atomlar elektron alaraq, verərək və ya müştərək istifadə edərək xarici səviyyələrini 8 elektrona (təsirsiz qaz konfiqurasiyasına) tamamlamağa çalışırlar.",
+      "distractors": {
+        "0": "2 elektron duplet qaydasıdır (H, He, Li).",
+        "1": "10 elektron oktet deyil.",
+        "2": "6 elektron oktet deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K01-01-01-001"
+  },
+  {
+    "question": "Hidrogen (1H) və Helium (2He) kimi kiçik atomların xarici səviyyələrini 2 elektrona tamamlaması qaydası necə adlanır?",
+    "options": [
+      "Duplet qaydası",
+      "Hund qaydası",
+      "Pauli prinsipi",
+      "Oktet qaydası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1-ci energetik səviyyədə maksimal 2 elektron yerləşdiyi üçün 1s² konfiqurasiyasına çatmaq duplet qaydası adlanır.",
+      "distractors": {
+        "1": "Hund orbitalların dolma qaydasıdır.",
+        "2": "Pauli əks spin prinsipidir.",
+        "3": "Oktet 8 elektronluq qaydadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K01-01-01-002"
+  },
+  {
+    "question": "Kimyəvi rabitənin əmələ gəlməsinin əsas mənəvi-fiziki səbəbi nədir?",
+    "options": [
+      "Sistemin minimum energetik vəziyyətə və daha sabit müvazinətə keçməsi",
+      "Kütlənin sıfır olması",
+      "Proton sayının artması",
+      "Atomun parçalanması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Atomlar bir-biri ilə rabitə yaradarkən energiya ayrılır və sistem minimum potensial energiyaya malik daha sabit vəziyyət qazanır.",
+      "distractors": {
+        "1": "Kütlə saxlanır.",
+        "2": "Proton sayı rabitədə dəyişmir.",
+        "3": "Atom parçalanmır rabitə qurur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K01-01-01-003"
+  },
+  {
+    "question": "Oktet qaydasına tam uyğun gələn neytral molekul hansıdır?",
+    "options": [
+      "NO (Azot monooksid)",
+      "SF₆ (Kükürd heksaflorid)",
+      "CCl₄ (Karbon tetraxlorid)",
+      "BF₃ (Bor triflorid)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: CCl₄-də Karbon atomu xarici 4 elektronunu 4 Xlor atomu ilə paylaşaraq 8 elektrona (oktetə) tamamlanır.",
+      "distractors": {
+        "0": "NO tək elektronlu radikaldır (oktet pozulur).",
+        "1": "SF₆-da Kükürdün ətrafında 12 elektron olur (genişlənmiş oktet).",
+        "3": "BF₃-də Borun xarici səviyyəsində 6 elektron olur (oktet çatışmamazlığı)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K01-01-01-004"
+  },
+  {
+    "question": "Lyuis (Lewis) elektron nöqtə formulunda nöqtələr nəyi təmsil edir?",
+    "options": [
+      "İç təbəqə elektronlarını",
+      "Atomun xarici səviyyəsindəki valent elektronlarını",
+      "Protonları",
+      "Neytronları"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Lyuis formulunda element simvolunun ətrafındakı nöqtələr atomun xarici energetik səviyyəsindəki valent elektronlarını bildirir.",
+      "distractors": {
+        "0": "Yalnız xarici təbəqə göstərilir.",
+        "2": "Protonlar nüvədədir.",
+        "3": "Neytronlar nöqtə ilə verilmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K01-01-01-005"
+  },
+  {
+    "question": "17Cl (Xlor) atomunun oktetə çatmaq üçün atdığı adımı təhlil edin.",
+    "options": [
+      "2 elektron alır",
+      "1 elektron qəbul edərək və ya 1 e- müştərək istifadə edərək 3s² 3p⁶ oktetini əmələ gətirir",
+      "Elektron dəyişmir",
+      "7 elektron verir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Xlorun xarici səviyyəsində 3s² 3p⁵ (7 elektron) var. 1 elektron aldıqda 18-ci Ar təsirsiz qaz oktetinə (8 e-) çatır.",
+      "distractors": {
+        "0": "2 e- aldıqda oktet aşılır.",
+        "2": "Rabitə zamanı elektron təbəqəsi tamamlanır.",
+        "3": "7 e- vermək energetik çətindir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K02-02-02-006"
+  },
+  {
+    "question": "12Mg atomu 16S atomu ilə reaksiya verdikdə oktet qaydası necə ödənilir?",
+    "options": [
+      "Kovalent rabitə yaranır",
+      "Mg elektron alır",
+      "S elektron verir",
+      "Mg 2 elektronunu S atomuna verir, Mg²⁺ (2,8) və S²⁻ (2,8,8) oktetləri yaradır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mg (2,8,2) 2 e- verir Mg²⁺ (2,8) okteti olur, S (2,8,6) 2 e- alır S²⁻ (2,8,8) okteti olur.",
+      "distractors": {
+        "0": "İon rabitəsidir.",
+        "1": "Metal elektron verməlidir.",
+        "2": "Qeyri-metal elektron almalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K02-02-02-007"
+  },
+  {
+    "question": "BF₃ (Bor triflorid) molekulunda oktet qaydasının pozulması səbəbini təhlil edin.",
+    "options": [
+      "Bor (5B: 2s² 2p¹) 3 F atomu ilə 3 rabitə quraraq xarici təbəqəsini 6 elektrona çatdırır (oktet çatışmamazlığı)",
+      "Flüor okteə çatmır",
+      "8 elektron tamamlanır",
+      "Bor elektron qəbul etmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: BF₃-də Borun cəmi 3 valent e- var və 3 F-lə cəmi 6 e- təşkil edir (oktet genişlənmir tamlanmır).",
+      "distractors": {
+        "1": "Flüorlar oktetə çatır.",
+        "2": "8 deyil 6 e- olur.",
+        "3": "Rabitə qurur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K02-02-02-008"
+  },
+  {
+    "question": "SF₆ (Kükürd heksaflorid) molekulunda kükürdün \"genişlənmiş oktet\" əmələ gətirməsini təhlil edin.",
+    "options": [
+      "Kükürd 3d orbitallarını istifadə edərək 6 F atomu ilə 12 valens elektronlu genişlənmiş təbəqə yaradır",
+      "Kükürd 8 elektron tutur",
+      "SF₆-da ion rabitəsi var",
+      "Oktet pozulmur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3-cü dövr kükürd atomunda boş 3d orbitalları olduğundan həyəcanlanaraq 6 kovalent rabitə qurur və ətrafında 12 e- (genişlənmiş oktet) saxlayır.",
+      "distractors": {
+        "1": "SF₆-da 12 e- var.",
+        "2": "Kovalent rabitədir.",
+        "3": "Oktet genişlənir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K02-02-02-009"
+  },
+  {
+    "question": "PCL₅ molekulunda mərkəzi P atomunun valent elektronlarının sayını və oktet vəziyyətini təhlil edin.",
+    "options": [
+      "Fosforun xarici təbəqəsində 6 elektron var",
+      "Fosforun xarici təbəqəsində 10 elektron var (oktet genişlənib)",
+      "PCl₅ ion birləşməsidir",
+      "Fosforun xarici təbəqəsində 8 elektron var"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: P 5 Cl atomu ilə 5 tək kovalent rabitə qurur (5 cüt = 10 elektron), bu da 3d orbitalı hesabına genişlənmiş oktetdir.",
+      "distractors": {
+        "0": "6 BF₃-dədir.",
+        "2": "Kovalent birləşmədir.",
+        "3": "8 deyil 10 e- var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K02-02-02-010"
+  },
+  {
+    "question": "NH₃ (Amonyak) molekulunda azotun oktet qaydasına uyğunluğunu təhlil edin.",
+    "options": [
+      "3 N-H rabitəçi cütü (6 e-) və 1 bölünməmiş elektron cütü (2 e-) ilə Azot tam 8-lik oktetə çatır",
+      "Azotun ətrafında 6 elektron var",
+      "Azot elektron itirir",
+      "Oktet pozulur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 7N (2s² 2p³) 3 H-lə 3 rabitə qurur (6 e-) + 1 cüt bölünməmiş (2 e-) = cəmi 8 e- (mükəmməl oktet).",
+      "distractors": {
+        "1": "Bölünməmiş cüt də nəzərə alınmalıdır (cəmi 8 e-).",
+        "2": "Kovalent rabitədə e- itirmir.",
+        "3": "Oktet tam qorunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K04-03-03-011"
+  },
+  {
+    "question": "11Na, 12Mg, 13Al metallarının kation əmələ gətirərkən çatmaq istədikləri təsirsiz qaz oktetini müqayisə edin.",
+    "options": [
+      "Hər biri fərqli təsirsiz qaza çatır",
+      "Hər üçü 10Ne (2,8) oktet konfiqurasiyasına çatır",
+      "Dupletə çatırlar",
+      "18Ar oktetinə çatır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Na (2,8,1 - 1e- = 10Ne), Mg (2,8,2 - 2e- = 10Ne), Al (2,8,3 - 3e- = 10Ne). Hər üçü 2-ci dövrün 10Ne təsirsiz qaz oktetinə keçir.",
+      "distractors": {
+        "0": "Eyni 10Ne-yə çatırlar.",
+        "2": "Duplet n=1 üçündür.",
+        "3": "18Ar 3-cü dövr sonudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K04-03-03-012"
+  },
+  {
+    "question": "NO₂ (Azot dioksid) molekulunda oktet qaydasının pozulma səbəbini təhlil edin.",
+    "options": [
+      "NO₂ bərk bərk maddədir",
+      "Azot ionlaşır",
+      "Azotun ətrafında 10 elektron var",
+      "Molekulda tək (cütləşməmiş) valent elektronu (radikal) olduğu üçün azotun xarici səviyyəsində 7 elektron qalır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: NO₂ tək elektronlu molekuldur (cəmi 17 valent elektronu var) və cütləşməmiş e- olduğu üçün oktet ödənilmir (radikal).",
+      "distractors": {
+        "0": "NO₂ qazdır.",
+        "1": "Molekul neytraldır.",
+        "2": "10 e- deyil 7 e- var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K04-03-03-013"
+  },
+  {
+    "question": "Nə üçün 2-ci dövr elementləri (N, O, F) genişlənmiş oktet (8-dən çox elektron) əmələ gətirə bilmir?",
+    "options": [
+      "Nüvələri mane olduğu üçün",
+      "Çünki 2-ci energetik səviyyədə d-yarımsəviyyəsi (boş d-orbitalları) yoxdur",
+      "Elektronları olmadığı üçün",
+      "Atom kütlələri kiçik olduğu üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2-ci dövr elementlərində l=2 (d-orbitalı) yoxdur, maksimum 2s² 2p⁶ (8 e-) tuta bilərlər; 3-cü dövr elementlərində isə d-orbitalları hesabına oktet genişlənə bilir.",
+      "distractors": {
+        "0": "Nüvə cəzb edir.",
+        "2": "Elektronları var.",
+        "3": "Səbəb d-orbitalının olmamasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K04-03-03-014"
+  },
+  {
+    "question": "Kimyəvi rabitələrin əmələ gəlməsində Oktet qaydasının ümumbəşəri əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Kimyanı ləğv etməsi",
+      "Bütün molekulların 100% bu qaydaya tabe olması",
+      "Yalnız qazlar üçün keçərli olması",
+      "Birləşmələrin formullarını, valentliklərini və molekulların sabitliyini izah edən təməl qayda olması"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Oktet qaydasını və kimyəvi rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Oktet qaydası kimyada stexiometriyanı, valentlikləri və molekulların nədən məhz bu tərkibdə əmələ gəldiyini aydınlaşdıran mühüm nəzəriyyədir.",
+      "distractors": {
+        "0": "Kimyanı izah edir.",
+        "1": "İstisnalar (BF₃, SF₆) var.",
+        "2": "Bütün maddələr üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Kimyəvi rabitə. Oktet qaydası",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-01K04-03-03-015"
+  }
+]

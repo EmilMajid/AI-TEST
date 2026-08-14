@@ -1,0 +1,936 @@
+[
+  {
+    "question": "Avtomobillərdə təhlükəsizlik kəmərlərinin istifadə edilməsi Nyutonun hansı qanununun tətbiqinə əsaslanır?",
+    "options": [
+      "Nyutonun I qanunu (İnersiya qanunu)",
+      "Nyutonun II qanunu",
+      "Nyutonun III qanunu",
+      "Ümumcisim cazibə qanunu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Fizika qanunlarının texnikada tətbiqini bilmək",
+    "explanation": {
+      "correct": "İzah: Ani tormozlama zamanı sərnişinlər inersiya üzrə hərəkətini davam etdirməyə çalışırlar. Təhlükəsizlik kəməri Nyutonun I qanununa (inersiya) əsasən sərnişinin önə fırlanmasının qarşısını alır.",
+      "distractors": {
+        "1": "Nyutonun II qanunu təcil və qüvvə əlaqəsidir.",
+        "2": "III qanun təsir və əks-təsir qanunudur.",
+        "3": "Ümumcisim cazibə qanunu göy cisimlərinin cazibəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F01-01-01-001"
+  },
+  {
+    "question": "Qışda avtomobil təkərlərinin səthinə zəncirlərin sarınmasının və ya girintili-çıxıntılı naxışların açılmasının fiziki səbəbi nədir?",
+    "options": [
+      "Təkərlə yol arasındakı sürtünmə qüvvəsini artırmaq",
+      "Sürtünmə qüvvəsini azaltmaq",
+      "Avtomobilin kütləsini azaltmaq",
+      "Təkərin elastikliyini yox etmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sürtünmə qüvvəsinin məişətdəki rolunu bilmək",
+    "explanation": {
+      "correct": "İzah: Buzlu yolda təkərlərin sürüşməməsi üçün zəncir və naxışlar kələ-kötürlüyü və beləliklə sürtünmə qüvvəsini artırır.",
+      "distractors": {
+        "1": "Sürtünməni azaltsaq avtomobil daha çox sürüşər.",
+        "2": "Zəncir kütləni artırır, azaltmır.",
+        "3": "Elastikliyə təsir etmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F01-01-01-002"
+  },
+  {
+    "question": "Raketlərin və kosmik gəmilərin fəzaya qalxması Nyutonun hansı qanununun texniki tətbiqidir?",
+    "options": [
+      "Nyutonun III qanunu (Reaktiv hərəkət)",
+      "Nyutonun I qanunu",
+      "Paskal qanunu",
+      "Arximed qanunu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaktiv hərəkətin fiziki əsasını bilmək",
+    "explanation": {
+      "correct": "İzah: Raketdən böyük sürətlə çıxan qazlar raketi əks tərəfə itələyir. Bu, Nyutonun III qanununa (təsir əks-təsirə bərabərdir) əsaslanan reaktiv hərəkətdir.",
+      "distractors": {
+        "1": "I qanun inersiyadır.",
+        "2": "Paskal qanunu maye təzyiqidir.",
+        "3": "Arximed qanunu itələmə qüvvəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F01-01-01-003"
+  },
+  {
+    "question": "Ağır yük maşınlarının təkərlərinin sayının çox olmasının fiziki səbəbi nədir?",
+    "options": [
+      "Asfalt yola düşən təzyiqi azaltmaq",
+      "Avtomobilin sürətini artırmaq",
+      "Mühərrikin gücünü artırmaq",
+      "Sürtünmə qüvvəsini sıfıra endirmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiqin dayağın sahəsindən asılılığının tətbiqini bilmək",
+    "explanation": {
+      "correct": "İzah: Təkərlərin sayı çoxaldıqca dayağın sahəsi (S) artır, bu da p = F/S düsturuna əsasən yol səthinə düşən təzyiqi azaldır və yolu dağılmaqdan qoruyur.",
+      "distractors": {
+        "1": "Təkər sayı sürəti artırmır.",
+        "2": "Mühərrik gücü ilə bağlı deyil.",
+        "3": "Sürtünmə sıfır ola bilməz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F01-01-01-004"
+  },
+  {
+    "question": "Böyük körpülərin dayaqlarının aşağı hissəsinin enli tikilməsinin fiziki əsası nədir?",
+    "options": [
+      "Təzyiq dəyərini azaltmaq üçün dayağın sahəsini böyütmək",
+      "Körpünün hündürlüyünü artırmaq",
+      "Suyun axın sürətini sürətləndirmək",
+      "Körpünün çəkisini artırmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tikintidə təzyiq qanununun tətbiqini bilmək",
+    "explanation": {
+      "correct": "İzah: p = F/S düsturuna görə, dayaq sahəsi S böyüdükdə qrunt torpağa düşən təzyiq p azalır və körpü batmır.",
+      "distractors": {
+        "1": "Hündürlük artmır.",
+        "2": "Su axınına maneə yarana bilər amma əsas səbəb təzyiqdir.",
+        "3": "Çəkini artırmaq məqsəd deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F01-01-01-005"
+  },
+  {
+    "question": "Gəmilərin lövbər zəncirinin böyük kütləyə malik olmasının və dəniz dibində tarazlığı saxlamasının fiziki prinsipi nədir?",
+    "options": [
+      "Ağırlıq mərkəzini aşağı salaraq gəminin tarazlıq dayanıqlığını artırmaq",
+      "Gəmini daha sürətlə üzdürmək",
+      "Arximed qüvvəsini sıfıra endirmək",
+      "Suyun sıxlığını artırmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tarazlıq və ağırlıq mərkəzi prinsiplərini texnikada izah etmək",
+    "explanation": {
+      "correct": "İzah: Ağır lövbər və ballast suları gəminin ağırlıq mərkəzini aşağı salır, bu da dayanıqlı tarazlıq şəraiti yaradır.",
+      "distractors": {
+        "1": "Lövbər sürəti artırmır.",
+        "2": "Arximed qüvvəsi gəmini saxlayır.",
+        "3": "Suyun sıxlığı dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F02-02-02-006"
+  },
+  {
+    "question": "Binaların seysmik zəlzələlərə davamlılığını artırmaq üçün onların bünövrəsində amortizator elastik yaylardan istifadə olunması hansı qüvvəyə əsaslanır?",
+    "options": [
+      "Huk qanununa əsaslanan elastiklik qüvvəsinə",
+      "Sürtünmə qüvvəsinə",
+      "Arximed qüvvəsinə",
+      "Nüvə qüvvələrinə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elastiklik qüvvəsinin texnikada tətbiqini izah etmək",
+    "explanation": {
+      "correct": "İzah: Zəlzələ zamanı yaranan rəqsləri amortizasiya etmək üçün elastik yaylar (Huk qanunu F = k|Δx|) zərbə enerjisini udur.",
+      "distractors": {
+        "1": "Sürtünmə rəqsi tam udmur.",
+        "2": "Arximed qüvvəsi mayelərdədir.",
+        "3": "Nüvə qüvvəsi atom daxilindədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F02-02-02-007"
+  },
+  {
+    "question": "İdmançıların langet və ya idman ayaqqabılarının alt hissəsinin kələ-kötür hazırlanması hansı məqsəd daşıyır?",
+    "options": [
+      "Dayaqla ayaqqabı arasında sürtünmə qüvvəsini artıraraq sürüşmənin qarşısını almaq",
+      "Ayaqqabının çəkisini artırmaq",
+      "Qaçış zamanı havanın müqavimətini artırmaq",
+      "Ayağın ölçüsünü böyütmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İdmanda sürtünmə qüvvəsinin tətbiqini izah etmək",
+    "explanation": {
+      "correct": "İzah: Kələ-kötür səth sürüşmə sürtünmə qüvvəsini artırır və idmançının qaçış və tullanma zamanı yıxılmasının qarşısını alır.",
+      "distractors": {
+        "1": "Çəkini artırmaq məqsəd deyil.",
+        "2": "Havanın müqavimətini artırmaq zərərlidir.",
+        "3": "Ölçü dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F02-02-02-008"
+  },
+  {
+    "question": "Böyük yük qaldıran kranların arxa hissəsinə ağır beton blokların (əks-yük) qoyulmasının fiziki səbəbi nədir?",
+    "options": [
+      "Qüvvə momentlərinin tarazlığını təmin edərək kranın aşmasının qarşısını almaq",
+      "Kranın qollarını uzatmaq",
+      "Kranın mühərrikini soyutmaq",
+      "Kranın təkərlərini deşmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Qüvvə momentinin texnikada tətbiqini izah etmək",
+    "explanation": {
+      "correct": "İzah: Qüvvə momenti M = F × d qaydasına görə yükün aşırıcı momenti əks-yükün momenti ilə tarazlaşdırılır.",
+      "distractors": {
+        "1": "Qollar uzanmır.",
+        "2": "Mühərriklə bağlı deyil.",
+        "3": "Təkəri deşmək zərər verər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F02-02-02-009"
+  },
+  {
+    "question": "Paraşütlə tullanarkən paraşütçünün sabit sürətlə aşağı enməsinin fiziki səbəbi nədir?",
+    "options": [
+      "Havanın müqavimət qüvvəsinin ağırlıq qüvvəsinə bərabərləşməsi (əvəzləyici qüvvənin sıfır olması)",
+      "Ağırlıq qüvvəsinin tamamilə yox olması",
+      "Yer cazibəsinin təsir etməməsi",
+      "Paraşütçünün çəkisinin artması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Əvəzləyici qüvvənin sürətə təsirini izah etmək",
+    "explanation": {
+      "correct": "İzah: Paraşüt açıldıqda havanın müqavimət qüvvəsi yuxarı, ağırlıq qüvvəsi aşağı yönəlir. F_müq = F_ağ olduqda əvəzləyici qüvvə F = 0 olur və cisim Nyutonun I qanununa görə bərabərsürətlə enir.",
+      "distractors": {
+        "1": "Ağırlıq qüvvəsi yox olmur.",
+        "2": "Yer cazibəsi təsir edir.",
+        "3": "Çəki artmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F02-02-02-010"
+  },
+  {
+    "question": "Kütləsi 800 kg olan kosmik aparat başlanğıcda sükunətdədir. Qazların püskürdülməsi zamanı aparata 4000 N reaktiv itələmə qüvvəsi təsir edir. Aparatın aldığı təcili hesablayın.",
+    "options": [
+      "5 m/s²",
+      "0.2 m/s²",
+      "3200 m/s²",
+      "50 m/s²"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Nyutonun ikinci qanununu reaktiv hərəkət məsələsinə tətbiq etmək",
+    "explanation": {
+      "correct": "İzah: Nyutonun II qanununa görə a = F / m. a = 4000 N / 800 kg = 5 m/s².",
+      "distractors": {
+        "1": "0.2 bölmənin tərs aparılmasıdır (800/4000).",
+        "2": "3200000 vurma xətasıdır.",
+        "3": "50 sıfır xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "a = F / m",
+      "a = 4000 N / 800 kg = 5 m/s²"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F04-03-03-011"
+  },
+  {
+    "question": "Avtomobil tormozlanarkən 4000 N tormozlayıcı sürtünmə qüvvəsi təsir edir. Əgər avtomobilin kütləsi 1000 kg-dırsa, tormozlanma təcilinin modulunu tapın.",
+    "options": [
+      "4 m/s²",
+      "0.25 m/s²",
+      "40 m/s²",
+      "4000 m/s²"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Sürtünmə qüvvəsi və tormozlanma təcilini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Nyutonun II qanunu a = F_sürt / m. a = 4000 N / 1000 kg = 4 m/s².",
+      "distractors": {
+        "1": "0.25 ters bölmədir (1000/4000).",
+        "2": "40 sıfır xətasıdır.",
+        "3": "4000 m/s² yalnız qüvvədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "a = F / m",
+      "a = 4000 / 1000 = 4 m/s²"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F04-03-03-012"
+  },
+  {
+    "question": "Qaldırıcı kran 2 ton (2000 kg) kütləli betonu 2 m/s² təcillə şaquli yuxarı qaldırır. Kanatın gərilmə qüvvəsini hesablayın (g = 10 m/s²).",
+    "options": [
+      "24 000 N (24 kN)",
+      "20 000 N (20 kN)",
+      "16 000 N (16 kN)",
+      "4 000 N (4 kN)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təcillə yuxarı hərəkət zamanı gərilmə qüvvəsini və çəkini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Təcillə yuxarı hərəkət zamanı gərilmə qüvvəsi (çəki) T = m(g + a) düsturu ilə tapılır. T = 2000 kg × (10 + 2) m/s² = 2000 × 12 = 24 000 N = 24 kN.",
+      "distractors": {
+        "1": "20 kN təcilsiz (sabit sürətlə) qaldırma halıdır (mg).",
+        "2": "16 kN aşağı təcillə enmə halıdır m(g-a).",
+        "3": "4 kN yalnız ma nəticəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "T = m(g + a)",
+      "T = 2000 × (10 + 2) = 24 000 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F04-03-03-013"
+  },
+  {
+    "question": "Bərk cisim yerdən yuxarı atılır. Havanın müqaviməti nəzərə alınmadıqda, cisim maksimal hündürlük nöqtəsinə çatdıqda onun sürəti və təcili necə olar?",
+    "options": [
+      "Sürəti sıfır olar, təcili originates g = 10 m/s² aşağı yönələr",
+      "Həm sürəti, həm təcili sıfır olar",
+      "Sürəti maksimal olar, təcili sıfır olar",
+      "Sürəti və təcili yuxarı yönələr"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Yuxarı atılmış cismin trayektoriyanın ən yüksək nöqtəsində dinamikasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maksimal hündürlükdə v = 0 m/s olur (cisim anlıq dayanır). Lakin cismə yalnız ağırlıq qüvvəsi təsir etdiyi üçün təcili qravitasiya təcilidir (g = 10 m/s²) və aşağı yönəlir.",
+      "distractors": {
+        "1": "Təcil sıfır olsaydı cisim havada asılı qalardı.",
+        "2": "Sürət maksimal aşağıda idi.",
+        "3": "Təcil heç vaxt yuxarı yönəlmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F04-03-03-014"
+  },
+  {
+    "question": "Nə üçün minik avtomobillərinin ön hissəsi toqquşma zamanı asanlıqla əzilə bilən xüsusi deformasiya zonaları ilə hazırlanır?",
+    "options": [
+      "Zərbə müddətini (Δt) uzadaraq sərnişinlərə təsir edən zərbə qüvvəsini (F = mΔv / Δt) azaltmaq üçün",
+      "Avtomobilin qiymətini ucuzlaşdırmaq üçün",
+      "Zərbə zamanı sürəti artırmaq üçün",
+      "Mühərrikin kütləsini sıfırlamaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İmpuls və zərbə qüvvəsinin zaman asılılığını müasir avtomobil təhlükəsizliyinə tətbiq etmək",
+    "explanation": {
+      "correct": "İzah: Zərbə qüvvəsi F = Δp / Δt düsturuna əsaslanır. Əzilən korpus toqquşma vaxtını (Δt) uzadır, bu da sərnişinlərə düşən zərbə qüvvəsini F kəskin azaldaraq həyatı qurtarır.",
+      "distractors": {
+        "1": "Materialların elastikliyi və mühəndisliyi təhlükəsizlik üçündür.",
+        "2": "Zərbə anında sürət azaldılır.",
+        "3": "Mühərrik kütləsi dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0111-11F04-03-03-015"
+  },
+  {
+    "question": "Mexaniki işin görülməsi üçün hansı iki şərtin eyni vaxtda ödənilməsi zəruridir?",
+    "options": [
+      "Cismə qüvvə təsir etməli və cisim bu qüvvənin təsiri altında yerdəyişmə etməlidir",
+      "Cisim yalnız sükunətdə qalmalıdır",
+      "Yalnız temperatur dəyişməlidir",
+      "Cismin rəngi dəyişməlidir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mexaniki işin görülmə şərtlərini bilmək",
+    "explanation": {
+      "correct": "İzah: Mexaniki iş A = F × s düsturundan görünür ki, işin görülməsi üçün həm qüvvə (F ≠ 0), həm də yerdəyişmə (s ≠ 0) olmalıdır.",
+      "distractors": {
+        "1": "Sükunətdə yerdəyişmə sıfırdır, iş görülmür.",
+        "2": "Temperatur daxili enerjiyə aiddir.",
+        "3": "Rəng mexaniki işə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F01-01-01-001"
+  },
+  {
+    "question": "Beynəlxalq Vahidər Sistemində (BVS) mexaniki işin ölçü vahidi nədir?",
+    "options": [
+      "Coul (C)",
+      "Nyuotn (N)",
+      "Vat (Vt)",
+      "Paskal (Pa)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mexaniki işin vahidini bilmək",
+    "explanation": {
+      "correct": "İzah: BVS-də işin vahidi Couldur (C). 1 C = 1 N × 1 m.",
+      "distractors": {
+        "1": "Nyuotn qüvvə vahididir.",
+        "2": "Vat güc vahididir.",
+        "3": "Paskal təzyiq vahididir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F01-01-01-002"
+  },
+  {
+    "question": "Qüvvənin istiqaməti cismin yerdəyişmə istiqaməti ilə eyni olduqda görülən mexaniki işin işarəsi necə olar?",
+    "options": [
+      "Müsbət (A > 0)",
+      "Mənfi (A < 0)",
+      "Sıfıra bərabər (A = 0)",
+      "Mümkünsüz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mexaniki işin işarəsini bilmək",
+    "explanation": {
+      "correct": "İzah: Qüvvə və yerdəyişmə eyni istiqamətdə olduqda qüvvə hərəkətə kömək edir və iş müsbətdir (A = F × s > 0).",
+      "distractors": {
+        "1": "Mənfi iş qüvvə hərəkətin əksinə olduqda görülür.",
+        "2": "Sıfır iş qüvvə yerdəyişməyə perpedikulyar olduqda olur.",
+        "3": "İşarə müəyyəndir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F01-01-01-003"
+  },
+  {
+    "question": "Hansı halda cismə qüvvə təsir etməsinə baxmayaraq mexaniki iş GÖRÜLMÜR (A = 0)?",
+    "options": [
+      "Qüvvənin istiqaməti yerdəyişmə istiqamətinə perpendikulyar olduqda (α = 90°)",
+      "Qüvvə hərəkət istiqamətində olduqda",
+      "Cisim təcillə hərəkət etdikdə",
+      "Cisim böyük məsafə qət etdikdə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sıfır iş görülmə halını bilmək",
+    "explanation": {
+      "correct": "İzah: Qüvvə yerdəyişməyə perpendikulyar olduqda (məsələn, üfüqi yolda çantanı əldə apararkən ağırlıq qüvvəsinin işi) mexaniki iş görülmür (A = 0).",
+      "distractors": {
+        "1": "Eyni istiqamətdə müsbət iş görülür.",
+        "2": "Təcilli hərəkətdə iş görülür.",
+        "3": "Məsafə olduqda iş görülür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F01-01-01-004"
+  },
+  {
+    "question": "Sürtünmə qüvvəsinin gördüyü işin işarəsi adətən necə olur?",
+    "options": [
+      "Mənfi (A < 0)",
+      "Müsbət (A > 0)",
+      "Həmişə sıfır",
+      "Dəyişməz müsbət"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Sürtünmə qüvvəsinin işini bilmək",
+    "explanation": {
+      "correct": "İzah: Sürtünmə qüvvəsinin istiqaməti həmişə cismin yerdəyişməsinin əksinə yönəldiyi üçün onun gördüyü iş mənfidir (A = -F_sürt × s).",
+      "distractors": {
+        "1": "Müsbət iş hərəkət istiqamətində olan qüvvənin işidir.",
+        "2": "Sürtünmə iş görür (istilik yaradır).",
+        "3": "Mənfidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F01-01-01-005"
+  },
+  {
+    "question": "Cismə hərəkət istiqamətində 50 N qüvvə təsir edir. Cisim 6 m yerdəyişmə etdikdə görülən mexaniki işi hesablayın.",
+    "options": [
+      "300 C",
+      "8.3 C",
+      "56 C",
+      "44 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "tətbiq",
+    "difficulty": "orta",
+    "measured_skill": "Mexaniki iş düsturunu hesablamaya tətbiq etmək",
+    "explanation": {
+      "correct": "İzah: Mexaniki iş A = F × s = 50 N × 6 m = 300 C.",
+      "distractors": {
+        "1": "8.3 bölmə (50/6) xətasıdır.",
+        "2": "56 toplama xətasıdır.",
+        "3": "44 çıxma xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "A = F × s",
+      "A = 50 N × 6 m = 300 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F02-02-02-006"
+  },
+  {
+    "question": "Fəhlə kütləsi 20 kg olan yükü 3 m hündürlüyə bərabərsürətlə qaldırır. Fəhlənin gördüyü işi tapın (g = 10 N/kg).",
+    "options": [
+      "600 C",
+      "60 C",
+      "200 C",
+      "6 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "tətbiq",
+    "difficulty": "orta",
+    "measured_skill": "Ağırlıq qüvvəsinə qarşı görülən işi hesablamaq",
+    "explanation": {
+      "correct": "İzah: Qaldırma zamanı qüvvə F = mg = 20 kg × 10 N/kg = 200 N. Görülən iş A = F × h = 200 N × 3 m = 600 C.",
+      "distractors": {
+        "1": "60 C g-ni vurmağı unutmaqdır (20 × 3).",
+        "2": "200 C yalnız ağırlıq qüvvəsidir.",
+        "3": "6 C sıfır xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "F = m × g = 20 × 10 = 200 N",
+      "A = F × h = 200 × 3 = 600 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F02-02-02-007"
+  },
+  {
+    "question": "Üfüqi müstəvidə sürüşən cismə 15 N sürtünmə qüvvəsi təsir edir. Cisim 4 m məsafədə dayandıqda sürtünmə qüvvəsinin gördüyü iş nə qədərdir?",
+    "options": [
+      "-60 C",
+      "60 C",
+      "0 C",
+      "-3.75 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "tətbiq",
+    "difficulty": "orta",
+    "measured_skill": "Sürtünmə qüvvəsinin mənfi işini hesablamaq",
+    "explanation": {
+      "correct": "İzah: Sürtünmə qüvvəsi yerdəyişmənin əksinə olduğu üçün A = -F_sürt × s = -15 N × 4 m = -60 C.",
+      "distractors": {
+        "1": "60 C işarə xətasıdır.",
+        "2": "0 C dayandıqda iş görülür (enerji istiliyə çevrilir).",
+        "3": "-3.75 C bölmə xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "A = -F_sürt × s",
+      "A = -15 N × 4 m = -60 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F02-02-02-008"
+  },
+  {
+    "question": "Şagird 5 kg kütləli portfeli 1.2 m hündürlükdə əlində tutaraq üfüqi yolda 10 m məsafə yerişlə gedir. Ağırılq qüvvəsinin gördüyü iş nə qədərdir?",
+    "options": [
+      "0 C",
+      "500 C",
+      "60 C",
+      "50 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Qüvvə və yerdəyişmə perpendikulyar olduqda işi təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağırlıq qüvvəsi şaquli aşağı yönəlir, yerdəyişmə isə üfüqi istiqamətdədir (aralarındakı bucaq 90°). Bu halda ağırlıq qüvvəsi iş görmür: A = 0 C.",
+      "distractors": {
+        "1": "500 C mg × s vurmasıdır (şaquli hərəkət olsaydı).",
+        "2": "60 C mgh hesablamasıdır.",
+        "3": "50 C mg-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F02-02-02-009"
+  },
+  {
+    "question": "Mexaniki işin görülmə sürətini xarakterizə edən fiziki kəmiyyət hansıdır?",
+    "options": [
+      "Güc",
+      "Qüvvə",
+      "Təcil",
+      "İmpuls"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və güc anlayışlarını fərqləndirmək",
+    "explanation": {
+      "correct": "İzah: Güc (N) vahid zamanda görülən işə bərabər olan və işin görülmə sürətini bildirən kəmiyyətdir (N = A / t).",
+      "distractors": {
+        "1": "Qüvvə hərəkət səbəbidir.",
+        "2": "Təcil sürət dəyişməsidir.",
+        "3": "İmpuls m × v-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F02-02-02-010"
+  },
+  {
+    "question": "Cismə əvəzləyicisi 40 N olan qüvvə təsir edir. Cismin sürətinin zamandan asılılığı v = 5t (m/s) kimidir. İlk 4 saniyədə görülən mexaniki işi hesablayın.",
+    "options": [
+      "1600 C",
+      "800 C",
+      "400 C",
+      "200 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dəyişənsürətli hərəkətdə yerdəyişməni taparaq işi hesablamaq",
+    "explanation": {
+      "correct": "İzah: v = 5t olduqda təcil a = 5 m/s². t = 4 s ərzində yerdəyişmə s = (at²)/2 = (5 × 4²)/2 = (5 × 16)/2 = 40 m. Görülən iş A = F × s = 40 N × 40 m = 1600 C.",
+      "distractors": {
+        "1": "800 C yerdəyişmədə 2-yə bölməni v-yə vurmaqla qarışdırmaqdır.",
+        "2": "400 C s = vt kimi 20×40 kimi səhvdir.",
+        "3": "200 C hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "s = (a × t²) / 2 = (5 × 16) / 2 = 40 m",
+      "A = F × s = 40 N × 40 m = 1600 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F04-03-03-011"
+  },
+  {
+    "question": "Meyillik bucağı 30° olan mail müstəvi üzrə kütləsi 10 kg olan cisim bərabərsürətlə L = 6 m məsafəyə qaldırılır. Ağırlıq qüvvəsinin gördüyü işi tapın (g = 10 N/kg, sin30° = 0.5).",
+    "options": [
+      "-300 C",
+      "300 C",
+      "-600 C",
+      "600 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mail müstəvidə ağırlıq qüvvəsinin mənfi işini hesablamaq",
+    "explanation": {
+      "correct": "İzah: Hündürlük h = L × sin30° = 6 × 0.5 = 3 m. Qaldırılarkən ağırlıq qüvvəsi aşağı yönəldiyi üçün iş mənfidir: A = -mgh = -10 kg × 10 N/kg × 3 m = -300 C.",
+      "distractors": {
+        "1": "300 C müsbət iş fəhlənin işidir, ağırlığın işi mənfidir.",
+        "2": "-600 C hündürlük əvəzinə mail müstəvinin uzunluğunu vurmaqdır.",
+        "3": "600 C sinusu nəzərə almamaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "h = L × sin(30°) = 6 × 0.5 = 3 m",
+      "A_ağ = -mgh = -10 × 10 × 3 = -300 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F04-03-03-012"
+  },
+  {
+    "question": "Təzyiqi 200 kPa olan sabit təzyiqli qaz genişlənərək həcmini 0.02 m³ artırmışdır. Qazın genişlənərkən gördüyü işi hesablayın.",
+    "options": [
+      "4000 C (4 kC)",
+      "400 C",
+      "10 C",
+      "10000 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Termodinamikada qazın gördüyü işi (A = pΔV) hesablamaq",
+    "explanation": {
+      "correct": "İzah: İzobar prosesdə qazın gördüyü iş A = p × ΔV. p = 200 kPa = 200 000 Pa. ΔV = 0.02 m³. A = 200 000 × 0.02 = 4000 C = 4 kC.",
+      "distractors": {
+        "1": "400 C 200 × 2 vurmasıdır (kilo-nu sıfırlamaq).",
+        "2": "10 C bölmə xətasıdır.",
+        "3": "10000 C hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [
+      "A = p × ΔV",
+      "A = 200 000 Pa × 0.02 m³ = 4000 C = 4 kC"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F04-03-03-013"
+  },
+  {
+    "question": "Kütləsi 2 kg olan cisim üfüqi müstəvidə v₀ = 10 m/s başlanğıc sürəti ilə tormozlanaraq dayanır. Sürtünmə qüvvəsinin gördüyü tam işi kinetik enerjinin dəyişməsi teoremi ilə hesablayın.",
+    "options": [
+      "-100 C",
+      "100 C",
+      "-200 C",
+      "-20 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kinetik enerji teoremini (A = ΔE_k) işin hesablanmasına tətbiq etmək",
+    "explanation": {
+      "correct": "İzah: Teoremə görə əvəzləyici qüvvənin işi kinetik enerjinin dəyişməsinə bərabərdir: A = E_k2 - E_k1. E_k1 = (mv₀²)/2 = (2 × 10²)/2 = 100 C. Dayanarkən E_k2 = 0. A = 0 - 100 = -100 C.",
+      "distractors": {
+        "1": "100 C müsbət iş deyil (sürtünmə mənfidir).",
+        "2": "-200 C 2-yə bölməyi unutmaqdır.",
+        "3": "-20 C sürətlə kütləni vurmaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "E_k1 = (2 × 10²) / 2 = 100 C",
+      "E_k2 = 0",
+      "A = 0 - 100 = -100 C"
+    ],
+    "topic": "2.1 Mexaniki iş",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F04-03-03-014"
+  },
+  {
+    "question": "Cismə təsir edən qüvvənin yerdəyişmədən asılılıq qrafiki verilmişdir: F(N) qrafiki s = 0-dan s = 8 m-ə qədər 0-dan 20 N-a kimi xətti artır. Görülən iş nə qədərdir?",
+    "options": [
+      "80 C",
+      "160 C",
+      "40 C",
+      "200 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Qüvvə-məsafə qrafikinin altında qalan sahə ilə işi hesablamaq",
+    "explanation": {
+      "correct": "İzah: F(s) qrafikində görülen iş qrafikin altında qalan fiqurun (üçbucağın) sahəsinə bərabərdir. A = (F_max × s) / 2 = (20 N × 8 m) / 2 = 80 C.",
+      "distractors": {
+        "1": "160 C düzbucaqlı sahəsi kimi vurmaqdır (20×8), 2-yə bölmək unudulub.",
+        "2": "40 C yarıya təkrar bölməkdir.",
+        "3": "200 C hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "A = Üçbucağın sahəsi = (F × s) / 2",
+      "A = (20 × 8) / 2 = 80 C"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 1)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0201-01F04-03-03-015"
+  }
+]

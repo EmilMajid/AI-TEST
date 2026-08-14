@@ -1,0 +1,902 @@
+[
+  {
+    "question": "İon rabitəsi nədir?",
+    "options": [
+      "Elektron qazı cəzbi",
+      "Əks yüklü ionlar (kation və anion) arasında elektrostatik cəzbetmə rabitəsi",
+      "Hidrogen rabitəsi",
+      "Müştərək elektron cütü"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İon rabitəsi tipik metal kationu və tipik qeyri-metal anionu arasında elektrostatik Kulon cəzbetməsi hesabına yaranır.",
+      "distractors": {
+        "0": "Elektron qazı metal rabitəsidir.",
+        "2": "Hidrogen rabitəsi molekullar arasıdır.",
+        "3": "Müştərək elektron cütü kovalent rabitədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K01-01-01-001"
+  },
+  {
+    "question": "Mənfi yüklü ion (anion) necə əmələ gəlir?",
+    "options": [
+      "Atom parçalandıqda",
+      "Atom proton verdikdə",
+      "Atom 1 və ya bir neçə elektron qəbul etdikdə",
+      "Atom elektron verdikdə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qeyri-metal atomu kənardan elektron qəbul etdikdə mənfi yüklənir və anion adlanır (məs. Cl + 1e⁻ -> Cl⁻).",
+      "distractors": {
+        "0": "Atom parçalanmır.",
+        "1": "Proton nüvədədir verilmir.",
+        "3": "Elektron verdikdə müsbət kation alınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K01-01-01-002"
+  },
+  {
+    "question": "Aşağıdakı birləşmələrdən hansında ion rabitəsi vardır?",
+    "options": [
+      "CO₂ (Karbon qazı)",
+      "O₂ (Oksigen)",
+      "KF (Potasium florid)",
+      "H₂O (Su)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: K tipik qələvi metal, F tipik halogen qeyri-metal olduğu üçün K⁺F⁻ ion rabitəli birləşmədir.",
+      "distractors": {
+        "0": "CO₂ kovalent birləşmədir.",
+        "1": "O₂ qeyri-polyar kovalentdir.",
+        "3": "Su kovalentdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K01-01-01-003"
+  },
+  {
+    "question": "İon birləşmələrinin bərk halda elektrik cərəyanını keçirməməsinin səbəbi nədir?",
+    "options": [
+      "Maddənin uçucu olması",
+      "Kristal qəfəs düyünlərində ionların tərpənməz olması və sərbəst yüklü zərrəciklərin olmaması",
+      "Elektronların sıx olması",
+      "İonların olmaması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bərk ion kristalında ionlar şəbəkə düyünlərində lokalize olunub (hərəkətsizdir); dissosiasiya olunub ərinti/məhlul halına keçəndə cərəyan keçirirlər.",
+      "distractors": {
+        "0": "İon maddələri uçucu deyil.",
+        "2": "Sərbəst elektron daşıyıcısı yoxdur.",
+        "3": "İonlar var lakin tərpənməzdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K01-01-01-004"
+  },
+  {
+    "question": "11Na (2,8,1) və 17Cl (2,8,7) atomlarından NaCl əmələ gəldikdə elektronların keçidini təhlil edin.",
+    "options": [
+      "Na xarici 1 elektronunu Cl atomuna verir (Na⁺ və Cl⁻ ionları yaranır)",
+      "Elektron itmir keçmir",
+      "Cl elektronunu Na-ya verir",
+      "Elektronlar müştərək cüt yaradır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Natrium metalı 1 e⁻ verərək Na⁺ (2,8), Xlor qeyri-metalı 1 e⁻ alaraq Cl⁻ (2,8,8) oktetlərinə çatır.",
+      "distractors": {
+        "1": "Elektron keçidi baş verir.",
+        "2": "Qeyri-metal elektron alır.",
+        "3": "Müştərək cüt kovalent rabitədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K01-01-01-005"
+  },
+  {
+    "question": "CaCl₂ (Kalsium xlorid) birləşməsində Ca²⁺ və Cl⁻ ionlarının nisbətini təhlil edin.",
+    "options": [
+      "2:1 nisbəti",
+      "3:1 nisbəti",
+      "1 mol Ca²⁺ kationuna 2 mol Cl⁻ anionu düşür (1:2 nisbəti)",
+      "1:1 nisbəti"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ca²⁺ kationunun +2 yükünü neytrallaşdırmaq üçün 2 ədəd Cl⁻ (-1) anionu tələb olunur (CaCl₂).",
+      "distractors": {
+        "0": "2 Ca kationu deyil 2 Cl anionudur.",
+        "1": "Hesablama səhvidir.",
+        "3": "NaCl-da 1:1-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K02-02-02-006"
+  },
+  {
+    "question": "Aşağıdakı birləşmələrdən hansında ion rabitəsinin payı (ionluq xarakteri) ən yüksəkdir?",
+    "options": [
+      "CsF (Sezium florid)",
+      "HCl",
+      "H₂O",
+      "LiI (Litium iodid)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sezium (Cs) ən aşağı EM-li tipik metal, Flüor (F) ən yüksək EM-li qeyri-metaldır; ΔEM maksimal olduğu üçün CsF ən yüksək ionluq xarakterinə malikdir.",
+      "distractors": {
+        "1": "HCl kovalentdir.",
+        "2": "Su kovalentdir.",
+        "3": "İodun EM-i Flüordan azdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K02-02-02-007"
+  },
+  {
+    "question": "İon rabitəsinin yönəlməməzliyi və doymazlığı nə deməkdir?",
+    "options": [
+      "İonun elektrik sahəsi sferik bərabər yayıldığından o müxtəlif istiqamətlərdən bir neçə əks yüklü ionu cəzb edə bilir",
+      "Rabitə yarada bilmir",
+      "İon dərhal doyur",
+      "Yalnız bir istiqamətdə cəzb edir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kovalent rabitədən fərqli olaraq ionun elektrik yükü sferikdir; rabitə müəyyən istiqamətə yönəlməyib (yönəlməyəndir) və istənilən sayda əks ionu cəzb edə bilər (doymayandır).",
+      "distractors": {
+        "1": "Rabitə yaradır.",
+        "2": "İon rabitəsi doymayandır.",
+        "3": "Kovalent rabitə yönələndir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K02-02-02-008"
+  },
+  {
+    "question": "MgO (Magnezium oksid) kristalının ərimə temperaturunun (2852°C) NaCl-dan (801°C) dəfələrlə yüksək olmasının səbəbini təhlil edin.",
+    "options": [
+      "MgO qeyri-metaldır",
+      "Mg²⁺ və O²⁻ ionlarının yüklərinin (+2 və -2) Na⁺ və Cl⁻ yüklərindən (+1 və -1) böyük olması hesabına elektrostatik cəzbetmənin kəskin güclü olması",
+      "MgO molekulyardır",
+      "NaCl mayedir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kulon qanununa görə cəzbetmə qüvvəsi F ~ (q₁q₂)/r². MgO-da yüklər hasili 2×2=4, NaCl-da 1×1=1-dir. Qəfəs energiyası MgO-da çox böyükdür.",
+      "distractors": {
+        "0": "MgO metaldan təşkil olunub.",
+        "2": "MgO ion kristalıdır.",
+        "3": "NaCl bərkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K02-02-02-009"
+  },
+  {
+    "question": "NH₄Cl (Amonium xlorid) birləşməsində ion rabitəsi hansı zərrəciklər arasındadır?",
+    "options": [
+      "N və H atomları arasında",
+      "Molekullar arasında",
+      "Yalnız H və Cl arasında",
+      "NH₄⁺ (amonium kationu) və Cl⁻ (xlorid anionu) arasında"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Amonium duzlarında mürəkkəb NH₄⁺ kationu ilə Cl⁻ anionu arasında elektrostatik İon rabitəsi mövcuddur (N və H arasında isə kovalent rabitə var).",
+      "distractors": {
+        "0": "N və H arasında kovalent rabitə var.",
+        "1": "İonlar arasındadır.",
+        "2": "H və Cl rabitədə deyil ion NH₄⁺ ilə Cl⁻ arasındadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K02-02-02-010"
+  },
+  {
+    "question": "AlCl₃ birləşməsində ion rabitəsi ilə yanaşı kovalent xarakterin artmasının polzarlaşma nəzəriyyəsi ilə izahını təhlil edin.",
+    "options": [
+      "Al³⁺ kationunun kiçik radiuslu və +3 yüklü olması Cl⁻ anionunun elektron buludunu özünə tərəf çəkərək deformasiya (polyarlaşma) etməsi",
+      "Al-ın qeyri-metal olması",
+      "Rabitənin olmaması",
+      "Cl-un metal olması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kiçik radiuslu +3 yüklü Al³⁺ kationu Cl⁻-in elektron buludunu deformasiya edir (müştərək cütə yaxınlaşdırır), nəticədə kovalent xarakter artır.",
+      "distractors": {
+        "1": "Al metaldır.",
+        "2": "Rabitə var.",
+        "3": "Cl qeyri-metaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K04-03-03-011"
+  },
+  {
+    "question": "19K⁺ və 17Cl⁻ ionlarının oktet elektron konfiqurasiyalarını müqayisə edin.",
+    "options": [
+      "K⁺-da 8, Cl⁻-də 6 e- var",
+      "K⁺ 4s¹ qalır",
+      "Hər iki ion 18Ar ([Ar] 3s² 3p⁶) təsirsiz qazının 8 elektronlu oktetinə malikdir",
+      "Cl⁻ dupletə çatır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: K⁺ (19-1=18 e-) və Cl⁻ (17+1=18 e-) izoelektrondur və 18Ar-ın xarici 8 elektronlu tam dolmuş 3s² 3p⁶ oktetini əmələ gətirir.",
+      "distractors": {
+        "0": "Cl⁻ 1e- alıb 8 e- olur.",
+        "1": "4s¹ e- verilir.",
+        "3": "Cl⁻ 8 e- oktetdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K04-03-03-012"
+  },
+  {
+    "question": "İon rabitəli duzların suda həll olduqda ionlara dissosiasiya olunması və elektrolit olmasının səbəbini təhlil edin.",
+    "options": [
+      "Su molekullarının dipolları ionları cəzb edərək kristal qəfəsi dağıdır və sərbəst hərəkət edən hidratlaşmış ionlar yaradır",
+      "Su ionları parçalayır atom edir",
+      "Elektrik cərəyanı vermir",
+      "Ionlar yox olur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Polyar H₂O dipolları Na⁺ və Cl⁻ ionlarını əhatə edib cəzb edir (solvatasiya/hidratlaşma), kristal dağılır və ionlar cərəyan keçirici sərbəst elektrolit olur.",
+      "distractors": {
+        "1": "İonlar ion olaraq qalır.",
+        "2": "Elektrolit cərəyanı keçirir.",
+        "3": "İonlar həll olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K04-03-03-013"
+  },
+  {
+    "question": "NaNO₃ duzunda neçə növ kimyəvi rabitə (ion və kovalent) vardır?",
+    "options": [
+      "Rabitə yoxdur",
+      "Na⁺ kationu ilə NO₃⁻ anionu arasında İon rabitəsi, NO₃⁻ ionunun daxilində (N və O) Polyar kovalent rabitə var",
+      "Yalnız ion rabitəsi var",
+      "Yalnız kovalent rabitə var"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mürəkkəb oxsi-duzlarda metal kationu ilə mürəkkəb anion arasında İon rabitəsi, anion daxilində qeyri-metallar arasında Polyar kovalent rabitə olur.",
+      "distractors": {
+        "0": "Rabitələr mövcuddur.",
+        "2": "N və O arasında kovalent rabitə də var.",
+        "3": "Na⁺ və NO₃⁻ arasında ion rabitəsi də var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K04-03-03-014"
+  },
+  {
+    "question": "İon rabitəli birləşmələrin təbiətdə və məişətdə (xörək duzu NaCl, soda Na₂CO₃, gəc CaSO₄) mühüm rolunu qiymətləndirin.",
+    "options": [
+      "Bioloji orqanizmlərin osmotik təzyiqini, mineral skeletini və sənayenin xammal bazasını təşkil etməsi",
+      "Yalnız qaz kimi istifadə olunması",
+      "Təbiətdə zərərli olması",
+      "Kimyaya ait olmaması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İon birləşmələri (duzlar və minerallar) qanın plazmasında, sümüklərdə (Ca₃(PO₄)₂) və sənayedə əvəzsiz mineral maddələrdir.",
+      "distractors": {
+        "1": "İon maddələri bərkdir.",
+        "2": "Həyat üçün həyati vacibdir.",
+        "3": "Kimyanın mühüm sahəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.2 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0202-02K04-03-03-015"
+  },
+  {
+    "question": "Kovalent rabitə necə yaradılır?",
+    "options": [
+      "Elektronun bir atomdan digərinə tam keçməsi ilə",
+      "İonların elektrostatik cəzbi ilə",
+      "Elektron qazı ilə",
+      "Qeyri-metal atomlarının cütləşməmiş elektronlarının müştərək elektron cütü əmələ gətirməsi ilə"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kovalent rabitə atomların cütləşməmiş elektronlarının orbitallarının örtülməsi və müştərək (ümumi) elektron cütlərinin yaranması ilə əmələ gəlir.",
+      "distractors": {
+        "0": "İon rabitəsidir.",
+        "1": "İon rabitəsidir.",
+        "2": "Metal rabitəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K01-01-01-001"
+  },
+  {
+    "question": "Eyni qeyri-metal atomları arasında əmələ gələn kovalent rabitə necə adlanır?",
+    "options": [
+      "Polyar kovalent rabitə",
+      "İon rabitəsi",
+      "Hidrogen rabitəsi",
+      "Qeyri-polyar kovalent rabitə"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektromənfiliyi bərabər olan eyni atomlar arasında (H₂, O₂, N₂, Cl₂) elektron cütü simmetrik paylanır və qeyri-polyar kovalent rabitə olur.",
+      "distractors": {
+        "0": "Fərqli qeyri-metallar arasındadır.",
+        "1": "Metal-qeyri-metaldır.",
+        "2": "Molekullar arasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K01-01-01-002"
+  },
+  {
+    "question": "Fərqli qeyri-metal atomları arasında (məsələn, HCl, H₂O, NH₃) əmələ gələn kovalent rabitə necə adlanır?",
+    "options": [
+      "İon rabitəsi",
+      "Qeyri-polyar kovalent rabitə",
+      "Polyar kovalent rabitə",
+      "Metal rabitəsi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektromənfiliyi fərqli olan atomlar arasında müştərək elektron cütü daha elektromənfi atoma tərəf sürüşür və polyar kovalent rabitə yaranır.",
+      "distractors": {
+        "0": "Metal-qeyri-metaldır.",
+        "1": "Eyni atomlardadır.",
+        "3": "Metallardadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K01-01-01-003"
+  },
+  {
+    "question": "O₂ molekulunda atomlar arasında neçə kovalent rabitə (qatlıq) vardır?",
+    "options": [
+      "İkiqat kovalent rabitə (O = O)",
+      "İon rabitəsi",
+      "Üçqat kovalent rabitə",
+      "Tək qat kovalent rabitə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Oksigen atomunun xarici səviyyəsində 2 cütləşməmiş e⁻ var; 2 O atomu 2 müştərək e⁻ cütü (O = O ikiqat rabitə) yaradır.",
+      "distractors": {
+        "1": "Kovalentdir.",
+        "2": "Üçqat N₂-dədir.",
+        "3": "Tək qat H₂ və Cl₂-dədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K01-01-01-004"
+  },
+  {
+    "question": "Donor-atseptor mexanizmi üzrə kovalent rabitə əmələ gəldikdə \"atseptor\" nədir?",
+    "options": [
+      "Bölünməmiş elektron cütü verən atom",
+      "Proton verən nüvə",
+      "Boş orbital təqdim edən atom və ya ion",
+      "Mənfi ion"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Donor-atseptor rabitəsində bölünməmiş e⁻ cütünü təqdim edən Donor, boş orbitalını verən atseptor adlanır (məs. NH₄⁺-də H⁺ atseptordur).",
+      "distractors": {
+        "0": "Cüt verən donordur.",
+        "1": "Protonla bağlı deyil.",
+        "3": "Atseptor müsbət və ya neytraldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K01-01-01-005"
+  },
+  {
+    "question": "N₂ (Azot) molekulunda N ≡ N üçqat rabitəsinin möhkəmliyini və reaksiyaya daxilolma passivliyini təhlil edin.",
+    "options": [
+      "N₂-də ion rabitəsi var",
+      "3 müştərək elektron cütü hesabına rabitə enerjisi çox yüksəkdir (945 kJ/mol), bu sabəbdən N₂ otaq t-də çox passiv qazdır",
+      "N₂ çox aktivdir dərhal yanır",
+      "Rabitə zəifdir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Azot molekulunda 1 σ və 2 π rabitəsindən ibarət çox möhkəm N ≡ N üçqat rabitəsi var; onu qırmaq üçün böyük enerji tələb olunur.",
+      "distractors": {
+        "0": "Qeyri-polyar kovalentdir.",
+        "2": "N₂ passiv qazdır atmosferin 78%-idir.",
+        "3": "Rabitə ən möhkəmdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K02-02-02-006"
+  },
+  {
+    "question": "CH₄ (Metan) və C₂H₄ (Etilen) molekullarında C-H və C-C rabitələrini təhlil edin.",
+    "options": [
+      "CH₄-də 4 polyar kovalent C-H rabitəsi; C₂H₄-də 4 polyar C-H və 1 ikiqat C=C qeyri-polyar kovalent rabitə var",
+      "Etilendə üçqat rabitə var",
+      "Hər ikisi ion rabitəlidir",
+      "CH₄ qeyri-polyardır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fərqli atomlar (C və H) arasında polyar kovalent, eyni atomlar (C=C) arasında qeyri-polyar kovalent rabitə yaranır.",
+      "distractors": {
+        "1": "Etilendə ikiqat C=C var.",
+        "2": "Qeyri-metallar kovalentdir.",
+        "3": "Rabitələri polyardır (molekul özü simmetrikdir)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K02-02-02-007"
+  },
+  {
+    "question": "σ (siqma) və π (pi) rabitələrinin əmələ gəlmə fərqini təhlil edin.",
+    "options": [
+      "Tək rabitə π-dir",
+      "σ-rabitə electron buludlarının nüvələri birləşdirən ox boyunca (eksial) örtülməsindən, π-rabitə isə oxa perpendikulyar yan örtülmədən yaranır",
+      "σ-rabitə yan örtülmədir",
+      "π-rabitə daha möhkəmdir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: ox boyunca örtülmə maximal örtülmə (σ) verir və möhkəmdir; p-orbitallarının yan örtülməsi (π) nisbətən zəifdir.",
+      "distractors": {
+        "0": "Tək rabitə həmişə σ-dır.",
+        "2": "σ ox boyunca örtülmədir.",
+        "3": "σ-rabitə π-dən möhkəmdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K02-02-02-008"
+  },
+  {
+    "question": "H₃O⁺ (Hidroksonium) ionunda kovalent rabitələrin yaranma mexanizmlərini müqayisə edin.",
+    "options": [
+      "Hidrogen donor Oksigen atseptordur",
+      "3 rabitə də donor-atseptordur",
+      "2 kovalent rabitə müştərək elektron cütləri ilə, 1 kovalent rabitə donor-atseptor mexanizmi ilə (O donor, H⁺ atseptor)",
+      "Bütün rabitələr ion rabitəsidir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: H₂O-da 2 rabitə müştərək cütlərlədir; Oksigen bölünməmiş e⁻ cütünü H⁺-ın boş 1s orbitalına verərək 3-cü rabitəni (donor-atseptor) yaradır.",
+      "distractors": {
+        "0": "Oksigen donordur.",
+        "1": "Yalnız 1-i donor-atseptordur.",
+        "3": "Kovalent rabitələrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K02-02-02-009"
+  },
+  {
+    "question": "CO (Dəm qazı) molekulunda rabitə qatlığını və donor-atseptor rabitəsini təhlil edin.",
+    "options": [
+      "CO ion birləşməsidir",
+      "C donor O atseptordur",
+      "C ≡ O üçqat rabitəsindən 2-si müştərək cütlərlə, 1-i Oksigenin donorluğu ilə donor-atseptor mexanizmi ilə yaranıb",
+      "CO-da ikiqat rabitə var"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Karbon III valentli göstərmək üçün Oksigen öz bölünməmiş e⁻ cütünü C-nin boş 2p orbitalına verir: :C ≡ O: (üçqat rabitə).",
+      "distractors": {
+        "0": "CO kovalent qazdır.",
+        "1": "Oksigen donordur.",
+        "3": "CO-da üçqat rabitə var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K02-02-02-010"
+  },
+  {
+    "question": "H₂O və H₂S molekullarında H-O və H-S rabitələrinin polyarlığını müqayisə edin.",
+    "options": [
+      "Polyarlıqları eynidir",
+      "H-O rabitəsi H-S-dən daha polyardır, çünki Oksigenin elektromənfiliyi (3.5) Kükürddən (2.5) böyükdür",
+      "H₂O qeyri-polyardır",
+      "H-S rabitəsi daha polyardır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: ΔEM(O-H) = 3.5 - 2.1 = 1.4; ΔEM(S-H) = 2.5 - 2.1 = 0.4. Elektromənfilik fərqi böyük olan H-O rabitəsi daha polyardır.",
+      "distractors": {
+        "0": "EM fərqləri müxtəlifdir.",
+        "2": "H₂O qüvvətli polyardır.",
+        "3": "Oksigenin EM-i daha böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K04-03-03-011"
+  },
+  {
+    "question": "CO₂ (Karbon dioksid) molekulunda C=O rabitələri polyar olduğu halda molekulun bütövlükdə qeyri-polyar olmasının səbəbini təhlil edin.",
+    "options": [
+      "Oksigen elektron çəkmir",
+      "Molekulun xətti (O=C=O, 180°) simmetrik formaya malik olması və dipol momentlərinin bir-birini ləğv etməsi",
+      "CO₂ ion birləşməsidir",
+      "C=O rabitəsi qeyri-polyardır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: CO₂ xətti sp-hibridləşmiş molekuldur; 180° bucaq altında iki bərabər əks yönəlmiş dipol momenti vektor kimi sıfırlanır (μ = 0).",
+      "distractors": {
+        "0": "Oksigen elektron çəkir.",
+        "2": "CO₂ kovalentdir.",
+        "3": "Rabitə polyardır, molekul qeyri-polyardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K04-03-03-012"
+  },
+  {
+    "question": "NH₃ və BF₃ molekullarının fəza quruluşunu və polyarlığını müqayisə edin.",
+    "options": [
+      "Hər ikisi polyardır",
+      "Hər ikisi xəttidir",
+      "NH₃ - Üçbucaqlı piramida (polyar dipol), BF₃ - Müstəvi üçbucaq (120° simmetrik, qeyri-polyar)",
+      "BF₃ piramidadır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: NH₃-də Azotda 1 bölünməmiş e⁻ cütü olduğu üçün piramidadır (polyar); BF₃-də Bor sp² hibridləşib simmetrik müstəvi üçbucaqdır (qeyri-polyar).",
+      "distractors": {
+        "0": "BF₃ simmetrik qeyri-polyardır.",
+        "1": "Xətti deyil müstəvi/piramidadır.",
+        "3": "BF₃ müstəvi üçbucaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K04-03-03-013"
+  },
+  {
+    "question": "Kovalent rabitənin saturation (doyma) xassəsinin mahiyyətini təhlil edin.",
+    "options": [
+      "Rabitənin qırılmaması",
+      "İstənilən sayda rabitə qurması",
+      "İonların cəzb olunması",
+      "Atomun müəyyən sayda cütləşməmiş elektronu olduğu üçün yalnız məhdud sayda kovalent rabitə əmələ gətirə bilməsi (valentlik)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kovalent rabitə doyan rabitədir; atom öz valent orbitallarının və elektronlarının sayı qədər rabitə yarada bilər (məs. C 4, H 1, O 2).",
+      "distractors": {
+        "0": "Rabitələr qırıla bilər.",
+        "1": "İnterion rabitə doymayandır, kovalent doyandır.",
+        "2": "İon rabitəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K04-03-03-014"
+  },
+  {
+    "question": "Kovalent rabitənin üzvi kimyada, DNT molekulunda və bütün canlı həyatın təməlindəki müstəsna rolunu qiymətləndirin.",
+    "options": [
+      "Su həll olmaması",
+      "Elektrik naqili olması",
+      "Zülalların, nuklein turşularının (DNT/RNT), karbohidratların və həyat üçün lazımi biomolekulların möhkəm karkasını təmin etməsi",
+      "Yalnız cansız süxurlarda olması"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kovalent rabitəni və onun xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Karbon, Hidrogen, Oksigen və Azot atomları arasında yaranan polyar və qeyri-polyar kovalent rabitələr canlı aləmin və biologiyanın təməl dayaqlarıdır.",
+      "distractors": {
+        "0": "Biomolekullar suda reaksiya verir.",
+        "1": "Metallar naqildir.",
+        "3": "Bütün canlı biomolekullardadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.3 Kovalent rabitə",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0203-03K04-03-03-015"
+  }
+]

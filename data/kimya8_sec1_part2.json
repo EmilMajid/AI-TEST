@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Elementləri oxşar xassələrinə görə ilk dəfə 3-3 qruplaşdıran (Triadalar qanunu) alim kimdir?",
+    "options": [
+      "H.Mozli",
+      "C.Nyuland",
+      "D.İ.Mendeleyev",
+      "İ.V.Döbereyner"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Alman kimyaçısı İ.V.Döbereyner 1829-cu ildə oxşar xassəli elementləri üç-üç qruplaşdıraraq Triadalar qanununu kəşf etmişdir.",
+      "distractors": {
+        "0": "Mozli atom nömrəsini kəşf etmişdir.",
+        "1": "Nyuland Oktavalar qanununu kəşf etmişdir.",
+        "2": "Mendeleyev Dövri qanunu kəşf etmişdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-001"
+  },
+  {
+    "question": "Döbereynerin Triadalar qanununa görə triadadakı orta elementin atom kütləsi necə hesablanırdı?",
+    "options": [
+      "Birinci elementin kütləsinin iki misli olurdu",
+      "Birinci və üçüncü elementlərin kütlələrinin cəminin yarısına təqribən bərabər olurdu",
+      "Bütün elementlərin kütlələri hasilinə bərabər olurdu",
+      "Üçüncü elementin kütləsinə bərabər olurdu"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Triadada ortadakı elementin nisbi atom kütləsi kənar iki elementin kütlələri cəminin yarısına bərabər idi: Ar(2) ≈ (Ar(1) + Ar(3)) / 2.",
+      "distractors": {
+        "0": "İki misli deyil ədədi ortadır.",
+        "2": "Hasil deyil ədədi ortadır.",
+        "3": "Üçüncü element kütləsi böyük idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-002"
+  },
+  {
+    "question": "Elementlərin atom kütlələrinin artması sırası ilə hər 8-ci elementin birinciyə oxşar xassə göstərdiyini (Oktavalar qanunu) tapan alim kimdir?",
+    "options": [
+      "C.Nyuland",
+      "A.Şankurtua",
+      "L.Meyer",
+      "İ.Döbereyner"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İngilis alimi C.Nyuland 1865-ci ildə elementləri musiqi notlarına bənzədərək Oktavalar qanununu (hər 8-ci elementin oxşarlığı) təklif etmişdir.",
+      "distractors": {
+        "1": "Şankurtua spiral silindr təklif etmişdi.",
+        "2": "Meyer atom həcmi əyrisini qurmuşdu.",
+        "3": "Döbereyner Triadalar qanunudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-003"
+  },
+  {
+    "question": "D.İ.Mendeleyev Dövri qanunu hansı ildə kəşf etmişdir?",
+    "options": [
+      "1869-cu ildə",
+      "1913-cü ildə",
+      "1945-ci ildə",
+      "1800-cü ildə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: D.İ.Mendeleyev 1869-cu il martın 1-də Dövri qanunu kəşf etmiş və ilk Dövri cədvəli tərtib etmişdir.",
+      "distractors": {
+        "1": "1913-cü ildə Mozli rentgen şüalarını kəşf etdi.",
+        "2": "1945-ci il müasir dövrdür.",
+        "3": "1800-cü ildə hələ kəşf olunmamışdı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-004"
+  },
+  {
+    "question": "Mendeleyevin ilk Dövri qanununda elementlərin xassələrinin nədən asılı olduğu bildirilirdi?",
+    "options": [
+      "Atom nömrəsindən",
+      "Valenslikdən",
+      "Neytron sayından",
+      "Atom kütlələrinin artmasından"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mendeleyevin ilk formulasiyasına görə elementlərin xassələri onların atom kütlələrinin artmasından dövri asılı idi.",
+      "distractors": {
+        "0": "Atom nömrəsi müasir dövri qanundur (Mozli).",
+        "1": "Valenslik törəmə xassədir.",
+        "2": "Neytron sayı əsas deyildi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-005"
+  },
+  {
+    "question": "Li (Ar=7) və K (Ar=39) Döbereyner triadasına daxildir. Natriumun (Na) nisbi atom kütləsini Triadalar qanununa görə hesablayın.",
+    "options": [
+      "30",
+      "23",
+      "46",
+      "16"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ar(Na) = (Ar(Li) + Ar(K)) / 2 = (7 + 39) / 2 = 46 / 2 = 23.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "Cəmidir yarısı deyil.",
+        "3": "Fərqidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-006"
+  },
+  {
+    "question": "Mendeleyev Dövri cədvəli tərtib edərkən kəşf olunmamış elementlərin yerini necə saxlamışdı?",
+    "options": [
+      "Həmin elementləri imtina etmişdi",
+      "Suallarla əvəz etmişdi",
+      "Cədvəldə boş xanalar saxlayaraq xassələrini öncədən proqnozlaşdırmışdı",
+      "Bütün boş yerləri doldurmuşdu"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mendeleyev qanunauyğunluğa inamla cədvəldə hələ kəşf olunmamış elementlər üçün boş xanalar saxlamış və onların atom kütləsi ilə xassələrini dəqiqliklə tətbiq etmişdir.",
+      "distractors": {
+        "0": "İmtina etməmişdi xəbər vermişdi.",
+        "1": "Elmi proqnoz vermişdi.",
+        "3": "Boş yerlər qalmışdı."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-007"
+  },
+  {
+    "question": "Mendeleyevin \"Eka-silisium\" adı ilə xassələrini öncədən bildirdiyi və sonradan K.Vinkler tərəfindən kəşf edilən element hansıdır?",
+    "options": [
+      "Texnesium (Tc)",
+      "Qallium (Ga)",
+      "Skandium (Sc)",
+      "Germanium (Ge)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mendeleyevin Ekasilisium dediyi element 1886-cı ildə Almaniyada K.Vinkler tərəfindən kəşf olundu və Germanium adlandırıldı.",
+      "distractors": {
+        "0": "Texnesium süni elementdir.",
+        "1": "Ekaboron Qalliumdur (Lekoq de Buabodran).",
+        "2": "Ek alüminium Skandiumdur (Nilson)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-008"
+  },
+  {
+    "question": "1913-cü ildə H.Mozlinin rentgen spektri təcrübələri ilə kəşf etdiyi və Dövri qanunu təkmilləşdirən əsas kəmiyyət nə idi?",
+    "options": [
+      "Neytronların kütləsi",
+      "Atom kütləsi Ar",
+      "Atomun radiusu",
+      "Atomun nüvə yükü (atom nömrəsi Z)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Henri Mozli müəyyən etdi ki, Dövri qanunun təməlində atom kütləsi deyil, atom nüvəsinin yükü (Z - sıra nömrəsi) dayanır.",
+      "distractors": {
+        "0": "Neytron Z-ni vermir.",
+        "1": "Kütlə Mendeleyevin ilk variantı idi.",
+        "2": "Radius fiziki kəmiyyətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-009"
+  },
+  {
+    "question": "Lothar Meyerin Dövri sistemin inkişafındakı töhfəsi nə olmuşdur?",
+    "options": [
+      "Rentgen şüalarını kəşf etmişdi",
+      "Oktavalar qanununu tapmışdı",
+      "Elementlərin atom həcmlərinin atom kütləsindən asılılıq əyrisini quraraq Dövri sistem təklif etmişdir",
+      "Protonu tapmışdı"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Alman alimi Lothar Meyer 1864-1869-cu illərdə atom həcmlərinin dövriliyini göstərən grafik quraraq Mendeleyevə yaxın cədvəl tərtib etmişdi.",
+      "distractors": {
+        "0": "Rentgen şüaları Mozliyə aiddir.",
+        "1": "Oktavalar Nyulanda aiddir.",
+        "3": "Progen Rezerforda aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-010"
+  },
+  {
+    "question": "Cl (35.5), Br (80), I (127) Döbereyner triadasında Bromun hesablanmış atom kütləsi ilə real kütləsini müqayisə edin.",
+    "options": [
+      "Hesablanmış Ar = (35.5 + 127)/2 = 81.25, real Ar=80 (təqribi uyğunluq)",
+      "Dəqiq 80 alınır",
+      "Döbereyner qanununa uyğun deyil",
+      "Hesablanmış Ar 100 alınır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Triada qaydası ilə (35.5 + 127)/2 = 81.25 alınır ki, bu da Bromun həqiqi kütləsinə (80) çox yaxındır.",
+      "distractors": {
+        "1": "Dəqiq 80 deyil 81.25 alınır.",
+        "2": "Qanuna tam uyğundur.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-011"
+  },
+  {
+    "question": "Mendeleyev nə üçün Telur (Te - Ar=127.6) və İod (I - Ar=126.9) elementlərinin atom kütləsi sırasını cədvəlde tərs yerləşdirmişdi?",
+    "options": [
+      "Təsadüfi yerləşdirmişdi",
+      "Kütlələri bilmirdi",
+      "İodun kimyəvi xassələrinə görə halogenlərə (VII A), Telurun introduces kükürdə (VI A) uyğun gəldiyini bildiyi üçün",
+      "Səhvən yerlərini dəyişmişdi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mendeleyev xassələrin oxşarlığını atom kütləsindən üstün tutaraq Te-ni VI gropa, I-u VII gropa yerləşdirdi ki, bu da Mozlinin nüvə yükü kəşfi ilə haqlı çıxdı.",
+      "distractors": {
+        "0": "Qanunauyğun yerləşdirmişdi.",
+        "1": "Kütlələri dəqiq bilirdi.",
+        "3": "Səhv deyil şüurlu elmi addım idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-012"
+  },
+  {
+    "question": "Müasir Dövri qanunun tərifi Mendeleyevin orijinal tərifindən nə ilə fərqlənir?",
+    "options": [
+      "Fərq yoxdur",
+      "Müasir tərifdə xassələr atom kütləsindən deyil, atom nüvəsinin yükündən (Z) asılıdır",
+      "Mendeleyev tərifində protonlar var idi",
+      "Müasir tərifdə dövrilik ləğv olunub"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Orijinal tərif: xassələr atom kütləsindən asılıdır. Müasir tərif: xassələr atom nüvəsinin yükünün (Z) artmasından dövri asılıdır.",
+      "distractors": {
+        "0": "Mühüm konseptual fərq var.",
+        "2": "Mendeleyev dövründə proton kəşf olunmamışdı.",
+        "3": "Dövrilik qalır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-013"
+  },
+  {
+    "question": "Dövri cədvəlin yaranma tarixində Şankurtua silindrinin (Tellurik vint) mahiyyətini təhlil edin.",
+    "options": [
+      "Dövri qanunu rəsmən elan etmişdi",
+      "Bütün elementləri cədvələ yığmışdı",
+      "Süni elementlər sintez etmişdi",
+      "Elementlərin atom kütlələrini 45° bucaq altında silindr üzərində spiral şəklində yerləşdirərək dikey oxşarlığı göstərmişdi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fransız geoloqu Şankurtua 1862-ci ildə elementləri spiral silindr boyunca kütlə sırası ilə düzərək oxşar elementlərin şaquli düşdüyünü göstərmişdi.",
+      "distractors": {
+        "0": "Qanunu Mendeleyev elan etdi.",
+        "1": "Yalnız məlum elementlər idi.",
+        "2": "Süni element daha sonra idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-014"
+  },
+  {
+    "question": "Dövri sistemin kimya elminə gətirdiyi ən böyük metodoloji inqilabı qiymətləndirin.",
+    "options": [
+      "Yalnız fizika qanunu oldu",
+      "Elementlərin sayını 100-ə sabitlədi",
+      "Kimyəvi reaksiyaları ləğv etdi",
+      "Kimyanı təsviri elmdən faktların öncədən xəbər verildiyi və nəzəri sistemləşdirildiyi dəqiq elmlər sırasına ucaltdı"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Dövri cədvəlin tarixini və inkişafını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri sistem dağınıq kimyəvi faktları vahid təbiət qanunu ətrafında birləşdirərək kimyanı proqnozlaşdırıcı dəqiq eləmə çevirdi.",
+      "distractors": {
+        "0": "Kimya və fizikanın ortaq təməlidir.",
+        "1": "Element sayısı davamlı artır.",
+        "2": "Reaksiyaları izah etdi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3. Dövri cədvəlin tarixi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-015"
+  }
+]

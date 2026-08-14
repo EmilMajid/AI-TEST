@@ -1,0 +1,1505 @@
+[
+  {
+    "question": "Maye və qazlara verilən xarici təzyiqin dəyişmədən bütün istiqamətlərə bərabər ötürülməsi haqqında qanun necə adlanır?",
+    "options": [
+      "Paskal qanunu",
+      "Arximed qanunu",
+      "Huk qanunu",
+      "Nyutonun I qanunu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maye və qazlara olunan xarici təzyiqin heç bir dəyişikliyə uğramadan hər bir nöqtəyə eyni dərəcədə ötürülməsi Paskal qanunudur.",
+      "distractors": {
+        "1": "Arximed itələmə qüvvəsidir.",
+        "2": "Huk elastiklikdir.",
+        "3": "Nyuton inersiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F01-01-01-001"
+  },
+  {
+    "question": "Sükunətdə olan mayenin ağırlıq qüvvəsi hesabına yarattığı təzyiq (hidrostatik təzyiq) hansı düsturla hesablanır?",
+    "options": [
+      "p = ρ × g × h",
+      "p = m × g × h",
+      "p = F / S",
+      "p = ρ × V"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hidrostatik təzyiq düsturu p = ρ × g × h-dır (burada ρ - mayenin sıxlığı, g - sərbəstdüşmə təcili, h - maye sütununun hündürlüyüdür).",
+      "distractors": {
+        "1": "mgh potensial enerjidir.",
+        "2": "F/S ümumi təzyiqdir.",
+        "3": "ρV kütlədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F01-01-01-002"
+  },
+  {
+    "question": "Atmosfer təzyiqini ölçmək üçün istifadə edilən fiziki cihaz hansıdır?",
+    "options": [
+      "Barometr",
+      "Manometr",
+      "Termometr",
+      "Dinamomert"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Atmosfer təzyiqi barometr (civəli və ya aneroid barometr) ilə ölçülür.",
+      "distractors": {
+        "1": "Manometr qab daxilindəki qaz/maye təzyiqini ölçür.",
+        "2": "Termometr temperatur ölçür.",
+        "3": "Dinamometr qüvvə ölçür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F01-01-01-003"
+  },
+  {
+    "question": "Dəniz səviyyəsindən yuxarı dağlara qalxdıqca atmosfer təzyiqi necə dəyişər?",
+    "options": [
+      "Azalar",
+      "Artar",
+      "Dəyişməz",
+      "Əvvəl artar, sonra azalar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Yuxarı qalxdıqca üstümüzdəki hava sütununun hündürlüyü və havanın sıxlığı azaldığı üçün atmosfer təzyiqi azalır (hər 12 m-də təxminən 1 mm civə sütunu).",
+      "distractors": {
+        "1": "Artmaz, azalar.",
+        "2": "Dəyişir.",
+        "3": "Əvvəl artmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F01-01-01-004"
+  },
+  {
+    "question": "Bir-biri ilə birləşdirilmiş müxtəlif formalı qablarda (birləşmiş qablar) eyni növ sükunətdə olan mayenin səviyyələri necə olar?",
+    "options": [
+      "Bütün qablarda eyni hündürlükdə (bərabər) olar",
+      "Enli qabda daha hündür olar",
+      "Nnazik qabda daha hündür olar",
+      "Sıfır olar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Birləşmiş qablar qanununa görə eyni növ mayenin azad səthləri qabların formasından və enindən asılı olmayaraq eyni hündürlükdə durur.",
+      "distractors": {
+        "1": "Enli qabda hündür olmur.",
+        "2": "Nazik qabda kapillyarlıq yoxdursa bərabərdir.",
+        "3": "Sıfır olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F01-01-01-005"
+  },
+  {
+    "question": "Sıxlığı ρ = 1000 kg/m³ olan su sütununun h = 5 m dərinlikdə qabın dibinə göstərdiyi hidrostatik təzyiqi tapın (g = 10 N/kg).",
+    "options": [
+      "50 000 Pa (50 kPa)",
+      "5 000 Pa",
+      "500 Pa",
+      "200 Pa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = ρgh = 1000 kg/m³ × 10 N/kg × 5 m = 50 000 Pa = 50 kPa.",
+      "distractors": {
+        "1": "5 000 Pa g-ni vurmağı unutmaqdır.",
+        "2": "500 Pa sıfır xətasıdır.",
+        "3": "200 Pa bölmə xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "p = ρ × g × h",
+      "p = 1000 × 10 × 5 = 50 000 Pa = 50 kPa"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F02-02-02-006"
+  },
+  {
+    "question": "Hidravlik presin kiçik porşeninin sahəsi S₁ = 5 cm², böyük porşeninin sahəsi S₂ = 100 cm²-dir. Kiçik porşenə F₁ = 50 N qüvvə təsir edərsə, böyük porşendən alınan F₂ qüvvəsini tapın.",
+    "options": [
+      "1000 N (1 kN)",
+      "2.5 N",
+      "100 N",
+      "500 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Paskal qanununa görə F₂ / F₁ = S₂ / S₁ -> F₂ = F₁ × (S₂ / S₁) = 50 N × (100 / 5) = 50 × 20 = 1000 N = 1 kN.",
+      "distractors": {
+        "1": "2.5 N tərs bölmədir (50 × 5/100).",
+        "2": "100 N sahə nisbətidir.",
+        "3": "500 N sıfır xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "F₂ = F₁ × (S₂ / S₁)",
+      "F₂ = 50 × (100 / 5) = 1000 N"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F02-02-02-007"
+  },
+  {
+    "question": "Qabın dibinə göstərilən hidrostatik təzyiq mayenin hansı parametrindən ASILI DEYİLDİR?",
+    "options": [
+      "Qabın dibinin sahəsindən və qabın formasından",
+      "Mayenin sıxlığından",
+      "Maye sütununun hündürlüyündən",
+      "Sərbəstdüşmə təcilindən"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = ρgh düsturunda qabın sahəsi (S) yer almir. Hydrostatik təzyiq qabın formasından və sahəsindən asılı deyil (Hidrostatik paradoks).",
+      "distractors": {
+        "1": "Sıxlıqdan asılıdır (ρ).",
+        "2": "Hündürlükdən asılıdır (h).",
+        "3": "Təcildən asılıdır (g)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "F₂ = F₁ × (S₂ / S₁)",
+      "F₂ = 50 × (100 / 5) = 1000 N"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F02-02-02-008"
+  },
+  {
+    "question": "Torriçelli təcrübəsində dəniz səviyyəsində normal atmosfer təzyiqi neçə mm civə sütununa (mm c.st.) bərabər götürülür?",
+    "options": [
+      "760 mm c.st.",
+      "100 mm c.st.",
+      "76 mm c.st.",
+      "1000 mm c.st."
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Normal atmosfer təzyiqi 0°C-də dəniz səviyyəsində 760 mm c.st.-na bərabərdir (101 325 Pa ≈ 100 kPa).",
+      "distractors": {
+        "1": "100 mm azdır.",
+        "2": "76 mm 10 dəfə azdır.",
+        "3": "1000 mm böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "F₂ = F₁ × (S₂ / S₁)",
+      "F₂ = 50 × (100 / 5) = 1000 N"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F02-02-02-009"
+  },
+  {
+    "question": "Birləşmiş qablara bir-biri ilə qarışmayan su (ρ_su = 1000 kg/m³) və yağ (ρ_yağ = 800 kg/m³) tökülmüşdür. Hansı mayenin sütununun hündürlüyü daha böyük olar?",
+    "options": [
+      "Sıxlığı kiçik olan yağın hündürlüyü daha böyük olar (h_yağ > h_su)",
+      "Suyun hündürlüyü böyük olar",
+      "Hündürlüklər bərabər olar",
+      "Mayelər tökülüb itər"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Birləşmiş qablarda müxtəlif sıxlıqlı mayelerin hündürlükləri sıxlıqları ilə tərs mütənasibdir: ρ₁h₁ = ρ₂h₂. Sıxlığı kiçik olan yağın hündürlüyü daha böyük durmalıdır.",
+      "distractors": {
+        "1": "Suyun sıxlığı böyükdür, hündürlüyü kiçik olar.",
+        "2": "Bərabər eyni sıxlıqda olur.",
+        "3": "Tökülmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "F₂ = F₁ × (S₂ / S₁)",
+      "F₂ = 50 × (100 / 5) = 1000 N"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F02-02-02-010"
+  },
+  {
+    "question": "Su kəməri borusundakı manometr 300 kPa təzyiq göstərir. Kəmərdəki suyun neçə metr hündürlüyə qədər qalxa biləcəyini tapın (ρ_su = 1000 kg/m³, g = 10 N/kg).",
+    "options": [
+      "30 m",
+      "3 m",
+      "300 m",
+      "0.3 m"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = ρgh -> h = p / (ρg) = 300 000 Pa / (1000 × 10) = 300 000 / 10 000 = 30 m.",
+      "distractors": {
+        "1": "3 m 100-ə bölmə xətasıdır.",
+        "2": "300 m sıfır xətasıdır.",
+        "3": "0.3 m bölmədir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "h = p / (ρ × g)",
+      "h = 300 000 / 10 000 = 30 m"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F04-03-03-011"
+  },
+  {
+    "question": "Qabda olan suyun dərinliyi 3 dəfə artırılarsa, hidrostatik təzyiq və təzyiq qüvvəsi necə dəyişər?",
+    "options": [
+      "Həm təzyiq, həm də dibə düşən təzyiq qüvvəsi 3 dəfə artar",
+      "Təzyiq 3 dəfə artar, qüvvə dəyişməz",
+      "Təzyiq dəyişməz",
+      "9 dəfə artar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = ρgh olduğu üçün hündürlük 3 dəfə artdıqda təzyiq p 3 dəfə artar. Qabın dibinə düşən təzyiq qüvvəsi F = p × S = ρghS olduğu üçün o da 3 dəfə artar.",
+      "distractors": {
+        "1": "Qüvvə p artdığı üçün artır.",
+        "2": "Təzyiq artır.",
+        "3": "Kvadratik deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "h = p / (ρ × g)",
+      "h = 300 000 / 10 000 = 30 m"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F04-03-03-012"
+  },
+  {
+    "question": "Böyük porşeninin sahəsi kiçik porşenindən 50 dəfə böyük olan hidravlik pres qüvvədə neçə dəfə qazanc verir (sürtünmə nəzərə alınmır)?",
+    "options": [
+      "50 dəfə qazanc verir",
+      "25 dəfə qazanc verir",
+      "100 dəfə qazanc verir",
+      "Qazanc vermir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Paskal qanununa görə F₂ / F₁ = S₂ / S₁ = 50. Hidravlik pres sahələr nisbəti qədər (50 dəfə) qüvvədə qazanc verir.",
+      "distractors": {
+        "1": "25 yarıya bölməkdir.",
+        "2": "100 2-yə vurmaqdır.",
+        "3": "Qazanc verir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "h = p / (ρ × g)",
+      "h = 300 000 / 10 000 = 30 m"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F04-03-03-013"
+  },
+  {
+    "question": "Gölün h = 20 m dərinliyində tam təzyiqi tapın (atmosfer təzyiqi p_atm = 100 kPa, ρ_su = 1000 kg/m³, g = 10 N/kg).",
+    "options": [
+      "300 kPa (300 000 Pa)",
+      "200 kPa",
+      "100 kPa",
+      "400 kPa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hidrostatik təzyiq p_hid = ρgh = 1000 × 10 × 20 = 200 000 Pa = 200 kPa. Tam təzyiq p_tam = p_atm + p_hid = 100 kPa + 200 kPa = 300 kPa.",
+      "distractors": {
+        "1": "200 kPa yalnız hidrostatik təzyiqdir (atmosfer nəzərə alınmayıb).",
+        "2": "100 kPa yalnız atmosferdir.",
+        "3": "400 kPa toplama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F04-03-03-014"
+  },
+  {
+    "question": "Havanın təzyiqi temperatur yüksəldikdə (sabit həcmdə qapalı qabda) necə dəyişər?",
+    "options": [
+      "Artar (molekulların zərbə sürəti artdığı üçün)",
+      "Azalar",
+      "Dəyişməz",
+      "Sıfırlanar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maye və qazların təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qapalı qabda qaz qızdırıldıqda molekulların xaotik hərəkət sürəti və qabın divarlarına zərbələrinin sayı/şiddəti artır, bu da qazın təzyiqini artırır.",
+      "distractors": {
+        "1": "Azalmaz.",
+        "2": "Dəyişir.",
+        "3": "Sıfırlanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.2 Maye və qazların təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0302-02F04-03-03-015"
+  },
+  {
+    "question": "Mayeyə və ya qaza batırılmış cismə aşağıdan yuxarıya doğru təsir edən itələmə qüvvəsi necə adlanır?",
+    "options": [
+      "Arximed qüvvəsi",
+      "Sürtünmə qüvvəsi",
+      "Elastiklik qüvvəsi",
+      "Cazibə qüvvəsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maye və qazlarda cisimlərə şaquli yuxarı yönələn itələmə qüvvəsi Arximed qüvvəsi adlanır.",
+      "distractors": {
+        "1": "Sürtünmə hərəkətin əksinədir.",
+        "2": "Elastiklik deformasiyadadır.",
+        "3": "Cazibə aşağıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F01-01-01-001"
+  },
+  {
+    "question": "Arximed qüvvəsinin düsturu hansı cavabda düzgün verilmişdir?",
+    "options": [
+      "F_A = ρ_m × g × V_b",
+      "F_A = m × g",
+      "F_A = k × Δx",
+      "F_A = p × S"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Arximed qüvvəsi düsturu F_A = ρ_m × g × V_b-dir (ρ_m - mayenin sıxlığı, V_b - cismin batan hissəsinin həcmidir).",
+      "distractors": {
+        "1": "mg ağırlıqdır.",
+        "2": "kΔx Hukdur.",
+        "3": "pS təzyiq qüvvəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F01-01-01-002"
+  },
+  {
+    "question": "Cismin sıxlığı (ρ_c) mayenin sıxlığından böyük olarsa (ρ_c > ρ_m), cismin üzmə şərti necə olar?",
+    "options": [
+      "Cisim dibə batar",
+      "Cisim mayenin üzünə çıxar",
+      "Cisim daxildə üzər",
+      "Cisim havada uçaram"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Cismin sıxlığı mayenin sıxlığından böyük olduqda (ρ_c > ρ_m) ağırlıq qüvvəsi Arximed qüvvəsindən böyük olur (F_ağ > F_A) və cisim dibə batır.",
+      "distractors": {
+        "1": "Üzə çıxmaq üçün ρ_c < ρ_m olmalıdır.",
+        "2": "Daxildə qalmaq üçün ρ_c = ρ_m olmalıdır.",
+        "3": "Uçmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F01-01-01-003"
+  },
+  {
+    "question": "Cismin sıxlığı mayenin sıxlığından kiçik olarsa (ρ_c < ρ_m), cisim nə edər?",
+    "options": [
+      "Mayenin üzərinə çıxaraq hissəvi bataraq üzər",
+      "Dibə batar",
+      "Tamamilə yox olar",
+      "Qabın dibinə yapışar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: ρ_c < ρ_m olduqda Arximed qüvvəsi ağırlıq qüvvəsindən böyük olur, cisim yuxarı qalxır və həcminin bir hissəsi sudan kənarda qalmaqla surface-də üzür.",
+      "distractors": {
+        "1": "Dibə batmır.",
+        "2": "Yox olmur.",
+        "3": "Yapışmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F01-01-01-004"
+  },
+  {
+    "question": "Arximed qüvvəsinin istiqaməti həmişə necə yönəlir?",
+    "options": [
+      "Şaquli yuxarı",
+      "Şaquli aşağı",
+      "Üfüqi sağa",
+      "Hərəkətin əksinə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Arximed qüvvəsi mayenin alt və üst təzyiqlər fərqindən yarandığı üçün həmişə şaquli yuxarı yönəlir.",
+      "distractors": {
+        "1": "Aşağı ağırlıqdır.",
+        "2": "Üfüqi deyil.",
+        "3": "Hərəkətin əksinə sürtünmədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "p_hid = 1000 × 10 × 20 = 200 kPa",
+      "p_tam = 100 + 200 = 300 kPa"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F01-01-01-005"
+  },
+  {
+    "question": "Suda (ρ_su = 1000 kg/m³) tam batan həcmi V = 0.02 m³ olan cismə təsir edən Arximed qüvvəsini hesablayın (g = 10 N/kg).",
+    "options": [
+      "200 N",
+      "20 N",
+      "2000 N",
+      "50 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F_A = ρ_m × g × V_b = 1000 kg/m³ × 10 N/kg × 0.02 m³ = 200 N.",
+      "distractors": {
+        "1": "20 N sıfır xətasıdır.",
+        "2": "2000 N 0.2 m³ hesablamaqdır.",
+        "3": "50 N bölmə xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "calculation_error",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "F_A = ρ × g × V",
+      "F_A = 1000 × 10 × 0.02 = 200 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F02-02-02-006"
+  },
+  {
+    "question": "Hava mühitində çəkisi P₀ = 50 N olan daş suya batırıldıqda dinamometr P = 30 N göstərir. Daşa təsir edən Arximed qüvvəsini tapın.",
+    "options": [
+      "20 N",
+      "80 N",
+      "1.6 N",
+      "1500 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mayedəki çəki P = P₀ - F_A -> F_A = P₀ - P = 50 N - 30 N = 20 N.",
+      "distractors": {
+        "1": "80 N toplama xətasıdır.",
+        "2": "1.6 N bölmədir.",
+        "3": "1500 N vurmadır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "F_A = P₀ - P",
+      "F_A = 50 - 30 = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F02-02-02-007"
+  },
+  {
+    "question": "Arximed qüvvəsi batırılan cismin hansı parametrindən ASILI DEYİLDİR?",
+    "options": [
+      "Cismin hazırlandığı maddənin sıxlığından və kütləsindən",
+      "Mayenin sıxlığından",
+      "Cismin batmış hissəsinin həcmindən",
+      "Sərbəstdüşmə təcilindən"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F_A = ρ_maye × g × V_batan düsturunda cismin öz sıxlığı (ρ_cisim) yer almır. İki eyni həcmli dəmir və taxta kürə tam suda batırılarsa, onlara eyni Arximed qüvvəsi təsir edər.",
+      "distractors": {
+        "1": "Mayenin sıxlığından asılıdır.",
+        "2": "Həcmdən asılıdır.",
+        "3": "Təcildən asılıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "F_A = P₀ - P",
+      "F_A = 50 - 30 = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F02-02-02-008"
+  },
+  {
+    "question": "Neftin sıxlığı ρ_neft = 800 kg/m³, suyun sıxlığı ρ_su = 1000 kg/m³-dir. Eyni bir cisim növbə ilə neftə və suya tam batırılarsa, Arximed qüvvəsi harada böyük olar?",
+    "options": [
+      "Suda daha böyük olar (suyun sıxlığı böyükdür)",
+      "Neftdə böyük olar",
+      "Hər iki mayedə eyni olar",
+      "Sürtünmədən asılıdır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F_A = ρ_m g V. Həcm eyni olduqda Arximed qüvvəsi mayenin sıxlığı ilə düz mütənasibdir. ρ_su > ρ_neft olduğu üçün suda Arximed qüvvəsi böyükdür.",
+      "distractors": {
+        "1": "Neftin sıxlığı azdır.",
+        "2": "Sıxlıqlar fərqli deyə eyni olmur.",
+        "3": "Sürtünmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "F_A = P₀ - P",
+      "F_A = 50 - 30 = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F02-02-02-009"
+  },
+  {
+    "question": "Təbiətdə buzu dəniz suyunda üzərkən aysberqlərin yalnız 1/10 hissəsinin sudan yuxarıda görünməsinin fiziki səbəbi nədir?",
+    "options": [
+      "Buzun sıxlığının (900 kg/m³) suyun sıxlığına (1000 kg/m³) çox yaxın olması",
+      "Buzun kütləsinin sıfır olması",
+      "Suyun temperaturunun donması",
+      "Arximed qüvvəsinin sıfırlanması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Üzmə şərtinə görə V_batan / V_ümumi = ρ_buz / ρ_su = 900 / 1000 = 0.9 (90%). Həcmin 90%-i suyun altında, yalnız 10%-i suyun üstündə görünür.",
+      "distractors": {
+        "1": "Kütlə var.",
+        "2": "Temperatur dondurur amma nisbət sıxlıqdır.",
+        "3": "Arximed sıfır deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "F_A = P₀ - P",
+      "F_A = 50 - 30 = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F02-02-02-010"
+  },
+  {
+    "question": "Kütləsi 600 g (0.6 kg) və həcmi 1000 cm³ (0.001 m³) olan ağac parçası suya (ρ = 1000 kg/m³) atılır. Ağacın suda üzən zaman batmış hissəsinin həcmini tapın.",
+    "options": [
+      "600 cm³ (0.0006 m³)",
+      "1000 cm³",
+      "400 cm³",
+      "500 cm³"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Üzən cisim üçün F_A = F_ağ -> ρ_su × g × V_b = m × g -> V_b = m / ρ_su = 0.6 kg / 1000 kg/m³ = 0.0006 m³ = 600 cm³.",
+      "distractors": {
+        "1": "1000 cm³ tam batma halıdır.",
+        "2": "400 cm³ sudan kənarda qalan həcmdir.",
+        "3": "500 cm³ yarıya bölməkdir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "typical_mistake",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "V_b = m / ρ_su",
+      "V_b = 0.6 / 1000 = 0.0006 m³ = 600 cm³"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F04-03-03-011"
+  },
+  {
+    "question": "Həcmi V olan metal kürə kerosinə (ρ_k = 800 kg/m³) batırıldıqda ona 16 N Arximed qüvvəsi təsir edir. Həmin kürə suya (ρ_s = 1000 kg/m³) batırılarsa, ona təsir edən Arximed qüvvəsi neçə N olar?",
+    "options": [
+      "20 N",
+      "16 N",
+      "32 N",
+      "12.8 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F_A1 / F_A2 = ρ_1 / ρ_2 -> 16 / F_A2 = 800 / 1000 = 0.8 -> F_A2 = 16 / 0.8 = 20 N.",
+      "distractors": {
+        "1": "16 N eyni qalmaz (sıxlıq artır).",
+        "2": "32 N 2-yə vurmadır.",
+        "3": "12.8 N 0.8-ə vurmadır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "F_A2 = F_A1 × (ρ_su / ρ_ker)",
+      "F_A2 = 16 × (1000 / 800) = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F04-03-03-012"
+  },
+  {
+    "question": "Arestov (sıxlıqölçən) cihazının müxtəlif mayelərə batırılması zamanı iş prinsipi hansı qanuna əsaslanır?",
+    "options": [
+      "Arximed qanununa (mayenin sıxlığı azaldıqda cihaz daha dərinə batır)",
+      "Paskal qanununa",
+      "Huk qanununa",
+      "Ohm qanununa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Areometr cisimlərin üzmə şərtinə (Arximed qanununa) əsaslanır. Mayenin sıxlığı kiçik olduqda cisim daha çox batır və üzərindəki şkala ilə sıxlıq ölçülür.",
+      "distractors": {
+        "1": "Paskal təzyiqdir.",
+        "2": "Huk elastiklikdir.",
+        "3": "Ohm elektrikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "F_A2 = F_A1 × (ρ_su / ρ_ker)",
+      "F_A2 = 16 × (1000 / 800) = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F04-03-03-013"
+  },
+  {
+    "question": "Dəniz suyunda (ρ = 1030 kg/m³) üzen gəmi çay suyuna (ρ = 1000 kg/m³) keçdikdə gəminin suya batma dərinliyi (oturumu) necə dəyişər?",
+    "options": [
+      "Batma dərinliyi artar (çay suyunun sıxlığı kiçik olduğu üçün daha çox batar)",
+      "Batma dərinliyi azalar",
+      "Dəyişməz",
+      "Gəmi batar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Gəminin kütləsi sabit olduğu üçün Arximed qüvvəsi dəyişmir (F_A = mg). Sıxlıq azalanda (1030 -> 1000) Arximed qüvvəsini saxlamaq üçün batan həcm (V_b = F_A / ρg) artmalıdır.",
+      "distractors": {
+        "1": "Azalmaz, artar.",
+        "2": "Dəyişir.",
+        "3": "Tam batmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "F_A2 = F_A1 × (ρ_su / ρ_ker)",
+      "F_A2 = 16 × (1000 / 800) = 20 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F04-03-03-014"
+  },
+  {
+    "question": "Kütləsi m = 2.7 kg və sıxlığı ρ_c = 2700 kg/m³ olan alüminium kürə suya (ρ_su = 1000 kg/m³) tam batırılmışdır. Kürəyə təsir edən əvəzləyici (aşağı yönələn) qüvvəni tapın (g = 10 N/kg).",
+    "options": [
+      "17 N",
+      "27 N",
+      "10 N",
+      "37 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Arximed qüvvəsi və üzmə şərtlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kürənin həcmi V = m / ρ_c = 2.7 / 2700 = 0.001 m³. Ağırlıq qüvvəsi F_ağ = mg = 2.7 × 10 = 27 N. Arximed qüvvəsi F_A = ρ_su g V = 1000 × 10 × 0.001 = 10 N. Əvəzləyici qüvvə F_əv = F_ağ - F_A = 27 N - 10 N = 17 N.",
+      "distractors": {
+        "1": "27 N yalnız ağırlıqdır.",
+        "2": "10 N yalnız Arximed qüvvəsidir.",
+        "3": "37 N toplama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "typical_mistake",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "3.3 Arximed qüvvəsi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0303-03F04-03-03-015"
+  },
+  {
+    "question": "Sualtı qayıqların (submarinlərin) dənizə batması və suyun üzərinə çıxması hansı fiziki prinsiplə idarə olunur?",
+    "options": [
+      "Ballast çənlərinə su doldurub-boşaltmaqla qayığın orta sıxlığını və çəkisini dəyişmək (Arximed qanunu)",
+      "Mühərrikin rəngini dəyişməklə",
+      "Lövbərləri qırmaqla",
+      "Göyərtəni bəzəməklə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sualtı qayıq suyun altına batmaq üçün ballast çənlərinə su doldurur (orta sıxlıq artır, F_ağ > F_A). Suyun üzərinə çıxmaq üçün havanı vurub suyu çəndən sıxıb çıxarır (sıxlıq azalır, F_A > F_ağ).",
+      "distractors": {
+        "1": "Rəngə aid deyil.",
+        "2": "Lövbərə aid deyil.",
+        "3": "Göyərtəyə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F01-01-01-001"
+  },
+  {
+    "question": "Hava şarlarının (aerostatların və ya dirijablların) havaya qalxması üçün şarın daxilinə hansı qazlar doldurulur?",
+    "options": [
+      "Havanın sıxlığından kiçik sıxlığa malik olan helium və ya qızdırılmış hava",
+      "Karbon qazı",
+      "Kükürd qazı",
+      "Ağır oksigen qazı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hava şarının atmosferdə yuxarı qalxması üçün şarın daxilindəki qazın sıxlığı ətraf havanın sıxlığından kiçik olmalıdır (ρ_qaz < ρ_hava), buna görə helium və ya istiliklə genişləndirilmiş hava istifadə olunur.",
+      "distractors": {
+        "1": "Karbon qazı havadan ağırdır.",
+        "2": "Kükürd ağırdır.",
+        "3": "Oksigen ağırdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F01-01-01-002"
+  },
+  {
+    "question": "Avtomobillərdə tormoz pedalına basıldıqda tormoz bəndlərinin sıxılması hansı texniki sistemin köməyilə həyata keçirilir?",
+    "options": [
+      "Hidravlik əyləc sistemi (Paskal qanunu)",
+      "Elektrik qövsü",
+      "Optik linzalar",
+      "Nüvə reaktoru"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Avtomobillərin hidravlik tormoz sistemi Paskal qanununa əsaslanır: tormoz mayesinə olunan təzyiq dəyişmədən tormoz silindrlərinə ötürülür və təkərlər tormozlanır.",
+      "distractors": {
+        "1": "Elektrik qövsü deyil.",
+        "2": "Optik linza işıq üçündür.",
+        "3": "Nüvə reaktoru deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F01-01-01-003"
+  },
+  {
+    "question": "Dənizin nəhəng dərinliklərini (məsələn, Marian çökəkliyini) tədqiq etmək üçün istifadə olunan güclü polad gövdəli sualtı aparat necə adlanır?",
+    "options": [
+      "Batiskaf",
+      "Helikopter",
+      "Planer",
+      "Avtobus"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Batiskaf nəhəng hidrostatik təzyiqə (p = ρgh) davam gətirə bilən xüsusi qalın polad kürəvi gövdəyə malik okean tədqiqat aparatıdır.",
+      "distractors": {
+        "1": "Helikopter havada uçur.",
+        "2": "Planer təyyarədir.",
+        "3": "Avtobus quruda gedir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F01-01-01-004"
+  },
+  {
+    "question": "Qan təzyiqini (arterial təzyiqi) ölçmək üçün tibbdə istifadə olunan cihaz necə adlanır?",
+    "options": [
+      "Tonometr (və ya sfiqmomanometr)",
+      "Termometr",
+      "Dinamometr",
+      "Spidometr"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qan təzyiqi tibbdə tonometr cihazı vasitəsilə mm civə sütununda ölçülür.",
+      "distractors": {
+        "1": "Termometr temperatur ölçür.",
+        "2": "Dinamometr qüvvə ölçür.",
+        "3": "Spidometr sürət ölçür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F01-01-01-005"
+  },
+  {
+    "question": "Nə üçün akvalanqla suyun altına dalan qəvvaslar (dalğıclar) böyük dərinliklərdən suyun üzərinə birdən-birə cəld çıxmamalı, tədricən qalxmalıdırlar?",
+    "options": [
+      "Xarici təzyiq ani düşdükdə qanda həll olmuş qazların köpüklənərək damarları tutmasının (Kesson xəstəliyi) qarşısını almaq üçün",
+      "Akvalanqın çəkisini artırmaq üçün",
+      "Suyun temperaturunu dəyişmək üçün",
+      "Görmə qabiliyyətini itirmək üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dərinlikdə yüksek hidrostatik təzyiq altında qanda azot qazı çox həll olur. Cəld qalxdıqda təzyiq ani düşür və azot qan damarlarında qabarcıqlar (bulaq kimi) yaradır. Bu, təhlükəli Kesson xəstəliyinə səbəb olur.",
+      "distractors": {
+        "1": "Akvalanq çəkisi dəyişmir.",
+        "2": "Suyun temperaturuna aid deyil.",
+        "3": "Görməyə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F02-02-02-006"
+  },
+  {
+    "question": "Tibb şprisində piston geriyə çəkildikdə dərmanın şprisə dolmasının fiziki səbəbi nədir?",
+    "options": [
+      "Piston geriyə getdikdə şpris daxilində təzyiq azalır və xarici atmosfer təzyiqi dərmanı içeri sıxır",
+      "Dərman öz-özünə sıçrayır",
+      "Piston dərmanı Maqnitlə çəkir",
+      "Elektrik cərəyanı vurur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Piston çəkildikdə şpris daxilində seyrəkləşmə (p < p_atm) yaranır. Atmosfer təzyiqi qab daxilindəki mayeni şprisə doldurur.",
+      "distractors": {
+        "1": "Dərman sıçramır.",
+        "2": "Maqnit deyil.",
+        "3": "Elektrik deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F02-02-02-007"
+  },
+  {
+    "question": "Hidravlik domkratın iş prinsipi hansı qanuna dayanır?",
+    "options": [
+      "Paskal qanununa (kiçik qüvvə ilə böyük yükü qaldırmaq)",
+      "Arximed qanununa",
+      "Huk qanununa",
+      "Nyutonun I qanununa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hidravlik domkrat Paskal qanununa əsaslanan hidravlik maşındır və avtomobilləri qaldırmaq üçün böyük qüvvə qazancı verir.",
+      "distractors": {
+        "1": "Arximed üzmədir.",
+        "2": "Huk yaydır.",
+        "3": "Nyuton inersiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F02-02-02-008"
+  },
+  {
+    "question": "Havanın nisbi rütubətini ölçmək üçün hansı cihazlardan istifadə olunur?",
+    "options": [
+      "Hiqrometr və psixrometr",
+      "Barometr və manometr",
+      "Dinamometr və xətkeş",
+      "Areometr və spidometr"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Havanın rütubəti hiqrometr və ya psixrometr (quru və yaş termometr cütü) vasitəsilə ölçülür.",
+      "distractors": {
+        "1": "Barometr təzyiqdir.",
+        "2": "Dinamometr qüvvədir.",
+        "3": "Areometr sıxlıqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F02-02-02-009"
+  },
+  {
+    "question": "Nə üçün təyyarələrin salonunda uçuş zamanı atmosfer təzyiqi xüsusi kompressorlarla süni olaraq 10 000 m hündürlükdəki xarici təzyiqdən yüksək (dəniz səviyyəsinə yaxın) saxlanılır?",
+    "options": [
+      "Sərnişinlərin normal nəfəs almasını və təzyiq fərqindən qulaq/damar zədələnməsinin qarşısını almaq üçün",
+      "Təyyarəni ağırlaşdırmaq üçün",
+      "Təyyarənin yanacağını qənaət etmək üçün",
+      "Mühərriki söndürmək üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 10 000 m hündürlükdə xarici atmosfer təzyiqi dəniz səviyyəsindən 3-4 dəfə kiçikdir (oksigen azdır). Hermetik salonda basınc tənzimlənməsə sərnişinlər boğular.",
+      "distractors": {
+        "1": "Ağırlaşdırmır.",
+        "2": "Yanacağa aid deyil.",
+        "3": "Mühərrik sönmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "V = 2.7 / 2700 = 0.001 m³",
+      "F_ağ = 27 N, F_A = 10 N",
+      "F_əv = 27 - 10 = 17 N"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F02-02-02-010"
+  },
+  {
+    "question": "Batiskaf okeanın h = 3000 m dərinliyinə enir. Su tərəfindən batiskafın gövdəsinə təsir edən hidrostatik təzyiqi MPa ilə hesablayın (ρ_su = 1000 kg/m³, g = 10 N/kg).",
+    "options": [
+      "30 MPa (30 000 000 Pa)",
+      "3 MPa",
+      "300 MPa",
+      "0.3 MPa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = ρgh = 1000 × 10 × 3000 = 30 000 000 Pa = 30 MPa.",
+      "distractors": {
+        "1": "3 MPa sıfır unudulub.",
+        "2": "300 MPa artıq sıfırdır.",
+        "3": "0.3 MPa bölmədir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "calculation_error",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "p = 1000 × 10 × 3000 = 30 000 000 Pa = 30 MPa"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F04-03-03-011"
+  },
+  {
+    "question": "Hava şarının ümumi həcmi V = 500 m³-dir. Havanın sıxlığı ρ_hava = 1.2 kg/m³, şarın daxilindəki heliumun sıxlığı ρ_he = 0.2 kg/m³-dir. Şarın qaldıra biləcəyi faydalı yükün maksimum çəkisini tapın (g = 10 N/kg, şar örtüyünün kütləsi nəzərə alınmır).",
+    "options": [
+      "5000 N (5 kN)",
+      "6000 N",
+      "1000 N",
+      "10 000 N"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qaldırıcı qüvvə F_qaldırıcı = F_A - F_ağ_he = (ρ_hava - ρ_he) × g × V = (1.2 - 0.2) kg/m³ × 10 N/kg × 500 m³ = 1.0 × 10 × 500 = 5000 N = 5 kN.",
+      "distractors": {
+        "1": "6000 N yalnız Arximed qüvvəsidir.",
+        "2": "1000 N helium çəkisidir.",
+        "3": "10 000 N hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "typical_mistake",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "F_qaldırıcı = (1.2 - 0.2) × 10 × 500 = 5000 N = 5 kN"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F04-03-03-012"
+  },
+  {
+    "question": "Su nasosu p = 400 kPa təzyiq yaradaraq suyu h = 25 m hündürlükdə yerləşən çənə vurur. Qalxan suyun çənə daxil olarkən malik olduğu təzyiqi (artıq təzyiqi) tapın (ρ_su = 1000 kg/m³, g = 10 N/kg).",
+    "options": [
+      "150 kPa",
+      "250 kPa",
+      "400 kPa",
+      "15 kPa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: h = 25 m su sütununun hidrostatik təzyiqi p_su = ρgh = 1000 × 10 × 25 = 250 000 Pa = 250 kPa. Çəndəki artıq təzyiq p_qalan = p_nasos - p_su = 400 kPa - 250 kPa = 150 kPa.",
+      "distractors": {
+        "1": "250 kPa yalnız su sütununun təzyiqidir.",
+        "2": "400 kPa nasosun başlanğıcdakıdır.",
+        "3": "15 kPa sıfır xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "p_su = 1000 × 10 × 25 = 250 kPa",
+      "p_qalan = 400 - 250 = 150 kPa"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F04-03-03-013"
+  },
+  {
+    "question": "Aeroqraf (boyapüskürdən) və ya pulverizator hansı fiziki effekte (axan havanın/mayenin təzyiqinin azalması) əsaslanır?",
+    "options": [
+      "Bernulli effektinə (axın sürəti böyük olan yerdə təzyiq azalır)",
+      "Arximed qanununa",
+      "Huk qanununa",
+      "Coul qanununa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bernulli qanununa görə axan qaz və ya mayenin sürəti artan yerdə hidrostatik (statik) təzyiq azalır. Seyrəkləşmə boyanı borudan yuxarı sorub püskürdür.",
+      "distractors": {
+        "1": "Arximed üzmədir.",
+        "2": "Huk elastiklikdir.",
+        "3": "Coul elektrikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "p_su = 1000 × 10 × 25 = 250 kPa",
+      "p_qalan = 400 - 250 = 150 kPa"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F04-03-03-014"
+  },
+  {
+    "question": "Avisiyanın (təyyarələrin) uçması zamanı qanadın üst və alt hissəsindən keçən hava axınları sayəsində qaldırıcı qüvvə necə yaranır?",
+    "options": [
+      "Qanadın üst hissəsinin qabarıq olması səbəbindən orada havanın sürəti böyük, təzyiqi az olur; altda isə sürət az, təzyiq böyük olur və yuxarı yönələn qaldırıcı qüvvə yaranır",
+      "Qanad havanı aşağı itələmir",
+      "Təyyarə yalnız mühərrikin çəkisi ilə qalxır",
+      "Arximed qüvvəsi təyyarəni saxlayır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təzyiq və hidrostatikanın texniki tətbiqlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Aerodinamik qanad profilində üst səth qabarıq olduğu üçün hava orada daha sürətlə axır (v_üst > v_alt). Bernulli prinsipinə görə p_üst < p_alt olur və təzyiq fərqi (Δp = p_alt - p_üst) nəhəng təyyarəni havada saxlayan qaldırıcı qüvvəni yaradır.",
+      "distractors": {
+        "1": "Havanı aşağı itələmək və təzyiq fərqi əsasdır.",
+        "2": "Mühərrik yalnız üfüqi sürət verir.",
+        "3": "Arximed qüvvəsi havanın sıxlığı kiçik olduğu üçün təyyarənin çəkisini saxlaya bilməz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "p_su = 1000 × 10 × 25 = 250 kPa",
+      "p_qalan = 400 - 250 = 150 kPa"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 3)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0304-04F04-03-03-015"
+  }
+]

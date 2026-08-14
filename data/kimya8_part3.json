@@ -1,0 +1,942 @@
+[
+  {
+    "question": "Dövrlər üzrə soldan sağa doğru gedildikdə atom radiusu necə dəyişir?",
+    "options": [
+      "Atom radiusu kiçilir",
+      "Atom radiusu böyüyür",
+      "Dəyişməz qalır",
+      "Əvvəl böyüyür sonra kiçilir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövr üzrə soldan sağa gedildikdə elektron təbəqələrinin sayısı eyni qalır, lakin nüvə yükü (Z) artdığı üçün nüvə elektronları daha qüvvətlə cəzb edir və atom radiusu kiçilir.",
+      "distractors": {
+        "1": "Böyümür, nüvə cəzbi artır.",
+        "2": "Dəyişir.",
+        "3": "Ardıcıl kiçilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-001"
+  },
+  {
+    "question": "Qruplar üzrə yuxarıdan aşağıya doğru gedildikdə metallıq xassəsi necə dəyişir?",
+    "options": [
+      "Metallıq xassəsi (elektron vermə qabiliyyəti) artır",
+      "Metallıq xassəsi azalır",
+      "Qeyri-metallıq artır",
+      "Dəyişmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qrup üzrə yuxarıdan aşağıya gedildikdə təbəqə sayısı artır, atom radiusu böyüyür, atom xarici elektronlarını daha asan verir və metallıq (aktivlik) artır.",
+      "distractors": {
+        "1": "Azalmır, artır.",
+        "2": "Qeyri-metallıq azalır.",
+        "3": "Dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-002"
+  },
+  {
+    "question": "Elektromənfilik (EM) anlayışı nəyi ifadə edir?",
+    "options": [
+      "Atomun kimyəvi rabitə əmələ gətirərkən özünə elektron cəzb etmə qabiliyyətini",
+      "Atomun proton vermək qabiliyyətini",
+      "Atomun neytron sayını",
+      "İonlaşma enerjisinin sıfır olmasını"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektromənfilik atomun molekulda rabitəçi elektron cütünü özünə tərəf çəkmək qabiliyyətinin nisbi ölçüsüdür.",
+      "distractors": {
+        "1": "Proton verilmir.",
+        "2": "Neytronla bağlı deyil.",
+        "3": "İonlaşma enerjisi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-003"
+  },
+  {
+    "question": "Dövri cədvəldə bütün elementlər arasında nisbi elektromənfiliyi ən yüksək olan element hansıdır?",
+    "options": [
+      "Flüor (F)",
+      "Sezium (Cs)",
+      "Oksigen (O)",
+      "Xlor (Cl)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri cədvəldə Flüor (F) elementi ən yüksək elektromənfiliyə (Pauling şkalasında ~4.0) malik olan ən aktiv qeyri-metaldır.",
+      "distractors": {
+        "1": "Sezium ən aşağı EM-ə malik metallardandır.",
+        "2": "Oksigen 2-cidir.",
+        "3": "Xlor 3-cüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-004"
+  },
+  {
+    "question": "İonlaşma enerjisi (İE) nədir?",
+    "options": [
+      "Qaz halındakı neytral atomdan 1 elektron qoparmaq üçün tələb olunan minimum energiya",
+      "Atoma elektron birləşdikdə ayrılan energiya",
+      "Nüvənin parçalanma energiyası",
+      "Kimyəvi rabitənin qırılma energiyası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İonlaşma enerjisi qaz halındakı neytral atomdan bir elektronu tam qoparıb müsbət ion (kation) əmələ gətirmək üçün tələb olunan energiyadır.",
+      "distractors": {
+        "1": "Elektron birləşdikdə ayrılan energiya elektron hərisliyidir.",
+        "2": "Nüvə energiyası deyil.",
+        "3": "Rabitə energiyası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K01-01-01-005"
+  },
+  {
+    "question": "3Li, 11Na, 19K elementlərinin atom radiuslarının artma sırasını müəyyən edin.",
+    "options": [
+      "Li < Na < K",
+      "K < Na < Li",
+      "Na < Li < K",
+      "Li < K < Na"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Li (2-ci dövr), Na (3-cü dövr), K (4-cü dövr) I A qrupunda yerləşir. Qrup üzrə aşağı gedildikdə təbəqə sayısı artdığı üçün radius böyüyür: Li < Na < K."
+      ],
+      "distractors": {
+        "1": "Tərs sıradır.",
+        "2": "Na Li-dən böyükdür.",
+        "3": "K Na-dan böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-006"
+  },
+  {
+    "question": "11Na, 12Mg, 13Al elementlərinin qeyri-metallıq (oksidləşdiricilik) xassəsinin dəyişməsini təhlil edin.",
+    "options": [
+      "Na-dan Al-a doğru qeyri-metallıq xassəsi artır",
+      "Na-dan Al-a doğru qeyri-metallıq azalır",
+      "Xassələr eyni qalır",
+      "Na ən aktiv qeyri-metaldır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: 3-cü dövrdə soldan sağa gedildikdə (Na -> Mg -> Al) nüvə yükü artır, metallıq azalır və qeyri-metallıq xassəsi nisbətən artır."
+      ],
+      "distractors": {
+        "1": "Qeyri-metallıq azalmır, artır.",
+        "2": "Eyni qalmır.",
+        "3": "Na metaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-007"
+  },
+  {
+    "question": "Oksigen (8O), Kükürd (16S), Selen (34Se) VI A qrupu elementlərinin hidroqenli birləşmələrinin (H₂O, H₂S, H₂Se) turşuluq xassəsini müqayisə edin.",
+    "options": [
+      "H₂O-dan H₂Se-yə doğru turşuluq xassəsi artır",
+      "H₂O ən qüvvətli turşudur",
+      "Turşuluq azalır",
+      "Dəyişmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Qrup üzrə aşağı gedildikdə atom radiusu böyüyür, H-X rabitəsinin uzunluğu artır və H⁺ ionunun ayrılması asanlaşdığı üçün turşuluq artır (H₂O < H₂S < H₂Se)."
+      ],
+      "distractors": {
+        "1": "H₂O neytral/zəifdir.",
+        "2": "Turşuluq artır.",
+        "3": "Dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-008"
+  },
+  {
+    "question": "II A qrupu elementlərinin (Be, Mg, Ca, Sr, Ba) baş oksidlərinin (BeO, MgO, CaO, SrO, BaO) əsaslıq xassəsi yuxarıdan aşağı necə dəyişir?",
+    "options": [
+      "Əsaslıq xassəsi artır",
+      "Əsaslıq xassəsi azalır",
+      "Turşuluq xassəsi artır",
+      "Dəyişmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Qrup üzrə aşağı gedildikdə elementlərin metallıq xassəsi artdığı üçün onların oksid və hidroksidlərinin əsaslıq xassəsi güclənir (BaO ən qüvvətli əsasdır)."
+      ],
+      "distractors": {
+        "1": "Əsaslıq azalmır, artır.",
+        "2": "Turşuluq azalır.",
+        "3": "Dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-009"
+  },
+  {
+    "question": "Atoma elektron birləşdikdə ayrılan və ya udulan energiya necə adlanır?",
+    "options": [
+      "Elektrona hərislik",
+      "İonlaşma enerjisi",
+      "Elektromənfilik",
+      "Rabitə energiyası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Qaz halındakı neytral atoma 1 elektron birləşərək mənfi ion əmələ gəlməsi zamanı baş verən energiya dəyişməsinə elektrona hərislik deyilir."
+      ],
+      "distractors": {
+        "1": "İonlaşma enerjisi elektron qoparılmsıdır.",
+        "2": "Elektromənfilik nisbi qabiliyyətdir.",
+        "3": "Rabitə energiyası molekuladır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K02-02-02-010"
+  },
+  {
+    "question": "11Na⁺, 10Ne, 9F⁻ zərrəciklərinin elektron sayı eynidir (izoelektron). Onların radiuslarını müqayisə edin.",
+    "options": [
+      "r(F⁻) > r(Ne) > r(Na⁺)",
+      "r(Na⁺) > r(Ne) > r(F⁻)",
+      "Radiuslar bərabərdir",
+      "r(Ne) ən böyükdür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: İzoelektron zərrəciklərdə nüvə yükü (proton sayı) böyük olanın elektronları cəzb etməsi güclüdür və radiusu ən kiçikdir (11Na⁺ ən kiçik, 9F⁻ ən böyükdür)."
+      ],
+      "distractors": {
+        "1": "Na⁺ protonu çox olduğu üçün ən kiçikdir.",
+        "2": "Proton sayı fərqlidir radiuslar bərabər ola bilməz.",
+        "3": "F⁻ ən böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-011"
+  },
+  {
+    "question": "Halogenlərin (F, Cl, Br, I) oksidləşdiricilik (qeyri-metallıq) aktivliyinin azalma sırasını təhlil edin.",
+    "options": [
+      "F₂ > Cl₂ > Br₂ > I₂",
+      "I₂ > Br₂ > Cl₂ > F₂",
+      "Cl₂ > F₂ > I₂ > Br₂",
+      "F₂ = Cl₂ = Br₂ = I₂"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: VII A qrupunda aşağı gedildikdə atom radiusu böyüyür, elektron alma qabiliyyəti (oksidləşdiricilik) zəifləyir. Ən qüvvətli oksidləşdirici F₂-dir."
+      ],
+      "distractors": {
+        "1": "I₂ ən zəifidir.",
+        "2": "F₂ Cl₂-dən qüvvətlidir.",
+        "3": "Xassələr fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-012"
+  },
+  {
+    "question": "3-cü dövr elementləri olan 11Na, 14Si, 17Cl-un baş oksidləri olan Na₂O, SiO₂, Cl₂O₇-nin xassələrinin dəyişməsini təhlil edin.",
+    "options": [
+      "Na₂O (əsasi oksid) -> SiO₂ (amfoter/zəif turşu oksidi) -> Cl₂O₇ (qüvvətli turşu oksidi)",
+      "Hamısı əsasi oksiddir",
+      "Hamısı turşu oksididir",
+      "Cl₂O₇ əsasi oksiddir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Dövr üzrə soldan sağa gedildikdə oksidlərin əsaslıq xassəsi zəifləyir və turşuluq xassəsi artır (Na₂O əsasi, Cl₂O₇ qüvvətli turşu oksididir)."
+      ],
+      "distractors": {
+        "1": "Na₂O metaldır.",
+        "2": "Cl₂O₇ qeyri-metaldır.",
+        "3": "Cl₂O₇ turşu oksididir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-013"
+  },
+  {
+    "question": "Mendeleyevin dövri sistemində bəzi elementlərin (məs. 18Ar və 19K) atom kütləsi sırasının pozulmasının müasir elmi izahını verin.",
+    "options": [
+      "Müasir cədvəldə əsas parametr kütlə deyil, nüvə yüküdür (Ar: Z=18, K: Z=19)",
+      "Mendeleyev səhv etmişdi",
+      "Kütlələr yanlış ölçülmüşdü",
+      "Neytron sayı nəzərə alınmır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Ar-ın atom kütləsi 39.9, K-nın kütləsi 39.1-dir. Lakin Ar-ın nüvə yükü Z=18, K-nın Z=19 olduğu üçün Müasir cədvəldə Ar K-dan əvvəl gəlir."
+      ],
+      "distractors": {
+        "1": "Kütlə sırası bilərəkdən pozulmuşdu.",
+        "2": "Kütlələr dəqiqdir izotop tərkibinə bağlıdır.",
+        "3": "Neytron izotop tərkibinə təsir edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-014"
+  },
+  {
+    "question": "Elementin ionlaşma enerjisinin sıçrayışlı artması nəyi göstərir?",
+    "options": [
+      "Atomun daxili (qapalı) energetik təbəqəsindən elektron qopardığını və valent elektronlarının bətdiyini",
+      "Elektronun bitmədiyini",
+      "Protonun ayrıldığını",
+      "Kütlənin azaldığını"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elementlərin xassələrinin dövriliyini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Məsələn, Al (13Al) üçün İE₁, İE₂, İE₃ müqayisəli artır, lakin İE₄ kəskin sıçrayır; bu 3 valent elektronundan sonra təsirsiz qaz təbəqəsinə keçildiyini bildirir."
+      ],
+      "distractors": {
+        "1": "Valent elektronları bitir.",
+        "2": "Proton ayrılmır.",
+        "3": "Kütlə azalır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.3 Elementlərin xassələrinin dövriliyi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0103-03K04-03-03-015"
+  },
+  {
+    "question": "İon rabitəsi hansı zərrəciklər arasında əmələ gəlir?",
+    "options": [
+      "Əks yüklü ionlar (kation və anion) arasında",
+      "Neytral atomlar arasında",
+      "Yalnız mənfi ionlar arasında",
+      "Elektron qazı və protonlar arasında"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əks yüklü kation (müsbət ion) və anion (mənfi ion) arasında elektrostatik cəzbetmə qüvvəsi hesabına əmələ gələn kimyəvi rabitə ion rabitəsi adlanır.",
+      "distractors": {
+        "1": "Neytral atomlar arasında kovalent rabitə ola bilər.",
+        "2": "Eyni yüklü ionlar bir-birini itələyir.",
+        "3": "Elektron qazı metal rabitəsinə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K01-01-01-001"
+  },
+  {
+    "question": "İon rabitəsi əsasən hansı element tipləri arasında baş verir?",
+    "options": [
+      "Tipik metal və tipik qeyri-metal atomları arasında",
+      "Yalnız qeyri-metallar arasında",
+      "Yalnız metallar arasında",
+      "Təsirsiz qazlar arasında"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektromənfiliyi kəskin fərqlənən tipik metal (elektron verən) və tipik qeyri-metal (elektron alan) arasında ion rabitəsi yaranır.",
+      "distractors": {
+        "1": "Qeyri-metallar arasında kovalent rabitə olur.",
+        "2": "Metallar arasında metal rabitəsi olur.",
+        "3": "Təsirsiz qazlar rabitə əmələ gətirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K01-01-01-002"
+  },
+  {
+    "question": "Müsbət yüklü ion necə adlanır?",
+    "options": [
+      "Kation",
+      "Anion",
+      "Molekul",
+      "Neytron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektron itirən atom müsbət elektrik yükü qazanır və kation adlanır (məsələn, Na⁺, Ca²⁺).",
+      "distractors": {
+        "1": "Anion mənfi yüklüdür.",
+        "2": "Molekul yüksüzdür.",
+        "3": "Neytron atom altı zərrəcikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K01-01-01-003"
+  },
+  {
+    "question": "Aşağıdakı maddələrdən hansında ion rabitəsi mövcuddur?",
+    "options": [
+      "NaCl (Natrium xlorid)",
+      "H₂O (Su)",
+      "CO₂ (Karbon qazı)",
+      "O₂ (Oksigen qazı)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: NaCl birlaşməsində Na tipik metal, Cl tipik qeyri-metal olduğu üçün aralarında Na⁺Cl⁻ ion rabitəsi vardır.",
+      "distractors": {
+        "1": "H₂O-da polyar kovalent rabitə var.",
+        "2": "CO₂-də polyar kovalent rabitə var.",
+        "3": "O₂-də qeyri-polyar kovalent rabitə var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K01-01-01-004"
+  },
+  {
+    "question": "İon birləşmələrinin adi şəraitdə fiziki halı və aqreqat vəziyyəti necədir?",
+    "options": [
+      "Bərk kristal maddələrdir",
+      "Qaz halındadır",
+      "Uçucu mayelərdir",
+      "Plazma halındadır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İon rabitəli maddələr ion kristal qəfəsinə malik olduqları üçün adi şəraitdə bərk, yüksək ərimə və qaynama temperaturlu maddələrdir.",
+      "distractors": {
+        "1": "Qaz hallı kovalent birləşmələr olur.",
+        "2": "Uçucu mayelər molekulyar kovalentdir.",
+        "3": "Plazma deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K01-01-01-005"
+  },
+  {
+    "question": "Kalsium florid (CaF₂) birləşməsində Ca²⁺ və F⁻ ionlarının əmələ gəlmə mexanizmini təhlil edin.",
+    "options": [
+      "Ca atomu 2 elektron verərək Ca²⁺ kationuna, 2 F atomunun hər biri 1 elektron alaraq F⁻ anionuna çevrilir",
+      "Ca elektron alır",
+      "F elektron verir",
+      "Elektronlar müştərək istifadə olunur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: 20Ca: [Ar] 4s² xarici 2 elektronunu 2 F (2s² 2p⁵) atomuna verir; nəticədə Ca²⁺ + 2F⁻ -> CaF₂ ion birləşməsi əmələ gəlir."
+      ],
+      "distractors": {
+        "1": "Metal elektron verməlidir.",
+        "2": "Qeyri-metal elektron almalıdır.",
+        "3": "Müştərək istifadə kovalent rabitəyə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K02-02-02-006"
+  },
+  {
+    "question": "İon birləşmələrinin suda məhlullarının və ya ərintilərinin elektrik cərəyanını keçirməsinin səbəbi nədir?",
+    "options": [
+      "Məhlulda və ərintidə sərbəst hərəkət edən dissosiasiya olunmuş ionların olması",
+      "Sərbəst elektronların olması",
+      "Molekulların neytrallığı",
+      "İonların tərpənməz olması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Bərk halda ionlar kristal qəfəsdə tərpənməzdir (cərəyan keçirmir), lakin ərintidə və suda məhlulda ionlar sərbəst hərəkət etdiyi üçün elektrolit olurlar."
+      ],
+      "distractors": {
+        "1": "Sərbəst elektronlar metallardadır.",
+        "2": "Neytral molekul cərəyan keçirmir.",
+        "3": "Tərpənməz ion cərəyan keçirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K02-02-02-007"
+  },
+  {
+    "question": "Aşağıdakı birləşmələr cütündən hansında ion rabitəsinin qütblülüyü (ionluq dərəcəsi) daha yüksəkdir?",
+    "options": [
+      "CsF (Sezium florid)",
+      "LiI (Litium iodid)",
+      "HCl",
+      "CH₄"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Sezium (Cs) ən aşağı EM-li tipik metal, Flüor (F) ən yüksək EM-li qeyri-metaldır; ΔEM kəskin böyük olduğu üçün CsF-də ionluq dərəcəsi maksimaldır."
+      ],
+      "distractors": {
+        "1": "LiI-də ionluq CsF-dən azdır.",
+        "2": "HCl kovalentdir.",
+        "3": "CH₄ kovalentdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K02-02-02-008"
+  },
+  {
+    "question": "Natrium oksid (Na₂O) və Karbon dioksid (CO₂) birləşmələrinin rabitə tiplərini müqayisə edin.",
+    "options": [
+      "Na₂O - İon rabitəli, CO₂ - Polyar kovalent rabitəli",
+      "Hər ikisi ion rabitəlidir",
+      "Hər ikisi kovalentdir",
+      "Na₂O kovalentdir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Na₂O-da Na (metal) və O (qeyri-metal) ion rabitəsi; CO₂-də C (qeyri-metal) və O (qeyri-metal) polyar kovalent rabitə əmələ gətirir."
+      ],
+      "distractors": {
+        "1": "CO₂ kovalentdir.",
+        "2": "Na₂O ion rabitəlidir.",
+        "3": "Na₂O kovalent deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K02-02-02-009"
+  },
+  {
+    "question": "İon rabitəsinin yönəlməməzliyi və doymazlığı nə deməkdir?",
+    "options": [
+      "İonun elektrik sahəsi hər tərəfə bərabər yayıldığından o, hər istiqamətdən əks yüklü ionları cəzb edə bilir",
+      "İon yalnız bir istiqamətdə cəzb edir",
+      "İon yalnız bir rabitə əmələ gətirir",
+      "İonlar rabitə yaratmır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Kovalent rabitədən fərqli olaraq, ionun mənfi/müsbət yükü sferik yayıldığı üçün ion rabitəsi fəzada müəyyən istiqamətə malik deyil (yönəlməyəndir)."
+      ],
+      "distractors": {
+        "1": "Bir istiqamətdə deyil sferikdir.",
+        "2": "Doymazlıq bir neçə ionu cəzb etməkdir.",
+        "3": "İonlar rabitə yaradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K02-02-02-010"
+  },
+  {
+    "question": "Mg²⁺ və O²⁻ ionlarından MgO kristalının əmələ gəlməsində ayrılan energiyanın (qəfəs energiyası) NaCl-dan böyük olmasının səbəbini təhlil edin.",
+    "options": [
+      "Mg²⁺ və O²⁻ ionlarının yükü (+2 və -2) Na⁺ və Cl⁻-dən (+1 və -1) böyük olduğu üçün elektrostatik cəzbetmə kəskin güclüdür",
+      "NaCl-ın kütləsi böyükdür",
+      "MgO gaz halındadır",
+      "NaCl bərk deyil"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Kulon qanununa görə elektrostatik cəzb etmə qüvvəsi ionların yüklərinin hasililə düz mütənasibdir: q₁q₂ (MgO: 2×2=4, NaCl: 1×1=1). MgO-nun qəfəs energiyası daha böyükdür."
+      ],
+      "distractors": {
+        "1": "Kütlə qəfəs energiyasını müəyyən etmir.",
+        "2": "MgO bərkdir.",
+        "3": "NaCl bərkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K04-03-03-011"
+  },
+  {
+    "question": "Aluminium xlorid (AlCl₃) birləşməsində ion rabitəsi ilə yanaşı kovalent xarakterin də görünməsinin səbəbini təhlil edin.",
+    "options": [
+      "Al³⁺ kationunun kiçik radiuslu və yüksək yüklü olması səbəbindən Cl⁻ anionunun elektron buludunu polyarlaşdırması",
+      "Al-ın qeyri-metal olması",
+      "Cl-un metal olması",
+      "Birləşmədə proton olmaması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Al³⁺ ionu yüksək yük sıxlığına malik olduğu üçün Cl⁻-in elektron buludunu özünə doğru deformasiya edir (kationun kovalent polyarlaşdırma təsiri)."
+      ],
+      "distractors": {
+        "1": "Al metaldır.",
+        "2": "Cl qeyri-metaldır.",
+        "3": "Protonla bağlı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K04-03-03-012"
+  },
+  {
+    "question": "Bərk halda NaCl kristalının elektriki keçirməməsinin, lakin əritdikdə və ya suda həll etdikdə elektrolit olmasının fiziki-kimyəvi mexanizmini təhlil edin.",
+    "options": [
+      "Bərk kristalda ionlar lokal düyünlərdə tərpənməzdir; ərintidə və hidratlaşmada kristal qəfəs dağılır və ionlar sərbəst daşıyıcıya çevrilir",
+      "Bərk halda elektronlar yox olur",
+      "Ərintidə molekul yaradır",
+      "Suda dissosiasiya olunmur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Elektrik cərəyanı yüklü zərrəciklərin nizamlı hərəkətidir. Bərk kristalda ionların sərbəst hərəkəti yoxdur, dissosiasiya zamanı sərbəst yönəlmiş ionlar yaranır."
+      ],
+      "distractors": {
+        "1": "Elektronlar yox olmur.",
+        "2": "Ərintidə ionlar sərbəstləşir.",
+        "3": "Suda tam dissosiasiya olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K04-03-03-013"
+  },
+  {
+    "question": "Kation və anionların oktet qaydasına (təsirsiz qaz konfiqurasiyasına) çatmasını K⁺ və Cl⁻ misalında təhlil edin.",
+    "options": [
+      "19K (4s¹) 1 e- verərək K⁺ ([Ar] 3s² 3p⁶), 17Cl (3s² 3p⁵) 1 e- alaraq Cl⁻ ([Ar] 3s² 3p⁶) oktetinə çatır",
+      "K⁺ elektron alır",
+      "Cl⁻ elektron verir",
+      "İonların elektron sayı dəyişmir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Həm K⁺ (19-1=18 e-), həm Cl⁻ (17+1=18 e-) 18Ar təsirsiz qazının tam dolmuş xarici 8 elektronlu (oktet) konfiqurasiyasını qazanır."
+      ],
+      "distractors": {
+        "1": "K metaldır elektron verir.",
+        "2": "Cl qeyri-metaldır elektron alır.",
+        "3": "Elektron sayı dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K04-03-03-014"
+  },
+  {
+    "question": "Nə üçün NH₄Cl (Amonium xlorid) birləşməsində həm kovalent, həm də ion rabitəsi mövcuddur?",
+    "options": [
+      "NH₄⁺ (amonium kationu) ilə Cl⁻ anionu arasında İon rabitəsi, NH₄⁺ ionunun daxilində (N və H arasında) Kovalent rabitə var",
+      "Bütün rabitələr ion rabitəsidir",
+      "Bütün rabitələr kovalentdir",
+      "İon rabitəsi yoxdur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İon rabitəsi anlayışını və mexanizmini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Amonium duzlarında (NH₄⁺Cl⁻) mürəkkəb NH₄⁺ kationu ilə Cl⁻ anionu arasında İON rabitəsi, azot və hidrogen atomları arasında isə KOVALENT rabitə vardır."
+      ],
+      "distractors": {
+        "1": "N və H arasında kovalent rabitə də var.",
+        "2": "NH₄⁺ və Cl⁻ arasında ion rabitəsi də var.",
+        "3": "İon rabitəsi var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.1 İon rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0201-04K04-03-03-015"
+  }
+]

@@ -1,0 +1,1802 @@
+[
+  {
+    "question": "Qədim Kanquy dövləti Mərkəzi Asiyanın hansı iki böyük çayı arasında və Sırdərya hövzəsində təşəkkül tapmışdı?",
+    "options": [
+      "Sırdərya (Seyhun) və Amudərya (Ceyhun) çayları arası",
+      "Nil və Fərat çayları arası",
+      "Kür və Araz çayları arası",
+      "Dunay və Reyn çayları arası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquy dövləti Sırdərya orta axarı və Amudərya hövzəsində təşəkkül tapmış qədim türk dövlətlərindən biridir.",
+      "distractors": {
+        "1": "Nil və Fərat Yaxın Şərqdədir.",
+        "2": "Kür və Araz Azərbaycandadır.",
+        "3": "Dunay və Reyn Avropadadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H01-01-01-001"
+  },
+  {
+    "question": "Kanquy dövlətinin paytaxtı olan qədim şəhər hansı idi?",
+    "options": [
+      "Kəngər (Yanshay / Bityan)",
+      "Ötükən",
+      "Bərdə",
+      "Roma"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin mənbələrində Yanshay və Bityan kimi keçən Kəngər şəhəri Kanquy dövlətinin paytaxtı olmuşdur.",
+      "distractors": {
+        "1": "Ötükən Hunların paytaxtıdır.",
+        "2": "Bərdə Azərbaycandadır.",
+        "3": "Roma İtaliyadadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H01-01-01-002"
+  },
+  {
+    "question": "Kanquy tayfalarının etnik mənşəyi və adı hansı türk boyu ilə sıx bağlıdır?",
+    "options": [
+      "Kəngərlər (Kəngərli / Qanqlı)",
+      "Oğuzlar",
+      "Xəzərlər",
+      "Bolqarlar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquy adı qədim 'Kəngər' / 'Qanqlı' türk tayfalarının adı ilə bilavasitə bağlıdır.",
+      "distractors": {
+        "1": "Oğuzlar ayrı boydur.",
+        "2": "Xəzərlər Qafqaz/İdil boyudur.",
+        "3": "Bolqarlar Avropa qoludur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H01-01-01-003"
+  },
+  {
+    "question": "Kanquy dövlətində əhalinin əsas məşğuliyyət sahələri hansılar idi?",
+    "options": [
+      "Oturaq əkinçilik, suvarma kanalları vasitəsilə bağçılıq və yarımköçəri heyvandarlıq",
+      "Dəniz balıqçılığı",
+      "Kosmik sənaye",
+      "Pambıq fabrikləri"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sırdərya vadisində yaşayan Kanquylar geniş suvarma şəbəkəsi quraraq əkinçilik və bağçılıqla, çöllərdə isə heyvandarlıqla məşğul olurdular.",
+      "distractors": {
+        "1": "Dənizləri yox idi.",
+        "2": "Kosmik sənaye müasirdir.",
+        "3": "Fabrik daha sonra idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H01-01-01-004"
+  },
+  {
+    "question": "Böyük İpək yolunun Kanquy dövləti ərazisindən keçməsi ölkəyə hansı faydanı verirdi?",
+    "options": [
+      "Şəhərlərin və tranzit karvan ticarətinin sürətli inkişafını",
+      "Savaşların tam bitməsini",
+      "Kənd təsərrüfatının ləğvini",
+      "Çin dilinin rəsmiləşməsini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İpək yolu üzərində yerləşən Kanquy şəhərləri Şərqlə Qərb arasında ticarət və mədəniyyət qovşağına çevrilmişdi.",
+      "distractors": {
+        "1": "Savaşlar bitmədi.",
+        "2": "Kənd təsərrüfatı inkişaf etdi.",
+        "3": "Çin dili rəsmi olmadı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H01-01-01-005"
+  },
+  {
+    "question": "Kanquy dövlətinin Çin imperiyası ilə münasibətləri necə xarakterizə olunurdu?",
+    "options": [
+      "Çinin şərqdən irəliləməsinə qarşı Hunlarla müttəfiq olaraq müstəqilliyini qorumaq",
+      "Çinə tamamilə birləşmək",
+      "Çini fəth edib paytaxt etmək",
+      "Çinlə heç bir əlaqə qurmamaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquylar Çinin Mərkəzi Asiyaya yayılmaq cəhdlərinə qarşı Çjıçjı xaqanın Hunları ilə ittifaq quraraq mübarizə aparmışdırlar.",
+      "distractors": {
+        "1": "Birləşmədilər.",
+        "2": "Çini tam fəth etmədilər.",
+        "3": "Diplomatik əlaqə var idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H02-02-02-006"
+  },
+  {
+    "question": "Kanquy dövlətinin tərkibində neçə asılı kiçik bəylik (vilayət) var idi?",
+    "options": [
+      "5 asılı bəylik",
+      "12 bəylik",
+      "2 bəylik",
+      "50 bəylik"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin mənbələrinə görə Kanquy dövlətinin tərkibində 5 asılı mülk (bəylik) var idi və onların hər birinin öz rəhbəri var idi.",
+      "distractors": {
+        "1": "12 deyil.",
+        "2": "2 deyil.",
+        "3": "50 çoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H02-02-02-007"
+  },
+  {
+    "question": "Kanquyların numizmatika (sikkə) mədəniyyətinə görə onların zərb etdiyi gümüş və mis sikkələrin üstündə nə həkk olunurdu?",
+    "options": [
+      "Hökmdarın təsviri və tayfa tamğası",
+      "Çin iyerroqrifləri",
+      "Yunan tanrılarının şəkli",
+      "Xristian xaçı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquy sikkələrində hökmdarın şəkli və Kəngər tayfa tamğası basılırdı, bu da müstəqil pul tədavülünü göstərir.",
+      "distractors": {
+        "1": "Çin yazısı deyil.",
+        "2": "Yunan tanrısı deyil.",
+        "3": "Xaç deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H02-02-02-008"
+  },
+  {
+    "question": "Kanquy dövlətində dəmirdən və bürüncdən hazırlanan alətlərin geniş yayılması nəyi göstərir?",
+    "options": [
+      "Yerli dağ-mədən və metallurgiya sənətinin yüksək səviyyəsini",
+      "Metallarının olmadığını",
+      "Silahların xaricdən alındığını",
+      "Yalnız taxtadan istifadə edildiyini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquy şəhər yerlərindən tapılan dəmirçilik kürələri yerli sənətkarlıq və metallurgiyanı təsdiq edir.",
+      "distractors": {
+        "1": "Metal var idi.",
+        "2": "Özləri istehsal edirdilər.",
+        "3": "Taxta tək deyil idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H02-02-02-009"
+  },
+  {
+    "question": "Kanquy dövlətinin suvarma sistemində kanal çəkmə texnikası hansı çayın sularına əsaslanırdı?",
+    "options": [
+      "Sırdərya və onun qolları",
+      "Yenisey",
+      "Kür",
+      "İdil (Volqa)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquylar Sırdərya çayından böyük su kanalları (məs. Çirçik kanalı) çəkərək vahələri suvarırdılar.",
+      "distractors": {
+        "1": "Yenisey şimaldadır.",
+        "2": "Kür Qafqazdadır.",
+        "3": "İdil qərbdədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H02-02-02-010"
+  },
+  {
+    "question": "Kanquy dövlətinin b.ə. III əsrdən b.e. IV əsrinə qədər mövcudluğunun Mərkəzi Asiyada etnik sabitlik baxımından rolunu təhlil edin.",
+    "options": [
+      "Türk etnosunun (Kəngər boylarının) Mərkəzi Asiyanın mərkəzində hakim mövqeyini qoruması",
+      "Ərazinin tamamilə İran tayfalarına keçməsi",
+      "Mədəniyyətin sıradan çıxması",
+      "Bütün şəhərlərin dağılması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanquylar Hunlarla Göytürklər arasında Mərkəzi Asiyada türk etnik birliyinin və şəhərsalma mədəniyyətinin körpüsü olmuşdur.",
+      "distractors": {
+        "1": "İran tayfaları hakim olmadı.",
+        "2": "Mədəniyyət inkişaf etdi.",
+        "3": "Şəhərlər çiçəkləndi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H04-03-03-011"
+  },
+  {
+    "question": "Kanquyların dəfn adətlərində qaya qəbirləri vı kurqanların arxeoloji analizi nəyi göstərir?",
+    "options": [
+      "Əcdadlar kultuna inam və axirət dünyasına bəslənən qədim türk dini baxışlarını",
+      "Xristian dəfn adətlərini",
+      "İslam dəfn adətlərini",
+      "Bütpərəst yandırma adətini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qəbirlərə silah, qab-qacaq və at qoşqusu konması axirət həyatına inamı təsdiqləyir.",
+      "distractors": {
+        "1": "Xristianlıq deyil.",
+        "2": "İslam daha sonra idi.",
+        "3": "Yandırma qırğızlarda idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H04-03-03-012"
+  },
+  {
+    "question": "Kanquy dövlətinin süqut edərək Ağ Hun (Eftal) və Göytürk imperiyalarının tərkibinə qovuşmasının səbəbini təhlil edin.",
+    "options": [
+      "IV-V əsrlərdə yeni güclənən Eftal və Göytürk dövlətlərinin hərbi üstünlüyü",
+      "Zəlzələlər",
+      "Dəniz daşqını",
+      "Əhalinin yoxa çıxması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: V əsrdə Ağ Hunların (Eftalların) və VI əsrdə Göytürklərin Mərkəzi Asiyanı birləşdirməsi ilə Kanquy dövləti bu imperiyaların tərkibinə daxil oldu.",
+      "distractors": {
+        "1": "Zəlzələ baş səbəb deyil.",
+        "2": "Dəniz yox idi.",
+        "3": "Əhali yox olmadı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H04-03-03-013"
+  },
+  {
+    "question": "Kəngərli tayfa adının sonradan Azərbaycan və digər türk torpaqlarına yayılmasının historical əsasını təhlil edin.",
+    "options": [
+      "Kanquy (Kəngər) boylarının sonrakı əsrlərdə Qafqaza və Ön Asiyaya göç edərək məskunlaşması",
+      "Yalnız XIX əsr köçləri",
+      "Uydurma fərziyyə olması",
+      "Yalnız Çin mənbələrinin səhvi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qədim Kəngər (Kanquy) türk boyları Peçeneq və Oğuz köçləri ilə Qafqaza (Azərbaycandakı Kəngərli rayonu/tayfası) gəlmişdirlər.",
+      "distractors": {
+        "1": "XIX əsr deyil qədimdir.",
+        "2": "Fərziyyə deyil faktikdir.",
+        "3": "Səhv deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H04-03-03-014"
+  },
+  {
+    "question": "Kanquy dövlətinin diplomatiyasında 'bərabərhüquqlı müttəfiqlik' prinsipi Çin və Hun dövlətləri ilə münasibətdə necə təzahür edirdi?",
+    "options": [
+      "Kanquylar heç bir imperiyaya tam vassal olmayaraq öz hərbi müstəqilliyini qoruyurdular",
+      "Çinin tam vilayəti idilər",
+      "Hunların nökəri idilər",
+      "Diplomatiya yox idi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kanquy dövlətinin tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin mənbələri təsdiq edir ki, Kanquy hökmdarları Çin elçilərinə baş əymir, bərabər şərtlərlə danışıqlar aparırdılar.",
+      "distractors": {
+        "1": "Vilayət deyildilər.",
+        "2": "Vassal deyildilər müttəfiq idilər.",
+        "3": "Diplomatiya var idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kanquy dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0204-04H04-03-03-015"
+  },
+  {
+    "question": "Qədim Parkana dövləti Mərkəzi Asiyanın hansı məhsuldar vadisində yerləşirdi?",
+    "options": [
+      "Fərqanə vadisində",
+      "Kür-Araz ovalığında",
+      "Çu vadisində",
+      "Tarim hövzəsində"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parkana (Çin mənbələrində 'Davan') dövləti Fərqanə vadisində təşəkkül tapmış qədim dövlətdir.",
+      "distractors": {
+        "1": "Kür-Araz Azərbaycandadır.",
+        "2": "Çu Qazaxıstandadır.",
+        "3": "Tarim Şərqi Türküstandadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H01-01-01-001"
+  },
+  {
+    "question": "Parkana (Davan) dövləti dünyada hansı məşhur at cinsi ilə tanınırdı?",
+    "options": [
+      "\"Səmavi atlar\" (Qan tərləyən Argamak atları)",
+      "Qarabağ atları",
+      "Qazax atları",
+      "Poni atları"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fərqanənin (Parkana) cins sürətli və dözümlü atları Çində 'Səmavi atlar' (Argamak) adı ilə məşhur idi.",
+      "distractors": {
+        "1": "Qarabağ atları Azərbaycandadır.",
+        "2": "Qazax atları çöldədir.",
+        "3": "Poni balaca atdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H01-01-01-002"
+  },
+  {
+    "question": "Parkana dövlətinin paytaxtı olan şəhər hansı idi?",
+    "options": [
+      "Erşi şəhəri",
+      "Ötükən",
+      "Pekini",
+      "Təbriz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parkana (Davan) dövlətinin mərkəzi və paytaxtı Erşi şəhəri olmuşdur.",
+      "distractors": {
+        "1": "Ötükən Hunlardadır.",
+        "2": "Pekin Çindədir.",
+        "3": "Təbriz Azərbaycandadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H01-01-01-003"
+  },
+  {
+    "question": "Parkana əhalisinin əsas təsərrüfat fəaliyyəti nə idi?",
+    "options": [
+      "Bağçılıq, üzümçülük, yonca əkini və cins atçılıq",
+      "Buz balıqçılığı",
+      "Neft emalı",
+      "Gəmiçilik"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fərqanə vadisinin zəngin torpaqlarında parkanalılar şərabçılıq, üzümçülük, yonca əkini və cins atçılıqla məşğul olurdular.",
+      "distractors": {
+        "1": "Buz balıqçılığı deyil.",
+        "2": "Neft emalı müasirdir.",
+        "3": "Gəmiçilik deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H01-01-01-004"
+  },
+  {
+    "question": "Çin imperatoru U-di e.ə. II əsrin sonlarında Parkanaya (Davan) nə üçün hərbi yürüşlər təşkil etmişdi?",
+    "options": [
+      "Parkananın məşhur 'Səmavi atlarını' ələ keçirmək üçün",
+      "Parkana bütlərini dağıtmaq üçün",
+      "Dəniz yolunu açmaq üçün",
+      "İpək yolunu bağlamaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin imperatoru U-di süvari ordusunu gücləndirmək üçün Fərqanə atlarını tələb etmiş, imtina cavabı aldıqda Parkanaya müharibə elan etmişdir.",
+      "distractors": {
+        "1": "Bütlər üçün deyil.",
+        "2": "Dəniz yox idi.",
+        "3": "İpək yolunu açmaq istəyirdi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H01-01-01-005"
+  },
+  {
+    "question": "e.ə. 104-101-ci illərdə Çin ordusunun Erşi şəhərini mühasirəyə alması zamanı Parkana xalqı hansı müqaviməti göstərdi?",
+    "options": [
+      "Erşi şəhərini qəhrəmancasına müdafiə edərək Çin ordusunu ağır itkilərə uğratdılar və sülh bağladılar",
+      "Dərhal təslim oldular",
+      "Şəhəri yandırdılar",
+      "Qaçıb dağıldılar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parkanalılar Erşi şəhərini 40 gün müdafiə etdilər. Çinlilər şəhəri ala bilməyib müəyyən sayda at alaraq geri çəkilməyə məcbur oldular.",
+      "distractors": {
+        "1": "Təslim olmadılar.",
+        "2": "Şəhəri yandırmadılar.",
+        "3": "Qaçmadılar."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H02-02-02-006"
+  },
+  {
+    "question": "Parkanada geniş zəmilərdə əkilən 'yonca' bitkisinin kənd təsərrüfatında mühüm rol nə idi?",
+    "options": [
+      "Cins 'Səmavi atların' yüksək keyfiyyətli yem bazasını təşkil etmək",
+      "İpək toxumaq üçün",
+      "Çörək bişirmək üçün",
+      "Boyaq maddəsi üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Yonca (alfalfa) Fərqanə cins atlarının bəslənməsində əvəzsiz zülallı yem idi və Çinə atlarla birgə yonca toxumu da aparılmışdı.",
+      "distractors": {
+        "1": "İpək tut ipəyindən olur.",
+        "2": "Çörək buğdadan olur.",
+        "3": "Boyaq deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H02-02-02-007"
+  },
+  {
+    "question": "Parkana (Davan) ərazisində neçəyə yaxın böyük və kiçik möhkəmləndirilmiş şəhər var idi?",
+    "options": [
+      "70-dən çox şəhər",
+      "Yalnız 2 şəhər",
+      "1000 şəhər",
+      "Şəhər yox idi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin salnamələrinə görə Davan (Parkana) ölkəsində 70-dən çox abad və qala divarlı şəhər var idi.",
+      "distractors": {
+        "1": "2 çox azdır.",
+        "2": "1000 həddən çoxdur.",
+        "3": "Şəhərlər var idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H02-02-02-008"
+  },
+  {
+    "question": "Böyük İpək yolunun Fərqanə (Parkana) vadisindən keçən qolu hansı ölkələri birləşdirirdi?",
+    "options": [
+      "Çin, Mərkəzi Asiya, İran və Aralıq dənizi ölkələrini",
+      "Yalnız Yaponiya və Koreyanı",
+      "Yalnız Avstraliyanı",
+      "Şimal qütbünü"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fərqanə vadisi Şərqi Türküstandan gələn karvanların Mərkəzi Asiyaya və Qərbə açılan ana qapısı idi.",
+      "distractors": {
+        "1": "Yaponiya/Koreya ada/yarımadadır.",
+        "2": "Avstraliya kənardır.",
+        "3": "Şimal qütbü deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H02-02-02-009"
+  },
+  {
+    "question": "Parkana mədəniyyətində şüşəçilik, keramik qablar və metalişləmə tapıntıları nəyi göstərir?",
+    "options": [
+      "Sənətkarlığın və ticarətin yüksək inkişaf səviyyəsini",
+      "Mədəniyyətin olmadığını",
+      "Əhalinin yalnız ovçuluq etdiyini",
+      "Yunanıstandan asılılığı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Arxeoloji qazıntılar Parkana şəhərlərində inkişaf etmiş dulusçuluq, metallurgiya və bəzək sənətlərini təsdiq edir.",
+      "distractors": {
+        "1": "Mədəniyyət var idi.",
+        "2": "Ovçuluq tək deyil idi.",
+        "3": "Yunanıstandan asılı deyildi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H02-02-02-010"
+  },
+  {
+    "question": "Çin imperiyası ilə Parkana (Davan) arasında e.ə. II əsrdə baş verən hərbi münaqişənin əsas iqtisadi və hərbi səbəblərini təhlil edin.",
+    "options": [
+      "Çinin Huns müharibələrində üstünlük qazanmaq üçün Fərqanənin cins atlarına və İpək yoluna yiyələnmək istəyi",
+      "Yalnız din fərqliliyi",
+      "Dəniz limanları uğrunda savaş",
+      "Sərhəd mübahisəsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Çin ordusu Hun süvariləri ilə bacarmaq üçün Fərqanənin sürətli 'Səmavi atlarına' kəskin ehtiyac duyurdu.",
+      "distractors": {
+        "1": "Din əsas səbəb deyil idi.",
+        "2": "Fərqanədə dəniz yok idi.",
+        "3": "Sərhəd bəhanə idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H04-03-03-011"
+  },
+  {
+    "question": "Parkana dövlətinin Mərkəzi Asiyanın oturaq vahə mədəniyyəti ilə köçəri türk tayfaları arasında vasitəçilik rolunu təhlil edin.",
+    "options": [
+      "Köçəri heyvandarlıq məhsulları ilə oturaq sənətkarlıq və əkinçilik məhsullarının mübadilə mərkəzi olması",
+      "Köçərilərlə daimi düşmənçilik",
+      "Ticarətin qadağan edilməsi",
+      "Mədəni təcrid olunma"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parkana vadisi ətraf çöllərdəki köçəri türk tayfaları ilə ticarət edərək hər iki mədəniyyəti sintez edirdi.",
+      "distractors": {
+        "1": "Daimi düşmənçilik yox idi.",
+        "2": "Ticarət çiçəklənirdi.",
+        "3": "Təcrid olunmamışdı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H04-03-03-012"
+  },
+  {
+    "question": "Parkanada zərb olunan sikkələrin və arxeoloji qabların üzərindəki at təsvirlərinin (At kultu) ideoloji mənasını təhlil edin.",
+    "options": [
+      "Atın cəmiyyətdə müqəddəs güc, azadlıq və dövlət rəmzi sayılması",
+      "Atın yalnız yük heyvanı olması",
+      "Çin adətinin təsiri",
+      "Dini qadağa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Türk mədəniyyətində at müqəddəs heyvan sayılır; Fərqanə atları isə ilahi mənşəli 'Səmavi atlar' hesab olunurdu.",
+      "distractors": {
+        "1": "Yalnız yük heyvanı sayılmırdı.",
+        "2": "Çin adəti deyil türk kultudur.",
+        "3": "Qadağa deyil kult idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H04-03-03-013"
+  },
+  {
+    "question": "Parkana dövlətinin b.e. III-IV əsrlərində Kuşan və Eftal imperiyalarının tərkibinə daxil olmasının tarixi şəraitini təhlil edin.",
+    "options": [
+      "Böyük imperiyaların Mərkəzi Asiyanı mərkəzləşdirmə siyasəti və Fərqanənin strateji mövqeyi",
+      "Əhalinin köçüb getməsi",
+      "Çinin tam işğalı",
+      "Dövlətin öz-özünə ləğvi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan və sonra Eftal (Ağ Hun) imperiyaları İpək yoluna nəzarət etmək üçün Fərqanəni öz imperiyalarına qatdılar.",
+      "distractors": {
+        "1": "Əhali köçmədi.",
+        "2": "Çin işğal edə bilmədi.",
+        "3": "Öz-özünə ləğv olmadı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H04-03-03-014"
+  },
+  {
+    "question": "Parkana (Davan) dövlətinin türk dövlətçilik və mədəniyyət tarixində tutduğu unikal yeri qiymətləndirin.",
+    "options": [
+      "Mərkəzi Asiyada oturaq əkinçilik, şəhərsalma və cins atçılıq mədəniyyətini birləşdirən qədim türk vahə dövləti olması",
+      "Yalnız köçəri çadır həyatı yaşaması",
+      "Tarixdə iz qoymaması",
+      "Yalnız dənizçilik etməsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Parkana dövlətinin tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parkana türk dünyasında oturaq vahə sivilizasiyasının və cins atçılığın ən parlaq qədim mərkəzlərindən biridir.",
+      "distractors": {
+        "1": "Yalnız çadır həyatı deyil şəhərləri var idi.",
+        "2": "İz qoyub.",
+        "3": "Dənizçilik etmirdi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Parkana (Davan) dövləti",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0205-05H04-03-03-015"
+  },
+  {
+    "question": "Qədim Kuşan imperiyasının əsasını qoyan hökmdar kimdir?",
+    "options": [
+      "Kucula Kadfiz (I Kadfiz)",
+      "Kanişka",
+      "Atilla",
+      "Mete xaqan"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan dövlətinin əsasını I əsrdə Yueçji/Türk tayfalarını birləşdirən Kucula Kadfiz (I Kadfiz) qoymuşdur.",
+      "distractors": {
+        "1": "Kanişka imperiyanı ən qüdrətli dövrünə çatdıran hökmdardır.",
+        "2": "Atilla Avropa Hunlarındadır.",
+        "3": "Mete Asiya Hunlarındadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H01-01-01-001"
+  },
+  {
+    "question": "Kuşan imperiyasının ən qüdrətli dövrü və mədəni yüksəlişi hansı hökmdarın hakimiyyəti illərinə təsadüf edir?",
+    "options": [
+      "Kanişka (I Kanişka)",
+      "Kucula Kadfiz",
+      "Teoman",
+      "Bumin xaqan"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: II əsrdə hakimiyyətdə olan Kanişkanın dövründə Kuşan imperiyası Hindistandan Mərkəzi Asiyaya qədər uzanan cahanşümul imperiyaya çevrildi.",
+      "distractors": {
+        "1": "Kucula Kadfiz qurucudur.",
+        "2": "Teoman Hunlardadır.",
+        "3": "Bumin Göytürkdədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H01-01-01-002"
+  },
+  {
+    "question": "Kuşan imperiyası öz genişlənməsi nəticəsində hansı böyük coğrafi əraziləri əhatə edirdi?",
+    "options": [
+      "Şimal-Qərbi Hindistan, Pakistan, Əfqanıstan və Mərkəzi Asiyanı (Baqtriya)",
+      "Yalnız İspaniya və Fransanı",
+      "Yalnız Skandinaviyanı",
+      "Cənubi Afrikanı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan imperiyası Hindistan yarımadasından Mərkəzi Asiyaya qədər uzanan Böyük İpək yoluna nəzarət edən nəhəng imperiya idi.",
+      "distractors": {
+        "1": "İspaniya/Fransa Avropadadır.",
+        "2": "Skandinaviya şimaldadır.",
+        "3": "Cənubi Afrika kənardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H01-01-01-003"
+  },
+  {
+    "question": "Kuşan hökmdarı Kanişkanın dövründə hansı din dövlət səviyyəsində dəstəklənmiş və Şərqi Asiyaya yayılmışdır?",
+    "options": [
+      "Buddizm",
+      "Xristianlıq",
+      "İslam",
+      "Zərdüştlük"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanişka Buddizmi himayə etmiş, IV Buddist Şurasını toplamış və Buddizmin Çinə, Mərkəzi Asiyaya yayılmasına şərait yaratmışdır.",
+      "distractors": {
+        "1": "Xristianlıq Romada idi.",
+        "2": "İslam VII əsrdir.",
+        "3": "Zərdüştlük İrandadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H01-01-01-004"
+  },
+  {
+    "question": "Kuşan imperiyasının paytaxtları kimi fəaliyyət göstərən şəhərlərdən biri hansı idi?",
+    "options": [
+      "Puruşapura (Peşəvər) və Qandhara",
+      "Roma",
+      "Pekin",
+      "London"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan imperiyasının qış paytaxtı Puruşapura (müasir Peşəvər şəhəri) idi.",
+      "distractors": {
+        "1": "Roma İtaliyadadır.",
+        "2": "Pekin Çindədir.",
+        "3": "London İngiltərədədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H01-01-01-005"
+  },
+  {
+    "question": "Kuşan incəsənətində Yunan, Hind və Mərkəzi Asiya türk mədəniyyətlərinin sintezindən yaranan məşhur arxeoloji üslub necə adlanır?",
+    "options": [
+      "Qandhara incəsənət məktəbi",
+      "Qotika üslubu",
+      "Renessans",
+      "Barokko"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qandhara incəsənəti helenistik (yunan) heykəltəraşlıq texnikası ilə şərq/buddist süjetlərinin unikal birləşməsidir.",
+      "distractors": {
+        "1": "Qotika Avropa orta əsrləridir.",
+        "2": "Renessans XVI əsrdir.",
+        "3": "Barokko XVII əsrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H02-02-02-006"
+  },
+  {
+    "question": "Kuşan imperiyasının İpək yolu üzərindəki strateji mövqeyi onun iqtisadiyyatına necə təsir göstərirdi?",
+    "options": [
+      "Qərb (Roma) və Şərq (Çin) ticarətindən nəhəng gömrük və qızıl gəlirləri əldə olunurdu",
+      "Ölkə müflisləşirdi",
+      "Ticarət tam dayandırılmışdı",
+      "Sikkə kəsilmirdi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşanlar Roma imperiyası, Çin və Hindistan arasında ticarət şəbəkəsini nəzarətdə saxlayaraq qızıl sikkələr zərb edir və zənginləşirdilər.",
+      "distractors": {
+        "1": "Müflisləşmirdi.",
+        "2": "Ticarət çiçəklənirdi.",
+        "3": "Qızıl sikkələr zərb olunurdu."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H02-02-02-007"
+  },
+  {
+    "question": "Kuşan imperiyasında kəsilən qızıl sikkələr hansı böyük imperiyanın sikkə standartları ilə rəqabət aparırdı?",
+    "options": [
+      "Roma imperiyasının aureusu ilə",
+      "Çin kağız pulu ilə",
+      "Osmanlı lirəsi ilə",
+      "İngilis funtu ilə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan qızıl dinarları Roma aureusları ilə eyni çəki və saflıqda zərb olunur, Beynəlxalq ticarətdə işlənirdi.",
+      "distractors": {
+        "1": "Çində kağız pul daha sonra idi.",
+        "2": "Osmanlı daha sonra idi.",
+        "3": "İngilislər daha sonra idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H02-02-02-008"
+  },
+  {
+    "question": "Kuşan yazılarında (Baqtriya yazısı) hansı əlifbadan istifadə olunurdu?",
+    "options": [
+      "Yunan əlifbası əsasında uyğunlaşdırılmış Baqtriya-Kuşan yazısı",
+      "Çin iyerroqrifləri",
+      "Ərəb əlifbası",
+      "Latın əlifbası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşanlar Baqtriya dilini yazmaq üçün yunan qrafikasından istifadə etmişdirlər.",
+      "distractors": {
+        "1": "Çin iyerroqrifi deyil.",
+        "2": "Ərəb əlifbası deyil.",
+        "3": "Latın deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H02-02-02-009"
+  },
+  {
+    "question": "Kuşan cəmiyyətində din azadlığının və tolerantlığın olması nə ilə təsdiqlənir?",
+    "options": [
+      "Sikkələrin üzərində həm Buddist, həm Zərdüşt, həm də Hind tanrılarının təsvirlərinin olması",
+      "Yalnız tək dinin məcburi olması",
+      "Dini məbədlərin sökülməsi",
+      "Məbədlərin qadağan olunması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşan hökmdarlarının sikkələrində Mitra, Şiva, Buddha və digər müxtəlif dinlərin rəmzləri təsvir olunurdu.",
+      "distractors": {
+        "1": "Məcburi tək din yok idi.",
+        "2": "Məbədlər sökülmürdü.",
+        "3": "Qadağa yox idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H02-02-02-010"
+  },
+  {
+    "question": "Kuşan imperiyasının qədim dünya tarixində (I-III əsrlər) 4 böyük cahanşümul imperiyadan biri olmasını təhlil edin.",
+    "options": [
+      "Roma, Parfiya, Çin (Han) və Kuşan imperiyaları dünyanı nüfuz dairələrinə bölmüşdülər",
+      "Yalnız Roma və Kuşan var idi",
+      "Çin mövcud deyildi",
+      "Dünyada imperiya yox idi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tarixçilər I-III əsrləri 'Dörd Böyük İmperiya dövrü' adlandırırlar: Roma, Parfiya, Kuşan və Han (Çin).",
+      "distractors": {
+        "1": "Parfiya və Çin də var idi.",
+        "2": "Çin mövcud idi.",
+        "3": "İmperiyalar var idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H04-03-03-011"
+  },
+  {
+    "question": "Kuşan hökmdarı Kanişkanın Buddizmin geniş coğrafiyaya yayılmasında oynadığı rolu Xristianlıq tarixindəki Konstantin ilə müqayisəli təhlil edin.",
+    "options": [
+      "Hər iki hökmdar müvafiq dinləri himayə edərək onların dünya dininə çevrilməsinə dövlət dəstəyi vermişdirlər",
+      "Kanişka Buddizmi qadağan etmişdir",
+      "Konstantin Buddizmi qəbul etmişdir",
+      "Dini əlaqə yoxdur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kanişka Buddizm üçün nə etdisə, Böyük Konstantin Xristianlıq üçün onu etdi; hər ikisi dini rəsmi himayəyə götürdü.",
+      "distractors": {
+        "1": "Kanişka qadağan etmədi.",
+        "2": "Konstantin Xristianlığı qəbul etdi.",
+        "3": "Oxşarlıq böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H04-03-03-012"
+  },
+  {
+    "question": "Kuşan imperiyasının III əsrin ortalarından zəifləməsi və Sasanilər imperiyası tərəfindən sıxışdırılmasının daxili-xarici səbəblərini təhlil edin.",
+    "options": [
+      "Daxili sülalə münaqişələri və güclənən Sasani şahı I Şapurun hücumları",
+      "Roma imperiyasının Hindistanı tutması",
+      "Monqolların gəlişi",
+      "İpək yolunun tam batması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: III əsrdə Sasanilər Kuşanların qərb torpaqlarını tutdular, şərqdə isə Qupta dövləti yüksəldi.",
+      "distractors": {
+        "1": "Roma Hindistanı tutmadı.",
+        "2": "Monqollar XIII əsrdir.",
+        "3": "İpək yolu batmadı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H04-03-03-013"
+  },
+  {
+    "question": "Kuşan imperiyasının tərkibindəki Yueçji/Türk tayfalarının Mərkəzi Asiyadan Hindistana gətirdiyi hərbi və geyim mədəniyyətini təhlil edin.",
+    "options": [
+      "Atlı dəbilqə və zirehli geyimlər, uzun çəkmələr və şalvar mədəniyyətinin Hindistana daxil olması",
+      "Sarı geyimlər",
+      "Çınqıllı ayaqqabılar",
+      "Qayıqçılıq dəstləri"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kuşanlar Hindistana köçəri türk geyim elementlərini (şalvar, çəkmə, kəmər və zireh) gətirmişdirlər.",
+      "distractors": {
+        "1": "Yalnız sarı geyim deyil.",
+        "2": "Çınqıllı ayaqqabı deyil.",
+        "3": "Qayıqçılıq deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H04-03-03-014"
+  },
+  {
+    "question": "Kuşan imperiyasının süqutundan sonra onun torpaqlarında hansı türk dövləti quruldu?",
+    "options": [
+      "Ağ Hun (Eftallar) dövləti",
+      "Osmanlı imperiyası",
+      "Qızıl Orda",
+      "Səfəvilər"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kuşan imperiyasının tarixini və mədəniyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IV əsrdə Kuşan imperiyasının qalıqları üzərində və Mərkəzi Asiyada Ağ Hun (Eftal) imperiyası bərqərar oldu.",
+      "distractors": {
+        "1": "Osmanlı XIV əsrdir.",
+        "2": "Qızıl Orda XIII əsrdir.",
+        "3": "Səfəvilər XVI əsrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Kuşan imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0206-06H04-03-03-015"
+  },
+  {
+    "question": "Avropada ilk Türk dövləti olan Avropa Hun imperiyasının əsasını qoyan və Volga (İdil) çayını keçərək Avropaya daxil olan hökmdar kimdir?",
+    "options": [
+      "Balamir (Balamber)",
+      "Atilla",
+      "Rua",
+      "Mete xaqan"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IV əsrin II yarısında (375-ci il) Balamir hökmdarlığında Hunlar Volqanı keçərək Avropa Hun imperiyasının əsasını qoydular.",
+      "distractors": {
+        "1": "Atilla Avropa Hun imperiyasının ən qüdrətli hökmdarıdır (V əsr).",
+        "2": "Rua Atillanın əmisi və sələfidir.",
+        "3": "Mete Asiya Hunlarındadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H01-01-01-001"
+  },
+  {
+    "question": "Avropa Hun imperiyasını özünün ən qüdrətli zirvəsinə çatdıran, Avropada \"Tanrının qamçısı\" (Flagellum Dei) kimi tanınan dahi hökmdar kimdir?",
+    "options": [
+      "Atilla",
+      "Balamir",
+      "Uldız",
+      "Mete"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 434-453-cü illərdə hakimiyyətdə olan Atilla Avropa Hun imperiyasını bütün Avropaya hökmran edən nəhəng gücə çevirmişdi.",
+      "distractors": {
+        "1": "Balamir banidir.",
+        "2": "Uldız Bizansa yürüş edən hökmdardır.",
+        "3": "Mete Asiyadadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H01-01-01-002"
+  },
+  {
+    "question": "Avropa Hun imperiyasının mərkəzi və paytaxt karargahı hansı müasir ölkənin ərazisində (Dunay vadisində) yerləşirdi?",
+    "options": [
+      "Macarıstan (Pannoniyada)",
+      "İspaniya",
+      "İngiltərə",
+      "Yunanıstan"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Avropa Hunlarının dövlət mərkəzi Dunay çayı hövzəsində, müasir Macarıstan (Pannoniya çölləri) ərazisində idi.",
+      "distractors": {
+        "1": "İspaniya qərbdədir.",
+        "2": "İngiltərə adadır.",
+        "3": "Yunanıstan cənubdadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H01-01-01-003"
+  },
+  {
+    "question": "Atillanın hakimiyyəti dövründə 451-ci ildə Hun ordusu ilə Qərbi Roma imperiyası və müttəfiqləri arasında baş verən tarixin ən böyük döyüşü hansıdır?",
+    "options": [
+      "Katalaun (Qalliya) döyüşü",
+      "Pinçen döyüşü",
+      "Talas döyüşü",
+      "Kann döyüşü"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 451-ci ildə Fransasının Katalaun çölündə Atilla ilə Roma sərkərdəsi Aetsi arasında qanlı Katalaun döyüşü baş vermişdir.",
+      "distractors": {
+        "1": "Pinçen Asiya Hunlarındadır.",
+        "2": "Talas 751-ci ildədir.",
+        "3": "Kann Karfagen-Roma döyüşüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H01-01-01-004"
+  },
+  {
+    "question": "Atilla ilə Bizans (Şərqi Roma) imperiyası arasında bağlanan və Bizansı Hunlara böllük vergi verməyə məcbur edən müqavilələr hansılardır?",
+    "options": [
+      "Margus və Anatoli sülh müqavilələri",
+      "Nıştadt sülhü",
+      "Gülüstan müqaviləsi",
+      "Tilsit sülhü"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 435-ci ildə Margus və 447-ci ildə Anatoli müqavilələri ilə Bizans Hunlara böyük xərac ödəməyi öhdəsinə götürdü.",
+      "distractors": {
+        "1": "Nıştadt Rus-İsveçdir.",
+        "2": "Gülüstan XVIII əsrdir.",
+        "3": "Tilsit Napoleon dövrüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H01-01-01-005"
+  },
+  {
+    "question": "Hun hökmdarı Uldızın Bizans elçisinə söylediyi məşhur 'Günəşin batdığı yerə qədər hər yeri fəth edə bilərəm' ifadəsi nəyin göstəricisi idi?",
+    "options": [
+      "Hun imperiyasının iddialı və qüdrətli xarici siyasətinin",
+      "Bizansa təslim olmaq istəyinin",
+      "Sülh bağlamaq qorxusunun",
+      "Dəniz ticarətinin"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Uldız xaqan bu sözlərlə Hun ordusunun hərbi qüdrətini və bütün Avropanı tabe etmək iradəsini nümayiş etdirirdi.",
+      "distractors": {
+        "1": "Təslim olmaq deyil.",
+        "2": "Qorxu deyil qüdrətdir.",
+        "3": "Dənizə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H02-02-02-006"
+  },
+  {
+    "question": "Avropa Hun imperiyasının Avropa tarixinə vurduğu ən böyük siyasi darbe və nəticə nə idi?",
+    "options": [
+      "Qərbi Roma imperiyasının süqutunu tezləşdirmək və feodalizmə keçid yaratmaq",
+      "Osmanlı imperiyasını qurmaq",
+      "Avropada islamı yaymaq",
+      "İngiltərəni işğal etmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hun zərbələri Qərbi Roma imperiyasını sarsıtdı və 476-cı ildə Qərbi Roma süqut edərək Qədim dünyadan Orta əsrlərə keçid baş verdi.",
+      "distractors": {
+        "1": "Osmanlı XIV əsrdir.",
+        "2": "İslam VII əsrdir.",
+        "3": "İngiltərəyə keçmədilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H02-02-02-007"
+  },
+  {
+    "question": "Atillanın ölümündən (453-cü il) sonra Avropa Hun imperiyasının zəifləməsinin əsas daxili səbəbi nə idi?",
+    "options": [
+      "Atillanın oğulları (Elak, Dengizik, İrnek) arasında taxt-tac müharibələri və tabe edilmiş german tayfalarının qiyamı",
+      "Bizansın dəniz hücumu",
+      "Taun epidemiyası",
+      "Monqol hücumu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Atilladan sonra oğulları arasında münaqişələr başladı, 454-cü ildə Nedao döyüşündə german tayfaları qiyam edərək Hun dövlətini zəiflətdilər.",
+      "distractors": {
+        "1": "Bizans dəniz hücumu etmədi.",
+        "2": "Taun baş səbəb deyil.",
+        "3": "Monqollar yox idi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H02-02-02-008"
+  },
+  {
+    "question": "Atillanın Romaya yürüşü zamanı Papa I Leonun Atillanın düşərgəsinə gələrək xahiş etməsi nə ilə nəticələndi?",
+    "options": [
+      "Atillanın Romanı dağıtmaqdan vaz keçərək xərac müqabilində geri dönməsi",
+      "Atillanın əsir düşməsi",
+      "Hun ordusunun məhv olması",
+      "Papanın öldürülməsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 452-ci ildə Papa I Leo Atillanın ayağına gələrək Romanı bağışlamasını xahiş etdi, Atilla mənəvi üstünlüklə xərac alaraq geri çəkildi.",
+      "distractors": {
+        "1": "Atilla əsir düşmədi.",
+        "2": "Hun ordusu məhv olmadı.",
+        "3": "Papa öldürülmədi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H02-02-02-009"
+  },
+  {
+    "question": "Avropa Hunlarının hərbi taktikasının Avropa cəngavərliyinə göstərdiyi əsas təsir nə idi?",
+    "options": [
+      "Üzəngi, süvari yəhəri və çevik atlı oxçuluq taktikasının Avropada mənimsənilməsi",
+      "Ağır qalxanların ləğvi",
+      "Dəniz döyüşlərinin başlanması",
+      "Tüfəngdən istifadə olunması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hunlar Avropaya dəmirdən üzəngi, yəhər və köçəri süvari taktikasını gətirdilər ki, bu da cəngavər ordusunun yaranmasına səbəb oldu.",
+      "distractors": {
+        "1": "Qalxanlar ləğv edilmədi.",
+        "2": "Dəniz döyüşü deyil.",
+        "3": "Tüfəng XVI əsrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H02-02-02-010"
+  },
+  {
+    "question": "Avropa Hun imperiyasının Avropanın etnik xəritəsinin dəyişməsində (Xalqların Böyük Köçü) rolu necə təhlil edilməlidir?",
+    "options": [
+      "Qot, German, Slavyan və başqa tayfaları hərəkətə gətirərək müasir Avropa xalqlarının bünövrəsini qoyması",
+      "Avropanı tamamilə kimsəsizləşdirməsi",
+      "Yalnız romalıları saxlamaq",
+      "Etnik dəyişiklik etməmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hunların gəlişi german tayfalarını Roma sərhədlərinə qovdu, nəticədə müasir Fransa, Almaniya, İngiltərə xalqlarının əsası qoyuldu.",
+      "distractors": {
+        "1": "Kimsəsizləşdirmədi.",
+        "2": "Romalılar zəiflədi.",
+        "3": "Etnik dəyişiklik nəhəng oldu."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H04-03-03-011"
+  },
+  {
+    "question": "Bizans tarixçisi Priskosun Atillanın sarayındakı elçilik xatirələrinin Avropa Hunlarının mədəniyyətini öyrənməkdə dəyərini təhlil edin.",
+    "options": [
+      "Priskos Hun sarayının nizam-intizamını, sadəliyini, Atillanın müdrikliyini və qonaqpərvərliyini obektiv təsvir etmişdir",
+      "Hunların barbar və savadsız olduğunu yazmışdır",
+      "Sarayın olmadığını iddia etmişdir",
+      "Yalnız Roma haqqında yazmışdır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Priskos Atillanın sarayında şəxsən olmuş, Atillanın taxta qabda yemək yediyini, sadə geyindiyini və dövləti müdrikliklə idarə etdiyini yazmışdır.",
+      "distractors": {
+        "1": "Priskos barbar adlandırmır, heyranlığını bildirir.",
+        "2": "Saray var idi.",
+        "3": "Hunlar haqqında yazmışdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H04-03-03-012"
+  },
+  {
+    "question": "Katalaun döyüşünün (451-ci il) hərbi-siyasi nəticələrini təhlil edin.",
+    "options": [
+      "Heç bir tərəf tam qələbə qazanmasa da, Atilla taktiki üstünlüyü qoruyub növbəti il İtaliyaya yürüdü",
+      "Roma tam qalib gəldi",
+      "Hun ordusu yox edildi",
+      "Atilla həlak oldu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Katalaun döyüşü tarixin en qanlı qırğınlarından idi; hər iki tərəf böyük itki verdi, lakin Roma Hunları dayandıra bilmədi və Atilla İtaliyaya girdi.",
+      "distractors": {
+        "1": "Roma tam qalib gəlmədi.",
+        "2": "Hun ordusu yox olmadı.",
+        "3": "Atilla 453-də öldü."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H04-03-03-013"
+  },
+  {
+    "question": "Avropa Hun imperiyasının dağılmasından sonra Hun tayfalarının (Bulqar, Suvar, Xəzər) hansı bölgələrdə yeni türk dövlətləri qurmasını təhlil edin.",
+    "options": [
+      "Qara dəniz şimalı, Qafqaz və İdil (Volqa) boylarında",
+      "Yalnız Şimal qütbündə",
+      "Yalnız Şimali Amerikada",
+      "Avstraliyada"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hunların qalıqları İdil-Bulqar, Böyük Bulqar və Xəzər xaqanlığı kimi qüdrətli dövlətlərin bünövrəsini qoydular.",
+      "distractors": {
+        "1": "Şimal qütbü deyil.",
+        "2": "Amerika deyil.",
+        "3": "Avstraliya deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H04-03-03-014"
+  },
+  {
+    "question": "Nə üçün müasir Macarıstan (Hungary) dövlətinin və xalqının adı dünya tarihində Hunların adı ilə bağlaşdırılır?",
+    "options": [
+      "Avropa Hunlarının mərkəzinin Pannoniya (Macarıstan) olması və magyar etnosunda Hun mirasının qorunması",
+      "Yalnız ad oxşarlığına görə",
+      "Macarların Çindən gəlməsi səbəbilə",
+      "Uydurma olduğu üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Avropa Hun imperiyasının tarixini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Macarıstan adı (Hungary) Hunlardan gəlir və macar xalqının qədim köklərində Hun-Türk komponenti mühüm rol oynamışdır.",
+      "distractors": {
+        "1": "Yalnız ad oxşarlığı deyil mədəni-tarixi bağdır.",
+        "2": "Çindən gəlmədilər.",
+        "3": "Uydurma deyil faktikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Avropa Hun imperiyası",
+    "cat": "Ortaq türk tarixi 8",
+    "passport_id": "08-003-0207-07H04-03-03-015"
+  }
+]

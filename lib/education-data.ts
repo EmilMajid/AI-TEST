@@ -23,7 +23,8 @@ export const UNIFIED_SUBJECTS = [
     "Musiqi",
     "Fiziki tərbiyə",
     "Çağırışaqədərki hazırlıq",
-    "Zəfər tarixi"
+    "Zəfər tarixi",
+    "Ortaq türk tarixi"
 ] as const;
 
 export type SubjectName = typeof UNIFIED_SUBJECTS[number];
@@ -36,7 +37,7 @@ export const subjectsByClass: Record<string, string[]> = {
     "5": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Təbiət", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "6": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Coğrafiya", "Təbiət", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "7": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
-    "8": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
+    "8": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Ortaq türk tarixi", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "9": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Zəfər tarixi", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "10": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"],
     "11": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"]
@@ -52,6 +53,30 @@ export const groups = {
 }
 
 export const TOPICS: Record<string, string[]> = {
+    "Ortaq türk tarixi": [
+        "I BÖLMƏ. TÜRK DÜNYASI BƏŞƏR TARİXİ KONTEKSTİNDƏ",
+        "1. Türk xalqlarının dünya tarixində yeri",
+        "2. Türk dilləri",
+        "\"Türk\" adının mənası",
+        "4. Türk xalqlarının yayıldığı coğrafiya",
+        "5. Türk xalqlarının ilk ulu vətəni",
+        "6. Türk xalqlarının köç etməsinin (miqrasiya) səbəbləri və nəticələri",
+        "7. Mərkəzi Asiyanın ən qədim mədəniyyətləri",
+        "8. Prototürklər",
+        "9. Sakların iqtisadiyyatı, ictimai həyatı və mədəniyyəti",
+        "II BÖLMƏ. HUN İMPERİYALARI VƏ SONRAKI TÜRK DÖVLƏTLƏRİ",
+        "1. Asiya hunlarının imperiyası",
+        "2. Usunların dövləti",
+        "3. Qədim qırğızlar",
+        "4. Kanquy dövləti",
+        "5. Parkana (Davan) dövləti",
+        "6. Kuşan imperiyası",
+        "7. Avropa Hun imperiyası",
+        "8. Cənub hunlarının dövləti",
+        "9. Ağ Hun (Eftallar) dövləti",
+        "10. Jujan imperiyası",
+        "11. Hun imperiyalarının və sonrakı türk dövlətlərinin dövründə iqtisadiyyat və mədəniyyət"
+    ],
     "Azərbaycan dili": ["Orfoqrafiya", "Qrammatika", "Ədəbiyyat"],
     "Riyaziyyat": ["Cəbr", "Həndəsə", "Trigonometriya"],
     "Fizika": ["Mexanika", "Optika", "Elektromagnetizm"],

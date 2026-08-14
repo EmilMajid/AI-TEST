@@ -1,0 +1,468 @@
+[
+  {
+    "question": "Müasir Dövri cədvəldə elementlər hansı əsas parametrin artması sırası ilə düzülmüşdür?",
+    "options": [
+      "Atom nömrəsinin (nüvə yükünün)",
+      "Nisbi atom kütləsinin",
+      "Neytron sayının",
+      "Valens elektron sayının"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Müasir Dövri qanuna əsasən, elementlərin xassələri onların atom nüvələrinin yükünün (Z) artmasından dövri asılıdır.",
+      "distractors": {
+        "1": "Mendeleyevin ilk cədvəlində kütlə idi, müasir cədvəldə nüvə yüküdür.",
+        "2": "Neytron sayı deyil.",
+        "3": "Valens elektronu qrupu təyin edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K01-01-01-001"
+  },
+  {
+    "question": "Dövri cədvəldə üfüqi sıralar necə adlanır?",
+    "options": [
+      "Dövr",
+      "Qrup",
+      "Yarımsəviyyə",
+      "Yarımqrup"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri cədvəldəki üfüqi sıralara dövr deyilir. Cədvəldə cəmi 7 dövr mövcuddur.",
+      "distractors": {
+        "1": "Qrup şaquli sütundur.",
+        "2": "Yarımsəviyyə s, p, d, f-dir.",
+        "3": "Yarımqrup qrupun hissəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K01-01-01-002"
+  },
+  {
+    "question": "IUPAC sisteminə görə Dövri cədvəldə neçə şaquli qrup (sütun) vardır?",
+    "options": [
+      "18 qrup",
+      "8 qrup",
+      "7 qrup",
+      "10 qrup"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Beynəlxalq IUPAC nomenklaturasına görə Dövri cədvəldə 1-dən 18-ə qədər nömrələnmiş 18 şaquli sütun var.",
+      "distractors": {
+        "1": "8 qrup köhnə qısa dövr cədvəlində A/B qrupları idi.",
+        "2": "7 dövr var.",
+        "3": "10 d-elementləri sırasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K01-01-01-003"
+  },
+  {
+    "question": "Elementin yerləşdiyi dövrün nömrəsi atomda neyi göstərir?",
+    "options": [
+      "Energetik səviyyələrin (təbəqələrin) sayını",
+      "Xarici təbəqədəki elektron sayını",
+      "Proton sayını",
+      "Neytron sayını"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövri cədvəldə dövrün nömrəsi atomun malik olduğu elektron təbəqələrinin (energetik səviyyələrin) sayına bərabərdir.",
+      "distractors": {
+        "1": "Xarici təbəqə elektronu əsas qrup nömrəsini verir.",
+        "2": "Proton atom nömrəsidir.",
+        "3": "Neytron Ar - Z-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K01-01-01-004"
+  },
+  {
+    "question": "Əsas yarımqrup elementlərində qrupun nömrəsi nəyə bərabərdir?",
+    "options": [
+      "Xarici energetik səviyyədəki elektronların sayına (valent elektronlarına)",
+      "Dövr sayına",
+      "Proton sayına",
+      "Atomun nisbi kütləsinə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əsas yarımqrup (A qrupu) elementləri üçün qrupun nömrəsi atomun xarici təbəqəsindəki valent elektronlarının sayını bildirir.",
+      "distractors": {
+        "1": "Dövr təbəqə sayıdır.",
+        "2": "Proton atom nömrəsidir.",
+        "3": "Kütlə Ar-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K01-01-01-005"
+  },
+  {
+    "question": "Elektron formulu 1s² 2s² 2p⁶ 3s² 3p⁵ olan X elementinin Dövri cədvəldə mövqeyini müəyyən edin.",
+    "options": [
+      "3-cü dövr, VII A qrupu (17-ci qrup)",
+      "2-ci dövr, V A qrupu",
+      "3-cü dövr, V A qrupu",
+      "4-cü dövr, VII A qrupu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ən böyük baş kvant ədədi n=3 olduğu üçün 3-cü dövr; xarici təbəqədə 3s² 3p⁵ (2+5=7 elektron) olduğu üçün VII A qrupunda yerləşir (17Cl).",
+      "distractors": {
+        "1": "Dövr 3-dür.",
+        "2": "Xarici elektron sayı 7-dir.",
+        "3": "Dövr 3-dür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K02-02-02-006"
+  },
+  {
+    "question": "VIII A qrupunda (18-ci qrup) yerləşən Helium (He), Neon (Ne), Arqon (Ar) elementləri kimyəvi cəhətdən necə adlanır?",
+    "options": [
+      "Təsirisiz (nəcib) qazlar",
+      "Qələvi metallar",
+      "Halogenlər",
+      "Xalkogenlər"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VIII A qrupunda yerləşən elementlərin xarici elektron təbəqəsi tam dolduğundan (oktet/duplet) onlar nəcib (təsirsiz) qazlar adlanır.",
+      "distractors": {
+        "1": "Qələvi metallar I A qrupudur.",
+        "2": "Halogenlər VII A qrupudur.",
+        "3": "Xalkogenlər VI A qrupudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K02-02-02-007"
+  },
+  {
+    "question": "d-elementləri Dövri cədvəldə hansı yarımqrupları əmələ gətirir?",
+    "options": [
+      "Əlavə yarımqrupları (B qrupları)",
+      "Əsas yarımqrupları (A qrupları)",
+      "Təsirsiz qazları",
+      "Lantanoidləri"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: d-yarımsəviyyəsi dolan keçid elementləri Dövri cədvəldə Əlavə yarımqrupları (B qruplarını - 3-dən 12-yə qədər qrupları) təşkil edir.",
+      "distractors": {
+        "1": "Əsas yarımqruplar s və p elementləridir.",
+        "2": "Təsirsiz p-elementidir.",
+        "3": "Lantanoidlər f-elementidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K02-02-02-008"
+  },
+  {
+    "question": "Kalsium (20Ca) atomunun Dövri cədvəldəki yerini elektron konfiqurasiyasına görə təyin edin.",
+    "options": [
+      "4-cü dövr, II A qrupu (s-elementi)",
+      "3-cü dövr, II A qrupu",
+      "4-cü dövr, II B qrupu",
+      "4-cü dövr, IV A qrupu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 20Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Baş kvant ədədi n=4 (4-cü dövr), xarici s-yarımsəviyyəsində 2 elektron var (II A qrupu s-elementi).",
+      "distractors": [
+        {
+          "1": "Dövr n=4-dür.",
+          "2": "s-elementi olduğu üçün A qrupudur (B qrupu d-elementidir).",
+          "3": "Valent elektronu 2-dir."
+        }
+      ]
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K02-02-02-009"
+  },
+  {
+    "question": "Kiçik və böyük dövr anlayışlarına görə Dövri cədvəldə hansı dövr 2 elementdən ibarət ən qısa dövrdür?",
+    "options": [
+      "1-ci dövr (H və He)",
+      "2-ci dövr",
+      "3-cü dövr",
+      "7-ci dövr"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1-ci dövrdə cəmi 2 element (Hidrogen və Helium) var və bu ən kiçik dövrdür.",
+      "distractors": {
+        "1": "2-ci dövrdə 8 element var.",
+        "2": "3-cü dövrdə 8 element var.",
+        "3": "7-ci dövrdə 32-dən çox element var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K02-02-02-010"
+  },
+  {
+    "question": "X³⁻ ionunda 18 elektron var. Neytral X atomunun Dövri cədvəldəki yerini təhlil edin.",
+    "options": [
+      "3-cü dövr, V A qrupu (15P - Fosfor)",
+      "3-cü dövr, VIII A qrupu",
+      "2-ci dövr, V A qrupu",
+      "4-cü dövr, I A qrupu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: X³⁻ 3 e- qəbul edib 18 e- olubsa, neytral atomda Z = 18 - 3 = 15 proton var. 15P: 1s² 2s² 2p⁶ 3s² 3p³ (3-cü dövr, V A qrupu)."
+      ],
+      "distractors": [
+        {
+          "1": "18Ar neytraldır.",
+          "2": "2-ci dövr 7N-dir.",
+          "3": "4-cü dövr deyil."
+        }
+      ]
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K04-03-03-011"
+  },
+  {
+    "question": "Qələvi metallar (I A qrupu) və Halogenlər (VII A qrupu) elementlərinin xarici elektron təbəqələrini müqayisə edin.",
+    "options": [
+      "Qələvi metallar ns¹ (1 valent elektronu), Halogenlər ns² np⁵ (7 valent elektronu) formadadır",
+      "Hər ikisi ns² formadadır",
+      "Qələvi metallar ns² np⁶ formadadır",
+      "Halogenlər ns¹-dir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: I A qrupu elementləri 1 valens elektronuna (ns¹), VII A halogenləri isə 7 valens elektronuna (ns² np⁵) malikdir.",
+      "distractors": [
+        {
+          "1": "ns² II A qrupudur.",
+          "2": "ns² np⁶ nəcib qazdır.",
+          "3": "Halogenlər ns¹ deyil."
+        }
+      ]
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K04-03-03-012"
+  },
+  {
+    "question": "4-cü dövrdə yerləşən X atomunun xarici təbəqəsində 3d⁵ 4s² elektronları var. X-in atom nömrəsini və qrupunu təhlil edin.",
+    "options": [
+      "Z = 25 (Manganez - 25Mn), 4-cü dövr, VII B qrupu",
+      "Z = 27 (Kobalt)",
+      "Z = 20 (Kalsium)",
+      "Z = 30 (Sink)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: [Ar] 3d⁵ 4s² cəmi 18 + 5 + 2 = 25 elektron/proton edir. Bu d-elementi olduğu üçün VII B əlavə yarımqrupunda yerləşir (25Mn)."
+      ],
+      "distractors": [
+        {
+          "1": "Z=27 Co (3d⁷ 4s²) edər.",
+          "2": "Z=20 s-elementidir.",
+          "3": "Z=30 (3d¹⁰ 4s²) II B edər."
+        }
+      ]
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K04-03-03-013"
+  },
+  {
+    "question": "Elementin d-yarımsəviyyəsinin dolması hansı dövrdən etibarən başlanır və səbəbi nədir?",
+    "options": [
+      "4-cü dövrdən etibarən, çünki Kleçkovski qaydasına görə 4s orbitalının enerjisi 3d-dən daha aşağıdır",
+      "1-ci dövrdən",
+      "2-ci dövrdən",
+      "Yalnız 6-cı dövrdən"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": [
+        "İzah: Kleçkovski qaydasına əsasən energy (n+l): 4s üçün 4+0=4, 3d üçün 3+2=5 olduğundan əvvəlcə 4s, sonra 3d dolur (4-cü dövr)."
+      ],
+      "distractors": [
+        {
+          "1": "1-ci dövrdə d yoxdur.",
+          "2": "2-ci dövrdə d yoxdur.",
+          "3": "4-cü dövrdən başlayır (21Sc)."
+        }
+      ]
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K04-03-03-014"
+  },
+  {
+    "question": "Dövri qanunun kəşfinin kimya elminin inkişafında və yeni elementlərin öncədən xassələrinin xəbər verilməsində rolunu təhlil edin.",
+    "options": [
+      "Dövri sistem hələ kəşf olunmamış elementlərin (məs. Ekasilisium - Germanium) atom kütləsini və xassələrini dəqiq öncədən deməyə imkan verdi",
+      "Dövri sistem elementləri dəyişdirdi",
+      "Hər şeyi təsadüfi etdi",
+      "Elementləri ləğv etdi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Müasir dövri cədvəl biliklərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: D.İ.Mendeleyev dövri qanuna əsaslanaraq kəşf olunmamış Qallium, Skandium və Germanium elementlərinin xassələrini əvvəlcədən dəqiqliklə proqnozlaşdırmışdı.",
+      "distractors": {
+        "1": "Elementləri dəyişmədi, sinifləndirdi.",
+        "2": "Təsadüfi deyil qanunauyğundur.",
+        "3": "Ləğv etmədi."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.2 Müasir dövri cədvəl",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0102-02K04-03-03-015"
+  }
+]

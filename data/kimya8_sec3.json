@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Kimyəvi tənlik nəyi ifadə edir?",
+    "options": [
+      "Kimyəvi reaksiyanın formul və amsallar vasitəsilə şərti yazılışını",
+      "Nüvə parçalanmasını",
+      "Fiziki halın dəyişməsini",
+      "Elektrik cərəyanını"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kimyəvi tənlik kimyəvi düsturlar, riyazi işarələr və əmsallar vasitəsilə kimyəvi reaksiyanın şərti yazılışıdır.",
+      "distractors": {
+        "1": "Nüvə reaksiyası kimyəvi tənlik deyil.",
+        "2": "Fiziki hadisədir tənlik kimyəvidir.",
+        "3": "Fiziki kəmiyyətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K01-01-01-001"
+  },
+  {
+    "question": "Kimyəvi tənlikdə formulun qarşısında yazılan və molekul (və ya mol) sayını göstərən ədəd necə adlanır?",
+    "options": [
+      "Valenslik",
+      "İndeks",
+      "Oksidləşmə dərəcəsi",
+      "Əmsal"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Düsturun qarşısında yazılan tamm ədədlər (məsələn, 2H₂ + O₂ -> 2H₂O-dakı 2) əmsal adlanır.",
+      "distractors": {
+        "0": "Valenslik atomun rabitə imkanıdır.",
+        "1": "İndeks formulun aşağı sağında yazılır.",
+        "2": "İon yüküdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K01-01-01-002"
+  },
+  {
+    "question": "Kimyəvi düsturda element işarəsinin aşağı sağ küncündə yazılan və atom sayını göstərən ədəd necə adlanır?",
+    "options": [
+      "Nisbi kütlə",
+      "Sıra nömrəsi",
+      "İndeks",
+      "Əmsal"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İndeks molekul daxilində verilmiş element atomlarının sayını göstərir (məsələn, H₂O-da 2).",
+      "distractors": {
+        "0": "Ar kütlədir.",
+        "1": "Z proton sayıdır.",
+        "3": "Əmsal formulun önündə yazılır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K01-01-01-003"
+  },
+  {
+    "question": "CH₄ + 2O₂ -> CO₂ + 2H₂O reaksiyasında neçə mol Oksigen (O₂) sarf olunur?",
+    "options": [
+      "1 mol O₂",
+      "3 mol O₂",
+      "4 mol O₂",
+      "2 mol O₂"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tənliyə görə O₂ formulunun qarşısındakı əmsal 2-dir, yəni 1 mol CH₄-ün yanması üçün 2 mol O₂ tələb olunur.",
+      "distractors": {
+        "0": "1 mol CH₄ reaksiyaya girir.",
+        "1": "Əmsal 2-dir.",
+        "2": "Əmsal 2-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K01-01-01-004"
+  },
+  {
+    "question": "2H₂ + O₂ -> 2H₂O reaksiyasında reaksiya məhsulunun (su) əmsalı neçədir?",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sağ tərəfdə suyun (H₂O) qarşısında yazılan əmsal 2-dir.",
+      "distractors": {
+        "0": "Əmsal 2-dir.",
+        "1": "1 O₂-nin əmsalıdır.",
+        "2": "Əmsal 2-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K01-01-01-005"
+  },
+  {
+    "question": "2Mg + O₂ -> 2MgO reaksiyasına əsasən 48 qram Mg neçə qram O₂ ilə tam reaksiyaya girər? (Ar(Mg)=24, Ar(O)=16)",
+    "options": [
+      "16 qram O₂",
+      "64 qram O₂",
+      "32 qram O₂",
+      "48 qram O₂"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2 mol Mg (2 × 24 = 48 q) tam olaraq 1 mol O₂ (32 q) ilə birləşib 2 mol MgO (80 q) əmələ gətirir.",
+      "distractors": {
+        "0": "16 q 1 atom O-dur.",
+        "1": "64 q 2 mol O₂-dir.",
+        "3": "48 q Mg-in massasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K02-02-02-006"
+  },
+  {
+    "question": "CaCO₃ -> CaO + CO₂ reaksiyasına əsasən 100 q CaCO₃ tam parçalandıqda neçə qram CaO və neçə litr CO₂ (n.ş.) alınar? (M(CaCO₃)=100, M(CaO)=56)",
+    "options": [
+      "100 q CaO və 22.4 l CO₂",
+      "56 q CaO və 44 l CO₂",
+      "56 q CaO və 22.4 l CO₂",
+      "44 q CaO və 11.2 l CO₂"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 mol CaCO₃ (100 q) parçalandıqda 1 mol CaO (56 q) və 1 mol CO₂ (n.ş.-də 22.4 litr) alınır.",
+      "distractors": {
+        "0": "CaO 56 q-dır.",
+        "1": "Həcm 22.4 l-dir.",
+        "3": "44 q CO₂-nin massasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K02-02-02-007"
+  },
+  {
+    "question": "2Al + 6HCl -> 2AlCl₃ + 3H₂ reaksiyasında 5.4 q Al reaksiya girdikdə neçə mol H₂ qazı ayrılar? (Ar(Al)=27)",
+    "options": [
+      "0.3 mol H₂",
+      "0.2 mol H₂",
+      "0.6 mol H₂",
+      "0.1 mol H₂"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2 mol Al (54 q) -> 3 mol H₂ verir. 5.4 q Al -> x. x = (5.4 × 3) / 54 = 0.3 mol H₂.",
+      "distractors": {
+        "1": "Hesablama səhvidir.",
+        "2": "HCl moludur.",
+        "3": "Al moludur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K02-02-02-008"
+  },
+  {
+    "question": "N₂ + 3H₂ -> 2NH₃ reaksiyasına görə 14 q N₂ neçə litr (n.ş.) NH₃ əmələ gətirər? (M(N₂)=28 q/mol)",
+    "options": [
+      "5.6 litr NH₃",
+      "22.4 litr NH₃",
+      "11.2 litr NH₃",
+      "44.8 litr NH₃"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 28 q N₂ (1 mol) -> 2 mol NH₃ (2 × 22.4 = 44.8 l). 14 q N₂ (0.5 mol) -> 22.4 litr NH₃.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "1 mol NH₃-ün həcmidir.",
+        "3": "28 q N₂-dən alınandır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K02-02-02-009"
+  },
+  {
+    "question": "Kimyəvi tənliklərin tərtib edilməsində ilk addım nədir?",
+    "options": [
+      "Dərhal əmsal qoymaq",
+      "Atom kütlələrini toplamaq",
+      "Reaksiyaya daxil olan və alınan maddələrin doğru kimyəvi formullarını yazmaq",
+      "Bütün indekləri 2 etmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tənlik tərtib edərkən öncə başlanğıc və son maddələrin valensliklərinə uyğun dəqiq formulları yazılır, sonra əmsallaşdırılır.",
+      "distractors": {
+        "0": "Formul səhv olsa əmsal mənasızdır.",
+        "1": "Sonrakı addımdır.",
+        "3": "İndekslər valensliyə bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K02-02-02-010"
+  },
+  {
+    "question": "2KClO₃ -> 2KCl + 3O₂ reaksiyası üzrə 245 q KClO₃ tam parçalandıqda ayrılan O₂-nin kütləsini və həcmini təhlil edin. (M(KClO₃)=122.5)",
+    "options": [
+      "48 q O₂ və 33.6 l O₂",
+      "32 q O₂ və 22.4 l O₂",
+      "128 q O₂",
+      "96 q O₂ və 67.2 l O₂ (n.ş.)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2 mol KClO₃ (245 q) parçalandıqda 3 mol O₂ (3 × 32 = 96 q) və 3 × 22.4 = 67.2 litr O₂ alınır.",
+      "distractors": {
+        "0": "1 mol KClO₃ üçündür.",
+        "1": "1 mol O₂ üçündür.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K04-03-03-011"
+  },
+  {
+    "question": "Fe₂O₃ + 3CO -> 2Fe + 3CO₂ reaksiyasında 160 q Fe₂O₃-dən alınan Dəmirin kütləsini təhlil edin. (M(Fe₂O₃)=160, Ar(Fe)=56)",
+    "options": [
+      "160 qram Fe",
+      "56 qram Fe",
+      "224 qram Fe",
+      "112 qram Fe"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 mol Fe₂O₃ (160 q) -> 2 mol Fe (2 × 56 = 112 q) əmələ gətirir.",
+      "distractors": {
+        "0": "Fe₂O₃ kütləsidir.",
+        "1": "1 mol Fe-dir.",
+        "2": "4 mol Fe-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K04-03-03-012"
+  },
+  {
+    "question": "Na₂CO₃ + 2HCl -> 2NaCl + H₂O + CO₂ reaksiyasında 1 mol Na₂CO₃ reaksiya girdikdə tənlikdəki bütün maddələrin əmsalları cəmini tapın.",
+    "options": [
+      "5",
+      "6",
+      "8",
+      "1 + 2 + 2 + 1 + 1 = 7"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əmsallar: 1 Na₂CO₃ + 2 HCl + 2 NaCl + 1 H₂O + 1 CO₂. Cəmi: 1+2+2+1+1 = 7.",
+      "distractors": {
+        "0": "1-lər nəzərə alınmayıb.",
+        "1": "Hesablama səhvidir.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K04-03-03-013"
+  },
+  {
+    "question": "2C₂H₂ + 5O₂ -> 4CO₂ + 2H₂O reaksiyasına əsasən 52 qram Asetilenin (C₂H₂) yanmasına neçə mol O₂ sərf olunduğunu təhlil edin. (M(C₂H₂)=26)",
+    "options": [
+      "10 mol O₂",
+      "2.5 mol O₂",
+      "5 mol O₂",
+      "2 mol O₂"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2 mol C₂H₂ (52 q) yanması üçün dəqiq 5 mol O₂ sərf olunur.",
+      "distractors": {
+        "0": "2 dəfə çoxdur.",
+        "1": "1 mol C₂H₂ üçündür.",
+        "3": "C₂H₂ əmsalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K04-03-03-014"
+  },
+  {
+    "question": "Kimyəvi tənliklər əsasında aparılan stexiometrik hesablamaların sənayedə (məsələn, gübrə, metallurgiya) rolunu qiymətləndirin.",
+    "options": [
+      "Yalnız laboratoriyada lazım olması",
+      "Xammal sərfinin və məhsul çıxımının dəqiq planlaşdırılması, israfın qarşısının alınması üçün təməl olması",
+      "Tənliklərin praktiki əhəmiyyətinin olmaması",
+      "Qiyməti artırması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənlikləri və stexiometrik hesablamaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Stexiometriya kimya sənayesində reagentlərin optimal nisbətini və iqtisadi verimini təmin edən dəqiq elmi hesablamadır.",
+      "distractors": {
+        "0": "Bütöv sənaye buna əsaslanır.",
+        "2": "Mühüm praktiki kəsb edir.",
+        "3": "İsrafı azaldıb maya dəyərini salır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.1 Kimyəvi tənliklər",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0301-01K04-03-03-015"
+  },
+  {
+    "question": "Maddə kütləsinin saxlanması qanununu ilk dəfə kim tərəfindən kəşf və təcrübi sübut edilmişdir?",
+    "options": [
+      "C.Dalton",
+      "M.V.Lomonosov (1748) və A.Lavuazye (1789)",
+      "D.İ.Mendeleyev",
+      "A.Avoqadro"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maddə kütləsinin saxlanması qanunu M.V.Lomonosov tərəfindən nəzəri və təcrübi formulə edilmiş, A.Lavuazye tərəfindən dəqiqləşdirilmişdir.",
+      "distractors": {
+        "0": "Dalton atom nəzəriyyəsidir.",
+        "2": "Mendeleyev Dövri qanundur.",
+        "3": "Avoqadro qazlar qanunudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K01-01-01-001"
+  },
+  {
+    "question": "Maddə kütləsinin saxlanması qanununun tərifi necədir?",
+    "options": [
+      "Kütlə enerjiyə çevrilir sıfır olur",
+      "Kimyəvi reaksiyaya daxil olan maddələrin kütlələrinin cəmi reaksiyadan alınan maddələrin kütlələrinin cəminə bərabərdir",
+      "Başlanğıc maddələrin kütləsi azalır",
+      "Məhsulun kütləsi həmişə çox olur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qanuna görə kimyəvi reaksiyalarda atomlar yoxa çıxmır və yenidən yaranmır, yalnız reaksiyaya daxil olan maddələrin atomları yenidən qruplaşır; kütlə sabit qalır.",
+      "distractors": {
+        "0": "Kimyəvi reaksiyada kütlə itmir.",
+        "2": "Cəm bərabərdir.",
+        "3": "Kütlə dəyişməzdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K01-01-01-002"
+  },
+  {
+    "question": "A + B -> C + D reaksiyasında 10 q A və 15 q B tam reaksiyaya girərək 18 q C əmələ gətirir. Alınan D maddəsinin kütləsini tapın.",
+    "options": [
+      "7 qram",
+      "25 qram",
+      "5 qram",
+      "12 qram"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: m(A) + m(B) = m(C) + m(D) => 10 + 15 = 18 + m(D) => 25 = 18 + m(D) => m(D) = 7 qram.",
+      "distractors": {
+        "1": "Başlanğıc kütlə cəmidir.",
+        "2": "Hesablama səhvidir.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K01-01-01-003"
+  },
+  {
+    "question": "Kimyəvi reaksiyalar zamanı atomların sayının dəyişməməsinin atom-molekulyar nəzəriyyə baxımından izahı nədir?",
+    "options": [
+      "Atomlar yoxa çıxır",
+      "Nüvələr bir-birinə qarışır",
+      "Yeni atomlar yaranır",
+      "Kimyəvi reaksiyada atomlar parçalanmır və yenidən yaranmır, yalnız başqa birlaşmələrə qruplaşır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Reaksiya zamanı rabitələr qırılır və yeniləri əmələ gəlir, lakin hər element atomlarının ümumi sayısı və kütləsi sabit qalır.",
+      "distractors": {
+        "0": "Atomlar yoxa çıxmır.",
+        "1": "Nüvələr dəyişmir.",
+        "2": "Nüvə reaksiyası deyil yeni atom yaranmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K01-01-01-004"
+  },
+  {
+    "question": "Açıq qabda odun yandıqda külün massasının odunun massasından az olmasının kütlənin saxlanması qanununa zidd olmamasının səbəbi nədir?",
+    "options": [
+      "Qanun oduna ait deyil",
+      "Yanma zamanı qaz halında CO₂ və H₂O buxarı havalanaraq qabdan çıxır; bütün məhsullar toplansa kütlə tam bərabər olar",
+      "Kül yüngüldür",
+      "Kütlə yox oldu"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Açıq sistemdə qaz məhsulları uçduğu üçün görünən mass azalır. Reaksiya qapalı qabda aparılsa: m(odun)+m(O₂) = m(kül)+m(CO₂)+m(H₂O) bərabərliyi ödənər.",
+      "distractors": {
+        "0": "Qanun ümumidir.",
+        "2": "Qazlar nəzərə alınmalıdır.",
+        "3": "Kütlə yox olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K01-01-01-005"
+  },
+  {
+    "question": "2H₂ + O₂ -> 2H₂O tənliyində 4 qram Hidrogen və 32 qram Oksigen tam reaksiyaya girdikdə əmələ gələn suyun massasını təhlil edin.",
+    "options": [
+      "32 qram H₂O",
+      "36 qram H₂O",
+      "28 qram H₂O",
+      "18 qram H₂O"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: m(H₂O) = m(H₂) + m(O₂) = 4 q + 32 q = 36 qram su əmələ gəlir.",
+      "distractors": {
+        "0": "Oksigen massasıdır.",
+        "2": "Hesablama səhvidir.",
+        "3": "1 mol suyun massasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K02-02-02-006"
+  },
+  {
+    "question": "Qapalı qabda 12 qram Karbon 40 qram Oksigenlə yandırılır. Reaksiyadan sonra qabda hansı maddələr və nə qədər kütlədə olar? (C + O₂ -> CO₂)",
+    "options": [
+      "12 q C və 40 q O₂",
+      "44 q CO₂",
+      "52 q CO₂",
+      "44 q CO₂ və 8 q artıq qalmış O₂ (Cəmi qabda 52 q maddə)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 12 q C (1 mol) tam yanmaq üçün 32 q O₂ (1 mol) tələb edir və 44 q CO₂ əmələ gətirir. O₂-dən 40 - 32 = 8 q artıq qalır. Qabda cəmi 44 + 8 = 52 q maddə olur (başlanğıc 12+40=52 q).",
+      "distractors": {
+        "0": "Reaksiya gedib.",
+        "1": "Artıq qalan O₂ nəzərə alınmayıb.",
+        "2": "52 q CO₂ alına bilməz C 12 q-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K02-02-02-007"
+  },
+  {
+    "question": "Fe + S -> FeS reaksiyasında 56 q Fe və 32 q S tam reaksiyaya girdikdə 88 q FeS alınır. Əgər 56 q Fe və 40 q S götürülərsə reaksiyadan sonra neçə qram maddə qalar?",
+    "options": [
+      "88 q FeS",
+      "96 q FeS",
+      "40 q S",
+      "88 q FeS və 8 q artıq kükürd S (Cəmi 96 q)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 56 q Fe yalnız 32 q S ilə birləşir (88 q FeS). S-dən 40 - 32 = 8 q artıq qalır. Qabda ümumi massa 88 + 8 = 96 q (56+40=96 q).",
+      "distractors": {
+        "0": "Artıq S nəzərə alınmayıb.",
+        "1": "FeS maximal 88 q alına bilər.",
+        "2": "Fe reaksiya girib."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K02-02-02-008"
+  },
+  {
+    "question": "2KNO₃ -> 2KNO₂ + O₂ parçalanma reaksiyasında 202 q KNO₃ parçalandıqda 170 q KNO₂ alınmışsa, ayrılan O₂-nin həcmini (n.ş.) təhlil edin. (M(O₂)=32)",
+    "options": [
+      "22.4 litr O₂ (32 qram)",
+      "64 qram O₂",
+      "44.8 litr O₂",
+      "11.2 litr O₂"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: m(O₂) = m(KNO₃) - m(KNO₂) = 202 - 170 = 32 qram. 32 q O₂ 1 moldur və n.ş.-də 22.4 litr həcm tutur.",
+      "distractors": {
+        "1": "Kütlə 32 q-dır.",
+        "2": "2 mol O₂-dir.",
+        "3": "16 qram O₂-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K02-02-02-009"
+  },
+  {
+    "question": "Qapalı kolbada N₂ + 3H₂ -> 2NH₃ reaksiyası aparılır. Reaksiya zamanı kolbadakı maddələrin ümumi kütləsi və atomların ümumi sayı necə dəyişər?",
+    "options": [
+      "Kütlə azalır, atom sayı dəyişmir",
+      "Həm ümumi kütlə, həm də atomların ümumi sayı dəyişməz qalır",
+      "Molekul sayı dəyişmir",
+      "Kütlə artır, atom sayı azalır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maddə kütləsinin saxlanması qanununa görə qapalı sistemdə ümumi kütlə və atomların ümumi sayı qətiyyən dəyişmir (molekul sayı dəyişə bilər).",
+      "distractors": {
+        "0": "Kütlə azalmaz.",
+        "2": "Molekul sayı 4 moldan 2 mola düşür.",
+        "3": "Kütlə sabitdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K02-02-02-010"
+  },
+  {
+    "question": "CH₄ + 2O₂ -> CO₂ + 2H₂O reaksiyasında 16 q CH₄ vı 64 q O₂ reaksiya girdikdə 44 q CO₂ alınıb. Alınan suyun kütləsini Kütlənin saxlanması qanunu ilə təhlil edin.",
+    "options": [
+      "72 qram H₂O",
+      "20 qram H₂O",
+      "18 qram H₂O",
+      "36 qram H₂O"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: m(sol) = 16 + 64 = 80 q. m(sağ) = 44 + m(H₂O) = 80 => m(H₂O) = 80 - 44 = 36 qram.",
+      "distractors": {
+        "0": "2 mislidir.",
+        "1": "Hesablama səhvidir.",
+        "2": "1 mol su kütləsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K04-03-03-011"
+  },
+  {
+    "question": "Açıq qabda Kalsium karbonatın (CaCO₃ -> CaO + CO₂↑) parçalanması zamanı bərk qalıq massasının azalması səbəbini təhlil edin.",
+    "options": [
+      "Reaksiyanın getməməsi",
+      "Əmələ gələn qaz halındakı CO₂-nin açıq qabdan çıxması hesabına bərk fazanın kütləsinin azalması",
+      "Ca atomlarının məhv olması",
+      "Kütlənin yox olması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qaz (CO₂) qabdan çıxdığı üçün bərk qalıq (CaO) 100 q-dan 56 q-a düşür. Qazın kütləsi (44 q) nəzərə alınsa ümumi kütlə saxlanmışdır.",
+      "distractors": {
+        "0": "Reaksiya gedir.",
+        "2": "Atom məhv olmur.",
+        "3": "Kütlə yox olmur CO₂ qazı şəklində çıxır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K04-03-03-012"
+  },
+  {
+    "question": "M.V.Lomonosovun 1748-ci ildə lehimlənmiş şüşə kolbalarda metalları (gümüş, qurğuşun) yandıraraq kütlənin saxlanmasını sübut etdiyi təcrübənin mahiyyətini təhlil edin.",
+    "options": [
+      "Hava yox olur",
+      "Kolba partlayır",
+      "Kolba lehimləndiyi üçün içəri hava girmir və çıxmır, qızdırılmadan əvvəl və sonra kolbanın kütləsi tam bərabər qalır",
+      "Metalın kütləsi 2 dəfə artır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Lomonosov Robert Boylun səhvini (od hissəciklərinin metala hopması) ifşa edərək qapalı kolbada kütlənin tam sabit qaldığını dəqiq tərəzi ilə sübut etdi.",
+      "distractors": {
+        "0": "Hava O₂-si istifadə olunur.",
+        "1": "Partlamırdı lehimli idi.",
+        "3": "Metal O₂ ilə birləşir lakin ümumi kolba kütləsi eyni qalır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K04-03-03-013"
+  },
+  {
+    "question": "E = mc² (Eynşteyn nisbilik nəzəriyyəsi) kütlə və energiya əlaqəsinin adi kimyəvi reaksiyalara təsirini qiymətləndirin.",
+    "options": [
+      "Kimya ləğv olunur",
+      "Kimyəvi reaksiyada kütlə yarıya enir",
+      "Kütlə saxlanmır",
+      "Adi kimyəvi reaksiyalarda ayrılan energiya kütlə qüsuru (Δm) o qədər cüzidir ki (10⁻⁹ q), Kütlənin saxlanması qanunu praktiki 100% dəqiq qalır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Nüvə reaksiyalarında Δm hiss olunandır, lakin kimyəvi reaksiyalarda kütlə dəyişməsi ölçülə bilməyəcək dərəcədə kiçikdir və saxlanma qanunu tam qüvvədədir.",
+      "distractors": {
+        "0": "Kimyanın təməlidir.",
+        "1": "Yarıya enmir.",
+        "2": "Saxlanılır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K04-03-03-014"
+  },
+  {
+    "question": "Maddə kütləsinin saxlanması qanununun müasir kimya elmində və kimyəvi tənliklərin əmsallaşdırılmasındakı fundamental rolunu qiymətləndirin.",
+    "options": [
+      "Yalnız tarixi fakt olması",
+      "Bütün kimyəvi tənliklərin sağ və sol tərəflərindəki atom sayılarını bərabərləşdirməyin (əmsallaşdırmanın) yeganə elmi əsası olması",
+      "Qanunun köhnəlməsi",
+      "Əmsallara ehtiyac qoymaması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Maddə kütləsinin saxlanması qanununu təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kimyəvi tənliyə əmsallar vurmağımızın səbəbi reaksiya girmədən öncəki və sonrakı atom sayılarını bərabərləşdirərək Kütlənin saxlanması qanununu riyazi ödeməkdir.",
+      "distractors": {
+        "0": "Bugün də təməldir.",
+        "2": "Qanun dəyişməz təbiət qanunudur.",
+        "3": "Əmsalları məhz bu qanun tələb edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.2 Maddə kütləsinin saxlanması qanunu",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0302-02K04-03-03-015"
+  }
+]

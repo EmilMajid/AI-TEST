@@ -1,0 +1,981 @@
+[
+  {
+    "question": "Su Elektrik Stansiyalarında (SES) bənddə toplanan suyun yüksəklikdəki hansı enerjisi turbinləri fırladaraq elektrik enerjisinə çevrilir?",
+    "options": [
+      "Potensial enerjisi -> Kinetik enerji -> Elektrik enerjisi",
+      "Nüvə enerjisi -> Kimyəvi enerji",
+      "Səs enerjisi -> İşıq enerjisi",
+      "Yalnız daxili istilik enerjisi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: SES-də bənddəki su yüksəklikdə potensial enerjiyə malikdir. Su tökülərkən bu potensial enerji kinetik enerjiyə çevrilir və generator turbinlərini fırladaraq elektrik enerjisinə çevrilir.",
+      "distractors": {
+        "1": "Nüvə SES-də deyil, AES-dədir.",
+        "2": "Səs enerjisi deyil.",
+        "3": "İstilik stansiyaları İES-lərdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F01-01-01-001"
+  },
+  {
+    "question": "Külək elektrik stansiyalarında (KES) külək pərlərini fırladan enerji növü hansıdır?",
+    "options": [
+      "Havanın kinetik enerjisi",
+      "Havanın potensial enerjisi",
+      "Nüvə enerjisi",
+      "Kimyəvi enerji"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Külək hərəkət edən hava kütləsidir. Hərəkətdə olan havanın kinetik enerjisi KES pərlərini fırladır.",
+      "distractors": {
+        "1": "Havanın potensialı hündürlükdən asılıdır, küləyin əsdirilməsi kinetikdir.",
+        "2": "Nüvə atomdur.",
+        "3": "Kimyəvi reaksiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F01-01-01-002"
+  },
+  {
+    "question": "Dağ xizəkçisi təpədən aşağı sürüşərkən onun mexaniki enerjiləri necə çevrilir?",
+    "options": [
+      "Potensial enerji kinetik enerjiyə çevrilir",
+      "Kinetik enerji potensial enerjiyə çevrilir",
+      "İşıq enerjisi səs enerjisinə çevrilir",
+      "Nüvə enerjisi ayrılır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Xizəkçi dağın təpəsində maksimum potensial enerjiyə (mgh) malik olur. Aşağı enərkən hündürlük azalır, sürət artır və potensial enerji kinetik enerjiyə çevrilir.",
+      "distractors": {
+        "1": "Aşağı enəndə tərsi olmur.",
+        "2": "İşıq/səs deyil.",
+        "3": "Nüvə reaksiyası yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F01-01-01-003"
+  },
+  {
+    "question": "Bərpa olunan (yaşıl) enerji mənbələrinə hansılar aiddir?",
+    "options": [
+      "Günəş, külək və su (hidro) enerjisi",
+      "Kömür və neft",
+      "Təbii qaz",
+      "Torf"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Günəş, külək və su enerjisi tükənməyən və ətraf mühiti çirkləndirməyən bərpa olunan ekoloji təmiz enerji mənbələridir.",
+      "distractors": {
+        "1": "Kömür və neft qazıntı yanacaqlarıdır.",
+        "2": "Təbii qaz bərpa olunmayan yanacaqdır.",
+        "3": "Torf qazıntıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F01-01-01-004"
+  },
+  {
+    "question": "İdmançının dirəklə hündürlüyə tullanması zamanı dirəyin əyilməsi hansı enerji növünü toplayır?",
+    "options": [
+      "Dirəyin elastik deformasiyasının potensial enerjisini",
+      "Kinetik istilik enerjisini",
+      "Atmosfer təzyiq enerjisini",
+      "Nüvə enerjisini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: İdmançı qaçaraq topladığı kinetik energiyanı dirəyi əyməklə onun elastik potensial enerjisinə çevirir və bu enerji idmançını yuxarı itələyir.",
+      "distractors": {
+        "1": "İstilik deyil.",
+        "2": "Atmosfer təzyiqi deyil.",
+        "3": "Nüvə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F01-01-01-005"
+  },
+  {
+    "question": "Termoelektrik mühərriklərdə və ya daxili yanma mühərriklərində (DYM) yanacağın kimyəvi enerjisi əvvəlcə hansı enerjiyə, sonra mexaniki işə çevrilir?",
+    "options": [
+      "Daxili (istilik) enerjiyə",
+      "Səs enerjisinə",
+      "Nüvə enerjisinə",
+      "Qravitasiya enerjisinə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: DYM-də yanacaq yanarkən kimyəvi enerji istiliyə (daxili enerjiyə) çevrilir, sonra genişlənən qaz porşeni itələyərək mexaniki iş görür.",
+      "distractors": {
+        "1": "Səs yan təsirdir.",
+        "2": "Nüvə reaksiyası yoxdur.",
+        "3": "Qravitasiya müqavimətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F02-02-02-006"
+  },
+  {
+    "question": "Avtomobillərdə hibrid mühərriklərin tormozlama zamanı istifadə etdiyi 'rekuperativ tormozlama' sisteminin fiziki prinsipi nədir?",
+    "options": [
+      "Avtomobilin kinetik enerjisini tormozlanma anında elektrik enerjisinə çevirərək akkumulyatora toplamaq",
+      "Tormoz disklərini tamamilə əritmək",
+      "Avtomobili geriyə sürətləndirmək",
+      "Sürtünməni sıfırlamaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Rekuperativ tormozlama zamanı tormoz anında kinetik enerji itirilmir, generator vasitəsilə elektrik enerjisinə çevrilərək akkumulyatora batareyasına yüklənir.",
+      "distractors": {
+        "1": "Əritmək zərərlidir.",
+        "2": "Geriyə sürətlənmir.",
+        "3": "Sürtünmə sıfırlanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F02-02-02-007"
+  },
+  {
+    "question": "Oxatan yayı dartdıqda iplə yayın əyilməsi nəticəsində toplanan enerji oxa necə ötürülür?",
+    "options": [
+      "Yayın potensial enerjisi ox buraxıldıqda onun kinetik enerjisinə çevrilir",
+      "Yayın kinetik enerjisi potensiala çevrilir",
+      "İşıq enerjisinə çevrilir",
+      "Səs enerjisinə çevrilir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Dartılmış yay elastik potensial enerjiyə (kx²/2) malik olur. Buraxıldıqda bu enerji oxa verilərək sürət qazandırır (mv²/2).",
+      "distractors": {
+        "1": "Tərsidir.",
+        "2": "İşıq saçmır.",
+        "3": "Səs yan effektdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F02-02-02-008"
+  },
+  {
+    "question": "Nə üçün müasir günəş batareyaları (fotoelementlər) evlərin damında cənub istiqamətinə tərəf bucaq altında quraşdırılır?",
+    "options": [
+      "Maksimum günəş işığı şüalarını udub elektrik enerjisinə çevirmək üçün",
+      "Küləkdən qorumaq üçün",
+      "Təzyiqi azaltmaq üçün",
+      "Damın çəkisini ağırlaşdırmaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Günəş şüalarının şaquliyə yaxın düşmə bucağında fotoelementlər daha çox işıq enerjisini udur və yüksək FİƏ ilə elektrik enerjisi hasil edir.",
+      "distractors": {
+        "1": "Külək ikinci dərəcəlidir.",
+        "2": "Təzyiqlə bağlı deyil.",
+        "3": "Çəki ağırlaşdırmaq məqsəd deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F02-02-02-009"
+  },
+  {
+    "question": "Uşaq yelləncəyi rəqs edərkən ən aşağı nöqtədə və ən yüksək nöqtədə enerjilərin halı necə olur?",
+    "options": [
+      "Ən aşağı nöqtədə kinetik enerji maksimum, ən yüksək nöqtədə potensial enerji maksimum olur",
+      "Ən aşağıda potensial maksimumdur",
+      "Hər iki nöqtədə enerjilər sıfırdır",
+      "Hər iki nöqtədə kinetik enerji maksimumdur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Ən aşağı nöqtədə hündürlük minimum, sürət maksimumdur (E_k = max). Ən yüksək nöqtədə sürət anlıq sıfırlanır, hündürlük maksimumdur (E_p = max).",
+      "distractors": {
+        "1": "Ən aşağıda hündürlük yoxdur.",
+        "2": "Enerjilər var.",
+        "3": "Ən yüksəkdə sürət sıfırdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F02-02-02-010"
+  },
+  {
+    "question": "Su elektrik stansiyasında hündürlüyü h = 40 m olan bənddən tökülən 100 kg suyun nəzəri olaraq turbinə verdiyi maksimal kinetik enerjini hesablayın (g = 10 N/kg).",
+    "options": [
+      "40 000 C (40 kC)",
+      "4 000 C",
+      "400 C",
+      "400 000 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: E_k_max = E_p_max = mgh = 100 kg × 10 N/kg × 40 m = 40 000 C = 40 kC.",
+      "distractors": {
+        "1": "4 000 C g-ni unutmaqdır.",
+        "2": "400 C sıfır xətasıdır.",
+        "3": "400 000 C artıq vurmadır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_k_max = mgh = 100 × 10 × 40 = 40 000 C = 40 kC"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F04-03-03-011"
+  },
+  {
+    "question": "Külək generatorunun pərləri 10 saniyədə 200 kC kinetik enerji udur. Generatordan alınan elektrik gücü 16 kVt olarsa, KES-in faydalı iş əmsalını (FİƏ) tapın.",
+    "options": [
+      "80%",
+      "16%",
+      "50%",
+      "100%"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Daxil olan tam güc N_tam = A / t = 200 kC / 10 s = 20 kVt. Faydalı güc N_f = 16 kVt. FİƏ η = (16 / 20) × 100% = 0.8 × 100% = 80%.",
+      "distractors": {
+        "1": "16% güclə tam işi qarışdırmaqdır.",
+        "2": "50% hesablama xətasıdır.",
+        "3": "100% ideal haldır (itki yoxdur)."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "N_tam = 200 / 10 = 20 kVt",
+      "η = (16 / 20) × 100% = 80%"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F04-03-03-012"
+  },
+  {
+    "question": "Nə üçün böyük yük gəmilərində valın (pərin) fırlanması üçün istifadə olunan dizel mühərriklərinin gücü minlərlə kilovatla olmalıdır?",
+    "options": [
+      "Su mühiti gəmiyə son dərəcə böyük müqavimət qüvvəsi göstərdiyi üçün böyük güc (N = Fv) tələb olunur",
+      "Gəminin suyun altında batması üçün",
+      "Gəminin rəngini qorumaq üçün",
+      "Lövbəri fırlatmamaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: Suyun özlülüyü və hidrodinamik müqaviməti havadakından dəfələrlə böyükdür. Böyük sürətlə gəmini hərəkət etdirmək üçün N = F_müq × v düsturuna əsasən böyük güc tələb olunur.",
+      "distractors": {
+        "1": "Gəmi batmamalıdır.",
+        "2": "Rəngə aid deyil.",
+        "3": "Lövbər fırladılmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "N_tam = 200 / 10 = 20 kVt",
+      "η = (16 / 20) × 100% = 80%"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F04-03-03-013"
+  },
+  {
+    "question": "Atom Elektrik Stansiyalarında (AES) nüvə reaksiyasından alınan nəhəng enerji əvvəlcə hansı növə çevrilərək turbinləri fırladır?",
+    "options": [
+      "İstilik enerjisinə (buxar yaradaraq)",
+      "Səs enerjisinə",
+      "Mexaniki sürtünməyə",
+      "Qravitasiya enerjisinə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: AES-də uran nüvəsinin bölünməsi zamanı nəhəng istilik enerjisi ayrılır. Bu istilik suyu yüksək təzyiqli buxara çevirir və buxar turbinləri fırladaraq elektrik generatorunu işlədir.",
+      "distractors": {
+        "1": "Səs enerjisi deyil.",
+        "2": "Sürtünmə deyil.",
+        "3": "Qravitasiya deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "N_tam = 200 / 10 = 20 kVt",
+      "η = (16 / 20) × 100% = 80%"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F04-03-03-014"
+  },
+  {
+    "question": "Kütləsi 50 kg olan idmançı 10 m hündürlüyə pilləkənlərlə 5 saniyəyə qaçaraq qalxır. İdmançının inkişaf etdirdiyi orta gücü tapın (g = 10 N/kg).",
+    "options": [
+      "1000 Vt (1 kVt)",
+      "5000 Vt",
+      "500 Vt",
+      "100 Vt"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş və enerjinin texniki tətbiqlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: A = mgh = 50 × 10 × 10 = 5000 C. Güc N = A / t = 5000 C / 5 s = 1000 Vt = 1 kVt.",
+      "distractors": {
+        "1": "5000 Vt zamana bölməyi unutmaqdır.",
+        "2": "500 Vt sıfır xətasıdır.",
+        "3": "100 Vt 50-yə bölməkdir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "Elm, texnologiya, həyat (Bölmə 2)",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0206-06F04-03-03-015"
+  },
+  {
+    "question": "Səthə perpendikulyar təsir edən qüvvənin bu səthin sahəsinə nisbətinə bərabər olan fiziki kəmiyyət necə adlanır?",
+    "options": [
+      "Təzyiq",
+      "Güc",
+      "Kütlə",
+      "İmpuls"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = F / S düsturu ilə təyin olunan kəmiyyət təzyiq adlanır.",
+      "distractors": {
+        "1": "Güc N = A/t-dir.",
+        "2": "Kütlə m-dir.",
+        "3": "İmpuls p = mv-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F01-01-01-001"
+  },
+  {
+    "question": "Beynəlxalq Vahidər Sistemində (BVS) təzyiqin ölçü vahidi nədir?",
+    "options": [
+      "Paskal (Pa)",
+      "Coul (C)",
+      "Nyuotn (N)",
+      "Vat (Vt)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: BVS-də təzyiqin vahidi Paskaldır (Pa). 1 Pa = 1 N / m².",
+      "distractors": {
+        "1": "Coul iş vahididir.",
+        "2": "Nyuotn qüvvədir.",
+        "3": "Vat gücdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F01-01-01-002"
+  },
+  {
+    "question": "Təzyiqin hesablama düsturu hansı cavabda düzgün verilmişdir?",
+    "options": [
+      "p = F / S",
+      "p = F × S",
+      "p = S / F",
+      "p = F + S"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Təzyiq səthə perpendikulyar qüvvənin (F) səthin sahəsinə (S) bölmə nisbətinə bərabərdir (p = F / S).",
+      "distractors": {
+        "1": "Vurma səhvdir.",
+        "2": "Tərs bölmə səhvdir.",
+        "3": "Toplama səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F01-01-01-003"
+  },
+  {
+    "question": "Qüvvə sabit qaldıqda səthin sahəsi (S) 2 dəfə artırılarsa, təzyiq necə dəyişər?",
+    "options": [
+      "2 dəfə azalar",
+      "2 dəfə artar",
+      "4 dəfə artar",
+      "Dəyişməz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = F / S düsturuna əsasən təzyiq səthin sahəsi ilə tərs mütənasibdir. Sahə 2 dəfə artarsa, təzyiq 2 dəfə azalar.",
+      "distractors": {
+        "1": "Artmaz, azalar.",
+        "2": "Kvadratik deyil.",
+        "3": "Asılılıq var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F01-01-01-004"
+  },
+  {
+    "question": "Nə üçün bıçağın, qayçının və ya iynənin ucu itilənir?",
+    "options": [
+      "Dayaq sahəsini (S) kiçildərək təzyiqi (p = F/S) kəskin artırmaq üçün",
+      "Sürtünməni sıfırlamaq üçün",
+      "Bıçağın kütləsini artırmaq üçün",
+      "Təzyiqi azaltmaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İti uc sahəni (S) sıfıra yaxın kiçildir. p = F/S düsturuna əsasən kiçik qüvvə ilə böyük təzyiq alınır və kəsmək asanlaşır.",
+      "distractors": {
+        "1": "Sürtünməyə aid deyil.",
+        "2": "Kütlə azalır.",
+        "3": "Təzyiq artırılmalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "A = mgh = 50 × 10 × 10 = 5000 C",
+      "N = 5000 / 5 = 1000 Vt = 1 kVt"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F01-01-01-005"
+  },
+  {
+    "question": "Üfüqi masanın üzərində duran 60 N çəkili bərk cisim masaya 120 Pa təzyiq göstərir. Cismin masaya toxunan səthinin sahəsini tapın.",
+    "options": [
+      "0.5 m²",
+      "2 m²",
+      "7200 m²",
+      "7.2 m²"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: p = F / S -> S = F / p = 60 N / 120 Pa = 0.5 m².",
+      "distractors": {
+        "1": "2 m² tərs bölmədir (120/60).",
+        "2": "7200 m² vurmadır (120×60).",
+        "3": "7.2 m² hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "S = F / p",
+      "S = 60 / 120 = 0.5 m²"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F02-02-02-006"
+  },
+  {
+    "question": "Kütləsi 80 kg olan adamın iki ayağının altının ümumi sahəsi 400 cm² (0.04 m²)-dir. Adamın yerə göstərdiyi təzyiqi hesablayın (g = 10 N/kg).",
+    "options": [
+      "20 000 Pa (20 kPa)",
+      "2 000 Pa",
+      "3.2 Pa",
+      "800 Pa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F = mg = 80 × 10 = 800 N. Təzyiq p = F / S = 800 N / 0.04 m² = 20 000 Pa = 20 kPa.",
+      "distractors": {
+        "1": "2 000 Pa sıfır xətasıdır.",
+        "2": "3.2 Pa vurma xətasıdır.",
+        "3": "800 Pa yalnız qüvvədir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "calculation_error",
+        "2": "calculation_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "F = mg = 800 N",
+      "p = 800 / 0.04 = 20 000 Pa = 20 kPa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F02-02-02-007"
+  },
+  {
+    "question": "Düzbucaqlı paralelepiped formalı kərpic masanın üzərinə növbə ilə ən kiçik və ən böyük üzləri üstə qoyulur. Masaya düşən təzyiq və təzyiq qüvvəsi necə dəyişər?",
+    "options": [
+      "Təzyiq qüvvəsi dəyişməz (çəki eynidir), kiçik üz üstə olduqda təzyiq maksimum olar",
+      "Təzyiq qüvvəsi dəyişər",
+      "Böyük üz üstə olduqda təzyiq maksimum olar",
+      "Təzyiq dəyişməz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Təzyiq qüvvəsi kərpicin çəkisinə bərabərdir (F = mg) və sabit qalır. Təzyiq p = F/S olduğu üçün sahə S kiçik olduqda təzyiq p böyük olur.",
+      "distractors": {
+        "1": "Təzyiq qüvvəsi kərpicin çəkisidir, dəyişmir.",
+        "2": "Böyük üzdə təzyiq minimum olur.",
+        "3": "Təzyiq sahədən asılı olaraq dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "F = mg = 800 N",
+      "p = 800 / 0.04 = 20 000 Pa = 20 kPa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F02-02-02-008"
+  },
+  {
+    "question": "1 KiloPaskal (1 kPa) neçə Paskala bərabərdir?",
+    "options": [
+      "1000 Pa",
+      "100 Pa",
+      "10 Pa",
+      "1 000 000 Pa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 kPa = 1000 Pa.",
+      "distractors": {
+        "1": "100 Pa dəka-dır.",
+        "2": "10 kənardır.",
+        "3": "1 000 000 Pa mega-dır (MPa)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [
+      "F = mg = 800 N",
+      "p = 800 / 0.04 = 20 000 Pa = 20 kPa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F02-02-02-009"
+  },
+  {
+    "question": "Nə üçün xizəkçi dərin qarda piyada yeriyən adama nəzərən batmadan daha rahat hərəkət edir?",
+    "options": [
+      "Xizəklərin sahəsi ayaqqabıdan böyük olduğu üçün qara düşən təzyiqi kəskin azaldır",
+      "Xizəkçinin kütləsi azalır",
+      "Xizək yer cazibəsini yox edir",
+      "Xizək sürətli olduğu üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Adamın çəkisi (F) eyni qalsa da, xizəyin sahəsi (S) ayaqqabıdan çox böyükdür. p = F/S düsturuna əsasən təzyiq kəskin azalır və xizəkçi qara batmır.",
+      "distractors": {
+        "1": "Kütlə dəyişmir.",
+        "2": "Cazibə yox olmur.",
+        "3": "Əsas səbəb sahədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "F = mg = 800 N",
+      "p = 800 / 0.04 = 20 000 Pa = 20 kPa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F02-02-02-010"
+  },
+  {
+    "question": "Kütləsi 4 kg olan kubun tərəfi a = 0.2 m-dir. Kubun üfüqi müstəviyə göstərdiyi təzyiqi tapın (g = 10 N/kg).",
+    "options": [
+      "1000 Pa (1 kPa)",
+      "200 Pa",
+      "100 Pa",
+      "2000 Pa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kubun oturacağının sahəsi S = a² = 0.2 × 0.2 = 0.04 m². Qüvvə F = mg = 4 × 10 = 40 N. Təzyiq p = F / S = 40 N / 0.04 m² = 1000 Pa = 1 kPa.",
+      "distractors": {
+        "1": "200 Pa S = a = 0.2 götürməkdir.",
+        "2": "100 Pa sıfır xətasıdır.",
+        "3": "2000 Pa 2-yə vurmadır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "S = a² = 0.2 × 0.2 = 0.04 m²",
+      "F = mg = 40 N",
+      "p = 40 / 0.04 = 1000 Pa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F04-03-03-011"
+  },
+  {
+    "question": "İki bərk kubun tərəfləri a₁ = a, a₂ = 2a, sıxlıqları eynidir. Kubların masaya göstərdikləri təzyiqlərin nisbətini (p₂ / p₁) tapın.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "1"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Homogen kubun üfüqi dayağa təzyiqi p = F/S = (mg)/S = (ρ V g)/S = (ρ a³ g)/a² = ρ g a. Göründüyü kimi təzyiq tərəflə düz mütənasibdir: p₂ / p₁ = a₂ / a₁ = 2a / a = 2.",
+      "distractors": {
+        "1": "4 sahələrin nisbətidir (a²/a₁²).",
+        "2": "8 həcmlərin nisbətidir (a₂³/a₁³).",
+        "3": "1 təzyiqlər bərabər deyil."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "p = ρ × g × a",
+      "p₂ / p₁ = a₂ / a₁ = 2a / a = 2"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F04-03-03-012"
+  },
+  {
+    "question": "Silindrik cismin hündürlüyünü dəyişmədən radiusunu 3 dəfə artırsaq, onun üfüqi dayağa göstərdiyi təzyiq necə dəyişər (sıxlıq sabitdir)?",
+    "options": [
+      "Dəyişməz",
+      "3 dəfə artar",
+      "9 dəfə artar",
+      "3 dəfə azalar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Homogen silindrin təzyiqi p = (ρ V g) / S = (ρ S h g) / S = ρ g h. Təzyiq yalnız sıxlıq və hündürlükdən (h) asılıdır, radiusdan və nəticədə oturacaq sahəsindən asılı deyil. Buna görə təzyiq dəyişməz.",
+      "distractors": {
+        "1": "3 dəfə r-dən asılı bilməkdir (p r-dən asılı deyil).",
+        "2": "9 dəfə r² sanmaqdır.",
+        "3": "Azalmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "p = ρ × g × a",
+      "p₂ / p₁ = a₂ / a₁ = 2a / a = 2"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F04-03-03-013"
+  },
+  {
+    "question": "Kütləsi 600 kg olan traktorun tırtıllarının ümumi sahəsi 1.5 m²-dir. Traktorun torpağa təzyiqini kPa ilə hesablayın (g = 10 N/kg).",
+    "options": [
+      "4 kPa (4000 Pa)",
+      "40 kPa",
+      "9 kPa",
+      "400 Pa"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F = mg = 600 × 10 = 6000 N. p = F / S = 6000 N / 1.5 m² = 4000 Pa = 4 kPa.",
+      "distractors": {
+        "1": "40 kPa sıfır xətasıdır.",
+        "2": "9 kPa vurma xətasıdır.",
+        "3": "400 Pa sıfır unudulub."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "calculation_error",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "F = 6000 N",
+      "p = 6000 / 1.5 = 4000 Pa = 4 kPa"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F04-03-03-014"
+  },
+  {
+    "question": "Qüvvə 20% artırılıb, dayağın sahəsi 20% azaldılarsa, təzyiq necə dəyişər?",
+    "options": [
+      "1.5 dəfə (50%) artar",
+      "Dəyişməz",
+      "1.2 dəfə artar",
+      "20% azalar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Bərk cisimlərin təzyiq qanunlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F' = 1.2F, S' = 0.8S. p' = F' / S' = (1.2F) / (0.8S) = 1.5 (F/S) = 1.5 p. Təzyiq 1.5 dəfə (50%) artar.",
+      "distractors": [
+        {
+          "1": "Dəyişməz faizlərin eyni olması aldatmacasıdır.",
+          "2": "1.2 yalnız qüvvədir.",
+          "3": "Azalmaz."
+        }
+      ]
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "p' = (1.2 F) / (0.8 S) = 1.5 p -> 50% artım"
+    ],
+    "topic": "3.1 Bərk cisimlərin təzyiqi",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0301-01F04-03-03-015"
+  }
+]

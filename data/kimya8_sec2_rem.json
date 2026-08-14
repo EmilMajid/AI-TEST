@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Metal rabitəsi nədir?",
+    "options": [
+      "Metal kationları və sərbəst elektronlar (\"elektron qazı\") arasında elektrostatik cəzbetmə rabitəsi",
+      "İonların bir-birini itələməsi",
+      "Müştərək elektron cütü",
+      "Molekullararası van-der-Vaals qüvvələri"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metal kristal qəfəsində müsbət yüklü metal kationları ilə onların itirdiyi sərbəst hərəkət edən elektronlar (\"elektron qazı\") arasında əmələ gələn rabitə metal rabitəsidir.",
+      "distractors": {
+        "1": "İonlar bir-birini itələmir.",
+        "2": "Müştərək elektron cütü kovalent rabitədir.",
+        "3": "Van-der-Vaals molekullar arasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K01-01-01-001"
+  },
+  {
+    "question": "Metalların yüksək elektrik və istilik keçiriciliyi, metal parıltısı və plastikliyi (döyülmə qabiliyyəti) nə ilə izah olunur?",
+    "options": [
+      "Molekulyar strukturla",
+      "İon rabitəsi ilə",
+      "Mühitdə protonların hərəkəti ilə",
+      "Kristal qəfəsdə sərbəst hərəkət edən elektronların (\"elektron qazı\") olması ilə"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metalların bütün spesifik fiziki xassələri (elektrik keçirmə, parıltı, plastiklik) kristal boyunca sərbəst hərəkət edən e- qazının nəticəsidir.",
+      "distractors": {
+        "0": "Metallarda molekul yoxdur.",
+        "1": "İon bərk halda cərəyan keçirmir.",
+        "2": "Protonlar tərpənməz nüvədədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K01-01-01-002"
+  },
+  {
+    "question": "Adi şəraitdə maye halında olan yeganə metal hansıdır?",
+    "options": [
+      "Dəmir (Fe)",
+      "Aluminium (Al)",
+      "Civə (Hg)",
+      "Natrium (Na)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Civə (80Hg) metallar arasında yeganə metaldır ki, adi şəraitdə (20°C-də) maye halındadır.",
+      "distractors": {
+        "0": "Dəmir bərk metaldır.",
+        "1": "Aluminium bərk metaldır.",
+        "3": "Natrium yumşaq bərk metaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K01-01-01-003"
+  },
+  {
+    "question": "Ən yüksək elektrik keçiriciliyinə malik olan metal hansıdır?",
+    "options": [
+      "Mis (Cu)",
+      "Qızıl (Au)",
+      "Aluminium (Al)",
+      "Gümüş (Ag)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metallar arasında elektrik və istilik keçiriciliyi ən yüksək olan metal Gümüşdür (Ag > Cu > Au > Al).",
+      "distractors": {
+        "0": "Mis 2-ci yerdədir (texnikada geniş işlənir).",
+        "1": "Qızıl 3-cüdür.",
+        "2": "Aluminium 4-cüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K01-01-01-004"
+  },
+  {
+    "question": "Metalları mexaniki zərbə ilə döydükdə sıradan çıxmayıb formalarını dəyişməsi (plastiklik) nə ilə bağlıdır?",
+    "options": [
+      "Buxarlanma ilə",
+      "Metal ion təbəqələrinin sərbəst elektron qazı mühitində bir-biri üzərində sürüşməsi ilə",
+      "Qəfəsin sınması ilə",
+      "İonların parçalanması ilə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Zərbə zamanı müsbət ion təbəqələri bir-biri üzərində sürüşür, lakin sərbəst e- qazı onları birləşdirdiyi üçün rabitə qırılmır (plastiklik).",
+      "distractors": {
+        "0": "Buxarlanmır.",
+        "2": "Sınma ion kristallarındadır (kövrəklik).",
+        "3": "İonlar parçalanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K01-01-01-005"
+  },
+  {
+    "question": "Na, Mg, Al metallarının ərimə temperaturlarının artma sırasını (Na < Mg < Al) təhlil edin.",
+    "options": [
+      "Valent elektronlarının sayının artması (Na:1, Mg:2, Al:3) və kation yükünün böyüməsi hesabına metal rabitəsinin möhkəmlənməsi",
+      "Metallar ərinti əmələ gətirmədiyi üçün",
+      "Elektron qazının yox olması",
+      "Atom kütləsinin azalması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kation yükü (Na⁺, Mg²⁺, Al³⁺) və elektron qazının sıxlığı artdıqca kationlar arasında elektrostatik cəzbetmə güclənir və ərimə temperaturu yüksəlir (Na < Mg < Al).",
+      "distractors": {
+        "1": "Ərinti əmələ gətirirlər.",
+        "2": "Elektron qazı sıxlaşır.",
+        "3": "Kütlə artır, əsas səbəb kation yüküdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K02-02-02-006"
+  },
+  {
+    "question": "Ən çətin əriyən (volfram W - 3422°C) və ən asan əriyən (civə Hg - -39°C) metalların xassələrini müqayisə edin.",
+    "options": [
+      "Volfram qeyri-metaldır",
+      "Volframda d-orbitallarının cütləşməmiş elektronları hesabına çox möhkəm metal-kovalent rabitə, civədə isə 6s² cütləşmiş elektronlar hesabına zəif metal rabitəsi var",
+      "Civə gazdır",
+      "Ərimə temperaturları eynidir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Volframda (5d⁴ 6s²) çoxlu cütləşməmiş d-elektronları əlavə kovalent rabitələr yaradır (çox yüksək ərimə); civədə (6s²) cütləşmiş e- olduğuna görə ərimə çox aşağıdır.",
+      "distractors": {
+        "0": "Volfram metaldır.",
+        "2": "Civə maye metaldır.",
+        "3": "Ərimə t-ləri kəskin fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K02-02-02-007"
+  },
+  {
+    "question": "Qələvi metalların (Li, Na, K, Rb, Cs) bərkliyinin və ərimə temperaturunun yuxarıdan aşağıya doğru azalmasının səbəbini təhlil edin.",
+    "options": [
+      "Elektron qazının artması",
+      "Dəniz mühitinin olması",
+      "Kütlənin azalması",
+      "Qrup üzrə aşağı gedildikdə atom radiusunun böyüməsi və metal kationlarının e- qazı ilə elektrostatik cəzbinin zəifləməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Radius böyüdükcə (Li⁺ -> Cs⁺) ionlararasında məsafə artır, Kulon cəzbetməsi zəifləyir; nəticədə Cs bıçaqla asan kəsilən yumşaq və 28°C-də əriyən metal olur.",
+      "distractors": {
+        "0": "Valent e- sayısı eynidir (1e-).",
+        "1": "Dənizlə bağlı deyil.",
+        "2": "Kütlə artır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K02-02-02-008"
+  },
+  {
+    "question": "Metalların işığı əks etdirməsi və parlama (metal parıltısı) mexanizmini təhlil edin.",
+    "options": [
+      "Metalla havanın kimyəvi reaksiyası",
+      "Protonların işıq saçması",
+      "Sərbəst elektronların üzərinə düşən işıq dalğalarını udub dərhal eyni tezliklə geri şüalandırması",
+      "Neytronların rəqsi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metal səthindəki sərbəst e- qazı görünən işıq kvantlarını udur və dərhal əks etdirir, bu da bülbül/metal parıltısını yaradır.",
+      "distractors": {
+        "0": "Reaksiya deyil fiziki optik effektdir.",
+        "1": "Proton işıq saçmır.",
+        "3": "Neytron yüksüzdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K02-02-02-009"
+  },
+  {
+    "question": "Temperatur yüksəldikdə metalların elektrik keçiriciliyinin azalmasının fiziki səbəbini təhlil edin.",
+    "options": [
+      "Protonların axması",
+      "Qızdırıldıqda kristal qəfəs düyünlərindəki kationların rəqsi hərəkətinin kəskin artaraq sərbəst e- hərəkətinə mane olması (müqavimətin artması)",
+      "Elektron qazının buxarlanması",
+      "Metallıq rabitəsinin kovalentə çevrilməsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qızdırdıqda kation rəqsləri güclənir və elektron axınına maneə (müqavimət) törədir. Buna görə soyudulduqda (ifrat keçiricilik) keçiricilik kəskin artır.",
+      "distractors": {
+        "0": "Protonlar axmır.",
+        "2": "Elektron qazı buxarlanmır.",
+        "3": "Rabitə tipi dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K02-02-02-010"
+  },
+  {
+    "question": "Ağır metallar (sıxlığı > 5 g/sm³, məs. Osmium Os, Qurğuşun Pb) və yüngül metallar (sıxlığı < 5 g/sm³, məs. Litium Li, Natrium Na) müqayisəsini təhlil edin.",
+    "options": [
+      "Civə yüngül metaldır",
+      "Bütün metalların sıxlığı eynidir",
+      "Li (0.53 g/sm³) ən yüngül metaldır, Osmium (22.6 g/sm³) ən ağır metaldır",
+      "Dəmir yüngül metaldır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metallar sıxlığa görə yüngül (<5 g/sm³) və ağır (>5 g/sm³) olaraq 2 qrupa bölünür. Litium ən yüngül, Osmium ən ağır metaldır.",
+      "distractors": {
+        "0": "Civə sıxlığı 13.6 g/sm³ olan ağır metaldır.",
+        "1": "Sıxlıqlar kəskin fərqlidir.",
+        "3": "Dəmir 7.87 g/sm³ ağır metaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K04-03-03-011"
+  },
+  {
+    "question": "Metalların lehimlənməsi və ərintilərin (tunc, bürünc, polad) alınmasının hərbi və texniki əhəmiyyətini təhlil edin.",
+    "options": [
+      "Ərintilərin elektrik keçirməməsi",
+      "Fərqli metal ionlarının vahid elektron qazı daxilində qarışaraq daha bərk və korroziyaya davamlı ərintilər yaratması",
+      "Ərintilərin kimyəvi birləşmə olması",
+      "Ərintilərdə metal rabitəsinin yox olması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ərintilər (məs. tunc - Cu+Sn, polad - Fe+C) metal kristal qəfəsinin möhkəmliyini və fiziki-kimyəvi dözümlülüyünü artırır.",
+      "distractors": {
+        "0": "Elektrik keçirirlər.",
+        "2": "Ərintilər mexaniki/faza qarışığıdır.",
+        "3": "Metal rabitəsi saxlanır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K04-03-03-012"
+  },
+  {
+    "question": "İon rabitəli bərk maddələrin (NaCl) kövrək olması, metal bərk maddələrin (Cu, Fe) isə plastik olmasının səbəbini müqayisəli təhlil edin.",
+    "options": [
+      "Səbəb kütlə fərqidir",
+      "İon kristalda zərbə zamanı eyni yüklü ionlar üz-üzə gəlib bir-birini itələyərək kristalı sındırır; metal kristalda isə elektron qazı ionları saxlayır",
+      "Metallarda rabitə kövrəkdir",
+      "İon kristalı daha yumşaqdır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İon kristala zərbə vurduqda təbəqə zərrəcək qədər sürüşəndə (+ ilə +, - ilə -) üz-üzə gəlir və Kulon itələməsi kristalı parçalayır (kövrəklik).",
+      "distractors": {
+        "0": "Səbəb rabitənin təbiətidir.",
+        "2": "Metallar plastikdir.",
+        "3": "İon kristalları kövrəkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K04-03-03-013"
+  },
+  {
+    "question": "Qələvi metalların (Na, K) kerosində saxlanmasının kimyəvi-fiziki səbəbini təhlil edin.",
+    "options": [
+      "İşıqdan qorunmaq üçün",
+      "Kerosində həll olduqları üçün",
+      "Xarici 1 valens elektronunu kəskin asan verərək hava (O₂) və su ilə şiddətli reaksiya verdikləri üçün",
+      "Dondurmaq üçün"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qələvi metallar çox aktivdirlər; havada dərhal oksidləşir, su ilə alovlanaraq H₂ çıxarır. Kerosin reaksiyaya girməyib onları havadan və nəmdən təcrid edir.",
+      "distractors": {
+        "0": "İşıqla bağlı deyil.",
+        "1": "Kerosində həll olmurlar.",
+        "3": "Dondurmaq üçün deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K04-03-03-014"
+  },
+  {
+    "question": "Metal rabitəsinin bəşər sivilizasiyasına və müasir texnikaya (elektrik xətləri, maşınqayırma) verdiyi ümumbəşəri töhfəni qiymətləndirin.",
+    "options": [
+      "Elektronikanın, elektrik energetikasının, nəqliyyat və tikinti konstruksiyalarının təməlini təşkil etməsi",
+      "Mühitdə ion yaratmaq",
+      "Yalnız bəzək əşyaları düzəltmək",
+      "Kimyanı dayandırmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Metal rabitəsini və metalların xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metalların keçiricilik, möhkəmlik və şəkillənmə xüsusiyyətləri müasir sənaye və texnoloji sivilizasiyanın onurğa sütunudur.",
+      "distractors": {
+        "1": "Yalnız ion yaratmır nəhəng materialdır.",
+        "2": "Sənayedə əvəzsizdir.",
+        "3": "Kimyanı inkişaf etdirib."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Metal rabitəsi",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0204-04K04-03-03-015"
+  },
+  {
+    "question": "Kristal qəfəsinin düyünlərində neytral molekullar yerləşən və molekullararası zəif van-der-Vaals qüvvələri olan qəfəs tipi hansıdır?",
+    "options": [
+      "Atom kristal qəfəsi",
+      "Metal kristal qəfəsi",
+      "İon kristal qəfəsi",
+      "Molekulyar kristal qəfəs"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Molekulyar kristal qəfəsinin düyünlərində molekullar yerləşir; bu maddələr nisbətən aşağı ərimə temperaturuna malikdir vı uçucudur (məs. İ₂, H₂O, CO₂).",
+      "distractors": {
+        "0": "Atom kristalının düyünündə kovalent rabitəli atomlar durur (çox bərkdir).",
+        "1": "Metal kristalının düyünündə metal kationları durur.",
+        "2": "İon kristalının düyünündə ionlar durur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K01-01-01-001"
+  },
+  {
+    "question": "Aşağıdakı maddələrdən hansı Atom kristal qəfəsinə malikdir və son dərəcə yüksek bərkliyə malikdir?",
+    "options": [
+      "Oksigen (O₂)",
+      "Almaz (C) və Silisium dioksid (SiO₂)",
+      "Buz (H₂O)",
+      "Yod (İ₂)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Almaz, silisium (Si) və kvars (SiO₂) atom kristal qəfəsinə malikdir; atomlararası kovalent rabitələr şəbəkəsi hesabına çox bərkdir və t°ərimə kəskin yüksəkdir.",
+      "distractors": {
+        "0": "Oksigen molekulyar kristaldır.",
+        "2": "Buz molekulyar kristaldır.",
+        "3": "Yod molekulyar kristaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K01-01-01-002"
+  },
+  {
+    "question": "Molekulyar kristal qəfəsli maddələrin fiziki xassələri necədir?",
+    "options": [
+      "Metallik parıltı",
+      "Nisbətən aşağı ərimə və qaynama nöqtələri, uçuculuq və bərk halda kövrəklik",
+      "Çox yüksek ərimə t-si (>2000°C)",
+      "Elektrik keçiriciliyi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Molekullararası van-der-Vaals cəzb etməsi zəif olduğu üçün molekulyar maddələr (CO₂, I₂, H₂O, NH₃) asan buxarlanır və alçaq t-də əriyir.",
+      "distractors": {
+        "0": "Metallardadır.",
+        "2": "Yüksək t-si atom və ion kristalındadır.",
+        "3": "Molekulyar maddələr elektriki keçirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K01-01-01-003"
+  },
+  {
+    "question": "Natrium xlorid (NaCl) hansı kristal qəfəs tipinə malikdir?",
+    "options": [
+      "Metal kristal qəfəsi",
+      "Molekulyar kristal qəfəs",
+      "Atom kristal qəfəsi",
+      "İon kristal qəfəsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: NaCl düyünlərində Na⁺ və Cl⁻ ionları yerləşən ion kristal qəfəsinə malik bərk duzdur.",
+      "distractors": {
+        "0": "Xlor qeyri-metaldır.",
+        "1": "NaCl molekul yaratmır.",
+        "2": "İon rabitəlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K01-01-01-004"
+  },
+  {
+    "question": "Qrafıt (C) hansı kristal qəfəs xüsusiyyətinə görə elektriki keçirir və yumşaqdır?",
+    "options": [
+      "Sırf molekulyar qazdır",
+      "Sırf ion kristalıdır",
+      "Təbəqəli atom-molekulyar struktur: təbəqə daxilində sp² kovalent, təbəqələr arasında zəif rabitə və sərbəst π-elektronları var",
+      "İşığa həssasdır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qrafitdə təbəqə boyunca hərəkət edən sərbəst π-elektronları elektriki keçirir; zəif təbəqələrarası rabitə isə onun sürüşkən/yumşaq olmasını təmin edir.",
+      "distractors": {
+        "0": "Qrafit bərkdir.",
+        "1": "Karbon atomları kovalent rabitəlidir.",
+        "3": "Fiziki strukturdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K01-01-01-005"
+  },
+  {
+    "question": "Quru buz (bərk CO₂) və Almaz (C) maddələrinin kristal qəfəslərini və t°ərimələrini müqayisə edin.",
+    "options": [
+      "Quru buz ion kristalıdır",
+      "Hər ikisi atom kristalıdır",
+      "Quru buz - Molekulyar (-78°C süblimləşir), Almaz - Atom (>3500°C əriyir)",
+      "Hər ikisi molekulyardır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Quru buz molekulyar qəfəslidir və adi təzyiqdə asan buxarlanır; Almaz isə kovalent atom karkaslı ən bərk maddədir.",
+      "distractors": {
+        "0": "CO₂ kovalent molekuldur.",
+        "1": "CO₂ molekulyardır.",
+        "3": "Almaz atom karkaslıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K02-02-02-006"
+  },
+  {
+    "question": "Bərk Yodun (I₂) qızdırıldıqda mayeləşmədən birbaşa qaza keçməsi (süblimləşmə) nə ilə izah olunur?",
+    "options": [
+      "Molekulyar kristal qəfəsində zəif molekullararası van-der-Vaals qüvvələərinin az energiya ilə qırılması ilə",
+      "İonların ayrılması ilə",
+      "Atom qəfəsinin parçalanması ilə",
+      "Kovalent rabitənin qırılması ilə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Süblimləşmə zamanı I₂ molekul daxili kovalent rabitə qırılmır; yalnız molekullararası zəif rabitələr qırılır və molekul qaz fazasına keçir.",
+      "distractors": {
+        "1": "İon yoxdur.",
+        "2": "Yod molekulyardır.",
+        "3": "Kovalent rabitə qırılsa I atomları alınardı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K02-02-02-007"
+  },
+  {
+    "question": "Ağ fosfor (P₄) və Qırmızı fosfor (Pn) allotropik şəkildəyişmələrinin kristal qəfəslərini müqayisə edin.",
+    "options": [
+      "Ağ fosfor atom kristalıdır",
+      "Qırmızı fosfor qazdır",
+      "Ağ fosfor - Molekulyar (bəsit P₄ molekulları), Qırmızı fosfor - Atom (polimer Pn şəbəkəsi)",
+      "Hər ikisi ion kristalıdır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağ fosfor zəhərli, uçucu və alçaq t-də əriyn molekulyar P₄-dür; Qırmızı fosfor isə uçucu olmayan polimer atom qəfəsli Pn-dir.",
+      "distractors": {
+        "0": "Ağ fosfor molekulyardır.",
+        "1": "Qırmızı fosfor bərkdir.",
+        "3": "İon yoxdur qeyri-metaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K02-02-02-008"
+  },
+  {
+    "question": "Silisium karbid (SiC - Karborund) maddəsinin kəsicilik və parıldatma alətlərində işlədilməsinin səbəbi olan kristal tipi hansıdır?",
+    "options": [
+      "Molekulyar kristal qəfəs",
+      "İon kristalı",
+      "Metal kristalı",
+      "Atom kristal qəfəsi (almaz kimi yüksək bərklik)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SiC (karborund) daxilində Si və C atomları kovalent 3D karkas əmələ gətirir; almazdan sonra ən bərk maddələrdəndir (Maoş şkalasında 9.5).",
+      "distractors": {
+        "0": "Molekulyar olsaydı yumşaq olardı.",
+        "1": "İon deyil kovalentdir.",
+        "2": "Qeyri-metallardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K02-02-02-009"
+  },
+  {
+    "question": "Buzun (H₂O) kristal qəfəsində molekulları bir-birinə bağlayan əsas rabitə növü hansıdır?",
+    "options": [
+      "Molekullararası Hidrogen rabitəsi və van-der-Vaals qüvvələri",
+      "Atom kovalent rabitəsi",
+      "Metal rabitəsi",
+      "İon rabitəsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Buz kristalında H₂O molekulları arasında Hidrogen rabitələri toru yaranır; bu sabəbdən buz sudan daha həcmli və az sıxlıqlı olur.",
+      "distractors": {
+        "1": "Molekul daxilindədir, molekullar arası hidrogendir.",
+        "2": "Metal deyil.",
+        "3": "Su kovalentdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K02-02-02-010"
+  },
+  {
+    "question": "CaCl₂ (Kalsium xlorid) və SiO₂ (Qum) maddələrinin ərimə temperaturlarını və kristal tiplərini müqayisə edin.",
+    "options": [
+      "CaCl₂ molekulyardır",
+      "CaCl₂ - İon kristalı (772°C), SiO₂ - Atom kristalı (1710°C)",
+      "SiO₂ yumşaq qazdır",
+      "Ərimə t-ləri eynidir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: CaCl₂ ion kristalıdır (ərimə ~772°C); SiO₂ (kvars) isə 3D kovalent karkaslı atom kristalı olduğu üçün daha yüksək t-də (1710°C) əriyir.",
+      "distractors": {
+        "0": "CaCl₂ ion duzudur.",
+        "2": "SiO₂ kvars bərkdir.",
+        "3": "Atom kristalı daha yüksəkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K04-03-03-011"
+  },
+  {
+    "question": "Metalların döyülüb yastılanması zamanı kristal qəfəsin dağılmamasının səbəbini müqayisə edin.",
+    "options": [
+      "Molekulyar qəfəsin olması",
+      "İon qəfəsinin eyni olması",
+      "Atom qəfəsinin olması",
+      "Metal qəfəsində elektron qazının ion təbəqələrinin sürüşməsi zamanı rabitəni qoruması"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metal kristal qəfəsi dəyişgən rabitəlidir; elektron qazı təbəqələr sürüşsə də cəzb etməni saxlayır (plastiklik).",
+      "distractors": {
+        "0": "Molekulyar kövrəkdir.",
+        "1": "İon qəfəsi kövrəkdir sındırılır.",
+        "2": "Atom qəfəsi çox bərk kövrəkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K04-03-03-012"
+  },
+  {
+    "question": "Bəsit maddələrdən O₂, N₂, F₂, Cl₂, Br₂, I₂ kristal qəfəs tiplərinə görə hansı qrupa aiddirlər?",
+    "options": [
+      "Atom kristal qəfəsli",
+      "İon kristal qəfəsli",
+      "Metal kristal qəfəsli",
+      "Molekulyar kristal qəfəsli maddələr qrupa"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qeyri-metalların bəsit ikiatomlu molekulları (O₂, N₂, Cl₂ və s.) bərk halda molekulyar kristal qəfəs əmələ gətirir.",
+      "distractors": {
+        "0": "C, Si, B atom kristalıdır.",
+        "1": "İonlar metal-qeyri-metaldır.",
+        "2": "Metallar qrupudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K04-03-03-013"
+  },
+  {
+    "question": "Fulleren (C₆₀) və Almaz (C) allotroplarının kristal qəfəs fərqini təhlil edin.",
+    "options": [
+      "Fulleren ion kristalıdır",
+      "C₆₀ Fulleren - Molekulyar kristal (futbol topu şəkilli molekullar), Almaz - Atom kristalı (3D karkas)",
+      "Hər ikisi molekulyardır",
+      "Almaz qazdır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fulleren C₆₀ sərbəst mütəhərrik molekullardan ibarət molekulyar kristaldır (haloidlərdə həll olur); Almaz isə nəhəng 3D atom kristalıdır.",
+      "distractors": {
+        "0": "İon yoxdur Karbondur.",
+        "2": "Almaz atom kristalıdır.",
+        "3": "Almaz bərkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K04-03-03-014"
+  },
+  {
+    "question": "Maddənin daxili rabitə tipi ilə onun kristal qəfəs tipi və fiziki xassələri arasındakı qanunauyğunluğu qiymətləndirin.",
+    "options": [
+      "Rabitə tipi düyünlərdəki zərrəcikləri və qəfəs tipini təyin edir; bu da t°ərimə, bərklik və keçiriciliyi müəyyənləşdirir",
+      "Kristal qəfəs təsadüfi yaranır",
+      "Bütün maddələr eyni t-də əriyir",
+      "Fiziki xassələr rabitədən asılı deyil"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kristal qəfəs tiplərini və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kimyəvi rabitə və kristal qəfəs növü (ion, atom, molekulyar, metal) maddələrin bütün makroskopik fiziki xassələrinin bünövrəsidir.",
+      "distractors": {
+        "1": "Qanunauyğundur.",
+        "2": "Ərimə t-ləri kəskin fərqlənir.",
+        "3": "Birbaşa rabitədən asılıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Kristal qəfəsin tipləri",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0205-05K04-03-03-015"
+  }
+]

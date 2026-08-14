@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "H₂ + O₂ -> H₂O tənliyini əmsallaşdırdıqda H₂, O₂ və H₂O-nun əmsalları sırası ilə necə olar?",
+    "options": [
+      "2, 2, 2",
+      "4, 1, 2",
+      "2, 1, 2",
+      "1, 1, 1"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Oksigen atomlarını bərabərləşdirmək üçün H₂O-ya 2, hidrogenləri bərabərləşdirmək üçün H₂-yə 2 yazılır: 2H₂ + O₂ -> 2H₂O.",
+      "distractors": {
+        "0": "İxtisar olunmalıdır.",
+        "1": "Hidrogen 8 atom olar.",
+        "3": "Oksigen bərabər olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K01-01-01-001"
+  },
+  {
+    "question": "Al + O₂ -> Al₂O₃ reaksiyasını əmsallaşdırdıqda bütöv tənliyin əmsalları cəmi neçə olar?",
+    "options": [
+      "10",
+      "4 + 3 + 2 = 9",
+      "7",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əmsallar: 4Al + 3O₂ -> 2Al₂O₃. Cəmi: 4 + 3 + 2 = 9.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "Hesablama səhvidir.",
+        "3": "Oksigen 3 deyil 2 yazılsa səhv olar."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K01-01-01-002"
+  },
+  {
+    "question": "Fe + Cl₂ -> FeCl₃ tənliyində reaksiyaya daxil olan maddələrin (Fe və Cl₂) əmsalları cəmi neçədir?",
+    "options": [
+      "2 + 3 = 5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tənlik: 2Fe + 3Cl₂ -> 2FeCl₃. Reagentlərin (sol tərəf) əmsalları cəmi 2 + 3 = 5.",
+      "distractors": {
+        "1": "Sağ tərəflə qarışıb.",
+        "2": "Yalnız Cl₂ əmsalıdır.",
+        "3": "Yalnız Fe əmsalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K01-01-01-003"
+  },
+  {
+    "question": "C₂H₄ + O₂ -> CO₂ + H₂O reaksiyasını əmsallaşdırdıqda O₂-nin əmsalı neçə olar?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: C₂H₄ + 3O₂ -> 2CO₂ + 2H₂O (sağda 4+2=6 O var, 6/2 = 3 O₂).",
+      "distractors": {
+        "1": "Oksigen azlıq edər.",
+        "2": "8 Oksigen edər.",
+        "3": "10 Oksigen edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K01-01-01-004"
+  },
+  {
+    "question": "P + O₂ -> P₂O₅ reaksiyasını əmsallaşdırarkən O₂ formulunun qarşısına neçə yazılmalıdır?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tənlik: 4P + 5O₂ -> 2P₂O₅ (sağda 10 O var, 10/2 = 5 O₂).",
+      "distractors": {
+        "0": "6 Oksigen edər.",
+        "1": "8 Oksigen edər.",
+        "2": "4 Oksigen edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K01-01-01-005"
+  },
+  {
+    "question": "C₃H₈ + O₂ -> CO₂ + H₂O reaksiyası əmsallaşdırıldıqda bütün əmsalların cəmini tapın.",
+    "options": [
+      "1 + 5 + 3 + 4 = 13",
+      "12",
+      "11",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: C₃H₈ + 5O₂ -> 3CO₂ + 4H₂O. Əmsallar cəmi: 1 + 5 + 3 + 4 = 13.",
+      "distractors": {
+        "1": "Hesablama səhvidir.",
+        "2": "C₃H₈-in 1-i unudulub.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K02-02-02-006"
+  },
+  {
+    "question": "KMnO₄ -> K₂MnO₄ + MnO₂ + O₂ termiki parçalanmasını əmsallaşdırdıqda KMnO₄-ün əmsalı neçə olar?",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2KMnO₄ -> K₂MnO₄ + MnO₂ + O₂. Sol tərəfə 2 əmsalı düşür.",
+      "distractors": {
+        "0": "K və Mn bərabərləşmir.",
+        "1": "Artıq olar.",
+        "3": "K-lar tək alınar."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K02-02-02-007"
+  },
+  {
+    "question": "NH₃ + O₂ -> N₂ + H₂O reaksiyası (katalizatorsuz yanma) əmsallaşdırıldıqda O₂-nin əmsalı neçə olar?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 4NH₃ + 3O₂ -> 2N₂ + 6H₂O (sağda 6 O, 6/2 = 3 O₂).",
+      "distractors": {
+        "0": "8 Oksigen edər.",
+        "2": "4 Oksigen edər.",
+        "3": "H₂O əmsalıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K02-02-02-008"
+  },
+  {
+    "question": "FeS₂ + O₂ -> Fe₂O₃ + SO₂ (piritin qovrulması) tənliyini bütöv əmsallaşdırdıqda FeS₂-nin əmsalı neçə olar?",
+    "options": [
+      "2",
+      "8",
+      "4",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 4FeS₂ + 11O₂ -> 2Fe₂O₃ + 8SO₂. FeS₂ qarşısına 4 əmsalı düşür.",
+      "distractors": {
+        "0": "11/2 kəsr verər.",
+        "1": "2 dəfə artırılıb.",
+        "3": "Kəsrlər alınar."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K02-02-02-009"
+  },
+  {
+    "question": "Kimyəvi tənlikdə əmsalların kəsr deyil, ən kiçik tam ədədlər olmasının elmi səbəbi nədir?",
+    "options": [
+      "Molekul və atomların tam zərrəciklər olması və bölünməzliyi prinsipi",
+      "Təsadüfi şərt",
+      "Kəsrlərin riyaziyyatda olmaması",
+      "Əmsalın böyük yazılması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əmsallar molekul və ya mol sayını bildirdiyi üçün reaksiyaya daxil olan zərrəciklər nisbəti ən kiçik tam ədədlərlə ifadə edilir.",
+      "distractors": {
+        "1": "Nəzəri təməldir.",
+        "2": "Riyaziyyatda kəsr var.",
+        "3": "Kiçik tam ədədlər lazımdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K02-02-02-010"
+  },
+  {
+    "question": "Cu + HNO₃(qatı) -> Cu(NO₃)₂ + NO₂ + H₂O reaksiyası əmsallaşdırıldıqda bütün əmsalların cəmini təhlil edin.",
+    "options": [
+      "14",
+      "12",
+      "8",
+      "1 + 4 + 1 + 2 + 2 = 10"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Cu + 4HNO₃ -> Cu(NO₃)₂ + 2NO₂ + 2H₂O. Əmsallar cəmi: 1 + 4 + 1 + 2 + 2 = 10.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "1": "Hesablama səhvidir.",
+        "2": "1-lər unudulub."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K04-03-03-011"
+  },
+  {
+    "question": "C₂H₆O (Etanol) + O₂ -> CO₂ + H₂O yanma tənliyini əmsallaşdırın və O₂-nin əmsalını tapın.",
+    "options": [
+      "2",
+      "7",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: C₂H₆O + 3O₂ -> 2CO₂ + 3H₂O. Sağda 2×2+3 = 7 O atomu var. Etanolda 1 O var, 6/2 = 3 O₂.",
+      "distractors": {
+        "0": "Oksigen az olar.",
+        "1": "Cəmi O atomu sayısıdır.",
+        "3": "8 Oksigen edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K04-03-03-012"
+  },
+  {
+    "question": "P₄O₁₀ + H₂O -> H₃PO₄ tənliyi əmsallaşdırıldıqda H₂O və H₃PO₄-ün əmsalları müvafiq olaraq neçə olar?",
+    "options": [
+      "3 H₂O və 2 H₃PO₄",
+      "6 H₂O və 4 H₃PO₄",
+      "1 H₂O və 1 H₃PO₄",
+      "4 H₂O və 6 H₃PO₄"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: P₄O₁₀ + 6H₂O -> 4H₃PO₄. P (4-ü bərabərləşdirmək üçün 4 H₃PO₄), H (12 atom üçün 6 H₂O).",
+      "distractors": {
+        "0": "P 2 olar 4 yox.",
+        "2": "Əmsalsızdır.",
+        "3": "Yerləri dəyişib."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K04-03-03-013"
+  },
+  {
+    "question": "Zn + NaOH + H₂O -> Na₂[Zn(OH)₄] + H₂ reaksiyasının əmsallarını təhlil edin.",
+    "options": [
+      "Əmsal 1-dir",
+      "2Zn + 4NaOH -> ...",
+      "Zn + NaOH -> ...",
+      "Zn + 2NaOH + 2H₂O -> Na₂[Zn(OH)₄] + H₂"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Zinc kompleks əmələ gətirərkən 2 mol NaOH və 2 mol H₂O ilə 1 mol Na₂[Zn(OH)₄] və 1 mol H₂ verir.",
+      "distractors": {
+        "0": "2 mol NaOH lazımdır.",
+        "1": "2 mislidir ixtisar olunmalıdır.",
+        "2": "Na və H bərabərləşmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K04-03-03-014"
+  },
+  {
+    "question": "Elektron balansı metodunun (Oksidləşmə-reduksiya reaksiyalarında) əmsallaşdırmada rolu nədir?",
+    "options": [
+      "Reaksiyanı ləğv etmək",
+      "Verilən və alınan elektron sayılarını bərabərləşdirərək mürəkkəb tənliklərə dəqiq əmsal tapmaq",
+      "Yalnız indikator rəngini dəyişmək",
+      "Atom kütləsini hesablamaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kimyəvi tənliklərin əmsallaşdırılması bacarığını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Oksidləşmə-reduksiya reaksiyalarında e- balansı metodu verilən və alınan elektronların bərabərliyi prinsipləri ilə əmsalları dəqiq müəyyənləşdirir.",
+      "distractors": {
+        "0": "Tənliyi həll edir.",
+        "2": "İndikator deyil.",
+        "3": "Kütlə hesabı deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0303-03K04-03-03-015"
+  },
+  {
+    "question": "İki və ya daha çox maddədən bir mürəkkəb maddənin əmələ gəldiyi reaksiya tipi hansıdır?",
+    "options": [
+      "Əvəzetmə reaksiyası",
+      "Parçalanma reaksiyası",
+      "Mübadilə reaksiyası",
+      "Birləşmə reaksiyası"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: A + B -> C sxeminə uyğun olaraq bir neçə başlanğıc maddədən yalnız bir mürəkkəb maddə alınan reaksiya birləşmə reaksiyası adlanır (məs. 2H₂ + O₂ -> 2H₂O).",
+      "distractors": {
+        "0": "Əvəzetmədə bəsit maddə mürəkkəb maddənin atomunu əvəz edir.",
+        "1": "Parçalanmada 1 maddədən bir neçə maddə alınır.",
+        "2": "Mübadilədə iki mürəkkəb maddə tərkib hissələrini dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K01-01-01-001"
+  },
+  {
+    "question": "Bir mürəkkəb maddədən iki və ya daha çox sadə/mürəkkəb maddənin alındığı reaksiya tipi hansıdır?",
+    "options": [
+      "Əvəzetmə reaksiyası",
+      "Parçalanma reaksiyası",
+      "Mübadilə reaksiyası",
+      "Birləşmə reaksiyası"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: A -> B + C sxeminə uyğun 1 maddədən bir neçə yeni maddə alınan reaksiya parçalanma reaksiyasıdır (məs. CaCO₃ -> CaO + CO₂).",
+      "distractors": {
+        "0": "Əvəzetmədə bəsit maddə reaksiyaya girir.",
+        "2": "Mübadilədə mürəkkəb maddələr dəyişir.",
+        "3": "Birləşmədə məhsul 1-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K01-01-01-002"
+  },
+  {
+    "question": "Bəsit maddə atomlarının mürəkkəb maddə atomlarından birini əvəz etdiyi reaksiya tipi (A + BC -> AC + B) necə adlanır?",
+    "options": [
+      "Mübadilə reaksiyası",
+      "Əvəzetmə reaksiyası",
+      "Parçalanma reaksiyası",
+      "Birləşmə reaksiyası"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əvəzetmə reaksiyasında bəsit maddə mürəkkəb maddənin tərkibindəki bir elementi çıxardır (məs. Zn + 2HCl -> ZnCl₂ + H₂↑).",
+      "distractors": {
+        "0": "Mübadilədə hər iki reagent mürəkkəbdir.",
+        "2": "Parçalanmada 1 reagent olur.",
+        "3": "Birləşmədə 1 məhsul alınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K01-01-01-003"
+  },
+  {
+    "question": "İki mürəkkəb maddənin öz tərkib hissələrini (ionlarını) dəyişdiyi reaksiya (AB + CD -> AD + CB) necə adlanır?",
+    "options": [
+      "Birləşmə reaksiyası",
+      "Əvəzetmə reaksiyası",
+      "Mübadilə reaksiyası",
+      "Parçalanma reaksiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mübadilə reaksiyalarında iki mürəkkəb maddə ionlarını dəyişdirərək iki yeni mürəkkəb maddə yaradır (məs. AgNO₃ + NaCl -> AgCl↓ + NaNO₃).",
+      "distractors": {
+        "0": "Birləşmədə 1 məhsul olur.",
+        "1": "Əvəzetmədə bəsit maddə iştirak edir.",
+        "3": "Parçalanmada 1 reagent olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K01-01-01-004"
+  },
+  {
+    "question": "Fe + CuSO₄ -> FeSO₄ + Cu reaksiyası hansı reaksiya tipinə aiddir?",
+    "options": [
+      "Mübadilə reaksiyası",
+      "Parçalanma reaksiyası",
+      "Əvəzetmə reaksiyası",
+      "Birləşmə reaksiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Aktiv olan bəsit Fe metalı CuSO₄ duzundakı Cu-nu əvəz edərək sıxışdırıb çıxarır (Əvəzetmə reaksiyası).",
+      "distractors": {
+        "0": "Fe bəsit maddədir.",
+        "1": "Parçalanma deyil.",
+        "3": "Birləşmə deyil 2 məhsul var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K01-01-01-005"
+  },
+  {
+    "question": "Aşağıdakı reaksiyalardan hansı Birləşmə reaksiyasına nümunədir?",
+    "options": [
+      "Zn + H₂SO₄ -> ZnSO₄ + H₂",
+      "NaOH + HCl -> NaCl + H₂O",
+      "2KClO₃ -> 2KCl + 3O₂",
+      "CaO + CO₂ -> CaCO₃"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: CaO və CO₂ (iki mürəkkəb maddə) birleşərək yalnız bir mürəkkəb maddə (CaCO₃) verdiyi üçün birləşmə reaksiyasıdır.",
+      "distractors": {
+        "0": "Əvəzetmədir.",
+        "1": "Mübadilədir.",
+        "2": "Parçalanmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K02-02-02-006"
+  },
+  {
+    "question": "Neytrallaşma reaksiyası (Turşu + Əsas -> Duz + Su) reaksiya tiplərindən hansına aiddir?",
+    "options": [
+      "Əvəzetmə reaksiyası",
+      "Parçalanma reaksiyası",
+      "Mübadilə reaksiyası",
+      "Birləşmə reaksiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Neytrallaşma reaksiyasında turşunun H⁺ ionu ilə əsasın OH⁻ ionu su, metal və turşu qalığı duz yaradır; bu klassik mübadilə reaksiyasıdır.",
+      "distractors": {
+        "0": "Bəsit maddə iştirak etmir.",
+        "1": "Parçalanma deyil.",
+        "3": "Birləşmə deyil duz və su alınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K02-02-02-007"
+  },
+  {
+    "question": "2Na + 2H₂O -> 2NaOH + H₂↑ reaksiyasını təhlil edin.",
+    "options": [
+      "Birləşmə reaksiyası",
+      "Əvəzetmə reaksiyası (bəsit Na H₂O-dan H-ı sıxışdırıb çıxarır)",
+      "Parçalanma reaksiyası",
+      "Mübadilə reaksiyası"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Natrium metalı su molekulundakı Hidrogen atomunu əvəz edərək H₂ qazı və NaOH əmələ gətirir (Əvəzetmə).",
+      "distractors": {
+        "0": "2 məhsul var birləşmə deyil.",
+        "2": "1 reagent deyil.",
+        "3": "Na bəsit maddədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K02-02-02-008"
+  },
+  {
+    "question": "CH₄ + 2O₂ -> CO₂ + 2H₂O (Yanma reaksiyası) tərkib dəyişməsinə görə hansı qrupa aid edilmir?",
+    "options": [
+      "Tam parçalanmadır",
+      "Tam birləşmədir",
+      "Dördlü klassik tiplərin (birləşmə, parçalanma, əvəzetmə, mübadilə) heç birinə tam uymayan mürəkkəb oksidləşmə reaksiyasıdır",
+      "Tam mübadilədir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Üzvi maddələrin yanması klassik 4 reaksiya tipinə (A+B->C, A->B+C və s.) uymur; bu oksidləşmə-reduksiya reaksiyasıdır.",
+      "distractors": {
+        "0": "Parçalanma deyil O₂ daxil olur.",
+        "1": "Birləşmə deyil 2 məhsul var.",
+        "3": "Bəsit O₂ var mübadilə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K02-02-02-009"
+  },
+  {
+    "question": "Elektrolizlə suyun parçalanması (2H₂O -(el. cərəyanı)-> 2H₂ + O₂) hansı tipə aiddir?",
+    "options": [
+      "Parçalanma reaksiyası",
+      "Birləşmə reaksiyası",
+      "Mübadilə reaksiyası",
+      "Əvəzetmə reaksiyası"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 mürəkkəb maddədən (H₂O) elektrik cərəyanının təsiri ilə 2 bəsit maddə (H₂ və O₂) alındığı üçün parçalanmadır.",
+      "distractors": {
+        "1": "Əks reaksiya birləşmədir.",
+        "2": "Mübadilə deyil.",
+        "3": "Əvəzetmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K02-02-02-010"
+  },
+  {
+    "question": "Metalların gərginlik sırasına əsasən (Zn > Cu) Zn + CuSO₄ -> ZnSO₄ + Cu reaksiyasının getməsi, Cu + ZnSO₄ -> gedib-getməməsini təhlil edin.",
+    "options": [
+      "Cu Zn-i çıxardır",
+      "Zn Cu-dan aktiv olduğu üçün CuSO₄-dən Cu-nu çıxarır; Cu zəif olduğu üçün ZnSO₄-dən Zn-i çıxara bilmir (reaksiya getmir)",
+      "Heç bir reaksiya getmir",
+      "Hər iki reaksiya gedir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əvəzetmə reaksiyasında yalnız daha aktiv (solda duran) metal duzdan zəif metalı sıxışdırıb çıxara bilər.",
+      "distractors": {
+        "0": "Cu zəifdir.",
+        "2": "Birinci reaksiya gedir.",
+        "3": "Zəif metal aktiv metalı çıxara bilməz."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K04-03-03-011"
+  },
+  {
+    "question": "Suda həll olan duzlar arasında Mübadilə reaksiyasının sonadək getməsi üçün əsas şərtlər hansılardır?",
+    "options": [
+      "Məhsullar arasında çöküntü (↓), qaz (↑) və ya zəif elektrolit (su H₂O) alınmalıdır (Bertolet qaydası)",
+      "Reaksiya yalnız qızdırdıqda gedir",
+      "Heç bir dəyişiklik olmamalıdır",
+      "Bütün məhsullar suda həll olmalıdır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İon mübadilə reaksiyaları yalnız o zaman sonadək gedir ki, mühitdən ionlar çöküntü, qaz və ya su şəklində çıxsın.",
+      "distractors": {
+        "1": "Otaq t-də də gedir.",
+        "2": "Dəyişiklik şərsdir.",
+        "3": "Həll olsa ionlar mühitdə qalır reaksiya dönər olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K04-03-03-012"
+  },
+  {
+    "question": "Cu(OH)₂ -(t°)-> CuO + H₂O reaksiyasını təhlil edin.",
+    "options": [
+      "Əvəzetmə reaksiyasıdır",
+      "Suda həll olmayan əsasın termiki parçalanması reaksiyasıdır",
+      "Neytrallaşmadır",
+      "Birləşmə reaksiyasıdır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qara-göy rəngli Cu(OH)₂ qızdırıldıqda qara rəngli CuO oksidinə və suya parçalanır (Parçalanma reaksiyası).",
+      "distractors": {
+        "0": "Əvəzetmə deyil.",
+        "2": "Turşu iştirak etmir.",
+        "3": "1 reagent var parçalanmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K04-03-03-013"
+  },
+  {
+    "question": "Na₂SO₄ + BaCl₂ -> BaSO₄↓ + 2NaCl reaksiyasında ağ çöküntünün (BaSO₄) alınmasını təhlil edin.",
+    "options": [
+      "Ba²⁺ və SO₄²⁻ ionları suda həll olmayan BaSO₄ çöküntüsü əmələ gətirdiyi üçün reaksiya sonadək gedən mübadilə reaksiyasıdır",
+      "Parçalanmadır",
+      "Reaksiya getmir",
+      "Əvəzetmə reaksiyasıdır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Barium kationu ilə sulfat anionu birləşərək suda və turşuda həll olmayan ağ BaSO₄ çöküntüsü verir (keyfiyyət reaksiyası).",
+      "distractors": {
+        "1": "2 reagent var.",
+        "2": "Çöküntü alındığı üçün gedir.",
+        "3": "Hər ikisi mürəkkəb duzdur (mübadilədir)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K04-03-03-014"
+  },
+  {
+    "question": "Kimyəvi reaksiyaların tərkib dəyişməsinə görə təsnifatının elmi və praktiki əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Fizikanı əvəz etməsi",
+      "Yalnız adlandırma üçün olması",
+      "Reaksiyanı dayandırmaq üçün",
+      "Reaksiyanın mexanizmini, başlanğıc və son maddələrin xassələrini təyin etməyə və nəticəni proqnozlaşdırmağa imkan verməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Reaksiya tiplərini və mexanizmlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Reaksiyaların bu təsnifatı kimyaçıya Reagentlərə baxaraq Məhsulların formulunu və reaksiyanın gediş şərtlərini qabaqcadan müəyyən etmək imkanı verir.",
+      "distractors": {
+        "0": "Kimya təsnifatıdır.",
+        "1": "Metodoloji əhəmiyyəti böyükdür.",
+        "2": "Reaksiyanı izah edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0304-04K04-03-03-015"
+  },
+  {
+    "question": "Reaksiyaya daxil olan maddələr eyni aqreqat vəziyyətində (eyni fazada) olarsa reaksiya necə adlanır?",
+    "options": [
+      "Heterogen reaksiya",
+      "Dönməyən reaksiya",
+      "Homogen reaksiya",
+      "Dönər reaksiya"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Reaksiyaya daxil olan maddələr eyni fazada (məsələn, qaz-qaz və ya maye-maye) olub faza bölgü sərhədi yaratmırsa, bu homogen reaksiyadır.",
+      "distractors": {
+        "0": "Heterogen reaksiyada maddələr müxtəlif fazalardadır.",
+        "1": "Dönməyənlə bağlı deyil.",
+        "3": "Dönərlik istiqamətlə bağlıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K01-01-01-001"
+  },
+  {
+    "question": "Reaksiyaya daxil olan maddələr müxtəlif aqreqat vəziyyətində (məsələn, bərk-qaz, bərk-maye) olub faza sərhədi yaradırsa reaksiya necə adlanır?",
+    "options": [
+      "İzotermik reaksiya",
+      "Nöqtəvi reaksiya",
+      "Heterogen reaksiya",
+      "Homogen reaksiya"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Müxtəlif aqreqat halındakı maddələr arasında faza bölmə sərhədində gedən reaksiyalar heterogen reaksiyalar adlanır (məs. C(b) + O₂(q) -> CO₂(q)).",
+      "distractors": {
+        "0": "İzotermik t=const deməkdir.",
+        "1": "Nöqtəvi reaksiya termin kimi yoxdur.",
+        "3": "Homogendə eyni fazadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K01-01-01-002"
+  },
+  {
+    "question": "H₂(q) + Cl₂(q) -> 2HCl(q) reaksiyası hansı tipə aiddir?",
+    "options": [
+      "Nüvə reaksiyası",
+      "Katalitik bərk reaksiya",
+      "Homogen reaksiya (qaz-qaz)",
+      "Heterogen reaksiya"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həm H₂, həm Cl₂ qaz halındadır, maddələr eyni fazada tam qarışdığı üçün homogen reaksiyadır.",
+      "distractors": {
+        "0": "Kimyəvi reaksiyadır.",
+        "1": "Bərk maddə yokdur.",
+        "3": "Maddələr müxtəlif fazada deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K01-01-01-003"
+  },
+  {
+    "question": "C(bərk) + O₂(qaz) -> CO₂(qaz) reaksiyası hansı reaksiya tipinə aiddir?",
+    "options": [
+      "İon reaksiyası",
+      "Heterogen reaksiya (bərk-qaz)",
+      "Homogen reaksiya",
+      "Neytrallaşma"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Karbon bərk, Oksigen qaz halındadır; reaksiya bərk karbonun səthində (faza sərhədində) getdiyi üçün heterogendir.",
+      "distractors": {
+        "0": "İonlar yoxdur.",
+        "2": "Fazalar fərqlidir bərk və qazdır.",
+        "3": "Turşu-əsas deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K01-01-01-004"
+  },
+  {
+    "question": "Heterogen reaksiyanın sürətini artırmaq üçün bərk maddənin hansı parametresini dəyişmək lazımdır?",
+    "options": [
+      "Həcmi böyütmək",
+      "Təzyiqi azaltmaq",
+      "Bərk maddəni iri tikə etmək",
+      "Bərk maddəni xırdalamaq (əzmək) və toxunma səthinin sahəsini artırmaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Heterogen reaksiya faza sərhədində gedir. Bərk maddə toz halına salındıqda toxunma səthinin sahəsi (S) kəskin artır və reaksiya sürətlənir.",
+      "distractors": {
+        "0": "Qatılıq azalar.",
+        "1": "Qaz təzyiqi azaldıqda sürət azalar.",
+        "2": "Səth kiçilər sürət azalar."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K01-01-01-005"
+  },
+  {
+    "question": "Zn(bərk) + 2HCl(məhlul) -> ZnCl₂(məhlul) + H₂(qaz)↑ reaksiyasını təhlil edin.",
+    "options": [
+      "Homogen reaksiya",
+      "Qaz-qaz reaksiyası",
+      "Heterogen reaksiya (bərk-maye faza sərhədi)",
+      "Nüvə reaksiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sink bərk, HCl suda məhluldur (maye faza). Reaksiya zincin səthində getdiyi üçün heterogendir.",
+      "distractors": {
+        "0": "Fazalar bərk və mayedir.",
+        "1": "Reagentlər qaz deyil.",
+        "3": "Kimyəvi reaksiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K02-02-02-006"
+  },
+  {
+    "question": "N₂(qaz) + 3H₂(qaz) -> 2NH₃(qaz) reaksiyası homogen, yoxsa heterogendir?",
+    "options": [
+      "Sulu məhlul reaksiyası",
+      "Homogen reaksiya (bütün reagent və məhsullar qaz fazasındadır)",
+      "Bərk reaksiya",
+      "Heterogen reaksiya"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bütün maddələr (N₂, H₂, NH₃) qaz halında olduğu üçün mühit homogen qaz fazasıdır.",
+      "distractors": {
+        "0": "Məhlul yoxdur qazdır.",
+        "2": "Bərk maddə yoxdur.",
+        "3": "Maddələr eyni qaz fazasındadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K02-02-02-007"
+  },
+  {
+    "question": "Suda həll olan NaOH(məhlul) + HCl(məhlul) -> NaCl(məhlul) + H₂O(maye) reaksiyasını təhlil edin.",
+    "options": [
+      "Səth reaksiyası",
+      "Heterogen reaksiya",
+      "Homogen reaksiya (maye məhlul fazasında)",
+      "Bərk faza reaksiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həm başlanğıc maddələr (NaOH və HCl suda dissosiasiya olunub), həm məhsullar vahid maye məhlul fazasındadır (homogen).",
+      "distractors": {
+        "0": "Səth faza fərqində olur.",
+        "1": "Faza sərhədi yoxdur məhlul birgədir.",
+        "3": "Bərk maddə yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K02-02-02-008"
+  },
+  {
+    "question": "Fe(b) + S(b) -(t°)-> FeS(b) reaksiyasını təhlil edin.",
+    "options": [
+      "Homogen reaksiya",
+      "Qaz reaksiyası",
+      "Məhlul reaksiyası",
+      "Heterogen reaksiya (iki müxtəlif bərk maddənin təmas sərhədində gedir)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dəmir tozu və Kükürd tozu iki ayrı bərk fazadır; aralarında faza sərhədi olduğu üçün heterogen reaksiyadır.",
+      "distractors": {
+        "0": "İki fərqli bərk faza var.",
+        "1": "Qaz yoxdur.",
+        "2": "Məhlul yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K02-02-02-009"
+  },
+  {
+    "question": "Homogen reaksiyanın sürəti (v) hansı düsturla hesablanır?",
+    "options": [
+      "v = ΔS / Δt",
+      "v = Δm / Δt",
+      "v = m × a",
+      "v = Δc / Δt (qatılığın zamana görə dəyişməsi)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Homogen reaksiya həcm daxilində getdiyi üçün onun sürəti vahid zamanda reaksiyaya girən və ya alınan maddələrin molyar qatılığının dəyişməsi ilə ölçülür (v = Δc/Δt).",
+      "distractors": {
+        "0": "Səth heterogendədir.",
+        "1": "Heterogen reaksiya kütlə ilə ölçülə bilər.",
+        "2": "Nyutonun 2-ci qanunudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K02-02-02-010"
+  },
+  {
+    "question": "Heterogen reaksiyanın sürəti (v) hansı kəmiyyətlə xarakterizə olunur?",
+    "options": [
+      "v = p / T",
+      "v = Δc / Δt",
+      "v = S / V",
+      "v = Δn / (S × Δt) (vahid zamanda faza təmas səthinin sahəsində mol sayının dəyişməsi)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Heterogen reaksiya səthdə getdiyindən onun sürəti vahid zamanda faza sərhədinin sahəsində (S) reaksiyaya daxil olan maddənin mol sayının (n) dəyişməsinə bərabərdir.",
+      "distractors": {
+        "0": "Qaz qanunudur.",
+        "1": "Homogen reaksiyanın sürətidir.",
+        "2": "Xüsusi səthdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K04-03-03-011"
+  },
+  {
+    "question": "Domna sobəsində Dəmir filizinin (Fe₂O₃(b) + 3CO(q) -> 2Fe(m) + 3CO₂(q)) reduksiyası heterogen reaksiya kimi necə təhlil olunur?",
+    "options": [
+      "Filiz əriməlidir",
+      "Reaksiya homogendir",
+      "Filiz xırdalandıqca və qaz axını artdıqca bərk-qaz faza sərhədində reaksiya kəskin sürətlənir",
+      "Reaksiya getmir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Metallurgiyada bərk filiz xırdalanaraq CO qazı ilə üfürülür; bu heterogen reaksiyanın səthini böyüdüb istehsalatı sürətləndirir.",
+      "distractors": {
+        "0": "Bərk halda reduksiya olunur.",
+        "1": "Filiz bərk CO qazdır heterogendir.",
+        "3": "Reaksiya metallurgiyanın təməlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K04-03-03-012"
+  },
+  {
+    "question": "Katalitik heterogen reaksiyalarda (məs. N₂ + 3H₂ -> 2NH₃ reaksiyasında bərk Fe katalizatoru) katalizatorun rolunu təhlil edin.",
+    "options": [
+      "Qaz molekulları bərk Fe katalizatorunun səthində adsorbsiya olunaraq rabitələri zəiflədir və aktivləşmə energiyasını düşürür",
+      "Katalizator reaksiyaya daxil olur",
+      "Katalizator homogen məhlul yaradır",
+      "Katalizator kütləni artırır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Heterogen katalizdə bərk katalizatorun səthi reaksiya mərkəzidir; qaz molekulları səthdə zəifləyir və hızlı reaksiya verir.",
+      "distractors": {
+        "1": "Katalizator sərf olunmur.",
+        "2": "Katalizator bərk qalır.",
+        "3": "Kütlə dəyişmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K04-03-03-013"
+  },
+  {
+    "question": "2NO(q) + O₂(q) -> 2NO₂(q) homogen qaz reaksiyasında təzyiqin 2 dəfə artırılmasının sürətə təsirini təhlil edin.",
+    "options": [
+      "2 dəfə artar",
+      "4 dəfə artar",
+      "Təzyiq 2 dəfə artdıqda qatılıqlar 2 dəfə artır; sürət v = k·c²(NO)·c(O₂) düsturuna görə 2² × 2 = 8 dəfə artar",
+      "Dəyişməz"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Təzyiq 2 dəfə artanda NO qatılığı 2, O₂ qatılığı 2 artır. v₂ / v₁ = (2)² × 2 = 8 dəfə artır.",
+      "distractors": {
+        "0": "Dərəcələr nəzərə alınmayıb.",
+        "1": "Yalnız NO nəzərə alınıb.",
+        "3": "Qazlarda təzyiq sürətə birbaşa təsir edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K04-03-03-014"
+  },
+  {
+    "question": "Homogen və heterogen reaksiyalar təsnifatının kimya mühəndisliyi və sobələrin (reaktorların) layihələndirilməsindəki rolunu qiymətləndirin.",
+    "options": [
+      "Reaktorun tipini (qarışdırıcılı, təbəqəli, qaynar yataqlı), temperatur və toxunma səthini düzgün seçməyə imkan verən əsas prinsip olması",
+      "Sobaların dizaynına təsir etməməsi",
+      "Yalnız dərslik nəzəriyyəsi olması",
+      "Reaksiyanı dayandırması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Homogen və heterogen reaksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kimya sənayesində heterogen reaksiyalar üçün qaynar yataqlı reaktorlar, homogen qaz reaksiyaları üçün borulu reaktorlar layihələndirilir.",
+      "distractors": {
+        "1": "Birbaşa dizaynı təyin edir.",
+        "2": "Mühəndislik təməlidir.",
+        "3": "İstehsalatı optimizes edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3.5 Homogen və heterogen reaksiyalar",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0305-05K04-03-03-015"
+  }
+]

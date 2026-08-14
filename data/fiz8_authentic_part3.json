@@ -1,0 +1,973 @@
+[
+  {
+    "question": "Bədənin ağırlıq sahəsindəki potensial enerjisi (E_p = mgh) hansı fiziki kəmiyyətlərdən asılıdır?",
+    "options": [
+      "Cismin kütləsindən, sərbəstdüşmə təcilindən və yerdən olan hündürlüyündən",
+      "Yalnız cismin sürətindən",
+      "Cismin rəngindən və formasından",
+      "Yalnız havanın temperaturundan"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Enerjinin kəmiyyətlərdən asılılığını bilmək",
+    "explanation": {
+      "correct": "İzah: E_p = mgh düsturundan görünür ki, potensial enerji cismin kütləsindən (m), təcildən (g) və hündürlükdən (h) düz mütənasib asılıdır.",
+      "distractors": {
+        "1": "Sürətdən kinetik enerji asılıdır.",
+        "2": "Rəng və forma təsir etmir.",
+        "3": "Temperatur daxili enerjiyə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F01-01-01-001"
+  },
+  {
+    "question": "Cismin kinetik enerjisi (E_k = mv²/2) hansı fiziki kəmiyyətlərdən asılıdır?",
+    "options": [
+      "Cismin kütləsindən və sürətinin kvadratından",
+      "Yalnız cismin hündürlüyündən",
+      "Yalnız havanın təzyiqindən",
+      "Cismin həcmindən və sıxlığından bağımsızdır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Enerjinin kəmiyyətlərdən asılılığını bilmək",
+    "explanation": {
+      "correct": "İzah: E_k = (m × v²) / 2 düsturuna əsasən kinetik enerji kütlədən düz, sürətin kvadratından isə kvadratik mütənasib asılıdır.",
+      "distractors": {
+        "1": "Hündürlükdən potensial enerji asılıdır.",
+        "2": "Havanın təzyiqindən asılı deyil.",
+        "3": "Həcm və sıxlıq dolayısı ilə kütlə yaradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F01-01-01-002"
+  },
+  {
+    "question": "Hündürlüyü sabit saxlanmaqla cismin kütləsi 3 dəfə artırılarsa, onun potensial enerjisi necə dəyişər?",
+    "options": [
+      "3 dəfə artar",
+      "3 dəfə azalar",
+      "9 dəfə artar",
+      "Dəyişməz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Enerjinin kəmiyyətlərdən asılılığını bilmək",
+    "explanation": {
+      "correct": "İzah: E_p = mgh. Hündürlük sabit olduqda potensial enerji kütlə ilə düz mütənasibdir. Kütlə 3 dəfə artdıqda potensial enerji də 3 dəfə artar.",
+      "distractors": {
+        "1": "Azalmaz, artar.",
+        "2": "9 dəfə kvadratik asılılıqda olur (sürətdə).",
+        "3": "Dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F01-01-01-003"
+  },
+  {
+    "question": "Kütləsi sabit olan cismin sürəti 2 dəfə azaldılarsa, onun kinetik enerjisi necə dəyişər?",
+    "options": [
+      "4 dəfə azalar",
+      "2 dəfə azalar",
+      "4 dəfə artar",
+      "2 dəfə artar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Enerjinin kəmiyyətlərdən asılılığını bilmək",
+    "explanation": {
+      "correct": "İzah: E_k = mv²/2. Sürət 2 dəfə azaldıqda onun kvadratı 2² = 4 dəfə azalar.",
+      "distractors": {
+        "1": "2 dəfə azalar xətti asılılıq sanmaqdır.",
+        "2": "Artmaz, azalar.",
+        "3": "Sürət azaldıqda enerji artmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F01-01-01-004"
+  },
+  {
+    "question": "Mexaniki enerjinin ölçü vahidi Beynəlxalq Vahidər Sistemində nədir?",
+    "options": [
+      "Coul (C)",
+      "Vat (Vt)",
+      "Nyuotn (N)",
+      "Paskal (Pa)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Enerjinin kəmiyyətlərdən asılılığını bilmək",
+    "explanation": {
+      "correct": "İzah: Həm kinetik, həm potensial, həm də tam mexaniki enerjinin vahidi Couldur (C).",
+      "distractors": {
+        "1": "Vat gücdür.",
+        "2": "Nyuotn qüvvədir.",
+        "3": "Paskal təzyiqdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F01-01-01-005"
+  },
+  {
+    "question": "Kütləsi 2 kg və 6 kg olan iki cisim yerdən eyni hündürlükdədir. Hansı cismin potensial enerjisi daha böyükdür və neçə dəfə?",
+    "options": [
+      "6 kg kütləli cismin potensial enerjisi 3 dəfə böyükdür",
+      "2 kg kütləli cismin potensial enerjisi 3 dəfə böyükdür",
+      "Hər iki cismin potensial enerjisi bərabərdir",
+      "6 kg kütləli cismin potensial enerjisi 9 dəfə böyükdür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Enerjinin asılılıq qrafik və nisbətlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: E_p = mgh. h və g eyni olduğu üçün E_p1 / E_p2 = m1 / m2 = 6 / 2 = 3 dəfə böyükdür.",
+      "distractors": {
+        "1": "Kiçik kütləli cismin enerjisi kiçik olar.",
+        "2": "Kütlələr fərqlidir, bərabər ola bilməz.",
+        "3": "Kvadratik deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F02-02-02-006"
+  },
+  {
+    "question": "Sürətləri v₁ = 10 m/s və v₂ = 20 m/s olan iki eyni kütləli avtomobilin kinetik enerjilərini müqayisə edin.",
+    "options": [
+      "İkinci avtomobilin kinetik enerjisi 4 dəfə böyükdür",
+      "İkinci avtomobilin kinetik enerjisi 2 dəfə böyükdür",
+      "Birinci avtomobilin kinetik enerjisi 4 dəfə böyükdür",
+      "Kinetik enerjiləri bərabərdir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Enerjinin asılılıq qrafik və nisbətlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: E_k = mv²/2. Kütlələr eynidirdir. E_k2 / E_k1 = (v₂ / v₁)² = (20 / 10)² = 2² = 4 dəfə böyükdür.",
+      "distractors": {
+        "1": "2 dəfə sürət nisbətidir, kvadratı götürülməyib.",
+        "2": "Böyük sürətli cismin enerjisi çoxdur.",
+        "3": "Sürətlər fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F02-02-02-007"
+  },
+  {
+    "question": "Yerdən 10 m hündürlükdə olan 3 kg kütləli daşın potensial enerjisi, 5 m hündürlükdə olan eyni kütləli daşın potensial enerjisindən neçə dəfə çoxdur?",
+    "options": [
+      "2 dəfə çoxdur",
+      "4 dəfə çoxdur",
+      "2 dəfə azdır",
+      "Eynidir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Enerjinin asılılıq qrafik və nisbətlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: E_p = mgh. h₁ / h₂ = 10 / 5 = 2. Hündürlük 2 dəfə çox olduğu üçün potensial enerji də 2 dəfə çoxdur.",
+      "distractors": {
+        "1": "4 dəfə kvadratik asılılıq sanmaqdır.",
+        "2": "Hündür çox olanın enerjisi çoxdur.",
+        "3": "Hündürlük fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F02-02-02-008"
+  },
+  {
+    "question": "Cismin kütləsi 2 dəfə artırılıb, sürəti 2 dəfə azaldılarsa, onun kinetik enerjisi necə dəyişər?",
+    "options": [
+      "2 dəfə azalar",
+      "Dəyişməz",
+      "2 dəfə artar",
+      "4 dəfə azalar"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Enerjinin asılılıq qrafik və nisbətlərini izah etmək",
+    "explanation": {
+      "correct": [
+        "İzah: E_k' = (2m × (v/2)²) / 2 = (2m × v²/4) / 2 = (1/2) × (mv²/2) = E_k / 2. Kinetik enerji 2 dəfə azalar."
+      ],
+      "distractors": {
+        "1": "Dəyişməz sanmaq m artımı ilə v azalmasını eyni dərəcəli bilməkdir (v kvadratikdir!).",
+        "2": "Artmaz.",
+        "3": "4 dəfə kütlə artımını nəzərə almamaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F02-02-02-009"
+  },
+  {
+    "question": "Elastik deformasiya olunmuş yayın potensial enerjisinin sıxılma mülahizəsindən (Δx) asılılıq qrafiki hansı formadadır?",
+    "options": [
+      "Parabola (kvadratik asılılıq E_p ~ (Δx)²)",
+      "Düz xətt (xətti asılılıq)",
+      "Hiperbola",
+      "Sabit üfüqi xətt"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Enerjinin asılılıq qrafik və nisbətlərini izah etmək",
+    "explanation": {
+      "correct": "İzah: E_p = (k × Δx²) / 2 düsturuna əsasən yayın potensial enerjisi sıxılmanın (və ya uzanmanın) kvadratı ilə düz mütənasibdir və qrafiki paraboladır.",
+      "distractors": {
+        "1": "Düz xətt F = kΔx qüvvə qrafikidir.",
+        "2": "Hiperbola tərs asılılıqdır.",
+        "3": "Sabit deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F02-02-02-010"
+  },
+  {
+    "question": "Kütləsi m olan cisim v sürəti ilə hərəkət edərkən kinetik enerjisi E-dir. Sürəti 2v, kütləsi isə 3m olduqda kinetik enerjisi nəyə bərabər olar?",
+    "options": [
+      "12 E",
+      "6 E",
+      "5 E",
+      "18 E"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb enerji asılılıqlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_k' = 3m × (2v)² / 2 = 3m × 4v² / 2 = 12 × (mv²/2) = 12 E.",
+      "distractors": {
+        "1": "6 E sürətin kvadratını götürməyib 3×2 etməkdir.",
+        "2": "5 E toplama xətasıdır.",
+        "3": "18 E hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_k' = 3m × (2v)² / 2 = 3m × 4v² / 2",
+      "E_k' = 12 × (mv² / 2) = 12 E"
+    ],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F04-03-03-011"
+  },
+  {
+    "question": "Şaquli yuxarı atılan 1 kg kütləli cismin kinetik enerjisi yüksəldikcə E_k = 200 - 10h (C) qanunu ilə dəyişir. Cismin maksimum qalxma hündürlüyünü tapın.",
+    "options": [
+      "20 m",
+      "10 m",
+      "200 m",
+      "40 m"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb enerji asılılıqlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maksimum hündürlükdə cisim anlıq dayanır və kinetik enerji sıfır olur (E_k = 0). 200 - 10h = 0 -> 10h = 200 -> h = 20 m.",
+      "distractors": {
+        "1": "10 m 10-a bölmə xətasıdır.",
+        "2": "200 m kinetik enerjinin başlanğıc qiymətidir.",
+        "3": "40 m hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_k = 0",
+      "200 - 10h = 0 -> 10h = 200",
+      "h = 20 m"
+    ],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F04-03-03-012"
+  },
+  {
+    "question": "Kütləsi 4 kg olan cismin impulsu p = 20 kg·m/s-dir. Cismin kinetik enerjisini p²/2m düsturu ilə hesablayın.",
+    "options": [
+      "50 C",
+      "100 C",
+      "2.5 C",
+      "400 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb enerji asılılıqlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kinetik enerji impuls vasitəsilə E_k = p² / (2m) düsturu ilə hesablanır. E_k = 20² / (2 × 4) = 400 / 8 = 50 C.",
+      "distractors": {
+        "1": "100 C 2-yə m-i vurmamaqdır (400/4).",
+        "2": "2.5 C kvadratı götürməməkdir (20/8).",
+        "3": "400 C 2m-ə bölməməkdir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_k = p² / (2m)",
+      "E_k = 20² / (2 × 4) = 400 / 8 = 50 C"
+    ],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F04-03-03-013"
+  },
+  {
+    "question": "Böyük sürətlə hərəkət edən kiçik kütləli güllənin və yavaş hərəkət edən ağır təyyarənin kinetik enerjilərini təhlil edin. Hansı halda güllənin kinetik enerjisi təyyarəninkinə bərabər ola bilər?",
+    "options": [
+      "Güllənin sürətinin kvadratı təyyarənin kütləsinin güllə kütləsinə nisbətini kompensasiya edəcək qədər son dərəcə böyük olduqda",
+      "Heç vaxt bərabər ola bilməz",
+      "Yalnız güllə dayandıqda",
+      "Təyyarə daha sürətlə uçduqda"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb enerji asılılıqlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_k = mv²/2 olduğu üçün m_güllə << m_təyyarə olsa da, v_güllə >> v_təyyarə olarsa (sürətin kvadratı hesabı ilə) enerjilər bərabər ola bilər.",
+      "distractors": {
+        "1": "Bərabər ola bilər.",
+        "2": "Dayandıqda enerjisi sıfır olar.",
+        "3": "Təyyarə sürətlənsə enerjisi daha da artar."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [
+      "E_k = p² / (2m)",
+      "E_k = 20² / (2 × 4) = 400 / 8 = 50 C"
+    ],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F04-03-03-014"
+  },
+  {
+    "question": "Kütləsi 2 kg olan cisim h = 15 m hündürlükdən düşür. Hündürlük h' = 5 m olan nöqtədə cismin potensial enerjisini və kinetik enerjisini tapın (g = 10 N/kg, tam enerji saxlanılır).",
+    "options": [
+      "E_p = 100 C, E_k = 200 C",
+      "E_p = 200 C, E_k = 100 C",
+      "E_p = 300 C, E_k = 0 C",
+      "E_p = 150 C, E_k = 150 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mürəkkəb enerji asılılıqlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Başlanğıc tam enerji E_tam = mgh_max = 2 × 10 × 15 = 300 C. h' = 5 m-də E_p = mgh' = 2 × 10 × 5 = 100 C. Enerjinin saxlanmasına görə E_k = E_tam - E_p = 300 - 100 = 200 C.",
+      "distractors": {
+        "1": "Tərsidir.",
+        "2": "300 C h = 15 m-dəki potensialdır.",
+        "3": "Bərabər 7.5 m-də olur."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_tam = 2 × 10 × 15 = 300 C",
+      "E_p = 2 × 10 × 5 = 100 C",
+      "E_k = 300 - 100 = 200 C"
+    ],
+    "topic": "2.4 Potensial və kinetik enerji nədən asılıdır?",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0204-04F04-03-03-015"
+  },
+  {
+    "question": "Cismin tam mexaniki enerjisi hansı iki enerjinin cəminə bərabərdir?",
+    "options": [
+      "Potensial enerji ilə kinetik enerjinin cəminə (E_tam = E_p + E_k)",
+      "Daxili enerji ilə kimyəvi enerjinin cəminə",
+      "Yalnız iki kinetik enerjinin cəminə",
+      "Qüvvə ilə təcilın cəminə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tam mexaniki enerjini bilmək",
+    "explanation": {
+      "correct": "İzah: Cismin tam mexaniki enerjisi onun potensial və kinetik enerjilərinin cəmidir: E_tam = E_p + E_k.",
+      "distractors": {
+        "1": "Daxili enerji mexaniki deyil.",
+        "2": "İki kinetik deyil.",
+        "3": "Qüvvə və təcil enerji deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F01-01-01-001"
+  },
+  {
+    "question": "Xarici müqavimət və sürtünmə qüvvələri nəzərə alınmadıqda, qapalı sistemdə tam mexaniki enerji haqqında hansı qanun doğrudur?",
+    "options": [
+      "Tam mexaniki enerjinin saxlanması qanunu (E_tam = const)",
+      "Enerjinin həmişə artması qanunu",
+      "Kinetik enerjinin sıfırlanması qanunu",
+      "Ağırlıq qüvvəsinin yox olması qanunu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tam mexaniki enerjini bilmək",
+    "explanation": {
+      "correct": "İzah: Sürtünmə olmadıqda sistemin tam mexaniki enerjisi sabit qalır (E_p + E_k = const). Bu, mexaniki enerjinin saxlanması qanunudur.",
+      "distractors": {
+        "1": "Enerji öz-özünə artmır.",
+        "2": "Kinetik sıfırlanmır.",
+        "3": "Ağırlıq yox olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F01-01-01-002"
+  },
+  {
+    "question": "Sərbəst düşən cisim aşağı endikcə onun potensial və kinetik enerjiləri necə dəyişir?",
+    "options": [
+      "Potensial enerji azalır, kinetik enerji eyni miqdarda artır",
+      "Potensial enerji artır, kinetik azalır",
+      "Hər iki enerji azalır",
+      "Hər iki enerji artır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tam mexaniki enerjini bilmək",
+    "explanation": {
+      "correct": "İzah: Cisim aşağı düşdükcə hündürlük azaldığı üçün E_p azalır, sürət artdığı üçün E_k artır. Potensial enerjinin azalması kinetik enerjinin artmasına çevrilir.",
+      "distractors": {
+        "1": "Yuxarı qalxdıqda tərsi olur.",
+        "2": "İkisi də azalmır.",
+        "3": "İkisi də artmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F01-01-01-003"
+  },
+  {
+    "question": "Riyazi rəqqas tarazlıq vəziyyətindən keçərkən onun hansı enerji növü maksimum olur?",
+    "options": [
+      "Kinetik enerjisi (E_k = max)",
+      "Potensial enerjisi (E_p = max)",
+      "Daxili enerjisi",
+      "Nüvə enerjisi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tam mexaniki enerjini bilmək",
+    "explanation": {
+      "correct": "İzah: Tarazlıq vəziyyətində hündürlük minimum (h = 0), sürət isə maksimum olur. Buna görə kinetik enerji maksimum, potensial enerji sıfır olur.",
+      "distractors": {
+        "1": "Potensial enerji kənar meyil nöqtələrində maksimumdur.",
+        "2": "Daxili enerji deyil.",
+        "3": "Nüvə enerjisi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F01-01-01-004"
+  },
+  {
+    "question": "Mühitdə sürtünmə qüvvəsi olduqda tam mexaniki enerji necə dəyişir?",
+    "options": [
+      "Mexaniki enerjinin bir hissəsi daxili (istilik) energiyə çevrilir və tam mexaniki enerji azalır",
+      "Tam mexaniki enerji artır",
+      "Tam mexaniki enerji tamamilə sabitleşir",
+      "Kinetik enerji sonsuzlaşır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tam mexaniki enerjini bilmək",
+    "explanation": {
+      "correct": "İzah: Sürtünmə qüvvəsi olduqda mexaniki iş mənfi olur və mexaniki enerji istiliyə çevrilərək azalır (bütün kainat üzrə ümumi enerji saxlanılsa da, tam mexaniki enerji azalır).",
+      "distractors": {
+        "1": "Artmır.",
+        "2": "Sürtünmədə mexaniki enerji sabit qalmır.",
+        "3": "Sonsuzlaşmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F01-01-01-005"
+  },
+  {
+    "question": "Kütləsi 2 kg olan cisim h = 10 m hündürlükdən sərbəst düşür. Yere dəyən andakı kinetik enerjisini hesablayın (g = 10 N/kg, sürtünmə nəzərə alınmır).",
+    "options": [
+      "200 C",
+      "100 C",
+      "400 C",
+      "20 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam enerjinin saxlanması qanununa görə E_k_max = E_p_max = mgh = 2 kg × 10 N/kg × 10 m = 200 C.",
+      "distractors": {
+        "1": "100 C 2-yə bölmə xətasıdır.",
+        "2": "400 C 2-yə vurmadır.",
+        "3": "20 C g-ni unutmaqdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_k_max = mgh",
+      "E_k_max = 2 × 10 × 10 = 200 C"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F02-02-02-006"
+  },
+  {
+    "question": "Kütləsi 1 kg olan cisim 20 m/s sürətlə şaquli yuxarı atılır. Cismin çata biləcəyi maksimum hündürlüyü tapın (g = 10 m/s²).",
+    "options": [
+      "20 m",
+      "40 m",
+      "10 m",
+      "200 m"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_k_max = E_p_max -> (mv²)/2 = mgh -> h = v² / (2g) = 20² / (2 × 10) = 400 / 20 = 20 m.",
+      "distractors": {
+        "1": "40 m 2g-yə bölməyib g-yə bölməkdir.",
+        "2": "10 m 2-yə bölmə xətasıdır.",
+        "3": "200 m kvadratı bölməməkdir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "calculation_error",
+        "3": "conceptual_error"
+      }
+    ],
+    "solution_steps": [
+      "h = v² / (2g)",
+      "h = 400 / 20 = 20 m"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F02-02-02-007"
+  },
+  {
+    "question": "Cismin potensial enerjisi E_p = 80 C, kinetik enerjisi E_k = 120 C-dur. Cismin tam mexaniki enerjisini tapın.",
+    "options": [
+      "200 C",
+      "40 C",
+      "9600 C",
+      "1.5 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam mexaniki enerji E_tam = E_p + E_k = 80 C + 120 C = 200 C.",
+      "distractors": {
+        "1": "40 C çıxma xətasıdır.",
+        "2": "9600 C vurma xətasıdır.",
+        "3": "1.5 C bölmədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "h = v² / (2g)",
+      "h = 400 / 20 = 20 m"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F02-02-02-008"
+  },
+  {
+    "question": "Sürtünməsiz mühitdə yayın ucundakı yükün rəqsi zamanı potensial enerjinin maksimum qiyməti 50 C-dur. Kinetik enerjinin maksimum qiyməti nə qədər olar?",
+    "options": [
+      "50 C",
+      "25 C",
+      "100 C",
+      "0 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam mexaniki enerjinin saxlanması qanununa görə, E_k_max = E_p_max = E_tam = 50 C.",
+      "distractors": {
+        "1": "25 C yarıya bölməkdir.",
+        "2": "100 C 2-yə vurmaqdır.",
+        "3": "0 sıfırlamaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "h = v² / (2g)",
+      "h = 400 / 20 = 20 m"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F02-02-02-009"
+  },
+  {
+    "question": "Şaquli yuxarı atılmış cismin trayektoriyasının orta nöqtəsində (h = h_max / 2) potensial enerjisi ilə kinetik enerjisi arasında münasibət necədir?",
+    "options": [
+      "E_p = E_k (bərabərdirlər)",
+      "E_p = 2 E_k",
+      "E_k = 2 E_p",
+      "E_p = 0"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qalxma hündürlüyünün yarısında (h_max / 2) potensial enerji tam enerjinin yarısına bərabər olur. Qalan yarı hissə kinetik enerji olduğu üçün E_p = E_k olur.",
+      "distractors": {
+        "1": "2 dəfə fərq tam hündürlükdə deyil.",
+        "2": "E_k 2 dəfə çox deyil.",
+        "3": "Potensial sıfır deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "h = v² / (2g)",
+      "h = 400 / 20 = 20 m"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F02-02-02-010"
+  },
+  {
+    "question": "Kütləsi 2 kg olan cisim h = 20 m hündürlükdən düşür. Hündürlüyün hansı qiymətində cismin kinetik enerjisi potensial enerjisindən 3 dəfə böyük olar (E_k = 3 E_p, g = 10 N/kg)?",
+    "options": [
+      "5 m",
+      "15 m",
+      "10 m",
+      "2.5 m"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_tam = E_p + E_k = E_p + 3E_p = 4E_p. mgh_max = 4 mgh -> h = h_max / 4 = 20 m / 4 = 5 m.",
+      "distractors": {
+        "1": "15 m E_p = 3 E_k olan haldır.",
+        "2": "10 m yarı yoldur (E_p = E_k).",
+        "3": "2.5 m 8-ə bölməkdir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_tam = 4 E_p",
+      "mgh_max = 4 mgh -> h = h_max / 4",
+      "h = 20 / 4 = 5 m"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F04-03-03-011"
+  },
+  {
+    "question": "Yaylı rəqqasın yükünün koordinatı x = X_m / 2 olduqda, yayın potensial enerjisinin tam mexaniki energiyə olan nisbətini (E_p / E_tam) tapın.",
+    "options": [
+      "1 / 4 (0.25)",
+      "1 / 2 (0.5)",
+      "3 / 4 (0.75)",
+      "1 / 8"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_p = kx²/2 = k(X_m/2)²/2 = (kX_m²/2) / 4 = E_tam / 4. Nisbət E_p / E_tam = 1/4 = 0.25.",
+      "distractors": {
+        "1": "1/2 koordinatı yarıya bölməklə enerjini də yarı sanmaqdır (kvadrat var!).",
+        "2": "3/4 kinetik enerjinin payıdır.",
+        "3": "1/8 3-cü dərəcədir."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_p = k(X_m / 2)² / 2 = E_tam / 4",
+      "E_p / E_tam = 1/4 = 0.25"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F04-03-03-012"
+  },
+  {
+    "question": "Kütləsi 5 kg olan cisim yerdən v₀ = 30 m/s sürətlə şaquli yuxarı atılır. h = 25 m hündürlükdə cismin kinetik enerjisini tapın (g = 10 N/kg).",
+    "options": [
+      "1000 C",
+      "1250 C",
+      "2250 C",
+      "500 C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_tam = (mv₀²)/2 = (5 × 30²)/2 = (5 × 900)/2 = 2250 C. h = 25 m-də E_p = mgh = 5 × 10 × 25 = 1250 C. Kinetik enerji E_k = E_tam - E_p = 2250 - 1250 = 1000 C.",
+      "distractors": {
+        "1": "1250 C potensial enerjinin qiymətidir.",
+        "2": "2250 C tam enerjidir.",
+        "3": "500 C hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "E_tam = (5 × 900) / 2 = 2250 C",
+      "E_p = 5 × 10 × 25 = 1250 C",
+      "E_k = 2250 - 1250 = 1000 C"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F04-03-03-013"
+  },
+  {
+    "question": "Hündürlüyü h = 5 m olan mail müstəvinin təpəsindən sükunətdən sürtünməsiz sürüşən cismin ətəyə çatdığı andakı sürətini tapın (g = 10 N/kg).",
+    "options": [
+      "10 m/s",
+      "100 m/s",
+      "5 m/s",
+      "14.1 m/s"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E_p = E_k -> mgh = (mv²)/2 -> v = √(2gh) = √(2 × 10 × 5) = √100 = 10 m/s.",
+      "distractors": {
+        "1": "100 m/s kök almamaqdır.",
+        "2": "5 m/s 2g-yə vurmamaqdır.",
+        "3": "14.1 m/s hesablama xətasıdır."
+      }
+    },
+    "distractor_diagnostics": [
+      {
+        "1": "typical_mistake",
+        "2": "conceptual_error",
+        "3": "calculation_error"
+      }
+    ],
+    "solution_steps": [
+      "v = √(2gh)",
+      "v = √(2 × 10 × 5) = √100 = 10 m/s"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F04-03-03-014"
+  },
+  {
+    "question": "Real şəraitdə havanın müqaviməti nəzərə alındıqda, yuxarı atılan cismin yere qayıtdığı andakı v_son sürəti atıldığı v_başlanğıc sürəti ilə necə müqayisə olunur?",
+    "options": [
+      "v_son < v_başlanğıc (yere daha kiçik sürətlə dəyir)",
+      "v_son = v_başlanğıc (eyni sürətlə dəyir)",
+      "v_son > v_başlanğıc (daha böyük sürətlə dəyir)",
+      "v_son = 0 (düşməmiş sönür)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tam mexaniki enerjinin saxlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Havanın müqaviməti mənfi iş görür və mexaniki enerjinin bir hissəsini istiliyə çevirir (E_tam azalır). Buna görə yere çatan andakı kinetik enerji başlanğıcdan az olur və v_son < v_başlanğıc alınır.",
+      "distractors": {
+        "1": "Bərabərlik yalnız vakuumda (sürtünməsiz) olur.",
+        "2": "Daha böyük ola bilməz.",
+        "3": "Sürət sıfır olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [
+      "v = √(2gh)",
+      "v = √(2 × 10 × 5) = √100 = 10 m/s"
+    ],
+    "topic": "2.5 Tam mexaniki enerji",
+    "cat": "Fizika 8",
+    "passport_id": "08-007-0205-05F04-03-03-015"
+  }
+]

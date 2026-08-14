@@ -1,0 +1,456 @@
+[
+  {
+    "question": "Elektronun hər hansı bir anda tapılma ehtimalının ən yüksək olduğu fəza bölgəsi necə adlanır?",
+    "options": [
+      "Orbital",
+      "Nüvə",
+      "Proton",
+      "Neytron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Orbital anlayışını bilmək",
+    "explanation": {
+      "correct": "İzah: Elektronun nüvə ətrafında tapılma ehtimalının ən böyük (90%-dən çox) olduğu fəza hissəsi atom orbitalı adlanır.",
+      "distractors": {
+        "1": "Nüvə proton və neytronlardan ibarətdir.",
+        "2": "Proton müsbət yüklü zərrəcikdir.",
+        "3": "Neytron yüksüz zərrəcikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K01-01-01-001"
+  },
+  {
+    "question": "s-orbitalı fəzada hansı həndəsi formaya malikdir?",
+    "options": [
+      "Kürə şəkilli",
+      "Hantel (səkkiz) şəkilli",
+      "Mürəkkəb xaç şəkilli",
+      "Müstəvi şəkilli"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "s-orbitalının formasını bilmək",
+    "explanation": {
+      "correct": "İzah: s-orbitalları nüvə ətrafında sferik (kürə) formasına malikdir və hər bir energetik səviyyədə 1 ədəd olur.",
+      "distractors": {
+        "1": "Hantel forması p-orbitalına aiddir.",
+        "2": "Mürəkkəb xaç d-orbitalına aiddir.",
+        "3": "Müstəvi forması orbital deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K01-01-01-002"
+  },
+  {
+    "question": "p-orbitalları bir energetik yarımsəviyyədə maksimal neçə elektron tuta bilər?",
+    "options": [
+      "6 elektron",
+      "2 elektron",
+      "10 elektron",
+      "14 elektron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "p-yarımsəviyyəsinin elektron tutumunu bilmək",
+    "explanation": {
+      "correct": "İzah: p-yarımsəviyyəsində 3 orbital (px, py, pz) var, hər birində maksimal 2 elektron olmaqla cəmi 6 elektron yerləşə bilər.",
+      "distractors": {
+        "1": "2 elektron s-yarımsəviyyəsinin tutumudur.",
+        "2": "10 elektron d-yarımsəviyyəsinə aiddir.",
+        "3": "14 elektron f-yarımsəviyyəsinə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K01-01-01-003"
+  },
+  {
+    "question": "Pauli prinsipinə görə bir orbitalda maksimal neçə elektron yerləşə bilər?",
+    "options": [
+      "Əks spinli maksimal 2 elektron",
+      "Eyni spinli 4 elektron",
+      "Maksimal 6 elektron",
+      "Maksimal 8 elektron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Pauli prinsipini bilmək",
+    "explanation": {
+      "correct": "İzah: Pauli prinsipinə əsasən, bir atom orbitalında spintləri əks olan maksimal 2 elektron yerləşə bilər (↑↓).",
+      "distractors": {
+        "1": "Eyni spinli elektronlar bir orbitalda ola bilməz.",
+        "2": "6 elektron p-yarımsəviyyəsinə aiddir.",
+        "3": "8 elektron xarici təbəqənin oktet qaydasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K01-01-01-004"
+  },
+  {
+    "question": "Neytral atomda protonların sayısı nəyə bərabərdir?",
+    "options": [
+      "Elektronların sayına",
+      "Neytronların sayına",
+      "Nüvənin kütləsinə",
+      "Orbital sayına"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Atomun neytrallıq şərtini bilmək",
+    "explanation": {
+      "correct": "İzah: Atom elektrik cəhətdən neytral zərrəcik olduğu üçün müsbət yüklü protonların sayısı mənfi yüklü elektronların sayına bərabərdir (Z = e-).",
+      "distractors": {
+        "1": "Neytronların sayı protonla eyni olmaq məcburiyyətində deyil.",
+        "2": "Kütlə proton + neytrondur.",
+        "3": "Orbital sayı elektron sayının yarısı və ya çoxudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K01-01-01-005"
+  },
+  {
+    "question": "Silisium (14Si) atomunun elektron formulunu müəyyən edin.",
+    "options": [
+      "1s² 2s² 2p⁶ 3s² 3p²",
+      "1s² 2s² 2p⁶ 3s⁴",
+      "1s² 2s² 2p⁶ 3s¹ 3p³",
+      "1s² 2s² 2p⁸"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "14Si atomunun elektron formulunu yazmaq",
+    "explanation": {
+      "correct": "İzah: Z = 14 olan Silisium üçün elektronlar sırasıyla: K(1s²), L(2s² 2p⁶), M(3s² 3p²) şəklində paylanır (cəmi 14 elektron).",
+      "distractors": {
+        "1": "3s yarımsəviyyəsi maksimal 2 elektron tuta bilər.",
+        "2": "Həyəcanlanmış vəziyyətdir.",
+        "3": "2p maksimal 6 elektron tuta bilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K02-02-02-006"
+  },
+  {
+    "question": "Fosfor (15P) atomunun xarici energetik səviyyəsində (3-cü səviyyə) neçə cütləşməmiş elektron vardır?",
+    "options": [
+      "3 cütləşməmiş elektron",
+      "1 cütləşməmiş elektron",
+      "5 cütləşməmiş elektron",
+      "0 cütləşməmiş elektron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Hund qaydasına əsasən cütləşməmiş elektron sayını tapmaq",
+    "explanation": {
+      "correct": "İzah: 15P-nin xarici təbəqəsi 3s² 3p³ formadadır. Hund qaydasına görə 3p³ elektronları 3 ayrı orbitalda 3 cütləşməmiş elektron (↑ ↑ ↑) əmələ gətirir.",
+      "distractors": {
+        "1": "1 cütləşməmiş elektron 3p¹-də olar.",
+        "2": "5 valent elektronunun 2-si cütləşmişdir (3s²).",
+        "3": "Cütləşməmiş elektron var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K02-02-02-007"
+  },
+  {
+    "question": "n = 3 energetik səviyyəsində maksimal neçə elektron yerləşə bilər? (N = 2n² düsturuna əsasən)",
+    "options": [
+      "18 elektron",
+      "8 elektron",
+      "32 elektron",
+      "2 elektron"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Energetik səviyyənin maksimal elektron tutumunu hesablamaq",
+    "explanation": {
+      "correct": "İzah: N = 2n² düsturuna görə 3-cü səviyyə üçün (n=3) N = 2 × 3² = 2 × 9 = 18 elektron yerləşə bilər (3s² 3p⁶ 3d¹⁰).",
+      "distractors": {
+        "1": "8 elektron n=2 səviyyəsinə aiddir.",
+        "2": "32 elektron n=4 səviyyəsinə aiddir.",
+        "3": "2 elektron n=1 səviyyəsinə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K02-02-02-008"
+  },
+  {
+    "question": "Kükürd (16S) atomunun S²⁻ ionuna çevrilməsi zamanı onun elektron formulu necə dəyişir?",
+    "options": [
+      "Xarici təbəqə 3s² 3p⁴-dən 3s² 3p⁶-ya keçir (təbəqə 8 elektrona tamamlanır)",
+      "Xarici təbəqə 3s² 3p² olur",
+      "Protonların sayısı 18 olur",
+      "Elektronların sayısı 14 olur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İon əmələgəlmədə elektron konfiqurasiyasının dəyişməsini izah etmək",
+    "explanation": {
+      "correct": "İzah: 16S atomu 2 elektron qəbul edərək S²⁻ ionuna çevrilir (16 + 2 = 18 e-) və təsirsiz qaz olan Ar-ın (3s² 3p⁶) oktet strukturunu alır.",
+      "distractors": {
+        "1": "Elektron itirmir, qəbul edir.",
+        "2": "Proton sayı dəyişmir (16 qalır).",
+        "3": "Elektron sayı 18 olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K02-02-02-009"
+  },
+  {
+    "question": "Hund qaydasına görə eyni yarımsəviyyədə olan orbitallara elektronlar necə dolur?",
+    "options": [
+      "Əvvəlcə hər orbitala bir elektron (eyni spinli), sonra ikinci elektronlar cütləşir",
+      "Birinci orbital dərhal iki elektronla dolur, digərləri boş qalır",
+      "Elektronlar random dolur",
+      "Yalnız əks spinlərlə dolur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Hund qaydasını şərh etmək",
+    "explanation": {
+      "correct": "İzah: Hund qaydasına əsasən, eyni yarımsəviyyənin orbitallarına elektronlar əvvəlcə parallel (eyni spinli) tək-tək yerləşir, yalnız bundan sonra cütləşmə başladılır.",
+      "distractors": {
+        "1": "Bir orbital dərhal cütləşmir.",
+        "2": "Random deyil energetik sərfəlidir.",
+        "3": "Əvvəlcə tək-tək dolur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K02-02-02-010"
+  },
+  {
+    "question": "X³⁺ ionunda 23 elektron var. Neytral X atomunun qısa elektron formulunu təhlil edin.",
+    "options": [
+      "[Ar] 3d⁵ 4s¹",
+      "[Ar] 4s² 4p⁴",
+      "[Ne] 3s² 3p⁴",
+      "[Ar] 3d⁶ 4s²"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İonun elektron sayına görə neytral atomun elektron konfiqurasiyasını müəyyən etmək",
+    "explanation": {
+      "correct": "İzah: X³⁺ ionunda 23 elektron varsa, neytral atomda Z = 23 + 3 = 26 proton var (Fe). 26Fe atomunun elektron formulu [Ar] 3d⁶ 4s²-dir.",
+      "distractors": {
+        "0": "[Ar] 3d⁵ 4s¹ 24Cr atomuna aiddir.",
+        "1": "Elektron sayı yanlışdır.",
+        "2": "Z=16 kükürddür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [
+      "Addım 1: Z = e⁻ + 3 = 23 + 3 = 26",
+      "Addım 2: 26-cı element Dəmir (Fe) atomudur.",
+      "Addım 3: Elektron paylanması [Ar] 3d⁶ 4s²."
+    ],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K04-03-03-011"
+  },
+  {
+    "question": "Mis (29Cu) atomunun elektron paylanmasında 'elektron sürüşməsi' (keçidi) hadisəsini təhlil edin.",
+    "options": [
+      "4s² 3d⁹ əvəzinə energetik əlverişli 4s¹ 3d¹⁰ konfiqurasiyası əmələ gəlir",
+      "4s² 3d¹⁰ olur",
+      "3d orbitalı boş qalır",
+      "4p yarımsəviyyəsinə 2 elektron keçir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron sürüşməsi (keçidi) hadisəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: d¹⁰ tam dolmuş d-yarımsəviyyəsi d⁹-dan daha sabit olduğundan, 4s orbitalından 1 elektron 3d-yə keçərək [Ar] 3d¹⁰ 4s¹ daxili sabitlik yaradır.",
+      "distractors": {
+        "1": "Cəmi 29 elektron var, 4s² 3d¹⁰ 30 e- edər.",
+        "2": "3d orbitalı dolur.",
+        "3": "4p-yə elektron keçmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K04-03-03-012"
+  },
+  {
+    "question": "Neytral atomun əsas və həyəcanlanmış vəziyyətləri arasındakı fərqi karbon (6C) atomu misalında təhlil edin.",
+    "options": [
+      "Əsas vəziyyətdə (2s² 2p²) 2 cütləşməmiş elektron var, həyəcanlanmış vəziyyətdə (2s¹ 2p³) 4 cütləşməmiş elektron olur və valentlik IV olur",
+      "Əsas vəziyyətdə valentlik IV-dür",
+      "Həyəcanlandıqda proton sayı artır",
+      "Həyəcanlandıqda elektronlar nüvəyə düşür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Atomun həyəcanlanmış vəziyyətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Karbon atomu enerji qəbul etdikdə 2s²-dəki 1 elektron 2p orbitalına keçir (2s¹ 2p³). Nəticədə 4 cütləşməmiş elektron yarandığından Karbon IV valentli olur.",
+      "distractors": {
+        "1": "Əsas vəziyyətdə 2 cütləşməmiş elektron olduğu üçün II valentlidir.",
+        "2": "Proton sayı sabiddir.",
+        "3": "Elektronlar daxilə düşmür üst səviyyəyə həyəcanlanır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K04-03-03-013"
+  },
+  {
+    "question": "X²⁻ ionunun elektron formulu ... 3s² 3p⁶ ilə bitir. X atomunun proton sayını və dövri cədvəldə mövqeyini təhlil edin.",
+    "options": [
+      "Proton sayı 16 (16S), 3-cü dövr, VI A qrupu",
+      "Proton sayı 18 (18Ar), 3-cü dövr, VIII A qrupu",
+      "Proton sayı 20 (20Ca), 4-cü dövr, II A qrupu",
+      "Proton sayı 14 (14Si), 3-cü dövr, IV A qrupu"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İonun elektron konfiqurasiyasından neytral atomun yerini müəyyən etmək",
+    "explanation": {
+      "correct": "İzah: ... 3s² 3p⁶ daxil cəmi 18 elektron deməkdir. X²⁻ 2 elektron almış halda 18 e- varsa, neytral atomun proton sayı Z = 18 - 2 = 16-dır (Kükürd). 16S 3-cü dövr VI A qrupundadır.",
+      "distractors": {
+        "1": "18 proton neytral Ar-dadır.",
+        "2": "20Ca kation əmələ gətirər.",
+        "3": "14Si 14 protona malikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K04-03-03-014"
+  },
+  {
+    "question": "17Cl və 17Cl⁻ zərrəciklərinin radiuslarını müqayisə edin və səbəbini təhlil edin.",
+    "options": [
+      "r(Cl⁻) > r(Cl), çünki mənfi ionda elektronlararası itələmə artır və nüvənin elektronlara cəzb etməsi zəifləyir",
+      "r(Cl) > r(Cl⁻), çünki ion kiçilir",
+      "Radiusları eynidir",
+      "r(Cl⁻) iki dəfə kiçikdir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Atom və anion radiuslarının nisbətini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Neytral atom elektron qəbul etdikdə (anion) elektronların bir-birini itələməsi artır və nüvə yükü eyni qaldığından elektron buludu genişlənir: r(anion) > r(atom).",
+      "distractors": {
+        "1": "Anion kiçilmir, böyüyür (Kation kiçilir).",
+        "2": "Radiuslar eyni ola bilməz.",
+        "3": "Kiçik deyil böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1.1 Atomun elektron örtüyü",
+    "cat": "Kimya 8",
+    "passport_id": "08-008-0101-01K04-03-03-015"
+  }
+]
