@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Kompüter proqramı nədir?",
+    "options": [
+      "Müəyyən məsələni həll etmək üçün kompüterin anladığı proqramlaşdırma dilində yazılmış əmrlər ardıcıllığı",
+      "Kompüterin fiziki korpusu",
+      "İnternet modemi",
+      "Kompüter monitoru"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Proqram məsələnin alqoritminin kompüterin icra edə biləcəyi formal proqramlaşdırma dilində (Python, C++) təsviridir.",
+      "distractors": {
+        "1": "Korpus apparatdır.",
+        "2": "Modem şəbəkə qurğusudur.",
+        "3": "Monitor xaricetmə qurğusudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K01-01-01-001"
+  },
+  {
+    "question": "Proqramlaşdırma mühitində yazılmış proqram kodunu maşın dilinə çevirən proqram proqram təminatı necə adlanır?",
+    "options": [
+      "Arxivator",
+      "Antivirus",
+      "Mətn redaktoru",
+      "Translyator (Kompilyator və ya İnterpretator)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Translyator yüksək səviyyəli proqramlaşdırma dilində yazılmış koda maşın koda (0 və 1) çevirir.",
+      "distractors": {
+        "0": "Arxivator sıxlaşdırır.",
+        "1": "Antivirus qoruyur.",
+        "2": "Mətn redaktoru yazmaq üçündür çevirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K01-01-01-002"
+  },
+  {
+    "question": "İnterpretator ilə Kompilyator arasındakı əsas fərq nədir?",
+    "options": [
+      "İnterpretator virusdur",
+      "Kompilyator mətni silir",
+      "Fərq yoxdur",
+      "İnterpretator kodu SƏTİR-SƏTİR oxuyub dərhal icra edir, Kompilyator isə BÜTÜN proqramı birbaşa maşın koda çevirir"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python interpretasiya olunan dildir (hər sətir ayrı icra olunur); C/C++ isə kompilyasiya olunur (bütün proqram .exe faylına çevrilir).",
+      "distractors": {
+        "0": "Virus deyil translyatordur.",
+        "1": "Mətni silmir.",
+        "2": "Çevrilmə mexanizmi fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K01-01-01-003"
+  },
+  {
+    "question": "Proqramın hazırlanmasının ilk və ən vacib mərhələsi hansıdır?",
+    "options": [
+      "Klaviaturanı dəyişmək",
+      "Kodu çapa vermək",
+      "Məsələnin qoyuluşu və alqoritminin qurulması",
+      "Kompüteri söndürmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Proqram yazılmazdan əvvəl məsələnin şərti, giriş-çıxış verilənləri müəyyən edilməli və həll alqoritmi blok-sxemlə tənzimlənməlidir.",
+      "distractors": {
+        "0": "Aparat dəyişikliyidir.",
+        "1": "Çap ən son addımdır.",
+        "3": "İş rejimi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K01-01-01-004"
+  },
+  {
+    "question": "Proqramlaşdırmada Sintaksis xətası (Syntax Error) nə zaman baş verir?",
+    "options": [
+      "Kompüter cərəyandan ayrıldıqda",
+      "Məntiqi səhv olduqda",
+      "Proqramlaşdırma dilinin qrammatika və yazılış qaydaları pozulduqda",
+      "Düzgün nəticə alındıqda"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sintaksis xətası dildəki açar sözlərin yanlış yazılması, mötərizənin və ya dırnaq işarəsinin unudulması zamanı baş verir.",
+      "distractors": {
+        "0": "Fiziki xətadır.",
+        "1": "Məntiqi xəta (Semantic Error) proqramı dayandırmır yanlış cavab verir.",
+        "3": "Xəta yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K01-01-01-005"
+  },
+  {
+    "question": "IDE (Integrated Development Environment - İnteqrasiyalanmış İşləmə Mühiti) nədir?",
+    "options": [
+      "Antivirus proqramı",
+      "Mətn redaktoru, translyator və sazlayıcını (debugger) özündə birləşdirən proqramlaşdırma mühiti",
+      "Veb brauzer",
+      "Əməliyyat sistemi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IDLE, PyCharm, VS Code kimi IDE-lər proqramçıya kod yazmaq, işə salmaq və xətaları düzəltmək üçün kompleks mühit verir.",
+      "distractors": {
+        "0": "Qoruma proqramıdır.",
+        "2": "Veb səhifə açandır.",
+        "3": "Sistem proqramıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K02-02-02-006"
+  },
+  {
+    "question": "Proqramın sazlanması (Debugging) mərhələsində nə edilir?",
+    "options": [
+      "İnternet sürətləndirilir",
+      "Proqram silinir",
+      "Yalnız şrift rəngi dəyişdirilir",
+      "Proqramdakı sintaktik və məntiqi xətalar tapan alətlərlə aşkar edilib aradan qaldırılır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Debugging (sazlama) koddakı \"bug\"-ların (xətaların) izlənməsi və təmizlənməsi prosesidir.",
+      "distractors": {
+        "0": "Şəbəkəyə aid deyil.",
+        "1": "Silinmir düzəldilir.",
+        "2": "Dizayn deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K02-02-02-007"
+  },
+  {
+    "question": "Məntiqi xətanın (Logical Error) sintaktik xətadan fərqini təhlil edin.",
+    "options": [
+      "Məntiqi xəta proqramı dərhal dayandırır",
+      "Məntiqi xəta olmur",
+      "İki xəta eynidir",
+      "Məntiqi xətada proqram xəta vermədən işləyir, lakin riyazi/məntiqi alqoritm səhv olduğu üçün YANLIŞ NƏTİCƏ verir"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Məsələn, sahanı tapmaq üçün a*b əvəzinə a+b yazılarsa, translyator xəta vermir, lakin nəticə yanlış olur (Məntiqi xəta).",
+      "distractors": {
+        "0": "Sintaktik xəta dayandırır.",
+        "1": "Olur.",
+        "2": "Fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K02-02-02-008"
+  },
+  {
+    "question": "High-Level (Yüksək səviyyəli) proqramlaşdırma dillərinin (Python, Java) Low-Level (Aşağı səviyyəli - Assemly) dillərdən üstünlüyü nədir?",
+    "options": [
+      "İnsan dilinə (ingiliscəyə) yaxın və oxunması, yazılması, öyrənilməsi çox asan olması",
+      "Yalnız 0 və 1-lərlə yazılması",
+      "Fiziki maşına daha yaxın olması",
+      "İnterpretatora ehtiyac olmaması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Yüksək səviyyəli dillər insan mühakiməsinə yaxındır; translyator onu maşın dilinə tərcümə edir.",
+      "distractors": {
+        "1": "Maşın dilidir.",
+        "2": "Aşağı səviyyəli dil maşına yaxındır.",
+        "3": "Translyator lazımdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K02-02-02-009"
+  },
+  {
+    "question": "Proqram təminatının həyat dövründə 'Testləmə' (Testing) mərhələsinin məqsədi nədir?",
+    "options": [
+      "Proqramı satmaq",
+      "Kompüteri yeniləmək",
+      "Kodu silmək",
+      "Proqramın müxtəlif daxil olan verilənlər (sərhəd hallar) altında düzgün işlədiyini yoxlamaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Testləmə mərhələsində proqrama müxtəlif test verilənləri (düzgün, mənfi, sıfır, səhv simvollar) daxil edilərək etibarlılığı yoxlanılır.",
+      "distractors": {
+        "0": "Satış kommersiyadır.",
+        "1": "Aparat güncəlləməsidir.",
+        "2": "Silmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K02-02-02-010"
+  },
+  {
+    "question": "Proqramlaşdırmada alqoritmin 'Blok-sxem' şəklində təsvirinin proqramçı üçün əhəmiyyətini təhlil edin.",
+    "options": [
+      "Məsələnin həll addımlarını vizual həndəsi fiqurlarla (düzbucaqlı, romb, paralelogram) aydın görməyə və kodu rahat yazmağa imkan verməsi",
+      "Blok-sxem proqramı avtomatik icra edir",
+      "Heç bir əhəmiyyəti yoxdur",
+      "Blok-sxem yalnız dizayner üçündür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Blok-sxem alqoritmin strukturu (giriş, əməliyyat, şərt, dövr, çıxış) haqqında aydın vizual xəritə yaradır.",
+      "distractors": {
+        "1": "İcra etmir insana göstərir.",
+        "2": "Böyük əhəmiyyəti var.",
+        "3": "Proqramçı üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K04-03-03-011"
+  },
+  {
+    "question": "Açıq mənbəli (Open Source) proqram təminatı prinsiplərini təhlil edin.",
+    "options": [
+      "Yalnız pul xərclənərək alınması",
+      "Kodun gizli saxlanması",
+      "Kodun dəyişdirilməsinin qadağan olunması",
+      "Proqramın ilkin kodlarının (Source Code) istənilən istifadəçi üçün açıq, pulsuz və təkmilləşdirilə bilən olması (məs. Python, Linux)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Open Source icma tərəfindən kodların sərbəst inkişaf etdirilməsinə və audit olunmasına imkan verir.",
+      "distractors": {
+        "0": "Açıq mənbə pulsuzdur.",
+        "1": "Proprietary (qapalı) proqramlardır.",
+        "2": "Dəyişdirməyə icazə verilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K04-03-03-012"
+  },
+  {
+    "question": "Proqram daxilində 'Şərhlər' (Comments - Python-da # işarəsi) nə üçün istifadə olunur?",
+    "options": [
+      "Translyator tərəfindən nəzərə alınmayan, kodun mənasını proqramçının özü və başqaları üçün izah edən mətni yazmaq üçün",
+      "Proqramı sürətləndirmək üçün",
+      "Kompüterin yaddaşını artırmaq üçün",
+      "Ekrana yazı çıxarmaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şərhlər proqramın oxunmasını asanlaşdırır, icra zamanı nəzərə alınmır (ignore olunur).",
+      "distractors": {
+        "1": "Sürətə aid deyil.",
+        "2": "Yaddaş artırmır.",
+        "3": "Ekrana print() çıxarır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K04-03-03-013"
+  },
+  {
+    "question": "Proqram kodunun strukturlaşdırılmasında 'Obyektiv Yönümlü Proqramlaşdırma' (OOP) yanaşmasının mahiyyəti nədir?",
+    "options": [
+      "Yalnız 1 sətir kod yazmaq",
+      "Bütün dəyişənləri silmək",
+      "Yalnız xətti kod yazmaq",
+      "Proqramı real aləmdəki obyektlərə (xassə və üsullara malik siniflərə) bölərək mürəkkəb sistemləri modullaşdırmaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: OOP (Object-Oriented Programming) verilənləri və funksiyaları obyekt daxilində (Class) kapsullaşdırır.",
+      "distractors": {
+        "0": "Mənasızdır.",
+        "1": "Silmir.",
+        "2": "Prosedur yanaşmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K04-03-03-014"
+  },
+  {
+    "question": "Süni intellekt və böyük məlumatlar əsrində Python dilinin proqramlaşdırma dünyasında lider olmasının elmi-texniki səbəblərini qiymətləndirin.",
+    "options": [
+      "Yalnız 1 kompüterdə işləməsi",
+      "Sintaksisinin sadəliyi, çoxlu zəngin kitabxanalarının (NumPy, Pandas, TensorFlow) olması və universal çevikliyi",
+      "Python-un ən qədim dil olması",
+      "Qrafik interfeysinin olmaması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqram təminatı hazırlanması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python sadə sintaksisi və nəhəng elmi kitabxana ekosistemi sayəsində AI/ML və Data Science sahələrində 1 nömrəli dildir.",
+      "distractors": {
+        "0": "Kross-platformadır.",
+        "2": "1991-ci il dilidir ən qədim deyil (Fortran qədimdir).",
+        "3": "GUI var (Tkinter, PyQt)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "8. Proqram necə hazırlanır",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0308-08K04-03-03-015"
+  }
+]

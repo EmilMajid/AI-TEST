@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Kompüter daxil edildikdə ekranda görünən əsas iş sahəsi (interfeys) necə adlanır?",
+    "options": [
+      "İşçi cədvəl",
+      "İş masası (Desktop)",
+      "BIOS",
+      "Fayl meneceri"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Əməliyyat sisteminin istifadəçi ilə qarşılıqlı əlaqə yaradan əsas visual iş sahəsi İş masası (Desktop) adlanır.",
+      "distractors": {
+        "0": "İşçi cədvəl Excel-dədir.",
+        "2": "BIOS aparatura sistemidir.",
+        "3": "Fayl meneceri papka açandır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K01-01-01-001"
+  },
+  {
+    "question": "Windows əməliyyat sistemində İş masasının boş yerində siçanın sağ düyməsini basdıqda açılan menyu necə adlanır?",
+    "options": [
+      "Sistem menyusu",
+      "Fayl menyusu",
+      "Kontekst menyusu (Context menu)",
+      "Baş menyu (Start)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Siçanın sağ düyməsi seçilmiş obyektə və ya sahəyə aid xassələri və əmrləri göstərən Kontekst menyusunu açır.",
+      "distractors": {
+        "0": "Pəncərə başlığındadır.",
+        "1": "Proqramın daxilindədir.",
+        "3": "Start düyməsi ilə açılır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K01-01-01-002"
+  },
+  {
+    "question": "İş masasında fon şəklini (Wallpaper), ekran qoruyucusunu (Screen Saver) və pəncərə rənglərini dəyişmək üçün kontekst menyusundan hansı əmr seçilir?",
+    "options": [
+      "New (Yarat)",
+      "Personalize (Fərdiləşdirmə)",
+      "Refresh (Yenilə)",
+      "Display settings (Ekran parametrləri)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Personalize menyusu mövzuları, fon təsvirlərini, rəngləri və şriftləri tənzimləmək üçün istifadə edilir.",
+      "distractors": {
+        "0": "Yeni papka yaradır.",
+        "2": "Ekranı yeniləyir.",
+        "3": "Display settings ekran imkanlarını (monitor ölçüsünü) tənzimləyir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K01-01-01-003"
+  },
+  {
+    "question": "İş masasında ikonaların (piktoqramların) ölçüsünü dəyişmək (böyütmək, kiçiltmək) və ya onları tor boyunca düzmək üçün kontekst menyusunun hansı altmenyusu seçilir?",
+    "options": [
+      "Properties (Xassələr)",
+      "Sort by (Nizamla)",
+      "Paste (Yapışdır)",
+      "View (Görünüş)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: View (Görünüş) altmenyusunda Large/Medium/Small icons və Auto arrange icons parametrləri yerləşir.",
+      "distractors": {
+        "0": "Properties məlumat verir.",
+        "1": "Sort by ad, ölçü, tarixə görə sıralayır.",
+        "2": "Yapışdırma buferdən kopyalayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K01-01-01-004"
+  },
+  {
+    "question": "İş masasındakı simvolların Ad, Ölçü, Element növü və Dəyişdirilmə tarixinə görə sıralanması üçün hansı əmr istifadə olunur?",
+    "options": [
+      "View (Görünüş)",
+      "Refresh",
+      "Personalize",
+      "Sort by (Nizamla)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sort by menyusu obyektləri Name, Size, Item type və Date modified üzrə avtomatik sıralayır.",
+      "distractors": {
+        "0": "View ölçünü dəyişir.",
+        "1": "Refresh yeniləyir.",
+        "2": "Personalize görünüş dizaynıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K01-01-01-005"
+  },
+  {
+    "question": "Qısayol (Shortcut / Ярлык) piktoqramının adi fayl və ya papka ikonasından əsas visual fərqi nədir?",
+    "options": [
+      "Dairəvi olmasında",
+      "İkonanın sol aşağı küncündə kiçik ox işarəsinin olmasında",
+      "Qırmızı rəngdə olmasında",
+      "Adının olmamasında"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qısayol (yarliq) orijinal fayla keçid göstərən kiçik nisbi keçid faylıdır və küncündə bükülmüş ox işarəsi ilə seçilir.",
+      "distractors": {
+        "0": "Formayla bağlı deyil.",
+        "2": "Rənglə bağlı deyil.",
+        "3": "Adı olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K02-02-02-006"
+  },
+  {
+    "question": "İş masasındakı Qısayol (Shortcut) silindikdə orijinal proqram və ya fayl necə təsirlənir?",
+    "options": [
+      "Orijinal fayl da silinir",
+      "Kompüter format olunur",
+      "Orijinal fayl Silinmir, yerində qalır və zərər görmür",
+      "Prosessordan silinir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qısayol yalnız ünvan keçididir; onu silmək diskdəki əsas orijinal proqrama heç bir təsir etmir.",
+      "distractors": {
+        "0": "Silinmir, yalnız keçid silinir.",
+        "1": "Format olunmur.",
+        "3": "Prosessora aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K02-02-02-007"
+  },
+  {
+    "question": "Windows-da Tapşırıq paneli (Taskbar) ekranın hansı hissəsində yerləşir və funksiyası nədir?",
+    "options": [
+      "Yalnız şkilləri göstərir",
+      "Adətən aşağı hissədə yerləşir; Baş menyunu, açıq pəncərələri və bildiriş sahəsini (Tray) əks etdirir",
+      "Ekranda görünmür",
+      "Yaddaşı sıxır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Taskbar (Tapşırıq paneli) açıq proqramlar arası keçidi və sistem saatı/şəbəkə bildirişlərini idarə edir.",
+      "distractors": {
+        "0": "İkonları göstərir.",
+        "2": "Görünür.",
+        "3": "Həcmə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K02-02-02-008"
+  },
+  {
+    "question": "Ekran göstəricisinin (Resolution - piksellərlə ölçüsü, məs. 1920x1080) dəyişdirilməsi nəyə təsir edir?",
+    "options": [
+      "İnternetin sürətinə",
+      "Faylların kütləsinə",
+      "Ekrana sığışan təsvirin netliyinə, dəqiqliyinə və obyetklərin böyüklük-kiçiklik nisbətinə",
+      "Printerin rənginə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ekran imkanı (Resolution) piksel sıxlığını artıraraq görünüşü daha şəffaf və net edir.",
+      "distractors": {
+        "0": "İnternetə aid deyil.",
+        "1": "Fayl həcminə aid deyil.",
+        "3": "Printerə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K02-02-02-009"
+  },
+  {
+    "question": "Vidcetlər (Widgets - Saat, Hava haqqında məlumat, Təqvim) İş masasında nə üçün istifadə olunur?",
+    "options": [
+      "Proqramlaşdırma dili yazmaq üçün",
+      "İstifadəçiyə cari dinamik məlumatları İş masasında canlı göstərmək üçün",
+      "Virus təmizləmək üçün",
+      "Kompüteri söndürmək üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Vidcetlər kiçik informativ panel proqramlarıdır (hava, valyuta, saat).",
+      "distractors": {
+        "0": "İnformasiya lövhəsidir.",
+        "2": "Antivirus deyil.",
+        "3": "Söndürmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K02-02-02-010"
+  },
+  {
+    "question": "Çoxlu açıq pəncərələr arasında keçid etmək üçün klaviaturada hansı qısayol kombinasiyası istifadə olunur?",
+    "options": [
+      "Alt + F4",
+      "Ctrl + C",
+      "Shift + Delete",
+      "Alt + Tab (və ya Win + Tab)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Alt+Tab pəncərələri cəld çevirir, Win+Tab isə Task View (Tapşırıq görünüşü) panelini açır.",
+      "distractors": {
+        "0": "Pəncərəni bağlamaq üçündür.",
+        "1": "Kopyalamaq üçündür.",
+        "2": "Səbətə atmadan birdəfəlik silmək üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K04-03-03-011"
+  },
+  {
+    "question": "Virtul İş masası (Virtual Desktops) funksiyasının istifadəçiyə verdiyi üstünlük nədir?",
+    "options": [
+      "Müxtəlif iş istiqamətləri (məsələn, Təhsil, Oyun, Şəxsi) üçün ayrı-ayrı müstəqil İş masaları yaradaraq pəncərələri qruplaşdırmaq",
+      "Faylları şifrələmək",
+      "Yeni monitor almaq",
+      "Operativ yaddaşı 2 dəfə artırmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Windows 10/11-də Virtual Desktops tək monitorda çoxlu iş mühitləri təşkil etməyə imkan verir.",
+      "distractors": {
+        "1": "Şifrələmə deyil.",
+        "2": "Aparat lazımdır olmur.",
+        "3": "Fiziki RAM-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K04-03-03-012"
+  },
+  {
+    "question": "Windows Qutusu (Recycle Bin - Zibil qutusu) İş masasında nə funksiya daşıyır?",
+    "options": [
+      "Yeni fayl yaratmaq",
+      "Silinmiş faylları müvəqqəti saxlamaq və ehtiyac olduqda onları əvvəlki yerinə bərpa etmək (Restore)",
+      "Faylları birdəfəlik məhv etmək",
+      "İnternetə yükəmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Delete ilə silinən obyektlər təmizlənənədək Zibil qutusunda qalır və bərpa oluna bilər.",
+      "distractors": {
+        "0": "Yaratmır.",
+        "2": "Empty Recycle bin ilə təmizlənir.",
+        "3": "Lokal sahədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K04-03-03-013"
+  },
+  {
+    "question": "Gecə rejimi (Night Light) funksiyasının İş masasında aktivləşdirilməsinin psixoloji və fizioloji təsirini təhlil edin.",
+    "options": [
+      "Mavi işığı məhdudlaşdıraraq ekranı isti rənglərə keçirmək, göz yorğunluğunu azaltmaq və yuxu hormonunu qorumaq",
+      "Monitorda rəngləri tam söndürmək",
+      "Ekranı böyütmək",
+      "Kompüteri sürətləndirmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Night Light spektri sarı/narıncı tonlara sürüşdürərək melanopsin kəskinliyini azaldır.",
+      "distractors": {
+        "1": "Rəngləri söndürmür.",
+        "2": "Ölçüyə aid deyil.",
+        "3": "Sürətə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K04-03-03-014"
+  },
+  {
+    "question": "İstifadəçi interfeysinin (UI/UX) fərdiləşdirilməsi və iş masasının ergonomik nizamlanmasının əmək məhsuldarlığına təsirini qiymətləndirin.",
+    "options": [
+      "İşçi alətlərə və fayllara cəld çıxışı təmin edərək vaxt itkisini kəskin azaldır və zehni konsentrasiyanı yüksəldir",
+      "Kompüteri zədələyir",
+      "Həç bir təsiri yoxdur",
+      "Məhsuldarlığı aşağı salır"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İş masasının parametrlərini və nizamlanmasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Nizamlanmış iş masası fayl axtarış vaxtını sıfırlayaraq konsentrasiyanı işə yönəldir.",
+      "distractors": {
+        "1": "Zədələmir.",
+        "2": "Təsiri böyükdür.",
+        "3": "Artırır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "14. İş masasının nizamlanması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0414-14K04-03-03-015"
+  }
+]

@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "MS Word mətn redaktorunda ən kiçik obyekt hansıdır?",
+    "options": [
+      "Səhifə",
+      "Abzas",
+      "Cədvəl",
+      "Simvol (Hərf, rəqəm, işarə)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mətn sənədinin ən təməl bölünməz obyekti 1 simvoldur.",
+      "distractors": {
+        "0": "Səhifə abzaslar toplusudur.",
+        "1": "Abzas simvollar toplusudur.",
+        "2": "Xüsusi obyektdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K01-01-01-001"
+  },
+  {
+    "question": "MS Word-də 'Enter' düyməsini basdıqda hansı obyekt yaradılır?",
+    "options": [
+      "Yeni səhifə",
+      "Yeni cədvəl",
+      "Yeni sənəd",
+      "Yeni abzas (Paragraph)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Enter düyməsi abzas sonu (¶) işarəsi qoyaraq yeni abzas yaradır.",
+      "distractors": {
+        "0": "Ctrl+Enter yeni səhifə yaradır.",
+        "1": "Insert Table ilə olur.",
+        "2": "Ctrl+N ilə olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K01-01-01-002"
+  },
+  {
+    "question": "MS Word sənədində səhifənin yuxarı və ya aşağı haşiyələrində bütün səhifələrdə təkrar olunan mətn/nömrələr necə adlanır?",
+    "options": [
+      "Hiperəlaqə",
+      "Abzas",
+      "Dipnot (Footnote)",
+      "Kolontitul (Header & Footer / Yuxarı və Aşağı sərlövhə)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Header & Footer hər səhifənin yuxarı/aşağı boşluqlarında kitabın adını, fəsil başlığını və ya səhifə nömrəsini göstərir.",
+      "distractors": {
+        "0": "Keçiddir.",
+        "1": "Mətn blokudur.",
+        "2": "Dipnot səhifə altındakı söz izahıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K01-01-01-003"
+  },
+  {
+    "question": "MS Word-də sənədə riyazi düstur və tənliklər əlavə etmək üçün hansı alət istifadə olunur?",
+    "options": [
+      "Equation (Düstur)",
+      "Drop Cap",
+      "WordArt",
+      "SmartArt"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Insert -> Equation aləti kəsr, kök, inteqral və matris kimi mürəkkəb riyazi düsturları redaktə edir.",
+      "distractors": {
+        "1": "Böyük ilk hərf üçündür.",
+        "2": "Dizaynlı mətn üçündür.",
+        "3": "İyerarxik sxemlər üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K01-01-01-004"
+  },
+  {
+    "question": "Abzasın ilk hərfinin böyük ölçüdə (2-3 sətir hündürlüyündə) tərtib edilməsi effekti necə adlanır?",
+    "options": [
+      "WordArt",
+      "Watermark",
+      "Drop Cap (Böyük baş hərf / İnisial)",
+      "Header"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Insert -> Drop Cap klassik kitab və jurnal tərtibatında abzasın ilk hərfindən iri nümayiş etdirir.",
+      "distractors": {
+        "0": "Bədii mətn стиlidir.",
+        "1": "Arxa fon su nişanəsidir.",
+        "3": "Kolontituldur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K01-01-01-005"
+  },
+  {
+    "question": "MS Word-də cədvəlin qonşu xanalarını birləşdirib tək xana etmək üçün hansı əmr istifadə olunur?",
+    "options": [
+      "AutoFit",
+      "Split Table",
+      "Split Cells (Xanaları böl)",
+      "Merge Cells (Xanaları birləşdir)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Layout -> Merge Cells seçilmiş iki və ya daha çox xananı vahid xanada birləşdirir.",
+      "distractors": {
+        "0": "Avtoölçüdür.",
+        "1": "Cədvəli 2 cədvələ ayırır.",
+        "2": "Split Cells xananı hissələrə bölür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K02-02-02-006"
+  },
+  {
+    "question": "MS Word sənədində mətnin arxa fonuna solğun mətn və ya loqo yerləşdirmək funksiyası necə adlanır?",
+    "options": [
+      "Page Color",
+      "Shading",
+      "Page Border",
+      "Watermark (Su nişanəsi)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Design -> Watermark sənədin nüsxələnməsini önləmək və ya konfidensiallıq üçün arxaya solğun yazi (məs. 'Məxfilidir') qoyur.",
+      "distractors": {
+        "0": "Səhifənin rəngidir.",
+        "1": "Mətn rəngləməsidir.",
+        "2": "Səhifə çərçivəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K02-02-02-007"
+  },
+  {
+    "question": "MS Word sənədində avtomatik Mündəricat (Table of Contents) yaratmaq üçün nə edilməlidir?",
+    "options": [
+      "Şəkilləri kopyalamaq",
+      "Cədvəl çəkmək",
+      "Bütün mətni silmək",
+      "Sənəddəki başlıqlara 'Heading 1', 'Heading 2' üslubları (Styles) vermək və References menyusundan Table of Contents seçmək"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Avtomatik mündəricat sənəd başlıqlarının Heading üslublarına söykənərək səhifə nömrələrini avtomatik tənzimləyir.",
+      "distractors": {
+        "0": "Şəkillə bağlı deyil.",
+        "1": "Manual cədvəl deyil.",
+        "2": "Mətni silmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K02-02-02-008"
+  },
+  {
+    "question": "MS Word-də mətnin formatını (şrift, ölçü, rəng) digər mətnlərə cəld köçürmək üçün hansı alət istifadə olunur?",
+    "options": [
+      "Format Painter (Format fırçası)",
+      "Find and Replace",
+      "Paste Special",
+      "Copy"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Home -> Format Painter (Ctrl+Shift+C / Ctrl+Shift+V) seçilmiş mətnin formatını başqa mətnlərə kopyalayır.",
+      "distractors": {
+        "1": "Əvəz etmədir.",
+        "2": "Xüsusi yapışdırır.",
+        "3": "Mətnin özünü kopyalayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K02-02-02-009"
+  },
+  {
+    "question": "MS Word proqramında mətn obyektinə hiperəlaqə (Hyperlink - Ctrl+K) əlavə etdikdə nə baş verir?",
+    "options": [
+      "Mətn çapa verilir",
+      "Mətn silinir",
+      "Mətnə kliklədikdə göstərilən veb səhifə, başqa sənəd və ya sənəddəki müəyyən yer açılır",
+      "Kompüter sönür"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hyperlink mətnə URL və ya daxili əlfəcin (Bookmark) keçidi bağlayır.",
+      "distractors": {
+        "0": "Çap etmir.",
+        "1": "Silmir.",
+        "3": "Söndürmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K02-02-02-010"
+  },
+  {
+    "question": "MS Word-də müəyyən səhifədə sütunların (Columns) sayını 1-dən 2-yə (qəzet/məqalə stilinə) çevirmək üçün hansı menyudan istifadə olunur?",
+    "options": [
+      "Insert -> Table",
+      "Home -> Paragraph",
+      "Design -> Page Color",
+      "Layout -> Columns (Düzən -> Sütunlar)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Layout -> Columns seçimi mətni 2, 3 və ya xüsusi enli sütunlar boyunca paylayır.",
+      "distractors": {
+        "0": "Table cədvəldir.",
+        "1": "Abzas tənzimləməsidir.",
+        "2": "Page Color rəngdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K04-03-03-011"
+  },
+  {
+    "question": "MS Word-də mətnin orfoqrafik və qrammatik xətalarını yoxlayan (Spelling & Grammar) qısayol düyməsi hansıdır?",
+    "options": [
+      "F1",
+      "F7",
+      "F12",
+      "F5"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F7 (və ya Review -> Spelling & Grammar) sənəddəki qırmızı və göy dalğalı xətlərlə qeyd olunan orfoqrafik və qrammatik xətaları yoxlayır.",
+      "distractors": {
+        "0": "F1 Kömək (Help) düyməsidir.",
+        "2": "F12 Save As düyməsidir.",
+        "3": "F5 Slayd nümayişidir (PowerPoint)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K04-03-03-012"
+  },
+  {
+    "question": "MS Word-də 'Mail Merge' (Məktəb/Məktub birləşdirməsi) funksiyasının korporativ üstünlüyü nədir?",
+    "options": [
+      "Email silmək",
+      "Şəkilləri sıxmaq",
+      "Vahid məktub şablonunu Excel bazasındakı yüzlərlə fərqli şəxs adlarına avtomatik fərdiləşdirərək göndərmək",
+      "Parol qoymaq"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mailings -> Mail Merge eyni bildiriş məktubunu bazadakı Ad, Soyad, Ünvan dəyişənləri ilə kütləvi avtomatlaşdırır.",
+      "distractors": {
+        "0": "Silmir.",
+        "1": "Şəkilə aid deyil.",
+        "3": "Şifrələmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K04-03-03-013"
+  },
+  {
+    "question": "MS Word sənədini təhlükəsizlik üçün `.pdf` (Portable Document Format) kimi yadda saxlamayın (Save As) üstünlüyü nədir?",
+    "options": [
+      "Mətni oxunmaz etməsi",
+      "Faylın başqa cihazlarda şriftlərinin və tərtibatının pozulmaması və mətnin təsadüfi redaktədən qorunması",
+      "Faylın həcminin 0 olması",
+      "Faylın silinməsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: PDF müstəqil universal standartdır, şriftləri daxilə gömür və struktur dəyişməsini önləyir.",
+      "distractors": {
+        "0": "Oxunur.",
+        "2": "Həcmi sıfır olmur.",
+        "3": "Silmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K04-03-03-014"
+  },
+  {
+    "question": "Müasir sənəd dövriyyəsində strukturlaşdırılmış mətn redaktoru obyektlərinin (şriftlər, abzaslar, mündəricat, kolontitul, cədvəl) standartlaşdırılmasının əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Dövlət və elmi standartlara (nəşriyyat standartları) cavab verən tam oxunaqlı, estetik və peşəkar sənədlərin yaradılmasını təmin etməsi",
+      "Mətni pozmaq üçün",
+      "Printerləri zədələmək üçün",
+      "Sənəd hazırlığını yavaşlatmaq üçün"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Mətn redaktorunun obyektlərini və tənzimləmələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Standartlaşdırılmış sənəd obyektləri informasiya mədəniyyətinin və kargüzarlığın əsas tələbidir.",
+      "distractors": {
+        "1": "Düzəldir.",
+        "2": "Aparata aid deyil.",
+        "3": "Sürətləndirir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "21. Mətn redaktorunun obyektləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0521-21K04-03-03-015"
+  },
+  {
+    "question": "MS Excel elektron cədvəlində sətirlər və sütunlar hansı simvollarla adlandırılır?",
+    "options": [
+      "Hər ikisi hərflərlə",
+      "Hər ikisi rəqəmlərlə",
+      "Sütunlar rəqəmlərlə, Sətirlər hərflərlə",
+      "Sütunlar latın hərfləri ilə (A, B, C...), Sətirlər ədədlərlə (1, 2, 3...)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Excel cədvəlində sütunlar A-Z, AA-ZZ hərfləri ilə, sətirlər isə 1, 2, 3... nömrələri ilə təyin olunur.",
+      "distractors": {
+        "0": "Sətir ədəddir.",
+        "1": "R1C1 rejimindədir standart deyil.",
+        "2": "Tərsdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K01-01-01-001"
+  },
+  {
+    "question": "Elektron cədvəlin ən kiçik elementi olan XANA (Cell) ünvanı necə formalaşır?",
+    "options": [
+      "Əvvəl Sətir nömrəsi, sonra Sütun hərfi (5B)",
+      "Əvvəl Sütun hərfi, sonra Sətir nömrəsi yazılır (məsələn, B5)",
+      "İstənilən ad qoyulur",
+      "Yalnız rəqəm yazılır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Xana ünvanı sütun adının (A, B, C) və sətir nömrəsinin (1, 2, 3) kəsişməsi kimi yazılır: A1, C10, E15.",
+      "distractors": {
+        "0": "5B səhv ünvandır.",
+        "2": "Ünvan standartdır.",
+        "3": "Tək rəqəm xana deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K01-01-01-002"
+  },
+  {
+    "question": "Excel-də seçilmiş xanalar bloku (Diapazon - Range) necə işarələnir?",
+    "options": [
+      "Xanaların arasına + qoymaqla",
+      "Sol yuxarı xana və sağ aşağı xana ünvanı arasında ikinöqtə (:) qoymaqla (məsələn, A1:C5)",
+      "Nöqtə ilə",
+      "Mötərizə ilə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Diapazon düzbucaqlı xanalar qrupunu bildirir və iki nokta (:) ilə ayrılır (A1:C5).",
+      "distractors": {
+        "0": "+ toplamadır.",
+        "2": "Nöqtə ayrıcı deyil.",
+        "3": "Mötərizə funksiyadadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K01-01-01-003"
+  },
+  {
+    "question": "`A1:C3` diapazonuna cəmi neçə xana daxildir?",
+    "options": [
+      "6 xana",
+      "12 xana",
+      "3 xana",
+      "9 xana"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sütun sayısı: A, B, C (3 sütun). Sətir sayısı: 1, 2, 3 (3 sətir). Xana sayısı = 3 × 3 = 9 xana.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "1": "3×4 vurulub.",
+        "2": "Yalnız sətir sayısıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K01-01-01-004"
+  },
+  {
+    "question": "Excel-də nisbi xana ünvanı (məsələn, A1) ilə mütləq (sabitlənmiş) xana ünvanı (məsələn, `$A$1`) arasındakı fərq nədir?",
+    "options": [
+      "Mütləq ünvan mətndir",
+      "Eyni şeydir fərq yoxdur",
+      "Nisbi ünvan başqa xanaya kopyalandıqda avtomatik sürüşür (dəyişir), Mütləq ünvan ($) isə dəyişməz sabit qalır",
+      "Nisbi ünvan səhvdir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dollar işarəsi ($) sütunu ($A1), sətiri (A$1) və ya hər ikisini ($A$1) sabitleyərək kopyalama zamanı sürüşmənin qarşısını alır.",
+      "distractors": {
+        "0": "Ünvandır.",
+        "1": "Kopyalanmada fərq var.",
+        "3": "Standart ünvandır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K01-01-01-005"
+  },
+  {
+    "question": "Excel-də xananın daxilində `B3` nisbi ünvanını dərhal `$B$3` mütləq ünvanına çevirən klaviatura düyməsi hansıdır?",
+    "options": [
+      "F4",
+      "F2",
+      "F11",
+      "F9"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: F4 düyməsi ünvanın üzərində basıldıqda sıra ilə B3 -> $B$3 -> B$3 -> $B3 tiplərinə keçid edir.",
+      "distractors": {
+        "1": "F2 xananı redaktə rejiminə keçirir.",
+        "2": "F11 diaqram yaradır.",
+        "3": "F9 yenidən hesablayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K02-02-02-006"
+  },
+  {
+    "question": "Xanada `###` simvollarının görünməsinin səbəbi nədir və necə düzəldilir?",
+    "options": [
+      "Səbəbi: Virus olması",
+      "Səbəbi: Ədədin və ya tarixin xananın eninə sığışmaması; Düzəldilməsi: Sütunun enini genişləndirmək",
+      "Səbəbi: Xəta olması; Düzəldilməsi: Faylı silmək",
+      "Səbəbi: Parol olması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `###` xəta deyil, sadəcə genişliyin çatmamasıdır; sütun sərhədini iki dəfə tıqladıqda avtomatik genişlənir (AutoFit).",
+      "distractors": {
+        "0": "Virus deyil.",
+        "2": "Silməyə ehtiyac yoxdur.",
+        "3": "Parol deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K02-02-02-007"
+  },
+  {
+    "question": "`A2:D5` diapazonunda neçə xana olduğunu hesablayın.",
+    "options": [
+      "16 xana",
+      "20 xana",
+      "12 xana",
+      "8 xana"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sütunlar: A, B, C, D (4 sütun). Sətirlər: 2, 3, 4, 5 (4 sətir). Xana sayısı = 4 × 4 = 16 xana.",
+      "distractors": {
+        "1": "4×5 hesablanıb.",
+        "2": "3×4 hesablanıb.",
+        "3": "4+4 hesablanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K02-02-02-008"
+  },
+  {
+    "question": "Excel-də 'AutoFill' (Avtodoldurma marqeri - xananın sağ aşağı küncündəki qara xaç) alətinin funksiyası nədir?",
+    "options": [
+      "Düsturları, ədədi silsilələri (1, 2, 3...) və ya ay/gün adlarını qonşu xanalara avtomatik kopyalamaq",
+      "Rəngi dəyişmək",
+      "Cədvəli çapa vermək",
+      "Xananı silmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Avtodoldurma marqerini aşağı dartdıqda düsturlar sürüşərək, ardıcıllıqlar isə addımla avtomatik dolur.",
+      "distractors": {
+        "1": "Rəngə aid deyil.",
+        "2": "Çap deyil.",
+        "3": "Silmir doldurur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K02-02-02-009"
+  },
+  {
+    "question": "Excel-də verilənlərin vizual müqayisəsi üçün DİAQRAMLAR (Chart: Sutunlu, Dairəvi, Xətti) yaratmaq üçün hansı lent tabından istifadə olunur?",
+    "options": [
+      "Data",
+      "Page Layout",
+      "View",
+      "Insert (Daxil et) -> Charts"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Insert tabının Charts qrupundan Column, Bar, Pie, Line diaqram növləri əlavə olunur.",
+      "distractors": {
+        "0": "Verilənlərlə işdir.",
+        "1": "Səhifə nizamıdır.",
+        "2": "Görünüşdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K02-02-02-010"
+  },
+  {
+    "question": "Excel-də `Sort A to Z` və `Filter` (Süzgəc) alətlərinin məqsədini təhlil edin.",
+    "options": [
+      "Bütün məlumatları silmək",
+      "Verilənləri əlifba/ədəd sırası ilə nizamlamaq və yalnız müəyyən şərti ödəyən sətirləri süzüb ekranda saxlamaq",
+      "Cədvəlin şriftini böyütmək",
+      "Faylı şifrələmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Data -> Sort & Filter alətləri böyük cədvəllərdə cəld axtarış və analitik qruplaşdırma imkanı verir.",
+      "distractors": {
+        "0": "Silmir süzür.",
+        "2": "Şriftə aid deyil.",
+        "3": "Şifrələmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K04-03-03-011"
+  },
+  {
+    "question": "C1 xanasında `=A1+$B$1` düsturu yazılıb. Bu düstur C2 xanasına kopyalanarsa, C2-də düstur necə olar?",
+    "options": [
+      "=A2+B1",
+      "=A2+$B$1",
+      "=A1+$B$1",
+      "=A2+$B$2"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: A1 nisbi ünvan olduğu üçün 1 sətir aşağı düşəndə A2 olur; $B$1 mütləq ünvan olduğu üçün dəyişmir sabit $B$1 qalır.",
+      "distractors": {
+        "0": "$ simvolu itməz.",
+        "2": "A1 nisbidir 1 sətir sürüşməlidir.",
+        "3": "$B$1 sabiti dəyişməməlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K04-03-03-012"
+  },
+  {
+    "question": "Excel-də 'Conditional Formatting' (Şərti formatlama) alətinin funksiyasını təhlil edin.",
+    "options": [
+      "Düsturu ləğv etmək",
+      "Kompüteri söndürmək",
+      "Cədvəli silmək",
+      "Verilmiş şərti ödəyən xanaları (məsələn, qiyməti 50-dən aşağı olanları qırmızı rəngləmək) avtomatik rəngləmək"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Home -> Conditional Formatting şərtləri visual rənglər və göstəricilərlə fərqləndirir.",
+      "distractors": {
+        "0": "Ləğv etmir.",
+        "1": "Söndürmür.",
+        "2": "Silmir rəngləyir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K04-03-03-013"
+  },
+  {
+    "question": "Excel-də `B2:E6` diapazonunun xana sayını tapın.",
+    "options": [
+      "20 xana",
+      "24 xana",
+      "15 xana",
+      "16 xana"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sütunlar: B, C, D, E (4 sütun). Sətirlər: 2, 3, 4, 5, 6 (5 sətir). Xana sayısı = 4 × 5 = 20 xana.",
+      "distractors": {
+        "1": "4×6 hesablanıb.",
+        "2": "3×5 hesablanıb.",
+        "3": "4×4 hesablanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K04-03-03-014"
+  },
+  {
+    "question": "Müasir iqtisadiyyatda, bankçılıqda və statistikada elektron cədvəllərin (MS Excel, Google Sheets) əvəzolunmaz rolunu qiymətləndirin.",
+    "options": [
+      "Böyük finansial hesablamaları avtomatlaşdırmaq, dinamik simulyasiyalar aparmaq və məlumatları vizual diaqramlarla analiz etmək",
+      "Yalnız 1 hesablama aparmaq üçündür",
+      "Kompüteri sıradan çıxarır",
+      "Cədvəllər köhnəlib istifadə olunmur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəl strukturlarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Elektron cədvəllər müasir biznesin və analitikanın universal onurğa sütunudur.",
+      "distractors": {
+        "1": "Milyonlarla hesablama aparır.",
+        "2": "Tətbiq proqramıdır.",
+        "3": "Hər gün istifadə olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "22. Elektron cədvəl",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0522-22K04-03-03-015"
+  },
+  {
+    "question": "MS Excel-də daxil edilən ifadənin DÜSTUR (Formula) kimi qəbul olunması üçün hansı işarə ilə başlaması MƏCBURİDİR?",
+    "options": [
+      "Mötərizə ( ( )",
+      "Bərabərdir (=)",
+      "Mənfi (-)",
+      "Ulduz (*)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Excel-də xanaya `=` işarəsi qoyulmazsa, yazılan ifadə sadəcə mətn kimi qəbul edilir, daxilində `=` olmalıdır.",
+      "distractors": {
+        "0": "Mötərizə funksiyadadır.",
+        "2": "- riyazi işarədir.",
+        "3": "* vurmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K01-01-01-001"
+  },
+  {
+    "question": "Excel-də verilmiş xanalar diapazonundakı ədədlərin cəmini tapan standart funksiya hansıdır?",
+    "options": [
+      "MAX()",
+      "SUM()",
+      "COUNT()",
+      "AVERAGE()"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SUM(diapazon) (məsələn `=SUM(A1:A5)`) xanalardakı bütün ədədləri avtomatik toplayır.",
+      "distractors": {
+        "0": "MAX ən böyüyünü tapır.",
+        "2": "COUNT ədədli xanaları sayır.",
+        "3": "AVERAGE ədədi ortanı tapır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K01-01-01-002"
+  },
+  {
+    "question": "Excel-də verilmiş ədədlərin ƏDƏDİ ORTASINI tapan funksiya hansıdır?",
+    "options": [
+      "MIN()",
+      "SUM()",
+      "AVERAGE()",
+      "PRODUCT()"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: AVERAGE() funksiyası ədədlərin cəmini onların sayına bölərək ədədi ortanı (Mean) hesablayır.",
+      "distractors": {
+        "0": "MIN ən kiçikdir.",
+        "1": "SUM cəmdir.",
+        "3": "PRODUCT vurma hasilidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K01-01-01-003"
+  },
+  {
+    "question": "Kodu icra edin (Excel): A1=10, A2=20, A3=30. B1 xanasına `=SUM(A1:A3)` yazılarsa nəticə nə olar?",
+    "options": [
+      "102030",
+      "60",
+      "20",
+      "30"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SUM(A1:A3) = 10 + 20 + 30 = 60.",
+      "distractors": {
+        "0": "Mətn kimi yapışdırmadır.",
+        "2": "Ədədi ortasıdır.",
+        "3": "Maksimumudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K01-01-01-004"
+  },
+  {
+    "question": "Kodu icra edin: A1=4, B1=6. C1 xanasına `=A1+B1*2` yazılarsa nəticə neçə olar?",
+    "options": [
+      "48",
+      "12",
+      "16",
+      "20"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Riyazi prioritet: B1*2 = 6*2 = 12. Sonra A1+12 = 4+12 = 16.",
+      "distractors": {
+        "0": "4*6*2 vurulub.",
+        "1": "Yalnız vurmadır.",
+        "3": "(4+6)*2 = 20 (mötərizə olsaydı)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K01-01-01-005"
+  },
+  {
+    "question": "Excel-də `=MAX(A1:A4)` funksiyası A1=5, A2=12, A3=3, A4=9 olduqda nə qaytarar?",
+    "options": [
+      "29",
+      "12",
+      "7.25",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: MAX() diapazondakı ən böyük ədədi tapır. 5, 12, 3, 9 arasında ən böyük 12-dir.",
+      "distractors": {
+        "0": "SUM() cəmidir.",
+        "2": "AVERAGE() ədədi ortadır.",
+        "3": "MIN() funksiyasının nəticəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K02-02-02-006"
+  },
+  {
+    "question": "Excel-də `=COUNT(A1:A5)` funksiyası nəyi hesablayır?",
+    "options": [
+      "Ən böyük ədədi",
+      "Boş xanaları",
+      "Xanalardakı ədədlərin cəmini",
+      "Diapazonda içərisində ƏDƏD olan xanaların sayını"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: COUNT() diapazonda yalnız rəqəm (numeric) saxlayan xanaların adəd sayını qaytarır.",
+      "distractors": {
+        "0": "MAX-dır.",
+        "1": "COUNTBLANK-dır.",
+        "2": "SUM-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K02-02-02-007"
+  },
+  {
+    "question": "Excel-də şərtli məntiqi funksiya olan `=IF(A1>=50, \"Keçdi\", \"Kəsildi\")` A1=40 olduqda neçə qaytarar?",
+    "options": [
+      "50",
+      "Keçdi",
+      "Kəsildi",
+      "40"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 40 >= 50 False verdiyi üçün IF funksiyasının 3-cü arqumenti (\"Kəsildi\") çıxışa verilir.",
+      "distractors": {
+        "0": "Şərt ədədidir.",
+        "1": "50 və daha yuxarıda çıxardı.",
+        "3": "A1 qiymətidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K02-02-02-008"
+  },
+  {
+    "question": "Hesablayın: A1=16. B1 xanasında `=SQRT(A1) + POWER(2, 3)` yazılıb. Nəticə neçə olar?",
+    "options": [
+      "24",
+      "20",
+      "16",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SQRT(16) = √16 = 4. POWER(2, 3) = 2³ = 8. Nəticə: 4 + 8 = 12.",
+      "distractors": {
+        "0": "Vurma səhvidir.",
+        "1": "16+4 hesablanıb.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K02-02-02-009"
+  },
+  {
+    "question": "Excel-də `#DIV/0!` xətası nə zaman meydana çıxır?",
+    "options": [
+      "Şrift böyük olduqda",
+      "Mətn vurulduqda",
+      "Xana tapılmadıqda",
+      "Düsturda sıfıra bölmə (və ya boş xanaya bölmə) baş verdikdə"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Riyaziyyatda sıfıra bölmə təyin olunmadığı üçün Excel `#DIV/0!` (Division by zero) xətası verir.",
+      "distractors": {
+        "0": "### görünür.",
+        "1": "#VALUE! xətasıdır.",
+        "2": "#REF! xətasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K02-02-02-010"
+  },
+  {
+    "question": "Excel-də `=COUNTA(A1:A5)` funksiyasının `COUNT(A1:A5)` funksiyasından fərqini təhlil edin.",
+    "options": [
+      "COUNTA diapazondakı BOŞ OLMAYAN bütün xanaları (həm mətn, həm ədəd), COUNT isə YALNIZ ədəd olan xanaları sayır",
+      "Eyni funksiyadır fərq yoxdur",
+      "COUNT yalnız sıfırları sayır",
+      "COUNTA yalnız mətnləri silir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: COUNTA (Count All) boş olmayan xanaların sayını, COUNT isə rəqəmsal xanaları sayır.",
+      "distractors": {
+        "1": "Fərqlidir.",
+        "2": "Ədədləri sayır.",
+        "3": "Silmir sayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K04-03-03-011"
+  },
+  {
+    "question": "Hesablayın: A1=5, A2=10, A3=15. B1 xanasında `=IF(SUM(A1:A3)>20, AVERAGE(A1:A3), 0)` nəticəsi neçə olar?",
+    "options": [
+      "0",
+      "10",
+      "15",
+      "30"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SUM(A1:A3) = 5+10+15 = 30. 30 > 20 True. AVERAGE(A1:A3) = 30/3 = 10. Nəticə: 10.",
+      "distractors": {
+        "0": "False çıxışıdır.",
+        "2": "A3 qiymətidir.",
+        "3": "SUM nəticəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K04-03-03-012"
+  },
+  {
+    "question": "Excel-də `#VALUE!` xətası ne zaman meydana gəlir?",
+    "options": [
+      "Xana silindikdə",
+      "Fayl bağlandıqda",
+      "Düsturda riyazi əməliyyat üçün yanlış verilənlər tipi istifadə olunduqda (məsələn, mətni ədədə vurarkən)",
+      "Sıfıra böldükdə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `#VALUE!` ədədi riyaziyyat operatoruna str mətni ötürüldükdə verilən tip xətasıdır.",
+      "distractors": {
+        "0": "#REF! olur.",
+        "1": "Xəta olmur.",
+        "3": "#DIV/0! olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K04-03-03-013"
+  },
+  {
+    "question": "Excel-də `=VLOOKUP()` (ВПР - Düşəy Axtarış) funksiyasının analitik rolunu təhlil edin.",
+    "options": [
+      "Böyük cədvəlin birinci sütununda verilmiş açar qiyməti axtarıb ona uyğun digər sütundakı məlumatı avtomatik tapıb gətirmək",
+      "Rəngi dəyişmək",
+      "Kompüteri söndürmək",
+      "Cədvəli silmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VLOOKUP (Vertical Lookup) relyasiya cədvəllərindən verilənləri çəkib gətirən ən məhur analitik funksiyadır.",
+      "distractors": {
+        "1": "Rəngə aid deyil.",
+        "2": "Aparata aid deyil.",
+        "3": "Silmir tapır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K04-03-03-014"
+  },
+  {
+    "question": "Elektron cədvəllərdə mürəkkəb düsturlar və riyazi funksiyalarla (SUMIFS, COUNTIFS, VLOOKUP, INDEX/MATCH) işləməyin müəssisələrin idarə olunmasındakı əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Hesablamalar manual olunmalıdır",
+      "Düsturlar xətaları artırır",
+      "İnsan tərəfindən saatlarla çəkəcək rutin hesabatlıq və audit işlərini saniyələr daxilində sıfır xəta ilə avtomatlaşdırması",
+      "Düsturlar yalnız məktəblilər üçündür"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron cədvəllərdə düstur və funksiyaları təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Cədvəl düsturları biznesdə dinamik hesabatlar və maliyyə modelləri üçün saniyəlik avtomatlaşdırma təmin edir.",
+      "distractors": {
+        "0": "Avtomatlaşdırılır.",
+        "1": "Xətaları sıfırlayır.",
+        "3": "Bütün biznesdə işlənir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "23. Düsturlarla iş",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0523-23K04-03-03-015"
+  }
+]

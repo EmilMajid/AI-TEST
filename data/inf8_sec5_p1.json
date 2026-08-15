@@ -1,0 +1,452 @@
+[
+  {
+    "question": "Üçölçülü qrafika (3D Qrafika - Three-Dimensional Graphics) nədir?",
+    "options": [
+      "Mətn redaktorudur",
+      "İkili koddur",
+      "Yalnız 2D müstəvi şəkillərdir",
+      "Obyektlərin fəzada 3 ox üzrə (X - en, Y - hündürlük, Z - dərinlik) həcmli təsvirlərinin yaradılması və emalı"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D qrafikası fəzada üç koordinat oxuna (X, Y, Z) əsaslanaraq həcmli obyektlər yaradır.",
+      "distractors": {
+        "0": "Qrafik proqramdır.",
+        "1": "Fiziki kod deyil.",
+        "2": "2D iki oxdur (X, Y)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K01-01-01-001"
+  },
+  {
+    "question": "3D qrafikada fəza koordinat oxları hansılardır?",
+    "options": [
+      "X (Absis), Y (Ordinat), Z (Aplikat)",
+      "A, B, C",
+      "Width, Height",
+      "R, G, B"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dekart fəza koordinat sistemində X eni, Y hündürlüyü, Z esa dərinlik oxunu bildirir.",
+      "distractors": {
+        "1": "Dəyişənlərdir.",
+        "2": "2D ölçülərdir.",
+        "3": "Rəng modelidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K01-01-01-002"
+  },
+  {
+    "question": "Aşağıdakılardan hansı 3D modelləşdirmə və 3D qrafika proqramıdır?",
+    "options": [
+      "MS Excel",
+      "Blender (və ya Paint 3D, SketchUp, 3ds Max)",
+      "Notepad",
+      "MS Word"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Blender, Paint 3D, 3ds Max, Maya 3D modellərin qurulması və animasiyası üçün xüsusi peşəkar proqramlardır.",
+      "distractors": {
+        "0": "Elektron cədvəldir.",
+        "2": "Sadə mətn redaktorudur.",
+        "3": "Mətn redaktorudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K01-01-01-003"
+  },
+  {
+    "question": "3D obyekti fəzada fırlatmaq və müxtəlif bucaqlardan baxmaq üçün hansı ox ətrafında fırlanma aparılır?",
+    "options": [
+      "Oxlar fırlanmır",
+      "Yalnız X oxu",
+      "X, Y və Z oxları ətrafında",
+      "Yalnız Y oxu"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D fəzada obyekt 3 oxun (Roll, Pitch, Yaw) istəniləni boyunca sərbəst fırladıla bilər.",
+      "distractors": {
+        "0": "Fırlanır.",
+        "1": "Məhdud fırlanmadır.",
+        "3": "Məhdud fırlanmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K01-01-01-004"
+  },
+  {
+    "question": "3D qrafikada 'Render' (Renderləmə) mərhələsinin mənası nədir?",
+    "options": [
+      "Kompüterin söndürülməsi",
+      "Modelin silinməsi",
+      "Mətnin çapa verilməsi",
+      "Fəzadakı 3D modelin işıq, kölgə, faktura və materialları hesablanaraq son keyfiyyətli 2D təsvirə və ya videoya çevrilməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rendering 3D səhnənin riyazi işıq şüalarının (Ray Tracing) hesablanaraq fotorealist kadr halına salınmasıdır.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "1": "Silmir fotorealist edir.",
+        "2": "Çap deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K01-01-01-005"
+  },
+  {
+    "question": "3D modelləşdirmədə hazır olan 3D obyekti kağız kimi fiziki maddədən real materiala çevirən qurğu hansıdır?",
+    "options": [
+      "Lazer printer",
+      "Plotter",
+      "3D Printer",
+      "2D Skaner"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D Printer (FDM/SLA) 3D rəqəmsal modeli layer-layer (təbəqə-təbəqə) plastik və ya smola ilə real fiziki obyektdən çap edir.",
+      "distractors": {
+        "0": "Kağıza 2D çap edir.",
+        "1": "Çertyoj çap edir.",
+        "3": "Daxiletmə qurğusudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K02-02-02-006"
+  },
+  {
+    "question": "3D modelləşdirmədə ilkin sadə həndəsi fiqurlar (Kub, Sfera, Silindr, Konus, Tor) necə adlanır?",
+    "options": [
+      "Fayllar",
+      "Vektorlar",
+      "Piksellər",
+      "Primitivlər (Primitives / 3D Primitivlər)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D mühitində mürəkkəb obyektlər təməl həndəsi primitivlərin (Cube, Sphere, Cylinder) birləşdirilməsi ilə qurulur.",
+      "distractors": {
+        "0": "Saxlayıcıdır.",
+        "1": "2D xətlərdir.",
+        "2": "2D nöqtələrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K02-02-02-007"
+  },
+  {
+    "question": "3D modellərə real görünüş vermək üçün onların səthinə rəng, şəffaflıq, parıltı və kələ-kötürlük vermək prosesi necə adlanır?",
+    "options": [
+      "Kompilyasiya",
+      "Teksturalama və Material təyini (Texturing / Shading)",
+      "Şifrələmə",
+      "Silinmə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Obyektin üzərinə taxta, metal, şüşə kimi qrafik şəkillərin (texture) geydirilməsi və işıq əksetməsi (shading) həqiqlik verir.",
+      "distractors": {
+        "0": "Proqramlaşdırmadır.",
+        "2": "Təhlükəsizlikdir.",
+        "3": "Silinmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K02-02-02-008"
+  },
+  {
+    "question": "Paint 3D proqramında 2D stikerin (etiketin) 3D obyektin səthinə geydirilməsi funksiyasını təhlil edin.",
+    "options": [
+      "Obyekti deşir",
+      "Obyekti silir",
+      "3D obyekti 2D edir",
+      "Stiker 3D obyektin formalı səthinə avtomatik yapışaraq onun relyefini alır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Paint 3D-də Sticker aləti 2D şəkli 3D modelin əyilmiş qabarıq səthinə elastik örtür.",
+      "distractors": {
+        "0": "Deşmir.",
+        "1": "Silmir.",
+        "2": "2D etmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K02-02-02-009"
+  },
+  {
+    "question": "3D qrafikada 'Virtual Kamera' və 'İşıq mənbələri' (Point, Sun, Spot) təyininin rolunu təhlil edin.",
+    "options": [
+      "Kompüterin ekranını söndürmək",
+      "Printeri işə salmaq",
+      "Faylın həcmini 0 etmək",
+      "Səhnədə realizm yaratmaq, kadrın bucağını tənzimləmək və obyektlərin kölgələrini doğru formalaşdırmaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İşıq olmadan 3D obyekt qaranlıq görünür; kölgələr (Shadows) fəza dərinliyi hissini yaradır.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "1": "Çap deyil.",
+        "2": "Həcmə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K02-02-02-010"
+  },
+  {
+    "question": "3D modellərin geniş yayılmış standart fayl formatları hansılardır?",
+    "options": [
+      ".OBJ, .FBX, .STL, .3MF",
+      ".MP3, .WAV",
+      ".EXE, .BAT",
+      ".TXT, .DOCX"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: OBJ və FBX 3D modellər və animasiya üçündür; STL və 3MF isə 3D printerlərdə çap üçün standart formatlardır.",
+      "distractors": {
+        "1": "Səs fayllarıdır.",
+        "2": "İcra olunan fayllardır.",
+        "3": "Mətn fayllarıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K04-03-03-011"
+  },
+  {
+    "question": "3D Animasiyada 'Karkas / Sümük sistemi' (Rigging / Armature) qurulmasının məqsədi nədir?",
+    "options": [
+      "3D personajın (insan, heyvan) oynaqlarını və sümüklərini yaradaraq ona canlı hərəkətlər (yerimək, qaçmaq) vermək",
+      "Modeli sındırmaq",
+      "Səsi yazmaq",
+      "Rəngi silmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rigging 3D torun (Mesh) daxilinə virtual sümük skeleti yerləşdirərək hərəkət animasiyası imkanı yaradır.",
+      "distractors": {
+        "1": "Sındırmır hərəkət verir.",
+        "2": "Audiodur.",
+        "3": "Rəngə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K04-03-03-012"
+  },
+  {
+    "question": "Kompüter oyunlarında və filmlərdə 'Motion Capture' (Hərəkət tutma) texnologiyasının 3D qrafikaya tətbiqini təhlil edin.",
+    "options": [
+      "Aktyoru 3D printerlə çap etmək",
+      "Səsi silmək",
+      "Canlı aktyorun bədəninə daxil edilən sensorlar vasitəsilə onun real hərəkətlərini 3D personaja eynilə köçürmək",
+      "Ekranı qaraltmaq"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: MoCap kameraları aktyorun mimika və hərəkətlərini 3D modelin skeletinə sinxron yazır.",
+      "distractors": {
+        "0": "Çap etmir.",
+        "1": "Səsə aid deyil.",
+        "3": "Qaraltmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K04-03-03-013"
+  },
+  {
+    "question": "3D qrafikanın arxitektura və tikintidə (BIM / CAD) istifadəsinin mühəndislik üstünlüyü nədir?",
+    "options": [
+      "Kağız istifadəsini məcburi etmək",
+      "Faylları gizlətmək",
+      "Binanın tikintisindən əvvəl onun 3D maketini qurub bütün daxili kommunikasiyaları və möhkəmlik risklərini dəqiq simulyasiya etmək",
+      "Tikintini dayandırmaq"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: AutoCAD və Revit kimi 3D CAD proqramları binanın vizual və konstruktiv 3D modelini təqdim edir.",
+      "distractors": {
+        "0": "Rəqəmsallaşdırır.",
+        "1": "Gizlətmir.",
+        "3": "Dayandırmır təhlükəsiz edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K04-03-03-014"
+  },
+  {
+    "question": "Müasir dünyada 3D qrafika, Artıqılmış Reallıq (AR) və Tibbi Simulyasiyaların (3D orqan çapı) cəmiyyətə verdiyi töhfəni qiymətləndirin.",
+    "options": [
+      "Təbabətin zəifləməsi",
+      "Kompüterlərin ləğv olunması",
+      "Cərrahiyyə əməliyyatlarının təhlükəsiz sınaqdan keçirilməsi, təhsildə vizual mənimsəmə və sənayedə istehsalat xərclərinin kəskin azalması",
+      "Məlumatların oxunmaması"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Üçölçülü qrafika anlayışını və xassələrini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D qrafika və simulyatorlar təbabətdən tutmuş aviasiyayadək insan həyatını qoruyan virtual təlim mühitləri yaradır.",
+      "distractors": {
+        "0": "Gücləndirir.",
+        "1": "İnkişaf etdirir.",
+        "3": "Əksinə asanlaşdırır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "18. Üçölçülü qrafika",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0518-18K04-03-03-015"
+  }
+]

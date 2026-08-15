@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "Mətn, səs, qrafika, animasiya və videonun kompüterdə birgə emalını və təqdim olunmasını təmin edən texnologiya necə adlanır?",
+    "options": [
+      "Verilənlər bazası",
+      "Əməliyyat sistemi",
+      "Şəbəkə protokolu",
+      "Multimedia texnologiyası"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Multimedia (multi - çoxlu, media - mühit) müxtəlif informasiya növlərinin (səs, video, animasiya, mətn) inteqrasiyalı emalı texnologiyasıdır.",
+      "distractors": {
+        "0": "Verilənlər bazası saxlanmadır.",
+        "1": "Əməliyyat sistemi resurs idarəsidir.",
+        "2": "Şəbəkə protokolu qaydalardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K01-01-01-001"
+  },
+  {
+    "question": "Analoji səs siqnalını rəqəmsal ikili koda (və ya əksinə) çevirən daxili kompüter qurğusu hansıdır?",
+    "options": [
+      "Videokart",
+      "Şəbəkə kartı",
+      "Səs kartı (Sound Card)",
+      "Prosessoru"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Səs kartında yerləşən ADC (Analoji-Rəqəmsal Çevirici) və DAC səs siqnallarını kodlaşdırır və səsləndirir.",
+      "distractors": {
+        "0": "Videokart görüntünü işləyir.",
+        "1": "Şəbəkə kartı rabitə üçündür.",
+        "3": "Prosessordan səs çıxışı birbaşa olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K01-01-01-002"
+  },
+  {
+    "question": "Aşağıdakı qurğulardan hansı multimedia XARİCOTMƏ (səs çıxış) qurğusudur?",
+    "options": [
+      "Skaner",
+      "Veb-kamera",
+      "Səsucaldanlar (kolonkalar / qulaqlıqlar)",
+      "Mikrofon"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Səsucaldanlar (dinamiklər) və qulaqlıqlar kompüterdəki rəqəmsal səs siqnalını analoji səs dalğalarına çevirərək xaric edir.",
+      "distractors": {
+        "0": "Skaner mətn/təsvir daxiletmədir.",
+        "1": "Veb-kamera təsvir daxiletmə qurğusudur.",
+        "3": "Mikrofon daxiletmə qurğusudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K01-01-01-003"
+  },
+  {
+    "question": "Səs dalğalarını elektrik rəqslərinə çevirərək kompüterə daxil edən daxiletmə qurğusu hansıdır?",
+    "options": [
+      "Plotter",
+      "Mikrofon",
+      "Monitor",
+      "Printer"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mikrofon analoji səs rəqslərini elektrik siqnalına çevirən multimedia daxiletmə qurğusudur.",
+      "distractors": {
+        "0": "Plotter çertyoj çıxarır.",
+        "2": "Monitor təsvir xaricetmədir.",
+        "3": "Printer xaricetmədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K01-01-01-004"
+  },
+  {
+    "question": "Proyektor (videoproyektor) qurğusunun əsas funksiyası nədir?",
+    "options": [
+      "Səs yazmaq",
+      "Kağızdakı mətni oxumaq",
+      "Faylları sıxmaq",
+      "Kompüter ekranındakı görüntünü böyük lövhəyə və ya divara proyeksiyalamaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Proyektor optik sistemi vasitəsilə videokartdan aldığı görüntünü böyük məkanda auditoriyaya nümayiş etdirir.",
+      "distractors": {
+        "0": "Səs mikrofonla yazılır.",
+        "1": "Skanerlə oxunur.",
+        "2": "Proqram təminatıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K01-01-01-005"
+  },
+  {
+    "question": "Səs faylının diskretdəşmə tezliyi (diskretləşmə tezliyi) nəyi göstərir?",
+    "options": [
+      "Səs faylının adını",
+      "Musiqinin janrını",
+      "1 saniyədə səs siqnalından götürülən ölçümlərin (nümunələrin) sayını (Hs - Herts)",
+      "Kolonkanın çəkisini"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Diskretləşmə tezliyi (məsələn, 44.1 kHs) 1 saniyədə səs siqnalının neçə dəfə ölçülüb rəqəmsallaşdırıldığını bildirir.",
+      "distractors": {
+        "0": "Fayl adıdır.",
+        "1": "Məzmuna aiddir.",
+        "3": "Fiziki parametrdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K02-02-02-006"
+  },
+  {
+    "question": "İnteraktiv lövhənin (Smart Board) dərslərdə tətbiq olunmasının üstünlüyünü təhlil edin.",
+    "options": [
+      "Elektril enerjisinə ehtiyac olmaması",
+      "Müəllim və şagirdin ekrana toxunaraq birbaşa kompüteri idarə etməsi və multimedia materiallarını dinamik nümayiş etdirməsi",
+      "Yalnız təbaşirlə yazılması",
+      "İnternetə qoşula bilməməsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnteraktiv lövhə toxunma sensoru və proyektor inteqrasiyası ilə tədrisi interaktiv edən müasir multimedia sistemidir.",
+      "distractors": {
+        "0": "Elektrik lazımdır.",
+        "2": "Təbaşir adi lövhədədir.",
+        "3": "Kompüter vasitəsilə qoşulur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K02-02-02-007"
+  },
+  {
+    "question": "Müasir monitorda və televizorda istifadə olunan HDMI (High-Definition Multimedia Interface) kabelinin fərqləndirici xüsusiyyəti nədir?",
+    "options": [
+      "Yüksək keyfiyyətli video və çoxkanallı audio (səs) siqnallarını eyni vaxtda bir kabel vasitəsilə ötürməsi",
+      "Yalnız elektrik verməsi",
+      "Yalnız səs ötürməsi",
+      "İnternet modemi olması"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: HDMI həm rəqəmsal HD görüntünü, həm də çoxkanallı səs siqnalını sıxılmadan tək kabel üzərindən ötürən rəqəmsal interfeysdir.",
+      "distractors": {
+        "1": "Verilənlər ötürür.",
+        "2": "Görüntü də ötürür.",
+        "3": "Kabeldir interfeysdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K02-02-02-008"
+  },
+  {
+    "question": "Stereo (2 kanallı) səs faylının 1 saniyəlik həcmi diskretləşmə tezliyi 40000 Hs və dəqiqliyi 16 bit olarsa nə qədərdir?",
+    "options": [
+      "40000 bayt",
+      "160000 bayt (~156.25 KB)",
+      "80000 bayt",
+      "320000 bayt"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həcm = Tezlik × Dəqiqlik (bitlə) × Kanal sayısı × Zaman = 40000 × 16 × 2 × 1 = 1280000 bit. Bayt = 1280000 / 8 = 160000 bayt.",
+      "distractors": {
+        "0": "Dəqiqlik 8 bit götürülüb mono.",
+        "2": "Mono (1 kanal) hesablanıb.",
+        "3": "Vurma səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K02-02-02-009"
+  },
+  {
+    "question": "Veb-kamera (Webcam) vasitəsilə video-konfrans keçirərkən kadr tezliyinin (FPS - Frames Per Second) 30 fps olması nə deməkdir?",
+    "options": [
+      "30 piksel olması",
+      "Kameranın saniyədə 30 kadr (təsvir) çəkərək axıcı video əmələ gətirməsi",
+      "Videonun 30 saniyə sürməsi",
+      "Faylın 30 MB olması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: FPS (kadr/san) video axınının rəvanlığını müəyyən edir. 30 fps insan gözü üçün axıcı standart videodur.",
+      "distractors": {
+        "0": "Görüntü imkanına aid deyil.",
+        "2": "Zamana aid deyil.",
+        "3": "Həcmə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K02-02-02-010"
+  },
+  {
+    "question": "Akustik sistemlərdə (5.1 və 7.1 surround sound) kanalların sayının çox olmasının üstünlüyünü təhlil edin.",
+    "options": [
+      "Görüntünü aydınlaşdırması",
+      "Səsin tezliyini sıfıra endirməsi",
+      "Məkanda səsin fəza istiqamətini (ətraf səslənmə effekti) yaradaraq dinləyicidə real iştirak hissi yaratması",
+      "Faylın həcmini 100 dəfə kiçiltməsi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 5.1/7.1 sistemləri ön, arxa və yan dinamiklər vasitəsilə səsin fəzada 3D paylanmasını təmin edir.",
+      "distractors": {
+        "0": "Səs qurğusudur.",
+        "1": "Səs eşidilməzdi.",
+        "3": "Kanal çoxaldıqda həcm artır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K04-03-03-011"
+  },
+  {
+    "question": "VR (Virtual Reality - Virtual Reallıq) eynəklərinin multimedia texnologiyalarındakı rolunu təhlil edin.",
+    "options": [
+      "Kompüterin enerji sərfindən qoruması",
+      "Yalnız mətni oxutması",
+      "Faylları arxivləməsi",
+      "İki göz üçün ayrı-ayrı 3D görüntü və stereo səs verərək istifadəçini tam virtual mühitə daxil etməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VR dəbilqələri və eynəkləri akselerometr və stereo ekranlarla istifadəçinin baş hərəkətlərinə uyğun fəza reallığı yaradır.",
+      "distractors": {
+        "0": "Energy məsələsi deyil.",
+        "1": "3D vizuallıq və səs verir.",
+        "2": "Arxiv proqramıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K04-03-03-012"
+  },
+  {
+    "question": "Kompüterə səs yazarkən mühitdəki küyləri (şumları) kəsmək üçün mikrofon texnologiyasında nə tətbiq edilir?",
+    "options": [
+      "Monitorun parlaqlığını azaltmaq",
+      "Küyboğucu (Noise Cancelling) mikrosxem və ikili mikrofon sistemi",
+      "Kolonkanı söndürmək",
+      "Səsi fayla yazmamaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Active Noise Cancellation (ANC) kənar küyləri əks fazalı səs dalğası ilə söndürərək təmiz səs yazılışını təmin edir.",
+      "distractors": {
+        "0": "Ekranla bağlı deyil.",
+        "2": "Problem mikrofonun kənar səs tutmasıdır.",
+        "3": "Mənasızdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K04-03-03-013"
+  },
+  {
+    "question": "Bluetooth Simsiz Qulaqlıqların kompüterlə əlaqəsində radiodalğaların (2.4 QHs) rolu nədir?",
+    "options": [
+      "Kompüteri söndürməsi",
+      "Mikrofonu fiziki sındırması",
+      "Naqilsiz məsafədən (10-15 metr) rəqəmsal səs paketlərini kiçik ləngimə ilə ötürməsi",
+      "Səsi kağıza çap etməsi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bluetooth protokolu qısa dalğalı radio tezlikləri vasitəsilə multimedia cihazları arasında kabel olmadan verilənlər mübadiləsi aparır.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "1": "Fiziki zərər vermir.",
+        "3": "Çap etmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K04-03-03-014"
+  },
+  {
+    "question": "Müasir multimedia mühitində aparat (Hardware) və proqram (Software) təminatının sinerjisinin cəmiyyətdəki təsirini qiymətləndirin.",
+    "options": [
+      "Təhsil, tibb, simulyasiya, oyun və incəsənət sahələrində informasiyanın mənimsənilmə effektivliyini maksimal dərəcədə yüksəltməsi",
+      "Kompüterləri sıradan çıxartması",
+      "İnterneti ləğv etməsi",
+      "Məlumatların oxunmasını imkansız etməsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Multimedia qurğularının xüsusiyyətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Multimedia texnologiyası vizual, audial və taktil duyğuları birləşdirərək biliklərin mənimsənilməsini kəskin sürətləndirir.",
+      "distractors": {
+        "1": "İnkişaf etdirir.",
+        "2": "Əksinə zənginləşdirir.",
+        "3": "Mənimsəməni asanlaşdırır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "5. Multimedia qurğuları",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0205-05K04-03-03-015"
+  },
+  {
+    "question": "Elektron təqdimat proqramlarında (MS PowerPoint) animasiya nədir?",
+    "options": [
+      "Faylı silmək",
+      "Slayddakı obyektlərə (mətn, şəkil, fiqur) hərəkət effekti vermək",
+      "Slaydın rəngini dəyişmək",
+      "Təqdimatı çap etmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Animasiya slaydda yerləşən ayrı-ayrı obyektlərin ekranda görünməsi, hərəkət etməsi və ya yoxa çıxması üçün tətbiq edilən dinamik effektlərdir.",
+      "distractors": {
+        "0": "Fayl idarəsidir.",
+        "2": "Tərtibat (Design) mözusudur.",
+        "3": "Çap əməliyyatıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K01-01-01-001"
+  },
+  {
+    "question": "MS PowerPoint proqramında obyektlərə animasiya effekti əlavə etmək üçün hansı lent tabından istifadə olunur?",
+    "options": [
+      "View (Görünüş)",
+      "Animations (Animasiya)",
+      "Design (Dizayn)",
+      "Transitions (Keçidlər)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Slayddakı konkrekt obyektlərə harəkət vermək üçün 'Animations' lent tabından istifadə edilir.",
+      "distractors": {
+        "0": "View rejim düymələridir.",
+        "2": "Design slaydın şablon və rəngi üçündür.",
+        "3": "Transitions bir slayddan digərinə keçid üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K01-01-01-002"
+  },
+  {
+    "question": "PowerPoint-də animasiya effektlərinin 4 ana kateqoriyası hansılardır?",
+    "options": [
+      "Entrance (Giriş), Emphasis (Vurğulama), Exit (Çıxış), Motion Paths (Hərəkət yolları)",
+      "Red, Green, Blue, Yellow",
+      "Start, Stop, Pause, Reset",
+      "Copy, Paste, Cut, Delete"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: PowerPoint obyektlər üçün 4 animasiya növü təqdim edir: Giriş (yaşıl), Vurğulama (sarı), Çıxış (qırmızı) və Hərəkət yolları.",
+      "distractors": {
+        "1": "Rənglərdir.",
+        "2": "İcra düymələridir.",
+        "3": "Mətn əməliyyatlarıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K01-01-01-003"
+  },
+  {
+    "question": "Bir slayddan NÖVBƏTİ slayda keçərkən baş verən vizual effekt necə adlanır?",
+    "options": [
+      "Slayd keçidi (Slide Transition)",
+      "Makros",
+      "Obyekt animasiyası",
+      "Hiperəlaqə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bütün slaydın nümayiş zamanı dəyişməsi vizual effekti 'Transitions' (Keçidlər) tabı vasitəsilə tənzimlənir.",
+      "distractors": {
+        "1": "Makros proqram kodudur.",
+        "2": "Obyekt animasiyası slaydın daxilindəki mətn/şəkil üçündür.",
+        "3": "Hiperəlaqə keçid keçid düyməsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K01-01-01-004"
+  },
+  {
+    "question": "PowerPoint-də yerləşdirilmiş animasiyaların ardıcıllığını və vaxtını tənzimləmək üçün açılan xüsusi panel hansıdır?",
+    "options": [
+      "Animation Pane (Animasiya paneli)",
+      "Format Painter",
+      "Selection Pane",
+      "Clipboard"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Animation Pane ekranın sağında açılaraq slayddakı bütün animasiyaların siyahısını, sıra nömrəsini və vaxt şkalasını göstərir.",
+      "distractors": {
+        "1": "Format köçürəndir.",
+        "2": "Obyektləri seçmək üçündür.",
+        "3": "Mübadilə buferidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K01-01-01-005"
+  },
+  {
+    "question": "Animasiyanın başlama şərtlərində 'Start: On Click' parametrinin mənası nədir?",
+    "options": [
+      "Heç vaxt başlamır",
+      "Əvvəlki animasiya ilə eyni vaxtda",
+      "Avtomatik başlayan kimi",
+      "Animasiya siçan düyməsini (və ya klaviaturada probeli) basdıqda başlayır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: On Click rejimində aparıcı nümayişçi siçanı çıqqıldatdıqda növbəti animasiya effekti icra edilir.",
+      "distractors": {
+        "0": "Yanlışdır.",
+        "1": "With Previous-dur.",
+        "2": "With Previous və ya After Previous-dur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K02-02-02-006"
+  },
+  {
+    "question": "Animasiya parametrində 'With Previous' ilə 'After Previous' arasındakı fərqi təhlil edin.",
+    "options": [
+      "With Previous kliklə başlayır",
+      "Eyni şeydir fərq yoxdur",
+      "After Previous heç vaxt işləmir",
+      "With Previous əvvəlki animasiya ilə EYNİ VAXTDA, After Previous isə əvvəlki animasiya BİTDİKDƏN DƏRHAL SONRA başlayır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: With Previous sinxron parallel hərəkət yaradır; After Previous isə avtomatik ardıcıl zəncirvari animasiya yaradır.",
+      "distractors": {
+        "0": "On Click kliklədir.",
+        "1": "Fərqlidirlər.",
+        "2": "İşləyir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K02-02-02-007"
+  },
+  {
+    "question": "Şəklin slaydda müəyyən əyri xətt (zəncir) boyunca hərəkət etməsini təmin etmək üçün hansı animasiya növü seçilməlidir?",
+    "options": [
+      "Custom Path (Xüsusi Hərəkət Yolu)",
+      "Spin (Fırlanma)",
+      "Fly In (Uçaraq daxilolma)",
+      "Fade (Solğunlaşma)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Motion Paths (Hərəkət yolları) bölməsindən Custom Path seçilərək siçanla obyektin getməli olduğu istənilən xətt çəkilir.",
+      "distractors": {
+        "1": "Spin yerində fırladır.",
+        "2": "Fly In düz xətt boyunca gəlir.",
+        "3": "Fade şəffaflıq dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K02-02-02-008"
+  },
+  {
+    "question": "Animasiyanın müddətini (Duration) 0.5 saniyədən 3.0 saniyəyə qaldırdıqda obyektin hərəkəti necə dəyişər?",
+    "options": [
+      "Hərəkət daha yavaş və rəvan olar",
+      "Obyekt yoxa çıxar",
+      "Slayd silinər",
+      "Hərəkət 6 dəfə sürətlənər"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Duration (müddət) animasiya effektinin icra müddətidir. Zaman artdıqca hərəkət daha yavaş yerinə yetirilir.",
+      "distractors": {
+        "1": "Yoxa çıxmaz.",
+        "2": "Slayd silinməz.",
+        "3": "Zaman artdıqda yavaşlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K02-02-02-009"
+  },
+  {
+    "question": "Trigger (Tətikləyici) funksiyasının təqdimat animasiyasındakı rolunu təhlil edin.",
+    "options": [
+      "Animasiyanı silməsi",
+      "Faylı çapa verməsi",
+      "Animasiyanın yalnız ekrandakı müəyyən başqa bir düyməyə (obyektə) kliklədikdə başlamasını təmin etməsi (interaktiv test/oyun yaratmaq)",
+      "Slaydı avtomatik bağlaması"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Trigger verilmiş obyektə tıklanarkən başqa bir animasiya hadisəsini işə salan interaktiv idarəetmə mexanizmidir.",
+      "distractors": {
+        "0": "Silmir işə salır.",
+        "1": "Çap etmir.",
+        "3": "Bağlamır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K02-02-02-010"
+  },
+  {
+    "question": "Təqdimat nümayiş etdirilərkən həddən artıq çox, qarışıq və sürətli animasiyalardan istifadə edilməsinin pedaqoji və psixoloji mənfi tərəfini təhlil edin.",
+    "options": [
+      "Dinləyicilərin diqqətini əsas məzmundan yayındırması, gözü yorması və təqdimatın peşəkarlığını aşağı salması",
+      "Fayl həcmini sıfırlaması",
+      "Kompüteri sürətləndirməsi",
+      "Təqdimatı daha maraqlı etməsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həddindən artıq dinamika visual küy yaradır; animasiya yalnız diqqəti vacib məqama yönəltmək üçün ölçülü tətbiq edilməlidir.",
+      "distractors": {
+        "1": "Həcmə birbaşa aid deyil.",
+        "2": "Kompüterə yük salır.",
+        "3": "Hər şeyin həddi diqqəti yayındırır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K04-03-03-011"
+  },
+  {
+    "question": "PowerPoint-də hazırlanmış animasiyalı təqdimatın avtomatik videoya (MP4 formatına) çevrilməsinin üstünlüyünü qiymətləndirin.",
+    "options": [
+      "Videonun animasiyaları ləğv etməsi",
+      "Mətnin silinməsi",
+      "Yalnız audio qalması",
+      "MS PowerPoint proqramı olmayan istənilən smartfondakı və ya TV-dəki pleyerlərdə təqdimatın video kimi rahat izlənilməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Export -> Create a Video əmri bütün slayd keçidlərini və animasiyaları vahid MP4 video faylında birləşdirir.",
+      "distractors": {
+        "0": "Animasiyaları kadra çevirir.",
+        "1": "Mətn videoda görünür.",
+        "2": "Video həm vizual həm səsdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K04-03-03-012"
+  },
+  {
+    "question": "Morph (Dönüşüm) keçid effektinin müasir təqdimatlarda yaratdığı kadrlararası hamar keçid effektini təhlil edin.",
+    "options": [
+      "Slaydın ani qaranlıqlaşması",
+      "Səsin kəsilməsi",
+      "Mətnin şrifini dəyişməsi",
+      "İki ardıcıl slayddakı eyni obyektlərin ölçü, mövqe və formasının avtomatik hamar animasiya ilə bir-birinə çevrilməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Morph effekti iki slayd arasındakı obyekt oxşarlıqlarını təhlil edib avtomatik 3D/2D keçid animasiyası generasiya edir.",
+      "distractors": {
+        "0": "Fade to Black-dir.",
+        "1": "Səslə bağlı deyil.",
+        "2": "Şrift dəyişikliyi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K04-03-03-013"
+  },
+  {
+    "question": "Animasiya tətbiq olunmuş mətn blokunda 'Group Text: By 1st level paragraphs' parametrinin iş prinsipləri nədir?",
+    "options": [
+      "Mətn abzaslarının ekrana hamısı birgə deyil, hər klikdə 1-ci dərəcəli bəndlər şəklində tək-tək gəlməsi",
+      "Hər hərfi ayrı rəngləməsi",
+      "Bütün mətni silməsi",
+      "Mətni şəklə çevirməsi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Abzaslar üzrə qruplaşdırma uzun siyahıları addım-addım təqdim etməyə imkan verir.",
+      "distractors": {
+        "1": "Rəngləmir.",
+        "2": "Mətni silmir.",
+        "3": "Şəklə çevirmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K04-03-03-014"
+  },
+  {
+    "question": "Dinamik təqdimatlarda animasiyaların peşəkar dizayn qaydalarına (UX/UI) uyğunlaşdırılmasını qiymətləndirin.",
+    "options": [
+      "Animasiya 10 saniyə sürməlidir",
+      "Hər obyektə 5 müxtəlif animasiya verilməlidir",
+      "Animasiyalar mətni oxumağı çətinləşdirməməli, diqqəti ən vacib nəticələrə yönəltməli və kadrlararası vaxt intervalı 0.3-1.0 saniyə olmalıdır",
+      "Yalnız bənövşəyi rəngdə olmalıdır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Elektron təqdimatda animasiya tətbiqini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Peşəkar dizaynda mikro-animasiyaların çevikliyi (300-500 ms) dinləyicini yormadan vizual konsepti mənimsədir.",
+      "distractors": {
+        "0": "10 saniyə çox yavaşdır.",
+        "1": "Həddən artıq qarışıqlıq yaradır.",
+        "3": "Rəng məhdudiyyəti deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "6. Elektron təqdimatda animasiya",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0206-06K04-03-03-015"
+  },
+  {
+    "question": "MS PowerPoint proqramında slayda səs və ya video faylı daxil etmək üçün hansı lent tabından istifadə olunur?",
+    "options": [
+      "Design (Dizayn)",
+      "Home (Ana səhifə)",
+      "Insert (Daxil et)",
+      "Review (Icmal)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Slayda xarici obyektləri (Media: Audio, Video) daxil etmək üçün 'Insert' lent tabının 'Media' qrupundan istifadə edilir.",
+      "distractors": {
+        "0": "Design slayd tərtibatıdır.",
+        "1": "Home əsas mətn redaktəsidir.",
+        "3": "Review orfoqrafiyadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K01-01-01-001"
+  },
+  {
+    "question": "Elektron təqdimatlarda geniş istifadə olunan standart səs (Audio) faylı formatları hansılardır?",
+    "options": [
+      ".PNG, .JPG",
+      ".MP3, .WAV, .M4A",
+      ".TXT, .DOCX",
+      ".EXE, .BAT"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: MP3, WAV və M4A səs (audio) fayllarının əsas format genişlənmələridir.",
+      "distractors": {
+        "0": ".PNG qrafik şəkildir.",
+        "2": ".TXT mətn faylıdır.",
+        "3": ".EXE icra olunan fayllardır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K01-01-01-002"
+  },
+  {
+    "question": "Təqdimat slaydlarına daxil edilən video fayllarının ən geniş yayılan müasir formatı hansıdır?",
+    "options": [
+      ".PDF",
+      ".HTML",
+      ".ZIP",
+      ".MP4 (və ya .WMV)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: MP4 (MPEG-4) video və audionu yüksək sıxlaşdırma və keyfiyyətlə təqdim edən universal video formatıdır.",
+      "distractors": {
+        "0": ".PDF sənəd formatıdır.",
+        "1": ".HTML veb səhifədir.",
+        "2": ".ZIP arxiv faylıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K01-01-01-003"
+  },
+  {
+    "question": "Slayddakı audio faylının nəzərdə tutulan funksiyasında 'Play Across Slides' (Bütün slaydlar boyunca səsləndir) seçildikdə nə baş verir?",
+    "options": [
+      "Səs dərhal kəsilir",
+      "Musiqi yalnız 1-ci slaydda çalınır",
+      "Musiqi təqdimatın 1-ci slaydından sonuncu slaydınadək arxa fonda fasiləsiz çalınır",
+      "Təqdimat kəsilib bağlanır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Play Across Slides arxa fon musiqisinin slaydlar dəyişdikdə kəsilmədən davam etməsini təmin edir.",
+      "distractors": {
+        "0": "Kəsilmir.",
+        "1": "Standart rejimdə belədir.",
+        "3": "Bağlanmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K01-01-01-004"
+  },
+  {
+    "question": "Slaydda yerləşdirilmiş videonun nümayiş zamanı avtomatik tam ekrana keçməsi üçün hansı parametr aktivləşdirilməlidir?",
+    "options": [
+      "Trim Video",
+      "Loop until Stopped",
+      "Play Full Screen (Tam ekranda səsləndir)",
+      "Hide During Show"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Playback tabında Play Full Screen seçildikdə video pəncərəsi slayddakı ölçüsündən asılı olmayaraq monitoru tam əhatə edir.",
+      "distractors": {
+        "0": "Kəsmək üçündür.",
+        "1": "Dövrü təkrar üçündür.",
+        "3": "Gizlətmək üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K01-01-01-005"
+  },
+  {
+    "question": "PowerPoint-də 'Trim Audio' və ya 'Trim Video' alətinin funksiyası nədir?",
+    "options": [
+      "Faylı silmək",
+      "Audio və ya video faylının əvvəlindən və ya sonundan istənilməyən hissələri kəsib qısaltmaq",
+      "Videonun rəngini dəyişmək",
+      "Səsin ucalığını 10 dəfə qaldırmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Trim (Kəsmə) pəncərəsində başlanğıc və bitmə vaxtı təyin edilərək media faylının yalnız lazımi hissəsi saxlanılır.",
+      "distractors": {
+        "0": "Faylı silmir kəsir.",
+        "2": "Rəng Color parametrindədir.",
+        "3": "Səs ucalığı Volume parametrindədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K02-02-02-006"
+  },
+  {
+    "question": "Slaydda audio faylının tədricən ucalaraq başlamasını və ya tədricən zəifləyərək bitməsini təmin edən parametrlər hansılardır?",
+    "options": [
+      "Volume Up və Volume Down",
+      "Fade In (Tədricən artma) və Fade Out (Tədricən azalma)",
+      "Loop və Rewind",
+      "Start və Stop"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fade In və Fade Out vaxt intervalları (məsələn, 2 saniyə) səsin kəskin deyil, rəvan başlayıb-bitməsinə imkan verir.",
+      "distractors": {
+        "0": "Ümumi səs ucalığıdır.",
+        "2": "Təkrar və geri sarım üçündür.",
+        "3": "Başla və saxla düymələridir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K02-02-02-007"
+  },
+  {
+    "question": "PowerPoint təqdimat faylı (.pptx) başqa kompüterə köçürülərkən daxil edilmiş video faylının açılmaması probleminin səbəbini və həllini təhlil edin.",
+    "options": [
+      "Videolar heç vaxt başqa kompüterdə açılmır",
+      "Proyektor söndürülməlidir",
+      "Kompüterin rəngi uyğun gəlmir",
+      "Videonun təqdimat faylı daxilinə kopyalanmayıb xarici keçid (link) kimi qalması; Həlli: Faylı təqdimata quraşdırmaq (Embed) və ya video ilə pptx-i eyni papqada daşımaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Xarici link verilmiş video başqa kompüterdə nisbi ünvanı tapmadıqda xəta verir. Müasir PPTX faylları videonu daxilə Embed edərək bu problemi həll edir.",
+      "distractors": {
+        "0": "Açılır düzgün daşındıqda.",
+        "1": "Aparat məsələsi deyil.",
+        "2": "Kompüter rənginə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K02-02-02-008"
+  },
+  {
+    "question": "Slayda daxil edilmiş videonun üzərinə müəyyən saniyələrdə xüsusi işarələr (Bookmark) qoyulmasının üstünlüyü nədir?",
+    "options": [
+      "Səsin dilini dəyişmək",
+      "Təqdimatın parolunu silmək",
+      "Videonu ləğv etmək",
+      "Nümayiş zamanı videonun həmin dəqiq saniyəsinə dərhal keçmək və həmin an animasiya işə salmaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bookmark (Əlfəcin) video daxilində naviqasiya nöqtələri yaradır və trigger animasiyaları üçün zəmin yaradır.",
+      "distractors": {
+        "0": "Tərcümə etmir.",
+        "1": "Parola aid deyil.",
+        "2": "Ləğv etmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K02-02-02-009"
+  },
+  {
+    "question": "MS PowerPoint-də diktorun (müəllimin) canlı səsini və slayd nümayişini video kimi qeydə alan hansı alət var?",
+    "options": [
+      "Record Slide Show (Slayd nümayişini yaz)",
+      "Photo Album",
+      "Screen Grid",
+      "WordArt"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Record Slide Show aləti müəllimin mikrofondan səsini və kamera görüntüsünü hər bir slayda sinxron yazaraq dərsi videodərsə çevirir.",
+      "distractors": {
+        "1": "Fotolar albomudur.",
+        "2": "Tor xətləridir.",
+        "3": "Mətn dizaynıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K02-02-02-010"
+  },
+  {
+    "question": "Təqdimat slaydlarına İnternetdən (YouTube və s.) onlayn video daxil etməyin üstünlüyü və çatışmazlığı hansıdır?",
+    "options": [
+      "Üstünlüyü yoxdur çatışmazlığı yoxdur",
+      "PPTX faylı 1 GB olur",
+      "İnternetsiz daha sürətli açılır",
+      "Üstünlüyü: PPTX faylının həcmi böyümür; Çatışmazlığı: Nümayiş zamanı İnternet bağlantısı məcburi tələb olunur"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Online Video keçidi faylın həcmini artırmır, lakin şəbəkə kəsildikdə video pəncərəsi işləmir.",
+      "distractors": {
+        "0": "Hər iki cəhəti var.",
+        "1": "Fayl həcmi böyümür keçiddir.",
+        "2": "İnternetsiz açılmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K04-03-03-011"
+  },
+  {
+    "question": "Audio faylının sıxlaşdırılmasında MP3 formatının WAV formatından əsas fərqini təhlil edin.",
+    "options": [
+      "MP3 itki ilə sıxlaşdırılmış kiçik həcmli formatdır, WAV isə sıxlaşdırılmamış tam keyfiyyətli böyük həcmli səs faylıdır",
+      "MP3 videodur WAV səsdir",
+      "Fərq yoxdur",
+      "WAV faylı daha kiçikdir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: WAV PCM analoji səs siqnalının tam rəqəmsal surətidir (böyük həcm), MP3 isə insan qulağının eşitmədiyi tezlikləri silərək həcmi 10 dəfə kiçildir.",
+      "distractors": {
+        "1": "Hər ikisi audiodur.",
+        "2": "Sıxlaşdırma fərqi var.",
+        "3": "WAV dəfələrlə böyükdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K04-03-03-012"
+  },
+  {
+    "question": "Təqdimatda böyük həcmli (məsələn, 500 MB) video faylı əlavə edildikdə faylın optimallaşdırılması üçün PowerPoint-də hansı funksiya mövcuddur?",
+    "options": [
+      "Slide Master",
+      "Encrypt with Password",
+      "Format Shape",
+      "Compress Media (Media fayllarını sıx)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: File -> Info -> Compress Media menyusu videonun keyfiyyətini (1080p, 720p, 480p) tənzimləyərək PPTX faylının ümumi həcmini kəskin azaldır.",
+      "distractors": {
+        "0": "Slayd şablonudur.",
+        "1": "Parol qoymadır.",
+        "2": "Fiqur formatıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K04-03-03-013"
+  },
+  {
+    "question": "Audio iconunun (Karnay şəkilinin) təqdimat nümayişi zamanı ekranda görünməməsi üçün hansı parametr seçilməlidir?",
+    "options": [
+      "Play in Background",
+      "Loop until Stopped",
+      "Volume Mute",
+      "Hide During Show (Nümayiş zamanı gizlət)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Audio Tools Playback hissəsində 'Hide During Show' çəkboksu aktiv edildikdə səs simvolu F5 nümayişində gizlənir.",
+      "distractors": {
+        "0": "Arxa fonda çalır.",
+        "1": "Təkrar edir.",
+        "2": "Səsi tam kəsir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K04-03-03-014"
+  },
+  {
+    "question": "Elektron təqdimatlarda audio və video resurslarının effektiv pedaqoji inteqrasiyasını qiymətləndirin.",
+    "options": [
+      "Video istifadəsi qadağandır",
+      "Audio və video təqdimatı korlayır",
+      "Mətn və vizualın media ilə dəstəklənməsi dinləyicilərin müxtəlif qavrama kanallarını (görmə və eşitmə) eyni vaxtda aktivləşdirərək təlim nəticəsini maksimal edir",
+      "Səs yalnız uşaqlar üçündür"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Təqdimatda media inteqrasiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Polisensor (çox duyğulu) təqdimat informasiyanın uzunmüddətli yaddaşda möhkəmlənməsinə birbaşa kömək edir.",
+      "distractors": {
+        "0": "Geniş istifadə edilir.",
+        "1": "Effektivliyi artırır.",
+        "3": "Hər kəs üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "7. Təqdimatda səs və video",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0207-07K04-03-03-015"
+  }
+]

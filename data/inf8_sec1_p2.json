@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Onluq say sistemindəki ədədi ikili say sisteminə çevirmək üçün hansı alqoritm tətbiq olunur?",
+    "options": [
+      "Ədədi 2-yə ardıcıl bölmək və qalıqları sondan əvvələ yazmaq",
+      "Ədədə 2 əlavə etmək",
+      "Ədədi 10-a bölmək",
+      "Ədədi 2-yə vurmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Onluq ədədi 2-lik sistemə çevirmək üçün ədəd qismət 0 olana qədər 2-yə bölünür və alınan qalıqlar tərs sırayla düzülür.",
+      "distractors": {
+        "1": "Toplama çevirmə üsulu deyil.",
+        "2": "10-a bölmək onluq sistem üçündür.",
+        "3": "Vurma kəsr hissə çevrilməsindədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K01-01-01-001"
+  },
+  {
+    "question": "Səkkizlik (8-lik) sistemdə verilmiş ədədi ikili say sisteminə keçirmək üçün nə etmək lazımdır?",
+    "options": [
+      "Ədədi 2-yə vurmaq",
+      "Hər bir 8-lik rəqəmi 3 bitlik ikili kodla (triada ilə) əvəz etmək",
+      "Ədədi 8-ə bölmək",
+      "Hər rəqəmi 4 bitlik kodla əvəz etmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 8 = 2³ olduğu üçün 8-lik sistemin hər rəqəmi 3 rəqəmli ikili triadaya əvəzlənir (məsələn, 5₈ = 101₂).",
+      "distractors": {
+        "0": "İkiliyə keçid vurma deyil.",
+        "2": "Onluqdan 8-liyə keçid üçündür.",
+        "3": "4 bit 16-lıq üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K01-01-01-002"
+  },
+  {
+    "question": "Onaltılıq (16-lıq) say sistemindəki ədədi ikili say sisteminə birbaşa çevirmə qaydası hansıdır?",
+    "options": [
+      "Hər 16-lıq rəqəmini 4 bitlik ikili kodla (tetrada ilə) əvəz etmək",
+      "Hər rəqəmi 3 bitlik triada ilə əvəz etmək",
+      "Ədədi 2-yə bölmək",
+      "Ədədi 16-ya vurmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 16 = 2⁴ olduğu üçün 16-lıq rəqəmlər (0-F) 4 bitlik tetrada ilə (məsələn, C₁₆ = 1100₂) təsvir olunur.",
+      "distractors": {
+        "1": "3 bit 8-lik üçündür.",
+        "2": "Bölmə onluqdan çevirmə üçündür.",
+        "3": "Vurma çevirmə deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K01-01-01-003"
+  },
+  {
+    "question": "İkili koda verilmiş 101110₂ ədədini səkkizlik (8-lik) say sisteminə çevirmək üçün qruplaşdırma necə aparılır?",
+    "options": [
+      "Sağdan sola 2-2 ayırmaq",
+      "Soldan sağa 4-4 ayırmaq",
+      "Sağdan sola 3-3 (triadalara) ayırmaq: (101)(110)₂ = 56₈",
+      "Ədədləri toplamaq"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkili ədəd sağdan sola tam 3-3 qruplara ayrılır: 101₂ = 5, 110₂ = 6 -> 56₈.",
+      "distractors": {
+        "0": "2-2 4-lük üçündür.",
+        "1": "4-4 16-lıq üçün sağdan sola aparılır.",
+        "3": "Toplama aparılmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K01-01-01-004"
+  },
+  {
+    "question": "İkili 11010110₂ ədədini onaltılıq (16-lıq) say sisteminə keçirin.",
+    "options": [
+      "A6₁₆",
+      "D6₁₆",
+      "C6₁₆",
+      "B6₁₆"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sağdan sola 4-4 ayıraq: 1101 (13=D) və 0110 (6). Birləşdirdikdə: D6₁₆.",
+      "distractors": {
+        "0": "1101 = 13 (D)-dir, 10 (A) deyil.",
+        "2": "1101 = 13 (D)-dir, 12 (C) deyil.",
+        "3": "1101 = 13 (D)-dir, 11 (B) deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K01-01-01-005"
+  },
+  {
+    "question": "8-lik say sistemində 45₈ ədədini onluq say sisteminə çevirin.",
+    "options": [
+      "40₁₀",
+      "37₁₀",
+      "45₁₀",
+      "32₁₀"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 45₈ = 4×8¹ + 5×8⁰ = 32 + 5 = 37₁₀.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "Say sistemi dəyişməlidir.",
+        "3": "Yalnız 4×8 hissəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K02-02-02-006"
+  },
+  {
+    "question": "16-lıq say sistemində 2C₁₆ ədədini onluq say sisteminə çevirin.",
+    "options": [
+      "34₁₀",
+      "42₁₀",
+      "44₁₀",
+      "50₁₀"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: C=12-dir. 2C₁₆ = 2×16¹ + 12×16⁰ = 32 + 12 = 44₁₀.",
+      "distractors": {
+        "0": "C=2 götürülüb.",
+        "1": "C=10 götürülüb (20+12-2).",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K02-02-02-007"
+  },
+  {
+    "question": "100₁₀ onluq ədədini 8-lik say sisteminə çevirin.",
+    "options": [
+      "100₈",
+      "164₈",
+      "124₈",
+      "144₈"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 100 / 8 = 12 (qalıq 4); 12 / 8 = 1 (qalıq 4); Qalıqlar və son qismət: 144₈.",
+      "distractors": {
+        "0": "Ədəd onluqda 100-dür.",
+        "1": "Hesablama səhvidir.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K02-02-02-008"
+  },
+  {
+    "question": "255₁₀ onluq ədədini 16-lıq say sisteminə çevirin.",
+    "options": [
+      "FF₁₆",
+      "FE₁₆",
+      "E1₁₆",
+      "100₁₆"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 255 / 16 = 15 (qalıq 15). 15 rəqəmi F-dir. Nəticə: FF₁₆.",
+      "distractors": {
+        "1": "254₁₀ üçün FE-dir.",
+        "2": "Yerlərin səhv yazılmasıdır.",
+        "3": "256₁₀ üçün 100-dür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K02-02-02-009"
+  },
+  {
+    "question": "73₈ (8-lik) ədədini birbaşa 16-lıq say sisteminə çevirin (əvvəl ikiliyə, sonra 16-lığa).",
+    "options": [
+      "73₁₆",
+      "3A₁₆",
+      "3C₁₆",
+      "3B₁₆"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 73₈ = (111)(011)₂ = 111011₂. Sağdan 4-4 ayıraq: 0011 (3) və 1011 (11=B) -> 3B₁₆.",
+      "distractors": {
+        "0": "Rəqəmlər olduğu kimi saxlanıla bilməz.",
+        "1": "1011 = 11 (B)-dir 10 (A) deyil.",
+        "2": "1011 = 11 (B)-dir 12 (C) deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K02-02-02-010"
+  },
+  {
+    "question": "A5₁₆ (16-lıq) ədədini 8-lik say sisteminə keçirin.",
+    "options": [
+      "345₈",
+      "254₈",
+      "145₈",
+      "245₈"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: A5₁₆ = (1010)(0101)₂ = 10100101₂. Sağdan 3-3 ayıraq: (010)(100)(101)₂ = 245₈.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "1": "Triadaların yeri səhvdir.",
+        "2": "İlk triada 2-dir (010)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K04-03-03-011"
+  },
+  {
+    "question": "Müqayisə edin: X = 11010₂ , Y = 33₈ , Z = 1C₁₆. Onluq qiymətlərinə görə artma sırasını müəyyən edin.",
+    "options": [
+      "Y < X < Z",
+      "Z < Y < X",
+      "X = Y = Z",
+      "X (26) < Y (27) < Z (28)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: X = 16+8+2 = 26₁₀; Y = 3×8+3 = 27₁₀; Z = 1×16+12 = 28₁₀. Sıra: 26 < 27 < 28 (X < Y < Z).",
+      "distractors": {
+        "0": "27 < 26 deyil.",
+        "1": "Tərs sıradır.",
+        "2": "Bərabər deyillər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K04-03-03-012"
+  },
+  {
+    "question": "Hesablayın: 1011₂ + 17₈ + 1A₁₆ ifadəsinin nəticəsini onluq say sistemində tapın.",
+    "options": [
+      "52₁₀",
+      "55₁₀",
+      "48₁₀",
+      "50₁₀"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1011₂ = 11₁₀; 17₈ = 1×8 + 7 = 15₁₀; 1A₁₆ = 16 + 10 = 26₁₀. Cəm = 11 + 15 + 26 = 52₁₀.",
+      "distractors": {
+        "1": "Hesablama səhvidir.",
+        "2": "Hesablama səhvidir.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K04-03-03-013"
+  },
+  {
+    "question": "Tənliyi həll edin: X₁₆ = 100₁₀ - 43₈. X-in 16-lıq say sistemindəki qiymətini tapın.",
+    "options": [
+      "65₁₆",
+      "51₁₆",
+      "35₁₆",
+      "41₁₆"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 43₈ = 4×8 + 3 = 35₁₀. Qismət/fərq: 100 - 35 = 65₁₀. 65-i 16-lığa çevirək: 65 / 16 = 4 (qalıq 1) -> 41₁₆.",
+      "distractors": {
+        "0": "65 onluq nəticəsidir, 16-lığa çevrilməlidir.",
+        "1": "Hesablama səhvidir.",
+        "2": "35 43₈-in onluq qiymətidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K04-03-03-014"
+  },
+  {
+    "question": "Say sistemləri arasında çevrilmə alqoritmlərinin kompüter kompyilyatorlarında (translyatorlarında) proqram kodunun icrasına təsirini qiymətləndirin.",
+    "options": [
+      "16-lıq sistem proqramı yavaşladır",
+      "Çevrilmə ləğv edilməlidir",
+      "Kompilyator yalnız onluq say sistemini tanıyır",
+      "Kompilyatorlar mətni/əmr kütləsini dərhal maşın dilinə (ikili koda) çevirərək prosessorda minimal gecikmə ilə icranı təmin edir"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arası dönüşümləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Maşın dili aparatura səviyyəsində ikili siqnallara söykəndiyi üçün istənilən proqramlaşdırma dili (Python, C++) ikili koda çevrilərək icra edilir.",
+      "distractors": {
+        "0": "16-lıq insan vizuallığı üçündür.",
+        "1": "Fiziki olaraq mümkün deyil.",
+        "2": "Onluq sistem maşında işləmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "3. Bir say sistemindən başqasına keçid",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0103-03K04-03-03-015"
+  },
+  {
+    "question": "İnformasiyanın ən kiçik ölçü vahidi hansıdır?",
+    "options": [
+      "Kilobayt",
+      "Bayt",
+      "Bit",
+      "Meqabayt"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnformasiyanın ən kiçik, bölünməz ölçü vahidi 1 bitdir (binary digit - ikili rəqəm 0 və ya 1).",
+      "distractors": {
+        "0": "1 KB = 1024 bayt.",
+        "1": "Bayt əsas ölçü vahididir (8 bit).",
+        "3": "1 MB = 1024 KB."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K01-01-01-001"
+  },
+  {
+    "question": "1 bayt neçə bitə bərabərdir?",
+    "options": [
+      "2 bit",
+      "1024 bit",
+      "10 bit",
+      "8 bit"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Standart informatika tərifinə görə 1 bayt = 8 bitdir.",
+      "distractors": {
+        "0": "2 bit 4 hal deməkdir.",
+        "1": "1 KB = 1024 baytdır.",
+        "2": "1024 ilə qarışdırılmış variantdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K01-01-01-002"
+  },
+  {
+    "question": "1 Kilobayt (KB) neçə baytdır?",
+    "options": [
+      "8 bayt",
+      "1000 bayt",
+      "1024 bayt (2¹⁰ bayt)",
+      "2048 bayt"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkili ölçü sistemində törəmə vahidlər 2¹⁰ = 1024 misli ilə artır: 1 KB = 1024 bayt.",
+      "distractors": {
+        "0": "8 bit 1 baytdır.",
+        "1": "Onluq prefiks (SI) istifadə edilmir informatika ikili prefiks 1024-dür.",
+        "3": "2 KB edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K01-01-01-003"
+  },
+  {
+    "question": "Aşağıdakı informasiya ölçü vahidlərinin kiçikdən böyüyə doğru düzgün ardıcıllığını göstərin.",
+    "options": [
+      "TB -> GB -> MB -> KB -> Bayt",
+      "Bit -> Bayt -> KB -> MB -> GB -> TB",
+      "KB -> MB -> Bayt -> Bit -> GB",
+      "Bayt -> Bit -> KB -> MB -> TB"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kiçikdən böyüyə düzgün ardıcıllıq: Bit (b) < Bayt (B) < Kilobayt (KB) < Meqabayt (MB) < Qiqabayt (GB) < Terabayt (TB).",
+      "distractors": {
+        "0": "Böyükdən kiçiyədir.",
+        "2": "Bayt KB-dan kiçikdir.",
+        "3": "Bit Baytdan kiçikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K01-01-01-004"
+  },
+  {
+    "question": "1 Meqabayt (MB) neçə Kilobayta (KB) bərabərdir?",
+    "options": [
+      "1024 KB",
+      "2048 KB",
+      "1000 KB",
+      "512 KB"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Hər növbəti ölçü vahidi əvvəlkindən 1024 (2¹⁰) dəfə böyükdür: 1 MB = 1024 KB.",
+      "distractors": {
+        "1": "2 MB-dır.",
+        "2": "Onluq sistem təxminidir.",
+        "3": "Yarım MB-dır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K01-01-01-005"
+  },
+  {
+    "question": "32 bit neçə bayta bərabərdir?",
+    "options": [
+      "16 bayt",
+      "4 bayt",
+      "8 bayt",
+      "32 bayt"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 bayt = 8 bit olduğu üçün Bayt sayısı = 32 / 8 = 4 bayt.",
+      "distractors": {
+        "0": "32/2 = 16-dır.",
+        "2": "32/4 = 8 səhv bölmədir.",
+        "3": "32 bitdir bayt deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "unit_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K02-02-02-006"
+  },
+  {
+    "question": "2 KB neçə bitə bərabərdir?",
+    "options": [
+      "2048 bit",
+      "16384 bit",
+      "1024 bit",
+      "8192 bit"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2 KB = 2 × 1024 bayt = 2048 bayt. Bitə çevirmək üçün: 2048 × 8 = 16384 bit (və ya 2¹ × 2¹⁰ × 2³ = 2¹⁴ = 16384 bit).",
+      "distractors": {
+        "0": "2048 baytdır bit deyil (8-ə vurulmayıb).",
+        "2": "1 KB-ın bayt həcmidir.",
+        "3": "1 KB-ın bit həcmidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K02-02-02-007"
+  },
+  {
+    "question": "Faylın həcmi 2²³ bitdir. Bu həcmi Meqabaytla (MB) ifadə edin.",
+    "options": [
+      "1 MB",
+      "1024 MB",
+      "8 MB",
+      "2 MB"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 MB = 1024 KB = 1024 × 1024 bayt = 2²⁰ bayt = 2²⁰ × 2³ bit = 2²³ bit. Deməli 2²³ bit = 1 MB.",
+      "distractors": {
+        "1": "1 GB-dır.",
+        "2": "2²⁶ bit olardı.",
+        "3": "2²⁴ bit olardı."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K02-02-02-008"
+  },
+  {
+    "question": "İnternet şəbəkəsində məlumatın ötürülmə sürəti 8 Mbit/san (Meqabit/saniyə) olarsa, 40 MB həcmində fayl neçə saniyəyə yüklənər?",
+    "options": [
+      "40 saniyə",
+      "5 saniyə",
+      "320 saniyə",
+      "80 saniyə"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sürət = 8 Mbit/san = 1 MB/san (çünki 8 Mbit = 1 MB). Zaman = Həcm / Sürət = 40 MB / 1 MB/san = 40 saniyə.",
+      "distractors": {
+        "1": "Sürət 8 MB/san hesab edilib.",
+        "2": "40 × 8 vurulub bölmək əvəzinə.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K02-02-02-009"
+  },
+  {
+    "question": "Tutumu 4 GB olan fləş kartda həcmi 512 MB olan neçə video fayl saxlamaq olar?",
+    "options": [
+      "8 fayl",
+      "2 fayl",
+      "4 fayl",
+      "16 fayl"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 4 GB = 4 × 1024 MB = 4096 MB. Fayl sayısı = 4096 MB / 512 MB = 8 fayl (və ya 512 MB = 0.5 GB -> 4 / 0.5 = 8).",
+      "distractors": {
+        "1": "Hesablama səhvidir.",
+        "2": "1 GB-dan 512 MB kimi hesablanıb.",
+        "3": "2 GB-dan hesablanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K02-02-02-010"
+  },
+  {
+    "question": "Verilmiş ifadənin nəticəsini hesablayın: 1 GB - 512 MB - 256 MB = ?",
+    "options": [
+      "256 MB",
+      "0 MB",
+      "128 MB",
+      "512 MB"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 GB = 1024 MB. 1024 - 512 = 512 MB. Növbəti: 512 - 256 = 256 MB.",
+      "distractors": {
+        "1": "1 GB 1000 MB hesab edilib.",
+        "2": "Hesablama səhvidir.",
+        "3": "Çıxılma tamamlanmayıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K04-03-03-011"
+  },
+  {
+    "question": "Həcmi 3 KB olan mətn faylı, 2048 bayt olan cədvəl faylı və 1 MB olan təsvir faylının ümumi həcmini baytla hesablayın.",
+    "options": [
+      "1053696 bayt",
+      "1000000 bayt",
+      "5120 bayt",
+      "1048576 bayt"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3 KB = 3 × 1024 = 3072 bayt; 1 MB = 1024 × 1024 = 1048576 bayt. Cəm = 3072 + 2048 + 1048576 = 1053696 bayt.",
+      "distractors": {
+        "1": "SI onluq sistem nəzərə alınıb.",
+        "2": "Yalnız KB və bayt cəmidir.",
+        "3": "Yalnız 1 MB nəzərə alınıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K04-03-03-012"
+  },
+  {
+    "question": "N = 2ⁱ düsturuna əsasən, 1024 müxtəlif vəziyyətə (simvola) malik sistemin 1 elementi yaddaşda neçə bit yer tutur?",
+    "options": [
+      "12 bit",
+      "10 bit",
+      "8 bit",
+      "1024 bit"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: N = 1024 = 2¹⁰, deməli i = 10 bit.",
+      "distractors": {
+        "0": "4096 üçündür.",
+        "2": "256 üçündür.",
+        "3": "N-in özüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K04-03-03-013"
+  },
+  {
+    "question": "Kompüter yaddaşında 1 Qiqabayt (GB) neçə bitdir?",
+    "options": [
+      "2¹⁰ bit",
+      "2²⁰ bit",
+      "2³³ bit (8 × 2³⁰ bit)",
+      "2³⁰ bit"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 GB = 2³⁰ bayt. 1 bayt = 8 bit = 2³ bit. Bitlə həcm = 2³⁰ × 2³ = 2³³ bit.",
+      "distractors": {
+        "0": "1 KB baytdır.",
+        "1": "1 MB baytdır.",
+        "3": "2³⁰ baytdır (8-ə vurulmayıb)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K04-03-03-014"
+  },
+  {
+    "question": "Böyük verilənlər (Big Data) və bulud texnologiyaları dövründə PetaBayt (PB), EkzaBayt (EB), ZettaBayt (ZB) ölçü vahidlərinin informatika üçün əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Qlobal internet trafikini, superkompüter yaddaşlarını və süni intellekt datalarını dəqiq ölçmək üçün miqyaslanan ikili standart təmin edir",
+      "Yalnız kalkulyatorda işləyir",
+      "Fayl həcmini kiçiltmək üçündür",
+      "Bu vahidlər istifadə olunmur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiya ölçü vahidlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Müasir məlumat mərkəzlərində (Data Center) petabaytlarla informasiya emal edildiyi üçün böyük iyerarxik ikili prefikslər həyati vacibdir.",
+      "distractors": {
+        "1": "Sənayedə geniş istifadə edilir.",
+        "2": "Həcmi ölçmək üçündür.",
+        "3": "Müasir dünyada istifadə olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "4. İnformasiyanın ölçülməsi",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0104-04K04-03-03-015"
+  }
+]

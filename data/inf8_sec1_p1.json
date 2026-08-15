@@ -1,0 +1,902 @@
+[
+  {
+    "question": "İnformasiyanın kompüterdə emalı və saxlanması üçün rahat olan formaya salınması prosesi necə adlanır?",
+    "options": [
+      "İnformasiyanın toplanması",
+      "İnformasiyanın silinməsi",
+      "İnformasiyanın axtarılması",
+      "İnformasiyanın kodlaşdırılması"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnformasiyanın müəyyən əlifba və ya siqnallar sistemi (əsasən ikili kod) vasitəsilə təsvir edilməsi kodlaşdırma adlanır.",
+      "distractors": {
+        "0": "Toplanma informasiya prosesidir.",
+        "1": "Silinmə kodlaşdırma deyil.",
+        "2": "Axtarış emaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K01-01-01-001"
+  },
+  {
+    "question": "ASCII (American Standard Code for Information Interchange) kodlaşdırma sistemində 1 simvol yaddaşda neçə bit yer tutur?",
+    "options": [
+      "2 bit",
+      "32 bit (4 bayt)",
+      "16 bit (2 bayt)",
+      "8 bit (1 bayt)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Standart ASCII cədvəlində N = 256 = 2⁸ simvol var və hər simvol yaddaşda 8 bit (1 bayt) yer tutur.",
+      "distractors": {
+        "0": "2 bit cəmi 4 simvol kodlaşdırar.",
+        "1": "32 bit UTF-32-yə aiddir.",
+        "2": "16 bit Unicode (UTF-16) kodlaşdırmasına aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K01-01-01-002"
+  },
+  {
+    "question": "Unicode kodlaşdırma sistemində (UTF-16) bir simvol yaddaşda neçə bayt həcm tutur?",
+    "options": [
+      "1 bayt (8 bit)",
+      "2 bayt (16 bit)",
+      "4 bayt",
+      "8 bayt"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Unicode (UTF-16) standartında 2¹⁶ = 65536 müxtəlif simvol kodlaşdırılır və hər simvol 2 bayt (16 bit) həcm tutur.",
+      "distractors": {
+        "0": "1 bayt ASCII standartıdır.",
+        "2": "4 bayt 32 bitdir.",
+        "3": "8 bayt 64 bitdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K01-01-01-003"
+  },
+  {
+    "question": "Kodlaşdırılmış ikili məlumatın yenidən ilkin başa düşülən formaya qaytarılması prosesi necə adlanır?",
+    "options": [
+      "Kodlaşdırma",
+      "Dekodlaşdırma (deşifrələmə)",
+      "Translyasiya",
+      "Arxivləşdirmə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kodlaşdırılmış siqnalların və ya ikili kodların ilkin informasiya formasına (mətn, səs, təsvir) çevrilməsi dekodlaşdırma adlanır.",
+      "distractors": {
+        "0": "Kodlaşdırma əks prosesdir.",
+        "2": "Translyasiya proqram dilinin çevrilməsidir.",
+        "3": "Arxivləşdirmə sıxlaşdırmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K01-01-01-004"
+  },
+  {
+    "question": "Dünyanın müxtəlif xalqlarının əlifbalarındakı bütün simvolları vahid kod sistemində birləşdirmək üçün yaradılmış standart hansıdır?",
+    "options": [
+      "Windows-1251",
+      "ASCII",
+      "Unicode",
+      "KOI8-R"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Unicode müxtəlif dillərin simvollarını və xüsusi işarələri vahid universal bazada kodlaşdırmaq üçün yaradılmış beynəlxalq standartdır.",
+      "distractors": {
+        "0": "Windows-1251 kiril əlifbasıdır.",
+        "1": "ASCII yalnız 256 simvol (ingilis əlifbası) tutur.",
+        "3": "KOI8-R rus dili kodlaşdırmasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K01-01-01-005"
+  },
+  {
+    "question": "ASCII kodlaşdırma sistemində yazılmış \"INFORMATIKA\" sözünün yaddaş həcmini hesablayın.",
+    "options": [
+      "22 bayt",
+      "88 bayt",
+      "11 bayt (88 bit)",
+      "11 bit"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: \"INFORMATIKA\" sözündə 11 simvol var. ASCII-də 1 simvol = 1 bayt olduğu üçün Həcm = 11 × 1 bayt = 11 bayt = 88 bit.",
+      "distractors": {
+        "0": "22 bayt Unicode ilə olardı.",
+        "1": "88 bayt deyil 88 bitdir.",
+        "3": "11 bit deyil 11 baytdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "unit_error",
+      "3": "unit_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K02-02-02-006"
+  },
+  {
+    "question": "Unicode sistemində yaddaşda 64 bayt yer tutan mətndə neçə simvol vardır?",
+    "options": [
+      "32 simvol",
+      "128 simvol",
+      "64 simvol",
+      "16 simvol"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Unicode sistemində 1 simvol = 2 baytdır. Simvol sayısı = 64 bayt / 2 bayt = 32 simvol.",
+      "distractors": {
+        "1": "Vurma səhvidir (64×2).",
+        "2": "64 simvol ASCII-də olardı.",
+        "3": "Hesablama səhvidir (64/4)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K02-02-02-007"
+  },
+  {
+    "question": "Əlifbanın gücü (müxtəlif simvolların sayısı) N = 64 olarsa, bu əlifbanın 1 simvolunun informasiya tutumu neçə bitdir?",
+    "options": [
+      "6 bit",
+      "8 bit",
+      "64 bit",
+      "5 bit"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: N = 2ⁱ düsturuna əsasən 64 = 2⁶, deməli 1 simvol i = 6 bit informasiya daşıyır.",
+      "distractors": {
+        "1": "28 = 256 edər.",
+        "2": "64 əlifbanın gücüdür.",
+        "3": "25 = 32 edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K02-02-02-008"
+  },
+  {
+    "question": "ASCII cədvəlində 'A' baş hərfinin kodu onluq say sistemində 65-dir. 'D' baş hərfinin onluq kodunu tapın.",
+    "options": [
+      "68",
+      "66",
+      "67",
+      "69"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: A=65, B=66, C=67, D=68. İngilis əlifbasında D hərfi A-dan 3 addım sonradır: 65 + 3 = 68.",
+      "distractors": {
+        "1": "66 'B' hərfinin kodudur.",
+        "2": "67 'C' hərfinin kodudur.",
+        "3": "69 'E' hərfinin kodudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K02-02-02-009"
+  },
+  {
+    "question": "64 simvollu əlifba ilə yazılmış 20 simvoldan ibarət mətnin yaddaş həcmini hesablayın.",
+    "options": [
+      "120 bayt",
+      "120 bit (15 bayt)",
+      "320 bit",
+      "64 bit"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: N = 64 = 2⁶ -> 1 simvol = 6 bit. 20 simvol × 6 bit = 120 bit = 15 bayt.",
+      "distractors": {
+        "0": "120 bitdir bayt deyil.",
+        "2": "Vurma səhvidir.",
+        "3": "Əlifbanın gücüdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "unit_error",
+      "2": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K02-02-02-010"
+  },
+  {
+    "question": "Mətn faylı ASCII-dən Unicode-a çevrildikdə onun yaddaşda tutduğu həcm necə dəyişər?",
+    "options": [
+      "Dəyişməz qalar",
+      "Həcmi 4 dəfə artar",
+      "Həcmi 2 dəfə azalar",
+      "Həcmi 2 dəfə artar"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: ASCII-də 1 simvol = 1 bayt, Unicode-da 1 simvol = 2 baytdır. Eyni mətn Unicode-a keçdikdə hər simvol 2 dəfə böyük həcm tutur.",
+      "distractors": {
+        "0": "Kodlaşdırma standartı fərqlidir.",
+        "1": "4 dəfə deyil 2 dəfə artır.",
+        "2": "Azalmaz artar."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K04-03-03-011"
+  },
+  {
+    "question": "32 səhifəlik kitabın hər səhifəsində 64 sətir və hər sətirdə 64 simvol var. ASCII-də yazılmış bu kitabın həcmini kilobaytla (KB) hesablayın.",
+    "options": [
+      "64 KB",
+      "256 KB",
+      "512 KB",
+      "128 KB"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həcm = 32 səhifə × 64 sətir × 64 simvol × 1 bayt = 2⁵ × 2⁶ × 2⁶ = 2¹⁷ bayt. KB-a çevirmək üçün 2¹⁰-a bölarik: 2¹⁷ / 2¹⁰ = 2⁷ = 128 KB.",
+      "distractors": {
+        "0": "Hesablama səhvidir (2¹⁶/2¹⁰).",
+        "1": "Unicode ilə hesablanmış variantdır.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K04-03-03-012"
+  },
+  {
+    "question": "Qrafik təsvirin 1 pikseli 256 rəng çalarlarından birini ala bilirsə, 1 pikselin kodlaşdırılması üçün neçə bit tələb olunur?",
+    "options": [
+      "4 bit",
+      "16 bit",
+      "8 bit (1 bayt)",
+      "256 bit"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rəng palitrasının tutumu N = 256 = 2⁸. N = 2ⁱ düsturuna əsasən 1 piksel i = 8 bit (1 bayt) yer tutur.",
+      "distractors": {
+        "0": "16 rəng üçündür.",
+        "1": "65536 rəng üçündür.",
+        "3": "256 rəng sayıdır bit deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K04-03-03-013"
+  },
+  {
+    "question": "Unicode-da verilmiş mətnin həcmi 1.5 KB-dır. Bu mətndə neçə simvol vardır?",
+    "options": [
+      "1536 simvol",
+      "1024 simvol",
+      "768 simvol",
+      "3072 simvol"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1.5 KB = 1.5 × 1024 = 1536 bayt. Unicode-da 1 simvol = 2 bayt olduğu üçün Simvol sayısı = 1536 / 2 = 768 simvol.",
+      "distractors": {
+        "0": "1536 bayt həcmidir (ASCII simvol sayısı).",
+        "1": "Hesablama səhvidir.",
+        "3": "Vurma səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K04-03-03-014"
+  },
+  {
+    "question": "Müasir kompüterlərdə mətn, səs, təsvir və video məlumatların vahid ikili (0 və 1) kodla ifadə olunmasının elmi-texniki üstünlüyünü qiymətləndirin.",
+    "options": [
+      "Kodlaşdırmanın ləğv olunması",
+      "Məlumatın saxlanması, emalı və ötürülməsinin unifikasiyası və texniki qurğuların etibarlığının maksimal olması",
+      "Kompüterin elektiriksiz işləməsi",
+      "Faylların həcminin sıfır olması"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnformasiyanın kodlaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkili kodlaşdırma (0 və 1) iki dayanıqlı fiziki vəziyyətə (siqnal var/yoxdur) əsaslandığı üçün küyə davamlılıq və universallıq təmin edir.",
+      "distractors": {
+        "0": "Kodlaşdırma təməldir.",
+        "2": "Elektrik lazımdır.",
+        "3": "Həcm sıfır olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "1. İnformasiyanın kodlaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0101-01K04-03-03-015"
+  },
+  {
+    "question": "İkili (2-lik) say sisteminin əsası (bazası) nədir və hansı rəqəmlərdən istifadə edir?",
+    "options": [
+      "Əsası 16-dır",
+      "Əsası 2-dir, yalnız 0 və 1 rəqəmlərindən istifadə edir",
+      "Əsası 8-dir, 0-7 rəqəmləri",
+      "Əsası 10-dur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkili say sistemi p=2 əsaslı mövqeli say sistemidir və yalnız iki rəqəmə (0 və 1) malikdir.",
+      "distractors": {
+        "0": "16-lıq say sistemidir.",
+        "2": "8-lik say sistemidir.",
+        "3": "10-luq onluq say sistemidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K01-01-01-001"
+  },
+  {
+    "question": "Səkkizlik (8-lik) say sistemində istifadə olunan ən böyük rəqəm hansıdır?",
+    "options": [
+      "9",
+      "1",
+      "8",
+      "7"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 8-lik say sistemində 0, 1, 2, 3, 4, 5, 6, 7 rəqəmləri istifadə edilir. Ən böyük rəqəm 7-dir.",
+      "distractors": {
+        "0": "9 rəqəmi onluq sistemdədir.",
+        "1": "1 kiçik rəqəmdir.",
+        "2": "8 rəqəmi 8-lik sistemdə yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K01-01-01-002"
+  },
+  {
+    "question": "Onaltılıq (16-lıq) say sistemində 10, 11, 12, 13, 14, 15 ədədləri hansı latın hərfləri ilə əvəz olunur?",
+    "options": [
+      "X, Y, Z, K, L, M",
+      "10, 11, 12, 13, 14, 15",
+      "A, B, C, D, E, F",
+      "α, β, γ, δ, ε, ζ"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 16-lıq say sistemində 0-9 rəqəmlərindən sonra A=10, B=11, C=12, D=13, E=14, F=15 hərfləri istifadə edilir.",
+      "distractors": {
+        "0": "Yanlış hərflərdir.",
+        "1": "Tək rəqəm kimi yazılmalıdır.",
+        "3": "Yunan hərfləri deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K01-01-01-003"
+  },
+  {
+    "question": "Rəqəmin ədəddə tutduğu mövqedən (mərəbədən) asılı olaraq qiymətinin dəyişdiyi say sistemləri necə adlanır?",
+    "options": [
+      "Roma say sistemləri",
+      "Mövqeli say sistemləri",
+      "Mövqesiz say sistemləri",
+      "Əlifba say sistemləri"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mövqeli say sistemlərində (2-lik, 8-lik, 10-luq, 16-lıq) rəqəmin qiyməti onun durduğu mərtəbədən asılıdır (məsələn, 11 ədədində birinci 1 onluq, ikinci 1 təklikdir).",
+      "distractors": {
+        "0": "Roma mövqesizdir.",
+        "2": "Mövqesizdə (Roma) mərtəbə yoxdur.",
+        "3": "Tarixi mövqesizdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K01-01-01-004"
+  },
+  {
+    "question": "Roma say sistemində V, X, L, C, D, M simvolları müvafiq olaraq hansı onluq ədədlərə uyğundur?",
+    "options": [
+      "5, 10, 50, 100, 500, 1000",
+      "10, 50, 100, 500, 1000, 5000",
+      "1, 5, 10, 50, 100, 500",
+      "5, 10, 20, 50, 100, 200"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Roma rəqəmləri: V=5, X=10, L=50, C=100 (Centum), D=500, M=1000 (Mille).",
+      "distractors": {
+        "1": "V=5-dir.",
+        "2": "I=1 nəzərə alınmayıb.",
+        "3": "20 və 200 simvolu yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K01-01-01-005"
+  },
+  {
+    "question": "8-lik say sisteminin 1 rəqəmini təsvir etmək üçün neçə bit ikili kod tələb olunur?",
+    "options": [
+      "8 bit",
+      "1 bit",
+      "3 bit (triada)",
+      "4 bit (tetrada)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: N = 2ⁱ düsturuna əsasən 8 = 2³, deməli 8-lik sistemin hər bir rəqəmi tam 3 bit ikili koda (triadaya) uyğundur.",
+      "distractors": {
+        "0": "8 bit 1 baytdır.",
+        "1": "1 bit 2-lik sistem üçündür.",
+        "3": "4 bit 16-lıq sistem üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K02-02-02-006"
+  },
+  {
+    "question": "16-lıq say sisteminin 1 rəqəmini təsvir etmək üçün neçə bit ikili kod tələb olunur?",
+    "options": [
+      "4 bit (tetrada)",
+      "3 bit (triada)",
+      "16 bit",
+      "2 bit"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: N = 2ⁱ düsturuna görə 16 = 2⁴, deməli 16-lıq sistemin hər rəqəmi 4 bit ikili koda (tetradaya) uyğundur.",
+      "distractors": {
+        "1": "3 bit 8-lik sistem üçündür.",
+        "2": "16 say sisteminin əsasıdır.",
+        "3": "2 bit 4-lük sistem üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K02-02-02-007"
+  },
+  {
+    "question": "İkili 1101₂ ədədini onluq say sisteminə çevirin.",
+    "options": [
+      "9₁₀",
+      "11₁₀",
+      "15₁₀",
+      "13₁₀"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1101₂ = 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13₁₀.",
+      "distractors": {
+        "0": "1001₂ üçün 9-dur.",
+        "1": "1011₂ üçün 11-dir.",
+        "2": "1111₂ üçün 15-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K02-02-02-008"
+  },
+  {
+    "question": "Aşağıdakı ədədlərdən hansı 8-lik say sistemində mövcud ola BİLMƏZ?",
+    "options": [
+      "761₈",
+      "305₈",
+      "124₈",
+      "582₈"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 8-lik say sistemində 8 rəqəmi yoxdur (rəqəmlər 0-7 arasıdır). 582₈ ədədində 8 yazıldığı üçün bu ədəd səhvdir.",
+      "distractors": {
+        "0": "Rəqəmlər 7,6,1 - düzgündür.",
+        "1": "Rəqəmlər 3,0,5 - düzgündür.",
+        "2": "Rəqəmlər 1,2,4 - düzgündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K02-02-02-009"
+  },
+  {
+    "question": "16-lıq say sistemində yazılmış 1A₁₆ ədədini onluq say sisteminə çevirin.",
+    "options": [
+      "10₁₀",
+      "16₁₀",
+      "30₁₀",
+      "26₁₀"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1A₁₆: A=10-dur. 1A₁₆ = 1×16¹ + 10×16⁰ = 16 + 10 = 26₁₀.",
+      "distractors": {
+        "0": "Yalnız A hissəsidir.",
+        "1": "Yalnız 10₁₆ olsaydı 16 olardı.",
+        "2": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K02-02-02-010"
+  },
+  {
+    "question": "İkili say sistemində ən böyük 4-rəqəmli ədəd (1111₂) onluq sistemdə neçəyə bərabərdir?",
+    "options": [
+      "15",
+      "16",
+      "8",
+      "31"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1111₂ = 2⁴ - 1 = 16 - 1 = 15₁₀ (və ya 8+4+2+1 = 15).",
+      "distractors": {
+        "1": "2⁴ = 16-dır.",
+        "2": "2³ = 8-dir.",
+        "3": "5 rəqəmlidir (2⁵-1)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K04-03-03-011"
+  },
+  {
+    "question": "8-lik sistemdə 37₈ ədədini ikili koda (triadalara) çevirin.",
+    "options": [
+      "011100₂",
+      "111000₂",
+      "100111₂",
+      "011111₂"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3₈ = 011₂, 7₈ = 111₂. Birləşdirdikdə: 011111₂ (və ya 011 111₂).",
+      "distractors": {
+        "0": "7₈ 111-dir.",
+        "1": "Yerlər səhvdir.",
+        "2": "3₈ 011-dir 100 deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K04-03-03-012"
+  },
+  {
+    "question": "16-lıq sistemdə 2F₁₆ ədədini ikili koda (tetradalara) çevirin.",
+    "options": [
+      "00101111₂",
+      "00101010₂",
+      "01001111₂",
+      "00111111₂"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 2₁₆ = 0010₂, F₁₆ (15) = 1111₂. Yan-yana yazdıqda: 00101111₂.",
+      "distractors": {
+        "1": "F 1111-dir 1010 (A) deyil.",
+        "2": "2₁₆ 0010-dur 0100 (4) deyil.",
+        "3": "2₁₆ 0010-dur 0011 (3) deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K04-03-03-013"
+  },
+  {
+    "question": "Onluq say sistemində verilmiş 45₁₀ ədədini ikili say sisteminə keçirin.",
+    "options": [
+      "110101₂",
+      "101101₂",
+      "111001₂",
+      "101011₂"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 45 = 32 + 8 + 4 + 1 = 2⁵ + 2³ + 2² + 2⁰ -> 101101₂ (ardıcıl 2-yə bölmə üsulu ilə).",
+      "distractors": {
+        "0": "53₁₀ edər.",
+        "2": "57₁₀ edər.",
+        "3": "43₁₀ edər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K04-03-03-014"
+  },
+  {
+    "question": "Say sistemlərinin kompüter arxitekturasında rolu: İnformasiyanın kompüter daxilində 2-lik (fiziki tranzistorlar), mikroproqramlaşdırmada 8-lik və 16-lıq (yaddaş ünvanları RAM) kimi istifadə edilməsinin məntiqini təhlil edin.",
+    "options": [
+      "16-lıq say sistemi yalnız latın hərfləri üçündür",
+      "Kompüter daxilində yalnız Roma rəqəmləri işləyir",
+      "8-lik say sistemi kompüteri ləğv etmək üçündür",
+      "İkili kod texniki fiziki həyata keçirmə üçün ideal, 8-lik və 16-lıq isə uzun ikili kodları insan üçün qısa və rahat oxunaqlı təsvir etmək üçündür"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Say sistemləri arasında rabitəni təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tranzistorların iki vəziyyəti (açıq/qapalı) 2-lik sistemi məcburi edir; 16-lıq və 8-lik isə hər 4 və 3 biti 1 simvolla əvəz edərək kodu kompaktlaşdırır.",
+      "distractors": {
+        "0": "Yaddaş ünvanları üçündür.",
+        "1": "Roma mövqesizdir işləmir.",
+        "2": "Mənasız variantdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "2. 2-lik, 8-lik və 16-lıq say sistemləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0102-02K04-03-03-015"
+  }
+]

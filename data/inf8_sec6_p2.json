@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Kompüterləri aparatura və proqram vasitələri ilə birləşdirərək məlumat və resurs (printer, fayl) mübadiləsi yaradan sistem necə adlanır?",
+    "options": [
+      "Verilənlər bazası",
+      "Proqramlaşdırma dili",
+      "Kompüter şəbəkəsi (Computer Network)",
+      "Əməliyyat sistemi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kompüter şəbəkəsi iki və ya daha çox kompüterin aparat və rabitə kanalları ilə vahid sistemə inteqrasiyasıdır.",
+      "distractors": {
+        "0": "Baza saxlancıdır.",
+        "1": "Kod dilidir.",
+        "3": "OS proqramdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K01-01-01-001"
+  },
+  {
+    "question": "Məhdud bir ərazidə (otaq, mənzil, məktəb binası) kompüterləri birləşdirən şəbəkə növü hansıdır?",
+    "options": [
+      "Şəhər şəbəkəsi (MAN)",
+      "Lokal şəbəkə (LAN - Local Area Network)",
+      "Qlobal şəbəkə (WAN)",
+      "Kosmik şəbəkə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: LAN (Local Area Network) kiçik coğrafi ərazidəki qurğuları yüksək sürətlə birləşdirir.",
+      "distractors": {
+        "0": "MAN şəhər miqyasındadır.",
+        "2": "WAN bütün dünyanı əhatə edir.",
+        "3": "Kosmik peykdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K01-01-01-002"
+  },
+  {
+    "question": "Şəbəkədə olan bütün kompüterlərə xidmət göstərən, resursları paylayan mərkəzi yüksək güclü kompüter necə adlanır?",
+    "options": [
+      "Modem",
+      "Klient (Müştəri)",
+      "Monitor",
+      "Server (Qulluqçu / Xidmətçi kompüter)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Server şəbəkə resurslarını idarə edən və klient sorğularına cavab verən əsas mərkəzi düyündür.",
+      "distractors": {
+        "0": "Rabitə aparatıdır.",
+        "1": "Klient xidməti alan tərəfdir.",
+        "2": "Görüntü qurğusudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K01-01-01-003"
+  },
+  {
+    "question": "Kompüterin analoq siqnalını rəqəmsal siqnala (və ya əksinə) çevirərək telefon və ya fiber-optik xətti ilə internetə qoşulmasını təmin edən qurğu hansıdır?",
+    "options": [
+      "Prosessor",
+      "Klaviatura",
+      "Printer",
+      "Modem (Modulyator-Demodulyator)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Modem (Modulator/Demodulator) rabitə kanalındakı analoq dalğaları kompüterin başa düşdüyü rəqəmsal 0 və 1-lərə çevirir.",
+      "distractors": {
+        "0": "Hesablayır.",
+        "1": "Daxil edir.",
+        "2": "Çap edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K01-01-01-004"
+  },
+  {
+    "question": "Kompüterlərin şəbəkədə birləşdirilməsi sxemi və həndəsi konfiqurasiyası necə adlanır?",
+    "options": [
+      "Proqram",
+      "Fayl sistemi",
+      "Şəbəkə topologiyası (Network Topology)",
+      "Alqoritm"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şəbəkə topologiyası kabel və qurğuların fiziki və məntiqi düzülüş xəritəsidir (Şin, Həlqə, Ulduz).",
+      "distractors": {
+        "0": "Tətbiqdir.",
+        "1": "Disk saxlancıdır.",
+        "3": "Addımlar sırasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K01-01-01-005"
+  },
+  {
+    "question": "Mərkəzi qovşaq (Hub və ya Switch) vasitəsilə bütün kompüterlərin şüa kimi bir mərkəzə bağlandığı topologiya hansıdır?",
+    "options": [
+      "Şin (Bus) topologiyası",
+      "Ağac topologiyası",
+      "Ulduz (Star) topologiyası",
+      "Həlqə (Ring) topologiyası"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ulduz (Star) topologiyasında hər bir klient kompüter müstəqil kabellə mərkəzi Switch-ə qoşulur.",
+      "distractors": {
+        "0": "Tək magistral kabellədir.",
+        "1": "İyerarxik ulduzdur.",
+        "3": "Dairəvi zəncirdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K02-02-02-006"
+  },
+  {
+    "question": "İnternet şəbəkəsində hər bir kompüterə və ya cihaza verilən UNİKAL 4 ədədlik rəqəmsal ünvan (məsələn, 192.168.1.1) necə adlanır?",
+    "options": [
+      "E-mail",
+      "IP Ünvan (Internet Protocol Address)",
+      "URL Ünvan",
+      "MAC Ünvan"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IPv4 ünvanı nöqtə ilə ayrılmış 4 baytlıq (0-255 arası) unikal şəbəkə identifikasiya nömrəsidir.",
+      "distractors": {
+        "0": "E-poçtdur.",
+        "2": "Veb sayt ünvanıdır.",
+        "3": "Şəbəkə kartının fiziki ünvanıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K02-02-02-007"
+  },
+  {
+    "question": "Aşağıdakı IP ünvanlardan hansı FORMATCA DÜZGÜNDÜR (IPv4 qaydasına görə hər 4 hissə 0-255 aralığında olmalıdır)?",
+    "options": [
+      "192.168.1.256",
+      "192.168.1",
+      "300.168.1.1",
+      "192.168.1.50"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IPv4-də 4 hissənin hər biri max 255 ola bilər. 192.168.1.50 tam dügündür.",
+      "distractors": {
+        "0": "256 > 255 olduğu üçün səhvdir.",
+        "1": "3 hissəlidir (4 hissə olmalıdır).",
+        "2": "300 > 255 olduğu üçün səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K02-02-02-008"
+  },
+  {
+    "question": "Wi-Fi (Wireless Fidelity) texnologiyasının kabel şəbəkəsindən əsas üstünlüyü nədir?",
+    "options": [
+      "Kabellərin artması",
+      "Daha yavaş olması",
+      "Kompüteri söndürməsi",
+      "Informasiyanı naqilsiz радиоdalğalar vasitəsilə ötürərək cihazların sərbəst hərəkətliliyini (mobilliyini) təmin etməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Wi-Fi naqilsiz rabitə (802.11 b/g/n/ax) standartıdır.",
+      "distractors": {
+        "0": "Naqilsizdir.",
+        "1": "Mobil rahatlıqdır.",
+        "2": "Söndürmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K02-02-02-009"
+  },
+  {
+    "question": "Şəbəkə platasının (Ethernet card) zavod tərəfindən yazılan dəyişməz FİZİKİ ÜNVANI necə adlanır?",
+    "options": [
+      "IP Ünvan",
+      "URL",
+      "DNS",
+      "MAC Ünvan (Media Access Control)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: MAC ünvanı şəbəkə adaptresinin mikrosxeminə yazılmış 48-bitlik (12 onaltılıq rəqəm) unik fiziki koddur.",
+      "distractors": {
+        "0": "IP məntiqi ünvandır dəyişə bilər.",
+        "1": "Veb sayt ünvanıdır.",
+        "2": "Domen sistemidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K02-02-02-010"
+  },
+  {
+    "question": "Fiber-Optik (Şüşə lifli) kabelin digər naqil kabellərdən (burulmuş cüt - UTP) ötürmə sürəti və keyfiyyətinə görə üstünlüyü nədir?",
+    "options": [
+      "Yavaş olması",
+      "Daha ucuz olması",
+      "Kağızdan hazırlanması",
+      "Məlumatı elektrik siqnalı ilə deyil, ŞÜQ ŞÜASI (lazer) ilə ötürdüyü üçün gigabitlərlə ultra-yüksək sürət və elektromaqnit maneələrinə tam davamlılıq təmin etməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fiber-optik kabellər tam daxili qayıtma qanununa əsasən işıq impulslarını işıq sürətinə yaxın ötürür.",
+      "distractors": {
+        "0": "Çox sürətlidir.",
+        "1": "Material baha olur.",
+        "2": "Şüşə lifdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K04-03-03-011"
+  },
+  {
+    "question": "Şəbəkədə 'Router' (Yönləndirici / Ruter) qurğusunun rolu nədir?",
+    "options": [
+      "Şəkilləri çapa vermək",
+      "Kompüteri təmizləmək",
+      "Səsi artırmaq",
+      "Müxtəlif şəbəkələri (məsələn, ev LAN şəbəkəsini Qlobal İnternetə) birləşdirmək və məlumat paketlərinin ən optimal marşrutla ünvanına çatdırılmasını idarə etmək"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Router paketlərin IP ünvanlarına baxaraq onları şəbəkələrarası marşrutlayır (Routing).",
+      "distractors": {
+        "0": "Printerdir.",
+        "1": "Təmizlik deyil.",
+        "2": "Audiodur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K04-03-03-012"
+  },
+  {
+    "question": "Saniyədə 100 Mbit/san (Mbps) sürətə malik şəbəkə kanalı vasitəsilə 50 Meqabaytlıq (MB) faylı neçə saniyəyə yükləmək olar?",
+    "options": [
+      "10 saniyəyə",
+      "4 saniyəyə (50 MB = 400 Mbit; 400 / 100 = 4 san)",
+      "0.5 saniyəyə",
+      "50 saniyəyə"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1 Bayt = 8 bit -> 50 MB = 50 × 8 = 400 Mbit. Zaman t = Həcm / Sürət = 400 Mbit / 100 Mbit/s = 4 saniyə.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "50/100 bölünüb bit-bayt çevrilməyib.",
+        "3": "Səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K04-03-03-013"
+  },
+  {
+    "question": "Şəbəkədə paketlərin mühafizəsini təmin edən 'Firewall' (Müdafiə divarı / Brandmauer) sisteminin funksiyasını təhlil edin.",
+    "options": [
+      "Faylları silmək",
+      "Şəbəkəni söndürmək",
+      "Kabeli kəsmək",
+      "Gələn və gedən şəbəkə trafikini təhlükəsizlik qaydalarına əsasən süzgəcdən keçirib kənar kiber-hücumların (hack) qarşısını almaq"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Firewall portları və ip-ləri filtrləyərək icazəsiz şəbəkə paketlərini bloklayır.",
+      "distractors": {
+        "0": "Faylları silmir.",
+        "1": "Söndürmür qoruyur.",
+        "2": "Aparat zədəsi deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K04-03-03-014"
+  },
+  {
+    "question": "Şəbəkə texnologiyalarının (5G, Fiber İnternet, İqtisadi Qloballaşma) müasir cəmiyyətin kommunikasiya infrastrukturundakı rolunu qiymətləndirin.",
+    "options": [
+      "Yalnız oyun üçündür",
+      "Məlumatı yavaşladır",
+      "Şəbəkələr lazımsızdır",
+      "Dünyanın istənilən nöqtəsi ilə anında məlumat mübadiləsi yaratmaqla məsafə anlayışını aradan qaldırması və qlobal iqtisadi inteqrasiyanı təmin etməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Kompüter şəbəkələrinin topologiya və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kompüter şəbəkələri müasir qlobal iqtisadiyyatın və sivilizasiyanın kommunikasiya qan damarıdır.",
+      "distractors": {
+        "0": "Bütün sahələrə aiddir.",
+        "1": "Sürətləndirir.",
+        "2": "Təməldir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "25. Kompüter şəbəkələri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0625-25K04-03-03-015"
+  },
+  {
+    "question": "Bütün dünyadakı hipermətnli sənədləri (Veb-səhifələri) birləşdirən İnternet xidməti (WWW) necə adlanır?",
+    "options": [
+      "World Wide Web (Ümumdünya Hörümçək Toru / WWW)",
+      "Telnet",
+      "E-mail",
+      "FTP"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: WWW (World Wide Web) İnternetdəki HTTP/HTTPS protokolu ilə işləyən veb-səhifələr şəbəkəsidir.",
+      "distractors": {
+        "1": "Uzaqdan idarədir.",
+        "2": "E-poçt xidmətidir.",
+        "3": "Fayl köçürmədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K01-01-01-001"
+  },
+  {
+    "question": "Veb-səhifələri baxmaq və internetdə gəzmək üçün istifadə olunan proqramlar (məs. Google Chrome, Mozilla Firefox, MS Edge) necə adlanır?",
+    "options": [
+      "Antivirus",
+      "Axtarış mühərriki",
+      "Mətn redaktoru",
+      "Veb-Brauzer (Web Browser)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Brauzer HTML/CSS/JS kodlarını oxuyaraq istifadəçiyə visual veb-səhifə kimi göstərən tətbiqi proqramdır.",
+      "distractors": {
+        "0": "Qoruyucudur.",
+        "1": "Axtarış saytıdır (Google, Yandex).",
+        "2": "Səhv variantdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K01-01-01-002"
+  },
+  {
+    "question": "İnternetdə veb-saytların tam unikal ünvanı (məsələn, `https://www.edu.gov.az`) necə adlanır?",
+    "options": [
+      "MAC",
+      "IP",
+      "HTTP",
+      "URL (Uniform Resource Locator - Resursun Vahid Ünvanı)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: URL protokol (https), domen ad (edu.gov.az) və səhifə yolundan ibarət internet ünvanıdır.",
+      "distractors": {
+        "0": "Aparat ünvanıdır.",
+        "1": "IP rəqəmsal ünvandır.",
+        "2": "Ötürmə protokoludur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K01-01-01-003"
+  },
+  {
+    "question": "DNS (Domain Name System) xidmətinin əsas funksiyası nədir?",
+    "options": [
+      "İstifadəçilərin yadda saxlaması çətin olan rəqəmsal IP ünvanları (məs. 172.217.16.195) hərfi domen adlara (məs. google.com) çevirmək",
+      "Saytları silmək",
+      "Kompüteri söndürmək",
+      "Faylları sıxmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: DNS internetin \"telefon kitabçasıdır\"; domeni IP-yə qarşılıq təyin edir.",
+      "distractors": {
+        "1": "Silmir ünvanlayır.",
+        "2": "Söndürmür.",
+        "3": "Arxiv deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K01-01-01-004"
+  },
+  {
+    "question": "Məktubların, sənədlərin və media fayllarının internet üzərindən anında ünvanlara çatdırılması elektron xidməti necə adlanır?",
+    "options": [
+      "E-mail (Elektron poçt)",
+      "Wiki",
+      "Blog",
+      "FTP"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E-mail (SMTP/POP3/IMAP protokolları ilə) şəxsi və korporativ rəqəmsal məktublaşma xidmətidir.",
+      "distractors": {
+        "1": "Ensiklopediya saytıdır.",
+        "2": "Gündəlikdir.",
+        "3": "Fayl serveridir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K01-01-01-005"
+  },
+  {
+    "question": "E-poçt ünvanının yazılışında (məsələn, `şagird@skool.edu.az`) istifadəçinin adını domen adından ayıran xüsusi simvol hansıdır?",
+    "options": [
+      "Tire (-)",
+      "Et / Xalq arasında 'Et' və ya 'İt' işarəsi (@)",
+      "Nöqtə (.)",
+      "Ulduz (*)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: E-mail ünvanlarında `@` simvolu daxil edilən istifadəçi adını почт domeni adından ayırır.",
+      "distractors": {
+        "0": "Ad daxilində ola bilər.",
+        "2": "Domen alt hissəsidir.",
+        "3": "Ünvanda olmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K02-02-02-006"
+  },
+  {
+    "question": "Faylları serverdən kompüterə yükləmək (Download) və ya kompüterdən serverə göndərmək (Upload) üçün istifadə edilən xüsusi şəbəkə protokolu hansıdır?",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "FTP (File Transfer Protocol)",
+      "DNS"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: FTP (File Transfer Protocol) iri kütləli faylların şəbəkə serverlərinə təhlükəsiz köçürülməsi üçün ixtisaslaşıb.",
+      "distractors": {
+        "0": "E-poçt göndərmək üçündür.",
+        "1": "Veb səhifələr üçündür.",
+        "3": "Domen üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K02-02-02-007"
+  },
+  {
+    "question": "Təhlükəsiz və şifrələnmiş Veb-bağlantını təmin edən genişləndirilmiş internet protokolu hansıdır?",
+    "options": [
+      "IP",
+      "HTTP",
+      "HTTPS (HyperText Transfer Protocol Secure)",
+      "TCP"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: HTTPS SSL/TLS şifrələməsi istifadə edərək kredit kartı və parolların şəbəkədə oğurlanmasının qarşısını alır.",
+      "distractors": {
+        "0": "Ünvanlaşdırmadır.",
+        "1": "HTTP şifrələnməmiş açıq mətndir.",
+        "3": "Paket nəqliyyatıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K02-02-02-008"
+  },
+  {
+    "question": "İnternetdə 'Axtarış sistemi' (Search Engine: Google, Bing, Yandex) ilə 'Veb-brauzer' (Chrome, Firefox) fərqini təhlil edin.",
+    "options": [
+      "Brauzer saytdır",
+      "Brauzer kompüterdə açılan proqramdır, Axtarış sistemi isə brauzer daxilində açılan və milyardlarla sayt arasından məlumat tapan veb-saytdır",
+      "Axtarış sistemi proqramdır",
+      "Eyni şeydir fərq yoxdur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mühüm fərq: Brauzer (tətbiq) mühitdir; Search Engine (veb-sayt) isə onun içində informasiya axtaran server proqramıdır.",
+      "distractors": {
+        "0": "Brauzer tətbiqdir.",
+        "2": "Veb saytdır.",
+        "3": "Mühüm fərq var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K02-02-02-009"
+  },
+  {
+    "question": "İnternetdə video-konfrans və məsafədən canlı dərslərin (e-Learning: MS Teams, Zoom, Google Meet) təşkilində istifadə olunan 'Streaming' (Canlı Yayım) texnologiyasının mahiyyətini təhlil edin.",
+    "options": [
+      "Kompüteri söndürmək",
+      "Faylın silinməsi",
+      "Media faylın kompüterə tam yüklənməsini gözləmədən real-vaxt rejimində paketlər halında anında baxacaq şəkildə oxunması",
+      "Mətni çapa vermək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Streaming video və səs məlumatlarını buferləyərək canlı axınla nümayiş etdirir.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "1": "Silmir oxuyur.",
+        "3": "Çap deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K02-02-02-010"
+  },
+  {
+    "question": "Şəbəkədə istifadəçilərin anonimliyini və məxfiliyini qorumaq üçün trafiki şifrələyib başqa ölkənin IP-si üzərindən yönləndirən xidmət necə adlanır?",
+    "options": [
+      "VPN (Virtual Private Network / Virtual Xüsusi Şəbəkə)",
+      "HTTP",
+      "DNS",
+      "URL"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: VPN tunelləmə və şifrələmə vasitəsilə istifadəçinin real IP ünvanını gizlədir və təhlükəsiz kanal qurur.",
+      "distractors": {
+        "1": "Protokoldur.",
+        "2": "Domen sistemidir.",
+        "3": "Ünvandır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K04-03-03-011"
+  },
+  {
+    "question": "İnternet domenlərində ölkə kodlarını təhlil edin: `.az`, `.tr`, `.uk`, `.de`.",
+    "options": [
+      ".az - Azərbaycan, .tr - Türkiyə, .uk - Böyük Britaniya, .de - Almaniya",
+      ".az - Fransa, .tr - Almaniya",
+      ".az - Amerika, .tr - Rusiya",
+      "Ölkə kodları deyil"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Coğrafi yuxarı dərəcəli domenlər (ccTLD) ISO iki hərfli ölkə kodlarına əsaslanır.",
+      "distractors": {
+        "1": "Səhvdir.",
+        "2": "Səhvdir.",
+        "3": "Ölkə kodlarıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K04-03-03-012"
+  },
+  {
+    "question": "İnternet domenində `.edu`, `.gov`, `.org`, `.com` genişlənmələrinin mənsubiyyətini təhlil edin.",
+    "options": [
+      "Hamısı eynidir",
+      ".edu - Təhsil müəssisələri, .gov - Dövlət orqanları, .org - Qeyri-hökumət təşkilatları, .com - Kommersiya qurumları",
+      ".com - Şəxsi blog",
+      ".edu - Dövlət, .gov - Təhsil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ümumi yuxarı dərəcəli domenlər (gTLD) təşkilatın fəaliyyət növünü təyin edir.",
+      "distractors": {
+        "0": "Fərqlidirlər.",
+        "2": ".com kommersiyadır.",
+        "3": "Yerləri səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K04-03-03-013"
+  },
+  {
+    "question": "E-poçtda 'Spam' (Zibil məktublar) nədir və necə mübarizə aparılmalıdır?",
+    "options": [
+      "Dost məktubudur",
+      "Faylları sıxan xidmətdir",
+      "İstifadəçinin razılığı olmadan kütləvi şəkildə göndərilən reklam və ya təhlükəli məktublardır; 'Report Spam' düyməsi ilə bloklanmalıdır",
+      "Vacib məktublardır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Spam kütləvi lazımsız poçtdur, spambotlar tərəfindən yayılır və avtofiltrə salınmalıdır.",
+      "distractors": {
+        "0": "Dost poçtu deyil.",
+        "1": "Arxiv deyil.",
+        "3": "Zərərli reklamdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K04-03-03-014"
+  },
+  {
+    "question": "İnternet xidmətlərinin (Elektron Poçt, Veb, Bulud yaddaş, Canlı dərslər, e-Dövlət) müasir təhsil və qlobal cəmiyyət üçün əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "İnternet xidmətləri zərərlidir",
+      "İnformasiyaya hüdudsuz çıxış, məsafədən fasiləsiz təhsil imkanı və rəqəmsal cəmiyyətdə qlobal inteqrasiya təmin etməsi",
+      "Həç bir təsiri yoxdur",
+      "Yalnız vaxt itkisidir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "İnternet xidmətlərinin funksiyalarını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnternet xidmətləri müasir bilik cəmiyyətinin və rəqəmsal transformasiyanın bünövrəsidir.",
+      "distractors": {
+        "0": "Faydalıdır.",
+        "2": "Təsiri nəhəngdir.",
+        "3": "Bilik mənbəyidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "26. İnternet xidmətləri",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0626-26K04-03-03-015"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Python proqramlaşdırma dilində ekrana məlumat (mətn, ədəd) çıxarmaq üçün hansı funksiyadan istifadə olunur?",
+    "options": [
+      "input()",
+      "output()",
+      "print()",
+      "write()"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: print() funksiyası mötərizə içindəki verilənləri standart çıxış qurğusuna (ekrana) yazdırır.",
+      "distractors": {
+        "0": "input() klaviaturadan daxil edir.",
+        "1": "output() funksiyası Python-da yoxdur.",
+        "3": "write() fayllara yazmaq üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K01-01-01-001"
+  },
+  {
+    "question": "Python-da klaviaturadan məlumat daxil etmək üçün hansı funksiya istifadə olunur?",
+    "options": [
+      "scan()",
+      "print()",
+      "input()",
+      "read()"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: input() funksiyası istifadəçidən klaviatura vasitəsilə daxil edilən verilənləri sətir (str) formatında qəbul edir.",
+      "distractors": {
+        "0": "scan() Python-da yoxdur.",
+        "1": "print() ekrana çıxarır.",
+        "3": "read() fayl oxuyur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K01-01-01-002"
+  },
+  {
+    "question": "Python-da sətir mətni (string) yazarkən hansı dırnaq işarələrindən istifadə etmək olar?",
+    "options": [
+      "Tək dırnaq ('...'), cüt dırnaq (\"...\") və ya üçlü dırnaq ('''...''')",
+      "Yalnız mötərizə",
+      "Yalnız ulduz (*)",
+      "Dırnaq işarəsi istifadə olunmur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da mətni təsvir etmək üçün həm '...', həm \"...\", həm də çoxsətirli '''...''' dırnaqları istifadə etmək olar.",
+      "distractors": {
+        "1": "Mötərizə funksiyadır.",
+        "2": "Ulduz vurmadır.",
+        "3": "Dırnaqsız dəyişən hesab olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K01-01-01-003"
+  },
+  {
+    "question": "Kodu icra edin: print(\"Salam\" + \" \" + \"Dünya\")",
+    "options": [
+      "Salam Dünya",
+      "Salam+Dünya",
+      "SalamDünya",
+      "SyntaxError"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mətnlərin toplanası (konkatenasiya) onları birləşdirir. \"Salam\" + \" \" + \"Dünya\" = \"Salam Dünya\".",
+      "distractors": {
+        "1": "+ işarəsi birləşdirir mətndə qalmaz.",
+        "2": "Ortadakı boşluq simvolu nəzərə alınmayıb.",
+        "3": "Sintaktik xəta yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K01-01-01-004"
+  },
+  {
+    "question": "Kodu icra edin: print(5 + 3 * 2)",
+    "options": [
+      "10",
+      "532",
+      "16",
+      "11"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Riyazi əməliyyatların prioritetinə görə əvvəl vurma aparılır: 3 * 2 = 6; sonra toplama: 5 + 6 = 11.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "1": "Mətn kimi yanaşılıb.",
+        "2": "Əvvəl 5+3=8, sonra 8*2=16 hesablanıb (səhv sıradır)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K01-01-01-005"
+  },
+  {
+    "question": "Kodu icra edin: print(\"5\" + \"3\")",
+    "options": [
+      "53",
+      "8",
+      "15",
+      "SyntaxError"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dırnaq daxilində yazılan \"5\" və \"3\" mətn (str) tipləridir. Mətnlərin '+' əməliyyatı onları yanaşı yapışdırır: \"53\".",
+      "distractors": {
+        "1": "Dırnaqlar olmasaydı 5+3=8 olardı.",
+        "2": "Vurma deyil.",
+        "3": "Xəta yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K02-02-02-006"
+  },
+  {
+    "question": "Kodu icra edin: print(\"Python! \" * 3)",
+    "options": [
+      "SyntaxError",
+      "Python! Python! Python! ",
+      "Python!3",
+      "Python! Python!"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da mətni tam ədədə (int) vurmaq mətni həmin sayda təkrar edib birləşdirir.",
+      "distractors": {
+        "0": "İcazə verilən əməliyyatdır.",
+        "2": "Mətn və 3 yapışmır.",
+        "3": "2 dəfə təkrar edilib."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K02-02-02-007"
+  },
+  {
+    "question": "İstifadəçidən ədəd alıb onun 2 mislini tapan doğru koda hansı cavabda verilib?",
+    "options": [
+      "n = print()\ninput(n*2)",
+      "n = int()\nprint(n)",
+      "n = int(input())\nprint(n * 2)",
+      "n = input()\nprint(n * 2)"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: input() mətn qaytardığı üçün onu int() ilə tam ədədə çevirmək lazımdır, daha sonra 2-yə vurulur.",
+      "distractors": {
+        "0": "print() qiymət mənimsətməz.",
+        "1": "input yoxdur.",
+        "3": "n=input() mətn olduğu üçün n*2 mətni 2 dəfə yapışdırar (məs. '55')."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K02-02-02-008"
+  },
+  {
+    "question": "Kodu icra edin: print(17 // 5, 17 % 5)",
+    "options": [
+      "2 3",
+      "3 2",
+      "3 0",
+      "3.4 2"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: // tam bölmədir (17 // 5 = 3); % isə bölmədən alınan qalıqdır (17 % 5 = 2).",
+      "distractors": {
+        "0": "Yerləri səhvdir.",
+        "2": "Qalıq 0 deyil 2-dir.",
+        "3": "3.4 həqiqi bölmədir (17 / 5)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K02-02-02-009"
+  },
+  {
+    "question": "Kodu icra edin: print(2 ** 4)",
+    "options": [
+      "6",
+      "8",
+      "24",
+      "16"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: ** operatoru dərəcəyə yüksəltmədir: 2 ** 4 = 2⁴ = 16.",
+      "distractors": {
+        "0": "2 + 4 toplanmadır.",
+        "1": "2 * 4 vurmadır.",
+        "2": "2 və 4 yapışdırılıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K02-02-02-010"
+  },
+  {
+    "question": "Kodu icra edin: print(\"Nəticə:\", 10 + 20, sep=\" - \")",
+    "options": [
+      "Nəticə: - 30",
+      "Nəticə: -1020",
+      "SyntaxError",
+      "Nəticə: 30"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: print() funksiyasında sep=\" - \" parametr müəyyən edir ki, çıxış arqumentləri arasında boşluq əvəzinə \" - \" simvolu yazilsın.",
+      "distractors": {
+        "1": "Toplama aparılmayıb.",
+        "2": "Sintaksis düzgündür.",
+        "3": "sep parametr nəzərə alınmayıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K04-03-03-011"
+  },
+  {
+    "question": "Kodu icra edin:\nprint(\"Alma\", end=\" \")\nprint(\"Heyva\")",
+    "options": [
+      "Alma , Heyva",
+      "AlmaHeyva",
+      "Alma\nHeyva",
+      "Alma Heyva"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: end=\" \" parametr print-in sətir keçidini (\\n) ləğv edib növbəti print-i eyni sətirdə probellə davam etdirir.",
+      "distractors": {
+        "0": "Vergül olmayacaq.",
+        "1": "Probel unudulub.",
+        "2": "end nəzərə alınmasa alt-alta düşərdi."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K04-03-03-012"
+  },
+  {
+    "question": "Python-da 2.5 + 3.5 ifadəsinin nəticəsi hansı tipe aid olacaq?",
+    "options": [
+      "str ('6.0')",
+      "float (6.0)",
+      "bool",
+      "int (6)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Həqiqi ədədlərin (float) toplanması float tipi qaytarır: 2.5 + 3.5 = 6.0.",
+      "distractors": {
+        "0": "Mətn deyil.",
+        "2": "Məntiqi deyil.",
+        "3": "Həqiqi ədəd bölməsi float verər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K04-03-03-013"
+  },
+  {
+    "question": "Python proqramında `# Bu ilk proqramımdır` sətrinin funksiyası nədir?",
+    "options": [
+      "Ekrana yuxarıdakı mətni yazır",
+      "Xəta verir",
+      "Proqramı dayandırır",
+      "Şərh sətridir, icra olunmur, proqramçı üçün qeyddir"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da # simvolundan başlayan sətir şərh (comment) hesab olunur və interpretator tərəfindən buraxılır.",
+      "distractors": {
+        "0": "print() lazımdır.",
+        "1": "Xəta vermir.",
+        "2": "Dayandırmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K04-03-03-014"
+  },
+  {
+    "question": "Python dilində ilk proqram yazarkən interaktiv mühit (Shell) ilə fayl rejiminin (Script mode) fərqini qiymətləndirin.",
+    "options": [
+      "Shell-də hər sətir anında icra olunub nəticə verir, Script rejimdə isə bütün kodlar .py faylına saxlanılıb birgə işə salınır",
+      "Shell-də kod saxlanılır",
+      "Script rejim işləmir",
+      "Fərq yoxdur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Python-da ilk proqramı və giriş-çıxışı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Shell tez-bazar testləmək üçündür, tam proqramlar isə .py genişlənməli skript fayllarında yazılır.",
+      "distractors": {
+        "1": "Shell faylı saxlamaq üçün deyil.",
+        "2": "İşləyir.",
+        "3": "Rejim fərqi var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "9. Python dilində ilk proqram",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0309-09K04-03-03-015"
+  },
+  {
+    "question": "Proqramın icrası zamanı qiyməti dəyişə bilən kəmiyyət necə adlanır?",
+    "options": [
+      "Dəyişən (Variable)",
+      "Funksiya",
+      "Operator",
+      "Sabit (Constant)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dəyişən kompüter yaddaşında müəyyən qiyməti saxlayan və proqram boyu qiyməti dəyişə bilən adlandırılmış sahədir.",
+      "distractors": {
+        "1": "Funksiya əmr blokudur.",
+        "2": "Operator işarədir (+, -).",
+        "3": "Sabit qiyməti dəyişməyəndir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K01-01-01-001"
+  },
+  {
+    "question": "Proqramın icrası zamanı qiyməti dəyişməz qalan kəmiyyət necə adlanır?",
+    "options": [
+      "Dövr",
+      "Sabit (Constant)",
+      "Dəyişən",
+      "Şərt"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sabit (məsələn, PI = 3.14) proqramın əvvəlindən sonunadək eyni qiymətini qoruyan kəmiyyətdir.",
+      "distractors": {
+        "0": "Dövr təkrar strukturdur.",
+        "2": "Dəyişənin qiyməti dəyişir.",
+        "3": "Şərt budaqlanmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K01-01-01-002"
+  },
+  {
+    "question": "Python-da dəyişən adı kimi hansı yazılış İCAZƏLİDİR (düzgündür)?",
+    "options": [
+      "say_1",
+      "1say",
+      "say-1",
+      "for"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dəyişən adı rəqəmlə başlaya bilməz (1say səhvdir), defislə yazıla bilməz (say-1 səhvdir) və xidməti söz ola bilməz (for səhvdir). say_1 düzgündür.",
+      "distractors": {
+        "1": "Rəqəmlə başlaya bilməz.",
+        "2": "Defis (-) riyazi çıxmadır.",
+        "3": "for reserved (açar) sözdür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K01-01-01-003"
+  },
+  {
+    "question": "Python-da int, float, str, bool müvafiq olaraq hansı verilənlər tipləridir?",
+    "options": [
+      "Tam ədəd, Həqiqi (onluq) ədəd, Mətn (sətir), Məntiqi (True/False)",
+      "Yalnız ədədlər",
+      "Həqiqi, Tam, Məntiqi, Mətn",
+      "Mətn, Tam, Həqiqi, Məntiqi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: int = integer (tam), float = sürüşən nöqtəli həqiqi ədəd, str = string (sətir), bool = boolean (məntiqi).",
+      "distractors": {
+        "1": "Mətn və bool da var.",
+        "2": "Tiplərin sırası səhvdir.",
+        "3": "Sıra səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K01-01-01-004"
+  },
+  {
+    "question": "Dəyişənin tipini təyin etmək üçün Python-da hansı funksiyadan istifadə olunur?",
+    "options": [
+      "var()",
+      "kind()",
+      "type()",
+      "typeof()"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: type(x) funksiyası x dəyişəninin verilənlər tipini (məs. <class 'int'>) qaytarır.",
+      "distractors": {
+        "0": "var() dəyişən təyini üçündür PHP/JS.",
+        "1": "kind() Python-da yoxdur.",
+        "3": "typeof() JavaScript dilindədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K01-01-01-005"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 10\nx = x + 5\nx = x * 2\nprint(x)",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x = 10; sonra x = 10 + 5 = 15; sonra x = 15 * 2 = 30. Nəticə: 30.",
+      "distractors": {
+        "0": "10+5 hesablanıb.",
+        "1": "10*2 hesablanıb.",
+        "2": "10*2+5 hesablanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K02-02-02-006"
+  },
+  {
+    "question": "Kodu icra edin:\na, b = 5, 8\na, b = b, a\nprint(a, b)",
+    "options": [
+      "5 8",
+      "5 5",
+      "8 8",
+      "8 5"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da a, b = b, a ifadəsi iki dəyişənin qiymətlərini üçüncü köməkçi dəyişən olmadan dərhal dəyişdirir (swapping). a=8, b=5 olur.",
+      "distractors": {
+        "0": "Dəyişmə nəzərə alınmayıb.",
+        "1": "Səhvdir.",
+        "2": "Mənimsətmə səhv başa düşülüb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K02-02-02-007"
+  },
+  {
+    "question": "Kodu icra edin:\nx = \"100\"\ny = int(x) + 50\nprint(y)",
+    "options": [
+      "TypeError",
+      "10050",
+      "100",
+      "150"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x = \"100\" mətndir. int(x) onu 100 tam ədədinə çevirir. 100 + 50 = 150.",
+      "distractors": {
+        "0": "Çevrilmə var xəta yoxdur.",
+        "1": "int(x) olunmasaydı mətn yapışardı.",
+        "2": "50 toplanmayıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K02-02-02-008"
+  },
+  {
+    "question": "Python-da dinamik tipləşdirmə (Dynamic Typing) xüsusiyyəti nə deməkdir?",
+    "options": [
+      "Yalnız ədəd yazılması",
+      "Dəyişənlərin tipinin heç vaxt dəyişməməsi",
+      "Dəyişənin silinməsi",
+      "Dəyişən yaradılarkən onun tipinin əvvəlcədən elan edilməsinə ehtiyac olmaması və tipin mənimsədilən qiymətə görə avtomatik müəyyən olunması"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da `x = 5` yazdıqda x int olur, sonra `x = 'salam'` yazdıqda x str olur (dinamik tipləşmə).",
+      "distractors": {
+        "0": "Hər tip ola bilər.",
+        "1": "Statik tipləşmədir (C++).",
+        "2": "Silinməyə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K02-02-02-009"
+  },
+  {
+    "question": "Kodu icra edin:\na = 15\nb = 4\nprint(a / b, a // b, a % b)",
+    "options": [
+      "3.75 3 3",
+      "3.75 4 3",
+      "3.75 3 0",
+      "3 3 3"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: a / b = 15 / 4 = 3.75 (float); a // b = 15 // 4 = 3 (int); a % b = 15 % 4 = 3 (qalıq). Nəticə: 3.75 3 3.",
+      "distractors": {
+        "1": "15 // 4 = 3-dür 4 deyil.",
+        "2": "Qalıq 0 deyil 3-dür.",
+        "3": "İlkin bölmə float 3.75-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K02-02-02-010"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 5\nx += 3\nx *= 2\nprint(x)",
+    "options": [
+      "11",
+      "16",
+      "13",
+      "10"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x += 3 -> x = 5 + 3 = 8. x *= 2 -> x = 8 * 2 = 16.",
+      "distractors": {
+        "0": "5*2+3 hesablanıb.",
+        "2": "5+3*2 hesablanıb.",
+        "3": "5*2 hesablanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K04-03-03-011"
+  },
+  {
+    "question": "Python-da bool(0), bool(\"\"), bool(None) ifadələrinin nəticəsi nədir?",
+    "options": [
+      "None",
+      "0",
+      "False",
+      "True"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da 0, boş sətir \"\", None və boş kolleksiyalar bool() funksiyasında False kimi qiymətləndirilir.",
+      "distractors": {
+        "0": "Tip bool olacaq.",
+        "1": "0 ədəddir məntiqi False-dur.",
+        "3": "Boş olmayanlar True-dur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K04-03-03-012"
+  },
+  {
+    "question": "Kodu icra edin:\na = \"10\"\nb = 20\nprint(a * b)",
+    "options": [
+      "'101010...' (10 mətni 20 dəfə təkrar olunur)",
+      "30",
+      "200",
+      "TypeError"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: a str ('10'), b int (20). Mətn tam ədədə vurulduqda mətn 20 dəfə yanaşı təkrar olunur.",
+      "distractors": {
+        "1": "Toplama deyil.",
+        "2": "a int olsaydı 200 olardı.",
+        "3": "Mətn tam ədədə vurula bilər xəta yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K04-03-03-013"
+  },
+  {
+    "question": "Proqramlaşdırmada 'Dəyişənlərin əhatə dairəsi' (Scope: Local və Global) nə deməkdir?",
+    "options": [
+      "Dəyişənlərin əhatəsi yoxdur",
+      "Qlobal dəyişən bütün proqramda, lokal dəyişən isə yalnız təyin olunduğu funksiyanın daxilində görünür",
+      "Lokal dəyişən internetdə görünür",
+      "Bütün dəyişənlər qlobaldır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Funksiya daxilində təyin olunan dəyişən lokal görünüşə (Local Scope) malikdir, xaricdə təyin olunan qlobaldır.",
+      "distractors": {
+        "0": "Əhatə dairəsi var.",
+        "2": "İnternetə aid deyil.",
+        "3": "Lokal dəyişən də var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K04-03-03-014"
+  },
+  {
+    "question": "Python-da dəyişən adlarında böyük-kiçik hərflərin fərqləndirilməsi (Case Sensitivity: 'Say' və 'say') xassəsini qiymətləndirin.",
+    "options": [
+      "Eyni dəyişən hesab edir",
+      "Xəta verir",
+      "Python böyük və kiçik hərfləri tam fərqli dəyişən adları kimi qəbul edir ('Say' və 'say' iki ayrı dəyişəndir)",
+      "Böyük hərf yazmaq qadağandır"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Proqramda kəmiyyətlər və tipləri təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python registrdən asılı (Case Sensitive) dildir; 'A' və 'a' tamamilə fərqli dəyişənlərdir.",
+      "distractors": {
+        "0": "Eyni hesab etmir (SQL/Pascal kimi deyil).",
+        "1": "Xəta vermir.",
+        "3": "İcazə verilir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "10. Proqramda kəmiyyətlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0310-10K04-03-03-015"
+  }
+]

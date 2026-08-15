@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "Ağacşəkilli (iyerarxik) informasiya modelində ən yuvarıda duran başlanğıc elementi necə adlanır?",
+    "options": [
+      "Kök (Root / Kök qovluğu)",
+      "Fayl",
+      "Yarpaq (Leaf)",
+      "Budaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac vari iyerarxiyada üst valideyni olmayan ən yuxarıdakı ilkin element Kök (Root) adlanır.",
+      "distractors": {
+        "1": "Fayl məlumat saxlayandır.",
+        "2": "Yarpaq övladı olmayan son elementdir.",
+        "3": "Budaq orta elementdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K01-01-01-001"
+  },
+  {
+    "question": "Ağac modelində özündən aşağı heç bir elementi (övladı) olmayan sonuncu düyünlər necə adlanır?",
+    "options": [
+      "Təpə",
+      "Yarpaq (Leaf / Çıxış düyünü)",
+      "Magistral",
+      "Kök"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac strukturunda alt səviyyəyə budaqlanmayan ən uclardakı düyünlərə yarpaqlar (leaves) deyilir.",
+      "distractors": {
+        "0": "Təpə ümumi düyündür.",
+        "2": "Şəbəkəyə aiddir.",
+        "3": "Kök ən yuxarıdakıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K01-01-01-002"
+  },
+  {
+    "question": "Kompüterin fayl sistemində (məsələn, C:\\Dərslər\\İnformatika\\test.docx) papka strukturunun təsviri hansı informasiya modelinə aiddir?",
+    "options": [
+      "Ağacşəkilli (İyerarxik) model",
+      "Matris modeli",
+      "Şəbəkə modeli",
+      "Relyasiya (cədvəl) modeli"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Diskdəki qovluq və fayl sistemi (kök kataloqdan başlayaraq alt papkalara budaqlanma) klassik iyerarxik Ağac modelidir.",
+      "distractors": {
+        "1": "Riyazi cədvəldir.",
+        "2": "Şəbəkə modelində çoxlu valideyn olur.",
+        "3": "Cədvəllər üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K01-01-01-003"
+  },
+  {
+    "question": "Ağac iyerarxiyasında düyünlər arasındakı 'Valideyn-Övlad' (Parent-Child) münasibətini təhlil edin.",
+    "options": [
+      "Yalnız yarpaqlar valideyndir",
+      "Hər bir övlad düyünün yalnız 1 valideyni ola bilər (kökdən başqa)",
+      "Valideyn olmur",
+      "Bir övladın 100 valideyni olur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac modelinin əsas qaydası: kök istisna olmaqla hər bir elementin yalnız 1 üst valideyn düyünü olur.",
+      "distractors": {
+        "0": "Yarpağın övladı olmur.",
+        "2": "Valideyn var.",
+        "3": "Şəbəkə modelində olur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K01-01-01-004"
+  },
+  {
+    "question": "Binar ağac (Binary Tree - İkili ağac) modelində hər bir düyünün ən çoxu neçə övladı ola bilər?",
+    "options": [
+      "Limitsiz sayda",
+      "10 övladı",
+      "Ən çoxu 8 övladı",
+      "Ən çoxu 2 övladı"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkili (binar) ağacda hər bir internal düyün maksimum 2 övlada (sol və sağ budaq) malik ola bilər.",
+      "distractors": {
+        "0": "Ümumi ağacda ola bilər binar da yox.",
+        "1": "Onluq ağacda.",
+        "2": "8-lik sistemə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K01-01-01-005"
+  },
+  {
+    "question": "Qovluq iyerarxiyasında `C:\\Sənədlər\\Məktəb\\8-ci sinif` ünvanında `Məktəb` qovluğu üçün `Sənədlər` qovluğu nədir?",
+    "options": [
+      "Övlad (Child) qovluğu",
+      "Yarpaq fayl",
+      "Valideyn (Parent) qovluğu",
+      "Kök qovluğu"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `Sənədlər` qovluğu daxilində `Məktəb` yerləşdiyi üçün `Sənədlər` üst Valideyn qovluqdur.",
+      "distractors": {
+        "0": "Məktəb övladdır.",
+        "1": "Qovluqdur fayl deyil.",
+        "3": "Kök C: disklidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K02-02-02-006"
+  },
+  {
+    "question": "Fayl sistemində tam yol (Path / Yol) nəyi bildirir?",
+    "options": [
+      "Kök kataloqdan başlayaraq həmin fayla qədər keçilən bütün qovluqların ardıcıl siyahısını",
+      "Printerin adını",
+      "Faylın yaradılma saatını",
+      "Faylın həcmini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam yol kökdən başlayıb faylın adına qədər bütün qovluq separatorlarını (\\ və ya /) göstərir.",
+      "distractors": {
+        "1": "Aparat adıdır.",
+        "2": "Tarix atributudur.",
+        "3": "Həcm baytla ölçülür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K02-02-02-007"
+  },
+  {
+    "question": "Hündürlüyü (səviyyə sayı) H = 4 olan TAM binar ağacda cəmi neçə düyün ola bilər?",
+    "options": [
+      "16 düyün",
+      "4 düyün",
+      "8 düyün",
+      "15 düyün (2⁴ - 1)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam binar ağacda n dənə səviyyə üçün cəmi düyün sayısı N = 2ʰ - 1 = 2⁴ - 1 = 16 - 1 = 15 düyün (Səviyyələr: 1 + 2 + 4 + 8 = 15).",
+      "distractors": {
+        "0": "2⁴ = 16-dır (son səviyyədə 8).",
+        "1": "Hündürlükdür.",
+        "2": "Yalnız son səviyyədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K02-02-02-008"
+  },
+  {
+    "question": "Ağac strukturunda 'Düyünün dərinliyi' (Depth) necə təyin olunur?",
+    "options": [
+      "Yarpaqların sayı ilə",
+      "Kompüterin RAM-ı ilə",
+      "Faylın ölçüsü ilə",
+      "Kök düyündən həmin düyünə qədər olan keçiylərin (tillərin) sayısı ilə"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kök düyünün dərinliyi 0-dır; kökdən hər 1 addım aşağı düşdükdə dərinlik 1 vahid artır.",
+      "distractors": {
+        "0": "Yarpaq sayısı enə aiddir.",
+        "1": "Aparat parametridir.",
+        "2": "Həcmə aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K02-02-02-009"
+  },
+  {
+    "question": "Ağacşəkilli nəsil şəcərəsində (Nəsil ağacı) babadan nəvəyə olan iyerarxiyanı təhlil edin.",
+    "options": [
+      "İyerarxiya yoxdur",
+      "Baba -> Kök / Valideyn, Valideyn -> Budaq, Nəvə -> Yarpaq (Övlad)",
+      "Baba Yarpaqdır",
+      "Nəvə Kökdür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şəcərə ağacı klassik iyerarxik modeldir; əcdad kökdə, nəvələr isə son yarpaqlarda yerləşir.",
+      "distractors": {
+        "0": "İyerarxiya var.",
+        "2": "Baba ilkindir kökdər.",
+        "3": "Tərsdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K02-02-02-010"
+  },
+  {
+    "question": "Şəbəkə modeli (Network model) ilə Ağac modelinin əsas fərqini təhlil edin.",
+    "options": [
+      "Ağac modelində valideyn olmur",
+      "Şəbəkə modeli cədvəldir",
+      "Şəbəkə modelində bir övladın ÇOXLU VALİDEYNİ ola bildiyi halda, Ağac modelində hər övladın YALNIZ 1 VALİDEYNİ olur",
+      "Fərq yoxdur"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şəbəkə modelində ilişki \"çoxun-çoxadır\" (many-to-many), ağacda isə \"birin-çoxadır\" (one-to-many).",
+      "distractors": {
+        "0": "Valideyn var.",
+        "1": "Cədvəl relyasiyadır.",
+        "3": "Mühüm fərq var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K04-03-03-011"
+  },
+  {
+    "question": "Ağac strukturunda 'Pre-order', 'In-order' və 'Post-order' adlanan elementləri gəzmə (Traversal) alqoritmlərinin məqsədi nədir?",
+    "options": [
+      "Kökü ləğv etmək",
+      "Ağacın bütün düyünlərinə müəyyən ardıcıllıqla dəqiqliklə 1 dəfə baş çəkmək və verilənləri emal etmək",
+      "Yarpaqları kəsmək",
+      "Ağacı silmək"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tree Traversal alqoritmləri verilənlər strukturundakı hər bir elementi ardıcıl oxumaq üçün tətbiq olunur.",
+      "distractors": {
+        "0": "Kökü ləğv etmir.",
+        "2": "Kəsmir.",
+        "3": "Silmir gəzir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K04-03-03-012"
+  },
+  {
+    "question": "DNS (Domain Name System - Domen adları sistemi: `sub.domain.edu.az`) internet ünvanlarının iyerarxik ağac quruluşunu təhlil edin.",
+    "options": [
+      "Sağdan sola doğru .az (1-ci dərəcəli kök domen) -> .edu (2-ci dərəcəli) -> domain -> sub (3-cü dərəcəli) iyerarxik ağac strukturudur",
+      "Ağac modeli deyil",
+      "Domenlər cədvəldir",
+      "Sol tərəf kökdür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnternet DNS strukturu kök domendən (.) başlayaraq ölkə kodi (.az), sektora (.edu) budaqlanan ağac sistemidir.",
+      "distractors": {
+        "1": "Ağac modelidir.",
+        "2": "İyerarxikdir.",
+        "3": "Kök sağdakı nöqtə və TLD-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K04-03-03-013"
+  },
+  {
+    "question": "Əməliyyat sistemində fayl ağacında kataloqların 'Relativ yol' (Relative Path) ünvanlanması nədir?",
+    "options": [
+      "Kökdən başlayan yol",
+      "İnternet IP ünvanı",
+      "Cari işçi qovluqdan başlayaraq həmin fayla olan qısa keçid yolu",
+      "Faylın adı"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Nisbi (relativ) yol tam ünvanı yazmadan cari durduğumuz qovluqdan hesablanan yoldur (məs. `./subfolder/file.txt`).",
+      "distractors": {
+        "0": "Bu Absolyut (Tam) yoldur.",
+        "1": "Şəbəkə ünvanıdır.",
+        "3": "Fayl adıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K04-03-03-014"
+  },
+  {
+    "question": "Ağacşəkilli informasiya modellarının kompüter elmlərində (verilənlər bazasının indekslənməsi B-Tree, fayl sistemləri, menyu strukturları) universallığını qiymətləndirin.",
+    "options": [
+      "Məlumatları itirmək üçündür",
+      "Məlumatların axtarış və tapılma sürətini O(N)-dən O(log N)-ə endirərək milyonlarla fayl və verilən daxilində saniyənin mində birində cəld axtarışı təmin etməsi",
+      "Kompüteri yavaşlatmaq üçündür",
+      "Yalnız 1 fayl saxlamaq üçündür"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli informasiya modelini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac indeksləri (B-Tree, AVL Tree) verilənlər bazasında milyonlarla sətir daxilində cəld logarifmik axtarış imkanı verir.",
+      "distractors": {
+        "0": "Məlumatları qoruyur.",
+        "2": "Səhv variantdır.",
+        "3": "Sonsuz fayl saxlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "15. İnformasiya modelinin ağac forması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0415-15K04-03-03-015"
+  },
+  {
+    "question": "Windows əməliyyat sistemində faylları axtararkən İSTƏNİLƏN SAYDA (və ya sıfır) simvolu əvəz edən maska (şablon) simvolu hansıdır?",
+    "options": [
+      "Sual işarəsi (?)",
+      "Ulduz (*)",
+      "Dırnaq (\")",
+      "Nöqtə (.)"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Axtarış maskalarında `*` simvolu istənilən uzunluqda simvollar ardıcıllığını (və ya heç bir simvol olmamasını) təmsil edir.",
+      "distractors": {
+        "0": "? yalnız DƏQİQ 1 simvolu əvəz edir.",
+        "2": "Dırnaq dəqiq mətndir.",
+        "3": "Nöqtə genişlənməni ayırır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K01-01-01-001"
+  },
+  {
+    "question": "Axtarış maskalarında YALNIZ DƏQİQ 1 ƏDƏD istənilən simvolu əvəz edən xüsusi işarə hansıdır?",
+    "options": [
+      "Sual işarəsi (?)",
+      "Ulduz (*)",
+      "Nöqtə-vergül (;)",
+      "Diz (#)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `?` şablon simvolu axtarış zamanı həmin mövqedə yalnız bir tək simvolun olduğunu bildirir.",
+      "distractors": {
+        "1": "* istənilən sayda simvoldur.",
+        "2": "Siyahı ayırandır.",
+        "3": "Rəqəm işarəsidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K01-01-01-002"
+  },
+  {
+    "question": "`*.docx` maskası ilə axtarış verildikdə hansı fayllar tapılar?",
+    "options": [
+      "Bütün şəkil faylları",
+      "Həcmi 1 KB olan fayllar",
+      "Yalnız adı 'docx' olan fayllar",
+      "Adı nə olursa-olsun, genişlənməsi (növü) `.docx` olan bütün MS Word sənədləri"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `*` istənilən ad deməkdir, `.docx` isə fayl tipini təyin edir.",
+      "distractors": {
+        "0": "Şəkil .jpg/.png-dir.",
+        "1": "Həcmə aid deyil.",
+        "2": "Ad istənilən ola bilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K01-01-01-003"
+  },
+  {
+    "question": "`a?.txt` maskasına aşağıdakı fayl adlarından hansı UYĞUNDUR?",
+    "options": [
+      "a12.txt",
+      "abc.txt",
+      "ab.txt",
+      "a.txt"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `a` hərfindən sonra dəqiq 1 simvol (`?`) olmalıdır. `ab.txt` uyğundur (2 hərfli ad).",
+      "distractors": {
+        "0": "a12.txt-də 2 simvol var.",
+        "1": "abc.txt-də `?` yerinə 2 simvol var (bc).",
+        "3": "a.txt-də `?` yerinə simvol yoxdur (0 simvol)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K01-01-01-004"
+  },
+  {
+    "question": "Diskdə adı `test` sözü ilə başlayan bütün faylları tapmaq üçün hansı maska düzgündür?",
+    "options": [
+      "test*.*",
+      "*test.*",
+      "test?.txt",
+      "?test.*"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `test*.*` maskası adı 'test' ilə başlayan və davamında istənilən simvol olan, istənilən genişlənməli faylları tapır.",
+      "distractors": {
+        "1": "'test' ilə bitən fayllardır.",
+        "2": "Yalnız 1 simvol artıq olan txt-dir.",
+        "3": "1 simvoldan sonra test gələndir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K01-01-01-005"
+  },
+  {
+    "question": "Aşağıdakı fayl adlarından hansı `k*m?.*` maskasına tam uyğundur?",
+    "options": [
+      "karim.doc",
+      "kalam.pdf",
+      "korm.txt",
+      "km.png"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ad 'k' ilə başlayır, sonra `*` (ar, istenilen sayda), sonra 'm' gəlir, sonra `?` ('i', dəqiq 1 simvol) -> karim. genişlənmə `.*` (.doc).",
+      "distractors": {
+        "1": "m-dən sonra simvol yoxdur.",
+        "2": "m-dən sonra `?` üçün simvol yoxdur.",
+        "3": "m-dən sonra `?` üçün simvol yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K02-02-02-006"
+  },
+  {
+    "question": "Faylları yalnız adlarına görə deyil, YARADILMA TARİXİNƏ və HƏCMİNƏ görə axtarmağın faydası nədir?",
+    "options": [
+      "Adı unudulmuş, lakin dünən yaradıldığı və ya həcmi 10 MB-dan böyük olduğu bilinən faylları cəld tapmağa imkan verməsi",
+      "Faylı silmək",
+      "Faylın rəngini dəyişmək",
+      "Kompüteri şəbəkəyə qoşmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Windows Search filtrləri (Date modified, Size: Gigantic > 128 MB) mürəkkəb axtarışları cəldləşdirir.",
+      "distractors": {
+        "1": "Silmir tapır.",
+        "2": "Rəngə aid deyil.",
+        "3": "Şəbəkəyə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K02-02-02-007"
+  },
+  {
+    "question": "`?a*.*` maskası ilə verilmiş axtarışda hansı fayl TAPILAR?",
+    "options": [
+      "malam.exe",
+      "a.docx",
+      "alam.txt",
+      "ba.png"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `?` birinci 1 simvol (m), ikinci simvol dəqiq 'a', sonra `*` (lam), genişlənmə `.*` (.exe) -> malam.exe.",
+      "distractors": {
+        "1": "1-ci simvol 'a'-dır 2-ci simvol yoxdur.",
+        "2": "1-ci simvol 'a'-dır, 2-ci simvol 'l'-dir (uyğun gəlmir).",
+        "3": "ba.png (b+a+0 simvol) da uyğundur (malam.exe də uyğundur)."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K02-02-02-008"
+  },
+  {
+    "question": "Faylın daxilindəki MƏTNƏ GÖRƏ (Content Search) axtarış necə aparılır?",
+    "options": [
+      "Faylı silməklə",
+      "Monitoru söndürməklə",
+      "Axtarış zolağında faylın adı ilə yanaşı daxilindəki açar sözü (məsələn, `content:\"Qarabağ\"`) yazmaqla",
+      "Klaviaturanı dəyişməklə"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Müasir əməliyyat sistemləri indeksləmə xidməti (Windows Indexing) vasitəsilə faylların daxili mətnini də indeksləyib axtarır.",
+      "distractors": {
+        "0": "Silmək axtarış deyil.",
+        "1": "Aparat sönməsidir.",
+        "3": "Aparatdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K02-02-02-009"
+  },
+  {
+    "question": "Adı dəqiq 4 simvoldan ibarət olan bütün ikili (.exe) faylları tapmaq üçün hansı maska yazılmalıdır?",
+    "options": [
+      "4?.exe",
+      "????.exe",
+      "*4*.exe",
+      "????.*"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dəqiq 4 simvol olduğu üçün 4 dənə `?` yazılır və genişlənmə `.exe` olmalıdır: `????.exe`.",
+      "distractors": {
+        "0": "4 hərfi ilə başlayan 2 simvolludur.",
+        "2": "Adında 4 rəqəmi olan fayldır.",
+        "3": "İstənilən genişlənməlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K02-02-02-010"
+  },
+  {
+    "question": "Windows Search indeksləmə (Indexing) funksiyasının axtarış sürətinə təsirini təhlil edin.",
+    "options": [
+      "Kompüteri sıradan çıxardır",
+      "Diskdəki faylların ad və mətnlərinin əvvəlcədən xüsusi tez yaddaş bazasında indekslənməsi axtarışı saniyələr daxilində anında nəticələndirir",
+      "Disk yaddaşını tam doldurur",
+      "Axtarışı yavaşladır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İndeksləmə arxada bütün fayl strukturunun axtarış cədvəlini qurur və axtarış anında bütün diski yenidən скан etmir.",
+      "distractors": {
+        "0": "Faydalı sistemdir.",
+        "2": "İndeks bazası kiçikdir.",
+        "3": "Sürətləndirir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K04-03-03-011"
+  },
+  {
+    "question": "`*a?b*.pdf` maskasında adı verilən fayl üçün hansı şərtlər MƏCBURİDİR?",
+    "options": [
+      "Ad 3 simvol olmalıdır",
+      "Ad 'a' ilə başlamalıdır",
+      "Ad yalnız 'pdf' olmalıdır",
+      "Adın daxilində 'a' və ondan dərhal sonra 1 simvol gəlməli, sonra 'b' hərfi olmalı və genişlənmə `.pdf` olmalıdır"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `a` + 1 simvol (`?`) + `b`. Əvvəlində və sonunda `*` olduğu üçün daxilində bu şablonun olması yetərlidir.",
+      "distractors": {
+        "0": "Uzunluq * sayəsində istəniləndir.",
+        "1": "Əvvəlində * var başlamaq məcburi deyil.",
+        "2": "pdf genişlənmədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K04-03-03-012"
+  },
+  {
+    "question": "Əməliyyat sistemində fayl axtararkən 'Böyük-kiçik hərf mühümlüyü' (Case Sensitivity) necə tənzimlənir?",
+    "options": [
+      "Axtarış hərfləri tanımır",
+      "Hər iki sistemdə eynidir",
+      "Windows fayl axtarışında adətən böyük-kiçik hərf fərqi nəzərə alınmır ('TEST.txt' ilə 'test.txt' eyni tapılır), Linux-da isə fərqləndirilir",
+      "Windows-da fərqləndirilir"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Windows fayl sistemi (NTFS/FAT32) case-insensitive-dir; Linux (ext4) isə case-sensitive-dir.",
+      "distractors": {
+        "0": "Tanıyır.",
+        "1": "OS məntiqi fərqlidir.",
+        "3": "Windows-da nəzərə alınmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K04-03-03-013"
+  },
+  {
+    "question": "Axtarış nəticəsində tapılmış faylın diskdəki FİZİKİ ÜNVANINI (Location) tapmaq üçün nə etmək lazımdır?",
+    "options": [
+      "Faylın üzərində sağ düyməni basıb 'Open file location' (Faylın yerləşdiyi qovluğu aç) seçmək",
+      "Faylı silmək",
+      "Faylı çapa verməsi",
+      "Ekranı söndürmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Open file location əmri qovluq iyerarxiyasını açaraq faylın durduğu dəqiq papkaya keçir.",
+      "distractors": {
+        "1": "Silinmə yerini göstərmir.",
+        "2": "Çapa verir.",
+        "3": "Söndürmək yer göstərmir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K04-03-03-014"
+  },
+  {
+    "question": "Böyük həcmli korporativ serverlərdə şablon maskaları (* və ?) ilə axtarış məntiqinin informasiya təhlükəsizliyi və resurs idarəetməsindəki rolunu qiymətləndirin.",
+    "options": [
+      "Sistem administratorlarına bütün disk şəbəkəsində mütəmadi olaraq lazımsız (.tmp, .log) və ya təhlükəli (.exe, .bat) faylları cəld təmizləməyə imkan verməsi",
+      "Axtarış zərər verə bilər",
+      "Axtarış istifadə edilmir",
+      "Serverləri söndürmək üçündür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Faylların axtarış maskalarını və prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Avtomatlaşdırılmış axtarış skriptləri (*.tmp maskası ilə) köhnə müvəqqəti faylları silərək diski təmizləyir.",
+      "distractors": {
+        "1": "Axtarış zərər vermir.",
+        "2": "Geniş istifadə olunur.",
+        "3": "Söndürmür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "16. Faylların axtarışı",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0416-16K04-03-03-015"
+  },
+  {
+    "question": "Ağacşəkilli qovluq strukturunda `C:\\` kökündən `C:\\İnformatika\\8-ci sinif\\Test.docx` faylına qədər olan tam yolda neçə alt qovluq aşılır?",
+    "options": [
+      "4 qovluq",
+      "2 qovluq (İnformatika və 8-ci sinif)",
+      "1 qovluq",
+      "3 qovluq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: C: kökündən sonra iki qovluq gəlir: 1) İnformatika, 2) 8-ci sinif. Test.docx isə faylın özüdür.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "2": "2 qovluq var.",
+        "3": "Test.docx fayldır qovluq deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K01-01-01-001"
+  },
+  {
+    "question": "İstifadəçi `C:\\Dərs\\Riyaziyyat` qovluğundadır. O, 1 səviyyə yuxarı qalxdıqdan sonra `Fizika` qovluğuna daxil olarsa, cari ünvan necə olar?",
+    "options": [
+      "C:\\Fizika\\Dərs",
+      "C:\\Fizika",
+      "C:\\Dərs\\Fizika",
+      "C:\\Dərs\\Riyaziyyat\\Fizika"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `C:\\Dərs\\Riyaziyyat`-dan 1 səviyyə yuxarı qalxdıqda `C:\\Dərs`-ə gəlir. Sonra `Fizika`-ya daxil olduqda `C:\\Dərs\\Fizika` olur.",
+      "distractors": {
+        "0": "Sıra səhvdir.",
+        "1": "2 səviyyə yuxarı qalxmayıb.",
+        "3": "Yuxarı qalxmayıb daxil olub."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K01-01-01-002"
+  },
+  {
+    "question": "Ağac graflarında iki şəhər arasında ən qısa marşrutu (yolu) tapmaq üçün hansı məsələ həlli alqoritmi tətbiq olunur?",
+    "options": [
+      "Arxivləşdirmə",
+      "Mətn sıralama",
+      "Dijkstra alqoritmi və ya Eninə/Dərinliyinə axtarış (BFS/DFS)",
+      "Faktorial alqoritmi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qraf və ağac strukturlarında ən qısa yolu tapmaq üçün Qraf axtarış alqoritmləri (Dijkstra, BFS) tətbiq edilir.",
+      "distractors": {
+        "0": "Sıxlaşdırmadır.",
+        "1": "Şəbəkə yolu tapmır.",
+        "3": "Riyazi faktorialdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K01-01-01-003"
+  },
+  {
+    "question": "Ağac strukturunda hər bir düyün 3 övlada ayrılırsa (3-lük ağac), 2-ci səviyyədə (kök 0-cı səviyyədir) neçə düyün olar?",
+    "options": [
+      "27 düyün",
+      "6 düyün",
+      "3 düyün",
+      "9 düyün (3²)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Səviyyə 0: 3⁰ = 1 (kök); Səviyyə 1: 3¹ = 3; Səviyyə 2: 3² = 9 düyün.",
+      "distractors": {
+        "0": "3-cü səviyyədir.",
+        "1": "3+3 hesablanıb.",
+        "2": "1-ci səviyyədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K01-01-01-004"
+  },
+  {
+    "question": "Faylın tam yolu: `D:\\Məktəb\\Siniflər\\8A\\Riyaziyyat.docx`. Faylın adını və genişlənməsini müəyyən edin.",
+    "options": [
+      "Adı: D:, Genişlənməsi: .docx",
+      "Adı: Riyaziyyat, Genişlənməsi: .docx",
+      "Adı: Məktəb, Genişlənməsi: .docx",
+      "Adı: 8A, Genişlənməsi: .docx"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Yolun ən sonundakı `Riyaziyyat.docx` faylın özüdür; nöqtədən əvvəlki ad (Riyaziyyat), nöqtədən sonrakı genişlənmədir (.docx).",
+      "distractors": {
+        "0": "D: kök diskdir.",
+        "2": "Məktəb üst qovluqdur.",
+        "3": "8A yerləşdiyi qovluqdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K01-01-01-005"
+  },
+  {
+    "question": "İstifadəçi `C:\\A\\B\\C` qovluğundan iki səviyyə yuxarı qalxdı, sonra `D` qovluğunu yaradıb onun daxilinə keçdi. Yeni ünvanı tapın.",
+    "options": [
+      "C:\\D",
+      "C:\\A\\D",
+      "C:\\A\\B\\D",
+      "C:\\A\\B\\C\\D"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `C:\\A\\B\\C`-dən 2 səviyyə yuxarı qalxdıqda `C:\\A` olur. Orada `D` yaradıb daxil olduqda `C:\\A\\D` alınır.",
+      "distractors": {
+        "0": "3 səviyyə qalxsaydı C:\\D olardı.",
+        "2": "1 səviyyə qalxsaydı.",
+        "3": "Hiç qalxmasaydı."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K02-02-02-006"
+  },
+  {
+    "question": "Binar axtarış ağacında (Binary Search Tree - BST) yeni daxil edilən 15 ədədi kök düyündəki 20-dən kiçik olduğu üçün ağacın hansı tərəfinə yerləşdirilər?",
+    "options": [
+      "Sol budağına (Left child)",
+      "Sağ budağına (Right child)",
+      "Kökə",
+      "Yarpaqlar silinər"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: BST qaydasına görə kökdən kiçik qiymətlər Sol budağa, böyük qiymətlər Sağ budağa yazılır. 15 < 20 olduğu üçün soldadır.",
+      "distractors": {
+        "1": "Sağda böyük ədədlər olur.",
+        "2": "Kök artıq 20-dir.",
+        "3": "Silinmir əlavə olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K02-02-02-007"
+  },
+  {
+    "question": "Tam 3 dərəcəli iyerarxik strukturda hər dərəcədə 2 qovluq və hər son qovluqda 3 fayl varsa, cəmi neçə fayl olar?",
+    "options": [
+      "48 fayl",
+      "12 fayl",
+      "8 fayl",
+      "24 fayl"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Son səviyyədəki qovluq sayısı = 2 × 2 × 2 = 8 qovluq. Hər birində 3 fayl var: 8 × 3 = 24 fayl.",
+      "distractors": {
+        "0": "Vurma səhvidir.",
+        "1": "2×2×3 hesablanıb.",
+        "2": "Yalnız qovluq sayıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "calculation_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K02-02-02-008"
+  },
+  {
+    "question": "Qovluq köçürmə əməliyyatı: `C:\\A\\B` qovluğu `D:\\X` qovluğunun daxilinə kopyalanarsa, B qovluğunun daxilindəki `test.txt` faylının yeni tam yolu necə olar?",
+    "options": [
+      "C:\\A\\B\\test.txt",
+      "D:\\X\\test.txt",
+      "D:\\X\\B\\test.txt (və ya D:\\X\\A\\B\\test.txt)",
+      "D:\\test.txt"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kopyalanan qovluq öz daxili ağac strukturu ilə birgə hədəf `D:\\X` qovluğunun altına keçir.",
+      "distractors": {
+        "0": "Keçmiş köhnə yoldur.",
+        "1": "B qovluğu buraxılıb.",
+        "3": "X qovluğu buraxılıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K02-02-02-009"
+  },
+  {
+    "question": "Mətnin Morze kodu və ya Haffman (Huffman) sıxlaşdırma alqoritmində simvolların ağacşəkilli kodlaşdırılmasının məntiqini təhlil edin.",
+    "options": [
+      "Mətni silmək",
+      "Simvolları qarışdırmaq",
+      "Ən çox təkrar olunan simvollara daha qısa ikili kod (ağacın yuxarı səviyyəsi), az təkrar olunanlara uzun kod verməklə faylı sıxlaşdırmaq",
+      "Bütün simvollara eyni kod vermək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Haffman ağac alqoritmində tez-tez işlənən simvollar kökə yaxın yerləşir və qısa bitlə kodlanır, bu da faylın həcmini kiçildir.",
+      "distractors": {
+        "0": "Mətni silmir.",
+        "1": "Şifrələmə deyil sıxlaşdırmadır.",
+        "3": "ASCII kimi sabit olar sıxlaşmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K02-02-02-010"
+  },
+  {
+    "question": "Ağac modelində dövrün (sikl / cərəyan) olmamasının qraf nəzəriyyəsindəki izahını təhlil edin.",
+    "options": [
+      "Ağac elə bir qrafdır ki, hər hansı iki düyün arasında YALNIZ 1 YOL var və qapalı zəncir (dövr) yoxdur",
+      "Ağac relyasiyadır",
+      "Tillər bir-birinə kəsişir",
+      "Ağacda sonsuz dövr olur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac tərifi: əlaqəli və dövrü (ciklləri) olmayan unikal yollu qrafdır.",
+      "distractors": {
+        "1": "Cədvəl deyil.",
+        "2": "Tillər kəsişmir.",
+        "3": "Ağacda dövr yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K04-03-03-011"
+  },
+  {
+    "question": "Ağacda yerləşən 100 düyünün (n = 100) bir-biri ilə birləşdirən tillərinin (budaqlarının - edges) sayısı neçədir?",
+    "options": [
+      "100 til",
+      "200 til",
+      "99 til (n - 1)",
+      "101 til"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İstənilən N düyünlü ağacda tillərin sayısı dəqiq N - 1 bərabərdir: 100 - 1 = 99 til.",
+      "distractors": {
+        "0": "Dövr olsaydı 100 olardı.",
+        "1": "Binar tam vurmadır.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K04-03-03-012"
+  },
+  {
+    "question": "Fayl sistemində 'Səhv yol' (Invalid Path) xətası nə zaman meydana çıxır?",
+    "options": [
+      "İnternet kəsildikdə",
+      "Faylın həcmi böyük olduqda",
+      "Kompüter söndükdə",
+      "Yolda göstərilən qovluqlardan biri diskdə mövcud olmadıqda və ya adı yanlış yazıldıqda"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Tam yoldakı zəncirvari papkalardan hər hansı biri silinibsə və ya adı dəyişibsə sistem yola çatammır və xəta verir.",
+      "distractors": {
+        "0": "Lokal fayldır.",
+        "1": "Səhv variantdır.",
+        "2": "Sistem xətası deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K04-03-03-013"
+  },
+  {
+    "question": "Ağac strukturunda yarpaq düyünlərin ümumi sayının hesablanması alqoritmini təhlil edin.",
+    "options": [
+      "Ağacı rekursiv gəzərək övladlarının sayısı 0-a bərabər olan (child == None) düyünləri saymaq",
+      "Kökü saymaq",
+      "Bütün düyünləri 2-yə bölmək",
+      "Düyünləri toplamaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rekursiya ilə hər düyün yoxlanılır: əgər sol və sağ övlad yoxdursa counter 1 artırılır.",
+      "distractors": {
+        "1": "Kök yarpaq deyil.",
+        "2": "2-yə bölünmür.",
+        "3": "Yalnız övladsızlar yarpaqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K04-03-03-014"
+  },
+  {
+    "question": "Ağacşəkilli modellərin riyaziyyat, ilahiyyat, dilçilik, biologiya (təkamül ağacı) və proqramlaşdırmadakı qlobal elmi əhəmiyyətini qiymətləndirin.",
+    "options": [
+      "Sistemi sıradan çıxartmaq üçün",
+      "Şəkilləri silmək üçün",
+      "Məlumatı qarışdırmaq üçün",
+      "Bütün mürəkkəb iyerarxik sistemləri, təsnifatları və tabeçilik münasibətlərini vahid, mütəşəkkil və nizamlı strukturda modelləşdirməyə imkan verməsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Ağacşəkilli strukturlar üzərində məsələ həllini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Ağac modeli insan idrakının mürəkkəb bilikləri kateqoriyalara bölüb iyerarxik strukturlaşdırma metodudur.",
+      "distractors": {
+        "0": "Təşkil edir.",
+        "1": "Silmir.",
+        "2": "Nizamlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "17. Ağacşəkilli struktur əsasında məsələ həlli",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0417-17K04-03-03-015"
+  }
+]

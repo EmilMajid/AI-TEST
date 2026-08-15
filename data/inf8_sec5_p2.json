@@ -1,0 +1,902 @@
+[
+  {
+    "question": "3D obyektin karkas (Mesh) torunu təşkil edən 3 əsas həndəsi element hansılardır?",
+    "options": [
+      "Nöqtə, Xətt, Rəng",
+      "Mətn, Səs, Video",
+      "Təpələr (Vertices), Tillər (Edges), Üzlər (Faces / Poliqonlar)",
+      "X, Y, Z"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D model şəbəkəsi (Polygonal Mesh) 3 elementdən qurulur: təpə nöqtələri (Vertex), onları birləşdirən xəttlər (Edge) və aralarında yaranan müstəvi səthlər (Face).",
+      "distractors": {
+        "0": "Rəng vizualdır.",
+        "1": "Media növləridir.",
+        "3": "Koordinat oxlarıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K01-01-01-001"
+  },
+  {
+    "question": "3D modeldə iki təpə nöqtəsini (Vertex) birləşdirən düz xətt parçası necə adlanır?",
+    "options": [
+      "Kök",
+      "Üz (Face)",
+      "Til (Edge)",
+      "Poligon"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Til (Edge) fəzada iki təpə nöqtəsi arasında çəkilmiş 1D xətt parçasıdır.",
+      "distractors": {
+        "0": "Ağac modelindədir.",
+        "1": "Üz 2D müstəvidir.",
+        "3": "Poliqon üz deməkdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K01-01-01-002"
+  },
+  {
+    "question": "En azı 3 və ya 4 tilin əhatə etdiyi qapalı müstəvi səth 3D qrafikada necə adlanır?",
+    "options": [
+      "Təpə (Vertex)",
+      "Til (Edge)",
+      "Vektor",
+      "Üz (Face / Poliqon)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Üz (Face) tillərlə hüdudlanmış və rəng/tekstura qəbul edə bilən müstəvi parçasıdır.",
+      "distractors": {
+        "0": "Təpə nöqtədir.",
+        "1": "Til xətt parçasıdır.",
+        "2": "2D istiqamətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K01-01-01-003"
+  },
+  {
+    "question": "Həndəsədən bəlli olan Eyler düsturuna əsasən, qabarıq çoxüzlüdə Təpə (V), Til (E) və Üz (F) sayları arasında hansı nisbət var?",
+    "options": [
+      "V - E + F = 2",
+      "V + E + F = 0",
+      "E - V = F",
+      "V * F = E"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Eyler düsturu: Təpə sayısı (V) - Til sayısı (E) + Üz sayısı (F) = 2 (məsələn kub üçün: 8 - 12 + 6 = 2).",
+      "distractors": {
+        "1": "Səhv düsturdur.",
+        "2": "Eyler xarakteristikası 2-dir.",
+        "3": "Vurma deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K01-01-01-004"
+  },
+  {
+    "question": "Standart KUB fiqurunun neçə Təpəsi (Vertex), neçə Tili (Edge) və neçə Üzü (Face) var?",
+    "options": [
+      "8 Təpə, 12 Til, 6 Üz",
+      "6 Təpə, 8 Til, 12 Üz",
+      "4 Təpə, 6 Til, 4 Üz",
+      "12 Təpə, 12 Til, 12 Üz"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Kubun 8 künc nöqtəsi (Təpə), 12 tili və 6 kvadrat üzü var (8 - 12 + 6 = 2).",
+      "distractors": {
+        "1": "Yerləri səhv yazılıb.",
+        "2": "Tetraedr üçündür.",
+        "3": "Səhvdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K01-01-01-005"
+  },
+  {
+    "question": "Düzgün dördbucaqlı piramidanın (məsələn, Misir piramidası) Təpə, Til və Üz sayını müəyyən edin.",
+    "options": [
+      "6 Təpə, 10 Til, 6 Üz",
+      "4 Təpə, 6 Til, 4 Üz",
+      "8 Təpə, 12 Til, 6 Üz",
+      "5 Təpə, 8 Til, 5 Üz"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dördbucaqlı piramidanın 1 zirvə + 4 oturacaq = 5 təpəsi; 4 yan + 4 oturacaq = 8 tili; 4 yan üçbucaq + 1 oturacaq = 5 üzü var (5 - 8 + 5 = 2).",
+      "distractors": {
+        "0": "Prizmadır.",
+        "1": "Üçbucaqlı piramidadır.",
+        "2": "Kubdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K02-02-02-006"
+  },
+  {
+    "question": "3D modelləşdirmədə 'Extrude' (Çıxıntılama / Dartıb uzatma) alətinin Tillər və Üzlər üzərindəki funksiyası nədir?",
+    "options": [
+      "Seçilmiş üzü və ya tili fəzada mənimsənilən ox boyunca dartaraq yeni üzlər və tillər əlavə etməklə həcm yaratmaq",
+      "Modeli 2D-yə çevirmək",
+      "Rəngi ağ etmək",
+      "Seçilmiş üzü silmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Extrude (E düyməsi) müstəvi səthi (Face) dartaraq ona hündürlük/dərinlik verir və yeni yan tillər generasiya edir.",
+      "distractors": {
+        "1": "3D həcm artırır.",
+        "2": "Material dəyişmir.",
+        "3": "Delete silir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K02-02-02-007"
+  },
+  {
+    "question": "3D modeldə poliqonların sayının (Polycount / Üz sayının) həddən artıq çox olmasının kompüterə təsirini təhlil edin.",
+    "options": [
+      "Faylı silər",
+      "Kompüteri sürətləndirər",
+      "Təpələri yox edər",
+      "Model çox dəqiq görünər, lakin renderləmə vaxtı və operativ yaddaş (RAM/GPU) sərfi kəskin artar, sistemi yavaşladar"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: High-poly modellər milyonlarla poliqondan ibarət olduğu üçün GPU və video-yaddaşa böyük yük salır.",
+      "distractors": {
+        "0": "Silmir.",
+        "1": "Yavaşladır.",
+        "2": "Təpələr çoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K02-02-02-008"
+  },
+  {
+    "question": "Oyun sənayesində 'Low-Poly' (Az poliqonlu) modellərin tətbiq olunmasının əsas texniki səbəbini təhlil edin.",
+    "options": [
+      "Oyunu bağlamaq üçün",
+      "Rəng olmaması üçün",
+      "Kompüter oyunlarında kadr tezliyini (FPS) yüksək saxlamaq və zəif cihazlarda da rəvan animasiya təmin etmək",
+      "Modelin çirkin görünməsi üçün"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Low-Poly modellər minimal üz sayına malik olduğu üçün real-vaxt rejimində (Real-time rendering) 60+ FPS verir.",
+      "distractors": {
+        "0": "Oyunu oynanılan edir.",
+        "1": "Rəng vurulur.",
+        "3": "Məqsəd sürətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K02-02-02-009"
+  },
+  {
+    "question": "3D redaktorda iki üzün (Face) kəsişdiyi tili hamarlamaq/yuvarlaqlaşdırmaq üçün tətbiq edilən 'Bevel' (Faska alma) alətinin mahiyyəti nədir?",
+    "options": [
+      "İki üzün kəskin künc tilini kəsərək araya kiçik mailli üzlər (faska) əlavə etmək və küncü yumşaltmaq",
+      "Tili tam silmək",
+      "Modeli 2 hissəyə bölmək",
+      "Rəngləmək"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bevel aləti obyektlərin kəskin fiziki künclərinə real işıq qayıtması üçün maili faska səthləri yaradır.",
+      "distractors": {
+        "1": "Silmir faska verir.",
+        "2": "Bölmür.",
+        "3": "Formanı dəyişir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K02-02-02-010"
+  },
+  {
+    "question": "3D modelin daxili 'Normal vector' (Normallar) anlayışı nəyi göstərir?",
+    "options": [
+      "Kompüterin IP ünvanını",
+      "Modelin adını",
+      "Üzün (Face) çölə və ya içəri baxdığını təyin edən və işığın necə əks olunacağını bildirən perpendikulyar vektor",
+      "Şəklin piksellarını"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Face Normal səthə perpendikulyar olan vektordur; əgər normal daxilə çevrilərsə (Inverted Normals) həmin üz renderdə görünməz olur.",
+      "distractors": {
+        "0": "Şəbəkədir.",
+        "1": "İnformasiya adıdır.",
+        "3": "2D pikseldir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K04-03-03-011"
+  },
+  {
+    "question": "Subdivision Surface (Səthin alt-bölünməsi) modifikatorunun 3D şəbəkəyə (Mesh) etkisini təhlil edin.",
+    "options": [
+      "Üzləri silmək",
+      "Modeli kiçiltmək",
+      "Mevcud üzləri avtomatik 4 kiçik üzə bölərək və təpələri hamarlayaraq kobud 3D modeli tam hamar dairəvi formaya salmaq",
+      "Rəngi qara etmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: SubSurf alqoritmi (Catmull-Clark) poliqon sayını 4 dəfə artıraraq küncləri sferik hamarlayır.",
+      "distractors": {
+        "0": "Silmir çoxaldır.",
+        "1": "Hamarlayır.",
+        "3": "Formaya aiddir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K04-03-03-012"
+  },
+  {
+    "question": "Üçbucaqlı poliqonlar (Tris) ilə dördbucaqlı poliqonların (Quads) 3D modelləşdirmədə fərqini təhlil edin.",
+    "options": [
+      "Quads (4-bucaqlı) animasiya və deformasiya üçün ideal şəbəkə axını (Topology) yaradır, Tris (3-bucaqlı) isə oyun mühərriklərinin son renderlənməsi üçündür",
+      "Tris 10-bucaqlıdır",
+      "Quads dairədir",
+      "Eyni şeydir fərq yoxdur"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Proqramçılar modeli 4-bucaqlı üzlərlə (Quads) qurur; videokart isə onu avtomatik 3-bucaqlılara (Triangulation) ayırır.",
+      "distractors": {
+        "1": "Tris 3-bucaqlıdır.",
+        "2": "Quads 4-bucaqlıdır.",
+        "3": "Fərqlidirlər."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K04-03-03-013"
+  },
+  {
+    "question": "3D obyektin hər bir təpə nöqtəsinin (Vertex) X, Y, Z fəza koordinatları verilərsə, obyekti Z oxu üzrə 5 vahid yuxarı qaldırdıqda nə dəyişər?",
+    "options": [
+      "Bütün koordinatlar sıfırlanar",
+      "X 5 artar",
+      "Y 5 artar",
+      "Bütün təpələrin Z koordinatı 5 vahid artar (Z_yeni = Z + 5), X və Y eyni qalar"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Vertikal (Z oxu) hərəkətdə yalnız Z atributları dəyişir: Z' = Z + 5.",
+      "distractors": {
+        "0": "Sıfırlanmır.",
+        "1": "X üfüqüdür.",
+        "2": "Y fəza oxudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K04-03-03-014"
+  },
+  {
+    "question": "Topology (Şəbəkə topologiyası) anlayışının 3D qrafikada keyfiyyətli model yaradılmasına təsirini qiymətləndirin.",
+    "options": [
+      "Yalnız rəngdir",
+      "Topologiya faylı silir",
+      "Topologiyanın önəmi yoxdur",
+      "Düzgün til və üz şəbəkəsi (Clean Topology) modelin animasiya zamanı təbii bükülməsini və işığın üzərində hamar yayılmasını təmin edir"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Tillər və üzlər şəbəkəsini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Topologiya tillərin axın istiqamətidir; səhv topologiya animasiyada qırılmalara (artifacts) səbəb olur.",
+      "distractors": {
+        "0": "Strukturdur.",
+        "1": "Silmir.",
+        "2": "Çox böyük önəmi var."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "19. Tillər və üzlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0519-19K04-03-03-015"
+  },
+  {
+    "question": "3D modelləşdirmədə obyekti hərəkət etdirmək, ölçüsünü dəyişmək və fırlatmaq üçün istifadə olunan 3 təməl alət (Transform alətləri) hansılardır?",
+    "options": [
+      "Zoom, Crop, Filter",
+      "Red, Green, Blue",
+      "Move (Hərəkət), Rotate (Fırlatma), Scale (Miqyaslaşdırma)",
+      "Copy, Paste, Cut"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D fəzada istənilən model Move (G), Rotate (R) və Scale (S) kəmiyyətləri ilə manipulyasiya olunur.",
+      "distractors": {
+        "0": "Şəkil redaktəsidir.",
+        "1": "Səhv variantdır.",
+        "3": "Fayl əməliyyatlarıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K01-01-01-001"
+  },
+  {
+    "question": "Boolean (Bulev) əməliyyatları (Union, Difference, Intersect) 3D modellərin qurulmasında nə üçün istifadə olunur?",
+    "options": [
+      "Kompüteri söndürmək üçün",
+      "İki 3D obyekti birləşdirmək (Union), birindən digərini kəsib çıxarmaq (Difference) və ya kəsişməsini almaq (Intersect) üçün",
+      "Modelin rəngini dəyişmək üçün",
+      "Səs yazmaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Boolean əməliyyatları (məsələn, divarda pəncərə deşiyi açmaq üçün divardan kubu çıxarmaq) mürəkkəb formalar yaradır.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "2": "Rəngləmə deyil.",
+        "3": "Audiodur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K01-01-01-002"
+  },
+  {
+    "question": "3D modelin sol yarısını qurub sağ yarısını avtomatik simmetrik kopyalamaq üçün hansı modifikator (Modifier) tətbiq olunur?",
+    "options": [
+      "Boolean",
+      "Mirror (Güzgü) modifikatoru",
+      "Array modifikatoru",
+      "Solidify"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mirror modifier seçilmiş ox boyunca simmetrik surət yaradaraq modelləşdirmə vaxtını 2 dəfə qısaldır.",
+      "distractors": {
+        "0": "Kəsmə/birləşmədir.",
+        "2": "Array çoxlu sırayla kopyalayır.",
+        "3": "Qalınlıq verir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K01-01-01-003"
+  },
+  {
+    "question": "3D mühitində 2D müstəvi fiqura (məsələn, dairə və ya kvadrat) qalınlıq verərək onu 3D obyektsə çevirən alət hansıdır?",
+    "options": [
+      "Render",
+      "Extrude (və ya Solidify)",
+      "Delete",
+      "Rotate"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Extrude 2D kontura z oxu üzrə hündürlük verib 3D həcm (məsələn, dairədən silindr) yaradır.",
+      "distractors": {
+        "0": "Çıxarış edir.",
+        "2": "Silir.",
+        "3": "Fırladır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K01-01-01-004"
+  },
+  {
+    "question": "3D Modelləşdirmədə Sculpting (Rəqəmsal heykəltəraşlıq) rejiminin mahiyyətini təhlil edin.",
+    "options": [
+      "Cədvəl qurmaq",
+      "Virtual gil (clay) kimi obyektin səthini siçan və ya planşetlə basaraq, çəkərək, hamarlayaraq üzvi formalar (insan, canavar) düzəltmək",
+      "Düsturlarla kod yazmaq",
+      "Faylları sıxmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Sculpting rejimi xüsusi fırçalarla (Draw, Smooth, Grab, Clay) dinamik poliqonlar üzərində heykəltəraşlıq imkanı verir.",
+      "distractors": {
+        "0": "Excel-dir.",
+        "2": "Proqramlaşdırma deyil.",
+        "3": "Arxivdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K01-01-01-005"
+  },
+  {
+    "question": "Obyektin səthinə şəkil geydirilməsi üçün 3D səthin 2D müstəviyə açılışı (sərilməsi) prosesi necə adlanır?",
+    "options": [
+      "Extruding",
+      "Rigging",
+      "Rendering",
+      "UV Unwrapping (UV Açılışı)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: UV Unwrapping 3D modelin xarici səthini tıpkı geyim paltarı təkçəsi kimi 2D tekstrur xəritəsinə (UV Map) açır.",
+      "distractors": {
+        "0": "Extruding dartmadır.",
+        "1": "Rigging sümük qoymadır.",
+        "2": "Render şəklin hesablanmasıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K02-02-02-006"
+  },
+  {
+    "question": "Array (Massiv) modifikatorunun 3D modelləşdirmədəki rolunu təhlil edin.",
+    "options": [
+      "Rəngi dəyişmək",
+      "Ekranı söndürmək",
+      "Obyektin verilmiş məsafə intervalı ilə müəyyən sayda (məsələn, 50 ədəd pilləkən və ya hasar) avtomatik təkrarlanan sırasını yaratmaq",
+      "Obyekti silmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Array modifier tək bir modulu (p pilləkən) ox boyunca verilən offset ilə istənilən sayda kopyalayır.",
+      "distractors": {
+        "0": "Formaya aiddir.",
+        "1": "Söndürmür.",
+        "3": "Silmir kopyalayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K02-02-02-007"
+  },
+  {
+    "question": "Silindr formalı 3D kubok (fincan) modeli qurarkən hansı təməl 3D primitivdən başlamaq daha məqsədəuyğundur?",
+    "options": [
+      "Silindr (Cylinder)",
+      "Sfera (Sphere)",
+      "Kub (Cube)",
+      "Müstəvi (Plane)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Fincan və stəkan silindrik formaya malik olduğu üçün Silindr primitivini üst səthdən Extrude etməklə qurmaq ən qısa yoldur.",
+      "distractors": {
+        "1": "Dairəvidir.",
+        "2": "Kubu silindrə çevirmək uzundur.",
+        "3": "2D-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K02-02-02-008"
+  },
+  {
+    "question": "3D modelləşdirmədə 'Pivot Point' (Mərkəz fırlanma nöqtəsi) nədir?",
+    "options": [
+      "Ekranın küncü",
+      "Obyektin fırlanma, miqyaslanma və yeridilmə əməliyyatlarının hesablandığı mərkəz dayanacaq nöqtəsi",
+      "Kompüterin siçanı",
+      "3D printerin başlığı"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Pivot nöqtəsi obyektin öz oxu mərkəzidir; onun yeri dəyişdirildikdə fırlanma mərkəzi də dəyişir (məsələn qapının petləsi).",
+      "distractors": {
+        "0": "Ekrana aid deyil.",
+        "2": "Giriş qurğusudur.",
+        "3": "Aparatdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K02-02-02-009"
+  },
+  {
+    "question": "3D proqramlarında 'Snapping' (Magnit/Yapışma) funksiyası nə üçün istifadə olunur?",
+    "options": [
+      "Faylı silmək üçün",
+      "Səs yazmaq üçün",
+      "Obyektlərin təpə, til və ya üzlərinin bir-birinə dəqiq milimetrik yapışdırılmasını təmin etmək üçün",
+      "Rəng seçmək üçün"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Snapping (Snap to Vertex/Grid) obyektləri fəzada həndəsi dəqiqliklə tora və ya bir-birinin künclərinə yapışdırır.",
+      "distractors": {
+        "0": "Silmir yapışdırır.",
+        "1": "Audiodur.",
+        "3": "Rəngə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K02-02-02-010"
+  },
+  {
+    "question": "3D binaların və mebellərin qurulmasında 'CAD / Parametrik modelləşdirmə' yanaşmasını təhlil edin.",
+    "options": [
+      "Yalnız rənglənməsi",
+      "Modellərin sərbəst əllə deyil, dəqiq riyazi ölçülər (uzunluq, en, bucaq mm-lə) vasitəsilə parametrik qurulması",
+      "Şəkillərin silinməsi",
+      "Ölçüsüz çəkilməsi"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Parametrik modelləşdirmədə (SolidWorks, AutoCAD) ölçü parametri dəyişdirildikdə bütün 3D model avtomatik yenidən formalaşır.",
+      "distractors": {
+        "0": "Rəng deyil formadır.",
+        "2": "Silinmə deyil.",
+        "3": "Dəqiq ölçülərlədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K04-03-03-011"
+  },
+  {
+    "question": "3D obyekti 3D printerdə çap etmək üçün proqramda hazırlanan modelin 'Watertight' (Su keçirməyən / Bütöv qapalı həcm) olması tələbini təhlil edin.",
+    "options": [
+      "Model suyun daxilində olmalıdır",
+      "Modelin şəbəkəsində (Mesh) heç bir yırtıq, açıq dəşik və ya daxili kəsişən artıq üz olmamalı, tam qapalı bərk bədən olmalıdır",
+      "Model şəffaf olmalıdır",
+      "Model böyük olmalıdır"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D printer daxili həcmi sıxlıqla (infill) dolduracağı üçün modeldə açıq üz (hole) olarsa Slicer proqramı xəta verir.",
+      "distractors": {
+        "0": "Suya aid deyil termini belədir.",
+        "2": "Şəffaflığa aid deyil.",
+        "3": "Ölçüyə aid deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K04-03-03-012"
+  },
+  {
+    "question": "3D Slicer (Dilimləyici proqram - Cura, PrusaSlicer) proqramının 3D printerlə çap öncəsi rolu nədir?",
+    "options": [
+      "İnterneti kəsmək",
+      "Səsi artırmaq",
+      "Modelyeri silmək",
+      "3D STL modelini üfüqi təbəqələrə (qatlara) bölərək 3D printerin başlığının hərəkət marşrutunu müəyyən edən G-code proqramını generasiya etmək"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Slicer proqramı 3D obyekti 0.2 mm-lik qatlara kəsir və printerin icra edəcəyi G-Code əmrlərini yazır.",
+      "distractors": {
+        "0": "Şəbəkəyə aid deyil.",
+        "1": "Audiodur.",
+        "2": "Silmir kəsir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K04-03-03-013"
+  },
+  {
+    "question": "3D modelləşdirmədə 'LOD' (Level of Detail - Təfərrüat Səviyyəsi) texnologiyasının kompüter qrafikasındakı rolunu təhlil edin.",
+    "options": [
+      "Kompüteri söndürmək",
+      "Kameraya yaxın olan obyektlərin yüksək poliqonlu, uzaqdakı obyektlərin isə avtomatik aşağı poliqonlu modellə əvəz olunması ilə resurslara qənaət etmək",
+      "Bütün obyektləri silmək",
+      "Ekranı qaraltmaq"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: LOD 0 (yüksək detal) yaxındakı obyekt üçündür; obyekt uzaqlaşdıqca LOD 1, LOD 2 (az detal) keçir ki, GPU yüklənməsin.",
+      "distractors": {
+        "0": "Söndürmür.",
+        "2": "Silmir əvəzləyir.",
+        "3": "Qaraltmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K04-03-03-014"
+  },
+  {
+    "question": "Müasir 3D modelləşdirmə vərdişlərinin gələcəyin peşələrində (3D dizayner, Oyun tərtibatçısı, Protezləşdirmə mühəndisi, Memar) rolunu qiymətləndirin.",
+    "options": [
+      "Fəza təxəyyülünü, mühəndislik düşüncəsini və rəqəmsal prototipləşdirmə bacarıqlarını inkişaf etdirərək yüksək texnologiyalı əmək bazarında rəqabətüstünlüyü verməsi",
+      "Həç bir faydası yoxdur",
+      "Proqramları silmək üçündür",
+      "Yalnız oyun oynamaq üçündür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "3D modellərin qurulması alətlərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 3D modelləşdirmə müasir sənaye dizaynından aviasiyaya, tibbi implantlardan kinoya qədər hər yerdə təməl bacarıqdır.",
+      "distractors": {
+        "1": "Faydası böyükdür.",
+        "2": "Silmək üçün deyil.",
+        "3": "Oyunlardan çox genişdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "20. Üçölçülü modellərin qurulması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0520-20K04-03-03-015"
+  }
+]

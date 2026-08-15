@@ -1,0 +1,452 @@
+[
+  {
+    "question": "İnformasiya cəmiyyəti (Information Society) nədir?",
+    "options": [
+      "Yalnız zavodlarda işləyənlər",
+      "İnterneti olmayan cəmiyyət",
+      "Yalnız kənd təsərrüfatı ilə məşğul olan cəmiyyət",
+      "Əhalinin əksəriyyətinin informasiyanın istehsalı, saxlanılması, emalı və ötürülməsi ilə məşğul olduğu inkişaf etmiş cəmiyyət mərhələsi"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İnformasiya cəmiyyətində bilik və informasiya əsas strateji resurs və iqtisadi inkişaf mühərrikidir.",
+      "distractors": {
+        "0": "Sənaye cəmiyyətidir.",
+        "1": "Əksinə internet təməldir.",
+        "2": "Aqrar cəmiyyətdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K01-01-01-001"
+  },
+  {
+    "question": "Cəmiyyətin informasiyalaşdırılmasında 'Rəqəmsal savadlılıq' (Digital Literacy) nəyi ifadə edir?",
+    "options": [
+      "Müasir rəqəmsal qurğulardan, internetdən və informasiya texnologiyalarından təhlükəsiz və səmərəli istifadə etmək bacarığını",
+      "Yalnız kitab oxumağı",
+      "Kağız məktub yazmağı",
+      "Prosessoru sökməyi"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rəqəmsal savadlılıq rəqəmsal mühitdə kritik düşünmə, məlumat axtarışı və kibertəhlükəsizlik qaydalarına riayətdir.",
+      "distractors": {
+        "1": "Ənənəvi savaddır.",
+        "2": "Ənənəvidir.",
+        "3": "Aparat təmirdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K01-01-01-002"
+  },
+  {
+    "question": "Dövlət xidmətlərinin vətəndaşlara rəqəmsal formada (onlayn portal vasitəsilə) təqdim olunması sistemi necə adlanır?",
+    "options": [
+      "Sosial şəbəkə",
+      "Kompüter oyunu",
+      "Elektron Hökumət (e-Gov / my.gov.az)",
+      "Elektron ticarət"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: e-Dövlət portalı şəxsiyyət vəsiqəsi, arayışlar, vergilər kimi bütün dövlət xidmətlərini elektronlaşdırır.",
+      "distractors": {
+        "0": "Ünsiyyətdir.",
+        "1": "Əyləncədir.",
+        "3": "Alqı-satqıdır (e-Commerce)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K01-01-01-003"
+  },
+  {
+    "question": "İnternetdə şəxsi identifikasiyanı təmin edən, elektron sənədlərə hüquqi qüvvə verən rəqəmsal alət hansıdır?",
+    "options": [
+      "Parol",
+      "İş masası",
+      "Elektron İmza (e-İmza / ASAN İmza / SİMA)",
+      "Anti-virus"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: e-İmza kriptoqrafik olaraq əl imzası ilə bərabər hüquqi qüvvəyə malikdir.",
+      "distractors": {
+        "0": "Parol sadə girişdir hüquqi imzalamır.",
+        "1": "İnterfeysdir.",
+        "3": "Mühafizədir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K01-01-01-004"
+  },
+  {
+    "question": "Rəqəmsal uçurum (Digital Divide) problemi nəyi bildirir?",
+    "options": [
+      "Müxtəlif sosial təbəqələr və ya ölkələr arasında müasir İKT texnologiyalarına çıxış imkanlarındakı bərabərsizliyi",
+      "Kabelin qırılmasını",
+      "Kompüterin ekranının sınmasını",
+      "Faylların silinməsini"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Rəqəmsal uçurum texnologiyaya və internetə çıxışı olanlarla olmayanlar arasındakı qeyri-bərabərlikdir.",
+      "distractors": {
+        "1": "Aparat qırılmasıdır.",
+        "2": "Fiziki zərərdir.",
+        "3": "Verilən itkisidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K01-01-01-005"
+  },
+  {
+    "question": "İnternet üzərindən mal və xidmətlərin alqı-satqısının təşkili necə adlanır?",
+    "options": [
+      "Elektron poçt",
+      "Elektron Ticarət (e-Commerce)",
+      "Elektron dövlət",
+      "Elektron təhsil"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: e-Commerce onlayn mağazalar vasitəsilə internetlə mal almaq və satmaq sistemidir.",
+      "distractors": {
+        "0": "Məktublaşmadır.",
+        "2": "Dövlət xidmətidir.",
+        "3": "Təhsildir (e-Learning)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K02-02-02-006"
+  },
+  {
+    "question": "Müəllif hüquqları ilə qorunan rəqəmsal obyektləri (proqram, kitab, musiqi) icazəsiz kopyalamaq və yaymaq necə adlanır?",
+    "options": [
+      "Rəqəmsal Quldurluq (Piracy / Piratlıq)",
+      "Elektron təhsil",
+      "Arxivləşdirmə",
+      "Resurs paylaşımı"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Qanunsuz lisenziyasız proqram və media kopyalamaq müəllif hüquqlarının pozulmasıdır (Piratlıq).",
+      "distractors": {
+        "1": "Qanuni təhsildir.",
+        "2": "Sıxlaşdırmadır.",
+        "3": "Qanuni paylaşmadır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K02-02-02-007"
+  },
+  {
+    "question": "Rəqəmsal mühitdə şəxsi məlumatların (FİN kod, bank kartı nömrəsi) oğurlanması təhlükəsinə qarşı hansı 'Kibertəhlükəsizlik' qaydasına riayət edilməlidir?",
+    "options": [
+      "Parolu hər kəsə demək",
+      "Bütün faylları internetə yerləşdirmək",
+      "Antivirusu söndürmək",
+      "Şəxsi məlumatları tanıdıq-tanımadıq heç bir şübhəli saytda daxil etməmək və mürəkkəb parollardan (2FA) istifadə etmək"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şəxsi rəqəmsal гигиена kiberdələduzluqdan (Phishing) qorunmanın ilk şərtidir.",
+      "distractors": {
+        "0": "Təhlükəlidir.",
+        "1": "Məxfilik pozulur.",
+        "2": "Riskdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K02-02-02-008"
+  },
+  {
+    "question": "Süni intellekt (AI) və Avtomatlaşdırmanın İnformasiya cəmiyyətində əmək bazarına təsirini təhlil edin.",
+    "options": [
+      "İnterneti bağlayır",
+      "Bütün peşələri ləğv edir",
+      "Rutin və monoton peşələri avtomatlaşdırır, eyni zamanda İKT, verilənlər analitikası və kiber-təhlükəsizlik üzrə yeni peşələr yaradır",
+      "Həç bir təsiri yoxdur"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Süni intellekt köhnə monoton fiziki işləri əvəz edir və intellektual rəqəmsal sahhədə yeni ixtisaslar açır.",
+      "distractors": {
+        "0": "Bağlamır.",
+        "1": "Yenilərini açır.",
+        "3": "Təsiri kəskindir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K02-02-02-009"
+  },
+  {
+    "question": "Elektron səhiyyə (e-Health) sisteminin (məsələn, İTS elektron tibbi kart, teleradiologiya) üstünlüyünü təhlil edin.",
+    "options": [
+      "Dərmanları yox etmək",
+      "Kompüteri xəstələndirmək",
+      "Xəstənin bütün xəstəlik tarixçəsini rəqəmsal yadda saxlamaq və uzaq məsafədən həkim məsləhəti (Telemedicine) almaq imkanı",
+      "Həkimləri ləğv etmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: e-Health tibbi məlumatları mərkəzləşdirir və operativ diaqnostikanı sürətləndirir.",
+      "distractors": {
+        "0": "Təbabətdir.",
+        "1": "Absurddur.",
+        "3": "Həkimlərə kömək edir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K02-02-02-010"
+  },
+  {
+    "question": "İnformasiya cəmiyyətində 'Feyk xəbər' (Fake News / Dezinformasiya) ilə mübarizə metodunu təhlil edin.",
+    "options": [
+      "Hər oxuduğuna inanmaq",
+      "İnterneti tam söndürmək",
+      "Məlumatı tək bir sosial şəbəkə postundan deyil, rəsmi və etibarlı xəbər mənbələrindən çarpaz yoxlamaq (Fact-checking)",
+      "Xəbərləri silmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Media savadlılığı və fact-checking rəqəmsal cəmiyyətdə manipulyasiyanın qarşısını alır.",
+      "distractors": {
+        "0": "Yalandır.",
+        "1": "Çıxış yolu deyil.",
+        "3": "Savadlılıqdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K04-03-03-011"
+  },
+  {
+    "question": "Bulud Texnologiyalarının (Cloud Computing: Google Drive, OneDrive) rəqəmsal cəmiyyətə verdiyi imkan nədir?",
+    "options": [
+      "Faylları fiziki yaddaş kartında deyil, internetdəki təhlükəsiz serverlərdə saxlayıb istənilən cihazdan çıxış əldə etmək",
+      "İnternetə pul ödəməmək",
+      "Faylları məhv etmək",
+      "Kompüteri yavaşlatmaq"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Cloud yaddaş istənilən yerdən rəqəmsal sənədlərə çıxış və birgə işləmə (collaboration) yaradır.",
+      "distractors": {
+        "1": "Trafik işlədir.",
+        "2": "Qoruyur.",
+        "3": "Yükü azaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K04-03-03-012"
+  },
+  {
+    "question": "Kiberzorakılıq (Cyberbullying) nədir və onunla qarşılaşdıqda nə edilməlidir?",
+    "options": [
+      "Kompüteri kənara atmaq",
+      "Ona söyüş yazmaq",
+      "İnternetdə və sosial şəbəkələrdə şəxsin təhqir olunması və ya təhdid edilməsidir; bu zaman həmin istifadəçi bloklanmalı və böyüklərə/hüquq-muhafizəyə xəbər verilməlidir",
+      "Susub cavab verməmək"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Cyberbullying rəqəmsal mühitdə psixoloji zorakılıqdır və dərhal rəsmi şikayət olunmalıdır.",
+      "distractors": {
+        "0": "Həll deyil.",
+        "1": "Konflikti artırır.",
+        "3": "Təhlükəlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K04-03-03-013"
+  },
+  {
+    "question": "Əşyaların İnterneti (IoT - Internet of Things: Ağıllı Ev, Ağıllı Şəhər) konsepsiyasını təhlil edin.",
+    "options": [
+      "Yalnız kompüterlərin qoşulması",
+      "Cihazların sıradan çıxması",
+      "İnternetin kəsilməsi",
+      "Məişət və sənaye cihazlarının (soyuducu, kondisioner, işıqlar) internetə qoşularaq insan müdaxiləsi olmadan bir-biri ilə məlumat mübadiləsi aparması"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: IoT sensorlar vasitəsilə fiziki dünyanı rəqəmsal idarəetməyə bağlayır.",
+      "distractors": {
+        "0": "Bütün əşyalardır.",
+        "1": "Avtomatlaşdırır.",
+        "2": "İnternet şərtdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K04-03-03-014"
+  },
+  {
+    "question": "Dövlətin və cəmiyyətin davamlı inkişafında İnformasiya-Kommunikasiya Texnologiyalarının (İKT) rolunu qiymətləndirin.",
+    "options": [
+      "Şəffaflığın artırılması, bilik iqtisadiyyatının formalaşması, innovasiyaların sürətlənməsi və vətəndaşların həyat keyfiyyətinin yüksəldilməsi",
+      "İKT cəmiyyətə zərər verir",
+      "Texnologiyanı dayandırmaq lazımdır",
+      "Fayda vermir"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Cəmiyyətin informasiyalaşdırılması prinsiplərini təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İKT müasir sivilizasiyanın qlobal inkişaf indeksini müəyyən edən əsas strateji sahədir.",
+      "distractors": {
+        "1": "İnkişaf etdirir.",
+        "2": "Dayandırmaq olmaz.",
+        "3": "Böyük faydası var."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "24. Cəmiyyətin informasiyalaşdırılması",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0624-24K04-03-03-015"
+  }
+]

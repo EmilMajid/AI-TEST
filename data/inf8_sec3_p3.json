@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "Python-da şərt budaqlanmasını yaratmaq üçün hansı əsas operator istifadə olunur?",
+    "options": [
+      "def - return",
+      "for - while",
+      "if - elif - else",
+      "try - except"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Şərtin ödənilməsindən asılı olaraq idarəetməni müxtəlif budaqlara yönəltmək üçün if, elif və else strukturu işlədilir.",
+      "distractors": {
+        "0": "def funksiya üçündür.",
+        "1": "for-while dövr operatorlarıdır.",
+        "3": "try-except xətaları tutmaq üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K01-01-01-001"
+  },
+  {
+    "question": "Python-da şərt sadəcə bərabərliyi yoxlayarkən hansı müqayisə operatoru istifadə olunur?",
+    "options": [
+      "==",
+      "=",
+      ">=",
+      "!="
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: == iki kəmiyyətin bərabərliyini təyin edən müqayisə operatorudur; = isə mənimsətmədir.",
+      "distractors": {
+        "1": "= mənimsətmə operatorudur.",
+        "2": ">= böyük-bərabərdir operatorudur.",
+        "3": "!= bərabər deyil operatorudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K01-01-01-002"
+  },
+  {
+    "question": "Python-da `and` (Məntiqi İƏ) və `or` (Məntiqi VƏ YA) operatorlarının iş prinsipi hansıdır?",
+    "options": [
+      "or bütün şərtlər True olmalıdır",
+      "and bütün şərtlər True olduqda True verir; or ən azı 1 şərt True olduqda True verir",
+      "Hər ikisi False verir",
+      "and yalnız 1 şərt üçün True-dur"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: and konyunksiyadır (hər iki şərt ödənməlidir), or dizyunksiyadır (biri ödənsə kifayətdir).",
+      "distractors": {
+        "0": "and üçün keçərlidir.",
+        "2": "Yanlışdır.",
+        "3": "or üçün keçərlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "conceptual_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K01-01-01-003"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 15\nif x > 10:\n    print(\"Böyük\")\nelse:\n    print(\"Kiçik\")",
+    "options": [
+      "Böyük",
+      "15",
+      "Kiçik",
+      "SyntaxError"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 15 > 10 şərti True olduğu üçün if budağı icra olunur və ekrana \"Böyük\" çıxır.",
+      "distractors": {
+        "1": "x-in qiymətidir.",
+        "2": "else budağıdır.",
+        "3": "Sintaksis düzgündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K01-01-01-004"
+  },
+  {
+    "question": "Python-da if və else bloklarının daxilindəki əmrlərin yazılışında 'Indent' (Sol boşluq / 4 probel) verilməzsə nə baş verər?",
+    "options": [
+      "Kompüter sönər",
+      "IndentationError (Boşluq sintaktik xətası) verər",
+      "Proqram normal işləyər",
+      "Nəticə 0 olar"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da bloklar (if, for, def) mötərizə ilə deyil, mütləq sol boşluq (indentation - 4 probel) ilə seçilir.",
+      "distractors": {
+        "0": "Sönməz.",
+        "2": "İşləməz boşluq məcburidir.",
+        "3": "Xəta verər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K01-01-01-005"
+  },
+  {
+    "question": "Kodu icra edin:\na = 20\nif a % 2 == 0:\n    print(\"Cüt\")\nelse:\n    print(\"Tək\")",
+    "options": [
+      "Tək",
+      "0",
+      "20",
+      "Cüt"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 20 % 2 = 0 (20/2-dən qalıq 0-dır). 0 == 0 True olduğu üçün ekrana \"Cüt\" çıxır.",
+      "distractors": {
+        "0": "Tək 20 % 2 != 0 olduqda çıxardı.",
+        "1": "Qalığın özüdür.",
+        "2": "a-nın qiymətidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K02-02-02-006"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 7\nif x > 10:\n    print(\"A\")\nelif x > 5:\n    print(\"B\")\nelse:\n    print(\"C\")",
+    "options": [
+      "A B",
+      "C",
+      "B",
+      "A"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x=7. x>10 (7>10) False. elif x>5 (7>5) True -> B çıxır və zəncir bitir.",
+      "distractors": {
+        "0": "Yalnız 1 budaq icra olunur.",
+        "1": "else icra olunmur çünki elif ödənib.",
+        "3": "7>10 False-dur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K02-02-02-007"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 12\nif x > 5 and x < 10:\n    print(\"Bəli\")\nelse:\n    print(\"Xeyr\")",
+    "options": [
+      "Bəli",
+      "12",
+      "SyntaxError",
+      "Xeyr"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x=12. 12>5 True, lakin 12<10 False. True and False = False verdiyi üçün else hissəsi (\"Xeyr\") icra olunur.",
+      "distractors": {
+        "0": "and hər iki şərtin ödənməsini tələb edir.",
+        "1": "Dəyişənin qiymətidir.",
+        "2": "Xəta yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K02-02-02-008"
+  },
+  {
+    "question": "Üç ədədin (a, b, c) ən böyüyünü (maksimumunu) tapan doğru şərt ifadəsi hansıdır?",
+    "options": [
+      "if a + b + c > 0: max = a",
+      "if a == b == c: max = a",
+      "if a >= b and a >= c: max = a",
+      "if a > b or a > c: max = a"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: a-nın həm b-dən, həm də c-dən böyük-bərabər olması (and) onun maksimum olduğunu sübut edir.",
+      "distractors": {
+        "0": "Cəm maksimumu vermir.",
+        "1": "Bu bərabərlikdir.",
+        "3": "or yetərli deyil b-dən böyük olub c-dən kiçik ola bilər."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K02-02-02-009"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 5\ny = 10\nif x > 0:\n    if y < 15:\n        print(\"OK\")\n    else:\n        print(\"NO\")",
+    "options": [
+      "NO",
+      "Heç nə",
+      "OK",
+      "5 10"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkiqat daxilə yuvalanmış şərt (Nested if): 5>0 True, içəridə 10<15 True -> \"OK\" çıxır.",
+      "distractors": {
+        "0": "y<15 şərti ödənir.",
+        "1": "Çıxış var.",
+        "3": "Dəyişənlərdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K02-02-02-010"
+  },
+  {
+    "question": "Python-da `not` (Məntiqi İNKAR) operatorunun funksiyası nədir?",
+    "options": [
+      "İfadələri toplayır",
+      "Şərti silir",
+      "Proqramı dayandırır",
+      "Məntiqi ifadənin qiymətini tərsinə çevirir (True -> False, False -> True)"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: not operatoru unar operator olub məntiqi qiyməti inkar edir: not True = False.",
+      "distractors": {
+        "0": "Toplama aparmır.",
+        "1": "Silmir.",
+        "2": "Dayandırmır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "conceptual_error",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K04-03-03-011"
+  },
+  {
+    "question": "Kodu icra edin:\nmark = 85\nif mark >= 90: g = 'A'\nelif mark >= 80: g = 'B'\nelif mark >= 70: g = 'C'\nelse: g = 'F'\nprint(g)",
+    "options": [
+      "B",
+      "A",
+      "F",
+      "C"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 85 >= 90 False; 85 >= 80 True -> g = 'B' mənimsədilir və şərt blokundan çıxılır.",
+      "distractors": {
+        "1": "85 < 90-dır.",
+        "2": "else ödənmir.",
+        "3": "İlk ödənilən elif 80-dir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K04-03-03-012"
+  },
+  {
+    "question": "Şərti operatorun ternary (üçlü/birsətirli) yazılış forması: `status = \"Keçdi\" if score >= 50 else \"Kəsildi\"`. score = 45 olarsa status nə olar?",
+    "options": [
+      "SyntaxError",
+      "45",
+      "Kəsildi",
+      "Keçdi"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 45 >= 50 False olduğu üçün else hissəsindəki \"Kəsildi\" qiyməti status-a yazılır.",
+      "distractors": {
+        "0": "Python-da ternary if düzgündür.",
+        "1": "Xalın özüdür.",
+        "3": "50-dən kiçikdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K04-03-03-013"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 0\nif x:\n    print(\"A\")\nelse:\n    print(\"B\")",
+    "options": [
+      "B",
+      "0",
+      "SyntaxError",
+      "A"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da 0 ədədi məntiqi olaraq False deməkdir (`if 0:` -> False). Buna görə else hissəsi (\"B\") çıxır.",
+      "distractors": {
+        "1": "0 dəyişəndir.",
+        "2": "x-in özü şərt kimi yazıla bilər.",
+        "3": "0 False verir A çıxmaz."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K04-03-03-014"
+  },
+  {
+    "question": "Proqramlaşdırmada mürəkkəb şərt strukturlarının (Məsələn, bank kreditinin verilməsi: yaş >= 18 and maaş >= 500 and zamin == True) alqoritmik rolunu qiymətləndirin.",
+    "options": [
+      "İstifadəçini aldatmaq üçün",
+      "Riyaziyyatı ləğv etmək üçün",
+      "Qərar qəbulu sistemlərini tam avtomatlaşdırmağa və bütün mümkün risk ehtimallarını dəqiq budaqlandırmağa imkan verməsi",
+      "Proqramı dayandırmaq üçün"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "Şərt operatorunu və budaqlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Mürəkkəb if-elif-else şərtləri süni intellekt və ekspert sistemlərində biznes-məntiqləri həyata keçirməyin təməlidir.",
+      "distractors": {
+        "0": "Avtomatlaşdırma üçündür.",
+        "1": "Riyazi məntiqə söykənir.",
+        "3": "Qərar vermək üçündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "11. Şərt operatoru",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0311-11K04-03-03-015"
+  },
+  {
+    "question": "Proqramlaşdırmada ŞƏRT ÖDƏNİLDİYİ MÜDDƏTDƏ təkrarlanan əmrlər bloku necə adlanır?",
+    "options": [
+      "Massiv",
+      "Dövr (Loop / while dövrü)",
+      "Dəyişən",
+      "Şərt operatoru"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövr operatoru (while) müəyyən şərt True olduğu müddətdə əmrlər blokunu dəfələrlə təkrar icra edir.",
+      "distractors": {
+        "0": "Massiv verilənlər strukturudur.",
+        "2": "Dəyişən saxlayıcıdır.",
+        "3": "Şərt 1 dəfə yoxlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K01-01-01-001"
+  },
+  {
+    "question": "Python-da şərtli dövr yaratmaq üçün hansı operator istifadə olunur?",
+    "options": [
+      "if",
+      "while",
+      "import",
+      "def"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `while şərt:` sintaksisi şərt doğru olduqca dövrü davam etdirir.",
+      "distractors": {
+        "0": "if 1 dəfə yoxlayır.",
+        "2": "import modulları qoşur.",
+        "3": "def funksiya yaradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K01-01-01-002"
+  },
+  {
+    "question": "Kodu icra edin:\ni = 1\nwhile i <= 3:\n    print(i, end=\" \")\n    i = i + 1",
+    "options": [
+      "Sonsuz dövr",
+      "1 2 3",
+      "1 2 3 4",
+      "3 2 1"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: i=1 (çıxır 1, i=2); i=2 (çıxır 2, i=3); i=3 (çıxır 3, i=4); i=4 olduqda 4<=3 False olur, dövr bitir. Nəticə: 1 2 3.",
+      "distractors": {
+        "0": "i artır sonsuz deyil.",
+        "2": "4 olduqda şərt ödənmir.",
+        "3": "Artan sıradır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K01-01-01-003"
+  },
+  {
+    "question": "Proqramlaşdırmada 'Sonsuz dövr' (Infinite Loop) nə zaman yaranır?",
+    "options": [
+      "print() yazıldıqda",
+      "Dövr 5 dəfə təkrar olunduqda",
+      "Şərt False olduqda",
+      "Dövrün şərti həmişə True qaldıqda və dövr daxilində şərti dəyişən addım (sayğac) unudulduqda"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: while daxilində dəyişən artırılmazsa şərt heç vaxt False olmur və proqram dayanmadan təkrar edir (Sonsuz dövr).",
+      "distractors": {
+        "0": "print çapa verir.",
+        "1": "Bu sonlu dövrdür.",
+        "2": "Şərt False olduqda dövr bitir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K01-01-01-004"
+  },
+  {
+    "question": "Dövrü vaxtından əvvəl MƏCBURİ DAYANDIRIB çıxmaq üçün Python-da hansı operatordan istifadə olunur?",
+    "options": [
+      "pass",
+      "break",
+      "continue",
+      "exit"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: break operatoru dövrün icrasını dərhal dayandırır və idarəetməni dövrdən sonrakı sətrə verir.",
+      "distractors": {
+        "0": "pass boş blok üçün yer saxlayandır.",
+        "2": "continue cari addımı buraxıb növbəti addıma keçir.",
+        "3": "exit bütün proqramı bağlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K01-01-01-005"
+  },
+  {
+    "question": "Dövr daxilində cari addımı buraxıb NÖVBƏTİ İTERASİYAYA (addıma) keçmək üçün hansı operator istifadə olunur?",
+    "options": [
+      "continue",
+      "break",
+      "skip",
+      "stop"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: continue operatoru özündən aşağıda olan koda baxmadan dərhal dövrün şərt hissəsinə qayıdır.",
+      "distractors": {
+        "1": "break dövrü tam dayandırır.",
+        "2": "skip Python-da yoxdur.",
+        "3": "stop Python-da yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K02-02-02-006"
+  },
+  {
+    "question": "Kodu icra edin:\ns = 0\ni = 1\nwhile i <= 4:\n    s += i\n    i += 1\nprint(s)",
+    "options": [
+      "10",
+      "4",
+      "0",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1-dən 4-ədək ədədlərin cəmi: s = 1 + 2 + 3 + 4 = 10.",
+      "distractors": {
+        "1": "İterasiya sayıdır.",
+        "2": "İlkin qiymətdir.",
+        "3": "1-dən 5-ədək cəmdir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K02-02-02-007"
+  },
+  {
+    "question": "Kodu icra edin:\ni = 1\nwhile i < 10:\n    if i == 3:\n        break\n    i += 1\nprint(i)",
+    "options": [
+      "1",
+      "10",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: i=1, 2 olur... i=3 olduqda `if i == 3:` şərti ödənir və `break` işə düşərək dövrü dayandırır. Çıxış: 3.",
+      "distractors": {
+        "0": "İlkin qiymətdir.",
+        "1": "Dövr sonadək getmir break dayandırır.",
+        "3": "3-də dayanıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K02-02-02-008"
+  },
+  {
+    "question": "Kodu icra edin:\nx = 10\nwhile x > 0:\n    x -= 3\nprint(x)",
+    "options": [
+      "1",
+      "0",
+      "-2",
+      "-1"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: x = 10 -> 7 -> 4 -> 1 -> -2. -2 > 0 False olduğu üçün dövr bitir və -2 çap olunur.",
+      "distractors": {
+        "0": "1>0 True olduğu üçün 1 addım da gedir (1-3=-2).",
+        "1": "1-3 = -2 edər 0 etməz.",
+        "3": "Hesablama səhvidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K02-02-02-009"
+  },
+  {
+    "question": "Kodu icra edin:\ni = 0\ncount = 0\nwhile i < 5:\n    i += 1\n    if i % 2 == 0:\n        continue\n    count += 1\nprint(count)",
+    "options": [
+      "0",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: i sırayla 1, 2, 3, 4, 5 olur. Cüt ədədlərdə (2, 4) continue işləyir. Tək ədədlər (1, 3, 5) zamanı count 1 artır. cəmi 3 tək ədəd var -> count = 3.",
+      "distractors": {
+        "0": "Hesablama səhvidir.",
+        "1": "Ümumi iterasiyadır.",
+        "3": "Cüt ədədlərin sayıdır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K02-02-02-010"
+  },
+  {
+    "question": "Python-da `while - else` strukturunun özəlliyi nədir?",
+    "options": [
+      "Sintaktik xətadır",
+      "else yalnız break olduqda icra olunur",
+      "else heç vaxt icra olunmur",
+      "dövr `break` olunmadan normal şərtin False olması ilə başa çatdıqda `else` bloku icra olunur"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python while dövrünə else əlavə etməyə icazə verir; əgər dövr break ilə qırılmayıbsa sonuncu else işləyir.",
+      "distractors": {
+        "0": "Xəta deyil dilin imkanıdır.",
+        "1": "Break olduqda else işləmir.",
+        "2": "İcra olunur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K04-03-03-011"
+  },
+  {
+    "question": "Kodu icra edin:\np = 1\ni = 1\nwhile i <= 5:\n    p *= i\n    i += 1\nprint(p)",
+    "options": [
+      "25",
+      "120 (5!)",
+      "720",
+      "15"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Bu alqoritm 5 faktorialı hesablayır: p = 1 × 2 × 3 × 4 × 5 = 120.",
+      "distractors": {
+        "0": "5*5 hesablanıb.",
+        "2": "6! hesablanıb.",
+        "3": "Toplama aparılıb (1+2+3+4+5)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "calculation_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K04-03-03-012"
+  },
+  {
+    "question": "Qabaqcadan şərtli (önşərtli) dövr ilə sonrakı şərtli dövrün fərqini təhlil edin.",
+    "options": [
+      "Dövr həmişə 10 dəfə işləyir",
+      "Önşərtli dövrdə (while) şərt ƏVVƏL yoxlanılır, şərt False olarsa gövdə 0 dəfə də icra oluna bilər",
+      "Fərq yoxdur",
+      "Şərt sonra yoxlanıldıqda gövdə heç işləmir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: while dövründə ilkin şərt ödənməzsə dövrün gövdəsinə ümumiyyətlə girilmir (0 dəfə icra olunur).",
+      "distractors": {
+        "0": "Şərtdən asılıdır.",
+        "2": "Məntiq fərqlidir.",
+        "3": "Sonra yoxlananda ən azı 1 dəfə işləyir."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K04-03-03-013"
+  },
+  {
+    "question": "Kodu icra edin:\na = 100\ncount = 0\nwhile a > 1:\n    a //= 2\n    count += 1\nprint(count)",
+    "options": [
+      "100",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: a: 100 -> 50 (1) -> 25 (2) -> 12 (3) -> 6 (4) -> 3 (5) -> 1 (6). 1 > 1 False edir, count = 6.",
+      "distractors": {
+        "0": "İlkin qiymətdir.",
+        "1": "Bölmə əksik sayılıb.",
+        "3": "Bölmə artıq sayılıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "calculation_error",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K04-03-03-014"
+  },
+  {
+    "question": "Dövr alqoritmlərinin (while/for) kompüterdə böyük həcmli təkrarlanan məsələlərin həllində tətbiqini qiymətləndirin.",
+    "options": [
+      "Kompüteri yavaşlatmaq üçün",
+      "Minlərlə sətirlik təkrar işləri 2-3 sətir kodla saniyələr daxilində avtomatlaşdırmağa imkan verməsi",
+      "İnterneti kəsmək üçün",
+      "Kod yazmağı uzatmaq üçün"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "while dövrünü və şərtli təkrarlanmanı təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Dövrlər proqramlaşdırmanın ən böyük gücüdür; kütləvi verilənlərin (big data) təkrar emalını avtomatlaşdırır.",
+      "distractors": {
+        "0": "Sürətləndirir.",
+        "2": "İnternetlə bağlı deyil.",
+        "3": "Kodu qısaldır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "conceptual_error",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "12. Proqramda dövr",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0312-12K04-03-03-015"
+  },
+  {
+    "question": "Python-da təkrarlanma sayı əvvəlcədən bəlli olan sayğaclı dövr yaratmaq üçün hansı operatordan istifadə olunur?",
+    "options": [
+      "while",
+      "if",
+      "switch",
+      "for"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: `for i in range(...):` operatoru təkrarlanma sayı öncədən məlum olan sayğaclı dövrləri təşkil edir.",
+      "distractors": {
+        "0": "while şərtli dövrdür.",
+        "1": "if şərt operatorudur.",
+        "2": "switch Python-da yoxdur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "term_confusion",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K01-01-01-001"
+  },
+  {
+    "question": "Python-da `range(5)` funksiyası hansı ədədlər ardıcıllığını generasiya edir?",
+    "options": [
+      "0, 1, 2, 3, 4",
+      "1, 2, 3, 4, 5",
+      "0, 1, 2, 3, 4, 5",
+      "1, 2, 3, 4"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(n) 0-dan başlayaraq (daxil olmaqla) n-ə qədər (n daxil OLMAMAQLA) tam ədədlər verir (cəmi 5 ədəd: 0,1,2,3,4).",
+      "distractors": {
+        "1": "0-dan başlayır 5 daxil deyil.",
+        "2": "5 daxil olmur.",
+        "3": "0-dan başlayır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K01-01-01-002"
+  },
+  {
+    "question": "Python-da `range(2, 8, 2)` funksiyasında arqumentlərin sırasını təhlil edin (start, stop, step).",
+    "options": [
+      "8-dən başla 2-yə qədər",
+      "Yalnız 2 və 8",
+      "2-dən başla, 8-ə qədər (8 daxil deyil), 2-2 artır (Nəticə: 2, 4, 6)",
+      "2-dən 8-ə kimi 8 daxil olmaqla"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(start, stop, step): başlanğıc=2, son=8 (daxil deyil), addım=2 -> 2, 4, 6.",
+      "distractors": {
+        "0": "Tərs sıradır.",
+        "1": "Addımlı ardıcıllıqdır.",
+        "3": "8 daxil olmur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K01-01-01-003"
+  },
+  {
+    "question": "Kodu icra edin:\nfor i in range(3):\n    print(\"Salam\", end=\" \")",
+    "options": [
+      "Salam\nSalam\nSalam",
+      "Salam ",
+      "SyntaxError",
+      "Salam Salam Salam "
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(3) dövrü 3 dəfə təkrar edir (i=0, 1, 2). end=\" \" olduğu üçün yanaşı 3 dəfə \"Salam \" çap olunur.",
+      "distractors": {
+        "0": "end=\" \" ləğv edir alt-alta düşmür.",
+        "1": "1 dəfə çap edilib.",
+        "2": "Sintaksis düzgündür."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "typical_mistake",
+      "1": "calculation_error",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K01-01-01-004"
+  },
+  {
+    "question": "Kodu icra edin:\ns = 0\nfor i in range(1, 6):\n    s += i\nprint(s)",
+    "options": [
+      "21",
+      "10",
+      "6",
+      "15"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "bilmə",
+    "difficulty": "sadə",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(1, 6) ədədləri: 1, 2, 3, 4, 5. s = 1 + 2 + 3 + 4 + 5 = 15.",
+      "distractors": {
+        "0": "6 da toplanıb.",
+        "1": "6 nəzərə alınmayıb (1+2+3+4=10).",
+        "2": "Dövr sonudur."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "1": "typical_mistake",
+      "2": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K01-01-01-005"
+  },
+  {
+    "question": "10-dan 1-ə qədər geriyə doğru 1-1 azalan ədədlər sırasını yaradan `range` hansıdır?",
+    "options": [
+      "range(10, 0, -1)",
+      "range(10, 1, 1)",
+      "range(1, 10, -1)",
+      "range(10, -1)"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Geriyə sayım üçün addım negatif olmalıdır: start=10, stop=0 (0 daxil deyil 1-də bitir), step=-1 -> 10, 9, 8, 7, 6, 5, 4, 3, 2, 1.",
+      "distractors": {
+        "1": "Addım müsbətdir artar.",
+        "2": "Başlanğıc son kiçikdir boş olar.",
+        "3": "Addım verilməyib."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "typical_mistake",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K02-02-02-006"
+  },
+  {
+    "question": "Kodu icra edin:\nfor char in \"AZERBAYCAN\":\n    if char == \"A\":\n        continue\n    print(char, end=\"\")",
+    "options": [
+      "A A A",
+      "SyntaxError",
+      "ZERBYCN",
+      "AZERBAYCAN"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: String üzərində for dövrü hər hərfi götürür. char == \"A\" olduqda `continue` keçir və \"A\" hərfləri çap olunmur. Nəticə: ZERBYCN.",
+      "distractors": {
+        "0": "Yalnız A-lar çap edilib.",
+        "1": "Xəta yoxdur.",
+        "3": "A-lar da çap edilib."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K02-02-02-007"
+  },
+  {
+    "question": "Kodu icra edin:\ncount = 0\nfor i in range(1, 20):\n    if i % 3 == 0:\n        count += 1\nprint(count)",
+    "options": [
+      "6",
+      "7",
+      "19",
+      "5"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: 1-dən 19-adək 3-ə bölünən ədədlər: 3, 6, 9, 12, 15, 18 (cəmi 6 ədəd var). count = 6.",
+      "distractors": {
+        "1": "21 də sayılıb.",
+        "2": "Bütün ədədlərdir.",
+        "3": "18 nəzərə alınmayıb."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "term_confusion",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K02-02-02-008"
+  },
+  {
+    "question": "İkiqat daxilə yuvalanmış dövrün (Nested for loop) icra sayını tapın:\nfor i in range(3):\n    for j in range(4):\n        print(\"*\", end=\"\")",
+    "options": [
+      "12 dəfə '*'",
+      "7 dəfə '*'",
+      "4 dəfə '*'",
+      "3 dəfə '*'"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Xarici dövr 3 dəfə, daxili dövr 4 dəfə fırlanır. Ümumi icra sayısı = 3 × 4 = 12 dəfə.",
+      "distractors": {
+        "1": "Toplama aparılıb (3+4).",
+        "2": "Yalnız daxilidir.",
+        "3": "Yalnız xaricidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "typical_mistake",
+      "2": "term_confusion",
+      "3": "term_confusion"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K02-02-02-009"
+  },
+  {
+    "question": "Kodu icra edin:\nfact = 1\nfor i in range(1, 5):\n    fact *= i\nprint(fact)",
+    "options": [
+      "10",
+      "5",
+      "120",
+      "24"
+    ],
+    "correctAnswer": 3,
+    "bloom_level": "anlama",
+    "difficulty": "orta",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(1, 5) ədədləri 1, 2, 3, 4 (5 daxil deyil!). fact = 1 × 2 × 3 × 4 = 24 (4!).",
+      "distractors": {
+        "0": "Toplama aparılıb.",
+        "1": "Sonuncu i-dir.",
+        "2": "5 daxil edilib (5!=120)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "term_confusion",
+      "1": "term_confusion",
+      "2": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K02-02-02-010"
+  },
+  {
+    "question": "Siyahı (List) üzərində `for element in [10, 20, 30]:` dövrünün iş prinsipini təhlil edin.",
+    "options": [
+      "Dövr sırayla siyahının hər bir elementini (10, sonra 20, sonra 30) element dəyişəninə mənimsədib icra edir",
+      "Siyahını tərs çevirir",
+      "Siyahını silir",
+      "Yalnız indeksləri götürür"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Python-da for dövrü iterasiya oluna bilən kolleksiyaların (siyahı, sətir, kortej) bütün elementlərini sırayla gəzir.",
+      "distractors": {
+        "1": "Tərs çevirmir.",
+        "2": "Silmir.",
+        "3": "range(len()) ilə indeks alınır."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "term_confusion",
+      "2": "conceptual_error",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K04-03-03-011"
+  },
+  {
+    "question": "Kodu icra edin:\nnumbers = [2, 5, 8, 11]\nsum_even = 0\nfor num in numbers:\n    if num % 2 == 0:\n        sum_even += num\nprint(sum_even)",
+    "options": [
+      "5",
+      "10",
+      "26",
+      "16"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: Siyahıdakı cüt ədədlər 2 və 8-dir. Cəm = 2 + 8 = 10.",
+      "distractors": {
+        "0": "Səhvdir.",
+        "2": "Bütün ədədlər toplanıb (2+5+8+11=26).",
+        "3": "Tək ədədlər toplanıb (5+11=16)."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "calculation_error",
+      "2": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K04-03-03-012"
+  },
+  {
+    "question": "Python-da `range(5, 5)` icra olunarsa nə baş verər?",
+    "options": [
+      "Sonsuz dövr olar",
+      "SyntaxError",
+      "Dövr gövdəsi 0 dəfə icra olunar (hiç bir ədəd verilmir)",
+      "1 dəfə 5 çap olar"
+    ],
+    "correctAnswer": 2,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: range(start, stop) üçün start >= stop olduqda (və step müsbətdir) interval boş olur və dövr 0 dəfə icra edilir.",
+      "distractors": {
+        "0": "Sonsuz olmur.",
+        "1": "Sintaksis düzgündür.",
+        "3": "5 daxil deyil."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "1": "typical_mistake",
+      "3": "typical_mistake"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K04-03-03-013"
+  },
+  {
+    "question": "Kodu icra edin:\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            print(i, end=\"\")",
+    "options": [
+      "123",
+      "321",
+      "1234",
+      "111"
+    ],
+    "correctAnswer": 0,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: i=1, j=1 olduqda i==j True (çap 1); i=2, j=2 olduqda True (çap 2); i=3, j=3 olduqda True (çap 3). Nəticə: 123.",
+      "distractors": {
+        "1": "Artan sıradır.",
+        "2": "4 daxil deyil.",
+        "3": "İndekslər fərqlidir."
+      }
+    },
+    "distractor_diagnostics": {
+      "1": "calculation_error",
+      "2": "typical_mistake",
+      "3": "calculation_error"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K04-03-03-014"
+  },
+  {
+    "question": "Sayğaclı for dövrünün proqramlaşdırmada alqoritmik mürəkkəbliyə (O(N) və O(N²)) təsirini qiymətləndirin.",
+    "options": [
+      "Daxilə yuvalanmış dövr istifadə etmək olmaz",
+      "Tək for dövrü N dəfə, ikiqat daxilə yuvalanmış for dövrü N² dəfə icra olunaraq böyük matrislərin emalında hesablamanın vaxt sərfinə birbaşa təsir edir",
+      "for dövrü yalnız 1 sətir koddur",
+      "for dövrü vaxtı sıfır edir"
+    ],
+    "correctAnswer": 1,
+    "bloom_level": "təhlil",
+    "difficulty": "çətin",
+    "measured_skill": "for sayğaclı dövrünü və range funksiyasını təhlil etmək",
+    "explanation": {
+      "correct": "İzah: İkiqat dövr 2 ölçülü cədvəl/matris emalında standartdır, lakin N böyüdükdə N² vaxt sərfi kəskin artır.",
+      "distractors": {
+        "0": "İstifadə edilir.",
+        "2": "Mənasızdır.",
+        "3": "Hesablama vaxtı alır."
+      }
+    },
+    "distractor_diagnostics": {
+      "0": "conceptual_error",
+      "2": "term_confusion",
+      "3": "conceptual_error"
+    },
+    "solution_steps": [],
+    "topic": "13. Sayğaclı dövrlər",
+    "cat": "İnformatika 8",
+    "passport_id": "08-002-0313-13K04-03-03-015"
+  }
+]
