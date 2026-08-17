@@ -18,14 +18,46 @@ export async function GET(request: NextRequest) {
         const db = loadDb()
         let allQuestions: any[] = []
 
+        const extractQuestions = (val: any, sKey?: string) => {
+            if (Array.isArray(val)) {
+                val.forEach((item: any) => {
+                    if (item.questions && Array.isArray(item.questions)) {
+                        item.questions.forEach((q: any) => {
+                            if (!q.topic && item.topic_key) q.topic = item.topic_key
+                            if (!q.category && sKey) q.category = sKey
+                            allQuestions.push(q)
+                        })
+                    } else if (item.question) {
+                        if (!item.category && sKey) item.category = sKey
+                        allQuestions.push(item)
+                    }
+                })
+            } else if (typeof val === "object" && val !== null) {
+                Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
+                    if (Array.isArray(qList)) {
+                        qList.forEach((q: any) => {
+                            if (!q.topic) q.topic = tKey
+                            if (!q.category && sKey) q.category = sKey
+                            allQuestions.push(q)
+                        })
+                    }
+                })
+            }
+        }
+
         if (subject && db[subject]) {
-            allQuestions = db[subject]
+            extractQuestions(db[subject], subject)
         } else {
-            allQuestions = Object.values(db).flat()
+            Object.entries(db).forEach(([sKey, val]) => extractQuestions(val, sKey))
         }
 
         if (topic) {
-            allQuestions = allQuestions.filter((q: any) => q.topic === topic || q.topic_key === topic)
+            const norm = (s: string) => (s || "").toLowerCase().replace(/["'“”«»()]/g, "").trim()
+            const targetNorm = norm(topic)
+            allQuestions = allQuestions.filter((q: any) => {
+                const qTopic = norm(q.topic || q.topic_key || "")
+                return qTopic === targetNorm || qTopic.includes(targetNorm) || targetNorm.includes(qTopic)
+            })
         }
 
         return NextResponse.json(allQuestions)

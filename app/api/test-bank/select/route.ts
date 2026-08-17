@@ -21,14 +21,47 @@ export async function POST(request: NextRequest) {
         const db = loadDb()
         let pool: any[] = []
 
+        const extractQuestions = (val: any, sKey?: string) => {
+            if (Array.isArray(val)) {
+                val.forEach((item: any) => {
+                    if (item.questions && Array.isArray(item.questions)) {
+                        item.questions.forEach((q: any) => {
+                            if (!q.topic && item.topic_key) q.topic = item.topic_key
+                            if (!q.category && sKey) q.category = sKey
+                            pool.push(q)
+                        })
+                    } else if (item.question) {
+                        if (!item.category && sKey) item.category = sKey
+                        pool.push(item)
+                    }
+                })
+            } else if (typeof val === "object" && val !== null) {
+                Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
+                    if (Array.isArray(qList)) {
+                        qList.forEach((q: any) => {
+                            if (!q.topic) q.topic = tKey
+                            if (!q.category && sKey) q.category = sKey
+                            pool.push(q)
+                        })
+                    }
+                })
+            }
+        }
+
         if (subject && db[subject]) {
-            pool = db[subject]
+            extractQuestions(db[subject], subject)
         } else {
-            pool = Object.values(db).flat()
+            Object.entries(db).forEach(([sKey, val]) => extractQuestions(val, sKey))
         }
 
         // Filter by topic
-        let filtered = pool.filter((q: any) => q.topic === topicKey || q.topic_key === topicKey)
+        const norm = (s: string) => (s || "").toLowerCase().replace(/["'“”«»()]/g, "").trim()
+        const targetNorm = norm(topicKey)
+
+        let filtered = pool.filter((q: any) => {
+            const qTopic = norm(q.topic || q.topic_key || "")
+            return qTopic === targetNorm || qTopic.includes(targetNorm) || targetNorm.includes(qTopic)
+        })
 
         // Apply optional filters
         if (difficulty) filtered = filtered.filter((q: any) => q.difficulty === difficulty)

@@ -67,7 +67,7 @@ const DEFAULT_SUBJECT_TOPICS: Record<string, string[]> = {
     "Ümumi tarix": ["Qədim Şərq və Qədim Dünya tarixi", "Orta əsrlər Avropa və Asiya", "Yeni dövr dünya diplomatiyası", "Ən yeni tarix və Beynəlxalq münasibətlər"],
     "Riyaziyyat": ["Ədədlər və cəbri ifadələr", "Tənliklər və Tənliklər sistemi", "Funksiyalar və Qrafiklər", "Həndəsə fiqurları və Sahələr", "Trigonometriya və Statistika"],
     "Xarici dil": ["Lexicon & Vocabulary", "Grammar & Syntax", "Reading Comprehension", "Writing & Expression"],
-    "İngilis dili": ["Lexicon & Vocabulary", "Grammar & Syntax", "Reading Comprehension", "Writing & Expression"],
+    "İngilis dili": ["UNIT 1. FREE TIME FUN", "UNIT 2. FOOD AROUND THE WORLD", "UNIT 3. NATURE", "UNIT 4. MANNERS AND RULES", "UNIT 5. A PLACE CALLED HOME", "UNIT 6. CHANGE-MAKERS"],
     "Alman dili": ["Wortschatz & Grammatik", "Leseverstehen", "Schreiben & Ausdruck"],
     "Fransız dili": ["Vocabulaire & Grammaire", "Compréhension écrite", "Expression écrite"],
     "Rus dili": ["Лексика и Грамматика", "Чтение и Понимание", "Письменная речь"],

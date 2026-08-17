@@ -320,113 +320,81 @@ function generateSubjectFallbackQuestions(
   count: number,
   difficulty: string
 ): any[] {
-  const questions: any[] = []
-  const titleLower = textbookTitle.toLowerCase()
+  // If specific topic match failed, fallback to any available questions from the SAME subject/grade in offline_tests.json
+  // NEVER generate hardcoded fake meta-template boilerplate!
+  try {
+    const bankPath = path.join(process.cwd(), "data", "offline_tests.json")
+    if (fs.existsSync(bankPath)) {
+      const raw = fs.readFileSync(bankPath, "utf-8")
+      const db = JSON.parse(raw)
+      
+      const norm = (s: string) =>
+        s
+          .toLowerCase()
+          .replace(/i̇/g, "i")
+          .replace(/ı/g, "i")
+          .replace(/ğ/g, "g")
+          .replace(/ö/g, "o")
+          .replace(/ü/g, "u")
+          .replace(/ş/g, "s")
+          .replace(/ç/g, "c")
+          .replace(/ə/g, "e")
+          .replace(/[\s\-_]+/g, " ")
+          .trim()
 
-  for (let i = 1; i <= count; i++) {
-    let questionText = ""
-    let options: string[] = []
-    let correctAnswer = (i - 1) % 4
-    let explanation = ""
+      const titleNorm = norm(textbookTitle)
+      const gradeDigit = String(grade || "").match(/\d+/)?.[0] || textbookTitle.match(/\d+/)?.[0]
 
-    if (titleLower.includes("azərbaycan dili") || titleLower.includes("azerbaycan")) {
-      questionText = `"${topic}" mövzusu üzrə dil qaydalarına əsasən, hansı fikirdə dil normasının gözlənilməsi tam düzgündür?`
-      options = [
-        "Bütün sözlər orfoqrafiya lüğətinə və qrammatik normaya tam uyğun yazılmışdır.",
-        "Sözün fonetik tərkibi ilə tələffüzü arasında uyğunsuzluq vardır.",
-        "Cümlədə mübtəda ilə xəbər arasında uzlaşma pozulmuşdur.",
-        "Leksik normaya riayət edilməmiş, məna xətasına yol verilmişdir."
-      ]
-      explanation = `Azərbaycan dili proqramına əsasən, "${topic}" mövzusunda nəzərdə tutulan qayda düzgün tətbiq edilmişdir.`
-    } else if (titleLower.includes("ədəbiyyat") || titleLower.includes("edebiyyat")) {
-      questionText = `"${topic}" ədəbi mövzusu və ideya-bədii xüsusiyyətləri ilə bağlı təhlildə hansı fikir əsas yer tutur?`
-      options = [
-        "Əsərdə vətənpərvərlik, insanpərvərlik və mənəvi azadlıq ideyaları ön plana çəkilir.",
-        "Hadisələr yalnız fantastik və romantik süjet xətti üzərində qurulmuşdur.",
-        "Qəhrəmanların daxili sarsıntıları epizodik xarakter daşıyır.",
-        "Əsərin dili sırf elmi terminlər kompleksindən ibarətdir."
-      ]
-      explanation = `Ədəbiyyat dərsliyinə əsasən, "${topic}" bəhsində əsas ideya müəllifin bədii niyyətini əks etdirir.`
-    } else if (titleLower.includes("informatika") || titleLower.includes("nformatika")) {
-      questionText = `"${topic}" mövzusunda nəzərdə tutulan əsas texnoloji prinsip və qayda hansıdır?`
-      options = [
-        "İnformasiyanın dəqiq emalı, alqoritmin ardıcıllığı və təhlükəsizlik qaydalarına əməl edilməsi.",
-        "Kompüterin yalnız xarici yaddaş qurğularından istifadə olunması.",
-        "Verilənlərin şifrələnmədən açıq şəbəkəyə ötürülməsi.",
-        "Alqoritmin sonluq xassəsinin pozulması."
-      ]
-      explanation = `İnformatika standartına görə, "${topic}" bölməsində texnoloji prinsip tam uyğundur.`
-    } else if (titleLower.includes("kimya")) {
-      questionText = `"${topic}" maddə tərkibi və reaksiya qanunauyğunluqlarına görə hansı ifadə doğrudur?`
-      options = [
-        "Reaksiya zamanı maddə kütləsinin saxlanması qanunu və rabitə enerjisi tam gözlənilir.",
-        "Atomların nüvə yükü kimyəvi reaksiya zamanı dəyişir.",
-        "Dissosiasiya prosesində ionların qatılığı sabit qalmır.",
-        "Məhlulun daxili enerjisi sıfıra bərabər olur."
-      ]
-      explanation = `Kimya kursuna əsasən, "${topic}" mövzusunda reaksiya qanunauyğunluğu doğrudur.`
-    } else if (titleLower.includes("ingilis") || titleLower.includes("english")) {
-      questionText = `Which of the following options correctly expresses the main concept of "${topic}"?`
-      options = [
-        "The statement accurately follows the grammatical rules and contextual meaning.",
-        "The sentence contains an incorrect verb tense agreement.",
-        "The vocabulary used is inappropriate for formal context.",
-        "The preposition is placed incorrectly at the beginning."
-      ]
-      explanation = `According to English curriculum guidelines, "${topic}" emphasizes proper grammar and usage.`
-    } else if (titleLower.includes("alman")) {
-      questionText = `Welche Aussage passt am besten zum Thema "${topic}"?`
-      options = [
-        "Die Aussage entspricht den grammatischen Regeln und dem Kontext.",
-        "Der Satz enthält einen deutlichen Wortstellungsfehler.",
-        "Das Verb steht an der falschen Position im Hauptsatz.",
-        "Die Präposition wird mit dem falschen Kasus verwendet."
-      ]
-      explanation = `Im Thema "${topic}" ist die grammatische Struktur korrekt angewendet.`
-    } else if (titleLower.includes("fransız") || titleLower.includes("fransiz")) {
-      questionText = `Quelle affirmation est correcte concernant le sujet "${topic}" ?`
-      options = [
-        "L'affirmation respecte parfaitement les règles de grammaire et le sens du texte.",
-        "Le verbe n'est pas correctement accordé avec le sujet.",
-        "L'utilisation de l'adjectif est incorrecte dans ce contexte.",
-        "La phrase manque d'élément essentiel de négation."
-      ]
-      explanation = `Dans le cadre du sujet "${topic}", la règle linguistique est respectée.`
-    } else if (titleLower.includes("rus")) {
-      questionText = `Какое утверждение является верным по теме "${topic}"?`
-      options = [
-        "Утверждение полностью соответствует правилам языка и контексту.",
-        "В предложении допущена грамматическая ошибка в согласовании.",
-        "Использованы устаревшие лексические формы.",
-        "Порядок слов нарушает стилистическую норму."
-      ]
-      explanation = `Согласно учебной программе по теме "${topic}", утверждение является правильным.`
-    } else {
-      questionText = `"${topic}" mövzusu üzrə dərslik proqramına əsasən hansı müddəa doğrudur?`
-      options = [
-        `"${topic}" mövzusunun əsas elmi və təlim prinsipi tam öyrənilmişdir.`,
-        "Tədqiqat metodları yalnız nəzəri xarakter daşıyır.",
-        "Mövzu üzrə qanunauyğunluqlar müasir proqrama ziddir.",
-        "Təhlil zamanı yalnız fərziyyələrdən istifadə edilir."
-      ]
-      explanation = `Dərslik mətninə əsasən, "${topic}" mövzusunda müddəa birmənalı olaraq doğrudur.`
+      const matchedKeys = Object.keys(db).filter(k => {
+        const kNorm = norm(k)
+        if (kNorm === titleNorm) return true
+        if (gradeDigit && !k.includes(gradeDigit)) return false
+        return titleNorm.includes(kNorm) || kNorm.includes(titleNorm)
+      })
+
+      let pool: any[] = []
+      matchedKeys.forEach(k => {
+        const val = db[k]
+        if (Array.isArray(val)) {
+          val.forEach((item: any) => {
+            if (item.questions && Array.isArray(item.questions)) {
+              item.questions.forEach((q: any) => pool.push(q))
+            } else if (item.question) {
+              pool.push(item)
+            }
+          })
+        } else if (typeof val === "object" && val !== null) {
+          Object.values(val).forEach((qList: any) => {
+            if (Array.isArray(qList)) {
+              qList.forEach((q: any) => pool.push(q))
+            }
+          })
+        }
+      })
+
+      if (pool.length > 0) {
+        const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+        return shuffled.map((q: any, idx: number) => ({
+          id: idx + 1,
+          question: q.question,
+          options: Array.isArray(q.options)
+            ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-D]\)\s*/i, "").trim() : String(opt))
+            : q.options,
+          correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : (q.correct_index ?? 0),
+          explanation: typeof q.explanation === "object" ? (q.explanation.correct || "") : (q.explanation || ""),
+          difficulty: q.difficulty || difficulty,
+          topic: q.topic || topic,
+          bloomLevel: q.bloom_level || q.bloomLevel || "anlama",
+          timeEstimate: 2,
+          sourceContext: q.sourceContext || `> **Mənbə:** ${textbookTitle}, "${topic}"`,
+        }))
+      }
     }
-
-    questions.push({
-      id: i,
-      question: questionText,
-      options: options,
-      correctAnswer: correctAnswer,
-      explanation: explanation,
-      difficulty: difficulty,
-      topic: topic,
-      bloomLevel: "anlama",
-      timeEstimate: 2,
-      sourceContext: `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
-    })
+  } catch (e) {
+    console.error("Fallback pool loading error:", e)
   }
 
-  return questions
+  return []
 }
 
 function loadFromQuestionBank(
@@ -594,8 +562,9 @@ function loadFromOfflineTests(
 
     let subjectQuestions: any[] = []
     matchedKeys.forEach(subjectKey => {
-      if (Array.isArray(db[subjectKey])) {
-        db[subjectKey].forEach((item: any) => {
+      const val = db[subjectKey]
+      if (Array.isArray(val)) {
+        val.forEach((item: any) => {
           if (item.questions && Array.isArray(item.questions)) {
             item.questions.forEach((q: any) => {
               if (!q.topic && item.topic_key) q.topic = item.topic_key
@@ -607,36 +576,67 @@ function loadFromOfflineTests(
             subjectQuestions.push(item)
           }
         })
+      } else if (typeof val === "object" && val !== null) {
+        Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
+          if (Array.isArray(qList)) {
+            qList.forEach((q: any) => {
+              if (!q.topic) q.topic = tKey
+              if (!q.category) q.category = subjectKey
+              subjectQuestions.push(q)
+            })
+          }
+        })
       }
     })
 
     if (subjectQuestions.length === 0) return []
 
+    const cleanTopicStr = (str: string) =>
+      norm(str)
+        .replace(/^[0-9ivx]+[.\-)]*\s*/gi, "")
+        .replace(/^bölmə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
+        .replace(/^hissə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
+        .replace(/["'“”«»()]/g, "")
+        .trim()
+
+    const targetNorm = norm(topic)
+    const targetClean = cleanTopicStr(topic)
+
+    // Stage 1: Exact or direct normalized match
     let specificTopicQuestions = subjectQuestions.filter((q: any) => {
-        const qTopic = (q.topic || "").toLowerCase().trim()
-        return qTopic === topicLower || 
-               topicLower.includes(qTopic) || 
-               qTopic.includes(topicLower)
+      const qTopic = q.topic || ""
+      const qNorm = norm(qTopic)
+      return qNorm === targetNorm || qTopic.toLowerCase().trim() === topicLower
     })
 
+    // Stage 2: Cleaned title match (without chapter numbers/quotes)
     if (specificTopicQuestions.length === 0) {
-      console.log(`[offline] Direct match failed for "${topic}", trying keyword match within subject...`)
-      const topicWords = topicLower
-        .replace(/[0-9.]/g, "")
+      specificTopicQuestions = subjectQuestions.filter((q: any) => {
+        const qClean = cleanTopicStr(q.topic || "")
+        return qClean === targetClean ||
+               (targetClean.length > 4 && qClean.includes(targetClean)) ||
+               (qClean.length > 4 && targetClean.includes(qClean))
+      })
+    }
+
+    // Stage 3: Keyword overlap match
+    if (specificTopicQuestions.length === 0) {
+      const topicWords = targetClean
         .split(/\s+/)
         .filter((w: string) => w.length > 3)
       
       if (topicWords.length > 0) {
         specificTopicQuestions = subjectQuestions.filter((q: any) => {
-          const qTopic = (q.topic || "").toLowerCase()
-          return topicWords.some((word: string) => qTopic.includes(word))
+          const qClean = cleanTopicStr(q.topic || "")
+          return topicWords.some((word: string) => qClean.includes(word))
         })
       }
     }
 
+    // Stage 4: Fallback to subject pool if no specific topic match
     if (specificTopicQuestions.length === 0) {
-      console.log(`[offline] No tests found for specific topic "${topic}" in offline_tests.json. Returning [] to trigger topic-specific AI generation.`)
-      return []
+      console.log(`[offline] No specific topic match for "${topic}", using subject-level pool for "${textbookTitle}".`)
+      specificTopicQuestions = subjectQuestions
     }
 
     const diffMap: Record<string, string[]> = {
