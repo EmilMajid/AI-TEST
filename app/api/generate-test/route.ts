@@ -345,12 +345,24 @@ function generateSubjectFallbackQuestions(
       const titleNorm = norm(textbookTitle)
       const gradeDigit = String(grade || "").match(/\d+/)?.[0] || textbookTitle.match(/\d+/)?.[0]
 
-      const matchedKeys = Object.keys(db).filter(k => {
+      let matchedKeys = Object.keys(db).filter(k => {
         const kNorm = norm(k)
         if (kNorm === titleNorm) return true
         if (gradeDigit && !k.includes(gradeDigit)) return false
         return titleNorm.includes(kNorm) || kNorm.includes(titleNorm)
       })
+
+      if (matchedKeys.length === 0) {
+        matchedKeys = Object.keys(db).filter(k => {
+          const kNorm = norm(k)
+          if (gradeDigit && !k.includes(gradeDigit)) return false
+          if ((titleNorm.includes("рус") || titleNorm.includes("rus")) && (kNorm.includes("rus") || kNorm.includes("рус"))) return true
+          if ((titleNorm.includes("english") || titleNorm.includes("ingilis")) && (kNorm.includes("ingilis") || kNorm.includes("english") || kNorm.includes("eng"))) return true
+          if ((titleNorm.includes("deutsch") || titleNorm.includes("german") || titleNorm.includes("alman")) && (kNorm.includes("alman") || kNorm.includes("deu"))) return true
+          if ((titleNorm.includes("français") || titleNorm.includes("francais") || titleNorm.includes("french") || titleNorm.includes("fransız") || titleNorm.includes("fransiz")) && (kNorm.includes("fransız") || kNorm.includes("fransiz") || kNorm.includes("fra"))) return true
+          return false
+        })
+      }
 
       let pool: any[] = []
       matchedKeys.forEach(k => {
@@ -521,7 +533,9 @@ function loadFromOfflineTests(
     const topicLower = topic.toLowerCase().trim()
 
     const norm = (s: string) =>
-      s
+      (s || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
         .replace(/i̇/g, "i")
         .replace(/ı/g, "i")
@@ -552,6 +566,18 @@ function loadFromOfflineTests(
         const kCoreName = kNorm.replace(/\b\d+\b/g, "").trim()
         if (gradeDigit && !k.includes(gradeDigit)) return false
         return kCoreName.includes(coreName) || coreName.includes(kCoreName)
+      })
+    }
+
+    if (matchedKeys.length === 0) {
+      matchedKeys = keys.filter(k => {
+        const kNorm = norm(k)
+        if (gradeDigit && !k.includes(gradeDigit)) return false
+        if ((titleNorm.includes("рус") || titleNorm.includes("rus")) && (kNorm.includes("rus") || kNorm.includes("рус"))) return true
+        if ((titleNorm.includes("english") || titleNorm.includes("ingilis")) && (kNorm.includes("ingilis") || kNorm.includes("english") || kNorm.includes("eng"))) return true
+        if ((titleNorm.includes("deutsch") || titleNorm.includes("german") || titleNorm.includes("alman")) && (kNorm.includes("alman") || kNorm.includes("deu"))) return true
+        if ((titleNorm.includes("français") || titleNorm.includes("francais") || titleNorm.includes("french") || titleNorm.includes("fransız") || titleNorm.includes("fransiz")) && (kNorm.includes("fransız") || kNorm.includes("fransiz") || kNorm.includes("fra"))) return true
+        return false
       })
     }
 

@@ -323,7 +323,7 @@ export default function Dashboard() {
                                   languagesSet.add("Alman dili")
                                 } else if (/fransız|fransiz|french/i.test(title)) {
                                   languagesSet.add("Fransız dili")
-                                } else if (/rus|russian/i.test(title)) {
+                                } else if (subj === "Rus dili" || /rus|russian|русский|рус/i.test(title) || id.includes("rus")) {
                                   languagesSet.add("Rus dili")
                                 }
                               })
@@ -391,7 +391,7 @@ export default function Dashboard() {
                                 } else if (lang === "Fransız dili") {
                                   return subj === "Fransız dili" || /fransız|fransiz|french/i.test(title)
                                 } else if (lang === "Rus dili") {
-                                  return subj === "Rus dili" || /rus|russian/i.test(title)
+                                  return subj === "Rus dili" || /rus|russian|русский|рус/i.test(title) || id.includes("rus")
                                 }
                                 return false
                               })

@@ -265,15 +265,24 @@ function getTopicsFromOfflineTests(bookId: string, bookSubject: string, classLev
                    (kNorm.includes(bookIdNorm.replace(/\-\d+$/, "")));
         });
 
-        if (!matchedKey || !Array.isArray(db[matchedKey])) return [];
+        if (!matchedKey) return [];
 
         const topicsSet = new Set<string>();
-        db[matchedKey].forEach((item: any) => {
-            const t = item.topic || item.topic_key;
-            if (t && typeof t === "string" && t.trim().length > 0 && !isMockContent(t)) {
-                topicsSet.add(t.trim());
-            }
-        });
+        const val = db[matchedKey];
+        if (Array.isArray(val)) {
+            val.forEach((item: any) => {
+                const t = item.topic || item.topic_key;
+                if (t && typeof t === "string" && t.trim().length > 0 && !isMockContent(t)) {
+                    topicsSet.add(t.trim());
+                }
+            });
+        } else if (typeof val === "object" && val !== null) {
+            Object.keys(val).forEach((t: string) => {
+                if (t && typeof t === "string" && t.trim().length > 0 && !isMockContent(t)) {
+                    topicsSet.add(t.trim());
+                }
+            });
+        }
 
         if (topicsSet.size === 0) return [];
 
@@ -315,7 +324,7 @@ export async function GET(request: NextRequest) {
             const lines = topicString.split('\n').map(l => l.trim()).filter(l => l.length > 0);
             const groups: TopicGroup[] = [];
             let currentGroup: TopicGroup | null = null;
-            const headerRegex = /^(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI)/i;
+            const headerRegex = /^(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI|Раздел)/i;
 
             const hasSubtopics = lines.some(line => !headerRegex.test(line));
 
