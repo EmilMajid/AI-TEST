@@ -1,106 +1,165 @@
-# 🎯 Gold Standard: Universal Test Generation Protocol
+# 🎯 Gold Standard 4.0: Architecture Specification (AI Test OS)
+## Memarlıq Spesifikasiyası (AI Test OS)
 
-> **Version:** 2.1 (Advanced Psychometric & PISA-Ready)
-> **Scope:** Grades 1-11 (Universal)
-> **Goal:** 100% pedagogical rigor, 0% hallucination, and psychometric precision.
-
----
-
-## 🏗️ 1. The "GOLD CORE" (Global Constraints)
-*Applied to EVERY prompt generation regardless of subject.*
-
-### ❗ Fundamental Rules
-1. **Source Isolation**: Use ONLY the provided context. Do NOT use external knowledge.
-2. **Pedagogical Integrity**:
-   - **No Negative Stems**: Forbidden: "Hansı DEYİL?", "Yanlışdır?", "Doğru olmayan".
-   - **Single Best Answer**: Exactly one unambiguously correct option.
-   - **Zero Subjectivity**: Avoid "səncə", "ən parlaq", "ən vacib".
-3. **Format**: Strictly JSON.
-4. **Self-Correction & Reliability**:
-   - **Model must solve the question it created before final output.**
-   - **CRITICAL**: If the model's own solution contradicts the assigned `correct_index`, the process must be REGENERATED.
-
-### 🚫 Prohibited Patterns
-- Multiple correct answers.
-- "All of the above" / "None of the above" options.
-- Direct copy-pasting from text (Paraphrase required).
+> **Versiya:** 4.0 (Production-Ready Multi-Agent AI Test OS)  
+> **Əhatə:** 1-11-ci Siniflər (Universal)  
+> **Məqsəd:** 100% RAG Dərslik Əsaslılıq, 0% Hallusinasiya, Minimum Token Xərci və Yüksək İcra Sabitliyi.
 
 ---
 
-## 🧠 2. Bloom-Lock & Operational Definitions
-| Level | Operational Action (Məcburi) | Forbidden (Qadağan) |
-| :--- | :--- | :--- |
-| **Xatırlama** | Fakt, tarix, termin, ad | Şərh vermək |
-| **Anlama** | Müqayisə etmək, izah etmək, parafraza | Sadə termin sorğusu |
-| **Tətbiq** | Yeni situasiyada istifadə, hesablama | Mövcud nümunəni təkrarlama |
-| **Təhlil** | Səbəb-nəticə, struktur bölmə, fərqləndirmə | Şərhsiz fakt |
+## 📌 1. Qızıl Qaydalar (Golden Rules)
+
+### ⚙️ QIZIL QAYDA #1 (Python Hesablama Qanunu)
+> **"If Python can calculate it, LLM must NEVER generate it."**  
+> *(Əgər Python bir şeyi hesablaya bilirsə, LLM onu heç vaxt generasiya etməməlidir.)*
+- Variantların qarışdırılması (`random.shuffle`), `correctAnswer` indeksinin riyazi hesablanması, cavab açarlarının balansı (25.0%), dublikat yoxlanışı və `passport_id` generasiyası birbaşa deterministik Python kodu ilə icra olunur.
+
+### ⚡ QIZIL QAYDA #2 (İnference Qənaəti və Təhlükəsizlik)
+> **"The architecture minimizes API pressure by reducing the normal execution path to 3 Primary LLM Inferences (Maximum 5 Inferences including Auto-Repair loops). Deterministic indexing eliminates index-mapping errors, while an Independent Solver validates semantic correctness."**
+- **Normal Yol:** Dəqiq 3 Əsas LLM İnference-i.
+- **Bərpa Yolu:** Cərrahi təmir ilə maksimum 5 İnference (Distraktor xətası olduqda yalnız distraktorlar yenilənir — 75% token qənaəti; Sübut çatışmadıqda yalnız sitatlar yenilənir — 80% qənaət).
+- **Müstəqil Həlledici (Blind Solver):** Generatordan təcrid olunmuş model sualı kor-koranə həll edir və semantik doğruluğu təsdiqləyir.
 
 ---
 
-## 📊 3. Psychometric Distractor Standards
-| Type | Definition (Azerbaijani) | Diagnostic Insight |
-| :--- | :--- | :--- |
-| **conceptual_error** | Konseptual səhv | Misunderstanding the core concept |
-| **partial_truth** | Qismən doğru (şərtə uyğun deyil) | Incomplete knowledge/reading |
-| **typical_mistake** | Tipik şagird səhvi | Common cognitive bias at this grade |
-| **term_confusion** | Termin qarışıqlığı | Weak vocabulary boundary |
+## 📡 2. Giriş və Çıxış Sistem Müqavilələri (Contracts)
 
----
-
-## 📂 4. Subject-Specific Protocols
-
-### 🟢 Azərbaycan Dili və Ədəbiyyat
-- **Operational Definition**: Focus on internal text logic and cause-effect.
-- **Rules**: Linguistic terms must be precise. No literary subjectivity.
-- **Distractors**: Symbolic analysis errors or term confusion.
-
-### 🔵 Riyaziyyat / Fizika
-- **Rules**: Step-by-step internal calculation is mandatory.
-- **Validation**: Final internal check must match result.
-- **Distractors**: Calculation errors, formula misuse, or condition misreading.
-
-### 🟡 Xarici Dil
-- **Grade-Lock**: Vocabulary restricted strictly to current grade's textbook.
-- **Rules**: Fair grammatical traps aligned with curriculum benchmarks.
-- **Distractors**: Tense confusion, word form errors.
-
-### 🟠 Sosial Fənlər (Tarix / Coğrafiya)
-- **Rules**: Absolute source isolation. Cause-effect analysis preferred.
-- **Distractors**: Anachronisms (wrong period), region mismatch, or partially correct explanations.
-
----
-
-## ⚙️ 5. Technical JSON Spec (Version 2.1)
-
+### 📥 1. Sistem Giriş Müqaviləsi (`SystemInputContract`)
 ```json
 {
-  "question": "...",
-  "options": ["A", "B", "C", "D"],
-  "correct_index": 0,
-  "bloom_level": "Anlama",
-  "difficulty": "Orta",
-  "measured_skill": "fractions.denominator_logic",
-  "operational_description": "...",
-  "explanation": {
-    "correct": "...",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SystemInputContract",
+  "type": "object",
+  "properties": {
+    "topic": { "type": "string" },
+    "category": { "type": "string" },
+    "rag_text": { "type": "string" },
+    "requested_count": { "type": "integer", "minimum": 1, "default": 21 },
+    "difficulty_bias": { "type": "string", "enum": ["standard", "hard_focus", "easy_focus"] },
+    "bloom_policy": { "type": "string", "enum": ["topic_adaptive", "balanced", "recall_heavy"] },
+    "language": { "type": "string", "default": "az" }
+  },
+  "required": ["topic", "category", "rag_text", "requested_count"]
+}
+```
+
+### 📤 2. Mərhələ 2 Çıxış Müqaviləsi (`Phase2OutputContract` - Un-indexed JSON)
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Phase2OutputContract",
+  "type": "object",
+  "properties": {
+    "item_id": { "type": "string" },
+    "concept": { "type": "string" },
+    "knowledge_unit": { "type": "string" },
+    "question_intent": { "type": "string" },
+    "bloom_level": { "type": "string", "enum": ["bilmə", "anlama", "tətbiq", "təhlil"] },
+    "difficulty": { "type": "string", "enum": ["sadə", "orta", "çətin"] },
+    "question_stem": { "type": "string" },
+    "correct_option_text": { "type": "string" },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "text_excerpts": { 
+          "type": "array", 
+          "items": { "type": "string" },
+          "description": "One or more verbatim text excerpts from RAG supporting the answer." 
+        }
+      },
+      "required": ["text_excerpts"]
+    },
     "distractors": {
-      "A": "...", "B": "...", "C": "..."
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "explanation": {
+      "type": "object",
+      "properties": {
+        "why_correct": { "type": "string" }
+      },
+      "required": ["why_correct"]
     }
   },
-  "distractor_diagnostics": {
-    "A": "conceptual_error",
-    "B": "typical_mistake",
-    "C": "term_confusion"
-  },
-  "solution_steps": ["step1", "step2"],
-  "estimated_time_sec": 60,
-  "cognitive_load": "medium",
-  "irt_proxy": {
-    "difficulty_estimate": 0.65,
-    "discrimination_estimate": 0.42
-  }
+  "required": [
+    "question_stem",
+    "correct_option_text",
+    "evidence",
+    "distractors",
+    "explanation"
+  ]
 }
 ```
 
 ---
-**Document Status:** ✅ PROMPT SPEC (Backend Specification Ready)
+
+## 🏛️ 3. 3 Əsas İnference və Python Dəstək Boru Kəməri
+
+```mermaid
+graph TD
+    A[RAG Text & Input Contract] --> B[🧠 INFERENCE 1: Knowledge & Blueprint Engine]
+    B --> C[🐍 MODULE 1.5: Python Topic-Adaptive Allocator]
+    C --> D[✍️ INFERENCE 2: Evidence-Anchored Item & Distractor Engine]
+    D --> E[🛡️ MODULE 2.5: Python Acceptance Gate & Deterministic Shuffler]
+    E --> F[🔍 INFERENCE 3: Independent Blind Solver]
+    F -->|Match| G[🏆 Master Database & Test Passport Generator]
+    F -->|Mismatch| H[🐍 MODULE 3.5: Python Surgical Repair Router]
+    H -->|Max 5 Inferences| D
+```
+
+---
+
+## 📋 4. Yekun Master JSON Strukturu və Qaydalar
+
+```json
+{
+  "question": "Sualın mətni...",
+  "options": ["A variantının mətni", "B variantının mətni", "C variantının mətni", "D variantının mətni"],
+  "correctAnswer": 2,
+  "bloom_level": "Tətbiq",
+  "difficulty": "Orta",
+  "measured_skill": "Məzmun standartı və ya bacarıq adı",
+  "explanation": {
+    "correct": "Dərslikdəki mətnə əsaslanan orijinal izahat...",
+    "distractors": {
+      "0": "Səbəbi...",
+      "1": "Səbəbi...",
+      "3": "Səbəbi..."
+    }
+  },
+  "distractor_diagnostics": {
+    "0": "conceptual_error",
+    "1": "typical_mistake",
+    "3": "term_confusion"
+  },
+  "solution_steps": ["Addım 1", "Addım 2"],
+  "topic": "Dərslikdəki Mövzu Adı",
+  "cat": "Fənnin və Sinfın Adı",
+  "passport_id": "04-010-0102-01M02-03-02-005"
+}
+```
+
+### ❗ Kritik Qaydalar:
+1. **`options` Formatı:** Mütləq Siyahı (Array) `["...", "...", "...", "..."]` formatında olmalıdır. Obyekt (Dictionary) qadağandır!
+2. **`correctAnswer` İndeksi:** Doğru cavab hərflə deyil, Integer (0, 1, 2, 3) kimi saxlanılır.
+3. **Pedaqoji İzahda Dinamiklik:** Variantlar qarışdırıldığı üçün izahda "A variantı doğrudur" kimi hərflər YAZILMIR. İzah birbaşa dərslikdəki mətn və elmi əsaslandırma ilə başlayır.
+
+---
+
+## 🪪 5. TESTİN PASPORTU (Vahid Universal Standart)
+
+Hər bir testin sistemdə 7-hissəli unikal "Şəxsiyyət vəsiqəsi" (Pasportu) olmalıdır:
+
+$$\mathbf{[SS]-[FFF]-[BBMM]-[STK]-[BL]-[ÇÇ]-[NNN]}$$
+
+- **`[SS]` (Sinif Kodu):** 2 rəqəmli (məs: `04`, `09`, `11`).
+- **`[FFF]` (Fənn Kodu):** 3 rəqəmli (`001` = Azərbaycan dili, `002` = İnformatika, `003` = Ümumi tarix, `004` = Coğrafiya, `005` = Ədəbiyyat, `006` = İngilis dili, `007` = Fizika, `008` = Kimya, `009` = Biologiya, `010` = Riyaziyyat, `018` = Zəfər tarixi).
+- **`[BBMM]` (Bölmə və Mövzu):** 2 rəqəm Bölmə + 2 rəqəm Mövzu (məs: Bölmə 02, Mövzu 13 $\rightarrow$ `0213`).
+- **`[STK]` (Bacarıq/Standart Kodu):** Məzmun standartı və ya bacarıq identifikatoru (məs: `01A01`, `02M03`, `13R02`).
+- **`[BL]` (Blum Səviyyəsi):** 2 rəqəmli idrak kodu (`01` = Bilik, `02` = Anlama, `03` = Tətbiq, `04` = Təhlil, `05` = Qiymətləndirmə, `06` = Yaratma).
+- **`[ÇÇ]` (Çətinlik Kodu):** 2 rəqəmli çətinlik (`01` = Sadə, `02` = Orta, `03` = Çətin).
+- **`[NNN]` (Unikal Sıra Nömrəsi):** 3 rəqəmli test nömrəsi (`001` - `999`).
+
+**Nümunə Pasport ID:** `04-010-0204-02M01-03-02-015`
