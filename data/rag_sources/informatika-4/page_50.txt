@@ -1,0 +1,7 @@
+İnformatika - 4 TƏKRARLA ... DƏFƏ Təkrarlanmaların sayı qabaqcadan məlum olduqda alqoritmlərdə TƏKRARLA
+                                ...DƏFƏ --------> komandasından istifadə olunur. Onda yuxarıdakı məsələnin həll
+                            alqoritmini belə yazmaq olar: Başlanğıc Vedrəni götür TƏKRARLA 20 DƏFƏ Quyuya yaxınlaş Vedrəni doldur Hovuzun yanına gəl Vedrəni hovuza boşalt Vedrəni yerə qoy və dincəl Son Təkrarlanan addımlar qrupunu seçdirmək üçün, adətən, alqoritmdə onlar bir
+                            az sağda yazılır. Cizgiçi icraçısı üçün belə bir alqoritmə baxaq: Başlanğıc SAĞA 1 AŞAĞI 1 TƏKRARLA 3 DƏFƏ QƏLƏMİ ENDİR SAĞA 2 AŞAĞI 2 SOLA 2 YUXARI 2 QƏLƏMİ QALDIR SAĞA 3 Son. Bu alqoritmin icrasından sonra damalı vərəqdə aşağıdakı fiqurlar
+                        çəkiləcək: Burada 4, 5, 6, 7, 8, 9 və 10-cu addım 3 dəfə təkrarlanacaq. Həmin alqoritmi
+                    oxlarla belə yazmaq olar: Burada təkrarlanan addımlar ardıcıllığı mötərizədə yazılır. ---- Bağlanan mötərizədən
+                            sonra təkrarlanmaların sayı göstərilir.

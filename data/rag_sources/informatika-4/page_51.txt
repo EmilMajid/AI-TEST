@@ -1,0 +1,11 @@
+İnformatika - 4 açar sözlər Təkrarlanma Dövr Dövri alqoritm “Təkrarla ...dəfə” komandası “Təkrarla nə qədər ki ...” komandası TƏKRARLA NƏ QƏDƏR Kİ ... Əgər “Hovuzu doldurmaq” məsələsində
+                    hovuzun tutumu bizə məlum deyilsə, onda
+                    TƏKRARLA ... DƏFƏ komandasından
+                    istifadə edə bilmərik. Çünki təkrarlanmaların
+                    sayını qabaqcadan göstərə bilməyəcəyik. Belə hallarda alqoritmlərin yazılışında TƏKRARLA NƏ QƏDƏR Kİ ... komandasından
+                    istifadə olunur. Üç nöqtənin yerində
+                    dövrün şərti göstərilir. Yəni nə qədər ki
+                    şərt ödənilir, dövrün içərisindəki addımlar
+                    ardıcıllığı təkrarlanacaq. Başlanğıc Vedrəni götür TƏKRARLA NƏ QƏDƏR Kİ hovuz dolmayıb Quyuya yaxınlaş Vedrəni doldur Hovuzun yanına gəl Vedrəni hovuza boşalt Vedrəni yerə qoy və dincəl Son Bu alqoritm in icrası zamanı hovuzun tutumunu qabaqcadan bilmək vacib deyil.
+                            Ona görə də bu alqoritmi istənilən tutumlu hovuz üçün tətbiq etmək olar. FİKİRLƏŞ “Kərpicin daşınması” alqoritmində aşağıdakı dövr
+                            komandasından hansı daha məqsədəuyğundur? Başlanğıc TƏKRARLA NƏ QƏDƏR Kİ kərpic qurtarmayıb Bir kərpic götür Divarın yanına apar Kərpici ustanın yanına qoy Geri qayıt Son Başlanğıc TƏKRARLA 100 DƏFƏ Bir kərpic götür Divarın yanına apar Kərpici ustanın yanına qoy Geri qayıt Son

@@ -1,0 +1,5 @@
+İnformatika - 4 ALQORİTM VƏ İCRAÇILAR 15 DÖVRİ ALQORİTMLƏR Təkrarlanan hadisələrə hansı nümunələr göstərə bilərsən? Təkrarlanmaların sayı nədən asılı ola bilər? Alqoritmlərdə elə addımlar ardıcıllığı olur ki, onları bir neçə dəfə təkrar yerinə
+                yetirmək lazım gəlir. “Hovuzu doldurmaq” məsələsini yada salaq. Budaqlanmadan
+                istifadə etməklə həmin məsələnin həll alqoritmini belə yazmaq olar: Başlanğıc Vedrəni götür Quyuya yaxınlaş Vedrəni doldur Hovuzun yanına gəl Vedrəni hovuza boşalt Əgər hovuz doldusa, onda növbəti addıma keç, əks halda 2-ci addıma qayıt Vedrəni yerə qoy və dincəl Son Dövr Gördüyünüz kimi, hovuzun tutumundan asılı olaraq alqoritmdə Quyuya yaxınlaş Vedrəni doldur Hovuzun yanına gəl Vedrəni hovuza boşalt addımları bir neçə dəfə təkrarlanır. Alqoritmdə təkrarlanan addımlar ardıcıllığını dövr adlandırırlar. Daxilində dövr olan alqoritmə isə dövri alqoritm deyilir. Bəzən məsələlərdə təkrarlanmaların sayı qabaqcadan məlum olur;
+                məsələn, əgər hovuzun 20 vedrə su tutduğu məlumdursa, onda göstərilən
+                hərəkətlər ardıcıllığı 20 dəfə təkrar olunacaq.
