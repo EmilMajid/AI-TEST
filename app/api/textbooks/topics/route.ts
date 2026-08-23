@@ -324,7 +324,7 @@ export async function GET(request: NextRequest) {
             const lines = topicString.split('\n').map(l => l.trim()).filter(l => l.length > 0);
             const groups: TopicGroup[] = [];
             let currentGroup: TopicGroup | null = null;
-            const headerRegex = /^(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI|Раздел)/i;
+            const headerRegex = /^([0-9IVXLCDM]+\s*[\.\-:]*\s*)?(Lektion|Unit|Étape|BÖLMƏ|FƏSİL|UNIT|HİSSƏ|PROQRAMI|Раздел|FƏSİL ÜZRƏ)/i;
 
             const hasSubtopics = lines.some(line => !headerRegex.test(line));
 

@@ -401,7 +401,7 @@
           "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma",
           "Mürəkkəb sintaktik bütövlər və dövrə"
         ],
-        "status": "PENDING_GENERATION"
+        "status": "COMPLETED"
       },
       {
         "chapter_name": "III HİSSƏ. Funksional Üslublar və Nitq Mədəniyyəti",
@@ -414,7 +414,7 @@
           "Məişət üslubu və dialektlərin rolu",
           "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)"
         ],
-        "status": "PENDING_GENERATION"
+        "status": "COMPLETED"
       },
       {
         "chapter_name": "IV HİSSƏ. Mətn Nəzəriyyəsi və Redaktə",
@@ -426,148 +426,93 @@
           "Esse və inşa yazma texnologiyası",
           "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri"
         ],
-        "status": "PENDING_GENERATION"
+        "status": "COMPLETED"
       }
     ]
   },
   "Ümumi tarix 11": {
-    "textbook_id": "umumi-tarix-11",
-    "existing_in_db": [
-      "1. ABŞ və Böyük Britaniya (XIX əsr - XX əsrin əvvəlləri)",
-      "2. Fransa və Almaniya (XIX əsr - XX əsrin əvvəlləri)",
-      "3. Rusiya (XIX əsr - XX əsrin əvvəlləri)",
-      "4. Osmanlı imperiyası. Qacarlar dövləti (XIX əsr - XX əsrin əvvəlləri)",
-      "5. Hindistan, Çin və Yaponiya (XIX əsr - XX əsrin əvvəlləri)",
-      "6. Dövlətlərarası münasibətlər (XIX əsr - XX əsrin əvvəlləri)",
-      "7. Birinci dünya müharibəsi (1914-1918)",
-      "8. Mədəniyyət (XIX əsr - XX əsrin əvvəlləri)"
-    ],
-    "full_chapters": [
+    "chapters": [
       {
-        "chapter_name": "I BÖLMƏ. XIX əsrin sonu - XX əsrin əvvəllərində dünya",
+        "chapter": "DÜNYA ÖLKƏLƏRİ XIX YÜZİLLİK-XX YÜZİLLİYİN ƏVVƏLLƏRİNDƏ",
         "topics": [
-          "1. ABŞ və Böyük Britaniya (XIX əsr - XX əsrin əvvəlləri)",
-          "2. Fransa və Almaniya (XIX əsr - XX əsrin əvvəlləri)",
-          "3. Rusiya (XIX əsr - XX əsrin əvvəlləri)",
-          "4. Osmanlı imperiyası. Qacarlar dövləti (XIX əsr - XX əsrin əvvəlləri)",
-          "5. Hindistan, Çin və Yaponiya (XIX əsr - XX əsrin əvvəlləri)",
-          "6. Dövlətlərarası münasibətlər (XIX əsr - XX əsrin əvvəlləri)",
-          "7. Birinci dünya müharibəsi (1914-1918)",
-          "8. Mədəniyyət (XIX əsr - XX əsrin əvvəlləri)"
-        ],
-        "status": "COMPLETED"
+          "1. ABŞ və Böyük Britaniya",
+          "2. Fransa və Almaniya",
+          "3. Rusiya",
+          "4. Osmanlı imperiyası. Qacarlar dövləti",
+          "5. Hindistan, Çin və Yaponiya",
+          "6. Dövlətlərarası münasibətlər",
+          "7. Birinci dünya müharibəsi",
+          "8. Mədəniyyət"
+        ]
       },
       {
-        "chapter_name": "II BÖLMƏ. Birinci Dünya müharibəsi və Müharibələrarası dövr",
+        "chapter": "DÜNYA ÖLKƏLƏRİ 1918-1945-Cİ İLLƏRDƏ",
         "topics": [
-          "Birinci Dünya müharibəsi: Hərbi-siyasi bloklar, səbəblər və hərbi əməliyyatlar",
-          "Müharibənin başa çatması və Versal-Vaşinqton sistemi",
-          "1917-ci il Rusiya inqilabları və SSRİ-nin yaranması",
-          "1929-1933-cü illər \"Böyük böhran\" və ABŞ-ın \"Yeni xətti\" (F.Ruzvelt)",
-          "Faşizmin və Nasizmin yaranması (İtaliya və Almaniya)",
-          "Türkiyə Cümhuriyyətinin yaranması (Mustafa Kamal Atatürk islahatları)"
-        ],
-        "status": "PENDING_GENERATION"
+          "9. Versal-Vaşinqton sistemi",
+          "10. ABŞ, Böyük Britaniya və Fransa",
+          "11. Almaniya və SSRİ",
+          "12. Türkiyə və İran",
+          "13. Hindistan, Çin və Yaponiya",
+          "14. Dövlətlərarası münasibətlər",
+          "15. İkinci dünya müharibəsi",
+          "16. Mədəniyyət"
+        ]
       },
       {
-        "chapter_name": "III BÖLMƏ. İkinci Dünya müharibəsi (1939–1945)",
+        "chapter": "DÜNYA ÖLKƏLƏRİ İKİNCİ DÜNYA MÜHARİBƏSİNDƏN SONRA",
         "topics": [
-          "İkinci Dünya müharibəsinin başlanması və ilkin mərhələsi (1939-1941)",
-          "Müharibədə əsas dönüş döyüşləri (Moskva, Stalinqrad, Kursk, Əl-Əlameyn)",
-          "Antihitler koalisiyası və beynəlxalq konfranslar (Tehran, Yalta, Potsdam)",
-          "Faşist blokunun süqutu və müharibənin yekunları",
-          "Birləşmiş Millətlər Təşkilatının (BMT) yaranması və Nürnberq məhkəməsi"
-        ],
-        "status": "PENDING_GENERATION"
-      },
-      {
-        "chapter_name": "IV BÖLMƏ. İkinci Dünya müharibəsindən sonra beynəlxalq münasibətlər (\"Soyuq müharibə\")",
-        "topics": [
-          "İkiqütblü dünya: \"Soyuq müharibə\"nin başlanması və hərbi bloklar (NATO və Varşava Müqaviləsi)",
-          "Böhranlar dövrü: Berlin və Karib böhranları, Koreya və Vyetnam müharibələri",
-          "Müstəmləkə sisteminin dağılması və \"Üçüncü dünya\" ölkələri",
-          "Sosializm düşərgəsinin böhranı və SSRİ-nin süqutu",
-          "Şərqi Avropada \"Məxməri inqilablar\" və Almaniyanın birləşməsi"
-        ],
-        "status": "PENDING_GENERATION"
-      },
-      {
-        "chapter_name": "V BÖLMƏ. Müasir dövr və Qloballaşma",
-        "topics": [
-          "Birqütblü dünyadan çoxqütblü dünyaya keçid",
-          "Avropa İttifaqı və qlobal iqtisadi inteqrasiya",
-          "Müasir dövrdə Yaxın Şərq və beynəlxalq terrorizmlə mübarizə",
-          "Müasir dünyada elm, texnika və informasiya cəmiyyəti",
-          "Qlobal ekoloji problemlər və sivilizasiyaların dialoqu"
-        ],
-        "status": "PENDING_GENERATION"
+          "17. Amerika Birləşmiş Ştatları",
+          "18. Böyük Britaniya, Fransa və Almaniya",
+          "19. SSRİ. Rusiya Federasiyası",
+          "20. Türkiyə və İran",
+          "21. Hindistan, Pakistan və ərəb ölkələri",
+          "22. Çin, Yaponiya və Koreya",
+          "23. Soyuq müharibə və müasir dövrdə dövlətlərarası münasibətlər",
+          "24. Mədəniyyət"
+        ]
       }
     ]
   },
   "Ədəbiyyat 11": {
-    "textbook_id": "edebiyyat-11",
-    "existing_in_db": [
-      "Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
-      "Cəlil Məmmədquluzadə. Anamın kitabı",
-      "Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
-      "Mirzə Ələkbər Sabir. Neylərdin, ilahi?!",
-      "Hüseyn Cavid. Həyatı və yaradıcılıq yolu",
-      "Hüseyn Cavid. İblis",
-      "Əhməd Cavad. Həyatı və yaradıcılıq yolu",
-      "Əhməd Cavad. Səsli qız",
-      "Məhəmmədhüseyn Şəhriyar. Həyatı və yaradıcılıq yolu",
-      "Məhəmmədhüseyn Şəhriyar. Türkün dili"
-    ],
-    "full_chapters": [
+    "chapters": [
       {
-        "chapter_name": "I HİSSƏ. XX əsrin əvvəlləri Azərbaycan ədəbiyyatı",
+        "chapter": "I HİSSƏ. XX əsrin əvvəlləri Azərbaycan ədəbiyyatı (1900–1920)",
         "topics": [
-          "Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
-          "Cəlil Məmmədquluzadə. Anamın kitabı",
-          "Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
-          "Mirzə Ələkbər Sabir. Neylərdin, ilahi?!",
-          "Hüseyn Cavid. Həyatı və yaradıcılıq yolu",
-          "Hüseyn Cavid. İblis",
-          "Əhməd Cavad. Həyatı və yaradıcılıq yolu",
-          "Əhməd Cavad. Səsli qız",
-          "Məhəmmədhüseyn Şəhriyar. Həyatı və yaradıcılıq yolu",
-          "Məhəmmədhüseyn Şəhriyar. Türkün dili"
-        ],
-        "status": "COMPLETED"
+          "1. Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
+          "2. Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası",
+          "3. Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
+          "4. Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri",
+          "5. Hüseyn Cavid. Həyatı və romantik yaradıcılığı",
+          "6. Hüseyn Cavid. 'İblis' mənzum faciəsi",
+          "7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
+          "8. Məhəmmədhüseyn Şəhriyar. 'Türkün dili' və lirikası"
+        ]
       },
       {
-        "chapter_name": "II HİSSƏ. 1920–1960-cı illər Azərbaycan ədəbiyyatı",
+        "chapter": "II HİSSƏ. 1920–1960-cı illər Azərbaycan ədəbiyyatı (Sovet dövrü)",
         "topics": [
-          "Cəfər Cabbarlı: Həyatı, yaradıcılığı və \"Oqtay Eloğlu\" dramı",
-          "Səməd Vurğun: Həyatı, yaradıcılığı və \"Vaqif\" mənzum dramı",
-          "Mikayıl Müşfiq: Həyatı, lirikası və \"Yenə o bağ olaydı\"",
-          "Mehdi Hüseyn və Mir Cəlal yaradıcılığı",
-          "İkinci Dünya müharibəsi dövrü və müharibədən sonrakı illər ədəbiyyatı"
-        ],
-        "status": "PENDING_GENERATION"
+          "9. Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı",
+          "10. Səməd Vurğun. Həyatı və 'Vaqif' mənzum dramı",
+          "11. Mikayıl Müşfiq. Həyatı və romantik lirikası",
+          "12. Mehdi Hüseyn və Mir Cəlal nəsri",
+          "13. İkinci Dünya müharibəsi dövrü ədəbiyyatı"
+        ]
       },
       {
-        "chapter_name": "III HİSSƏ. 1960–1990-cı illər Azərbaycan ədəbiyyatı (\"Altmışıncılar\")",
+        "chapter": "III HİSSƏ. 1960–1990-cı illər Azərbaycan ədəbiyyatı ('Altmışıncılar' mərhələsi)",
         "topics": [
-          "İsmayıl Şıxlı: Həyatı, yaradıcılığı və \"Dəli Kür\" romanı",
-          "İlyas Əfəndiyev: Həyatı, dramaturgiyası və \"Xurşidbanu Natəvan\" pyesi",
-          "Bəxtiyar Vahabzadə: Həyatı, fəlsəfi lirikası və \"Gülüstan\" poeması",
-          "Xəlil Rza Ulutürk: Həyatı, azadlıq şeirləri və \"Davam edir 37\"",
-          "Məmməd Araz və Əli Kərim poeziyası",
-          "İsa Muğanna, Anar və Elçin nəsri"
-        ],
-        "status": "PENDING_GENERATION"
+          "14. İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı",
+          "15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
+          "16. Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması",
+          "17. Xəlil Rza Ulutürk. Həyatı və istiqlal şeirləri"
+        ]
       },
       {
-        "chapter_name": "IV HİSSƏ. Cənubi Azərbaycan və Müstəqillik dövrü ədəbiyyatı",
+        "chapter": "IV HİSSƏ. Cənubi Azərbaycan ədəbiyyatı, Müstəqillik dövrü və Ədəbiyyat Nəzəriyyəsi",
         "topics": [
-          "Məhəmmədhüseyn Şəhriyar: Həyatı, yaradıcılığı və \"Heydərbabaya salam\" poeması",
-          "Sahənd və digər Cənubi Azərbaycan şairlərinin yaradıcılığı",
-          "Müstəqillik dövrü Azərbaycan ədəbiyyatı: Mövzu və janr axtarışları",
-          "Qarabağ müharibəsi və Vətən mövzusu müasir ədəbiyyatda",
-          "Yekun ümumiləşdirici ədəbiyyat nəzəriyyəsi və təhlil testləri"
-        ],
-        "status": "PENDING_GENERATION"
+          "18. Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd",
+          "19. Ədəbiyyat Nəzəriyyəsi: Bədii təsvir və ifadə vasitələri, şeir vəznləri"
+        ]
       }
     ]
   }

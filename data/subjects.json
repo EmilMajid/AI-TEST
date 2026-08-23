@@ -326,5 +326,85 @@
         "11": true
       }
     }
+  ],
+  "11": [
+    {
+      "name": "Azərbaycan dili",
+      "textbooks": [
+        "azerbaycan-dili-11"
+      ]
+    },
+    {
+      "name": "Ədəbiyyat",
+      "textbooks": [
+        "edebiyyat-11"
+      ]
+    },
+    {
+      "name": "Riyaziyyat",
+      "textbooks": [
+        "riyaziyyat-11"
+      ]
+    },
+    {
+      "name": "Fizika",
+      "textbooks": [
+        "fizika-11"
+      ]
+    },
+    {
+      "name": "Kimya",
+      "textbooks": [
+        "kimya-11"
+      ]
+    },
+    {
+      "name": "Biologiya",
+      "textbooks": [
+        "biologiya-11"
+      ]
+    },
+    {
+      "name": "Azərbaycan tarixi",
+      "textbooks": [
+        "azerbaycan-tarixi-11"
+      ]
+    },
+    {
+      "name": "Ümumi tarix",
+      "textbooks": [
+        "umumi-tarix-11"
+      ]
+    },
+    {
+      "name": "Coğrafiya",
+      "textbooks": [
+        "cografiya-11"
+      ]
+    },
+    {
+      "name": "İnformatika",
+      "textbooks": [
+        "informatika-11"
+      ]
+    },
+    {
+      "name": "Xarici dil",
+      "textbooks": [
+        "ingilis-dili-esas-11",
+        "alman-dili-esas-11",
+        "fransiz-dili-esas-11",
+        "rus-dili-esas-11"
+      ]
+    },
+    {
+      "name": "İkinci xarici dil",
+      "textbooks": [
+        "alman-dili-esas-11",
+        "fransiz-dili-esas-11",
+        "rus-dili-esas-11",
+        "ingilis-dili-esas-11"
+      ]
+    }
   ]
 }

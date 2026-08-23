@@ -10991,37 +10991,37 @@
         },
         {
           "title": "1.2. İnformasiya sistemlərinin təsnifatı",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "1.3. Coğrafi informasiya sistemləri",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "1.4. Süni intellekt",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "1.5. Ekspert sistemləri",
           "page": 5,
           "path": ""
         },
         {
+          "title": "1.3. Coğrafi informasiya sistemləri",
+          "page": 9,
+          "path": ""
+        },
+        {
+          "title": "1.4. Süni intellekt",
+          "page": 13,
+          "path": ""
+        },
+        {
+          "title": "1.5. Ekspert sistemləri",
+          "page": 17,
+          "path": ""
+        },
+        {
           "title": "1.6. Axtarış sistemləri",
-          "page": 6,
+          "page": 21,
           "path": ""
         },
         {
           "title": "1.7. \"Böyük verilənlər\" texnologiyası",
-          "page": 7,
+          "page": 25,
           "path": ""
         },
         {
           "title": "1.8. İnformasiya cəmiyyəti",
-          "page": 8,
+          "page": 29,
           "path": ""
         }
       ]
@@ -14180,420 +14180,1291 @@
   ],
   "biologiya-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "Mövzular",
       "topics": [
         {
           "title": "1. Yer planetinin yaranması. Həyat anlayışı",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "2. Həyatın yaranması haqqında fərziyyələr",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "3. Həyatın yaranması haqqında təsəvvürlərin inkişafı",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "4. Həyatın əmələ gəlməsi haqqında müasir təsəvvürlər",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "5. Bioloji monomer və polimerlərin yaranması",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "6. Çoxhüceyrəliliyə doğru yol",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "7. Təbii seçmənin formaları",
-          "page": 30
+          "page": 25,
+          "path": ""
         },
         {
           "title": "8. Orqanizmlərdə uyğunlaşmalar",
-          "page": 34
+          "page": 29,
+          "path": ""
         },
         {
           "title": "9. Mikroorqanizmlər",
-          "page": 38
+          "page": 33,
+          "path": ""
         },
         {
           "title": "10. Mikrobiologiyanın şöbələri",
-          "page": 42
+          "page": 37,
+          "path": ""
         },
         {
           "title": "11. Mikroorqanizmlər və ətraf mühit. Torpağın mikroflorası",
-          "page": 46
+          "page": 41,
+          "path": ""
         },
         {
           "title": "12. Suyun mikroflorası",
-          "page": 50
+          "page": 45,
+          "path": ""
         },
         {
           "title": "Mövzu: 13. Atmosfer havasının mikroflorası",
-          "page": 54
+          "page": 49,
+          "path": ""
         },
         {
           "title": "Mövzu: 14. Qida məhsullarının mikroflorası",
-          "page": 58
+          "page": 53,
+          "path": ""
         },
         {
           "title": "Mövzu: 15. İnfeksion proseslərin gedişində mikroorqanizmlərin rolu",
-          "page": 62
+          "page": 57,
+          "path": ""
         },
         {
           "title": "Mövzu: 16. İnfeksion proseslərin baş verməsində sahib orqanizmin rolu",
-          "page": 66
+          "page": 61,
+          "path": ""
         },
         {
           "title": "Mövzu: 17. Mühit şəraitinin infeksion xəstəliklərin gedişinə təsiri",
-          "page": 70
+          "page": 65,
+          "path": ""
         }
       ]
     }
   ],
   "fizika-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I FƏSİL. Elektrostatika və Sabit cərəyan",
       "topics": [
         {
           "title": "1.1. Elektrik yükü. Elektromaqnit sahəsi",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "1.2. Elektrostatik sahə. Elektrostatik sahənin intensivliyi",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "1.4. Kondensator. Elektrik tutumu",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "1.5. Kondensatorların birləşdirilməsi",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "1.6. Yüklü zərrəciyin maqnit sahəsində hərəkəti. Lorens qüvvəsi",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "1.7. Maqnit sahəsinin cərəyanlı naqilə təsiri. Amper qüvvəsi",
-          "page": 30
+          "page": 25,
+          "path": ""
         },
         {
           "title": "1.8. Maqnit seli. Elektromaqnit induksiyası hadisəsi",
-          "page": 34
+          "page": 29,
+          "path": ""
         },
         {
           "title": "1.9. Elektromaqnit induksiyası qanunu. Maqnit sahəsində hərəkət edən naqillərdə induksiya elektrik hərəkət qüvvəsi",
-          "page": 38
+          "page": 33,
+          "path": ""
         },
         {
           "title": "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi",
-          "page": 42
+          "page": 37,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsinin elementləri",
-          "page": 46
+          "page": 41,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik",
-          "page": 50
+          "page": 45,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu",
-          "page": 54
+          "page": 49,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.4. Vakuumda elektrik cərəyanı",
-          "page": 58
+          "page": 53,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.5. Qazlarda elektrik cərəyanı",
-          "page": 62
+          "page": 57,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.6. Elektrolit məhlullarında elektrik cərəyanı. Elektroliz qanunu",
-          "page": 66
+          "page": 61,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.7. Yarımkeçiricilərdə elektrik cərəyanı",
-          "page": 70
+          "page": 65,
+          "path": ""
         },
         {
           "title": "Mövzu: 2.8. Yarımkeçirici diod. Tranzistor",
-          "page": 74
+          "page": 69,
+          "path": ""
         },
         {
           "title": "Mövzu: II fəslə aid məsələlər (Müxtəlif mühitlərdə sabit cərəyan qanunları)",
-          "page": 78
+          "page": 73,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II FƏSİL. Maqnit sahəsi və Elektromaqnit induksiyası",
+      "topics": [
+        {
+          "title": "Maqnit sahəsinin induksiyası və Amper qüvvəsi",
+          "page": 77,
+          "path": ""
+        },
+        {
+          "title": "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)",
+          "page": 85,
+          "path": ""
+        },
+        {
+          "title": "Elektromaqnit induksiya hadisəsi və Faradey qanunu",
+          "page": 89,
+          "path": ""
+        },
+        {
+          "title": "Lens qaydası və induksiya EHQ",
+          "page": 93,
+          "path": ""
+        },
+        {
+          "title": "Öz-özünə induksiya hadisəsi və İnduktivlik",
+          "page": 97,
+          "path": ""
+        },
+        {
+          "title": "Maqnit sahəsinin enerjisi və enerji sıxlığı",
+          "page": 101,
+          "path": ""
+        },
+        {
+          "title": "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi",
+          "page": 105,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III FƏSİL. Elektromaqnit rəqsləri və dalğaları",
+      "topics": [
+        {
+          "title": "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
+          "page": 109,
+          "path": ""
+        },
+        {
+          "title": "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan",
+          "page": 113,
+          "path": ""
+        },
+        {
+          "title": "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
+          "page": 117,
+          "path": ""
+        },
+        {
+          "title": "Dəyişən cərəyanın gücü və Transformator",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "Elektromaqnit dalğaları, onların şüalanması və xassələri",
+          "page": 125,
+          "path": ""
+        },
+        {
+          "title": "Radiolokasiya, televiziya və müasir rabitə vasitələri",
+          "page": 129,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV FƏSİL. Optika və Xüsusi nisbilik nəzəriyyəsi",
+      "topics": [
+        {
+          "title": "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları",
+          "page": 133,
+          "path": ""
+        },
+        {
+          "title": "Linzalar və optik cihazlar",
+          "page": 137,
+          "path": ""
+        },
+        {
+          "title": "İşığın interferensiyası və Koherent dalğalar",
+          "page": 141,
+          "path": ""
+        },
+        {
+          "title": "İşığın difraksiyası və Difraksiya qəfəsi",
+          "page": 145,
+          "path": ""
+        },
+        {
+          "title": "İşığın dispersionu və polyarlaşması",
+          "page": 149,
+          "path": ""
+        },
+        {
+          "title": "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi",
+          "page": 153,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "V FƏSİL. Kvant fizikası, Atom və Nüvə fizikası",
+      "topics": [
+        {
+          "title": "İstilik şüalanması və Plank hipotezi",
+          "page": 157,
+          "path": ""
+        },
+        {
+          "title": "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi",
+          "page": 161,
+          "path": ""
+        },
+        {
+          "title": "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)",
+          "page": 165,
+          "path": ""
+        },
+        {
+          "title": "Atomun quruluşu: Rezerford təcrübəsi və Bor postulatları",
+          "page": 169,
+          "path": ""
+        },
+        {
+          "title": "Atom nüvəsinin quruluşu, Rabitə enerjisi və Kütlə qüsuru",
+          "page": 173,
+          "path": ""
+        },
+        {
+          "title": "Radioaktivlik, Radioaktiv çevrilmələr və Yarımparçalanma qanunu",
+          "page": 177,
+          "path": ""
+        },
+        {
+          "title": "Nüvə reaksiyaları, Nüvə energetikası və Elementar zərrəciklər",
+          "page": 181,
+          "path": ""
         }
       ]
     }
   ],
   "kimya-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I BÖLMƏ. Spirtlər və Fenollar",
       "topics": [
         {
           "title": "İlkin yoxlama (Spirtlər və Fenollar)",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "1.1.1. Adlandırılması və izomerliyi",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "1.1.2. Alınması",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "1.1.3. Quruluşu və fiziki xassələri",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "1.1.4. Kimyəvi xassələri və tətbiqi",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "1.1.5. Praktik dərs. Etanolun məhkəməsi",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "1.2.1. Etilenqlikol",
-          "page": 30
+          "page": 25,
+          "path": ""
         },
         {
           "title": "1.2.2. Qliserin",
-          "page": 34
+          "page": 29,
+          "path": ""
         },
         {
           "title": "1.3.1. Fenollar. Alınması, quruluşu və fiziki xassələri",
-          "page": 38
+          "page": 33,
+          "path": ""
         },
         {
           "title": "1.3.2. Fenolların kimyəvi xassələri və tətbiqi",
-          "page": 42
+          "page": 37,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ. Aldehidlər və Ketonlar",
+      "topics": [
+        {
+          "title": "Aldehidlərin və ketonların quruluşu, homoloji sırası və izomerliyi",
+          "page": 41,
+          "path": ""
+        },
+        {
+          "title": "Aldehidlərin adlandırılması və alınma üsulları",
+          "page": 45,
+          "path": ""
+        },
+        {
+          "title": "Aldehidlərin fiziki və kimyəvi xassələri (Gümüş-güzgü reaksiyası və oksidləşmə)",
+          "page": 49,
+          "path": ""
+        },
+        {
+          "title": "Formaldehid, asetaldehid və asetonun sənayedə əhəmiyyəti və tətbiqi",
+          "page": 53,
+          "path": ""
+        },
+        {
+          "title": "Aldehid və ketonlar üzrə ümumiləşdirici tapşırıqlar",
+          "page": 57,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ. Karbon turşuları, Mürəkkəb efirlər, Yağlar və Sabunlar",
+      "topics": [
+        {
+          "title": "Doymuş birəsaslı karbon turşuları: Homoloji sırası, izomerliyi və adlandırılması",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "Doymuş birəsaslı karbon turşularının alınması, fiziki və kimyəvi xassələri",
+          "page": 65,
+          "path": ""
+        },
+        {
+          "title": "Qarışqa turşusu və sirkə turşusunun xüsusi xassələri və tətbiqi",
+          "page": 69,
+          "path": ""
+        },
+        {
+          "title": "Doymamış və aromatik karbon turşuları (Akril, Olein, Benzoy turşusu)",
+          "page": 73,
+          "path": ""
+        },
+        {
+          "title": "İkiəsaslı karbon turşuları (Oksalat, Adipin, Tereftal turşusu)",
+          "page": 77,
+          "path": ""
+        },
+        {
+          "title": "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi",
+          "page": 85,
+          "path": ""
+        },
+        {
+          "title": "Sabunlar və sintetik yuyucu vasitələr (Detergentlər)",
+          "page": 89,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ. Karbohidratlar",
+      "topics": [
+        {
+          "title": "Karbohidratların təsnifatı və fotosintez prosesi",
+          "page": 93,
+          "path": ""
+        },
+        {
+          "title": "Monosaxaridlər: Qlükoza və fruktozanın quruluşu, izomerliyi və xassələri",
+          "page": 97,
+          "path": ""
+        },
+        {
+          "title": "Qlükozanın qıcqırma növləri və orqanizmdə rolu",
+          "page": 101,
+          "path": ""
+        },
+        {
+          "title": "Disaxaridlər: Saxaroza və maltozanın quruluşu, hidrolizi və əhəmiyyəti",
+          "page": 105,
+          "path": ""
+        },
+        {
+          "title": "Polisaxaridlər: Nişasta və sellülozanın quruluş fərqləri, kimyəvi xassələri",
+          "page": 109,
+          "path": ""
+        },
+        {
+          "title": "Süni və sintetik liflər (Asetat ipəyi, Viskoz)",
+          "page": 113,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ. Azotlu üzvi birləşmələr və Zülallar",
+      "topics": [
+        {
+          "title": "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri",
+          "page": 117,
+          "path": ""
+        },
+        {
+          "title": "Anilin (Aromatik amin): Alınması (Zinin reaksiyası) və kimyəvi xassələri",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması",
+          "page": 125,
+          "path": ""
+        },
+        {
+          "title": "Peptidlər və peptid rabitəsi",
+          "page": 129,
+          "path": ""
+        },
+        {
+          "title": "Zülallar: Quruluş səviyyələri (birincili, ikincili, üçüncülü, dördcülü), rəngli reaksiyaları və denaturasiyası",
+          "page": 133,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ. Yüksəkmolekullu birləşmələr, Polimerlər və Yekun İcmal",
+      "topics": [
+        {
+          "title": "Polimerləşmə və polikondensləşmə reaksiyaları",
+          "page": 137,
+          "path": ""
+        },
+        {
+          "title": "Plastik kütlələr (Polietilen, Polipropilen, Polivinilxlorid, Polistirol)",
+          "page": 141,
+          "path": ""
+        },
+        {
+          "title": "Sintetik kauçuklar və rezin istehsalı",
+          "page": 145,
+          "path": ""
+        },
+        {
+          "title": "Sintetik liflər (Kapron, Lavsan)",
+          "page": 149,
+          "path": ""
+        },
+        {
+          "title": "11-ci sinif kimya fənni üzrə yekun ümumiləşdirici testlər",
+          "page": 153,
+          "path": ""
         }
       ]
     }
   ],
   "azerbaycan-dili-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I HİSSƏ. Mətn və Fonetik-Leksik Normalar",
       "topics": [
         {
           "title": "Böyük ömrün dan yeri",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "Şəbi-hicran",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "Sizin də bir basketbol səbətiniz varmı?",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "Gəncə Müsəlman Qız Məktəbi",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "Mətn",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "Doroti Meri Kroufut Hodgkin",
-          "page": 30
+          "page": 25,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II HİSSƏ. Morfoloji və Sintaktik Normalar",
+      "topics": [
+        {
+          "title": "Nitq hissələrinin üslubi imkanları və morfoloji norma",
+          "page": 29,
+          "path": ""
+        },
+        {
+          "title": "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları",
+          "page": 33,
+          "path": ""
+        },
+        {
+          "title": "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar",
+          "page": 37,
+          "path": ""
+        },
+        {
+          "title": "Köməkçi nitq hissələrinin fərqləndirilməsi və orfoqrafiyası",
+          "page": 41,
+          "path": ""
+        },
+        {
+          "title": "Cümlə üzvlərinin uzlaşması və sintaktik əlaqələr",
+          "page": 45,
+          "path": ""
+        },
+        {
+          "title": "Söz sırası və sintaktik norma",
+          "page": 49,
+          "path": ""
+        },
+        {
+          "title": "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma",
+          "page": 53,
+          "path": ""
+        },
+        {
+          "title": "Mürəkkəb sintaktik bütövlər və dövrə",
+          "page": 57,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III HİSSƏ. Funksional Üslublar və Nitq Mədəniyyəti",
+      "topics": [
+        {
+          "title": "Azərbaycan ədəbi dilinin funksional üslubları",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)",
+          "page": 65,
+          "path": ""
+        },
+        {
+          "title": "Elmi üslub, terminologiya və mətndə terminlərin rolu",
+          "page": 69,
+          "path": ""
+        },
+        {
+          "title": "Publisistik üslub və onun janrları",
+          "page": 73,
+          "path": ""
+        },
+        {
+          "title": "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)",
+          "page": 77,
+          "path": ""
+        },
+        {
+          "title": "Məişət üslubu və dialektlərin rolu",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)",
+          "page": 85,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV HİSSƏ. Mətn Nəzəriyyəsi və Redaktə",
+      "topics": [
+        {
+          "title": "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər",
+          "page": 89,
+          "path": ""
+        },
+        {
+          "title": "Mətnin abzas quruluşu, mikro və makromövzular",
+          "page": 93,
+          "path": ""
+        },
+        {
+          "title": "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)",
+          "page": 97,
+          "path": ""
+        },
+        {
+          "title": "Mətndə məntiqi və üslubi xətaların tapılması və redaktəsi",
+          "page": 101,
+          "path": ""
+        },
+        {
+          "title": "Esse və inşa yazma texnologiyası",
+          "page": 105,
+          "path": ""
+        },
+        {
+          "title": "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri",
+          "page": 109,
+          "path": ""
         }
       ]
     }
   ],
   "edebiyyat-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I HİSSƏ. XX əsrin əvvəlləri Azərbaycan ədəbiyyatı (1900–1920)",
       "topics": [
         {
-          "title": "Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
-          "page": 6
+          "title": "1. Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
+          "page": 1,
+          "path": ""
         },
         {
-          "title": "Cəlil Məmmədquluzadə. Anamın kitabı",
-          "page": 10
+          "title": "2. Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası",
+          "page": 2,
+          "path": ""
         },
         {
-          "title": "Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
-          "page": 14
+          "title": "3. Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
+          "page": 3,
+          "path": ""
         },
         {
-          "title": "Mirzə Ələkbər Sabir. Neylərdin, ilahi?!",
-          "page": 18
+          "title": "4. Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri",
+          "page": 4,
+          "path": ""
         },
         {
-          "title": "Hüseyn Cavid. Həyatı və yaradıcılıq yolu",
-          "page": 22
+          "title": "5. Hüseyn Cavid. Həyatı və romantik yaradıcılığı",
+          "page": 5,
+          "path": ""
         },
         {
-          "title": "Hüseyn Cavid. İblis",
-          "page": 26
+          "title": "6. Hüseyn Cavid. 'İblis' mənzum faciəsi",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "Əhməd Cavad. Həyatı və yaradıcılıq yolu",
-          "page": 30
+          "title": "7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
+          "page": 7,
+          "path": ""
         },
         {
-          "title": "Əhməd Cavad. Səsli qız",
-          "page": 34
+          "title": "8. Məhəmmədhüseyn Şəhriyar. 'Türkün dili' və lirikası",
+          "page": 8,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II HİSSƏ. 1920–1960-cı illər Azərbaycan ədəbiyyatı (Sovet dövrü)",
+      "topics": [
+        {
+          "title": "9. Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı",
+          "page": 9,
+          "path": ""
         },
         {
-          "title": "Məhəmmədhüseyn Şəhriyar. Həyatı və yaradıcılıq yolu",
-          "page": 38
+          "title": "10. Səməd Vurğun. Həyatı və 'Vaqif' mənzum dramı",
+          "page": 10,
+          "path": ""
         },
         {
-          "title": "Məhəmmədhüseyn Şəhriyar. Türkün dili",
-          "page": 42
+          "title": "11. Mikayıl Müşfiq. Həyatı və romantik lirikası",
+          "page": 11,
+          "path": ""
+        },
+        {
+          "title": "12. Mehdi Hüseyn və Mir Cəlal nəsri",
+          "page": 12,
+          "path": ""
+        },
+        {
+          "title": "13. İkinci Dünya müharibəsi dövrü ədəbiyyatı",
+          "page": 13,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III HİSSƏ. 1960–1990-cı illər Azərbaycan ədəbiyyatı ('Altmışıncılar' mərhələsi)",
+      "topics": [
+        {
+          "title": "14. İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı",
+          "page": 14,
+          "path": ""
+        },
+        {
+          "title": "15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
+          "page": 15,
+          "path": ""
+        },
+        {
+          "title": "16. Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması",
+          "page": 16,
+          "path": ""
+        },
+        {
+          "title": "17. Xəlil Rza Ulutürk. Həyatı və istiqlal şeirləri",
+          "page": 17,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV HİSSƏ. Cənubi Azərbaycan ədəbiyyatı, Müstəqillik dövrü və Ədəbiyyat Nəzəriyyəsi",
+      "topics": [
+        {
+          "title": "18. Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd",
+          "page": 18,
+          "path": ""
+        },
+        {
+          "title": "19. Ədəbiyyat Nəzəriyyəsi: Bədii təsvir və ifadə vasitələri, şeir vəznləri",
+          "page": 19,
+          "path": ""
         }
       ]
     }
   ],
   "azerbaycan-tarixi-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I FƏSİL. Şimal torpaqlarının işğalı və müstəmləkə rejimi",
       "topics": [
         {
           "title": "1. Rusiya tərəfindən Azərbaycanın şimal torpaqlarının işğalına başlanması",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "3. Rusiya imperiyasının müstəmləkə siyasəti",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "4. XIX əsrin 40-cı illərində keçirilən islahatlar",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "5. Yeni sosial münasibətlərin meydana gəlməsi",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "6. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "7. Müstəmləkə əleyhinə çıxışlar. Milli demokratik hərəkat",
-          "page": 30
+          "page": 25,
+          "path": ""
         },
         {
           "title": "8. Çarizmin milli qırğın siyasəti",
-          "page": 34
+          "page": 29,
+          "path": ""
         },
         {
           "title": "9. Şimali Azərbaycan Birinci dünya müharibəsi illərində",
-          "page": 38
+          "page": 33,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II FƏSİL. Şimali Azərbaycan XIX əsrin ikinci yarısı - XX əsrin əvvəllərində",
+      "topics": [
+        {
+          "title": "Kəndli islahatı və aqrar münasibətlərin inkişafı",
+          "page": 37,
+          "path": ""
+        },
+        {
+          "title": "Şimali Azərbaycanda kapitalist sənayesinin inkişafı və Bakı nefti",
+          "page": 41,
+          "path": ""
+        },
+        {
+          "title": "Milli burjuaziya və xeyriyyəçilik hərəkatı (Hacı Zeynalabdin Tağıyev və b.)",
+          "page": 45,
+          "path": ""
+        },
+        {
+          "title": "Milli oyanış, mətbuat (\"Əkinçi\") və maarifçilik hərəkatı",
+          "page": 49,
+          "path": ""
+        },
+        {
+          "title": "1905-1907-ci illər inqilabı dövründə Azərbaycanda ictimai-siyasi hərəkat",
+          "page": 53,
+          "path": ""
+        },
+        {
+          "title": "Siyasi partiyalar və təşkilatlar (\"Hümmət\", \"Müsavat\", \"Qeyrət\", \"İttifaq\")",
+          "page": 57,
+          "path": ""
+        },
+        {
+          "title": "Birinci Dünya müharibəsi illərində Şimali və Cənubi Azərbaycan",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "1918-ci il 31 Mart soyqırımı və milli faciə",
+          "page": 65,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III FƏSİL. Azərbaycan Xalq Cümhuriyyəti (1918–1920)",
+      "topics": [
+        {
+          "title": "Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi",
+          "page": 69,
+          "path": ""
+        },
+        {
+          "title": "Qafqaz İslam Ordusu və Bakının azad edilməsi (15 sentyabr 1918)",
+          "page": 73,
+          "path": ""
+        },
+        {
+          "title": "AXC-nin dövlət quruculuğu, parlamenti və hökumət kabinələri",
+          "page": 77,
+          "path": ""
+        },
+        {
+          "title": "AXC-nin daxili, sosial-iqtisadi və hərbi siyasəti (Milli Ordu quruculuğu)",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "AXC-nin xarici siyasəti və Paris Sülh Konfransında müstəqilliyin de-fakto tanınması",
+          "page": 85,
+          "path": ""
+        },
+        {
+          "title": "Aprel işğalı (27-28 aprel 1920) və AXC-nin süqutu",
+          "page": 89,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV FƏSİL. Azərbaycan Sovet hakimiyyəti illərində (1920–1991)",
+      "topics": [
+        {
+          "title": "Azərbaycanda sovet rejiminin qurulması və milli müqavimət üsyanları (Gəncə, Qarabağ)",
+          "page": 93,
+          "path": ""
+        },
+        {
+          "title": "Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ və Naxçıvan məsələsi)",
+          "page": 97,
+          "path": ""
+        },
+        {
+          "title": "Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti",
+          "page": 101,
+          "path": ""
+        },
+        {
+          "title": "1930-cu illərin kütləvi repressiyaları və \"Qırmızı terror\"",
+          "page": 105,
+          "path": ""
+        },
+        {
+          "title": "Azərbaycan İkinci Dünya müharibəsi illərində (Bakı neftinin rolu və qəhrəmanlarımız)",
+          "page": 109,
+          "path": ""
+        },
+        {
+          "title": "Müharibədən sonrakı illərdə sosial-iqtisadi inkişaf və deportasiyalar (1948-1953)",
+          "page": 113,
+          "path": ""
+        },
+        {
+          "title": "1969-1982-ci illərdə Heydər Əliyevin rəhbərliyi ilə Azərbaycanın intibahı",
+          "page": 117,
+          "path": ""
+        },
+        {
+          "title": "1980-ci illərin sonlarında erməni təcavüzü, Qərbi Azərbaycandan deportasiya və Meydan hərəkatı",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı",
+          "page": 125,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "V FƏSİL. Müstəqillik dövrü və Tarixi Zəfər (1991–Müasir dövr)",
+      "topics": [
+        {
+          "title": "Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin böhranı",
+          "page": 129,
+          "path": ""
+        },
+        {
+          "title": "Birinci Qarabağ müharibəsi, Xocalı soyqırımı və torpaqların işğalı",
+          "page": 133,
+          "path": ""
+        },
+        {
+          "title": "1993-cü il Heydər Əliyevin hakimiyyətə qayıdışı və Qurtuluş günü",
+          "page": 137,
+          "path": ""
+        },
+        {
+          "title": "\"Əsrin müqaviləsi\" və yeni neft strategiyası",
+          "page": 141,
+          "path": ""
+        },
+        {
+          "title": "Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu və ordu quruculuğu",
+          "page": 145,
+          "path": ""
+        },
+        {
+          "title": "İlham Əliyevin rəhbərliyi ilə Azərbaycanın hərtərəfli inkişafı",
+          "page": 149,
+          "path": ""
+        },
+        {
+          "title": "Aprel döyüşləri (2016) və Tovuz döyüşləri (2020)",
+          "page": 153,
+          "path": ""
+        },
+        {
+          "title": "44 günlük Vətən müharibəsi (27 sentyabr - 10 noyabr 2020) və Tarixi Qələbə",
+          "page": 157,
+          "path": ""
+        },
+        {
+          "title": "Lokal antiterror tədbirləri (2023) və suverenliyin tam bərpası",
+          "page": 161,
+          "path": ""
+        },
+        {
+          "title": "Böyük Qayıdış və Qarabağın bərpası",
+          "page": 165,
+          "path": ""
         }
       ]
     }
   ],
   "umumi-tarix-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "DÜNYA ÖLKƏLƏRİ XIX YÜZİLLİK-XX YÜZİLLİYİN ƏVVƏLLƏRİNDƏ",
       "topics": [
         {
-          "title": "1. ABŞ və Böyük Britaniya (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 6
+          "title": "1. ABŞ və Böyük Britaniya",
+          "page": 1,
+          "path": ""
         },
         {
-          "title": "2. Fransa və Almaniya (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 10
+          "title": "2. Fransa və Almaniya",
+          "page": 2,
+          "path": ""
         },
         {
-          "title": "3. Rusiya (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 14
+          "title": "3. Rusiya",
+          "page": 3,
+          "path": ""
         },
         {
-          "title": "4. Osmanlı imperiyası. Qacarlar dövləti (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 18
+          "title": "4. Osmanlı imperiyası. Qacarlar dövləti",
+          "page": 4,
+          "path": ""
         },
         {
-          "title": "5. Hindistan, Çin və Yaponiya (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 22
+          "title": "5. Hindistan, Çin və Yaponiya",
+          "page": 5,
+          "path": ""
         },
         {
-          "title": "6. Dövlətlərarası münasibətlər (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 26
+          "title": "6. Dövlətlərarası münasibətlər",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "7. Birinci dünya müharibəsi (1914-1918)",
-          "page": 30
+          "title": "7. Birinci dünya müharibəsi",
+          "page": 7,
+          "path": ""
         },
         {
-          "title": "8. Mədəniyyət (XIX əsr - XX əsrin əvvəlləri)",
-          "page": 34
+          "title": "8. Mədəniyyət",
+          "page": 8,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "DÜNYA ÖLKƏLƏRİ 1918-1945-Cİ İLLƏRDƏ",
+      "topics": [
+        {
+          "title": "9. Versal-Vaşinqton sistemi",
+          "page": 9,
+          "path": ""
+        },
+        {
+          "title": "10. ABŞ, Böyük Britaniya və Fransa",
+          "page": 10,
+          "path": ""
+        },
+        {
+          "title": "11. Almaniya və SSRİ",
+          "page": 11,
+          "path": ""
+        },
+        {
+          "title": "12. Türkiyə və İran",
+          "page": 12,
+          "path": ""
+        },
+        {
+          "title": "13. Hindistan, Çin və Yaponiya",
+          "page": 13,
+          "path": ""
+        },
+        {
+          "title": "14. Dövlətlərarası münasibətlər",
+          "page": 14,
+          "path": ""
+        },
+        {
+          "title": "15. İkinci dünya müharibəsi",
+          "page": 15,
+          "path": ""
+        },
+        {
+          "title": "16. Mədəniyyət",
+          "page": 16,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "DÜNYA ÖLKƏLƏRİ İKİNCİ DÜNYA MÜHARİBƏSİNDƏN SONRA",
+      "topics": [
+        {
+          "title": "17. Amerika Birləşmiş Ştatları",
+          "page": 17,
+          "path": ""
+        },
+        {
+          "title": "18. Böyük Britaniya, Fransa və Almaniya",
+          "page": 18,
+          "path": ""
+        },
+        {
+          "title": "19. SSRİ. Rusiya Federasiyası",
+          "page": 19,
+          "path": ""
+        },
+        {
+          "title": "20. Türkiyə və İran",
+          "page": 20,
+          "path": ""
+        },
+        {
+          "title": "21. Hindistan, Pakistan və ərəb ölkələri",
+          "page": 21,
+          "path": ""
+        },
+        {
+          "title": "22. Çin, Yaponiya və Koreya",
+          "page": 22,
+          "path": ""
+        },
+        {
+          "title": "23. Soyuq müharibə və müasir dövrdə dövlətlərarası münasibətlər",
+          "page": 23,
+          "path": ""
+        },
+        {
+          "title": "24. Mədəniyyət",
+          "page": 24,
+          "path": ""
         }
       ]
     }
   ],
   "cografiya-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "Mövzular",
       "topics": [
         {
           "title": "1.1. Kartoqrafik tədqiqat metodları",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "1.4. Qrafik təsvirlər (Coğrafi diaqram və profillər)",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "1.5. Təsərrüfat sahələrinin yerləşməsinin xəritələrə əsasən təhlili",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "1.6. Coğrafi informasiya sistemləri (CİS)",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
           "title": "2.1. Tektonik proseslər və təsərrüfat",
-          "page": 22
+          "page": 17,
+          "path": ""
         },
         {
           "title": "2.2. Mineral ehtiyatlardan istifadə",
-          "page": 26
+          "page": 21,
+          "path": ""
         },
         {
           "title": "2.3. Meteoroloji hadisələr",
-          "page": 30
+          "page": 25,
+          "path": ""
         },
         {
           "title": "2.5. İqlim və insan sağlamlığı (Kurort-rekreasiya)",
-          "page": 34
+          "page": 29,
+          "path": ""
         },
         {
           "title": "2.7. Quru sularından istifadə",
-          "page": 38
+          "page": 33,
+          "path": ""
         },
         {
           "title": "2.9. Dünyanın və Azərbaycanın torpaq fondu",
-          "page": 42
+          "page": 37,
+          "path": ""
         },
         {
           "title": "2.10. Meşə ehtiyatları və onlardan istifadə",
-          "page": 46
+          "page": 41,
+          "path": ""
         }
       ]
     }
@@ -14604,33 +15475,33 @@
       "topics": [
         {
           "title": "UNIT 1. THE WHYS AND WHEREFORES",
-          "page": 5,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 1,
+          "path": ""
         },
         {
           "title": "UNIT 2. LIFETIME EXPERIENCES",
-          "page": 10,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 5,
+          "path": ""
         },
         {
           "title": "UNIT 3. THE ART OF CONVERSATION",
-          "page": 15,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 9,
+          "path": ""
         },
         {
           "title": "UNIT 4. NO REGRETS",
-          "page": 20,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 13,
+          "path": ""
         },
         {
           "title": "UNIT 5. CREATIVITY",
-          "page": 25,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 17,
+          "path": ""
         },
         {
           "title": "UNIT 6. IN THE NEWS",
-          "page": 30,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 21,
+          "path": ""
         }
       ]
     }
@@ -14641,83 +15512,83 @@
       "topics": [
         {
           "title": "1. История одного здания Баку",
-          "page": 5,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 1,
+          "path": ""
         },
         {
           "title": "2. Национальный музей искусств Азербайджана",
-          "page": 10,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 5,
+          "path": ""
         },
         {
           "title": "3. «Южная жемчужина» Азербайджана",
-          "page": 15,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 9,
+          "path": ""
         },
         {
           "title": "4. Родина Низами",
-          "page": 20,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 13,
+          "path": ""
         },
         {
           "title": "5. Древний город Азербайджана",
-          "page": 25,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 17,
+          "path": ""
         },
         {
           "title": "6. Древнее поселение на Земле",
-          "page": 30,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 21,
+          "path": ""
         },
         {
           "title": "1. Покровители науки и искусства",
-          "page": 35,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 25,
+          "path": ""
         },
         {
           "title": "2. Удивительная женщина",
-          "page": 40,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 29,
+          "path": ""
         },
         {
           "title": "3. Великий меценат",
-          "page": 45,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 33,
+          "path": ""
         },
         {
           "title": "4. Нефтяной магнат",
-          "page": 50,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 37,
+          "path": ""
         },
         {
           "title": "5. Компьютерный гений",
-          "page": 55,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 41,
+          "path": ""
         },
         {
           "title": "1. «Золотое кольцо» России",
-          "page": 60,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 45,
+          "path": ""
         },
         {
           "title": "2. Музыкальная столица",
-          "page": 65,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 49,
+          "path": ""
         },
         {
           "title": "3. Восточная столица",
-          "page": 70,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 53,
+          "path": ""
         },
         {
           "title": "4. Европейская столица",
-          "page": 75,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 57,
+          "path": ""
         },
         {
           "title": "5. «Жемчужина» Босфора",
-          "page": 80,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 61,
+          "path": ""
         }
       ]
     }
@@ -14728,103 +15599,103 @@
       "topics": [
         {
           "title": "Lektion 1. THEMA 1. Kunst und Kultur",
-          "page": 5,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 1,
+          "path": ""
         },
         {
           "title": "Lektion 1. THEMA 2. Film, Theater und Musik",
-          "page": 10,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 5,
+          "path": ""
         },
         {
           "title": "Lektion 1. THEMA 3. Aserbaidschan / Deutschland",
-          "page": 15,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 9,
+          "path": ""
         },
         {
           "title": "Lektion 1. THEMA 4. Sitten und Bräuche",
-          "page": 20,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 13,
+          "path": ""
         },
         {
           "title": "Lektion 2. THEMA 1. Emotionen",
-          "page": 25,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 17,
+          "path": ""
         },
         {
           "title": "Lektion 2. THEMA 2. Körpersprache",
-          "page": 30,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 21,
+          "path": ""
         },
         {
           "title": "Lektion 2. THEMA 3. Das mache ich gerne",
-          "page": 35,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 25,
+          "path": ""
         },
         {
           "title": "Lektion 2. THEMA 4. Lass uns feiern",
-          "page": 40,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 29,
+          "path": ""
         },
         {
           "title": "Lektion 3. THEMA 1. Rund um Deutschland",
-          "page": 45,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 33,
+          "path": ""
         },
         {
           "title": "Lektion 3. THEMA 2. Schweiz",
-          "page": 50,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 37,
+          "path": ""
         },
         {
           "title": "Lektion 3. THEMA 3. Österreich",
-          "page": 55,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 41,
+          "path": ""
         },
         {
           "title": "Lektion 3. THEMA 4. Eine Reise an den Bodensee",
-          "page": 60,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 45,
+          "path": ""
         },
         {
           "title": "Lektion 4. THEMA 1. Gute Taten und Wohltätigkeit",
-          "page": 65,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 49,
+          "path": ""
         },
         {
           "title": "Lektion 4. THEMA 2. Freiwilligenarbeit",
-          "page": 70,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 53,
+          "path": ""
         },
         {
           "title": "Lektion 4. THEMA 3. Besuch im Heim für Behinderte",
-          "page": 75,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 57,
+          "path": ""
         },
         {
           "title": "Lektion 4. THEMA 4. Kinder und Jugendliche",
-          "page": 80,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 61,
+          "path": ""
         },
         {
           "title": "Lektion 5. THEMA 1. Moderne Kommunikationsformen",
-          "page": 85,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 65,
+          "path": ""
         },
         {
           "title": "Lektion 5. THEMA 2. Verbale und Nonverbale Kommunikation",
-          "page": 90,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 69,
+          "path": ""
         },
         {
           "title": "Lektion 5. THEMA 3. Auf der Post",
-          "page": 95,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 73,
+          "path": ""
         },
         {
           "title": "Lektion 5. THEMA 4. Schriftliche Kommunikation / Schreibformen",
-          "page": 100,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 77,
+          "path": ""
         }
       ]
     }
@@ -14959,43 +15830,287 @@
   ],
   "riyaziyyat-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I FƏSİL. Çoxhədlilər və rasional tənliklər",
       "topics": [
         {
           "title": "Çoxhədlinin çoxhədliyə bölünməsi",
-          "page": 6
+          "page": 1,
+          "path": ""
         },
         {
           "title": "Rasional köklərin tapılması",
-          "page": 10
+          "page": 5,
+          "path": ""
         },
         {
           "title": "Qalıq haqqında teorem",
-          "page": 14
+          "page": 9,
+          "path": ""
         },
         {
           "title": "Çoxhədlinin vuruqları haqqında teorem",
-          "page": 18
+          "page": 13,
+          "path": ""
         },
         {
-          "title": "Kompleks ədədlər haqqında",
-          "page": 22
+          "title": "Cəbri kəsrlərin ixtisarı",
+          "page": 17,
+          "path": ""
         },
         {
-          "title": "Cəbrin əsas teoremi",
-          "page": 26
+          "title": "Həqiqi ədədlər və əməllər",
+          "page": 21,
+          "path": ""
         },
         {
-          "title": "Çoxhədli funksiya",
-          "page": 30
+          "title": "Ədədi ardıcıllıqlar",
+          "page": 25,
+          "path": ""
         },
         {
-          "title": "Rasional funksiya",
-          "page": 34
+          "title": "Limit anlayışı",
+          "page": 29,
+          "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 38
+          "page": 33,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II FƏSİL. Funksiyalar, limit və kəsilməzlik",
+      "topics": [
+        {
+          "title": "Funksiyanın limiti və limitlər haqqında teoremlər",
+          "page": 37,
+          "path": ""
+        },
+        {
+          "title": "Görkəmli limitlər və sonsuzluqda limit",
+          "page": 41,
+          "path": ""
+        },
+        {
+          "title": "Funksiyanın kəsilməzliyi və kəsilmə nöqtələri",
+          "page": 45,
+          "path": ""
+        },
+        {
+          "title": "Əsas elementar funksiyaların xassələri və qrafikləri",
+          "page": 49,
+          "path": ""
+        },
+        {
+          "title": "Mürəkkəb və tərs funksiyalar",
+          "page": 53,
+          "path": ""
+        },
+        {
+          "title": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
+          "page": 57,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III FƏSİL. Törəmə və onun tətbiqləri",
+      "topics": [
+        {
+          "title": "Törəmə anlayışı, törəmənin həndəsi və fiziki mənası",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "Diferensiallama qaydaları və cəmin, hasilin, nisbətin törəməsi",
+          "page": 65,
+          "path": ""
+        },
+        {
+          "title": "Mürəkkəb funksiyanın və triqonometrik funksiyaların törəməsi",
+          "page": 69,
+          "path": ""
+        },
+        {
+          "title": "Funksiyanın böhran nöqtələri, artma və azalma aralıqları",
+          "page": 73,
+          "path": ""
+        },
+        {
+          "title": "Funksiyanın ekstremumları (maksimum və minimum nöqtələri)",
+          "page": 77,
+          "path": ""
+        },
+        {
+          "title": "Funksiyanın ən böyük və ən kiçik qiymətlərinin tapılması",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "Əyriyə çəkilən toxunanın tənliyi",
+          "page": 85,
+          "path": ""
+        },
+        {
+          "title": "Törəmənin köməyi ilə funksiyanın tədqiqi və qrafikinin qurulması",
+          "page": 89,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV FƏSİL. İbtidai funksiya və inteqral",
+      "topics": [
+        {
+          "title": "İbtidai funksiya anlayışı və qeyri-müəyyən inteqral",
+          "page": 93,
+          "path": ""
+        },
+        {
+          "title": "Əsas inteqral düsturları və inteqrallama qaydaları",
+          "page": 97,
+          "path": ""
+        },
+        {
+          "title": "Müəyyən inteqral və Nyuton-Leybnis düsturu",
+          "page": 101,
+          "path": ""
+        },
+        {
+          "title": "Əyrixətli trapesiyanın sahəsinin inteqral vasitəsilə hesablanması",
+          "page": 105,
+          "path": ""
+        },
+        {
+          "title": "Fırlanma cisimlərinin həcminin inteqral vasitəsilə hesablanması",
+          "page": 109,
+          "path": ""
+        },
+        {
+          "title": "İnteqralın fizikada və təbiətdə tətbiqləri",
+          "page": 113,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "V FƏSİL. Fəza fiqurları (Fırlanma cisimləri) və Ehtimal",
+      "topics": [
+        {
+          "title": "Fırlanma cisimləri: Silindr, onun səthinin sahəsi və həcmi",
+          "page": 117,
+          "path": ""
+        },
+        {
+          "title": "Konus və kəsik konus, onların səthinin sahəsi və həcmi",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "Kürə və sfera, kürə sektorunun və seqmentinin həcmi",
+          "page": 125,
+          "path": ""
+        },
+        {
+          "title": "Kombinatorikanın əsas prinsipləri (Permutasiya, Kombinezon, Qruplaşma)",
+          "page": 129,
+          "path": ""
+        },
+        {
+          "title": "Hadisənin ehtimalı, asılı və asılı olmayan hadisələr",
+          "page": 133,
+          "path": ""
+        },
+        {
+          "title": "Statistika, paylanma parametrləri və Bernulli düsturu",
+          "page": 137,
+          "path": ""
+        },
+        {
+          "title": "Yekun ümumiləşdirici təkrar",
+          "page": 141,
+          "path": ""
+        },
+        {
+          "title": "Kompleks ədədlər haqqında",
+          "page": 145,
+          "path": ""
+        },
+        {
+          "title": "Cəbrin əsas teoremi",
+          "page": 149,
+          "path": ""
+        },
+        {
+          "title": "Çoxhədli funksiya",
+          "page": 153,
+          "path": ""
+        },
+        {
+          "title": "Rasional funksiya",
+          "page": 157,
+          "path": ""
+        },
+        {
+          "title": "Funksiyanın tam tədqiqi və qrafikinin qurulması",
+          "page": 161,
+          "path": ""
+        },
+        {
+          "title": "Törəmənin tətbiqi - optimallaşdırma (ən böyük-kiçik dəyər) məsələləri",
+          "page": 165,
+          "path": ""
+        },
+        {
+          "title": "Qeyri-müəyyən inteqral anlayışı və əsas inteqral cədvəli",
+          "page": 169,
+          "path": ""
+        },
+        {
+          "title": "İnteqrallama üsulları: əvəzetmə üsulu və hissəli inteqrallama",
+          "page": 173,
+          "path": ""
+        },
+        {
+          "title": "Müəyyən inteqral - Nyuton-Leybnis formulası və xassələri",
+          "page": 177,
+          "path": ""
+        },
+        {
+          "title": "Müəyyən inteqral ilə sahə hesablanması",
+          "page": 181,
+          "path": ""
+        },
+        {
+          "title": "Diferensial tənliklərə giriş - ayrılan dəyişənlər metodu",
+          "page": 185,
+          "path": ""
+        },
+        {
+          "title": "İnteqral fəsli üzrə ümumiləşdirici tapşırıqlar",
+          "page": 189,
+          "path": ""
+        },
+        {
+          "title": "Ədəd ardıcıllıqları - tərif, limit və yaxınlaşma",
+          "page": 193,
+          "path": ""
+        },
+        {
+          "title": "Hesabi sıra və həndəsi sıraların cəmi",
+          "page": 197,
+          "path": ""
+        },
+        {
+          "title": "Ehtimal nəzəriyyəsinə giriş - klassik ehtimal",
+          "page": 201,
+          "path": ""
+        },
+        {
+          "title": "Riyaziyyat 11 kursunun ümumiləşdirici tapşırıqları",
+          "page": 205,
+          "path": ""
         }
       ]
     }
@@ -15572,163 +16687,163 @@
       "topics": [
         {
           "title": "UNITÉ 1. LEÇON 1. ÊTRE ADO ! C'EST QUOI ?",
-          "page": 5,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 1,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 2. LES ÉMOTIONS DANS LA CLASSE DE LANGUE ÉTRANGÈRE",
-          "page": 10,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 5,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 3. C'EST QUOI UN BON PROF ?",
-          "page": 15,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 9,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 4. JE ME SOUVIENS...",
-          "page": 20,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 13,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 5. TÉLÉPHONE FIXE, TÉLÉPHONE PORTABLE, INTERNET",
-          "page": 25,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 17,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 6. CRÉER DES LIENS...",
-          "page": 30,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 21,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 7. AU CONDITIONNEL",
-          "page": 35,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 25,
+          "path": ""
         },
         {
           "title": "UNITÉ 1. LEÇON 8. « JE VEUX PASSER DES CASTINGS »",
-          "page": 40,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 29,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 1. ÉTUDIER À L'ÉTRANGER",
-          "page": 45,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 33,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 2. DES ÉLÈVES GLOBE-TROTTERS",
-          "page": 50,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 37,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 3. L'ÉCOLE OUVERTE À TOUS",
-          "page": 55,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 41,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 4. ADOLESCENCE : JOIES ET TOURMENTS",
-          "page": 60,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 45,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 5. AGIR CONTRE LE HARCÈLEMENT À L'ÉCOLE",
-          "page": 65,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 49,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 6. CONFIANCE EN SOI",
-          "page": 70,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 53,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 7. PARLER, ÇA FAIT DU BIEN !",
-          "page": 75,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 57,
+          "path": ""
         },
         {
           "title": "UNITÉ 2. LEÇON 8. LE BONHEUR",
-          "page": 80,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 61,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 1. LES GESTES POUR L'ENVIRONNEMENT",
-          "page": 85,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 65,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 2. LES BONS GESTES DU TRI",
-          "page": 90,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 69,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 3. BIODIVERSITÉ",
-          "page": 95,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 73,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 4. SOLIDARITÉ",
-          "page": 100,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 77,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 5. POURQUOI ÊTRE SOLIDAIRE ? QU'EST-CE QUE ÇA VEUT DIRE ?",
-          "page": 105,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 81,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 6. DES CŒURS GROS COMME ÇA",
-          "page": 110,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 85,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 7. LA COLOCATION",
-          "page": 115,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 89,
+          "path": ""
         },
         {
           "title": "UNITÉ 3. LEÇON 8. RESPECT, DIGNITÉ, TOLÉRANCE, ÉGALITÉ",
-          "page": 120,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 93,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 1. LE TOURISME EN FRANCE",
-          "page": 125,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 97,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 2. SUR LA TOUR EIFFEL",
-          "page": 130,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 101,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 3. LE TOURISME EN AZERBAÏDJAN",
-          "page": 135,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 105,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 4. « CHOUCHA, LA PERLE DU KARABAGH »",
-          "page": 140,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 109,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 5. EN VILLE OU À LA CAMPAGNE ?",
-          "page": 145,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 113,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 6. LE LOGEMENT DE MES RÊVES",
-          "page": 150,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 117,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 7. LES LOISIRS",
-          "page": 155,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 121,
+          "path": ""
         },
         {
           "title": "UNITÉ 4. LEÇON 8. AFFICHES DE FILMS",
-          "page": 160,
-          "path": "OEBPS/Text/section_0001.xhtml"
+          "page": 125,
+          "path": ""
         }
       ]
     }
@@ -24637,5 +25752,42 @@
         }
       ]
     }
+  ],
+  "Fizika 11": [
+    "Maqnit sahəsinin induksiyası və Amper qüvvəsi",
+    "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti",
+    "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)",
+    "Elektromaqnit induksiya hadisəsi və Faradey qanunu",
+    "Lens qaydası və induksiya EHQ",
+    "Öz-özünə induksiya hadisəsi və İnduktivlik",
+    "Maqnit sahəsinin enerjisi və enerji sıxlığı",
+    "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi",
+    "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
+    "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan",
+    "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
+    "Dəyişən cərəyanın gücü və Transformator",
+    "Elektromaqnit dalğaları, onların şüalanması və xassələri",
+    "Radiolokasiya, televiziya və müasir rabitə vasitələri",
+    "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları",
+    "Linzalar və optik cihazlar",
+    "İşığın interferensiyası və Koherent dalğalar",
+    "İşığın difraksiyası və Difraksiya qəfəsi",
+    "İşığın dispersionu və polyarlaşması",
+    "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi",
+    "İstilik şüalanması və Plank hipotezi",
+    "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi",
+    "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)",
+    "Atomun quruluşu: Rezerford təcrübəsi və Bor postulatları",
+    "Atom nüvəsinin quruluşu, Rabitə enerjisi və Kütlə qüsuru",
+    "Radioaktivlik, Radioaktiv çevrilmələr və Yarımparçalanma qanunu",
+    "Nüvə reaksiyaları, Nüvə energetikası və Elementar zərrəciklər",
+    "Elektrik yükü. Elektrik sahəsinin intensivliyi və potensialı",
+    "Kondensatorlar və elektrik tutumu",
+    "Sabit cərəyan qanunları və Müqavimət",
+    "Tam dövrə üçün Om qanunu və Elektrik hərəkət qüvvəsi",
+    "Metallarda və yarımkeçiricilərdə elektrik cərəyanı",
+    "Mayelərdə və qazlarda elektrik cərəyanı (Elektroliz)",
+    "Vakuumda elektrik cərəyanı və elektron şüa borusu",
+    "Elektrik cərəyanının işi, gücü və Coul-Lens qanunu"
   ]
 }
