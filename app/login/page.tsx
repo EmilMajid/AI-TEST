@@ -1,26 +1,26 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { BookOpen, ArrowLeft, AlertCircle } from 'lucide-react'
+import { ArrowLeft, AlertCircle, Lock, X, Sparkles, ShieldCheck } from "lucide-react"
 import Link from "next/link"
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation"
 import { useTheme } from "@/hooks/use-theme"
 import RegionBackground from "@/components/region-background"
 import Image from "next/image"
 import { getDashboardPath } from "@/lib/profile-utils"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 export default function LoginPage() {
   const router = useRouter()
   const { theme, getThemeClasses } = useTheme()
 
   // Steps: 'role' -> 'email' -> 'user-selection' (if needed) -> 'password'
-  const [step, setStep] = useState<'role' | 'email' | 'user-selection' | 'password'>('role')
+  const [step, setStep] = useState<"role" | "email" | "user-selection" | "password">("role")
 
   const [formData, setFormData] = useState({
     role: "",
@@ -32,20 +32,35 @@ export default function LoginPage() {
   const [foundUsers, setFoundUsers] = useState<any[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
+  const [restrictedModal, setRestrictedModal] = useState<{ open: boolean; title: string; desc: string } | null>(null)
 
   const themeClasses = getThemeClasses()
 
+  // Admin siyahıdan çıxarıldı, Müəllim və Direktor məhdudlaşdırıldı
   const roles = [
-    { id: "student", label: "Şagird", icon: "🎓" },
-    { id: "parent", label: "Valideyn", icon: "👨‍👩‍👧‍👦" },
-    { id: "teacher", label: "Müəllim", icon: "👨‍🏫" },
-    { id: "director", label: "Direktor", icon: "👔" },
-    { id: "admin", label: "Admin", icon: "🛡️" },
+    { id: "student", label: "Şagird", icon: "🎓", restricted: false },
+    { id: "parent", label: "Valideyn", icon: "👨‍👩‍👧‍👦", restricted: false },
+    { id: "teacher", label: "Müəllim", icon: "👨‍🏫", restricted: true, badge: "Tezliklə" },
+    { id: "director", label: "Direktor", icon: "👔", restricted: true, badge: "Tezliklə" },
   ]
 
-  const handleRoleSelect = (roleId: string) => {
-    setFormData(prev => ({ ...prev, role: roleId }))
-    setStep('email')
+  const handleRoleSelect = (role: { id: string; label: string; restricted: boolean }) => {
+    if (role.restricted) {
+      setRestrictedModal({
+        open: true,
+        title: `${role.label} Kabineti Hazırlıq Mərhələsindədir`,
+        desc: `Hörmətli ${role.label}, hal-hazırda ${role.label.toLowerCase()} kabineti üzərində texniki təkmilləşdirmə işləri aparılır. Çox tezliklə tam funksionallıqla istifadəyə veriləcək. Əməkdaşlıq və ilkin qeydiyyat üçün bizimlə əlaqə saxlayın: info@edutest.az`,
+      })
+      return
+    }
+    setFormData((prev) => ({ ...prev, role: role.id }))
+    setStep("email")
+    setError("")
+  }
+
+  const handleAdminSelect = () => {
+    setFormData((prev) => ({ ...prev, role: "admin" }))
+    setStep("email")
     setError("")
   }
 
@@ -62,7 +77,7 @@ export default function LoginPage() {
         body: JSON.stringify({
           action: "lookup",
           email: formData.email,
-          role: formData.role
+          role: formData.role,
         }),
       })
 
@@ -77,16 +92,15 @@ export default function LoginPage() {
         setFoundUsers(data.users)
         if (data.users.length === 1) {
           // Only one user found, auto-select and go to password
-          setFormData(prev => ({ ...prev, userId: data.users[0].id }))
-          setStep('password')
+          setFormData((prev) => ({ ...prev, userId: data.users[0].id }))
+          setStep("password")
         } else {
           // Multiple users found, show selection
-          setStep('user-selection')
+          setStep("user-selection")
         }
       } else {
         setError("İstifadəçi tapılmadı")
       }
-
     } catch (err) {
       setError("Şəbəkə xətası baş verdi")
       console.error("Lookup error:", err)
@@ -96,8 +110,8 @@ export default function LoginPage() {
   }
 
   const handleUserSelect = (userId: string) => {
-    setFormData(prev => ({ ...prev, userId }))
-    setStep('password')
+    setFormData((prev) => ({ ...prev, userId }))
+    setStep("password")
   }
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -115,7 +129,7 @@ export default function LoginPage() {
           email: formData.email,
           password: formData.password,
           userId: formData.userId,
-          role: formData.role
+          role: formData.role,
         }),
       })
 
@@ -136,7 +150,7 @@ export default function LoginPage() {
       localStorage.setItem("userData", JSON.stringify(data.user))
 
       console.log("Redirecting...")
-      if (data.user.role === 'admin') {
+      if (data.user.role === "admin") {
         router.push("/admin/topics")
       } else {
         const dashboardPath = getDashboardPath(data.user.accountType)
@@ -151,177 +165,255 @@ export default function LoginPage() {
   }
 
   const goBack = () => {
-    if (step === 'email') setStep('role')
-    else if (step === 'user-selection') setStep('email')
-    else if (step === 'password') {
+    if (step === "email") setStep("role")
+    else if (step === "user-selection") setStep("email")
+    else if (step === "password") {
       // If we skipped user selection (only 1 user), go back to email
-      if (foundUsers.length === 1) setStep('email')
-      else setStep('user-selection')
+      if (foundUsers.length === 1) setStep("email")
+      else setStep("user-selection")
     }
     setError("")
   }
 
   return (
     <RegionBackground region={theme.region} theme={theme.colorScheme}>
-      <div className="min-h-screen flex items-center justify-center py-8">
-        <div className="max-w-md w-full mx-auto px-4">
+      <div className="min-h-screen py-8 px-4 flex justify-center items-center">
+        <div className="w-full max-w-[1550px] mx-auto flex justify-center items-start gap-6">
+          
+          {/* Sol Reklam Bloku (Giriş səhifəsinin sol boşluğu) */}
+          <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+            <AdBanner
+              slot="login-sidebar-left"
+              format="vertical"
+              refreshKey="login-left"
+              label="Tövsiyə Olunan Təhsil"
+            />
+          </aside>
 
-
-
-
-          {/* Header */}
-          <div className="flex items-center justify-center mb-8">
-            <div className="relative h-12 w-12 mr-3">
-              <Image
-                src="/logo.jpg"
-                alt="EduTest AZ Logo"
-                fill
-                className="object-contain rounded-md"
-              />
-            </div>
-            <h1 className="text-2xl font-bold text-gray-900">EduTest AZ</h1>
-          </div>
-
-          <Card className="backdrop-blur-sm bg-white/95 shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">
-                {step === 'role' && "Kim kimi daxil olmaq istəyirsiniz?"}
-                {step === 'email' && "E-mail daxil edin"}
-                {step === 'user-selection' && "İstifadəçi seçin"}
-                {step === 'password' && "Şifrəni daxil edin"}
-              </CardTitle>
-              <CardDescription className="text-center">
-                {step === 'role' && "Davam etmək üçün statusunuzu seçin"}
-                {step === 'email' && `${roles.find(r => r.id === formData.role)?.label} kimi giriş`}
-                {step === 'user-selection' && "Bu email ilə bir neçə hesab tapıldı"}
-                {step === 'password' && "Hesabınıza daxil olmaq üçün şifrənizi yazın"}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              {error && (
-                <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
-                  <AlertCircle className="h-4 w-4 text-red-600" />
-                  <p className="text-sm text-red-600">{error}</p>
-                </div>
-              )}
-
-              {/* STEP 1: ROLE SELECTION */}
-              {step === 'role' && (
-                <div className="grid grid-cols-2 gap-4">
-                  {roles.map((role) => (
-                    <button
-                      key={role.id}
-                      onClick={() => handleRoleSelect(role.id)}
-                      className={`p-4 rounded-xl border-2 transition-all hover:scale-105 flex flex-col items-center gap-2 ${formData.role === role.id
-                        ? `border-${theme.colorScheme}-500 bg-${theme.colorScheme}-50`
-                        : "border-gray-100 hover:border-gray-200 hover:bg-gray-50"
-                        }`}
-                    >
-                      <span className="text-3xl">{role.icon}</span>
-                      <span className="font-medium text-gray-900">{role.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {/* STEP 2: EMAIL INPUT */}
-              {step === 'email' && (
-                <form onSubmit={handleEmailSubmit} className="space-y-6">
-                  <div>
-                    <Label htmlFor="email">E-mail</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                      placeholder="nümunə@email.com"
-                      disabled={isLoading}
-                      className="text-lg p-6"
-                      autoFocus
-                    />
-                  </div>
-                  <Button type="submit" className={`w-full py-6 text-lg ${themeClasses.primary}`} disabled={isLoading}>
-                    {isLoading ? "Yoxlanılır..." : "Davam et"}
-                  </Button>
-                </form>
-              )}
-
-              {/* STEP 3: USER SELECTION (If multiple) */}
-              {step === 'user-selection' && (
-                <div className="space-y-3">
-                  {foundUsers.map((user) => (
-                    <button
-                      key={user.id}
-                      onClick={() => handleUserSelect(user.id)}
-                      className="w-full p-4 text-left rounded-xl border border-gray-200 hover:border-primary hover:bg-primary/5 transition-all group"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <h3 className="font-bold text-gray-900 group-hover:text-primary">
-                            {user.firstName} {user.lastName}
-                          </h3>
-                          <p className="text-sm text-gray-500">
-                            {user.school} • {user.class}-ci sinif
-                          </p>
-                        </div>
-                        <div className="text-2xl">👉</div>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {/* STEP 4: PASSWORD INPUT */}
-              {step === 'password' && (
-                <form onSubmit={handleLogin} className="space-y-6">
-                  <div className="text-center mb-4">
-                    <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600 mb-2">
-                      {foundUsers.find(u => u.id === formData.userId)?.firstName} {foundUsers.find(u => u.id === formData.userId)?.lastName}
-                    </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="password">Şifrə</Label>
-                    <Input
-                      id="password"
-                      type="password"
-                      required
-                      value={formData.password}
-                      onChange={(e) => setFormData((prev) => ({ ...prev, password: e.target.value }))}
-                      placeholder="••••••••"
-                      disabled={isLoading}
-                      className="text-lg p-6"
-                      autoFocus
-                    />
-                  </div>
-                  <Button type="submit" className={`w-full py-6 text-lg ${themeClasses.primary}`} disabled={isLoading}>
-                    {isLoading ? "Giriş edilir..." : "Giriş et"}
-                  </Button>
-                </form>
-              )}
-
-              {/* Navigation Footer */}
-              <div className="mt-6 flex justify-between items-center text-sm">
-                {step !== 'role' ? (
-                  <button onClick={goBack} className="text-gray-500 hover:text-gray-900 flex items-center">
-                    <ArrowLeft className="h-4 w-4 mr-1" /> Geri
-                  </button>
-                ) : (
-                  <Link href="/" className="text-gray-500 hover:text-gray-900 flex items-center">
-                    <ArrowLeft className="h-4 w-4 mr-1" /> Ana səhifə
-                  </Link>
-                )}
-
-                {step === 'role' && (
-                  <Link href="/register" className={`${themeClasses.text} font-medium hover:underline`}>
-                    Qeydiyyat
-                  </Link>
-                )}
+          {/* Mərkəzi Giriş Paneli */}
+          <main className="w-full max-w-md mx-auto space-y-4">
+            
+            {/* Böyük Loqo / Emblemi */}
+            <div className="flex flex-col items-center justify-center mb-6 text-center">
+              <div className="relative h-20 w-20 sm:h-24 sm:w-24 mb-3 p-1.5 rounded-2xl bg-white/95 shadow-xl border-2 border-primary/20 backdrop-blur-md overflow-hidden transition-transform hover:scale-105">
+                <Image
+                  src="/logo.jpg"
+                  alt="EduTest AZ Logo"
+                  fill
+                  className="object-contain rounded-xl p-1"
+                  priority
+                />
               </div>
-            </CardContent>
-          </Card>
+              <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">EduTest AZ</h1>
+            </div>
+
+            <Card className="backdrop-blur-sm bg-white/95 shadow-2xl border border-white/60 rounded-2xl">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl sm:text-2xl text-center font-bold">
+                  {step === "role" && "Kim kimi daxil olmaq istəyirsiniz?"}
+                  {step === "email" && "E-mail daxil edin"}
+                  {step === "user-selection" && "İstifadəçi seçin"}
+                  {step === "password" && "Şifrəni daxil edin"}
+                </CardTitle>
+                <CardDescription className="text-center text-xs sm:text-sm">
+                  {step === "role" && "Davam etmək üçün statusunuzu seçin"}
+                  {step === "email" && `${roles.find((r) => r.id === formData.role)?.label || "İstifadəçi"} kimi giriş`}
+                  {step === "user-selection" && "Bu email ilə bir neçə hesab tapıldı"}
+                  {step === "password" && "Hesabınıza daxil olmaq üçün şifrənizi yazın"}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-2">
+                {error && (
+                  <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-xl flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
+                    <AlertCircle className="h-4 w-4 text-red-600 shrink-0" />
+                    <p className="text-xs sm:text-sm text-red-600">{error}</p>
+                  </div>
+                )}
+
+                {/* STEP 1: ROLE SELECTION */}
+                {step === "role" && (
+                  <div className="grid grid-cols-2 gap-3.5">
+                    {roles.map((role) => (
+                      <button
+                        key={role.id}
+                        onClick={() => handleRoleSelect(role)}
+                        className={`relative p-4 rounded-2xl border-2 transition-all hover:scale-[1.02] active:scale-[0.98] flex flex-col items-center justify-center gap-2 cursor-pointer shadow-xs ${
+                          role.restricted
+                            ? "border-gray-200 bg-gray-50/70 opacity-85 hover:border-amber-300"
+                            : formData.role === role.id
+                              ? "border-primary bg-primary/5 shadow-md"
+                              : "border-gray-100 bg-white hover:border-primary/40 hover:bg-primary/5"
+                        }`}
+                      >
+                        {role.badge && (
+                          <span className="absolute top-2 right-2 px-1.5 py-0.5 text-[9px] font-bold bg-amber-500 text-white rounded-full flex items-center gap-0.5 shadow-xs">
+                            <Lock className="w-2.5 h-2.5" />
+                            {role.badge}
+                          </span>
+                        )}
+                        <span className="text-3xl drop-shadow-xs">{role.icon}</span>
+                        <span className="font-semibold text-gray-900 text-sm">{role.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {/* STEP 2: EMAIL INPUT */}
+                {step === "email" && (
+                  <form onSubmit={handleEmailSubmit} className="space-y-5">
+                    <div>
+                      <Label htmlFor="email" className="text-xs font-semibold">E-mail</Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                        placeholder="nümunə@email.com"
+                        disabled={isLoading}
+                        className="text-base p-5 mt-1 rounded-xl"
+                        autoFocus
+                      />
+                    </div>
+                    <Button type="submit" className={`w-full py-5 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
+                      {isLoading ? "Yoxlanılır..." : "Davam et"}
+                    </Button>
+                  </form>
+                )}
+
+                {/* STEP 3: USER SELECTION (If multiple) */}
+                {step === "user-selection" && (
+                  <div className="space-y-3">
+                    {foundUsers.map((user) => (
+                      <button
+                        key={user.id}
+                        onClick={() => handleUserSelect(user.id)}
+                        className="w-full p-4 text-left rounded-xl border border-gray-200 hover:border-primary hover:bg-primary/5 transition-all group cursor-pointer"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h3 className="font-bold text-gray-900 group-hover:text-primary">
+                              {user.firstName} {user.lastName}
+                            </h3>
+                            <p className="text-xs text-gray-500">
+                              {user.school} • {user.class}-ci sinif
+                            </p>
+                          </div>
+                          <div className="text-xl">👉</div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {/* STEP 4: PASSWORD INPUT */}
+                {step === "password" && (
+                  <form onSubmit={handleLogin} className="space-y-5">
+                    <div className="text-center mb-3">
+                      <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">
+                        {foundUsers.find((u) => u.id === formData.userId)?.firstName}{" "}
+                        {foundUsers.find((u) => u.id === formData.userId)?.lastName}
+                      </div>
+                    </div>
+                    <div>
+                      <Label htmlFor="password" className="text-xs font-semibold">Şifrə</Label>
+                      <Input
+                        id="password"
+                        type="password"
+                        required
+                        value={formData.password}
+                        onChange={(e) => setFormData((prev) => ({ ...prev, password: e.target.value }))}
+                        placeholder="••••••••"
+                        disabled={isLoading}
+                        className="text-base p-5 mt-1 rounded-xl"
+                        autoFocus
+                      />
+                    </div>
+                    <Button type="submit" className={`w-full py-5 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
+                      {isLoading ? "Giriş edilir..." : "Giriş et"}
+                    </Button>
+                  </form>
+                )}
+
+                {/* Navigation Footer */}
+                <div className="mt-5 flex justify-between items-center text-xs sm:text-sm pt-3 border-t border-gray-100">
+                  {step !== "role" ? (
+                    <button onClick={goBack} className="text-gray-500 hover:text-gray-900 flex items-center font-medium cursor-pointer">
+                      <ArrowLeft className="h-3.5 w-3.5 mr-1" /> Geri
+                    </button>
+                  ) : (
+                    <Link href="/" className="text-gray-500 hover:text-gray-900 flex items-center font-medium">
+                      <ArrowLeft className="h-3.5 w-3.5 mr-1" /> Ana səhifə
+                    </Link>
+                  )}
+
+                  {step === "role" && (
+                    <Link href="/register" className={`${themeClasses.text} font-bold hover:underline`}>
+                      Qeydiyyat
+                    </Link>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Diqqət cəlb etməyən gizli Admin Girişi Linki */}
+            <div className="text-center pt-2">
+              <button
+                onClick={handleAdminSelect}
+                className="text-[11px] text-gray-400/80 hover:text-gray-600 transition-colors inline-flex items-center gap-1 mx-auto cursor-pointer font-medium"
+              >
+                <Lock className="w-3 h-3 opacity-60" />
+                <span>Sistem İnzibatçısı</span>
+              </button>
+            </div>
+
+          </main>
+
+          {/* Sağ Reklam Bloku (Giriş səhifəsinin sağ boşluğu) */}
+          <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+            <AdBanner
+              slot="login-sidebar-right"
+              format="vertical"
+              refreshKey="login-right"
+              label="Sponsorlu Elanlar"
+            />
+          </aside>
+
         </div>
       </div>
+
+      {/* Müəllim və Direktor üçün Xəbərdarlıq Modalı */}
+      {restrictedModal?.open && (
+        <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-100 space-y-4 animate-in fade-in zoom-in-95">
+            <div className="flex justify-between items-start">
+              <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <button
+                onClick={() => setRestrictedModal(null)}
+                className="text-gray-400 hover:text-gray-600 p-1 rounded-lg hover:bg-gray-100 cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            
+            <div className="space-y-2">
+              <h3 className="text-lg font-bold text-gray-900">{restrictedModal.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{restrictedModal.desc}</p>
+            </div>
+
+            <div className="pt-2">
+              <Button
+                onClick={() => setRestrictedModal(null)}
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-xl py-4"
+              >
+                Başa düşdüm
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </RegionBackground>
   )
 }

@@ -1,0 +1,574 @@
+{
+  "Riyaziyyat 11": {
+    "textbook_id": "riyaziyyat-11",
+    "existing_in_db": [
+      "Çoxhədlinin çoxhədliyə bölünməsi",
+      "Rasional köklərin tapılması",
+      "Qalıq haqqında teorem",
+      "Çoxhədlinin vuruqları haqqında teorem",
+      "Kompleks ədədlər haqqında",
+      "Cəbrin əsas teoremi",
+      "Çoxhədli funksiya",
+      "Rasional funksiya",
+      "Ümumiləşdirici tapşırıqlar"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I FƏSİL. Çoxhədlilər və rasional tənliklər",
+        "topics": [
+          "Çoxhədlinin çoxhədliyə bölünməsi",
+          "Rasional köklərin tapılması",
+          "Qalıq haqqında teorem",
+          "Çoxhədlinin vuruqları haqqında teorem",
+          "Cəbri kəsrlərin ixtisarı",
+          "Həqiqi ədədlər və əməllər",
+          "Ədədi ardıcıllıqlar",
+          "Limit anlayışı",
+          "Ümumiləşdirici tapşırıqlar"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II FƏSİL. Funksiyalar, limit və kəsilməzlik",
+        "topics": [
+          "Funksiyanın limiti və limitlər haqqında teoremlər",
+          "Görkəmli limitlər və sonsuzluqda limit",
+          "Funksiyanın kəsilməzliyi və kəsilmə nöqtələri",
+          "Əsas elementar funksiyaların xassələri və qrafikləri",
+          "Mürəkkəb və tərs funksiyalar",
+          "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
+          "Fəsil üzrə ümumiləşdirici tapşırıqlar"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III FƏSİL. Törəmə və onun tətbiqləri",
+        "topics": [
+          "Törəmə anlayışı, törəmənin həndəsi və fiziki mənası",
+          "Diferensiallama qaydaları və cəmin, hasilin, nisbətin törəməsi",
+          "Mürəkkəb funksiyanın və triqonometrik funksiyaların törəməsi",
+          "Funksiyanın böhran nöqtələri, artma və azalma aralıqları",
+          "Funksiyanın ekstremumları (maksimum və minimum nöqtələri)",
+          "Funksiyanın ən böyük və ən kiçik qiymətlərinin tapılması",
+          "Əyriyə çəkilən toxunanın tənliyi",
+          "Törəmənin köməyi ilə funksiyanın tədqiqi və qrafikinin qurulması"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV FƏSİL. İbtidai funksiya və inteqral",
+        "topics": [
+          "İbtidai funksiya anlayışı və qeyri-müəyyən inteqral",
+          "Əsas inteqral düsturları və inteqrallama qaydaları",
+          "Müəyyən inteqral və Nyuton-Leybnis düsturu",
+          "Əyrixətli trapesiyanın sahəsinin inteqral vasitəsilə hesablanması",
+          "Fırlanma cisimlərinin həcminin inteqral vasitəsilə hesablanması",
+          "İnteqralın fizikada və təbiətdə tətbiqləri"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "V FƏSİL. Fəza fiqurları (Fırlanma cisimləri) və Ehtimal",
+        "topics": [
+          "Fırlanma cisimləri: Silindr, onun səthinin sahəsi və həcmi",
+          "Konus və kəsik konus, onların səthinin sahəsi və həcmi",
+          "Kürə və sfera, kürə sektorunun və seqmentinin həcmi",
+          "Kombinatorikanın əsas prinsipləri (Permutasiya, Kombinezon, Qruplaşma)",
+          "Hadisənin ehtimalı, asılı və asılı olmayan hadisələr",
+          "Statistika, paylanma parametrləri və Bernulli düsturu",
+          "Yekun ümumiləşdirici təkrar"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Kimya 11": {
+    "textbook_id": "kimya-11",
+    "existing_in_db": [
+      "İlkin yoxlama (Spirtlər və Fenollar)",
+      "1.1.1. Adlandırılması və izomerliyi",
+      "1.1.2. Alınması",
+      "1.1.3. Quruluşu və fiziki xassələri",
+      "1.1.4. Kimyəvi xassələri və tətbiqi",
+      "1.1.5. Praktik dərs. Etanolun məhkəməsi",
+      "1.2.1. Etilenqlikol",
+      "1.2.2. Qliserin",
+      "1.3.1. Fenollar. Alınması, quruluşu və fiziki xassələri",
+      "1.3.2. Fenolların kimyəvi xassələri və tətbiqi"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I BÖLMƏ. Spirtlər və fenollar",
+        "topics": [
+          "İlkin yoxlama (Spirtlər və Fenollar)",
+          "1.1.1. Adlandırılması və izomerliyi",
+          "1.1.2. Alınması",
+          "1.1.3. Quruluşu və fiziki xassələri",
+          "1.1.4. Kimyəvi xassələri",
+          "1.1.5. Tətbiqi",
+          "1.2. Çoxatomlu spirtlər",
+          "1.3. Fenollar",
+          "1.4. Təkrar və ümumiləşdirmə",
+          "Ümumi bölmə testi"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II BÖLMƏ. Aldehidlər və ketonlar",
+        "topics": [
+          "Aldehidlərin və ketonların quruluşu, homoloji sırası və izomerliyi",
+          "Aldehidlərin adlandırılması və alınma üsulları",
+          "Aldehidlərin fiziki və kimyəvi xassələri (Gümüş-güzgü reaksiyası və oksidləşmə)",
+          "Formaldehid, asetaldehid və asetonun sənayedə əhəmiyyəti və tətbiqi",
+          "Aldehid və ketonlar üzrə ümumiləşdirici tapşırıqlar"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III BÖLMƏ. Karbon turşuları, mürəkkəb efirlər və yağlar",
+        "topics": [
+          "Doymuş birəsaslı karbon turşuları: Homoloji sırası, izomerliyi və adlandırılması",
+          "Doymuş birəsaslı karbon turşularının alınması, fiziki və kimyəvi xassələri",
+          "Qarışqa turşusu və sirkə turşusunun xüsusi xassələri və tətbiqi",
+          "Doymamış və aromatik karbon turşuları (Akril, Olein, Benzoy turşusu)",
+          "İkiəsaslı karbon turşuları (Oksalat, Adipin, Tereftal turşusu)",
+          "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi",
+          "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi",
+          "Sabunlar və sintetik yuyucu vasitələr (Detergentlər)"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV BÖLMƏ. Karbohidratlar",
+        "topics": [
+          "Karbohidratların təsnifatı və fotosintez prosesi",
+          "Monosaxaridlər: Qlükoza və fruktozanın quruluşu, izomerliyi və xassələri",
+          "Qlükozanın qıcqırma növləri və orqanizmdə rolu",
+          "Disaxaridlər: Saxaroza və maltozanın quruluşu, hidrolizi və əhəmiyyəti",
+          "Polisaxaridlər: Nişasta və sellülozanın quruluş fərqləri, kimyəvi xassələri",
+          "Süni və sintetik liflər (Asetat ipəyi, Viskoz)"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "V BÖLMƏ. Azotlu üzvi birləşmələr və Zülallar",
+        "topics": [
+          "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri",
+          "Anilin (Aromatik amin): Alınması (Zinin reaksiyası) və kimyəvi xassələri",
+          "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması",
+          "Peptidlər və peptid rabitəsi",
+          "Zülallar: Quruluş səviyyələri (birincili, ikincili, üçüncülü, dördcülü), rəngli reaksiyaları və denaturasiyası"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "VI BÖLMƏ. Yüksəkmolekullu birləşmələr və Polimerlər",
+        "topics": [
+          "Polimerləşmə və polikondensləşmə reaksiyaları",
+          "Plastik kütlələr (Polietilen, Polipropilen, Polivinilxlorid, Polistirol)",
+          "Sintetik kauçuklar və rezin istehsalı",
+          "Sintetik liflər (Kapron, Lavsan)",
+          "11-ci sinif kimya fənni üzrə yekun ümumiləşdirici testlər"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Fizika 11": {
+    "textbook_id": "fizika-11",
+    "existing_in_db": [
+      "1.1. Elektrik yükü. Elektromaqnit sahəsi",
+      "1.2. Elektrostatik sahə. Elektrostatik sahənin intensivliyi",
+      "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
+      "1.4. Kondensator. Elektrik tutumu",
+      "1.5. Kondensatorların birləşdirilməsi",
+      "1.6. Yüklü zərrəciyin maqnit sahəsində hərəkəti. Lorens qüvvəsi",
+      "1.7. Maqnit sahəsinin cərəyanlı naqilə təsiri. Amper qüvvəsi",
+      "1.8. Maqnit seli. Elektromaqnit induksiyası hadisəsi",
+      "1.9. Elektromaqnit induksiyası qanunu. Maqnit sahəsində hərəkət edən naqillərdə induksiya elektrik hərəkət qüvvəsi",
+      "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi",
+      "Mövzu: 2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsinin elementləri",
+      "Mövzu: 2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik",
+      "Mövzu: 2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu",
+      "Mövzu: 2.4. Vakuumda elektrik cərəyanı",
+      "Mövzu: 2.5. Qazlarda elektrik cərəyanı",
+      "Mövzu: 2.6. Elektrolit məhlullarında elektrik cərəyanı. Elektroliz qanunu",
+      "Mövzu: 2.7. Yarımkeçiricilərdə elektrik cərəyanı",
+      "Mövzu: 2.8. Yarımkeçirici diod. Tranzistor",
+      "Mövzu: II fəslə aid məsələlər (Müxtəlif mühitlərdə sabit cərəyan qanunları)"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I FƏSİL. Elektrostatika və Sabit cərəyan",
+        "topics": [
+          "1.1. Elektrik yükü. Elektromaqnit sahəsi",
+          "1.2. Elektrostatik sahə. Elektrostatik sahənin intensivliyi",
+          "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
+          "1.4. Kondensator. Elektrik tutumu",
+          "1.5. Kondensatorların birləşdirilməsi",
+          "1.6. Yüklü zərrəciyin maqnit sahəsində hərəkəti. Lorens qüvvəsi",
+          "1.7. Maqnit sahəsinin cərəyanlı naqilə təsiri. Amper qüvvəsi",
+          "1.8. Maqnit seli. Elektromaqnit induksiyası hadisəsi",
+          "1.9. Elektromaqnit induksiyası qanunu. Maqnit sahəsində hərəkət edən naqillərdə induksiya elektrik hərəkət qüvvəsi",
+          "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi",
+          "Mövzu: 2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsinin elementləri",
+          "Mövzu: 2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik",
+          "Mövzu: 2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu",
+          "Mövzu: 2.4. Vakuumda elektrik cərəyanı",
+          "Mövzu: 2.5. Qazlarda elektrik cərəyanı",
+          "Mövzu: 2.6. Elektrolit məhlullarında elektrik cərəyanı. Elektroliz qanunu",
+          "Mövzu: 2.7. Yarımkeçiricilərdə elektrik cərəyanı",
+          "Mövzu: 2.8. Yarımkeçirici diod. Tranzistor",
+          "Mövzu: II fəslə aid məsələlər (Müxtəlif mühitlərdə sabit cərəyan qanunları)"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II FƏSİL. Maqnit sahəsi və Elektromaqnit induksiyası",
+        "topics": [
+          "Maqnit sahəsinin induksiyası və Amper qüvvəsi",
+          "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti",
+          "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)",
+          "Elektromaqnit induksiya hadisəsi və Faradey qanunu",
+          "Lens qaydası və induksiya EHQ",
+          "Öz-özünə induksiya hadisəsi və İnduktivlik",
+          "Maqnit sahəsinin enerjisi və enerji sıxlığı",
+          "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III FƏSİL. Elektromaqnit rəqsləri və dalğaları",
+        "topics": [
+          "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
+          "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan",
+          "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
+          "Dəyişən cərəyanın gücü və Transformator",
+          "Elektromaqnit dalğaları, onların şüalanması və xassələri",
+          "Radiolokasiya, televiziya və müasir rabitə vasitələri"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV FƏSİL. Optika və Xüsusi nisbilik nəzəriyyəsi",
+        "topics": [
+          "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları",
+          "Linzalar və optik cihazlar",
+          "İşığın interferensiyası və Koherent dalğalar",
+          "İşığın difraksiyası və Difraksiya qəfəsi",
+          "İşığın dispersionu və polyarlaşması",
+          "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "V FƏSİL. Kvant fizikası, Atom və Nüvə fizikası",
+        "topics": [
+          "İstilik şüalanması və Plank hipotezi",
+          "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi",
+          "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)",
+          "Atomun quruluşu: Rezerford təcrübəsi və Bor postulatları",
+          "Atom nüvəsinin quruluşu, Rabitə enerjisi və Kütlə qüsuru",
+          "Radioaktivlik, Radioaktiv çevrilmələr və Yarımparçalanma qanunu",
+          "Nüvə reaksiyaları, Nüvə energetikası və Elementar zərrəciklər"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Azərbaycan tarixi 11": {
+    "textbook_id": "azerbaycan-tarixi-11",
+    "existing_in_db": [
+      "1. Rusiya tərəfindən Azərbaycanın şimal torpaqlarının işğalına başlanması",
+      "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr",
+      "3. Rusiya imperiyasının müstəmləkə siyasəti",
+      "4. XIX əsrin 40-cı illərində keçirilən islahatlar",
+      "5. Yeni sosial münasibətlərin meydana gəlməsi",
+      "6. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri",
+      "7. Müstəmləkə əleyhinə çıxışlar. Milli demokratik hərəkat",
+      "8. Çarizmin milli qırğın siyasəti",
+      "9. Şimali Azərbaycan Birinci dünya müharibəsi illərində"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I FƏSİL. Şimal torpaqlarının işğalı və müstəmləkə rejimi",
+        "topics": [
+          "1. Rusiya tərəfindən Azərbaycanın şimal torpaqlarının işğalına başlanması",
+          "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr",
+          "3. Rusiya imperiyasının müstəmləkə siyasəti",
+          "4. XIX əsrin 40-cı illərində keçirilən islahatlar",
+          "5. Yeni sosial münasibətlərin meydana gəlməsi",
+          "6. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri",
+          "7. Müstəmləkə əleyhinə çıxışlar. Milli demokratik hərəkat",
+          "8. Çarizmin milli qırğın siyasəti",
+          "9. Şimali Azərbaycan Birinci dünya müharibəsi illərində"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II FƏSİL. Şimali Azərbaycan XIX əsrin ikinci yarısı - XX əsrin əvvəllərində",
+        "topics": [
+          "Kəndli islahatı və aqrar münasibətlərin inkişafı",
+          "Şimali Azərbaycanda kapitalist sənayesinin inkişafı və Bakı nefti",
+          "Milli burjuaziya və xeyriyyəçilik hərəkatı (Hacı Zeynalabdin Tağıyev və b.)",
+          "Milli oyanış, mətbuat (\"Əkinçi\") və maarifçilik hərəkatı",
+          "1905-1907-ci illər inqilabı dövründə Azərbaycanda ictimai-siyasi hərəkat",
+          "Siyasi partiyalar və təşkilatlar (\"Hümmət\", \"Müsavat\", \"Qeyrət\", \"İttifaq\")",
+          "Birinci Dünya müharibəsi illərində Şimali və Cənubi Azərbaycan",
+          "1918-ci il 31 Mart soyqırımı və milli faciə"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III FƏSİL. Azərbaycan Xalq Cümhuriyyəti (1918–1920)",
+        "topics": [
+          "Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi",
+          "Qafqaz İslam Ordusu və Bakının azad edilməsi (15 sentyabr 1918)",
+          "AXC-nin dövlət quruculuğu, parlamenti və hökumət kabinələri",
+          "AXC-nin daxili, sosial-iqtisadi və hərbi siyasəti (Milli Ordu quruculuğu)",
+          "AXC-nin xarici siyasəti və Paris Sülh Konfransında müstəqilliyin de-fakto tanınması",
+          "Aprel işğalı (27-28 aprel 1920) və AXC-nin süqutu"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV FƏSİL. Azərbaycan Sovet hakimiyyəti illərində (1920–1991)",
+        "topics": [
+          "Azərbaycanda sovet rejiminin qurulması və milli müqavimət üsyanları (Gəncə, Qarabağ)",
+          "Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ və Naxçıvan məsələsi)",
+          "Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti",
+          "1930-cu illərin kütləvi repressiyaları və \"Qırmızı terror\"",
+          "Azərbaycan İkinci Dünya müharibəsi illərində (Bakı neftinin rolu və qəhrəmanlarımız)",
+          "Müharibədən sonrakı illərdə sosial-iqtisadi inkişaf və deportasiyalar (1948-1953)",
+          "1969-1982-ci illərdə Heydər Əliyevin rəhbərliyi ilə Azərbaycanın intibahı",
+          "1980-ci illərin sonlarında erməni təcavüzü, Qərbi Azərbaycandan deportasiya və Meydan hərəkatı",
+          "1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "V FƏSİL. Müstəqillik dövrü və Tarixi Zəfər (1991–Müasir dövr)",
+        "topics": [
+          "Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin böhranı",
+          "Birinci Qarabağ müharibəsi, Xocalı soyqırımı və torpaqların işğalı",
+          "1993-cü il Heydər Əliyevin hakimiyyətə qayıdışı və Qurtuluş günü",
+          "\"Əsrin müqaviləsi\" və yeni neft strategiyası",
+          "Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu və ordu quruculuğu",
+          "İlham Əliyevin rəhbərliyi ilə Azərbaycanın hərtərəfli inkişafı",
+          "Aprel döyüşləri (2016) və Tovuz döyüşləri (2020)",
+          "44 günlük Vətən müharibəsi (27 sentyabr - 10 noyabr 2020) və Tarixi Qələbə",
+          "Lokal antiterror tədbirləri (2023) və suverenliyin tam bərpası",
+          "Böyük Qayıdış və Qarabağın bərpası"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Azərbaycan dili 11": {
+    "textbook_id": "azerbaycan-dili-11",
+    "existing_in_db": [
+      "Böyük ömrün dan yeri",
+      "Şəbi-hicran",
+      "Sizin də bir basketbol səbətiniz varmı?",
+      "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq",
+      "Gəncə Müsəlman Qız Məktəbi",
+      "Mətn",
+      "Doroti Meri Kroufut Hodgkin"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I HİSSƏ. Mətn və Fonetik-Leksik Normalar",
+        "topics": [
+          "Böyük ömrün dan yeri",
+          "Şəbi-hicran",
+          "Sizin də bir basketbol səbətiniz varmı?",
+          "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq",
+          "Gəncə Müsəlman Qız Məktəbi",
+          "Mətn",
+          "Doroti Meri Kroufut Hodgkin"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II HİSSƏ. Morfoloji və Sintaktik Normalar",
+        "topics": [
+          "Nitq hissələrinin üslubi imkanları və morfoloji norma",
+          "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları",
+          "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar",
+          "Köməkçi nitq hissələrinin fərqləndirilməsi və orfoqrafiyası",
+          "Cümlə üzvlərinin uzlaşması və sintaktik əlaqələr",
+          "Söz sırası və sintaktik norma",
+          "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma",
+          "Mürəkkəb sintaktik bütövlər və dövrə"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III HİSSƏ. Funksional Üslublar və Nitq Mədəniyyəti",
+        "topics": [
+          "Azərbaycan ədəbi dilinin funksional üslubları",
+          "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)",
+          "Elmi üslub, terminologiya və mətndə terminlərin rolu",
+          "Publisistik üslub və onun janrları",
+          "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)",
+          "Məişət üslubu və dialektlərin rolu",
+          "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV HİSSƏ. Mətn Nəzəriyyəsi və Redaktə",
+        "topics": [
+          "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər",
+          "Mətnin abzas quruluşu, mikro və makromövzular",
+          "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)",
+          "Mətndə məntiqi və üslubi xətaların tapılması və redaktəsi",
+          "Esse və inşa yazma texnologiyası",
+          "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Ümumi tarix 11": {
+    "textbook_id": "umumi-tarix-11",
+    "existing_in_db": [
+      "1. ABŞ və Böyük Britaniya (XIX əsr - XX əsrin əvvəlləri)",
+      "2. Fransa və Almaniya (XIX əsr - XX əsrin əvvəlləri)",
+      "3. Rusiya (XIX əsr - XX əsrin əvvəlləri)",
+      "4. Osmanlı imperiyası. Qacarlar dövləti (XIX əsr - XX əsrin əvvəlləri)",
+      "5. Hindistan, Çin və Yaponiya (XIX əsr - XX əsrin əvvəlləri)",
+      "6. Dövlətlərarası münasibətlər (XIX əsr - XX əsrin əvvəlləri)",
+      "7. Birinci dünya müharibəsi (1914-1918)",
+      "8. Mədəniyyət (XIX əsr - XX əsrin əvvəlləri)"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I BÖLMƏ. XIX əsrin sonu - XX əsrin əvvəllərində dünya",
+        "topics": [
+          "1. ABŞ və Böyük Britaniya (XIX əsr - XX əsrin əvvəlləri)",
+          "2. Fransa və Almaniya (XIX əsr - XX əsrin əvvəlləri)",
+          "3. Rusiya (XIX əsr - XX əsrin əvvəlləri)",
+          "4. Osmanlı imperiyası. Qacarlar dövləti (XIX əsr - XX əsrin əvvəlləri)",
+          "5. Hindistan, Çin və Yaponiya (XIX əsr - XX əsrin əvvəlləri)",
+          "6. Dövlətlərarası münasibətlər (XIX əsr - XX əsrin əvvəlləri)",
+          "7. Birinci dünya müharibəsi (1914-1918)",
+          "8. Mədəniyyət (XIX əsr - XX əsrin əvvəlləri)"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II BÖLMƏ. Birinci Dünya müharibəsi və Müharibələrarası dövr",
+        "topics": [
+          "Birinci Dünya müharibəsi: Hərbi-siyasi bloklar, səbəblər və hərbi əməliyyatlar",
+          "Müharibənin başa çatması və Versal-Vaşinqton sistemi",
+          "1917-ci il Rusiya inqilabları və SSRİ-nin yaranması",
+          "1929-1933-cü illər \"Böyük böhran\" və ABŞ-ın \"Yeni xətti\" (F.Ruzvelt)",
+          "Faşizmin və Nasizmin yaranması (İtaliya və Almaniya)",
+          "Türkiyə Cümhuriyyətinin yaranması (Mustafa Kamal Atatürk islahatları)"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III BÖLMƏ. İkinci Dünya müharibəsi (1939–1945)",
+        "topics": [
+          "İkinci Dünya müharibəsinin başlanması və ilkin mərhələsi (1939-1941)",
+          "Müharibədə əsas dönüş döyüşləri (Moskva, Stalinqrad, Kursk, Əl-Əlameyn)",
+          "Antihitler koalisiyası və beynəlxalq konfranslar (Tehran, Yalta, Potsdam)",
+          "Faşist blokunun süqutu və müharibənin yekunları",
+          "Birləşmiş Millətlər Təşkilatının (BMT) yaranması və Nürnberq məhkəməsi"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV BÖLMƏ. İkinci Dünya müharibəsindən sonra beynəlxalq münasibətlər (\"Soyuq müharibə\")",
+        "topics": [
+          "İkiqütblü dünya: \"Soyuq müharibə\"nin başlanması və hərbi bloklar (NATO və Varşava Müqaviləsi)",
+          "Böhranlar dövrü: Berlin və Karib böhranları, Koreya və Vyetnam müharibələri",
+          "Müstəmləkə sisteminin dağılması və \"Üçüncü dünya\" ölkələri",
+          "Sosializm düşərgəsinin böhranı və SSRİ-nin süqutu",
+          "Şərqi Avropada \"Məxməri inqilablar\" və Almaniyanın birləşməsi"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "V BÖLMƏ. Müasir dövr və Qloballaşma",
+        "topics": [
+          "Birqütblü dünyadan çoxqütblü dünyaya keçid",
+          "Avropa İttifaqı və qlobal iqtisadi inteqrasiya",
+          "Müasir dövrdə Yaxın Şərq və beynəlxalq terrorizmlə mübarizə",
+          "Müasir dünyada elm, texnika və informasiya cəmiyyəti",
+          "Qlobal ekoloji problemlər və sivilizasiyaların dialoqu"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  },
+  "Ədəbiyyat 11": {
+    "textbook_id": "edebiyyat-11",
+    "existing_in_db": [
+      "Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
+      "Cəlil Məmmədquluzadə. Anamın kitabı",
+      "Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
+      "Mirzə Ələkbər Sabir. Neylərdin, ilahi?!",
+      "Hüseyn Cavid. Həyatı və yaradıcılıq yolu",
+      "Hüseyn Cavid. İblis",
+      "Əhməd Cavad. Həyatı və yaradıcılıq yolu",
+      "Əhməd Cavad. Səsli qız",
+      "Məhəmmədhüseyn Şəhriyar. Həyatı və yaradıcılıq yolu",
+      "Məhəmmədhüseyn Şəhriyar. Türkün dili"
+    ],
+    "full_chapters": [
+      {
+        "chapter_name": "I HİSSƏ. XX əsrin əvvəlləri Azərbaycan ədəbiyyatı",
+        "topics": [
+          "Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
+          "Cəlil Məmmədquluzadə. Anamın kitabı",
+          "Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
+          "Mirzə Ələkbər Sabir. Neylərdin, ilahi?!",
+          "Hüseyn Cavid. Həyatı və yaradıcılıq yolu",
+          "Hüseyn Cavid. İblis",
+          "Əhməd Cavad. Həyatı və yaradıcılıq yolu",
+          "Əhməd Cavad. Səsli qız",
+          "Məhəmmədhüseyn Şəhriyar. Həyatı və yaradıcılıq yolu",
+          "Məhəmmədhüseyn Şəhriyar. Türkün dili"
+        ],
+        "status": "COMPLETED"
+      },
+      {
+        "chapter_name": "II HİSSƏ. 1920–1960-cı illər Azərbaycan ədəbiyyatı",
+        "topics": [
+          "Cəfər Cabbarlı: Həyatı, yaradıcılığı və \"Oqtay Eloğlu\" dramı",
+          "Səməd Vurğun: Həyatı, yaradıcılığı və \"Vaqif\" mənzum dramı",
+          "Mikayıl Müşfiq: Həyatı, lirikası və \"Yenə o bağ olaydı\"",
+          "Mehdi Hüseyn və Mir Cəlal yaradıcılığı",
+          "İkinci Dünya müharibəsi dövrü və müharibədən sonrakı illər ədəbiyyatı"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "III HİSSƏ. 1960–1990-cı illər Azərbaycan ədəbiyyatı (\"Altmışıncılar\")",
+        "topics": [
+          "İsmayıl Şıxlı: Həyatı, yaradıcılığı və \"Dəli Kür\" romanı",
+          "İlyas Əfəndiyev: Həyatı, dramaturgiyası və \"Xurşidbanu Natəvan\" pyesi",
+          "Bəxtiyar Vahabzadə: Həyatı, fəlsəfi lirikası və \"Gülüstan\" poeması",
+          "Xəlil Rza Ulutürk: Həyatı, azadlıq şeirləri və \"Davam edir 37\"",
+          "Məmməd Araz və Əli Kərim poeziyası",
+          "İsa Muğanna, Anar və Elçin nəsri"
+        ],
+        "status": "PENDING_GENERATION"
+      },
+      {
+        "chapter_name": "IV HİSSƏ. Cənubi Azərbaycan və Müstəqillik dövrü ədəbiyyatı",
+        "topics": [
+          "Məhəmmədhüseyn Şəhriyar: Həyatı, yaradıcılığı və \"Heydərbabaya salam\" poeması",
+          "Sahənd və digər Cənubi Azərbaycan şairlərinin yaradıcılığı",
+          "Müstəqillik dövrü Azərbaycan ədəbiyyatı: Mövzu və janr axtarışları",
+          "Qarabağ müharibəsi və Vətən mövzusu müasir ədəbiyyatda",
+          "Yekun ümumiləşdirici ədəbiyyat nəzəriyyəsi və təhlil testləri"
+        ],
+        "status": "PENDING_GENERATION"
+      }
+    ]
+  }
+}

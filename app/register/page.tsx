@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BookOpen, ArrowLeft, Loader2, Info, MapPin, Users, GraduationCap } from "lucide-react"
+import { BookOpen, ArrowLeft, Loader2, Info, MapPin, Users, GraduationCap, Lock, AlertTriangle } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -26,6 +26,7 @@ import RegionBackground from "@/components/region-background"
 import RegionFactsModal from "@/components/region-facts-modal"
 import { getRegionInfo } from "@/lib/region-symbols"
 import { hasSubRegions, getSubRegions } from "@/lib/region-hierarchy"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 const regions = [
   "Bakı",
@@ -98,9 +99,9 @@ const regions = [
 const classes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
 
 const roles = [
-  { value: "parent", label: "Valideyn", icon: "👨‍👩‍👧‍👦" },
-  { value: "teacher", label: "Müəllim", icon: "👨‍🏫" },
-  { value: "director", label: "Məktəb Direktoru", icon: "👔" },
+  { value: "parent", label: "Valideyn", icon: "👨‍👩‍👧‍👦", restricted: false },
+  { value: "teacher", label: "Müəllim (Tezliklə)", icon: "👨‍🏫", restricted: true },
+  { value: "director", label: "Məktəb Direktoru (Tezliklə)", icon: "👔", restricted: true },
 ]
 
 export default function RegisterPage() {
@@ -187,6 +188,15 @@ export default function RegisterPage() {
   }
 
   const onParentSubmit = async (data: ParentRegistrationData) => {
+    if (data.role === "teacher" || data.role === "director") {
+      toast({
+        title: "Müvəqqəti Məhdudiyyət 🚧",
+        description: "Müəllim və Direktor qeydiyyatı hazırda texniki təkmilləşdirmə mərhələsindədir. Çox tezliklə istifadəyə veriləcək.",
+        variant: "destructive",
+      })
+      return
+    }
+
     setIsLoading(true)
 
     try {
@@ -280,39 +290,56 @@ export default function RegisterPage() {
 
   return (
     <RegionBackground region={selectedRegion} theme={theme.colorScheme}>
-      <div className="min-h-screen py-8">
-        <div className="max-w-4xl mx-auto px-4">
-          {/* Header */}
-          <div className="flex items-center mb-8">
-            <Link href="/" className={`flex items-center ${themeClasses.text} hover:opacity-80`}>
-              <ArrowLeft className="h-5 w-5 mr-2" />
-              Geri
-            </Link>
+      <div className="min-h-screen py-8 px-3 sm:px-6 flex justify-center items-start">
+        <div className="w-full max-w-[1600px] mx-auto flex justify-center items-start gap-6">
+          
+          {/* Sol Reklam Bloku */}
+          <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+            <AdBanner
+              slot="register-sidebar-left"
+              format="vertical"
+              refreshKey="reg-left"
+              label="Tövsiyə Olunan Təhsil"
+            />
+          </aside>
 
+          {/* Mərkəzi Qeydiyyat Sahəsi */}
+          <main className="w-full flex-1 max-w-4xl space-y-6">
+            {/* Header */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/90 backdrop-blur-sm p-4 sm:p-5 rounded-2xl border border-white/60 shadow-sm">
+              <Link href="/" className={`flex items-center ${themeClasses.text} hover:opacity-80 font-semibold text-sm`}>
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Ana səhifə
+              </Link>
 
-
-
-            <div className="flex items-center ml-8">
-              <div className="relative h-10 w-10 mr-3">
-                <Image
-                  src="/logo.jpg"
-                  alt="EduTest AZ Logo"
-                  fill
-                  className="object-contain rounded-md"
-                />
+              <div className="flex items-center gap-3">
+                <div className="relative h-16 w-16 p-1 rounded-2xl bg-white shadow-md border-2 border-primary/20 overflow-hidden">
+                  <Image
+                    src="/logo.jpg"
+                    alt="EduTest AZ Logo"
+                    fill
+                    className="object-contain rounded-xl p-0.5"
+                    priority
+                  />
+                </div>
+                <div className="text-left">
+                  <h1 className="text-2xl font-extrabold text-gray-900 leading-tight">EduTest AZ</h1>
+                </div>
               </div>
-              <h1 className="text-2xl font-bold text-gray-900">EduTest AZ</h1>
-            </div>
-          </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Theme Selector */}
-            <div className="lg:col-span-1">
-              <ThemeSelector selectedTheme={theme.colorScheme} onThemeChange={handleThemeChange} />
+              <Link href="/login" className="text-sm font-bold text-primary hover:underline">
+                Artıq hesabınız var? Giriş
+              </Link>
             </div>
 
-            {/* Registration Form */}
-            <div className="lg:col-span-2">
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Theme Selector */}
+              <div className="lg:col-span-1">
+                <ThemeSelector selectedTheme={theme.colorScheme} onThemeChange={handleThemeChange} />
+              </div>
+
+              {/* Registration Form */}
+              <div className="lg:col-span-2">
               <Card className="backdrop-blur-sm bg-white/95">
                 <CardHeader>
                   <CardTitle className="text-2xl text-center">Qeydiyyat</CardTitle>
@@ -595,6 +622,12 @@ export default function RegisterPage() {
                               ))}
                             </SelectContent>
                           </Select>
+                          {parentForm.watch("role") && (parentForm.watch("role") === "teacher" || parentForm.watch("role") === "director") && (
+                            <div className="mt-2 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-800 flex items-center gap-2 animate-in fade-in">
+                              <AlertTriangle className="h-4 w-4 shrink-0 text-amber-600" />
+                              <span>Müəllim və Direktor qeydiyyatı hazırda texniki hazırlıq mərhələsindədir. Çox tezliklə aktiv olacaq.</span>
+                            </div>
+                          )}
                           {parentForm.formState.errors.role && (
                             <p className="text-red-500 text-sm mt-1">{parentForm.formState.errors.role.message}</p>
                           )}
@@ -775,8 +808,20 @@ export default function RegisterPage() {
               </Card>
             </div>
           </div>
-        </div>
+        </main>
+
+        {/* Sağ Reklam Bloku */}
+        <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+          <AdBanner
+            slot="register-sidebar-right"
+            format="vertical"
+            refreshKey="reg-right"
+            label="Sponsorlu Elanlar"
+          />
+        </aside>
+
       </div>
-    </RegionBackground>
+    </div>
+  </RegionBackground>
   )
 }

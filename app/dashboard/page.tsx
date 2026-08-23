@@ -17,6 +17,7 @@ import { MessagesTab } from "@/components/messages-tab"
 import { TextbookViewer } from "@/components/textbook-viewer"
 import { PdfViewer } from "@/components/pdf-viewer"
 import { RegionModal } from "@/components/region-modal"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 interface Topic {
   title: string;
@@ -582,93 +583,31 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
 
-                {/* Recent Activity Mock */}
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm">
-                  <h3 className="text-lg font-bold mb-4">Son Nəticələr</h3>
-                  <div className="space-y-4">
-                    {[1, 2, 3].map((i) => (
-                      <div key={i} className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
-                        <div className="flex items-center gap-4">
-                          <div className={`w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 text-xl`}>{i === 1 ? "📚" : i === 2 ? "📐" : "🌍"}</div>
-                          <div>
-                            <h4 className="font-medium text-gray-900">{i === 1 ? "Azərbaycan dili" : i === 2 ? "Riyaziyyat" : "Coğrafiya"}</h4>
-                            <p className="text-sm text-gray-500">{new Date().toLocaleDateString()}</p>
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <span className="block font-bold text-lg text-green-600">{85 + i * 2}%</span>
-                          <span className="text-xs text-gray-400">15 sual</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                {/* Dashboard Alt Reklam Bloku (Qırmızı çərçivəyə alınan Son Nəticələr sahəsi) */}
+                <div className="pt-2">
+                  <AdBanner
+                    slot="dashboard-bottom-banner"
+                    format="large-banner"
+                    refreshKey="dashboard-bottom"
+                    label="Tövsiyə Olunan Təhsil Təklifi və Hazırlıq Proqramı"
+                  />
                 </div>
               </div>
 
-              {/* Right Column - Stats */}
+              {/* Right Column - Reklam Paneli (Qırmızı çərçivəyə alınan Sağ Statistika sahəsi) */}
               <div className="space-y-6">
-                <Card className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none shadow-xl">
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-medium opacity-90 mb-1">Ümumi Bal</h3>
-                    <div className="text-4xl font-bold mb-4">2,450</div>
-                    <div className="flex items-center gap-2 text-sm opacity-80">
-                      <span className="bg-white/20 px-2 py-1 rounded">🏆 Top 5%</span>
-                      <span>Bu ay +350</span>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <Card className="bg-white/80 backdrop-blur-sm border-none shadow-sm">
-                    <CardContent className="p-4 text-center">
-                      <div className="text-2xl mb-2">✅</div>
-                      <div className="text-2xl font-bold text-gray-900">45</div>
-                      <div className="text-xs text-gray-500">Testlər</div>
-                    </CardContent>
-                  </Card>
-                  <Card className="bg-white/80 backdrop-blur-sm border-none shadow-sm">
-                    <CardContent className="p-4 text-center">
-                      <div className="text-2xl mb-2">🔥</div>
-                      <div className="text-2xl font-bold text-gray-900">12</div>
-                      <div className="text-xs text-gray-5">Gün ardıcıl</div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <Card className="bg-white/80 backdrop-blur-sm border-none shadow-sm">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold mb-4">Güclü tərəflər</h3>
-                    <div className="space-y-3">
-                      <div>
-                        <div className="flex justify-between text-sm mb-1">
-                          <span>Tarix</span>
-                          <span className="font-medium">92%</span>
-                        </div>
-                        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                          <div className="h-full bg-green-500 w-[92%]"></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-sm mb-1">
-                          <span>Ədəbiyyat</span>
-                          <span className="font-medium">88%</span>
-                        </div>
-                        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                          <div className="h-full bg-blue-500 w-[88%]"></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-sm mb-1">
-                          <span>Coğrafiya</span>
-                          <span className="font-medium">75%</span>
-                        </div>
-                        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                          <div className="h-full bg-yellow-500 w-[75%]"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <AdBanner
+                  slot="dashboard-sidebar-top"
+                  format="vertical"
+                  refreshKey="dashboard-right-1"
+                  label="DİM & Olimpiada Hazırlığı"
+                />
+                <AdBanner
+                  slot="dashboard-sidebar-bottom"
+                  format="vertical"
+                  refreshKey="dashboard-right-2"
+                  label="Xarici Dillər & İT Kursları"
+                />
               </div>
             </div>
           )}

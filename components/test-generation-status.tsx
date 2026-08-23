@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Brain, Zap, Target, Clock, BookOpen, X } from "lucide-react"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 interface TestConfig {
   textbook: string
@@ -75,149 +76,183 @@ export default function TestGenerationStatus({ config, onCancel }: TestGeneratio
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <Card className="w-full max-w-2xl">
-        <CardHeader>
-          <div className="flex justify-between items-start">
-            <div>
-              <CardTitle className="flex items-center">
-                <Brain className="h-6 w-6 text-purple-600 mr-2" />
-                AI Test Yaradılır
-              </CardTitle>
-              <p className="text-gray-600 mt-1">
-                {config.textbook} - {config.topic}
-              </p>
-            </div>
-            <Button variant="ghost" size="sm" onClick={onCancel}>
-              <X className="h-4 w-4" />
-            </Button>
-          </div>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          {/* Test Konfiqurasiyası */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-gray-50 rounded-lg">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">{config.questionCount}</div>
-              <div className="text-sm text-gray-600">Sual</div>
-            </div>
-            <div className="text-center">
-              <Badge className={getDifficultyColor(config.difficulty)}>
-                {config.difficulty.charAt(0).toUpperCase() + config.difficulty.slice(1)}
-              </Badge>
-              <div className="text-sm text-gray-600 mt-1">Çətinlik</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-600">{config.timeLimit}</div>
-              <div className="text-sm text-gray-600">Dəqiqə</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600">{config.class}</div>
-              <div className="text-sm text-gray-600">Sinif</div>
-            </div>
-          </div>
+    <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10 py-6 px-3 sm:px-6 flex justify-center items-start">
+      <div className="w-full max-w-[1600px] mx-auto flex justify-center items-start gap-6">
+        
+        {/* Sol Reklam Bloku (Test yaradılarkən) */}
+        <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+          <AdBanner
+            slot="gen-sidebar-left"
+            format="vertical"
+            refreshKey="gen-left"
+            label="Tövsiyə Olunan Təhsil"
+          />
+        </aside>
 
-          {/* Progress */}
-          <div className="space-y-4">
-            <div className="flex justify-between text-sm">
-              <span>Test Yaradılma Gedişatı</span>
-              <span>{Math.round(progress)}%</span>
-            </div>
-            <Progress value={progress} className="w-full" />
-          </div>
-
-          {/* Steps */}
-          <div className="space-y-3">
-            {steps.map((step, index) => {
-              const Icon = step.icon
-              const isActive = index === currentStep
-              const isCompleted = index < currentStep
-
-              return (
-                <div
-                  key={index}
-                  className={`flex items-center p-3 rounded-lg transition-all ${
-                    isActive
-                      ? "bg-blue-50 border border-blue-200"
-                      : isCompleted
-                        ? "bg-green-50 border border-green-200"
-                        : "bg-gray-50"
-                  }`}
-                >
-                  <div
-                    className={`flex items-center justify-center w-8 h-8 rounded-full mr-3 ${
-                      isActive
-                        ? "bg-blue-600 text-white"
-                        : isCompleted
-                          ? "bg-green-600 text-white"
-                          : "bg-gray-300 text-gray-600"
-                    }`}
-                  >
-                    <Icon className="h-4 w-4" />
-                  </div>
-                  <div className="flex-1">
-                    <div
-                      className={`font-medium ${isActive ? "text-blue-900" : isCompleted ? "text-green-900" : "text-gray-700"}`}
-                    >
-                      {step.name}
-                    </div>
-                    <div
-                      className={`text-sm ${isActive ? "text-blue-700" : isCompleted ? "text-green-700" : "text-gray-500"}`}
-                    >
-                      {step.description}
-                    </div>
-                  </div>
-                  {isActive && (
-                    <div className="ml-3">
-                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
-                    </div>
-                  )}
-                  {isCompleted && (
-                    <div className="ml-3">
-                      <div className="text-green-600">✓</div>
-                    </div>
-                  )}
+        {/* Mərkəzi AI Test Yaradılır Kartı */}
+        <main className="w-full flex-1 max-w-4xl space-y-6">
+          <Card className="shadow-md border-border/80">
+            <CardHeader className="pb-3 border-b border-border/40">
+              <div className="flex justify-between items-start">
+                <div>
+                  <CardTitle className="flex items-center text-xl font-bold">
+                    <Brain className="h-6 w-6 text-purple-600 mr-2" />
+                    AI Test Yaradılır
+                  </CardTitle>
+                  <p className="text-gray-600 mt-1 text-sm">
+                    {config.textbook} - {config.topic}
+                  </p>
                 </div>
-              )
-            })}
-          </div>
-
-          {/* Çətinlik Bölgüsü (qarışıq səviyyə üçün) */}
-          {config.difficulty === "qarışıq" && (
-            <div className="p-4 bg-purple-50 rounded-lg">
-              <h4 className="font-medium mb-3 flex items-center">
-                <Target className="h-4 w-4 mr-2" />
-                Çətinlik Bölgüsü
-              </h4>
-              <div className="grid grid-cols-3 gap-4 text-sm">
+                <Button variant="ghost" size="sm" onClick={onCancel}>
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-6 space-y-6">
+              {/* Test Konfiqurasiyası */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-muted/30 rounded-2xl border border-border/50">
                 <div className="text-center">
-                  <div className="text-green-600 font-bold text-lg">{Math.ceil(config.questionCount * 0.3)}</div>
-                  <div className="text-gray-600">Sadə Suallar</div>
-                  <div className="text-xs text-gray-500">30%</div>
+                  <div className="text-2xl font-bold text-primary">{config.questionCount}</div>
+                  <div className="text-xs text-muted-foreground mt-1 font-medium">Sual Sayı</div>
+                </div>
+                <div className="text-center flex flex-col items-center justify-center">
+                  <Badge className={`${getDifficultyColor(config.difficulty)} font-bold text-xs py-1 px-3`}>
+                    {config.difficulty.charAt(0).toUpperCase() + config.difficulty.slice(1)}
+                  </Badge>
+                  <div className="text-xs text-muted-foreground mt-1 font-medium">Çətinlik</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-yellow-600 font-bold text-lg">{Math.ceil(config.questionCount * 0.5)}</div>
-                  <div className="text-gray-600">Orta Suallar</div>
-                  <div className="text-xs text-gray-500">50%</div>
+                  <div className="text-2xl font-bold text-green-600">{config.timeLimit}</div>
+                  <div className="text-xs text-muted-foreground mt-1 font-medium">Dəqiqə</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-red-600 font-bold text-lg">
-                    {config.questionCount -
-                      Math.ceil(config.questionCount * 0.3) -
-                      Math.ceil(config.questionCount * 0.5)}
-                  </div>
-                  <div className="text-gray-600">Çətin Suallar</div>
-                  <div className="text-xs text-gray-500">20%</div>
+                  <div className="text-2xl font-bold text-purple-600">{config.class}</div>
+                  <div className="text-xs text-muted-foreground mt-1 font-medium">Sinif</div>
                 </div>
               </div>
-            </div>
-          )}
 
-          <div className="text-center text-sm text-gray-600">
-            <Clock className="h-4 w-4 inline mr-1" />
-            Təxminən 30-60 saniyə çəkəcək
-          </div>
-        </CardContent>
-      </Card>
+              {/* Progress */}
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs sm:text-sm font-medium text-gray-600">
+                  <span>Test Yaradılma Gedişatı</span>
+                  <span className="font-bold text-primary">{Math.round(progress)}%</span>
+                </div>
+                <Progress value={progress} className="w-full h-2.5" />
+              </div>
+
+              {/* Steps */}
+              <div className="space-y-3">
+                {steps.map((step, index) => {
+                  const Icon = step.icon
+                  const isActive = index === currentStep
+                  const isCompleted = index < currentStep
+
+                  return (
+                    <div
+                      key={index}
+                      className={`flex items-center p-3.5 rounded-xl border transition-all ${
+                        isActive
+                          ? "bg-blue-50/80 border-blue-200 shadow-xs"
+                          : isCompleted
+                            ? "bg-green-50/80 border-green-200"
+                            : "bg-muted/20 border-border/40"
+                      }`}
+                    >
+                      <div
+                        className={`flex items-center justify-center w-8 h-8 rounded-full mr-3 shrink-0 ${
+                          isActive
+                            ? "bg-blue-600 text-white"
+                            : isCompleted
+                              ? "bg-green-600 text-white"
+                              : "bg-gray-200 text-gray-600"
+                        }`}
+                      >
+                        <Icon className="h-4 w-4" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div
+                          className={`font-semibold text-sm ${isActive ? "text-blue-900" : isCompleted ? "text-green-900" : "text-gray-700"}`}
+                        >
+                          {step.name}
+                        </div>
+                        <div
+                          className={`text-xs ${isActive ? "text-blue-700" : isCompleted ? "text-green-700" : "text-gray-500"}`}
+                        >
+                          {step.description}
+                        </div>
+                      </div>
+                      {isActive && (
+                        <div className="ml-3 shrink-0">
+                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+                        </div>
+                      )}
+                      {isCompleted && (
+                        <div className="ml-3 shrink-0 font-bold text-green-600">
+                          ✓
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Çətinlik Bölgüsü (qarışıq səviyyə üçün) */}
+              {config.difficulty === "qarışıq" && (
+                <div className="p-4 bg-purple-50/60 rounded-xl border border-purple-100">
+                  <h4 className="font-semibold text-sm mb-3 flex items-center text-purple-900">
+                    <Target className="h-4 w-4 mr-2 text-purple-600" />
+                    Çətinlik Bölgüsü
+                  </h4>
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div className="p-2 bg-white rounded-lg border border-purple-100">
+                      <div className="text-green-600 font-bold text-base">{Math.ceil(config.questionCount * 0.3)}</div>
+                      <div className="text-xs text-gray-500">Sadə (30%)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-purple-100">
+                      <div className="text-yellow-600 font-bold text-base">{Math.ceil(config.questionCount * 0.5)}</div>
+                      <div className="text-xs text-gray-500">Orta (50%)</div>
+                    </div>
+                    <div className="p-2 bg-white rounded-lg border border-purple-100">
+                      <div className="text-red-600 font-bold text-base">
+                        {config.questionCount -
+                          Math.ceil(config.questionCount * 0.3) -
+                          Math.ceil(config.questionCount * 0.5)}
+                      </div>
+                      <div className="text-xs text-gray-500">Çətin (20%)</div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Reklam Bloku (Test Yaradılarkən Alt Banner) */}
+              <div className="pt-2">
+                <AdBanner
+                  slot="gen-bottom-banner"
+                  format="large-banner"
+                  refreshKey="gen-banner"
+                  label="Xüsusi Təhsil Təklifi və Endirim Kampaniyası"
+                />
+              </div>
+
+              <div className="text-center text-xs text-muted-foreground pt-1">
+                <Clock className="h-3.5 w-3.5 inline mr-1" />
+                Süni intellekt dərslik əsasında sualları hazırlayır (təxminən 5-15 saniyə)
+              </div>
+            </CardContent>
+          </Card>
+        </main>
+
+        {/* Sağ Reklam Bloku (Test yaradılarkən) */}
+        <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+          <AdBanner
+            slot="gen-sidebar-right"
+            format="vertical"
+            refreshKey="gen-right"
+            label="Sponsorlu Elanlar"
+          />
+        </aside>
+
+      </div>
     </div>
   )
 }
