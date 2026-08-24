@@ -35,17 +35,10 @@ interface TestConfig {
   timeLimit: number
 }
 
-const cleanFormattedText = (text: string): string => {
-  if (!text || typeof text !== "string") return text || "";
-  return text
-    .replace(/\$([^\$]+)\$/g, "$1")
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/^\s*\*\s+/gm, "")
-    .replace(/\\cdot/g, "·")
-    .replace(/\\times/g, "×")
-    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1 / $2")
-    .replace(/\{([^}]+)\}/g, "$1")
-    .trim();
+import { formatScientificText } from "@/lib/format-math"
+
+const cleanFormattedText = (text: any): string => {
+  return formatScientificText(text)
 };
 
 export default function TestPage() {

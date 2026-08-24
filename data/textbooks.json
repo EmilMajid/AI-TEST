@@ -1756,7 +1756,168 @@
       "e_derslik_id": "726",
       "path": "/textbooks/10/azerbaycan-dili-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/azerbaycan-dili-10",
-      "topics": "1-ci bölmə: DİL VƏ CƏMİYYƏT\n1. Dil\n2. Cəmi 40 söz\n3. Hər şey su ilə başladı\n4. Bəşəriyyətin yaddaşı - yazı\n5. Arzum jurnalist olmaq idi\n\n2-ci bölmə: TƏBİƏT VƏ BİZ\n1. Muğan\n2. Şollar su kəməri\n3. Xəzər dənizi\n4. Çinarın şikayəti\n5. Birlik\n6. Şəhidlər\n\n3-cü bölmə: AİLƏ VƏ CƏMİYYƏT\n1. Sevgi ağacı\n2. \"Sən\" dili əvəzinə, \"mən\" dili\n3. Məndən ötdü, qardaşıma dəydi\n4. Dua edən əllər\n5. Mirzə Səfər\n\n4-cü bölmə: MİLLİ İRSİMİZ\n1. \"Tarix və Mədəniyyət Abidələrinin Qorunması haqqında\" Azərbaycan Respublikasının Qanunu\n2. Vatikandan gələn var\n3. Əsir ağacın hekayəti\n4. Azərbaycan mədəniyyət inciləri Fransada\n5. Bahar nəğmələri\n6. İldırımlı yollarla\n7. Azərbaycanın milli geyimləri"
+      "topics": [
+        "1. Dil",
+        "2. Cəmi 40 söz",
+        "3. Hər şey su ilə başladı",
+        "4. Bəşəriyyətin yaddaşı - yazı",
+        "5. Arzum jurnalist olmaq idi",
+        "1. Muğan",
+        "2. Şollar su kəməri",
+        "3. Xəzər dənizi",
+        "4. Çinarın şikayəti",
+        "5. Birlik",
+        "6. Şəhidlər",
+        "1. Sevgi ağacı",
+        "2. Sən dili əvəzinə mən dili",
+        "3. Məndən ötdü qardaşıma dəydi",
+        "4. Dua edən əllər",
+        "5. Mirzə Səfər",
+        "1. Tarix və Mədəniyyət Abidələrinin Qorunması haqqında Qanun",
+        "2. Vatikandan gələn var",
+        "3. Əsir ağacın hekayəti",
+        "4. Azərbaycan mədəniyyət inciləri Fransada",
+        "5. Bahar nəğmələri",
+        "6. İldırımlı yollarla",
+        "7. Azərbaycanın milli geyimləri"
+      ],
+      "chapters": [
+        {
+          "chapter": "1-ci bölmə: DİL VƏ CƏMİYYƏT",
+          "topics": [
+            {
+              "title": "1. Dil",
+              "page": 8,
+              "path": ""
+            },
+            {
+              "title": "2. Cəmi 40 söz",
+              "page": 16,
+              "path": ""
+            },
+            {
+              "title": "3. Hər şey su ilə başladı",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "4. Bəşəriyyətin yaddaşı - yazı",
+              "page": 32,
+              "path": ""
+            },
+            {
+              "title": "5. Arzum jurnalist olmaq idi",
+              "page": 40,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "2-ci bölmə: TƏBİƏT VƏ BİZ",
+          "topics": [
+            {
+              "title": "1. Muğan",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "2. Şollar su kəməri",
+              "page": 56,
+              "path": ""
+            },
+            {
+              "title": "3. Xəzər dənizi",
+              "page": 64,
+              "path": ""
+            },
+            {
+              "title": "4. Çinarın şikayəti",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "5. Birlik",
+              "page": 80,
+              "path": ""
+            },
+            {
+              "title": "6. Şəhidlər",
+              "page": 88,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "3-cü bölmə: AİLƏ VƏ CƏMİYYƏT",
+          "topics": [
+            {
+              "title": "1. Sevgi ağacı",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "2. \"Sən\" dili əvəzinə, \"mən\" dili",
+              "page": 104,
+              "path": ""
+            },
+            {
+              "title": "3. Məndən ötdü, qardaşıma dəydi",
+              "page": 112,
+              "path": ""
+            },
+            {
+              "title": "4. Dua edən əllər",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "5. Mirzə Səfər",
+              "page": 128,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "4-cü bölmə: MİLLİ İRSİMİZ",
+          "topics": [
+            {
+              "title": "1. Tarix və Mədəniyyət Abidələrinin Qorunması haqqında Qanun",
+              "page": 136,
+              "path": ""
+            },
+            {
+              "title": "2. Vatikandan gələn var",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "3. Əsir ağacın hekayəti",
+              "page": 152,
+              "path": ""
+            },
+            {
+              "title": "4. Azərbaycan mədəniyyət inciləri Fransada",
+              "page": 160,
+              "path": ""
+            },
+            {
+              "title": "5. Bahar nəğmələri",
+              "page": 168,
+              "path": ""
+            },
+            {
+              "title": "6. İldırımlı yollarla",
+              "page": 176,
+              "path": ""
+            },
+            {
+              "title": "7. Azərbaycanın milli geyimləri",
+              "page": 184,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "biologiya-10",
@@ -1766,7 +1927,257 @@
       "e_derslik_id": "727",
       "path": "/textbooks/10/biologiya-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/biologiya-10",
-      "topics": "1. Canlılarda qidalanma\n2. Canlılarda tənəffüs\n3. Canlılarda ifrazat\n4. Canlılarda çoxalma\n5. Canlılarda qıcıqlanma\n6. Üzvi maddə istehsalçıları\n7. Zülal biosintezinin mexanizmi\n8. Hüceyrənin enerji mənbəyi - ATF\n9. Energetik mübadilənin mexanizmi\n10. Fotosintezin mexanizmi\n11. Xemosintez\n1. Canlılarda baş verən mövsüm dəyişkənlikləri. Fotoperiodizm\n2. Modifikasiya dəyişkənliyi\n3. Mutasiya irsi dəyişkənlikdir\n4. Kombinativ və korelyativ dəyişkənlik\n1. Maddələr mübadiləsi\n2. Maddələr mübadiləsinə təsir edən amillər\n3. Maddələr mübadiləsində baş verən dəyişikliklər\n4. Canlılara təsir edən abiotik amillər\n5. Ali sinir fəaliyyətinin pozulması və onun qarşısının alınması\n6. Hərəkət sağlamlıqdır\n7. Düzgün istirahət"
+      "topics": [
+        "1. Canlıların əsas xassələri və həyatın təşkil səviyyələri",
+        "2. Canlılarda qidalanma tipləri: Avtotrof və Heterotrof qidalanma",
+        "3. Canlılarda tənəffüs və qazlar mübadiləsi",
+        "4. Canlılarda maddələrin daşınması və qan-damar sistemi",
+        "5. Canlılarda ifrazat prosesi və orqanları",
+        "6. Canlılarda hərəkət, dayaq və qıcıqlanma",
+        "7. Qeyri-cinsi çoxalma formaları",
+        "8. Cinsi çoxalma və Qametogenez (Meyoz, spermatogenez, oogenez)",
+        "9. Mayalanma və Partenogenez",
+        "10. Embrional inkişaf (Embriogenez: blastula, qastrula, neyrula, rüşeym vərəqələri)",
+        "11. Postembrional inkişaf və Çevrilmə (Metamorfoz)",
+        "12. Hüceyrənin qeyri-üzvi maddələri: Su və mineral duzlar",
+        "13. Karbohidratlar və Lipidlər: Quruluşu və bioloji funksiyaları",
+        "14. Zülallar: Quruluş səviyyələri, xassələri və funksiyaları. Fermentlər",
+        "15. Nuklein turşuları: DNT və RNT (quruluşu, növləri və Komplementarlıq prinsipi)",
+        "16. Hüceyrənin enerji mənbəyi: ATF-in quruluşu və funksiyası",
+        "17. Maddələr mübadiləsi: Anabolizm (Assimilasiya) və Katabolizm (Dissimilasiya)",
+        "18. Zülal biosintezi: Genetik kod, Transkripsiya və Translyasiya",
+        "19. Fotosintez: İşıq və qaranlıq mərhələləri, bioloji əhəmiyyəti",
+        "20. Xemosintez (Nitrifikasiya, kükürd, dəmir və hidrogen bakteriyaları)",
+        "21. Energetik mübadilə: Qlikoliz və Oksigenli parçalanma (Krebs tsikli)",
+        "22. Genetikanın əsas anlayışları və Simvolları",
+        "23. Q.Mendelin I və II qanunları (Monohibrid çarpazlaşma, tam və natamam dominantlıq)",
+        "24. Q.Mendelin III qanunu (Dihibrid çarpazlaşma və Əlamətlərin sərbəst paylanması)",
+        "25. T.Morqanın ilişikli irsiyyət qanunu və Xromosom nəzəriyyəsi. Krossinqover",
+        "26. Cinsiyyətin genetikası və Cinsiyyətlə ilişikli irsiyyət",
+        "27. Dəyişkənliyin formaları: Modifikasiya, Mutasiyalar və Kombinativ dəyişkənlik",
+        "28. İnsan genetikası və İrsi xəstəliklər",
+        "29. Seleksiyanın əsasları: Süni seçmə və Hibridləşmə metodları",
+        "30. Biotexnologiya və Gen/Hüceyrə mühəndisliyi",
+        "31. Ekoloji amillər (Abiotik, biotik, antropogen) və Ekoloji qaydalar",
+        "32. Fotoperiodizm və Canlıların mövsümi uyğunlaşmaları"
+      ],
+      "chapters": [
+        {
+          "chapter": "I. Biosferdə istehsal və istehlak",
+          "topics": [
+            {
+              "title": "1. Canlılarda qidalanma",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. Canlılarda tənəffüs",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Canlılarda ifrazat",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Canlılarda çoxalma",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "5. Canlılarda qıcıqlanma",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "6. Üzvi maddə istehsalçıları",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "7. Zülal biosintezinin mexanizmi",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "8. Hüceyrənin enerji mənbəyi - ATF",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "9. Energetik mübadilənin mexanizmi",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. Fotosintezin mexanizmi",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "11. Xemosintez",
+              "page": 66,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II. Canlılarda baş verən dəyişkənliklər və Sağlam həyat",
+          "topics": [
+            {
+              "title": "1. Canlılarda baş verən mövsüm dəyişkənlikləri. Fotoperiodizm",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "2. Modifikasiya dəyişkənliyi",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "3. Mutasiya irsi dəyişkənlikdir",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "4. Kombinativ və korelyativ dəyişkənlik",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "5. Maddələr mübadiləsi",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "6. Maddələr mübadiləsinə təsir edən amillər",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "7. Maddələr mübadiləsində baş verən dəyişikliklər",
+              "page": 108,
+              "path": ""
+            },
+            {
+              "title": "8. Canlılara təsir edən abiotik amillər",
+              "page": 114,
+              "path": ""
+            },
+            {
+              "title": "9. Ali sinir fəaliyyətinin pozulması və profilaktikası",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "10. Hərəkət sağlamlıqdır və düzgün istirahət",
+              "page": 126,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III. Epidemiologiya və Yoluxucu xəstəliklər",
+          "topics": [
+            {
+              "title": "1. Epidemiologiya və epidemioloji üsullar",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "2. İnfeksiya mənbələri və yoluxma mexanizmi",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "3. Virus və bakterial xəstəliklər",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "4. Göbələk və ibtidai heyvanların törətdiyi xəstəliklər",
+              "page": 150,
+              "path": ""
+            },
+            {
+              "title": "5. Parazit qurdlar və buğumayaqlıların yaydığı xəstəliklər",
+              "page": 156,
+              "path": ""
+            },
+            {
+              "title": "6. Yoluxucu xəstəliklərə qarşı mübarizə",
+              "page": 162,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV. Üzvi aləmin təkamülü və Genetika",
+          "topics": [
+            {
+              "title": "1. Makrotəkamülü isbat edən dəlillər",
+              "page": 168,
+              "path": ""
+            },
+            {
+              "title": "2. Təkamülün istiqamətləri və yer üzərində canlıların inkişafı",
+              "page": 174,
+              "path": ""
+            },
+            {
+              "title": "3. İnsanın təkamülü və antropoloji dəlillər",
+              "page": 180,
+              "path": ""
+            },
+            {
+              "title": "4. Genetika: Monohibrid və dihibrid çarpazlaşma",
+              "page": 186,
+              "path": ""
+            },
+            {
+              "title": "5. İlişikli irsiyyət və cinsiyyətin genetikası",
+              "page": 192,
+              "path": ""
+            },
+            {
+              "title": "6. İnsan genetikası və tibb elmi",
+              "page": 198,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "V. Ətraf mühitin qorunması və Ekologiya",
+          "topics": [
+            {
+              "title": "1. Orqanizmlərin qarşılıqlı təsiri",
+              "page": 204,
+              "path": ""
+            },
+            {
+              "title": "2. Biomüxtəliflik və onun qorunması yolları",
+              "page": 210,
+              "path": ""
+            },
+            {
+              "title": "3. Qida zənciri və ekoloji piramida",
+              "page": 216,
+              "path": ""
+            },
+            {
+              "title": "4. Havanın çirklənməsi qlobal ekoloji problem kimi",
+              "page": 222,
+              "path": ""
+            },
+            {
+              "title": "5. Maddələr dövranı və biosferin qorunması",
+              "page": 228,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "cografiya-10",
@@ -1776,7 +2187,197 @@
       "e_derslik_id": "729",
       "path": "/textbooks/10/cografiya-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/cografiya-10",
-      "topics": "1. Coğrafiya təbiət elmləri sistemində\n2. Coğrafiya elminin tədqiqat metodları\n3. Kainat və Günəş sisteminin yaranması haqqında fərziyyələr. Diskussiya dərsi\n4. Yerin planetar inkişaf mərhələsi\n5. Yerin maqnetizmi\n6. Yerin forması və ölçüləri\n7. Yer səthində günəş şüalarının düşmə bucağının və vaxt fərqlərinin hesablanması. Praktik dərs\n8. Kartoqrafik proyeksiyalar və təhriflər\n9. Xəritə ümumiləşdirilmiş təsvirdir\n10. Miqyas və təhriflər. Praktik dərs\n11. Yerin geoloji inkişafı\n12. Qırışıqlıq vilayətləri və platformalar\n13. Dağəmələgəmə mərhələləri\n14. Azərbaycanın geoloji quruluşu\n15. Azərbaycanın endogen relyef formaları\n16. Azərbaycanın ekzogen relyef formaları\n17. Azərbaycanın faydalı qazıntıları və onların geoloji quruluşla əlaqəsi. Praktik dərs"
+      "topics": [
+        "1. Coğrafiya təbiət elmləri sistemində: fiziki və sosial-iqtisadi qolları, digər elmlərlə inteqrasiyası",
+        "2. Coğrafiya elminin ənənəvi və müasir tədqiqat metodları: kartoqrafik, çöl, statistik, riyazi, kosmik və Coğrafi İnformasiya Sistemləri (CİS)",
+        "3. Kainat və Günəş sisteminin yaranması haqqında fərziyyələr (Kant-Laplas, Şmidt, Böyük Partlayış / Big Bang)",
+        "4. Yerin planetar inkişaf mərhələsi və daxili quruluşu (Litosfer, Mantiya, Nüvə)",
+        "5. Yerin maqnetizmi, qütblər, maqnit sahəsi və onun qoruyucu funksiyası",
+        "6. Yerin forması, ölçüləri və onların coğrafi nəticələri (Geoid, Qütb və Ekvator radiusları)",
+        "7. Yerin öz oxu və Günəş ətrafında hərəkəti, Günəş şüalarının düşmə bucağı və vaxt fərqlərinin (yerli və qurşaq vaxtı) hesablanması",
+        "8. Kartoqrafik proyeksiyalar (silindrik, konus, azimutal), təhrif növləri və onların təyini",
+        "9. Coğrafiya xəritələri: miqyasına, məzmununa və təyinatına görə təsnifatı, kartoqrafik ümumiləşdirmə (generallaşdırma)",
+        "10. Miqyas, relyefin təsvir üsulları (horizontallar, berqştrixlər) və məsafə/hündürlük fərqinin hesablanması",
+        "11. Yerin geoloji inkişaf mərhələləri, geoxronoloji cədvəl, nisbi və mütləq yaş",
+        "12. Litosfer tavaları nəzəriyyəsi, rift dərələri, subduksiya və kolliziya zonaları",
+        "13. Qırışıqlıq vilayətləri, qədim və cavan platformalar, dağəmələgəlmə mərhələləri (Baykal, Kaledon, Hersin, Mezozoy, Alp)",
+        "14. Azərbaycanın geoloji quruluşu, tektonik zonaları və seysmikliyi",
+        "15. Azərbaycanın endogen relyef formaları: dağ silsilələri, çökəkliklər və vulkanik relyef",
+        "16. Azərbaycanın ekzogen relyef formaları: qravitasiya, flüvial, karst, arid-denudasiya, eol və qədim buzlaq relyefi",
+        "17. Azərbaycanın faydalı qazıntıları (filiz, qeyri-filiz, yanacaq-enerji) və onların geoloji quruluşla əlaqəsi",
+        "18. Günəş radiasiyası (düz, səpələnən, udulan, ümumi, albedo) və istilik balansı",
+        "19. Atmosfer sirkulyasiyası, hava kütlələri, daimi və fəsli küləklər (passatlar, qərb küləkləri, mussonlar)",
+        "20. İqliməmələgətirən amillər, iqlim qurşaqları və tiplərinin təsnifatı (Alisov təsnifatı)",
+        "21. Azərbaycanın iqlimi: radiasiya şəraiti, hava kütlələri və iqlim tiplərinin paylanması",
+        "22. Azərbaycanın aqroiqlim ehtiyatları, kənd təsərrüfatında istifadəsi və atmosferin qlobal ekoloji problemləri",
+        "23. Dünya okeanı: okean dibinin relyefi, suyun temperaturu və duzluluğu, su kütlələri və okean cərəyanları",
+        "24. Qurunun suları: çaylar, onların rejimi və qidalanması, çay şəbəkəsinin sıxlığı və meyilliyi",
+        "25. Azərbaycanın çayları: hövzələri, qidalanma mənbələri, su sərfi və hidroenerji ehtiyatları",
+        "26. Azərbaycanın gölləri, su anbarları, yeraltı suları və mineral-termal bulaqları",
+        "27. Xəzər dənizi: fiziki-coğrafi xarakteristikası, səviyyə tərəddüdləri, təbii ehtiyatları və ekoloji problemləri",
+        "28. Biosferin sərhədləri, canlı aləmin paylanması və qlobal biokütlənin xüsusiyyətləri",
+        "29. Torpaqəmələgəlmə amilləri, torpağın tərkibi, münbitliyi və dünya torpaq tiplərinin coğrafiyası",
+        "30. Azərbaycanın torpaq və bitki örtüyü: şaquli qurşaqlıq və torpaq tiplərinin paylanması",
+        "31. Coğrafi təbəqənin bütövlüyü, maddələr və enerji dövranı, ritmiklik və enlik zonallığı / şaquli qurşaqlıq qanunauyğunluqları",
+        "32. Dünya əhalisinin sayı, dinamikası, təbii artım tipləri və demoqrafik keçid mərhələləri",
+        "33. Dünya əhalisinin irqi, dil-ailəsi, cinsi-yaş və dini tərkibi",
+        "34. Əhalinin yerləşməsi, beynəlxalq miqrasiyalar və Urbanizasiya prosesi (aqlomerasiya, meqalopolis)",
+        "35. Azərbaycanın əhali dinamikası, təbii artımı, yaş-cins strukturu və milli tərkibi",
+        "36. Azərbaycanın şəhər və kənd məskunlaşması, urbanizasiya səviyyəsi və əmək ehtiyatları",
+        "37. Dünya təsərrüfatının inkişaf mərhələləri, strukturu və beynəlxalq coğrafi əmək bölgüsü",
+        "38. Dünya sənayesi və kənd təsərrüfatı coğrafiyası (yanacaq-energetika, metallurgiya, maşınqayırma, bitkiçilik, heyvandarlıq)",
+        "39. Dünya nəqliyyatı, beynəlxalq iqtisadi əlaqələr və beynəlxalq turizm coğrafiyası",
+        "40. Qlobal ekoloji problemlər (səhralaşma, meşəsizləşmə, atmosferin çirklənməsi) və Davamlı İnkişaf Konsepsiyası"
+      ],
+      "chapters": [
+        {
+          "chapter": "I. YERİN TƏBİƏTİ: Yer səma cismidir və Yer səthinin təsviri",
+          "topics": [
+            {
+              "title": "1. Coğrafiya təbiət elmləri sistemində və tədqiqat metodları",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. Kainat və Günəş sisteminin yaranması haqqında fərziyyələr",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Yerin planetar inkişafı, maqnetizmi, forması və ölçüləri",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Günəş şüalarının düşmə bucağı və vaxt fərqlərinin hesablanması",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "5. Kartoqrafik proyeksiyalar, təhriflər və xəritələr",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "6. Miqyas və təhriflərin hesablanması",
+              "page": 36,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II. Yer qabığının inkişafı və Azərbaycanın geologiyası",
+          "topics": [
+            {
+              "title": "7. Yerin geoloji inkişafı, qırışıqlıq vilayətləri və platformalar",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "8. Dağəmələgəlmə mərhələləri",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "9. Azərbaycanın geoloji quruluşu",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. Azərbaycanın endogen və ekzogen relyef formaları",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "11. Azərbaycanın faydalı qazıntıları və geoloji quruluşla əlaqəsi",
+              "page": 66,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III. İqlim, Hidrosfer və Coğrafi təbəqə",
+          "topics": [
+            {
+              "title": "12. Yer səthində istilik, buxarlanma və rütubətlilik",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "13. Dünyanın və Azərbaycanın iqlim qurşaqları və tipləri",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "14. Qlobal iqlim dəyişmələri və aqroiqlim ehtiyatları",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "15. Dünya və Azərbaycan çayları, gölləri və yeraltı suları",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "16. Xəzər dənizi və onun iqtisadi əhəmiyyəti",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "17. Coğrafi təbəqənin inkişafı, qanunauyğunluqları və qoruqlar",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "18. Azərbaycanın fiziki-coğrafi vilayətləri",
+              "page": 108,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV. DÜNYANIN SİYASİ VƏ İQTİSADİ MƏNZƏRƏSİ",
+          "topics": [
+            {
+              "title": "19. Dünya əhalisi, demoqrafik artım və urbanizasiya",
+              "page": 114,
+              "path": ""
+            },
+            {
+              "title": "20. Azərbaycanda əhalinin sıxlığı və məskunlaşma",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "21. Dünyanın siyasi xəritəsi və ölkələrin geosiyasi mövqeyi",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "22. Azərbaycanın geosiyasi mövqeyi və Qarabağ zəfəri",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "23. Elmi-texniki inqilab və dünya təsərrüfatı",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "24. Dünya hasilat, emal sənayesi və kənd təsərrüfatı",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "25. Nəqliyyat coğrafiyası və qlobal ekoloji problemlər",
+              "page": 150,
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "totalTopics": 40,
+      "totalQuestions": 600
     },
     {
       "id": "edebiyyat-10",
@@ -1786,7 +2387,134 @@
       "e_derslik_id": "732",
       "path": "/textbooks/10/edebiyyat-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/edebiyyat-10",
-      "topics": "Söz sənətimiz - mənəvi sərvətimiz\nAzərbaycan şifahi xalq yaradıcılığı\n\"Kitabi-Dədə Qorqud\" eposu. Salur Qazanın evinin yağmalandığı boy\nNizami Gəncəvi. Həyatı, yaradıcılıq yolu\nNizami Gəncəvi: \"İskəndərnamə\"\nİmadəddin Nəsimi. Həyatı, yaradıcılıq yolu\nİmadəddin Nəsimi: \"Sığmazam\"\nŞah İsmayıl Xətayi. Həyatı, yaradıcılıq yolu\nŞah İsmayıl Xətayi: \"Dəhnamə\"\nMəhəmməd Füzuli. Həyatı, yaradıcılıq yolu\nMəhəmməd Füzuli: \"Məni candan usandırdı...\"\nMəhəmməd Füzuli: \"Leyli və Məcnun\""
+      "topics": [
+        "1. Söz sənətimiz - mənəvi sərvətimiz",
+        "2. Azərbaycan şifahi xalq yaradıcılığı",
+        "3. \"Kitabi-Dədə Qorqud\" eposu",
+        "4. \"Kitabi-Dədə Qorqud\" eposu: \"Salur Qazanın evinin yağmalandığı boy\"",
+        "5. Nizami Gəncəvi. Həyatı, yaradıcılıq yolu",
+        "6. Nizami Gəncəvi: \"İskəndərnamə\" poeması",
+        "7. İmadəddin Nəsimi. Həyatı, yaradıcılıq yolu",
+        "8. İmadəddin Nəsimi: \"Sığmazam\" qəzəli",
+        "9. Şah İsmayıl Xətayi. Həyatı, yaradıcılıq yolu",
+        "10. Şah İsmayıl Xətayi: \"Dəhnamə\" poeması",
+        "11. Məhəmməd Füzuli. Həyatı, yaradıcılıq yolu",
+        "12. Məhəmməd Füzuli: \"Məni candan usandırdı...\" qəzəli",
+        "13. Məhəmməd Füzuli: \"Leyli və Məcnun\" poeması",
+        "14. \"Koroğlu\" eposu",
+        "15. \"Koroğlu\" eposu: \"Həmzənin Qıratı qaçırması\" qolu",
+        "16. Molla Pənah Vaqif. Həyatı, yaradıcılıq yolu",
+        "17. Molla Pənah Vaqif: \"Pəri\" qoşması",
+        "18. Qasım bəy Zakir. Həyatı, yaradıcılıq yolu",
+        "19. Qasım bəy Zakir: \"Badi-səba, mənim dərdi-dilimi\" qoşması",
+        "20. Mirzə Fətəli Axundzadə. Həyatı, yaradıcılıq yolu",
+        "21. Mirzə Fətəli Axundzadə: \"Hekayəti-müsyö Jordan həkimi-nəbatat və dərviş Məstəli şah caduküni-məşhur\" komediyası",
+        "22. Mirzə Fətəli Axundzadə: \"Aldanmış kəvakib\" povesti",
+        "23. Aşıq Ələsgər. Həyatı, yaradıcılıq yolu",
+        "24. Aşıq Ələsgər: \"Dağlar\" qoşması",
+        "25. Seyid Əzim Şirvani. Həyatı, yaradıcılıq yolu",
+        "26. Seyid Əzim Şirvani: \"Guş qıl\" müxəmməsi",
+        "27. Nəcəf bəy Vəzirov. Həyatı, yaradıcılıq yolu",
+        "28. Nəcəf bəy Vəzirov: \"Müsibəti-Fəxrəddin\" faciəsi",
+        "29. İfadəli oxuda istifadə edilən şərti işarələr və ədəbiyyat nəzəriyyəsi"
+      ],
+      "chapters": [
+        {
+          "chapter": "I. QƏDİM VƏ İNTİBAH DÖVRÜ AZƏRBAYCAN ƏDƏBİYYATI",
+          "topics": [
+            {
+              "title": "1. Söz sənətimiz - mənəvi sərvətimiz və şifahi xalq ədəbiyyatı",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. \"Kitabi-Dədə Qorqud\" eposu. Salur Qazanın evinin yağmalandığı boy",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Nizami Gəncəvi. Həyatı və yaradıcılıq yolu",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Nizami Gəncəvi: \"İskəndərnamə\"",
+              "page": 24,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II. ORTA ƏSRLƏR VƏ ERKƏN YENİ DÖVR ƏDƏBİYYATI",
+          "topics": [
+            {
+              "title": "5. İmadəddin Nəsimi. Həyatı və \"Sığmazam\" qəzəli",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "6. Şah İsmayıl Xətayi. Həyatı və \"Dəhnamə\" poeması",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "7. Məhəmməd Füzuli. Həyatı və \"Məni candan usandırdı...\" qəzəli",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "8. Məhəmməd Füzuli: \"Leyli və Məcnun\" poeması",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "9. \"Koroğlu\" eposu. Həmzənin Qıratı qaçırması qolu",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. Molla Pənah Vaqif. Həyatı və \"Pəri\" qoşması",
+              "page": 60,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III. MAARİFÇİ-REALİZM VƏ TƏNQİDİ REALİZM DÖVRÜ",
+          "topics": [
+            {
+              "title": "11. Qasım bəy Zakir. Həyatı və \"Badi-səba, mənim dərdi-dilimi\"",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "12. Mirzə Fətəli Axundzadə. Həyatı və \"Hekayəti-müsyö Jordan\"",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "13. Mirzə Fətəli Axundzadə: \"Aldanmış kəvakib\"",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "14. Aşıq Ələsgər. Həyatı və \"Dağlar\" qoşması",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "15. Seyid Əzim Şirvani. Həyatı və \"Guş qıl\" müxəmməsi",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "16. Nəcəf bəy Vəzirov. Həyatı və \"Müsibəti-Fəxrəddin\" faciəsi",
+              "page": 96,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "fizika-10",
@@ -1796,7 +2524,204 @@
       "e_derslik_id": "734",
       "path": "/textbooks/10/fizika-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/fizika-10",
-      "topics": "1.1. Mexaniki hərəkət və onun təsviri\n1.2. Yol və yerdəyişmə\n1.3. Düzxətli bərabərsürətli hərəkət. Sürət\n1.4. Düzxətli dəyişənsürətli hərəkət. Təcil\n1.5. Düzxətli bərabərtəcilli hərəkətdə sürət və yerdəyişmə\nPRAKTİK İŞ. BƏRABƏRTƏCİLLİ HƏRƏKƏT ÜÇÜN YOLLAR QANUNU\n1.6. Cismin sərbəstdüşməsi\n1.7. Mexaniki hərəkətin nisbiliyi\n1.8. Çevrə üzrə bərabərsürətli hərəkət\nI fəslə aid məsələlər\n2.1. Dinamikanın əsas məsələsi. Qüvvə. Əvəzləyici qüvvə. Kütlə\n2.2. Ətalətlə hərəkət: Nyutonun I qanunu\n2.3. Dinamikanın əsas qanunu: Nyutonun II qanunu\n2.4. Təsir və əks təsir. Nyutonun III qanunu\n2.5. Ümumdünya cazibə qanunu\n2.6. Ağırlıq qüvvəsi. Qravitasiya sahəsinin intensivliyi\n2.7. Çəki və çəkisizlik\n2.8. Elastiklik qüvvəsi\n2.9. Sürtünmə qüvvəsi. Sürtünmə qüvvəsinin təsiri altında hərəkət\n2.10. Cismin tarazlıq şərtləri\nII fəslə aid məsələlər"
+      "topics": [
+        "1. Mexaniki hərəkət və onun təsviri",
+        "2. Yol və yerdəyişmə",
+        "3. Düzxətli bərabərsürətli hərəkət",
+        "4. Düzxətli dəyişənsürətli hərəkət. Təcil",
+        "5. Düzxətli bərabərtəcilli hərəkətdə sürət və yerdəyişmə",
+        "6. Cismin sərbəstdüşməsi və ağırlıq qüvvəsinin təsiri altında hərəkət",
+        "7. Mexaniki hərəkətin nisbiliyi",
+        "8. Çevrə üzrə bərabərsürətli hərəkət",
+        "9. Dinamikanın əsas məsələsi. Qüvvə, əvəzləyici qüvvə və kütlə",
+        "10. Ətalət hesablama sistemləri. Nyutonun I qanunu",
+        "11. Dinamikanın əsas qanunu: Nyutonun II qanunu",
+        "12. Təsir və əks-təsir qanunu: Nyutonun III qanunu",
+        "13. Ümumdünya cazibə qanunu və qravitasiya sahəsi",
+        "14. Ağırlıq qüvvəsi və qravitasiya sahəsinin intensivliyi",
+        "15. Cismin çəkisi, çəkisizlik və ifrat yüklənmə",
+        "16. Elastiklik qüvvəsi və Huk qanunu",
+        "17. Sürtünmə qüvvəsi",
+        "18. Cisimlərin tarazlıq şərtləri və Qüvvə momenti",
+        "19. Cismin və qapalı sistemin impulsu. Qüvvə impulsu",
+        "20. İmpulsun saxlanması qanunu və reaktiv hərəkət",
+        "21. Mexaniki iş və Güc",
+        "22. Kinetik enerji və kinetik enerji haqqında teorem",
+        "23. Potensial enerji",
+        "24. Tam mexaniki enerjinin saxlanması qanunu",
+        "25. Xüsusi nisbilik nəzəriyyəsinin postulatları və kütlə-enerji əlaqəsi",
+        "26. Rəqsi hərəkət. Harmonik rəqslər",
+        "27. Yaylı və riyazi rəqqaslar",
+        "28. Harmonik rəqslərdə enerji çevrilmələri və Rezonans hadisəsi",
+        "29. Mexaniki dalğalar",
+        "30. Səs dalğaları",
+        "31. MKT-nin əsas müddəaları və təcrübi əsasları",
+        "32. Maddə miqdarı, molyar kütlə və Avaqadro sabiti",
+        "33. İdeal qaz. MKT-nin əsas tənliyi",
+        "34. Temperatur və onun fiziki mənası. Mütləq temperatur",
+        "35. İdeal qazın hal tənliyi",
+        "36. Qaz qanunları və İzoprosesslər",
+        "37. Doyan və doymayan buxar. Buxarlanma və qaynama",
+        "38. Havanın rütubətliliyi",
+        "39. Mayelərin səthi gərilməsi və kapilyarlıq",
+        "40. Bərk cisimlərin quruluşu və xassələri",
+        "41. Daxili enerji və onun dəyişmə üsulları",
+        "42. Termodinamikada qazın gördüyü iş və İstilik miqdarı",
+        "43. Termodinamikanın I qanunu və izoprosesslərə tətbiqi",
+        "44. Termodinamikanın II qanunu, İstilik mühərrikləri və Karno tsikli"
+      ],
+      "chapters": [
+        {
+          "chapter": "I fəsil: KİNEMATİKANIN ƏSASLARI",
+          "topics": [
+            {
+              "title": "1.1. Mexaniki hərəkət və onun təsviri",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Yol və yerdəyişmə",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "1.3. Düzxətli bərabərsürətli hərəkət. Sürət",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "1.4. Düzxətli dəyişənsürətli hərəkət. Təcil",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "1.5. Düzxətli bərabərtəcilli hərəkətdə sürət və yerdəyişmə",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "1.6. Cismin sərbəstdüşməsi və hərəkətin nisbiliyi",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "1.7. Çevrə üzrə bərabərsürətli hərəkət",
+              "page": 42,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II fəsil: DİNAMİKANIN ƏSASLARI",
+          "topics": [
+            {
+              "title": "2.1. Dinamikanın əsas məsələsi. Qüvvə və kütlə",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "2.2. Nyutonun I, II və III qanunları",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "2.3. Ümumdünya cazibə qanunu və ağırlıq qüvvəsi",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "2.4. Çəki, çəkisizlik və elastiklik qüvvəsi",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "2.5. Sürtünmə qüvvəsi və cismin tarazlıq şərtləri",
+              "page": 72,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III fəsil: SAXLANMA QANUNLARI VƏ RELYATİVİSTİK MEXANİKA",
+          "topics": [
+            {
+              "title": "3.1. Qapalı sistem. İmpulsun saxlanması qanunu",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "3.2. Mexaniki iş, güc və kinetik enerji",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "3.3. Potensial enerji və tam mexaniki enerjinin saxlanması",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "3.4. Nisbilik nəzəriyyəsinin əsasları və kütlə-enerji əlaqəsi",
+              "page": 96,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV fəsil: MEXANİKİ RƏQSLƏR VƏ DALĞALAR",
+          "topics": [
+            {
+              "title": "4.1. Rəqsi hərəkət. Yaylı və riyazi rəqqas",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "4.2. Harmonik rəqslərdə enerji çevrilmələri və rezonans",
+              "page": 108,
+              "path": ""
+            },
+            {
+              "title": "4.3. Mexaniki dalğalar və səs dalğaları",
+              "page": 114,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "V fəsil: MOLEKULYAR-KİNETİK NƏZƏRİYYƏ VƏ TERMODİNAMİKA",
+          "topics": [
+            {
+              "title": "5.1. MKT-nin əsas müddəaları və ideal qaz tənliyi",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "5.2. Qaz qanunları (İzoprosesslər)",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "5.3. Buxarlanma, doyan buxar və havanın rütubətliliyi",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "5.4. Mayelərin səthi gərilməsi və kapilyarlıq",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "5.5. Bərk cisimlər və kristalların xassələri",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "5.6. Termodinamikanın I və II qanunları, istilik mühərrikləri",
+              "page": 150,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "informatika-10",
@@ -1806,7 +2731,160 @@
       "e_derslik_id": "736",
       "path": "/textbooks/10/informatika-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/informatika-10",
-      "topics": "1-ci fəsil: İNFORMASİYA VƏ İNFORMATİKA\n1.1: İnformasiya və informatika\n1.2: İnformasiya prosesləri\n1.3: İnformasiyanın miqdarı\n1.4: İnformasiyanın qorunması\n1.5: Kompüter virusları\n1.6: Antivirus proqramları\n1.7: Kompüter cinayətkarlığı\n1.8: Kriptoqrafiya\n\n2-ci fəsil: İNFORMASİYA MODELLƏŞDİRİLMƏSİ\n2.1: \"Model\" anlayışı\n2.2: Modellərin növləri\n2.3: İnformasiya modellərinin təqdimolunması\n2.4: İnformasiya modelinin hazırlanması\n2.5: Kompüter modeli\n2.6: Modelləşdirmə mərhələləri\n2.7: Cədvəl informasiya modeli\n2.8: Qraf informasiya modeli"
+      "topics": [
+        "1. İnformasiya və informatika: anlayışı, növləri, formaları və xassələri (aktuallıq, tamlıq, dəqiqlik, etibarlılıq)",
+        "2. İnformasiya prosesləri: toplanması, saxlanması, ötürülməsi (rabitə kanalları, Şennon modeli) və emalı",
+        "3. İnformasiyanın ölçü vahidləri və miqdarının hesablanması: bit, bayt, KB, MB, GB, TB, PB; Hartli və Şennon düsturları",
+        "4. İnformasiyanın kodlaşdırılması: ədədi, mətn, qrafik və səs informasiyasının kodlaşdırılması",
+        "5. İnformasiya təhlükəsizliyi və qorunması: konfidensiallıq, bütövlük və əlçatanlıq prinsipləri",
+        "6. Ziyanverici proqramlar: kompüter virusları, şəbəkə soxulcanları (worms), Troyan proqramları, casus və fidyə proqramları",
+        "7. Antivirus proqramları və mühafizə sistemləri: skanerlər, monitorlar, aşkarlama metodları",
+        "8. Kriptoqrafiya və şifrələmə üsulları: simmetrik və asimmetrik şifrələmə, elektron rəqəmsal imza",
+        "9. Kompüter cinayətkarlığı, kibertəhlükəsizlik, fırıldaqçılıq (fişinq, spaminq, DoS/DDoS) və informasiya etikası",
+        "10. Model və modelləşdirmə anlayışı: modelləşdirmənin məqsədi və adekvatlıq",
+        "11. Modellərin təsnifatı: maddi (əşyavi) və informasiya modelləri",
+        "12. İnformasiya modellərinin təsvir formaları: həndəsi, struktur (cədvəl, qraf, ağac), məntiqi və riyazi modellər",
+        "13. İnformasiya modelinin hazırlanması mərhələləri: məsələnin qoyuluşu, formalizasiya, kompüter modeli və eksperiment",
+        "14. Kompüter modelləşdirməsi və simulyasiya: elektron cədvəllərdə və proqramlaşdırma mühitində modellərin tədqiqi",
+        "15. Alqoritm anlayışı, əsas xassələri (müəyyənlik, kütləvilik, diskretlik, nəticəvilik) və təsvir üsulları (nəqli, blok-sxem, proqram)",
+        "16. Alqoritmlərin əsas strukturları: xətti, budaqlanan və dövri strukturlar",
+        "17. Python proqramlaşdırma mühiti: sintaksis, dəyişənlər, adlandırma qaydaları və standart məlumat tipləri",
+        "18. Arifmetik əməliyyatlar (+, -, *, /, //, %, **), daxiletmə və xaricetmə operatorları (input, print)",
+        "19. Budaqlanma strukturları: şərt operatorları (if, elif, else), müqayisə və məntiqi operatorlar",
+        "20. Dövri strukturlar: parametrli for dövrü və range() funksiyası",
+        "21. Şərtli dövr operatoru: while dövrü, sonsuz dövrlər və dövrün addımı",
+        "22. Dövrlərin idarə edilməsi: break, continue və pass operatorları, iç-içə dövrlər",
+        "23. Sətir verilənlər tipi (str): sətirlərin indekslənməsi, dilimləmə (slicing [start:stop:step]) və sətir metodları (len, upper, lower, find, replace, count, split, join)",
+        "24. Siyahılar (list): siyahıların yaradılması, indekslənməsi və siyahı metodları (append, insert, extend, remove, pop, sort, reverse, min, max, sum)",
+        "25. İkiölçülü massivlər (matrislər) və iç-içə siyahılar (nested lists) üzərində əməliyyatlar",
+        "26. Dəyişməz korteclər (tuple) və təkrarlanmayan çoxluqlar (set): yaradılması, xassələri və çoxluq əməliyyatları (union, intersection, difference)",
+        "27. Lüğətlər (dict): açar-qiymət (key-value) cütləri, lüğətlərin yaradılması və metodları (keys, values, items, get, update)",
+        "28. İstifadəçi funksiyaları: def açar sözü, parametrlər və arqumentlər, return operatoru, lokal və qlobal dəyişənlər (global)",
+        "29. Rekursiv funksiyalar (özünü çağıran funksiyalar) və standart daxili riyazi funksiyalar (math modulu: sqrt, pow, floor, ceil, gcd)",
+        "30. Qrafik imkanlar və alqoritmik layihələr: turtle qrafika modulu (forward, backward, left, right, penup, pendown, circle, color, begin_fill)",
+        "31. Verilənlər bazası (VB) anlayışı, təyinatı və modelləri: iyerarxik, şəbəkə və relyasiya (əlaqəli) modelləri",
+        "32. Relyasiya verilənlər bazasının əsas elementləri: cədvəl, sahə (field/sütun), yazı (record/sətir), ilkin açar (Primary Key), xarici açar (Foreign Key) və verilənlərin tipləri",
+        "33. SQL (Structured Query Language) əsasları: cədvəllərdən məlumatların seçilməsi (SELECT, FROM, WHERE, DISTINCT, ORDER BY ASC/DESC)",
+        "34. Verilənlərin süzgəcdən keçirilməsi (LIKE, IN, BETWEEN, AND, OR, NOT) və aqreqat funksiyaları (COUNT, SUM, AVG, MIN, MAX, GROUP BY)",
+        "35. Kompüter şəbəkələri: təsnifatı (LAN, MAN, WAN) və əsas topologiyaları (şin/bus, ulduz/star, halqa/ring, qarışıq/mesh)",
+        "36. Şəbəkə aparatları və ötürmə mühiti: şəbəkə kartı (NIC), kommutator (switch), marşrutlaşdırıcı (router), modem, koaksial, burulmuş cütlük (UTP) və optik-lifli kabellər, Wi-Fi simsiz rabitə",
+        "37. İnternet şəbəkəsi və protokollar: TCP/IP arxitekturası, HTTP/HTTPS, FTP, SMTP, DNS, IP ünvanlaşdırma (IPv4, IPv6, altşəbəkə maskası, URL)",
+        "38. Veb-texnologiyalar və HTML dili: veb-səhifənin strukturu, əsas HTML teqləri (html, head, body, h1..h6, p, a, img, table, ul, ol)",
+        "39. CSS (Cascading Style Sheets) ilə veb-səhifələrin vizual tərtibatı: stillər, rənglər, şriftlər, kənar boşluqlar (margin, padding) və id/class selektorları",
+        "40. Müasir informasiya texnologiyaları meyilləri: Süni İntellekt (AI), Maşın Öyrənməsi (ML), Əşyaların İnterneti (IoT), Bulud texnologiyaları (Cloud Computing) və Böyük Verilənlər (Big Data)"
+      ],
+      "chapters": [
+        {
+          "chapter": "1. İNFORMASİYA VƏ KİBER TƏHLÜKƏSİZLİK",
+          "topics": [
+            {
+              "title": "1.1. İnformasiya və informatika",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. İnformasiya prosesləri",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "1.3. İnformasiyanın miqdarı və ölçü vahidləri",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "1.4. İnformasiyanın qorunması və kiber təhlükəsizlik",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "1.5. Kompüter virusları və antivirus proqramları",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "1.6. Kompüter cinayətkarlığı və kriptoqrafiya",
+              "page": 36,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "2. İNFORMASİYA MODELLƏŞDİRİLMƏSİ VƏ KOMPÜTER QRafİKASI",
+          "topics": [
+            {
+              "title": "2.1. Model anlayışı və modellərin növləri",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "2.2. İnformasiya modellərinin təqdimolunması və hazırlanması",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "2.3. Kompüter modeli və interaktiv modellər",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "2.4. Kompüter qrafikası və 3D modelləşdirmə",
+              "page": 60,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "3. VERİLƏNLƏR BAZASI VƏ ŞƏBƏKƏLƏR",
+          "topics": [
+            {
+              "title": "3.1. Verilənlər bazası anlayışı və relyasiya modeli",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "3.2. Cədvəl strukturu, sorğular, formalar və hesabatlar",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "3.3. Kompüter şəbəkələri, topologiyalar və avadanlıqlar",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "3.4. İnternetə qoşulma texnologiyaları və protokollar",
+              "page": 84,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "4. VEB-PROQRAMLAŞDIRMA VƏ İNFORMASİYA CƏMİYYƏTİ",
+          "topics": [
+            {
+              "title": "4.1. Veb-proqramlaşdırma və HTML strukturu",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "4.2. Saytın tərtibatı, cədvəllər və hiperistinadlar",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "4.3. İnformasiya cəmiyyəti, şəbəkə etikası və telekonfrans",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "4.4. Elektron hökumət, e-təhsil, e-ticarət və e-kitabxana",
+              "page": 108,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "kimya-10",
@@ -1816,7 +2894,134 @@
       "e_derslik_id": "739",
       "path": "/textbooks/10/kimya-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/kimya-10",
-      "topics": "I BÖLMƏ. Alkanlar\nAlkanların quruluşu və homoloji sırası\nAlkanların molekullarının fəza quruluşu\nAlkanların izomerliyi və alkil radikallar\nAlkanların adlandırılması\nAlkanların təbiətdə tapılması və alınması\nAlkanların fiziki və kimyəvi xassələri\nAlkanların kimyəvi xassələri\nPraktik iş. Karbohidrogenlərin keyfiyyət tərkibinin təyini\n\nII BÖLMƏ. Alkenlər\nAlkenlərin homoloji sırası, molekullarının elektron və qrafik formulu\nAlkenlərin molekullarının fəza quruluşu\nAlkenlərin adlandırılması\nAlkenlərin izomerliyi\nAlkenlərin alınması və fiziki xassələri\nAlkenlərin kimyəvi xassələri\n\nIII BÖLMƏ. Alkadienlər\nAlkadienlərin homoloji sırası, qrafik formulları və molekullarının fəza quruluşu\nAlkadienlərin adlandırılması və izomerliyi\nAlkadienlərin alınması və fiziki xassələri\nAlkadienlərin kimyəvi xassələri\n\nIV BÖLMƏ. Alkinlər\nAlkinlərin homoloji sırası, qrafik formulları və molekullarının fəza quruluşu\nAlkinlərin adlandırılması və izomerliyi\nAlkinlərin alınması, fiziki xassələri və yanma reaksiyaları\nAlkinlərin kimyəvi xassələri\n\nV BÖLMƏ. Tsikloalkanlar\nTsikloalkanların homoloji sırası, qrafik formulları və molekullarının fəza quruluşu\nTsikloalkanların adlandırılması və izomerliyi\nTsikloalkanların alınması və fiziki xassələri\nTsikloalkanların kimyəvi xassələri\n\nVI BÖLMƏ. Aromatik karbohidrogenlər\nAromatik karbohidrogenlər. Benzol molekulunun fəza quruluşu\nBenzolun homoloqlarının adlandırılması və İzomerliyi\nBenzol sırası karbohidrogenlərin alınması və fiziki xassələri\nBenzol sırası karbohidrogenlərin kimyəvi xassələri\nStirol\n\nVII BÖLMƏ. Karbohidrogenlərin təbii mənbələri\nKarbohidrogenlərin təbii mənbələri haqqında ümumi məlumat\nNeft və onun ilkin emalı\nNeft məhsullarının təkrar emalı\nBenzinin keyfiyyəti və oktan ədədi\nDaş kömürün emalı"
+      "topics": [
+        "1. Üzvi kimya, üzvi maddələrin kimyəvi quruluş nəzəriyyəsi (A.M.Butlerov) və Karbon atomunun valentlik halları (sp3, sp2, sp-hibridləşmə)",
+        "2. Alkanların quruluşu, homoloji sırası və ümumi formulu (CnH2n+2)",
+        "3. Alkanların molekullarının fəza quruluşu, valent bucağı və rabitə uzunluğu",
+        "4. Alkanların izomerliyi (quruluş izomerliyi) və alkil radikalları",
+        "5. Alkanların Beynəlxalq (İUPAC) və tarixi (səmərəli) adlandırılması",
+        "6. Alkanların təbiətdə tapılması, laboratoriya və sənayedə alınması (Vürs reaksiyası, metanın alınması)",
+        "7. Alkanların fiziki və kimyəvi xassələri (əvəzetmə/radikal halogenləşmə, yanma, parçalanma, izomerləşmə)",
+        "8. Alkenlərin quruluşu, homoloji sırası (CnH2n), elektron və qrafik formulu (siqma və pi-rabitələr)",
+        "9. Alkenlərin molekullarının fəza quruluşu və həndəsi (sis-, trans-) izomerliyi",
+        "10. Alkenlərin adlandırılması, izomerlik növləri və alınma üsulları (dehidrogenləşmə, dehidratasiya)",
+        "11. Alkenlərin kimyəvi xassələri (birləşmə reaksiyaları: Markovnikov qaydası, polimerləşmə və oksidləşmə - Vaqner reaksiyası)",
+        "12. Alkadienlərin quruluşu, homoloji sırası (CnH2n-2), təsnifatı (kumulə olunmuş, qonşu/konyuqə olunmuş və təcrid olunmuş)",
+        "13. Divinil (butadien-1,3) və İzoprenin (2-metilbutadien-1,3) alınması, xassələri və Sintetik kauçukların alınması (S.V.Lebedev üsulu)",
+        "14. Alkinlərin quruluşu, homoloji sırası (CnH2n-2), sp-hibridləşmə və adlandırılması",
+        "15. Asetilenin (etinin) alınması, fiziki və kimyəvi xassələri (birləşmə, Kuçerov reaksiyası, trimerləşmə - Zelinski reaksiyası)",
+        "16. Tsikloalkanlar (Tsikloparafinlər): homoloji sırası (CnH2n), quruluşu, gərginlik nəzəriyyəsi, izomerliyi və xassələri",
+        "17. Aromatik karbohidrogenlər (Arenlər): Benzolun quruluşu, Kekule formulu və aromatik pi-elektron seksteti (Hükkel qaydası)",
+        "18. Benzol homoloqları (toluol, ksilol, stirol), izomerliyi və adlandırılması",
+        "19. Benzol və homoloqlarının alınması (aromatlaşma/riforminq, Zelinski reaksiyası, Fridel-Krafts alkilləşməsi)",
+        "20. Arenlərin kimyəvi xassələri (Elektrofil əvəzetmə: halogenləşmə, nitrolaşma, sulfolaşma; I və II növ yönəldicilər)",
+        "21. Toluolun xassələri (nüvəyə və yan zəncirə təsir, trotil/TNT alınması, oksidləşməsi) və Arenlərin tətbiqi",
+        "22. Təbii qaz, səmt qazları və onların tərkibi, tətbiqi",
+        "23. Neft, neftin tərkibi və ilkin fraksiyalı qovulması (fraksiyalar: benzin, liqroin, kerosin, qazoyl, mazut)",
+        "24. Neftin təkrar emalı (Termiki və katalitik krekinq, riforminq, piroliz, oktan ədədi) və Daş kömürün kokslaşdırılması",
+        "25. Biratomlu doymuş spirtlər: homoloji sırası (CnH2n+1OH), hidrogen rabitəsi, izomerliyi, adlandırılması və alınması",
+        "26. Spirtlərin fiziki və kimyəvi xassələri (qələvi metallarla, halogenhidrogenlərlə reaksiya, molekuldaxili və molekullararası dehidratasiya, oksidləşmə)",
+        "27. Çoxatomlu spirtlər (Etilenqlikol və Qliserin) və Fenol (quruluşu, turşuluq xassəsi, keyfiyyət reaksiyaları)",
+        "28. Aldehidlər və Ketonlar: quruluşu, karbonil qrupu, adlandırılması, alınması və xassələri (\"gümüş güzgü\" və Mis(II)hidroksid reaksiyaları)",
+        "29. Doymuş birəsaslı karbon turşuları (qarışqa, sirkə, palmitin, stearin turşuları): quruluşu, karboksil qrupu, xassələri və tətbiqi",
+        "30. Mürəkkəb efirlər (Esterləşmə reaksiyası, hidroliz) və Yağlar (quruluşu, sabunlaşma, duru yağların hidrogenləşdirilməsi)",
+        "31. Karbohidratlar: Monosaxaridlər (Qlükoza, Fruktoza), Disaxaridlər (Saxaroza) və Polisaxaridlər (Nişasta, Sellüloza) - quruluşu, xassələri və fotosintezlə əlaqəsi",
+        "32. Aminlər: quruluşu, təsnifatı (birli, ikili, üçlü), əsasi xassələri və Aromatik amin - Anilin (Zinin reaksiyası ilə alınması və xassələri)",
+        "33. Amin turşuları (amfoterliyi, bipolyar ion) və Zülallar (peptid rabitəsi, 4 quruluş səviyyəsi, denaturasiya və rəngli keyfiyyət reaksiyaları)",
+        "34. Yüksəkmolekullu birləşmələr (Polimerlər): Polimerləşmə və Polikondensləşmə reaksiyaları, Plastmassalar, liflər (kapron, lavsan) və Kauçuklar"
+      ],
+      "chapters": [
+        {
+          "chapter": "I BÖLMƏ: Doymuş karbohidrogenlər (Alkanlar və Tsikloalkanlar)",
+          "topics": [
+            {
+              "title": "1. Alkanların quruluşu, homoloji sırası və fəza quruluşu",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. Alkanların izomerliyi, nomenklaturası və radikalları",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Alkanların alınması, fiziki və kimyəvi xassələri",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Tsikloalkanların quruluşu, izomerliyi, alınması və xassələri",
+              "page": 24,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II BÖLMƏ: Doymamış karbohidrogenlər (Alkenlər, Alkadienlər, Alkinlər)",
+          "topics": [
+            {
+              "title": "5. Alkenlərin homoloji sırası, elektron və fəza quruluşu",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "6. Alkenlərin adlandırılması, izomerliyi, alınması və xassələri",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "7. Alkadienlərin quruluşu, izomerliyi, alınması və xassələri",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "8. Alkinlərin quruluşu, nomenklaturası, izomerliyi və kimyəvi xassələri",
+              "page": 48,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III BÖLMƏ: Aromatik karbohidrogenlər (Arenlər)",
+          "topics": [
+            {
+              "title": "9. Aromatik karbohidrogenlər. Benzol molekulunun quruluşu",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. Benzolun homoloqlarının adlandırılması və izomerliyi",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "11. Arenlərin alınması, fiziki və kimyəvi xassələri. Stirol",
+              "page": 66,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV BÖLMƏ: Karbohidrogenlərin təbii mənbələri və emalı",
+          "topics": [
+            {
+              "title": "12. Təbii qaz və neftin ilkin və təkrar emalı",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "13. Benzinin keyfiyyəti, oktan ədədi və krekinq",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "14. Daş kömürün kokslaşdırılması və emalı",
+              "page": 84,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "umumi-tarix-10",
@@ -1826,7 +3031,174 @@
       "e_derslik_id": "745",
       "path": "/textbooks/10/umumi-tarix-10/OEBPS/cover.xhtml",
       "contentPath": "public/textbooks/10/umumi-tarix-10",
-      "topics": "1. İbtidai cəmiyyət\n2. Qədim Misir və Mesopotamiya\n3. Qədim İran və Hindistan\n4. Böyük Hun dövləti. Çin\n5. Qədim Yunanıstan, Makedoniya və Roma\n6. Türk dövlətləri (III-XI əsrlər)\n7. Ərəb xilafəti\n8. Qərbi Avropa (III-XI əsrlər)\n9. Bizans\n10. Mədəniyyət (III-XI əsrlər)\n11. Böyük Səlcuq dövləti\n12. Osmanlı imperiyası (XIV-XV əsrlər)\n13. Dehli sultanlığı\n14. Böyük Monqol imperiyası. Qızıl Ordu\n15. Teymuri dövləti\n16. Xaçlı yürüşləri\n17. Qərbi Avropada mərkəzləşdirilmiş dövlətlərin yaranması\n18. Mədəniyyət (XI-XV yüzilliklər)\n19. Avropada reformasiya. Otuzillik müharibə\n20. İngiltərə və Fransa (XVI-XVIII əsrlər)\n21. Böyük coğrafi kəşflər. ABŞ-ın yaranması\n22. Rusiya (XVI-XVIII əsrlər)\n23. Osmanlı imperiyası (XVI-XVIII əsrlər)\n24. Böyük Moğol dövləti"
+      "topics": [
+        "1. İbtidai cəmiyyət",
+        "2. Qədim Misir və Mesopotamiya",
+        "3. Qədim İran və Hindistan",
+        "4. Böyük Hun dövləti. Çin",
+        "5. Qədim Yunanıstan, Makedoniya və Roma",
+        "6. Türk dövlətləri (III-XI əsrlər)",
+        "7. Ərəb xilafəti",
+        "8. Qərbi Avropa (III-XI əsrlər)",
+        "9. Bizans",
+        "10. Mədəniyyət (III-XI əsrlər)",
+        "11. Böyük Səlcuq dövləti",
+        "12. Osmanlı imperiyası (XIV-XV əsrlər)",
+        "13. Dehli sultanlığı",
+        "14. Böyük Monqol imperiyası. Qızıl Ordu",
+        "15. Teymuri dövləti",
+        "16. Xaçlı yürüşləri",
+        "17. Qərbi Avropada mərkəzləşdirilmiş dövlətlərin yaranması",
+        "18. Mədəniyyət (XI-XV yüzilliklər)",
+        "19. Avropada reformasiya. Otuzillik müharibə",
+        "20. İngiltərə və Fransa (XVI-XVIII əsrlər)",
+        "21. Böyük coğrafi kəşflər. ABŞ-ın yaranması",
+        "22. Rusiya (XVI-XVIII əsrlər)",
+        "23. Osmanlı imperiyası (XVI-XVIII əsrlər)",
+        "24. Böyük Moğol dövləti"
+      ],
+      "chapters": [
+        {
+          "chapter": "I BÖLMƏ: Qədim Şərq və Antik Avropa sivilizasiyaları",
+          "topics": [
+            {
+              "title": "1. İbtidai cəmiyyət",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. Qədim Misir və Mesopotamiya",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Qədim İran və Hindistan",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Böyük Hun dövləti və Çin",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "5. Qədim Yunanıstan, Makedoniya və Roma",
+              "page": 30,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II BÖLMƏ: Dünya ölkələri III-XI yüzilliklərdə",
+          "topics": [
+            {
+              "title": "6. Türk dövlətləri (III-XI əsrlər)",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "7. Ərəb xilafəti",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "8. Qərbi Avropa (III-XI əsrlər)",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "9. Bizans imperiyası",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. III-XI əsrlərdə mədəniyyət",
+              "page": 60,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III BÖLMƏ: Dünya ölkələri XI-XV yüzilliklərdə",
+          "topics": [
+            {
+              "title": "11. Böyük Səlcuq dövləti",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "12. Osmanlı imperiyası (XIV-XV əsrlər)",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "13. Dehli sultanlığı",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "14. Böyük Monqol imperiyası və Qızıl Ordu",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "15. Teymuri dövləti",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "16. Xaçlı yürüşləri",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "17. Qərbi Avropada mərkəzləşdirilmiş dövlətlərin yaranması",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "18. XI-XV yüzilliklərdə mədəniyyət",
+              "page": 108,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV BÖLMƏ: Dünya ölkələri XVI-XVIII yüzilliklərdə",
+          "topics": [
+            {
+              "title": "19. Avropada reformasiya və Otuzillik müharibə",
+              "page": 114,
+              "path": ""
+            },
+            {
+              "title": "20. İngiltərə və Fransa (XVI-XVIII əsrlər)",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "21. Böyük coğrafi kəşflər və ABŞ-ın yaranması",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "22. Rusiya (XVI-XVIII əsrlər)",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "23. Osmanlı imperiyası (XVI-XVIII əsrlər)",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "24. Böyük Moğol dövləti və Yeni dövr mədəniyyəti",
+              "page": 144,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ingilis-dili-ikinci-10",
@@ -1876,7 +3248,184 @@
       "source_url": "https://trims.edu.az/noduploads/book/quot-riyaziyyat-quot-fanni-uzra-10-cu-sinif-ucun-darslik-1669800491-337.pdf",
       "path": "/textbooks/10/riyaziyyat-10/book.pdf",
       "contentPath": "public/textbooks/10/riyaziyyat-10",
-      "topics": "Funksiya və onun verilmə üsulları\nFunksiyaların xassələri\nCüt funksiya, tək funksiya\nBəzi funksiyaların qrafiki və xassələri\ny = x^n (n in N) qüvvət funksiyaları\nHissə-hissə verilmiş funksiyalar\nQrafiklərin çevrilmələri\nMürəkkəb funksiya\nTərs funksiya\nBəzi funksiyaların təyin oblastı və qiymətlər çoxluğu\nFəzada nöqtə, düz xətt və müstəvi\nDüz xəttin müstəviyə paralelliyi\nDüz xəttin müstəviyə perpendikulyarlığı\nPerpendikulyar və maillər\nÜç perpendikulyar teoremi\nMüstəvilərin qarşılıqlı vəziyyəti. İkiüzlü bucaqlar\nPerpendikulyar müstəvilər\nParalel müstəvilər\n20. Ümumiləşdirici tapşırıqlar (2-ci fəsil)\nDönmə bucaqları\nBucağın radian və dərəcə ölçüsü\nQövsün uzunluğu. Sektorun sahəsi\nXətti sürət, bucaq sürəti\nTriqonometrik funksiyalar\nVahid çevrə və triqonometrik funksiyalar\nÇevirmə düsturları\n1. Funksiya və onun verilmə üsulları\n2. Funksiyaların xassələri\n3. Cüt funksiya, tək funksiya\n4. Bəzi funksiyaların qrafiki və xassələri\n5. y = x^n (n in N) qüvvət funksiyaları\n6. Hissə-hissə verilmiş funksiyalar\n7. Qrafiklərin çevrilmələri\n8. Mürəkkəb funksiya\n9. Tərs funksiya\n10. Bəzi funksiyaların təyin oblastı və qiymətlər çoxluğu\n11. Ümumiləşdirici tapşırıqlar (1-ci fəsil)"
+      "topics": [
+        "1. Funksiya və onun verilmə üsulları",
+        "2. Funksiyaların xassələri, tək və cüt funksiyalar",
+        "3. Qüvvət funksiyaları və hissə-hissə verilmiş funksiyalar",
+        "4. Qrafiklərin çevrilmələri, mürəkkəb və tərs funksiya",
+        "5. Funksiyaların təyin oblastı və qiymətlər çoxluğu",
+        "6. Fəzada nöqtə, düz xətt və müstəvi aksiomları",
+        "7. Düz xətt və müstəvinin paralelliyi və perpendikulyarlığı",
+        "8. Perpendikulyar və maillər. Üç perpendikulyar teoremi",
+        "9. İkiüzlü bucaqlar və perpendikulyar müstəvilər",
+        "10. Dönmə bucaqları, radian və dərəcə ölçüsü",
+        "11. Vahid çevrə və triqonometrik funksiyalar",
+        "12. Çevirmə düsturları və əsas triqonometrik eyniliklər",
+        "13. Toplama düsturları və onların nəticələri",
+        "14. Sinuslar və kosinuslar teoremləri",
+        "15. Triqonometrik funksiyaların qrafikləri və dövrilik",
+        "16. Tərs triqonometrik funksiyalar və sadə triqonometrik tənliklər",
+        "17. Çoxüzlülər, prizmalar və onların səthinin sahəsi",
+        "18. Piramida və kəsik piramidanın səthinin sahəsi",
+        "19. Prizma və piramidanın həcmi",
+        "20. Fəza fiqurlarının oxşarlığı və həcmləri",
+        "21. Həqiqi üstlü qüvvət və üstlü funksiya",
+        "22. Ədədin loqarifmi və loqarifmik funksiya",
+        "23. Üstlü və loqarifmik tənliklər və bərabərsizliklər",
+        "24. Təsadüfi seçim, Bernulli sınaqları və binomial açılış"
+      ],
+      "chapters": [
+        {
+          "chapter": "1. FUNKSİYALAR VƏ ONLARIN XASSƏLƏRİ",
+          "topics": [
+            {
+              "title": "1. Funksiya və onun verilmə üsulları",
+              "page": 7,
+              "path": ""
+            },
+            {
+              "title": "2. Funksiyaların xassələri, tək və cüt funksiyalar",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. Qüvvət funksiyaları və hissə-hissə verilmiş funksiyalar",
+              "page": 19,
+              "path": ""
+            },
+            {
+              "title": "4. Qrafiklərin çevrilmələri, mürəkkəb və tərs funksiya",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "5. Funksiyaların təyin oblastı və qiymətlər çoxluğu",
+              "page": 39,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "2. FƏZADA NÖQTƏ, DÜZ XƏTT VƏ MÜSTƏVİ",
+          "topics": [
+            {
+              "title": "6. Fəzada nöqtə, düz xətt və müstəvi aksiomları",
+              "page": 44,
+              "path": ""
+            },
+            {
+              "title": "7. Düz xətt və müstəvinin paralelliyi və perpendikulyarlığı",
+              "page": 50,
+              "path": ""
+            },
+            {
+              "title": "8. Perpendikulyar və maillər. Üç perpendikulyar teoremi",
+              "page": 53,
+              "path": ""
+            },
+            {
+              "title": "9. İkiüzlü bucaqlar və perpendikulyar müstəvilər",
+              "page": 58,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "3. TRİQONOMETRİK İFADƏLƏR VƏ ÇEVRİLMƏLƏR",
+          "topics": [
+            {
+              "title": "10. Dönmə bucaqları, radian və dərəcə ölçüsü",
+              "page": 71,
+              "path": ""
+            },
+            {
+              "title": "11. Vahid çevrə və triqonometrik funksiyalar",
+              "page": 81,
+              "path": ""
+            },
+            {
+              "title": "12. Çevirmə və əsas triqonometrik eyniliklər",
+              "page": 94,
+              "path": ""
+            },
+            {
+              "title": "13. Toplama düsturları və onların nəticələri",
+              "page": 103,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "4. SİNUSLAR VƏ KOSİNUSLAR TEOREMLƏRİ. TRİQONOMETRİK QRAFİKLƏR",
+          "topics": [
+            {
+              "title": "14. Sinuslar və kosinuslar teoremləri",
+              "page": 117,
+              "path": ""
+            },
+            {
+              "title": "15. Triqonometrik funksiyaların qrafikləri və dövrilik",
+              "page": 134,
+              "path": ""
+            },
+            {
+              "title": "16. Tərs triqonometrik funksiyalar və sadə triqonometrik tənliklər",
+              "page": 195,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "5. ÇOXÜZLÜLƏR, FƏZA FİQURLARININ SƏTHİ VƏ HƏCMİ",
+          "topics": [
+            {
+              "title": "17. Çoxüzlülər, prizmalar və onların səthinin sahəsi",
+              "page": 166,
+              "path": ""
+            },
+            {
+              "title": "18. Piramida və kəsik piramidanın səthinin sahəsi",
+              "page": 183,
+              "path": ""
+            },
+            {
+              "title": "19. Prizma və piramidanın həcmi",
+              "page": 219,
+              "path": ""
+            },
+            {
+              "title": "20. Fəza fiqurlarının oxşarlığı, səthləri və həcmləri",
+              "page": 232,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "6. ÜSTLÜ VƏ LOQARİFMİK FUNKSİYALAR. EHTİMAL",
+          "topics": [
+            {
+              "title": "21. Həqiqi üstlü qüvvət və üstlü funksiya",
+              "page": 245,
+              "path": ""
+            },
+            {
+              "title": "22. Ədədin loqarifmi və loqarifmik funksiya",
+              "page": 258,
+              "path": ""
+            },
+            {
+              "title": "23. Üstlü və loqarifmik tənliklər və bərabərsizliklər",
+              "page": 268,
+              "path": ""
+            },
+            {
+              "title": "24. Təsadüfi seçim, Bernulli sınaqları və binomial açılış",
+              "page": 283,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "azerbaycan-tarixi-10",
@@ -1886,35 +3435,535 @@
       "source_url": "https://trims.edu.az/noduploads/book/quot-azarbaycan-tarixi-quot-fanni-uzra-10-cu-sinif-ucun-darslik-1667310277-901.pdf",
       "path": "/textbooks/10/azerbaycan-tarixi-10/book.pdf",
       "contentPath": "public/textbooks/10/azerbaycan-tarixi-10",
-      "topics": "1. İbtidai icma cəmiyyəti\n2. Azərbaycan ərazisində ilk tayfa ittifaqları və dövlət qurumları\n3. İlk Azərbaycan dövləti - Manna\n4. Azərbaycan eradan əvvəl VI-IV əsrlərdə\n5. Atropatena dövləti\n6. Albaniya dövləti\n7. Mədəniyyət\n8. Azərbaycan Sasanilər dövründə\n9. Albaniya Mihranilər sülaləsi dövründə. Cavanşir\n10. Azərbaycanın Ərəb xilafətinin tərkibinə daxil olması\n11. Xilafətin Azərbaycandakı siyasəti\n12. Azadlıq hərəkatı, Babək\n13. Şirvanşahlar dövləti. Dərbənd əmirliyi\n14. Sacı, Salari və Rəvvadi dövlətləri\n15. Şəddadilər dövləti. Tiflis müsəlman əmirliyi\n16. Erken orta əsrlərdə sosial-iqtisadi həyat\n17. Mədəniyyət\n18. Azərbaycan və Səlcuqlar\n19. Azərbaycan Atabəyləri (Eldənizlər) dövləti\n20. Şirvanşahlar XI-XIV əsrlərdə"
+      "topics": [
+        "1. İbtidai icma cəmiyyəti",
+        "2. Azərbaycan ərazisində ilk tayfa ittifaqları və dövlət qurumları",
+        "3. İlk Azərbaycan dövləti - Manna",
+        "4. Azərbaycan eradan əvvəl VI-IV əsrlərdə",
+        "5. Atropatena dövləti",
+        "6. Albaniya dövləti",
+        "7. Qədim dövrdə mədəniyyət",
+        "8. Azərbaycan Sasanilər dövründə",
+        "9. Albaniya Mihranilər sülaləsi dövründə. Cavanşir",
+        "10. Azərbaycanın Ərəb xilafətinin tərkibinə daxil olması",
+        "11. Xilafətin Azərbaycandakı siyasəti",
+        "12. Azadlıq hərəkatı, Babək",
+        "13. Şirvanşahlar dövləti. Dərbənd əmirliyi",
+        "14. Sacı, Salari və Rəvvadi dövlətləri",
+        "15. Şəddadilər dövləti. Tiflis müsəlman əmirliyi",
+        "16. Erkən orta əsrlərdə sosial-iqtisadi həyat",
+        "17. Erkən orta əsrlərdə mədəniyyət",
+        "18. Azərbaycan və Səlcuqlar",
+        "19. Azərbaycan Atabəyləri (Eldənizlər) dövləti",
+        "20. Şirvanşahlar XI-XIV əsrlərdə",
+        "21. İntibah mədəniyyəti",
+        "22. Azərbaycan monqol yürüşləri dövründə",
+        "23. Azərbaycan Hülakülər dövlətinin tərkibində",
+        "24. Azərbaycan Cəlairilər və Teymurilərin hakimiyyəti dövründə",
+        "25. Qaraqoyunlu dövləti",
+        "26. Ağqoyunlu dövləti",
+        "27. Şirvanşahlar dövləti XIV əsrin sonları - XV əsrin əvvəllərində",
+        "28. Şəki hakimliyi. Səfəvilərin Ərdəbil hakimliyi",
+        "29. XIII-XV əsrlərdə mədəniyyət",
+        "30. Səfəvilər dövlətinin yaranması və yüksəlişi",
+        "31. Səfəvilər dövləti XVI əsrin son rübündə",
+        "32. Səfəvilər dövləti Şah I Abbasın hakimiyyəti illərində",
+        "33. Səfəvilər dövləti XVII əsrin ikinci yarısı - XVIII əsrin əvvəllərində",
+        "34. Azərbaycanın sosial-iqtisadi inkişaf xüsusiyyətləri",
+        "35. Səfəvilər dövründə mədəniyyət",
+        "36. Azərbaycan torpaqlarının azad olunması uğrunda mübarizə. Nadir şah",
+        "37. Quba xanlığının birləşdirmə siyasəti",
+        "38. Şəki xanlığı. Car-Balakən camaatlığı",
+        "39. Qarabağ xanlığı",
+        "40. Naxçıvan və İrəvan xanlıqları",
+        "41. Cənub xanlıqları",
+        "42. Ağaməhəmməd şah Qacarın mərkəzləşdirmə siyasəti",
+        "43. Xanlıqlar dövründə sosial-iqtisadi həyat",
+        "44. Xanlıqlar dövründə mədəniyyət"
+      ],
+      "chapters": [
+        {
+          "chapter": "I BÖLMƏ: AZƏRBAYCAN QƏDİM DÖVRDƏ",
+          "topics": [
+            {
+              "title": "1. İbtidai icma cəmiyyəti",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "2. Azərbaycan ərazisində ilk tayfa ittifaqları və dövlət qurumları",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "3. İlk Azərbaycan dövləti - Manna",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "4. Azərbaycan eradan əvvəl VI-IV əsrlərdə",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "5. Atropatena dövləti",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "6. Albaniya dövləti",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "7. Qədim dövrdə mədəniyyət",
+              "page": 42,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II BÖLMƏ: AZƏRBAYCAN III-XI ƏSRLƏRDƏ",
+          "topics": [
+            {
+              "title": "8. Azərbaycan Sasanilər dövründə",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "9. Albaniya Mihranilər sülaləsi dövründə. Cavanşir",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "10. Azərbaycanın Ərəb xilafətinin tərkibinə daxil olması",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "11. Xilafətin Azərbaycandakı siyasəti",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "12. Azadlıq hərəkatı, Babək",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "13. Şirvanşahlar dövləti. Dərbənd əmirliyi",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "14. Sacı, Salari və Rəvvadi dövlətləri",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "15. Şəddadilər dövləti. Tiflis müsəlman əmirliyi",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "16. Erkən orta əsrlərdə sosial-iqtisadi həyat",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "17. Erkən orta əsrlərdə mədəniyyət",
+              "page": 102,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III BÖLMƏ: AZƏRBAYCAN XI-XV ƏSRLƏRDƏ",
+          "topics": [
+            {
+              "title": "18. Azərbaycan və Səlcuqlar",
+              "page": 108,
+              "path": ""
+            },
+            {
+              "title": "19. Azərbaycan Atabəyləri (Eldənizlər) dövləti",
+              "page": 114,
+              "path": ""
+            },
+            {
+              "title": "20. Şirvanşahlar XI-XIV əsrlərdə",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "21. İntibah mədəniyyəti",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "22. Azərbaycan monqol yürüşləri dövründə",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "23. Azərbaycan Hülakülər dövlətinin tərkibində",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "24. Azərbaycan Cəlairilər və Teymurilərin hakimiyyəti dövründə",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "25. Qaraqoyunlu dövləti",
+              "page": 150,
+              "path": ""
+            },
+            {
+              "title": "26. Ağqoyunlu dövləti",
+              "page": 156,
+              "path": ""
+            },
+            {
+              "title": "27. Şirvanşahlar dövləti XIV əsrin sonları - XV əsrin əvvəllərində",
+              "page": 162,
+              "path": ""
+            },
+            {
+              "title": "28. Şəki hakimliyi. Səfəvilərin Ərdəbil hakimliyi",
+              "page": 168,
+              "path": ""
+            },
+            {
+              "title": "29. XIII-XV əsrlərdə mədəniyyət",
+              "page": 174,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV BÖLMƏ: AZƏRBAYCAN XVI-XVIII ƏSRLƏRDƏ",
+          "topics": [
+            {
+              "title": "30. Səfəvilər dövlətinin yaranması və yüksəlişi",
+              "page": 180,
+              "path": ""
+            },
+            {
+              "title": "31. Səfəvilər dövləti XVI əsrin son rübündə",
+              "page": 186,
+              "path": ""
+            },
+            {
+              "title": "32. Səfəvilər dövləti Şah I Abbasın hakimiyyəti illərində",
+              "page": 192,
+              "path": ""
+            },
+            {
+              "title": "33. Səfəvilər dövləti XVII əsrin ikinci yarısı - XVIII əsrin əvvəllərində",
+              "page": 198,
+              "path": ""
+            },
+            {
+              "title": "34. Azərbaycanın sosial-iqtisadi inkişaf xüsusiyyətləri",
+              "page": 204,
+              "path": ""
+            },
+            {
+              "title": "35. Səfəvilər dövründə mədəniyyət",
+              "page": 210,
+              "path": ""
+            },
+            {
+              "title": "36. Azərbaycan torpaqlarının azad olunması uğrunda mübarizə. Nadir şah",
+              "page": 216,
+              "path": ""
+            },
+            {
+              "title": "37. Quba xanlığının birləşdirmə siyasəti",
+              "page": 222,
+              "path": ""
+            },
+            {
+              "title": "38. Şəki xanlığı. Car-Balakən camaatlığı",
+              "page": 228,
+              "path": ""
+            },
+            {
+              "title": "39. Qarabağ xanlığı",
+              "page": 234,
+              "path": ""
+            },
+            {
+              "title": "40. Naxçıvan və İrəvan xanlıqları",
+              "page": 240,
+              "path": ""
+            },
+            {
+              "title": "41. Cənub xanlıqları",
+              "page": 246,
+              "path": ""
+            },
+            {
+              "title": "42. Ağaməhəmməd şah Qacarın mərkəzləşdirmə siyasəti",
+              "page": 252,
+              "path": ""
+            },
+            {
+              "title": "43. Xanlıqlar dövründə sosial-iqtisadi həyat",
+              "page": 258,
+              "path": ""
+            },
+            {
+              "title": "44. Xanlıqlar dövründə mədəniyyət",
+              "page": 264,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ingilis-dili-esas-10",
       "title": "İngilis dili 10 (əsas xarici dil)",
       "subject": "Xarici dil",
       "type": "ederslik_html",
-      "topics": "UNIT 1. KINDNESS\nUNIT 2. WE ARE VICTORIOUS!\nUNIT 3. CULTURES\nUNIT 4. ENVIRONMENTAL PROBLEMS\nUNIT 5. SUCCESS\nUNIT 6. HEALTH IS WEALTH\nUNIT 7. STAGES OF LIFE\nUNIT 8. HAPPINESS\nUNIT 9. MEDIA"
+      "topics": [
+        "1.1. Unit 1: Kindness and Moral Values",
+        "1.2. Unit 2: We Are Victorious! (Patriotism & Karabakh)",
+        "1.3. Unit 3: World Cultures and Traditions",
+        "2.1. Unit 4: Environmental Problems and Green Energy",
+        "2.2. Unit 5: Keys to Success and Career Aspirations",
+        "2.3. Unit 6: Health is Wealth and Healthy Lifestyle",
+        "3.1. Unit 7: Stages of Life and Personal Growth",
+        "3.2. Unit 8: The Science of Happiness and Well-being",
+        "3.3. Unit 9: Mass Media, Digital Literacy and News"
+      ],
+      "chapters": [
+        {
+          "chapter": "UNIT 1-3: PERSONAL VALUES, SUCCESS AND CULTURES",
+          "topics": [
+            {
+              "title": "1.1. Unit 1: Kindness and Moral Values",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Unit 2: We Are Victorious! (Patriotism & Karabakh)",
+              "page": 16,
+              "path": ""
+            },
+            {
+              "title": "1.3. Unit 3: World Cultures and Traditions",
+              "page": 26,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 4-6: ENVIRONMENT, SUCCESS AND HEALTH",
+          "topics": [
+            {
+              "title": "2.1. Unit 4: Environmental Problems and Green Energy",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "2.2. Unit 5: Keys to Success and Career Aspirations",
+              "page": 46,
+              "path": ""
+            },
+            {
+              "title": "2.3. Unit 6: Health is Wealth and Healthy Lifestyle",
+              "page": 56,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 7-9: SOCIETY, HAPPINESS AND MEDIA",
+          "topics": [
+            {
+              "title": "3.1. Unit 7: Stages of Life and Personal Growth",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "3.2. Unit 8: The Science of Happiness and Well-being",
+              "page": 76,
+              "path": ""
+            },
+            {
+              "title": "3.3. Unit 9: Mass Media, Digital Literacy and News",
+              "page": 86,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "alman-dili-esas-10",
       "title": "Alman dili 10 (əsas xarici dil)",
       "subject": "Xarici dil",
       "type": "ederslik_html",
-      "topics": "Soziale Netzwerke\nBin ich Smartphone süchtig?\nFernseher und Radio\nMein Computer\nGesunde Ernährung für gesundes Leben\nGesund durch Sport\nMein Arzt heißt Google\nStark im Leben\nMacht Reisen immer Spaß?\nReisen früher und heute\nGöjgöl ist unersetzlich\nBerlin gefällt mir"
+      "topics": [
+        "1.1. Medien und Technologie (Soziale Netzwerke und Computer)",
+        "1.2. Gesundheit und Fitness (Ernährung und Sport)",
+        "1.3. Reisen macht Spaß (Reisen in Aserbaidschan und Berlin)",
+        "2.1. Das brauche ich! (Konsum, Freundschaft und Innovation)",
+        "2.2. Für Mensch und Umwelt (Klimaschutz und sauberes Wasser)",
+        "2.3. Zeit der Berufswahl (Lebenslauf und Karrierewege)"
+      ],
+      "chapters": [
+        {
+          "chapter": "LEKTION 1-3: MEDIEN, GESUNDHEIT UND REISEN",
+          "topics": [
+            {
+              "title": "1.1. Medien und Technologie (Soziale Netzwerke und Computer)",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Gesundheit und Fitness (Ernährung und Sport)",
+              "page": 20,
+              "path": ""
+            },
+            {
+              "title": "1.3. Reisen macht Spaß (Reisen in Aserbaidschan und Berlin)",
+              "page": 34,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 4-6: KONSUM, UMWELT UND BERUFSWAHL",
+          "topics": [
+            {
+              "title": "2.1. Das brauche ich! (Konsum, Freundschaft und Innovation)",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "2.2. Für Mensch und Umwelt (Klimaschutz und sauberes Wasser)",
+              "page": 62,
+              "path": ""
+            },
+            {
+              "title": "2.3. Zeit der Berufswahl (Lebenslauf und Karrierewege)",
+              "page": 76,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "fransiz-dili-esas-10",
       "title": "Fransız dili 10 (əsas xarici dil)",
       "subject": "Xarici dil",
       "type": "ederslik_html",
-      "topics": "Leçon 1. Au revoir les vacances\nLeçon 2. C'est la rentrée\nLeçon 3. L'enseignement secondaire en France\nLeçon 4. Ma matière préférée\nLeçon 5. L'uniforme à l'école\nLeçon 6. Le vêtement comme marque de distinction\nLeçon 7. Les années collège\nLeçon 8. Ma famille est mon refuge\nLeçon 1. Avoir sa chambre, c'est un rêve\nLeçon 2. La Gloire de mon père\nLeçon 3. Les médias\nLeçon 4. Lire, c'est quoi\nLeçon 5. Le passe-muraille\nLeçon 6. L'amitié\nLeçon 7. L'état d'esprit des collégiens\nLeçon 8. Ordinateur"
+      "topics": [
+        "1.1. Unité 1: Vie scolaire et enseignement",
+        "1.2. Unité 2: Vie sociale, famille et médias",
+        "2.1. Unité 3: Le français en Azerbaïdjan (Culture et Alexandre Dumas)",
+        "2.2. Unité 4: L'Azerbaïdjan dans le monde (Sport, art et multiculturalisme)"
+      ],
+      "chapters": [
+        {
+          "chapter": "UNITÉ 1-2: VIE SCOLAIRE ET VIE SOCIALE",
+          "topics": [
+            {
+              "title": "1.1. Unité 1: Vie scolaire et enseignement",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Unité 2: Vie sociale, famille et médias",
+              "page": 26,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 3-4: LE FRANÇAIS EN AZERBAÏDJAN ET L'AZERBAÏDJAN DANS LE MONDE",
+          "topics": [
+            {
+              "title": "2.1. Unité 3: Le français en Azerbaïdjan (Culture et Alexandre Dumas)",
+              "page": 46,
+              "path": ""
+            },
+            {
+              "title": "2.2. Unité 4: L'Azerbaïdjan dans le monde (Sport, art et multiculturalisme)",
+              "page": 66,
+              "path": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "rus-dili-esas-10",
       "title": "Rus dili 10 (əsas xarici dil)",
       "subject": "Xarici dil",
       "type": "ederslik_html",
-      "topics": "Город ветров\nСтолица Карабахского ханства\nДревняя столица\nСеление Лахыдж\nДревнейший город Азербайджана\nСокровище азербайджанской архитектуры\n«Железная леди» Карабаха\n«Зеркало» средневековой архитектуры Азербайджана\nГород фонтанов\n«Волшебник» из Барселоны\nАрхитектор будущего\nАшик-Кериб\nПраведный судья\nМеч и перо\nПоследний лист\nХамелеон\nПисьмо не дошло"
+      "topics": [
+        "1.1. Ты дыханье моё, Азербайджан! (Баку, Шуша, Лагич)",
+        "1.2. Застывшая в камне музыка (Архитектура Азербайджана и мира)",
+        "1.3. Жизнь в образах и словах (Классическая литература)",
+        "2.1. Универсальный язык человечества (Мугам и музыка)",
+        "2.2. Поэзия, которую видят (Изобразительное искусство)",
+        "2.3. Легендарные женщины Азербайджана",
+        "2.4. Великое искусство кино Азербайджана"
+      ],
+      "chapters": [
+        {
+          "chapter": "РАЗДЕЛ 1-3: АЗЕРБАЙДЖАН, АРХИТЕКТУРА И ЛИТЕРАТУРА",
+          "topics": [
+            {
+              "title": "1.1. Ты дыханье моё, Азербайджан! (Баку, Шуша, Лагич)",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Застывшая в камне музыка (Архитектура Азербайджана и мира)",
+              "page": 22,
+              "path": ""
+            },
+            {
+              "title": "1.3. Жизнь в образах и словах (Классическая литература)",
+              "page": 38,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 4-7: ИСКУССТВО, ЖЕНЩИНЫ-ЛЕГЕНДЫ И КИНЕМАТОГРАФ",
+          "topics": [
+            {
+              "title": "2.1. Универсальный язык человечества (Мугам и музыка)",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "2.2. Поэзия, которую видят (Изобразительное искусство)",
+              "page": 70,
+              "path": ""
+            },
+            {
+              "title": "2.3. Легендарные женщины Азербайджана",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "2.4. Великое искусство кино Азербайджана",
+              "page": 102,
+              "path": ""
+            }
+          ]
+        }
+      ]
     }
   ],
   "11": [
@@ -1926,22 +3975,267 @@
       "e_derslik_id": "276",
       "topics": [
         "1. Yer planetinin yaranması. Həyat anlayışı",
-        "2. Həyatın yaranması haqqında fərziyyələr",
-        "3. Həyatın yaranması haqqında təsəvvürlərin inkişafı",
-        "4. Həyatın əmələ gəlməsi haqqında müasir təsəvvürlər",
-        "5. Bioloji monomer və polimerlərin yaranması",
-        "6. Çoxhüceyrəliliyə doğru yol",
-        "7. Təbii seçmənin formaları",
-        "8. Orqanizmlərdə uyğunlaşmalar",
-        "9. Mikroorqanizmlər",
-        "10. Mikrobiologiyanın şöbələri",
+        "2. Həyatın yaranması haqqında fərziyyələr (Abiogenez, Biogenez, Panspermiya)",
+        "3. Həyatın yaranması haqqında təsəvvürlərin inkişafı (Redi və Paster təcrübələri)",
+        "4. Həyatın əmələ gəlməsi haqqında müasir təsəvvürlər (Oparin-Xoldeyn, Koaservatlar)",
+        "5. Bioloji monomer və polimerlərin yaranması (Miller-Yuri təcrübəsi, RNT dünyası)",
+        "6. Çoxhüceyrəliliyə doğru yol (Koloniya formaları, İxtisaslaşma)",
+        "7. Təbii seçmənin formaları (Hərəkətverici, Stabilləşdirici, Dizruptiv seçmə)",
+        "8. Orqanizmlərdə uyğunlaşmalar (Morfoloji, Fizioloji, Davranış, Maskalanma və Mimikriya)",
+        "9. Mikroorqanizmlər və onların quruluş xüsusiyyətləri",
+        "10. Mikrobiologiyanın şöbələri və tədqiqat metodları",
         "11. Mikroorqanizmlər və ətraf mühit. Torpağın mikroflorası",
-        "12. Suyun mikroflorası",
-        "Mövzu: 13. Atmosfer havasının mikroflorası",
-        "Mövzu: 14. Qida məhsullarının mikroflorası",
-        "Mövzu: 15. İnfeksion proseslərin gedişində mikroorqanizmlərin rolu",
-        "Mövzu: 16. İnfeksion proseslərin baş verməsində sahib orqanizmin rolu",
-        "Mövzu: 17. Mühit şəraitinin infeksion xəstəliklərin gedişinə təsiri"
+        "12. Suyun mikroflorası və sanitar-bakterioloji qiymətləndirilməsi",
+        "13. Atmosfer havasının mikroflorası və aeromikrobiologiya",
+        "14. Qida məhsullarının mikroflorası və onların qorunması",
+        "15. İnfeksion proseslərin gedişində mikroorqanizmlərin rolu (Patogenlik və Virulentlik)",
+        "16. İnfeksion proseslərin baş verməsində sahib orqanizmin rolu və İmmunitet",
+        "17. Mühit şəraitinin infeksion xəstəliklərin gedişinə təsiri və Profilaktika",
+        "18. Seleksiyanın vəzifələri və əhəmiyyəti",
+        "19. Süni seçmə və onun formaları (Fərdi və Kütləvi seçmə)",
+        "20. Bitki və heyvan seleksiyasının metodları (İnbridinq, Autbridinq, Heterozis)",
+        "21. Mikroorqanizmlərin seleksiyası və Poliploidiya",
+        "22. Gen və Hüceyrə mühəndisliyi (Transgen orqanizmlər, Plazmidlər)",
+        "23. Canlılarda klonlaşdırma və Kök hüceyrələri",
+        "24. Biotexnologiya və onun müasir sənayedə tətbiqi",
+        "25. Bionika və onun texnikadakı tətbiqləri",
+        "26. Biosfer və onun sərhədləri. V.İ.Vernadskinin biosfer təlimi",
+        "27. Biosferdə canlı maddə və onun funksiyaları (Qaz, Konsentrasiya, Oksidləşmə-reduksiya)",
+        "28. Biosferdə enerji çevrilmələri və Biogen maddələr dövranı (Karbon, Azot, Fosfor)",
+        "29. Quru və okean sahəsinin biokütləsi və Biomüxtəliflik",
+        "30. İnsan və biosfer. Noosfer təlimi",
+        "31. Qlobal ekoloji problemlər və Ətraf mühitin mühafizəsi",
+        "32. Xordalıların embrional inkişafı (Qastrulyasiya, Neyrula, Rüşeym vərəqələri)",
+        "33. Postembrional inkişaf və onun mərhələləri",
+        "34. İnsan psixikasının inkişaf xüsusiyyətləri və Sağlam psixologiya",
+        "35. Təşviş və Depressiya pozuntuları, onların profilaktikası",
+        "36. Sağlam ailə və reproduktiv sağlamlıq",
+        "37. Mitoz və Meyoz bölünmələrin müqayisəli təhlili",
+        "38. Hüceyrə bölünməsində xromosom və DNT dəstlərinin dinamikası",
+        "39. Hüceyrənin nəzarətsiz bölünməsi: Şişlər (Xoşxassəli və Bədxassəli şişlər)",
+        "40. Xərçəng xəstəliyi, onun profilaktikası və müasir müalicə metodları"
+      ],
+      "chapters": [
+        {
+          "chapter": "1-ci Hissə / Bölmə",
+          "topics": [
+            {
+              "title": "1. Yer planetinin yaranması. Həyat anlayışı",
+              "page": 4,
+              "path": ""
+            },
+            {
+              "title": "2. Həyatın yaranması haqqında fərziyyələr (Abiogenez, Biogenez, Panspermiya)",
+              "page": 8,
+              "path": ""
+            },
+            {
+              "title": "3. Həyatın yaranması haqqında təsəvvürlərin inkişafı (Redi və Paster təcrübələri)",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "4. Həyatın əmələ gəlməsi haqqında müasir təsəvvürlər (Oparin-Xoldeyn, Koaservatlar)",
+              "page": 16,
+              "path": ""
+            },
+            {
+              "title": "5. Bioloji monomer və polimerlərin yaranması (Miller-Yuri təcrübəsi, RNT dünyası)",
+              "page": 20,
+              "path": ""
+            },
+            {
+              "title": "6. Çoxhüceyrəliliyə doğru yol (Koloniya formaları, İxtisaslaşma)",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "7. Təbii seçmənin formaları (Hərəkətverici, Stabilləşdirici, Dizruptiv seçmə)",
+              "page": 28,
+              "path": ""
+            },
+            {
+              "title": "8. Orqanizmlərdə uyğunlaşmalar (Morfoloji, Fizioloji, Davranış, Maskalanma və Mimikriya)",
+              "page": 32,
+              "path": ""
+            },
+            {
+              "title": "9. Mikroorqanizmlər və onların quruluş xüsusiyyətləri",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "10. Mikrobiologiyanın şöbələri və tədqiqat metodları",
+              "page": 40,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "2-ci Hissə / Bölmə",
+          "topics": [
+            {
+              "title": "11. Mikroorqanizmlər və ətraf mühit. Torpağın mikroflorası",
+              "page": 44,
+              "path": ""
+            },
+            {
+              "title": "12. Suyun mikroflorası və sanitar-bakterioloji qiymətləndirilməsi",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "13. Atmosfer havasının mikroflorası və aeromikrobiologiya",
+              "page": 52,
+              "path": ""
+            },
+            {
+              "title": "14. Qida məhsullarının mikroflorası və onların qorunması",
+              "page": 56,
+              "path": ""
+            },
+            {
+              "title": "15. İnfeksion proseslərin gedişində mikroorqanizmlərin rolu (Patogenlik və Virulentlik)",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "16. İnfeksion proseslərin baş verməsində sahib orqanizmin rolu və İmmunitet",
+              "page": 64,
+              "path": ""
+            },
+            {
+              "title": "17. Mühit şəraitinin infeksion xəstəliklərin gedişinə təsiri və Profilaktika",
+              "page": 68,
+              "path": ""
+            },
+            {
+              "title": "18. Seleksiyanın vəzifələri və əhəmiyyəti",
+              "page": 72,
+              "path": ""
+            },
+            {
+              "title": "19. Süni seçmə və onun formaları (Fərdi və Kütləvi seçmə)",
+              "page": 76,
+              "path": ""
+            },
+            {
+              "title": "20. Bitki və heyvan seleksiyasının metodları (İnbridinq, Autbridinq, Heterozis)",
+              "page": 80,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "3-ci Hissə / Bölmə",
+          "topics": [
+            {
+              "title": "21. Mikroorqanizmlərin seleksiyası və Poliploidiya",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "22. Gen və Hüceyrə mühəndisliyi (Transgen orqanizmlər, Plazmidlər)",
+              "page": 88,
+              "path": ""
+            },
+            {
+              "title": "23. Canlılarda klonlaşdırma və Kök hüceyrələri",
+              "page": 92,
+              "path": ""
+            },
+            {
+              "title": "24. Biotexnologiya və onun müasir sənayedə tətbiqi",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "25. Bionika və onun texnikadakı tətbiqləri",
+              "page": 100,
+              "path": ""
+            },
+            {
+              "title": "26. Biosfer və onun sərhədləri. V.İ.Vernadskinin biosfer təlimi",
+              "page": 104,
+              "path": ""
+            },
+            {
+              "title": "27. Biosferdə canlı maddə və onun funksiyaları (Qaz, Konsentrasiya, Oksidləşmə-reduksiya)",
+              "page": 108,
+              "path": ""
+            },
+            {
+              "title": "28. Biosferdə enerji çevrilmələri və Biogen maddələr dövranı (Karbon, Azot, Fosfor)",
+              "page": 112,
+              "path": ""
+            },
+            {
+              "title": "29. Quru və okean sahəsinin biokütləsi və Biomüxtəliflik",
+              "page": 116,
+              "path": ""
+            },
+            {
+              "title": "30. İnsan və biosfer. Noosfer təlimi",
+              "page": 120,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "4-ci Hissə / Bölmə",
+          "topics": [
+            {
+              "title": "31. Qlobal ekoloji problemlər və Ətraf mühitin mühafizəsi",
+              "page": 124,
+              "path": ""
+            },
+            {
+              "title": "32. Xordalıların embrional inkişafı (Qastrulyasiya, Neyrula, Rüşeym vərəqələri)",
+              "page": 128,
+              "path": ""
+            },
+            {
+              "title": "33. Postembrional inkişaf və onun mərhələləri",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "34. İnsan psixikasının inkişaf xüsusiyyətləri və Sağlam psixologiya",
+              "page": 136,
+              "path": ""
+            },
+            {
+              "title": "35. Təşviş və Depressiya pozuntuları, onların profilaktikası",
+              "page": 140,
+              "path": ""
+            },
+            {
+              "title": "36. Sağlam ailə və reproduktiv sağlamlıq",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "37. Mitoz və Meyoz bölünmələrin müqayisəli təhlili",
+              "page": 148,
+              "path": ""
+            },
+            {
+              "title": "38. Hüceyrə bölünməsində xromosom və DNT dəstlərinin dinamikası",
+              "page": 152,
+              "path": ""
+            },
+            {
+              "title": "39. Hüceyrənin nəzarətsiz bölünməsi: Şişlər (Xoşxassəli və Bədxassəli şişlər)",
+              "page": 156,
+              "path": ""
+            },
+            {
+              "title": "40. Xərçəng xəstəliyi, onun profilaktikası və müasir müalicə metodları",
+              "page": 160,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -1951,27 +4245,23 @@
       "type": "ederslik_html",
       "e_derslik_id": "282",
       "topics": [
-        "I FƏSİL. Elektrostatika və Sabit cərəyan",
-        "1.1. Elektrik yükü. Elektromaqnit sahəsi",
-        "1.2. Elektrostatik sahə. Elektrostatik sahənin intensivliyi",
+        "1.1. Elektrik yükü. Elektromaqnit qarşılıqlı təsiri. Kulon qanunu",
+        "1.2. Elektrik sahəsinin intensivliyi. Superpozisiya prinsipi",
         "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
         "1.4. Kondensator. Elektrik tutumu",
         "1.5. Kondensatorların birləşdirilməsi",
-        "1.6. Yüklü zərrəciyin maqnit sahəsində hərəkəti. Lorens qüvvəsi",
+        "1.6. Yüklü zərrəciyin elektrik və maqnit sahəsində hərəkəti",
         "1.7. Maqnit sahəsinin cərəyanlı naqilə təsiri. Amper qüvvəsi",
         "1.8. Maqnit seli. Elektromaqnit induksiyası hadisəsi",
-        "1.9. Elektromaqnit induksiyası qanunu. Maqnit sahəsində hərəkət edən naqillərdə induksiya elektrik hərəkət qüvvəsi",
+        "1.9. Elektromaqnit induksiyası qanunu. İnduksiya EHQ",
         "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi",
-        "Mövzu: 2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsinin elementləri",
-        "Mövzu: 2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik",
-        "Mövzu: 2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu",
-        "Mövzu: 2.4. Vakuumda elektrik cərəyanı",
-        "Mövzu: 2.5. Qazlarda elektrik cərəyanı",
-        "Mövzu: 2.6. Elektrolit məhlullarında elektrik cərəyanı. Elektroliz qanunu",
-        "Mövzu: 2.7. Yarımkeçiricilərdə elektrik cərəyanı",
-        "Mövzu: 2.8. Yarımkeçirici diod. Tranzistor",
-        "Mövzu: II fəslə aid məsələlər (Müxtəlif mühitlərdə sabit cərəyan qanunları)",
-        "II FƏSİL. Maqnit sahəsi və Elektromaqnit induksiyası",
+        "2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsi",
+        "2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik",
+        "2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu",
+        "2.4. Vakuumda elektrik cərəyanı. Elektron emissiyası",
+        "2.5. Qazlarda elektrik cərəyanı. Qaz boşalmaları",
+        "2.6. Elektrolitlərdə elektrik cərəyanı. Faradeyin elektroliz qanunları",
+        "2.7. Yarımkeçiricilərdə elektrik cərəyanı. Diod və Tranzistor",
         "Maqnit sahəsinin induksiyası və Amper qüvvəsi",
         "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti",
         "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)",
@@ -1980,21 +4270,18 @@
         "Öz-özünə induksiya hadisəsi və İnduktivlik",
         "Maqnit sahəsinin enerjisi və enerji sıxlığı",
         "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi",
-        "III FƏSİL. Elektromaqnit rəqsləri və dalğaları",
         "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
         "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan",
         "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
         "Dəyişən cərəyanın gücü və Transformator",
         "Elektromaqnit dalğaları, onların şüalanması və xassələri",
         "Radiolokasiya, televiziya və müasir rabitə vasitələri",
-        "IV FƏSİL. Optika və Xüsusi nisbilik nəzəriyyəsi",
         "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları",
         "Linzalar və optik cihazlar",
         "İşığın interferensiyası və Koherent dalğalar",
         "İşığın difraksiyası və Difraksiya qəfəsi",
         "İşığın dispersionu və polyarlaşması",
         "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi",
-        "V FƏSİL. Kvant fizikası, Atom və Nüvə fizikası",
         "İstilik şüalanması və Plank hipotezi",
         "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi",
         "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)",
@@ -2011,7 +4298,6 @@
       "type": "ederslik_html",
       "e_derslik_id": "349",
       "topics": [
-        "I BÖLMƏ. Spirtlər və Fenollar",
         "İlkin yoxlama (Spirtlər və Fenollar)",
         "1.1.1. Adlandırılması və izomerliyi",
         "1.1.2. Alınması",
@@ -2022,13 +4308,11 @@
         "1.2.2. Qliserin",
         "1.3.1. Fenollar. Alınması, quruluşu və fiziki xassələri",
         "1.3.2. Fenolların kimyəvi xassələri və tətbiqi",
-        "II BÖLMƏ. Aldehidlər və Ketonlar",
         "Aldehidlərin və ketonların quruluşu, homoloji sırası və izomerliyi",
         "Aldehidlərin adlandırılması və alınma üsulları",
         "Aldehidlərin fiziki və kimyəvi xassələri (Gümüş-güzgü reaksiyası və oksidləşmə)",
         "Formaldehid, asetaldehid və asetonun sənayedə əhəmiyyəti və tətbiqi",
         "Aldehid və ketonlar üzrə ümumiləşdirici tapşırıqlar",
-        "III BÖLMƏ. Karbon turşuları, Mürəkkəb efirlər, Yağlar və Sabunlar",
         "Doymuş birəsaslı karbon turşuları: Homoloji sırası, izomerliyi və adlandırılması",
         "Doymuş birəsaslı karbon turşularının alınması, fiziki və kimyəvi xassələri",
         "Qarışqa turşusu və sirkə turşusunun xüsusi xassələri və tətbiqi",
@@ -2037,20 +4321,17 @@
         "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi",
         "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi",
         "Sabunlar və sintetik yuyucu vasitələr (Detergentlər)",
-        "IV BÖLMƏ. Karbohidratlar",
         "Karbohidratların təsnifatı və fotosintez prosesi",
         "Monosaxaridlər: Qlükoza və fruktozanın quruluşu, izomerliyi və xassələri",
         "Qlükozanın qıcqırma növləri və orqanizmdə rolu",
         "Disaxaridlər: Saxaroza və maltozanın quruluşu, hidrolizi və əhəmiyyəti",
         "Polisaxaridlər: Nişasta və sellülozanın quruluş fərqləri, kimyəvi xassələri",
         "Süni və sintetik liflər (Asetat ipəyi, Viskoz)",
-        "V BÖLMƏ. Azotlu üzvi birləşmələr və Zülallar",
         "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri",
         "Anilin (Aromatik amin): Alınması (Zinin reaksiyası) və kimyəvi xassələri",
         "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması",
         "Peptidlər və peptid rabitəsi",
-        "Zülallar: Quruluş səviyyələri (birincili, ikincili, üçüncülü, dördcülü), rəngli reaksiyaları və denaturasiyası",
-        "VI BÖLMƏ. Yüksəkmolekullu birləşmələr, Polimerlər və Yekun İcmal",
+        "Zülallar: Quruluş səviyyələri, rəngli reaksiyaları və denaturasiyası",
         "Polimerləşmə və polikondensləşmə reaksiyaları",
         "Plastik kütlələr (Polietilen, Polipropilen, Polivinilxlorid, Polistirol)",
         "Sintetik kauçuklar və rezin istehsalı",
@@ -2065,17 +4346,15 @@
       "type": "ederslik_html",
       "e_derslik_id": "817",
       "topics": [
-        "I FƏSİL. Çoxhədlilər və rasional tənliklər",
         "Çoxhədlinin çoxhədliyə bölünməsi",
         "Rasional köklərin tapılması",
         "Qalıq haqqında teorem",
         "Çoxhədlinin vuruqları haqqında teorem",
-        "Cəbri kəsrlərin ixtisarı",
-        "Həqiqi ədədlər və əməllər",
-        "Ədədi ardıcıllıqlar",
-        "Limit anlayışı",
+        "Kompleks ədədlər haqqında",
+        "Cəbrin əsas teoremi",
+        "Çoxhədli funksiya",
+        "Rasional funksiya",
         "Ümumiləşdirici tapşırıqlar",
-        "II FƏSİL. Funksiyalar, limit və kəsilməzlik",
         "Funksiyanın limiti və limitlər haqqında teoremlər",
         "Görkəmli limitlər və sonsuzluqda limit",
         "Funksiyanın kəsilməzliyi və kəsilmə nöqtələri",
@@ -2083,7 +4362,6 @@
         "Mürəkkəb və tərs funksiyalar",
         "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
         "Fəsil üzrə ümumiləşdirici tapşırıqlar",
-        "III FƏSİL. Törəmə və onun tətbiqləri",
         "Törəmə anlayışı, törəmənin həndəsi və fiziki mənası",
         "Diferensiallama qaydaları və cəmin, hasilin, nisbətin törəməsi",
         "Mürəkkəb funksiyanın və triqonometrik funksiyaların törəməsi",
@@ -2092,37 +4370,19 @@
         "Funksiyanın ən böyük və ən kiçik qiymətlərinin tapılması",
         "Əyriyə çəkilən toxunanın tənliyi",
         "Törəmənin köməyi ilə funksiyanın tədqiqi və qrafikinin qurulması",
-        "IV FƏSİL. İbtidai funksiya və inteqral",
         "İbtidai funksiya anlayışı və qeyri-müəyyən inteqral",
         "Əsas inteqral düsturları və inteqrallama qaydaları",
         "Müəyyən inteqral və Nyuton-Leybnis düsturu",
         "Əyrixətli trapesiyanın sahəsinin inteqral vasitəsilə hesablanması",
         "Fırlanma cisimlərinin həcminin inteqral vasitəsilə hesablanması",
         "İnteqralın fizikada və təbiətdə tətbiqləri",
-        "V FƏSİL. Fəza fiqurları (Fırlanma cisimləri) və Ehtimal",
         "Fırlanma cisimləri: Silindr, onun səthinin sahəsi və həcmi",
         "Konus və kəsik konus, onların səthinin sahəsi və həcmi",
         "Kürə və sfera, kürə sektorunun və seqmentinin həcmi",
         "Kombinatorikanın əsas prinsipləri (Permutasiya, Kombinezon, Qruplaşma)",
         "Hadisənin ehtimalı, asılı və asılı olmayan hadisələr",
         "Statistika, paylanma parametrləri və Bernulli düsturu",
-        "Yekun ümumiləşdirici təkrar",
-        "Kompleks ədədlər haqqında",
-        "Cəbrin əsas teoremi",
-        "Çoxhədli funksiya",
-        "Rasional funksiya",
-        "Funksiyanın tam tədqiqi və qrafikinin qurulması",
-        "Törəmənin tətbiqi - optimallaşdırma (ən böyük-kiçik dəyər) məsələləri",
-        "Qeyri-müəyyən inteqral anlayışı və əsas inteqral cədvəli",
-        "İnteqrallama üsulları: əvəzetmə üsulu və hissəli inteqrallama",
-        "Müəyyən inteqral - Nyuton-Leybnis formulası və xassələri",
-        "Müəyyən inteqral ilə sahə hesablanması",
-        "Diferensial tənliklərə giriş - ayrılan dəyişənlər metodu",
-        "İnteqral fəsli üzrə ümumiləşdirici tapşırıqlar",
-        "Ədəd ardıcıllıqları - tərif, limit və yaxınlaşma",
-        "Hesabi sıra və həndəsi sıraların cəmi",
-        "Ehtimal nəzəriyyəsinə giriş - klassik ehtimal",
-        "Riyaziyyat 11 kursunun ümumiləşdirici tapşırıqları"
+        "Yekun ümumiləşdirici təkrar"
       ]
     },
     {
@@ -2132,7 +4392,6 @@
       "type": "ederslik_html",
       "e_derslik_id": "812",
       "topics": [
-        "I HİSSƏ. Mətn və Fonetik-Leksik Normalar",
         "Böyük ömrün dan yeri",
         "Şəbi-hicran",
         "Sizin də bir basketbol səbətiniz varmı?",
@@ -2140,7 +4399,6 @@
         "Gəncə Müsəlman Qız Məktəbi",
         "Mətn",
         "Doroti Meri Kroufut Hodgkin",
-        "II HİSSƏ. Morfoloji və Sintaktik Normalar",
         "Nitq hissələrinin üslubi imkanları və morfoloji norma",
         "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları",
         "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar",
@@ -2149,7 +4407,6 @@
         "Söz sırası və sintaktik norma",
         "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma",
         "Mürəkkəb sintaktik bütövlər və dövrə",
-        "III HİSSƏ. Funksional Üslublar və Nitq Mədəniyyəti",
         "Azərbaycan ədəbi dilinin funksional üslubları",
         "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)",
         "Elmi üslub, terminologiya və mətndə terminlərin rolu",
@@ -2157,7 +4414,6 @@
         "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)",
         "Məişət üslubu və dialektlərin rolu",
         "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)",
-        "IV HİSSƏ. Mətn Nəzəriyyəsi və Redaktə",
         "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər",
         "Mətnin abzas quruluşu, mikro və makromövzular",
         "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)",
@@ -2173,7 +4429,6 @@
       "type": "ederslik_html",
       "e_derslik_id": "821",
       "topics": [
-        "I HİSSƏ. XX əsrin əvvəlləri Azərbaycan ədəbiyyatı (1900–1920)",
         "1. Cəlil Məmmədquluzadə. Həyatı və yaradıcılıq yolu",
         "2. Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası",
         "3. Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
@@ -2182,18 +4437,15 @@
         "6. Hüseyn Cavid. 'İblis' mənzum faciəsi",
         "7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
         "8. Məhəmmədhüseyn Şəhriyar. 'Türkün dili' və lirikası",
-        "II HİSSƏ. 1920–1960-cı illər Azərbaycan ədəbiyyatı (Sovet dövrü)",
         "9. Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı",
         "10. Səməd Vurğun. Həyatı və 'Vaqif' mənzum dramı",
         "11. Mikayıl Müşfiq. Həyatı və romantik lirikası",
         "12. Mehdi Hüseyn və Mir Cəlal nəsri",
         "13. İkinci Dünya müharibəsi dövrü ədəbiyyatı",
-        "III HİSSƏ. 1960–1990-cı illər Azərbaycan ədəbiyyatı ('Altmışıncılar' mərhələsi)",
         "14. İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı",
         "15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
         "16. Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması",
         "17. Xəlil Rza Ulutürk. Həyatı və istiqlal şeirləri",
-        "IV HİSSƏ. Cənubi Azərbaycan ədəbiyyatı, Müstəqillik dövrü və Ədəbiyyat Nəzəriyyəsi",
         "18. Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd",
         "19. Ədəbiyyat Nəzəriyyəsi: Bədii təsvir və ifadə vasitələri, şeir vəznləri"
       ]
@@ -2205,53 +4457,48 @@
       "type": "ederslik_html",
       "e_derslik_id": "807",
       "topics": [
-        "I FƏSİL. Şimal torpaqlarının işğalı və müstəmləkə rejimi",
         "1. Rusiya tərəfindən Azərbaycanın şimal torpaqlarının işğalına başlanması",
-        "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr",
-        "3. Rusiya imperiyasının müstəmləkə siyasəti",
-        "4. XIX əsrin 40-cı illərində keçirilən islahatlar",
-        "5. Yeni sosial münasibətlərin meydana gəlməsi",
-        "6. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri",
-        "7. Müstəmləkə əleyhinə çıxışlar. Milli demokratik hərəkat",
-        "8. Çarizmin milli qırğın siyasəti",
-        "9. Şimali Azərbaycan Birinci dünya müharibəsi illərində",
-        "II FƏSİL. Şimali Azərbaycan XIX əsrin ikinci yarısı - XX əsrin əvvəllərində",
-        "Kəndli islahatı və aqrar münasibətlərin inkişafı",
-        "Şimali Azərbaycanda kapitalist sənayesinin inkişafı və Bakı nefti",
-        "Milli burjuaziya və xeyriyyəçilik hərəkatı (Hacı Zeynalabdin Tağıyev və b.)",
-        "Milli oyanış, mətbuat (\"Əkinçi\") və maarifçilik hərəkatı",
-        "1905-1907-ci illər inqilabı dövründə Azərbaycanda ictimai-siyasi hərəkat",
-        "Siyasi partiyalar və təşkilatlar (\"Hümmət\", \"Müsavat\", \"Qeyrət\", \"İttifaq\")",
-        "Birinci Dünya müharibəsi illərində Şimali və Cənubi Azərbaycan",
-        "1918-ci il 31 Mart soyqırımı və milli faciə",
-        "III FƏSİL. Azərbaycan Xalq Cümhuriyyəti (1918–1920)",
-        "Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi",
-        "Qafqaz İslam Ordusu və Bakının azad edilməsi (15 sentyabr 1918)",
-        "AXC-nin dövlət quruculuğu, parlamenti və hökumət kabinələri",
-        "AXC-nin daxili, sosial-iqtisadi və hərbi siyasəti (Milli Ordu quruculuğu)",
-        "AXC-nin xarici siyasəti və Paris Sülh Konfransında müstəqilliyin de-fakto tanınması",
-        "Aprel işğalı (27-28 aprel 1920) və AXC-nin süqutu",
-        "IV FƏSİL. Azərbaycan Sovet hakimiyyəti illərində (1920–1991)",
-        "Azərbaycanda sovet rejiminin qurulması və milli müqavimət üsyanları (Gəncə, Qarabağ)",
-        "Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ və Naxçıvan məsələsi)",
-        "Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti",
-        "1930-cu illərin kütləvi repressiyaları və \"Qırmızı terror\"",
-        "Azərbaycan İkinci Dünya müharibəsi illərində (Bakı neftinin rolu və qəhrəmanlarımız)",
-        "Müharibədən sonrakı illərdə sosial-iqtisadi inkişaf və deportasiyalar (1948-1953)",
-        "1969-1982-ci illərdə Heydər Əliyevin rəhbərliyi ilə Azərbaycanın intibahı",
-        "1980-ci illərin sonlarında erməni təcavüzü, Qərbi Azərbaycandan deportasiya və Meydan hərəkatı",
-        "1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı",
-        "V FƏSİL. Müstəqillik dövrü və Tarixi Zəfər (1991–Müasir dövr)",
-        "Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin böhranı",
-        "Birinci Qarabağ müharibəsi, Xocalı soyqırımı və torpaqların işğalı",
-        "1993-cü il Heydər Əliyevin hakimiyyətə qayıdışı və Qurtuluş günü",
-        "\"Əsrin müqaviləsi\" və yeni neft strategiyası",
-        "Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu və ordu quruculuğu",
-        "İlham Əliyevin rəhbərliyi ilə Azərbaycanın hərtərəfli inkişafı",
-        "Aprel döyüşləri (2016) və Tovuz döyüşləri (2020)",
-        "44 günlük Vətən müharibəsi (27 sentyabr - 10 noyabr 2020) və Tarixi Qələbə",
-        "Lokal antiterror tədbirləri (2023) və suverenliyin tam bərpası",
-        "Böyük Qayıdış və Qarabağın bərpası"
+        "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr (Gülüstan və Türkmənçay)",
+        "3. Rusiya imperiyasının müstəmləkə siyasəti və Komendant idarə üsulu",
+        "4. XIX əsrin 30-cu illəri üsyanları (Car-Balakən, Quba, Şəki, Lənkəran)",
+        "5. XIX əsrin 40-cı illərində keçirilən islahatlar (1840 İnzibati və 1846 Aqrar əsasnaməsi)",
+        "6. Yeni sosial münasibətlərin meydana gəlməsi və kənd təsərrüfatı",
+        "7. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri (Ticarət, manufaktura və ipəkçilik)",
+        "8. Cənubi Azərbaycan XIX əsrin birinci yarısında",
+        "9. XIX əsrin birinci yarısında Azərbaycan mədəniyyəti və maarifçilik",
+        "10. Kəndli islahatı (1870-ci il 14 may Əsasnaməsi) və aqrar münasibətlər",
+        "11. Şimali Azərbaycanda kapitalist sənayesinin inkişafı və Bakı neft bumu",
+        "12. Milli burjuaziya və xeyriyyəçilik hərəkatı (Hacı Zeynalabdin Tağıyev və b.)",
+        "13. Milli oyanış, mətbuat (\"Əkinçi\", Həsən bəy Zərdabi) və teatr",
+        "14. 1905-1907-ci illər inqilabı dövründə Azərbaycanda ictimai-siyasi hərəkat",
+        "15. Siyasi partiyalar və təşkilatlar (\"Hümmət\", \"Müsavat\", \"Qeyrət\", \"Difai\", \"İttifaq\")",
+        "16. Birinci Dünya müharibəsi illərində Şimali və Cənubi Azərbaycan",
+        "17. 1918-ci il 31 Mart soyqırımı və milli faciə",
+        "18. Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi",
+        "19. Qafqaz İslam Ordusu və Bakının azad edilməsi (15 sentyabr 1918)",
+        "20. AXC-nin dövlət quruculuğu, parlamenti və hökumət kabinələri",
+        "21. AXC-nin daxili, sosial-iqtisadi, təhsil və hərbi siyasəti (Milli Ordu, BDU)",
+        "22. AXC-nin xarici siyasəti və Paris Sülh Konfransında müstəqilliyin de-fakto tanınması",
+        "23. Aprel işğalı (27-28 aprel 1920) və AXC-nin süqutu",
+        "24. Azərbaycanda sovet rejiminin qurulması və milli müqavimət üsyanları (Gəncə, Qarabağ)",
+        "25. Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ, Zəngəzur və Naxçıvan məsələsi)",
+        "26. Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti",
+        "27. 1930-cu illərin kütləvi repressiyaları və \"Qırmızı terror\" (Hüseyn Cavid, Mikayıl Müşfiq və b.)",
+        "28. Azərbaycan İkinci Dünya müharibəsi illərində (Bakı neftinin rolu və döyüş qəhrəmanlarımız)",
+        "29. Müharibədən sonrakı illərdə sosial-iqtisadi inkişaf və deportasiyalar (1948-1953)",
+        "30. 1969-1982-ci illərdə Heydər Əliyevin rəhbərliyi ilə Azərbaycanın intibah dövrü",
+        "31. 1980-ci illərin sonlarında erməni təcavüzü, Qərbi Azərbaycandan deportasiya və Meydan hərəkatı",
+        "32. 1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı",
+        "33. Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin dərin böhranı",
+        "34. Birinci Qarabağ müharibəsi, Xocalı soyqırımı və torpaqlarımızın işğalı",
+        "35. 1993-cü il Heydər Əliyevin hakimiyyətə qayıdışı və Milli Qurtuluş günü",
+        "36. \"Əsrin müqaviləsi\" (1994) və Azərbaycanın yeni neft-qaz strategiyası",
+        "37. Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu (1995) və ordu quruculuğu",
+        "38. İlham Əliyevin rəhbərliyi ilə Azərbaycanın dinamik inkişafı və beynəlxalq nüfuzunun artması",
+        "39. Aprel döyüşləri (2016) və Tovuz döyüşləri (2020)",
+        "40. 44 günlük Vətən müharibəsi (27 sentyabr - 10 noyabr 2020) və Tarixi Zəfər",
+        "41. Lokal antiterror tədbirləri (19-20 sentyabr 2023) və dövlət suverenliyinin tam bərpası",
+        "42. Böyük Qayıdış proqramı və Qarabağın, Şərqi Zəngəzurun bərpası"
       ]
     },
     {
@@ -2261,7 +4508,6 @@
       "type": "ederslik_html",
       "e_derslik_id": "809",
       "topics": [
-        "DÜNYA ÖLKƏLƏRİ XIX YÜZİLLİK-XX YÜZİLLİYİN ƏVVƏLLƏRİNDƏ",
         "1. ABŞ və Böyük Britaniya",
         "2. Fransa və Almaniya",
         "3. Rusiya",
@@ -2270,7 +4516,6 @@
         "6. Dövlətlərarası münasibətlər",
         "7. Birinci dünya müharibəsi",
         "8. Mədəniyyət",
-        "DÜNYA ÖLKƏLƏRİ 1918-1945-Cİ İLLƏRDƏ",
         "9. Versal-Vaşinqton sistemi",
         "10. ABŞ, Böyük Britaniya və Fransa",
         "11. Almaniya və SSRİ",
@@ -2279,7 +4524,6 @@
         "14. Dövlətlərarası münasibətlər",
         "15. İkinci dünya müharibəsi",
         "16. Mədəniyyət",
-        "DÜNYA ÖLKƏLƏRİ İKİNCİ DÜNYA MÜHARİBƏSİNDƏN SONRA",
         "17. Amerika Birləşmiş Ştatları",
         "18. Böyük Britaniya, Fransa və Almaniya",
         "19. SSRİ. Rusiya Federasiyası",
@@ -2298,16 +4542,183 @@
       "e_derslik_id": "814",
       "topics": [
         "1.1. Kartoqrafik tədqiqat metodları",
-        "1.4. Qrafik təsvirlər (Coğrafi diaqram və profillər)",
-        "1.5. Təsərrüfat sahələrinin yerləşməsinin xəritələrə əsasən təhlili",
-        "1.6. Coğrafi informasiya sistemləri (CİS)",
+        "1.2. Coğrafi xəritələrin vizual və riyazi təhlili",
+        "1.3. Qrafik təsvirlər (Coğrafi diaqramlar və profillər)",
+        "1.4. Təsərrüfat sahələrinin yerləşməsinin xəritələrdə təsviri",
+        "1.5. Coğrafi informasiya sistemləri (CİS / GIS)",
         "2.1. Tektonik proseslər və təsərrüfat",
         "2.2. Mineral ehtiyatlardan istifadə",
         "2.3. Meteoroloji hadisələr",
-        "2.5. İqlim və insan sağlamlığı (Kurort-rekreasiya)",
-        "2.7. Quru sularından istifadə",
-        "2.9. Dünyanın və Azərbaycanın torpaq fondu",
-        "2.10. Meşə ehtiyatları və onlardan istifadə"
+        "2.4. İqlim və insan sağlamlığı",
+        "2.5. Quru sularından istifadə",
+        "2.6. Dünyanın və Azərbaycanın torpaq fondu",
+        "2.7. Meşə ehtiyatları və onlardan istifadə",
+        "3.1. Dünya əhalisinin demoqrafik inkişafı və miqrasiyalar",
+        "3.2. İnsan İnkişafı İndeksi (İİİ) və həyat keyfiyyəti",
+        "3.3. Əmək ehtiyatları və məşğulluq strukturu",
+        "3.4. Qlobal ərzaq problemi və aqrar sahə",
+        "3.5. Beynəlxalq iqtisadi inteqrasiya",
+        "3.6. Dünya sənayesi və energetikasının coğrafiyası",
+        "4.1. Azərbaycanın yeni iqtisadi rayonlaşdırılması",
+        "4.2. Abşeron-Xızı və Bakı iqtisadi rayonları",
+        "4.3. Quba-Xaçmaz və Dağlıq Şirvan iqtisadi rayonları",
+        "4.4. Şəki-Zaqatala və Gəncə-Daşkəsən iqtisadi rayonları",
+        "4.5. Qazax-Tovuz və Mərkəzi Aran iqtisadi rayonları",
+        "4.6. Mil-Muğan və Şirvan-Salyan iqtisadi rayonları",
+        "4.7. Lənkəran-Astara və Naxçıvan iqtisadi rayonları",
+        "4.8. Qarabağ və Şərqi Zəngəzur iqtisadi rayonları"
+      ],
+      "chapters": [
+        {
+          "chapter": "I BÖLMƏ: Coğrafi İnformasiya və Tədqiqat Metodları",
+          "topics": [
+            {
+              "title": "1.1. Kartoqrafik tədqiqat metodları",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Coğrafi xəritələrin vizual və riyazi təhlili",
+              "page": 12,
+              "path": ""
+            },
+            {
+              "title": "1.3. Qrafik təsvirlər (Coğrafi diaqramlar və profillər)",
+              "page": 18,
+              "path": ""
+            },
+            {
+              "title": "1.4. Təsərrüfat sahələrinin yerləşməsinin xəritələrdə təsviri",
+              "page": 24,
+              "path": ""
+            },
+            {
+              "title": "1.5. Coğrafi informasiya sistemləri (CİS / GIS)",
+              "page": 30,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II BÖLMƏ: Təbiətdə Baş Verən Qanunauyğunluqlar və Cəmiyyət",
+          "topics": [
+            {
+              "title": "2.1. Tektonik proseslər və təsərrüfat",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "2.2. Mineral ehtiyatlardan istifadə",
+              "page": 42,
+              "path": ""
+            },
+            {
+              "title": "2.3. Meteoroloji hadisələr",
+              "page": 48,
+              "path": ""
+            },
+            {
+              "title": "2.4. İqlim və insan sağlamlığı",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "2.5. Quru sularından istifadə",
+              "page": 60,
+              "path": ""
+            },
+            {
+              "title": "2.6. Dünyanın və Azərbaycanın torpaq fondu",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "2.7. Meşə ehtiyatları və onlardan istifadə",
+              "page": 72,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III BÖLMƏ: Dünya Təsərrüfatı, Əhali və İqtisadi İnteqrasiya",
+          "topics": [
+            {
+              "title": "3.1. Dünya əhalisinin demoqrafik inkişafı və miqrasiyalar",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "3.2. İnsan İnkişafı İndeksi (İİİ) və həyat keyfiyyəti",
+              "page": 84,
+              "path": ""
+            },
+            {
+              "title": "3.3. Əmək ehtiyatları və məşğulluq strukturu",
+              "page": 90,
+              "path": ""
+            },
+            {
+              "title": "3.4. Qlobal ərzaq problemi və aqrar sahə",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "3.5. Beynəlxalq iqtisadi inteqrasiya",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "3.6. Dünya sənayesi və energetikasının coğrafiyası",
+              "page": 108,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV BÖLMƏ: Azərbaycan Respublikasının Müasir İnzibati-İqtisadi Bölgüsü və İnkişafı",
+          "topics": [
+            {
+              "title": "4.1. Azərbaycanın yeni iqtisadi rayonlaşdırılması",
+              "page": 114,
+              "path": ""
+            },
+            {
+              "title": "4.2. Abşeron-Xızı və Bakı iqtisadi rayonları",
+              "page": 120,
+              "path": ""
+            },
+            {
+              "title": "4.3. Quba-Xaçmaz və Dağlıq Şirvan iqtisadi rayonları",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "4.4. Şəki-Zaqatala və Gəncə-Daşkəsən iqtisadi rayonları",
+              "page": 132,
+              "path": ""
+            },
+            {
+              "title": "4.5. Qazax-Tovuz və Mərkəzi Aran iqtisadi rayonları",
+              "page": 138,
+              "path": ""
+            },
+            {
+              "title": "4.6. Mil-Muğan və Şirvan-Salyan iqtisadi rayonları",
+              "page": 144,
+              "path": ""
+            },
+            {
+              "title": "4.7. Lənkəran-Astara və Naxçıvan iqtisadi rayonları",
+              "page": 150,
+              "path": ""
+            },
+            {
+              "title": "4.8. Qarabağ və Şərqi Zəngəzur iqtisadi rayonları",
+              "page": 156,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -2319,12 +4730,182 @@
       "topics": [
         "1.1. İnformasiya sistemi və onun elementləri",
         "1.2. İnformasiya sistemlərinin təsnifatı",
-        "1.3. Coğrafi informasiya sistemləri",
-        "1.4. Süni intellekt",
-        "1.5. Ekspert sistemləri",
-        "1.6. Axtarış sistemləri",
-        "1.7. \"Böyük verilənlər\" texnologiyası",
-        "1.8. İnformasiya cəmiyyəti"
+        "1.3. Coğrafi informasiya sistemləri (CİS / GIS)",
+        "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
+        "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)",
+        "1.6. Neyron şəbəkələri və Dərin öyrənmə (Perseptron, Sinaps, Aktivasiya funksiyası)",
+        "1.7. Əşyaların interneti (IoT) və Ağıllı sistemlər (RFID, Sensorlar, Smart City, Smart Home)",
+        "1.8. Böyük verilənlər (Big Data) və Data Science (5V modeli: Volume, Velocity, Variety, Veracity, Value)",
+        "2.1. Verilənlər bazası anlayışı və relyasiya modeli (Cədvəllər, Sahələr, Yazılar, İlkin açar)",
+        "2.2. Verilənlər bazasının layihələndirilməsi (Normalizasiya, 1NF, 2NF, 3NF, Cədvəllərarası əlaqələr: 1:1, 1:M, M:N)",
+        "2.3. SQL-ə giriş və Verilənlərin Tərifi Dili (DDL: CREATE TABLE, ALTER TABLE, DROP TABLE)",
+        "2.4. SQL-də məlumatların manipulyasiyası (DML: INSERT INTO, UPDATE, DELETE)",
+        "2.5. SQL-də mürəkkəb sorğular və filtrləmə (SELECT, WHERE, ORDER BY, LIKE, BETWEEN, IN)",
+        "2.6. SQL-də aqreqat funksiyaları və qruplaşdırma (COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING)",
+        "2.7. SQL-də cədvəllərin birləşdirilməsi və alt sorğular (INNER JOIN, LEFT JOIN, Subqueries)",
+        "3.1. Obyektyönlü proqramlaşdırmanın (OYP / OOP) əsas prinsipləri (Class, Object, Encapsulation, Inheritance, Polymorphism)",
+        "3.2. Python-da siniflər və obyektlərin yaradılması (class, __init__, self, Metodlar)",
+        "3.3. Varislik (Inheritance) və Polimorfizm (Metodların yenidən təyini, super())",
+        "3.4. İnkapsulyasiya və Məlumatların gizlənməsi (Public, Protected _, Private __ atributlar, Getter və Setter)",
+        "3.5. Xətaların tutulması və istisnaların idarə edilməsi (try, except, else, finally, raise)",
+        "4.1. Şəbəkə arxitekturası və OSI/TCP-IP modelləri (7 səviyyəli OSI modeli və TCP/IP protokolları)",
+        "4.2. Şəbəkə marşrutlaşdırması və IP ünvanlaşdırma (IPv4, IPv6, Subnet Mask, MAC ünvan, DNS, DHCP)",
+        "4.3. Kriptoqrafiya və Məlumatların şifrələnməsi (Simmetrik: AES, DES; Asimmetrik: RSA, Açıq və Şəxsi açarlar, Rəqəmsal imza)",
+        "4.4. Kiberhücum növləri və Şəbəkə təhlükəsizliyi (DDoS, Phishing, Malware, Ransomware, Man-in-the-Middle, Firewall)",
+        "4.5. Veb texnologiyaları və Müasir Frontend/Backend arxitekturası (HTML5, CSS3, JavaScript, Client-Server, REST API)",
+        "4.6. Rəqəmsal etika, İntellektual mülkiyyət və İnformasiya cəmiyyəti (Müəllif hüquqları, GDPR, Rəqəmsal iz, Kibergigiyena)"
+      ],
+      "chapters": [
+        {
+          "chapter": "I BÖLMƏ: İNFORMASİYA SİSTEMLƏRİ VƏ MÜASİR İKT TEXNOLOGİYALARI",
+          "topics": [
+            {
+              "title": "1.1. İnformasiya sistemi və onun elementləri",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. İnformasiya sistemlərinin təsnifatı",
+              "page": 11,
+              "path": ""
+            },
+            {
+              "title": "1.3. Coğrafi informasiya sistemləri (CİS / GIS)",
+              "page": 16,
+              "path": ""
+            },
+            {
+              "title": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
+              "page": 21,
+              "path": ""
+            },
+            {
+              "title": "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)",
+              "page": 26,
+              "path": ""
+            },
+            {
+              "title": "1.6. Neyron şəbəkələri və Dərin öyrənmə (Perseptron, Sinaps, Aktivasiya funksiyası)",
+              "page": 31,
+              "path": ""
+            },
+            {
+              "title": "1.7. Əşyaların interneti (IoT) və Ağıllı sistemlər (RFID, Sensorlar, Smart City, Smart Home)",
+              "page": 36,
+              "path": ""
+            },
+            {
+              "title": "1.8. Böyük verilənlər (Big Data) və Data Science (5V modeli: Volume, Velocity, Variety, Veracity, Value)",
+              "page": 41,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "II BÖLMƏ: VERİLƏNLƏR BAZASI VƏ SQL ƏSASLARI",
+          "topics": [
+            {
+              "title": "2.1. Verilənlər bazası anlayışı və relyasiya modeli (Cədvəllər, Sahələr, Yazılar, İlkin açar)",
+              "page": 46,
+              "path": ""
+            },
+            {
+              "title": "2.2. Verilənlər bazasının layihələndirilməsi (Normalizasiya, 1NF, 2NF, 3NF, Cədvəllərarası əlaqələr: 1:1, 1:M, M:N)",
+              "page": 51,
+              "path": ""
+            },
+            {
+              "title": "2.3. SQL-ə giriş və Verilənlərin Tərifi Dili (DDL: CREATE TABLE, ALTER TABLE, DROP TABLE)",
+              "page": 56,
+              "path": ""
+            },
+            {
+              "title": "2.4. SQL-də məlumatların manipulyasiyası (DML: INSERT INTO, UPDATE, DELETE)",
+              "page": 61,
+              "path": ""
+            },
+            {
+              "title": "2.5. SQL-də mürəkkəb sorğular və filtrləmə (SELECT, WHERE, ORDER BY, LIKE, BETWEEN, IN)",
+              "page": 66,
+              "path": ""
+            },
+            {
+              "title": "2.6. SQL-də aqreqat funksiyaları və qruplaşdırma (COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING)",
+              "page": 71,
+              "path": ""
+            },
+            {
+              "title": "2.7. SQL-də cədvəllərin birləşdirilməsi və alt sorğular (INNER JOIN, LEFT JOIN, Subqueries)",
+              "page": 76,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "III BÖLMƏ: PYTHON İLƏ OBYEKT-YÖNYÜMLÜ PROQRAMLAŞDIRMA VƏ MÜRƏKKƏB ALQORİTMLƏR",
+          "topics": [
+            {
+              "title": "3.1. Obyektyönlü proqramlaşdırmanın (OYP / OOP) əsas prinsipləri (Class, Object, Encapsulation, Inheritance, Polymorphism)",
+              "page": 81,
+              "path": ""
+            },
+            {
+              "title": "3.2. Python-da siniflər və obyektlərin yaradılması (class, __init__, self, Metodlar)",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "3.3. Varislik (Inheritance) və Polimorfizm (Metodların yenidən təyini, super())",
+              "page": 91,
+              "path": ""
+            },
+            {
+              "title": "3.4. İnkapsulyasiya və Məlumatların gizlənməsi (Public, Protected _, Private __ atributlar, Getter və Setter)",
+              "page": 96,
+              "path": ""
+            },
+            {
+              "title": "3.5. Xətaların tutulması və istisnaların idarə edilməsi (try, except, else, finally, raise)",
+              "page": 101,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "IV BÖLMƏ: ŞƏBƏKƏ PROTOKOLLARI, KİBERTƏHLÜKƏSİZLİK VƏ WEB TEXNOLOGİYALARI",
+          "topics": [
+            {
+              "title": "4.1. Şəbəkə arxitekturası və OSI/TCP-IP modelləri (7 səviyyəli OSI modeli və TCP/IP protokolları)",
+              "page": 106,
+              "path": ""
+            },
+            {
+              "title": "4.2. Şəbəkə marşrutlaşdırması və IP ünvanlaşdırma (IPv4, IPv6, Subnet Mask, MAC ünvan, DNS, DHCP)",
+              "page": 111,
+              "path": ""
+            },
+            {
+              "title": "4.3. Kriptoqrafiya və Məlumatların şifrələnməsi (Simmetrik: AES, DES; Asimmetrik: RSA, Açıq və Şəxsi açarlar, Rəqəmsal imza)",
+              "page": 116,
+              "path": ""
+            },
+            {
+              "title": "4.4. Kiberhücum növləri və Şəbəkə təhlükəsizliyi (DDoS, Phishing, Malware, Ransomware, Man-in-the-Middle, Firewall)",
+              "page": 121,
+              "path": ""
+            },
+            {
+              "title": "4.5. Veb texnologiyaları və Müasir Frontend/Backend arxitekturası (HTML5, CSS3, JavaScript, Client-Server, REST API)",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "4.6. Rəqəmsal etika, İntellektual mülkiyyət və İnformasiya cəmiyyəti (Müəllif hüquqları, GDPR, Rəqəmsal iz, Kibergigiyena)",
+              "page": 131,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -2334,12 +4915,146 @@
       "type": "ederslik_html",
       "e_derslik_id": "805",
       "topics": [
-        "UNIT 1. THE WHYS AND WHEREFORES",
-        "UNIT 2. LIFETIME EXPERIENCES",
-        "UNIT 3. THE ART OF CONVERSATION",
-        "UNIT 4. NO REGRETS",
-        "UNIT 5. CREATIVITY",
-        "UNIT 6. IN THE NEWS"
+        "1.1. Higher Education, University Life and Academic Vocabulary",
+        "1.2. Modern Career Paths, Job Applications and Professional Skills",
+        "1.3. Grammar in Use: Reported Speech and Indirect Questions",
+        "2.1. Artificial Intelligence and Robotics",
+        "2.2. Scientific Discoveries and Space Exploration",
+        "2.3. Grammar in Use: Passive Voice and Causative Forms",
+        "3.1. World Literature and Cultural Dialogue",
+        "3.2. Architecture and National Heritage of Azerbaijan",
+        "3.3. Grammar in Use: Conditionals and Wish Clauses",
+        "4.1. Biodiversity and Ecosystems",
+        "4.2. Climate Change, COP29 and Sustainability",
+        "4.3. Grammar in Use: Modals of Deduction and Speculation",
+        "5.1. Social Volunteering and Moral Dilemmas",
+        "5.2. Leadership Qualities and Emotional Intelligence",
+        "5.3. Grammar in Use: Gerunds and Complex Structures",
+        "6.1. International Tourism and Cultural Etiquette",
+        "6.2. Mass Media and Digital Literacy",
+        "6.3. Grammar in Use: Relative and Participle Clauses"
+      ],
+      "chapters": [
+        {
+          "chapter": "UNIT 1: Education, Career Choices & Modern Professions",
+          "topics": [
+            {
+              "title": "1.1. Higher Education, University Life and Academic Vocabulary",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Modern Career Paths, Job Applications and Professional Skills",
+              "page": 14,
+              "path": ""
+            },
+            {
+              "title": "1.3. Grammar in Use: Reported Speech and Indirect Questions",
+              "page": 22,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 2: Science, Innovation & Future Technologies",
+          "topics": [
+            {
+              "title": "2.1. Artificial Intelligence and Robotics",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "2.2. Scientific Discoveries and Space Exploration",
+              "page": 38,
+              "path": ""
+            },
+            {
+              "title": "2.3. Grammar in Use: Passive Voice and Causative Forms",
+              "page": 46,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 3: Culture, Global Heritage & Arts",
+          "topics": [
+            {
+              "title": "3.1. World Literature and Cultural Dialogue",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "3.2. Architecture and National Heritage of Azerbaijan",
+              "page": 62,
+              "path": ""
+            },
+            {
+              "title": "3.3. Grammar in Use: Conditionals and Wish Clauses",
+              "page": 70,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 4: Global Ecology, Environmental Protection & Climate Action",
+          "topics": [
+            {
+              "title": "4.1. Biodiversity and Ecosystems",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "4.2. Climate Change, COP29 and Sustainability",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "4.3. Grammar in Use: Modals of Deduction and Speculation",
+              "page": 94,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 5: Human Values, Leadership & Society",
+          "topics": [
+            {
+              "title": "5.1. Social Volunteering and Moral Dilemmas",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "5.2. Leadership Qualities and Emotional Intelligence",
+              "page": 110,
+              "path": ""
+            },
+            {
+              "title": "5.3. Grammar in Use: Gerunds and Complex Structures",
+              "page": 118,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNIT 6: Travel, Communication & Globalization",
+          "topics": [
+            {
+              "title": "6.1. International Tourism and Cultural Etiquette",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "6.2. Mass Media and Digital Literacy",
+              "page": 134,
+              "path": ""
+            },
+            {
+              "title": "6.3. Grammar in Use: Relative and Participle Clauses",
+              "page": 142,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -2349,22 +5064,146 @@
       "type": "ederslik_html",
       "e_derslik_id": "819",
       "topics": [
-        "1. История одного здания Баку",
-        "2. Национальный музей искусств Азербайджана",
-        "3. «Южная жемчужина» Азербайджана",
-        "4. Родина Низами",
-        "5. Древний город Азербайджана",
-        "6. Древнее поселение на Земле",
-        "1. Покровители науки и искусства",
-        "2. Удивительная женщина",
-        "3. Великий меценат",
-        "4. Нефтяной магнат",
-        "5. Компьютерный гений",
-        "1. «Золотое кольцо» России",
-        "2. Музыкальная столица",
-        "3. Восточная столица",
-        "4. Европейская столица",
-        "5. «Жемчужина» Босфора"
+        "1.1. Личность и общество: нравственный выбор",
+        "1.2. Лексико-фразеологическое богатство языка",
+        "1.3. Грамматика: Сложносочинённые предложения",
+        "2.1. Научный прогресс и искусственный интеллект",
+        "2.2. Выдающиеся научные открытия и космос",
+        "2.3. Грамматика: Сложноподчинённые предложения",
+        "3.1. Шедевры классической литературы",
+        "3.2. Архитектура и национальное искусство",
+        "3.3. Грамматика: Бессоюзные сложные предложения",
+        "4.1. Биоразнообразие и заповедники Азербайджана",
+        "4.2. Климат, саммит COP29 и зеленая энергия",
+        "4.3. Грамматика: Предложения с разными видами связи",
+        "5.1. Профессии, рынок труда и карьера",
+        "5.2. Лидерские качества и эмоциональный интеллект",
+        "5.3. Грамматика: Прямая и косвенная речь, цитирование",
+        "6.1. Международный туризм и гостеприимство",
+        "6.2. СМИ, цифровая грамотность и безопасность",
+        "6.3. Культура речи и функциональные стили"
+      ],
+      "chapters": [
+        {
+          "chapter": "РАЗДЕЛ 1: Человек и общество. Нравственные ценности",
+          "topics": [
+            {
+              "title": "1.1. Личность и общество: нравственный выбор",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Лексико-фразеологическое богатство языка",
+              "page": 14,
+              "path": ""
+            },
+            {
+              "title": "1.3. Грамматика: Сложносочинённые предложения",
+              "page": 22,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 2: Наука, инновации и современные технологии",
+          "topics": [
+            {
+              "title": "2.1. Научный прогресс и искусственный интеллект",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "2.2. Выдающиеся научные открытия и космос",
+              "page": 38,
+              "path": ""
+            },
+            {
+              "title": "2.3. Грамматика: Сложноподчинённые предложения",
+              "page": 46,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 3: Культура, искусство и историческое наследие Азербайджана",
+          "topics": [
+            {
+              "title": "3.1. Шедевры классической литературы",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "3.2. Архитектура и национальное искусство",
+              "page": 62,
+              "path": ""
+            },
+            {
+              "title": "3.3. Грамматика: Бессоюзные сложные предложения",
+              "page": 70,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 4: Экология, природа и устойчивое развитие",
+          "topics": [
+            {
+              "title": "4.1. Биоразнообразие и заповедники Азербайджана",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "4.2. Климат, саммит COP29 и зеленая энергия",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "4.3. Грамматика: Предложения с разными видами связи",
+              "page": 94,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 5: Мир профессий, лидерство и выбор жизненного пути",
+          "topics": [
+            {
+              "title": "5.1. Профессии, рынок труда и карьера",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "5.2. Лидерские качества и эмоциональный интеллект",
+              "page": 110,
+              "path": ""
+            },
+            {
+              "title": "5.3. Грамматика: Прямая и косвенная речь, цитирование",
+              "page": 118,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "РАЗДЕЛ 6: Межкультурная коммуникация, туризм и глобальный мир",
+          "topics": [
+            {
+              "title": "6.1. Международный туризм и гостеприимство",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "6.2. СМИ, цифровая грамотность и безопасность",
+              "page": 134,
+              "path": ""
+            },
+            {
+              "title": "6.3. Культура речи и функциональные стили",
+              "page": 142,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -2374,26 +5213,146 @@
       "type": "ederslik_html",
       "e_derslik_id": "804",
       "topics": [
-        "Lektion 1. THEMA 1. Kunst und Kultur",
-        "Lektion 1. THEMA 2. Film, Theater und Musik",
-        "Lektion 1. THEMA 3. Aserbaidschan / Deutschland",
-        "Lektion 1. THEMA 4. Sitten und Bräuche",
-        "Lektion 2. THEMA 1. Emotionen",
-        "Lektion 2. THEMA 2. Körpersprache",
-        "Lektion 2. THEMA 3. Das mache ich gerne",
-        "Lektion 2. THEMA 4. Lass uns feiern",
-        "Lektion 3. THEMA 1. Rund um Deutschland",
-        "Lektion 3. THEMA 2. Schweiz",
-        "Lektion 3. THEMA 3. Österreich",
-        "Lektion 3. THEMA 4. Eine Reise an den Bodensee",
-        "Lektion 4. THEMA 1. Gute Taten und Wohltätigkeit",
-        "Lektion 4. THEMA 2. Freiwilligenarbeit",
-        "Lektion 4. THEMA 3. Besuch im Heim für Behinderte",
-        "Lektion 4. THEMA 4. Kinder und Jugendliche",
-        "Lektion 5. THEMA 1. Moderne Kommunikationsformen",
-        "Lektion 5. THEMA 2. Verbale und Nonverbale Kommunikation",
-        "Lektion 5. THEMA 3. Auf der Post",
-        "Lektion 5. THEMA 4. Schriftliche Kommunikation / Schreibformen"
+        "1.1. Hochschulbildung und Universität",
+        "1.2. Moderne Berufe, Bewerbung und Soft Skills",
+        "1.3. Grammatik: Passivformen und Zustandspassiv",
+        "2.1. Künstliche Intelligenz und Robotik",
+        "2.2. Wissenschaftliche Entdeckungen und Raumfahrt",
+        "2.3. Grammatik: Konjunktiv II",
+        "3.1. Biodiversität und Nationalparks in Aserbaidschan",
+        "3.2. Klimawandel, COP29 und Grüne Energie",
+        "3.3. Grammatik: Relativsätze",
+        "4.1. Meisterwerke der klassischen Literatur",
+        "4.2. Architektur, Teppichkunst und Mugham",
+        "4.3. Grammatik: Infinitivkonstruktionen mit zu",
+        "5.1. Soziales Engagement und Philanthropie",
+        "5.2. Führungskompetenzen und emotionale Intelligenz",
+        "5.3. Grammatik: N-Deklination und Adjektive",
+        "6.1. Internationaler Tourismus und Gastfreundschaft",
+        "6.2. Medienkompetenz und Cyber-Sicherheit",
+        "6.3. Grammatik: Konnektoren und Partizipien"
+      ],
+      "chapters": [
+        {
+          "chapter": "LEKTION 1: Jugend, Bildung und Berufswahl",
+          "topics": [
+            {
+              "title": "1.1. Hochschulbildung und Universität",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Moderne Berufe, Bewerbung und Soft Skills",
+              "page": 14,
+              "path": ""
+            },
+            {
+              "title": "1.3. Grammatik: Passivformen und Zustandspassiv",
+              "page": 22,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 2: Wissenschaft, Innovation und Zukunftstechnologien",
+          "topics": [
+            {
+              "title": "2.1. Künstliche Intelligenz und Robotik",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "2.2. Wissenschaftliche Entdeckungen und Raumfahrt",
+              "page": 38,
+              "path": ""
+            },
+            {
+              "title": "2.3. Grammatik: Konjunktiv II",
+              "page": 46,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 3: Umwelt, Klimaschutz und Nachhaltigkeit (COP29)",
+          "topics": [
+            {
+              "title": "3.1. Biodiversität und Nationalparks in Aserbaidschan",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "3.2. Klimawandel, COP29 und Grüne Energie",
+              "page": 62,
+              "path": ""
+            },
+            {
+              "title": "3.3. Grammatik: Relativsätze",
+              "page": 70,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 4: Kultur, Kunst und nationales Erbe Aserbaidschans",
+          "topics": [
+            {
+              "title": "4.1. Meisterwerke der klassischen Literatur",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "4.2. Architektur, Teppichkunst und Mugham",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "4.3. Grammatik: Infinitivkonstruktionen mit zu",
+              "page": 94,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 5: Werte, Führung und bürgerschaftliches Engagement",
+          "topics": [
+            {
+              "title": "5.1. Soziales Engagement und Philanthropie",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "5.2. Führungskompetenzen und emotionale Intelligenz",
+              "page": 110,
+              "path": ""
+            },
+            {
+              "title": "5.3. Grammatik: N-Deklination und Adjektive",
+              "page": 118,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "LEKTION 6: Internationale Beziehungen, Reisen und digitale Medien",
+          "topics": [
+            {
+              "title": "6.1. Internationaler Tourismus und Gastfreundschaft",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "6.2. Medienkompetenz und Cyber-Sicherheit",
+              "page": 134,
+              "path": ""
+            },
+            {
+              "title": "6.3. Grammatik: Konnektoren und Partizipien",
+              "page": 142,
+              "path": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -2403,38 +5362,146 @@
       "type": "ederslik_html",
       "e_derslik_id": "806",
       "topics": [
-        "UNITÉ 1. LEÇON 1. ÊTRE ADO ! C'EST QUOI ?",
-        "UNITÉ 1. LEÇON 2. LES ÉMOTIONS DANS LA CLASSE DE LANGUE ÉTRANGÈRE",
-        "UNITÉ 1. LEÇON 3. C'EST QUOI UN BON PROF ?",
-        "UNITÉ 1. LEÇON 4. JE ME SOUVIENS...",
-        "UNITÉ 1. LEÇON 5. TÉLÉPHONE FIXE, TÉLÉPHONE PORTABLE, INTERNET",
-        "UNITÉ 1. LEÇON 6. CRÉER DES LIENS...",
-        "UNITÉ 1. LEÇON 7. AU CONDITIONNEL",
-        "UNITÉ 1. LEÇON 8. « JE VEUX PASSER DES CASTINGS »",
-        "UNITÉ 2. LEÇON 1. ÉTUDIER À L'ÉTRANGER",
-        "UNITÉ 2. LEÇON 2. DES ÉLÈVES GLOBE-TROTTERS",
-        "UNITÉ 2. LEÇON 3. L'ÉCOLE OUVERTE À TOUS",
-        "UNITÉ 2. LEÇON 4. ADOLESCENCE : JOIES ET TOURMENTS",
-        "UNITÉ 2. LEÇON 5. AGIR CONTRE LE HARCÈLEMENT À L'ÉCOLE",
-        "UNITÉ 2. LEÇON 6. CONFIANCE EN SOI",
-        "UNITÉ 2. LEÇON 7. PARLER, ÇA FAIT DU BIEN !",
-        "UNITÉ 2. LEÇON 8. LE BONHEUR",
-        "UNITÉ 3. LEÇON 1. LES GESTES POUR L'ENVIRONNEMENT",
-        "UNITÉ 3. LEÇON 2. LES BONS GESTES DU TRI",
-        "UNITÉ 3. LEÇON 3. BIODIVERSITÉ",
-        "UNITÉ 3. LEÇON 4. SOLIDARITÉ",
-        "UNITÉ 3. LEÇON 5. POURQUOI ÊTRE SOLIDAIRE ? QU'EST-CE QUE ÇA VEUT DIRE ?",
-        "UNITÉ 3. LEÇON 6. DES CŒURS GROS COMME ÇA",
-        "UNITÉ 3. LEÇON 7. LA COLOCATION",
-        "UNITÉ 3. LEÇON 8. RESPECT, DIGNITÉ, TOLÉRANCE, ÉGALITÉ",
-        "UNITÉ 4. LEÇON 1. LE TOURISME EN FRANCE",
-        "UNITÉ 4. LEÇON 2. SUR LA TOUR EIFFEL",
-        "UNITÉ 4. LEÇON 3. LE TOURISME EN AZERBAÏDJAN",
-        "UNITÉ 4. LEÇON 4. « CHOUCHA, LA PERLE DU KARABAGH »",
-        "UNITÉ 4. LEÇON 5. EN VILLE OU À LA CAMPAGNE ?",
-        "UNITÉ 4. LEÇON 6. LE LOGEMENT DE MES RÊVES",
-        "UNITÉ 4. LEÇON 7. LES LOISIRS",
-        "UNITÉ 4. LEÇON 8. AFFICHES DE FILMS"
+        "1.1. L'enseignement supérieur et l'université",
+        "1.2. Les métiers modernes et la recherche d'emploi",
+        "1.3. Grammaire : Le subjonctif présent",
+        "2.1. L'intelligence artificielle et la robotique",
+        "2.2. Les découvertes scientifiques et l'espace",
+        "2.3. Grammaire : Voix passive et pronoms relatifs",
+        "3.1. La biodiversité et les parcs nationaux",
+        "3.2. Le climat, la COP29 et l'énergie verte",
+        "3.3. Grammaire : Le conditionnel et l'hypothèse",
+        "4.1. Les chefs-d'œuvre de la littérature classique",
+        "4.2. Architecture, art du tapis et Mugham",
+        "4.3. Grammaire : Le discours indirect au passé",
+        "5.1. L'engagement social et le bénévolat",
+        "5.2. Leadership et intelligence émotionnelle",
+        "5.3. Grammaire : Gérondif, participe et pronoms",
+        "6.1. Le tourisme international et l'hospitalité",
+        "6.2. Médias, cyber-sécurité et esprit critique",
+        "6.3. Grammaire : Les connecteurs logiques complexes"
+      ],
+      "chapters": [
+        {
+          "chapter": "UNITÉ 1: L'éducation, l'orientation et le monde du travail",
+          "topics": [
+            {
+              "title": "1.1. L'enseignement supérieur et l'université",
+              "page": 6,
+              "path": ""
+            },
+            {
+              "title": "1.2. Les métiers modernes et la recherche d'emploi",
+              "page": 14,
+              "path": ""
+            },
+            {
+              "title": "1.3. Grammaire : Le subjonctif présent",
+              "page": 22,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 2: La science, l'intelligence artificielle et l'espace",
+          "topics": [
+            {
+              "title": "2.1. L'intelligence artificielle et la robotique",
+              "page": 30,
+              "path": ""
+            },
+            {
+              "title": "2.2. Les découvertes scientifiques et l'espace",
+              "page": 38,
+              "path": ""
+            },
+            {
+              "title": "2.3. Grammaire : Voix passive et pronoms relatifs",
+              "page": 46,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 3: L'environnement, la biodiversité et le climat (COP29)",
+          "topics": [
+            {
+              "title": "3.1. La biodiversité et les parcs nationaux",
+              "page": 54,
+              "path": ""
+            },
+            {
+              "title": "3.2. Le climat, la COP29 et l'énergie verte",
+              "page": 62,
+              "path": ""
+            },
+            {
+              "title": "3.3. Grammaire : Le conditionnel et l'hypothèse",
+              "page": 70,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 4: La culture, l'art et le patrimoine d'Azerbaïdjan",
+          "topics": [
+            {
+              "title": "4.1. Les chefs-d'œuvre de la littérature classique",
+              "page": 78,
+              "path": ""
+            },
+            {
+              "title": "4.2. Architecture, art du tapis et Mugham",
+              "page": 86,
+              "path": ""
+            },
+            {
+              "title": "4.3. Grammaire : Le discours indirect au passé",
+              "page": 94,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 5: Les valeurs humaines, la solidarité et la société",
+          "topics": [
+            {
+              "title": "5.1. L'engagement social et le bénévolat",
+              "page": 102,
+              "path": ""
+            },
+            {
+              "title": "5.2. Leadership et intelligence émotionnelle",
+              "page": 110,
+              "path": ""
+            },
+            {
+              "title": "5.3. Grammaire : Gérondif, participe et pronoms",
+              "page": 118,
+              "path": ""
+            }
+          ]
+        },
+        {
+          "chapter": "UNITÉ 6: Les voyages, la communication numérique et les médias",
+          "topics": [
+            {
+              "title": "6.1. Le tourisme international et l'hospitalité",
+              "page": 126,
+              "path": ""
+            },
+            {
+              "title": "6.2. Médias, cyber-sécurité et esprit critique",
+              "page": 134,
+              "path": ""
+            },
+            {
+              "title": "6.3. Grammaire : Les connecteurs logiques complexes",
+              "page": 142,
+              "path": ""
+            }
+          ]
+        }
       ]
     }
   ]

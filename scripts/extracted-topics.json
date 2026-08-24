@@ -10982,46 +10982,151 @@
   ],
   "informatika-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "I BÖLMƏ: İNFORMASİYA SİSTEMLƏRİ VƏ MÜASİR İKT TEXNOLOGİYALARI",
       "topics": [
         {
           "title": "1.1. İnformasiya sistemi və onun elementləri",
-          "page": 1,
+          "page": 6,
           "path": ""
         },
         {
           "title": "1.2. İnformasiya sistemlərinin təsnifatı",
-          "page": 5,
+          "page": 11,
           "path": ""
         },
         {
-          "title": "1.3. Coğrafi informasiya sistemləri",
-          "page": 9,
+          "title": "1.3. Coğrafi informasiya sistemləri (CİS / GIS)",
+          "page": 16,
           "path": ""
         },
         {
-          "title": "1.4. Süni intellekt",
-          "page": 13,
-          "path": ""
-        },
-        {
-          "title": "1.5. Ekspert sistemləri",
-          "page": 17,
-          "path": ""
-        },
-        {
-          "title": "1.6. Axtarış sistemləri",
+          "title": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
           "page": 21,
           "path": ""
         },
         {
-          "title": "1.7. \"Böyük verilənlər\" texnologiyası",
-          "page": 25,
+          "title": "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)",
+          "page": 26,
           "path": ""
         },
         {
-          "title": "1.8. İnformasiya cəmiyyəti",
-          "page": 29,
+          "title": "1.6. Neyron şəbəkələri və Dərin öyrənmə (Perseptron, Sinaps, Aktivasiya funksiyası)",
+          "page": 31,
+          "path": ""
+        },
+        {
+          "title": "1.7. Əşyaların interneti (IoT) və Ağıllı sistemlər (RFID, Sensorlar, Smart City, Smart Home)",
+          "page": 36,
+          "path": ""
+        },
+        {
+          "title": "1.8. Böyük verilənlər (Big Data) və Data Science (5V modeli: Volume, Velocity, Variety, Veracity, Value)",
+          "page": 41,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: VERİLƏNLƏR BAZASI VƏ SQL ƏSASLARI",
+      "topics": [
+        {
+          "title": "2.1. Verilənlər bazası anlayışı və relyasiya modeli (Cədvəllər, Sahələr, Yazılar, İlkin açar)",
+          "page": 46,
+          "path": ""
+        },
+        {
+          "title": "2.2. Verilənlər bazasının layihələndirilməsi (Normalizasiya, 1NF, 2NF, 3NF, Cədvəllərarası əlaqələr: 1:1, 1:M, M:N)",
+          "page": 51,
+          "path": ""
+        },
+        {
+          "title": "2.3. SQL-ə giriş və Verilənlərin Tərifi Dili (DDL: CREATE TABLE, ALTER TABLE, DROP TABLE)",
+          "page": 56,
+          "path": ""
+        },
+        {
+          "title": "2.4. SQL-də məlumatların manipulyasiyası (DML: INSERT INTO, UPDATE, DELETE)",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "2.5. SQL-də mürəkkəb sorğular və filtrləmə (SELECT, WHERE, ORDER BY, LIKE, BETWEEN, IN)",
+          "page": 66,
+          "path": ""
+        },
+        {
+          "title": "2.6. SQL-də aqreqat funksiyaları və qruplaşdırma (COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING)",
+          "page": 71,
+          "path": ""
+        },
+        {
+          "title": "2.7. SQL-də cədvəllərin birləşdirilməsi və alt sorğular (INNER JOIN, LEFT JOIN, Subqueries)",
+          "page": 76,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: PYTHON İLƏ OBYEKT-YÖNYÜMLÜ PROQRAMLAŞDIRMA VƏ MÜRƏKKƏB ALQORİTMLƏR",
+      "topics": [
+        {
+          "title": "3.1. Obyektyönlü proqramlaşdırmanın (OYP / OOP) əsas prinsipləri (Class, Object, Encapsulation, Inheritance, Polymorphism)",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "3.2. Python-da siniflər və obyektlərin yaradılması (class, __init__, self, Metodlar)",
+          "page": 86,
+          "path": ""
+        },
+        {
+          "title": "3.3. Varislik (Inheritance) və Polimorfizm (Metodların yenidən təyini, super())",
+          "page": 91,
+          "path": ""
+        },
+        {
+          "title": "3.4. İnkapsulyasiya və Məlumatların gizlənməsi (Public, Protected _, Private __ atributlar, Getter və Setter)",
+          "page": 96,
+          "path": ""
+        },
+        {
+          "title": "3.5. Xətaların tutulması və istisnaların idarə edilməsi (try, except, else, finally, raise)",
+          "page": 101,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: ŞƏBƏKƏ PROTOKOLLARI, KİBERTƏHLÜKƏSİZLİK VƏ WEB TEXNOLOGİYALARI",
+      "topics": [
+        {
+          "title": "4.1. Şəbəkə arxitekturası və OSI/TCP-IP modelləri (7 səviyyəli OSI modeli və TCP/IP protokolları)",
+          "page": 106,
+          "path": ""
+        },
+        {
+          "title": "4.2. Şəbəkə marşrutlaşdırması və IP ünvanlaşdırma (IPv4, IPv6, Subnet Mask, MAC ünvan, DNS, DHCP)",
+          "page": 111,
+          "path": ""
+        },
+        {
+          "title": "4.3. Kriptoqrafiya və Məlumatların şifrələnməsi (Simmetrik: AES, DES; Asimmetrik: RSA, Açıq və Şəxsi açarlar, Rəqəmsal imza)",
+          "page": 116,
+          "path": ""
+        },
+        {
+          "title": "4.4. Kiberhücum növləri və Şəbəkə təhlükəsizliyi (DDoS, Phishing, Malware, Ransomware, Man-in-the-Middle, Firewall)",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "4.5. Veb texnologiyaları və Müasir Frontend/Backend arxitekturası (HTML5, CSS3, JavaScript, Client-Server, REST API)",
+          "page": 126,
+          "path": ""
+        },
+        {
+          "title": "4.6. Rəqəmsal etika, İntellektual mülkiyyət və İnformasiya cəmiyyəti (Müəllif hüquqları, GDPR, Rəqəmsal iz, Kibergigiyena)",
+          "page": 131,
           "path": ""
         }
       ]
@@ -15409,61 +15514,151 @@
   ],
   "cografiya-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "I BÖLMƏ: Coğrafi İnformasiya və Tədqiqat Metodları",
       "topics": [
         {
           "title": "1.1. Kartoqrafik tədqiqat metodları",
-          "page": 1,
+          "page": 6,
           "path": ""
         },
         {
-          "title": "1.4. Qrafik təsvirlər (Coğrafi diaqram və profillər)",
-          "page": 5,
+          "title": "1.2. Coğrafi xəritələrin vizual və riyazi təhlili",
+          "page": 12,
           "path": ""
         },
         {
-          "title": "1.5. Təsərrüfat sahələrinin yerləşməsinin xəritələrə əsasən təhlili",
-          "page": 9,
+          "title": "1.3. Qrafik təsvirlər (Coğrafi diaqramlar və profillər)",
+          "page": 18,
           "path": ""
         },
         {
-          "title": "1.6. Coğrafi informasiya sistemləri (CİS)",
-          "page": 13,
+          "title": "1.4. Təsərrüfat sahələrinin yerləşməsinin xəritələrdə təsviri",
+          "page": 24,
           "path": ""
         },
+        {
+          "title": "1.5. Coğrafi informasiya sistemləri (CİS / GIS)",
+          "page": 30,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Təbiətdə Baş Verən Qanunauyğunluqlar və Cəmiyyət",
+      "topics": [
         {
           "title": "2.1. Tektonik proseslər və təsərrüfat",
-          "page": 17,
+          "page": 36,
           "path": ""
         },
         {
           "title": "2.2. Mineral ehtiyatlardan istifadə",
-          "page": 21,
+          "page": 42,
           "path": ""
         },
         {
           "title": "2.3. Meteoroloji hadisələr",
-          "page": 25,
+          "page": 48,
           "path": ""
         },
         {
-          "title": "2.5. İqlim və insan sağlamlığı (Kurort-rekreasiya)",
-          "page": 29,
+          "title": "2.4. İqlim və insan sağlamlığı",
+          "page": 54,
           "path": ""
         },
         {
-          "title": "2.7. Quru sularından istifadə",
-          "page": 33,
+          "title": "2.5. Quru sularından istifadə",
+          "page": 60,
           "path": ""
         },
         {
-          "title": "2.9. Dünyanın və Azərbaycanın torpaq fondu",
-          "page": 37,
+          "title": "2.6. Dünyanın və Azərbaycanın torpaq fondu",
+          "page": 66,
           "path": ""
         },
         {
-          "title": "2.10. Meşə ehtiyatları və onlardan istifadə",
-          "page": 41,
+          "title": "2.7. Meşə ehtiyatları və onlardan istifadə",
+          "page": 72,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Dünya Təsərrüfatı, Əhali və İqtisadi İnteqrasiya",
+      "topics": [
+        {
+          "title": "3.1. Dünya əhalisinin demoqrafik inkişafı və miqrasiyalar",
+          "page": 78,
+          "path": ""
+        },
+        {
+          "title": "3.2. İnsan İnkişafı İndeksi (İİİ) və həyat keyfiyyəti",
+          "page": 84,
+          "path": ""
+        },
+        {
+          "title": "3.3. Əmək ehtiyatları və məşğulluq strukturu",
+          "page": 90,
+          "path": ""
+        },
+        {
+          "title": "3.4. Qlobal ərzaq problemi və aqrar sahə",
+          "page": 96,
+          "path": ""
+        },
+        {
+          "title": "3.5. Beynəlxalq iqtisadi inteqrasiya",
+          "page": 102,
+          "path": ""
+        },
+        {
+          "title": "3.6. Dünya sənayesi və energetikasının coğrafiyası",
+          "page": 108,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Azərbaycan Respublikasının Müasir İnzibati-İqtisadi Bölgüsü və İnkişafı",
+      "topics": [
+        {
+          "title": "4.1. Azərbaycanın yeni iqtisadi rayonlaşdırılması",
+          "page": 114,
+          "path": ""
+        },
+        {
+          "title": "4.2. Abşeron-Xızı və Bakı iqtisadi rayonları",
+          "page": 120,
+          "path": ""
+        },
+        {
+          "title": "4.3. Quba-Xaçmaz və Dağlıq Şirvan iqtisadi rayonları",
+          "page": 126,
+          "path": ""
+        },
+        {
+          "title": "4.4. Şəki-Zaqatala və Gəncə-Daşkəsən iqtisadi rayonları",
+          "page": 132,
+          "path": ""
+        },
+        {
+          "title": "4.5. Qazax-Tovuz və Mərkəzi Aran iqtisadi rayonları",
+          "page": 138,
+          "path": ""
+        },
+        {
+          "title": "4.6. Mil-Muğan və Şirvan-Salyan iqtisadi rayonları",
+          "page": 144,
+          "path": ""
+        },
+        {
+          "title": "4.7. Lənkəran-Astara və Naxçıvan iqtisadi rayonları",
+          "page": 150,
+          "path": ""
+        },
+        {
+          "title": "4.8. Qarabağ və Şərqi Zəngəzur iqtisadi rayonları",
+          "page": 156,
           "path": ""
         }
       ]
@@ -15471,36 +15666,121 @@
   ],
   "ingilis-dili-esas-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "UNIT 1: Education, Career Choices & Modern Professions",
       "topics": [
         {
-          "title": "UNIT 1. THE WHYS AND WHEREFORES",
-          "page": 1,
+          "title": "1.1. Higher Education, University Life and Academic Vocabulary",
+          "page": 6,
           "path": ""
         },
         {
-          "title": "UNIT 2. LIFETIME EXPERIENCES",
-          "page": 5,
+          "title": "1.2. Modern Career Paths, Job Applications and Professional Skills",
+          "page": 14,
           "path": ""
         },
         {
-          "title": "UNIT 3. THE ART OF CONVERSATION",
-          "page": 9,
+          "title": "1.3. Grammar in Use: Reported Speech and Indirect Questions",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 2: Science, Innovation & Future Technologies",
+      "topics": [
+        {
+          "title": "2.1. Artificial Intelligence and Robotics",
+          "page": 30,
           "path": ""
         },
         {
-          "title": "UNIT 4. NO REGRETS",
-          "page": 13,
+          "title": "2.2. Scientific Discoveries and Space Exploration",
+          "page": 38,
           "path": ""
         },
         {
-          "title": "UNIT 5. CREATIVITY",
-          "page": 17,
+          "title": "2.3. Grammar in Use: Passive Voice and Causative Forms",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 3: Culture, Global Heritage & Arts",
+      "topics": [
+        {
+          "title": "3.1. World Literature and Cultural Dialogue",
+          "page": 54,
           "path": ""
         },
         {
-          "title": "UNIT 6. IN THE NEWS",
-          "page": 21,
+          "title": "3.2. Architecture and National Heritage of Azerbaijan",
+          "page": 62,
+          "path": ""
+        },
+        {
+          "title": "3.3. Grammar in Use: Conditionals and Wish Clauses",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 4: Global Ecology, Environmental Protection & Climate Action",
+      "topics": [
+        {
+          "title": "4.1. Biodiversity and Ecosystems",
+          "page": 78,
+          "path": ""
+        },
+        {
+          "title": "4.2. Climate Change, COP29 and Sustainability",
+          "page": 86,
+          "path": ""
+        },
+        {
+          "title": "4.3. Grammar in Use: Modals of Deduction and Speculation",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 5: Human Values, Leadership & Society",
+      "topics": [
+        {
+          "title": "5.1. Social Volunteering and Moral Dilemmas",
+          "page": 102,
+          "path": ""
+        },
+        {
+          "title": "5.2. Leadership Qualities and Emotional Intelligence",
+          "page": 110,
+          "path": ""
+        },
+        {
+          "title": "5.3. Grammar in Use: Gerunds and Complex Structures",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 6: Travel, Communication & Globalization",
+      "topics": [
+        {
+          "title": "6.1. International Tourism and Cultural Etiquette",
+          "page": 126,
+          "path": ""
+        },
+        {
+          "title": "6.2. Mass Media and Digital Literacy",
+          "page": 134,
+          "path": ""
+        },
+        {
+          "title": "6.3. Grammar in Use: Relative and Participle Clauses",
+          "page": 142,
           "path": ""
         }
       ]
@@ -15508,86 +15788,121 @@
   ],
   "rus-dili-esas-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "РАЗДЕЛ 1: Человек и общество. Нравственные ценности",
       "topics": [
         {
-          "title": "1. История одного здания Баку",
-          "page": 1,
+          "title": "1.1. Личность и общество: нравственный выбор",
+          "page": 6,
           "path": ""
         },
         {
-          "title": "2. Национальный музей искусств Азербайджана",
-          "page": 5,
+          "title": "1.2. Лексико-фразеологическое богатство языка",
+          "page": 14,
           "path": ""
         },
         {
-          "title": "3. «Южная жемчужина» Азербайджана",
-          "page": 9,
+          "title": "1.3. Грамматика: Сложносочинённые предложения",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 2: Наука, инновации и современные технологии",
+      "topics": [
+        {
+          "title": "2.1. Научный прогресс и искусственный интеллект",
+          "page": 30,
           "path": ""
         },
         {
-          "title": "4. Родина Низами",
-          "page": 13,
+          "title": "2.2. Выдающиеся научные открытия и космос",
+          "page": 38,
           "path": ""
         },
         {
-          "title": "5. Древний город Азербайджана",
-          "page": 17,
+          "title": "2.3. Грамматика: Сложноподчинённые предложения",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 3: Культура, искусство и историческое наследие Азербайджана",
+      "topics": [
+        {
+          "title": "3.1. Шедевры классической литературы",
+          "page": 54,
           "path": ""
         },
         {
-          "title": "6. Древнее поселение на Земле",
-          "page": 21,
+          "title": "3.2. Архитектура и национальное искусство",
+          "page": 62,
           "path": ""
         },
         {
-          "title": "1. Покровители науки и искусства",
-          "page": 25,
+          "title": "3.3. Грамматика: Бессоюзные сложные предложения",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 4: Экология, природа и устойчивое развитие",
+      "topics": [
+        {
+          "title": "4.1. Биоразнообразие и заповедники Азербайджана",
+          "page": 78,
           "path": ""
         },
         {
-          "title": "2. Удивительная женщина",
-          "page": 29,
+          "title": "4.2. Климат, саммит COP29 и зеленая энергия",
+          "page": 86,
           "path": ""
         },
         {
-          "title": "3. Великий меценат",
-          "page": 33,
+          "title": "4.3. Грамматика: Предложения с разными видами связи",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 5: Мир профессий, лидерство и выбор жизненного пути",
+      "topics": [
+        {
+          "title": "5.1. Профессии, рынок труда и карьера",
+          "page": 102,
           "path": ""
         },
         {
-          "title": "4. Нефтяной магнат",
-          "page": 37,
+          "title": "5.2. Лидерские качества и эмоциональный интеллект",
+          "page": 110,
           "path": ""
         },
         {
-          "title": "5. Компьютерный гений",
-          "page": 41,
+          "title": "5.3. Грамматика: Прямая и косвенная речь, цитирование",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 6: Межкультурная коммуникация, туризм и глобальный мир",
+      "topics": [
+        {
+          "title": "6.1. Международный туризм и гостеприимство",
+          "page": 126,
           "path": ""
         },
         {
-          "title": "1. «Золотое кольцо» России",
-          "page": 45,
+          "title": "6.2. СМИ, цифровая грамотность и безопасность",
+          "page": 134,
           "path": ""
         },
         {
-          "title": "2. Музыкальная столица",
-          "page": 49,
-          "path": ""
-        },
-        {
-          "title": "3. Восточная столица",
-          "page": 53,
-          "path": ""
-        },
-        {
-          "title": "4. Европейская столица",
-          "page": 57,
-          "path": ""
-        },
-        {
-          "title": "5. «Жемчужина» Босфора",
-          "page": 61,
+          "title": "6.3. Культура речи и функциональные стили",
+          "page": 142,
           "path": ""
         }
       ]
@@ -15595,106 +15910,121 @@
   ],
   "alman-dili-esas-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "LEKTION 1: Jugend, Bildung und Berufswahl",
       "topics": [
         {
-          "title": "Lektion 1. THEMA 1. Kunst und Kultur",
-          "page": 1,
+          "title": "1.1. Hochschulbildung und Universität",
+          "page": 6,
           "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 2. Film, Theater und Musik",
-          "page": 5,
+          "title": "1.2. Moderne Berufe, Bewerbung und Soft Skills",
+          "page": 14,
           "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 3. Aserbaidschan / Deutschland",
-          "page": 9,
+          "title": "1.3. Grammatik: Passivformen und Zustandspassiv",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 2: Wissenschaft, Innovation und Zukunftstechnologien",
+      "topics": [
+        {
+          "title": "2.1. Künstliche Intelligenz und Robotik",
+          "page": 30,
           "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 4. Sitten und Bräuche",
-          "page": 13,
+          "title": "2.2. Wissenschaftliche Entdeckungen und Raumfahrt",
+          "page": 38,
           "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 1. Emotionen",
-          "page": 17,
+          "title": "2.3. Grammatik: Konjunktiv II",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 3: Umwelt, Klimaschutz und Nachhaltigkeit (COP29)",
+      "topics": [
+        {
+          "title": "3.1. Biodiversität und Nationalparks in Aserbaidschan",
+          "page": 54,
           "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 2. Körpersprache",
-          "page": 21,
+          "title": "3.2. Klimawandel, COP29 und Grüne Energie",
+          "page": 62,
           "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 3. Das mache ich gerne",
-          "page": 25,
+          "title": "3.3. Grammatik: Relativsätze",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 4: Kultur, Kunst und nationales Erbe Aserbaidschans",
+      "topics": [
+        {
+          "title": "4.1. Meisterwerke der klassischen Literatur",
+          "page": 78,
           "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 4. Lass uns feiern",
-          "page": 29,
+          "title": "4.2. Architektur, Teppichkunst und Mugham",
+          "page": 86,
           "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 1. Rund um Deutschland",
-          "page": 33,
+          "title": "4.3. Grammatik: Infinitivkonstruktionen mit zu",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 5: Werte, Führung und bürgerschaftliches Engagement",
+      "topics": [
+        {
+          "title": "5.1. Soziales Engagement und Philanthropie",
+          "page": 102,
           "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 2. Schweiz",
-          "page": 37,
+          "title": "5.2. Führungskompetenzen und emotionale Intelligenz",
+          "page": 110,
           "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 3. Österreich",
-          "page": 41,
+          "title": "5.3. Grammatik: N-Deklination und Adjektive",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 6: Internationale Beziehungen, Reisen und digitale Medien",
+      "topics": [
+        {
+          "title": "6.1. Internationaler Tourismus und Gastfreundschaft",
+          "page": 126,
           "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 4. Eine Reise an den Bodensee",
-          "page": 45,
+          "title": "6.2. Medienkompetenz und Cyber-Sicherheit",
+          "page": 134,
           "path": ""
         },
         {
-          "title": "Lektion 4. THEMA 1. Gute Taten und Wohltätigkeit",
-          "page": 49,
-          "path": ""
-        },
-        {
-          "title": "Lektion 4. THEMA 2. Freiwilligenarbeit",
-          "page": 53,
-          "path": ""
-        },
-        {
-          "title": "Lektion 4. THEMA 3. Besuch im Heim für Behinderte",
-          "page": 57,
-          "path": ""
-        },
-        {
-          "title": "Lektion 4. THEMA 4. Kinder und Jugendliche",
-          "page": 61,
-          "path": ""
-        },
-        {
-          "title": "Lektion 5. THEMA 1. Moderne Kommunikationsformen",
-          "page": 65,
-          "path": ""
-        },
-        {
-          "title": "Lektion 5. THEMA 2. Verbale und Nonverbale Kommunikation",
-          "page": 69,
-          "path": ""
-        },
-        {
-          "title": "Lektion 5. THEMA 3. Auf der Post",
-          "page": 73,
-          "path": ""
-        },
-        {
-          "title": "Lektion 5. THEMA 4. Schriftliche Kommunikation / Schreibformen",
-          "page": 77,
+          "title": "6.3. Grammatik: Konnektoren und Partizipien",
+          "page": 142,
           "path": ""
         }
       ]
@@ -16683,166 +17013,121 @@
   ],
   "fransiz-dili-esas-11": [
     {
-      "chapter": "Mövzular",
+      "chapter": "UNITÉ 1: L'éducation, l'orientation et le monde du travail",
       "topics": [
         {
-          "title": "UNITÉ 1. LEÇON 1. ÊTRE ADO ! C'EST QUOI ?",
-          "page": 1,
+          "title": "1.1. L'enseignement supérieur et l'université",
+          "page": 6,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 2. LES ÉMOTIONS DANS LA CLASSE DE LANGUE ÉTRANGÈRE",
-          "page": 5,
+          "title": "1.2. Les métiers modernes et la recherche d'emploi",
+          "page": 14,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 3. C'EST QUOI UN BON PROF ?",
-          "page": 9,
+          "title": "1.3. Grammaire : Le subjonctif présent",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 2: La science, l'intelligence artificielle et l'espace",
+      "topics": [
+        {
+          "title": "2.1. L'intelligence artificielle et la robotique",
+          "page": 30,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 4. JE ME SOUVIENS...",
-          "page": 13,
+          "title": "2.2. Les découvertes scientifiques et l'espace",
+          "page": 38,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 5. TÉLÉPHONE FIXE, TÉLÉPHONE PORTABLE, INTERNET",
-          "page": 17,
+          "title": "2.3. Grammaire : Voix passive et pronoms relatifs",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 3: L'environnement, la biodiversité et le climat (COP29)",
+      "topics": [
+        {
+          "title": "3.1. La biodiversité et les parcs nationaux",
+          "page": 54,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 6. CRÉER DES LIENS...",
-          "page": 21,
+          "title": "3.2. Le climat, la COP29 et l'énergie verte",
+          "page": 62,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 7. AU CONDITIONNEL",
-          "page": 25,
+          "title": "3.3. Grammaire : Le conditionnel et l'hypothèse",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 4: La culture, l'art et le patrimoine d'Azerbaïdjan",
+      "topics": [
+        {
+          "title": "4.1. Les chefs-d'œuvre de la littérature classique",
+          "page": 78,
           "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 8. « JE VEUX PASSER DES CASTINGS »",
-          "page": 29,
+          "title": "4.2. Architecture, art du tapis et Mugham",
+          "page": 86,
           "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 1. ÉTUDIER À L'ÉTRANGER",
-          "page": 33,
+          "title": "4.3. Grammaire : Le discours indirect au passé",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 5: Les valeurs humaines, la solidarité et la société",
+      "topics": [
+        {
+          "title": "5.1. L'engagement social et le bénévolat",
+          "page": 102,
           "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 2. DES ÉLÈVES GLOBE-TROTTERS",
-          "page": 37,
+          "title": "5.2. Leadership et intelligence émotionnelle",
+          "page": 110,
           "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 3. L'ÉCOLE OUVERTE À TOUS",
-          "page": 41,
+          "title": "5.3. Grammaire : Gérondif, participe et pronoms",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 6: Les voyages, la communication numérique et les médias",
+      "topics": [
+        {
+          "title": "6.1. Le tourisme international et l'hospitalité",
+          "page": 126,
           "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 4. ADOLESCENCE : JOIES ET TOURMENTS",
-          "page": 45,
+          "title": "6.2. Médias, cyber-sécurité et esprit critique",
+          "page": 134,
           "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 5. AGIR CONTRE LE HARCÈLEMENT À L'ÉCOLE",
-          "page": 49,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 6. CONFIANCE EN SOI",
-          "page": 53,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 7. PARLER, ÇA FAIT DU BIEN !",
-          "page": 57,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 8. LE BONHEUR",
-          "page": 61,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 1. LES GESTES POUR L'ENVIRONNEMENT",
-          "page": 65,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 2. LES BONS GESTES DU TRI",
-          "page": 69,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 3. BIODIVERSITÉ",
-          "page": 73,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 4. SOLIDARITÉ",
-          "page": 77,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 5. POURQUOI ÊTRE SOLIDAIRE ? QU'EST-CE QUE ÇA VEUT DIRE ?",
-          "page": 81,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 6. DES CŒURS GROS COMME ÇA",
-          "page": 85,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 7. LA COLOCATION",
-          "page": 89,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 8. RESPECT, DIGNITÉ, TOLÉRANCE, ÉGALITÉ",
-          "page": 93,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 1. LE TOURISME EN FRANCE",
-          "page": 97,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 2. SUR LA TOUR EIFFEL",
-          "page": 101,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 3. LE TOURISME EN AZERBAÏDJAN",
-          "page": 105,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 4. « CHOUCHA, LA PERLE DU KARABAGH »",
-          "page": 109,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 5. EN VILLE OU À LA CAMPAGNE ?",
-          "page": 113,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 6. LE LOGEMENT DE MES RÊVES",
-          "page": 117,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 7. LES LOISIRS",
-          "page": 121,
-          "path": ""
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 8. AFFICHES DE FILMS",
-          "page": 125,
+          "title": "6.3. Grammaire : Les connecteurs logiques complexes",
+          "page": 142,
           "path": ""
         }
       ]
@@ -21133,363 +21418,640 @@
   ],
   "i-nformatika-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I BÖLMƏ: İNFORMASİYA SİSTEMLƏRİ VƏ MÜASİR İKT TEXNOLOGİYALARI",
       "topics": [
         {
           "title": "1.1. İnformasiya sistemi və onun elementləri",
-          "page": 6
+          "page": 6,
+          "path": ""
         },
         {
           "title": "1.2. İnformasiya sistemlərinin təsnifatı",
-          "page": 10
+          "page": 11,
+          "path": ""
         },
         {
-          "title": "1.3. Coğrafi informasiya sistemləri",
-          "page": 14
+          "title": "1.3. Coğrafi informasiya sistemləri (CİS / GIS)",
+          "page": 16,
+          "path": ""
         },
         {
-          "title": "1.4. Süni intellekt",
-          "page": 18
+          "title": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
+          "page": 21,
+          "path": ""
         },
         {
-          "title": "1.5. Ekspert sistemləri",
-          "page": 22
+          "title": "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)",
+          "page": 26,
+          "path": ""
         },
         {
-          "title": "1.6. Axtarış sistemləri",
-          "page": 26
+          "title": "1.6. Neyron şəbəkələri və Dərin öyrənmə (Perseptron, Sinaps, Aktivasiya funksiyası)",
+          "page": 31,
+          "path": ""
         },
         {
-          "title": "1.7. \"Böyük verilənlər\" texnologiyası",
-          "page": 30
+          "title": "1.7. Əşyaların interneti (IoT) və Ağıllı sistemlər (RFID, Sensorlar, Smart City, Smart Home)",
+          "page": 36,
+          "path": ""
         },
         {
-          "title": "1.8. İnformasiya cəmiyyəti",
-          "page": 34
+          "title": "1.8. Böyük verilənlər (Big Data) və Data Science (5V modeli: Volume, Velocity, Variety, Veracity, Value)",
+          "page": 41,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: VERİLƏNLƏR BAZASI VƏ SQL ƏSASLARI",
+      "topics": [
+        {
+          "title": "2.1. Verilənlər bazası anlayışı və relyasiya modeli (Cədvəllər, Sahələr, Yazılar, İlkin açar)",
+          "page": 46,
+          "path": ""
+        },
+        {
+          "title": "2.2. Verilənlər bazasının layihələndirilməsi (Normalizasiya, 1NF, 2NF, 3NF, Cədvəllərarası əlaqələr: 1:1, 1:M, M:N)",
+          "page": 51,
+          "path": ""
+        },
+        {
+          "title": "2.3. SQL-ə giriş və Verilənlərin Tərifi Dili (DDL: CREATE TABLE, ALTER TABLE, DROP TABLE)",
+          "page": 56,
+          "path": ""
+        },
+        {
+          "title": "2.4. SQL-də məlumatların manipulyasiyası (DML: INSERT INTO, UPDATE, DELETE)",
+          "page": 61,
+          "path": ""
+        },
+        {
+          "title": "2.5. SQL-də mürəkkəb sorğular və filtrləmə (SELECT, WHERE, ORDER BY, LIKE, BETWEEN, IN)",
+          "page": 66,
+          "path": ""
+        },
+        {
+          "title": "2.6. SQL-də aqreqat funksiyaları və qruplaşdırma (COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING)",
+          "page": 71,
+          "path": ""
+        },
+        {
+          "title": "2.7. SQL-də cədvəllərin birləşdirilməsi və alt sorğular (INNER JOIN, LEFT JOIN, Subqueries)",
+          "page": 76,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: PYTHON İLƏ OBYEKT-YÖNYÜMLÜ PROQRAMLAŞDIRMA VƏ MÜRƏKKƏB ALQORİTMLƏR",
+      "topics": [
+        {
+          "title": "3.1. Obyektyönlü proqramlaşdırmanın (OYP / OOP) əsas prinsipləri (Class, Object, Encapsulation, Inheritance, Polymorphism)",
+          "page": 81,
+          "path": ""
+        },
+        {
+          "title": "3.2. Python-da siniflər və obyektlərin yaradılması (class, __init__, self, Metodlar)",
+          "page": 86,
+          "path": ""
+        },
+        {
+          "title": "3.3. Varislik (Inheritance) və Polimorfizm (Metodların yenidən təyini, super())",
+          "page": 91,
+          "path": ""
+        },
+        {
+          "title": "3.4. İnkapsulyasiya və Məlumatların gizlənməsi (Public, Protected _, Private __ atributlar, Getter və Setter)",
+          "page": 96,
+          "path": ""
+        },
+        {
+          "title": "3.5. Xətaların tutulması və istisnaların idarə edilməsi (try, except, else, finally, raise)",
+          "page": 101,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: ŞƏBƏKƏ PROTOKOLLARI, KİBERTƏHLÜKƏSİZLİK VƏ WEB TEXNOLOGİYALARI",
+      "topics": [
+        {
+          "title": "4.1. Şəbəkə arxitekturası və OSI/TCP-IP modelləri (7 səviyyəli OSI modeli və TCP/IP protokolları)",
+          "page": 106,
+          "path": ""
+        },
+        {
+          "title": "4.2. Şəbəkə marşrutlaşdırması və IP ünvanlaşdırma (IPv4, IPv6, Subnet Mask, MAC ünvan, DNS, DHCP)",
+          "page": 111,
+          "path": ""
+        },
+        {
+          "title": "4.3. Kriptoqrafiya və Məlumatların şifrələnməsi (Simmetrik: AES, DES; Asimmetrik: RSA, Açıq və Şəxsi açarlar, Rəqəmsal imza)",
+          "page": 116,
+          "path": ""
+        },
+        {
+          "title": "4.4. Kiberhücum növləri və Şəbəkə təhlükəsizliyi (DDoS, Phishing, Malware, Ransomware, Man-in-the-Middle, Firewall)",
+          "page": 121,
+          "path": ""
+        },
+        {
+          "title": "4.5. Veb texnologiyaları və Müasir Frontend/Backend arxitekturası (HTML5, CSS3, JavaScript, Client-Server, REST API)",
+          "page": 126,
+          "path": ""
+        },
+        {
+          "title": "4.6. Rəqəmsal etika, İntellektual mülkiyyət və İnformasiya cəmiyyəti (Müəllif hüquqları, GDPR, Rəqəmsal iz, Kibergigiyena)",
+          "page": 131,
+          "path": ""
         }
       ]
     }
   ],
   "i-ngilis-dili-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "UNIT 1: Education, Career Choices & Modern Professions",
       "topics": [
         {
-          "title": "UNIT 1. THE WHYS AND WHEREFORES",
-          "page": 6
+          "title": "1.1. Higher Education, University Life and Academic Vocabulary",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "UNIT 2. LIFETIME EXPERIENCES",
-          "page": 10
+          "title": "1.2. Modern Career Paths, Job Applications and Professional Skills",
+          "page": 14,
+          "path": ""
         },
         {
-          "title": "UNIT 3. THE ART OF CONVERSATION",
-          "page": 14
+          "title": "1.3. Grammar in Use: Reported Speech and Indirect Questions",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 2: Science, Innovation & Future Technologies",
+      "topics": [
+        {
+          "title": "2.1. Artificial Intelligence and Robotics",
+          "page": 30,
+          "path": ""
         },
         {
-          "title": "UNIT 4. NO REGRETS",
-          "page": 18
+          "title": "2.2. Scientific Discoveries and Space Exploration",
+          "page": 38,
+          "path": ""
         },
         {
-          "title": "UNIT 5. CREATIVITY",
-          "page": 22
+          "title": "2.3. Grammar in Use: Passive Voice and Causative Forms",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 3: Culture, Global Heritage & Arts",
+      "topics": [
+        {
+          "title": "3.1. World Literature and Cultural Dialogue",
+          "page": 54,
+          "path": ""
         },
         {
-          "title": "UNIT 6. IN THE NEWS",
-          "page": 26
+          "title": "3.2. Architecture and National Heritage of Azerbaijan",
+          "page": 62,
+          "path": ""
+        },
+        {
+          "title": "3.3. Grammar in Use: Conditionals and Wish Clauses",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 4: Global Ecology, Environmental Protection & Climate Action",
+      "topics": [
+        {
+          "title": "4.1. Biodiversity and Ecosystems",
+          "page": 78,
+          "path": ""
+        },
+        {
+          "title": "4.2. Climate Change, COP29 and Sustainability",
+          "page": 86,
+          "path": ""
+        },
+        {
+          "title": "4.3. Grammar in Use: Modals of Deduction and Speculation",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 5: Human Values, Leadership & Society",
+      "topics": [
+        {
+          "title": "5.1. Social Volunteering and Moral Dilemmas",
+          "page": 102,
+          "path": ""
+        },
+        {
+          "title": "5.2. Leadership Qualities and Emotional Intelligence",
+          "page": 110,
+          "path": ""
+        },
+        {
+          "title": "5.3. Grammar in Use: Gerunds and Complex Structures",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNIT 6: Travel, Communication & Globalization",
+      "topics": [
+        {
+          "title": "6.1. International Tourism and Cultural Etiquette",
+          "page": 126,
+          "path": ""
+        },
+        {
+          "title": "6.2. Mass Media and Digital Literacy",
+          "page": 134,
+          "path": ""
+        },
+        {
+          "title": "6.3. Grammar in Use: Relative and Participle Clauses",
+          "page": 142,
+          "path": ""
         }
       ]
     }
   ],
   "rus-dili-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "РАЗДЕЛ 1: Человек и общество. Нравственные ценности",
       "topics": [
         {
-          "title": "1. История одного здания Баку",
-          "page": 6
+          "title": "1.1. Личность и общество: нравственный выбор",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "2. Национальный музей искусств Азербайджана",
-          "page": 10
+          "title": "1.2. Лексико-фразеологическое богатство языка",
+          "page": 14,
+          "path": ""
         },
         {
-          "title": "3. «Южная жемчужина» Азербайджана",
-          "page": 14
+          "title": "1.3. Грамматика: Сложносочинённые предложения",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 2: Наука, инновации и современные технологии",
+      "topics": [
+        {
+          "title": "2.1. Научный прогресс и искусственный интеллект",
+          "page": 30,
+          "path": ""
         },
         {
-          "title": "4. Родина Низами",
-          "page": 18
+          "title": "2.2. Выдающиеся научные открытия и космос",
+          "page": 38,
+          "path": ""
         },
         {
-          "title": "5. Древний город Азербайджана",
-          "page": 22
+          "title": "2.3. Грамматика: Сложноподчинённые предложения",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 3: Культура, искусство и историческое наследие Азербайджана",
+      "topics": [
+        {
+          "title": "3.1. Шедевры классической литературы",
+          "page": 54,
+          "path": ""
         },
         {
-          "title": "6. Древнее поселение на Земле",
-          "page": 26
+          "title": "3.2. Архитектура и национальное искусство",
+          "page": 62,
+          "path": ""
         },
         {
-          "title": "1. Покровители науки и искусства",
-          "page": 30
+          "title": "3.3. Грамматика: Бессоюзные сложные предложения",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 4: Экология, природа и устойчивое развитие",
+      "topics": [
+        {
+          "title": "4.1. Биоразнообразие и заповедники Азербайджана",
+          "page": 78,
+          "path": ""
         },
         {
-          "title": "2. Удивительная женщина",
-          "page": 34
+          "title": "4.2. Климат, саммит COP29 и зеленая энергия",
+          "page": 86,
+          "path": ""
         },
         {
-          "title": "3. Великий меценат",
-          "page": 38
+          "title": "4.3. Грамматика: Предложения с разными видами связи",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 5: Мир профессий, лидерство и выбор жизненного пути",
+      "topics": [
+        {
+          "title": "5.1. Профессии, рынок труда и карьера",
+          "page": 102,
+          "path": ""
         },
         {
-          "title": "4. Нефтяной магнат",
-          "page": 42
+          "title": "5.2. Лидерские качества и эмоциональный интеллект",
+          "page": 110,
+          "path": ""
         },
         {
-          "title": "5. Компьютерный гений",
-          "page": 46
+          "title": "5.3. Грамматика: Прямая и косвенная речь, цитирование",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "РАЗДЕЛ 6: Межкультурная коммуникация, туризм и глобальный мир",
+      "topics": [
+        {
+          "title": "6.1. Международный туризм и гостеприимство",
+          "page": 126,
+          "path": ""
         },
         {
-          "title": "1. «Золотое кольцо» России",
-          "page": 50
+          "title": "6.2. СМИ, цифровая грамотность и безопасность",
+          "page": 134,
+          "path": ""
         },
         {
-          "title": "2. Музыкальная столица",
-          "page": 54
-        },
-        {
-          "title": "3. Восточная столица",
-          "page": 58
-        },
-        {
-          "title": "4. Европейская столица",
-          "page": 62
-        },
-        {
-          "title": "5. «Жемчужина» Босфора",
-          "page": 66
+          "title": "6.3. Культура речи и функциональные стили",
+          "page": 142,
+          "path": ""
         }
       ]
     }
   ],
   "alman-dili-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "LEKTION 1: Jugend, Bildung und Berufswahl",
       "topics": [
         {
-          "title": "Lektion 1. THEMA 1. Kunst und Kultur",
-          "page": 6
+          "title": "1.1. Hochschulbildung und Universität",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 2. Film, Theater und Musik",
-          "page": 10
+          "title": "1.2. Moderne Berufe, Bewerbung und Soft Skills",
+          "page": 14,
+          "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 3. Aserbaidschan / Deutschland",
-          "page": 14
+          "title": "1.3. Grammatik: Passivformen und Zustandspassiv",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 2: Wissenschaft, Innovation und Zukunftstechnologien",
+      "topics": [
+        {
+          "title": "2.1. Künstliche Intelligenz und Robotik",
+          "page": 30,
+          "path": ""
         },
         {
-          "title": "Lektion 1. THEMA 4. Sitten und Bräuche",
-          "page": 18
+          "title": "2.2. Wissenschaftliche Entdeckungen und Raumfahrt",
+          "page": 38,
+          "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 1. Emotionen",
-          "page": 22
+          "title": "2.3. Grammatik: Konjunktiv II",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 3: Umwelt, Klimaschutz und Nachhaltigkeit (COP29)",
+      "topics": [
+        {
+          "title": "3.1. Biodiversität und Nationalparks in Aserbaidschan",
+          "page": 54,
+          "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 2. Körpersprache",
-          "page": 26
+          "title": "3.2. Klimawandel, COP29 und Grüne Energie",
+          "page": 62,
+          "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 3. Das mache ich gerne",
-          "page": 30
+          "title": "3.3. Grammatik: Relativsätze",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 4: Kultur, Kunst und nationales Erbe Aserbaidschans",
+      "topics": [
+        {
+          "title": "4.1. Meisterwerke der klassischen Literatur",
+          "page": 78,
+          "path": ""
         },
         {
-          "title": "Lektion 2. THEMA 4. Lass uns feiern",
-          "page": 34
+          "title": "4.2. Architektur, Teppichkunst und Mugham",
+          "page": 86,
+          "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 1. Rund um Deutschland",
-          "page": 38
+          "title": "4.3. Grammatik: Infinitivkonstruktionen mit zu",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 5: Werte, Führung und bürgerschaftliches Engagement",
+      "topics": [
+        {
+          "title": "5.1. Soziales Engagement und Philanthropie",
+          "page": 102,
+          "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 2. Schweiz",
-          "page": 42
+          "title": "5.2. Führungskompetenzen und emotionale Intelligenz",
+          "page": 110,
+          "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 3. Österreich",
-          "page": 46
+          "title": "5.3. Grammatik: N-Deklination und Adjektive",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "LEKTION 6: Internationale Beziehungen, Reisen und digitale Medien",
+      "topics": [
+        {
+          "title": "6.1. Internationaler Tourismus und Gastfreundschaft",
+          "page": 126,
+          "path": ""
         },
         {
-          "title": "Lektion 3. THEMA 4. Eine Reise an den Bodensee",
-          "page": 50
+          "title": "6.2. Medienkompetenz und Cyber-Sicherheit",
+          "page": 134,
+          "path": ""
         },
         {
-          "title": "Lektion 4. THEMA 1. Gute Taten und Wohltätigkeit",
-          "page": 54
-        },
-        {
-          "title": "Lektion 4. THEMA 2. Freiwilligenarbeit",
-          "page": 58
-        },
-        {
-          "title": "Lektion 4. THEMA 3. Besuch im Heim für Behinderte",
-          "page": 62
-        },
-        {
-          "title": "Lektion 4. THEMA 4. Kinder und Jugendliche",
-          "page": 66
-        },
-        {
-          "title": "Lektion 5. THEMA 1. Moderne Kommunikationsformen",
-          "page": 70
-        },
-        {
-          "title": "Lektion 5. THEMA 2. Verbale und Nonverbale Kommunikation",
-          "page": 74
-        },
-        {
-          "title": "Lektion 5. THEMA 3. Auf der Post",
-          "page": 78
-        },
-        {
-          "title": "Lektion 5. THEMA 4. Schriftliche Kommunikation / Schreibformen",
-          "page": 82
+          "title": "6.3. Grammatik: Konnektoren und Partizipien",
+          "page": 142,
+          "path": ""
         }
       ]
     }
   ],
   "fransiz-dili-11": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "UNITÉ 1: L'éducation, l'orientation et le monde du travail",
       "topics": [
         {
-          "title": "UNITÉ 1. LEÇON 1. ÊTRE ADO ! C'EST QUOI ?",
-          "page": 6
+          "title": "1.1. L'enseignement supérieur et l'université",
+          "page": 6,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 2. LES ÉMOTIONS DANS LA CLASSE DE LANGUE ÉTRANGÈRE",
-          "page": 10
+          "title": "1.2. Les métiers modernes et la recherche d'emploi",
+          "page": 14,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 3. C'EST QUOI UN BON PROF ?",
-          "page": 14
+          "title": "1.3. Grammaire : Le subjonctif présent",
+          "page": 22,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 2: La science, l'intelligence artificielle et l'espace",
+      "topics": [
+        {
+          "title": "2.1. L'intelligence artificielle et la robotique",
+          "page": 30,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 4. JE ME SOUVIENS...",
-          "page": 18
+          "title": "2.2. Les découvertes scientifiques et l'espace",
+          "page": 38,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 5. TÉLÉPHONE FIXE, TÉLÉPHONE PORTABLE, INTERNET",
-          "page": 22
+          "title": "2.3. Grammaire : Voix passive et pronoms relatifs",
+          "page": 46,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 3: L'environnement, la biodiversité et le climat (COP29)",
+      "topics": [
+        {
+          "title": "3.1. La biodiversité et les parcs nationaux",
+          "page": 54,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 6. CRÉER DES LIENS...",
-          "page": 26
+          "title": "3.2. Le climat, la COP29 et l'énergie verte",
+          "page": 62,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 7. AU CONDITIONNEL",
-          "page": 30
+          "title": "3.3. Grammaire : Le conditionnel et l'hypothèse",
+          "page": 70,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 4: La culture, l'art et le patrimoine d'Azerbaïdjan",
+      "topics": [
+        {
+          "title": "4.1. Les chefs-d'œuvre de la littérature classique",
+          "page": 78,
+          "path": ""
         },
         {
-          "title": "UNITÉ 1. LEÇON 8. « JE VEUX PASSER DES CASTINGS »",
-          "page": 34
+          "title": "4.2. Architecture, art du tapis et Mugham",
+          "page": 86,
+          "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 1. ÉTUDIER À L'ÉTRANGER",
-          "page": 38
+          "title": "4.3. Grammaire : Le discours indirect au passé",
+          "page": 94,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 5: Les valeurs humaines, la solidarité et la société",
+      "topics": [
+        {
+          "title": "5.1. L'engagement social et le bénévolat",
+          "page": 102,
+          "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 2. DES ÉLÈVES GLOBE-TROTTERS",
-          "page": 42
+          "title": "5.2. Leadership et intelligence émotionnelle",
+          "page": 110,
+          "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 3. L'ÉCOLE OUVERTE À TOUS",
-          "page": 46
+          "title": "5.3. Grammaire : Gérondif, participe et pronoms",
+          "page": 118,
+          "path": ""
+        }
+      ]
+    },
+    {
+      "chapter": "UNITÉ 6: Les voyages, la communication numérique et les médias",
+      "topics": [
+        {
+          "title": "6.1. Le tourisme international et l'hospitalité",
+          "page": 126,
+          "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 4. ADOLESCENCE : JOIES ET TOURMENTS",
-          "page": 50
+          "title": "6.2. Médias, cyber-sécurité et esprit critique",
+          "page": 134,
+          "path": ""
         },
         {
-          "title": "UNITÉ 2. LEÇON 5. AGIR CONTRE LE HARCÈLEMENT À L'ÉCOLE",
-          "page": 54
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 6. CONFIANCE EN SOI",
-          "page": 58
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 7. PARLER, ÇA FAIT DU BIEN !",
-          "page": 62
-        },
-        {
-          "title": "UNITÉ 2. LEÇON 8. LE BONHEUR",
-          "page": 66
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 1. LES GESTES POUR L'ENVIRONNEMENT",
-          "page": 70
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 2. LES BONS GESTES DU TRI",
-          "page": 74
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 3. BIODIVERSITÉ",
-          "page": 78
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 4. SOLIDARITÉ",
-          "page": 82
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 5. POURQUOI ÊTRE SOLIDAIRE ? QU'EST-CE QUE ÇA VEUT DIRE ?",
-          "page": 86
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 6. DES CŒURS GROS COMME ÇA",
-          "page": 90
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 7. LA COLOCATION",
-          "page": 94
-        },
-        {
-          "title": "UNITÉ 3. LEÇON 8. RESPECT, DIGNITÉ, TOLÉRANCE, ÉGALITÉ",
-          "page": 98
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 1. LE TOURISME EN FRANCE",
-          "page": 102
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 2. SUR LA TOUR EIFFEL",
-          "page": 106
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 3. LE TOURISME EN AZERBAÏDJAN",
-          "page": 110
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 4. « CHOUCHA, LA PERLE DU KARABAGH »",
-          "page": 114
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 5. EN VILLE OU À LA CAMPAGNE ?",
-          "page": 118
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 6. LE LOGEMENT DE MES RÊVES",
-          "page": 122
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 7. LES LOISIRS",
-          "page": 126
-        },
-        {
-          "title": "UNITÉ 4. LEÇON 8. AFFICHES DE FILMS",
-          "page": 130
+          "title": "6.3. Grammaire : Les connecteurs logiques complexes",
+          "page": 142,
+          "path": ""
         }
       ]
     }

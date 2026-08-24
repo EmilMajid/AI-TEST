@@ -153,10 +153,8 @@ Qısa və aydın ol. Azərbaycan dilində yaz.`
             userAnswer: userAnswer !== undefined ? question.options[userAnswer] : "Cavab verilməyib",
             correctAnswer: question.options[question.correctAnswer],
             aiExplanation: question.explanation,
-            improvementTips: isCorrect
-              ? ["Əla! Bu mövzunu yaxşı bilirsən."]
-              : ["Bu mövzunu təkrar et.", "Əlavə mənbələrdən istifadə et."],
-            conceptsToReview: isCorrect ? [] : [body.testData.topic],
+            improvementTips: [],
+            conceptsToReview: [],
           })
         }
       }
@@ -265,10 +263,8 @@ Azərbaycan dilində, şəxsi və dəstəkləyici tonda yaz.`
           userAnswer: userAnswer !== undefined ? question.options[userAnswer] : "Cavab verilməyib",
           correctAnswer: question.options[question.correctAnswer],
           aiExplanation: question.explanation,
-          improvementTips: isCorrect
-            ? ["Əla! Bu mövzunu yaxşı bilirsən."]
-            : ["Bu mövzunu təkrar et.", "Dərslikdən əlavə oxu.", "Müəllimdən kömək istə."],
-          conceptsToReview: isCorrect ? [] : [body.testData.topic],
+          improvementTips: [],
+          conceptsToReview: [],
         }
       })
 

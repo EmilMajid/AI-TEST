@@ -95,23 +95,12 @@ interface TestAnalysis {
   }
 }
 
-const cleanMath = (str: string): string => {
-  if (!str || typeof str !== "string") return str || "";
-  return str
-    .replace(/\$([^\$]+)\$/g, "$1")
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/^\s*\*\s+/gm, "")
-    .replace(/\\cdot/g, "·")
-    .replace(/\\times/g, "×")
-    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1 / $2")
-    .replace(/\{([^}]+)\}/g, "$1")
-    .trim();
-};
+import { formatScientificText } from "@/lib/format-math"
 
 // Safe helper to convert any potential object/array/primitive into safe React child
 const renderSafe = (val: any): React.ReactNode => {
   if (val === null || val === undefined) return "";
-  if (typeof val === "string") return cleanMath(val);
+  if (typeof val === "string") return formatScientificText(val);
   if (typeof val === "number" || typeof val === "boolean") {
     return String(val);
   }
@@ -126,7 +115,7 @@ const renderSafe = (val: any): React.ReactNode => {
   if (typeof val === "object") {
     if (val.correct !== undefined || val.distractors !== undefined) {
       const opts = [val.correct, ...(Array.isArray(val.distractors) ? val.distractors : [])].filter(Boolean);
-      return opts.map((o) => (typeof o === "string" ? cleanMath(o) : JSON.stringify(o))).join(", ");
+      return opts.map((o) => (typeof o === "string" ? formatScientificText(o) : JSON.stringify(o))).join(", ");
     }
     if (val.text) return renderSafe(val.text);
     if (val.label) return renderSafe(val.label);
@@ -539,101 +528,73 @@ export default function ResultsPage() {
                       </CardHeader>
 
                       {isExpanded && (
-                        <CardContent className="pt-0">
-                          <div className="grid md:grid-cols-2 gap-4 mb-4">
-                            <div>
-                              <span className="text-sm font-medium text-gray-600">Sizin cavabınız:</span>
-                              <p className={`font-medium ${isCorrect ? "text-green-600" : "text-red-600"}`}>
+                        <CardContent className="pt-0 space-y-4">
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className={`p-3.5 rounded-xl border ${userAnswer === undefined ? "bg-gray-50 border-gray-200" : isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+                              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider block mb-1">Sizin cavabınız:</span>
+                              <p className={`font-semibold text-sm sm:text-base ${userAnswer === undefined ? "text-gray-600" : isCorrect ? "text-green-700" : "text-red-700"}`}>
                                 {userAnswer !== undefined
-                                  ? `${String.fromCharCode(65 + Number(userAnswer))}) ${getOptionText(question.options, userAnswer)}`
+                                  ? `${String.fromCharCode(65 + Number(userAnswer))}) ${renderSafe(getOptionText(question.options, userAnswer))}`
                                   : "Cavab verilməyib"}
                               </p>
                             </div>
-                            <div>
-                              <span className="text-sm font-medium text-gray-600">Düzgün cavab:</span>
-                              <p className="text-green-600 font-medium">
+                            <div className="p-3.5 rounded-xl border bg-green-50/80 border-green-200">
+                              <span className="text-xs font-semibold text-green-700 uppercase tracking-wider block mb-1">Düzgün cavab:</span>
+                              <p className="text-green-800 font-semibold text-sm sm:text-base">
                                 {String.fromCharCode(65 + Number(question.correctAnswer))}){" "}
-                                {getOptionText(question.options, question.correctAnswer)}
+                                {renderSafe(getOptionText(question.options, question.correctAnswer))}
                               </p>
                             </div>
                           </div>
 
-                          {questionAnalysis && (
-                            <div className="space-y-4">
-                              {/* AI Explanation */}
-                              <div className="bg-blue-50 p-4 rounded-lg">
-                                <h4 className="font-medium text-blue-800 mb-2 flex items-center">
-                                  <Brain className="h-4 w-4 mr-2" />
-                                  AI Təhlili
-                                </h4>
-                                <p className="text-blue-700 text-sm">{renderSafe(questionAnalysis.aiExplanation)}</p>
+                          {/* Elmi İzah və Həll */}
+                          <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-2">
+                            <h4 className="font-semibold text-slate-800 text-sm flex items-center gap-2">
+                              <BookOpen className="h-4 w-4 text-primary" />
+                              Dərslikdən Elmi İzah və Həll
+                            </h4>
+                            {question.sourceContext && (
+                              <div className="text-xs text-muted-foreground italic border-l-2 border-primary/60 pl-2.5 py-0.5">
+                                {renderSafe(question.sourceContext)}
                               </div>
+                            )}
+                            <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap">
+                              {renderSafe(question.explanation || questionAnalysis?.aiExplanation)}
+                            </p>
+                          </div>
 
-                              {/* Improvement Tips */}
-                              {questionAnalysis.improvementTips?.length > 0 && (
-                                <div className="bg-yellow-50 p-4 rounded-lg">
-                                  <h4 className="font-medium text-yellow-800 mb-2 flex items-center">
-                                    <Lightbulb className="h-4 w-4 mr-2" />
-                                    Təkmilləşdirmə Tövsiyələri
-                                  </h4>
-                                  <ul className="text-yellow-700 text-sm space-y-1">
-                                    {questionAnalysis.improvementTips.map((tip, tipIndex) => (
-                                      <li key={tipIndex} className="flex items-start">
-                                        <span className="mr-2">•</span>
-                                        <span>{renderSafe(tip)}</span>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                              )}
-
-                              {/* Concepts to Review */}
-                              {questionAnalysis.conceptsToReview?.length > 0 && (
-                                <div className="bg-purple-50 p-4 rounded-lg">
-                                  <h4 className="font-medium text-purple-800 mb-2">Təkrar Edilməli Mövzular</h4>
-                                  <div className="flex flex-wrap gap-2">
-                                    {questionAnalysis.conceptsToReview.map((concept, conceptIndex) => (
-                                      <Badge
-                                        key={conceptIndex}
-                                        variant="outline"
-                                        className="text-purple-700 border-purple-300"
-                                      >
-                                        {renderSafe(concept)}
-                                      </Badge>
-                                    ))}
-                                  </div>
-                                </div>
-                              )}
+                          {/* Dynamic AI tips if specifically provided by model */}
+                          {questionAnalysis && questionAnalysis.improvementTips?.length > 0 && (
+                            <div className="bg-yellow-50/80 border border-yellow-200 p-4 rounded-xl">
+                              <h4 className="font-medium text-yellow-800 mb-2 flex items-center text-sm">
+                                <Lightbulb className="h-4 w-4 mr-2" />
+                                Fərdi Tövsiyələr
+                              </h4>
+                              <ul className="text-yellow-800 text-sm space-y-1">
+                                {questionAnalysis.improvementTips.map((tip, tipIndex) => (
+                                  <li key={tipIndex} className="flex items-start">
+                                    <span className="mr-2">•</span>
+                                    <span>{renderSafe(tip)}</span>
+                                  </li>
+                                ))}
+                              </ul>
                             </div>
                           )}
 
-                          {showExplanations && (
-                            <div className="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200 shadow-inner">
-                              <h4 className="font-bold text-gray-800 mb-2 flex items-center">
-                                <BookOpen className="h-4 w-4 mr-2 text-primary" />
-                                {typeof question.explanation === 'string' && question.explanation.includes("Mətndə") ? "Dərslikdən Məcburi Sitat (Sıfır Tolerantlıq)" : "İzahat"}
-                              </h4>
-                              
-                              {typeof question.explanation === 'string' && question.explanation.includes("Mətndə") ? (
-                                <blockquote className="border-l-4 border-red-500 pl-4 py-3 mb-2 text-gray-800 font-medium text-base bg-white rounded shadow-sm">
-                                  {typeof question.explanation === 'string' ? question.explanation : String(question.explanation || '')}
-                                </blockquote>
-                              ) : (
-                                <>
-                                  {question.sourceContext && (
-                                    <blockquote className="border-l-4 border-primary pl-4 py-2 mb-4 text-gray-700 text-sm bg-white rounded italic">
-                                      "{question.sourceContext}"
-                                    </blockquote>
-                                  )}
-                                  <p className="text-gray-700 text-sm">
-                                    {typeof question.explanation === 'string' 
-                                      ? question.explanation 
-                                      : (typeof question.explanation === 'object' && question.explanation !== null
-                                          ? (question.explanation.text || question.explanation.citation || JSON.stringify(question.explanation))
-                                          : String(question.explanation || ''))}
-                                  </p>
-                                </>
-                              )}
+                          {questionAnalysis && questionAnalysis.conceptsToReview?.length > 0 && (
+                            <div className="bg-purple-50/80 border border-purple-200 p-4 rounded-xl">
+                              <h4 className="font-medium text-purple-800 mb-2 text-sm">Əlaqəli Alt-Mövzular</h4>
+                              <div className="flex flex-wrap gap-2">
+                                {questionAnalysis.conceptsToReview.map((concept, conceptIndex) => (
+                                  <Badge
+                                    key={conceptIndex}
+                                    variant="outline"
+                                    className="text-purple-700 border-purple-300 bg-white"
+                                  >
+                                    {renderSafe(concept)}
+                                  </Badge>
+                                ))}
+                              </div>
                             </div>
                           )}
                         </CardContent>

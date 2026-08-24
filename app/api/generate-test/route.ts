@@ -747,17 +747,21 @@ function loadFromOfflineTests(
         expText = "Dərslik mətninə əsasən düzgün cavab təyin edilmişdir."
       }
 
+      const qTopic = q.topic || topic
+      const qBloom = (q.bloomLevel || q.bloom_level || q.bloom || "anlama").toLowerCase()
+      const qDiff = (q.difficulty || difficulty).toLowerCase()
+
       return {
         id: idx + 1,
         question: q.question,
         options: cleanOptions,
         correctAnswer: correctAnswerIndex,
         explanation: expText,
-        difficulty: q.difficulty || difficulty,
-        topic: q.topic || topic,
-        bloomLevel: (q.bloomLevel || "anlama").toLowerCase(),
-        timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan" || q.difficulty === "easy") ? 1 : (q.difficulty === "çətin" || q.difficulty === "hard") ? 3 : 2,
-        sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
+        difficulty: qDiff,
+        topic: qTopic,
+        bloomLevel: qBloom,
+        timeEstimate: (qDiff === "sadə" || qDiff === "asan" || qDiff === "easy") ? 1 : (qDiff === "çətin" || qDiff === "hard") ? 3 : 2,
+        sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`,
       }
     })
   } catch (e) {
