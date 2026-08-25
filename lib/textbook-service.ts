@@ -19,6 +19,7 @@ export function getAllTextbooks(): Textbook[] {
     const allBooks: Textbook[] = [];
 
     Object.entries(textbooksData).forEach(([grade, books]) => {
+        if (!Array.isArray(books)) return; // Skip non-array entries (e.g. subject-keyed single book objects)
         (books as any[]).forEach(book => {
             let topics: string[] = [];
             if (Array.isArray(book.topics)) {
