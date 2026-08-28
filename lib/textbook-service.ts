@@ -26,7 +26,7 @@ export function getAllTextbooks(): Textbook[] {
                 topics = book.topics;
             } else if (typeof book.topics === 'string') {
                 // Split multi-line strings into individual topics
-                topics = book.topics.split('\n').filter(t => t.trim().length > 0);
+                topics = book.topics.split('\n').filter((t: string) => t.trim().length > 0);
             }
 
             allBooks.push({
@@ -55,7 +55,7 @@ export function getTextbooksByClass(grade: string): Textbook[] {
         if (Array.isArray(book.topics)) {
             topics = book.topics;
         } else if (typeof book.topics === 'string') {
-            topics = book.topics.split('\n').filter(t => t.trim().length > 0);
+            topics = book.topics.split('\n').filter((t: string) => t.trim().length > 0);
         }
 
         return {

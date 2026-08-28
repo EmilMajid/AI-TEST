@@ -703,7 +703,7 @@ function loadFromOfflineTests(
       }
 
       // Handle correctAnswer: number (0,1,2,3) OR letter string ("A", "B", "C", "D")
-      const rawAns = q.correctAnswer ?? q.answer ?? q.correct_index
+      const rawAns = q.correct_answer ?? q.correctAnswer ?? q.answer ?? q.correct_index
       if (typeof rawAns === "number") {
         correctAnswerIndex = rawAns
       } else if (typeof rawAns === "string") {
@@ -756,6 +756,7 @@ function loadFromOfflineTests(
         question: q.question,
         options: cleanOptions,
         correctAnswer: correctAnswerIndex,
+        correct_answer: String.fromCharCode(65 + correctAnswerIndex),
         explanation: expText,
         difficulty: qDiff,
         topic: qTopic,

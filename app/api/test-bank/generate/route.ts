@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { generateQuestions } from '@/scripts/llm-wrapper';
+import { validateAndSanitizeQuestion } from '@/scripts/psychometric-validator';
 import fs from 'fs';
 import path from 'path';
 
@@ -52,26 +53,32 @@ export async function POST(req: NextRequest) {
             db[subjectKey] = [];
         }
 
+        const validQuestions: any[] = [];
         result.questions.forEach((q: any, idx: number) => {
+            const validation = validateAndSanitizeQuestion(q);
+            const cleanQ = validation.sanitizedQuestion || q;
+            
             const newPassportId = `GEN-${Date.now()}-${idx}`;
-            db[subjectKey].push({
+            const questionObj = {
                 passport_id: newPassportId,
                 topic: topicKey,
-                question: q.question,
-                options: q.options,
-                correctAnswer: q.correctAnswer,
-                explanation: q.explanation ?? '',
+                question: cleanQ.question,
+                options: cleanQ.options,
+                correctAnswer: cleanQ.correctAnswer,
+                explanation: cleanQ.explanation ?? '',
                 difficulty: difficulty ?? 'orta',
                 bloomLevel: bloomLevel ?? 'anlama',
                 status: autoApprove ? 'active' : 'draft',
-            });
+            };
+            db[subjectKey].push(questionObj);
+            validQuestions.push(questionObj);
         });
 
         fs.writeFileSync(offlineTestsPath, JSON.stringify(db, null, 2), 'utf-8');
 
         return NextResponse.json({
             success: true,
-            generated: result.questions.length,
+            generated: validQuestions.length,
             savedTo: subjectKey,
         });
     } catch (e: any) {
