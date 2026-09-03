@@ -13,7 +13,7 @@ from datetime import datetime
 import uvicorn
 from pathlib import Path
 
-app = FastAPI(title="EduTest AZ API", version="1.0.0")
+app = FastAPI(title="TESTAI.AZ API", version="1.0.0")
 
 # CORS middleware
 app.add_middleware(
@@ -33,7 +33,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Database setup
 def init_db():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     cursor = conn.cursor()
     
     # Users table
@@ -90,7 +90,7 @@ def init_db():
 
 # Initialize database and add default textbooks
 def init_default_textbooks():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     cursor = conn.cursor()
     
     # Check if textbooks already exist
@@ -219,7 +219,7 @@ class TestResults(BaseModel):
 
 # Database helper functions
 def get_db_connection():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -232,7 +232,7 @@ def verify_password(password: str, hashed: str) -> bool:
 # API endpoints
 @app.get("/")
 async def root():
-    return {"message": "EduTest AZ API is running!", "version": "1.0.0"}
+    return {"message": "TESTAI.AZ API is running!", "version": "1.0.0"}
 
 @app.post("/api/auth/register")
 async def register_user(user_data: UserRegistration):
@@ -525,7 +525,7 @@ async def get_test_results(user_id: Optional[int] = None):
         raise HTTPException(status_code=500, detail=f"Test nəticələri əldə edilərkən xəta: {str(e)}")
 
 if __name__ == "__main__":
-    print("🚀 EduTest AZ API başladılır...")
+    print("🚀 TESTAI.AZ API başladılır...")
     print("📚 Dərslik sistemi aktiv")
     print("🔗 API Documentation: http://localhost:8000/docs")
     uvicorn.run(app, host="0.0.0.0", port=8000)

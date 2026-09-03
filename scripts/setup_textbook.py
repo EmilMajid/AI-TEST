@@ -18,7 +18,7 @@ def setup_fizika_textbook():
         return False
     
     # Connect to database
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.db')
     cursor = conn.cursor()
     
     # Check if textbook already exists
@@ -71,7 +71,7 @@ def setup_fizika_textbook():
 
 def list_textbooks():
     """Mövcud dərslikləri göstər"""
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.db')
     cursor = conn.cursor()
     
     cursor.execute("SELECT * FROM textbooks WHERE is_active = TRUE ORDER BY subject, class")

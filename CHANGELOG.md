@@ -1,7 +1,7 @@
 # Changelog - Azerbaijan AI Platform Production Hardening
 
 ## Summary
-Comprehensive refactoring of Azerbaijan AI Platform (EduTest-AZ) addressing 8 critical issues and implementing production-grade systems for RAG, authentication, and data handling.
+Comprehensive refactoring of Azerbaijan AI Platform (TESTAI-AZ) addressing 8 critical issues and implementing production-grade systems for RAG, authentication, and data handling.
 
 ---
 

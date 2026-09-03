@@ -37,7 +37,7 @@ interface TrainingStatus {
 export default function LoRATrainingPage() {
   const [config, setConfig] = useState<TrainingConfig>({
     baseModel: "meta-llama/Meta-Llama-3-8B-Instruct",
-    outputDir: "lora_models/edutest_v1",
+    outputDir: "lora_models/testai_v1",
     dataDir: "training_data",
     loraR: 64,
     loraAlpha: 128,

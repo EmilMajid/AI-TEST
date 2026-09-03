@@ -60,7 +60,7 @@ Create a `.env.local` file with:
 
 \`\`\`env
 # Database
-DATABASE_URL="postgresql://user:password@localhost:5432/edutest_az"
+DATABASE_URL="postgresql://user:password@localhost:5432/testai_az"
 
 # JWT Secrets (generate with: openssl rand -base64 32)
 JWT_SECRET="your-long-random-secret-key-here"

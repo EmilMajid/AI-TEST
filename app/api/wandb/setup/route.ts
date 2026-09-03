@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const envPath = join(process.cwd(), ".env.local")
     const envContent = `WANDB_API_KEY=${api_key}
 ${entity ? `WANDB_ENTITY=${entity}` : ""}
-${project ? `WANDB_PROJECT=${project}` : "WANDB_PROJECT=edutest-ai"}
+${project ? `WANDB_PROJECT=${project}` : "WANDB_PROJECT=testai-az"}
 `
 
     writeFileSync(envPath, envContent, { flag: "a" })

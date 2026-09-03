@@ -80,7 +80,7 @@ export default function ApiKeySetup() {
             xAI API Key Quraşdırması
           </CardTitle>
           <CardDescription>
-            EduTest AZ platformasının AI xüsusiyyətlərini istifadə etmək üçün xAI API key tələb olunur
+            TESTAI.AZ platformasının AI xüsusiyyətlərini istifadə etmək üçün xAI API key tələb olunur
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -158,7 +158,7 @@ export default function ApiKeySetup() {
               <ol className="list-decimal list-inside text-sm space-y-1">
                 <li>"API Keys" bölməsinə keçin</li>
                 <li>"Create API Key" düyməsini basın</li>
-                <li>Key-ə ad verin (EduTest-AZ)</li>
+                <li>Key-ə ad verin (TESTAI-AZ)</li>
                 <li>Key-i kopyalayın</li>
               </ol>
             </div>

@@ -17,7 +17,7 @@ XAI_API_KEY=${XAI_API_KEY}
 OPENAI_API_KEY=your-openai-key-here
 
 # Database
-DATABASE_URL=sqlite:./edutest.db
+DATABASE_URL=sqlite:./testai.az.db
 
 # Next.js
 NEXTAUTH_SECRET=your-secret-here

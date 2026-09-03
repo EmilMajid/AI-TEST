@@ -17,7 +17,7 @@ INSERT INTO public.platform_settings (key, value)
 VALUES (
   'branding',
   jsonb_build_object(
-    'platform_name', 'Azerbaijan AI Platform - EduTest AZ',
+    'platform_name', 'Azerbaijan AI Platform - TESTAI.AZ',
     'version', '1.0.0',
     'owner', 'Emil Məcidov'
   )

@@ -51,7 +51,7 @@ class EDerslikScraper:
 
     def get_db_connection(self):
         """Verilənlər bazası bağlantısı"""
-        conn = sqlite3.connect('edutest.db')
+        conn = sqlite3.connect('testai.db')
         conn.row_factory = sqlite3.Row
         return conn
 

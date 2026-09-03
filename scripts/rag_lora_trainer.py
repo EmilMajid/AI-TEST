@@ -24,7 +24,7 @@ class LoRATrainer:
     def __init__(
         self,
         base_model: str = "meta-llama/Meta-Llama-3-8B-Instruct",
-        output_dir: str = "lora_models/edutest_v1"
+        output_dir: str = "lora_models/testai_v1"
     ):
         self.base_model = base_model
         self.output_dir = Path(output_dir)
@@ -227,7 +227,7 @@ def main():
     # Configuration
     config = {
         "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
-        "output_dir": "lora_models/edutest_v1",
+        "output_dir": "lora_models/testai_v1",
         "data_dir": "training_data",
         "lora_r": 64,
         "lora_alpha": 128,
@@ -236,7 +236,7 @@ def main():
         "learning_rate": 2e-4,
     }
     
-    print("🎓 EduTest LoRA Training")
+    print("🎓 TESTAI.AZ LoRA Training")
     print("=" * 60)
     print(json.dumps(config, indent=2))
     print("=" * 60)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 EduTest AZ Backend Dependencies yüklənir..."
+echo "🚀 TESTAI.AZ Backend Dependencies yüklənir..."
 
 # Python dependencies
 pip install fastapi uvicorn sqlite3 bcrypt pydantic[email] python-multipart

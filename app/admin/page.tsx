@@ -166,7 +166,7 @@ export default function AdminPage() {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <BookOpen className="h-8 w-8 text-primary mr-3" />
-              <h1 className="text-2xl font-bold text-gray-900">EduTest AZ - Admin Panel</h1>
+              <h1 className="text-2xl font-bold text-gray-900">TESTAI.AZ - Admin Panel</h1>
             </div>
             <div className="flex items-center gap-3">
               {userData && (

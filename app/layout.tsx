@@ -4,7 +4,7 @@ import Script from "next/script"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "EduTest AZ - AI Test Platforması",
+  title: "TESTAI.AZ - AI Test Platforması",
   description: "Azərbaycan tələbələri üçün AI-Powered Test və Analiz Platforması",
   generator: "v0.app",
 }

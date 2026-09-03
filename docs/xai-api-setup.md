@@ -12,7 +12,7 @@
 - Console-a daxil olun
 - "API Keys" bölməsinə keçin
 - "Create API Key" düyməsini basın
-- Key-ə ad verin (məsələn: "EduTest-AZ")
+- Key-ə ad verin (məsələn: "TESTAI-AZ")
 - Key-i kopyalayın və təhlükəsiz yerdə saxlayın
 
 ### 3. Kredit Əlavə Edin

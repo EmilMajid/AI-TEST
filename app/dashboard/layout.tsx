@@ -14,7 +14,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <div>
           <div className="p-2 mb-4 flex items-center gap-2">
             <BookOpen className="h-8 w-8 text-blue-600" />
-            <h1 className="text-xl font-bold">EduTest</h1>
+            <h1 className="text-xl font-bold">TESTAI.AZ</h1>
           </div>
 
           <nav className="space-y-2">

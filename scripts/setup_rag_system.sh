@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Setting up RAG System for EduTest AI..."
+echo "🚀 Setting up RAG System for TESTAI.AZ..."
 
 # Check Python version
 python_version=$(python3 --version 2>&1 | awk '{print $2}')

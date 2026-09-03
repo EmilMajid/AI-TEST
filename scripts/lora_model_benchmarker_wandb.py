@@ -13,7 +13,7 @@ class ModelBenchmarkerWithWandB(ModelBenchmarker):
         self,
         base_model: str = "meta-llama/Meta-Llama-3-8B-Instruct",
         benchmark_config_path: str = "benchmark_config.json",
-        project_name: str = "edutest-ai"
+        project_name: str = "testai-az"
     ):
         super().__init__(base_model, benchmark_config_path)
         

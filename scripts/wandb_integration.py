@@ -14,7 +14,7 @@ class WandBLogger:
     
     def __init__(
         self,
-        project_name: str = "edutest-ai",
+        project_name: str = "testai-az",
         entity: Optional[str] = None,
         tags: Optional[List[str]] = None
     ):
@@ -244,7 +244,7 @@ class WandBLogger:
 class WandBExperimentTracker:
     """Track experiments across multiple runs"""
     
-    def __init__(self, project_name: str = "edutest-ai"):
+    def __init__(self, project_name: str = "testai-az"):
         self.project_name = project_name
         self.api = wandb.Api()
     

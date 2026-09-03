@@ -2,7 +2,7 @@
 
 ## 📚 Nədir?
 
-Weights & Biases (W&B) - machine learning experiment tracking, model versioning və team collaboration platformasıdır. Bu inteqrasiya EduTest AI layihəsində:
+Weights & Biases (W&B) - machine learning experiment tracking, model versioning və team collaboration platformasıdır. Bu inteqrasiya TESTAI.AZ layihəsində:
 
 - ✅ Training prosesini real-time izləyir
 - ✅ Benchmark nəticələrini qeyd edir
@@ -60,7 +60,7 @@ from rag_lora_trainer_wandb import LoRATrainerWithWandB
 # Trainer yaradın
 trainer = LoRATrainerWithWandB(
     base_model="meta-llama/Meta-Llama-3-8B-Instruct",
-    project_name="edutest-ai",
+    project_name="testai-az",
     run_name="physics_v1"
 )
 
@@ -88,7 +88,7 @@ from lora_model_benchmarker_wandb import ModelBenchmarkerWithWandB
 
 # Benchmarker yaradın
 benchmarker = ModelBenchmarkerWithWandB(
-    project_name="edutest-ai"
+    project_name="testai-az"
 )
 
 # Benchmark işə salın
@@ -124,7 +124,7 @@ python3 scripts/wandb_integration.py setup --api-key YOUR_KEY
 from wandb_integration import WandBLogger, WandBExperimentTracker
 
 # Logger
-logger = WandBLogger(project_name="edutest-ai")
+logger = WandBLogger(project_name="testai-az")
 run = logger.init_run(
     run_name="custom_experiment",
     config={"param1": "value1"},
@@ -141,7 +141,7 @@ logger.log_metrics({
 logger.finish()
 
 # Experiment Tracker
-tracker = WandBExperimentTracker("edutest-ai")
+tracker = WandBExperimentTracker("testai-az")
 
 # Get all runs
 all_runs = tracker.get_all_runs()
@@ -163,7 +163,7 @@ comparison = tracker.compare_runs(
 W&B dashboard-da bütün training və benchmark runs-larınızı görə bilərsiniz:
 
 \`\`\`
-Project: edutest-ai
+Project: testai-az
 ├── Runs
 │   ├── training_20241016_120000 (training)
 │   ├── benchmark_v1_20241016_120000 (benchmark)
@@ -340,7 +340,7 @@ python3 scripts/lora_model_benchmarker_wandb.py \
 python3 scripts/wandb_integration.py best
 
 # 5. View in W&B Dashboard
-open https://wandb.ai/your-entity/edutest-ai
+open https://wandb.ai/your-entity/testai-az
 \`\`\`
 
 ## 💡 Troubleshooting

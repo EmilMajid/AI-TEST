@@ -15,7 +15,7 @@ from rag_content_extractor import ContentExtractor
 from rag_vectorizer import VectorIndexer
 
 app = FastAPI(
-    title="EduTest RAG API",
+    title="TESTAI.AZ RAG API",
     description="RAG əsaslı test generasiya sistemi",
     version="1.0.0"
 )
@@ -56,7 +56,7 @@ class SearchResponse(BaseModel):
 @app.get("/")
 async def root():
     return {
-        "service": "EduTest RAG API",
+        "service": "TESTAI.AZ RAG API",
         "status": "running",
         "rag_loaded": rag_system.index is not None,
         "vectors_count": rag_system.index.ntotal if rag_system.index else 0

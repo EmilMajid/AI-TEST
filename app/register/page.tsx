@@ -316,14 +316,14 @@ export default function RegisterPage() {
                 <div className="relative h-16 w-16 p-1 rounded-2xl bg-white shadow-md border-2 border-primary/20 overflow-hidden">
                   <Image
                     src="/logo.jpg"
-                    alt="EduTest AZ Logo"
+                    alt="TESTAI.AZ Logo"
                     fill
                     className="object-contain rounded-xl p-0.5"
                     priority
                   />
                 </div>
                 <div className="text-left">
-                  <h1 className="text-2xl font-extrabold text-gray-900 leading-tight">EduTest AZ</h1>
+                  <h1 className="text-2xl font-extrabold text-gray-900 leading-tight">TESTAI.AZ</h1>
                 </div>
               </div>
 

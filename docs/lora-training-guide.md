@@ -130,7 +130,7 @@ from rag_lora_generator import LoRAQuestionGenerator
 
 generator = LoRAQuestionGenerator(
     base_model="meta-llama/Meta-Llama-3-8B-Instruct",
-    lora_path="lora_models/edutest_v1/final"
+    lora_path="lora_models/testai_v1/final"
 )
 generator.load_model()
 \`\`\`

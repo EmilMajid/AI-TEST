@@ -26,7 +26,7 @@ class LoRATrainerWithWandB:
         self,
         base_model: str = "meta-llama/Meta-Llama-3-8B-Instruct",
         output_dir: str = "lora_models",
-        project_name: str = "edutest-ai",
+        project_name: str = "testai-az",
         run_name: Optional[str] = None
     ):
         self.base_model = base_model

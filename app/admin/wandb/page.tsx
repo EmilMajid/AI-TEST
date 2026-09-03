@@ -14,7 +14,7 @@ import { checkWandBConfiguration } from "./actions"
 export default function WandBPage() {
   const [apiKey, setApiKey] = useState("")
   const [entity, setEntity] = useState("")
-  const [project, setProject] = useState("edutest-ai")
+  const [project, setProject] = useState("testai-az")
   const [configured, setConfigured] = useState(false)
   const [loading, setLoading] = useState(false)
   const [runs, setRuns] = useState<any[]>([])
@@ -156,7 +156,7 @@ export default function WandBPage() {
 
               <div className="space-y-2">
                 <label className="text-sm font-medium">Project</label>
-                <Input placeholder="edutest-ai" value={project} onChange={(e) => setProject(e.target.value)} />
+                <Input placeholder="testai-az" value={project} onChange={(e) => setProject(e.target.value)} />
               </div>
 
               <Button onClick={setupWandB} disabled={loading || !apiKey} className="w-full">

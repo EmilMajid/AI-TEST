@@ -11,7 +11,7 @@ class LoRAQuestionGenerator:
     def __init__(
         self,
         base_model: str = "meta-llama/Meta-Llama-3-8B-Instruct",
-        lora_path: str = "lora_models/edutest_v1/final"
+        lora_path: str = "lora_models/testai_v1/final"
     ):
         self.base_model = base_model
         self.lora_path = lora_path

@@ -8,7 +8,7 @@ import json
 from datetime import datetime
 import uvicorn
 
-app = FastAPI(title="EduTest AZ API", version="1.0.0")
+app = FastAPI(title="TESTAI.AZ API", version="1.0.0")
 
 # CORS middleware
 app.add_middleware(
@@ -21,7 +21,7 @@ app.add_middleware(
 
 # Database setup
 def init_db():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     cursor = conn.cursor()
     
     # Users table
@@ -123,7 +123,7 @@ class TestResults(BaseModel):
 
 # Database helper functions
 def get_db_connection():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -289,7 +289,7 @@ async def get_test_results(user_id: Optional[int] = None):
 
 @app.get("/")
 async def root():
-    return {"message": "EduTest AZ API is running!"}
+    return {"message": "TESTAI.AZ API is running!"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

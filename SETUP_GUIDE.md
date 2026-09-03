@@ -5,7 +5,7 @@
 ### 1. Clone and Install
 \`\`\`bash
 git clone <repository>
-cd edutest-az
+cd testai-az
 npm install
 \`\`\`
 
@@ -13,7 +13,7 @@ npm install
 
 Create `.env.local`:
 \`\`\`env
-DATABASE_URL="postgresql://user:password@localhost:5432/edutest_az"
+DATABASE_URL="postgresql://user:password@localhost:5432/testai_az"
 JWT_SECRET="$(openssl rand -base64 32)"
 JWT_REFRESH_SECRET="$(openssl rand -base64 32)"
 XAI_API_KEY="xai-your-key-here"

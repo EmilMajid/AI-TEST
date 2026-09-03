@@ -4,7 +4,7 @@ import { errorResponse } from "@/lib/error-handler"
 
 // Mock users for demo mode
 const mockUsers = [
-    { id: "admin", firstName: "Admin", lastName: "", email: "admin@edutest.az", accountType: "admin", role: "admin" },
+    { id: "admin", firstName: "Admin", lastName: "", email: "admin@testai.az", accountType: "admin", role: "admin" },
     { id: "parent-1", firstName: "Emil", lastName: "Məcidov", email: "emil@example.com", accountType: "parent", role: "parent" },
     { id: "student-1", firstName: "İnci", lastName: "Məcidzadə", email: "inci@example.com", accountType: "student", class: "10" },
     { id: "student-2", firstName: "Emilia", lastName: "Məcidzadə", email: "emilia@example.com", accountType: "student", class: "8" },

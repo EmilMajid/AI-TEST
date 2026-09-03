@@ -362,7 +362,7 @@ python3 scripts/rag_lora_trainer.py
 # Immediately benchmark
 python3 scripts/lora_model_benchmarker.py \
   v_latest \
-  lora_models/edutest_v1/final
+  lora_models/testai_v1/final
 \`\`\`
 
 ### 2. Track Metrics Over Time

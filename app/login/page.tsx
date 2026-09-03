@@ -49,7 +49,7 @@ export default function LoginPage() {
       setRestrictedModal({
         open: true,
         title: `${role.label} Kabineti Hazırlıq Mərhələsindədir`,
-        desc: `Hörmətli ${role.label}, hal-hazırda ${role.label.toLowerCase()} kabineti üzərində texniki təkmilləşdirmə işləri aparılır. Çox tezliklə tam funksionallıqla istifadəyə veriləcək. Əməkdaşlıq və ilkin qeydiyyat üçün bizimlə əlaqə saxlayın: info@edutest.az`,
+        desc: `Hörmətli ${role.label}, hal-hazırda ${role.label.toLowerCase()} kabineti üzərində texniki təkmilləşdirmə işləri aparılır. Çox tezliklə tam funksionallıqla istifadəyə veriləcək. Əməkdaşlıq və ilkin qeydiyyat üçün bizimlə əlaqə saxlayın: info@testai.az`,
       })
       return
     }
@@ -198,13 +198,13 @@ export default function LoginPage() {
               <div className="relative h-20 w-20 sm:h-24 sm:w-24 mb-3 p-1.5 rounded-2xl bg-white/95 shadow-xl border-2 border-primary/20 backdrop-blur-md overflow-hidden transition-transform hover:scale-105">
                 <Image
                   src="/logo.jpg"
-                  alt="EduTest AZ Logo"
+                  alt="TESTAI.AZ Logo"
                   fill
                   className="object-contain rounded-xl p-1"
                   priority
                 />
               </div>
-              <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">EduTest AZ</h1>
+              <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">TESTAI.AZ</h1>
             </div>
 
             <Card className="backdrop-blur-sm bg-white/95 shadow-2xl border border-white/60 rounded-2xl">

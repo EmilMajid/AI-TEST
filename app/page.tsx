@@ -12,12 +12,12 @@ export default function HomePage() {
               <div className="relative h-10 w-10 mr-3">
                 <Image
                   src="/logo.jpg"
-                  alt="EduTest AZ Logo"
+                  alt="TESTAI.AZ Logo"
                   fill
                   className="object-contain rounded-md"
                 />
               </div>
-              <h1 className="text-2xl font-bold text-gray-900">EduTest AZ</h1>
+              <h1 className="text-2xl font-bold text-gray-900">TESTAI.AZ</h1>
             </div>
             <div className="flex space-x-4">
               <Link href="/login">
@@ -109,7 +109,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2025 EduTest AZ. Bütün hüquqlar qorunur.</p>
+          <p>&copy; 2025 TESTAI.AZ. Bütün hüquqlar qorunur.</p>
         </div>
       </footer>
     </div>

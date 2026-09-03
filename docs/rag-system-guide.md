@@ -195,14 +195,14 @@ embeddings = model.encode(texts, batch_size=16)
 
 \`\`\`bash
 # Docker image yarat
-docker build -t edutest-rag:latest -f Dockerfile.rag .
+docker build -t testai-rag:latest -f Dockerfile.rag .
 
 # Konteyner işə sal
 docker run -d \
   -p 8000:8000 \
   -v $(pwd)/vector_index:/app/vector_index \
   -v $(pwd)/textbooks:/app/textbooks \
-  edutest-rag:latest
+  testai-rag:latest
 \`\`\`
 
 ## 📊 Metrikalar

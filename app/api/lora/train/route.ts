@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         base_model: config.baseModel || "meta-llama/Meta-Llama-3-8B-Instruct",
-        output_dir: config.outputDir || "lora_models/edutest_v1",
+        output_dir: config.outputDir || "lora_models/testai_v1",
         data_dir: config.dataDir || "training_data",
         lora_r: config.loraR || 64,
         lora_alpha: config.loraAlpha || 128,

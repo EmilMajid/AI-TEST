@@ -122,7 +122,7 @@ export function AdBanner({
           <Sparkles className="w-3 h-3 text-primary" />
           {label}
         </span>
-        <span className="text-[10px] opacity-75">EduTest Ads</span>
+        <span className="text-[10px] opacity-75">TESTAI Ads</span>
       </div>
 
       {/* AdSense İnteqrasiyası */}

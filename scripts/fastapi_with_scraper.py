@@ -10,7 +10,7 @@ from datetime import datetime
 import uvicorn
 from e_derslik_scraper import EDerslikScraper
 
-app = FastAPI(title="EduTest AZ API with Scraper", version="1.1.0")
+app = FastAPI(title="TESTAI.AZ API with Scraper", version="1.1.0")
 
 # CORS middleware
 app.add_middleware(
@@ -52,13 +52,13 @@ class ScrapingStatus(BaseModel):
     books_downloaded: int
 
 def get_db_connection():
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     conn.row_factory = sqlite3.Row
     return conn
 
 def init_db():
     """Verilənlər bazasını başlat"""
-    conn = sqlite3.connect('edutest.db')
+    conn = sqlite3.connect('testai.az.db')
     cursor = conn.cursor()
     
     # Scraping logs table
@@ -195,7 +195,7 @@ async def run_scraping_task(request: ScrapingRequest):
 @app.get("/")
 async def root():
     return {
-        "message": "EduTest AZ API with E-dərslik Scraper",
+        "message": "TESTAI.AZ API with E-dərslik Scraper",
         "version": "1.1.0",
         "features": ["textbook_management", "web_scraping", "auto_download"]
     }
@@ -302,7 +302,7 @@ async def get_textbooks(class_filter: Optional[str] = None, source_filter: Optio
         raise HTTPException(status_code=500, detail=f"Dərslikləri əldə edərkən xəta: {str(e)}")
 
 if __name__ == "__main__":
-    print("🚀 EduTest AZ API with Scraper başladılır...")
+    print("🚀 TESTAI.AZ API with Scraper başladılır...")
     print("🕷️ Web scraping funksiyası aktiv")
     print("📚 E-dərslik.edu.az inteqrasiyası hazır")
     print("🔗 API Documentation: http://localhost:8000/docs")

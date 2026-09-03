@@ -41,8 +41,8 @@ manager = LoRAVersionManager()
 
 # Yeni modeli qeydiyyatdan keçir
 version_id = manager.register_model(
-    model_path="lora_models/edutest_v1/final",
-    name="EduTest v1.0 - Physics Focus",
+    model_path="lora_models/testai_v1/final",
+    name="TESTAI.AZ v1.0 - Physics Focus",
     description="Fine-tuned on 8th grade physics textbooks",
     training_config={
         "lora_r": 64,
@@ -91,8 +91,8 @@ print(comparison["metrics_comparison"])
 \`\`\`bash
 # Modeli qeydiyyatdan keçir
 python scripts/lora_version_manager.py register \
-  lora_models/edutest_v1/final \
-  --name "EduTest v1.0" \
+  lora_models/testai_v1/final \
+  --name "TESTAI.AZ v1.0" \
   --description "Production model" \
   --tags production physics
 
@@ -134,7 +134,7 @@ python scripts/lora_version_manager.py delete v1_20241016_120000
 ### 1. Version Naming
 \`\`\`python
 # ✅ Yaxşı
-"EduTest v2.1 - Math Focus (Grade 10)"
+"TESTAI.AZ v2.1 - Math Focus (Grade 10)"
 
 # ❌ Pis
 "model_final_2"
@@ -196,8 +196,8 @@ jobs:
       - name: Register Model
         run: |
           python scripts/lora_version_manager.py register \
-            lora_models/edutest_latest/final \
-            --name "EduTest Auto-trained $(date +%Y-%m-%d)" \
+            lora_models/testai_latest/final \
+            --name "TESTAI.AZ Auto-trained $(date +%Y-%m-%d)" \
             --tags automated ci/cd
       
       - name: Run Tests

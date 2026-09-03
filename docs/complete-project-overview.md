@@ -1,8 +1,8 @@
-# 🇦🇿 EduTest AI - Tam Layihə Bələdçisi
+# 🇦🇿 TESTAI.AZ - Tam Layihə Bələdçisi
 
 ## 📋 Layihə Haqqında
 
-**EduTest AI** - Azərbaycan təhsil sistemini süni intellekt texnologiyası ilə birləşdirən innovativ test platformasıdır. Platforma şagirdlər, valideynlər, müəllimlər və məktəb direktorları üçün nəzərdə tutulub.
+**TESTAI.AZ** - Azərbaycan təhsil sistemini süni intellekt texnologiyası ilə birləşdirən innovativ test platformasıdır. Platforma şagirdlər, valideynlər, müəllimlər və məktəb direktorları üçün nəzərdə tutulub.
 
 ### 🎯 Əsas Məqsəd
 Azərbaycan dərslikləri əsasında AI tərəfindən yaradılan testlər vasitəsilə şagirdlərin bilik səviyyəsini qiymətləndirmək və inkişafını izləmək.
@@ -591,7 +591,7 @@ class WandBIntegration:
     
     def __init__(self):
         wandb.init(
-            project="edutest-az",
+            project="testai-az",
             entity="azerbaijan-ai",
             config={
                 "architecture": "LoRA + GPT-4o",
@@ -651,7 +651,7 @@ class WandBIntegration:
             }
         }
         
-        sweep_id = wandb.sweep(sweep_config, project="edutest-az")
+        sweep_id = wandb.sweep(sweep_config, project="testai-az")
         return sweep_id
 \`\`\`
 
@@ -1485,10 +1485,10 @@ async def generate_with_cache(topic: str):
 
 \`\`\`bash
 # Environment variables
-NEXT_PUBLIC_BACKEND_URL=https://api.edutest.az
+NEXT_PUBLIC_BACKEND_URL=https://api.testai.az
 OPENAI_API_KEY=sk-...
 XAI_API_KEY=xai-...
-DATABASE_URL=postgresql://user:pass@host:5432/edutest
+DATABASE_URL=postgresql://user:pass@host:5432/testai.az
 WANDB_API_KEY=...
 REDIS_URL=redis://...
 
@@ -1608,14 +1608,14 @@ docs/
 - **DevOps Engineer**: [Ad]
 
 ### Texniki Dəstək
-- Email: support@edutest.az
-- Telegram: @edutest_support
+- Email: support@testai.az
+- Telegram: @testai_support
 - WhatsApp: +994XXXXXXXXX
 
 ### Repository
-- GitHub: github.com/edutest-az/platform
-- Issues: github.com/edutest-az/platform/issues
-- Docs: docs.edutest.az
+- GitHub: github.com/testai-az/platform
+- Issues: github.com/testai-az/platform/issues
+- Docs: docs.testai.az
 
 ---
 
@@ -1623,7 +1623,7 @@ docs/
 
 Bu layihə [Lisenziya Növü] altında lisenziyalaşdırılıb.
 
-© 2025 EduTest AZ. Bütün hüquqlar qorunur.
+© 2025 TESTAI.AZ. Bütün hüquqlar qorunur.
 
 ---
 
@@ -1643,4 +1643,4 @@ Bu layihə [Lisenziya Növü] altında lisenziyalaşdırılıb.
 
 ---
 
-Bu sənəd **EduTest AI** platformasının tam texniki və funksional təsvirini təqdim edir. 🎓🇦🇿
+Bu sənəd **TESTAI.AZ** platformasının tam texniki və funksional təsvirini təqdim edir. 🎓🇦🇿

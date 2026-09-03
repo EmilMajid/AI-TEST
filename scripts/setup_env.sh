@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🔧 EduTest AZ Environment Quraşdırması"
+echo "🔧 TESTAI.AZ Environment Quraşdırması"
 echo "======================================"
 
 # .env faylı yaradın
@@ -15,7 +15,7 @@ OPENAI_API_KEY=your-openai-key-here
 ANTHROPIC_API_KEY=your-anthropic-key-here
 
 # Database
-DATABASE_URL=sqlite:./edutest.db
+DATABASE_URL=sqlite:./testai.az.db
 
 # Next.js
 NEXTAUTH_SECRET=your-secret-here

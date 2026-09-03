@@ -2,7 +2,7 @@
 
 ## 📋 Ümumi Baxış
 
-EduTest AI platformasında **iki növ hesab** mövcuddur:
+TESTAI.AZ platformasında **iki növ hesab** mövcuddur:
 
 ### 1. 🎓 Şagird Hesabı
 - Test həll etmək
@@ -809,7 +809,7 @@ async function generatePDFReport(studentId: number, parentId: number) {
   const doc = new PDFDocument()
   
   // Header
-  doc.fontSize(20).text('EduTest AZ - Şagird Hesabatı', { align: 'center' })
+  doc.fontSize(20).text('TESTAI.AZ - Şagird Hesabatı', { align: 'center' })
   doc.moveDown()
   
   // Student info
@@ -992,20 +992,20 @@ return <DataView data={data} />
 ## 📞 Dəstək
 
 ### Texniki Dəstək
-- Email: support@edutest.az
+- Email: support@testai.az
 - Telefon: +994XXXXXXXXX
-- Telegram: @edutest_support
+- Telegram: @testai_support
 
 ### Sənədlər
-- API Documentation: docs.edutest.az
-- Video Tutorials: youtube.com/@edutest
-- FAQ: edutest.az/faq
+- API Documentation: docs.testai.az
+- Video Tutorials: youtube.com/@testai
+- FAQ: testai.az/faq
 
 ---
 
 **Son yenilənmə**: 2024-10-21
 **Versiya**: 2.0.0
-**Müəllif**: EduTest AZ Team
+**Müəllif**: TESTAI.AZ Team
 
 ---
 

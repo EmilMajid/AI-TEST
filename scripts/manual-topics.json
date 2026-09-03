@@ -11783,1548 +11783,293 @@
     }
   ],
   "azerbaycan-dili-3-h1": [
-    {
-      "chapter": "FƏRD VƏ TOPLUM",
-      "topics": [
-        {
-          "title": "FƏRD VƏ TOPLUM - Dostluq",
-          "page": 0
-        },
-        {
-          "title": "FƏRD VƏ TOPLUM - Dürüstlük",
-          "page": 0
-        },
-        {
-          "title": "FƏRD VƏ TOPLUM - Mərhəmət",
-          "page": 0
-        },
-        {
-          "title": "FƏRD VƏ TOPLUM - Məsuliyyət",
-          "page": 0
-        },
-        {
-          "title": "FƏRD VƏ TOPLUM - Nikbinlik",
-          "page": 0
-        },
-        {
-          "title": "FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "DÜNYAMIZI TANIYAQ",
-      "topics": [
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Biz azərbaycanlıyıq",
-          "page": 0
-        },
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Dünya xalqları",
-          "page": 0
-        },
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Dünyamızı Tanıyaq - Ümumiləşdirici təkrar",
-          "page": 0
-        },
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Milli bayramlar",
-          "page": 0
-        },
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Səyahət",
-          "page": 0
-        },
-        {
-          "title": "DÜNYAMIZI TANIYAQ - Tarixi abidələr",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "QƏRİBƏ HEYVANLAR",
-      "topics": [
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Antarktida sakinləri",
-          "page": 0
-        },
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Delfin",
-          "page": 0
-        },
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Mamont və fil",
-          "page": 0
-        },
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Manqust",
-          "page": 0
-        },
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Nadir meşə heyvanları",
-          "page": 0
-        },
-        {
-          "title": "QƏRİBƏ HEYVANLAR - Qəribə Heyvanlar - Ümumiləşdirici təkrar",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "TƏBİİ FƏLAKƏTLƏR",
-      "topics": [
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Daşqın",
-          "page": 0
-        },
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Dənizdə fırtına",
-          "page": 0
-        },
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Meşə yanğınları",
-          "page": 0
-        },
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Sel",
-          "page": 0
-        },
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Sunami",
-          "page": 0
-        },
-        {
-          "title": "TƏBİİ FƏLAKƏTLƏR - Təbii Fəlakətlər - Ümumiləşdirici təkrar",
-          "page": 0
-        }
-      ]
-    }
+    "1. Fərd və toplum - Dürüstlük",
+    "1. Fərd və toplum - Dostluq",
+    "1. Fərd və toplum - Mərhəmət",
+    "1. Fərd və toplum - Məsuliyyət",
+    "1. Fərd və toplum - Nikbinlik",
+    "1. Fərd və toplum - Ümumiləşdirici təkrar",
+    "2. Dünyamızı tanıyaq - Biz azərbaycanlıyıq",
+    "2. Dünyamızı tanıyaq - Dünya xalqları",
+    "2. Dünyamızı tanıyaq - Tarixi abidələr",
+    "2. Dünyamızı tanıyaq - Milli bayramlar",
+    "2. Dünyamızı tanıyaq - Səyahət",
+    "2. Dünyamızı tanıyaq - Ümumiləşdirici təkrar",
+    "3. Qəribə heyvanlar - Mamont və fil",
+    "3. Qəribə heyvanlar - Nadir meşə heyvanları",
+    "3. Qəribə heyvanlar - Manqust",
+    "3. Qəribə heyvanlar - Antarktida sakinləri",
+    "3. Qəribə heyvanlar - Delfin",
+    "3. Qəribə heyvanlar - Ümumiləşdirici təkrar",
+    "4. Təbii fəlakətlər - Sel",
+    "4. Təbii fəlakətlər - Meşə yanğınları",
+    "4. Təbii fəlakətlər - Dənizdə fırtına",
+    "4. Təbii fəlakətlər - Sunami",
+    "4. Təbii fəlakətlər - Daşqın",
+    "4. Təbii fəlakətlər - Ümumiləşdirici təkrar"
   ],
   "azerbaycan-dili-3-h2": [
-    {
-      "chapter": "İXTİRALAR",
-      "topics": [
-        {
-          "title": "İXTİRALAR - Rəqəmlərin tarixi",
-          "page": 0
-        },
-        {
-          "title": "İXTİRALAR - Zəka və ixtira",
-          "page": 0
-        },
-        {
-          "title": "İXTİRALAR - Özün düzəlt",
-          "page": 0
-        },
-        {
-          "title": "İXTİRALAR - İxtiralar - Ümumiləşdirici təkrar",
-          "page": 0
-        },
-        {
-          "title": "İXTİRALAR - İxtiraçı uşaqlar",
-          "page": 0
-        },
-        {
-          "title": "İXTİRALAR - Ən mühüm ixtira",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "UNUDULMAZ QƏHRƏMANLAR",
-      "topics": [
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - El igidləri ilə tanınar",
-          "page": 0
-        },
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - Hünər göstər, ad qazan",
-          "page": 0
-        },
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - Möhtəşəm dönüş",
-          "page": 0
-        },
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - Qəhrəmanlar unudulmur",
-          "page": 0
-        },
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - Unudulmaz Qəhrəmanlar - Ümumiləşdirici təkrar",
-          "page": 0
-        },
-        {
-          "title": "UNUDULMAZ QƏHRƏMANLAR - İgid döyüşdə bəlli olar",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "ODLAR YURDU",
-      "topics": [
-        {
-          "title": "ODLAR YURDU - Azərbaycan musiqisi",
-          "page": 0
-        },
-        {
-          "title": "ODLAR YURDU - Azərbaycan qalaları",
-          "page": 0
-        },
-        {
-          "title": "ODLAR YURDU - Göyçə gölü",
-          "page": 0
-        },
-        {
-          "title": "ODLAR YURDU - Odlar Yurdu - Ümumiləşdirici təkrar",
-          "page": 0
-        },
-        {
-          "title": "ODLAR YURDU - Odlar oğlu",
-          "page": 0
-        },
-        {
-          "title": "ODLAR YURDU - Qız qalası",
-          "page": 0
-        }
-      ]
-    },
-    {
-      "chapter": "HİKMƏT XƏZİNƏSİ",
-      "topics": [
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Birlik",
-          "page": 0
-        },
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Hikmət Xəzinəsi - Ümumiləşdirici təkrar",
-          "page": 0
-        },
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Məharət",
-          "page": 0
-        },
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Nəsihət",
-          "page": 0
-        },
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Yumor və hikmət",
-          "page": 0
-        },
-        {
-          "title": "HİKMƏT XƏZİNƏSİ - Əməksevərlik",
-          "page": 0
-        }
-      ]
-    }
+    "5. İxtiralar - Zəka və ixtira",
+    "5. İxtiralar - Ən mühüm ixtira",
+    "5. İxtiralar - İxtiraçı uşaqlar",
+    "5. İxtiralar - Özün düzəlt",
+    "5. İxtiralar - Rəqəmlərin tarixi",
+    "5. İxtiralar - Ümumiləşdirici təkrar",
+    "6. Unudulmaz qəhrəmanlar - Hünər göstər, ad qazan",
+    "6. Unudulmaz qəhrəmanlar - El igidləri ilə tanınar",
+    "6. Unudulmaz qəhrəmanlar - İgid döyüşdə bəlli olar",
+    "6. Unudulmaz qəhrəmanlar - Qəhrəmanlar unudulmur",
+    "6. Unudulmaz qəhrəmanlar - Möhtəşəm dönüş",
+    "6. Unudulmaz qəhrəmanlar - Ümumiləşdirici təkrar",
+    "7. Odlar yurdu - Odlar oğlu",
+    "7. Odlar yurdu - Göyçə gölü",
+    "7. Odlar yurdu - Azərbaycan musiqisi",
+    "7. Odlar yurdu - Qız qalası",
+    "7. Odlar yurdu - Azərbaycan qalaları",
+    "7. Odlar yurdu - Ümumiləşdirici təkrar",
+    "8. Hikmət xəzinəsi - Əməksevərlik",
+    "8. Hikmət xəzinəsi - Nəsihət",
+    "8. Hikmət xəzinəsi - Birlik",
+    "8. Hikmət xəzinəsi - Yumor və hikmət",
+    "8. Hikmət xəzinəsi - Məharət",
+    "8. Hikmət xəzinəsi - Ümumiləşdirici təkrar"
   ],
   "hayat-bilgisi-3": [
-    {
-      "chapter": "1 MƏN VƏ CƏMİYYƏT",
-      "topics": [
-        {
-          "title": "Hüquqlarımız",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Müsbət keyfiyyətlərimiz",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Eşitmək və dinləmək",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Biz və dostlarımız",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Birlikdə yaşamaq",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Milli birlik",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 7,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "2 İNSAN VƏ SAĞLAMLIQ",
-      "topics": [
-        {
-          "title": "Canlılar və fosillər",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Bədən üzvləri",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Skelet və əzələlər",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Sağlamlıq və qidalanma",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Qida məhsulları",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Xəstəlik və sağlamlıq",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 7,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "3 YER VƏ AY",
-      "topics": [
-        {
-          "title": "Yer kürəsi və Ay",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Yerin fırlanması",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "İşıq və kölgə",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Kölgənin yerini dəyişməsi",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "4 MATERİALLAR VƏ XASSƏLƏRİ",
-      "topics": [
-        {
-          "title": "Materialların xassələri",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Materialların istifadəsi",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "İstilik və temperatur",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "İstiliyi yaxşı və pis keçirən materiallar",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "5 BAYRAMLAR VƏ QƏNAƏT",
-      "topics": [
-        {
-          "title": "Bayramlar",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "May",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Ehtiyaclarımız və istəklərimiz",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "6 TƏHLÜKƏSİZLİK VƏ QAYDALAR",
-      "topics": [
-        {
-          "title": "Təbii fəlakətlər",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Diqqətli və ehtiyatlı olaq",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Təhlükəsizlik nişanları",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Danışan nişanlar",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Lüğət",
-          "page": 6,
-          "path": ""
-        }
-      ]
-    }
+    "1. Mən və cəmiyyət - Hüquqlarımız",
+    "1. Mən və cəmiyyət - Müsbət keyfiyyətlərimiz",
+    "1. Mən və cəmiyyət - Eşitmək və dinləmək",
+    "1. Mən və cəmiyyət - Biz və dostlarımız",
+    "1. Mən və cəmiyyət - Birlikdə yaşamaq",
+    "1. Mən və cəmiyyət - Milli birlik",
+    "1. Mən və cəmiyyət - Ümumiləşdirici tapşırıqlar",
+    "2. İnsan və sağlamlıq - Canlılar və fosillər",
+    "2. İnsan və sağlamlıq - Bədən üzvləri",
+    "2. İnsan və sağlamlıq - Skelet və əzələlər",
+    "2. İnsan və sağlamlıq - Sağlamlıq və qidalanma",
+    "2. İnsan və sağlamlıq - Qida məhsulları",
+    "2. İnsan və sağlamlıq - Xəstəlik və sağlamlıq",
+    "2. İnsan və sağlamlıq - Ümumiləşdirici tapşırıqlar",
+    "3. Yer və Ay - Yer kürəsi və Ay",
+    "3. Yer və Ay - Yerin fırlanması",
+    "3. Yer və Ay - İşıq və kölgə",
+    "3. Yer və Ay - Kölgənin yerini dəyişməsi",
+    "3. Yer və Ay - Ümumiləşdirici tapşırıqlar",
+    "4. Materiallar və xassələri - Materialların xassələri",
+    "4. Materiallar və xassələri - Materialların istifadəsi",
+    "4. Materiallar və xassələri - İstilik və temperatur",
+    "4. Materiallar və xassələri - İstiliyi yaxşı və pis keçirən materiallar",
+    "4. Materiallar və xassələri - Ümumiləşdirici tapşırıqlar",
+    "5. Bayramlar və qənaət - Bayramlar",
+    "5. Bayramlar və qənaət - 28 May",
+    "5. Bayramlar və qənaət - Ehtiyaclarımız və istəklərimiz",
+    "5. Bayramlar və qənaət - Ümumiləşdirici tapşırıqlar",
+    "6. Təhlükəsizlik və qaydalar - Təbii fəlakətlər",
+    "6. Təhlükəsizlik və qaydalar - Diqqətli və ehtiyatlı olaq",
+    "6. Təhlükəsizlik və qaydalar - Təhlükəsizlik nişanları",
+    "6. Təhlükəsizlik və qaydalar - Danışan nişanlar",
+    "6. Təhlükəsizlik və qaydalar - Ümumiləşdirici tapşırıqlar"
   ],
   "informatika-3": [
-    {
-      "chapter": "1 İNFORMASİYA",
-      "topics": [
-        {
-          "title": "İNSAN VƏ İNFORMASİYA",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "TƏBİƏTDƏ İNFORMASİYA",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "İNFORMASİYA PROSESLƏRİ",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "İNFORMASİYANIN ÖTÜRÜLMƏSİ",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "İNFORMASİYANIN KODLAŞDIRILMASI",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "REBUS",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "İNFORMASİYANIN EMALI",
-          "page": 7,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "2 ALQORİTM",
-      "topics": [
-        {
-          "title": "OBYEKTLƏR QRUPU",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "OBYEKTİN FƏRQLƏNDİRİCİ ƏLAMƏTLƏRİ",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "“HAMISI”, “HEÇ BİRİ”, “BƏZİSİ”",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "QANUNAUYĞUNLUQ",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "ALQORİTM",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "XƏTTİ ALQORİTM",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "BUDAQLANMA",
-          "page": 7,
-          "path": ""
-        },
-        {
-          "title": "MƏQSƏDƏUYĞUN YOLUN SEÇİLMƏSİ",
-          "page": 8,
-          "path": ""
-        },
-        {
-          "title": "TƏKRARLANAN HƏRƏKƏTLƏR",
-          "page": 9,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "3 KOMPÜTER",
-      "topics": [
-        {
-          "title": "KOMPÜTER VƏ İNFORMASİYA",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "İŞ MASASI",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "QOVLUQ",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "PAINT PROQRAMI",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "PALİTRA",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "ŞƏKLİN FRAQMENTİ İLƏ İŞ",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "ŞƏKİLLƏRİN KOMPÜTERDƏ SAXLANMASI",
-          "page": 7,
-          "path": ""
-        },
-        {
-          "title": "WORDPAD PROQRAMI",
-          "page": 8,
-          "path": ""
-        },
-        {
-          "title": "MƏTNLƏRLƏ İŞ",
-          "page": 9,
-          "path": ""
-        },
-        {
-          "title": "MƏTNƏ ŞƏKLİN ƏLAVƏ EDİLMƏSİ",
-          "page": 10,
-          "path": ""
-        },
-        {
-          "title": "MƏTNDƏ SÖZLƏRİN ƏVƏZ OLUNMASI",
-          "page": 11,
-          "path": ""
-        },
-        {
-          "title": "KOMPÜTERDƏ HESABLAMALARIN APARILMASI",
-          "page": 12,
-          "path": ""
-        }
-      ]
-    }
+    "1. İnformasiya - İnsan və informasiya",
+    "1. İnformasiya - Təbiətdə informasiya",
+    "1. İnformasiya - İnformasiya prosesləri",
+    "1. İnformasiya - İnformasiyanın ötürülməsi",
+    "1. İnformasiya - İnformasiyanın kodlaşdırılması",
+    "1. İnformasiya - Rebus",
+    "1. İnformasiya - İnformasiyanın emalı",
+    "2. Alqoritm - Obyektlər qrupu",
+    "2. Alqoritm - Obyektin fərqləndirici əlamətləri",
+    "2. Alqoritm - “Hamısı”, “heç biri”, “bəzisi”",
+    "2. Alqoritm - Qanunauyğunluq",
+    "2. Alqoritm - Alqoritm",
+    "2. Alqoritm - Xətti alqoritm",
+    "2. Alqoritm - Budaqlanma",
+    "2. Alqoritm - Məqsədəuyğun yolun seçilməsi",
+    "2. Alqoritm - Təkrarlanan hərəkətlər",
+    "3. Kompüter - Kompüter və informasiya",
+    "3. Kompüter - İş masası",
+    "3. Kompüter - Qovluq",
+    "3. Kompüter - Paint proqramı",
+    "3. Kompüter - Palitra",
+    "3. Kompüter - Şəklin fraqmenti ilə iş",
+    "3. Kompüter - Şəkillərin kompüterdə saxlanması",
+    "3. Kompüter - WordPad proqramı",
+    "3. Kompüter - Mətnlərlə iş",
+    "3. Kompüter - Mətnə şəklin əlavə edilməsi",
+    "3. Kompüter - Mətndə sözlərin əvəz olunması",
+    "3. Kompüter - Kompüterdə hesablamaların aparılması"
   ],
   "riyaziyyat-3-h1": [
-    {
-      "chapter": "1 Ədədlər (1000-ə qədər)",
-      "topics": [
-        {
-          "title": "Üçrəqəmli ədədlər",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Ədədin yazılış formaları",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Ədədlərin müqayisəsi və sıralama",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Yuvarlaqlaşdırma",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "2 Toplama (1000-ə qədər)",
-      "topics": [
-        {
-          "title": "Üçrəqəmli ədədlərin toplanması",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin toplanması (yeni onluğun yaranması)",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin toplanması (yeni yüzlüyün yaranması)",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin toplanması (yeni onluq və yüzlüyün yaranması)",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Üç və daha çox ədədin toplanması",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Toplamanın digər üsulları",
-          "page": 6,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "3 Çıxma (1000-ə qədər)",
-      "topics": [
-        {
-          "title": "Üçrəqəmli ədədlərin çıxılması",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Çıxmanın digər üsulları",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Təqribi toplama və çıxma",
-          "page": 6,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "4 Vurma və bölmə",
-      "topics": [
-        {
-          "title": "6-ya və 7-yə vurma",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "8, 9 və 10-a vurma",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "2, 3, 4 və 5-ə bölmə",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "6-ya və 7-yə bölmə",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "8, 9 və 10-a bölmə",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Məchulun tapılması",
-          "page": 6,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "5 Riyazi ifadələr. Tənlik",
-      "topics": [
-        {
-          "title": "Əməllər ardıcıllığı",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Dəyişəni olan ifadələr",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Tənlik",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "1-ci yarımil üzrə ümumiləşdirici tapşırıqlar",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    }
+    "1. Ədədlər (1000-ə qədər) - Üçrəqəmli ədədlər",
+    "1. Ədədlər (1000-ə qədər) - Ədədin yazılış formaları",
+    "1. Ədədlər (1000-ə qədər) - Ədədlərin müqayisəsi və sıralama",
+    "1. Ədədlər (1000-ə qədər) - Yuvarlaqlaşdırma",
+    "1. Ədədlər (1000-ə qədər) - Ümumiləşdirici tapşırıqlar",
+    "2. Toplama (1000-ə qədər) - Üçrəqəmli ədədlərin toplanması",
+    "2. Toplama (1000-ə qədər) - Üçrəqəmli ədədlərin toplanması (yeni onluğun yaranması)",
+    "2. Toplama (1000-ə qədər) - Üçrəqəmli ədədlərin toplanması (yeni yüzlüyün yaranması)",
+    "2. Toplama (1000-ə qədər) - Üçrəqəmli ədədlərin toplanması (yeni onluq və yüzlüyün yaranması)",
+    "2. Toplama (1000-ə qədər) - Üç və daha çox ədədin toplanması",
+    "2. Toplama (1000-ə qədər) - Toplamanın digər üsulları",
+    "2. Toplama (1000-ə qədər) - Ümumiləşdirici tapşırıqlar",
+    "3. Çıxma (1000-ə qədər) - Üçrəqəmli ədədlərin çıxılması",
+    "3. Çıxma (1000-ə qədər) - Üçrəqəmli ədədlərin çıxılması (onluğun ayrılması)",
+    "3. Çıxma (1000-ə qədər) - Üçrəqəmli ədədlərin çıxılması (yüzlüyün ayrılması)",
+    "3. Çıxma (1000-ə qədər) - Üçrəqəmli ədədlərin çıxılması (onluq və yüzlüyün ayrılması)",
+    "3. Çıxma (1000-ə qədər) - Çıxmanın digər üsulları",
+    "3. Çıxma (1000-ə qədər) - Təqribi toplama və çıxma",
+    "3. Çıxma (1000-ə qədər) - Ümumiləşdirici tapşırıqlar",
+    "4. Vurma və bölmə - 6-ya və 7-yə vurma",
+    "4. Vurma və bölmə - 8, 9 və 10-a vurma",
+    "4. Vurma və bölmə - 2, 3, 4 və 5-ə bölmə",
+    "4. Vurma və bölmə - 6-ya və 7-yə bölmə",
+    "4. Vurma və bölmə - 8, 9 və 10-a bölmə",
+    "4. Vurma və bölmə - Məchulun tapılması",
+    "4. Vurma və bölmə - Ümumiləşdirici tapşırıqlar",
+    "5. Riyazi ifadələr. Tənlik - Əməllər ardıcıllığı",
+    "5. Riyazi ifadələr. Tənlik - Dəyişəni olan ifadələr",
+    "5. Riyazi ifadələr. Tənlik - Tənlik",
+    "5. Riyazi ifadələr. Tənlik - 1-ci yarımil üzrə ümumiləşdirici tapşırıqlar"
   ],
   "riyaziyyat-3-h2": [
-    {
-      "chapter": "6 Həndəsi fiqurlar",
-      "topics": [
-        {
-          "title": "Kəsişən və paralel düz xətlər",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Müstəvi fiqurlar",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Simmetriya və yerdəyişmə",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Fəza fiqurları",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Müstəvi və fəza fiqurlarının əlaqəsi",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "7 Vurma və bölmə",
-      "topics": [
-        {
-          "title": "Vurmanın xassələri",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "İkirəqəmli ədədin birrəqəmli ədədə vurulması",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədin birrəqəmli ədədə vurulması",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Qalıqlı bölmə",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "İkirəqəmli ədədin birrəqəmli ədədə bölünməsi",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Üçrəqəmli ədədin birrəqəmli ədədə bölünməsi",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Vurma və bölmənin digər üsulları",
-          "page": 7,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "8 Kəsrlər",
-      "topics": [
-        {
-          "title": "Tam və bərabər hissələr. Kəsr",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Ədədin hissəsi",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Kəsrlərin müqayisəsi",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "9 Ədədlər (10 000-ə qədər) Pullar",
-      "topics": [
-        {
-          "title": "Dördrəqəmli ədədlər",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Pullarla hesablamalar",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Gəlir, xərc, qazanc",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "10 Ölçmə",
-      "topics": [
-        {
-          "title": "Uzunluq",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Perimetr və sahə",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Kütlə",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Tutum",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Saat",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "11 Məlumatların təsviri. Hadisələr",
-      "topics": [
-        {
-          "title": "Xətti diaqram",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Hadisələr",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Məlumatların təsviri.Praktik dərs",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "3-cü sinif üzrə ümumiləşdirici tapşırıqlar",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    }
+    "6. Həndəsi fiqurlar - Kəsişən və paralel düz xətlər",
+    "6. Həndəsi fiqurlar - Müstəvi fiqurlar",
+    "6. Həndəsi fiqurlar - Simmetriya və yerdəyişmə",
+    "6. Həndəsi fiqurlar - Fəza fiqurları",
+    "6. Həndəsi fiqurlar - Müstəvi və fəza fiqurlarının əlaqəsi",
+    "6. Həndəsi fiqurlar - Ümumiləşdirici tapşırıqlar",
+    "7. Vurma və bölmə - Vurmanın xassələri",
+    "7. Vurma və bölmə - İkirəqəmli ədədin birrəqəmli ədədə vurulması",
+    "7. Vurma və bölmə - Üçrəqəmli ədədin birrəqəmli ədədə vurulması",
+    "7. Vurma və bölmə - Qalıqlı bölmə",
+    "7. Vurma və bölmə - İkirəqəmli ədədin birrəqəmli ədədə bölünməsi",
+    "7. Vurma və bölmə - Üçrəqəmli ədədin birrəqəmli ədədə bölünməsi",
+    "7. Vurma və bölmə - Vurma və bölmənin digər üsulları",
+    "7. Vurma və bölmə - Ümumiləşdirici tapşırıqlar",
+    "8. Kəsrlər - Tam və bərabər hissələr. Kəsr",
+    "8. Kəsrlər - Ədədin hissəsi",
+    "8. Kəsrlər - Kəsrlərin müqayisəsi",
+    "8. Kəsrlər - Ümumiləşdirici tapşırıqlar",
+    "9. Ədədlər (10 000-ə qədər) Pullar - Dördrəqəmli ədədlər",
+    "9. Ədədlər (10 000-ə qədər) Pullar - Pullarla hesablamalar",
+    "9. Ədədlər (10 000-ə qədər) Pullar - Gəlir, xərc, qazanc",
+    "9. Ədədlər (10 000-ə qədər) Pullar - Ümumiləşdirici tapşırıqlar",
+    "10. Ölçmə - Uzunluq",
+    "10. Ölçmə - Perimetr və sahə",
+    "10. Ölçmə - Kütlə",
+    "10. Ölçmə - Tutum",
+    "10. Ölçmə - Saat",
+    "10. Ölçmə - Ümumiləşdirici tapşırıqlar",
+    "11. Məlumatların təsviri. Hadisələr - Xətti diaqram",
+    "11. Məlumatların təsviri. Hadisələr - Hadisələr",
+    "11. Məlumatların təsviri. Hadisələr - Məlumatların təsviri. Praktik dərs",
+    "11. Məlumatların təsviri. Hadisələr - 3-cü sinif üzrə ümumiləşdirici tapşırıqlar"
   ],
   "texnologiya-3": [
-    {
-      "chapter": "1. Texnoloji vasitələr",
-      "topics": [
-        {
-          "title": "Texnologiya bizim əhatəmizdə. Əmək alətləri",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Kəsici və deşici alətlərlə iş",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Detalları nişanlama qaydaları. Pərgar vasitəsilə nişanlama",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "2. Məişət mədəniyyəti",
-      "topics": [
-        {
-          "title": "Özünəxidmət. Sanitariya-gigiyena qaydaları",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Bitkilər və onların insan sağlamlığında rolu",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Səhər süfrəsi. Nahar süfrəsi",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Şam süfrəsi. Yemək masası arxasında davranış qaydaları",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "3. Plastilindən yapma işləri",
-      "topics": [
-        {
-          "title": "Plastilindən səkkizayaqlı ilbiz",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Plastilindən tank",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Plastilindən zebr",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "4. Aplikasiya işləri",
-      "topics": [
-        {
-          "title": "Kağız zolaqlardan çiçək aplikasiyası",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Heyvan siluetləri. Panda",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Simmetrik naxışkəsmə",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Qar dənəciyi aplikasiyasının hazırlanması",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Həndəsi fiqurlardan aplikasiya. Məzəli köpək",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "5. Mozaika işləri",
-      "topics": [
-        {
-          "title": "Rəngli kağızlardan Azərbaycan bayrağı mozaikası",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Plastilindən xarıbülbül mozaikası",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Muncuqdan tovuzquşu mozaikası",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Pambıqlı çöplərdən quzu mozaikası",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "6. Kağızqatlama",
-      "topics": [
-        {
-          "title": "Kağız fırlanğıc",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Kağız modullardan ürəkşəkilli çərçivə",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Kağızı qatlayırıq və kəsirik. Mamont fiquru",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "7. İpliklə iş",
-      "topics": [
-        {
-          "title": "“Kənar” və “ilgək” tikişləri",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "İplikdən “Şən aslan” oyuncağı",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Hərəkətli detalları olan oyuncaqlar. Şən ayı balası",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "8. Texnoloji maşınlar və yeraltı nəqliyyat vasitələri",
-      "topics": [
-        {
-          "title": "Texnoloji maşınlar. Yerüstü və yeraltı nəqliyyat vasitələri",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Nəqledici maşınlar. Hava nəqliyyatı.Su nəqliyyatı",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Məişət avadanlığı. Elektron maşınlar",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    }
+    "1. Texnoloji vasitələr - Texnologiya bizim əhatəmizdə. Əmək alətləri",
+    "1. Texnoloji vasitələr - Kəsici və deşici alətlərlə iş",
+    "1. Texnoloji vasitələr - Detalları nişanlama qaydaları. Pərgar vasitəsilə nişanlama",
+    "2. Məişət mədəniyyəti - Özünəxidmət. Sanitariya-gigiyena qaydaları",
+    "2. Məişət mədəniyyəti - Bitkilər və onların insan sağlamlığında rolu",
+    "2. Məişət mədəniyyəti - Səhər süfrəsi. Nahar süfrəsi",
+    "2. Məişət mədəniyyəti - Şam süfrəsi. Yemək masası arxasında davranış qaydaları",
+    "3. Plastilindən yapma işləri - Plastilindən səkkizayaqlı ilbiz",
+    "3. Plastilindən yapma işləri - Plastilindən tank",
+    "3. Plastilindən yapma işləri - Plastilindən zebr",
+    "4. Aplikasiya işləri - Kağız zolaqlardan çiçək aplikasiyası",
+    "4. Aplikasiya işləri - Heyvan siluetləri. Panda",
+    "4. Aplikasiya işləri - Simmetrik naxışkəsmə",
+    "4. Aplikasiya işləri - Qar dənəciyi aplikasiyasının hazırlanması",
+    "4. Aplikasiya işləri - Həndəsi fiqurlardan aplikasiya. Məzəli köpək",
+    "5. Mozaika işləri - Rəngli kağızlardan Azərbaycan bayrağı mozaikası",
+    "5. Mozaika işləri - Plastilindən xarıbülbül mozaikası",
+    "5. Mozaika işləri - Muncuqdan tovuzquşu mozaikası",
+    "5. Mozaika işləri - Pambıqlı çöplərdən quzu mozaikası",
+    "6. Kağızqatlama - Kağız fırlanğıc",
+    "6. Kağızqatlama - Kağız modullardan ürəkşəkilli çərçivə",
+    "6. Kağızqatlama - Kağızı qatlayırıq və kəsirik. Mamont fiquru",
+    "7. İpliklə iş - “Kənar” və “ilgək” tikişləri",
+    "7. İpliklə iş - İplikdən “Şən aslan” oyuncağı",
+    "7. İpliklə iş - Hərəkətli detalları olan oyuncaqlar. Şən ayı balası",
+    "8. Texnoloji maşınlar və nəqliyyat - Texnoloji maşınlar. Yerüstü və yeraltı nəqliyyat",
+    "8. Texnoloji maşınlar və nəqliyyat - Nəqledici maşınlar. Hava və su nəqliyyatı",
+    "8. Texnoloji maşınlar və nəqliyyat - Məişət avadanlığı. Elektron maşınlar"
   ],
   "ingilis-dili-3": [
-    {
-      "chapter": "Mövzular",
-      "topics": [
-        {
-          "title": "Scope and Sequence",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Welcome",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Unit 1",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Unit 2",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Unit 3",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Unit 4",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Unit 5",
-          "page": 7,
-          "path": ""
-        },
-        {
-          "title": "Unit 6",
-          "page": 8,
-          "path": ""
-        },
-        {
-          "title": "Unit 7",
-          "page": 9,
-          "path": ""
-        },
-        {
-          "title": "Unit 8",
-          "page": 10,
-          "path": ""
-        }
-      ]
-    }
+    "Welcome - Welcome to Happy Camp! (Greetings & Names)",
+    "Unit 1 - In the Classroom (Classroom Objects & Actions)",
+    "Unit 2 - My Feelings (Feelings & Emotions)",
+    "Unit 3 - Family and Friends (Family Members & People)",
+    "Unit 4 - Amazing Animals (Animals & Abilities)",
+    "Unit 5 - Food and Drink (Meals, Food & Drinks)",
+    "Unit 6 - My Day (Daily Routines & Time)",
+    "Unit 7 - Clothes and Weather (Clothes & Weather Conditions)",
+    "Unit 8 - Free Time (Hobbies & Activities)"
   ],
   "alman-dili-esas-3": [
-    {
-      "chapter": "Mövzular",
-      "topics": [
-        {
-          "title": "Lektion Was ist das? Wer ist das?",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Lektion Wer bist du? Wie heißt du?",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Lektion Die Zahlen und die Farben",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Lektion Wie alt bist du?",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Lektion Wie geht' s?",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Lektion Meine Schulsachen",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Lektion In der Schule. Mein Klassenzimmer",
-          "page": 7,
-          "path": ""
-        },
-        {
-          "title": "Lektion In der Schule. In der Pause",
-          "page": 8,
-          "path": ""
-        },
-        {
-          "title": "Lektion Meine Familie",
-          "page": 9,
-          "path": ""
-        },
-        {
-          "title": "Lektion Berufe",
-          "page": 10,
-          "path": ""
-        },
-        {
-          "title": "Lektion Unsere Wohnung. Die Zimmer",
-          "page": 11,
-          "path": ""
-        },
-        {
-          "title": "Lektion Unsere Wohnung. Die Möbel",
-          "page": 12,
-          "path": ""
-        },
-        {
-          "title": "Lektion Essen und Trinken",
-          "page": 13,
-          "path": ""
-        },
-        {
-          "title": "Wortliste",
-          "page": 14,
-          "path": ""
-        }
-      ]
-    }
+    "Lektion 1. Was ist das? Wer ist das?",
+    "Lektion 2. Wer bist du? Wie heißt du?",
+    "Lektion 3. Die Zahlen und die Farben",
+    "Lektion 4. Wie alt bist du?",
+    "Lektion 5. Wie geht's?",
+    "Lektion 6. Meine Schulsachen",
+    "Lektion 7. In der Schule. Mein Klassenzimmer",
+    "Lektion 8. In der Schule. In der Pause",
+    "Lektion 9. Meine Familie",
+    "Lektion 10. Berufe",
+    "Lektion 11. Unsere Wohnung. Die Zimmer",
+    "Lektion 12. Unsere Wohnung. Die Möbel",
+    "Lektion 13. Essen und Trinken"
   ],
   "fransiz-dili-esas-3": [
-    {
-      "chapter": "Module 1",
-      "topics": [
-        {
-          "title": "Mon alphabet",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Comment t'appelles-tu?",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Quel âge as-tu?",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Ça va très bien!",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "Module 2",
-      "topics": [
-        {
-          "title": "Mon alphabet",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Je présente ma famille",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Mes parents",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Chez mon oncle",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "Module 3",
-      "topics": [
-        {
-          "title": "Mon alphabet",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Ma classe",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Dans mon cartable",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "J'aime le français et toi?",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "Module 4",
-      "topics": [
-        {
-          "title": "Mon alphabet",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Notre jardin",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Des vitamines",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Le supermarché",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "Module 5",
-      "topics": [
-        {
-          "title": "Mon alphabet",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Les quatre saisons",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Bon anniversaire!",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Il fait beau aujourd'hui",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "Module 6",
-      "topics": [
-        {
-          "title": "Les drapeaux",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Les enfants différents",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Mes amis",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Hourraa! Je lis en français",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Bilan",
-          "page": 5,
-          "path": ""
-        },
-        {
-          "title": "Mon dictionnaire sonore",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "Jeux",
-          "page": 7,
-          "path": ""
-        }
-      ]
-    }
+    "Module 1 - Leçon 1. Mon alphabet",
+    "Module 1 - Leçon 2. Comment t'appelles-tu?",
+    "Module 1 - Leçon 3. Quel âge as-tu?",
+    "Module 1 - Leçon 4. Ça va très bien!",
+    "Module 2 - Leçon 1. Mon alphabet",
+    "Module 2 - Leçon 2. Je présente ma famille",
+    "Module 2 - Leçon 3. Mes parents",
+    "Module 2 - Leçon 4. Chez mon oncle",
+    "Module 3 - Leçon 1. Mon alphabet",
+    "Module 3 - Leçon 2. Ma classe",
+    "Module 3 - Leçon 3. Dans mon cartable",
+    "Module 3 - Leçon 4. J'aime le français et toi?",
+    "Module 4 - Leçon 1. Mon alphabet",
+    "Module 4 - Leçon 2. Notre jardin",
+    "Module 4 - Leçon 3. Des vitamines",
+    "Module 4 - Leçon 4. Le supermarché",
+    "Module 5 - Leçon 1. Mon alphabet",
+    "Module 5 - Leçon 2. Les quatre saisons",
+    "Module 5 - Leçon 3. Bon anniversaire!",
+    "Module 5 - Leçon 4. Il fait beau aujourd'hui",
+    "Module 6 - Leçon 1. Les drapeaux",
+    "Module 6 - Leçon 2. Les enfants différents",
+    "Module 6 - Leçon 3. Mes amis",
+    "Module 6 - Leçon 4. Hourraa! Je lis en français"
   ],
   "rus-dili-esas-3": [
-    {
-      "chapter": "1.ПУТЕШЕ́СТВИЕ В МИР ЗНА́НИЙ",
-      "topics": [
-        {
-          "title": "Бу́квы А, М",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы П, К",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Н, О",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Д, Т",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "2.ОТ БУ́КВЫ К СЛО́ВУ",
-      "topics": [
-        {
-          "title": "Бу́квы И, Й",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы У, Р",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы В, Ы",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Л, С",
-          "page": 4,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Ж, 3",
-          "page": 5,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "3.ЧТЕ́НИЕ - ВОТ ЛУ́ЧШЕЕ УЧЕ́НИЕ",
-      "topics": [
-        {
-          "title": "Бу́квы Е, Ё",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Б, Г",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы ъ, ь",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Ш, Щ",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "4.ЗНА́НИЕ - ГЛАЗА́ ЧЕЛОВЕ́КА",
-      "topics": [
-        {
-          "title": "Бу́квы Ч, Ц",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Э, Ю.",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Х, Ф",
-          "page": 3,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Я",
-          "page": 4,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "5.ПУТЕШЕ́СТВИЕ В МИР СКА́ЗОК",
-      "topics": [
-        {
-          "title": "Бу́квы ́Азбука - к му́дрости ступе́нька",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Ре́пка",
-          "page": 2,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Глу́пая лис́а",
-          "page": 3,
-          "path": ""
-        }
-      ]
-    },
-    {
-      "chapter": "6.ВОЛШЕ́БНЫЙ МИР СКА́ЗОК",
-      "topics": [
-        {
-          "title": "Бу́квы Теремо́к",
-          "page": 1,
-          "path": ""
-        },
-        {
-          "title": "Бу́квы Семь грана́товых пру́тьев",
-          "page": 2,
-          "path": ""
-        }
-      ]
-    }
+    "1. Путешествие в мир знаний - Урок 1. Буквы А, М",
+    "1. Путешествие в мир знаний - Урок 2. Буквы П, К",
+    "1. Путешествие в мир знаний - Урок 3. Буквы Н, О",
+    "1. Путешествие в мир знаний - Урок 4. Буквы Д, Т",
+    "2. От буквы к слову - Урок 5. Буквы И, Й",
+    "2. От буквы к слову - Урок 6. Буквы У, Р",
+    "2. От буквы к слову - Урок 7. Буквы В, Ы",
+    "2. От буквы к слову - Урок 8. Буквы Л, С",
+    "2. От буквы к слову - Урок 9. Буквы Ж, З",
+    "3. Чтение - вот лучшее учение - Урок 10. Буквы Е, Ё",
+    "3. Чтение - вот лучшее учение - Урок 11. Буквы Б, Г",
+    "3. Чтение - вот лучшее учение - Урок 12. Буквы ъ, ь",
+    "3. Чтение - вот лучшее учение - Урок 13. Буквы Ш, Щ",
+    "4. Знание - глаза человека - Урок 14. Буквы Ч, Ц",
+    "4. Знание - глаза человека - Урок 15. Буквы Э, Ю",
+    "4. Знание - глаза человека - Урок 16. Буквы Х, Ф",
+    "4. Знание - глаза человека - Урок 17. Буква Я",
+    "5. Путешествие в мир сказок - Урок 18. Азбука - к мудрости ступенька",
+    "5. Путешествие в мир сказок - Урок 19. Репка",
+    "5. Путешествие в мир сказок - Урок 20. Глупая лиса",
+    "6. Волшебный мир сказок - Урок 21. Теремок",
+    "6. Волшебный мир сказок - Урок 22. Семь гранатовых прутьев"
   ],
   "azerbaycan-dili-4-h1": [
     {

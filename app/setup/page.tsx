@@ -156,7 +156,7 @@ export default function SetupPage() {
     <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10">
       <div className="container mx-auto py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">EduTest AZ Quraşdırması</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">TESTAI.AZ Quraşdırması</h1>
           <p className="text-lg text-gray-600">Real AI xüsusiyyətlərini aktivləşdirmək üçün API key quraşdırın</p>
         </div>
 
