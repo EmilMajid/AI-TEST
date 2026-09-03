@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { supabaseServer } from "@/utils/supabaseClient"
 import { generateEmbedding } from "@/lib/rag/embeddings"
 import type { NextRequest } from "next/server"

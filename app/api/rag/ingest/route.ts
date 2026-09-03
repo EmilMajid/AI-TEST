@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { AppError, errorResponse, ErrorCode } from "@/lib/error-handler"
 

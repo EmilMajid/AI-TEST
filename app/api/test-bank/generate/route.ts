@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from 'next/server';
 import { generateQuestions } from '@/scripts/llm-wrapper';
 import { validateAndSanitizeQuestion } from '@/scripts/psychometric-validator';

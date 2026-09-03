@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { supabaseServer } from "@/utils/supabaseClient"
 import type { NextRequest } from "next/server"
 import { createSuccessResponse, createErrorResponse } from "@/lib/middleware/api-response"

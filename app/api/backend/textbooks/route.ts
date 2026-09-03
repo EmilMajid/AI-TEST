@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 
 const BACKEND_URL_RAW = process.env.NEXT_PUBLIC_BACKEND_URL || ""

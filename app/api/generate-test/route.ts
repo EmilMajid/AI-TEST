@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { generateText } from "ai"
 import { xai } from "@ai-sdk/xai"
 import { openai } from "@ai-sdk/openai"

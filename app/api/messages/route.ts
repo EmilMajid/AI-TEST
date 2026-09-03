@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { requireAuth, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
