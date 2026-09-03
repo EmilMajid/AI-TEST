@@ -31,6 +31,7 @@ export async function POST(request: NextRequest) {
       model: "openai/gpt-4-turbo",
       system: `You are an educational content creator for Azerbaijani students.
       Generate multiple-choice questions based on the given topic.
+      IMPORTANT: Every question must be completely unique, distinct in wording and concept, with no duplicate questions or options.
       Return valid JSON only with this structure:
       {
         "questions": [
@@ -43,7 +44,7 @@ export async function POST(request: NextRequest) {
           }
         ]
       }`,
-      prompt: `Generate ${params.questionCount} ${params.difficulty} multiple-choice questions about:
+      prompt: `Generate ${params.questionCount} ${params.difficulty} distinct multiple-choice questions about:
       Textbook: ${params.textbook}
       Topic: ${params.topic}
       Class: ${params.class}`,
@@ -57,6 +58,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Failed to parse generated questions" }, { status: 500 })
     }
 
+    // Deduplicate parsed questions
+    const rawList = Array.isArray(parsedQuestions?.questions) ? parsedQuestions.questions : []
+    const uniqueMap = new Map<string, any>()
+    for (const q of rawList) {
+      const key = (q?.question || "").toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, "").trim()
+      if (key && !uniqueMap.has(key)) {
+        uniqueMap.set(key, q)
+      }
+    }
+    const uniqueQuestionsList = Array.from(uniqueMap.values()).slice(0, params.questionCount)
+
     // Save test metadata
     const { data: testData, error: testError } = await supabase
       .from("test_data")
@@ -65,7 +77,7 @@ export async function POST(request: NextRequest) {
         topic: params.topic,
         class: params.class,
         difficulty: params.difficulty,
-        question_count: params.questionCount,
+        question_count: uniqueQuestionsList.length,
       })
       .select()
       .single()
@@ -75,7 +87,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Save questions
-    const questionsToSave = parsedQuestions.questions.map((q: any) => ({
+    const questionsToSave = uniqueQuestionsList.map((q: any) => ({
       test_id: testData.id,
       question: q.question,
       options: q.options,

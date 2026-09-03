@@ -1,0 +1,4370 @@
+{
+  "1. Free Time Fun & Activities": [
+    {
+      "question": "Which sentence correctly expresses a habitual leisure activity in the Present Simple?",
+      "options": [
+        "My brother plays chess with his friends every Saturday afternoon",
+        "My brother is playing chess with his friends right now at home",
+        "My brother has played chess with his friends yesterday morning",
+        "My brother will playing chess with his friends next Sunday evening"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Habitual actions with 'every Saturday' require the Present Simple tense."
+    },
+    {
+      "question": "Choose the correct pair of words to complete the dialogue:\nA: What do you usually do in your free time?\nB: I really enjoy ___ books and ___ to music.",
+      "options": [
+        "read / listen",
+        "reading / listening",
+        "to reading / listen",
+        "readed / listened"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The verb 'enjoy' is followed by the gerund (-ing form)."
+    },
+    {
+      "question": "Which verb correctly completes the sentence: 'Sarah ___ swimming in the lake every weekend during summer'?",
+      "options": [
+        "plays",
+        "does",
+        "goes",
+        "makes"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "We use 'go' with activities ending in -ing (go swimming, go hiking)."
+    },
+    {
+      "question": "Choose the correct stative verb sentence:",
+      "options": [
+        "I am knowing the rules of this board game now",
+        "I am understanding this board game clearly",
+        "I am wanting to play this board game today",
+        "I know the rules of this board game very well"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Stative verbs like 'know', 'understand', 'want' are not usually used in continuous tenses."
+    },
+    {
+      "question": "Which sentence shows a planned leisure activity in the near future?",
+      "options": [
+        "We are meeting our classmates at the cinema this evening",
+        "We met our classmates at the cinema yesterday afternoon",
+        "We meet our classmates at the cinema two days ago",
+        "We was meeting our classmates at the cinema yesterday"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Present Continuous is used for planned future arrangements with a time expression."
+    },
+    {
+      "question": "Choose the correct question tag: 'You enjoy playing table tennis after school, ___?'",
+      "options": [
+        "aren't you",
+        "don't you",
+        "didn't you",
+        "haven't you"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The sentence is in Present Simple positive, so the question tag is 'don't you?'."
+    },
+    {
+      "question": "Which word best describes an indoor board game of strategy?",
+      "options": [
+        "Football",
+        "Cycling",
+        "Chess",
+        "Hiking"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Chess is an indoor strategy board game."
+    },
+    {
+      "question": "Choose the correct preposition: 'She is very keen ___ collecting rare foreign coins.'",
+      "options": [
+        "in",
+        "at",
+        "with",
+        "on"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The adjective 'keen' takes the preposition 'on' (keen on something)."
+    },
+    {
+      "question": "Complete the sentence: 'While my sister was painting a picture, I ___ a book.'",
+      "options": [
+        "was reading",
+        "am reading",
+        "have read",
+        "will read"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Parallel past actions connected by 'while' both use the Past Continuous tense."
+    },
+    {
+      "question": "Which noun refers to a person who takes part in a hobby or sport?",
+      "options": [
+        "Spectator",
+        "Participant",
+        "Audience",
+        "Instructor"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "A participant is a person who actively takes part in an activity."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "He spends two hours to play the guitar every day",
+        "He spend two hours for playing guitar every day",
+        "He spends two hours playing the guitar every day",
+        "He is spend two hours play the guitar every day"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The expression 'spend time doing something' requires a gerund."
+    },
+    {
+      "question": "Which hobby is an outdoor activity that involves walking long distances in nature?",
+      "options": [
+        "Knitting",
+        "Painting",
+        "Reading",
+        "Hiking"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Hiking is an outdoor activity involving walking in natural environments."
+    },
+    {
+      "question": "Choose the antonym of the word 'active':",
+      "options": [
+        "Passive",
+        "Energetic",
+        "Dynamic",
+        "Creative"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Passive' is the opposite of 'active'."
+    },
+    {
+      "question": "Complete the sentence: 'Do you fancy ___ to the theatre with us tonight?'",
+      "options": [
+        "to go",
+        "going",
+        "go",
+        "went"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The verb 'fancy' is followed by a gerund (-ing form)."
+    },
+    {
+      "question": "Which sentence has correct word order?",
+      "options": [
+        "She listens always to classical music in her room",
+        "Always she listens to classical music in her room",
+        "She always listens to classical music in her room",
+        "She listens to classical music always in her room"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Adverbs of frequency (always) come before the main verb."
+    }
+  ],
+  "2. Personality & Character Traits": [
+    {
+      "question": "Which adjective describes a person who always tells the truth and does not cheat?",
+      "options": [
+        "Selfish",
+        "Stubborn",
+        "Greedy",
+        "Honest"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Honest' means sincere and truthful."
+    },
+    {
+      "question": "Choose the correct suffix to form an adjective from the noun 'care':",
+      "options": [
+        "-ful",
+        "-ment",
+        "-tion",
+        "-ness"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Care' + '-ful' = 'careful' (adjective)."
+    },
+    {
+      "question": "Which adjective has a negative meaning?",
+      "options": [
+        "Generous",
+        "Selfish",
+        "Reliable",
+        "Friendly"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Selfish' (caring only about oneself) is a negative character trait."
+    },
+    {
+      "question": "Choose the synonym of the word 'generous':",
+      "options": [
+        "Mean and unwilling to share things",
+        "Lazy and refusing to do any work",
+        "Kind-hearted and willing to give",
+        "Rude and disrespectful to elders"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Generous' means willing to share and give freely."
+    },
+    {
+      "question": "Complete the sentence: 'A ___ friend is someone you can always trust and depend on.'",
+      "options": [
+        "jealous",
+        "dishonest",
+        "careless",
+        "reliable"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Reliable' means trustworthy and dependable."
+    },
+    {
+      "question": "Which word correctly completes the sentence: 'Mark is so ___ that he never changes his mind once he decides.'?",
+      "options": [
+        "stubborn",
+        "polite",
+        "cheerful",
+        "modest"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Stubborn' describes someone determined not to change their attitude or opinion."
+    },
+    {
+      "question": "Choose the antonym of the word 'modest':",
+      "options": [
+        "Humble",
+        "Arrogant",
+        "Shy",
+        "Quiet"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Arrogant' (proud and boastful) is the opposite of 'modest'."
+    },
+    {
+      "question": "Form an adjective from the noun 'help':",
+      "options": [
+        "Helplessness",
+        "Helpingly",
+        "Helpful",
+        "Helpfulness"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Helpful' is the standard adjective formed from 'help'."
+    },
+    {
+      "question": "Which sentence uses the correct comparison of character adjectives?",
+      "options": [
+        "Nigar is most patient than her younger brother",
+        "Nigar is patienter than her younger brother",
+        "Nigar is as patienter as her younger brother",
+        "Nigar is more patient than her younger brother"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Long adjectives form the comparative degree with 'more' + adjective + 'than'."
+    },
+    {
+      "question": "Choose the meaning of the adjective 'sociable':",
+      "options": [
+        "Enjoying being with other people and making friends easily",
+        "Preferring to stay alone and avoiding talking to others",
+        "Showing anger whenever someone makes a small mistake",
+        "Refusing to help classmates with difficult school tasks"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Sociable' describes an outgoing and friendly person."
+    },
+    {
+      "question": "Complete the sentence: 'She is always ___ and brings positive energy to everyone.'",
+      "options": [
+        "gloomy",
+        "cheerful",
+        "nervous",
+        "clumsy"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Cheerful' means happy and positive."
+    },
+    {
+      "question": "Which prefix forms the opposite of the adjective 'patient'?",
+      "options": [
+        "un-",
+        "dis-",
+        "im-",
+        "ir-"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Impatient' is the opposite of 'patient'."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "He is enough generous to help anyone in need",
+        "He is too generous for helping anyone in need",
+        "He is so generous that to help anyone in need",
+        "He is generous enough to help anyone in need"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The adverb 'enough' comes after adjectives: 'generous enough'."
+    },
+    {
+      "question": "What does 'hard-working' mean?",
+      "options": [
+        "Putting a lot of effort and care into work",
+        "Avoiding any kind of physical or mental task",
+        "Speaking loudly without listening to others",
+        "Changing opinions very quickly and easily"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Hard-working' means industrious and dedicated."
+    },
+    {
+      "question": "Choose the correct adjective: 'An ___ person wants to be successful, rich, or powerful.'",
+      "options": [
+        "indifferent",
+        "ambitious",
+        "inattentive",
+        "inconsiderate"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Ambitious' describes someone with a strong desire for success."
+    }
+  ],
+  "3. Music, Cinema & Youth Culture": [
+    {
+      "question": "Which genre of music is characterized by improvisation and originated in African-American communities?",
+      "options": [
+        "Classical",
+        "Heavy metal",
+        "Jazz",
+        "Folk music"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Jazz originated in New Orleans and is known for improvisation."
+    },
+    {
+      "question": "Choose the correct sentence with a gerund after a verb of preference:",
+      "options": [
+        "She prefers watch documentaries to read fiction books",
+        "She prefer to watching documentaries than reading books",
+        "She is prefer watching documentaries to read fiction",
+        "She prefers watching documentaries to reading fiction books"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The structure 'prefer doing X to doing Y' uses gerunds."
+    },
+    {
+      "question": "Which person writes the music for a film or theatrical performance?",
+      "options": [
+        "Composer",
+        "Director",
+        "Scriptwriter",
+        "Cameraman"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "A composer creates musical pieces."
+    },
+    {
+      "question": "Choose the correct word: 'The ___ received a standing ovation for their brilliant acting.'",
+      "options": [
+        "crew",
+        "cast",
+        "audience",
+        "author"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Cast' refers to all the actors in a film or play."
+    },
+    {
+      "question": "Complete the sentence: 'This historical movie is based ___ true events from the 19th century.'",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "for"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The phrase is 'based on true events'."
+    },
+    {
+      "question": "Which film genre is designed to frighten and provoke fear in the audience?",
+      "options": [
+        "Comedy",
+        "Musical",
+        "Animation",
+        "Horror"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Horror films aim to scare the viewers."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "The concert was so exciting that nobody wanted to leave",
+        "The concert was such exciting that nobody wanted to leave",
+        "The concert was too exciting that nobody wanted to leave",
+        "The concert was very exciting that nobody wanted to leave"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "We use 'so + adjective + that clause'."
+    },
+    {
+      "question": "What is the role of a film director?",
+      "options": [
+        "Selling popcorn and cinema tickets to the arriving audience",
+        "Guiding the actors and overseeing the artistic aspects of a movie",
+        "Designing costumes only for background and crowd performers",
+        "Writing negative newspaper reviews about newly released films"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The director controls the creative and dramatic aspects of a film."
+    },
+    {
+      "question": "Choose the synonym of 'soundtrack':",
+      "options": [
+        "The written script containing dialogue for all characters",
+        "The large screen inside a modern digital cinema hall",
+        "The recorded music accompanying a film or broadcast",
+        "The special visual effects added after filming scenes"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A soundtrack is the recorded music of a film."
+    },
+    {
+      "question": "Complete the sentence: 'I look forward to ___ my favorite band live in concert.'",
+      "options": [
+        "see",
+        "saw",
+        "have seen",
+        "seeing"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The phrasal verb 'look forward to' is followed by a gerund (-ing)."
+    },
+    {
+      "question": "Which musical instrument belongs to the string family?",
+      "options": [
+        "Violin",
+        "Trumpet",
+        "Flute",
+        "Drums"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The violin has strings and is played with a bow."
+    },
+    {
+      "question": "Choose the correct word: 'A ___ is a film that continues the story of an earlier successful movie.'",
+      "options": [
+        "trailer",
+        "sequel",
+        "premiere",
+        "review"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "A sequel continues the story of a previous film."
+    },
+    {
+      "question": "Which word describes an extremely popular and commercially successful film?",
+      "options": [
+        "Documentary",
+        "Disaster",
+        "Blockbuster",
+        "Boring play"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A blockbuster is a huge commercial success."
+    },
+    {
+      "question": "Complete the sentence: 'Neither Tom nor his friends ___ interested in opera music.'",
+      "options": [
+        "is",
+        "was",
+        "has been",
+        "are"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "With 'neither...nor', the verb agrees with the closer subject ('his friends' -> 'are')."
+    },
+    {
+      "question": "What does 'lyrics' mean?",
+      "options": [
+        "The words of a song",
+        "The rhythm of drums",
+        "The stage lighting",
+        "The musical notes"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Lyrics are the written words of a song."
+    }
+  ],
+  "4. Unit 1 Review & Reading Comprehension": [
+    {
+      "question": "Read the text and answer the question:\n'Emma spends most of her weekends volunteering at the local animal shelter. She feeds rescued dogs and takes them for walks. She believes that caring for animals makes people more responsible and compassionate.'\nWhy does Emma volunteer at the shelter?",
+      "options": [
+        "She is paid a large salary by the city council",
+        "She wants to care for animals and help them survive",
+        "She wants to sell rare animal species to visitors",
+        "She has no friends and nowhere else to go on weekends"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Emma volunteers out of compassion and care for animals."
+    },
+    {
+      "question": "Based on the same text, what character trait best describes Emma?",
+      "options": [
+        "Selfish and arrogant",
+        "Greedy and dishonest",
+        "Compassionate and caring",
+        "Lazy and impatient"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Emma's dedication to animal care shows compassion."
+    },
+    {
+      "question": "Choose the correct sentence summarizing the importance of hobbies:",
+      "options": [
+        "Hobbies prevent students from learning anything useful in life",
+        "Hobbies are only meant for elderly people with no daily tasks",
+        "Hobbies must always be expensive and require special licenses",
+        "Hobbies help people relax, develop new skills, and reduce stress"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Hobbies provide relaxation, skill growth, and stress relief."
+    },
+    {
+      "question": "Choose the correct passive voice sentence:",
+      "options": [
+        "Classical music is enjoyed by millions of people worldwide",
+        "Classical music enjoys by millions of people worldwide",
+        "Classical music is enjoying by millions of people worldwide",
+        "Classical music was enjoy by millions of people worldwide"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Present Simple Passive is formed by 'is/are + Past Participle' (is enjoyed)."
+    },
+    {
+      "question": "Which sentence contains a correctly used relative clause?",
+      "options": [
+        "The girl which won the painting competition is my best friend",
+        "The girl who won the painting competition is my best friend",
+        "The girl where won the painting competition is my best friend",
+        "The girl whose won the painting competition is my best friend"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "We use 'who' for people."
+    },
+    {
+      "question": "Complete the dialogue:\nA: Would you like to join our guitar club?\nB: ___",
+      "options": [
+        "No, I haven't seen your guitar yesterday",
+        "Yes, I was playing guitar five years ago",
+        "I'd love to! When do you meet?",
+        "I am not knowing how to speak English well"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A polite acceptance to an invitation."
+    },
+    {
+      "question": "Choose the correct connector: 'He was very tired; ___, he finished painting the portrait.'",
+      "options": [
+        "because",
+        "although",
+        "so that",
+        "however"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'However' shows contrast between two independent clauses."
+    },
+    {
+      "question": "Which question is grammatically correct?",
+      "options": [
+        "How long have you been interested in photography?",
+        "How long are you interested in photography yesterday?",
+        "How long do you interested in photography since last year?",
+        "How long did you interested in photography right now?"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Present Perfect Simple is used with 'How long have you...?'."
+    },
+    {
+      "question": "Identify the correct synonym of 'compassionate':",
+      "options": [
+        "Indifferent",
+        "Sympathetic",
+        "Cruel",
+        "Aggressive"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Sympathetic' means showing compassion and empathy."
+    },
+    {
+      "question": "Choose the correct word: 'The museum has a magnificent ___ of modern paintings.'",
+      "options": [
+        "instruction",
+        "connection",
+        "collection",
+        "pollution"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A museum holds an art collection."
+    },
+    {
+      "question": "Complete the sentence: 'If you practice the piano regularly, you ___ significant progress.'",
+      "options": [
+        "would make",
+        "made",
+        "had made",
+        "will make"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "First Conditional: If + Present Simple, will + base verb."
+    },
+    {
+      "question": "What is the main purpose of youth community clubs?",
+      "options": [
+        "Bringing teenagers together to develop talents and social skills",
+        "Charging high fees to prevent students from joining activities",
+        "Replacing formal school education with video game tournaments",
+        "Enforcing strict military discipline on all local teenagers"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Youth clubs foster talent, community, and social skills."
+    },
+    {
+      "question": "Choose the correct word order in the indirect question:",
+      "options": [
+        "Can you tell me where is located the cinema?",
+        "Can you tell me where the cinema is located?",
+        "Can you tell me where is the cinema located?",
+        "Can you tell me where does the cinema locate?"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Indirect questions use statement word order (Subject + Verb)."
+    },
+    {
+      "question": "Which sentence uses the correct preposition of time?",
+      "options": [
+        "The film festival starts in Monday in 6 o'clock",
+        "The film festival starts at Monday on 6 o'clock",
+        "The film festival starts on Monday at 6 o'clock",
+        "The film festival starts by Monday to 6 o'clock"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'On Monday' (days) and 'at 6 o'clock' (exact time)."
+    },
+    {
+      "question": "Choose the antonym of 'leisure':",
+      "options": [
+        "Rest",
+        "Vacation",
+        "Pastime",
+        "Labor / Work"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Labor' or 'work' is the opposite of 'leisure'."
+    }
+  ],
+  "5. Food Around the World": [
+    {
+      "question": "Which quantifier is used with uncountable nouns in negative sentences and questions?",
+      "options": [
+        "Much",
+        "Many",
+        "Few",
+        "Several"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Much' is used with uncountable nouns (e.g., much sugar, much water)."
+    },
+    {
+      "question": "Choose the correct quantifier: 'We need ___ apples to bake this traditional pie.'",
+      "options": [
+        "a little",
+        "a few",
+        "much",
+        "any of"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'A few' is used with countable plural nouns like 'apples'."
+    },
+    {
+      "question": "Which sentence correctly uses 'a little' with an uncountable noun?",
+      "options": [
+        "Add a little tomatoes to the fresh vegetable salad",
+        "Add a few olive oil to the fresh vegetable salad",
+        "Add a little olive oil to the fresh vegetable salad",
+        "Add many olive oil to the fresh vegetable salad"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'A little' is used with uncountable liquids like olive oil."
+    },
+    {
+      "question": "What is the staple food in most Asian countries?",
+      "options": [
+        "Potato",
+        "Corn",
+        "Rye",
+        "Rice"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Rice is the primary staple food across Asia."
+    },
+    {
+      "question": "Choose the correct culinary verb: 'Please ___ the onions into small pieces before frying.'",
+      "options": [
+        "chop",
+        "boil",
+        "bake",
+        "pour"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Chop' means to cut into pieces."
+    },
+    {
+      "question": "Which traditional Azerbaijani dish consists of seasoned minced meat wrapped in grape leaves?",
+      "options": [
+        "Piti",
+        "Dolma",
+        "Bozbash",
+        "Qutab"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Dolma is minced meat wrapped in grape or cabbage leaves."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "There are too much salt in this soup",
+        "There is too many salt in this soup",
+        "There is too much salt in this soup",
+        "There are too many salt in this soup"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Salt' is uncountable, so it takes 'is too much'."
+    },
+    {
+      "question": "Which nutrient is essential for building and repairing body tissues?",
+      "options": [
+        "Sugar",
+        "Fat",
+        "Preservative",
+        "Protein"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Proteins build muscle and repair body tissues."
+    },
+    {
+      "question": "Complete the sentence: 'Italian pizza is famous ___ its thin crust and melted cheese.'",
+      "options": [
+        "for",
+        "with",
+        "about",
+        "by"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The adjective 'famous' is followed by 'for'."
+    },
+    {
+      "question": "Choose the correct question about quantity: '___ cartons of milk did you buy at the supermarket?'",
+      "options": [
+        "How much",
+        "How many",
+        "How long",
+        "How often"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Cartons' is countable, so we use 'How many'."
+    },
+    {
+      "question": "Which cooking method involves cooking food inside an oven with dry heat?",
+      "options": [
+        "Boiling",
+        "Frying",
+        "Baking",
+        "Steaming"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Baking uses dry heat inside an oven (e.g., baking bread)."
+    },
+    {
+      "question": "Choose the synonym of 'delicious':",
+      "options": [
+        "Bitter",
+        "Salty",
+        "Spoiled",
+        "Tasty"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Tasty' means having a pleasant and delicious flavor."
+    },
+    {
+      "question": "Complete the sentence: 'Fast food contains a lot of ___ and unhealthy fats.'",
+      "options": [
+        "calories",
+        "vitamins",
+        "minerals",
+        "fibers"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Fast food is typically high in calories and unhealthy fats."
+    },
+    {
+      "question": "Which noun describes a list of ingredients and instructions for making a dish?",
+      "options": [
+        "Receipt",
+        "Recipe",
+        "Menu",
+        "Prescription"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "A recipe gives instructions for cooking a dish."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "She doesn't eat some spicy food because of her health",
+        "She eats not no spicy food because of her health",
+        "She doesn't eat any spicy food because of her health",
+        "She don't eat none spicy food because of her health"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Any' is used in negative statements."
+    }
+  ],
+  "6. Healthy Lifestyle & Daily Routine": [
+    {
+      "question": "Which modal verb is best used to give friendly advice for health?",
+      "options": [
+        "Mustn't",
+        "Can't",
+        "Have to not",
+        "Should"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Should' is used to offer friendly advice and recommendations."
+    },
+    {
+      "question": "Complete the sentence: 'You ___ wash your hands before eating to avoid harmful bacteria.'",
+      "options": [
+        "must",
+        "mustn't",
+        "shouldn't",
+        "needn't"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Must' expresses strong obligation and essential health practice."
+    },
+    {
+      "question": "Which habit is an essential part of a healthy lifestyle?",
+      "options": [
+        "Sleeping only four hours each night to study continuously",
+        "Drinking plenty of water and exercising regularly every day",
+        "Eating sugary snacks and drinking soda instead of proper meals",
+        "Sitting in front of a computer screen without any physical break"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Hydration and regular physical exercise are core health habits."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "You ought get at least eight hours of sleep every night",
+        "You ought to getting at least eight hours of sleep every night",
+        "You ought to get at least eight hours of sleep every night",
+        "You ought to got at least eight hours of sleep every night"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Ought to' is followed by a base verb."
+    },
+    {
+      "question": "What does the idiom 'an apple a day keeps the doctor away' mean?",
+      "options": [
+        "Doctors are allergic to apples and avoid visiting orchards",
+        "You should only eat apples and avoid all other food groups",
+        "Apples can replace all medical treatments and emergency surgeries",
+        "Eating nutritious food helps maintain good health and prevent illness"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The proverb emphasizes that eating fruit and healthy food prevents illness."
+    },
+    {
+      "question": "Choose the antonym of 'healthy':",
+      "options": [
+        "Harmful / Unhealthy",
+        "Beneficial",
+        "Nutritious",
+        "Wholesome"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Unhealthy' is the direct opposite of 'healthy'."
+    },
+    {
+      "question": "Complete the sentence: 'Regular physical exercise helps to ___ your immune system.'",
+      "options": [
+        "weaken",
+        "strengthen",
+        "damage",
+        "destroy"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Exercise strengthens the body's immune system."
+    },
+    {
+      "question": "Which modal verb expresses absence of obligation: 'Tomorrow is Sunday, so I ___ wake up early.'?",
+      "options": [
+        "mustn't",
+        "can't",
+        "don't have to",
+        "shouldn't to"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Don't have to' expresses lack of necessity."
+    },
+    {
+      "question": "What is the meaning of 'balanced diet'?",
+      "options": [
+        "Eating only one type of vegetable every day for breakfast and dinner",
+        "Consuming large amounts of fast food while avoiding any fruits",
+        "Weighing every plate on an electronic kitchen scale before eating",
+        "A diet that contains various foods providing all required nutrients"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A balanced diet provides all necessary nutrients in proper proportions."
+    },
+    {
+      "question": "Choose the correct reflexive pronoun: 'After the morning run, Mark made ___ a fruit smoothie.'",
+      "options": [
+        "himself",
+        "herself",
+        "itself",
+        "themselves"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Mark is singular masculine -> 'himself'."
+    },
+    {
+      "question": "Which sentence has correct grammar?",
+      "options": [
+        "You shouldn't to skip breakfast because it gives you morning energy",
+        "You shouldn't skip breakfast because it gives you morning energy",
+        "You should skipping breakfast because it gives you morning energy",
+        "You ought skip breakfast because it gives you morning energy"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Shouldn't' is followed by a base verb without 'to'."
+    },
+    {
+      "question": "What should you do if you have a high fever and a severe headache?",
+      "options": [
+        "Go to the sports stadium and play a intense football match",
+        "Drink icy cold water and walk outside in winter weather",
+        "Consult a qualified doctor and rest at home",
+        "Ignore all symptoms and continue doing heavy physical labor"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Rest and consulting a doctor are the correct medical responses."
+    },
+    {
+      "question": "Choose the correct word: 'Lack of sleep can lead to chronic ___ and poor concentration.'",
+      "options": [
+        "energy",
+        "fitness",
+        "enthusiasm",
+        "fatigue"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Fatigue' means extreme tiredness resulting from lack of sleep."
+    },
+    {
+      "question": "Complete the sentence: 'Children ___ spend more than two hours a day on smartphones.'",
+      "options": [
+        "shouldn't",
+        "must",
+        "ought",
+        "have to"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Shouldn't' is used for advising against excessive screen time."
+    },
+    {
+      "question": "Which activity helps improve mental wellness and reduce daily stress?",
+      "options": [
+        "Arguing with friends about minor misunderstandings",
+        "Meditation and walking in green parks",
+        "Drinking energy drinks before going to bed at midnight",
+        "Constantly checking social media notifications during sleep"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Meditation and walking in nature reduce mental stress."
+    }
+  ],
+  "7. At the Restaurant & Table Manners": [
+    {
+      "question": "How do you politely order food in a restaurant?",
+      "options": [
+        "Give me the grilled chicken right now without delay!",
+        "I am wanting grilled chicken immediately on my table!",
+        "Could I please have the grilled chicken and a green salad?",
+        "You must bring me the chicken because I am very hungry!"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Could I please have...' is the standard polite way to order."
+    },
+    {
+      "question": "What does the waiter usually say when greeting guests at a table?",
+      "options": [
+        "Why did you come here so late without calling us in advance?",
+        "You have to eat whatever we have cooked in the kitchen today!",
+        "Do you have enough money in your wallet to pay for your dinner?",
+        "Good evening! Are you ready to order, or do you need a few minutes?"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A standard polite greeting from a restaurant waiter."
+    },
+    {
+      "question": "Choose the correct expression for asking for the total bill:",
+      "options": [
+        "Could we have the bill, please?",
+        "How much money do you take from us?",
+        "Give us the price paper right now!",
+        "What is the cost of our eating today?"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Could we have the bill, please?' is the standard British English expression."
+    },
+    {
+      "question": "Which item is used to wipe your hands and mouth during a formal meal?",
+      "options": [
+        "Menu",
+        "Napkin",
+        "Cutlery",
+        "Tray"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "A napkin is used for wiping hands and mouth at table."
+    },
+    {
+      "question": "What is the general term for knives, forks, and spoons?",
+      "options": [
+        "Crockery",
+        "Beverages",
+        "Cutlery",
+        "Ingredients"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Cutlery' refers collectively to knives, forks, and spoons."
+    },
+    {
+      "question": "Choose the polite response: 'Would you like some more orange juice?'",
+      "options": [
+        "Yes, I want it right away from you",
+        "No, give me apple juice instead now",
+        "I am drinking orange juice yesterday",
+        "Yes, please. That would be lovely"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Yes, please. That would be lovely' is polite and natural."
+    },
+    {
+      "question": "Which course of a meal is served at the very beginning to stimulate appetite?",
+      "options": [
+        "Appetizer / Starter",
+        "Dessert",
+        "Main course",
+        "Side dish"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "An appetizer or starter is served before the main meal."
+    },
+    {
+      "question": "What is an essential rule of polite table etiquette?",
+      "options": [
+        "Placing your elbows firmly on the table while speaking loudly",
+        "Chewing with your mouth closed and not speaking with food in your mouth",
+        "Reaching across someone else's plate instead of asking them to pass an item",
+        "Using your mobile phone on loud speaker during a shared family dinner"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Chewing quietly with mouth closed is a fundamental table manner."
+    },
+    {
+      "question": "Complete the sentence: 'The waiter recommended the chef's daily ___.'",
+      "options": [
+        "especial",
+        "species",
+        "special",
+        "specific"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'The chef's daily special' is a featured dish."
+    },
+    {
+      "question": "Which word describes extra money given to a waiter for excellent service?",
+      "options": [
+        "Discount",
+        "Fine",
+        "Tax",
+        "Tip"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A tip is a gratuity given for good service."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "I'd like to book a table for four at seven o'clock tonight",
+        "I like booking a table for four at seven o'clock yesterday",
+        "I will want to book table for four on seven o'clock now",
+        "I am book a table for four with seven o'clock tonight"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'I'd like to book a table...' is polite and standard."
+    },
+    {
+      "question": "What does 'vegetarian dish' mean?",
+      "options": [
+        "A dish made entirely of roasted beef and lamb steaks",
+        "A dish prepared without any meat or fish ingredients",
+        "A dish cooked exclusively on open campfire outdoors",
+        "A dish served only at midnight during festive holidays"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Vegetarian food contains no meat or fish."
+    },
+    {
+      "question": "Complete the sentence: 'Could you please ___ the salt and black pepper?'",
+      "options": [
+        "throw",
+        "push",
+        "pass",
+        "drop"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "We say 'pass the salt' at the table."
+    },
+    {
+      "question": "Which word refers to sweet food eaten at the end of a meal?",
+      "options": [
+        "Desert",
+        "Starter",
+        "Snack",
+        "Dessert"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Dessert' (with double 's') is sweet food after a meal."
+    },
+    {
+      "question": "Choose the correct dialogue line:\nA: Is service included in the bill?\nB: ___",
+      "options": [
+        "Yes, a ten percent service charge is already included",
+        "No, you cannot eat any dessert after your main course",
+        "Yes, the waiter has cooked your soup in thirty minutes",
+        "No, our restaurant is closed on every single weekend"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "A standard polite answer regarding service charges."
+    }
+  ],
+  "8. Unit 2 Review & Reading Comprehension": [
+    {
+      "question": "Read the short text and answer the question:\n'The Mediterranean diet is world-famous for its health benefits. It includes large amounts of fresh vegetables, fruits, whole grains, beans, and olive oil. People living in Mediterranean regions have lower rates of heart disease because they avoid processed foods and consume healthy fats.'\nWhat is the main reason for lower heart disease in Mediterranean regions?",
+      "options": [
+        "They never exercise and sleep twelve hours every single day",
+        "They consume fresh vegetables, olive oil, and avoid processed foods",
+        "They only eat fast food imported from large foreign factories",
+        "They do not drink any clean water and avoid all kinds of fruit"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The text explicitly states they eat fresh foods and olive oil while avoiding processed foods."
+    },
+    {
+      "question": "Based on the text, what is a key component of the Mediterranean diet?",
+      "options": [
+        "Sugary fizzy drinks and candy",
+        "Processed canned meat exclusively",
+        "Olive oil and fresh vegetables",
+        "Deep-fried fast food items"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Olive oil and vegetables are core components."
+    },
+    {
+      "question": "Choose the correct passive form: 'Healthy meals ___ by the chef every morning.'",
+      "options": [
+        "is prepared",
+        "are preparing",
+        "prepared",
+        "are prepared"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Meals' is plural, so we use 'are prepared' in Present Simple Passive."
+    },
+    {
+      "question": "Complete the conditional sentence: 'If you eat too many sweets, you ___ dental problems.'",
+      "options": [
+        "will develop",
+        "developed",
+        "would develop",
+        "had developed"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "First Conditional: If + Present Simple, will + base verb."
+    },
+    {
+      "question": "Which sentence correctly expresses prohibition in dining halls?",
+      "options": [
+        "Students don't have to leave their dirty trays on the tables",
+        "Students mustn't leave their dirty trays on the dining tables",
+        "Students shouldn't to leave their dirty trays on the tables",
+        "Students ought not leave their dirty trays on the tables"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Mustn't' expresses strict prohibition."
+    },
+    {
+      "question": "Choose the correct question tag: 'You have already tried traditional Azerbaijani plov, ___?'",
+      "options": [
+        "didn't you",
+        "don't you",
+        "haven't you",
+        "aren't you"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Present Perfect positive statement takes 'haven't you?'."
+    },
+    {
+      "question": "Identify the correct synonym of 'nutritious':",
+      "options": [
+        "Poisonous and toxic",
+        "Tasteless and dry",
+        "Expensive and rare",
+        "Nourishing and wholesome"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Nourishing' is synonymous with 'nutritious'."
+    },
+    {
+      "question": "Complete the sentence: 'Neither sugar ___ artificial sweeteners are good in large quantities.'",
+      "options": [
+        "nor",
+        "or",
+        "and",
+        "with"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The correlative conjunction pair is 'neither...nor'."
+    },
+    {
+      "question": "Which sentence has correct word order?",
+      "options": [
+        "We eat rarely fast food during the school week",
+        "We rarely eat fast food during the school week",
+        "Rarely we eat fast food during the school week",
+        "We eat fast food rarely during the school week"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Frequency adverbs (rarely) precede the main verb."
+    },
+    {
+      "question": "Choose the correct reflexive pronoun: 'Children should learn how to cook simple meals for ___.'",
+      "options": [
+        "himself",
+        "herself",
+        "themselves",
+        "ourselves"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Children' is 3rd person plural -> 'themselves'."
+    },
+    {
+      "question": "What does 'culinary heritage' refer to?",
+      "options": [
+        "The price list of foreign restaurants located in capital cities",
+        "The modern machinery used inside large industrial bakeries",
+        "The chemical formulas used to preserve long-term canned foods",
+        "The traditional cooking practices and dishes of a country or culture"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Culinary heritage encompasses traditional cultural foods and practices."
+    },
+    {
+      "question": "Complete the sentence: 'She has been a strict vegetarian ___ three years.'",
+      "options": [
+        "for",
+        "since",
+        "during",
+        "while"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "We use 'for' with a duration of time ('three years')."
+    },
+    {
+      "question": "Which sentence contains a correctly formed compound adjective?",
+      "options": [
+        "Fresh-squeezed orange juice are full of natural vitamin C",
+        "Freshly-squeezed orange juice is full of natural vitamin C",
+        "Freshly-squeezing orange juice is full of natural vitamin C",
+        "Freshly-squeeze orange juice are full of natural vitamin C"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Freshly-squeezed' is a correct compound adjective."
+    },
+    {
+      "question": "Choose the antonym of 'raw':",
+      "options": [
+        "Fresh",
+        "Ripe",
+        "Cooked",
+        "Cold"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Cooked' is the opposite of 'raw'."
+    },
+    {
+      "question": "What is the main conclusion of health experts regarding diet?",
+      "options": [
+        "Eating fast food every day is beneficial for adolescent development",
+        "Drinking water should be avoided entirely during physical workouts",
+        "Skipping all daily meals is the safest way to maintain physical fitness",
+        "A balanced diet combined with regular exercise ensures long-term health"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Balanced nutrition and exercise are the foundation of good health."
+    }
+  ],
+  "9. Wonders of Nature & Wildlife": [
+    {
+      "question": "Which sentence uses the correct comparative degree of an irregular adjective?",
+      "options": [
+        "The weather in the mountains is better today than it was yesterday",
+        "The weather in the mountains is gooder today than it was yesterday",
+        "The weather in the mountains is more good today than it was yesterday",
+        "The weather in the mountains is as better as it was yesterday"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Good' -> 'better' (irregular comparative)."
+    },
+    {
+      "question": "What is the superlative form of the adjective 'dangerous'?",
+      "options": [
+        "The dangerousest",
+        "The most dangerous",
+        "The more dangerous",
+        "Most danger"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Long adjectives form superlative with 'the most' + adjective."
+    },
+    {
+      "question": "Which animal is native to the mountains of the Caucasus and symbolizes strength?",
+      "options": [
+        "The polar bear",
+        "The African lion",
+        "The Caucasian leopard",
+        "The kangaroo"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The Caucasian leopard is native to the Caucasus region."
+    },
+    {
+      "question": "Choose the correct sentence comparing two natural landmarks:",
+      "options": [
+        "Lake Baikal is more deeper than Lake Victoria",
+        "Lake Baikal is as deeper as Lake Victoria",
+        "Lake Baikal is most deep than Lake Victoria",
+        "Lake Baikal is much deeper than Lake Victoria"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "We can modify comparatives with 'much' ('much deeper than')."
+    },
+    {
+      "question": "Which noun refers to the natural environment where an animal or plant lives?",
+      "options": [
+        "Habitat",
+        "Climate",
+        "Landscape",
+        "Ecosystem"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "A habitat is the natural home or environment of an organism."
+    },
+    {
+      "question": "Complete the sentence: 'Goygol is one of the ___ lakes in Azerbaijan.'",
+      "options": [
+        "more picturesque",
+        "most picturesque",
+        "picturesquest",
+        "much picturesque"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'One of the' is followed by a superlative ('most picturesque')."
+    },
+    {
+      "question": "Which word describes an animal species that is at risk of dying out completely?",
+      "options": [
+        "Domestic",
+        "Dangerous",
+        "Endangered",
+        "Aggressive"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Endangered' means in danger of extinction."
+    },
+    {
+      "question": "Choose the correct preposition: 'National parks are established to protect wildlife ___ danger.'",
+      "options": [
+        "with",
+        "at",
+        "by",
+        "from"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "We say 'protect someone/something from danger'."
+    },
+    {
+      "question": "What is the largest mammal on Planet Earth?",
+      "options": [
+        "The Blue Whale",
+        "The African Elephant",
+        "The Giraffe",
+        "The White Rhinoceros"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The blue whale is the largest mammal on Earth."
+    },
+    {
+      "question": "Complete the sentence: 'As climate changes, some migratory birds fly ___ than before.'",
+      "options": [
+        "fartherer",
+        "further",
+        "more far",
+        "most far"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Far' -> 'further / farther' in comparative degree."
+    },
+    {
+      "question": "Which national park in Azerbaijan is famous for its unique mud volcanoes and ancient petroglyphs?",
+      "options": [
+        "Shirvan National Park",
+        "Hirkan National Park",
+        "Gobustan National Park",
+        "Shahdag National Park"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Gobustan is world-renowned for rock art and mud volcanoes."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Cheetahs run more fast than any other land animal",
+        "Cheetahs run as faster as any other land animal",
+        "Cheetahs run fastest than any other land animal",
+        "Cheetahs run much faster than any other land animal"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Faster than' is the comparative form of the adverb 'fast'."
+    },
+    {
+      "question": "What does 'biodiversity' mean?",
+      "options": [
+        "The variety of plant and animal life in a particular habitat or the world",
+        "The total amount of plastic waste dumped into the world's oceans",
+        "The chemical process of purifying drinking water in large cities",
+        "The study of ancient rock formations and volcanic eruptions"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Biodiversity refers to the variety of life forms on Earth."
+    },
+    {
+      "question": "Complete the sentence: 'The Caspian seal is an ___ species that needs protection.'",
+      "options": [
+        "artificial",
+        "endemic",
+        "invasive",
+        "unnatural"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The Caspian seal is endemic to the Caspian Sea."
+    },
+    {
+      "question": "Choose the antonym of 'wild':",
+      "options": [
+        "Fierce",
+        "Savage",
+        "Tame / Domesticated",
+        "Free"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Tame' or 'domesticated' is the opposite of 'wild'."
+    }
+  ],
+  "10. Environmental Protection & Ecology": [
+    {
+      "question": "Which phrase represents the '3 Rs' of environmental protection?",
+      "options": [
+        "Remove, Replace, Return",
+        "Read, Record, Review",
+        "Run, Rest, Recover",
+        "Reduce, Reuse, Recycle"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The environmental principle is 'Reduce, Reuse, Recycle'."
+    },
+    {
+      "question": "Complete the sentence: 'If we ___ plastic waste into rivers, marine animals will suffer.'",
+      "options": [
+        "throw",
+        "threw",
+        "will throw",
+        "had thrown"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "First Conditional: If-clause takes Present Simple ('throw')."
+    },
+    {
+      "question": "Which renewable energy source is generated from the natural power of moving air?",
+      "options": [
+        "Coal energy",
+        "Wind energy",
+        "Nuclear power",
+        "Natural gas"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Wind turbines generate electricity from moving air."
+    },
+    {
+      "question": "Choose the correct passive sentence: 'Millions of plastic bottles ___ every day worldwide.'",
+      "options": [
+        "is discarded",
+        "are discarding",
+        "are discarded",
+        "have discarded"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Present Simple Passive: 'are discarded'."
+    },
+    {
+      "question": "What is the greenhouse effect?",
+      "options": [
+        "The construction of large glass buildings for growing exotic tropical flowers",
+        "The sudden cooling of ocean currents during severe northern winter months",
+        "The complete disappearance of all clouds from the Earth's upper atmosphere",
+        "The trapping of the sun's warmth in a planet's lower atmosphere by greenhouse gases"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The greenhouse effect traps solar heat in the atmosphere."
+    },
+    {
+      "question": "Choose the correct verb: 'We must ___ energy by turning off lights when leaving a room.'",
+      "options": [
+        "conserve",
+        "waste",
+        "consume",
+        "pollute"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Conserve' means to protect from loss or waste."
+    },
+    {
+      "question": "Which gas is the primary contributor to global warming caused by human activities?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Helium",
+        "Hydrogen"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Carbon dioxide (CO2) from fossil fuels is the primary greenhouse gas."
+    },
+    {
+      "question": "Complete the sentence: 'Solar panels convert sunlight ___ clean electrical energy.'",
+      "options": [
+        "at",
+        "with",
+        "into",
+        "from"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The verb phrase is 'convert something into something'."
+    },
+    {
+      "question": "What does 'deforestation' mean?",
+      "options": [
+        "The planting of millions of young trees in urban public parks",
+        "The natural growth of thick green moss on wet stone surfaces",
+        "The seasonal shedding of yellow leaves by deciduous trees in autumn",
+        "The mass clearing or cutting down of forests by human activities"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Deforestation is the large-scale destruction of forests."
+    },
+    {
+      "question": "Choose the correct modal verb of obligation: 'Governments ___ enforce strict anti-pollution laws.'",
+      "options": [
+        "must",
+        "can't",
+        "mustn't",
+        "needn't"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Must' expresses strong necessity and obligation."
+    },
+    {
+      "question": "Which item takes hundreds of years to decompose in nature?",
+      "options": [
+        "An apple core",
+        "A plastic bag",
+        "A paper newspaper",
+        "A wooden stick"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Plastic takes up to hundreds of years to decompose."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Unless we will protect our water resources, future generations will face shortages",
+        "Unless we don't protect our water resources, future generations will face shortages",
+        "Unless we protect our water resources, future generations will face shortages",
+        "Unless we protected our water resources, future generations will face shortages"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Unless' means 'if not' and takes a positive Present Simple verb in First Conditional."
+    },
+    {
+      "question": "What is 'eco-friendly' product?",
+      "options": [
+        "A product manufactured using toxic and non-recyclable materials",
+        "An expensive electronic device that consumes huge amounts of electricity",
+        "A chemical pesticide sprayed over agricultural fields to kill insects",
+        "A product designed not to harm the natural environment"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Eco-friendly' means environmentally safe and non-damaging."
+    },
+    {
+      "question": "Complete the sentence: 'Electric vehicles help to reduce air ___ in crowded cities.'",
+      "options": [
+        "pollution",
+        "solution",
+        "protection",
+        "destruction"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Electric cars reduce vehicle emissions and air pollution."
+    },
+    {
+      "question": "Choose the synonym of 'preserve':",
+      "options": [
+        "Damage and spoil",
+        "Protect and maintain",
+        "Consume quickly",
+        "Throw away"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Preserve' means to keep safe and protect from decay."
+    }
+  ],
+  "11. Natural Disasters & Climate Change": [
+    {
+      "question": "Which natural disaster is caused by sudden seismic movements of tectonic plates?",
+      "options": [
+        "A tornado",
+        "A drought",
+        "An earthquake",
+        "A wildfire"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Earthquakes are caused by underground tectonic plate shifts."
+    },
+    {
+      "question": "Complete the sentence: 'While the rescue team ___ survivors, heavy rain started to fall.'",
+      "options": [
+        "is searching for",
+        "has searched for",
+        "will search for",
+        "was searching for"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Past Continuous ('was searching') describes an ongoing past action interrupted by another action."
+    },
+    {
+      "question": "Which disaster occurs when there is a prolonged period of abnormally low rainfall?",
+      "options": [
+        "Drought",
+        "Flood",
+        "Avalanche",
+        "Tsunami"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Drought is an extended period of dry weather and water shortage."
+    },
+    {
+      "question": "What is a tsunami?",
+      "options": [
+        "A violent spinning column of air extending from a thunderstorm to the ground",
+        "A series of enormous ocean waves caused by undersea earthquakes or volcanic eruptions",
+        "A sudden rapid slide of large amounts of snow and ice down a steep mountainside",
+        "A heavy tropical rain shower that lasts for only five minutes during summer"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Tsunamis are giant sea waves caused by underwater seismic events."
+    },
+    {
+      "question": "Choose the correct verb: 'Volcanic eruptions can ___ toxic ash and lava across vast areas.'",
+      "options": [
+        "freeze",
+        "evaporate",
+        "eject",
+        "purify"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Volcanoes eject lava, gases, and ash."
+    },
+    {
+      "question": "Complete the sentence: 'If a hurricane strikes the coast, emergency services ___ residents.'",
+      "options": [
+        "would evacuate",
+        "evacuated",
+        "had evacuated",
+        "will evacuate"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "First Conditional: If + Present Simple, will + base verb."
+    },
+    {
+      "question": "Which instrument is used to detect and measure the magnitude of earthquakes?",
+      "options": [
+        "Seismograph",
+        "Thermometer",
+        "Barometer",
+        "Anemometer"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "A seismograph measures seismic earthquake waves."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "The flood was destroying several bridges before water levels subsides",
+        "The flood destroyed several bridges before the water levels subsided",
+        "The flood has destroyed several bridges before water levels had subsided",
+        "The flood will destroy several bridges before water levels subsided"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Past Simple narrates past completed events in chronological sequence."
+    },
+    {
+      "question": "What is an avalanche?",
+      "options": [
+        "A dry dust storm blowing across sandy desert plains in summer",
+        "A large river overflowing its banks after continuous heavy rain",
+        "A mass of snow, ice, and rocks falling rapidly down a mountainside",
+        "A deep crack appearing in dry agricultural soil during severe heat"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "An avalanche is a rapid downhill slide of snow and ice."
+    },
+    {
+      "question": "Choose the correct adjective: 'The storm caused ___ damage to the coastal infrastructure.'",
+      "options": [
+        "slight",
+        "peaceful",
+        "harmless",
+        "severe"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Severe' means intense, harsh, and serious."
+    },
+    {
+      "question": "Complete the sentence: 'Rising sea levels are caused by the melting of polar ___.'",
+      "options": [
+        "ice caps",
+        "rainforests",
+        "sand dunes",
+        "mud volcanoes"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Melting polar ice caps contribute directly to rising ocean levels."
+    },
+    {
+      "question": "Which emergency measure is taken when a dangerous hurricane approaches?",
+      "options": [
+        "Going to the seashore to watch the stormy ocean waves up close",
+        "Evacuating coastal areas and seeking shelter in reinforced buildings",
+        "Opening all windows and doors of coastal houses to let wind pass",
+        "Organizing outdoor sports tournaments in open municipal stadiums"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Evacuation to safe shelters is the primary life-saving measure."
+    },
+    {
+      "question": "Choose the synonym of 'catastrophe':",
+      "options": [
+        "Celebration",
+        "Achievement",
+        "Disaster",
+        "Discovery"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Catastrophe' is synonymous with 'disaster'."
+    },
+    {
+      "question": "What does 'magnitude' mean in the context of earthquakes?",
+      "options": [
+        "The temperature of the rocks located deep inside the Earth",
+        "The duration of daylight recorded on the day of the tremors",
+        "The number of rescue helicopters participating in relief operations",
+        "The measurement of the energy released by an earthquake"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Magnitude measures the energy scale of an earthquake."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Many international aid organizations provided humanitarian relief to the victims",
+        "Many international aid organizations was provided relief to the victims",
+        "Many international aid organizations has provide relief to the victims",
+        "Many international aid organizations is providing relief to the victims yesterday"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Correct Past Simple active sentence."
+    }
+  ],
+  "12. Unit 3 Review & Reading Comprehension": [
+    {
+      "question": "Read the text and answer the question:\n'The Amazon Rainforest, often called the lungs of the planet, produces a significant amount of the world's oxygen and houses over ten percent of all known wildlife species. However, illegal logging and agricultural expansion threaten its existence, leading to loss of biodiversity and accelerated global warming.'\nWhy is the Amazon Rainforest called the 'lungs of the planet'?",
+      "options": [
+        "It has the shape of human lungs when viewed from space satellites",
+        "It produces a large percentage of the Earth's oxygen and absorbs carbon dioxide",
+        "It is the only forest in the world where no wild animals or birds live",
+        "It was discovered by medical doctors exploring South America in the 19th century"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Forests produce oxygen and absorb carbon dioxide through photosynthesis."
+    },
+    {
+      "question": "Based on the text, what are the primary threats to the Amazon Rainforest?",
+      "options": [
+        "Heavy snowfall and freezing winter temperatures",
+        "Lack of sunlight and dry desert dust storms",
+        "Illegal logging and agricultural expansion",
+        "Overpopulation of wild predatory mammals"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Logging and agricultural clearing are the main threats identified in the text."
+    },
+    {
+      "question": "Choose the correct passive sentence: 'Rare wildlife species ___ by international environmental laws.'",
+      "options": [
+        "is protected",
+        "are protecting",
+        "have protected",
+        "are protected"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Species' (plural in context) takes 'are protected' in Present Simple Passive."
+    },
+    {
+      "question": "Complete the sentence: 'If humanity ___ to invest in green energy, carbon emissions will drop.'",
+      "options": [
+        "continues",
+        "continued",
+        "will continue",
+        "had continued"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "First Conditional if-clause takes Present Simple."
+    },
+    {
+      "question": "Which sentence correctly uses 'neither...nor'?",
+      "options": [
+        "Neither plastic bags or disposable cups are environmentally friendly",
+        "Neither plastic bags nor disposable cups are environmentally friendly",
+        "Neither plastic bags and disposable cups is environmentally friendly",
+        "Neither plastic bags nor disposable cups is environmentally friendly"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "With plural nouns joined by 'neither...nor', the verb is plural ('are')."
+    },
+    {
+      "question": "Choose the correct question tag: 'We must protect our planet's endangered wildlife, ___?'",
+      "options": [
+        "don't we",
+        "haven't we",
+        "mustn't we",
+        "shouldn't we"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Modal verb 'must' in positive statement forms tag 'mustn't we?'."
+    },
+    {
+      "question": "Identify the correct synonym of 'threaten':",
+      "options": [
+        "Protect / Guard",
+        "Support / Assist",
+        "Praise / Admire",
+        "Endanger / Menace"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Endanger' is synonymous with 'threaten'."
+    },
+    {
+      "question": "Complete the sentence: 'The ___ of polar ice caps is a clear sign of climate warming.'",
+      "options": [
+        "melting",
+        "freezing",
+        "polluting",
+        "planting"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The melting of ice caps indicates climate warming."
+    },
+    {
+      "question": "Which sentence has correct comparative structure?",
+      "options": [
+        "Renewable energy sources are more clean and sustainable than fossil fuels",
+        "Renewable energy sources are cleaner and more sustainable than fossil fuels",
+        "Renewable energy sources are cleaner and as sustainable as fossil fuels",
+        "Renewable energy sources are cleanest and most sustainable than fossil fuels"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Cleaner and more sustainable than' is grammatically correct."
+    },
+    {
+      "question": "Choose the correct word: 'Governments should encourage citizens to use public ___ instead of cars.'",
+      "options": [
+        "transfer",
+        "translate",
+        "transport",
+        "transaction"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Public transport' refers to buses, trains, metros."
+    },
+    {
+      "question": "What does 'carbon footprint' mean?",
+      "options": [
+        "The physical track left by carbon boots on wet volcanic soil",
+        "The weight of coal stored in commercial industrial warehouses",
+        "The chemical analysis of diamond gemstones found in mines",
+        "The total amount of greenhouse gases generated by our actions and lifestyle"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A carbon footprint measures individual or collective greenhouse gas output."
+    },
+    {
+      "question": "Complete the sentence: 'Scientists have warned that sea levels ___ by several centimeters.'",
+      "options": [
+        "have risen",
+        "has risen",
+        "is rising",
+        "was rose"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Levels' (plural) takes 'have risen' in Present Perfect."
+    },
+    {
+      "question": "Choose the correct preposition: 'Trees absorb carbon dioxide and provide us ___ fresh oxygen.'",
+      "options": [
+        "for",
+        "with",
+        "about",
+        "at"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The structure is 'provide someone with something'."
+    },
+    {
+      "question": "Which sentence shows a future prediction based on scientific evidence?",
+      "options": [
+        "Global temperatures was rising unless global emissions were reduced",
+        "Global temperatures rise unless global emissions will be reduced",
+        "Global temperatures are going to rise unless global emissions are reduced",
+        "Global temperatures has risen unless global emissions are reduced"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Be going to' expresses prediction based on current evidence."
+    },
+    {
+      "question": "What is the ultimate goal of environmental conservation?",
+      "options": [
+        "Stopping all technological and industrial development across the globe",
+        "Forcing all human populations to live exclusively in rural farming villages",
+        "Replacing all natural national parks with large commercial shopping centers",
+        "Preserving Earth's natural resources and ecosystems for future generations"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Conservation preserves nature and resources for future generations."
+    }
+  ],
+  "13. Manners, Etiquette & Social Rules": [
+    {
+      "question": "Which modal verb expresses strict prohibition in school rules?",
+      "options": [
+        "Mustn't",
+        "Don't have to",
+        "Needn't",
+        "Should"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Mustn't' expresses strict prohibition (it is forbidden)."
+    },
+    {
+      "question": "How do you politely interrupt someone in a formal conversation?",
+      "options": [
+        "Stop talking right now because I want to speak!",
+        "Excuse me, may I ask a quick question?",
+        "You are speaking too much, be quiet immediately!",
+        "I am not interested in what you are saying now!"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Excuse me, may I ask a quick question?' is the standard polite interruption."
+    },
+    {
+      "question": "Choose the correct sentence regarding public transport etiquette:",
+      "options": [
+        "Passengers must shout loudly on mobile phones while on the bus",
+        "Passengers ought to place their muddy feet on empty seats",
+        "Passengers should offer their seats to elderly people and pregnant women",
+        "Passengers can ignore anyone who needs assistance on the train"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Offering seats to elderly passengers is standard social etiquette."
+    },
+    {
+      "question": "Complete the sentence: 'You ___ speak loudly in the library; it is against the rules.'",
+      "options": [
+        "needn't",
+        "don't have to",
+        "should to",
+        "mustn't"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Library silence is a strict rule -> 'mustn't'."
+    },
+    {
+      "question": "What does 'punctuality' mean?",
+      "options": [
+        "The habit of arriving or doing things exactly at the agreed time",
+        "The habit of being late to every appointment and school class",
+        "The ability to speak five foreign languages without any accent",
+        "The skill of cooking traditional dishes for large social banquets"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Punctuality means being on time."
+    },
+    {
+      "question": "Choose the correct polite response: 'Thank you very much for your help!'",
+      "options": [
+        "Yes, I helped you yesterday!",
+        "You're very welcome!",
+        "No, you must pay for my help!",
+        "I am not helping you again!"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'You're very welcome!' is the standard response to thanks."
+    },
+    {
+      "question": "Which sentence uses the correct modal verb of permission?",
+      "options": [
+        "Must I to borrow your English dictionary for a moment?",
+        "Can I borrowing your English dictionary for a moment?",
+        "May I borrow your English dictionary for a moment?",
+        "Should I to borrow your English dictionary for a moment?"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'May I + base verb' asks for polite permission."
+    },
+    {
+      "question": "What is considered good digital etiquette (netiquette)?",
+      "options": [
+        "Sharing other people's private personal information without consent",
+        "Typing all emails in capital letters to appear aggressive",
+        "Sending spam messages repeatedly to all contacts in your address book",
+        "Writing respectful messages and not posting harmful comments online"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Respectful online communication is the core of netiquette."
+    },
+    {
+      "question": "Complete the sentence: 'It is considered impolite to ___ at people in public.'",
+      "options": [
+        "stare",
+        "smile",
+        "greet",
+        "listen"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Staring at strangers is considered rude."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "You mustn't to wear a uniform on casual Fridays at our school",
+        "You don't have to wear a uniform on casual Fridays at our school",
+        "You haven't to wear a uniform on casual Fridays at our school",
+        "You don't need wear a uniform on casual Fridays at our school"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Don't have to' expresses lack of obligation."
+    },
+    {
+      "question": "What should you do when you accidentally bump into someone on the street?",
+      "options": [
+        "Blame the other person loudly for walking too slowly",
+        "Run away as fast as possible without saying anything",
+        "Apologize immediately by saying 'I'm so sorry!'",
+        "Demand an explanation for why they were on the pavement"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Apologizing with 'I'm so sorry!' is proper courtesy."
+    },
+    {
+      "question": "Choose the correct word: 'Good manners help people to build positive ___ with others.'",
+      "options": [
+        "arguments",
+        "conflicts",
+        "misunderstandings",
+        "relationships"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Manners foster positive social relationships."
+    },
+    {
+      "question": "Complete the sentence: 'You ___ knock on the door before entering the teacher's office.'",
+      "options": [
+        "should",
+        "mustn't",
+        "don't have to",
+        "can't"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Knocking before entering is good manners ('should')."
+    },
+    {
+      "question": "Which word is an antonym of 'courteous'?",
+      "options": [
+        "Polite",
+        "Rude / Impolite",
+        "Well-mannered",
+        "Respectful"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Rude' is the opposite of 'courteous'."
+    },
+    {
+      "question": "Choose the correct sentence in reported speech:",
+      "options": [
+        "The teacher told to us keep quiet during the test",
+        "The teacher said us to keep quiet during the test",
+        "The teacher told us to keep quiet during the test",
+        "The teacher told us keeping quiet during the test"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The structure is 'tell someone to do something'."
+    }
+  ],
+  "14. Family Values & Responsibilities": [
+    {
+      "question": "Which sentence correctly uses the Present Perfect with 'already'?",
+      "options": [
+        "I have finished already all my household chores yesterday",
+        "I already finish all my household chores two days ago",
+        "I am already finishing all my household chores yesterday",
+        "I have already finished all my household chores for today"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Already' typically comes between have/has and the past participle."
+    },
+    {
+      "question": "Complete the sentence: 'We have lived in this cozy family house ___ ten years.'",
+      "options": [
+        "for",
+        "since",
+        "during",
+        "while"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'For' is used with a period of time ('ten years')."
+    },
+    {
+      "question": "Which household chore involves cleaning plates, glasses, and cutlery after a meal?",
+      "options": [
+        "Mowing the lawn",
+        "Washing the dishes",
+        "Watering the plants",
+        "Dusting the shelves"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Washing dishes cleans tableware after dining."
+    },
+    {
+      "question": "Choose the correct sentence with 'since':",
+      "options": [
+        "My parents have known each other for they were university students",
+        "My parents know each other since they was university students",
+        "My parents have known each other since they were university students",
+        "My parents knew each other since ten years in university"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Since' is used with a starting point in time (a past time clause)."
+    },
+    {
+      "question": "What does the expression 'generation gap' refer to?",
+      "options": [
+        "The physical distance between family homes in different countries",
+        "The amount of money inherited by children from their grandparents",
+        "The age difference between two twin brothers in a large family",
+        "Differences in opinions and values between younger and older generations"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A generation gap refers to cultural and ideological differences between age groups."
+    },
+    {
+      "question": "Choose the correct reflexive pronoun: 'My little sister can get dressed by ___ now.'",
+      "options": [
+        "herself",
+        "himself",
+        "itself",
+        "themselves"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Sister' is feminine singular -> 'herself' ('by herself' = independently)."
+    },
+    {
+      "question": "Complete the sentence: 'Family members should always ___ each other during difficult times.'",
+      "options": [
+        "ignore",
+        "support",
+        "blame",
+        "deceive"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Mutual support is a core family value."
+    },
+    {
+      "question": "Which question is in the correct Present Perfect form?",
+      "options": [
+        "Did you ever helped your grandparents with their garden work?",
+        "Have you ever help your grandparents with their garden work?",
+        "Have you ever helped your grandparents with their garden work?",
+        "Do you ever helped your grandparents with their garden work?"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Have you ever + Past Participle' (helped)."
+    },
+    {
+      "question": "What is an 'extended family'?",
+      "options": [
+        "A family consisting solely of one parent and one young child living alone",
+        "A group of close school friends living together in a student dormitory",
+        "A legal contract signed between business partners in an enterprise",
+        "A family group that includes parents, children, grandparents, aunts, and uncles"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "An extended family includes multiple generations and relatives."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "He has not done his homework yet",
+        "He has already not done his homework",
+        "He does not done his homework yet",
+        "He did not has done his homework yet"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Yet' is placed at the end of negative Present Perfect sentences."
+    },
+    {
+      "question": "Complete the sentence: 'Doing chores together teaches teenagers personal ___.'",
+      "options": [
+        "irresponsibility",
+        "responsibility",
+        "indifference",
+        "selfishness"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Chores teach accountability and responsibility."
+    },
+    {
+      "question": "Which idiom means having a strong similarity to an older family member in character?",
+      "options": [
+        "Look down on",
+        "Give up",
+        "Take after",
+        "Turn down"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Take after' means to resemble an older relative in appearance or character."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Both my mother and my father works as medical professionals",
+        "Both my mother or my father is working as medical professionals",
+        "Both my mother with my father works as medical professionals",
+        "Both my mother and my father work as medical professionals"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Both X and Y' takes a plural verb ('work')."
+    },
+    {
+      "question": "What does 'mutual respect' mean in a family setting?",
+      "options": [
+        "Listening to and valuing each other's feelings, opinions, and boundaries",
+        "Demanding complete silence from younger children at all times of day",
+        "Allowing only one family member to make every single household decision",
+        "Refusing to communicate with family members during weekly shared dinners"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Mutual respect involves valuing each other's opinions and rights."
+    },
+    {
+      "question": "Choose the synonym of 'cherish':",
+      "options": [
+        "Neglect / Ignore",
+        "Treasure / Hold dear",
+        "Destroy / Ruin",
+        "Criticize / Blame"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Cherish' means to protect and love dearly."
+    }
+  ],
+  "15. School Life & Future Ambitions": [
+    {
+      "question": "Which profession designs buildings, bridges, and urban architectural structures?",
+      "options": [
+        "Accountant",
+        "Journalist",
+        "Architect",
+        "Pharmacist"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "An architect designs buildings and structural environments."
+    },
+    {
+      "question": "Choose the correct sentence expressing a future ambition:",
+      "options": [
+        "I hope studying computer science at university after graduating from school",
+        "I hope study computer science at university after graduating from school",
+        "I am hope to study computer science at university after graduating",
+        "I hope to study computer science at university after graduating from school"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The verb 'hope' is followed by a full infinitive ('to study')."
+    },
+    {
+      "question": "Which school subject teaches historical events, revolutions, and ancient civilizations?",
+      "options": [
+        "History",
+        "Geography",
+        "Chemistry",
+        "Physical Education"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "History explores past human events and civilizations."
+    },
+    {
+      "question": "Complete the sentence: 'She is studying hard because she wants to become a ___ surgeon.'",
+      "options": [
+        "qualification",
+        "qualified",
+        "qualify",
+        "qualifyingly"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Qualified' is the adjective modifying 'surgeon'."
+    },
+    {
+      "question": "Choose the correct modal verb of ability in the future:",
+      "options": [
+        "After completing the course, you will can speak fluent English",
+        "After completing the course, you can to speak fluent English",
+        "After completing the course, you will be able to speak fluent English",
+        "After completing the course, you will could speak fluent English"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Future ability is expressed with 'will be able to'."
+    },
+    {
+      "question": "What is an 'extracurricular activity' in a school?",
+      "options": [
+        "A mandatory written examination administered at the end of each academic term",
+        "A punishment given to students who fail to submit homework on time",
+        "A textbook that contains only mathematical formulas and scientific diagrams",
+        "An activity pursued in addition to the normal course of study, like sports or drama"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Extracurricular activities take place outside the standard curriculum."
+    },
+    {
+      "question": "Choose the correct preposition: 'He is very good ___ solving complex mathematical equations.'",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "for"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The phrase is 'good at doing something'."
+    },
+    {
+      "question": "Complete the sentence: 'A ___ investigates news stories and writes articles for media outlets.'",
+      "options": [
+        "mechanic",
+        "journalist",
+        "carpenter",
+        "gardener"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "A journalist investigates and reports news."
+    },
+    {
+      "question": "Which sentence uses the correct Second Conditional for unreal ambitions?",
+      "options": [
+        "If I have enough money, I would establish a charitable educational fund",
+        "If I had enough money, I will establish a charitable educational fund",
+        "If I had enough money, I would establish a charitable educational fund",
+        "If I will have enough money, I establish a charitable educational fund"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Second Conditional: If + Past Simple, would + base verb."
+    },
+    {
+      "question": "What does a career counselor do?",
+      "options": [
+        "Teaches physical education classes and coaches the school basketball team",
+        "Inspects school cafeteria food quality and monitors dining hygiene",
+        "Repairs electrical wiring and laboratory equipment in school classrooms",
+        "Helps students understand their strengths and choose suitable career paths"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Career counselors advise on future education and professions."
+    },
+    {
+      "question": "Choose the synonym of 'ambition':",
+      "options": [
+        "Aspiration / Goal",
+        "Failure / Defeat",
+        "Hesitation / Doubt",
+        "Relaxation / Rest"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Aspiration' and 'goal' are synonyms of 'ambition'."
+    },
+    {
+      "question": "Complete the sentence: 'To become a successful scientist, one must be ___ and persistent.'",
+      "options": [
+        "careless",
+        "curious",
+        "indifferent",
+        "lazy"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Curiosity and persistence are essential scientific traits."
+    },
+    {
+      "question": "Which sentence has correct word order?",
+      "options": [
+        "I have regretted never choosing this challenging career path",
+        "Never I have regretted choosing this challenging career path",
+        "I have never regretted choosing this challenging career path",
+        "I have regretted choosing never this challenging career path"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Adverb 'never' comes between auxiliary 'have' and participle 'regretted'."
+    },
+    {
+      "question": "What does 'higher education' refer to?",
+      "options": [
+        "Primary school education designed for children aged six to ten years old",
+        "Kindergarten activities focusing on basic drawing and singing games",
+        "Informal sports training organized in local neighborhood parks",
+        "Education provided by universities and specialized colleges after secondary school"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Higher education refers to university-level academic study."
+    },
+    {
+      "question": "Choose the correct word: 'Hard work and determination are keys to academic ___.'",
+      "options": [
+        "success",
+        "successful",
+        "succeed",
+        "successfully"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Success' is the noun needed after the preposition 'to'."
+    }
+  ],
+  "16. Unit 4 Review & Reading Comprehension": [
+    {
+      "question": "Read the text and answer the question:\n'Malala Yousafzai is a young Pakistani activist for female education and the youngest Nobel Prize laureate in history. Despite facing severe danger, she continued advocating for the right of every girl to receive a free and quality education. Her bravery inspired millions of people worldwide to support global education initiatives.'\nWhat is Malala Yousafzai's primary mission?",
+      "options": [
+        "Building large industrial factories in developing countries",
+        "Advocating for the right of every girl to receive quality education",
+        "Training professional athletes for the Olympic Games",
+        "Designing video games for secondary school classrooms"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Malala advocates for global female education rights."
+    },
+    {
+      "question": "Based on the text, what honor did Malala receive for her activism?",
+      "options": [
+        "An Olympic gold medal",
+        "An Academy Award for acting",
+        "The Nobel Peace Prize",
+        "A national architectural prize"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "She became the youngest Nobel Prize laureate."
+    },
+    {
+      "question": "Choose the correct relative pronoun: 'The university ___ she studied is world-famous.'",
+      "options": [
+        "which",
+        "who",
+        "whose",
+        "where"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Where' refers to a place in relative clauses."
+    },
+    {
+      "question": "Complete the sentence: 'If you want to achieve your career goals, you ___ work diligently.'",
+      "options": [
+        "must",
+        "mustn't",
+        "can't",
+        "needn't"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Must' expresses essential necessity."
+    },
+    {
+      "question": "Which sentence is in the Passive Voice?",
+      "options": [
+        "The principal opened the new school laboratory yesterday morning",
+        "The new school laboratory was opened by the principal yesterday",
+        "The principal was opening the new school laboratory yesterday",
+        "The principal has opened the new school laboratory yesterday"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Was opened by...' is Past Simple Passive."
+    },
+    {
+      "question": "Choose the correct question tag: 'Your brother has decided to study medicine, ___?'",
+      "options": [
+        "didn't he",
+        "doesn't he",
+        "hasn't he",
+        "isn't he"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Present Perfect positive statement forms tag 'hasn't he?'."
+    },
+    {
+      "question": "Identify the synonym of 'courageous':",
+      "options": [
+        "Cowardly / Timid",
+        "Careless / Clumsy",
+        "Weak / Fragile",
+        "Brave / Fearless"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Brave' is synonymous with 'courageous'."
+    },
+    {
+      "question": "Complete the sentence: 'Neither poverty ___ discrimination should stop children from learning.'",
+      "options": [
+        "nor",
+        "or",
+        "and",
+        "with"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The correlative pair is 'neither...nor'."
+    },
+    {
+      "question": "Which sentence correctly uses the structure 'used to' for past habits?",
+      "options": [
+        "When I was younger, I used to playing the piano every afternoon",
+        "When I was younger, I used to play the piano every afternoon",
+        "When I was younger, I am used to play the piano every afternoon",
+        "When I was younger, I use to played the piano every afternoon"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Used to + base verb' describes past habitual actions."
+    },
+    {
+      "question": "Choose the correct compound noun: 'We bought new equipment for our school ___.'",
+      "options": [
+        "laboratoring",
+        "laborative",
+        "laboratory",
+        "laboratoriness"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A school 'laboratory' is a science facility."
+    },
+    {
+      "question": "What does 'lifelong learning' mean?",
+      "options": [
+        "Attending school for twenty-four hours a day without any sleep or rest",
+        "Memorizing a single textbook and never reading any other books again",
+        "Taking examinations only during the first five years of childhood",
+        "The ongoing, voluntary pursuit of knowledge throughout an individual's life"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Lifelong learning is continuous self-improvement and education."
+    },
+    {
+      "question": "Complete the sentence: 'She has been a member of the school debate club ___ last year.'",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "while"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Since' is used with a specific starting point in time ('since last year')."
+    },
+    {
+      "question": "Which sentence shows correct agreement with 'either...or'?",
+      "options": [
+        "Either the teacher or the students is going to present the project",
+        "Either the teacher or the students are going to present the project",
+        "Either the teacher or the students was going to present the project",
+        "Either the teacher or the students has going to present the project"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The verb agrees with the closer subject ('students' -> 'are')."
+    },
+    {
+      "question": "Choose the antonym of 'mandatory':",
+      "options": [
+        "Compulsory",
+        "Required",
+        "Optional / Voluntary",
+        "Essential"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Optional' is the opposite of 'mandatory'."
+    },
+    {
+      "question": "What is the most effective way to prepare for future career success?",
+      "options": [
+        "Avoiding all school assignments and relying solely on luck in life",
+        "Refusing to cooperate with teachers and classmates in group projects",
+        "Sleeping through morning classes and skipping university entrance exams",
+        "Developing strong academic knowledge, digital skills, and ethical values"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Knowledge, digital competency, and ethics lead to career success."
+    }
+  ],
+  "17. Cities, Towns & Village Life": [
+    {
+      "question": "Which adjective describes a peaceful, quiet, and beautiful rural landscape?",
+      "options": [
+        "Picturesque / Scenic",
+        "Noisy / Crowded",
+        "Industrial / Polluted",
+        "Chaotic / Rushed"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Picturesque' and 'scenic' describe charming and beautiful landscapes."
+    },
+    {
+      "question": "Choose the correct relative clause: 'Baku is a vibrant city ___ historical charm meets modern architecture.'",
+      "options": [
+        "which",
+        "where",
+        "who",
+        "whose"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Where' refers to a place in a relative clause."
+    },
+    {
+      "question": "What is an advantage of living in a large modern city?",
+      "options": [
+        "Complete absence of traffic jams and total silence during rush hour",
+        "Zero air pollution and crystal clean mountain spring water everywhere",
+        "Access to advanced educational institutions, cultural events, and public transport",
+        "Having very few neighbors and living in complete isolation from society"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Cities provide infrastructure, education, and cultural amenities."
+    },
+    {
+      "question": "Complete the sentence: 'Village life is generally ___ and less stressful than city life.'",
+      "options": [
+        "more calm",
+        "calmest",
+        "most calm",
+        "calmer"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Calm' -> 'calmer' in comparative degree."
+    },
+    {
+      "question": "Which noun refers to the practical systems like roads, bridges, and utilities of a city?",
+      "options": [
+        "Infrastructure",
+        "Population",
+        "Agriculture",
+        "Tradition"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Infrastructure' refers to physical urban systems and facilities."
+    },
+    {
+      "question": "Choose the correct sentence comparing city and village life:",
+      "options": [
+        "Living in a village is more healthy than living near heavy industrial zones",
+        "Living in a village is healthier than living near heavy industrial zones",
+        "Living in a village is as healthier as living near industrial zones",
+        "Living in a village is healthiest than living near industrial zones"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Healthy' -> 'healthier than'."
+    },
+    {
+      "question": "What is an advantage of rural life?",
+      "options": [
+        "Having a underground metro station located on every street corner",
+        "Access to giant multinational corporate headquarters in walking distance",
+        "Fresh organic food, clean air, and close connection with nature",
+        "Having 24-hour illuminated skyscrapers outside every bedroom window"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Clean air and nature are main advantages of rural life."
+    },
+    {
+      "question": "Complete the sentence: 'The old town of Baku is surrounded ___ ancient stone walls.'",
+      "options": [
+        "with",
+        "at",
+        "for",
+        "by"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Passive voice agent structure: 'surrounded by ancient stone walls'."
+    },
+    {
+      "question": "Which word describes a very tall, multi-story modern building in a metropolis?",
+      "options": [
+        "Skyscraper",
+        "Cottage",
+        "Barn",
+        "Hut"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "A skyscraper is a very tall continuous building."
+    },
+    {
+      "question": "Choose the correct relative pronoun: 'The architect ___ designed the Heydar Aliyev Center is Zaha Hadid.'",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "We use 'who' for people in relative clauses."
+    },
+    {
+      "question": "What is 'urbanization'?",
+      "options": [
+        "The complete demolition of all cities and return to nomadic living",
+        "The planting of pine trees along highway borders in mountain villages",
+        "The process of population shift from rural areas to cities and towns",
+        "The construction of wooden fishing boats in coastal maritime villages"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Urbanization is the growth and expansion of urban populations."
+    },
+    {
+      "question": "Complete the sentence: 'Historical monuments in the city are visited by thousands of ___.'",
+      "options": [
+        "pedestrians",
+        "commuters",
+        "residents",
+        "tourists"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Tourists visit historical landmarks."
+    },
+    {
+      "question": "Choose the correct preposition: 'He lives ___ a small quiet village near the mountains.'",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "We say 'in a village' / 'in a city'."
+    },
+    {
+      "question": "Which word is an antonym of 'ancient'?",
+      "options": [
+        "Historic",
+        "Modern / Contemporary",
+        "Antique",
+        "Old-fashioned"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Modern' is the opposite of 'ancient'."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Public transport in the capital is becoming more clean and efficienter every year",
+        "Public transport in the capital are become cleaner and more efficient every year",
+        "Public transport in the capital is becoming cleaner and more efficient every year",
+        "Public transport in the capital become cleaner and as efficient as every year"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Is becoming cleaner and more efficient' is grammatically correct."
+    }
+  ],
+  "18. My Homeland — Azerbaijan": [
+    {
+      "question": "Which city is known as the cultural capital of Azerbaijan and the cradle of national music?",
+      "options": [
+        "Sumgayit",
+        "Mingachevir",
+        "Shirvan",
+        "Shusha"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Shusha is the historical and cultural capital of Azerbaijan."
+    },
+    {
+      "question": "Choose the correct sentence using the definite article with geographical names:",
+      "options": [
+        "The Caspian Sea is the largest enclosed inland body of water in the world",
+        "Caspian Sea is the largest enclosed inland body of water in the world",
+        "A Caspian Sea is the largest enclosed inland body of water in the world",
+        "The Lake Caspian Sea are largest enclosed inland body of water in world"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Seas take the definite article 'the' ('The Caspian Sea')."
+    },
+    {
+      "question": "Which traditional Azerbaijani music genre is recognized by UNESCO as Masterpiece of World Heritage?",
+      "options": [
+        "Jazz",
+        "Mugham",
+        "Opera",
+        "Rock"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Mugham is recognized as an intangible cultural heritage of humanity by UNESCO."
+    },
+    {
+      "question": "Complete the sentence: 'Azerbaijan is famously known as the Land of ___.'",
+      "options": [
+        "Ice",
+        "Rain",
+        "Fire",
+        "Snow"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Azerbaijan is known worldwide as the 'Land of Fire'."
+    },
+    {
+      "question": "Which ancient architectural monument is situated in the Old City (Icherisheher) of Baku?",
+      "options": [
+        "The Eiffel Tower",
+        "The Big Ben",
+        "The Colosseum",
+        "The Maiden Tower"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The Maiden Tower (Qız Qalası) is located in Icherisheher."
+    },
+    {
+      "question": "Choose the correct passive sentence: 'Karabakh carpets ___ by master weavers for centuries.'",
+      "options": [
+        "have been crafted",
+        "has been crafted",
+        "are craft",
+        "was crafting"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Present Perfect Passive: 'have been crafted'."
+    },
+    {
+      "question": "Which national holiday is celebrated on March 21st to mark the arrival of spring?",
+      "options": [
+        "Independence Day",
+        "Novruz Holiday",
+        "Victory Day",
+        "Republic Day"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Novruz marks the vernal equinox and arrival of spring."
+    },
+    {
+      "question": "Complete the sentence: 'The restoration of historical monuments in Karabakh is proceeding ___.'",
+      "options": [
+        "rapid and successful",
+        "more rapid than success",
+        "rapidly and successfully",
+        "as rapid as successful"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Adverbs of manner ('rapidly and successfully') modify the verb 'is proceeding'."
+    },
+    {
+      "question": "Which mountain range stretches across the northern border of Azerbaijan?",
+      "options": [
+        "The Alps",
+        "The Himalayas",
+        "The Andes",
+        "The Greater Caucasus"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The Greater Caucasus mountains form the northern natural border."
+    },
+    {
+      "question": "Choose the correct relative clause: 'Nizami Ganjavi, ___ was a great 12th-century poet, was born in Ganja.'",
+      "options": [
+        "who",
+        "which",
+        "whose",
+        "where"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Who' refers to the poet Nizami Ganjavi."
+    },
+    {
+      "question": "What is an iconic feature of Gobustan State Reserve?",
+      "options": [
+        "A giant modern theme park with rollercoasters and water slides",
+        "Ancient rock carvings (petroglyphs) dating back thousands of years",
+        "A tropical rainforest with wild monkeys and colorful parrots",
+        "A frozen glacier used for winter skiing competitions"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Gobustan is famous for ancient petroglyphs and mud volcanoes."
+    },
+    {
+      "question": "Complete the sentence: 'Azerbaijan has nine of the world's eleven ___ zones.'",
+      "options": [
+        "language",
+        "volcanic",
+        "climate",
+        "oceanic"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Azerbaijan features 9 out of 11 world climate zones."
+    },
+    {
+      "question": "Which historic palace in Sheki is famous for its intricate stained glass windows (Shebeke)?",
+      "options": [
+        "The Palace of Shirvanshahs",
+        "The Topkapi Palace",
+        "The Winter Palace",
+        "The Palace of Sheki Khans"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The Palace of Sheki Khans is renowned for Shebeke stained glass."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Azerbaijan plays a crucial role in regional energy and transport corridors",
+        "Azerbaijan play a crucial role in regional energy and transport corridors",
+        "Azerbaijan is play a crucial role in regional energy and transport corridors",
+        "Azerbaijan has played crucial role in regional energy and transport corridors yesterday"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Singular subject 'Azerbaijan' takes 'plays' in Present Simple."
+    },
+    {
+      "question": "What does 'hospitality' represent in Azerbaijani culture?",
+      "options": [
+        "Locking doors and refusing to speak to travelers visiting your hometown",
+        "Warmly welcoming guests and offering the finest national tea and dishes",
+        "Charging high entrance fees to anyone entering a private family home",
+        "Demanding that guests prepare their own meals upon arriving at your house"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Hospitality (qonaqpərvərlik) is a cherished Azerbaijani tradition."
+    }
+  ],
+  "19. English-Speaking Countries": [
+    {
+      "question": "What is the capital city of the United Kingdom?",
+      "options": [
+        "Edinburgh",
+        "Cardiff",
+        "London",
+        "Belfast"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "London is the capital of the United Kingdom."
+    },
+    {
+      "question": "Which river flows through the center of London and past the Houses of Parliament?",
+      "options": [
+        "The River Seine",
+        "The River Danube",
+        "The River Rhine",
+        "The River Thames"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The Thames is the major river flowing through London."
+    },
+    {
+      "question": "Choose the correct sentence about the United States:",
+      "options": [
+        "The United States of America consists of fifty federal states",
+        "The United States of America consist of fifty federal states",
+        "The United States of America is consist of fifty federal states",
+        "The United States of America are consisting of fifty federal states"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'The United States' as a single nation takes a singular verb 'consists'."
+    },
+    {
+      "question": "What is the official currency of the United Kingdom?",
+      "options": [
+        "The US Dollar",
+        "The British Pound Sterling",
+        "The Euro",
+        "The Australian Dollar"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The currency of the UK is the Pound Sterling (£)."
+    },
+    {
+      "question": "Which country is the second largest in the world by total land area and has two official languages (English and French)?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "Canada",
+        "South Africa"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Canada is bilingual (English and French) and the 2nd largest country by area."
+    },
+    {
+      "question": "Complete the sentence: 'The Statue of Liberty was a gift from France ___ the United States.'",
+      "options": [
+        "for",
+        "at",
+        "with",
+        "to"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The preposition is 'a gift to someone/somewhere'."
+    },
+    {
+      "question": "Which Australian city is famous for its iconic Opera House shaped like sails?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Canberra"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The Sydney Opera House is an iconic architectural landmark in Sydney."
+    },
+    {
+      "question": "Choose the correct sentence in the passive voice:",
+      "options": [
+        "English speaks as an official language in more than fifty countries",
+        "English is spoken as an official language in more than fifty countries",
+        "English is speaking as an official language in more than fifty countries",
+        "English was spoke as an official language in more than fifty countries"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Present Simple Passive: 'is spoken'."
+    },
+    {
+      "question": "What is the national symbol of New Zealand?",
+      "options": [
+        "The Kangaroo",
+        "The Bald Eagle",
+        "The Kiwi bird",
+        "The Beaver"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The flightless Kiwi bird is the national emblem of New Zealand."
+    },
+    {
+      "question": "Complete the sentence: 'The Houses of Parliament in London are located on the banks of ___.'",
+      "options": [
+        "the Mississippi",
+        "the Amazon",
+        "the Nile",
+        "the Thames"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The British Parliament stands on the River Thames."
+    },
+    {
+      "question": "Which American holiday is celebrated on the fourth Thursday of November with family dinners and roast turkey?",
+      "options": [
+        "Thanksgiving Day",
+        "Independence Day",
+        "Halloween",
+        "Memorial Day"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Thanksgiving is celebrated in the US on the 4th Thursday of November."
+    },
+    {
+      "question": "Choose the correct relative clause: 'Canberra, ___ is the capital of Australia, was custom-planned.'",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Which' is used for cities in non-defining relative clauses."
+    },
+    {
+      "question": "What is the name of the famous clock tower at the north end of the Houses of Parliament in London?",
+      "options": [
+        "The Eiffel Tower",
+        "The Empire State Building",
+        "Big Ben (Elizabeth Tower)",
+        "The CN Tower"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Big Ben is the nickname for the Great Bell of the Elizabeth Tower."
+    },
+    {
+      "question": "Complete the sentence: 'Washington D.C. is named ___ the first US President, George Washington.'",
+      "options": [
+        "for",
+        "by",
+        "from",
+        "after"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The expression is 'named after someone'."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "English has become the global lingua franca of international business and aviation",
+        "English have become the global lingua franca of international business and aviation",
+        "English is become the global lingua franca of international business and aviation",
+        "English has became the global lingua franca of international business and aviation"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Has become' (Present Perfect: has + Past Participle)."
+    }
+  ],
+  "20. Unit 5 Review & Reading Comprehension": [
+    {
+      "question": "Read the text and answer the question:\n'London is one of the most multicultural cities on Earth, where more than three hundred languages are spoken. Visitors can explore world-class museums like the British Museum and the Natural History Museum for free, walk through royal parks, and experience historical architecture alongside modern sustainable buildings.'\nWhy is London considered a multicultural city?",
+      "options": [
+        "It is the only city in Europe with a large underground railway system",
+        "More than three hundred languages are spoken by its diverse residents",
+        "All buildings in the city were constructed in the same century",
+        "Visitors must pay expensive entrance fees to enter public parks"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The text explicitly states that over 300 languages are spoken."
+    },
+    {
+      "question": "Based on the text, what is special about major national museums in London?",
+      "options": [
+        "They are open only one day per calendar year",
+        "They contain no historical artifacts or paintings",
+        "Visitors can explore them free of charge",
+        "They are located exclusively outside the city boundaries"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The text states that visitors can explore world-class museums for free."
+    },
+    {
+      "question": "Choose the correct passive voice sentence: 'Ancient Azerbaijani carpets ___ in major world museums.'",
+      "options": [
+        "is exhibited",
+        "are exhibiting",
+        "exhibit",
+        "are exhibited"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Present Simple Passive: 'are exhibited'."
+    },
+    {
+      "question": "Complete the sentence: 'If you visit Baku, you ___ admire both ancient and futuristic architecture.'",
+      "options": [
+        "will",
+        "would",
+        "had",
+        "have to not"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "First Conditional: If + Present Simple, will + base verb."
+    },
+    {
+      "question": "Which sentence correctly uses relative pronouns?",
+      "options": [
+        "This is the famous castle who was built in the twelfth century",
+        "This is the famous castle which was built in the twelfth century",
+        "This is the famous castle where was built in the twelfth century",
+        "This is the famous castle whose was built in the twelfth century"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Which' is used for things and buildings."
+    },
+    {
+      "question": "Choose the correct question tag: 'Baku has developed into a modern international metropolis, ___?'",
+      "options": [
+        "didn't it",
+        "doesn't it",
+        "hasn't it",
+        "isn't it"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Present Perfect statement with 'has' forms tag 'hasn't it?'."
+    },
+    {
+      "question": "Identify the correct synonym of 'vibrant':",
+      "options": [
+        "Dead and completely empty",
+        "Boring and uninteresting",
+        "Dark and gloomy",
+        "Lively and full of energy"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Vibrant' means full of life, energy, and activity."
+    },
+    {
+      "question": "Complete the sentence: 'Neither noise ___ air pollution makes village life stressful.'",
+      "options": [
+        "nor",
+        "or",
+        "and",
+        "with"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The correlative conjunction pair is 'neither...nor'."
+    },
+    {
+      "question": "Which sentence has correct word order?",
+      "options": [
+        "The government has built recently several modern educational facilities",
+        "The government has recently built several modern educational facilities",
+        "Recently the government have build several modern educational facilities",
+        "The government recently have built several modern educational facilities"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Adverb 'recently' fits naturally between auxiliary and participle."
+    },
+    {
+      "question": "Choose the correct preposition: 'Karabakh is famous ___ its rich musical traditions and lush nature.'",
+      "options": [
+        "about",
+        "with",
+        "for",
+        "by"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Famous for something'."
+    },
+    {
+      "question": "What does 'cultural heritage' encompass?",
+      "options": [
+        "The total amount of commercial advertisements displayed on television stations",
+        "The modern banking software used by international investment firms",
+        "The industrial chemicals produced inside synthetic rubber factories",
+        "Traditions, monuments, languages, and artistic expressions passed down through generations"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Cultural heritage encompasses inherited traditions, monuments, and arts."
+    },
+    {
+      "question": "Complete the sentence: 'She has lived in London ___ she started her university studies.'",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "while"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "'Since' introduces a specific starting point event in the past."
+    },
+    {
+      "question": "Which sentence contains a correct comparative adverb?",
+      "options": [
+        "Public buses in smart cities run punctually than before",
+        "Public buses in smart cities run more punctually than before",
+        "Public buses in smart cities run as punctually than before",
+        "Public buses in smart cities run most punctually than before"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Comparative adverb of manner: 'more punctually than'."
+    },
+    {
+      "question": "Choose the antonym of 'urban':",
+      "options": [
+        "Metropolitan",
+        "Industrial",
+        "Rural",
+        "Civic"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Rural' is the opposite of 'urban'."
+    },
+    {
+      "question": "What is the primary benefit of preserving historic city centers?",
+      "options": [
+        "Allowing heavy industrial trucks to drive through narrow historic lanes",
+        "Demolishing ancient stone towers to build concrete car parking lots",
+        "Preventing tourists and citizens from learning about local history",
+        "Maintaining cultural identity, architectural heritage, and tourism value"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Preserving historic centers protects cultural identity and architecture."
+    }
+  ],
+  "21. Great Inventors & Inventions": [
+    {
+      "question": "Who invented the first practical incandescent light bulb and founded General Electric?",
+      "options": [
+        "Thomas Alva Edison",
+        "Alexander Graham Bell",
+        "Nikola Tesla",
+        "Guglielmo Marconi"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Thomas Edison developed the practical incandescent electric light bulb."
+    },
+    {
+      "question": "Which Scottish-born inventor was awarded the first US patent for the telephone in 1876?",
+      "options": [
+        "Thomas Edison",
+        "Alexander Graham Bell",
+        "Samuel Morse",
+        "James Watt"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Alexander Graham Bell patented the telephone."
+    },
+    {
+      "question": "Choose the correct passive sentence: 'The printing press ___ by Johannes Gutenberg in the 15th century.'",
+      "options": [
+        "is invented",
+        "was inventing",
+        "was invented",
+        "has invented"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Past Simple Passive: 'was invented'."
+    },
+    {
+      "question": "Which device revolutionized long-distance sea and land navigation by indicating magnetic north?",
+      "options": [
+        "The steam engine",
+        "The microscope",
+        "The barometer",
+        "The magnetic compass"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The magnetic compass enabled global maritime navigation."
+    },
+    {
+      "question": "Complete the sentence: 'James Watt made crucial improvements to the ___ engine.'",
+      "options": [
+        "steam",
+        "internal combustion",
+        "jet",
+        "rocket"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "James Watt developed the efficient universal steam engine."
+    },
+    {
+      "question": "Who discovered the fundamental principles of vaccination by developing the smallpox vaccine?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming",
+        "Robert Koch"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Edward Jenner pioneered the smallpox vaccine in 1796."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Penicillin was accidentally discover by Alexander Fleming in 1928",
+        "Penicillin is accidentally discovered by Alexander Fleming in 1928",
+        "Penicillin was accidentally discovered by Alexander Fleming in 1928",
+        "Penicillin discovered accidentally by Alexander Fleming in 1928"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Past Simple Passive: 'was accidentally discovered'."
+    },
+    {
+      "question": "What was the primary impact of Gutenberg's movable-type printing press?",
+      "options": [
+        "The immediate cessation of all theatrical and musical performances",
+        "The complete prohibition of handwritten letters between citizens",
+        "The exclusive use of Latin language in commercial trade receipts",
+        "Mass production of books and the rapid spread of knowledge across Europe"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "The printing press democratized knowledge and literacy."
+    },
+    {
+      "question": "Complete the sentence: 'The Wright brothers ___ the world's first successful motor-powered airplane in 1903.'",
+      "options": [
+        "flew",
+        "fly",
+        "had flown",
+        "were flying"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The Wright brothers achieved the first powered flight in 1903."
+    },
+    {
+      "question": "Which Azerbaijani scientist made groundbreaking contributions to fuzzy logic and artificial intelligence?",
+      "options": [
+        "Yusif Mammadaliyev",
+        "Lotfi Zadeh",
+        "Nasreddin Tusi",
+        "Abbasgulu Agha Bakikhanov"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Professor Lotfi Zadeh founded fuzzy logic theory."
+    },
+    {
+      "question": "Choose the correct modal in the passive: 'This complex software ___ by certified computer programmers.'",
+      "options": [
+        "must update",
+        "must to be updated",
+        "must be updated",
+        "must being updated"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Passive modal structure: 'must be + Past Participle' (must be updated)."
+    },
+    {
+      "question": "What does 'patent' mean in the context of technological inventions?",
+      "options": [
+        "A written apology sent to business competitors after losing a lawsuit",
+        "A receipt issued by grocery stores when buying electronic equipment",
+        "A diploma given to primary school students for perfect attendance",
+        "A government license giving the exclusive legal right to make or sell an invention"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "A patent grants exclusive intellectual property rights to an inventor."
+    },
+    {
+      "question": "Complete the sentence: 'The discovery of electricity transformed human civilization ___.'",
+      "options": [
+        "completely",
+        "complete",
+        "more complete",
+        "completest"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Adverb of degree 'completely' modifies the verb 'transformed'."
+    },
+    {
+      "question": "Which invention made the creation of modern personal computers and smartphones possible?",
+      "options": [
+        "The steam locomotive",
+        "The microchip (integrated circuit)",
+        "The spinning jenny",
+        "The water wheel"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The silicon microchip powers modern computing devices."
+    },
+    {
+      "question": "Choose the synonym of 'breakthrough':",
+      "options": [
+        "A complete failure in testing",
+        "A minor mechanical defect",
+        "A major technological advance",
+        "A delay in manufacturing"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "A breakthrough is a major innovation or discovery."
+    }
+  ],
+  "22. World-Famous Scientists & Leaders": [
+    {
+      "question": "Which English physicist formulated the laws of motion and universal gravitation?",
+      "options": [
+        "Albert Einstein",
+        "Galileo Galilei",
+        "Stephen Hawking",
+        "Sir Isaac Newton"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Isaac Newton formulated the universal laws of gravitation and motion."
+    },
+    {
+      "question": "Which scientist developed the Theory of Relativity and won the Nobel Prize in Physics?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Charles Darwin",
+        "Niels Bohr"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Albert Einstein developed the Theory of Relativity."
+    },
+    {
+      "question": "Choose the correct sentence with a Second Conditional:",
+      "options": [
+        "If scientists discover life on Mars, it will change our understanding of the universe",
+        "If scientists discovered life on Mars, it would change our understanding of the universe",
+        "If scientists had discovered life on Mars, it changes our understanding of the universe",
+        "If scientists will discover life on Mars, it would change our understanding of the universe"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Second Conditional: If + Past Simple, would + base verb."
+    },
+    {
+      "question": "Which Polish-French scientist was the first woman to win a Nobel Prize and the only person to win in two different scientific fields?",
+      "options": [
+        "Rosalind Franklin",
+        "Ada Lovelace",
+        "Marie Curie",
+        "Jane Goodall"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Marie Curie won Nobel Prizes in Physics (1903) and Chemistry (1911)."
+    },
+    {
+      "question": "Complete the sentence: 'Yusif Mammadaliyev was a prominent Azerbaijani chemist who synthesized ___.'",
+      "options": [
+        "synthetic plastic materials for toy manufacturing",
+        "chemical dyes used exclusively in royal silk robes",
+        "artificial fertilizers for desert cactus plantations",
+        "high-octane aviation fuel during World War II"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Academician Mammadaliyev synthesized vital high-octane aviation fuel."
+    },
+    {
+      "question": "Choose the correct passive form: 'The laws of planetary motion ___ by Johannes Kepler.'",
+      "options": [
+        "were formulated",
+        "was formulated",
+        "are formulate",
+        "were formulating"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Plural subject 'laws' takes 'were formulated' in Past Simple Passive."
+    },
+    {
+      "question": "Which naturalist proposed the scientific theory of evolution by natural selection in 1859?",
+      "options": [
+        "Gregor Mendel",
+        "Charles Darwin",
+        "Louis Pasteur",
+        "Carl Linnaeus"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Charles Darwin published 'On the Origin of Species' in 1859."
+    },
+    {
+      "question": "Complete the sentence: 'Marie Curie discovered the radioactive elements polonium and ___.'",
+      "options": [
+        "helium",
+        "carbon",
+        "radium",
+        "sodium"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Marie and Pierre Curie discovered polonium and radium."
+    },
+    {
+      "question": "What is an essential leadership trait of great world scientists?",
+      "options": [
+        "Hiding experimental results from other researchers worldwide",
+        "Refusing to accept mathematical evidence and scientific facts",
+        "Prioritizing personal fame over ethical scientific standards",
+        "Perseverance, critical thinking, and dedication to truthful inquiry"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Perseverance and critical thinking drive scientific discovery."
+    },
+    {
+      "question": "Choose the correct relative pronoun: 'The lab assistant ___ discovered the bacteria was rewarded.'",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "We use 'who' for people."
+    },
+    {
+      "question": "Complete the sentence: 'Alexander Fleming's discovery of penicillin ___ millions of human lives.'",
+      "options": [
+        "save",
+        "saved",
+        "was saving",
+        "had been saved"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Past Simple active verb: 'saved millions of lives'."
+    },
+    {
+      "question": "Which female mathematician is recognized as the world's first computer programmer for her work on Babbage's Mechanical Engine?",
+      "options": [
+        "Marie Curie",
+        "Florence Nightingale",
+        "Ada Lovelace",
+        "Dorothy Hodgkin"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Ada Lovelace wrote the first algorithm for Babbage's computer engine."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Science have expanded human longevity and improved the global quality of life",
+        "Science is expand human longevity and improved the global quality of life",
+        "Science has expand human longevity and improved the global quality of life",
+        "Science has expanded human longevity and improved the global quality of life"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Present Perfect with singular subject: 'Science has expanded'."
+    },
+    {
+      "question": "What does 'Nobel Prize' signify?",
+      "options": [
+        "An international award recognizing outstanding contributions in physics, chemistry, medicine, literature, peace, and economics",
+        "A sports medal awarded to the fastest long-distance marathon runners in Europe",
+        "A certificate given to companies that sell the highest number of smartphones",
+        "A financial fine imposed on industrial factories that emit greenhouse gases"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The Nobel Prize honors monumental human contributions."
+    },
+    {
+      "question": "Choose the synonym of 'distinguished':",
+      "options": [
+        "Unknown / Obscure",
+        "Eminent / Renowned",
+        "Inexperienced / Novice",
+        "Dishonest / Fraudulent"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Eminent' and 'renowned' are synonyms of 'distinguished'."
+    }
+  ],
+  "23. Modern Technologies & The Future": [
+    {
+      "question": "What does the abbreviation 'AI' stand for in modern computer science?",
+      "options": [
+        "Automated Internet",
+        "Advanced Information",
+        "Artificial Intelligence",
+        "Applied Informatics"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "AI stands for Artificial Intelligence."
+    },
+    {
+      "question": "Choose the correct sentence with future prediction:",
+      "options": [
+        "In the future, electric autonomous vehicles was transport passengers safely",
+        "In the future, electric autonomous vehicles are transport passengers safely",
+        "In the future, electric autonomous vehicles transported passengers safely",
+        "In the future, electric autonomous vehicles will transport passengers safely"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Will + base verb' expresses future technological predictions."
+    },
+    {
+      "question": "Which modern technology enables the creation of three-dimensional physical objects from a digital file?",
+      "options": [
+        "3D Printing",
+        "Cloud Computing",
+        "Barcode Scanning",
+        "Audio Streaming"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "3D printing manufactures three-dimensional physical items layer by layer."
+    },
+    {
+      "question": "Complete the sentence: 'If we ___ renewable technologies, we will combat global warming.'",
+      "options": [
+        "adopted",
+        "adopt",
+        "will adopt",
+        "had adopted"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "First Conditional: If-clause takes Present Simple ('adopt')."
+    },
+    {
+      "question": "Which device connects household appliances to the internet in a 'Smart Home' system?",
+      "options": [
+        "A mechanical clockwork",
+        "A manual typewriter",
+        "The Internet of Things (IoT)",
+        "A paper filing cabinet"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The Internet of Things (IoT) interconnects smart devices."
+    },
+    {
+      "question": "Choose the correct passive sentence: 'Drones ___ for agricultural monitoring and delivery services.'",
+      "options": [
+        "is being utilized",
+        "are utilize",
+        "have utilize",
+        "are being utilized"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Present Continuous Passive: 'are being utilized'."
+    },
+    {
+      "question": "What is virtual reality (VR)?",
+      "options": [
+        "A computer-generated simulation of a three-dimensional environment that can be interacted with",
+        "A traditional printed newspaper delivered to doorsteps every Sunday morning",
+        "A black-and-white television broadcast showing live weather forecasts",
+        "A handwritten diary describing personal dreams and vacation memories"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "VR provides immersive 3D computer simulations."
+    },
+    {
+      "question": "Complete the sentence: 'Cybersecurity experts work to protect private data ___ hacker attacks.'",
+      "options": [
+        "to",
+        "from",
+        "at",
+        "about"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "The structure is 'protect data from attacks'."
+    },
+    {
+      "question": "Which renewable energy technology is used on spacecraft and satellites to generate electricity?",
+      "options": [
+        "Diesel generators",
+        "Coal furnaces",
+        "Solar panels",
+        "Steam boilers"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Spacecraft rely on solar photovoltaic panels."
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Neither private passwords or personal financial data should be shared online",
+        "Neither private passwords and personal financial data should be shared online",
+        "Neither private passwords nor personal financial data should being shared online",
+        "Neither private passwords nor personal financial data should be shared online"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Neither...nor' with passive modal 'should be shared'."
+    },
+    {
+      "question": "What is 'cloud computing'?",
+      "options": [
+        "The delivery of computing services including storage, databases, and software over the Internet",
+        "The meteorological study of rain clouds and stormy weather patterns in the mountains",
+        "The manufacturing of ultra-light laptop screens using special aluminum materials",
+        "The physical storage of paper archives in high mountain observatory towers"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Cloud computing provides online servers, storage, and software services."
+    },
+    {
+      "question": "Complete the sentence: 'Robots are becoming ___ intelligent and capable of complex operations.'",
+      "options": [
+        "increase",
+        "increasingly",
+        "increased",
+        "increasing"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Adverb 'increasingly' modifies the adjective 'intelligent'."
+    },
+    {
+      "question": "Which ethical question is associated with the rise of artificial intelligence?",
+      "options": [
+        "Making sure that computer screens are painted in bright attractive colors",
+        "Calculating the exact weight of plastic computer keyboards before sale",
+        "Ensuring that AI algorithms make fair, unbiased, and transparent decisions",
+        "Deciding which brand of AA batteries should power wireless mouse devices"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Algorithmic fairness, privacy, and safety are key AI ethics issues."
+    },
+    {
+      "question": "Choose the synonym of 'innovative':",
+      "options": [
+        "Outdated and obsolete",
+        "Standard and boring",
+        "Traditional and ancient",
+        "Pioneering and original"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Pioneering' and 'original' are synonyms of 'innovative'."
+    },
+    {
+      "question": "What is the ultimate purpose of technological progress?",
+      "options": [
+        "Improving human health, safety, connectivity, and environmental sustainability",
+        "Replacing all human creativity and prohibiting books and physical arts",
+        "Making all human beings completely dependent on video games and screens",
+        "Destroying natural ecosystems in order to build massive server factories"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Technology aims to enhance human welfare and environmental sustainability."
+    }
+  ],
+  "24. Unit 6 Review & Reading Comprehension": [
+    {
+      "question": "Read the text and answer the question:\n'The invention of the World Wide Web by British scientist Tim Berners-Lee in 1989 transformed human civilization. It connected billions of people, enabled instant global communication, and revolutionized commerce, science, and education. Today, access to the internet is increasingly viewed as an essential human right for development.'\nWho invented the World Wide Web in 1989?",
+      "options": [
+        "Thomas Alva Edison",
+        "Sir Tim Berners-Lee",
+        "Alexander Graham Bell",
+        "Isaac Newton"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Tim Berners-Lee invented the World Wide Web."
+    },
+    {
+      "question": "Based on the text, what was the primary effect of the World Wide Web?",
+      "options": [
+        "It caused all physical universities and public libraries to close permanently",
+        "It restricted international trade exclusively to paper postal letters",
+        "It enabled instant global communication and transformed commerce and education",
+        "It made foreign language learning unnecessary for all school students"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "The World Wide Web transformed communication, trade, and learning."
+    },
+    {
+      "question": "Choose the correct passive voice sentence: 'Millions of online transactions ___ every second worldwide.'",
+      "options": [
+        "is processed",
+        "are processing",
+        "processed",
+        "are processed"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Present Simple Passive with plural subject: 'are processed'."
+    },
+    {
+      "question": "Complete the conditional sentence: 'If humanity ___ in green technologies, planetary warming will slow down.'",
+      "options": [
+        "invests",
+        "invested",
+        "will invest",
+        "had invested"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "First Conditional: If + Present Simple, will + base verb."
+    },
+    {
+      "question": "Which sentence correctly uses relative pronouns?",
+      "options": [
+        "Lotfi Zadeh was the scientist which fuzzy logic theory revolutionized modern AI",
+        "Lotfi Zadeh was the scientist whose fuzzy logic theory revolutionized modern AI",
+        "Lotfi Zadeh was the scientist whom fuzzy logic theory revolutionized modern AI",
+        "Lotfi Zadeh was the scientist where fuzzy logic theory revolutionized modern AI"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "'Whose' indicates possession ('whose fuzzy logic theory')."
+    },
+    {
+      "question": "Choose the correct question tag: 'Modern technologies have made communication faster and easier, ___?'",
+      "options": [
+        "didn't they",
+        "don't they",
+        "haven't they",
+        "aren't they"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "Present Perfect statement with 'have' takes 'haven't they?'."
+    },
+    {
+      "question": "Identify the correct synonym of 'revolutionary':",
+      "options": [
+        "Conventional / Traditional",
+        "Minor / Insignificant",
+        "Defective / Damaged",
+        "Groundbreaking / Transformative"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "'Groundbreaking' is synonymous with 'revolutionary'."
+    },
+    {
+      "question": "Complete the sentence: 'Neither cyber attacks ___ data loss can be ignored by tech companies.'",
+      "options": [
+        "nor",
+        "or",
+        "and",
+        "with"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "The correlative pair is 'neither...nor'."
+    },
+    {
+      "question": "Which sentence has correct word order in reported speech?",
+      "options": [
+        "The scientist explained that had been successful the experiment",
+        "The scientist explained that the experiment had been successful",
+        "The scientist explained that was the experiment had been successful",
+        "The scientist explained that the experiment has been successful yesterday"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Reported speech statement word order with backshift: 'had been successful'."
+    },
+    {
+      "question": "Choose the correct modal in the passive: 'Digital security protocols ___ by all employees.'",
+      "options": [
+        "must to be followed",
+        "must following",
+        "must be followed",
+        "must be follow"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'Must be + Past Participle' (must be followed)."
+    },
+    {
+      "question": "What does 'artificial intelligence ethics' focus on?",
+      "options": [
+        "Making sure that computer gaming graphics are as colorful as possible",
+        "Selling expensive computer monitors to secondary school classrooms",
+        "Replacing all human teachers with automated scoring software",
+        "Ensuring that AI algorithms serve humanity safely, equitably, and without bias"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "AI ethics ensures safe, fair, and humane implementation of AI systems."
+    },
+    {
+      "question": "Complete the sentence: 'Nanotechnology deals with structures ___ at the molecular scale.'",
+      "options": [
+        "engineered",
+        "engine",
+        "engineer",
+        "engineeringly"
+      ],
+      "correct_answer": 0,
+      "correct_letter": "A",
+      "explanation": "Past participle 'engineered' acts as a reduced relative clause."
+    },
+    {
+      "question": "Which sentence uses a Second Conditional for hypothetical situations?",
+      "options": [
+        "If I design a medical robot, it would assist surgeons during delicate operations",
+        "If I designed a medical robot, it would assist surgeons during delicate operations",
+        "If I will design a medical robot, it assists surgeons during delicate operations",
+        "If I designed a medical robot, it will assist surgeons during delicate operations"
+      ],
+      "correct_answer": 1,
+      "correct_letter": "B",
+      "explanation": "Second Conditional: If + Past Simple, would + base verb."
+    },
+    {
+      "question": "Choose the antonym of 'obsolete':",
+      "options": [
+        "Outdated",
+        "Archaic",
+        "State-of-the-art / Modern",
+        "Old-fashioned"
+      ],
+      "correct_answer": 2,
+      "correct_letter": "C",
+      "explanation": "'State-of-the-art' is the opposite of 'obsolete'."
+    },
+    {
+      "question": "What is the most valuable lesson learned from the history of human inventions?",
+      "options": [
+        "Inventions are created by pure luck without any scientific research or labor",
+        "Only wealthy individuals can make meaningful contributions to world science",
+        "Technological advancements always bring negative consequences to human societies",
+        "Scientific curiosity, perseverance, and ethical values drive true human progress"
+      ],
+      "correct_answer": 3,
+      "correct_letter": "D",
+      "explanation": "Curiosity, dedication, and ethics are the drivers of human progress."
+    }
+  ]
+}

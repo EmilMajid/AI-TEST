@@ -19,20 +19,27 @@ export async function POST(request: NextRequest) {
         }
 
         const db = loadDb()
-        let pool: any[] = []
+        const getSelectQKey = (q: any) => (q?.question || "").toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, "").trim()
+        const poolMap = new Map<string, any>()
 
         const extractQuestions = (val: any, sKey?: string) => {
+            const addQ = (q: any) => {
+                if (!q || !q.question) return
+                const k = getSelectQKey(q)
+                if (k && !poolMap.has(k)) {
+                    if (!q.category && sKey) q.category = sKey
+                    poolMap.set(k, q)
+                }
+            }
             if (Array.isArray(val)) {
                 val.forEach((item: any) => {
                     if (item.questions && Array.isArray(item.questions)) {
                         item.questions.forEach((q: any) => {
                             if (!q.topic && item.topic_key) q.topic = item.topic_key
-                            if (!q.category && sKey) q.category = sKey
-                            pool.push(q)
+                            addQ(q)
                         })
                     } else if (item.question) {
-                        if (!item.category && sKey) item.category = sKey
-                        pool.push(item)
+                        addQ(item)
                     }
                 })
             } else if (typeof val === "object" && val !== null) {
@@ -40,8 +47,7 @@ export async function POST(request: NextRequest) {
                     if (Array.isArray(qList)) {
                         qList.forEach((q: any) => {
                             if (!q.topic) q.topic = tKey
-                            if (!q.category && sKey) q.category = sKey
-                            pool.push(q)
+                            addQ(q)
                         })
                     }
                 })
@@ -53,6 +59,8 @@ export async function POST(request: NextRequest) {
         } else {
             Object.entries(db).forEach(([sKey, val]) => extractQuestions(val, sKey))
         }
+
+        const pool = Array.from(poolMap.values())
 
         // Filter by topic
         const norm = (s: string) => (s || "").toLowerCase().replace(/["'“”«»()]/g, "").trim()
@@ -67,14 +75,24 @@ export async function POST(request: NextRequest) {
         if (difficulty) filtered = filtered.filter((q: any) => q.difficulty === difficulty)
         if (bloomLevel) filtered = filtered.filter((q: any) => q.bloomLevel === bloomLevel)
 
+        // Secondary deduplication to guarantee 100% uniqueness
+        const uniqueFilteredMap = new Map<string, any>()
+        for (const q of filtered) {
+            const k = getSelectQKey(q)
+            if (k && !uniqueFilteredMap.has(k)) {
+                uniqueFilteredMap.set(k, q)
+            }
+        }
+        const uniqueFiltered = Array.from(uniqueFilteredMap.values())
+
         // Shuffle and pick
-        const shuffled = filtered.sort(() => Math.random() - 0.5)
+        const shuffled = uniqueFiltered.sort(() => Math.random() - 0.5)
         const selected = shuffled.slice(0, count)
 
         return NextResponse.json({
             success: true,
             questions: selected,
-            totalAvailable: filtered.length
+            totalAvailable: uniqueFiltered.length
         })
     } catch (error) {
         console.error("Error selecting questions:", error)

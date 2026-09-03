@@ -1,2733 +1,1865 @@
-# 6-cı Sinif Coğrafiya — Test Bankı (Tam və Kurikulum Standartlı)
+# 🌍 COĞRAFİYA 6 — QIZIL STANDART 4.0 TAM TEST BANKI
+**Mövzu Sayı:** 12 | **Ümumi Sual Sayı:** 180 | **Standart:** Qızıl Standart 4.0
+**Tərtibat:** Hər mövzuda 15 sual (5 Asan, 5 Orta, 5 Çətin) — DİM və Kurikulum Uyğunluğu
 
-> **Fənn:** Coğrafiya  
-> **Sinif:** 6-cı sinif (I və II Hissə)  
-> **Mövzu sayı:** 12 mövzu (7 Bölmə)  
-> **Ümumi sual sayı:** 180 sual (Hər mövzu üzrə: 5 Sadə, 5 Orta, 5 Çətin)  
-> **Tərtib Standartı:** 100% Simmetrik Variantlar, Sıfır Qeyri-bərabərlik, Dəqiq Dərslik Faktları və Bərabər Balans (45 A, 45 B, 45 C, 45 D)  
-
----
-
-## 1.1. Məkan
-
-### Sual 1. [Sadə] — TİK: `06-003-0101-0110-01-01-001`
-
-**Sual:** İnsanların yaşadığı, fəaliyyət göstərdiyi və təbiətlə qarşılıqlı əlaqədə olduğu ərazi necə adlanır?
-
-- **A)** Hava boşluğu
-- **B)** Coğrafi məkan
-- **C)** Sualtı çökəklik
-- **D)** Səma qübbəsi
-
-**Düzgün cavab:** **B) Coğrafi məkan**
-
-**İzah:** Coğrafi məkan insan fəaliyyətinin və təbiətin vəhdətdə olduğu mühitdir.
-
----
-
-### Sual 2. [Sadə] — TİK: `06-003-0101-0110-01-01-002`
-
-**Sual:** Təbiətdə insan əməyi olmadan mövcud olan məkan komponenti hansıdır?
-
-- **A)** Körpü və yol
-- **B)** Meşə və çay
-- **C)** Bina və zavod
-- **D)** Kanal və bənd
-
-**Düzgün cavab:** **B) Meşə və çay**
-
-**İzah:** Meşə, dağ və çaylar təbii məkan elementləridir.
-
----
-
-### Sual 3. [Sadə] — TİK: `06-003-0101-0110-01-01-003`
-
-**Sual:** İnsan tərəfindən yaradılmış süni (antropogen) məkan obyektlərinə hansı aiddir?
-
-- **A)** Dağlar və dərələr
-- **B)** Göllər və bataqlıqlar
-- **C)** Dənizlər və körfəzlər
-- **D)** Şəhər və yollar
-
-**Düzgün cavab:** **D) Şəhər və yollar**
-
-**İzah:** Şəhərlər, yollar və binalar antropogen məkan elementləridir.
-
----
-
-### Sual 4. [Sadə] — TİK: `06-003-0101-0110-01-01-004`
-
-**Sual:** İnsanın gündəlik həyatında ona ən yaxın olan məkan səviyyəsi hansıdır?
-
-- **A)** Qlobal məkan
-- **B)** Regional məkan
-- **C)** Lokal məkan
-- **D)** Kosmik məkan
-
-**Düzgün cavab:** **C) Lokal məkan**
-
-**İzah:** Məktəb, ev və məhəllə insanın bilavasitə təmasda olduğu lokal məkandır.
-
----
-
-### Sual 5. [Sadə] — TİK: `06-003-0101-0110-01-01-005`
-
-**Sual:** Məkanın öyrənilməsində təbiət və cəmiyyət hadisələrinin yerləşməsini tədqiq edən elm hansıdır?
-
-- **A)** Astronomiya
-- **B)** Coğrafiya
-- **C)** Geologiya
-- **D)** Biologiya
-
-**Düzgün cavab:** **B) Coğrafiya**
-
-**İzah:** Coğrafiya Yerin təbii və ictimai məkan xüsusiyyətlərini öyrənir.
-
----
-
-### Sual 6. [Orta] — TİK: `06-003-0101-0120-02-02-006`
-
-**Sual:** Coğrafi məkanda təbii və süni elementlərin qarşılıqlı vəhdətini əks etdirən nümunə hansıdır?
-
-- **A)** Çay üzərində su elektrik stansiyasının və su anbarının qurulması
-- **B)** Səhrada heç bir tikinti aparılmadan qum təpələrinin qalması
-- **C)** Okeanın ən dərin çökəkliyində su axınlarının hərəkəti
-- **D)** Kainatda ulduzların hərəkət trayektoriyasının dəyişməsi
-
-**Düzgün cavab:** **A) Çay üzərində su elektrik stansiyasının və su anbarının qurulması**
-
-**İzah:** Təbii çay üzərində su anbarı və SES təbiət-cəmiyyət vəhdətidir.
-
----
-
-### Sual 7. [Orta] — TİK: `06-003-0101-0120-02-02-007`
-
-**Sual:** Məkanın düzgün planlaşdırılmaması gələcəkdə hansı ciddi problemə səbəb ola bilər?
-
-- **A)** Şəhərlərdə nəqliyyat sıxlığına və ekoloji tarazlığın pozulmasına
-- **B)** Təbii çayların axın istiqamətinin dərhal dayanmasına
-- **C)** Gecə və gündüzün növbələşməsinin pozulmasına
-- **D)** Yerin cazibə qüvvəsinin tamamilə itməsinə
-
-**Düzgün cavab:** **A) Şəhərlərdə nəqliyyat sıxlığına və ekoloji tarazlığın pozulmasına**
-
-**İzah:** Məkan düzgün planlaşdırılmadıqda tıxaclar, yaşıllıq azlığı və hava çirkliliyi yaranır.
-
----
-
-### Sual 8. [Orta] — TİK: `06-003-0101-0120-02-02-008`
-
-**Sual:** Kənd və şəhər məkanları arasındakı başlıca fərq nə ilə müəyyən edilir?
-
-- **A)** Yalnız ərazidə yağan yağışın illik miqdarı ilə
-- **B)** Yalnız ərazidə küləyin əsmə sürəti ilə
-- **C)** Kənddə gecələrin şəhərdən iki dəfə uzun olması ilə
-- **D)** Binaların sıxlığı, əhalinin məşğuliyyəti və təbiətin dəyişdirilmə dərəcəsi ilə
-
-**Düzgün cavab:** **D) Binaların sıxlığı, əhalinin məşğuliyyəti və təbiətin dəyişdirilmə dərəcəsi ilə**
-
-**İzah:** Şəhər mühitində sıx binalar və sənaye, kənddə isə təbii landşaft və kənd təsərrüfatı üstündür.
-
----
-
-### Sual 9. [Orta] — TİK: `06-003-0101-0120-02-02-009`
-
-**Sual:** İnsanın dağlıq məkana uyğunlaşması hansı təsərrüfat fəaliyyətində daha aydın görünür?
-
-- **A)** Yalnız dəniz gəmiçiliyində və balıqçılıqda
-- **B)** Terraslı əkinçilik və yaylaq maldarlığında
-- **C)** Geniş pambıq və çəltik tarlalarının salınmasında
-- **D)** Dərin neft quyularının qazılmasında
-
-**Düzgün cavab:** **B) Terraslı əkinçilik və yaylaq maldarlığında**
-
-**İzah:** Dağlıq ərazilərdə yamaclar terraslaşdırılır və heyvandarlıq yaylaqlara köçürülür.
-
----
-
-### Sual 10. [Orta] — TİK: `06-003-0101-0120-02-02-010`
-
-**Sual:** Məkanın landşaftına meşə zolaqlarının salınması ətraf mühitə necə təsir göstərir?
-
-- **A)** Torpağın tamamilə şoranlaşmasına səbəb olur
-- **B)** Ərazidə yeraltı suların tamamilə qurumasına gətirib çıxarır
-- **C)** Küləyin sürətini artıraraq fırtına yaradır
-- **D)** Torpağın eroziyasının qarşısını alır və havanı oksigenlə zənginləşdirir
-
-**Düzgün cavab:** **D) Torpağın eroziyasının qarşısını alır və havanı oksigenlə zənginləşdirir**
-
-**İzah:** Ağac əkilməsi küləyi zəiflədir, torpağı yuyulmaqdan qoruyur və havanı təmizləyir.
-
----
-
-### Sual 11. [Çətin] — TİK: `06-003-0101-0130-03-03-011`
-
-**Sual:** Lokal məkanda baş verən təbii və ya antropogen dəyişikliyin qlobal məkana təsirini göstərən ən düzgün nümunə hansıdır?
-
-- **A)** Bir kənddə su quyusunun qazılmasının bütün okeanı qurutması
-- **B)** Amazon meşələrinin qırılmasının bütün planetdə iqlim istiləşməsinə səbəb olması
-- **C)** Məktəb həyətində ağac əkilməsinin Yerin orbitini dəyişməsi
-- **D)** Bir evin rənglənməsinin qütb buzlaqlarını əritməsi
-
-**Düzgün cavab:** **B) Amazon meşələrinin qırılmasının bütün planetdə iqlim istiləşməsinə səbəb olması**
-
-**İzah:** Böyük meşə massivlərinin məhvi bütün Yer kürəsinin oksigen və istilik balansını pozur.
-
----
-
-### Sual 12. [Çətin] — TİK: `06-003-0101-0130-03-03-012`
-
-**Sual:** Müasir dövrdə 'ağıllı şəhər' və 'yaşıl məkan' konsepsiyalarının yaradılmasında əsas hədəf nədir?
-
-- **A)** Bütün təbii meşələri kəsib yerində sənaye zavodları tikmək
-- **B)** Şəhər əhalisini kəndlərə məcburi köçürmək
-- **C)** Təbii resurslardan qənaətlə istifadə edərək insan üçün ekoloji cəhətdən təmiz və rahat mühit qurmaq
-- **D)** Şəhərdə bütün nəqliyyat növlərini birdəfəlik qadağan etmək
-
-**Düzgün cavab:** **C) Təbii resurslardan qənaətlə istifadə edərək insan üçün ekoloji cəhətdən təmiz və rahat mühit qurmaq**
-
-**İzah:** Ağıllı şəhərlər alternativ enerji, tullantısız texnologiya və rahat məkan planlaşdırır.
-
----
-
-### Sual 13. [Çətin] — TİK: `06-003-0101-0130-03-03-013`
-
-**Sual:** Coğrafi məkanda təbii komponentlərdən birinin dəyişməsinin digər komponentlərə zəncirvari təsiri hansı bənddə düzgün izah edilmişdir?
-
-- **A)** Havanın istiləşməsi dağların hündürlüyünün dərhal iki dəfə artmasına gətirib çıxarır
-- **B)** Meşələrin qırılması torpağın yuyulmasına, çayların lillənməsinə və iqlimin qurulaşmasına səbəb olur
-- **C)** Torpağın şumlanması Yerin öz oxu ətrafında fırlanma sürətini azaldır
-- **D)** Çayların daşması Günəş sistemində yeni planetlər yaradır
-
-**Düzgün cavab:** **B) Meşələrin qırılması torpağın yuyulmasına, çayların lillənməsinə və iqlimin qurulaşmasına səbəb olur**
-
-**İzah:** Təbii komponentlər bir-birinə bağlıdır: meşə qırıldıqda torpaq, su və iqlim birlikdə pisləşir.
-
----
-
-### Sual 14. [Çətin] — TİK: `06-003-0101-0130-03-03-014`
-
-**Sual:** İnsan məskənlərinin salınmasında relyef və su amilinin tarixi rolunu ən yaxşı sübut edən fakt hansıdır?
-
-- **A)** Bütün böyük şəhərlərin yalnız su olmayan quraq qum səhralarında qurulması
-- **B)** İnsanların yalnız sıldırım buzlu dağ zirvələrində məskunlaşmağa üstünlük verməsi
-- **C)** Qədim sivilizasiyaların və böyük şəhərlərin məhz münbit çay vadilərində və düzənliklərdə yaranması
-- **D)** Qədim insanların çay sahillərindən qorxaraq uzaq qaçması
-
-**Düzgün cavab:** **C) Qədim sivilizasiyaların və böyük şəhərlərin məhz münbit çay vadilərində və düzənliklərdə yaranması**
-
-**İzah:** Nil, Dəclə, Fərat, Kür və Araz sahilləri su və münbit torpaq sayəsində ilk məskənlər olmuşdur.
-
----
-
-### Sual 15. [Çətin] — TİK: `06-003-0101-0130-03-03-015`
-
-**Sual:** Qlobal coğrafi məkanda okeanların səviyyəsinin qalxmasının əsas səbəb-nəticə əlaqəsi hansıdır?
-
-- **A)** Okean dibində balıqların sayının həddindən artıq çoxalması
-- **B)** Gəmilərin sayının artması səbəbindən suyun sıxışdırılıb çıxarılması
-- **C)** Qlobal istiləşmə nəticəsində qütb buzlaqlarının əriməsi və sahilyanı ovalıqların su altında qalması
-- **D)** Ayın cazibə qüvvəsinin birdəfəlik sıradan çıxması
-
-**Düzgün cavab:** **C) Qlobal istiləşmə nəticəsində qütb buzlaqlarının əriməsi və sahilyanı ovalıqların su altında qalması**
-
-**İzah:** İstixana effekti Qrenlandiya və Antarktida buzlarını əridir, okean səviyyəsini artırır.
-
----
-
-## 1.2. Məkanın miqyası
-
-### Sual 16. [Sadə] — TİK: `06-003-0102-0110-01-01-016`
-
-**Sual:** Xəritə və ya planda məsafələrin həqiqətlə müqayisədə neçə dəfə kiçildildiyini göstərən kəsr necə adlanır?
-
-- **A)** Horizont
-- **B)** Azimut
-- **C)** Meridian
-- **D)** Miqyas
-
-**Düzgün cavab:** **D) Miqyas**
-
-**İzah:** Miqyas planda və ya xəritədə məsafənin neçə dəfə kiçildiyini göstərir.
-
----
-
-### Sual 17. [Sadə] — TİK: `06-003-0102-0110-01-01-017`
-
-**Sual:** Sözlə ifadə olunan miqyas növü necə adlanır?
-
-- **A)** Ədədi miqyas
-- **B)** Xətti miqyas
-- **C)** Bucaq miqyası
-- **D)** İzahlı miqyas
-
-**Düzgün cavab:** **D) İzahlı miqyas**
-
-**İzah:** '1 sm-də 5 km' kimi sözlə yazılan miqyas izahlı miqyasdır.
-
----
-
-### Sual 18. [Sadə] — TİK: `06-003-0102-0110-01-01-018`
-
-**Sual:** Kəsr şəklində yazılan '1:100 000' miqyası hansı miqyas növünə aiddir?
-
-- **A)** Ədədi miqyas
-- **B)** İzahlı miqyas
-- **C)** Xətti miqyas
-- **D)** Dərəcə miqyası
-
-**Düzgün cavab:** **A) Ədədi miqyas**
-
-**İzah:** Surəti 1 olan kəsr şəklində yazılan miqyas ədədi miqyas adlanır.
-
----
-
-### Sual 19. [Sadə] — TİK: `06-003-0102-0110-01-01-019`
-
-**Sual:** Bölgülərə ayrılmış xətt şəklində təsvir edilən miqyas növü hansıdır?
-
-- **A)** Ədədi miqyas
-- **B)** İzahlı miqyas
-- **C)** Xətti miqyas
-- **D)** Rəqəmli miqyas
-
-**Düzgün cavab:** **C) Xətti miqyas**
-
-**İzah:** Pərgar və xətkeşlə birbaşa ölçmə aparmaq üçün xətti miqyas tətbiq olunur.
-
----
-
-### Sual 20. [Sadə] — TİK: `06-003-0102-0110-01-01-020`
-
-**Sual:** Məhəllə və ya məktəb həyəti hansı məkan miqyasına aid edilir?
-
-- **A)** Qlobal miqyas
-- **B)** Regional miqyas
-- **C)** Lokal miqyas
-- **D)** Materik miqyası
-
-**Düzgün cavab:** **C) Lokal miqyas**
-
-**İzah:** Kiçik bir ərazi, məktəb həyəti və ya kənd lokal miqyas hesab olunur.
-
----
-
-### Sual 21. [Orta] — TİK: `06-003-0102-0120-02-02-021`
-
-**Sual:** 1:500 000 ədədi miqyası izahlı miqyasa çevirdikdə 1 sm-də neçə kilometr olar?
-
-- **A)** 50 km
-- **B)** 500 km
-- **C)** 0.5 km
-- **D)** 5 km
-
-**Düzgün cavab:** **D) 5 km**
-
-**İzah:** Santimetri kilometrə çevirmək üçün 5 sıfır silinir: $500\,000\text{ sm} = 5\text{ km}$.
-
----
-
-### Sual 22. [Orta] — TİK: `06-003-0102-0120-02-02-022`
-
-**Sual:** Miqyası 1:200 000 olan xəritədə iki məntəqə arasındakı məsafə 4 sm-dir. Həqiqi məsafə neçə kilometrdir?
-
-- **A)** 80 km
-- **B)** 2 km
-- **C)** 8 km
-- **D)** 40 km
-
-**Düzgün cavab:** **C) 8 km**
-
-**İzah:** $1\text{ sm} = 2\text{ km}$. Həqiqi məsafə: $4\text{ sm} \times 2\text{ km} = 8\text{ km}$.
-
----
-
-### Sual 23. [Orta] — TİK: `06-003-0102-0120-02-02-023`
-
-**Sual:** İki şəhər arasındakı həqiqi məsafə 150 km-dir. 1:3 000 000 miqyaslı xəritədə bu məsafə neçə santimetr olar?
-
-- **A)** 50 sm
-- **B)** 5 sm
-- **C)** 2 sm
-- **D)** 15 sm
-
-**Düzgün cavab:** **B) 5 sm**
-
-**İzah:** $1\text{ sm} = 30\text{ km}$. Xəritədəki məsafə: $150 / 30 = 5\text{ sm}$.
-
----
-
-### Sual 24. [Orta] — TİK: `06-003-0102-0120-02-02-024`
-
-**Sual:** Hansı xəritədə ərazi daha ətraflı və böyük miqyasla təsvir olunur?
-
-- **A)** 1:1 000 000 miqyaslı xəritədə
-- **B)** 1:5 000 000 miqyaslı xəritədə
-- **C)** 1:25 000 miqyaslı xəritədə
-- **D)** 1:10 000 000 miqyaslı xəritədə
-
-**Düzgün cavab:** **C) 1:25 000 miqyaslı xəritədə**
-
-**İzah:** Məxrəci kiçik olan miqyas daha böyükdür və ərazini daha təfərrüatlı göstərir.
-
----
-
-### Sual 25. [Orta] — TİK: `06-003-0102-0120-02-02-025`
-
-**Sual:** Qlobal miqyaslı tədqiqatlara hansı coğrafi hadisə aid edilir?
-
-- **A)** Məktəbin həyətindəki su arxının təmizlənməsi
-- **B)** Bütün dünyanı əhatə edən qlobal istiləşmə və atmosfer dövranı
-- **C)** Kənddə yeni bir quyunun qazılması
-- **D)** Bir parkda iki ağacın budanması
-
-**Düzgün cavab:** **B) Bütün dünyanı əhatə edən qlobal istiləşmə və atmosfer dövranı**
-
-**İzah:** Bütün Yer kürəsini əhatə edən iqlim və okean prosesləri qlobal miqyaslıdır.
-
----
-
-### Sual 26. [Çətin] — TİK: `06-003-0102-0130-03-03-026`
-
-**Sual:** Miqyası 1:50 000 olan xəritədə sahəsi 12 sm² olan meşə sahəsinin həqiqi sahəsi neçə km²-dir?
-
-- **A)** 3 km²
-- **B)** 6 km²
-- **C)** 12 km²
-- **D)** 30 km²
-
-**Düzgün cavab:** **A) 3 km²**
-
-**İzah:** $1\text{ sm} = 0.5\text{ km} \implies 1\text{ sm}^2 = 0.25\text{ km}^2$. Həqiqi sahə: $12 \times 0.25 = 3\text{ km}^2$.
-
----
-
-### Sual 27. [Çətin] — TİK: `06-003-0102-0130-03-03-027`
-
-**Sual:** Böyük miqyaslı xəritələrin kiçik miqyaslı xəritələrdən əsas üstünlüyü və fərqi nədir?
-
-- **A)** Bütün Yer kürəsini bütövlükdə bir vərəqdə göstərə bilməsi
-- **B)** Xəritənin heç bir miqyas kəsrinin olmaması
-- **C)** Yalnız kosmik fəzanı əks etdirməsi
-- **D)** Ərazinin daha az kiçildilməsi, təhriflərin az olması və kiçik obyektlərin aydın görünməsi
-
-**Düzgün cavab:** **D) Ərazinin daha az kiçildilməsi, təhriflərin az olması və kiçik obyektlərin aydın görünməsi**
-
-**İzah:** Böyük miqyasda kiçiltmə azdır, ona görə relyef, yollar, evlər dəqiq görünür.
-
----
-
-### Sual 28. [Çətin] — TİK: `06-003-0102-0130-03-03-028`
-
-**Sual:** Həqiqi sahəsi 48 km² olan göl 1:200 000 miqyaslı xəritədə neçə sm² sahə tutar?
-
-- **A)** 24 sm²
-- **B)** 48 sm²
-- **C)** 12 sm²
-- **D)** 6 sm²
-
-**Düzgün cavab:** **C) 12 sm²**
-
-**İzah:** $1\text{ sm} = 2\text{ km} \implies 1\text{ sm}^2 = 4\text{ km}^2$. Xəritədəki sahə: $48 / 4 = 12\text{ sm}^2$.
-
----
-
-### Sual 29. [Çətin] — TİK: `06-003-0102-0130-03-03-029`
-
-**Sual:** Məkan tədqiqatlarında lokal, regional və qlobal səviyyələrin qarşılıqlı əlaqəsini göstərən ən düzgün ardıcıllıq hansıdır?
-
-- **A)** Dünya okeanı, kənd mühiti və məktəb həyəti
-- **B)** Abşeron rayonu, məktəb həyəti və kosmik kainat
-- **C)** Məktəb həyəti, Abşeron iqtisadi rayonu və Dünya okeanı
-- **D)** Kosmik kainat, Bakı şəhəri və məktəb həyəti
-
-**Düzgün cavab:** **C) Məktəb həyəti, Abşeron iqtisadi rayonu və Dünya okeanı**
-
-**İzah:** Lokal ən kiçik mühit, regional ölkə/əyalət daxili, qlobal isə planetar miqyasdır.
-
----
-
-### Sual 30. [Çətin] — TİK: `06-003-0102-0130-03-03-030`
-
-**Sual:** Əgər xəritənin miqyası 5 dəfə böyüdülərsə, xəritədə təsvir olunan eyni sahə neçə dəfə artar?
-
-- **A)** 5 dəfə
-- **B)** 10 dəfə
-- **C)** 25 dəfə
-- **D)** 125 dəfə
-
-**Düzgün cavab:** **C) 25 dəfə**
-
-**İzah:** Xətti ölçü $k$ dəfə artanda, sahə $k^2$ dəfə artır: $5^2 = 25$ dəfə artar.
-
----
-
-## 2.1. Məkanın təsvir edilməsi
-
-### Sual 31. [Sadə] — TİK: `06-003-0103-0110-01-01-031`
-
-**Sual:** Yerin kiçik bir sahəsinin kağız üzərində şərti işarələrlə böyük miqyasda kiçildilmiş təsviri necə adlanır?
-
-- **A)** Qlobus
-- **B)** Yarımkürələr xəritəsi
-- **C)** Ərazinin planı
-- **D)** Kosmik fotoşəkil
-
-**Düzgün cavab:** **C) Ərazinin planı**
-
-**İzah:** Plan kiçik ərazinin təfərrüatlı, böyük miqyaslı təsviridir.
-
----
-
-### Sual 32. [Sadə] — TİK: `06-003-0103-0110-01-01-032`
-
-**Sual:** Üfüqün cəhətlərini və istiqaməti dəqiq müəyyən etmək üçün istifadə olunan cihaz hansıdır?
-
-- **A)** Kompas
-- **B)** Termometr
-- **C)** Barometr
-- **D)** Hiqrometr
-
-**Düzgün cavab:** **A) Kompas**
-
-**İzah:** Kompas maqnit əqrəbi vasitəsilə şimal-cənub istiqamətini göstərir.
-
----
-
-### Sual 33. [Sadə] — TİK: `06-003-0103-0110-01-01-033`
-
-**Sual:** Şimal istiqaməti ilə verilmiş obyekt arasındakı saat əqrəbi istiqamətində ölçülən dərəcə bucağı necə adlanır?
-
-- **A)** Ekvator
-- **B)** Meridian
-- **C)** Azimut
-- **D)** Paralel
-
-**Düzgün cavab:** **C) Azimut**
-
-**İzah:** Şimalla hər hansı istiqamət arasındakı 0°-360° bucaq azimut adlanır.
-
----
-
-### Sual 34. [Sadə] — TİK: `06-003-0103-0110-01-01-034`
-
-**Sual:** Şərq istiqamətinin azimutu neçə dərəcəyə bərabərdir?
-
-- **A)** 180°
-- **B)** 90°
-- **C)** 270°
-- **D)** 360°
-
-**Düzgün cavab:** **B) 90°**
-
-**İzah:** Şimal = 0° (360°), Şərq = 90°, Cənub = 180°, Qərb = 270°.
-
----
-
-### Sual 35. [Sadə] — TİK: `06-003-0103-0110-01-01-035`
-
-**Sual:** Planda tək dayanan ağac və ya su quyusu hansı şərti işarələrlə göstərilir?
-
-- **A)** Miqyassız şərti işarələrlə
-- **B)** Xətti şərti işarələrlə
-- **C)** Sahəvi şərti işarələrlə
-- **D)** Rəngli konturlarla
-
-**Düzgün cavab:** **A) Miqyassız şərti işarələrlə**
-
-**İzah:** Tək dayanan obyektlər (quyu, dəyirman) miqyassız nöqtəvi işarələrlə verilir.
-
----
-
-### Sual 36. [Orta] — TİK: `06-003-0103-0120-02-02-036`
-
-**Sual:** Ərazinin planında çaylar, avtomobil yolları və rabitə xətləri hansı şərti işarələrlə təsvir olunur?
-
-- **A)** Miqyassız şərti işarələrlə
-- **B)** Sahəvi şərti işarələrlə
-- **C)** Yalnız rəqəmlərlə
-- **D)** Xətti şərti işarələrlə
-
-**Düzgün cavab:** **D) Xətti şərti işarələrlə**
-
-**İzah:** Uzunluğu olan ensiz obyektlər (çay, boru kəməri, dəmir yolu) xətti işarələrlə verilir.
-
----
-
-### Sual 37. [Orta] — TİK: `06-003-0103-0120-02-02-037`
-
-**Sual:** Turist meşəyə 225° azimutla daxil olmuşdur. Geri qayıtmaq üçün o, hansı azimutla hərəkət etməlidir?
-
-- **A)** 90°
-- **B)** 45°
-- **C)** 135°
-- **D)** 270°
-
-**Düzgün cavab:** **B) 45°**
-
-**İzah:** Əks azimut düsturu: $225° - 180° = 45°$ (Şimal-Şərq).
-
----
-
-### Sual 38. [Orta] — TİK: `06-003-0103-0120-02-02-038`
-
-**Sual:** Məhəllədə tədqiqat apararkən bir nöqtədən ətrafdakı bütün obyektləri görməklə plan almaq üsulu necə adlanır?
-
-- **A)** Qütb planalması
-- **B)** Marşrut planalması
-- **C)** Gözəyarı qaçış
-- **D)** Aerofototədqiqat
-
-**Düzgün cavab:** **A) Qütb planalması**
-
-**İzah:** Müşahidəçi açıq təpədə durub ətrafı çəkirsə, bu qütb planalmasıdır.
-
----
-
-### Sual 39. [Orta] — TİK: `06-003-0103-0120-02-02-039`
-
-**Sual:** Planda dəniz səviyyəsindən eyni mütləq hündürlüyə malik nöqtələri birləşdirən qapalı əyri xətlər necə adlanır?
-
-- **A)** Meridianlar
-- **B)** Paralellər
-- **C)** Berqştrixlər
-- **D)** Horizontallar
-
-**Düzgün cavab:** **D) Horizontallar**
-
-**İzah:** Horizontallar hündürlükləri bərabər olan nöqtələri birləşdirən xətlərdir.
-
----
-
-### Sual 40. [Orta] — TİK: `06-003-0103-0120-02-02-040`
-
-**Sual:** Horizontallara perpendikulyar çəkilən və yamacın eniş istiqamətini göstərən qısa xətlər necə adlanır?
-
-- **A)** Berqştrixlər
-- **B)** Azimut xətti
-- **C)** Miqyas bölgüsü
-- **D)** Kollektor xətti
-
-**Düzgün cavab:** **A) Berqştrixlər**
-
-**İzah:** Berqştrix qısa xətt olub hündürlükdən aşağı enişi göstərir.
-
----
-
-### Sual 41. [Çətin] — TİK: `06-003-0103-0130-03-03-041`
-
-**Sual:** Planda təpə ilə çökəkliyi bir-birindən fərqləndirməyin ən dəqiq iki əlaməti hansıdır?
-
-- **A)** Berqştrixlərin kənara və ya daxilə yönəlməsi və mərkəzə doğru rəqəmlərin artması/azalması
-- **B)** Yalnız xəritənin ölçüsü və kağızın qalınlığı
-- **C)** Obyektin yalnız meşədə və ya göldə yerləşməsi
-- **D)** Xətlərin yalnız qırmızı və ya qara rənglə çəkilməsi
-
-**Düzgün cavab:** **A) Berqştrixlərin kənara və ya daxilə yönəlməsi və mərkəzə doğru rəqəmlərin artması/azalması**
-
-**İzah:** Təpədə berqştrix çölə baxır və hündürlük artır, çökəklikdə içəri baxır və azalır.
-
----
-
-### Sual 42. [Çətin] — TİK: `06-003-0103-0130-03-03-042`
-
-**Sual:** Təpənin ətəyinin hündürlüyü 120 m, zirvəsi isə 370 m-dir. Horizontallar 50 metrdən bir çəkilibsə, cəmi neçə kəsmə yüksəkliyi olar?
-
-- **A)** 5 kəsmə yüksəkliyi
-- **B)** 4 kəsmə yüksəkliyi
-- **C)** 7 kəsmə yüksəkliyi
-- **D)** 3 kəsmə yüksəkliyi
-
-**Düzgün cavab:** **A) 5 kəsmə yüksəkliyi**
-
-**İzah:** Nisbi hündürlük: $370 - 120 = 250\text{ m}$. Kəsmə sayı: $250 / 50 = 5$.
-
----
-
-### Sual 43. [Çətin] — TİK: `06-003-0103-0130-03-03-043`
-
-**Sual:** Horizontalların bir-birinə çox yaxın (sıx) yerləşdiyi yamacın coğrafi xüsusiyyəti nədir?
-
-- **A)** Yamacın tamamilə hamar və düzənlik olması
-- **B)** Yamacın çox dik və sıldırım olması
-- **C)** Ərazidə yalnız dərin gölün yerləşməsi
-- **D)** Ərazidə heç bir küləyin əsməməsi
-
-**Düzgün cavab:** **B) Yamacın çox dik və sıldırım olması**
-
-**İzah:** Horizontallar sıxlaşanda yamac dikləşir, aralı olanda isə maillik azalır.
-
----
-
-### Sual 44. [Çətin] — TİK: `06-003-0103-0130-03-03-044`
-
-**Sual:** Planın xəritədən ən mühüm fərqi nədən ibarətdir?
-
-- **A)** Planda heç bir miqyasdan istifadə edilməməsi
-- **B)** Planda yalnız dənizlərin təsvir olunması
-- **C)** Planda Yerin əyriliyinin nəzərə alınmaması və dərəcə torunun olmaması
-- **D)** Planın yalnız kosmik peyklər tərəfindən çəkilməsi
-
-**Düzgün cavab:** **C) Planda Yerin əyriliyinin nəzərə alınmaması və dərəcə torunun olmaması**
-
-**İzah:** Plan kiçik ərazi üçün olduğundan Yerin kürəviliyi nəzərə alınmır və dərəcə toru çəkilmir.
-
----
-
-### Sual 45. [Çətin] — TİK: `06-003-0103-0130-03-03-045`
-
-**Sual:** Gözəyarı marşrut planalması zamanı xətkeş-vizir xəttinin və планşetin əsas rolu nədir?
-
-- **A)** Yalnız havanın temperaturunu dəqiq ölçmək
-- **B)** Seçilmiş yol boyu hərəkət edərək istiqamət və obyektləri addımla ölçüb kağıza köçürmək
-- **C)** Yerin maqnit qütblərini dəyişdirmək
-- **D)** Yalnız quşların uçuş hündürlüyünü hesablamaq
-
-**Düzgün cavab:** **B) Seçilmiş yol boyu hərəkət edərək istiqamət və obyektləri addımla ölçüb kağıza köçürmək**
-
-**İzah:** Marşrut planalmasında yol boyu xətti obyektlər vizirlə tuşlanıb ardıcıl təsvir edilir.
-
----
-
-## 2.2. Məkanın kodlaşdırılması
-
-### Sual 46. [Sadə] — TİK: `06-003-0104-0110-01-01-046`
-
-**Sual:** Yerin kiçildilmiş ən dəqiq və təhrifsiz kürəvi modeli necə adlanır?
-
-- **A)** Qlobus
-- **B)** Xəritə
-- **C)** Plan
-- **D)** Atlas
-
-**Düzgün cavab:** **A) Qlobus**
-
-**İzah:** Qlobus Yerin kürəviliyini təhrifsiz əks etdirən modeldir.
-
----
-
-### Sual 47. [Sadə] — TİK: `06-003-0104-0110-01-01-047`
-
-**Sual:** Yer kürəsini Şimal və Cənub yarımkürələrinə bölən ən böyük xəyali çevrə hansıdır?
-
-- **A)** Ekvator
-- **B)** Qrinviç
-- **C)** Şimal qütbü
-- **D)** Cənub qütbü
-
-**Düzgün cavab:** **A) Ekvator**
-
-**İzah:** 0° enlik çevrəsi olan Ekvator Yeri Şimal və Cənub yarımkürələrinə ayırır.
-
----
-
-### Sual 48. [Sadə] — TİK: `06-003-0104-0110-01-01-048`
-
-**Sual:** Şimal və Cənub qütblərini ən qısa yolla birləşdirən xəyali yarımdairələr necə adlanır?
-
-- **A)** Paralellər
-- **B)** Ekvator xətləri
-- **C)** Horizontallar
-- **D)** Meridianlar
-
-**Düzgün cavab:** **D) Meridianlar**
-
-**İzah:** Qütbləri birləşdirən şaquli xətlər meridianlardır (hamısı 20004 km bərabərdir).
-
----
-
-### Sual 49. [Sadə] — TİK: `06-003-0104-0110-01-01-049`
-
-**Sual:** Yer kürəsini Şərq və Qərb yarımkürələrinə ayıran 0°-li Baş meridian hansı şəhərin rəsədxanasından keçir?
-
-- **A)** Paris şəhərindən
-- **B)** Roma şəhərindən
-- **C)** London yaxınlığındakı Qrinviçdən
-- **D)** Bakı şəhərindən
-
-**Düzgün cavab:** **C) London yaxınlığındakı Qrinviçdən**
-
-**İzah:** 0° Baş meridian London yaxınlığındakı Qrinviç rəsədxanasından keçir.
-
----
-
-### Sual 50. [Sadə] — TİK: `06-003-0104-0110-01-01-050`
-
-**Sual:** Müasir dövrdə coğrafi məlumatların kompüterdə saxlanması və xəritələşdirilməsi sistemi necə adlanır?
-
-- **A)** Elektron kompas naviqasiyası
-- **B)** Avtomat saat vaxt mexanizmi
-- **C)** Qlobal rabitə poçt şəbəkəsi
-- **D)** Coğrafi informasiya sistemləri
-
-**Düzgün cavab:** **D) Coğrafi informasiya sistemləri**
-
-**İzah:** CİS (GIS) rəqəmsal məkan məlumatlarını təhlil edən və xəritə quran texnologiyadır.
-
----
-
-### Sual 51. [Orta] — TİK: `06-003-0104-0120-02-02-051`
-
-**Sual:** Ekvatordan qütblərə doğru getdikcə paralel çevrələrinin uzunluğu necə dəyişir?
-
-- **A)** Tədricən uzanır və ikiqat böyüyür
-- **B)** Tamamilə dəyişməz və bərabər qalır
-- **C)** Əvvəlcə uzanır, sonra qısalır
-- **D)** Tədricən qısalır və qütblərdə nöqtəyə çevrilir
-
-**Düzgün cavab:** **D) Tədricən qısalır və qütblərdə nöqtəyə çevrilir**
-
-**İzah:** Ekvator 40076 km olub ən uzundur, qütbə getdikcə paralellər qısalır və 90°-də nöqtə olur.
-
----
-
-### Sual 52. [Orta] — TİK: `06-003-0104-0120-02-02-052`
-
-**Sual:** Coğrafi koordinatlar hansı iki əsas göstərici ilə müəyyən olunur?
-
-- **A)** Havanın temperaturu və təzyiqi ilə
-- **B)** Coğrafi enlik və coğrafi uzunluq ilə
-- **C)** Yerin fırlanma sürəti və meyilliyi ilə
-- **D)** Dənizin dərinliyi və duzluluğu ilə
-
-**Düzgün cavab:** **B) Coğrafi enlik və coğrafi uzunluq ilə**
-
-**İzah:** Hər nöqtənin ünvanı enlik (ekvatordan dərəcə) və uzunluq (Qrinviçdən dərəcə) ilə tapılır.
-
----
-
-### Sual 53. [Orta] — TİK: `06-003-0104-0120-02-02-053`
-
-**Sual:** Azərbaycan Respublikası hansı coğrafi yarımkürələrdə yerləşir?
-
-- **A)** Cənub və Qərb yarımkürələrində
-- **B)** Şimal və Qərb yarımkürələrində
-- **C)** Şimal və Şərq yarımkürələrində
-- **D)** Cənub və Şərq yarımkürələrində
-
-**Düzgün cavab:** **C) Şimal və Şərq yarımkürələrində**
-
-**İzah:** Azərbaycan ekvatordan şimalda (38°-42° Şm.e.) və Qrinviçdən şərqdə (44°-51° Şq.u.) yerləşir.
-
----
-
-### Sual 54. [Orta] — TİK: `06-003-0104-0120-02-02-054`
-
-**Sual:** Fiziki xəritələrdə düzənliklər və ovalıqlar adətən hansı rənglə təsvir edilir?
-
-- **A)** Yaşıl rənglə
-- **B)** Qəhvəyi rənglə
-- **C)** Mavi rənglə
-- **D)** Ağ rənglə
-
-**Düzgün cavab:** **A) Yaşıl rənglə**
-
-**İzah:** Hündürlüyü 200 m-dək olan ovalıqlar yaşıl, dağlar qəhvəyi, dənizlər mavi verilir.
-
----
-
-### Sual 55. [Orta] — TİK: `06-003-0104-0120-02-02-055`
-
-**Sual:** Meridian üzrə 1°-lik qövsün orta uzunluğu neçə kilometrə bərabərdir?
-
-- **A)** 400 km
-- **B)** 55.5 km
-- **C)** 111.1 km
-- **D)** 10 km
-
-**Düzgün cavab:** **C) 111.1 km**
-
-**İzah:** Bütün meridianlar eynidir: $40\,008 / 360° \approx 111.1\text{ km}$.
-
----
-
-### Sual 56. [Çətin] — TİK: `06-003-0104-0130-03-03-056`
-
-**Sual:** Ekvator xətti üzərində yerləşən A (20° Şq.u.) və B (50° Şq.u.) məntəqələri arasındakı ən qısa məsafə neçə kilometrdir?
-
-- **A)** 3333 km
-- **B)** 1110 km
-- **C)** 5550 km
-- **D)** 2220 km
-
-**Düzgün cavab:** **A) 3333 km**
-
-**İzah:** Dərəcə fərqi: $50° - 20° = 30°$. Ekvatorda $1° \approx 111.1\text{ km} \implies 30 \times 111.1 = 3333\text{ km}$.
-
----
-
-### Sual 57. [Çətin] — TİK: `06-003-0104-0130-03-03-057`
-
-**Sual:** Xəritələrdə təhriflərin (şəkil dəyişmələrinin) yaranmasının əsas həndəsi səbəbi nədir?
-
-- **A)** Xəritəçəkən mütəxəssislərin riyazi hesablamaları bilməməsi
-- **B)** Kürə səthinin müstəviyə qırılmadan köçürülməsinin mümkünsüzlüyü
-- **C)** Kağız vərəqlərinin günəş istisindən quruyaraq büzüşməsi
-- **D)** Yerin daxilində vulkan və zəlzələlərin tez-tez baş verməsi
-
-**Düzgün cavab:** **B) Kürə səthinin müstəviyə qırılmadan köçürülməsinin mümkünsüzlüyü**
-
-**İzah:** Kürə səthini müstəviyə cırmadan sərə bilməzsən; buna görə sahə, bucaq və forma təhrifləri qaçılmazdır.
-
----
-
-### Sual 58. [Çətin] — TİK: `06-003-0104-0130-03-03-058`
-
-**Sual:** Eyni meridian üzərində yerləşən 10° Şm.e. və 40° Şm.e. nöqtələri arasındakı məsafə neçə kilometrdir?
-
-- **A)** 1111 km
-- **B)** 4444 km
-- **C)** 2222 km
-- **D)** 3333 km
-
-**Düzgün cavab:** **D) 3333 km**
-
-**İzah:** Dərəcə fərqi: $40° - 10° = 30°$. Meridian üzrə: $30 \times 111.1 = 3333\text{ km}$.
-
----
-
-### Sual 59. [Çətin] — TİK: `06-003-0104-0130-03-03-059`
-
-**Sual:** Naviqasiya cihazlarında və smartfonlarda GPS texnologiyasının yerimizi dəqiq tapması hansı prinsipə əsaslanır?
-
-- **A)** Yalnız yeraltı maqnit filizlərinin hərəkətini izləməyə
-- **B)** Peyklərdən gələn siqnallar vasitəsilə nöqtənin coğrafi enlik, uzunluq və hündürlüyünün hesablanmasına
-- **C)** Küləyin istiqamətinə görə təxmini yer təyin etməyə
-- **D)** Yalnız günəşin kölgəsinin ölçülməsinə
-
-**Düzgün cavab:** **B) Peyklərdən gələn siqnallar vasitəsilə nöqtənin coğrafi enlik, uzunluq və hündürlüyünün hesablanmasına**
-
-**İzah:** GPS peykləri ən azı 3-4 peyk siqnalının zaman fərqi ilə dəqiq koordinat hesablayır.
-
----
-
-### Sual 60. [Çətin] — TİK: `06-003-0104-0130-03-03-060`
-
-**Sual:** Qütb ərazilərində bütün meridianların bir nöqtədə kəsişməsinin ən maraqlı coğrafi nəticəsi nədir?
-
-- **A)** Orada saat qurşaqlarının heç vaxt işləməməsi
-- **B)** Şimal qütb nöqtəsində duran insan üçün bütün istiqamətlərin yalnız cənuba doğru olması
-- **C)** Qütbdə havanın hər gün 40 dərəcə isti olması
-- **D)** Orada Yerin cazibə qüvvəsinin sıfıra bərabər olması
-
-**Düzgün cavab:** **B) Şimal qütb nöqtəsində duran insan üçün bütün istiqamətlərin yalnız cənuba doğru olması**
-
-**İzah:** 90° Şm. qütbündə hər yana baxsan, istiqamət ancaq Cənubdur; Qütb bütün meridianların zirvəsidir.
-
----
-
-## 3.1. Ərazidə tədqiqat
-
-### Sual 61. [Sadə] — TİK: `06-003-0105-0110-01-01-061`
-
-**Sual:** Coğrafi tədqiqatların təbii şəraitdə, bilavasitə əraziyə gedərək aparılan mərhələsi necə adlanır?
-
-- **A)** Çöl tədqiqatı
-- **B)** Kameral tədqiqat
-- **C)** Nəzəri təhlil
-- **D)** Laboratoriya sınağı
-
-**Düzgün cavab:** **A) Çöl tədqiqatı**
-
-**İzah:** Ərazidə müşahidə, ölçmə və nümunə toplama çöl tədqiqatı adlanır.
-
----
-
-### Sual 62. [Sadə] — TİK: `06-003-0105-0110-01-01-062`
-
-**Sual:** Çöl tədqiqatı zamanı məsafələri dəqiq ölçmək üçün istifadə olunan əsas alət hansıdır?
-
-- **A)** Ölçü lenti
-- **B)** Termometr
-- **C)** Barometr
-- **D)** Hiqrometr
-
-**Düzgün cavab:** **A) Ölçü lenti**
-
-**İzah:** Məsafələri santimetr və metr dəqiqliyi ilə ölçmək üçün ruletka işlədilir.
-
----
-
-### Sual 63. [Sadə] — TİK: `06-003-0105-0110-01-01-063`
-
-**Sual:** Ərazidə atmosfer təzyiqini ölçmək üçün coğrafiyaçının tədqiqat çantasında hansı cihaz olmalıdır?
-
-- **A)** Termometr
-- **B)** Hiqrometr
-- **C)** Anemometr
-- **D)** Barometr
-
-**Düzgün cavab:** **D) Barometr**
-
-**İzah:** Atmosfer təzyiqini ölçən cihaz barometr (aneroid) adlanır.
-
----
-
-### Sual 64. [Sadə] — TİK: `06-003-0105-0110-01-01-064`
-
-**Sual:** Çöl tədqiqatından toplanmış məlumatların otaq və laboratoriya şəraitində işlənməsi mərhələsi necə adlanır?
-
-- **A)** Çöl mərhələsi
-- **B)** Hazırlıq mərhələsi
-- **C)** Kameral mərhələ
-- **D)** Kəşfiyyat mərhələsi
-
-**Düzgün cavab:** **C) Kameral mərhələ**
-
-**İzah:** Toplanan qaya, torpaq və ölçmələrin kabinetdə təhlili kameral mərhələdir.
-
----
-
-### Sual 65. [Sadə] — TİK: `06-003-0105-0110-01-01-065`
-
-**Sual:** Havanın rütubətini ölçmək üçün istifadə edilən cihaz hansıdır?
-
-- **A)** Hiqrometr
-- **B)** Termometr
-- **C)** Barometr
-- **D)** Kompas
-
-**Düzgün cavab:** **A) Hiqrometr**
-
-**İzah:** Havadakı su buxarının miqdarını (rütubəti) hiqrometr ölçür.
-
----
-
-### Sual 66. [Orta] — TİK: `06-003-0105-0120-02-02-066`
-
-**Sual:** Çöl tədqiqatına çıxmazdan əvvəl həyata keçirilən hazırlıq mərhələsinin əsas vəzifəsi nədir?
-
-- **A)** Ərazidə dərin qazıntılar aparıb tədqiqat quyuları qazmaq
-- **B)** Marşrutu seçmək, xəritə və cihazları təlimata uyğun hazırlamaq
-- **C)** Toplanmış süxur nümunələrini dərhal muzeyə təhvil vermək
-- **D)** Yekun elmi hesabatı hazırlayıb qəzetlərdə nəşr etdirmək
-
-**Düzgün cavab:** **B) Marşrutu seçmək, xəritə və cihazları təlimata uyğun hazırlamaq**
-
-**İzah:** Hazırlıq mərhələsində plan, xəritə, tədqiqat çantası və marşrut dəqiqləşdirilir.
-
----
-
-### Sual 67. [Orta] — TİK: `06-003-0105-0120-02-02-067`
-
-**Sual:** Məktəb həyətində havanın temperaturunu ölçərkən termometrin günəş şüalarının birbaşa altına qoyulmamasının səbəbi nədir?
-
-- **A)** Termometrin şüşəsinin dərhal partlamasını təmin etmək
-- **B)** Cihazın heç bir rəqəm göstərməməsinə nail olmaq
-- **C)** Günəş şüasının cihazı qızdıraraq havanın real hərarətindən xeyli yüksək göstərməsinin qarşısını almaq
-- **D)** Termometrin batareyasının bitməsini əngəlləmək
-
-**Düzgün cavab:** **C) Günəş şüasının cihazı qızdıraraq havanın real hərarətindən xeyli yüksək göstərməsinin qarşısını almaq**
-
-**İzah:** Havanın temperaturu həmişə kölgədə, yerdən 2 metr hündürlükdə ölçülməlidir.
-
----
-
-### Sual 68. [Orta] — TİK: `06-003-0105-0120-02-02-068`
-
-**Sual:** Çay dərəsində çöl tədqiqatı aparan şagird suyun axın sürətini ən sadə yolla necə təyin edə bilər?
-
-- **A)** Suya üzgəc ataraq saniyəölçənlə keçdiyi zamanı qeyd etməklə
-- **B)** Çayın bütün suyunu böyük çənlərə boşaldıb çəkisini ölçməklə
-- **C)** Çayın üzərində dərhal yeni taxta körpü inşa etməklə
-- **D)** Çaya iri qaya daşları atıb çıxan əks-səsi dinləməklə
-
-**Düzgün cavab:** **A) Suya üzgəc ataraq saniyəölçənlə keçdiyi zamanı qeyd etməklə**
-
-**İzah:** Məsafə / Zaman düsturu ilə suyun üzərində üzən cismin sürəti tapılır.
-
----
-
-### Sual 69. [Orta] — TİK: `06-003-0105-0120-02-02-069`
-
-**Sual:** Torpaq nümunəsi götürərkən onun profilini və qatlarını öyrənmək üçün hansı üsul tətbiq edilir?
-
-- **A)** Torpaq nümunəsi xüsusi sobada yüksək istilikdə yandırılır
-- **B)** Torpaq kəsilişi qazılaraq qatların xüsusiyyətləri öyrənilir
-- **C)** Torpaq qaynayan suya atılaraq kimyəvi tərkibi sınaqdan keçirilir
-- **D)** Torpaq uzaq məsafədən heç bir alət olmadan seyr edilir
-
-**Düzgün cavab:** **B) Torpaq kəsilişi qazılaraq qatların xüsusiyyətləri öyrənilir**
-
-**İzah:** Torpaqşünaslar şurf qazaraq çürüntü, keçid və ana süxur qatlarını ayırırlar.
-
----
-
-### Sual 70. [Orta] — TİK: `06-003-0105-0120-02-02-070`
-
-**Sual:** Çöl tədqiqatında toplanan süxur nümunələrinin etiketlənməsinin (üzərinə qeyd yazılmasının) vacibliyi nədir?
-
-- **A)** Nümunənin haradan, hansı dərinlikdən və nə vaxt tapıldığını yazmaq
-- **B)** Nümunəni xarici ölkələrə baha qiymətə satmaq üçün qeydiyyata almaq
-- **C)** Nümunənin rəngini xüsusi boyalarla dərhal dəyişdirməyə çalışmaq
-- **D)** Daşın ümumi ağırlığını və həcmini süni şəkildə azaltmaq
-
-**Düzgün cavab:** **A) Nümunənin haradan, hansı dərinlikdən və nə vaxt tapıldığını yazmaq**
-
-**İzah:** Etiketsiz süxur elmi dəyərini itirir, çünki onun tapıldığı geoloji qat bilinməz.
-
----
-
-### Sual 71. [Çətin] — TİK: `06-003-0105-0130-03-03-071`
-
-**Sual:** Çöl tədqiqatının üç əsas mərhələsinin məntiqi və elmi ardıcıllığı hansı bənddə düzgün göstərilmişdir?
-
-- **A)** Kameral mərhələ $\to$ Hazırlıq mərhələsi $\to$ Çöl mərhələsi
-- **B)** Hazırlıq mərhələsi $\to$ Çöl-tədqiqat mərhələsi $\to$ Kameral mərhələ
-- **C)** Çöl mərhələsi $\to$ Hazırlıq mərhələsi $\to$ Kameral mərhələ
-- **D)** Hesabat nəşri $\to$ Çöl mərhələsi $\to$ Cihaz seçimi
-
-**Düzgün cavab:** **B) Hazırlıq mərhələsi $\to$ Çöl-tədqiqat mərhələsi $\to$ Kameral mərhələ**
-
-**İzah:** Əvvəlcə plan və hazırlıq görülür, sonra çöldə ölçmələr aparılır, sonda nəticələr işlənir.
-
----
-
-### Sual 72. [Çətin] — TİK: `06-003-0105-0130-03-03-072`
-
-**Sual:** Dağın ətəyində barometr 760 mm c.st., zirvəsində isə 560 mm c.st. göstərir. Dağın nisbi hündürlüyü neçə metrdir?
-
-- **A)** 200 metr
-- **B)** 1000 metr
-- **C)** 2000 metr
-- **D)** 1500 metr
-
-**Düzgün cavab:** **C) 2000 metr**
-
-**İzah:** Təzyiq fərqi: $760 - 560 = 200\text{ mm c.st.}$ Hər 10 m-də 1 mm düşür $\implies 200 \times 10 = 2000\text{ m}$.
-
----
-
-### Sual 73. [Çətin] — TİK: `06-003-0105-0130-03-03-073`
-
-**Sual:** Ərazidə ekoloji monitorinq apararkən çirklənmənin mənbəyini təyin etmək üçün ən düzgün elmi metod hansıdır?
-
-- **A)** Yalnız bir dəfə suyun rənginə baxaraq çirklənmə dərəcəsini seçmək
-- **B)** Suyun dadına baxaraq hansı zəhərli maddənin olduğunu yoxlamaq
-- **C)** Çirklənmə haqqında yalnız yerli sakinlərin şayiələrini dinləmək
-- **D)** Çay boyu müxtəlif nöqtələrdən su götürüb kimyəvi tərkibi tutuşdurmaq
-
-**Düzgün cavab:** **D) Çay boyu müxtəlif nöqtələrdən su götürüb kimyəvi tərkibi tutuşdurmaq**
-
-**İzah:** Müxtəlif nöqtələrdən götürülən laboratoriya analizləri çirklənmənin başladığı zavodu dəqiq tapır.
-
----
-
-### Sual 74. [Çətin] — TİK: `06-003-0105-0130-03-03-074`
-
-**Sual:** Müasir çöl tədqiqatlarında pilotsuz uçuş aparatlarından (dronlardan) istifadənin ən böyük üstünlüyü nədir?
-
-- **A)** Bütün coğrafiya alimlərini və tədqiqatçıları işsiz qoymaq
-- **B)** Havanın atmosfer təzyiqini bir saniyədə sıfıra endirmək
-- **C)** Çətin ərazilərin yüksək dəqiqlikli aerofoto və 3D modelini almaq
-- **D)** Meşədə yaşayan vəhşi heyvanları və quşları qorxudub qovmaq
-
-**Düzgün cavab:** **C) Çətin ərazilərin yüksək dəqiqlikli aerofoto və 3D modelini almaq**
-
-**İzah:** Dronlar əlçatmaz sıldırımların və meşələrin dəqiq xəritəsini çəkməyə imkan verir.
-
----
-
-### Sual 75. [Çətin] — TİK: `06-003-0105-0130-03-03-075`
-
-**Sual:** Çöl tədqiqatı gündəliyində qeydlərin aparılması zamanı qətiyyən yol verilməməli olan səhv hansıdır?
-
-- **A)** Müşahidənin dəqiq saatını və tarixini qeyd etmək
-- **B)** Cihazın göstəricilərini xüsusi cədvələ daxil etmək
-- **C)** Ərazinin eskiz sxemini çəkmək
-- **D)** Faktları və ölçmə rəqəmlərini yaddaşa arxalanaraq sonraya saxlamaq və yerindəcə yazmamaq
-
-**Düzgün cavab:** **D) Faktları və ölçmə rəqəmlərini yaddaşa arxalanaraq sonraya saxlamaq və yerindəcə yazmamaq**
-
-**İzah:** Tədqiqatçı ölçməni dərhal dəftərə qeyd etməlidir; yaddaşa arxalanmaq məlumatı təhrif edir.
-
----
-
-## 4.1. Səma cisimləri və Yerin hərəkəti
-
-### Sual 76. [Sadə] — TİK: `06-003-0106-0110-01-01-076`
-
-**Sual:** Yerin öz xəyali oxu ətrafında bir tam dövr etməsi neçə saata başa çatır?
-
-- **A)** 12 saata
-- **B)** 48 saata
-- **C)** 24 saata
-- **D)** 365 günə
-
-**Düzgün cavab:** **C) 24 saata**
-
-**İzah:** Yer öz oxu ətrafında qərbdən şərqə 24 saata (1 sutka) fırlanır.
-
----
-
-### Sual 77. [Sadə] — TİK: `06-003-0106-0110-01-01-077`
-
-**Sual:** Yerin öz oxu ətrafında fırlanmasının ən başlıca coğrafi nəticəsi nədir?
-
-- **A)** İlin fəsillərinin yaranması
-- **B)** Qütb parıltısının baş verməsi
-- **C)** Vulkanların püskürməsi
-- **D)** Gecə və gündüzün növbələşməsi
-
-**Düzgün cavab:** **D) Gecə və gündüzün növbələşməsi**
-
-**İzah:** Yerin öz oxu ətrafında dönməsi gecə və gündüzü yaradır.
-
----
-
-### Sual 78. [Sadə] — TİK: `06-003-0106-0110-01-01-078`
-
-**Sual:** Yerin Günəş ətrafında tam bir dövr etmə müddəti nə qədərdir?
-
-- **A)** 365 gün 6 saat
-- **B)** 30 gün
-- **C)** 24 saat
-- **D)** 100 gün
-
-**Düzgün cavab:** **A) 365 gün 6 saat**
-
-**İzah:** Yer Günəş ətrafında orbit üzrə 365 gün 6 saata (1 il) dövr edir.
-
----
-
-### Sual 79. [Sadə] — TİK: `06-003-0106-0110-01-01-079`
-
-**Sual:** Yerin təbii peyki olan və gecələr Yeri işıqlandıran səma cismi hansıdır?
-
-- **A)** Mars
-- **B)** Venera
-- **C)** Yupiter
-- **D)** Ay
-
-**Düzgün cavab:** **D) Ay**
-
-**İzah:** Ay Yerin yeganə təbii peykidir və 27.3 günə Yerin ətrafında fırlanır.
-
----
-
-### Sual 80. [Sadə] — TİK: `06-003-0106-0110-01-01-080`
-
-**Sual:** Şimal yarımkürəsində ən uzun gün və ən qısa gecə hansı tarixdə qeydə alınır?
-
-- **A)** 22 dekabr tarixində
-- **B)** 21 mart tarixində
-- **C)** 23 sentyabr tarixində
-- **D)** 22 iyun tarixində
-
-**Düzgün cavab:** **D) 22 iyun tarixində**
-
-**İzah:** 22 iyun Yay Günəşduruşunda Şimal yarımkürəsində ən uzun gün olur.
-
----
-
-### Sual 81. [Orta] — TİK: `06-003-0106-0120-02-02-081`
-
-**Sual:** Yer kürəsində ilin 4 fəslinin yaranmasının əsas iki astronomik səbəbi hansıdır?
-
-- **A)** Yerin yalnız öz oxu ətrafında sutkalıq sürətlə fırlanması
-- **B)** Ayın Yerin ətrafında daimi cazibə ilə hərəkət etməsi
-- **C)** Yerin Günəş ətrafında hərəkəti və oxunun 66.5° meyilli olması
-- **D)** Günəş ləkələrinin vaxtaşırı partlayaraq alov saçması
-
-**Düzgün cavab:** **C) Yerin Günəş ətrafında hərəkəti və oxunun 66.5° meyilli olması**
-
-**İzah:** Orbit boyu hərəkət və 66.5°-lik daimi ox meyilliyi Günəş şüalarının bucağını dəyişərək fəsilləri yaradır.
-
----
-
-### Sual 82. [Orta] — TİK: `06-003-0106-0120-02-02-082`
-
-**Sual:** 21 mart və 23 sentyabr tarixlərində Yer kürəsində hansı qlobal hadisə baş verir?
-
-- **A)** Şimal qütbündə altı aylıq qış gecəsi dərhal başlayır
-- **B)** Bütün planetdə havanın temperaturu sıfır dərəcəyə enir
-- **C)** Bütün dənizlərin və okeanların suyu tamamilə çəkilir
-- **D)** Ekvatorda Günəş zenitdə olur və gecə-gündüz bərabərləşir
-
-**Düzgün cavab:** **D) Ekvatorda Günəş zenitdə olur və gecə-gündüz bərabərləşir**
-
-**İzah:** Yaz və Payız gecə-gündüz bərabərliyi günlərində hər yerdə 12 saat gündüz, 12 saat gecə olur.
-
----
-
-### Sual 83. [Orta] — TİK: `06-003-0106-0120-02-02-083`
-
-**Sual:** Təqvimdə hər dörd ildən bir fevral ayının 29 gün (uzun il — 366 gün) olmasının səbəbi nədir?
-
-- **A)** Fevral ayında qışın daha sərt və şaxtalı keçməsi
-- **B)** Hər il yığılan artıq 6 saatın 4 ildə bir gün təşkil etməsi
-- **C)** Ayın dörd ildən bir öz daimi orbitindən çıxması
-- **D)** Bütün planetlərin eyni xətt boyunca düzülməsi
-
-**Düzgün cavab:** **B) Hər il yığılan artıq 6 saatın 4 ildə bir gün təşkil etməsi**
-
-**İzah:** $6\text{ saat} \times 4\text{ il} = 24\text{ saat} = 1\text{ gün}$. Bu gün fevralın sonuna artırılır.
-
 ---
 
-### Sual 84. [Orta] — TİK: `06-003-0106-0120-02-02-084`
+## Mövzu 1: 1.1 Məkan (15 sual)
 
-**Sual:** Şimal yarımkürəsində qış fəsli yaşandığı zaman Cənub yarımkürəsində hansı fəsil yaşanır?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M01-BL1-A-001]`
+**İnsanların yaşadığı, fəaliyyət göstərdiyi və təbii obyektlərlə əhatə olunduğu ərazi necə adlanır?**
 
-- **A)** Yay fəsli
-- **B)** Qış fəsli
-- **C)** Payız fəsli
-- **D)** Yaz fəsli
+- ✅ **A)** Coğrafi məkan
+-    **B)** Hava təbəqəsi
+-    **C)** Yeraltı qat
+-    **D)** Kosmik fəza
 
-**Düzgün cavab:** **A) Yay fəsli**
+> 💡 **İzah:** İnsanların yaşadığı, işlədiyi və təbii obyektlərlə qarşılıqlı əlaqədə olduğu ərazi coğrafi məkan adlanır.
 
-**İzah:** Meyillik səbəbindən Şimalda qış olanda Cənub yarımkürəsi Günəşdən bol istilik alır və yay olur.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M01-BL1-A-002]`
+**Aşağıdakılardan hansı coğrafi məkandakı təbii komponentlərə aid edilir?**
 
----
-
-### Sual 85. [Orta] — TİK: `06-003-0106-0120-02-02-085`
-
-**Sual:** Yerin öz oxu ətrafında qərbdən şərqə fırlanması səbəbindən Günəş və ulduzlar göy üzündə hansı istiqamətdə hərəkət edir görünür?
-
-- **A)** Şərqdən çıxıb qərbə doğru batır
-- **B)** Qərbdən çıxıb şərqə doğru gedir
-- **C)** Cənubdan çıxıb şimala doğru gedir
-- **D)** Hər gün fərqli istiqamətdə hərəkət edir
-
-**Düzgün cavab:** **A) Şərqdən çıxıb qərbə doğru batır**
-
-**İzah:** Yer qərbdən şərqə fırlandığı üçün Günəş əksinə — şərqdən doğub qərbdə batır.
-
----
+-    **A)** Avtomobil yolları
+- ✅ **B)** Yaşayış binaları
+-    **C)** Çaylar və göllər
+-    **D)** Sənaye zavodları
 
-### Sual 86. [Çətin] — TİK: `06-003-0106-0130-03-03-086`
+> 💡 **İzah:** Çaylar, göllər, dağlar, meşələr və relyef formaları məkanın təbii komponentləridir.
 
-**Sual:** Əgər Yerin fırlanma oxu orbit müstəvisinə perpendikulyar (90°) olsaydı, Yer kürəsində hansı qlobal dəyişiklik baş verərdi?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M01-BL1-A-003]`
+**İnsan əməyi nəticəsində məkanda yaradılmış obyektlər necə adlanır?**
 
-- **A)** Gecə və gündüzün növbələşməsi dayanardı
-- **B)** Yerin bütün okeanları dərhal buxarlanıb yox olardı
-- **C)** İlin fəsilləri tamamilə yox olar və hər enlikdə ilboyu eyni hava şəraiti hökm sürərdi
-- **D)** Günəş şərqdən deyil, şimaldan doğardı
+-    **A)** Antropogen obyektlər
+-    **B)** Geoloji süxurlar
+- ✅ **C)** Təbii komponentlər
+-    **D)** Təbii landşaftlar
 
-**Düzgün cavab:** **C) İlin fəsilləri tamamilə yox olar və hər enlikdə ilboyu eyni hava şəraiti hökm sürərdi**
+> 💡 **İzah:** İnsanın təsərrüfat fəaliyyəti ilə yaradılmış binalar, yollar, körpülər və s. antropogen obyektlər adlanır.
 
-**İzah:** Fəsillərin yaranmasının yeganə səbəbi 66.5° meyillikdir; 90° olsaydı fəsillər olmazdı.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M01-BL1-A-004]`
+**İnsanın gündəlik həyatında bilavasitə təmasda olduğu yaxın ətraf mühit hansı məkandır?**
 
----
-
-### Sual 87. [Çətin] — TİK: `06-003-0106-0130-03-03-087`
+-    **A)** Regional məkan
+-    **B)** Lokal məkan
+-    **C)** Kosmik məkan
+- ✅ **D)** Qlobal məkan
 
-**Sual:** Qütb dairələrindən (66.5°) qütblərə (90°) doğru getdikcə Qütb gecə və gündüzlərinin müddəti necə dəyişir?
+> 💡 **İzah:** Məktəb, ev və məhəllə kimi insanın bilavasitə yaşadığı yaxın ərazi lokal (yerli) məkan hesab olunur.
 
-- **A)** Hər yerdə sabit on iki saat olaraq qalması
-- **B)** Bir sutkadan altı aya qədər tədricən uzanması
-- **C)** Tədricən qısalaraq bir saata qədər enməsi
-- **D)** Yalnız yay aylarında tamamilə yox olması
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M01-BL1-A-005]`
+**Məkanın təbii xüsusiyyətlərinin fərqlənməsinə birbaşa təsir edən əsas amil hansıdır?**
 
-**Düzgün cavab:** **B) Bir sutkadan altı aya qədər tədricən uzanması**
+- ✅ **A)** Relyef və iqlim
+-    **B)** Şəhər binaları
+-    **C)** Məktəb qaydaları
+-    **D)** Nəqliyyat xətləri
 
-**İzah:** 66.5°-də 1 sutka, 90° qütb nöqtəsində isə 6 ay fasiləsiz qütb günü və 6 ay qütb gecəsi olur.
+> 💡 **İzah:** Məkanların təbii mənzərəsinin fərqlənməsi ilk növbədə relyef quruluşundan və iqlim şəraitindən asılıdır.
 
----
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B01-M01-BL2-O-006]`
+**Kənd və şəhər məkanlarının müqayisəsi zamanı hansı fikir düzgün hesab olunur?**
 
-### Sual 88. [Çətin] — TİK: `06-003-0106-0130-03-03-088`
+-    **A)** Şəhərdə antropogen, kənddə isə təbii mühit ünsürləri üstünlük təşkil edir.
+- ✅ **B)** Kənddə antropogen obyektlər təbii obyektlərdən qat-qat çoxdur.
+-    **C)** Şəhər məkanında təbii komponentlər heç bir dəyişikliyə məruz qalmır.
+-    **D)** Həm şəhər, həm də kənd məkanında insan fəaliyyətinin heç bir izi yoxdur.
 
-**Sual:** Yerin öz oxu ətrafında fırlanması nəticəsində yaranan Koriolis (meyiletmə) qüvvəsinin təbiətdəki təzahürü nədir?
+> 💡 **İzah:** Şəhər mühitində binalar və yollar (antropogen), kənd mühitində isə torpaq, bitki və çaylar (təbii) daha çox nəzərə çarpır.
 
-- **A)** Şimal yarımkürəsində axan çayların və küləklərin sağa, Cənubda isə sola meyil etməsi
-- **B)** Bütün çayların yalnız şimala doğru axması
-- **C)** Dağların hündürlüyünün hər il 1 metr artması
-- **D)** Küləklərin yalnız gecə vaxtı əsməsi
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B01-M01-BL2-O-007]`
+**Dağlıq və düzənlik məkanlarda yaşayan insanların təsərrüfat fəaliyyətindəki fərq nə ilə izah olunur?**
 
-**Düzgün cavab:** **A) Şimal yarımkürəsində axan çayların və küləklərin sağa, Cənubda isə sola meyil etməsi**
+-    **A)** İnsanların təhsil səviyyəsinin eyni olmaması ilə
+-    **B)** Yalnız dövlətlərarası sərhədlərin mövcudluğu ilə
+- ✅ **C)** Məkanın təbii şəraitinin və relyefinin fərqli olması ilə
+-    **D)** Hər iki ərazidə eyni iqlim tipinin formalaşması ilə
 
-**İzah:** Koriolis qüvvəsi hərəkət edən su və hava kütlələrini Şimalda sağa, Cənubda sola əyir.
+> 💡 **İzah:** Təbii şərait və relyef insanların məskunlaşmasına və təsərrüfat sahələrinin (məs. heyvandarlıq, əkinçilik) seçilməsinə birbaşa təsir edir.
 
----
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M01-BL3-O-008]`
+**Məktəb həyətində ağac əkilməsi və abadlıq işlərinin aparılması məkana hansı təsiri göstərir?**
 
-### Sual 89. [Çətin] — TİK: `06-003-0106-0130-03-03-089`
+-    **A)** Ərazinin qlobal iqlimini dərhal və kökündən tamamilə dəyişir.
+-    **B)** Təbii komponentlərin məkan daxilində tamamilə məhvinə səbəb olur.
+-    **C)** Məkanın coğrafi koordinatlarının dəyişməsinə gətirib çıxarır.
+- ✅ **D)** Lokal məkanın ekoloji vəziyyətini yaxşılaşdırır və gözəlləşdirir.
 
-**Sual:** Günəş və Ay tutulması hadisələrinin astronomik mexanizmi hansı bənddə düzgün izah olunmuşdur?
+> 💡 **İzah:** Lokal məkanda yaşıllaşdırma və abadlaşdırma yerli ekoloji mühiti sağlamlaşdırır və məkanı abad edir.
 
-- **A)** Yalnız buludlar Günəşin qarşısını kəsəndə Günəş tutulur
-- **B)** Ay tutulması zamanı Ayın tamamilə parçalanması baş verir
-- **C)** Ay Günəşlə Yerin arasına keçdikdə Günəş, Yer Günəşlə Ayın arasına keçdikdə Ay tutulur
-- **D)** Günəş tutulması yalnız qış aylarında baş verir
+### Sual 9 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M01-BL3-O-009]`
+**Verilmiş xüsusiyyətlərdən hansı məkanın düzgün planlaşdırılmasının nəticəsidir?**
 
-**Düzgün cavab:** **C) Ay Günəşlə Yerin arasına keçdikdə Günəş, Yer Günəşlə Ayın arasına keçdikdə Ay tutulur**
+- ✅ **A)** Yaşayış binalarının sənaye zavodlarının içərisində tikilməsi
+-    **B)** Parkların, yolların və binaların bir-birinə mane olmadan yerləşməsi
+-    **C)** Bütün meşəlik ərazilərin tamamilə qırılaraq asfaltlanması
+-    **D)** Çay yataqlarının zibillənməsi və suyun axınının kəsilməsi
 
-**İzah:** Düz xətt üzrə kölgə düşməsi: Ay kölgəsi Yerə düşəndə Günəş, Yer kölgəsi Aya düşəndə Ay tutulur.
+> 💡 **İzah:** Məkanın düzgün planlaşdırılması insanların rahat yaşaması üçün təbii və süni obyektlərin harmonik yerləşdirilməsini təmin edir.
 
----
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M01-BL3-O-010]`
+**Məkanın təbii komponenti olan çayın quruması həmin ərazidə ilk növbədə nəyə səbəb olar?**
 
-### Sual 90. [Çətin] — TİK: `06-003-0106-0130-03-03-090`
+-    **A)** Ərazidə sənaye fabriklərinin sayının sürətlə artmasına
+- ✅ **B)** Bitki örtüyünün və heyvanlar aləminin zəifləməsinə
+-    **C)** Məkanda yağıntıların dərhal normadan çox düşməsinə
+-    **D)** Ərazinin dəniz səviyyəsindən mütləq hündürlüyünün artmasına
 
-**Sual:** Bakı şəhərində (40° Şm.e.) 22 iyun tarixində Günəş şüalarının günorta vaxtı düşmə bucağı neçə dərəcədir?
+> 💡 **İzah:** Su mənbəyinin quruması məkandakı canlıların susuzlaşmasına və bitki örtüyünün məhvinə səbəb olur.
 
-- **A)** 50°
-- **B)** 90°
-- **C)** 26.5°
-- **D)** 73.5°
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M01-BL4-C-011]`
+**İnsan fəaliyyətinin məkana təsirini təhlil edərkən hansı halda təbii tarazlıq pozulmuş hesab olunur?**
 
-**Düzgün cavab:** **D) 73.5°**
+-    **A)** Şəhər daxilində yeni yaşıllıq zolaqlarının və parkların salınması zamanı
+-    **B)** Təbii qoruqların yaradılması və nadir heyvanların qorunması zamanı
+- ✅ **C)** Tullantıların çaylara axıdılması və meşə massivlərinin qırılması zamanı
+-    **D)** Külək və günəş enerjisindən ekoloji təmiz məqsədlərlə istifadə zamanı
 
-**İzah:** Düstur: $h = 90° - \varphi + 23.5° = 90° - 40° + 23.5° = 73.5°$.
+> 💡 **İzah:** Suların çirkləndirilməsi və meşələrin məhv edilməsi məkanda təbii tarazlığı kəskin şəkildə pozur və ekoloji böhran yaradır.
 
----
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M01-BL4-C-012]`
+**Lokal məkan ilə qlobal məkan arasındakı qarşılıqlı əlaqəni düzgün əks etdirən fikir hansıdır?**
 
-## 5.1. Təbiətdəki müxtəliflik
+-    **A)** Lokal məkanlar qlobal məkandan tamamilə təcrid olunmuş şəkildə mövcuddur.
+-    **B)** Qlobal məkandakı proseslər heç vaxt ayrı-ayrı lokal məkanlara təsir göstərmir.
+-    **C)** Lokal məkan yalnız təbii, qlobal məkan isə yalnız süni komponentlərdən ibarətdir.
+- ✅ **D)** Lokal məkanda baş verən ekoloji dəyişikliklər tədricən qlobal mühitə təsir edir.
 
-### Sual 91. [Sadə] — TİK: `06-003-0201-0110-01-01-091`
+> 💡 **İzah:** Ayrı-ayrı lokal məkanlarda baş verən hadisələr (məsələn, çirklənmə və ya qorunma) toplanaraq qlobal məkanın ümumi vəziyyətini formalaşdırır.
 
-**Sual:** Yerin bərk relyef və süxurlardan ibarət daş təbəqəsi necə adlanır?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B01-M01-BL5-C-013]`
+**Təsəvvür edin ki, yeni bir yaşayış massivi salınır. Məkanın davamlı inkişafı üçün hansı qərar ən düzgündür?**
 
-- **A)** Hidrosfer
-- **B)** Atmosfer
-- **C)** Litosfer
-- **D)** Biosfer
+- ✅ **A)** Təbii landşaftı qorumaqla yanaşı müasir sosial infrastrukturu təmin etmək
+-    **B)** Yalnız çoxmərtəbəli binalar tikmək və yaşıllıq sahələrini tam ləğv etmək
+-    **C)** Bütün təbii su hövzələrini qurudaraq onların yerində avtomobil yolları salmaq
+-    **D)** Məkanın planlaşdırılmasında relyef və külək istiqamətini nəzərə almamaq
 
-**Düzgün cavab:** **C) Litosfer**
+> 💡 **İzah:** Davamlı inkişaf prinsipi təbii mühiti zədələmədən insanların sosial və iqtisadi ehtiyaclarını ödəməyi tələb edir.
 
-**İzah:** Litosfer Yerin xarici bərk daş qatıdır və relyefi təşkil edir.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M01-BL4-C-014]`
+**Məkanın coğrafi tədqiqi zamanı təbii və antropogen komponentlərin birgə öyrənilməsi nə üçün vacibdir?**
 
----
+-    **A)** Yalnız ərazinin dəqiq həndəsi sahəsini və perimetrini hesablamaq üçün
+- ✅ **B)** İnsan və təbiət arasındakı qarşılıqlı təsiri düzgün qiymətləndirmək üçün
+-    **C)** Məkandakı bütün canlıların sayını bir nəfər kimi tək-tək qeyd etmək üçün
+-    **D)** Təbii komponentlərin insan fəaliyyətindən tam asılı olmadığını sübut etmək üçün
 
-### Sual 92. [Sadə] — TİK: `06-003-0201-0110-01-01-092`
+> 💡 **İzah:** Məkan vahid bir sistemdir; insan fəaliyyəti təbiətə, təbii amillər isə insanın həyat tərzinə birbaşa təsir göstərir.
 
-**Sual:** Okeanlar, dənizlər, göllər və çayların əmələ gətirdiyi vahid su təbəqəsi necə adlanır?
+### Sual 15 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M01-BL4-C-015]`
+**Eyni iqlim qurşağında yerləşən iki fərqli məkanın fərqli landşafta malik olmasının səbəbini necə izah etmək olar?**
 
-- **A)** Hidrosfer
-- **B)** Litosfer
-- **C)** Atmosfer
-- **D)** Biosfer
+-    **A)** Həmin ərazilərdə saat qurşaqlarının tamamilə üst-üstə düşməsi ilə
+-    **B)** Məkanların Yerin süni peykləri tərəfindən müxtəlif vaxtlarda çəkilməsi ilə
+- ✅ **C)** Relyef xüsusiyyətlərinin, su təminatının və süxur tərkibinin fərqli olması ilə
+-    **D)** Yalnız ərazidə yaşayan əhalinin milli tərkibinin müxtəlif olması ilə
 
-**Düzgün cavab:** **A) Hidrosfer**
+> 💡 **İzah:** İqlim eyni olsa da, dağlıq/düzənlik relyef, qrunt suları və süxurların növü məkanda fərqli təbii mənzərələr yaradır.
 
-**İzah:** Hidrosfer Yerdəki bütün suların cəmidir.
 
 ---
 
-### Sual 93. [Sadə] — TİK: `06-003-0201-0110-01-01-093`
+## Mövzu 2: 1.2 Məkanın miqyası (15 sual)
 
-**Sual:** Yer kürəsini əhatə edən və canlıları kosmik şüalardan qoruyan qaz təbəqəsi hansıdır?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M02-BL1-A-001]`
+**Yer səthindəki məsafələrin xəritə və ya planda neçə dəfə kiçildiyini göstərən kəsr kəmiyyət necə adlanır?**
 
-- **A)** Litosfer
-- **B)** Atmosfer
-- **C)** Hidrosfer
-- **D)** Mantiyanın üst qatı
+- ✅ **A)** Miqyas
+-    **B)** Horizont
+-    **C)** Azimut
+-    **D)** Hündürlük
 
-**Düzgün cavab:** **B) Atmosfer**
+> 💡 **İzah:** Miqyas plan və xəritədəki xətti ölçülərin yer üzərindəki həqiqi ölçülərə nisbətini (kiçildilmə dərəcəsini) göstərir.
 
-**İzah:** Atmosfer Yerin hava təbəqəsidir və həyat üçün zəruri oksigeni saxlayır.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M02-BL1-A-002]`
+**Sözlə ifadə olunan miqyas növü (məsələn: 1 sm-də 500 m) necə adlanır?**
 
----
+-    **A)** Ədədi miqyas
+- ✅ **B)** Adlı miqyas
+-    **C)** Xətti miqyas
+-    **D)** Qrafik miqyas
 
-### Sual 94. [Sadə] — TİK: `06-003-0201-0110-01-01-094`
+> 💡 **İzah:** Miqyas sözlə '1 sm-də ... metr/kilometr' şəklində yazıldıqda adlı miqyas adlanır.
 
-**Sual:** Bitkilər, heyvanlar, göbələklər və mikroorqanizmlərin yaşadığı həyat təbəqəsi necə adlanır?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M02-BL1-A-003]`
+**Bölgülü düz xətt şəklində təsvir edilən və pərgarla ölçmə aparmağa imkan verən miqyas hansıdır?**
 
-- **A)** Litosfer
-- **B)** Hidrosfer
-- **C)** Stratosfer
-- **D)** Biosfer
+-    **A)** Ədədi miqyas
+-    **B)** Kəsr miqyas
+- ✅ **C)** Xətti miqyas
+-    **D)** Sözlü miqyas
 
-**Düzgün cavab:** **D) Biosfer**
+> 💡 **İzah:** Xətti miqyas qrafik şəklində çəkilmiş xətkeşdir və xəritədə məsafələri birbaşa ölçməyə kömək edir.
 
-**İzah:** Biosfer Yerdə canlıların yayıldığı və fəaliyyət göstərdiyi təbəqədir.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M02-BL1-A-004]`
+**1:10 000 ədədi miqyası adlı miqyasa çevirdikdə düzgün ifadə hansı olar?**
 
----
+-    **A)** 1 sm-də 10 m
+-    **B)** 1 sm-də 1 km
+-    **C)** 1 sm-də 1000 m
+- ✅ **D)** 1 sm-də 100 m
 
-### Sual 95. [Sadə] — TİK: `06-003-0201-0110-01-01-095`
+> 💡 **İzah:** Santimetri metrə çevirmək üçün 2 sıfır silinir: 10 000 sm = 100 m (1 sm-də 100 m).
 
-**Sual:** Təbii komponentlərin (süxur, su, hava, torpaq, canlılar) qarşılıqlı əlaqədə olduğu bütöv ərazi necə adlanır?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B01-M02-BL1-A-005]`
+**Ən kiçik ərazini ən böyük təfərrüatla və ətraflı göstərən təsvir hansıdır?**
 
-- **A)** Şəhər mühiti
-- **B)** Kosmik fəza
-- **C)** Süni akvarium
-- **D)** Təbii kompleks
+- ✅ **A)** Böyük miqyaslı plan
+-    **B)** Kiçik miqyaslı xəritə
+-    **C)** Yarımkürələr xəritəsi
+-    **D)** Dünyanın fiziki xəritəsi
 
-**Düzgün cavab:** **D) Təbii kompleks**
+> 💡 **İzah:** Böyük miqyaslı təsvirlərdə kiçiltmə az olduğu üçün obyektlər daha dəqiq və təfərrüatlı görünür.
 
-**İzah:** Təbii kompleks təbiətin bütün komponentlərinin vəhdətindən yaranan landşaftdır.
+### Sual 6 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M02-BL3-O-006]`
+**Xəritənin miqyası 1:50 000-dir. Xəritədə iki məntəqə arasındakı məsafə 4 sm olarsa, həqiqi məsafə neçə metrdir?**
 
----
+-    **A)** 200 metr
+- ✅ **B)** 2000 metr
+-    **C)** 20 000 metr
+-    **D)** 500 metr
 
-### Sual 96. [Orta] — TİK: `06-003-0201-0120-02-02-096`
+> 💡 **İzah:** 1:50 000 miqyasında 1 sm = 500 m. Həqiqi məsafə = 4 sm * 500 m = 2000 m (2 km).
 
-**Sual:** Ekvatordan qütblərə doğru getdikcə təbii zonaların və bitki örtüyünün dəyişməsinin əsas səbəbi nədir?
+### Sual 7 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M02-BL3-O-007]`
+**Həqiqətdə 15 km olan məsafə xəritədə 3 sm göstərilmişdir. Xəritənin adlı miqyasını müəyyən edin.**
 
-- **A)** Yerin cazibə qüvvəsinin qütblərdə sıfır olması
-- **B)** Okean suyunun hər yerdə eyni dərəcədə qaynaması
-- **C)** Bütün dağların yalnız ekvatorda yerləşməsi
-- **D)** Günəş istiliyinin və rütubətin enliklər üzrə qeyri-bərabər paylanması
+-    **A)** 1 sm-də 15 km
+-    **B)** 1 sm-də 3 km
+- ✅ **C)** 1 sm-də 5 km
+-    **D)** 1 sm-də 45 km
 
-**Düzgün cavab:** **D) Günəş istiliyinin və rütubətin enliklər üzrə qeyri-bərabər paylanması**
+> 💡 **İzah:** 15 km / 3 sm = 5 km. Deməli, xəritədə 1 sm-ə 5 km uyğun gəlir.
 
-**İzah:** Enlik üzrə Günəş şüalarının bucağı azaldıqca istilik və rütubət dəyişir, zonallıq yaranır.
+### Sual 8 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B01-M02-BL2-O-008]`
+**Aşağıdakı ədədi miqyaslardan hansı ən BÖYÜK miqyas hesab edilir?**
 
----
+-    **A)** 1 : 50 000
+-    **B)** 1 : 500 000
+-    **C)** 1 : 5 000 000
+- ✅ **D)** 1 : 5 000
 
-### Sual 97. [Orta] — TİK: `06-003-0201-0120-02-02-097`
+> 💡 **İzah:** Məxrəci ən kiçik olan miqyas ən böyük miqyasdır, çünki burada ərazi ən az kiçildilmişdir.
 
-**Sual:** Dağlarda ətəkdən zirvəyə doğru getdikcə təbii mənzərənin dəyişməsi qanunauyğunluğu necə adlanır?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B01-M02-BL2-O-009]`
+**Lokal miqyasdan qlobal miqyasa keçdikdə xəritədə hansı dəyişiklik baş verir?**
 
-- **A)** Üfüqi zonallıq
-- **B)** Qütb parıltısı
-- **C)** Şaquli qurşaqlıq
-- **D)** Maqnit anomaliyası
+- ✅ **A)** Əhatə olunan ərazi böyüyür, lakin təfərrüat və xırdalıqlar azalır.
+-    **B)** Əhatə olunan ərazi kiçilir, lakin təfərrüat və xırdalıqlar çoxalır.
+-    **C)** Xəritədəki bütün coğrafi obyektlər təbii ölçülərində göstərilir.
+-    **D)** Xəritənin dərəcə toru və meridian xətləri tamamilə yox olur.
 
-**Düzgün cavab:** **C) Şaquli qurşaqlıq**
+> 💡 **İzah:** Qlobal miqyasda böyük ərazilər (materiklər, dünya) təsvir olunduğundan kiçiltmə çox olur və detallar azalır.
 
-**İzah:** Hündürlüyə qalxdıqca temperatur və təzyiq düşdüyü üçün şaquli qurşaqlar yaranır.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B01-M02-BL3-O-010]`
+**Məktəb həyətinin planını tərtib etmək üçün hansı miqyasdan istifadə etmək daha məqsədəuyğundur?**
 
----
+-    **A)** 1 : 1 000 000
+- ✅ **B)** 1 : 500
+-    **C)** 1 : 500 000
+-    **D)** 1 : 25 000 000
 
-### Sual 98. [Orta] — TİK: `06-003-0201-0120-02-02-098`
+> 💡 **İzah:** Kiçik sahəli məktəb həyətini kağızda aydın təsvir etmək üçün böyük miqyas (1:500) tələb olunur.
 
-**Sual:** Quraq səhra landşaftının formalaşmasında hansı iki təbii amil həlledici rol oynayır?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M02-BL4-C-011]`
+**Eyni ərazi 1:25 000 və 1:100 000 miqyaslı iki xəritədə təsvir edilmişdir. Bu xəritələri müqayisə edin:**
 
-- **A)** Daimi güclü qar fırtınaları və şaxtalı soyuq hava
-- **B)** Yüksək günəş istiliyi və kəskin yağıntı çatışmazlığı
-- **C)** Ərazidə sıx bataqlıqların və meşələrin yerləşməsi
-- **D)** Atmosfer havasının rütubətinin yüz faiz olması
+-    **A)** 1:100 000 miqyaslı xəritədə ərazi daha az kiçildilmişdir və daha dəqiqdir.
+-    **B)** Hər iki xəritədə obyektlərin tutduğu sahə və ölçülər tamamilə eynidir.
+- ✅ **C)** 1:25 000 miqyaslı xəritədə obyektlər daha aydın və böyük sahə tutaraq görünür.
+-    **D)** 1:25 000 miqyaslı xəritədə kiçiltmə dərəcəsi 4 dəfə daha böyükdür.
 
-**Düzgün cavab:** **B) Yüksək günəş istiliyi və kəskin yağıntı çatışmazlığı**
+> 💡 **İzah:** 1:25 000 daha böyük miqyasdır, ona görə də həmin xəritədə obyektlər 4 dəfə daha iri və müfəssəl təsvir olunur.
 
-**İzah:** Səhrada buxarlanma qabiliyyəti yüksək, lakin yağıntı 100-200 mm-dən az olur.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M02-BL4-C-012]`
+**Miqyası 1:200 000 olan xəritədə sahəsi 4 sm² olan gölün həqiqi sahəsi neçə km² olar?**
 
----
+-    **A)** 8 km²
+-    **B)** 4 km²
+-    **C)** 32 km²
+- ✅ **D)** 16 km²
 
-### Sual 99. [Orta] — TİK: `06-003-0201-0120-02-02-099`
+> 💡 **İzah:** 1:200 000 -> 1 sm-də 2 km. 1 sm² sahə = 2 km * 2 km = 4 km². Xəritədə 4 sm² = 4 * 4 km² = 16 km².
 
-**Sual:** Torpağın tərkibində bitkilərin qidalanmasını təmin edən ən münbit üzvi maddə necə adlanır?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B01-M02-BL5-C-013]`
+**Nə üçün qlobal problemlərin (məsələn, iqlim istiləşməsi) tədqiqində kiçik miqyaslı dünya xəritələrinə ehtiyac duyulur?**
 
-- **A)** Çürüntü
-- **B)** Qum dənələri
-- **C)** Gil qatı
-- **D)** Çınqıl daşları
+-    **A)** Yalnız ayrı-ayrı məhəllələrin daxili küçə planlarını dəqiq ölçmək üçün
+- ✅ **B)** Bütün Yer kürəsindəki ümumi qanunauyğunluqları bütövlükdə görmək üçün
+-    **C)** Xəritədə relyef formalarının hündürlüyünü santimetr dəqiqliyi ilə tapmaq üçün
+-    **D)** Dünya okeanındakı suyun kimyəvi tərkibini bilavasitə analiz etmək üçün
 
-**Düzgün cavab:** **A) Çürüntü**
+> 💡 **İzah:** Kiçik miqyaslı dünya xəritələri planetar miqyaslı proseslərin qlobal təsir dairəsini tam əhatə etməyə imkan verir.
 
-**İzah:** Ölən bitki və heyvan qalıqlarının mikroblar tərəfindən çürüməsindən humus yaranır.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M02-BL4-C-014]`
+**Xəritə tərtib edilərkən miqyasın düzgün seçilməməsi hansı praktiki xətaya səbəb olar?**
 
----
+-    **A)** Xəritədə şimal və cənub istiqamətlərinin yerinin avtomatik dəyişməsinə
+-    **B)** Ərazidəki dağların və çayların təbii hündürlüyünün real olaraq azalmasına
+- ✅ **C)** Məlumatların ya həddən artıq sıxlaşmasına, ya da kağıza yerləşməməsinə
+-    **D)** Kompasın əqrəbinin maqnit qütbünü göstərməkdən tamamilə imtina etməsinə
 
-### Sual 100. [Orta] — TİK: `06-003-0201-0120-02-02-100`
+> 💡 **İzah:** Miqyas kağızın ölçüsünə və təsvir məqsədinə uyğun seçilmədikdə xəritədə oxunaqlıq və istifadə imkanı itir.
 
-**Sual:** Təbiətdə suyun böyük təbii dövranının hərəkətverici əsas iki qüvvəsi hansıdır?
+### Sual 15 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B01-M02-BL4-C-015]`
+**1:50 000 miqyaslı xəritədən 1:250 000 miqyaslı xəritəyə keçdikdə generalizasiya (ümumiləşdirmə) necə dəyişər?**
 
-- **A)** Yalnız dəniz gəmilərinin hərəkəti
-- **B)** Günəş enerjisi və Yerin cazibə qüvvəsi
-- **C)** Yalnız balıqların üzməsi
-- **D)** Ayın işığının istiliyi
+-    **A)** Kiçiltmə azaldığı üçün xəritədəki bütün xırda detallar daha çox göstərilir.
+-    **B)** Xəritənin dəqiqliyi 5 dəfə artır və xətalar tamamilə sıfıra enir.
+-    **C)** Generalizasiya prosesi tam dayanır və heç bir obyekt xəritədən çıxarılmır.
+- ✅ **D)** Kiçiltmə artdığı üçün ümumiləşdirmə çoxalır və ikinci dərəcəli detallar atılır.
 
-**Düzgün cavab:** **B) Günəş enerjisi və Yerin cazibə qüvvəsi**
+> 💡 **İzah:** Miqyas kiçildikcə (1:50 min -> 1:250 min) xəritədə yer azaldığı üçün yalnız ən mühüm obyektlər saxlanılır (ümumiləşdirmə artır).
 
-**İzah:** Günəş suyu buxarlandırır, külək buludu daşıyır, cazibə isə yağış və çay kimi geri qaytarır.
 
 ---
 
-### Sual 101. [Çətin] — TİK: `06-003-0201-0130-03-03-101`
+## Mövzu 3: 2.1. Məkanın təsvir edilməsi (15 sual)
 
-**Sual:** Təbii komponentlərdən olan meşə örtüyünün qırılması dağlıq ərazidə hansı dağıdıcı təbii fəlakətə səbəb ola bilər?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M03-BL1-A-001]`
+**Yer səthinin kiçik bir sahəsinin şərti işarələrlə müstəvi üzərindəki kiçildilmiş təsviri necə adlanır?**
 
-- **A)** Ərazidə qəfil vulkan püskürməsinin yaranmasına
-- **B)** Güclü yağışlar zamanı dağıdıcı sel və torpaq sürüşmələrinin baş verməsinə
-- **C)** Yerin daxili nüvəsinin donmasına
-- **D)** Dəniz səviyyəsinin dərhal 100 metr enməsinə
+- ✅ **A)** Yerin planı
+-    **B)** Qlobus
+-    **C)** Profil
+-    **D)** Kosmik foto
 
-**Düzgün cavab:** **B) Güclü yağışlar zamanı dağıdıcı sel və torpaq sürüşmələrinin baş verməsinə**
+> 💡 **İzah:** Kiçik ərazilərin üstdən görünüşünün şərti işarələrlə kağıza köçürülməsi plan adlanır.
 
-**İzah:** Ağac kökləri torpağı bərkidir; meşə qırılanda yağış torpağı və daşları yuyub sel yaradır.
-
----
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M03-BL1-A-002]`
+**Planda və xəritədə şimal istiqaməti adətən hansı tərəfə yönəlmiş olur?**
 
-### Sual 102. [Çətin] — TİK: `06-003-0201-0130-03-03-102`
+-    **A)** Aşağı
+- ✅ **B)** Yuxarı
+-    **C)** Sağ tərəfə
+-    **D)** Sol tərəfə
 
-**Sual:** Ekvatorial rütubətli meşələrin (selvasın) planetimiz üçün 'Yerin ağciyərləri' adlandırılmasının bioloji səbəbi nədir?
+> 💡 **İzah:** Bütün topoqrafik plan və xəritələrdə yuxarı hissə Şimalı, aşağı Cənubu göstərir.
 
-- **A)** Bu meşələrin ağaclarının yalnız ağ rəngli yarpaqlara malik olması
-- **B)** Fotosintez ilə karbon qazını udaraq böyük həcmdə oksigen buraxması
-- **C)** Meşələrin daxilində heç bir vəhşi heyvanın və quşun yaşamaması
-- **D)** Orada havanın hərarətinin ilboyu sabit sıfır dərəcədə qalması
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M03-BL1-A-003]`
+**Planda meşə, göl və ya bataqlıq sahələri hansı növ şərti işarələrlə göstərilir?**
 
-**Düzgün cavab:** **B) Fotosintez ilə karbon qazını udaraq böyük həcmdə oksigen buraxması**
+-    **A)** Miqyassız (xətti)
+-    **B)** Həndəsi fiqurlar
+- ✅ **C)** Konturlu (sahəvi)
+-    **D)** Yalnız nöqtələr
 
-**İzah:** Ekvator meşələri zəngin biokütləsi ilə qlobal oksigen balansını təmin edir.
+> 💡 **İzah:** Sahəsi olan və planın miqyasına uyğun gələn obyektlər konturlu (sahəvi) şərti işarələrlə verilir.
 
----
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M03-BL1-A-004]`
+**Planda tək ağac, su quyusu və ya dəyirman kimi kiçik obyektlər necə təsvir edilir?**
 
-### Sual 103. [Çətin] — TİK: `06-003-0201-0130-03-03-103`
+-    **A)** Konturlu işarələrlə
+-    **B)** Rəngli zolaqlarla
+-    **C)** Horizontallarla
+- ✅ **D)** Miqyassız işarələrlə
 
-**Sual:** Təbiətdə torpaqəmələgəlmə prosesində canlı orqanizmlərin (bitki, qurd və bakteriyaların) rolu nədən ibarətdir?
+> 💡 **İzah:** Miqyasla göstərilməsi mümkün olmayan kiçik obyektlər miqyassız şərti işarələrlə qeyd olunur.
 
-- **A)** Torpaq qatını qısa müddətdə bərk qranit daşına çevirmək
-- **B)** Süxurları parçalayaraq üzvi maddələrlə zənginləşdirmək
-- **C)** Torpağın tərkibindəki bütün suyu tamamilə sormaq
-- **D)** Torpağın təbii rəngini ağartmaq və qumu çoxaltmaq
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M03-BL1-A-005]`
+**Ərazidə bir nöqtədə duraraq ətrafdakı bütün obyektlərin plana alınması necə adlanır?**
 
-**Düzgün cavab:** **B) Süxurları parçalayaraq üzvi maddələrlə zənginləşdirmək**
+- ✅ **A)** Qütb planalması
+-    **B)** Marşrut planalması
+-    **C)** Gözəyarı ölçmə
+-    **D)** Kosmik çəkiliş
 
-**İzah:** Canlılar süxur ovuntularını çürüntü ilə birləşdirərək cansız süxuru canlı torpağa çevirir.
+> 💡 **İzah:** Bir mərkəzi nöqtədə (qütbdə) dayanaraq ətrafdakı görünən yerlərin plana köçürülməsi qütb planalması adlanır.
 
----
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M03-BL2-O-006]`
+**Marşrut planalması qütb planalmasından nə ilə fərqlənir?**
 
-### Sual 104. [Çətin] — TİK: `06-003-0201-0130-03-03-104`
+-    **A)** Yalnız gecə vaxtı ulduzlara əsasən müşahidə aparılması ilə
+- ✅ **B)** Müəyyən yol və ya xətt boyunca hərəkət edərək planalma aparılması ilə
+-    **C)** Heç bir ölçü alətindən və ya kompasdan istifadə olunmaması ilə
+-    **D)** Yalnız okean və dənizlərin dibinin xüsusi təsvir edilməsi ilə
 
-**Sual:** Tundra təbii zonasında iri ağacların bitməməsinin və yalnız mamır-şibyənin yayılmasının əsas səbəbi nədir?
+> 💡 **İzah:** Marşrut planalması yol, çay və ya cığır boyunca hərəkət edilərək ətrafın plana alınmasıdır.
 
-- **A)** Torpağın tərkibində dəniz qumunun həddindən artıq çox olması
-- **B)** Ərazidə atmosfer havasının oksigensiz və zəhərli olması
-- **C)** İstiliyin çatışmaması, qısa yay və daimi donuşluq qatının olması
-- **D)** Tundra təbiətində qışda heç vaxt təbii qarın yağmaması
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M03-BL2-O-007]`
+**Planda körpü, dəmir yolu və şose hansı şərti işarələr qrupuna daxildir?**
 
-**Düzgün cavab:** **C) İstiliyin çatışmaması, qısa yay və daimi donuşluq qatının olması**
+-    **A)** Sahəvi şərti işarələr
+-    **B)** Rəng çalarları
+- ✅ **C)** Xətti şərti işarələr
+-    **D)** Şaquli kəsiklər
 
-**İzah:** Daimi donuşluq ağac köklərinin dərinə getməsinə imkan vermir, yay isə çox qısadır.
+> 💡 **İzah:** Yollar, sərhədlər, rabitə xətləri və çaylar uzunluğu miqyasa uyğun gələn xətti şərti işarələrdir.
 
----
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B02-M03-BL3-O-008]`
+**Şagird məktəbdən çıxıb 90° azimutla 200 metr getdi. O, hansı istiqamətdə hərəkət etmişdir?**
 
-### Sual 105. [Çətin] — TİK: `06-003-0201-0130-03-03-105`
+-    **A)** Qərb
+-    **B)** Şimal
+-    **C)** Cənub
+- ✅ **D)** Şərq
 
-**Sual:** Antropogen landşaftın təbii landşaftdan əsas fərqi və xüsusiyyəti nədir?
+> 💡 **İzah:** Azimut saat əqrəbi istiqamətində ölçülür: Şimal = 0° (360°), Şərq = 90°, Cənub = 180°, Qərb = 270°.
 
-- **A)** İnsanın məqsədyönlü təsərrüfat fəaliyyəti nəticəsində yaradılması
-- **B)** Yalnız hündür dağların sıldırım zirvələrində yerləşməsi
-- **C)** Daxilində heç vaxt heç bir canlı orqanizmin yaşamaması
-- **D)** Təbiətdə insan əməyi olmadan milyon illərlə formalaşması
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M03-BL2-O-009]`
+**Planda eyni hündürlüyə malik nöqtələri birləşdirən qapalı əyri xətlər necə adlanır?**
 
-**Düzgün cavab:** **A) İnsanın məqsədyönlü təsərrüfat fəaliyyəti nəticəsində yaradılması**
+- ✅ **A)** Horizontallar (izohipslər)
+-    **B)** Meridianlar
+-    **C)** Paralellər
+-    **D)** Berqştrixlər
 
-**İzah:** Su anbarları, tarlalar, şəhərlər və parklar insan əli ilə qurulmuş antropogen landşaftdır.
+> 💡 **İzah:** Mütləq hündürlükləri eyni olan nöqtələri birləşdirən xətlərə horizontallar (izohipslər) deyilir.
 
----
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B02-M03-BL3-O-010]`
+**Horizontal xətlərinin bir-birinə çox yaxın yerləşməsi relyefin hansı xüsusiyyətini göstərir?**
 
-## 5.2. Təbiət bir sistemdir
+-    **A)** Ərazinin tamamilə hamar düzənlik olmasını
+- ✅ **B)** Yamancın çox dik və sıldırım olmasını
+-    **C)** Həmin yerdə dərin gölün yerləşməsini
+-    **D)** Ərazidə sıx meşə örtüyünün mövcudluğunu
 
-### Sual 106. [Sadə] — TİK: `06-003-0202-0110-01-01-106`
+> 💡 **İzah:** Horizontallar sıxlaşdıqca yamacın meyilliyi və dikliyi artır, seyrəldikcə isə yamac azmeyilli olur.
 
-**Sual:** Yaşıl bitkilərin günəş işığı altında karbon qazını udub oksigen və üzvi maddə yaratması prosesi necə adlanır?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M03-BL4-C-011]`
+**Plan ilə coğrafi xəritə arasındakı ən mühüm fərqi müəyyən edin:**
 
-- **A)** Buxarlanma
-- **B)** Fotosintez
-- **C)** Tənəffüs
-- **D)** Çürümə
+-    **A)** Planda dərəcə toru olur, xəritədə isə heç vaxt dərəcə toru çəkilmir.
+-    **B)** Xəritələr yalnız kiçik kəndləri, planlar isə bütün dünyanı əhatə edir.
+- ✅ **C)** Planda Yerin əyriliyi nəzərə alınmır, xəritədə isə mütləq nəzərə alınır.
+-    **D)** Planda rənglərdən istifadə etmək beynəlxalq qanunlarla qadağan edilmişdir.
 
-**Düzgün cavab:** **B) Fotosintez**
+> 💡 **İzah:** Plan kiçik sahələri əhatə etdiyi üçün Yerin kürəvilik əyriliyi nəzərə alınmır və təhrif olmur.
 
-**İzah:** Fotosintez yaşıl yarpaqlardakı xlorofil vasitəsilə günəş enerjisinin kimyəvi enerjiyə çevrilməsidir.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M03-BL4-C-012]`
+**Meşədə azan səyyah şimal istiqamətini təyin etmək üçün hansı təbii əlamətdən istifadə edə bilər?**
 
----
+-    **A)** Qarışqa yuvalarının əsas çıxış yolunun həmişə şimala baxmasına
+-    **B)** Ağacların meyvələrinin yalnız şimal tərəfdə daha tez yetişməsinə
+-    **C)** Dağların cənub yamaclarında qarın daha gec və çətin əriməsinə
+- ✅ **D)** Tənha ağacların və daşların mamırlı tərəfinin şimala baxmasına
 
-### Sual 107. [Sadə] — TİK: `06-003-0202-0110-01-01-107`
+> 💡 **İzah:** Şimal yarımkürəsində mamırlar rütubətli və kölgəli olan şimal tərəfdə daha yaxşı inkişaf edir.
 
-**Sual:** Litosfer, hidrosfer, atmosfer və biosferin bir-biri ilə təmasda olduğu və qarşılıqlı təsir göstərdiyi ən böyük sistem necə adlanır?
+### Sual 13 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M03-BL4-C-013]`
+**Bir təpənin təsvirində horizontalların kənarında çəkilmiş berqştrixlər xaricə doğru yönəlmişdir. Bu nəyi bildirir?**
 
-- **A)** Yerin nüvəsi
-- **B)** Kosmik dumanlıq
-- **C)** Coğrafi təbəqə
-- **D)** Ay səthi
+-    **A)** Təsvir olunan relyef formasının çökəklik (çuxur) olduğunu
+-    **B)** Ərazidə yeraltı mağaranın mövcud olduğunu
+- ✅ **C)** Təsvir olunan relyef formasının təpə (qabarıq) olduğunu
+-    **D)** Həmin ərazidə vulkan kraterinin yerləşdiyini
 
-**Düzgün cavab:** **C) Coğrafi təbəqə**
+> 💡 **İzah:** Berqştrixlər yamacın aşağı enmə istiqamətini göstərir. Xaricə baxırsa təpədir, daxilə baxırsa çökəklikdir.
 
-**İzah:** Coğrafi təbəqə 4 yer təbəqəsinin kəsişməsində yaranan bütöv təbii sistemdir.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M03-BL4-C-014]`
+**Planda meşə cığırı ilə 135° azimutla gedən turist geri qayıtmaq üçün hansı azimutla hərəkət etməlidir?**
 
----
+-    **A)** 45°
+-    **B)** 225°
+-    **C)** 180°
+- ✅ **D)** 315°
 
-### Sual 108. [Sadə] — TİK: `06-003-0202-0110-01-01-108`
+> 💡 **İzah:** Geri qayıtma azimutu: əgər azimut < 180° olarsa, üzərinə 180° gəlirik. 135° + 180° = 315°.
 
-**Sual:** Dəniz və okeanların qabarma və çəkilmə zonalarında, duzlu suda bitən xüsusi kolluq və ağaclıqlar necə adlanır?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B02-M03-BL5-C-015]`
+**Ərazinin planının tərtib edilməsi mühəndislik və tikinti işlərində nə üçün ilkin vacib addımdır?**
 
-- **A)** Tayqa meşələri
-- **B)** Manqr meşələri
-- **C)** Cəngəlliklər
-- **D)** Savanlar
+- ✅ **A)** Binaların və yolların relyefə uyğun düzgün və təhlükəsiz layihələndirilməsi üçün
+-    **B)** Yalnız ərazinin hava şəraitini bir il əvvəldən 100% dəqiq proqnozlaşdırmaq üçün
+-    **C)** Torpağın altındakı bütün neft və qaz ehtiyatlarını birbaşa görmək üçün
+-    **D)** Tikintidə işləyən fəhlələrin sayını avtomatik olaraq iki dəfə artırmaq üçün
 
-**Düzgün cavab:** **B) Manqr meşələri**
+> 💡 **İzah:** Plan ərazinin meyilliyini, maneələrini və relyefini dəqiq göstərir, bu da tikililərin dayanıqlığı üçün əsasdır.
 
-**İzah:** Manqr meşələri tropik sahillərdə duzlu suda tənəffüs kökləri ilə bitən lokal təbii sistemdir.
 
 ---
 
-### Sual 109. [Sadə] — TİK: `06-003-0202-0110-01-01-109`
+## Mövzu 4: 2.2. Məkanın kodlaşdırılması (15 sual)
 
-**Sual:** Təbii sistemdə canlıların bir-biri ilə qidalanma əlaqəsi necə adlanır?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M04-BL1-A-001]`
+**Yerin kiçildilmiş ən dəqiq və təhrifsiz üçölçülü modeli necə adlanır?**
 
-- **A)** Su dövranı
-- **B)** Hava axını
-- **C)** Külək sistemi
-- **D)** Qida zənciri
+- ✅ **A)** Qlobus
+-    **B)** Plan
+-    **C)** Xəritə
+-    **D)** Atlas
 
-**Düzgün cavab:** **D) Qida zənciri**
+> 💡 **İzah:** Qlobus Yerin kürə formasını və səthini ən düzgün, təhrifsiz əks etdirən modelidir.
 
-**İzah:** Bitki $\to$ otyeyən heyvan $\to$ yırtıcı heyvan ardıcıllığı qida zəncirini əmələ gətirir.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M04-BL1-A-002]`
+**Yeri Şimal və Cənub yarımkürələrinə bölən 0° dərəcəli ən böyük paralel necə adlanır?**
 
----
+-    **A)** Qrinviç meridianı
+- ✅ **B)** Ekvator
+-    **C)** Şimal qütbü
+-    **D)** Xərçəng paraleli
 
-### Sual 110. [Sadə] — TİK: `06-003-0202-0110-01-01-110`
+> 💡 **İzah:** Ekvator xətti 0° enlik olub, Yer kürəsini tən ortadan Şimal və Cənub yarımkürələrinə ayırır.
 
-**Sual:** Təbiətdəki bütün prosesləri hərəkətə gətirən əsas ilkin enerji mənbəyi hansıdır?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M04-BL1-A-003]`
+**Qütbləri birləşdirən və ən qısa xətlər olan şaquli xətlər necə adlanır?**
 
-- **A)** Ayın cazibəsi
-- **B)** Günəş enerjisi
-- **C)** Külək dəyirmanı
-- **D)** Elektrik batareyası
+-    **A)** Paralellər
+-    **B)** İzobarlar
+- ✅ **C)** Meridianlar
+-    **D)** Horizontallar
 
-**Düzgün cavab:** **B) Günəş enerjisi**
+> 💡 **İzah:** Şimal və Cənub qütblərini birləşdirən xəyali yarımçevrələr meridianlar adlanır.
 
-**İzah:** Yer səthindəki su dövranı, külək və fotosintez Günəş enerjisi ilə qidalanır.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M04-BL1-A-004]`
+**Xəritələrdə dəniz və okeanların dərinliklərini təsvir etmək üçün hansı rəngdən istifadə olunur?**
 
----
+-    **A)** Yaşıl və sarı
+-    **B)** Qəhvəyi və narıncı
+-    **C)** Qırmızı və ağ
+- ✅ **D)** Mavi və göy
 
-### Sual 111. [Orta] — TİK: `06-003-0202-0120-02-02-111`
+> 💡 **İzah:** Hipsometrik şkalada su hövzələri mavi və göy rənglərlə təsvir edilir (dərinləşdikcə tündləşir).
 
-**Sual:** Coğrafi təbəqənin bütövlüyü qanunauyğunluğunun əsas mənası nədir?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B02-M04-BL1-A-005]`
+**Coğrafi məlumatların kompüterdə toplanması, saxlanması və analizi sistemi necə adlanır?**
 
-- **A)** Bütün dağ silsilələrinin eyni hündürlük və formada olması
-- **B)** Okean sularının heç vaxt günəş altında buxarlanmaması
-- **C)** Yer kürəsinin öz oxu ətrafında fırlanmasının dayanması
-- **D)** Bir komponentin dəyişməsinin bütün digər komponentləri dəyişməsi
+- ✅ **A)** CİS (Coğrafi İnformasiya Sistemləri)
+-    **B)** GPS peyk naviqasiyası
+-    **C)** Kompas cihazı
+-    **D)** Sadə nivelir
 
-**Düzgün cavab:** **D) Bir komponentin dəyişməsinin bütün digər komponentləri dəyişməsi**
+> 💡 **İzah:** CİS (Coğrafi İnformasiya Sistemləri) rəqəmsal xəritəçəkmə və məkan məlumatlarının emalı sistemidir.
 
-**İzah:** Bütövlük təbiətdə hər şeyin bir-biri ilə zəncirvari bağlı olduğunu ifadə edir.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M04-BL2-O-006]`
+**Paralellər və meridianlar haqqında verilmiş fikirlərdən hansı DOĞRUDUR?**
 
----
+-    **A)** Bütün paralellərin uzunluğu bərabərdir, meridianlar isə ekvatorda birləşir.
+- ✅ **B)** Bütün meridianların uzunluğu bərabərdir, paralellərin uzunluğu isə qütblərə doğru qısalır.
+-    **C)** Meridianlar qərbdən şərqə, paralellər isə şimaldan cənuba doğru çəkilir.
+-    **D)** Ekvatordan qütblərə doğru getdikcə paralellərin dərəcə qiyməti azalır.
 
-### Sual 112. [Orta] — TİK: `06-003-0202-0120-02-02-112`
+> 💡 **İzah:** Bütün meridianlar eyni uzunluqdadır (~20 004 km), paralellərin çevrəsi isə ekvatordan qütbə getdikcə kiçilir.
 
-**Sual:** Manqr meşələrinin dəniz sahillərində yerinə yetirdiyi ən mühüm ekoloji qoruyucu funksiya nədir?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M04-BL2-O-007]`
+**Bakı şəhərinin coğrafi koordinatları təqribən hansı bənddə düzgün göstərilmişdir?**
 
-- **A)** Sahilləri fırtına və dalğaların dağıdıcı təsirindən qorumaq və balıqlar üçün sığınacaq olmaq
-- **B)** Dəniz suyunu dərhal şirin suya çevirmək
-- **C)** Bütün dəniz gəmilərinin hərəkətini dayandırmaq
-- **D)** Qlobal istiliyi mənfi 50 dərəcəyə endirmək
+-    **A)** 50° c.e. və 40° q-u.
+-    **B)** 0° enlik və 0° uzunluq
+- ✅ **C)** 40° şm.e. və 50° ş-u.
+-    **D)** 66.5° şm.e. və 180° ş-u.
 
-**Düzgün cavab:** **A) Sahilləri fırtına və dalğaların dağıdıcı təsirindən qorumaq və balıqlar üçün sığınacaq olmaq**
+> 💡 **İzah:** Bakı şəhəri 40° Şimal enliyi və 50° Şərq uzunluğunun kəsişməsində yerləşir.
 
-**İzah:** Manqr kökləri sahil qumunu bərkidir, sunami və qasırğa dalğalarını zəiflədir.
+### Sual 8 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B02-M04-BL2-O-008]`
+**Xəritədə hündürlüyü 2000 metrdən çox olan yüksək dağ zirvələri hansı rənglə göstərilir?**
 
----
+-    **A)** Açıq yaşıl
+-    **B)** Sarı
+-    **C)** Açıq mavi
+- ✅ **D)** Tünd qəhvəyi
 
-### Sual 113. [Orta] — TİK: `06-003-0202-0120-02-02-113`
+> 💡 **İzah:** Fiziki xəritələrdə düzənliklər yaşıl, alçaq dağlar sarı, yüksək dağlar isə tünd qəhvəyi rənglə verilir.
 
-**Sual:** Qida zəncirində ilk həlqəni təşkil edən və ilkin üzvi maddə istehsal edən canlılar kimlərdir?
+### Sual 9 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B02-M04-BL3-O-009]`
+**A nöqtəsi 20° şm.e., B nöqtəsi isə 10° c.e.-də eyni meridian üzərindədir. Onlar arasında neçə dərəcə fərq var?**
 
-- **A)** Yırtıcı heyvanlar
-- **B)** Leşyeyən quşlar
-- **C)** Yaşıl bitkilər
-- **D)** Parazit göbələklər
+- ✅ **A)** 30°
+-    **B)** 10°
+-    **C)** 20°
+-    **D)** 200°
 
-**Düzgün cavab:** **C) Yaşıl bitkilər**
+> 💡 **İzah:** Müxtəlif yarımkürələrdə olduqda dərəcələr toplanır: 20° + 10° = 30°.
 
-**İzah:** Yalnız yaşıl bitkilər günəş işığı ilə cansız maddələrdən üzvi maddə yaradırlar.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B02-M04-BL3-O-010]`
+**Müasir naviqasiya proqramlarında (məs. elektron xəritələrdə) CİS texnologiyası hansı işi görür?**
 
----
+-    **A)** Yalnız avtomobilin mühərrikindəki yağın temperaturunu ölçür.
+- ✅ **B)** Tıxacları, marşrutları və ünvanları real vaxt rejimində təhlil edərək ən qısa yolu tapır.
+-    **C)** Avtomobilin rəngini peykdən gələn siqnalla avtomatik dəyişir.
+-    **D)** Yalnız gecə vaxtı sürücünün yerinə sükanı idarə edir.
 
-### Sual 114. [Orta] — TİK: `06-003-0202-0120-02-02-114`
+> 💡 **İzah:** CİS müxtəlif məlumat laylarını (yollar, tıxaclar, obyektlər) birləşdirərək optimal hərəkət marşrutu qurur.
 
-**Sual:** Təbii sistemdə maddələr dövranı pozularsa, ekosistemdə hansı fəsad baş verər?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M04-BL4-C-011]`
+**Kürəvi Yerin səthi müstəvi xəritəyə köçürülərkən təhriflərin (xətaların) yaranmasının əsas səbəbi nədir?**
 
-- **A)** Bütün təbiət daha da çiçəklənər
-- **B)** Yer kürəsində havanın temperaturu dərhal sabitləşər
-- **C)** Tullantılar yığılıb qalar və canlıların həyatı təhlükə altına düşər
-- **D)** Çayların suyu iki dəfə artar
+-    **A)** Xəritə tərtib edən alimlərin riyazi cihazlardan istifadə etməyi bacarmaması
+-    **B)** Yerin öz oxu ətrafında daim fırlanaraq xəritəçəkən cihazları silkələməsi
+- ✅ **C)** Kürə səthini cırmadan və qırışdırmadan müstəviyə tam dəqiq açmağın həndəsi cəhətdən qeyri-mümkün olması
+-    **D)** Kosmik peyklərin yalnız bir yarımkürənin şəkillərini çəkə bilməsi
 
-**Düzgün cavab:** **C) Tullantılar yığılıb qalar və canlıların həyatı təhlükə altına düşər**
+> 💡 **İzah:** Qlobusu heç bir təhrif olmadan düz kağıza açmaq mümkün deyil, buna görə xəritələrdə forma, sahə və məsafə təhrifləri yaranır.
 
-**İzah:** Maddələr dövranı (su, karbon, azot) dayanarsa həyat zənciri qırılar və fəlakət baş verər.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M04-BL4-C-012]`
+**Ekvator üzərində yerləşən iki məntəqə arasında 5° dərəcə fərq varsa, onlar arasındakı həqiqi məsafə neçə km olar? (1° meridian/ekvator qövsü ≈ 111 km)**
 
----
+-    **A)** 111 km
+-    **B)** 222 km
+-    **C)** 1110 km
+- ✅ **D)** 555 km
 
-### Sual 115. [Orta] — TİK: `06-003-0202-0120-02-02-115`
+> 💡 **İzah:** Ekvator üzərində 1° = 111.3 km. 5° * 111 km = 555 km.
 
-**Sual:** Göl ekosisteminə kənardan kənd təsərrüfatı gübrələrinin axıdılmasının yaratdığı mənfi nəticə nədir?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B02-M04-BL5-C-013]`
+**Fövqəladə Hallar Nazirliyinin yanğın və ya daşqın zamanı CİS xəritələrindən istifadə etməsinin əsas üstünlüyü nədir?**
 
-- **A)** Göl suyunun dərhal təmiz bulaq suyuna çevrilməsi
-- **B)** Suyun həddindən artıq yosunlaşması, oksigenin tükənməsi və balıqların tələf olması
-- **C)** Balıqların çəkisinin min dəfə artması
-- **D)** Gölün dərhal dənizə birləşməsi
+-    **A)** Təbii fəlakətin baş verməsinin qarşısını həmin an sehrli şəkildə almaq
+-    **B)** Hadisə yerindəki havanın temperaturunu dərhal 0 dərəcəyə endirmək
+-    **C)** Kağız xəritələrin çap olunması xərclərini sadəcə qənaət etmək
+- ✅ **D)** Təhlükə zonasını, yolları və yaşayış məntəqələrini eyni anda görüb operativ qərar vermək
 
-**Düzgün cavab:** **B) Suyun həddindən artıq yosunlaşması, oksigenin tükənməsi və balıqların tələf olması**
+> 💡 **İzah:** CİS çoxsaylı coğrafi məlumatları (əhali sıxlığı, su xətləri, yollar) qat-qat birləşdirərək xilasetmə əməliyyatını dəqiqləşdirir.
 
-**İzah:** Evtrofikasiya: gübrə yosunları həddən artıq artırır, suyun oksigeni bitir və canlılar ölür.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B02-M04-BL4-C-014]`
+**Qrinviç meridianından həm şərqə, həm də qərbə doğru ən böyük uzunluq dərəcəsi neçə dərəcə ola bilər?**
 
----
+- ✅ **A)** 180°
+-    **B)** 90°
+-    **C)** 360°
+-    **D)** 45°
 
-### Sual 116. [Çətin] — TİK: `06-003-0202-0130-03-03-116`
+> 💡 **İzah:** Yer kürəsi 360° çevrədir: Qrinviçdən şərqə 180° ş.u., qərbə isə 180° q.u. mövcuddur. Enliklər isə maksimum 90°-dir.
 
-**Sual:** Təbii sistemdə bioloji müxtəlifliyin (canlı növlərinin sayının) zəngin olmasının ekosistem üçün ən böyük əhəmiyyəti nədir?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B02-M04-BL5-C-015]`
+**Nə üçün dənizçilər və təyyarə pilotları sadə sxemlər əvəzinə dərəcə toru olan dəqiq xəritələrdən istifadə edirlər?**
 
-- **A)** Bütün canlıların eyni qida ilə qidalanması
-- **B)** Ərazidə torpaq qatının tamamilə sıradan çıxması
-- **C)** Ekosistemin xarici təsirlərə və xəstəliklərə qarşı daha dözümlü və dayanıqlı olması
-- **D)** Bütün meşələrin qısa müddətdə quruması
+-    **A)** Dərəcə toru olan xəritələrin gecə vaxtı öz-özünə işıq saçması üçün
+- ✅ **B)** Açıq dənizdə və səmada heç bir oriyentir olmadığı üçün koordinatlarla dəqiq istiqamət təyin etməkdən ötrü
+-    **C)** Beynəlxalq qanunlara görə sadə xəritə gəzdirməyin qadağan olması üçün
+-    **D)** Təyyarənin yanacaq sərfiyyatını xəritənin dərəcələri ilə tənzimləmək üçün
 
-**Düzgün cavab:** **C) Ekosistemin xarici təsirlərə və xəstəliklərə qarşı daha dözümlü və dayanıqlı olması**
+> 💡 **İzah:** Okeanda və havada obyektlər yoxdur; hərəkət yalnız dərəcə toru və coğrafi koordinatlara əsasən aparılır.
 
-**İzah:** Növ zənginliyi qida zəncirini şaxələndirir və sistemin böhranlara qarşı sabitliyini təmin edir.
 
 ---
-
-### Sual 117. [Çətin] — TİK: `06-003-0202-0130-03-03-117`
 
-**Sual:** Coğrafi təbəqədə ritmiklik (təkrarlanma) qanunauyğunluğuna aid olan düzgün nümunə hansıdır?
+## Mövzu 5: 3.1. Ərazidə tədqiqat (15 sual)
 
-- **A)** Vulkanların hər gün saat 12-də eyni vaxtda püskürməsi
-- **B)** Gecə-gündüzün, ilin fəsillərinin və qabarma-çəkilmənin müntəzəm təkrarlanması
-- **C)** Zəlzələlərin hər ay eyni kənddə baş verməsi
-- **D)** Dağların hər il qışda əriməsi
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M05-BL1-A-001]`
+**Coğrafiyaçıların əraziyə çıxaraq təbiəti yerindəcə birbaşa öyrənməsi prosesi necə adlanır?**
 
-**Düzgün cavab:** **B) Gecə-gündüzün, ilin fəsillərinin və qabarma-çəkilmənin müntəzəm təkrarlanması**
+- ✅ **A)** Çöl tədqiqatı
+-    **B)** Laboratoriya sınağı
+-    **C)** Nəzəri mühazirə
+-    **D)** Kompüter oyunu
 
-**İzah:** Ritmiklik təbiət hadisələrinin sutkalıq və illik dövri təkrarlanmasıdır.
+> 💡 **İzah:** Əraziyə səfər edərək təbiət obyektlərinin birbaşa müşahidə və analiz edilməsi çöl tədqiqatı (ekspedisiya) adlanır.
 
----
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M05-BL1-A-002]`
+**Çöl tədqiqatında üfüqün cəhətlərini və hərəkət istiqamətini (azimutu) təyin etmək üçün hansı cihazdan istifadə olunur?**
 
-### Sual 118. [Çətin] — TİK: `06-003-0202-0130-03-03-118`
+-    **A)** Termometr
+- ✅ **B)** Kompas
+-    **C)** Barometr
+-    **D)** Nivelir
 
-**Sual:** Meşə ekosistemində yırtıcı heyvanların (məsələn, canavarların) tamamilə məhv edilməsinin yaratdığı gözlənilməz ekoloji böhran nədir?
+> 💡 **İzah:** Kompas maqnit əqrəbi vasitəsilə cəhətləri və azimutu dəqiq təyin edən əsas cihazdır.
 
-- **A)** Otyeyənlərin hədsiz çoxalıb cavan ağacları yeməsi və meşənin məhvi
-- **B)** Meşə ağaclarının bir il ərzində dərhal ikiqat sıxlaşması
-- **C)** Bütün meşə çaylarının suyunun qəfil ikiqat artması
-- **D)** Meşədə heç bir zərərvericinin və xəstəliyin qalmaması
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M05-BL1-A-003]`
+**Ərazidə hava temperaturunu ölçmək üçün tədqiqat çantasında hansı cihaz olmalıdır?**
 
-**Düzgün cavab:** **A) Otyeyənlərin hədsiz çoxalıb cavan ağacları yeməsi və meşənin məhvi**
+-    **A)** Ruletka
+-    **B)** Lupa
+- ✅ **C)** Termometr
+-    **D)** Kompas
 
-**İzah:** Yırtıcılar təbiətin sanitarıdır; onlar olmayanda marallar ağacları gəmirib meşəni məhv edir.
+> 💡 **İzah:** Termometr mühitin, suyun və havanın istilik dərəcəsini ölçən alətdir.
 
----
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M05-BL1-A-004]`
+**Məktəb ərazisində məsafələri və ağacların arasındakı məsafəni dəqiq ölçmək üçün nə lazımdır?**
 
-### Sual 119. [Çətin] — TİK: `06-003-0202-0130-03-03-119`
+-    **A)** Termometr
+-    **B)** Barometr
+-    **C)** Kürə şkalası
+- ✅ **D)** Ölçü lenti (ruletka)
 
-**Sual:** Qlobal istiləşmə nəticəsində dünya okeanında mərcan riflərinin rəngsizləşib məhv olmasının ekosistemə zərbəsi nədir?
+> 💡 **İzah:** Məsafələri metr və santimetr dəqiqliyi ilə ölçmək üçün ruletkadan (ölçü lentindən) istifadə edilir.
 
-- **A)** Okean canlılarının dörddə birinin sığınacaq və qidalanma mərkəzini itirməsi
-- **B)** Okean suyunun tamamilə buxarlanması
-- **C)** Bütün dənizlərin quruya çevrilməsi
-- **D)** Mərcanların yerində nəhəng meşələrin bitməsi
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M05-BL1-A-005]`
+**Çöl tədqiqatı zamanı toplanmış məlumatlar harada qeyd edilməlidir?**
 
-**Düzgün cavab:** **A) Okean canlılarının dörddə birinin sığınacaq və qidalanma mərkəzini itirməsi**
+- ✅ **A)** Çöl gündəliyində (dəftərində)
+-    **B)** Yalnız yaddaşda
+-    **C)** Ağacların gövdəsində
+-    **D)** Qumun üzərində
 
-**İzah:** Mərcan rifləri dənizlərin ən zəngin 'su cəngəllikləridir'; onların ölümü balıq ehtiyatlarını çökdürür.
+> 💡 **İzah:** Tədqiqatçı gördüyü faktları, ölçmə rəqəmlərini və qeydləri xüsusi çöl gündəliyinə yazmalıdır.
 
----
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M05-BL2-O-006]`
+**Məktəb həyətində çöl tədqiqatı apararkən tərtib edilən tədqiqat planının ilk addımı nə olmalıdır?**
 
-### Sual 120. [Çətin] — TİK: `06-003-0202-0130-03-03-120`
+-    **A)** Dərhal qeydləri yazmadan torpağı dərin qazmağa başlamaq
+- ✅ **B)** Tədqiqatın məqsədini və öyrəniləcək obyekti dəqiq müəyyən etmək
+-    **C)** Tədqiqatı bitirib yekun hesabatı əvvəlcədən çap etmək
+-    **D)** Bütün ölçü cihazlarını qutudan çıxarmadan evə qayıtmaq
 
-**Sual:** Təbii sistemlərdə 'özünütənzimləmə' xüsusiyyəti nə deməkdir?
+> 💡 **İzah:** İstənilən elmi tədqiqat ilk növbədə məqsədin, vəzifələrin və iş planının müəyyənləşdirilməsi ilə başlayır.
 
-- **A)** Təbiətin yalnız fabriklər vasitəsilə təmizlənməsi
-- **B)** Bütün heyvanların insanlara itaət etməsi
-- **C)** Ekosistemin insan müdaxiləsi olmadan daxili tarazlığını və bərpasını qorumaq qabiliyyəti
-- **D)** Təbiətin hər il tamamilə yenidən yaranması
+### Sual 7 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B03-M05-BL3-O-007]`
+**Yamancın nisbi hündürlüyünü və meyilliyini ölçmək üçün şagirdlər hansı sadə cihazdan istifadə edə bilərlər?**
 
-**Düzgün cavab:** **C) Ekosistemin insan müdaxiləsi olmadan daxili tarazlığını və bərpasını qorumaq qabiliyyəti**
+-    **A)** Anemometr
+-    **B)** Termometr
+- ✅ **C)** Sadə nivelir
+-    **D)** Psixrometr
 
-**İzah:** Sağlam ekosistem xarici zərbə olmadıqda öz daxili tarazlığını özü bərpa edir.
+> 💡 **İzah:** Şaquli dirək və üfüqi qoldan ibarət sadə nivelir yamacların hündürlük fərqini addım-addım ölçməyə yarayır.
 
----
+### Sual 8 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M05-BL2-O-008]`
+**Çöl tədqiqatı zamanı fotoşəkillərin çəkilməsi və video qeydlərin aparılması nə üçün vacibdir?**
 
-## 6.1. Ölkəmizin təbiətini tanıyaq
+-    **A)** Yalnız sosial şəbəkələrdə çoxlu sayda bəyənmə toplamaq üçün
+-    **B)** Xəritələrdəki bütün dərəcə torunu kameranın yaddaşına köçürmək üçün
+-    **C)** Tədqiqat gündəliyinə yazı yazmaq zəhmətindən tamamilə qurtulmaq üçün
+- ✅ **D)** Müşahidə olunan təbii vəziyyəti əyani sənədləşdirmək və sonradan təhlil etmək üçün
 
-### Sual 121. [Sadə] — TİK: `06-003-0203-0110-01-01-121`
+> 💡 **İzah:** Foto və video materiallar obyektin real vizual vəziyyətini arxivləşdirmək və elmi sübut kimi saxlamaq üçün gərəklidir.
 
-**Sual:** Azərbaycan Respublikasının ən yüksək dağ zirvəsi olan Bazardüzü zirvəsi (4466 m) hansı dağ silsiləsində yerləşir?
+### Sual 9 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B03-M05-BL3-O-009]`
+**Şagirdlər məktəb həyətində torpaq nümunəsi götürərkən nələrə diqqət yetirməlidirlər?**
 
-- **A)** Kiçik Qafqaz dağlarında
-- **B)** Böyük Qafqazın Baş Qafqaz silsiləsində
-- **C)** Talış dağlarında
-- **D)** Qarabağ silsiləsində
+- ✅ **A)** Nümunənin götürüldüyü dərinliyi, yeri qeyd etməyə və qabı etiketləməyə
+-    **B)** Torpağı dərhal qaynar su ilə yuyub bütün mineralları təmizləməyə
+-    **C)** Nümunəni heç bir qeyd aparmadan digər torpaqlara qarışdırmağa
+-    **D)** Yalnız həyətin asfalt örtüyü olan hissəsindən nümunə toplamağa
 
-**Düzgün cavab:** **B) Böyük Qafqazın Baş Qafqaz silsiləsində**
+> 💡 **İzah:** Hər bir torpaq nümunəsinin dəqiq yeri, dərinliyi və tarixi xüsusi etiketlə qeyd olunmalıdır.
 
-**İzah:** Bazardüzü zirvəsi (4466 m) Böyük Qafqazın Baş Suayrıcı silsiləsində yerləşir.
+### Sual 10 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M05-BL2-O-010]`
+**Çöl tədqiqatından qayıtdıqdan sonra görülən işlərin yekun mərhələsi hansıdır?**
 
----
+-    **A)** Bütün çöl gündəliklərinin və cihazların dərhal zibilliyə atılması
+- ✅ **B)** Toplanmış məlumatların emalı, təhlili və hesabatın (təqdimatın) hazırlanması
+-    **C)** Tədqiqat zamanı ölçülmüş rəqəmlərin hamısının dəyişdirilməsi
+-    **D)** Yalnız yeni ekspedisiya üçün heç bir nəticə çıxarmadan yola düşmək
 
-### Sual 122. [Sadə] — TİK: `06-003-0203-0110-01-01-122`
+> 💡 **İzah:** Kameral (kabinet) mərhələsində toplanan çöl materialları sistemləşdirilir, qrafiklər qurulur və elmi nəticələr çıxarılır.
 
-**Sual:** Azərbaycanın ərazisindən axan ən uzun və ən böyük tranzit çay hansıdır?
+### Sual 11 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B03-M05-BL5-C-011]`
+**Çöl tədqiqatının nəzəri dərslik biliklərindən üstünlüyünü ən yaxşı əks etdirən fikir hansıdır?**
 
-- **A)** Araz çayı
-- **B)** Kür çayı
-- **C)** Samur çayı
-- **D)** Tərtər çayı
+-    **A)** Kitab oxumaq ehtiyacını və dərsliklərin əhəmiyyətini tamamilə sıfıra endirir.
+-    **B)** Tələbələrin bütün coğrafi qanunları heç bir ölçü aparmadan əzbərləməsini təmin edir.
+- ✅ **C)** Təbii prosesləri real mühitdə bilavasitə müşahidə edərək praktiki bacarıqlar qazandırır.
+-    **D)** Yalnız əyləncəli gəzinti xarakteri daşıyır və heç bir elmi məlumat vermir.
 
-**Düzgün cavab:** **B) Kür çayı**
+> 💡 **İzah:** Çöl tədqiqatı nəzəriyyəni təcrübə ilə birləşdirir, şagirddə müşahidə, ölçmə və tənqidi təhlil bacarıqlarını formalaşdırır.
 
-**İzah:** Kür çayı (1515 km) Türkiyədən başlayıb Gürcüstan və Azərbaycandan keçərək Xəzərə tökülür.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B03-M05-BL4-C-012]`
+**Çay sahilində aparılan çöl tədqiqatı zamanı suyun sürətinin müxtəlif yerlərdə fərqli olması nə ilə əlaqələndirilə bilər?**
 
----
+-    **A)** Yalnız suyun kimyəvi tərkibindəki duzların faiz miqdarı ilə
+-    **B)** Həmin ərazidəki havanın təzyiqinin hər saniyə dəyişməsi ilə
+-    **C)** Çayın axdığı istiqamətdə meridianların bir-birinə yaxınlaşması ilə
+- ✅ **D)** Yatağın meyilliyi, dərinliyi və sahilin relyef xüsusiyyətləri ilə
 
-### Sual 123. [Sadə] — TİK: `06-003-0203-0110-01-01-123`
+> 💡 **İzah:** Çayın axın sürəti relyefin dikliyindən (meyillik) və yatağın darlığından birbaşa asılıdır.
 
-**Sual:** 1139-cu ildə Gəncə zəlzələsi zamanı Kəpəz dağının uçması nəticəsində Ağsu çayının qarşısında yaranan gözəl göl hansıdır?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B03-M05-BL5-C-013]`
+**Ekspedisiya zamanı təhlükəsizlik qaydalarına əməl olunmaması hansı fəsadlara yol aça bilər?**
 
-- **A)** Batabat gölü
-- **B)** Maralgöl
-- **C)** Göygöl
-- **D)** Cاندارgöl
+- ✅ **A)** Tədqiqatçıların xəsarət almasına və bahalı elmi cihazların sıradan çıxmasına
+-    **B)** Ərazinin təbii coğrafi koordinatlarının xəritədə sürüşərək itməsinə
+-    **C)** Tədqiqat aparılan dağların mütləq hündürlüyünün dərhal aşağı düşməsinə
+-    **D)** Günəş şüalarının yerə düşmə bucağının kəskin şəkildə dəyişməsinə
 
-**Düzgün cavab:** **C) Göygöl**
+> 💡 **İzah:** Çöl şəraitində təhlükəsizlik (geyimi, relyef təhlükələri, hava şəraiti) tədqiqatın uğurla başa çatması üçün bir nömrəli şərtdir.
 
-**İzah:** Məşhur Göygöl 1139-cu il zəlzələsində Kəpəz dağının uçması nəticəsində yaranmış bənd gölüdür.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B03-M05-BL4-C-014]`
+**Məktəb ərazisində küləyin istiqamətini və sürətini öyrənən şagird qrupu hansı cihazlardan istifadə etməlidir?**
 
----
+-    **A)** Barometr və termometr
+- ✅ **B)** Flüger və anemometr
+-    **C)** Nivelir və ruletka
+-    **D)** Kompas və lupa
 
-### Sual 124. [Sadə] — TİK: `06-003-0203-0110-01-01-124`
+> 💡 **İzah:** Küləyin istiqamətini flüger, sürətini isə anemometr cihazı vasitəsilə ölçürlər.
 
-**Sual:** Nadir ceyranların qorunması və çoxaldılması məqsədilə yaradılmış məşhur qoruğumuz və milli parkımız hansıdır?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B03-M05-BL5-C-015]`
+**Çöl tədqiqatında toplanan məlumatların etibarlılığını təmin etmək üçün hansı qaydaya riayət edilməlidir?**
 
-- **A)** Zaqatala qoruğu
-- **B)** Şirvan Milli Parkı
-- **C)** Qızılağac qoruğu
-- **D)** Hirkan Milli Parkı
+-    **A)** Yalnız ən xoşagələn bir rəqəmi seçib digər bütün ölçmələri silmək
+-    **B)** Ölçmələri cihazsız, yalnız gözəyarı təxminlərə əsaslanaraq qeyd etmək
+- ✅ **C)** Ölçmələri eyni nöqtədə bir neçə dəfə təkrarlamaq və orta göstəricini hesablamaq
+-    **D)** Qonşu məktəbin keçənilki köhnə hesabatındakı rəqəmləri birbaşa köçürmək
 
-**Düzgün cavab:** **B) Şirvan Milli Parkı**
+> 💡 **İzah:** Elmi dəqiqlik üçün təkrar ölçmələr aparılmalı, cihaz xətaları nəzərə alınmalı və orta statistik nəticə çıxarılmalıdır.
 
-**İzah:** Şirvan düzündə yerləşən Şirvan Milli Parkı ceyranların qorunduğu əsas məkandır.
 
 ---
 
-### Sual 125. [Sadə] — TİK: `06-003-0203-0110-01-01-125`
+## Mövzu 6: 4.1. Nə üçün səma cisimlərinə maraq göstəririk? (15 sual)
 
-**Sual:** Lənkəran ovalığında və Talış dağlarında bitən, suya batmayan, çox möhkəm relikt ağac növü hansıdır?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M06-BL1-A-001]`
+**Günəş sisteminin mərkəzində yerləşən və ətrafına işıq və istilik saçan ulduz hansıdır?**
 
-- **A)** Şam ağacı
-- **B)** Qoz ağacı
-- **C)** Dəmir ağac
-- **D)** Söyüd ağacı
+- ✅ **A)** Günəş
+-    **B)** Qütb ulduzu
+-    **C)** Sirius
+-    **D)** Veqadan
 
-**Düzgün cavab:** **C) Dəmir ağac**
+> 💡 **İzah:** Günəş sisteminin mərkəzində nəhəng plazma kürəsi olan Günəş ulduzu yerləşir.
 
-**İzah:** Dəmir ağac (parrotiya) Hirkan florasının ən qədim relikt ağaclarından biridir.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M06-BL1-A-002]`
+**Yer kürəsinin yeganə təbii peyki hansı səma cismidir?**
 
----
+-    **A)** Mars
+- ✅ **B)** Ay
+-    **C)** Venera
+-    **D)** Merkuri
 
-### Sual 126. [Orta] — TİK: `06-003-0203-0120-02-02-126`
+> 💡 **İzah:** Yerin yeganə təbii peyki Aydır və Yerin ətrafında dövr edir.
 
-**Sual:** Azərbaycan ərazisində Yer kürəsində mövcud olan 11 iqlim tipindən neçəsi müşahidə olunur?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M06-BL1-A-003]`
+**Yerin öz xəyali oxu ətrafında bir tam dövr etməsi nəticəsində nə baş verir?**
 
-- **A)** 3 iqlim tipi
-- **B)** 9 iqlim tipi
-- **C)** 5 iqlim tipi
-- **D)** Bütün 11 iqlim tipi
+-    **A)** İlin dörd fəsli tam dəyişir (365 gün).
+-    **B)** Ayın Yerdən görünüşü tamamilə yox olur.
+- ✅ **C)** Gecə və gündüz bir-birini əvəz edir (24 saat).
+-    **D)** Yerdə qravitasiya qüvvəsi sıfıra enir.
 
-**Düzgün cavab:** **B) 9 iqlim tipi**
+> 💡 **İzah:** Yer öz oxu ətrafında 24 saata (1 sutkaya) fırlanır və bunun nəticəsində gecə-gündüz yaranır.
 
-**İzah:** Mürəkkəb relyef və Xəzər dənizi sayəsində Azərbaycanda 9 iqlim tipi formalaşmışdır.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M06-BL1-A-004]`
+**Yerin Günəş ətrafında illik hərəkəti və oxunun meyilli olması hansı hadisəyə səbəb olur?**
 
----
+-    **A)** Yalnız sutkalıq küləklərin əsməsinə
+-    **B)** Okeanlarda qabarma və çəkilmənin dayanmasına
+-    **C)** Yerin daxili nüvəsinin bərkiməsinə
+- ✅ **D)** Fəsillərin yaranmasına (yaz, yay, payız, qış)
 
-### Sual 127. [Orta] — TİK: `06-003-0203-0120-02-02-127`
+> 💡 **İzah:** Yerin Günəş ətrafında dolanması və ox meyilliliyi (66.5°) fəsillərin növbələşməsinin əsas səbəbidir.
 
-**Sual:** Dünyada məlum olan palçıq vulkanlarının demək olar ki, yarısının cəmləşdiyi Azərbaycan bölgələri hansılardır?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B03-M06-BL1-A-005]`
+**Günəş sistemində Günəşə ən yaxın olan planet hansıdır?**
 
-- **A)** Qobustan, Abşeron yarımadası və Şamaxı
-- **B)** Naxçıvan və Zəngəzur silsiləsi
-- **C)** Lənkəran və Talış dağları
-- **D)** Quba və Qusar dağları
+- ✅ **A)** Merkuri
+-    **B)** Venera
+-    **C)** Yer
+-    **D)** Mars
 
-**Düzgün cavab:** **A) Qobustan, Abşeron yarımadası və Şamaxı**
+> 💡 **İzah:** Günəşə ən yaxın planet Merkuridir, ondan sonra Venera, Yer və Mars gəlir.
 
-**İzah:** Qobustan və Abşeron dünyada palçıq vulkanlarının ən sıx yayıldığı unikal mərkəzdir.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M06-BL2-O-006]`
+**Günəş sisteminin planetləri yer tipli və qaz nəhəngləri qruplarına bölünür. Yer tipli planetlər hansılardır?**
 
----
+-    **A)** Yupiter, Saturn, Uran, Neptun
+- ✅ **B)** Merkuri, Venera, Yer, Mars
+-    **C)** Yalnız Yer və onun peyki Ay
+-    **D)** Pluton, Xaron və kometlər
 
-### Sual 128. [Orta] — TİK: `06-003-0203-0120-02-02-128`
+> 💡 **İzah:** Daxili (Yer tipli) planetlər bərk süxurlardan ibarət olan Merkuri, Venera, Yer və Marsdır.
 
-**Sual:** Azərbaycanın ən böyük su anbarı olan Mingəçevir su anbarının xalq təsərrüfatındakı əsas rolu nədir?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M06-BL2-O-007]`
+**Yerin qütblərdən basıq, ekvatordan isə qabarıq olan xüsusi həndəsi forması necə adlanır?**
 
-- **A)** Elektrik enerjisi almaq, tarlaları suvarmaq və daşqınları önləmək
-- **B)** Dəniz nəqliyyat gəmilərinin təmiri üçün xüsusi liman yaratmaq
-- **C)** Bütün Kür çayının təbii axarını tamamilə qurutmaq
-- **D)** Yalnız süfrə duzunun istehsalını həyata keçirmək
+-    **A)** Düzbucaqlı
+-    **B)** Paralelopiped
+- ✅ **C)** Geoid
+-    **D)** Silindr
 
-**Düzgün cavab:** **A) Elektrik enerjisi almaq, tarlaları suvarmaq və daşqınları önləmək**
+> 💡 **İzah:** Yerin öz oxu ətrafında fırlanması nəticəsində qütblərdən basıq olan xüsusi formasına geoid deyilir.
 
-**İzah:** Mingəçevir su anbarı həm Mingəçevir SES-i işlədir, həm də Yuxarı Qarabağ və Şirvan kanallarını su ilə təmin edir.
+### Sual 8 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B03-M06-BL2-O-008]`
+**21 mart və 23 sentyabr tarixlərində Yer kürəsində hansı mühüm astronomik hadisə baş verir?**
 
----
+-    **A)** Şimal qütbündə ən uzun yay günü və qütb gündüzləri başlayır
+-    **B)** Cənub yarımkürəsində qış fəslinin ən soyuq günü qeydə alınır
+-    **C)** Günəş şüaları yalnız Şimal qütb nöqtəsinə 90 dərəcə bucaqla düşür
+- ✅ **D)** Yaz və payız gecə-gündüz bərabərliyi (bütün Yer üzündə gecə və gündüz 12 saat olur)
 
-### Sual 129. [Orta] — TİK: `06-003-0203-0120-02-02-129`
+> 💡 **İzah:** 21 mart (yaz) və 23 sentyabr (payız) bərabərlik günlərində Günəş ekvator üzərində zenitdə olur və gecə=gündüz olur.
 
-**Sual:** Azərbaycanda qış aylarında köçəri su quşlarının (qutan, qızılqaz, flaminqo) qışladığı əsas qoruq hansıdır?
+### Sual 9 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B03-M06-BL3-O-009]`
+**Qədim dənizçilər və səyyahlar açıq dənizdə gecə vaxtı istiqaməti hansı ulduza əsasən müəyyən edirdilər?**
 
-- **A)** Tufandağ qoruğu
-- **B)** Qızılağac Dövlət Təbiət Qoruğu
-- **C)** Şahdağ qoruğu
-- **D)** Göygöl qoruğu
+- ✅ **A)** Şimalı göstərən Qütb ulduzuna əsasən
+-    **B)** Cənubu göstərən Sirius ulduzuna əsasən
+-    **C)** Qərbi göstərən Venera planetinə əsasən
+-    **D)** Şərqi göstərən Andromeda qalaktikasına əsasən
 
-**Düzgün cavab:** **B) Qızılağac Dövlət Təbiət Qoruğu**
+> 💡 **İzah:** Kiçik Ayı bürcündəki Qütb ulduzu həmişə dəqiq Şimal istiqamətini göstərdiyi üçün əsas kompas rolunu oynayıb.
 
-**İzah:** Xəzərin cənub-qərbindəki Qızılağac körfəzi milyonlarla köçəri su quşunun qışlama yeridir.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B03-M06-BL3-O-010]`
+**Kosmik fəzanın süni peyklər vasitəsilə öyrənilməsi yerüstü coğrafi tədqiqatlara necə kömək edir?**
 
----
+-    **A)** Yerin fırlanma sürətini istənilən vaxt artırıb-azaltmağa şərait yaradır.
+- ✅ **B)** Hava proqnozlarını, meşə yanğınlarını və dəniz fırtınalarını qabaqcadan izləməyə imkan verir.
+-    **C)** Bütün dünya okeanlarının suyunu içməli suya çevirməyə kömək edir.
+-    **D)** Yer kürəsinin Günəş ətrafındakı orbitini tamamilə dəyişməyə imkan verir.
 
-### Sual 130. [Orta] — TİK: `06-003-0203-0120-02-02-130`
+> 💡 **İzah:** Süni peyklər Yeri qlobal miqyasda fasiləsiz müşahidə edərək meteoroloji, ekoloji və xəritəçəkmə məlumatları ötürür.
 
-**Sual:** Azərbaycan ərazisinin relyefinin ümumi quruluşu hansı xüsusiyyətə malikdir?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B03-M06-BL4-C-011]`
+**Əgər Yerin fırlanma oxu orbit müstəvisinə meyilli olmayıb tam şaquli (90°) olsaydı, Yer kürəsində nə baş verərdi?**
 
-- **A)** Ərazinin 100%-i tamamilə qum səhrasıdır
-- **B)** Ərazinin təqribən 60%-i dağlıq, 40%-i isə düzənlik və ovalıqlardan ibarətdir
-- **C)** Bütün ölkə dəniz səviyyəsindən 5000 metr yüksəkdədir
-- **D)** Ölkədə heç bir dağ və təpə yoxdur
+-    **A)** Gecə və gündüzün növbələşməsi tamamilə dayanardı və Yer donardı.
+-    **B)** Ekvatorda qış, qütblərdə isə həmişə isti yay fəsli müşahidə edilərdi.
+- ✅ **C)** Fəsillər yaranmazdı və ilboyu hər bir enlikdə eyni hava şəraiti hökm sürərdi.
+-    **D)** Yerin cazibə qüvvəsi iki dəfə artaraq canlıların hərəkətini dondurardı.
 
-**Düzgün cavab:** **B) Ərazinin təqribən 60%-i dağlıq, 40%-i isə düzənlik və ovalıqlardan ibarətdir**
+> 💡 **İzah:** Ox meyilliyi (66.5°) olmasaydı, Günəş şüalarının düşmə bucağı ilboyu dəyişməzdi və fəsillər yaranmazdı.
 
-**İzah:** Azərbaycan zəngin relyefə malikdir: dağlıq (Böyük və Kiçik Qafqaz, Talış) və düzənlik (Kür-Araz, Samur-Dəvəçi).
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B03-M06-BL4-C-012]`
+**22 iyun tarixində Şimal qütb dairəsində (66.5° şm.e.) və ondan şimalda hansı hadisə müşahidə olunur?**
 
----
+-    **A)** 24 saat ərzində Günəş heç çıxmır və zülmət qaranlıq olur (Qütb gecəsi).
+-    **B)** Gecə və gündüzün uzunluğu tam bərabər olur (12 saat).
+-    **C)** Günəş şüaları günorta vaxtı yerə 90 dərəcə perpendikulyar düşür.
+- ✅ **D)** 24 saat ərzində Günəş üfüqdən batmır (Qütb gündüzü).
 
-### Sual 131. [Çətin] — TİK: `06-003-0203-0130-03-03-131`
+> 💡 **İzah:** 22 iyun Şimal yarımkürəsində yay gündönümüdür; 66.5° şm.e.-dən şimalda 24 saat batmayan qütb gündüzləri olur.
 
-**Sual:** Kür-Araz ovalığının dəniz səviyyəsindən aşağıda (mənfi 27 metrədək) yerləşməsinin onun təbii şəraitinə təsiri nədir?
+### Sual 13 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B03-M06-BL4-C-013]`
+**Ayın cazibə qüvvəsinin Yer kürəsində yaratdığı ən böyük coğrafi təsir hansıdır?**
 
-- **A)** Yarımsəhra iqliminin formalaşması və suvarma əkinçiliyi tələbatı
-- **B)** Ərazinin ilboyu qalın qar və buz örtüyü ilə örtülü qalması
-- **C)** Ərazidə sıx və keçilməz tayqa meşələrinin bitib çoxalması
-- **D)** Atmosfer havasının təzyiqinin sıfır dərəcəyə qədər enməsi
+-    **A)** Materiklərdə vulkanların eyni anda püskürməsinə səbəb olması
+- ✅ **B)** Dünya okeanında qabarma və çəkilmə hadisələrinin baş verməsi
+-    **C)** Atmosferdə oksigen qazının miqdarının ikiqat artması
+-    **D)** Çayların axın istiqamətinin dağlara doğru tərsinə dönməsi
 
-**Düzgün cavab:** **A) Yarımsəhra iqliminin formalaşması və suvarma əkinçiliyi tələbatı**
+> 💡 **İzah:** Ayın Yeri cəzb etməsi nəticəsində okean suları qabarır və çəkilir, bu da dəniz nəqliyyatı və ekosistem üçün mühümdür.
 
-**İzah:** Ovalıq quraqdır və okean səviyyəsindən alçaqdır, buna görə pambıq və taxıl üçün süni suvarma şərtdir.
+### Sual 14 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B03-M06-BL5-C-014]`
+**Nə üçün Yerdə həyat mövcuddur, lakin qonşu planetlər Venera və Marsda canlılar aləmi aşkar edilməmişdir?**
 
----
+-    **A)** Yalnız Yerin tək bir təbii peyki olan Ayın mövcud olması səbəbindən
+-    **B)** Yerin Günəş sistemində ən böyük və ən ağır planet olması nəticəsində
+- ✅ **C)** Yerin Günəşdən optimal məsafədə olması, maye suyun və qoruyucu atmosferin mövcudluğu sayəsində
+-    **D)** Venera və Marsda Yerin əksinə heç bir cazibə qüvvəsinin olmaması səbəbindən
 
-### Sual 132. [Çətin] — TİK: `06-003-0203-0130-03-03-132`
+> 💡 **İzah:** Həyat üçün optimal temperatur zonası (Goldilocks zone), maye su, oksigenli atmosfer və maqnit sahəsi yalnız Yerdə cəmlənib.
 
-**Sual:** Xəzər dənizinin dünyadakı digər dənizlərdən ən böyük hidroloji fərqi nədən ibarətdir?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B03-M06-BL5-C-015]`
+**Müasir dövrdə kosmik fəzanın və Günəş aktivliyinin öyrənilməsi nə üçün qlobal əhəmiyyət kəsb edir?**
 
-- **A)** Suyunun tamamilə şirin və içməli olması
-- **B)** Dənizin dörd tərəfdən dağlarla örtülü mağarada yerləşməsi
-- **C)** Dənizdə heç bir canlı balığın yaşamaması
-- **D)** Dünya okeanına birbaşa çıxışı olmayan, Yer kürəsinin ən böyük axarsız gölü olması
+-    **A)** Günəşi söndürərək Yerin temperaturunu aşağı salmaq üçün
+-    **B)** Kosmosdakı planetləri Yerin orbitinə çəkib birləşdirmək üçün
+-    **C)** Yalnız gecələr Ayın işığını iki dəfə artırmaq məqsədilə
+- ✅ **D)** Günəşdəki maqnit qasırğalarının Yerdəki rabitə, elektrik və canlılara təsirini proqnozlaşdırmaq üçün
 
-**Düzgün cavab:** **D) Dünya okeanına birbaşa çıxışı olmayan, Yer kürəsinin ən böyük axarsız gölü olması**
+> 💡 **İzah:** Günəş alışmaları Yerdə maqnit qasırğaları yaradır, bu da peyk rabitəsini, elektrik şəbəkələrini və insanların səhhətini təsirləndirir.
 
-**İzah:** Xəzər böyüklüyünə görə dəniz adlansa da, okeanla birbaşa təbii çıxışı olmayan dünyanın ən böyük gölüdür.
 
 ---
 
-### Sual 133. [Çətin] — TİK: `06-003-0203-0130-03-03-133`
+## Mövzu 7: 5.1. Təbiətdəki müxtəliflik (15 sual)
 
-**Sual:** Azərbaycanda şaquli qurşaqlıq üzrə torpaq və bitki örtüyünün dəyişmə ardıcıllığı düzənlikdən zirvəyə hansı sıra ilə gedir?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M07-BL1-A-001]`
+**Yer kürəsinin bərk daş təbəqəsi necə adlanır?**
 
-- **A)** Yarımsəhra $\to$ Dağ meşəsi $\to$ Dağ çəmənliyi $\to$ Qaya və buzlaqlar
-- **B)** Qaya və buzlaqlar $\to$ Dağ çəməni $\to$ Dağ meşəsi $\to$ Yarımsəhra
-- **C)** Dağ meşələri $\to$ Yarımsəhra $\to$ Buzlaq $\to$ Çəmənlik
-- **D)** Tundra $\to$ Tayqa $\to$ Savanna $\to$ Cəngəllik
+- ✅ **A)** Litosfer
+-    **B)** Atmosfer
+-    **C)** Hidrosfer
+-    **D)** Biosfer
 
-**Düzgün cavab:** **A) Yarımsəhra $\to$ Dağ meşəsi $\to$ Dağ çəmənliyi $\to$ Qaya və buzlaqlar**
+> 💡 **İzah:** Litosfer Yerin bərk daş və süxur təbəqəsidir (Yer qabığı və üst mantiya).
 
-**İzah:** Düzənlikdə yarımsəhra, ortada enliyarpaqlı meşələr, yuxarıda alp çəmənləri, zirvədə nival buzlaqdır.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M07-BL1-A-002]`
+**Yer kürəsini əhatə edən hava təbəqəsi necə adlanır?**
 
----
-
-### Sual 134. [Çətin] — TİK: `06-003-0203-0130-03-03-134`
+-    **A)** Hidrosfer
+- ✅ **B)** Atmosfer
+-    **C)** Litosfer
+-    **D)** Biosfer
 
-**Sual:** Qarabağ və Şərqi Zəngəzur bölgələrinin mineral suları və hidroenerji ehtiyatlarının xüsusiyyəti nədir?
+> 💡 **İzah:** Yeri əhatə edən qaz təbəqəsi atmosfer adlanır.
 
-- **A)** İstisu, Turşsu kimi müalicəvi bulaqların və Tərtər, Həkəri kimi gur dağ çaylarının zənginliyi
-- **B)** Bölgədə heç bir mineral suyun və çayın olmaması
-- **C)** Bütün çayların yalnız duzlu sudan ibarət olması
-- **D)** Ərazinin yalnız susuz səhradan ibarət olması
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M07-BL1-A-003]`
+**Okeanlar, dənizlər, göllər və çaylar Yerin hansı təbəqəsini təşkil edir?**
 
-**Düzgün cavab:** **A) İstisu, Turşsu kimi müalicəvi bulaqların və Tərtər, Həkəri kimi gur dağ çaylarının zənginliyi**
+-    **A)** Litosfer
+-    **B)** Atmosfer
+- ✅ **C)** Hidrosfer
+-    **D)** Biosfer
 
-**İzah:** Kəlbəcərin İstisuyu, Şuşanın Turşsuyu və dağ çayları bölgənin böyük təbii sərvətidir.
+> 💡 **İzah:** Yerdəki bütün su kütlələrinin cəmi hidrosfer (su təbəqəsi) adlanır.
 
----
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M07-BL1-A-004]`
+**Bitkilər, heyvanlar, mikroorqanizmlər və insanlar Yerin hansı təbəqəsinə aiddir?**
 
-### Sual 135. [Çətin] — TİK: `06-003-0203-0130-03-03-135`
+-    **A)** Atmosfer
+-    **B)** Litosfer
+-    **C)** Hidrosfer
+- ✅ **D)** Biosfer
 
-**Sual:** Naxçıvan Muxtar Respublikasının iqliminin kəskin kontinental olmasının başlıca coğrafi səbəbi nədir?
+> 💡 **İzah:** Yerdə həyatın mövcud olduğu canlılar təbəqəsi biosfer adlanır.
 
-- **A)** Xəzər dənizinin bilavasitə rütubətli sahilində yerləşməsi
-- **B)** Ekvator xəttinin Naxçıvan ərazisinin tən ortasından keçməsi
-- **C)** Ərazidə heç bir günəş şüasının və istiliyinin olmaması
-- **D)** Hündür dağlarla əhatələnməsi və dəniz hava axınlarının gələ bilməməsi
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M07-BL1-A-005]`
+**Aşağıdakılardan hansı quru səthində geniş sahə tutan təbii landşaft formasıdır?**
 
-**Düzgün cavab:** **D) Hündür dağlarla əhatələnməsi və dəniz hava axınlarının gələ bilməməsi**
+- ✅ **A)** Meşə və çöl
+-    **B)** Asfalt örtüyü
+-    **C)** Mədən quyusu
+-    **D)** Şəhər prospekti
 
-**İzah:** Qapıcıq və Dərələyəz dağları Naxçıvanı qapalı qazana çevirir: yayı çox isti, qışı çox şaxtalı olur.
+> 💡 **İzah:** Meşələr, çöllər, səhralar və savannalar təbii landşaft kompleksləridir.
 
----
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M07-BL2-O-006]`
+**Təbii komponentlərin (süxur, hava, su, torpaq, bitki) qarşılıqlı əlaqəsi nəticəsində nə yaranır?**
 
-## 7.1. Yer kürəsinin sosial mənzərəsi
+-    **A)** Yalnız süni su anbarları
+- ✅ **B)** Təbii kompleks (landşaft)
+-    **C)** Yerin maqnit qasırğaları
+-    **D)** Kosmik toz dumanlığı
 
-### Sual 136. [Sadə] — TİK: `06-003-0204-0110-01-01-136`
+> 💡 **İzah:** Bütün təbii komponentlərin bir-biri ilə vəhdətindən vahid təbii kompleks (landşaft) formalaşır.
 
-**Sual:** Cəmiyyətin təməl özəyini və ən kiçik sosial birliyini təşkil edən hücrə necə adlanır?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M07-BL2-O-007]`
+**Səhra zonasında bitki örtüyünün çox seyrək olmasının əsas səbəbi nədir?**
 
-- **A)** Zavod
-- **B)** Ailə
-- **C)** Dövlət
-- **D)** Bələdiyyə
+-    **A)** Ərazidə havanın temperaturunun ilboyu 0 dərəcədən aşağı olması
+-    **B)** Səhralarda torpağın daim güclü bataqlıqlaşmaya məruz qalması
+- ✅ **C)** Havanın həddən artıq quraq və yağıntıların kəskin az olması
+-    **D)** Həmin ərazilərə günəş şüalarının heç vaxt düşməməsi
 
-**Düzgün cavab:** **B) Ailə**
+> 💡 **İzah:** Səhralarda su çatışmazlığı və yüksək buxarlanma bitkilərin inkişafını kəskin məhdudlaşdırır.
 
-**İzah:** Ailə cəmiyyətin ən ilkin və ən möhkəm sosial təməlidir.
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B04-M07-BL3-O-008]`
+**Mülayim meşə zonasında zəngin torpaq qatının (qaratorpaq və qonur meşə) formalaşması nə ilə bağlıdır?**
 
----
+-    **A)** Yalnız dağlardan gələn vulkanik küllərin toplanması ilə
+-    **B)** Həmin ərazidə heç bir heyvanın yaşamaması səbəbilə
+-    **C)** Torpağın tərkibində suyun tamamilə yox olması ilə
+- ✅ **D)** Ağac yarpaqlarının çürüyərək torpaqda üzvi humusa çevrilməsi ilə
 
-### Sual 137. [Sadə] — TİK: `06-003-0204-0110-01-01-137`
+> 💡 **İzah:** Meşələrdə xəzəl və bitki qalıqları mikroorqanizmlər tərəfindən parçalanaraq münbit humus qatını yaradır.
 
-**Sual:** İnsanların birgə yaşadığı, qarşılıqlı münasibətlər qurduğu və fəaliyyət göstərdiyi mühit necə adlanır?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M07-BL2-O-009]`
+**Ekvatorial meşələrdə ağacların çoxhündürlü və çoxmərtəbəli olmasının səbəbi hansıdır?**
 
-- **A)** Kosmik fəza
-- **B)** Sualtı mühit
-- **C)** Boş səhra
-- **D)** Cəmiyyət
+- ✅ **A)** İlboyu bol günəş istiliyi və bol rütubətin mövcud olması
+-    **B)** Ərazidə güclü şaxtaların və qar örtüyünün hökm sürməsi
+-    **C)** Ağacların yalnız gecə vaxtı sürətlə böyüməsi xüsusiyyəti
+-    **D)** Torpaqda qum və duz qatının həddən artıq çox olması
 
-**Düzgün cavab:** **D) Cəmiyyət**
+> 💡 **İzah:** Ekvatorda ilboyu yüksək temperatur və bol yağıntı bitki örtüyünün sıx və nəhəng olmasına şərait yaradır.
 
-**İzah:** İnsanların birgə həyat tərzi və əlaqələri cəmiyyəti formalaşdırır.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B04-M07-BL3-O-010]`
+**Təbii komponentlərdən birinin (məsələn, iqlimin) dəyişməsi digər komponentlərə necə təsir edər?**
 
----
+-    **A)** Digər komponentlər heç bir dəyişikliyə məruz qalmadan əvvəlki kimi qalar.
+- ✅ **B)** Zəncirvari olaraq sulara, torpağa və bitki-heyvanat aləminə dəyişiklik gətirər.
+-    **C)** Yalnız Yerin cazibə qüvvəsini dərhal sıfıra endirər.
+-    **D)** Göllərin və çayların axınını anında dondurub dayandırar.
 
-### Sual 138. [Sadə] — TİK: `06-003-0204-0110-01-01-138`
+> 💡 **İzah:** Təbiətdəki bütün komponentlər bir-birinə bağlıdır; birinin dəyişməsi bütöv kompleksin dəyişməsinə səbəb olur.
 
-**Sual:** Şəhər əhalisinin və şəhər həyat tərzinin artması prosesi elmi dildə necə adlanır?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B04-M07-BL4-C-011]`
+**Dağlarda şaquli qurşaqlıq (hündürlüyə doğru təbii zonaların dəyişməsi) hansı qanunauyğunluqla baş verir?**
 
-- **A)** Eroziya
-- **B)** Miqrasiya
-- **C)** Fotosintez
-- **D)** Urbanizasiya
+-    **A)** Hündürlük artdıqca havanın temperaturunun hər 100 metrdə 6 dərəcə artması ilə
+-    **B)** Yalnız dağ zirvəsində torpağın daha çox qumlu olması səbəbi ilə
+- ✅ **C)** Yuxarı qalxdıqca temperaturun və təzyiqin azalması, rütubətin dəyişməsi ilə
+-    **D)** Dağların zirvəsinin ekvatora daha yaxın yerləşməsi nəticəsində
 
-**Düzgün cavab:** **D) Urbanizasiya**
+> 💡 **İzah:** Hündürlüyə qalxdıqca hər 1000 m-də temperatur təqribən 6°C azalır, bu da dağın ətəyindən zirvəsinə fərqli landşaftlar yaradır.
 
-**İzah:** Urbanizasiya (urban - şəhər) şəhərlərin böyüməsi və şəhər əhalisinin artmasıdır.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B04-M07-BL4-C-012]`
+**İnsanın təsərrüfat fəaliyyəti nəticəsində təbii landşaftın antropogen landşafta çevrilməsinə ən yaxşı nümunə hansıdır?**
 
----
+-    **A)** Vulkan püskürməsi nəticəsində lava örtüyünün soyuyub bərk süxura çevrilməsi
+-    **B)** Çay daşqınları zamanı vadidə yeni allüvial lil çöküntülərinin toplanması
+-    **C)** Dəniz dalğalarının sahildəki qayaları təbii şəkildə aşındırıb quma çevirməsi
+- ✅ **D)** Bataqlığın qurudularaq yerində pambıq tarlalarının və suvarma kanallarının salınması
 
-### Sual 139. [Sadə] — TİK: `06-003-0204-0110-01-01-139`
+> 💡 **İzah:** İnsan tərəfindən bataqlığın qurudulması və əkin sahəsinə çevrilməsi süni (antropogen) landşaft formalaşdırır.
 
-**Sual:** Azərbaycan xalqının yazın gəlişini, təbiətin oyanışını və bərabərliyi qeyd etdiyi ən əziz milli bayram hansıdır?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B04-M07-BL5-C-013]`
+**Meşələrin kütləvi qırılmasının həmin ərazinin su rejiminə və torpağına təsirini qiymətləndirin:**
 
-- **A)** Novruz bayramı
-- **B)** Yeni il bayramı
-- **C)** Zəfər günü
-- **D)** Müstəqillik günü
+-    **A)** Torpağın münbitliyi ikiqat artar və çayların suyu daha şəffaf olar.
+-    **B)** Ərazidə heç vaxt quraqlıq və ya daşqın hadisəsi baş verməz.
+- ✅ **C)** Torpaq eroziyası sürətlənər, sellər artar və qrunt sularının səviyyəsi kəskin enər.
+-    **D)** Meşəsiz ərazidə havanın rütubəti normadan 10 dəfə çox olar.
 
-**Düzgün cavab:** **A) Novruz bayramı**
+> 💡 **İzah:** Ağaclar torpağı kökləri ilə saxlayır və suyu tənzimləyir; meşə qırıldıqda torpaq yuyulur (eroziya) və su balansı pozulur.
 
-**İzah:** Novruz qədimdən yaz bərabərliyini, çərşənbələri və qardaşlığı tərənnüm edən milli bayramdır.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B04-M07-BL4-C-014]`
+**Nə üçün Antarktida qitəsində torpaq örtüyü və zəngin bitki aləmi formalaşa bilməmişdir?**
 
----
+-    **A)** Antarktidanın okean sularından tamamilə təcrid olunması nəticəsində
+-    **B)** Qitədə heç vaxt günəş işığının zərrə qədər belə görünməməsi səbəbindən
+-    **C)** Həmin qitənin süxurlarının yalnız qızıl və platindən ibarət olması səbəbilə
+- ✅ **D)** Ərazinin min illərdir qalın buz qatı ilə örtülü olması və kəskin soyuq iqlim səbəbindən
 
-### Sual 140. [Sadə] — TİK: `06-003-0204-0110-01-01-140`
+> 💡 **İzah:** Daimi şaxta, buzlaq örtüyü və torpaqəmələgətirən üzvi maddələrin çatışmazlığı torpağın və bitkinin yaranmasına mane olur.
 
-**Sual:** Kənd məskunlaşmasında əhalinin ən başlıca təsərrüfat məşğuliyyəti hansıdır?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B04-M07-BL5-C-015]`
+**Təbiətdəki müxtəlifliyin (biomüxtəlifliyin) qorunması bəşəriyyət üçün nə üçün həyati əhəmiyyət kəsb edir?**
 
-- **A)** Ağır maşınqayırma zavodları
-- **B)** Kosmik peyk idarəetməsi
-- **C)** Bank və valyuta birjaları
-- **D)** Kənd təsərrüfatı sahələri
+- ✅ **A)** Qida zəncirinin bütövlüyünü, oksigen mənbəyini və ekoloji tarazlığı saxlamaq üçün
+-    **B)** Yalnız zooparklarda saxlanılan nadir heyvanların sayını artırmaq üçün
+-    **C)** Bütün meşələri kəsib kağız istehsalını sonsuz dərəcədə genişləndirmək üçün
+-    **D)** Şəhərlərin tikinti sahələrini genişləndirmək məqsədilə təbii maneələri aradan qaldırmaq üçün
 
-**Düzgün cavab:** **D) Kənd təsərrüfatı sahələri**
+> 💡 **İzah:** Hər bir canlı orqanizm və ekosistem qlobal biosferin sağlam fəaliyyətində və insanın təmiz hava/su ilə təminatında əvəzsizdir.
 
-**İzah:** Kənd yerlərində əhali torpaq becərilməsi və heyvandarlıqla məşğul olur.
 
 ---
 
-### Sual 141. [Orta] — TİK: `06-003-0204-0120-02-02-141`
+## Mövzu 8: 5.2. Təbiət bir sistemdir (15 sual)
 
-**Sual:** Şəhər mühiti ilə kənd mühitində sosial əlaqələrin xarakteri necə fərqlənir?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M08-BL1-A-001]`
+**Bitkilərin günəş işığı vasitəsilə havadan karbon qazını udaraq oksigen və üzvi maddə yaratması prosesi nədir?**
 
-- **A)** Kənddə qonşuluq əlaqələri sıx, şəhərdə isə peşəkar münasibətlər üstündür
-- **B)** Kənddə yaşayan insanlar bir-birini heç vaxt tanımır və danışmır
-- **C)** Şəhərdə bütün sakinlər eyni ailədə və vahid evdə yaşayırlar
-- **D)** Kənd və şəhər məkanları arasında heç bir fərq müşahidə olunmur
+- ✅ **A)** Fotosintez
+-    **B)** Buxarlanma
+-    **C)** Kondensasiya
+-    **D)** Aşınma
 
-**Düzgün cavab:** **A) Kənddə qonşuluq əlaqələri sıx, şəhərdə isə peşəkar münasibətlər üstündür**
+> 💡 **İzah:** Yaşıl bitkilərin xloroplastlarında günəş enerjisi ilə qida və oksigen hasil etməsi fotosintez adlanır.
 
-**İzah:** Kənddə ənənəvi icma və qohumluq telləri, şəhərdə isə dinamik işgüzar əlaqələr güclüdür.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M08-BL1-A-002]`
+**Təbiətdə bir-biri ilə sıx əlaqədə olan canlı və cansız ünsürlərin vəhdəti necə adlanır?**
 
----
+-    **A)** Yalnız süxur qatı
+- ✅ **B)** Təbii sistem (ekosistem)
+-    **C)** Atmosfer təzyiqi
+-    **D)** Meridian şəbəkəsi
 
-### Sual 142. [Orta] — TİK: `06-003-0204-0120-02-02-142`
+> 💡 **İzah:** Canlılar və onların yaşadığı cansız mühitin qarşılıqlı təsiri vahid təbii sistem (ekosistem) təşkil edir.
 
-**Sual:** Novruz bayramında 4 ünsürün (Su, Od, Yel, Torpaq) ardıcıl qeyd olunmasının fəlsəfi mənası nədir?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M08-BL1-A-003]`
+**Dənizlərin və okeanların tropik sahillərində qabarma-çəkilmə zonasında bitən xüsusi meşələr hansıdır?**
 
-- **A)** Yalnız şirniyyat yemək üçün yeni bəhanələr axtarmaq
-- **B)** Təbiətin oyanışını və dörd ünsürün vəhdətini təcəssüm etdirmək
-- **C)** Qışın şaxtalı soyuğunu süni surətdə daha da uzatmaq
-- **D)** İnsanlar arasında narazılıq və mübahisə yaratmaq
+-    **A)** Tayqa meşələri
+-    **B)** Qarışıq meşələr
+- ✅ **C)** Manqr meşələri
+-    **D)** Enliyarpaqlı meşələr
 
-**Düzgün cavab:** **B) Təbiətin oyanışını və dörd ünsürün vəhdətini təcəssüm etdirmək**
+> 💡 **İzah:** Tropik və ekvatorial qurşağın duzlu dəniz sahillərində kökləri suda olan meşələr manqr meşələri adlanır.
 
-**İzah:** Su buzu əridir, Od torpağı qızdırır, Yel təbiəti oyadır, Torpaq isə məhsul verir.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M08-BL1-A-004]`
+**Təbiətdə maddələr dövranının baş verməsini təmin edən əsas enerji mənbəyi hansıdır?**
 
----
+-    **A)** Ayın işığı
+-    **B)** Yerin daxili istiliyi
+-    **C)** Külək dəyirmanı
+- ✅ **D)** Günəş enerjisi
 
-### Sual 143. [Orta] — TİK: `06-003-0204-0120-02-02-143`
+> 💡 **İzah:** Təbiətdəki bütün bioloji və iqlim proseslərinin, su dövranının əsas hərəkətverici qüvvəsi Günəş enerjisidir.
 
-**Sual:** Əhalinin kəndlərdən böyük şəhərlərə kütləvi axını (miqrasiyası) şəhərlərdə hansı problemləri yarada bilər?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B04-M08-BL1-A-005]`
+**Qida zəncirində ilk həlqəni təşkil edən və özü üzvi maddə istehsal edən canlılar hansılardır?**
 
-- **A)** Şəhərdə bütün mağazaların bağlanması
-- **B)** Mənzil çatışmazlığı, tıxaclar, məktəblərdə sıxlıq və ekoloji yüklənmə
-- **C)** Şəhərdə havanın tamamilə təmizlənməsi
-- **D)** Şəhərdə gecələrin uzanması
+- ✅ **A)** Yaşıl bitkilər (istehsalçılar)
+-    **B)** Yırtıcı heyvanlar
+-    **C)** Göbələklər və bakteriyalar
+-    **D)** Ot yeyən məməlilər
 
-**Düzgün cavab:** **B) Mənzil çatışmazlığı, tıxaclar, məktəblərdə sıxlıq və ekoloji yüklənmə**
+> 💡 **İzah:** Yaşıl bitkilər fotosintez vasitəsilə ilkin üzvi maddəni hazırlayan istehsalçılardır (produsentlər).
 
-**İzah:** Nizamlanmayan şəhər axını infrastruktur çatışmazlığı və sosial gərginlik doğurur.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M08-BL2-O-006]`
+**Manqr meşələrinin dəniz sahillərindəki ən mühüm ekoloji funksiyası nədir?**
 
----
+-    **A)** Okean suyundakı bütün duzları dərhal hopdurub şirin suya çevirmək
+- ✅ **B)** Sahilləri güclü dalğalardan və tufanlardan qoruyaraq balıqlar üçün sığınacaq yaratmaq
+-    **C)** Ərazidəki dəniz səviyyəsini hər il 5 metr aşağı salmaq
+-    **D)** Tropik ərazilərdə qışda qar yağmasını təmin etmək
 
-### Sual 144. [Orta] — TİK: `06-003-0204-0120-02-02-144`
+> 💡 **İzah:** Manqr ağaclarının sıx kök sistemi sahilləri yuyulmaqdan qoruyur və zəngin dəniz canlılarının çoxalma məskənidir.
 
-**Sual:** Fərdin cəmiyyətdə məsuliyyətli vətəndaş kimi formalaşmasında ailənin ən mühüm rolu nədir?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M08-BL2-O-007]`
+**Təbiətdə suyun böyük dövranının düzgün ardıcıllığı hansı bənddə göstərilmişdir?**
 
-- **A)** Milli dəyərləri, vətənpərvərlik və əxlaqı uşağa aşılamaq
-- **B)** Uşağa heç bir cəmiyyət qaydası və qanun öyrətməmək
-- **C)** Uşağı cəmiyyətdən və insanlardan tam təcrid etmək
-- **D)** Yalnız pul qazanıb xərcləməyi əsas hədəf göstərmək
+-    **A)** Quruda yağıntı -> Birbaşa kosmosa sovrulma -> Okeanda donma -> Yeraltı buxarlanma
+-    **B)** Çayların quruması -> Yağışın kəsilməsi -> Atmosferin yox olması -> Təzədən su yaranması
+- ✅ **C)** Okeandan buxarlanma -> Buludların yaranması -> Quruda yağıntı -> Çaylarla okeana qayıtma
+-    **D)** Okeanın dibinə suyun çökməsi -> Orada buxarlanması -> Yerin nüvəsinə axması
 
-**Düzgün cavab:** **A) Milli dəyərləri, vətənpərvərlik və əxlaqı uşağa aşılamaq**
+> 💡 **İzah:** Su okeandan buxarlanır, atmosferdə kondensasiya olunur, quruya yağır və çay/qrunt suları ilə yenidən okeana tökülür.
 
-**İzah:** Sağlam ailə tərbiyəsi cəmiyyətin əxlaqını və dövlətin təməl sütununu təşkil edir.
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B04-M08-BL3-O-008]`
+**Meşə ekosistemindən yırtıcı heyvanların tamamilə ovlanıb məhv edilməsi hansı nəticəyə səbəb olar?**
 
----
+-    **A)** Meşədəki ağacların boyunun qəfildən iki dəfə uzanmasına
+-    **B)** Həmin ərazidə yağan yağışların dərhal dayanmasına
+-    **C)** Meşə torpağındakı mineralların tamamilə yoxa çıxmasına
+- ✅ **D)** Otyeyən heyvanların həddən artıq çoxalıb bitki örtüyünü məhv etməsinə
 
-### Sual 145. [Orta] — TİK: `06-003-0204-0120-02-02-145`
+> 💡 **İzah:** Yırtıcılar təbiətin tənzimləyicisidir; onlar olmadıqda otyeyənlər həddən çox artaraq bütün bitki örtüyünü yeyib tükəndirir.
 
-**Sual:** Dünya əhalisinin məskunlaşmasında ən sıx ərazilərin dəniz sahillərində yerləşməsinin səbəbi nədir?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B04-M08-BL2-O-009]`
+**Fotosintez prosesinin qlobal iqlim üçün ən böyük əhəmiyyəti nədən ibarətdir?**
 
-- **A)** Dənizdə heç bir fırtınanın olmaması
-- **B)** Dəniz suyunun dərhal donması
-- **C)** Dəniz ticarəti, əlverişli mülayim iqlim və zəngin resursların olması
-- **D)** Dəniz kənarında heç bir qanunun işləməməsi
+- ✅ **A)** Atmosferdəki artıq karbon qazını azaldaraq istixana effektini zəiflədir.
+-    **B)** Yer kürəsinin fırlanma oxunu daim 66.5 dərəcədə sabit saxlayır.
+-    **C)** Gecə vaxtı havanın temperaturunu mütləq şəkildə artırır.
+-    **D)** Atmosferdəki bütün buludları tamamilə yox edərək günəşli hava yaradır.
 
-**Düzgün cavab:** **C) Dəniz ticarəti, əlverişli mülayim iqlim və zəngin resursların olması**
+> 💡 **İzah:** Bitkilər karbon qazını udaraq qlobal istiləşmənin qarşısını alır və biosferi təmiz oksigenlə təmin edir.
 
-**İzah:** Dünya əhalisinin 60%-dən çoxu dəniz və okean sahillərindəki 200 km-lik zolaqda yaşayır.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B04-M08-BL3-O-010]`
+**Göl ekosisteminə kənardan kimyəvi tullantıların və çirkab suların axıdılması ilk növbədə nə ilə nəticələnər?**
 
----
+-    **A)** Gölün suyunun dərhal içməli şirin suya çevrilməsi ilə
+- ✅ **B)** Suda oksigenin azalması və balıqların kütləvi tələf olması ilə
+-    **C)** Göl ətrafında meşələrin təbii yolla sürətlə çoxalması ilə
+-    **D)** Gölün sahəsinin ikiqat böyüyərək dənizə çevrilməsi ilə
 
-### Sual 146. [Çətin] — TİK: `06-003-0204-0130-03-03-146`
+> 💡 **İzah:** Kimyəvi çirklənmə suyun bioloji tərkibini pozur, yosunların zərərli artımına və canlıların boğulmasına səbəb olur.
 
-**Sual:** Kəndlərin boşalmasının və kənd təsərrüfatı sahələrinin tərk edilməsinin ölkənin ərzaq təhlükəsizliyinə mənfi təsiri nədir?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B04-M08-BL4-C-011]`
+**Təbiəti vahid bir 'özünütənzimləyən sistem' adlandırmağın elmi əsası nədir?**
 
-- **A)** Yerli istehsalın azalması və xarici ərzaq idxalından asılılığın artması
-- **B)** Bütün ərzaq mallarının şəhərlərdə pulsuz paylanması
-- **C)** Şəhərlərdə bütün sənaye fabriklərinin bağlanması
-- **D)** Dövlət büdcəsinin bütün gəlirlərinin kəndlərə axması
+-    **A)** İnsanların hər gün təbiətdəki bütün prosesləri kompüterlə idarə etməsi
+-    **B)** Təbiətdə heç bir dəyişikliyin və ya fəlakətin heç vaxt baş verməməsi
+- ✅ **C)** Bütün canlı və cansız ünsürlərin maddələr və enerji mübadiləsi ilə tarazlığı qoruması
+-    **D)** Bütün materiklərin hər il eyni istiqamətdə eyni sürətlə hərəkət etməsi
 
-**Düzgün cavab:** **A) Yerli istehsalın azalması və xarici ərzaq idxalından asılılığın artması**
+> 💡 **İzah:** Ekosistemlər daxili əks-əlaqə mexanizmləri, maddələr dövranı və enerji axını sayəsində dinamik tarazlığı qoruyub saxlayır.
 
-**İzah:** Kənddə əkin azaldıqda ərzaq bahalaşır və ölkə xaricdən buğda, ət almağa məcbur olur.
+### Sual 12 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B04-M08-BL5-C-012]`
+**Planetimizdə 'Amazon meşələri Yerin ağciyərləridir' ifadəsinin coğrafi və ekoloji mənasını izah edin:**
 
----
+-    **A)** Amazon çayının suyu insan ağciyərinin xəstəliklərini dərhal sağaldan xüsusi dərmandır.
+-    **B)** Bu meşələrdə yaşayan bütün heyvanlar yalnız ağciyərlə nəfəs alan nadir quşlardır.
+-    **C)** Amazon meşələrinin forması kosmosdan baxanda dəqiq insan ağciyərinə bənzəyir.
+- ✅ **D)** Nəhəng meşə sahəsi planetin oksigen ehtiyatının böyük hissəsini hasil edir və nəhəng karbon qazı udur.
 
-### Sual 147. [Çətin] — TİK: `06-003-0204-0130-03-03-147`
+> 💡 **İzah:** Amazon hövzəsi planetin ən böyük rütubətli tropik meşəsidir və qlobal oksigen-karbon balansının əsas dayağıdır.
 
-**Sual:** Müasir dünyada sosial bərabərsizliyin və yoxsulluğun azaldılmasında təhsilin rolu nədən ibarətdir?
+### Sual 13 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B04-M08-BL4-C-013]`
+**Torpaqda yaşayan bakteriya və göbələklərin (parçalayıcıların) qida zəncirindəki həlledici rolunu müəyyən edin:**
 
-- **A)** Bütün insanları eyni rəngli geyimdə gəzməyə məcbur etmək
-- **B)** Vətəndaşların xarici ölkələrlə bütün əlaqələrini birdəfəlik kəsmək
-- **C)** Məktəblərdə bütün elmi imtahanları tamamilə ləğv etmək
-- **D)** Bilik və peşə verərək insanların layiqli iş və rifah tapmasını təmin etmək
+-    **A)** Yalnız günəş şüalarını birbaşa udub elektrik enerjisi hasil etmək
+-    **B)** Torpağın altındakı bütün yeraltı suları bir yerə toplayıb buxarlandırmaq
+-    **C)** Gecələr havadakı oksigen qazını tamamilə yandırıb külə döndərmək
+- ✅ **D)** Ölü üzvi qalıqları çürüdərək yenidən bitkilərin qidalanacağı mineral maddələrə çevirmək
 
-**Düzgün cavab:** **D) Bilik və peşə verərək insanların layiqli iş və rifah tapmasını təmin etmək**
+> 💡 **İzah:** Parçalayıcılar (destruktorlar) üzvi qalıqları minerallaşdırır və maddələr dövranının qapalı zəncirini tamamlayır.
 
-**İzah:** Keyfiyyətli təhsil yoxsulluq zəncirini qıran ən güclü sosial lift və inkişaf vasitəsidir.
+### Sual 14 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B04-M08-BL5-C-014]`
+**Təbii sistemə antropogen müdaxilənin (məsələn, çay üzərində nəhəng bəndin tikilməsi) mənfi fəsadı nə ola bilər?**
 
----
+- ✅ **A)** Aşağı axarda suyun azalması, balıqların kürü tökmə yollarının kəsilməsi və sahillərin şoranlaşması
+-    **B)** Ərazidəki dağların mütləq hündürlüyünün dərhal 100 metr aşağı enməsi
+-    **C)** Göy üzündəki ulduzların parlaqlığının kəskin şəkildə zəifləməsi
+-    **D)** Çayın axdığı ərazidə bütün fəsillərin eyni anda baş verməsi
 
-### Sual 148. [Çətin] — TİK: `06-003-0204-0130-03-03-148`
+> 💡 **İzah:** Bəndlər enerji versə də, çay ekosisteminin təbii axınını pozur, balıqların miqrasiyasına və aşağı axardakı təsərrüfata zərər vurur.
 
-**Sual:** Şəhər məkanında tarixi abidələrin və qədim məhəllələrin qorunub saxlanılmasının cəmiyyət üçün əhəmiyyəti nədir?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B04-M08-BL5-C-015]`
+**Lokal bir təbii sistemdə (məsələn, kiçik meşəlikdə) biomüxtəlifliyin azalması həmin sistemin davamlılığına necə təsir edir?**
 
-- **A)** Xalqın tarixi yaddaşını, milli kimliyini qorumaq və şəhərə unikal mədəni-turizm dəyəri qatmaq
-- **B)** Şəhərdə yeni binaların tikintisinə tam qadağa qoymaq
-- **C)** Bütün turistlərin şəhərə gəlişini dayandırmaq
-- **D)** Yalnız köhnə kərpicləri təkrar emal etmək
+-    **A)** Meşənin daxilindəki ağacların oduncağını avtomatik olaraq dəmirdən daha möhkəm edir.
+- ✅ **B)** Sistemin xarici xəstəliklərə, zərərvericilərə və iqlim dəyişikliyinə qarşı dözümlülüyünü zəiflədir.
+-    **C)** Həmin ərazidə qravitasiya qüvvəsinin ikiqat güclənməsinə səbəb olur.
+-    **D)** Sistemin bütün təbii komponentlərini bir gündə tamamilə qızıl mədəninə çevirir.
 
-**Düzgün cavab:** **A) Xalqın tarixi yaddaşını, milli kimliyini qorumaq və şəhərə unikal mədəni-turizm dəyəri qatmaq**
+> 💡 **İzah:** Növlərin sayı çox olduqda ekosistem dayanıqlı olur; növlər azaldıqca sistem zəifləyir və asanlıqla məhv ola bilir.
 
-**İzah:** İçərişəhər kimi tarixi məkanlar millətin kökünü yaşadır və dünya mədəniyyət incisidir.
 
 ---
-
-### Sual 149. [Çətin] — TİK: `06-003-0204-0130-03-03-149`
 
-**Sual:** Qloballaşma şəraitində xalqların öz milli adət-ənənələrini qoruyub saxlamasının vacibliyi nə ilə izah olunur?
+## Mövzu 9: 6.1. Ölkəmizin təbiətini tanıyaq (15 sual)
 
-- **A)** Bütün xarici dillərin öyrənilməsini qanunla qadağan etmək
-- **B)** Dünya ticarət əlaqələrindən və əməkdaşlıqdan tam imtina etmək
-- **C)** Digər dövlətlərlə bütün diplomatik səfirlikləri bağlamaq
-- **D)** Mədəni eyniləşmənin qarşısını almaq və xalqın mənəvi simasını qorumaq
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M09-BL1-A-001]`
+**Azərbaycan Respublikası hansı dənizin (gölün) qərb sahilində yerləşir?**
 
-**Düzgün cavab:** **D) Mədəni eyniləşmənin qarşısını almaq və xalqın mənəvi simasını qorumaq**
+- ✅ **A)** Xəzər dənizi
+-    **B)** Qara dəniz
+-    **C)** Aral dənizi
+-    **D)** Aralıq dənizi
 
-**İzah:** Milli adət-ənənələr xalqı kütləvi eyniləşmədən qoruyan ən güclü mənəvi qalxandır.
+> 💡 **İzah:** Azərbaycan dünyanın ən böyük qapalı su hövzəsi olan Xəzər dənizinin qərbində yerləşir.
 
----
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M09-BL1-A-002]`
+**Azərbaycan ərazisindən axan ən uzun və ən böyük çay hansıdır?**
 
-### Sual 150. [Çətin] — TİK: `06-003-0204-0130-03-03-150`
+-    **A)** Araz çayı
+- ✅ **B)** Kür çayı
+-    **C)** Samur çayı
+-    **D)** Tərtər çayı
 
-**Sual:** Sosial məkanın təhlükəsizliyini təmin etmək üçün cəmiyyət üzvlərinin riayət etməli olduğu ən başlıca prinsip hansıdır?
+> 💡 **İzah:** Kür çayı ölkəmizin ən uzun (1515 km) və əsas su arteriyasıdır.
 
-- **A)** Qanunun aliliyinə və qarşılıqlı hüquq və azadlıqlara hörmət etmək
-- **B)** Hər bir şəxsin yalnız öz şəxsi mənafeyini üstün tutması
-- **C)** İctimai qaydaları pozanlara heç bir cəzanın verilməməsi
-- **D)** Dövlət məhkəmələrinin və polisin tamamilə ləğv edilməsi
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M09-BL1-A-003]`
+**Azərbaycan Respublikasının ən yüksək dağ zirvəsi hansıdır?**
 
-**Düzgün cavab:** **A) Qanunun aliliyinə və qarşılıqlı hüquq və azadlıqlara hörmət etmək**
+-    **A)** Şahdağ zirvəsi (4243 m)
+-    **B)** Qapıcıq zirvəsi (3904 m)
+- ✅ **C)** Bazardüzü zirvəsi (4466 m)
+-    **D)** Babadağ zirvəsi (3629 m)
 
-**İzah:** Qanunlara itaət və qarşılıqlı hörmət dinc, sabit və təhlükəsiz cəmiyyətin təməlidir.
+> 💡 **İzah:** Böyük Qafqazın Baş Qafqaz silsiləsində yerləşən Bazardüzü dağı (4466 m) ən uca nöqtəmizdir.
 
----
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M09-BL1-A-004]`
+**Nadir və nəsli kəsilməkdə olan ceyranların qorunması məqsədilə yaradılmış məşhur qoruq hansıdır?**
 
-## 7.2. Cəmiyyətin inkişafında qurumların rolu
+-    **A)** Göygöl Dövlət Təbiət Qoruğu
+-    **B)** Zaqatala Dövlət Təbiət Qoruğu
+-    **C)** Qızılağac Dövlət Təbiət Qoruğu
+- ✅ **D)** Şirvan Dövlət Təbiət Qoruğu
 
-### Sual 151. [Sadə] — TİK: `06-003-0205-0110-01-01-151`
+> 💡 **İzah:** Şirvan Milli Parkı və Qoruğu yarımsəhra zonasında ceyranların mühafizəsi və artırılması üçün yaradılıb.
 
-**Sual:** Ölkədə qanunların qəbul edilməsi, təhlükəsizliyin və ictimai asayişin qorunmasını təmin edən əsas siyasi qurum hansıdır?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M09-BL1-A-005]`
+**1139-cu il zəlzələsi nəticəsində Kəpəz dağının uçması ilə yaranmış füsunkar gözəl dağ gölü hansıdır?**
 
-- **A)** Dövlət
-- **B)** Özəl şirkət
-- **C)** Xeyriyyə fondu
-- **D)** İdman klubu
+- ✅ **A)** Göygöl
+-    **B)** Maralgöl
+-    **C)** Batabat gölü
+-    **D)** Candar gölü
 
-**Düzgün cavab:** **A) Dövlət**
+> 💡 **İzah:** Gəncə zəlzələsində Kəpəz dağının Ağsu çayının qabağını kəsməsi nəticəsində Göygöl yaranmışdır.
 
-**İzah:** Dövlət bütün vətəndaşların təhlükəsizliyini, təhsilini və hüquqlarını qoruyan ali qurumdur.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M09-BL2-O-006]`
+**Azərbaycanın relyefinin müxtəlifliyi haqqında verilmiş fikirlərdən hansı DOĞRUDUR?**
 
----
+-    **A)** Ölkə ərazisi tamamilə okean səviyyəsindən aşağıda yerləşən hamar düzənlikdir.
+- ✅ **B)** Ərazimizin təqribən yarısı dağlıq, yarısı isə düzənlik və ovalıqlardan ibarətdir.
+-    **C)** Azərbaycanda heç bir çay şəbəkəsi və dağ gölü mövcud deyil.
+-    **D)** Relyef yalnız qumlu səhralardan və hündür sönmüş vulkan konuslarından ibarətdir.
 
-### Sual 152. [Sadə] — TİK: `06-003-0205-0110-01-01-152`
+> 💡 **İzah:** Azərbaycan relyefi çox zəngindir: Böyük və Kiçik Qafqaz, Talış dağları və geniş Kür-Araz ovalığı mövcuddur.
 
-**Sual:** Yerli əhəmiyyətli məsələləri həll etmək üçün vətəndaşlar tərəfindən seçilən yerli özünüidarəetmə orqanı necə adlanır?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M09-BL2-O-007]`
+**Dünyada mövcud olan 11 iqlim tipindən 9-nun Azərbaycanda müşahidə olunmasının əsas səbəbi nədir?**
 
-- **A)** Nazirlik
-- **B)** Bələdiyyə
-- **C)** Səfirlik
-- **D)** Parlament
+-    **A)** Ölkənin düz ekvator xəttinin üzərində yerləşməsi
+-    **B)** Azərbaycanın sahəsinin bütün qitələrdən daha böyük olması
+- ✅ **C)** Mürəkkəb dağlıq relyefin və Xəzər dənizinin təsirinin olması
+-    **D)** Ərazidə heç bir küləyin və yağıntının baş verməməsi
 
-**Düzgün cavab:** **B) Bələdiyyə**
+> 💡 **İzah:** Relyefin hündürlük pillələri və Xəzər dənizinin yaxınlığı kiçik ərazidə zəngin iqlim müxtəlifliyi yaradır.
 
-**İzah:** Bələdiyyələr yerli yolların, parkların və məhəllə təmizliyinin qayğısına qalan seçkili orqandır.
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B05-M09-BL3-O-008]`
+**Kür-Araz ovalığında əkinçiliklə məşğul olarkən süni suvarmaya (irriqasiyaya) nə üçün böyük ehtiyac duyulur?**
 
----
+-    **A)** Ərazidə torpağın daimi donuşluq və buzlaq altında qalması səbəbindən
+-    **B)** Çaylarda suyun temperaturunun həmişə qaynar olması nəticəsində
+-    **C)** Yağışların ilboyu hər gün fasiləsiz yağması səbəbindən
+- ✅ **D)** İqlimin quraq (yarımsəhra) olması və yağıntıların az düşməsi səbəbindən
 
-### Sual 153. [Sadə] — TİK: `06-003-0205-0110-01-01-153`
+> 💡 **İzah:** Kür-Araz ovalığında yarımsəhra və quru çöl iqlimi hakimdir, kənd təsərrüfatı yalnız süni suvarma ilə mümkündür.
 
-**Sual:** Dövlət strukturu olmayan, mənfəət güdməyən və ictimai problemlərin həllinə könüllü çalışan təşkilatlar necə adlanır?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M09-BL2-O-009]`
+**Azərbaycanın meşə ehtiyatlarının əsasən hansı ərazilərdə cəmləşdiyini müəyyən edin:**
 
-- **A)** Hərbi qoşun birləşmələri
-- **B)** Mərkəzi dövlət bankları
-- **C)** Dövlət gömrük orqanları
-- **D)** Qeyri-hökumət təşkilatları
+- ✅ **A)** Böyük Qafqaz, Kiçik Qafqaz və Talış dağlarının yamaclarında
+-    **B)** Yalnız Abşeron yarımadasının qumlu sahillərində
+-    **C)** Kür-Araz ovalığının ən quraq və şoran mərkəzi hissələrində
+-    **D)** Qobustanın daşlı-qayalı yarımsəhra yaylalarında
 
-**Düzgün cavab:** **D) Qeyri-hökumət təşkilatları**
+> 💡 **İzah:** Ölkəmizin meşələrinin təqribən 85%-i dağlıq rayonların yamaclarında (palıd, fıstıq, vələs) yerləşir.
 
-**İzah:** QHT-lər (ekologiya, insan hüquqları, xeyriyyə) vətəndaş cəmiyyətinin könüllü təşkilatlarıdır.
+### Sual 10 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M09-BL2-O-010]`
+**Palçıq vulkanlarının sayına və müxtəlifliyinə görə Azərbaycan dünyada hansı yerdədir?**
 
----
+-    **A)** Onuncu yerdə
+- ✅ **B)** Birinci yerdə
+-    **C)** Ən sonuncu yerdə
+-    **D)** Beşinci yerdə
 
-### Sual 154. [Sadə] — TİK: `06-003-0205-0110-01-01-154`
+> 💡 **İzah:** Dünyadakı palçıq vulkanlarının yarıdan çoxu (350-dən çoxu) Azərbaycanda (Qobustan, Abşeron, Şamaxı) yerləşir.
 
-**Sual:** İqtisadiyyatda məhsul istehsal edən, xidmət göstərən və yeni iş yerləri açan qurumlar hansılardır?
+### Sual 11 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B05-M09-BL5-C-011]`
+**Şirvan Dövlət Təbiət Qoruğunun yaradılmasının təbii mühit üçün ən böyük əhəmiyyətini qiymətləndirin:**
 
-- **A)** Yalnız məktəblər
-- **B)** Yalnız xəstəxanalar
-- **C)** Şirkətlər və müəssisələr
-- **D)** Yalnız muzeylər
+-    **A)** Ərazidəki neft mədənlərinin sayını ikiqat artırmağa şərait yaratdı.
+-    **B)** Bakı şəhərinin içməli su ilə təminatını 100% öz üzərinə götürdü.
+- ✅ **C)** Yarımsəhra ekosistemini və nəsli kəsilmək təhlükəsində olan ceyran populyasiyasını xilas etdi.
+-    **D)** Xəzər dənizinin səviyyəsinin qalxmasının qarşısını tamamilə aldı.
 
-**Düzgün cavab:** **C) Şirkətlər və müəssisələr**
+> 💡 **İzah:** Şirvan qoruğu vaxtilə nəsli kəsilmək üzrə olan ceyranları qoruyaraq saylarını minlərlə başa çatdırdı.
 
-**İzah:** Şirkətlər və fabriklər iqtisadi inkişafın və məşğulluğun əsas təminatçısıdır.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B05-M09-BL4-C-012]`
+**Lənkəran ovalığı və Talış dağlarının ətəklərində rütubətli subtropik bitkilərin (çay, sitrus) bitməsinin səbəbi nədir?**
 
----
+-    **A)** Ərazinin dəniz səviyyəsindən 4000 metr yüksəklikdə yerləşməsi
+-    **B)** Həmin bölgədə ilboyu güclü qar fırtınalarının və şaxtaların hökm sürməsi
+-    **C)** Torpağın yalnız quru səhra qumlarından ibarət olması
+- ✅ **D)** İlin dörd fəslində bol istilik və ölkə üzrə ən çox yağıntının (1400-1700 mm) düşməsi
 
-### Sual 155. [Sadə] — TİK: `06-003-0205-0110-01-01-155`
+> 💡 **İzah:** Lənkəran təbii vilayəti Xəzərin və dağların təsiri ilə bol rütubət alır, bu da subtropik təsərrüfata imkan verir.
 
-**Sual:** Vətəndaşların sağlamlığını qorumaq üçün fəaliyyət göstərən əsas sosial qurumlar hansılardır?
+### Sual 13 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B05-M09-BL4-C-013]`
+**Xəzər dənizinin səviyyə tərəddüdlərinin sahilboyu ərazilərə göstərdiyi coğrafi təsirləri təhlil edin:**
 
-- **A)** Banklar və birjalar
-- **B)** Zavodlar və fabriklər
-- **C)** Səhiyyə müəssisələri və xəstəxanalar
-- **D)** Hava limanları
+- ✅ **A)** Səviyyə qalxdıqda sahilboyu yaşayış yerləri və çimərliklər su altında qalır, endikdə isə limanlar dayazlaşır.
+-    **B)** Dənizin səviyyəsi dəyişdikdə Günəşin səmada hərəkət sürəti avtomatik dəyişir.
+-    **C)** Səviyyə dəyişməsi yalnız göydəki buludların rəngini qırmızıya çevirir.
+-    **D)** Bu tərəddüdlər heç bir iqtisadi və ya təbii təsirə malik deyil.
 
-**Düzgün cavab:** **C) Səhiyyə müəssisələri və xəstəxanalar**
+> 💡 **İzah:** Xəzərin qapalı hövzə olması səviyyə tərəddüdləri yaradır, bu da sahil infrastrukturuna və ekologiyaya birbaşa təsir edir.
 
-**İzah:** Xəstəxana və poliklinikalar əhalinin tibbi təhlükəsizliyini təmin edir.
+### Sual 14 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B05-M09-BL5-C-014]`
+**Azərbaycanın zəngin təbiətinin qorunması üçün Milli Parkların yaradılmasının əsas üstünlüyü nədir?**
 
----
+-    **A)** Bütün meşə ağaclarını kəsib xarici ölkələrə mebel kimi satmaq
+- ✅ **B)** Həm təbiəti toxunulmaz qorumaq, həm də ekoturizm və elmi maarifləndirmə üçün şərait yaratmaq
+-    **C)** Milli park ərazisindəki bütün çayların suyunu tamamilə qurutmaq
+-    **D)** Vəhşi heyvanların hamısını qəfəslərə salıb şəhərə köçürmək
 
-### Sual 156. [Orta] — TİK: `06-003-0205-0120-02-02-156`
+> 💡 **İzah:** Milli Parklar xüsusi mühafizə rejimi ilə yanaşı təbiətə zərər vurmadan insanların dincəlməsi və ekoturizm üçün açıqdır.
 
-**Sual:** Şirkətlərin 'Korporativ Sosial Məsuliyyət' çərçivəsində məktəblər tikməsi və ya ağac əkməsi cəmiyyətə nə qazandırır?
+### Sual 15 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B05-M09-BL4-C-015]`
+**Naxçıvan Muxtar Respublikasının təbiətində kəskin kontinental iqlimin (çox isti yay, sərt soyuq qış) formalaşma səbəbi nədir?**
 
-- **A)** Cəmiyyətin rifahının yüksəlməsinə, təhsilin və ekologiyanın yaxşılaşmasına kömək edir
-- **B)** Şirkətin dərhal müflis olmasına gətirib çıxarır
-- **C)** Ölkədə bütün fabriklərin bağlanmasına səbəb olur
-- **D)** Vətəndaşların vergi ödəməkdən imtina etməsinə yol açır
+-    **A)** Naxçıvanın birbaşa Şimal Buzlu okeanının sahilində yerləşməsi
+-    **B)** Ərazidə heç bir relyef formasının və ya çayın olmaması
+- ✅ **C)** Hər tərəfdən hündür dağ silsilələri ilə əhatə olunması və dəniz təsirindən uzaq qalması
+-    **D)** Günəş şüalarının Naxçıvana yalnız qış aylarında düşməsi
 
-**Düzgün cavab:** **A) Cəmiyyətin rifahının yüksəlməsinə, təhsilin və ekologiyanın yaxşılaşmasına kömək edir**
+> 💡 **İzah:** Naxçıvan qapalı dağarası çökəklikdə yerləşir; dəniz hava kütlələri daxil ola bilmədiyindən kontinental iqlim yaranır.
 
-**İzah:** Sosial məsuliyyətli biznes cəmiyyətin inkişafına və ətraf mühitin qorunmasına töhfə verir.
 
 ---
 
-### Sual 157. [Orta] — TİK: `06-003-0205-0120-02-02-157`
+## Mövzu 10: 7.1. Yer kürəsinin sosial mənzərəsi (15 sual)
 
-**Sual:** Ekoloji QHT-lərin (məsələn, IDEA İctimai Birliyinin) təbiətin qorunmasında göstərdiyi ən mühüm fəaliyyət nədir?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M10-BL1-A-001]`
+**İnsanların birgə yaşadığı, qarşılıqlı münasibətlər qurduğu və fəaliyyət göstərdiyi mühit necə adlanır?**
 
-- **A)** Yalnız kosmik raketlər istehsal etmək
-- **B)** Bütün meşələri kəsib odun kimi satmaq
-- **C)** Şəhərlərdə zavodların zəhərli tüstü buraxmasına icazə vermək
-- **D)** Ağacəkmə aksiyaları keçirmək, nadir heyvanları qorumaq və ekoloji maarifləndirmə aparmaq
+- ✅ **A)** Cəmiyyət (sosial mühit)
+-    **B)** Litosfer qatı
+-    **C)** Kainat boşluğu
+-    **D)** Süxur kompleksi
 
-**Düzgün cavab:** **D) Ağacəkmə aksiyaları keçirmək, nadir heyvanları qorumaq və ekoloji maarifləndirmə aparmaq**
+> 💡 **İzah:** İnsanların birgə yaşayış qaydaları və münasibətləri bütövlükdə cəmiyyəti (sosial mühiti) təşkil edir.
 
-**İzah:** IDEA birliyi ceyranların, bəbirlərin qorunması və milyonlarla ağacın əkilməsini təşkil edir.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M10-BL1-A-002]`
+**Cəmiyyətin ən ilkin, əsas və kiçik özəyi (hissəsi) nə hesab olunur?**
 
----
+-    **A)** Zavod
+- ✅ **B)** Ailə
+-    **C)** Partiya
+-    **D)** Ordu
 
-### Sual 158. [Orta] — TİK: `06-003-0205-0120-02-02-158`
+> 💡 **İzah:** Ailə cəmiyyətin təməl özəyidir; fərdlər ilk tərbiyəni və sosiallaşmanı ailədə qazanır.
 
-**Sual:** Bələdiyyələrin yerli ərazidə həyata keçirdiyi abadlıq işlərinə hansı aiddir?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M10-BL1-A-003]`
+**Əhalisinin əksəriyyəti kənd təsərrüfatı və heyvandarlıqla məşğul olan yaşayış məntəqəsi hansıdır?**
 
-- **A)** Ölkə adından digər dövlətlərə qarşı rəsmi müharibə elan etmək
-- **B)** Milli pul vahidinin beynəlxalq məzənnəsini tənzimləmək
-- **C)** Dövlətin beynəlxalq quru sərhədlərinin xəttini dəyişdirmək
-- **D)** Məhəllə parkları salmaq, küçələri işıqlandırmaq və təmizlik təmin etmək
+-    **A)** Meqapolis
+-    **B)** Sənaye şəhəri
+- ✅ **C)** Kənd
+-    **D)** Metropol
 
-**Düzgün cavab:** **D) Məhəllə parkları salmaq, küçələri işıqlandırmaq və təmizlik təmin etmək**
+> 💡 **İzah:** Kənd yaşayış məntəqələrində təsərrüfatın əsasını torpaq və heyvandarlıq təşkil edir.
 
-**İzah:** Bələdiyyələr məhəllə daxili abadlıq, təmizlik və yaşıllaşdırma işlərinə baxır.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M10-BL1-A-004]`
+**Müəyyən əraziyə, sərhədlərə, idarəetmə orqanlarına və qanunlara malik siyasi qurum necə adlanır?**
 
----
+-    **A)** Ailə
+-    **B)** Qoruq
+-    **C)** Şirkət
+- ✅ **D)** Dövlət
 
-### Sual 159. [Orta] — TİK: `06-003-0205-0120-02-02-159`
+> 💡 **İzah:** Dövlət cəmiyyətin siyasi təşkilatıdır; ərazisi, suverenliyi, qanunları və ordusu olur.
 
-**Sual:** Dövlətin təhsil sistemini maliyyələşdirməsinin və məktəblər tikməsinin cəmiyyət üçün əsas məqsədi nədir?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B05-M10-BL1-A-005]`
+**Xalqımızın qədim Novruz bayramı hansı astronomik və coğrafi hadisə ilə eyni vaxtda qeyd olunur?**
 
-- **A)** Bütün uşaqları məktəbə getməkdən çəkindirmək
-- **B)** Yalnız dərsliklərin satışından gəlir əldə etmək
-- **C)** Gənc nəslin savadlı, bacarıqlı və vətənpərvər mütəxəssislər kimi yetişməsini təmin etmək
-- **D)** Ölkədə elmi kitabları qadağan etmək
+- ✅ **A)** 21 mart - Yaz gecə-gündüz bərabərliyi və təbiətin oyanışı
+-    **B)** 22 dekabr - Ən uzun qış gecəsi və şaxtanın başlanğıcı
+-    **C)** 22 iyun - Ən uzun yay günü və günəşin zenitdə olması
+-    **D)** Ayın Yerin kölgəsinə girərək tam tutulması hadisəsi
 
-**Düzgün cavab:** **C) Gənc nəslin savadlı, bacarıqlı və vətənpərvər mütəxəssislər kimi yetişməsini təmin etmək**
+> 💡 **İzah:** Novruz 21 martda gecə ilə gündüzün bərabərləşdiyi, astronomik yazın başladığı gün qeyd olunur.
 
-**İzah:** Təhsil dövlətin gələcək inkişafının və kadr potensialının təməl zəmanətidir.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M10-BL2-O-006]`
+**Şəhər və kənd həyat tərzinin fərqlərini müqayisə edərkən hansı fikir DOĞRUDUR?**
 
----
+-    **A)** Kəndlərdə çoxmərtəbəli binalar və metro nəqliyyatı şəhərdən daha çoxdur.
+- ✅ **B)** Şəhərlərdə əhali sıxlığı yüksək, sənaye və xidmət sahələri daha çox inkişaf etmişdir.
+-    **C)** Şəhər yerlərində insanların hamısı yalnız əkinçiliklə məşğul olur.
+-    **D)** Kənd və şəhər məkanları arasında heç bir iqtisadi əlaqə mövcud deyil.
 
-### Sual 160. [Orta] — TİK: `06-003-0205-0120-02-02-160`
+> 💡 **İzah:** Şəhərlər sıx əhali, sənaye, təhsil və xidmət mərkəzidir; kəndlər isə aqrar təsərrüfat məkanıdır.
 
-**Sual:** Vətəndaş cəmiyyəti qurumları (QHT-lər) ilə dövlət orqanları arasında əməkdaşlıq cəmiyyətə nə verir?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M10-BL2-O-007]`
+**Ailənin cəmiyyətin inkişafındakı ən böyük funksiyası nədir?**
 
-- **A)** Ölkədə qanunların tamamilə ləğv edilməsinə gətirib çıxarır
-- **B)** Dövlət idarələrinin bağlanmasına səbəb olur
-- **C)** Bütün vətəndaşların ölkəni tərk etməsinə yol açır
-- **D)** Problemlərin daha tez aşkarlanmasına və xalqın ehtiyaclarının daha operativ həllinə şərait yaradır
+-    **A)** Yalnız dövlətin sərhəd xəritələrini rəngli qələmlərlə çəkmək
+-    **B)** Bütün sənaye zavodlarının gündəlik iş planını müəyyənləşdirmək
+- ✅ **C)** Yeni nəslin böyüməsi, milli dəyərlərin və əxlaqi tərbiyənin ötürülməsi
+-    **D)** Kainatdakı planetlərin adlarını rəsmi olaraq qeydiyyata almaq
 
-**Düzgün cavab:** **D) Problemlərin daha tez aşkarlanmasına və xalqın ehtiyaclarının daha operativ həllinə şərait yaradır**
+> 💡 **İzah:** Ailə sağlam gəncliyin yetişməsini, adət-ənənələrin və mədəni irsin nəsildən-nəslə keçməsini təmin edir.
 
-**İzah:** Dövlət və QHT tərəfdaşlığı sosial problemləri ictimai nəzarət və dəstəklə sürətlə həll edir.
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B05-M10-BL3-O-008]`
+**Urbanizasiya prosesi (şəhərlərin və şəhər əhalisinin payının artması) nəyin nəticəsində sürətlənir?**
 
----
+-    **A)** Kəndlərdə torpaqların münbitliyinin birdən-birə 100 dəfə artması ilə
+-    **B)** Şəhərlərdə avtomobil nəqliyyatının tamamilə qadağan edilməsi ilə
+-    **C)** Bütün şəhər sakinlərinin kənd təsərrüfatına kütləvi cəlb olunması ilə
+- ✅ **D)** Sənayenin, təhsilin, ticarətin və iş yerlərinin şəhərlərdə cəmləşməsi ilə
 
-### Sual 161. [Çətin] — TİK: `06-003-0205-0130-03-03-161`
+> 💡 **İzah:** İş imkanları, rahat infrastruktur və mədəni-sosial şərait kənd əhalisinin şəhərlərə axınına səbəb olur.
 
-**Sual:** Hüquqi dövlətdə qanunverici, icraedici və məhkəmə hakimiyyətlərinin bir-birindən ayrılması prinsipinin əsas məqsədi nədir?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M10-BL2-O-009]`
+**Novruz bayramında 4 çərşənbənin (Su, Od, Yel, Torpaq) qeyd olunması hansı coğrafi mənanı daşıyır?**
 
-- **A)** Dövlət işlərini qəsdən ləngitmək və qarışdırmaq
-- **B)** Hakimiyyətin bir əldə cəmləşərək özbaşınalıq yaranmasının qarşısını almaq və vətəndaş hüquqlarını qorumaq
-- **C)** Ölkədə heç bir məhkəmənin qərar verə bilməməsinə nail olmaq
-- **D)** Bütün qanunları yalnız bir nazirin qəbul etməsini təmin etmək
+- ✅ **A)** Təbiətin canlanmasında iştirak edən dörd əsas təbii ünsürə olan ehtiramı
+-    **B)** Yalnız ilin dörd fəslinin hərəsində bir gün oruc tutmaq qaydasını
+-    **C)** Qədim dövrlərdə dörd qitənin kəşf edilməsinin ildönümünü
+-    **D)** Dünya okeanının dörd ən dərin çökəkliyinin anılmasını
 
-**Düzgün cavab:** **B) Hakimiyyətin bir əldə cəmləşərək özbaşınalıq yaranmasının qarşısını almaq və vətəndaş hüquqlarını qorumaq**
+> 💡 **İzah:** Dörd çərşənbə təbiətin oyanışını təmsil edən 4 həyati ünsürü (su, od, yel, torpaq) rəmzləşdirir.
 
-**İzah:** Hakimiyyətlərin bölünməsi balansı qoruyur, qanunsuzluqların qarşısını alır və ədaləti təmin edir.
+### Sual 10 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B05-M10-BL2-O-010]`
+**Cəmiyyətdə qanunların və qaydaların mövcud olması nə üçün vacibdir?**
 
----
+-    **A)** İnsanların gündəlik sərbəst hərəkətini tamamilə dayandırmaq üçün
+- ✅ **B)** İnsanların hüquqlarını qorumaq, ictimai asayişi və ədalətli nizamı təmin etmək üçün
+-    **C)** Şəhərlərdə bütün parkları ləğv edib yerində həbsxanalar tikmək üçün
+-    **D)** Yalnız dövlət sərhədlərini xəritədən silib ləğv etmək məqsədilə
 
-### Sual 162. [Çətin] — TİK: `06-003-0205-0130-03-03-162`
+> 💡 **İzah:** Hüquq və qanunlar cəmiyyətdə xaosun qarşısını alır, vətəndaşların təhlükəsizliyini və rifahını qoruyur.
 
-**Sual:** Könüllülük hərəkatının (məsələn, 'ASAN Könüllüləri' və 'Gənc Könüllülər') gənclərin şəxsi inkişafında ən böyük rolu nədir?
+### Sual 11 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B05-M10-BL4-C-011]`
+**Şəhərlərin həddən artıq böyüməsinin (nəzarətsiz urbanizasiyanın) yaratdığı əsas sosial-ekoloji problemləri müəyyən edin:**
 
-- **A)** Gənclərin məktəb dərslərini və təhsillərini tamamilə atmasına səbəb olmaq
-- **B)** Öyrənilmiş bütün xarici dilləri tezliklə unutdurmaq
-- **C)** Komanda işi, liderlik, vətəndaşlıq məsuliyyəti və peşə bacarığı qazanmaq
-- **D)** Gəncləri cəmiyyətdən və ictimai həyatdan tam uzaqlaşdırmaq
+-    **A)** Kəndlərdə əhalinin sayının həddən çox artması və torpaq çatışmazlığı
+-    **B)** Şəhər əhalisinin təmiz bulaq sularından istifadə imkanının artması
+- ✅ **C)** Nəqliyyat tıxacları, havanın və suyun çirklənməsi, yaşıllıqların azalması
+-    **D)** Şəhərdaxili havanın temperaturunun kəskin şəkildə şaxtaya çevrilməsi
 
-**Düzgün cavab:** **C) Komanda işi, liderlik, vətəndaşlıq məsuliyyəti və peşə bacarığı qazanmaq**
+> 💡 **İzah:** Nəzarətsiz şəhərləşmə sıxlıq, tullantı, səs-küy və ekoloji yüklənmə kimi ciddi problemlər doğurur.
 
-**İzah:** Könüllülük gənclərə fəal vətəndaş mövqeyi, ünsiyyət və karyera bacarıqları qazandırır.
+### Sual 12 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B05-M10-BL5-C-012]`
+**Dövlətin güclü və firavan olmasında vətəndaşların təhsilli və məsuliyyətli olmasının rolunu dəyərləndirin:**
 
----
+-    **A)** Təhsil yalnız fərdin şəxsi işidir və dövlətin inkişafına heç bir təsir göstərmir.
+-    **B)** Dövlətin inkişafı üçün yalnız təbii neft və qaz ehtiyatlarının olması kifayətdir.
+-    **C)** Vətəndaş məsuliyyəti yalnız seçkilər günü yada düşən müvəqqəti anlayışdır.
+- ✅ **D)** Savadlı cəmiyyət iqtisadiyyatı inkişaf etdirir, qanunlara əməl edir və ölkəni qoruyur.
 
-### Sual 163. [Çətin] — TİK: `06-003-0205-0130-03-03-163`
+> 💡 **İzah:** İnsan kapitalı və vətəndaş məsuliyyəti istənilən dövlətin tərəqqisinin və sabitliyinin əsas təməlidir.
 
-**Sual:** Dövlət qurumlarının şəffaf və elektron xidmətlərə (məsələn, 'ASAN Xidmət' modelinə) keçməsinin ən böyük tarixi və sosial nəticəsi nə oldu?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B05-M10-BL5-C-013]`
+**Milli adət-ənənələrin və mədəni irsin qorunub saxlanması nə üçün hər bir millətin varlığı üçün zəruridir?**
 
-- **A)** Dövlət xidmətlərinin və sənəd verilməsinin tamamilə dayandırılması
-- **B)** Bürokratiyanın aradan qalxması və vətəndaş məmnunluğunun kəskin artması
-- **C)** Vətəndaşların şəxsiyyət vəsiqəsi almaqdan məhrum edilməsi
-- **D)** Dövlət büdcəsinin və xəzinəsinin tamamilə boşalması
+-    **A)** Digər xalqlarla bütün diplomatik və iqtisadi əlaqələri birdəfəlik kəsmək üçün
+- ✅ **B)** Xalqın tarixi kimliyini, birliyini və özünəməxsusluğunu gələcək nəsillərə çatdırmaq üçün
+-    **C)** Yalnız muzeylərdəki köhnə eksponatların sayını süni surətdə çoxaltmaq üçün
+-    **D)** Müasir elmi texnologiyalardan və internetdən istifadəni məhdudlaşdırmaq üçün
 
-**Düzgün cavab:** **B) Bürokratiyanın aradan qalxması və vətəndaş məmnunluğunun kəskin artması**
+> 💡 **İzah:** Milli dəyərlər xalqın mənəvi sütunudur; kimliyini itirən cəmiyyətlər qloballaşma dövründə assimilyasiyaya uğrayır.
 
-**İzah:** ASAN Xidmət modeli vətəndaşa operativ, rahat, şəffaf və rüşvətsiz xidmətlə dünyada brend oldu.
+### Sual 14 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B05-M10-BL4-C-014]`
+**Kənd təsərrüfatının müasir texnologiyalarla avtomatlaşdırılması kənd cəmiyyətinə necə təsir göstərir?**
 
----
+-    **A)** Bütün kənd təsərrüfatı bitkilərinin təbii xüsusiyyətləri dərhal məhv olur.
+-    **B)** Kəndlərdə yaşayan insanların hamısı dərhal işsiz qalaraq meşələrə köçür.
+- ✅ **C)** Məhsuldarlıq artır, fiziki əməyə tələbat azalır və yüksək ixtisaslı kadr ehtiyacı yaranır.
+-    **D)** Torpaqların heç bir su və ya gübrə qəbul etmək qabiliyyəti qalmır.
 
-### Sual 164. [Çətin] — TİK: `06-003-0205-0130-03-03-164`
+> 💡 **İzah:** Aqrar texnologiyalar məhsuldarlığı yüksəldir, eyni zamanda kənd əməyini daha intellektual formaya keçirir.
 
-**Sual:** Özəl şirkətlərin ətraf mühiti çirkləndirməmək üçün təmizləyici qurğular (filtrlər) quraşdırmasını tələb edən dövlət qanunlarının əsas fəlsəfəsi nədir?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B05-M10-BL5-C-015]`
+**Cəmiyyətdə sosial ədalətin və bərabər imkanların təmin edilməsi hansı müsbət nəticəni verir?**
 
-- **A)** Bütün sənaye zavodlarını və fabriklərini tamamilə sökmək
-- **B)** Ölkə daxilində sənaye məhsullarının istehsalını dayandırmaq
-- **C)** Yalnız xarici ölkələrdən gələn şirkətlərə üstünlük vermək
-- **D)** Təmiz ətraf mühiti qorumaq və yaşıl iqtisadiyyat prinsiplərini bərqərar etmək
+-    **A)** İnsanlar arasında rəqabəti tamamilə dayandıraraq bütün fəaliyyəti dondurur.
+-    **B)** Dövlət orqanlarının fəaliyyətinə olan ehtiyacı tamamilə sıfıra endirir.
+-    **C)** Şəhər və kənd arasındakı coğrafi məsafənin fiziki olaraq qısalmasına səbəb olur.
+- ✅ **D)** İctimai sabitliyi möhkəmləndirir, hər bir fərdin öz istedadını reallaşdırmasına şərait yaradır.
 
-**Düzgün cavab:** **D) Təmiz ətraf mühiti qorumaq və yaşıl iqtisadiyyat prinsiplərini bərqərar etmək**
+> 💡 **İzah:** Bərabər inkişaf imkanları cəmiyyətdə həmrəyliyi gücləndirir və sosial narazılıqların qarşısını alır.
 
-**İzah:** Dövlət ekoloji qanunlarla biznes maraqları ilə təbiətin və insan sağlamlığının balansını qoruyur.
 
 ---
 
-### Sual 165. [Çətin] — TİK: `06-003-0205-0130-03-03-165`
+## Mövzu 11: 7.2. Cəmiyyətin inkişafında qurumların rolu (15 sual)
 
-**Sual:** Media və mətbuat qurumlarının 'dördüncü hakimiyyət' adlandırılmasının və cəmiyyətdəki ən vacib funksiyasının mahiyyəti nədir?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M11-BL1-A-001]`
+**Dövlət strukturlarına daxil olmayan, ictimai təşəbbüslərlə yaradılan könüllü təşkilatlar necə adlanır?**
 
-- **A)** Yalnız yalan və saxta xəbərlər yaymaq üçün fəaliyyət göstərmək
-- **B)** Vətəndaşları bir-birinə qarşı qaldırıb nifaq salmaq
-- **C)** Bütün dərslikləri və elmi əsərləri tənqid edib ləğv etmək
-- **D)** Cəmiyyəti obyektiv məlumatlandırmaq və ictimai nəzarət funksiyası daşımaq
+- ✅ **A)** QHT (Qeyri-Hökumət Təşkilatları)
+-    **B)** Nazirliklər və dövlət komitələri
+-    **C)** Dövlət Agentlikləri və xidmətlər
+-    **D)** Bələdiyyə idarələri və icraatları
 
-**Düzgün cavab:** **D) Cəmiyyəti obyektiv məlumatlandırmaq və ictimai nəzarət funksiyası daşımaq**
+> 💡 **İzah:** QHT-lər (Qeyri-Hökumət Təşkilatları) vətəndaşların könüllü təşəbbüsləri ilə ictimai məqsədlər üçün qurulur.
 
-**İzah:** Müstəqil və peşəkar media ictimai rəyi formalaşdırır və qüsurları aradan qaldırmağa kömək edir.
-
----
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M11-BL1-A-002]`
+**Cəmiyyətdə təhsil hüququnu həyata keçirən və gənclərə bilik verən əsas ictimai qurum hansıdır?**
 
-## 7.3. Lokal və qlobal əlaqələr
+-    **A)** Fabrik və zavodlar
+- ✅ **B)** Məktəb və universitetlər
+-    **C)** Ticarət mərkəzləri
+-    **D)** Bank şöbələri
 
-### Sual 166. [Sadə] — TİK: `06-003-0206-0110-01-01-166`
+> 💡 **İzah:** Məktəblər və təhsil ocaqları cəmiyyətin savadlanmasını və peşəkar kadrların hazırlanmasını təmin edir.
 
-**Sual:** Dünyada sülhü, təhlükəsizliyi və beynəlxalq əməkdaşlığı təmin edən ən böyük beynəlxalq təşkilat hansıdır?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M11-BL1-A-003]`
+**Əhalinin sağlamlığını qoruyan və tibbi xidmət göstərən qurumlar hansılardır?**
 
-- **A)** Beynəlxalq Futbol Federasiyası
-- **B)** Ümumdünya Ticarət Palatası
-- **C)** Beynəlxalq Turizm Birliyi
-- **D)** Birləşmiş Millətlər Təşkilatı
+-    **A)** Muzeylər və qalereyalar
+-    **B)** Stadionlar və meydançalar
+- ✅ **C)** Xəstəxanalar və poliklinikalar
+-    **D)** Məhkəmə zalları
 
-**Düzgün cavab:** **D) Birləşmiş Millətlər Təşkilatı**
+> 💡 **İzah:** Səhiyyə müəssisələri (xəstəxanalar) insanların sağlamlığını müalicə və profilaktika ilə qoruyur.
 
-**İzah:** BMT (UN) 193 dövləti birləşdirən ali qlobal beynəlxalq təşkilatdır.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M11-BL1-A-004]`
+**Şirkətlərin təbiəti qorumaq və cəmiyyətə fayda vermək üçün həyata keçirdiyi layihələr necə adlanır?**
 
----
+-    **A)** Maliyyə cəriməsi
+-    **B)** Vergidən yayınma
+-    **C)** Reklam kampaniyası
+- ✅ **D)** Korporativ sosial məsuliyyət
 
-### Sual 167. [Sadə] — TİK: `06-003-0206-0110-01-01-167`
+> 💡 **İzah:** Şirkətlərin cəmiyyətə, təhsilə və ekologiyaya təmənnasız dəstək verməsi sosial məsuliyyət adlanır.
 
-**Sual:** Dünya miqyasında elm, təhsil və mədəni irsin qorunması ilə məşğul olan BMT təşkilatı hansıdır?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M11-BL1-A-005]`
+**İctimai asayişi, qanunçuluğu və vətəndaşların təhlükəsizliyini qoruyan dövlət orqanı hansıdır?**
 
-- **A)** UNICEF
-- **B)** OPEC
-- **C)** NATO
-- **D)** UNESCO
+- ✅ **A)** Polis və hüquq-mühafizə orqanları
+-    **B)** Turizm və istirahət agentlikləri
+-    **C)** Mədəniyyət və musiqi ansamblları
+-    **D)** Kino və teatr yaradıcılıq studiyaları
 
-**Düzgün cavab:** **D) UNESCO**
+> 💡 **İzah:** Hüquq-mühafizə orqanları qanunun keşiyində durur və cinayətkarlığa qarşı mübarizə aparır.
 
-**İzah:** UNESCO dünya tarixi abidələrini və mədəniyyətini qoruyan beynəlxalq qurumdur.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M11-BL2-O-006]`
+**Qeyri-Hökumət Təşkilatlarının (QHT) təbiətin mühafizəsindəki ən mühüm rolu nədən ibarətdir?**
 
----
+-    **A)** Ölkənin bütün qanunlarını təkbaşına dəyişmək və yeni vergilər qoymaq
+- ✅ **B)** Könüllüləri cəlb edərək ağacəkmə, təmizlik və maarifləndirmə aksiyaları keçirmək
+-    **C)** Meşələrdəki ağacların hamısını kəsib kommersiya məqsədilə satmaq
+-    **D)** Hava limanlarının uçuş cədvəllərini öz istəyinə uyğun tənzimləmək
 
-### Sual 168. [Sadə] — TİK: `06-003-0206-0110-01-01-168`
+> 💡 **İzah:** Ekoloji QHT-lər ictimaiyyəti təbiətin qorunmasına səfərbər edir və ətraf mühiti yaxşılaşdıran layihələr icra edir.
 
-**Sual:** Bütün bəşəriyyəti narahat edən və həlli bütün dövlətlərin birgə səyini tələb edən problemlər necə adlanır?
+### Sual 7 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B06-M11-BL3-O-007]`
+**Böyük sənaye müəssisələrinin istehsalatda ekoloji təmiz filtrlərdən istifadə etməsi nəyə xidmət edir?**
 
-- **A)** Qlobal problemlər
-- **B)** Məhəllə problemləri
-- **C)** Şəxsi çətinliklər
-- **D)** Ailə daxili məsələlər
+-    **A)** Müəssisədə hazırlanan məhsulların qiymətini 10 dəfə artırmağa
+-    **B)** Zavodun ərazisində küləyin əsmə istiqamətini dəyişdirməyə
+- ✅ **C)** Atmosferə atılan zəhərli tüstü və qazların qarşısını almağa
+-    **D)** İşçilərin iş saatlarını qanunsuz olaraq uzatmağa
 
-**Düzgün cavab:** **A) Qlobal problemlər**
+> 💡 **İzah:** Müasir filtrlər havanın, suyun və torpağın sənaye tullantıları ilə çirklənməsini minimuma endirir.
 
-**İzah:** İqlim istiləşməsi, su qıtlığı, tullantılar və epidemiyalar qlobal problemlərdir.
+### Sual 8 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M11-BL2-O-008]`
+**Bələdiyyələrin (yerli özünüidarəetmə orqanlarının) yaşayış məntəqələrindəki əsas vəzifəsi hansıdır?**
 
----
+-    **A)** Ölkənin xarici dövlətlərlə hərbi müttəfiqlik müqavilələrini imzalamaq
+-    **B)** Milli valyutanın (manatın) məzənnəsini beynəlxalq birjada təyin etmək
+-    **C)** Bütün dövlət universitetlərinə tələbə qəbulunu təkbaşına aparmaq
+- ✅ **D)** Məhəllələrin abadlaşdırılması, yerli parkların təmiri və təmizliyin təşkili
 
-### Sual 169. [Sadə] — TİK: `06-003-0206-0110-01-01-169`
+> 💡 **İzah:** Bələdiyyələr yerli səviyyədə küçələrin, həyətlərin, parkların abadlığı və yerli problemlərin həlli ilə məşğul olur.
 
-**Sual:** Atmosferin yuxarı qatında yerləşən və Yerdəki canlıları məhvedici ultrabənövşəyi şüalardan qoruyan qaz qatı hansıdır?
+### Sual 9 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B06-M11-BL3-O-009]`
+**Təhsil müəssisələrində ekoloji dərnəklərin və layihələrin təşkil edilməsi şagirdlərdə hansı bacarığı formalaşdırır?**
 
-- **A)** Ozon təbəqəsi
-- **B)** Karbon təbəqəsi
-- **C)** Azot təbəqəsi
-- **D)** Hidrogen təbəqəsi
+- ✅ **A)** Təbiətə qayğı, resurslara qənaət və ekoloji məsuliyyət hissini
+-    **B)** Yalnız kompüter oyunlarında yüksək xal toplamaq bacarığını
+-    **C)** Dərsliklərdəki mətnləri oxumadan imtahandan qiymət almaq üsulunu
+-    **D)** Şəhərdaxili ictimai nəqliyyatdan pulsuz istifadə qaydalarını
 
-**Düzgün cavab:** **A) Ozon təbəqəsi**
+> 💡 **İzah:** Məktəb layihələri gənc nəsildə ətraf mühitin qorunması vərdişlərini və fəal vətəndaş mövqeyini inkişaf etdirir.
 
-**İzah:** Ozon ($O_3$) təbəqəsi stratosferdə Günəşin zərərli radiasiyasını udur.
+### Sual 10 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M11-BL2-O-010]`
+**Cəmiyyətdə könüllülük (volontyorluq) hərəkatının genişlənməsi hansı dəyərləri gücləndirir?**
 
----
+-    **A)** İnsanların yalnız şəxsi maddi qazanc güdmək marağını
+- ✅ **B)** Qarşılıqlı kömək, humanizm, fəal vətəndaşlıq və ictimai həmrəyliyi
+-    **C)** Cəmiyyət daxilində fərdlərin bir-birindən tam təcrid olunmasını
+-    **D)** Bütün dövlət qanunlarının ləğv edilərək qaydasızlığa keçidini
 
-### Sual 170. [Sadə] — TİK: `06-003-0206-0110-01-01-170`
+> 💡 **İzah:** Könüllülük təmənnasız olaraq ehtiyacı olanlara yardım etmək, cəmiyyətə və təbiətə fayda vermək mədəniyyətidir.
 
-**Sual:** Azərbaycan Respublikası Birləşmiş Millətlər Təşkilatına (BMT) hansı ildə tamhüquqlu üzv qəbul olunmuşdur?
+### Sual 11 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M11-BL5-C-011]`
+**Dövlət qurumları, özəl şirkətlər və vətəndaş cəmiyyətinin (QHT-lərin) birgə əməkdaşlığı nə üçün ən uğurlu inkişaf modelidir?**
 
-- **A)** 1991-ci il 18 oktyabrda
-- **B)** 1995-ci il 12 noyabrda
-- **C)** 2020-ci il 8 noyabrda
-- **D)** 1992-ci il 2 mart tarixində
+-    **A)** Dövlətin bütün vəzifələrini yalnız özəl şirkətlərin üzərinə atmaq və xərcləri tamamilə azaltmaq məqsədilə
+-    **B)** Ölkədə heç bir seçki, ictimai müzakirə və ya referendum keçirməmək üçün bürokratik prosesi asanlaşdırmaq
+- ✅ **C)** Hər üç tərəfin gücünü, resurslarını və təcrübəsini birləşdirərək ortaq problemləri effektiv həll etdiyi üçün
+-    **D)** Bütün məktəbləri və xəstəxanaları dərhal bağlamaq və sosial xərcləri tamamilə sıfıra endirmək üçün
 
-**Düzgün cavab:** **D) 1992-ci il 2 mart tarixində**
+> 💡 **İzah:** Dövlət-özəl-ictimai tərəfdaşlığı problemlərin hərtərəfli və davamlı həllini təmin edən qlobal formuladır.
 
-**İzah:** Azərbaycan 1992-ci il martın 2-də BMT-nin üzvü oldu və Nyu-Yorkda bayrağımız ucaldıldı.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B06-M11-BL4-C-012]`
+**Bir şirkətin ekoloji qaydalara əməl etmədən çirkab suları çaya axıtması hansı sosial və hüquqi nəticələrə səbəb olar?**
 
----
+-    **A)** Həmin şirkətin dövlət tərəfindən ən böyük medalla təltif olunması və rəsmi təşəkkür alması ilə
+-    **B)** Çayın suyunun keyfiyyətinin qəfildən yaxşılaşması və balıq ehtiyatlarının dərhal ikiqat artması ilə
+-    **C)** Şirkətin məhsullarına olan tələbatın bütün dünya ölkələrində ikiqat sürətlə yüksəlməsi ilə
+- ✅ **D)** Cərimələnmə, fəaliyyətinin dayandırılması və cəmiyyət qarşısında etibarının itirilməsi ilə
 
-### Sual 171. [Orta] — TİK: `06-003-0206-0120-02-02-171`
+> 💡 **İzah:** Ekoloji cinayətlər qanunla cəzalandırılır, şirkət böyük maliyyə itkisinə və ictimai boykota məruz qalır.
 
-**Sual:** Plastik tullantıların təbiətə və Dünya okeanına atılmasının yaratdığı ən təhlükəli qlobal fəsad nədir?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M11-BL5-C-013]`
+**Müasir cəmiyyətlərdə kütləvi informasiya vasitələrinin (KİV və sosial media) ictimai nəzarətdəki rolunu dəyərləndirin:**
 
-- **A)** Okean suyunun istiliyinin dərhal donma həddinə çatması
-- **B)** Okean balıqlarının sayının inanılmaz dərəcədə çoxalması
-- **C)** Yüz illərlə parçalanmayıb mikroplastik kimi qida zəncirinə daxil olması
-- **D)** Dəniz dibində yeni qızıl və gümüş yataqlarının yaranması
+-    **A)** Yalnız yalan məlumatlar yayaraq insanların təhsil almasına mane olur və cəmiyyətdə qorxu və vahimə yaradır.
+-    **B)** Dövlətin bütün qanunlarının icrasını tamamilə dayandırmaq və məhkəmələrin işinə birbaşa müdaxilə etmək gücünə malikdir.
+- ✅ **C)** Mövcud nöqsanları və ekoloji problemləri ictimailəşdirərək aidiyyəti qurumları operativ tədbir görməyə sövq edir.
+-    **D)** Bütün yaşayış məntəqələrindəki elektrik şəbəkələrini və rabitə xətlərini gecələr avtomatik olaraq söndürür.
 
-**Düzgün cavab:** **C) Yüz illərlə parçalanmayıb mikroplastik kimi qida zəncirinə daxil olması**
+> 💡 **İzah:** Azad və məsuliyyətli media problemləri ictimaiyyətə çatdıraraq şəffaflığı və hesabatlılığı təmin edir.
 
-**İzah:** Plastik parçalanmır, balıqlar onu udur və mikroplastik sonda insan qidasına keçir.
+### Sual 14 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M11-BL5-C-014]`
+**Beynəlxalq təşkilatların (məsələn, BMT-nin Ətraf Mühit Proqramı - UNEP) fəaliyyətinin qlobal əhəmiyyətini izah edin:**
 
----
+-    **A)** Bütün dünya ölkələrinin milli pullarını ləğv edib vahid qızıl sikkəyə və vahid bank sisteminə keçirir.
+-    **B)** Planetdəki bütün dağları ləğv edib Yeri tamamilə düzənliyə çevirmək üçün xüsusi mühəndislik layihəsi hazırlayır.
+-    **C)** Yalnız bir ölkənin maraqlarını müdafiə edərək digər bütün tərəfdaş ölkələri əsassız olaraq cəzalandırır.
+- ✅ **D)** Dövlətləri qlobal istiləşmə, plastik çirklənmə və biomüxtəlifliyin qorunması üçün ortaq qərarlara cəlb edir.
 
-### Sual 172. [Orta] — TİK: `06-003-0206-0120-02-02-172`
+> 💡 **İzah:** Ekoloji problemlər sərhəd tanımır; beynəlxalq qurumlar dünya dövlətlərini vahid ekoloji strategiya ətrafında birləşdirir.
 
-**Sual:** Azərbaycanın Qoşulmama Hərəkatına uğurla sədrlik etməsinin və COP29 kimi qlobal iqlim sammitinə ev sahibliyi etməsinin beynəlxalq əhəmiyyəti nədir?
+### Sual 15 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B06-M11-BL4-C-015]`
+**Məktəb özünüidarəetmə orqanlarının (şagird komitələrinin) fəaliyyəti şagirdlərin şəxsiyyət kimi inkişafına necə töhfə verir?**
 
-- **A)** Azərbaycanın bütün xarici ticarətini dayandırması
-- **B)** Ölkənin beynəlxalq təşkilatlardan çıxması
-- **C)** Yalnız neft hasilatının ikiqat artırılması
-- **D)** Ölkəmizin qlobal problemlərin həllində söz sahibi olan nüfuzlu dövlət kimi tanınması
+- ✅ **A)** Liderlik, qərar qəbul etmə, komandada işləmək və təşəbbüskarlıq bacarıqlarını formalaşdırır.
+-    **B)** Şagirdlərin dərslərdə iştirak etmək məcburiyyətini tamamilə aradan qaldırır.
+-    **C)** Yalnız məktəb binasının qapılarını gecələr qıfıllamaq vəzifəsini icra edir.
+-    **D)** Şagirdlərə dərsliklərdən istifadə etməyi qəti şəkildə qadağan edir.
 
-**Düzgün cavab:** **D) Ölkəmizin qlobal problemlərin həllində söz sahibi olan nüfuzlu dövlət kimi tanınması**
+> 💡 **İzah:** Şagird özünüidarəsi gələcəyin məsuliyyətli, təşkilatçı və fəal vətəndaşlarının yetişməsində mühüm məktəbdir.
 
-**İzah:** Azərbaycan qlobal dialoq mərkəzinə çevrilərək 'yaşıl enerji' və beynəlxalq sülhə böyük töhfə verir.
 
 ---
 
-### Sual 173. [Orta] — TİK: `06-003-0206-0120-02-02-173`
+## Mövzu 12: 7.3. Lokal və qlobal əlaqələr (15 sual)
 
-**Sual:** İçməli şirin su qıtlığının qarşısını almaq üçün məişətdə hər bir insanın göstərə biləcəyi ən sadə lokal töhfə nədir?
+### Sual 1 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M12-BL1-A-001]`
+**Bütün Yer kürəsini, bütün insanlığı və dövlətləri əhatə edən ümumbəşəri məsələlər necə adlanır?**
 
-- **A)** Bütün təbii çayların qarşısına keçilməz dəmir divar çəkmək
-- **B)** Bütün şirin göllərin suyunu dərhal duzlu dənizlərə axıtmaq
-- **C)** Kranı açıq qoymamaq və sudan qənaətlə istifadə vərdişlərinə yiyələnmək
-- **D)** Məişətdə şüşə qablardan və stəkanlardan birdəfəlik imtina etmək
+- ✅ **A)** Qlobal problemlər
+-    **B)** Lokal hadisələr
+-    **C)** Məhəllə qaydaları
+-    **D)** Ailə məsələləri
 
-**Düzgün cavab:** **C) Kranı açıq qoymamaq və sudan qənaətlə istifadə vərdişlərinə yiyələnmək**
+> 💡 **İzah:** Bütün bəşəriyyətə təsir edən və birgə həll tələb edən problemlər qlobal problemlər adlanır.
 
-**İzah:** Lokal qənaət vərdişləri qlobal miqyasda milyonlarla ton təmiz suyun qorunmasını təmin edir.
+### Sual 2 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M12-BL1-A-002]`
+**Müasir dünyada ən təhlükəli qlobal ekoloji problem hansıdır?**
 
----
+-    **A)** Məktəb dərnəkləri
+- ✅ **B)** Qlobal iqlim istiləşməsi
+-    **C)** İdman yarışları
+-    **D)** Kitab çapı
 
-### Sual 174. [Orta] — TİK: `06-003-0206-0120-02-02-174`
+> 💡 **İzah:** Qlobal istiləşmə və iqlim dəyişikliyi bütün qitələrdə quraqlıq, buzlaqların əriməsi və fəlakətlər doğurur.
 
-**Sual:** Bərpa olunan 'Yaşıl enerji' mənbələrinə (günəş, külək, su) keçidin başlıca ekoloji səbəbi nədir?
+### Sual 3 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M12-BL1-A-003]`
+**Dövlətlərin bir-biri ilə ticarət, elm, mədəniyyət və idman sahələrində qurduğu əlaqələr necə adlanır?**
 
-- **A)** Bütün məişət elektrik cihazlarını tamamilə ləğv etmək
-- **B)** Yalnız gecə saatlarında süni işıqdan istifadə etmək
-- **C)** Kömürlə işləyən istilik stansiyalarının sayını artırmaq
-- **D)** Karbon qazını azaltmaq və qlobal istiləşmənin qarşısını almaq
+-    **A)** Daxili nizamnamə
+-    **B)** Lokal izolasiya
+- ✅ **C)** Beynəlxalq əməkdaşlıq
+-    **D)** Fərdi təsərrüfat
 
-**Düzgün cavab:** **D) Karbon qazını azaltmaq və qlobal istiləşmənin qarşısını almaq**
+> 💡 **İzah:** Ölkələrin qarşılıqlı faydalı əlaqələri beynəlxalq əməkdaşlıq və diplomatiya adlanır.
 
-**İzah:** Kömür və mazut yerinə günəş və külək enerjisi havanı çirkləndirmir və tükənməzdir.
+### Sual 4 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M12-BL1-A-004]`
+**BMT-nin İqlim Dəyişmələri üzrə ən böyük qlobal sammiti (məsələn, Bakıda keçirilən mötəbər tədbir) necə adlanır?**
 
----
+-    **A)** Olimpiya oyunları
+-    **B)** Eurovision mahnı müsabiqəsi
+-    **C)** Dünya İqtisadi Forumu
+- ✅ **D)** COP (Tərəflərin Konfransı)
 
-### Sual 175. [Orta] — TİK: `06-003-0206-0120-02-02-175`
+> 💡 **İzah:** COP (Conference of the Parties) BMT-nin iqlim dəyişmələri üzrə ən ali beynəlxalq konfransıdır.
 
-**Sual:** Azərbaycanın təşəbbüsü ilə həyata keçirilən 'Cənub Qaz Dəhlizi' və 'Bakı-Tbilisi-Ceyhan' layihələrinin qlobal rolu nədir?
+### Sual 5 `[ASAN | 1-Xatırlamaq (Bilik) | 06-COĞ-2024-B06-M12-BL1-A-005]`
+**Təbiəti qorumaq üçün hər bir insanın öz evində edə biləcəyi ən sadə lokal addım hansıdır?**
 
-- **A)** Bütün beynəlxalq nəqliyyat və ticarət yollarını bağlamaq
-- **B)** Avropanın və regionun enerji təhlükəsizliyini təmin edən körpü olmaq
-- **C)** Qonşu dövlətlərlə iqtisadi ticarət əlaqələrini dayandırmaq
-- **D)** İstehsal olunan yanacağı yalnız daxili tələbatda işlətmək
+- ✅ **A)** Elektrik enerjisinə və içməli suya qənaət etmək, tullantıları çeşidləmək
+-    **B)** Bütün zibilləri və plastik qabları dərhal pəncərədən küçələrə və çaylara atmaq
+-    **C)** Evdəki bütün işıqları və su kranlarını həftələrlə boş yerə fasiləsiz açıq qoymaq
+-    **D)** Yalnız plastik qabları və zərərli təkərləri həyətdə yandırıb qara tüstü buraxmaq
 
-**Düzgün cavab:** **B) Avropanın və regionun enerji təhlükəsizliyini təmin edən körpü olmaq**
+> 💡 **İzah:** Qlobal ekologiyanın qorunması hər bir fərdin öz gündəlik həyatındakı qənaət və təmizlik vərdişlərindən başlayır.
 
-**İzah:** Bu meqalayihələr Xəzər enerji resurslarını dünya bazarına çıxararaq qlobal əlaqələri möhkəmləndirir.
+### Sual 6 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M12-BL2-O-006]`
+**Lokal hərəkətlərin qlobal nəticələrə səbəb olmasına ən yaxşı nümunə hansıdır?**
 
----
+-    **A)** Bir şagirdin dəftərinə şəkil çəkməsinin Yerin orbitini dəyişdirməsi
+- ✅ **B)** Milyonlarla insanın avtomobildən çox istifadə etməsinin qlobal istixana qazlarını artırması
+-    **C)** Kənddə bir ağacın budağının sınmasının Ayın tutulmasına səbəb olması
+-    **D)** Məktəb zənginin çalınmasının okean dalğalarını tamamilə dayandırması
 
-### Sual 176. [Çətin] — TİK: `06-003-0206-0130-03-03-176`
+> 💡 **İzah:** 'Qlobal düşün, lokal hərəkət et' prinsipi göstərir ki, fərdi kiçik addımlar toplanaraq qlobal miqyasda böyük təsir yaradır.
 
-**Sual:** 'Lokal düşün, qlobal hərəkət et' (və ya 'Qlobal düşün, lokal hərəkət et') ekoloji şüarının əsas fəlsəfəsi nədir?
+### Sual 7 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M12-BL2-O-007]`
+**Azərbaycan Respublikasının dünya dövlətləri ilə qurduğu iqtisadi və enerji əlaqələrinin əsasını nə təşkil edir?**
 
-- **A)** Yalnız digər ölkələrin problemləri ilə maraqlanıb öz ölkəsini unutmaq
-- **B)** Bütün insanların tək bir şəhərə toplaşması məcburiyyəti
-- **C)** Hər bir fərdin öz yaşadığı məhəllədə atdığı kiçik ekoloji addımın bütövlükdə planetin xilasına xidmət etməsi
-- **D)** Heç bir beynəlxalq qaydaya əməl etməmək
+-    **A)** Yalnız okean sularından duz çıxarıb bütün dünya ölkələrinə pulsuz paylamaq layihələri
+-    **B)** Bütün beynəlxalq ticarət əlaqələrindən və xarici investisiyalardan tamamilə imtina etmək
+- ✅ **C)** Neft, təbii qaz və 'yaşıl enerji' (külək, günəş) ixracı, beynəlxalq nəqliyyat dəhlizləri
+-    **D)** Yalnız xarici ölkələrdən dərslik, dəftər və yazı ləvazimatları idxal etmək təşəbbüsləri
 
-**Düzgün cavab:** **C) Hər bir fərdin öz yaşadığı məhəllədə atdığı kiçik ekoloji addımın bütövlükdə planetin xilasına xidmət etməsi**
+> 💡 **İzah:** Azərbaycan neft-qaz kəmərləri (BTC, Cənub Qaz Dəhlizi), Şərq-Qərb nəqliyyat qovşağı və yaşıl enerji layihələri ilə qlobal iqtisadiyyatda mühüm tərəfdaşdır.
 
-**İzah:** Zibilin ayrılması, su qənaəti və ağac əkmək kimi fərdi addımlar birləşib qlobal tarazlığı qoruyur.
+### Sual 8 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B06-M12-BL3-O-008]`
+**İçməli su qıtlığı probleminin aradan qaldırılması üçün dövlətlər hansı qabaqlayıcı tədbirləri görürlər?**
 
----
+-    **A)** Bütün çayların suyunu okeana axıdıb quruda sudan istifadəni qanunla tam qadağan etmək
+-    **B)** Bütün su borularını söküb yerinə magistral qaz kəmərləri çəkmək və su kəmərlərini ləğv etmək
+-    **C)** Yalnız yağış yağmasını gözləyərək heç bir mühəndislik və qənaət işi həyata keçirməmək
+- ✅ **D)** Sudan qənaətlə istifadə texnologiyaları, damcılı suvarma və dəniz suyunun şirinləşdirilməsi
 
-### Sual 177. [Çətin] — TİK: `06-003-0206-0130-03-03-177`
+> 💡 **İzah:** Damcılı suvarma, təkrar emal və duzsuzlaşdırma qlobal şirin su qıtlığına qarşı ən effektiv müasir yollardır.
 
-**Sual:** Qlobal iqlim dəyişikliyi ilə mübarizədə qəbul edilmiş tarixi 'Paris İqlim Razılaşması'nın əsas hədəfi nədir?
+### Sual 9 `[ORTA | 2-Anlamaq | 06-COĞ-2024-B06-M12-BL2-O-009]`
+**Plastik tullantıların təbiətə atılmasının qarşısını almaq üçün tətbiq olunan '3R' prinsipi (Reduce, Reuse, Recycle) nə deməkdir?**
 
-- **A)** Bütün sənaye zavodlarını və fabriklərini bir günə sökmək
-- **B)** Okeanın artıq sularını xüsusi borularla kosmosa axıtmaq
-- **C)** Qlobal temperatur artımını sənayedən əvvəlki dövrə görə 1.5°C-də saxlamaq
-- **D)** Minik avtomobillərindən istifadəni ömürlük qadağan etmək
+- ✅ **A)** İstifadəni azalt, təkrar istifadə et və tullantını emala göndər
+-    **B)** Bütün plastiki yandır, çaylara at və torpağa basdır
+-    **C)** Plastiki yalnız qaranlıqda gizlət və heç vaxt təmizləmə
+-    **D)** Tullantıların hamısını kosmosa raketlə göndər
 
-**Düzgün cavab:** **C) Qlobal temperatur artımını sənayedən əvvəlki dövrə görə 1.5°C-də saxlamaq**
+> 💡 **İzah:** 3R beynəlxalq ekoloji idarəetmə qaydasıdır: azaldılma (Reduce), təkrar istifadə (Reuse) və təkrar emal (Recycle).
 
-**İzah:** Dövlətlər istixana qazlarını azaldaraq temperatur artımını 1.5 dərəcə daxilində cilovlamağa söz vermişlər.
+### Sual 10 `[ORTA | 3-Tətbiq etmək | 06-COĞ-2024-B06-M12-BL3-O-010]`
+**Müasir dünyada internet və rəqəmsal rabitə texnologiyaları lokal və qlobal əlaqələri necə dəyişmişdir?**
 
----
+-    **A)** Bütün ölkələrin bir-biri ilə əlaqəsini tamamilə kəsib təcrid etmiş və sərhədləri tam bağlamışdır.
+- ✅ **B)** Məsafələri qısaltmış, məlumat mübadiləsini və beynəlxalq əlaqələri saniyələr ərzində əlçatan etmişdir.
+-    **C)** İnsanların xarici dil öyrənmək və beynəlxalq kitablar oxumaq imkanını tamamilə ləğv etmişdir.
+-    **D)** Dünya xəritələrindəki materiklərin yerini və okeanların sərhədlərini bir-birindən uzaqlaşdırmışdır.
 
-### Sual 178. [Çətin] — TİK: `06-003-0206-0130-03-03-178`
+> 💡 **İzah:** Rəqəmsal əsr dünyanı 'qlobal kəndə' çevirib; informasiya, ticarət və elm qlobal şəbəkə üzərindən dərhal ötürülür.
 
-**Sual:** Tullantıların 'Təkrar emalı' (Recycling) prosesinin iqtisadi və ekoloji cəhətdən ən böyük səmərəsi nədir?
+### Sual 11 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M12-BL5-C-011]`
+**'Biz təbiəti əcdadlarımızdan miras almamışıq, onu gələcək nəsillərdən borc almışıq' kəlamının coğrafi fəlsəfəsini qiymətləndirin:**
 
-- **A)** İstehsal olunan bütün malların qiymətini on dəfə bahalaşdırmaq
-- **B)** Bütün məişət tullantılarını dənizə atmaq üçün bəhanə yaratmaq
-- **C)** Təbii xammal və enerjiyə qənaət edərək təbiəti zibillənmədən qorumaq
-- **D)** Sənaye fabriklərində çalışan bütün işçiləri işdən çıxarmaq
+-    **A)** Bütün təbii ehtiyatları bu gün istifadə edib gələcək nəsillərə heç nə saxlamamalıyıq.
+-    **B)** İnsanlar təbiətdən tamamilə uzaqlaşıb yalnız yeraltı sığınacaqlarda yaşamalıdırlar.
+- ✅ **C)** Təbii sərvətlərdən tükənməz kimi deyil, gələcək nəsillərin ehtiyaclarını qoruyaraq qənaətlə istifadə etməliyik.
+-    **D)** Gələcək nəsillər üçün yalnız şəhər binaları tikmək kifayətdir, təbiət vacib deyil.
 
-**Düzgün cavab:** **C) Təbii xammal və enerjiyə qənaət edərək təbiəti zibillənmədən qorumaq**
+> 💡 **İzah:** Davamlı inkişafın (Sustainable Development) əsas prinsipi resursları gələcək nəsillərin həyatını təhlükəyə atmadan idarə etməkdir.
 
-**İzah:** Kağız, şüşə, metal və plastik təkrar emal edildikdə meşələr qırılmır, mədənlər tükənmir və təbiət təmiz qalır.
+### Sual 12 `[ÇƏTIN | 4-Təhlil etmək | 06-COĞ-2024-B06-M12-BL4-C-012]`
+**Qlobal iqlim dəyişmələri nəticəsində qütb buzlaqlarının əriməsi hansı qlobal fəlakətli zəncirvari hadisələrə yol açar?**
 
----
+-    **A)** Yer kürəsinin fırlanması dayanar və bütün dənizlər dərhal buxarlanıb kosmosa sovrular.
+-    **B)** Bütün materiklərdə temperatur ilboyu mənfi 50 dərəcə şaxtaya enər və buzlaşma baş verər.
+-    **C)** Kosmik fəzadakı ulduzların sayı iki dəfə azalar və Yerin cazibə qüvvəsi tamamilə sıfıra enər.
+- ✅ **D)** Dünya okeanının səviyyəsi qalxar, sahil şəhərləri su altında qalar və iqlim qaçqınları yaranar.
 
-### Sual 179. [Çətin] — TİK: `06-003-0206-0130-03-03-179`
+> 💡 **İzah:** Buzlaqların əriməsi okean səviyyəsini qaldırır, sahil ovalıqlarını su basır, qlobal hava sirkulyasiyası pozulur.
 
-**Sual:** Azərbaycanın UNESCO-nun Ümumdünya İrsi siyahısına daxil edilmiş nadir mədəniyyət abidələri hansı sırada düzgün verilmişdir?
+### Sual 13 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M12-BL5-C-013]`
+**Azərbaycanın 'Yaşıl Enerji Zonası' (Qarabağ, Şərqi Zəngəzur və Naxçıvanda) təşəbbüslərinin qlobal əhəmiyyətini təhlil edin:**
 
-- **A)** İçərişəhər, Qobustan Qayaüstü Rəsmləri və Şəki Xan Sarayı
-- **B)** Yalnız paytaxtda tikilmiş müasir göydələnlər və körpülər
-- **C)** Yalnız Xəzərdəki Neft Daşları sənaye estakadası
-- **D)** Yalnız dağlıq ərazilərdə salınmış yeni kanat yolları
+-    **A)** Ölkəmizdə elektrik enerjisindən istifadəni tamamilə qadağan etmək və zavodları bağlamaq məqsədi daşıyır.
+-    **B)** Yalnız qış aylarında evləri qızdırmaq üçün zərərli kömür və mazut yandırmağı rəsmi təşviq edir.
+-    **C)** Bütün meşələri qırıb yerində təhlükəli köhnə atom stansiyaları tikməyə geniş şərait yaradır.
+- ✅ **D)** Bərpa olunan günəş və külək enerjisi ilə karbon emissiyalarını azaldaraq qlobal iqlim hədəflərinə töhfə verir.
 
-**Düzgün cavab:** **A) İçərişəhər, Qobustan Qayaüstü Rəsmləri və Şəki Xan Sarayı**
+> 💡 **İzah:** Təmiz enerji istehsalı və onun Avropaya ixracı qlobal istixana qazlarının azaldılmasına və davamlı inkişafa böyük töhfədir.
 
-**İzah:** İçərişəhər (Qız Qalası və Şirvanşahlar), Qobustan və Şəki Xan Sarayı bəşəriyyətin şah əsərləridir.
+### Sual 14 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M12-BL5-C-014]`
+**Qlobal problemlərin həllində tək bir dövlətin deyil, bütün dünya ölkələrinin birgə fəaliyyət göstərməsi nə üçün şərtdir?**
 
----
+- ✅ **A)** Atmosfer, okeanlar və iqlim vahid sistem olduğundan, təbiət heç bir dövlət sərhədi tanımır.
+-    **B)** Bütün dövlətlərin eyni dildə danışmasını və eyni qanunları qəbul etməsini təmin etmək üçün.
+-    **C)** Bir ölkənin çirkləndirdiyi havanın digər ölkələrin ərazisinə heç vaxt keçmədiyi üçün.
+-    **D)** Yalnız beynəlxalq təyyarə biletlərinin qiymətini iki dəfə ucuzlaşdırmaq məqsədilə.
 
-### Sual 180. [Çətin] — TİK: `06-003-0206-0130-03-03-180`
+> 💡 **İzah:** Hava axınları və okean cərəyanları qlobaldır; bir yerdəki çirklənmə bütün planetə təsir etdiyindən kollektiv mübarizə vacibdir.
 
-**Sual:** Müasir dünyada beynəlxalq humanitar hüququn və 'Qırmızı Xaç və Qırmızı Aypara' cəmiyyətinin başlıca vəzifəsi nədir?
+### Sual 15 `[ÇƏTIN | 5-Dəyərləndirmək | 06-COĞ-2024-B06-M12-BL5-C-015]`
+**Məktəblilərin beynəlxalq ekoloji olimpiadalarda və layihələrdə iştirakı onların dünyagörüşünə necə təsir edir?**
 
-- **A)** Dövlətlər arasında hərbi silah və texnika ticarətini idarə etmək
-- **B)** Yalnız zəngin və inkişaf etmiş dövlətlərə maliyyə krediti vermək
-- **C)** Hərbi münaqişələrdə tərəflərdən birinin ordusu kimi döyüşmək
-- **D)** Müharibə və fəlakət qurbanlarına tərəfsiz tibbi və humanitar yardım etmək
+-    **A)** Şagirdlərin öz doğma vətəninə, təbiətinə və milli ənənələrinə olan sevgisini və bağlılığını zəiflədir.
+- ✅ **B)** Qlobal düşüncə tərzini inkişaf etdirir, fərqli xalqlarla dostluq və ortaq planetar məsuliyyət hissi aşılayır.
+-    **C)** Onlara yalnız xarici ölkələrdə yaşayıb bir daha geri dönməmək və milli kökləri unutmaq fikrini aşılayır.
+-    **D)** Coğrafiya elmini öyrənməyin heç bir əhəmiyyətinin və praktiki faydasının olmadığını nümayiş etdirir.
 
-**Düzgün cavab:** **D) Müharibə və fəlakət qurbanlarına tərəfsiz tibbi və humanitar yardım etmək**
+> 💡 **İzah:** Beynəlxalq təcrübə gənclərdə həm vətənpərvərlik, həm də qlobal planetar vətəndaşlıq məsuliyyətini vəhdətdə formalaşdırır.
 
-**İzah:** Qırmızı Xaç və Qırmızı Aypara heç bir siyasi və dini fərq qoymadan insan həyatını xilas edir.
 
 ---

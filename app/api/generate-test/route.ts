@@ -222,8 +222,21 @@ Mövzu: ${topic}`
         if (jsonMatch) {
           const parsedData = JSON.parse(jsonMatch[0])
           if (parsedData.questions && Array.isArray(parsedData.questions)) {
-            const questionsWithIds = parsedData.questions.map((q: any, index: number) => {
-              const cleanOptions = q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/, "").trim())
+            const uniqueAIQuestions: any[] = []
+            const seenAIText = new Set<string>()
+            for (const q of parsedData.questions) {
+              const qText = (q.question || "").trim()
+              const normKey = qText.toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, "")
+              if (normKey && !seenAIText.has(normKey)) {
+                seenAIText.add(normKey)
+                uniqueAIQuestions.push(q)
+              }
+            }
+
+            const questionsWithIds = uniqueAIQuestions.slice(0, questionCount).map((q: any, index: number) => {
+              const cleanOptions = Array.isArray(q.options)
+                ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/, "").trim())
+                : []
               return {
                 id: index + 1,
                 question: q.question?.trim() || `Sual ${index + 1}`,
@@ -364,28 +377,38 @@ function generateSubjectFallbackQuestions(
         })
       }
 
-      let pool: any[] = []
+      const fallbackMap = new Map<string, any>()
+      const getNormQKey = (q: any) => norm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
+
       matchedKeys.forEach(k => {
         const val = db[k]
+        const pushUnique = (q: any) => {
+          if (!q || !q.question) return
+          const key = getNormQKey(q)
+          if (key && !fallbackMap.has(key)) {
+            fallbackMap.set(key, q)
+          }
+        }
         if (Array.isArray(val)) {
           val.forEach((item: any) => {
             if (item.questions && Array.isArray(item.questions)) {
-              item.questions.forEach((q: any) => pool.push(q))
+              item.questions.forEach((q: any) => pushUnique(q))
             } else if (item.question) {
-              pool.push(item)
+              pushUnique(item)
             }
           })
         } else if (typeof val === "object" && val !== null) {
           Object.values(val).forEach((qList: any) => {
             if (Array.isArray(qList)) {
-              qList.forEach((q: any) => pool.push(q))
+              qList.forEach((q: any) => pushUnique(q))
             }
           })
         }
       })
 
-      if (pool.length > 0) {
-        const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+      const uniqueFallbackPool = Array.from(fallbackMap.values())
+      if (uniqueFallbackPool.length > 0) {
+        const shuffled = uniqueFallbackPool.sort(() => Math.random() - 0.5).slice(0, count)
         return shuffled.map((q: any, idx: number) => ({
           id: idx + 1,
           question: q.question,
@@ -484,8 +507,16 @@ function loadFromQuestionBank(
       ? matching
       : matching.filter((q: any) => allowed.includes(q.difficulty || ""))
 
-    const pool = filtered.length > 0 ? filtered : matching
-    const shuffled = pool.sort(() => Math.random() - 0.5).slice(0, count)
+    const rawPool = filtered.length > 0 ? filtered : matching
+    const uniqueBankMap = new Map<string, any>()
+    for (const q of rawPool) {
+      const k = (q?.question || "").toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, "")
+      if (k && !uniqueBankMap.has(k)) {
+        uniqueBankMap.set(k, q)
+      }
+    }
+    const uniqueBankPool = Array.from(uniqueBankMap.values())
+    const shuffled = uniqueBankPool.sort(() => Math.random() - 0.5).slice(0, count)
 
     return shuffled.map((q: any, idx: number) => ({
       id: idx + 1,
@@ -586,84 +617,82 @@ function loadFromOfflineTests(
       return []
     }
 
-    let subjectQuestions: any[] = []
-    matchedKeys.forEach(subjectKey => {
-      const val = db[subjectKey]
-      if (Array.isArray(val)) {
-        val.forEach((item: any) => {
-          if (item.questions && Array.isArray(item.questions)) {
-            item.questions.forEach((q: any) => {
-              if (!q.topic && item.topic_key) q.topic = item.topic_key
-              if (!q.category) q.category = subjectKey
-              subjectQuestions.push(q)
-            })
-          } else if (item.question) {
-            if (!item.category) item.category = subjectKey
-            subjectQuestions.push(item)
-          }
-        })
-      } else if (typeof val === "object" && val !== null) {
-        Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
-          if (Array.isArray(qList)) {
-            qList.forEach((q: any) => {
-              if (!q.topic) q.topic = tKey
-              if (!q.category) q.category = subjectKey
-              subjectQuestions.push(q)
-            })
-          }
-        })
-      }
-    })
-
-    if (subjectQuestions.length === 0) return []
+    const getOfflineQKey = (q: any) => norm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
 
     const cleanTopicStr = (str: string) =>
       norm(str)
         .replace(/^[0-9ivx]+[.\-)]*\s*/gi, "")
         .replace(/^bölmə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
         .replace(/^hissə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
+        .replace(/^раздел\s+[0-9ivx]+[.\-:]*\s*/gi, "")
         .replace(/["'“”«»()]/g, "")
         .trim()
 
     const targetNorm = norm(topic)
     const targetClean = cleanTopicStr(topic)
 
-    // Stage 1: Exact or direct normalized match
-    let specificTopicQuestions = subjectQuestions.filter((q: any) => {
-      const qTopic = q.topic || ""
-      const qNorm = norm(qTopic)
-      return qNorm === targetNorm || qTopic.toLowerCase().trim() === topicLower
-    })
+    const specificTopicQuestions: any[] = []
+    const subjectQuestions: any[] = []
 
-    // Stage 2: Cleaned title match (without chapter numbers/quotes)
-    if (specificTopicQuestions.length === 0) {
-      specificTopicQuestions = subjectQuestions.filter((q: any) => {
-        const qClean = cleanTopicStr(q.topic || "")
-        return qClean === targetClean ||
-               (targetClean.length > 4 && qClean.includes(targetClean)) ||
-               (qClean.length > 4 && targetClean.includes(qClean))
-      })
-    }
+    matchedKeys.forEach(subjectKey => {
+      const val = db[subjectKey]
+      if (Array.isArray(val)) {
+        val.forEach((item: any) => {
+          if (item.questions && Array.isArray(item.questions)) {
+            item.questions.forEach((q: any) => {
+              const qTopic = q.topic || item.topic_key || ""
+              const qCopy = { ...q, topic: qTopic, category: q.category || subjectKey }
+              subjectQuestions.push(qCopy)
+              const tNorm = norm(qTopic)
+              const tClean = cleanTopicStr(qTopic)
+              if (tNorm === targetNorm || tClean === targetClean || (targetClean.length > 4 && tClean.includes(targetClean))) {
+                specificTopicQuestions.push(qCopy)
+              }
+            })
+          } else if (item.question) {
+            const qTopic = item.topic || item.topic_key || ""
+            const qCopy = { ...item, topic: qTopic, category: item.category || subjectKey }
+            subjectQuestions.push(qCopy)
+            const tNorm = norm(qTopic)
+            const tClean = cleanTopicStr(qTopic)
+            if (tNorm === targetNorm || tClean === targetClean || (targetClean.length > 4 && tClean.includes(targetClean))) {
+              specificTopicQuestions.push(qCopy)
+            }
+          }
+        })
+      } else if (typeof val === "object" && val !== null) {
+        Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
+          const tNorm = norm(tKey)
+          const tClean = cleanTopicStr(tKey)
+          const isTopicMatch = tNorm === targetNorm || tClean === targetClean || 
+                               (targetClean.length > 4 && tClean.includes(targetClean)) || 
+                               (tClean.length > 4 && targetClean.includes(tClean))
 
-    // Stage 3: Keyword overlap match
-    if (specificTopicQuestions.length === 0) {
-      const topicWords = targetClean
-        .split(/\s+/)
-        .filter((w: string) => w.length > 3)
-      
-      if (topicWords.length > 0) {
-        specificTopicQuestions = subjectQuestions.filter((q: any) => {
-          const qClean = cleanTopicStr(q.topic || "")
-          return topicWords.some((word: string) => qClean.includes(word))
+          if (Array.isArray(qList)) {
+            qList.forEach((q: any) => {
+              const qCopy = { ...q, topic: q.topic || tKey, category: q.category || subjectKey }
+              subjectQuestions.push(qCopy)
+              if (isTopicMatch) {
+                specificTopicQuestions.push(qCopy)
+              }
+            })
+          }
         })
       }
-    }
+    })
 
-    // Stage 4: Fallback to subject pool if no specific topic match
-    if (specificTopicQuestions.length === 0) {
-      console.log(`[offline] No specific topic match for "${topic}", using subject-level pool for "${textbookTitle}".`)
-      specificTopicQuestions = subjectQuestions
+    const candidateQuestions = specificTopicQuestions.length > 0 ? specificTopicQuestions : subjectQuestions
+    if (candidateQuestions.length === 0) return []
+
+    // Deduplicate within the candidate pool only
+    const uniquePoolMap = new Map<string, any>()
+    for (const q of candidateQuestions) {
+      const qKey = getOfflineQKey(q)
+      if (qKey && !uniquePoolMap.has(qKey)) {
+        uniquePoolMap.set(qKey, q)
+      }
     }
+    const pool = Array.from(uniquePoolMap.values())
 
     const diffMap: Record<string, string[]> = {
       sadə: ["sadə", "asan", "easy", "beginner"],
@@ -675,11 +704,11 @@ function loadFromOfflineTests(
     const reqDiff = difficulty.toLowerCase().trim()
     const allowed = diffMap[reqDiff] || diffMap["qarışıq"]
     let filtered = reqDiff === "qarışıq"
-      ? specificTopicQuestions
-      : specificTopicQuestions.filter((q: any) => allowed.includes((q.difficulty || "").toLowerCase()))
+      ? pool
+      : pool.filter((q: any) => allowed.includes((q.difficulty || "").toLowerCase()))
 
     if (filtered.length < count && reqDiff !== "qarışıq") {
-       filtered = specificTopicQuestions 
+       filtered = pool
     }
 
     const shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, count)
