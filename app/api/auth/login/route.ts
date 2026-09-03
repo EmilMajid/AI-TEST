@@ -3,9 +3,10 @@ import { type NextRequest, NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
 import { z } from "zod"
 import { generateAccessToken } from "@/lib/jwt"
+import { getUserUniqueId } from "@/lib/profile-utils"
 
 const loginSchema = z.object({
-  email: z.string().email("Düzgün email daxil edin"),
+  email: z.string().min(1, "E-mail və ya Şagird ID daxil edin"),
   password: z.string().min(1, "Şifrə daxil edin"),
 })
 
@@ -57,9 +58,15 @@ export async function POST(request: NextRequest) {
 
       // ACTION: LOOKUP
       if (action === "lookup") {
-        // Filter users by email and role (if provided)
-        // Note: In a real app, we might just look up by email, but here we want to support the specific flow
-        let foundUsers = mockUsers.filter(u => u.email.toLowerCase() === email.toLowerCase());
+        const cleanInput = (email || "").trim().toLowerCase();
+        const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
+
+        let foundUsers = mockUsers.filter(u => {
+          const emailMatch = u.email && u.email.toLowerCase() === cleanInput;
+          const userUid = getUserUniqueId(u).toLowerCase();
+          const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "");
+          return emailMatch || idMatch;
+        });
 
         if (role) {
           foundUsers = foundUsers.filter(u => u.accountType === role);
@@ -89,7 +96,8 @@ export async function POST(request: NextRequest) {
             accountType: u.accountType,
             school: u.school,
             class: u.class,
-            region: u.region
+            region: u.region,
+            email: u.email
           }))
         });
       }
@@ -100,16 +108,21 @@ export async function POST(request: NextRequest) {
 
         if (userId) {
           console.log(`[Mock Auth] Looking for userId: ${userId}`);
-          // In demo mode, we match by ID and then check password. 
-          // If password doesn't match but it's demo mode, we still allow it but maybe log it.
-          user = mockUsers.find(u => u.id === userId);
+          user = mockUsers.find(u => String(u.id) === String(userId));
 
           if (user && user.password !== password && password !== "test12345" && password !== "test123") {
             console.log(`[Mock Auth] Password mismatch for ${userId}. Expected: ${user.password}, Got: ${password}. But allowing anyway in demo.`);
           }
         } else {
-          // Fallback for direct login (legacy or single user)
-          user = mockUsers.find(u => u.email.toLowerCase() === email.toLowerCase());
+          // Fallback for direct login (match email or Unikal ID)
+          const cleanInput = (email || "").trim().toLowerCase();
+          const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
+          user = mockUsers.find(u => {
+            const emailMatch = u.email && u.email.toLowerCase() === cleanInput;
+            const userUid = getUserUniqueId(u).toLowerCase();
+            const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "");
+            return emailMatch || idMatch;
+          });
           if (user && user.password !== password && password !== "test12345" && password !== "test123") {
             console.log(`[Mock Auth] Password mismatch for ${email}. But allowing anyway in demo.`);
           }
@@ -182,11 +195,12 @@ export async function POST(request: NextRequest) {
     // ACTION: LOOKUP
     if (action === "lookup") {
       try {
-        // Query profiles table for users with this email
+        const cleanInput = (email || "").trim().toLowerCase()
+        const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`
+
         let query = supabase
           .from("profiles")
           .select("id, email, first_name, last_name, father_name, account_type, school, class, role, region")
-          .eq("email", email.toLowerCase())
 
         // Filter by role if provided
         if (role) {
@@ -200,13 +214,27 @@ export async function POST(request: NextRequest) {
           return NextResponse.json({ error: "İstifadəçi axtarışı zamanı xəta" }, { status: 500 })
         }
 
-        if (!profiles || profiles.length === 0) {
+        const matchedProfiles = (profiles || []).filter(p => {
+          if (p.email && p.email.toLowerCase() === cleanInput) return true
+          const pId = getUserUniqueId({
+            id: p.id,
+            firstName: p.first_name,
+            lastName: p.last_name,
+            school: p.school,
+            class: p.class,
+            accountType: p.account_type,
+            role: p.role
+          }).toLowerCase()
+          return pId === cleanId || pId.replace("@", "") === cleanInput.replace("@", "")
+        })
+
+        if (!matchedProfiles || matchedProfiles.length === 0) {
           return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
         }
 
         return NextResponse.json({
           success: true,
-          users: profiles.map(p => ({
+          users: matchedProfiles.map(p => ({
             id: p.id,
             firstName: p.first_name,
             lastName: p.last_name,
@@ -215,7 +243,8 @@ export async function POST(request: NextRequest) {
             school: p.school,
             class: p.class,
             region: p.region,
-            role: p.role
+            role: p.role,
+            email: p.email
           }))
         })
       } catch (err) {
@@ -227,9 +256,21 @@ export async function POST(request: NextRequest) {
     // ACTION: LOGIN
     if (action === "login") {
       try {
+        let loginEmail = email
+        if (userId) {
+          const { data: profile } = await supabase
+            .from("profiles")
+            .select("email")
+            .eq("id", userId)
+            .single()
+          if (profile?.email) {
+            loginEmail = profile.email
+          }
+        }
+
         // Validate credentials with Supabase Auth
         const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
-          email,
+          email: loginEmail,
           password,
         })
 

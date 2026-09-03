@@ -92,7 +92,11 @@ export default function LoginPage() {
         setFoundUsers(data.users)
         if (data.users.length === 1) {
           // Only one user found, auto-select and go to password
-          setFormData((prev) => ({ ...prev, userId: data.users[0].id }))
+          setFormData((prev) => ({
+            ...prev,
+            userId: data.users[0].id,
+            email: data.users[0].email || prev.email,
+          }))
           setStep("password")
         } else {
           // Multiple users found, show selection
@@ -109,8 +113,12 @@ export default function LoginPage() {
     }
   }
 
-  const handleUserSelect = (userId: string) => {
-    setFormData((prev) => ({ ...prev, userId }))
+  const handleUserSelect = (user: any) => {
+    setFormData((prev) => ({
+      ...prev,
+      userId: user.id,
+      email: user.email || prev.email,
+    }))
     setStep("password")
   }
 
@@ -211,14 +219,14 @@ export default function LoginPage() {
               <CardHeader className="pb-3">
                 <CardTitle className="text-xl sm:text-2xl text-center font-bold">
                   {step === "role" && "Kim kimi daxil olmaq istəyirsiniz?"}
-                  {step === "email" && "E-mail daxil edin"}
+                  {step === "email" && "E-mail və ya Şagird ID daxil edin"}
                   {step === "user-selection" && "İstifadəçi seçin"}
                   {step === "password" && "Şifrəni daxil edin"}
                 </CardTitle>
                 <CardDescription className="text-center text-xs sm:text-sm">
                   {step === "role" && "Davam etmək üçün statusunuzu seçin"}
-                  {step === "email" && `${roles.find((r) => r.id === formData.role)?.label || "İstifadəçi"} kimi giriş`}
-                  {step === "user-selection" && "Bu email ilə bir neçə hesab tapıldı"}
+                  {step === "email" && `${roles.find((r) => r.id === formData.role)?.label || "İstifadəçi"} kimi giriş (E-mail və ya Şagird ID)`}
+                  {step === "user-selection" && "Bu məlumatla uyğun hesablar tapıldı"}
                   {step === "password" && "Hesabınıza daxil olmaq üçün şifrənizi yazın"}
                 </CardDescription>
               </CardHeader>
@@ -258,20 +266,20 @@ export default function LoginPage() {
                   </div>
                 )}
 
-                {/* STEP 2: EMAIL INPUT */}
+                {/* STEP 2: EMAIL OR UNIQUE ID INPUT */}
                 {step === "email" && (
                   <form onSubmit={handleEmailSubmit} className="space-y-5">
                     <div>
-                      <Label htmlFor="email" className="text-xs font-semibold">E-mail</Label>
+                      <Label htmlFor="email" className="text-xs font-semibold">E-mail və ya Unikal Şagird ID</Label>
                       <Input
                         id="email"
-                        type="email"
+                        type="text"
                         required
                         value={formData.email}
                         onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                        placeholder="nümunə@email.com"
+                        placeholder="nümunə@email.com və ya @gunay.rzayeva.161"
                         disabled={isLoading}
-                        className="text-base p-5 mt-1 rounded-xl"
+                        className="text-base p-5 mt-1 rounded-xl font-mono"
                         autoFocus
                       />
                     </div>
@@ -287,7 +295,7 @@ export default function LoginPage() {
                     {foundUsers.map((user) => (
                       <button
                         key={user.id}
-                        onClick={() => handleUserSelect(user.id)}
+                        onClick={() => handleUserSelect(user)}
                         className="w-full p-4 text-left rounded-xl border border-gray-200 hover:border-primary hover:bg-primary/5 transition-all group cursor-pointer"
                       >
                         <div className="flex items-center justify-between">
