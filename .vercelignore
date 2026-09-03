@@ -1,0 +1,10 @@
+# Vercel Ignore File
+# Exclude heavy local scraper cache, textbooks, training data, and scripts
+public/textbooks
+scripts
+data
+temp
+*.pdf
+*.traineddata
+*.md
+!README.md

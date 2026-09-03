@@ -47,8 +47,7 @@ data/*.backup*
 scripts/extracted-topics.json
 
 # Large Binaries (Textbooks & Media)
+public/textbooks/
+*.pdf
+*.traineddata
 data/cache/*.db
-public/textbooks/**/*.pdf
-public/textbooks/**/*.mp4
-public/textbooks/**/*.zip
-public/textbooks/**/*.png
