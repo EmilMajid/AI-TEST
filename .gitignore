@@ -40,6 +40,10 @@ logs/
 
 # Generated Data
 data/*.jsonl
+data/*.bak*
+data/*.backup*
+*.bak*
+*.backup*
 scripts/extracted-topics.json
 
 # Large Binaries (Textbooks & Media)
