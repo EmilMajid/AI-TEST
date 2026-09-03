@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = "force-dynamic"
 
 import { useEffect, useState } from "react"
 import { createClient } from "@/lib/supabase/client"
@@ -29,20 +30,24 @@ export default function ResultsPage() {
   const [results, setResults] = useState<any[]>([])
   const [bloomStats, setBloomStats] = useState<any>({})
   const [loading, setLoading] = useState(true)
-  const supabase = createClient()
 
   useEffect(() => {
     fetchResults()
   }, [])
 
   async function fetchResults() {
-    const {
-      data: { user },
-    } = await supabase.auth.getUser()
+    try {
+      const supabase = createClient()
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
 
-    if (!user) return
+      if (!user) {
+        setLoading(false)
+        return
+      }
 
-    const { data } = await supabase
+      const { data } = await supabase
       .from("test_results")
       .select(
         `
@@ -69,9 +74,12 @@ export default function ResultsPage() {
 
       setBloomStats(stats)
     }
-
+  } catch (error) {
+    console.error("Error loading results:", error)
+  } finally {
     setLoading(false)
   }
+}
 
   const chartData = results.map((r) => ({
     date: new Date(r.completed_at).toLocaleDateString("az-AZ"),
