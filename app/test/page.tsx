@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation"
 import TestGenerationStatus from "@/components/test-generation-status"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 import { AdBanner } from "@/components/ads/ad-banner"
+import { TestInterstitialAd } from "@/components/ads/test-interstitial-ad"
 
 interface Question {
   id: number
@@ -53,6 +54,7 @@ export default function TestPage() {
   const [isGenerating, setIsGenerating] = useState(false)
   const [generationError, setGenerationError] = useState<string | null>(null)
   const [testResults, setTestResults] = useState<any>(null)
+  const [showInterstitial, setShowInterstitial] = useState(false)
 
   useEffect(() => {
     // Test konfiqurasiyasını localStorage-dən oxu
@@ -153,6 +155,11 @@ export default function TestPage() {
   }
 
   const handleTestComplete = () => {
+    setShowInterstitial(true)
+  }
+
+  const handleFinishAndShowResults = () => {
+    setShowInterstitial(false)
     setIsTestCompleted(true)
     calculateResults()
   }
@@ -671,6 +678,12 @@ export default function TestPage() {
         </aside>
 
       </div>
+
+      {/* Test Bitmə Keçid (Interstitial) Reklam Modalı */}
+      <TestInterstitialAd
+        isOpen={showInterstitial}
+        onComplete={handleFinishAndShowResults}
+      />
     </div>
   )
 }

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 }
 
 import { Toaster } from "@/components/ui/toaster"
+import { StickyBottomAd } from "@/components/ads/sticky-bottom-ad"
 
 export default function RootLayout({
   children,
@@ -29,9 +30,10 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
         />
       </head>
-      <body>
+      <body className="pb-16 sm:pb-20">
         {children}
         <Toaster />
+        <StickyBottomAd />
       </body>
     </html>
   )
