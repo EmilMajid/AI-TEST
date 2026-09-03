@@ -106,7 +106,7 @@ export default function TestPage() {
 
       const data = await response.json()
 
-      if (data.success && data.questions) {
+      if (data.success && data.questions && data.questions.length > 0) {
         // Sualları konfiqurasiyaya uyğun olaraq filtrələ
         const filteredQuestions = data.questions.slice(0, config.questionCount)
         setQuestions(filteredQuestions)
@@ -119,7 +119,7 @@ export default function TestPage() {
           provider: data.provider,
         })
       } else {
-        throw new Error(data.error || "Test yaradılarkən xəta baş verdi")
+        throw new Error(data.error || "Bu mövzu üzrə hələlik test bazasında sual mövcud deyil. Zəhmət olmasa digər mövzuları seçin.")
       }
     } catch (error) {
       console.error("Test generation error:", error)
@@ -293,11 +293,24 @@ export default function TestPage() {
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
-        <Card className="w-full max-w-md">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-lg font-semibold mb-2">Test Hazırlanır...</h3>
-            <p className="text-gray-600">Zəhmət olmasa gözləyin</p>
+      <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center p-4">
+        <Card className="w-full max-w-md shadow-lg border-border">
+          <CardHeader>
+            <CardTitle className="text-amber-600 flex items-center text-lg">
+              <Brain className="h-5 w-5 mr-2" />
+              Məlumat
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-gray-700">
+              Bu mövzu üzrə hələlik test sualları bazaya daxil edilməyib. Zəhmət olmasa digər mövzuları və ya fənləri seçin.
+            </p>
+            <Button
+              onClick={() => router.push(getDashboardPath(getCurrentUser()?.accountType))}
+              className="w-full"
+            >
+              Fənn Seçiminə Qayıt
+            </Button>
           </CardContent>
         </Card>
       </div>

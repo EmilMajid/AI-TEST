@@ -14,6 +14,7 @@ data/offline_tests*.bak*
 data/offline_tests_backup*
 data/offline_tests_github*
 data/offline_tests_HEAD*
+data/offline_tests.json
 temp
 *.pdf
 *.traineddata

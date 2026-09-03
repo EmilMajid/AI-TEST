@@ -131,7 +131,7 @@ Mövzu: ${topic}`
 
     // STEP 0: offline_tests.json-dan hazır sualları yoxla
     console.log("🔄 offline_tests.json-dan hazır suallar axtarılır...")
-    const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty)
+    const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
 
     if (offlineQuestions.length > 0) {
       console.log(`✅ offline_tests.json-dan ${offlineQuestions.length} hazır sual tapıldı! AI sorğusu ləğv edilir.`)
@@ -296,14 +296,24 @@ Mövzu: ${topic}`
       })
     }
 
-    // STEP 2: Guaranteed Dynamic Fallback Generator for 100% test availability
     const fallbackQuestions = generateSubjectFallbackQuestions(textbook, topic, grade, questionCount, difficulty)
+
+    if (!fallbackQuestions || fallbackQuestions.length === 0) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Bu fənn və mövzu üzrə hələlik test bazasında sual mövcud deyil. Zəhmət olmasa digər mövzuları seçin.",
+          questions: [],
+        },
+        { status: 404 },
+      )
+    }
 
     return NextResponse.json({
       questions: fallbackQuestions,
       provider: "fallback_curriculum",
       success: true,
-      message: `${fallbackQuestions.length} test sualı fənn standartı əsasında dərhal generasiya olundu (${topic})`,
+      message: `${fallbackQuestions.length} test sualı fənn standartı əsasında təqdim olundu (${topic})`,
       metadata: {
         textbook,
         topic,
@@ -335,12 +345,9 @@ function generateSubjectFallbackQuestions(
   difficulty: string
 ): any[] {
   // If specific topic match failed, fallback to any available questions from the SAME subject/grade in offline_tests.json
-  // NEVER generate hardcoded fake meta-template boilerplate!
   try {
-    const bankPath = path.join(process.cwd(), "data", "offline_tests.json")
-    if (fs.existsSync(bankPath)) {
-      const raw = fs.readFileSync(bankPath, "utf-8")
-      const db = JSON.parse(raw)
+    const db = getGradeDb(grade, textbookTitle)
+    if (db && Object.keys(db).length > 0) {
       
       const norm = (s: string) =>
         s
@@ -550,18 +557,45 @@ function getDifficultyDistribution(questions: any[]) {
   return distribution
 }
 
+function getGradeDb(grade?: string | number, textbookTitle?: string): Record<string, any> {
+  try {
+    const gradeDigit =
+      String(grade || "").match(/\b([1-9]|1[0-1])\b/)?.[0] ||
+      String(textbookTitle || "").match(/\b([1-9]|1[0-1])\b/)?.[0] ||
+      ""
+
+    if (gradeDigit) {
+      const p = path.join(process.cwd(), "data", "grades", `grade_${gradeDigit}.json`)
+      if (fs.existsSync(p)) {
+        return JSON.parse(fs.readFileSync(p, "utf-8"))
+      }
+    }
+
+    const otherPath = path.join(process.cwd(), "data", "grades", "grade_other.json")
+    if (fs.existsSync(otherPath)) {
+      return JSON.parse(fs.readFileSync(otherPath, "utf-8"))
+    }
+
+    const legacyPath = path.join(process.cwd(), "data", "offline_tests.json")
+    if (fs.existsSync(legacyPath)) {
+      return JSON.parse(fs.readFileSync(legacyPath, "utf-8"))
+    }
+  } catch (e) {
+    console.error("Error reading grade questions database:", e)
+  }
+  return {}
+}
+
 function loadFromOfflineTests(
   textbookTitle: string,
   topic: string,
   count: number,
-  difficulty: string
+  difficulty: string,
+  grade?: string | number
 ): any[] {
   try {
-    const bankPath = path.join(process.cwd(), "data", "offline_tests.json")
-    if (!fs.existsSync(bankPath)) return []
-
-    const raw = fs.readFileSync(bankPath, "utf-8")
-    const db = JSON.parse(raw)
+    const db = getGradeDb(grade, textbookTitle)
+    if (!db || Object.keys(db).length === 0) return []
     const topicLower = topic.toLowerCase().trim()
 
     const norm = (s: string) =>
