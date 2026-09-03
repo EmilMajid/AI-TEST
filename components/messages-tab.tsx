@@ -20,6 +20,7 @@ import {
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Send, User, Reply, Clock, CheckCircle2 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { getUserUniqueId } from "@/lib/profile-utils"
 
 interface Message {
     id: number
@@ -162,22 +163,39 @@ export function MessagesTab({ userId, userRole }: MessagesTabProps) {
                         </DialogHeader>
                         <div className="space-y-4 mt-4">
                             <div className="space-y-2">
-                                <Label>Kimə</Label>
+                                <Label>Kimə (Siyahıdan seçin və ya Unikal ID yazın)</Label>
                                 <Select
                                     onValueChange={(val) => setNewMessage({ ...newMessage, receiverId: val })}
                                     value={newMessage.receiverId}
                                 >
                                     <SelectTrigger>
-                                        <SelectValue placeholder="Seçin..." />
+                                        <SelectValue placeholder="Siyahıdan seçin..." />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        {availableUsers.map(user => (
-                                            <SelectItem key={user.id} value={user.id}>
-                                                {user.firstName} {user.lastName} ({user.accountType === 'admin' ? 'Admin' : user.accountType === 'student' ? 'Şagird' : user.accountType === 'teacher' ? 'Müəllim' : user.accountType === 'director' ? 'Direktor' : 'Valideyn'})
-                                            </SelectItem>
-                                        ))}
+                                        {availableUsers.map(user => {
+                                            const roleStr = user.accountType === 'admin' ? 'Admin' : user.accountType === 'student' ? 'Şagird' : user.accountType === 'teacher' ? 'Müəllim' : user.accountType === 'director' ? 'Direktor' : 'Valideyn'
+                                            const uId = getUserUniqueId(user)
+                                            return (
+                                                <SelectItem key={user.id} value={String(user.id)}>
+                                                    <div className="flex items-center gap-2">
+                                                        <span>{user.firstName} {user.lastName}</span>
+                                                        <span className="text-xs font-mono text-primary font-semibold">{uId}</span>
+                                                        <span className="text-xs text-muted-foreground">({roleStr})</span>
+                                                    </div>
+                                                </SelectItem>
+                                            )
+                                        })}
                                     </SelectContent>
                                 </Select>
+                                <div className="flex items-center gap-2 pt-1">
+                                    <span className="text-xs text-muted-foreground whitespace-nowrap">və ya ID ilə:</span>
+                                    <Input
+                                        placeholder="Məs: @murad.mecidli.161"
+                                        value={newMessage.receiverId.startsWith("@") ? newMessage.receiverId : ""}
+                                        onChange={(e) => setNewMessage({ ...newMessage, receiverId: e.target.value })}
+                                        className="h-8 font-mono text-xs"
+                                    />
+                                </div>
                             </div>
                             <div className="space-y-2">
                                 <Label>Mövzu</Label>

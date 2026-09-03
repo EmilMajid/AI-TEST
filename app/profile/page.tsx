@@ -19,9 +19,10 @@ import {
     logout,
     getRoleLabel,
     getDashboardPath,
+    getUserUniqueId,
     type UserData
 } from "@/lib/profile-utils"
-import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2 } from "lucide-react"
+import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2, Fingerprint, Copy } from "lucide-react"
 import Link from "next/link"
 
 export default function ProfilePage() {
@@ -134,7 +135,12 @@ export default function ProfilePage() {
                                     Geri
                                 </Button>
                             </Link>
-                            <h1 className="text-2xl font-bold text-gray-900">Profil</h1>
+                            <div className="flex flex-col items-center">
+                                <h1 className="text-2xl font-bold text-gray-900">Profil</h1>
+                                <span className="text-xs font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full border border-primary/20 mt-0.5 select-all" title="Sizin Şəxsi ID Kodunuz">
+                                    ID: {getUserUniqueId(userData)}
+                                </span>
+                            </div>
                             <Button
                                 variant="outline"
                                 className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
@@ -157,13 +163,19 @@ export default function ProfilePage() {
                                     <CardTitle className="text-center">Profil Şəkli</CardTitle>
                                 </CardHeader>
                                 <CardContent className="space-y-4">
-                                    <div className="flex justify-center">
+                                    <div className="flex flex-col items-center">
                                         <ProfileAvatar
                                             firstName={userData.firstName}
                                             lastName={userData.lastName}
                                             profileImage={tempImage || undefined}
                                             size="xl"
                                         />
+                                        <div className="mt-3 text-center">
+                                            <p className="text-xs text-muted-foreground">Şəxsi ID Kodu</p>
+                                            <span className="inline-block mt-0.5 px-3 py-1 bg-primary/10 text-primary font-mono text-xs font-bold rounded-lg border border-primary/20 select-all" title="Sizin Şəxsi ID Kodunuz">
+                                                {getUserUniqueId(userData)}
+                                            </span>
+                                        </div>
                                     </div>
 
                                     <ImageUpload
@@ -205,6 +217,41 @@ export default function ProfilePage() {
                                     <CardDescription>Sizin hesab məlumatlarınız</CardDescription>
                                 </CardHeader>
                                 <CardContent className="space-y-4">
+                                    {/* Unikal Şagird ID Bloku */}
+                                    <div className="p-3.5 bg-primary/5 rounded-xl border border-primary/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                        <div className="space-y-0.5">
+                                            <div className="flex items-center gap-1.5 text-xs font-bold text-primary">
+                                                <Fingerprint className="h-4 w-4" />
+                                                Şəxsi Unikal ID Kodu
+                                            </div>
+                                            <p className="text-[11px] text-muted-foreground">
+                                                Bu kod sizin sistemdəki unikal ünvanınızdır (Mesajlaşma və valideyn nəzarəti üçün).
+                                            </p>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="font-mono text-sm font-bold text-primary bg-white px-3 py-1.5 rounded-lg border border-primary/30 shadow-xs select-all">
+                                                {getUserUniqueId(userData)}
+                                            </span>
+                                            <Button
+                                                type="button"
+                                                variant="outline"
+                                                size="sm"
+                                                className="h-8 px-2.5 text-xs gap-1"
+                                                onClick={() => {
+                                                    navigator.clipboard.writeText(getUserUniqueId(userData))
+                                                    toast({
+                                                        title: "Kopyalandı! 📋",
+                                                        description: "Şəxsi ID kodunuz kopyalandı",
+                                                    })
+                                                }}
+                                                title="ID Kodu Kopyala"
+                                            >
+                                                <Copy className="h-3.5 w-3.5" />
+                                                Kopyala
+                                            </Button>
+                                        </div>
+                                    </div>
+
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
                                             <Label htmlFor="firstName">Ad</Label>

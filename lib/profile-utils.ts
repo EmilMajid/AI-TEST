@@ -122,3 +122,40 @@ export function getDashboardPath(accountType?: string): string {
     }
     return '/dashboard'
 }
+
+/**
+ * Generate or retrieve meaningful unique student/user ID
+ * Example: @gunay.rzayeva.161
+ */
+export function getUserUniqueId(user?: Partial<UserData> | null): string {
+    if (!user) return "@id"
+    if ((user as any).uniqueId) return (user as any).uniqueId
+
+    const norm = (s: string) =>
+        (s || "")
+            .normalize("NFKD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+            .replace(/i̇/g, "i")
+            .replace(/ı/g, "i")
+            .replace(/ğ/g, "g")
+            .replace(/ö/g, "o")
+            .replace(/ü/g, "u")
+            .replace(/ş/g, "s")
+            .replace(/ç/g, "c")
+            .replace(/ə/g, "e")
+            .replace(/[^a-z0-9]/g, "")
+
+    const first = norm(user.firstName || "")
+    const last = norm(user.lastName || "")
+    const schoolNum = String(user.school || "").match(/\d+/)?.[0] || ""
+    const classNum = String(user.class || "").match(/\d+/)?.[0] || ""
+
+    const parts = [first, last].filter(Boolean)
+    if (schoolNum) parts.push(schoolNum)
+    else if (classNum) parts.push(classNum)
+    else if (user.id) parts.push(String(user.id).slice(-3))
+
+    const base = parts.join(".")
+    return base ? `@${base}` : `@user.${user.id || "1"}`
+}

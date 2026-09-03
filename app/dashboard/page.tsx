@@ -10,7 +10,7 @@ import { MainLayout } from "@/components/main-layout"
 import { ProfileAvatar } from "@/components/profile-avatar"
 import { regionSymbols } from "@/lib/region-symbols"
 import { subjectsByClass, getTextbooks, type Textbook } from "@/lib/education-data"
-import { logout, type UserData } from "@/lib/profile-utils"
+import { logout, getUserUniqueId, type UserData } from "@/lib/profile-utils"
 import { User, LogOut, Mail, LayoutDashboard, BookOpen, FileText } from "lucide-react"
 import Link from "next/link"
 import { MessagesTab } from "@/components/messages-tab"
@@ -221,13 +221,18 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            <div className="mt-4 md:mt-0 flex gap-3">
-              <Link href="/profile">
-                <Button variant="outline" className="gap-2">
-                  <User className="h-4 w-4" />
-                  Profil
-                </Button>
-              </Link>
+            <div className="mt-4 md:mt-0 flex items-start gap-3">
+              <div className="flex flex-col items-center">
+                <Link href="/profile">
+                  <Button variant="outline" className="gap-2">
+                    <User className="h-4 w-4" />
+                    Profil
+                  </Button>
+                </Link>
+                <span className="text-[11px] font-mono font-bold text-primary mt-1 px-2 py-0.5 bg-primary/10 rounded-md border border-primary/20 tracking-tight select-all" title="Sizin Şəxsi ID Kodunuz">
+                  {getUserUniqueId(userData)}
+                </span>
+              </div>
               <Button
                 variant={currentView === 'messages' ? 'default' : 'outline'}
                 className="gap-2"
