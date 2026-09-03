@@ -16,19 +16,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
+  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-1166444768651699"
 
   return (
     <html lang="az">
       <head>
-        {adsenseId && (
-          <Script
-            id="adsbygoogle-init"
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-          />
-        )}
+        <meta name="google-adsense-account" content="ca-pub-1166444768651699" />
+        <Script
+          id="adsbygoogle-init"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+        />
       </head>
       <body>
         {children}
