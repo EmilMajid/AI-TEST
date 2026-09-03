@@ -2,7 +2,16 @@
 # Exclude heavy local scraper cache, textbooks, training data, and scripts
 public/textbooks
 scripts
-data
+data/*.bak*
+data/*.backup*
+data/poppler
+data/tessdata
+data/vector_index
+data/*.jsonl*
+data/offline_tests*.bak*
+data/offline_tests_backup*
+data/offline_tests_github*
+data/offline_tests_HEAD*
 temp
 *.pdf
 *.traineddata
