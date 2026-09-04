@@ -21,6 +21,60 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { studentEmail, relationshipType, studentDetails, parentId: reqParentId, parentEmail: reqParentEmail, password: reqPassword } = body
 
+    if (body.action === "sync") {
+      const { parentId, parentEmail, links } = body
+      const syncedLinks: StudentLink[] = []
+      if (Array.isArray(links)) {
+        for (const l of links) {
+          if (!l) continue
+          const sId = l.studentId || l.id
+          const sNameParts = (l.studentName || `${l.firstName || ''} ${l.lastName || ''}`).trim().split(" ")
+          const sFirstName = l.firstName || sNameParts[0] || "Şagird"
+          const sLastName = l.lastName || sNameParts.slice(1).join(" ") || "İstifadəçi"
+          const sClass = l.class || l.studentClass || "5"
+          const sSchool = l.school || l.studentSchool || "161 saylı məktəb"
+          const sEmail = l.studentEmail || l.email || `${sFirstName.toLowerCase()}.${sLastName.toLowerCase()}@testai.az`
+
+          saveUser({
+            id: sId,
+            firstName: sFirstName,
+            lastName: sLastName,
+            fatherName: l.fatherName || "",
+            school: sSchool,
+            class: sClass,
+            email: sEmail,
+            accountType: "student",
+            role: "student",
+            parentId: parentId || l.parentId,
+            parentEmail: parentEmail || l.parentEmail,
+          })
+
+          const linkObj: StudentLink = {
+            id: l.id || Date.now(),
+            parentId: parentId || l.parentId || "parent-1",
+            parentEmail: parentEmail || l.parentEmail,
+            studentId: sId,
+            relationshipType: l.relationshipType || "parent",
+            status: "active",
+            linkedAt: l.linkedAt || new Date().toISOString(),
+            student: {
+              id: sId,
+              firstName: sFirstName,
+              lastName: sLastName,
+              fatherName: l.fatherName || "",
+              email: sEmail,
+              uniqueId: l.uniqueId || getUserUniqueId({ firstName: sFirstName, lastName: sLastName, school: sSchool, class: sClass }),
+              class: sClass,
+              school: sSchool,
+            },
+          }
+          saveLink(linkObj)
+          syncedLinks.push(linkObj)
+        }
+      }
+      return NextResponse.json({ success: true, message: "Sinxronizasiya tamamlandı", count: syncedLinks.length })
+    }
+
     if (!relationshipType) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, "relationshipType tələb olunur", 400)
     }

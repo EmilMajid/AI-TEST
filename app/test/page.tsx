@@ -227,6 +227,57 @@ export default function TestPage() {
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
 
+      let parentEmail = (currentUser as any)?.parentEmail || ""
+      let parentId = (currentUser as any)?.parentId || ""
+
+      if (!parentEmail) {
+        try {
+          const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
+          const myLink = allLinks.find((l: any) =>
+            String(l.studentId) === String(currentUser?.id) ||
+            (currentUser?.email && l.student?.email?.toLowerCase() === currentUser.email.toLowerCase())
+          )
+          if (myLink?.parentEmail) {
+            parentEmail = myLink.parentEmail
+            parentId = myLink.parentId || parentId
+          }
+        } catch (e) {}
+      }
+
+      if (!parentEmail) {
+        try {
+          const regUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+          const me = regUsers.find((u: any) =>
+            String(u.id) === String(currentUser?.id) ||
+            (currentUser?.email && u.email?.toLowerCase() === currentUser.email.toLowerCase())
+          )
+          if (me?.parentEmail) {
+            parentEmail = me.parentEmail
+            parentId = me.parentId || parentId
+          }
+        } catch (e) {}
+      }
+
+      // Cache student result locally for instant parent dashboard display
+      try {
+        const studentKey = `student_test_results_${currentUser?.id || "student"}`
+        const prevRes = JSON.parse(localStorage.getItem(studentKey) || "[]")
+        prevRes.unshift({
+          ...resultsPageFormat,
+          id: `res-${Date.now()}`,
+          studentId: currentUser?.id,
+          textbook: testConfig?.textbook || "",
+          topic: testConfig?.topic || "",
+          class: testConfig?.class || "",
+          score,
+          correctAnswers,
+          totalQuestions: questions.length,
+          timeSpent,
+          completedAt: resultsPageFormat.completedAt,
+        })
+        localStorage.setItem(studentKey, JSON.stringify(prevRes.slice(0, 50)))
+      } catch (e) {}
+
       fetch("/api/save-test-result", {
         method: "POST",
         headers: {
@@ -237,6 +288,8 @@ export default function TestPage() {
           studentId: currentUser?.id,
           studentEmail: currentUser?.email,
           studentName: currentUser ? `${currentUser.firstName || ""} ${currentUser.lastName || ""}`.trim() : "Şagird",
+          parentId,
+          parentEmail,
           textbook: testConfig?.textbook || "",
           topic: testConfig?.topic || "",
           class: testConfig?.class || "",

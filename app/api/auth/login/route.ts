@@ -166,6 +166,8 @@ export async function POST(request: NextRequest) {
             role: user.role || user.accountType,
             region: user.region || "Bakı",
             uniqueId: getUserUniqueId(user),
+            parentId: user.parentId,
+            parentEmail: user.parentEmail,
           },
           session: {
             access_token: token,

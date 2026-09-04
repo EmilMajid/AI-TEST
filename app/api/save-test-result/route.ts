@@ -64,8 +64,8 @@ export async function POST(request: NextRequest) {
             (studentEmail && l.student.email?.toLowerCase() === studentEmail.toLowerCase()))
       )
 
-      let parentEmailToNotify = link?.parentEmail || ""
-      let parentName = "Valideyn"
+      let parentEmailToNotify = (body.parentEmail || link?.parentEmail || "").trim()
+      let parentName = body.parentName || "Valideyn"
 
       // If link has parentId, find user
       if (link?.parentId) {
