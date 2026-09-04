@@ -4,6 +4,8 @@ import { createClient } from "@/lib/supabase/server"
 import { userRegistrationSchema, parentRegistrationSchema } from "@/lib/validations"
 import { generateAccessToken } from "@/lib/jwt"
 import { MOCK_USERS } from "@/lib/mock-data"
+import { getUserUniqueId } from "@/lib/profile-utils"
+import { saveUser } from "@/lib/user-store"
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,7 +20,18 @@ export async function POST(request: NextRequest) {
     const isDemoMode = true
 
     if (isDemoMode) {
-      console.log("[Registration] Registering user:", validatedData.email, accountType)
+      // Generate or use email
+      let effectiveEmail = (validatedData.email || "").trim()
+      if (!effectiveEmail) {
+        const uId = getUserUniqueId({
+          firstName: validatedData.firstName,
+          lastName: validatedData.lastName,
+          school: validatedData.school || "mekteb"
+        }).replace("@", "")
+        effectiveEmail = `${uId}@testai.az`
+      }
+
+      console.log("[Registration] Registering user:", effectiveEmail, accountType)
 
       // Generate consistent ID
       const mockId = Date.now()
@@ -26,15 +39,15 @@ export async function POST(request: NextRequest) {
       // Generate valid JWT
       const token = generateAccessToken({
         id: mockId,
-        email: validatedData.email,
+        email: effectiveEmail,
         accountType: accountType,
         role: accountType === "student" ? undefined : (validatedData as any).role || "parent"
       })
 
-      // Add to in-memory MOCK_USERS so user can immediately login with email or unique ID
-      MOCK_USERS.push({
+      // Add to persistent user store so user can immediately login across all sessions
+      const newUser = {
         id: String(mockId),
-        email: validatedData.email,
+        email: effectiveEmail,
         password: validatedData.password,
         accountType: accountType,
         firstName: validatedData.firstName,
@@ -44,7 +57,8 @@ export async function POST(request: NextRequest) {
         class: (validatedData as any).class || "",
         region: validatedData.region || "Bakı",
         role: accountType === "student" ? "student" : ((validatedData as any).role || "parent")
-      })
+      }
+      saveUser(newUser)
 
       return NextResponse.json(
         {
@@ -52,7 +66,7 @@ export async function POST(request: NextRequest) {
           message: "İstifadəçi uğurla qeydiyyatdan keçdi",
           user: {
             id: mockId,
-            email: validatedData.email,
+            email: effectiveEmail,
             accountType: accountType,
             firstName: validatedData.firstName,
             lastName: validatedData.lastName,
@@ -70,7 +84,7 @@ export async function POST(request: NextRequest) {
             token_type: "bearer",
             user: {
               id: mockId,
-              email: validatedData.email,
+              email: effectiveEmail,
             }
           }
         },

@@ -70,6 +70,23 @@ export default function LoginPage() {
     setError("")
 
     try {
+      // Check if user is known in local storage
+      let clientUser = null
+      try {
+        const cleanInput = formData.email.trim().toLowerCase()
+        const storedUserData = localStorage.getItem("userData")
+        if (storedUserData) {
+          const parsed = JSON.parse(storedUserData)
+          if (parsed.email?.toLowerCase() === cleanInput) {
+            clientUser = parsed
+          }
+        }
+        if (!clientUser) {
+          const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+          clientUser = registeredUsers.find((u: any) => u.email?.toLowerCase() === cleanInput)
+        }
+      } catch (e) {}
+
       // Lookup users by email and role
       const response = await fetch("/api/auth/login", {
         method: "POST",
@@ -78,6 +95,7 @@ export default function LoginPage() {
           action: "lookup",
           email: formData.email,
           role: formData.role,
+          clientUser,
         }),
       })
 
@@ -129,6 +147,22 @@ export default function LoginPage() {
     console.log("Starting login attempt...")
 
     try {
+      let clientUser = null
+      try {
+        const cleanInput = formData.email.trim().toLowerCase()
+        const storedUserData = localStorage.getItem("userData")
+        if (storedUserData) {
+          const parsed = JSON.parse(storedUserData)
+          if (parsed.email?.toLowerCase() === cleanInput) {
+            clientUser = parsed
+          }
+        }
+        if (!clientUser) {
+          const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+          clientUser = registeredUsers.find((u: any) => u.email?.toLowerCase() === cleanInput)
+        }
+      } catch (e) {}
+
       const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -138,6 +172,7 @@ export default function LoginPage() {
           password: formData.password,
           userId: formData.userId,
           role: formData.role,
+          clientUser,
         }),
       })
 

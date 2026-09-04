@@ -308,10 +308,10 @@ export default function ParentDashboard() {
   }
 
   const handleAddStudent = async () => {
-    if (!studentFormData.email.trim() || !studentFormData.firstName.trim() || !studentFormData.lastName.trim()) {
+    if (!studentFormData.firstName.trim() || !studentFormData.lastName.trim()) {
       toast({
         title: "Xəta",
-        description: "Zəhmət olmasa vacib sahələri doldurun",
+        description: "Zəhmət olmasa şagirdin ad və soyadını daxil edin",
         variant: "destructive",
       })
       return
@@ -623,14 +623,16 @@ export default function ParentDashboard() {
                           </div>
 
                           <div className="space-y-2">
-                            <Label htmlFor="email">Email *</Label>
+                            <Label htmlFor="email">Email və ya Unikal ID (Könüllü)</Label>
                             <Input
                               id="email"
-                              type="email"
                               value={studentFormData.email}
                               onChange={(e) => setStudentFormData({ ...studentFormData, email: e.target.value })}
-                              placeholder="student@example.com"
+                              placeholder="@murad.mecidov.161 və ya boş saxlaya bilərsiniz"
                             />
+                            <p className="text-xs text-gray-500">
+                              💡 Şagirdin e-maili yoxdursa, Unikal ID-sini qeyd edə bilərsiniz və ya sadəcə ad/soyadı ilə əlavə edə bilərsiniz.
+                            </p>
                           </div>
 
                           <div className="flex gap-3 pt-2">

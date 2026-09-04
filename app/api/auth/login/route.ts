@@ -11,6 +11,7 @@ const loginSchema = z.object({
 })
 
 import { MOCK_USERS } from "@/lib/mock-data"
+import { getAllUsers, saveUser, findUsers, StoredUser } from "@/lib/user-store"
 
 export async function POST(request: NextRequest) {
   try {
@@ -50,38 +51,68 @@ export async function POST(request: NextRequest) {
     }
 
     if (isDemoMode && !shouldTryRealAuth) {
-      // Mock Data for test users
-      const mockUsers = MOCK_USERS
-      const { action, email, password, role, userId } = body;
+      const { action, email, password, role, userId, clientUser } = body;
 
-      console.log(`[Mock Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
+      // If client supplied user data from browser storage, save it immediately
+      if (clientUser && clientUser.email) {
+        saveUser(clientUser);
+      }
+
+      console.log(`[Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
+
+      // Helper to generate a respectable name from email if needed
+      const parseNameFromEmail = (rawEmail: string) => {
+        const username = rawEmail.split('@')[0].replace(/[0-9]/g, '');
+        const parts = username.split(/[._-]/).filter(Boolean);
+        if (parts.length >= 2) {
+          const last = parts[parts.length - 1];
+          const first = parts.slice(0, -1).map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
+          return {
+            firstName: first,
+            lastName: last.charAt(0).toUpperCase() + last.slice(1)
+          };
+        } else if (parts.length === 1) {
+          return {
+            firstName: parts[0].charAt(0).toUpperCase() + parts[0].slice(1),
+            lastName: "İstifadəçi"
+          };
+        }
+        return { firstName: "İstifadəçi", lastName: "" };
+      };
 
       // ACTION: LOOKUP
       if (action === "lookup") {
-        const cleanInput = (email || "").trim().toLowerCase();
-        const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
+        let foundUsers = findUsers({ emailOrId: email, role });
 
-        let foundUsers = mockUsers.filter(u => {
-          const emailMatch = u.email && u.email.toLowerCase() === cleanInput;
-          const userUid = getUserUniqueId(u).toLowerCase();
-          const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "");
-          return emailMatch || idMatch;
-        });
-
-        if (role) {
-          foundUsers = foundUsers.filter(u => u.accountType === role);
-        }
-
-        // If no users found in mock list, but it's a generic demo login, create a dummy one
+        // If no users found, create and persist an account with proper role and name
         if (foundUsers.length === 0 && isDemoMode) {
+          const parsedName = parseNameFromEmail(email || "");
+          const effectiveRole = role || "parent";
+          
+          const autoUser: StoredUser = {
+            id: "user-" + Date.now(),
+            firstName: parsedName.firstName,
+            lastName: parsedName.lastName,
+            fatherName: "",
+            school: effectiveRole === "student" ? "161 saylı məktəb" : "Bakı şəhəri",
+            class: effectiveRole === "student" ? "8" : undefined,
+            region: "Bakı",
+            accountType: effectiveRole,
+            role: effectiveRole,
+            email: email
+          };
+          saveUser(autoUser);
+
           return NextResponse.json({
             success: true,
             users: [{
-              id: "demo-" + Date.now(),
-              firstName: "Demo",
-              lastName: "İstifadəçi",
-              accountType: role || "student",
-              email: email
+              id: autoUser.id,
+              firstName: autoUser.firstName,
+              lastName: autoUser.lastName,
+              accountType: autoUser.accountType,
+              role: autoUser.role,
+              email: autoUser.email,
+              school: autoUser.school
             }]
           });
         }
@@ -94,6 +125,7 @@ export async function POST(request: NextRequest) {
             lastName: u.lastName,
             fatherName: u.fatherName,
             accountType: u.accountType,
+            role: u.role || u.accountType,
             school: u.school,
             class: u.class,
             region: u.region,
@@ -104,45 +136,41 @@ export async function POST(request: NextRequest) {
 
       // ACTION: LOGIN
       if (action === "login") {
-        let user;
+        const users = getAllUsers();
+        const cleanInput = (email || "").trim().toLowerCase();
+        const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
+
+        let user = null;
 
         if (userId) {
-          console.log(`[Mock Auth] Looking for userId: ${userId}`);
-          user = mockUsers.find(u => String(u.id) === String(userId));
-
-          if (user && user.password !== password && password !== "test12345" && password !== "test123") {
-            console.log(`[Mock Auth] Password mismatch for ${userId}. Expected: ${user.password}, Got: ${password}. But allowing anyway in demo.`);
-          }
-        } else {
-          // Fallback for direct login (match email or Unikal ID)
-          const cleanInput = (email || "").trim().toLowerCase();
-          const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
-          user = mockUsers.find(u => {
-            const emailMatch = u.email && u.email.toLowerCase() === cleanInput;
-            const userUid = getUserUniqueId(u).toLowerCase();
-            const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "");
-            return emailMatch || idMatch;
-          });
-          if (user && user.password !== password && password !== "test12345" && password !== "test123") {
-            console.log(`[Mock Auth] Password mismatch for ${email}. But allowing anyway in demo.`);
-          }
+          user = users.find(u => String(u.id) === String(userId));
+        }
+        if (!user && cleanInput) {
+          user = users.find(u => u.email && u.email.toLowerCase() === cleanInput) ||
+                 users.find(u => {
+                   const uId = getUserUniqueId(u).toLowerCase();
+                   return uId === cleanId || uId.replace("@", "") === cleanInput.replace("@", "");
+                 });
         }
 
-        // Generic demo user fallback
-        if (!user && isDemoMode && password) {
-          const fallbackRole = role || "student"
-          const isStudent = fallbackRole === "student"
-
-          user = {
-            id: "demo-user-" + Date.now(),
-            email: email,
-            accountType: fallbackRole,
-            firstName: "Demo",
-            lastName: "İstifadəçi",
-            school: "Demo Məktəb",
-            class: isStudent ? (email.includes("8") ? "8" : "11") : undefined,
-            role: fallbackRole,
-            region: "Bakı", // Valid default to prevent modal
+        // If user not found, check clientUser or create an account with proper role and parsed name
+        if (!user && isDemoMode) {
+          if (clientUser && clientUser.email) {
+            user = saveUser(clientUser);
+          } else {
+            const parsedName = parseNameFromEmail(email || "");
+            const effectiveRole = role || "parent";
+            user = saveUser({
+              id: "user-" + Date.now(),
+              email: email,
+              accountType: effectiveRole,
+              role: effectiveRole,
+              firstName: parsedName.firstName,
+              lastName: parsedName.lastName,
+              school: effectiveRole === "student" ? "161 saylı məktəb" : "Bakı şəhəri",
+              class: effectiveRole === "student" ? "8" : undefined,
+              region: "Bakı",
+            });
           }
         }
 
@@ -150,39 +178,41 @@ export async function POST(request: NextRequest) {
           return NextResponse.json({ error: "Şifrə yanlışdır" }, { status: 401 });
         }
 
-        // Generate valid JWT for demo
+        // Generate valid JWT
+        const numericId = typeof user.id === "number" ? user.id : (Number(String(user.id).replace(/\D/g, '')) || Date.now());
         const token = generateAccessToken({
-          id: Number(user.id.replace(/\D/g, '')) || 123, // Mock ID as number
+          id: numericId,
           email: user.email,
           accountType: user.accountType,
           role: user.role || undefined
-        })
+        });
 
         return NextResponse.json({
           success: true,
-          message: "Demo rejimində uğurlu giriş",
+          message: "Uğurlu giriş",
           user: {
             id: user.id,
             email: user.email,
             accountType: user.accountType,
             firstName: user.firstName,
             lastName: user.lastName,
+            fatherName: user.fatherName,
             school: user.school,
             class: user.class,
-            role: user.role,
-            region: user.region,
+            role: user.role || user.accountType,
+            region: user.region || "Bakı",
           },
           session: {
             access_token: token,
             refresh_token: "demo-refresh-token",
-            expires_in: 3600,
+            expires_in: 3600 * 24 * 7,
             token_type: "bearer",
             user: {
               id: user.id,
               email: user.email,
             }
           },
-        })
+        });
       }
 
       return NextResponse.json({ error: "Yanlış sorğu" }, { status: 400 });

@@ -40,10 +40,12 @@ export const userRegistrationSchema = z
 
     email: z
       .string()
-      .email("Düzgün email ünvanı daxil edin")
-      .min(5, "Email ən azı 5 simvol olmalıdır")
-      .max(100, "Email 100 simvoldan çox ola bilməz")
-      .transform((val) => val.toLowerCase().trim()), // normalize email
+      .optional()
+      .or(z.literal(""))
+      .refine((val) => !val || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val), {
+        message: "Düzgün email ünvanı daxil edin",
+      })
+      .transform((val) => (val ? val.toLowerCase().trim() : "")),
 
     password: z
       .string()

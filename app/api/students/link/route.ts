@@ -3,6 +3,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import { requireAuth, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
 import { MOCK_USERS } from "@/lib/mock-data"
+import { getUserUniqueId } from "@/lib/profile-utils"
 
 // Mock storage for demo mode
 let mockLinks: any[] = [
@@ -50,30 +51,55 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { studentEmail, relationshipType, studentDetails } = body
 
-    if (!studentEmail || !relationshipType) {
-      throw new AppError(ErrorCode.VALIDATION_ERROR, "studentEmail və relationshipType tələb olunur", 400)
+    if (!relationshipType) {
+      throw new AppError(ErrorCode.VALIDATION_ERROR, "relationshipType tələb olunur", 400)
     }
 
     if (isDemoMode) {
-      // Find the user in MOCK_USERS by email to get their real string ID
-      const user = MOCK_USERS.find(u => u.email.toLowerCase() === auth.user.email.toLowerCase());
-      const effectiveId = user ? user.id : auth.user.id;
+      // Find the user in MOCK_USERS by email or id
+      const user = MOCK_USERS.find(u => (u.email && auth.user?.email && u.email.toLowerCase() === auth.user.email.toLowerCase()) || String(u.id) === String(auth.user?.id));
+      const effectiveId = user ? user.id : (auth.user?.id || "parent-1");
+
+      const rawEmailOrId = (studentEmail || "").trim();
+      const cleanId = rawEmailOrId.startsWith("@") ? rawEmailOrId : `@${rawEmailOrId}`;
+
+      // Try to find an existing student in MOCK_USERS by email, unique ID, or name
+      const matchedStudent = MOCK_USERS.find(u => {
+        if (u.accountType !== "student") return false;
+        if (rawEmailOrId && u.email && u.email.toLowerCase() === rawEmailOrId.toLowerCase()) return true;
+        const uId = getUserUniqueId(u).toLowerCase();
+        if (rawEmailOrId && (uId === cleanId.toLowerCase() || uId.replace("@", "") === rawEmailOrId.toLowerCase())) return true;
+        if (studentDetails?.firstName && studentDetails?.lastName) {
+          return u.firstName.toLowerCase() === studentDetails.firstName.toLowerCase() &&
+                 u.lastName.toLowerCase() === studentDetails.lastName.toLowerCase();
+        }
+        return false;
+      });
+
+      const sFirstName = matchedStudent ? matchedStudent.firstName : (studentDetails?.firstName || "Şagird");
+      const sLastName = matchedStudent ? matchedStudent.lastName : (studentDetails?.lastName || "İstifadəçi");
+      const sSchool = matchedStudent?.school || studentDetails?.school || "161 saylı məktəb";
+      const sClass = matchedStudent?.class || studentDetails?.class || "5";
+      const sUniqueId = getUserUniqueId({ firstName: sFirstName, lastName: sLastName, school: sSchool });
+      const sEmail = matchedStudent?.email || (rawEmailOrId.includes("@") && rawEmailOrId.includes(".") ? rawEmailOrId : `${sUniqueId.replace("@", "")}@testai.az`);
+      const sId = matchedStudent ? matchedStudent.id : `student-${Date.now()}`;
 
       // Mock logic for demo mode
       const newLink = {
         id: Date.now(),
         parentId: effectiveId,
-        studentId: 101, // Mock student ID
+        studentId: sId,
         relationshipType,
         status: "active",
         linkedAt: new Date().toISOString(),
         student: {
-          id: 101,
-          firstName: studentDetails?.firstName || "Yeni",
-          lastName: studentDetails?.lastName || "Şagird",
-          email: studentEmail,
-          class: "5", // Default class for new demo students
-          school: studentDetails?.school || "Bakı Avropa Liseyi"
+          id: sId,
+          firstName: sFirstName,
+          lastName: sLastName,
+          email: sEmail,
+          uniqueId: sUniqueId,
+          class: sClass,
+          school: sSchool
         }
       }
       mockLinks.push(newLink)
@@ -81,12 +107,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: true,
-          message: "Sorğu göndərildi (Demo rejimdə avtomatik təsdiqləndi)",
+          message: "Şagird uğurla əlavə edildi",
           link: {
             id: newLink.id,
-            studentName: `${newLink.student.firstName} ${newLink.student.lastName}`,
-            studentEmail: newLink.student.email,
-            studentClass: newLink.student.class,
+            studentName: `${sFirstName} ${sLastName}`,
+            studentEmail: sEmail,
+            studentClass: sClass,
             linkedAt: newLink.linkedAt,
           },
         },

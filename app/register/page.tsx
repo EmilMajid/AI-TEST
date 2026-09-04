@@ -162,23 +162,31 @@ export default function RegisterPage() {
         description: "Şagird hesabınız yaradıldı. İndi giriş edə bilərsiniz.",
       })
 
-      localStorage.setItem(
-        "userData",
-        JSON.stringify({
-          id: result.user.id,
-          accountType: "student",
-          firstName: data.firstName,
-          lastName: data.lastName,
-          fatherName: data.fatherName,
-          region: data.region,
-          subRegion: selectedSubRegion,
-          fullLocation: submissionData.fullLocation,
-          school: data.school,
-          class: data.class,
-          email: data.email,
-          theme: theme.colorScheme,
-        }),
-      )
+      const studentProfile = {
+        id: result.user.id,
+        accountType: "student",
+        role: "student",
+        firstName: data.firstName,
+        lastName: data.lastName,
+        fatherName: data.fatherName,
+        region: data.region,
+        subRegion: selectedSubRegion,
+        fullLocation: submissionData.fullLocation,
+        school: data.school,
+        class: data.class,
+        email: result.user.email || data.email,
+        theme: theme.colorScheme,
+      }
+
+      localStorage.setItem("userData", JSON.stringify(studentProfile))
+      localStorage.setItem("user", JSON.stringify(studentProfile))
+
+      try {
+        const existingUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+        const filtered = existingUsers.filter((u: any) => u.email?.toLowerCase() !== studentProfile.email.toLowerCase())
+        filtered.push(studentProfile)
+        localStorage.setItem("registeredUsers", JSON.stringify(filtered))
+      } catch (e) {}
 
       if (result.session) {
         localStorage.setItem("session", JSON.stringify(result.session))
@@ -234,24 +242,31 @@ export default function RegisterPage() {
         description: `${roles.find((r) => r.value === data.role)?.label} hesabınız yaradıldı. İndi giriş edə bilərsiniz.`,
       })
 
-      localStorage.setItem(
-        "userData",
-        JSON.stringify({
-          id: result.user.id,
-          accountType: "parent",
-          role: data.role,
-          firstName: data.firstName,
-          lastName: data.lastName,
-          fatherName: data.fatherName,
-          region: data.region,
-          subRegion: selectedSubRegion,
-          fullLocation: submissionData.fullLocation,
-          school: data.school,
-          email: data.email,
-          theme: theme.colorScheme,
-          linkedStudents: [],
-        }),
-      )
+      const parentProfile = {
+        id: result.user.id,
+        accountType: "parent",
+        role: data.role || "parent",
+        firstName: data.firstName,
+        lastName: data.lastName,
+        fatherName: data.fatherName,
+        region: data.region,
+        subRegion: selectedSubRegion,
+        fullLocation: submissionData.fullLocation,
+        school: data.school,
+        email: result.user.email || data.email,
+        theme: theme.colorScheme,
+        linkedStudents: [],
+      }
+
+      localStorage.setItem("userData", JSON.stringify(parentProfile))
+      localStorage.setItem("user", JSON.stringify(parentProfile))
+
+      try {
+        const existingUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+        const filtered = existingUsers.filter((u: any) => u.email?.toLowerCase() !== parentProfile.email.toLowerCase())
+        filtered.push(parentProfile)
+        localStorage.setItem("registeredUsers", JSON.stringify(filtered))
+      } catch (e) {}
 
       if (result.session) {
         localStorage.setItem("session", JSON.stringify(result.session))
@@ -564,14 +579,17 @@ export default function RegisterPage() {
 
                         {/* Account Information */}
                         <div>
-                          <Label htmlFor="email">E-mail *</Label>
+                          <Label htmlFor="email">E-mail (Könüllü / Valideyn e-maili)</Label>
                           <Input
                             id="email"
                             type="email"
                             {...studentForm.register("email")}
-                            placeholder="E-mail ünvanınızı daxil edin"
+                            placeholder="E-mail və ya boş buraxa bilərsiniz"
                             className={studentForm.formState.errors.email ? "border-red-500" : ""}
                           />
+                          <p className="text-xs text-gray-500 mt-1">
+                            💡 Şagirdin şəxsi e-maili yoxdursa boş saxlaya bilərsiniz. Şagird təyin ediləcək Unikal ID ilə sayta daxil ola biləcək.
+                          </p>
                           {studentForm.formState.errors.email && (
                             <p className="text-red-500 text-sm mt-1">{studentForm.formState.errors.email.message}</p>
                           )}
