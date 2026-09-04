@@ -82,24 +82,6 @@ export async function POST(request: NextRequest) {
 
       // ACTION: LOOKUP
       if (action === "lookup") {
-        const cleanLookupEmail = (email || "").trim().toLowerCase();
-        if (cleanLookupEmail === "r.h.rzayev@gmail.com") {
-          return NextResponse.json({
-            success: true,
-            users: [{
-              id: "parent-rzayev",
-              firstName: "R.",
-              lastName: "Rzayev",
-              fatherName: "H.",
-              accountType: "parent",
-              role: "parent",
-              email: "r.h.rzayev@gmail.com",
-              school: "161 saylı məktəb",
-              region: "Bakı",
-            }],
-          });
-        }
-
         let foundUsers = findUsers({ emailOrId: email, role });
 
         // If no users found, create and persist an account with proper role and name
@@ -160,22 +142,7 @@ export async function POST(request: NextRequest) {
 
         let user = null;
 
-        if (cleanInput === "r.h.rzayev@gmail.com" || userId === "parent-rzayev") {
-          user = {
-            id: "parent-rzayev",
-            email: "r.h.rzayev@gmail.com",
-            accountType: "parent",
-            role: "parent",
-            firstName: "R.",
-            lastName: "Rzayev",
-            fatherName: "H.",
-            school: "161 saylı məktəb",
-            region: "Bakı",
-          };
-          saveUser(user);
-        }
-
-        if (!user && userId) {
+        if (userId) {
           user = users.find(u => String(u.id) === String(userId));
         }
         if (!user && cleanInput) {

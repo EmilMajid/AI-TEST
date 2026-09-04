@@ -27,7 +27,13 @@ function loadFromDisk(): StoredUser[] {
   try {
     if (fs.existsSync(TMP_FILE)) {
       const data = fs.readFileSync(TMP_FILE, "utf-8")
-      return JSON.parse(data) || []
+      const parsed: StoredUser[] = JSON.parse(data) || []
+      // Purge any stale/incorrect r.h.rzayev@gmail.com data from disk so user can register fresh
+      const filtered = parsed.filter((u) => u.email?.toLowerCase() !== "r.h.rzayev@gmail.com" && u.id !== "parent-rzayev")
+      if (filtered.length !== parsed.length) {
+        saveToDisk(filtered)
+      }
+      return filtered
     }
   } catch (err) {
     // Ignore read errors
@@ -53,10 +59,10 @@ export function getAllUsers(): StoredUser[] {
     map.set(key, u as StoredUser)
   }
 
-  // 2. Disk users (ignore corrupted demo entries for real emails or r.h.rzayev)
+  // 2. Disk users (ignore corrupted demo entries)
   for (const u of diskUsers) {
     const key = (u.email || String(u.id)).toLowerCase()
-    if (key === "r.h.rzayev@gmail.com" || u.firstName === "Demo" || u.school?.includes("Demo")) {
+    if (u.firstName === "Demo" || u.school?.includes("Demo")) {
       continue
     }
     map.set(key, { ...map.get(key), ...u })
@@ -65,39 +71,16 @@ export function getAllUsers(): StoredUser[] {
   // 3. In-memory users
   for (const u of inMemoryUsers) {
     const key = (u.email || String(u.id)).toLowerCase()
-    if (key === "r.h.rzayev@gmail.com" || u.firstName === "Demo" || u.school?.includes("Demo")) {
+    if (u.firstName === "Demo" || u.school?.includes("Demo")) {
       continue
     }
     map.set(key, { ...map.get(key), ...u })
   }
 
-  // Permanent guarantee for r.h.rzayev@gmail.com
-  map.set("r.h.rzayev@gmail.com", {
-    id: "parent-rzayev",
-    email: "r.h.rzayev@gmail.com",
-    accountType: "parent",
-    role: "parent",
-    firstName: "R.",
-    lastName: "Rzayev",
-    fatherName: "H.",
-    school: "161 saylı məktəb",
-    region: "Bakı",
-  })
-
   return Array.from(map.values())
 }
 
 export function saveUser(user: StoredUser): StoredUser {
-  if (user.email?.toLowerCase() === "r.h.rzayev@gmail.com") {
-    user.id = "parent-rzayev"
-    user.accountType = "parent"
-    user.role = "parent"
-    user.firstName = "R."
-    user.lastName = "Rzayev"
-    user.fatherName = "H."
-    user.school = "161 saylı məktəb"
-  }
-
   const emailKey = (user.email || String(user.id)).toLowerCase()
 
   const existingIndex = inMemoryUsers.findIndex(
@@ -132,7 +115,7 @@ export function findUsers(query: { emailOrId?: string; role?: string }): StoredU
 
   let matches = users.filter((u) => {
     const emailMatch = u.email && u.email.toLowerCase() === cleanInput
-    const userUid = getUserUniqueId(u).toLowerCase()
+    const userUid = getUserUniqueId(u as any).toLowerCase()
     const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "")
     return emailMatch || idMatch
   })

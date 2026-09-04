@@ -187,16 +187,10 @@ export default function LoginPage() {
 
       // Store user data
       console.log("Login success, storing data and redirecting...")
-      const isParentRzayev = data.user?.email?.toLowerCase() === "r.h.rzayev@gmail.com" || formData.email?.toLowerCase() === "r.h.rzayev@gmail.com"
       const cleanedUser = {
         ...data.user,
-        accountType: isParentRzayev ? "parent" : (data.user.accountType || formData.role || "student"),
-        role: isParentRzayev ? "parent" : (data.user.role || data.user.accountType || formData.role || "student"),
-        firstName: isParentRzayev ? "R." : data.user.firstName,
-        lastName: isParentRzayev ? "Rzayev" : data.user.lastName,
-        fatherName: isParentRzayev ? "H." : data.user.fatherName,
-        school: isParentRzayev ? "161 saylı məktəb" : data.user.school,
-        id: isParentRzayev ? "parent-rzayev" : data.user.id,
+        accountType: data.user?.accountType || formData.role || "student",
+        role: data.user?.role || data.user?.accountType || formData.role || "student",
       }
 
       localStorage.setItem("user", JSON.stringify(cleanedUser))

@@ -39,22 +39,6 @@ let mockLinks: any[] = [
       class: "2",
       school: "161 saylı məktəb"
     }
-  },
-  {
-    id: 10,
-    parentId: "parent-rzayev",
-    studentId: "student-gunay",
-    relationshipType: "parent",
-    status: "active",
-    linkedAt: new Date().toISOString(),
-    student: {
-      id: "student-gunay",
-      firstName: "Günay",
-      lastName: "Rzayeva",
-      email: "gunay.rzayeva@test.com",
-      class: "7",
-      school: "161 saylı məktəb"
-    }
   }
 ]
 
@@ -221,13 +205,12 @@ export async function GET(request: NextRequest) {
           (u.email && auth.user?.email && u.email.toLowerCase() === auth.user.email.toLowerCase()) ||
           String(u.id) === String(auth.user?.id)
       );
-      const effectiveId = user ? user.id : (auth.user?.id || "parent-rzayev");
-      const isRzayev = effectiveId === "parent-rzayev" || auth.user?.email?.toLowerCase() === "r.h.rzayev@gmail.com";
+      const effectiveId = user ? user.id : (auth.user?.id || "parent-1");
 
       // Return mock links for demo
       // 1. Get explicit mock links
       const explicitLinks = mockLinks
-        .filter((l) => (l.parentId === effectiveId || (isRzayev && l.parentId === "parent-rzayev")) && l.status === "active")
+        .filter((l) => String(l.parentId) === String(effectiveId) && l.status === "active")
         .map((link) => ({
           id: link.id,
           studentId: link.student.id,
@@ -239,17 +222,17 @@ export async function GET(request: NextRequest) {
           linkedAt: link.linkedAt,
         }));
 
-      // 2. Get links from MOCK_USERS relations
+      // 2. Get links from user relations
       let relatedStudents: any[] = [];
 
-      if (user || isRzayev) {
-        const uRole = user?.role || "parent";
-        if (uRole === "parent" || isRzayev) {
-          relatedStudents = allUsers.filter((u) => (u as any).parentId === effectiveId || (isRzayev && (u as any).parentId === "parent-rzayev"));
+      if (user) {
+        const uRole = user.role || user.accountType || "parent";
+        if (uRole === "parent") {
+          relatedStudents = allUsers.filter((u) => String((u as any).parentId) === String(effectiveId));
         } else if (uRole === "teacher") {
-          relatedStudents = allUsers.filter((u) => (u as any).teacherId === effectiveId);
+          relatedStudents = allUsers.filter((u) => String((u as any).teacherId) === String(effectiveId));
         } else if (uRole === "director") {
-          relatedStudents = allUsers.filter((u) => (u as any).directorId === effectiveId || u.school === user?.school);
+          relatedStudents = allUsers.filter((u) => String((u as any).directorId) === String(effectiveId) || u.school === user.school);
         }
       }
 
@@ -258,8 +241,8 @@ export async function GET(request: NextRequest) {
         studentId: student.id,
         studentName: `${student.firstName} ${student.lastName}`,
         studentEmail: student.email,
-        studentClass: student.class || "7",
-        studentSchool: student.school || "161 saylı məktəb",
+        studentClass: student.class || "5",
+        studentSchool: student.school || "Məktəb",
         relationshipType: user?.role || "parent",
         linkedAt: new Date().toISOString(),
       }));
@@ -271,20 +254,6 @@ export async function GET(request: NextRequest) {
           allLinks.push(rl);
         }
       });
-
-      // Special guarantee for parent-rzayev: Günay Rzayeva
-      if (isRzayev && !allLinks.some((al) => al.studentId === "student-gunay")) {
-        allLinks.unshift({
-          id: 10,
-          studentId: "student-gunay",
-          studentName: "Günay Rzayeva",
-          studentEmail: "gunay.rzayeva@test.com",
-          studentClass: "7",
-          studentSchool: "161 saylı məktəb",
-          relationshipType: "parent",
-          linkedAt: new Date().toISOString(),
-        });
-      }
 
       return NextResponse.json({
         success: true,

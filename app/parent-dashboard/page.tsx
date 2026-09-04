@@ -188,21 +188,8 @@ export default function ParentDashboard() {
     const storedUserData = localStorage.getItem("userData") || localStorage.getItem("user")
     if (storedUserData) {
       const parsed = JSON.parse(storedUserData)
-      
-      // Auto-correct parent r.h.rzayev if stored with old student or demo flags
-      if (parsed.email?.toLowerCase() === "r.h.rzayev@gmail.com") {
-        parsed.accountType = "parent"
-        parsed.role = "parent"
-        parsed.firstName = "R."
-        parsed.lastName = "Rzayev"
-        parsed.fatherName = "H."
-        parsed.school = "161 saylı məktəb"
-        parsed.id = parsed.id || "parent-rzayev"
-        localStorage.setItem("userData", JSON.stringify(parsed))
-        localStorage.setItem("user", JSON.stringify(parsed))
-      }
 
-      if (parsed.accountType !== "parent" && parsed.accountType !== "teacher" && parsed.accountType !== "director" && parsed.email?.toLowerCase() !== "r.h.rzayev@gmail.com") {
+      if (parsed.accountType !== "parent" && parsed.accountType !== "teacher" && parsed.accountType !== "director") {
         router.push("/dashboard")
         return
       }
@@ -274,25 +261,14 @@ export default function ParentDashboard() {
 
       let links = data.success && data.links ? data.links : []
 
-      // Fallback for parent r.h.rzayev if no links returned
-      if (links.length === 0 && (String(parentId) === "parent-rzayev" || userEmail?.toLowerCase() === "r.h.rzayev@gmail.com")) {
-        links = [{
-          id: 10,
-          studentId: "student-gunay",
-          studentName: "Günay Rzayeva",
-          studentEmail: "gunay.rzayeva@test.com",
-          studentClass: "7",
-          studentSchool: "161 saylı məktəb",
-          relationshipType: "parent",
-          linkedAt: new Date().toISOString(),
-        }]
-      }
-
       setLinkedStudents(links)
       if (links.length > 0) {
         const firstStudentId = links[0].studentId
         setSelectedStudent(firstStudentId)
         loadStudentResults(firstStudentId, parentId, timeRange, userEmail)
+      } else {
+        setSelectedStudent(null)
+        setStudentStats(null)
       }
     } catch (error) {
       console.error("Load students error:", error)

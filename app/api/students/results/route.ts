@@ -103,7 +103,7 @@ export async function GET(request: NextRequest) {
     // Only import Prisma when not in demo mode
     const { prisma } = await import("@/lib/db")
 
-    const hasAccess = await checkParentStudentAccess(auth.user.id, studentIdNum)
+    const hasAccess = await checkParentStudentAccess(auth.user.id as any, studentIdNum)
     if (!hasAccess) {
       throw new AppError(ErrorCode.FORBIDDEN, "Bu şagirdə giriş icazəniz yoxdur", 403)
     }
@@ -139,7 +139,7 @@ export async function GET(request: NextRequest) {
       averageScore: stat._avg.score ? Math.round(stat._avg.score) : 0,
     }))
 
-    await logApiAccess(auth.user.id, "view_student_results", "test_result", request.ip)
+    await logApiAccess(auth.user.id as any, "view_student_results", "test_result", request.ip)
 
     return NextResponse.json({
       success: true,
@@ -187,7 +187,7 @@ export async function POST(request: NextRequest) {
     // Only import Prisma when not in demo mode
     const { prisma } = await import("@/lib/db")
 
-    const hasAccess = await checkParentStudentAccess(auth.user.id, studentId)
+    const hasAccess = await checkParentStudentAccess(auth.user.id as any, studentId)
     if (!hasAccess) {
       throw new AppError(ErrorCode.FORBIDDEN, "Bu şagirdə giriş icazəniz yoxdur", 403)
     }
@@ -223,7 +223,7 @@ export async function POST(request: NextRequest) {
       orderBy: { completedAt: "desc" },
     })
 
-    await logApiAccess(auth.user.id, "filter_student_results", "test_result", request.ip)
+    await logApiAccess(auth.user.id as any, "filter_student_results", "test_result", request.ip)
 
     return NextResponse.json({
       success: true,

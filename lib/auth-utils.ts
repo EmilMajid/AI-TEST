@@ -78,19 +78,6 @@ export async function getAuthContext(request: NextRequest): Promise<AuthContext 
           token: token || "demo-token",
         }
       }
-
-      // If specific parent email or id is known
-      if (email?.toLowerCase() === "r.h.rzayev@gmail.com" || parentId === "parent-rzayev") {
-        return {
-          user: {
-            id: "parent-rzayev",
-            email: "r.h.rzayev@gmail.com",
-            accountType: "parent",
-            role: "parent",
-          },
-          token: token || "demo-token",
-        }
-      }
     }
   } catch (err) {}
 
