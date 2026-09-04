@@ -4,7 +4,7 @@ import { requireAuth, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
 import { MOCK_USERS } from "@/lib/mock-data"
 import { getUserUniqueId } from "@/lib/profile-utils"
-import { getAllUsers } from "@/lib/user-store"
+import { getAllUsers, saveUser } from "@/lib/user-store"
 
 // Mock storage for demo mode
 let mockLinks: any[] = [
@@ -79,6 +79,7 @@ export async function POST(request: NextRequest) {
 
       const sFirstName = matchedStudent ? matchedStudent.firstName : (studentDetails?.firstName || "Şagird");
       const sLastName = matchedStudent ? matchedStudent.lastName : (studentDetails?.lastName || "İstifadəçi");
+      const sFatherName = matchedStudent?.fatherName || studentDetails?.fatherName || "";
       const sSchool = matchedStudent?.school || studentDetails?.school || "161 saylı məktəb";
       const sClass = matchedStudent?.class || studentDetails?.class || "5";
       const sUniqueId = getUserUniqueId({ firstName: sFirstName, lastName: sLastName, school: sSchool });
@@ -97,6 +98,7 @@ export async function POST(request: NextRequest) {
           id: sId,
           firstName: sFirstName,
           lastName: sLastName,
+          fatherName: sFatherName,
           email: sEmail,
           uniqueId: sUniqueId,
           class: sClass,
@@ -214,12 +216,17 @@ export async function GET(request: NextRequest) {
         .map((link) => ({
           id: link.id,
           studentId: link.student.id,
-          studentName: `${link.student.firstName} ${link.student.lastName}`,
+          studentName: `${link.student.firstName} ${link.student.lastName}`.trim(),
           studentEmail: link.student.email,
           studentClass: link.student.class,
           studentSchool: link.student.school,
           relationshipType: link.relationshipType,
           linkedAt: link.linkedAt,
+          firstName: link.student.firstName,
+          lastName: link.student.lastName,
+          fatherName: link.student.fatherName,
+          class: link.student.class,
+          school: link.student.school,
         }));
 
       // 2. Get links from user relations
@@ -239,12 +246,17 @@ export async function GET(request: NextRequest) {
       const relationLinks = relatedStudents.map((student) => ({
         id: `rel-${student.id}`,
         studentId: student.id,
-        studentName: `${student.firstName} ${student.lastName}`,
+        studentName: `${student.firstName} ${student.lastName}`.trim(),
         studentEmail: student.email,
         studentClass: student.class || "5",
         studentSchool: student.school || "Məktəb",
         relationshipType: user?.role || "parent",
         linkedAt: new Date().toISOString(),
+        firstName: student.firstName,
+        lastName: student.lastName,
+        fatherName: student.fatherName,
+        class: student.class || "5",
+        school: student.school || "Məktəb",
       }));
 
       // Merge and remove duplicates by studentId
@@ -362,6 +374,128 @@ export async function DELETE(request: NextRequest) {
     return NextResponse.json({
       success: true,
       message: "Şagird uğurla silindi",
+    })
+  } catch (error) {
+    return errorResponse(error)
+  }
+}
+
+export async function PUT(request: NextRequest) {
+  try {
+    const auth = await requireAuth(request)
+    let effectiveId = "parent-1"
+    if (!(auth instanceof NextResponse)) {
+      effectiveId = String(auth.user.id)
+    }
+
+    const body = await request.json()
+    const { linkId, studentId, parentId, firstName, lastName, fatherName, school, class: sClass, email } = body
+
+    if (!studentId && !linkId) {
+      throw new AppError(ErrorCode.VALIDATION_ERROR, "Şagird ID və ya Link ID tələb olunur", 400)
+    }
+
+    if (isDemoMode) {
+      const allUsers = getAllUsers()
+      const user = allUsers.find(
+        (u) =>
+          (auth && !(auth instanceof NextResponse) && u.email && auth.user?.email && u.email.toLowerCase() === auth.user.email.toLowerCase()) ||
+          String(u.id) === String(effectiveId)
+      )
+      const currentParentId = parentId || (user ? user.id : effectiveId)
+
+      // 1. Find target link in mockLinks
+      const linkIndex = mockLinks.findIndex(
+        (l) => (linkId && String(l.id) === String(linkId)) || (studentId && String(l.studentId) === String(studentId))
+      )
+
+      const targetStudentId = studentId || (linkIndex >= 0 ? mockLinks[linkIndex].studentId : `student-${Date.now()}`)
+
+      const updatedStudentData = {
+        id: targetStudentId,
+        firstName: firstName ? firstName.trim() : "",
+        lastName: lastName ? lastName.trim() : "",
+        fatherName: fatherName ? fatherName.trim() : "",
+        school: school ? school.trim() : "",
+        class: sClass ? String(sClass).trim() : "5",
+        email: email ? email.trim() : "",
+      }
+
+      if (linkIndex >= 0) {
+        mockLinks[linkIndex].student = {
+          ...mockLinks[linkIndex].student,
+          firstName: updatedStudentData.firstName || mockLinks[linkIndex].student.firstName,
+          lastName: updatedStudentData.lastName || mockLinks[linkIndex].student.lastName,
+          fatherName: updatedStudentData.fatherName !== undefined ? updatedStudentData.fatherName : mockLinks[linkIndex].student.fatherName,
+          school: updatedStudentData.school || mockLinks[linkIndex].student.school,
+          class: updatedStudentData.class || mockLinks[linkIndex].student.class,
+          email: updatedStudentData.email || mockLinks[linkIndex].student.email,
+        }
+      }
+
+      // 2. Also save/update in user-store
+      const existingStudentUser = allUsers.find(
+        (u) => String(u.id) === String(targetStudentId) || (email && u.email?.toLowerCase() === email.toLowerCase())
+      )
+
+      const sUniqueId = getUserUniqueId({
+        firstName: updatedStudentData.firstName || existingStudentUser?.firstName,
+        lastName: updatedStudentData.lastName || existingStudentUser?.lastName,
+        school: updatedStudentData.school || existingStudentUser?.school,
+        class: updatedStudentData.class || existingStudentUser?.class,
+      })
+
+      const finalEmail = updatedStudentData.email || existingStudentUser?.email || `${sUniqueId.replace("@", "")}@testai.az`
+
+      saveUser({
+        id: targetStudentId,
+        firstName: updatedStudentData.firstName || existingStudentUser?.firstName || "Şagird",
+        lastName: updatedStudentData.lastName || existingStudentUser?.lastName || "",
+        fatherName: updatedStudentData.fatherName !== undefined ? updatedStudentData.fatherName : existingStudentUser?.fatherName || "",
+        school: updatedStudentData.school || existingStudentUser?.school || "",
+        class: updatedStudentData.class || existingStudentUser?.class || "5",
+        email: finalEmail,
+        accountType: "student",
+        role: "student",
+        parentId: currentParentId,
+      })
+
+      return NextResponse.json({
+        success: true,
+        message: "Şagird məlumatları uğurla yeniləndi",
+        student: {
+          id: targetStudentId,
+          studentName: `${updatedStudentData.firstName} ${updatedStudentData.lastName}`.trim(),
+          studentEmail: finalEmail,
+          studentClass: updatedStudentData.class,
+          studentSchool: updatedStudentData.school,
+          firstName: updatedStudentData.firstName,
+          lastName: updatedStudentData.lastName,
+          fatherName: updatedStudentData.fatherName,
+          class: updatedStudentData.class,
+          school: updatedStudentData.school,
+        },
+      })
+    }
+
+    // Only import Prisma when not in demo mode
+    const { prisma } = await import("@/lib/db")
+    const updated = await prisma.user.update({
+      where: { id: studentId },
+      data: {
+        firstName,
+        lastName,
+        fatherName,
+        school,
+        class: sClass,
+        email: email || undefined,
+      },
+    })
+
+    return NextResponse.json({
+      success: true,
+      message: "Şagird məlumatları uğurla yeniləndi",
+      student: updated,
     })
   } catch (error) {
     return errorResponse(error)

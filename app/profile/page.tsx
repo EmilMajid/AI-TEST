@@ -14,6 +14,7 @@ import { useToast } from "@/hooks/use-toast"
 import { useTheme } from "@/hooks/use-theme"
 import {
     getCurrentUser,
+    updateUserData,
     updateProfileImage,
     removeProfileImage,
     logout,
@@ -22,7 +23,7 @@ import {
     getUserUniqueId,
     type UserData
 } from "@/lib/profile-utils"
-import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2, Fingerprint, Copy } from "lucide-react"
+import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2, Fingerprint, Copy, Pencil } from "lucide-react"
 import Link from "next/link"
 
 export default function ProfilePage() {
@@ -34,6 +35,16 @@ export default function ProfilePage() {
     const [isLoading, setIsLoading] = useState(true)
     const [isSaving, setIsSaving] = useState(false)
     const [tempImage, setTempImage] = useState<string | null>(null)
+    const [isEditing, setIsEditing] = useState(false)
+    const [isSavingProfile, setIsSavingProfile] = useState(false)
+    const [profileForm, setProfileForm] = useState({
+        firstName: "",
+        lastName: "",
+        fatherName: "",
+        school: "",
+        region: "",
+        class: "",
+    })
 
     useEffect(() => {
         const user = getCurrentUser()
@@ -43,8 +54,104 @@ export default function ProfilePage() {
         }
         setUserData(user)
         setTempImage(user.profileImage || null)
+        setProfileForm({
+            firstName: user.firstName || "",
+            lastName: user.lastName || "",
+            fatherName: (user as any).fatherName || "",
+            school: user.school || "",
+            region: user.region || "",
+            class: user.class || "5",
+        })
         setIsLoading(false)
     }, [router])
+
+    const handleStartEdit = () => {
+        if (!userData) return
+        setProfileForm({
+            firstName: userData.firstName || "",
+            lastName: userData.lastName || "",
+            fatherName: userData.fatherName || "",
+            school: userData.school || "",
+            region: userData.region || "",
+            class: userData.class || "5",
+        })
+        setIsEditing(true)
+    }
+
+    const handleCancelEdit = () => {
+        if (!userData) return
+        setProfileForm({
+            firstName: userData.firstName || "",
+            lastName: userData.lastName || "",
+            fatherName: userData.fatherName || "",
+            school: userData.school || "",
+            region: userData.region || "",
+            class: userData.class || "5",
+        })
+        setIsEditing(false)
+    }
+
+    const handleSaveProfile = async () => {
+        if (!userData) return
+        if (!profileForm.firstName.trim() || !profileForm.lastName.trim()) {
+            toast({
+                title: "Xəta",
+                description: "Ad və Soyad daxil edilməlidir",
+                variant: "destructive",
+            })
+            return
+        }
+
+        setIsSavingProfile(true)
+        try {
+            const session = localStorage.getItem("session")
+            const token = session ? JSON.parse(session).access_token : null
+
+            const updatedData: Partial<UserData> = {
+                firstName: profileForm.firstName.trim(),
+                lastName: profileForm.lastName.trim(),
+                fatherName: profileForm.fatherName.trim(),
+                school: profileForm.school.trim(),
+                region: profileForm.region.trim(),
+                class: profileForm.class ? profileForm.class.trim() : userData.class,
+            }
+
+            // Call backend PUT /api/users
+            await fetch("/api/users", {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    ...(token ? { "Authorization": `Bearer ${token}` } : {})
+                },
+                body: JSON.stringify({
+                    id: userData.id,
+                    email: userData.email,
+                    ...updatedData,
+                }),
+            })
+
+            // Update local storage and state
+            updateUserData(updatedData)
+            const refreshedUser = getCurrentUser()
+            if (refreshedUser) {
+                setUserData(refreshedUser)
+            }
+
+            setIsEditing(false)
+            toast({
+                title: "Uğurlu! ✅",
+                description: "Profil məlumatlarınız uğurla yeniləndi",
+            })
+        } catch (error) {
+            toast({
+                title: "Xəta",
+                description: "Profil məlumatları saxlanılarkən xəta baş verdi",
+                variant: "destructive",
+            })
+        } finally {
+            setIsSavingProfile(false)
+        }
+    }
 
     const handleImageChange = (base64Image: string | null) => {
         setTempImage(base64Image)
@@ -212,9 +319,45 @@ export default function ProfilePage() {
                         {/* Right Column - User Information */}
                         <div className="md:col-span-2 space-y-6">
                             <Card>
-                                <CardHeader>
-                                    <CardTitle>Şəxsi Məlumatlar</CardTitle>
-                                    <CardDescription>Sizin hesab məlumatlarınız</CardDescription>
+                                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
+                                    <div>
+                                        <CardTitle>Şəxsi Məlumatlar</CardTitle>
+                                        <CardDescription>Sizin hesab məlumatlarınız</CardDescription>
+                                    </div>
+                                    {!isEditing ? (
+                                        <Button
+                                            type="button"
+                                            variant="outline"
+                                            size="sm"
+                                            onClick={handleStartEdit}
+                                            className="gap-1.5 text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                                        >
+                                            <Pencil className="h-4 w-4" />
+                                            Redaktə et
+                                        </Button>
+                                    ) : (
+                                        <div className="flex items-center gap-2">
+                                            <Button
+                                                type="button"
+                                                variant="ghost"
+                                                size="sm"
+                                                onClick={handleCancelEdit}
+                                                disabled={isSavingProfile}
+                                            >
+                                                Ləğv et
+                                            </Button>
+                                            <Button
+                                                type="button"
+                                                size="sm"
+                                                onClick={handleSaveProfile}
+                                                disabled={isSavingProfile}
+                                                className={themeClasses.primary}
+                                            >
+                                                <Save className="h-4 w-4 mr-1.5" />
+                                                {isSavingProfile ? "Saxlanılır..." : "Yadda saxla"}
+                                            </Button>
+                                        </div>
+                                    )}
                                 </CardHeader>
                                 <CardContent className="space-y-4">
                                     {/* Unikal Şagird ID Bloku */}
@@ -254,71 +397,126 @@ export default function ProfilePage() {
 
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
-                                            <Label htmlFor="firstName">Ad</Label>
+                                            <Label htmlFor="firstName">Ad *</Label>
                                             <div className="relative">
                                                 <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="firstName"
-                                                    value={userData.firstName}
-                                                    disabled
+                                                    value={isEditing ? profileForm.firstName : userData.firstName}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, firstName: e.target.value })}
+                                                    disabled={!isEditing}
                                                     className="pl-10"
+                                                    placeholder="Adınız"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
-                                            <Label htmlFor="lastName">Soyad</Label>
+                                            <Label htmlFor="lastName">Soyad *</Label>
                                             <div className="relative">
                                                 <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="lastName"
-                                                    value={userData.lastName}
-                                                    disabled
+                                                    value={isEditing ? profileForm.lastName : userData.lastName}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, lastName: e.target.value })}
+                                                    disabled={!isEditing}
                                                     className="pl-10"
+                                                    placeholder="Soyadınız"
                                                 />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="email">Email</Label>
-                                        <div className="relative">
-                                            <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                                            <Input
-                                                id="email"
-                                                type="email"
-                                                value={userData.email}
-                                                disabled
-                                                className="pl-10"
-                                            />
+                                    <div className="grid md:grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <Label htmlFor="fatherName">Ata adı</Label>
+                                            <div className="relative">
+                                                <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <Input
+                                                    id="fatherName"
+                                                    value={isEditing ? profileForm.fatherName : (userData.fatherName || "")}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, fatherName: e.target.value })}
+                                                    disabled={!isEditing}
+                                                    className="pl-10"
+                                                    placeholder="Ata adı"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-2">
+                                            <Label htmlFor="email">Email</Label>
+                                            <div className="relative">
+                                                <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <Input
+                                                    id="email"
+                                                    type="email"
+                                                    value={userData.email}
+                                                    disabled
+                                                    className="pl-10 bg-gray-50 text-gray-500 cursor-not-allowed"
+                                                    title="Email hesaba giriş açarı olduğu üçün dəyişdirilə bilməz"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="school">Məktəb</Label>
-                                        <div className="relative">
-                                            <School className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                                            <Input
-                                                id="school"
-                                                value={userData.school}
-                                                disabled
-                                                className="pl-10"
-                                            />
+                                    <div className="grid md:grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <Label htmlFor="school">Məktəb</Label>
+                                            <div className="relative">
+                                                <School className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <Input
+                                                    id="school"
+                                                    value={isEditing ? profileForm.school : userData.school}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, school: e.target.value })}
+                                                    disabled={!isEditing}
+                                                    className="pl-10"
+                                                    placeholder="Məktəb nömrəsi və ya adı"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-2">
+                                            <Label htmlFor="region">Region / Rayon</Label>
+                                            <div className="relative">
+                                                <MapPin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <Input
+                                                    id="region"
+                                                    value={isEditing ? profileForm.region : (userData.region || "")}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, region: e.target.value })}
+                                                    disabled={!isEditing}
+                                                    className="pl-10"
+                                                    placeholder="Məs: Bakı, Sumqayıt..."
+                                                />
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <Label htmlFor="region">Region</Label>
-                                        <div className="relative">
-                                            <MapPin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                                            <Input
-                                                id="region"
-                                                value={userData.region}
-                                                disabled
-                                                className="pl-10"
-                                            />
+                                    {userData.accountType === "student" && (
+                                        <div className="space-y-2">
+                                            <Label htmlFor="class">Sinif</Label>
+                                            {isEditing ? (
+                                                <select
+                                                    id="class"
+                                                    value={profileForm.class}
+                                                    onChange={(e) => setProfileForm({ ...profileForm, class: e.target.value })}
+                                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                                                >
+                                                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((c) => (
+                                                        <option key={c} value={String(c)}>
+                                                            {c}-ci sinif
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            ) : (
+                                                <Input
+                                                    id="class"
+                                                    value={userData.class ? `${userData.class}-ci sinif` : "-"}
+                                                    disabled
+                                                    className="bg-gray-50 text-gray-700"
+                                                />
+                                            )}
                                         </div>
-                                    </div>
+                                    )}
 
                                     <div className="flex items-center justify-between pt-4 border-t">
                                         <div>
@@ -326,8 +524,8 @@ export default function ProfilePage() {
                                             <p className="text-sm text-gray-500">{roleLabel}</p>
                                         </div>
                                         <Badge variant="secondary" className={themeClasses.secondary}>
-                                            {userData.accountType === "student" && userData.class
-                                                ? `${userData.class}-ci sinif`
+                                            {userData.accountType === "student" && (isEditing ? profileForm.class : userData.class)
+                                                ? `${isEditing ? profileForm.class : userData.class}-ci sinif`
                                                 : roleLabel}
                                         </Badge>
                                     </div>

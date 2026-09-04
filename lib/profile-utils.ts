@@ -3,16 +3,19 @@
  */
 
 export interface UserData {
-    id: number
+    id: number | string
     email: string
     firstName: string
     lastName: string
+    fatherName?: string
     school: string
     region: string
     accountType: 'student' | 'parent'
     class?: string
     role?: 'parent' | 'teacher' | 'director'
     profileImage?: string
+    birthDate?: string
+    uniqueId?: string
 }
 
 /**
@@ -20,7 +23,7 @@ export interface UserData {
  */
 export function getCurrentUser(): UserData | null {
     try {
-        const userData = localStorage.getItem('userData')
+        const userData = localStorage.getItem('userData') || localStorage.getItem('user')
         if (!userData) return null
         return JSON.parse(userData)
     } catch (error) {
@@ -39,6 +42,26 @@ export function updateUserData(updates: Partial<UserData>): boolean {
 
         const updatedUser = { ...currentUser, ...updates }
         localStorage.setItem('userData', JSON.stringify(updatedUser))
+        localStorage.setItem('user', JSON.stringify(updatedUser))
+
+        // Also sync registeredUsers if present in localStorage
+        try {
+            const regUsers = localStorage.getItem('registeredUsers')
+            if (regUsers) {
+                const users = JSON.parse(regUsers)
+                if (Array.isArray(users)) {
+                    const idx = users.findIndex((u: any) =>
+                        (u.email && u.email.toLowerCase() === updatedUser.email.toLowerCase()) ||
+                        String(u.id) === String(updatedUser.id)
+                    )
+                    if (idx >= 0) {
+                        users[idx] = { ...users[idx], ...updates }
+                        localStorage.setItem('registeredUsers', JSON.stringify(users))
+                    }
+                }
+            }
+        } catch (e) {}
+
         return true
     } catch (error) {
         console.error('Error updating user data:', error)

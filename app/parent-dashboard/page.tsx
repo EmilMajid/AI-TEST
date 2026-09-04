@@ -24,6 +24,7 @@ import {
   Trash2,
   User,
   LogOut,
+  Pencil,
 
   GraduationCap,
   Mail,
@@ -68,19 +69,19 @@ import {
 } from "recharts"
 
 interface LinkedStudent {
-  id: number
-  studentId: number
+  id: number | string
+  studentId: number | string
   studentName: string
   studentEmail: string
   studentClass: string
   studentSchool: string
   relationshipType: string
   linkedAt: string
-  // Assuming these new fields are available based on the instruction's usage
-  firstName: string
-  lastName: string
-  class: string
-  school: string
+  firstName?: string
+  lastName?: string
+  fatherName?: string
+  class?: string
+  school?: string
 }
 
 interface StudentStatistics {
@@ -179,6 +180,17 @@ export default function ParentDashboard() {
   const [isLoading, setIsLoading] = useState(false)
   const [isAddingStudent, setIsAddingStudent] = useState(false)
   const [isAddStudentOpen, setIsAddStudentOpen] = useState(false)
+  const [isEditStudentOpen, setIsEditStudentOpen] = useState(false)
+  const [isSavingEditStudent, setIsSavingEditStudent] = useState(false)
+  const [editingStudent, setEditingStudent] = useState<LinkedStudent | null>(null)
+  const [editStudentForm, setEditStudentForm] = useState({
+    firstName: "",
+    lastName: "",
+    fatherName: "",
+    school: "",
+    class: "5",
+    email: ""
+  })
   const [accessRules, setAccessRules] = useState({ isPremium: false, customOverrides: [] as string[] })
   const [globalPermissions, setGlobalPermissions] = useState<any>({})
 
@@ -378,7 +390,7 @@ export default function ParentDashboard() {
     }
   }
 
-  const handleRemoveStudent = async (linkId: number) => {
+  const handleRemoveStudent = async (linkId: number | string) => {
     if (!confirm("Bu şagirdi silmək istədiyinizdən əminsiniz?")) {
       return
     }
@@ -387,7 +399,7 @@ export default function ParentDashboard() {
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
 
-      const response = await fetch(`/api/students/link?linkId=${linkId}`, {
+      const response = await fetch(`/api/students/link?linkId=${encodeURIComponent(linkId)}`, {
         method: "DELETE",
         headers: token ? { "Authorization": `Bearer ${token}` } : {}
       })
@@ -411,6 +423,101 @@ export default function ParentDashboard() {
         description: error instanceof Error ? error.message : "Şagird silinərkən xəta baş verdi",
         variant: "destructive",
       })
+    }
+  }
+
+  const handleOpenEditStudent = (student: LinkedStudent) => {
+    setEditingStudent(student)
+    const nameParts = (student.studentName || "").trim().split(" ")
+    const fName = student.firstName || nameParts[0] || ""
+    const lName = student.lastName || nameParts.slice(1).join(" ") || ""
+    setEditStudentForm({
+      firstName: fName,
+      lastName: lName,
+      fatherName: student.fatherName || "",
+      school: student.studentSchool || student.school || "",
+      class: student.studentClass || student.class || "5",
+      email: student.studentEmail || "",
+    })
+    setIsEditStudentOpen(true)
+  }
+
+  const handleSaveEditStudent = async () => {
+    if (!editingStudent) return
+    if (!editStudentForm.firstName.trim() || !editStudentForm.lastName.trim()) {
+      toast({
+        title: "Xəta",
+        description: "Zəhmət olmasa şagirdin ad və soyadını daxil edin",
+        variant: "destructive",
+      })
+      return
+    }
+
+    try {
+      setIsSavingEditStudent(true)
+      const session = localStorage.getItem("session")
+      const token = session ? JSON.parse(session).access_token : null
+
+      const response = await fetch("/api/students/link", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { "Authorization": `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({
+          linkId: editingStudent.id,
+          studentId: editingStudent.studentId,
+          parentId: userData.id,
+          firstName: editStudentForm.firstName.trim(),
+          lastName: editStudentForm.lastName.trim(),
+          fatherName: editStudentForm.fatherName.trim(),
+          school: editStudentForm.school.trim(),
+          class: editStudentForm.class,
+          email: editStudentForm.email.trim(),
+        }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        toast({
+          title: "Uğurlu! ✅",
+          description: "Şagird məlumatları yeniləndi",
+        })
+
+        setLinkedStudents((prev) =>
+          prev.map((s) => {
+            if (s.id === editingStudent.id || s.studentId === editingStudent.studentId) {
+              return {
+                ...s,
+                studentName: `${editStudentForm.firstName.trim()} ${editStudentForm.lastName.trim()}`.trim(),
+                studentClass: editStudentForm.class,
+                studentSchool: editStudentForm.school.trim(),
+                studentEmail: editStudentForm.email.trim() || s.studentEmail,
+                firstName: editStudentForm.firstName.trim(),
+                lastName: editStudentForm.lastName.trim(),
+                fatherName: editStudentForm.fatherName.trim(),
+                class: editStudentForm.class,
+                school: editStudentForm.school.trim(),
+              }
+            }
+            return s
+          })
+        )
+
+        setIsEditStudentOpen(false)
+        loadLinkedStudents(userData.id, userData.email)
+      } else {
+        throw new Error(data.error || "Şagird məlumatları yenilənmədi")
+      }
+    } catch (error) {
+      toast({
+        title: "Xəta",
+        description: error instanceof Error ? error.message : "Şagird məlumatları yenilənərkən xəta baş verdi",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSavingEditStudent(false)
     }
   }
 
@@ -654,6 +761,104 @@ export default function ParentDashboard() {
                     </DialogContent>
                   </Dialog>
 
+                  {/* Edit Student Dialog */}
+                  <Dialog open={isEditStudentOpen} onOpenChange={setIsEditStudentOpen}>
+                    <DialogContent className="sm:max-w-[500px]">
+                      <DialogHeader>
+                        <DialogTitle>Şagird Məlumatlarını Redaktə Et</DialogTitle>
+                        <DialogDescription>
+                          Şagirdin profil məlumatlarını yeniləyin
+                        </DialogDescription>
+                      </DialogHeader>
+
+                      <div className="space-y-4 mt-2">
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <Label htmlFor="edit-firstName">Ad *</Label>
+                            <Input
+                              id="edit-firstName"
+                              value={editStudentForm.firstName}
+                              onChange={(e) => setEditStudentForm({ ...editStudentForm, firstName: e.target.value })}
+                              placeholder="Ad"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="edit-lastName">Soyad *</Label>
+                            <Input
+                              id="edit-lastName"
+                              value={editStudentForm.lastName}
+                              onChange={(e) => setEditStudentForm({ ...editStudentForm, lastName: e.target.value })}
+                              placeholder="Soyad"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label htmlFor="edit-fatherName">Ata adı</Label>
+                          <Input
+                            id="edit-fatherName"
+                            value={editStudentForm.fatherName}
+                            onChange={(e) => setEditStudentForm({ ...editStudentForm, fatherName: e.target.value })}
+                            placeholder="Ata adı"
+                          />
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label htmlFor="edit-school">Məktəb</Label>
+                          <Input
+                            id="edit-school"
+                            value={editStudentForm.school}
+                            onChange={(e) => setEditStudentForm({ ...editStudentForm, school: e.target.value })}
+                            placeholder="Məktəb adı və ya nömrəsi"
+                          />
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label htmlFor="edit-class">Sinif</Label>
+                          <select
+                            id="edit-class"
+                            value={editStudentForm.class}
+                            onChange={(e) => setEditStudentForm({ ...editStudentForm, class: e.target.value })}
+                            className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                          >
+                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((c) => (
+                              <option key={c} value={String(c)}>
+                                {c}-ci sinif
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+
+                        <div className="space-y-2">
+                          <Label htmlFor="edit-email">Email və ya Unikal ID (Könüllü)</Label>
+                          <Input
+                            id="edit-email"
+                            value={editStudentForm.email}
+                            onChange={(e) => setEditStudentForm({ ...editStudentForm, email: e.target.value })}
+                            placeholder="Email və ya Unikal ID"
+                          />
+                        </div>
+
+                        <div className="flex justify-end gap-2 pt-2">
+                          <Button
+                            variant="outline"
+                            onClick={() => setIsEditStudentOpen(false)}
+                            disabled={isSavingEditStudent}
+                          >
+                            Ləğv et
+                          </Button>
+                          <Button
+                            onClick={handleSaveEditStudent}
+                            disabled={isSavingEditStudent}
+                            className={themeClasses.primary}
+                          >
+                            {isSavingEditStudent ? "Saxlanılır..." : "Yadda saxla"}
+                          </Button>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+
                   {/* Student List */}
                   <div className="space-y-2">
                     {linkedStudents.length === 0 ? (
@@ -676,17 +881,32 @@ export default function ParentDashboard() {
                                 <p className="text-xs text-gray-600">{student.studentClass}-ci sinif</p>
                                 <p className="text-xs text-gray-500 mt-1">{student.studentSchool}</p>
                               </div>
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                onClick={(e) => {
-                                  e.stopPropagation()
-                                  handleRemoveStudent(student.id)
-                                }}
-                                className="text-red-600 hover:text-red-700"
-                              >
-                                <Trash2 className="h-4 w-4" />
-                              </Button>
+                              <div className="flex items-center gap-1">
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  onClick={(e) => {
+                                    e.stopPropagation()
+                                    handleOpenEditStudent(student)
+                                  }}
+                                  className="text-blue-600 hover:text-blue-700 hover:bg-blue-50 h-8 w-8 p-0"
+                                  title="Redaktə et"
+                                >
+                                  <Pencil className="h-4 w-4" />
+                                </Button>
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  onClick={(e) => {
+                                    e.stopPropagation()
+                                    handleRemoveStudent(student.id)
+                                  }}
+                                  className="text-red-600 hover:text-red-700 hover:bg-red-50 h-8 w-8 p-0"
+                                  title="Sil"
+                                >
+                                  <Trash2 className="h-4 w-4" />
+                                </Button>
+                              </div>
                             </div>
                           </CardContent>
                         </Card>
@@ -726,7 +946,20 @@ export default function ParentDashboard() {
                     <CardHeader>
                       <div className="flex items-center justify-between">
                         <div>
-                          <CardTitle className="text-2xl">{selectedStudentData?.studentName}</CardTitle>
+                          <div className="flex items-center gap-3">
+                            <CardTitle className="text-2xl">{selectedStudentData?.studentName}</CardTitle>
+                            {selectedStudentData && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => handleOpenEditStudent(selectedStudentData)}
+                                className="h-8 gap-1.5 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                              >
+                                <Pencil className="h-3.5 w-3.5" />
+                                Redaktə et
+                              </Button>
+                            )}
+                          </div>
                           <CardDescription>
                             {selectedStudentData?.studentClass}-ci sinif • {selectedStudentData?.studentSchool}
                           </CardDescription>
