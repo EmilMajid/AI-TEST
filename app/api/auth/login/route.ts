@@ -51,75 +51,36 @@ export async function POST(request: NextRequest) {
     }
 
     if (isDemoMode && !shouldTryRealAuth) {
-      const { action, email, password, role, userId, clientUser } = body;
-
-      // If client supplied user data from browser storage, save it immediately
-      if (clientUser && clientUser.email) {
-        saveUser(clientUser);
-      }
+      const { action, email, password, role, userId } = body;
 
       console.log(`[Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
 
-      // Helper to generate a respectable name from email if needed
-      const parseNameFromEmail = (rawEmail: string) => {
-        const username = rawEmail.split('@')[0].replace(/[0-9]/g, '');
-        const parts = username.split(/[._-]/).filter(Boolean);
-        if (parts.length >= 2) {
-          const last = parts[parts.length - 1];
-          const first = parts.slice(0, -1).map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
-          return {
-            firstName: first,
-            lastName: last.charAt(0).toUpperCase() + last.slice(1)
-          };
-        } else if (parts.length === 1) {
-          return {
-            firstName: parts[0].charAt(0).toUpperCase() + parts[0].slice(1),
-            lastName: "İstifadəçi"
-          };
-        }
-        return { firstName: "İstifadəçi", lastName: "" };
-      };
-
       // ACTION: LOOKUP
       if (action === "lookup") {
-        let foundUsers = findUsers({ emailOrId: email, role });
+        const cleanInput = (email || "").trim();
+        if (!cleanInput) {
+          return NextResponse.json(
+            { success: false, error: "Zəhmət olmasa istifadəçi adı, email və ya ID daxil edin" },
+            { status: 400 }
+          );
+        }
 
-        // If no users found, create and persist an account with proper role and name
-        if (foundUsers.length === 0 && isDemoMode) {
-          const parsedName = parseNameFromEmail(email || "");
-          const effectiveRole = role || "parent";
-          
-          const autoUser: StoredUser = {
-            id: "user-" + Date.now(),
-            firstName: parsedName.firstName,
-            lastName: parsedName.lastName,
-            fatherName: "",
-            school: effectiveRole === "student" ? "161 saylı məktəb" : "Bakı şəhəri",
-            class: effectiveRole === "student" ? "8" : undefined,
-            region: "Bakı",
-            accountType: effectiveRole,
-            role: effectiveRole,
-            email: email
-          };
-          saveUser(autoUser);
+        const foundUsers = findUsers({ emailOrId: cleanInput, role });
 
-          return NextResponse.json({
-            success: true,
-            users: [{
-              id: autoUser.id,
-              firstName: autoUser.firstName,
-              lastName: autoUser.lastName,
-              accountType: autoUser.accountType,
-              role: autoUser.role,
-              email: autoUser.email,
-              school: autoUser.school
-            }]
-          });
+        if (foundUsers.length === 0) {
+          return NextResponse.json(
+            {
+              success: false,
+              users: [],
+              error: "Daxil etdiyiniz istifadəçi adı və ya ID sistemdə tapılmadı. Zəhmət olmasa məlumatları düzgün daxil edin və ya qeydiyyatdan keçin."
+            },
+            { status: 404 }
+          );
         }
 
         return NextResponse.json({
           success: true,
-          users: foundUsers.map(u => ({
+          users: foundUsers.map((u) => ({
             id: u.id,
             firstName: u.firstName,
             lastName: u.lastName,
@@ -129,7 +90,9 @@ export async function POST(request: NextRequest) {
             school: u.school,
             class: u.class,
             region: u.region,
-            email: u.email
+            email: u.email,
+            uniqueId: getUserUniqueId(u),
+            isBlocked: u.isBlocked ?? false,
           }))
         });
       }
@@ -143,39 +106,40 @@ export async function POST(request: NextRequest) {
         let user = null;
 
         if (userId) {
-          user = users.find(u => String(u.id) === String(userId));
+          user = users.find((u) => String(u.id) === String(userId));
         }
         if (!user && cleanInput) {
-          user = users.find(u => u.email && u.email.toLowerCase() === cleanInput) ||
-                 users.find(u => {
+          user = users.find((u) => u.email && u.email.toLowerCase() === cleanInput) ||
+                 users.find((u) => {
                    const uId = getUserUniqueId(u).toLowerCase();
                    return uId === cleanId || uId.replace("@", "") === cleanInput.replace("@", "");
-                 });
-        }
-
-        // If user not found, check clientUser or create an account with proper role and parsed name
-        if (!user && isDemoMode) {
-          if (clientUser && clientUser.email) {
-            user = saveUser(clientUser);
-          } else {
-            const parsedName = parseNameFromEmail(email || "");
-            const effectiveRole = role || "parent";
-            user = saveUser({
-              id: "user-" + Date.now(),
-              email: email,
-              accountType: effectiveRole,
-              role: effectiveRole,
-              firstName: parsedName.firstName,
-              lastName: parsedName.lastName,
-              school: effectiveRole === "student" ? "161 saylı məktəb" : "Bakı şəhəri",
-              class: effectiveRole === "student" ? "8" : undefined,
-              region: "Bakı",
-            });
-          }
+                 }) ||
+                 users.find((u) => `${u.firstName || ''} ${u.lastName || ''}`.trim().toLowerCase() === cleanInput);
         }
 
         if (!user) {
-          return NextResponse.json({ error: "Şifrə yanlışdır" }, { status: 401 });
+          return NextResponse.json(
+            { error: "İstifadəçi tapılmadı. Zəhmət olmasa məlumatları yoxlayın və ya qeydiyyatdan keçin." },
+            { status: 404 }
+          );
+        }
+
+        if (user.isBlocked || user.status === "blocked") {
+          return NextResponse.json(
+            { error: "Bu profil rəhbərlik (Admin) tərəfindən bloklanmışdır. Giriş məhdudlaşdırılıb." },
+            { status: 403 }
+          );
+        }
+
+        // Verify password
+        const inputPassword = (password || "").trim();
+        const userPassword = (user.password || "test12345").trim();
+
+        if (!inputPassword || inputPassword !== userPassword) {
+          return NextResponse.json(
+            { error: "Daxil etdiyiniz şifrə yanlışdır. Zəhmət olmasa yenidən cəhd edin." },
+            { status: 401 }
+          );
         }
 
         // Generate valid JWT
@@ -201,6 +165,7 @@ export async function POST(request: NextRequest) {
             class: user.class,
             role: user.role || user.accountType,
             region: user.region || "Bakı",
+            uniqueId: getUserUniqueId(user),
           },
           session: {
             access_token: token,

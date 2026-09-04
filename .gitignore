@@ -33,6 +33,7 @@ yarn-error.log*
 temp/
 scripts/ocr_temp/
 *.png
+/.data/
 
 # Logs
 logs/

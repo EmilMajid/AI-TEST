@@ -173,8 +173,17 @@ export default function ParentDashboard() {
     lastName: "",
     fatherName: "",
     school: "",
-    email: ""
+    class: "5",
+    email: "",
+    password: "",
   })
+  const [createdCredentials, setCreatedCredentials] = useState<{
+    identifier: string
+    uniqueId: string
+    password: string
+    studentName: string
+  } | null>(null)
+  const [isSendingReport, setIsSendingReport] = useState(false)
   const [timeRange, setTimeRange] = useState<'day' | 'week' | 'month' | 'year'>('month')
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
@@ -266,21 +275,77 @@ export default function ParentDashboard() {
       const token = session ? JSON.parse(session).access_token : null
       const emailQuery = userEmail ? `&email=${encodeURIComponent(userEmail)}` : ""
 
+      // 1. Check localStorage cache for instant display
+      const cacheKey = userEmail ? `linked_students_${userEmail.toLowerCase()}` : `linked_students_${parentId}`
+      const cached = localStorage.getItem(cacheKey) || (userEmail ? localStorage.getItem(`linked_students_${parentId}`) : null)
+      
+      const isTargetAyaz = (s: any) => {
+        const name = `${s.firstName || ''} ${s.lastName || ''} ${s.studentName || ''}`.toLowerCase()
+        const email = (s.studentEmail || s.email || '').toLowerCase()
+        const uId = (s.uniqueId || '').toLowerCase()
+        return (
+          uId.includes('ayaz.rzayev.161') ||
+          uId.includes('ayaz.rzayev.309') ||
+          (name.includes('ayaz') && name.includes('rzayev')) ||
+          email.includes('ayaz.rzayev')
+        )
+      }
+
+      if (cached) {
+        try {
+          const parsedCache = JSON.parse(cached)
+          if (Array.isArray(parsedCache) && parsedCache.length > 0) {
+            const cleanCache = parsedCache.filter((s: any) => !isTargetAyaz(s))
+            if (cleanCache.length !== parsedCache.length) {
+              if (userEmail) localStorage.setItem(`linked_students_${userEmail.toLowerCase()}`, JSON.stringify(cleanCache))
+              localStorage.setItem(`linked_students_${parentId}`, JSON.stringify(cleanCache))
+            }
+            if (cleanCache.length > 0) {
+              setLinkedStudents(cleanCache)
+              if (!selectedStudent) {
+                setSelectedStudent(cleanCache[0].studentId)
+              }
+            } else {
+              setLinkedStudents([])
+              setSelectedStudent(null)
+            }
+          }
+        } catch (e) {}
+      }
+
       const response = await fetch(`/api/students/link?parentId=${encodeURIComponent(parentId)}${emailQuery}`, {
         headers: token ? { "Authorization": `Bearer ${token}` } : {}
       })
       const data = await response.json()
 
-      let links = data.success && data.links ? data.links : []
+      let links = data.success && data.links ? data.links.filter((s: any) => !isTargetAyaz(s)) : []
 
-      setLinkedStudents(links)
       if (links.length > 0) {
+        setLinkedStudents(links)
+        if (userEmail) {
+          try {
+            localStorage.setItem(`linked_students_${userEmail.toLowerCase()}`, JSON.stringify(links))
+          } catch (e) {}
+        }
+        try {
+          localStorage.setItem(`linked_students_${parentId}`, JSON.stringify(links))
+        } catch (e) {}
+
         const firstStudentId = links[0].studentId
         setSelectedStudent(firstStudentId)
         loadStudentResults(firstStudentId, parentId, timeRange, userEmail)
-      } else {
+      } else if (data.success) {
+        setLinkedStudents([])
         setSelectedStudent(null)
         setStudentStats(null)
+        if (userEmail) {
+          try {
+            localStorage.removeItem(`linked_students_${userEmail.toLowerCase()}`)
+          } catch (e) {}
+        }
+        try {
+          localStorage.removeItem(`linked_students_${parentId}`)
+        } catch (e) {}
       }
     } catch (error) {
       console.error("Load students error:", error)
@@ -348,12 +413,16 @@ export default function ParentDashboard() {
         },
         body: JSON.stringify({
           parentId: userData.id,
+          parentEmail: userData.email,
           studentEmail: studentFormData.email.trim(),
+          password: studentFormData.password.trim() || undefined,
           studentDetails: {
             firstName: studentFormData.firstName,
             lastName: studentFormData.lastName,
             fatherName: studentFormData.fatherName,
-            school: studentFormData.school
+            school: studentFormData.school,
+            class: studentFormData.class,
+            password: studentFormData.password.trim() || undefined,
           },
           relationshipType: userData.role || "parent",
         }),
@@ -364,17 +433,62 @@ export default function ParentDashboard() {
       if (response.ok) {
         toast({
           title: "Sorğu göndərildi! 🎉",
-          description: "Şagirdə təsdiq sorğusu göndərildi (Demo rejimdə avtomatik təsdiqləndi)",
+          description: "Şagird uğurla əlavə edildi",
         })
+
+        if (data.link) {
+          const newEntry: LinkedStudent = {
+            id: data.link.id,
+            studentId: data.link.studentId || data.link.id,
+            studentName: data.link.studentName || `${studentFormData.firstName} ${studentFormData.lastName}`.trim(),
+            studentEmail: data.link.studentEmail || studentFormData.email.trim(),
+            studentClass: data.link.studentClass || studentFormData.class || "5",
+            studentSchool: data.link.studentSchool || studentFormData.school || "Məktəb",
+            relationshipType: userData.role || "parent",
+            linkedAt: data.link.linkedAt || new Date().toISOString(),
+            firstName: studentFormData.firstName,
+            lastName: studentFormData.lastName,
+            fatherName: studentFormData.fatherName,
+            class: data.link.studentClass || studentFormData.class || "5",
+            school: studentFormData.school || "Məktəb",
+          }
+          setLinkedStudents((prev) => {
+            const updated = [...prev.filter((p) => p.id !== newEntry.id && p.studentId !== newEntry.studentId), newEntry]
+            if (userData?.email) {
+              try {
+                localStorage.setItem(`linked_students_${userData.email.toLowerCase()}`, JSON.stringify(updated))
+              } catch (e) {}
+            }
+            if (userData?.id) {
+              try {
+                localStorage.setItem(`linked_students_${userData.id}`, JSON.stringify(updated))
+              } catch (e) {}
+            }
+            return updated
+          })
+        }
+
+        if (data.credentials) {
+          setCreatedCredentials({
+            identifier: data.credentials.identifier,
+            uniqueId: data.credentials.uniqueId,
+            password: data.credentials.password,
+            studentName: `${studentFormData.firstName} ${studentFormData.lastName}`.trim(),
+          })
+        } else {
+          setIsAddStudentOpen(false)
+        }
+
         setStudentFormData({
           firstName: "",
           lastName: "",
           fatherName: "",
           school: "",
-          email: ""
+          class: "5",
+          email: "",
+          password: "",
         })
         setAddStudentStep('choice')
-        setIsAddStudentOpen(false) // Close dialog on success
         loadLinkedStudents(userData.id, userData.email)
       } else {
         throw new Error(data.error || "Şagird əlavə edilmədi")
@@ -387,6 +501,41 @@ export default function ParentDashboard() {
       })
     } finally {
       setIsAddingStudent(false)
+    }
+  }
+
+  const handleSendReportToEmail = async () => {
+    if (!selectedStudent || !userData?.email) return
+    setIsSendingReport(true)
+    try {
+      const studentObj = linkedStudents.find((s) => s.studentId === selectedStudent || s.id === selectedStudent)
+      const res = await fetch("/api/notifications/send-report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          studentId: selectedStudent,
+          studentName: studentObj?.studentName,
+          studentEmail: studentObj?.studentEmail,
+          parentEmail: userData.email,
+        }),
+      })
+      const data = await res.json()
+      if (res.ok && data.success) {
+        toast({
+          title: "Uğurlu! 📩",
+          description: data.message || `Nəticələr ${userData.email} ünvanına göndərildi`,
+        })
+      } else {
+        throw new Error(data.error || "Hesabat göndərilə bilmədi")
+      }
+    } catch (err: any) {
+      toast({
+        title: "Xəta",
+        description: err.message || "E-mail göndərilərkən xəta baş verdi",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSendingReport(false)
     }
   }
 
@@ -411,6 +560,22 @@ export default function ParentDashboard() {
           title: "Uğurlu",
           description: "Şagird uğurla silindi",
         })
+
+        setLinkedStudents((prev) => {
+          const updated = prev.filter((s) => String(s.id) !== String(linkId) && String(s.studentId) !== String(linkId))
+          if (userData?.email) {
+            try {
+              localStorage.setItem(`linked_students_${userData.email.toLowerCase()}`, JSON.stringify(updated))
+            } catch (e) {}
+          }
+          if (userData?.id) {
+            try {
+              localStorage.setItem(`linked_students_${userData.id}`, JSON.stringify(updated))
+            } catch (e) {}
+          }
+          return updated
+        })
+
         loadLinkedStudents(userData.id, userData.email)
         setSelectedStudent(null)
         setStudentStats(null)
@@ -468,6 +633,7 @@ export default function ParentDashboard() {
           linkId: editingStudent.id,
           studentId: editingStudent.studentId,
           parentId: userData.id,
+          parentEmail: userData.email,
           firstName: editStudentForm.firstName.trim(),
           lastName: editStudentForm.lastName.trim(),
           fatherName: editStudentForm.fatherName.trim(),
@@ -485,8 +651,8 @@ export default function ParentDashboard() {
           description: "Şagird məlumatları yeniləndi",
         })
 
-        setLinkedStudents((prev) =>
-          prev.map((s) => {
+        setLinkedStudents((prev) => {
+          const updated = prev.map((s) => {
             if (s.id === editingStudent.id || s.studentId === editingStudent.studentId) {
               return {
                 ...s,
@@ -503,7 +669,18 @@ export default function ParentDashboard() {
             }
             return s
           })
-        )
+          if (userData?.email) {
+            try {
+              localStorage.setItem(`linked_students_${userData.email.toLowerCase()}`, JSON.stringify(updated))
+            } catch (e) {}
+          }
+          if (userData?.id) {
+            try {
+              localStorage.setItem(`linked_students_${userData.id}`, JSON.stringify(updated))
+            } catch (e) {}
+          }
+          return updated
+        })
 
         setIsEditStudentOpen(false)
         loadLinkedStudents(userData.id, userData.email)
@@ -656,15 +833,58 @@ export default function ParentDashboard() {
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[500px]">
                       <DialogHeader>
-                        <DialogTitle>Şagird Əlavə Et</DialogTitle>
+                        <DialogTitle>
+                          {createdCredentials ? "Şagirdin Giriş Məlumatları" : "Şagird Əlavə Et"}
+                        </DialogTitle>
                         <DialogDescription>
-                          {addStudentStep === 'choice'
+                          {createdCredentials
+                            ? "Şagirdin platformaya daxil olması üçün məlumatlar hazırdır"
+                            : addStudentStep === 'choice'
                             ? "Şagirdin qeydiyyat statusunu seçin"
                             : "Şagirdin məlumatlarını daxil edin"}
                         </DialogDescription>
                       </DialogHeader>
 
-                      {addStudentStep === 'choice' ? (
+                      {createdCredentials ? (
+                        <div className="space-y-4 mt-3">
+                          <div className="p-4 bg-green-50 border border-green-200 rounded-xl space-y-3">
+                            <div className="flex items-center gap-2 text-green-800 font-semibold text-sm">
+                              <CheckCircle className="h-5 w-5 text-green-600" />
+                              Şagird Uğurla Əlavə Edildi!
+                            </div>
+                            <p className="text-xs text-gray-700">
+                              <strong>{createdCredentials.studentName}</strong> üçün platformaya giriş məlumatları:
+                            </p>
+                            <div className="bg-white p-3 rounded-lg border border-green-200 space-y-2 text-xs font-mono">
+                              <div className="flex justify-between items-center">
+                                <span className="text-gray-500 font-sans">İstifadəçi ID / E-mail:</span>
+                                <span className="font-bold text-primary bg-primary/5 px-2 py-0.5 rounded select-all">
+                                  {createdCredentials.identifier}
+                                </span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-gray-500 font-sans">Giriş Şifrəsi:</span>
+                                <span className="font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded select-all">
+                                  {createdCredentials.password}
+                                </span>
+                              </div>
+                            </div>
+                            <p className="text-xs text-muted-foreground">
+                              📌 Bu məlumatları şagirdə təqdim edin ki, <strong>testai.az</strong> saytında daxil olub sərbəst test işləyə bilsin.
+                            </p>
+                          </div>
+                          <Button
+                            className={`w-full ${themeClasses.primary}`}
+                            onClick={() => {
+                              setCreatedCredentials(null)
+                              setAddStudentStep('choice')
+                              setIsAddStudentOpen(false)
+                            }}
+                          >
+                            Oldu, Bağla
+                          </Button>
+                        </div>
+                      ) : addStudentStep === 'choice' ? (
                         <div className="grid grid-cols-2 gap-4 mt-4">
                           <Card
                             className="cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition-all"
@@ -693,9 +913,9 @@ export default function ParentDashboard() {
                           </Card>
                         </div>
                       ) : (
-                        <div className="space-y-4 mt-4">
-                          <div className="grid grid-cols-2 gap-4">
-                            <div className="space-y-2">
+                        <div className="space-y-3 mt-3">
+                          <div className="grid grid-cols-2 gap-3">
+                            <div className="space-y-1.5">
                               <Label htmlFor="firstName">Ad *</Label>
                               <Input
                                 id="firstName"
@@ -704,7 +924,7 @@ export default function ParentDashboard() {
                                 placeholder="Ad"
                               />
                             </div>
-                            <div className="space-y-2">
+                            <div className="space-y-1.5">
                               <Label htmlFor="lastName">Soyad *</Label>
                               <Input
                                 id="lastName"
@@ -715,36 +935,74 @@ export default function ParentDashboard() {
                             </div>
                           </div>
 
-                          <div className="space-y-2">
-                            <Label htmlFor="fatherName">Ata adı</Label>
-                            <Input
-                              id="fatherName"
-                              value={studentFormData.fatherName}
-                              onChange={(e) => setStudentFormData({ ...studentFormData, fatherName: e.target.value })}
-                              placeholder="Ata adı"
-                            />
+                          <div className="grid grid-cols-2 gap-3">
+                            <div className="space-y-1.5">
+                              <Label htmlFor="fatherName">Ata adı</Label>
+                              <Input
+                                id="fatherName"
+                                value={studentFormData.fatherName}
+                                onChange={(e) => setStudentFormData({ ...studentFormData, fatherName: e.target.value })}
+                                placeholder="Ata adı"
+                              />
+                            </div>
+                            <div className="space-y-1.5">
+                              <Label htmlFor="class">Sinif</Label>
+                              <Select
+                                value={studentFormData.class || "5"}
+                                onValueChange={(val) => setStudentFormData({ ...studentFormData, class: val })}
+                              >
+                                <SelectTrigger>
+                                  <SelectValue placeholder="Sinif seçin" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  {["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"].map((c) => (
+                                    <SelectItem key={c} value={c}>
+                                      {c}-ci sinif
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
+                            </div>
                           </div>
 
-                          <div className="space-y-2">
+                          <div className="space-y-1.5">
                             <Label htmlFor="school">Məktəb</Label>
                             <Input
                               id="school"
                               value={studentFormData.school}
                               onChange={(e) => setStudentFormData({ ...studentFormData, school: e.target.value })}
-                              placeholder="Məktəb adı"
+                              placeholder="Məktəb adı (məs: 161 saylı məktəb)"
                             />
                           </div>
 
-                          <div className="space-y-2">
+                          <div className="space-y-1.5">
                             <Label htmlFor="email">Email və ya Unikal ID (Könüllü)</Label>
                             <Input
                               id="email"
                               value={studentFormData.email}
                               onChange={(e) => setStudentFormData({ ...studentFormData, email: e.target.value })}
-                              placeholder="@murad.mecidov.161 və ya boş saxlaya bilərsiniz"
+                              placeholder="@murad.mecidov.161 və ya boş saxlayın"
                             />
-                            <p className="text-xs text-gray-500">
-                              💡 Şagirdin e-maili yoxdursa, Unikal ID-sini qeyd edə bilərsiniz və ya sadəcə ad/soyadı ilə əlavə edə bilərsiniz.
+                            <p className="text-[11px] text-gray-500">
+                              💡 Şagirdin e-maili yoxdursa, boş saxlaya bilərsiniz. Sistem avtomatik unikal ID generasiya edəcək.
+                            </p>
+                          </div>
+
+                          <div className="space-y-1.5 bg-blue-50/60 p-3 rounded-lg border border-blue-100">
+                            <Label htmlFor="password" className="text-blue-900 font-medium flex items-center justify-between">
+                              <span>Şagird üçün Giriş Şifrəsi (Könüllü)</span>
+                              <span className="text-[10px] text-blue-600 font-normal">Standart: Test@2026</span>
+                            </Label>
+                            <Input
+                              id="password"
+                              type="text"
+                              value={studentFormData.password}
+                              onChange={(e) => setStudentFormData({ ...studentFormData, password: e.target.value })}
+                              placeholder="Məs: Əli2026 (boş buraxsanız avtomatik təyin ediləcək)"
+                              className="bg-white"
+                            />
+                            <p className="text-[11px] text-blue-700">
+                              💡 Şagird <strong>testai.az</strong> saytına daxil olarkən bu şifrədən istifadə edəcək.
                             </p>
                           </div>
 
@@ -753,7 +1011,7 @@ export default function ParentDashboard() {
                               Geri
                             </Button>
                             <Button onClick={handleAddStudent} disabled={isAddingStudent} className="w-2/3">
-                              {isAddingStudent ? "Sorğu göndərilir..." : "Təsdiq sorğusu göndər"}
+                              {isAddingStudent ? "Əlavə edilir..." : "Şagird Əlavə Et"}
                             </Button>
                           </div>
                         </div>
@@ -949,15 +1207,28 @@ export default function ParentDashboard() {
                           <div className="flex items-center gap-3">
                             <CardTitle className="text-2xl">{selectedStudentData?.studentName}</CardTitle>
                             {selectedStudentData && (
-                              <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => handleOpenEditStudent(selectedStudentData)}
-                                className="h-8 gap-1.5 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50"
-                              >
-                                <Pencil className="h-3.5 w-3.5" />
-                                Redaktə et
-                              </Button>
+                              <>
+                                <Button
+                                  variant="outline"
+                                  size="sm"
+                                  onClick={() => handleOpenEditStudent(selectedStudentData)}
+                                  className="h-8 gap-1.5 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                                >
+                                  <Pencil className="h-3.5 w-3.5" />
+                                  Redaktə et
+                                </Button>
+                                <Button
+                                  variant="outline"
+                                  size="sm"
+                                  onClick={handleSendReportToEmail}
+                                  disabled={isSendingReport}
+                                  className="h-8 gap-1.5 text-xs text-green-700 border-green-200 bg-green-50/50 hover:bg-green-100 hover:text-green-800"
+                                  title="Son imtahan hesabatını e-mail ünvanınıza göndərin"
+                                >
+                                  <Mail className="h-3.5 w-3.5" />
+                                  {isSendingReport ? "Göndərilir..." : "Hesabatı E-mailə Göndər"}
+                                </Button>
+                              </>
                             )}
                           </div>
                           <CardDescription>
@@ -991,6 +1262,20 @@ export default function ParentDashboard() {
                       </div>
                     </CardHeader>
                   </Card>
+
+                  {/* Empty state info if student hasn't taken tests yet */}
+                  {studentStats.totalTests === 0 && (
+                    <Card className="border-blue-200 bg-blue-50/60 shadow-sm">
+                      <CardContent className="p-4 flex items-center gap-3">
+                        <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                          <BookOpen className="h-5 w-5 text-blue-600" />
+                        </div>
+                        <div className="text-xs text-blue-900 leading-relaxed">
+                          <strong>Məlumat:</strong> Bu şagird hələ heç bir test tamamlamayıb. Şagird sistemə daxil olub test işlədikdə real nəticələr burada əks olunacaq və e-mail ünvanınıza göndəriləcək.
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
 
                   {/* Statistics Cards */}
                   <div className="grid md:grid-cols-4 gap-4">

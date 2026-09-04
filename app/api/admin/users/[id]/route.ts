@@ -1,22 +1,25 @@
 export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
-import { MOCK_USERS } from "@/lib/mock-data"
+import { getAllUsers, blockUser, deleteUser } from "@/lib/user-store"
+import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const userId = params.id
-    const user = MOCK_USERS.find(u => u.id === userId)
+    const allUsers = getAllUsers()
+    const user = allUsers.find(
+        (u) =>
+            String(u.id) === String(userId) ||
+            (u.email && u.email.toLowerCase() === userId.toLowerCase()) ||
+            getUserUniqueId(u).toLowerCase() === userId.toLowerCase()
+    )
 
     if (!user) {
         return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
     }
 
-    // Generate Mock Analytics
-    // This simulates data that would come from a real database (TestResult table)
-    // We make it deterministic based on user ID logic or just random for demo
-
     const mockStats = {
         totalTests: Math.floor(Math.random() * 20) + 5,
-        averageScore: Math.floor(Math.random() * 40) + 60, // 60-100 random
+        averageScore: Math.floor(Math.random() * 40) + 60,
         subjects: [
             { name: "Riyaziyyat", score: Math.floor(Math.random() * 30) + 70 },
             { name: "Azərbaycan dili", score: Math.floor(Math.random() * 30) + 70 },
@@ -29,25 +32,75 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         ]
     }
 
-    // Find relations
     let relations: any = {}
 
     if (user.role === 'student') {
-        // Find parent
-        const parent = MOCK_USERS.find(u => u.id === (user as any).parentId)
-        const teacher = MOCK_USERS.find(u => u.id === (user as any).teacherId)
+        const parent = allUsers.find(u => u.id === (user as any).parentId)
+        const teacher = allUsers.find(u => u.id === (user as any).teacherId)
         if (parent) relations.parent = parent
         if (teacher) relations.teacher = teacher
     } else if (user.role === 'parent') {
-        // Find children
-        const children = MOCK_USERS.filter(u => (u as any).parentId === user.id)
+        const children = allUsers.filter(u => (u as any).parentId === user.id)
         relations.children = children
     }
 
     return NextResponse.json({
         success: true,
-        user,
+        user: {
+            ...user,
+            uniqueId: getUserUniqueId(user),
+            isBlocked: user.isBlocked ?? false,
+            status: user.isBlocked ? "blocked" : (user.status || "active"),
+        },
         stats: user.role === 'student' ? mockStats : null,
         relations
     })
+}
+
+export async function PATCH(request: NextRequest, { params }: { params: { id: string } }) {
+    try {
+        const userId = params.id
+        if (String(userId).toLowerCase() === "admin-main" || String(userId).toLowerCase() === "admin@edu.az") {
+            return NextResponse.json({ error: "Əsas administrator profilini bloklamaq olmaz" }, { status: 403 })
+        }
+
+        const body = await request.json()
+        const { action, isBlocked } = body
+        const shouldBlock = action === "block" ? true : action === "unblock" ? false : Boolean(isBlocked)
+
+        const updated = blockUser(userId, shouldBlock)
+        if (!updated) {
+            return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
+        }
+
+        return NextResponse.json({
+            success: true,
+            message: shouldBlock ? "İstifadəçi uğurla bloklandı" : "İstifadəçi uğurla blokdan çıxarıldı",
+            user: {
+                ...updated,
+                uniqueId: getUserUniqueId(updated),
+                isBlocked: updated.isBlocked ?? false,
+                status: updated.status || (updated.isBlocked ? "blocked" : "active"),
+            },
+        })
+    } catch (error: any) {
+        return NextResponse.json({ error: error.message || "Xəta baş verdi" }, { status: 500 })
+    }
+}
+
+export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
+    try {
+        const userId = params.id
+        if (String(userId).toLowerCase() === "admin-main" || String(userId).toLowerCase() === "admin@edu.az") {
+            return NextResponse.json({ error: "Əsas administrator profilini silmək olmaz" }, { status: 403 })
+        }
+
+        deleteUser(userId)
+        return NextResponse.json({
+            success: true,
+            message: "İstifadəçi sistemdən tamamilə silindi",
+        })
+    } catch (error: any) {
+        return NextResponse.json({ error: error.message || "Xəta baş verdi" }, { status: 500 })
+    }
 }

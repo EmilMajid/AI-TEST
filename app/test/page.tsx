@@ -220,6 +220,45 @@ export default function TestPage() {
     // Hər iki açarla saxla: köhnə uyğunluq + yeni results səhifəsi
     localStorage.setItem("lastTestResults", JSON.stringify(results))
     localStorage.setItem("testResults", JSON.stringify(resultsPageFormat))
+
+    // Real nəticəni serverə yaddaşa yaz və valideynə e-mail bildirişi göndər
+    try {
+      const currentUser = getCurrentUser()
+      const session = localStorage.getItem("session")
+      const token = session ? JSON.parse(session).access_token : null
+
+      fetch("/api/save-test-result", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { "Authorization": `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({
+          studentId: currentUser?.id,
+          studentEmail: currentUser?.email,
+          studentName: currentUser ? `${currentUser.firstName || ""} ${currentUser.lastName || ""}`.trim() : "Şagird",
+          textbook: testConfig?.textbook || "",
+          topic: testConfig?.topic || "",
+          class: testConfig?.class || "",
+          difficulty: testConfig?.difficulty || "orta",
+          score,
+          totalQuestions: questions.length,
+          correctAnswers,
+          timeSpent,
+          completedAt: resultsPageFormat.completedAt,
+          answers: answersMap,
+          detailedResults,
+        })
+      }).then(res => res.json()).then(data => {
+        if (data.emailNotification?.sent) {
+          console.log("Valideynə imtahan bildirişi göndərildi:", data.emailNotification.parentEmail)
+        }
+      }).catch(err => {
+        console.error("Test nəticəsi serverə göndərilərkən xəta:", err)
+      })
+    } catch (e) {
+      console.error("Save test result trigger error:", e)
+    }
   }
 
   const formatTime = (seconds: number) => {

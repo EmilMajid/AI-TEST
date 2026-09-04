@@ -2,8 +2,9 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { requireAuth, checkParentStudentAccess, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
+import { getTestResultsForStudent } from "@/lib/test-result-store"
 
-const isDemoMode = true; // Forced for full mock mode
+const isDemoMode = true // Forced for full mock mode
 
 export async function GET(request: NextRequest) {
   try {
@@ -13,6 +14,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const studentId = searchParams.get("studentId")
     const timeRange = searchParams.get("timeRange") || "month"
+    const studentEmail = searchParams.get("email") || undefined
 
     if (!studentId) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, "Student ID tələb olunur", 400)
@@ -22,80 +24,192 @@ export async function GET(request: NextRequest) {
     const isNumericId = !isNaN(studentIdNum)
 
     if (isDemoMode) {
-      // Mock results for demo
-      // Determine what subjects to show based on student
+      // 1. Check if real test results exist for this student in test-result-store
+      const storedResults = getTestResultsForStudent(studentId, studentEmail)
+
+      if (storedResults.length > 0) {
+        // Calculate REAL statistics from real stored results
+        const totalTests = storedResults.length
+        const totalScore = storedResults.reduce((sum, r) => sum + r.score, 0)
+        const averageScore = Math.round(totalScore / totalTests)
+        const bestScore = Math.max(...storedResults.map((r) => r.score))
+
+        // Group by subject (textbook)
+        const subjectMap: Record<string, { totalScore: number; count: number }> = {}
+        for (const r of storedResults) {
+          if (!subjectMap[r.textbook]) {
+            subjectMap[r.textbook] = { totalScore: 0, count: 0 }
+          }
+          subjectMap[r.textbook].totalScore += r.score
+          subjectMap[r.textbook].count += 1
+        }
+
+        const subjectBreakdown = Object.entries(subjectMap).map(([subject, data]) => {
+          const avg = Math.round(data.totalScore / data.count)
+          return {
+            subject,
+            count: data.count,
+            averageScore: avg,
+            comparison: {
+              schoolAverage: Math.max(50, Math.min(100, Math.round(avg * 0.95))),
+              regionAverage: Math.max(50, Math.min(100, Math.round(avg * 0.92))),
+              nationalAverage: Math.max(50, Math.min(100, Math.round(avg * 0.9))),
+            },
+          }
+        })
+
+        const comparisonData = subjectBreakdown.map((s) => ({
+          subject: s.subject,
+          student: s.averageScore,
+          school: s.comparison.schoolAverage,
+          region: s.comparison.regionAverage,
+          national: s.comparison.nationalAverage,
+        }))
+
+        const recentActivity = storedResults.slice(0, 10).map((r, idx) => ({
+          id: r.id || idx + 1,
+          subject: r.textbook,
+          topic: r.topic,
+          score: r.score,
+          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
+          time: new Date(r.completedAt).toLocaleTimeString("az-AZ"),
+        }))
+
+        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3)
+        const weakAreas = subjectBreakdown.filter((s) => s.averageScore < 80).slice(0, 3)
+
+        const performanceTrend = storedResults.slice(0, 5).map((r) => ({
+          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
+          score: r.score,
+          subject: r.textbook,
+        }))
+
+        return NextResponse.json({
+          success: true,
+          hasRealData: true,
+          results: storedResults,
+          statistics: {
+            totalTests,
+            averageScore,
+            bestScore,
+            subjectBreakdown,
+            comparisonData,
+            recentTests: storedResults,
+            recentActivity,
+            monthly: {
+              testsThisMonth: storedResults.length,
+              averageThisMonth: averageScore,
+            },
+            strongAreas,
+            weakAreas,
+            performanceTrend:
+              performanceTrend.length > 0
+                ? performanceTrend
+                : [{ date: "Bugün", score: averageScore }],
+          },
+        })
+      }
+
+      // 2. If it's a seed/demo student without stored results, provide initial demo baseline
       const isAli = studentId === "student-ali"
       const isFatime = studentId === "student-fatime"
 
-      const subjects = isAli
-        ? ["Riyaziyyat", "Fizika", "İnformatika", "Azərbaycan dili", "Ədəbiyyat", "Coğrafiya", "Kimya", "Biologiya", "Ümumi tarix"]
-        : ["Azərbaycan dili", "Riyaziyyat", "Həyat bilgisi", "İngilis dili", "Təsviri incəsənət", "Musiqi", "Texnologiya"]
+      if (isAli || isFatime) {
+        const subjects = isAli
+          ? ["Riyaziyyat", "Fizika", "İnformatika", "Azərbaycan dili", "Ədəbiyyat"]
+          : ["Azərbaycan dili", "Riyaziyyat", "Həyat bilgisi", "İngilis dili"]
 
-      const mockResults = subjects.map((sub, idx) => ({
-        id: idx + 1,
-        textbook: sub,
-        topic: "Fəsil " + (idx + 1),
-        class: isAli ? "8" : "5",
-        score: Math.floor(Math.random() * 30) + (timeRange === 'year' ? 60 : 70), // Slightly lower base for year
-        timeSpent: Math.floor(Math.random() * 60) + 40,
-        completedAt: new Date(Date.now() - (idx * 86400000)).toISOString()
-      }))
+        const baseScore = isAli ? 84 : 78
+        const mockResults = subjects.map((sub, idx) => ({
+          id: idx + 1,
+          textbook: sub,
+          topic: "Fəsil " + (idx + 1),
+          class: isAli ? "8" : "5",
+          score: baseScore - (idx % 3) * 5,
+          timeSpent: 45 + idx * 5,
+          completedAt: new Date(Date.now() - idx * 86400000).toISOString(),
+        }))
 
-      const totalTests = timeRange === 'day' ? 1 : timeRange === 'week' ? 3 : timeRange === 'month' ? mockResults.length : mockResults.length * 4
-      const averageScore = Math.round(mockResults.reduce((sum: number, r: any) => sum + r.score, 0) / mockResults.length)
-      const bestScore = Math.max(...mockResults.map((r: any) => r.score))
+        const totalTests = mockResults.length
+        const averageScore = Math.round(
+          mockResults.reduce((sum: number, r: any) => sum + r.score, 0) / mockResults.length
+        )
+        const bestScore = Math.max(...mockResults.map((r: any) => r.score))
 
-      const subjectBreakdown = subjects.map(sub => {
-        const subResults = mockResults.filter(r => r.textbook === sub)
-        const avg = Math.round(subResults.reduce((sum, r) => sum + r.score, 0) / subResults.length)
-        return {
-          subject: sub,
-          count: timeRange === 'day' ? 1 : timeRange === 'week' ? 2 : timeRange === 'month' ? subResults.length : subResults.length * 3,
-          averageScore: avg,
-          comparison: {
-            schoolAverage: Math.max(0, Math.min(100, avg + (Math.random() * 10 - 5))),
-            regionAverage: Math.max(0, Math.min(100, avg + (Math.random() * 14 - 7))),
-            nationalAverage: Math.max(0, Math.min(100, avg + (Math.random() * 20 - 10)))
+        const subjectBreakdown = subjects.map((sub, idx) => {
+          const sScore = baseScore - (idx % 3) * 5
+          return {
+            subject: sub,
+            count: 2,
+            averageScore: sScore,
+            comparison: {
+              schoolAverage: Math.round(sScore * 0.94),
+              regionAverage: Math.round(sScore * 0.91),
+              nationalAverage: Math.round(sScore * 0.88),
+            },
           }
-        }
-      })
+        })
 
+        return NextResponse.json({
+          success: true,
+          hasRealData: false,
+          results: mockResults,
+          statistics: {
+            totalTests,
+            averageScore,
+            bestScore,
+            subjectBreakdown,
+            comparisonData: subjectBreakdown.map((s) => ({
+              subject: s.subject,
+              student: s.averageScore,
+              school: s.comparison.schoolAverage,
+              region: s.comparison.regionAverage,
+              national: s.comparison.nationalAverage,
+            })),
+            recentTests: mockResults,
+            recentActivity: mockResults.map((r: any) => ({
+              id: r.id,
+              subject: r.textbook,
+              topic: r.topic,
+              score: r.score,
+              date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
+              time: new Date(r.completedAt).toLocaleTimeString("az-AZ"),
+            })),
+            monthly: {
+              testsThisMonth: mockResults.length,
+              averageThisMonth: averageScore,
+            },
+            strongAreas: subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3),
+            weakAreas: subjectBreakdown.filter((s) => s.averageScore < 80).slice(0, 3),
+            performanceTrend: [
+              { date: "Bugün", score: averageScore },
+              { date: "Keçən həftə", score: averageScore - 3 },
+              { date: "Keçən ay", score: averageScore - 6 },
+            ],
+          },
+        })
+      }
+
+      // 3. For any newly registered student who hasn't taken tests yet, show clean zero state
       return NextResponse.json({
         success: true,
-        results: mockResults,
+        hasRealData: false,
+        results: [],
         statistics: {
-          totalTests,
-          averageScore,
-          bestScore,
-          subjectBreakdown,
-          comparisonData: subjectBreakdown.map(s => ({
-            subject: s.subject,
-            student: s.averageScore,
-            school: s.comparison.schoolAverage,
-            region: s.comparison.regionAverage,
-            national: s.comparison.nationalAverage
-          })),
-          recentTests: mockResults,
-          recentActivity: mockResults.map((r: any) => ({
-            id: r.id,
-            subject: r.textbook,
-            topic: r.topic,
-            score: r.score,
-            date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
-            time: new Date(r.completedAt).toLocaleTimeString("az-AZ"),
-          })),
+          totalTests: 0,
+          averageScore: 0,
+          bestScore: 0,
+          subjectBreakdown: [],
+          comparisonData: [],
+          recentTests: [],
+          recentActivity: [],
           monthly: {
-            testsThisMonth: mockResults.length,
-            averageThisMonth: averageScore
+            testsThisMonth: 0,
+            averageThisMonth: 0,
           },
-          strongAreas: subjectBreakdown.filter(s => s.averageScore >= 85).slice(0, 3),
-          weakAreas: subjectBreakdown.filter(s => s.averageScore < 80).slice(0, 3),
-          performanceTrend: [
-            { date: "Bugün", score: averageScore },
-            { date: "Keçən həftə", score: averageScore - 5 },
-            { date: "Keçən ay", score: averageScore - 10 },
-            { date: "Keçən il", score: averageScore - 15 },
-          ]
+          strongAreas: [],
+          weakAreas: [],
+          performanceTrend: [],
         },
       })
     }
@@ -122,24 +236,27 @@ export async function GET(request: NextRequest) {
       },
     })
 
+    await logApiAccess(Number(auth.user.id) || 1, "view_student_results", "student", request.ip)
+
+    if (results.length === 0) {
+      return NextResponse.json({
+        success: true,
+        results: [],
+        statistics: {
+          totalTests: 0,
+          averageScore: 0,
+          bestScore: 0,
+          subjectBreakdown: [],
+          recentTests: [],
+          strongAreas: [],
+          weakAreas: [],
+        },
+      })
+    }
+
     const totalTests = results.length
-    const averageScore = totalTests > 0 ? Math.round(results.reduce((sum: number, r: { score: number }) => sum + r.score, 0) / totalTests) : 0
-    const bestScore = totalTests > 0 ? Math.max(...results.map((r: { score: number }) => r.score)) : 0
-
-    const subjectStats = await prisma.testResult.groupBy({
-      by: ["textbook"],
-      where: { userId: studentIdNum },
-      _avg: { score: true },
-      _count: true,
-    })
-
-    const subjectBreakdown = subjectStats.map((stat: { textbook: string; _count: number; _avg: { score: number | null } }) => ({
-      subject: stat.textbook,
-      count: stat._count,
-      averageScore: stat._avg.score ? Math.round(stat._avg.score) : 0,
-    }))
-
-    await logApiAccess(auth.user.id as any, "view_student_results", "test_result", request.ip)
+    const averageScore = Math.round(results.reduce((sum: number, r: { score: number }) => sum + r.score, 0) / totalTests)
+    const bestScore = Math.max(...results.map((r: { score: number }) => r.score))
 
     return NextResponse.json({
       success: true,
@@ -148,87 +265,8 @@ export async function GET(request: NextRequest) {
         totalTests,
         averageScore,
         bestScore,
-        subjectBreakdown,
-        recentActivity: results.slice(0, 10).map((r: { id: number; textbook: string; topic: string; score: number; completedAt: Date }) => ({
-          id: r.id,
-          subject: r.textbook,
-          topic: r.topic,
-          score: r.score,
-          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
-        })),
+        recentTests: results.slice(0, 5),
       },
-    })
-  } catch (error) {
-    return errorResponse(error)
-  }
-}
-
-export async function POST(request: NextRequest) {
-  try {
-    const auth = await requireAuth(request)
-    if (auth instanceof NextResponse) return auth
-
-    const body = await request.json()
-    const { studentId, timeRange } = body
-
-    if (!studentId) {
-      throw new AppError(ErrorCode.VALIDATION_ERROR, "Student ID tələb olunur", 400)
-    }
-
-    if (isDemoMode) {
-      // Mock results for demo
-      return NextResponse.json({
-        success: true,
-        results: [],
-        count: 0,
-      })
-    }
-
-    // Only import Prisma when not in demo mode
-    const { prisma } = await import("@/lib/db")
-
-    const hasAccess = await checkParentStudentAccess(auth.user.id as any, studentId)
-    if (!hasAccess) {
-      throw new AppError(ErrorCode.FORBIDDEN, "Bu şagirdə giriş icazəniz yoxdur", 403)
-    }
-
-    let dateFilter = {}
-    if (timeRange) {
-      const now = new Date()
-      const cutoffDate = new Date()
-
-      switch (timeRange) {
-        case "week":
-          cutoffDate.setDate(now.getDate() - 7)
-          break
-        case "month":
-          cutoffDate.setMonth(now.getMonth() - 1)
-          break
-        case "3months":
-          cutoffDate.setMonth(now.getMonth() - 3)
-          break
-        case "year":
-          cutoffDate.setFullYear(now.getFullYear() - 1)
-          break
-      }
-
-      dateFilter = { completedAt: { gte: cutoffDate } }
-    }
-
-    const results = await prisma.testResult.findMany({
-      where: {
-        userId: studentId,
-        ...dateFilter,
-      },
-      orderBy: { completedAt: "desc" },
-    })
-
-    await logApiAccess(auth.user.id as any, "filter_student_results", "test_result", request.ip)
-
-    return NextResponse.json({
-      success: true,
-      results,
-      count: results.length,
     })
   } catch (error) {
     return errorResponse(error)

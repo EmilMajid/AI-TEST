@@ -1,92 +1,135 @@
 export const dynamic = "force-dynamic"
-import { supabaseServer } from "@/utils/supabaseClient"
 import type { NextRequest } from "next/server"
-import { createSuccessResponse, createErrorResponse } from "@/lib/middleware/api-response"
-import { getRateLimitKey, checkRateLimit } from "@/lib/middleware/rate-limit"
-import { logError } from "@/lib/middleware/error-handler"
+import { NextResponse } from "next/server"
+import { saveTestResult, type StoredTestResult } from "@/lib/test-result-store"
+import { getAllUsers, loadLinksFromDisk } from "@/lib/user-store"
+import { sendTestResultNotification } from "@/lib/email-service"
+import { getAuthContext } from "@/lib/auth-utils"
 
-interface TestResult {
-  textbook: string
-  topic: string
-  class: string
-  score: number
-  timeSpen: number
-  answers: Record<string, any>
-  completedAt?: string
-}
-
-/**
- * Save test results for authenticated user with rate limiting
- */
 export async function POST(request: NextRequest) {
   try {
-    const rateLimitKey = getRateLimitKey(request)
-    const limitError = await checkRateLimit(rateLimitKey, "saveResult")
-    if (limitError) return limitError
+    const auth = await getAuthContext(request)
+    const body = await request.json()
 
-    // Validate Authorization header
-    const authHeader = request.headers.get("Authorization")
-    if (!authHeader?.startsWith("Bearer ")) {
-      return createErrorResponse("Unauthorized", 401)
-    }
+    const studentId = body.studentId || auth?.user?.id || `student-${Date.now()}`
+    const studentEmail = body.studentEmail || auth?.user?.email || ""
+    const studentName = body.studentName || `${auth?.user?.id || "Şagird"}`
 
-    const token = authHeader.slice(7)
-
-    // Verify token
-    const {
-      data: { user },
-      error: authError,
-    } = await supabaseServer.auth.getUser(token)
-
-    if (authError || !user) {
-      return createErrorResponse("Invalid token", 401)
-    }
-
-    const body: TestResult = await request.json()
-
-    // Validate required fields
     if (!body.textbook || body.score === undefined) {
-      return createErrorResponse("Missing required fields", 400)
+      return NextResponse.json(
+        { success: false, error: "Fənn və bal tələb olunur" },
+        { status: 400 }
+      )
     }
 
-    // Validate score range
-    if (body.score < 0 || body.score > 100) {
-      return createErrorResponse("Score must be between 0 and 100", 400)
+    const testScore = Math.max(0, Math.min(100, Number(body.score)))
+    const timeSpentSeconds = Number(body.timeSpent || body.timeSpen || 60)
+    const timeSpentMinutes = Math.max(1, Math.round(timeSpentSeconds / 60))
+    const totalQuestions = Number(body.totalQuestions || (body.detailedResults ? body.detailedResults.length : 10))
+    const correctAnswers = Number(body.correctAnswers || Math.round((testScore / 100) * totalQuestions))
+
+    // 1. Save test result to persistent disk store
+    const storedResult: StoredTestResult = {
+      id: body.id || `res-${Date.now()}`,
+      studentId,
+      studentEmail,
+      studentName,
+      textbook: body.textbook,
+      topic: body.topic || "Ümumi test",
+      class: body.class || "5",
+      difficulty: body.difficulty || "orta",
+      score: testScore,
+      totalQuestions,
+      correctAnswers,
+      wrongAnswers: totalQuestions - correctAnswers,
+      timeSpent: timeSpentSeconds,
+      completedAt: body.completedAt || new Date().toISOString(),
+      answers: body.answers,
+      detailedResults: body.detailedResults,
     }
 
-    // Insert test result
-    const { data: result, error: insertError } = await supabaseServer
-      .from("test_results")
-      .insert({
-        user_id: user.id,
-        textbook: body.textbook,
-        topic: body.topic,
-        class: body.class,
-        score: body.score,
-        time_spent: body.timeSpen,
-        answers: body.answers,
-        completed_at: body.completedAt || new Date().toISOString(),
-      })
-      .select()
-      .single()
+    const saved = saveTestResult(storedResult)
 
-    if (insertError) {
-      console.error("[ERROR] Test result insert failed:", insertError)
-      await logError({
-        endpoint: "POST /api/save-test-result",
-        userId: user.id,
-        error: insertError,
-      })
-      return createErrorResponse("Failed to save test result", 500)
+    // 2. Identify linked parent(s) to send email notification
+    let emailStatus = { sent: false, parentEmail: "", simulated: false }
+    try {
+      const allUsers = getAllUsers()
+      const allLinks = loadLinksFromDisk()
+
+      // Find link by studentId or studentEmail
+      const link = allLinks.find(
+        (l) =>
+          l.status === "active" &&
+          (String(l.studentId) === String(studentId) ||
+            (studentEmail && l.student.email?.toLowerCase() === studentEmail.toLowerCase()))
+      )
+
+      let parentEmailToNotify = link?.parentEmail || ""
+      let parentName = "Valideyn"
+
+      // If link has parentId, find user
+      if (link?.parentId) {
+        const parentUser = allUsers.find((u) => String(u.id) === String(link.parentId))
+        if (parentUser) {
+          if (!parentEmailToNotify && parentUser.email) {
+            parentEmailToNotify = parentUser.email
+          }
+          if (parentUser.firstName) {
+            parentName = `${parentUser.firstName} ${parentUser.lastName || ""}`.trim()
+          }
+        }
+      }
+
+      // If still no parent found, check student user's parentEmail field
+      if (!parentEmailToNotify) {
+        const studentUser = allUsers.find(
+          (u) =>
+            String(u.id) === String(studentId) ||
+            (studentEmail && u.email?.toLowerCase() === studentEmail.toLowerCase())
+        )
+        if (studentUser?.parentEmail) {
+          parentEmailToNotify = studentUser.parentEmail
+        }
+      }
+
+      if (parentEmailToNotify) {
+        const emailRes = await sendTestResultNotification({
+          parentEmail: parentEmailToNotify,
+          parentName,
+          studentName: studentName || "Övladınız",
+          studentClass: body.class,
+          textbook: body.textbook,
+          topic: body.topic || "Mövzu testi",
+          score: testScore,
+          correctCount: correctAnswers,
+          totalQuestions,
+          timeSpentMinutes,
+          completedAt: saved.completedAt,
+        })
+        emailStatus = {
+          sent: emailRes.success,
+          parentEmail: parentEmailToNotify,
+          simulated: emailRes.simulated || false,
+        }
+      }
+    } catch (mailErr) {
+      console.error("Error triggering parent email notification:", mailErr)
     }
 
-    return createSuccessResponse(result, 201)
+    return NextResponse.json(
+      {
+        success: true,
+        message: "Test nəticəsi uğurla yaddaşa yazıldı",
+        result: saved,
+        emailNotification: emailStatus,
+      },
+      { status: 201 }
+    )
   } catch (error: any) {
     console.error("[ERROR] Save test result error:", error)
-    await logError({
-      endpoint: "POST /api/save-test-result",
-      error,
-    })
-    return createErrorResponse("Internal server error", 500)
+    return NextResponse.json(
+      { success: false, error: error?.message || "Daxili server xətası" },
+      { status: 500 }
+    )
   }
 }

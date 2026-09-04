@@ -23,7 +23,7 @@ import {
     getUserUniqueId,
     type UserData
 } from "@/lib/profile-utils"
-import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2, Fingerprint, Copy, Pencil } from "lucide-react"
+import { ArrowLeft, User, Mail, School, MapPin, LogOut, Save, Trash2, Fingerprint, Copy, Pencil, GraduationCap, ArrowRight, Plus } from "lucide-react"
 import Link from "next/link"
 
 export default function ProfilePage() {
@@ -37,6 +37,8 @@ export default function ProfilePage() {
     const [tempImage, setTempImage] = useState<string | null>(null)
     const [isEditing, setIsEditing] = useState(false)
     const [isSavingProfile, setIsSavingProfile] = useState(false)
+    const [linkedStudents, setLinkedStudents] = useState<any[]>([])
+    const [isLoadingStudents, setIsLoadingStudents] = useState(false)
     const [profileForm, setProfileForm] = useState({
         firstName: "",
         lastName: "",
@@ -45,6 +47,51 @@ export default function ProfilePage() {
         region: "",
         class: "",
     })
+
+    const loadParentStudents = async (parentId: number | string, email?: string) => {
+        try {
+            setIsLoadingStudents(true)
+            if (email) {
+                try {
+                    const cached = localStorage.getItem("linked_students_" + email.toLowerCase()) || localStorage.getItem(`linked_students_${parentId}`)
+                    if (cached) {
+                        const parsed = JSON.parse(cached)
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            setLinkedStudents(parsed)
+                        }
+                    }
+                } catch (e) {}
+            }
+            const session = localStorage.getItem("session")
+            const token = session ? JSON.parse(session).access_token : null
+            const emailQuery = email ? `&email=${encodeURIComponent(email)}` : ""
+            const res = await fetch(`/api/students/link?parentId=${encodeURIComponent(parentId)}${emailQuery}`, {
+                headers: token ? { "Authorization": `Bearer ${token}` } : {}
+            })
+            const data = await res.json()
+            let list = data.success && data.links ? data.links : []
+            if (list.length > 0 && email) {
+                try {
+                    localStorage.setItem("linked_students_" + email.toLowerCase(), JSON.stringify(list))
+                } catch (e) {}
+            } else if (list.length === 0 && email) {
+                try {
+                    const cached = localStorage.getItem("linked_students_" + email.toLowerCase())
+                    if (cached) {
+                        const parsed = JSON.parse(cached)
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            list = parsed
+                        }
+                    }
+                } catch (e) {}
+            }
+            setLinkedStudents(list)
+        } catch (e) {
+            console.error("Error loading linked students in profile:", e)
+        } finally {
+            setIsLoadingStudents(false)
+        }
+    }
 
     useEffect(() => {
         const user = getCurrentUser()
@@ -63,6 +110,10 @@ export default function ProfilePage() {
             class: user.class || "5",
         })
         setIsLoading(false)
+
+        if (user.accountType === "parent" || user.role === "parent" || user.accountType === "teacher" || user.accountType === "director") {
+            loadParentStudents(user.id, user.email)
+        }
     }, [router])
 
     const handleStartEdit = () => {
@@ -531,6 +582,88 @@ export default function ProfilePage() {
                                     </div>
                                 </CardContent>
                             </Card>
+
+                            {/* Əlaqəli Şagirdlər Bloku (Valideynlər və Nəzarətçilər üçün) */}
+                            {(userData.accountType === "parent" || userData.role === "parent" || userData.accountType === "teacher" || userData.accountType === "director") && (
+                                <Card className="border-blue-100">
+                                    <CardHeader className="flex flex-row items-center justify-between pb-3">
+                                        <div className="space-y-1">
+                                            <CardTitle className="text-lg flex items-center gap-2 text-blue-950">
+                                                <GraduationCap className="h-5 w-5 text-blue-600" />
+                                                Əlaqəli Şagirdlər / Övladlar
+                                            </CardTitle>
+                                            <CardDescription>
+                                                Hesabınıza bağlı olan və nəzarət etdiyiniz şagirdlər
+                                            </CardDescription>
+                                        </div>
+                                        <Link href="/parent-dashboard">
+                                            <Button variant="outline" size="sm" className="gap-1.5 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50">
+                                                İdarəetmə Paneli
+                                                <ArrowRight className="h-3.5 w-3.5" />
+                                            </Button>
+                                        </Link>
+                                    </CardHeader>
+                                    <CardContent>
+                                        {isLoadingStudents ? (
+                                            <div className="py-6 text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
+                                                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
+                                                Şagirdlər yüklənir...
+                                            </div>
+                                        ) : linkedStudents.length === 0 ? (
+                                            <div className="py-6 text-center text-gray-500 bg-gray-50/50 rounded-xl border border-dashed border-gray-200">
+                                                <p className="text-sm font-medium">Hələ şagird əlavə edilməyib</p>
+                                                <p className="text-xs text-muted-foreground mt-1">
+                                                    Şagird əlavə edərək onun test nəticələrinə və inkişafına nəzarət edə bilərsiniz.
+                                                </p>
+                                                <Link href="/parent-dashboard">
+                                                    <Button size="sm" className={`mt-3 gap-1.5 ${themeClasses.primary}`}>
+                                                        <Plus className="h-3.5 w-3.5" />
+                                                        Şagird Əlavə Et
+                                                    </Button>
+                                                </Link>
+                                            </div>
+                                        ) : (
+                                            <div className="space-y-3">
+                                                {linkedStudents.map((student: any) => (
+                                                    <div
+                                                        key={student.id}
+                                                        className="p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/80 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                                                    >
+                                                        <div className="space-y-1">
+                                                            <div className="flex items-center gap-2">
+                                                                <span className="font-semibold text-sm text-gray-900">
+                                                                    {student.studentName || `${student.firstName} ${student.lastName}`}
+                                                                </span>
+                                                                {(student.studentClass || student.class) && (
+                                                                    <Badge variant="secondary" className="text-xs px-2 py-0 h-5">
+                                                                        {student.studentClass || student.class}-ci sinif
+                                                                    </Badge>
+                                                                )}
+                                                            </div>
+                                                            <div className="text-xs text-gray-500 flex items-center gap-3">
+                                                                {(student.studentSchool || student.school) && <span>🏫 {student.studentSchool || student.school}</span>}
+                                                                {student.fatherName && <span>Ata adı: {student.fatherName}</span>}
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-2">
+                                                            <span className="font-mono text-xs font-bold text-primary bg-white px-2.5 py-1 rounded-md border border-primary/20 select-all">
+                                                                {student.studentEmail?.includes("@testai.az")
+                                                                    ? `@${student.studentEmail.replace("@testai.az", "")}`
+                                                                    : (student.studentEmail || `@id`)}
+                                                            </span>
+                                                            <Link href="/parent-dashboard">
+                                                                <Button variant="ghost" size="sm" className="h-7 px-2 text-xs text-blue-600 hover:text-blue-700">
+                                                                    Bax
+                                                                </Button>
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </CardContent>
+                                </Card>
+                            )}
 
                             {/* Account Actions */}
                             <Card className="border-red-200 bg-red-50/50">
