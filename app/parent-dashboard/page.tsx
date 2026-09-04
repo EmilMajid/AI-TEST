@@ -280,15 +280,8 @@ export default function ParentDashboard() {
       let localLinks: LinkedStudent[] = []
 
       const isTargetAyaz = (s: any) => {
-        const name = `${s.firstName || ''} ${s.lastName || ''} ${s.studentName || ''}`.toLowerCase()
-        const email = (s.studentEmail || s.email || '').toLowerCase()
-        const uId = (s.uniqueId || '').toLowerCase()
-        return (
-          uId.includes('ayaz.rzayev.161') ||
-          uId.includes('ayaz.rzayev.309') ||
-          (name.includes('ayaz') && name.includes('rzayev')) ||
-          email.includes('ayaz.rzayev')
-        )
+        const id = String(s.studentId || s.id || '').toLowerCase()
+        return id === 'student-ayaz-161-test' || id === 'student-ayaz-309-test'
       }
 
       const cached = localStorage.getItem(cacheKey) || (userEmail ? localStorage.getItem(`linked_students_${parentId}`) : null)
@@ -960,9 +953,7 @@ export default function ParentDashboard() {
                         <DialogDescription>
                           {createdCredentials
                             ? "Şagirdin platformaya daxil olması üçün məlumatlar hazırdır"
-                            : addStudentStep === 'choice'
-                            ? "Şagirdin qeydiyyat statusunu seçin"
-                            : "Şagirdin məlumatlarını daxil edin"}
+                            : "Övladınızın məlumatlarını daxil edin və profilinizə əlavə edin"}
                         </DialogDescription>
                       </DialogHeader>
 
@@ -980,13 +971,13 @@ export default function ParentDashboard() {
                               <div className="flex justify-between items-center">
                                 <span className="text-gray-500 font-sans">İstifadəçi ID / E-mail:</span>
                                 <span className="font-bold text-primary bg-primary/5 px-2 py-0.5 rounded select-all">
-                                  {createdCredentials.identifier}
+                                   {createdCredentials.identifier}
                                 </span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-gray-500 font-sans">Giriş Şifrəsi:</span>
                                 <span className="font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded select-all">
-                                  {createdCredentials.password}
+                                   {createdCredentials.password}
                                 </span>
                               </div>
                             </div>
@@ -998,40 +989,11 @@ export default function ParentDashboard() {
                             className={`w-full ${themeClasses.primary}`}
                             onClick={() => {
                               setCreatedCredentials(null)
-                              setAddStudentStep('choice')
                               setIsAddStudentOpen(false)
                             }}
                           >
                             Oldu, Bağla
                           </Button>
-                        </div>
-                      ) : addStudentStep === 'choice' ? (
-                        <div className="grid grid-cols-2 gap-4 mt-4">
-                          <Card
-                            className="cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition-all"
-                            onClick={() => router.push('/register?role=student')}
-                          >
-                            <CardContent className="flex flex-col items-center justify-center p-6 text-center h-full">
-                              <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-3">
-                                <Plus className="h-6 w-6 text-blue-600" />
-                              </div>
-                              <h3 className="font-semibold mb-1">Yeni Şagird</h3>
-                              <p className="text-xs text-gray-500">Platformada qeydiyyatdan keçməyib</p>
-                            </CardContent>
-                          </Card>
-
-                          <Card
-                            className="cursor-pointer hover:border-green-500 hover:bg-green-50 transition-all"
-                            onClick={() => setAddStudentStep('form')}
-                          >
-                            <CardContent className="flex flex-col items-center justify-center p-6 text-center h-full">
-                              <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center mb-3">
-                                <User className="h-6 w-6 text-green-600" />
-                              </div>
-                              <h3 className="font-semibold mb-1">Mövcud Şagird</h3>
-                              <p className="text-xs text-gray-500">Artıq qeydiyyatdan keçib</p>
-                            </CardContent>
-                          </Card>
                         </div>
                       ) : (
                         <div className="space-y-3 mt-3">
@@ -1128,8 +1090,8 @@ export default function ParentDashboard() {
                           </div>
 
                           <div className="flex gap-3 pt-2">
-                            <Button variant="outline" onClick={() => setAddStudentStep('choice')} className="w-1/3">
-                              Geri
+                            <Button variant="outline" onClick={() => setIsAddStudentOpen(false)} className="w-1/3">
+                              İmtina
                             </Button>
                             <Button onClick={handleAddStudent} disabled={isAddingStudent} className="w-2/3">
                               {isAddingStudent ? "Əlavə edilir..." : "Şagird Əlavə Et"}

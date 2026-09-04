@@ -46,14 +46,8 @@ let inMemoryResults: StoredTestResult[] = []
 
 function isAyazTest(r: any): boolean {
   if (!r) return false
-  const email = (r.studentEmail || "").toLowerCase()
-  const name = (r.studentName || "").toLowerCase()
   const id = String(r.studentId || "").toLowerCase()
-  return (
-    email.includes("ayaz.rzayev") ||
-    (name.includes("ayaz") && name.includes("rzayev")) ||
-    id.includes("ayaz.rzayev")
-  )
+  return id === "student-ayaz-161-test" || id === "student-ayaz-309-test"
 }
 
 export function loadTestResultsFromDisk(): StoredTestResult[] {

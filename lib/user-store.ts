@@ -46,15 +46,9 @@ const deletedUserIds = new Set<string>()
 
 export function isAyazTarget(u: any): boolean {
   if (!u) return false
-  const fName = (u.firstName || "").toLowerCase().trim()
-  const lName = (u.lastName || "").toLowerCase().trim()
-  const email = (u.email || u.studentEmail || "").toLowerCase().trim()
-  const uId = (u.uniqueId || getUserUniqueId(u) || "").toLowerCase().trim()
-
-  if (uId === "@ayaz.rzayev.161" || uId === "@ayaz.rzayev.309") return true
-  if (uId.includes("ayaz.rzayev.161") || uId.includes("ayaz.rzayev.309")) return true
-  if (fName === "ayaz" && lName === "rzayev") return true
-  if (email.includes("ayaz.rzayev")) return true
+  const idStr = String(u.id || "").toLowerCase().trim()
+  // Only target the specific old test dummy IDs if any
+  if (idStr === "student-ayaz-161-test" || idStr === "student-ayaz-309-test") return true
   return false
 }
 
