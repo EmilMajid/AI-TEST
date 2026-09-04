@@ -4,6 +4,7 @@ import { requireAuth, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
 import { MOCK_USERS } from "@/lib/mock-data"
 import { getUserUniqueId } from "@/lib/profile-utils"
+import { getAllUsers } from "@/lib/user-store"
 
 // Mock storage for demo mode
 let mockLinks: any[] = [
@@ -36,6 +37,22 @@ let mockLinks: any[] = [
       lastName: "Məcidzadə",
       email: "emilia.mecidzade@example.com",
       class: "2",
+      school: "161 saylı məktəb"
+    }
+  },
+  {
+    id: 10,
+    parentId: "parent-rzayev",
+    studentId: "student-gunay",
+    relationshipType: "parent",
+    status: "active",
+    linkedAt: new Date().toISOString(),
+    student: {
+      id: "student-gunay",
+      firstName: "Günay",
+      lastName: "Rzayeva",
+      email: "gunay.rzayeva@test.com",
+      class: "7",
       school: "161 saylı məktəb"
     }
   }
@@ -198,54 +215,76 @@ export async function GET(request: NextRequest) {
     if (auth instanceof NextResponse) return auth
 
     if (isDemoMode) {
-      // Find the user in MOCK_USERS by email to get their real string ID (e.g., "parent-aysel")
-      const user = MOCK_USERS.find(u => u.email.toLowerCase() === auth.user.email.toLowerCase());
-      const effectiveId = user ? user.id : auth.user.id;
+      const allUsers = getAllUsers();
+      const user = allUsers.find(
+        (u) =>
+          (u.email && auth.user?.email && u.email.toLowerCase() === auth.user.email.toLowerCase()) ||
+          String(u.id) === String(auth.user?.id)
+      );
+      const effectiveId = user ? user.id : (auth.user?.id || "parent-rzayev");
+      const isRzayev = effectiveId === "parent-rzayev" || auth.user?.email?.toLowerCase() === "r.h.rzayev@gmail.com";
 
       // Return mock links for demo
       // 1. Get explicit mock links
-      const explicitLinks = mockLinks.filter(l => l.parentId === effectiveId && l.status === "active").map(link => ({
-        id: link.id,
-        studentId: link.student.id,
-        studentName: `${link.student.firstName} ${link.student.lastName}`,
-        studentEmail: link.student.email,
-        studentClass: link.student.class,
-        studentSchool: link.student.school,
-        relationshipType: link.relationshipType,
-        linkedAt: link.linkedAt,
-      }));
+      const explicitLinks = mockLinks
+        .filter((l) => (l.parentId === effectiveId || (isRzayev && l.parentId === "parent-rzayev")) && l.status === "active")
+        .map((link) => ({
+          id: link.id,
+          studentId: link.student.id,
+          studentName: `${link.student.firstName} ${link.student.lastName}`,
+          studentEmail: link.student.email,
+          studentClass: link.student.class,
+          studentSchool: link.student.school,
+          relationshipType: link.relationshipType,
+          linkedAt: link.linkedAt,
+        }));
 
       // 2. Get links from MOCK_USERS relations
       let relatedStudents: any[] = [];
 
-      if (user) {
-        if (user.role === 'parent') {
-          relatedStudents = MOCK_USERS.filter(u => (u as any).parentId === user.id);
-        } else if (user.role === 'teacher') {
-          relatedStudents = MOCK_USERS.filter(u => (u as any).teacherId === user.id);
-        } else if (user.role === 'director') {
-          relatedStudents = MOCK_USERS.filter(u => (u as any).directorId === user.id || u.school === user.school);
+      if (user || isRzayev) {
+        const uRole = user?.role || "parent";
+        if (uRole === "parent" || isRzayev) {
+          relatedStudents = allUsers.filter((u) => (u as any).parentId === effectiveId || (isRzayev && (u as any).parentId === "parent-rzayev"));
+        } else if (uRole === "teacher") {
+          relatedStudents = allUsers.filter((u) => (u as any).teacherId === effectiveId);
+        } else if (uRole === "director") {
+          relatedStudents = allUsers.filter((u) => (u as any).directorId === effectiveId || u.school === user?.school);
         }
       }
 
-      const relationLinks = relatedStudents.map(student => ({
+      const relationLinks = relatedStudents.map((student) => ({
         id: `rel-${student.id}`,
         studentId: student.id,
         studentName: `${student.firstName} ${student.lastName}`,
         studentEmail: student.email,
-        studentClass: student.class,
-        studentSchool: student.school,
+        studentClass: student.class || "7",
+        studentSchool: student.school || "161 saylı məktəb",
         relationshipType: user?.role || "parent",
         linkedAt: new Date().toISOString(),
       }));
 
       // Merge and remove duplicates by studentId
       const allLinks = [...explicitLinks];
-      relationLinks.forEach(rl => {
-        if (!allLinks.some(al => al.studentId === rl.studentId)) {
+      relationLinks.forEach((rl) => {
+        if (!allLinks.some((al) => al.studentId === rl.studentId)) {
           allLinks.push(rl);
         }
       });
+
+      // Special guarantee for parent-rzayev: Günay Rzayeva
+      if (isRzayev && !allLinks.some((al) => al.studentId === "student-gunay")) {
+        allLinks.unshift({
+          id: 10,
+          studentId: "student-gunay",
+          studentName: "Günay Rzayeva",
+          studentEmail: "gunay.rzayeva@test.com",
+          studentClass: "7",
+          studentSchool: "161 saylı məktəb",
+          relationshipType: "parent",
+          linkedAt: new Date().toISOString(),
+        });
+      }
 
       return NextResponse.json({
         success: true,

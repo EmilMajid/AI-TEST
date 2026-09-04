@@ -183,7 +183,8 @@ export const MOCK_USERS = [
     school: "161 saylı məktəb",
     class: "7",
     region: "Bakı",
-    role: "student"
+    role: "student",
+    parentId: "parent-rzayev"
   },
   {
     id: "student-elvin",

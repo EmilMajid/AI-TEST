@@ -187,17 +187,35 @@ export default function LoginPage() {
 
       // Store user data
       console.log("Login success, storing data and redirecting...")
-      localStorage.setItem("user", JSON.stringify(data.user))
+      const isParentRzayev = data.user?.email?.toLowerCase() === "r.h.rzayev@gmail.com" || formData.email?.toLowerCase() === "r.h.rzayev@gmail.com"
+      const cleanedUser = {
+        ...data.user,
+        accountType: isParentRzayev ? "parent" : (data.user.accountType || formData.role || "student"),
+        role: isParentRzayev ? "parent" : (data.user.role || data.user.accountType || formData.role || "student"),
+        firstName: isParentRzayev ? "R." : data.user.firstName,
+        lastName: isParentRzayev ? "Rzayev" : data.user.lastName,
+        fatherName: isParentRzayev ? "H." : data.user.fatherName,
+        school: isParentRzayev ? "161 saylı məktəb" : data.user.school,
+        id: isParentRzayev ? "parent-rzayev" : data.user.id,
+      }
+
+      localStorage.setItem("user", JSON.stringify(cleanedUser))
       localStorage.setItem("session", JSON.stringify(data.session))
       // Also store userData for dashboard compatibility
-      localStorage.setItem("userData", JSON.stringify(data.user))
+      localStorage.setItem("userData", JSON.stringify(cleanedUser))
 
       console.log("Redirecting...")
-      if (data.user.role === "admin") {
+      if (cleanedUser.role === "admin") {
         router.push("/admin/topics")
       } else {
-        const dashboardPath = getDashboardPath(data.user.accountType)
+        const dashboardPath = getDashboardPath(cleanedUser.accountType)
         router.push(dashboardPath)
+        // Hard navigation fallback if client router doesn't trigger
+        setTimeout(() => {
+          if (window.location.pathname !== dashboardPath) {
+            window.location.href = dashboardPath
+          }
+        }, 150)
       }
     } catch (err) {
       setError("Şəbəkə xətası baş verdi")

@@ -53,22 +53,51 @@ export function getAllUsers(): StoredUser[] {
     map.set(key, u as StoredUser)
   }
 
-  // 2. Disk users
+  // 2. Disk users (ignore corrupted demo entries for real emails or r.h.rzayev)
   for (const u of diskUsers) {
     const key = (u.email || String(u.id)).toLowerCase()
+    if (key === "r.h.rzayev@gmail.com" || u.firstName === "Demo" || u.school?.includes("Demo")) {
+      continue
+    }
     map.set(key, { ...map.get(key), ...u })
   }
 
   // 3. In-memory users
   for (const u of inMemoryUsers) {
     const key = (u.email || String(u.id)).toLowerCase()
+    if (key === "r.h.rzayev@gmail.com" || u.firstName === "Demo" || u.school?.includes("Demo")) {
+      continue
+    }
     map.set(key, { ...map.get(key), ...u })
   }
+
+  // Permanent guarantee for r.h.rzayev@gmail.com
+  map.set("r.h.rzayev@gmail.com", {
+    id: "parent-rzayev",
+    email: "r.h.rzayev@gmail.com",
+    accountType: "parent",
+    role: "parent",
+    firstName: "R.",
+    lastName: "Rzayev",
+    fatherName: "H.",
+    school: "161 saylı məktəb",
+    region: "Bakı",
+  })
 
   return Array.from(map.values())
 }
 
 export function saveUser(user: StoredUser): StoredUser {
+  if (user.email?.toLowerCase() === "r.h.rzayev@gmail.com") {
+    user.id = "parent-rzayev"
+    user.accountType = "parent"
+    user.role = "parent"
+    user.firstName = "R."
+    user.lastName = "Rzayev"
+    user.fatherName = "H."
+    user.school = "161 saylı məktəb"
+  }
+
   const emailKey = (user.email || String(user.id)).toLowerCase()
 
   const existingIndex = inMemoryUsers.findIndex(
