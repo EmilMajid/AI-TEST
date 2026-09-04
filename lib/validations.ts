@@ -63,7 +63,7 @@ export const parentRegistrationSchema = z
   .object({
     role: z.enum(["parent", "teacher", "director"], {
       errorMap: () => ({ message: "Rol seçilməlidir" }),
-    }),
+    }).default("parent"),
 
     firstName: z
       .string()
@@ -77,19 +77,19 @@ export const parentRegistrationSchema = z
       .string()
       .min(2, "Soyad ən azı 2 hərf olmalıdır")
       .max(50, "Soyad 50 hərfdən çox ola bilməz")
-      .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s]+$/, "Soyad yalnız hərflərdən ibarət olmalıdır"),
+      .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s'-]+$/, "Soyad yalnız hərflərdən ibarət olmalıdır"),
 
     fatherName: z
       .string()
       .min(2, "Ata adı ən azı 2 hərf olmalıdır")
       .max(50, "Ata adı 50 hərfdən çox ola bilməz")
-      .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
+      .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s'-]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
 
-    birthDate: z.string().min(1, "Doğum tarixi seçilməlidir"),
+    birthDate: z.string().optional().or(z.literal("")),
 
     region: z.string().min(1, "Ərazi seçilməlidir"),
 
-    school: z.string().min(3, "Məktəb adı ən azı 3 hərf olmalıdır").max(100, "Məktəb adı 100 hərfdən çox ola bilməz"),
+    school: z.string().optional().or(z.literal("")),
 
     email: z
       .string()

@@ -126,6 +126,11 @@ export default function RegisterPage() {
   // Parent form
   const parentForm = useForm<ParentRegistrationData>({
     resolver: zodResolver(parentRegistrationSchema),
+    defaultValues: {
+      role: "parent",
+      region: "Bakı",
+      school: "161 saylı məktəb",
+    },
   })
 
   const onStudentSubmit = async (data: UserRegistrationData) => {
@@ -174,6 +179,10 @@ export default function RegisterPage() {
           theme: theme.colorScheme,
         }),
       )
+
+      if (result.session) {
+        localStorage.setItem("session", JSON.stringify(result.session))
+      }
 
       router.push("/dashboard")
     } catch (error) {
@@ -244,6 +253,10 @@ export default function RegisterPage() {
         }),
       )
 
+      if (result.session) {
+        localStorage.setItem("session", JSON.stringify(result.session))
+      }
+
       router.push("/parent-dashboard")
     } catch (error) {
       toast({
@@ -259,11 +272,8 @@ export default function RegisterPage() {
   const handleRegionChange = (region: string) => {
     setSelectedRegion(region)
     setSelectedSubRegion("")
-    if (registrationType === "student") {
-      studentForm.setValue("region", region)
-    } else {
-      parentForm.setValue("region", region)
-    }
+    studentForm.setValue("region", region, { shouldValidate: true })
+    parentForm.setValue("region", region, { shouldValidate: true })
     updateTheme({ region })
   }
 
@@ -348,7 +358,19 @@ export default function RegisterPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Tabs value={registrationType} onValueChange={(v) => setRegistrationType(v as "student" | "parent")}>
+                  <Tabs
+                    value={registrationType}
+                    onValueChange={(v) => {
+                      const type = v as "student" | "parent"
+                      setRegistrationType(type)
+                      if (type === "parent") {
+                        if (selectedRegion) parentForm.setValue("region", selectedRegion, { shouldValidate: true })
+                        if (!parentForm.getValues("role")) parentForm.setValue("role", "parent", { shouldValidate: true })
+                      } else {
+                        if (selectedRegion) studentForm.setValue("region", selectedRegion, { shouldValidate: true })
+                      }
+                    }}
+                  >
                     <TabsList className="grid w-full grid-cols-2 mb-6">
                       <TabsTrigger value="student">
                         <GraduationCap className="h-4 w-4 mr-2" />
@@ -607,7 +629,10 @@ export default function RegisterPage() {
                         {/* Role Selection */}
                         <div>
                           <Label htmlFor="role">Rol *</Label>
-                          <Select onValueChange={(value) => parentForm.setValue("role", value as any)}>
+                          <Select
+                            value={parentForm.watch("role") || "parent"}
+                            onValueChange={(value) => parentForm.setValue("role", value as any, { shouldValidate: true })}
+                          >
                             <SelectTrigger className={parentForm.formState.errors.role ? "border-red-500" : ""}>
                               <SelectValue placeholder="Rolunuzu seçin" />
                             </SelectTrigger>
@@ -681,7 +706,7 @@ export default function RegisterPage() {
                         </div>
 
                         <div>
-                          <Label htmlFor="parent-birthDate">Doğum tarixi *</Label>
+                          <Label htmlFor="parent-birthDate">Doğum tarixi</Label>
                           <Input
                             id="parent-birthDate"
                             type="date"
@@ -698,7 +723,10 @@ export default function RegisterPage() {
                         {/* Location */}
                         <div>
                           <Label htmlFor="parent-region">Yaşadığınız ərazi *</Label>
-                          <Select onValueChange={handleRegionChange}>
+                          <Select 
+                            value={parentForm.watch("region") || selectedRegion} 
+                            onValueChange={handleRegionChange}
+                          >
                             <SelectTrigger className={parentForm.formState.errors.region ? "border-red-500" : ""}>
                               <SelectValue placeholder="Şəhər/rayon seçin" />
                             </SelectTrigger>
@@ -722,11 +750,11 @@ export default function RegisterPage() {
                         </div>
 
                         <div>
-                          <Label htmlFor="parent-school">Məktəb *</Label>
+                          <Label htmlFor="parent-school">Məktəb (Uşağın oxuduğu məktəb)</Label>
                           <Input
                             id="parent-school"
                             {...parentForm.register("school")}
-                            placeholder="Məktəbin adını daxil edin"
+                            placeholder="Məsələn: 161 saylı məktəb"
                             className={parentForm.formState.errors.school ? "border-red-500" : ""}
                           />
                           {parentForm.formState.errors.school && (
