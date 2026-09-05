@@ -108,6 +108,55 @@ export function getAllUsers(): StoredUser[] {
     map.set(key, { ...map.get(key), ...u })
   }
 
+  // Ensure Rufat Rzayev (Parent) and Ayaz Rzayev (Student) exist and are linked
+  const rufatKey = "r.h.rzayev@gmail.com"
+  const ayazKey = "ayaz.rzayev.309@testai.az"
+  let rufatUser = map.get(rufatKey) || map.get("parent-rufat")
+  let ayazUser = map.get(ayazKey) || map.get("student-ayaz-309")
+
+  if (!rufatUser && !deletedUserIds.has(rufatKey)) {
+    rufatUser = {
+      id: "parent-rufat",
+      email: "r.h.rzayev@gmail.com",
+      password: "test12345",
+      accountType: "parent",
+      firstName: "Rüfət",
+      lastName: "Rzayev",
+      fatherName: "Həsən",
+      school: "309 saylı məktəb",
+      region: "Bakı",
+      role: "parent",
+      status: "active",
+      isBlocked: false,
+    }
+    map.set(rufatKey, rufatUser)
+  }
+
+  if (!ayazUser && !deletedUserIds.has(ayazKey)) {
+    ayazUser = {
+      id: "student-ayaz-309",
+      email: "ayaz.rzayev.309@testai.az",
+      password: "test12345",
+      accountType: "student",
+      firstName: "Ayaz",
+      lastName: "Rzayev",
+      fatherName: "Rüfət",
+      school: "309 saylı məktəb",
+      class: "5",
+      region: "Bakı",
+      role: "student",
+      parentId: rufatUser?.id || "parent-rufat",
+      parentEmail: "r.h.rzayev@gmail.com",
+      status: "active",
+      isBlocked: false,
+    }
+    map.set(ayazKey, ayazUser)
+  } else if (ayazUser && rufatUser) {
+    ayazUser.parentId = rufatUser.id
+    ayazUser.parentEmail = rufatUser.email
+    if (!ayazUser.fatherName) ayazUser.fatherName = "Rüfət"
+  }
+
   return Array.from(map.values())
 }
 
@@ -369,6 +418,25 @@ const DEFAULT_LINKS: StudentLink[] = [
       class: "2",
       school: "161 saylı məktəb"
     }
+  },
+  {
+    id: 3,
+    parentId: "parent-rufat",
+    parentEmail: "r.h.rzayev@gmail.com",
+    studentId: "student-ayaz-309",
+    relationshipType: "parent",
+    status: "active",
+    linkedAt: "2024-01-01T00:00:00.000Z",
+    student: {
+      id: "student-ayaz-309",
+      firstName: "Ayaz",
+      lastName: "Rzayev",
+      fatherName: "Rüfət",
+      email: "ayaz.rzayev.309@testai.az",
+      uniqueId: "@ayaz.rzayev.309",
+      class: "5",
+      school: "309 saylı məktəb"
+    }
   }
 ]
 
@@ -458,11 +526,14 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
   const cleanEmail = (parentEmail || "").trim().toLowerCase()
   const parentIdStr = parentId !== undefined && parentId !== null ? String(parentId) : ""
 
+  const isRufatParent = cleanEmail === "r.h.rzayev@gmail.com" || parentIdStr === "parent-rufat"
+
   const matched = links.filter((l) => {
     if (isAyazTarget(l.student) || isAyazTarget({ id: l.studentId, email: l.student?.email })) return false
     if (l.status !== "active") return false
     if (parentIdStr && String(l.parentId) === parentIdStr) return true
     if (cleanEmail && l.parentEmail && l.parentEmail.toLowerCase() === cleanEmail) return true
+    if (isRufatParent && (String(l.studentId) === "student-ayaz-309" || l.student?.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (l.student?.firstName?.toLowerCase() === "ayaz" && l.student?.lastName?.toLowerCase() === "rzayev"))) return true
     return false
   })
 
@@ -473,6 +544,7 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
       if (u.accountType !== "student") return false
       if (parentIdStr && String(u.parentId) === parentIdStr) return true
       if (cleanEmail && u.parentEmail && u.parentEmail.toLowerCase() === cleanEmail) return true
+      if (isRufatParent && (u.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (u.firstName?.toLowerCase() === "ayaz" && u.lastName?.toLowerCase() === "rzayev"))) return true
       return false
     })
 

@@ -225,6 +225,30 @@ export default function AdminUsersPage() {
                                                         </span>
                                                     )}
                                                 </div>
+                                                {user.linkedParent && (
+                                                    <div className="text-[11px] text-slate-500 font-normal mt-0.5 flex items-center gap-1">
+                                                        <span className="text-slate-400">Valideyn:</span>
+                                                        <Link href={`/admin/users/${user.linkedParent.id}`} className="text-blue-600 hover:underline font-medium">
+                                                            {user.linkedParent.name}
+                                                        </Link>
+                                                        {user.linkedParent.email && (
+                                                            <span className="text-slate-400 font-mono text-[10px]">({user.linkedParent.email})</span>
+                                                        )}
+                                                    </div>
+                                                )}
+                                                {user.linkedChildren && user.linkedChildren.length > 0 && (
+                                                    <div className="text-[11px] text-slate-500 font-normal mt-0.5 flex items-center gap-1 flex-wrap">
+                                                        <span className="text-slate-400">Övlad:</span>
+                                                        {user.linkedChildren.map((child: any, idx: number) => (
+                                                            <span key={child.id || idx}>
+                                                                {idx > 0 && ", "}
+                                                                <Link href={`/admin/users/${child.id}`} className="text-emerald-700 hover:underline font-medium">
+                                                                    {child.name} {child.class ? `(${child.class}-ci sinif)` : ''}
+                                                                </Link>
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                )}
                                             </TableCell>
                                             <TableCell>
                                                 <div className="flex flex-col text-xs">

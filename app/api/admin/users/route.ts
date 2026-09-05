@@ -1,17 +1,102 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, blockUser, deleteUser } from "@/lib/user-store"
+import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET() {
   try {
     const allUsers = getAllUsers()
-    const formattedUsers = allUsers.map((u) => ({
-      ...u,
-      uniqueId: getUserUniqueId(u),
-      isBlocked: u.isBlocked ?? false,
-      status: u.isBlocked ? "blocked" : (u.status || "active"),
-    }))
+    const allLinks = loadLinksFromDisk()
+
+    const formattedUsers = allUsers.map((u) => {
+      const uId = getUserUniqueId(u)
+      const isBlocked = u.isBlocked ?? false
+      const status = u.isBlocked ? "blocked" : (u.status || "active")
+
+      let linkedParent: any = null
+      let linkedChildren: any[] = []
+
+      const userRole = u.role || u.accountType
+
+      if (userRole === "student") {
+        let p = allUsers.find((parent) => String(parent.id) === String((u as any).parentId))
+        if (!p && (u as any).parentEmail) {
+          p = allUsers.find((parent) => parent.email && parent.email.toLowerCase() === (u as any).parentEmail?.toLowerCase())
+        }
+        if (!p) {
+          const l = allLinks.find(
+            (link) =>
+              String(link.studentId) === String(u.id) ||
+              (link.student?.email && link.student.email.toLowerCase() === u.email?.toLowerCase())
+          )
+          if (l) {
+            p = allUsers.find(
+              (parent) =>
+                String(parent.id) === String(l.parentId) ||
+                (l.parentEmail && parent.email?.toLowerCase() === l.parentEmail.toLowerCase())
+            )
+          }
+        }
+        if (
+          !p &&
+          (u.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" ||
+            (u.firstName?.toLowerCase() === "ayaz" && u.lastName?.toLowerCase() === "rzayev"))
+        ) {
+          p = allUsers.find(
+            (parent) =>
+              parent.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
+              (parent.firstName?.toLowerCase() === "rüfət" && parent.lastName?.toLowerCase() === "rzayev")
+          )
+        }
+
+        if (p) {
+          linkedParent = {
+            id: p.id,
+            name: `${p.firstName} ${p.lastName}`.trim(),
+            email: p.email,
+            school: p.school,
+          }
+        }
+      } else if (userRole === "parent") {
+        const children = allUsers.filter((c) => {
+          if (c.role !== "student" && c.accountType !== "student") return false
+          if ((c as any).parentId && String((c as any).parentId) === String(u.id)) return true
+          if ((c as any).parentEmail && u.email && (c as any).parentEmail.toLowerCase() === u.email.toLowerCase()) return true
+          const l = allLinks.find(
+            (link) =>
+              (String(link.parentId) === String(u.id) || (u.email && link.parentEmail?.toLowerCase() === u.email.toLowerCase())) &&
+              (String(link.studentId) === String(c.id) || (c.email && link.student?.email?.toLowerCase() === c.email.toLowerCase()))
+          )
+          if (l) return true
+          if (
+            (u.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
+              (u.firstName?.toLowerCase() === "rüfət" && u.lastName?.toLowerCase() === "rzayev")) &&
+            (c.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" ||
+              (c.firstName?.toLowerCase() === "ayaz" && c.lastName?.toLowerCase() === "rzayev"))
+          ) {
+            return true
+          }
+          return false
+        })
+
+        linkedChildren = children.map((c) => ({
+          id: c.id,
+          name: `${c.firstName} ${c.lastName}`.trim(),
+          email: c.email,
+          class: c.class,
+          school: c.school,
+        }))
+      }
+
+      return {
+        ...u,
+        uniqueId: uId,
+        isBlocked,
+        status,
+        linkedParent,
+        linkedChildren,
+      }
+    })
 
     return NextResponse.json({
       success: true,

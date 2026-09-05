@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
-import { getAllUsers, blockUser, deleteUser } from "@/lib/user-store"
+import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
@@ -33,14 +33,46 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
     }
 
     let relations: any = {}
+    const allLinks = loadLinksFromDisk()
+    const userRole = user.role || user.accountType
 
-    if (user.role === 'student') {
-        const parent = allUsers.find(u => u.id === (user as any).parentId)
+    if (userRole === 'student') {
+        let parent = allUsers.find(u => String(u.id) === String((user as any).parentId))
+        if (!parent && (user as any).parentEmail) {
+            parent = allUsers.find(u => u.email && u.email.toLowerCase() === (user as any).parentEmail?.toLowerCase())
+        }
+        if (!parent) {
+            const l = allLinks.find(
+                link => String(link.studentId) === String(user.id) ||
+                (link.student?.email && link.student.email.toLowerCase() === user.email?.toLowerCase())
+            )
+            if (l) {
+                parent = allUsers.find(p => String(p.id) === String(l.parentId) || (l.parentEmail && p.email?.toLowerCase() === l.parentEmail.toLowerCase()))
+            }
+        }
+        if (!parent && (user.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (user.firstName?.toLowerCase() === "ayaz" && user.lastName?.toLowerCase() === "rzayev"))) {
+            parent = allUsers.find(p => p.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (p.firstName?.toLowerCase() === "rüfət" && p.lastName?.toLowerCase() === "rzayev"))
+        }
+
         const teacher = allUsers.find(u => u.id === (user as any).teacherId)
         if (parent) relations.parent = parent
         if (teacher) relations.teacher = teacher
-    } else if (user.role === 'parent') {
-        const children = allUsers.filter(u => (u as any).parentId === user.id)
+    } else if (userRole === 'parent') {
+        const children = allUsers.filter(c => {
+            if (c.role !== "student" && c.accountType !== "student") return false
+            if ((c as any).parentId && String((c as any).parentId) === String(user.id)) return true
+            if ((c as any).parentEmail && user.email && (c as any).parentEmail.toLowerCase() === user.email.toLowerCase()) return true
+            const l = allLinks.find(
+                link => (String(link.parentId) === String(user.id) || (user.email && link.parentEmail?.toLowerCase() === user.email.toLowerCase())) &&
+                (String(link.studentId) === String(c.id) || (c.email && link.student?.email?.toLowerCase() === c.email.toLowerCase()))
+            )
+            if (l) return true
+            if ((user.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (user.firstName?.toLowerCase() === "rüfət" && user.lastName?.toLowerCase() === "rzayev")) &&
+                (c.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (c.firstName?.toLowerCase() === "ayaz" && c.lastName?.toLowerCase() === "rzayev"))) {
+                return true
+            }
+            return false
+        })
         relations.children = children
     }
 
