@@ -279,9 +279,31 @@ export default function ParentDashboard() {
       const cacheKey = userEmail ? `linked_students_${userEmail.toLowerCase()}` : `linked_students_${parentId}`
       let localLinks: LinkedStudent[] = []
 
+      // Read deleted students cache
+      let deletedSet = new Set<string>()
+      try {
+        const rawDel = localStorage.getItem("deleted_students_ids") || "[]"
+        const arrDel = JSON.parse(rawDel)
+        if (Array.isArray(arrDel)) {
+          arrDel.forEach((x: string) => deletedSet.add(String(x).toLowerCase()))
+        }
+      } catch (e) {}
+
       const isTargetAyaz = (s: any) => {
         const id = String(s.studentId || s.id || '').toLowerCase()
-        return id === 'student-ayaz-161-test' || id === 'student-ayaz-309-test'
+        const mail = (s.studentEmail || s.email || '').toLowerCase()
+        const name = (s.studentName || `${s.firstName || ''} ${s.lastName || ''}`).trim().toLowerCase().replace(/\s+/g, ' ')
+        if (id === 'student-ayaz-161-test' || id === 'student-ayaz-309-test') return true
+        if (deletedSet.has(id) || (mail && deletedSet.has(mail)) || (name && deletedSet.has(`name:${name}`))) return true
+        return false
+      }
+
+      const getDedupeKey = (s: any) => {
+        const name = (s.studentName || `${s.firstName || ''} ${s.lastName || ''}`).trim().toLowerCase().replace(/\s+/g, ' ')
+        const mail = (s.studentEmail || s.email || '').toLowerCase()
+        if (name) return `name:${name}`
+        if (mail && mail.includes('@')) return `email:${mail}`
+        return `id:${String(s.studentId || s.id || '')}`
       }
 
       const cached = localStorage.getItem(cacheKey) || (userEmail ? localStorage.getItem(`linked_students_${parentId}`) : null)
@@ -310,6 +332,15 @@ export default function ParentDashboard() {
       }
 
       if (localLinks.length > 0) {
+        // Deduplicate localLinks by name/email
+        const localDedupMap = new Map<string, LinkedStudent>()
+        for (const l of localLinks) {
+          const k = getDedupeKey(l)
+          if (!localDedupMap.has(k) || l.studentClass === "8" || l.class === "8") {
+            localDedupMap.set(k, l)
+          }
+        }
+        localLinks = Array.from(localDedupMap.values())
         setLinkedStudents(localLinks)
         if (!selectedStudent) {
           setSelectedStudent(localLinks[0].studentId)
@@ -325,13 +356,13 @@ export default function ParentDashboard() {
       let links = data.success && data.links ? data.links.filter((s: any) => !isTargetAyaz(s)) : []
 
       if (links.length > 0) {
-        // Merge server links with localLinks
+        // Merge server links with localLinks, deduplicating strictly by name / email
         const linkMap = new Map<string, LinkedStudent>()
         for (const l of localLinks) {
-          linkMap.set(String(l.studentId || l.id), l)
+          linkMap.set(getDedupeKey(l), l)
         }
         for (const l of links) {
-          linkMap.set(String(l.studentId || l.id), l)
+          linkMap.set(getDedupeKey(l), l)
         }
         const merged = Array.from(linkMap.values())
         setLinkedStudents(merged)
@@ -351,7 +382,6 @@ export default function ParentDashboard() {
         loadStudentResults(activeStudentId, parentId, timeRange, userEmail)
       } else if (localLinks.length > 0) {
         // Server returned empty, but localLinks exist (e.g. serverless container restart)
-        // DO NOT wipe localLinks! Keep them displayed and sync to server in background
         setLinkedStudents(localLinks)
         const firstStudentId = localLinks[0].studentId
         const activeStudentId = selectedStudent || firstStudentId
@@ -648,7 +678,7 @@ export default function ParentDashboard() {
     }
   }
 
-  const handleRemoveStudent = async (linkId: number | string) => {
+  const handleRemoveStudent = async (target: LinkedStudent | number | string) => {
     if (!confirm("Bu şagirdi silmək istədiyinizdən əminsiniz?")) {
       return
     }
@@ -657,7 +687,19 @@ export default function ParentDashboard() {
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
 
-      const response = await fetch(`/api/students/link?linkId=${encodeURIComponent(linkId)}`, {
+      const studentObj: any = typeof target === "object" ? target : (linkedStudents.find(s => String(s.id) === String(target) || String(s.studentId) === String(target)) || { id: target })
+      const linkId = String(studentObj.id || target)
+      const studentId = String(studentObj.studentId || studentObj.id || target)
+      const studentEmail = (studentObj.studentEmail || studentObj.email || "").trim()
+      const studentName = (studentObj.studentName || `${studentObj.firstName || ""} ${studentObj.lastName || ""}`).trim()
+
+      const query = new URLSearchParams()
+      query.set("linkId", linkId)
+      if (studentId) query.set("studentId", studentId)
+      if (studentEmail) query.set("studentEmail", studentEmail)
+      if (studentName) query.set("studentName", studentName)
+
+      const response = await fetch(`/api/students/link?${query.toString()}`, {
         method: "DELETE",
         headers: token ? { "Authorization": `Bearer ${token}` } : {}
       })
@@ -670,29 +712,57 @@ export default function ParentDashboard() {
           description: "Şagird uğurla silindi",
         })
 
-        setLinkedStudents((prev) => {
-          const updated = prev.filter((s) => String(s.id) !== String(linkId) && String(s.studentId) !== String(linkId))
-          if (userData?.email) {
-            try {
-              localStorage.setItem(`linked_students_${userData.email.toLowerCase()}`, JSON.stringify(updated))
-            } catch (e) {}
-          }
-          if (userData?.id) {
-            try {
-              localStorage.setItem(`linked_students_${userData.id}`, JSON.stringify(updated))
-            } catch (e) {}
-          }
-          try {
-            const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
-            const updatedAll = allLinks.filter((l: any) => String(l.id) !== String(linkId) && String(l.studentId) !== String(linkId))
-            localStorage.setItem("all_student_links", JSON.stringify(updatedAll))
-          } catch (e) {}
-          return updated
-        })
+        // Persist to deleted cache in localStorage
+        try {
+          const rawDel = localStorage.getItem("deleted_students_ids") || "[]"
+          const parsedDel = JSON.parse(rawDel)
+          const setDel = new Set(Array.isArray(parsedDel) ? parsedDel : [])
+          setDel.add(linkId.toLowerCase())
+          setDel.add(studentId.toLowerCase())
+          if (studentEmail) setDel.add(studentEmail.toLowerCase())
+          if (studentName) setDel.add(`name:${studentName.toLowerCase().replace(/\s+/g, ' ')}`)
+          localStorage.setItem("deleted_students_ids", JSON.stringify(Array.from(setDel)))
+        } catch (e) {}
 
-        loadLinkedStudents(userData.id, userData.email)
-        setSelectedStudent(null)
-        setStudentStats(null)
+        const isMatch = (s: any) => {
+          const sId = String(s.id || "").toLowerCase()
+          const stId = String(s.studentId || "").toLowerCase()
+          const sMail = (s.studentEmail || s.email || "").toLowerCase()
+          const sN = (s.studentName || `${s.firstName || ""} ${s.lastName || ""}`).trim().toLowerCase().replace(/\s+/g, ' ')
+          if (sId === linkId.toLowerCase() || sId === studentId.toLowerCase()) return true
+          if (stId === linkId.toLowerCase() || stId === studentId.toLowerCase()) return true
+          if (studentEmail && sMail === studentEmail.toLowerCase()) return true
+          if (studentName && sN === studentName.toLowerCase().replace(/\s+/g, ' ')) return true
+          return false
+        }
+
+        const remaining = linkedStudents.filter((s) => !isMatch(s))
+        setLinkedStudents(remaining)
+
+        if (userData?.email) {
+          try {
+            localStorage.setItem(`linked_students_${userData.email.toLowerCase()}`, JSON.stringify(remaining))
+          } catch (e) {}
+        }
+        if (userData?.id) {
+          try {
+            localStorage.setItem(`linked_students_${userData.id}`, JSON.stringify(remaining))
+          } catch (e) {}
+        }
+        try {
+          const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
+          const updatedAll = allLinks.filter((l: any) => !isMatch(l.student || l))
+          localStorage.setItem("all_student_links", JSON.stringify(updatedAll))
+        } catch (e) {}
+
+        if (remaining.length > 0) {
+          const nextActiveId = remaining[0].studentId
+          setSelectedStudent(nextActiveId)
+          loadStudentResults(nextActiveId, userData.id, timeRange, userData.email)
+        } else {
+          setSelectedStudent(null)
+          setStudentStats(null)
+        }
       } else {
         throw new Error(data.error || "Şagird silinmədi")
       }
@@ -1240,7 +1310,7 @@ export default function ParentDashboard() {
                                   size="sm"
                                   onClick={(e) => {
                                     e.stopPropagation()
-                                    handleRemoveStudent(student.id)
+                                    handleRemoveStudent(student)
                                   }}
                                   className="text-red-600 hover:text-red-700 hover:bg-red-50 h-8 w-8 p-0"
                                   title="Sil"

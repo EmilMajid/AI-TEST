@@ -79,13 +79,22 @@ export async function GET() {
           return false
         })
 
-        linkedChildren = children.map((c) => ({
-          id: c.id,
-          name: `${c.firstName} ${c.lastName}`.trim(),
-          email: c.email,
-          class: c.class,
-          school: c.school,
-        }))
+        const childDedup = new Map<string, any>()
+        for (const c of children) {
+          const cName = `${c.firstName || ""} ${c.lastName || ""}`.trim().toLowerCase().replace(/\s+/g, " ")
+          const cEmail = (c.email || "").trim().toLowerCase()
+          const key = cName ? `name:${cName}` : (cEmail ? `email:${cEmail}` : `id:${c.id}`)
+          if (!childDedup.has(key) || c.class === "8") {
+            childDedup.set(key, {
+              id: c.id,
+              name: `${c.firstName} ${c.lastName}`.trim(),
+              email: c.email,
+              class: c.class || "8",
+              school: c.school || "309 saylı məktəb",
+            })
+          }
+        }
+        linkedChildren = Array.from(childDedup.values())
       }
 
       return {

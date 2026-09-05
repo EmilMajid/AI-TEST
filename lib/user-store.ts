@@ -533,20 +533,55 @@ const DEFAULT_LINKS: StudentLink[] = [
   }
 ]
 
+const DELETED_LINKS_FILE = path.join(process.cwd(), ".data", "testai_deleted_links.json")
+
+function loadDeletedLinksFromDisk(): Set<string> {
+  const set = new Set<string>()
+  try {
+    if (fs.existsSync(DELETED_LINKS_FILE)) {
+      const raw = fs.readFileSync(DELETED_LINKS_FILE, "utf-8").replace(/^\uFEFF/, "")
+      const arr = JSON.parse(raw)
+      if (Array.isArray(arr)) {
+        arr.forEach((item: string) => set.add(String(item).toLowerCase()))
+      }
+    }
+  } catch (e) {}
+  return set
+}
+
+function saveDeletedLinksToDisk(set: Set<string>) {
+  try {
+    fs.writeFileSync(DELETED_LINKS_FILE, JSON.stringify(Array.from(set), null, 2), "utf-8")
+  } catch (e) {}
+}
+
+const deletedLinkIds = loadDeletedLinksFromDisk()
+
 let inMemoryLinks: StudentLink[] = [...DEFAULT_LINKS]
 
 export function loadLinksFromDisk(): StudentLink[] {
   try {
     if (fs.existsSync(LINKS_FILE)) {
-      const data = fs.readFileSync(LINKS_FILE, "utf-8")
+      const raw = fs.readFileSync(LINKS_FILE, "utf-8")
+      const data = raw.replace(/^\uFEFF/, "")
       const parsed = JSON.parse(data)
       if (Array.isArray(parsed) && parsed.length > 0) {
         const map = new Map<string, StudentLink>()
         for (const l of DEFAULT_LINKS) {
-          map.set(String(l.id), l)
+          const lId = String(l.id).toLowerCase()
+          const sId = String(l.studentId).toLowerCase()
+          const sEmail = (l.student?.email || "").toLowerCase()
+          if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
+            map.set(lId, l)
+          }
         }
         for (const l of parsed) {
-          map.set(String(l.id), l)
+          const lId = String(l.id).toLowerCase()
+          const sId = String(l.studentId).toLowerCase()
+          const sEmail = (l.student?.email || "").toLowerCase()
+          if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
+            map.set(lId, l)
+          }
         }
         inMemoryLinks = Array.from(map.values())
         return inMemoryLinks
@@ -555,7 +590,12 @@ export function loadLinksFromDisk(): StudentLink[] {
   } catch (err) {
     // Ignore read errors
   }
-  return inMemoryLinks
+  return inMemoryLinks.filter((l) => {
+    const lId = String(l.id).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    const sEmail = (l.student?.email || "").toLowerCase()
+    return !deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))
+  })
 }
 
 export function saveLinksToDisk(links: StudentLink[]) {
@@ -589,21 +629,68 @@ export function saveLink(link: StudentLink): StudentLink {
   return link
 }
 
-export function deleteLink(linkId: string | number): boolean {
+export function deleteLink(linkId: string | number, studentId?: string | number, studentEmail?: string, studentName?: string): boolean {
+  const cleanId = String(linkId).trim().toLowerCase()
+  deletedLinkIds.add(cleanId)
+
+  if (studentId) {
+    deletedLinkIds.add(String(studentId).trim().toLowerCase())
+  }
+  if (studentEmail) {
+    deletedLinkIds.add(studentEmail.trim().toLowerCase())
+  }
+  if (studentName) {
+    deletedLinkIds.add(`name:${studentName.trim().toLowerCase()}`)
+  }
+
   const currentLinks = loadLinksFromDisk()
   const linkToDelete = currentLinks.find(
-    (l) => String(l.id) === String(linkId) || String(l.studentId) === String(linkId)
+    (l) =>
+      String(l.id).toLowerCase() === cleanId ||
+      String(l.studentId).toLowerCase() === cleanId ||
+      (l.student?.email && l.student.email.toLowerCase() === cleanId) ||
+      (l.student?.uniqueId && l.student.uniqueId.toLowerCase() === cleanId)
   )
-  const studentIdToDelete = linkToDelete ? linkToDelete.studentId : linkId
 
-  const updated = currentLinks.filter(
-    (l) => String(l.id) !== String(linkId) && String(l.studentId) !== String(linkId)
-  )
+  const studentIdToDelete = linkToDelete ? String(linkToDelete.studentId).toLowerCase() : cleanId
+  deletedLinkIds.add(studentIdToDelete)
+
+  if (linkToDelete?.id) {
+    deletedLinkIds.add(String(linkToDelete.id).toLowerCase())
+  }
+  if (linkToDelete?.student?.email) {
+    deletedLinkIds.add(linkToDelete.student.email.toLowerCase())
+  }
+  if (linkToDelete?.student?.firstName && linkToDelete?.student?.lastName) {
+    deletedLinkIds.add(`name:${linkToDelete.student.firstName.trim().toLowerCase()} ${linkToDelete.student.lastName.trim().toLowerCase()}`)
+  }
+
+  saveDeletedLinksToDisk(deletedLinkIds)
+
+  const updated = currentLinks.filter((l) => {
+    const lId = String(l.id).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    const sEmail = (l.student?.email || "").toLowerCase()
+    const sName = `${l.student?.firstName || ""} ${l.student?.lastName || ""}`.trim().toLowerCase()
+    if (lId === cleanId || lId === studentIdToDelete) return false
+    if (sId === cleanId || sId === studentIdToDelete) return false
+    if (linkToDelete?.student?.email && sEmail === linkToDelete.student.email.toLowerCase()) return false
+    if (deletedLinkIds.has(lId) || deletedLinkIds.has(sId)) return false
+    if (sEmail && deletedLinkIds.has(sEmail)) return false
+    if (sName && deletedLinkIds.has(`name:${sName}`)) return false
+    return true
+  })
+
   saveLinksToDisk(updated)
 
   try {
     const allUsers = getAllUsers()
-    const targetStudent = allUsers.find((u) => String(u.id) === String(studentIdToDelete))
+    const targetStudent = allUsers.find(
+      (u) =>
+        String(u.id).toLowerCase() === cleanId ||
+        String(u.id).toLowerCase() === studentIdToDelete ||
+        (linkToDelete?.student?.email && u.email && u.email.toLowerCase() === linkToDelete.student.email.toLowerCase())
+    )
     if (targetStudent) {
       delete targetStudent.parentId
       delete targetStudent.parentEmail
@@ -624,52 +711,40 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
   const matched = links.filter((l) => {
     if (isAyazTarget(l.student) || isAyazTarget({ id: l.studentId, email: l.student?.email })) return false
     if (l.status !== "active") return false
+    const lId = String(l.id).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    const sEmail = (l.student?.email || "").toLowerCase()
+    const sName = `${l.student?.firstName || ""} ${l.student?.lastName || ""}`.trim().toLowerCase()
+
+    if (deletedLinkIds.has(lId) || deletedLinkIds.has(sId)) return false
+    if (sEmail && deletedLinkIds.has(sEmail)) return false
+    if (sName && deletedLinkIds.has(`name:${sName}`)) return false
+
     if (parentIdStr && String(l.parentId) === parentIdStr) return true
     if (cleanEmail && l.parentEmail && l.parentEmail.toLowerCase() === cleanEmail) return true
-    if (isRufatParent && (String(l.studentId) === "student-ayaz-309" || l.student?.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (l.student?.firstName?.toLowerCase() === "ayaz" && l.student?.lastName?.toLowerCase() === "rzayev"))) return true
+    if (isRufatParent && (String(l.studentId) === "student-ayaz-309" || sEmail === "ayaz.rzayev.309@testai.az")) return true
     return false
   })
 
-  try {
-    const allUsers = getAllUsers()
-    const relatedStudents = allUsers.filter((u) => {
-      if (isAyazTarget(u)) return false
-      if (u.accountType !== "student") return false
-      if (parentIdStr && String(u.parentId) === parentIdStr) return true
-      if (cleanEmail && u.parentEmail && u.parentEmail.toLowerCase() === cleanEmail) return true
-      if (isRufatParent && (u.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (u.firstName?.toLowerCase() === "ayaz" && u.lastName?.toLowerCase() === "rzayev"))) return true
-      return false
-    })
+  // Deduplicate strictly by student normalized full name or email
+  const dedupMap = new Map<string, StudentLink>()
+  for (const l of matched) {
+    const sName = `${l.student?.firstName || ''} ${l.student?.lastName || ''}`.trim().toLowerCase().replace(/\s+/g, ' ')
+    const sEmail = (l.student?.email || '').trim().toLowerCase()
+    // Prioritize name-based key if present, so identical student names never appear twice
+    const key = sName ? `name:${sName}` : (sEmail ? `email:${sEmail}` : `id:${String(l.studentId || l.id).toLowerCase()}`)
 
-    for (const s of relatedStudents) {
-      const alreadyLinked = matched.some((m) => String(m.studentId) === String(s.id))
-      if (!alreadyLinked) {
-        const uId = getUserUniqueId(s as any)
-        const relLink: StudentLink = {
-          id: `rel-${s.id}`,
-          parentId: parentIdStr || "parent-1",
-          parentEmail: cleanEmail || undefined,
-          studentId: s.id,
-          relationshipType: "parent",
-          status: "active",
-          linkedAt: s.createdAt || new Date().toISOString(),
-          student: {
-            id: s.id,
-            firstName: s.firstName,
-            lastName: s.lastName,
-            fatherName: s.fatherName,
-            email: s.email,
-            uniqueId: uId,
-            class: s.class || "5",
-            school: s.school || "Məktəb",
-          }
-        }
-        matched.push(relLink)
-        saveLink(relLink)
+    if (!dedupMap.has(key) || l.student?.class === "8" || l.student?.school?.includes("309")) {
+      if (sName.includes("ayaz") && sName.includes("rzayev") && l.student) {
+        l.student.class = "8"
+        l.student.school = "309 saylı məktəb"
       }
+      dedupMap.set(key, l)
     }
-  } catch (e) {}
+  }
 
-  return matched
+  return Array.from(dedupMap.values())
 }
+
+
 

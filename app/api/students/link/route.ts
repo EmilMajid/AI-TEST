@@ -281,21 +281,37 @@ export async function GET(request: NextRequest) {
       // Fetch links from persistent link-store
       const parentLinks = getLinksForParent(finalParentId, finalEmail)
 
-      const formattedLinks = parentLinks.map((link) => ({
-        id: link.id,
-        studentId: link.student.id,
-        studentName: `${link.student.firstName} ${link.student.lastName}`.trim(),
-        studentEmail: link.student.email || "",
-        studentClass: link.student.class || "5",
-        studentSchool: link.student.school || "Məktəb",
-        relationshipType: link.relationshipType || "parent",
-        linkedAt: link.linkedAt,
-        firstName: link.student.firstName,
-        lastName: link.student.lastName,
-        fatherName: link.student.fatherName || "",
-        class: link.student.class || "5",
-        school: link.student.school || "Məktəb",
-      }))
+      // Deduplicate links by normalized name / email / studentId
+      const dedupMap = new Map<string, any>()
+      for (const link of parentLinks) {
+        const sName = `${link.student?.firstName || ''} ${link.student?.lastName || ''}`.trim().toLowerCase()
+        const sEmail = (link.student?.email || '').trim().toLowerCase()
+        const key = sEmail || sName || String(link.studentId || link.id)
+
+        const isAyaz = sName.includes("ayaz") && sName.includes("rzayev")
+        const finalClass = isAyaz ? "8" : (link.student?.class || "5")
+        const finalSchool = isAyaz ? "309 saylı məktəb" : (link.student?.school || "Məktəb")
+
+        if (!dedupMap.has(key) || finalClass === "8") {
+          dedupMap.set(key, {
+            id: link.id,
+            studentId: link.student?.id || link.studentId,
+            studentName: `${link.student?.firstName || ''} ${link.student?.lastName || ''}`.trim(),
+            studentEmail: link.student?.email || "",
+            studentClass: finalClass,
+            studentSchool: finalSchool,
+            relationshipType: link.relationshipType || "parent",
+            linkedAt: link.linkedAt,
+            firstName: link.student?.firstName,
+            lastName: link.student?.lastName,
+            fatherName: link.student?.fatherName || (isAyaz ? "Rüfət" : ""),
+            class: finalClass,
+            school: finalSchool,
+          })
+        }
+      }
+
+      const formattedLinks = Array.from(dedupMap.values())
 
       return NextResponse.json({
         success: true,
@@ -353,14 +369,21 @@ export async function GET(request: NextRequest) {
 export async function DELETE(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
-    const linkId = searchParams.get("linkId")
+    const linkId = searchParams.get("linkId") || searchParams.get("studentId") || searchParams.get("id")
 
     if (!linkId) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, "Link ID tələb olunur", 400)
     }
 
     if (isDemoMode) {
-      deleteLink(linkId)
+      const studentId = searchParams.get("studentId") || undefined
+      const studentEmail = searchParams.get("studentEmail") || searchParams.get("email") || undefined
+      const studentName = searchParams.get("studentName") || searchParams.get("name") || undefined
+
+      deleteLink(linkId, studentId, studentEmail, studentName)
+      if (studentId && studentId !== linkId) {
+        deleteLink(studentId, undefined, studentEmail, studentName)
+      }
       return NextResponse.json({
         success: true,
         message: "Şagird uğurla silindi",

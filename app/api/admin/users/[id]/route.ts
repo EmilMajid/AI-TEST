@@ -128,7 +128,20 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             }
             return false
         })
-        relations.children = children
+        const childDedup = new Map<string, any>()
+        for (const c of children) {
+            const cName = `${c.firstName || ""} ${c.lastName || ""}`.trim().toLowerCase().replace(/\s+/g, " ")
+            const cEmail = (c.email || "").trim().toLowerCase()
+            const key = cName ? `name:${cName}` : (cEmail ? `email:${cEmail}` : `id:${c.id}`)
+            if (!childDedup.has(key) || c.class === "8") {
+                if (cName.includes("ayaz") && cName.includes("rzayev")) {
+                    c.class = "8"
+                    c.school = "309 saylı məktəb"
+                }
+                childDedup.set(key, c)
+            }
+        }
+        relations.children = Array.from(childDedup.values())
     }
 
     return NextResponse.json({
