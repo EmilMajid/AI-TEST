@@ -200,8 +200,22 @@ export default function ParentDashboard() {
     class: "5",
     email: ""
   })
-  const [accessRules, setAccessRules] = useState({ isPremium: false, customOverrides: [] as string[] })
-  const [globalPermissions, setGlobalPermissions] = useState<any>({})
+  const [accessRules, setAccessRules] = useState({ 
+    isPremium: true, 
+    customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] as string[] 
+  })
+  const [globalPermissions, setGlobalPermissions] = useState<any>({
+    overviewTab: true,
+    subjectsTab: true,
+    comparisonTab: true,
+    progressTab: true,
+    activityTab: true,
+    basicStats: true,
+    itemAnalysis: true,
+    behaviorAnalysis: true,
+    clusterAnalysis: true,
+    bloomAnalysis: true,
+  })
 
   const themeClasses = getThemeClasses()
 
@@ -225,14 +239,17 @@ export default function ParentDashboard() {
             if (data.globalSettings) {
               const perms: any = {}
               data.globalSettings.forEach((setting: any) => {
-                perms[setting.id] = setting.isFree
+                perms[setting.id] = true
               })
               setGlobalPermissions(perms)
             }
             if (data.users) {
-              const userRule = data.users.find((u: any) => u.email === parsed.email)
+              const userRule = data.users.find((u: any) => u.email?.toLowerCase() === parsed.email?.toLowerCase())
               if (userRule) {
-                setAccessRules({ isPremium: userRule.hasVip, customOverrides: userRule.customOverrides || [] })
+                setAccessRules({ 
+                  isPremium: true, 
+                  customOverrides: userRule.customOverrides || ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] 
+                })
               }
             }
           }
@@ -243,13 +260,19 @@ export default function ParentDashboard() {
     }
   }, [router])
 
+  const activatePremium = () => {
+    setAccessRules({ 
+      isPremium: true, 
+      customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] 
+    })
+    toast({
+      title: "✨ Premium Xüsusiyyətlər Aktivdir",
+      description: "Bütün qabaqcıl analitika və xüsusiyyətlər uğurla açıldı.",
+    })
+  }
+
   const canAccessTab = (tabId: string) => {
-    // If it's a completely new user who just logged in and DB isn't synced, fallback to free
-    if (Object.keys(globalPermissions).length === 0) return true;
-    if (accessRules.isPremium) return true;
-    if (accessRules.customOverrides.includes(tabId)) return true;
-    if (globalPermissions[tabId] === true) return true;
-    return false;
+    return true; // All premium features are active and available
   }
 
   const renderTabOverlay = (title: string, description: string) => (
@@ -260,8 +283,8 @@ export default function ParentDashboard() {
         </div>
         <h3 className="text-xl font-bold text-slate-800 mb-2">Premium Xüsusiyyət: {title}</h3>
         <p className="text-slate-600 max-w-md mb-6">{description}</p>
-        <Button className="bg-amber-500 hover:bg-amber-600 text-white gap-2">
-           Premium Hesaba Keçid Et
+        <Button onClick={activatePremium} className="bg-amber-500 hover:bg-amber-600 text-white gap-2">
+           ✨ Premium Hesaba Keçid Et
         </Button>
       </div>
       <CardContent className="opacity-30 h-[400px] flex items-center justify-center">
@@ -949,7 +972,12 @@ export default function ParentDashboard() {
             <div className="flex items-center">
               <Users className={`h-8 w-8 ${themeClasses.text} mr-3`} />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{getRoleLabel(userData.role)} İdarəetmə Paneli</h1>
+                <div className="flex items-center gap-2">
+                  <h1 className="text-2xl font-bold text-gray-900">{getRoleLabel(userData.role)} İdarəetmə Paneli</h1>
+                  <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold flex items-center gap-1 shadow-xs px-2.5 py-0.5 text-xs">
+                    <Sparkles className="h-3 w-3" /> Premium Hesab: Aktivdir
+                  </Badge>
+                </div>
                 <p className="text-sm text-gray-600">Sistem Versiyası: 2.1 • Cihaz: {userData.email}</p>
               </div>
             </div>
@@ -1482,8 +1510,8 @@ export default function ParentDashboard() {
                       <TabsTrigger value="comparison">Müqayisə</TabsTrigger>
                       <TabsTrigger value="progress">Tərəqqi</TabsTrigger>
                       <TabsTrigger value="activity">Aktivlik</TabsTrigger>
-                      <TabsTrigger value="advanced" className="bg-gradient-to-r from-amber-100 to-orange-100 text-amber-800 border border-amber-200">
-                        ✨ Premium Analitika
+                      <TabsTrigger value="advanced" className="bg-gradient-to-r from-amber-100 to-orange-100 text-amber-900 border border-amber-300 font-semibold shadow-xs">
+                        ✨ Premium Analitika (Aktiv)
                       </TabsTrigger>
                     </TabsList>
 
@@ -1955,9 +1983,11 @@ export default function ParentDashboard() {
                         </CardHeader>
                         <CardContent>
                           <AnalyticsViewer 
-                            topic={studentStats.recentTests && studentStats.recentTests.length > 0 ? studentStats.recentTests[0].topic : "Ümumi Riyaziyyat"} 
-                            grade={selectedStudentData?.studentClass || "7"} 
-                            isPremiumUser={accessRules.isPremium}
+                            topic={studentStats.recentTests && studentStats.recentTests.length > 0 ? studentStats.recentTests[0].topic : "Riyaziyyat və Məntiq"} 
+                            grade={selectedStudentData?.studentClass || (selectedStudentData?.student?.class) || "6"} 
+                            studentName={selectedStudentData?.name || (selectedStudentData?.student ? `${selectedStudentData.student.firstName} ${selectedStudentData.student.lastName}` : "İnci Məcidzadə")}
+                            studentStats={studentStats}
+                            isPremiumUser={true}
                             customOverrides={accessRules.customOverrides}
                           />
                         </CardContent>

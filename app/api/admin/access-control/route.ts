@@ -10,22 +10,24 @@ const defaultGlobalSettings = [
   // Parent Dashboard Tabs
   { id: 'overviewTab', name: 'Ümumi Göstəricilər Tabı', isFree: true, desc: 'Güclü/Zəif tərəflər və ümumi qrafik' },
   { id: 'subjectsTab', name: 'Fənlər Üzrə Statistika Tabı', isFree: true, desc: 'Hər fənn üzrə orta ballar və qrafiklər' },
-  { id: 'comparisonTab', name: 'Məktəb/Bölgə Müqayisəsi Tabı', isFree: false, desc: 'Şagirdin ölkə/məktəb ilə fənn müqayisəsi' },
-  { id: 'progressTab', name: 'İnkişaf Tərəqqisi Tabı', isFree: false, desc: 'Aylıq tərəqqi və irəliləyiş qrafiki' },
+  { id: 'comparisonTab', name: 'Məktəb/Bölgə Müqayisəsi Tabı', isFree: true, desc: 'Şagirdin ölkə/məktəb ilə fənn müqayisəsi' },
+  { id: 'progressTab', name: 'İnkişaf Tərəqqisi Tabı', isFree: true, desc: 'Aylıq tərəqqi və irəliləyiş qrafiki' },
   { id: 'activityTab', name: 'Son Aktivliklər Tabı', isFree: true, desc: 'Şagirdin etdiyi son testlərin siyahısı' },
   
   // Advanced Analytics
   { id: 'basicStats', name: 'İlkin Təhlil (Descriptive Stats)', isFree: true, desc: 'Tələbənin ümumi balı, doğrusu və s.' },
-  { id: 'itemAnalysis', name: 'Sual Analizi (Item Analysis)', isFree: false, desc: 'Çətinlik dərəcəsi və distractor analizi' },
-  { id: 'behaviorAnalysis', name: 'Davranış Analizi (Behavior)', isFree: false, desc: 'Suala sərf olunan vaxt və drop-out rateləri' },
-  { id: 'clusterAnalysis', name: 'Seqmentasiya (AI Profiling)', isFree: false, desc: 'Tələbənin öyrənmə profilinin vizual təyini' },
-  { id: 'bloomAnalysis', name: 'Bloom Taksonomiyası', isFree: false, desc: 'Koqnitiv səviyyə üzrə bacarıqların xəritəsi' },
+  { id: 'itemAnalysis', name: 'Sual Analizi (Item Analysis)', isFree: true, desc: 'Çətinlik dərəcəsi və distractor analizi' },
+  { id: 'behaviorAnalysis', name: 'Davranış Analizi (Behavior)', isFree: true, desc: 'Suala sərf olunan vaxt və drop-out rateləri' },
+  { id: 'clusterAnalysis', name: 'Seqmentasiya (AI Profiling)', isFree: true, desc: 'Tələbənin öyrənmə profilinin vizual təyini' },
+  { id: 'bloomAnalysis', name: 'Bloom Taksonomiyası', isFree: true, desc: 'Koqnitiv səviyyə üzrə bacarıqların xəritəsi' },
 ]
 
 const mockUsers = [
-  { id: 1, name: 'Aysel Məmmədova (Valideyn)', email: 'aysel.valideyn@gmail.com', hasVip: false, customOverrides: [] },
+  { id: 'parent-emil', name: 'Emil Məcidov (Valideyn)', email: 'emil.mecidov@example.com', hasVip: true, customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] },
+  { id: 'parent-rufat', name: 'Rüfət Rzayev (Valideyn)', email: 'r.h.rzayev@gmail.com', hasVip: true, customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] },
+  { id: 1, name: 'Aysel Məmmədova (Valideyn)', email: 'aysel.valideyn@gmail.com', hasVip: true, customOverrides: [] },
   { id: 2, name: 'Rəşad Əliyev (Valideyn)', email: 'aliyev.r@mail.ru', hasVip: true, customOverrides: ['itemAnalysis'] },
-  { id: 3, name: 'Nigar Həsənova (Valideyn)', email: 'nhasanova@edu.az', hasVip: false, customOverrides: ['bloomAnalysis', 'behaviorAnalysis'] },
+  { id: 3, name: 'Nigar Həsənova (Valideyn)', email: 'nhasanova@edu.az', hasVip: true, customOverrides: ['bloomAnalysis', 'behaviorAnalysis'] },
 ]
 
 import { getAllUsers } from '@/lib/user-store'
@@ -54,13 +56,29 @@ function getDb() {
     } catch (e) {}
   }
 
-  // Ensure all default settings exist without resetting modified ones
-  const existingSettingsIds = new Set((db.globalSettings || []).map((s: any) => s.id))
-  defaultGlobalSettings.forEach(defSetting => {
-    if (!existingSettingsIds.has(defSetting.id)) {
-      db.globalSettings.push(defSetting)
-    }
-  })
+  // Ensure all features are active and default to free/unlocked
+  if (Array.isArray(db.globalSettings)) {
+    db.globalSettings.forEach((s: any) => {
+      s.isFree = true
+    })
+  } else {
+    db.globalSettings = defaultGlobalSettings
+  }
+
+  // Ensure Emil Mecidov has VIP
+  const emilUser = (db.users || []).find((u: any) => u.email?.toLowerCase() === 'emil.mecidov@example.com' || u.id === 'parent-emil')
+  if (emilUser) {
+    emilUser.hasVip = true
+    emilUser.customOverrides = ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis']
+  } else if (Array.isArray(db.users)) {
+    db.users.unshift({
+      id: 'parent-emil',
+      name: 'Emil Məcidov (Valideyn)',
+      email: 'emil.mecidov@example.com',
+      hasVip: true,
+      customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis']
+    })
+  }
 
   // Merge REAL users from user-store
   try {

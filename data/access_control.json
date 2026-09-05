@@ -15,25 +15,25 @@
     {
       "id": "comparisonTab",
       "name": "Məktəb/Bölgə Müqayisəsi Tabı",
-      "isFree": false,
+      "isFree": true,
       "desc": "Şagirdin ölkə/məktəb ilə fənn müqayisəsi"
     },
     {
       "id": "subjectsTab",
       "name": "Fənlər Üzrə Statistika Tabı",
-      "isFree": false,
+      "isFree": true,
       "desc": "Hər fənn üzrə orta ballar və qrafiklər"
     },
     {
       "id": "overviewTab",
       "name": "Ümumi Göstəricilər Tabı",
-      "isFree": false,
+      "isFree": true,
       "desc": "Güclü/Zəif tərəflər və ümumi qrafik"
     },
     {
       "id": "basicStats",
       "name": "İlkin Təhlil (Descriptive Stats)",
-      "isFree": false,
+      "isFree": true,
       "desc": "Tələbənin ümumi balı, doğrusu və s."
     },
     {
@@ -45,13 +45,13 @@
     {
       "id": "behaviorAnalysis",
       "name": "Davranış Analizi (Behavior)",
-      "isFree": false,
+      "isFree": true,
       "desc": "Suala sərf olunan vaxt və drop-out rateləri"
     },
     {
       "id": "clusterAnalysis",
       "name": "Seqmentasiya (AI Profiling)",
-      "isFree": false,
+      "isFree": true,
       "desc": "Tələbənin öyrənmə profilinin vizual təyini"
     },
     {
@@ -63,10 +63,46 @@
   ],
   "users": [
     {
+      "id": "parent-emil",
+      "name": "Emil Məcidov (Valideyn)",
+      "email": "emil.mecidov@example.com",
+      "hasVip": true,
+      "customOverrides": [
+        "overviewTab",
+        "subjectsTab",
+        "comparisonTab",
+        "progressTab",
+        "activityTab",
+        "basicStats",
+        "itemAnalysis",
+        "behaviorAnalysis",
+        "clusterAnalysis",
+        "bloomAnalysis"
+      ]
+    },
+    {
+      "id": "parent-rufat",
+      "name": "Rüfət Rzayev (Valideyn)",
+      "email": "r.h.rzayev@gmail.com",
+      "hasVip": true,
+      "customOverrides": [
+        "overviewTab",
+        "subjectsTab",
+        "comparisonTab",
+        "progressTab",
+        "activityTab",
+        "basicStats",
+        "itemAnalysis",
+        "behaviorAnalysis",
+        "clusterAnalysis",
+        "bloomAnalysis"
+      ]
+    },
+    {
       "id": 1,
       "name": "Aysel Məmmədova (Valideyn)",
       "email": "aysel.valideyn@gmail.com",
-      "hasVip": false,
+      "hasVip": true,
       "customOverrides": []
     },
     {
