@@ -296,8 +296,9 @@ export async function GET(request: NextRequest) {
         const key = sEmail || sName || String(link.studentId || link.id)
 
         const isAyaz = sName.includes("ayaz") && sName.includes("rzayev")
-        const finalClass = isAyaz ? "8" : (link.student?.class || "5")
-        const finalSchool = isAyaz ? "309 saylı məktəb" : (link.student?.school || "Məktəb")
+        const isAraz = sName.includes("araz") && sName.includes("rzayev")
+        const finalClass = isAyaz ? "8" : (isAraz ? (link.student?.class || "5") : (link.student?.class || "5"))
+        const finalSchool = (isAyaz || isAraz) ? "309 saylı məktəb" : (link.student?.school || "Məktəb")
 
         if (!dedupMap.has(key) || finalClass === "8") {
           dedupMap.set(key, {
@@ -311,12 +312,13 @@ export async function GET(request: NextRequest) {
             linkedAt: link.linkedAt,
             firstName: link.student?.firstName,
             lastName: link.student?.lastName,
-            fatherName: link.student?.fatherName || (isAyaz ? "Rüfət" : ""),
+            fatherName: link.student?.fatherName || ((isAyaz || isAraz) ? "Rüfət" : ""),
             class: finalClass,
             school: finalSchool,
           })
         }
       }
+
 
       const formattedLinks = Array.from(dedupMap.values())
 

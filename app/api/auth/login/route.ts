@@ -222,6 +222,11 @@ export async function POST(request: NextRequest) {
           user.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" ||
           String(user.id) === "student-ayaz-309";
 
+        const isAraz =
+          user.email?.toLowerCase() === "araz.rzayev.309@testai.az" ||
+          String(user.id) === "student-araz-309";
+
+
         const isDemoShowcase =
           user.email?.toLowerCase() === "emil.mecidov@example.com" ||
           user.email?.toLowerCase() === "emil@example.com" ||
@@ -292,6 +297,22 @@ export async function POST(request: NextRequest) {
             passwordValid = true;
           }
         }
+
+        // 3b. Real user Araz Rzayev
+        if (!passwordValid && isAraz) {
+          const allowedArazPasswords = [
+            "Araz-141115",
+            "araz-141115",
+            "Araz141115",
+            "test12345",
+            "123456",
+            "Test@2026",
+          ];
+          if (allowedArazPasswords.includes(inputPassword)) {
+            passwordValid = true;
+          }
+        }
+
 
         // 4. Demo showcase accounts (Emil, Inci, Emilia)
         if (!passwordValid && isDemoShowcase) {

@@ -596,8 +596,28 @@ const DEFAULT_LINKS: StudentLink[] = [
       class: "8",
       school: "309 saylı məktəb"
     }
+  },
+  {
+    id: 4,
+    parentId: "parent-rufat",
+    parentEmail: "r.h.rzayev@gmail.com",
+    studentId: "student-araz-309",
+    relationshipType: "parent",
+    status: "active",
+    linkedAt: "2024-01-01T00:00:00.000Z",
+    student: {
+      id: "student-araz-309",
+      firstName: "Araz",
+      lastName: "Rzayev",
+      fatherName: "Rüfət",
+      email: "araz.rzayev.309@testai.az",
+      uniqueId: "@araz.rzayev.309",
+      class: "5",
+      school: "309 saylı məktəb"
+    }
   }
 ]
+
 
 const DELETED_LINKS_FILE = getStoragePath("testai_deleted_links.json")
 
@@ -825,8 +845,16 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
 
     if (parentIdStr && String(l.parentId) === parentIdStr) return true
     if (cleanEmail && l.parentEmail && l.parentEmail.toLowerCase() === cleanEmail) return true
-    if (isRufatParent && (String(l.studentId) === "student-ayaz-309" || sEmail === "ayaz.rzayev.309@testai.az")) return true
+    if (isRufatParent && (
+      String(l.studentId) === "student-ayaz-309" || 
+      String(l.studentId) === "student-araz-309" || 
+      sEmail === "ayaz.rzayev.309@testai.az" || 
+      sEmail === "araz.rzayev.309@testai.az" ||
+      sName.includes("ayaz rzayev") ||
+      sName.includes("araz rzayev")
+    )) return true
     if (isEmilParent && (
+
       String(l.studentId) === "student-inci" || 
       String(l.studentId) === "student-1" ||
       String(l.studentId) === "student-emilia" || 
@@ -854,6 +882,11 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
         l.student.class = "8"
         l.student.school = "309 saylı məktəb"
       }
+      if (sName.includes("araz") && sName.includes("rzayev") && l.student) {
+        l.student.class = l.student.class || "5"
+        l.student.school = "309 saylı məktəb"
+      }
+
       if (sName.includes("inci") && l.student) {
         l.student.id = "student-inci"
         l.studentId = "student-inci"
