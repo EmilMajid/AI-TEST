@@ -28,33 +28,57 @@ const mockUsers = [
   { id: 3, name: 'Nigar Həsənova (Valideyn)', email: 'nhasanova@edu.az', hasVip: false, customOverrides: ['bloomAnalysis', 'behaviorAnalysis'] },
 ]
 
+import { getAllUsers } from '@/lib/user-store'
+
 function getDb() {
-  if (!fs.existsSync(accessControlPath)) {
-    // initialize
-    const initData = {
-        globalSettings: defaultGlobalSettings,
-        users: mockUsers
-    }
-    if(!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, {recursive: true})
-    fs.writeFileSync(accessControlPath, JSON.stringify(initData, null, 2))
-    return initData
+  let db: any = {
+    globalSettings: defaultGlobalSettings,
+    users: mockUsers
   }
-  
-  const db = JSON.parse(fs.readFileSync(accessControlPath, 'utf8'))
+
+  if (fs.existsSync(accessControlPath)) {
+    try {
+      db = JSON.parse(fs.readFileSync(accessControlPath, 'utf8'))
+    } catch (e) {}
+  }
+
   // Auto-merge new default settings if they don't exist in the DB
-  const existingSettingsIds = db.globalSettings.map((s: any) => s.id)
-  let changed = false
+  const existingSettingsIds = (db.globalSettings || []).map((s: any) => s.id)
   defaultGlobalSettings.forEach(defSetting => {
     if (!existingSettingsIds.includes(defSetting.id)) {
-      db.globalSettings.unshift(defSetting) // Add new tabs to the top
-      changed = true
+      db.globalSettings.unshift(defSetting)
     }
   })
-  
-  if (changed) {
+
+  // Merge REAL users from user-store
+  try {
+    const allUsers = getAllUsers(true)
+    const existingEmails = new Set((db.users || []).map((u: any) => (u.email || '').toLowerCase()))
+
+    for (const u of allUsers) {
+      if (!u.email) continue
+      const emailLower = u.email.toLowerCase()
+      if (!existingEmails.has(emailLower)) {
+        const roleLabel = u.role === 'parent' || u.accountType === 'parent' ? ' (Valideyn)' : 
+                          u.role === 'student' || u.accountType === 'student' ? ' (Şagird)' : 
+                          u.role === 'teacher' ? ' (Müəllim)' : ''
+        db.users.push({
+          id: u.id,
+          name: `${u.firstName || ''} ${u.lastName || ''}`.trim() + roleLabel,
+          email: u.email,
+          hasVip: false,
+          customOverrides: []
+        })
+        existingEmails.add(emailLower)
+      }
+    }
+  } catch (e) {}
+
+  try {
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true })
     fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
-  }
-  
+  } catch (e) {}
+
   return db
 }
 

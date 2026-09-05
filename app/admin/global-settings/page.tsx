@@ -17,15 +17,33 @@ interface SystemSetting {
 
 export default function GlobalSettingsPage() {
   const { toast } = useToast()
-  const [settings, setSettings] = useState<SystemSetting[]>([
-    { id: 1, key: "AI_GENERATION_ENABLED", value: "true", description: "Aİ tərəfindən test generasiyası aktivdir." },
-    { id: 2, key: "STUDENT_LOGIN_ENABLED", value: "true", description: "Şagirdlərin sistemə daxil olmasına icazə ver." },
-    { id: 3, key: "MAINTENANCE_MODE", value: "false", description: "Saytı texniki baxış (Maintenance) rejiminə sal." }
-  ])
+  const [settings, setSettings] = useState<SystemSetting[]>([])
+  const [loading, setLoading] = useState(true)
   const [isSaving, setIsSaving] = useState(false)
 
-  // In a real application, you would fetch these from an API
-  // useEffect(() => { fetchSettings() }, [])
+  const fetchSettings = async () => {
+    try {
+      setLoading(true)
+      const res = await fetch("/api/admin/global-settings")
+      const data = await res.json()
+      if (data.success && Array.isArray(data.settings)) {
+        setSettings(data.settings)
+      }
+    } catch (e) {
+      console.error("Failed to load settings:", e)
+      toast({
+        title: "Xəta",
+        description: "Tənzimləmələri yükləmək mümkün olmadı",
+        variant: "destructive"
+      })
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchSettings()
+  }, [])
 
   const handleToggle = (key: string, currentValue: string) => {
     setSettings(settings.map(s => 
@@ -34,15 +52,31 @@ export default function GlobalSettingsPage() {
   }
 
   const handleSave = async () => {
-    setIsSaving(true)
-    // Placeholder for API call
-    setTimeout(() => {
-      setIsSaving(false)
-      toast({
-        title: "Tənzimləmələr yadda saxlanıldı",
-        description: "Sistem tənzimləmələri uğurla yeniləndi.",
+    try {
+      setIsSaving(true)
+      const res = await fetch("/api/admin/global-settings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ settings })
       })
-    }, 1000)
+      const data = await res.json()
+      if (res.ok && data.success) {
+        toast({
+          title: "Uğurlu! ✅",
+          description: "Sistem tənzimləmələri uğurla yadda saxlanıldı",
+        })
+      } else {
+        throw new Error(data.error || "Xəta baş verdi")
+      }
+    } catch (e: any) {
+      toast({
+        title: "Xəta",
+        description: e.message || "Tənzimləmələr saxlanılarkən xəta baş verdi",
+        variant: "destructive"
+      })
+    } finally {
+      setIsSaving(false)
+    }
   }
 
   const getSettingIcon = (key: string) => {

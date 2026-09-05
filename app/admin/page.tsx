@@ -1,357 +1,216 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Progress } from "@/components/ui/progress"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { BookOpen, Play, Pause, RefreshCw, AlertCircle, CheckCircle, Clock, Settings, User, LogOut } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
-import { useRouter } from "next/navigation"
-import { ProfileAvatar } from "@/components/profile-avatar"
-import { getCurrentUser, logout } from "@/lib/profile-utils"
-import BackendStatus from "@/components/backend-status"
+import { 
+  Users, 
+  Database, 
+  Zap, 
+  Settings, 
+  AlertTriangle, 
+  CheckCircle2, 
+  ArrowRight,
+  RefreshCw,
+  Server
+} from "lucide-react"
 import Link from "next/link"
-
-interface ScrapingStatus {
-  is_running: boolean
-  progress: number
-  message: string
-  last_run: string | null
-  books_found: number
-  books_downloaded: number
-}
-
-interface ScrapingLog {
-  id: number
-  started_at: string
-  completed_at: string | null
-  books_found: number
-  books_downloaded: number
-  status: string
-  error_message: string | null
-}
+import { AdminStats } from "@/components/admin/admin-stats"
 
 export default function AdminPage() {
-  const { toast } = useToast()
-  const router = useRouter()
-  const [userData, setUserData] = useState<any>(null)
-  const [status, setStatus] = useState<ScrapingStatus>({
-    is_running: false,
-    progress: 0,
-    message: "Hazır",
-    last_run: null,
-    books_found: 0,
-    books_downloaded: 0,
-  })
-  const [logs, setLogs] = useState<ScrapingLog[]>([])
-  const [maxBooks, setMaxBooks] = useState(5)
-  const [isLoading, setIsLoading] = useState(false)
+  const [analytics, setAnalytics] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  const fetchAnalytics = async () => {
+    try {
+      setLoading(true)
+      const res = await fetch("/api/admin/analytics")
+      const data = await res.json()
+      if (data.success && data.analytics) {
+        setAnalytics(data.analytics)
+      }
+    } catch (e) {
+      console.error("Dashboard fetch error:", e)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   useEffect(() => {
-    const user = getCurrentUser()
-    if (user) {
-      setUserData(user)
-    }
+    fetchAnalytics()
   }, [])
 
-  useEffect(() => {
-    fetchStatus()
-    fetchLogs()
-
-    // Status-u hər 3 saniyədə yenilə
-    const interval = setInterval(() => {
-      if (status.is_running) {
-        fetchStatus()
-      }
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [status.is_running])
-
-  const fetchStatus = async () => {
-    try {
-      const response = await fetch("/api/backend/scraping/status")
-      if (response.ok) {
-        const data = await response.json()
-        setStatus(data)
-      }
-    } catch (error) {
-      console.error("Status əldə edilərkən xəta:", error)
-    }
-  }
-
-  const fetchLogs = async () => {
-    try {
-      const response = await fetch("/api/backend/scraping/logs")
-      if (response.ok) {
-        const data = await response.json()
-        if (data.success) {
-          setLogs(data.logs)
-        }
-      }
-    } catch (error) {
-      console.error("Loglar əldə edilərkən xəta:", error)
-    }
-  }
-
-  const startScraping = async () => {
-    try {
-      setIsLoading(true)
-      const response = await fetch("/api/backend/scraping/start", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          max_books: maxBooks,
-        }),
-      })
-
-      const data = await response.json()
-
-      if (response.ok) {
-        toast({
-          title: "Scraping başladı!",
-          description: `Maksimum ${maxBooks} dərslik yüklənəcək`,
-        })
-        fetchStatus()
-      } else {
-        throw new Error(data.detail || "Scraping başladılarkən xəta")
-      }
-    } catch (error) {
-      toast({
-        title: "Xəta",
-        description: error instanceof Error ? error.message : "Scraping başladılarkən xəta",
-        variant: "destructive",
-      })
-    } finally {
-      setIsLoading(false)
-    }
-  }
-
-  const getStatusIcon = (logStatus: string) => {
-    switch (logStatus) {
-      case "completed":
-        return <CheckCircle className="h-4 w-4 text-green-600" />
-      case "error":
-        return <AlertCircle className="h-4 w-4 text-red-600" />
-      case "running":
-        return <Clock className="h-4 w-4 text-blue-600" />
-      default:
-        return <Clock className="h-4 w-4 text-gray-600" />
-    }
-  }
-
-  const getStatusBadge = (logStatus: string) => {
-    switch (logStatus) {
-      case "completed":
-        return <Badge className="bg-green-100 text-green-800">Tamamlandı</Badge>
-      case "error":
-        return <Badge variant="destructive">Xəta</Badge>
-      case "running":
-        return <Badge className="bg-blue-100 text-blue-800">İşləyir</Badge>
-      default:
-        return <Badge variant="secondary">Naməlum</Badge>
-    }
-  }
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10">
+    <div className="space-y-8">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center">
-              <BookOpen className="h-8 w-8 text-primary mr-3" />
-              <h1 className="text-2xl font-bold text-gray-900">TESTAI.AZ - Admin Panel</h1>
-            </div>
-            <div className="flex items-center gap-3">
-              {userData && (
-                <>
-                  <ProfileAvatar
-                    firstName={userData.firstName}
-                    lastName={userData.lastName}
-                    profileImage={userData.profileImage}
-                    size="md"
-                  />
-                  <Link href="/profile">
-                    <Button variant="outline" size="sm" className="gap-2">
-                      <User className="h-4 w-4" />
-                      Profil
-                    </Button>
-                  </Link>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
-                    onClick={() => {
-                      logout()
-                      router.push("/login")
-                    }}
-                  >
-                    <LogOut className="h-4 w-4" />
-                    Çıxış
-                  </Button>
-                </>
-              )}
-              {!userData && (
-                <Button variant="outline" onClick={() => (window.location.href = "/dashboard")}>
-                  Dashboard-a qayıt
-                </Button>
-              )}
-            </div>
-          </div>
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b pb-6">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900">İdarəetmə Paneli (Dashboard)</h1>
+          <p className="text-slate-500 mt-1">
+            Platformanın cari vəziyyəti, canlı istifadəçi statistikası və sürətli idarəetmə vasitələri
+          </p>
         </div>
-      </header>
-
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Backend Status */}
-          <div className="lg:col-span-1">
-            <BackendStatus />
-          </div>
-
-          {/* Scraping Control */}
-          <div className="lg:col-span-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>E-dərslik Scraping</CardTitle>
-                <CardDescription>e-derslik.edu.az saytından avtomatik dərslik yükləmə</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <Label htmlFor="maxBooks">Maksimum dərslik sayı</Label>
-                  <Input
-                    id="maxBooks"
-                    type="number"
-                    min="1"
-                    max="50"
-                    value={maxBooks}
-                    onChange={(e) => setMaxBooks(Number.parseInt(e.target.value) || 5)}
-                    disabled={status.is_running}
-                  />
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium">Status:</span>
-                    <Badge variant={status.is_running ? "default" : "secondary"}>
-                      {status.is_running ? "İşləyir" : "Dayandırılıb"}
-                    </Badge>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium">Tərəqqi:</span>
-                      <span className="text-sm text-gray-600">{status.progress}%</span>
-                    </div>
-                    <Progress value={status.progress} className="h-2" />
-                  </div>
-
-                  <div className="text-sm text-gray-600">
-                    <p>{status.message}</p>
-                  </div>
-
-                  {status.books_found > 0 && (
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <span className="font-medium">Tapılan:</span>
-                        <p className="text-gray-600">{status.books_found} dərslik</p>
-                      </div>
-                      <div>
-                        <span className="font-medium">Yüklənən:</span>
-                        <p className="text-gray-600">{status.books_downloaded} dərslik</p>
-                      </div>
-                    </div>
-                  )}
-
-                  {status.last_run && (
-                    <div className="text-sm">
-                      <span className="font-medium">Son işləmə:</span>
-                      <p className="text-gray-600">{new Date(status.last_run).toLocaleString("az-AZ")}</p>
-                    </div>
-                  )}
-                </div>
-
-                <div className="flex space-x-3">
-                  <Button onClick={startScraping} disabled={status.is_running || isLoading} className="flex-1">
-                    {status.is_running ? (
-                      <>
-                        <Pause className="h-4 w-4 mr-2" />
-                        İşləyir...
-                      </>
-                    ) : (
-                      <>
-                        <Play className="h-4 w-4 mr-2" />
-                        Scraping Başlat
-                      </>
-                    )}
-                  </Button>
-
-                  <Button variant="outline" onClick={fetchStatus}>
-                    <RefreshCw className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="flex items-center gap-2">
+          <Button variant="outline" size="sm" onClick={fetchAnalytics} disabled={loading} className="gap-1.5">
+            <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
+            Yenilə
+          </Button>
+          <Link href="/admin/global-settings">
+            <Button size="sm" className="gap-1.5 bg-slate-900 hover:bg-slate-800">
+              <Settings className="h-4 w-4" />
+              Tənzimləmələr
+            </Button>
+          </Link>
         </div>
+      </div>
 
-        {/* Environment Variables Guide */}
-        <Card className="mt-8">
+      {/* Top 4 Real Stats */}
+      <AdminStats />
+
+      {/* Middle Grid: Quick Actions & User Breakdown */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Quick Access Actions */}
+        <Card className="lg:col-span-2 shadow-sm">
           <CardHeader>
-            <CardTitle className="flex items-center">
-              <Settings className="h-5 w-5 mr-2" />
-              Environment Variables Quraşdırması
-            </CardTitle>
-            <CardDescription>Vercel-də backend URL-ni təyin etmək üçün təlimat</CardDescription>
+            <CardTitle className="text-lg">Sürətli İdarəetmə Keçidləri</CardTitle>
+            <CardDescription>Tez-tez istifadə olunan əsas idarəetmə funksiyaları</CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-medium mb-2">Vercel Dashboard-da:</h4>
-                <ol className="list-decimal list-inside space-y-1 text-sm text-gray-600">
-                  <li>Proyektinizi seçin</li>
-                  <li>Settings → Environment Variables</li>
-                  <li>Add New Variable</li>
-                  <li>
-                    Name: <code className="bg-gray-100 px-1 rounded">NEXT_PUBLIC_BACKEND_URL</code>
-                  </li>
-                  <li>Value: Backend serverinizin URL-i</li>
-                  <li>Environment: Production, Preview, Development</li>
-                </ol>
+          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/admin/users">
+              <div className="p-4 border rounded-xl hover:bg-blue-50/50 hover:border-blue-200 transition-all cursor-pointer group flex items-start justify-between">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <Users className="h-5 w-5 text-blue-600" />
+                    <span className="font-semibold text-slate-800">İstifadəçilər</span>
+                  </div>
+                  <p className="text-xs text-slate-500">Hesabları idarə et, blokla və ya sil</p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-slate-400 group-hover:translate-x-1 group-hover:text-blue-600 transition-all" />
               </div>
-              <div>
-                <h4 className="font-medium mb-2">Backend hosting seçimləri:</h4>
-                <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
-                  <li>
-                    <strong>Railway:</strong> https://your-app.railway.app
-                  </li>
-                  <li>
-                    <strong>Render:</strong> https://your-app.onrender.com
-                  </li>
-                  <li>
-                    <strong>Heroku:</strong> https://your-app.herokuapp.com
-                  </li>
-                  <li>
-                    <strong>Local:</strong> http://localhost:8000
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </Link>
 
-            <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-              <p className="text-sm text-blue-800">
-                <strong>Qeyd:</strong> Environment variable əlavə etdikdən sonra proyekti yenidən deploy edin. Backend
-                server işləmədiyi halda sistem avtomatik olaraq demo məlumatları göstərəcək.
-              </p>
+            <Link href="/admin/test-bank">
+              <div className="p-4 border rounded-xl hover:bg-emerald-50/50 hover:border-emerald-200 transition-all cursor-pointer group flex items-start justify-between">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <Database className="h-5 w-5 text-emerald-600" />
+                    <span className="font-semibold text-slate-800">Test Bankı</span>
+                  </div>
+                  <p className="text-xs text-slate-500">Mövzu və sualların əhatəliliyinə bax</p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-slate-400 group-hover:translate-x-1 group-hover:text-emerald-600 transition-all" />
+              </div>
+            </Link>
+
+            <Link href="/admin/test-bank/problem-questions">
+              <div className="p-4 border rounded-xl hover:bg-orange-50/50 hover:border-orange-200 transition-all cursor-pointer group flex items-start justify-between">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <AlertTriangle className="h-5 w-5 text-orange-600" />
+                    <span className="font-semibold text-slate-800">Problemli Suallar</span>
+                  </div>
+                  <p className="text-xs text-slate-500">Aşağı nəticəli və ya çaşdırıcı testlər</p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-slate-400 group-hover:translate-x-1 group-hover:text-orange-600 transition-all" />
+              </div>
+            </Link>
+
+            <Link href="/admin/ai-generation">
+              <div className="p-4 border rounded-xl hover:bg-yellow-50/50 hover:border-yellow-200 transition-all cursor-pointer group flex items-start justify-between">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <Zap className="h-5 w-5 text-yellow-600" />
+                    <span className="font-semibold text-slate-800">Aİ Generasiya</span>
+                  </div>
+                  <p className="text-xs text-slate-500">Süni İntellekt ilə avtomat sual yarat</p>
+                </div>
+                <ArrowRight className="h-4 w-4 text-slate-400 group-hover:translate-x-1 group-hover:text-yellow-600 transition-all" />
+              </div>
+            </Link>
+          </CardContent>
+        </Card>
+
+        {/* User Breakdown */}
+        <Card className="shadow-sm">
+          <CardHeader>
+            <CardTitle className="text-lg">İstifadəçi Bölgüsü</CardTitle>
+            <CardDescription>Rollar üzrə aktiv istifadəçi tərkibi</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="flex items-center justify-between p-2.5 bg-slate-50 rounded-lg">
+              <span className="text-sm font-medium text-slate-700">Şagirdlər</span>
+              <Badge variant="secondary" className="font-semibold bg-blue-100 text-blue-800">
+                {analytics?.users?.students ?? 0}
+              </Badge>
+            </div>
+            <div className="flex items-center justify-between p-2.5 bg-slate-50 rounded-lg">
+              <span className="text-sm font-medium text-slate-700">Valideynlər</span>
+              <Badge variant="secondary" className="font-semibold bg-purple-100 text-purple-800">
+                {analytics?.users?.parents ?? 0}
+              </Badge>
+            </div>
+            <div className="flex items-center justify-between p-2.5 bg-slate-50 rounded-lg">
+              <span className="text-sm font-medium text-slate-700">Müəllimlər</span>
+              <Badge variant="secondary" className="font-semibold bg-emerald-100 text-emerald-800">
+                {analytics?.users?.teachers ?? 0}
+              </Badge>
+            </div>
+            <div className="flex items-center justify-between p-2.5 bg-slate-50 rounded-lg">
+              <span className="text-sm font-medium text-slate-700">Bloklanmış Hesablar</span>
+              <Badge variant="secondary" className="font-semibold bg-red-100 text-red-800">
+                {analytics?.users?.blocked ?? 0}
+              </Badge>
             </div>
           </CardContent>
         </Card>
-      </main>
+      </div>
+
+      {/* System Infrastructure Status */}
+      <Card className="shadow-sm">
+        <CardHeader>
+          <CardTitle className="text-lg flex items-center gap-2">
+            <Server className="h-5 w-5 text-indigo-600" />
+            Sistem Xidmətlərinin Canlı Vəziyyəti
+          </CardTitle>
+          <CardDescription>Platformanın əsas server və infrastruktur komponentləri</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-4 border rounded-xl bg-slate-50 flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">API Gateway</p>
+                <p className="font-semibold text-slate-800">Aktiv</p>
+              </div>
+              <CheckCircle2 className="h-5 w-5 text-green-600" />
+            </div>
+
+            <div className="p-4 border rounded-xl bg-slate-50 flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">Autentifikasiya</p>
+                <p className="font-semibold text-slate-800">İşlək (JWT & Session)</p>
+              </div>
+              <CheckCircle2 className="h-5 w-5 text-green-600" />
+            </div>
+
+            <div className="p-4 border rounded-xl bg-slate-50 flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">Verilənlər Bazası</p>
+                <p className="font-semibold text-slate-800">Qoşulub (Persistent)</p>
+              </div>
+              <CheckCircle2 className="h-5 w-5 text-green-600" />
+            </div>
+
+            <div className="p-4 border rounded-xl bg-slate-50 flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">Təhlükəsizlik Rejimi</p>
+                <p className="font-semibold text-slate-800">Aktiv (Rate Limit)</p>
+              </div>
+              <CheckCircle2 className="h-5 w-5 text-green-600" />
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   )
 }

@@ -3,92 +3,151 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe } from 'lucide-react'
-import { useRouter } from 'next/navigation'
+import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe, LayoutDashboard, AlertTriangle, Activity } from 'lucide-react'
+import { useRouter, usePathname } from 'next/navigation'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
     const router = useRouter()
+    const pathname = usePathname()
 
     const handleLogout = () => {
         localStorage.removeItem('user')
         router.push('/login')
     }
 
+    const isActive = (path: string) => {
+        if (path === '/admin') return pathname === '/admin' || pathname === '/admin/dashboard'
+        return pathname.startsWith(path)
+    }
+
     return (
         <div className="flex h-screen bg-slate-50">
             {/* Sidebar - Distinct Red/Dark Theme for Admin */}
-            <aside className="w-64 bg-slate-900 text-white">
-                <div className="p-6">
-                    <div className="flex items-center gap-2">
-                        <ShieldAlert className="h-8 w-8 text-red-500" />
-                        <div>
-                            <h1 className="text-xl font-bold">Admin Panel</h1>
-                            <p className="text-xs text-slate-400">Super User</p>
-                        </div>
+            <aside className="w-64 bg-slate-900 text-white flex flex-col justify-between">
+                <div>
+                    <div className="p-6 border-b border-slate-800">
+                        <Link href="/admin" className="flex items-center gap-2">
+                            <ShieldAlert className="h-8 w-8 text-red-500" />
+                            <div>
+                                <h1 className="text-xl font-bold">Admin Panel</h1>
+                                <p className="text-xs text-slate-400">Super User • testai.az</p>
+                            </div>
+                        </Link>
                     </div>
+
+                    <nav className="space-y-1.5 px-3 mt-4 overflow-y-auto max-h-[calc(100vh-140px)]">
+                        <Link href="/admin">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <LayoutDashboard className="h-4 w-4 mr-2 text-indigo-400" />
+                                Dashboard
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/users">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/users') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Users className="h-4 w-4 mr-2 text-blue-400" />
+                                İstifadəçilər
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/test-bank">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${pathname === '/admin/test-bank' ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Database className="h-4 w-4 mr-2 text-emerald-400" />
+                                Test Bankı
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/test-bank/problem-questions">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/test-bank/problem-questions') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <AlertTriangle className="h-4 w-4 mr-2 text-orange-400" />
+                                Problemli Suallar
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/ai-generation">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/ai-generation') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Zap className="h-4 w-4 mr-2 text-yellow-400" />
+                                Aİ Generasiya
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/curriculum">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/curriculum') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <BookOpen className="h-4 w-4 mr-2 text-cyan-400" />
+                                Tədris Proqramı (Analitika)
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/topics">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/topics') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <BookOpen className="h-4 w-4 mr-2 text-purple-400" />
+                                Mövzu İdarəetməsi
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/global-settings">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/global-settings') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Globe className="h-4 w-4 mr-2 text-teal-400" />
+                                Qlobal Tənzimləmələr
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/access-control">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/access-control') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Settings className="h-4 w-4 mr-2 text-sky-400" />
+                                İcazə İdarəetməsi
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/production-metrics">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/production-metrics') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Activity className="h-4 w-4 mr-2 text-pink-400" />
+                                Sistem Metrikləri
+                            </Button>
+                        </Link>
+                    </nav>
                 </div>
 
-                <nav className="space-y-2 px-4 mt-4">
-                    <Link href="/admin/users">
-                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
-                            <Users className="h-4 w-4 mr-2" />
-                            İstifadəçilər
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/topics">
-                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
-                            <BookOpen className="h-4 w-4 mr-2" />
-                            Mövzu İdarəetməsi
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/curriculum">
-                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
-                            <BookOpen className="h-4 w-4 mr-2" />
-                            Tədris Proqramı (Analitika)
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/test-bank">
-                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
-                            <Database className="h-4 w-4 mr-2" />
-                            Test Bankı
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/ai-generation">
-                        <Button variant="ghost" className="w-full justify-start text-yellow-400 hover:text-yellow-300 hover:bg-slate-800">
-                            <Zap className="h-4 w-4 mr-2" />
-                            Aİ Generasiya
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/global-settings">
-                        <Button variant="ghost" className="w-full justify-start text-slate-300 hover:text-white hover:bg-slate-800">
-                            <Globe className="h-4 w-4 mr-2" />
-                            Qlobal Tənzimləmələr
-                        </Button>
-                    </Link>
-
-                    <Link href="/admin/access-control">
-                        <Button variant="ghost" className="w-full justify-start text-blue-400 hover:text-blue-300 hover:bg-slate-800">
-                            <Settings className="h-4 w-4 mr-2" />
-                            İcazə İdarəetməsi
-                        </Button>
-                    </Link>
-
-                    <div className="border-t border-slate-700 my-4 pt-4">
-                        <Button
-                            variant="ghost"
-                            className="w-full justify-start text-red-400 hover:text-red-300 hover:bg-slate-800"
-                            onClick={handleLogout}
-                        >
-                            <LogOut className="h-4 w-4 mr-2" />
-                            Çıxış
-                        </Button>
-                    </div>
-                </nav>
+                <div className="p-4 border-t border-slate-800">
+                    <Button
+                        variant="ghost"
+                        className="w-full justify-start text-red-400 hover:text-red-300 hover:bg-slate-800"
+                        onClick={handleLogout}
+                    >
+                        <LogOut className="h-4 w-4 mr-2" />
+                        Çıxış
+                    </Button>
+                </div>
             </aside>
 
             {/* Main Content */}

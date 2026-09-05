@@ -1,46 +1,79 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, FileText, Activity, AlertTriangle } from "lucide-react"
+import { Users, FileText, Activity, ShieldCheck, Database, CheckCircle2 } from "lucide-react"
 
 export function AdminStats() {
-    // Mock data - in production this would fetch from API
+    const [analytics, setAnalytics] = useState<any>(null)
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        async function fetchStats() {
+            try {
+                const res = await fetch("/api/admin/analytics")
+                const data = await res.json()
+                if (data.success && data.analytics) {
+                    setAnalytics(data.analytics)
+                }
+            } catch (err) {
+                console.error("Failed to fetch admin stats:", err)
+            } finally {
+                setLoading(false)
+            }
+        }
+        fetchStats()
+    }, [])
+
+    const totalUsers = analytics?.users?.total ?? "..."
+    const realUsers = analytics?.users?.realCount ?? "..."
+    const totalQuestions = analytics?.testBank?.totalQuestions ?? "..."
+    const coverageRate = analytics?.testBank?.coverageRate ? `${analytics.testBank.coverageRate}%` : "..."
+    const completedTopics = analytics?.testBank?.completedTopics ?? "..."
+    const totalTopics = analytics?.testBank?.totalTopics ?? "..."
+
     const stats = [
         {
-            title: "Total Users",
-            value: "1,234",
-            change: "+12% from last month",
+            title: "Cəmi İstifadəçi",
+            value: totalUsers,
+            subtitle: `${realUsers} real qeydiyyat`,
             icon: Users,
+            color: "text-blue-500",
         },
         {
-            title: "Documents Processed",
-            value: "543",
-            change: "+23% from last month",
-            icon: FileText,
+            title: "Test Bankı Sualları",
+            value: totalQuestions,
+            subtitle: `${completedTopics} / ${totalTopics} mövzu tamamlandı`,
+            icon: Database,
+            color: "text-emerald-500",
         },
         {
-            title: "Total Queries",
-            value: "12,345",
-            change: "+45% from last month",
-            icon: Activity,
+            title: "Mövzu Əhatəliliyi",
+            value: coverageRate,
+            subtitle: "Dərslik mövzuları üzrə",
+            icon: CheckCircle2,
+            color: "text-purple-500",
         },
         {
-            title: "System Errors",
-            value: "23",
-            change: "-5% from last month",
-            icon: AlertTriangle,
+            title: "Sistem Statusu",
+            value: analytics?.systemStatus?.uptime || "99.98%",
+            subtitle: "Bütün xidmətlər aktivdir",
+            icon: ShieldCheck,
+            color: "text-green-500",
         },
     ]
 
     return (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
-                <Card key={stat.title}>
+                <Card key={stat.title} className="hover:shadow-md transition-shadow">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">{stat.title}</CardTitle>
-                        <stat.icon className="h-4 w-4 text-muted-foreground" />
+                        <CardTitle className="text-sm font-medium text-slate-700">{stat.title}</CardTitle>
+                        <stat.icon className={`h-5 w-5 ${stat.color}`} />
                     </CardHeader>
                     <CardContent>
-                        <div className="text-2xl font-bold">{stat.value}</div>
-                        <p className="text-xs text-muted-foreground">{stat.change}</p>
+                        <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
+                        <p className="text-xs text-slate-500 mt-1">{stat.subtitle}</p>
                     </CardContent>
                 </Card>
             ))}
