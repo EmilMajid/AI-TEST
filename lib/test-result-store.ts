@@ -93,8 +93,38 @@ export function saveTestResult(result: StoredTestResult): StoredTestResult {
   }
   current.unshift(newResult) // newest first
   saveTestResultsToDisk(current)
+
+  // Async sync to Supabase TestResult table
+  try {
+    const { supabaseAdmin } = require("./user-store")
+    const sEmail = (newResult.studentEmail || "").toLowerCase()
+    if (sEmail && supabaseAdmin) {
+      supabaseAdmin
+        .from("User")
+        .select("id")
+        .eq("email", sEmail)
+        .single()
+        .then((uRes: any) => {
+          if (uRes.data?.id) {
+            return supabaseAdmin.from("TestResult").insert({
+              userId: uRes.data.id,
+              textbook: newResult.textbook,
+              topic: newResult.topic,
+              class: newResult.class,
+              score: newResult.score,
+              timeSpent: newResult.timeSpent || 0,
+              answers: newResult.answers || {},
+              completedAt: newResult.completedAt,
+            })
+          }
+        })
+        .catch(() => {})
+    }
+  } catch (err) {}
+
   return newResult
 }
+
 
 /**
  * Şagirdi çoxlu identifikator üzrə axtarır (Cross-ID lookup).

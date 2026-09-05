@@ -19,10 +19,22 @@ function getStoragePath(filename: string): string {
 const TMP_FILE = getStoragePath("testai_registered_users.json")
 const REAL_FILE = getStoragePath("testai_real_users.json")
 const LINKS_FILE = getStoragePath("testai_student_links.json")
+import { createClient } from "@supabase/supabase-js"
+
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://hkwppwinuyxznjnkdius.supabase.co"
+const supabaseServiceKey =
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhrd3Bwd2ludXl4em5qbmtkaXVzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4ODM5NDQ4OCwiZXhwIjoyMTAzOTcwNDg4fQ.s7CdTAHQucsWAeSRRCWLnJtCLJeFzy6KehmZoo5i6CE"
+
+export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
+  auth: { persistSession: false, autoRefreshToken: false }
+})
 
 export interface StoredUser {
   id: string | number
   email: string
+
   password?: string
   accountType: string // "parent" | "student" | "teacher" | "director" | "admin"
   firstName: string
@@ -311,8 +323,36 @@ export function saveUser(user: StoredUser): StoredUser {
     saveToDisk(getAllUsers())
   } catch (e) {}
 
+  // Async sync to real Supabase PostgreSQL cloud database
+  if (userWithStatus.source === "real" || userWithStatus.email) {
+    try {
+      supabaseAdmin
+        .from("User")
+        .upsert(
+          {
+            email: userWithStatus.email.toLowerCase(),
+            password: userWithStatus.password || "Test@2026",
+            firstName: userWithStatus.firstName,
+            lastName: userWithStatus.lastName,
+            fatherName: userWithStatus.fatherName || null,
+            school: userWithStatus.school || null,
+            class: userWithStatus.class || null,
+            region: userWithStatus.region || "Bakı",
+            accountType: userWithStatus.accountType || userWithStatus.role || "student",
+            role: userWithStatus.role || userWithStatus.accountType || "student",
+            isGlobalAdmin: userWithStatus.accountType === "admin" || userWithStatus.role === "admin",
+            isActive: !userWithStatus.isBlocked && userWithStatus.status !== "blocked",
+          },
+          { onConflict: "email" }
+        )
+        .then(() => {})
+        .catch(() => {})
+    } catch (err) {}
+  }
+
   return userWithStatus
 }
+
 
 
 export function blockUser(idOrEmail: string | number, isBlocked: boolean = true): StoredUser | null {
@@ -749,8 +789,38 @@ export function saveLink(link: StudentLink): StudentLink {
   }
 
   saveLinksToDisk(currentLinks)
+
+  // Async sync to Supabase ParentStudentLink table
+  try {
+    const parentEmail = (link.parentEmail || "").toLowerCase()
+    const studentEmail = (link.student?.email || "").toLowerCase()
+    if (parentEmail && studentEmail) {
+      Promise.all([
+        supabaseAdmin.from("User").select("id").eq("email", parentEmail).single(),
+        supabaseAdmin.from("User").select("id").eq("email", studentEmail).single(),
+      ])
+        .then(([pRes, sRes]) => {
+          if (pRes.data?.id && sRes.data?.id) {
+            return supabaseAdmin
+              .from("ParentStudentLink")
+              .upsert(
+                {
+                  parentId: pRes.data.id,
+                  studentId: sRes.data.id,
+                  relationshipType: link.relationshipType || "parent",
+                  status: link.status || "active",
+                },
+                { onConflict: "parentId,studentId" }
+              )
+          }
+        })
+        .catch(() => {})
+    }
+  } catch (err) {}
+
   return link
 }
+
 
 export function deleteLink(linkId: string | number, studentId?: string | number, studentEmail?: string, studentName?: string): boolean {
   const cleanId = String(linkId).trim().toLowerCase()
@@ -844,8 +914,16 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
     if (sEmail && deletedLinkIds.has(sEmail)) return false
     if (sName && deletedLinkIds.has(`name:${sName}`)) return false
 
+    // Generic and universal parent-student attribution:
+    // 1. Direct parentId match
     if (parentIdStr && String(l.parentId) === parentIdStr) return true
+    // 2. Direct parentEmail match
     if (cleanEmail && l.parentEmail && l.parentEmail.toLowerCase() === cleanEmail) return true
+    // 3. Student object has matching parentId or parentEmail
+    if (parentIdStr && (l.student as any)?.parentId && String((l.student as any).parentId) === parentIdStr) return true
+    if (cleanEmail && (l.student as any)?.parentEmail && String((l.student as any).parentEmail).toLowerCase() === cleanEmail) return true
+
+    // Fallback known presets
     if (isRufatParent && (
       String(l.studentId) === "student-ayaz-309" || 
       String(l.studentId) === "student-araz-309" || 
@@ -855,7 +933,6 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
       sName.includes("araz rzayev")
     )) return true
     if (isEmilParent && (
-
       String(l.studentId) === "student-inci" || 
       String(l.studentId) === "student-1" ||
       String(l.studentId) === "student-emilia" || 
@@ -869,6 +946,7 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
     )) return true
     return false
   })
+
 
   // Deduplicate strictly by student normalized full name or email
   const dedupMap = new Map<string, StudentLink>()
