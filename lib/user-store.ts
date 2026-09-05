@@ -506,9 +506,12 @@ export function findUsers(query: { emailOrId?: string; role?: string }): StoredU
   }
 
   if (query.role) {
-    matches = matches.filter(
+    const roleMatches = matches.filter(
       (u) => u.accountType === query.role || u.role === query.role
     )
+    if (roleMatches.length > 0) {
+      matches = roleMatches
+    }
   }
 
   return matches

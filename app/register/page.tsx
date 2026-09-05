@@ -175,6 +175,7 @@ export default function RegisterPage() {
         school: data.school,
         class: data.class,
         email: result.user.email || data.email,
+        password: data.password,
         theme: theme.colorScheme,
       }
 
@@ -254,6 +255,7 @@ export default function RegisterPage() {
         fullLocation: submissionData.fullLocation,
         school: data.school,
         email: result.user.email || data.email,
+        password: data.password,
         theme: theme.colorScheme,
         linkedStudents: [],
       }

@@ -144,6 +144,7 @@ export default function LoginPage() {
             ...prev,
             userId: clientUser.id || clientUser.studentId,
             email: clientUser.email || prev.email,
+            role: clientUser.accountType || clientUser.role || prev.role,
           }))
           setStep("password")
           return
@@ -155,11 +156,13 @@ export default function LoginPage() {
       if (data.users && data.users.length > 0) {
         setFoundUsers(data.users)
         if (data.users.length === 1) {
+          const matched = data.users[0]
           // Only one user found, auto-select and go to password
           setFormData((prev) => ({
             ...prev,
-            userId: data.users[0].id,
-            email: data.users[0].email || prev.email,
+            userId: matched.id,
+            email: matched.email || prev.email,
+            role: matched.role || matched.accountType || prev.role,
           }))
           setStep("password")
         } else {
@@ -172,6 +175,7 @@ export default function LoginPage() {
           ...prev,
           userId: clientUser.id || clientUser.studentId,
           email: clientUser.email || prev.email,
+          role: clientUser.accountType || clientUser.role || prev.role,
         }))
         setStep("password")
       } else {
@@ -190,6 +194,7 @@ export default function LoginPage() {
       ...prev,
       userId: user.id,
       email: user.email || prev.email,
+      role: user.role || user.accountType || prev.role,
     }))
     setStep("password")
   }
@@ -239,8 +244,13 @@ export default function LoginPage() {
       localStorage.setItem("userData", JSON.stringify(cleanedUser))
 
       console.log("Redirecting...")
-      if (cleanedUser.role === "admin") {
+      if (cleanedUser.role === "admin" || cleanedUser.accountType === "admin") {
         router.push("/admin/topics")
+        setTimeout(() => {
+          if (!window.location.pathname.startsWith("/admin")) {
+            window.location.href = "/admin/topics"
+          }
+        }, 150)
       } else {
         const dashboardPath = getDashboardPath(cleanedUser.accountType)
         router.push(dashboardPath)
@@ -312,7 +322,7 @@ export default function LoginPage() {
                 </CardTitle>
                 <CardDescription className="text-center text-xs sm:text-sm">
                   {step === "role" && "Davam etmək üçün statusunuzu seçin"}
-                  {step === "email" && `${roles.find((r) => r.id === formData.role)?.label || "İstifadəçi"} kimi giriş (E-mail və ya Şagird ID)`}
+                  {step === "email" && (formData.role === "admin" ? "Sistem İnzibatçısı kimi giriş (E-mail və ya 'admin')" : `${roles.find((r) => r.id === formData.role)?.label || "İstifadəçi"} kimi giriş (E-mail və ya Şagird ID)`)}
                   {step === "user-selection" && "Bu məlumatla uyğun hesablar tapıldı"}
                   {step === "password" && "Hesabınıza daxil olmaq üçün şifrənizi yazın"}
                 </CardDescription>
@@ -357,14 +367,16 @@ export default function LoginPage() {
                 {step === "email" && (
                   <form onSubmit={handleEmailSubmit} className="space-y-5">
                     <div>
-                      <Label htmlFor="email" className="text-xs font-semibold">E-mail və ya Unikal Şagird ID</Label>
+                      <Label htmlFor="email" className="text-xs font-semibold">
+                        {formData.role === "admin" ? "Admin E-mail və ya İstifadəçi adı" : "E-mail və ya Unikal Şagird ID"}
+                      </Label>
                       <Input
                         id="email"
                         type="text"
                         required
                         value={formData.email}
                         onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
-                        placeholder="nümunə@email.com və ya @gunay.rzayeva.161"
+                        placeholder={formData.role === "admin" ? "admin@edu.az və ya admin" : "nümunə@email.com və ya @gunay.rzayeva.161"}
                         disabled={isLoading}
                         className="text-base p-5 mt-1 rounded-xl font-mono"
                         autoFocus
@@ -451,14 +463,15 @@ export default function LoginPage() {
               </CardContent>
             </Card>
 
-            {/* Diqqət cəlb etməyən gizli Admin Girişi Linki */}
+            {/* Sistem İnzibatçısı Girişi Düyməsi */}
             <div className="text-center pt-2">
               <button
+                type="button"
                 onClick={handleAdminSelect}
-                className="text-[11px] text-gray-400/80 hover:text-gray-600 transition-colors inline-flex items-center gap-1 mx-auto cursor-pointer font-medium"
+                className="text-xs text-gray-500 hover:text-primary hover:bg-white/80 transition-all px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5 mx-auto cursor-pointer font-medium border border-gray-200/60 shadow-2xs backdrop-blur-xs"
               >
-                <Lock className="w-3 h-3 opacity-60" />
-                <span>Sistem İnzibatçısı</span>
+                <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
+                <span>Sistem İnzibatçısı Girişi</span>
               </button>
             </div>
 
