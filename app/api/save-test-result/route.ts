@@ -2,9 +2,23 @@ export const dynamic = "force-dynamic"
 import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 import { saveTestResult, type StoredTestResult } from "@/lib/test-result-store"
-import { getAllUsers, loadLinksFromDisk } from "@/lib/user-store"
+import { getAllUsers, loadLinksFromDisk, supabaseAdmin } from "@/lib/user-store"
 import { sendTestResultNotification } from "@/lib/email-service"
 import { getAuthContext } from "@/lib/auth-utils"
+
+function matchStudentUser(queryId: string | number | undefined, email: string | undefined, user: any): boolean {
+  if (!user) return false
+  if (email && user.email && user.email.toLowerCase() === email.toLowerCase().trim()) return true
+  if (queryId !== undefined && queryId !== null && String(user.id) === String(queryId)) return true
+
+  const q = String(queryId || "").toLowerCase().replace(/[^a-z0-9]/g, "")
+  const uEmail = (user.email || "").toLowerCase().replace(/[^a-z0-9]/g, "")
+  const uFirst = (user.firstName || "").toLowerCase()
+
+  if (q && uEmail && (q === uEmail || uEmail.includes(q) || q.includes(uEmail.split("testai")[0]))) return true
+  if (q && uFirst && q.includes(uFirst)) return true
+  return false
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -12,7 +26,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
 
     const studentId = body.studentId || auth?.user?.id || `student-${Date.now()}`
-    const studentEmail = body.studentEmail || auth?.user?.email || ""
+    const studentEmail = (body.studentEmail || auth?.user?.email || "").trim()
     const studentName = body.studentName || `${auth?.user?.id || "Şagird"}`
     const uniqueId = body.uniqueId || ""
 
@@ -28,70 +42,128 @@ export async function POST(request: NextRequest) {
     const timeSpentMinutes = Math.max(1, Math.round(timeSpentSeconds / 60))
     const totalQuestions = Number(body.totalQuestions || (body.detailedResults ? body.detailedResults.length : 10))
     const correctAnswers = Number(body.correctAnswers || Math.round((testScore / 100) * totalQuestions))
+    const testClass = String(body.class || "8")
 
-    // 1. Save test result to persistent disk store
-    const storedResult: StoredTestResult = {
-      id: body.id || `res-${Date.now()}`,
-      studentId,
-      studentEmail,
-      studentName,
-      uniqueId: uniqueId || undefined,
-      textbook: body.textbook,
-      topic: body.topic || "Ümumi test",
-      class: body.class || "5",
-      difficulty: body.difficulty || "orta",
-      score: testScore,
-      totalQuestions,
-      correctAnswers,
-      wrongAnswers: totalQuestions - correctAnswers,
-      timeSpent: timeSpentSeconds,
-      completedAt: body.completedAt || new Date().toISOString(),
-      answers: body.answers,
-      detailedResults: body.detailedResults,
+    // 1. Resolve student user in Supabase
+    let studentDbId: number | null = null
+    try {
+      if (supabaseAdmin) {
+        // Check by numeric ID
+        const numId = Number(studentId)
+        if (!isNaN(numId) && numId > 0) {
+          const { data: uById } = await supabaseAdmin.from("User").select("id").eq("id", numId).maybeSingle()
+          if (uById?.id) studentDbId = uById.id
+        }
+
+        // Check by student email
+        if (!studentDbId && studentEmail) {
+          const { data: uByEmail } = await supabaseAdmin.from("User").select("id").eq("email", studentEmail.toLowerCase()).maybeSingle()
+          if (uByEmail?.id) studentDbId = uByEmail.id
+        }
+
+        // Check by matching studentId or uniqueId across all student users
+        if (!studentDbId) {
+          const { data: allStudents } = await supabaseAdmin.from("User").select("id, email, firstName, lastName").eq("accountType", "student")
+          if (allStudents && allStudents.length > 0) {
+            const matched = allStudents.find((u: any) => matchStudentUser(studentId, studentEmail, u) || (uniqueId && matchStudentUser(uniqueId, studentEmail, u)))
+            if (matched?.id) studentDbId = matched.id
+          }
+        }
+
+        // If student not found in Supabase, auto-create student so tests are never dropped
+        if (!studentDbId) {
+          const resolvedEmail = studentEmail || (uniqueId ? `${uniqueId.replace("@", "")}@testai.az` : `student-${Date.now()}@testai.az`)
+          const nameParts = (studentName || "Şagird").split(" ")
+          const firstName = nameParts[0] || "Şagird"
+          const lastName = nameParts.slice(1).join(" ") || "İstifadəçi"
+
+          const { data: newUser } = await supabaseAdmin.from("User").insert({
+            email: resolvedEmail.toLowerCase().trim(),
+            password: "Test@2026",
+            firstName,
+            lastName,
+            fatherName: "",
+            region: "Bakı",
+            school: body.school || "Məktəb",
+            class: testClass,
+            accountType: "student",
+            role: "student",
+            isActive: true,
+          }).select("id").maybeSingle()
+
+          if (newUser?.id) {
+            studentDbId = newUser.id
+          }
+        }
+
+        // Save directly to Supabase TestResult table with AWAIT
+        if (studentDbId) {
+          const { error: insertErr } = await supabaseAdmin.from("TestResult").insert({
+            userId: studentDbId,
+            textbook: body.textbook,
+            topic: body.topic || "Ümumi test",
+            class: testClass,
+            score: testScore,
+            timeSpent: timeSpentSeconds,
+            answers: body.answers || {},
+            completedAt: body.completedAt || new Date().toISOString(),
+          })
+
+          if (insertErr) {
+            console.error("Supabase TestResult insert error:", insertErr)
+          } else {
+            console.log(`[Supabase] TestResult recorded successfully for student userId=${studentDbId}`)
+          }
+        }
+      }
+    } catch (dbErr) {
+      console.error("Database resolution error in save-test-result:", dbErr)
     }
 
-    const saved = saveTestResult(storedResult)
-
-
-    // 2. Identify linked parent(s) to send email notification
+    // 2. Identify linked parent and send email notification to parent's real inbox
+    let parentEmailToNotify = (body.parentEmail || "").trim()
+    let parentName = body.parentName || "Valideyn"
     let emailStatus = { sent: false, parentEmail: "", simulated: false }
+
     try {
       const allUsers = getAllUsers()
       const allLinks = loadLinksFromDisk()
 
-      // Find link by studentId or studentEmail
-      const link = allLinks.find(
-        (l) =>
-          l.status === "active" &&
-          (String(l.studentId) === String(studentId) ||
-            (studentEmail && l.student.email?.toLowerCase() === studentEmail.toLowerCase()))
-      )
-
-      let parentEmailToNotify = (body.parentEmail || link?.parentEmail || "").trim()
-      let parentName = body.parentName || "Valideyn"
-
-      // If link has parentId, find user
-      if (link?.parentId) {
-        const parentUser = allUsers.find((u) => String(u.id) === String(link.parentId))
-        if (parentUser) {
-          if (!parentEmailToNotify && parentUser.email) {
-            parentEmailToNotify = parentUser.email
-          }
-          if (parentUser.firstName) {
-            parentName = `${parentUser.firstName} ${parentUser.lastName || ""}`.trim()
-          }
+      if (!parentEmailToNotify) {
+        const link = allLinks.find(
+          (l) =>
+            l.status === "active" &&
+            (String(l.studentId) === String(studentId) ||
+              (studentEmail && l.student?.email?.toLowerCase() === studentEmail.toLowerCase()))
+        )
+        if (link?.parentEmail) {
+          parentEmailToNotify = link.parentEmail
+        } else if (link?.parentId) {
+          const parentUser = allUsers.find((u) => String(u.id) === String(link.parentId))
+          if (parentUser?.email) parentEmailToNotify = parentUser.email
         }
       }
 
-      // If still no parent found, check student user's parentEmail field
-      if (!parentEmailToNotify) {
-        const studentUser = allUsers.find(
-          (u) =>
-            String(u.id) === String(studentId) ||
-            (studentEmail && u.email?.toLowerCase() === studentEmail.toLowerCase())
-        )
-        if (studentUser?.parentEmail) {
-          parentEmailToNotify = studentUser.parentEmail
+      // Also verify parent in Supabase and ensure ParentStudentLink
+      if (parentEmailToNotify && studentDbId && supabaseAdmin) {
+        try {
+          const { data: parentDbUser } = await supabaseAdmin
+            .from("User")
+            .select("id")
+            .eq("email", parentEmailToNotify.toLowerCase())
+            .maybeSingle()
+
+          if (parentDbUser?.id) {
+            await supabaseAdmin.from("ParentStudentLink").upsert({
+              parentId: parentDbUser.id,
+              studentId: studentDbId,
+              relationshipType: "parent",
+              status: "active",
+              accessLevel: "full",
+            }, { onConflict: "parentId,studentId" })
+          }
+        } catch (linkErr) {
+          console.error("Error upserting ParentStudentLink in Supabase:", linkErr)
         }
       }
 
@@ -100,14 +172,14 @@ export async function POST(request: NextRequest) {
           parentEmail: parentEmailToNotify,
           parentName,
           studentName: studentName || "Övladınız",
-          studentClass: body.class,
+          studentClass: testClass,
           textbook: body.textbook,
           topic: body.topic || "Mövzu testi",
           score: testScore,
           correctCount: correctAnswers,
           totalQuestions,
           timeSpentMinutes,
-          completedAt: saved.completedAt,
+          completedAt: body.completedAt || new Date().toISOString(),
         })
         emailStatus = {
           sent: emailRes.success,
@@ -118,6 +190,28 @@ export async function POST(request: NextRequest) {
     } catch (mailErr) {
       console.error("Error triggering parent email notification:", mailErr)
     }
+
+    // 3. Save to local persistent store for offline/dev fallback
+    const storedResult: StoredTestResult = {
+      id: body.id || `res-${Date.now()}`,
+      studentId: studentDbId || studentId,
+      studentEmail: studentEmail,
+      studentName,
+      uniqueId: uniqueId || undefined,
+      textbook: body.textbook,
+      topic: body.topic || "Ümumi test",
+      class: testClass,
+      difficulty: body.difficulty || "orta",
+      score: testScore,
+      totalQuestions,
+      correctAnswers,
+      wrongAnswers: totalQuestions - correctAnswers,
+      timeSpent: timeSpentSeconds,
+      completedAt: body.completedAt || new Date().toISOString(),
+      answers: body.answers,
+      detailedResults: body.detailedResults,
+    }
+    const saved = saveTestResult(storedResult)
 
     return NextResponse.json(
       {

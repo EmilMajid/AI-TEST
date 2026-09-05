@@ -7,6 +7,20 @@ import { INCI_TEST_RESULTS, EMILIA_TEST_RESULTS } from "@/lib/demo-showcase-data
 
 const isDemoMode = true // Forced for full mock mode
 
+function matchStudentUser(queryId: string | number | undefined, email: string | undefined, user: any): boolean {
+  if (!user) return false
+  if (email && user.email && user.email.toLowerCase() === email.toLowerCase().trim()) return true
+  if (queryId !== undefined && queryId !== null && String(user.id) === String(queryId)) return true
+
+  const q = String(queryId || "").toLowerCase().replace(/[^a-z0-9]/g, "")
+  const uEmail = (user.email || "").toLowerCase().replace(/[^a-z0-9]/g, "")
+  const uFirst = (user.firstName || "").toLowerCase()
+
+  if (q && uEmail && (q === uEmail || uEmail.includes(q) || q.includes(uEmail.split("testai")[0]))) return true
+  if (q && uFirst && q.includes(uFirst)) return true
+  return false
+}
+
 export async function GET(request: NextRequest) {
   try {
     const auth = await requireAuth(request)
@@ -39,21 +53,22 @@ export async function GET(request: NextRequest) {
             const { data: uData } = await supabaseAdmin
               .from("User")
               .select("id")
-              .eq("email", studentEmail.toLowerCase())
+              .eq("email", studentEmail.toLowerCase().trim())
               .maybeSingle()
             if (uData?.id) sUserId = uData.id
           }
-          if (!sUserId && studentId) {
+
+          if (!sUserId) {
             const { data: allStudents } = await supabaseAdmin
               .from("User")
-              .select("id, email")
+              .select("id, email, firstName, lastName")
               .eq("accountType", "student")
-            if (allStudents) {
+            if (allStudents && allStudents.length > 0) {
               const matchedU = allStudents.find((u: any) =>
-                studentId.toLowerCase().includes(u.email.split("@")[0].toLowerCase()) ||
-                u.email.toLowerCase().includes(studentId.toLowerCase().replace("student-", ""))
+                matchStudentUser(studentId, studentEmail, u) ||
+                (uniqueId && matchStudentUser(uniqueId, studentEmail, u))
               )
-              if (matchedU) sUserId = matchedU.id
+              if (matchedU?.id) sUserId = matchedU.id
             }
           }
 
@@ -73,7 +88,7 @@ export async function GET(request: NextRequest) {
                     studentEmail: studentEmail,
                     textbook: r.textbook,
                     topic: r.topic || "Ümumi sınaq",
-                    class: r.class || "6",
+                    class: r.class || "8",
                     score: r.score,
                     timeSpent: r.timeSpent || 60,
                     completedAt: r.completedAt,

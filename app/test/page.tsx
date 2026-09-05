@@ -288,6 +288,8 @@ export default function TestPage() {
           studentId: currentUser?.id,
           studentEmail: currentUser?.email,
           studentName: currentUser ? `${currentUser.firstName || ""} ${currentUser.lastName || ""}`.trim() : "Şagird",
+          uniqueId: (currentUser as any)?.uniqueId || "",
+          school: (currentUser as any)?.school || "",
           parentId,
           parentEmail,
           textbook: testConfig?.textbook || "",
