@@ -17,6 +17,7 @@ function getStoragePath(filename: string): string {
 }
 
 const TMP_FILE = getStoragePath("testai_registered_users.json")
+const REAL_FILE = getStoragePath("testai_real_users.json")
 const LINKS_FILE = getStoragePath("testai_student_links.json")
 
 export interface StoredUser {
@@ -36,6 +37,53 @@ export interface StoredUser {
   parentEmail?: string
   isBlocked?: boolean
   status?: "active" | "blocked" | "inactive"
+  /** "real" = testai.az vasitəsilə qeydiyyatdan keçmiş | "mock" = test/demo məlumatı | "admin" = xüsusi admin statusu */
+  source?: "mock" | "real" | "admin"
+}
+
+/** Real istifadəçiləri ayrı diskə yaz */
+function loadRealUsersFromDisk(): StoredUser[] {
+  try {
+    if (fs.existsSync(REAL_FILE)) {
+      const data = fs.readFileSync(REAL_FILE, "utf-8")
+      return JSON.parse(data) || []
+    }
+  } catch (err) {}
+  return []
+}
+
+function saveRealUserToDisk(user: StoredUser) {
+  try {
+    const existing = loadRealUsersFromDisk()
+    const key = (user.email || String(user.id)).toLowerCase()
+    const idx = existing.findIndex(u => (u.email || String(u.id)).toLowerCase() === key)
+    if (idx >= 0) {
+      existing[idx] = { ...existing[idx], ...user }
+    } else {
+      existing.push(user)
+    }
+    fs.writeFileSync(REAL_FILE, JSON.stringify(existing, null, 2), "utf-8")
+  } catch (err) {}
+}
+
+/** Heristik yoxlama: istifadəçi mock/demo-durmu? */
+export function isMockUser(u: StoredUser): boolean {
+  if (u.source === "real" || u.source === "admin") return false
+  if (u.source === "mock") return true
+
+  const id = String(u.id || "")
+  const email = (u.email || "").toLowerCase()
+
+  // Admin: xüsusi status
+  if (u.accountType === "admin" || u.role === "admin") return false
+  // Timestamp ID (13 rəqəm) → real qeydiyyat
+  if (/^\d{13}$/.test(id)) return false
+  // Məlum mock email domenləri
+  if (email.endsWith("@test.com") || email.endsWith("@example.com") || email.endsWith("@edu.az")) return true
+  // Məlum mock ID prefiksləri
+  if (/^(parent|teacher|director|student)-[a-z]/.test(id)) return true
+
+  return false
 }
 
 // Global in-memory cache
@@ -74,19 +122,39 @@ function saveToDisk(users: StoredUser[]) {
   }
 }
 
-export function getAllUsers(): StoredUser[] {
+export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
+  const includeMock = opts?.includesMock !== false // default: true
   const diskUsers = loadFromDisk()
+  const realUsers = loadRealUsersFromDisk()
   const map = new Map<string, StoredUser>()
 
-  // 1. Base MOCK_USERS
+  // 1. Base MOCK_USERS — etiketlə
   for (const u of MOCK_USERS) {
     if (isAyazTarget(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
     if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
-    map.set(key, { ...u, isBlocked: (u as any).isBlocked ?? false, status: (u as any).status || "active" } as StoredUser)
+
+    // Admin xüsusi status alır
+    const srcTag: StoredUser["source"] =
+      u.accountType === "admin" || u.role === "admin" ? "admin" : "mock"
+
+    map.set(key, {
+      ...u,
+      isBlocked: (u as any).isBlocked ?? false,
+      status: (u as any).status || "active",
+      source: srcTag,
+    } as StoredUser)
   }
 
-  // 2. Disk users (ignore corrupted demo entries, auto-created user-* entries, or deleted users)
+  // 2. Real users faylı (.data/testai_real_users.json)
+  for (const u of realUsers) {
+    if (isAyazTarget(u)) continue
+    const key = (u.email || String(u.id)).toLowerCase()
+    if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
+    map.set(key, { ...map.get(key), ...u, source: u.source || "real" })
+  }
+
+  // 3. Disk users (mövcud fayl — qarışıq, köhnə)
   for (const u of diskUsers) {
     if (isAyazTarget(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
@@ -94,10 +162,12 @@ export function getAllUsers(): StoredUser[] {
     if (u.firstName === "Demo" || u.school?.includes("Demo") || String(u.id).startsWith("user-")) {
       continue
     }
+    // Əgər artıq real faylda varsa üstünlük realadır
+    if (map.has(key) && map.get(key)?.source === "real") continue
     map.set(key, { ...map.get(key), ...u })
   }
 
-  // 3. In-memory users
+  // 4. In-memory users
   for (const u of inMemoryUsers) {
     if (isAyazTarget(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
@@ -108,7 +178,7 @@ export function getAllUsers(): StoredUser[] {
     map.set(key, { ...map.get(key), ...u })
   }
 
-  // Ensure Rufat Rzayev (Parent) and Ayaz Rzayev (Student) exist and are linked
+  // 5. Rüfət + Ayaz sabit fallback (real istifadəçilər)
   const rufatKey = "r.h.rzayev@gmail.com"
   const ayazKey = "ayaz.rzayev.309@testai.az"
   let rufatUser = map.get(rufatKey) || map.get("parent-rufat")
@@ -128,8 +198,11 @@ export function getAllUsers(): StoredUser[] {
       role: "parent",
       status: "active",
       isBlocked: false,
+      source: "real",
     }
     map.set(rufatKey, rufatUser)
+  } else if (rufatUser && !rufatUser.source) {
+    rufatUser.source = "real"
   }
 
   if (!ayazUser && !deletedUserIds.has(ayazKey)) {
@@ -142,23 +215,35 @@ export function getAllUsers(): StoredUser[] {
       lastName: "Rzayev",
       fatherName: "Rüfət",
       school: "309 saylı məktəb",
-      class: "5",
+      class: "8",
       region: "Bakı",
       role: "student",
       parentId: rufatUser?.id || "parent-rufat",
       parentEmail: "r.h.rzayev@gmail.com",
       status: "active",
       isBlocked: false,
+      source: "real",
     }
     map.set(ayazKey, ayazUser)
   } else if (ayazUser && rufatUser) {
     ayazUser.parentId = rufatUser.id
     ayazUser.parentEmail = rufatUser.email
     if (!ayazUser.fatherName) ayazUser.fatherName = "Rüfət"
+    if (!ayazUser.source) ayazUser.source = "real"
+    // Sinif 5-dən 8-ə düzəliş
+    if (ayazUser.class === "5") ayazUser.class = "8"
   }
 
-  return Array.from(map.values())
+  const allList = Array.from(map.values())
+
+  // includesMock: false olduqda yalnız real + admin qaytarılır
+  if (!includeMock) {
+    return allList.filter(u => u.source === "real" || u.source === "admin")
+  }
+
+  return allList
 }
+
 
 export function saveUser(user: StoredUser): StoredUser {
   if (isAyazTarget(user)) {
@@ -184,13 +269,18 @@ export function saveUser(user: StoredUser): StoredUser {
     inMemoryUsers.push(userWithStatus)
   }
 
-  const mockIdx = MOCK_USERS.findIndex(
-    (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(user.id)
-  )
-  if (mockIdx >= 0) {
-    MOCK_USERS[mockIdx] = { ...MOCK_USERS[mockIdx], ...userWithStatus } as any
+  // Real istifadəçidirsə mock massivə əlavə etmə, yalnız real fayla yaz
+  if (userWithStatus.source === "real") {
+    saveRealUserToDisk(userWithStatus)
   } else {
-    MOCK_USERS.push(userWithStatus as any)
+    const mockIdx = MOCK_USERS.findIndex(
+      (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(user.id)
+    )
+    if (mockIdx >= 0) {
+      MOCK_USERS[mockIdx] = { ...MOCK_USERS[mockIdx], ...userWithStatus } as any
+    } else {
+      MOCK_USERS.push(userWithStatus as any)
+    }
   }
 
   try {
@@ -199,6 +289,7 @@ export function saveUser(user: StoredUser): StoredUser {
 
   return userWithStatus
 }
+
 
 export function blockUser(idOrEmail: string | number, isBlocked: boolean = true): StoredUser | null {
   const clean = String(idOrEmail).trim().toLowerCase()
@@ -434,7 +525,7 @@ const DEFAULT_LINKS: StudentLink[] = [
       fatherName: "Rüfət",
       email: "ayaz.rzayev.309@testai.az",
       uniqueId: "@ayaz.rzayev.309",
-      class: "5",
+      class: "8",
       school: "309 saylı məktəb"
     }
   }

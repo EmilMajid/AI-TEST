@@ -23,11 +23,13 @@ export default function AdminUsersPage() {
     const [users, setUsers] = useState<any[]>([])
     const [loading, setLoading] = useState(true)
     const [search, setSearch] = useState("")
+    const [sourceFilter, setSourceFilter] = useState<"all" | "real" | "mock">("all")
     const [actionLoading, setActionLoading] = useState<string | number | null>(null)
 
     // Modals state
     const [confirmDeleteUser, setConfirmDeleteUser] = useState<any | null>(null)
     const [confirmBlockUser, setConfirmBlockUser] = useState<any | null>(null)
+
 
     async function fetchUsers() {
         try {
@@ -138,8 +140,17 @@ export default function AdminUsersPage() {
         const email = (u.email || '').toLowerCase()
         const uniqueId = (u.uniqueId || '').toLowerCase()
         const school = (u.school || '').toLowerCase()
+        const matchesSearch = fullName.includes(query) || email.includes(query) || uniqueId.includes(query) || school.includes(query)
 
-        return fullName.includes(query) || email.includes(query) || uniqueId.includes(query) || school.includes(query)
+        // Source filtr
+        let matchesSource = true
+        if (sourceFilter === "real") {
+            matchesSource = u.source === "real" || u.source === "admin"
+        } else if (sourceFilter === "mock") {
+            matchesSource = u.source === "mock" || (!u.source && !u.email?.endsWith("@testai.az"))
+        }
+
+        return matchesSearch && matchesSource
     })
 
     const getRoleBadge = (role: string) => {
@@ -151,6 +162,14 @@ export default function AdminUsersPage() {
             case 'parent': return <Badge className="bg-orange-600 hover:bg-orange-700">Valideyn</Badge>
             default: return <Badge variant="outline">{role}</Badge>
         }
+    }
+
+    const getSourceBadge = (user: any) => {
+        if (user.source === "admin") return null // admin-lər üçün ayrıca badge lazım deyil
+        if (user.source === "real") {
+            return <span className="ml-1 text-[10px] bg-emerald-100 text-emerald-700 border border-emerald-300 px-1.5 py-0.5 rounded-full font-medium">Real</span>
+        }
+        return <span className="ml-1 text-[10px] bg-slate-100 text-slate-500 border border-slate-200 px-1.5 py-0.5 rounded-full font-medium">Demo</span>
     }
 
     const isRootAdmin = (user: any) => {
@@ -175,6 +194,39 @@ export default function AdminUsersPage() {
                         onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>
+            </div>
+
+            {/* Source filtr düymələri */}
+            <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-sm text-slate-500 font-medium mr-1">Filtr:</span>
+                <Button
+                    size="sm"
+                    variant={sourceFilter === "all" ? "default" : "outline"}
+                    className={sourceFilter === "all" ? "bg-slate-800 text-white hover:bg-slate-900" : "border-slate-300 text-slate-700"}
+                    onClick={() => setSourceFilter("all")}
+                >
+                    Hamısı
+                    <span className="ml-1.5 text-[11px] opacity-70">({users.length})</span>
+                </Button>
+                <Button
+                    size="sm"
+                    variant={sourceFilter === "real" ? "default" : "outline"}
+                    className={sourceFilter === "real" ? "bg-emerald-600 text-white hover:bg-emerald-700" : "border-emerald-300 text-emerald-700 hover:bg-emerald-50"}
+                    onClick={() => setSourceFilter("real")}
+                >
+                    <span className="h-1.5 w-1.5 rounded-full bg-current mr-1.5 opacity-80" />
+                    Yalnız Real
+                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => u.source === "real" || u.source === "admin").length})</span>
+                </Button>
+                <Button
+                    size="sm"
+                    variant={sourceFilter === "mock" ? "default" : "outline"}
+                    className={sourceFilter === "mock" ? "bg-slate-500 text-white hover:bg-slate-600" : "border-slate-300 text-slate-500 hover:bg-slate-50"}
+                    onClick={() => setSourceFilter("mock")}
+                >
+                    Yalnız Demo
+                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => u.source === "mock" || (!u.source && !u.email?.endsWith("@testai.az"))).length})</span>
+                </Button>
             </div>
 
             <Card className="shadow-sm border-slate-200">
@@ -219,6 +271,7 @@ export default function AdminUsersPage() {
                                             <TableCell className="font-medium">
                                                 <div className="flex items-center gap-2">
                                                     <span>{user.firstName} {user.lastName}</span>
+                                                    {getSourceBadge(user)}
                                                     {user.class && (
                                                         <span className="text-[11px] bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded font-mono">
                                                             {user.class}-ci sinif

@@ -56,7 +56,8 @@ export async function POST(request: NextRequest) {
         school: validatedData.school || (accountType === "parent" ? "Məktəb qeyd edilməyib" : ""),
         class: (validatedData as any).class || "",
         region: validatedData.region || "Bakı",
-        role: accountType === "student" ? "student" : ((validatedData as any).role || "parent")
+        role: accountType === "student" ? "student" : ((validatedData as any).role || "parent"),
+        source: "real" as const,
       }
       saveUser(newUser)
 

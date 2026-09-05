@@ -37,18 +37,6 @@ export const MOCK_USERS = [
     region: "Gəncə",
     role: "parent",
   },
-  {
-    id: "parent-rufat",
-    email: "r.h.rzayev@gmail.com",
-    password: "test12345",
-    accountType: "parent",
-    firstName: "Rüfət",
-    lastName: "Rzayev",
-    fatherName: "Həsən",
-    school: "309 saylı məktəb",
-    region: "Bakı",
-    role: "parent",
-  },
   // Teachers
   {
     id: "teacher-nigar",
@@ -249,20 +237,6 @@ export const MOCK_USERS = [
     class: "4",
     region: "Sumqayıt",
     role: "student"
-  },
-  {
-    id: "student-ayaz-309",
-    email: "ayaz.rzayev.309@testai.az",
-    password: "test12345",
-    accountType: "student",
-    firstName: "Ayaz",
-    lastName: "Rzayev",
-    fatherName: "Rüfət",
-    school: "309 saylı məktəb",
-    class: "5",
-    region: "Bakı",
-    role: "student",
-    parentId: "parent-rufat",
-    parentEmail: "r.h.rzayev@gmail.com"
   }
 ];
+
