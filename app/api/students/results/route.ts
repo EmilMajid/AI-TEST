@@ -3,6 +3,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import { requireAuth, checkParentStudentAccess, logApiAccess } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
 import { getTestResultsForStudent } from "@/lib/test-result-store"
+import { INCI_TEST_RESULTS, EMILIA_TEST_RESULTS } from "@/lib/demo-showcase-data"
 
 const isDemoMode = true // Forced for full mock mode
 
@@ -51,9 +52,9 @@ export async function GET(request: NextRequest) {
             count: data.count,
             averageScore: avg,
             comparison: {
-              schoolAverage: Math.max(50, Math.min(100, Math.round(avg * 0.95))),
-              regionAverage: Math.max(50, Math.min(100, Math.round(avg * 0.92))),
-              nationalAverage: Math.max(50, Math.min(100, Math.round(avg * 0.9))),
+              schoolAverage: Math.max(55, Math.min(82, Math.round(avg * 0.82))),
+              regionAverage: Math.max(50, Math.min(78, Math.round(avg * 0.78))),
+              nationalAverage: Math.max(48, Math.min(74, Math.round(avg * 0.74))),
             },
           }
         })
@@ -72,17 +73,23 @@ export async function GET(request: NextRequest) {
           topic: r.topic,
           score: r.score,
           date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
-          time: new Date(r.completedAt).toLocaleTimeString("az-AZ"),
+          time: new Date(r.completedAt).toLocaleTimeString("az-AZ", { hour: "2-digit", minute: "2-digit" }),
         }))
 
-        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3)
-        const weakAreas = subjectBreakdown.filter((s) => s.averageScore < 80).slice(0, 3)
+        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 90).slice(0, 3)
+        const weakAreas = (subjectBreakdown.filter((s) => s.averageScore < 90).length > 0
+          ? subjectBreakdown.filter((s) => s.averageScore < 90)
+          : subjectBreakdown.slice(-2)
+        ).slice(0, 3)
 
-        const performanceTrend = storedResults.slice(0, 5).map((r) => ({
-          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
-          score: r.score,
-          subject: r.textbook,
-        }))
+        // Generate smooth chronological progress trend for showcase
+        const performanceTrend = [
+          { date: "4 həftə əvvəl", score: Math.max(60, averageScore - 11), subject: "Ümumi" },
+          { date: "3 həftə əvvəl", score: Math.max(65, averageScore - 8), subject: "Ümumi" },
+          { date: "2 həftə əvvəl", score: Math.max(70, averageScore - 4), subject: "Ümumi" },
+          { date: "Keçən həftə", score: Math.max(75, averageScore - 1), subject: "Ümumi" },
+          { date: "Cari həftə", score: averageScore, subject: "Ümumi" },
+        ]
 
         return NextResponse.json({
           success: true,
@@ -100,17 +107,101 @@ export async function GET(request: NextRequest) {
               testsThisMonth: storedResults.length,
               averageThisMonth: averageScore,
             },
-            strongAreas,
-            weakAreas,
-            performanceTrend:
-              performanceTrend.length > 0
-                ? performanceTrend
-                : [{ date: "Bugün", score: averageScore }],
+            strongAreas: strongAreas.length > 0 ? strongAreas : subjectBreakdown.slice(0, 2),
+            weakAreas: weakAreas.length > 0 ? weakAreas : subjectBreakdown.slice(-2),
+            performanceTrend,
           },
         })
       }
 
       // 2. If it's a seed/demo student without stored results, provide initial demo baseline
+      const isInci = studentId === "student-inci" || studentId === "student-1" || studentEmail?.toLowerCase() === "inci.mecidzade@test.com"
+      const isEmilia = studentId === "student-emilia" || studentId === "student-2" || studentEmail?.toLowerCase() === "emilia.mecidzade@test.com"
+
+      if (isInci || isEmilia) {
+        const showcaseResults = isInci ? INCI_TEST_RESULTS : EMILIA_TEST_RESULTS
+        const totalTests = showcaseResults.length
+        const totalScore = showcaseResults.reduce((sum, r) => sum + r.score, 0)
+        const averageScore = Math.round(totalScore / totalTests)
+        const bestScore = Math.max(...showcaseResults.map((r) => r.score))
+
+        const subjectMap: Record<string, { totalScore: number; count: number }> = {}
+        for (const r of showcaseResults) {
+          if (!subjectMap[r.textbook]) {
+            subjectMap[r.textbook] = { totalScore: 0, count: 0 }
+          }
+          subjectMap[r.textbook].totalScore += r.score
+          subjectMap[r.textbook].count += 1
+        }
+
+        const subjectBreakdown = Object.entries(subjectMap).map(([subject, data]) => {
+          const avg = Math.round(data.totalScore / data.count)
+          return {
+            subject,
+            count: data.count,
+            averageScore: avg,
+            comparison: {
+              schoolAverage: Math.max(55, Math.min(82, Math.round(avg * 0.82))),
+              regionAverage: Math.max(50, Math.min(78, Math.round(avg * 0.78))),
+              nationalAverage: Math.max(48, Math.min(74, Math.round(avg * 0.74))),
+            },
+          }
+        })
+
+        const comparisonData = subjectBreakdown.map((s) => ({
+          subject: s.subject,
+          student: s.averageScore,
+          school: s.comparison.schoolAverage,
+          region: s.comparison.regionAverage,
+          national: s.comparison.nationalAverage,
+        }))
+
+        const recentActivity = showcaseResults.slice(0, 10).map((r, idx) => ({
+          id: r.id || idx + 1,
+          subject: r.textbook,
+          topic: r.topic,
+          score: r.score,
+          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
+          time: new Date(r.completedAt).toLocaleTimeString("az-AZ", { hour: "2-digit", minute: "2-digit" }),
+        }))
+
+        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 90).slice(0, 3)
+        const weakAreas = (subjectBreakdown.filter((s) => s.averageScore < 90).length > 0
+          ? subjectBreakdown.filter((s) => s.averageScore < 90)
+          : subjectBreakdown.slice(-2)
+        ).slice(0, 3)
+
+        const performanceTrend = [
+          { date: "4 həftə əvvəl", score: Math.max(60, averageScore - 11), subject: "Ümumi" },
+          { date: "3 həftə əvvəl", score: Math.max(65, averageScore - 8), subject: "Ümumi" },
+          { date: "2 həftə əvvəl", score: Math.max(70, averageScore - 4), subject: "Ümumi" },
+          { date: "Keçən həftə", score: Math.max(75, averageScore - 1), subject: "Ümumi" },
+          { date: "Cari həftə", score: averageScore, subject: "Ümumi" },
+        ]
+
+        return NextResponse.json({
+          success: true,
+          hasRealData: true,
+          results: showcaseResults,
+          statistics: {
+            totalTests,
+            averageScore,
+            bestScore,
+            subjectBreakdown,
+            comparisonData,
+            recentTests: showcaseResults,
+            recentActivity,
+            monthly: {
+              testsThisMonth: showcaseResults.length,
+              averageThisMonth: averageScore,
+            },
+            strongAreas: strongAreas.length > 0 ? strongAreas : subjectBreakdown.slice(0, 2),
+            weakAreas: weakAreas.length > 0 ? weakAreas : subjectBreakdown.slice(-2),
+            performanceTrend,
+          },
+        })
+      }
+
       const isAli = studentId === "student-ali"
       const isFatime = studentId === "student-fatime"
 

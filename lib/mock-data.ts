@@ -88,7 +88,8 @@ export const MOCK_USERS = [
     class: "6",
     region: "Bakı",
     role: "student",
-    parentId: "parent-emil"
+    parentId: "parent-emil",
+    parentEmail: "emil.mecidov@example.com"
   },
   {
     id: "student-emilia",
@@ -102,7 +103,8 @@ export const MOCK_USERS = [
     class: "2",
     region: "Bakı",
     role: "student",
-    parentId: "parent-emil"
+    parentId: "parent-emil",
+    parentEmail: "emil.mecidov@example.com"
   },
   {
     id: "student-ali",

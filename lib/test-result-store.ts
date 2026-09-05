@@ -42,6 +42,8 @@ export interface StoredTestResult {
   }>
 }
 
+import { DEMO_SHOWCASE_RESULTS } from "./demo-showcase-data"
+
 let inMemoryResults: StoredTestResult[] = []
 
 function isAyazTest(r: any): boolean {
@@ -51,19 +53,30 @@ function isAyazTest(r: any): boolean {
 }
 
 export function loadTestResultsFromDisk(): StoredTestResult[] {
+  let diskList: StoredTestResult[] = []
   try {
     if (fs.existsSync(RESULTS_FILE)) {
       const data = fs.readFileSync(RESULTS_FILE, "utf-8")
       const parsed = JSON.parse(data)
       if (Array.isArray(parsed)) {
-        inMemoryResults = parsed.filter(r => !isAyazTest(r))
-        return inMemoryResults
+        diskList = parsed.filter(r => !isAyazTest(r))
       }
     }
   } catch (err) {
     console.error("Error reading test results from disk:", err)
   }
-  return inMemoryResults.filter(r => !isAyazTest(r))
+
+  // Always merge DEMO_SHOWCASE_RESULTS so showcase demo accounts are permanently populated
+  const map = new Map<string, StoredTestResult>()
+  for (const r of diskList) {
+    map.set(String(r.id), r)
+  }
+  for (const r of DEMO_SHOWCASE_RESULTS) {
+    map.set(String(r.id), r)
+  }
+
+  inMemoryResults = Array.from(map.values())
+  return inMemoryResults
 }
 
 export function saveTestResultsToDisk(results: StoredTestResult[]) {
@@ -94,13 +107,23 @@ export function getTestResultsForStudent(
 ): StoredTestResult[] {
   const current = loadTestResultsFromDisk()
   const cleanEmail = (studentEmail || "").trim().toLowerCase()
-  const studentIdStr = studentId !== undefined && studentId !== null ? String(studentId) : ""
+  const studentIdStr = studentId !== undefined && studentId !== null ? String(studentId).trim().toLowerCase() : ""
   const cleanName = (studentName || "").trim().toLowerCase()
 
+  const isInci = studentIdStr === "student-inci" || studentIdStr === "student-1" || cleanEmail === "inci.mecidzade@test.com" || cleanEmail === "inci.mecidzade@example.com" || cleanName.includes("inci")
+  const isEmilia = studentIdStr === "student-emilia" || studentIdStr === "student-2" || cleanEmail === "emilia.mecidzade@test.com" || cleanEmail === "emilia.mecidzade@example.com" || cleanName.includes("emilia")
+
   return current.filter((r) => {
-    if (studentIdStr && String(r.studentId) === studentIdStr) return true
-    if (cleanEmail && r.studentEmail && r.studentEmail.toLowerCase() === cleanEmail) return true
-    if (cleanName && r.studentName && r.studentName.toLowerCase() === cleanName) return true
+    const rId = String(r.studentId).toLowerCase()
+    const rEmail = (r.studentEmail || "").toLowerCase()
+    const rName = (r.studentName || "").toLowerCase()
+
+    if (isInci && (rId === "student-inci" || rEmail === "inci.mecidzade@test.com" || rName.includes("inci"))) return true
+    if (isEmilia && (rId === "student-emilia" || rEmail === "emilia.mecidzade@test.com" || rName.includes("emilia"))) return true
+
+    if (studentIdStr && rId === studentIdStr) return true
+    if (cleanEmail && rEmail && rEmail === cleanEmail) return true
+    if (cleanName && rName && rName === cleanName) return true
     return false
   })
 }

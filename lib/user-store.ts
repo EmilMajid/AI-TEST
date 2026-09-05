@@ -297,7 +297,7 @@ export function blockUser(idOrEmail: string | number, isBlocked: boolean = true)
   const all = getAllUsers()
 
   const target = all.find((u) => {
-    const uId = getUserUniqueId(u).toLowerCase()
+    const uId = getUserUniqueId(u as any).toLowerCase()
     return (
       String(u.id).toLowerCase() === clean ||
       (u.email && u.email.toLowerCase() === clean) ||
@@ -341,7 +341,7 @@ export function deleteUser(idOrEmail: string | number): boolean {
   // 1. Remove from inMemoryUsers
   for (let i = inMemoryUsers.length - 1; i >= 0; i--) {
     const u = inMemoryUsers[i]
-    const uId = getUserUniqueId(u).toLowerCase()
+    const uId = getUserUniqueId(u as any).toLowerCase()
     if (
       String(u.id).toLowerCase() === clean ||
       (u.email && u.email.toLowerCase() === clean) ||
@@ -373,7 +373,7 @@ export function deleteUser(idOrEmail: string | number): boolean {
   // 3. Remove from disk users
   const disk = loadFromDisk()
   const cleanDisk = disk.filter((u) => {
-    const uId = getUserUniqueId(u).toLowerCase()
+    const uId = getUserUniqueId(u as any).toLowerCase()
     const match =
       String(u.id).toLowerCase() === clean ||
       (u.email && u.email.toLowerCase() === clean) ||
@@ -480,34 +480,38 @@ export interface StudentLink {
 const DEFAULT_LINKS: StudentLink[] = [
   {
     id: 1,
-    parentId: "parent-1",
-    parentEmail: "emil@example.com",
-    studentId: "student-1",
+    parentId: "parent-emil",
+    parentEmail: "emil.mecidov@example.com",
+    studentId: "student-inci",
     relationshipType: "parent",
     status: "active",
     linkedAt: "2024-01-01T00:00:00.000Z",
     student: {
-      id: "student-1",
+      id: "student-inci",
       firstName: "İnci",
       lastName: "Məcidzadə",
-      email: "inci.mecidzade@example.com",
+      fatherName: "Emil",
+      email: "inci.mecidzade@test.com",
+      uniqueId: "@inci.mecidzade",
       class: "6",
       school: "161 saylı məktəb"
     }
   },
   {
     id: 2,
-    parentId: "parent-1",
-    parentEmail: "emil@example.com",
-    studentId: "student-2",
+    parentId: "parent-emil",
+    parentEmail: "emil.mecidov@example.com",
+    studentId: "student-emilia",
     relationshipType: "parent",
     status: "active",
     linkedAt: "2024-01-01T00:00:00.000Z",
     student: {
-      id: "student-2",
+      id: "student-emilia",
       firstName: "Emilia",
       lastName: "Məcidzadə",
-      email: "emilia.mecidzade@example.com",
+      fatherName: "Emil",
+      email: "emilia.mecidzade@test.com",
+      uniqueId: "@emilia.mecidzade",
       class: "2",
       school: "161 saylı məktəb"
     }
@@ -567,7 +571,7 @@ export function loadLinksFromDisk(): StudentLink[] {
       const parsed = JSON.parse(data)
       if (Array.isArray(parsed) && parsed.length > 0) {
         const map = new Map<string, StudentLink>()
-        for (const l of DEFAULT_LINKS) {
+        for (const l of parsed) {
           const lId = String(l.id).toLowerCase()
           const sId = String(l.studentId).toLowerCase()
           const sEmail = (l.student?.email || "").toLowerCase()
@@ -575,7 +579,7 @@ export function loadLinksFromDisk(): StudentLink[] {
             map.set(lId, l)
           }
         }
-        for (const l of parsed) {
+        for (const l of DEFAULT_LINKS) {
           const lId = String(l.id).toLowerCase()
           const sId = String(l.studentId).toLowerCase()
           const sEmail = (l.student?.email || "").toLowerCase()
@@ -707,6 +711,7 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
   const parentIdStr = parentId !== undefined && parentId !== null ? String(parentId) : ""
 
   const isRufatParent = cleanEmail === "r.h.rzayev@gmail.com" || parentIdStr === "parent-rufat"
+  const isEmilParent = cleanEmail === "emil.mecidov@example.com" || cleanEmail === "emil@example.com" || parentIdStr === "parent-emil" || parentIdStr === "parent-1"
 
   const matched = links.filter((l) => {
     if (isAyazTarget(l.student) || isAyazTarget({ id: l.studentId, email: l.student?.email })) return false
@@ -723,6 +728,18 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
     if (parentIdStr && String(l.parentId) === parentIdStr) return true
     if (cleanEmail && l.parentEmail && l.parentEmail.toLowerCase() === cleanEmail) return true
     if (isRufatParent && (String(l.studentId) === "student-ayaz-309" || sEmail === "ayaz.rzayev.309@testai.az")) return true
+    if (isEmilParent && (
+      String(l.studentId) === "student-inci" || 
+      String(l.studentId) === "student-1" ||
+      String(l.studentId) === "student-emilia" || 
+      String(l.studentId) === "student-2" ||
+      sEmail === "inci.mecidzade@test.com" || 
+      sEmail === "inci.mecidzade@example.com" ||
+      sEmail === "emilia.mecidzade@test.com" || 
+      sEmail === "emilia.mecidzade@example.com" ||
+      sName.includes("inci") ||
+      sName.includes("emilia")
+    )) return true
     return false
   })
 
@@ -738,6 +755,24 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
       if (sName.includes("ayaz") && sName.includes("rzayev") && l.student) {
         l.student.class = "8"
         l.student.school = "309 saylı məktəb"
+      }
+      if (sName.includes("inci") && l.student) {
+        l.student.id = "student-inci"
+        l.studentId = "student-inci"
+        l.student.email = "inci.mecidzade@test.com"
+        l.parentId = "parent-emil"
+        l.parentEmail = "emil.mecidov@example.com"
+        l.student.class = "6"
+        l.student.school = "161 saylı məktəb"
+      }
+      if (sName.includes("emilia") && l.student) {
+        l.student.id = "student-emilia"
+        l.studentId = "student-emilia"
+        l.student.email = "emilia.mecidzade@test.com"
+        l.parentId = "parent-emil"
+        l.parentEmail = "emil.mecidov@example.com"
+        l.student.class = "2"
+        l.student.school = "161 saylı məktəb"
       }
       dedupMap.set(key, l)
     }

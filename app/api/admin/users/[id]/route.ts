@@ -25,7 +25,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         const isReal = user.source === 'real' || !isMockUser(user)
         const realResults = getTestResultsForStudent(user.id, user.email, `${user.firstName} ${user.lastName}`)
 
-        if (isReal) {
+        if (isReal || realResults.length > 0) {
             if (realResults.length > 0) {
                 const totalScore = realResults.reduce((sum, r) => sum + (Number(r.score) || 0), 0)
                 const averageScore = Math.round(totalScore / realResults.length)
@@ -50,7 +50,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
                 }))
 
                 stats = {
-                    isReal: true,
+                    isReal,
                     totalTests: realResults.length,
                     averageScore,
                     subjects,
@@ -108,6 +108,15 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         if (!parent && (user.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (user.firstName?.toLowerCase() === "ayaz" && user.lastName?.toLowerCase() === "rzayev"))) {
             parent = allUsers.find(p => p.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (p.firstName?.toLowerCase() === "rüfət" && p.lastName?.toLowerCase() === "rzayev"))
         }
+        if (!parent && (
+            user.email?.toLowerCase() === "inci.mecidzade@test.com" || 
+            user.email?.toLowerCase() === "emilia.mecidzade@test.com" ||
+            user.id === "student-inci" ||
+            user.id === "student-emilia" ||
+            (user.lastName?.toLowerCase() === "məcidzadə")
+        )) {
+            parent = allUsers.find(p => p.email?.toLowerCase() === "emil.mecidov@example.com" || p.id === "parent-emil")
+        }
 
         const teacher = allUsers.find(u => u.id === (user as any).teacherId)
         if (parent) relations.parent = parent
@@ -124,6 +133,10 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             if (l) return true
             if ((user.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (user.firstName?.toLowerCase() === "rüfət" && user.lastName?.toLowerCase() === "rzayev")) &&
                 (c.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" || (c.firstName?.toLowerCase() === "ayaz" && c.lastName?.toLowerCase() === "rzayev"))) {
+                return true
+            }
+            if ((user.email?.toLowerCase() === "emil.mecidov@example.com" || user.id === "parent-emil" || (user.firstName?.toLowerCase() === "emil" && user.lastName?.toLowerCase() === "məcidov")) &&
+                (c.email?.toLowerCase() === "inci.mecidzade@test.com" || c.email?.toLowerCase() === "emilia.mecidzade@test.com" || c.id === "student-inci" || c.id === "student-emilia" || (c.lastName?.toLowerCase() === "məcidzadə"))) {
                 return true
             }
             return false
