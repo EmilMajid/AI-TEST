@@ -67,7 +67,18 @@ export default function AdminUserProfilePage() {
                                     <Mail className="h-4 w-4" /> {user.email}
                                 </div>
                             </div>
-                            {getRoleBadge(user.role)}
+                            <div className="flex items-center gap-2">
+                                {user.source === "real" ? (
+                                    <span className="text-xs bg-emerald-100 text-emerald-700 border border-emerald-300 px-2.5 py-1 rounded-full font-semibold">
+                                        Real İstifadəçi
+                                    </span>
+                                ) : user.source === "admin" ? null : (
+                                    <span className="text-xs bg-slate-100 text-slate-500 border border-slate-200 px-2.5 py-1 rounded-full font-medium">
+                                        Demo İstifadəçi
+                                    </span>
+                                )}
+                                {getRoleBadge(user.role)}
+                            </div>
                         </div>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-sm">
@@ -101,33 +112,54 @@ export default function AdminUserProfilePage() {
                 {user.role === 'student' && stats && (
                     <Card>
                         <CardHeader>
-                            <CardTitle className="flex items-center gap-2">
-                                <BarChart3 className="h-5 w-5 text-blue-500" />
-                                Statistika (Demo)
-                            </CardTitle>
+                            <div className="flex items-center justify-between">
+                                <CardTitle className="flex items-center gap-2">
+                                    <BarChart3 className={`h-5 w-5 ${stats.isReal ? "text-emerald-600" : "text-blue-500"}`} />
+                                    Statistika
+                                </CardTitle>
+                                {stats.isReal ? (
+                                    <Badge className="bg-emerald-100 text-emerald-700 border-emerald-300 hover:bg-emerald-100 font-medium">
+                                        Real Məlumat
+                                    </Badge>
+                                ) : (
+                                    <Badge variant="outline" className="bg-slate-100 text-slate-500 border-slate-200">
+                                        Demo
+                                    </Badge>
+                                )}
+                            </div>
                         </CardHeader>
                         <CardContent className="space-y-6">
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="bg-blue-50 p-4 rounded-xl text-center">
-                                    <div className="text-3xl font-bold text-blue-700">{stats.averageScore}</div>
-                                    <div className="text-xs text-blue-600 font-medium uppercase tracking-wider mt-1">Ortalama Bal</div>
+                                <div className={`${stats.isReal ? "bg-emerald-50 border border-emerald-100" : "bg-blue-50"} p-4 rounded-xl text-center`}>
+                                    <div className={`text-3xl font-bold ${stats.isReal ? "text-emerald-700" : "text-blue-700"}`}>{stats.averageScore}</div>
+                                    <div className={`text-xs ${stats.isReal ? "text-emerald-600" : "text-blue-600"} font-medium uppercase tracking-wider mt-1`}>Ortalama Bal</div>
                                 </div>
-                                <div className="bg-green-50 p-4 rounded-xl text-center">
-                                    <div className="text-3xl font-bold text-green-700">{stats.totalTests}</div>
-                                    <div className="text-xs text-green-600 font-medium uppercase tracking-wider mt-1">İşlənmiş Testlər</div>
+                                <div className={`${stats.isReal ? "bg-emerald-50 border border-emerald-100" : "bg-green-50"} p-4 rounded-xl text-center`}>
+                                    <div className={`text-3xl font-bold ${stats.isReal ? "text-emerald-700" : "text-green-700"}`}>{stats.totalTests}</div>
+                                    <div className={`text-xs ${stats.isReal ? "text-emerald-600" : "text-green-600"} font-medium uppercase tracking-wider mt-1`}>İşlənmiş Testlər</div>
                                 </div>
                             </div>
 
                             <div>
                                 <h4 className="font-medium mb-3 text-sm text-slate-500">Son Fəaliyyət</h4>
-                                <div className="space-y-3">
-                                    {stats.recentActivity.map((act: any) => (
-                                        <div key={act.id} className="flex justify-between items-center text-sm p-2 bg-slate-50 rounded border">
-                                            <span>{act.testName}</span>
-                                            <Badge variant={act.score > 80 ? "default" : "secondary"}>{act.score} bal</Badge>
-                                        </div>
-                                    ))}
-                                </div>
+                                {stats.recentActivity && stats.recentActivity.length > 0 ? (
+                                    <div className="space-y-3">
+                                        {stats.recentActivity.map((act: any) => (
+                                            <div key={act.id} className="flex justify-between items-center text-sm p-2 bg-slate-50 rounded border">
+                                                <div className="flex flex-col">
+                                                    <span className="font-medium text-slate-800">{act.testName}</span>
+                                                    {act.date && <span className="text-[11px] text-slate-400">{act.date}</span>}
+                                                </div>
+                                                <Badge variant={act.score >= 80 ? "default" : "secondary"}>{act.score} bal</Badge>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className="p-6 bg-slate-50 border border-dashed border-slate-200 rounded-lg text-center text-slate-500 text-xs">
+                                        <p className="font-medium text-slate-600 text-sm mb-1">Hələ heç bir test işlənməyib</p>
+                                        <p>Şagird test işlədikdə nəticələr burada real vaxt rejimində əks olunacaq.</p>
+                                    </div>
+                                )}
                             </div>
                         </CardContent>
                     </Card>

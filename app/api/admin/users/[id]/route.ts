@@ -1,7 +1,8 @@
 export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
-import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
+import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk, isMockUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
+import { getTestResultsForStudent } from "@/lib/test-result-store"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const userId = params.id
@@ -17,20 +18,74 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
         return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
     }
 
-    const mockStats = {
-        totalTests: Math.floor(Math.random() * 20) + 5,
-        averageScore: Math.floor(Math.random() * 40) + 60,
-        subjects: [
-            { name: "Riyaziyyat", score: Math.floor(Math.random() * 30) + 70 },
-            { name: "Azərbaycan dili", score: Math.floor(Math.random() * 30) + 70 },
-            { name: "İnformatika", score: Math.floor(Math.random() * 30) + 70 }
-        ],
-        recentActivity: [
-            { id: 101, testName: "Riyaziyyat - Kvadrat tənliklər", date: "2024-12-05", score: 85 },
-            { id: 102, testName: "Ana dili - Feil", date: "2024-12-03", score: 90 },
-            { id: 103, testName: "İnformatika - Alqoritmlər", date: "2024-11-28", score: 75 }
-        ]
+    let stats: any = null
+    const userRole = user.role || user.accountType
+
+    if (userRole === 'student') {
+        const isReal = user.source === 'real' || !isMockUser(user)
+        const realResults = getTestResultsForStudent(user.id, user.email, `${user.firstName} ${user.lastName}`)
+
+        if (isReal) {
+            if (realResults.length > 0) {
+                const totalScore = realResults.reduce((sum, r) => sum + (Number(r.score) || 0), 0)
+                const averageScore = Math.round(totalScore / realResults.length)
+                
+                const subjectMap: Record<string, { total: number; count: number }> = {}
+                for (const r of realResults) {
+                    const sub = r.textbook || "Digər"
+                    if (!subjectMap[sub]) subjectMap[sub] = { total: 0, count: 0 }
+                    subjectMap[sub].total += Number(r.score) || 0
+                    subjectMap[sub].count += 1
+                }
+                const subjects = Object.entries(subjectMap).map(([name, data]) => ({
+                    name,
+                    score: Math.round(data.total / data.count)
+                }))
+
+                const recentActivity = realResults.slice(0, 10).map((r, idx) => ({
+                    id: r.id || idx + 1,
+                    testName: `${r.textbook}${r.topic ? ` - ${r.topic}` : ''}`,
+                    date: r.completedAt ? new Date(r.completedAt).toLocaleDateString("az-AZ") : "",
+                    score: r.score
+                }))
+
+                stats = {
+                    isReal: true,
+                    totalTests: realResults.length,
+                    averageScore,
+                    subjects,
+                    recentActivity
+                }
+            } else {
+                // Real student who hasn't taken any tests yet
+                stats = {
+                    isReal: true,
+                    totalTests: 0,
+                    averageScore: 0,
+                    subjects: [],
+                    recentActivity: []
+                }
+            }
+        } else {
+            // Mock demo student
+            stats = {
+                isReal: false,
+                totalTests: Math.floor(Math.random() * 20) + 5,
+                averageScore: Math.floor(Math.random() * 40) + 60,
+                subjects: [
+                    { name: "Riyaziyyat", score: Math.floor(Math.random() * 30) + 70 },
+                    { name: "Azərbaycan dili", score: Math.floor(Math.random() * 30) + 70 },
+                    { name: "İnformatika", score: Math.floor(Math.random() * 30) + 70 }
+                ],
+                recentActivity: [
+                    { id: 101, testName: "Riyaziyyat - Kvadrat tənliklər", date: "2024-12-05", score: 85 },
+                    { id: 102, testName: "Ana dili - Feil", date: "2024-12-03", score: 90 },
+                    { id: 103, testName: "İnformatika - Alqoritmlər", date: "2024-11-28", score: 75 }
+                ]
+            }
+        }
     }
+
 
     let relations: any = {}
     const allLinks = loadLinksFromDisk()
@@ -84,7 +139,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             isBlocked: user.isBlocked ?? false,
             status: user.isBlocked ? "blocked" : (user.status || "active"),
         },
-        stats: user.role === 'student' ? mockStats : null,
+        stats,
         relations
     })
 }
