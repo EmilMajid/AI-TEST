@@ -89,7 +89,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
 
     let relations: any = {}
     const allLinks = loadLinksFromDisk()
-    const userRole = user.role || user.accountType
+    
 
     if (userRole === 'student') {
         let parent = allUsers.find(u => String(u.id) === String((user as any).parentId))
