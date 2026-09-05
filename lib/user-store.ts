@@ -188,7 +188,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     rufatUser = {
       id: "parent-rufat",
       email: "r.h.rzayev@gmail.com",
-      password: "test12345",
+      password: "Rufat-141181",
       accountType: "parent",
       firstName: "Rüfət",
       lastName: "Rzayev",
@@ -201,15 +201,16 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       source: "real",
     }
     map.set(rufatKey, rufatUser)
-  } else if (rufatUser && !rufatUser.source) {
-    rufatUser.source = "real"
+  } else if (rufatUser) {
+    if (!rufatUser.source) rufatUser.source = "real"
+    rufatUser.password = "Rufat-141181"
   }
 
   if (!ayazUser && !deletedUserIds.has(ayazKey)) {
     ayazUser = {
       id: "student-ayaz-309",
       email: "ayaz.rzayev.309@testai.az",
-      password: "test12345",
+      password: "Ayaz-020813",
       accountType: "student",
       firstName: "Ayaz",
       lastName: "Rzayev",
@@ -230,8 +231,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     ayazUser.parentEmail = rufatUser.email
     if (!ayazUser.fatherName) ayazUser.fatherName = "Rüfət"
     if (!ayazUser.source) ayazUser.source = "real"
-    // Sinif 5-dən 8-ə düzəliş
     if (ayazUser.class === "5") ayazUser.class = "8"
+    ayazUser.password = "Ayaz-020813"
   }
 
   const allList = Array.from(map.values())
@@ -437,11 +438,12 @@ export function findUsers(query: { emailOrId?: string; role?: string }): StoredU
 
   let matches = users.filter((u) => {
     const emailMatch = Boolean(u.email && u.email.toLowerCase() === cleanInput)
+    const emailPrefixMatch = Boolean(u.email && u.email.toLowerCase().split("@")[0] === cleanInput.replace("@", ""))
     const userUid = getUserUniqueId(u as any).toLowerCase()
     const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "")
     const rawIdMatch = String(u.id).toLowerCase() === cleanInput
     const fullNameMatch = `${u.firstName || ""} ${u.lastName || ""}`.trim().toLowerCase() === cleanInput
-    return emailMatch || idMatch || rawIdMatch || fullNameMatch
+    return emailMatch || emailPrefixMatch || idMatch || rawIdMatch || fullNameMatch
   })
 
   if (query.role) {
