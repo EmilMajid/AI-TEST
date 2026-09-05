@@ -94,15 +94,16 @@ export default function ClusterAnalysis({ topic, grade = "6", studentStats, stud
                   <ZAxis type="number" dataKey="z" range={[80, 450]} />
                   <RechartsTooltip 
                     cursor={{ strokeDasharray: '3 3' }}
-                    content={({ payload }) => {
+                    content={({ payload }: any) => {
                       if (!payload || payload.length === 0) return null
-                      const data = payload[0].payload
+                      const data = payload[0]?.payload
+                      if (!data) return null
                       return (
                         <div className="bg-white p-3 rounded-lg border border-slate-200 shadow-md text-xs space-y-1">
-                          <p className="font-bold text-slate-900">{data.student}</p>
-                          <p className="text-slate-600">Öyrənmə Tipi: <strong>{data.profile}</strong></p>
-                          <p className="text-slate-600">Topladığı Bal: <strong className="text-green-600">{data.y}%</strong></p>
-                          <p className="text-slate-600">Sərf Olunan Vaxt: <strong>{data.x} saniyə</strong></p>
+                          <p className="font-bold text-slate-900">{data.student || ''}</p>
+                          <p className="text-slate-600">Öyrənmə Tipi: <strong>{data.profile || ''}</strong></p>
+                          <p className="text-slate-600">Topladığı Bal: <strong className="text-green-600">{data.y || 0}%</strong></p>
+                          <p className="text-slate-600">Sərf Olunan Vaxt: <strong>{data.x || 0} saniyə</strong></p>
                         </div>
                       )
                     }}

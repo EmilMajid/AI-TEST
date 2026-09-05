@@ -31,15 +31,25 @@ import {
   LayoutDashboard,
   Globe,
   Lock,
+  Sparkles,
 } from "lucide-react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { MessagesTab } from "@/components/messages-tab"
 import { useRouter } from "next/navigation"
 import { useTheme } from "@/hooks/use-theme"
 import { useToast } from "@/hooks/use-toast"
 import { ProfileAvatar } from "@/components/profile-avatar"
 import { logout, getRoleLabel } from "@/lib/profile-utils"
-import AnalyticsViewer from "@/components/parent/AnalyticsViewer"
+
+const AnalyticsViewer = dynamic(() => import("@/components/parent/AnalyticsViewer"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex justify-center items-center p-12 text-slate-500">
+      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-500"></div>
+    </div>
+  ),
+})
 import {
   Dialog,
   DialogContent,
@@ -1984,8 +1994,8 @@ export default function ParentDashboard() {
                         <CardContent>
                           <AnalyticsViewer 
                             topic={studentStats.recentTests && studentStats.recentTests.length > 0 ? studentStats.recentTests[0].topic : "Riyaziyyat və Məntiq"} 
-                            grade={selectedStudentData?.studentClass || (selectedStudentData?.student?.class) || "6"} 
-                            studentName={selectedStudentData?.name || (selectedStudentData?.student ? `${selectedStudentData.student.firstName} ${selectedStudentData.student.lastName}` : "İnci Məcidzadə")}
+                            grade={selectedStudentData?.studentClass || selectedStudentData?.class || "6"} 
+                            studentName={selectedStudentData?.studentName || (selectedStudentData?.firstName ? `${selectedStudentData.firstName} ${selectedStudentData.lastName}` : "İnci Məcidzadə")}
                             studentStats={studentStats}
                             isPremiumUser={true}
                             customOverrides={accessRules.customOverrides}

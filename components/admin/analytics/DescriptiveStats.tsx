@@ -174,7 +174,8 @@ export default function DescriptiveStats({ topic, grade, studentStats, studentNa
                   outerRadius={95}
                   paddingAngle={4}
                   dataKey="value"
-                  label={({ name, percent }) => `${name.split(' ')[0]} ${((percent || 0) * 100).toFixed(0)}%`}
+                  nameKey="name"
+                  label={({ name, percent }: any) => `${name ? String(name).split(' ')[0] : ''} ${((percent || 0) * 100).toFixed(0)}%`}
                 >
                   {data.correctnessRatio.map((entry: any, index: number) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />

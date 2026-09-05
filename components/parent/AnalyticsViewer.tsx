@@ -30,6 +30,7 @@ export default function AnalyticsViewer({
   studentStats,
   studentName = "İnci Məcidzadə"
 }: AnalyticsViewerProps) {
+  const [mounted, setMounted] = useState(false)
   const [localPremium, setLocalPremium] = useState(true)
   const [permissions, setPermissions] = useState({
     basicStats: true,
@@ -41,6 +42,7 @@ export default function AnalyticsViewer({
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     fetch(`/api/admin/access-control?t=${Date.now()}`, { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
@@ -54,6 +56,14 @@ export default function AnalyticsViewer({
       })
       .catch(() => {})
   }, [])
+
+  if (!mounted) {
+    return (
+      <div className="flex justify-center items-center p-12 text-slate-500">
+        <Loader2 className="h-8 w-8 animate-spin text-amber-500" />
+      </div>
+    )
+  }
 
   const canAccess = (featureId: string) => {
     return true; // Always active and unlocked for rich showcase
