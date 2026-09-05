@@ -26,7 +26,8 @@ export async function GET(request: NextRequest) {
 
     if (isDemoMode) {
       // 1. Check if real test results exist for this student in test-result-store
-      const storedResults = getTestResultsForStudent(studentId, studentEmail)
+      const uniqueId = searchParams.get("uniqueId") || undefined
+      const storedResults = getTestResultsForStudent(studentId, studentEmail, undefined, uniqueId)
 
       if (storedResults.length > 0) {
         // Calculate REAL statistics from real stored results
@@ -35,24 +36,61 @@ export async function GET(request: NextRequest) {
         const averageScore = Math.round(totalScore / totalTests)
         const bestScore = Math.max(...storedResults.map((r) => r.score))
 
-        // Group by subject (textbook)
-        const subjectMap: Record<string, { totalScore: number; count: number }> = {}
+        // Platforma üzrə orta hesabla (eyni sinif üçün mövcud bütün nəticələr)
+        const { getAllTestResults } = await import("@/lib/test-result-store")
+        const allResults = getAllTestResults()
+        const studentClass = storedResults[0]?.class || ""
+        const platformResultsForClass = studentClass
+          ? allResults.filter((r) => r.class === studentClass)
+          : []
+
+        // Group by subject (textbook) — topicBreakdown ilə birlikdə
+        const subjectTopicMap: Record<string, {
+          totalScore: number
+          count: number
+          topics: Record<string, { totalCorrect: number; totalQ: number; count: number }>
+        }> = {}
+
         for (const r of storedResults) {
-          if (!subjectMap[r.textbook]) {
-            subjectMap[r.textbook] = { totalScore: 0, count: 0 }
+          if (!subjectTopicMap[r.textbook]) {
+            subjectTopicMap[r.textbook] = { totalScore: 0, count: 0, topics: {} }
           }
-          subjectMap[r.textbook].totalScore += r.score
-          subjectMap[r.textbook].count += 1
+          subjectTopicMap[r.textbook].totalScore += r.score
+          subjectTopicMap[r.textbook].count += 1
+
+          // Mövzu səviyyəsində statistika
+          const topicKey = r.topic || "Ümumi"
+          if (!subjectTopicMap[r.textbook].topics[topicKey]) {
+            subjectTopicMap[r.textbook].topics[topicKey] = { totalCorrect: 0, totalQ: 0, count: 0 }
+          }
+          subjectTopicMap[r.textbook].topics[topicKey].totalCorrect += r.correctAnswers || Math.round((r.score / 100) * (r.totalQuestions || 10))
+          subjectTopicMap[r.textbook].topics[topicKey].totalQ += r.totalQuestions || 10
+          subjectTopicMap[r.textbook].topics[topicKey].count += 1
         }
 
-        const subjectBreakdown = Object.entries(subjectMap).map(([subject, data]) => {
+        const subjectBreakdown = Object.entries(subjectTopicMap).map(([subject, data]) => {
           const avg = Math.round(data.totalScore / data.count)
+
+          // Platform ortalaması: eyni fənn + sinif
+          const platformForSubject = platformResultsForClass.filter((r) => r.textbook === subject)
+          const platformAvg = platformForSubject.length > 0
+            ? Math.round(platformForSubject.reduce((s, r) => s + r.score, 0) / platformForSubject.length)
+            : null
+
+          // topicBreakdown — mövzu üzrə doğruluk nisbəti
+          const topicBreakdown = Object.entries(data.topics).map(([topic, td]) => ({
+            topic,
+            correctRate: td.totalQ > 0 ? Math.round((td.totalCorrect / td.totalQ) * 100) : 0,
+            testCount: td.count,
+          })).sort((a, b) => b.testCount - a.testCount)
+
           return {
             subject,
             count: data.count,
             averageScore: avg,
+            topicBreakdown,
             comparison: {
-              schoolAverage: Math.max(55, Math.min(82, Math.round(avg * 0.82))),
+              schoolAverage: platformAvg ?? Math.max(55, Math.min(82, Math.round(avg * 0.82))),
               regionAverage: Math.max(50, Math.min(78, Math.round(avg * 0.78))),
               nationalAverage: Math.max(48, Math.min(74, Math.round(avg * 0.74))),
             },
@@ -67,6 +105,7 @@ export async function GET(request: NextRequest) {
           national: s.comparison.nationalAverage,
         }))
 
+        // recentActivity — correctAnswers, totalQuestions, timeSpent ilə zənginləşdirilmiş
         const recentActivity = storedResults.slice(0, 10).map((r, idx) => ({
           id: r.id || idx + 1,
           subject: r.textbook,
@@ -74,22 +113,44 @@ export async function GET(request: NextRequest) {
           score: r.score,
           date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
           time: new Date(r.completedAt).toLocaleTimeString("az-AZ", { hour: "2-digit", minute: "2-digit" }),
+          correctAnswers: r.correctAnswers || Math.round((r.score / 100) * (r.totalQuestions || 10)),
+          totalQuestions: r.totalQuestions || 10,
+          timeSpent: r.timeSpent ? `${Math.max(1, Math.round(r.timeSpent / 60))} dəq` : undefined,
         }))
 
-        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 90).slice(0, 3)
-        const weakAreas = (subjectBreakdown.filter((s) => s.averageScore < 90).length > 0
-          ? subjectBreakdown.filter((s) => s.averageScore < 90)
-          : subjectBreakdown.slice(-2)
-        ).slice(0, 3)
+        // strongAreas (≥80%) / weakAreas (<65%) — daha real eşiklər
+        const strongAreas = subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3)
+        const weakAreas = subjectBreakdown.filter((s) => s.averageScore < 65).slice(0, 3)
 
-        // Generate smooth chronological progress trend for showcase
-        const performanceTrend = [
-          { date: "4 həftə əvvəl", score: Math.max(60, averageScore - 11), subject: "Ümumi" },
-          { date: "3 həftə əvvəl", score: Math.max(65, averageScore - 8), subject: "Ümumi" },
-          { date: "2 həftə əvvəl", score: Math.max(70, averageScore - 4), subject: "Ümumi" },
-          { date: "Keçən həftə", score: Math.max(75, averageScore - 1), subject: "Ümumi" },
-          { date: "Cari həftə", score: averageScore, subject: "Ümumi" },
-        ]
+        // learningVelocity — son 4 həftəlik orta bal trendi
+        const sortedByDate = [...storedResults].sort(
+          (a, b) => new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime()
+        )
+        const now = Date.now()
+        const weekMs = 7 * 24 * 60 * 60 * 1000
+        const weekLabels = ["4 həftə əvvəl", "3 həftə əvvəl", "2 həftə əvvəl", "Keçən həftə", "Cari həftə"]
+        const learningVelocity = weekLabels.map((label, i) => {
+          const weekStart = now - (4 - i) * weekMs
+          const weekEnd = now - (3 - i) * weekMs
+          const weekResults = sortedByDate.filter((r) => {
+            const t = new Date(r.completedAt).getTime()
+            return t >= weekStart && t < weekEnd
+          })
+          return {
+            week: label,
+            avgScore: weekResults.length > 0
+              ? Math.round(weekResults.reduce((s, r) => s + r.score, 0) / weekResults.length)
+              : null,
+            testCount: weekResults.length,
+          }
+        })
+
+        // performanceTrend — xronoloji real trendi göstər
+        const performanceTrend = sortedByDate.slice(-7).map((r) => ({
+          date: new Date(r.completedAt).toLocaleDateString("az-AZ"),
+          score: r.score,
+          subject: r.textbook,
+        }))
 
         return NextResponse.json({
           success: true,
@@ -103,16 +164,18 @@ export async function GET(request: NextRequest) {
             comparisonData,
             recentTests: storedResults,
             recentActivity,
+            learningVelocity,
             monthly: {
               testsThisMonth: storedResults.length,
               averageThisMonth: averageScore,
             },
             strongAreas: strongAreas.length > 0 ? strongAreas : subjectBreakdown.slice(0, 2),
-            weakAreas: weakAreas.length > 0 ? weakAreas : subjectBreakdown.slice(-2),
+            weakAreas: weakAreas.length > 0 ? weakAreas : [],
             performanceTrend,
           },
         })
       }
+
 
       // 2. If it's a seed/demo student without stored results, provide initial demo baseline
       const isInci = studentId === "student-inci" || studentId === "student-1" || studentEmail?.toLowerCase() === "inci.mecidzade@test.com"

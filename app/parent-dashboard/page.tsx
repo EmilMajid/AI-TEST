@@ -450,82 +450,138 @@ export default function ParentDashboard() {
   const loadStudentResults = async (studentId: number | string, parentId: number | string, range: string = 'month', userEmail?: string) => {
     try {
       setIsLoading(true)
+
+      // Mövcud state-i yaddaşa al — server boş qaytarsa silməyəcəyik
+      const prevStats = studentStats
+
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
-      const emailQuery = userEmail ? `&email=${encodeURIComponent(userEmail)}` : ""
 
-      const response = await fetch(`/api/students/results?studentId=${encodeURIComponent(studentId)}&parentId=${encodeURIComponent(parentId)}&timeRange=${range}${emailQuery}`, {
-        headers: token ? { "Authorization": `Bearer ${token}` } : {}
-      })
+      // Şagirdin uniqueId-sini tap (əgər varsa)
+      const studentObj = linkedStudents.find(
+        (s) => s.studentId === studentId || s.id === studentId
+      )
+      const studentUniqueId = (studentObj as any)?.uniqueId || ""
+      const emailQuery = userEmail
+        ? `&email=${encodeURIComponent(userEmail)}`
+        : studentObj?.studentEmail
+          ? `&email=${encodeURIComponent(studentObj.studentEmail)}`
+          : ""
+      const uniqueIdQuery = studentUniqueId
+        ? `&uniqueId=${encodeURIComponent(studentUniqueId)}`
+        : ""
+
+      const response = await fetch(
+        `/api/students/results?studentId=${encodeURIComponent(studentId)}&parentId=${encodeURIComponent(parentId)}&timeRange=${range}${emailQuery}${uniqueIdQuery}`,
+        { headers: token ? { "Authorization": `Bearer ${token}` } : {} }
+      )
       const data = await response.json()
 
+      // ── Prioritet 1: Serverdən real data gəldisə, onu göstər ──
       if (data.success && data.statistics && data.statistics.recentActivity && data.statistics.recentActivity.length > 0) {
         setStudentStats(data.statistics)
         if (!selectedSubject && data.statistics.subjectBreakdown.length > 0) {
           setSelectedSubject(data.statistics.subjectBreakdown[0].subject)
         }
-      } else {
-        // Check local student results fallback
-        try {
-          const studentKey = `student_test_results_${studentId}`
-          const localTests = JSON.parse(localStorage.getItem(studentKey) || "[]")
-          if (Array.isArray(localTests) && localTests.length > 0) {
-            const totalTests = localTests.length
-            const totalScore = localTests.reduce((sum: number, t: any) => sum + (Number(t.score) || 0), 0)
-            const averageScore = Math.round(totalScore / totalTests)
-            const bestScore = Math.max(...localTests.map((t: any) => Number(t.score) || 0))
-            const recentActivity = localTests.map((t: any, idx: number) => ({
-              id: t.id || idx + 1,
-              subject: t.textbook || "Fənn",
-              topic: t.topic || "Ümumi sınaq",
-              score: Number(t.score) || 0,
-              date: t.completedAt ? new Date(t.completedAt).toLocaleDateString("az-AZ") : "Bu gün",
-              time: t.completedAt ? new Date(t.completedAt).toLocaleTimeString("az-AZ", { hour: "2-digit", minute: "2-digit" }) : "12:00",
-            }))
+        return
+      }
 
-            const fallbackStats: StudentStatistics = {
-              totalTests,
-              averageScore,
-              bestScore,
-              recentTests: localTests,
-              subjectBreakdown: [{
-                subject: localTests[0].textbook || "Ümumi",
-                count: totalTests,
-                averageScore,
-                comparison: { schoolAverage: 65, regionAverage: 70, nationalAverage: 68 }
-              }],
-              comparisonData: [{
-                subject: localTests[0].textbook || "Ümumi",
-                student: averageScore,
-                school: 65,
-                region: 70,
-                national: 68
-              }],
-              performanceTrend: localTests.slice(0, 7).map((t: any) => ({
-                date: t.completedAt ? new Date(t.completedAt).toLocaleDateString("az-AZ") : "Bu gün",
-                score: Number(t.score) || 0,
-                subject: t.textbook || "Fənn",
-              })),
-              weakAreas: [],
-              strongAreas: [{
-                subject: localTests[0].textbook || "Ümumi",
-                averageScore,
-                testCount: totalTests,
-              }],
-              recentActivity,
-              monthly: {
-                testsThisMonth: totalTests,
-                averageThisMonth: averageScore,
-              }
+      // ── Prioritet 2: localStorage-da nəticə varsa, onu istifadə et ──
+      try {
+        // Bir neçə mümkün açar üzrə yoxla
+        const keysToCheck = [
+          `student_test_results_${studentId}`,
+          studentUniqueId ? `student_test_results_${studentUniqueId}` : null,
+          userEmail ? `student_test_results_${userEmail}` : null,
+          studentObj?.studentEmail ? `student_test_results_${studentObj.studentEmail}` : null,
+        ].filter(Boolean) as string[]
+
+        let localTests: any[] = []
+        for (const key of keysToCheck) {
+          const raw = localStorage.getItem(key)
+          if (raw) {
+            const parsed = JSON.parse(raw)
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              localTests = parsed
+              break
             }
-            setStudentStats(fallbackStats)
-            return
           }
-        } catch (e) {}
-
-        if (data.success && data.statistics) {
-          setStudentStats(data.statistics)
         }
+
+        if (localTests.length > 0) {
+          const totalTests = localTests.length
+          const totalScore = localTests.reduce((sum: number, t: any) => sum + (Number(t.score) || 0), 0)
+          const averageScore = Math.round(totalScore / totalTests)
+          const bestScore = Math.max(...localTests.map((t: any) => Number(t.score) || 0))
+          const recentActivity = localTests.map((t: any, idx: number) => ({
+            id: t.id || idx + 1,
+            subject: t.textbook || "Fənn",
+            topic: t.topic || "Ümumi sınaq",
+            score: Number(t.score) || 0,
+            date: t.completedAt ? new Date(t.completedAt).toLocaleDateString("az-AZ") : "Bu gün",
+            time: t.completedAt ? new Date(t.completedAt).toLocaleTimeString("az-AZ", { hour: "2-digit", minute: "2-digit" }) : "12:00",
+            correctAnswers: t.correctAnswers,
+            totalQuestions: t.totalQuestions,
+            timeSpent: t.timeSpent ? `${Math.max(1, Math.round(Number(t.timeSpent) / 60))} dəq` : undefined,
+          }))
+
+          const subjectMap: Record<string, { totalScore: number; count: number }> = {}
+          for (const t of localTests) {
+            const subj = t.textbook || "Ümumi"
+            if (!subjectMap[subj]) subjectMap[subj] = { totalScore: 0, count: 0 }
+            subjectMap[subj].totalScore += Number(t.score) || 0
+            subjectMap[subj].count += 1
+          }
+          const subjectBreakdown = Object.entries(subjectMap).map(([subject, d]) => {
+            const avg = Math.round(d.totalScore / d.count)
+            return {
+              subject,
+              count: d.count,
+              averageScore: avg,
+              comparison: { schoolAverage: 65, regionAverage: 70, nationalAverage: 68 },
+            }
+          })
+
+          const fallbackStats: StudentStatistics = {
+            totalTests,
+            averageScore,
+            bestScore,
+            recentTests: localTests,
+            subjectBreakdown,
+            comparisonData: subjectBreakdown.map((s) => ({
+              subject: s.subject,
+              student: s.averageScore,
+              school: 65,
+              region: 70,
+              national: 68,
+            })),
+            performanceTrend: localTests.slice(0, 7).map((t: any) => ({
+              date: t.completedAt ? new Date(t.completedAt).toLocaleDateString("az-AZ") : "Bu gün",
+              score: Number(t.score) || 0,
+              subject: t.textbook || "Fənn",
+            })),
+            weakAreas: subjectBreakdown.filter((s) => s.averageScore < 65).slice(0, 3),
+            strongAreas: subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3),
+            recentActivity,
+            monthly: {
+              testsThisMonth: totalTests,
+              averageThisMonth: averageScore,
+            },
+          }
+          setStudentStats(fallbackStats)
+          return
+        }
+      } catch (e) { /* localStorage xətaları ignore et */ }
+
+      // ── Prioritet 3: Əvvəlki state mövcuddursa və real datası varsa, onu qoru ──
+      if (prevStats && prevStats.totalTests > 0) {
+        // State wipe baş vermə! Serverdən gələn boş cavabı ignore et
+        return
+      }
+
+      // ── Prioritet 4: Həqiqətən ilk dəfədir, şagird hələ test işləməyib ──
+      if (data.success && data.statistics) {
+        setStudentStats(data.statistics)
       }
     } catch (error) {
       console.error("Load results error:", error)
@@ -533,6 +589,7 @@ export default function ParentDashboard() {
       setIsLoading(false)
     }
   }
+
 
   const handleAddStudent = async () => {
     if (!studentFormData.firstName.trim() || !studentFormData.lastName.trim()) {
@@ -704,6 +761,17 @@ export default function ParentDashboard() {
           studentName: studentObj?.studentName,
           studentEmail: studentObj?.studentEmail,
           parentEmail: userData.email,
+          // Frontendəki mövcud statistikanı fallback kimi göndər
+          studentStats: studentStats
+            ? {
+                totalTests: studentStats.totalTests,
+                averageScore: studentStats.averageScore,
+                bestScore: studentStats.bestScore,
+                subjectBreakdown: studentStats.subjectBreakdown,
+                strongAreas: studentStats.strongAreas,
+                weakAreas: studentStats.weakAreas,
+              }
+            : undefined,
         }),
       })
       const data = await res.json()
@@ -725,6 +793,7 @@ export default function ParentDashboard() {
       setIsSendingReport(false)
     }
   }
+
 
   const handleRemoveStudent = async (target: LinkedStudent | number | string) => {
     if (!confirm("Bu şagirdi silmək istədiyinizdən əminsiniz?")) {
@@ -1521,6 +1590,43 @@ export default function ParentDashboard() {
                       </CardContent>
                     </Card>
                   </div>
+
+                  {/* İlkin Təhlil (Descriptive Stats) Bloku */}
+                  {studentStats.totalTests > 0 && (() => {
+                    const allTests = studentStats.recentTests || []
+                    const totalCorrect = allTests.reduce((s: number, t: any) =>
+                      s + (t.correctAnswers ?? Math.round(((t.score || 0) / 100) * (t.totalQuestions || 10))), 0)
+                    const totalQ = allTests.reduce((s: number, t: any) => s + (t.totalQuestions || 10), 0)
+                    const avgTimeMin = allTests.length > 0
+                      ? Math.max(1, Math.round(allTests.reduce((s: number, t: any) => s + (Number(t.timeSpent) || 60), 0) / allTests.length / 60))
+                      : 0
+                    const bestSubj = studentStats.strongAreas?.[0]?.subject || studentStats.subjectBreakdown?.[0]?.subject || null
+                    const worstSubj = studentStats.weakAreas?.[0]?.subject || null
+                    return (
+                      <div className="bg-gradient-to-r from-slate-50 to-blue-50/40 border border-slate-200/80 rounded-xl px-5 py-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+                        <span className="font-semibold text-slate-600 flex items-center gap-1.5">
+                          <BarChart3 className="h-4 w-4 text-slate-400" />
+                          İlkin Təhlil
+                        </span>
+                        <span className="text-slate-700">
+                          Ümumi doğru: <strong className="text-green-700">{totalCorrect}/{totalQ}</strong>
+                        </span>
+                        <span className="text-slate-700">
+                          Orta müddət: <strong className="text-blue-700">{avgTimeMin} dəq/test</strong>
+                        </span>
+                        {bestSubj && (
+                          <span className="text-slate-700">
+                            Güclü: <strong className="text-green-700">{bestSubj}</strong>
+                          </span>
+                        )}
+                        {worstSubj && (
+                          <span className="text-slate-700">
+                            İnkişaf ehtiyacı: <strong className="text-amber-700">{worstSubj}</strong>
+                          </span>
+                        )}
+                      </div>
+                    )
+                  })()}
 
                   {/* Tabs */}
                   <Tabs defaultValue="overview" className="space-y-6">

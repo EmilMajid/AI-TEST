@@ -21,6 +21,8 @@ export interface StoredTestResult {
   studentId: string | number
   studentEmail?: string
   studentName?: string
+  uniqueId?: string       // @ayaz.rzayev.309 kimi xüsusi ID
+  parentId?: string       // əlaqəli valideyn ID-si
   textbook: string
   topic: string
   class: string
@@ -46,12 +48,6 @@ import { DEMO_SHOWCASE_RESULTS } from "./demo-showcase-data"
 
 let inMemoryResults: StoredTestResult[] = []
 
-function isAyazTest(r: any): boolean {
-  if (!r) return false
-  const id = String(r.studentId || "").toLowerCase()
-  return id === "student-ayaz-161-test" || id === "student-ayaz-309-test"
-}
-
 export function loadTestResultsFromDisk(): StoredTestResult[] {
   let diskList: StoredTestResult[] = []
   try {
@@ -59,7 +55,7 @@ export function loadTestResultsFromDisk(): StoredTestResult[] {
       const data = fs.readFileSync(RESULTS_FILE, "utf-8")
       const parsed = JSON.parse(data)
       if (Array.isArray(parsed)) {
-        diskList = parsed.filter(r => !isAyazTest(r))
+        diskList = parsed
       }
     }
   } catch (err) {
@@ -100,32 +96,82 @@ export function saveTestResult(result: StoredTestResult): StoredTestResult {
   return newResult
 }
 
+/**
+ * Şagirdi çoxlu identifikator üzrə axtarır (Cross-ID lookup).
+ * Sıra: studentId → studentEmail → uniqueId → email prefix → name
+ */
 export function getTestResultsForStudent(
   studentId?: string | number,
   studentEmail?: string,
-  studentName?: string
+  studentName?: string,
+  uniqueId?: string
 ): StoredTestResult[] {
   const current = loadTestResultsFromDisk()
+
+  const cleanId = studentId !== undefined && studentId !== null
+    ? String(studentId).trim().toLowerCase()
+    : ""
   const cleanEmail = (studentEmail || "").trim().toLowerCase()
-  const studentIdStr = studentId !== undefined && studentId !== null ? String(studentId).trim().toLowerCase() : ""
   const cleanName = (studentName || "").trim().toLowerCase()
+  const cleanUniqueId = (uniqueId || "").trim().toLowerCase()
 
-  const isInci = studentIdStr === "student-inci" || studentIdStr === "student-1" || cleanEmail === "inci.mecidzade@test.com" || cleanEmail === "inci.mecidzade@example.com" || cleanName.includes("inci")
-  const isEmilia = studentIdStr === "student-emilia" || studentIdStr === "student-2" || cleanEmail === "emilia.mecidzade@test.com" || cleanEmail === "emilia.mecidzade@example.com" || cleanName.includes("emilia")
+  // Showcase shortcuts
+  const isInci =
+    cleanId === "student-inci" || cleanId === "student-1" ||
+    cleanEmail === "inci.mecidzade@test.com" || cleanEmail === "inci.mecidzade@example.com" ||
+    cleanName.includes("inci")
+  const isEmilia =
+    cleanId === "student-emilia" || cleanId === "student-2" ||
+    cleanEmail === "emilia.mecidzade@test.com" || cleanEmail === "emilia.mecidzade@example.com" ||
+    cleanName.includes("emilia")
 
-  return current.filter((r) => {
-    const rId = String(r.studentId).toLowerCase()
+  const matched = new Map<string, StoredTestResult>()
+
+  for (const r of current) {
+    const rId = String(r.studentId || "").toLowerCase()
     const rEmail = (r.studentEmail || "").toLowerCase()
     const rName = (r.studentName || "").toLowerCase()
+    const rUniqueId = (r.uniqueId || "").toLowerCase()
 
-    if (isInci && (rId === "student-inci" || rEmail === "inci.mecidzade@test.com" || rName.includes("inci"))) return true
-    if (isEmilia && (rId === "student-emilia" || rEmail === "emilia.mecidzade@test.com" || rName.includes("emilia"))) return true
+    let matches = false
 
-    if (studentIdStr && rId === studentIdStr) return true
-    if (cleanEmail && rEmail && rEmail === cleanEmail) return true
-    if (cleanName && rName && rName === cleanName) return true
-    return false
-  })
+    // 1. Showcase shortcuts
+    if (isInci && (rId === "student-inci" || rEmail === "inci.mecidzade@test.com" || rName.includes("inci"))) {
+      matches = true
+    } else if (isEmilia && (rId === "student-emilia" || rEmail === "emilia.mecidzade@test.com" || rName.includes("emilia"))) {
+      matches = true
+    }
+    // 2. studentId dəqiq uyğunluq
+    else if (cleanId && rId === cleanId) {
+      matches = true
+    }
+    // 3. studentEmail dəqiq uyğunluq
+    else if (cleanEmail && rEmail && rEmail === cleanEmail) {
+      matches = true
+    }
+    // 4. uniqueId uyğunluq (@ ilə başlayan xüsusi ID)
+    else if (cleanUniqueId && rUniqueId && rUniqueId === cleanUniqueId) {
+      matches = true
+    }
+    // 5. Axtarılan email-in @ öncəsi hissəsi rId-də varsa (cross-ID köprüsü)
+    else if (cleanEmail && cleanEmail.includes("@") && rId && rId.includes(cleanEmail.split("@")[0])) {
+      matches = true
+    }
+    // 6. Axtarılan ID, rEmail-in @ öncəsi hissəsinə bərabərdirsə
+    else if (cleanId && rEmail && rEmail.split("@")[0] === cleanId) {
+      matches = true
+    }
+    // 7. studentName dəqiq uyğunluq (son çarə)
+    else if (cleanName && rName && rName === cleanName) {
+      matches = true
+    }
+
+    if (matches) {
+      matched.set(String(r.id), r)
+    }
+  }
+
+  return Array.from(matched.values())
 }
 
 export function getAllTestResults(): StoredTestResult[] {

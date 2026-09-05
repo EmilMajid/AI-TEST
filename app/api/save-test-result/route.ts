@@ -14,6 +14,7 @@ export async function POST(request: NextRequest) {
     const studentId = body.studentId || auth?.user?.id || `student-${Date.now()}`
     const studentEmail = body.studentEmail || auth?.user?.email || ""
     const studentName = body.studentName || `${auth?.user?.id || "Şagird"}`
+    const uniqueId = body.uniqueId || ""
 
     if (!body.textbook || body.score === undefined) {
       return NextResponse.json(
@@ -34,6 +35,7 @@ export async function POST(request: NextRequest) {
       studentId,
       studentEmail,
       studentName,
+      uniqueId: uniqueId || undefined,
       textbook: body.textbook,
       topic: body.topic || "Ümumi test",
       class: body.class || "5",
@@ -49,6 +51,7 @@ export async function POST(request: NextRequest) {
     }
 
     const saved = saveTestResult(storedResult)
+
 
     // 2. Identify linked parent(s) to send email notification
     let emailStatus = { sent: false, parentEmail: "", simulated: false }
