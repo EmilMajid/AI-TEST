@@ -2,21 +2,6 @@
 
 import React, { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import { Lock, Unlock, BarChart, Loader2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-
-// These are imported from the admin analytics to reuse the UI logic
-import DescriptiveStats from '@/components/admin/analytics/DescriptiveStats'
-import BehaviorAnalysis from '@/components/admin/analytics/BehaviorAnalysis'
-import ClusterAnalysis from '@/components/admin/analytics/ClusterAnalysis'
-import ItemAnalysis from '@/components/admin/analytics/ItemAnalysis'
-import BloomAnalysis from '@/components/admin/analytics/BloomAnalysis'
-
-'use client'
-
-import React, { useState, useEffect } from 'react'
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Lock, Unlock, BarChart, Loader2, Sparkles, CheckCircle2, ShieldCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'

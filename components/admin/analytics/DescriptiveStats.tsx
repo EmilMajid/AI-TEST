@@ -1,10 +1,5 @@
 'use client'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { useEffect, useState } from 'react'
-import { Loader2 } from 'lucide-react'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
-
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { useEffect, useState } from 'react'
 import { Loader2, TrendingUp, Award, CheckCircle2, Sparkles, BarChart3, PieChart as PieIcon, ShieldCheck } from 'lucide-react'
