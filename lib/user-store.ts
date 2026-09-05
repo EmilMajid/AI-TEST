@@ -612,11 +612,12 @@ const DEFAULT_LINKS: StudentLink[] = [
       fatherName: "Rüfət",
       email: "araz.rzayev.309@testai.az",
       uniqueId: "@araz.rzayev.309",
-      class: "5",
+      class: "6",
       school: "309 saylı məktəb"
     }
   }
 ]
+
 
 
 const DELETED_LINKS_FILE = getStoragePath("testai_deleted_links.json")
@@ -883,9 +884,10 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
         l.student.school = "309 saylı məktəb"
       }
       if (sName.includes("araz") && sName.includes("rzayev") && l.student) {
-        l.student.class = l.student.class || "5"
+        l.student.class = "6"
         l.student.school = "309 saylı məktəb"
       }
+
 
       if (sName.includes("inci") && l.student) {
         l.student.id = "student-inci"

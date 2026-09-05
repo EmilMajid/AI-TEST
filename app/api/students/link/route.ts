@@ -297,8 +297,9 @@ export async function GET(request: NextRequest) {
 
         const isAyaz = sName.includes("ayaz") && sName.includes("rzayev")
         const isAraz = sName.includes("araz") && sName.includes("rzayev")
-        const finalClass = isAyaz ? "8" : (isAraz ? (link.student?.class || "5") : (link.student?.class || "5"))
+        const finalClass = isAyaz ? "8" : (isAraz ? "6" : (link.student?.class || "5"))
         const finalSchool = (isAyaz || isAraz) ? "309 saylı məktəb" : (link.student?.school || "Məktəb")
+
 
         if (!dedupMap.has(key) || finalClass === "8") {
           dedupMap.set(key, {
