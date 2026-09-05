@@ -97,28 +97,44 @@ export function saveTestResult(result: StoredTestResult): StoredTestResult {
   // Async sync to Supabase TestResult table
   try {
     const { supabaseAdmin } = require("./user-store")
-    const sEmail = (newResult.studentEmail || "").toLowerCase()
-    if (sEmail && supabaseAdmin) {
-      supabaseAdmin
-        .from("User")
-        .select("id")
-        .eq("email", sEmail)
-        .single()
-        .then((uRes: any) => {
-          if (uRes.data?.id) {
-            return supabaseAdmin.from("TestResult").insert({
-              userId: uRes.data.id,
-              textbook: newResult.textbook,
-              topic: newResult.topic,
-              class: newResult.class,
-              score: newResult.score,
-              timeSpent: newResult.timeSpent || 0,
-              answers: newResult.answers || {},
-              completedAt: newResult.completedAt,
-            })
+    if (supabaseAdmin) {
+      const sEmail = (newResult.studentEmail || "").toLowerCase()
+      const sId = String(newResult.studentId || "").toLowerCase()
+      const isNum = !isNaN(Number(sId)) && Number(sId) > 0
+
+      const resolveUserId = async (): Promise<number | null> => {
+        if (isNum) return Number(sId)
+        if (sEmail) {
+          const { data } = await supabaseAdmin.from("User").select("id").eq("email", sEmail).maybeSingle()
+          if (data?.id) return data.id
+        }
+        if (sId) {
+          const { data: allStudents } = await supabaseAdmin.from("User").select("id, email").eq("accountType", "student")
+          if (allStudents) {
+            const m = allStudents.find((u: any) =>
+              sId.includes(u.email.split("@")[0].toLowerCase()) ||
+              u.email.toLowerCase().includes(sId.replace("student-", ""))
+            )
+            if (m?.id) return m.id
           }
-        })
-        .catch(() => {})
+        }
+        return null
+      }
+
+      resolveUserId().then((uId) => {
+        if (uId) {
+          return supabaseAdmin.from("TestResult").insert({
+            userId: uId,
+            textbook: newResult.textbook,
+            topic: newResult.topic || "Ümumi sınaq",
+            class: String(newResult.class || "6"),
+            score: Number(newResult.score) || 0,
+            timeSpent: Number(newResult.timeSpent) || 0,
+            answers: newResult.answers || {},
+            completedAt: newResult.completedAt || new Date().toISOString(),
+          })
+        }
+      }).catch((e: any) => console.error("Supabase insert error:", e))
     }
   } catch (err) {}
 

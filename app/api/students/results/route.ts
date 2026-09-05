@@ -25,9 +25,69 @@ export async function GET(request: NextRequest) {
     const isNumericId = !isNaN(studentIdNum)
 
     if (isDemoMode) {
-      // 1. Check if real test results exist for this student in test-result-store
+      // 1. Check if real test results exist for this student in test-result-store & Supabase
       const uniqueId = searchParams.get("uniqueId") || undefined
       const storedResults = getTestResultsForStudent(studentId, studentEmail, undefined, uniqueId)
+
+      try {
+        const { supabaseAdmin } = await import("@/lib/user-store")
+        if (supabaseAdmin) {
+          let sUserId: number | null = null
+          if (isNumericId) {
+            sUserId = studentIdNum
+          } else if (studentEmail) {
+            const { data: uData } = await supabaseAdmin
+              .from("User")
+              .select("id")
+              .eq("email", studentEmail.toLowerCase())
+              .maybeSingle()
+            if (uData?.id) sUserId = uData.id
+          }
+          if (!sUserId && studentId) {
+            const { data: allStudents } = await supabaseAdmin
+              .from("User")
+              .select("id, email")
+              .eq("accountType", "student")
+            if (allStudents) {
+              const matchedU = allStudents.find((u: any) =>
+                studentId.toLowerCase().includes(u.email.split("@")[0].toLowerCase()) ||
+                u.email.toLowerCase().includes(studentId.toLowerCase().replace("student-", ""))
+              )
+              if (matchedU) sUserId = matchedU.id
+            }
+          }
+
+          if (sUserId) {
+            const { data: trRows } = await supabaseAdmin
+              .from("TestResult")
+              .select("*")
+              .eq("userId", sUserId)
+              .order("completedAt", { ascending: false })
+
+            if (trRows && trRows.length > 0) {
+              for (const r of trRows) {
+                if (!storedResults.some((s) => String(s.id) === String(r.id) || (s.textbook === r.textbook && s.completedAt === r.completedAt))) {
+                  storedResults.push({
+                    id: r.id,
+                    studentId: studentId,
+                    studentEmail: studentEmail,
+                    textbook: r.textbook,
+                    topic: r.topic || "Ümumi sınaq",
+                    class: r.class || "6",
+                    score: r.score,
+                    timeSpent: r.timeSpent || 60,
+                    completedAt: r.completedAt,
+                    correctAnswers: Math.round((r.score / 100) * 10),
+                    totalQuestions: 10,
+                  })
+                }
+              }
+            }
+          }
+        }
+      } catch (err) {
+        console.error("Supabase test results query error:", err)
+      }
 
       if (storedResults.length > 0) {
         // Calculate REAL statistics from real stored results

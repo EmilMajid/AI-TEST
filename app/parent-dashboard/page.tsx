@@ -377,7 +377,8 @@ export default function ParentDashboard() {
         setLinkedStudents(localLinks)
         if (!selectedStudent) {
           setSelectedStudent(localLinks[0].studentId)
-          loadStudentResults(localLinks[0].studentId, parentId, timeRange, userEmail)
+          const sEmail = localLinks[0].studentEmail || (localLinks[0] as any).email
+          loadStudentResults(localLinks[0].studentId, parentId, timeRange, sEmail)
         }
       }
 
@@ -417,14 +418,18 @@ export default function ParentDashboard() {
         const firstStudentId = merged[0].studentId
         const activeStudentId = selectedStudent || firstStudentId
         setSelectedStudent(activeStudentId)
-        loadStudentResults(activeStudentId, parentId, timeRange, userEmail)
+        const activeStudent = merged.find((s) => String(s.studentId) === String(activeStudentId) || String(s.id) === String(activeStudentId)) || merged[0]
+        const sEmail = activeStudent?.studentEmail || (activeStudent as any)?.email
+        loadStudentResults(activeStudentId, parentId, timeRange, sEmail)
       } else if (localLinks.length > 0) {
         // Server returned empty, but localLinks exist (e.g. serverless container restart)
         setLinkedStudents(localLinks)
         const firstStudentId = localLinks[0].studentId
         const activeStudentId = selectedStudent || firstStudentId
         setSelectedStudent(activeStudentId)
-        loadStudentResults(activeStudentId, parentId, timeRange, userEmail)
+        const activeStudent = localLinks.find((s) => String(s.studentId) === String(activeStudentId) || String(s.id) === String(activeStudentId)) || localLinks[0]
+        const sEmail = activeStudent?.studentEmail || (activeStudent as any)?.email
+        loadStudentResults(activeStudentId, parentId, timeRange, sEmail)
 
         fetch("/api/students/link", {
           method: "POST",
@@ -447,26 +452,24 @@ export default function ParentDashboard() {
     }
   }
 
-  const loadStudentResults = async (studentId: number | string, parentId: number | string, range: string = 'month', userEmail?: string) => {
+  const loadStudentResults = async (studentId: number | string, parentId: number | string, range: string = 'month', studentEmailOverride?: string) => {
     try {
       setIsLoading(true)
-
-      // Mövcud state-i yaddaşa al — server boş qaytarsa silməyəcəyik
-      const prevStats = studentStats
 
       const session = localStorage.getItem("session")
       const token = session ? JSON.parse(session).access_token : null
 
-      // Şagirdin uniqueId-sini tap (əgər varsa)
+      // Şagirdin obyektini və məlumatlarını tap
       const studentObj = linkedStudents.find(
-        (s) => s.studentId === studentId || s.id === studentId
+        (s) => String(s.studentId) === String(studentId) || String(s.id) === String(studentId)
       )
+      const resolvedStudentEmail = studentEmailOverride || studentObj?.studentEmail || (studentObj as any)?.email || ""
       const studentUniqueId = (studentObj as any)?.uniqueId || ""
-      const emailQuery = userEmail
-        ? `&email=${encodeURIComponent(userEmail)}`
-        : studentObj?.studentEmail
-          ? `&email=${encodeURIComponent(studentObj.studentEmail)}`
-          : ""
+      const studentClass = studentObj?.studentClass || studentObj?.class || ""
+
+      const emailQuery = resolvedStudentEmail
+        ? `&email=${encodeURIComponent(resolvedStudentEmail)}`
+        : ""
       const uniqueIdQuery = studentUniqueId
         ? `&uniqueId=${encodeURIComponent(studentUniqueId)}`
         : ""
@@ -488,12 +491,11 @@ export default function ParentDashboard() {
 
       // ── Prioritet 2: localStorage-da nəticə varsa, onu istifadə et ──
       try {
-        // Bir neçə mümkün açar üzrə yoxla
+        // Yalnız bu konkret şagirdə aid olan açarları yoxla (valideynin email-ini daxil ETMƏ!)
         const keysToCheck = [
           `student_test_results_${studentId}`,
           studentUniqueId ? `student_test_results_${studentUniqueId}` : null,
-          userEmail ? `student_test_results_${userEmail}` : null,
-          studentObj?.studentEmail ? `student_test_results_${studentObj.studentEmail}` : null,
+          resolvedStudentEmail ? `student_test_results_${resolvedStudentEmail}` : null,
         ].filter(Boolean) as string[]
 
         let localTests: any[] = []
@@ -506,6 +508,11 @@ export default function ParentDashboard() {
               break
             }
           }
+        }
+
+        // Təhlükəsizlik süzgəci: Şagirdin sinfi bəllidirsə, başqa sinif testlərini qəbul etmə
+        if (studentClass && localTests.length > 0) {
+          localTests = localTests.filter((t: any) => !t.class || String(t.class) === String(studentClass))
         }
 
         if (localTests.length > 0) {
@@ -573,15 +580,26 @@ export default function ParentDashboard() {
         }
       } catch (e) { /* localStorage xətaları ignore et */ }
 
-      // ── Prioritet 3: Əvvəlki state mövcuddursa və real datası varsa, onu qoru ──
-      if (prevStats && prevStats.totalTests > 0) {
-        // State wipe baş vermə! Serverdən gələn boş cavabı ignore et
-        return
-      }
-
-      // ── Prioritet 4: Həqiqətən ilk dəfədir, şagird hələ test işləməyib ──
+      // ── Prioritet 3: Heç bir test tapılmadıqda təmiz sıfır vəziyyəti qur ──
       if (data.success && data.statistics) {
         setStudentStats(data.statistics)
+      } else {
+        setStudentStats({
+          totalTests: 0,
+          averageScore: 0,
+          bestScore: 0,
+          subjectBreakdown: [],
+          comparisonData: [],
+          recentTests: [],
+          recentActivity: [],
+          monthly: {
+            testsThisMonth: 0,
+            averageThisMonth: 0,
+          },
+          strongAreas: [],
+          weakAreas: [],
+          performanceTrend: [],
+        })
       }
     } catch (error) {
       console.error("Load results error:", error)
@@ -875,7 +893,9 @@ export default function ParentDashboard() {
         if (remaining.length > 0) {
           const nextActiveId = remaining[0].studentId
           setSelectedStudent(nextActiveId)
-          loadStudentResults(nextActiveId, userData.id, timeRange, userData.email)
+          const nextStudent = remaining.find((s) => String(s.studentId) === String(nextActiveId) || String(s.id) === String(nextActiveId)) || remaining[0]
+          const sEmail = nextStudent?.studentEmail || (nextStudent as any)?.email
+          loadStudentResults(nextActiveId, userData.id, timeRange, sEmail)
         } else {
           setSelectedStudent(null)
           setStudentStats(null)
@@ -1000,15 +1020,21 @@ export default function ParentDashboard() {
   }
 
   const handleStudentSelect = (studentId: number | string) => {
+    if (selectedStudent === studentId) return
     setSelectedStudent(studentId as any)
     setSelectedSubject(null) // Reset subject when student changes
-    loadStudentResults(studentId as any, userData.id, timeRange, userData.email)
+    setStudentStats(null) // Şagird dəyişdirildikdə əvvəlki şagirdin statistikası dərhal təmizlənir!
+    const targetStudent = linkedStudents.find((s) => String(s.studentId) === String(studentId) || String(s.id) === String(studentId))
+    const sEmail = targetStudent?.studentEmail || (targetStudent as any)?.email
+    loadStudentResults(studentId as any, userData.id, timeRange, sEmail)
   }
 
   const handleTimeRangeChange = (range: 'day' | 'week' | 'month' | 'year') => {
     setTimeRange(range)
     if (selectedStudent) {
-      loadStudentResults(selectedStudent as any, userData.id, range, userData.email)
+      const targetStudent = linkedStudents.find((s) => String(s.studentId) === String(selectedStudent) || String(s.id) === String(selectedStudent))
+      const sEmail = targetStudent?.studentEmail || (targetStudent as any)?.email
+      loadStudentResults(selectedStudent as any, userData.id, range, sEmail)
     }
   }
 
