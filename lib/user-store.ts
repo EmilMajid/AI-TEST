@@ -43,27 +43,50 @@ export interface StoredUser {
 
 /** Real istifadəçiləri ayrı diskə yaz */
 function loadRealUsersFromDisk(): StoredUser[] {
-  try {
-    if (fs.existsSync(REAL_FILE)) {
-      const data = fs.readFileSync(REAL_FILE, "utf-8")
-      return JSON.parse(data) || []
-    }
-  } catch (err) {}
-  return []
+  const candidatePaths = [
+    REAL_FILE,
+    path.join(os.tmpdir(), "testai_real_users.json"),
+    path.join(process.cwd(), ".data", "testai_real_users.json"),
+    path.join(process.cwd(), "data", "testai_real_users.json")
+  ]
+  const map = new Map<string, StoredUser>()
+  for (const p of candidatePaths) {
+    try {
+      if (fs.existsSync(p)) {
+        const data = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "")
+        const parsed = JSON.parse(data)
+        if (Array.isArray(parsed)) {
+          for (const u of parsed) {
+            const key = (u.email || String(u.id)).toLowerCase()
+            map.set(key, { ...map.get(key), ...u, source: u.source || "real" })
+          }
+        }
+      }
+    } catch (err) {}
+  }
+  return Array.from(map.values())
 }
 
 function saveRealUserToDisk(user: StoredUser) {
-  try {
-    const existing = loadRealUsersFromDisk()
-    const key = (user.email || String(user.id)).toLowerCase()
-    const idx = existing.findIndex(u => (u.email || String(u.id)).toLowerCase() === key)
-    if (idx >= 0) {
-      existing[idx] = { ...existing[idx], ...user }
-    } else {
-      existing.push(user)
-    }
-    fs.writeFileSync(REAL_FILE, JSON.stringify(existing, null, 2), "utf-8")
-  } catch (err) {}
+  const existing = loadRealUsersFromDisk()
+  const key = (user.email || String(user.id)).toLowerCase()
+  const idx = existing.findIndex(u => (u.email || String(u.id)).toLowerCase() === key)
+  if (idx >= 0) {
+    existing[idx] = { ...existing[idx], ...user, source: "real" }
+  } else {
+    existing.push({ ...user, source: "real" })
+  }
+  const serialized = JSON.stringify(existing, null, 2)
+  const candidatePaths = [
+    REAL_FILE,
+    path.join(os.tmpdir(), "testai_real_users.json"),
+    path.join(process.cwd(), ".data", "testai_real_users.json")
+  ]
+  for (const p of candidatePaths) {
+    try {
+      fs.writeFileSync(p, serialized, "utf-8")
+    } catch (err) {}
+  }
 }
 
 /** Heristik yoxlama: istifadəçi mock/demo-durmu? */
@@ -435,16 +458,52 @@ export function findUsers(query: { emailOrId?: string; role?: string }): StoredU
   const cleanInput = (query.emailOrId || "").trim().toLowerCase()
   if (!cleanInput) return []
   const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`
+  const cleanWithoutAt = cleanInput.replace("@", "")
 
-  let matches = users.filter((u) => {
+  const matchUser = (u: any) => {
     const emailMatch = Boolean(u.email && u.email.toLowerCase() === cleanInput)
-    const emailPrefixMatch = Boolean(u.email && u.email.toLowerCase().split("@")[0] === cleanInput.replace("@", ""))
+    const emailPrefixMatch = Boolean(u.email && u.email.toLowerCase().split("@")[0] === cleanWithoutAt)
+    const explicitUid = (u.uniqueId || "").toLowerCase()
+    const explicitMatch = explicitUid === cleanId || explicitUid.replace("@", "") === cleanWithoutAt
     const userUid = getUserUniqueId(u as any).toLowerCase()
-    const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanInput.replace("@", "")
-    const rawIdMatch = String(u.id).toLowerCase() === cleanInput
+    const idMatch = userUid === cleanId || userUid.replace("@", "") === cleanWithoutAt
+    const rawIdMatch = String(u.id).toLowerCase() === cleanInput || String(u.id).toLowerCase() === cleanWithoutAt
     const fullNameMatch = `${u.firstName || ""} ${u.lastName || ""}`.trim().toLowerCase() === cleanInput
-    return emailMatch || emailPrefixMatch || idMatch || rawIdMatch || fullNameMatch
-  })
+    return emailMatch || emailPrefixMatch || explicitMatch || idMatch || rawIdMatch || fullNameMatch
+  }
+
+  let matches = users.filter(matchUser)
+
+  // If no matches found in primary users, check student links
+  if (matches.length === 0) {
+    const links = loadLinksFromDisk()
+    for (const l of links) {
+      if (!l.student) continue
+      const st = l.student
+      if (matchUser(st)) {
+        const sId = st.id || l.studentId
+        const sEmail = st.email || `${String(sId).replace(/\D/g, "") || Date.now()}@testai.az`
+        const autoSaved = saveUser({
+          id: sId,
+          firstName: st.firstName,
+          lastName: st.lastName,
+          fatherName: st.fatherName || "",
+          school: st.school || "161 saylı məktəb",
+          class: st.class || "5",
+          email: sEmail,
+          password: "Test@2026",
+          accountType: "student",
+          role: "student",
+          parentId: l.parentId,
+          parentEmail: l.parentEmail,
+          source: "real",
+          status: "active",
+          isBlocked: false,
+        })
+        matches.push(autoSaved)
+      }
+    }
+  }
 
   if (query.role) {
     matches = matches.filter(
@@ -537,26 +596,41 @@ const DEFAULT_LINKS: StudentLink[] = [
   }
 ]
 
-const DELETED_LINKS_FILE = path.join(process.cwd(), ".data", "testai_deleted_links.json")
+const DELETED_LINKS_FILE = getStoragePath("testai_deleted_links.json")
 
 function loadDeletedLinksFromDisk(): Set<string> {
   const set = new Set<string>()
-  try {
-    if (fs.existsSync(DELETED_LINKS_FILE)) {
-      const raw = fs.readFileSync(DELETED_LINKS_FILE, "utf-8").replace(/^\uFEFF/, "")
-      const arr = JSON.parse(raw)
-      if (Array.isArray(arr)) {
-        arr.forEach((item: string) => set.add(String(item).toLowerCase()))
+  const paths = [
+    DELETED_LINKS_FILE,
+    path.join(os.tmpdir(), "testai_deleted_links.json"),
+    path.join(process.cwd(), ".data", "testai_deleted_links.json"),
+  ]
+  for (const p of paths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "")
+        const arr = JSON.parse(raw)
+        if (Array.isArray(arr)) {
+          arr.forEach((item: string) => set.add(String(item).toLowerCase()))
+        }
       }
-    }
-  } catch (e) {}
+    } catch (e) {}
+  }
   return set
 }
 
 function saveDeletedLinksToDisk(set: Set<string>) {
-  try {
-    fs.writeFileSync(DELETED_LINKS_FILE, JSON.stringify(Array.from(set), null, 2), "utf-8")
-  } catch (e) {}
+  const serialized = JSON.stringify(Array.from(set), null, 2)
+  const paths = [
+    DELETED_LINKS_FILE,
+    path.join(os.tmpdir(), "testai_deleted_links.json"),
+    path.join(process.cwd(), ".data", "testai_deleted_links.json"),
+  ]
+  for (const p of paths) {
+    try {
+      fs.writeFileSync(p, serialized, "utf-8")
+    } catch (e) {}
+  }
 }
 
 const deletedLinkIds = loadDeletedLinksFromDisk()
@@ -564,36 +638,51 @@ const deletedLinkIds = loadDeletedLinksFromDisk()
 let inMemoryLinks: StudentLink[] = [...DEFAULT_LINKS]
 
 export function loadLinksFromDisk(): StudentLink[] {
-  try {
-    if (fs.existsSync(LINKS_FILE)) {
-      const raw = fs.readFileSync(LINKS_FILE, "utf-8")
-      const data = raw.replace(/^\uFEFF/, "")
-      const parsed = JSON.parse(data)
-      if (Array.isArray(parsed) && parsed.length > 0) {
-        const map = new Map<string, StudentLink>()
-        for (const l of parsed) {
-          const lId = String(l.id).toLowerCase()
-          const sId = String(l.studentId).toLowerCase()
-          const sEmail = (l.student?.email || "").toLowerCase()
-          if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
-            map.set(lId, l)
+  const candidatePaths = [
+    LINKS_FILE,
+    path.join(os.tmpdir(), "testai_student_links.json"),
+    path.join(process.cwd(), ".data", "testai_student_links.json"),
+  ]
+  const map = new Map<string, StudentLink>()
+
+  // Load from candidate paths
+  for (const p of candidatePaths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, "utf-8")
+        const data = raw.replace(/^\uFEFF/, "")
+        const parsed = JSON.parse(data)
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          for (const l of parsed) {
+            const lId = String(l.id).toLowerCase()
+            const sId = String(l.studentId).toLowerCase()
+            const sEmail = (l.student?.email || "").toLowerCase()
+            if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
+              map.set(lId, l)
+            }
           }
         }
-        for (const l of DEFAULT_LINKS) {
-          const lId = String(l.id).toLowerCase()
-          const sId = String(l.studentId).toLowerCase()
-          const sEmail = (l.student?.email || "").toLowerCase()
-          if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
-            map.set(lId, l)
-          }
-        }
-        inMemoryLinks = Array.from(map.values())
-        return inMemoryLinks
+      }
+    } catch (err) {}
+  }
+
+  // Also include default links if not deleted
+  for (const l of DEFAULT_LINKS) {
+    const lId = String(l.id).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    const sEmail = (l.student?.email || "").toLowerCase()
+    if (!deletedLinkIds.has(lId) && !deletedLinkIds.has(sId) && (!sEmail || !deletedLinkIds.has(sEmail))) {
+      if (!map.has(lId)) {
+        map.set(lId, l)
       }
     }
-  } catch (err) {
-    // Ignore read errors
   }
+
+  if (map.size > 0) {
+    inMemoryLinks = Array.from(map.values())
+    return inMemoryLinks
+  }
+
   return inMemoryLinks.filter((l) => {
     const lId = String(l.id).toLowerCase()
     const sId = String(l.studentId).toLowerCase()
@@ -603,11 +692,17 @@ export function loadLinksFromDisk(): StudentLink[] {
 }
 
 export function saveLinksToDisk(links: StudentLink[]) {
-  try {
-    inMemoryLinks = links
-    fs.writeFileSync(LINKS_FILE, JSON.stringify(links, null, 2), "utf-8")
-  } catch (err) {
-    // Ignore write errors
+  inMemoryLinks = links
+  const serialized = JSON.stringify(links, null, 2)
+  const candidatePaths = [
+    LINKS_FILE,
+    path.join(os.tmpdir(), "testai_student_links.json"),
+    path.join(process.cwd(), ".data", "testai_student_links.json"),
+  ]
+  for (const p of candidatePaths) {
+    try {
+      fs.writeFileSync(p, serialized, "utf-8")
+    } catch (err) {}
   }
 }
 

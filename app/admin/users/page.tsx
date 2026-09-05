@@ -17,6 +17,7 @@ import {
 import { useToast } from '@/components/ui/use-toast'
 import { Search, Loader2, Eye, Trash2, Lock, Unlock, AlertTriangle, ShieldAlert } from 'lucide-react'
 import Link from 'next/link'
+import { getUserUniqueId } from '@/lib/profile-utils'
 
 export default function AdminUsersPage() {
     const { toast } = useToast()
@@ -33,13 +34,52 @@ export default function AdminUsersPage() {
 
     async function fetchUsers() {
         try {
+            // Check if there are local registered users / links in localStorage to sync to server
+            let localRegUsers: any[] = []
+            let localLinks: any[] = []
+            try {
+                localRegUsers = JSON.parse(localStorage.getItem('registeredUsers') || '[]')
+                localLinks = JSON.parse(localStorage.getItem('all_student_links') || '[]')
+            } catch (e) {}
+
+            if (localRegUsers.length > 0 || localLinks.length > 0) {
+                fetch('/api/admin/users', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        users: localRegUsers,
+                        links: localLinks,
+                    })
+                }).catch(() => {})
+            }
+
             const res = await fetch('/api/admin/users')
             const data = await res.json()
-            if (data.success && Array.isArray(data.users)) {
-                setUsers(data.users)
-            } else if (Array.isArray(data)) {
-                setUsers(data)
+            let serverUsers = (data.success && Array.isArray(data.users)) ? data.users : (Array.isArray(data) ? data : [])
+
+            // Merge any local registered users so newly created students show up immediately
+            if (localRegUsers.length > 0) {
+                const userMap = new Map<string, any>()
+                serverUsers.forEach((u: any) => {
+                    const key = (u.email || String(u.id)).toLowerCase()
+                    userMap.set(key, u)
+                })
+                localRegUsers.forEach((lu: any) => {
+                    const key = (lu.email || String(lu.id)).toLowerCase()
+                    if (!userMap.has(key)) {
+                        userMap.set(key, {
+                            ...lu,
+                            source: "real",
+                            status: lu.status || "active",
+                            isBlocked: lu.isBlocked || false,
+                            uniqueId: lu.uniqueId || getUserUniqueId(lu),
+                        })
+                    }
+                })
+                serverUsers = Array.from(userMap.values())
             }
+
+            setUsers(serverUsers)
         } catch (err) {
             console.error("Failed to load users", err)
             toast({
@@ -306,9 +346,7 @@ export default function AdminUsersPage() {
                                             <TableCell>
                                                 <div className="flex flex-col text-xs">
                                                     <span className="font-mono text-slate-900">{user.email || "-"}</span>
-                                                    {user.uniqueId && (
-                                                        <span className="text-slate-500 font-mono">{user.uniqueId}</span>
-                                                    )}
+                                                    <span className="text-blue-600 font-mono text-[11px] font-semibold">{user.uniqueId || getUserUniqueId(user)}</span>
                                                 </div>
                                             </TableCell>
                                             <TableCell>{getRoleBadge(user.role || user.accountType)}</TableCell>

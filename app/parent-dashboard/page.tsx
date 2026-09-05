@@ -612,15 +612,20 @@ export default function ParentDashboard() {
           })
 
           // Save to global client link store and registered users for cross-session access
+          const studentUniqueId = data.credentials?.uniqueId || (data.link as any)?.uniqueId || `@${studentFormData.firstName.toLowerCase()}.${studentFormData.lastName.toLowerCase()}`
           try {
             const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
-            allLinks.push({
+            const linkRecord = {
               id: newEntry.id,
               parentId: userData.id,
               parentEmail: userData.email,
               studentId: newEntry.studentId,
-              student: newEntry
-            })
+              student: {
+                ...newEntry,
+                uniqueId: studentUniqueId
+              }
+            }
+            allLinks.push(linkRecord)
             localStorage.setItem("all_student_links", JSON.stringify(allLinks))
           } catch (e) {}
 
@@ -629,6 +634,7 @@ export default function ParentDashboard() {
             const studentUser = {
               id: newEntry.studentId,
               email: newEntry.studentEmail,
+              uniqueId: studentUniqueId,
               firstName: studentFormData.firstName,
               lastName: studentFormData.lastName,
               fatherName: studentFormData.fatherName,
@@ -638,10 +644,14 @@ export default function ParentDashboard() {
               role: "student",
               parentId: userData.id,
               parentEmail: userData.email,
-              password: studentFormData.password.trim() || data.credentials?.password || "Test@2026"
+              password: studentFormData.password.trim() || data.credentials?.password || "Test@2026",
+              source: "real",
+              status: "active",
+              isBlocked: false,
             }
-            regUsers.push(studentUser)
-            localStorage.setItem("registeredUsers", JSON.stringify(regUsers))
+            const filtered = regUsers.filter((u: any) => String(u.id) !== String(studentUser.id) && u.email?.toLowerCase() !== studentUser.email.toLowerCase())
+            filtered.push(studentUser)
+            localStorage.setItem("registeredUsers", JSON.stringify(filtered))
           } catch (e) {}
         }
 

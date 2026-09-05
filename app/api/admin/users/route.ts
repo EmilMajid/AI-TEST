@@ -1,12 +1,40 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
+import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET() {
   try {
     const allUsers = getAllUsers()
     const allLinks = loadLinksFromDisk()
+
+    // Ensure all students from parent links are represented in allUsers
+    for (const link of allLinks) {
+      if (!link.student) continue
+      const st = link.student
+      const sId = String(st.id || link.studentId)
+      const sEmail = (st.email || "").toLowerCase()
+      const exists = allUsers.some(u => String(u.id) === sId || (u.email && u.email.toLowerCase() === sEmail))
+      if (!exists) {
+        allUsers.push({
+          id: sId,
+          firstName: st.firstName || "Şagird",
+          lastName: st.lastName || "İstifadəçi",
+          fatherName: st.fatherName || "",
+          school: st.school || "161 saylı məktəb",
+          class: st.class || "5",
+          email: st.email || `${sId}@testai.az`,
+          accountType: "student",
+          role: "student",
+          parentId: link.parentId,
+          parentEmail: link.parentEmail,
+          uniqueId: st.uniqueId || getUserUniqueId(st as any),
+          source: "real",
+          status: "active",
+          isBlocked: false,
+        } as any)
+      }
+    }
 
     const formattedUsers = allUsers.map((u) => {
       const uId = getUserUniqueId(u)
@@ -187,6 +215,57 @@ export async function DELETE(request: NextRequest) {
   } catch (error: any) {
     return NextResponse.json(
       { success: false, error: error.message || "İstifadəçi silinərkən xəta baş verdi" },
+      { status: 500 }
+    )
+  }
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json()
+    const { users, links } = body
+    let syncedCount = 0
+
+    if (Array.isArray(users)) {
+      for (const u of users) {
+        if (!u || (!u.email && !u.id)) continue
+        saveUser({
+          id: u.id || `student-${Date.now()}`,
+          firstName: u.firstName || "İstifadəçi",
+          lastName: u.lastName || "",
+          fatherName: u.fatherName || "",
+          school: u.school || "",
+          class: u.class || "",
+          email: u.email || `${u.id}@testai.az`,
+          password: u.password || "Test@2026",
+          accountType: u.accountType || u.role || "student",
+          role: u.role || u.accountType || "student",
+          parentId: u.parentId,
+          parentEmail: u.parentEmail,
+          uniqueId: u.uniqueId || getUserUniqueId(u),
+          source: "real",
+          status: u.status || "active",
+          isBlocked: u.isBlocked || false,
+        })
+        syncedCount++
+      }
+    }
+
+    if (Array.isArray(links)) {
+      for (const l of links) {
+        if (!l) continue
+        saveLink(l)
+      }
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: "İstifadəçilər uğurla sinxronlaşdırıldı",
+      count: syncedCount,
+    })
+  } catch (error: any) {
+    return NextResponse.json(
+      { success: false, error: error.message || "Sinxronlaşdırma zamanı xəta baş verdi" },
       { status: 500 }
     )
   }

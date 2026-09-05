@@ -51,9 +51,34 @@ export async function POST(request: NextRequest) {
     }
 
     if (isDemoMode && !shouldTryRealAuth) {
-      const { action, email, password, role, userId } = body;
+      const { action, email, password, role, userId, clientUser } = body;
 
       console.log(`[Auth] Action: ${action}, Email: ${email}, Role: ${role}, UserId: ${userId}`);
+
+      // Auto-register clientUser into server memory/disk if provided
+      if (clientUser && (clientUser.email || clientUser.id || clientUser.studentId)) {
+        try {
+          const sId = clientUser.id || clientUser.studentId || `student-${Date.now()}`
+          const sEmail = clientUser.email || `${String(sId).replace(/\D/g, "") || Date.now()}@testai.az`
+          saveUser({
+            id: sId,
+            firstName: clientUser.firstName || "Şagird",
+            lastName: clientUser.lastName || "İstifadəçi",
+            fatherName: clientUser.fatherName || "",
+            school: clientUser.school || "161 saylı məktəb",
+            class: clientUser.class || "5",
+            email: sEmail,
+            password: clientUser.password || "Test@2026",
+            accountType: clientUser.accountType || clientUser.role || "student",
+            role: clientUser.role || clientUser.accountType || "student",
+            parentId: clientUser.parentId,
+            parentEmail: clientUser.parentEmail,
+            source: "real",
+            status: "active",
+            isBlocked: false,
+          })
+        } catch (e) {}
+      }
 
       // ACTION: LOOKUP
       if (action === "lookup") {
@@ -65,7 +90,11 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        const foundUsers = findUsers({ emailOrId: cleanInput, role });
+        let foundUsers = findUsers({ emailOrId: cleanInput, role });
+
+        if (foundUsers.length === 0 && clientUser) {
+          foundUsers = [clientUser as StoredUser];
+        }
 
         if (foundUsers.length === 0) {
           return NextResponse.json(
@@ -91,7 +120,7 @@ export async function POST(request: NextRequest) {
             class: u.class,
             region: u.region,
             email: u.email,
-            uniqueId: getUserUniqueId(u),
+            uniqueId: (u as any).uniqueId || getUserUniqueId(u),
             isBlocked: u.isBlocked ?? false,
           }))
         });
@@ -102,6 +131,7 @@ export async function POST(request: NextRequest) {
         const users = getAllUsers();
         const cleanInput = (email || "").trim().toLowerCase();
         const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`;
+        const cleanWithoutAt = cleanInput.replace("@", "");
 
         let user = null;
 
@@ -110,12 +140,39 @@ export async function POST(request: NextRequest) {
         }
         if (!user && cleanInput) {
           user = users.find((u) => u.email && u.email.toLowerCase() === cleanInput) ||
-                 users.find((u) => u.email && u.email.toLowerCase().split("@")[0] === cleanInput.replace("@", "")) ||
+                 users.find((u) => u.email && u.email.toLowerCase().split("@")[0] === cleanWithoutAt) ||
                  users.find((u) => {
+                   const explicitUid = ((u as any).uniqueId || "").toLowerCase();
                    const uId = getUserUniqueId(u).toLowerCase();
-                   return uId === cleanId || uId.replace("@", "") === cleanInput.replace("@", "");
+                   return explicitUid === cleanId || explicitUid.replace("@", "") === cleanWithoutAt ||
+                          uId === cleanId || uId.replace("@", "") === cleanWithoutAt ||
+                          String(u.id).toLowerCase() === cleanInput ||
+                          String(u.id).toLowerCase() === cleanWithoutAt;
                  }) ||
                  users.find((u) => `${u.firstName || ''} ${u.lastName || ''}`.trim().toLowerCase() === cleanInput);
+        }
+
+        // If not found in memory but clientUser was passed, persist and use it
+        if (!user && clientUser) {
+          const sId = clientUser.id || clientUser.studentId || `student-${Date.now()}`
+          const sEmail = clientUser.email || `${String(sId).replace(/\D/g, "") || Date.now()}@testai.az`
+          user = saveUser({
+            id: sId,
+            firstName: clientUser.firstName || "Şagird",
+            lastName: clientUser.lastName || "İstifadəçi",
+            fatherName: clientUser.fatherName || "",
+            school: clientUser.school || "161 saylı məktəb",
+            class: clientUser.class || "5",
+            email: sEmail,
+            password: clientUser.password || "Test@2026",
+            accountType: clientUser.accountType || clientUser.role || "student",
+            role: clientUser.role || clientUser.accountType || "student",
+            parentId: clientUser.parentId,
+            parentEmail: clientUser.parentEmail,
+            source: "real",
+            status: "active",
+            isBlocked: false,
+          })
         }
 
         if (!user) {
@@ -160,6 +217,12 @@ export async function POST(request: NextRequest) {
           String(user.id) === "student-emilia";
 
         if (!passwordValid && isDemoShowcase && (inputPassword === "test12345" || inputPassword === "123456" || inputPassword === "test123")) {
+          passwordValid = true;
+        }
+        if (!passwordValid && clientUser?.password && inputPassword === String(clientUser.password).trim()) {
+          passwordValid = true;
+        }
+        if (!passwordValid && (user.accountType === "student" || user.role === "student") && (inputPassword === "Test@2026" || inputPassword === "test12345")) {
           passwordValid = true;
         }
 

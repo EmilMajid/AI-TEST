@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation"
 import { useTheme } from "@/hooks/use-theme"
 import RegionBackground from "@/components/region-background"
 import Image from "next/image"
-import { getDashboardPath } from "@/lib/profile-utils"
+import { getDashboardPath, getUserUniqueId } from "@/lib/profile-utils"
 import { AdBanner } from "@/components/ads/ad-banner"
 
 export default function LoginPage() {
@@ -64,28 +64,63 @@ export default function LoginPage() {
     setError("")
   }
 
+  const findLocalClientUser = (input: string) => {
+    try {
+      const cleanInput = (input || "").trim().toLowerCase()
+      if (!cleanInput) return null
+      const cleanId = cleanInput.startsWith("@") ? cleanInput : `@${cleanInput}`
+      const cleanWithoutAt = cleanInput.replace("@", "")
+
+      const match = (u: any) => {
+        if (!u) return false
+        const uEmail = (u.email || "").toLowerCase()
+        const uUid = (u.uniqueId || "").toLowerCase()
+        const genUid = getUserUniqueId(u).toLowerCase()
+        const uId = String(u.id || "").toLowerCase()
+        const uStudentId = String(u.studentId || "").toLowerCase()
+        const uName = `${u.firstName || ""} ${u.lastName || ""}`.trim().toLowerCase()
+
+        return (
+          uEmail === cleanInput ||
+          uEmail.split("@")[0] === cleanWithoutAt ||
+          uUid === cleanId ||
+          uUid.replace("@", "") === cleanWithoutAt ||
+          genUid === cleanId ||
+          genUid.replace("@", "") === cleanWithoutAt ||
+          uId === cleanInput ||
+          uId === cleanWithoutAt ||
+          uStudentId === cleanInput ||
+          uStudentId === cleanWithoutAt ||
+          uName === cleanInput
+        )
+      }
+
+      const storedUserData = localStorage.getItem("userData")
+      if (storedUserData) {
+        const parsed = JSON.parse(storedUserData)
+        if (match(parsed)) return parsed
+      }
+
+      const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
+      const foundInReg = registeredUsers.find(match)
+      if (foundInReg) return foundInReg
+
+      const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
+      for (const l of allLinks) {
+        if (match(l.student || l)) return l.student || l
+      }
+    } catch (e) {}
+    return null
+  }
+
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
     setError("")
 
     try {
-      // Check if user is known in local storage
-      let clientUser = null
-      try {
-        const cleanInput = formData.email.trim().toLowerCase()
-        const storedUserData = localStorage.getItem("userData")
-        if (storedUserData) {
-          const parsed = JSON.parse(storedUserData)
-          if (parsed.email?.toLowerCase() === cleanInput) {
-            clientUser = parsed
-          }
-        }
-        if (!clientUser) {
-          const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
-          clientUser = registeredUsers.find((u: any) => u.email?.toLowerCase() === cleanInput)
-        }
-      } catch (e) {}
+      // Check if user is known in local storage (searches by email, uniqueId, id, name)
+      const clientUser = findLocalClientUser(formData.email)
 
       // Lookup users by email and role
       const response = await fetch("/api/auth/login", {
@@ -102,6 +137,17 @@ export default function LoginPage() {
       const data = await response.json()
 
       if (!response.ok) {
+        // If server lookup failed but we found a valid client user, use client user directly
+        if (clientUser) {
+          setFoundUsers([clientUser])
+          setFormData((prev) => ({
+            ...prev,
+            userId: clientUser.id || clientUser.studentId,
+            email: clientUser.email || prev.email,
+          }))
+          setStep("password")
+          return
+        }
         setError(data.error || "Xəta baş verdi")
         return
       }
@@ -120,6 +166,14 @@ export default function LoginPage() {
           // Multiple users found, show selection
           setStep("user-selection")
         }
+      } else if (clientUser) {
+        setFoundUsers([clientUser])
+        setFormData((prev) => ({
+          ...prev,
+          userId: clientUser.id || clientUser.studentId,
+          email: clientUser.email || prev.email,
+        }))
+        setStep("password")
       } else {
         setError("İstifadəçi tapılmadı")
       }
@@ -147,21 +201,7 @@ export default function LoginPage() {
     console.log("Starting login attempt...")
 
     try {
-      let clientUser = null
-      try {
-        const cleanInput = formData.email.trim().toLowerCase()
-        const storedUserData = localStorage.getItem("userData")
-        if (storedUserData) {
-          const parsed = JSON.parse(storedUserData)
-          if (parsed.email?.toLowerCase() === cleanInput) {
-            clientUser = parsed
-          }
-        }
-        if (!clientUser) {
-          const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]")
-          clientUser = registeredUsers.find((u: any) => u.email?.toLowerCase() === cleanInput)
-        }
-      } catch (e) {}
+      const clientUser = findLocalClientUser(formData.email) || (formData.userId ? findLocalClientUser(formData.userId) : null)
 
       const response = await fetch("/api/auth/login", {
         method: "POST",

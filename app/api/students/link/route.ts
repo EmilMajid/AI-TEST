@@ -124,8 +124,8 @@ export async function POST(request: NextRequest) {
       const sId = matchedStudent ? matchedStudent.id : `student-${Date.now()}`
       const sPassword = (reqPassword || studentDetails?.password || matchedStudent?.password || "Test@2026").trim()
 
-      // 1. Persist the student user into user-store with parent attribution and password
-      saveUser({
+      // 1. Persist the student user into user-store with parent attribution, uniqueId and password
+      const studentUser: any = {
         id: sId,
         firstName: sFirstName,
         lastName: sLastName,
@@ -138,7 +138,13 @@ export async function POST(request: NextRequest) {
         role: "student",
         parentId: effectiveId,
         parentEmail: effectiveEmail,
-      })
+        uniqueId: sUniqueId,
+        region: "Bakı",
+        source: "real",
+        status: "active",
+        isBlocked: false,
+      }
+      saveUser(studentUser)
 
       // 2. Persist the link into persistent link store (backed by disk)
       const newLink: StudentLink = {
@@ -173,6 +179,7 @@ export async function POST(request: NextRequest) {
             studentEmail: sEmail,
             studentClass: sClass,
             studentSchool: sSchool,
+            uniqueId: sUniqueId,
             linkedAt: newLink.linkedAt,
           },
           credentials: {
