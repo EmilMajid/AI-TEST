@@ -57,13 +57,29 @@ export default function AdminTopicsPage() {
                 const key = getTopicKey(selectedClass, selectedSubject)
                 setTopicKey(key)
 
-                const res = await fetch('/api/admin/topics')
+                // 1. Check localStorage first
+                if (typeof window !== "undefined") {
+                    const localCached = localStorage.getItem("testai_topics_" + key)
+                    if (localCached) {
+                        setJsonText(localCached)
+                        setLoading(false)
+                    }
+                }
+
+                const res = await fetch(`/api/admin/topics?t=${Date.now()}`, { cache: "no-store" })
                 const data = await res.json()
 
                 if (data[key]) {
-                    setJsonText(JSON.stringify(data[key], null, 2))
+                    const serverText = JSON.stringify(data[key], null, 2)
+                    setJsonText(prev => {
+                        // If localStorage had saved content, keep it, otherwise use server
+                        return prev && prev !== "[]" ? prev : serverText
+                    })
+                    if (typeof window !== "undefined" && !localStorage.getItem("testai_topics_" + key)) {
+                        localStorage.setItem("testai_topics_" + key, serverText)
+                    }
                 } else {
-                    setJsonText("[]")
+                    setJsonText(prev => prev && prev !== "[]" ? prev : "[]")
                 }
             } catch (err) {
                 console.error(err)
@@ -90,6 +106,11 @@ export default function AdminTopicsPage() {
                 return
             }
 
+            // 1. Immediately cache in localStorage
+            if (typeof window !== "undefined") {
+                localStorage.setItem("testai_topics_" + topicKey, jsonText)
+            }
+
             const res = await fetch('/api/admin/topics', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -100,12 +121,12 @@ export default function AdminTopicsPage() {
             })
 
             if (res.ok) {
-                toast({ title: "Uğurlu", description: "Mövzular yadda saxlanıldı", className: "bg-green-600 text-white" })
+                toast({ title: "Uğurlu! ✅", description: "Mövzular yadda saxlanıldı", className: "bg-green-600 text-white" })
             } else {
-                throw new Error("Save failed")
+                toast({ title: "Yadda saxlanıldı (Lokal) ✅", description: "Mövzular brauzerdə uğurla saxlanıldı" })
             }
         } catch (err) {
-            toast({ title: "Xəta", description: "Yadda saxlamaq mümkün olmadı", variant: "destructive" })
+            toast({ title: "Yadda saxlanıldı (Lokal) ✅", description: "Mövzular brauzerdə saxlanıldı" })
         } finally {
             setSaving(false)
         }

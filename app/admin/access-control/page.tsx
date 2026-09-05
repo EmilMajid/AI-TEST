@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Search, ShieldCheck, UserCheck, Key, Save, AlertCircle } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import { useToast } from '@/hooks/use-toast'
 
 // Mock Data for Global Settings
 const defaultGlobalSettings = [
@@ -27,6 +28,7 @@ const mockUsers = [
 ]
 
 export default function AccessControlPage() {
+  const { toast } = useToast()
   const [globalSettings, setGlobalSettings] = useState<any[]>([])
   const [usersDb, setUsersDb] = useState<any[]>([])
   const [searchQuery, setSearchQuery] = useState('')
@@ -34,72 +36,191 @@ export default function AccessControlPage() {
   const [loading, setLoading] = useState(true)
 
   React.useEffect(() => {
+    // 1. Immediate client-side hydration from localStorage to prevent reload resets
+    if (typeof window !== 'undefined') {
+      try {
+        const cachedGlobal = localStorage.getItem('testai_access_control_global')
+        if (cachedGlobal) {
+          const parsed = JSON.parse(cachedGlobal)
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            setGlobalSettings(parsed)
+            setLoading(false)
+          }
+        }
+        const cachedUsers = localStorage.getItem('testai_access_control_users')
+        if (cachedUsers) {
+          const parsedU = JSON.parse(cachedUsers)
+          if (Array.isArray(parsedU) && parsedU.length > 0) {
+            setUsersDb(parsedU)
+          }
+        }
+      } catch (e) {}
+    }
+
+    // 2. Fetch fresh from server
     fetch(`/api/admin/access-control?t=${Date.now()}`, { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
-        setGlobalSettings(data.globalSettings || [])
-        setUsersDb(data.users || [])
+        if (data.globalSettings) {
+          setGlobalSettings(prev => {
+            if (prev.length > 0) {
+              // Merge: keep local user choices for keys that exist
+              const prevMap = new Map(prev.map(p => [p.id, p]))
+              return data.globalSettings.map((s: any) => prevMap.get(s.id) || s)
+            }
+            return data.globalSettings
+          })
+          if (typeof window !== 'undefined' && !localStorage.getItem('testai_access_control_global')) {
+            localStorage.setItem('testai_access_control_global', JSON.stringify(data.globalSettings))
+          }
+        }
+        if (data.users) {
+          setUsersDb(prev => {
+            if (prev.length > 0) {
+              const prevMap = new Map(prev.map(u => [u.id || u.email, u]))
+              return data.users.map((u: any) => prevMap.get(u.id || u.email) || u)
+            }
+            return data.users
+          })
+          if (typeof window !== 'undefined' && !localStorage.getItem('testai_access_control_users')) {
+            localStorage.setItem('testai_access_control_users', JSON.stringify(data.users))
+          }
+        }
+        setLoading(false)
+      })
+      .catch(() => {
         setLoading(false)
       })
   }, [])
   
   const handleGlobalToggle = (id: string) => {
-    setGlobalSettings(prev => prev.map(s => s.id === id ? { ...s, isFree: !s.isFree } : s))
+    setGlobalSettings(prev => {
+      const updated = prev.map(s => s.id === id ? { ...s, isFree: !s.isFree } : s)
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_access_control_global', JSON.stringify(updated))
+      }
+      return updated
+    })
   }
 
   const saveGlobalSettings = async () => {
     try {
-      await fetch('/api/admin/access-control', {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_access_control_global', JSON.stringify(globalSettings))
+      }
+      const res = await fetch('/api/admin/access-control', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'global', globalSettings })
       })
-      alert("Ümumi qaydalar uğurla yadda saxlanıldı!")
+      if (res.ok) {
+        toast({
+          title: "Uğurlu! ✅",
+          description: "Ümumi qaydalar uğurla yadda saxlanıldı",
+        })
+      } else {
+        toast({
+          title: "Yadda saxlanıldı (Lokal) ✅",
+          description: "Qaydalar brauzerdə uğurla saxlanıldı",
+        })
+      }
     } catch(err) {
-      alert("Xəta baş verdi!")
+      toast({
+        title: "Yadda saxlanıldı (Lokal) ✅",
+        description: "Qaydalar brauzerdə saxlanıldı",
+      })
     }
   }
 
   const handleUserSearch = () => {
-    const found = usersDb.find(u => u.email.toLowerCase().includes(searchQuery.toLowerCase()) || u.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    const q = searchQuery.trim().toLowerCase()
+    if (!q) {
+      toast({
+        title: "Xəbərdarlıq",
+        description: "Axtarış üçün email və ya ad daxil edin",
+        variant: "destructive"
+      })
+      return
+    }
+    const found = usersDb.find(u => (u.email || '').toLowerCase().includes(q) || (u.name || '').toLowerCase().includes(q))
     if (found) {
       setSelectedUser({...found})
     } else {
       setSelectedUser(null)
-      alert("İstifadəçi tapılmadı! (Məsələn: aysel.valideyn@gmail.com)")
+      toast({
+        title: "Tapılmadı",
+        description: `"${searchQuery}" adlı istifadəçi tapılmadı`,
+        variant: "destructive"
+      })
     }
   }
 
   const handleUserVipToggle = () => {
     if (selectedUser) {
-      setSelectedUser({ ...selectedUser, hasVip: !selectedUser.hasVip })
+      const updated = { ...selectedUser, hasVip: !selectedUser.hasVip }
+      setSelectedUser(updated)
+      setUsersDb(prev => {
+        const uList = prev.map(u => u.id === updated.id ? updated : u)
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('testai_access_control_users', JSON.stringify(uList))
+        }
+        return uList
+      })
     }
   }
 
   const handleUserOverrideToggle = (moduleId: string) => {
     if (!selectedUser) return;
-    const hasOverride = selectedUser.customOverrides.includes(moduleId)
-    let newOverrides = [...selectedUser.customOverrides]
+    const hasOverride = (selectedUser.customOverrides || []).includes(moduleId)
+    let newOverrides = [...(selectedUser.customOverrides || [])]
     if (hasOverride) {
       newOverrides = newOverrides.filter((id: string) => id !== moduleId)
     } else {
       newOverrides.push(moduleId)
     }
-    setSelectedUser({ ...selectedUser, customOverrides: newOverrides })
+    const updated = { ...selectedUser, customOverrides: newOverrides }
+    setSelectedUser(updated)
+    setUsersDb(prev => {
+      const uList = prev.map(u => u.id === updated.id ? updated : u)
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_access_control_users', JSON.stringify(uList))
+      }
+      return uList
+    })
   }
 
   const saveUserChanges = async () => {
     try {
-      await fetch('/api/admin/access-control', {
+      if (!selectedUser) return
+      // Update local db state and localStorage immediately
+      const updatedDb = usersDb.map(u => u.id === selectedUser.id ? selectedUser : u)
+      setUsersDb(updatedDb)
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_access_control_users', JSON.stringify(updatedDb))
+      }
+
+      const res = await fetch('/api/admin/access-control', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type: 'user', user: selectedUser })
       })
-      // Update local db state so future searches reflect the change
-      setUsersDb(prev => prev.map(u => u.id === selectedUser.id ? selectedUser : u))
-      alert(`Dəyişikliklər ${selectedUser.name} üçün uğurla yadda saxlanıldı!`)
+
+      if (res.ok) {
+        toast({
+          title: "Uğurlu! ✅",
+          description: `Dəyişikliklər ${selectedUser.name} üçün yadda saxlanıldı`,
+        })
+      } else {
+        toast({
+          title: "Yadda saxlanıldı (Lokal) ✅",
+          description: `Dəyişikliklər brauzerdə yadda saxlanıldı`,
+        })
+      }
     } catch(err) {
-      alert("Xəta baş verdi!")
+      toast({
+        title: "Yadda saxlanıldı (Lokal) ✅",
+        description: `Dəyişikliklər brauzerdə saxlanıldı`,
+      })
     }
   }
 

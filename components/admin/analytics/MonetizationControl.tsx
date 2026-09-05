@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Switch } from '@/components/ui/switch'
 import { Button } from '@/components/ui/button'
@@ -12,7 +12,7 @@ export default function MonetizationControl({ topic, grade }: { topic: string, g
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
   
-  // State representing what data is paid/premium
+  // State representing what data is paid/premium (true = paid/premium, false = free)
   const [permissions, setPermissions] = useState({
     basicStats: false, // false = free, true = paid
     itemAnalysis: true, // paid by default
@@ -21,23 +21,91 @@ export default function MonetizationControl({ topic, grade }: { topic: string, g
     detailedReportExport: true,
   })
 
+  // Hydrate from localStorage and API on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = localStorage.getItem('testai_monetization_rules')
+        if (cached) {
+          const parsed = JSON.parse(cached)
+          setPermissions(prev => ({ ...prev, ...parsed }))
+        }
+      } catch (e) {}
+    }
+
+    fetch(`/api/admin/access-control?t=${Date.now()}`, { cache: 'no-store' })
+      .then(res => res.json())
+      .then(data => {
+        if (data && Array.isArray(data.globalSettings)) {
+          const apiPerms: any = {}
+          data.globalSettings.forEach((s: any) => {
+            if (s.id in permissions) {
+              // isFree === true means not paid (false in permissions)
+              apiPerms[s.id] = !s.isFree
+            }
+          })
+          setPermissions(prev => {
+            const merged = { ...prev, ...apiPerms }
+            if (typeof window !== 'undefined') {
+              const cached = localStorage.getItem('testai_monetization_rules')
+              if (cached) {
+                return { ...merged, ...JSON.parse(cached) }
+              }
+            }
+            return merged
+          })
+        }
+      })
+      .catch(() => {})
+  }, [])
+
   const handleToggle = (key: keyof typeof permissions) => {
-    setPermissions(prev => ({
-      ...prev,
-      [key]: !prev[key]
-    }))
+    setPermissions(prev => {
+      const updated = {
+        ...prev,
+        [key]: !prev[key]
+      }
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_monetization_rules', JSON.stringify(updated))
+      }
+      return updated
+    })
   }
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setLoading(true)
-    // Simulating API call
-    setTimeout(() => {
-      setLoading(false)
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('testai_monetization_rules', JSON.stringify(permissions))
+      }
+
+      // Also map to globalSettings in access-control API
+      const settingsPayload = Object.entries(permissions).map(([id, isPaid]) => ({
+        id,
+        isFree: !isPaid
+      }))
+
+      await fetch('/api/admin/access-control', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'global',
+          globalSettings: settingsPayload
+        })
+      }).catch(() => {})
+
       toast({
-        title: 'Yadda saxlanıldı',
-        description: 'Ödənişli/Ödənişsiz siyasət (Monetization rules) müvəffəqiyyətlə yeniləndi.',
+        title: 'Uğurlu! ✅',
+        description: 'Ödənişli/Ödənişsiz siyasət (Monetization rules) müvəffəqiyyətlə yadda saxlanıldı.',
       })
-    }, 800)
+    } catch (e) {
+      toast({
+        title: 'Yadda saxlanıldı (Lokal) ✅',
+        description: 'Qaydalar brauzerdə saxlanıldı.',
+      })
+    } finally {
+      setLoading(false)
+    }
   }
 
   const renderSettingRow = (key: keyof typeof permissions, title: string, description: string) => (

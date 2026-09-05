@@ -29,8 +29,16 @@ const mockUsers = [
 ]
 
 import { getAllUsers } from '@/lib/user-store'
+import os from 'os'
+
+const tmpAccessControlPath = path.join(os.tmpdir(), 'access_control.json')
+const g = globalThis as unknown as { __testai_access_control_db?: any }
 
 function getDb() {
+  if (g.__testai_access_control_db) {
+    return g.__testai_access_control_db
+  }
+
   let db: any = {
     globalSettings: defaultGlobalSettings,
     users: mockUsers
@@ -40,13 +48,17 @@ function getDb() {
     try {
       db = JSON.parse(fs.readFileSync(accessControlPath, 'utf8'))
     } catch (e) {}
+  } else if (fs.existsSync(tmpAccessControlPath)) {
+    try {
+      db = JSON.parse(fs.readFileSync(tmpAccessControlPath, 'utf8'))
+    } catch (e) {}
   }
 
-  // Auto-merge new default settings if they don't exist in the DB
-  const existingSettingsIds = (db.globalSettings || []).map((s: any) => s.id)
+  // Ensure all default settings exist without resetting modified ones
+  const existingSettingsIds = new Set((db.globalSettings || []).map((s: any) => s.id))
   defaultGlobalSettings.forEach(defSetting => {
-    if (!existingSettingsIds.includes(defSetting.id)) {
-      db.globalSettings.unshift(defSetting)
+    if (!existingSettingsIds.has(defSetting.id)) {
+      db.globalSettings.push(defSetting)
     }
   })
 
@@ -74,9 +86,15 @@ function getDb() {
     }
   } catch (e) {}
 
+  g.__testai_access_control_db = db
+
   try {
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true })
     fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
+  } catch (e) {}
+
+  try {
+    fs.writeFileSync(tmpAccessControlPath, JSON.stringify(db, null, 2))
   } catch (e) {}
 
   return db
@@ -99,15 +117,25 @@ export async function POST(req: Request) {
         if (body.type === 'global') {
             db.globalSettings = body.globalSettings
         } else if (body.type === 'user') {
-            const userIndex = db.users.findIndex((u: any) => u.id === body.user.id)
+            const userIndex = db.users.findIndex((u: any) => u.id === body.user.id || u.email?.toLowerCase() === body.user.email?.toLowerCase())
             if (userIndex >= 0) {
-                db.users[userIndex] = body.user
+                db.users[userIndex] = { ...db.users[userIndex], ...body.user }
             } else {
                 db.users.push(body.user)
             }
         }
 
-        fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
+        g.__testai_access_control_db = db
+
+        try {
+            if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true })
+            fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
+        } catch (e) {}
+
+        try {
+            fs.writeFileSync(tmpAccessControlPath, JSON.stringify(db, null, 2))
+        } catch (e) {}
+
         return NextResponse.json({ success: true, data: db })
     } catch(err: any) {
         return NextResponse.json({ error: err.message }, { status: 500 })

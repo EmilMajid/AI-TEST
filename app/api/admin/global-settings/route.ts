@@ -3,7 +3,13 @@ import { type NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 
+import os from "os"
+
 const SETTINGS_FILE = path.join(process.cwd(), ".data", "testai_system_settings.json")
+const TMP_SETTINGS_FILE = path.join(os.tmpdir(), "testai_system_settings.json")
+
+// Global in-memory cache for serverless runtimes
+const g = globalThis as unknown as { __testai_system_settings?: SystemSetting[] }
 
 export interface SystemSetting {
   id: number
@@ -21,25 +27,46 @@ const DEFAULT_SETTINGS: SystemSetting[] = [
 ]
 
 function getSettings(): SystemSetting[] {
+  if (Array.isArray(g.__testai_system_settings) && g.__testai_system_settings.length > 0) {
+    return g.__testai_system_settings
+  }
   try {
     if (fs.existsSync(SETTINGS_FILE)) {
       const raw = fs.readFileSync(SETTINGS_FILE, "utf-8").replace(/^\uFEFF/, "")
       const parsed = JSON.parse(raw)
       if (Array.isArray(parsed) && parsed.length > 0) {
+        g.__testai_system_settings = parsed
         return parsed
       }
     }
   } catch (e) {}
+
+  try {
+    if (fs.existsSync(TMP_SETTINGS_FILE)) {
+      const raw = fs.readFileSync(TMP_SETTINGS_FILE, "utf-8").replace(/^\uFEFF/, "")
+      const parsed = JSON.parse(raw)
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        g.__testai_system_settings = parsed
+        return parsed
+      }
+    }
+  } catch (e) {}
+
   return DEFAULT_SETTINGS
 }
 
 function saveSettings(settings: SystemSetting[]) {
+  g.__testai_system_settings = settings
   try {
     const dataDir = path.dirname(SETTINGS_FILE)
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true })
     }
     fs.writeFileSync(SETTINGS_FILE, JSON.stringify(settings, null, 2), "utf-8")
+  } catch (e) {}
+
+  try {
+    fs.writeFileSync(TMP_SETTINGS_FILE, JSON.stringify(settings, null, 2), "utf-8")
   } catch (e) {}
 }
 

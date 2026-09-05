@@ -356,13 +356,18 @@ export default function ParentDashboard() {
       let links = data.success && data.links ? data.links.filter((s: any) => !isTargetAyaz(s)) : []
 
       if (links.length > 0) {
-        // Merge server links with localLinks, deduplicating strictly by name / email
+        // Merge server links with localLinks: put server links first, then let localLinks (with user edits) override
         const linkMap = new Map<string, LinkedStudent>()
-        for (const l of localLinks) {
-          linkMap.set(getDedupeKey(l), l)
-        }
         for (const l of links) {
           linkMap.set(getDedupeKey(l), l)
+        }
+        for (const l of localLinks) {
+          const key = getDedupeKey(l)
+          if (linkMap.has(key)) {
+            linkMap.set(key, { ...linkMap.get(key), ...l })
+          } else {
+            linkMap.set(key, l)
+          }
         }
         const merged = Array.from(linkMap.values())
         setLinkedStudents(merged)
