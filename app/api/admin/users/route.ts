@@ -142,13 +142,6 @@ export async function GET() {
             )
           }
         }
-        if (!p && u.email && u.email.toLowerCase().includes("rzayev")) {
-          p = allUsers.find(
-            (parent) =>
-              parent.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
-              (parent.firstName?.toLowerCase() === "rüfət" && parent.lastName?.toLowerCase() === "rzayev")
-          )
-        }
 
         if (p) {
           linkedParent = {
@@ -161,21 +154,28 @@ export async function GET() {
       } else if (userRole === "parent") {
         const children = allUsers.filter((c) => {
           if (c.role !== "student" && c.accountType !== "student") return false
-          if ((c as any).parentId && (String((c as any).parentId) === String(u.id) || (String((c as any).parentId) === "parent-rufat" && u.email === "r.h.rzayev@gmail.com"))) return true
-          if ((c as any).parentEmail && u.email && (c as any).parentEmail.toLowerCase() === u.email.toLowerCase()) return true
+
+          // Real valideynə demo/mock şagird əlaqələndirilə BİLMƏZ!
+          if (u.source === "real" && (c.source === "mock" || c.email?.endsWith("@test.com") || c.email?.endsWith("@example.com"))) {
+            return false
+          }
+
+          // 1. Şagirdin profilindəki birbaşa parentId
+          if ((c as any).parentId && (String((c as any).parentId) === String(u.id) || (String((c as any).parentId) === "parent-rufat" && u.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
+            return true
+          }
+          // 2. Şagirdin profilindəki birbaşa parentEmail
+          if ((c as any).parentEmail && u.email && (c as any).parentEmail.toLowerCase() === u.email.toLowerCase()) {
+            return true
+          }
+          // 3. Supabase və ya rəsmi ParentStudentLink qeydi
           const l = allLinks.find(
             (link) =>
               (String(link.parentId) === String(u.id) || (u.email && link.parentEmail?.toLowerCase() === u.email.toLowerCase())) &&
               (String(link.studentId) === String(c.id) || (c.email && link.student?.email?.toLowerCase() === c.email.toLowerCase()))
           )
           if (l) return true
-          if (
-            (u.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
-              (u.firstName?.toLowerCase() === "rüfət" && u.lastName?.toLowerCase() === "rzayev")) &&
-            (c.email?.toLowerCase().includes("rzayev") || c.lastName?.toLowerCase() === "rzayev")
-          ) {
-            return true
-          }
+
           return false
         })
 
@@ -190,7 +190,7 @@ export async function GET() {
               name: `${c.firstName} ${c.lastName}`.trim(),
               email: c.email,
               class: c.class || "",
-              school: c.school || "309 saylı məktəb",
+              school: c.school || "",
             })
           }
         }

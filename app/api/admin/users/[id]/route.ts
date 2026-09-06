@@ -258,40 +258,33 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
                 parent = allUsers.find(p => String(p.id) === String(l.parentId) || (l.parentEmail && p.email?.toLowerCase() === l.parentEmail.toLowerCase()))
             }
         }
-        if (!parent && (user.email?.toLowerCase().includes("rzayev") || user.lastName?.toLowerCase() === "rzayev")) {
-            parent = allUsers.find(p => p.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (p.firstName?.toLowerCase() === "rüfət" && p.lastName?.toLowerCase() === "rzayev"))
-        }
-        if (!parent && (
-            user.email?.toLowerCase() === "inci.mecidzade@test.com" || 
-            user.email?.toLowerCase() === "emilia.mecidzade@test.com" ||
-            user.id === "student-inci" ||
-            user.id === "student-emilia" ||
-            (user.lastName?.toLowerCase() === "məcidzadə")
-        )) {
-            parent = allUsers.find(p => p.email?.toLowerCase() === "emil.mecidov@example.com" || p.id === "parent-emil")
-        }
-
         const teacher = allUsers.find(u => u.id === (user as any).teacherId)
         if (parent) relations.parent = parent
         if (teacher) relations.teacher = teacher
     } else if (userRole === 'parent') {
         const children = allUsers.filter(c => {
             if (c.role !== "student" && c.accountType !== "student") return false
-            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (String((c as any).parentId) === "parent-rufat" && user.email === "r.h.rzayev@gmail.com"))) return true
-            if ((c as any).parentEmail && user.email && (c as any).parentEmail.toLowerCase() === user.email.toLowerCase()) return true
+
+            // Real valideynə demo/mock şagird əlaqələndirilə BİLMƏZ!
+            if (user.source === "real" && (c.source === "mock" || c.email?.endsWith("@test.com") || c.email?.endsWith("@example.com"))) {
+                return false
+            }
+
+            // 1. Şagirdin profilindəki birbaşa parentId
+            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (String((c as any).parentId) === "parent-rufat" && user.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
+                return true
+            }
+            // 2. Şagirdin profilindəki birbaşa parentEmail
+            if ((c as any).parentEmail && user.email && (c as any).parentEmail.toLowerCase() === user.email.toLowerCase()) {
+                return true
+            }
+            // 3. Supabase və ya rəsmi ParentStudentLink qeydi
             const l = allLinks.find(
                 link => (String(link.parentId) === String(user.id) || (supabaseUser?.id && String(link.parentId) === String(supabaseUser.id)) || (user.email && link.parentEmail?.toLowerCase() === user.email.toLowerCase())) &&
                 (String(link.studentId) === String(c.id) || (c.email && link.student?.email?.toLowerCase() === c.email.toLowerCase()))
             )
             if (l) return true
-            if ((user.email?.toLowerCase() === "r.h.rzayev@gmail.com" || (user.firstName?.toLowerCase() === "rüfət" && user.lastName?.toLowerCase() === "rzayev")) &&
-                (c.email?.toLowerCase().includes("rzayev") || c.lastName?.toLowerCase() === "rzayev")) {
-                return true
-            }
-            if ((user.email?.toLowerCase() === "emil.mecidov@example.com" || user.id === "parent-emil" || (user.firstName?.toLowerCase() === "emil" && user.lastName?.toLowerCase() === "məcidov")) &&
-                (c.email?.toLowerCase() === "inci.mecidzade@test.com" || c.email?.toLowerCase() === "emilia.mecidzade@test.com" || c.id === "student-inci" || c.id === "student-emilia" || (c.lastName?.toLowerCase() === "məcidzadə"))) {
-                return true
-            }
+
             return false
         })
         const childDedup = new Map<string, any>()
