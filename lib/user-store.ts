@@ -213,11 +213,13 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     map.set(key, { ...map.get(key), ...u })
   }
 
-  // 5. Rüfət + Ayaz sabit fallback (real istifadəçilər)
+  // 5. Rüfət + Ayaz + Araz sabit fallback (real istifadəçilər)
   const rufatKey = "r.h.rzayev@gmail.com"
   const ayazKey = "ayaz.rzayev.309@testai.az"
+  const arazKey = "araz.rzayev.309@testai.az"
   let rufatUser = map.get(rufatKey) || map.get("parent-rufat")
   let ayazUser = map.get(ayazKey) || map.get("student-ayaz-309")
+  let arazUser = map.get(arazKey) || map.get("student-araz-309")
 
   if (!rufatUser && !deletedUserIds.has(rufatKey)) {
     rufatUser = {
@@ -227,7 +229,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       accountType: "parent",
       firstName: "Rüfət",
       lastName: "Rzayev",
-      fatherName: "Həsən",
+      fatherName: "Hüseynağa",
       school: "309 saylı məktəb",
       region: "Bakı",
       role: "parent",
@@ -239,6 +241,9 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
   } else if (rufatUser) {
     if (!rufatUser.source) rufatUser.source = "real"
     rufatUser.password = "Rufat-141181"
+    if (!rufatUser.fatherName || rufatUser.fatherName === "Həsən") {
+      rufatUser.fatherName = "Hüseynağa"
+    }
   }
 
   if (!ayazUser && !deletedUserIds.has(ayazKey)) {
@@ -268,6 +273,35 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     if (!ayazUser.source) ayazUser.source = "real"
     if (ayazUser.class === "5") ayazUser.class = "8"
     ayazUser.password = "Ayaz-020813"
+  }
+
+  if (!arazUser && !deletedUserIds.has(arazKey)) {
+    arazUser = {
+      id: "student-araz-309",
+      email: "araz.rzayev.309@testai.az",
+      password: "Araz-141115",
+      accountType: "student",
+      firstName: "Araz",
+      lastName: "Rzayev",
+      fatherName: "Rüfət",
+      school: "309 saylı məktəb",
+      class: "6",
+      region: "Bakı",
+      role: "student",
+      parentId: rufatUser?.id || "parent-rufat",
+      parentEmail: "r.h.rzayev@gmail.com",
+      status: "active",
+      isBlocked: false,
+      source: "real",
+    }
+    map.set(arazKey, arazUser)
+  } else if (arazUser && rufatUser) {
+    arazUser.parentId = rufatUser.id
+    arazUser.parentEmail = rufatUser.email
+    if (!arazUser.fatherName) arazUser.fatherName = "Rüfət"
+    if (!arazUser.source) arazUser.source = "real"
+    if (!arazUser.class) arazUser.class = "6"
+    arazUser.password = "Araz-141115"
   }
 
   const allList = Array.from(map.values())

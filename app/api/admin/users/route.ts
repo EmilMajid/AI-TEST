@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk } from "@/lib/user-store"
+import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET() {
@@ -8,20 +8,97 @@ export async function GET() {
     const allUsers = getAllUsers()
     const allLinks = loadLinksFromDisk()
 
+    // 1. Supabase User və ParentStudentLink cədvəllərindən real məlumatları yüklə və sinxronlaşdır
+    try {
+      if (supabaseAdmin) {
+        const { data: suUsers } = await supabaseAdmin.from("User").select("*")
+        if (suUsers && suUsers.length > 0) {
+          for (const su of suUsers) {
+            const emailKey = (su.email || "").toLowerCase().trim()
+            const existing = allUsers.find(
+              (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(su.id)
+            )
+            if (existing) {
+              if (su.firstName) existing.firstName = su.firstName
+              if (su.lastName) existing.lastName = su.lastName
+              if (su.fatherName) existing.fatherName = su.fatherName
+              if (su.school) existing.school = su.school
+              if (su.class) existing.class = String(su.class)
+              if (su.region) existing.region = su.region
+              if (su.accountType) {
+                existing.accountType = su.accountType
+                existing.role = su.accountType
+              }
+              existing.source = su.accountType === "admin" ? "admin" : "real"
+            } else {
+              allUsers.push({
+                id: su.id,
+                email: su.email,
+                firstName: su.firstName || "",
+                lastName: su.lastName || "",
+                fatherName: su.fatherName || "",
+                school: su.school || "",
+                class: su.class ? String(su.class) : undefined,
+                region: su.region || "Bakı",
+                accountType: su.accountType || "student",
+                role: su.accountType || "student",
+                status: "active",
+                isBlocked: false,
+                source: su.accountType === "admin" ? "admin" : "real",
+              })
+            }
+          }
+        }
+
+        const { data: suLinks } = await supabaseAdmin.from("ParentStudentLink").select("*")
+        if (suLinks && suLinks.length > 0) {
+          for (const sl of suLinks) {
+            const parent = allUsers.find((u) => String(u.id) === String(sl.parentId))
+            const student = allUsers.find((u) => String(u.id) === String(sl.studentId))
+            if (
+              !allLinks.some(
+                (l) =>
+                  (String(l.parentId) === String(sl.parentId) || (parent?.email && l.parentEmail?.toLowerCase() === parent.email.toLowerCase())) &&
+                  (String(l.studentId) === String(sl.studentId) || (student?.email && l.student?.email?.toLowerCase() === student.email.toLowerCase()))
+              )
+            ) {
+              allLinks.push({
+                parentId: sl.parentId,
+                parentEmail: parent?.email,
+                studentId: sl.studentId,
+                student: student
+                  ? {
+                      id: student.id,
+                      email: student.email,
+                      firstName: student.firstName,
+                      lastName: student.lastName,
+                      class: student.class,
+                      school: student.school,
+                    }
+                  : undefined,
+              })
+            }
+          }
+        }
+      }
+    } catch (sbErr) {
+      console.error("Supabase fetch error in admin users:", sbErr)
+    }
+
     // Ensure all students from parent links are represented in allUsers
     for (const link of allLinks) {
       if (!link.student) continue
       const st = link.student
       const sId = String(st.id || link.studentId)
       const sEmail = (st.email || "").toLowerCase()
-      const exists = allUsers.some(u => String(u.id) === sId || (u.email && u.email.toLowerCase() === sEmail))
+      const exists = allUsers.some((u) => String(u.id) === sId || (u.email && u.email.toLowerCase() === sEmail))
       if (!exists) {
         allUsers.push({
           id: sId,
           firstName: st.firstName || "Şagird",
           lastName: st.lastName || "İstifadəçi",
           fatherName: st.fatherName || "",
-          school: st.school || "161 saylı məktəb",
+          school: st.school || "309 saylı məktəb",
           class: st.class || "5",
           email: st.email || `${sId}@testai.az`,
           accountType: "student",
@@ -65,11 +142,7 @@ export async function GET() {
             )
           }
         }
-        if (
-          !p &&
-          (u.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" ||
-            (u.firstName?.toLowerCase() === "ayaz" && u.lastName?.toLowerCase() === "rzayev"))
-        ) {
+        if (!p && u.email && u.email.toLowerCase().includes("rzayev")) {
           p = allUsers.find(
             (parent) =>
               parent.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
@@ -88,7 +161,7 @@ export async function GET() {
       } else if (userRole === "parent") {
         const children = allUsers.filter((c) => {
           if (c.role !== "student" && c.accountType !== "student") return false
-          if ((c as any).parentId && String((c as any).parentId) === String(u.id)) return true
+          if ((c as any).parentId && (String((c as any).parentId) === String(u.id) || (String((c as any).parentId) === "parent-rufat" && u.email === "r.h.rzayev@gmail.com"))) return true
           if ((c as any).parentEmail && u.email && (c as any).parentEmail.toLowerCase() === u.email.toLowerCase()) return true
           const l = allLinks.find(
             (link) =>
@@ -99,8 +172,7 @@ export async function GET() {
           if (
             (u.email?.toLowerCase() === "r.h.rzayev@gmail.com" ||
               (u.firstName?.toLowerCase() === "rüfət" && u.lastName?.toLowerCase() === "rzayev")) &&
-            (c.email?.toLowerCase() === "ayaz.rzayev.309@testai.az" ||
-              (c.firstName?.toLowerCase() === "ayaz" && c.lastName?.toLowerCase() === "rzayev"))
+            (c.email?.toLowerCase().includes("rzayev") || c.lastName?.toLowerCase() === "rzayev")
           ) {
             return true
           }
@@ -109,15 +181,15 @@ export async function GET() {
 
         const childDedup = new Map<string, any>()
         for (const c of children) {
-          const cName = `${c.firstName || ""} ${c.lastName || ""}`.trim().toLowerCase().replace(/\s+/g, " ")
           const cEmail = (c.email || "").trim().toLowerCase()
-          const key = cName ? `name:${cName}` : (cEmail ? `email:${cEmail}` : `id:${c.id}`)
-          if (!childDedup.has(key) || c.class === "8") {
+          const cName = `${c.firstName || ""} ${c.lastName || ""}`.trim().toLowerCase().replace(/\s+/g, " ")
+          const key = cEmail || (cName ? `name:${cName}` : `id:${c.id}`)
+          if (!childDedup.has(key)) {
             childDedup.set(key, {
               id: c.id,
               name: `${c.firstName} ${c.lastName}`.trim(),
               email: c.email,
-              class: c.class || "8",
+              class: c.class || "",
               school: c.school || "309 saylı məktəb",
             })
           }
