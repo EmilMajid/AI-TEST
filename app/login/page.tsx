@@ -282,7 +282,7 @@ export default function LoginPage() {
 
   return (
     <RegionBackground region={theme.region} theme={theme.colorScheme}>
-      <div className="min-h-screen py-8 px-4 flex justify-center items-center">
+      <div className="min-h-screen py-5 sm:py-8 px-3.5 sm:px-4 flex justify-center items-center">
         <div className="w-full max-w-[1550px] mx-auto flex justify-center items-start gap-6">
           
           {/* Sol Reklam Bloku (Giriş səhifəsinin sol boşluğu) */}
@@ -373,16 +373,18 @@ export default function LoginPage() {
                       <Input
                         id="email"
                         type="text"
+                        autoComplete="username"
+                        inputMode={formData.role === "admin" ? "text" : "email"}
                         required
                         value={formData.email}
                         onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
                         placeholder={formData.role === "admin" ? "admin@edu.az və ya admin" : "nümunə@email.com və ya @gunay.rzayeva.161"}
                         disabled={isLoading}
-                        className="text-base p-5 mt-1 rounded-xl font-mono"
+                        className="h-12 text-base px-4 mt-1 rounded-xl font-mono"
                         autoFocus
                       />
                     </div>
-                    <Button type="submit" className={`w-full py-5 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
+                    <Button type="submit" className={`w-full h-12 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
                       {isLoading ? "Yoxlanılır..." : "Davam et"}
                     </Button>
                   </form>
@@ -427,16 +429,17 @@ export default function LoginPage() {
                       <Input
                         id="password"
                         type="password"
+                        autoComplete="current-password"
                         required
                         value={formData.password}
                         onChange={(e) => setFormData((prev) => ({ ...prev, password: e.target.value }))}
                         placeholder="••••••••"
                         disabled={isLoading}
-                        className="text-base p-5 mt-1 rounded-xl"
+                        className="h-12 text-base px-4 mt-1 rounded-xl"
                         autoFocus
                       />
                     </div>
-                    <Button type="submit" className={`w-full py-5 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
+                    <Button type="submit" className={`w-full h-12 text-base font-bold rounded-xl ${themeClasses.primary}`} disabled={isLoading}>
                       {isLoading ? "Giriş edilir..." : "Giriş et"}
                     </Button>
                   </form>

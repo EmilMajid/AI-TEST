@@ -317,7 +317,7 @@ export default function RegisterPage() {
 
   return (
     <RegionBackground region={selectedRegion} theme={theme.colorScheme}>
-      <div className="min-h-screen py-8 px-3 sm:px-6 flex justify-center items-start">
+      <div className="min-h-screen py-4 sm:py-8 px-3 sm:px-6 flex justify-center items-start">
         <div className="w-full max-w-[1600px] mx-auto flex justify-center items-start gap-6">
           
           {/* Sol Reklam Bloku */}
@@ -331,50 +331,48 @@ export default function RegisterPage() {
           </aside>
 
           {/* Mərkəzi Qeydiyyat Sahəsi */}
-          <main className="w-full flex-1 max-w-4xl space-y-6">
+          <main className="w-full flex-1 max-w-4xl space-y-4 sm:space-y-6">
             {/* Header */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/90 backdrop-blur-sm p-4 sm:p-5 rounded-2xl border border-white/60 shadow-sm">
-              <Link href="/" className={`flex items-center ${themeClasses.text} hover:opacity-80 font-semibold text-sm`}>
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Ana səhifə
+            <div className="flex items-center justify-between gap-2 bg-white/90 backdrop-blur-sm px-3.5 py-2.5 sm:p-5 rounded-2xl border border-white/60 shadow-sm">
+              <Link href="/" className={`flex items-center ${themeClasses.text} hover:opacity-80 font-semibold text-xs sm:text-sm`}>
+                <ArrowLeft className="h-4 w-4 mr-1 sm:mr-2 shrink-0" />
+                <span>Ana səhifə</span>
               </Link>
 
-              <div className="flex items-center gap-3">
-                <div className="relative h-16 w-16 p-1 rounded-2xl bg-white shadow-md border-2 border-primary/20 overflow-hidden">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="relative h-9 w-9 sm:h-12 sm:w-12 p-0.5 rounded-xl bg-white shadow-sm border border-primary/20 overflow-hidden shrink-0">
                   <Image
                     src="/logo.jpg"
                     alt="TESTAI.AZ Logo"
                     fill
-                    className="object-contain rounded-xl p-0.5"
+                    className="object-contain rounded-lg p-0.5"
                     priority
                   />
                 </div>
-                <div className="text-left">
-                  <h1 className="text-2xl font-extrabold text-gray-900 leading-tight">TESTAI.AZ</h1>
-                </div>
+                <h1 className="text-lg sm:text-2xl font-extrabold text-gray-900 leading-tight tracking-tight">TESTAI.AZ</h1>
               </div>
 
-              <Link href="/login" className="text-sm font-bold text-primary hover:underline">
-                Artıq hesabınız var? Giriş
+              <Link href="/login" className="text-xs sm:text-sm font-bold text-primary hover:underline shrink-0">
+                Giriş
               </Link>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Theme Selector */}
-              <div className="lg:col-span-1">
+            <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+              {/* Theme Selector - Hidden on mobile to keep focus on registration */}
+              <div className="hidden lg:block lg:col-span-1">
                 <ThemeSelector selectedTheme={theme.colorScheme} onThemeChange={handleThemeChange} />
               </div>
 
               {/* Registration Form */}
-              <div className="lg:col-span-2">
-              <Card className="backdrop-blur-sm bg-white/95">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-center">Qeydiyyat</CardTitle>
-                  <CardDescription className="text-center">
+              <div className="lg:col-span-2 col-span-full">
+              <Card className="backdrop-blur-sm bg-white/95 shadow-md border-slate-200/80">
+                <CardHeader className="px-4 py-5 sm:p-6 text-center">
+                  <CardTitle className="text-xl sm:text-2xl font-bold">Qeydiyyat</CardTitle>
+                  <CardDescription className="text-xs sm:text-sm text-slate-500 mt-1">
                     Platformaya qoşulmaq üçün hesab növünü seçin
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="px-4 pb-6 sm:px-6 sm:pb-6">
                   <Tabs
                     value={registrationType}
                     onValueChange={(v) => {
@@ -388,46 +386,54 @@ export default function RegisterPage() {
                       }
                     }}
                   >
-                    <TabsList className="grid w-full grid-cols-2 mb-6">
-                      <TabsTrigger value="student">
-                        <GraduationCap className="h-4 w-4 mr-2" />
-                        Şagird
+                    <TabsList className="grid w-full grid-cols-2 mb-6 h-auto gap-2.5 bg-transparent p-0">
+                      <TabsTrigger
+                        value="student"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 min-h-[56px] sm:min-h-[50px] py-2.5 px-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 shadow-sm transition-all data-[state=active]:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary font-semibold text-sm cursor-pointer hover:border-slate-300"
+                      >
+                        <GraduationCap className="h-5 w-5 shrink-0" />
+                        <span>Şagird</span>
                       </TabsTrigger>
-                      <TabsTrigger value="parent">
-                        <Users className="h-4 w-4 mr-2" />
-                        Valideyn/Müəllim
+                      <TabsTrigger
+                        value="parent"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 min-h-[56px] sm:min-h-[50px] py-2.5 px-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 shadow-sm transition-all data-[state=active]:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary font-semibold text-sm cursor-pointer hover:border-slate-300"
+                      >
+                        <Users className="h-5 w-5 shrink-0" />
+                        <span>Valideyn / Müəllim</span>
                       </TabsTrigger>
                     </TabsList>
 
                     {/* Student Registration */}
                     <TabsContent value="student">
-                      <form onSubmit={studentForm.handleSubmit(onStudentSubmit)} className="space-y-6">
+                      <form onSubmit={studentForm.handleSubmit(onStudentSubmit)} className="space-y-5 sm:space-y-6">
                         {/* Personal Information */}
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor="firstName">Ad *</Label>
+                            <Label htmlFor="firstName" className="text-sm font-medium text-slate-700 mb-1.5 block">Ad *</Label>
                             <Input
                               id="firstName"
                               {...studentForm.register("firstName")}
                               placeholder="Adınızı daxil edin"
-                              className={studentForm.formState.errors.firstName ? "border-red-500" : ""}
+                              autoComplete="given-name"
+                              className={`h-12 text-base ${studentForm.formState.errors.firstName ? "border-red-500" : ""}`}
                             />
                             {studentForm.formState.errors.firstName && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {studentForm.formState.errors.firstName.message}
                               </p>
                             )}
                           </div>
                           <div>
-                            <Label htmlFor="lastName">Soyad *</Label>
+                            <Label htmlFor="lastName" className="text-sm font-medium text-slate-700 mb-1.5 block">Soyad *</Label>
                             <Input
                               id="lastName"
                               {...studentForm.register("lastName")}
                               placeholder="Soyadınızı daxil edin"
-                              className={studentForm.formState.errors.lastName ? "border-red-500" : ""}
+                              autoComplete="family-name"
+                              className={`h-12 text-base ${studentForm.formState.errors.lastName ? "border-red-500" : ""}`}
                             />
                             {studentForm.formState.errors.lastName && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {studentForm.formState.errors.lastName.message}
                               </p>
                             )}
@@ -435,30 +441,32 @@ export default function RegisterPage() {
                         </div>
 
                         <div>
-                          <Label htmlFor="fatherName">Ata adı *</Label>
+                          <Label htmlFor="fatherName" className="text-sm font-medium text-slate-700 mb-1.5 block">Ata adı *</Label>
                           <Input
                             id="fatherName"
                             {...studentForm.register("fatherName")}
                             placeholder="Ata adınızı daxil edin"
-                            className={studentForm.formState.errors.fatherName ? "border-red-500" : ""}
+                            autoComplete="additional-name"
+                            className={`h-12 text-base ${studentForm.formState.errors.fatherName ? "border-red-500" : ""}`}
                           />
                           {studentForm.formState.errors.fatherName && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">
                               {studentForm.formState.errors.fatherName.message}
                             </p>
                           )}
                         </div>
 
                         <div>
-                          <Label htmlFor="birthDate">Doğum tarixi *</Label>
+                          <Label htmlFor="birthDate" className="text-sm font-medium text-slate-700 mb-1.5 block">Doğum tarixi *</Label>
                           <Input
                             id="birthDate"
                             type="date"
                             {...studentForm.register("birthDate")}
-                            className={studentForm.formState.errors.birthDate ? "border-red-500" : ""}
+                            autoComplete="bday"
+                            className={`h-12 text-base ${studentForm.formState.errors.birthDate ? "border-red-500" : ""}`}
                           />
                           {studentForm.formState.errors.birthDate && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">
                               {studentForm.formState.errors.birthDate.message}
                             </p>
                           )}
@@ -467,9 +475,9 @@ export default function RegisterPage() {
                         {/* Location and School */}
                         <div className="space-y-4">
                           <div>
-                            <Label htmlFor="region">Yaşadığınız ərazi *</Label>
+                            <Label htmlFor="region" className="text-sm font-medium text-slate-700 mb-1.5 block">Yaşadığınız ərazi *</Label>
                             <Select onValueChange={handleRegionChange}>
-                              <SelectTrigger className={studentForm.formState.errors.region ? "border-red-500" : ""}>
+                              <SelectTrigger className={`h-12 text-base ${studentForm.formState.errors.region ? "border-red-500" : ""}`}>
                                 <SelectValue placeholder="Şəhər/rayon seçin" />
                               </SelectTrigger>
                               <SelectContent>
@@ -494,15 +502,15 @@ export default function RegisterPage() {
                               </SelectContent>
                             </Select>
                             {studentForm.formState.errors.region && (
-                              <p className="text-red-500 text-sm mt-1">{studentForm.formState.errors.region.message}</p>
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">{studentForm.formState.errors.region.message}</p>
                             )}
                           </div>
 
                           {showSubRegions && (
                             <div>
-                              <Label htmlFor="subRegion">Dəqiq ünvan {selectedRegion && `(${selectedRegion})`}</Label>
+                              <Label htmlFor="subRegion" className="text-sm font-medium text-slate-700 mb-1.5 block">Dəqiq ünvan {selectedRegion && `(${selectedRegion})`}</Label>
                               <Select onValueChange={handleSubRegionChange}>
-                                <SelectTrigger>
+                                <SelectTrigger className="h-12 text-base">
                                   <SelectValue placeholder="Rayon/kənd seçin" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -548,22 +556,22 @@ export default function RegisterPage() {
                         </div>
 
                         <div>
-                          <Label htmlFor="school">Məktəb *</Label>
+                          <Label htmlFor="school" className="text-sm font-medium text-slate-700 mb-1.5 block">Məktəb *</Label>
                           <Input
                             id="school"
                             {...studentForm.register("school")}
                             placeholder="Məktəbinizin adını daxil edin"
-                            className={studentForm.formState.errors.school ? "border-red-500" : ""}
+                            className={`h-12 text-base ${studentForm.formState.errors.school ? "border-red-500" : ""}`}
                           />
                           {studentForm.formState.errors.school && (
-                            <p className="text-red-500 text-sm mt-1">{studentForm.formState.errors.school.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{studentForm.formState.errors.school.message}</p>
                           )}
                         </div>
 
                         <div>
-                          <Label htmlFor="class">Sinif *</Label>
+                          <Label htmlFor="class" className="text-sm font-medium text-slate-700 mb-1.5 block">Sinif *</Label>
                           <Select onValueChange={(value) => studentForm.setValue("class", value)}>
-                            <SelectTrigger className={studentForm.formState.errors.class ? "border-red-500" : ""}>
+                            <SelectTrigger className={`h-12 text-base ${studentForm.formState.errors.class ? "border-red-500" : ""}`}>
                               <SelectValue placeholder="Sinifinizi seçin" />
                             </SelectTrigger>
                             <SelectContent>
@@ -575,62 +583,66 @@ export default function RegisterPage() {
                             </SelectContent>
                           </Select>
                           {studentForm.formState.errors.class && (
-                            <p className="text-red-500 text-sm mt-1">{studentForm.formState.errors.class.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{studentForm.formState.errors.class.message}</p>
                           )}
                         </div>
 
                         {/* Account Information */}
                         <div>
-                          <Label htmlFor="email">E-mail (Könüllü / Valideyn e-maili)</Label>
+                          <Label htmlFor="email" className="text-sm font-medium text-slate-700 mb-1.5 block">E-mail (Könüllü / Valideyn e-maili)</Label>
                           <Input
                             id="email"
                             type="email"
+                            inputMode="email"
+                            autoComplete="email"
                             {...studentForm.register("email")}
                             placeholder="E-mail və ya boş buraxa bilərsiniz"
-                            className={studentForm.formState.errors.email ? "border-red-500" : ""}
+                            className={`h-12 text-base ${studentForm.formState.errors.email ? "border-red-500" : ""}`}
                           />
                           <p className="text-xs text-gray-500 mt-1">
                             💡 Şagirdin şəxsi e-maili yoxdursa boş saxlaya bilərsiniz. Şagird təyin ediləcək Unikal ID ilə sayta daxil ola biləcək.
                           </p>
                           {studentForm.formState.errors.email && (
-                            <p className="text-red-500 text-sm mt-1">{studentForm.formState.errors.email.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{studentForm.formState.errors.email.message}</p>
                           )}
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor="password">Şifrə *</Label>
+                            <Label htmlFor="password" className="text-sm font-medium text-slate-700 mb-1.5 block">Şifrə *</Label>
                             <Input
                               id="password"
                               type="password"
+                              autoComplete="new-password"
                               {...studentForm.register("password")}
                               placeholder="Şifrənizi daxil edin"
-                              className={studentForm.formState.errors.password ? "border-red-500" : ""}
+                              className={`h-12 text-base ${studentForm.formState.errors.password ? "border-red-500" : ""}`}
                             />
                             {studentForm.formState.errors.password && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {studentForm.formState.errors.password.message}
                               </p>
                             )}
                           </div>
                           <div>
-                            <Label htmlFor="confirmPassword">Şifrəni təkrarla *</Label>
+                            <Label htmlFor="confirmPassword" className="text-sm font-medium text-slate-700 mb-1.5 block">Şifrəni təkrarla *</Label>
                             <Input
                               id="confirmPassword"
                               type="password"
+                              autoComplete="new-password"
                               {...studentForm.register("confirmPassword")}
                               placeholder="Şifrənizi təkrar daxil edin"
-                              className={studentForm.formState.errors.confirmPassword ? "border-red-500" : ""}
+                              className={`h-12 text-base ${studentForm.formState.errors.confirmPassword ? "border-red-500" : ""}`}
                             />
                             {studentForm.formState.errors.confirmPassword && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {studentForm.formState.errors.confirmPassword.message}
                               </p>
                             )}
                           </div>
                         </div>
 
-                        <Button type="submit" className={`w-full ${themeClasses.primary}`} disabled={isLoading}>
+                        <Button type="submit" className={`w-full h-12 text-base font-semibold shadow-md mt-2 ${themeClasses.primary}`} disabled={isLoading}>
                           {isLoading ? (
                             <>
                               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -645,15 +657,15 @@ export default function RegisterPage() {
 
                     {/* Parent/Teacher Registration */}
                     <TabsContent value="parent">
-                      <form onSubmit={parentForm.handleSubmit(onParentSubmit)} className="space-y-6">
+                      <form onSubmit={parentForm.handleSubmit(onParentSubmit)} className="space-y-5 sm:space-y-6">
                         {/* Role Selection */}
                         <div>
-                          <Label htmlFor="role">Rol *</Label>
+                          <Label htmlFor="role" className="text-sm font-medium text-slate-700 mb-1.5 block">Rol *</Label>
                           <Select
                             value={parentForm.watch("role") || "parent"}
                             onValueChange={(value) => parentForm.setValue("role", value as any, { shouldValidate: true })}
                           >
-                            <SelectTrigger className={parentForm.formState.errors.role ? "border-red-500" : ""}>
+                            <SelectTrigger className={`h-12 text-base ${parentForm.formState.errors.role ? "border-red-500" : ""}`}>
                               <SelectValue placeholder="Rolunuzu seçin" />
                             </SelectTrigger>
                             <SelectContent>
@@ -674,36 +686,38 @@ export default function RegisterPage() {
                             </div>
                           )}
                           {parentForm.formState.errors.role && (
-                            <p className="text-red-500 text-sm mt-1">{parentForm.formState.errors.role.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{parentForm.formState.errors.role.message}</p>
                           )}
                         </div>
 
                         {/* Personal Information */}
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor="parent-firstName">Ad *</Label>
+                            <Label htmlFor="parent-firstName" className="text-sm font-medium text-slate-700 mb-1.5 block">Ad *</Label>
                             <Input
                               id="parent-firstName"
                               {...parentForm.register("firstName")}
                               placeholder="Adınızı daxil edin"
-                              className={parentForm.formState.errors.firstName ? "border-red-500" : ""}
+                              autoComplete="given-name"
+                              className={`h-12 text-base ${parentForm.formState.errors.firstName ? "border-red-500" : ""}`}
                             />
                             {parentForm.formState.errors.firstName && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {parentForm.formState.errors.firstName.message}
                               </p>
                             )}
                           </div>
                           <div>
-                            <Label htmlFor="parent-lastName">Soyad *</Label>
+                            <Label htmlFor="parent-lastName" className="text-sm font-medium text-slate-700 mb-1.5 block">Soyad *</Label>
                             <Input
                               id="parent-lastName"
                               {...parentForm.register("lastName")}
                               placeholder="Soyadınızı daxil edin"
-                              className={parentForm.formState.errors.lastName ? "border-red-500" : ""}
+                              autoComplete="family-name"
+                              className={`h-12 text-base ${parentForm.formState.errors.lastName ? "border-red-500" : ""}`}
                             />
                             {parentForm.formState.errors.lastName && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {parentForm.formState.errors.lastName.message}
                               </p>
                             )}
@@ -711,30 +725,32 @@ export default function RegisterPage() {
                         </div>
 
                         <div>
-                          <Label htmlFor="parent-fatherName">Ata adı *</Label>
+                          <Label htmlFor="parent-fatherName" className="text-sm font-medium text-slate-700 mb-1.5 block">Ata adı *</Label>
                           <Input
                             id="parent-fatherName"
                             {...parentForm.register("fatherName")}
                             placeholder="Ata adınızı daxil edin"
-                            className={parentForm.formState.errors.fatherName ? "border-red-500" : ""}
+                            autoComplete="additional-name"
+                            className={`h-12 text-base ${parentForm.formState.errors.fatherName ? "border-red-500" : ""}`}
                           />
                           {parentForm.formState.errors.fatherName && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">
                               {parentForm.formState.errors.fatherName.message}
                             </p>
                           )}
                         </div>
 
                         <div>
-                          <Label htmlFor="parent-birthDate">Doğum tarixi</Label>
+                          <Label htmlFor="parent-birthDate" className="text-sm font-medium text-slate-700 mb-1.5 block">Doğum tarixi</Label>
                           <Input
                             id="parent-birthDate"
                             type="date"
                             {...parentForm.register("birthDate")}
-                            className={parentForm.formState.errors.birthDate ? "border-red-500" : ""}
+                            autoComplete="bday"
+                            className={`h-12 text-base ${parentForm.formState.errors.birthDate ? "border-red-500" : ""}`}
                           />
                           {parentForm.formState.errors.birthDate && (
-                            <p className="text-red-500 text-sm mt-1">
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">
                               {parentForm.formState.errors.birthDate.message}
                             </p>
                           )}
@@ -742,12 +758,12 @@ export default function RegisterPage() {
 
                         {/* Location */}
                         <div>
-                          <Label htmlFor="parent-region">Yaşadığınız ərazi *</Label>
+                          <Label htmlFor="parent-region" className="text-sm font-medium text-slate-700 mb-1.5 block">Yaşadığınız ərazi *</Label>
                           <Select 
                             value={parentForm.watch("region") || selectedRegion} 
                             onValueChange={handleRegionChange}
                           >
-                            <SelectTrigger className={parentForm.formState.errors.region ? "border-red-500" : ""}>
+                            <SelectTrigger className={`h-12 text-base ${parentForm.formState.errors.region ? "border-red-500" : ""}`}>
                               <SelectValue placeholder="Şəhər/rayon seçin" />
                             </SelectTrigger>
                             <SelectContent>
@@ -765,72 +781,76 @@ export default function RegisterPage() {
                             </SelectContent>
                           </Select>
                           {parentForm.formState.errors.region && (
-                            <p className="text-red-500 text-sm mt-1">{parentForm.formState.errors.region.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{parentForm.formState.errors.region.message}</p>
                           )}
                         </div>
 
                         <div>
-                          <Label htmlFor="parent-school">Məktəb (Uşağın oxuduğu məktəb)</Label>
+                          <Label htmlFor="parent-school" className="text-sm font-medium text-slate-700 mb-1.5 block">Məktəb (Uşağın oxuduğu məktəb)</Label>
                           <Input
                             id="parent-school"
                             {...parentForm.register("school")}
                             placeholder="Məsələn: 161 saylı məktəb"
-                            className={parentForm.formState.errors.school ? "border-red-500" : ""}
+                            className={`h-12 text-base ${parentForm.formState.errors.school ? "border-red-500" : ""}`}
                           />
                           {parentForm.formState.errors.school && (
-                            <p className="text-red-500 text-sm mt-1">{parentForm.formState.errors.school.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{parentForm.formState.errors.school.message}</p>
                           )}
                         </div>
 
                         {/* Account Information */}
                         <div>
-                          <Label htmlFor="parent-email">E-mail *</Label>
+                          <Label htmlFor="parent-email" className="text-sm font-medium text-slate-700 mb-1.5 block">E-mail *</Label>
                           <Input
                             id="parent-email"
                             type="email"
+                            inputMode="email"
+                            autoComplete="email"
                             {...parentForm.register("email")}
                             placeholder="E-mail ünvanınızı daxil edin"
-                            className={parentForm.formState.errors.email ? "border-red-500" : ""}
+                            className={`h-12 text-base ${parentForm.formState.errors.email ? "border-red-500" : ""}`}
                           />
                           {parentForm.formState.errors.email && (
-                            <p className="text-red-500 text-sm mt-1">{parentForm.formState.errors.email.message}</p>
+                            <p className="text-red-500 text-xs sm:text-sm mt-1">{parentForm.formState.errors.email.message}</p>
                           )}
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor="parent-password">Şifrə *</Label>
+                            <Label htmlFor="parent-password" className="text-sm font-medium text-slate-700 mb-1.5 block">Şifrə *</Label>
                             <Input
                               id="parent-password"
                               type="password"
+                              autoComplete="new-password"
                               {...parentForm.register("password")}
                               placeholder="Şifrənizi daxil edin"
-                              className={parentForm.formState.errors.password ? "border-red-500" : ""}
+                              className={`h-12 text-base ${parentForm.formState.errors.password ? "border-red-500" : ""}`}
                             />
                             {parentForm.formState.errors.password && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {parentForm.formState.errors.password.message}
                               </p>
                             )}
                           </div>
                           <div>
-                            <Label htmlFor="parent-confirmPassword">Şifrəni təkrarla *</Label>
+                            <Label htmlFor="parent-confirmPassword" className="text-sm font-medium text-slate-700 mb-1.5 block">Şifrəni təkrarla *</Label>
                             <Input
                               id="parent-confirmPassword"
                               type="password"
+                              autoComplete="new-password"
                               {...parentForm.register("confirmPassword")}
                               placeholder="Şifrənizi təkrar daxil edin"
-                              className={parentForm.formState.errors.confirmPassword ? "border-red-500" : ""}
+                              className={`h-12 text-base ${parentForm.formState.errors.confirmPassword ? "border-red-500" : ""}`}
                             />
                             {parentForm.formState.errors.confirmPassword && (
-                              <p className="text-red-500 text-sm mt-1">
+                              <p className="text-red-500 text-xs sm:text-sm mt-1">
                                 {parentForm.formState.errors.confirmPassword.message}
                               </p>
                             )}
                           </div>
                         </div>
 
-                        <Button type="submit" className={`w-full ${themeClasses.primary}`} disabled={isLoading}>
+                        <Button type="submit" className={`w-full h-12 text-base font-semibold shadow-md mt-2 ${themeClasses.primary}`} disabled={isLoading}>
                           {isLoading ? (
                             <>
                               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
