@@ -285,26 +285,27 @@ export default function ProfilePage() {
             <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
                 {/* Header */}
                 <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-40">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="flex justify-between items-center py-4">
+                    <div className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8">
+                        <div className="flex justify-between items-center py-3 sm:py-4">
                             <Link href={dashboardPath}>
-                                <Button variant="ghost" className="gap-2">
-                                    <ArrowLeft className="h-4 w-4" />
+                                <Button variant="ghost" size="sm" className="gap-1.5 h-9 text-xs sm:text-sm">
+                                    <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                                     Geri
                                 </Button>
                             </Link>
                             <div className="flex flex-col items-center">
-                                <h1 className="text-2xl font-bold text-gray-900">Profil</h1>
-                                <span className="text-xs font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full border border-primary/20 mt-0.5 select-all" title="Sizin Şəxsi ID Kodunuz">
+                                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Profil</h1>
+                                <span className="text-[10px] sm:text-xs font-mono font-bold text-primary bg-primary/10 px-2 sm:px-2.5 py-0.5 rounded-full border border-primary/20 mt-0.5 select-all" title="Sizin Şəxsi ID Kodunuz">
                                     ID: {getUserUniqueId(userData)}
                                 </span>
                             </div>
                             <Button
                                 variant="outline"
-                                className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
+                                size="sm"
+                                className="gap-1.5 h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
                                 onClick={handleLogout}
                             >
-                                <LogOut className="h-4 w-4" />
+                                <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                                 Çıxış
                             </Button>
                         </div>
@@ -312,15 +313,15 @@ export default function ProfilePage() {
                 </header>
 
                 {/* Main Content */}
-                <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                    <div className="grid md:grid-cols-3 gap-8">
+                <main className="max-w-4xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
+                    <div className="grid md:grid-cols-3 gap-5 sm:gap-8">
                         {/* Left Column - Profile Image */}
                         <div className="md:col-span-1">
                             <Card>
-                                <CardHeader>
-                                    <CardTitle className="text-center">Profil Şəkli</CardTitle>
+                                <CardHeader className="p-4 sm:p-6 pb-2 sm:pb-4">
+                                    <CardTitle className="text-center text-base sm:text-lg">Profil Şəkli</CardTitle>
                                 </CardHeader>
-                                <CardContent className="space-y-4">
+                                <CardContent className="space-y-4 p-4 sm:p-6 pt-0 sm:pt-0">
                                     <div className="flex flex-col items-center">
                                         <ProfileAvatar
                                             firstName={userData.firstName}
@@ -370,10 +371,10 @@ export default function ProfilePage() {
                         {/* Right Column - User Information */}
                         <div className="md:col-span-2 space-y-6">
                             <Card>
-                                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
+                                <CardHeader className="flex flex-row items-center justify-between space-y-0 p-4 sm:p-6 pb-3 sm:pb-4">
                                     <div>
-                                        <CardTitle>Şəxsi Məlumatlar</CardTitle>
-                                        <CardDescription>Sizin hesab məlumatlarınız</CardDescription>
+                                        <CardTitle className="text-base sm:text-lg">Şəxsi Məlumatlar</CardTitle>
+                                        <CardDescription className="text-xs sm:text-sm">Sizin hesab məlumatlarınız</CardDescription>
                                     </div>
                                     {!isEditing ? (
                                         <Button
@@ -381,9 +382,9 @@ export default function ProfilePage() {
                                             variant="outline"
                                             size="sm"
                                             onClick={handleStartEdit}
-                                            className="gap-1.5 text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                                            className="gap-1.5 text-xs sm:text-sm text-blue-600 hover:text-blue-700 hover:bg-blue-50"
                                         >
-                                            <Pencil className="h-4 w-4" />
+                                            <Pencil className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                                             Redaktə et
                                         </Button>
                                     ) : (
@@ -394,6 +395,7 @@ export default function ProfilePage() {
                                                 size="sm"
                                                 onClick={handleCancelEdit}
                                                 disabled={isSavingProfile}
+                                                className="text-xs sm:text-sm"
                                             >
                                                 Ləğv et
                                             </Button>
@@ -402,17 +404,17 @@ export default function ProfilePage() {
                                                 size="sm"
                                                 onClick={handleSaveProfile}
                                                 disabled={isSavingProfile}
-                                                className={themeClasses.primary}
+                                                className={`text-xs sm:text-sm ${themeClasses.primary}`}
                                             >
-                                                <Save className="h-4 w-4 mr-1.5" />
+                                                <Save className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1.5" />
                                                 {isSavingProfile ? "Saxlanılır..." : "Yadda saxla"}
                                             </Button>
                                         </div>
                                     )}
                                 </CardHeader>
-                                <CardContent className="space-y-4">
+                                <CardContent className="space-y-4 p-4 sm:p-6 pt-0 sm:pt-0">
                                     {/* Unikal Şagird ID Bloku */}
-                                    <div className="p-3.5 bg-primary/5 rounded-xl border border-primary/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                    <div className="p-3 sm:p-3.5 bg-primary/5 rounded-xl border border-primary/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
                                         <div className="space-y-0.5">
                                             <div className="flex items-center gap-1.5 text-xs font-bold text-primary">
                                                 <Fingerprint className="h-4 w-4" />
@@ -423,7 +425,7 @@ export default function ProfilePage() {
                                             </p>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <span className="font-mono text-sm font-bold text-primary bg-white px-3 py-1.5 rounded-lg border border-primary/30 shadow-xs select-all">
+                                            <span className="font-mono text-xs sm:text-sm font-bold text-primary bg-white px-2.5 sm:px-3 py-1.5 rounded-lg border border-primary/30 shadow-xs select-all">
                                                 {getUserUniqueId(userData)}
                                             </span>
                                             <Button
@@ -448,30 +450,30 @@ export default function ProfilePage() {
 
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
-                                            <Label htmlFor="firstName">Ad *</Label>
+                                            <Label htmlFor="firstName" className="text-xs sm:text-sm">Ad *</Label>
                                             <div className="relative">
-                                                <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <User className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="firstName"
                                                     value={isEditing ? profileForm.firstName : userData.firstName}
                                                     onChange={(e) => setProfileForm({ ...profileForm, firstName: e.target.value })}
                                                     disabled={!isEditing}
-                                                    className="pl-10"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base"
                                                     placeholder="Adınız"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
-                                            <Label htmlFor="lastName">Soyad *</Label>
+                                            <Label htmlFor="lastName" className="text-xs sm:text-sm">Soyad *</Label>
                                             <div className="relative">
-                                                <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <User className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="lastName"
                                                     value={isEditing ? profileForm.lastName : userData.lastName}
                                                     onChange={(e) => setProfileForm({ ...profileForm, lastName: e.target.value })}
                                                     disabled={!isEditing}
-                                                    className="pl-10"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base"
                                                     placeholder="Soyadınız"
                                                 />
                                             </div>
@@ -480,30 +482,30 @@ export default function ProfilePage() {
 
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
-                                            <Label htmlFor="fatherName">Ata adı</Label>
+                                            <Label htmlFor="fatherName" className="text-xs sm:text-sm">Ata adı</Label>
                                             <div className="relative">
-                                                <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <User className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="fatherName"
                                                     value={isEditing ? profileForm.fatherName : (userData.fatherName || "")}
                                                     onChange={(e) => setProfileForm({ ...profileForm, fatherName: e.target.value })}
                                                     disabled={!isEditing}
-                                                    className="pl-10"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base"
                                                     placeholder="Ata adı"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
-                                            <Label htmlFor="email">Email</Label>
+                                            <Label htmlFor="email" className="text-xs sm:text-sm">Email</Label>
                                             <div className="relative">
-                                                <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <Mail className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="email"
                                                     type="email"
                                                     value={userData.email}
                                                     disabled
-                                                    className="pl-10 bg-gray-50 text-gray-500 cursor-not-allowed"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base bg-gray-50 text-gray-500 cursor-not-allowed"
                                                     title="Email hesaba giriş açarı olduğu üçün dəyişdirilə bilməz"
                                                 />
                                             </div>
@@ -512,30 +514,30 @@ export default function ProfilePage() {
 
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="space-y-2">
-                                            <Label htmlFor="school">Məktəb</Label>
+                                            <Label htmlFor="school" className="text-xs sm:text-sm">Məktəb</Label>
                                             <div className="relative">
-                                                <School className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <School className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="school"
                                                     value={isEditing ? profileForm.school : userData.school}
                                                     onChange={(e) => setProfileForm({ ...profileForm, school: e.target.value })}
                                                     disabled={!isEditing}
-                                                    className="pl-10"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base"
                                                     placeholder="Məktəb nömrəsi və ya adı"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
-                                            <Label htmlFor="region">Region / Rayon</Label>
+                                            <Label htmlFor="region" className="text-xs sm:text-sm">Region / Rayon</Label>
                                             <div className="relative">
-                                                <MapPin className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                                                <MapPin className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-400" />
                                                 <Input
                                                     id="region"
                                                     value={isEditing ? profileForm.region : (userData.region || "")}
                                                     onChange={(e) => setProfileForm({ ...profileForm, region: e.target.value })}
                                                     disabled={!isEditing}
-                                                    className="pl-10"
+                                                    className="pl-10 h-11 sm:h-10 text-sm sm:text-base"
                                                     placeholder="Məs: Bakı, Sumqayıt..."
                                                 />
                                             </div>
@@ -544,13 +546,13 @@ export default function ProfilePage() {
 
                                     {userData.accountType === "student" && (
                                         <div className="space-y-2">
-                                            <Label htmlFor="class">Sinif</Label>
+                                            <Label htmlFor="class" className="text-xs sm:text-sm">Sinif</Label>
                                             {isEditing ? (
                                                 <select
                                                     id="class"
                                                     value={profileForm.class}
                                                     onChange={(e) => setProfileForm({ ...profileForm, class: e.target.value })}
-                                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                                                    className="flex h-11 sm:h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm sm:text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                                                 >
                                                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((c) => (
                                                         <option key={c} value={String(c)}>
@@ -563,7 +565,7 @@ export default function ProfilePage() {
                                                     id="class"
                                                     value={userData.class ? `${userData.class}-ci sinif` : "-"}
                                                     disabled
-                                                    className="bg-gray-50 text-gray-700"
+                                                    className="h-11 sm:h-10 text-sm sm:text-base bg-gray-50 text-gray-700"
                                                 />
                                             )}
                                         </div>
@@ -571,10 +573,10 @@ export default function ProfilePage() {
 
                                     <div className="flex items-center justify-between pt-4 border-t">
                                         <div>
-                                            <p className="text-sm font-medium text-gray-700">Hesab növü</p>
-                                            <p className="text-sm text-gray-500">{roleLabel}</p>
+                                            <p className="text-xs sm:text-sm font-medium text-gray-700">Hesab növü</p>
+                                            <p className="text-xs sm:text-sm text-gray-500">{roleLabel}</p>
                                         </div>
-                                        <Badge variant="secondary" className={themeClasses.secondary}>
+                                        <Badge variant="secondary" className={`text-xs ${themeClasses.secondary}`}>
                                             {userData.accountType === "student" && (isEditing ? profileForm.class : userData.class)
                                                 ? `${isEditing ? profileForm.class : userData.class}-ci sinif`
                                                 : roleLabel}
@@ -586,13 +588,13 @@ export default function ProfilePage() {
                             {/* Əlaqəli Şagirdlər Bloku (Valideynlər və Nəzarətçilər üçün) */}
                             {(userData.accountType === "parent" || userData.role === "parent" || userData.accountType === "teacher" || userData.accountType === "director") && (
                                 <Card className="border-blue-100">
-                                    <CardHeader className="flex flex-row items-center justify-between pb-3">
-                                        <div className="space-y-1">
-                                            <CardTitle className="text-lg flex items-center gap-2 text-blue-950">
+                                    <CardHeader className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-6 pb-3 gap-2.5 sm:gap-0">
+                                        <div className="space-y-0.5">
+                                            <CardTitle className="text-base sm:text-lg flex items-center gap-2 text-blue-950">
                                                 <GraduationCap className="h-5 w-5 text-blue-600" />
                                                 Əlaqəli Şagirdlər / Övladlar
                                             </CardTitle>
-                                            <CardDescription>
+                                            <CardDescription className="text-xs sm:text-sm">
                                                 Hesabınıza bağlı olan və nəzarət etdiyiniz şagirdlər
                                             </CardDescription>
                                         </div>
@@ -603,7 +605,7 @@ export default function ProfilePage() {
                                             </Button>
                                         </Link>
                                     </CardHeader>
-                                    <CardContent>
+                                    <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                                         {isLoadingStudents ? (
                                             <div className="py-6 text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
                                                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
@@ -627,7 +629,7 @@ export default function ProfilePage() {
                                                 {linkedStudents.map((student: any) => (
                                                     <div
                                                         key={student.id}
-                                                        className="p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/80 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                                                        className="p-3 sm:p-3.5 bg-slate-50 hover:bg-blue-50/50 rounded-xl border border-slate-200/80 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3"
                                                     >
                                                         <div className="space-y-1">
                                                             <div className="flex items-center gap-2">

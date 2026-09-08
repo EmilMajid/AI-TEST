@@ -1082,65 +1082,84 @@ export default function ParentDashboard() {
     <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Users className={`h-8 w-8 ${themeClasses.text} mr-3`} />
-              <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-2xl font-bold text-gray-900">{getRoleLabel(userData.role)} İdarəetmə Paneli</h1>
-                  <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold flex items-center gap-1 shadow-xs px-2.5 py-0.5 text-xs">
-                    <Sparkles className="h-3 w-3" /> Premium Hesab: Aktivdir
-                  </Badge>
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between py-3 sm:py-4 gap-2.5 sm:gap-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <Users className={`h-6 w-6 sm:h-8 sm:w-8 ${themeClasses.text} shrink-0`} />
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h1 className="text-base sm:text-2xl font-bold text-gray-900 leading-tight">
+                      {getRoleLabel(userData.role)} Paneli
+                    </h1>
+                    <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-[10px] sm:text-xs px-2 py-0.5 shadow-xs">
+                      <Sparkles className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-0.5" /> Premium
+                    </Badge>
+                  </div>
+                  <p className="text-[11px] sm:text-xs text-gray-500 truncate max-w-[240px] sm:max-w-none">
+                    {userData.email}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-600">Sistem Versiyası: 2.1 • Cihaz: {userData.email}</p>
+              </div>
+
+              {/* Mobile avatar on top-right */}
+              <div className="md:hidden flex items-center gap-2">
+                <ProfileAvatar
+                  firstName={userData.firstName}
+                  lastName={userData.lastName}
+                  profileImage={userData.profileImage}
+                  size="sm"
+                />
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <ProfileAvatar
-                firstName={userData.firstName}
-                lastName={userData.lastName}
-                profileImage={userData.profileImage}
-                size="md"
-              />
-              <div className="text-right">
-                <p className="text-sm font-medium text-gray-900">
-                  {userData.firstName} {userData.lastName}
-                </p>
-                <p className="text-xs text-gray-600">{userData.school}</p>
+            <div className="flex items-center justify-between sm:justify-end gap-2 border-t md:border-t-0 pt-2.5 md:pt-0">
+              <div className="hidden md:flex items-center gap-2.5 mr-2">
+                <ProfileAvatar
+                  firstName={userData.firstName}
+                  lastName={userData.lastName}
+                  profileImage={userData.profileImage}
+                  size="md"
+                />
+                <div className="text-left">
+                  <p className="text-sm font-medium text-gray-900 leading-tight">
+                    {userData.firstName} {userData.lastName}
+                  </p>
+                  <p className="text-xs text-gray-500">{userData.school}</p>
+                </div>
               </div>
 
               <Link href="/profile">
-                <Button variant="outline" size="sm" className="gap-2">
-                  <User className="h-4 w-4" />
+                <Button variant="outline" size="sm" className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm">
+                  <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   Profil
                 </Button>
               </Link>
               <Button
                 variant={currentView === 'messages' ? 'default' : 'outline'}
-                className="gap-2"
+                size="sm"
+                className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm"
                 onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
               >
-                {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                 {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
               </Button>
 
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
+                className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
                 onClick={handleLogout}
               >
-                <LogOut className="h-4 w-4" />
-                Çıxış
+                <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                <span className="hidden xs:inline">Çıxış</span>
               </Button>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
         {currentView === 'messages' ? (
           <MessagesTab userId={userData.id} userRole={userData.accountType} />
         ) : (
@@ -1433,14 +1452,14 @@ export default function ParentDashboard() {
                             }`}
                           onClick={() => handleStudentSelect(student.studentId)}
                         >
-                          <CardContent className="p-4">
-                            <div className="flex items-start justify-between">
-                              <div className="flex-1">
-                                <h4 className="font-medium text-sm">{student.studentName}</h4>
+                          <CardContent className="p-3 sm:p-4">
+                            <div className="flex items-center justify-between gap-2">
+                              <div className="flex-1 min-w-0">
+                                <h4 className="font-medium text-sm truncate">{student.studentName}</h4>
                                 <p className="text-xs text-gray-600">{student.studentClass}-ci sinif</p>
-                                <p className="text-xs text-gray-500 mt-1">{student.studentSchool}</p>
+                                <p className="text-xs text-gray-500 mt-0.5 truncate">{student.studentSchool}</p>
                               </div>
-                              <div className="flex items-center gap-1">
+                              <div className="flex items-center gap-1 shrink-0">
                                 <Button
                                   variant="ghost"
                                   size="sm"
@@ -1502,42 +1521,42 @@ export default function ParentDashboard() {
                 <div className="space-y-6">
                   {/* Student Header */}
                   <Card>
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
+                    <CardHeader className="p-4 sm:p-6">
+                      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4">
                         <div>
-                          <div className="flex items-center gap-3">
-                            <CardTitle className="text-2xl">{selectedStudentData?.studentName}</CardTitle>
+                          <div className="flex flex-wrap items-center gap-2">
+                            <CardTitle className="text-xl sm:text-2xl font-bold">{selectedStudentData?.studentName}</CardTitle>
                             {selectedStudentData && (
-                              <>
+                              <div className="flex items-center gap-1.5">
                                 <Button
                                   variant="outline"
                                   size="sm"
                                   onClick={() => handleOpenEditStudent(selectedStudentData)}
-                                  className="h-8 gap-1.5 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                                  className="h-7 sm:h-8 px-2 sm:px-2.5 gap-1 text-xs text-blue-600 hover:text-blue-700 hover:bg-blue-50"
                                 >
-                                  <Pencil className="h-3.5 w-3.5" />
-                                  Redaktə et
+                                  <Pencil className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                                  <span className="hidden xs:inline">Redaktə et</span>
                                 </Button>
                                 <Button
                                   variant="outline"
                                   size="sm"
                                   onClick={handleSendReportToEmail}
                                   disabled={isSendingReport}
-                                  className="h-8 gap-1.5 text-xs text-green-700 border-green-200 bg-green-50/50 hover:bg-green-100 hover:text-green-800"
+                                  className="h-7 sm:h-8 px-2 sm:px-2.5 gap-1 text-xs text-green-700 border-green-200 bg-green-50/50 hover:bg-green-100 hover:text-green-800"
                                   title="Son imtahan hesabatını e-mail ünvanınıza göndərin"
                                 >
-                                  <Mail className="h-3.5 w-3.5" />
-                                  {isSendingReport ? "Göndərilir..." : "Hesabatı E-mailə Göndər"}
+                                  <Mail className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                                  <span className="hidden xs:inline">{isSendingReport ? "Göndərilir..." : "Hesabat"}</span>
                                 </Button>
-                              </>
+                              </div>
                             )}
                           </div>
-                          <CardDescription>
+                          <CardDescription className="text-xs sm:text-sm mt-1">
                             {selectedStudentData?.studentClass}-ci sinif • {selectedStudentData?.studentSchool}
                           </CardDescription>
                         </div>
-                        <div className="flex items-center space-x-2">
-                          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
+                        <div className="flex flex-wrap items-center justify-between sm:justify-start gap-2 pt-2 lg:pt-0 border-t lg:border-t-0">
+                          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1 overflow-x-auto max-w-full">
                             {[
                               { id: 'day', label: 'Cari gün' },
                               { id: 'week', label: 'Həftəlik' },
@@ -1547,7 +1566,7 @@ export default function ParentDashboard() {
                               <button
                                 key={range.id}
                                 onClick={() => handleTimeRangeChange(range.id as any)}
-                                className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all ${timeRange === range.id
+                                className={`px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md transition-all shrink-0 ${timeRange === range.id
                                   ? 'bg-white shadow-sm text-blue-600'
                                   : 'text-gray-500 hover:text-gray-700'
                                   }`}
@@ -1578,41 +1597,41 @@ export default function ParentDashboard() {
                     </Card>
                   )}
 
-                  {/* Statistics Cards */}
-                  <div className="grid md:grid-cols-4 gap-4">
+                  {/* Statistics Cards - 2x2 on mobile, 4-col on desktop */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                     <Card>
-                      <CardContent className="p-6 text-center">
-                        <BookOpen className={`h-8 w-8 ${themeClasses.text} mx-auto mb-2`} />
-                        <div className="text-3xl font-bold">{studentStats.totalTests}</div>
-                        <div className="text-sm text-gray-600">Ümumi Test</div>
+                      <CardContent className="p-3.5 sm:p-6 text-center">
+                        <BookOpen className={`h-6 w-6 sm:h-8 sm:w-8 ${themeClasses.text} mx-auto mb-1.5 sm:mb-2`} />
+                        <div className="text-2xl sm:text-3xl font-bold">{studentStats.totalTests}</div>
+                        <div className="text-xs sm:text-sm text-gray-600">Ümumi Test</div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6 text-center">
-                        <Target className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                        <div className={`text-3xl font-bold ${getScoreColor(studentStats.averageScore)}`}>
+                      <CardContent className="p-3.5 sm:p-6 text-center">
+                        <Target className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 mx-auto mb-1.5 sm:mb-2" />
+                        <div className={`text-2xl sm:text-3xl font-bold ${getScoreColor(studentStats.averageScore)}`}>
                           {studentStats.averageScore}%
                         </div>
-                        <div className="text-sm text-gray-600">Orta Bal</div>
+                        <div className="text-xs sm:text-sm text-gray-600">Orta Bal</div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6 text-center">
-                        <Award className="h-8 w-8 text-yellow-600 mx-auto mb-2" />
-                        <div className={`text-3xl font-bold ${getScoreColor(studentStats.bestScore)}`}>
+                      <CardContent className="p-3.5 sm:p-6 text-center">
+                        <Award className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-600 mx-auto mb-1.5 sm:mb-2" />
+                        <div className={`text-2xl sm:text-3xl font-bold ${getScoreColor(studentStats.bestScore)}`}>
                           {studentStats.bestScore}%
                         </div>
-                        <div className="text-sm text-gray-600">Ən Yaxşı</div>
+                        <div className="text-xs sm:text-sm text-gray-600">Ən Yaxşı</div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6 text-center">
-                        <Calendar className="h-8 w-8 text-purple-600 mx-auto mb-2" />
-                        <div className="text-3xl font-bold">{studentStats.monthly.testsThisMonth}</div>
-                        <div className="text-sm text-gray-600">Bu Ay</div>
+                      <CardContent className="p-3.5 sm:p-6 text-center">
+                        <Calendar className="h-6 w-6 sm:h-8 sm:w-8 text-purple-600 mx-auto mb-1.5 sm:mb-2" />
+                        <div className="text-2xl sm:text-3xl font-bold">{studentStats.monthly.testsThisMonth}</div>
+                        <div className="text-xs sm:text-sm text-gray-600">Bu Ay</div>
                       </CardContent>
                     </Card>
                   </div>
@@ -1629,7 +1648,7 @@ export default function ParentDashboard() {
                     const bestSubj = studentStats.strongAreas?.[0]?.subject || studentStats.subjectBreakdown?.[0]?.subject || null
                     const worstSubj = studentStats.weakAreas?.[0]?.subject || null
                     return (
-                      <div className="bg-gradient-to-r from-slate-50 to-blue-50/40 border border-slate-200/80 rounded-xl px-5 py-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+                      <div className="bg-gradient-to-r from-slate-50 to-blue-50/40 border border-slate-200/80 rounded-xl px-4 sm:px-5 py-3 flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs sm:text-sm">
                         <span className="font-semibold text-slate-600 flex items-center gap-1.5">
                           <BarChart3 className="h-4 w-4 text-slate-400" />
                           İlkin Təhlil
@@ -1654,18 +1673,20 @@ export default function ParentDashboard() {
                     )
                   })()}
 
-                  {/* Tabs */}
-                  <Tabs defaultValue="overview" className="space-y-6">
-                    <TabsList className="grid w-full grid-cols-6">
-                      <TabsTrigger value="overview">Ümumi</TabsTrigger>
-                      <TabsTrigger value="subjects">Fənlər</TabsTrigger>
-                      <TabsTrigger value="comparison">Müqayisə</TabsTrigger>
-                      <TabsTrigger value="progress">Tərəqqi</TabsTrigger>
-                      <TabsTrigger value="activity">Aktivlik</TabsTrigger>
-                      <TabsTrigger value="advanced" className="bg-gradient-to-r from-amber-100 to-orange-100 text-amber-900 border border-amber-300 font-semibold shadow-xs">
-                        ✨ Premium Analitika (Aktiv)
-                      </TabsTrigger>
-                    </TabsList>
+                  {/* Tabs - Scrollable on mobile, full grid on xl */}
+                  <Tabs defaultValue="overview" className="space-y-4 sm:space-y-6">
+                    <div className="w-full overflow-x-auto pb-1.5 scrollbar-none">
+                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1 p-1 bg-slate-100/90 rounded-xl">
+                        <TabsTrigger value="overview" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Ümumi</TabsTrigger>
+                        <TabsTrigger value="subjects" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Fənlər</TabsTrigger>
+                        <TabsTrigger value="comparison" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Müqayisə</TabsTrigger>
+                        <TabsTrigger value="progress" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Tərəqqi</TabsTrigger>
+                        <TabsTrigger value="activity" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Aktivlik</TabsTrigger>
+                        <TabsTrigger value="advanced" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap bg-gradient-to-r from-amber-100 to-orange-100 text-amber-900 border border-amber-300 font-semibold shadow-xs">
+                          ✨ Premium Analitika
+                        </TabsTrigger>
+                      </TabsList>
+                    </div>
 
                     {/* Overview Tab */}
                     <TabsContent value="overview" className="space-y-6">
@@ -1889,16 +1910,16 @@ export default function ParentDashboard() {
 
                                 return (
                                   <>
-                                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
                                       {comparisonItems.map((item, i) => (
                                         <Card key={i} className="border-none shadow-sm bg-gray-50/50">
-                                          <CardContent className="p-4">
-                                            <div className="flex items-center justify-between mb-2">
+                                          <CardContent className="p-3 sm:p-4">
+                                            <div className="flex items-center justify-between mb-1.5 sm:mb-2">
                                               <item.icon className="h-4 w-4 text-gray-500" />
-                                              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">{item.label}</span>
+                                              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate ml-1">{item.label}</span>
                                             </div>
                                             <div className="flex items-end gap-2">
-                                              <span className="text-2xl font-bold">{Math.round(item.value)}%</span>
+                                              <span className="text-xl sm:text-2xl font-bold">{Math.round(item.value)}%</span>
                                               <div className="flex-1 h-2 bg-gray-200 rounded-full mb-1 overflow-hidden">
                                                 <div
                                                   className={`h-full ${item.color}`}
@@ -1911,7 +1932,7 @@ export default function ParentDashboard() {
                                       ))}
                                     </div>
 
-                                    <div className="h-[350px] w-full mt-6">
+                                    <div className="h-[260px] sm:h-[350px] w-full mt-4 sm:mt-6">
                                       <ResponsiveContainer width="100%" height="100%">
                                         <BarChart
                                           data={[
@@ -2015,10 +2036,10 @@ export default function ParentDashboard() {
                           <div className="space-y-6">
                             {/* Monthly Progress */}
                             <div>
-                              <h4 className="font-medium mb-4">Bu Aylıq Performans</h4>
-                              <div className="grid md:grid-cols-2 gap-4">
+                              <h4 className="font-medium mb-3 sm:mb-4 text-sm sm:text-base">Bu Aylıq Performans</h4>
+                              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                                 <Card className="bg-blue-50">
-                                  <CardContent className="p-4">
+                                  <CardContent className="p-3 sm:p-4">
                                     <div className="flex items-center justify-between">
                                       <div>
                                         <p className="text-sm text-gray-600">Test Sayı</p>
@@ -2032,7 +2053,7 @@ export default function ParentDashboard() {
                                 </Card>
 
                                 <Card className="bg-green-50">
-                                  <CardContent className="p-4">
+                                  <CardContent className="p-3 sm:p-4">
                                     <div className="flex items-center justify-between">
                                       <div>
                                         <p className="text-sm text-gray-600">Orta Bal</p>

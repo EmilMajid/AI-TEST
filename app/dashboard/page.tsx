@@ -202,54 +202,60 @@ export default function Dashboard() {
   return (
     <MainLayout>
       <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-3.5 sm:px-6 py-4 sm:py-8">
           {/* Header */}
-          <div className="flex flex-col md:flex-row justify-between items-center mb-8 bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-8 bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl shadow-sm gap-4">
+            <div className="flex items-center gap-3 sm:gap-4 w-full md:w-auto">
               <ProfileAvatar
                 firstName={userData.firstName}
                 lastName={userData.lastName}
                 profileImage={userData.profileImage}
                 size="lg"
               />
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">
+              <div className="min-w-0 flex-1">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
                   Xoş gəlmisiniz, {userData.firstName} {userData.lastName} 👋
                 </h1>
-                <p className="text-gray-600 flex items-center gap-2">
-                  {getRegionInfo()} | {userData.school} | {userData.class}-ci sinif
+                <p className="text-xs sm:text-sm text-gray-600 flex flex-wrap items-center gap-1.5 sm:gap-2 mt-1">
+                  <span>{getRegionInfo()}</span>
+                  <span className="hidden xs:inline text-gray-400">|</span>
+                  <span className="truncate max-w-[200px]">{userData.school}</span>
+                  <span className="hidden xs:inline text-gray-400">|</span>
+                  <span>{userData.class}-ci sinif</span>
                 </p>
               </div>
             </div>
-            <div className="mt-4 md:mt-0 flex items-start gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-end">
               <div className="flex flex-col items-center">
                 <Link href="/profile">
-                  <Button variant="outline" className="gap-2">
-                    <User className="h-4 w-4" />
+                  <Button variant="outline" size="sm" className="gap-1.5 h-9 text-xs sm:text-sm">
+                    <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                     Profil
                   </Button>
                 </Link>
-                <span className="text-[11px] font-mono font-bold text-primary mt-1 px-2 py-0.5 bg-primary/10 rounded-md border border-primary/20 tracking-tight select-all" title="Sizin Şəxsi ID Kodunuz">
+                <span className="text-[10px] sm:text-[11px] font-mono font-bold text-primary mt-1 px-1.5 sm:px-2 py-0.5 bg-primary/10 rounded-md border border-primary/20 tracking-tight select-all" title="Sizin Şəxsi ID Kodunuz">
                   {getUserUniqueId(userData)}
                 </span>
               </div>
               <Button
                 variant={currentView === 'messages' ? 'default' : 'outline'}
-                className="gap-2"
+                size="sm"
+                className="gap-1.5 h-9 text-xs sm:text-sm"
                 onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
               >
-                {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                 {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
               </Button>
               <Button
                 variant="outline"
-                className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
+                size="sm"
+                className="gap-1.5 h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
                 onClick={() => {
                   logout()
                   router.push("/login")
                 }}
               >
-                <LogOut className="h-4 w-4" />
+                <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 Çıxış
               </Button>
             </div>
@@ -258,21 +264,21 @@ export default function Dashboard() {
           {currentView === 'messages' ? (
             <MessagesTab userId={userData.id} userRole={userData.accountType} />
           ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Left Column - Test Configuration */}
-              <div className="lg:col-span-2 space-y-8">
+              <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                 <Card className="border-none shadow-lg bg-white/90 backdrop-blur">
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between mb-6">
-                      <h2 className="text-xl font-bold flex items-center gap-2">
-                        <span className="text-2xl">📝</span> Yeni Test
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="flex items-center justify-between mb-4 sm:mb-6">
+                      <h2 className="text-lg sm:text-xl font-bold flex items-center gap-2">
+                        <span className="text-xl sm:text-2xl">📝</span> Yeni Test
                       </h2>
-                      <Badge variant="outline" className="bg-primary/5 text-primary border-primary/20">
+                      <Badge variant="outline" className="bg-primary/5 text-primary border-primary/20 text-xs">
                         AI-Powered
                       </Badge>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                       {/* Subject Selection */}
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-gray-700">Fənn</label>
@@ -351,7 +357,7 @@ export default function Dashboard() {
                               }
                             }
                           }}
-                          className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                          className="w-full h-11 sm:h-12 px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white text-sm sm:text-base"
                         >
                           <option value="">Seçin</option>
                           {userData?.class && subjectsByClass[userData.class]?.map((subject) => (
@@ -411,7 +417,7 @@ export default function Dashboard() {
                                 setTestConfig(prev => ({ ...prev, textbook: "", topic: "" }))
                               }
                             }}
-                            className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                            className="w-full h-11 sm:h-12 px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white text-sm sm:text-base"
                           >
                             <option value="">Dil seçin</option>
                             {availableLanguages.map((lang) => (
@@ -437,7 +443,7 @@ export default function Dashboard() {
                                   setTestConfig(prev => ({ ...prev, textbook: textbook.title, topic: "" }))
                                 }
                               }}
-                              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                              className="w-full h-11 sm:h-12 px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white text-sm sm:text-base"
                             >
                               {availableTextbooks.map((textbook) => (
                                 <option key={textbook.id} value={textbook.id}>
@@ -448,7 +454,7 @@ export default function Dashboard() {
                             {selectedTextbook?.fileUrl && (
                               <Button
                                 variant="outline"
-                                className="h-[50px] px-4 border-gray-200 hover:bg-primary/5 hover:text-primary hover:border-primary"
+                                className="h-11 sm:h-12 px-3 sm:px-4 border-gray-200 hover:bg-primary/5 hover:text-primary hover:border-primary shrink-0"
                                 onClick={() => setIsViewerOpen(true)}
                                 title="Dərsliyi oxu (HTML)"
                               >
@@ -458,7 +464,7 @@ export default function Dashboard() {
                             {selectedTextbook?.pdfUrl && (
                               <Button
                                 variant="outline"
-                                className="h-[50px] px-4 border-gray-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200"
+                                className="h-11 sm:h-12 px-3 sm:px-4 border-gray-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 shrink-0"
                                 onClick={() => setIsPdfViewerOpen(true)}
                                 title="Dərsliyi oxu (PDF)"
                               >
@@ -483,7 +489,7 @@ export default function Dashboard() {
                               value={testConfig.topic}
                               onChange={(e) => setTestConfig(prev => ({ ...prev, topic: e.target.value }))}
                               disabled={isDisabled || !hasTopics}
-                              className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white disabled:bg-gray-100 disabled:cursor-not-allowed"
+                              className="w-full h-11 sm:h-12 px-3 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white disabled:bg-gray-100 disabled:cursor-not-allowed text-sm sm:text-base"
                             >
                               <option value="">
                                 {!selectedSubject
@@ -506,7 +512,6 @@ export default function Dashboard() {
                         })()}
                       </div>
 
-
                       {/* Difficulty */}
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-gray-700">Çətinlik dərəcəsi</label>
@@ -515,7 +520,7 @@ export default function Dashboard() {
                             <button
                               key={option.value}
                               onClick={() => setTestConfig({ ...testConfig, difficulty: option.value as any })}
-                              className={`p-2 rounded-lg border text-sm transition-all flex items-center justify-center gap-2 ${testConfig.difficulty === option.value
+                              className={`p-2.5 sm:p-3 rounded-lg border text-xs sm:text-sm font-medium transition-all flex items-center justify-center gap-1.5 sm:gap-2 ${testConfig.difficulty === option.value
                                 ? "border-primary bg-primary/5 text-primary ring-1 ring-primary"
                                 : "border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                                 }`}
@@ -535,7 +540,7 @@ export default function Dashboard() {
                             <button
                               key={count}
                               onClick={() => setTestConfig({ ...testConfig, questionCount: count })}
-                              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${testConfig.questionCount === count
+                              className={`min-w-[42px] h-10 px-3 py-1.5 rounded-lg text-sm font-medium transition-all flex items-center justify-center ${testConfig.questionCount === count
                                 ? "bg-primary text-white shadow-md"
                                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                 }`}
@@ -554,7 +559,7 @@ export default function Dashboard() {
                             <button
                               key={t}
                               onClick={() => setTestConfig({ ...testConfig, timeLimit: t })}
-                              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${testConfig.timeLimit === t
+                              className={`min-w-[42px] h-10 px-3 py-1.5 rounded-lg text-sm font-medium transition-all flex items-center justify-center ${testConfig.timeLimit === t
                                 ? "bg-primary text-white shadow-md"
                                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                 }`}
@@ -566,11 +571,11 @@ export default function Dashboard() {
                       </div>
                     </div>
 
-                    <div className="mt-8">
+                    <div className="mt-6 sm:mt-8">
                       <button
                         onClick={handleStartTest}
                         disabled={isGenerating}
-                        className={`w-full py-4 rounded-xl font-bold text-lg text-white shadow-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-3 ${isGenerating
+                        className={`w-full py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg text-white shadow-lg transition-all transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3 ${isGenerating
                           ? "bg-gray-400 cursor-not-allowed"
                           : `bg-gradient-to-r ${themeClasses.primary} hover:opacity-90`
                           }`}
