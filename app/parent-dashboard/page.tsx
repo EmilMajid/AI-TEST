@@ -40,7 +40,8 @@ import { useRouter } from "next/navigation"
 import { useTheme } from "@/hooks/use-theme"
 import { useToast } from "@/hooks/use-toast"
 import { ProfileAvatar } from "@/components/profile-avatar"
-import { logout, getRoleLabel } from "@/lib/profile-utils"
+import { logout, getRoleLabel, getUserUniqueId } from "@/lib/profile-utils"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 const AnalyticsViewer = dynamic(() => import("@/components/parent/AnalyticsViewer"), {
   ssr: false,
@@ -1080,41 +1081,59 @@ export default function ParentDashboard() {
 
   return (
     <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
-      {/* Header */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between py-3 sm:py-4 gap-2.5 sm:gap-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <Users className={`h-6 w-6 sm:h-8 sm:w-8 ${themeClasses.text} shrink-0`} />
-                <div>
-                  <div className="flex items-center gap-2">
-                    <h1 className="text-base sm:text-2xl font-bold text-gray-900 leading-tight">
-                      {getRoleLabel(userData.role)} Paneli
-                    </h1>
-                    <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-[10px] sm:text-xs px-2 py-0.5 shadow-xs">
-                      <Sparkles className="h-2.5 w-2.5 sm:h-3 sm:w-3 mr-0.5" /> Premium
-                    </Badge>
-                  </div>
-                  <p className="text-[11px] sm:text-xs text-gray-500 truncate max-w-[240px] sm:max-w-none">
-                    {userData.email}
-                  </p>
-                </div>
-              </div>
+      {/* 1-ci BLOK (Mobildə): TESTAI.AZ və Yuxarı Reklam Zolağı */}
+      <header className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 py-3 space-y-2 sticky top-0 z-40 shadow-xs">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600">
+              <Users className="h-5 w-5" />
+            </div>
+            <h1 className="text-lg font-extrabold text-gray-900 tracking-tight">TESTAI.AZ</h1>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-800 rounded-full">
+              {getRoleLabel(userData.role)} Paneli
+            </span>
+            <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-[10px] px-2 py-0.5 shadow-xs">
+              <Sparkles className="h-2.5 w-2.5 mr-0.5" /> Premium
+            </Badge>
+          </div>
+        </div>
 
-              {/* Mobile avatar on top-right */}
-              <div className="md:hidden flex items-center gap-2">
-                <ProfileAvatar
-                  firstName={userData.firstName}
-                  lastName={userData.lastName}
-                  profileImage={userData.profileImage}
-                  size="sm"
-                />
+        {/* Yuxarı Zərif Reklam Zolağı */}
+        <div className="pt-1">
+          <AdBanner
+            slot="parent-dashboard-mobile-top"
+            format="horizontal"
+            refreshKey="parent-top"
+            label="Təhsil Tərəfdaşlığı"
+          />
+        </div>
+      </header>
+
+      {/* Desktop Header (Yalnız Desktop ekranlarda) */}
+      <header className="hidden md:block bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between py-3.5 gap-4">
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 mr-2">
+                <BookOpen className="h-6 w-6 text-primary" />
+                <span className="text-xl font-extrabold tracking-tight text-gray-900">TESTAI.AZ</span>
+              </div>
+              <div className="h-6 w-[1px] bg-gray-200" />
+              <div className="flex items-center gap-2">
+                <Users className={`h-6 w-6 ${themeClasses.text}`} />
+                <h1 className="text-xl font-bold text-gray-900 leading-tight">
+                  {getRoleLabel(userData.role)} Paneli
+                </h1>
+                <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-xs px-2 py-0.5 shadow-xs">
+                  <Sparkles className="h-3 w-3 mr-0.5" /> Premium
+                </Badge>
               </div>
             </div>
 
-            <div className="flex items-center justify-between sm:justify-end gap-2 border-t md:border-t-0 pt-2.5 md:pt-0">
-              <div className="hidden md:flex items-center gap-2.5 mr-2">
+            <div className="flex items-center justify-end gap-2.5">
+              <div className="flex items-center gap-2.5 mr-2">
                 <ProfileAvatar
                   firstName={userData.firstName}
                   lastName={userData.lastName}
@@ -1125,20 +1144,26 @@ export default function ParentDashboard() {
                   <p className="text-sm font-medium text-gray-900 leading-tight">
                     {userData.firstName} {userData.lastName}
                   </p>
-                  <p className="text-xs text-gray-500">{userData.school}</p>
+                  <p className="text-xs text-gray-500">{userData.email}</p>
                 </div>
               </div>
 
-              <Link href="/profile">
-                <Button variant="outline" size="sm" className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm">
-                  <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                  Profil
-                </Button>
-              </Link>
+              <div className="flex flex-col items-center">
+                <Link href="/profile">
+                  <Button variant="outline" size="sm" className="gap-1.5 h-9 text-xs sm:text-sm">
+                    <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                    Profil
+                  </Button>
+                </Link>
+                <span className="text-[10px] font-mono font-bold text-amber-700 mt-0.5 px-1.5 py-0.2 bg-amber-50 rounded border border-amber-200 tracking-tight select-all" title="Sizin Şəxsi ID Kodunuz">
+                  {getUserUniqueId(userData)}
+                </span>
+              </div>
+
               <Button
                 variant={currentView === 'messages' ? 'default' : 'outline'}
                 size="sm"
-                className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm"
+                className="gap-1.5 h-9 text-xs sm:text-sm"
                 onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
               >
                 {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
@@ -1148,11 +1173,11 @@ export default function ParentDashboard() {
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-1 sm:gap-2 h-8 sm:h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
+                className="gap-1.5 h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
                 onClick={handleLogout}
               >
                 <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline">Çıxış</span>
+                <span>Çıxış</span>
               </Button>
             </div>
           </div>
@@ -1161,7 +1186,29 @@ export default function ParentDashboard() {
 
       <main className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
         {currentView === 'messages' ? (
-          <MessagesTab userId={userData.id} userRole={userData.accountType} />
+          <div className="space-y-4">
+            <div className="md:hidden flex items-center justify-between bg-white/90 backdrop-blur-sm p-3 rounded-2xl border border-gray-100 shadow-xs">
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-1.5 text-xs font-semibold rounded-xl"
+                onClick={() => setCurrentView('dashboard')}
+              >
+                <LayoutDashboard className="h-4 w-4 text-primary" />
+                Panelə Qayıt
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-1 text-xs text-red-600 rounded-xl"
+                onClick={handleLogout}
+              >
+                <LogOut className="h-4 w-4" />
+                Çıxış
+              </Button>
+            </div>
+            <MessagesTab userId={userData.id} userRole={userData.accountType} />
+          </div>
         ) : (
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Sidebar - Student List (Desktop Only) */}
@@ -1497,8 +1544,28 @@ export default function ParentDashboard() {
 
             {/* Main Content - Student Details */}
             <div className="lg:col-span-3 space-y-4 sm:space-y-6">
-              {/* Mobile Child Switcher & Quick Actions (lg:hidden) */}
-              <div className="lg:hidden bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-gray-100 shadow-sm space-y-2.5">
+              {/* 2-ci BLOK (Mobildə): Valideyn Kartı & Övlad Seçim Zolağı */}
+              <div className="lg:hidden space-y-3">
+                {/* Valideyn Xoş Gəlmisiniz Kartı */}
+                <div className="flex items-center gap-3 bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl shadow-xs border border-gray-100">
+                  <ProfileAvatar
+                    firstName={userData.firstName}
+                    lastName={userData.lastName}
+                    profileImage={userData.profileImage}
+                    size="md"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <h2 className="text-base font-bold text-gray-900 leading-tight">
+                      Xoş gəlmisiniz, {userData.firstName} {userData.lastName} 👋
+                    </h2>
+                    <p className="text-xs text-gray-500 truncate mt-0.5">
+                      {userData.email} • <span className="font-medium text-amber-700">{getRoleLabel(userData.role)}</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Övladlarınız Zolağı */}
+                <div className="bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl border border-gray-100 shadow-xs space-y-2.5">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Users className="h-4 w-4 text-primary" />
@@ -1558,6 +1625,7 @@ export default function ParentDashboard() {
                     })}
                   </div>
                 )}
+                </div>
               </div>
 
               {isLoading ? (
@@ -2265,6 +2333,60 @@ export default function ParentDashboard() {
                 </div>
               )
               }
+
+              {/* 5-ci BLOK (Mobildə): Profil, Mesajlar, Çıxış, Unikal ID */}
+              <div className="md:hidden space-y-4 pt-1">
+                <Card className="border-none shadow-md bg-white/95 backdrop-blur p-4 rounded-2xl border border-gray-100">
+                  <div className="flex flex-col gap-3">
+                    <div className="flex items-center justify-between pb-3 border-b border-gray-100">
+                      <div className="flex items-center gap-2">
+                        <Link href="/profile">
+                          <Button variant="outline" size="sm" className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl">
+                            <User className="h-4 w-4 text-primary" />
+                            Profil
+                          </Button>
+                        </Link>
+                        <Button
+                          variant={currentView === 'messages' ? 'default' : 'outline'}
+                          size="sm"
+                          className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl"
+                          onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
+                        >
+                          {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                          {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
+                        </Button>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="gap-1.5 h-10 px-3 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-xl font-medium text-xs"
+                        onClick={handleLogout}
+                      >
+                        <LogOut className="h-4 w-4" />
+                        Çıxış
+                      </Button>
+                    </div>
+
+                    {/* Unikal Şəxsi ID */}
+                    <div className="flex items-center justify-between bg-amber-50/70 p-3 rounded-xl border border-amber-200/60">
+                      <span className="text-xs text-gray-600 font-medium">Şəxsi ID Kodunuz:</span>
+                      <span className="text-xs font-mono font-bold text-amber-800 px-2.5 py-1 bg-white rounded-lg border border-amber-200 tracking-wider select-all" title="Sizin Şəxsi ID Kodunuz">
+                        {getUserUniqueId(userData)}
+                      </span>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Alt Reklam Sahəsi (Sonda yerləşən sponsorlu təhsil banneri) */}
+              <div className="pt-2">
+                <AdBanner
+                  slot="parent-dashboard-bottom-banner"
+                  format="large-banner"
+                  refreshKey="parent-bottom"
+                  label="Tövsiyə Olunan Təhsil Təklifi və Hazırlıq Proqramı"
+                />
+              </div>
             </div>
           </div>
         )}
