@@ -60,7 +60,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
                 role: supabaseUser.accountType || "student",
                 status: "active",
                 isBlocked: false,
-                source: supabaseUser.accountType === "admin" ? "admin" : "real",
+                source: supabaseUser.accountType === "admin" ? "admin" : (isMockUser(supabaseUser) ? "mock" : "real"),
             }
         } else {
             if (supabaseUser.fatherName) user.fatherName = supabaseUser.fatherName
@@ -68,7 +68,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             if (supabaseUser.lastName) user.lastName = supabaseUser.lastName
             if (supabaseUser.school) user.school = supabaseUser.school
             if (supabaseUser.class) user.class = String(supabaseUser.class)
-            user.source = "real"
+            user.source = supabaseUser.accountType === "admin" ? "admin" : (isMockUser(supabaseUser) || isMockUser(user) ? "mock" : "real")
         }
     }
 

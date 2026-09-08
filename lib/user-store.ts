@@ -102,21 +102,34 @@ function saveRealUserToDisk(user: StoredUser) {
 }
 
 /** Heristik yoxlama: istifadəçi mock/demo-durmu? */
-export function isMockUser(u: StoredUser): boolean {
-  if (u.source === "real" || u.source === "admin") return false
-  if (u.source === "mock") return true
+export function isMockUser(u: StoredUser | any): boolean {
+  if (!u) return false
+  const id = String(u.id || "").toLowerCase().trim()
+  const email = (u.email || "").toLowerCase().trim()
 
-  const id = String(u.id || "")
-  const email = (u.email || "").toLowerCase()
+  // Real istifadəçilər (Rüfət, Ayaz, Araz)
+  if (
+    email === "r.h.rzayev@gmail.com" || id === "parent-rufat" ||
+    email === "ayaz.rzayev.309@testai.az" || id === "student-ayaz-309" ||
+    email === "araz.rzayev.309@testai.az" || id === "student-araz-309"
+  ) {
+    return false
+  }
 
   // Admin: xüsusi status
-  if (u.accountType === "admin" || u.role === "admin") return false
+  if (u.accountType === "admin" || u.role === "admin" || email === "admin@edu.az" || id === "admin-main") return false
+
+  // Məlum mock email domenləri -> HƏMİŞƏ DEMO
+  if (email.endsWith("@test.com") || email.endsWith("@example.com")) return true
+
+  // Məlum mock ID prefiksləri -> HƏMİŞƏ DEMO (məs: student-ali, student-leyla, parent-aysel)
+  if (/^(parent|teacher|director|student)-[a-z]/.test(id)) return true
+
+  if (u.source === "mock") return true
+  if (u.source === "real") return false
+
   // Timestamp ID (13 rəqəm) → real qeydiyyat
   if (/^\d{13}$/.test(id)) return false
-  // Məlum mock email domenləri
-  if (email.endsWith("@test.com") || email.endsWith("@example.com") || email.endsWith("@edu.az")) return true
-  // Məlum mock ID prefiksləri
-  if (/^(parent|teacher|director|student)-[a-z]/.test(id)) return true
 
   return false
 }
@@ -306,6 +319,15 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   const allList = Array.from(map.values())
 
+  // Demo/mock profillərin heç vaxt "real" kimi göstərilməməsini qəti təmin et
+  for (const u of allList) {
+    if (isMockUser(u)) {
+      u.source = "mock"
+    } else if (u.accountType === "admin" || u.role === "admin") {
+      u.source = "admin"
+    }
+  }
+
   // includesMock: false olduqda yalnız real + admin qaytarılır
   if (!includeMock) {
     return allList.filter(u => u.source === "real" || u.source === "admin")
@@ -357,8 +379,8 @@ export function saveUser(user: StoredUser): StoredUser {
     saveToDisk(getAllUsers())
   } catch (e) {}
 
-  // Async sync to real Supabase PostgreSQL cloud database
-  if (userWithStatus.source === "real" || userWithStatus.email) {
+  // Async sync to real Supabase PostgreSQL cloud database - ONLY FOR REAL USERS!
+  if (userWithStatus.source === "real" && !isMockUser(userWithStatus)) {
     try {
       supabaseAdmin
         .from("User")
@@ -379,8 +401,7 @@ export function saveUser(user: StoredUser): StoredUser {
           },
           { onConflict: "email" }
         )
-        .then(() => {})
-        .catch(() => {})
+        .then(() => {}, () => {})
     } catch (err) {}
   }
 

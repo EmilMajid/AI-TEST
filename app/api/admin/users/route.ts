@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin } from "@/lib/user-store"
+import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET() {
@@ -18,6 +18,8 @@ export async function GET() {
             const existing = allUsers.find(
               (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(su.id)
             )
+            const suIsMock = isMockUser(su)
+            const suSource = su.accountType === "admin" ? "admin" : (suIsMock ? "mock" : "real")
             if (existing) {
               if (su.firstName) existing.firstName = su.firstName
               if (su.lastName) existing.lastName = su.lastName
@@ -29,7 +31,7 @@ export async function GET() {
                 existing.accountType = su.accountType
                 existing.role = su.accountType
               }
-              existing.source = su.accountType === "admin" ? "admin" : "real"
+              existing.source = suSource
             } else {
               allUsers.push({
                 id: su.id,
@@ -44,7 +46,7 @@ export async function GET() {
                 role: su.accountType || "student",
                 status: "active",
                 isBlocked: false,
-                source: su.accountType === "admin" ? "admin" : "real",
+                source: suSource,
               })
             }
           }
@@ -106,7 +108,7 @@ export async function GET() {
           parentId: link.parentId,
           parentEmail: link.parentEmail,
           uniqueId: st.uniqueId || getUserUniqueId(st as any),
-          source: "real",
+          source: isMockUser(st) ? "mock" : "real",
           status: "active",
           isBlocked: false,
         } as any)
@@ -197,8 +199,12 @@ export async function GET() {
         linkedChildren = Array.from(childDedup.values())
       }
 
+      const isMock = isMockUser(u)
+      const effectiveSource = isMock ? "mock" : (u.accountType === "admin" || u.role === "admin" ? "admin" : (u.source || "real"))
+
       return {
         ...u,
+        source: effectiveSource,
         uniqueId: uId,
         isBlocked,
         status,
@@ -315,7 +321,7 @@ export async function POST(request: NextRequest) {
           parentId: u.parentId,
           parentEmail: u.parentEmail,
           uniqueId: u.uniqueId || getUserUniqueId(u),
-          source: "real",
+          source: isMockUser(u) ? "mock" : (u.source || "real"),
           status: u.status || "active",
           isBlocked: u.isBlocked || false,
         })

@@ -19,6 +19,24 @@ import { Search, Loader2, Eye, Trash2, Lock, Unlock, AlertTriangle, ShieldAlert 
 import Link from 'next/link'
 import { getUserUniqueId } from '@/lib/profile-utils'
 
+function isMockProfile(u: any): boolean {
+    if (!u) return false
+    const id = String(u.id || '').toLowerCase().trim()
+    const email = (u.email || '').toLowerCase().trim()
+    if (
+        email === 'r.h.rzayev@gmail.com' || id === 'parent-rufat' ||
+        email === 'ayaz.rzayev.309@testai.az' || id === 'student-ayaz-309' ||
+        email === 'araz.rzayev.309@testai.az' || id === 'student-araz-309'
+    ) {
+        return false
+    }
+    if (u.accountType === 'admin' || u.role === 'admin' || email === 'admin@edu.az' || id === 'admin-main') return false
+    if (email.endsWith('@test.com') || email.endsWith('@example.com')) return true
+    if (/^(parent|teacher|director|student)-[a-z]/.test(id)) return true
+    if (u.source === 'mock') return true
+    return false
+}
+
 export default function AdminUsersPage() {
     const { toast } = useToast()
     const [users, setUsers] = useState<any[]>([])
@@ -69,7 +87,7 @@ export default function AdminUsersPage() {
                     if (!userMap.has(key)) {
                         userMap.set(key, {
                             ...lu,
-                            source: "real",
+                            source: isMockProfile(lu) ? "mock" : "real",
                             status: lu.status || "active",
                             isBlocked: lu.isBlocked || false,
                             uniqueId: lu.uniqueId || getUserUniqueId(lu),
@@ -184,10 +202,11 @@ export default function AdminUsersPage() {
 
         // Source filtr
         let matchesSource = true
+        const isMock = isMockProfile(u)
         if (sourceFilter === "real") {
-            matchesSource = u.source === "real" || u.source === "admin"
+            matchesSource = !isMock && (u.source === "real" || u.source === "admin" || u.accountType === "admin" || u.role === "admin")
         } else if (sourceFilter === "mock") {
-            matchesSource = u.source === "mock" || (!u.source && !u.email?.endsWith("@testai.az"))
+            matchesSource = isMock || u.source === "mock"
         }
 
         return matchesSearch && matchesSource
@@ -205,7 +224,10 @@ export default function AdminUsersPage() {
     }
 
     const getSourceBadge = (user: any) => {
-        if (user.source === "admin") return null // admin-lər üçün ayrıca badge lazım deyil
+        if (user.source === "admin" || user.accountType === "admin" || user.role === "admin") return null // admin-lər üçün ayrıca badge lazım deyil
+        if (isMockProfile(user)) {
+            return <span className="ml-1 text-[10px] bg-slate-100 text-slate-500 border border-slate-200 px-1.5 py-0.5 rounded-full font-medium">Demo</span>
+        }
         if (user.source === "real") {
             return <span className="ml-1 text-[10px] bg-emerald-100 text-emerald-700 border border-emerald-300 px-1.5 py-0.5 rounded-full font-medium">Real</span>
         }
@@ -256,7 +278,7 @@ export default function AdminUsersPage() {
                 >
                     <span className="h-1.5 w-1.5 rounded-full bg-current mr-1.5 opacity-80" />
                     Yalnız Real
-                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => u.source === "real" || u.source === "admin").length})</span>
+                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => !isMockProfile(u) && (u.source === "real" || u.source === "admin" || u.accountType === "admin" || u.role === "admin")).length})</span>
                 </Button>
                 <Button
                     size="sm"
@@ -265,7 +287,7 @@ export default function AdminUsersPage() {
                     onClick={() => setSourceFilter("mock")}
                 >
                     Yalnız Demo
-                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => u.source === "mock" || (!u.source && !u.email?.endsWith("@testai.az"))).length})</span>
+                    <span className="ml-1.5 text-[11px] opacity-70">({users.filter(u => isMockProfile(u) || u.source === "mock").length})</span>
                 </Button>
             </div>
 

@@ -68,11 +68,11 @@ export default function AdminUserProfilePage() {
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
-                                {user.source === "real" ? (
+                                {user.source === "admin" || user.accountType === "admin" || user.role === "admin" ? null : (user.source === "real" && !user.email?.endsWith("@test.com") && !user.email?.endsWith("@example.com")) ? (
                                     <span className="text-xs bg-emerald-100 text-emerald-700 border border-emerald-300 px-2.5 py-1 rounded-full font-semibold">
                                         Real İstifadəçi
                                     </span>
-                                ) : user.source === "admin" ? null : (
+                                ) : (
                                     <span className="text-xs bg-slate-100 text-slate-500 border border-slate-200 px-2.5 py-1 rounded-full font-medium">
                                         Demo İstifadəçi
                                     </span>
