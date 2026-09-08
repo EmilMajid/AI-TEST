@@ -111,7 +111,7 @@ export default function ProfilePage() {
         })
         setIsLoading(false)
 
-        if (user.accountType === "parent" || user.role === "parent" || user.accountType === "teacher" || user.accountType === "director") {
+        if (user.accountType === "parent" || user.role === "parent" || user.role === "teacher" || user.role === "director") {
             loadParentStudents(user.id, user.email)
         }
     }, [router])
@@ -586,7 +586,7 @@ export default function ProfilePage() {
                             </Card>
 
                             {/* Əlaqəli Şagirdlər Bloku (Valideynlər və Nəzarətçilər üçün) */}
-                            {(userData.accountType === "parent" || userData.role === "parent" || userData.accountType === "teacher" || userData.accountType === "director") && (
+                            {(userData.accountType === "parent" || userData.role === "parent" || userData.role === "teacher" || userData.role === "director") && (
                                 <Card className="border-blue-100">
                                     <CardHeader className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-6 pb-3 gap-2.5 sm:gap-0">
                                         <div className="space-y-0.5">
