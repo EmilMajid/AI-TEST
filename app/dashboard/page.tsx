@@ -203,7 +203,7 @@ export default function Dashboard() {
     <MainLayout>
       <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
         <div className="container mx-auto px-3.5 sm:px-6 py-4 sm:py-8">
-          {/* Header */}
+          {/* 2-ci BLOK: Şagird Kartı */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-5 sm:mb-8 bg-white/90 backdrop-blur-sm p-3.5 sm:p-6 rounded-2xl shadow-sm gap-3 sm:gap-4 border border-gray-100">
             <div className="flex items-center gap-3 sm:gap-4 w-full md:w-auto">
               <ProfileAvatar
@@ -217,7 +217,7 @@ export default function Dashboard() {
                   Xoş gəlmisiniz, {userData.firstName} {userData.lastName} 👋
                 </h1>
                 <p className="text-xs sm:text-sm text-gray-600 flex flex-wrap items-center gap-1.5 sm:gap-2 mt-0.5">
-                  <span>{getRegionInfo()}</span>
+                  <span className="font-medium text-gray-700">{getRegionInfo()}</span>
                   <span className="text-gray-300">•</span>
                   <span className="truncate max-w-[180px] sm:max-w-none">{userData.school}</span>
                   <span className="text-gray-300">•</span>
@@ -225,10 +225,12 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-between sm:justify-end gap-2 w-full md:w-auto pt-2.5 md:pt-0 border-t md:border-t-0 border-gray-100">
+            
+            {/* Desktop Yuxarı Əməliyyat Düymələri (Mobildə 4-cü blokda yerləşir) */}
+            <div className="hidden md:flex items-center justify-end gap-2.5 w-full md:w-auto">
               <div className="flex flex-col items-center">
                 <Link href="/profile">
-                  <Button variant="outline" size="sm" className="gap-1.5 h-8 sm:h-9 text-xs sm:text-sm">
+                  <Button variant="outline" size="sm" className="gap-1.5 h-9 text-xs sm:text-sm">
                     <User className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                     Profil
                   </Button>
@@ -240,7 +242,7 @@ export default function Dashboard() {
               <Button
                 variant={currentView === 'messages' ? 'default' : 'outline'}
                 size="sm"
-                className="gap-1.5 h-8 sm:h-9 text-xs sm:text-sm"
+                className="gap-1.5 h-9 text-xs sm:text-sm"
                 onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
               >
                 {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
@@ -249,7 +251,7 @@ export default function Dashboard() {
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-1.5 h-8 sm:h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
+                className="gap-1.5 h-9 text-xs sm:text-sm text-red-600 hover:text-red-700 hover:bg-red-50"
                 onClick={() => {
                   logout()
                   router.push("/login")
@@ -596,7 +598,54 @@ export default function Dashboard() {
                   </CardContent>
                 </Card>
 
-                {/* Dashboard Alt Reklam Bloku (Qırmızı çərçivəyə alınan Son Nəticələr sahəsi) */}
+                {/* 4-cü BLOK (Mobildə): Profil, Unikal ID, Mesajlar, Çıxış */}
+                <div className="md:hidden space-y-4 pt-1">
+                  <Card className="border-none shadow-md bg-white/95 backdrop-blur p-4 rounded-2xl border border-gray-100">
+                    <div className="flex flex-col gap-3">
+                      <div className="flex items-center justify-between pb-3 border-b border-gray-100">
+                        <div className="flex items-center gap-2">
+                          <Link href="/profile">
+                            <Button variant="outline" size="sm" className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl">
+                              <User className="h-4 w-4 text-primary" />
+                              Profil
+                            </Button>
+                          </Link>
+                          <Button
+                            variant={currentView === 'messages' ? 'default' : 'outline'}
+                            size="sm"
+                            className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl"
+                            onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
+                          >
+                            {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                            {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
+                          </Button>
+                        </div>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="gap-1.5 h-10 px-3 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-xl font-medium text-xs"
+                          onClick={() => {
+                            logout()
+                            router.push("/login")
+                          }}
+                        >
+                          <LogOut className="h-4 w-4" />
+                          Çıxış
+                        </Button>
+                      </div>
+
+                      {/* Unikal Şəxsi ID */}
+                      <div className="flex items-center justify-between bg-primary/5 p-3 rounded-xl border border-primary/15">
+                        <span className="text-xs text-gray-600 font-medium">Şəxsi ID Kodunuz:</span>
+                        <span className="text-xs font-mono font-bold text-primary px-2.5 py-1 bg-white rounded-lg border border-primary/20 tracking-wider select-all" title="Sizin Şəxsi ID Kodunuz">
+                          {getUserUniqueId(userData)}
+                        </span>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+
+                {/* Dashboard Alt Reklam Bloku (Sonda yerləşən reklam) */}
                 <div className="pt-2">
                   <AdBanner
                     slot="dashboard-bottom-banner"
@@ -607,8 +656,8 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              {/* Right Column - Reklam Paneli (Qırmızı çərçivəyə alınan Sağ Statistika sahəsi) */}
-              <div className="space-y-4 sm:space-y-6 w-full overflow-hidden">
+              {/* Right Column - Reklam Paneli (Yalnız Desktop ekranlarda) */}
+              <div className="hidden lg:block space-y-4 sm:space-y-6 w-full overflow-hidden">
                 <AdBanner
                   slot="dashboard-sidebar-top"
                   format="vertical"
