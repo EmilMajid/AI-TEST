@@ -112,7 +112,7 @@ export function AdBanner({
   return (
     <div
       ref={adRef}
-      className={`w-full overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-300 ${
+      className={`w-full max-w-full overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-300 ${
         isRefreshing ? "opacity-40 scale-[0.99]" : "opacity-100 scale-100"
       } ${className}`}
     >
@@ -127,10 +127,10 @@ export function AdBanner({
 
       {/* AdSense İnteqrasiyası */}
       {adsenseClientId ? (
-        <div className={`p-2 flex justify-center items-center ${isVertical ? "min-h-[400px]" : isLarge ? "min-h-[220px]" : "min-h-[90px]"}`}>
+        <div className={`p-2 flex justify-center items-center w-full max-w-full overflow-hidden ${isVertical ? "min-h-[400px]" : isLarge ? "min-h-[220px]" : "min-h-[90px]"}`}>
           <ins
             className="adsbygoogle"
-            style={{ display: "block", textAlign: "center" }}
+            style={{ display: "block", textAlign: "center", width: "100%", maxWidth: "100%", overflow: "hidden" }}
             data-ad-client={adsenseClientId}
             data-ad-slot={slot}
             data-ad-format={isVertical ? "vertical" : isLarge ? "rectangle" : format === "rectangle" ? "rectangle" : "horizontal"}
@@ -176,7 +176,7 @@ export function AdBanner({
         </div>
       ) : isLarge ? (
         /* Böyük / Genişləndirilmiş Nəticə Reklam Formatı (Large Banner) */
-        <div className={`p-6 sm:p-7 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col md:flex-row items-center justify-between gap-6`}>
+        <div className={`p-4 sm:p-6 md:p-7 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6`}>
           <div className="flex-1 space-y-3 text-center md:text-left">
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white backdrop-blur-xs shadow-xs">
@@ -227,7 +227,7 @@ export function AdBanner({
         </div>
       ) : (
         /* Standart Üfüqi (Horizontal) Reklam Formatı */
-        <div className={`p-4 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col sm:flex-row items-center justify-between gap-3`}>
+        <div className={`p-3 sm:p-4 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3`}>
           <div className="flex-1 text-center sm:text-left space-y-1">
             <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/20 text-white backdrop-blur-xs">
               <span>{activeDemoAd.badge}</span>

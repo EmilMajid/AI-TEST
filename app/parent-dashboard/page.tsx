@@ -1080,28 +1080,28 @@ export default function ParentDashboard() {
   const selectedStudentData = linkedStudents.find((s) => s.studentId === selectedStudent)
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${theme.gradient}`}>
+    <div className={`min-h-screen bg-gradient-to-br ${theme.gradient} w-full max-w-[100vw] overflow-x-hidden`}>
       {/* 1-ci BLOK (Mobildə): TESTAI.AZ və Yuxarı Reklam Zolağı */}
-      <header className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-4 py-3 space-y-2 sticky top-0 z-40 shadow-xs">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600">
-              <Users className="h-5 w-5" />
+      <header className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-100 px-3.5 py-2.5 space-y-2 sticky top-0 z-40 shadow-xs w-full max-w-[100vw] overflow-x-hidden">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0 shrink-0">
+            <div className="h-7 w-7 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600 shrink-0">
+              <Users className="h-4 w-4" />
             </div>
-            <h1 className="text-lg font-extrabold text-gray-900 tracking-tight">TESTAI.AZ</h1>
+            <h1 className="text-base font-extrabold text-gray-900 tracking-tight">TESTAI.AZ</h1>
           </div>
-          <div className="flex items-center gap-1.5">
-            <span className="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-800 rounded-full">
-              {getRoleLabel(userData.role)} Paneli
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-[11px] font-semibold px-2 py-0.5 bg-amber-500/10 text-amber-800 rounded-full">
+              {getRoleLabel(userData.role)}
             </span>
-            <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-[10px] px-2 py-0.5 shadow-xs">
+            <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold text-[10px] px-1.5 py-0.5 shadow-xs">
               <Sparkles className="h-2.5 w-2.5 mr-0.5" /> Premium
             </Badge>
           </div>
         </div>
 
         {/* Yuxarı Zərif Reklam Zolağı */}
-        <div className="pt-1">
+        <div className="pt-0.5 w-full max-w-full overflow-hidden">
           <AdBanner
             slot="parent-dashboard-mobile-top"
             format="horizontal"
@@ -1184,9 +1184,9 @@ export default function ParentDashboard() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-4 sm:py-8">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3.5 sm:py-8 w-full min-w-0 max-w-full overflow-x-hidden">
         {currentView === 'messages' ? (
-          <div className="space-y-4">
+          <div className="space-y-4 w-full min-w-0 max-w-full">
             <div className="md:hidden flex items-center justify-between bg-white/90 backdrop-blur-sm p-3 rounded-2xl border border-gray-100 shadow-xs">
               <Button
                 variant="outline"
@@ -1210,7 +1210,7 @@ export default function ParentDashboard() {
             <MessagesTab userId={userData.id} userRole={userData.accountType} />
           </div>
         ) : (
-          <div className="grid lg:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 w-full min-w-0 max-w-full">
             {/* Sidebar - Student List (Desktop Only) */}
             <div className="hidden lg:block lg:col-span-1">
               <Card>
@@ -1543,11 +1543,11 @@ export default function ParentDashboard() {
             </div>
 
             {/* Main Content - Student Details */}
-            <div className="lg:col-span-3 space-y-4 sm:space-y-6">
+            <div className="lg:col-span-3 space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
               {/* 2-ci BLOK (Mobildə): Valideyn Kartı & Övlad Seçim Zolağı */}
-              <div className="lg:hidden space-y-3">
+              <div className="lg:hidden space-y-3 w-full min-w-0 max-w-full">
                 {/* Valideyn Xoş Gəlmisiniz Kartı */}
-                <div className="flex items-center gap-3 bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl shadow-xs border border-gray-100">
+                <div className="flex items-center gap-3 bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl shadow-xs border border-gray-100 w-full min-w-0 max-w-full overflow-hidden">
                   <ProfileAvatar
                     firstName={userData.firstName}
                     lastName={userData.lastName}
@@ -1555,7 +1555,7 @@ export default function ParentDashboard() {
                     size="md"
                   />
                   <div className="min-w-0 flex-1">
-                    <h2 className="text-base font-bold text-gray-900 leading-tight">
+                    <h2 className="text-base font-bold text-gray-900 leading-tight truncate">
                       Xoş gəlmisiniz, {userData.firstName} {userData.lastName} 👋
                     </h2>
                     <p className="text-xs text-gray-500 truncate mt-0.5">
@@ -1565,7 +1565,7 @@ export default function ParentDashboard() {
                 </div>
 
                 {/* Övladlarınız Zolağı */}
-                <div className="bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl border border-gray-100 shadow-xs space-y-2.5">
+                <div className="bg-white/90 backdrop-blur-sm p-3.5 rounded-2xl border border-gray-100 shadow-xs space-y-2.5 w-full min-w-0 max-w-full overflow-hidden">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Users className="h-4 w-4 text-primary" />
@@ -1661,16 +1661,16 @@ export default function ParentDashboard() {
                   </CardContent>
                 </Card>
               ) : (
-                <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                   {/* Student Header */}
-                  <Card>
-                    <CardHeader className="p-4 sm:p-6">
-                      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4">
-                        <div>
+                  <Card className="w-full min-w-0 max-w-full overflow-hidden">
+                    <CardHeader className="p-3.5 sm:p-6">
+                      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4 w-full min-w-0">
+                        <div className="min-w-0 flex-1">
                           <div className="flex flex-wrap items-center gap-2">
-                            <CardTitle className="text-xl sm:text-2xl font-bold">{selectedStudentData?.studentName}</CardTitle>
+                            <CardTitle className="text-lg sm:text-2xl font-bold truncate">{selectedStudentData?.studentName}</CardTitle>
                             {selectedStudentData && (
-                              <div className="flex items-center gap-1.5">
+                              <div className="flex items-center gap-1.5 shrink-0">
                                 <Button
                                   variant="outline"
                                   size="sm"
@@ -1694,12 +1694,12 @@ export default function ParentDashboard() {
                               </div>
                             )}
                           </div>
-                          <CardDescription className="text-xs sm:text-sm mt-1">
+                          <CardDescription className="text-xs sm:text-sm mt-1 truncate">
                             {selectedStudentData?.studentClass}-ci sinif • {selectedStudentData?.studentSchool}
                           </CardDescription>
                         </div>
-                        <div className="flex flex-wrap items-center justify-between sm:justify-start gap-2 pt-2 lg:pt-0 border-t lg:border-t-0">
-                          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1 overflow-x-auto max-w-full">
+                        <div className="flex items-center justify-between sm:justify-start gap-2 pt-2 sm:pt-0 border-t sm:border-t-0 w-full sm:w-auto">
+                          <div className="bg-gray-100 p-1 rounded-lg flex space-x-1 overflow-x-auto max-w-full shrink-0">
                             {[
                               { id: 'day', label: 'Cari gün' },
                               { id: 'week', label: 'Həftəlik' },
@@ -1709,7 +1709,7 @@ export default function ParentDashboard() {
                               <button
                                 key={range.id}
                                 onClick={() => handleTimeRangeChange(range.id as any)}
-                                className={`px-2.5 sm:px-3 py-1 text-xs font-medium rounded-md transition-all shrink-0 ${timeRange === range.id
+                                className={`px-2 sm:px-3 py-1 text-xs font-medium rounded-md transition-all shrink-0 ${timeRange === range.id
                                   ? 'bg-white shadow-sm text-blue-600'
                                   : 'text-gray-500 hover:text-gray-700'
                                   }`}
@@ -1718,7 +1718,7 @@ export default function ParentDashboard() {
                               </button>
                             ))}
                           </div>
-                          <Badge className={getScoreBadge(studentStats.averageScore).className}>
+                          <Badge className={`shrink-0 text-xs ${getScoreBadge(studentStats.averageScore).className}`}>
                             {getScoreBadge(studentStats.averageScore).text}
                           </Badge>
                         </div>
@@ -1741,40 +1741,40 @@ export default function ParentDashboard() {
                   )}
 
                   {/* Statistics Cards - 2x2 on mobile, 4-col on desktop */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                    <Card>
-                      <CardContent className="p-3.5 sm:p-6 text-center">
-                        <BookOpen className={`h-6 w-6 sm:h-8 sm:w-8 ${themeClasses.text} mx-auto mb-1.5 sm:mb-2`} />
-                        <div className="text-2xl sm:text-3xl font-bold">{studentStats.totalTests}</div>
-                        <div className="text-xs sm:text-sm text-gray-600">Ümumi Test</div>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 w-full min-w-0 max-w-full">
+                    <Card className="w-full min-w-0 overflow-hidden">
+                      <CardContent className="p-3 sm:p-6 text-center">
+                        <BookOpen className={`h-5 w-5 sm:h-8 sm:w-8 ${themeClasses.text} mx-auto mb-1 sm:mb-2`} />
+                        <div className="text-xl sm:text-3xl font-bold">{studentStats.totalTests}</div>
+                        <div className="text-[11px] sm:text-sm text-gray-600">Ümumi Test</div>
                       </CardContent>
                     </Card>
 
-                    <Card>
-                      <CardContent className="p-3.5 sm:p-6 text-center">
-                        <Target className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 mx-auto mb-1.5 sm:mb-2" />
-                        <div className={`text-2xl sm:text-3xl font-bold ${getScoreColor(studentStats.averageScore)}`}>
+                    <Card className="w-full min-w-0 overflow-hidden">
+                      <CardContent className="p-3 sm:p-6 text-center">
+                        <Target className="h-5 w-5 sm:h-8 sm:w-8 text-blue-600 mx-auto mb-1 sm:mb-2" />
+                        <div className={`text-xl sm:text-3xl font-bold ${getScoreColor(studentStats.averageScore)}`}>
                           {studentStats.averageScore}%
                         </div>
-                        <div className="text-xs sm:text-sm text-gray-600">Orta Bal</div>
+                        <div className="text-[11px] sm:text-sm text-gray-600">Orta Bal</div>
                       </CardContent>
                     </Card>
 
-                    <Card>
-                      <CardContent className="p-3.5 sm:p-6 text-center">
-                        <Award className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-600 mx-auto mb-1.5 sm:mb-2" />
-                        <div className={`text-2xl sm:text-3xl font-bold ${getScoreColor(studentStats.bestScore)}`}>
+                    <Card className="w-full min-w-0 overflow-hidden">
+                      <CardContent className="p-3 sm:p-6 text-center">
+                        <Award className="h-5 w-5 sm:h-8 sm:w-8 text-yellow-600 mx-auto mb-1 sm:mb-2" />
+                        <div className={`text-xl sm:text-3xl font-bold ${getScoreColor(studentStats.bestScore)}`}>
                           {studentStats.bestScore}%
                         </div>
-                        <div className="text-xs sm:text-sm text-gray-600">Ən Yaxşı</div>
+                        <div className="text-[11px] sm:text-sm text-gray-600">Ən Yaxşı</div>
                       </CardContent>
                     </Card>
 
-                    <Card>
-                      <CardContent className="p-3.5 sm:p-6 text-center">
-                        <Calendar className="h-6 w-6 sm:h-8 sm:w-8 text-purple-600 mx-auto mb-1.5 sm:mb-2" />
-                        <div className="text-2xl sm:text-3xl font-bold">{studentStats.monthly.testsThisMonth}</div>
-                        <div className="text-xs sm:text-sm text-gray-600">Bu Ay</div>
+                    <Card className="w-full min-w-0 overflow-hidden">
+                      <CardContent className="p-3 sm:p-6 text-center">
+                        <Calendar className="h-5 w-5 sm:h-8 sm:w-8 text-purple-600 mx-auto mb-1 sm:mb-2" />
+                        <div className="text-xl sm:text-3xl font-bold">{studentStats.monthly.testsThisMonth}</div>
+                        <div className="text-[11px] sm:text-sm text-gray-600">Bu Ay</div>
                       </CardContent>
                     </Card>
                   </div>
@@ -1791,8 +1791,8 @@ export default function ParentDashboard() {
                     const bestSubj = studentStats.strongAreas?.[0]?.subject || studentStats.subjectBreakdown?.[0]?.subject || null
                     const worstSubj = studentStats.weakAreas?.[0]?.subject || null
                     return (
-                      <div className="bg-gradient-to-r from-slate-50 to-blue-50/40 border border-slate-200/80 rounded-xl px-4 sm:px-5 py-3 flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs sm:text-sm">
-                        <span className="font-semibold text-slate-600 flex items-center gap-1.5">
+                      <div className="bg-gradient-to-r from-slate-50 to-blue-50/40 border border-slate-200/80 rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 flex flex-wrap items-center gap-x-3 sm:gap-x-6 gap-y-1.5 text-xs sm:text-sm w-full min-w-0 max-w-full overflow-hidden">
+                        <span className="font-semibold text-slate-600 flex items-center gap-1.5 shrink-0">
                           <BarChart3 className="h-4 w-4 text-slate-400" />
                           İlkin Təhlil
                         </span>
@@ -1817,9 +1817,9 @@ export default function ParentDashboard() {
                   })()}
 
                   {/* Tabs - Scrollable on mobile, full grid on xl */}
-                  <Tabs defaultValue="overview" className="space-y-4 sm:space-y-6">
-                    <div className="w-full overflow-x-auto pb-1.5 scrollbar-none sticky top-14 sm:top-0 z-20 bg-slate-50/95 backdrop-blur-md py-1.5">
-                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1.5 p-1 bg-slate-200/80 rounded-xl shadow-xs">
+                  <Tabs defaultValue="overview" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
+                    <div className="w-full max-w-full overflow-x-auto pb-1.5 scrollbar-none sticky top-14 sm:top-0 z-20 bg-slate-50/95 backdrop-blur-md py-1.5">
+                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1 sm:gap-1.5 p-1 bg-slate-200/80 rounded-xl shadow-xs">
                         <TabsTrigger value="overview" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
                           <BarChart3 className="h-3.5 w-3.5" />
                           <span>Ümumi</span>
@@ -1848,31 +1848,31 @@ export default function ParentDashboard() {
                     </div>
 
                     {/* Overview Tab */}
-                    <TabsContent value="overview" className="space-y-6">
+                    <TabsContent value="overview" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                       {!canAccessTab('overviewTab') ? (
                         renderTabOverlay("Ümumi Göstəricilər", "Övladınızın güclü və zəif tərəflərini, həmçinin performans trendini görmək üçün premium hesaba keçid edin.")
                       ) : (
                         <>
-                        <div className="grid md:grid-cols-2 gap-6">
+                        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 w-full min-w-0 max-w-full">
                           {/* Strong Areas */}
-                        <Card>
-                          <CardHeader>
-                            <CardTitle className="flex items-center text-green-600">
+                        <Card className="w-full min-w-0 overflow-hidden">
+                          <CardHeader className="p-4 sm:p-6">
+                            <CardTitle className="flex items-center text-green-600 text-base sm:text-lg">
                               <TrendingUp className="h-5 w-5 mr-2" />
                               Güclü Tərəflər
                             </CardTitle>
                           </CardHeader>
-                          <CardContent>
+                          <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                             {studentStats.strongAreas.length === 0 ? (
                               <p className="text-sm text-gray-600">Məlumat yoxdur</p>
                             ) : (
                               <div className="space-y-3">
                                 {studentStats.strongAreas.map((area, index) => (
                                   <div key={index} className="flex items-center justify-between">
-                                    <div className="flex-1">
+                                    <div className="flex-1 min-w-0">
                                       <div className="flex items-center justify-between mb-1">
-                                        <span className="text-sm font-medium">{area.subject}</span>
-                                        <span className="text-sm text-green-600">{area.averageScore}%</span>
+                                        <span className="text-sm font-medium truncate">{area.subject}</span>
+                                        <span className="text-sm font-semibold text-green-600 shrink-0 ml-2">{area.averageScore}%</span>
                                       </div>
                                       <Progress value={area.averageScore} className="h-2" />
                                     </div>
@@ -1884,27 +1884,27 @@ export default function ParentDashboard() {
                         </Card>
 
                         {/* Weak Areas */}
-                        <Card>
-                          <CardHeader>
-                            <CardTitle className="flex items-center text-red-600">
+                        <Card className="w-full min-w-0 overflow-hidden">
+                          <CardHeader className="p-4 sm:p-6">
+                            <CardTitle className="flex items-center text-red-600 text-base sm:text-lg">
                               <TrendingDown className="h-5 w-5 mr-2" />
                               Zəif Tərəflər
                             </CardTitle>
                           </CardHeader>
-                          <CardContent>
+                          <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                             {studentStats.weakAreas.length === 0 ? (
                               <div className="text-center py-4">
-                                <CheckCircle className="h-12 w-12 text-green-600 mx-auto mb-2" />
+                                <CheckCircle className="h-10 w-10 sm:h-12 sm:w-12 text-green-600 mx-auto mb-2" />
                                 <p className="text-sm text-green-600 font-medium">Zəif sahə yoxdur!</p>
                               </div>
                             ) : (
                               <div className="space-y-3">
                                 {studentStats.weakAreas.map((area, index) => (
                                   <div key={index} className="flex items-center justify-between">
-                                    <div className="flex-1">
+                                    <div className="flex-1 min-w-0">
                                       <div className="flex items-center justify-between mb-1">
-                                        <span className="text-sm font-medium">{area.subject}</span>
-                                        <span className="text-sm text-red-600">{area.averageScore}%</span>
+                                        <span className="text-sm font-medium truncate">{area.subject}</span>
+                                        <span className="text-sm font-semibold text-red-600 shrink-0 ml-2">{area.averageScore}%</span>
                                       </div>
                                       <Progress value={area.averageScore} className="h-2" />
                                     </div>
@@ -1917,20 +1917,20 @@ export default function ParentDashboard() {
                       </div>
 
                       {/* Performance Trend Chart */}
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="flex items-center">
+                      <Card className="w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <CardTitle className="flex items-center text-base sm:text-lg">
                             <BarChart3 className="h-5 w-5 mr-2" />
                             Performans Trendi
                           </CardTitle>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                           {studentStats.performanceTrend.length === 0 ? (
                             <p className="text-sm text-gray-600 text-center py-8">Məlumat yoxdur</p>
                           ) : (
-                            <div className="w-full h-[260px] sm:h-[300px] overflow-hidden">
+                            <div className="w-full h-[240px] sm:h-[300px] min-w-0 max-w-full overflow-hidden">
                               <ResponsiveContainer width="100%" height="100%">
-                                <LineChart data={studentStats.performanceTrend}>
+                                <LineChart data={studentStats.performanceTrend} margin={{ top: 10, right: 10, left: -15, bottom: 0 }}>
                                   <CartesianGrid strokeDasharray="3 3" />
                                   <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                                   <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
@@ -1948,33 +1948,33 @@ export default function ParentDashboard() {
                     </TabsContent>
 
                     {/* Subjects Tab */}
-                    <TabsContent value="subjects" className="space-y-6">
+                    <TabsContent value="subjects" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                       {!canAccessTab('subjectsTab') ? (
                         renderTabOverlay("Fənlər Üzrə Statistika", "Hər bir fənn üzrə orta balları və test sayı qrafiklərini görmək üçün premium hesaba keçid edin.")
                       ) : (
                       <>
-                        <Card>
-                          <CardHeader>
-                            <CardTitle>Fənn üzrə Statistika</CardTitle>
+                        <Card className="w-full min-w-0 overflow-hidden">
+                          <CardHeader className="p-4 sm:p-6">
+                            <CardTitle className="text-base sm:text-lg">Fənn üzrə Statistika</CardTitle>
                           </CardHeader>
-                        <CardContent>
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                           {studentStats.subjectBreakdown.length === 0 ? (
                             <p className="text-sm text-gray-600 text-center py-8">Məlumat yoxdur</p>
                           ) : (
-                            <div className="space-y-4">
+                            <div className="space-y-3 sm:space-y-4">
                               {studentStats.subjectBreakdown.map((subject, index) => (
-                                <Card key={index}>
-                                  <CardContent className="p-3.5 sm:p-4">
+                                <Card key={index} className="w-full min-w-0 overflow-hidden">
+                                  <CardContent className="p-3 sm:p-4">
                                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                      <h4 className="font-medium text-sm sm:text-base">{subject.subject}</h4>
-                                      <div className="flex items-center gap-2 shrink-0">
-                                        <Badge variant="outline" className="text-xs">{subject.count} test</Badge>
-                                        <Badge className={`text-xs ${getScoreBadge(subject.averageScore).className}`}>
+                                      <h4 className="font-medium text-xs sm:text-base truncate max-w-[200px]">{subject.subject}</h4>
+                                      <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                                        <Badge variant="outline" className="text-[11px] sm:text-xs">{subject.count} test</Badge>
+                                        <Badge className={`text-[11px] sm:text-xs ${getScoreBadge(subject.averageScore).className}`}>
                                           {subject.averageScore}%
                                         </Badge>
                                       </div>
                                     </div>
-                                    <Progress value={subject.averageScore} className="h-2.5 sm:h-3" />
+                                    <Progress value={subject.averageScore} className="h-2 sm:h-3" />
                                   </CardContent>
                                 </Card>
                               ))}
@@ -1984,14 +1984,14 @@ export default function ParentDashboard() {
                       </Card>
 
                       {/* Subject Comparison Chart */}
-                      <Card>
-                        <CardHeader>
-                          <CardTitle>Fənn Müqayisəsi</CardTitle>
+                      <Card className="w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <CardTitle className="text-base sm:text-lg">Fənn Müqayisəsi</CardTitle>
                         </CardHeader>
-                        <CardContent>
-                          <div className="w-full h-[260px] sm:h-[300px] overflow-hidden">
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
+                          <div className="w-full h-[240px] sm:h-[300px] min-w-0 max-w-full overflow-hidden">
                             <ResponsiveContainer width="100%" height="100%">
-                              <BarChart data={studentStats.subjectBreakdown}>
+                              <BarChart data={studentStats.subjectBreakdown} margin={{ top: 10, right: 10, left: -15, bottom: 0 }}>
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="subject" tick={{ fontSize: 10 }} />
                                 <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
@@ -2008,16 +2008,16 @@ export default function ParentDashboard() {
                     </TabsContent>
 
                     {/* Comparison Tab */}
-                    <TabsContent value="comparison" className="space-y-6">
+                    <TabsContent value="comparison" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                       {!canAccessTab('comparisonTab') ? (
                         renderTabOverlay("Məktəb və Ölkə Müqayisəsi", "Övladınızın nəticələrinin məktəb, bölgə və ölkə üzrə orta göstəricilərlə müqayisəsini görmək üçün premium hesaba keçid edin.")
                       ) : (
-                      <Card>
-                        <CardHeader>
-                          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                            <div>
-                              <CardTitle>Nəticələrin Müqayisəsi (%)</CardTitle>
-                              <CardDescription>
+                      <Card className="w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4">
+                            <div className="min-w-0 flex-1">
+                              <CardTitle className="text-base sm:text-lg">Nəticələrin Müqayisəsi (%)</CardTitle>
+                              <CardDescription className="text-xs sm:text-sm">
                                 Şagirdin nəticələrinin məktəb, bölgə və ölkə üzrə orta göstəricilərlə müqayisəsi
                               </CardDescription>
                             </div>
@@ -2026,7 +2026,7 @@ export default function ParentDashboard() {
                                 value={selectedSubject || ""}
                                 onValueChange={setSelectedSubject}
                               >
-                                <SelectTrigger>
+                                <SelectTrigger className="w-full">
                                   <SelectValue placeholder="Fənn seçin" />
                                 </SelectTrigger>
                                 <SelectContent className="max-h-[300px]">
@@ -2040,15 +2040,15 @@ export default function ParentDashboard() {
                             </div>
                           </div>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                           {!selectedSubject ? (
-                            <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed">
-                              <BookOpen className="h-12 w-12 text-gray-400 mx-auto mb-3" />
-                              <h3 className="text-lg font-medium text-gray-900">Fənn Seçilməyib</h3>
-                              <p className="text-gray-500">Müqayisəli analizi görmək üçün yuxarıdakı siyahıdan bir fənn seçin</p>
+                            <div className="text-center py-10 sm:py-12 bg-gray-50 rounded-lg border-2 border-dashed">
+                              <BookOpen className="h-10 w-10 sm:h-12 sm:w-12 text-gray-400 mx-auto mb-3" />
+                              <h3 className="text-base sm:text-lg font-medium text-gray-900">Fənn Seçilməyib</h3>
+                              <p className="text-xs sm:text-sm text-gray-500">Müqayisəli analizi görmək üçün yuxarıdakı siyahıdan bir fənn seçin</p>
                             </div>
                           ) : (
-                            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                            <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 w-full min-w-0 max-w-full">
                               {/* Focused Comparison Card */}
                               {(() => {
                                 const sub = studentStats.subjectBreakdown.find(s => s.subject === selectedSubject);
@@ -2056,33 +2056,33 @@ export default function ParentDashboard() {
                                 // For better UX, let's show separate view if no data
                                 if (!sub) {
                                   return (
-                                    <div className="text-center py-12 bg-orange-50 rounded-lg border border-orange-100">
-                                      <Target className="h-12 w-12 text-orange-400 mx-auto mb-3" />
-                                      <h3 className="text-lg font-medium text-orange-900">Məlumat Tapılmadı</h3>
-                                      <p className="text-orange-700">"{selectedSubject}" fənni üzrə hələlik heç bir nəticə mövcud deyil.</p>
+                                    <div className="text-center py-10 sm:py-12 bg-orange-50 rounded-lg border border-orange-100">
+                                      <Target className="h-10 w-10 sm:h-12 sm:w-12 text-orange-400 mx-auto mb-3" />
+                                      <h3 className="text-base sm:text-lg font-medium text-orange-900">Məlumat Tapılmadı</h3>
+                                      <p className="text-xs sm:text-sm text-orange-700">"{selectedSubject}" fənni üzrə hələlik heç bir nəticə mövcud deyil.</p>
                                     </div>
                                   )
                                 }
 
                                 const comparisonItems = [
-                                  { label: 'Şagirdin Nəticəsi', value: sub.averageScore, color: 'bg-blue-600', icon: User },
-                                  { label: 'Məktəb Ortalaması', value: sub.comparison.schoolAverage, color: 'bg-green-600', icon: GraduationCap },
-                                  { label: 'Bölgə Ortalaması', value: sub.comparison.regionAverage, color: 'bg-orange-600', icon: Target },
-                                  { label: 'Ölkə Ortalaması', value: sub.comparison.nationalAverage, color: 'bg-red-600', icon: Globe }
+                                  { label: 'Şagird', value: sub.averageScore, color: 'bg-blue-600', icon: User },
+                                  { label: 'Məktəb', value: sub.comparison.schoolAverage, color: 'bg-green-600', icon: GraduationCap },
+                                  { label: 'Bölgə', value: sub.comparison.regionAverage, color: 'bg-orange-600', icon: Target },
+                                  { label: 'Ölkə', value: sub.comparison.nationalAverage, color: 'bg-red-600', icon: Globe }
                                 ];
 
                                 return (
                                   <>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 w-full min-w-0 max-w-full">
                                       {comparisonItems.map((item, i) => (
-                                        <Card key={i} className="border-none shadow-sm bg-gray-50/50">
+                                        <Card key={i} className="border-none shadow-sm bg-gray-50/50 w-full min-w-0 overflow-hidden">
                                           <CardContent className="p-3 sm:p-4">
                                             <div className="flex items-center justify-between mb-1.5 sm:mb-2">
-                                              <item.icon className="h-4 w-4 text-gray-500" />
+                                              <item.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gray-500 shrink-0" />
                                               <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate ml-1">{item.label}</span>
                                             </div>
-                                            <div className="flex items-end gap-2">
-                                              <span className="text-xl sm:text-2xl font-bold">{Math.round(item.value)}%</span>
+                                            <div className="flex items-end gap-1.5 sm:gap-2">
+                                              <span className="text-lg sm:text-2xl font-bold shrink-0">{Math.round(item.value)}%</span>
                                               <div className="flex-1 h-2 bg-gray-200 rounded-full mb-1 overflow-hidden">
                                                 <div
                                                   className={`h-full ${item.color}`}
@@ -2095,7 +2095,7 @@ export default function ParentDashboard() {
                                       ))}
                                     </div>
 
-                                    <div className="h-[260px] sm:h-[350px] w-full mt-4 sm:mt-6">
+                                    <div className="h-[240px] sm:h-[350px] w-full max-w-full min-w-0 overflow-hidden mt-4 sm:mt-6">
                                       <ResponsiveContainer width="100%" height="100%">
                                         <BarChart
                                           data={[
@@ -2107,45 +2107,45 @@ export default function ParentDashboard() {
                                               national: sub.comparison.nationalAverage
                                             }
                                           ]}
-                                          margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+                                          margin={{ top: 10, right: 10, left: -15, bottom: 0 }}
                                         >
                                           <CartesianGrid strokeDasharray="3 3" vertical={false} />
                                           <XAxis dataKey="name" hide />
-                                          <YAxis domain={[0, 100]} />
+                                          <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
                                           <RechartsTooltip
                                             cursor={{ fill: 'transparent' }}
                                             contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
                                           />
-                                          <Legend verticalAlign="top" height={36} />
-                                          <Bar dataKey="student" fill="#3b82f6" name="Şagird" radius={[6, 6, 0, 0]} maxBarSize={40} />
-                                          <Bar dataKey="school" fill="#10b981" name="Məktəb" radius={[6, 6, 0, 0]} maxBarSize={40} />
-                                          <Bar dataKey="region" fill="#f59e0b" name="Bölgə" radius={[6, 6, 0, 0]} maxBarSize={40} />
-                                          <Bar dataKey="national" fill="#ef4444" name="Ölkə" radius={[6, 6, 0, 0]} maxBarSize={40} />
+                                          <Legend verticalAlign="top" height={36} wrapperStyle={{ fontSize: 11 }} />
+                                          <Bar dataKey="student" fill="#3b82f6" name="Şagird" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                                          <Bar dataKey="school" fill="#10b981" name="Məktəb" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                                          <Bar dataKey="region" fill="#f59e0b" name="Bölgə" radius={[4, 4, 0, 0]} maxBarSize={32} />
+                                          <Bar dataKey="national" fill="#ef4444" name="Ölkə" radius={[4, 4, 0, 0]} maxBarSize={32} />
                                         </BarChart>
                                       </ResponsiveContainer>
                                     </div>
 
-                                    <div className="grid md:grid-cols-2 gap-6 mt-8">
-                                      <Card className="bg-primary/5 border-primary/20">
-                                        <CardHeader className="pb-2">
-                                          <CardTitle className="text-sm flex items-center">
+                                    <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 w-full min-w-0 max-w-full">
+                                      <Card className="bg-primary/5 border-primary/20 w-full min-w-0 overflow-hidden">
+                                        <CardHeader className="pb-2 p-3.5 sm:p-6">
+                                          <CardTitle className="text-xs sm:text-sm flex items-center">
                                             <TrendingUp className="h-4 w-4 mr-2 text-primary" />
                                             Analiz: {selectedSubject}
                                           </CardTitle>
                                         </CardHeader>
-                                        <CardContent>
-                                          <div className="space-y-4">
-                                            <div className="p-4 bg-white rounded-xl shadow-sm space-y-3">
-                                              <div className="flex justify-between items-center text-sm">
-                                                <span className="text-gray-600">Ölkə ortalaması ilə müqayisə:</span>
-                                                <Badge className={sub.averageScore >= sub.comparison.nationalAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}>
+                                        <CardContent className="p-3.5 sm:p-6 pt-0 sm:pt-0">
+                                          <div className="space-y-3 sm:space-y-4">
+                                            <div className="p-3 sm:p-4 bg-white rounded-xl shadow-sm space-y-2.5 sm:space-y-3">
+                                              <div className="flex justify-between items-center text-xs sm:text-sm">
+                                                <span className="text-gray-600 truncate pr-2">Ölkə ilə müqayisə:</span>
+                                                <Badge className={`shrink-0 ${sub.averageScore >= sub.comparison.nationalAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
                                                   {sub.averageScore >= sub.comparison.nationalAverage ? "+" : ""}
                                                   {(sub.averageScore - sub.comparison.nationalAverage).toFixed(1)}%
                                                 </Badge>
                                               </div>
-                                              <div className="flex justify-between items-center text-sm">
-                                                <span className="text-gray-600">Bölgə ortalaması ilə müqayisə:</span>
-                                                <Badge className={sub.averageScore >= sub.comparison.regionAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}>
+                                              <div className="flex justify-between items-center text-xs sm:text-sm">
+                                                <span className="text-gray-600 truncate pr-2">Bölgə ilə müqayisə:</span>
+                                                <Badge className={`shrink-0 ${sub.averageScore >= sub.comparison.regionAverage ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
                                                   {sub.averageScore >= sub.comparison.regionAverage ? "+" : ""}
                                                   {(sub.averageScore - sub.comparison.regionAverage).toFixed(1)}%
                                                 </Badge>
@@ -2155,23 +2155,23 @@ export default function ParentDashboard() {
                                         </CardContent>
                                       </Card>
 
-                                      <Card className="border-blue-100 bg-blue-50/30">
-                                        <CardHeader className="pb-2">
-                                          <CardTitle className="text-sm flex items-center">
+                                      <Card className="border-blue-100 bg-blue-50/30 w-full min-w-0 overflow-hidden">
+                                        <CardHeader className="pb-2 p-3.5 sm:p-6">
+                                          <CardTitle className="text-xs sm:text-sm flex items-center">
                                             <Award className="h-4 w-4 mr-2 text-blue-600" />
                                             Xüsusi Tövsiyələr
                                           </CardTitle>
                                         </CardHeader>
-                                        <CardContent>
-                                          <ul className="text-sm space-y-3 text-gray-700">
-                                            <li className="flex items-start bg-white p-2 rounded-lg shadow-sm">
-                                              <span className="text-blue-600 mr-2 font-bold">1.</span>
+                                        <CardContent className="p-3.5 sm:p-6 pt-0 sm:pt-0">
+                                          <ul className="text-xs sm:text-sm space-y-2 sm:space-y-3 text-gray-700">
+                                            <li className="flex items-start bg-white p-2 sm:p-2.5 rounded-lg shadow-sm">
+                                              <span className="text-blue-600 mr-2 font-bold shrink-0">1.</span>
                                               <span>{sub.averageScore < sub.comparison.nationalAverage
                                                 ? `${selectedSubject} üzrə nəticələr ölkə ortalamasından aşağıdır. Bu fənnə daha çox vaxt ayrılmalıdır.`
                                                 : `${selectedSubject} üzrə nəticələr ölkə ortalamasından yüksəkdir! Bu tempdə davam etmək vacibdir.`}</span>
                                             </li>
-                                            <li className="flex items-start bg-white p-2 rounded-lg shadow-sm">
-                                              <span className="text-blue-600 mr-2 font-bold">2.</span>
+                                            <li className="flex items-start bg-white p-2 sm:p-2.5 rounded-lg shadow-sm">
+                                              <span className="text-blue-600 mr-2 font-bold shrink-0">2.</span>
                                               <span>Mütəxəssis rəyi üçün şagirdin müəllimi ilə ətraflı məsləhətləşin.</span>
                                             </li>
                                           </ul>
@@ -2187,44 +2187,44 @@ export default function ParentDashboard() {
                       </Card>
                       )}
                     </TabsContent>
-                    <TabsContent value="progress" className="space-y-6">
+                    <TabsContent value="progress" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                       {!canAccessTab('progressTab') ? (
                         renderTabOverlay("İnkişaf Tərəqqisi", "Aylıq tərəqqi və irəliləyiş qrafikini izləmək üçün premium hesaba keçid edin.")
                       ) : (
-                      <Card>
-                        <CardHeader>
-                          <CardTitle>İrəliləyiş Təhlili</CardTitle>
+                      <Card className="w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <CardTitle className="text-base sm:text-lg">İrəliləyiş Təhlili</CardTitle>
                         </CardHeader>
-                        <CardContent>
-                          <div className="space-y-6">
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
+                          <div className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full">
                             {/* Monthly Progress */}
                             <div>
-                              <h4 className="font-medium mb-3 sm:mb-4 text-sm sm:text-base">Bu Aylıq Performans</h4>
-                              <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                                <Card className="bg-blue-50">
+                              <h4 className="font-medium mb-2.5 sm:mb-4 text-xs sm:text-base">Bu Aylıq Performans</h4>
+                              <div className="grid grid-cols-2 gap-2.5 sm:gap-4 w-full min-w-0 max-w-full">
+                                <Card className="bg-blue-50 w-full min-w-0 overflow-hidden">
                                   <CardContent className="p-3 sm:p-4">
                                     <div className="flex items-center justify-between">
-                                      <div>
-                                        <p className="text-sm text-gray-600">Test Sayı</p>
-                                        <p className="text-2xl font-bold text-blue-600">
+                                      <div className="min-w-0">
+                                        <p className="text-xs sm:text-sm text-gray-600 truncate">Test Sayı</p>
+                                        <p className="text-xl sm:text-2xl font-bold text-blue-600">
                                           {studentStats.monthly.testsThisMonth}
                                         </p>
                                       </div>
-                                      <Calendar className="h-12 w-12 text-blue-600 opacity-50" />
+                                      <Calendar className="h-8 w-8 sm:h-12 sm:w-12 text-blue-600 opacity-50 shrink-0" />
                                     </div>
                                   </CardContent>
                                 </Card>
 
-                                <Card className="bg-green-50">
+                                <Card className="bg-green-50 w-full min-w-0 overflow-hidden">
                                   <CardContent className="p-3 sm:p-4">
                                     <div className="flex items-center justify-between">
-                                      <div>
-                                        <p className="text-sm text-gray-600">Orta Bal</p>
-                                        <p className="text-2xl font-bold text-green-600">
+                                      <div className="min-w-0">
+                                        <p className="text-xs sm:text-sm text-gray-600 truncate">Orta Bal</p>
+                                        <p className="text-xl sm:text-2xl font-bold text-green-600">
                                           {studentStats.monthly.averageThisMonth}%
                                         </p>
                                       </div>
-                                      <Target className="h-12 w-12 text-green-600 opacity-50" />
+                                      <Target className="h-8 w-8 sm:h-12 sm:w-12 text-green-600 opacity-50 shrink-0" />
                                     </div>
                                   </CardContent>
                                 </Card>
@@ -2233,17 +2233,17 @@ export default function ParentDashboard() {
 
                             {/* Progress Timeline */}
                             <div>
-                              <h4 className="font-medium mb-4">Son Testlər</h4>
-                              <div className="space-y-3">
+                              <h4 className="font-medium mb-3 sm:mb-4 text-xs sm:text-base">Son Testlər</h4>
+                              <div className="space-y-2.5 sm:space-y-3">
                                 {studentStats.recentTests.slice(0, 5).map((test: any, index: number) => (
-                                  <Card key={index}>
-                                    <CardContent className="p-4">
-                                      <div className="flex items-center justify-between">
-                                        <div className="flex-1">
-                                          <h5 className="font-medium text-sm">{test.textbook}</h5>
-                                          <p className="text-xs text-gray-600">{test.topic}</p>
+                                  <Card key={index} className="w-full min-w-0 overflow-hidden">
+                                    <CardContent className="p-3 sm:p-4">
+                                      <div className="flex items-center justify-between gap-2">
+                                        <div className="flex-1 min-w-0">
+                                          <h5 className="font-medium text-xs sm:text-sm truncate">{test.textbook}</h5>
+                                          <p className="text-[11px] sm:text-xs text-gray-600 truncate">{test.topic}</p>
                                         </div>
-                                        <Badge className={getScoreBadge(test.score).className}>{test.score}%</Badge>
+                                        <Badge className={`shrink-0 text-xs ${getScoreBadge(test.score).className}`}>{test.score}%</Badge>
                                       </div>
                                     </CardContent>
                                   </Card>
@@ -2257,33 +2257,33 @@ export default function ParentDashboard() {
                     </TabsContent>
 
                     {/* Activity Tab */}
-                    <TabsContent value="activity" className="space-y-6">
+                    <TabsContent value="activity" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                       {!canAccessTab('activityTab') ? (
                         renderTabOverlay("Son Aktivliklər", "Şagirdin etdiyi son testlərin siyahısı və detallarını görmək üçün premium hesaba keçid edin.")
                       ) : (
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="flex items-center">
+                      <Card className="w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <CardTitle className="flex items-center text-base sm:text-lg">
                             <Clock className="h-5 w-5 mr-2" />
                             Son Aktivliklər
                           </CardTitle>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                           {studentStats.recentActivity.length === 0 ? (
                             <p className="text-sm text-gray-600 text-center py-8">Aktivlik yoxdur</p>
                           ) : (
-                            <div className="space-y-3">
+                            <div className="space-y-2.5 sm:space-y-3">
                               {studentStats.recentActivity.map((activity) => (
-                                <Card key={activity.id}>
-                                  <CardContent className="p-4">
-                                    <div className="flex items-start justify-between">
-                                      <div className="flex-1">
-                                        <div className="flex items-center space-x-2 mb-1">
-                                          <BookOpen className="h-4 w-4 text-gray-600" />
-                                          <h5 className="font-medium text-sm">{activity.subject}</h5>
+                                <Card key={activity.id} className="w-full min-w-0 overflow-hidden">
+                                  <CardContent className="p-3 sm:p-4">
+                                    <div className="flex items-start justify-between gap-2">
+                                      <div className="flex-1 min-w-0">
+                                        <div className="flex items-center space-x-1.5 sm:space-x-2 mb-1">
+                                          <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gray-600 shrink-0" />
+                                          <h5 className="font-medium text-xs sm:text-sm truncate">{activity.subject}</h5>
                                         </div>
-                                        <p className="text-xs text-gray-600 mb-2">{activity.topic}</p>
-                                        <div className="flex items-center space-x-3 text-xs text-gray-500">
+                                        <p className="text-[11px] sm:text-xs text-gray-600 mb-1.5 truncate">{activity.topic}</p>
+                                        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px] sm:text-xs text-gray-500">
                                           <span className="flex items-center">
                                             <Calendar className="h-3 w-3 mr-1" />
                                             {activity.date}
@@ -2294,7 +2294,7 @@ export default function ParentDashboard() {
                                           </span>
                                         </div>
                                       </div>
-                                      <Badge className={getScoreBadge(activity.score).className}>{activity.score}%</Badge>
+                                      <Badge className={`shrink-0 text-xs ${getScoreBadge(activity.score).className}`}>{activity.score}%</Badge>
                                     </div>
                                   </CardContent>
                                 </Card>
@@ -2307,17 +2307,17 @@ export default function ParentDashboard() {
                     </TabsContent>
 
                     {/* Advanced Analytics Tab */}
-                    <TabsContent value="advanced" className="space-y-6">
-                      <Card className="bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200 shadow-sm">
-                        <CardHeader>
-                          <CardTitle className="text-amber-800 flex items-center gap-2">
+                    <TabsContent value="advanced" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
+                      <Card className="bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200 shadow-sm w-full min-w-0 overflow-hidden">
+                        <CardHeader className="p-4 sm:p-6">
+                          <CardTitle className="text-amber-800 flex items-center gap-2 text-sm sm:text-base">
                             ✨ Qabaqcıl Pedaqoji və Süni İntellekt Analitikası
                           </CardTitle>
-                          <CardDescription className="text-amber-700/80">
+                          <CardDescription className="text-amber-700/80 text-xs sm:text-sm">
                             Bu bölmədəki xüsusi hesabatlar rəhbərlik (Admin) tərəfindən idarə olunur.
                           </CardDescription>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="p-3 sm:p-6 pt-0 sm:pt-0 w-full min-w-0 max-w-full overflow-hidden">
                           <AnalyticsViewer 
                             topic={studentStats.recentTests && studentStats.recentTests.length > 0 ? studentStats.recentTests[0].topic : "Riyaziyyat və Məntiq"} 
                             grade={selectedStudentData?.studentClass || selectedStudentData?.class || "6"} 
@@ -2335,42 +2335,42 @@ export default function ParentDashboard() {
               }
 
               {/* 5-ci BLOK (Mobildə): Profil, Mesajlar, Çıxış, Unikal ID */}
-              <div className="md:hidden space-y-4 pt-1">
-                <Card className="border-none shadow-md bg-white/95 backdrop-blur p-4 rounded-2xl border border-gray-100">
-                  <div className="flex flex-col gap-3">
-                    <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-                      <div className="flex items-center gap-2">
+              <div className="md:hidden space-y-4 pt-1 w-full min-w-0 max-w-full overflow-hidden">
+                <Card className="border-none shadow-md bg-white/95 backdrop-blur p-4 rounded-2xl border border-gray-100 w-full min-w-0 max-w-full overflow-hidden">
+                  <div className="flex flex-col gap-3 w-full min-w-0">
+                    <div className="flex items-center justify-between pb-3 border-b border-gray-100 gap-2">
+                      <div className="flex items-center gap-2 min-w-0">
                         <Link href="/profile">
-                          <Button variant="outline" size="sm" className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl">
-                            <User className="h-4 w-4 text-primary" />
+                          <Button variant="outline" size="sm" className="gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-3.5 font-semibold text-xs rounded-xl">
+                            <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
                             Profil
                           </Button>
                         </Link>
                         <Button
                           variant={currentView === 'messages' ? 'default' : 'outline'}
                           size="sm"
-                          className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl"
+                          className="gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-3.5 font-semibold text-xs rounded-xl"
                           onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
                         >
-                          {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                          {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                           {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
                         </Button>
                       </div>
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="gap-1.5 h-10 px-3 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-xl font-medium text-xs"
+                        className="gap-1.5 h-9 sm:h-10 px-2.5 sm:px-3 text-red-600 hover:text-red-700 hover:bg-red-50 rounded-xl font-medium text-xs shrink-0"
                         onClick={handleLogout}
                       >
-                        <LogOut className="h-4 w-4" />
+                        <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                         Çıxış
                       </Button>
                     </div>
 
                     {/* Unikal Şəxsi ID */}
-                    <div className="flex items-center justify-between bg-amber-50/70 p-3 rounded-xl border border-amber-200/60">
-                      <span className="text-xs text-gray-600 font-medium">Şəxsi ID Kodunuz:</span>
-                      <span className="text-xs font-mono font-bold text-amber-800 px-2.5 py-1 bg-white rounded-lg border border-amber-200 tracking-wider select-all" title="Sizin Şəxsi ID Kodunuz">
+                    <div className="flex items-center justify-between bg-amber-50/70 p-2.5 sm:p-3 rounded-xl border border-amber-200/60 gap-2">
+                      <span className="text-xs text-gray-600 font-medium truncate">Şəxsi ID Kodunuz:</span>
+                      <span className="text-xs font-mono font-bold text-amber-800 px-2.5 py-1 bg-white rounded-lg border border-amber-200 tracking-wider select-all shrink-0" title="Sizin Şəxsi ID Kodunuz">
                         {getUserUniqueId(userData)}
                       </span>
                     </div>
@@ -2379,7 +2379,7 @@ export default function ParentDashboard() {
               </div>
 
               {/* Alt Reklam Sahəsi (Sonda yerləşən sponsorlu təhsil banneri) */}
-              <div className="pt-2">
+              <div className="pt-2 w-full max-w-full overflow-hidden">
                 <AdBanner
                   slot="parent-dashboard-bottom-banner"
                   format="large-banner"

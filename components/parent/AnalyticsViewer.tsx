@@ -93,7 +93,7 @@ export default function AnalyticsViewer({
   )
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8 w-full min-w-0 max-w-full overflow-hidden">
       {/* Premium Status Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5 rounded-2xl border border-amber-300/60 shadow-xs">
         <div className="flex items-center gap-3">

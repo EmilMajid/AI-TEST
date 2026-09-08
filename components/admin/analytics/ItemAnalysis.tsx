@@ -156,7 +156,7 @@ export default function ItemAnalysis({ topic, grade = "6", studentStats, student
           </div>
         </CardHeader>
         <CardContent>
-          <div className="rounded-lg border border-slate-200 overflow-hidden">
+          <div className="rounded-lg border border-slate-200 overflow-x-auto w-full max-w-full">
             <Table>
               <TableHeader className="bg-slate-50">
                 <TableRow>
