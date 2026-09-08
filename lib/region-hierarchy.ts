@@ -222,7 +222,7 @@ export const getRegionHierarchy = (regionName: string): RegionHierarchy | null =
 
 export const hasSubRegions = (regionName: string): boolean => {
   const region = regionHierarchy[regionName]
-  return region ? region.subRegions && region.subRegions.length > 0 : false
+  return Boolean(region?.subRegions && region.subRegions.length > 0)
 }
 
 export const getSubRegions = (regionName: string): SubRegion[] => {

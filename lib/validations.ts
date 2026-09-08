@@ -140,8 +140,8 @@ export const testResultsSchema = z.object({
   completedAt: z.string().datetime(),
 })
 
-export type UserRegistrationData = z.infer<typeof userRegistrationSchema>
-export type ParentRegistrationData = z.infer<typeof parentRegistrationSchema>
+export type UserRegistrationData = z.input<typeof userRegistrationSchema>
+export type ParentRegistrationData = z.input<typeof parentRegistrationSchema>
 export type TestData = z.infer<typeof testDataSchema>
 export type Question = z.infer<typeof questionSchema>
 export type TestResults = z.infer<typeof testResultsSchema>

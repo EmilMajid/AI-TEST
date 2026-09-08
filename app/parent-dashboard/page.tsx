@@ -567,8 +567,8 @@ export default function ParentDashboard() {
               score: Number(t.score) || 0,
               subject: t.textbook || "Fənn",
             })),
-            weakAreas: subjectBreakdown.filter((s) => s.averageScore < 65).slice(0, 3),
-            strongAreas: subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3),
+            weakAreas: subjectBreakdown.filter((s) => s.averageScore < 65).slice(0, 3).map((s) => ({ subject: s.subject, averageScore: s.averageScore, testCount: s.count })),
+            strongAreas: subjectBreakdown.filter((s) => s.averageScore >= 80).slice(0, 3).map((s) => ({ subject: s.subject, averageScore: s.averageScore, testCount: s.count })),
             recentActivity,
             monthly: {
               testsThisMonth: totalTests,
@@ -1164,8 +1164,8 @@ export default function ParentDashboard() {
           <MessagesTab userId={userData.id} userRole={userData.accountType} />
         ) : (
           <div className="grid lg:grid-cols-4 gap-8">
-            {/* Sidebar - Student List */}
-            <div className="lg:col-span-1">
+            {/* Sidebar - Student List (Desktop Only) */}
+            <div className="hidden lg:block lg:col-span-1">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
@@ -1496,7 +1496,70 @@ export default function ParentDashboard() {
             </div>
 
             {/* Main Content - Student Details */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 space-y-4 sm:space-y-6">
+              {/* Mobile Child Switcher & Quick Actions (lg:hidden) */}
+              <div className="lg:hidden bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-gray-100 shadow-sm space-y-2.5">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Users className="h-4 w-4 text-primary" />
+                    <span className="text-sm font-bold text-gray-900">Övladlarınız</span>
+                    <Badge variant="secondary" className="text-[11px] px-1.5 py-0">{linkedStudents.length}</Badge>
+                  </div>
+                  <Button 
+                    size="sm" 
+                    className={`h-7 px-2.5 text-xs gap-1 shadow-xs ${themeClasses.primary}`}
+                    onClick={() => {
+                      setCreatedCredentials(null)
+                      setIsAddStudentOpen(true)
+                    }}
+                  >
+                    <Plus className="h-3 w-3" />
+                    <span>Şagird Əlavə Et</span>
+                  </Button>
+                </div>
+
+                {linkedStudents.length === 0 ? (
+                  <div className="text-center py-4 border border-dashed rounded-xl bg-gray-50/50">
+                    <p className="text-xs text-muted-foreground">Hələ heç bir şagird əlavə olunmayıb.</p>
+                  </div>
+                ) : (
+                  <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+                    {linkedStudents.map((student) => {
+                      const isSelected = selectedStudent === student.studentId
+                      return (
+                        <button
+                          key={student.id}
+                          type="button"
+                          onClick={() => handleStudentSelect(student.studentId)}
+                          className={`shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl text-left transition-all border ${
+                            isSelected
+                              ? "bg-primary/10 border-primary shadow-xs ring-1 ring-primary text-primary"
+                              : "bg-white border-gray-200 text-gray-700 hover:bg-gray-50"
+                          }`}
+                        >
+                          <div className={`h-8 w-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 ${
+                            isSelected ? "bg-primary text-white" : "bg-gray-100 text-gray-600"
+                          }`}>
+                            {student.studentName?.charAt(0) || "Ş"}
+                          </div>
+                          <div className="min-w-0 pr-1 text-left">
+                            <p className="text-xs font-semibold truncate max-w-[130px]">
+                              {student.studentName}
+                            </p>
+                            <p className="text-[10px] text-gray-500 truncate">
+                              {student.studentClass}-ci sinif
+                            </p>
+                          </div>
+                          {isSelected && (
+                            <CheckCircle className="h-4 w-4 text-primary shrink-0" />
+                          )}
+                        </button>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
+
               {isLoading ? (
                 <Card className="text-center py-16">
                   <CardContent>
@@ -1505,20 +1568,32 @@ export default function ParentDashboard() {
                   </CardContent>
                 </Card>
               ) : !selectedStudent || !studentStats ? (
-                <Card className="text-center py-16">
+                <Card className="text-center py-12 sm:py-16">
                   <CardContent>
-                    <Eye className="h-16 w-16 mx-auto mb-4 text-gray-400" />
-                    <h3 className="text-lg font-semibold mb-2">Şagird Seçin</h3>
-                    <p className="text-gray-600">Nəticələri görmək üçün sol tərəfdən bir şagird seçin</p>
+                    <Eye className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-3 sm:mb-4 text-gray-400" />
+                    <h3 className="text-base sm:text-lg font-semibold mb-2">Şagird Seçin</h3>
+                    <p className="text-xs sm:text-sm text-gray-600">Nəticələri görmək üçün {linkedStudents.length > 0 ? "yuxarıdakı zolaqdan bir şagird seçin" : "şagird əlavə edin"}</p>
                     {linkedStudents.length > 0 ? (
-                      <p className="text-xs text-blue-500 mt-2 font-medium">Cəmi {linkedStudents.length} şagird tapıldı. Seçim edin.</p>
+                      <p className="text-xs text-blue-500 mt-2 font-medium">Cəmi {linkedStudents.length} şagird tapıldı. Toxunaraq seçim edin.</p>
                     ) : (
-                      <p className="text-xs text-red-500 mt-2">Heç bir şagird tapılmadı. Zəhmət olmasa "Şagird Əlavə Et" düyməsini istifadə edin.</p>
+                      <div className="mt-4">
+                        <Button 
+                          size="sm"
+                          className={themeClasses.primary}
+                          onClick={() => {
+                            setCreatedCredentials(null)
+                            setIsAddStudentOpen(true)
+                          }}
+                        >
+                          <Plus className="h-4 w-4 mr-1" />
+                          Şagird Əlavə Et
+                        </Button>
+                      </div>
                     )}
                   </CardContent>
                 </Card>
               ) : (
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {/* Student Header */}
                   <Card>
                     <CardHeader className="p-4 sm:p-6">
@@ -1675,15 +1750,31 @@ export default function ParentDashboard() {
 
                   {/* Tabs - Scrollable on mobile, full grid on xl */}
                   <Tabs defaultValue="overview" className="space-y-4 sm:space-y-6">
-                    <div className="w-full overflow-x-auto pb-1.5 scrollbar-none">
-                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1 p-1 bg-slate-100/90 rounded-xl">
-                        <TabsTrigger value="overview" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Ümumi</TabsTrigger>
-                        <TabsTrigger value="subjects" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Fənlər</TabsTrigger>
-                        <TabsTrigger value="comparison" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Müqayisə</TabsTrigger>
-                        <TabsTrigger value="progress" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Tərəqqi</TabsTrigger>
-                        <TabsTrigger value="activity" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap">Aktivlik</TabsTrigger>
-                        <TabsTrigger value="advanced" className="px-3 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap bg-gradient-to-r from-amber-100 to-orange-100 text-amber-900 border border-amber-300 font-semibold shadow-xs">
-                          ✨ Premium Analitika
+                    <div className="w-full overflow-x-auto pb-1.5 scrollbar-none sticky top-14 sm:top-0 z-20 bg-slate-50/95 backdrop-blur-md py-1.5">
+                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1.5 p-1 bg-slate-200/80 rounded-xl shadow-xs">
+                        <TabsTrigger value="overview" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
+                          <BarChart3 className="h-3.5 w-3.5" />
+                          <span>Ümumi</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="subjects" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
+                          <BookOpen className="h-3.5 w-3.5" />
+                          <span>Fənlər</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="comparison" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
+                          <Target className="h-3.5 w-3.5" />
+                          <span>Müqayisə</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="progress" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
+                          <TrendingUp className="h-3.5 w-3.5" />
+                          <span>Tərəqqi</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="activity" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
+                          <Clock className="h-3.5 w-3.5" />
+                          <span>Aktivlik</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="advanced" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center bg-gradient-to-r from-amber-100 to-orange-100 text-amber-900 border border-amber-300 font-semibold shadow-xs">
+                          <Sparkles className="h-3.5 w-3.5 text-amber-600" />
+                          <span>Premium</span>
                         </TabsTrigger>
                       </TabsList>
                     </div>
@@ -1769,16 +1860,18 @@ export default function ParentDashboard() {
                           {studentStats.performanceTrend.length === 0 ? (
                             <p className="text-sm text-gray-600 text-center py-8">Məlumat yoxdur</p>
                           ) : (
-                            <ResponsiveContainer width="100%" height={300}>
-                              <LineChart data={studentStats.performanceTrend}>
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="date" />
-                                <YAxis domain={[0, 100]} />
-                                <RechartsTooltip />
-                                <Legend />
-                                <Line type="monotone" dataKey="score" stroke="#3b82f6" name="Bal" />
-                              </LineChart>
-                            </ResponsiveContainer>
+                            <div className="w-full h-[260px] sm:h-[300px] overflow-hidden">
+                              <ResponsiveContainer width="100%" height="100%">
+                                <LineChart data={studentStats.performanceTrend}>
+                                  <CartesianGrid strokeDasharray="3 3" />
+                                  <XAxis dataKey="date" tick={{ fontSize: 10 }} />
+                                  <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
+                                  <RechartsTooltip />
+                                  <Legend wrapperStyle={{ fontSize: 11 }} />
+                                  <Line type="monotone" dataKey="score" stroke="#3b82f6" name="Bal" />
+                                </LineChart>
+                              </ResponsiveContainer>
+                            </div>
                           )}
                         </CardContent>
                       </Card>
@@ -1803,17 +1896,17 @@ export default function ParentDashboard() {
                             <div className="space-y-4">
                               {studentStats.subjectBreakdown.map((subject, index) => (
                                 <Card key={index}>
-                                  <CardContent className="p-4">
-                                    <div className="flex items-center justify-between mb-2">
-                                      <h4 className="font-medium">{subject.subject}</h4>
-                                      <div className="flex items-center space-x-4">
-                                        <Badge variant="outline">{subject.count} test</Badge>
-                                        <Badge className={getScoreBadge(subject.averageScore).className}>
+                                  <CardContent className="p-3.5 sm:p-4">
+                                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                      <h4 className="font-medium text-sm sm:text-base">{subject.subject}</h4>
+                                      <div className="flex items-center gap-2 shrink-0">
+                                        <Badge variant="outline" className="text-xs">{subject.count} test</Badge>
+                                        <Badge className={`text-xs ${getScoreBadge(subject.averageScore).className}`}>
                                           {subject.averageScore}%
                                         </Badge>
                                       </div>
                                     </div>
-                                    <Progress value={subject.averageScore} className="h-3" />
+                                    <Progress value={subject.averageScore} className="h-2.5 sm:h-3" />
                                   </CardContent>
                                 </Card>
                               ))}
@@ -1828,16 +1921,18 @@ export default function ParentDashboard() {
                           <CardTitle>Fənn Müqayisəsi</CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <ResponsiveContainer width="100%" height={300}>
-                            <BarChart data={studentStats.subjectBreakdown}>
-                              <CartesianGrid strokeDasharray="3 3" />
-                              <XAxis dataKey="subject" />
-                              <YAxis domain={[0, 100]} />
-                              <RechartsTooltip />
-                              <Legend />
-                              <Bar dataKey="averageScore" fill="#3b82f6" name="Orta Bal" />
-                            </BarChart>
-                          </ResponsiveContainer>
+                          <div className="w-full h-[260px] sm:h-[300px] overflow-hidden">
+                            <ResponsiveContainer width="100%" height="100%">
+                              <BarChart data={studentStats.subjectBreakdown}>
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="subject" tick={{ fontSize: 10 }} />
+                                <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
+                                <RechartsTooltip />
+                                <Legend wrapperStyle={{ fontSize: 11 }} />
+                                <Bar dataKey="averageScore" fill="#3b82f6" name="Orta Bal" />
+                              </BarChart>
+                            </ResponsiveContainer>
+                          </div>
                         </CardContent>
                       </Card>
                       </>
@@ -1954,10 +2049,10 @@ export default function ParentDashboard() {
                                             contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
                                           />
                                           <Legend verticalAlign="top" height={36} />
-                                          <Bar dataKey="student" fill="#3b82f6" name="Şagird" radius={[6, 6, 0, 0]} barSize={60} />
-                                          <Bar dataKey="school" fill="#10b981" name="Məktəb" radius={[6, 6, 0, 0]} barSize={60} />
-                                          <Bar dataKey="region" fill="#f59e0b" name="Bölgə" radius={[6, 6, 0, 0]} barSize={60} />
-                                          <Bar dataKey="national" fill="#ef4444" name="Ölkə" radius={[6, 6, 0, 0]} barSize={60} />
+                                          <Bar dataKey="student" fill="#3b82f6" name="Şagird" radius={[6, 6, 0, 0]} maxBarSize={40} />
+                                          <Bar dataKey="school" fill="#10b981" name="Məktəb" radius={[6, 6, 0, 0]} maxBarSize={40} />
+                                          <Bar dataKey="region" fill="#f59e0b" name="Bölgə" radius={[6, 6, 0, 0]} maxBarSize={40} />
+                                          <Bar dataKey="national" fill="#ef4444" name="Ölkə" radius={[6, 6, 0, 0]} maxBarSize={40} />
                                         </BarChart>
                                       </ResponsiveContainer>
                                     </div>
