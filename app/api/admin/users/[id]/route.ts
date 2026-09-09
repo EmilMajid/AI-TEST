@@ -7,6 +7,55 @@ import { getTestResultsForStudent } from "@/lib/test-result-store"
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const userId = params.id
     const allUsers = getAllUsers()
+
+    // 1. Supabase User cədvəlindən bütün istifadəçiləri allUsers-ə sinxronlaşdır
+    try {
+        if (supabaseAdmin) {
+            const { data: suUsers } = await supabaseAdmin.from("User").select("*")
+            if (suUsers && suUsers.length > 0) {
+                for (const su of suUsers) {
+                    const emailKey = (su.email || "").toLowerCase().trim()
+                    const existing = allUsers.find(
+                        (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(su.id)
+                    )
+                    const suIsMock = isMockUser(su)
+                    const suSource = su.accountType === "admin" ? "admin" : (suIsMock ? "mock" : "real")
+                    if (existing) {
+                        if (su.firstName) existing.firstName = su.firstName
+                        if (su.lastName) existing.lastName = su.lastName
+                        if (su.fatherName) existing.fatherName = su.fatherName
+                        if (su.school) existing.school = su.school
+                        if (su.class) existing.class = String(su.class)
+                        if (su.region) existing.region = su.region
+                        if (su.accountType) {
+                            existing.accountType = su.accountType
+                            existing.role = su.accountType
+                        }
+                        existing.source = suSource
+                    } else {
+                        allUsers.push({
+                            id: su.id,
+                            email: su.email,
+                            firstName: su.firstName || "",
+                            lastName: su.lastName || "",
+                            fatherName: su.fatherName || "",
+                            school: su.school || "",
+                            class: su.class ? String(su.class) : undefined,
+                            region: su.region || "Bakı",
+                            accountType: su.accountType || "student",
+                            role: su.accountType || "student",
+                            status: "active",
+                            isBlocked: false,
+                            source: suSource,
+                        })
+                    }
+                }
+            }
+        }
+    } catch (sbErr) {
+        console.error("Supabase allUsers sync error in user detail:", sbErr)
+    }
+
     let user = allUsers.find(
         (u) =>
             String(u.id) === String(userId) ||
@@ -230,10 +279,24 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             const { data: suLinks } = await supabaseAdmin.from("ParentStudentLink").select("*")
             if (suLinks && suLinks.length > 0) {
                 for (const sl of suLinks) {
-                    if (!allLinks.some((l) => String(l.parentId) === String(sl.parentId) && String(l.studentId) === String(sl.studentId))) {
+                    const parent = allUsers.find((u) => String(u.id) === String(sl.parentId))
+                    const student = allUsers.find((u) => String(u.id) === String(sl.studentId))
+                    if (!allLinks.some((l) => 
+                        (String(l.parentId) === String(sl.parentId) || (parent?.email && l.parentEmail?.toLowerCase() === parent.email.toLowerCase())) &&
+                        (String(l.studentId) === String(sl.studentId) || (student?.email && l.student?.email?.toLowerCase() === student.email.toLowerCase()))
+                    )) {
                         allLinks.push({
                             parentId: sl.parentId,
+                            parentEmail: parent?.email,
                             studentId: sl.studentId,
+                            student: student ? {
+                                id: student.id,
+                                email: student.email,
+                                firstName: student.firstName,
+                                lastName: student.lastName,
+                                class: student.class,
+                                school: student.school
+                            } : undefined
                         })
                     }
                 }
@@ -244,7 +307,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
     }
 
     if (userRole === 'student') {
-        let parent = allUsers.find(u => String(u.id) === String((user as any).parentId))
+        let parent = allUsers.find(u => String(u.id) === String((user as any).parentId) || (supabaseUser?.id && String(u.id) === String((supabaseUser as any).parentId)))
         if (!parent && (user as any).parentEmail) {
             parent = allUsers.find(u => u.email && u.email.toLowerCase() === (user as any).parentEmail?.toLowerCase())
         }
@@ -271,7 +334,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             }
 
             // 1. Şagirdin profilindəki birbaşa parentId
-            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (String((c as any).parentId) === "parent-rufat" && user.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
+            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (supabaseUser?.id && String((c as any).parentId) === String(supabaseUser.id)) || (String((c as any).parentId) === "parent-rufat" && user.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
                 return true
             }
             // 2. Şagirdin profilindəki birbaşa parentEmail

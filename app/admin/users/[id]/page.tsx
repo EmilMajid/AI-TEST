@@ -174,40 +174,52 @@ export default function AdminUserProfilePage() {
                         </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                        {/* Parent View */}
-                        {relations.children && (
+                        {/* Parent View (Övladlar) */}
+                        {((user.role === 'parent' || user.accountType === 'parent') && relations.children && relations.children.length > 0) && (
                             <div>
-                                <h4 className="text-sm font-medium text-slate-500 mb-2">Övladlar</h4>
+                                <h4 className="text-sm font-medium text-slate-500 mb-2">Övladlar ({relations.children.length})</h4>
                                 {relations.children.map((child: any) => (
-                                    <div key={child.id} className="flex items-center gap-3 p-3 border rounded-lg mb-2">
-                                        <div className="h-8 w-8 bg-green-100 rounded-full flex items-center justify-center text-green-700 font-bold">
-                                            {child.firstName[0]}
+                                    <div key={child.id} className="flex items-center gap-3 p-3 border rounded-lg mb-2 bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                                        <div className="h-9 w-9 bg-green-100 rounded-full flex items-center justify-center text-green-700 font-bold text-sm shrink-0">
+                                            {child.firstName?.[0] || 'Ş'}
                                         </div>
-                                        <div>
-                                            <div className="font-medium">{child.firstName} {child.lastName}</div>
-                                            <div className="text-xs text-slate-500">{child.class}-ci sinif</div>
+                                        <div className="min-w-0 flex-1">
+                                            <div className="font-medium text-slate-900 truncate">{child.firstName} {child.lastName}</div>
+                                            <div className="text-xs text-slate-500 truncate">
+                                                {child.class ? `${child.class}-ci sinif` : 'Şagird'}
+                                                {child.school ? ` • ${child.school}` : ''}
+                                                {child.email ? ` • ${child.email}` : ''}
+                                            </div>
                                         </div>
-                                        <Button size="sm" variant="ghost" className="ml-auto" onClick={() => router.push(`/admin/users/${child.id}`)}>Bax</Button>
+                                        <Button size="sm" variant="outline" className="ml-auto text-blue-600 hover:text-blue-700 hover:bg-blue-50 shrink-0" onClick={() => router.push(`/admin/users/${child.id}`)}>
+                                            Profilə Bax
+                                        </Button>
                                     </div>
                                 ))}
                             </div>
                         )}
 
-                        {/* Student View */}
-                        {user.role === 'student' && (
+                        {/* Student View (Valideyn və Müəllim) */}
+                        {(user.role === 'student' || user.accountType === 'student') && (
                             <>
                                 {relations.parent && (
                                     <div>
                                         <h4 className="text-sm font-medium text-slate-500 mb-2">Valideyn</h4>
-                                        <div className="flex items-center gap-3 p-3 border rounded-lg">
-                                            <div className="h-8 w-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-700 font-bold">
-                                                {relations.parent.firstName[0]}
+                                        <div className="flex items-center gap-3 p-3 border rounded-lg bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                                            <div className="h-9 w-9 bg-orange-100 rounded-full flex items-center justify-center text-orange-700 font-bold text-sm shrink-0">
+                                                {relations.parent.firstName?.[0] || 'V'}
                                             </div>
-                                            <div>
-                                                <div className="font-medium">{relations.parent.firstName} {relations.parent.lastName}</div>
-                                                <div className="text-xs text-slate-500">Valideyn</div>
+                                            <div className="min-w-0 flex-1">
+                                                <div className="font-medium text-slate-900 truncate">{relations.parent.firstName} {relations.parent.lastName}</div>
+                                                <div className="text-xs text-slate-500 truncate">
+                                                    Valideyn
+                                                    {relations.parent.email ? ` • ${relations.parent.email}` : ''}
+                                                    {relations.parent.school ? ` • ${relations.parent.school}` : ''}
+                                                </div>
                                             </div>
-                                            <Button size="sm" variant="ghost" className="ml-auto" onClick={() => router.push(`/admin/users/${relations.parent.id}`)}>Bax</Button>
+                                            <Button size="sm" variant="outline" className="ml-auto text-blue-600 hover:text-blue-700 hover:bg-blue-50 shrink-0" onClick={() => router.push(`/admin/users/${relations.parent.id}`)}>
+                                                Profilə Bax
+                                            </Button>
                                         </div>
                                     </div>
                                 )}
@@ -215,23 +227,27 @@ export default function AdminUserProfilePage() {
                                 {relations.teacher && (
                                     <div className="mt-4">
                                         <h4 className="text-sm font-medium text-slate-500 mb-2">Sinif Rəhbəri</h4>
-                                        <div className="flex items-center gap-3 p-3 border rounded-lg">
-                                            <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold">
-                                                {relations.teacher.firstName[0]}
+                                        <div className="flex items-center gap-3 p-3 border rounded-lg bg-slate-50/50 hover:bg-slate-50 transition-colors">
+                                            <div className="h-9 w-9 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-sm shrink-0">
+                                                {relations.teacher.firstName?.[0] || 'M'}
                                             </div>
-                                            <div>
-                                                <div className="font-medium">{relations.teacher.firstName} {relations.teacher.lastName}</div>
-                                                <div className="text-xs text-slate-500">Müəllim</div>
+                                            <div className="min-w-0 flex-1">
+                                                <div className="font-medium text-slate-900 truncate">{relations.teacher.firstName} {relations.teacher.lastName}</div>
+                                                <div className="text-xs text-slate-500 truncate">Müəllim</div>
                                             </div>
-                                            <Button size="sm" variant="ghost" className="ml-auto" onClick={() => router.push(`/admin/users/${relations.teacher.id}`)}>Bax</Button>
+                                            <Button size="sm" variant="outline" className="ml-auto text-blue-600 hover:text-blue-700 hover:bg-blue-50 shrink-0" onClick={() => router.push(`/admin/users/${relations.teacher.id}`)}>
+                                                Profilə Bax
+                                            </Button>
                                         </div>
                                     </div>
                                 )}
                             </>
                         )}
 
-                        {!relations.children && !relations.parent && !relations.teacher && (
-                            <div className="text-slate-400 italic text-sm">Heç bir əlaqə tapılmadı</div>
+                        {(!relations.children || relations.children.length === 0) && !relations.parent && !relations.teacher && (
+                            <div className="p-4 bg-slate-50 border border-dashed border-slate-200 rounded-lg text-center text-slate-400 italic text-sm">
+                                Heç bir əlaqəli şəxs (valideyn və ya övlad) tapılmadı
+                            </div>
                         )}
                     </CardContent>
                 </Card>
