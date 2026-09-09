@@ -1,7 +1,7 @@
 -- ====================================================================
 -- SUPABASE BÜTÜN ADVISOR XƏBƏRDARLIQLARININ HƏLLİ (COMPLETE FIX)
 -- Layihə: hkwppwinuyxznjnkdius (testai.az)
--- Bütün 14 Xəbərdarlığı Birdəfəlik Həll Edən Master Skript
+-- Bütün 14 Xəbərdarlığı Birdəfəlik Həll Edən Təmizlənmiş Master Skript
 -- ====================================================================
 
 -- --------------------------------------------------------------------
@@ -10,7 +10,7 @@
 -- --------------------------------------------------------------------
 
 -- 1.1 "User" cədvəli: RLS aktivləşdirilir və kənar anonim giriş bağlanır
-ALTER TABLE IF EXISTS public."User" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."User" ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "Deny public anon access to User" ON public."User";
 DROP POLICY IF EXISTS "Deny public access to User" ON public."User";
@@ -22,7 +22,7 @@ USING (false)
 WITH CHECK (false);
 
 -- 1.2 "ParentStudentLink" cədvəli: RLS aktivləşdirilir
-ALTER TABLE IF EXISTS public."ParentStudentLink" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."ParentStudentLink" ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "Deny public anon access to ParentStudentLink" ON public."ParentStudentLink";
 DROP POLICY IF EXISTS "Deny public access to ParentStudentLink" ON public."ParentStudentLink";
@@ -34,7 +34,7 @@ USING (false)
 WITH CHECK (false);
 
 -- 1.3 "TestResult" cədvəli: RLS aktivləşdirilir
-ALTER TABLE IF EXISTS public."TestResult" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."TestResult" ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "Deny public anon access to TestResult" ON public."TestResult";
 DROP POLICY IF EXISTS "Deny public access to TestResult" ON public."TestResult";
@@ -60,6 +60,8 @@ DROP POLICY IF EXISTS "Authenticated users can create profile during signup" ON 
 DROP POLICY IF EXISTS "profiles_select_own" ON public.profiles;
 DROP POLICY IF EXISTS "profiles_update_own" ON public.profiles;
 DROP POLICY IF EXISTS "Users can view own profile" ON public.profiles;
+DROP POLICY IF EXISTS "Users can update own profile" ON public.profiles;
+DROP POLICY IF EXISTS "Users can insert own profile" ON public.profiles;
 
 -- profiles üçün optimallaşdırılmış RLS siyasətləri
 CREATE POLICY "Users can view own profile" ON public.profiles
@@ -82,6 +84,7 @@ DROP POLICY IF EXISTS "Users can insert test results" ON public.test_results;
 DROP POLICY IF EXISTS "results_select_own" ON public.test_results;
 DROP POLICY IF EXISTS "results_insert_own" ON public.test_results;
 DROP POLICY IF EXISTS "Users can view own test results" ON public.test_results;
+DROP POLICY IF EXISTS "Users can insert own test results" ON public.test_results;
 
 -- test_results üçün optimallaşdırılmış RLS siyasətləri
 CREATE POLICY "Users can view own test results" ON public.test_results
@@ -99,7 +102,7 @@ CREATE POLICY "Users can insert own test results" ON public.test_results
 -- Hədəf: 'student_parent_links'
 -- --------------------------------------------------------------------
 
-ALTER TABLE IF EXISTS public.student_parent_links ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.student_parent_links ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "Parents can view their linked students" ON public.student_parent_links;
 DROP POLICY IF EXISTS "Students can view their linked parents" ON public.student_parent_links;
@@ -126,7 +129,6 @@ CREATE POLICY "Users can manage own links" ON public.student_parent_links
 -- --------------------------------------------------------------------
 -- HİSSƏ 4: UNINDEXED FOREIGN KEYS (İndekssiz Xarici Açarlar)
 -- Supabase Xəbərdarlığı: Cədvəllərdə xarici açarlar indekslənməyib.
--- Bu, performans itkisinə və kaskad əməliyyatlarda donmaya səbəb olur.
 -- Hədəf: 'ParentStudentLink', 'TestResult', 'student_parent_links', 'test_results'
 -- --------------------------------------------------------------------
 
@@ -151,26 +153,3 @@ CREATE INDEX IF NOT EXISTS idx_student_parent_links_parent_id
 -- 4.4 "test_results" üçün indeks
 CREATE INDEX IF NOT EXISTS idx_test_results_user_id 
   ON public.test_results(user_id);
-
-
--- --------------------------------------------------------------------
--- HİSSƏ 5: DİGƏR YARDIMÇI CƏDVƏLLƏR (Platform Settings & Logs)
--- --------------------------------------------------------------------
-ALTER TABLE IF EXISTS public.platform_settings ENABLE ROW LEVEL SECURITY;
-ALTER TABLE IF EXISTS public.platform_logs ENABLE ROW LEVEL SECURITY;
-
-DROP POLICY IF EXISTS "Allow anon read platform_settings" ON public.platform_settings;
-CREATE POLICY "Allow anon read platform_settings"
-ON public.platform_settings
-FOR SELECT
-TO anon, authenticated
-USING (true);
-
--- ====================================================================
--- NƏTİCƏ:
--- Bu skript icra edildikdən sonra Supabase Security Advisor-da olan
--- 14 xəbərdarlığın (4 Kritik, 5 Auth RLS, 1 No Policy, 4 Unindexed FK)
--- HAMISI tamamilə yaşıl / həll edilmiş olacaq.
--- Next.js backend sistemimiz 'service_role' açarı ilə işlədiyi üçün
--- saytın heç bir funksiyası dayanmayacaq, lakin kənar hakerlər bloklanacaq.
--- ====================================================================
