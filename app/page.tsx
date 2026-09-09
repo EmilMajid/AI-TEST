@@ -105,7 +105,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </main>
 
         {/* Bizi Sosial Şəbəkələrdə İzləyin (Community Section) */}
         <div className="mt-14 sm:mt-20 bg-gradient-to-br from-primary/10 via-purple-500/5 to-pink-500/10 rounded-2xl border border-primary/20 p-6 sm:p-10 shadow-sm relative overflow-hidden">
