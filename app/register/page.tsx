@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BookOpen, ArrowLeft, Loader2, Info, MapPin, Users, GraduationCap, Lock, AlertTriangle } from "lucide-react"
+import { BookOpen, ArrowLeft, Loader2, Info, MapPin, Users, GraduationCap, Lock, AlertTriangle, Instagram, Facebook, Mail, Youtube } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -871,6 +871,51 @@ export default function RegisterPage() {
                         Giriş edin
                       </Link>
                     </p>
+                  </div>
+
+                  {/* Dəstək və Sosial Şəbəkələr */}
+                  <div className="mt-6 pt-5 border-t border-slate-200/80 text-center space-y-2">
+                    <p className="text-xs text-slate-500">
+                      Qeydiyyat zamanı kömək lazımdır? Dəstək:{" "}
+                      <a
+                        href="mailto:aztestai.az@gmail.com"
+                        className="font-semibold text-slate-700 hover:text-primary transition-colors underline"
+                      >
+                        aztestai.az@gmail.com
+                      </a>
+                    </p>
+                    <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 text-xs text-slate-500">
+                      <span>Sosial şəbəkələrimiz:</span>
+                      <a
+                        href="https://www.instagram.com/testai.az/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 font-medium text-pink-600 hover:text-pink-700 transition-colors"
+                      >
+                        <Instagram className="w-3.5 h-3.5" />
+                        <span>Instagram</span>
+                      </a>
+                      <span>•</span>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61594359745552"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                      >
+                        <Facebook className="w-3.5 h-3.5" />
+                        <span>Facebook</span>
+                      </a>
+                      <span>•</span>
+                      <a
+                        href="https://www.youtube.com/channel/UCSsFhuYKk6MHdLna05kfJrA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 font-medium text-red-600 hover:text-red-700 transition-colors"
+                      >
+                        <Youtube className="w-3.5 h-3.5" />
+                        <span>YouTube</span>
+                      </a>
+                    </div>
                   </div>
                 </CardContent>
               </Card>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { ArrowLeft, AlertCircle, Lock, X, Sparkles, ShieldCheck } from "lucide-react"
+import { ArrowLeft, AlertCircle, Lock, X, Sparkles, ShieldCheck, Instagram, Facebook, Mail, Youtube } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useTheme } from "@/hooks/use-theme"
@@ -49,7 +49,7 @@ export default function LoginPage() {
       setRestrictedModal({
         open: true,
         title: `${role.label} Kabineti Hazırlıq Mərhələsindədir`,
-        desc: `Hörmətli ${role.label}, hal-hazırda ${role.label.toLowerCase()} kabineti üzərində texniki təkmilləşdirmə işləri aparılır. Çox tezliklə tam funksionallıqla istifadəyə veriləcək. Əməkdaşlıq və ilkin qeydiyyat üçün bizimlə əlaqə saxlayın: info@testai.az`,
+        desc: `Hörmətli ${role.label}, hal-hazırda ${role.label.toLowerCase()} kabineti üzərində texniki təkmilləşdirmə işləri aparılır. Çox tezliklə tam funksionallıqla istifadəyə veriləcək. Əməkdaşlıq və ilkin qeydiyyat üçün bizimlə əlaqə saxlayın: aztestai.az@gmail.com`,
       })
       return
     }
@@ -462,6 +462,51 @@ export default function LoginPage() {
                       Qeydiyyat
                     </Link>
                   )}
+                </div>
+
+                {/* Dəstək və Sosial Şəbəkələr */}
+                <div className="mt-5 pt-4 border-t border-gray-100 text-center space-y-2">
+                  <p className="text-xs text-gray-500">
+                    Kömək lazımdır? Dəstək:{" "}
+                    <a
+                      href="mailto:aztestai.az@gmail.com"
+                      className="font-semibold text-gray-700 hover:text-primary transition-colors underline"
+                    >
+                      aztestai.az@gmail.com
+                    </a>
+                  </p>
+                  <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3 text-xs text-gray-500">
+                    <span>Sosial şəbəkələrimiz:</span>
+                    <a
+                      href="https://www.instagram.com/testai.az/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-medium text-pink-600 hover:text-pink-700 transition-colors"
+                    >
+                      <Instagram className="w-3.5 h-3.5" />
+                      <span>Instagram</span>
+                    </a>
+                    <span>•</span>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61594359745552"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      <Facebook className="w-3.5 h-3.5" />
+                      <span>Facebook</span>
+                    </a>
+                    <span>•</span>
+                    <a
+                      href="https://www.youtube.com/channel/UCSsFhuYKk6MHdLna05kfJrA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-medium text-red-600 hover:text-red-700 transition-colors"
+                    >
+                      <Youtube className="w-3.5 h-3.5" />
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>

@@ -10,9 +10,32 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "TESTAI.AZ - AI Test Platforması",
-  description: "Azərbaycan tələbələri üçün AI-Powered Test və Analiz Platforması",
-  generator: "v0.app",
+  title: "TESTAI.AZ - AI Test Platforması | Azərbaycan Dərslikləri Əsasında",
+  description: "Azərbaycan dərslikləri əsasında hazırlanmış süni intellekt dəstəkli test və bilik analiz platforması. Şagirdlər və valideynlər üçün fərdi sınaqlar.",
+  keywords: [
+    "testai",
+    "testai.az",
+    "ai test",
+    "azərbaycan dərslikləri",
+    "onlayn sınaq imtahanı",
+    "süni intellekt təhsil",
+    "valideyn nəzarəti",
+    "məktəb testləri",
+  ],
+  authors: [{ name: "TESTAI.AZ", url: "https://testai.az" }],
+  creator: "TESTAI.AZ",
+  metadataBase: new URL("https://testai.az"),
+  openGraph: {
+    title: "TESTAI.AZ - AI ilə Öyrən, Test Et, İnkişaf Et",
+    description: "Azərbaycan dərslikləri əsasında hazırlanmış AI test platforması. Mövzuya uyğun testlər və nəticələrin dərin təhlili.",
+    url: "https://testai.az",
+    siteName: "TESTAI.AZ",
+    locale: "az_AZ",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://testai.az",
+  },
 }
 
 import { Toaster } from "@/components/ui/toaster"
@@ -29,6 +52,34 @@ export default function RootLayout({
     <html lang="az">
       <head>
         <meta name="google-adsense-account" content="ca-pub-1166444768651699" />
+        {/* Schema.org Structured Data */}
+        <Script
+          id="schema-organization"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "EducationalOrganization",
+              name: "TESTAI.AZ",
+              url: "https://testai.az",
+              logo: "https://testai.az/logo.jpg",
+              description: "Azərbaycan dərslikləri əsasında hazırlanmış süni intellekt dəstəkli test və bilik analiz platforması.",
+              email: "aztestai.az@gmail.com",
+              sameAs: [
+                "https://www.instagram.com/testai.az/",
+                "https://www.facebook.com/profile.php?id=61594359745552",
+                "https://www.youtube.com/channel/UCSsFhuYKk6MHdLna05kfJrA",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "aztestai.az@gmail.com",
+                contactType: "customer support",
+                availableLanguage: "Azerbaijani",
+              },
+            }),
+          }}
+        />
         <Script
           id="adsbygoogle-init"
           strategy="afterInteractive"
