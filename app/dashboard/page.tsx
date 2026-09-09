@@ -305,12 +305,14 @@ export default function Dashboard() {
                                 const title = book.title || ""
                                 const id = book.id || ""
 
-                                const isSecondary = 
+                                const classNum = parseInt(userData?.class || "0", 10)
+                                const isSecondary = classNum >= 5 && (
                                   subj.includes("ikinci") || 
                                   title.includes("ikinci") || 
                                   id.includes("ikinci") || 
-                                  id.includes("-2") ||
-                                  id.includes("-2-")
+                                  id.includes("-2-") ||
+                                  /-2-\d+$/.test(id)
+                                )
 
                                 if (subject === "Xarici dil") {
                                   return !isSecondary && (
@@ -387,12 +389,14 @@ export default function Dashboard() {
                                 const subj = book.subject || ""
                                 const id = book.id || ""
 
-                                const isSecondary = 
+                                const classNum = parseInt(userData?.class || "0", 10)
+                                const isSecondary = classNum >= 5 && (
                                   subj.includes("ikinci") || 
                                   title.includes("ikinci") || 
                                   id.includes("ikinci") || 
-                                  id.includes("-2") ||
-                                  id.includes("-2-")
+                                  id.includes("-2-") ||
+                                  /-2-\d+$/.test(id)
+                                )
 
                                 const isCorrectType = selectedSubject === "Xarici dil" ? !isSecondary : isSecondary
 
