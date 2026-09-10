@@ -1,11 +1,20 @@
 export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
-import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk, isMockUser, supabaseAdmin } from "@/lib/user-store"
+import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk, isMockUser, supabaseAdmin, isTargetDeletedUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 import { getTestResultsForStudent } from "@/lib/test-result-store"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const userId = params.id
+    if (
+        String(userId).toLowerCase() === "1788541772004" ||
+        String(userId).toLowerCase() === "emilinpoctu@gmail.com" ||
+        String(userId).toLowerCase() === "inci.mecidzade.161@testai.az" ||
+        isTargetDeletedUser({ id: userId, email: userId })
+    ) {
+        return NextResponse.json({ error: "İstifadəçi tapılmadı" }, { status: 404 })
+    }
+
     const allUsers = getAllUsers()
 
     // 1. Supabase User cədvəlindən bütün istifadəçiləri allUsers-ə sinxronlaşdır

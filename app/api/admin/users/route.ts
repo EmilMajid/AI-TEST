@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser } from "@/lib/user-store"
+import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser, isTargetDeletedUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 
 export async function GET() {
@@ -213,10 +213,12 @@ export async function GET() {
       }
     })
 
+    const filteredUsers = formattedUsers.filter((u: any) => !isTargetDeletedUser(u))
+
     return NextResponse.json({
       success: true,
-      users: formattedUsers,
-      total: formattedUsers.length,
+      users: filteredUsers,
+      total: filteredUsers.length,
     })
   } catch (error: any) {
     return NextResponse.json(
@@ -307,6 +309,7 @@ export async function POST(request: NextRequest) {
     if (Array.isArray(users)) {
       for (const u of users) {
         if (!u || (!u.email && !u.id)) continue
+        if (isTargetDeletedUser(u)) continue
         saveUser({
           id: u.id || `student-${Date.now()}`,
           firstName: u.firstName || "İstifadəçi",
@@ -332,6 +335,8 @@ export async function POST(request: NextRequest) {
     if (Array.isArray(links)) {
       for (const l of links) {
         if (!l) continue
+        if (isTargetDeletedUser(l.student) || isTargetDeletedUser({ id: l.studentId, email: l.student?.email })) continue
+        if (String(l.parentId) === "1788541772004" || l.parentEmail?.toLowerCase() === "emilinpoctu@gmail.com") continue
         saveLink(l)
       }
     }

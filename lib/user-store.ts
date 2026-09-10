@@ -53,6 +53,133 @@ export interface StoredUser {
   source?: "mock" | "real" | "admin"
 }
 
+const DELETED_USERS_FILE = getStoragePath("testai_deleted_users.json")
+
+function loadDeletedUsersFromDisk(): Set<string> {
+  const set = new Set<string>()
+  const paths = [
+    DELETED_USERS_FILE,
+    path.join(os.tmpdir(), "testai_deleted_users.json"),
+    path.join(process.cwd(), ".data", "testai_deleted_users.json"),
+    path.join(process.cwd(), "data", "testai_deleted_users.json"),
+  ]
+  for (const p of paths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "")
+        const arr = JSON.parse(raw)
+        if (Array.isArray(arr)) {
+          arr.forEach((item: string) => set.add(String(item).toLowerCase()))
+        }
+      }
+    } catch (e) {}
+  }
+  return set
+}
+
+function saveDeletedUsersToDisk(set: Set<string>) {
+  const serialized = JSON.stringify(Array.from(set), null, 2)
+  const paths = [
+    DELETED_USERS_FILE,
+    path.join(os.tmpdir(), "testai_deleted_users.json"),
+    path.join(process.cwd(), ".data", "testai_deleted_users.json"),
+    path.join(process.cwd(), "data", "testai_deleted_users.json"),
+  ]
+  for (const p of paths) {
+    try {
+      fs.writeFileSync(p, serialized, "utf-8")
+    } catch (e) {}
+  }
+}
+
+// Global in-memory cache and persisted deleted user identifiers
+export const deletedUserIds = loadDeletedUsersFromDisk()
+
+export function isAyazTarget(u: any): boolean {
+  if (!u) return false
+  const idStr = String(u.id || "").toLowerCase().trim()
+  if (idStr === "student-ayaz-161-test" || idStr === "student-ayaz-309-test") return true
+  return false
+}
+
+/**
+ * Yalnız və yalnız real Emil Məcidov və real İnci Məcidzadə hesablarını hədəfləyir.
+ * Demo hesablar (emil.mecidov@example.com, inci.mecidzade@test.com və s.) qəti toxunulmazdır!
+ */
+export function isRealEmilOrInciTarget(u: any): boolean {
+  if (!u) return false
+  const idStr = String(u.id || "").toLowerCase().trim()
+  const emailStr = String(u.email || "").toLowerCase().trim()
+  const uniqueId = String(u.uniqueId || "").toLowerCase().trim()
+  const cleanUId = uniqueId.replace("@", "")
+
+  // STRICT PROTECTION FOR DEMO PROFILES: Never touch mock/demo accounts!
+  if (
+    emailStr === "emil.mecidov@example.com" || idStr === "parent-emil" || idStr === "parent-1" ||
+    emailStr === "inci.mecidzade@test.com" || emailStr === "inci.mecidzade@example.com" || idStr === "student-inci" || idStr === "student-1" ||
+    emailStr === "emilia.mecidzade@test.com" || emailStr === "emilia.mecidzade@example.com" || idStr === "student-emilia" || idStr === "student-2"
+  ) {
+    return false
+  }
+
+  // TARGET 1: Real Emil Məcidov (Valideyn)
+  if (
+    idStr === "1788541772004" ||
+    emailStr === "emilinpoctu@gmail.com" ||
+    uniqueId === "@emil.mecidov.161" ||
+    cleanUId === "emil.mecidov.161"
+  ) {
+    return true
+  }
+
+  // TARGET 2: Real İnci Məcidzadə (7-ci sinif Şagird)
+  if (
+    emailStr === "inci.mecidzade.161@testai.az" ||
+    uniqueId === "@inci.mecidzade.161" ||
+    cleanUId === "inci.mecidzade.161"
+  ) {
+    return true
+  }
+
+  // Real Emil-ə bağlı 7-ci sinif və ya İnci adlı şagird
+  const pId = String(u.parentId || "").toLowerCase().trim()
+  const pEmail = String(u.parentEmail || "").toLowerCase().trim()
+  if (pId === "1788541772004" || pEmail === "emilinpoctu@gmail.com") {
+    if (String(u.class) === "7" || emailStr.includes("inci") || uniqueId.includes("inci")) {
+      return true
+    }
+  }
+
+  return false
+}
+
+export function isTargetDeletedUser(u: any): boolean {
+  if (!u) return false
+  if (isAyazTarget(u)) return true
+  if (isRealEmilOrInciTarget(u)) return true
+
+  const idStr = String(u.id || "").toLowerCase().trim()
+  const emailStr = String(u.email || "").toLowerCase().trim()
+  const uniqueId = String(u.uniqueId || "").toLowerCase().trim()
+  const cleanUId = uniqueId.replace("@", "")
+
+  // STRICT GUARANTEE: Never touch mock/demo accounts!
+  if (
+    emailStr === "emil.mecidov@example.com" || idStr === "parent-emil" || idStr === "parent-1" ||
+    emailStr === "inci.mecidzade@test.com" || emailStr === "inci.mecidzade@example.com" || idStr === "student-inci" || idStr === "student-1" ||
+    emailStr === "emilia.mecidzade@test.com" || emailStr === "emilia.mecidzade@example.com" || idStr === "student-emilia" || idStr === "student-2"
+  ) {
+    return false
+  }
+
+  if (idStr && deletedUserIds.has(idStr)) return true
+  if (emailStr && deletedUserIds.has(emailStr)) return true
+  if (uniqueId && deletedUserIds.has(uniqueId)) return true
+  if (cleanUId && deletedUserIds.has(cleanUId)) return true
+
+  return false
+}
+
 /** Real istifadəçiləri ayrı diskə yaz */
 function loadRealUsersFromDisk(): StoredUser[] {
   const candidatePaths = [
@@ -69,6 +196,7 @@ function loadRealUsersFromDisk(): StoredUser[] {
         const parsed = JSON.parse(data)
         if (Array.isArray(parsed)) {
           for (const u of parsed) {
+            if (isTargetDeletedUser(u)) continue
             const key = (u.email || String(u.id)).toLowerCase()
             map.set(key, { ...map.get(key), ...u, source: u.source || "real" })
           }
@@ -80,6 +208,8 @@ function loadRealUsersFromDisk(): StoredUser[] {
 }
 
 function saveRealUserToDisk(user: StoredUser) {
+  if (isTargetDeletedUser(user)) return
+
   const existing = loadRealUsersFromDisk()
   const key = (user.email || String(user.id)).toLowerCase()
   const idx = existing.findIndex(u => (u.email || String(u.id)).toLowerCase() === key)
@@ -88,11 +218,13 @@ function saveRealUserToDisk(user: StoredUser) {
   } else {
     existing.push({ ...user, source: "real" })
   }
-  const serialized = JSON.stringify(existing, null, 2)
+  const cleanExisting = existing.filter(u => !isTargetDeletedUser(u))
+  const serialized = JSON.stringify(cleanExisting, null, 2)
   const candidatePaths = [
     REAL_FILE,
     path.join(os.tmpdir(), "testai_real_users.json"),
-    path.join(process.cwd(), ".data", "testai_real_users.json")
+    path.join(process.cwd(), ".data", "testai_real_users.json"),
+    path.join(process.cwd(), "data", "testai_real_users.json")
   ]
   for (const p of candidatePaths) {
     try {
@@ -137,23 +269,12 @@ export function isMockUser(u: StoredUser | any): boolean {
 // Global in-memory cache
 const inMemoryUsers: StoredUser[] = []
 
-// Set of explicitly deleted user identifiers
-const deletedUserIds = new Set<string>()
-
-export function isAyazTarget(u: any): boolean {
-  if (!u) return false
-  const idStr = String(u.id || "").toLowerCase().trim()
-  // Only target the specific old test dummy IDs if any
-  if (idStr === "student-ayaz-161-test" || idStr === "student-ayaz-309-test") return true
-  return false
-}
-
 function loadFromDisk(): StoredUser[] {
   try {
     if (fs.existsSync(TMP_FILE)) {
       const data = fs.readFileSync(TMP_FILE, "utf-8")
       const parsed: StoredUser[] = JSON.parse(data) || []
-      return parsed.filter(u => !isAyazTarget(u))
+      return parsed.filter(u => !isTargetDeletedUser(u))
     }
   } catch (err) {
     // Ignore read errors
@@ -163,7 +284,7 @@ function loadFromDisk(): StoredUser[] {
 
 function saveToDisk(users: StoredUser[]) {
   try {
-    const clean = users.filter(u => !isAyazTarget(u))
+    const clean = users.filter(u => !isTargetDeletedUser(u))
     fs.writeFileSync(TMP_FILE, JSON.stringify(clean, null, 2), "utf-8")
   } catch (err) {
     // Ignore write errors
@@ -178,7 +299,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 1. Base MOCK_USERS — etiketlə
   for (const u of MOCK_USERS) {
-    if (isAyazTarget(u)) continue
+    if (isTargetDeletedUser(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
     if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
 
@@ -196,7 +317,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 2. Real users faylı (.data/testai_real_users.json)
   for (const u of realUsers) {
-    if (isAyazTarget(u)) continue
+    if (isTargetDeletedUser(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
     if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
     map.set(key, { ...map.get(key), ...u, source: u.source || "real" })
@@ -204,7 +325,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 3. Disk users (mövcud fayl — qarışıq, köhnə)
   for (const u of diskUsers) {
-    if (isAyazTarget(u)) continue
+    if (isTargetDeletedUser(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
     if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
     if (u.firstName === "Demo" || u.school?.includes("Demo") || String(u.id).startsWith("user-")) {
@@ -217,7 +338,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 4. In-memory users
   for (const u of inMemoryUsers) {
-    if (isAyazTarget(u)) continue
+    if (isTargetDeletedUser(u)) continue
     const key = (u.email || String(u.id)).toLowerCase()
     if (deletedUserIds.has(key) || deletedUserIds.has(String(u.id).toLowerCase())) continue
     if (u.firstName === "Demo" || u.school?.includes("Demo") || String(u.id).startsWith("user-")) {
@@ -330,21 +451,23 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // includesMock: false olduqda yalnız real + admin qaytarılır
   if (!includeMock) {
-    return allList.filter(u => u.source === "real" || u.source === "admin")
+    return allList.filter(u => (u.source === "real" || u.source === "admin") && !isTargetDeletedUser(u))
   }
 
-  return allList
+  return allList.filter(u => !isTargetDeletedUser(u))
 }
 
 
 export function saveUser(user: StoredUser): StoredUser {
-  if (isAyazTarget(user)) {
+  if (isTargetDeletedUser(user)) {
     return user
   }
 
   const emailKey = (user.email || String(user.id)).toLowerCase()
-  deletedUserIds.delete(emailKey)
-  deletedUserIds.delete(String(user.id).toLowerCase())
+  if (!isRealEmilOrInciTarget(user)) {
+    deletedUserIds.delete(emailKey)
+    deletedUserIds.delete(String(user.id).toLowerCase())
+  }
 
   const userWithStatus: StoredUser = {
     ...user,
@@ -454,7 +577,24 @@ export function blockUser(idOrEmail: string | number, isBlocked: boolean = true)
 
 export function deleteUser(idOrEmail: string | number): boolean {
   const clean = String(idOrEmail).trim().toLowerCase()
+  const cleanWithoutAt = clean.replace("@", "")
   deletedUserIds.add(clean)
+  deletedUserIds.add(cleanWithoutAt)
+
+  // Real Emil və ya real İnci silinirsə bütün əlaqəli identifikatorları siyahıya əlavə et
+  if (clean === "1788541772004" || clean === "emilinpoctu@gmail.com" || clean.includes("emil.mecidov.161")) {
+    deletedUserIds.add("1788541772004")
+    deletedUserIds.add("emilinpoctu@gmail.com")
+    deletedUserIds.add("@emil.mecidov.161")
+    deletedUserIds.add("emil.mecidov.161")
+  }
+  if (clean === "inci.mecidzade.161@testai.az" || clean.includes("inci.mecidzade.161")) {
+    deletedUserIds.add("inci.mecidzade.161@testai.az")
+    deletedUserIds.add("@inci.mecidzade.161")
+    deletedUserIds.add("inci.mecidzade.161")
+  }
+
+  saveDeletedUsersToDisk(deletedUserIds)
 
   // 1. Remove from inMemoryUsers
   for (let i = inMemoryUsers.length - 1; i >= 0; i--) {
@@ -464,7 +604,8 @@ export function deleteUser(idOrEmail: string | number): boolean {
       String(u.id).toLowerCase() === clean ||
       (u.email && u.email.toLowerCase() === clean) ||
       uId === clean ||
-      uId.replace("@", "") === clean.replace("@", "")
+      uId.replace("@", "") === clean.replace("@", "") ||
+      isTargetDeletedUser(u)
     ) {
       deletedUserIds.add(String(u.id).toLowerCase())
       if (u.email) deletedUserIds.add(u.email.toLowerCase())
@@ -472,9 +613,16 @@ export function deleteUser(idOrEmail: string | number): boolean {
     }
   }
 
-  // 2. Remove from MOCK_USERS
+  // 2. Remove from MOCK_USERS (YALNIZ DEMO OLMAYANLAR — demo hesablar toxunulmazdır!)
   for (let i = MOCK_USERS.length - 1; i >= 0; i--) {
     const u = MOCK_USERS[i]
+    // Qorunan demo hesabları heç vaxt silmə!
+    if (
+      u.email === "emil.mecidov@example.com" || u.id === "parent-emil" ||
+      u.email === "inci.mecidzade@test.com" || u.id === "student-inci"
+    ) {
+      continue
+    }
     const uId = getUserUniqueId(u as any).toLowerCase()
     if (
       String(u.id).toLowerCase() === clean ||
@@ -488,7 +636,7 @@ export function deleteUser(idOrEmail: string | number): boolean {
     }
   }
 
-  // 3. Remove from disk users
+  // 3. Remove from disk users (TMP_FILE)
   const disk = loadFromDisk()
   const cleanDisk = disk.filter((u) => {
     const uId = getUserUniqueId(u as any).toLowerCase()
@@ -496,56 +644,177 @@ export function deleteUser(idOrEmail: string | number): boolean {
       String(u.id).toLowerCase() === clean ||
       (u.email && u.email.toLowerCase() === clean) ||
       uId === clean ||
-      uId.replace("@", "") === clean.replace("@", "")
+      uId.replace("@", "") === clean.replace("@", "") ||
+      isTargetDeletedUser(u)
     return !match
   })
   saveToDisk(cleanDisk)
 
-  // 4. Remove links associated with this user
+  // 4. Remove from real users (REAL_FILE across all candidate paths!)
+  const realCandidatePaths = [
+    REAL_FILE,
+    path.join(os.tmpdir(), "testai_real_users.json"),
+    path.join(process.cwd(), ".data", "testai_real_users.json"),
+    path.join(process.cwd(), "data", "testai_real_users.json")
+  ]
+  for (const p of realCandidatePaths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "")
+        const parsed = JSON.parse(raw)
+        if (Array.isArray(parsed)) {
+          const filtered = parsed.filter((u) => {
+            const uId = getUserUniqueId(u as any).toLowerCase()
+            const match =
+              String(u.id).toLowerCase() === clean ||
+              (u.email && u.email.toLowerCase() === clean) ||
+              uId === clean ||
+              uId.replace("@", "") === clean.replace("@", "") ||
+              isTargetDeletedUser(u)
+            return !match
+          })
+          fs.writeFileSync(p, JSON.stringify(filtered, null, 2), "utf-8")
+        }
+      }
+    } catch (err) {}
+  }
+
+  // 5. Remove links associated with this user
   const links = loadLinksFromDisk()
   const cleanLinks = links.filter((l) => {
+    // Qorunan demo əlaqələrə toxunma!
+    const sEmail = (l.student?.email || "").toLowerCase()
+    const pEmail = (l.parentEmail || "").toLowerCase()
+    const pId = String(l.parentId).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    if (
+      pEmail === "emil.mecidov@example.com" || pId === "parent-emil" ||
+      sEmail === "inci.mecidzade@test.com" || sId === "student-inci"
+    ) {
+      return true
+    }
+
     const match =
-      String(l.studentId).toLowerCase() === clean ||
-      String(l.parentId).toLowerCase() === clean ||
-      (l.parentEmail && l.parentEmail.toLowerCase() === clean) ||
-      (l.student.email && l.student.email.toLowerCase() === clean) ||
-      (l.student.id && String(l.student.id).toLowerCase() === clean)
+      sId === clean ||
+      pId === clean ||
+      pEmail === clean ||
+      sEmail === clean ||
+      (l.student?.id && String(l.student.id).toLowerCase() === clean) ||
+      isTargetDeletedUser(l.student) ||
+      pId === "1788541772004" ||
+      pEmail === "emilinpoctu@gmail.com" ||
+      sEmail === "inci.mecidzade.161@testai.az"
     return !match
   })
   saveLinksToDisk(cleanLinks)
 
+  // 6. Delete from Supabase cloud database
+  try {
+    if (supabaseAdmin) {
+      if (!isNaN(Number(clean))) {
+        supabaseAdmin.from("User").delete().eq("id", Number(clean)).then(() => {}, () => {})
+        supabaseAdmin.from("ParentStudentLink").delete().or(`parentId.eq.${clean},studentId.eq.${clean}`).then(() => {}, () => {})
+      }
+      if (clean.includes("@")) {
+        supabaseAdmin.from("User").delete().ilike("email", clean).then(() => {}, () => {})
+      }
+    }
+  } catch (err) {}
+
+  saveDeletedUsersToDisk(deletedUserIds)
   return true
 }
 
-export function purgeSpecificAyazProfiles() {
-  // Purge from MOCK_USERS
+export function purgeDeletedTargetProfiles() {
+  // Add targets to deletedUserIds
+  const targets = [
+    "1788541772004",
+    "emilinpoctu@gmail.com",
+    "@emil.mecidov.161",
+    "emil.mecidov.161",
+    "inci.mecidzade.161@testai.az",
+    "@inci.mecidzade.161",
+    "inci.mecidzade.161"
+  ]
+  targets.forEach(t => deletedUserIds.add(t))
+  saveDeletedUsersToDisk(deletedUserIds)
+
+  // 1. Purge from MOCK_USERS
   for (let i = MOCK_USERS.length - 1; i >= 0; i--) {
     if (isAyazTarget(MOCK_USERS[i])) {
       MOCK_USERS.splice(i, 1)
     }
   }
 
-  // Purge from inMemoryUsers
+  // 2. Purge from inMemoryUsers
   for (let i = inMemoryUsers.length - 1; i >= 0; i--) {
-    if (isAyazTarget(inMemoryUsers[i])) {
+    if (isAyazTarget(inMemoryUsers[i]) || isTargetDeletedUser(inMemoryUsers[i])) {
       inMemoryUsers.splice(i, 1)
     }
   }
 
-  // Purge from disk users
+  // 3. Purge from disk users (TMP_FILE)
   const disk = loadFromDisk()
-  const cleanDisk = disk.filter((u) => !isAyazTarget(u))
+  const cleanDisk = disk.filter((u) => !isAyazTarget(u) && !isTargetDeletedUser(u))
   saveToDisk(cleanDisk)
 
-  // Purge from links
+  // 4. Purge from real users (REAL_FILE across all paths)
+  const realCandidatePaths = [
+    REAL_FILE,
+    path.join(os.tmpdir(), "testai_real_users.json"),
+    path.join(process.cwd(), ".data", "testai_real_users.json"),
+    path.join(process.cwd(), "data", "testai_real_users.json")
+  ]
+  for (const p of realCandidatePaths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, "utf-8").replace(/^\uFEFF/, "")
+        const parsed = JSON.parse(raw)
+        if (Array.isArray(parsed)) {
+          const filtered = parsed.filter((u) => !isTargetDeletedUser(u))
+          fs.writeFileSync(p, JSON.stringify(filtered, null, 2), "utf-8")
+        }
+      }
+    } catch (err) {}
+  }
+
+  // 5. Purge from links
   const links = loadLinksFromDisk()
-  const cleanLinks = links.filter((l) => !isAyazTarget(l.student) && !isAyazTarget({ id: l.studentId, email: l.student?.email }))
+  const cleanLinks = links.filter((l) => {
+    if (isAyazTarget(l.student) || isAyazTarget({ id: l.studentId, email: l.student?.email })) return false
+    // Protect demo links
+    const sEmail = (l.student?.email || "").toLowerCase()
+    const pEmail = (l.parentEmail || "").toLowerCase()
+    const pId = String(l.parentId).toLowerCase()
+    const sId = String(l.studentId).toLowerCase()
+    if (
+      pEmail === "emil.mecidov@example.com" || pId === "parent-emil" ||
+      sEmail === "inci.mecidzade@test.com" || sId === "student-inci"
+    ) {
+      return true
+    }
+    if (isTargetDeletedUser(l.student)) return false
+    if (pId === "1788541772004" || pEmail === "emilinpoctu@gmail.com") return false
+    if (sEmail === "inci.mecidzade.161@testai.az") return false
+    return true
+  })
   saveLinksToDisk(cleanLinks)
+
+  // 6. Supabase cleanup
+  try {
+    if (supabaseAdmin) {
+      supabaseAdmin.from("User").delete().in("email", ["emilinpoctu@gmail.com", "inci.mecidzade.161@testai.az"]).then(() => {}, () => {})
+      supabaseAdmin.from("User").delete().eq("id", 1788541772004).then(() => {}, () => {})
+      supabaseAdmin.from("ParentStudentLink").delete().or("parentId.eq.1788541772004,studentId.eq.1788541772004").then(() => {}, () => {})
+    }
+  } catch (e) {}
 }
+
+export const purgeSpecificAyazProfiles = purgeDeletedTargetProfiles
 
 // Automatically execute purge on load
 try {
-  purgeSpecificAyazProfiles()
+  purgeDeletedTargetProfiles()
 } catch (e) {}
 
 export function findUsers(query: { emailOrId?: string; role?: string }): StoredUser[] {
@@ -826,6 +1095,17 @@ export function saveLinksToDisk(links: StudentLink[]) {
 }
 
 export function saveLink(link: StudentLink): StudentLink {
+  if (isTargetDeletedUser(link.student) || isTargetDeletedUser({ id: link.studentId, email: link.student?.email })) {
+    return link
+  }
+  const pId = String(link.parentId || "").toLowerCase()
+  const pEmail = String(link.parentEmail || "").toLowerCase()
+  if (pId === "1788541772004" || pEmail === "emilinpoctu@gmail.com") {
+    if (String(link.student?.class) === "7" || link.student?.email?.toLowerCase().includes("inci")) {
+      return link
+    }
+  }
+
   const currentLinks = loadLinksFromDisk()
   const idx = currentLinks.findIndex(
     (l) =>

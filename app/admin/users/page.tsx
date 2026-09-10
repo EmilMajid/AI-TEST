@@ -19,6 +19,52 @@ import { Search, Loader2, Eye, Trash2, Lock, Unlock, AlertTriangle, ShieldAlert 
 import Link from 'next/link'
 import { getUserUniqueId } from '@/lib/profile-utils'
 
+function isExplicitlyPurgedUser(u: any): boolean {
+    if (!u) return false
+    const id = String(u.id || u.studentId || '').toLowerCase().trim()
+    const email = String(u.email || u.parentEmail || (u.student && u.student.email) || '').toLowerCase().trim()
+    const uniqueId = String(u.uniqueId || (u.student && u.student.uniqueId) || '').toLowerCase().trim()
+    const cleanUId = uniqueId.replace('@', '')
+
+    // STRICT DEMO PROTECTION: Demo profillərə toxunulmazdır!
+    if (
+        email === 'emil.mecidov@example.com' || id === 'parent-emil' || id === 'parent-1' ||
+        email === 'inci.mecidzade@test.com' || email === 'inci.mecidzade@example.com' || id === 'student-inci' || id === 'student-1' ||
+        email === 'emilia.mecidzade@test.com' || email === 'emilia.mecidzade@example.com' || id === 'student-emilia' || id === 'student-2'
+    ) {
+        return false
+    }
+
+    // TARGET 1: Emil Məcidov (Real valideyn)
+    if (
+        id === '1788541772004' ||
+        email === 'emilinpoctu@gmail.com' ||
+        uniqueId === '@emil.mecidov.161' ||
+        cleanUId === 'emil.mecidov.161'
+    ) {
+        return true
+    }
+
+    // TARGET 2: İnci Məcidzadə (Real 7-ci sinif şagird)
+    if (
+        email === 'inci.mecidzade.161@testai.az' ||
+        uniqueId === '@inci.mecidzade.161' ||
+        cleanUId === 'inci.mecidzade.161'
+    ) {
+        return true
+    }
+
+    const pId = String(u.parentId || '').toLowerCase().trim()
+    const pEmail = String(u.parentEmail || '').toLowerCase().trim()
+    if (pId === '1788541772004' || pEmail === 'emilinpoctu@gmail.com') {
+        if (String(u.class) === '7' || email.includes('inci') || uniqueId.includes('inci')) {
+            return true
+        }
+    }
+
+    return false
+}
+
 function isMockProfile(u: any): boolean {
     if (!u) return false
     const id = String(u.id || '').toLowerCase().trim()
@@ -56,8 +102,25 @@ export default function AdminUsersPage() {
             let localRegUsers: any[] = []
             let localLinks: any[] = []
             try {
-                localRegUsers = JSON.parse(localStorage.getItem('registeredUsers') || '[]')
-                localLinks = JSON.parse(localStorage.getItem('all_student_links') || '[]')
+                const rawReg = JSON.parse(localStorage.getItem('registeredUsers') || '[]')
+                if (Array.isArray(rawReg)) {
+                    localRegUsers = rawReg.filter(u => !isExplicitlyPurgedUser(u))
+                    localStorage.setItem('registeredUsers', JSON.stringify(localRegUsers))
+                }
+            } catch (e) {}
+
+            try {
+                const rawLinks = JSON.parse(localStorage.getItem('all_student_links') || '[]')
+                if (Array.isArray(rawLinks)) {
+                    localLinks = rawLinks.filter(l => !isExplicitlyPurgedUser(l) && !isExplicitlyPurgedUser(l.student))
+                    localStorage.setItem('all_student_links', JSON.stringify(localLinks))
+                }
+            } catch (e) {}
+
+            // Clean related local storage caches
+            try {
+                localStorage.removeItem('linked_students_emilinpoctu@gmail.com')
+                localStorage.removeItem('linked_students_1788541772004')
             } catch (e) {}
 
             if (localRegUsers.length > 0 || localLinks.length > 0) {
@@ -74,6 +137,7 @@ export default function AdminUsersPage() {
             const res = await fetch('/api/admin/users')
             const data = await res.json()
             let serverUsers = (data.success && Array.isArray(data.users)) ? data.users : (Array.isArray(data) ? data : [])
+            serverUsers = serverUsers.filter((u: any) => !isExplicitlyPurgedUser(u))
 
             // Merge any local registered users so newly created students show up immediately
             if (localRegUsers.length > 0) {
@@ -84,7 +148,7 @@ export default function AdminUsersPage() {
                 })
                 localRegUsers.forEach((lu: any) => {
                     const key = (lu.email || String(lu.id)).toLowerCase()
-                    if (!userMap.has(key)) {
+                    if (!userMap.has(key) && !isExplicitlyPurgedUser(lu)) {
                         userMap.set(key, {
                             ...lu,
                             source: isMockProfile(lu) ? "mock" : "real",
@@ -94,7 +158,7 @@ export default function AdminUsersPage() {
                         })
                     }
                 })
-                serverUsers = Array.from(userMap.values())
+                serverUsers = Array.from(userMap.values()).filter((u: any) => !isExplicitlyPurgedUser(u))
             }
 
             setUsers(serverUsers)
@@ -177,6 +241,37 @@ export default function AdminUsersPage() {
                 })
                 // Remove from local list immediately
                 setUsers(prev => prev.filter(u => String(u.id) !== String(user.id) && u.email?.toLowerCase() !== user.email?.toLowerCase()))
+
+                // Remove from localStorage as well so it never resurrects
+                try {
+                    const rawReg = JSON.parse(localStorage.getItem('registeredUsers') || '[]')
+                    if (Array.isArray(rawReg)) {
+                        const updatedReg = rawReg.filter((u: any) =>
+                            String(u.id) !== String(user.id) &&
+                            u.email?.toLowerCase() !== user.email?.toLowerCase()
+                        )
+                        localStorage.setItem('registeredUsers', JSON.stringify(updatedReg))
+                    }
+
+                    const rawLinks = JSON.parse(localStorage.getItem('all_student_links') || '[]')
+                    if (Array.isArray(rawLinks)) {
+                        const updatedLinks = rawLinks.filter((l: any) =>
+                            String(l.studentId) !== String(user.id) &&
+                            String(l.parentId) !== String(user.id) &&
+                            l.parentEmail?.toLowerCase() !== user.email?.toLowerCase() &&
+                            l.student?.email?.toLowerCase() !== user.email?.toLowerCase() &&
+                            String(l.student?.id) !== String(user.id)
+                        )
+                        localStorage.setItem('all_student_links', JSON.stringify(updatedLinks))
+                    }
+
+                    if (user.email) {
+                        localStorage.removeItem(`linked_students_${user.email.toLowerCase()}`)
+                    }
+                    if (user.id) {
+                        localStorage.removeItem(`linked_students_${user.id}`)
+                    }
+                } catch (e) {}
             } else {
                 throw new Error(data.error || "İstifadəçi silinmədi")
             }
