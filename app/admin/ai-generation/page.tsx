@@ -42,6 +42,7 @@ import {
   Key,
   ShieldCheck,
   Cpu,
+  Target,
   User,
 } from "lucide-react"
 
@@ -99,6 +100,9 @@ interface AntigravityOrder {
   questionType?: string
   notes?: string
   status: "pending" | "in_progress" | "completed" | "cancelled"
+  isThresholdMode?: boolean
+  minThreshold?: number
+  thresholdAnalysis?: any
   antigravityAccount?: {
     label: string
     accountEmail?: string
@@ -234,6 +238,12 @@ export default function AIGenerationPage() {
 
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
   const [settingsTab, setSettingsTab] = useState("antigravity")
+
+  // --- Minimum Threshold / Auto-Replenish State ---
+  const [isThresholdMode, setIsThresholdMode] = useState(true)
+  const [minThreshold, setMinThreshold] = useState("21")
+  const [thresholdAnalysis, setThresholdAnalysis] = useState<any | null>(null)
+  const [isAnalyzingThreshold, setIsAnalyzingThreshold] = useState(false)
 
   // --- Curriculum & Generation State ---
   const [grade, setGrade] = useState("2")
@@ -371,6 +381,43 @@ export default function AIGenerationPage() {
     }
     loadCurriculum()
   }, [grade])
+
+  // 3.5. Analyze Topic Thresholds against Question Bank
+  const analyzeTopicThresholds = async () => {
+    const topicsToCheck = selectedMultipleTopics.length > 0 ? selectedMultipleTopics : (selectedTopic ? [selectedTopic] : [])
+    if (!selectedTextbook || topicsToCheck.length === 0) {
+      setThresholdAnalysis(null)
+      return
+    }
+
+    setIsAnalyzingThreshold(true)
+    try {
+      const res = await fetch("/api/admin/antigravity/threshold-check", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          grade,
+          textbook: selectedTextbook,
+          topics: topicsToCheck,
+          minThreshold: Number(minThreshold) || 21,
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setThresholdAnalysis(data)
+      }
+    } catch (e) {
+      console.error("Threshold check error:", e)
+    } finally {
+      setIsAnalyzingThreshold(false)
+    }
+  }
+
+  useEffect(() => {
+    if (isThresholdMode && selectedTextbook && (selectedMultipleTopics.length > 0 || selectedTopic)) {
+      analyzeTopicThresholds()
+    }
+  }, [isThresholdMode, grade, selectedTextbook, selectedMultipleTopics, selectedTopic, minThreshold])
 
   // 4. Load curriculum coverage stats
   const loadCoverageStats = async () => {
@@ -662,6 +709,14 @@ export default function AIGenerationPage() {
       return
     }
 
+    if (isThresholdMode && thresholdAnalysis && thresholdAnalysis.totalNeededQuestions === 0) {
+      toast({
+        title: "Bütün Mövzular Artıq Doludur! ✅",
+        description: `Seçilmiş bütün mövzularda test sayı minimum həddə (${minThreshold}) bərabər və ya çoxdur. Heç bir əlavə generasiyaya ehtiyac yoxdur (bütün mövzular adlanır).`,
+      })
+      return
+    }
+
     setIsCreatingOrder(true)
     try {
       const res = await fetch("/api/admin/antigravity/orders", {
@@ -671,11 +726,14 @@ export default function AIGenerationPage() {
           grade,
           textbook: selectedTextbook,
           topics: selectedTopicsList,
-          questionCount: Number(count) || 20,
-          difficulty,
+          questionCount: isThresholdMode && thresholdAnalysis ? thresholdAnalysis.totalNeededQuestions : (Number(count) || 20),
+          difficulty: isThresholdMode ? "bərabər" : difficulty,
           questionType,
           bloomLevel,
           notes: orderNotes,
+          isThresholdMode,
+          minThreshold: Number(minThreshold) || 21,
+          thresholdAnalysis: isThresholdMode ? thresholdAnalysis : null,
           antigravityAccount: {
             label: activeAgAccount.label,
             accountEmail: activeAgAccount.accountEmail,
@@ -728,10 +786,11 @@ Antigravity Agenti: ${order.antigravityAccount?.label || "Antigravity Pro"} (${o
 İxtisaslaşma: ${order.antigravityAccount?.agentRole || "Kurikulum Baş Metodisti"}
 Sinif: ${order.grade}-ci sinif
 Dərslik: ${order.textbook}
-Mövzular (${order.topics.length} ədəd):
-${order.topics.map((t, i) => `  ${i + 1}. ${t}`).join("\n")}
-Sual Sayı: ${order.questionCount}
-Çətinlik: ${order.difficulty}
+Rejim: ${order.isThresholdMode ? `🎯 Ağıllı Hədd Rejimi (Minimum ${order.minThreshold || 21} test həddi)` : "Sabit Say Rejimi"}
+Mövzular və Tələblər:
+${order.isThresholdMode && order.thresholdAnalysis?.topics ? order.thresholdAnalysis.topics.map((t: any) => t.status === 'skip' ? `  - ${t.topic}: [ADLANIR] Bazada artıq ${t.currentCount} test var (Hədd: ${order.minThreshold})` : `  - ${t.topic}: [TAMAMLANIR] Bazada ${t.currentCount} test var. Çatışmayan ${t.needed} test (${t.distribution.simple} sadə, ${t.distribution.medium} orta, ${t.distribution.hard} çətin)`).join("\n") : order.topics.map((t, i) => `  ${i + 1}. ${t}`).join("\n")}
+Cəmi Generasiya Ediləcək Sual Sayı: ${order.questionCount}
+Çətinlik Bölgüsü: ${order.isThresholdMode ? "BƏRABƏR (1/3 Sadə, 1/3 Orta, 1/3 Çətin)" : order.difficulty}
 Sual Tipi: ${order.questionType}
 Bloom Səviyyəsi: ${order.bloomLevel}
 Hədəf GitHub: ${order.account.repoOwner}/${order.account.repoName} (${order.account.branch})
@@ -1872,6 +1931,45 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                     </Select>
                   </div>
                 </div>
+
+                {/* Canlı Mövzu Hədd Statusu */}
+                {thresholdAnalysis && thresholdAnalysis.topics && thresholdAnalysis.topics.length > 0 && (
+                  (() => {
+                    const matched = thresholdAnalysis.topics.find((t: any) => t.topic === effectiveTopic) || thresholdAnalysis.topics[0]
+                    if (!matched) return null
+                    return (
+                      <div className={`p-2.5 rounded-lg border text-[11px] space-y-1.5 ${matched.status === 'skip' ? 'bg-green-50/80 border-green-200 text-green-900' : 'bg-amber-50/80 border-amber-200 text-amber-950'}`}>
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold flex items-center gap-1">
+                            <Target className="h-3.5 w-3.5" /> Test Bankı Statusu:
+                          </span>
+                          <Badge className={`text-[9px] py-0 h-4 font-bold ${matched.status === 'skip' ? 'bg-green-600 text-white' : 'bg-amber-600 text-white'}`}>
+                            {matched.currentCount}/{minThreshold} test
+                          </Badge>
+                        </div>
+                        <p className="text-[10px] leading-snug">
+                          {matched.status === 'skip' ? (
+                            <>Bu mövzu üzrə test bankında artıq <strong>{matched.currentCount} test</strong> var (hədd: {minThreshold}). Mövzu doludur və adlana bilər.</>
+                          ) : (
+                            <>{minThreshold} həddinə çatmaq üçün <strong>{matched.needed} test</strong> çatışmır ({matched.distribution.simple} sadə, {matched.distribution.medium} orta, {matched.distribution.hard} çətin).</>
+                          )}
+                        </p>
+                        {matched.status !== 'skip' && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setCount(String(matched.needed))
+                              setDifficulty("qarışıq")
+                            }}
+                            className="text-[10px] text-purple-700 font-bold hover:underline block"
+                          >
+                            ⚡ Çatışmayan {matched.needed} sualı bərabər çətinliklə təyin et
+                          </button>
+                        )}
+                      </div>
+                    )
+                  })()
+                )}
 
                 {/* Aktiv Agent və Hədəf Repo Məlumatı */}
                 <div className="p-2.5 bg-slate-50 border rounded-lg text-[11px] text-slate-600 space-y-1">

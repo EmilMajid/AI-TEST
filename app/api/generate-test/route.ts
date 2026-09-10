@@ -13,10 +13,30 @@ import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys }
 
 export async function POST(request: NextRequest) {
   try {
-    const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20, antigravityAccount, forceAi } = await request.json()
+    const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20, antigravityAccount, forceAi, thresholdDistribution } = await request.json()
 
     const getDifficultyPrompt = (difficulty: string) => {
+      if (thresholdDistribution) {
+        return `
+        BƏRABƏR ÇƏTİNLİK SƏVİYYƏSİ (DƏQİQ HƏDD BÖLGÜSÜ):
+        - Hazırlanacaq sualların daxili bölgüsü tam bərabər olmalıdır:
+          * ${thresholdDistribution.simple || 0} ədəd SADƏ sual (Bilmə səviyyəsi, terminlər)
+          * ${thresholdDistribution.medium || 0} ədəd ORTA sual (Anlama və tətbiq, əlaqələr)
+          * ${thresholdDistribution.hard || 0} ədəd ÇƏTİN sual (Təhlil, sintez, məntiq)
+        - Hər sualın "difficulty" xanasına mütləq "sadə", "orta" və ya "çətin" yaz.
+        `
+      }
+
       switch (difficulty) {
+        case "bərabər":
+          return `
+          BƏRABƏR ÇƏTİNLİK SƏVİYYƏSİ TƏLƏBİ:
+          - Suallar 3 səviyyə üzrə bərabər paylanmalıdır:
+            * 1/3 hissəsi SADƏ suallar
+            * 1/3 hissəsi ORTA suallar
+            * 1/3 hissəsi ÇƏTİN suallar
+          - Hər sualın "difficulty" xanasına müvafiq olaraq "sadə", "orta" və ya "çətin" qeyd et.
+          `
         case "sadə":
           return `
           SADƏ SƏVİYYƏ TƏLƏBLƏRI:

@@ -17,6 +17,9 @@ export interface AntigravityOrder {
   questionType?: string
   notes?: string
   status: "pending" | "in_progress" | "completed" | "cancelled"
+  isThresholdMode?: boolean
+  minThreshold?: number
+  thresholdAnalysis?: any
   antigravityAccount?: {
     label: string
     accountEmail?: string
@@ -73,7 +76,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { grade, textbook, topics, questionCount, difficulty, notes, account, antigravityAccount, questionType, bloomLevel } = body
+    const { grade, textbook, topics, questionCount, difficulty, notes, account, antigravityAccount, questionType, bloomLevel, isThresholdMode, minThreshold, thresholdAnalysis } = body
 
     if (!grade || !textbook || !Array.isArray(topics) || topics.length === 0) {
       return NextResponse.json(
@@ -95,6 +98,9 @@ export async function POST(request: NextRequest) {
       questionType: questionType || "standart",
       notes: notes || "",
       status: "pending",
+      isThresholdMode: !!isThresholdMode,
+      minThreshold: Number(minThreshold) || 21,
+      thresholdAnalysis: thresholdAnalysis || null,
       antigravityAccount: {
         label: antigravityAccount?.label || "Antigravity Əsas Profil",
         accountEmail: antigravityAccount?.accountEmail || "emilinpoctu@gmail.com",
