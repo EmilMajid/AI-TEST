@@ -237,6 +237,27 @@ export default function AIGenerationPage() {
     repoUrl?: string
   } | null>(null)
 
+  // 0. Load Antigravity accounts from server API on mount
+  useEffect(() => {
+    async function fetchServerAgAccounts() {
+      try {
+        const res = await fetch("/api/admin/antigravity/accounts")
+        const data = await res.json()
+        if (data.success && Array.isArray(data.accounts) && data.accounts.length > 0) {
+          setAgAccounts(data.accounts)
+          if (data.activeAccount) {
+            setActiveAgAccount(data.activeAccount)
+            localStorage.setItem("antigravity_active_ai_account_id", data.activeAccount.id)
+          }
+          localStorage.setItem("antigravity_ai_accounts", JSON.stringify(data.accounts))
+        }
+      } catch (err) {
+        console.warn("Server accounts fetch error", err)
+      }
+    }
+    fetchServerAgAccounts()
+  }, [])
+
   // 1. Load accounts from localStorage
   useEffect(() => {
     try {
@@ -371,12 +392,19 @@ export default function AIGenerationPage() {
   }
 
   // --- Antigravity Account Handlers ---
-  const handleSwitchAgAccount = (acc: AntigravityAccountProfile) => {
+  const handleSwitchAgAccount = async (acc: AntigravityAccountProfile) => {
     setActiveAgAccount(acc)
     localStorage.setItem("antigravity_active_ai_account_id", acc.id)
+    try {
+      await fetch("/api/admin/antigravity/accounts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "switch", id: acc.id }),
+      })
+    } catch (e) {}
     toast({
-      title: "Antigravity Hesabı Dəyişdirildi! 🤖🔄",
-      description: `Aktiv Antigravity Agenti: ${acc.label} (${acc.model})`,
+      title: "Google Antigravity Hesabı Dəyişdirildi! 🤖🔄",
+      description: `Aktiv Google Hesabı: ${acc.accountEmail} (${acc.label} • ${acc.model})`,
     })
   }
 
@@ -417,11 +445,12 @@ export default function AIGenerationPage() {
     }
   }
 
-  const handleSaveAgAccount = () => {
+  const handleSaveAgAccount = async () => {
+    const email = agForm.accountEmail.trim() || "emilinpoctu@gmail.com"
     const newAg: AntigravityAccountProfile = {
       id: `ag-${Date.now()}`,
-      label: agForm.label.trim() || `Antigravity (${agForm.model.split("-")[1] || "Pro"})`,
-      accountEmail: agForm.accountEmail.trim() || "emilinpoctu@gmail.com",
+      label: agForm.label.trim() || `Google Antigravity (${email})`,
+      accountEmail: email,
       apiKey: agForm.apiKey.trim(),
       model: agForm.model,
       agentRole: agForm.agentRole.trim() || "Kurikulum Baş Metodisti",
@@ -433,9 +462,17 @@ export default function AIGenerationPage() {
     localStorage.setItem("antigravity_ai_accounts", JSON.stringify(updated))
     localStorage.setItem("antigravity_active_ai_account_id", newAg.id)
 
+    try {
+      await fetch("/api/admin/antigravity/accounts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "save", account: newAg, makeActive: true }),
+      })
+    } catch (e) {}
+
     toast({
-      title: "Yeni Antigravity Hesabı Əlavə Edildi! 🤖🎉",
-      description: `${newAg.label} aktiv Antigravity Agenti təyin olundu.`,
+      title: "Google Antigravity Hesabı Əlavə Edildi və Aktiv Edildi! 🤖🎉",
+      description: `${newAg.accountEmail} (${newAg.label}) hazırda aktivdir.`,
     })
 
     setAgForm({
@@ -448,9 +485,9 @@ export default function AIGenerationPage() {
     setAgValidationResult(null)
   }
 
-  const handleDeleteAgAccount = (id: string) => {
+  const handleDeleteAgAccount = async (id: string) => {
     if (agAccounts.length <= 1) {
-      toast({ title: "Xəbərdarlıq", description: "Ən azı bir Antigravity hesabı qalmalıdır", variant: "destructive" })
+      toast({ title: "Xəbərdarlıq", description: "Ən azı bir Google Antigravity hesabı qalmalıdır", variant: "destructive" })
       return
     }
     const filtered = agAccounts.filter((a) => a.id !== id)
@@ -460,7 +497,16 @@ export default function AIGenerationPage() {
       localStorage.setItem("antigravity_active_ai_account_id", filtered[0].id)
     }
     localStorage.setItem("antigravity_ai_accounts", JSON.stringify(filtered))
-    toast({ title: "Antigravity hesabı silindi" })
+
+    try {
+      await fetch("/api/admin/antigravity/accounts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "delete", id }),
+      })
+    } catch (e) {}
+
+    toast({ title: "Google Antigravity hesabı silindi" })
   }
 
   // --- GitHub Account Handlers ---
@@ -818,22 +864,62 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
 
         {/* Dual Account Indicators & Switcher Trigger */}
         <div className="flex flex-wrap items-center gap-2.5">
-          {/* Active Antigravity AI Profile Card */}
-          <div className="flex items-center gap-2.5 bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 px-3 py-1.5 rounded-xl shadow-xs">
-            <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white shrink-0 shadow-xs">
+          {/* Active Google Antigravity Profile Card */}
+          <div className="flex items-center gap-2.5 bg-gradient-to-r from-purple-50 via-indigo-50 to-blue-50 border border-purple-300/80 px-3 py-1.5 rounded-xl shadow-xs hover:border-purple-400 transition-all">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white shrink-0 shadow-xs">
               <Bot className="h-4 w-4" />
             </div>
             <div className="text-left">
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-bold text-purple-950 truncate max-w-[130px]">{activeAgAccount.label}</span>
-                <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5 border-purple-300 bg-white text-purple-700 font-bold">
-                  Sİ Agenti
+                <span className="text-xs font-bold text-purple-950 truncate max-w-[140px]">{activeAgAccount.label}</span>
+                <Badge className="text-[9px] px-1.5 py-0 h-4 bg-purple-100 text-purple-800 border-purple-200 font-bold">
+                  Google Sİ
                 </Badge>
               </div>
-              <p className="text-[10px] text-purple-700 font-mono truncate max-w-[170px]">
-                {activeAgAccount.model.replace("-latest", "")} • {activeAgAccount.accountEmail}
+              <p className="text-[10px] text-purple-700 font-mono truncate max-w-[180px]">
+                <strong className="text-purple-900">{activeAgAccount.accountEmail}</strong> • {activeAgAccount.model.replace("-latest", "")}
               </p>
             </div>
+
+            {/* Quick Switch Dropdown if multiple accounts exist */}
+            {agAccounts.length > 1 && (
+              <Select
+                value={activeAgAccount.id}
+                onValueChange={(val) => {
+                  const found = agAccounts.find((a) => a.id === val)
+                  if (found) handleSwitchAgAccount(found)
+                }}
+              >
+                <SelectTrigger className="h-7 w-7 p-0 border-purple-200 bg-white hover:bg-purple-100/60 rounded-lg text-purple-700 shadow-none ml-1" title="Google Antigravity Hesabını Dəyiş">
+                  <RefreshCw className="h-3.5 w-3.5 mx-auto" />
+                </SelectTrigger>
+                <SelectContent align="end" className="w-72">
+                  <div className="px-2 py-1.5 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                    Google Antigravity Hesabı Seçin:
+                  </div>
+                  {agAccounts.map((acc) => (
+                    <SelectItem key={acc.id} value={acc.id} className="text-xs">
+                      <div className="flex flex-col text-left">
+                        <span className="font-semibold text-slate-900">{acc.label}</span>
+                        <span className="text-[10px] text-purple-700 font-mono">{acc.accountEmail} ({acc.model})</span>
+                      </div>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            )}
+
+            <Button
+              size="sm"
+              variant="ghost"
+              onClick={() => {
+                setSettingsTab("antigravity")
+                setIsSettingsModalOpen(true)
+              }}
+              className="h-7 px-2 text-[11px] font-bold text-purple-700 hover:bg-purple-100/80 hover:text-purple-950 rounded-lg shadow-none"
+            >
+              Hesabı Dəyiş 🔄
+            </Button>
           </div>
 
           {/* Active GitHub Account Card */}
@@ -1421,17 +1507,48 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                   />
                 </div>
 
-                {/* Aktiv Profil Xülasəsi */}
-                <div className="p-3 bg-gradient-to-r from-purple-50/50 to-indigo-50/50 border border-purple-200 rounded-lg text-xs space-y-1.5">
+                {/* Aktiv Google Antigravity Hesabı Seçimi */}
+                <div className="p-3.5 bg-gradient-to-r from-purple-50/80 via-indigo-50/60 to-blue-50/60 border border-purple-200 rounded-xl text-xs space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-purple-950 flex items-center gap-1.5">
-                      <Bot className="h-3.5 w-3.5 text-purple-600" /> Antigravity Agenti:
+                    <span className="font-bold text-purple-950 flex items-center gap-1.5">
+                      <Bot className="h-4 w-4 text-purple-600" /> İcraçı Google Antigravity Hesabı:
                     </span>
-                    <strong className="text-purple-900">{activeAgAccount.label}</strong>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSettingsTab("antigravity")
+                        setIsSettingsModalOpen(true)
+                      }}
+                      className="text-[11px] font-bold text-purple-700 hover:text-purple-900 hover:underline flex items-center gap-1"
+                    >
+                      <PlusCircle className="h-3 w-3" /> Yeni Hesab Əlavə Et
+                    </button>
                   </div>
-                  <div className="flex items-center justify-between text-[11px] text-slate-600">
+
+                  <Select
+                    value={activeAgAccount.id}
+                    onValueChange={(val) => {
+                      const found = agAccounts.find((a) => a.id === val)
+                      if (found) handleSwitchAgAccount(found)
+                    }}
+                  >
+                    <SelectTrigger className="bg-white h-8 text-xs border-purple-200 font-medium">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {agAccounts.map((acc) => (
+                        <SelectItem key={acc.id} value={acc.id} className="text-xs">
+                          <span className="font-bold text-purple-950">{acc.accountEmail}</span>
+                          {" — "}
+                          <span className="text-slate-600">{acc.label} ({acc.model.replace("-latest", "")})</span>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+
+                  <div className="flex items-center justify-between text-[11px] text-slate-600 pt-1.5 border-t border-purple-100">
                     <span>Hədəf GitHub:</span>
-                    <span className="font-mono font-semibold">{activeGhAccount.owner}/{activeGhAccount.repo} ({activeGhAccount.branch})</span>
+                    <span className="font-mono font-semibold text-slate-800">{activeGhAccount.owner}/{activeGhAccount.repo} ({activeGhAccount.branch})</span>
                   </div>
                 </div>
               </CardContent>
