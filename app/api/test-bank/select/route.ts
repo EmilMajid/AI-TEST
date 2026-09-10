@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
+import { azNorm, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 
 const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
 
@@ -20,7 +21,7 @@ export async function POST(request: NextRequest) {
         }
 
         const db = loadDb()
-        const getSelectQKey = (q: any) => (q?.question || "").toLowerCase().replace(/[\s\p{P}\p{S}]+/gu, "").trim()
+        const getSelectQKey = (q: any) => azNorm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
         const poolMap = new Map<string, any>()
 
         const extractQuestions = (val: any, sKey?: string) => {
@@ -55,22 +56,26 @@ export async function POST(request: NextRequest) {
             }
         }
 
-        if (subject && db[subject]) {
-            extractQuestions(db[subject], subject)
+        if (subject) {
+            const matchedSubjects = findMatchingSubjectKeys(subject, Object.keys(db))
+            if (matchedSubjects.length > 0) {
+                matchedSubjects.forEach(s => extractQuestions(db[s], s))
+            } else if (db[subject]) {
+                extractQuestions(db[subject], subject)
+            }
         } else {
             Object.entries(db).forEach(([sKey, val]) => extractQuestions(val, sKey))
         }
 
         const pool = Array.from(poolMap.values())
 
-        // Filter by topic
-        const norm = (s: string) => (s || "").toLowerCase().replace(/["'“”«»()]/g, "").trim()
-        const targetNorm = norm(topicKey)
+        // Strict 1-to-1 topic matching to eliminate cross-topic contamination
+        const allTopics = Array.from(new Set(pool.map((q: any) => q.topic || q.topic_key).filter(Boolean))) as string[]
+        const matchedTopics = findBestTopicMatch(topicKey, allTopics)
 
-        let filtered = pool.filter((q: any) => {
-            const qTopic = norm(q.topic || q.topic_key || "")
-            return qTopic === targetNorm || qTopic.includes(targetNorm) || targetNorm.includes(qTopic)
-        })
+        let filtered = matchedTopics.length > 0
+            ? pool.filter((q: any) => matchedTopics.includes(q.topic || q.topic_key))
+            : []
 
         // Apply optional filters
         if (difficulty) filtered = filtered.filter((q: any) => q.difficulty === difficulty)

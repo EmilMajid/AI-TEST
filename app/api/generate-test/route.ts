@@ -9,6 +9,7 @@ import { anthropic } from "@ai-sdk/anthropic"
 import { type NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
+import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 
 export async function POST(request: NextRequest) {
   try {
@@ -302,7 +303,7 @@ Mövzu: ${topic}`
       return NextResponse.json(
         {
           success: false,
-          error: "Bu fənn və mövzu üzrə hələlik test bazasında sual mövcud deyil. Zəhmət olmasa digər mövzuları seçin.",
+          error: `"${textbook}" dərsliyinin "${topic}" mövzusu üzrə hələlik test bazasında sual mövcud deyil. Zəhmət olmasa digər mövzuları seçin.`,
           questions: [],
         },
         { status: 404 },
@@ -344,99 +345,7 @@ function generateSubjectFallbackQuestions(
   count: number,
   difficulty: string
 ): any[] {
-  // If specific topic match failed, fallback to any available questions from the SAME subject/grade in offline_tests.json
-  try {
-    const db = getGradeDb(grade, textbookTitle)
-    if (db && Object.keys(db).length > 0) {
-      
-      const norm = (s: string) =>
-        s
-          .toLowerCase()
-          .replace(/i̇/g, "i")
-          .replace(/ı/g, "i")
-          .replace(/ğ/g, "g")
-          .replace(/ö/g, "o")
-          .replace(/ü/g, "u")
-          .replace(/ş/g, "s")
-          .replace(/ç/g, "c")
-          .replace(/ə/g, "e")
-          .replace(/[\s\-_]+/g, " ")
-          .trim()
-
-      const titleNorm = norm(textbookTitle)
-      const gradeDigit = String(grade || "").match(/\d+/)?.[0] || textbookTitle.match(/\d+/)?.[0]
-
-      let matchedKeys = Object.keys(db).filter(k => {
-        const kNorm = norm(k)
-        if (kNorm === titleNorm) return true
-        if (gradeDigit && !k.includes(gradeDigit)) return false
-        return titleNorm.includes(kNorm) || kNorm.includes(titleNorm)
-      })
-
-      if (matchedKeys.length === 0) {
-        matchedKeys = Object.keys(db).filter(k => {
-          const kNorm = norm(k)
-          if (gradeDigit && !k.includes(gradeDigit)) return false
-          if ((titleNorm.includes("рус") || titleNorm.includes("rus")) && (kNorm.includes("rus") || kNorm.includes("рус"))) return true
-          if ((titleNorm.includes("english") || titleNorm.includes("ingilis")) && (kNorm.includes("ingilis") || kNorm.includes("english") || kNorm.includes("eng"))) return true
-          if ((titleNorm.includes("deutsch") || titleNorm.includes("german") || titleNorm.includes("alman")) && (kNorm.includes("alman") || kNorm.includes("deu"))) return true
-          if ((titleNorm.includes("français") || titleNorm.includes("francais") || titleNorm.includes("french") || titleNorm.includes("fransız") || titleNorm.includes("fransiz")) && (kNorm.includes("fransız") || kNorm.includes("fransiz") || kNorm.includes("fra"))) return true
-          return false
-        })
-      }
-
-      const fallbackMap = new Map<string, any>()
-      const getNormQKey = (q: any) => norm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
-
-      matchedKeys.forEach(k => {
-        const val = db[k]
-        const pushUnique = (q: any) => {
-          if (!q || !q.question) return
-          const key = getNormQKey(q)
-          if (key && !fallbackMap.has(key)) {
-            fallbackMap.set(key, q)
-          }
-        }
-        if (Array.isArray(val)) {
-          val.forEach((item: any) => {
-            if (item.questions && Array.isArray(item.questions)) {
-              item.questions.forEach((q: any) => pushUnique(q))
-            } else if (item.question) {
-              pushUnique(item)
-            }
-          })
-        } else if (typeof val === "object" && val !== null) {
-          Object.values(val).forEach((qList: any) => {
-            if (Array.isArray(qList)) {
-              qList.forEach((q: any) => pushUnique(q))
-            }
-          })
-        }
-      })
-
-      const uniqueFallbackPool = Array.from(fallbackMap.values())
-      if (uniqueFallbackPool.length > 0) {
-        const shuffled = uniqueFallbackPool.sort(() => Math.random() - 0.5).slice(0, count)
-        return shuffled.map((q: any, idx: number) => ({
-          id: idx + 1,
-          question: q.question,
-          options: Array.isArray(q.options)
-            ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-D]\)\s*/i, "").trim() : String(opt))
-            : q.options,
-          correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : (q.correct_index ?? 0),
-          explanation: typeof q.explanation === "object" ? (q.explanation.correct || "") : (q.explanation || ""),
-          difficulty: q.difficulty || difficulty,
-          topic: q.topic || topic,
-          bloomLevel: q.bloom_level || q.bloomLevel || "anlama",
-          timeEstimate: 2,
-          sourceContext: q.sourceContext || `> **Mənbə:** ${textbookTitle}, "${topic}"`,
-        }))
-      }
-    }
-  } catch (e) {
-    console.error("Fallback pool loading error:", e)
-  }
-
+  // Strict: NEVER serve questions from other topics disguised as the requested topic.
   return []
 }
 
@@ -478,26 +387,18 @@ function loadFromQuestionBank(
     let matching = allQuestions.filter((q: any) => {
       const meta = q.metadata || {}
       const gradeMatch = meta.grade === gradeNum
-      const subjectText = (meta.subject || "").toLowerCase()
+      const subjectText = azNorm(meta.subject || "")
       
       let subjectMatch = true
       if (expectedSubject) {
-         subjectMatch = subjectText.includes(expectedSubject)
+        subjectMatch = subjectText.includes(azNorm(expectedSubject))
       }
 
-      const skillText = (q.measured_skill || "").toLowerCase()
-      const topicText = (meta.topic || "").toLowerCase()
-      const topicWords = topicLower.split(/\s+/).filter((w: string) => w.length > 4)
-      
-      if (skillText.includes(topicLower) || topicText.includes(topicLower)) {
-          return gradeMatch && subjectMatch
-      }
-      
-      const topicMatch = topicWords.length > 0 ? topicWords.some(
-        (w: string) => 
-          skillText.includes(w) || 
-          topicText.includes(w)
-      ) : false
+      const skillText = q.measured_skill || ""
+      const topicText = meta.topic || ""
+      const candidates = [skillText, topicText].filter(Boolean)
+      const matches = findBestTopicMatch(topic, candidates)
+      const topicMatch = matches.length > 0 || azNorm(skillText) === azNorm(topic) || azNorm(topicText) === azNorm(topic)
       
       return gradeMatch && subjectMatch && topicMatch
     })
@@ -596,127 +497,64 @@ function loadFromOfflineTests(
   try {
     const db = getGradeDb(grade, textbookTitle)
     if (!db || Object.keys(db).length === 0) return []
-    const topicLower = topic.toLowerCase().trim()
 
-    const norm = (s: string) =>
-      (s || "")
-        .normalize("NFKD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .replace(/i̇/g, "i")
-        .replace(/ı/g, "i")
-        .replace(/ğ/g, "g")
-        .replace(/ö/g, "o")
-        .replace(/ü/g, "u")
-        .replace(/ş/g, "s")
-        .replace(/ç/g, "c")
-        .replace(/ə/g, "e")
-        .replace(/[\s\-_]+/g, " ")
-        .trim()
-
-    const titleNorm = norm(textbookTitle)
-    const keys = Object.keys(db)
-    const gradeDigit = textbookTitle.match(/\d+/)?.[0]
-    
-    let matchedKeys = keys.filter(k => {
-      const kNorm = norm(k)
-      if (kNorm === titleNorm) return true
-      if (gradeDigit && !k.includes(gradeDigit)) return false
-      return titleNorm.includes(kNorm) || kNorm.includes(titleNorm)
-    })
-    
-    if (matchedKeys.length === 0) {
-      matchedKeys = keys.filter(k => {
-        const kNorm = norm(k)
-        const coreName = titleNorm.replace(/\b\d+\b/g, "").trim()
-        const kCoreName = kNorm.replace(/\b\d+\b/g, "").trim()
-        if (gradeDigit && !k.includes(gradeDigit)) return false
-        return kCoreName.includes(coreName) || coreName.includes(kCoreName)
-      })
-    }
-
-    if (matchedKeys.length === 0) {
-      matchedKeys = keys.filter(k => {
-        const kNorm = norm(k)
-        if (gradeDigit && !k.includes(gradeDigit)) return false
-        if ((titleNorm.includes("рус") || titleNorm.includes("rus")) && (kNorm.includes("rus") || kNorm.includes("рус"))) return true
-        if ((titleNorm.includes("english") || titleNorm.includes("ingilis")) && (kNorm.includes("ingilis") || kNorm.includes("english") || kNorm.includes("eng"))) return true
-        if ((titleNorm.includes("deutsch") || titleNorm.includes("german") || titleNorm.includes("alman")) && (kNorm.includes("alman") || kNorm.includes("deu"))) return true
-        if ((titleNorm.includes("français") || titleNorm.includes("francais") || titleNorm.includes("french") || titleNorm.includes("fransız") || titleNorm.includes("fransiz")) && (kNorm.includes("fransız") || kNorm.includes("fransiz") || kNorm.includes("fra"))) return true
-        return false
-      })
-    }
-
+    const matchedKeys = findMatchingSubjectKeys(textbookTitle, Object.keys(db), grade)
     if (matchedKeys.length === 0) {
       console.log(`[offline] No subject matched for textbook "${textbookTitle}"`)
       return []
     }
 
-    const getOfflineQKey = (q: any) => norm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
-
-    const cleanTopicStr = (str: string) =>
-      norm(str)
-        .replace(/^[0-9ivx]+[.\-)]*\s*/gi, "")
-        .replace(/^bölmə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
-        .replace(/^hissə\s+[0-9ivx]+[.\-:]*\s*/gi, "")
-        .replace(/^раздел\s+[0-9ivx]+[.\-:]*\s*/gi, "")
-        .replace(/["'“”«»()]/g, "")
-        .trim()
-
-    const targetNorm = norm(topic)
-    const targetClean = cleanTopicStr(topic)
-
+    const getOfflineQKey = (q: any) => azNorm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
     const specificTopicQuestions: any[] = []
-    const subjectQuestions: any[] = []
 
     matchedKeys.forEach(subjectKey => {
       const val = db[subjectKey]
       if (Array.isArray(val)) {
+        const candidateTopics = Array.from(new Set(
+          val.map((item: any) => item.topic || item.topic_key || (item.questions?.[0]?.topic)).filter(Boolean)
+        )) as string[]
+
+        const matchedTopics = findBestTopicMatch(topic, candidateTopics)
+        if (matchedTopics.length === 0) return
+
         val.forEach((item: any) => {
+          const itemTopic = item.topic || item.topic_key || ""
           if (item.questions && Array.isArray(item.questions)) {
             item.questions.forEach((q: any) => {
-              const qTopic = q.topic || item.topic_key || ""
-              const qCopy = { ...q, topic: qTopic, category: q.category || subjectKey }
-              subjectQuestions.push(qCopy)
-              const tNorm = norm(qTopic)
-              const tClean = cleanTopicStr(qTopic)
-              if (tNorm === targetNorm || tClean === targetClean || (targetClean.length > 4 && tClean.includes(targetClean))) {
-                specificTopicQuestions.push(qCopy)
+              const qTopic = q.topic || itemTopic
+              if (matchedTopics.includes(qTopic)) {
+                specificTopicQuestions.push({ ...q, topic: qTopic, category: q.category || subjectKey })
               }
             })
           } else if (item.question) {
-            const qTopic = item.topic || item.topic_key || ""
-            const qCopy = { ...item, topic: qTopic, category: item.category || subjectKey }
-            subjectQuestions.push(qCopy)
-            const tNorm = norm(qTopic)
-            const tClean = cleanTopicStr(qTopic)
-            if (tNorm === targetNorm || tClean === targetClean || (targetClean.length > 4 && tClean.includes(targetClean))) {
-              specificTopicQuestions.push(qCopy)
+            if (matchedTopics.includes(itemTopic)) {
+              specificTopicQuestions.push({ ...item, topic: itemTopic, category: item.category || subjectKey })
             }
           }
         })
       } else if (typeof val === "object" && val !== null) {
-        Object.entries(val).forEach(([tKey, qList]: [string, any]) => {
-          const tNorm = norm(tKey)
-          const tClean = cleanTopicStr(tKey)
-          const isTopicMatch = tNorm === targetNorm || tClean === targetClean || 
-                               (targetClean.length > 4 && tClean.includes(targetClean)) || 
-                               (tClean.length > 4 && targetClean.includes(tClean))
+        const candidateTopics = Object.keys(val)
+        const matchedTopics = findBestTopicMatch(topic, candidateTopics)
+        if (matchedTopics.length === 0) return
 
+        matchedTopics.forEach(mT => {
+          const qList = val[mT]
           if (Array.isArray(qList)) {
             qList.forEach((q: any) => {
-              const qCopy = { ...q, topic: q.topic || tKey, category: q.category || subjectKey }
-              subjectQuestions.push(qCopy)
-              if (isTopicMatch) {
-                specificTopicQuestions.push(qCopy)
-              }
+              specificTopicQuestions.push({ ...q, topic: q.topic || mT, category: q.category || subjectKey })
             })
           }
         })
       }
     })
 
-    const candidateQuestions = specificTopicQuestions.length > 0 ? specificTopicQuestions : subjectQuestions
+    // Strict: ONLY questions specifically matching the requested topic
+    if (specificTopicQuestions.length === 0) {
+      console.log(`[offline] No questions found matching topic "${topic}" in subject(s) ${JSON.stringify(matchedKeys)}`)
+      return []
+    }
+
+    const candidateQuestions = specificTopicQuestions
     if (candidateQuestions.length === 0) return []
 
     // Deduplicate within the candidate pool only

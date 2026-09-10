@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
+import { azNorm, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 
 const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
 
@@ -46,19 +47,23 @@ export async function GET(request: NextRequest) {
             }
         }
 
-        if (subject && db[subject]) {
-            extractQuestions(db[subject], subject)
+        if (subject) {
+            const matchedSubjects = findMatchingSubjectKeys(subject, Object.keys(db))
+            if (matchedSubjects.length > 0) {
+                matchedSubjects.forEach(s => extractQuestions(db[s], s))
+            } else if (db[subject]) {
+                extractQuestions(db[subject], subject)
+            }
         } else {
             Object.entries(db).forEach(([sKey, val]) => extractQuestions(val, sKey))
         }
 
         if (topic) {
-            const norm = (s: string) => (s || "").toLowerCase().replace(/["'“”«»()]/g, "").trim()
-            const targetNorm = norm(topic)
-            allQuestions = allQuestions.filter((q: any) => {
-                const qTopic = norm(q.topic || q.topic_key || "")
-                return qTopic === targetNorm || qTopic.includes(targetNorm) || targetNorm.includes(qTopic)
-            })
+            const allTopics = Array.from(new Set(allQuestions.map((q: any) => q.topic || q.topic_key).filter(Boolean))) as string[]
+            const matchedTopics = findBestTopicMatch(topic, allTopics)
+            allQuestions = matchedTopics.length > 0
+                ? allQuestions.filter((q: any) => matchedTopics.includes(q.topic || q.topic_key))
+                : []
         }
 
         return NextResponse.json(allQuestions)
