@@ -246,6 +246,7 @@ export default function AIGenerationPage() {
   const [isAnalyzingThreshold, setIsAnalyzingThreshold] = useState(false)
 
   // --- Curriculum & Generation State ---
+  const [textbookSource, setTextbookSource] = useState<"official" | "discussion">("official")
   const [grade, setGrade] = useState("2")
   const [textbooks, setTextbooks] = useState<TextbookOption[]>([])
   const [selectedTextbook, setSelectedTextbook] = useState("")
@@ -351,21 +352,37 @@ export default function AIGenerationPage() {
     loadOrders()
   }, [])
 
+  // 2.5. Check URL search params on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const sp = new URLSearchParams(window.location.search)
+      const src = sp.get("sourceType")
+      const g = sp.get("grade")
+      const tb = sp.get("textbook")
+      if (src === "discussion") {
+        setTextbookSource("discussion")
+        if (g) setGrade(g)
+        if (tb) setSelectedTextbook(tb)
+      }
+    }
+  }, [])
+
   // 3. Load curriculum textbooks for selected grade
   useEffect(() => {
     async function loadCurriculum() {
       setIsLoadingCurriculum(true)
       try {
-        const res = await fetch(`/api/admin/curriculum-options?grade=${grade}`)
+        const res = await fetch(`/api/admin/curriculum-options?grade=${grade}&sourceType=${textbookSource}`)
         const data = await res.json()
         if (data.success && Array.isArray(data.textbooks)) {
           setTextbooks(data.textbooks)
           if (data.textbooks.length > 0) {
-            const firstBook = data.textbooks[0]
-            setSelectedTextbook(firstBook.title)
-            setTopics(firstBook.topics || [])
-            setSelectedTopic(firstBook.topics?.[0] || "")
-            setSelectedMultipleTopics(firstBook.topics?.slice(0, 3) || [])
+            const matchedBook = selectedTextbook ? data.textbooks.find((b: any) => b.title === selectedTextbook) : null
+            const bookToSelect = matchedBook || data.textbooks[0]
+            setSelectedTextbook(bookToSelect.title)
+            setTopics(bookToSelect.topics || [])
+            setSelectedTopic(bookToSelect.topics?.[0] || "")
+            setSelectedMultipleTopics(bookToSelect.topics?.slice(0, 3) || [])
           } else {
             setSelectedTextbook("")
             setTopics([])
@@ -380,7 +397,7 @@ export default function AIGenerationPage() {
       }
     }
     loadCurriculum()
-  }, [grade])
+  }, [grade, textbookSource])
 
   // 3.5. Analyze Topic Thresholds against Question Bank
   const analyzeTopicThresholds = async () => {
@@ -720,6 +737,7 @@ export default function AIGenerationPage() {
 
     setIsCreatingOrder(true)
     try {
+      const selectedBookObj = textbooks.find((b) => b.title === selectedTextbook)
       const res = await fetch("/api/admin/antigravity/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -735,6 +753,9 @@ export default function AIGenerationPage() {
           isThresholdMode,
           minThreshold: Number(minThreshold) || 21,
           thresholdAnalysis: isThresholdMode ? thresholdAnalysis : null,
+          isDiscussionBook: textbookSource === "discussion",
+          discussionBookId: selectedBookObj?.id,
+          trimsId: (selectedBookObj as any)?.trimsId,
           antigravityAccount: {
             label: activeAgAccount.label,
             accountEmail: activeAgAccount.accountEmail,
@@ -1477,6 +1498,57 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 pt-4 text-xs">
+                {/* Dərslik Mənbəyi: Rəsmi vs İctimai Müzakirə */}
+                <div className="space-y-1.5 p-2.5 bg-slate-50/80 border border-slate-200 rounded-xl">
+                  <div className="flex items-center justify-between">
+                    <Label className="text-[11px] font-bold text-slate-800">Dərslik Mənbəyi Seçimi:</Label>
+                    <Link
+                      href="/admin/discussion-textbooks"
+                      className="text-[10px] text-purple-700 hover:text-purple-900 font-semibold flex items-center gap-0.5"
+                    >
+                      TRİMS Mərkəzi ↗
+                    </Link>
+                  </div>
+                  <div className="grid grid-cols-2 gap-1.5 pt-0.5">
+                    <button
+                      type="button"
+                      onClick={() => setTextbookSource("official")}
+                      className={`p-1.5 rounded-lg text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                        textbookSource === "official"
+                          ? "bg-white border-indigo-500 text-indigo-950 shadow-xs ring-1 ring-indigo-400"
+                          : "bg-white/60 border-slate-200 text-slate-600 hover:bg-white"
+                      }`}
+                    >
+                      <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+                      📘 Rəsmi Dərsliklər
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setTextbookSource("discussion")
+                        if (!["7", "8", "9"].includes(grade)) setGrade("7")
+                      }}
+                      className={`p-1.5 rounded-lg text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                        textbookSource === "discussion"
+                          ? "bg-purple-600 border-purple-600 text-white shadow-xs font-bold"
+                          : "bg-white/60 border-purple-200 text-purple-700 hover:bg-purple-50"
+                      }`}
+                    >
+                      <Sparkles className="h-3.5 w-3.5" />
+                      🔬 İctimai Müzakirə (TRİMS)
+                    </button>
+                  </div>
+                  {textbookSource === "discussion" && (
+                    <div className="p-2 bg-purple-50 border border-purple-100 rounded text-[10px] text-purple-900 flex items-center gap-1.5">
+                      <Sparkles className="h-3.5 w-3.5 text-purple-600 shrink-0" />
+                      <span>
+                        TRİMS portalındakı 16 layihə dərsliyi seçildi. Suallar birbaşa layihə mətnlərindən RAG konteksti ilə generasiya ediləcək.
+                      </span>
+                    </div>
+                  )}
+                </div>
+
                 {/* Sinif Seçimi */}
                 <div className="space-y-1.5">
                   <Label className="text-xs font-semibold">1. Sinif Səviyyəsi</Label>
@@ -1485,7 +1557,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                       <SelectValue placeholder="Sinif seçin" />
                     </SelectTrigger>
                     <SelectContent>
-                      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((g) => (
+                      {(textbookSource === "discussion" ? [7, 8, 9] : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]).map((g) => (
                         <SelectItem key={g} value={String(g)} className="text-xs">
                           {g}-ci sinif
                         </SelectItem>
@@ -1728,6 +1800,11 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                           <Badge variant="outline" className="bg-white font-semibold text-xs text-slate-800">
                             {ord.grade}-ci sinif • {ord.textbook}
                           </Badge>
+                          {ord.isDiscussionBook && (
+                            <Badge className="bg-purple-100 text-purple-700 border-purple-300 text-[10px] font-bold">
+                              🔬 TRİMS Layihə
+                            </Badge>
+                          )}
                         </div>
                         <div className="flex items-center gap-2">
                           <Badge className="bg-amber-100 text-amber-800 border-amber-300 text-[11px] font-semibold gap-1">

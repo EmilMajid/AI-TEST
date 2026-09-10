@@ -20,6 +20,9 @@ export interface AntigravityOrder {
   isThresholdMode?: boolean
   minThreshold?: number
   thresholdAnalysis?: any
+  isDiscussionBook?: boolean
+  discussionBookId?: string
+  trimsId?: string
   antigravityAccount?: {
     label: string
     accountEmail?: string
@@ -76,7 +79,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { grade, textbook, topics, questionCount, difficulty, notes, account, antigravityAccount, questionType, bloomLevel, isThresholdMode, minThreshold, thresholdAnalysis } = body
+    const { grade, textbook, topics, questionCount, difficulty, notes, account, antigravityAccount, questionType, bloomLevel, isThresholdMode, minThreshold, thresholdAnalysis, isDiscussionBook, discussionBookId, trimsId } = body
 
     if (!grade || !textbook || !Array.isArray(topics) || topics.length === 0) {
       return NextResponse.json(
@@ -101,6 +104,9 @@ export async function POST(request: NextRequest) {
       isThresholdMode: !!isThresholdMode,
       minThreshold: Number(minThreshold) || 21,
       thresholdAnalysis: thresholdAnalysis || null,
+      isDiscussionBook: !!isDiscussionBook,
+      discussionBookId: discussionBookId || undefined,
+      trimsId: trimsId || undefined,
       antigravityAccount: {
         label: antigravityAccount?.label || "Antigravity Əsas Profil",
         accountEmail: antigravityAccount?.accountEmail || "emilinpoctu@gmail.com",

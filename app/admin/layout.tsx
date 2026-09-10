@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe, LayoutDashboard, AlertTriangle, Activity } from 'lucide-react'
+import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe, LayoutDashboard, AlertTriangle, Activity, Sparkles } from 'lucide-react'
 import { useRouter, usePathname } from 'next/navigation'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
@@ -93,6 +93,16 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                             >
                                 <BookOpen className="h-4 w-4 mr-2 text-cyan-400" />
                                 Tədris Proqramı (Analitika)
+                            </Button>
+                        </Link>
+
+                        <Link href="/admin/discussion-textbooks">
+                            <Button 
+                                variant="ghost" 
+                                className={`w-full justify-start ${isActive('/admin/discussion-textbooks') ? 'bg-slate-800 text-white font-medium' : 'text-slate-300 hover:text-white hover:bg-slate-800'}`}
+                            >
+                                <Sparkles className="h-4 w-4 mr-2 text-purple-400" />
+                                Müzakirə Dərslikləri (TRİMS)
                             </Button>
                         </Link>
 
