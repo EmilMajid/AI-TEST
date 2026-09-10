@@ -135,21 +135,53 @@ interface TextbookStat {
 // Defaults
 const DEFAULT_ANTIGRAVITY_ACCOUNTS: AntigravityAccountProfile[] = [
   {
-    id: "ag-main",
-    label: "Antigravity Baş Hesab",
+    id: "ag-gemini-31-pro",
+    label: "Gemini 3.1 Pro (Əsas Agent Modeli)",
     accountEmail: "emilinpoctu@gmail.com",
-    apiKey: "", // Can be filled by user or falls back to server env
-    model: "gemini-1.5-pro-latest",
-    agentRole: "Kurikulum və DİM Baş Metodisti",
+    apiKey: "",
+    model: "gemini-3.1-pro",
+    agentRole: "Dərin Mühakimə & Kurikulum Baş Metodisti",
     isDefault: true,
   },
   {
-    id: "ag-flash",
-    label: "Antigravity Sürətli İstehsalat (Flash)",
+    id: "ag-gemini-38-flash",
+    label: "Gemini 3.8 Flash (Ultra Sürət & Performans)",
     accountEmail: "emilinpoctu@gmail.com",
     apiKey: "",
-    model: "gemini-2.0-flash-exp",
+    model: "gemini-3.8-flash",
     agentRole: "Sürətli Test İstehsalatı Agenti",
+  },
+  {
+    id: "ag-gemini-37-flash",
+    label: "Gemini 3.7 Flash (Skriptlər & Məlumat)",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "gemini-3.7-flash",
+    agentRole: "Məlumat Təmizləmə & Operativ Analitik",
+  },
+  {
+    id: "ag-claude-sonnet-46",
+    label: "Claude Sonnet 4.6 (thinking)",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "claude-sonnet-4.6-thinking",
+    agentRole: "Dərin Refaktorinq & Analitik Sual Eksperti",
+  },
+  {
+    id: "ag-claude-opus-46",
+    label: "Claude Opus 4.6 (thinking)",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "claude-opus-4.6-thinking",
+    agentRole: "Sistem Memarlığı & Ağır Tapşırıqlar",
+  },
+  {
+    id: "ag-gpt-oss",
+    label: "GPT-OSS-120b (Açıq Mənbəli)",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "gpt-oss-120b",
+    agentRole: "Sərbəst Mühakimə & Kodlaşdırma",
   },
 ]
 
@@ -181,7 +213,7 @@ export default function AIGenerationPage() {
     label: "",
     accountEmail: "emilinpoctu@gmail.com",
     apiKey: "",
-    model: "gemini-1.5-pro-latest",
+    model: "gemini-3.1-pro",
     agentRole: "Kurikulum və DİM Baş Metodisti",
   })
 
@@ -479,7 +511,7 @@ export default function AIGenerationPage() {
       label: "",
       accountEmail: "emilinpoctu@gmail.com",
       apiKey: "",
-      model: "gemini-1.5-pro-latest",
+      model: "gemini-3.1-pro",
       agentRole: "Kurikulum Baş Metodisti",
     })
     setAgValidationResult(null)
@@ -1083,21 +1115,54 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                       <div className="space-y-1">
                         <Label className="text-[11px] font-semibold">Antigravity Sİ Modeli</Label>
                         <Select value={agForm.model} onValueChange={(v) => setAgForm({ ...agForm, model: v })}>
-                          <SelectTrigger className="h-8 text-xs bg-white">
+                          <SelectTrigger className="h-8 text-xs bg-white font-medium">
                             <SelectValue />
                           </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="gemini-1.5-pro-latest" className="text-xs">
-                              Gemini 1.5 Pro (Dərin Kurrikulum & RAG)
+                          <SelectContent className="max-h-80">
+                            {/* Google Gemini Seriyası */}
+                            <div className="px-2 py-1 text-[10px] font-bold text-indigo-900 bg-indigo-50/80 rounded uppercase tracking-wider">
+                              Google Gemini Seriyası (Dərin Mühakimə & Sürət)
+                            </div>
+                            <SelectItem value="gemini-3.1-pro" className="text-xs">
+                              🌟 Gemini 3.1 Pro — Əsas Agent Modeli (Mürəkkəb Memarlıq & Məntiq)
                             </SelectItem>
-                            <SelectItem value="gemini-2.0-flash-exp" className="text-xs">
-                              Gemini 2.0 Flash (Yüksək Sürətli)
+                            <SelectItem value="gemini-3.8-flash" className="text-xs">
+                              ⚡ Gemini 3.8 Flash — Ən Son Ultra Sürət & Performans
                             </SelectItem>
-                            <SelectItem value="gemini-1.5-flash-latest" className="text-xs">
-                              Gemini 1.5 Flash (Standart)
+                            <SelectItem value="gemini-3.7-flash" className="text-xs">
+                              ⚡ Gemini 3.7 Flash — Sürətli Skriptlər & Məlumat Təmizləmə
+                            </SelectItem>
+                            <SelectItem value="gemini-3.6-flash" className="text-xs">
+                              ⚡ Gemini 3.6 Flash — Operativ Sual & Kod Tamamlama
+                            </SelectItem>
+
+                            {/* Anthropic Claude Seriyası */}
+                            <div className="px-2 py-1 mt-1 text-[10px] font-bold text-amber-900 bg-amber-50/80 rounded uppercase tracking-wider">
+                              Anthropic Claude Seriyası (Thinking)
+                            </div>
+                            <SelectItem value="claude-sonnet-4.6-thinking" className="text-xs">
+                              🧠 Claude Sonnet 4.6 (thinking) — Dərin Refaktorinq & Analiz
+                            </SelectItem>
+                            <SelectItem value="claude-opus-4.6-thinking" className="text-xs">
+                              🏛️ Claude Opus 4.6 (thinking) — Sistem Memarlığı & Ağır Tapşırıqlar
+                            </SelectItem>
+
+                            {/* Açıq Mənbəli Modellər */}
+                            <div className="px-2 py-1 mt-1 text-[10px] font-bold text-emerald-900 bg-emerald-50/80 rounded uppercase tracking-wider">
+                              Açıq Mənbəli Modellər
+                            </div>
+                            <SelectItem value="gpt-oss-120b" className="text-xs">
+                              🌐 GPT-OSS-120b — OpenAI Arxitekturalı Açıq Mənbəli Model
                             </SelectItem>
                           </SelectContent>
                         </Select>
+                        {/* Avtomatik Köməkçi Model Bildirişi */}
+                        <div className="p-2 bg-purple-50/50 border border-purple-100 rounded text-[10px] text-purple-900 flex items-start gap-1.5 mt-1">
+                          <Sparkles className="h-3 w-3 text-purple-600 shrink-0 mt-0.5" />
+                          <span>
+                            <strong>Avtomatik Köməkçi:</strong> <strong>Nano Banana 2</strong> təsvir modeli interfeys maketləri, sistem diaqramları və vizual şəkillər üçün arxa fonda avtomatik işə salınır.
+                          </span>
+                        </div>
                       </div>
 
                       <div className="space-y-1">

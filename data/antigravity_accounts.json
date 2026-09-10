@@ -1,0 +1,65 @@
+{
+  "activeAccountId": "ag-gemini-31-pro",
+  "accounts": [
+    {
+      "id": "ag-gemini-31-pro",
+      "label": "Gemini 3.1 Pro (Əsas Agent Modeli)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "gemini-3.1-pro",
+      "agentRole": "Dərin Mühakimə & Kurikulum Baş Metodisti",
+      "isDefault": true,
+      "createdAt": "2026-09-10T18:59:30.886Z"
+    },
+    {
+      "id": "ag-gemini-38-flash",
+      "label": "Gemini 3.8 Flash (Ultra Sürət & Performans)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "gemini-3.8-flash",
+      "agentRole": "Sürətli Test İstehsalatı Agenti",
+      "isDefault": false,
+      "createdAt": "2026-09-10T18:59:30.889Z"
+    },
+    {
+      "id": "ag-gemini-37-flash",
+      "label": "Gemini 3.7 Flash (Skriptlər & Məlumat Təmizləmə)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "gemini-3.7-flash",
+      "agentRole": "Məlumat Təmizləmə & Operativ Analitik",
+      "isDefault": false,
+      "createdAt": "2026-09-10T18:59:30.889Z"
+    },
+    {
+      "id": "ag-claude-sonnet-46",
+      "label": "Claude Sonnet 4.6 (thinking)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "claude-sonnet-4.6-thinking",
+      "agentRole": "Dərin Refaktorinq & Analitik Sual Eksperti",
+      "isDefault": false,
+      "createdAt": "2026-09-10T18:59:30.889Z"
+    },
+    {
+      "id": "ag-claude-opus-46",
+      "label": "Claude Opus 4.6 (thinking)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "claude-opus-4.6-thinking",
+      "agentRole": "Sistem Memarlığı & Ağır Tapşırıqlar",
+      "isDefault": false,
+      "createdAt": "2026-09-10T18:59:30.889Z"
+    },
+    {
+      "id": "ag-gpt-oss",
+      "label": "GPT-OSS-120b (Açıq Mənbəli)",
+      "accountEmail": "emilinpoctu@gmail.com",
+      "apiKey": "",
+      "model": "gpt-oss-120b",
+      "agentRole": "Sərbəst Mühakimə & Kodlaşdırma",
+      "isDefault": false,
+      "createdAt": "2026-09-10T18:59:30.889Z"
+    }
+  ]
+}

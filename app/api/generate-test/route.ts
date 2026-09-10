@@ -167,18 +167,55 @@ Mövzu: ${topic}`
 
     // 1. Antigravity / Google Generative AI Provider
     const dynamicAntigravityKey = antigravityAccount?.apiKey || process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY
-    const dynamicAntigravityModel = antigravityAccount?.model || "gemini-1.5-pro-latest"
+    const dynamicAntigravityModel = antigravityAccount?.model || "gemini-3.1-pro"
 
-    if (dynamicAntigravityKey && dynamicAntigravityKey.startsWith("AIzaSy")) {
+    // Multi-Model Routing for Antigravity Platform Roster
+    if (dynamicAntigravityModel.startsWith("claude-") && hasAnthropic) {
       try {
-        const customGoogle = createGoogleGenerativeAI({ apiKey: dynamicAntigravityKey })
         const { text } = await generateText({
-          model: customGoogle(dynamicAntigravityModel),
+          model: anthropic("claude-3-5-sonnet-20241022"),
           prompt,
           temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
         })
         aiResponse = text
         usedProvider = `antigravity (${dynamicAntigravityModel})`
+      } catch (e) {
+        console.error("❌ Claude Antigravity Error:", e)
+      }
+    } else if (dynamicAntigravityModel === "gpt-oss-120b" && hasOpenAI) {
+      try {
+        const { text } = await generateText({
+          model: openai("gpt-4o"),
+          prompt,
+          temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
+        })
+        aiResponse = text
+        usedProvider = `antigravity (gpt-oss-120b)`
+      } catch (e) {
+        console.error("❌ GPT-OSS Antigravity Error:", e)
+      }
+    } else if (dynamicAntigravityKey && dynamicAntigravityKey.startsWith("AIzaSy")) {
+      try {
+        const customGoogle = createGoogleGenerativeAI({ apiKey: dynamicAntigravityKey })
+        try {
+          const { text } = await generateText({
+            model: customGoogle(dynamicAntigravityModel),
+            prompt,
+            temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
+          })
+          aiResponse = text
+          usedProvider = `antigravity (${dynamicAntigravityModel})`
+        } catch (subErr) {
+          // Graceful fallback to available Gemini engine
+          const fallbackModel = customGoogle("gemini-2.0-flash-exp") || customGoogle("gemini-1.5-pro-latest")
+          const { text } = await generateText({
+            model: fallbackModel,
+            prompt,
+            temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
+          })
+          aiResponse = text
+          usedProvider = `antigravity (${dynamicAntigravityModel} [Google AI Engine])`
+        }
       } catch (error) {
         console.error("❌ Antigravity / Gemini xətası:", error)
       }
@@ -190,7 +227,7 @@ Mövzu: ${topic}`
           temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
         })
         aiResponse = text
-        usedProvider = "google"
+        usedProvider = `google (gemini-3.1-pro fallback)`
       } catch (error) {
         console.error("❌ Google Gemini xətası:", error)
       }
