@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 import { saveTestResult, type StoredTestResult } from "@/lib/test-result-store"
 import { getAllUsers, loadLinksFromDisk, supabaseAdmin } from "@/lib/user-store"
-import { sendTestResultNotification } from "@/lib/email-service"
+import { sendTestResultNotification, isDemoEmail } from "@/lib/email-service"
 import { getAuthContext } from "@/lib/auth-utils"
 
 function matchStudentUser(queryId: string | number | undefined, email: string | undefined, user: any): boolean {
@@ -172,7 +172,13 @@ export async function POST(request: NextRequest) {
         }
       }
 
-      // 3. Fallback for demo/test environments to ensure tester receives the result
+      // 3. Fallback: if no parent linked, check if student themselves has a real registered email
+      if (!parentEmailToNotify && studentEmail && studentEmail.includes("@") && !isDemoEmail(studentEmail)) {
+        parentEmailToNotify = studentEmail
+        parentName = studentName || "Şagird"
+      }
+
+      // 4. Fallback for demo/test environments to ensure tester receives the result
       if (!parentEmailToNotify && process.env.TEST_EMAIL_RECIPIENT) {
         parentEmailToNotify = process.env.TEST_EMAIL_RECIPIENT
       }

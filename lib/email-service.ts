@@ -20,15 +20,15 @@ export interface DirectEmailParams {
   from?: string
 }
 
-function isDemoEmail(email: string): boolean {
+export function isDemoEmail(email: string): boolean {
   if (!email) return false
   const clean = email.toLowerCase().trim()
   return (
-    clean.endsWith("@testai.az") ||
-    clean.endsWith("@test.com") ||
     clean.endsWith("@example.com") ||
-    clean.startsWith("student-") ||
-    clean.startsWith("parent-")
+    clean.endsWith("@demo.com") ||
+    clean.startsWith("demo-") ||
+    clean.startsWith("student-demo") ||
+    clean.startsWith("parent-demo")
   )
 }
 
@@ -59,9 +59,10 @@ function getSmtpTransporter() {
  */
 export async function sendDirectEmail(params: DirectEmailParams): Promise<EmailSendResponse> {
   const { to, subject, html, from } = params
-  const resendApiKey = process.env.RESEND_API_KEY || ""
-  const primaryFrom = from || process.env.EMAIL_FROM || '"testai.az Təhsil Portalı" <info@testai.az>'
-  const fallbackFrom = '"testai.az Təhsil Portalı" <onboarding@resend.dev>'
+  const resendApiKey = process.env.RESEND_API_KEY || "re_durkG6BR_2Hk2bAz7XJkKh11aoZPGBoxY"
+  const configuredFrom = process.env.EMAIL_FROM ? process.env.EMAIL_FROM.replace(/^"|"$/g, "") : ""
+  const primaryFrom = from || configuredFrom || "testai.az Təhsil Portalı <info@testai.az>"
+  const fallbackFrom = "testai.az Təhsil Portalı <onboarding@resend.dev>"
 
   // 1. Resend API Dispatch
   if (resendApiKey) {
@@ -83,9 +84,9 @@ export async function sendDirectEmail(params: DirectEmailParams): Promise<EmailS
 
       let data = await res.json()
 
-      // If domain is pending verification, retry with verified onboarding sender
+      // If domain is pending verification, retry with verified onboarding sender only for owner
       if (!res.ok && data?.statusCode === 403 && data?.message?.includes("not verified")) {
-        console.warn(`[EMAIL] testai.az domain pending verification. Using onboarding sender for test delivery to ${to}`)
+        console.warn(`[EMAIL] testai.az domain pending verification. Retrying for ${to}`)
         res = await fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: {
@@ -110,10 +111,19 @@ export async function sendDirectEmail(params: DirectEmailParams): Promise<EmailS
           simulated: false,
         }
       } else {
+        const errMsg = data?.message || `Resend xətası (${res.status})`
         console.error("[EMAIL ERROR - Resend API]:", data)
+        return {
+          success: false,
+          error: errMsg,
+        }
       }
     } catch (err: any) {
       console.error("[EMAIL ERROR - Resend Fetch]:", err?.message || err)
+      return {
+        success: false,
+        error: err?.message || "Resend şəbəkə xətası",
+      }
     }
   }
 
@@ -142,14 +152,14 @@ export async function sendDirectEmail(params: DirectEmailParams): Promise<EmailS
     }
   }
 
-  // 3. Fallback simulation mode
-  console.log(
-    `[EMAIL SIMULATION] Neither Resend nor SMTP active.\n  To: ${to}\n  Subject: ${subject}`
+  // 3. Fallback: No email provider active
+  console.error(
+    `[EMAIL ERROR] Neither Resend nor SMTP active.\n  To: ${to}\n  Subject: ${subject}`
   )
   return {
-    success: true,
+    success: false,
     simulated: true,
-    messageId: `sim-${Date.now()}`,
+    error: "E-mail xidməti aktivləşdirilməyib",
   }
 }
 
