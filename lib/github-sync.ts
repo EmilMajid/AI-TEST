@@ -5,6 +5,18 @@ import { promisify } from "util"
 
 const execAsync = promisify(exec)
 
+export interface GitHubAccountConfig {
+  id?: string
+  name?: string
+  token?: string
+  owner?: string
+  repo?: string
+  branch?: string
+  operatorName?: string
+  operatorRole?: string
+  avatarUrl?: string
+}
+
 export interface PushQuestionsParams {
   grade: string | number
   textbook: string
@@ -21,6 +33,7 @@ export interface PushQuestionsParams {
     difficulty?: string
     bloomLevel?: string
   }>
+  githubConfig?: GitHubAccountConfig
 }
 
 export interface PushResult {
@@ -29,6 +42,7 @@ export interface PushResult {
   message: string
   addedCount: number
   totalInSubject: number
+  repoUrl?: string
   error?: string
 }
 
@@ -90,37 +104,41 @@ export async function saveAndPushQuestions(params: PushQuestionsParams): Promise
   fs.writeFileSync(filePath, JSON.stringify(db, null, 2), "utf-8")
   console.log(`[SAVE] Saved ${newQuestions.length} questions to ${filePath} under "${subjectKey}". Total: ${db[subjectKey].length}`)
 
-  const commitMsg = `feat(test-bank): add ${newQuestions.length} questions for ${subjectKey} - "${topic}" [Grade ${cleanGrade}]`
+  const token = params.githubConfig?.token || process.env.GITHUB_TOKEN || "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"
+  const owner = params.githubConfig?.owner || process.env.GITHUB_REPO_OWNER || "EmilMajid"
+  const repo = params.githubConfig?.repo || process.env.GITHUB_REPO_NAME || "AI-TEST"
+  const branch = params.githubConfig?.branch || process.env.GITHUB_REPO_BRANCH || "main"
+  const operator = params.githubConfig?.operatorName ? ` (${params.githubConfig.operatorName})` : ""
 
-  // 1. Try local Git commit & push
-  try {
-    const gitRelativePath = `data/grades/grade_${cleanGrade}.json`
-    await execAsync(`git add "${gitRelativePath}"`, { cwd: process.cwd() })
-    const { stdout: commitOut } = await execAsync(`git commit -m "${commitMsg}"`, { cwd: process.cwd() })
-    console.log("[GIT COMMIT]:", commitOut.trim())
+  const commitMsg = `feat(test-bank): add ${newQuestions.length} questions for ${subjectKey} - "${topic}" [Grade ${cleanGrade}]${operator}`
+  const isDefaultLocalRepo = owner.toLowerCase() === "emilmajid" && repo.toLowerCase() === "ai-test" && branch.toLowerCase() === "main"
 
-    const { stdout: pushOut } = await execAsync("git push origin main", { cwd: process.cwd() })
-    console.log("[GIT PUSH]:", pushOut.trim())
+  // 1. Try local Git commit & push only if targeting default local repo
+  if (isDefaultLocalRepo) {
+    try {
+      const gitRelativePath = `data/grades/grade_${cleanGrade}.json`
+      await execAsync(`git add "${gitRelativePath}"`, { cwd: process.cwd() })
+      const { stdout: commitOut } = await execAsync(`git commit -m "${commitMsg}"`, { cwd: process.cwd() })
+      console.log("[GIT COMMIT]:", commitOut.trim())
 
-    const shaMatch = commitOut.match(/\[[a-zA-Z0-9_-]+\s+([a-f0-9]+)\]/)
-    const commitSha = shaMatch ? shaMatch[1] : undefined
+      const { stdout: pushOut } = await execAsync("git push origin main", { cwd: process.cwd() })
+      console.log("[GIT PUSH]:", pushOut.trim())
 
-    return {
-      success: true,
-      commitSha,
-      message: `${newQuestions.length} sual uğurla bazaya yazıldı və GitHub-a push edildi! 🚀`,
-      addedCount: newQuestions.length,
-      totalInSubject: db[subjectKey].length,
+      const shaMatch = commitOut.match(/\[[a-zA-Z0-9_-]+\s+([a-f0-9]+)\]/)
+      const commitSha = shaMatch ? shaMatch[1] : undefined
+
+      return {
+        success: true,
+        commitSha,
+        message: `${newQuestions.length} sual uğurla bazaya yazıldı və ${owner}/${repo} (${branch}) repozitoriyasına push edildi! 🚀`,
+        addedCount: newQuestions.length,
+        totalInSubject: db[subjectKey].length,
+        repoUrl: `https://github.com/${owner}/${repo}`,
+      }
+    } catch (gitErr: any) {
+      console.warn("[GIT CLI] Local git command failed or not configured, attempting GitHub REST API...", gitErr?.message)
     }
-  } catch (gitErr: any) {
-    console.warn("[GIT CLI] Local git command failed or not configured, attempting GitHub REST API...", gitErr?.message)
   }
-
-  // 2. Fallback to GitHub REST API
-  const token = process.env.GITHUB_TOKEN || "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"
-  const owner = process.env.GITHUB_REPO_OWNER || "EmilMajid"
-  const repo = process.env.GITHUB_REPO_NAME || "AI-TEST"
-  const branch = process.env.GITHUB_REPO_BRANCH || "main"
 
   try {
     const gitPath = `data/grades/grade_${cleanGrade}.json`
@@ -220,6 +238,7 @@ export async function saveAndPushQuestions(params: PushQuestionsParams): Promise
         message: `${newQuestions.length} sual uğurla bazaya yazıldı və GitHub API ilə birbaşa push edildi! 🚀`,
         addedCount: newQuestions.length,
         totalInSubject: db[subjectKey].length,
+        repoUrl: `https://github.com/${owner}/${repo}`,
       }
     } else {
       const err = await updateRefRes.json()
@@ -231,6 +250,7 @@ export async function saveAndPushQuestions(params: PushQuestionsParams): Promise
       success: true,
       addedCount: newQuestions.length,
       totalInSubject: db[subjectKey].length,
+      repoUrl: `https://github.com/${owner}/${repo}`,
       message: `${newQuestions.length} sual yerli bazaya yazıldı, lakin GitHub-a push edilərkən xəta: ${apiErr.message}`,
       error: apiErr.message,
     }

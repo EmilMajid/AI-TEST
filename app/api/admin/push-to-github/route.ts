@@ -5,7 +5,7 @@ import { saveAndPushQuestions } from "@/lib/github-sync"
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { grade, textbook, topic, questions } = body
+    const { grade, textbook, topic, questions, githubConfig } = body
 
     if (!grade || !textbook || !topic || !Array.isArray(questions) || questions.length === 0) {
       return NextResponse.json(
@@ -19,6 +19,7 @@ export async function POST(request: NextRequest) {
       textbook,
       topic,
       questions,
+      githubConfig,
     })
 
     return NextResponse.json(result, { status: result.success ? 200 : 500 })
