@@ -423,7 +423,8 @@ export default function AIGenerationPage() {
   const loadCoverageStats = async () => {
     try {
       setIsLoadingStats(true)
-      const res = await fetch(`/api/admin/curriculum-stats?grade=${grade}&textbook=${encodeURIComponent(selectedTextbook)}`)
+      const tbParam = selectedTextbook && selectedTextbook !== "all" ? `&textbook=${encodeURIComponent(selectedTextbook)}` : ""
+      const res = await fetch(`/api/admin/curriculum-stats?grade=${grade}${tbParam}`)
       const data = await res.json()
       if (data.success && Array.isArray(data.stats)) {
         setCurriculumStats(data.stats)
@@ -436,7 +437,7 @@ export default function AIGenerationPage() {
   }
 
   useEffect(() => {
-    if (activeTab === "stats" && selectedTextbook) {
+    if (activeTab === "stats") {
       loadCoverageStats()
     }
   }, [activeTab, grade, selectedTextbook])
@@ -2183,7 +2184,8 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                     Rəsmi kurrikulum mövzuları üzrə faktiki sual sayını təhlil edin və çatışmayan mövzuları dərhal sifariş edin.
                   </CardDescription>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  {/* Sinif Seçimi */}
                   <Select value={grade} onValueChange={setGrade}>
                     <SelectTrigger className="w-28 h-8 text-xs bg-white">
                       <SelectValue placeholder="Sinif" />
@@ -2196,9 +2198,36 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                       ))}
                     </SelectContent>
                   </Select>
-                  <Button size="sm" variant="outline" onClick={loadCoverageStats} disabled={isLoadingStats} className="h-8 text-xs gap-1">
+
+                  {/* Dərslik / Fənn Filtri */}
+                  <Select
+                    value={selectedTextbook || "all"}
+                    onValueChange={(val) => {
+                      if (val === "all") {
+                        setSelectedTextbook("")
+                      } else {
+                        setSelectedTextbook(val)
+                      }
+                    }}
+                  >
+                    <SelectTrigger className="w-48 sm:w-60 h-8 text-xs bg-white">
+                      <SelectValue placeholder="Bütün Dərsliklər" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-60">
+                      <SelectItem value="all" className="text-xs font-bold text-indigo-700">
+                        📚 Bütün Dərsliklər ({textbooks.length})
+                      </SelectItem>
+                      {textbooks.map((b) => (
+                        <SelectItem key={b.id || b.title} value={b.title} className="text-xs">
+                          {b.title}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+
+                  <Button size="sm" variant="outline" onClick={loadCoverageStats} disabled={isLoadingStats} className="h-8 text-xs gap-1 font-semibold">
                     <RefreshCw className={`h-3.5 w-3.5 ${isLoadingStats ? "animate-spin" : ""}`} />
-                    Yoxla
+                    Yoxla / Yenilə
                   </Button>
                 </div>
               </div>

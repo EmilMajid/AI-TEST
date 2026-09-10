@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
-import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
+import { azNorm, stripTopicPrefix, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 
 export interface TopicThresholdResult {
   topic: string
@@ -30,13 +30,55 @@ export async function POST(request: NextRequest) {
       try {
         gradeDb = JSON.parse(fs.readFileSync(gradeFilePath, "utf-8"))
       } catch (e) {
-        console.error("Error reading grade DB:", e)
+        console.error("Error reading grade DB in threshold-check:", e)
       }
     }
 
-    // Also load offline_tests if gradeDb doesn't have subject
-    const matchedKeys = findMatchingSubjectKeys(textbook, Object.keys(gradeDb), String(grade))
+    const dbKeys = Object.keys(gradeDb)
+    const bTitleNorm = azNorm(textbook)
+    const matchedSubjectKeys = dbKeys.filter((k) => {
+      const kNorm = azNorm(k)
+      return kNorm === bTitleNorm || kNorm.includes(bTitleNorm) || bTitleNorm.includes(kNorm)
+    })
+    const helperKeys = findMatchingSubjectKeys(textbook, dbKeys, String(grade))
+    const combinedKeys = Array.from(new Set([...matchedSubjectKeys, ...helperKeys]))
 
+    // Build questions map across topics
+    const questionsByTopic: Record<string, any[]> = {}
+    let totalQuestions = 0
+
+    combinedKeys.forEach((sKey) => {
+      const val = gradeDb[sKey]
+      if (val && typeof val === "object" && !Array.isArray(val)) {
+        Object.entries(val).forEach(([tKey, qList]) => {
+          if (Array.isArray(qList)) {
+            totalQuestions += qList.length
+            if (!questionsByTopic[tKey]) questionsByTopic[tKey] = []
+            questionsByTopic[tKey].push(...qList)
+          }
+        })
+      } else if (Array.isArray(val)) {
+        val.forEach((item: any) => {
+          if (item.questions && Array.isArray(item.questions)) {
+            totalQuestions += item.questions.length
+            const tKey = item.topic || item.topic_key || ""
+            if (tKey) {
+              if (!questionsByTopic[tKey]) questionsByTopic[tKey] = []
+              questionsByTopic[tKey].push(...item.questions)
+            }
+          } else if (item.question) {
+            totalQuestions++
+            const tKey = item.topic || ""
+            if (tKey) {
+              if (!questionsByTopic[tKey]) questionsByTopic[tKey] = []
+              questionsByTopic[tKey].push(item)
+            }
+          }
+        })
+      }
+    })
+
+    const topicKeys = Object.keys(questionsByTopic)
     const topicList: string[] = Array.isArray(topics) && topics.length > 0 ? topics : []
     const results: TopicThresholdResult[] = []
 
@@ -50,40 +92,46 @@ export async function POST(request: NextRequest) {
     for (const tName of topicList) {
       let currentCount = 0
 
-      matchedKeys.forEach((sKey) => {
-        const val = gradeDb[sKey]
-        if (Array.isArray(val)) {
-          const candidateTopics = Array.from(new Set(
-            val.map((item: any) => item.topic || item.topic_key || (item.questions?.[0]?.topic)).filter(Boolean)
-          )) as string[]
+      // 1. Direct exact key match
+      if (questionsByTopic[tName]) {
+        currentCount = questionsByTopic[tName].length
+      }
 
-          const matched = findBestTopicMatch(tName, candidateTopics)
-          if (matched.length > 0) {
-            val.forEach((item: any) => {
-              const itemTopic = item.topic || item.topic_key || ""
-              if (item.questions && Array.isArray(item.questions)) {
-                item.questions.forEach((q: any) => {
-                  const qTopic = q.topic || itemTopic
-                  if (matched.includes(qTopic)) currentCount++
-                })
-              } else if (item.question) {
-                if (matched.includes(itemTopic)) currentCount++
-              }
-            })
-          }
-        } else if (typeof val === "object" && val !== null) {
-          const candidateTopics = Object.keys(val)
-          const matched = findBestTopicMatch(tName, candidateTopics)
-          if (matched.length > 0) {
-            matched.forEach((mT) => {
-              const qList = val[mT]
-              if (Array.isArray(qList)) {
-                currentCount += qList.length
-              }
-            })
+      // 2. Exact normalized match
+      if (currentCount === 0) {
+        const tNorm = azNorm(tName)
+        for (const tk of topicKeys) {
+          if (azNorm(tk) === tNorm) {
+            currentCount += questionsByTopic[tk].length
           }
         }
-      })
+      }
+
+      // 3. Stripped prefix match
+      if (currentCount === 0) {
+        const tStrip = stripTopicPrefix(tName)
+        if (tStrip.length >= 3) {
+          for (const tk of topicKeys) {
+            if (stripTopicPrefix(tk) === tStrip) {
+              currentCount += questionsByTopic[tk].length
+            }
+          }
+        }
+      }
+
+      // 4. Substring containment match
+      if (currentCount === 0) {
+        const tNorm = azNorm(tName)
+        for (const tk of topicKeys) {
+          const tkNorm = azNorm(tk)
+          if (
+            (tNorm.length >= 5 && tkNorm.includes(tNorm)) ||
+            (tkNorm.length >= 5 && tNorm.includes(tkNorm))
+          ) {
+            currentCount += questionsByTopic[tk].length
+          }
+        }
+      }
 
       const isSatisfied = currentCount >= thresholdNum
       const needed = isSatisfied ? 0 : thresholdNum - currentCount
