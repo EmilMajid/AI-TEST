@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -103,6 +104,9 @@ interface AntigravityOrder {
   isThresholdMode?: boolean
   minThreshold?: number
   thresholdAnalysis?: any
+  isDiscussionBook?: boolean
+  discussionBookId?: string
+  trimsId?: string
   antigravityAccount?: {
     label: string
     accountEmail?: string
