@@ -10191,159 +10191,365 @@
   ],
   "riyaziyyat-8": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "1. Kvadrat kök. Həqiqi ədədlər",
       "topics": [
         {
-          "title": "2.5. Pifaqor teoremi və onun tətbiqləri",
-          "page": 6
+          "title": "Kvadrat köklər. Hesabi kvadrat kök",
+          "page": 8
         },
         {
-          "title": "4.1. Kvadrat tənliklərin vuruqlara ayırma və tam kvadrat ayırma üsulu ilə həlli",
-          "page": 10
-        },
-        {
-          "title": "3.1. Rasional ifadələrin sadələşdirilməsi, toplanması və çıxılması",
+          "title": "Həqiqi ədədlər",
           "page": 14
         },
         {
-          "title": "3.3. Rasional tənliklər",
+          "title": "y = x² və y = √x funksiyaları",
           "page": 18
         },
         {
-          "title": "6.2. Ədədi aralıqlar və xətti bərabərsizliklərin həlli",
+          "title": "Hesabi kvadrat kökün xassələri",
           "page": 22
         },
         {
-          "title": "2.1. Dördbucaqlının daxili və xarici bucaqları",
+          "title": "Hesabi kvadrat kökün xassələrinin tətbiqi",
           "page": 26
         },
         {
-          "title": "1.1. Hesabi kvadrat kök",
+          "title": "Tam üstlü qüvvət",
           "page": 30
         },
         {
-          "title": "1.4. Həqiqi ədədlər",
+          "title": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
           "page": 34
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "2. Pifaqor teoremi",
+      "topics": [
         {
-          "title": "1.3. y = x² və y = √x funksiyaları",
+          "title": "Pifaqor teoremi",
           "page": 38
         },
         {
-          "title": "1.2. Hesabi kvadrat kökün xassələri",
-          "page": 42
+          "title": "Pifaqor teoreminin tətbiqi",
+          "page": 44
         },
         {
-          "title": "1.5. y = k/x funksiyası və tam üstlü qüvvət",
-          "page": 46
-        },
-        {
-          "title": "4.2. Kvadrat tənliyin kökləri düsturu",
+          "title": "Ümumiləşdirici tapşırıqlar (Pifaqor teoremi)",
           "page": 50
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "3. Kvadrat tənliklər",
+      "topics": [
         {
-          "title": "4.3. Viyet teoremi",
+          "title": "Kvadrat tənliklər",
           "page": 54
         },
         {
-          "title": "4.4. Kvadrat tənliyə gətirilən tənliklər",
+          "title": "Kvadrat tənliklərin vuruqlara ayırma üsulu ilə həlli",
           "page": 58
         },
         {
-          "title": "4.5. Kvadrat tənliklərin tətbiqi ilə məsələ həlli",
+          "title": "Tam kvadrat ayırmaqla kvadrat tənliklərin həlli",
           "page": 62
         },
         {
-          "title": "2.2. Paraleloqram və onun növləri",
+          "title": "Kvadrat tənliyin qrafik üsulla həlli",
           "page": 66
         },
         {
-          "title": "2.3. Üçbucağın və trapesiyanın orta xətti",
+          "title": "Kvadrat tənliklərin həlli. Kvadrat tənliyin kökləri düsturu",
           "page": 70
         },
         {
-          "title": "2.4. Trapesiya",
-          "page": 74
+          "title": "Viyet teoremi",
+          "page": 76
         },
         {
-          "title": "3.2. Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
-          "page": 78
+          "title": "Kvadrat tənliyə gətirilən tənliklər",
+          "page": 80
         },
         {
-          "title": "7.1. Sahə aksiomları və düzbucaqlının sahəsi",
-          "page": 82
+          "title": "Kvadrat tənliklərin tətbiqi ilə məsələ həlli",
+          "page": 84
         },
         {
-          "title": "7.3. Üçbucağın sahəsi",
-          "page": 86
-        },
-        {
-          "title": "7.2. Paraleloqramın və rombun sahəsi",
+          "title": "Ümumiləşdirici tapşırıqlar (Kvadrat tənliklər)",
           "page": 90
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "4. Dördbucaqlılar",
+      "topics": [
         {
-          "title": "3.4. Rasional tənliklərin tətbiqi ilə məsələ həlli",
+          "title": "Dördbucaqlılar",
           "page": 94
         },
         {
-          "title": "5.2. Oxşar dördbucaqlılar və oxşar üçbucaqlar",
+          "title": "Paraleloqram",
           "page": 98
         },
         {
-          "title": "5.3. Üçbucaqların oxşarlıq əlamətləri",
+          "title": "Paraleloqramın əlamətləri",
           "page": 102
         },
         {
-          "title": "5.4. Düzbucaqlı üçbucaqların oxşarlığı",
+          "title": "Xüsusi paraleloqramlar. Düzbucaqlı",
           "page": 106
         },
         {
-          "title": "5.5. Oxşar fiqurların sahəsi",
+          "title": "Xüsusi paraleloqramlar. Romb. Kvadrat",
           "page": 110
         },
         {
-          "title": "6.1. Bərabərsizliklərin xassələri",
-          "page": 114
+          "title": "Fales teoremi. Üçbucağın orta xətti",
+          "page": 116
         },
         {
-          "title": "6.3. İkiqat bərabərsizliklər",
-          "page": 118
-        },
-        {
-          "title": "6.4. Modul işarəsi daxilində dəyişəni olan sadə bərabərsizliklər",
+          "title": "Trapesiya. Trapesiyanın orta xətti",
           "page": 122
         },
         {
-          "title": "8.1. Düzbucaqlı üçbucaq və triqonometrik nisbətlər",
-          "page": 126
+          "title": "Ümumiləşdirici tapşırıqlar (Dördbucaqlılar)",
+          "page": 128
+        }
+      ]
+    },
+    {
+      "chapter": "5. Rasional ifadələr",
+      "topics": [
+        {
+          "title": "Rasional ifadələr",
+          "page": 132
         },
         {
-          "title": "8.2. Triqonometrik eyniliklər və məsələ həlli",
-          "page": 130
+          "title": "Rasional ifadələrin əsas xassəsi",
+          "page": 136
         },
         {
-          "title": "8.3. Parçanın orta nöqtəsi və düz xəttin tənliyi",
-          "page": 134
+          "title": "Rasional ifadələrin vurulması, bölünməsi və qüvvətə yüksəldilməsi",
+          "page": 140
         },
         {
-          "title": "9.1. Məlumatın toplanması, təqdimi və mərkəzə meyilli ölçülər",
-          "page": 138
+          "title": "Rasional ifadələrin toplanması və çıxılması",
+          "page": 144
         },
         {
-          "title": "9.2. Ehtimalın hesablanması",
-          "page": 142
+          "title": "Rasional ifadələr üzərində əməllər",
+          "page": 148
         },
         {
-          "title": "9.3. Asılı olmayan və asılı hadisələrin ehtimalı",
-          "page": 146
+          "title": "y = k/x funksiyası və onun qrafiki",
+          "page": 152
         },
         {
-          "title": "8.4. Fiqurların çevrilməsi və dönmə",
-          "page": 150
+          "title": "Rasional tənliklər",
+          "page": 156
         },
         {
-          "title": "5.1. Nisbət, tənasüb, miqyas və mütənasib parçalar",
-          "page": 154
+          "title": "Rasional tənliklərin tətbiqi ilə məsələ həlli",
+          "page": 160
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Rasional ifadələr)",
+          "page": 166
+        }
+      ]
+    },
+    {
+      "chapter": "6. Fiqurların sahəsi",
+      "topics": [
+        {
+          "title": "Fiqurların sahəsi. Düzbucaqlının sahəsi",
+          "page": 170
+        },
+        {
+          "title": "Paraleloqramın sahəsi",
+          "page": 174
+        },
+        {
+          "title": "Üçbucağın sahəsi",
+          "page": 178
+        },
+        {
+          "title": "Trapesiyanın sahəsi",
+          "page": 182
+        },
+        {
+          "title": "Rombun sahəsi",
+          "page": 186
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Fiqurların sahəsi)",
+          "page": 190
+        }
+      ]
+    },
+    {
+      "chapter": "7. Oxşar fiqurlar",
+      "topics": [
+        {
+          "title": "Mütənasib parçalar",
+          "page": 194
+        },
+        {
+          "title": "Oxşar üçbucaqlar",
+          "page": 198
+        },
+        {
+          "title": "Üçbucaqların oxşarlıq əlamətləri",
+          "page": 202
+        },
+        {
+          "title": "Düzbucaqlı üçbucaqların oxşarlığı",
+          "page": 206
+        },
+        {
+          "title": "Oxşar fiqurların sahələri",
+          "page": 210
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Oxşar fiqurlar)",
+          "page": 214
+        }
+      ]
+    },
+    {
+      "chapter": "8. Bərabərsizliklər",
+      "topics": [
+        {
+          "title": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+          "page": 218
+        },
+        {
+          "title": "Bərabərsizliklərin toplanması və vurulması",
+          "page": 222
+        },
+        {
+          "title": "Ədədi aralıqlar",
+          "page": 226
+        },
+        {
+          "title": "Birdayişənli xətti bərabərsizliklərin həlli",
+          "page": 230
+        },
+        {
+          "title": "Dəyişəni modul daxilində olan sadə bərabərsizliklər",
+          "page": 234
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+          "page": 238
+        }
+      ]
+    },
+    {
+      "chapter": "9. Triqonometrik nisbətlər. Koordinatlar üsulu",
+      "topics": [
+        {
+          "title": "Düzbucaqlı üçbucaq və triqonometrik nisbətlər",
+          "page": 242
+        },
+        {
+          "title": "Triqonometrik eyniliklər",
+          "page": 246
+        },
+        {
+          "title": "Bucağın dərəcə ölçüsünün dəyişməsi ilə triqonometrik nisbətlərin dəyişməsi",
+          "page": 250
+        },
+        {
+          "title": "Müstəvidə düzbucaqlı koordinat sistemi. İki nöqtə arasındakı məsafə",
+          "page": 254
+        },
+        {
+          "title": "Parçanın orta nöqtəsinin koordinatları",
+          "page": 258
+        },
+        {
+          "title": "Düz xəttin tənliyi. Bucaq əmsalı",
+          "page": 262
+        },
+        {
+          "title": "Çevrənin tənliyi",
+          "page": 266
+        },
+        {
+          "title": "Hərəkət. Dönmə",
+          "page": 270
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Triqonometrik nisbətlər. Koordinatlar üsulu)",
+          "page": 274
+        }
+      ]
+    },
+    {
+      "chapter": "10. Məlumatın toplanması və təqdim edilməsi. Ehtimal",
+      "topics": [
+        {
+          "title": "Məlumatın toplanması və təqdim edilməsi",
+          "page": 278
+        },
+        {
+          "title": "Təsadüfi hadisələr və onların növləri",
+          "page": 282
+        },
+        {
+          "title": "Ehtimalın hesablanması",
+          "page": 286
+        },
+        {
+          "title": "Ehtimalların toplanması və vurulması",
+          "page": 290
+        },
+        {
+          "title": "Statistik məlumatların təhlili",
+          "page": 294
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Məlumatın toplanması və təqdim edilməsi. Ehtimal)",
+          "page": 298
+        }
+      ]
+    },
+    {
+      "chapter": "11. Çoxbucaqlılar. Çevrə",
+      "topics": [
+        {
+          "title": "Çoxbucaqlılar. Qabarıq çoxbucaqlının daxili və xarici bucaqlarının cəmi",
+          "page": 302
+        },
+        {
+          "title": "Çevrə və toxunan",
+          "page": 306
+        },
+        {
+          "title": "Vətər və kəsən",
+          "page": 310
+        },
+        {
+          "title": "Mərkəzi bucaq və daxilə çəkilmiş bucaq",
+          "page": 314
+        },
+        {
+          "title": "Çevrədaxili və xaricində kəsişən düz xətlərin əmələ gətirdiyi bucaqlar",
+          "page": 318
+        },
+        {
+          "title": "Daxilə və xaricə çəkilmiş çevrələr",
+          "page": 322
+        },
+        {
+          "title": "Düzgün çoxbucaqlılar",
+          "page": 326
+        },
+        {
+          "title": "Ümumiləşdirici tapşırıqlar (Çoxbucaqlılar. Çevrə)",
+          "page": 330
         }
       ]
     }

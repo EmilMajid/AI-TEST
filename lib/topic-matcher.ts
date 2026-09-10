@@ -30,8 +30,8 @@ export function stripTopicPrefix(str: string): string {
   // Section headers: e.g. "bölmə 1.", "1-ci bölmə:", "fəsil 2."
   s = s.replace(/^(bölmə|hissə|fəsil|razdel|unit|lektion|étape)\s+([0-9]+|[ivxlcdm]+)[.\-:]*\s*/gi, "")
   s = s.replace(/^([0-9]+|[ivxlcdm]+)\s*(-ci|-cı|-cü|-cu|-üncü|-inci)?\s*(bölmə|hissə|fəsil|razdel|unit|lektion|étape)[.\-:]*\s*/gi, "")
-  // Leading number with mandatory delimiter: "1. Məktəb", "12) Dərs", "1 - Fiqurlar"
-  s = s.replace(/^[0-9]+\s*[\.\)\-:]\s*/gi, "")
+  // Leading number with mandatory delimiter: "1. Məktəb", "1.1. Hesabi kvadrat kök", "12) Dərs", "1 - Fiqurlar"
+  s = s.replace(/^[0-9]+(?:\.[0-9]+)*\s*[\.\)\-:]\s*/gi, "")
   // Leading Roman numeral ONLY with mandatory delimiter: "I. Giriş", "IV) Xassələr"
   s = s.replace(/^[ivxlcdm]+\s*[\.\)\-:]\s+/gi, "")
   return s.trim()
