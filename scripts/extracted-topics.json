@@ -11408,7 +11408,7 @@
   ],
   "azerbaycan-dili-2-h1": [
     {
-      "chapter": "Mövzular",
+      "chapter": "Azərbaycan dili 2 (I hissə)",
       "topics": [
         {
           "title": "Birinci sinifdə keçilənlərin təkrarı",
@@ -11675,7 +11675,7 @@
   ],
   "azerbaycan-dili-2-h2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "Azərbaycan dili 2 (II hissə)",
       "topics": [
         {
           "title": "Dostluq",
@@ -11986,7 +11986,7 @@
   ],
   "ingilis-dili-2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "English 2 Units",
       "topics": [
         {
           "title": "Welcome",
@@ -12043,171 +12043,166 @@
   ],
   "informatika-2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "1. BÖLMƏ: OBYEKT",
       "topics": [
         {
-          "title": "1. BÖLMƏ: OBYEKT",
+          "title": "1. Obyekt nədir",
           "page": 1,
           "path": ""
         },
         {
-          "title": "1. Obyekt nədir",
+          "title": "2. Oxşar əlamətlər",
           "page": 2,
           "path": ""
         },
         {
-          "title": "2. Oxşar əlamətlər",
+          "title": "3. Qruplaşdırma",
           "page": 3,
           "path": ""
         },
         {
-          "title": "3. Qruplaşdırma",
+          "title": "4. Fərqləndirici əlamətlər",
           "page": 4,
           "path": ""
         },
         {
-          "title": "4. Fərqləndirici əlamətlər",
+          "title": "5. Tapmacalar",
           "page": 5,
           "path": ""
         },
         {
-          "title": "5. Tapmacalar",
+          "title": "Sual və tapşırıqlar (Obyekt)",
           "page": 6,
           "path": ""
-        },
-        {
-          "title": "Sual və tapşırıqlar (Obyekt)",
-          "page": 7,
-          "path": ""
-        },
-        {
-          "title": "2. BÖLMƏ: İNFORMASİYA",
-          "page": 8,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "2. BÖLMƏ: İNFORMASİYA",
+      "topics": [
         {
           "title": "6. İnformasiyanın növləri",
-          "page": 9,
+          "page": 1,
           "path": ""
         },
         {
           "title": "7. İnformasiyanın alınması",
-          "page": 10,
+          "page": 2,
           "path": ""
         },
         {
           "title": "8. İnformasiyanın təqdim olunması",
-          "page": 11,
+          "page": 3,
           "path": ""
         },
         {
           "title": "9. İnformasiyanın saxlanması",
-          "page": 12,
+          "page": 4,
           "path": ""
         },
         {
           "title": "10. İnformasiyanın ötürülməsi",
-          "page": 13,
+          "page": 5,
           "path": ""
         },
         {
           "title": "Sual və tapşırıqlar (İnformasiya)",
-          "page": 14,
+          "page": 6,
           "path": ""
-        },
-        {
-          "title": "3. BÖLMƏ: ALQORİTM",
-          "page": 15,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "3. BÖLMƏ: ALQORİTM",
+      "topics": [
         {
           "title": "11. Hərəkətlər və hadisələr ardıcıllığı",
-          "page": 16,
+          "page": 1,
           "path": ""
         },
         {
           "title": "12. Alqoritm",
-          "page": 17,
+          "page": 2,
           "path": ""
         },
         {
           "title": "13. Alqoritmin icrası",
-          "page": 18,
+          "page": 3,
           "path": ""
         },
         {
           "title": "14. Doğru və yalan mülahizələr",
-          "page": 19,
+          "page": 4,
           "path": ""
         },
         {
           "title": "15. Qeyri-müəyyən mülahizə",
-          "page": 20,
+          "page": 5,
           "path": ""
         },
         {
           "title": "16. Ən sadə və ən qısa yol",
-          "page": 21,
+          "page": 6,
           "path": ""
         },
         {
           "title": "Sual və tapşırıqlar (Alqoritm)",
-          "page": 22,
+          "page": 7,
           "path": ""
-        },
-        {
-          "title": "4. BÖLMƏ: KOMPÜTER",
-          "page": 23,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "4. BÖLMƏ: KOMPÜTER",
+      "topics": [
         {
           "title": "17. Kompüter və onun hissələri",
-          "page": 24,
+          "page": 1,
           "path": ""
         },
         {
           "title": "18. Kompüter sinfində davranış qaydaları",
-          "page": 25,
+          "page": 2,
           "path": ""
         },
         {
           "title": "19. Klaviatura və siçan qurğusu",
-          "page": 26,
+          "page": 3,
           "path": ""
         },
         {
           "title": "20. İş masası və proqram pəncərəsi",
-          "page": 27,
+          "page": 4,
           "path": ""
         },
         {
           "title": "21. Mətn redaktoru",
-          "page": 28,
+          "page": 5,
           "path": ""
         },
         {
           "title": "22. Mətnin formatlanması",
-          "page": 29,
+          "page": 6,
           "path": ""
         },
         {
           "title": "23. Qrafik redaktor",
-          "page": 30,
+          "page": 7,
           "path": ""
         },
         {
           "title": "24. Mətnli şəkillər",
-          "page": 31,
+          "page": 8,
           "path": ""
         },
         {
           "title": "25. Kalkulyator proqramında hesablamalar",
-          "page": 32,
+          "page": 9,
           "path": ""
         },
         {
           "title": "Sual və tapşırıqlar (Kompüter)",
-          "page": 33,
+          "page": 10,
           "path": ""
         }
       ]
@@ -12262,181 +12257,176 @@
   ],
   "texnologiya-2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "1-ci BÖLMƏ MƏİŞƏT MƏDƏNİYYƏTİ",
       "topics": [
         {
-          "title": "1-ci BÖLMƏ MƏİŞƏT MƏDƏNİYYƏTİ",
+          "title": "1. Emal texnologiyaları, materialları və vasitələri",
           "page": 1,
           "path": ""
         },
         {
-          "title": "1. Emal texnologiyaları, materialları və vasitələri",
+          "title": "2. Özünəxidmət",
           "page": 2,
           "path": ""
         },
         {
-          "title": "2. Özünəxidmət",
+          "title": "3. Bitkilərə qulluq qaydaları",
           "page": 3,
           "path": ""
         },
         {
-          "title": "3. Bitkilərə qulluq qaydaları",
+          "title": "4. Yemək masası arxasında davranış qaydaları",
           "page": 4,
           "path": ""
         },
         {
-          "title": "4. Yemək masası arxasında davranış qaydaları",
+          "title": "5. Yemək ləvazimatları. Səhər və nahar süfrəsinin tərtibi",
           "page": 5,
           "path": ""
-        },
-        {
-          "title": "5. Yemək ləvazimatları. Səhər və nahar süfrəsinin tərtibi",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "2-ci BÖLMƏ PLASTİLİNLƏ YAPMA İŞLƏRİ",
-          "page": 7,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "2-ci BÖLMƏ PLASTİLİNLƏ YAPMA İŞLƏRİ",
+      "topics": [
         {
           "title": "6. Plastilindən kasanın yapılması",
-          "page": 8,
+          "page": 1,
           "path": ""
         },
         {
           "title": "7. Plastilindən yapma bəzəklər. Qızılgül",
-          "page": 9,
+          "page": 2,
           "path": ""
         },
         {
           "title": "8. Dartma üsulu ilə yapma. Tısbağa",
-          "page": 10,
+          "page": 3,
           "path": ""
         },
         {
           "title": "9. Plastilindən quraşdırma işləri. Pişik",
-          "page": 11,
+          "page": 4,
           "path": ""
-        },
-        {
-          "title": "3-cü BÖLMƏ APLİKASİYA",
-          "page": 12,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "3-cü BÖLMƏ APLİKASİYA",
+      "topics": [
         {
           "title": "10. Kağızı cırma üsulu ilə aplikasiya. Çəməndə göbələk",
-          "page": 13,
+          "page": 1,
           "path": ""
         },
         {
           "title": "11. Parçadan aplikasiya. Ördək",
-          "page": 14,
+          "page": 2,
           "path": ""
         },
         {
           "title": "12. Həcmli aplikasiya. Pişik",
-          "page": 15,
+          "page": 3,
           "path": ""
         },
         {
           "title": "13. Balıq",
-          "page": 16,
+          "page": 4,
           "path": ""
-        },
-        {
-          "title": "4-cü BÖLMƏ MOZAİKA",
-          "page": 17,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "4-cü BÖLMƏ MOZAİKA",
+      "topics": [
         {
           "title": "14. Kağız parçalarından mozaika. Toplan",
-          "page": 18,
+          "page": 1,
           "path": ""
         },
         {
           "title": "15. Günəbaxan tumlarından və düyüdən həcmli mozaika. Qaranquş",
-          "page": 19,
+          "page": 2,
           "path": ""
         },
         {
           "title": "16. Karandaş yonqarlarından mozaika. Kirpi",
-          "page": 20,
+          "page": 3,
           "path": ""
         },
         {
           "title": "17. Yumurta qabığından həcmli mozaika. Xoruz başı",
-          "page": 21,
+          "page": 4,
           "path": ""
         },
         {
           "title": "18. Əzilmiş salfet kağızından mozaika. Qoyun",
-          "page": 22,
+          "page": 5,
           "path": ""
         },
         {
           "title": "19. Süngərdən mozaika. Moruq",
-          "page": 23,
+          "page": 6,
           "path": ""
-        },
-        {
-          "title": "5-ci BÖLMƏ KAĞIZ QATLAMA, HÖRMƏ, TİKMƏ VƏ NAXIŞTİKMƏ",
-          "page": 24,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "5-ci BÖLMƏ KAĞIZ QATLAMA, HÖRMƏ, TİKMƏ VƏ NAXIŞTİKMƏ",
+      "topics": [
         {
           "title": "20. Kvadrat kağızdan fiqurlar. Oriqami. Bayquş fiquru",
-          "page": 25,
+          "page": 1,
           "path": ""
         },
         {
           "title": "21. İnsan fiquru",
-          "page": 26,
+          "page": 2,
           "path": ""
         },
         {
           "title": "22. Kağız zolaqlardan hörmə. Hasar",
-          "page": 27,
+          "page": 3,
           "path": ""
         },
         {
           "title": "23. Düz xətt boyunca tikmə",
-          "page": 28,
+          "page": 4,
           "path": ""
         },
         {
           "title": "24. Əyri xətlər boyunca naxıştikmə. Çiçək",
-          "page": 29,
+          "page": 5,
           "path": ""
-        },
-        {
-          "title": "6-cı BÖLMƏ MODELLƏŞDİRMƏ",
-          "page": 30,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "6-cı BÖLMƏ MODELLƏŞDİRMƏ",
+      "topics": [
         {
           "title": "25. Texnoloji maşınlar və vasitələr. Məişət texnikası",
-          "page": 31,
+          "page": 1,
           "path": ""
         },
         {
           "title": "26. Karton qutulardan canavar başı",
-          "page": 32,
+          "page": 2,
           "path": ""
         },
         {
           "title": "27. Kağızdan həcmli dovşan oyuncağı",
-          "page": 33,
+          "page": 3,
           "path": ""
         },
         {
           "title": "28. Yük avtomobilinin maketi",
-          "page": 34,
+          "page": 4,
           "path": ""
         },
         {
           "title": "Əlavələr: Ülgülər",
-          "page": 35,
+          "page": 5,
           "path": ""
         }
       ]
@@ -12444,191 +12434,186 @@
   ],
   "hayat-bilgisi-2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "1. BÖLMƏ: MƏN VƏ MƏKTƏBİM",
       "topics": [
         {
-          "title": "1. BÖLMƏ: MƏN VƏ MƏKTƏBİM",
+          "title": "1. Məktəbimiz",
           "page": 1,
           "path": ""
         },
         {
-          "title": "1. Məktəbimiz",
+          "title": "2. Həm oxşar, həm fərqliyik",
           "page": 2,
           "path": ""
         },
         {
-          "title": "2. Həm oxşar, həm fərqliyik",
+          "title": "3. Birlikdə",
           "page": 3,
           "path": ""
         },
         {
-          "title": "3. Birlikdə",
+          "title": "4. Bir-birimizi dinləyirik",
           "page": 4,
           "path": ""
         },
         {
-          "title": "4. Bir-birimizi dinləyirik",
+          "title": "Ümumiləşdirici tapşırıqlar (Mən və məktəbim)",
           "page": 5,
           "path": ""
-        },
-        {
-          "title": "Ümumiləşdirici tapşırıqlar (Mən və məktəbim)",
-          "page": 6,
-          "path": ""
-        },
-        {
-          "title": "2. BÖLMƏ: DƏYƏRLƏR VƏ SAĞLAMLIQ",
-          "page": 7,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "2. BÖLMƏ: DƏYƏRLƏR VƏ SAĞLAMLIQ",
+      "topics": [
         {
           "title": "5. Dövlətimiz",
-          "page": 8,
+          "page": 1,
           "path": ""
         },
         {
           "title": "6. Müxtəliflik",
-          "page": 9,
+          "page": 2,
           "path": ""
         },
         {
           "title": "7. Hüquqlarımız",
-          "page": 10,
+          "page": 3,
           "path": ""
         },
         {
           "title": "8. Sağlam həyat",
-          "page": 11,
+          "page": 4,
           "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar (Dəyərlər və sağlamlıq)",
-          "page": 12,
+          "page": 5,
           "path": ""
-        },
-        {
-          "title": "3. BÖLMƏ: MATERİALLAR VƏ TƏHLÜKƏSİZLİK",
-          "page": 13,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "3. BÖLMƏ: MATERİALLAR VƏ TƏHLÜKƏSİZLİK",
+      "topics": [
         {
           "title": "9. Təbii və təbii olmayan materiallar",
-          "page": 14,
+          "page": 1,
           "path": ""
         },
         {
           "title": "10. Materialların xassələri",
-          "page": 15,
+          "page": 2,
           "path": ""
         },
         {
           "title": "11. Materialların istifadəsi",
-          "page": 16,
+          "page": 3,
           "path": ""
         },
         {
           "title": "12. Elektriklə işləyən avadanlıqlar",
-          "page": 17,
+          "page": 4,
           "path": ""
         },
         {
           "title": "13. Elektron cihazlar və biz",
-          "page": 18,
+          "page": 5,
           "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar (Materiallar və təhlükəsizlik)",
-          "page": 19,
+          "page": 6,
           "path": ""
-        },
-        {
-          "title": "4. BÖLMƏ: YER KÜRƏSİ",
-          "page": 20,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "4. BÖLMƏ: YER KÜRƏSİ",
+      "topics": [
         {
           "title": "14. İşıq mənbələri",
-          "page": 21,
+          "page": 1,
           "path": ""
         },
         {
           "title": "15. Günəş sistemini tanıyaq",
-          "page": 22,
+          "page": 2,
           "path": ""
         },
         {
           "title": "16. Yer planeti",
-          "page": 23,
+          "page": 3,
           "path": ""
         },
         {
           "title": "17. Yaşayış yeri",
-          "page": 24,
+          "page": 4,
           "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar (Yer kürəsi)",
-          "page": 25,
+          "page": 5,
           "path": ""
-        },
-        {
-          "title": "5. BÖLMƏ: CANLILAR",
-          "page": 26,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "5. BÖLMƏ: CANLILAR",
+      "topics": [
         {
           "title": "18. Heyvanları tanıyaq",
-          "page": 27,
+          "page": 1,
           "path": ""
         },
         {
           "title": "19. Canlıların çoxalması və böyüməsi",
-          "page": 28,
+          "page": 2,
           "path": ""
         },
         {
           "title": "20. Bitkiləri tanıyaq",
-          "page": 29,
+          "page": 3,
           "path": ""
         },
         {
           "title": "21. Bitkilərin böyüməsi üçün nə lazımdır",
-          "page": 30,
+          "page": 4,
           "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar (Canlılar)",
-          "page": 31,
+          "page": 5,
           "path": ""
-        },
-        {
-          "title": "6. BÖLMƏ: EHTİYATLI DAVRANAQ",
-          "page": 32,
-          "path": ""
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "6. BÖLMƏ: EHTİYATLI DAVRANAQ",
+      "topics": [
         {
           "title": "22. Nəqliyyatda və yolda",
-          "page": 33,
+          "page": 1,
           "path": ""
         },
         {
           "title": "23. Təbii fəlakətlər",
-          "page": 34,
+          "page": 2,
           "path": ""
         },
         {
           "title": "24. Təhlükələrdən necə qorunaq",
-          "page": 35,
+          "page": 3,
           "path": ""
         },
         {
           "title": "25. Qənaət",
-          "page": 36,
+          "page": 4,
           "path": ""
         },
         {
           "title": "Ümumiləşdirici tapşırıqlar (Ehtiyatlı davranaq)",
-          "page": 37,
+          "page": 5,
           "path": ""
         }
       ]
@@ -12683,53 +12668,69 @@
   ],
   "alman-dili-esas-2": [
     {
-      "chapter": "Lektion 1. Guten Tag!",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 2. Wie geht es dir ?",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 3. İCH und DU",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 4. die Zahlen.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 5. İCH bin 7.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 6. İCH komme aus Aserbaidschan.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 7. Die Jahareszeiten.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 8. Das Wetter.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 9. Die Freuunde.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 10. Sport.",
-      "topics": []
-    },
-    {
-      "chapter": "Lektion 11. Hobbys.",
-      "topics": []
+      "chapter": "Deutsch 2 Lektionen",
+      "topics": [
+        {
+          "title": "Lektion 1. Guten Tag!",
+          "page": 1,
+          "path": ""
+        },
+        {
+          "title": "Lektion 2. Wie geht es dir ?",
+          "page": 2,
+          "path": ""
+        },
+        {
+          "title": "Lektion 3. İCH und DU",
+          "page": 3,
+          "path": ""
+        },
+        {
+          "title": "Lektion 4. die Zahlen.",
+          "page": 4,
+          "path": ""
+        },
+        {
+          "title": "Lektion 5. İCH bin 7.",
+          "page": 5,
+          "path": ""
+        },
+        {
+          "title": "Lektion 6. İCH komme aus Aserbaidschan.",
+          "page": 6,
+          "path": ""
+        },
+        {
+          "title": "Lektion 7. Die Jahareszeiten.",
+          "page": 7,
+          "path": ""
+        },
+        {
+          "title": "Lektion 8. Das Wetter.",
+          "page": 8,
+          "path": ""
+        },
+        {
+          "title": "Lektion 9. Die Freuunde.",
+          "page": 9,
+          "path": ""
+        },
+        {
+          "title": "Lektion 10. Sport.",
+          "page": 10,
+          "path": ""
+        },
+        {
+          "title": "Lektion 11. Hobbys.",
+          "page": 11,
+          "path": ""
+        }
+      ]
     }
   ],
   "fransiz-dili-esas-2": [
     {
-      "chapter": "Mövzular",
+      "chapter": "Français 2 Leçons",
       "topics": [
         {
           "title": "1. Rencontrer les gens",

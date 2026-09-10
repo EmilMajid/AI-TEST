@@ -258,13 +258,28 @@ function getTopicsFromOfflineTests(bookId: string, bookSubject: string, classLev
         const targetNorm = norm(bookSubject) + " " + classLevel;
         const bookIdNorm = norm(bookId);
 
-        const matchedKey = Object.keys(db).find(k => {
-            const kNorm = norm(k);
-            return kNorm === targetNorm || 
-                   kNorm === bookIdNorm || 
-                   (kNorm.includes(norm(bookSubject)) && k.includes(classLevel)) ||
-                   (kNorm.includes(bookIdNorm.replace(/\-\d+$/, "")));
-        });
+        let matchedKey = Object.keys(db).find(k => norm(k) === bookIdNorm);
+        if (!matchedKey) {
+            const specificLang = ["fransiz", "fransız", "rus", "alman", "ingilis"].find(lang => 
+                bookIdNorm.includes(lang) || norm(bookSubject).includes(lang)
+            );
+            if (specificLang) {
+                matchedKey = Object.keys(db).find(k => {
+                    const kn = norm(k);
+                    return kn.includes(specificLang) && k.includes(classLevel);
+                });
+            }
+        }
+        if (!matchedKey) {
+            matchedKey = Object.keys(db).find(k => norm(k) === targetNorm);
+        }
+        if (!matchedKey) {
+            matchedKey = Object.keys(db).find(k => {
+                const kNorm = norm(k);
+                return (kNorm.includes(norm(bookSubject)) && k.includes(classLevel)) ||
+                       (kNorm.includes(bookIdNorm.replace(/\-\d+$/, "")));
+            });
+        }
 
         if (!matchedKey) return [];
 
@@ -377,10 +392,20 @@ export async function GET(request: NextRequest) {
 
             let bookTopics: TopicGroup[] = [];
             if (extractedTopics[bookId] && extractedTopics[bookId].length > 0) {
-                bookTopics = extractedTopics[bookId];
+                if (typeof extractedTopics[bookId][0] === "string") {
+                    bookTopics = parseManualTopics(extractedTopics[bookId] as any);
+                } else {
+                    bookTopics = extractedTopics[bookId];
+                }
             } else if (dirName) {
                 const folderKey = `${dirName}-${classLevel}`;
-                if (extractedTopics[folderKey]) bookTopics = extractedTopics[folderKey];
+                if (extractedTopics[folderKey]) {
+                    if (typeof extractedTopics[folderKey][0] === "string") {
+                        bookTopics = parseManualTopics(extractedTopics[folderKey] as any);
+                    } else {
+                        bookTopics = extractedTopics[folderKey];
+                    }
+                }
             }
 
             if (bookTopics.length === 0 && book.topics && book.topics !== "Mövzular") {
