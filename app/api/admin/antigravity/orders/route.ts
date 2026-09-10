@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import fs from "fs"
-import path from "path"
+import * as fs from "fs"
+import * as path from "path"
 
 const ORDERS_FILE = path.join(process.cwd(), "data", "antigravity_orders.json")
 
@@ -17,6 +17,12 @@ export interface AntigravityOrder {
   questionType?: string
   notes?: string
   status: "pending" | "in_progress" | "completed" | "cancelled"
+  antigravityAccount?: {
+    label: string
+    accountEmail?: string
+    model: string
+    agentRole: string
+  }
   account: {
     githubUsername: string
     repoOwner: string
@@ -67,7 +73,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { grade, textbook, topics, questionCount, difficulty, notes, account, questionType, bloomLevel } = body
+    const { grade, textbook, topics, questionCount, difficulty, notes, account, antigravityAccount, questionType, bloomLevel } = body
 
     if (!grade || !textbook || !Array.isArray(topics) || topics.length === 0) {
       return NextResponse.json(
@@ -89,6 +95,12 @@ export async function POST(request: NextRequest) {
       questionType: questionType || "standart",
       notes: notes || "",
       status: "pending",
+      antigravityAccount: {
+        label: antigravityAccount?.label || "Antigravity Əsas Profil",
+        accountEmail: antigravityAccount?.accountEmail || "emilinpoctu@gmail.com",
+        model: antigravityAccount?.model || "gemini-1.5-pro-latest",
+        agentRole: antigravityAccount?.agentRole || "Kurikulum Baş Metodisti",
+      },
       account: {
         githubUsername: account?.githubUsername || "EmilMajid",
         repoOwner: account?.repoOwner || "EmilMajid",

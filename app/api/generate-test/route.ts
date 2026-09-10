@@ -3,17 +3,17 @@ import { generateText } from "ai"
 import { xai } from "@ai-sdk/xai"
 import { openai } from "@ai-sdk/openai"
 // @ts-ignore - Package is installed, IDE cache issue
-import { google } from "@ai-sdk/google"
+import { google, createGoogleGenerativeAI } from "@ai-sdk/google"
 // @ts-ignore - Package is installed, IDE cache issue
 import { anthropic } from "@ai-sdk/anthropic"
 import { type NextRequest, NextResponse } from "next/server"
-import fs from "fs"
-import path from "path"
+import * as fs from "fs"
+import * as path from "path"
 import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 
 export async function POST(request: NextRequest) {
   try {
-    const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20 } = await request.json()
+    const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20, antigravityAccount, forceAi } = await request.json()
 
     const getDifficultyPrompt = (difficulty: string) => {
       switch (difficulty) {
@@ -130,28 +130,31 @@ Mövzu: ${topic}`
     const googleKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY
     const anthropicKey = process.env.ANTHROPIC_API_KEY
 
-    // STEP 0: offline_tests.json-dan hazır sualları yoxla
-    console.log("🔄 offline_tests.json-dan hazır suallar axtarılır...")
-    const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
+    // STEP 0: offline_tests.json-dan hazır sualları yoxla (əgər forceAi aktiv deyilsə)
+    const isForceAi = forceAi === true || request.headers.get("x-force-ai") === "true"
+    if (!isForceAi) {
+      console.log("🔄 offline_tests.json-dan hazır suallar axtarılır...")
+      const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
 
-    if (offlineQuestions.length > 0) {
-      console.log(`✅ offline_tests.json-dan ${offlineQuestions.length} hazır sual tapıldı! AI sorğusu ləğv edilir.`)
-      return NextResponse.json({
-        questions: offlineQuestions,
-        provider: "offline",
-        success: true,
-        message: `${offlineQuestions.length} test sualı hazır bazadan yükləndi`,
-        metadata: {
-          textbook,
-          topic,
-          grade,
-          difficulty,
-          questionCount: offlineQuestions.length,
-          timeLimit,
-          recommendedTime,
-          difficultyDistribution: getDifficultyDistribution(offlineQuestions),
-        },
-      })
+      if (offlineQuestions.length > 0) {
+        console.log(`✅ offline_tests.json-dan ${offlineQuestions.length} hazır sual tapıldı! AI sorğusu ləğv edilir.`)
+        return NextResponse.json({
+          questions: offlineQuestions,
+          provider: "offline",
+          success: true,
+          message: `${offlineQuestions.length} test sualı hazır bazadan yükləndi`,
+          metadata: {
+            textbook,
+            topic,
+            grade,
+            difficulty,
+            questionCount: offlineQuestions.length,
+            timeLimit,
+            recommendedTime,
+            difficultyDistribution: getDifficultyDistribution(offlineQuestions),
+          },
+        })
+      }
     }
 
     const hasXaiKey = !!(xaiKey && xaiKey.startsWith("xai-"))
@@ -162,7 +165,24 @@ Mövzu: ${topic}`
     let aiResponse: string | null = null
     let usedProvider = "fallback"
 
-    if (hasGoogle) {
+    // 1. Antigravity / Google Generative AI Provider
+    const dynamicAntigravityKey = antigravityAccount?.apiKey || process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    const dynamicAntigravityModel = antigravityAccount?.model || "gemini-1.5-pro-latest"
+
+    if (dynamicAntigravityKey && dynamicAntigravityKey.startsWith("AIzaSy")) {
+      try {
+        const customGoogle = createGoogleGenerativeAI({ apiKey: dynamicAntigravityKey })
+        const { text } = await generateText({
+          model: customGoogle(dynamicAntigravityModel),
+          prompt,
+          temperature: difficulty === "qarışıq" ? 0.8 : 0.7,
+        })
+        aiResponse = text
+        usedProvider = `antigravity (${dynamicAntigravityModel})`
+      } catch (error) {
+        console.error("❌ Antigravity / Gemini xətası:", error)
+      }
+    } else if (hasGoogle) {
       try {
         const { text } = await generateText({
           model: google("gemini-1.5-pro-latest"),

@@ -31,7 +31,6 @@ import {
   Sparkles,
   ExternalLink,
   CheckCircle2,
-  UserCheck,
   Settings,
   PlusCircle,
   Copy,
@@ -39,12 +38,24 @@ import {
   AlertCircle,
   BarChart3,
   ListTodo,
-  FileCheck2,
+  Bot,
   Key,
   ShieldCheck,
+  Cpu,
+  User,
 } from "lucide-react"
 
 // Types
+export interface AntigravityAccountProfile {
+  id: string
+  label: string
+  accountEmail: string
+  apiKey: string
+  model: string
+  agentRole: string
+  isDefault?: boolean
+}
+
 export interface GitHubAccountProfile {
   id: string
   label: string
@@ -88,6 +99,12 @@ interface AntigravityOrder {
   questionType?: string
   notes?: string
   status: "pending" | "in_progress" | "completed" | "cancelled"
+  antigravityAccount?: {
+    label: string
+    accountEmail?: string
+    model: string
+    agentRole: string
+  }
   account: {
     githubUsername: string
     repoOwner: string
@@ -115,7 +132,28 @@ interface TextbookStat {
   topics: TopicStat[]
 }
 
-const DEFAULT_ACCOUNTS: GitHubAccountProfile[] = [
+// Defaults
+const DEFAULT_ANTIGRAVITY_ACCOUNTS: AntigravityAccountProfile[] = [
+  {
+    id: "ag-main",
+    label: "Antigravity Baş Hesab",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "", // Can be filled by user or falls back to server env
+    model: "gemini-1.5-pro-latest",
+    agentRole: "Kurikulum və DİM Baş Metodisti",
+    isDefault: true,
+  },
+  {
+    id: "ag-flash",
+    label: "Antigravity Sürətli İstehsalat (Flash)",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "gemini-2.0-flash-exp",
+    agentRole: "Sürətli Test İstehsalatı Agenti",
+  },
+]
+
+const DEFAULT_GITHUB_ACCOUNTS: GitHubAccountProfile[] = [
   {
     id: "acc-emil-main",
     label: "Əsas EmilMajid Hesabı",
@@ -134,15 +172,25 @@ const DEFAULT_ACCOUNTS: GitHubAccountProfile[] = [
 export default function AIGenerationPage() {
   const { toast } = useToast()
 
-  // --- Account State ---
-  const [accounts, setAccounts] = useState<GitHubAccountProfile[]>(DEFAULT_ACCOUNTS)
-  const [activeAccount, setActiveAccount] = useState<GitHubAccountProfile>(DEFAULT_ACCOUNTS[0])
-  const [isAccountModalOpen, setIsAccountModalOpen] = useState(false)
-  const [isValidatingToken, setIsValidatingToken] = useState(false)
-  const [validationResult, setValidationResult] = useState<{ success: boolean; message: string; user?: any } | null>(null)
+  // --- Antigravity Accounts State ---
+  const [agAccounts, setAgAccounts] = useState<AntigravityAccountProfile[]>(DEFAULT_ANTIGRAVITY_ACCOUNTS)
+  const [activeAgAccount, setActiveAgAccount] = useState<AntigravityAccountProfile>(DEFAULT_ANTIGRAVITY_ACCOUNTS[0])
+  const [isValidatingAgKey, setIsValidatingAgKey] = useState(false)
+  const [agValidationResult, setAgValidationResult] = useState<{ success: boolean; message: string } | null>(null)
+  const [agForm, setAgForm] = useState({
+    label: "",
+    accountEmail: "emilinpoctu@gmail.com",
+    apiKey: "",
+    model: "gemini-1.5-pro-latest",
+    agentRole: "Kurikulum və DİM Baş Metodisti",
+  })
 
-  // Account Form
-  const [accountForm, setAccountForm] = useState({
+  // --- GitHub Accounts State ---
+  const [ghAccounts, setGhAccounts] = useState<GitHubAccountProfile[]>(DEFAULT_GITHUB_ACCOUNTS)
+  const [activeGhAccount, setActiveGhAccount] = useState<GitHubAccountProfile>(DEFAULT_GITHUB_ACCOUNTS[0])
+  const [isValidatingGhToken, setIsValidatingGhToken] = useState(false)
+  const [ghValidationResult, setGhValidationResult] = useState<{ success: boolean; message: string; user?: any } | null>(null)
+  const [ghForm, setGhForm] = useState({
     label: "",
     token: "",
     owner: "EmilMajid",
@@ -151,6 +199,9 @@ export default function AIGenerationPage() {
     operatorName: "",
     operatorRole: "Metodist",
   })
+
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false)
+  const [settingsTab, setSettingsTab] = useState("antigravity")
 
   // --- Curriculum & Generation State ---
   const [grade, setGrade] = useState("2")
@@ -189,15 +240,29 @@ export default function AIGenerationPage() {
   // 1. Load accounts from localStorage
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("antigravity_github_accounts")
-      if (saved) {
-        const parsed = JSON.parse(saved)
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setAccounts(parsed)
-          const activeId = localStorage.getItem("antigravity_active_account_id")
-          const found = parsed.find((a: GitHubAccountProfile) => a.id === activeId)
-          if (found) setActiveAccount(found)
-          else setActiveAccount(parsed[0])
+      // Load Antigravity accounts
+      const savedAg = localStorage.getItem("antigravity_ai_accounts")
+      if (savedAg) {
+        const parsedAg = JSON.parse(savedAg)
+        if (Array.isArray(parsedAg) && parsedAg.length > 0) {
+          setAgAccounts(parsedAg)
+          const activeAgId = localStorage.getItem("antigravity_active_ai_account_id")
+          const foundAg = parsedAg.find((a: AntigravityAccountProfile) => a.id === activeAgId)
+          if (foundAg) setActiveAgAccount(foundAg)
+          else setActiveAgAccount(parsedAg[0])
+        }
+      }
+
+      // Load GitHub accounts
+      const savedGh = localStorage.getItem("antigravity_github_accounts")
+      if (savedGh) {
+        const parsedGh = JSON.parse(savedGh)
+        if (Array.isArray(parsedGh) && parsedGh.length > 0) {
+          setGhAccounts(parsedGh)
+          const activeGhId = localStorage.getItem("antigravity_active_account_id")
+          const foundGh = parsedGh.find((a: GitHubAccountProfile) => a.id === activeGhId)
+          if (foundGh) setActiveGhAccount(foundGh)
+          else setActiveGhAccount(parsedGh[0])
         }
       }
     } catch (e) {}
@@ -291,7 +356,6 @@ export default function AIGenerationPage() {
     }
   }
 
-  // Toggle multiple topic selection
   const handleToggleTopic = (topicName: string) => {
     setSelectedMultipleTopics((prev) =>
       prev.includes(topicName) ? prev.filter((t) => t !== topicName) : [...prev, topicName]
@@ -306,96 +370,185 @@ export default function AIGenerationPage() {
     }
   }
 
-  // --- Account Management Handlers ---
-  const handleSwitchAccount = (account: GitHubAccountProfile) => {
-    setActiveAccount(account)
-    localStorage.setItem("antigravity_active_account_id", account.id)
+  // --- Antigravity Account Handlers ---
+  const handleSwitchAgAccount = (acc: AntigravityAccountProfile) => {
+    setActiveAgAccount(acc)
+    localStorage.setItem("antigravity_active_ai_account_id", acc.id)
     toast({
-      title: "Hesab Dəyişdirildi! 🔄",
-      description: `Aktiv profil: ${account.label} (@${account.username})`,
+      title: "Antigravity Hesabı Dəyişdirildi! 🤖🔄",
+      description: `Aktiv Antigravity Agenti: ${acc.label} (${acc.model})`,
     })
-    setIsAccountModalOpen(false)
   }
 
-  const handleValidateNewToken = async () => {
-    if (!accountForm.token.trim()) {
-      toast({ title: "Xəta", description: "Token daxil edilməlidir", variant: "destructive" })
+  const handleValidateAgKey = async () => {
+    if (!agForm.apiKey.trim()) {
+      toast({ title: "Xəta", description: "API açarı daxil edilməlidir", variant: "destructive" })
       return
     }
-    setIsValidatingToken(true)
-    setValidationResult(null)
+    setIsValidatingAgKey(true)
+    setAgValidationResult(null)
+    try {
+      const res = await fetch("/api/admin/antigravity/validate-key", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          apiKey: agForm.apiKey,
+          model: agForm.model,
+          accountEmail: agForm.accountEmail,
+        }),
+      })
+      const data = await res.json()
+      if (res.ok && data.success) {
+        setAgValidationResult({
+          success: true,
+          message: data.message,
+        })
+        toast({ title: "Antigravity Açarı Təsdiqləndi! 🤖✅", description: data.message })
+      } else {
+        setAgValidationResult({
+          success: false,
+          message: data.error || "Açar təsdiqlənmədi",
+        })
+      }
+    } catch (e: any) {
+      setAgValidationResult({ success: false, message: e.message || "Bağlantı xətası" })
+    } finally {
+      setIsValidatingAgKey(false)
+    }
+  }
+
+  const handleSaveAgAccount = () => {
+    const newAg: AntigravityAccountProfile = {
+      id: `ag-${Date.now()}`,
+      label: agForm.label.trim() || `Antigravity (${agForm.model.split("-")[1] || "Pro"})`,
+      accountEmail: agForm.accountEmail.trim() || "emilinpoctu@gmail.com",
+      apiKey: agForm.apiKey.trim(),
+      model: agForm.model,
+      agentRole: agForm.agentRole.trim() || "Kurikulum Baş Metodisti",
+    }
+
+    const updated = [newAg, ...agAccounts]
+    setAgAccounts(updated)
+    setActiveAgAccount(newAg)
+    localStorage.setItem("antigravity_ai_accounts", JSON.stringify(updated))
+    localStorage.setItem("antigravity_active_ai_account_id", newAg.id)
+
+    toast({
+      title: "Yeni Antigravity Hesabı Əlavə Edildi! 🤖🎉",
+      description: `${newAg.label} aktiv Antigravity Agenti təyin olundu.`,
+    })
+
+    setAgForm({
+      label: "",
+      accountEmail: "emilinpoctu@gmail.com",
+      apiKey: "",
+      model: "gemini-1.5-pro-latest",
+      agentRole: "Kurikulum Baş Metodisti",
+    })
+    setAgValidationResult(null)
+  }
+
+  const handleDeleteAgAccount = (id: string) => {
+    if (agAccounts.length <= 1) {
+      toast({ title: "Xəbərdarlıq", description: "Ən azı bir Antigravity hesabı qalmalıdır", variant: "destructive" })
+      return
+    }
+    const filtered = agAccounts.filter((a) => a.id !== id)
+    setAgAccounts(filtered)
+    if (activeAgAccount.id === id) {
+      setActiveAgAccount(filtered[0])
+      localStorage.setItem("antigravity_active_ai_account_id", filtered[0].id)
+    }
+    localStorage.setItem("antigravity_ai_accounts", JSON.stringify(filtered))
+    toast({ title: "Antigravity hesabı silindi" })
+  }
+
+  // --- GitHub Account Handlers ---
+  const handleSwitchGhAccount = (acc: GitHubAccountProfile) => {
+    setActiveGhAccount(acc)
+    localStorage.setItem("antigravity_active_account_id", acc.id)
+    toast({
+      title: "GitHub Hesabı Dəyişdirildi! 🐙🔄",
+      description: `Aktiv profil: ${acc.label} (@${acc.username})`,
+    })
+  }
+
+  const handleValidateGhToken = async () => {
+    if (!ghForm.token.trim()) {
+      toast({ title: "Xəta", description: "GitHub token daxil edilməlidir", variant: "destructive" })
+      return
+    }
+    setIsValidatingGhToken(true)
+    setGhValidationResult(null)
     try {
       const res = await fetch("/api/admin/github/validate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          token: accountForm.token,
-          owner: accountForm.owner,
-          repo: accountForm.repo,
+          token: ghForm.token,
+          owner: ghForm.owner,
+          repo: ghForm.repo,
         }),
       })
       const data = await res.json()
       if (res.ok && data.success) {
-        setValidationResult({
+        setGhValidationResult({
           success: true,
           message: data.message,
           user: data.user,
         })
-        setAccountForm((prev) => ({
+        setGhForm((prev) => ({
           ...prev,
           operatorName: prev.operatorName || data.user.name || data.user.login,
         }))
-        toast({ title: "Token Uğurla Təsdiqləndi! ✅", description: `GitHub İstifadəçisi: @${data.user.login}` })
+        toast({ title: "GitHub Token Təsdiqləndi! ✅", description: `@${data.user.login} (${ghForm.owner}/${ghForm.repo})` })
       } else {
-        setValidationResult({
+        setGhValidationResult({
           success: false,
           message: data.error || "Token təsdiqlənmədi",
         })
       }
     } catch (e: any) {
-      setValidationResult({
-        success: false,
-        message: e.message || "Bağlantı xətası baş verdi",
-      })
+      setGhValidationResult({ success: false, message: e.message || "Bağlantı xətası" })
     } finally {
-      setIsValidatingToken(false)
+      setIsValidatingGhToken(false)
     }
   }
 
-  const handleSaveAccount = () => {
-    if (!accountForm.token.trim() || !accountForm.owner.trim() || !accountForm.repo.trim()) {
+  const handleSaveGhAccount = () => {
+    if (!ghForm.token.trim() || !ghForm.owner.trim() || !ghForm.repo.trim()) {
       toast({ title: "Xəta", description: "Zəhmət olmasa tələb olunan sahələri doldurun", variant: "destructive" })
       return
     }
 
-    const username = validationResult?.user?.login || accountForm.owner
-    const avatarUrl = validationResult?.user?.avatarUrl || `https://github.com/${username}.png`
+    const username = ghValidationResult?.user?.login || ghForm.owner
+    const avatarUrl = ghValidationResult?.user?.avatarUrl || `https://github.com/${username}.png`
 
     const newAcc: GitHubAccountProfile = {
       id: `acc-${Date.now()}`,
-      label: accountForm.label.trim() || `${username} (${accountForm.repo})`,
+      label: ghForm.label.trim() || `${username} (${ghForm.repo})`,
       username,
-      token: accountForm.token.trim(),
-      owner: accountForm.owner.trim(),
-      repo: accountForm.repo.trim(),
-      branch: accountForm.branch.trim() || "main",
-      operatorName: accountForm.operatorName.trim() || username,
-      operatorRole: accountForm.operatorRole.trim() || "Metodist",
+      token: ghForm.token.trim(),
+      owner: ghForm.owner.trim(),
+      repo: ghForm.repo.trim(),
+      branch: ghForm.branch.trim() || "main",
+      operatorName: ghForm.operatorName.trim() || username,
+      operatorRole: ghForm.operatorRole.trim() || "Metodist",
       avatarUrl,
     }
 
-    const updated = [newAcc, ...accounts]
-    setAccounts(updated)
-    setActiveAccount(newAcc)
+    const updated = [newAcc, ...ghAccounts]
+    setGhAccounts(updated)
+    setActiveGhAccount(newAcc)
     localStorage.setItem("antigravity_github_accounts", JSON.stringify(updated))
     localStorage.setItem("antigravity_active_account_id", newAcc.id)
 
     toast({
-      title: "Yeni Hesab Əlavə Edildi! 🎉",
-      description: `${newAcc.label} aktiv hesab olaraq seçildi.`,
+      title: "Yeni GitHub Hesabı Əlavə Edildi! 🎉",
+      description: `${newAcc.label} aktiv profil seçildi.`,
     })
 
-    setAccountForm({
+    setGhForm({
       label: "",
       token: "",
       owner: "EmilMajid",
@@ -404,23 +557,22 @@ export default function AIGenerationPage() {
       operatorName: "",
       operatorRole: "Metodist",
     })
-    setValidationResult(null)
-    setIsAccountModalOpen(false)
+    setGhValidationResult(null)
   }
 
-  const handleDeleteAccount = (id: string) => {
-    if (accounts.length <= 1) {
-      toast({ title: "Xəbərdarlıq", description: "Ən azı bir hesab saxlanmalıdır", variant: "destructive" })
+  const handleDeleteGhAccount = (id: string) => {
+    if (ghAccounts.length <= 1) {
+      toast({ title: "Xəbərdarlıq", description: "Ən azı bir GitHub hesabı saxlanmalıdır", variant: "destructive" })
       return
     }
-    const filtered = accounts.filter((a) => a.id !== id)
-    setAccounts(filtered)
-    if (activeAccount.id === id) {
-      setActiveAccount(filtered[0])
+    const filtered = ghAccounts.filter((a) => a.id !== id)
+    setGhAccounts(filtered)
+    if (activeGhAccount.id === id) {
+      setActiveGhAccount(filtered[0])
       localStorage.setItem("antigravity_active_account_id", filtered[0].id)
     }
     localStorage.setItem("antigravity_github_accounts", JSON.stringify(filtered))
-    toast({ title: "Hesab silindi" })
+    toast({ title: "GitHub hesabı silindi" })
   }
 
   // --- Antigravity Order Creation ---
@@ -446,13 +598,19 @@ export default function AIGenerationPage() {
           questionType,
           bloomLevel,
           notes: orderNotes,
+          antigravityAccount: {
+            label: activeAgAccount.label,
+            accountEmail: activeAgAccount.accountEmail,
+            model: activeAgAccount.model,
+            agentRole: activeAgAccount.agentRole,
+          },
           account: {
-            githubUsername: activeAccount.username,
-            repoOwner: activeAccount.owner,
-            repoName: activeAccount.repo,
-            branch: activeAccount.branch,
-            operatorName: activeAccount.operatorName,
-            operatorRole: activeAccount.operatorRole,
+            githubUsername: activeGhAccount.username,
+            repoOwner: activeGhAccount.owner,
+            repoName: activeGhAccount.repo,
+            branch: activeGhAccount.branch,
+            operatorName: activeGhAccount.operatorName,
+            operatorRole: activeGhAccount.operatorRole,
           },
         }),
       })
@@ -460,7 +618,7 @@ export default function AIGenerationPage() {
       const data = await res.json()
       if (res.ok && data.success) {
         toast({
-          title: "Sifariş Növbəyə Əlavə Edildi! 📋🚀",
+          title: "Sifariş Antigravity Növbəsinə Əlavə Edildi! 📋🚀",
           description: data.message,
         })
         setOrderNotes("")
@@ -487,7 +645,9 @@ export default function AIGenerationPage() {
   }
 
   const handleCopyOrderPrompt = (order: AntigravityOrder) => {
-    const prompt = `[ANTIGRAVITY TEST ORDER #${order.id}]
+    const prompt = `[ANTIGRAVITY Sİ TEST SİFARİŞİ #${order.id}]
+Antigravity Agenti: ${order.antigravityAccount?.label || "Antigravity Pro"} (${order.antigravityAccount?.model || "gemini-1.5-pro-latest"})
+İxtisaslaşma: ${order.antigravityAccount?.agentRole || "Kurikulum Baş Metodisti"}
 Sinif: ${order.grade}-ci sinif
 Dərslik: ${order.textbook}
 Mövzular (${order.topics.length} ədəd):
@@ -496,8 +656,8 @@ Sual Sayı: ${order.questionCount}
 Çətinlik: ${order.difficulty}
 Sual Tipi: ${order.questionType}
 Bloom Səviyyəsi: ${order.bloomLevel}
-Hədəf GitHub: ${order.account.repoOwner}/${order.account.repo} (${order.account.branch})
-Sifarişçi: ${order.account.operatorName} (${order.account.operatorRole})
+Hədəf GitHub: ${order.account.repoOwner}/${order.account.repoName} (${order.account.branch})
+Operator: ${order.account.operatorName} (${order.account.operatorRole})
 Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal suallar tərtib edilsin."}`
 
     navigator.clipboard.writeText(prompt)
@@ -526,6 +686,13 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
           grade: grade,
           questionCount: Number.parseInt(count) || 10,
           difficulty: difficulty,
+          forceAi: true,
+          antigravityAccount: {
+            apiKey: activeAgAccount.apiKey,
+            model: activeAgAccount.model,
+            agentRole: activeAgAccount.agentRole,
+            accountEmail: activeAgAccount.accountEmail,
+          },
         }),
       })
 
@@ -544,8 +711,8 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
 
         setQuestions(formatted)
         toast({
-          title: "Generasiya Uğurludur! 🤖",
-          description: `${formatted.length} ədəd sual hazırlandı. Yoxlayıb GitHub-a göndərə bilərsiniz.`,
+          title: "Antigravity ilə Generasiya Uğurludur! 🤖",
+          description: `${formatted.length} ədəd sual hazırlandı. Agent: ${activeAgAccount.label}`,
         })
       } else {
         throw new Error(data.error || "Suallar generasiya edilə bilmədi")
@@ -598,12 +765,12 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
           topic: effectiveTopic,
           questions,
           githubConfig: {
-            token: activeAccount.token,
-            owner: activeAccount.owner,
-            repo: activeAccount.repo,
-            branch: activeAccount.branch,
-            operatorName: activeAccount.operatorName,
-            operatorRole: activeAccount.operatorRole,
+            token: activeGhAccount.token,
+            owner: activeGhAccount.owner,
+            repo: activeGhAccount.repo,
+            branch: activeGhAccount.branch,
+            operatorName: activeGhAccount.operatorName,
+            operatorRole: activeGhAccount.operatorRole,
           },
         }),
       })
@@ -615,11 +782,11 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
           commitSha: data.commitSha,
           message: data.message,
           addedCount: data.addedCount,
-          repoUrl: data.repoUrl || `https://github.com/${activeAccount.owner}/${activeAccount.repo}`,
+          repoUrl: data.repoUrl || `https://github.com/${activeGhAccount.owner}/${activeGhAccount.repo}`,
         })
         toast({
           title: "Möhtəşəm! 🚀",
-          description: `Suallar ${activeAccount.owner}/${activeAccount.repo} repozitoriyasına push edildi! (Commit: ${data.commitSha || "tamamlandı"})`,
+          description: `Suallar ${activeGhAccount.owner}/${activeGhAccount.repo} repozitoriyasına push edildi! (Commit: ${data.commitSha || "tamamlandı"})`,
         })
       } else {
         throw new Error(data.error || "GitHub-a göndərilərkən xəta baş verdi")
@@ -633,7 +800,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
 
   return (
     <div className="space-y-6 max-w-6xl mx-auto p-4 sm:p-6">
-      {/* Top Banner: Title & Account Switcher */}
+      {/* Top Header: Title & Dual Account Status (Antigravity & GitHub) */}
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b pb-5">
         <div>
           <div className="flex items-center gap-2">
@@ -641,229 +808,418 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
               Aİ Test Fabriki & Antigravity Masası 🏭
             </h1>
             <Badge className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold">
-              Avtomatlaşdırılmış
+              Antigravity Sİ ilə
             </Badge>
           </div>
           <p className="text-sm text-muted-foreground mt-1">
-            Dərslik kurikulum standartlarına uyğun kütləvi test sifarişi verin, birbaşa GitHub-a commit/push edin.
+            Dərslik kurikulum standartlarına uyğun test sifarişi verin, Antigravity Sİ agenti ilə hazırlayın və GitHub-a push edin.
           </p>
         </div>
 
-        {/* Active Account Pill & Switcher Trigger */}
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-3 bg-white border border-slate-200 shadow-sm px-3.5 py-2 rounded-xl">
-            {activeAccount.avatarUrl ? (
-              <img
-                src={activeAccount.avatarUrl}
-                alt={activeAccount.username}
-                className="w-8 h-8 rounded-full border border-indigo-200"
-              />
-            ) : (
-              <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-xs">
-                {activeAccount.username.slice(0, 2).toUpperCase()}
-              </div>
-            )}
+        {/* Dual Account Indicators & Switcher Trigger */}
+        <div className="flex flex-wrap items-center gap-2.5">
+          {/* Active Antigravity AI Profile Card */}
+          <div className="flex items-center gap-2.5 bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 px-3 py-1.5 rounded-xl shadow-xs">
+            <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white shrink-0 shadow-xs">
+              <Bot className="h-4 w-4" />
+            </div>
             <div className="text-left">
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-bold text-gray-900">@{activeAccount.username}</span>
-                <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 border-green-300 bg-green-50 text-green-700 font-semibold">
-                  Aktiv
+                <span className="text-xs font-bold text-purple-950 truncate max-w-[130px]">{activeAgAccount.label}</span>
+                <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5 border-purple-300 bg-white text-purple-700 font-bold">
+                  Sİ Agenti
                 </Badge>
               </div>
-              <p className="text-[11px] text-muted-foreground">
-                Repo: <code className="font-semibold text-slate-700">{activeAccount.owner}/{activeAccount.repo}</code> ({activeAccount.branch})
+              <p className="text-[10px] text-purple-700 font-mono truncate max-w-[170px]">
+                {activeAgAccount.model.replace("-latest", "")} • {activeAgAccount.accountEmail}
               </p>
             </div>
           </div>
 
-          <Dialog open={isAccountModalOpen} onOpenChange={setIsAccountModalOpen}>
+          {/* Active GitHub Account Card */}
+          <div className="flex items-center gap-2 bg-white border border-slate-200 px-3 py-1.5 rounded-xl shadow-xs">
+            {activeGhAccount.avatarUrl ? (
+              <img src={activeGhAccount.avatarUrl} alt={activeGhAccount.username} className="w-7 h-7 rounded-full border shrink-0" />
+            ) : (
+              <div className="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 font-bold text-[10px] shrink-0">
+                GH
+              </div>
+            )}
+            <div className="text-left">
+              <div className="flex items-center gap-1">
+                <span className="text-xs font-bold text-gray-900 font-mono">@{activeGhAccount.username}</span>
+                <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5 border-green-300 bg-green-50 text-green-700 font-bold">
+                  Repo
+                </Badge>
+              </div>
+              <p className="text-[10px] text-slate-500 font-mono">
+                {activeGhAccount.owner}/{activeGhAccount.repo}
+              </p>
+            </div>
+          </div>
+
+          {/* Unified Settings Modal Button */}
+          <Dialog open={isSettingsModalOpen} onOpenChange={setIsSettingsModalOpen}>
             <DialogTrigger asChild>
-              <Button variant="outline" className="gap-2 h-11 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50/50 text-indigo-700 font-semibold shadow-sm">
+              <Button variant="outline" className="gap-2 h-10 border-indigo-200 hover:border-indigo-300 hover:bg-indigo-50/50 text-indigo-700 font-bold text-xs shadow-sm">
                 <Settings className="h-4 w-4 text-indigo-600" />
-                <span>Hesabı Dəyiş</span>
+                <span>Hesabları Dəyiş</span>
               </Button>
             </DialogTrigger>
 
-            <DialogContent className="max-w-md sm:max-w-xl">
+            <DialogContent className="max-w-md sm:max-w-2xl max-h-[85vh] overflow-y-auto">
               <DialogHeader>
                 <DialogTitle className="flex items-center gap-2 text-lg">
                   <Key className="h-5 w-5 text-indigo-600" />
-                  GitHub və Antigravity Hesab İdarəetməsi
+                  Antigravity Sİ və GitHub Hesab İdarəetməsi
                 </DialogTitle>
                 <DialogDescription className="text-xs">
-                  Sifarişlərin və sualların göndəriləcəyi GitHub hesabını, tokenini və hədəf repozitoriyanı idarə edin.
+                  Testləri generasiya edən Antigravity Sİ profilini və hədəf GitHub repozitoriyasını seçin və ya yenisini əlavə edin.
                 </DialogDescription>
               </DialogHeader>
 
-              <Tabs defaultValue="list" className="w-full mt-2">
+              <Tabs value={settingsTab} onValueChange={setSettingsTab} className="w-full mt-2">
                 <TabsList className="grid grid-cols-2 w-full">
-                  <TabsTrigger value="list" className="text-xs font-semibold">Saxlanmış Hesablar ({accounts.length})</TabsTrigger>
-                  <TabsTrigger value="add" className="text-xs font-semibold">+ Yeni Hesab Əlavə Et</TabsTrigger>
+                  <TabsTrigger value="antigravity" className="text-xs font-bold gap-1.5">
+                    <Bot className="h-4 w-4 text-purple-600" />
+                    🤖 Antigravity Sİ Hesabı ({agAccounts.length})
+                  </TabsTrigger>
+                  <TabsTrigger value="github" className="text-xs font-bold gap-1.5">
+                    <GitBranch className="h-4 w-4 text-slate-700" />
+                    🐙 GitHub Hesabı ({ghAccounts.length})
+                  </TabsTrigger>
                 </TabsList>
 
-                {/* Tab: Saved Accounts List */}
-                <TabsContent value="list" className="space-y-3 pt-3">
-                  <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
-                    {accounts.map((acc) => {
-                      const isActive = acc.id === activeAccount.id
-                      return (
-                        <div
-                          key={acc.id}
-                          className={`p-3.5 rounded-xl border transition-all flex items-center justify-between gap-3 ${
-                            isActive
-                              ? "bg-indigo-50/70 border-indigo-300 ring-1 ring-indigo-300"
-                              : "bg-white border-slate-200 hover:border-slate-300"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3">
-                            {acc.avatarUrl ? (
-                              <img src={acc.avatarUrl} alt={acc.username} className="w-10 h-10 rounded-full border" />
-                            ) : (
-                              <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-700">
-                                {acc.username.slice(0, 2).toUpperCase()}
+                {/* ========================================================= */}
+                {/* SETTINGS TAB 1: ANTIGRAVITY HESABI DƏYİŞDİRMƏ             */}
+                {/* ========================================================= */}
+                <TabsContent value="antigravity" className="space-y-4 pt-3">
+                  <div className="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-900 flex items-start gap-2.5">
+                    <Sparkles className="h-4 w-4 text-purple-600 shrink-0 mt-0.5" />
+                    <p>
+                      <strong>Antigravity Sİ Agenti:</strong> Test sualları birbaşa seçilmiş Antigravity hesabı və modeli ilə rəsmi dərsliklərdən hazırlanır. İstənilən Google/Antigravity profilini seçə və ya fərqli açar təyin edə bilərsiniz.
+                    </p>
+                  </div>
+
+                  {/* Siyahı */}
+                  <div className="space-y-2">
+                    <Label className="text-xs font-bold text-slate-800">Saxlanmış Antigravity Profilləri:</Label>
+                    <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
+                      {agAccounts.map((acc) => {
+                        const isActive = acc.id === activeAgAccount.id
+                        return (
+                          <div
+                            key={acc.id}
+                            className={`p-3 rounded-xl border transition-all flex items-center justify-between gap-3 ${
+                              isActive
+                                ? "bg-purple-50/80 border-purple-300 ring-1 ring-purple-300"
+                                : "bg-white border-slate-200 hover:border-slate-300"
+                            }`}
+                          >
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white shrink-0">
+                                <Bot className="h-4 w-4" />
                               </div>
-                            )}
-                            <div>
-                              <div className="flex items-center gap-2">
-                                <h4 className="font-bold text-sm text-gray-900">{acc.label}</h4>
-                                {isActive && (
-                                  <Badge className="bg-indigo-600 text-white text-[10px] py-0 h-4">Aktiv Profil</Badge>
-                                )}
+                              <div className="min-w-0">
+                                <div className="flex items-center gap-1.5">
+                                  <h4 className="font-bold text-xs text-gray-900 truncate">{acc.label}</h4>
+                                  {isActive && <Badge className="bg-purple-600 text-white text-[9px] py-0 h-4">Aktiv Agent</Badge>}
+                                </div>
+                                <p className="text-[11px] text-purple-800 font-mono mt-0.5">
+                                  Model: <strong>{acc.model}</strong> • {acc.accountEmail}
+                                </p>
+                                <p className="text-[10px] text-slate-500 truncate">
+                                  Rol: {acc.agentRole}
+                                </p>
                               </div>
-                              <p className="text-xs text-slate-600 mt-0.5">
-                                @{acc.username} • <code>{acc.owner}/{acc.repo}</code> ({acc.branch})
-                              </p>
-                              <p className="text-[11px] text-slate-400">
-                                Operator: {acc.operatorName} ({acc.operatorRole})
-                              </p>
+                            </div>
+
+                            <div className="flex items-center gap-1.5 shrink-0">
+                              {!isActive ? (
+                                <Button
+                                  size="sm"
+                                  onClick={() => handleSwitchAgAccount(acc)}
+                                  className="bg-purple-600 hover:bg-purple-700 text-white text-xs h-7 px-2.5 font-bold"
+                                >
+                                  Seç / Aktiv Et
+                                </Button>
+                              ) : (
+                                <Badge variant="outline" className="bg-green-50 text-green-700 border-green-300 gap-1 text-[11px] font-bold">
+                                  <Check className="h-3 w-3" /> Aktivdir
+                                </Badge>
+                              )}
+                              {agAccounts.length > 1 && (
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  onClick={() => handleDeleteAgAccount(acc.id)}
+                                  className="h-7 w-7 p-0 text-slate-400 hover:text-red-600"
+                                  title="Profili sil"
+                                >
+                                  <Trash2 className="h-3.5 w-3.5" />
+                                </Button>
+                              )}
                             </div>
                           </div>
+                        )
+                      })}
+                    </div>
+                  </div>
 
-                          <div className="flex items-center gap-1.5 shrink-0">
-                            {!isActive ? (
-                              <Button
-                                size="sm"
-                                onClick={() => handleSwitchAccount(acc)}
-                                className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs h-8 px-3 font-semibold"
-                              >
-                                Seç / Aktiv Et
-                              </Button>
-                            ) : (
-                              <Badge variant="outline" className="bg-green-50 text-green-700 border-green-300 gap-1 text-xs">
-                                <Check className="h-3.5 w-3.5" /> Aktivdir
-                              </Badge>
-                            )}
-                            {accounts.length > 1 && (
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                onClick={() => handleDeleteAccount(acc.id)}
-                                className="h-8 w-8 p-0 text-slate-400 hover:text-red-600"
-                                title="Hesabı sil"
-                              >
-                                <Trash2 className="h-3.5 w-3.5" />
-                              </Button>
-                            )}
-                          </div>
+                  {/* Yeni Antigravity Hesabı Əlavə Et */}
+                  <div className="border-t pt-3 space-y-3">
+                    <Label className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                      <PlusCircle className="h-3.5 w-3.5 text-purple-600" />
+                      Yeni Antigravity Hesabı Əlavə Et:
+                    </Label>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Profil Adı / Ləqəb</Label>
+                        <Input
+                          placeholder="Məs: Antigravity Pro (DİM Hazırlıq)"
+                          value={agForm.label}
+                          onChange={(e) => setAgForm({ ...agForm, label: e.target.value })}
+                          className="h-8 text-xs"
+                        />
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Google / Antigravity Hesab E-maili</Label>
+                        <Input
+                          placeholder="emilinpoctu@gmail.com"
+                          value={agForm.accountEmail}
+                          onChange={(e) => setAgForm({ ...agForm, accountEmail: e.target.value })}
+                          className="h-8 text-xs"
+                        />
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Antigravity Sİ Modeli</Label>
+                        <Select value={agForm.model} onValueChange={(v) => setAgForm({ ...agForm, model: v })}>
+                          <SelectTrigger className="h-8 text-xs bg-white">
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="gemini-1.5-pro-latest" className="text-xs">
+                              Gemini 1.5 Pro (Dərin Kurrikulum & RAG)
+                            </SelectItem>
+                            <SelectItem value="gemini-2.0-flash-exp" className="text-xs">
+                              Gemini 2.0 Flash (Yüksək Sürətli)
+                            </SelectItem>
+                            <SelectItem value="gemini-1.5-flash-latest" className="text-xs">
+                              Gemini 1.5 Flash (Standart)
+                            </SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Agent İxtisaslaşması / Rolu</Label>
+                        <Input
+                          placeholder="Kurikulum və DİM Baş Metodisti"
+                          value={agForm.agentRole}
+                          onChange={(e) => setAgForm({ ...agForm, agentRole: e.target.value })}
+                          className="h-8 text-xs"
+                        />
+                      </div>
+
+                      <div className="space-y-1 sm:col-span-2">
+                        <Label className="text-[11px] font-semibold">Antigravity / Gemini API Açarı (AIzaSy...)</Label>
+                        <div className="flex gap-2">
+                          <Input
+                            type="password"
+                            placeholder="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                            value={agForm.apiKey}
+                            onChange={(e) => setAgForm({ ...agForm, apiKey: e.target.value })}
+                            className="h-8 text-xs font-mono"
+                          />
+                          <Button
+                            type="button"
+                            variant="outline"
+                            onClick={handleValidateAgKey}
+                            disabled={isValidatingAgKey || !agForm.apiKey.trim()}
+                            className="text-xs shrink-0 h-8 font-bold gap-1"
+                          >
+                            {isValidatingAgKey ? <RefreshCw className="h-3 w-3 animate-spin" /> : <ShieldCheck className="h-3 w-3 text-purple-600" />}
+                            Yoxla
+                          </Button>
                         </div>
-                      )
-                    })}
+                        {agValidationResult && (
+                          <div className={`p-2 mt-1 rounded text-xs flex items-center gap-1.5 ${agValidationResult.success ? "bg-green-50 text-green-800 border border-green-200" : "bg-red-50 text-red-800 border border-red-200"}`}>
+                            {agValidationResult.success ? <CheckCircle2 className="h-3.5 w-3.5 text-green-600 shrink-0" /> : <AlertCircle className="h-3.5 w-3.5 text-red-600 shrink-0" />}
+                            <span>{agValidationResult.message}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    <Button
+                      onClick={handleSaveAgAccount}
+                      className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold h-9 text-xs gap-1.5 shadow-sm"
+                    >
+                      <PlusCircle className="h-3.5 w-3.5" />
+                      Antigravity Hesabını Yadda Saxla və Aktiv Et
+                    </Button>
                   </div>
                 </TabsContent>
 
-                {/* Tab: Add / Edit Account */}
-                <TabsContent value="add" className="space-y-3 pt-3">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="space-y-1 sm:col-span-2">
-                      <Label className="text-xs font-semibold">Profil Ləqəbi / Adı</Label>
-                      <Input
-                        placeholder="Məs: EmilMajid Əsas Hesab"
-                        value={accountForm.label}
-                        onChange={(e) => setAccountForm({ ...accountForm, label: e.target.value })}
-                        className="h-9 text-xs"
-                      />
-                    </div>
+                {/* ========================================================= */}
+                {/* SETTINGS TAB 2: GITHUB HESABI DƏYİŞDİRMƏ                  */}
+                {/* ========================================================= */}
+                <TabsContent value="github" className="space-y-4 pt-3">
+                  <div className="space-y-2">
+                    <Label className="text-xs font-bold text-slate-800">Saxlanmış GitHub Hesabları:</Label>
+                    <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
+                      {ghAccounts.map((acc) => {
+                        const isActive = acc.id === activeGhAccount.id
+                        return (
+                          <div
+                            key={acc.id}
+                            className={`p-3 rounded-xl border transition-all flex items-center justify-between gap-3 ${
+                              isActive
+                                ? "bg-indigo-50/80 border-indigo-300 ring-1 ring-indigo-300"
+                                : "bg-white border-slate-200 hover:border-slate-300"
+                            }`}
+                          >
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              {acc.avatarUrl ? (
+                                <img src={acc.avatarUrl} alt={acc.username} className="w-8 h-8 rounded-full border shrink-0" />
+                              ) : (
+                                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-xs text-slate-700 shrink-0">
+                                  GH
+                                </div>
+                              )}
+                              <div className="min-w-0">
+                                <div className="flex items-center gap-1.5">
+                                  <h4 className="font-bold text-xs text-gray-900 truncate">{acc.label}</h4>
+                                  {isActive && <Badge className="bg-indigo-600 text-white text-[9px] py-0 h-4">Aktiv Repo</Badge>}
+                                </div>
+                                <p className="text-[11px] text-slate-600 font-mono mt-0.5">
+                                  @{acc.username} • {acc.owner}/{acc.repo} ({acc.branch})
+                                </p>
+                              </div>
+                            </div>
 
-                    <div className="space-y-1 sm:col-span-2">
-                      <Label className="text-xs font-semibold">GitHub Personal Access Token (PAT)</Label>
-                      <div className="flex gap-2">
-                        <Input
-                          type="password"
-                          placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
-                          value={accountForm.token}
-                          onChange={(e) => setAccountForm({ ...accountForm, token: e.target.value })}
-                          className="h-9 text-xs font-mono"
-                        />
-                        <Button
-                          type="button"
-                          variant="outline"
-                          onClick={handleValidateNewToken}
-                          disabled={isValidatingToken || !accountForm.token.trim()}
-                          className="text-xs shrink-0 h-9 font-semibold gap-1.5"
-                        >
-                          {isValidatingToken ? <RefreshCw className="h-3.5 w-3.5 animate-spin" /> : <ShieldCheck className="h-3.5 w-3.5 text-indigo-600" />}
-                          Yoxla
-                        </Button>
-                      </div>
-                      {validationResult && (
-                        <div className={`p-2 mt-1.5 rounded-md text-xs flex items-center gap-1.5 ${validationResult.success ? "bg-green-50 text-green-800 border border-green-200" : "bg-red-50 text-red-800 border border-red-200"}`}>
-                          {validationResult.success ? <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" /> : <AlertCircle className="h-4 w-4 text-red-600 shrink-0" />}
-                          <span>{validationResult.message}</span>
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label className="text-xs font-semibold">Repozitoriya Sahibi (Owner)</Label>
-                      <Input
-                        placeholder="EmilMajid"
-                        value={accountForm.owner}
-                        onChange={(e) => setAccountForm({ ...accountForm, owner: e.target.value })}
-                        className="h-9 text-xs font-mono"
-                      />
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label className="text-xs font-semibold">Repozitoriya Adı (Repo)</Label>
-                      <Input
-                        placeholder="AI-TEST"
-                        value={accountForm.repo}
-                        onChange={(e) => setAccountForm({ ...accountForm, repo: e.target.value })}
-                        className="h-9 text-xs font-mono"
-                      />
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label className="text-xs font-semibold">Şaxə (Branch)</Label>
-                      <Input
-                        placeholder="main"
-                        value={accountForm.branch}
-                        onChange={(e) => setAccountForm({ ...accountForm, branch: e.target.value })}
-                        className="h-9 text-xs font-mono"
-                      />
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label className="text-xs font-semibold">Operatorun Adı</Label>
-                      <Input
-                        placeholder="Emil Məcidzadə"
-                        value={accountForm.operatorName}
-                        onChange={(e) => setAccountForm({ ...accountForm, operatorName: e.target.value })}
-                        className="h-9 text-xs"
-                      />
+                            <div className="flex items-center gap-1.5 shrink-0">
+                              {!isActive ? (
+                                <Button
+                                  size="sm"
+                                  onClick={() => handleSwitchGhAccount(acc)}
+                                  className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs h-7 px-2.5 font-bold"
+                                >
+                                  Seç / Aktiv Et
+                                </Button>
+                              ) : (
+                                <Badge variant="outline" className="bg-green-50 text-green-700 border-green-300 gap-1 text-[11px] font-bold">
+                                  <Check className="h-3 w-3" /> Aktivdir
+                                </Badge>
+                              )}
+                              {ghAccounts.length > 1 && (
+                                <Button
+                                  variant="ghost"
+                                  size="sm"
+                                  onClick={() => handleDeleteGhAccount(acc.id)}
+                                  className="h-7 w-7 p-0 text-slate-400 hover:text-red-600"
+                                  title="Hesabı sil"
+                                >
+                                  <Trash2 className="h-3.5 w-3.5" />
+                                </Button>
+                              )}
+                            </div>
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
 
-                  <DialogFooter className="pt-2">
+                  {/* Yeni GitHub Hesabı */}
+                  <div className="border-t pt-3 space-y-3">
+                    <Label className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                      <PlusCircle className="h-3.5 w-3.5 text-indigo-600" />
+                      Yeni GitHub Hesabı / Repozitoriya Əlavə Et:
+                    </Label>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Hesab Ləqəbi</Label>
+                        <Input
+                          placeholder="Məs: EmilMajid Əsas Hesab"
+                          value={ghForm.label}
+                          onChange={(e) => setGhForm({ ...ghForm, label: e.target.value })}
+                          className="h-8 text-xs"
+                        />
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Operator Adı</Label>
+                        <Input
+                          placeholder="Emil Məcidzadə"
+                          value={ghForm.operatorName}
+                          onChange={(e) => setGhForm({ ...ghForm, operatorName: e.target.value })}
+                          className="h-8 text-xs"
+                        />
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Repozitoriya Sahibi (Owner)</Label>
+                        <Input
+                          placeholder="EmilMajid"
+                          value={ghForm.owner}
+                          onChange={(e) => setGhForm({ ...ghForm, owner: e.target.value })}
+                          className="h-8 text-xs font-mono"
+                        />
+                      </div>
+
+                      <div className="space-y-1">
+                        <Label className="text-[11px] font-semibold">Repozitoriya Adı (Repo)</Label>
+                        <Input
+                          placeholder="AI-TEST"
+                          value={ghForm.repo}
+                          onChange={(e) => setGhForm({ ...ghForm, repo: e.target.value })}
+                          className="h-8 text-xs font-mono"
+                        />
+                      </div>
+
+                      <div className="space-y-1 sm:col-span-2">
+                        <Label className="text-[11px] font-semibold">GitHub Personal Access Token (PAT)</Label>
+                        <div className="flex gap-2">
+                          <Input
+                            type="password"
+                            placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+                            value={ghForm.token}
+                            onChange={(e) => setGhForm({ ...ghForm, token: e.target.value })}
+                            className="h-8 text-xs font-mono"
+                          />
+                          <Button
+                            type="button"
+                            variant="outline"
+                            onClick={handleValidateGhToken}
+                            disabled={isValidatingGhToken || !ghForm.token.trim()}
+                            className="text-xs shrink-0 h-8 font-bold gap-1"
+                          >
+                            {isValidatingGhToken ? <RefreshCw className="h-3 w-3 animate-spin" /> : <ShieldCheck className="h-3 w-3 text-indigo-600" />}
+                            Yoxla
+                          </Button>
+                        </div>
+                        {ghValidationResult && (
+                          <div className={`p-2 mt-1 rounded text-xs flex items-center gap-1.5 ${ghValidationResult.success ? "bg-green-50 text-green-800 border border-green-200" : "bg-red-50 text-red-800 border border-red-200"}`}>
+                            {ghValidationResult.success ? <CheckCircle2 className="h-3.5 w-3.5 text-green-600 shrink-0" /> : <AlertCircle className="h-3.5 w-3.5 text-red-600 shrink-0" />}
+                            <span>{ghValidationResult.message}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
                     <Button
-                      onClick={handleSaveAccount}
-                      disabled={!accountForm.token.trim() || !accountForm.owner.trim() || !accountForm.repo.trim()}
-                      className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold h-10 gap-2"
+                      onClick={handleSaveGhAccount}
+                      disabled={!ghForm.token.trim() || !ghForm.owner.trim() || !ghForm.repo.trim()}
+                      className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold h-9 text-xs gap-1.5 shadow-sm"
                     >
-                      <PlusCircle className="h-4 w-4" />
-                      Yadda Saxla və Aktiv Profil Et
+                      <PlusCircle className="h-3.5 w-3.5" />
+                      GitHub Hesabını Yadda Saxla və Aktiv Et
                     </Button>
-                  </DialogFooter>
+                  </div>
                 </TabsContent>
               </Tabs>
             </DialogContent>
@@ -895,14 +1251,14 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Sifariş Yaratma Formu */}
             <Card className="lg:col-span-5 h-fit border-indigo-100 shadow-sm">
-              <CardHeader className="bg-gradient-to-r from-indigo-50/60 to-white pb-3">
+              <CardHeader className="bg-gradient-to-r from-purple-50/70 via-indigo-50/50 to-white pb-3">
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-base font-bold flex items-center gap-2 text-indigo-950">
-                    <Wand2 className="h-5 w-5 text-indigo-600" />
+                    <Wand2 className="h-5 w-5 text-purple-600" />
                     Yeni Test Sifarişi Ver
                   </CardTitle>
-                  <Badge variant="outline" className="text-[11px] bg-white border-indigo-200 text-indigo-700">
-                    Avtomatlaşdırılmış
+                  <Badge variant="outline" className="text-[11px] bg-white border-purple-200 text-purple-700 font-bold">
+                    Antigravity Sİ
                   </Badge>
                 </div>
                 <CardDescription className="text-xs">
@@ -1065,24 +1421,25 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                   />
                 </div>
 
-                {/* Sifarişçi Məlumatı Qutusu */}
-                <div className="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-1 text-slate-700">
+                {/* Aktiv Profil Xülasəsi */}
+                <div className="p-3 bg-gradient-to-r from-purple-50/50 to-indigo-50/50 border border-purple-200 rounded-lg text-xs space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-slate-900">Sifarişçi Hesab:</span>
-                    <Badge variant="outline" className="font-mono text-[10px] bg-white">
-                      @{activeAccount.username}
-                    </Badge>
+                    <span className="font-semibold text-purple-950 flex items-center gap-1.5">
+                      <Bot className="h-3.5 w-3.5 text-purple-600" /> Antigravity Agenti:
+                    </span>
+                    <strong className="text-purple-900">{activeAgAccount.label}</strong>
                   </div>
-                  <p className="text-[11px] text-slate-500">
-                    Hədəf Repozitoriya: <strong>{activeAccount.owner}/{activeAccount.repo}</strong> ({activeAccount.branch})
-                  </p>
+                  <div className="flex items-center justify-between text-[11px] text-slate-600">
+                    <span>Hədəf GitHub:</span>
+                    <span className="font-mono font-semibold">{activeGhAccount.owner}/{activeGhAccount.repo} ({activeGhAccount.branch})</span>
+                  </div>
                 </div>
               </CardContent>
               <CardFooter className="pt-1">
                 <Button
                   onClick={handleCreateAntigravityOrder}
                   disabled={isCreatingOrder || !selectedTextbook || selectedMultipleTopics.length === 0}
-                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold h-11 gap-2 shadow-sm"
+                  className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold h-11 gap-2 shadow-sm"
                 >
                   {isCreatingOrder ? (
                     <>
@@ -1092,7 +1449,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                   ) : (
                     <>
                       <ListTodo className="h-4 w-4" />
-                      📋 Sifarişi Növbəyə Əlavə Et ({selectedMultipleTopics.length} mövzu)
+                      📋 Antigravity Sifarişi Yarat ({selectedMultipleTopics.length} mövzu)
                     </>
                   )}
                 </Button>
@@ -1104,7 +1461,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
               <div className="flex items-center justify-between bg-white p-3.5 rounded-xl border shadow-sm">
                 <div>
                   <h3 className="font-bold text-sm text-gray-900 flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-indigo-600" />
+                    <Clock className="h-4 w-4 text-purple-600" />
                     Antigravity Sifarişlər Növbəsi ({orders.length})
                   </h3>
                   <p className="text-xs text-muted-foreground mt-0.5">
@@ -1120,10 +1477,10 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
               {orders.length > 0 ? (
                 <div className="space-y-3">
                   {orders.map((ord) => (
-                    <Card key={ord.id} className="border shadow-sm hover:border-indigo-200 transition-all bg-white">
+                    <Card key={ord.id} className="border shadow-sm hover:border-purple-200 transition-all bg-white">
                       <CardHeader className="py-3 px-4 bg-slate-50/70 border-b flex flex-row items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <Badge className="bg-indigo-600 text-white font-mono text-xs">
+                          <Badge className="bg-purple-600 text-white font-mono text-xs">
                             {ord.id}
                           </Badge>
                           <Badge variant="outline" className="bg-white font-semibold text-xs text-slate-800">
@@ -1150,7 +1507,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                           <Label className="text-[11px] text-muted-foreground">Mövzular ({ord.topics.length} ədəd):</Label>
                           <div className="flex flex-wrap gap-1.5 mt-1">
                             {ord.topics.map((t, tIdx) => (
-                              <Badge key={tIdx} variant="secondary" className="text-[11px] bg-indigo-50 text-indigo-900 border border-indigo-100">
+                              <Badge key={tIdx} variant="secondary" className="text-[11px] bg-purple-50 text-purple-900 border border-purple-100">
                                 {t}
                               </Badge>
                             ))}
@@ -1172,9 +1529,16 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                           </div>
                           <div>
                             <span className="text-muted-foreground block">Hədəf Repo:</span>
-                            <strong className="text-slate-900 font-mono text-[10px]">{ord.account.repoOwner}/{ord.account.repo}</strong>
+                            <strong className="text-slate-900 font-mono text-[10px]">{ord.account.repoOwner}/{ord.account.repoName}</strong>
                           </div>
                         </div>
+
+                        {ord.antigravityAccount && (
+                          <p className="text-[11px] text-purple-900 bg-purple-50/70 p-2 rounded border border-purple-100 flex items-center justify-between">
+                            <span>Sİ Agenti: <strong>{ord.antigravityAccount.label}</strong> ({ord.antigravityAccount.model})</span>
+                            <span className="text-purple-700">{ord.antigravityAccount.agentRole}</span>
+                          </p>
+                        )}
 
                         {ord.notes && (
                           <p className="text-[11px] text-slate-600 italic bg-amber-50/50 p-2 rounded border border-amber-100">
@@ -1190,7 +1554,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                           size="sm"
                           variant="outline"
                           onClick={() => handleCopyOrderPrompt(ord)}
-                          className="h-8 gap-1.5 text-xs font-semibold text-indigo-700 border-indigo-200 hover:bg-indigo-50"
+                          className="h-8 gap-1.5 text-xs font-semibold text-purple-700 border-purple-200 hover:bg-purple-50"
                         >
                           <Copy className="h-3.5 w-3.5" />
                           Antigravity Promptunu Kopyala
@@ -1201,7 +1565,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                 </div>
               ) : (
                 <Card className="border-2 border-dashed border-slate-200 bg-slate-50/50 text-slate-500 min-h-[300px] flex flex-col items-center justify-center p-8 text-center">
-                  <div className="bg-white p-3 rounded-full shadow-sm mb-2 text-indigo-600">
+                  <div className="bg-white p-3 rounded-full shadow-sm mb-2 text-purple-600">
                     <ListTodo className="h-6 w-6" />
                   </div>
                   <h4 className="font-bold text-slate-800 text-sm">Hazırda aktiv sifariş yoxdur</h4>
@@ -1227,7 +1591,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                   Canlı Generasiya Parametrləri
                 </CardTitle>
                 <CardDescription className="text-xs">
-                  Tək mövzu üzrə dərhal sual yaradıb ekranda yoxlayın
+                  Tək mövzu üzrə Antigravity Sİ ilə sual yaradıb ekranda yoxlayın
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 pt-4 text-xs">
@@ -1327,27 +1691,33 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                   </div>
                 </div>
 
-                {/* Göndəriləcək Hədəf Hesab */}
-                <div className="p-2.5 bg-slate-50 border rounded-lg text-[11px] text-slate-600">
-                  <span>Hədəf GitHub: </span>
-                  <strong className="text-slate-900">@{activeAccount.username}</strong> ({activeAccount.owner}/{activeAccount.repo})
+                {/* Aktiv Agent və Hədəf Repo Məlumatı */}
+                <div className="p-2.5 bg-slate-50 border rounded-lg text-[11px] text-slate-600 space-y-1">
+                  <div>
+                    <span>İcraçı Agent: </span>
+                    <strong className="text-purple-900">{activeAgAccount.label}</strong> ({activeAgAccount.model.replace("-latest", "")})
+                  </div>
+                  <div>
+                    <span>Hədəf GitHub: </span>
+                    <strong className="text-slate-900">@{activeGhAccount.username}</strong> ({activeGhAccount.owner}/{activeGhAccount.repo})
+                  </div>
                 </div>
               </CardContent>
               <CardFooter className="pt-1">
                 <Button
                   onClick={handleGenerate}
                   disabled={isGenerating || !selectedTextbook || !effectiveTopic}
-                  className="w-full gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-5"
+                  className="w-full gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold py-5"
                 >
                   {isGenerating ? (
                     <>
                       <RefreshCw className="h-4 w-4 animate-spin" />
-                      RAG Sualları Hazırlanır...
+                      Antigravity ilə Hazırlanır...
                     </>
                   ) : (
                     <>
                       <Sparkles className="h-4 w-4" />
-                      Süni İntellektlə Yarat
+                      Antigravity ilə Yarat
                     </>
                   )}
                 </Button>
@@ -1391,7 +1761,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                         {selectedTextbook} — {effectiveTopic}
                       </h3>
                       <p className="text-xs text-muted-foreground mt-0.5">
-                        {questions.length} ədəd sual hazırlandı. Redaktə edib birbaşa <strong>{activeAccount.owner}/{activeAccount.repo}</strong>-a göndərin.
+                        {questions.length} ədəd sual hazırlandı. Redaktə edib birbaşa <strong>{activeGhAccount.owner}/{activeGhAccount.repo}</strong>-a göndərin.
                       </p>
                     </div>
                     <Button
@@ -1407,7 +1777,7 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                       ) : (
                         <>
                           <UploadCloud className="h-4 w-4" />
-                          🚀 GitHub-a Göndər (@{activeAccount.username})
+                          🚀 GitHub-a Göndər (@{activeGhAccount.username})
                         </>
                       )}
                     </Button>
@@ -1498,18 +1868,18 @@ Qeyd: ${order.notes || "Dərslik kurrikulum standartına 100% uyğun orijinal su
                       className="bg-green-600 hover:bg-green-700 text-white font-bold gap-2 px-6 py-5 shadow-md"
                     >
                       {isPushing ? <RefreshCw className="h-4 w-4 animate-spin" /> : <UploadCloud className="h-4 w-4" />}
-                      🚀 Təsdiqlə və GitHub-a Göndər (@{activeAccount.username})
+                      🚀 Təsdiqlə və GitHub-a Göndər (@{activeGhAccount.username})
                     </Button>
                   </div>
                 </div>
               ) : (
                 <Card className="border-2 border-dashed border-slate-200 bg-slate-50/50 text-slate-500 min-h-[400px] flex flex-col items-center justify-center p-8 text-center">
-                  <div className="bg-white p-3.5 rounded-full shadow-sm mb-3 text-indigo-600">
-                    <Wand2 className="h-7 w-7" />
+                  <div className="bg-white p-3.5 rounded-full shadow-sm mb-3 text-purple-600">
+                    <Bot className="h-7 w-7" />
                   </div>
                   <h3 className="text-base font-bold text-slate-800">Hələ heç bir test generasiya olunmayıb</h3>
                   <p className="text-xs text-slate-500 max-w-sm mt-1">
-                    Sol paneldən <strong>Dərslik</strong> və <strong>Mövzu</strong>nu seçib <strong>"Süni İntellektlə Yarat"</strong> düyməsinə basın.
+                    Sol paneldən <strong>Dərslik</strong> və <strong>Mövzu</strong>nu seçib <strong>"Antigravity ilə Yarat"</strong> düyməsinə basın.
                   </p>
                 </Card>
               )}
