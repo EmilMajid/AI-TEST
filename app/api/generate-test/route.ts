@@ -557,9 +557,30 @@ function loadFromOfflineTests(
     const candidateQuestions = specificTopicQuestions
     if (candidateQuestions.length === 0) return []
 
+    // Quality Gate: Reject any questions with legacy boilerplate template patterns
+    const FORBIDDEN_TEMPLATE_PHRASES = [
+      "mövzuya uyğun praktiki",
+      "üzrə əsas anlayış hansıdır",
+      "əsas qaydası və xassələri",
+      "mövzunun təyinatını və düzgün istifadəsini",
+      "bu anlayış kompüter savadlılığının təməlidir",
+      "kompüteri sındırmağı",
+      "dərsi buraxmağı",
+    ]
+
+    const qualityCheckedQuestions = candidateQuestions.filter((q: any) => {
+      const fullText = ((q.question || "") + " " + (Array.isArray(q.options) ? q.options.join(" ") : Object.values(q.options || {}).join(" "))).toLowerCase()
+      return !FORBIDDEN_TEMPLATE_PHRASES.some(phrase => fullText.includes(phrase))
+    })
+
+    if (qualityCheckedQuestions.length === 0) {
+      console.log(`[offline] All candidates rejected by quality gate for topic "${topic}"`)
+      return []
+    }
+
     // Deduplicate within the candidate pool only
     const uniquePoolMap = new Map<string, any>()
-    for (const q of candidateQuestions) {
+    for (const q of qualityCheckedQuestions) {
       const qKey = getOfflineQKey(q)
       if (qKey && !uniquePoolMap.has(qKey)) {
         uniquePoolMap.set(qKey, q)

@@ -1,0 +1,463 @@
+[
+  {
+    "passport_id": "02-INF-04-01",
+    "question": "Atası qızından 'zəhmət olmasa, sarı rəngli, zolaqlı köynəyimi gətir' istədikdə, hansı sözlər köynəyi seçməyə kömək etdi?",
+    "options": [
+      "'Zəhmət olmasa' sözü",
+      "'Sarı rəngli və zolaqlı' əlamətləri",
+      "'Gətir' hərəkəti",
+      "'Qızım' müraciəti"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Anlama",
+    "explanation": "Dərslikdəki dialoqda 'sarı rəngli, zolaqlı' əlamətləri köynəyi digərlərindən fərqləndirən əsas əlamətlərdir.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Nəzakət sözüdür.",
+      "B": "Düzgündür: Rəng və naxış fərqləndirici əlamətdir.",
+      "C": "Yanlışdır: Hərəkət bildirir.",
+      "D": "Yanlışdır: Xitabdır."
+    },
+    "solution_steps": [
+      "1. Dərslikdə verilmiş ata və qızın dialoqu təhlil edilir.",
+      "2. Fərqləndirici əlamətlər müəyyən edilir.",
+      "3. Sarı və zolaqlı olması təsdiqlənir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-02",
+    "question": "Eyni qrupda olan çoxlu obyektlər arasından lazım olan konkret obyekti tapmaq üçün nəyi bilməliyik?",
+    "options": [
+      "Yalnız qrupun adını",
+      "Obyektin fərqləndirici əlamətlərini",
+      "Obyektin ağırlığını",
+      "Obyektin qiymətini"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Bilmə",
+    "explanation": "Qrup daxilindəki bir əşyanı digərlərindən ayırmaq üçün onun fərqləndirici əlamətini bilmək zəruridir.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Qrup adı ümumidir.",
+      "B": "Düzgündür: Fərqləndirici əlamət konkret əşyanı tapmağa imkan verir.",
+      "C": "Yanlışdır: Tək ağırlıq yetərli deyil.",
+      "D": "Yanlışdır: Əlaqəsizdir."
+    },
+    "solution_steps": [
+      "1. Qruplaşdırma və fərqləndirmə qaydası xatırlanır.",
+      "2. Düzgün cavab seçilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-03",
+    "question": "Dənizdə bir neçə qayıq var. 'İkiyelkənli, göy qayıq' ifadəsində nə bildirilir?",
+    "options": [
+      "Qayığın fərqləndirici əlamətləri",
+      "Dənizin suyu",
+      "Qayığın sürəti",
+      "Küləyin istiqaməti"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Anlama",
+    "explanation": "İki yelkəninin olması və göy rəngdə olması qayığı digər qayıqlardan fərqləndirən əlamətlərdir.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: İkiyelkənli və göy olması fərqləndirici əlamətdir.",
+      "B": "Yanlışdır: Əlaqəsizdir.",
+      "C": "Yanlışdır: Göstərilməyib.",
+      "D": "Yanlışdır: Təbiət hadisəsidir."
+    },
+    "solution_steps": [
+      "1. İfadə təhlil edilir.",
+      "2. Fərqləndirici əlamət olduğu təsdiqlənir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-04",
+    "question": "Sıradakı artıq (fərqli) sözü tapın: 'İyun, Dekabr, İyul, Avqust'. Nə üçün Dekabr fərqlənir?",
+    "options": [
+      "Çünki Dekabr qış ayıdır, digərləri isə yay aylarıdır",
+      "Çünki Dekabrda dərslər başlayır",
+      "Çünki Dekabr həftənin günüdür",
+      "Çünki Dekabr ən qısa aydır"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Dərslikdəki tapşırıqda İyun, İyul və Avqust yay fəslinə aiddir, Dekabr isə qış fəslinin ayıdır.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Fəsillərə görə fərqlənir.",
+      "B": "Yanlışdır: Dekabrda dərslər başlamır.",
+      "C": "Yanlışdır: Dekabr aydır.",
+      "D": "Yanlışdır: Ən qısa ay fevraldır."
+    },
+    "solution_steps": [
+      "1. Aylar fəsillərə görə qruplaşdırılır.",
+      "2. Fərqli ay müəyyən edilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-05",
+    "question": "Sırada fərqli olanı tapın: 'Ağdam, Araz, Naxçıvan, Quba, Şəki'. Araz nə üçün fərqlənir?",
+    "options": [
+      "Araz dənizdir",
+      "Araz çaydır, digərləri isə şəhər və rayon adlarıdır",
+      "Araz meşədir",
+      "Araz ən uca dağdır"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Ağdam, Naxçıvan, Quba və Şəki yaşayış məntəqələridir, Araz isə çaydır.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Araz dəniz deyil.",
+      "B": "Düzgündür: Çay digər şəhərlərdən fərqlənir.",
+      "C": "Yanlışdır: Çaydır.",
+      "D": "Yanlışdır: Dağ deyil."
+    },
+    "solution_steps": [
+      "1. Coğrafi obyektlər müqayisə edilir.",
+      "2. Araz çay kimi fərqləndirilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-06",
+    "question": "Sırada fərqli olanı tapın: 'Qartal, Kəpənək, Təyyarə, Dəvəquşu'. Nə üçün Dəvəquşu fərqlənir?",
+    "options": [
+      "Dəvəquşunun ayaqları yoxdur",
+      "Qartal, kəpənək və təyyarə uça bilir, dəvəquşu isə uça bilmir",
+      "Dəvəquşu cansız obyektdir",
+      "Dəvəquşu suda üzür"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "çətin",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Qartal, kəpənək və təyyarənin hərəkət əlaməti uçmaqdır, dəvəquşu isə quş olmasına baxmayaraq uça bilmir.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Dəvəquşunun güclü ayaqları var.",
+      "B": "Düzgündür: Uça bilməməsi fərqləndirici əlamətdir.",
+      "C": "Yanlışdır: Canlıdır.",
+      "D": "Yanlışdır: Quruda qaçır."
+    },
+    "solution_steps": [
+      "1. Canlıların və maşınların hərəkət tərzi təhlil olunur.",
+      "2. Uça bilməyən dəvəquşu seçilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-07",
+    "question": "'Ağacda bitir, bənövşəyi rəngdədir, şirindir'. Bu əlamətlərə görə hansı meyvəni tapmaq olar?",
+    "options": [
+      "Gavalı",
+      "Banan",
+      "Limon",
+      "Qarpız"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Tətbiq",
+    "explanation": "Dərslik səhifə 13-dəki tapşırığa əsasən, ağacda bitən, bənövşəyi rəngdə olan meyvə gavalıdır.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Gavalı bənövşəyi və şirindir.",
+      "B": "Yanlışdır: Banan sarıdır.",
+      "C": "Yanlışdır: Limon sarı və turşdur.",
+      "D": "Yanlışdır: Qarpız tağda bitir."
+    },
+    "solution_steps": [
+      "1. Əlamətlər (rəng, forma, dad) tutuşdurulur.",
+      "2. Gavalı müəyyən edilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-08",
+    "question": "Eyni modelli iki velosipedi bir-birindən hansı əlamətinə görə asanlıqla fərqləndirmək olar?",
+    "options": [
+      "Təkərlərinin sayına görə",
+      "Rənginə və ya zənginə görə",
+      "Pedallarının olmasına görə",
+      "Zəncirinin olmasına görə"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Anlama",
+    "explanation": "Təkər və pedal oxşar əlamətdir, rəng fərqi isə onları bir-birindən ayırmağa imkan verir.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Hər ikisində 2 təkər var.",
+      "B": "Düzgündür: Rəng fərqləndirici əlamətdir.",
+      "C": "Yanlışdır: Hər ikisində var.",
+      "D": "Yanlışdır: Ortaqdır."
+    },
+    "solution_steps": [
+      "1. Oxşar və fərqli əlamətlər ayrılır.",
+      "2. Rəng seçilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-09",
+    "question": "Sinifdə iki dostun ikisinin də adı Əlidir. Müəllim onları çağırmaq üçün nə etməlidir?",
+    "options": [
+      "Onların soyadını və ya fərqləndirici xüsusiyyətini söyləməlidir",
+      "Onlara cavab verməməlidir",
+      "Onların adını dəyişməlidir",
+      "Yalnız birini dindirilməlidir"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Tətbiq",
+    "explanation": "Eyni adlı obyektləri fərqləndirici əlamətlərlə (soyadı, parta yeri) çağırmaq lazımdır.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Soyad fərqləndiricidir.",
+      "B": "Yanlışdır: Yanlış davranışdır.",
+      "C": "Yanlışdır: Mümkün deyil.",
+      "D": "Yanlışdır: Ədalətsizdir."
+    },
+    "solution_steps": [
+      "1. Həyati vəziyyət təhlil edilir.",
+      "2. Fərqləndirici əlamət tətbiq olunur."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-10",
+    "question": "Aşağıdakılardan hansı limon ilə portağalın fərqləndirici əlamətidir?",
+    "options": [
+      "Hər ikisinin meyvə olması",
+      "Limonun turş, portağalın şirin olması (dad əlaməti)",
+      "Hər ikisinin qabığının olması",
+      "Hər ikisinin şirəli olması"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Limon ilə portağalın dadı (turş və şirin) onların əsas fərqləndirici əlamətidir.",
+    "distractor_diagnostics": {
+      "A": "Yanlışdır: Bu oxşar cəhətdir.",
+      "B": "Düzgündür: Dad fərqləndiricidir.",
+      "C": "Yanlışdır: Ortaq cəhətdir.",
+      "D": "Yanlışdır: Ortaq cəhətdir."
+    },
+    "solution_steps": [
+      "1. Meyvələrin əlamətləri müqayisə edilir.",
+      "2. Dad fərqi seçilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-11",
+    "question": "Dovşan və tülkünün oxşar və fərqləndirici əlaməti hansı bənddə düzgün verilmişdir?",
+    "options": [
+      "Oxşar: hər ikisi meşə heyvanıdır; Fərq: dovşan otyeyəndir, tülkü isə yırtıcıdır",
+      "Oxşar: hər ikisi uça bilir; Fərq: dovşan dənizdə yaşayır",
+      "Oxşar: heç bir oxşarlıq yoxdur",
+      "Oxşar: hər ikisi quşdur"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Hər ikisinin dördayaqlı meşə heyvanı olması oxşardır, qidalanma tərzi isə fərqləndiricidir.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Doğru müqayisədir.",
+      "B": "Yanlışdır: Uça bilmirlər.",
+      "C": "Yanlışdır: Oxşarlıq var.",
+      "D": "Yanlışdır: Məməlidirlər."
+    },
+    "solution_steps": [
+      "1. Canlıların biologiyası və informatikadakı əlamətləri uyğunlaşdırılır."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-12",
+    "question": "Futbol topu və basketbol topunu bir-birindən necə fərqləndirmək olar?",
+    "options": [
+      "Ölçüsü, rəngi və üzərindəki naxışlarına görə",
+      "Hər ikisinin yumru olmasına görə",
+      "Hər ikisi ilə oynanılmasına görə",
+      "Heç bir fərqləri yoxdur"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Anlama",
+    "explanation": "Yumru olmaları oxşardır, rəng və naxışları isə fərqləndiricidir.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Rəng və naxış fərqlidir.",
+      "B": "Yanlışdır: Yumru olmaq oxşarlıqdır.",
+      "C": "Yanlışdır: Təyinat oxşardır.",
+      "D": "Yanlışdır: Fərq var."
+    },
+    "solution_steps": [
+      "1. Əşyaların xarici əlamətləri təhlil edilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-13",
+    "question": "Kitab şkafında çoxlu kitab var. Ananıza 'qırmızı cildli, nağıl kitabını' gətirmək nə üçün asandır?",
+    "options": [
+      "Çünki həm rəngi, həm də növü dəqiq fərqləndirici əlamət kimi göstərilib",
+      "Çünki şkafda ancaq bir kitab var",
+      "Çünki kitablar danışa bilir",
+      "Çünki şkaf boşdur"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Anlama",
+    "explanation": "Dəqiq fərqləndirici əlamət verildikdə axtarılan obyekti tapmaq çox asan olur.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Dəqiq əlamət axtarışı asanlaşdırır.",
+      "B": "Yanlışdır: Şkafda çox kitab var.",
+      "C": "Yanlışdır: Cansızdır.",
+      "D": "Yanlışdır: Şkaf doludur."
+    },
+    "solution_steps": [
+      "1. Axtarış prosesində əlamətlərin rolu izah edilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-14",
+    "question": "Qarğa ilə qaranquşun fərqləndirici əlaməti hansıdır?",
+    "options": [
+      "Qarğa böyük və qara rəngdədir, qaranquş isə kiçikdir və quyruğu haçalıdır",
+      "Hər ikisinin qanadının olması",
+      "Hər ikisinin yumurtlaması",
+      "Hər ikisinin quş olması"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "orta",
+    "bloom_taxonomy": "Təhlil",
+    "explanation": "Bədən ölçüsü və quyruq forması qarğa ilə qaranquşun fərqləndirici əlamətidir.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Ölçü və quyruq fərqlidir.",
+      "B": "Yanlışdır: Oxşardır.",
+      "C": "Yanlışdır: Oxşardır.",
+      "D": "Yanlışdır: Ümumi qrupdur."
+    },
+    "solution_steps": [
+      "1. Quşların zahiri əlamətləri tutuşdurulur."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  },
+  {
+    "passport_id": "02-INF-04-15",
+    "question": "Obyektin fərqləndirici əlamətlərini bilməyin insana ən böyük faydası nədir?",
+    "options": [
+      "Ətraf aləmdəki əşyaları dəqiq tanımağa və bir-birindən səhvsiz ayırmağa kömək edir",
+      "Kitabları cırmağa səbəb olur",
+      "Bütün əşyaları eyni görməyə kömək edir",
+      "Vaxtı itirməyə səbəb olur"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "sadə",
+    "bloom_taxonomy": "Qiymətləndirmə",
+    "explanation": "Fərqləndirici əlamətlər dünyadakı milyonlarla obyekti dəqiq anlamaq və seçmək üçün təməl məntiqi vasitədir.",
+    "distractor_diagnostics": {
+      "A": "Düzgündür: Təməl idraki faydadır.",
+      "B": "Yanlışdır: Zərərlidir.",
+      "C": "Yanlışdır: Fərqləri görməyi öyrədir.",
+      "D": "Yanlışdır: Vaxta qənaət edir."
+    },
+    "solution_steps": [
+      "1. Mövzunun yekun məntiqi əhəmiyyəti qiymətləndirilir."
+    ],
+    "sourceContext": {
+      "subject": "İnformatika 2",
+      "grade": 2,
+      "textbook_id": "informatika-2",
+      "topic": "4. Fərqləndirici əlamətlər",
+      "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Kurikulumu"
+    }
+  }
+]
