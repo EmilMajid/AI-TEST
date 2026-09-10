@@ -21,10 +21,14 @@ import {
   ChevronUp,
   Zap,
   Eye,
+  Mail,
+  Send,
+  Loader2,
 } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
+import { Input } from "@/components/ui/input"
 
 interface Question {
   id: number
@@ -176,6 +180,16 @@ export default function ResultsPage() {
   const [showExplanations, setShowExplanations] = useState(false)
   const [expandedQuestions, setExpandedQuestions] = useState<Set<number>>(new Set())
 
+  // E-mail notification states
+  const [parentEmailInput, setParentEmailInput] = useState("")
+  const [isSendingEmail, setIsSendingEmail] = useState(false)
+  const [emailStatus, setEmailStatus] = useState<{
+    sent: boolean
+    message: string
+    error?: string
+    redirectedTo?: string
+  } | null>(null)
+
   useEffect(() => {
     const storedResults = localStorage.getItem("testResults")
     if (storedResults) {
@@ -186,7 +200,89 @@ export default function ResultsPage() {
       const user = getCurrentUser()
       router.push(getDashboardPath(user?.accountType))
     }
+
+    // Auto-detect linked parent email from storage or profile
+    try {
+      const user = getCurrentUser()
+      if ((user as any)?.parentEmail) {
+        setParentEmailInput((user as any).parentEmail)
+      } else {
+        const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
+        const myLink = allLinks.find(
+          (l: any) =>
+            String(l.studentId) === String(user?.id) ||
+            (user?.email && l.student?.email?.toLowerCase() === user.email.toLowerCase())
+        )
+        if (myLink?.parentEmail) {
+          setParentEmailInput(myLink.parentEmail)
+        }
+      }
+    } catch (e) {}
   }, [router])
+
+  const handleSendEmailToParent = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault()
+    const targetEmail = parentEmailInput.trim()
+    if (!targetEmail || !targetEmail.includes("@")) {
+      setEmailStatus({
+        sent: false,
+        message: "",
+        error: "Zəhmət olmasa düzgün e-mail ünvanı daxil edin",
+      })
+      return
+    }
+
+    if (!results) return
+
+    setIsSendingEmail(true)
+    setEmailStatus(null)
+
+    try {
+      const user = getCurrentUser()
+      const studentName = user ? `${user.firstName || ""} ${user.lastName || ""}`.trim() : "Şagird"
+      const correctCount = results.questions.filter((q) => results.answers[q.id] === q.correctAnswer).length
+
+      const res = await fetch("/api/notifications/send-result", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          parentEmail: targetEmail,
+          studentName: studentName || "Şagird",
+          studentClass: results.testData.class,
+          textbook: results.testData.textbook,
+          topic: results.testData.topic,
+          score: results.score,
+          correctCount,
+          totalQuestions: results.questions.length,
+          timeSpent: results.timeSpent,
+          completedAt: results.completedAt || new Date().toISOString(),
+        }),
+      })
+
+      const data = await res.json()
+      if (res.ok && data.success) {
+        setEmailStatus({
+          sent: true,
+          message: data.message || "İmtahan nəticələri valideynin poçtuna çatdırıldı! 🎉",
+          redirectedTo: data.redirectedTo,
+        })
+      } else {
+        setEmailStatus({
+          sent: false,
+          message: "",
+          error: data.error || "E-mail göndərilərkən xəta baş verdi",
+        })
+      }
+    } catch (err: any) {
+      setEmailStatus({
+        sent: false,
+        message: "",
+        error: err.message || "Şəbəkə xətası baş verdi",
+      })
+    } finally {
+      setIsSendingEmail(false)
+    }
+  }
 
   const analyzeResults = async (testResults: TestResults) => {
     setIsAnalyzing(true)
@@ -339,6 +435,72 @@ export default function ResultsPage() {
                 <div className="text-sm text-gray-600 mt-1">Qiymət</div>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Parent Email Notification Card */}
+        <Card className="mb-8 border-blue-200 bg-gradient-to-r from-blue-50/70 via-indigo-50/50 to-white shadow-sm overflow-hidden">
+          <CardContent className="p-6">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="bg-blue-600 text-white p-3 rounded-xl shadow-md flex items-center justify-center shrink-0">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                    Nəticəni Valideynin E-mailinə Göndər
+                    <Badge variant="outline" className="bg-blue-100 text-blue-800 text-[11px] font-normal border-blue-200">
+                      Rəsmi Hesabat
+                    </Badge>
+                  </h3>
+                  <p className="text-xs text-gray-600 mt-0.5">
+                    İmtahan balı, fənn, sərf olunan vaxt və ətraflı hesabat dərhal valideynin e-mail poçtuna çatdırılır.
+                  </p>
+                </div>
+              </div>
+
+              <form onSubmit={handleSendEmailToParent} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full md:w-auto shrink-0">
+                <Input
+                  type="email"
+                  placeholder="valideyn@gmail.com"
+                  value={parentEmailInput}
+                  onChange={(e) => setParentEmailInput(e.target.value)}
+                  className="bg-white border-gray-300 min-w-[240px] text-sm h-10"
+                  required
+                />
+                <Button
+                  type="submit"
+                  disabled={isSendingEmail}
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-10 px-5 gap-2 shrink-0"
+                >
+                  {isSendingEmail ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      Göndərilir...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="h-4 w-4" />
+                      E-mail Göndər
+                    </>
+                  )}
+                </Button>
+              </form>
+            </div>
+
+            {emailStatus?.sent && (
+              <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-green-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                <CheckCircle className="h-4 w-4 text-green-600 shrink-0" />
+                <span className="font-medium">{emailStatus.message}</span>
+              </div>
+            )}
+
+            {emailStatus?.error && (
+              <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-red-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                <XCircle className="h-4 w-4 text-red-600 shrink-0" />
+                <span className="font-medium">{emailStatus.error}</span>
+              </div>
+            )}
           </CardContent>
         </Card>
 

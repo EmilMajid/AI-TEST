@@ -129,6 +129,7 @@ export async function POST(request: NextRequest) {
       const allUsers = getAllUsers()
       const allLinks = loadLinksFromDisk()
 
+      // 1. Try resolving parent email from disk links
       if (!parentEmailToNotify) {
         const link = allLinks.find(
           (l) =>
@@ -144,7 +145,39 @@ export async function POST(request: NextRequest) {
         }
       }
 
-      // Also verify parent in Supabase and ensure ParentStudentLink
+      // 2. Try resolving parent email from Supabase ParentStudentLink
+      if (!parentEmailToNotify && studentDbId && supabaseAdmin) {
+        try {
+          const { data: dbLinks } = await supabaseAdmin
+            .from("ParentStudentLink")
+            .select("parentId")
+            .eq("studentId", studentDbId)
+            .eq("status", "active")
+            .limit(1)
+
+          if (dbLinks && dbLinks.length > 0 && dbLinks[0].parentId) {
+            const { data: pUser } = await supabaseAdmin
+              .from("User")
+              .select("email, firstName, lastName")
+              .eq("id", dbLinks[0].parentId)
+              .maybeSingle()
+
+            if (pUser?.email) {
+              parentEmailToNotify = pUser.email
+              if (pUser.firstName) parentName = `${pUser.firstName} ${pUser.lastName || ""}`.trim()
+            }
+          }
+        } catch (sbLinkErr) {
+          console.error("Supabase parent link resolution error:", sbLinkErr)
+        }
+      }
+
+      // 3. Fallback for demo/test environments to ensure tester receives the result
+      if (!parentEmailToNotify && process.env.TEST_EMAIL_RECIPIENT) {
+        parentEmailToNotify = process.env.TEST_EMAIL_RECIPIENT
+      }
+
+      // 4. Ensure ParentStudentLink in Supabase if parent is resolved
       if (parentEmailToNotify && studentDbId && supabaseAdmin) {
         try {
           const { data: parentDbUser } = await supabaseAdmin
@@ -184,6 +217,7 @@ export async function POST(request: NextRequest) {
         emailStatus = {
           sent: emailRes.success,
           parentEmail: parentEmailToNotify,
+          redirectedTo: (emailRes as any).redirectedTo || "",
           simulated: emailRes.simulated || false,
         }
       }

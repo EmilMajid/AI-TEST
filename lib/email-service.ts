@@ -9,10 +9,30 @@ export interface EmailSendResponse {
   success: boolean
   messageId?: string
   simulated?: boolean
+  redirectedTo?: string
   error?: string
 }
 
-function getTransporter() {
+export interface DirectEmailParams {
+  to: string
+  subject: string
+  html: string
+  from?: string
+}
+
+function isDemoEmail(email: string): boolean {
+  if (!email) return false
+  const clean = email.toLowerCase().trim()
+  return (
+    clean.endsWith("@testai.az") ||
+    clean.endsWith("@test.com") ||
+    clean.endsWith("@example.com") ||
+    clean.startsWith("student-") ||
+    clean.startsWith("parent-")
+  )
+}
+
+function getSmtpTransporter() {
   const host = process.env.SMTP_HOST
   const user = process.env.SMTP_USER
   const pass = process.env.SMTP_PASS
@@ -27,11 +47,110 @@ function getTransporter() {
     host,
     port,
     secure,
-    auth: {
-      user,
-      pass,
-    },
+    auth: { user, pass },
   })
+}
+
+/**
+ * Universal email dispatcher:
+ * 1. Tries Resend REST API (if RESEND_API_KEY is present)
+ * 2. Falls back to Nodemailer SMTP (if SMTP_* is configured)
+ * 3. Falls back to simulated log mode if neither is configured
+ */
+export async function sendDirectEmail(params: DirectEmailParams): Promise<EmailSendResponse> {
+  const { to, subject, html, from } = params
+  const resendApiKey = process.env.RESEND_API_KEY || ""
+  const primaryFrom = from || process.env.EMAIL_FROM || '"testai.az Təhsil Portalı" <info@testai.az>'
+  const fallbackFrom = '"testai.az Təhsil Portalı" <onboarding@resend.dev>'
+
+  // 1. Resend API Dispatch
+  if (resendApiKey) {
+    try {
+      // First attempt with primary domain (info@testai.az)
+      let res = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: primaryFrom,
+          to: [to],
+          subject,
+          html,
+        }),
+      })
+
+      let data = await res.json()
+
+      // If domain is pending verification, retry with verified onboarding sender
+      if (!res.ok && data?.statusCode === 403 && data?.message?.includes("not verified")) {
+        console.warn(`[EMAIL] testai.az domain pending verification. Using onboarding sender for test delivery to ${to}`)
+        res = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${resendApiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: fallbackFrom,
+            to: [to],
+            subject,
+            html,
+          }),
+        })
+        data = await res.json()
+      }
+
+      if (res.ok && data?.id) {
+        console.log(`[EMAIL SUCCESS - Resend] Sent to ${to}, ID: ${data.id}`)
+        return {
+          success: true,
+          messageId: data.id,
+          simulated: false,
+        }
+      } else {
+        console.error("[EMAIL ERROR - Resend API]:", data)
+      }
+    } catch (err: any) {
+      console.error("[EMAIL ERROR - Resend Fetch]:", err?.message || err)
+    }
+  }
+
+  // 2. Nodemailer SMTP Dispatch
+  const transporter = getSmtpTransporter()
+  if (transporter) {
+    try {
+      const info = await transporter.sendMail({
+        from: primaryFrom,
+        to,
+        subject,
+        html,
+      })
+      console.log(`[EMAIL SUCCESS - SMTP] Sent to ${to}, ID: ${info.messageId}`)
+      return {
+        success: true,
+        messageId: info.messageId,
+        simulated: false,
+      }
+    } catch (smtpErr: any) {
+      console.error("[EMAIL ERROR - SMTP]:", smtpErr?.message || smtpErr)
+      return {
+        success: false,
+        error: smtpErr?.message || "SMTP xətası baş verdi",
+      }
+    }
+  }
+
+  // 3. Fallback simulation mode
+  console.log(
+    `[EMAIL SIMULATION] Neither Resend nor SMTP active.\n  To: ${to}\n  Subject: ${subject}`
+  )
+  return {
+    success: true,
+    simulated: true,
+    messageId: `sim-${Date.now()}`,
+  }
 }
 
 export async function sendTestResultNotification(
@@ -46,44 +165,35 @@ export async function sendTestResultNotification(
     }
   }
 
-  const transporter = getTransporter()
-  const fromAddress = process.env.EMAIL_FROM || '"testai.az Təhsil Portalı" <info@testai.az>'
-  const subject = `📊 ${studentName} - ${textbook} imtahan nəticəsi: ${score}%`
-  const html = generateTestResultEmailHtml(params)
+  // Demo Trap / Test Redirection Logic:
+  // If the parent has a demo email or if TEST_EMAIL_RECIPIENT is set,
+  // route the physical email to the developer/tester's real inbox so they can verify it.
+  const testRecipient = process.env.TEST_EMAIL_RECIPIENT || "emilinpoctu@gmail.com"
+  const isDemo = isDemoEmail(parentEmail)
+  const effectiveRecipient = isDemo ? testRecipient : parentEmail
+  const isRedirected = isDemo && testRecipient.toLowerCase() !== parentEmail.toLowerCase()
 
-  if (!transporter) {
-    console.log(
-      `[EMAIL SIMULATION] SMTP not configured. Simulating email dispatch:` +
-        `\n  To: ${parentEmail}` +
-        `\n  Subject: ${subject}` +
-        `\n  Student: ${studentName}, Score: ${score}%`
-    )
-    return {
-      success: true,
-      simulated: true,
-      messageId: `sim-${Date.now()}`,
-    }
+  const subjectPrefix = isRedirected ? `[Demo Valideyn: ${parentEmail}] ` : ""
+  const subject = `${subjectPrefix}📊 ${studentName} - ${textbook} imtahan nəticəsi: ${score}%`
+
+  let html = generateTestResultEmailHtml(params)
+  if (isRedirected) {
+    const banner = `
+      <div style="background-color: #fef3c7; border: 1px solid #fde047; padding: 12px 16px; border-radius: 8px; margin-bottom: 20px; font-size: 13px; color: #854d0e;">
+        <strong>⚠️ Demo Sınaq Bildirişi:</strong> Bu məktub platformadakı <strong>${parentEmail}</strong> demo valideyn hesabı üçün ünvanlanmışdır və sistem tərəfindən birbaşa sizin real poçt qutunuza (<strong>${testRecipient}</strong>) çatdırılmışdır.
+      </div>
+    `
+    html = html.replace('<div style="padding: 28px 24px;">', `<div style="padding: 28px 24px;">${banner}`)
   }
 
-  try {
-    const info = await transporter.sendMail({
-      from: fromAddress,
-      to: parentEmail,
-      subject,
-      html,
-    })
+  const result = await sendDirectEmail({
+    to: effectiveRecipient,
+    subject,
+    html,
+  })
 
-    console.log(`[EMAIL SUCCESS] Sent test result email to ${parentEmail}, ID: ${info.messageId}`)
-    return {
-      success: true,
-      messageId: info.messageId,
-      simulated: false,
-    }
-  } catch (error: any) {
-    console.error("[EMAIL ERROR] Failed to send email via SMTP:", error)
-    return {
-      success: false,
-      error: error?.message || "E-mail göndərilərkən xəta baş verdi",
-    }
+  return {
+    ...result,
+    redirectedTo: isRedirected ? effectiveRecipient : undefined,
   }
 }
