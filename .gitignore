@@ -43,6 +43,11 @@ logs/
 data/*.jsonl
 data/*.bak*
 data/*.backup*
+data/offline_tests_backup*
+data/offline_tests_HEAD*
+data/offline_tests_github*
+data/poppler/
+orig_offline_tests.json
 *.bak*
 *.backup*
 scripts/extracted-topics.json

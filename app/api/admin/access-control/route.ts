@@ -3,8 +3,7 @@ import { NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
 
-const dataDir = path.join(process.cwd(), 'data')
-const accessControlPath = path.join(dataDir, 'access_control.json')
+const accessControlPath = path.join(process.cwd(), 'data', 'access_control.json')
 
 const defaultGlobalSettings = [
   // Parent Dashboard Tabs
@@ -107,7 +106,8 @@ function getDb() {
   g.__testai_access_control_db = db
 
   try {
-    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true })
+    const dir = path.dirname(accessControlPath)
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
     fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
   } catch (e) {}
 
@@ -146,7 +146,8 @@ export async function POST(req: Request) {
         g.__testai_access_control_db = db
 
         try {
-            if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true })
+            const dir = path.dirname(accessControlPath)
+            if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
             fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
         } catch (e) {}
 

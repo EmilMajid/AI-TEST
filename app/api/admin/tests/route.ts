@@ -3,9 +3,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const dataDir = path.join(process.cwd(), "data");
-const offlinePath = path.join(dataDir, "offline_tests.json");
-const textbooksPath = path.join(dataDir, "textbooks.json");
+const offlinePath = path.join(process.cwd(), "data", "offline_tests.json");
+const textbooksPath = path.join(process.cwd(), "data", "textbooks.json");
 
 function getSubjectKeys(title: string, keys: string[]): string[] {
   const t = title.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");
