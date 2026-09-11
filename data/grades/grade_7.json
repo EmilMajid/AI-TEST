@@ -2631,383 +2631,6 @@
         ]
       }
     ],
-    "7. Rasioanl ədədlərin yazılışı və oxunuşu": [
-      {
-        "id": "gen-7a5a1971",
-        "passport_id": "gen-7a5a1971",
-        "question": "$0,3$ onluq kəsri adi kəsr kimi necə yazılır?",
-        "options": [
-          "$\\frac{10}{3}$",
-          "$\\frac{3}{100}$",
-          "$\\frac{3}{10}$",
-          "$\\frac{1}{3}$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "$0,3$ onluq kəsri məxrəci 10, surəti 3 olan kəsr kimi yazılır: $\\frac{3}{10}$.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$\\frac{10}{3}$",
-          "$\\frac{3}{100}$",
-          "$\\frac{3}{10}$",
-          "$\\frac{1}{3}$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-d3f0ba5c",
-        "passport_id": "gen-d3f0ba5c",
-        "question": "$\\frac{1}{4}$ adi kəsri onluq kəsr şəklində necə yazılır?",
-        "options": [
-          "0,4",
-          "0,25",
-          "0,5",
-          "0,14"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Kəsrin surətini məxrəcinə bölməklə (1 : 4 = 0,25) və ya kəsrin məxrəc və surətini 25-ə vurmaqla ($\\frac{25}{100} = 0,25$) onluq kəsrə çevirmək olar.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "0,4",
-          "0,25",
-          "0,5",
-          "0,14"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-0d22d8eb",
-        "passport_id": "gen-0d22d8eb",
-        "question": "$-2\\frac{3}{5}$ qarışıq ədədi düzgün olmayan kəsr şəklində necə yazılır?",
-        "options": [
-          "$-\\frac{13}{5}$",
-          "$-\\frac{10}{5}$",
-          "$\\frac{13}{5}$",
-          "$-\\frac{11}{5}$"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Tam hissəni (2) məxrəcə (5) vurub üzərinə surəti (3) gəlirik: $2 \\cdot 5 + 3 = 13$. Mənfi işarəsi qarşıda saxlanılır: $-\\frac{13}{5}$.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$-\\frac{13}{5}$",
-          "$-\\frac{10}{5}$",
-          "$\\frac{13}{5}$",
-          "$-\\frac{11}{5}$"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-58a938d9",
-        "passport_id": "gen-58a938d9",
-        "question": "“Mənfi sıfır tam onda yeddi” ədədi rəqəmlə necə yazılır?",
-        "options": [
-          "-7,0",
-          "-0,07",
-          "0,7",
-          "-0,7"
-        ],
-        "correctAnswer": 3,
-        "explanation": "Sıfır tam, vergüldən sonra onda birlər mərtəbəsində 7 rəqəmi yazılır və qarşısında mənfi işarəsi qoyulur: -0,7.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "-7,0",
-          "-0,07",
-          "0,7",
-          "-0,7"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-b1e2cc0e",
-        "passport_id": "gen-b1e2cc0e",
-        "question": "$0,(3)$ dövri onluq kəsri adi kəsrə necə çevrilir?",
-        "options": [
-          "$\\frac{3}{10}$",
-          "$\\frac{1}{3}$",
-          "$\\frac{3}{100}$",
-          "$\\frac{1}{9}$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "Saf dövri onluq kəsri adi kəsrə çevirərkən məxrəcdə dövrdəki rəqəmlərin sayı qədər 9 yazılır: $0,(3) = \\frac{3}{9} = \\frac{1}{3}$.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$\\frac{3}{10}$",
-          "$\\frac{1}{3}$",
-          "$\\frac{3}{100}$",
-          "$\\frac{1}{9}$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-0e228226",
-        "passport_id": "gen-0e228226",
-        "question": "$-\\frac{5}{9}$ ədədi dövri onluq kəsr şəklində necə yazılır?",
-        "options": [
-          "-0,",
-          "-0,5",
-          "-0,",
-          "-0,05"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Məxrəcdə 9 olduğu üçün bu kəsr saf dövri onluq kəsrdir və surətdəki rəqəm dövr edir: -0,(5).",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "-0,",
-          "-0,5",
-          "-0,",
-          "-0,05"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-652b6566",
-        "passport_id": "gen-652b6566",
-        "question": "$2,1(6)$ qarışıq dövri onluq kəsri adi kəsrə çevirin.",
-        "options": [
-          "$\\frac{13}{6}$",
-          "$\\frac{13}{9}$",
-          "$2\\frac{1}{6}$",
-          "$2\\frac{16}{99}$"
-        ],
-        "correctAnswer": 2,
-        "explanation": "$2,1(6) = 2\\frac{16-1}{90} = 2\\frac{15}{90} = 2\\frac{1}{6} = \\frac{13}{6}$.",
-        "difficulty": "çətin",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$\\frac{13}{6}$",
-          "$\\frac{13}{9}$",
-          "$2\\frac{1}{6}$",
-          "$2\\frac{16}{99}$"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-0bd92587",
-        "passport_id": "gen-0bd92587",
-        "question": "$\\frac{7}{20}$ adi kəsri onluq kəsrə necə çevrilir?",
-        "options": [
-          "0,07",
-          "0,7",
-          "0,14",
-          "0,35"
-        ],
-        "correctAnswer": 3,
-        "explanation": "Kəsrin surət və məxrəcini 5-ə vursaq, $\\frac{35}{100}$ alınar, bu da 0,35 kimi yazılır.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "0,07",
-          "0,7",
-          "0,14",
-          "0,35"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-6e0f5c08",
-        "passport_id": "gen-6e0f5c08",
-        "question": "-1,45 ədədi ixtisar olunmuş qarışıq ədəd kimi necə yazılır?",
-        "options": [
-          "$-1\\frac{45}{10}$",
-          "$-1\\frac{9}{10}$",
-          "$-1\\frac{4}{5}$",
-          "$-1\\frac{9}{20}$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "$-1,45 = -1\\frac{45}{100}$. Kəsri 5-ə ixtisar etsək, $-1\\frac{9}{20}$ alınır.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$-1\\frac{45}{10}$",
-          "$-1\\frac{9}{10}$",
-          "$-1\\frac{4}{5}$",
-          "$-1\\frac{9}{20}$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-5aba8166",
-        "passport_id": "gen-5aba8166",
-        "question": "$0,2(4)$ dövri kəsrinin oxunuşu hansıdır?",
-        "options": [
-          "Sıfır tam onda iki, dövrdə dörd",
-          "Sıfır tam yüzdə iyirmi dörd",
-          "Sıfır tam mində iki yüz qırx",
-          "Sıfır tam dövrdə iyirmi dörd"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Bu qarışıq dövri onluq kəsrdir. Vergüldən sonra əvvəlcə qeyri-dövri hissə (\"onda iki\"), sonra isə dövri hissə (\"dövrə dörd\") oxunur.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "Sıfır tam onda iki, dövrdə dörd",
-          "Sıfır tam yüzdə iyirmi dörd",
-          "Sıfır tam mində iki yüz qırx",
-          "Sıfır tam dövrdə iyirmi dörd"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-6d00abca",
-        "passport_id": "gen-6d00abca",
-        "question": "$\\frac{3}{8}$ kəsrini onluq kəsr şəklində göstərin.",
-        "options": [
-          "0,125",
-          "0,38",
-          "0,375",
-          "0,25"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Məxrəci 1000-ə tamamlamaq üçün surət və məxrəci 125-ə vururuq: $\\frac{375}{1000} = 0,375$. Yaxud 3-ü 8-ə bölürük.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "0,125",
-          "0,38",
-          "0,375",
-          "0,25"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-631cd01c",
-        "passport_id": "gen-631cd01c",
-        "question": "“İki tam dövrdə beş” ədədi rəqəmlə necə yazılır?",
-        "options": [
-          "2,",
-          "2,05",
-          "2,5",
-          "2,"
-        ],
-        "correctAnswer": 3,
-        "explanation": "Tam hissə 2, dövrdə təkrarlanan rəqəm isə 5-dir: 2,(5).",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "2,",
-          "2,05",
-          "2,5",
-          "2,"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-ec2ff41d",
-        "passport_id": "gen-ec2ff41d",
-        "question": "$0,(45)$ kəsri ixtisar olunan adi kəsr kimi necə yazılır?",
-        "options": [
-          "$\\frac{5}{11}$",
-          "$\\frac{9}{20}$",
-          "$\\frac{45}{100}$",
-          "$\\frac{4}{5}$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "$0,(45) = \\frac{45}{99}$. Sürət və məxrəci 9-a ixtisar etdikdə $\\frac{5}{11}$ alınır.",
-        "difficulty": "çətin",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$\\frac{5}{11}$",
-          "$\\frac{9}{20}$",
-          "$\\frac{45}{100}$",
-          "$\\frac{4}{5}$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-d01cd45e",
-        "passport_id": "gen-d01cd45e",
-        "question": "-0,008 onluq kəsri ixtisar olunmayan adi kəsr şəklində necə yazılır?",
-        "options": [
-          "$-\\frac{1}{100}$",
-          "$-\\frac{8}{100}$",
-          "$-\\frac{1}{125}$",
-          "$-\\frac{2}{25}$"
-        ],
-        "correctAnswer": 1,
-        "explanation": "$-0,008 = -\\frac{8}{1000}$. Sürət və məxrəci 8-ə böldükdə $-\\frac{1}{125}$ alınır.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$-\\frac{1}{100}$",
-          "$-\\frac{8}{100}$",
-          "$-\\frac{1}{125}$",
-          "$-\\frac{2}{25}$"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-ef7be3e4",
-        "passport_id": "gen-ef7be3e4",
-        "question": "$1,25$ ədədinin tərsi olan kəsri tapın.",
-        "options": [
-          "$\\frac{4}{5}$",
-          "$\\frac{1}{25}$",
-          "$\\frac{25}{100}$",
-          "$\\frac{5}{4}$"
-        ],
-        "correctAnswer": 2,
-        "explanation": "$1,25 = 1\\frac{1}{4} = \\frac{5}{4}$. Tərsi $\\frac{4}{5}$-ə bərabərdir.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "7. Rasioanl ədədlərin yazılışı və oxunuşu",
-        "opts": [
-          "$\\frac{4}{5}$",
-          "$\\frac{1}{25}$",
-          "$\\frac{25}{100}$",
-          "$\\frac{5}{4}$"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      }
-    ],
     "8. Dövri onluq kəsrlər": [
       {
         "id": "gen-82207d8b",
@@ -17362,383 +16985,6 @@
         "answer": "C"
       }
     ],
-    "47. İkidayişənli xətti tənliklər sistemi": [
-      {
-        "id": "gen-8f302088",
-        "passport_id": "gen-8f302088",
-        "question": "İkidəyişənli xətti tənliyin ümumi şəkli hansıdır?",
-        "options": [
-          "$ax + by = c$",
-          "$y = kx + b$",
-          "$ax + b = 0$",
-          "$ax^2 + bx + c = 0$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "İkidəyişənli xətti tənliyin ümumi şəkli $ax + by = c$ kimidir, burada $a$, $b$ və $c$ verilmiş ədədlər, $x$ və $y$ isə dəyişənlərdir.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "$ax + by = c$",
-          "$y = kx + b$",
-          "$ax + b = 0$",
-          "$ax^2 + bx + c = 0$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-9434f75c",
-        "passport_id": "gen-9434f75c",
-        "question": "Hansı ədədlər cütü $\\begin{cases} x + y = 5 \\\\ x - y = 1 \\end{cases}$ sisteminin həllidir?",
-        "options": [
-          "(4; 1)",
-          "(3; 2)",
-          "(1; 4)",
-          "(2; 3)"
-        ],
-        "correctAnswer": 1,
-        "explanation": "$x=3$ və $y=2$ qiymətlərini yerinə yazdıqda: $3 + 2 = 5$ və $3 - 2 = 1$ doğru bərabərlikləri alınır. Deməli, (3; 2) cütü sistemin həllidir.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "(4; 1)",
-          "(3; 2)",
-          "(1; 4)",
-          "(2; 3)"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-9ecdd4a0",
-        "passport_id": "gen-9ecdd4a0",
-        "question": "$\\begin{cases} 2x + y = 7 \\\\ 3x - y = 8 \\end{cases}$ tənliklər sistemindən $x$-i tapın.",
-        "options": [
-          "1",
-          "3",
-          "2",
-          "4"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Tənlikləri tərəf-tərəfə toplasaq: $(2x + y) + (3x - y) = 7 + 8 \\Rightarrow 5x = 15 \\Rightarrow x = 3$.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "1",
-          "3",
-          "2",
-          "4"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-c6c9269c",
-        "passport_id": "gen-c6c9269c",
-        "question": "$\\begin{cases} x = 2y \\\\ x + 3y = 15 \\end{cases}$ sistemindən $y$-i tapın.",
-        "options": [
-          "2",
-          "4",
-          "3",
-          "5"
-        ],
-        "correctAnswer": 3,
-        "explanation": "Birinci tənlikdəki $x = 2y$ ifadəsini ikinci tənlikdə yerinə yazsaq: $2y + 3y = 15 \\Rightarrow 5y = 15 \\Rightarrow y = 3$.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "2",
-          "4",
-          "3",
-          "5"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-c74d081c",
-        "passport_id": "gen-c74d081c",
-        "question": "$\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ tənliklər sisteminin yeganə həlli olması üçün hansı şərt ödənməlidir?",
-        "options": [
-          "$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
-          "$a_1 = a_2, b_1 = b_2$",
-          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$",
-          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$"
-        ],
-        "correctAnswer": 0,
-        "explanation": "İki xətti tənliyin qrafiki olan düz xətlərin bir nöqtədə kəsişməsi (yəni sistemin yeganə həllinin olması) üçün $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$ şərti ödənməlidir.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
-          "$a_1 = a_2, b_1 = b_2$",
-          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$",
-          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-ff65e328",
-        "passport_id": "gen-ff65e328",
-        "question": "Hansı halda ikidəyişənli xətti tənliklər sisteminin sonsuz sayda həlli var?",
-        "options": [
-          "Tənliklərin qrafikləri üst-üstə düşdükdə",
-          "Tənliklərin qrafikləri paralel olduqda",
-          "Tənliklərin qrafikləri kəsişdikdə",
-          "Tənliklərin qrafikləri perpendikulyar olduqda"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Tənliklərin qrafikləri olan düz xətlər üst-üstə düşdükdə onların bütün nöqtələri ortaq olur, yəni sistemin sonsuz sayda həlli olur.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "Tənliklərin qrafikləri üst-üstə düşdükdə",
-          "Tənliklərin qrafikləri paralel olduqda",
-          "Tənliklərin qrafikləri kəsişdikdə",
-          "Tənliklərin qrafikləri perpendikulyar olduqda"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-d6889330",
-        "passport_id": "gen-d6889330",
-        "question": "$\\begin{cases} 2x + 3y = 6 \\\\ 4x + 6y = 10 \\end{cases}$ sisteminin neçə həlli var?",
-        "options": [
-          "Yeganə həlli var",
-          "Sonsuz sayda həlli var",
-          "İki həlli var",
-          "Həlli yoxdur"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Əmsalların nisbətini yoxlasaq: $\\frac{2}{4} = \\frac{3}{6} \\neq \\frac{6}{10}$ (yəni $\\frac{1}{2} = \\frac{1}{2} \\neq \\frac{3}{5}$) olduğundan, bu düz xətlər paraleldir və sistemin həlli yoxdur.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "Yeganə həlli var",
-          "Sonsuz sayda həlli var",
-          "İki həlli var",
-          "Həlli yoxdur"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-46b0c582",
-        "passport_id": "gen-46b0c582",
-        "question": "İki ədədin cəmi 20, fərqi isə 6-dır. Bu ədədlərin hasilini tapın.",
-        "options": [
-          "100",
-          "84",
-          "96",
-          "91"
-        ],
-        "correctAnswer": 3,
-        "explanation": "$\\begin{cases} x + y = 20 \\\\ x - y = 6 \\end{cases}$ sistemini həll etsək: tərəf-tərəfə topladıqda $2x = 26 \\Rightarrow x = 13$, buradan da $y = 7$ alınır. Onların hasili: $13 \\cdot 7 = 91$.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "100",
-          "84",
-          "96",
-          "91"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-b965b0e7",
-        "passport_id": "gen-b965b0e7",
-        "question": "$\\begin{cases} x - 2y = 4 \\\\ 3x + y = 19 \\end{cases}$ sisteminin həlli olan $(x; y)$ cütü üçün $x + y$ cəmini tapın.",
-        "options": [
-          "9",
-          "7",
-          "10",
-          "8"
-        ],
-        "correctAnswer": 0,
-        "explanation": "1-ci tənlikdən $x = 2y + 4$ əldə edirik. İkinci tənlikdə yazaq: $3(2y + 4) + y = 19 \\Rightarrow 6y + 12 + y = 19 \\Rightarrow 7y = 7 \\Rightarrow y = 1$. Onda $x = 2 \\cdot 1 + 4 = 6$. Cəm: $x + y = 6 + 1 = 7$.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "9",
-          "7",
-          "10",
-          "8"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-c19f377c",
-        "passport_id": "gen-c19f377c",
-        "question": "$(2; 1)$ cütü $\\begin{cases} ax + by = 5 \\\\ 2ax - by = 4 \\end{cases}$ sisteminin həlli olarsa, $a$-nı tapın.",
-        "options": [
-          "1",
-          "2",
-          "2.5",
-          "1.5"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Tərəf-tərəfə toplasaq: $3ax = 9 \\Rightarrow ax = 3$. $x = 2$ olduğunu bildiyimizdən, $2a = 3 \\Rightarrow a = 1.5$.",
-        "difficulty": "çətin",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "1",
-          "2",
-          "2.5",
-          "1.5"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-17dae3f6",
-        "passport_id": "gen-17dae3f6",
-        "question": "$\\begin{cases} 5x - 3y = 11 \\\\ 2x + 4y = -6 \\end{cases}$ sistemini əvəzetmə üsulu ilə həll edərkən aşağıdakı hansı addım doğru olar?",
-        "options": [
-          "Birinci tənlikdən $y = \\frac{5x + 11}{3}$ almaq",
-          "İkinci tənlikdən $y = -6 - 2x$ almaq",
-          "$x = \\frac{3y + 11}{5}$ əvəzləməsini ikinci tənlikdə yazmaq",
-          "$x = 3y + 11$ əvəzləməsini ikinci tənlikdə yazmaq"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Birinci tənlikdən $x$-i $y$ ilə ifadə etsək, $5x = 3y + 11 \\Rightarrow x = \\frac{3y + 11}{5}$ alınır ki, bu əvəzləməni ikinci tənliyə yazaraq dəyişəni yox etmək olar.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "Birinci tənlikdən $y = \\frac{5x + 11}{3}$ almaq",
-          "İkinci tənlikdən $y = -6 - 2x$ almaq",
-          "$x = \\frac{3y + 11}{5}$ əvəzləməsini ikinci tənlikdə yazmaq",
-          "$x = 3y + 11$ əvəzləməsini ikinci tənlikdə yazmaq"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      },
-      {
-        "id": "gen-6045d2da",
-        "passport_id": "gen-6045d2da",
-        "question": "$m$-in hansı qiymətində $\\begin{cases} 3x + my = 12 \\\\ 6x + 4y = 24 \\end{cases}$ sisteminin sonsuz sayda həlli var?",
-        "options": [
-          "2",
-          "1",
-          "3",
-          "4"
-        ],
-        "correctAnswer": 3,
-        "explanation": "Sonsuz sayda həll olması üçün $\\frac{3}{6} = \\frac{m}{4} = \\frac{12}{24}$ olmalıdır. Buradan $\\frac{1}{2} = \\frac{m}{4} \\Rightarrow m = 2$ alınır.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "2",
-          "1",
-          "3",
-          "4"
-        ],
-        "correct_answer": 3,
-        "correct_letter": "D",
-        "answer": "D"
-      },
-      {
-        "id": "gen-d476d6fd",
-        "passport_id": "gen-d476d6fd",
-        "question": "İki qələm və üç dəftərin birlikdə qiyməti 1.80 manat, üç qələm və iki dəftərin qiyməti isə 1.70 manatdır. Bir qələmin qiyməti neçəyədir?",
-        "options": [
-          "30 qəpik",
-          "40 qəpik",
-          "50 qəpik",
-          "20 qəpik"
-        ],
-        "correctAnswer": 0,
-        "explanation": "$\\begin{cases} 2q + 3d = 180 \\\\ 3q + 2d = 170 \\end{cases}$. Tərəf-tərəfə toplasaq $5q + 5d = 350 \\Rightarrow q + d = 70 \\Rightarrow d = 70 - q$. Birinci tənliyə yazaq: $2q + 3(70 - q) = 180 \\Rightarrow 2q + 210 - 3q = 180 \\Rightarrow -q = -30 \\Rightarrow q = 30$ qəpik.",
-        "difficulty": "çətin",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "30 qəpik",
-          "40 qəpik",
-          "50 qəpik",
-          "20 qəpik"
-        ],
-        "correct_answer": 0,
-        "correct_letter": "A",
-        "answer": "A"
-      },
-      {
-        "id": "gen-0b59d22f",
-        "passport_id": "gen-0b59d22f",
-        "question": "Aşağıdakı tənliklər sistemindən hansının qrafikləri kəsişən düz xətlərdir?",
-        "options": [
-          "$\\begin{cases} x + y = 5 \\\\ 2x + 2y = 10 \\end{cases}$",
-          "$\\begin{cases} 3x - 3y = 6 \\\\ x - y = 2 \\end{cases}$",
-          "$\\begin{cases} x - y = 3 \\\\ x - y = 4 \\end{cases}$",
-          "$\\begin{cases} 2x + y = 4 \\\\ x - y = 1 \\end{cases}$"
-        ],
-        "correctAnswer": 1,
-        "explanation": "A və D bəndlərində əmsallar və sərbəst hədlər mütənasibdir (üst-üstə düşən xətlər). B bəndində əmsallar mütənasibdir, amma sərbəst hədlər deyil (paralel xətlər). C bəndində isə $\\frac{2}{1} \\neq \\frac{1}{-1}$ olduğundan xətlər yalnız bir nöqtədə kəsişir.",
-        "difficulty": "orta",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "$\\begin{cases} x + y = 5 \\\\ 2x + 2y = 10 \\end{cases}$",
-          "$\\begin{cases} 3x - 3y = 6 \\\\ x - y = 2 \\end{cases}$",
-          "$\\begin{cases} x - y = 3 \\\\ x - y = 4 \\end{cases}$",
-          "$\\begin{cases} 2x + y = 4 \\\\ x - y = 1 \\end{cases}$"
-        ],
-        "correct_answer": 1,
-        "correct_letter": "B",
-        "answer": "B"
-      },
-      {
-        "id": "gen-6b53bcde",
-        "passport_id": "gen-6b53bcde",
-        "question": "$\\begin{cases} \\frac{x}{2} + \\frac{y}{3} = 4 \\\\ \\frac{x}{3} - \\frac{y}{2} = -1 \\end{cases}$ sistemini həll etmək üçün tənlikləri hansı ortaq məxrəcə gətirərək kəsrlərdən azad etmək ən əlverişlidir?",
-        "options": [
-          "Hər iki tənliyi 12-yə vurmaqla",
-          "Birinci tənliyi 2-yə, ikincini 3-ə vurmaqla",
-          "Birinci tənliyi 3-ə, ikincini 2-yə vurmaqla",
-          "Hər iki tənliyi 6-ya vurmaqla"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Məxrəclər 2 və 3 olduğu üçün, onların ən kiçik ortaq bölünəni 6-dır. Hər iki tənliyi 6-ya vurmaq kəsrlərdən azad olmağın ən sadə yoludur.",
-        "difficulty": "asan",
-        "bloom_level": "bilmə",
-        "topic": "47. İkidayişənli xətti tənliklər sistemi",
-        "opts": [
-          "Hər iki tənliyi 12-yə vurmaqla",
-          "Birinci tənliyi 2-yə, ikincini 3-ə vurmaqla",
-          "Birinci tənliyi 3-ə, ikincini 2-yə vurmaqla",
-          "Hər iki tənliyi 6-ya vurmaqla"
-        ],
-        "correct_answer": 2,
-        "correct_letter": "C",
-        "answer": "C"
-      }
-    ],
     "48. İkidəyişənli xətti tənliklər sisteminin qrafik üsulla həlli": [
       {
         "id": "gen-0e1fbe69",
@@ -24526,6 +23772,760 @@
           "75°",
           "90°",
           "100°"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      }
+    ],
+    "7. Rasional ədədlərin yazılışı və oxunuşu": [
+      {
+        "id": "gen-7a5a1971",
+        "passport_id": "gen-7a5a1971",
+        "question": "$0,3$ onluq kəsri adi kəsr kimi necə yazılır?",
+        "options": [
+          "$\\frac{10}{3}$",
+          "$\\frac{3}{100}$",
+          "$\\frac{3}{10}$",
+          "$\\frac{1}{3}$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "$0,3$ onluq kəsri məxrəci 10, surəti 3 olan kəsr kimi yazılır: $\\frac{3}{10}$.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$\\frac{10}{3}$",
+          "$\\frac{3}{100}$",
+          "$\\frac{3}{10}$",
+          "$\\frac{1}{3}$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-d3f0ba5c",
+        "passport_id": "gen-d3f0ba5c",
+        "question": "$\\frac{1}{4}$ adi kəsri onluq kəsr şəklində necə yazılır?",
+        "options": [
+          "0,4",
+          "0,25",
+          "0,5",
+          "0,14"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Kəsrin surətini məxrəcinə bölməklə (1 : 4 = 0,25) və ya kəsrin məxrəc və surətini 25-ə vurmaqla ($\\frac{25}{100} = 0,25$) onluq kəsrə çevirmək olar.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "0,4",
+          "0,25",
+          "0,5",
+          "0,14"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-0d22d8eb",
+        "passport_id": "gen-0d22d8eb",
+        "question": "$-2\\frac{3}{5}$ qarışıq ədədi düzgün olmayan kəsr şəklində necə yazılır?",
+        "options": [
+          "$-\\frac{13}{5}$",
+          "$-\\frac{10}{5}$",
+          "$\\frac{13}{5}$",
+          "$-\\frac{11}{5}$"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tam hissəni (2) məxrəcə (5) vurub üzərinə surəti (3) gəlirik: $2 \\cdot 5 + 3 = 13$. Mənfi işarəsi qarşıda saxlanılır: $-\\frac{13}{5}$.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$-\\frac{13}{5}$",
+          "$-\\frac{10}{5}$",
+          "$\\frac{13}{5}$",
+          "$-\\frac{11}{5}$"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-58a938d9",
+        "passport_id": "gen-58a938d9",
+        "question": "“Mənfi sıfır tam onda yeddi” ədədi rəqəmlə necə yazılır?",
+        "options": [
+          "-7,0",
+          "-0,07",
+          "0,7",
+          "-0,7"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Sıfır tam, vergüldən sonra onda birlər mərtəbəsində 7 rəqəmi yazılır və qarşısında mənfi işarəsi qoyulur: -0,7.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "-7,0",
+          "-0,07",
+          "0,7",
+          "-0,7"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-b1e2cc0e",
+        "passport_id": "gen-b1e2cc0e",
+        "question": "$0,(3)$ dövri onluq kəsri adi kəsrə necə çevrilir?",
+        "options": [
+          "$\\frac{3}{10}$",
+          "$\\frac{1}{3}$",
+          "$\\frac{3}{100}$",
+          "$\\frac{1}{9}$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Saf dövri onluq kəsri adi kəsrə çevirərkən məxrəcdə dövrdəki rəqəmlərin sayı qədər 9 yazılır: $0,(3) = \\frac{3}{9} = \\frac{1}{3}$.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$\\frac{3}{10}$",
+          "$\\frac{1}{3}$",
+          "$\\frac{3}{100}$",
+          "$\\frac{1}{9}$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-0e228226",
+        "passport_id": "gen-0e228226",
+        "question": "$-\\frac{5}{9}$ ədədi dövri onluq kəsr şəklində necə yazılır?",
+        "options": [
+          "-0,",
+          "-0,5",
+          "-0,",
+          "-0,05"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Məxrəcdə 9 olduğu üçün bu kəsr saf dövri onluq kəsrdir və surətdəki rəqəm dövr edir: -0,(5).",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "-0,",
+          "-0,5",
+          "-0,",
+          "-0,05"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-652b6566",
+        "passport_id": "gen-652b6566",
+        "question": "$2,1(6)$ qarışıq dövri onluq kəsri adi kəsrə çevirin.",
+        "options": [
+          "$\\frac{13}{6}$",
+          "$\\frac{13}{9}$",
+          "$2\\frac{1}{6}$",
+          "$2\\frac{16}{99}$"
+        ],
+        "correctAnswer": 2,
+        "explanation": "$2,1(6) = 2\\frac{16-1}{90} = 2\\frac{15}{90} = 2\\frac{1}{6} = \\frac{13}{6}$.",
+        "difficulty": "çətin",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$\\frac{13}{6}$",
+          "$\\frac{13}{9}$",
+          "$2\\frac{1}{6}$",
+          "$2\\frac{16}{99}$"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-0bd92587",
+        "passport_id": "gen-0bd92587",
+        "question": "$\\frac{7}{20}$ adi kəsri onluq kəsrə necə çevrilir?",
+        "options": [
+          "0,07",
+          "0,7",
+          "0,14",
+          "0,35"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Kəsrin surət və məxrəcini 5-ə vursaq, $\\frac{35}{100}$ alınar, bu da 0,35 kimi yazılır.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "0,07",
+          "0,7",
+          "0,14",
+          "0,35"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-6e0f5c08",
+        "passport_id": "gen-6e0f5c08",
+        "question": "-1,45 ədədi ixtisar olunmuş qarışıq ədəd kimi necə yazılır?",
+        "options": [
+          "$-1\\frac{45}{10}$",
+          "$-1\\frac{9}{10}$",
+          "$-1\\frac{4}{5}$",
+          "$-1\\frac{9}{20}$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "$-1,45 = -1\\frac{45}{100}$. Kəsri 5-ə ixtisar etsək, $-1\\frac{9}{20}$ alınır.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$-1\\frac{45}{10}$",
+          "$-1\\frac{9}{10}$",
+          "$-1\\frac{4}{5}$",
+          "$-1\\frac{9}{20}$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-5aba8166",
+        "passport_id": "gen-5aba8166",
+        "question": "$0,2(4)$ dövri kəsrinin oxunuşu hansıdır?",
+        "options": [
+          "Sıfır tam onda iki, dövrdə dörd",
+          "Sıfır tam yüzdə iyirmi dörd",
+          "Sıfır tam mində iki yüz qırx",
+          "Sıfır tam dövrdə iyirmi dörd"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu qarışıq dövri onluq kəsrdir. Vergüldən sonra əvvəlcə qeyri-dövri hissə (\"onda iki\"), sonra isə dövri hissə (\"dövrə dörd\") oxunur.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "Sıfır tam onda iki, dövrdə dörd",
+          "Sıfır tam yüzdə iyirmi dörd",
+          "Sıfır tam mində iki yüz qırx",
+          "Sıfır tam dövrdə iyirmi dörd"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-6d00abca",
+        "passport_id": "gen-6d00abca",
+        "question": "$\\frac{3}{8}$ kəsrini onluq kəsr şəklində göstərin.",
+        "options": [
+          "0,125",
+          "0,38",
+          "0,375",
+          "0,25"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Məxrəci 1000-ə tamamlamaq üçün surət və məxrəci 125-ə vururuq: $\\frac{375}{1000} = 0,375$. Yaxud 3-ü 8-ə bölürük.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "0,125",
+          "0,38",
+          "0,375",
+          "0,25"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-631cd01c",
+        "passport_id": "gen-631cd01c",
+        "question": "“İki tam dövrdə beş” ədədi rəqəmlə necə yazılır?",
+        "options": [
+          "2,",
+          "2,05",
+          "2,5",
+          "2,"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Tam hissə 2, dövrdə təkrarlanan rəqəm isə 5-dir: 2,(5).",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "2,",
+          "2,05",
+          "2,5",
+          "2,"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-ec2ff41d",
+        "passport_id": "gen-ec2ff41d",
+        "question": "$0,(45)$ kəsri ixtisar olunan adi kəsr kimi necə yazılır?",
+        "options": [
+          "$\\frac{5}{11}$",
+          "$\\frac{9}{20}$",
+          "$\\frac{45}{100}$",
+          "$\\frac{4}{5}$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "$0,(45) = \\frac{45}{99}$. Sürət və məxrəci 9-a ixtisar etdikdə $\\frac{5}{11}$ alınır.",
+        "difficulty": "çətin",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$\\frac{5}{11}$",
+          "$\\frac{9}{20}$",
+          "$\\frac{45}{100}$",
+          "$\\frac{4}{5}$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-d01cd45e",
+        "passport_id": "gen-d01cd45e",
+        "question": "-0,008 onluq kəsri ixtisar olunmayan adi kəsr şəklində necə yazılır?",
+        "options": [
+          "$-\\frac{1}{100}$",
+          "$-\\frac{8}{100}$",
+          "$-\\frac{1}{125}$",
+          "$-\\frac{2}{25}$"
+        ],
+        "correctAnswer": 1,
+        "explanation": "$-0,008 = -\\frac{8}{1000}$. Sürət və məxrəci 8-ə böldükdə $-\\frac{1}{125}$ alınır.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$-\\frac{1}{100}$",
+          "$-\\frac{8}{100}$",
+          "$-\\frac{1}{125}$",
+          "$-\\frac{2}{25}$"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-ef7be3e4",
+        "passport_id": "gen-ef7be3e4",
+        "question": "$1,25$ ədədinin tərsi olan kəsri tapın.",
+        "options": [
+          "$\\frac{4}{5}$",
+          "$\\frac{1}{25}$",
+          "$\\frac{25}{100}$",
+          "$\\frac{5}{4}$"
+        ],
+        "correctAnswer": 2,
+        "explanation": "$1,25 = 1\\frac{1}{4} = \\frac{5}{4}$. Tərsi $\\frac{4}{5}$-ə bərabərdir.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+        "opts": [
+          "$\\frac{4}{5}$",
+          "$\\frac{1}{25}$",
+          "$\\frac{25}{100}$",
+          "$\\frac{5}{4}$"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      }
+    ],
+    "47. İkidəyişənli xətti tənliklər sistemi": [
+      {
+        "id": "gen-8f302088",
+        "passport_id": "gen-8f302088",
+        "question": "İkidəyişənli xətti tənliyin ümumi şəkli hansıdır?",
+        "options": [
+          "$ax + by = c$",
+          "$y = kx + b$",
+          "$ax + b = 0$",
+          "$ax^2 + bx + c = 0$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "İkidəyişənli xətti tənliyin ümumi şəkli $ax + by = c$ kimidir, burada $a$, $b$ və $c$ verilmiş ədədlər, $x$ və $y$ isə dəyişənlərdir.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "$ax + by = c$",
+          "$y = kx + b$",
+          "$ax + b = 0$",
+          "$ax^2 + bx + c = 0$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-9434f75c",
+        "passport_id": "gen-9434f75c",
+        "question": "Hansı ədədlər cütü $\\begin{cases} x + y = 5 \\\\ x - y = 1 \\end{cases}$ sisteminin həllidir?",
+        "options": [
+          "(4; 1)",
+          "(3; 2)",
+          "(1; 4)",
+          "(2; 3)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "$x=3$ və $y=2$ qiymətlərini yerinə yazdıqda: $3 + 2 = 5$ və $3 - 2 = 1$ doğru bərabərlikləri alınır. Deməli, (3; 2) cütü sistemin həllidir.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "(4; 1)",
+          "(3; 2)",
+          "(1; 4)",
+          "(2; 3)"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-9ecdd4a0",
+        "passport_id": "gen-9ecdd4a0",
+        "question": "$\\begin{cases} 2x + y = 7 \\\\ 3x - y = 8 \\end{cases}$ tənliklər sistemindən $x$-i tapın.",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tənlikləri tərəf-tərəfə toplasaq: $(2x + y) + (3x - y) = 7 + 8 \\Rightarrow 5x = 15 \\Rightarrow x = 3$.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-c6c9269c",
+        "passport_id": "gen-c6c9269c",
+        "question": "$\\begin{cases} x = 2y \\\\ x + 3y = 15 \\end{cases}$ sistemindən $y$-i tapın.",
+        "options": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Birinci tənlikdəki $x = 2y$ ifadəsini ikinci tənlikdə yerinə yazsaq: $2y + 3y = 15 \\Rightarrow 5y = 15 \\Rightarrow y = 3$.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-c74d081c",
+        "passport_id": "gen-c74d081c",
+        "question": "$\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ tənliklər sisteminin yeganə həlli olması üçün hansı şərt ödənməlidir?",
+        "options": [
+          "$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
+          "$a_1 = a_2, b_1 = b_2$",
+          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$",
+          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$"
+        ],
+        "correctAnswer": 0,
+        "explanation": "İki xətti tənliyin qrafiki olan düz xətlərin bir nöqtədə kəsişməsi (yəni sistemin yeganə həllinin olması) üçün $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$ şərti ödənməlidir.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
+          "$a_1 = a_2, b_1 = b_2$",
+          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$",
+          "$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-ff65e328",
+        "passport_id": "gen-ff65e328",
+        "question": "Hansı halda ikidəyişənli xətti tənliklər sisteminin sonsuz sayda həlli var?",
+        "options": [
+          "Tənliklərin qrafikləri üst-üstə düşdükdə",
+          "Tənliklərin qrafikləri paralel olduqda",
+          "Tənliklərin qrafikləri kəsişdikdə",
+          "Tənliklərin qrafikləri perpendikulyar olduqda"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tənliklərin qrafikləri olan düz xətlər üst-üstə düşdükdə onların bütün nöqtələri ortaq olur, yəni sistemin sonsuz sayda həlli olur.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "Tənliklərin qrafikləri üst-üstə düşdükdə",
+          "Tənliklərin qrafikləri paralel olduqda",
+          "Tənliklərin qrafikləri kəsişdikdə",
+          "Tənliklərin qrafikləri perpendikulyar olduqda"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-d6889330",
+        "passport_id": "gen-d6889330",
+        "question": "$\\begin{cases} 2x + 3y = 6 \\\\ 4x + 6y = 10 \\end{cases}$ sisteminin neçə həlli var?",
+        "options": [
+          "Yeganə həlli var",
+          "Sonsuz sayda həlli var",
+          "İki həlli var",
+          "Həlli yoxdur"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Əmsalların nisbətini yoxlasaq: $\\frac{2}{4} = \\frac{3}{6} \\neq \\frac{6}{10}$ (yəni $\\frac{1}{2} = \\frac{1}{2} \\neq \\frac{3}{5}$) olduğundan, bu düz xətlər paraleldir və sistemin həlli yoxdur.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "Yeganə həlli var",
+          "Sonsuz sayda həlli var",
+          "İki həlli var",
+          "Həlli yoxdur"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-46b0c582",
+        "passport_id": "gen-46b0c582",
+        "question": "İki ədədin cəmi 20, fərqi isə 6-dır. Bu ədədlərin hasilini tapın.",
+        "options": [
+          "100",
+          "84",
+          "96",
+          "91"
+        ],
+        "correctAnswer": 3,
+        "explanation": "$\\begin{cases} x + y = 20 \\\\ x - y = 6 \\end{cases}$ sistemini həll etsək: tərəf-tərəfə topladıqda $2x = 26 \\Rightarrow x = 13$, buradan da $y = 7$ alınır. Onların hasili: $13 \\cdot 7 = 91$.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "100",
+          "84",
+          "96",
+          "91"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-b965b0e7",
+        "passport_id": "gen-b965b0e7",
+        "question": "$\\begin{cases} x - 2y = 4 \\\\ 3x + y = 19 \\end{cases}$ sisteminin həlli olan $(x; y)$ cütü üçün $x + y$ cəmini tapın.",
+        "options": [
+          "9",
+          "7",
+          "10",
+          "8"
+        ],
+        "correctAnswer": 0,
+        "explanation": "1-ci tənlikdən $x = 2y + 4$ əldə edirik. İkinci tənlikdə yazaq: $3(2y + 4) + y = 19 \\Rightarrow 6y + 12 + y = 19 \\Rightarrow 7y = 7 \\Rightarrow y = 1$. Onda $x = 2 \\cdot 1 + 4 = 6$. Cəm: $x + y = 6 + 1 = 7$.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "9",
+          "7",
+          "10",
+          "8"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-c19f377c",
+        "passport_id": "gen-c19f377c",
+        "question": "$(2; 1)$ cütü $\\begin{cases} ax + by = 5 \\\\ 2ax - by = 4 \\end{cases}$ sisteminin həlli olarsa, $a$-nı tapın.",
+        "options": [
+          "1",
+          "2",
+          "2.5",
+          "1.5"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tərəf-tərəfə toplasaq: $3ax = 9 \\Rightarrow ax = 3$. $x = 2$ olduğunu bildiyimizdən, $2a = 3 \\Rightarrow a = 1.5$.",
+        "difficulty": "çətin",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "1",
+          "2",
+          "2.5",
+          "1.5"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-17dae3f6",
+        "passport_id": "gen-17dae3f6",
+        "question": "$\\begin{cases} 5x - 3y = 11 \\\\ 2x + 4y = -6 \\end{cases}$ sistemini əvəzetmə üsulu ilə həll edərkən aşağıdakı hansı addım doğru olar?",
+        "options": [
+          "Birinci tənlikdən $y = \\frac{5x + 11}{3}$ almaq",
+          "İkinci tənlikdən $y = -6 - 2x$ almaq",
+          "$x = \\frac{3y + 11}{5}$ əvəzləməsini ikinci tənlikdə yazmaq",
+          "$x = 3y + 11$ əvəzləməsini ikinci tənlikdə yazmaq"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Birinci tənlikdən $x$-i $y$ ilə ifadə etsək, $5x = 3y + 11 \\Rightarrow x = \\frac{3y + 11}{5}$ alınır ki, bu əvəzləməni ikinci tənliyə yazaraq dəyişəni yox etmək olar.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "Birinci tənlikdən $y = \\frac{5x + 11}{3}$ almaq",
+          "İkinci tənlikdən $y = -6 - 2x$ almaq",
+          "$x = \\frac{3y + 11}{5}$ əvəzləməsini ikinci tənlikdə yazmaq",
+          "$x = 3y + 11$ əvəzləməsini ikinci tənlikdə yazmaq"
+        ],
+        "correct_answer": 2,
+        "correct_letter": "C",
+        "answer": "C"
+      },
+      {
+        "id": "gen-6045d2da",
+        "passport_id": "gen-6045d2da",
+        "question": "$m$-in hansı qiymətində $\\begin{cases} 3x + my = 12 \\\\ 6x + 4y = 24 \\end{cases}$ sisteminin sonsuz sayda həlli var?",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Sonsuz sayda həll olması üçün $\\frac{3}{6} = \\frac{m}{4} = \\frac{12}{24}$ olmalıdır. Buradan $\\frac{1}{2} = \\frac{m}{4} \\Rightarrow m = 2$ alınır.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "correct_answer": 3,
+        "correct_letter": "D",
+        "answer": "D"
+      },
+      {
+        "id": "gen-d476d6fd",
+        "passport_id": "gen-d476d6fd",
+        "question": "İki qələm və üç dəftərin birlikdə qiyməti 1.80 manat, üç qələm və iki dəftərin qiyməti isə 1.70 manatdır. Bir qələmin qiyməti neçəyədir?",
+        "options": [
+          "30 qəpik",
+          "40 qəpik",
+          "50 qəpik",
+          "20 qəpik"
+        ],
+        "correctAnswer": 0,
+        "explanation": "$\\begin{cases} 2q + 3d = 180 \\\\ 3q + 2d = 170 \\end{cases}$. Tərəf-tərəfə toplasaq $5q + 5d = 350 \\Rightarrow q + d = 70 \\Rightarrow d = 70 - q$. Birinci tənliyə yazaq: $2q + 3(70 - q) = 180 \\Rightarrow 2q + 210 - 3q = 180 \\Rightarrow -q = -30 \\Rightarrow q = 30$ qəpik.",
+        "difficulty": "çətin",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "30 qəpik",
+          "40 qəpik",
+          "50 qəpik",
+          "20 qəpik"
+        ],
+        "correct_answer": 0,
+        "correct_letter": "A",
+        "answer": "A"
+      },
+      {
+        "id": "gen-0b59d22f",
+        "passport_id": "gen-0b59d22f",
+        "question": "Aşağıdakı tənliklər sistemindən hansının qrafikləri kəsişən düz xətlərdir?",
+        "options": [
+          "$\\begin{cases} x + y = 5 \\\\ 2x + 2y = 10 \\end{cases}$",
+          "$\\begin{cases} 3x - 3y = 6 \\\\ x - y = 2 \\end{cases}$",
+          "$\\begin{cases} x - y = 3 \\\\ x - y = 4 \\end{cases}$",
+          "$\\begin{cases} 2x + y = 4 \\\\ x - y = 1 \\end{cases}$"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A və D bəndlərində əmsallar və sərbəst hədlər mütənasibdir (üst-üstə düşən xətlər). B bəndində əmsallar mütənasibdir, amma sərbəst hədlər deyil (paralel xətlər). C bəndində isə $\\frac{2}{1} \\neq \\frac{1}{-1}$ olduğundan xətlər yalnız bir nöqtədə kəsişir.",
+        "difficulty": "orta",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "$\\begin{cases} x + y = 5 \\\\ 2x + 2y = 10 \\end{cases}$",
+          "$\\begin{cases} 3x - 3y = 6 \\\\ x - y = 2 \\end{cases}$",
+          "$\\begin{cases} x - y = 3 \\\\ x - y = 4 \\end{cases}$",
+          "$\\begin{cases} 2x + y = 4 \\\\ x - y = 1 \\end{cases}$"
+        ],
+        "correct_answer": 1,
+        "correct_letter": "B",
+        "answer": "B"
+      },
+      {
+        "id": "gen-6b53bcde",
+        "passport_id": "gen-6b53bcde",
+        "question": "$\\begin{cases} \\frac{x}{2} + \\frac{y}{3} = 4 \\\\ \\frac{x}{3} - \\frac{y}{2} = -1 \\end{cases}$ sistemini həll etmək üçün tənlikləri hansı ortaq məxrəcə gətirərək kəsrlərdən azad etmək ən əlverişlidir?",
+        "options": [
+          "Hər iki tənliyi 12-yə vurmaqla",
+          "Birinci tənliyi 2-yə, ikincini 3-ə vurmaqla",
+          "Birinci tənliyi 3-ə, ikincini 2-yə vurmaqla",
+          "Hər iki tənliyi 6-ya vurmaqla"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Məxrəclər 2 və 3 olduğu üçün, onların ən kiçik ortaq bölünəni 6-dır. Hər iki tənliyi 6-ya vurmaq kəsrlərdən azad olmağın ən sadə yoludur.",
+        "difficulty": "asan",
+        "bloom_level": "bilmə",
+        "topic": "47. İkidəyişənli xətti tənliklər sistemi",
+        "opts": [
+          "Hər iki tənliyi 12-yə vurmaqla",
+          "Birinci tənliyi 2-yə, ikincini 3-ə vurmaqla",
+          "Birinci tənliyi 3-ə, ikincini 2-yə vurmaqla",
+          "Hər iki tənliyi 6-ya vurmaqla"
         ],
         "correct_answer": 2,
         "correct_letter": "C",

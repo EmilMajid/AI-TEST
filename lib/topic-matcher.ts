@@ -15,26 +15,76 @@ export function azNorm(s: string): string {
     .replace(/İ/g, "i")
     .toLowerCase()
     .replace(/i̇/g, "i")
+    .replace(/\u0301/g, "")
     .replace(/[\s\-_]+/g, " ")
     .replace(/["'“”«»()]/g, "")
     .trim()
 }
 
 /**
+ * Normalizes case and letters while preserving structural delimiters (-, —, –, :, /, .)
+ * used by curriculum prefix strippers.
+ */
+export function azClean(s: string): string {
+  return (s || "")
+    .replace(/I/g, "ı")
+    .replace(/İ/g, "i")
+    .toLowerCase()
+    .replace(/i̇/g, "i")
+    .replace(/\u0301/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+}
+
+/**
  * Strips curriculum numbering/chapter prefixes while strictly preserving bare numbers and letters.
+ * Handles single/multi-level prefixes, chapter headers with delimiters, and language lesson indicators.
  * E.g., "1. Məktəbimiz" -> "məktəbimiz", "Bölmə 1. Vurma" -> "vurma"
+ * "Fəsil 1. FƏRD VƏ TOPLUM - 1. DOSTLUĞUN GÜCÜ" -> "dostluğun gücü"
+ * "LEKTION 1. KENNENLERNEN - Stunde 1. Wer bist du?" -> "wer bist du"
+ * "I. Что у осени в корзинке? - 1. Прекрасная пора" -> "прекрасная пора"
  * BUT "13 ədədi" -> "13 ədədi", "Ll hərfi" -> "ll hərfi" (never stripped!)
  */
 export function stripTopicPrefix(str: string): string {
-  let s = azNorm(str)
-  // Section headers: e.g. "bölmə 1.", "1-ci bölmə:", "fəsil 2."
-  s = s.replace(/^(bölmə|hissə|fəsil|razdel|unit|lektion|étape)\s+([0-9]+|[ivxlcdm]+)[.\-:]*\s*/gi, "")
-  s = s.replace(/^([0-9]+|[ivxlcdm]+)\s*(-ci|-cı|-cü|-cu|-üncü|-inci)?\s*(bölmə|hissə|fəsil|razdel|unit|lektion|étape)[.\-:]*\s*/gi, "")
-  // Leading number with mandatory delimiter: "1. Məktəb", "1.1. Hesabi kvadrat kök", "12) Dərs", "1 - Fiqurlar"
+  if (!str) return ""
+
+  // First strip uppercase chapter headers before lowercase: e.g. "TEXNOLOGİYALAR VƏ TEXNOLOJİ VASİTƏLƏR - "
+  let s = str.replace(/^[A-ZƏÖÜŞÇĞIİ\s\d\(\).]{4,}\s*[—–\-]\s*/g, "")
+
+  s = azClean(s)
+
+  // 0. Numbered chapter/section header with dash: e.g. "1. fərd və toplum - ", "5. ixtiralar - "
+  s = s.replace(/^[0-9ivxlcdm]+(?:\.[0-9ivxlcdm]+)*\.\s*[^—–\-:]+[—–\-]\s*/gi, "")
+
+  // 0b. Module / Unit with number and dash: e.g. "module 1 - ", "unit 1 - "
+  s = s.replace(/^(?:module|unit|étape|razdel|раздел)\s+[0-9ivxlcdm]+[.\s]*[—–\-]\s*/gi, "")
+
+  // 1. Chapter / Unit / Section / Module header with delimiter (dash, em-dash, colon, slash)
+  s = s.replace(/^(bölmə|hissə|fəsil|razdel|раздел|unit|unité|lektion|module|étape|kapitel)\s+[^—–\-:]+[—–\-:]\s*/gi, "")
+
+  // 2. Roman numeral chapter with delimiter: "i. что у осени в корзинке? - 1. прекрасная пора"
+  s = s.replace(/^[ivxlcdm]+\.\s*[^—–\-:]+[—–\-:]\s*/gi, "")
+
+  // 3. Section headers without extra title: e.g. "bölmə 1.", "1-ci bölmə:", "fəsil 2.", "4-cü mövzu."
+  s = s.replace(/^(bölmə|hissə|fəsil|razdel|раздел|unit|unité|lektion|module|étape|kapitel)\s+([0-9]+|[ivxlcdm]+)[.\-:]*\s*/gi, "")
+  s = s.replace(/^([0-9]+|[ivxlcdm]+)\s*(-ci|-cı|-cü|-cu|-üncü|-inci)?\s*(bölmə|hissə|fəsil|razdel|раздел|unit|unité|lektion|module|étape|kapitel|mövzu)[.\-:]*\s*/gi, "")
+
+  // 4. Lesson / theme indicators: "dərs 1.", "урок 1.", "stunde 1.", "leçon 1.", "mövzu 1.", "dil qaydaları:"
+  s = s.replace(/^(dərs|ders|урок|urok|stunde|leçon|lesson|mövzu|dil qaydaları:?)\s*([0-9]+|[ivxlcdm]+)?[.\-:]*\s*/gi, "")
+
+  // 5. Leading number with mandatory delimiter: "1. Məktəb", "1.1. Hesabi kvadrat kök", "12) Dərs", "1 - Fiqurlar"
   s = s.replace(/^[0-9]+(?:\.[0-9]+)*\s*[\.\)\-:]\s*/gi, "")
-  // Leading Roman numeral ONLY with mandatory delimiter: "I. Giriş", "IV) Xassələr"
+
+  // 6. Leading Roman numeral ONLY with mandatory delimiter: "I. Giriş", "IV) Xassələr"
   s = s.replace(/^[ivxlcdm]+\s*[\.\)\-:]\s+/gi, "")
-  return s.trim()
+
+  // 7. Trailing chapter qualifiers like "(fəsil 1)", "(bölmə 2)", "(раздел i)"
+  s = s.replace(/\s*\((?:bölmə|fəsil|hissə|razdel|раздел|unit|module)\s*([0-9]+|[ivxlcdm]+)\)\s*$/gi, "")
+
+  // 8. Punctuation cleanup (hyphens, dashes, quotes, parentheses, trailing dots) and whitespace trim
+  s = s.replace(/[\s\-_—–]+/g, " ").replace(/["'“”«»()]/g, "").replace(/\.+$/g, "").trim()
+
+  return s
 }
 
 /**
@@ -166,13 +216,7 @@ export function findMatchingSubjectKeys(
     return true
   })
 
-  // If target specified a part, prefer keys with the same part
-  if (targetPart) {
-    const partMatched = candidates.filter(k => getPartNum(k) === targetPart)
-    if (partMatched.length > 0) candidates = partMatched
-  }
-
-  // Filter by core name containment
+  // Filter by core name containment first
   let matched = candidates.filter(k => {
     const kNorm = azNorm(k)
     return titleNorm.includes(kNorm) || kNorm.includes(titleNorm)
@@ -188,6 +232,12 @@ export function findMatchingSubjectKeys(
       if ((titleNorm.includes("francais") || titleNorm.includes("fransız") || titleNorm.includes("fransiz")) && (kNorm.includes("fransız") || kNorm.includes("fransiz"))) return true
       return false
     })
+  }
+
+  // If target specified a part, prefer keys with the same part among name-matched candidates
+  if (targetPart && matched.length > 1) {
+    const partMatched = matched.filter(k => getPartNum(k) === targetPart)
+    if (partMatched.length > 0) matched = partMatched
   }
 
   // Return the most specific match (prefer longer key names if multiple)
