@@ -22,14 +22,14 @@ const LINKS_FILE = getStoragePath("testai_student_links.json")
 import { createClient } from "@supabase/supabase-js"
 
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://hkwppwinuyxznjnkdius.supabase.co"
-const supabaseServiceKey =
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhrd3Bwd2ludXl4em5qbmtkaXVzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4ODM5NDQ4OCwiZXhwIjoyMTAzOTcwNDg4fQ.s7CdTAHQucsWAeSRRCWLnJtCLJeFzy6KehmZoo5i6CE"
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ""
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || ""
 
-export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: { persistSession: false, autoRefreshToken: false }
-})
+export const supabaseAdmin: any = (supabaseUrl && supabaseServiceKey)
+  ? createClient(supabaseUrl, supabaseServiceKey, {
+      auth: { persistSession: false, autoRefreshToken: false }
+    })
+  : null
 
 export interface StoredUser {
   id: string | number
@@ -503,7 +503,7 @@ export function saveUser(user: StoredUser): StoredUser {
   } catch (e) {}
 
   // Async sync to real Supabase PostgreSQL cloud database - ONLY FOR REAL USERS!
-  if (userWithStatus.source === "real" && !isMockUser(userWithStatus)) {
+  if (supabaseAdmin && userWithStatus.source === "real" && !isMockUser(userWithStatus)) {
     try {
       supabaseAdmin
         .from("User")
@@ -1129,7 +1129,7 @@ export function saveLink(link: StudentLink): StudentLink {
   try {
     const parentEmail = (link.parentEmail || "").toLowerCase()
     const studentEmail = (link.student?.email || "").toLowerCase()
-    if (parentEmail && studentEmail) {
+    if (supabaseAdmin && parentEmail && studentEmail) {
       Promise.all([
         supabaseAdmin.from("User").select("id").eq("email", parentEmail).single(),
         supabaseAdmin.from("User").select("id").eq("email", studentEmail).single(),

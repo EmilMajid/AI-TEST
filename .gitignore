@@ -43,6 +43,7 @@ logs/
 data/*.jsonl
 data/*.bak*
 data/*.backup*
+data/backups/
 data/offline_tests_backup*
 data/offline_tests_HEAD*
 data/offline_tests_github*

@@ -3,14 +3,11 @@ import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server" // Added to allow NextResponse.next()
 
 export async function middleware(request: NextRequest) {
-  // Check for demo mode
-  // FORCE MOCK MODE as per user request
-  const isDemoMode = true;
+  // Check for demo mode via environment variable (DEMO_MODE=true)
+  // In production, when DEMO_MODE is false or unset, session verification is enforced.
+  const isDemoMode = process.env.DEMO_MODE === "true" || process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 
   if (isDemoMode) {
-    // In demo mode, bypass strict session checks by allowing the request to proceed.
-    // This might mean returning a simple next response or a mocked session response.
-    // Assuming the intent is to let the request pass without session validation.
     return NextResponse.next();
   }
 
