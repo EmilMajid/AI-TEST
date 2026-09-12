@@ -81,7 +81,7 @@ function getDb() {
 
   // Merge REAL users from user-store
   try {
-    const allUsers = getAllUsers(true)
+    const allUsers = (getAllUsers as any)(true)
     const existingEmails = new Set((db.users || []).map((u: any) => (u.email || '').toLowerCase()))
 
     for (const u of allUsers) {
@@ -149,11 +149,16 @@ export async function POST(req: Request) {
             const dir = path.dirname(accessControlPath)
             if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
             fs.writeFileSync(accessControlPath, JSON.stringify(db, null, 2))
-        } catch (e) {}
+        } catch (e: any) {
+            console.error("Error writing accessControlPath:", e)
+            throw new Error(`Failed to save access control settings: ${e.message}`)
+        }
 
         try {
             fs.writeFileSync(tmpAccessControlPath, JSON.stringify(db, null, 2))
-        } catch (e) {}
+        } catch (e: any) {
+            console.warn("Warning: Could not write to tmpAccessControlPath:", e.message)
+        }
 
         return NextResponse.json({ success: true, data: db })
     } catch(err: any) {

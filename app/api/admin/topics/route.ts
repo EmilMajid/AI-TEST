@@ -63,11 +63,16 @@ export async function POST(request: NextRequest) {
             const dir = path.dirname(manualTopicsPath)
             if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
             fs.writeFileSync(manualTopicsPath, JSON.stringify(currentData, null, 2))
-        } catch (e) {}
+        } catch (e: any) {
+            console.error("Error writing manualTopicsPath:", e)
+            throw new Error(`Failed to write topics file: ${e.message}`)
+        }
 
         try {
             fs.writeFileSync(tmpManualTopicsPath, JSON.stringify(currentData, null, 2))
-        } catch (e) {}
+        } catch (e: any) {
+            console.warn("Warning: Could not write to tmpManualTopicsPath:", e.message)
+        }
 
         return NextResponse.json({ success: true })
     } catch (error) {

@@ -3,10 +3,11 @@ import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 import { azNorm, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
+import { atomicWriteJsonSync, offlineTestsMutex } from "@/lib/data-safety"
 
 const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
 
-function loadDb(): Record<string, any[]> {
+function loadDb(): Record<string, any> {
     if (!fs.existsSync(offlineTestsPath)) return {}
     try {
         return JSON.parse(fs.readFileSync(offlineTestsPath, "utf-8"))
@@ -86,24 +87,44 @@ export async function PATCH(request: NextRequest) {
             return NextResponse.json({ error: "passport_id required" }, { status: 400 })
         }
 
-        const db = loadDb()
-        let found = false
+        const unlock = await offlineTestsMutex.lock()
+        try {
+            const db = loadDb()
+            let found = false
 
-        for (const subject of Object.keys(db)) {
-            const idx = db[subject].findIndex((q: any) => q.passport_id === passport_id)
-            if (idx !== -1) {
-                if (status !== undefined) db[subject][idx].status = status
-                found = true
-                break
+            for (const subject of Object.keys(db)) {
+                const val: any = db[subject]
+                if (Array.isArray(val)) {
+                    const idx = val.findIndex((q: any) => q.passport_id === passport_id)
+                    if (idx !== -1) {
+                        if (status !== undefined) val[idx].status = status
+                        found = true
+                        break
+                    }
+                } else if (val && typeof val === "object") {
+                    for (const topicKey of Object.keys(val)) {
+                        if (Array.isArray(val[topicKey])) {
+                            const idx = val[topicKey].findIndex((q: any) => q.passport_id === passport_id)
+                            if (idx !== -1) {
+                                if (status !== undefined) val[topicKey][idx].status = status
+                                found = true
+                                break
+                            }
+                        }
+                    }
+                    if (found) break
+                }
             }
-        }
 
-        if (!found) {
-            return NextResponse.json({ error: "Question not found" }, { status: 404 })
-        }
+            if (!found) {
+                return NextResponse.json({ error: "Question not found" }, { status: 404 })
+            }
 
-        fs.writeFileSync(offlineTestsPath, JSON.stringify(db, null, 2))
-        return NextResponse.json({ success: true })
+            atomicWriteJsonSync(offlineTestsPath, db, { backup: true })
+            return NextResponse.json({ success: true })
+        } finally {
+            unlock()
+        }
     } catch (error) {
         console.error("Error updating question:", error)
         return NextResponse.json({ error: "Failed to update question" }, { status: 500 })
@@ -119,24 +140,44 @@ export async function DELETE(request: NextRequest) {
             return NextResponse.json({ error: "passport_id required" }, { status: 400 })
         }
 
-        const db = loadDb()
-        let found = false
+        const unlock = await offlineTestsMutex.lock()
+        try {
+            const db = loadDb()
+            let found = false
 
-        for (const subject of Object.keys(db)) {
-            const idx = db[subject].findIndex((q: any) => q.passport_id === passport_id)
-            if (idx !== -1) {
-                db[subject].splice(idx, 1)
-                found = true
-                break
+            for (const subject of Object.keys(db)) {
+                const val: any = db[subject]
+                if (Array.isArray(val)) {
+                    const idx = val.findIndex((q: any) => q.passport_id === passport_id)
+                    if (idx !== -1) {
+                        val.splice(idx, 1)
+                        found = true
+                        break
+                    }
+                } else if (val && typeof val === "object") {
+                    for (const topicKey of Object.keys(val)) {
+                        if (Array.isArray(val[topicKey])) {
+                            const idx = val[topicKey].findIndex((q: any) => q.passport_id === passport_id)
+                            if (idx !== -1) {
+                                val[topicKey].splice(idx, 1)
+                                found = true
+                                break
+                            }
+                        }
+                    }
+                    if (found) break
+                }
             }
-        }
 
-        if (!found) {
-            return NextResponse.json({ error: "Question not found" }, { status: 404 })
-        }
+            if (!found) {
+                return NextResponse.json({ error: "Question not found" }, { status: 404 })
+            }
 
-        fs.writeFileSync(offlineTestsPath, JSON.stringify(db, null, 2))
-        return NextResponse.json({ success: true })
+            atomicWriteJsonSync(offlineTestsPath, db, { backup: true })
+            return NextResponse.json({ success: true })
+        } finally {
+            unlock()
+        }
     } catch (error) {
         console.error("Error deleting question:", error)
         return NextResponse.json({ error: "Failed to delete question" }, { status: 500 })

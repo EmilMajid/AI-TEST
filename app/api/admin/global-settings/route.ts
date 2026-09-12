@@ -63,11 +63,16 @@ function saveSettings(settings: SystemSetting[]) {
       fs.mkdirSync(dataDir, { recursive: true })
     }
     fs.writeFileSync(SETTINGS_FILE, JSON.stringify(settings, null, 2), "utf-8")
-  } catch (e) {}
+  } catch (e: any) {
+    console.error("Error writing SETTINGS_FILE:", e)
+    throw new Error(`Failed to write settings file: ${e.message}`)
+  }
 
   try {
     fs.writeFileSync(TMP_SETTINGS_FILE, JSON.stringify(settings, null, 2), "utf-8")
-  } catch (e) {}
+  } catch (e: any) {
+    console.warn("Warning: Could not write to TMP_SETTINGS_FILE:", e.message)
+  }
 }
 
 export async function GET() {
