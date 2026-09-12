@@ -128,12 +128,13 @@ export async function GET(request: Request) {
     }
 
     // Find the matching subject in gradeDb
-    let targetSubjectKey = Object.keys(gradeDb).find(
-      (k) => k.toLowerCase().trim() === subject.toLowerCase().trim()
-    )
-    if (!targetSubjectKey) {
+    const sLower = (subject || '').toLowerCase().trim()
+    let targetSubjectKey = sLower ? Object.keys(gradeDb).find(
+      (k) => k.toLowerCase().trim() === sLower
+    ) : undefined
+    if (sLower && !targetSubjectKey) {
       targetSubjectKey = Object.keys(gradeDb).find(
-        (k) => k.toLowerCase().includes(subject.toLowerCase()) || subject.toLowerCase().includes(k.toLowerCase())
+        (k) => k.toLowerCase().includes(sLower) || sLower.includes(k.toLowerCase())
       )
     }
 

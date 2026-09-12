@@ -101,3 +101,24 @@ export function atomicWriteJsonSync(
         throw err
     }
 }
+
+/**
+ * Synchronizes an updated subject object to its corresponding grade file (e.g. data/grades/grade_X.json)
+ */
+export function syncSubjectToGradeFile(subjectName: string, subjectData: any): void {
+    try {
+        const match = subjectName.match(/\b([2-9]|1[0-1])\b/)
+        const gradeKey = match ? match[1] : "other"
+        const gradeFilePath = path.join(process.cwd(), "data", "grades", `grade_${gradeKey}.json`)
+
+        if (fs.existsSync(gradeFilePath)) {
+            const raw = fs.readFileSync(gradeFilePath, "utf-8")
+            const gradeDb = JSON.parse(raw)
+            gradeDb[subjectName] = subjectData
+            atomicWriteJsonSync(gradeFilePath, gradeDb, { backup: false })
+        }
+    } catch (err) {
+        console.error(`Warning: Failed to sync subject "${subjectName}" to grade file:`, err)
+    }
+}
+

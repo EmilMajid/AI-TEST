@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 import { azNorm, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
-import { atomicWriteJsonSync, offlineTestsMutex } from "@/lib/data-safety"
+import { atomicWriteJsonSync, offlineTestsMutex, syncSubjectToGradeFile } from "@/lib/data-safety"
 
 const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
 
@@ -91,6 +91,7 @@ export async function PATCH(request: NextRequest) {
         try {
             const db = loadDb()
             let found = false
+            let matchedSubject: string | null = null
 
             for (const subject of Object.keys(db)) {
                 const val: any = db[subject]
@@ -99,6 +100,7 @@ export async function PATCH(request: NextRequest) {
                     if (idx !== -1) {
                         if (status !== undefined) val[idx].status = status
                         found = true
+                        matchedSubject = subject
                         break
                     }
                 } else if (val && typeof val === "object") {
@@ -108,6 +110,7 @@ export async function PATCH(request: NextRequest) {
                             if (idx !== -1) {
                                 if (status !== undefined) val[topicKey][idx].status = status
                                 found = true
+                                matchedSubject = subject
                                 break
                             }
                         }
@@ -121,6 +124,9 @@ export async function PATCH(request: NextRequest) {
             }
 
             atomicWriteJsonSync(offlineTestsPath, db, { backup: true })
+            if (matchedSubject) {
+                syncSubjectToGradeFile(matchedSubject, db[matchedSubject])
+            }
             return NextResponse.json({ success: true })
         } finally {
             unlock()
@@ -144,6 +150,7 @@ export async function DELETE(request: NextRequest) {
         try {
             const db = loadDb()
             let found = false
+            let matchedSubject: string | null = null
 
             for (const subject of Object.keys(db)) {
                 const val: any = db[subject]
@@ -152,6 +159,7 @@ export async function DELETE(request: NextRequest) {
                     if (idx !== -1) {
                         val.splice(idx, 1)
                         found = true
+                        matchedSubject = subject
                         break
                     }
                 } else if (val && typeof val === "object") {
@@ -161,6 +169,7 @@ export async function DELETE(request: NextRequest) {
                             if (idx !== -1) {
                                 val[topicKey].splice(idx, 1)
                                 found = true
+                                matchedSubject = subject
                                 break
                             }
                         }
@@ -174,6 +183,9 @@ export async function DELETE(request: NextRequest) {
             }
 
             atomicWriteJsonSync(offlineTestsPath, db, { backup: true })
+            if (matchedSubject) {
+                syncSubjectToGradeFile(matchedSubject, db[matchedSubject])
+            }
             return NextResponse.json({ success: true })
         } finally {
             unlock()

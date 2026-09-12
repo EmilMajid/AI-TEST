@@ -4,7 +4,7 @@ import { generateQuestions } from '@/scripts/llm-wrapper';
 import { validateAndSanitizeQuestion } from '@/scripts/psychometric-validator';
 import fs from 'fs';
 import path from 'path';
-import { atomicWriteJsonSync, offlineTestsMutex } from '@/lib/data-safety';
+import { atomicWriteJsonSync, offlineTestsMutex, syncSubjectToGradeFile } from '@/lib/data-safety';
 
 const offlineTestsPath = path.join(process.cwd(), 'data', 'offline_tests.json');
 const textbooksPath = path.join(process.cwd(), 'data', 'textbooks.json');
@@ -102,6 +102,7 @@ export async function POST(req: NextRequest) {
             });
 
             atomicWriteJsonSync(offlineTestsPath, db, { backup: true });
+            syncSubjectToGradeFile(subjectKey, db[subjectKey]);
 
             return NextResponse.json({
                 success: true,

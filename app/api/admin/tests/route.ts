@@ -64,8 +64,9 @@ export async function GET(request: Request) {
     if (subject) {
         const matchedKeys = getSubjectKeys(subject, Object.keys(dbData));
         matchedKeys.forEach(k => {
-           if (Array.isArray(dbData[k])) {
-               dbData[k].forEach((item: any) => {
+           const val = dbData[k];
+           if (Array.isArray(val)) {
+               val.forEach((item: any) => {
                    if (item.questions && Array.isArray(item.questions)) {
                        item.questions.forEach((q: any) => {
                            if (!q.topic && item.topic_key) q.topic = item.topic_key;
@@ -73,6 +74,18 @@ export async function GET(request: Request) {
                        });
                    } else if (item.question) {
                        subjectQuestions.push(item);
+                   }
+               });
+           } else if (val && typeof val === "object") {
+               Object.entries(val).forEach(([topicName, questions]: [string, any]) => {
+                   if (Array.isArray(questions)) {
+                       questions.forEach((q: any) => {
+                           if (!q.topic) q.topic = topicName;
+                           subjectQuestions.push(q);
+                       });
+                   } else if (questions && typeof questions === "object" && questions.question) {
+                       if (!questions.topic) questions.topic = topicName;
+                       subjectQuestions.push(questions);
                    }
                });
            }
