@@ -8,7 +8,12 @@ const offlineTestsPath = path.join(process.cwd(), "data", "offline_tests.json")
 
 function loadDb(): Record<string, any[]> {
     if (!fs.existsSync(offlineTestsPath)) return {}
-    return JSON.parse(fs.readFileSync(offlineTestsPath, "utf-8"))
+    try {
+        return JSON.parse(fs.readFileSync(offlineTestsPath, "utf-8"))
+    } catch (err) {
+        console.error("Critical error reading or parsing offline_tests.json in loadDb:", err)
+        return {}
+    }
 }
 
 export async function GET(request: NextRequest) {

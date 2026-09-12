@@ -127,10 +127,10 @@ Cavabı YALNIZ JSON formatında ver, başqa mətn əlavə etmə:
     {
       "question": "Sual mətni burada (aydın və konkret)",
       "options": [
-        "A) Birinci variant",
-        "B) İkinci variant", 
-        "C) Üçüncü variant",
-        "D) Dördüncü variant"
+        "Birinci variant",
+        "İkinci variant", 
+        "Üçüncü variant",
+        "Dördüncü variant"
       ],
       "correctAnswer": 0,
       "explanation": "Bu cavabın düzgün olmasının ətraflı izahatı və mövzu ilə əlaqəsi",

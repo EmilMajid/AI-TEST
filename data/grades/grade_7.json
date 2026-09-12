@@ -19002,7 +19002,7 @@
         "question": "$\\triangle PQR$-də $PQ = 5$ sm, $PR = 7$ sm, $\\angle P = 45^\\circ$. $\\triangle XYZ$-də isə $XY = 5$ sm, $XZ = 7$ sm və $\\angle X = 45^\\circ$. Bu üçbucaqlar hansı əlamətə görə konqruyentdir?",
         "options": [
           "T-B-T",
-          "B-T-B",
+          "T-B",
           "T-T-B",
           "T-T-T"
         ],
@@ -19078,8 +19078,8 @@
         "options": [
           "T-B-T",
           "T-T-T",
-          "B-T-B",
-          "B-B-B"
+          "T-B",
+          "B-B"
         ],
         "correctAnswer": 0,
         "explanation": "Bütün uyğun tərəflər bir-birinə bərabər olduğu üçün bu, Tərəf-Tərəf-Tərəf (T-T-T) əlamətidir.",
@@ -19178,7 +19178,7 @@
         "options": [
           "T-B-T",
           "Korbucaqlı üçbucaq əlaməti",
-          "B-T-B",
+          "T-B",
           "T-T-T"
         ],
         "correctAnswer": 0,
@@ -25469,7 +25469,7 @@
         "passport_id": "gen-a0a7a8b1",
         "question": "Fayl yolunun (path) düzgün nümunəsi hansıdır?",
         "options": [
-          "C:\\İstifadəçilər\\Şagird\\Sənədlər\\dərs.txt",
+          "\\İstifadəçilər\\Şagird\\Sənədlər\\dərs.txt",
           "dərs.txt → Sənədlər → C:",
           "Sənədlər/Məktəb/dərs.txt",
           "http://dərs.txt"
@@ -28182,7 +28182,7 @@
           "mahni.mp3",
           "Musiqi",
           "Xarici",
-          "D:\\"
+          "\\"
         ],
         "correctAnswer": 1,
         "explanation": "Bu tam yolda \"mahni.mp3\" faylın öz adı və genişlənməsidir. \"Musiqi\" və \"Xarici\" isə qovluq adlarıdır.",
@@ -136526,9 +136526,9 @@
         "question": "Elementlərin müasir kimyəvi simvollarını elmə kim daxil etmişdir?",
         "options": [
           "M.Lomonosov",
-          "C.Dalton",
+          "Dalton",
           "Y.Y.Bertselius",
-          "D.İ.Mendeleyev"
+          "İ.Mendeleyev"
         ],
         "correctAnswer": 2,
         "explanation": "İsveç alimi Y.Y.Bertselius 1814-cü ildə elementlərin latın adlarının ilk hərfləri (və ya ilk iki hərfi) ilə işarələnməsini təklif etmişdir.",
@@ -140206,9 +140206,9 @@
         "passport_id": "gen-91a2097e",
         "question": "Atomun planetar modelini hansı alim irəli sürmüşdür?",
         "options": [
-          "D. Mendeleyev",
+          "Mendeleyev",
           "N. Bor",
-          "C. Tomson",
+          "Tomson",
           "E. Rezerford"
         ],
         "correctAnswer": 3,
@@ -142005,9 +142005,9 @@
         "passport_id": "gen-9866185f",
         "question": "Maddə kütləsinin saxlanması qanununu kim kəşf etmişdir?",
         "options": [
-          "A. Avoqadro",
-          "D.İ. Mendeleyev",
-          "C. Dalton",
+          "Avoqadro",
+          "İ. Mendeleyev",
+          "Dalton",
           "M.V. Lomonosov və A.L. Lavuazye"
         ],
         "correctAnswer": 3,
@@ -142289,9 +142289,9 @@
         "passport_id": "gen-ed0a4195",
         "question": "Kimyəvi reaksiyalarda kütlənin saxlanması qanunu kim tərəfindən kəşf edilmişdir?",
         "options": [
-          "C.Prust və Y.Berselius",
+          "Prust və Y.Berselius",
           "R.Boyl və C.Dalton",
-          "A.Avoqadro və D.Mendeleyev",
+          "Avoqadro və D.Mendeleyev",
           "M.V.Lomonosov və A.Lavuazye"
         ],
         "correctAnswer": 3,
@@ -146872,8 +146872,8 @@
         "options": [
           "J.L. Prust",
           "M.V. Lomonosov və A.L. Lavuazye",
-          "D.İ. Mendeleyev",
-          "A. Avoqadro"
+          "İ. Mendeleyev",
+          "Avoqadro"
         ],
         "correctAnswer": 1,
         "explanation": "Maddələrin kütləsinin saxlanması qanununu bir-birindən asılı olmayaraq M.V. Lomonosov və A.L. Lavuazye kəşf etmişdir.",
@@ -149492,8 +149492,8 @@
         "question": "Xromatoqrafiya üsulunu ilk dəfə kim kəşf etmişdir?",
         "options": [
           "M.S. Tsvet",
-          "A. Lavuazye",
-          "D.İ. Mendeleyev",
+          "Lavuazye",
+          "İ. Mendeleyev",
           "M.V. Lomonosov"
         ],
         "correctAnswer": 0,
@@ -153172,10 +153172,10 @@
         "passport_id": "gen-6ae94314",
         "question": "Maddə kütləsinin saxlanması qanunu hansı alim tərəfindən irəli sürülmüşdür?",
         "options": [
-          "D. Mendeleyev",
+          "Mendeleyev",
           "M. Lomonosov",
           "R. Boyl",
-          "A. Avoqadro"
+          "Avoqadro"
         ],
         "correctAnswer": 1,
         "explanation": "Kimyəvi reaksiyalar zamanı kütlənin saxlanması qanunu M.Lomonosov (və ondan asılı olmayaraq A.Lavuazye) tərəfindən kəşf edilmişdir.",
@@ -153948,7 +153948,7 @@
         "measured_skill": "Ümumiləşdirici tapşırıqlar (Bölmə 6) üzrə kimyəvi anlayış və qanunların tətbiqi",
         "question": "Maddələrin kütləsinin saxlanması qanununun müəllifləri kimlərdir?",
         "options": [
-          "D.İ.Mendeleyev və C.Dalton",
+          "İ.Mendeleyev və C.Dalton",
           "M.V.Lomonosov və A.Lavuazye",
           "İ.Berzelius və E.Rezerford",
           "N.Bor və C.Tomson"
