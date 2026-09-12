@@ -85,23 +85,33 @@ model TestData {
 }
 
 model Question {
-  id              Int       @id @default(autoincrement())
-  question        String
-  options         String[]
-  correctAnswer   Int
-  explanation     String
-  difficulty      String    // "easy", "medium", "hard"
-  topic           String
-  bloomLevel      String    // "knowledge", "comprehension", "application", "analysis", "synthesis", "evaluation"
-  status          String    @default("active") // "active", "draft", "flagged"
-  testDataId      Int?
+  id                    Int       @id @default(autoincrement())
+  grade                 Int       // Class grade: 2 - 11
+  subject               String    // e.g. "Riyaziyyat", "Azərbaycan tarixi"
+  topic                 String
+  passportId            String?   @unique
+  question              String
+  options               String[]
+  correctAnswer         Int
+  explanation           String
+  difficulty            String    // "easy", "medium", "hard" / "sadə", "orta", "çətin"
+  bloomLevel            String    // "bilmə", "anlama", "tətbiq", "təhlil", "sintez", "dəyərləndirmə"
+  distractorDiagnostics Json?     // { "A": "...", "B": "...", "C": "...", "D": "..." }
+  solutionSteps         String[]  @default([])
+  sourceContext         String?
+  status                String    @default("active") // "active", "draft", "flagged"
+  testDataId            Int?
   
-  testResults     TestResult[]
-  createdAt       DateTime  @default(now())
-  updatedAt       DateTime  @updatedAt
+  testResults           TestResult[]
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
 
+  @@index([grade])
+  @@index([grade, subject])
+  @@index([grade, subject, topic])
   @@index([topic])
   @@index([bloomLevel])
+  @@index([passportId])
 }
 
 model TestResult {
