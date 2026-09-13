@@ -649,30 +649,30 @@ export default function Dashboard() {
                   </Card>
                 </div>
 
-                {/* Dashboard Alt Reklam Bloku (Sonda yerləşən reklam) */}
+                {/* Dashboard Alt Brend Bloku */}
                 <div className="pt-2">
                   <AdBanner
                     slot="dashboard-bottom-banner"
                     format="large-banner"
                     refreshKey="dashboard-bottom"
-                    label="Tövsiyə Olunan Təhsil Təklifi və Hazırlıq Proqramı"
+                    label="Sponsorluq və Brend Əməkdaşlığı"
                   />
                 </div>
               </div>
 
-              {/* Right Column - Reklam Paneli (Yalnız Desktop ekranlarda) */}
+              {/* Right Column - Brend Paneli (Yalnız Desktop ekranlarda) */}
               <div className="hidden lg:block space-y-4 sm:space-y-6 w-full overflow-hidden">
                 <AdBanner
                   slot="dashboard-sidebar-top"
                   format="vertical"
                   refreshKey="dashboard-right-1"
-                  label="DİM & Olimpiada Hazırlığı"
+                  label="Sponsorluq Fürsəti"
                 />
                 <AdBanner
                   slot="dashboard-sidebar-bottom"
                   format="vertical"
                   refreshKey="dashboard-right-2"
-                  label="Xarici Dillər & İT Kursları"
+                  label="Brend Əməkdaşlığı"
                 />
               </div>
             </div>

@@ -13,7 +13,6 @@ import { useTheme } from "@/hooks/use-theme"
 import RegionBackground from "@/components/region-background"
 import Image from "next/image"
 import { getDashboardPath, getUserUniqueId } from "@/lib/profile-utils"
-import { AdBanner } from "@/components/ads/ad-banner"
 
 export default function LoginPage() {
   const router = useRouter()

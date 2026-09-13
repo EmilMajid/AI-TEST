@@ -79,13 +79,13 @@ export default function TestGenerationStatus({ config, onCancel }: TestGeneratio
     <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10 py-6 px-3 sm:px-6 flex justify-center items-start">
       <div className="w-full max-w-[1600px] mx-auto flex justify-center items-start gap-6">
         
-        {/* Sol Reklam Bloku (Test yaradılarkən) */}
+        {/* Sol Brend Bloku (Test yaradılarkən) */}
         <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
           <AdBanner
             slot="gen-sidebar-left"
             format="vertical"
             refreshKey="gen-left"
-            label="Tövsiyə Olunan Təhsil"
+            label="Sponsorluq Fürsəti"
           />
         </aside>
 
@@ -224,13 +224,13 @@ export default function TestGenerationStatus({ config, onCancel }: TestGeneratio
                 </div>
               )}
 
-              {/* Reklam Bloku (Test Yaradılarkən Alt Banner) */}
+              {/* Brend Bloku (Test Yaradılarkən Alt Banner) */}
               <div className="pt-2">
                 <AdBanner
                   slot="gen-bottom-banner"
                   format="large-banner"
                   refreshKey="gen-banner"
-                  label="Xüsusi Təhsil Təklifi və Endirim Kampaniyası"
+                  label="Sponsorluq və Brend Əməkdaşlığı"
                 />
               </div>
 
@@ -242,13 +242,13 @@ export default function TestGenerationStatus({ config, onCancel }: TestGeneratio
           </Card>
         </main>
 
-        {/* Sağ Reklam Bloku (Test yaradılarkən) */}
+        {/* Sağ Brend Bloku (Test yaradılarkən) */}
         <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
           <AdBanner
             slot="gen-sidebar-right"
             format="vertical"
             refreshKey="gen-right"
-            label="Sponsorlu Elanlar"
+            label="Sponsorluq Fürsəti"
           />
         </aside>
 

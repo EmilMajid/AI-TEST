@@ -1,7 +1,15 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Sparkles, ExternalLink, GraduationCap, Award, BookOpen, Rocket, CheckCircle2, Gift } from "lucide-react"
+import Image from "next/image"
+import { Sparkles, Mail, ArrowRight } from "lucide-react"
+
+export const BRAND_SLOGANS = [
+  "Brendiniz savadlı gələcəyin formalaşdığı məkanda",
+  "Gələcəyin təhsilli nəsli ilə brendinizi birləşdirin.",
+  "Gələcəyin auditoriyasında sizin brendinizə yer var",
+  "Brendinizin gələcəyi burada başlayır.",
+]
 
 interface AdBannerProps {
   slot?: string
@@ -16,238 +24,208 @@ export function AdBanner({
   format = "horizontal",
   refreshKey,
   className = "",
-  label = "Reklam",
+  label = "Sponsorluq və Brend Əməkdaşlığı",
 }: AdBannerProps) {
   const adRef = useRef<HTMLDivElement>(null)
+  const [sloganIndex, setSloganIndex] = useState(0)
   const [isRefreshing, setIsRefreshing] = useState(false)
-
-  // Demo reklam məzmunları (AdSense aktiv olmadıqda və ya sınaq üçün)
-  const sampleAds = [
-    {
-      title: "DİM Qəbul İmtahanlarına Hazırlıq Proqramı",
-      subtitle: "Xüsusi 30% Endirim Kampaniyası Başladı!",
-      desc: "9-11-ci siniflər üçün xüsusi proqram. Peşəkar müəllim heyəti, hər həftə DİM formatında sınaq imtahanları və fərdi inkişaf planı.",
-      features: ["Həftəlik Sınaq İmtahanı", "Fərdi Müəllim Nəzarəti", "Onlayn və Əyani Dərslər"],
-      cta: "Endirimlə Qeydiyyatdan Keç",
-      badge: "Özəl Təklif",
-      icon: GraduationCap,
-      color: "from-blue-600 via-indigo-600 to-purple-700",
-      stats: "98% Tələbə Qəbulu",
-      offer: "-30% ENDİRİM",
-    },
-    {
-      title: "Respublika Fənn Olimpiadalarına Hazırlıq",
-      subtitle: "Riyaziyyat, Məntiq və İnformatika üzrə İntensiv Kurs",
-      desc: "Olimpiada suallarının xüsusi həll metodları. Respublika və beynəlxalq müsabiqələrdə qalib olmaq şansı qazan!",
-      features: ["Olimpiada Tapşırıqları", "Ekspert Mentorlar", "Sertifikat və Mükafatlar"],
-      cta: "Qeydiyyatdan Keç",
-      badge: "Olimpiada",
-      icon: Award,
-      color: "from-emerald-600 via-teal-600 to-cyan-700",
-      stats: "Qeydiyyat Açıqdır",
-      offer: "PULSUZ SINAQ",
-    },
-    {
-      title: "Xarici Dillər Mərkəzi: IELTS & General English",
-      subtitle: "İlk Dərs Tamamilə Ödənişsizdir!",
-      desc: "Native speaker müəllimlərlə ingilis, alman və rus dili dərsləri. Qısa müddətdə sərbəst danışıq və yüksək imtahan balları.",
-      features: ["Speaking Club", "IELTS Mock Test", "Pulsuz Tədris Vəsaitləri"],
-      cta: "Ödənişsiz Sınaq Dərsi Al",
-      badge: "Xarici Dil",
-      icon: BookOpen,
-      color: "from-violet-600 via-purple-600 to-indigo-800",
-      stats: "IELTS 7.5+ Zəmanəti",
-      offer: "1-Cİ DƏRS ÖDƏNİŞSİZ",
-    },
-    {
-      title: "EduTech: Python, Süni İntellekt və Robototexnika",
-      subtitle: "Gələcəyin İT Mütəxəssisləri üçün Praktiki Dərslər",
-      desc: "Məktəblilər üçün praktiki kodlaşdırma və AI dərsləri. Sıfırdan öz oyunlarını və süni intellekt layihələrini hazırla!",
-      features: ["Praktiki Layihələr", "AI & Data Science", "Beynəlxalq Sertifikat"],
-      cta: "İT Kursuna Qoşul",
-      badge: "İT Təhsil",
-      icon: Rocket,
-      color: "from-amber-600 via-orange-600 to-red-700",
-      stats: "Beynəlxalq Sertifikat",
-      offer: "XÜSUSİ TƏQAÜD",
-    },
-  ]
-
-  // Demo reklamı refreshKey dəyişdikcə dinamik dəyişmək üçün
-  const getIndex = () => {
-    if (typeof refreshKey === "number") return Math.abs(refreshKey) % sampleAds.length
-    if (typeof refreshKey === "string") {
-      const match = refreshKey.match(/\d+/)
-      const base = match ? parseInt(match[0], 10) : 0
-      const offset = refreshKey.includes("right") ? 1 : refreshKey.includes("completed") ? 2 : 0
-      return (base + offset) % sampleAds.length
-    }
-    return 0
-  }
-
-  const currentAdIndex = getIndex()
-  const activeDemoAd = sampleAds[currentAdIndex]
-  const AdIcon = activeDemoAd.icon
   const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || ""
 
+  // Təsadüfi cümlə seçimi (Random slogan selection)
   useEffect(() => {
     setIsRefreshing(true)
-    const timeout = setTimeout(() => setIsRefreshing(false), 200)
+    const randomIndex = Math.floor(Math.random() * BRAND_SLOGANS.length)
+    setSloganIndex(randomIndex)
+
+    const timeout = setTimeout(() => setIsRefreshing(false), 150)
 
     if (adsenseClientId && typeof window !== "undefined") {
       try {
         const adsbygoogle = (window as any).adsbygoogle || []
         adsbygoogle.push({})
       } catch (e) {
-        console.warn("AdSense push xətası:", e)
+        // Safe ignore
       }
     }
 
     return () => clearTimeout(timeout)
   }, [refreshKey, adsenseClientId])
 
+  const currentSlogan = BRAND_SLOGANS[sloganIndex]
   const isVertical = format === "vertical"
   const isLarge = format === "large-banner"
 
   return (
     <div
       ref={adRef}
-      className={`w-full max-w-full overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-300 ${
-        isRefreshing ? "opacity-40 scale-[0.99]" : "opacity-100 scale-100"
+      className={`w-full max-w-full overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-900 shadow-md transition-all duration-300 ${
+        isRefreshing ? "opacity-60 scale-[0.99]" : "opacity-100 scale-100"
       } ${className}`}
     >
-      {/* Reklam Başlıq Zolağı */}
-      <div className="flex items-center justify-between px-3 py-1.5 bg-muted/50 border-b border-border/60 text-[11px] text-muted-foreground">
+      {/* Başlıq Zolağı */}
+      <div className="flex items-center justify-between px-3 py-1.5 bg-slate-800/80 border-b border-slate-700/60 text-[11px] text-slate-300">
         <span className="flex items-center gap-1.5 font-medium tracking-wide">
-          <Sparkles className="w-3 h-3 text-primary" />
+          <Sparkles className="w-3 h-3 text-blue-400" />
           {label}
         </span>
-        <span className="text-[10px] opacity-75">TESTAI Ads</span>
+        <span className="text-[10px] text-blue-400 font-semibold uppercase tracking-wider">
+          TESTAI Partnyor
+        </span>
       </div>
 
-      {/* AdSense İnteqrasiyası */}
+      {/* AdSense İnteqrasiyası (Aktiv olduqda) və ya Rəsmi Brend Banneri */}
       {adsenseClientId ? (
-        <div className={`p-2 flex justify-center items-center w-full max-w-full overflow-hidden ${isVertical ? "min-h-[400px]" : isLarge ? "min-h-[220px]" : "min-h-[90px]"}`}>
+        <div
+          className={`p-2 flex justify-center items-center w-full max-w-full overflow-hidden ${
+            isVertical ? "min-h-[400px]" : isLarge ? "min-h-[220px]" : "min-h-[90px]"
+          }`}
+        >
           <ins
             className="adsbygoogle"
-            style={{ display: "block", textAlign: "center", width: "100%", maxWidth: "100%", overflow: "hidden" }}
+            style={{
+              display: "block",
+              textAlign: "center",
+              width: "100%",
+              maxWidth: "100%",
+              overflow: "hidden",
+            }}
             data-ad-client={adsenseClientId}
             data-ad-slot={slot}
-            data-ad-format={isVertical ? "vertical" : isLarge ? "rectangle" : format === "rectangle" ? "rectangle" : "horizontal"}
+            data-ad-format={
+              isVertical
+                ? "vertical"
+                : isLarge
+                ? "rectangle"
+                : format === "rectangle"
+                ? "rectangle"
+                : "horizontal"
+            }
             data-full-width-responsive="true"
           />
         </div>
       ) : isVertical ? (
-        /* Şaquli (Vertical / Yan Panel) Reklam Formatı */
-        <div className={`p-5 bg-gradient-to-b ${activeDemoAd.color} text-white flex flex-col justify-between min-h-[420px]`}>
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-white/20 text-white backdrop-blur-xs">
-                {activeDemoAd.badge}
-              </span>
-              <div className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center">
-                <AdIcon className="w-4 h-4 text-white" />
-              </div>
+        /* Şaquli Format (Yan Panellər üçün) */
+        <div className="p-5 bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900 text-white flex flex-col justify-between items-center text-center min-h-[420px]">
+          <div className="w-full flex flex-col items-center space-y-4">
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+              <Sparkles className="w-3 h-3 text-blue-400" />
+              Sponsorluq Fürsəti
+            </span>
+
+            {/* Rəsmi Loqo */}
+            <div className="relative w-32 h-32 rounded-2xl overflow-hidden shadow-2xl border-2 border-indigo-400/30 group-hover:scale-105 transition-transform bg-slate-950">
+              <Image
+                src="/brand-promo.jpg"
+                alt="AI TEST Emil Məcidov"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
 
-            <div className="space-y-2">
-              <h4 className="text-base font-bold leading-snug drop-shadow-xs">
-                {activeDemoAd.title}
+            {/* Təsadüfi Cümlə */}
+            <div className="space-y-2 px-1">
+              <h4 className="text-base sm:text-lg font-extrabold text-white leading-snug tracking-tight">
+                "{currentSlogan}"
               </h4>
-              <p className="text-xs text-white/90 leading-relaxed">
-                {activeDemoAd.desc}
+              <p className="text-xs text-indigo-200/80 leading-relaxed">
+                Brendinizi minlərlə məktəbli, valideyn və müəllimdən ibarət savadlı auditoriyaya çatdırın.
               </p>
             </div>
           </div>
 
-          <div className="space-y-3 pt-4 border-t border-white/20">
-            <div className="text-[11px] font-medium text-white/80 flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-yellow-300" />
-              {activeDemoAd.stats}
-            </div>
-            <button
-              onClick={() => {}}
-              className="w-full py-2.5 bg-white text-gray-900 font-bold text-xs rounded-xl shadow-lg hover:bg-gray-100 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
+          <div className="w-full space-y-2 pt-4 border-t border-slate-800">
+            <a
+              href="mailto:aztestai.az@gmail.com?subject=Brend%20%C6%8Fm%C9%99kda%C5%9Fl%C4%B1%C4%9F%C4%B1%20TESTAI.AZ"
+              className="w-full py-2.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02]"
             >
-              <span>{activeDemoAd.cta}</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-70" />
-            </button>
+              <Mail className="w-3.5 h-3.5" />
+              <span>Bizimlə Əlaqə</span>
+            </a>
+            <span className="text-[11px] text-slate-400 block break-all">
+              aztestai.az@gmail.com
+            </span>
           </div>
         </div>
       ) : isLarge ? (
-        /* Böyük / Genişləndirilmiş Nəticə Reklam Formatı (Large Banner) */
-        <div className={`p-4 sm:p-6 md:p-7 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6`}>
-          <div className="flex-1 space-y-3 text-center md:text-left">
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white backdrop-blur-xs shadow-xs">
-                <Gift className="w-3.5 h-3.5 text-yellow-300" />
-                {activeDemoAd.offer}
-              </span>
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white/90">
-                {activeDemoAd.badge}
-              </span>
+        /* Böyük / Genişləndirilmiş Format (Nəticə və alt sahələr üçün) */
+        <div className="p-5 sm:p-6 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 text-center sm:text-left">
+            {/* Rəsmi Loqo */}
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-2xl overflow-hidden shadow-2xl border-2 border-indigo-400/30 bg-slate-950">
+              <Image
+                src="/brand-promo.jpg"
+                alt="AI TEST Emil Məcidov"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
 
-            <div className="space-y-1">
-              <h3 className="text-lg sm:text-xl font-extrabold tracking-tight drop-shadow-sm">
-                {activeDemoAd.title}
+            <div className="space-y-1.5 max-w-xl">
+              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                <Sparkles className="w-3.5 h-3.5 text-blue-400" />
+                Sponsorluq və Brend Əməkdaşlığı
+              </span>
+              <h3 className="text-base sm:text-xl font-extrabold text-white tracking-tight leading-snug">
+                "{currentSlogan}"
               </h3>
-              <p className="text-xs sm:text-sm font-medium text-white/90">
-                {activeDemoAd.subtitle}
+              <p className="text-xs sm:text-sm text-indigo-200/80 leading-relaxed">
+                Azərbaycanın ilk dərslik əsaslı süni intellekt platformasında brendinizi savadlı gələcək nəsillə birləşdirin.
               </p>
-            </div>
-
-            <p className="text-xs text-white/80 line-clamp-2 max-w-2xl leading-relaxed">
-              {activeDemoAd.desc}
-            </p>
-
-            {/* Xüsusiyyətlər nişanları */}
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-1">
-              {activeDemoAd.features.map((feat, idx) => (
-                <span key={idx} className="inline-flex items-center gap-1 text-[11px] text-white/90 font-medium">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-300" />
-                  {feat}
-                </span>
-              ))}
             </div>
           </div>
 
-          <div className="shrink-0 flex flex-col items-center gap-2">
-            <button
-              onClick={() => {}}
-              className="px-6 py-3.5 bg-white text-gray-900 font-extrabold text-sm rounded-xl shadow-xl hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
+          <div className="shrink-0 flex flex-col items-center sm:items-end gap-1.5">
+            <a
+              href="mailto:aztestai.az@gmail.com?subject=Brend%20%C6%8Fm%C9%99kda%C5%9Fl%C4%B1%C4%9F%C4%B1%20TESTAI.AZ"
+              className="px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xl transition-all flex items-center gap-2 cursor-pointer hover:scale-105 active:scale-95"
             >
-              <span>{activeDemoAd.cta}</span>
-              <ExternalLink className="w-4 h-4 text-gray-700" />
-            </button>
-            <span className="text-[11px] text-white/80 font-medium">
-              ⭐ {activeDemoAd.stats}
+              <Mail className="w-4 h-4" />
+              <span>Bizimlə Əlaqə</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <span className="text-[11px] text-slate-400 font-medium">
+              aztestai.az@gmail.com
             </span>
           </div>
         </div>
       ) : (
-        /* Standart Üfüqi (Horizontal) Reklam Formatı */
-        <div className={`p-3 sm:p-4 bg-gradient-to-r ${activeDemoAd.color} text-white flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3`}>
-          <div className="flex-1 text-center sm:text-left space-y-1">
-            <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/20 text-white backdrop-blur-xs">
-              <span>{activeDemoAd.badge}</span>
+        /* Standart Üfüqi (Horizontal / Rectangle / Auto) Format */
+        <div className="p-3.5 sm:p-4 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-center gap-3.5 text-center sm:text-left flex-col sm:flex-row">
+            {/* Rəsmi Loqo */}
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-xl overflow-hidden shadow-lg border border-indigo-400/30 bg-slate-950">
+              <Image
+                src="/brand-promo.jpg"
+                alt="AI TEST Emil Məcidov"
+                fill
+                className="object-cover"
+              />
             </div>
-            <h4 className="text-sm sm:text-base font-bold leading-tight drop-shadow-xs">
-              {activeDemoAd.title}
-            </h4>
-            <p className="text-xs text-white/90 line-clamp-1 max-w-xl">
-              {activeDemoAd.desc}
-            </p>
+
+            <div className="space-y-0.5">
+              <span className="inline-flex items-center gap-1 text-[10px] font-bold text-blue-400 uppercase tracking-wider">
+                <Sparkles className="w-2.5 h-2.5" />
+                Sponsorluq Fürsəti
+              </span>
+              <h4 className="text-xs sm:text-sm font-bold text-white leading-snug">
+                "{currentSlogan}"
+              </h4>
+              <p className="text-[11px] text-indigo-200/70 hidden md:block">
+                Brendinizi gələcəyin təhsilli nəsli ilə birləşdirin • aztestai.az@gmail.com
+              </p>
+            </div>
           </div>
 
           <div className="shrink-0">
-            <button
-              onClick={() => {}}
-              className="px-4 py-2 bg-white text-gray-900 font-semibold text-xs rounded-lg shadow-md hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
+            <a
+              href="mailto:aztestai.az@gmail.com?subject=Brend%20%C6%8Fm%C9%99kda%C5%9Fl%C4%B1%C4%9F%C4%B1%20TESTAI.AZ"
+              className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-xs rounded-xl shadow-md transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105"
             >
-              <span>{activeDemoAd.cta}</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-70" />
-            </button>
+              <span>Bizimlə Əlaqə</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
       )}

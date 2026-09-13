@@ -23,13 +23,13 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           </span>
         </div>
 
-        {/* Yuxarı Zərif Reklam Zolağı */}
+        {/* Yuxarı Brend Zolağı */}
         <div className="pt-1">
           <AdBanner
             slot="dashboard-mobile-top"
             format="horizontal"
             refreshKey="dash-top"
-            label="Təhsil Tərəfdaşlığı"
+            label="Sponsorluq və Brend Əməkdaşlığı"
           />
         </div>
       </header>
@@ -52,13 +52,13 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           </nav>
         </div>
 
-        {/* Sol Sidebar Reklam Bloku */}
+        {/* Sol Sidebar Brend Bloku */}
         <div className="pt-4 mt-auto">
           <AdBanner
             slot="sidebar-left-ad"
             format="vertical"
             refreshKey="sidebar-ad"
-            label="Sponsorlu Təhsil"
+            label="Sponsorluq Fürsəti"
           />
         </div>
       </aside>

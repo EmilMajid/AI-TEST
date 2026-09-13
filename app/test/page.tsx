@@ -429,7 +429,7 @@ export default function TestPage() {
               slot="result-sidebar-left"
               format="vertical"
               refreshKey="result-left"
-              label="Tövsiyə Olunan Kurslar"
+              label="Sponsorluq Fürsəti"
             />
           </aside>
 
@@ -476,7 +476,7 @@ export default function TestPage() {
                     slot="result-featured-large"
                     format="large-banner"
                     refreshKey="completed-main"
-                    label="Xüsusi Təhsil Təklifi və Endirim Kampaniyası"
+                    label="Sponsorluq və Brend Əməkdaşlığı"
                   />
                 </div>
 
@@ -508,7 +508,7 @@ export default function TestPage() {
               slot="result-sidebar-right"
               format="vertical"
               refreshKey="result-right"
-              label="Sponsorlu Təhsil"
+              label="Brend Əməkdaşlığı"
             />
           </aside>
 
@@ -528,7 +528,7 @@ export default function TestPage() {
               slot="ready-sidebar-left"
               format="vertical"
               refreshKey="ready-left"
-              label="Tövsiyə Olunan Kurslar"
+              label="Sponsorluq Fürsəti"
             />
           </aside>
 
@@ -599,7 +599,7 @@ export default function TestPage() {
                     slot="ready-bottom-banner"
                     format="large-banner"
                     refreshKey="ready-main"
-                    label="Xüsusi Təhsil Təklifi və Endirim Kampaniyası"
+                    label="Sponsorluq və Brend Əməkdaşlığı"
                   />
                 </div>
 
@@ -626,7 +626,7 @@ export default function TestPage() {
               slot="ready-sidebar-right"
               format="vertical"
               refreshKey="ready-right"
-              label="Sponsorlu Elanlar"
+              label="Sponsorluq Fürsəti"
             />
           </aside>
 
@@ -648,7 +648,7 @@ export default function TestPage() {
             slot="test-sidebar-left"
             format="vertical"
             refreshKey={currentQuestionIndex}
-            label="Tövsiyə Olunan Təhsil"
+            label="Sponsorluq Fürsəti"
           />
         </aside>
 
@@ -767,7 +767,7 @@ export default function TestPage() {
             slot="test-sidebar-right"
             format="vertical"
             refreshKey={`right-${currentQuestionIndex}`}
-            label="Sponsorlu Elanlar"
+            label="Brend Əməkdaşlığı"
           />
         </aside>
 

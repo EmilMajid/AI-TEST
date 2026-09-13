@@ -50,12 +50,12 @@ export function TestInterstitialAd({ isOpen, onComplete }: TestInterstitialAdPro
           </p>
         </div>
 
-        {/* Sponsor / AdSense Reklam Bloku */}
+        {/* Sponsor / Brend Əməkdaşlığı Bloku */}
         <div className="my-2">
           <AdBanner
             slot="test-interstitial-slot"
             format="rectangle"
-            label="Sponsor Reklamı"
+            label="Sponsorluq və Brend Əməkdaşlığı"
             className="border-primary/20 shadow-sm"
           />
         </div>
