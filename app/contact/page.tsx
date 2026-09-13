@@ -2,9 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Mail, MessageSquare, Globe, ArrowLeft } from "lucide-react"
-
-type Lang = "az" | "en" | "tr" | "ru"
+import { Mail, MessageSquare, ArrowLeft } from "lucide-react"
+import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 
 export default function ContactPage() {
   const [lang, setLang] = useState<Lang>("az")
@@ -13,25 +12,13 @@ export default function ContactPage() {
     <div className="min-h-screen bg-slate-50 text-slate-800">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
-          <Link href="/" className="flex items-center gap-2 text-primary font-bold text-lg">
+          <Link href="/" className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity">
             <ArrowLeft className="w-5 h-5" />
             <span>TESTAI.AZ</span>
           </Link>
 
-          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200">
-            <Globe className="w-4 h-4 ml-2 mr-1 text-slate-500" />
-            {(["az", "en", "tr", "ru"] as Lang[]).map((l) => (
-              <button
-                key={l}
-                onClick={() => setLang(l)}
-                className={`px-2.5 py-1 text-xs font-semibold rounded-lg uppercase transition-all cursor-pointer ${
-                  lang === l ? "bg-white text-slate-900 shadow-xs" : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                {l}
-              </button>
-            ))}
-          </div>
+          {/* Açılıb-yığılan Language Dropdown */}
+          <LanguageDropdown currentLang={lang} onSelectLang={setLang} />
         </div>
       </header>
 
