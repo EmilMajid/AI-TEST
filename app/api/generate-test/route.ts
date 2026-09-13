@@ -10,6 +10,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
 import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
+import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabase-questions"
 
 export async function POST(request: NextRequest) {
   try {
@@ -150,19 +151,59 @@ Mövzu: ${topic}`
     const googleKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY
     const anthropicKey = process.env.ANTHROPIC_API_KEY
 
-    // STEP 0: offline_tests.json-dan hazır sualları yoxla (əgər forceAi aktiv deyilsə)
+    // STEP 0: Supabase PostgreSQL (Əsas Mənbə) və ya offline_tests.json (Fallback)
     const isForceAi = forceAi === true || request.headers.get("x-force-ai") === "true"
     if (!isForceAi) {
-      console.log("🔄 offline_tests.json-dan hazır suallar axtarılır...")
+      const gradeDigit = Number(String(grade || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || String(textbook || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || 0)
+      const canonicalSubject = resolveCanonicalSubject(textbook, gradeDigit)
+
+      // 1. Əvvəlcə Supabase PostgreSQL bazasını yoxla (2.5s timeout ilə)
+      if (gradeDigit > 0) {
+        try {
+          console.log(`🔍 [Supabase] Suallar axtarılır: Sinif ${gradeDigit}, Fənn: "${canonicalSubject}", Mövzu: "${topic}"`)
+          const supabaseQuestions = await getQuestionsFromSupabase({
+            grade: gradeDigit,
+            subject: canonicalSubject,
+            topic: topic || "",
+            count: Number(questionCount) || 10,
+            difficulty,
+          })
+
+          if (supabaseQuestions && supabaseQuestions.length > 0) {
+            console.log(`✅ [Supabase] ${supabaseQuestions.length} sual uğurla çəkildi!`)
+            return NextResponse.json({
+              questions: supabaseQuestions,
+              provider: "supabase",
+              success: true,
+              message: `${supabaseQuestions.length} test sualı Supabase bazasından yükləndi`,
+              metadata: {
+                textbook,
+                topic,
+                grade,
+                difficulty,
+                questionCount: supabaseQuestions.length,
+                timeLimit,
+                recommendedTime,
+                difficultyDistribution: getDifficultyDistribution(supabaseQuestions),
+              },
+            })
+          }
+        } catch (supaErr) {
+          console.warn("⚠️ [Supabase] Xəta və ya timeout, lokal fallback-a keçilir:", supaErr)
+        }
+      }
+
+      // 2. Fallback: Əgər Supabase-dən sual gəlmədisə, lokal grade_X.json faylından oxu
+      console.log("🔄 [Fallback] Lokal JSON bazasından hazır suallar axtarılır...")
       const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
 
       if (offlineQuestions.length > 0) {
-        console.log(`✅ offline_tests.json-dan ${offlineQuestions.length} hazır sual tapıldı! AI sorğusu ləğv edilir.`)
+        console.log(`✅ [Fallback] Lokal bazadan ${offlineQuestions.length} hazır sual tapıldı!`)
         return NextResponse.json({
           questions: offlineQuestions,
           provider: "offline",
           success: true,
-          message: `${offlineQuestions.length} test sualı hazır bazadan yükləndi`,
+          message: `${offlineQuestions.length} test sualı lokal bazadan yükləndi`,
           metadata: {
             textbook,
             topic,
