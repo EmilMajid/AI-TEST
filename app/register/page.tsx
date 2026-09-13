@@ -326,7 +326,7 @@ export default function RegisterPage() {
               slot="register-sidebar-left"
               format="vertical"
               refreshKey="reg-left"
-              label="Tövsiyə Olunan Təhsil"
+              label="Sponsorluq Fürsəti"
             />
           </aside>
 
@@ -929,7 +929,7 @@ export default function RegisterPage() {
             slot="register-sidebar-right"
             format="vertical"
             refreshKey="reg-right"
-            label="Sponsorlu Elanlar"
+            label="Brend Əməkdaşlığı"
           />
         </aside>
 

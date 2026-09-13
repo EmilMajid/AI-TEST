@@ -13,6 +13,7 @@ import { useTheme } from "@/hooks/use-theme"
 import RegionBackground from "@/components/region-background"
 import Image from "next/image"
 import { getDashboardPath, getUserUniqueId } from "@/lib/profile-utils"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -290,7 +291,7 @@ export default function LoginPage() {
               slot="login-sidebar-left"
               format="vertical"
               refreshKey="login-left"
-              label="Tövsiyə Olunan Təhsil"
+              label="Sponsorluq Fürsəti"
             />
           </aside>
 
@@ -530,7 +531,7 @@ export default function LoginPage() {
               slot="login-sidebar-right"
               format="vertical"
               refreshKey="login-right"
-              label="Sponsorlu Elanlar"
+              label="Brend Əməkdaşlığı"
             />
           </aside>
 

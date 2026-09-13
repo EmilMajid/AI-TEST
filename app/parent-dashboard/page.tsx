@@ -1106,7 +1106,7 @@ export default function ParentDashboard() {
             slot="parent-dashboard-mobile-top"
             format="horizontal"
             refreshKey="parent-top"
-            label="Təhsil Tərəfdaşlığı"
+            label="Sponsorluq və Brend Əməkdaşlığı"
           />
         </div>
       </header>
@@ -2384,7 +2384,7 @@ export default function ParentDashboard() {
                   slot="parent-dashboard-bottom-banner"
                   format="large-banner"
                   refreshKey="parent-bottom"
-                  label="Tövsiyə Olunan Təhsil Təklifi və Hazırlıq Proqramı"
+                  label="Sponsorluq və Brend Əməkdaşlığı"
                 />
               </div>
             </div>
