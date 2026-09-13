@@ -163,7 +163,7 @@ export async function GET() {
           }
 
           // 1. Şagirdin profilindəki birbaşa parentId
-          if ((c as any).parentId && (String((c as any).parentId) === String(u.id) || (String((c as any).parentId) === "parent-rufat" && u.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
+          if ((c as any).parentId && (String((c as any).parentId) === String(u.id) || (String((c as any).parentId) === "parent-rufat" && u.email?.toLowerCase() === "r.h.rzayev@gmail.com") || (String((c as any).parentId) === "parent-jale" && u.email?.toLowerCase() === "jalehuseynova@gmail.com"))) {
             return true
           }
           // 2. Şagirdin profilindəki birbaşa parentEmail

@@ -21,9 +21,8 @@ const REAL_FILE = getStoragePath("testai_real_users.json")
 const LINKS_FILE = getStoragePath("testai_student_links.json")
 import { createClient } from "@supabase/supabase-js"
 
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ""
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || ""
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://hkwppwinuyxznjnkdius.supabase.co"
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhrd3Bwd2ludXl4em5qbmtkaXVzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4ODM5NDQ4OCwiZXhwIjoyMTAzOTcwNDg4fQ.s7CdTAHQucsWAeSRRCWLnJtCLJeFzy6KehmZoo5i6CE"
 
 export const supabaseAdmin: any = (supabaseUrl && supabaseServiceKey)
   ? createClient(supabaseUrl, supabaseServiceKey, {
@@ -239,11 +238,14 @@ export function isMockUser(u: StoredUser | any): boolean {
   const id = String(u.id || "").toLowerCase().trim()
   const email = (u.email || "").toLowerCase().trim()
 
-  // Real istifadəçilər (Rüfət, Ayaz, Araz)
+  // Real istifadəçilər (Rüfət, Ayaz, Araz, Jalə, Mətin, Nərgiz)
   if (
-    email === "r.h.rzayev@gmail.com" || id === "parent-rufat" ||
-    email === "ayaz.rzayev.309@testai.az" || id === "student-ayaz-309" ||
-    email === "araz.rzayev.309@testai.az" || id === "student-araz-309"
+    email === "r.h.rzayev@gmail.com" || id === "parent-rufat" || id === "2" ||
+    email === "ayaz.rzayev.309@testai.az" || id === "student-ayaz-309" || id === "3" ||
+    email === "araz.rzayev.309@testai.az" || id === "student-araz-309" || id === "4" ||
+    email === "jalehuseynova@gmail.com" || id === "parent-jale" || id === "17" ||
+    email === "metin.qasimli.308@testai.az" || id === "student-metin-308" || id === "18" ||
+    email === "nergiz.ismayilli.17@testai.az" || id === "student-nergiz-17" || id === "14"
   ) {
     return false
   }
@@ -347,17 +349,25 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     map.set(key, { ...map.get(key), ...u })
   }
 
-  // 5. Rüfət + Ayaz + Araz sabit fallback (real istifadəçilər)
+  // 5. Bütün 6 Real İstifadəçi Sabit Fallback (Rüfət, Ayaz, Araz, Jalə, Mətin, Nərgiz)
   const rufatKey = "r.h.rzayev@gmail.com"
   const ayazKey = "ayaz.rzayev.309@testai.az"
   const arazKey = "araz.rzayev.309@testai.az"
-  let rufatUser = map.get(rufatKey) || map.get("parent-rufat")
-  let ayazUser = map.get(ayazKey) || map.get("student-ayaz-309")
-  let arazUser = map.get(arazKey) || map.get("student-araz-309")
+  const jaleKey = "jalehuseynova@gmail.com"
+  const metinKey = "metin.qasimli.308@testai.az"
+  const nergizKey = "nergiz.ismayilli.17@testai.az"
 
+  let rufatUser = map.get(rufatKey) || map.get("parent-rufat") || map.get("2")
+  let ayazUser = map.get(ayazKey) || map.get("student-ayaz-309") || map.get("3")
+  let arazUser = map.get(arazKey) || map.get("student-araz-309") || map.get("4")
+  let jaleUser = map.get(jaleKey) || map.get("parent-jale") || map.get("17")
+  let metinUser = map.get(metinKey) || map.get("student-metin-308") || map.get("18")
+  let nergizUser = map.get(nergizKey) || map.get("student-nergiz-17") || map.get("14")
+
+  // 1. Rüfət
   if (!rufatUser && !deletedUserIds.has(rufatKey)) {
     rufatUser = {
-      id: "parent-rufat",
+      id: 2,
       email: "r.h.rzayev@gmail.com",
       password: "Rufat-141181",
       accountType: "parent",
@@ -373,16 +383,17 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     }
     map.set(rufatKey, rufatUser)
   } else if (rufatUser) {
-    if (!rufatUser.source) rufatUser.source = "real"
-    rufatUser.password = "Rufat-141181"
+    rufatUser.source = "real"
+    if (!rufatUser.password) rufatUser.password = "Rufat-141181"
     if (!rufatUser.fatherName || rufatUser.fatherName === "Həsən") {
       rufatUser.fatherName = "Hüseynağa"
     }
   }
 
+  // 2. Ayaz
   if (!ayazUser && !deletedUserIds.has(ayazKey)) {
     ayazUser = {
-      id: "student-ayaz-309",
+      id: 3,
       email: "ayaz.rzayev.309@testai.az",
       password: "Ayaz-020813",
       accountType: "student",
@@ -393,8 +404,9 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       class: "8",
       region: "Bakı",
       role: "student",
-      parentId: rufatUser?.id || "parent-rufat",
+      parentId: rufatUser?.id || 2,
       parentEmail: "r.h.rzayev@gmail.com",
+      uniqueId: "@ayaz.rzayev.309",
       status: "active",
       isBlocked: false,
       source: "real",
@@ -404,14 +416,15 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     ayazUser.parentId = rufatUser.id
     ayazUser.parentEmail = rufatUser.email
     if (!ayazUser.fatherName) ayazUser.fatherName = "Rüfət"
-    if (!ayazUser.source) ayazUser.source = "real"
+    ayazUser.source = "real"
     if (ayazUser.class === "5") ayazUser.class = "8"
-    ayazUser.password = "Ayaz-020813"
+    if (!ayazUser.password) ayazUser.password = "Ayaz-020813"
   }
 
+  // 3. Araz
   if (!arazUser && !deletedUserIds.has(arazKey)) {
     arazUser = {
-      id: "student-araz-309",
+      id: 4,
       email: "araz.rzayev.309@testai.az",
       password: "Araz-141115",
       accountType: "student",
@@ -422,8 +435,9 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       class: "6",
       region: "Bakı",
       role: "student",
-      parentId: rufatUser?.id || "parent-rufat",
+      parentId: rufatUser?.id || 2,
       parentEmail: "r.h.rzayev@gmail.com",
+      uniqueId: "@araz.rzayev.309",
       status: "active",
       isBlocked: false,
       source: "real",
@@ -433,9 +447,89 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
     arazUser.parentId = rufatUser.id
     arazUser.parentEmail = rufatUser.email
     if (!arazUser.fatherName) arazUser.fatherName = "Rüfət"
-    if (!arazUser.source) arazUser.source = "real"
+    arazUser.source = "real"
     if (!arazUser.class) arazUser.class = "6"
-    arazUser.password = "Araz-141115"
+    if (!arazUser.password) arazUser.password = "Araz-141115"
+  }
+
+  // 4. Jalə Qasımlı (Valideyn)
+  if (!jaleUser && !deletedUserIds.has(jaleKey)) {
+    jaleUser = {
+      id: 17,
+      email: "jalehuseynova@gmail.com",
+      password: "Jale1990",
+      accountType: "parent",
+      firstName: "Jalə",
+      lastName: "Qasımlı",
+      fatherName: "Nazim",
+      school: "308 saylı orta məktəb",
+      region: "Bakı",
+      role: "parent",
+      uniqueId: "@jale.qasimli.308",
+      status: "active",
+      isBlocked: false,
+      source: "real",
+    }
+    map.set(jaleKey, jaleUser)
+  } else if (jaleUser) {
+    jaleUser.source = "real"
+    if (!jaleUser.password) jaleUser.password = "Jale1990"
+  }
+
+  // 5. Mətin Qasımlı (Şagird)
+  if (!metinUser && !deletedUserIds.has(metinKey)) {
+    metinUser = {
+      id: 18,
+      email: "metin.qasimli.308@testai.az",
+      password: "Mətin2018",
+      accountType: "student",
+      firstName: "Mətin",
+      lastName: "Qasımlı",
+      fatherName: "Məmməd",
+      school: "308 saylı orta məktəb",
+      class: "3",
+      region: "Bakı",
+      role: "student",
+      parentId: jaleUser?.id || 17,
+      parentEmail: "jalehuseynova@gmail.com",
+      uniqueId: "@metin.qasimli.308",
+      status: "active",
+      isBlocked: false,
+      source: "real",
+    }
+    map.set(metinKey, metinUser)
+  } else if (metinUser && jaleUser) {
+    metinUser.parentId = jaleUser.id
+    metinUser.parentEmail = jaleUser.email
+    if (!metinUser.fatherName) metinUser.fatherName = "Məmməd"
+    metinUser.source = "real"
+    if (!metinUser.class) metinUser.class = "3"
+    if (!metinUser.password) metinUser.password = "Mətin2018"
+  }
+
+  // 6. Nərgiz İsmayıllı (Şagird)
+  if (!nergizUser && !deletedUserIds.has(nergizKey)) {
+    nergizUser = {
+      id: 14,
+      email: "nergiz.ismayilli.17@testai.az",
+      password: "Test@2026",
+      accountType: "student",
+      firstName: "Nərgiz",
+      lastName: "İsmayıllı",
+      fatherName: "Ramin",
+      school: "Naxçıvan şəhər Azər Tağıyev adına 17 nömrəli tam orta məktəb",
+      class: "9",
+      region: "Naxçıvan Muxtar Respublikası",
+      role: "student",
+      uniqueId: "@nergiz.ismayilli.17",
+      status: "active",
+      isBlocked: false,
+      source: "real",
+    }
+    map.set(nergizKey, nergizUser)
+  } else if (nergizUser) {
+    nergizUser.source = "real"
+    if (!nergizUser.password) nergizUser.password = "Test@2026"
   }
 
   const allList = Array.from(map.values())
@@ -979,6 +1073,25 @@ const DEFAULT_LINKS: StudentLink[] = [
       class: "6",
       school: "309 saylı məktəb"
     }
+  },
+  {
+    id: 5,
+    parentId: 17,
+    parentEmail: "jalehuseynova@gmail.com",
+    studentId: 18,
+    relationshipType: "parent",
+    status: "active",
+    linkedAt: "2026-09-08T10:48:07.960Z",
+    student: {
+      id: 18,
+      firstName: "Mətin",
+      lastName: "Qasımlı",
+      fatherName: "Məmməd",
+      email: "metin.qasimli.308@testai.az",
+      uniqueId: "@metin.qasimli.308",
+      class: "3",
+      school: "308 saylı orta məktəb"
+    }
   }
 ]
 
@@ -1030,6 +1143,7 @@ export function loadLinksFromDisk(): StudentLink[] {
     LINKS_FILE,
     path.join(os.tmpdir(), "testai_student_links.json"),
     path.join(process.cwd(), ".data", "testai_student_links.json"),
+    path.join(process.cwd(), "data", "testai_student_links.json"),
   ]
   const map = new Map<string, StudentLink>()
 
@@ -1086,6 +1200,7 @@ export function saveLinksToDisk(links: StudentLink[]) {
     LINKS_FILE,
     path.join(os.tmpdir(), "testai_student_links.json"),
     path.join(process.cwd(), ".data", "testai_student_links.json"),
+    path.join(process.cwd(), "data", "testai_student_links.json"),
   ]
   for (const p of candidatePaths) {
     try {

@@ -70,16 +70,20 @@ function isMockProfile(u: any): boolean {
     const id = String(u.id || '').toLowerCase().trim()
     const email = (u.email || '').toLowerCase().trim()
     if (
-        email === 'r.h.rzayev@gmail.com' || id === 'parent-rufat' ||
-        email === 'ayaz.rzayev.309@testai.az' || id === 'student-ayaz-309' ||
-        email === 'araz.rzayev.309@testai.az' || id === 'student-araz-309'
+        email === 'r.h.rzayev@gmail.com' || id === 'parent-rufat' || id === '2' ||
+        email === 'ayaz.rzayev.309@testai.az' || id === 'student-ayaz-309' || id === '3' ||
+        email === 'araz.rzayev.309@testai.az' || id === 'student-araz-309' || id === '4' ||
+        email === 'jalehuseynova@gmail.com' || id === 'parent-jale' || id === '17' ||
+        email === 'metin.qasimli.308@testai.az' || id === 'student-metin-308' || id === '18' ||
+        email === 'nergiz.ismayilli.17@testai.az' || id === 'student-nergiz-17' || id === '14'
     ) {
         return false
     }
-    if (u.accountType === 'admin' || u.role === 'admin' || email === 'admin@edu.az' || id === 'admin-main') return false
+    if (u.accountType === 'admin' || u.role === 'admin' || email === 'admin@edu.az' || id === 'admin-main' || id === '1') return false
     if (email.endsWith('@test.com') || email.endsWith('@example.com')) return true
     if (/^(parent|teacher|director|student)-[a-z]/.test(id)) return true
     if (u.source === 'mock') return true
+    if (u.source === 'real') return false
     return false
 }
 

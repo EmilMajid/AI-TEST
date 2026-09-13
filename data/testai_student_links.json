@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "parentId": 2,
+    "parentEmail": "r.h.rzayev@gmail.com",
+    "studentId": 3,
+    "relationshipType": "parent",
+    "status": "active",
+    "linkedAt": "2026-09-05T10:44:12.927Z",
+    "student": {
+      "id": 3,
+      "firstName": "Ayaz",
+      "lastName": "Rzayev",
+      "fatherName": "Rüfət",
+      "email": "ayaz.rzayev.309@testai.az",
+      "uniqueId": "@ayaz.rzayev.309",
+      "class": "8",
+      "school": "309 saylı məktəb"
+    }
+  },
+  {
+    "id": 2,
+    "parentId": 2,
+    "parentEmail": "r.h.rzayev@gmail.com",
+    "studentId": 4,
+    "relationshipType": "parent",
+    "status": "active",
+    "linkedAt": "2026-09-05T10:44:12.927Z",
+    "student": {
+      "id": 4,
+      "firstName": "Araz",
+      "lastName": "Rzayev",
+      "fatherName": "Rüfət",
+      "email": "araz.rzayev.309@testai.az",
+      "uniqueId": "@araz.rzayev.309",
+      "class": "6",
+      "school": "309 saylı məktəb"
+    }
+  },
+  {
+    "id": 5,
+    "parentId": 17,
+    "parentEmail": "jalehuseynova@gmail.com",
+    "studentId": 18,
+    "relationshipType": "parent",
+    "status": "active",
+    "linkedAt": "2026-09-08T10:48:07.960Z",
+    "student": {
+      "id": 18,
+      "firstName": "Mətin",
+      "lastName": "Qasımlı",
+      "fatherName": "Məmməd",
+      "email": "metin.qasimli.308@testai.az",
+      "uniqueId": "@metin.qasimli.308",
+      "class": "3",
+      "school": "308 saylı orta məktəb"
+    }
+  }
+]

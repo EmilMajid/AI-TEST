@@ -343,7 +343,7 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
             }
 
             // 1. Şagirdin profilindəki birbaşa parentId
-            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (supabaseUser?.id && String((c as any).parentId) === String(supabaseUser.id)) || (String((c as any).parentId) === "parent-rufat" && user.email?.toLowerCase() === "r.h.rzayev@gmail.com"))) {
+            if ((c as any).parentId && (String((c as any).parentId) === String(user.id) || (supabaseUser?.id && String((c as any).parentId) === String(supabaseUser.id)) || (String((c as any).parentId) === "parent-rufat" && user.email?.toLowerCase() === "r.h.rzayev@gmail.com") || (String((c as any).parentId) === "parent-jale" && user.email?.toLowerCase() === "jalehuseynova@gmail.com"))) {
                 return true
             }
             // 2. Şagirdin profilindəki birbaşa parentEmail
