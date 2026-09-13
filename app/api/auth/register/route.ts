@@ -5,7 +5,7 @@ import { userRegistrationSchema, parentRegistrationSchema } from "@/lib/validati
 import { generateAccessToken } from "@/lib/jwt"
 import { MOCK_USERS } from "@/lib/mock-data"
 import { getUserUniqueId } from "@/lib/profile-utils"
-import { saveUser } from "@/lib/user-store"
+import { saveUser, supabaseAdmin, getAllUsers } from "@/lib/user-store"
 
 export async function POST(request: NextRequest) {
   try {
@@ -33,12 +33,67 @@ export async function POST(request: NextRequest) {
 
       console.log("[Registration] Registering user:", effectiveEmail, accountType)
 
-      // Generate consistent ID
+      // 1. Duplicate check in Supabase and local store
+      if (supabaseAdmin) {
+        try {
+          const { data: existingUser } = await supabaseAdmin
+            .from("User")
+            .select("id, email")
+            .ilike("email", effectiveEmail)
+            .maybeSingle()
+
+          if (existingUser) {
+            return NextResponse.json(
+              { error: "Bu email ünvanı və ya istifadəçi artıq qeydiyyatdan keçib. Zəhmət olmasa daxil olun." },
+              { status: 400 }
+            )
+          }
+        } catch (checkErr) {
+          console.error("[Registration] Existing check error:", checkErr)
+        }
+      }
+
+      // 2. Generate consistent fallback ID
       const mockId = Date.now()
+      let realUserId: string | number = mockId
+
+      // 3. Write directly to Supabase User table with AWAIT to guarantee cloud persistence
+      if (supabaseAdmin) {
+        try {
+          const { data: suData, error: suErr } = await supabaseAdmin
+            .from("User")
+            .upsert(
+              {
+                email: effectiveEmail.toLowerCase(),
+                password: validatedData.password,
+                firstName: validatedData.firstName,
+                lastName: validatedData.lastName,
+                fatherName: validatedData.fatherName || null,
+                school: validatedData.school || (accountType === "parent" ? "Məktəb qeyd edilməyib" : null),
+                class: (validatedData as any).class ? String((validatedData as any).class) : null,
+                region: validatedData.region || "Bakı",
+                accountType: accountType,
+                role: accountType === "student" ? "student" : ((validatedData as any).role || "parent"),
+                isGlobalAdmin: false,
+                isActive: true,
+              },
+              { onConflict: "email" }
+            )
+            .select()
+
+          if (suErr) {
+            console.error("[Registration] Supabase upsert error:", suErr)
+          } else if (suData && suData[0]) {
+            realUserId = suData[0].id
+          }
+        } catch (insertErr) {
+          console.error("[Registration] Supabase insert exception:", insertErr)
+        }
+      }
 
       // Generate valid JWT
       const token = generateAccessToken({
-        id: mockId,
+        id: realUserId,
         email: effectiveEmail,
         accountType: accountType,
         role: accountType === "student" ? undefined : (validatedData as any).role || "parent"
@@ -46,7 +101,7 @@ export async function POST(request: NextRequest) {
 
       // Add to persistent user store so user can immediately login across all sessions
       const newUser = {
-        id: String(mockId),
+        id: realUserId,
         email: effectiveEmail,
         password: validatedData.password,
         accountType: accountType,
@@ -66,7 +121,7 @@ export async function POST(request: NextRequest) {
           success: true,
           message: "İstifadəçi uğurla qeydiyyatdan keçdi",
           user: {
-            id: mockId,
+            id: realUserId,
             email: effectiveEmail,
             accountType: accountType,
             firstName: validatedData.firstName,
@@ -84,7 +139,7 @@ export async function POST(request: NextRequest) {
             expires_in: 3600 * 24 * 7,
             token_type: "bearer",
             user: {
-              id: mockId,
+              id: realUserId,
               email: effectiveEmail,
             }
           }

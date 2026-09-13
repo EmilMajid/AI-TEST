@@ -10,7 +10,8 @@ import {
   saveLink,
   deleteLink,
   getLinksForParent,
-  type StudentLink
+  type StudentLink,
+  supabaseAdmin
 } from "@/lib/user-store"
 
 const isDemoMode = true; // Forced for full mock mode
@@ -144,9 +145,53 @@ export async function POST(request: NextRequest) {
         status: "active",
         isBlocked: false,
       }
+
+      // 2. Direct Supabase sync with AWAIT for cloud persistence
+      if (supabaseAdmin) {
+        try {
+          const { data: suData } = await supabaseAdmin.from("User").upsert({
+            email: sEmail.toLowerCase(),
+            password: sPassword,
+            firstName: sFirstName,
+            lastName: sLastName,
+            fatherName: sFatherName || null,
+            school: sSchool || null,
+            class: sClass || null,
+            region: "Bakı",
+            accountType: "student",
+            role: "student",
+            isGlobalAdmin: false,
+            isActive: true,
+          }, { onConflict: "email" }).select()
+
+          if (suData && suData[0]) {
+            studentUser.id = suData[0].id
+            sId = suData[0].id
+
+            // Resolve parent ID from Supabase
+            let pIdNum = !isNaN(Number(effectiveId)) ? Number(effectiveId) : null
+            if (!pIdNum && effectiveEmail) {
+              const { data: pData } = await supabaseAdmin.from("User").select("id").ilike("email", effectiveEmail).maybeSingle()
+              if (pData?.id) pIdNum = pData.id
+            }
+
+            if (pIdNum) {
+              await supabaseAdmin.from("ParentStudentLink").upsert({
+                parentId: pIdNum,
+                studentId: suData[0].id,
+                relationshipType: relationshipType || "parent",
+                status: "active",
+              }, { onConflict: "parentId,studentId" })
+            }
+          }
+        } catch (linkSbErr) {
+          console.error("[Link] Supabase direct link error:", linkSbErr)
+        }
+      }
+
       saveUser(studentUser)
 
-      // 2. Persist the link into persistent link store (backed by disk)
+      // 3. Persist the link into persistent link store (backed by disk)
       const newLink: StudentLink = {
         id: Date.now(),
         parentId: effectiveId,

@@ -11,7 +11,7 @@ const loginSchema = z.object({
 })
 
 import { MOCK_USERS } from "@/lib/mock-data"
-import { getAllUsers, saveUser, findUsers, StoredUser } from "@/lib/user-store"
+import { getAllUsers, saveUser, findUsers, StoredUser, supabaseAdmin, isMockUser } from "@/lib/user-store"
 
 export async function POST(request: NextRequest) {
   try {
@@ -101,6 +101,49 @@ export async function POST(request: NextRequest) {
 
         let foundUsers = findUsers({ emailOrId: cleanInput, role });
 
+        // If not found in local memory/disk, query Supabase User table directly!
+        if (foundUsers.length === 0 && supabaseAdmin) {
+          try {
+            const clean = cleanInput.toLowerCase();
+            const cleanWithoutAt = clean.replace("@", "");
+            const isNum = !isNaN(Number(cleanWithoutAt));
+
+            let query = supabaseAdmin.from("User").select("*");
+            if (isNum) {
+              query = query.or(`email.ilike.%${cleanWithoutAt}%,id.eq.${Number(cleanWithoutAt)}`);
+            } else {
+              query = query.or(`email.ilike.%${cleanWithoutAt}%,firstName.ilike.%${cleanWithoutAt}%,lastName.ilike.%${cleanWithoutAt}%`);
+            }
+
+            const { data: sbUsers, error: sbErr } = await query;
+            if (!sbErr && sbUsers && sbUsers.length > 0) {
+              for (const su of sbUsers) {
+                const u = saveUser({
+                  id: su.id,
+                  email: su.email,
+                  password: su.password,
+                  firstName: su.firstName,
+                  lastName: su.lastName,
+                  fatherName: su.fatherName,
+                  school: su.school,
+                  class: su.class ? String(su.class) : undefined,
+                  region: su.region || "Bakı",
+                  accountType: su.accountType || "student",
+                  role: su.role || su.accountType || "student",
+                  status: su.isActive ? "active" : "blocked",
+                  isBlocked: !su.isActive,
+                  source: isMockUser(su) ? "mock" : (su.accountType === "admin" ? "admin" : "real"),
+                });
+                if (!foundUsers.some(f => String(f.id) === String(u.id) || (f.email && f.email.toLowerCase() === u.email.toLowerCase()))) {
+                  foundUsers.push(u);
+                }
+              }
+            }
+          } catch (sbLookupErr) {
+            console.error("[Auth] Supabase lookup error:", sbLookupErr);
+          }
+        }
+
         if (foundUsers.length === 0 && clientUser) {
           foundUsers = [clientUser as StoredUser];
         }
@@ -159,6 +202,41 @@ export async function POST(request: NextRequest) {
                           String(u.id).toLowerCase() === cleanWithoutAt;
                  }) ||
                  users.find((u) => `${u.firstName || ''} ${u.lastName || ''}`.trim().toLowerCase() === cleanInput);
+        }
+
+        // If not found in memory, query Supabase directly!
+        if (!user && supabaseAdmin && cleanInput) {
+          try {
+            const isNum = !isNaN(Number(cleanWithoutAt));
+            let query = supabaseAdmin.from("User").select("*");
+            if (isNum) {
+              query = query.or(`email.ilike.${cleanInput},id.eq.${Number(cleanWithoutAt)}`);
+            } else {
+              query = query.or(`email.ilike.${cleanInput},email.ilike.${cleanWithoutAt}@%`);
+            }
+            const { data: suData } = await query.limit(1);
+            if (suData && suData[0]) {
+              const su = suData[0];
+              user = saveUser({
+                id: su.id,
+                email: su.email,
+                password: su.password,
+                firstName: su.firstName,
+                lastName: su.lastName,
+                fatherName: su.fatherName,
+                school: su.school,
+                class: su.class ? String(su.class) : undefined,
+                region: su.region || "Bakı",
+                accountType: su.accountType || "student",
+                role: su.role || su.accountType || "student",
+                status: su.isActive ? "active" : "blocked",
+                isBlocked: !su.isActive,
+                source: isMockUser(su) ? "mock" : (su.accountType === "admin" ? "admin" : "real"),
+              });
+            }
+          } catch (sbLoginErr) {
+            console.error("[Auth] Supabase login query error:", sbLoginErr);
+          }
         }
 
         // If not found in memory but clientUser was passed, persist and use it
