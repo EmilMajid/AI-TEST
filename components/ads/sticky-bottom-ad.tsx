@@ -5,7 +5,7 @@ import { X, Sparkles } from "lucide-react"
 
 export function StickyBottomAd() {
   const [isVisible, setIsVisible] = useState(true)
-  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-1166444768651699"
+  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || ""
 
   useEffect(() => {
     // If AdSense is present, request ad

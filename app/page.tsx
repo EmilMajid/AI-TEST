@@ -308,18 +308,23 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/about" className="hover:text-white transition-colors">
+                    Haqqımızda (About Us)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-white transition-colors">
+                    Məxfilik Siyasəti (Privacy Policy)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-white transition-colors">
+                    Əlaqə (Contact Us)
+                  </Link>
+                </li>
+                <li>
                   <Link href="/login" className="hover:text-white transition-colors">
                     Dərsliklər və Sınaqlar
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/login" className="hover:text-white transition-colors">
-                    Platformaya Giriş
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/register" className="hover:text-white transition-colors">
-                    Yeni Qeydiyyat
                   </Link>
                 </li>
               </ul>
