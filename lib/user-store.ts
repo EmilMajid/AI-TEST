@@ -46,6 +46,7 @@ export interface StoredUser {
   createdAt?: string
   parentId?: string | number
   parentEmail?: string
+  uniqueId?: string
   isBlocked?: boolean
   status?: "active" | "blocked" | "inactive"
   /** "real" = testai.az vasitəsilə qeydiyyatdan keçmiş | "mock" = test/demo məlumatı | "admin" = xüsusi admin statusu */
@@ -366,7 +367,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 1. Rüfət
   if (!rufatUser && !deletedUserIds.has(rufatKey)) {
-    rufatUser = {
+    const newRufat: StoredUser = {
       id: 2,
       email: "r.h.rzayev@gmail.com",
       password: "Rufat-141181",
@@ -381,7 +382,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(rufatKey, rufatUser)
+    rufatUser = newRufat
+    map.set(rufatKey, newRufat)
   } else if (rufatUser) {
     rufatUser.source = "real"
     if (!rufatUser.password) rufatUser.password = "Rufat-141181"
@@ -392,7 +394,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 2. Ayaz
   if (!ayazUser && !deletedUserIds.has(ayazKey)) {
-    ayazUser = {
+    const newAyaz: StoredUser = {
       id: 3,
       email: "ayaz.rzayev.309@testai.az",
       password: "Ayaz-020813",
@@ -411,7 +413,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(ayazKey, ayazUser)
+    ayazUser = newAyaz
+    map.set(ayazKey, newAyaz)
   } else if (ayazUser && rufatUser) {
     ayazUser.parentId = rufatUser.id
     ayazUser.parentEmail = rufatUser.email
@@ -423,7 +426,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 3. Araz
   if (!arazUser && !deletedUserIds.has(arazKey)) {
-    arazUser = {
+    const newAraz: StoredUser = {
       id: 4,
       email: "araz.rzayev.309@testai.az",
       password: "Araz-141115",
@@ -442,7 +445,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(arazKey, arazUser)
+    arazUser = newAraz
+    map.set(arazKey, newAraz)
   } else if (arazUser && rufatUser) {
     arazUser.parentId = rufatUser.id
     arazUser.parentEmail = rufatUser.email
@@ -454,7 +458,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 4. Jalə Qasımlı (Valideyn)
   if (!jaleUser && !deletedUserIds.has(jaleKey)) {
-    jaleUser = {
+    const newJale: StoredUser = {
       id: 17,
       email: "jalehuseynova@gmail.com",
       password: "Jale1990",
@@ -470,7 +474,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(jaleKey, jaleUser)
+    jaleUser = newJale
+    map.set(jaleKey, newJale)
   } else if (jaleUser) {
     jaleUser.source = "real"
     if (!jaleUser.password) jaleUser.password = "Jale1990"
@@ -478,7 +483,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 5. Mətin Qasımlı (Şagird)
   if (!metinUser && !deletedUserIds.has(metinKey)) {
-    metinUser = {
+    const newMetin: StoredUser = {
       id: 18,
       email: "metin.qasimli.308@testai.az",
       password: "Mətin2018",
@@ -497,7 +502,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(metinKey, metinUser)
+    metinUser = newMetin
+    map.set(metinKey, newMetin)
   } else if (metinUser && jaleUser) {
     metinUser.parentId = jaleUser.id
     metinUser.parentEmail = jaleUser.email
@@ -509,7 +515,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
 
   // 6. Nərgiz İsmayıllı (Şagird)
   if (!nergizUser && !deletedUserIds.has(nergizKey)) {
-    nergizUser = {
+    const newNergiz: StoredUser = {
       id: 14,
       email: "nergiz.ismayilli.17@testai.az",
       password: "Test@2026",
@@ -526,7 +532,8 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
       isBlocked: false,
       source: "real",
     }
-    map.set(nergizKey, nergizUser)
+    nergizUser = newNergiz
+    map.set(nergizKey, newNergiz)
   } else if (nergizUser) {
     nergizUser.source = "real"
     if (!nergizUser.password) nergizUser.password = "Test@2026"

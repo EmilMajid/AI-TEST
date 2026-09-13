@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
       const matchedStudent = allUsers.find((u) => {
         if (u.accountType !== "student") return false
         if (rawEmailOrId && u.email && u.email.toLowerCase() === rawEmailOrId.toLowerCase()) return true
-        const uId = getUserUniqueId(u).toLowerCase()
+        const uId = getUserUniqueId(u as any).toLowerCase()
         if (rawEmailOrId && (uId === cleanId.toLowerCase() || uId.replace("@", "") === rawEmailOrId.toLowerCase())) return true
         if (studentDetails?.firstName && studentDetails?.lastName) {
           return (
@@ -122,7 +122,7 @@ export async function POST(request: NextRequest) {
       const sEmail =
         matchedStudent?.email ||
         (rawEmailOrId.includes("@") && rawEmailOrId.includes(".") ? rawEmailOrId : `${sUniqueId.replace("@", "")}@testai.az`)
-      const sId = matchedStudent ? matchedStudent.id : `student-${Date.now()}`
+      let sId: string | number = matchedStudent ? matchedStudent.id : `student-${Date.now()}`
       const sPassword = (reqPassword || studentDetails?.password || matchedStudent?.password || "Test@2026").trim()
 
       // 1. Persist the student user into user-store with parent attribution, uniqueId and password
