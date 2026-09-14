@@ -1,7 +1,8 @@
 export const dynamic = "force-dynamic"
-import { NextResponse } from 'next/server'
+import { type NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
+import { requireAdmin } from '@/lib/auth-utils'
 
 const accessControlPath = path.join(process.cwd(), 'data', 'access_control.json')
 
@@ -118,7 +119,10 @@ function getDb() {
   return db
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+    const auth = await requireAdmin(req)
+    if (auth instanceof NextResponse) return auth
+
     try {
         const db = getDb()
         return NextResponse.json(db)
@@ -127,7 +131,10 @@ export async function GET() {
     }
 }
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+    const auth = await requireAdmin(req)
+    if (auth instanceof NextResponse) return auth
+
     try {
         const body = await req.json()
         const db = getDb()

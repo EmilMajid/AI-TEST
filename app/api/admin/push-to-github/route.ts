@@ -1,8 +1,12 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { saveAndPushQuestions } from "@/lib/github-sync"
+import { requireAdmin } from "@/lib/auth-utils"
 
 export async function POST(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const body = await request.json()
     const { grade, textbook, topic, questions, githubConfig } = body

@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { getAllUsers, blockUser, deleteUser, loadLinksFromDisk, isMockUser, supabaseAdmin, isTargetDeletedUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 import { getTestResultsForStudent } from "@/lib/test-result-store"
+import { requireAdmin } from "@/lib/auth-utils"
 
 export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
     const userId = params.id

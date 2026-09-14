@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { prisma } from "@/lib/db"
-import { requireAuth } from "@/lib/auth-utils"
+import { requireAdmin } from "@/lib/auth-utils"
 import { errorResponse, AppError, ErrorCode } from "@/lib/error-handler"
 import { requirePermission } from "@/lib/permissions"
 
@@ -10,6 +10,9 @@ import fs from "fs"
 import path from "path"
 
 export async function GET(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const allUsers = getAllUsers(true)
     const realUsers = allUsers.filter(u => u.source === "real" || u.source === "admin")

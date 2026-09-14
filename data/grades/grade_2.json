@@ -158112,6 +158112,84 @@
           "topic": "Welcome",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində səhər görüşərkən 'Sabahınız xeyir' necə deyilir?",
+        "options": [
+          "Good night",
+          "Goodbye",
+          "Thank you",
+          "Good morning"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Good morning' ingilis dilində səhər saatlarında salamlaşmaq üçün istifadə edilir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Welcome",
+        "passport_id": "g2-3112-q16"
+      },
+      {
+        "question": "Biri sizə 'What is your name?' deyə müraciət etdikdə düzgün cavab hansıdır?",
+        "options": [
+          "My name is Ali",
+          "I am fine, thank you",
+          "I am seven",
+          "Yes, it is"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'What is your name?' sualı 'Adın nədir?' deməkdir və cavab 'My name is...' ilə verilir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Welcome",
+        "passport_id": "g2-3112-q17"
+      },
+      {
+        "question": "Məktəbdən evə gedərkən dostunuzla sağollaşmaq üçün hansı ifadəni seçərsiniz?",
+        "options": [
+          "Good morning, teacher",
+          "Goodbye, see you tomorrow",
+          "Hello, how are you",
+          "Nice to meet you"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Goodbye, see you tomorrow' ifadəsi 'Sağ ol, sabaha qədər' mənasında vidalaşma sözüdür.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Welcome",
+        "passport_id": "g2-3112-q18"
       }
     ],
     "Unit 1": [
@@ -158594,6 +158672,84 @@
           "topic": "Unit 1",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Qələm' sözünün ingiliscə qarşılığı hansıdır?",
+        "options": [
+          "Pen",
+          "Book",
+          "Desk",
+          "Bag"
+        ],
+        "correctAnswer": 0,
+        "explanation": "İngilis dilində 'pen' qələm, 'pencil' isə karandaş deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 1",
+        "passport_id": "g2-10348-q16"
+      },
+      {
+        "question": "'This is a school bag' cümləsinin Azərbaycan dilinə tərcüməsi hansıdır?",
+        "options": [
+          "Bu, kitab rəfidir",
+          "Bu, məktəb çantasıdır",
+          "Bu, məktəb həyətidir",
+          "Bu, mənim qələmimdir"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'School bag' məktəb çantası deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 1",
+        "passport_id": "g2-10348-q17"
+      },
+      {
+        "question": "Müəllim 'Open your book, please' dedikdə şagird nə etməlidir?",
+        "options": [
+          "Dəftərini bağlamalıdır",
+          "Ayağa qalxmalıdır",
+          "Kitabını açmalıdır",
+          "Lövhəni silməlidir"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Open your book' ifadəsi 'Kitabını aç' mənasını verir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 1",
+        "passport_id": "g2-10348-q18"
       }
     ],
     "Unit 2": [
@@ -159076,6 +159232,84 @@
           "topic": "Unit 2",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində 'Red' hansı rəngdir?",
+        "options": [
+          "Göy",
+          "Qırmızı",
+          "Sarı",
+          "Yaşıl"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Red' sözü Azərbaycan dilində qırmızı rəngi bildirir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 2",
+        "passport_id": "g2-45441-q16"
+      },
+      {
+        "question": "Hansı rəng adı səhv uyğunlaşdırılmışdır?",
+        "options": [
+          "Blue - Mavi",
+          "Green - Yaşıl",
+          "Yellow - Yaşıl",
+          "Black - Qara"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Yellow' sarı rəng deməkdir, yaşıl rəng isə 'Green' adlanır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 2",
+        "passport_id": "g2-45441-q17"
+      },
+      {
+        "question": "'The sky is blue and the grass is green' cümləsi nəyi bildirir?",
+        "options": [
+          "Səma sarı, ot isə qaradır",
+          "Dəniz qırmızı, günəş qaradır",
+          "Ağaclar böyük, çiçəklər ağdır",
+          "Səma mavi, ot isə yaşıldır"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Sky' səma, 'blue' mavi, 'grass' ot, 'green' isə yaşıl rəng deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 2",
+        "passport_id": "g2-45441-q18"
       }
     ],
     "Unit 3": [
@@ -159558,6 +159792,84 @@
           "topic": "Unit 3",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində 'Five' hansı rəqəmdir?",
+        "options": [
+          "3",
+          "7",
+          "5",
+          "10"
+        ],
+        "correctAnswer": 2,
+        "explanation": "İngilis dilində 'Five' 5 rəqəmini bildirir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 3",
+        "passport_id": "g2-15124-q16"
+      },
+      {
+        "question": "'Two plus three is ...' riyazi ifadəsinin nəticəsi hansıdır?",
+        "options": [
+          "Four",
+          "Six",
+          "Seven",
+          "Five"
+        ],
+        "correctAnswer": 3,
+        "explanation": "2 + 3 = 5 (Five) edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 3",
+        "passport_id": "g2-15124-q17"
+      },
+      {
+        "question": "Şəkildə 4 qələm və 3 kitab varsa, ümumi əşyaların sayını ingiliscə necə deyərsiniz?",
+        "options": [
+          "Seven school items",
+          "Nine school items",
+          "Five school items",
+          "Three school items"
+        ],
+        "correctAnswer": 0,
+        "explanation": "4 + 3 = 7 (Seven) edir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 3",
+        "passport_id": "g2-15124-q18"
       }
     ],
     "Unit 4": [
@@ -160040,6 +160352,84 @@
           "topic": "Unit 4",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Mother' sözünün mənası nədir?",
+        "options": [
+          "Ata",
+          "Bacı",
+          "Qardaş",
+          "Ana"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Mother' ingilis dilində ana deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 4",
+        "passport_id": "g2-21942-q16"
+      },
+      {
+        "question": "'This is my brother' cümləsinin mənası hansıdır?",
+        "options": [
+          "Bu, mənim qardaşımdır",
+          "Bu, mənim atamdır",
+          "Bu, mənim dostumdur",
+          "Bu, mənim bacımdır"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Brother' sözü qardaş deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 4",
+        "passport_id": "g2-21942-q17"
+      },
+      {
+        "question": "Ailə üzvlərini böyükdən kiçiyə düzgün sıralayan variant hansıdır?",
+        "options": [
+          "Baby, Mother, Grandfather",
+          "Grandmother, Father, Sister",
+          "Brother, Grandfather, Father",
+          "Sister, Mother, Grandmother"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Nənə (Grandmother) ən böyük, ata (Father) orta, bacı (Sister) isə kiçik nəslə aiddir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 4",
+        "passport_id": "g2-21942-q18"
       }
     ],
     "Unit 5": [
@@ -160522,6 +160912,84 @@
           "topic": "Unit 5",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində 'Göz' nə deməkdir?",
+        "options": [
+          "Eye",
+          "Nose",
+          "Ear",
+          "Hand"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Eye' göz deməkdir; 'nose' burun, 'ear' qulaqdır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 5",
+        "passport_id": "g2-57186-q16"
+      },
+      {
+        "question": "'I have two hands and two legs' cümləsinin tərcüməsi hansıdır?",
+        "options": [
+          "Mənim iki qulağım və bir burnum var",
+          "Mənim iki əlim və iki ayağım var",
+          "Mənim gözlərim qaradır",
+          "Mənim bir başım var"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Hands' əllər, 'legs' isə ayaqlar deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 5",
+        "passport_id": "g2-57186-q17"
+      },
+      {
+        "question": "Musiqini eşitmək üçün bədənimizin hansı üzvündən istifadə edirik?",
+        "options": [
+          "Eyes",
+          "Nose",
+          "Ears",
+          "Mouth"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Ears' qulaqlar deməkdir və eşitmə orqanıdır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 5",
+        "passport_id": "g2-57186-q18"
       }
     ],
     "Unit 6": [
@@ -161004,6 +161472,84 @@
           "topic": "Unit 6",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Cat' sözünün mənası hansı heyvandır?",
+        "options": [
+          "İt",
+          "Pişik",
+          "Quş",
+          "Balıq"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Cat' ingiliscə pişik deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 6",
+        "passport_id": "g2-16074-q16"
+      },
+      {
+        "question": "Uça bilən ev heyvanı/quşu hansıdır?",
+        "options": [
+          "Dog",
+          "Cat",
+          "Bird",
+          "Fish"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Bird' quş deməkdir və qanadları ilə uçur.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 6",
+        "passport_id": "g2-16074-q17"
+      },
+      {
+        "question": "'The fish swims in the water' cümləsində balığın hansı hərəkəti qeyd olunur?",
+        "options": [
+          "Ağaca dırmaşması",
+          "Havada uçması",
+          "Yuvada yatması",
+          "Suda üzməsi"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Fish' balıq, 'swims' üzür, 'water' isə su deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 6",
+        "passport_id": "g2-16074-q18"
       }
     ],
     "Unit 7": [
@@ -161486,6 +162032,84 @@
           "topic": "Unit 7",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində 'Alma' necə adlanır?",
+        "options": [
+          "Banana",
+          "Orange",
+          "Apple",
+          "Milk"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Apple' alma deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 7",
+        "passport_id": "g2-30514-q16"
+      },
+      {
+        "question": "'I like bananas' cümləsinin mənası nədir?",
+        "options": [
+          "Mən süd içirəm",
+          "Mən alma yemirəm",
+          "Banan sarıdır",
+          "Mən banan xoşlayıram"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'I like' ifadəsi 'Mən xoşlayıram' deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 7",
+        "passport_id": "g2-30514-q17"
+      },
+      {
+        "question": "Səhər yeməyində içilən ağ rəngli faydalı içki hansıdır?",
+        "options": [
+          "Milk",
+          "Tea",
+          "Lemonade",
+          "Coffee"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Milk' süd deməkdir və kalsiumla zəngin ağ içkidir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 7",
+        "passport_id": "g2-30514-q18"
       }
     ],
     "Unit 8": [
@@ -161968,6 +162592,84 @@
           "topic": "Unit 8",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Ball' sözünün mənası nədir?",
+        "options": [
+          "Gəlincik",
+          "Maşın",
+          "Təyyarə",
+          "Top"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Ball' uşaqların oynadığı top deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 8",
+        "passport_id": "g2-8272-q16"
+      },
+      {
+        "question": "'A big car and a small doll' ifadəsi nə deməkdir?",
+        "options": [
+          "Böyük maşın və kiçik gəlincik",
+          "Qırmızı top və göy karandaş",
+          "Kiçik qələm və böyük çanta",
+          "Köhnə kitab və təzə dəftər"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Big' böyük, 'car' maşın, 'small' kiçik, 'doll' gəlincik deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 8",
+        "passport_id": "g2-8272-q17"
+      },
+      {
+        "question": "'I play with my toys in the room' cümləsində uşaq harada oynayır?",
+        "options": [
+          "Məktəb həyətində",
+          "Otağında",
+          "Küçədə",
+          "Avtobusda"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'In the room' otaqda deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Unit 8",
+        "passport_id": "g2-8272-q18"
       }
     ],
     "Word Play!": [
@@ -245852,6 +246554,84 @@
           "topic": "ƏSAS RƏNGLƏR VƏ XƏTLƏR - Əsas və qarışıq rənglər",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Təsviri sənətdə 3 əsas rəng hansılardır?",
+        "options": [
+          "Yaşıl, narıncı, bənövşəyi",
+          "Ağ, qara, boz",
+          "Qəhvəyi, çəhrayı, sarı",
+          "Qırmızı, sarı, mavi"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Qırmızı, sarı və mavi heç bir rəngin qarışığından alınmayan 3 təməl əsas rəngdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Əsas və qarışıq rənglər",
+        "passport_id": "g2-36174-q16"
+      },
+      {
+        "question": "Sarı və mavi rəngləri qarışdırdıqda hansı yeni rəng yaranır?",
+        "options": [
+          "Yaşıl",
+          "Qırmızı",
+          "Qara",
+          "Narıncı"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Sarı və mavi boyaların birləşməsindən ikinci dərəcəli qarışıq rəng olan yaşıl rəng alınır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Əsas və qarışıq rənglər",
+        "passport_id": "g2-36174-q17"
+      },
+      {
+        "question": "Narıncı rəngi əldə etmək üçün hansı iki əsas rəngi qarışdırmaq lazımdır?",
+        "options": [
+          "Mavi və yaşıl",
+          "Qırmızı və sarı",
+          "Qara və ağ",
+          "Qırmızı və mavi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Qırmızı və sarı rənglər birləşdikdə isti çalarlı narıncı rəng əmələ gəlir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Əsas və qarışıq rənglər",
+        "passport_id": "g2-36174-q18"
       }
     ],
     "ƏSAS RƏNGLƏR VƏ XƏTLƏR - Fırça və boyalarla iş qaydaları": [
@@ -246334,6 +247114,84 @@
           "topic": "ƏSAS RƏNGLƏR VƏ XƏTLƏR - Fırça və boyalarla iş qaydaları",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Rəsm çəkərkən fırçanı başqa rəngə batırmazdan əvvəl nə etmək lazımdır?",
+        "options": [
+          "Su qabında yuyub salfetlə qurutmaq",
+          "Birbaşa digər boyaya sürtmək",
+          "Kağızın küncünə silmək",
+          "Ağzına aparmaq"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Fırçanı yumadan başqa rəngə toxundurduqda boyalar çirklənir və rəngin təmizliyi itir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Fırça və boyalarla iş qaydaları",
+        "passport_id": "g2-89701-q16"
+      },
+      {
+        "question": "Akvarel (sulu boya) ilə işləyərkən boyanın parlaq və şəffaf görünməsi üçün ən çox nə lazımdır?",
+        "options": [
+          "Çoxlu yapışqan",
+          "Təmiz su və suyun düzgün miqdarı",
+          "Quru qum",
+          "Qələm yonan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Akvarel su ilə həll olan şəffaf boyadır, onunla işləyərkən suyun təmizliyi mühümdür.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Fırça və boyalarla iş qaydaları",
+        "passport_id": "g2-89701-q17"
+      },
+      {
+        "question": "İncə detalları və xətləri çəkmək üçün fırçanı necə tutmaq və hansı hissəsindən istifadə etmək lazımdır?",
+        "options": [
+          "Fırçanı tamamilə kağıza basaraq yatırtmaq",
+          "Fırçanı iki əllə sıxmaq",
+          "Fırçanı dik tutaraq yalnız uc hissəsi ilə toxunmaq",
+          "Fırçanın arxa taxta ucunu boyaya batırmaq"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fırçanın iti ucu incə cizgilər üçün nəzərdə tutulub və dik bucaq altında zərif çəkilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | ƏSAS RƏNGLƏR VƏ XƏTLƏR - Fırça və boyalarla iş qaydaları",
+        "passport_id": "g2-89701-q18"
       }
     ],
     "TƏBİƏTİN TƏSVİRİ - Payız və qış mənzərəsi": [
@@ -246816,6 +247674,84 @@
           "topic": "TƏBİƏTİN TƏSVİRİ - Payız və qış mənzərəsi",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Təbiəti, meşəni və dağları təsvir edən rəsm əsəri necə adlanır?",
+        "options": [
+          "Portret",
+          "Mənzərə (Peyzaj)",
+          "Natürmort",
+          "Heykəl"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Təbiət görüntülərinin təsvir olunduğu rəsm janrı mənzərə və ya peyzaj adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Payız və qış mənzərəsi",
+        "passport_id": "g2-50786-q16"
+      },
+      {
+        "question": "Payız mənzərəsini çəkərkən hansı rəng qrupundan daha çox istifadə olunur?",
+        "options": [
+          "Açıq göy və çəhrayı",
+          "Yalnız tünd qara",
+          "Sarı, qırmızı, qızılı və narıncı",
+          "Yalnız parlaq yaşıl"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Payız fəslində yarpaqlar saralıb qızılı-narıncı rənglərə boyandığı üçün bu çalarlar üstünlük təşkil edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Payız və qış mənzərəsi",
+        "passport_id": "g2-50786-q17"
+      },
+      {
+        "question": "Qış mənzərəsində qarın üzərindəki kölgələri təbii göstərmək üçün rəssamlar hansı rəng çalarlarından istifadə edirlər?",
+        "options": [
+          "Parlaq sarı və qırmızı",
+          "Tünd yaşıl və qəhvəyi",
+          "Qızılı narıncı",
+          "Açıq mavi, bənövşəyi və soyuq boz"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Qar ağ olsa da, soyuq qış işığında və kölgələrdə mavi və bənövşəyi çalarlar əks olunur.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Payız və qış mənzərəsi",
+        "passport_id": "g2-50786-q18"
       }
     ],
     "TƏBİƏTİN TƏSVİRİ - Ağaclar və çiçəklər": [
@@ -247298,6 +248234,84 @@
           "topic": "TƏBİƏTİN TƏSVİRİ - Ağaclar və çiçəklər",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Həmişəyaşıl ağac olan küknarın yarpaqları rəsmdə hansı formada təsvir edilir?",
+        "options": [
+          "Geniş dəyirmi formada",
+          "Ürək formasında",
+          "İynəyarpaqlı formada",
+          "Lələk formasında"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Küknar və şam ağacları iynəyarpaqlı həmişəyaşıl ağaclardır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Ağaclar və çiçəklər",
+        "passport_id": "g2-52354-q16"
+      },
+      {
+        "question": "Ağac çəkərkən gövdənin aşağı və yuxarı hissəsinin qalınlığı necə olmalıdır?",
+        "options": [
+          "Yuxarı hissə çox qalın, aşağısı çox nazik",
+          "Hər tərəfdə tamamilə eyni qalınlıqda",
+          "Yalnız düzbucaq formasında",
+          "Kökə yaxın aşağı hissə qalın, budaqlara doğru yuxarı hissə nazik"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Ağaclar təbii olaraq yerdən göyə doğru incələrək şaxələnir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Ağaclar və çiçəklər",
+        "passport_id": "g2-52354-q17"
+      },
+      {
+        "question": "Çiçəyin ləçəklərini və yarpaqlarını çəkərkən simmetriyaya necə əməl olunur?",
+        "options": [
+          "Mərkəzi ləçəkdən ətrafa doğru bərabər məsafədə paylamaqla",
+          "Ləçəkləri yalnız bir tərəfə yığmaqla",
+          "Yarpaqları rəsmdən kənarda qoymaqla",
+          "Gözləri yumub xətlər çəkməklə"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Çiçəklərin ləçəkləri mərkəz ətrafında ahəngdar və tarazlaşdırılmış qaydada yerləşir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | TƏBİƏTİN TƏSVİRİ - Ağaclar və çiçəklər",
+        "passport_id": "g2-52354-q18"
       }
     ],
     "CANLILAR VƏ NAĞILLAR - Nağıl qəhrəmanlarının rəsmi": [
@@ -247780,6 +248794,84 @@
           "topic": "CANLILAR VƏ NAĞILLAR - Nağıl qəhrəmanlarının rəsmi",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Kitabda yazılmış mətnləri və nağılları izah edən rəsmlər necə adlanır?",
+        "options": [
+          "Fotoşəkil",
+          "Memarlıq",
+          "Mozaika",
+          "İllüstrasiya"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Kitablardakı ədəbi mətni canlandıran rəsm əsərləri illüstrasiya adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Nağıl qəhrəmanlarının rəsmi",
+        "passport_id": "g2-9057-q16"
+      },
+      {
+        "question": "Cırtdan obrazını çəkərkən onun xarakterik xarici əlaməti kimi nə təsvir edilir?",
+        "options": [
+          "Balaca boyu, milli geyimi və çarıqları",
+          "Böyük dəbilqəsi və qılıncı",
+          "Kostyum və qalstuku",
+          "Qanadları və sehrli çubuğu"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cırtdan Azərbaycan xalq nağıllarında zəkası ilə fərqlənən balacaboy milli qəhrəmandır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Nağıl qəhrəmanlarının rəsmi",
+        "passport_id": "g2-9057-q17"
+      },
+      {
+        "question": "Sehrli nağıl qəhrəmanını rəsmdə xeyirxah və ya bədxah kimi göstərmək üçün rənglərdən necə istifadə edilir?",
+        "options": [
+          "Bütün personajlar üçün yalnız boz rəng",
+          "Xeyirxah üçün işıqlı və isti rənglər, bədxah üçün tünd və soyuq rənglər",
+          "Heç bir fərq qoyulmadan eyni çalarlar",
+          "Yalnız qara xətlər"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Təsviri sənətdə açıq, isti rənglər müsbət hissləri, qaranlıq və soyuq tonlar isə qorxunc və mənfi obrazları çatdırır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Nağıl qəhrəmanlarının rəsmi",
+        "passport_id": "g2-9057-q18"
       }
     ],
     "CANLILAR VƏ NAĞILLAR - Heyvanların təsviri": [
@@ -248262,6 +249354,84 @@
           "topic": "CANLILAR VƏ NAĞILLAR - Heyvanların təsviri",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Təsviri sənətdə heyvanları təsvir edən rəssam necə adlanır?",
+        "options": [
+          "Animalist rəssam",
+          "Marinist rəssam",
+          "Portretçi",
+          "Bənna"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Heyvanlar aləmini çəkən rəssamlara animalist deyilir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Heyvanların təsviri",
+        "passport_id": "g2-7086-q16"
+      },
+      {
+        "question": "Dovşan şəkli çəkərkən onun digər heyvanlardan fərqləndirici əsas forması hansıdır?",
+        "options": [
+          "Uzun quyruğu və balaca qulaqları",
+          "Uzun qulaqları və qısa quyruğu",
+          "Böyük buynuzları",
+          "Geniş qanadları"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dovşanın ən parlaq anatomik xüsusiyyəti uzun qulaqları və yumru xırda quyruğudur.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Heyvanların təsviri",
+        "passport_id": "g2-7086-q17"
+      },
+      {
+        "question": "Qaçan atın dinamikasını (hərəkətini) rəsmdə göstərmək üçün hansı üsul tətbiq edilir?",
+        "options": [
+          "Bütün ayaqlarını bir-birinə yapışdırmaq",
+          "Atı hərəkətsiz düzbucaqlı kimi göstərmək",
+          "Ayaqları arxaya və irəliyə açıq, yalını küləkdə dalğalanan çəkmək",
+          "Yalnız başını çəkib bədənini gizlətmək"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hərəkət hissi əzələlərin dartılması və yalların geriyə uçuşması ilə vizuallaşdırılır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | CANLILAR VƏ NAĞILLAR - Heyvanların təsviri",
+        "passport_id": "g2-7086-q18"
       }
     ],
     "MİLLİ İNCƏSƏNƏT - Xalça naxışları və buta": [
@@ -249710,6 +250880,84 @@
           "topic": "Musiqi səsləri və səs yüksəkliyi",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Musiqidə istifadə olunan səslər necə adlanır?",
+        "options": [
+          "Küy səsləri",
+          "Təbii səslər",
+          "Qışqırıq səsləri",
+          "Musiqi səsləri"
+        ],
+        "correctAnswer": 3,
+        "explanation": "İnsan səsi və musiqi alətləri vasitəsilə çıxarılan müəyyən ucalıqlı səslər musiqi səsləri adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi səsləri və səs yüksəkliyi",
+        "passport_id": "g2-84697-q16"
+      },
+      {
+        "question": "Quşun civildəməsi ilə ayının nəriltisini müqayisə etdikdə səs yüksəkliyi haqqında hansı fikir doğrudur?",
+        "options": [
+          "Hər iki səs eyni ucalıqdadır",
+          "Quşun səsi zildirsə, ayının səsi bəmdir",
+          "Quşun səsi bəmdir, ayının səsi zildir",
+          "Təbiətdə heç bir səs zil ola bilməz"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Zil səslər incə və yüksək tezlikli (quş civiltisi), bəm səslər isə qalın və alçaq tezlikli (ayı nəriltisi) səslərdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi səsləri və səs yüksəkliyi",
+        "passport_id": "g2-84697-q17"
+      },
+      {
+        "question": "Pianinonun klavişlərində soldan sağa doğru hərəkət etdikdə səslərin yüksəkliyi necə dəyişir?",
+        "options": [
+          "Yalnız bir tonda qalır",
+          "Bəmdən zilə doğru dəyişir",
+          "Zildən bəmə doğru dəyişir",
+          "Əvvəlcə susur, sonra güclənir"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Pianinoda sol tərəfdəki klavişlər qalın (bəm) səsləri, sağ tərəfə getdikcə isə incə (zil) səsləri əks etdirir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi səsləri və səs yüksəkliyi",
+        "passport_id": "g2-84697-q18"
       }
     ],
     "Dövlət Himnimiz və Vətən nəğmələri": [
@@ -250192,6 +251440,84 @@
           "topic": "Dövlət Himnimiz və Vətən nəğmələri",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Azərbaycan Respublikasının Dövlət Himninin bəstəkarı kimdir?",
+        "options": [
+          "Üzeyir Hacıbəyli",
+          "Qara Qarayev",
+          "Fikrət Əmirov",
+          "Tofiq Quliyev"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Azərbaycan Respublikasının Dövlət Himninin musiqisini dahi bəstəkar Üzeyir Hacıbəyli bəstələmişdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Dövlət Himnimiz və Vətən nəğmələri",
+        "passport_id": "g2-95550-q16"
+      },
+      {
+        "question": "Dövlət Himni ifa edilərkən və dinlənilərkən hansı qaydaya əməl olunmalıdır?",
+        "options": [
+          "Yalnız oturaraq və asta səslə oxunur",
+          "Ayaq üstə, sağ əl sol sinə üzərində ehtiramla dinlənilir",
+          "Hərəkət edərək və danışaraq qulaq asılır",
+          "Alqışlarla müşayiət olunur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dövlət Himni dövlətin rəsmi rəmzidir və ifa olunarkən ayaq üstə durub sağ əli sol sinə üzərinə qoyaraq ehtiramla dinlənilir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Dövlət Himnimiz və Vətən nəğmələri",
+        "passport_id": "g2-95550-q17"
+      },
+      {
+        "question": "Vətən nəğmələrinin əsas məzmun və xarakterini ən düzgün hansı ifadə xarakterizə edir?",
+        "options": [
+          "Yalnız rəqs etmək üçün nəzərdə tutulan şən musiqi",
+          "Məişət qayğılarını anladan kədərli melodiya",
+          "Torpağa məhəbbət və qəhrəmanlıq hisslərini təcəssüm etdirən təntənəli xarakter",
+          "Heç bir sözü olmayan sadə səs toplusu"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Vətən nəğmələri doğma yurda sevgi, vətənpərvərlik və igidlik hisslərini aşılayan qürurverici və təntənəli musiqilərdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Dövlət Himnimiz və Vətən nəğmələri",
+        "passport_id": "g2-95550-q18"
       }
     ],
     "Mahnı, rəqs və marş anlayışları": [
@@ -250674,6 +252000,84 @@
           "topic": "Mahnı, rəqs və marş anlayışları",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Mütəşəkkil addımlamaq və hərbi yeriş üçün nəzərdə tutulan musiqi növü hansıdır?",
+        "options": [
+          "Layla",
+          "Marş",
+          "Vals",
+          "Muğam"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Marş ritmik, dəqiq və addımlama tempinə uyğun bəstələnən musiqi janrıdır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Mahnı, rəqs və marş anlayışları",
+        "passport_id": "g2-80236-q16"
+      },
+      {
+        "question": "Mahnı janrını digər musiqi janrlarından fərqləndirən əsas xüsusiyyət nədir?",
+        "options": [
+          "Yalnız ayaq hərəkətləri üçün nəzərdə tutulması",
+          "Heç bir söz və ya mətn daşımaması",
+          "Sözlə musiqinin vəhdətindən ibarət olub oxumaq üçün bəstələnməsi",
+          "Yalnız nəfəs alətlərində ifa edilməsi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Mahnı poeziya (sözlər) ilə musiqinin birgə harmoniyasından yaranır və səs vasitəsilə ifa edilir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Mahnı, rəqs və marş anlayışları",
+        "passport_id": "g2-80236-q17"
+      },
+      {
+        "question": "Musiqi əsəri səslənərkən insanın qeyri-ixtiyari ritmik hərəkət etmək və süzmək istəməsi hansı janra aiddir?",
+        "options": [
+          "Simfoniya",
+          "Layla",
+          "Marş",
+          "Rəqs"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Rəqs musiqisi xüsusi plastika və bədən hərəkətləri ilə uzlaşan melodik ritmə malikdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Mahnı, rəqs və marş anlayışları",
+        "passport_id": "g2-80236-q18"
       }
     ],
     "Xalq mahnıları və laylalar": [
@@ -251156,6 +252560,84 @@
           "topic": "Xalq mahnıları və laylalar",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Anaların körpələrini yatırarkən beşik başında oxuduqları nəğmə necə adlanır?",
+        "options": [
+          "Marş",
+          "Oksümoron",
+          "Layla",
+          "Təranə"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Layla anaların körpələrini sakitləşdirmək və yatırmaq üçün oxuduqları lirik xalq nəğməsidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Xalq mahnıları və laylalar",
+        "passport_id": "g2-83741-q16"
+      },
+      {
+        "question": "Xalq mahnılarının müəllifi kim hesab olunur?",
+        "options": [
+          "Yalnız bir müasir bəstəkar",
+          "Musiqi müəllimi",
+          "Dərslik müəllifi",
+          "Xalqın özü (müəllifi məlum deyildir, nəsildən-nəslə ötürülmüşdür)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Xalq mahnıları qədim zamanlardan başlayaraq el arasında yaranmış və şifahi şəkildə nəsildən-nəslə keçmişdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Xalq mahnıları və laylalar",
+        "passport_id": "g2-83741-q17"
+      },
+      {
+        "question": "Laylaların melodiyasının sakit və həzin olmasının əsas səbəbi nədir?",
+        "options": [
+          "Uşağın əsəblərini sakitləşdirib rahat yuxuya getməsini təmin etmək",
+          "Uşağı oyatmaq və güldürmək",
+          "Körpəni rəqs etməyə təşviq etmək",
+          "Sürətli addımlamağa alışdırmaq"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Laylaların aramlı və yumşaq melodiyası körpəyə ana nəvazişini çatdıraraq onu sakitləşdirir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Xalq mahnıları və laylalar",
+        "passport_id": "g2-83741-q18"
       }
     ],
     "Musiqi alətləri: Tar, kamança, qaval": [
@@ -251638,6 +253120,84 @@
           "topic": "Musiqi alətləri: Tar, kamança, qaval",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Azərbaycan muğam üçlüyünə daxil olan simli musiqi aləti hansıdır?",
+        "options": [
+          "Qarmon",
+          "Dodaq fleytası",
+          "Pianino",
+          "Tar"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Milli muğam üçlüyümüz tar, kamança və qavaldan ibarətdir; tar onların arasında əsas simli alətdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi alətləri: Tar, kamança, qaval",
+        "passport_id": "g2-59108-q16"
+      },
+      {
+        "question": "Qaval hansı alətlər qrupuna aiddir və necə səsləndirilir?",
+        "options": [
+          "Zərb alətidir, əl və barmaqların toxunuşu ilə səsləndirilir",
+          "Nəfəs alətidir, üfürməklə çalınır",
+          "Kamanla çalınan simli alətdir",
+          "Klavişli alətdir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Qaval membranlı zərb musiqi alətidir və ritm yaratmaq üçün istifadə olunur.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi alətləri: Tar, kamança, qaval",
+        "passport_id": "g2-59108-q17"
+      },
+      {
+        "question": "Kamança alətini tarda ifa tərzindən fərqləndirən əsas cəhət hansıdır?",
+        "options": [
+          "Kamançanın zərb aləti olması",
+          "Kamançanın kaman vasitəsilə sürtülərək səsləndirilməsi",
+          "Kamançanın yalnız dəmir tellərdən ibarət olması",
+          "Kamançada pərdələrin çox olması"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tar mizrabla çalındığı halda, kamança kamanın tellərə sürtülməsi nəticəsində davamlı və yanıqlı səs çıxarır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Mövzuya aid faktı təhlil edin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi alətləri: Tar, kamança, qaval",
+        "passport_id": "g2-59108-q18"
       }
     ],
     "Uşaq mahnıları və xor oxumaları": [

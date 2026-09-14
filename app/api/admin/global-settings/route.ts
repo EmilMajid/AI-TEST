@@ -2,8 +2,8 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
-
 import os from "os"
+import { requireAdmin } from "@/lib/auth-utils"
 
 const SETTINGS_FILE = path.join(process.cwd(), ".data", "testai_system_settings.json")
 const TMP_SETTINGS_FILE = path.join(os.tmpdir(), "testai_system_settings.json")
@@ -75,7 +75,10 @@ function saveSettings(settings: SystemSetting[]) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const settings = getSettings()
     return NextResponse.json({ success: true, settings })
@@ -85,6 +88,9 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const body = await request.json()
     const { settings } = body

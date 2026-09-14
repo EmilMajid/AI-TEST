@@ -1,23 +1,76 @@
 'use client'
 
-import { ReactNode } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe, LayoutDashboard, AlertTriangle, Activity, Sparkles } from 'lucide-react'
+import { BookOpen, Settings, LogOut, ShieldAlert, Users, Database, Zap, Globe, LayoutDashboard, AlertTriangle, Activity, Sparkles, Loader2 } from 'lucide-react'
 import { useRouter, usePathname } from 'next/navigation'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
     const router = useRouter()
     const pathname = usePathname()
+    const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null)
+
+    useEffect(() => {
+        try {
+            const rawUser = localStorage.getItem('user')
+            if (!rawUser) {
+                setIsAuthorized(false)
+                router.replace('/login?error=admin_required')
+                return
+            }
+            const user = JSON.parse(rawUser)
+            const role = (user.role || user.accountType || '').toLowerCase()
+            const email = (user.email || '').toLowerCase()
+            const id = String(user.id || '').toLowerCase()
+
+            const isAdmin = role === 'admin' || email === 'admin@edu.az' || id === 'admin-main'
+
+            if (!isAdmin) {
+                setIsAuthorized(false)
+                router.replace('/login?error=admin_required')
+                return
+            }
+
+            setIsAuthorized(true)
+        } catch {
+            setIsAuthorized(false)
+            router.replace('/login?error=admin_required')
+        }
+    }, [router, pathname])
 
     const handleLogout = () => {
         localStorage.removeItem('user')
+        localStorage.removeItem('session')
+        localStorage.removeItem('userData')
+        document.cookie = 'token=; Max-Age=0; path=/;'
+        document.cookie = 'user_role=; Max-Age=0; path=/;'
         router.push('/login')
     }
 
     const isActive = (path: string) => {
         if (path === '/admin') return pathname === '/admin' || pathname === '/admin/dashboard'
         return pathname.startsWith(path)
+    }
+
+    if (isAuthorized === null || isAuthorized === false) {
+        return (
+            <div className="flex h-screen w-full items-center justify-center bg-slate-950 text-white">
+                <div className="flex flex-col items-center gap-4 text-center max-w-md p-6">
+                    <div className="relative">
+                        <ShieldAlert className="h-16 w-16 text-red-500 animate-pulse" />
+                    </div>
+                    <h2 className="text-xl font-bold">Admin İcazəsi Yoxlanılır...</h2>
+                    <p className="text-sm text-slate-400">
+                        Bu bölməyə yalnız səlahiyyətli administratorlar daxil ola bilər. Giriş yoxlanılır.
+                    </p>
+                    <div className="flex items-center gap-2 text-xs text-slate-500 mt-2">
+                        <Loader2 className="h-4 w-4 animate-spin text-red-500" />
+                        Təhlükəsizlik protokolu aktivdir
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return (

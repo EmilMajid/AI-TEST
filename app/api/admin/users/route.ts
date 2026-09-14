@@ -2,8 +2,12 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser, isTargetDeletedUser } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
+import { requireAdmin } from "@/lib/auth-utils"
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const allUsers = getAllUsers()
     const allLinks = loadLinksFromDisk()
@@ -229,6 +233,9 @@ export async function GET() {
 }
 
 export async function PATCH(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const body = await request.json()
     const { id, action, isBlocked } = body
@@ -267,6 +274,9 @@ export async function PATCH(request: NextRequest) {
 }
 
 export async function DELETE(request: NextRequest) {
+  const auth = await requireAdmin(request)
+  if (auth instanceof NextResponse) return auth
+
   try {
     const { searchParams } = new URL(request.url)
     let id = searchParams.get("id")

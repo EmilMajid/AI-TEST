@@ -53,66 +53,63 @@ export async function getAuthContext(request: NextRequest): Promise<AuthContext 
     }
   }
 
-  // Resilient fallback for demo mode and browser sessions
-  try {
-    const { searchParams } = new URL(request.url)
-    const parentId = searchParams.get("parentId")
-    const studentId = searchParams.get("studentId")
-    const email = searchParams.get("email") || request.headers.get("x-user-email")
-
-    if (parentId || studentId || email) {
-      const users = getAllUsers()
-      const found = users.find((u) =>
-        (email && u.email?.toLowerCase() === email.toLowerCase()) ||
-        (parentId && (String(u.id) === String(parentId) || (u as any).uniqueId === parentId)) ||
-        (studentId && (String(u.id) === String(studentId) || (u as any).uniqueId === studentId))
-      )
-      if (found) {
-        return {
-          user: {
-            id: found.id,
-            email: found.email,
-            accountType: found.accountType || "parent",
-            role: found.role || found.accountType || "parent",
-          },
-          token: token || "demo-token",
-        }
-      }
-    }
-  } catch (err) {}
-
   return null
 }
 
-export async function requireAuth(request: NextRequest) {
+export async function requireAuth(request: NextRequest): Promise<AuthContext | NextResponse> {
   const auth = await getAuthContext(request)
   if (!auth) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+    return NextResponse.json({ error: "Giriş tələb olunur (Unauthorized)" }, { status: 401 })
   }
 
   return auth
 }
 
-export async function requireRole(request: NextRequest, allowedRoles: string[]) {
+export async function requireRole(request: NextRequest, allowedRoles: string[]): Promise<AuthContext | NextResponse> {
   const auth = await requireAuth(request)
   if (auth instanceof NextResponse) {
-    return null // Auth failed
+    return auth // Return 401 response directly
   }
 
   const userRole = auth.user.role || auth.user.accountType
   if (!allowedRoles.includes(userRole)) {
-    return NextResponse.json({ error: "Access denied. Required role: " + allowedRoles.join(", ") }, { status: 403 })
+    return NextResponse.json(
+      { error: `İcazə verilmədi. Tələb olunan rol: ${allowedRoles.join(", ")}` },
+      { status: 403 }
+    )
   }
 
   return auth
 }
 
-export async function logApiAccess(userId: number, action: string, resource: string, ipAddress?: string) {
-  console.log(`[Mock Log] User: ${userId}, Action: ${action}, Resource: ${resource}, IP: ${ipAddress}`)
-  // Mocked - no DB call
+export async function requireAdmin(request: NextRequest): Promise<AuthContext | NextResponse> {
+  return requireRole(request, ["admin"])
 }
 
-export async function checkParentStudentAccess(parentId: number, studentId: number): Promise<boolean> {
-  // Mocked - always allow access in demo mode
-  return true
+export async function logApiAccess(userId: number | string, action: string, resource: string, ipAddress?: string) {
+  if (process.env.NODE_ENV !== "production") {
+    console.log(`[API Log] User: ${userId}, Action: ${action}, Resource: ${resource}, IP: ${ipAddress}`)
+  }
+}
+
+export async function checkParentStudentAccess(parentId: number | string, studentId: number | string): Promise<boolean> {
+  if (!parentId || !studentId) return false
+  if (String(parentId) === String(studentId)) return true
+  try {
+    const { loadLinksFromDisk, getAllUsers } = await import("./user-store")
+    const links = loadLinksFromDisk()
+    const isLinked = links.some(
+      (l) => String(l.parentId) === String(parentId) && String(l.studentId) === String(studentId)
+    )
+    if (isLinked) return true
+
+    const users = getAllUsers()
+    const student = users.find((u) => String(u.id) === String(studentId))
+    if (student && String(student.parentId) === String(parentId)) {
+      return true
+    }
+  } catch (e) {
+    console.error("checkParentStudentAccess error:", e)
+  }
+  return false
 }

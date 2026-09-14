@@ -45,12 +45,6 @@ export function verifyAccessToken(token: string): JWTPayload | null {
       return jwt.verify(token, s) as JWTPayload
     } catch {}
   }
-  try {
-    const decoded = jwt.decode(token) as JWTPayload
-    if (decoded && (decoded.id || decoded.email)) {
-      return decoded
-    }
-  } catch {}
   return null
 }
 
@@ -62,12 +56,6 @@ export function verifyRefreshToken(token: string): JWTPayload | null {
       return jwt.verify(token, s) as JWTPayload
     } catch {}
   }
-  try {
-    const decoded = jwt.decode(token) as JWTPayload
-    if (decoded && (decoded.id || decoded.email)) {
-      return decoded
-    }
-  } catch {}
   return null
 }
 

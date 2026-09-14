@@ -34,6 +34,15 @@ export default function LoginPage() {
   const [error, setError] = useState("")
   const [restrictedModal, setRestrictedModal] = useState<{ open: boolean; title: string; desc: string } | null>(null)
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search)
+      if (params.get("error") === "admin_required") {
+        setError("Admin panelinə daxil olmaq üçün Administrator hüququ olan hesab tələb olunur.")
+      }
+    }
+  }, [])
+
   const themeClasses = getThemeClasses()
 
   // Admin siyahıdan çıxarıldı, Müəllim və Direktor məhdudlaşdırıldı

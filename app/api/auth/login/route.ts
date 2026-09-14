@@ -493,7 +493,7 @@ export async function POST(request: NextRequest) {
           role: user.role || undefined
         });
 
-        return NextResponse.json({
+        const res = NextResponse.json({
           success: true,
           message: "Uğurlu giriş",
           user: {
@@ -522,6 +522,24 @@ export async function POST(request: NextRequest) {
             }
           },
         });
+
+        // Set secure cookies for server-side middleware access control
+        res.cookies.set("token", token, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "lax",
+          path: "/",
+          maxAge: 3600 * 24 * 7,
+        });
+        res.cookies.set("user_role", String(user.role || user.accountType || "student"), {
+          httpOnly: false,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "lax",
+          path: "/",
+          maxAge: 3600 * 24 * 7,
+        });
+
+        return res;
       }
 
       return NextResponse.json({ error: "Yanlış sorğu" }, { status: 400 });
