@@ -163152,6 +163152,84 @@
           "topic": "Word Play!",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İngilis dilində 'Sun' sözünün mənası nədir?",
+        "options": [
+          "Günəş",
+          "Ay",
+          "Ulduz",
+          "Bulud"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Sun' ingilis dilində günəş deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Word Play!",
+        "passport_id": "g2-50456-q16"
+      },
+      {
+        "question": "Verilmiş hərflərdən düzgün söz qurun: 'd - o - g'",
+        "options": [
+          "God",
+          "Dog (İt)",
+          "Dig",
+          "Day"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'d-o-g' hərfləri birləşərək 'Dog' (it) sözünü əmələ gətirir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Word Play!",
+        "passport_id": "g2-50456-q17"
+      },
+      {
+        "question": "Hansı cütlükdəki sözlər bir-biri ilə qafiyələnir (eyni cür səslənir)?",
+        "options": [
+          "Book - Pen",
+          "Car - Dog",
+          "Cat - Hat",
+          "Sun - Fish"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Cat' və 'Hat' sözlərinin sonu eyni səslə (-at) bitdiyi üçün qafiyələnir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | İngilis dili 2 | Word Play!",
+        "passport_id": "g2-50456-q18"
       }
     ]
   },
@@ -163636,6 +163714,84 @@
           "topic": "Lektion 1. Guten Tag!",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Guten Tag!' ifadəsinin Azərbaycan dilinə tərcüməsi hansıdır?",
+        "options": [
+          "Gecəniz xeyirə qalsın!",
+          "Sağ olun!",
+          "Bağışlayın!",
+          "Hər vaxtınız xeyir! (Salam!)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Guten Tag' günorta və gün ərzində işlədilən rəsmi və geniş yayılmış salamlaşma ifadəsidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-48372-q16"
+      },
+      {
+        "question": "Dostlar arasında qeyri-rəsmi və səmimi salamlaşmaq üçün hansı söz işlədilir?",
+        "options": [
+          "Hallo!",
+          "Auf Wiedersehen!",
+          "Gute Nacht!",
+          "Danke!"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Hallo!' alman dilində dostlar və yaşıdlar arasında ən çox işlədilən salam sözüdür.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-48372-q17"
+      },
+      {
+        "question": "Səhər saat 08:00-da məktəbə daxil olarkən müəllimə necə salam vermək daha düzgündür?",
+        "options": [
+          "Gute Nacht!",
+          "Guten Morgen!",
+          "Tschüss!",
+          "Guten Abend!"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Səhər saatlarında salamlaşmaq üçün 'Guten Morgen' (Sabahınız xeyir) deyilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-48372-q18"
       }
     ],
     "Lektion 2. Wie geht es dir ?": [
@@ -164118,6 +164274,84 @@
           "topic": "Lektion 2. Wie geht es dir ?",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Wie geht es dir?' sualı nə deməkdir?",
+        "options": [
+          "Necəsən? (Halın necədir?)",
+          "Adın nədir?",
+          "Haralısan?",
+          "Neçə yaşın var?"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Wie geht es dir?' yaxın dostdan və ya uşaqdan əhvalını soruşmaq üçün işlədilir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-61882-q16"
+      },
+      {
+        "question": "'Danke, gut!' cavabının mənası hansı bənddə düzgün göstərilmişdir?",
+        "options": [
+          "Mən getməliyəm",
+          "Çox sağ ol, yaxşıyam!",
+          "Bilmirəm",
+          "Xeyr, pis deyiləm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Danke' təşəkkür edirəm, 'gut' isə yaxşı deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-61882-q17"
+      },
+      {
+        "question": "Biri sizə 'Wie geht's?' dedikdə, əgər əhvalınız əladırsa necə cavab verərsiniz?",
+        "options": [
+          "Schlecht, danke!",
+          "Auf Wiedersehen!",
+          "Sehr gut, danke!",
+          "Guten Tag!"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Sehr gut' çox yaxşı / əla deməkdir və razılığı bildirir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-61882-q18"
       }
     ],
     "Lektion 3. İCH und DU": [
@@ -164600,6 +164834,84 @@
           "topic": "Lektion 3. İCH und DU",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Ich' şəxs əvəzliyi hansı mənaya gəlir?",
+        "options": [
+          "Sən",
+          "Mən",
+          "O",
+          "Biz"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Ich' birinci şəxsin təki olan 'Mən' əvəzliyidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-7314-q16"
+      },
+      {
+        "question": "'Du' əvəzliyi ilə müraciət edərkən felin sonuna hansı şəxs sonluğu artırılır?",
+        "options": [
+          "-e sonluğu",
+          "-en sonluğu",
+          "-st sonluğu (məsələn: du lernst)",
+          "-t sonluğu"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Alman dilində indiki zamanda 'du' şəxsinin felləri standart olaraq '-st' sonluğu qəbul edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-7314-q17"
+      },
+      {
+        "question": "'Mən və sən dostuq' mənasını verən düzgün alman cümləsi hansıdır?",
+        "options": [
+          "Ich bist du Freund.",
+          "Du bin ich danke.",
+          "Wir ist Freund.",
+          "Ich und du sind Freunde."
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Ich und du' birlikdə cəm (wir - biz) formasını yaradır və feli 'sind' olur.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-7314-q18"
       }
     ],
     "Lektion 4. die Zahlen.": [
@@ -165082,6 +165394,84 @@
           "topic": "Lektion 4. die Zahlen.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Eins, zwei, drei' hansı ədədlərdir?",
+        "options": [
+          "4, 5, 6",
+          "7, 8, 9",
+          "1, 2, 3",
+          "10, 20, 30"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Eins' 1, 'zwei' 2, 'drei' isə 3 deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-44150-q16"
+      },
+      {
+        "question": "Riyazi ifadənin nəticəsini tapın: 'zwei + drei = ?'",
+        "options": [
+          "Vier (4)",
+          "Sechs (6)",
+          "Sieben (7)",
+          "Fünf (5)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "2 (zwei) + 3 (drei) = 5 (fünf) edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-44150-q17"
+      },
+      {
+        "question": "Ədədləri kiçikdən böyüyə ardıcıl düzən variant hansıdır?",
+        "options": [
+          "Vier (4), Fünf (5), Sechs (6)",
+          "Zehn (10), Drei (3), Eins (1)",
+          "Fünf (5), Zwei (2), Acht (8)",
+          "Neun (9), Vier (4), Zwei (2)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Vier (4), Fünf (5), Sechs (6) ardıcıl artan sıradır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-44150-q18"
       }
     ],
     "Lektion 5. İCH bin 7.": [
@@ -165564,6 +165954,84 @@
           "topic": "Lektion 5. İCH bin 7.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Ich bin 7 Jahre alt' cümləsi nə bildirir?",
+        "options": [
+          "Mən 7-ci sinifdə oxuyuram",
+          "Mənim 7 dostum var",
+          "Mən saat 7-də dururam",
+          "Mənim 7 yaşım var"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Alman dilində yaş 'Ich bin ... Jahre alt' quruluşu ilə ifadə olunur.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-66283-q16"
+      },
+      {
+        "question": "'Wie alt bist du?' sualına 8 yaşlı uşaq necə cavab verməlidir?",
+        "options": [
+          "Ich bin acht Jahre alt.",
+          "Ich bin zehn.",
+          "Du bist acht.",
+          "Danke, sehr gut."
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Acht' alman dilində 8 rəqəmidir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-66283-q17"
+      },
+      {
+        "question": "Hansı cümlədə qrammatik uyğunluq tam doğrudur?",
+        "options": [
+          "Du bin sieben Jahre alt.",
+          "Du bist sieben Jahre alt.",
+          "Ich bist sieben Jahre alt.",
+          "Er bin sieben Jahre alt."
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Du' əvəzliyi ilə 'sein' felinin forması 'bist' olaraq uzlaşır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-66283-q18"
       }
     ],
     "Lektion 6. İCH komme aus Aserbaidschan.": [
@@ -166046,6 +166514,84 @@
           "topic": "Lektion 6. İCH komme aus Aserbaidschan.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Aserbaidschan' sözü alman dilində hansı ölkəni bildirir?",
+        "options": [
+          "Azərbaycan",
+          "Almaniya",
+          "Avstriya",
+          "Amerika"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Aserbaidschan' doğma vətənimiz Azərbaycanın alman dilindəki yazılışıdır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-66732-q16"
+      },
+      {
+        "question": "'Woher kommst du?' sualına Bakıda yaşayan məktəbli necə cavab verər?",
+        "options": [
+          "Ich wohne nicht.",
+          "Ich komme aus Baku.",
+          "Ich heiße Baku.",
+          "Guten Tag, Baku."
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Woher kommst du?' haralısan sualıdır və 'Ich komme aus...' ilə cavablandırılır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-66732-q17"
+      },
+      {
+        "question": "'Ich wohne in Baku, in Aserbaidschan' cümləsinin tərcüməsi hansıdır?",
+        "options": [
+          "Mən Bakıdan gəlirəm",
+          "Mən Bakıya gedirəm",
+          "Mən Azərbaycanda, Bakıda yaşayıram",
+          "Mənim vətənim gözəldir"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'wohnen in' haradasa yaşamaq mənasını ifadə edir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-66732-q18"
       }
     ],
     "Lektion 7. Die Jahareszeiten.": [
@@ -166528,6 +167074,84 @@
           "topic": "Lektion 7. Die Jahareszeiten.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İldə neçə fəsil (Jahreszeiten) var və alman dilində 4 rəqəmi nədir?",
+        "options": [
+          "Drei (3 fəsil)",
+          "Vier (4 fəsil)",
+          "Fünf (5 fəsil)",
+          "Zwei (2 fəsil)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "İldə 4 fəsil var və alman dilində 4 'vier' adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-70404-q16"
+      },
+      {
+        "question": "'Der Sommer' hansı fəslin adıdır?",
+        "options": [
+          "Qış",
+          "Yaz",
+          "Yay",
+          "Payız"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Der Sommer' yay, 'der Winter' qış, 'der Frühling' yaz, 'der Herbst' isə payızdır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-70404-q17"
+      },
+      {
+        "question": "Qar yağan və soyuq olan qış fəsli alman dilində necə adlanır?",
+        "options": [
+          "Der Sommer",
+          "Der Herbst",
+          "Der Frühling",
+          "Der Winter"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Der Winter' qış fəslidir və qarlı havalarla xarakterizə olunur.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-70404-q18"
       }
     ],
     "Lektion 8. Das Wetter.": [
@@ -167010,6 +167634,84 @@
           "topic": "Lektion 8. Das Wetter.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Die Sonne' nə deməkdir?",
+        "options": [
+          "Yağış",
+          "Külək",
+          "Günəş",
+          "Qar"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Die Sonne' günəş deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-99836-q16"
+      },
+      {
+        "question": "'Die Sonne scheint' ifadəsi havanın necə olduğunu bildirir?",
+        "options": [
+          "Güclü yağış yağır",
+          "Şaxtalı qar yağır",
+          "Qatı duman var",
+          "Günəş parıldayır (hava günəşlidir)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'scheinen' parıldamaq deməkdir, günəşli havanı təsvir edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-99836-q17"
+      },
+      {
+        "question": "'Es ist kalt und es schneit' cümləsinin mənası hansı fəsildə müşahidə olunur?",
+        "options": [
+          "Qışda (Hava soyuqdur və qar yağır)",
+          "Yayda (Hava çox istidir)",
+          "Yazda (Güllər açır)",
+          "Payızda (Meyvələr yetişir)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'kalt' soyuq, 'es schneit' isə qar yağır deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-99836-q18"
       }
     ],
     "Lektion 9. Die Freuunde.": [
@@ -167492,6 +168194,84 @@
           "topic": "Lektion 9. Die Freuunde.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Dost' sözü necə səslənir?",
+        "options": [
+          "Bruder",
+          "Lehrer",
+          "Schüler",
+          "Freund"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Freund' dost deməkdir (qız dost üçün 'Freundin').",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-84807-q16"
+      },
+      {
+        "question": "'Das ist mein Freund' cümləsinin mənası nədir?",
+        "options": [
+          "Bu, mənim dostumdur",
+          "Bu, mənim kitabımdır",
+          "Mən dostumu sevirəm",
+          "Dostum məktəbə gedir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Das ist mein Freund' 'Bu, mənim dostumdur' tərcümə olunur.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-84807-q17"
+      },
+      {
+        "question": "'Wir spielen zusammen' cümləsində uşaqlar nə edirlər?",
+        "options": [
+          "Birlikdə yatırlar",
+          "Birlikdə oynayırlar",
+          "Dərs oxumurlar",
+          "Məktəbdən qaçırlar"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'spielen' oynamaq, 'zusammen' isə birlikdə deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-84807-q18"
       }
     ],
     "Lektion 10. Sport.": [
@@ -167974,6 +168754,84 @@
           "topic": "Lektion 10. Sport.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində ən məşhur oyun olan 'Futbol' necə yazılır?",
+        "options": [
+          "Fußball",
+          "Tennis",
+          "Basketball",
+          "Laufen"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Futbol alman dilində 'Fußball' şəklində yazılır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 10. Sport.",
+        "passport_id": "g2-deu-81170-q16"
+      },
+      {
+        "question": "'Ich spiele gern Fußball' cümləsinin mənası hansıdır?",
+        "options": [
+          "Mən futbolu sevmirəm",
+          "Mən həvəslə futbol oynayıram",
+          "Futbol çox çətindir",
+          "Topum yoxdur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'gern' həvəslə, sevərək deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 10. Sport.",
+        "passport_id": "g2-deu-81170-q17"
+      },
+      {
+        "question": "Hansı idman növü hovuzda su ilə bağlıdır?",
+        "options": [
+          "Schach (Şahmat)",
+          "Fußball (Futbol)",
+          "Schwimmen (Üzgüçülük)",
+          "Turnen (Gimnastika)"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Schwimmen' üzmək və üzgüçülük idmanıdır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 10. Sport.",
+        "passport_id": "g2-deu-81170-q18"
       }
     ],
     "Lektion 11. Hobbys.": [
@@ -168456,6 +169314,84 @@
           "topic": "Lektion 11. Hobbys.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Malen' felinin mənası nədir?",
+        "options": [
+          "Mahnı oxumaq",
+          "Rəsm çəkmək (boyamaq)",
+          "Qaçmaq",
+          "Yatmaq"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Malen' fırça və boyalarla rəsm çəkmək deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-17002-q16"
+      },
+      {
+        "question": "'Mein Hobby ist Musik hören' deyən şagird nə etməyi sevir?",
+        "options": [
+          "Kitab yazmağı",
+          "Şeir əzbərləməyi",
+          "Musiqi dinləməyi",
+          "Yemək bişirməyi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Musik hören' musiqiyə qulaq asmaq mənasını verir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-17002-q17"
+      },
+      {
+        "question": "'Bazar günləri mən kitab oxuyuram' fikrini hansı fel daha yaxşı ifadə edir?",
+        "options": [
+          "Tanzen (Rəqs etmək)",
+          "Singen (Oxumaq - mahnı)",
+          "Springen (Tullanmaq)",
+          "Lesen (Oxumaq)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Kitab və mətn oxumaq üçün 'lesen' feli işlədilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 (əsas xarici dil) | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-17002-q18"
       }
     ]
   },
@@ -168940,6 +169876,84 @@
           "topic": "Lektion 1. Guten Tag!",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Guten Tag!' ifadəsinin Azərbaycan dilinə tərcüməsi hansıdır?",
+        "options": [
+          "Gecəniz xeyirə qalsın!",
+          "Sağ olun!",
+          "Bağışlayın!",
+          "Hər vaxtınız xeyir! (Salam!)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Guten Tag' günorta və gün ərzində işlədilən rəsmi və geniş yayılmış salamlaşma ifadəsidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-42117-q16"
+      },
+      {
+        "question": "Dostlar arasında qeyri-rəsmi və səmimi salamlaşmaq üçün hansı söz işlədilir?",
+        "options": [
+          "Hallo!",
+          "Auf Wiedersehen!",
+          "Gute Nacht!",
+          "Danke!"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Hallo!' alman dilində dostlar və yaşıdlar arasında ən çox işlədilən salam sözüdür.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-42117-q17"
+      },
+      {
+        "question": "Səhər saat 08:00-da məktəbə daxil olarkən müəllimə necə salam vermək daha düzgündür?",
+        "options": [
+          "Gute Nacht!",
+          "Guten Morgen!",
+          "Tschüss!",
+          "Guten Abend!"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Səhər saatlarında salamlaşmaq üçün 'Guten Morgen' (Sabahınız xeyir) deyilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 1. Guten Tag!",
+        "passport_id": "g2-deu-42117-q18"
       }
     ],
     "Lektion 2. Wie geht es dir ?": [
@@ -169422,6 +170436,84 @@
           "topic": "Lektion 2. Wie geht es dir ?",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Wie geht es dir?' sualı nə deməkdir?",
+        "options": [
+          "Necəsən? (Halın necədir?)",
+          "Adın nədir?",
+          "Haralısan?",
+          "Neçə yaşın var?"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Wie geht es dir?' yaxın dostdan və ya uşaqdan əhvalını soruşmaq üçün işlədilir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-87407-q16"
+      },
+      {
+        "question": "'Danke, gut!' cavabının mənası hansı bənddə düzgün göstərilmişdir?",
+        "options": [
+          "Mən getməliyəm",
+          "Çox sağ ol, yaxşıyam!",
+          "Bilmirəm",
+          "Xeyr, pis deyiləm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Danke' təşəkkür edirəm, 'gut' isə yaxşı deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-87407-q17"
+      },
+      {
+        "question": "Biri sizə 'Wie geht's?' dedikdə, əgər əhvalınız əladırsa necə cavab verərsiniz?",
+        "options": [
+          "Schlecht, danke!",
+          "Auf Wiedersehen!",
+          "Sehr gut, danke!",
+          "Guten Tag!"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Sehr gut' çox yaxşı / əla deməkdir və razılığı bildirir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 2. Wie geht es dir ?",
+        "passport_id": "g2-deu-87407-q18"
       }
     ],
     "Lektion 3. İCH und DU": [
@@ -169904,6 +170996,84 @@
           "topic": "Lektion 3. İCH und DU",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Ich' şəxs əvəzliyi hansı mənaya gəlir?",
+        "options": [
+          "Sən",
+          "Mən",
+          "O",
+          "Biz"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Ich' birinci şəxsin təki olan 'Mən' əvəzliyidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-40791-q16"
+      },
+      {
+        "question": "'Du' əvəzliyi ilə müraciət edərkən felin sonuna hansı şəxs sonluğu artırılır?",
+        "options": [
+          "-e sonluğu",
+          "-en sonluğu",
+          "-st sonluğu (məsələn: du lernst)",
+          "-t sonluğu"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Alman dilində indiki zamanda 'du' şəxsinin felləri standart olaraq '-st' sonluğu qəbul edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-40791-q17"
+      },
+      {
+        "question": "'Mən və sən dostuq' mənasını verən düzgün alman cümləsi hansıdır?",
+        "options": [
+          "Ich bist du Freund.",
+          "Du bin ich danke.",
+          "Wir ist Freund.",
+          "Ich und du sind Freunde."
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Ich und du' birlikdə cəm (wir - biz) formasını yaradır və feli 'sind' olur.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 3. İCH und DU",
+        "passport_id": "g2-deu-40791-q18"
       }
     ],
     "Lektion 4. die Zahlen.": [
@@ -170386,6 +171556,84 @@
           "topic": "Lektion 4. die Zahlen.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Eins, zwei, drei' hansı ədədlərdir?",
+        "options": [
+          "4, 5, 6",
+          "7, 8, 9",
+          "1, 2, 3",
+          "10, 20, 30"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Eins' 1, 'zwei' 2, 'drei' isə 3 deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-51945-q16"
+      },
+      {
+        "question": "Riyazi ifadənin nəticəsini tapın: 'zwei + drei = ?'",
+        "options": [
+          "Vier (4)",
+          "Sechs (6)",
+          "Sieben (7)",
+          "Fünf (5)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "2 (zwei) + 3 (drei) = 5 (fünf) edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-51945-q17"
+      },
+      {
+        "question": "Ədədləri kiçikdən böyüyə ardıcıl düzən variant hansıdır?",
+        "options": [
+          "Vier (4), Fünf (5), Sechs (6)",
+          "Zehn (10), Drei (3), Eins (1)",
+          "Fünf (5), Zwei (2), Acht (8)",
+          "Neun (9), Vier (4), Zwei (2)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Vier (4), Fünf (5), Sechs (6) ardıcıl artan sıradır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 4. die Zahlen.",
+        "passport_id": "g2-deu-51945-q18"
       }
     ],
     "Lektion 5. İCH bin 7.": [
@@ -170868,6 +172116,84 @@
           "topic": "Lektion 5. İCH bin 7.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Ich bin 7 Jahre alt' cümləsi nə bildirir?",
+        "options": [
+          "Mən 7-ci sinifdə oxuyuram",
+          "Mənim 7 dostum var",
+          "Mən saat 7-də dururam",
+          "Mənim 7 yaşım var"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Alman dilində yaş 'Ich bin ... Jahre alt' quruluşu ilə ifadə olunur.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-29495-q16"
+      },
+      {
+        "question": "'Wie alt bist du?' sualına 8 yaşlı uşaq necə cavab verməlidir?",
+        "options": [
+          "Ich bin acht Jahre alt.",
+          "Ich bin zehn.",
+          "Du bist acht.",
+          "Danke, sehr gut."
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Acht' alman dilində 8 rəqəmidir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-29495-q17"
+      },
+      {
+        "question": "Hansı cümlədə qrammatik uyğunluq tam doğrudur?",
+        "options": [
+          "Du bin sieben Jahre alt.",
+          "Du bist sieben Jahre alt.",
+          "Ich bist sieben Jahre alt.",
+          "Er bin sieben Jahre alt."
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Du' əvəzliyi ilə 'sein' felinin forması 'bist' olaraq uzlaşır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 5. İCH bin 7.",
+        "passport_id": "g2-deu-29495-q18"
       }
     ],
     "Lektion 6. İCH komme aus Aserbaidschan.": [
@@ -171350,6 +172676,84 @@
           "topic": "Lektion 6. İCH komme aus Aserbaidschan.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Aserbaidschan' sözü alman dilində hansı ölkəni bildirir?",
+        "options": [
+          "Azərbaycan",
+          "Almaniya",
+          "Avstriya",
+          "Amerika"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Aserbaidschan' doğma vətənimiz Azərbaycanın alman dilindəki yazılışıdır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-75427-q16"
+      },
+      {
+        "question": "'Woher kommst du?' sualına Bakıda yaşayan məktəbli necə cavab verər?",
+        "options": [
+          "Ich wohne nicht.",
+          "Ich komme aus Baku.",
+          "Ich heiße Baku.",
+          "Guten Tag, Baku."
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Woher kommst du?' haralısan sualıdır və 'Ich komme aus...' ilə cavablandırılır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-75427-q17"
+      },
+      {
+        "question": "'Ich wohne in Baku, in Aserbaidschan' cümləsinin tərcüməsi hansıdır?",
+        "options": [
+          "Mən Bakıdan gəlirəm",
+          "Mən Bakıya gedirəm",
+          "Mən Azərbaycanda, Bakıda yaşayıram",
+          "Mənim vətənim gözəldir"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'wohnen in' haradasa yaşamaq mənasını ifadə edir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 6. İCH komme aus Aserbaidschan.",
+        "passport_id": "g2-deu-75427-q18"
       }
     ],
     "Lektion 7. Die Jahareszeiten.": [
@@ -171832,6 +173236,84 @@
           "topic": "Lektion 7. Die Jahareszeiten.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "İldə neçə fəsil (Jahreszeiten) var və alman dilində 4 rəqəmi nədir?",
+        "options": [
+          "Drei (3 fəsil)",
+          "Vier (4 fəsil)",
+          "Fünf (5 fəsil)",
+          "Zwei (2 fəsil)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "İldə 4 fəsil var və alman dilində 4 'vier' adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-44539-q16"
+      },
+      {
+        "question": "'Der Sommer' hansı fəslin adıdır?",
+        "options": [
+          "Qış",
+          "Yaz",
+          "Yay",
+          "Payız"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Der Sommer' yay, 'der Winter' qış, 'der Frühling' yaz, 'der Herbst' isə payızdır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-44539-q17"
+      },
+      {
+        "question": "Qar yağan və soyuq olan qış fəsli alman dilində necə adlanır?",
+        "options": [
+          "Der Sommer",
+          "Der Herbst",
+          "Der Frühling",
+          "Der Winter"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Der Winter' qış fəslidir və qarlı havalarla xarakterizə olunur.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 7. Die Jahareszeiten.",
+        "passport_id": "g2-deu-44539-q18"
       }
     ],
     "Lektion 8. Das Wetter.": [
@@ -172314,6 +173796,84 @@
           "topic": "Lektion 8. Das Wetter.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Die Sonne' nə deməkdir?",
+        "options": [
+          "Yağış",
+          "Külək",
+          "Günəş",
+          "Qar"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Die Sonne' günəş deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-7995-q16"
+      },
+      {
+        "question": "'Die Sonne scheint' ifadəsi havanın necə olduğunu bildirir?",
+        "options": [
+          "Güclü yağış yağır",
+          "Şaxtalı qar yağır",
+          "Qatı duman var",
+          "Günəş parıldayır (hava günəşlidir)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'scheinen' parıldamaq deməkdir, günəşli havanı təsvir edir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-7995-q17"
+      },
+      {
+        "question": "'Es ist kalt und es schneit' cümləsinin mənası hansı fəsildə müşahidə olunur?",
+        "options": [
+          "Qışda (Hava soyuqdur və qar yağır)",
+          "Yayda (Hava çox istidir)",
+          "Yazda (Güllər açır)",
+          "Payızda (Meyvələr yetişir)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'kalt' soyuq, 'es schneit' isə qar yağır deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 8. Das Wetter.",
+        "passport_id": "g2-deu-7995-q18"
       }
     ],
     "Lektion 9. Die Freuunde.": [
@@ -172796,6 +174356,84 @@
           "topic": "Lektion 9. Die Freuunde.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində 'Dost' sözü necə səslənir?",
+        "options": [
+          "Bruder",
+          "Lehrer",
+          "Schüler",
+          "Freund"
+        ],
+        "correctAnswer": 3,
+        "explanation": "'Freund' dost deməkdir (qız dost üçün 'Freundin').",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-86957-q16"
+      },
+      {
+        "question": "'Das ist mein Freund' cümləsinin mənası nədir?",
+        "options": [
+          "Bu, mənim dostumdur",
+          "Bu, mənim kitabımdır",
+          "Mən dostumu sevirəm",
+          "Dostum məktəbə gedir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "'Das ist mein Freund' 'Bu, mənim dostumdur' tərcümə olunur.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-86957-q17"
+      },
+      {
+        "question": "'Wir spielen zusammen' cümləsində uşaqlar nə edirlər?",
+        "options": [
+          "Birlikdə yatırlar",
+          "Birlikdə oynayırlar",
+          "Dərs oxumurlar",
+          "Məktəbdən qaçırlar"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'spielen' oynamaq, 'zusammen' isə birlikdə deməkdir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 9. Die Freuunde.",
+        "passport_id": "g2-deu-86957-q18"
       }
     ],
     "Lektion 10. Sport.": [
@@ -173278,6 +174916,84 @@
           "topic": "Lektion 10. Sport.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "Alman dilində ən məşhur oyun olan 'Futbol' necə yazılır?",
+        "options": [
+          "Fußball",
+          "Tennis",
+          "Basketball",
+          "Laufen"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Futbol alman dilində 'Fußball' şəklində yazılır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 10. Sport.",
+        "passport_id": "g2-deu-5802-q16"
+      },
+      {
+        "question": "'Ich spiele gern Fußball' cümləsinin mənası hansıdır?",
+        "options": [
+          "Mən futbolu sevmirəm",
+          "Mən həvəslə futbol oynayıram",
+          "Futbol çox çətindir",
+          "Topum yoxdur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'gern' həvəslə, sevərək deməkdir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 10. Sport.",
+        "passport_id": "g2-deu-5802-q17"
+      },
+      {
+        "question": "Hansı idman növü hovuzda su ilə bağlıdır?",
+        "options": [
+          "Schach (Şahmat)",
+          "Fußball (Futbol)",
+          "Schwimmen (Üzgüçülük)",
+          "Turnen (Gimnastika)"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Schwimmen' üzmək və üzgüçülük idmanıdır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 10. Sport.",
+        "passport_id": "g2-deu-5802-q18"
       }
     ],
     "Lektion 11. Hobbys.": [
@@ -173760,6 +175476,84 @@
           "topic": "Lektion 11. Hobbys.",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif Xarici Dil Kurikulumu"
         }
+      },
+      {
+        "question": "'Malen' felinin mənası nədir?",
+        "options": [
+          "Mahnı oxumaq",
+          "Rəsm çəkmək (boyamaq)",
+          "Qaçmaq",
+          "Yatmaq"
+        ],
+        "correctAnswer": 1,
+        "explanation": "'Malen' fırça və boyalarla rəsm çəkmək deməkdir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-48207-q16"
+      },
+      {
+        "question": "'Mein Hobby ist Musik hören' deyən şagird nə etməyi sevir?",
+        "options": [
+          "Kitab yazmağı",
+          "Şeir əzbərləməyi",
+          "Musiqi dinləməyi",
+          "Yemək bişirməyi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "'Musik hören' musiqiyə qulaq asmaq mənasını verir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-48207-q17"
+      },
+      {
+        "question": "'Bazar günləri mən kitab oxuyuram' fikrini hansı fel daha yaxşı ifadə edir?",
+        "options": [
+          "Tanzen (Rəqs etmək)",
+          "Singen (Oxumaq - mahnı)",
+          "Springen (Tullanmaq)",
+          "Lesen (Oxumaq)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Kitab və mətn oxumaq üçün 'lesen' feli işlədilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı diqqətlə oxuyun",
+          "Lüğət və qrammatika qaydasını yada salın",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Dərsliyi | 2-ci sinif | Alman dili 2 | Lektion 11. Hobbys.",
+        "passport_id": "g2-deu-48207-q18"
       }
     ]
   },
@@ -249914,6 +251708,84 @@
           "topic": "MİLLİ İNCƏSƏNƏT - Xalça naxışları və buta",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Azərbaycan milli ornamentlərində alov dilimini xatırladan qədim naxış hansıdır?",
+        "options": [
+          "Kvadrat",
+          "Buta",
+          "Ulduz",
+          "Dairə"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Buta od və alov rəmzi olan ən məşhur milli xalça naxışımızdır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Xalça naxışları və buta",
+        "passport_id": "g2-1206-q16"
+      },
+      {
+        "question": "Xalça toxunarkən və ya çəkilərkən naxışların kənarlarda yerləşən çərçivəsi necə adlanır?",
+        "options": [
+          "Mərkəzi göl",
+          "Zəmin",
+          "Haşiyə",
+          "İlmə"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Xalçanın kompozisiyasını əhatə edən zolaq haşiyə adlanır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Xalça naxışları və buta",
+        "passport_id": "g2-1206-q17"
+      },
+      {
+        "question": "Rəsmdə milli xalça motivi çəkərkən buta naxışlarını simmetrik yerləşdirmək nə deməkdir?",
+        "options": [
+          "Butaların yalnız bir küncə sıxışdırılması",
+          "Bütün butaların müxtəlif rənglərlə qaralanması",
+          "Naxışların vərəqdən kənara çıxması",
+          "Sağ və sol tərəfdəki butaların eyni məsafədə və ölçüdə qarşı-qarşıya düzülməsi"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Simmetriya kompozisiyada tarazlığı və nizamı təmin edən bərabər bölgüdür.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Xalça naxışları və buta",
+        "passport_id": "g2-1206-q18"
       }
     ],
     "MİLLİ İNCƏSƏNƏT - Təsviri İncəsənət - Ümumiləşdirici təkrar": [
@@ -250396,6 +252268,84 @@
           "topic": "MİLLİ İNCƏSƏNƏT - Təsviri İncəsənət - Ümumiləşdirici təkrar",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "İnsan üzünü və görkəmini əks etdirən rəsm əsəri necə adlanır?",
+        "options": [
+          "Peyzaj",
+          "Natürmort",
+          "Portret",
+          "Dizayn"
+        ],
+        "correctAnswer": 2,
+        "explanation": "İnsanın təsvir edildiyi təsviri sənət janrı portret adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Təsviri İncəsənət - Ümumiləşdirici təkrar",
+        "passport_id": "g2-79314-q16"
+      },
+      {
+        "question": "Cansız əşyaları, meyvələri və güldandakı gülləri təsvir edən janr hansıdır?",
+        "options": [
+          "Mənzərə",
+          "Animalistika",
+          "Heykəltaraşlıq",
+          "Natürmort"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Süfrə əşyaları və meyvələrin təsviri natürmort ('ölü təbiət') adlanır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Təsviri İncəsənət - Ümumiləşdirici təkrar",
+        "passport_id": "g2-79314-q17"
+      },
+      {
+        "question": "Təsviri sənətdə isti və soyuq rənglər qrupunu ən düzgün fərqləndirən cütlük hansıdır?",
+        "options": [
+          "Qırmızı-sarı (isti), mavi-yaşıl (soyuq)",
+          "Qara-ağ (isti), boz-qəhvəyi (soyuq)",
+          "Yalnız göy (isti), sarı (soyuq)",
+          "Bütün rənglər istidir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Günəş və alov rəngləri (qırmızı, narıncı, sarı) isti, su və buz rəngləri (mavi, göy) soyuq çalarlardır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Təsviri İncəsənət 2 | MİLLİ İNCƏSƏNƏT - Təsviri İncəsənət - Ümumiləşdirici təkrar",
+        "passport_id": "g2-79314-q18"
       }
     ]
   },
@@ -253680,6 +255630,84 @@
           "topic": "Uşaq mahnıları və xor oxumaları",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Bir qrup uşağın mahnını birgə və eyni vaxtda oxuması necə adlanır?",
+        "options": [
+          "Uşaq xoru",
+          "Solo ifa",
+          "Rəqs",
+          "Tamaşa"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Uşaqların birlikdə musiqi əsərini səsləndirməsi uşaq xoru adlanır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Uşaq mahnıları və xor oxumaları",
+        "passport_id": "g2-45637-q16"
+      },
+      {
+        "question": "Xorda oxuyarkən hər bir şagird nəyə xüsusi diqqət yetirməlidir?",
+        "options": [
+          "Yalnız hamıdan bərkdən oxumağa",
+          "Yoldaşlarını dinləyərək ümumi ahəngi və tempi qorumağa",
+          "Gözlərini yumub heç nə eşitməməyə",
+          "Mahnı bitməmiş səhnədən getməyə"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Xor ifaçılığında əsas məqam qarşılıqlı dinləmə və vahid ahəngin təmin edilməsidir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Uşaq mahnıları və xor oxumaları",
+        "passport_id": "g2-45637-q17"
+      },
+      {
+        "question": "Dirijorun əl hərəkətləri xor ifaçılarına nəyi bildirir?",
+        "options": [
+          "Hansı paltarı geyinməli olduqlarını",
+          "Zalın temperaturunu",
+          "Mahnının tempini, səs gücünü və nə vaxt başlayıb-bitməsini",
+          "Yalnız sözlərin hərf sayını"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Dirijor xüsusi işarələrlə ifaçılara musiqinin ritmini və dinamik çalarlarını göstərir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Uşaq mahnıları və xor oxumaları",
+        "passport_id": "g2-45637-q18"
       }
     ],
     "Ritmlər və musiqi hərəkətləri": [
@@ -254162,6 +256190,84 @@
           "topic": "Ritmlər və musiqi hərəkətləri",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Musiqidə səslərin ardıcıl və nizamlı təkrarlanması necə adlanır?",
+        "options": [
+          "Boya",
+          "Ritm",
+          "Sətir",
+          "Rəqəm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ritm musiqi səslərinin zamana görə nizamlı və ahəngdar dövriyyəsidir.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Ritmlər və musiqi hərəkətləri",
+        "passport_id": "g2-4310-q16"
+      },
+      {
+        "question": "Şən rəqs musiqisi səslənərkən bədənimizdə hansı təbii reaksiya yaranır?",
+        "options": [
+          "Yatmaq istəyi",
+          "Dərhal kitab oxumaq",
+          "Musiqinin ritminə uyğun əl çalmaq və ritmik hərəkət etmək",
+          "Ağlamaq"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ritmik musiqi insanda hərəkət və rəqs impulsu oyadır.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Ritmlər və musiqi hərəkətləri",
+        "passport_id": "g2-4310-q17"
+      },
+      {
+        "question": "Dərsdə müəllim iki dəfə bərk, bir dəfə asta əl çaldıqda uşaqlar ritmi necə təkrarlamalıdır?",
+        "options": [
+          "Üç dəfə çox bərkdən qışqırmaqla",
+          "Yalnız ayaqları yerə çırpmaqla",
+          "Gözləyib heç nə etməməklə",
+          "Eyni qaydada: iki güclü və bir zəif zərbə ilə"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Ritm tapşırıqlarında vurğulu və vurğusuz zərbələrin dəqiq təkrarı əsasdır.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Tətbiq",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Ritmlər və musiqi hərəkətləri",
+        "passport_id": "g2-4310-q18"
       }
     ],
     "Musiqi - 2-ci sinif üzrə ümumiləşdirici təkrar": [
@@ -254644,6 +256750,84 @@
           "topic": "Musiqi - 2-ci sinif üzrə ümumiləşdirici təkrar",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — 2-ci Sinif İncəsənət Kurikulumu"
         }
+      },
+      {
+        "question": "Musiqinin üç əsas 'balinası' (təməli) hansılardır?",
+        "options": [
+          "Xətt, rəng, forma",
+          "Toplama, çıxma, vurma",
+          "Mahnı, rəqs, marş",
+          "Söz, cümlə, mətn"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Klassik musiqi nəzəriyyəsində mahnı, rəqs və marş musiqinin üç əsas dayağı sayılır.",
+        "difficulty": "Sadə",
+        "bloom_taxonomy": "Xatırlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi - 2-ci sinif üzrə ümumiləşdirici təkrar",
+        "passport_id": "g2-14503-q16"
+      },
+      {
+        "question": "Azərbaycan musiqi mədəniyyətinin ən möhtəşəm simvolu olan tar aləti hansı qrupa aiddir?",
+        "options": [
+          "Nəfəs aləti",
+          "Zərb aləti",
+          "Elektron alət",
+          "Simli musiqi aləti"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Tar qollarında pərdələri və telləri olan qədim simli çalğı alətidir.",
+        "difficulty": "Orta",
+        "bloom_taxonomy": "Anlama",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi - 2-ci sinif üzrə ümumiləşdirici təkrar",
+        "passport_id": "g2-14503-q17"
+      },
+      {
+        "question": "Bir musiqi parçasını dinləyərkən onun marş janrında olduğunu ən tez nədən müəyyən etmək olar?",
+        "options": [
+          "Addımlamağa uyğun qətiyyətli, təntənəli və dəqiq ikiölçülü ritmindən",
+          "Yalnız asta və həzin layla melodiyasından",
+          "Sözlərin çox sürətli oxunmasından",
+          "Heç bir alətin səslənməməsindən"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Marş janrı yeriş və addımlama tempinə uyğun kəskin və nizamlı zərbələri ilə seçilir.",
+        "difficulty": "Çətin",
+        "bloom_taxonomy": "Təhlil",
+        "distractor_diagnostics": {
+          "A": "Distractor",
+          "B": "Distractor",
+          "C": "Distractor",
+          "D": "Distractor"
+        },
+        "solution_steps": [
+          "Sualı oxuyun",
+          "Konteksti müəyyənləşdirin",
+          "Doğru variantı seçin"
+        ],
+        "sourceContext": "Dövlət Kurikulumu | 2-ci sinif | Musiqi 2 | Musiqi - 2-ci sinif üzrə ümumiləşdirici təkrar",
+        "passport_id": "g2-14503-q18"
       }
     ]
   }
