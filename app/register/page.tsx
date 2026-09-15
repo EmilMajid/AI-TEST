@@ -463,6 +463,8 @@ export default function RegisterPage() {
                             type="date"
                             {...studentForm.register("birthDate")}
                             autoComplete="bday"
+                            max={`${new Date().getFullYear() - 5}-12-31`}
+                            min={`${new Date().getFullYear() - 20}-01-01`}
                             className={`h-12 text-base ${studentForm.formState.errors.birthDate ? "border-red-500" : ""}`}
                           />
                           {studentForm.formState.errors.birthDate && (
@@ -470,6 +472,7 @@ export default function RegisterPage() {
                               {studentForm.formState.errors.birthDate.message}
                             </p>
                           )}
+                          <p className="text-xs text-slate-500 mt-1">Şagirdin yaşı 5 ilə 20 arasında olmalıdır</p>
                         </div>
 
                         {/* Location and School */}
@@ -747,6 +750,8 @@ export default function RegisterPage() {
                             type="date"
                             {...parentForm.register("birthDate")}
                             autoComplete="bday"
+                            max={`${new Date().getFullYear() - 18}-12-31`}
+                            min={`${new Date().getFullYear() - 95}-01-01`}
                             className={`h-12 text-base ${parentForm.formState.errors.birthDate ? "border-red-500" : ""}`}
                           />
                           {parentForm.formState.errors.birthDate && (
@@ -754,6 +759,7 @@ export default function RegisterPage() {
                               {parentForm.formState.errors.birthDate.message}
                             </p>
                           )}
+                          <p className="text-xs text-slate-500 mt-1">Valideynin yaşı ən azı 18 olmalıdır</p>
                         </div>
 
                         {/* Location */}

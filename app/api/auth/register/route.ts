@@ -19,6 +19,38 @@ export async function POST(request: NextRequest) {
     // Ensure registration works 100% reliably in cloud/production without dummy Supabase failures
     const isDemoMode = true
 
+    // Server-side birthDate validation (ikinci qorunma qatı — frontend bypass olunsa belə)
+    const birthDateRaw = (validatedData as { birthDate?: string }).birthDate
+    if (birthDateRaw) {
+      const bDate = new Date(birthDateRaw)
+      const now = new Date()
+      if (isNaN(bDate.getTime()) || bDate >= now) {
+        return NextResponse.json(
+          { error: "Doğum tarixi gələcək zaman ola bilməz." },
+          { status: 400 }
+        )
+      }
+      const ageYears = (now.getTime() - bDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+      if (accountType === "student" && (ageYears < 5 || ageYears > 20)) {
+        return NextResponse.json(
+          { error: "Şagird üçün doğum tarixi düzgün deyil. Yaş 5 ilə 20 arasında olmalıdır." },
+          { status: 400 }
+        )
+      }
+      if (accountType !== "student" && ageYears < 18) {
+        return NextResponse.json(
+          { error: "Valideyn/Müəllimin yaşı ən azı 18 olmalıdır." },
+          { status: 400 }
+        )
+      }
+      if (accountType !== "student" && ageYears > 95) {
+        return NextResponse.json(
+          { error: "Doğum tarixi düzgün deyil." },
+          { status: 400 }
+        )
+      }
+    }
+
     if (isDemoMode) {
       // Generate or use email
       let effectiveEmail = (validatedData.email || "").trim()
