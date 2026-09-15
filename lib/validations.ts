@@ -25,7 +25,39 @@ export const userRegistrationSchema = z
       .max(50, "Ata adı 50 hərfdən çox ola bilməz")
       .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
 
-    birthDate: z.string().min(1, "Doğum tarixi seçilməlidir"),
+    birthDate: z
+      .string()
+      .min(1, "Doğum tarixi seçilməlidir")
+      .refine(
+        (val) => {
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const today = new Date()
+          today.setHours(23, 59, 59, 999)
+          return d <= today
+        },
+        { message: "Doğum tarixi gələcək zaman ola bilməz" }
+      )
+      .refine(
+        (val) => {
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const now = new Date()
+          const ageYears = (now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+          return ageYears >= 5
+        },
+        { message: "Şagirdin yaşı ən azı 5 olmalıdır" }
+      )
+      .refine(
+        (val) => {
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const now = new Date()
+          const ageYears = (now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+          return ageYears <= 20
+        },
+        { message: "Məktəb şagirdi üçün yaş 20-dən çox ola bilməz" }
+      ),
 
     region: z.string().min(1, "Ərazi seçilməlidir"),
 
@@ -87,7 +119,43 @@ export const parentRegistrationSchema = z
       .max(50, "Ata adı 50 hərfdən çox ola bilməz")
       .regex(/^[a-zA-ZəüöğıçşĞÜÖƏIÇŞİ\s'-]+$/, "Ata adı yalnız hərflərdən ibarət olmalıdır"),
 
-    birthDate: z.string().optional().or(z.literal("")),
+    birthDate: z
+      .string()
+      .optional()
+      .or(z.literal(""))
+      .refine(
+        (val) => {
+          if (!val) return true
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const today = new Date()
+          today.setHours(23, 59, 59, 999)
+          return d <= today
+        },
+        { message: "Doğum tarixi gələcək zaman ola bilməz" }
+      )
+      .refine(
+        (val) => {
+          if (!val) return true
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const now = new Date()
+          const ageYears = (now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+          return ageYears >= 18
+        },
+        { message: "Valideynin yaşı ən azı 18 olmalıdır" }
+      )
+      .refine(
+        (val) => {
+          if (!val) return true
+          const d = new Date(val)
+          if (isNaN(d.getTime())) return false
+          const now = new Date()
+          const ageYears = (now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+          return ageYears <= 95
+        },
+        { message: "Düzgün doğum tarixi daxil edin" }
+      ),
 
     region: z.string().min(1, "Ərazi seçilməlidir"),
 
