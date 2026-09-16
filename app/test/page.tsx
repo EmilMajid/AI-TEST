@@ -75,18 +75,85 @@ export default function TestPage() {
     setSpeakingTarget(null)
   }
 
+  const detectLanguage = (text: string, subjectContext?: string): "az" | "en" | "ru" | "de" | "fr" => {
+    if (!text || !text.trim()) return "az"
+    const trimmed = text.trim()
+
+    // 1. Rus dili: Kiril hərflərinin üstünlük təşkil etməsi
+    const cyrillicCount = (trimmed.match(/[\u0400-\u04FF]/g) || []).length
+    const latinCount = (trimmed.match(/[a-zA-ZçəıöüşğÇƏİÖÜŞĞ]/g) || []).length
+    if (cyrillicCount > latinCount && cyrillicCount > 0) return "ru"
+
+    // 2. Azərbaycan dilinə xas olan xüsusi hərflər (İngilis dilində qətiyyən yoxdur)
+    if (/[çÇşŞöÖüÜəƏıIğĞ]/.test(trimmed)) return "az"
+
+    // 3. Azərbaycan dilinə aid qrammatik və sual açar sözləri
+    const azWords = /\b(hansı|hansıdır|nədir|necə|deyilir|deməkdir|tərcüməsi|dilində|sözünün|sözü|ifadəsi|doğrudur|uyğundur|sual|cavab|variantı|seçin|əşya|şəkil|masanın|üstündə|altında|sağda|solda|və|ilə|olan|üçün|ədəd|sayı|cəm|fərq)\b/i
+    if (azWords.test(trimmed)) return "az"
+
+    // 4. Normallaşdırılmış fənn konteksti
+    const sub = (subjectContext || "")
+      .replace(/İ/g, "i")
+      .replace(/i̇/g, "i")
+      .replace(/I/g, "ı")
+      .toLowerCase()
+
+    // 5. Alman dili
+    if (/[äÄß]/.test(trimmed) || /\b(der|die|das|und|ist|nicht|guten|morgen|tag|nacht|auf|wiedersehen|tschüss|danke|bitte|hallo)\b/i.test(trimmed)) {
+      if (sub.includes("alman") || sub.includes("german") || sub.includes("de")) return "de"
+    }
+
+    // 6. Fransız dili
+    if (/\b(bonjour|salut|au revoir|merci|oui|non|s'il vous plaît|bonne nuit|monsieur|madame)\b/i.test(trimmed)) return "fr"
+    if (/[éèêëàâùûôîïœæ]/i.test(trimmed)) {
+      if (sub.includes("fransiz") || sub.includes("fransız") || sub.includes("french") || sub.includes("fr")) return "fr"
+    }
+
+    // 7. Fənn konteksti (əgər mətn sırf xarici dildirsə)
+    if (sub.includes("ingilis") || sub.includes("english") || sub.includes("en")) {
+      return "en"
+    }
+    if (sub.includes("alman") || sub.includes("german") || sub.includes("de")) {
+      return "de"
+    }
+    if (sub.includes("fransiz") || sub.includes("fransız") || sub.includes("french") || sub.includes("fr")) {
+      return "fr"
+    }
+    if (sub.includes("rus") || sub.includes("russian")) {
+      if (cyrillicCount > 0) return "ru"
+    }
+
+    return "az"
+  }
+
   const speakWithBrowserTTS = (text: string, lang: string) => {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       try {
         window.speechSynthesis.cancel()
         const utterance = new SpeechSynthesisUtterance(text)
         const voices = window.speechSynthesis.getVoices()
-        let voice = voices.find((v) => v.lang.toLowerCase().startsWith(lang.toLowerCase()))
-        if (!voice && lang === "az") {
-          voice = voices.find((v) => v.lang.toLowerCase().startsWith("tr")) || voices.find((v) => v.lang.toLowerCase().startsWith("ru"))
+        let voice: SpeechSynthesisVoice | undefined
+
+        if (lang === "az") {
+          // Azərbaycan və ya Türk səsi axtarılır. Azərbaycan dili üçün heç bir halda Rus səsi seçilmir!
+          voice =
+            voices.find((v) => v.lang.toLowerCase().startsWith("az")) ||
+            voices.find((v) => v.lang.toLowerCase().startsWith("tr"))
+          if (!voice) {
+            // Rus olmayan neytral səs tapılır
+            voice = voices.find((v) => !v.lang.toLowerCase().startsWith("ru") && (v.default || v.lang.startsWith("en")))
+          }
+        } else {
+          voice = voices.find((v) => v.lang.toLowerCase().startsWith(lang.toLowerCase()))
         }
-        if (voice) utterance.voice = voice
-        utterance.lang = voice?.lang || (lang === "az" ? "tr-TR" : lang)
+
+        if (voice) {
+          utterance.voice = voice
+          utterance.lang = voice.lang
+        } else {
+          utterance.lang = lang === "az" ? "tr-TR" : lang
+        }
+
         utterance.rate = 0.95
         utterance.onend = () => {
           setIsSpeaking(false)
@@ -130,18 +197,23 @@ export default function TestPage() {
     setIsSpeaking(true)
     setSpeakingTarget(textToSpeak)
 
-    const tb = (testConfig?.textbook || "").toLowerCase()
-    let lang = "az"
-    if (tb.includes("ingilis") || tb.includes("english")) lang = "en"
-    else if (tb.includes("rus")) lang = "ru"
-    else if (tb.includes("alman")) lang = "de"
-    else if (tb.includes("fransız") || tb.includes("fransiz")) lang = "fr"
-
+    // Ağıllı dil aşkarlama (Hər bir mətnin özünə və fənn kontekstinə uyğun)
+    const lang = detectLanguage(cleanText, testConfig?.textbook)
     const dynamicTtsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}&lang=${lang}`
+
     let initialAudioUrl = customAudioUrl
     if (!initialAudioUrl && currentQuestion?.audio && textToSpeak === currentQuestion.question) {
       initialAudioUrl = currentQuestion.audio
     }
+
+    if (initialAudioUrl && initialAudioUrl.startsWith("/api/tts")) {
+      try {
+        const urlObj = new URL(initialAudioUrl, window.location.origin)
+        urlObj.searchParams.set("lang", lang)
+        initialAudioUrl = urlObj.pathname + urlObj.search
+      } catch (_) {}
+    }
+
     const targetUrl = initialAudioUrl || dynamicTtsUrl
 
     const playAudioElement = (url: string, isInitialAttempt: boolean) => {

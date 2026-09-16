@@ -6,15 +6,68 @@ import { spawn } from "child_process"
 
 export const dynamic = "force-dynamic"
 
-function getVoice(lang?: string, requestedVoice?: string): string {
+function azNormText(str: string): string {
+  return (str || "")
+    .replace(/İ/g, "i")
+    .replace(/i̇/g, "i")
+    .replace(/I/g, "ı")
+    .toLowerCase()
+}
+
+export function detectTextLanguage(text: string, subjectContext?: string): "az" | "en" | "ru" | "de" | "fr" {
+  if (!text || !text.trim()) return "az"
+  const trimmed = text.trim()
+
+  // 1. Rus dili: Kiril hərflərinin üstünlük təşkil etməsi
+  const cyrillicCount = (trimmed.match(/[\u0400-\u04FF]/g) || []).length
+  const latinCount = (trimmed.match(/[a-zA-ZçəıöüşğÇƏİÖÜŞĞ]/g) || []).length
+  if (cyrillicCount > latinCount && cyrillicCount > 0) return "ru"
+
+  // 2. Azərbaycan dilinə xas olan xüsusi hərflər (İngilis dilində qətiyyən yoxdur)
+  if (/[çÇşŞöÖüÜəƏıIğĞ]/.test(trimmed)) return "az"
+
+  // 3. Azərbaycan dilinə aid qrammatik və sual açar sözləri
+  const azWords = /\b(hansı|hansıdır|nədir|necə|deyilir|deməkdir|tərcüməsi|dilində|sözünün|sözü|ifadəsi|doğrudur|uyğundur|sual|cavab|variantı|seçin|əşya|şəkil|masanın|üstündə|altında|sağda|solda|və|ilə|olan|üçün|ədəd|sayı|cəm|fərq)\b/i
+  if (azWords.test(trimmed)) return "az"
+
+  // 4. Normallaşdırılmış fənn konteksti
+  const sub = azNormText(subjectContext || "")
+
+  // 5. Alman dilinə xas xarakterik simvol və sözlər
+  if (/[äÄß]/.test(trimmed) || /\b(der|die|das|und|ist|nicht|guten|morgen|tag|nacht|auf|wiedersehen|tschüss|danke|bitte|hallo)\b/i.test(trimmed)) {
+    if (sub.includes("alman") || sub.includes("german") || sub.includes("de")) return "de"
+  }
+
+  // 6. Fransız dilinə xas xarakterik sözlər və hərflər
+  if (/\b(bonjour|salut|au revoir|merci|oui|non|s'il vous plaît|bonne nuit|monsieur|madame)\b/i.test(trimmed)) return "fr"
+  if (/[éèêëàâùûôîïœæ]/i.test(trimmed)) {
+    if (sub.includes("fransiz") || sub.includes("fransız") || sub.includes("french") || sub.includes("fr")) return "fr"
+  }
+
+  // 7. Əgər fənn xarici dildirsə və mətn Azərbaycan dili əlaməti daşımırsa, xarici dilə aid et:
+  if (sub.includes("ingilis") || sub.includes("english") || sub.includes("en")) {
+    return "en"
+  }
+  if (sub.includes("alman") || sub.includes("german") || sub.includes("de")) {
+    return "de"
+  }
+  if (sub.includes("fransiz") || sub.includes("fransız") || sub.includes("french") || sub.includes("fr")) {
+    return "fr"
+  }
+  if (sub.includes("rus") || sub.includes("russian")) {
+    if (cyrillicCount > 0) return "ru"
+  }
+
+  return "az"
+}
+
+function getVoice(text: string, langOrContext?: string, requestedVoice?: string): string {
   if (requestedVoice) return requestedVoice
-  const l = (lang || "").toLowerCase()
-  if (l.startsWith("en") || l.includes("ingilis")) return "en-US-JennyNeural"
-  if (l.startsWith("ru") || l.includes("rus")) return "ru-RU-SvetlanaNeural"
-  if (l.startsWith("de") || l.includes("alman")) return "de-DE-KatjaNeural"
-  if (l.startsWith("fr") || l.includes("fransiz")) return "fr-FR-DeniseNeural"
-  if (l.startsWith("tr") || l.includes("turk")) return "tr-TR-EmelNeural"
-  // Standart olaraq Azərbaycan dili üçün təbii Azərbaycan Neural səsi:
+  const detectedLang = detectTextLanguage(text, langOrContext)
+  if (detectedLang === "en") return "en-US-JennyNeural"
+  if (detectedLang === "ru") return "ru-RU-SvetlanaNeural"
+  if (detectedLang === "de") return "de-DE-KatjaNeural"
+  if (detectedLang === "fr") return "fr-FR-DeniseNeural"
   return "az-AZ-BanuNeural"
 }
 
@@ -59,7 +112,7 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
 
   // Maksimum 500 simvol həddi
   const truncatedText = cleanText.slice(0, 500)
-  const voice = getVoice(lang, requestedVoice)
+  const voice = getVoice(truncatedText, lang, requestedVoice)
 
   // Keş qovluğu
   const cacheDir = path.join(process.cwd(), "public", "audio", "cache")
@@ -72,12 +125,21 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
   const cacheFilePath = path.join(cacheDir, `${hash}.mp3`)
   const staticUrl = `/audio/cache/${hash}.mp3`
 
-  // Əgər audio fayl artıq keşdə varsa, birbaşa yönləndir
+  // Əgər audio fayl artıq keşdə varsa, birbaşa audio məzmununu qaytar (307 redirect-siz, dərhal ifa üçün)
   if (fs.existsSync(cacheFilePath) && fs.statSync(cacheFilePath).size > 1000) {
     if (request.headers.get("accept")?.includes("application/json")) {
       return NextResponse.json({ success: true, audioUrl: staticUrl })
     }
-    return NextResponse.redirect(new URL(staticUrl, request.url), 307)
+    const fileBuffer = fs.readFileSync(cacheFilePath)
+    return new NextResponse(fileBuffer, {
+      status: 200,
+      headers: {
+        "Content-Type": "audio/mpeg",
+        "Content-Length": String(fileBuffer.length),
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    })
   }
 
   // Əgər keşdə yoxdursa, edge-tts ilə yüksək keyfiyyətli MP3 yarat
@@ -121,7 +183,17 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
     if (request.headers.get("accept")?.includes("application/json")) {
       return NextResponse.json({ success: true, audioUrl: staticUrl })
     }
-    return NextResponse.redirect(new URL(staticUrl, request.url), 307)
+
+    const fileBuffer = fs.readFileSync(cacheFilePath)
+    return new NextResponse(fileBuffer, {
+      status: 200,
+      headers: {
+        "Content-Type": "audio/mpeg",
+        "Content-Length": String(fileBuffer.length),
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    })
   } catch (genError: any) {
     console.error("Audio generasiya xətası:", genError)
     return NextResponse.json({ error: "Səs faylı yaradılarkən xəta: " + genError.message }, { status: 500 })
