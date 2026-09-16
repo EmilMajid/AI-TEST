@@ -101,10 +101,14 @@ export async function POST(request: NextRequest) {
 
 async function handleTTS(rawText: string, lang: string, requestedVoice: string, request: NextRequest) {
   // Emojiləri və lazımsız simvolları təmizlə
-  const cleanText = rawText
+  let cleanText = rawText
     .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "")
     .replace(/\s+/g, " ")
     .trim()
+
+  if (cleanText === ">") cleanText = "Böyükdür"
+  else if (cleanText === "<") cleanText = "Kiçikdir"
+  else if (cleanText === "=") cleanText = "Bərabərdir"
 
   if (!cleanText) {
     return NextResponse.json({ error: "Səsləndirmək üçün mətn daxil edilməyib" }, { status: 400 })

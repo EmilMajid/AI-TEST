@@ -189,10 +189,14 @@ export default function TestPage() {
     // Əvvəlki səsi dayandır
     stopAudio()
 
-    const cleanText = textToSpeak
+    let cleanText = textToSpeak
       .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "")
       .replace(/\s+/g, " ")
       .trim()
+
+    if (cleanText === ">") cleanText = "Böyükdür"
+    else if (cleanText === "<") cleanText = "Kiçikdir"
+    else if (cleanText === "=") cleanText = "Bərabərdir"
 
     if (!cleanText) return
 
@@ -992,7 +996,7 @@ export default function TestPage() {
                     <RadioGroupItem value={index.toString()} id={`option-${index}`} />
                     <div className="flex items-center justify-between flex-1">
                       <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-sm sm:text-base leading-snug">
-                        {cleanFormattedText(option)}
+                        {cleanFormattedText(option) || String(option).trim()}
                       </Label>
                       <button
                         type="button"

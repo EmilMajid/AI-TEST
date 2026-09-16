@@ -141,10 +141,10 @@ export function formatScientificText(text: any): string {
 
   let s = text
 
-  // 1. Clean markdown quotes & bold
-  s = s.replace(/^\s*>\s*/gm, "")
+  // 1. Clean markdown quotes & bold (preserve math comparison operators like '>')
+  s = s.replace(/^\s*>\s+(?=[A-Za-zƏəİiÖöÜüÇçŞşĞğА-Яа-я\*\*])/gm, "")
   s = s.replace(/\*\*([^*]+)\*\*/g, "$1")
-  s = s.replace(/^\s*\*\s+/gm, "")
+  s = s.replace(/^\s*\*\s+(?=[A-Za-zƏəİiÖöÜüÇçŞşĞğА-Яа-я])/gm, "")
 
   // 2. Chemical reaction arrows & conditions
   s = s.replace(/\\xrightarrow\s*\[([^\]]+)\]\s*\{([^}]+)\}/g, " ──[$1, $2]──> ")
