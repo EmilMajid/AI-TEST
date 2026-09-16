@@ -109,6 +109,10 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
   if (cleanText === ">") cleanText = "Böyükdür"
   else if (cleanText === "<") cleanText = "Kiçikdir"
   else if (cleanText === "=") cleanText = "Bərabərdir"
+  else if (cleanText === "«+»" || cleanText === "+") cleanText = "Toplama işarəsi"
+  else if (cleanText === "«-»" || cleanText === "-") cleanText = "Çıxma işarəsi"
+  else if (cleanText === "«?»" || cleanText === "?") cleanText = "Sual işarəsi"
+  else if (cleanText === "«!»" || cleanText === "!") cleanText = "Nida işarəsi"
 
   if (!cleanText) {
     return NextResponse.json({ error: "Səsləndirmək üçün mətn daxil edilməyib" }, { status: 400 })

@@ -197,6 +197,10 @@ export default function TestPage() {
     if (cleanText === ">") cleanText = "Böyükdür"
     else if (cleanText === "<") cleanText = "Kiçikdir"
     else if (cleanText === "=") cleanText = "Bərabərdir"
+    else if (cleanText === "«+»" || cleanText === "+") cleanText = "Toplama işarəsi"
+    else if (cleanText === "«-»" || cleanText === "-") cleanText = "Çıxma işarəsi"
+    else if (cleanText === "«?»" || cleanText === "?") cleanText = "Sual işarəsi"
+    else if (cleanText === "«!»" || cleanText === "!") cleanText = "Nida işarəsi"
 
     if (!cleanText) return
 
