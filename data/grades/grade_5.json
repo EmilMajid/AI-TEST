@@ -335587,7 +335587,7 @@
       {
         "question": "Aşağıdakı fayl yolunu təhlil edin: C:\\Məktəb\\Sinif5\\riyaziyyat.docx — Bu faylın adı nədir?",
         "options": [
-          "",
+          "C: diski",
           "Məktəb",
           "riyaziyyat.docx",
           "Sinif5"
@@ -335612,7 +335612,9 @@
           "grade": 5,
           "topic": "2.5. Fayllar və qovluqlar",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (İnformatika 5, Ramin Mahmudzadə, Bakınəşr / Şərq-Qərb)"
-        }
+        },
+        "correct_answer": "C",
+        "correct_index": 2
       },
       {
         "question": "Bir qovluqda '.jpg', '.png', '.bmp' genişlənməli fayllar var. Bu faylların hamısı hansı növdür?",

@@ -84,7 +84,12 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
   try {
     await new Promise<void>((resolve, reject) => {
       const synthScript = path.join(process.cwd(), "scripts", "synthesize.py")
-      const py = spawn("python", [synthScript, voice, cacheFilePath, truncatedText])
+      const py = spawn("python", [synthScript, voice, cacheFilePath], {
+        env: { ...process.env, PYTHONIOENCODING: "utf-8", PYTHONUTF8: "1" },
+      })
+
+      py.stdin.write(truncatedText, "utf-8")
+      py.stdin.end()
 
       let stderr = ""
       py.stderr.on("data", (d) => {
@@ -103,14 +108,14 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
         reject(err)
       })
 
-      // 8 saniyəlik timeout
+      // 15 saniyəlik timeout
       setTimeout(() => {
         try {
           py.kill()
         } catch (_) {}
         if (fs.existsSync(cacheFilePath)) resolve()
         else reject(new Error("TTS generasiya vaxtı bitdi"))
-      }, 8000)
+      }, 15000)
     })
 
     if (request.headers.get("accept")?.includes("application/json")) {

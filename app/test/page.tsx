@@ -75,6 +75,38 @@ export default function TestPage() {
     setSpeakingTarget(null)
   }
 
+  const speakWithBrowserTTS = (text: string, lang: string) => {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      try {
+        window.speechSynthesis.cancel()
+        const utterance = new SpeechSynthesisUtterance(text)
+        const voices = window.speechSynthesis.getVoices()
+        let voice = voices.find((v) => v.lang.toLowerCase().startsWith(lang.toLowerCase()))
+        if (!voice && lang === "az") {
+          voice = voices.find((v) => v.lang.toLowerCase().startsWith("tr")) || voices.find((v) => v.lang.toLowerCase().startsWith("ru"))
+        }
+        if (voice) utterance.voice = voice
+        utterance.lang = voice?.lang || (lang === "az" ? "tr-TR" : lang)
+        utterance.rate = 0.95
+        utterance.onend = () => {
+          setIsSpeaking(false)
+          setSpeakingTarget(null)
+        }
+        utterance.onerror = (err) => {
+          console.warn("Browser SpeechSynthesis error:", err)
+          setIsSpeaking(false)
+          setSpeakingTarget(null)
+        }
+        window.speechSynthesis.speak(utterance)
+        return
+      } catch (e) {
+        console.warn("SpeechSynthesis exception:", e)
+      }
+    }
+    setIsSpeaking(false)
+    setSpeakingTarget(null)
+  }
+
   const handleSpeak = (textToSpeak: string, customAudioUrl?: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation()
     if (typeof window === "undefined") return
@@ -86,11 +118,7 @@ export default function TestPage() {
     }
 
     // Əvvəlki səsi dayandır
-    if (currentAudio) {
-      currentAudio.pause()
-      currentAudio.currentTime = 0
-      setCurrentAudio(null)
-    }
+    stopAudio()
 
     const cleanText = textToSpeak
       .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "")
@@ -102,44 +130,50 @@ export default function TestPage() {
     setIsSpeaking(true)
     setSpeakingTarget(textToSpeak)
 
-    // Audio URL: Hazır pre-cached statik audio faylı, yoxsa dinamik TTS
-    let audioUrl = customAudioUrl
-    if (!audioUrl) {
-      if (currentQuestion?.audio && textToSpeak === currentQuestion.question) {
-        audioUrl = currentQuestion.audio
-      } else {
-        const tb = (testConfig?.textbook || "").toLowerCase()
-        let lang = "az"
-        if (tb.includes("ingilis") || tb.includes("english")) lang = "en"
-        else if (tb.includes("rus")) lang = "ru"
-        else if (tb.includes("alman")) lang = "de"
-        else if (tb.includes("fransız") || tb.includes("fransiz")) lang = "fr"
-        audioUrl = `/api/tts?text=${encodeURIComponent(cleanText)}&lang=${lang}`
+    const tb = (testConfig?.textbook || "").toLowerCase()
+    let lang = "az"
+    if (tb.includes("ingilis") || tb.includes("english")) lang = "en"
+    else if (tb.includes("rus")) lang = "ru"
+    else if (tb.includes("alman")) lang = "de"
+    else if (tb.includes("fransız") || tb.includes("fransiz")) lang = "fr"
+
+    const dynamicTtsUrl = `/api/tts?text=${encodeURIComponent(cleanText)}&lang=${lang}`
+    let initialAudioUrl = customAudioUrl
+    if (!initialAudioUrl && currentQuestion?.audio && textToSpeak === currentQuestion.question) {
+      initialAudioUrl = currentQuestion.audio
+    }
+    const targetUrl = initialAudioUrl || dynamicTtsUrl
+
+    const playAudioElement = (url: string, isInitialAttempt: boolean) => {
+      const audio = new Audio(url)
+      setCurrentAudio(audio)
+
+      audio.onended = () => {
+        setIsSpeaking(false)
+        setSpeakingTarget(null)
+        setCurrentAudio(null)
       }
+
+      audio.onerror = () => {
+        console.warn("Audio fayl oxunmadı:", url)
+        if (isInitialAttempt && url !== dynamicTtsUrl) {
+          playAudioElement(dynamicTtsUrl, false)
+        } else {
+          speakWithBrowserTTS(cleanText, lang)
+        }
+      }
+
+      audio.play().catch((err) => {
+        console.warn("Audio play error:", err)
+        if (isInitialAttempt && url !== dynamicTtsUrl) {
+          playAudioElement(dynamicTtsUrl, false)
+        } else {
+          speakWithBrowserTTS(cleanText, lang)
+        }
+      })
     }
 
-    const audio = new Audio(audioUrl)
-
-    audio.onended = () => {
-      setIsSpeaking(false)
-      setSpeakingTarget(null)
-      setCurrentAudio(null)
-    }
-
-    audio.onerror = () => {
-      console.warn("Audio fayl oxunmadı:", audioUrl)
-      setIsSpeaking(false)
-      setSpeakingTarget(null)
-      setCurrentAudio(null)
-    }
-
-    setCurrentAudio(audio)
-    audio.play().catch((err) => {
-      console.warn("Audio play error:", err)
-      setIsSpeaking(false)
-      setSpeakingTarget(null)
-      setCurrentAudio(null)
-    })
+    playAudioElement(targetUrl, targetUrl !== dynamicTtsUrl)
   }
 
   useEffect(() => {
@@ -199,14 +233,25 @@ export default function TestPage() {
       const data = await response.json()
 
       if (data.success && data.questions && data.questions.length > 0) {
-        // Sualları konfiqurasiyaya uyğun olaraq filtrələ
-        const filteredQuestions = data.questions.slice(0, config.questionCount)
-        setQuestions(filteredQuestions)
+        // Sualları konfiqurasiyaya uyğun olaraq filtrələ və təmizlə
+        const sanitizedQuestions = data.questions.slice(0, config.questionCount).map((q: any) => {
+          const opts = Array.isArray(q.options)
+            ? q.options.filter((o: any) => o && String(o).trim().length > 0)
+            : []
+          let ansIdx = typeof q.correctAnswer === "number" ? q.correctAnswer : 0
+          if (ansIdx >= opts.length || ansIdx < 0) ansIdx = 0
+          return {
+            ...q,
+            options: opts,
+            correctAnswer: ansIdx,
+          }
+        })
+        setQuestions(sanitizedQuestions)
         setIsTestStarted(true)
 
-        console.log(`✅ ${filteredQuestions.length} sual yaradıldı:`, {
+        console.log(`✅ ${sanitizedQuestions.length} sual yaradıldı:`, {
           requestedCount: config.questionCount,
-          actualCount: filteredQuestions.length,
+          actualCount: sanitizedQuestions.length,
           difficulty: config.difficulty,
           provider: data.provider,
         })
@@ -825,7 +870,9 @@ export default function TestPage() {
                 onValueChange={(value) => handleAnswerSelect(currentQuestion.id, Number.parseInt(value))}
                 className="space-y-3"
               >
-                {currentQuestion.options.map((option, index) => (
+                {(currentQuestion.options || [])
+                  .filter((option) => option && String(option).trim().length > 0)
+                  .map((option, index) => (
                   <div
                     key={index}
                     onClick={() => handleAnswerSelect(currentQuestion.id, index)}

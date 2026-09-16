@@ -356,7 +356,7 @@ Mövzu: ${topic}`
 
             const questionsWithIds = uniqueAIQuestions.slice(0, questionCount).map((q: any, index: number) => {
               const cleanOptions = Array.isArray(q.options)
-                ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/, "").trim())
+                ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-E]\)\s*/, "").trim() : String(opt ?? "").trim()).filter((opt: string) => opt.length > 0)
                 : []
               return {
                 id: index + 1,
@@ -549,7 +549,9 @@ function loadFromQuestionBank(
     return shuffled.map((q: any, idx: number) => ({
       id: idx + 1,
       question: q.question,
-      options: Array.isArray(q.options) ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/i, "").trim()) : q.options,
+      options: Array.isArray(q.options)
+        ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-E]\)\s*/i, "").trim() : String(opt ?? "").trim()).filter((opt: string) => opt.length > 0)
+        : q.options,
       correctAnswer: q.correct_index ?? 0,
       explanation: cleanExplanation(
         typeof q.explanation === "object"
@@ -734,15 +736,24 @@ function loadFromOfflineTests(
 
       // Handle options format: string array OR dict { A: "...", B: "...", C: "...", D: "..." }
       if (Array.isArray(q.options)) {
-        cleanOptions = q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-D]\)\s*/i, "").trim() : String(opt))
+        cleanOptions = q.options
+          .map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-E]\)\s*/i, "").trim() : String(opt ?? "").trim())
+          .filter((opt: string) => opt.length > 0)
       } else if (typeof q.options === "object" && q.options !== null) {
-        const optionKeys = ["A", "B", "C", "D"]
-        cleanOptions = optionKeys.map(k => {
-          const val = q.options[k] || q.options[k.toLowerCase()] || ""
-          return typeof val === "string" ? val.trim() : String(val).trim()
+        const optionKeys = ["A", "B", "C", "D", "E"].filter(k => {
+          const val = q.options[k] ?? q.options[k.toLowerCase()]
+          return val !== undefined && val !== null && String(val).trim() !== ""
         })
-        if (cleanOptions.every(opt => !opt)) {
-          cleanOptions = Object.values(q.options).map((v: any) => typeof v === "string" ? v.trim() : String(v).trim())
+        if (optionKeys.length > 0) {
+          cleanOptions = optionKeys.map(k => {
+            const val = q.options[k] ?? q.options[k.toLowerCase()]
+            const str = typeof val === "string" ? val : String(val)
+            return str.replace(/^[A-E]\)\s*/i, "").trim()
+          })
+        } else {
+          cleanOptions = Object.values(q.options)
+            .map((v: any) => typeof v === "string" ? v.replace(/^[A-E]\)\s*/i, "").trim() : String(v ?? "").trim())
+            .filter((opt: string) => opt.length > 0)
         }
       }
 
@@ -756,10 +767,15 @@ function loadFromOfflineTests(
         else if (letter === "B") correctAnswerIndex = 1
         else if (letter === "C") correctAnswerIndex = 2
         else if (letter === "D") correctAnswerIndex = 3
+        else if (letter === "E") correctAnswerIndex = 4
         else {
-          const foundIdx = cleanOptions.findIndex(opt => opt.trim() === rawAns.trim())
+          const foundIdx = cleanOptions.findIndex(opt => opt.trim() === rawAns.trim() || opt.trim().toLowerCase() === rawAns.trim().toLowerCase())
           correctAnswerIndex = foundIdx !== -1 ? foundIdx : 0
         }
+      }
+
+      if (correctAnswerIndex >= cleanOptions.length || correctAnswerIndex < 0) {
+        correctAnswerIndex = 0
       }
 
       let expText = ""
