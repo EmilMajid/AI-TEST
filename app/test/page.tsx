@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
-import { Clock, CheckCircle, XCircle, RotateCcw, ArrowRight, ArrowLeft, Target, Brain, Volume2, VolumeX } from "lucide-react"
+import { Clock, CheckCircle, XCircle, RotateCcw, ArrowRight, ArrowLeft, Target, Brain, Volume2, VolumeX, Loader2 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import TestGenerationStatus from "@/components/test-generation-status"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
@@ -59,6 +59,7 @@ export default function TestPage() {
   const [testResults, setTestResults] = useState<any>(null)
   const [showInterstitial, setShowInterstitial] = useState(false)
   const [isSpeaking, setIsSpeaking] = useState(false)
+  const [isAudioLoading, setIsAudioLoading] = useState(false)
   const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(null)
   const [speakingTarget, setSpeakingTarget] = useState<string | null>(null)
 
@@ -72,6 +73,7 @@ export default function TestPage() {
       window.speechSynthesis.cancel()
     }
     setIsSpeaking(false)
+    setIsAudioLoading(false)
     setSpeakingTarget(null)
   }
 
@@ -174,12 +176,12 @@ export default function TestPage() {
     setSpeakingTarget(null)
   }
 
-  const handleSpeak = (textToSpeak: string, customAudioUrl?: string, e?: React.MouseEvent) => {
+  const handleSpeak = async (textToSpeak: string, customAudioUrl?: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation()
     if (typeof window === "undefined") return
 
-    // Əgər hazırda bu mətn səsləndirilirsə, dayandır
-    if (isSpeaking && speakingTarget === textToSpeak) {
+    // Əgər hazırda bu mətn səsləndirilirsə və ya yüklənirsə, dayandır
+    if ((isSpeaking || isAudioLoading) && speakingTarget === textToSpeak) {
       stopAudio()
       return
     }
@@ -194,8 +196,8 @@ export default function TestPage() {
 
     if (!cleanText) return
 
-    setIsSpeaking(true)
     setSpeakingTarget(textToSpeak)
+    setIsAudioLoading(true)
 
     // Ağıllı dil aşkarlama (Hər bir mətnin özünə və fənn kontekstinə uyğun)
     const lang = detectLanguage(cleanText, testConfig?.textbook)
@@ -216,36 +218,55 @@ export default function TestPage() {
 
     const targetUrl = initialAudioUrl || dynamicTtsUrl
 
-    const playAudioElement = (url: string, isInitialAttempt: boolean) => {
-      const audio = new Audio(url)
-      setCurrentAudio(audio)
+    try {
+      // 1. Audio məlumatını təhlükəsiz yüklə (Blob vasitəsilə - brauzer ilişmələrini aradan qaldırır)
+      const res = await fetch(targetUrl)
+      if (!res.ok) {
+        throw new Error(`HTTP xətası: ${res.status}`)
+      }
+
+      const blob = await res.blob()
+      const objectUrl = URL.createObjectURL(blob)
+      const audio = new Audio(objectUrl)
 
       audio.onended = () => {
         setIsSpeaking(false)
+        setIsAudioLoading(false)
         setSpeakingTarget(null)
         setCurrentAudio(null)
+        try {
+          URL.revokeObjectURL(objectUrl)
+        } catch (_) {}
       }
 
-      audio.onerror = () => {
-        console.warn("Audio fayl oxunmadı:", url)
-        if (isInitialAttempt && url !== dynamicTtsUrl) {
-          playAudioElement(dynamicTtsUrl, false)
-        } else {
+      audio.onerror = (err) => {
+        console.warn("Audio ifa xətası:", err)
+        try {
+          URL.revokeObjectURL(objectUrl)
+        } catch (_) {}
+        stopAudio()
+        // Yalnız xarici dillər üçün brauzer TTS-ə keç (Azərbaycan dili üçün heç vaxt!)
+        if (lang !== "az") {
           speakWithBrowserTTS(cleanText, lang)
         }
       }
 
-      audio.play().catch((err) => {
-        console.warn("Audio play error:", err)
-        if (isInitialAttempt && url !== dynamicTtsUrl) {
-          playAudioElement(dynamicTtsUrl, false)
-        } else {
-          speakWithBrowserTTS(cleanText, lang)
-        }
-      })
+      setCurrentAudio(audio)
+      setIsAudioLoading(false)
+      setIsSpeaking(true)
+
+      await audio.play()
+    } catch (error) {
+      console.warn("Audio yüklənmədi:", error)
+      setIsAudioLoading(false)
+      // Yalnız xarici dillər üçün brauzer TTS ehtiyat nüsxəsi
+      if (lang !== "az") {
+        speakWithBrowserTTS(cleanText, lang)
+      } else {
+        setIsSpeaking(false)
+        setSpeakingTarget(null)
+      }
     }
-
-    playAudioElement(targetUrl, targetUrl !== dynamicTtsUrl)
   }
 
   useEffect(() => {
@@ -912,12 +933,26 @@ export default function TestPage() {
                   size="sm"
                   onClick={(e) => handleSpeak(currentQuestion.question, currentQuestion.audio, e)}
                   className={`shrink-0 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold shadow-xs transition-all ${
-                    isSpeaking && speakingTarget === currentQuestion.question ? "bg-amber-100 text-amber-900 border-amber-300 animate-pulse ring-2 ring-amber-300/50" : "hover:bg-amber-50 text-amber-800 border-amber-200"
+                    isSpeaking && speakingTarget === currentQuestion.question 
+                      ? "bg-amber-100 text-amber-900 border-amber-300 animate-pulse ring-2 ring-amber-300/50" 
+                      : isAudioLoading && speakingTarget === currentQuestion.question
+                      ? "bg-amber-50 text-amber-900 border-amber-300"
+                      : "hover:bg-amber-50 text-amber-800 border-amber-200"
                   }`}
                   title="Sualı səsləndir"
                 >
-                  <Volume2 className="h-4 w-4 text-amber-600" />
-                  <span>{isSpeaking && speakingTarget === currentQuestion.question ? "Dayandır" : "Səsləndir"}</span>
+                  {isAudioLoading && speakingTarget === currentQuestion.question ? (
+                    <Loader2 className="h-4 w-4 text-amber-600 animate-spin" />
+                  ) : (
+                    <Volume2 className="h-4 w-4 text-amber-600" />
+                  )}
+                  <span>
+                    {isSpeaking && speakingTarget === currentQuestion.question 
+                      ? "Dayandır" 
+                      : isAudioLoading && speakingTarget === currentQuestion.question 
+                      ? "Yüklənir..." 
+                      : "Səsləndir"}
+                  </span>
                 </Button>
               </div>
 
@@ -965,11 +1000,17 @@ export default function TestPage() {
                         className={`p-1.5 rounded-full transition-all ml-2 ${
                           isSpeaking && speakingTarget === option
                             ? "text-amber-700 bg-amber-200 animate-pulse ring-2 ring-amber-400"
+                            : isAudioLoading && speakingTarget === option
+                            ? "text-amber-700 bg-amber-100 animate-pulse"
                             : "text-gray-400 hover:text-amber-600 hover:bg-amber-50"
                         }`}
                         title="Variantı səsləndir"
                       >
-                        <Volume2 className="h-3.5 w-3.5" />
+                        {isAudioLoading && speakingTarget === option ? (
+                          <Loader2 className="h-3.5 w-3.5 animate-spin text-amber-700" />
+                        ) : (
+                          <Volume2 className="h-3.5 w-3.5" />
+                        )}
                       </button>
                     </div>
                   </div>
