@@ -11,6 +11,7 @@ import * as fs from "fs"
 import * as path from "path"
 import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabase-questions"
+import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 
 export async function POST(request: NextRequest) {
   try {
@@ -362,8 +363,8 @@ Mövzu: ${topic}`
                 question: q.question?.trim() || `Sual ${index + 1}`,
                 options: cleanOptions,
                 correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
-                explanation: q.explanation?.trim() || "İzahat mövcud deyil",
-                sourceContext: q.sourceContext?.trim() || "Mənbə mətni tapılmadı",
+                explanation: cleanExplanation(q.explanation?.trim() || "İzahat mövcud deyil"),
+                sourceContext: formatSourceContext(q.sourceContext?.trim() || `> **Mənbə (Dərslik):** ${textbook}, "${topic}" mövzusu`),
                 difficulty: q.difficulty || difficulty,
                 topic: q.topic || topic,
                 bloomLevel: q.bloomLevel || "anlama",
@@ -550,14 +551,16 @@ function loadFromQuestionBank(
       question: q.question,
       options: Array.isArray(q.options) ? q.options.map((opt: string) => opt.replace(/^[A-D]\)\s*/i, "").trim()) : q.options,
       correctAnswer: q.correct_index ?? 0,
-      explanation: typeof q.explanation === "object"
-        ? q.explanation.correct || ""
-        : q.explanation || "",
+      explanation: cleanExplanation(
+        typeof q.explanation === "object"
+          ? q.explanation.correct || ""
+          : q.explanation || ""
+      ),
       difficulty: q.difficulty || difficulty,
       topic: q.measured_skill || topic,
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
       timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
-      sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`,
+      sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`),
     }))
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)
@@ -798,12 +801,15 @@ function loadFromOfflineTests(
         options: cleanOptions,
         correctAnswer: correctAnswerIndex,
         correct_answer: String.fromCharCode(65 + correctAnswerIndex),
-        explanation: expText,
+        explanation: cleanExplanation(expText),
         difficulty: qDiff,
         topic: qTopic,
         bloomLevel: qBloom,
+        image: q.image || q.visual || q.img || undefined,
+        audio: q.audio || undefined,
+        optionAudios: q.optionAudios || undefined,
         timeEstimate: (qDiff === "sadə" || qDiff === "asan" || qDiff === "easy") ? 1 : (qDiff === "çətin" || qDiff === "hard") ? 3 : 2,
-        sourceContext: q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`,
+        sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`),
       }
     })
   } catch (e) {

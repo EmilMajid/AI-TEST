@@ -99,7 +99,7 @@ interface TestAnalysis {
   }
 }
 
-import { formatScientificText } from "@/lib/format-math"
+import { formatScientificText, formatSourceContext, cleanExplanation } from "@/lib/format-math"
 
 // Safe helper to convert any potential object/array/primitive into safe React child
 const renderSafe = (val: any): React.ReactNode => {
@@ -117,9 +117,9 @@ const renderSafe = (val: any): React.ReactNode => {
     ));
   }
   if (typeof val === "object") {
-    if (val.correct !== undefined || val.distractors !== undefined) {
-      const opts = [val.correct, ...(Array.isArray(val.distractors) ? val.distractors : [])].filter(Boolean);
-      return opts.map((o) => (typeof o === "string" ? formatScientificText(o) : JSON.stringify(o))).join(", ");
+    if (val.curriculum || val.subject) return formatSourceContext(val);
+    if (val.correct !== undefined || val.doğru_cavab_səbəbi !== undefined) {
+      return cleanExplanation(val);
     }
     if (val.text) return renderSafe(val.text);
     if (val.label) return renderSafe(val.label);
@@ -717,11 +717,11 @@ export default function ResultsPage() {
                             </h4>
                             {question.sourceContext && (
                               <div className="text-xs text-muted-foreground italic border-l-2 border-primary/60 pl-2.5 py-0.5">
-                                {renderSafe(question.sourceContext)}
+                                {formatSourceContext(question.sourceContext)}
                               </div>
                             )}
                             <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap">
-                              {renderSafe(question.explanation || questionAnalysis?.aiExplanation)}
+                              {cleanExplanation(question.explanation || questionAnalysis?.aiExplanation)}
                             </p>
                           </div>
 

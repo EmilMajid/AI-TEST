@@ -22,6 +22,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { cleanExplanation } from "@/lib/format-math";
 
 // Analytics Modal Component
 const AnalyticsModal = ({ isOpen, onClose, question }: any) => {
@@ -679,7 +680,7 @@ function QuestionsViewerContent() {
                                     <HelpCircle size={16} className="text-amber-600 flex-shrink-0 mt-0.5" />
                                     <div>
                                       <span className="font-bold">İzah: </span>
-                                      <span>{q.explanation || q.izah}</span>
+                                      <span>{cleanExplanation(q.explanation || q.izah)}</span>
                                     </div>
                                   </div>
                                 )}

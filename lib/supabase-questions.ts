@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "@/lib/user-store"
+import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 
 export interface SafeClientQuestion {
   id: number
@@ -83,7 +84,7 @@ export async function getQuestionsFromSupabase(params: {
       topic: q.topic || topic,
       bloomLevel: q.bloomLevel || "anlama",
       timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan") ? 1 : (q.difficulty === "çətin") ? 3 : 2,
-      sourceContext: q.sourceContext || `> **Mənbə:** ${subject}, "${q.topic}" mövzusu`,
+      sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə:** ${subject}, "${q.topic}" mövzusu`),
     }))
   } catch (err) {
     console.warn("[Supabase Questions] Query failed or timed out:", err)
@@ -127,10 +128,10 @@ export async function evaluateStudentAnswers(
         userAnswer: userAns,
         correctAnswer: rq.correctAnswer,
         isCorrect,
-        explanation: rq.explanation,
+        explanation: cleanExplanation(rq.explanation),
         difficulty: rq.difficulty || "orta",
         bloomLevel: rq.bloomLevel || "anlama",
-        sourceContext: rq.sourceContext,
+        sourceContext: formatSourceContext(rq.sourceContext),
       }
     })
 

@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
-import { Clock, CheckCircle, XCircle, RotateCcw, ArrowRight, ArrowLeft, Target, Brain } from "lucide-react"
+import { Clock, CheckCircle, XCircle, RotateCcw, ArrowRight, ArrowLeft, Target, Brain, Volume2, VolumeX } from "lucide-react"
 import { useRouter } from "next/navigation"
 import TestGenerationStatus from "@/components/test-generation-status"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
@@ -25,6 +25,9 @@ interface Question {
   bloomLevel: string
   timeEstimate?: number
   sourceContext?: string
+  image?: string
+  audio?: string
+  optionAudios?: string[]
 }
 
 interface TestConfig {
@@ -55,6 +58,93 @@ export default function TestPage() {
   const [generationError, setGenerationError] = useState<string | null>(null)
   const [testResults, setTestResults] = useState<any>(null)
   const [showInterstitial, setShowInterstitial] = useState(false)
+  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(null)
+  const [speakingTarget, setSpeakingTarget] = useState<string | null>(null)
+
+  const stopAudio = () => {
+    if (currentAudio) {
+      currentAudio.pause()
+      currentAudio.currentTime = 0
+      setCurrentAudio(null)
+    }
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel()
+    }
+    setIsSpeaking(false)
+    setSpeakingTarget(null)
+  }
+
+  const handleSpeak = (textToSpeak: string, customAudioUrl?: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation()
+    if (typeof window === "undefined") return
+
+    // Əgər hazırda bu mətn səsləndirilirsə, dayandır
+    if (isSpeaking && speakingTarget === textToSpeak) {
+      stopAudio()
+      return
+    }
+
+    // Əvvəlki səsi dayandır
+    if (currentAudio) {
+      currentAudio.pause()
+      currentAudio.currentTime = 0
+      setCurrentAudio(null)
+    }
+
+    const cleanText = textToSpeak
+      .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "")
+      .replace(/\s+/g, " ")
+      .trim()
+
+    if (!cleanText) return
+
+    setIsSpeaking(true)
+    setSpeakingTarget(textToSpeak)
+
+    // Audio URL: Hazır pre-cached statik audio faylı, yoxsa dinamik TTS
+    let audioUrl = customAudioUrl
+    if (!audioUrl) {
+      if (currentQuestion?.audio && textToSpeak === currentQuestion.question) {
+        audioUrl = currentQuestion.audio
+      } else {
+        const tb = (testConfig?.textbook || "").toLowerCase()
+        let lang = "az"
+        if (tb.includes("ingilis") || tb.includes("english")) lang = "en"
+        else if (tb.includes("rus")) lang = "ru"
+        else if (tb.includes("alman")) lang = "de"
+        else if (tb.includes("fransız") || tb.includes("fransiz")) lang = "fr"
+        audioUrl = `/api/tts?text=${encodeURIComponent(cleanText)}&lang=${lang}`
+      }
+    }
+
+    const audio = new Audio(audioUrl)
+
+    audio.onended = () => {
+      setIsSpeaking(false)
+      setSpeakingTarget(null)
+      setCurrentAudio(null)
+    }
+
+    audio.onerror = () => {
+      console.warn("Audio fayl oxunmadı:", audioUrl)
+      setIsSpeaking(false)
+      setSpeakingTarget(null)
+      setCurrentAudio(null)
+    }
+
+    setCurrentAudio(audio)
+    audio.play().catch((err) => {
+      console.warn("Audio play error:", err)
+      setIsSpeaking(false)
+      setSpeakingTarget(null)
+      setCurrentAudio(null)
+    })
+  }
+
+  useEffect(() => {
+    stopAudio()
+  }, [currentQuestionIndex])
 
   useEffect(() => {
     // Test konfiqurasiyasını localStorage-dən oxu
@@ -695,9 +785,40 @@ export default function TestPage() {
               </div>
             </CardHeader>
             <CardContent className="pt-5 space-y-6">
-              <p className="text-base sm:text-lg font-medium text-gray-900 leading-relaxed">
-                {cleanFormattedText(currentQuestion.question)}
-              </p>
+              <div className="flex items-start justify-between gap-3">
+                <p className="text-base sm:text-lg font-medium text-gray-900 leading-relaxed flex-1">
+                  {cleanFormattedText(currentQuestion.question)}
+                </p>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  onClick={(e) => handleSpeak(currentQuestion.question, currentQuestion.audio, e)}
+                  className={`shrink-0 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold shadow-xs transition-all ${
+                    isSpeaking && speakingTarget === currentQuestion.question ? "bg-amber-100 text-amber-900 border-amber-300 animate-pulse ring-2 ring-amber-300/50" : "hover:bg-amber-50 text-amber-800 border-amber-200"
+                  }`}
+                  title="Sualı səsləndir"
+                >
+                  <Volume2 className="h-4 w-4 text-amber-600" />
+                  <span>{isSpeaking && speakingTarget === currentQuestion.question ? "Dayandır" : "Səsləndir"}</span>
+                </Button>
+              </div>
+
+              {currentQuestion.image && (
+                <div className="flex flex-col items-center justify-center my-4">
+                  <div className="w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-amber-200/80 bg-white p-2.5 sm:p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <img
+                      src={currentQuestion.image}
+                      alt="Sual təsviri"
+                      className="w-full h-auto max-h-72 sm:max-h-80 object-contain rounded-xl mx-auto"
+                      loading="eager"
+                    />
+                  </div>
+                  <span className="text-xs text-amber-900/70 mt-2 font-medium flex items-center gap-1.5 bg-amber-50/80 px-3 py-1 rounded-full border border-amber-200/50">
+                    🔍 Şəkli diqqətlə nəzərdən keçir və sualı cavabla
+                  </span>
+                </div>
+              )}
 
               <RadioGroup
                 value={selectedAnswers[currentQuestion.id]?.toString() || ""}
@@ -715,9 +836,23 @@ export default function TestPage() {
                     }`}
                   >
                     <RadioGroupItem value={index.toString()} id={`option-${index}`} />
-                    <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-sm sm:text-base leading-snug">
-                      {cleanFormattedText(option)}
-                    </Label>
+                    <div className="flex items-center justify-between flex-1">
+                      <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-sm sm:text-base leading-snug">
+                        {cleanFormattedText(option)}
+                      </Label>
+                      <button
+                        type="button"
+                        onClick={(e) => handleSpeak(option, currentQuestion.optionAudios?.[index], e)}
+                        className={`p-1.5 rounded-full transition-all ml-2 ${
+                          isSpeaking && speakingTarget === option
+                            ? "text-amber-700 bg-amber-200 animate-pulse ring-2 ring-amber-400"
+                            : "text-gray-400 hover:text-amber-600 hover:bg-amber-50"
+                        }`}
+                        title="Variantı səsləndir"
+                      >
+                        <Volume2 className="h-3.5 w-3.5" />
+                      </button>
+                    </div>
                   </div>
                 ))}
               </RadioGroup>

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5"/>
+      <stop offset="50%" stop-color="#FDF4FF"/>
+      <stop offset="100%" stop-color="#FEF3C7"/>
+    </linearGradient>
+    <linearGradient id="headerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" rx="24" fill="url(#bgGrad3)"/>
+
+  <!-- Warm Wooden Floor -->
+  <path d="M0,320 L800,320 L800,480 L0,480 Z" fill="#FED7AA" opacity="0.45"/>
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#F97316" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Cozy Window / Wallpaper Glow -->
+  <circle cx="700" cy="100" r="45" fill="#FEF08A" opacity="0.6"/>
+  <polygon points="400,105 404,115 415,115 406,121 409,131 400,125 391,131 394,121 385,115 396,115" fill="#F59E0B" opacity="0.8"/>
+  <polygon points="630,85 633,92 640,92 634,96 636,103 630,99 624,103 626,96 620,92 627,92" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Title Pill -->
+  <g filter="url(#badgeShadow)">
+    <rect x="230" y="20" width="340" height="46" rx="23" fill="url(#headerGrad3)"/>
+    <text x="400" y="50" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1">BABANIN HƏDİYYƏSİ 🎁👴</text>
+  </g>
+
+  <!-- ==================== 1. MÜDRİK BABA (x = 80..260) ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Legs in grey trousers -->
+    <rect x="145" y="245" width="18" height="75" rx="6" fill="#475569"/>
+    <rect x="170" y="245" width="18" height="75" rx="6" fill="#475569"/>
+    <!-- Brown Shoes -->
+    <rect x="140" y="315" width="25" height="12" rx="4" fill="#78350F"/>
+    <rect x="169" y="315" width="25" height="12" rx="4" fill="#78350F"/>
+
+    <!-- Cozy Knitted Vest / Sweater -->
+    <rect x="135" y="165" width="64" height="85" rx="14" fill="#047857"/>
+    <!-- Inner Shirt Collar -->
+    <polygon points="158,165 167,185 176,165" fill="#F8FAFC"/>
+    <!-- Brown Buttons -->
+    <circle cx="167" cy="198" r="3" fill="#064E3B"/>
+    <circle cx="167" cy="216" r="3" fill="#064E3B"/>
+    <circle cx="167" cy="234" r="3" fill="#064E3B"/>
+
+    <!-- Neck -->
+    <rect x="160" y="150" width="14" height="18" rx="4" fill="#FCD34D"/>
+    <!-- Head -->
+    <circle cx="167" cy="126" r="28" fill="#FCD34D"/>
+    <!-- Silver / White Hair -->
+    <path d="M139,126 C139,94 195,94 195,126 C191,108 181,104 167,104 C153,104 143,108 139,126 Z" fill="#E2E8F0"/>
+    <path d="M137,126 C136,115 140,110 144,120 Z" fill="#E2E8F0"/>
+    <path d="M197,126 C198,115 194,110 190,120 Z" fill="#E2E8F0"/>
+
+    <!-- Eyebrows (White) -->
+    <path d="M152,115 Q158,112 163,115" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M171,115 Q176,112 182,115" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Gentle Eyes with Glasses -->
+    <circle cx="158" cy="124" r="3" fill="#1E293B"/>
+    <circle cx="176" cy="124" r="3" fill="#1E293B"/>
+    <!-- Glasses Frames -->
+    <circle cx="158" cy="124" r="8" stroke="#78350F" stroke-width="2" fill="none"/>
+    <circle cx="176" cy="124" r="8" stroke="#78350F" stroke-width="2" fill="none"/>
+    <line x1="166" y1="124" x2="168" y2="124" stroke="#78350F" stroke-width="2"/>
+
+    <!-- White Mustache -->
+    <path d="M154,136 Q167,144 180,136 Q173,142 167,140 Q161,142 154,136 Z" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Cheeks -->
+    <circle cx="150" cy="130" r="4" fill="#FCA5A5" opacity="0.6"/>
+    <circle cx="184" cy="130" r="4" fill="#FCA5A5" opacity="0.6"/>
+
+    <!-- Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="105" y="345" width="130" height="34" rx="17" fill="#047857"/>
+      <text x="170" y="368" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Müdrik Baba</text>
+    </g>
+  </g>
+
+  <!-- ==================== 2. PARLAQ HƏDİYYƏ QUTUSU (x = 310..490) ==================== -->
+  <g filter="url(#softShadow)">
+    <g transform="translate(325, 140)">
+      <!-- Main Box -->
+      <rect x="20" y="55" width="110" height="115" rx="12" fill="#E11D48"/>
+      <!-- Box Lid -->
+      <rect x="12" y="38" width="126" height="24" rx="7" fill="#BE123C"/>
+
+      <!-- Vertical Golden Ribbon -->
+      <rect x="63" y="38" width="24" height="132" fill="url(#goldRibbon)"/>
+      <!-- Horizontal Golden Ribbon -->
+      <rect x="20" y="100" width="110" height="24" fill="url(#goldRibbon)"/>
+
+      <!-- Beautiful Ribbon Bow on top -->
+      <!-- Left Loop -->
+      <path d="M75,38 C55,10 40,25 75,38 Z" fill="#F59E0B"/>
+      <!-- Right Loop -->
+      <path d="M75,38 C95,10 110,25 75,38 Z" fill="#F59E0B"/>
+      <!-- Hanging Ribbon Ends -->
+      <path d="M70,42 L55,75 L65,72 L73,50 Z" fill="#D97706"/>
+      <path d="M80,42 L95,75 L85,72 L77,50 Z" fill="#D97706"/>
+      <!-- Bow Center Knot -->
+      <circle cx="75" cy="38" r="9" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+
+      <!-- Sparkle Stars around box -->
+      <circle cx="5" cy="40" r="4" fill="#FBBF24"/>
+      <circle cx="145" cy="50" r="3.5" fill="#FBBF24"/>
+      <polygon points="140,110 143,117 150,117 144,121 146,128 140,124 134,128 136,121 130,117 137,117" fill="#FDE047"/>
+    </g>
+
+    <!-- Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="335" y="345" width="130" height="34" rx="17" fill="#E11D48"/>
+      <text x="400" y="368" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Hədiyyə Qutusu</text>
+    </g>
+  </g>
+
+  <!-- ==================== 3. SEHİRLİ NAĞIL KİTABI (x = 550..730) ==================== -->
+  <g filter="url(#softShadow)">
+    <g transform="translate(540, 145)">
+      <!-- Book Spine & Cover shadow -->
+      <path d="M10,135 Q90,115 170,135 L170,45 Q90,25 10,45 Z" fill="#1D4ED8" rx="8"/>
+      
+      <!-- Open Pages (3D curve) -->
+      <!-- Left Page -->
+      <path d="M15,130 Q90,115 90,125 L90,35 Q90,25 15,40 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+      <!-- Right Page -->
+      <path d="M90,125 Q90,115 165,130 L165,40 Q90,25 90,35 Z" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+      <!-- Center Crease -->
+      <line x1="90" y1="30" x2="90" y2="128" stroke="#93C5FD" stroke-width="3"/>
+
+      <!-- Magical content inside open pages -->
+      <!-- Left Page: Fairy Tale Castle Illustration -->
+      <path d="M30,105 L30,80 L40,80 L40,70 L45,65 L50,70 L50,80 L60,80 L60,105 Z" fill="#93C5FD"/>
+      <polygon points="45,65 40,70 50,70" fill="#2563EB"/>
+      <rect x="42" y="90" width="6" height="15" rx="3" fill="#1D4ED8"/>
+      <!-- Rainbow arc -->
+      <path d="M25,65 Q45,45 65,65" stroke="#F43F5E" stroke-width="2" fill="none" opacity="0.8"/>
+      <path d="M27,68 Q45,50 63,68" stroke="#FBBF24" stroke-width="2" fill="none" opacity="0.8"/>
+
+      <!-- Right Page: Lined text & Golden Sun -->
+      <circle cx="140" cy="55" r="10" fill="#F59E0B"/>
+      <line x1="105" y1="75" x2="155" y2="75" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="105" y1="90" x2="155" y2="90" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="105" y1="105" x2="145" y2="105" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Glowing magic dust / stars -->
+      <polygon points="90,10 93,18 102,18 95,23 98,31 90,26 82,31 85,23 78,18 87,18" fill="#FBBF24"/>
+      <circle cx="108" cy="20" r="3" fill="#FDE047"/>
+      <circle cx="72" cy="22" r="2.5" fill="#FDE047"/>
+    </g>
+
+    <!-- Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="565" y="345" width="130" height="34" rx="17" fill="#1D4ED8"/>
+      <text x="630" y="368" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Nağıl Kitabı</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM BANNER ==================== -->
+  <g filter="url(#softShadow)">
+    <rect x="140" y="415" width="520" height="46" rx="23" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="400" y="444" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#334155">
+      📖 «Kitab oxumaq bilik mənbəyidir» — Baba nəsihəti 👴
+    </text>
+  </g>
+</svg>

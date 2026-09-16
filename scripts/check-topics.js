@@ -1,21 +1,7 @@
-const service = require('./lib/textbook-service');
-const textbooks = require('./data/textbooks.json');
+const fs = require('fs');
+const path = require('path');
 
-console.log("Checking textbooks data structure...");
+console.log("Checking textbooks and topics status...");
+const manual = JSON.parse(fs.readFileSync(path.join(__dirname, 'manual-topics.json'), 'utf8'));
+console.log("Grade 1 Azerbaijani manual topics count:", (manual['azerbaycan-dili-1-h1'] || []).length);
 
-// Check Grade 8 books
-const books8 = textbooks['8'];
-if (books8) {
-    books8.forEach(book => {
-        console.log(`\nBook: ${book.title}`);
-        console.log(`Topics Type: ${typeof book.topics}`);
-        if (Array.isArray(book.topics)) {
-            console.log(`Topics Is Array: Yes (Length: ${book.topics.length})`);
-        } else {
-            console.log(`Topics Is Array: No`);
-            console.log(`Snippet: ${book.topics ? book.topics.substring(0, 50) : 'undefined'}...`);
-        }
-    });
-} else {
-    console.log("No Grade 8 books found.");
-}

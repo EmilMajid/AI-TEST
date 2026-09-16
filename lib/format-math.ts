@@ -17,13 +17,119 @@ const SUBSCRIPT_MAP: { [key: string]: string } = {
   'v': 'ᵥ', 'x': 'ₓ'
 }
 
+export function formatSourceContext(source: any): string {
+  if (source === null || source === undefined) return ""
+  let ctx = source
+
+  if (typeof ctx === "string") {
+    const trimmed = ctx.trim()
+    if (trimmed.startsWith("{") && trimmed.endsWith("}")) {
+      try {
+        ctx = JSON.parse(trimmed)
+      } catch {
+        try {
+          ctx = (new Function(`return (${trimmed})`))()
+        } catch {
+          ctx = trimmed
+        }
+      }
+    } else {
+      return trimmed
+        .replace(/^>\s*\*\*Mənbə(?:\s*\(Dərslik\))?:\*\*\s*/i, "Mənbə (Dərslik): ")
+        .replace(/\*\*/g, "")
+        .trim()
+    }
+  }
+
+  if (typeof ctx === "object" && ctx !== null) {
+    if (ctx.text) return String(ctx.text)
+
+    const parts: string[] = []
+    const curriculum = ctx.curriculum || ""
+    const subject = ctx.subject || ""
+    const grade = ctx.grade ? `${ctx.grade}-ci sinif` : ""
+    const topic = ctx.topic || ""
+
+    if (curriculum) {
+      parts.push(`Mənbə (Dərslik): ${curriculum}`)
+      if (topic) parts.push(`Mövzu: ${topic}`)
+    } else {
+      const subjGrade = [subject, grade].filter(Boolean).join(", ")
+      if (subjGrade) parts.push(`Mənbə (Dərslik): ${subjGrade}`)
+      if (topic) parts.push(`Mövzu: ${topic}`)
+    }
+
+    if (parts.length > 0) return parts.join(" • ")
+  }
+
+  return String(source || "")
+}
+
+export function cleanExplanation(val: any): string {
+  if (val === null || val === undefined) return ""
+  let obj = val
+
+  if (typeof val === "string") {
+    const trimmed = val.trim()
+    if ((trimmed.startsWith("{") && trimmed.endsWith("}")) || (trimmed.startsWith("[") && trimmed.endsWith("]"))) {
+      try {
+        obj = JSON.parse(trimmed)
+      } catch {
+        try {
+          obj = (new Function(`return (${trimmed})`))()
+        } catch {
+          const match = trimmed.match(/['"]correct['"]\s*:\s*['"]([^'"]+)['"]/)
+          if (match) return formatScientificText(match[1])
+          obj = trimmed
+        }
+      }
+    }
+  }
+
+  if (typeof obj === "object" && obj !== null && !Array.isArray(obj)) {
+    const correctText = obj.correct || obj.doğru_cavab_səbəbi || obj.text || obj.izah || obj.explanation || ""
+    const distObj = obj.distractors || obj.səhv_variantlar
+    let distStr = ""
+
+    if (distObj) {
+      if (Array.isArray(distObj)) {
+        const items = distObj
+          .map((d: any) => (typeof d === "object" ? (d.reason || d.text || "") : String(d)))
+          .filter((t: string) => t && !t.includes("hesablamaya və ya tərifə uyğun deyil"))
+        if (items.length > 0) {
+          distStr = items.map((t: string) => `- ${t}`).join("\n")
+        }
+      } else if (typeof distObj === "object") {
+        const entries = Object.entries(distObj)
+          .map(([k, v]: [string, any]) => {
+            const label = isNaN(Number(k)) ? k : String.fromCharCode(65 + Number(k))
+            const text = typeof v === "object" ? (v?.reason || v?.text || v?.səbəb || "") : String(v)
+            return { label, text }
+          })
+          .filter((e) => e.text && !e.text.includes("hesablamaya və ya tərifə uyğun deyil"))
+        if (entries.length > 0) {
+          distStr = entries.map((e) => `- ${e.label} variantı: ${e.text}`).join("\n")
+        }
+      }
+    }
+
+    if (correctText && distStr) {
+      return `${formatScientificText(correctText)}\n\nSəhv variantlar:\n${distStr}`
+    }
+    if (correctText) return formatScientificText(correctText)
+  }
+
+  return formatScientificText(typeof val === "string" ? val : String(val))
+}
+
 export function formatScientificText(text: any): string {
   if (text === null || text === undefined) return ""
   if (typeof text !== "string") {
     if (typeof text === "number" || typeof text === "boolean") return String(text)
     if (typeof text === "object") {
+      if (text.curriculum || text.subject) return formatSourceContext(text)
+      if (text.correct || text.doğru_cavab_səbəbi) return cleanExplanation(text)
       if (text.text) return formatScientificText(text.text)
-      if (text.correct) return formatScientificText(text.correct)
       try {
         return JSON.stringify(text)
       } catch {

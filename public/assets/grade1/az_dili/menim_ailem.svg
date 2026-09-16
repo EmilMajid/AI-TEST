@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="60%" stop-color="#F0FDF4"/>
+      <stop offset="100%" stop-color="#DCFCE7"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="480" rx="24" fill="url(#skyGrad)"/>
+
+  <!-- Sun & Clouds -->
+  <circle cx="710" cy="80" r="42" fill="#FDE047" opacity="0.85"/>
+  <circle cx="710" cy="80" r="50" fill="#FEF08A" opacity="0.4"/>
+  <path d="M60,95 Q75,70 105,75 Q125,55 155,70 Q180,65 195,85 Q205,105 185,115 L75,115 Q55,110 60,95 Z" fill="#FFFFFF" opacity="0.85"/>
+  <path d="M630,130 Q645,115 665,120 Q680,105 705,115 Q720,110 730,125 Q740,140 725,150 L645,150 Q625,145 630,130 Z" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- Top Title Pill -->
+  <g filter="url(#badgeShadow)">
+    <rect x="250" y="20" width="300" height="46" rx="23" fill="url(#headerGrad)"/>
+    <text x="400" y="50" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1">MƏNİM AİLƏM 👨‍👩‍👧‍👦</text>
+  </g>
+
+  <!-- Ground Hills -->
+  <ellipse cx="400" cy="480" rx="460" ry="110" fill="#86EFAC" opacity="0.6"/>
+  <ellipse cx="400" cy="495" rx="440" ry="90" fill="#4ADE80" opacity="0.5"/>
+
+  <!-- ==================== 1. ATA (x = 130) ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Body & Clothes -->
+    <!-- Legs -->
+    <rect x="150" y="240" width="18" height="85" rx="7" fill="#1E3A8A"/>
+    <rect x="174" y="240" width="18" height="85" rx="7" fill="#1E3A8A"/>
+    <!-- Shoes -->
+    <rect x="145" y="320" width="26" height="12" rx="5" fill="#0F172A"/>
+    <rect x="173" y="320" width="26" height="12" rx="5" fill="#0F172A"/>
+    <!-- Shirt / Torso -->
+    <rect x="140" y="160" width="62" height="88" rx="14" fill="#2563EB"/>
+    <!-- Collar -->
+    <polygon points="163,160 171,178 179,160" fill="#FFFFFF"/>
+    <!-- Neck -->
+    <rect x="164" y="146" width="14" height="16" rx="4" fill="#FCD34D"/>
+    <!-- Head -->
+    <circle cx="171" cy="120" r="30" fill="#FCD34D"/>
+    <!-- Hair -->
+    <path d="M142,120 C142,88 200,88 200,120 C194,102 184,100 171,100 C158,100 148,104 142,120 Z" fill="#334155"/>
+    <!-- Eyes -->
+    <circle cx="162" cy="118" r="3.5" fill="#1E293B"/>
+    <circle cx="180" cy="118" r="3.5" fill="#1E293B"/>
+    <circle cx="163.5" cy="116.5" r="1.2" fill="#FFFFFF"/>
+    <circle cx="181.5" cy="116.5" r="1.2" fill="#FFFFFF"/>
+    <!-- Smile -->
+    <path d="M162,130 Q171,138 180,130" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Cheeks -->
+    <circle cx="155" cy="125" r="4" fill="#FCA5A5" opacity="0.6"/>
+    <circle cx="187" cy="125" r="4" fill="#FCA5A5" opacity="0.6"/>
+
+    <!-- Ata Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="126" y="350" width="90" height="34" rx="17" fill="#1E3A8A"/>
+      <text x="171" y="373" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Ata</text>
+    </g>
+  </g>
+
+  <!-- ==================== 2. ANA (x = 310) ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Legs -->
+    <rect x="300" y="275" width="14" height="50" rx="6" fill="#FCD34D"/>
+    <rect x="320" y="275" width="14" height="50" rx="6" fill="#FCD34D"/>
+    <!-- Shoes -->
+    <rect x="296" y="320" width="20" height="10" rx="4" fill="#BE185D"/>
+    <rect x="318" y="320" width="20" height="10" rx="4" fill="#BE185D"/>
+    <!-- Dress -->
+    <path d="M295,168 L339,168 L355,278 L279,278 Z" fill="#EC4899"/>
+    <!-- Dress Belt -->
+    <rect x="291" y="208" width="52" height="8" rx="4" fill="#BE185D"/>
+    <!-- Neck -->
+    <rect x="310" y="148" width="14" height="18" rx="4" fill="#FCD34D"/>
+    <!-- Head -->
+    <circle cx="317" cy="124" r="28" fill="#FCD34D"/>
+    <!-- Long Hair -->
+    <path d="M288,135 C284,86 350,86 346,135 C350,170 348,185 338,190 C336,160 342,122 317,112 C292,122 298,160 296,190 C286,185 284,170 288,135 Z" fill="#92400E"/>
+    <!-- Hair Flowers -->
+    <circle cx="292" cy="115" r="6" fill="#F43F5E"/>
+    <circle cx="292" cy="115" r="2.5" fill="#FEF08A"/>
+    <!-- Eyes -->
+    <circle cx="309" cy="122" r="3.2" fill="#1E293B"/>
+    <circle cx="325" cy="122" r="3.2" fill="#1E293B"/>
+    <circle cx="310" cy="120.5" r="1.2" fill="#FFFFFF"/>
+    <circle cx="326" cy="120.5" r="1.2" fill="#FFFFFF"/>
+    <!-- Eyelashes -->
+    <path d="M305,117 L308,119 M329,117 L326,119" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Smile -->
+    <path d="M310,134 Q317,142 324,134" stroke="#BE185D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Cheeks -->
+    <circle cx="302" cy="129" r="4.5" fill="#FDA4AF" opacity="0.7"/>
+    <circle cx="332" cy="129" r="4.5" fill="#FDA4AF" opacity="0.7"/>
+
+    <!-- Ana Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="272" y="350" width="90" height="34" rx="17" fill="#BE185D"/>
+      <text x="317" y="373" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Ana</text>
+    </g>
+  </g>
+
+  <!-- ==================== 3. QARDAŞ / OĞUL (x = 475) ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Legs -->
+    <rect x="460" y="260" width="14" height="65" rx="5" fill="#047857"/>
+    <rect x="479" y="260" width="14" height="65" rx="5" fill="#047857"/>
+    <!-- Shoes -->
+    <rect x="456" y="320" width="20" height="10" rx="4" fill="#065F46"/>
+    <rect x="477" y="320" width="20" height="10" rx="4" fill="#065F46"/>
+    <!-- Shirt -->
+    <rect x="450" y="195" width="52" height="68" rx="12" fill="#10B981"/>
+    <!-- Star on Shirt -->
+    <polygon points="476,218 478,223 483,223 479,226 480,231 476,228 472,231 473,226 469,223 474,223" fill="#FEF08A"/>
+    <!-- Neck -->
+    <rect x="470" y="180" width="12" height="16" rx="4" fill="#FCD34D"/>
+    <!-- Head -->
+    <circle cx="476" cy="155" r="25" fill="#FCD34D"/>
+    <!-- Short Brown Hair -->
+    <path d="M451,155 C451,128 501,128 501,155 C496,140 488,138 476,138 C464,138 456,140 451,155 Z" fill="#78350F"/>
+    <!-- Cap -->
+    <path d="M453,142 C453,130 499,130 499,142 Z" fill="#F59E0B"/>
+    <path d="M485,142 L510,145 L485,147 Z" fill="#D97706"/>
+    <!-- Eyes -->
+    <circle cx="468" cy="154" r="3" fill="#1E293B"/>
+    <circle cx="484" cy="154" r="3" fill="#1E293B"/>
+    <!-- Smile -->
+    <path d="M469,165 Q476,172 483,165" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <!-- Cheeks -->
+    <circle cx="463" cy="160" r="3.5" fill="#FCA5A5" opacity="0.6"/>
+    <circle cx="489" cy="160" r="3.5" fill="#FCA5A5" opacity="0.6"/>
+
+    <!-- Qardaş Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="431" y="350" width="90" height="34" rx="17" fill="#047857"/>
+      <text x="476" y="373" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Qardaş</text>
+    </g>
+  </g>
+
+  <!-- ==================== 4. BALACA BACI (x = 620) ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Legs -->
+    <rect x="612" y="275" width="11" height="50" rx="4" fill="#FCD34D"/>
+    <rect x="629" y="275" width="11" height="50" rx="4" fill="#FCD34D"/>
+    <!-- Shoes -->
+    <rect x="609" y="320" width="16" height="9" rx="3" fill="#D97706"/>
+    <rect x="627" y="320" width="16" height="9" rx="3" fill="#D97706"/>
+    <!-- Dress -->
+    <path d="M608,212 L644,212 L656,282 L596,282 Z" fill="#FBBF24"/>
+    <!-- Polka dots -->
+    <circle cx="616" cy="240" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="636" cy="240" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="626" cy="262" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Neck -->
+    <rect x="620" y="198" width="12" height="15" rx="3" fill="#FCD34D"/>
+    <!-- Head -->
+    <circle cx="626" cy="175" r="22" fill="#FCD34D"/>
+    <!-- Hair with Pigtails -->
+    <circle cx="598" cy="168" r="9" fill="#B45309"/>
+    <circle cx="654" cy="168" r="9" fill="#B45309"/>
+    <circle cx="602" cy="170" r="4" fill="#EC4899"/>
+    <circle cx="650" cy="170" r="4" fill="#EC4899"/>
+    <path d="M604,175 C604,152 648,152 648,175 C644,163 638,160 626,160 C614,160 608,163 604,175 Z" fill="#B45309"/>
+    <!-- Eyes -->
+    <circle cx="619" cy="174" r="2.8" fill="#1E293B"/>
+    <circle cx="633" cy="174" r="2.8" fill="#1E293B"/>
+    <!-- Smile -->
+    <path d="M620,183 Q626,189 632,183" stroke="#B45309" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Cheeks -->
+    <circle cx="614" cy="179" r="3.5" fill="#FDA4AF" opacity="0.7"/>
+    <circle cx="638" cy="179" r="3.5" fill="#FDA4AF" opacity="0.7"/>
+    <!-- Little Teddy Bear in arms -->
+    <ellipse cx="642" cy="235" rx="10" ry="12" fill="#78350F"/>
+    <circle cx="642" cy="222" r="8" fill="#78350F"/>
+    <circle cx="637" cy="216" r="3" fill="#92400E"/>
+    <circle cx="647" cy="216" r="3" fill="#92400E"/>
+
+    <!-- Bacı Label Pill -->
+    <g filter="url(#badgeShadow)">
+      <rect x="581" y="350" width="90" height="34" rx="17" fill="#D97706"/>
+      <text x="626" y="373" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Bacı</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM BANNER ==================== -->
+  <g filter="url(#softShadow)">
+    <rect x="140" y="415" width="520" height="46" rx="23" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="400" y="444" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#334155">
+      ❤️ Mehriban ailə bizim ən böyük sərvətimizdir ❤️
+    </text>
+  </g>
+</svg>
