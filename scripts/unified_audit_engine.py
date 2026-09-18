@@ -164,7 +164,7 @@ class UnifiedAuditEngine:
                 issues.append(("layer3", "truncated_question", "Sual mətni yarımçıq kəsilmiş görünür"))
 
         # --- SƏVİYYƏ 4: Kurikulum və Mövzu Uyğunluğu ---
-        if any(w in full_text.lower() for w in ['inteqral', 'loqarifm', 'kvant mexanikası', 'diferensial']) and ('3' in subject or '2' in subject):
+        if any(w in full_text.lower() for w in ['inteqral', 'loqarifm', 'kvant mexanikası', 'diferensial']) and re.search(r'\b[23]\b(?!\s*-\s*ci\s+hiss[əe])', subject):
             issues.append(("layer4", "out_of_grade_concept", "İbtidai sinif testinə ali riyaziyyat/fizika termini sızıb"))
 
         return issues

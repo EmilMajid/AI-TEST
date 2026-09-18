@@ -1,0 +1,476 @@
+[
+  {
+    "topic": "Ümumiləşdirici tapşırıqlar",
+    "q_idx": 9,
+    "question": "P(x) çoxhədlisinin x - m ikihədlisinə bölünməsindən alınan qalıq aşağıdakılardan hansına bərabərdir?",
+    "explanation": "Qalıq haqqında teoremə (Bezu teoreminə) görə P(x) çoxhədlisinin x - m ikihədlisinə bölünməsindən alınan qalıq çoxhədlinin x = m nöqtəsindəki qiymətinə bərabərdir, yəni r = P(m)."
+  },
+  {
+    "topic": "8. Dövri onluq kəsrlər",
+    "q_idx": 4,
+    "question": "$0,(2) + 0,(4)$ cəmini tapın.",
+    "explanation": "$0,(2) = \\frac{2}{9}$, $0,(4) = \\frac{4}{9}$. Cəm $\\frac{2}{9} + \\frac{4}{9} = \\frac{6}{9} = 0,(6)$."
+  },
+  {
+    "topic": "8. Dövri onluq kəsrlər",
+    "q_idx": 6,
+    "question": "$\\frac{5}{11}$ kəsrini dövri onluq kəsr şəklində göstərin.",
+    "explanation": "$5$ ədədini $11$-ə böldükdə $0,4545...$ alınır. Dövr edən hissə $45$ olduğundan bu, $0,(45)$ kimi yazılır."
+  },
+  {
+    "topic": "8. Dövri onluq kəsrlər",
+    "q_idx": 9,
+    "question": "$x = 0,(7)$ və $y = 0,(2)$ olarsa, $x - y$ fərqini tapın.",
+    "explanation": "$0,(7) - 0,(2) = \\frac{7}{9} - \\frac{2}{9} = \\frac{5}{9} = 0,(5)$."
+  },
+  {
+    "topic": "9. Dövri onluq kəsrin adi kəsrə çevrilməsi",
+    "q_idx": 11,
+    "question": "$\\frac{7}{12}$ adi kəsrini dövri onluq kəsr şəklində yazın.",
+    "explanation": "$7 \\div 12 = 0.58333...$ Vergüldən sonra yalnız $3$ rəqəmi dövr etdiyindən, bu kəsr $0.58(3)$ şəklində yazılır."
+  },
+  {
+    "topic": "21. Ümumiləşdirici tapşırıqlar (Bölmə 3)",
+    "q_idx": 3,
+    "question": "$y = 3x - 5$ xətti funksiyasının qrafiki hansı nöqtədən keçir?",
+    "explanation": "$x=2$ olduqda funksiyanın qiymətini hesablayaq: $y = 3(2) - 5 = 6 - 5 = 1$. Deməli, qrafik $(2; 1)$ nöqtəsindən keçir."
+  },
+  {
+    "topic": "21. Ümumiləşdirici tapşırıqlar (Bölmə 3)",
+    "q_idx": 4,
+    "question": "$4a^2 - 9$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Kvadratlar fərqi düsturunu tətbiq edirik: $a^2 - b^2 = (a-b)(a+b)$. Burada $4a^2 = (2a)^2$ və $9 = 3^2$ olduğundan, $4a^2 - 9 = (2a-3)(2a+3)$ olur."
+  },
+  {
+    "topic": "21. Ümumiləşdirici tapşırıqlar (Bölmə 3)",
+    "q_idx": 11,
+    "question": "$x + y = 5$ və $x - y = 1$ tənliklər sistemini həll edin.",
+    "explanation": "Tənlikləri tərəf-tərəfə toplasaq: $2x = 6$, buradan $x=3$. $x$-in qiymətini birinci tənlikdə yerinə yazsaq: $3 + y = 5$, buradan $y=2$."
+  },
+  {
+    "topic": "21. Ümumiləşdirici tapşırıqlar (Bölmə 3)",
+    "q_idx": 12,
+    "question": "$y = -2x + 4$ funksiyasının qrafikinin $Ox$ oxu ilə kəsişmə nöqtəsinin koordinatlarını tapın.",
+    "explanation": "$Ox$ oxu ilə kəsişdikdə ordinat $y=0$ olur. $0 = -2x + 4 \\Rightarrow 2x = 4 \\Rightarrow x=2$. Nöqtə: $(2; 0)$."
+  },
+  {
+    "topic": "24. Birhədlilərin hasilinin və nisbətinin qüvvətə yüksəldilməsi",
+    "q_idx": 5,
+    "question": "$16x^8y^4$ birhədlisini hansı birhədlinin kvadratı kimi yazmaq olar?",
+    "explanation": "$16x^8y^4 = 4^2 \\cdot (x^4)^2 \\cdot (y^2)^2 = (4x^4y^2)^2$."
+  },
+  {
+    "topic": "24. Birhədlilərin hasilinin və nisbətinin qüvvətə yüksəldilməsi",
+    "q_idx": 12,
+    "question": "$-27x^{12}y^9$ birhədlisi hansı ifadənin kubudur?",
+    "explanation": "$(-3)^3 = -27$, $(x^4)^3 = x^{12}$, $(y^3)^3 = y^9$. Nəticə: $(-3x^4y^3)^3$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 0,
+    "question": "$2x + 4y$ ifadəsində ortaq vuruğu mötərizə xaricinə çıxarın.",
+    "explanation": "Hər iki həddən $2$ ortaq vuruq olaraq çıxarıla bilər: $2x + 4y = 2(x + 2y)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 1,
+    "question": "$a^2 - 9$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "Kvadratlar fərqi düsturuna əsasən: $a^2 - b^2 = (a - b)(a + b)$. Buradan $a^2 - 3^2 = (a - 3)(a + 3)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 3,
+    "question": "$x^2 - 6x + 9$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Fərqin kvadratı düsturuna görə: $a^2 - 2ab + b^2 = (a - b)^2$. Burada $x^2 - 2 \\cdot x \\cdot 3 + 3^2 = (x - 3)^2$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 4,
+    "question": "$ax + ay + bx + by$ çoxhədlisini qruplaşdırma üsulu ilə vuruqlara ayırın.",
+    "explanation": "İlk iki həddən $a$-nı, son iki həddən $b$-ni çıxaraq: $a(x + y) + b(x + y) = (x + y)(a + b)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 5,
+    "question": "$4a^2 - 25b^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$(2a)^2 - (5b)^2 = (2a - 5b)(2a + 5b)$ kvadratlar fərqi düsturuna əsasən."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 6,
+    "question": "$x^3 - 8$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "Kublar fərqi düsturu: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$. $x^3 - 2^3 = (x - 2)(x^2 + 2x + 4)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 7,
+    "question": "$3x^2y - 12y$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Əvvəlcə ortaq vuruğu çıxaraq: $3y(x^2 - 4)$. Sonra kvadratlar fərqini tətbiq edək: $3y(x - 2)(x + 2)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 8,
+    "question": "$x^2 + 5x + 6$ kvadrat üçhədlisini vuruqlara ayırın.",
+    "explanation": "Cəmi 5, hasili 6 olan ədədlər 2 və 3-dür. İfadədə qruplaşdırma etsək: $x^2 + 2x + 3x + 6 = x(x+2) + 3(x+2) = (x+2)(x+3)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 9,
+    "question": "$m^3 - m$ ifadəsini tam vuruqlara ayırın.",
+    "explanation": "$m^3 - m = m(m^2 - 1)$. $m^2 - 1$ isə $(m - 1)(m + 1)$ olaraq vuruqlara ayrılır. Nəticə: $m(m - 1)(m + 1)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 11,
+    "question": "$a^3 + 27$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Kublar cəmi düsturu: $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$. $a^3 + 3^3 = (a + 3)(a^2 - 3a + 9)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 12,
+    "question": "$x^4 - 16$ ifadəsini tam vuruqlara ayırın.",
+    "explanation": "$x^4 - 16 = (x^2)^2 - 4^2 = (x^2 - 4)(x^2 + 4)$. Yenidən tətbiq edilsə: $(x - 2)(x + 2)(x^2 + 4)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 13,
+    "question": "$ab - 2a + 3b - 6$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Qruplaşdıraq: $(ab - 2a) + (3b - 6) = a(b - 2) + 3(b - 2) = (b - 2)(a + 3)$."
+  },
+  {
+    "topic": "29. Çoxhədlinin vuruqlara ayrılması",
+    "q_idx": 14,
+    "question": "$x^2 - y^2 + x - y$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$(x^2 - y^2) + (x - y) = (x - y)(x + y) + 1 \\cdot (x - y) = (x - y)(x + y + 1)$."
+  },
+  {
+    "topic": "30. Ümumiləşdirici tapşırıqlar (Bölmə 4)",
+    "q_idx": 0,
+    "question": "x^2 - 25 ifadəsini vuruqlara ayırın.",
+    "explanation": "Kvadratlar fərqi düsturuna əsasən: x^2 - 25 = x^2 - 5^2 = (x-5)(x+5)."
+  },
+  {
+    "topic": "30. Ümumiləşdirici tapşırıqlar (Bölmə 4)",
+    "q_idx": 8,
+    "question": "a^2 + 10a + 25 ifadəsini ikihədlinin kvadratı şəklində göstərin.",
+    "explanation": "a^2 + 2*5*a + 5^2 ifadəsi cəmin kvadratı düsturuna əsasən (a+5)^2-na bərabərdir."
+  },
+  {
+    "topic": "30. Ümumiləşdirici tapşırıqlar (Bölmə 4)",
+    "q_idx": 10,
+    "question": "İfadəsini vuruqlara ayırın: 5x^2 - 20",
+    "explanation": "Əvvəlcə 5-i ortaq vuruq kimi mötərizə xaricinə çıxarırıq: 5(x^2 - 4). Sonra kvadratlar fərqi kimi ayırırıq: 5(x-2)(x+2)."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 0,
+    "question": "$x^2 + 2xy + y^2$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "Müxtəsər vurma düsturuna əsasən $(x+y)^2 = x^2 + 2xy + y^2$ olduğu üçün doğru cavab A variantıdır."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 1,
+    "question": "$a^2 - 4a + 4$ ifadəsini ikihədlinin kvadratı şəklində göstərin.",
+    "explanation": "$a^2 - 4a + 4 = a^2 - 2 \\cdot a \\cdot 2 + 2^2 = (a-2)^2$ düsturuna uyğun gəlir."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 2,
+    "question": "$9x^2 + 6x + 1$ ifadəsi hansı ikihədlinin kvadratıdır?",
+    "explanation": "$9x^2 = (3x)^2$, $1 = 1^2$ və orta hədd $2 \\cdot 3x \\cdot 1 = 6x$-dir. Bu səbəbdən $(3x+1)^2$ düsturudur."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 3,
+    "question": "$25m^2 - 20mn + 4n^2$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "$25m^2 = (5m)^2$, $4n^2 = (2n)^2$ və orta hədd $-2 \\cdot 5m \\cdot 2n = -20mn$. Nəticə $(5m-2n)^2$ olur."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 4,
+    "question": "$p^2 + 10p + 25$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$p^2 + 2 \\cdot p \\cdot 5 + 5^2 = (p+5)^2$."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 6,
+    "question": "$16x^2 + 24xy + 9y^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$16x^2 = (4x)^2$, $9y^2 = (3y)^2$, $2 \\cdot 4x \\cdot 3y = 24xy$. Beləliklə, $(4x+3y)^2$ yaranır."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 9,
+    "question": "$49a^2 - 28ab + 4b^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$(7a)^2 - 2 \\cdot 7a \\cdot 2b + (2b)^2 = (7a-2b)^2$."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 10,
+    "question": "$100 - 20x + x^2$ üçhədlisini vuruqlara ayırın.",
+    "explanation": "$10^2 - 2 \\cdot 10 \\cdot x + x^2 = (10-x)^2$ və ya $(x-10)^2$. Hər ikisi eynidir, variantlarda $(10-x)^2$ verilib."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 11,
+    "question": "$m^4 + 2m^2n + n^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Burada $(m^2)^2 + 2 \\cdot m^2 \\cdot n + n^2$ şəkli var. Bu isə $(m^2+n)^2$ verir."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 12,
+    "question": "$x^2 + \\frac{1}{2}x + \\frac{1}{16}$ üçhədlisini ikihədlinin kvadratı şəklində göstərin.",
+    "explanation": "Sonuncu hədd $(\\frac{1}{4})^2$-dir. Orta hədd isə $2 \\cdot x \\cdot \\frac{1}{4} = \\frac{1}{2}x$ edir. Ona görə cavab $(x+\\frac{1}{4})^2$."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 13,
+    "question": "$k^2 - \\frac{2}{3}k + \\frac{1}{9}$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$k^2 - 2 \\cdot k \\cdot \\frac{1}{3} + (\\frac{1}{3})^2 = (k-\\frac{1}{3})^2$."
+  },
+  {
+    "topic": "36. İkihədlinin kvadratı düsturlarından istifadə edərək üçhədlinin vuruqlara ayrılması",
+    "q_idx": 14,
+    "question": "$-x^2 + 4x - 4$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "Mənfi işarəsini mötərizə xaricinə çıxardıqda $-(x^2 - 4x + 4)$ alınır. Bu isə $-(x-2)^2$ deməkdir."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 0,
+    "question": "$x^2 - y^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "İki ifadənin kvadratları fərqi düsturuna əsasən: $a^2 - b^2 = (a-b)(a+b)$. Burada $a=x$ və $b=y$ olduğundan, nəticə $(x-y)(x+y)$ olur."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 1,
+    "question": "$m^2 - 16$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$16 = 4^2$ olduğundan, $m^2 - 4^2 = (m-4)(m+4)$ şəklində vuruqlara ayrılır."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 2,
+    "question": "$25 - a^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$25 = 5^2$ olduğundan, kvadratlar fərqi düsturuna görə $5^2 - a^2 = (5-a)(5+a)$ alınır."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 3,
+    "question": "$4x^2 - 9y^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$4x^2 = (2x)^2$ və $9y^2 = (3y)^2$-dır. Beləliklə, $(2x)^2 - (3y)^2 = (2x-3y)(2x+3y)$."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 5,
+    "question": "$100a^2 - 81b^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$100a^2 = (10a)^2$ və $81b^2 = (9b)^2$. Kvadratlar fərqi düsturuna əsasən: $(10a)^2 - (9b)^2 = (10a-9b)(10a+9b)$."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 6,
+    "question": "$(x+y)^2 - z^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Burada birinci ifadə $(x+y)$, ikinci ifadə isə $z$-dir. Düstura əsasən: $((x+y)-z)((x+y)+z) = (x+y-z)(x+y+z)$."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 9,
+    "question": "Vuruqlara ayırın: $\\frac{1}{9}x^2 - \\frac{1}{16}y^2$",
+    "explanation": "İfadələrin kvadrat köklərini tapaq: $\\sqrt{\\frac{1}{9}x^2} = \\frac{1}{3}x$ və $\\sqrt{\\frac{1}{16}y^2} = \\frac{1}{4}y$. Kvadratlar fərqinə görə nəticə: $(\\frac{1}{3}x - \\frac{1}{4}y)(\\frac{1}{3}x + \\frac{1}{4}y)$."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 10,
+    "question": "$x^4 - y^4$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$x^4 - y^4 = (x^2)^2 - (y^2)^2 = (x^2-y^2)(x^2+y^2)$. Birinci vuruğu da parçalasaq: $(x-y)(x+y)(x^2+y^2)$ alınır."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 12,
+    "question": "Vuruqlara ayırın: $(2a-3)^2 - (a+1)^2$",
+    "explanation": "Kvadratlar fərqi: $((2a-3)-(a+1))((2a-3)+(a+1)) = (2a-3-a-1)(2a-3+a+1) = (a-4)(3a-2)$."
+  },
+  {
+    "topic": "37. İki ifadənin kvadratları fərqi",
+    "q_idx": 13,
+    "question": "$0,04p^2 - 0,09q^2$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$0,04p^2 = (0,2p)^2$ və $0,09q^2 = (0,3q)^2$. Nəticə: $(0,2p - 0,3q)(0,2p + 0,3q)$."
+  },
+  {
+    "topic": "38. İkihədlinin kuba yüksəldilməsi",
+    "q_idx": 3,
+    "question": "$x^3 - 3x^2y + 3xy^2 - y^3$ ifadəsi hansı ikihədlinin kubuna bərabərdir?",
+    "explanation": "Bu, birbaşa olaraq fərqin kubu eyniliyidir: $(x-y)^3 = x^3 - 3x^2y + 3xy^2 - y^3$."
+  },
+  {
+    "topic": "38. İkihədlinin kuba yüksəldilməsi",
+    "q_idx": 6,
+    "question": "$8x^3 - 36x^2y + 54xy^2 - 27y^3$ çoxhədlisi hansı ikihədlinin kubudur?",
+    "explanation": "Birinci həd $(2x)^3$, sonuncu həd isə $-(3y)^3$-dur. İfadə fərqin kubudur: $(2x-3y)^3$."
+  },
+  {
+    "topic": "38. İkihədlinin kuba yüksəldilməsi",
+    "q_idx": 11,
+    "question": "$27a^3 + 27a^2 + 9a + 1$ çoxhədlisini ikihədlinin kubu şəklində yazın.",
+    "explanation": "$(3a)^3 + 3 \\cdot (3a)^2 \\cdot 1 + 3 \\cdot 3a \\cdot 1^2 + 1^3$ olduğuna görə, bu $(3a+1)^3$ ifadəsinin açılışıdır."
+  },
+  {
+    "topic": "39. İki ifadənin kubları cəmi və kubları fərqi",
+    "q_idx": 0,
+    "question": "İfadəni vuruqlara ayırın: $x^3 + y^3$",
+    "explanation": "İki ifadənin kubları cəmi düsturuna əsasən: $x^3 + y^3 = (x + y)(x^2 - xy + y^2)$ olur."
+  },
+  {
+    "topic": "39. İki ifadənin kubları cəmi və kubları fərqi",
+    "q_idx": 1,
+    "question": "İfadəni vuruqlara ayırın: $a^3 - 8$",
+    "explanation": "$8 = 2^3$ olduğundan, $a^3 - 2^3 = (a - 2)(a^2 + a \\cdot 2 + 2^2) = (a - 2)(a^2 + 2a + 4)$."
+  },
+  {
+    "topic": "39. İki ifadənin kubları cəmi və kubları fərqi",
+    "q_idx": 4,
+    "question": "$64m^3 + n^3$ ifadəsini vuruqlara ayırın:",
+    "explanation": "$64m^3 = (4m)^3$. Düstura əsasən: $(4m)^3 + n^3 = (4m + n)((4m)^2 - 4m \\cdot n + n^2) = (4m + n)(16m^2 - 4mn + n^2)$."
+  },
+  {
+    "topic": "39. İki ifadənin kubları cəmi və kubları fərqi",
+    "q_idx": 7,
+    "question": "$125 - a^3b^3$ ifadəsini vuruqlara ayırın.",
+    "explanation": "$125 = 5^3$. Kublar fərqi düsturuna əsasən: $5^3 - (ab)^3 = (5 - ab)(5^2 + 5ab + (ab)^2) = (5 - ab)(25 + 5ab + a^2b^2)$."
+  },
+  {
+    "topic": "39. İki ifadənin kubları cəmi və kubları fərqi",
+    "q_idx": 9,
+    "question": "$x^6 - y^6$ ifadəsini kublar fərqi kimi vuruqlara ayırdıqda aşağıdakılardan hansı alınar?",
+    "explanation": "Kublar fərqi kimi baxdıqda: $(x^2)^3 - (y^2)^3 = (x^2 - y^2)((x^2)^2 + x^2y^2 + (y^2)^2) = (x^2 - y^2)(x^4 + x^2y^2 + y^4)$."
+  },
+  {
+    "topic": "40. Müxtəsər vurma düsturlarının tətbiqi",
+    "q_idx": 0,
+    "question": "İfadəni vuruqlara ayırın: $x^2 - 16$",
+    "explanation": "İki ifadənin kvadratları fərqi düsturuna əsasən: $a^2 - b^2 = (a-b)(a+b)$. $16 = 4^2$, beləliklə $x^2 - 16 = (x-4)(x+4)$."
+  },
+  {
+    "topic": "40. Müxtəsər vurma düsturlarının tətbiqi",
+    "q_idx": 4,
+    "question": "İfadəni vuruqlara ayırın: $a^3 + 8$",
+    "explanation": "Kublar cəmi düsturuna əsasən: $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$. $8 = 2^3$, deməli $a^3 + 2^3 = (a+2)(a^2 - 2a + 4)$."
+  },
+  {
+    "topic": "40. Müxtəsər vurma düsturlarının tətbiqi",
+    "q_idx": 5,
+    "question": "Çoxhədlini vuruqlara ayırın: $x^2 - 10x + 25$",
+    "explanation": "Fərqin kvadratı düsturuna əsasən: $a^2 - 2ab + b^2 = (a-b)^2$. Burada $a=x, b=5$, ona görə də $x^2 - 10x + 25 = (x-5)^2$."
+  },
+  {
+    "topic": "40. Müxtəsər vurma düsturlarının tətbiqi",
+    "q_idx": 9,
+    "question": "Vuruqlara ayırın: $27m^3 - n^3$",
+    "explanation": "Kublar fərqi düsturuna əsasən: $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$. $(3m)^3 - n^3 = (3m-n)(9m^2 + 3mn + n^2)$."
+  },
+  {
+    "topic": "40. Müxtəsər vurma düsturlarının tətbiqi",
+    "q_idx": 13,
+    "question": "$4x^2 - 12xy + 9y^2$ çoxhədlisini tam kvadrat şəklində göstərin.",
+    "explanation": "$4x^2 - 12xy + 9y^2 = (2x)^2 - 2(2x)(3y) + (3y)^2 = (2x-3y)^2$."
+  },
+  {
+    "topic": "41. Ümumiləşdirici tapşırıqlar (Bölmə 6)",
+    "q_idx": 11,
+    "question": "$(x - 3)^2 + 12x$ ifadəsini sadələşdirin.",
+    "explanation": "$(x - 3)^2 + 12x = x^2 - 6x + 9 + 12x = x^2 + 6x + 9 = (x + 3)^2$."
+  },
+  {
+    "topic": "41. Ümumiləşdirici tapşırıqlar (Bölmə 6)",
+    "q_idx": 12,
+    "question": "$a^3 - 8$ çoxhədlisini vuruqlara ayırın.",
+    "explanation": "Kublar fərqi düsturuna görə: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$. Burada $b = 2$, ona görə də $a^3 - 8 = (a - 2)(a^2 + 2a + 4)$."
+  },
+  {
+    "topic": "44. Xətti funksiyaların qrafiklərinin qarşılıqlı vəziyyəti",
+    "q_idx": 2,
+    "question": "$y = 2x + 4$ və $y = -x + 7$ düz xətlərinin kəsişmə nöqtəsinin koordinatlarını tapın.",
+    "explanation": "Kəsişmə nöqtəsini tapmaq üçün tənlikləri bərabərləşdiririk: $2x + 4 = -x + 7 \\Rightarrow 3x = 3 \\Rightarrow x = 1$. $x$-in qiymətini yerinə yazsaq, $y = 2(1) + 4 = 6$ alarıq. Deməli, nöqtə $(1; 6)$-dır."
+  },
+  {
+    "topic": "44. Xətti funksiyaların qrafiklərinin qarşılıqlı vəziyyəti",
+    "q_idx": 7,
+    "question": "$y = 3x - 6$ funksiyasının qrafiki abssis oxunu hansı nöqtədə kəsir?",
+    "explanation": "Abssis (Ox) oxu ilə kəsişmə nöqtəsində $y = 0$ olur. $3x - 6 = 0 \\Rightarrow 3x = 6 \\Rightarrow x = 2$. Kəsişmə nöqtəsi $(2; 0)$-dır."
+  },
+  {
+    "topic": "44. Xətti funksiyaların qrafiklərinin qarşılıqlı vəziyyəti",
+    "q_idx": 11,
+    "question": "$y = 4x$ və $y = -2x + 12$ düz xətləri hansı nöqtədə kəsişir?",
+    "explanation": "Tənlikləri bərabərləşdirək: $4x = -2x + 12 \\Rightarrow 6x = 12 \\Rightarrow x = 2$. $x$-i yerinə yazsaq $y = 4(2) = 8$. Kəsişmə nöqtəsi $(2; 8)$."
+  },
+  {
+    "topic": "46. Ümumiləşdirici tapşırıqlar (Bölmə 7)",
+    "q_idx": 8,
+    "question": "Koordinat müstəvisində aşağıdakı nöqtələrdən hansı absis (Ox) oxu üzərində yerləşir?",
+    "explanation": "Absis oxu üzərində yerləşən bütün nöqtələrin ordinatı (y) sıfıra bərabərdir. Buna görə də $(-3; 0)$ nöqtəsi ox oxu üzərindədir."
+  },
+  {
+    "topic": "48. İkidəyişənli xətti tənliklər sisteminin qrafik üsulla həlli",
+    "q_idx": 5,
+    "question": "$2x + 3y = 6$ tənliyinin qrafiki koordinat oxlarını hansı nöqtələrdə kəsir?",
+    "explanation": "$x = 0$ olduqda $3y = 6 \\implies y = 2$, yəni (0; 2) nöqtəsində $Oy$ oxunu kəsir. $y = 0$ olduqda $2x = 6 \\implies x = 3$, yəni (3; 0) nöqtəsində $Ox$ oxunu kəsir."
+  },
+  {
+    "topic": "49. İkidəyişənli xətti tənliklər sisteminin əvəzetmə üsulu ilə həlli",
+    "q_idx": 3,
+    "question": "$\\begin{cases} y - x = 4 \\\\ 3x + y = 16 \\end{cases}$ sistemini əvəzetmə üsulu ilə həll edin. $(x; y)$ cütünü tapın.",
+    "explanation": "Birinci tənlikdən $y = x + 4$. İkinci tənlikdə yerinə yazsaq: $3x + (x + 4) = 16 \\implies 4x = 12 \\implies x = 3$. Buradan $y = 3 + 4 = 7$."
+  },
+  {
+    "topic": "49. İkidəyişənli xətti tənliklər sisteminin əvəzetmə üsulu ilə həlli",
+    "q_idx": 6,
+    "question": "$\\begin{cases} 2x - y = 3 \\\\ 4x + 3y = 11 \\end{cases}$ tənliklər sistemini həll edin.",
+    "explanation": "Birinci tənlikdən $y = 2x - 3$. İkinci tənliyə yazsaq: $4x + 3(2x - 3) = 11 \\implies 4x + 6x - 9 = 11 \\implies 10x = 20 \\implies x = 2$. $y = 2(2) - 3 = 1$."
+  },
+  {
+    "topic": "49. İkidəyişənli xətti tənliklər sisteminin əvəzetmə üsulu ilə həlli",
+    "q_idx": 11,
+    "question": "$\\begin{cases} \\frac{x}{2} + y = 4 \\\\ x - y = 2 \\end{cases}$ tənliklər sistemini həll edin.",
+    "explanation": "İkinci tənlikdən $x = y + 2$. Birinci tənliyə yazsaq: $\\frac{y+2}{2} + y = 4 \\implies y + 2 + 2y = 8 \\implies 3y = 6 \\implies y = 2$. $x = 2 + 2 = 4$."
+  },
+  {
+    "topic": "58. Ümumiləşdirici tapşırıqlar (Bölmə 9)",
+    "q_idx": 5,
+    "question": "$A(2; -3)$ və $B(-4; 5)$ nöqtələrini birləşdirən parçasının orta nöqtəsinin koordinatlarını tapın.",
+    "explanation": "Orta nöqtənin koordinatları: $x = \\frac{2 + (-4)}{2} = -1$, $y = \\frac{-3 + 5}{2} = 1$. Deməli, $(-1; 1)$."
+  },
+  {
+    "topic": "58. Ümumiləşdirici tapşırıqlar (Bölmə 9)",
+    "q_idx": 10,
+    "question": "$x^2 - 4x + 4$ ifadəsini vuruqlara ayırın.",
+    "explanation": "Bu ifadə iki ifadənin fərqinin kvadratıdır: $a^2 - 2ab + b^2 = (a-b)^2$. Burada $a=x, b=2$-dir. Deməli, $(x-2)^2$."
+  },
+  {
+    "topic": "63. Araşdırma məsələləri",
+    "q_idx": 7,
+    "question": "Bir zəri iki dəfə atdıqda, üst-üstə düşən xalların cəminin 8 olması ehtimalı hansıdır?",
+    "explanation": "Cəmi 36 mümkün hal var. Xalların cəminin 8 olması halları: (2,6), (3,5), (4,4), (5,3), (6,2). Cəmi 5 əlverişli hal. Ehtimal: \\( \\frac{5}{36} \\)."
+  },
+  {
+    "topic": "35. İkihədlilərin kvadrata yüksəldilməsi",
+    "q_idx": 5,
+    "question": "x² + 10x + 25 ifadəsi tam kvadrat üçhədlidir. Onu vuruqlar şəklində yazın.",
+    "explanation": "x² + 10x + 25 = x² + 2·x·5 + 5² = (x + 5)²."
+  },
+  {
+    "topic": "35. İkihədlilərin kvadrata yüksəldilməsi",
+    "q_idx": 6,
+    "question": "4a² − 12ab + 9b² ifadəsini vuruqlara ayırın.",
+    "explanation": "4a² − 12ab + 9b² = (2a)² − 2·2a·3b + (3b)² = (2a − 3b)²."
+  },
+  {
+    "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+    "q_idx": 5,
+    "question": "$-\\frac{5}{9}$ ədədi dövri onluq kəsr şəklində necə yazılır?",
+    "explanation": "Məxrəcdə 9 olduğu üçün bu kəsr saf dövri onluq kəsrdir və surətdəki rəqəm dövr edir: -0,(5)."
+  },
+  {
+    "topic": "7. Rasional ədədlərin yazılışı və oxunuşu",
+    "q_idx": 11,
+    "question": "“İki tam dövrdə beş” ədədi rəqəmlə necə yazılır?",
+    "explanation": "Tam hissə 2, dövrdə təkrarlanan rəqəm isə 5-dir: 2,(5)."
+  }
+]
