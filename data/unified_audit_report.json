@@ -1,24 +1,24 @@
 {
   "timestamp": "2026-09-17T21:50:00Z",
-  "target_grade": 7,
+  "target_grade": 8,
   "summary": {
     "total_subjects": 24,
-    "total_topics": 811,
-    "total_questions": 14598,
-    "clean_questions": 14598,
+    "total_topics": 693,
+    "total_questions": 13393,
+    "clean_questions": 13393,
     "flagged_questions": 0,
     "quality_pass_rate": "100.00%",
     "key_distribution_counts": {
-      "A": 4055,
-      "B": 4055,
-      "C": 3244,
-      "D": 3244
+      "A": 3685,
+      "B": 3677,
+      "C": 3022,
+      "D": 3009
     },
     "key_distribution_percentages": {
-      "A": "27.78%",
-      "B": "27.78%",
-      "C": "22.22%",
-      "D": "22.22%"
+      "A": "27.51%",
+      "B": "27.45%",
+      "C": "22.56%",
+      "D": "22.47%"
     },
     "issues_breakdown": {}
   },
