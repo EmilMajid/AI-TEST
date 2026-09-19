@@ -317,22 +317,80 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
     }
 
     if (userRole === 'student') {
-        let parent = allUsers.find(u => String(u.id) === String((user as any).parentId) || (supabaseUser?.id && String(u.id) === String((supabaseUser as any).parentId)))
+        let parent = allUsers.find(u =>
+            String(u.id) !== String(user.id) &&
+            (u.accountType === 'parent' || u.role === 'parent') &&
+            (
+                String(u.id) === String((user as any).parentId) ||
+                (supabaseUser?.id && String(u.id) === String((supabaseUser as any).parentId))
+            )
+        )
         if (!parent && (user as any).parentEmail) {
-            parent = allUsers.find(u => u.email && u.email.toLowerCase() === (user as any).parentEmail?.toLowerCase())
+            parent = allUsers.find(u =>
+                String(u.id) !== String(user.id) &&
+                (u.accountType === 'parent' || u.role === 'parent') &&
+                u.email && u.email.toLowerCase() === (user as any).parentEmail?.toLowerCase()
+            )
         }
         if (!parent) {
             const l = allLinks.find(
-                link => String(link.studentId) === String(user.id) ||
-                (supabaseUser?.id && String(link.studentId) === String(supabaseUser.id)) ||
-                (link.student?.email && link.student.email.toLowerCase() === user.email?.toLowerCase())
+                link =>
+                    String(link.parentId) !== String(user.id) &&
+                    (supabaseUser?.id ? String(link.parentId) !== String(supabaseUser.id) : true) &&
+                    (
+                        String(link.studentId) === String(user.id) ||
+                        (supabaseUser?.id && String(link.studentId) === String(supabaseUser.id)) ||
+                        (link.student?.email && link.student.email.toLowerCase() === user.email?.toLowerCase())
+                    )
             )
             if (l) {
-                parent = allUsers.find(p => String(p.id) === String(l.parentId) || (l.parentEmail && p.email?.toLowerCase() === l.parentEmail.toLowerCase()))
+                parent = allUsers.find(p =>
+                    String(p.id) !== String(user.id) &&
+                    (p.accountType === 'parent' || p.role === 'parent') &&
+                    (
+                        String(p.id) === String(l.parentId) ||
+                        (l.parentEmail && p.email?.toLowerCase() === l.parentEmail.toLowerCase())
+                    )
+                )
             }
         }
+
+        // İkinci valideyn axtarışı (Supabase-dən)
+        let secondParent: any = null
+        try {
+            if (supabaseAdmin) {
+                const sId = supabaseUser?.id || (isNaN(Number(user.id)) ? null : Number(user.id))
+                if (sId) {
+                    const { data: allParentLinks } = await supabaseAdmin
+                        .from('ParentStudentLink')
+                        .select('parentId, relationshipType')
+                        .eq('studentId', sId)
+                        .eq('status', 'active')
+                    if (allParentLinks && allParentLinks.length > 1) {
+                        const firstParentId = parent ? String(parent.id) : null
+                        const secondLink = allParentLinks.find((l: any) =>
+                            String(l.parentId) !== String(sId) &&
+                            (!firstParentId || String(l.parentId) !== firstParentId)
+                        )
+                        if (secondLink) {
+                            const { data: sp } = await supabaseAdmin
+                                .from('User')
+                                .select('id, email, firstName, lastName, accountType, role')
+                                .eq('id', secondLink.parentId)
+                                .eq('accountType', 'parent')
+                                .maybeSingle()
+                            if (sp) secondParent = { ...sp, relationshipType: secondLink.relationshipType }
+                        }
+                    }
+                }
+            }
+        } catch (e) {
+            console.error('Second parent lookup error:', e)
+        }
+
         const teacher = allUsers.find(u => u.id === (user as any).teacherId)
         if (parent) relations.parent = parent
+        if (secondParent) relations.secondParent = secondParent
         if (teacher) relations.teacher = teacher
     } else if (userRole === 'parent') {
         const children = allUsers.filter(c => {

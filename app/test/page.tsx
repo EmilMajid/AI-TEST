@@ -339,7 +339,16 @@ export default function TestPage() {
           const opts = Array.isArray(q.options)
             ? q.options.filter((o: any) => o && String(o).trim().length > 0)
             : []
-          let ansIdx = typeof q.correctAnswer === "number" ? q.correctAnswer : 0
+          let ansIdx = 0
+          if (typeof q.correctAnswer === "number") {
+            ansIdx = q.correctAnswer
+          } else if (typeof q.correct_answer === "number") {
+            ansIdx = q.correct_answer
+          } else if (typeof q.correctAnswer === "string" && /^[A-E]$/i.test(q.correctAnswer.trim())) {
+            ansIdx = q.correctAnswer.trim().toUpperCase().charCodeAt(0) - 65
+          } else if (typeof q.correct_answer === "string" && /^[A-E]$/i.test(q.correct_answer.trim())) {
+            ansIdx = q.correct_answer.trim().toUpperCase().charCodeAt(0) - 65
+          }
           if (ansIdx >= opts.length || ansIdx < 0) ansIdx = 0
           return {
             ...q,

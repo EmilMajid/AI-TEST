@@ -224,6 +224,29 @@ export default function AdminUserProfilePage() {
                                     </div>
                                 )}
 
+                                {relations.secondParent && (
+                                    <div className="mt-4">
+                                        <h4 className="text-sm font-medium text-slate-500 mb-2">
+                                            İkinci Valideyn ({relations.secondParent.relationshipType === 'father' ? 'Ata' : relations.secondParent.relationshipType === 'mother' ? 'Ana' : 'Qəyyum'})
+                                        </h4>
+                                        <div className="flex items-center gap-3 p-3 border rounded-lg bg-orange-50/50 hover:bg-orange-50 transition-colors">
+                                            <div className="h-9 w-9 bg-orange-100 rounded-full flex items-center justify-center text-orange-700 font-bold text-sm shrink-0">
+                                                {relations.secondParent.firstName?.[0] || 'V'}
+                                            </div>
+                                            <div className="min-w-0 flex-1">
+                                                <div className="font-medium text-slate-900 truncate">{relations.secondParent.firstName} {relations.secondParent.lastName}</div>
+                                                <div className="text-xs text-slate-500 truncate">
+                                                    İkinci Valideyn
+                                                    {relations.secondParent.email ? ` • ${relations.secondParent.email}` : ''}
+                                                </div>
+                                            </div>
+                                            <Button size="sm" variant="outline" className="ml-auto text-blue-600 hover:text-blue-700 hover:bg-blue-50 shrink-0" onClick={() => router.push(`/admin/users/${relations.secondParent.id}`)}>
+                                                Profilə Bax
+                                            </Button>
+                                        </div>
+                                    </div>
+                                )}
+
                                 {relations.teacher && (
                                     <div className="mt-4">
                                         <h4 className="text-sm font-medium text-slate-500 mb-2">Sinif Rəhbəri</h4>

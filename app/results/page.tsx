@@ -24,11 +24,14 @@ import {
   Mail,
   Send,
   Loader2,
+  AlertTriangle,
+  UserPlus,
 } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 import { Input } from "@/components/ui/input"
+import { ParentInviteForm } from "@/components/parent-invite-form"
 
 interface Question {
   id: number
@@ -189,6 +192,14 @@ export default function ResultsPage() {
     error?: string
     redirectedTo?: string
   } | null>(null)
+  const [linkedParent, setLinkedParent] = useState<string | null>(null)
+  const [currentUserEmail, setCurrentUserEmail] = useState<string>("")
+  const [showWhoDialog, setShowWhoDialog] = useState(false)
+  const [whoSelection, setWhoSelection] = useState<"" | "father" | "mother" | "guardian" | "other">("")
+  const [otherLabel, setOtherLabel] = useState("")
+  const [showInviteModal, setShowInviteModal] = useState(false)
+  const [noParentLinked, setNoParentLinked] = useState(false)
+  const [warnStatus, setWarnStatus] = useState<{ sent: boolean; message: string } | null>(null)
 
   useEffect(() => {
     const storedResults = localStorage.getItem("testResults")
@@ -204,8 +215,10 @@ export default function ResultsPage() {
     // Auto-detect linked parent email from storage or profile
     try {
       const user = getCurrentUser()
+      if (user?.email) setCurrentUserEmail(user.email.toLowerCase())
       if ((user as any)?.parentEmail) {
         setParentEmailInput((user as any).parentEmail)
+        setLinkedParent((user as any).parentEmail.toLowerCase())
       } else {
         const allLinks = JSON.parse(localStorage.getItem("all_student_links") || "[]")
         const myLink = allLinks.find(
@@ -215,6 +228,7 @@ export default function ResultsPage() {
         )
         if (myLink?.parentEmail) {
           setParentEmailInput(myLink.parentEmail)
+          setLinkedParent(myLink.parentEmail.toLowerCase())
         }
       }
     } catch (e) {}
@@ -261,6 +275,9 @@ export default function ResultsPage() {
 
       const data = await res.json()
       if (res.ok && data.success) {
+        if (data?.emailNotification?.noParentLinked) {
+          setNoParentLinked(true)
+        }
         setEmailStatus({
           sent: true,
           message: data.message || "İmtahan nəticələri valideynin poçtuna çatdırıldı! 🎉",
@@ -439,70 +456,333 @@ export default function ResultsPage() {
         </Card>
 
         {/* Parent Email Notification Card */}
-        <Card className="mb-8 border-blue-200 bg-gradient-to-r from-blue-50/70 via-indigo-50/50 to-white shadow-sm overflow-hidden">
-          <CardContent className="p-6">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-blue-600 text-white p-3 rounded-xl shadow-md flex items-center justify-center shrink-0">
-                  <Mail className="h-6 w-6" />
+        {linkedParent ? (
+          // Vəziyyət B/C: Valideyni var
+          <Card className="mb-8 border-blue-200 bg-gradient-to-r from-blue-50/70 via-indigo-50/50 to-white shadow-sm overflow-hidden">
+            <CardContent className="p-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-blue-600 text-white p-3 rounded-xl shadow-md flex items-center justify-center shrink-0">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                      Nəticəni Valideynə Göndər
+                      <Badge variant="outline" className="bg-blue-100 text-blue-800 text-[11px] font-normal border-blue-200">
+                        Avtomatik
+                      </Badge>
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-0.5">
+                      Nəticə qeydiyyatlı valideyninizə ({linkedParent}) göndərilir.
+                    </p>
+                  </div>
+                </div>
+
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault()
+                    const typed = parentEmailInput.trim().toLowerCase()
+                    // 1. Öz emailidir?
+                    if (currentUserEmail && typed === currentUserEmail) {
+                      setEmailStatus({
+                        sent: false,
+                        message: "",
+                        error: "🚫 Bu sizin öz e-mailinizdir. Nəticə qeydiyyatlı valideyninizə avtomatik göndərilir.",
+                      })
+                      return
+                    }
+                    // 2. 3-cü şəxsdirmi?
+                    if (linkedParent && typed !== linkedParent) {
+                      setShowWhoDialog(true)
+                      return
+                    }
+                    handleSendEmailToParent()
+                  }}
+                  className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full md:w-auto shrink-0"
+                >
+                  <Input
+                    type="email"
+                    placeholder="valideyn@gmail.com"
+                    value={parentEmailInput}
+                    onChange={(e) => setParentEmailInput(e.target.value)}
+                    className="bg-white border-gray-300 min-w-[240px] text-sm h-10"
+                    required
+                  />
+                  <Button
+                    type="submit"
+                    disabled={isSendingEmail}
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-10 px-5 gap-2 shrink-0"
+                  >
+                    {isSendingEmail ? (
+                      <>
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                        Göndərilir...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-4 w-4" />
+                        Göndər
+                      </>
+                    )}
+                  </Button>
+                </form>
+              </div>
+
+              {/* Uğurlu göndərmə */}
+              {emailStatus?.sent && (
+                <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-green-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                  <CheckCircle className="h-4 w-4 text-green-600 shrink-0" />
+                  <span className="font-medium">{emailStatus.message}</span>
+                </div>
+              )}
+
+              {/* Xəbərdarlıq / Xəta */}
+              {emailStatus?.error && (
+                <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-red-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                  <XCircle className="h-4 w-4 text-red-600 shrink-0" />
+                  <span className="font-medium">{emailStatus.error}</span>
+                </div>
+              )}
+
+              {/* 3-cü şəxs üçün "Bu kimdir?" dialoqu */}
+              {showWhoDialog && (
+                <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl animate-in fade-in duration-200">
+                  <p className="font-semibold text-amber-900 text-sm mb-3 flex items-center gap-2">
+                    <AlertTriangle className="h-4 w-4 text-amber-600" /> Bu şəxs kimdir?
+                  </p>
+                  <p className="text-xs text-amber-800 mb-3">
+                    Daxil etdiyiniz e-mail (<strong>{parentEmailInput}</strong>) qeydiyyatlı valideyniniz deyil.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    {(["father", "mother", "guardian", "other"] as const).map((val) => (
+                      <label key={val} className="flex items-center gap-2 cursor-pointer text-gray-800">
+                        <input
+                          type="radio"
+                          name="who"
+                          value={val}
+                          checked={whoSelection === val}
+                          onChange={() => setWhoSelection(val)}
+                          className="accent-amber-600"
+                        />
+                        {val === "father"
+                          ? "Atam"
+                          : val === "mother"
+                          ? "Anam"
+                          : val === "guardian"
+                          ? "Qəyyumum / Qanuni Nümayəndəm"
+                          : "Digər (müəllim, repetitor və s.)"}
+                      </label>
+                    ))}
+                  </div>
+
+                  {whoSelection === "other" && (
+                    <div className="mt-3">
+                      <Input
+                        placeholder="Bu şəxs kimdir? (məs: Riyaziyyat müəllimim)"
+                        value={otherLabel}
+                        onChange={(e) => setOtherLabel(e.target.value)}
+                        className="text-sm bg-white"
+                      />
+                      <p className="text-xs text-amber-700 mt-1">
+                        ⚠️ Bu e-mailə nəticə göndərilməyəcək. Yalnız valideyniniz xəbərdar ediləcək və istəsə nəticəni özü paylaşa bilər.
+                      </p>
+                    </div>
+                  )}
+
+                  <div className="flex gap-2 mt-4">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => {
+                        setShowWhoDialog(false)
+                        setWhoSelection("")
+                        setOtherLabel("")
+                      }}
+                    >
+                      Ləğv et
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="bg-amber-600 hover:bg-amber-700 text-white"
+                      disabled={!whoSelection || (whoSelection === "other" && !otherLabel.trim())}
+                      onClick={async () => {
+                        setShowWhoDialog(false)
+                        if (whoSelection === "other") {
+                          setIsSendingEmail(true)
+                          try {
+                            const session = localStorage.getItem("session")
+                            const token = session ? JSON.parse(session).access_token : null
+                            const res = await fetch("/api/parent-invite/warn", {
+                              method: "POST",
+                              headers: {
+                                "Content-Type": "application/json",
+                                ...(token ? { Authorization: `Bearer ${token}` } : {}),
+                              },
+                              body: JSON.stringify({
+                                attemptedEmail: parentEmailInput.trim(),
+                                thirdPartyLabel: otherLabel,
+                              }),
+                            })
+                            const d = await res.json()
+                            setWarnStatus({ sent: res.ok, message: d.message || d.error || "" })
+                          } catch (e) {
+                            setWarnStatus({ sent: false, message: "Xəta baş verdi" })
+                          } finally {
+                            setIsSendingEmail(false)
+                          }
+                        } else {
+                          setShowInviteModal(true)
+                        }
+                        setWhoSelection("")
+                        setOtherLabel("")
+                      }}
+                    >
+                      Davam et
+                    </Button>
+                  </div>
+                </div>
+              )}
+
+              {warnStatus && (
+                <div
+                  className={`mt-3 p-3 rounded-lg text-xs flex items-center gap-2 ${
+                    warnStatus.sent
+                      ? "bg-green-50 border border-green-200 text-green-800"
+                      : "bg-red-50 border border-red-200 text-red-800"
+                  }`}
+                >
+                  {warnStatus.sent ? (
+                    <CheckCircle className="h-4 w-4 shrink-0 text-green-600" />
+                  ) : (
+                    <XCircle className="h-4 w-4 shrink-0 text-red-600" />
+                  )}
+                  <span className="font-medium">{warnStatus.message}</span>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        ) : (
+          // Vəziyyət A: Valideyni yoxdur
+          <Card className="mb-8 border-amber-200 bg-gradient-to-r from-amber-50/70 via-orange-50/40 to-white shadow-sm overflow-hidden">
+            <CardContent className="p-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-amber-500 text-white p-3 rounded-xl shadow-md flex items-center justify-center shrink-0">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                      Nəticəni E-mailə Göndər
+                      <Badge variant="outline" className="bg-amber-100 text-amber-800 text-[11px] font-normal border-amber-200">
+                        Valideyn yoxdur
+                      </Badge>
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-0.5">
+                      Sistemdə qeydiyyatlı valideyniniz yoxdur.
+                    </p>
+                  </div>
+                </div>
+
+                <form
+                  onSubmit={handleSendEmailToParent}
+                  className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full md:w-auto shrink-0"
+                >
+                  <Input
+                    type="email"
+                    placeholder="email@gmail.com"
+                    value={parentEmailInput}
+                    onChange={(e) => setParentEmailInput(e.target.value)}
+                    className="bg-white border-gray-300 min-w-[240px] text-sm h-10"
+                    required
+                  />
+                  <Button
+                    type="submit"
+                    disabled={isSendingEmail}
+                    className="bg-amber-500 hover:bg-amber-600 text-white font-semibold h-10 px-5 gap-2 shrink-0"
+                  >
+                    {isSendingEmail ? (
+                      <>
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                        Göndərilir...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-4 w-4" />
+                        Göndər
+                      </>
+                    )}
+                  </Button>
+                </form>
+              </div>
+
+              {emailStatus?.sent && (
+                <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-green-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                  <CheckCircle className="h-4 w-4 text-green-600 shrink-0" />
+                  <span className="font-medium">{emailStatus.message}</span>
+                </div>
+              )}
+
+              {emailStatus?.error && (
+                <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-red-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
+                  <XCircle className="h-4 w-4 text-red-600 shrink-0" />
+                  <span className="font-medium">{emailStatus.error}</span>
+                </div>
+              )}
+
+              {/* noParentLinked sarı xəbərdarlıq */}
+              {noParentLinked && (
+                <div className="mt-4 p-4 bg-amber-50 border border-amber-300 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-300">
+                  <div className="flex items-center gap-2 text-amber-900">
+                    <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0" />
+                    <div>
+                      <p className="font-semibold text-sm">Nəticə sizin öz e-mailinizə göndərildi.</p>
+                      <p className="text-xs text-amber-700 mt-0.5">
+                        Sistemdə qeydiyyatlı valideyniniz olmadığı üçün rəsmi bildiriş heç bir valideynə çatdırılmadı.
+                      </p>
+                    </div>
+                  </div>
+                  <Button
+                    size="sm"
+                    className="bg-amber-600 hover:bg-amber-700 text-white gap-2 shrink-0"
+                    onClick={() => setShowInviteModal(true)}
+                  >
+                    <UserPlus className="h-4 w-4" />
+                    Valideyn Dəvət Et
+                  </Button>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Valideyn Dəvət Modalı */}
+        {showInviteModal && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 animate-in zoom-in-95 duration-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-blue-100 p-2.5 rounded-xl">
+                  <UserPlus className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
-                    Nəticəni Valideynin E-mailinə Göndər
-                    <Badge variant="outline" className="bg-blue-100 text-blue-800 text-[11px] font-normal border-blue-200">
-                      Rəsmi Hesabat
-                    </Badge>
-                  </h3>
-                  <p className="text-xs text-gray-600 mt-0.5">
-                    İmtahan balı, fənn, sərf olunan vaxt və ətraflı hesabat dərhal valideynin e-mail poçtuna çatdırılır.
-                  </p>
+                  <h3 className="font-bold text-lg text-gray-900">Valideyn Dəvət Et</h3>
+                  <p className="text-xs text-gray-500">Daxil etdiyiniz e-mailə təhlükəsiz dəvət göndəriləcək</p>
                 </div>
               </div>
-
-              <form onSubmit={handleSendEmailToParent} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full md:w-auto shrink-0">
-                <Input
-                  type="email"
-                  placeholder="valideyn@gmail.com"
-                  value={parentEmailInput}
-                  onChange={(e) => setParentEmailInput(e.target.value)}
-                  className="bg-white border-gray-300 min-w-[240px] text-sm h-10"
-                  required
-                />
-                <Button
-                  type="submit"
-                  disabled={isSendingEmail}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-10 px-5 gap-2 shrink-0"
-                >
-                  {isSendingEmail ? (
-                    <>
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                      Göndərilir...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="h-4 w-4" />
-                      E-mail Göndər
-                    </>
-                  )}
-                </Button>
-              </form>
+              <ParentInviteForm
+                prefillEmail={parentEmailInput}
+                relationshipHint={whoSelection || undefined}
+                onClose={() => {
+                  setShowInviteModal(false)
+                  setWhoSelection("")
+                }}
+                onSuccess={() => {
+                  setShowInviteModal(false)
+                  setNoParentLinked(false)
+                }}
+              />
             </div>
-
-            {emailStatus?.sent && (
-              <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-green-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
-                <CheckCircle className="h-4 w-4 text-green-600 shrink-0" />
-                <span className="font-medium">{emailStatus.message}</span>
-              </div>
-            )}
-
-            {emailStatus?.error && (
-              <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-red-800 text-xs flex items-center gap-2 animate-in fade-in duration-300">
-                <XCircle className="h-4 w-4 text-red-600 shrink-0" />
-                <span className="font-medium">{emailStatus.error}</span>
-              </div>
-            )}
-          </CardContent>
-        </Card>
+          </div>
+        )}
 
         {/* AI Analysis Loading */}
         {isAnalyzing && (

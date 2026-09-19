@@ -5,6 +5,8 @@ export interface SafeClientQuestion {
   id: number
   question: string
   options: string[]
+  correctAnswer: number
+  explanation?: string
   difficulty: string
   topic: string
   bloomLevel?: string
@@ -49,7 +51,7 @@ export async function getQuestionsFromSupabase(params: {
   try {
     let query = supabaseAdmin
       .from("Question")
-      .select("id, question, options, difficulty, topic, bloomLevel, sourceContext")
+      .select("id, question, options, correctAnswer, explanation, difficulty, topic, bloomLevel, sourceContext")
       .eq("grade", grade)
       .eq("status", "active")
       .ilike("subject", `%${subject}%`)
@@ -80,6 +82,8 @@ export async function getQuestionsFromSupabase(params: {
       id: q.id,
       question: q.question,
       options: Array.isArray(q.options) ? q.options : [],
+      correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
+      explanation: cleanExplanation(q.explanation || ""),
       difficulty: q.difficulty || "orta",
       topic: q.topic || topic,
       bloomLevel: q.bloomLevel || "anlama",

@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     const auth = await getAuthContext(request)
     const body = await request.json()
 
-    const studentId = body.studentId || auth?.user?.id || `student-${Date.now()}`
+    const studentId = auth?.user?.id || body.studentId || `student-${Date.now()}`
     const studentEmail = (body.studentEmail || auth?.user?.email || "").trim()
     const studentName = body.studentName || `${auth?.user?.id || "Şagird"}`
     const uniqueId = body.uniqueId || ""
@@ -124,6 +124,7 @@ export async function POST(request: NextRequest) {
     let parentEmailToNotify = (body.parentEmail || "").trim()
     let parentName = body.parentName || "Valideyn"
     let emailStatus = { sent: false, parentEmail: "", simulated: false }
+    let sendOnlyToStudent = false
 
     try {
       const allUsers = getAllUsers()
@@ -172,10 +173,11 @@ export async function POST(request: NextRequest) {
         }
       }
 
-      // 3. Fallback: if no parent linked, check if student themselves has a real registered email
+      // 3. Fallback: if no parent linked, send to student's own email but DO NOT create ParentStudentLink
       if (!parentEmailToNotify && studentEmail && studentEmail.includes("@") && !isDemoEmail(studentEmail)) {
         parentEmailToNotify = studentEmail
         parentName = studentName || "Şagird"
+        sendOnlyToStudent = true
       }
 
       // 4. Fallback for demo/test environments to ensure tester receives the result
@@ -183,16 +185,21 @@ export async function POST(request: NextRequest) {
         parentEmailToNotify = process.env.TEST_EMAIL_RECIPIENT
       }
 
-      // 4. Ensure ParentStudentLink in Supabase if parent is resolved
-      if (parentEmailToNotify && studentDbId && supabaseAdmin) {
+      // 5. Ensure ParentStudentLink in Supabase if parent is resolved
+      // SECURITY: Only create link if NOT sending to student themselves AND target is actually a parent
+      if (parentEmailToNotify && studentDbId && supabaseAdmin && !sendOnlyToStudent) {
         try {
           const { data: parentDbUser } = await supabaseAdmin
             .from("User")
-            .select("id")
+            .select("id, accountType")
             .eq("email", parentEmailToNotify.toLowerCase())
             .maybeSingle()
 
-          if (parentDbUser?.id) {
+          const isSelf = parentDbUser?.id === studentDbId
+          const notAParent = parentDbUser?.accountType !== "parent"
+          const isDemo = isDemoEmail(parentEmailToNotify)
+
+          if (parentDbUser?.id && !isSelf && !notAParent && !isDemo) {
             await supabaseAdmin.from("ParentStudentLink").upsert({
               parentId: parentDbUser.id,
               studentId: studentDbId,
@@ -200,6 +207,8 @@ export async function POST(request: NextRequest) {
               status: "active",
               accessLevel: "full",
             }, { onConflict: "parentId,studentId" })
+          } else if (isSelf) {
+            console.warn(`[ParentLink] Blocked self-linking attempt: studentId=${studentDbId}`)
           }
         } catch (linkErr) {
           console.error("Error upserting ParentStudentLink in Supabase:", linkErr)
@@ -258,7 +267,10 @@ export async function POST(request: NextRequest) {
         success: true,
         message: "Test nəticəsi uğurla yaddaşa yazıldı",
         result: saved,
-        emailNotification: emailStatus,
+        emailNotification: {
+          ...emailStatus,
+          noParentLinked: sendOnlyToStudent,
+        },
       },
       { status: 201 }
     )
