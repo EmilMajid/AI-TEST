@@ -21,7 +21,7 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
 
     const currentUser = getCurrentUser()
 
-    // Valideynlər heç vaxt sinif seçimi modalını görməməlidir!
+    // 1. Valideynlər heç vaxt sinif seçimi modalını görməməlidir!
     if (currentUser && (currentUser.accountType === "parent" || currentUser.role === "parent")) {
       setIsOpen(false)
       if (window.location.search.includes("showGradeModal")) {
@@ -31,13 +31,24 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
       return
     }
 
+    // 2. Əgər istifadəçinin artıq yaddaşda sinfi varsa (1-11), qətiyyən yenidən soruşulmamalıdır!
+    const existingGrade = currentUser?.class ? String(currentUser.class).trim() : ""
+    if (existingGrade.length > 0) {
+      setIsOpen(false)
+      if (window.location.search.includes("showGradeModal")) {
+        const cleanUrl = window.location.pathname
+        window.history.replaceState({}, document.title, cleanUrl)
+      }
+      return
+    }
+
+    // 3. Yalnız sinfi HƏQİQƏTƏN OLMAYAN şagird üçün aç
     const params = new URLSearchParams(window.location.search)
     const showByParam = params.get("showGradeModal") === "true"
 
     if (currentUser) {
       setUserName(currentUser.firstName || "")
-      const needsGrade = !currentUser.class || String(currentUser.class).trim().length === 0
-      if (showByParam || forcedOpen || needsGrade) {
+      if (showByParam || forcedOpen) {
         setIsOpen(true)
       }
     } else if (showByParam || forcedOpen) {

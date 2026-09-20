@@ -42,6 +42,44 @@ export async function POST(request: NextRequest) {
     })
 
     const isParent = role === "parent"
+    const targetGrade = isParent ? "" : (String(grade).replace(/\D/g, "") || "5")
+
+    // Update persistent databases (Prisma & Supabase)
+    try {
+      const { prisma } = await import("@/lib/db")
+      const cleanEmail = updatedUser.email.toLowerCase()
+      await prisma.user.updateMany({
+        where: {
+          OR: [
+            { email: cleanEmail },
+            { googleId: updatedUser.googleId || "" },
+          ],
+        },
+        data: {
+          class: isParent ? null : targetGrade,
+          accountType: isParent ? "parent" : "student",
+          role: isParent ? "parent" : "student",
+        },
+      })
+    } catch (dbErr) {
+      console.warn("Prisma update in set-grade:", dbErr)
+    }
+
+    try {
+      const { supabaseAdmin } = await import("@/lib/user-store")
+      if (supabaseAdmin) {
+        await supabaseAdmin
+          .from("User")
+          .update({
+            class: isParent ? null : targetGrade,
+            accountType: isParent ? "parent" : "student",
+            role: isParent ? "parent" : "student",
+          })
+          .ilike("email", updatedUser.email.toLowerCase())
+      }
+    } catch (supaErr) {
+      console.warn("Supabase update in set-grade:", supaErr)
+    }
 
     const clientUser = {
       id: updatedUser.id,

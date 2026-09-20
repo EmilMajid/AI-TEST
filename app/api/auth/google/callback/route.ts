@@ -98,8 +98,58 @@ export async function GET(request: NextRequest) {
   }
 
   // 3. User Store get or create with requested role
-  const { user, isNew, hasGrade } = getOrCreateGoogleUser(googleProfile, requestedRole)
+  const { user, isNew } = getOrCreateGoogleUser(googleProfile, requestedRole)
+
+  // 3.1. Query persistent cloud database (Prisma / Supabase) to restore existing class if missing in-memory
+  try {
+    const cleanEmail = (googleProfile.email || "").trim().toLowerCase()
+    const { prisma } = await import("@/lib/db")
+    const dbUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: cleanEmail },
+          { googleId: googleProfile.sub },
+        ],
+      },
+    })
+
+    if (dbUser) {
+      if (dbUser.class && (!user.class || user.class.trim().length === 0)) {
+        user.class = dbUser.class
+      }
+      if (dbUser.school && !user.school) user.school = dbUser.school
+      if (dbUser.region && !user.region) user.region = dbUser.region
+      if (dbUser.accountType) user.accountType = dbUser.accountType
+      if (dbUser.role) user.role = dbUser.role
+      if (dbUser.isProfileDone !== undefined) user.isProfileDone = dbUser.isProfileDone
+      saveUser(user)
+    } else {
+      const { supabaseAdmin } = await import("@/lib/user-store")
+      if (supabaseAdmin) {
+        const { data: supaUser } = await supabaseAdmin
+          .from("User")
+          .select("*")
+          .or(`email.eq.${cleanEmail},googleId.eq.${googleProfile.sub}`)
+          .maybeSingle()
+
+        if (supaUser) {
+          if (supaUser.class && (!user.class || user.class.trim().length === 0)) {
+            user.class = supaUser.class
+          }
+          if (supaUser.school && !user.school) user.school = supaUser.school
+          if (supaUser.region && !user.region) user.region = supaUser.region
+          if (supaUser.accountType) user.accountType = supaUser.accountType
+          if (supaUser.role) user.role = supaUser.role
+          saveUser(user)
+        }
+      }
+    }
+  } catch (dbErr) {
+    console.warn("DB user lookup in Google callback:", dbErr)
+  }
+
   const isParent = user.accountType === "parent" || user.role === "parent" || requestedRole === "parent"
+  const hasGrade = Boolean(user.class && String(user.class).trim().length > 0)
 
   // 4. Generate JWT Access Token
   const numericId = typeof user.id === "number" ? user.id : (Number(String(user.id).replace(/\D/g, "")) || Date.now())
@@ -110,9 +160,7 @@ export async function GET(request: NextRequest) {
     role: isParent ? "parent" : (user.role || user.accountType || "student"),
   })
 
-  // 5. Determine Redirect Target
-  // If user is parent -> directly to parent-dashboard (NO GRADE REQUIRED EVER!)
-  // If student without grade -> quick grade modal
+  // 5. Determine Initial Server Redirect Target
   const targetPath = isParent
     ? `/parent-dashboard`
     : !hasGrade
@@ -120,7 +168,6 @@ export async function GET(request: NextRequest) {
     : `/dashboard`
 
   // 6. Return HTML with Client-side localStorage sync + Cookies
-  // This ensures BOTH server-side HTTP cookies AND client-side localStorage are populated immediately!
   const clientUserObj = {
     id: user.id,
     email: user.email,
@@ -159,15 +206,71 @@ export async function GET(request: NextRequest) {
   </div>
   <script>
     try {
-      const user = ${JSON.stringify(clientUserObj)};
-      const session = { access_token: "${token}", token_type: "bearer", user: { id: user.id, email: user.email } };
-      localStorage.setItem("user", JSON.stringify(user));
-      localStorage.setItem("userData", JSON.stringify(user));
+      const serverUser = ${JSON.stringify(clientUserObj)};
+      const localRaw = localStorage.getItem("userData") || localStorage.getItem("user");
+      let mergedUser = Object.assign({}, serverUser);
+
+      if (localRaw) {
+        try {
+          const localParsed = JSON.parse(localRaw);
+          const sameEmail = localParsed && localParsed.email && serverUser.email && 
+            localParsed.email.toLowerCase() === serverUser.email.toLowerCase();
+          const sameGoogleId = localParsed && localParsed.googleId && serverUser.googleId && 
+            localParsed.googleId === serverUser.googleId;
+
+          if (sameEmail || sameGoogleId) {
+            // Qoruyucu birləşdirmə: Əvvəl seçilmiş sinif varsa, heç vaxt silinməsin!
+            const rememberedClass = (serverUser.class && serverUser.class.trim().length > 0) 
+              ? serverUser.class 
+              : (localParsed.class || "");
+
+            mergedUser = Object.assign({}, localParsed, serverUser, {
+              class: rememberedClass,
+              school: serverUser.school || localParsed.school || "",
+              region: serverUser.region || localParsed.region || "Bakı",
+              accountType: (serverUser.accountType === "parent" || localParsed.accountType === "parent") ? "parent" : (serverUser.accountType || localParsed.accountType || "student"),
+              role: (serverUser.role === "parent" || localParsed.role === "parent") ? "parent" : (serverUser.role || localParsed.role || "student"),
+              isProfileDone: serverUser.isProfileDone || localParsed.isProfileDone || false,
+            });
+
+            // Əgər serverdə sinif yox idisə, amma brauzer yaddaşında vardısa, serverə arxa planda sinfi göndər
+            if (!serverUser.class && rememberedClass) {
+              fetch("/api/auth/set-grade", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  grade: rememberedClass,
+                  role: mergedUser.role || "student",
+                  userIdOrEmail: mergedUser.id || mergedUser.email,
+                }),
+              }).catch(function() {});
+            }
+          }
+        } catch(err) {
+          console.error("Local user merge error:", err);
+        }
+      }
+
+      const session = { access_token: "${token}", token_type: "bearer", user: { id: mergedUser.id, email: mergedUser.email } };
+      localStorage.setItem("user", JSON.stringify(mergedUser));
+      localStorage.setItem("userData", JSON.stringify(mergedUser));
       localStorage.setItem("session", JSON.stringify(session));
+
+      const isParent = mergedUser.accountType === "parent" || mergedUser.role === "parent";
+      const hasGrade = Boolean(mergedUser.class && String(mergedUser.class).trim().length > 0);
+
+      let finalTarget = "/dashboard";
+      if (isParent) {
+        finalTarget = "/parent-dashboard";
+      } else if (!hasGrade) {
+        finalTarget = "/dashboard?showGradeModal=true&welcomeGoogle=true";
+      }
+
+      window.location.replace(finalTarget);
     } catch(e) {
       console.error(e);
+      window.location.replace("${targetPath}");
     }
-    window.location.replace("${targetPath}");
   </script>
 </body>
 </html>`
