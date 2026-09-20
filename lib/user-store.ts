@@ -51,6 +51,11 @@ export interface StoredUser {
   status?: "active" | "blocked" | "inactive"
   /** "real" = testai.az vasitəsilə qeydiyyatdan keçmiş | "mock" = test/demo məlumatı | "admin" = xüsusi admin statusu */
   source?: "mock" | "real" | "admin"
+  // Google OAuth & Onboarding
+  googleId?: string
+  avatarUrl?: string
+  isProfileDone?: boolean
+  profileWarningsCount?: number
 }
 
 const DELETED_USERS_FILE = getStoragePath("testai_deleted_users.json")
@@ -1449,5 +1454,176 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
   return Array.from(dedupMap.values())
 }
 
+/**
+ * Google OAuth istifadəçisini tapır və ya yeni qeydiyyat açır
+ */
+export function getOrCreateGoogleUser(googleProfile: {
+  sub: string
+  email: string
+  name?: string
+  given_name?: string
+  family_name?: string
+  picture?: string
+}): { user: StoredUser; isNew: boolean; hasGrade: boolean } {
+  const allUsers = getAllUsers()
+  const cleanEmail = (googleProfile.email || "").trim().toLowerCase()
 
+  let user = allUsers.find(
+    (u) =>
+      (u.googleId && u.googleId === googleProfile.sub) ||
+      (u.email && u.email.toLowerCase() === cleanEmail)
+  )
 
+  let isNew = false
+
+  if (user) {
+    // Existing user: Link Google ID and update avatar if missing
+    let updated = false
+    if (!user.googleId) {
+      user.googleId = googleProfile.sub
+      updated = true
+    }
+    if (googleProfile.picture && !user.avatarUrl) {
+      user.avatarUrl = googleProfile.picture
+      updated = true
+    }
+    if (user.isProfileDone === undefined) {
+      // If user already has class and school, consider profile done
+      user.isProfileDone = Boolean(user.class && user.school && user.region)
+      updated = true
+    }
+    if (updated) {
+      saveUser(user)
+    }
+  } else {
+    // New user from Google
+    isNew = true
+    const firstName = googleProfile.given_name || (googleProfile.name ? googleProfile.name.split(" ")[0] : "İstifadəçi")
+    const lastName = googleProfile.family_name || (googleProfile.name ? googleProfile.name.split(" ").slice(1).join(" ") : "")
+    const newId = Date.now()
+
+    user = saveUser({
+      id: newId,
+      email: cleanEmail,
+      firstName,
+      lastName,
+      googleId: googleProfile.sub,
+      avatarUrl: googleProfile.picture,
+      accountType: "student",
+      role: "student",
+      isProfileDone: false,
+      profileWarningsCount: 0,
+      source: "real",
+      status: "active",
+      createdAt: new Date().toISOString(),
+      isBlocked: false,
+    })
+  }
+
+  const hasGrade = Boolean(user.class && String(user.class).trim().length > 0)
+  return { user, isNew, hasGrade }
+}
+
+/**
+ * İstifadəçinin məcburi sinfini (1-11) və ya rolunu sürətli qeyd edir
+ */
+export function setUserGrade(
+  userIdOrEmail: string | number,
+  grade: string,
+  role: "student" | "parent" | "teacher" = "student"
+): StoredUser | null {
+  const allUsers = getAllUsers()
+  const cleanKey = String(userIdOrEmail).toLowerCase().trim()
+
+  const user = allUsers.find(
+    (u) =>
+      String(u.id).toLowerCase() === cleanKey ||
+      (u.email && u.email.toLowerCase() === cleanKey) ||
+      (u.googleId && u.googleId === cleanKey)
+  )
+
+  if (!user) return null
+
+  user.accountType = role
+  user.role = role
+  if (role === "student") {
+    user.class = String(grade).replace(/\D/g, "") || "5"
+  }
+  return saveUser(user)
+}
+
+/**
+ * Natamam profil üçün xəbərdarlıq sayını artırır (1-dən 4-ə qədər)
+ * 4 olduqda nəticələr kilidlənir
+ */
+export function incrementProfileWarning(userIdOrEmail: string | number): {
+  warningsCount: number
+  isLocked: boolean
+  isProfileDone: boolean
+} {
+  const allUsers = getAllUsers()
+  const cleanKey = String(userIdOrEmail).toLowerCase().trim()
+
+  const user = allUsers.find(
+    (u) =>
+      String(u.id).toLowerCase() === cleanKey ||
+      (u.email && u.email.toLowerCase() === cleanKey)
+  )
+
+  if (!user) {
+    return { warningsCount: 0, isLocked: false, isProfileDone: true }
+  }
+
+  // Əgər profil artıq tamdırsa, kilidlənmir
+  if (user.isProfileDone) {
+    return { warningsCount: 0, isLocked: false, isProfileDone: true }
+  }
+
+  const currentCount = user.profileWarningsCount || 0
+  const newCount = Math.min(currentCount + 1, 4)
+  user.profileWarningsCount = newCount
+  saveUser(user)
+
+  return {
+    warningsCount: newCount,
+    isLocked: newCount >= 4,
+    isProfileDone: false,
+  }
+}
+
+/**
+ * Rayon, məktəb və əlaqəli valideynlər daxil edildikdə profili tam bitmiş elan edir
+ */
+export function completeUserProfile(
+  userIdOrEmail: string | number,
+  details: {
+    region?: string
+    school?: string
+    fatherName?: string
+    parentEmail?: string
+    parentEmail2?: string
+    class?: string
+  }
+): StoredUser | null {
+  const allUsers = getAllUsers()
+  const cleanKey = String(userIdOrEmail).toLowerCase().trim()
+
+  const user = allUsers.find(
+    (u) =>
+      String(u.id).toLowerCase() === cleanKey ||
+      (u.email && u.email.toLowerCase() === cleanKey)
+  )
+
+  if (!user) return null
+
+  if (details.region) user.region = details.region
+  if (details.school) user.school = details.school
+  if (details.fatherName) user.fatherName = details.fatherName
+  if (details.class) user.class = details.class
+  if (details.parentEmail) user.parentEmail = details.parentEmail
+
+  user.isProfileDone = true
+  user.profileWarningsCount = 0
+
+  return saveUser(user)
+}

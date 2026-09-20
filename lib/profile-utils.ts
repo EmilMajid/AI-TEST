@@ -8,14 +8,18 @@ export interface UserData {
     firstName: string
     lastName: string
     fatherName?: string
-    school: string
-    region: string
-    accountType: 'student' | 'parent'
+    school?: string
+    region?: string
+    accountType: 'student' | 'parent' | 'teacher' | 'director' | 'admin' | string
     class?: string
-    role?: 'parent' | 'teacher' | 'director'
+    role?: 'student' | 'parent' | 'teacher' | 'director' | 'admin' | string
     profileImage?: string
     birthDate?: string
     uniqueId?: string
+    // Google OAuth & Onboarding
+    googleId?: string
+    isProfileDone?: boolean
+    profileWarningsCount?: number
 }
 
 /**

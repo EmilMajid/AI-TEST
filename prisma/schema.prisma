@@ -13,17 +13,23 @@ datasource db {
 model User {
   id        Int       @id @default(autoincrement())
   email     String    @unique
-  password  String
+  password  String?
   firstName String
   lastName  String
-  fatherName String
-  region    String
-  school    String
+  fatherName String?
+  region    String?
+  school    String?
   birthDate DateTime?
   accountType String // "student" or "parent"
   role      String?  // "parent", "teacher", "director" (for non-students)
   isGlobalAdmin Boolean @default(false)
   class     String?  // Only for students (1-11)
+
+  // Google OAuth & Onboarding
+  googleId  String?   @unique
+  avatarUrl String?
+  isProfileDone Boolean @default(false)
+  profileWarningsCount Int @default(0) // Warnings for incomplete profile before blur lock (max 4)
   
   // JWT token for session management
   tokens    Token[]

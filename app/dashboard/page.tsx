@@ -17,6 +17,7 @@ import { MessagesTab } from "@/components/messages-tab"
 import { TextbookViewer } from "@/components/textbook-viewer"
 import { PdfViewer } from "@/components/pdf-viewer"
 import { RegionModal } from "@/components/region-modal"
+import { QuickGradeModal } from "@/components/auth/quick-grade-modal"
 import { AdBanner } from "@/components/ads/ad-banner"
 
 interface Topic {
@@ -85,8 +86,8 @@ export default function Dashboard() {
 
       setTestConfig((prev) => ({ ...prev, class: parsed.class }))
 
-      // Check if region is missing
-      if (!parsed.region) {
+      // Yalnız sinif varsa və profil tamdırsa bölgə modalını göstər (yeni istifadəçinin qarşısını kəsmir)
+      if (!parsed.region && parsed.class && parsed.isProfileDone) {
         setShowRegionModal(true)
       }
     }
@@ -706,6 +707,13 @@ export default function Dashboard() {
           if (userData?.region) setShowRegionModal(false)
         }}
         onSelect={handleRegionSelect}
+      />
+
+      <QuickGradeModal
+        onSuccess={(grade) => {
+          setTestConfig((prev) => ({ ...prev, class: grade }))
+          setUserData((prev) => (prev ? { ...prev, class: grade } : null))
+        }}
       />
     </MainLayout>
   )

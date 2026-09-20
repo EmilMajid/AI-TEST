@@ -13,6 +13,8 @@ import TestGenerationStatus from "@/components/test-generation-status"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 import { AdBanner } from "@/components/ads/ad-banner"
 import { TestInterstitialAd } from "@/components/ads/test-interstitial-ad"
+import { ProfileCompletionBanner } from "@/components/profile/profile-completion-banner"
+import { LockedResultsModal } from "@/components/profile/locked-results-modal"
 
 interface Question {
   id: number
@@ -58,6 +60,9 @@ export default function TestPage() {
   const [generationError, setGenerationError] = useState<string | null>(null)
   const [testResults, setTestResults] = useState<any>(null)
   const [showInterstitial, setShowInterstitial] = useState(false)
+  const [profileWarningsCount, setProfileWarningsCount] = useState(0)
+  const [isResultsLocked, setIsResultsLocked] = useState(false)
+  const [showCompleteModal, setShowCompleteModal] = useState(false)
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [isAudioLoading, setIsAudioLoading] = useState(false)
   const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(null)
@@ -556,6 +561,23 @@ export default function TestPage() {
       }).catch(err => {
         console.error("Test nəticəsi serverə göndərilərkən xəta:", err)
       })
+
+      // Profil xəbərdarlıq sayğacını yoxla və artır (3 xəbərdarlıq, 4-cüdə nəticə kilidlənməsi)
+      fetch("/api/auth/profile-warning", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId: currentUser?.id, email: currentUser?.email }),
+      })
+        .then((r) => r.json())
+        .then((data) => {
+          if (data) {
+            setProfileWarningsCount(data.warningsCount || 0)
+            if (data.isLocked) {
+              setIsResultsLocked(true)
+            }
+          }
+        })
+        .catch(() => {})
     } catch (e) {
       console.error("Save test result trigger error:", e)
     }
@@ -680,71 +702,90 @@ export default function TestPage() {
 
           {/* Mərkəzi Əsas Nəticə Bloku */}
           <main className="w-full flex-1 max-w-4xl space-y-6">
-            <Card className="shadow-md border-border/80">
-              <CardHeader className="pb-3 border-b border-border/40">
-                <CardTitle className="flex items-center text-xl font-bold">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-2" />
-                  Test Tamamlandı
-                </CardTitle>
-                <CardDescription className="text-sm">
-                  {testConfig.textbook} - {testConfig.topic} ({testConfig.difficulty} səviyyə)
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="pt-6 space-y-6">
-                {/* Statistika Qutuları */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-muted/30 rounded-2xl border border-border/50">
-                  <div className="text-center">
-                    <div className={`text-3xl font-extrabold ${getScoreColor(testResults.score)}`}>{testResults.score}%</div>
-                    <div className="text-xs text-muted-foreground font-medium mt-0.5">Ümumi Bal</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-extrabold text-blue-600">
-                      {testResults.correctAnswers}/{testResults.totalQuestions}
+            {/* 1/3, 2/3, 3/3 Xəbərdarlıq Banneri */}
+            <ProfileCompletionBanner
+              warningsCount={profileWarningsCount}
+              onOpenCompleteModal={() => setShowCompleteModal(true)}
+            />
+
+            <div className={isResultsLocked ? "filter blur-md select-none pointer-events-none transition-all duration-300" : "transition-all duration-300"}>
+              <Card className="shadow-md border-border/80">
+                <CardHeader className="pb-3 border-b border-border/40">
+                  <CardTitle className="flex items-center text-xl font-bold">
+                    <CheckCircle className="h-6 w-6 text-green-600 mr-2" />
+                    Test Tamamlandı
+                  </CardTitle>
+                  <CardDescription className="text-sm">
+                    {testConfig.textbook} - {testConfig.topic} ({testConfig.difficulty} səviyyə)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-6">
+                  {/* Statistika Qutuları */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-muted/30 rounded-2xl border border-border/50">
+                    <div className="text-center">
+                      <div className={`text-3xl font-extrabold ${getScoreColor(testResults.score)}`}>{testResults.score}%</div>
+                      <div className="text-xs text-muted-foreground font-medium mt-0.5">Ümumi Bal</div>
                     </div>
-                    <div className="text-xs text-muted-foreground font-medium mt-0.5">Düzgün Cavablar</div>
+                    <div className="text-center">
+                      <div className="text-3xl font-extrabold text-blue-600">
+                        {testResults.correctAnswers}/{testResults.totalQuestions}
+                      </div>
+                      <div className="text-xs text-muted-foreground font-medium mt-0.5">Düzgün Cavablar</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-extrabold text-purple-600 font-mono">{formatTime(testResults.timeSpent)}</div>
+                      <div className="text-xs text-muted-foreground font-medium mt-0.5">Sərf Olunan Vaxt</div>
+                    </div>
+                    <div className="text-center flex flex-col items-center justify-center">
+                      <Badge className={`${getDifficultyColor(testConfig.difficulty)} font-bold text-xs py-1 px-3`}>
+                        {testConfig.difficulty.charAt(0).toUpperCase() + testConfig.difficulty.slice(1)}
+                      </Badge>
+                      <div className="text-xs text-muted-foreground font-medium mt-1">Çətinlik</div>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-extrabold text-purple-600 font-mono">{formatTime(testResults.timeSpent)}</div>
-                    <div className="text-xs text-muted-foreground font-medium mt-0.5">Sərf Olunan Vaxt</div>
-                  </div>
-                  <div className="text-center flex flex-col items-center justify-center">
-                    <Badge className={`${getDifficultyColor(testConfig.difficulty)} font-bold text-xs py-1 px-3`}>
-                      {testConfig.difficulty.charAt(0).toUpperCase() + testConfig.difficulty.slice(1)}
-                    </Badge>
-                    <div className="text-xs text-muted-foreground font-medium mt-1">Çətinlik</div>
-                  </div>
-                </div>
 
-                {/* Böyük və Zəngin Nəticə Reklamı (Featured Large Banner) */}
-                <div className="pt-2">
-                  <AdBanner
-                    slot="result-featured-large"
-                    format="large-banner"
-                    refreshKey="completed-main"
-                    label="Sponsorluq və Brend Əməkdaşlığı"
-                  />
-                </div>
+                  {/* Böyük və Zəngin Nəticə Reklamı (Featured Large Banner) */}
+                  <div className="pt-2">
+                    <AdBanner
+                      slot="result-featured-large"
+                      format="large-banner"
+                      refreshKey="completed-main"
+                      label="Sponsorluq və Brend Əməkdaşlığı"
+                    />
+                  </div>
 
-                {/* Keçid Düymələri */}
-                <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                  <Button
-                    size="lg"
-                    onClick={() => router.push("/results")}
-                    className="flex-1 bg-primary hover:bg-primary/90 text-white font-bold shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all"
-                  >
-                    Ətraflı Nəticələr və Analiz
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    onClick={() => router.push(getDashboardPath(getCurrentUser()?.accountType))}
-                    className="flex-1 font-semibold shadow-xs hover:bg-gray-100"
-                  >
-                    Yeni Testə Başla
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                  {/* Keçid Düymələri */}
+                  <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                    <Button
+                      size="lg"
+                      onClick={() => router.push("/results")}
+                      className="flex-1 bg-primary hover:bg-primary/90 text-white font-bold shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all"
+                    >
+                      Ətraflı Nəticələr və Analiz
+                    </Button>
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      onClick={() => router.push(getDashboardPath(getCurrentUser()?.accountType))}
+                      className="flex-1 font-semibold shadow-xs hover:bg-gray-100"
+                    >
+                      Yeni Testə Başla
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* 4-cü Dəfə Kilidlənmə və ya İxtiyari Tamamlama Modalı */}
+            <LockedResultsModal
+              isOpen={isResultsLocked || showCompleteModal}
+              onClose={() => setShowCompleteModal(false)}
+              onSuccess={() => {
+                setIsResultsLocked(false)
+                setProfileWarningsCount(0)
+                setShowCompleteModal(false)
+              }}
+            />
           </main>
 
           {/* Sağ Reklam Bloku (Nəticə səhifəsinin sağ boşluğu) */}
