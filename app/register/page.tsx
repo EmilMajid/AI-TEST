@@ -376,7 +376,7 @@ export default function RegisterPage() {
                   {/* GOOGLE SIGN UP BUTTON */}
                   <div className="mb-5">
                     <a
-                      href="/api/auth/google"
+                      href={`/api/auth/google?role=${registrationType}`}
                       className="w-full h-12 px-4 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm sm:text-base flex items-center justify-center gap-3 transition-all shadow-sm hover:shadow active:scale-[0.99] cursor-pointer"
                     >
                       <svg className="w-5 h-5" viewBox="0 0 24 24">
@@ -397,7 +397,11 @@ export default function RegisterPage() {
                           d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
                         />
                       </svg>
-                      <span>Google ilə 1 Kliklə Qeydiyyat</span>
+                      <span>
+                        {registrationType === "parent"
+                          ? "Google ilə 1 Kliklə Valideyn Qeydiyyatı"
+                          : "Google ilə 1 Kliklə Şagird Qeydiyyatı"}
+                      </span>
                     </a>
                     <div className="relative my-4 flex items-center justify-center">
                       <div className="border-t border-slate-200 w-full"></div>

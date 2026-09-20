@@ -83,24 +83,40 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(`${origin}/login?error=google_no_profile`)
   }
 
-  // 3. User Store get or create
-  const { user, isNew, hasGrade } = getOrCreateGoogleUser(googleProfile)
+  // Extract requested role from OAuth state parameter (if passed) or query params
+  const stateParam = searchParams.get("state")
+  let requestedRole = searchParams.get("role") || "student"
+  if (stateParam) {
+    try {
+      const parsed = JSON.parse(decodeURIComponent(stateParam))
+      if (parsed.role) requestedRole = parsed.role
+    } catch (e) {
+      if (stateParam === "parent" || stateParam === "student") {
+        requestedRole = stateParam
+      }
+    }
+  }
+
+  // 3. User Store get or create with requested role
+  const { user, isNew, hasGrade } = getOrCreateGoogleUser(googleProfile, requestedRole)
+  const isParent = user.accountType === "parent" || user.role === "parent" || requestedRole === "parent"
 
   // 4. Generate JWT Access Token
   const numericId = typeof user.id === "number" ? user.id : (Number(String(user.id).replace(/\D/g, "")) || Date.now())
   const token = generateAccessToken({
     id: numericId,
     email: user.email,
-    accountType: user.accountType || "student",
-    role: user.role || user.accountType || "student",
+    accountType: isParent ? "parent" : (user.accountType || "student"),
+    role: isParent ? "parent" : (user.role || user.accountType || "student"),
   })
 
   // 5. Determine Redirect Target
-  // If user does not have class/grade set yet, mandatory quick grade modal must appear!
-  const targetPath = !hasGrade
-    ? `/dashboard?showGradeModal=true&welcomeGoogle=true`
-    : user.accountType === "parent"
+  // If user is parent -> directly to parent-dashboard (NO GRADE REQUIRED EVER!)
+  // If student without grade -> quick grade modal
+  const targetPath = isParent
     ? `/parent-dashboard`
+    : !hasGrade
+    ? `/dashboard?showGradeModal=true&welcomeGoogle=true`
     : `/dashboard`
 
   // 6. Return HTML with Client-side localStorage sync + Cookies
@@ -108,19 +124,19 @@ export async function GET(request: NextRequest) {
   const clientUserObj = {
     id: user.id,
     email: user.email,
-    accountType: user.accountType || "student",
-    role: user.role || user.accountType || "student",
+    accountType: isParent ? "parent" : (user.accountType || "student"),
+    role: isParent ? "parent" : (user.role || user.accountType || "student"),
     firstName: user.firstName,
     lastName: user.lastName,
     fatherName: user.fatherName || "",
     school: user.school || "",
-    class: user.class || "",
+    class: isParent ? "" : (user.class || ""),
     region: user.region || "Bakı",
     uniqueId: getUserUniqueId(user),
     googleId: user.googleId,
     avatarUrl: user.avatarUrl,
-    isProfileDone: user.isProfileDone ?? false,
-    profileWarningsCount: user.profileWarningsCount ?? 0,
+    isProfileDone: isParent ? true : (user.isProfileDone ?? false),
+    profileWarningsCount: isParent ? 0 : (user.profileWarningsCount ?? 0),
   }
 
   const html = `<!DOCTYPE html>

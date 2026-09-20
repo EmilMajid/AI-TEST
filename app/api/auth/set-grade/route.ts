@@ -41,29 +41,31 @@ export async function POST(request: NextRequest) {
       role: updatedUser.role || role,
     })
 
+    const isParent = role === "parent"
+
     const clientUser = {
       id: updatedUser.id,
       email: updatedUser.email,
-      accountType: updatedUser.accountType,
-      role: updatedUser.role || updatedUser.accountType,
+      accountType: isParent ? "parent" : (updatedUser.accountType || role),
+      role: isParent ? "parent" : (updatedUser.role || role),
       firstName: updatedUser.firstName,
       lastName: updatedUser.lastName,
       fatherName: updatedUser.fatherName || "",
       school: updatedUser.school || "",
-      class: updatedUser.class || grade,
+      class: isParent ? "" : (updatedUser.class || grade),
       region: updatedUser.region || "Bakı",
       uniqueId: getUserUniqueId(updatedUser),
       googleId: updatedUser.googleId,
       avatarUrl: updatedUser.avatarUrl,
-      isProfileDone: updatedUser.isProfileDone ?? false,
-      profileWarningsCount: updatedUser.profileWarningsCount ?? 0,
+      isProfileDone: isParent ? true : (updatedUser.isProfileDone ?? false),
+      profileWarningsCount: isParent ? 0 : (updatedUser.profileWarningsCount ?? 0),
     }
 
-    const redirectPath = role === "parent" ? "/parent-dashboard" : "/dashboard"
+    const redirectPath = isParent ? "/parent-dashboard" : "/dashboard"
 
     const response = NextResponse.json({
       success: true,
-      message: role === "parent" ? "Valideyn profili aktivləşdirildi" : `${grade}-ci sinif uğurla təyin edildi`,
+      message: isParent ? "Valideyn profili aktivləşdirildi" : `${grade}-ci sinif uğurla təyin edildi`,
       user: clientUser,
       redirectUrl: redirectPath,
     })

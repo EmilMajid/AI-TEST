@@ -1457,16 +1457,20 @@ export function getLinksForParent(parentId?: string | number, parentEmail?: stri
 /**
  * Google OAuth istifadəçisini tapır və ya yeni qeydiyyat açır
  */
-export function getOrCreateGoogleUser(googleProfile: {
-  sub: string
-  email: string
-  name?: string
-  given_name?: string
-  family_name?: string
-  picture?: string
-}): { user: StoredUser; isNew: boolean; hasGrade: boolean } {
+export function getOrCreateGoogleUser(
+  googleProfile: {
+    sub: string
+    email: string
+    name?: string
+    given_name?: string
+    family_name?: string
+    picture?: string
+  },
+  requestedRole: "student" | "parent" | string = "student"
+): { user: StoredUser; isNew: boolean; hasGrade: boolean } {
   const allUsers = getAllUsers()
   const cleanEmail = (googleProfile.email || "").trim().toLowerCase()
+  const isParentRole = requestedRole === "parent"
 
   let user = allUsers.find(
     (u) =>
@@ -1487,9 +1491,16 @@ export function getOrCreateGoogleUser(googleProfile: {
       user.avatarUrl = googleProfile.picture
       updated = true
     }
+    // If requestedRole is explicitly parent, update role to parent
+    if (isParentRole && user.accountType !== "parent") {
+      user.accountType = "parent"
+      user.role = "parent"
+      user.class = ""
+      user.isProfileDone = true
+      updated = true
+    }
     if (user.isProfileDone === undefined) {
-      // If user already has class and school, consider profile done
-      user.isProfileDone = Boolean(user.class && user.school && user.region)
+      user.isProfileDone = user.accountType === "parent" ? true : Boolean(user.class && user.school && user.region)
       updated = true
     }
     if (updated) {
@@ -1509,9 +1520,10 @@ export function getOrCreateGoogleUser(googleProfile: {
       lastName,
       googleId: googleProfile.sub,
       avatarUrl: googleProfile.picture,
-      accountType: "student",
-      role: "student",
-      isProfileDone: false,
+      accountType: isParentRole ? "parent" : "student",
+      role: isParentRole ? "parent" : "student",
+      class: "",
+      isProfileDone: isParentRole ? true : false,
       profileWarningsCount: 0,
       source: "real",
       status: "active",
@@ -1548,6 +1560,10 @@ export function setUserGrade(
   user.role = role
   if (role === "student") {
     user.class = String(grade).replace(/\D/g, "") || "5"
+  } else if (role === "parent") {
+    user.class = ""
+    user.isProfileDone = true
+    user.profileWarningsCount = 0
   }
   return saveUser(user)
 }

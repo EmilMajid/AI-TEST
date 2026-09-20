@@ -19,14 +19,24 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
   useEffect(() => {
     if (typeof window === "undefined") return
 
+    const currentUser = getCurrentUser()
+
+    // Valideynlər heç vaxt sinif seçimi modalını görməməlidir!
+    if (currentUser && (currentUser.accountType === "parent" || currentUser.role === "parent")) {
+      setIsOpen(false)
+      if (window.location.search.includes("showGradeModal")) {
+        const cleanUrl = window.location.pathname
+        window.history.replaceState({}, document.title, cleanUrl)
+      }
+      return
+    }
+
     const params = new URLSearchParams(window.location.search)
     const showByParam = params.get("showGradeModal") === "true"
-    const currentUser = getCurrentUser()
 
     if (currentUser) {
       setUserName(currentUser.firstName || "")
-      // Only open if student has no class set, or forced by query param
-      const needsGrade = currentUser.accountType !== "parent" && (!currentUser.class || String(currentUser.class).trim().length === 0)
+      const needsGrade = !currentUser.class || String(currentUser.class).trim().length === 0
       if (showByParam || forcedOpen || needsGrade) {
         setIsOpen(true)
       }
@@ -75,7 +85,17 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
     setLoadingGrade("parent")
     try {
       const currentUser = getCurrentUser()
-      const res = await fetch("/api/auth/set-grade", {
+      // Dərhal lokal yaddaşda rolu valideyn et ki, sinif yoxlaması ilişməsin
+      updateUserData({
+        accountType: "parent",
+        role: "parent",
+        class: "",
+        isProfileDone: true,
+      })
+
+      setIsOpen(false)
+
+      await fetch("/api/auth/set-grade", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -85,14 +105,11 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
         }),
       })
 
-      const data = await res.json()
-      if (res.ok) {
-        updateUserData({ accountType: "parent", role: "parent" })
-        setIsOpen(false)
-        window.location.href = "/parent-dashboard"
-      }
+      // Birbaşa Valideyn Kabinetinə yönləndir
+      window.location.replace("/parent-dashboard")
     } catch (e) {
       console.error("Parent role error:", e)
+      window.location.replace("/parent-dashboard")
     } finally {
       setLoadingGrade(null)
     }
@@ -100,9 +117,10 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => {
-      // Don't allow closing if student has no grade set yet
+      // Don't allow closing only if student has no grade set yet
       const currentUser = getCurrentUser()
-      if (!currentUser?.class && !currentUser?.role?.includes("parent")) {
+      const isParent = currentUser?.accountType === "parent" || currentUser?.role === "parent"
+      if (!isParent && !currentUser?.class) {
         return
       }
       setIsOpen(open)

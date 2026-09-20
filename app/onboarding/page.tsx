@@ -51,13 +51,35 @@ export default function OnboardingPage() {
     setIsLoading(true)
     setError("")
     try {
-      // 1. Set Grade First
+      if (selectedRole === "parent") {
+        await fetch("/api/auth/set-grade", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            grade: "",
+            role: "parent",
+            userIdOrEmail: currentUser?.id || currentUser?.email,
+          }),
+        })
+
+        updateUserData({
+          accountType: "parent",
+          role: "parent",
+          class: "",
+          isProfileDone: true,
+        })
+
+        window.location.replace("/parent-dashboard")
+        return
+      }
+
+      // 1. Set Grade First (Student)
       const gradeRes = await fetch("/api/auth/set-grade", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          grade: selectedRole === "student" ? selectedGrade : "",
-          role: selectedRole,
+          grade: selectedGrade,
+          role: "student",
           userIdOrEmail: currentUser?.id || currentUser?.email,
         }),
       })
@@ -90,12 +112,12 @@ export default function OnboardingPage() {
       } else {
         updateUserData({
           class: selectedGrade,
-          accountType: selectedRole,
-          role: selectedRole,
+          accountType: "student",
+          role: "student",
         })
       }
 
-      router.push(selectedRole === "parent" ? "/parent-dashboard" : "/dashboard")
+      router.push("/dashboard")
     } catch (err: any) {
       setError(err.message || "Xəta baş verdi")
     } finally {
@@ -181,41 +203,52 @@ export default function OnboardingPage() {
             </div>
           )}
 
-          {/* Tədrici Profil Sahələri (İstəyə bağlı, testlərdən sonra da tamamlana bilər) */}
-          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200/80 dark:border-slate-700 space-y-3">
-            <div className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center justify-between">
-              <span className="flex items-center gap-1.5">
-                <School className="w-3.5 h-3.5 text-blue-600" /> Məktəb Məlumatları
-              </span>
-              <span className="text-[11px] font-normal text-slate-400">İndi və ya testdən sonra</span>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-3">
-              <div className="space-y-1">
-                <Label className="text-[11px] text-slate-600 dark:text-slate-400">Rayon / Şəhər</Label>
-                <Select value={region} onValueChange={setRegion}>
-                  <SelectTrigger className="h-10 text-xs rounded-xl">
-                    <SelectValue placeholder="Rayon" />
-                  </SelectTrigger>
-                  <SelectContent className="max-h-52">
-                    {regionsList.map((r) => (
-                      <SelectItem key={r} value={r}>{r}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+          {/* Tədrici Profil Sahələri (Yalnız Şagirdlər üçün) */}
+          {selectedRole === "student" ? (
+            <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200/80 dark:border-slate-700 space-y-3">
+              <div className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center justify-between">
+                <span className="flex items-center gap-1.5">
+                  <School className="w-3.5 h-3.5 text-blue-600" /> Məktəb Məlumatları
+                </span>
+                <span className="text-[11px] font-normal text-slate-400">İndi və ya testdən sonra</span>
               </div>
 
-              <div className="space-y-1">
-                <Label className="text-[11px] text-slate-600 dark:text-slate-400">Məktəb nömrəsi</Label>
-                <Input
-                  placeholder="Məs: 161 saylı məktəb"
-                  value={school}
-                  onChange={(e) => setSchool(e.target.value)}
-                  className="h-10 text-xs rounded-xl"
-                />
+              <div className="grid sm:grid-cols-2 gap-3">
+                <div className="space-y-1">
+                  <Label className="text-[11px] text-slate-600 dark:text-slate-400">Rayon / Şəhər</Label>
+                  <Select value={region} onValueChange={setRegion}>
+                    <SelectTrigger className="h-10 text-xs rounded-xl">
+                      <SelectValue placeholder="Rayon" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-52">
+                      {regionsList.map((r) => (
+                        <SelectItem key={r} value={r}>{r}</SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-1">
+                  <Label className="text-[11px] text-slate-600 dark:text-slate-400">Məktəb nömrəsi</Label>
+                  <Input
+                    placeholder="Məs: 161 saylı məktəb"
+                    value={school}
+                    onChange={(e) => setSchool(e.target.value)}
+                    className="h-10 text-xs rounded-xl"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div className="p-4 bg-blue-50/70 dark:bg-blue-950/30 rounded-2xl border border-blue-200/70 dark:border-blue-900/50 text-center space-y-1.5">
+              <p className="text-sm font-bold text-blue-900 dark:text-blue-200">
+                👨‍👩‍👧‍👦 Valideyn Hesabı
+              </p>
+              <p className="text-xs text-blue-700 dark:text-blue-300">
+                Valideyn hesabında sinif seçimi tələb olunmur. Kabinetə daxil olaraq şagirdinizi rahatlıqla əlavə edə bilərsiniz.
+              </p>
+            </div>
+          )}
 
           <Button
             type="button"
@@ -227,7 +260,8 @@ export default function OnboardingPage() {
               <Loader2 className="w-5 h-5 animate-spin mx-auto" />
             ) : (
               <span className="flex items-center justify-center gap-2">
-                Dərhal Testlərə Başla <ArrowRight className="w-5 h-5" />
+                {selectedRole === "parent" ? "Valideyn Kabinetinə Keç" : "Dərhal Testlərə Başla"}{" "}
+                <ArrowRight className="w-5 h-5" />
               </span>
             )}
           </Button>
