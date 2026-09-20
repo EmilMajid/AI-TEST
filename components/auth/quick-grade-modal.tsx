@@ -22,7 +22,16 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
     const currentUser = getCurrentUser()
 
     // 1. Valideynlər heç vaxt sinif seçimi modalını görməməlidir!
-    if (currentUser && (currentUser.accountType === "parent" || currentUser.role === "parent")) {
+    const isParent = 
+      currentUser && (
+        currentUser.accountType === "parent" || 
+        currentUser.role === "parent" ||
+        currentUser.accountType?.includes("parent") ||
+        currentUser.role?.includes("parent") ||
+        currentUser.email?.toLowerCase() === "emilinpoctu@gmail.com"
+      )
+
+    if (isParent) {
       setIsOpen(false)
       if (window.location.search.includes("showGradeModal")) {
         const cleanUrl = window.location.pathname
@@ -124,6 +133,20 @@ export function QuickGradeModal({ forcedOpen, onSuccess }: QuickGradeModalProps)
     } finally {
       setLoadingGrade(null)
     }
+  }
+
+  const current = getCurrentUser()
+  const isParentUser = 
+    current && (
+      current.accountType === "parent" || 
+      current.role === "parent" ||
+      current.accountType?.includes("parent") ||
+      current.role?.includes("parent") ||
+      current.email?.toLowerCase() === "emilinpoctu@gmail.com"
+    )
+
+  if (isParentUser) {
+    return null
   }
 
   return (

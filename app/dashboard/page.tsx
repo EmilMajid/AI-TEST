@@ -79,8 +79,15 @@ export default function Dashboard() {
       const parsed = JSON.parse(storedUserData)
       setUserData(parsed)
 
-      if (parsed.accountType === "parent" || parsed.accountType === "teacher" || parsed.accountType === "director") {
-        router.push("/parent-dashboard")
+      const isParent = 
+        parsed.accountType === "parent" || 
+        parsed.role === "parent" || 
+        parsed.accountType === "teacher" || 
+        parsed.accountType === "director" ||
+        parsed.email?.toLowerCase() === "emilinpoctu@gmail.com"
+
+      if (isParent) {
+        window.location.replace("/parent-dashboard")
         return
       }
 
@@ -709,12 +716,15 @@ export default function Dashboard() {
         onSelect={handleRegionSelect}
       />
 
-      <QuickGradeModal
-        onSuccess={(grade) => {
-          setTestConfig((prev) => ({ ...prev, class: grade }))
-          setUserData((prev) => (prev ? { ...prev, class: grade } : null))
-        }}
-      />
+      {/* Valideynlərə və ya müəllimlərə heç vaxt sinif seçimi modalı göstərilmir */}
+      {userData?.accountType !== "parent" && userData?.role !== "parent" && userData?.email?.toLowerCase() !== "emilinpoctu@gmail.com" && (
+        <QuickGradeModal
+          onSuccess={(grade) => {
+            setTestConfig((prev) => ({ ...prev, class: grade }))
+            setUserData((prev) => (prev ? { ...prev, class: grade } : null))
+          }}
+        />
+      )}
     </MainLayout>
   )
 }

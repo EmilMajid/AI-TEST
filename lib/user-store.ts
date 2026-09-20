@@ -112,56 +112,12 @@ export function isAyazTarget(u: any): boolean {
  * Demo hesablar (emil.mecidov@example.com, inci.mecidzade@test.com və s.) qəti toxunulmazdır!
  */
 export function isRealEmilOrInciTarget(u: any): boolean {
-  if (!u) return false
-  const idStr = String(u.id || "").toLowerCase().trim()
-  const emailStr = String(u.email || "").toLowerCase().trim()
-  const uniqueId = String(u.uniqueId || "").toLowerCase().trim()
-  const cleanUId = uniqueId.replace("@", "")
-
-  // STRICT PROTECTION FOR DEMO PROFILES: Never touch mock/demo accounts!
-  if (
-    emailStr === "emil.mecidov@example.com" || idStr === "parent-emil" || idStr === "parent-1" ||
-    emailStr === "inci.mecidzade@test.com" || emailStr === "inci.mecidzade@example.com" || idStr === "student-inci" || idStr === "student-1" ||
-    emailStr === "emilia.mecidzade@test.com" || emailStr === "emilia.mecidzade@example.com" || idStr === "student-emilia" || idStr === "student-2"
-  ) {
-    return false
-  }
-
-  // TARGET 1: Real Emil Məcidov (Valideyn)
-  if (
-    idStr === "1788541772004" ||
-    emailStr === "emilinpoctu@gmail.com" ||
-    uniqueId === "@emil.mecidov.161" ||
-    cleanUId === "emil.mecidov.161"
-  ) {
-    return true
-  }
-
-  // TARGET 2: Real İnci Məcidzadə (7-ci sinif Şagird)
-  if (
-    emailStr === "inci.mecidzade.161@testai.az" ||
-    uniqueId === "@inci.mecidzade.161" ||
-    cleanUId === "inci.mecidzade.161"
-  ) {
-    return true
-  }
-
-  // Real Emil-ə bağlı 7-ci sinif və ya İnci adlı şagird
-  const pId = String(u.parentId || "").toLowerCase().trim()
-  const pEmail = String(u.parentEmail || "").toLowerCase().trim()
-  if (pId === "1788541772004" || pEmail === "emilinpoctu@gmail.com") {
-    if (String(u.class) === "7" || emailStr.includes("inci") || uniqueId.includes("inci")) {
-      return true
-    }
-  }
-
   return false
 }
 
 export function isTargetDeletedUser(u: any): boolean {
   if (!u) return false
   if (isAyazTarget(u)) return true
-  if (isRealEmilOrInciTarget(u)) return true
 
   const idStr = String(u.id || "").toLowerCase().trim()
   const emailStr = String(u.email || "").toLowerCase().trim()
@@ -356,6 +312,7 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
   }
 
   // 5. Bütün 6 Real İstifadəçi Sabit Fallback (Rüfət, Ayaz, Araz, Jalə, Mətin, Nərgiz)
+  const emilKey = "emilinpoctu@gmail.com"
   const rufatKey = "r.h.rzayev@gmail.com"
   const ayazKey = "ayaz.rzayev.309@testai.az"
   const arazKey = "araz.rzayev.309@testai.az"
@@ -363,12 +320,41 @@ export function getAllUsers(opts?: { includesMock?: boolean }): StoredUser[] {
   const metinKey = "metin.qasimli.308@testai.az"
   const nergizKey = "nergiz.ismayilli.17@testai.az"
 
+  let emilUser = map.get(emilKey) || map.get("1788541772004")
   let rufatUser = map.get(rufatKey) || map.get("parent-rufat") || map.get("2")
   let ayazUser = map.get(ayazKey) || map.get("student-ayaz-309") || map.get("3")
   let arazUser = map.get(arazKey) || map.get("student-araz-309") || map.get("4")
   let jaleUser = map.get(jaleKey) || map.get("parent-jale") || map.get("17")
   let metinUser = map.get(metinKey) || map.get("student-metin-308") || map.get("18")
   let nergizUser = map.get(nergizKey) || map.get("student-nergiz-17") || map.get("14")
+
+  // 0. Emil Məcidov (Valideyn)
+  if (!emilUser) {
+    const newEmil: StoredUser = {
+      id: 1788541772004,
+      email: "emilinpoctu@gmail.com",
+      accountType: "parent",
+      firstName: "Emil",
+      lastName: "Məcidov",
+      fatherName: "Cavid",
+      school: "161 saylı məktəb",
+      region: "Bakı",
+      role: "parent",
+      status: "active",
+      isBlocked: false,
+      source: "real",
+      isProfileDone: true,
+      class: "",
+    }
+    emilUser = newEmil
+    map.set(emilKey, newEmil)
+  } else {
+    emilUser.accountType = "parent"
+    emilUser.role = "parent"
+    emilUser.class = ""
+    emilUser.isProfileDone = true
+    emilUser.source = "real"
+  }
 
   // 1. Rüfət
   if (!rufatUser && !deletedUserIds.has(rufatKey)) {
@@ -832,16 +818,7 @@ export function deleteUser(idOrEmail: string | number): boolean {
 }
 
 export function purgeDeletedTargetProfiles() {
-  // Add targets to deletedUserIds
-  const targets = [
-    "1788541772004",
-    "emilinpoctu@gmail.com",
-    "@emil.mecidov.161",
-    "emil.mecidov.161",
-    "inci.mecidzade.161@testai.az",
-    "@inci.mecidzade.161",
-    "inci.mecidzade.161"
-  ]
+  const targets: string[] = []
   targets.forEach(t => deletedUserIds.add(t))
   saveDeletedUsersToDisk(deletedUserIds)
 
@@ -1491,8 +1468,8 @@ export function getOrCreateGoogleUser(
       user.avatarUrl = googleProfile.picture
       updated = true
     }
-    // If requestedRole is explicitly parent, update role to parent
-    if (isParentRole && user.accountType !== "parent") {
+    // If requestedRole is explicitly parent or user is Emil Məcidov, update role to parent
+    if ((isParentRole || cleanEmail === "emilinpoctu@gmail.com") && user.accountType !== "parent") {
       user.accountType = "parent"
       user.role = "parent"
       user.class = ""
@@ -1512,6 +1489,7 @@ export function getOrCreateGoogleUser(
     const firstName = googleProfile.given_name || (googleProfile.name ? googleProfile.name.split(" ")[0] : "İstifadəçi")
     const lastName = googleProfile.family_name || (googleProfile.name ? googleProfile.name.split(" ").slice(1).join(" ") : "")
     const newId = Date.now()
+    const shouldBeParent = isParentRole || cleanEmail === "emilinpoctu@gmail.com"
 
     user = saveUser({
       id: newId,
@@ -1520,10 +1498,10 @@ export function getOrCreateGoogleUser(
       lastName,
       googleId: googleProfile.sub,
       avatarUrl: googleProfile.picture,
-      accountType: isParentRole ? "parent" : "student",
-      role: isParentRole ? "parent" : "student",
+      accountType: shouldBeParent ? "parent" : "student",
+      role: shouldBeParent ? "parent" : "student",
       class: "",
-      isProfileDone: isParentRole ? true : false,
+      isProfileDone: shouldBeParent ? true : false,
       profileWarningsCount: 0,
       source: "real",
       status: "active",
@@ -1532,7 +1510,8 @@ export function getOrCreateGoogleUser(
     })
   }
 
-  const hasGrade = Boolean(user.class && String(user.class).trim().length > 0)
+  const isParent = user.accountType === "parent" || user.role === "parent"
+  const hasGrade = isParent ? true : Boolean(user.class && String(user.class).trim().length > 0)
   return { user, isNew, hasGrade }
 }
 
