@@ -1,0 +1,26 @@
+# TESTAI.AZ Static Fallback robots.txt
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+Allow: /blog
+Allow: /open-tests
+Allow: /en/
+Allow: /tr/
+Allow: /ru/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /parent-dashboard/
+Disallow: /profile/
+Disallow: /setup/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://testai.az/sitemap.xml

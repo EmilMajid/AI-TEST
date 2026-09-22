@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const languages = ["az", "en", "tr", "ru"] as const
 
   // Base public pages
-  const staticRoutes = ["", "about", "privacy", "contact", "blog", "open-tests"]
+  const staticRoutes = ["", "about", "privacy", "terms", "contact", "blog", "open-tests"]
 
   const sitemapEntries: MetadataRoute.Sitemap = []
 

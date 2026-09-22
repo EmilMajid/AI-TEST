@@ -15,8 +15,9 @@ import {
   Shield,
   Users,
   BarChart3,
-} from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
+import { FAQSection } from "@/components/pages/faq-section"
+import { StructuredData } from "@/components/seo/structured-data"
 
 const CONTENT = {
   az: {
@@ -85,6 +86,7 @@ const CONTENT = {
     quickLinks: "Tez Keçidlər",
     home: "Ana Səhifə",
     privacy: "Məxfilik Siyasəti (Privacy Policy)",
+    terms: "İstifadə Şərtləri (Terms of Service)",
     contact: "Bizimlə Əlaqə (Contact Us)",
     textbooksAndTests: "Dərsliklər və Sınaqlar",
     userSections: "İstifadəçi Bölmələri",
@@ -169,6 +171,7 @@ const CONTENT = {
     quickLinks: "Quick Links",
     home: "Home",
     privacy: "Privacy Policy",
+    terms: "Terms of Service",
     contact: "Contact Us",
     textbooksAndTests: "Textbooks & Practice",
     userSections: "Portals",
@@ -251,6 +254,7 @@ const CONTENT = {
     quickLinks: "Hızlı Bağlantılar",
     home: "Ana Sayfa",
     privacy: "Gizlilik Politikası (Privacy Policy)",
+    terms: "Kullanım Şartları (Terms of Service)",
     contact: "İletişim (Contact Us)",
     textbooksAndTests: "Ders Kitapları ve Sınavlar",
     userSections: "Kullanıcı Bölümleri",
@@ -333,6 +337,7 @@ const CONTENT = {
     quickLinks: "Быстрые ссылки",
     home: "Главная страница",
     privacy: "Политика конфиденциальности (Privacy Policy)",
+    terms: "Условия использования (Terms of Service)",
     contact: "Контакты (Contact Us)",
     textbooksAndTests: "Учебники и тесты",
     userSections: "Разделы пользователей",
@@ -362,6 +367,7 @@ export default function HomePage({ initialLang = "az" }: { initialLang?: Lang } 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10">
+      <StructuredData lang={lang} />
       {/* Header */}
       <header className="bg-white shadow-xs sticky top-0 z-40 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
@@ -547,6 +553,9 @@ export default function HomePage({ initialLang = "az" }: { initialLang?: Lang } 
             ))}
           </div>
         </div>
+
+        {/* FAQ Bölməsi (Tez-tez verilən suallar) */}
+        <FAQSection lang={lang} />
 
         {/* Bizi Sosial Şəbəkələrdə İzləyin (Community Section) */}
         <div className="bg-gradient-to-br from-primary/10 via-purple-500/5 to-pink-500/10 rounded-2xl border border-primary/20 p-6 sm:p-10 shadow-sm relative overflow-hidden">
@@ -779,6 +788,11 @@ export default function HomePage({ initialLang = "az" }: { initialLang?: Lang } 
                 <li>
                   <Link href={lang === "az" ? "/privacy" : `/${lang}/privacy`} className="hover:text-white transition-colors">
                     {t.privacy}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={lang === "az" ? "/terms" : `/${lang}/terms`} className="hover:text-white transition-colors">
+                    {t.terms}
                   </Link>
                 </li>
                 <li>
