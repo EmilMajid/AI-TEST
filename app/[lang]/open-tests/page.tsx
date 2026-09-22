@@ -38,7 +38,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: titles[lang],
     description: descriptions[lang],
     alternates: {
-      canonical: `https://testai.az/${lang}/open-tests`,
+      canonical: lang === "az" ? "https://testai.az/open-tests" : `https://testai.az/${lang}/open-tests`,
       languages: {
         az: "https://testai.az/open-tests",
         en: "https://testai.az/en/open-tests",

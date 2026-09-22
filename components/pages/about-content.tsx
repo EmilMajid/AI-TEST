@@ -62,7 +62,7 @@ export function AboutContent({ initialLang = "az" }: AboutContentProps) {
                   Müasir dünyada təhsilin əsas məqsədi faktları mexaniki şəkildə əzbərləmək deyil, qazanılan bilikləri real həyatda təhlil etmək və tətbiq etmək bacarığıdır. Uzun illərdir ki, şagirdlərimiz və valideynlərimiz məktəb proqramından kənara çıxan, dərsliklərlə uzlaşmayan və uşaqda əzbərçilik vərdişi formalaşdıran çoxsaylı test vəsaitləri arasında çaşqınlıq yaşayırlar.
                 </p>
                 <p className="mt-2">
-                  <strong>TESTAI.AZ</strong> bu boşluğu aradan qaldırmaq, təhsilimizin keyfiyyət standartlarını yüksəltmək və hər bir məktəblinin fərdi inkişaf trayektoriyasını müəyyən etmək məqsədilə yaradılmış <strong>Azərbaycanın ilk dərslik əsaslı süni intellekt təhsil və diaqnostika platformasıdır</strong>.
+                  <strong>TESTAI.AZ</strong> bu boşluğu aradan qaldırmaq, təhsilimizin keyfiyyət standartlarını yüksəltmək və hər bir məktəblinin fərdi inkişaf trayektoriyasını müəyyən etmək məqsədilə yaradılmış <strong>Azərbaycan dərslikləri əsasında hazırlanmış süni intellekt təhsil və diaqnostika platformasıdır</strong>.
                 </p>
               </section>
 
@@ -82,10 +82,10 @@ export function AboutContent({ initialLang = "az" }: AboutContentProps) {
               <section>
                 <h2 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                   <Award className="w-5 h-5 text-amber-600" />
-                  3. SİTG Standartı və Bloom Taksonomiyası: Əzbərçiliyə Son!
+                  3. SİTG Metodologiyası və Yenilənmiş Bloom Taksonomiyası: Əzbərçiliyə Son!
                 </h2>
                 <p>
-                  Platformamız <strong>SİTG (Süni İntellekt Test Generasiya Standartı)</strong> üzrə fəaliyyət göstərir:
+                  Platformamız TESTAI.AZ tərəfindən formalaşdırılmış <strong>SİTG (Süni İntellekt Test Generasiya Metodologiyası)</strong> və müasir pedaqoji qiymətləndirmə prinsipləri üzrə fəaliyyət göstərir:
                 </p>
                 <ul className="list-disc pl-5 mt-2 space-y-1.5">
                   <li><strong>Biliyi deyil, bacarığı ölçmək:</strong> Qaydaları sadəcə xatırlayan deyil, onu cümlədə, tənlikdə və ya məsələdə tətbiq edə bilən şagirdlər yetişdirmək.</li>
