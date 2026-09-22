@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { OpenTestEngine } from "@/components/open-tests/open-test-engine"
 
 export const metadata: Metadata = {
@@ -52,8 +51,7 @@ export default function OpenTestsPage() {
 
   return (
     <>
-      <Script
-        id="schema-open-tests"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import { OpenTestEngine } from "@/components/open-tests/open-test-engine"
 import { Lang } from "@/components/language-dropdown"
 
@@ -73,8 +72,7 @@ export default function MultilingualOpenTestsPage({ params }: PageProps) {
 
   return (
     <>
-      <Script
-        id={`schema-open-tests-${lang}`}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

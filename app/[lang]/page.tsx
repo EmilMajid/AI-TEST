@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import HomePage from "../page"
+import { HomeContent } from "@/components/pages/home-content"
 import { Lang } from "@/components/language-dropdown"
 
 const VALID_LANGS: Lang[] = ["az", "en", "tr", "ru"]
@@ -55,5 +55,5 @@ export default function MultilingualHomePage({ params }: PageProps) {
     notFound()
   }
 
-  return <HomePage initialLang={lang} />
+  return <HomeContent initialLang={lang} />
 }
