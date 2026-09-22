@@ -113,6 +113,9 @@ export default function RegisterPage() {
   const [selectedSubRegion, setSelectedSubRegion] = useState("")
   const [registrationType, setRegistrationType] = useState<"student" | "parent">("student")
 
+  // Sponsor bloklarını göstərmək/gizlətmək üçün tənzimləmə (gələcəkdə aktivləşdirmək üçün true edin)
+  const SHOW_AUTH_SPONSORS = false
+
   const themeClasses = getThemeClasses()
   const selectedRegionInfo = getRegionInfo(selectedRegion)
   const subRegions = getSubRegions(selectedRegion)
@@ -321,14 +324,16 @@ export default function RegisterPage() {
         <div className="w-full max-w-[1600px] mx-auto flex justify-center items-start gap-6">
           
           {/* Sol Reklam Bloku */}
-          <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
-            <AdBanner
-              slot="register-sidebar-left"
-              format="vertical"
-              refreshKey="reg-left"
-              label="Sponsorluq Fürsəti"
-            />
-          </aside>
+          {SHOW_AUTH_SPONSORS && (
+            <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+              <AdBanner
+                slot="register-sidebar-left"
+                format="vertical"
+                refreshKey="reg-left"
+                label="Sponsorluq Fürsəti"
+              />
+            </aside>
+          )}
 
           {/* Mərkəzi Qeydiyyat Sahəsi */}
           <main className="w-full flex-1 max-w-4xl space-y-4 sm:space-y-6">
@@ -967,14 +972,16 @@ export default function RegisterPage() {
         </main>
 
         {/* Sağ Reklam Bloku */}
-        <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
-          <AdBanner
-            slot="register-sidebar-right"
-            format="vertical"
-            refreshKey="reg-right"
-            label="Brend Əməkdaşlığı"
-          />
-        </aside>
+        {SHOW_AUTH_SPONSORS && (
+          <aside className="hidden xl:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+            <AdBanner
+              slot="register-sidebar-right"
+              format="vertical"
+              refreshKey="reg-right"
+              label="Brend Əməkdaşlığı"
+            />
+          </aside>
+        )}
 
       </div>
     </div>

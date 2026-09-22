@@ -72,10 +72,10 @@ export function AboutContent({ initialLang = "az" }: AboutContentProps) {
                   2. Rəsmi Dərslik Bazasının Toxunulmazlığı (e-derslik.edu.az İnteqrasiyası)
                 </h2>
                 <p>
-                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>100% rəsmi dövlət kurikulumuna əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları birbaşa Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında təsdiq olunmuş rəsmi dərsliklər əsasında hazırlanır.
+                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>rəsmi dövlət təhsil proqramı və dərslik bazasına əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları birbaşa Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında təsdiq olunmuş rəsmi dərsliklər əsasında formalaşdırılır.
                 </p>
                 <p className="mt-2">
-                  RAG (Retrieval-Augmented Generation) süni intellekt arxitekturası sayəsində sistem kənar və ya tədris olunmamış mövzulardan sual tərtib etmir («Zero-Hallucination» prinsipi). I sinifdən XI sinfə qədər bütün fənlər (Riyaziyyat, Azərbaycan dili, Ədəbiyyat, Xarici dillər, Tarix, Fizika, Kimya, Biologiya, Coğrafiya, Təbiət, İnformatika və s.) dərsliklərin ən son nəşrlərinə tam uyğunlaşdırılmışdır.
+                  RAG (Retrieval-Augmented Generation) süni intellekt arxitekturası sayəsində suallar birbaşa təsdiq olunmuş dərslik parçalarına semantik olaraq bağlanır, sistemin kənar və ya tədris olunmamış mövzulardan yayınması (süni intellekt hallüsinasiyası) elmi-texniki metodlarla minimuma endirilir. I sinifdən XI sinfə qədər baza fənlər (Riyaziyyat, Azərbaycan dili, Ədəbiyyat, Xarici dillər, Tarix, Fizika, Kimya, Biologiya, Coğrafiya, Təbiət, İnformatika və s.) dərsliklərin cari nəşrlərinə uyğunlaşdırılmışdır.
                 </p>
               </section>
 
@@ -141,7 +141,7 @@ export function AboutContent({ initialLang = "az" }: AboutContentProps) {
                   2. Official Curriculum Integrity (e-derslik.edu.az)
                 </h2>
                 <p>
-                  Every assessment item and conceptual metric on TESTAI.AZ is rooted in authorized Ministry textbooks. Leveraging advanced <strong>Retrieval-Augmented Generation (RAG)</strong>, our platform guarantees 100% textbook alignment with zero artificial hallucination across Grades 1 through 11.
+                  Every assessment item and conceptual metric on TESTAI.AZ is rooted in authorized Ministry textbooks. Leveraging advanced <strong>Retrieval-Augmented Generation (RAG)</strong> architecture, questions are semantically grounded in textbook passages, systematically minimizing artificial hallucination across Grades 1 through 11.
                 </p>
               </section>
 
@@ -262,7 +262,7 @@ export function AboutContent({ initialLang = "az" }: AboutContentProps) {
                   2. Интеграция с официальными учебниками (e-derslik.edu.az)
                 </h2>
                 <p>
-                  Все тестовые задания и диагностические критерии строго базируются на утвержденных учебниках. Архитектура Retrieval-Augmented Generation (RAG) гарантирует полное соответствие учебной программе и исключает ложные факты для 1–11 классов по всем дисциплинам.
+                  Все тестовые задания и диагностические критерии разрабатываются на основе утвержденных учебников. Архитектура Retrieval-Augmented Generation (RAG) обеспечивает точную привязку тестовых вопросов к контексту учебников и минимизирует вероятность генерации нерелевантной информации (галлюцинаций ИИ).
                 </p>
               </section>
 

@@ -116,18 +116,18 @@ const CONTENT = {
     aboutSectionBadge: "PEDAGOGICAL MISSION & PURPOSE",
     aboutSectionTitle: "What is TESTAI.AZ and How Does It Help?",
     aboutSectionP1:
-      "TESTAI.AZ is the premier AI-powered educational testing and diagnostic platform built directly upon official curriculum textbooks (e-derslik.edu.az). Leveraging advanced RAG architecture, it guarantees zero artificial hallucination.",
+      "TESTAI.AZ is the premier AI-powered educational testing and diagnostic platform built directly upon official curriculum textbooks (e-derslik.edu.az). Leveraging advanced RAG architecture, questions are semantically grounded in textbook passages to minimize deviations and hallucinations.",
     aboutSectionP2:
       "Through real-time Parent Dashboards, parents do not have to struggle through study sessions under nervous tension; the system analyzes topic-specific strengths and weaknesses in minutes and delivers the findings directly to the parent.",
     aboutSectionReadMore: "Read Full About Us Page",
     features: [
       {
         title: "Official Textbooks",
-        desc: "100% aligned with authorized curriculum textbooks from e-derslik.edu.az",
+        desc: "Curriculum-aligned with authorized textbooks from e-derslik.edu.az",
       },
       {
         title: "AI Test Generator",
-        desc: "Curriculum-aligned diagnostic tests powered by SITG standards with zero hallucination",
+        desc: "Curriculum-aligned diagnostic tests powered by SITG standards and semantic grounding",
       },
       {
         title: "Personalized Parent Dashboard",

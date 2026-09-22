@@ -45,6 +45,9 @@ export default function LoginPage() {
 
   const themeClasses = getThemeClasses()
 
+  // Sponsor bloklarını göstərmək/gizlətmək üçün tənzimləmə (gələcəkdə aktivləşdirmək üçün true edin)
+  const SHOW_AUTH_SPONSORS = false
+
   // Admin siyahıdan çıxarıldı, Müəllim və Direktor məhdudlaşdırıldı
   const roles = [
     { id: "student", label: "Şagird", icon: "🎓", restricted: false },
@@ -297,14 +300,16 @@ export default function LoginPage() {
         <div className="w-full max-w-[1550px] mx-auto flex justify-center items-start gap-6">
           
           {/* Sol Reklam Bloku (Giriş səhifəsinin sol boşluğu) */}
-          <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
-            <AdBanner
-              slot="login-sidebar-left"
-              format="vertical"
-              refreshKey="login-left"
-              label="Sponsorluq Fürsəti"
-            />
-          </aside>
+          {SHOW_AUTH_SPONSORS && (
+            <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+              <AdBanner
+                slot="login-sidebar-left"
+                format="vertical"
+                refreshKey="login-left"
+                label="Sponsorluq Fürsəti"
+              />
+            </aside>
+          )}
 
           {/* Mərkəzi Giriş Paneli */}
           <main className="w-full max-w-md mx-auto space-y-4">
@@ -596,14 +601,16 @@ export default function LoginPage() {
           </main>
 
           {/* Sağ Reklam Bloku (Giriş səhifəsinin sağ boşluğu) */}
-          <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
-            <AdBanner
-              slot="login-sidebar-right"
-              format="vertical"
-              refreshKey="login-right"
-              label="Brend Əməkdaşlığı"
-            />
-          </aside>
+          {SHOW_AUTH_SPONSORS && (
+            <aside className="hidden lg:block w-[230px] xl:w-[260px] shrink-0 sticky top-6">
+              <AdBanner
+                slot="login-sidebar-right"
+                format="vertical"
+                refreshKey="login-right"
+                label="Brend Əməkdaşlığı"
+              />
+            </aside>
+          )}
 
         </div>
       </div>
