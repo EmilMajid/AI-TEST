@@ -233,7 +233,8 @@ export default function AdminUsersPage() {
 
         try {
             setActionLoading(user.id)
-            const res = await fetch(`/api/admin/users?id=${encodeURIComponent(user.id)}`, {
+            const deleteUrl = `/api/admin/users?id=${encodeURIComponent(user.id)}${user.email ? `&email=${encodeURIComponent(user.email)}` : ''}`
+            const res = await fetch(deleteUrl, {
                 method: 'DELETE'
             })
             const data = await res.json()
@@ -244,7 +245,12 @@ export default function AdminUsersPage() {
                     description: data.message || "İstifadəçi sistemdən tamamilə silindi"
                 })
                 // Remove from local list immediately
-                setUsers(prev => prev.filter(u => String(u.id) !== String(user.id) && u.email?.toLowerCase() !== user.email?.toLowerCase()))
+                const targetUId = String(user.uniqueId || '').toLowerCase().trim()
+                setUsers(prev => prev.filter(u =>
+                    String(u.id) !== String(user.id) &&
+                    u.email?.toLowerCase() !== user.email?.toLowerCase() &&
+                    (!targetUId || String(u.uniqueId || '').toLowerCase().trim() !== targetUId)
+                ))
 
                 // Remove from localStorage as well so it never resurrects
                 try {
@@ -252,7 +258,8 @@ export default function AdminUsersPage() {
                     if (Array.isArray(rawReg)) {
                         const updatedReg = rawReg.filter((u: any) =>
                             String(u.id) !== String(user.id) &&
-                            u.email?.toLowerCase() !== user.email?.toLowerCase()
+                            u.email?.toLowerCase() !== user.email?.toLowerCase() &&
+                            (!targetUId || String(u.uniqueId || '').toLowerCase().trim() !== targetUId)
                         )
                         localStorage.setItem('registeredUsers', JSON.stringify(updatedReg))
                     }

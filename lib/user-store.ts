@@ -667,24 +667,36 @@ export function blockUser(idOrEmail: string | number, isBlocked: boolean = true)
   return target
 }
 
-export function deleteUser(idOrEmail: string | number): boolean {
+export async function deleteUser(idOrEmail: string | number, extraEmail?: string): Promise<boolean> {
   const clean = String(idOrEmail).trim().toLowerCase()
   const cleanWithoutAt = clean.replace("@", "")
   deletedUserIds.add(clean)
   deletedUserIds.add(cleanWithoutAt)
 
-  // Real Emil və ya real İnci silinirsə bütün əlaqəli identifikatorları siyahıya əlavə et
-  if (clean === "1788541772004" || clean === "emilinpoctu@gmail.com" || clean.includes("emil.mecidov.161")) {
-    deletedUserIds.add("1788541772004")
-    deletedUserIds.add("emilinpoctu@gmail.com")
-    deletedUserIds.add("@emil.mecidov.161")
-    deletedUserIds.add("emil.mecidov.161")
+  if (extraEmail) {
+    const cleanExtra = extraEmail.trim().toLowerCase()
+    deletedUserIds.add(cleanExtra)
+    deletedUserIds.add(cleanExtra.replace("@", ""))
   }
-  if (clean === "inci.mecidzade.161@testai.az" || clean.includes("inci.mecidzade.161")) {
-    deletedUserIds.add("inci.mecidzade.161@testai.az")
-    deletedUserIds.add("@inci.mecidzade.161")
-    deletedUserIds.add("inci.mecidzade.161")
-  }
+
+  // Find user in memory or disk to catch all their identifiers (id, email, uniqueId)
+  try {
+    const all = getAllUsers()
+    const target = all.find(u =>
+      String(u.id).toLowerCase() === clean ||
+      (u.email && u.email.toLowerCase() === clean) ||
+      (extraEmail && u.email && u.email.toLowerCase() === extraEmail.toLowerCase())
+    )
+    if (target) {
+      if (target.id) deletedUserIds.add(String(target.id).toLowerCase())
+      if (target.email) deletedUserIds.add(target.email.toLowerCase())
+      const uId = getUserUniqueId(target as any).toLowerCase()
+      if (uId) {
+        deletedUserIds.add(uId)
+        deletedUserIds.add(uId.replace("@", ""))
+      }
+    }
+  } catch (e) {}
 
   saveDeletedUsersToDisk(deletedUserIds)
 
@@ -692,14 +704,18 @@ export function deleteUser(idOrEmail: string | number): boolean {
   for (let i = inMemoryUsers.length - 1; i >= 0; i--) {
     const u = inMemoryUsers[i]
     const uId = getUserUniqueId(u as any).toLowerCase()
+    const uEmail = (u.email || "").toLowerCase()
+    const uIdStr = String(u.id).toLowerCase()
     if (
-      String(u.id).toLowerCase() === clean ||
-      (u.email && u.email.toLowerCase() === clean) ||
+      uIdStr === clean ||
+      uEmail === clean ||
       uId === clean ||
       uId.replace("@", "") === clean.replace("@", "") ||
+      deletedUserIds.has(uIdStr) ||
+      (uEmail && deletedUserIds.has(uEmail)) ||
       isTargetDeletedUser(u)
     ) {
-      deletedUserIds.add(String(u.id).toLowerCase())
+      if (u.id) deletedUserIds.add(String(u.id).toLowerCase())
       if (u.email) deletedUserIds.add(u.email.toLowerCase())
       inMemoryUsers.splice(i, 1)
     }
@@ -708,7 +724,6 @@ export function deleteUser(idOrEmail: string | number): boolean {
   // 2. Remove from MOCK_USERS (YALNIZ DEMO OLMAYANLAR — demo hesablar toxunulmazdır!)
   for (let i = MOCK_USERS.length - 1; i >= 0; i--) {
     const u = MOCK_USERS[i]
-    // Qorunan demo hesabları heç vaxt silmə!
     if (
       u.email === "emil.mecidov@example.com" || u.id === "parent-emil" ||
       u.email === "inci.mecidzade@test.com" || u.id === "student-inci"
@@ -716,14 +731,15 @@ export function deleteUser(idOrEmail: string | number): boolean {
       continue
     }
     const uId = getUserUniqueId(u as any).toLowerCase()
+    const uEmail = (u.email || "").toLowerCase()
+    const uIdStr = String(u.id).toLowerCase()
     if (
-      String(u.id).toLowerCase() === clean ||
-      (u.email && u.email.toLowerCase() === clean) ||
+      uIdStr === clean ||
+      uEmail === clean ||
       uId === clean ||
-      uId.replace("@", "") === clean.replace("@", "")
+      deletedUserIds.has(uIdStr) ||
+      (uEmail && deletedUserIds.has(uEmail))
     ) {
-      deletedUserIds.add(String(u.id).toLowerCase())
-      if (u.email) deletedUserIds.add(u.email.toLowerCase())
       MOCK_USERS.splice(i, 1)
     }
   }
@@ -732,11 +748,15 @@ export function deleteUser(idOrEmail: string | number): boolean {
   const disk = loadFromDisk()
   const cleanDisk = disk.filter((u) => {
     const uId = getUserUniqueId(u as any).toLowerCase()
+    const uEmail = (u.email || "").toLowerCase()
+    const uIdStr = String(u.id).toLowerCase()
     const match =
-      String(u.id).toLowerCase() === clean ||
-      (u.email && u.email.toLowerCase() === clean) ||
+      uIdStr === clean ||
+      uEmail === clean ||
       uId === clean ||
       uId.replace("@", "") === clean.replace("@", "") ||
+      deletedUserIds.has(uIdStr) ||
+      (uEmail && deletedUserIds.has(uEmail)) ||
       isTargetDeletedUser(u)
     return !match
   })
@@ -757,11 +777,15 @@ export function deleteUser(idOrEmail: string | number): boolean {
         if (Array.isArray(parsed)) {
           const filtered = parsed.filter((u) => {
             const uId = getUserUniqueId(u as any).toLowerCase()
+            const uEmail = (u.email || "").toLowerCase()
+            const uIdStr = String(u.id).toLowerCase()
             const match =
-              String(u.id).toLowerCase() === clean ||
-              (u.email && u.email.toLowerCase() === clean) ||
+              uIdStr === clean ||
+              uEmail === clean ||
               uId === clean ||
               uId.replace("@", "") === clean.replace("@", "") ||
+              deletedUserIds.has(uIdStr) ||
+              (uEmail && deletedUserIds.has(uEmail)) ||
               isTargetDeletedUser(u)
             return !match
           })
@@ -774,7 +798,6 @@ export function deleteUser(idOrEmail: string | number): boolean {
   // 5. Remove links associated with this user
   const links = loadLinksFromDisk()
   const cleanLinks = links.filter((l) => {
-    // Qorunan demo əlaqələrə toxunma!
     const sEmail = (l.student?.email || "").toLowerCase()
     const pEmail = (l.parentEmail || "").toLowerCase()
     const pId = String(l.parentId).toLowerCase()
@@ -791,27 +814,55 @@ export function deleteUser(idOrEmail: string | number): boolean {
       pId === clean ||
       pEmail === clean ||
       sEmail === clean ||
-      (l.student?.id && String(l.student.id).toLowerCase() === clean) ||
-      isTargetDeletedUser(l.student) ||
-      pId === "1788541772004" ||
-      pEmail === "emilinpoctu@gmail.com" ||
-      sEmail === "inci.mecidzade.161@testai.az"
+      deletedUserIds.has(sId) ||
+      deletedUserIds.has(pId) ||
+      (pEmail && deletedUserIds.has(pEmail)) ||
+      (sEmail && deletedUserIds.has(sEmail)) ||
+      (l.student?.id && deletedUserIds.has(String(l.student.id).toLowerCase())) ||
+      isTargetDeletedUser(l.student)
     return !match
   })
   saveLinksToDisk(cleanLinks)
 
-  // 6. Delete from Supabase cloud database
+  // 6. Delete from Supabase cloud database with full AWAIT and foreign key cleanup
   try {
     if (supabaseAdmin) {
-      if (!isNaN(Number(clean))) {
-        supabaseAdmin.from("User").delete().eq("id", Number(clean)).then(() => {}, () => {})
-        supabaseAdmin.from("ParentStudentLink").delete().or(`parentId.eq.${clean},studentId.eq.${clean}`).then(() => {}, () => {})
+      const numId = Number(clean)
+      const targetEmails = [clean]
+      if (extraEmail) targetEmails.push(extraEmail.toLowerCase().trim())
+
+      if (!isNaN(numId) && numId > 0) {
+        // Clean foreign references first to avoid foreign key violations
+        await supabaseAdmin.from("ParentStudentLink").delete().or(`parentId.eq.${numId},studentId.eq.${numId}`)
+        await supabaseAdmin.from("TestResult").delete().eq("userId", numId)
+        await supabaseAdmin.from("NotificationLog").delete().or(`parentId.eq.${numId},studentId.eq.${numId}`)
+        await supabaseAdmin.from("ParentInvite").delete().eq("studentId", numId)
+        const { error: delErr } = await supabaseAdmin.from("User").delete().eq("id", numId)
+        if (delErr) {
+          console.error(`[Supabase] Error deleting user by id=${numId}:`, delErr)
+        } else {
+          console.log(`[Supabase] Successfully deleted user id=${numId}`)
+        }
       }
-      if (clean.includes("@")) {
-        supabaseAdmin.from("User").delete().ilike("email", clean).then(() => {}, () => {})
+
+      for (const em of targetEmails) {
+        if (em.includes("@")) {
+          // Lookup user by email to get numeric id if needed
+          const { data: uFound } = await supabaseAdmin.from("User").select("id").ilike("email", em).maybeSingle()
+          if (uFound?.id) {
+            await supabaseAdmin.from("ParentStudentLink").delete().or(`parentId.eq.${uFound.id},studentId.eq.${uFound.id}`)
+            await supabaseAdmin.from("TestResult").delete().eq("userId", uFound.id)
+            await supabaseAdmin.from("NotificationLog").delete().or(`parentId.eq.${uFound.id},studentId.eq.${uFound.id}`)
+            await supabaseAdmin.from("ParentInvite").delete().eq("studentId", uFound.id)
+            await supabaseAdmin.from("User").delete().eq("id", uFound.id)
+          }
+          await supabaseAdmin.from("User").delete().ilike("email", em)
+        }
       }
     }
-  } catch (err) {}
+  } catch (err) {
+    console.error("[deleteUser] Supabase deletion error:", err)
+  }
 
   saveDeletedUsersToDisk(deletedUserIds)
   return true

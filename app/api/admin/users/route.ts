@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser, isTargetDeletedUser } from "@/lib/user-store"
+import { getAllUsers, saveUser, saveLink, blockUser, deleteUser, loadLinksFromDisk, supabaseAdmin, isMockUser, isTargetDeletedUser, deletedUserIds } from "@/lib/user-store"
 import { getUserUniqueId } from "@/lib/profile-utils"
 import { requireAdmin } from "@/lib/auth-utils"
 
@@ -19,6 +19,14 @@ export async function GET(request: NextRequest) {
         if (suUsers && suUsers.length > 0) {
           for (const su of suUsers) {
             const emailKey = (su.email || "").toLowerCase().trim()
+            const idKey = String(su.id).toLowerCase().trim()
+            if (
+              isTargetDeletedUser(su) ||
+              (idKey && deletedUserIds.has(idKey)) ||
+              (emailKey && deletedUserIds.has(emailKey))
+            ) {
+              continue
+            }
             const existing = allUsers.find(
               (u) => (u.email && u.email.toLowerCase() === emailKey) || String(u.id) === String(su.id)
             )
@@ -280,23 +288,28 @@ export async function DELETE(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
     let id = searchParams.get("id")
+    let email = searchParams.get("email")
 
     if (!id) {
       try {
         const body = await request.json()
         id = body.id
+        if (!email) email = body.email
       } catch (e) {}
     }
 
-    if (!id) {
-      return NextResponse.json({ error: "İstifadəçi ID tələb olunur" }, { status: 400 })
+    if (!id && !email) {
+      return NextResponse.json({ error: "İstifadəçi ID və ya email tələb olunur" }, { status: 400 })
     }
 
-    if (String(id).toLowerCase() === "admin-main" || String(id).toLowerCase() === "admin@edu.az") {
+    if (
+      (id && (String(id).toLowerCase() === "admin-main" || String(id).toLowerCase() === "admin@edu.az")) ||
+      (email && email.toLowerCase() === "admin@edu.az")
+    ) {
       return NextResponse.json({ error: "Əsas administrator profilini silmək olmaz" }, { status: 403 })
     }
 
-    deleteUser(id)
+    await deleteUser(id || email!, email || undefined)
 
     return NextResponse.json({
       success: true,
@@ -319,7 +332,18 @@ export async function POST(request: NextRequest) {
     if (Array.isArray(users)) {
       for (const u of users) {
         if (!u || (!u.email && !u.id)) continue
-        if (isTargetDeletedUser(u)) continue
+        const uEmail = (u.email || "").toLowerCase().trim()
+        const uId = String(u.id || "").toLowerCase().trim()
+        const uUId = String(u.uniqueId || "").toLowerCase().trim()
+        if (
+          isTargetDeletedUser(u) ||
+          (uId && deletedUserIds.has(uId)) ||
+          (uEmail && deletedUserIds.has(uEmail)) ||
+          (uUId && deletedUserIds.has(uUId)) ||
+          (uUId && deletedUserIds.has(uUId.replace("@", "")))
+        ) {
+          continue
+        }
         saveUser({
           id: u.id || `student-${Date.now()}`,
           firstName: u.firstName || "İstifadəçi",

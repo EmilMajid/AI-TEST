@@ -481,7 +481,7 @@ export async function DELETE(request: NextRequest, { params }: { params: { id: s
             return NextResponse.json({ error: "Əsas administrator profilini silmək olmaz" }, { status: 403 })
         }
 
-        deleteUser(userId)
+        await deleteUser(userId)
         return NextResponse.json({
             success: true,
             message: "İstifadəçi sistemdən tamamilə silindi",
