@@ -98,9 +98,13 @@ const CONTENT = {
     supportText: "Təklif və texniki dəstək üçün həftənin hər günü bizimlə əlaqə saxlaya bilərsiniz.",
     copyright: "© 2025 TESTAI.AZ. Bütün hüquqlar qorunur.",
     tagline: "Azərbaycan AI Təhsil Platforması",
+    blogLink: "Bloq və Metodologiya",
+    openTestsLink: "Açıq Sınaqlar (Qeydiyyatsız)",
   },
   en: {
     aboutLink: "About Us (Haqqımızda)",
+    blogLink: "Blog & Methodology",
+    openTestsLink: "Open Diagnostic Tests",
     login: "Sign In",
     register: "Sign Up",
     heroBadge: "Official Curriculum-Aligned Educational & Diagnostic Platform",
@@ -181,6 +185,8 @@ const CONTENT = {
   },
   tr: {
     aboutLink: "Hakkımızda (About Us)",
+    blogLink: "Blog ve Metodoloji",
+    openTestsLink: "Açık Dil Sınavları (Kayıtsız)",
     login: "Giriş Yap",
     register: "Kayıt Ol",
     heroBadge: "Resmi Müfredat Tabanlı Eğitim ve Teşhis Platformu",
@@ -261,6 +267,8 @@ const CONTENT = {
   },
   ru: {
     aboutLink: "О нас (About Us)",
+    blogLink: "Блог и методология",
+    openTestsLink: "Открытые тесты (Без регистрации)",
     login: "Войти",
     register: "Регистрация",
     heroBadge: "Образовательная ИИ-платформа тестирования и диагностики",
@@ -370,12 +378,32 @@ export default function HomePage() {
 
               {/* Haqqımızda (About Us) keçidi — Loqo və addan dərhal sonra */}
               <Link
-                href="/about"
+                href={lang === "az" ? "/about" : `/${lang}/about`}
                 className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 hover:border-blue-300 transition-all shadow-sm"
                 title="TESTAI.AZ Haqqında və Pedaqoji Missiyamız"
               >
                 <BookOpen className="w-3.5 h-3.5 text-blue-600 shrink-0" />
                 <span>{t.aboutLink}</span>
+              </Link>
+
+              {/* Bloq və Metodologiya */}
+              <Link
+                href={lang === "az" ? "/blog" : `/${lang}/blog`}
+                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 hover:border-indigo-300 transition-all shadow-sm"
+                title="SİTG Standartı və Pedaqoji Bloq"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
+                <span>{t.blogLink}</span>
+              </Link>
+
+              {/* Qeydiyyatsız Açıq Sınaqlar */}
+              <Link
+                href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`}
+                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 hover:border-emerald-300 transition-all shadow-sm"
+                title="Qeydiyyatsız Açıq Dil Sınaqları"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{t.openTestsLink}</span>
               </Link>
             </div>
 
@@ -416,6 +444,12 @@ export default function HomePage() {
             <Link href="/register">
               <button className="text-sm sm:text-base px-6 sm:px-8 py-3 bg-primary text-white rounded-xl font-semibold hover:opacity-90 shadow-md transition-all cursor-pointer">
                 {t.startBtn}
+              </button>
+            </Link>
+            <Link href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`}>
+              <button className="text-sm sm:text-base px-5 sm:px-7 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl font-bold hover:opacity-95 shadow-md transition-all cursor-pointer flex items-center gap-2">
+                <span className="text-base">🇬🇧 🇩🇪 🇫🇷 🇷🇺</span>
+                <span>{t.openTestsLink}</span>
               </button>
             </Link>
             <Link href="/about">
@@ -721,17 +755,27 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-white transition-colors text-blue-400 font-semibold">
+                  <Link href={lang === "az" ? "/about" : `/${lang}/about`} className="hover:text-white transition-colors text-blue-400 font-semibold">
                     {t.aboutLink}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy" className="hover:text-white transition-colors">
+                  <Link href={lang === "az" ? "/blog" : `/${lang}/blog`} className="hover:text-white transition-colors text-indigo-400 font-semibold">
+                    {t.blogLink}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`} className="hover:text-white transition-colors text-emerald-400 font-semibold">
+                    {t.openTestsLink}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={lang === "az" ? "/privacy" : `/${lang}/privacy`} className="hover:text-white transition-colors">
                     {t.privacy}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">
+                  <Link href={lang === "az" ? "/contact" : `/${lang}/contact`} className="hover:text-white transition-colors">
                     {t.contact}
                   </Link>
                 </li>

@@ -1,6 +1,8 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
+import { usePathname } from "next/navigation"
+import Link from "next/link"
 import { Globe, ChevronDown, Check } from "lucide-react"
 
 export type Lang = "az" | "en" | "tr" | "ru"
@@ -32,6 +34,7 @@ export function LanguageDropdown({
 }: LanguageDropdownProps) {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const pathname = usePathname() || "/"
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -44,6 +47,18 @@ export function LanguageDropdown({
   }, [])
 
   const selected = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[0]
+
+  // Calculate target URL for each language based on current path
+  const getLanguageHref = (targetLang: Lang): string => {
+    // Strip leading /en, /tr, /ru, /az if present
+    const cleanedPath = pathname.replace(/^\/(az|en|tr|ru)(\/|$)/, "/")
+    const normalized = cleanedPath === "" ? "/" : cleanedPath
+
+    if (targetLang === "az") {
+      return normalized
+    }
+    return `/${targetLang}${normalized === "/" ? "" : normalized}`
+  }
 
   return (
     <div className="relative inline-block text-left" ref={dropdownRef}>
@@ -76,10 +91,12 @@ export function LanguageDropdown({
           </div>
           {LANGUAGES.map((item) => {
             const isSelected = item.code === currentLang
+            const href = getLanguageHref(item.code)
+
             return (
-              <button
+              <Link
                 key={item.code}
-                type="button"
+                href={href}
                 onClick={() => {
                   onSelectLang(item.code)
                   setIsOpen(false)
@@ -96,7 +113,7 @@ export function LanguageDropdown({
                   <span className="text-[11px] text-slate-400 uppercase">({item.short})</span>
                 </div>
                 {isSelected && <Check className="w-4 h-4 text-blue-600 shrink-0" />}
-              </button>
+              </Link>
             )
           })}
         </div>
