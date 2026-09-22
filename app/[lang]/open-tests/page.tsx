@@ -78,7 +78,7 @@ export default function MultilingualOpenTestsPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <OpenTestEngine />
+      <OpenTestEngine initialLang={lang} />
     </>
   )
 }

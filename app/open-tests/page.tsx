@@ -57,7 +57,7 @@ export default function OpenTestsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <OpenTestEngine />
+      <OpenTestEngine initialLang="az" />
     </>
   )
 }
