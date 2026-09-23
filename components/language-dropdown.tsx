@@ -2,8 +2,8 @@
 
 import { useState, useRef, useEffect } from "react"
 import { usePathname } from "next/navigation"
-import Link from "next/link"
 import { Globe, ChevronDown, Check } from "lucide-react"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 export type Lang = "az" | "en" | "tr" | "ru"
 
@@ -21,9 +21,25 @@ export const LANGUAGES: LanguageItem[] = [
   { code: "ru", label: "Русский", flag: "🇷🇺", short: "RU" },
 ]
 
+/**
+ * Calculates correct target URL for any language based on the current path and DEFAULT_LOCALE.
+ * If DEFAULT_LOCALE is "en", "en" maps to root paths (e.g. /, /blog), while "az", "tr", "ru" map to /az, /tr, /ru.
+ * If DEFAULT_LOCALE is "az", "az" maps to root paths (e.g. /, /blog), while "en", "tr", "ru" map to /en, /tr, /ru.
+ */
+export function getLanguageHref(targetLang: Lang, currentPath: string = "/"): string {
+  // Strip leading /en, /tr, /ru, /az if present
+  const cleanedPath = currentPath.replace(/^\/(az|en|tr|ru)(\/|$)/, "/")
+  const normalized = cleanedPath === "" ? "/" : cleanedPath
+
+  if (targetLang === DEFAULT_LOCALE) {
+    return normalized
+  }
+  return `/${targetLang}${normalized === "/" ? "" : normalized}`
+}
+
 interface LanguageDropdownProps {
   currentLang: Lang
-  onSelectLang: (lang: Lang) => void
+  onSelectLang?: (lang: Lang) => void
   variant?: "light" | "dark"
 }
 
@@ -48,20 +64,8 @@ export function LanguageDropdown({
 
   const selected = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[0]
 
-  // Calculate target URL for each language based on current path
-  const getLanguageHref = (targetLang: Lang): string => {
-    // Strip leading /en, /tr, /ru, /az if present
-    const cleanedPath = pathname.replace(/^\/(az|en|tr|ru)(\/|$)/, "/")
-    const normalized = cleanedPath === "" ? "/" : cleanedPath
-
-    if (targetLang === "az") {
-      return normalized
-    }
-    return `/${targetLang}${normalized === "/" ? "" : normalized}`
-  }
-
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="relative inline-block text-left notranslate" translate="no" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
@@ -85,20 +89,22 @@ export function LanguageDropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 rounded-xl bg-white shadow-xl border border-slate-200 py-1.5 z-50 animate-in fade-in-50 zoom-in-95 duration-100">
+        <div className="absolute right-0 mt-2 w-48 rounded-xl bg-white shadow-xl border border-slate-200 py-1.5 z-50 animate-in fade-in-50 zoom-in-95 duration-100 notranslate" translate="no">
           <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100">
             Dili Seçin / Select Language
           </div>
           {LANGUAGES.map((item) => {
             const isSelected = item.code === currentLang
-            const href = getLanguageHref(item.code)
+            const href = getLanguageHref(item.code, pathname)
 
             return (
-              <Link
+              <a
                 key={item.code}
                 href={href}
                 onClick={() => {
-                  onSelectLang(item.code)
+                  if (onSelectLang) {
+                    onSelectLang(item.code)
+                  }
                   setIsOpen(false)
                 }}
                 className={`w-full flex items-center justify-between px-3 py-2 text-xs sm:text-sm text-left transition-colors cursor-pointer ${
@@ -113,7 +119,7 @@ export function LanguageDropdown({
                   <span className="text-[11px] text-slate-400 uppercase">({item.short})</span>
                 </div>
                 {isSelected && <Check className="w-4 h-4 text-blue-600 shrink-0" />}
-              </Link>
+              </a>
             )
           })}
         </div>

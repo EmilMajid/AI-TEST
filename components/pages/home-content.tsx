@@ -19,6 +19,7 @@ import {
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { FAQSection } from "@/components/pages/faq-section"
 import { StructuredData } from "@/components/seo/structured-data"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 const CONTENT = {
   az: {
@@ -355,7 +356,7 @@ const CONTENT = {
   },
 }
 
-export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {}) {
+export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: Lang } = {}) {
   const [lang, setLang] = useState<Lang>(initialLang)
 
   useEffect(() => {
@@ -367,7 +368,7 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
   const t = CONTENT[lang]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10">
+    <div className="min-h-screen bg-gradient-to-br from-primary/20 to-primary/10 notranslate" translate="no">
       <StructuredData lang={lang} />
       {/* Header */}
       <header className="bg-white shadow-xs sticky top-0 z-40 border-b border-slate-100">
@@ -375,7 +376,7 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
           <div className="flex justify-between items-center py-3 sm:py-4 gap-2">
             {/* Logo + Haqqımızda (About Us) birbaşa loqodan sonra */}
             <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
-              <Link href="/" className="flex items-center group">
+              <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center group">
                 <div className="relative h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-2.5 transition-transform group-hover:scale-105">
                   <Image
                     src="/logo.jpg"
@@ -392,7 +393,7 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
 
               {/* Haqqımızda (About Us) keçidi — Loqo və addan dərhal sonra */}
               <Link
-                href={lang === "az" ? "/about" : `/${lang}/about`}
+                href={lang === DEFAULT_LOCALE ? "/about" : `/${lang}/about`}
                 className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 hover:border-blue-300 transition-all shadow-sm"
                 title="TESTAI.AZ Haqqında və Pedaqoji Missiyamız"
               >
@@ -402,7 +403,7 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
 
               {/* Bloq və Metodologiya */}
               <Link
-                href={lang === "az" ? "/blog" : `/${lang}/blog`}
+                href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
                 className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 hover:border-indigo-300 transition-all shadow-sm"
                 title="SİTG Standartı və Pedaqoji Bloq"
               >
@@ -412,7 +413,7 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
 
               {/* Qeydiyyatsız Açıq Sınaqlar */}
               <Link
-                href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`}
+                href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`}
                 className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 hover:border-emerald-300 transition-all shadow-sm"
                 title="Qeydiyyatsız Açıq Dil Sınaqları"
               >
@@ -777,27 +778,27 @@ export function HomeContent({ initialLang = "az" }: { initialLang?: Lang } = {})
                   </Link>
                 </li>
                 <li>
-                  <Link href={lang === "az" ? "/blog" : `/${lang}/blog`} className="hover:text-white transition-colors text-indigo-400 font-semibold">
+                  <Link href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`} className="hover:text-white transition-colors text-indigo-400 font-semibold">
                     {t.blogLink}
                   </Link>
                 </li>
                 <li>
-                  <Link href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`} className="hover:text-white transition-colors text-emerald-400 font-semibold">
+                  <Link href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`} className="hover:text-white transition-colors text-emerald-400 font-semibold">
                     {t.openTestsLink}
                   </Link>
                 </li>
                 <li>
-                  <Link href={lang === "az" ? "/privacy" : `/${lang}/privacy`} className="hover:text-white transition-colors">
+                  <Link href={lang === DEFAULT_LOCALE ? "/privacy" : `/${lang}/privacy`} className="hover:text-white transition-colors">
                     {t.privacy}
                   </Link>
                 </li>
                 <li>
-                  <Link href={lang === "az" ? "/terms" : `/${lang}/terms`} className="hover:text-white transition-colors">
+                  <Link href={lang === DEFAULT_LOCALE ? "/terms" : `/${lang}/terms`} className="hover:text-white transition-colors">
                     {t.terms}
                   </Link>
                 </li>
                 <li>
-                  <Link href={lang === "az" ? "/contact" : `/${lang}/contact`} className="hover:text-white transition-colors">
+                  <Link href={lang === DEFAULT_LOCALE ? "/contact" : `/${lang}/contact`} className="hover:text-white transition-colors">
                     {t.contact}
                   </Link>
                 </li>

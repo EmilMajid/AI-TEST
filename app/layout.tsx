@@ -59,8 +59,9 @@ export default function RootLayout({
   const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-1166444768651699"
 
   return (
-    <html lang={DEFAULT_LOCALE}>
+    <html lang={DEFAULT_LOCALE} className="notranslate" translate="no">
       <head>
+        <meta name="google" content="notranslate" />
         <meta name="google-adsense-account" content="ca-pub-1166444768651699" />
         {/* Schema.org Structured Data */}
         <Script
