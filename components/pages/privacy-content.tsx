@@ -4,35 +4,36 @@ import { useState } from "react"
 import Link from "next/link"
 import { Shield, ArrowLeft } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface PrivacyContentProps {
   initialLang?: Lang
 }
 
-export function PrivacyContent({ initialLang = "az" }: PrivacyContentProps) {
+export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentProps) {
   const [lang, setLang] = useState<Lang>(initialLang)
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
-          <Link href="/" className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity">
+          <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity">
             <ArrowLeft className="w-5 h-5" />
             <span>TESTAI.AZ</span>
           </Link>
 
           <div className="flex items-center gap-3">
             <Link
-              href="/terms"
+              href={lang === DEFAULT_LOCALE ? "/terms" : `/${lang}/terms`}
               className="text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
             >
-              İstifadə Şərtləri
+              {lang === "az" ? "İstifadə Şərtləri" : lang === "tr" ? "Kullanım Şartları" : lang === "ru" ? "Условия" : "Terms"}
             </Link>
             <Link
-              href="/blog"
+              href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
               className="text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
             >
-              Bloq
+              {lang === "az" ? "Bloq" : lang === "tr" ? "Blog" : lang === "ru" ? "Блог" : "Blog"}
             </Link>
             <LanguageDropdown currentLang={lang} onSelectLang={setLang} />
           </div>

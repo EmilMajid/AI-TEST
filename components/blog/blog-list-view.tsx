@@ -5,12 +5,13 @@ import Link from "next/link"
 import { ArrowLeft, BookOpen, Clock, Tag, Sparkles, ChevronRight } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { BLOG_POSTS } from "@/lib/blog-data"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface BlogListViewProps {
   initialLang?: Lang
 }
 
-export function BlogListView({ initialLang = "az" }: BlogListViewProps) {
+export function BlogListView({ initialLang = DEFAULT_LOCALE }: BlogListViewProps) {
   const [lang, setLang] = useState<Lang>(initialLang)
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
 
@@ -65,7 +66,7 @@ export function BlogListView({ initialLang = "az" }: BlogListViewProps) {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
           <Link
-            href="/"
+            href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`}
             className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -74,7 +75,7 @@ export function BlogListView({ initialLang = "az" }: BlogListViewProps) {
 
           <div className="flex items-center gap-3">
             <Link
-              href={lang === "az" ? "/about" : `/${lang}/about`}
+              href={lang === DEFAULT_LOCALE ? "/about" : `/${lang}/about`}
               className="text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors hidden sm:inline-block"
             >
               {lang === "az" ? "Haqqımızda" : lang === "tr" ? "Hakkımızda" : lang === "ru" ? "О нас" : "About"}

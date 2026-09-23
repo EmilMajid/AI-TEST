@@ -373,58 +373,54 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
       {/* Header */}
       <header className="bg-white shadow-xs sticky top-0 z-40 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-3 sm:py-4 gap-2">
-            {/* Logo + Haqqımızda (About Us) birbaşa loqodan sonra */}
-            <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
-              <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center group">
-                <div className="relative h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-2.5 transition-transform group-hover:scale-105">
-                  <Image
-                    src="/logo.jpg"
-                    alt="TESTAI.AZ Logo"
-                    fill
-                    className="object-contain rounded-md"
-                    priority
-                  />
-                </div>
-                <span className="text-lg sm:text-2xl font-extrabold text-gray-900 tracking-tight">
-                  TESTAI.AZ
-                </span>
-              </Link>
+          {/* Səviyyə 1 (Row 1): Loqo solda, Dil + Giriş/Qeydiyyat sağda, Naviqasiya böyük ekranda ortada */}
+          <div className="flex justify-between items-center py-2.5 sm:py-3.5 gap-2">
+            {/* Logo */}
+            <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center group shrink-0">
+              <div className="relative h-8 w-8 sm:h-9 sm:w-9 mr-1.5 sm:mr-2.5 transition-transform group-hover:scale-105">
+                <Image
+                  src="/logo.jpg"
+                  alt="TESTAI.AZ Logo"
+                  fill
+                  className="object-contain rounded-md"
+                  priority
+                />
+              </div>
+              <span className="text-lg sm:text-2xl font-extrabold text-gray-900 tracking-tight">
+                TESTAI.AZ
+              </span>
+            </Link>
 
-              {/* Haqqımızda (About Us) keçidi — Loqo və addan dərhal sonra */}
+            {/* Desktop Center Navigation (lg ekranda görünür) */}
+            <nav className="hidden lg:flex items-center gap-2.5">
               <Link
                 href={lang === DEFAULT_LOCALE ? "/about" : `/${lang}/about`}
-                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 hover:border-blue-300 transition-all shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200/80 hover:border-blue-300 transition-all shadow-2xs"
                 title="TESTAI.AZ Haqqında və Pedaqoji Missiyamız"
               >
                 <BookOpen className="w-3.5 h-3.5 text-blue-600 shrink-0" />
                 <span>{t.aboutLink}</span>
               </Link>
-
-              {/* Bloq və Metodologiya */}
               <Link
                 href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
-                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 hover:border-indigo-300 transition-all shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/80 hover:border-indigo-300 transition-all shadow-2xs"
                 title="SİTG Standartı və Pedaqoji Bloq"
               >
                 <Sparkles className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
                 <span>{t.blogLink}</span>
               </Link>
-
-              {/* Qeydiyyatsız Açıq Sınaqlar */}
               <Link
                 href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`}
-                className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 hover:border-emerald-300 transition-all shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 hover:border-emerald-300 transition-all shadow-2xs"
                 title="Qeydiyyatsız Açıq Dil Sınaqları"
               >
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
                 <span>{t.openTestsLink}</span>
               </Link>
-            </div>
+            </nav>
 
-            {/* Sağ Tərəf: Açılıb-Yığılan Dil Seçici + Giriş / Qeydiyyat */}
-            <div className="flex items-center gap-1.5 sm:gap-3">
-              {/* Açılıb-yığılan Language Dropdown */}
+            {/* Sağ Tərəf: Dil Seçici + Giriş / Qeydiyyat */}
+            <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
               <LanguageDropdown currentLang={lang} onSelectLang={setLang} />
 
               <Link href="/login">
@@ -433,12 +429,40 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                 </button>
               </Link>
               <Link href="/register">
-                <button className="px-3 sm:px-4 py-1.5 bg-primary text-white rounded-xl text-xs sm:text-sm font-medium hover:opacity-90 shadow-sm transition-all cursor-pointer">
+                <button className="px-2.5 sm:px-4 py-1.5 bg-primary text-white rounded-xl text-xs sm:text-sm font-medium hover:opacity-90 shadow-sm transition-all cursor-pointer">
                   {t.register}
                 </button>
               </Link>
             </div>
           </div>
+
+          {/* Səviyyə 2 (Row 2): Mobil / Planşet Alt Zolağı (lg:hidden) */}
+          <nav className="lg:hidden flex items-center justify-between sm:justify-start gap-1.5 sm:gap-2.5 py-2 border-t border-slate-100/90 overflow-x-auto scrollbar-none">
+            <Link
+              href={lang === DEFAULT_LOCALE ? "/about" : `/${lang}/about`}
+              className="inline-flex items-center justify-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-blue-700 bg-blue-50/90 hover:bg-blue-100 border border-blue-200/80 transition-all shrink-0"
+              title="TESTAI.AZ Haqqında və Pedaqoji Missiyamız"
+            >
+              <BookOpen className="w-3 h-3 text-blue-600 shrink-0" />
+              <span>{t.aboutLink}</span>
+            </Link>
+            <Link
+              href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
+              className="inline-flex items-center justify-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-indigo-700 bg-indigo-50/90 hover:bg-indigo-100 border border-indigo-200/80 transition-all shrink-0"
+              title="SİTG Standartı və Pedaqoji Bloq"
+            >
+              <Sparkles className="w-3 h-3 text-indigo-600 shrink-0" />
+              <span>{t.blogLink}</span>
+            </Link>
+            <Link
+              href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`}
+              className="inline-flex items-center justify-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold text-emerald-700 bg-emerald-50/90 hover:bg-emerald-100 border border-emerald-200/80 transition-all shrink-0"
+              title="Qeydiyyatsız Açıq Dil Sınaqları"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+              <span>{t.openTestsLink}</span>
+            </Link>
+          </nav>
         </div>
       </header>
 

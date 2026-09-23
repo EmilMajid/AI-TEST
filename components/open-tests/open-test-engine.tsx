@@ -14,6 +14,7 @@ import {
   ChevronRight,
 } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
+import { DEFAULT_LOCALE } from "@/lib/config"
 import {
   OPEN_LANGUAGE_TESTS,
   ForeignLang,
@@ -73,7 +74,7 @@ interface OpenTestEngineProps {
   initialLang?: Lang
 }
 
-export function OpenTestEngine({ initialLang = "az" }: OpenTestEngineProps) {
+export function OpenTestEngine({ initialLang = DEFAULT_LOCALE }: OpenTestEngineProps) {
   const [uiLang, setUiLang] = useState<Lang>(initialLang)
   const availableGrades = getAvailableGrades()
   const [selectedGrade, setSelectedGrade] = useState<number>(5)
@@ -292,7 +293,7 @@ export function OpenTestEngine({ initialLang = "az" }: OpenTestEngineProps) {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
           <Link
-            href="/"
+            href={uiLang === DEFAULT_LOCALE ? "/" : `/${uiLang}`}
             className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -305,13 +306,13 @@ export function OpenTestEngine({ initialLang = "az" }: OpenTestEngineProps) {
               {ui.topBadge}
             </span>
             <Link
-              href={uiLang === "az" ? "/blog" : `/${uiLang}/blog`}
+              href={uiLang === DEFAULT_LOCALE ? "/blog" : `/${uiLang}/blog`}
               className="text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors hidden md:inline-block"
             >
               {ui.blogLink}
             </Link>
             <Link
-              href={uiLang === "az" ? "/about" : `/${uiLang}/about`}
+              href={uiLang === DEFAULT_LOCALE ? "/about" : `/${uiLang}/about`}
               className="text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors hidden md:inline-block"
             >
               {ui.aboutLink}

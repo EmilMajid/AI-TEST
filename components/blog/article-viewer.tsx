@@ -5,17 +5,18 @@ import Link from "next/link"
 import { ArrowLeft, Clock, Calendar, Share2, BookOpen, CheckCircle2, Quote, Sparkles, Check } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { BlogPost } from "@/lib/blog-data"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface ArticleViewerProps {
   post: BlogPost
   initialLang?: Lang
 }
 
-export function ArticleViewer({ post, initialLang = "az" }: ArticleViewerProps) {
+export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleViewerProps) {
   const [lang, setLang] = useState<Lang>(initialLang)
   const [copied, setCopied] = useState(false)
 
-  const tr = post.translations[lang] || post.translations.az
+  const tr = post.translations[lang] || post.translations[DEFAULT_LOCALE] || post.translations.az
 
   const uiTexts = {
     az: {
@@ -70,7 +71,7 @@ export function ArticleViewer({ post, initialLang = "az" }: ArticleViewerProps) 
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-4">
           <Link
-            href="/blog"
+            href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
             className="flex items-center gap-2 text-slate-700 hover:text-blue-600 font-semibold text-sm transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />

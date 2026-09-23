@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
 import { BLOG_POSTS } from "@/lib/blog-data"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://testai.az"
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const route of staticRoutes) {
     for (const lang of languages) {
       const url =
-        lang === "az"
+        lang === DEFAULT_LOCALE
           ? `${baseUrl}${route ? `/${route}` : ""}`
           : `${baseUrl}/${lang}${route ? `/${route}` : ""}`
 
@@ -33,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const post of BLOG_POSTS) {
     for (const lang of languages) {
       const url =
-        lang === "az"
+        lang === DEFAULT_LOCALE
           ? `${baseUrl}/blog/${post.slug}`
           : `${baseUrl}/${lang}/blog/${post.slug}`
 

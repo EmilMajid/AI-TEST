@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { getBlogPostBySlug, BLOG_POSTS } from "@/lib/blog-data"
 import { ArticleViewer } from "@/components/blog/article-viewer"
 import { Lang } from "@/components/language-dropdown"
+import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface PageProps {
   params: { slug: string }
@@ -21,8 +22,8 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
     return { title: "Məqalə tapılmadı - TESTAI.AZ" }
   }
 
-  const requestedLang = (searchParams?.lang as Lang) || "az"
-  const tr = post.translations[requestedLang] || post.translations.az
+  const requestedLang = (searchParams?.lang as Lang) || DEFAULT_LOCALE
+  const tr = post.translations[requestedLang] || post.translations[DEFAULT_LOCALE] || post.translations.az
 
   return {
     title: `${tr.title} | TESTAI.AZ Pedaqoji Bloq`,
@@ -60,9 +61,9 @@ export default function BlogPostPage({ params, searchParams }: PageProps) {
 
   const initialLang = (["az", "en", "tr", "ru"].includes(searchParams?.lang || "")
     ? searchParams.lang
-    : "az") as Lang
+    : DEFAULT_LOCALE) as Lang
 
-  const tr = post.translations[initialLang] || post.translations.az
+  const tr = post.translations[initialLang] || post.translations[DEFAULT_LOCALE] || post.translations.az
 
   const jsonLd = {
     "@context": "https://schema.org",
