@@ -231,6 +231,7 @@ export async function GET(request: NextRequest) {
       success: true,
       users: filteredUsers,
       total: filteredUsers.length,
+      purgedIds: Array.from(deletedUserIds),
     })
   } catch (error: any) {
     return NextResponse.json(

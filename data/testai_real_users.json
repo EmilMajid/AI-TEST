@@ -104,41 +104,5 @@
     "isBlocked": false,
     "status": "active",
     "source": "real"
-  },
-  {
-    "id": "student-1788592078525",
-    "firstName": "Murad",
-    "lastName": "Əliyev",
-    "fatherName": "Cavid",
-    "school": "161 saylı məktəb",
-    "class": "6",
-    "email": "murad.eliyev.161@testai.az",
-    "password": "Test@2026",
-    "accountType": "student",
-    "role": "student",
-    "parentId": "parent-emil",
-    "parentEmail": "emil.mecidov@example.com",
-    "uniqueId": "@murad.eliyev.161",
-    "region": "Bakı",
-    "source": "real",
-    "status": "active",
-    "isBlocked": false
-  },
-  {
-    "id": 1789908948740,
-    "email": "google.telebe@gmail.com",
-    "firstName": "Sənan",
-    "lastName": "Əliyev",
-    "googleId": "google-sim-948722",
-    "avatarUrl": "https://lh3.googleusercontent.com/a/default-user=s96-c",
-    "accountType": "student",
-    "role": "student",
-    "class": "",
-    "isProfileDone": false,
-    "profileWarningsCount": 0,
-    "source": "real",
-    "status": "active",
-    "createdAt": "2026-09-20T12:55:48.740Z",
-    "isBlocked": false
   }
 ]
