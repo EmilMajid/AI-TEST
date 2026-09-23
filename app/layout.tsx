@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
+import { DEFAULT_LOCALE } from "@/lib/config"
 import "./globals.css"
 
 export const viewport: Viewport = {
@@ -10,31 +11,40 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "TESTAI.AZ - AI Test Platforması | Azərbaycan Dərslikləri Əsasında",
-  description: "Azərbaycan dərslikləri əsasında hazırlanmış süni intellekt dəstəkli test və bilik analiz platforması. Şagirdlər və valideynlər üçün fərdi sınaqlar.",
+  title: "TESTAI.AZ - AI Educational & Diagnostic Testing Platform",
+  description:
+    "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics for students, parents, and educators.",
   keywords: [
     "testai",
     "testai.az",
-    "ai test",
-    "azərbaycan dərslikləri",
-    "onlayn sınaq imtahanı",
-    "süni intellekt təhsil",
-    "valideyn nəzarəti",
-    "məktəb testləri",
+    "ai educational testing",
+    "diagnostic assessment",
+    "curriculum-aligned tests",
+    "educational AI platform",
+    "parent dashboard",
+    "formative assessment",
   ],
   authors: [{ name: "TESTAI.AZ", url: "https://testai.az" }],
   creator: "TESTAI.AZ",
   metadataBase: new URL("https://testai.az"),
   openGraph: {
-    title: "TESTAI.AZ - AI ilə Öyrən, Test Et, İnkişaf Et",
-    description: "Azərbaycan dərslikləri əsasında hazırlanmış AI test platforması. Mövzuya uyğun testlər və nəticələrin dərin təhlili.",
+    title: "TESTAI.AZ - AI Educational & Diagnostic Testing Platform",
+    description:
+      "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics for students, parents, and educators.",
     url: "https://testai.az",
     siteName: "TESTAI.AZ",
-    locale: "az_AZ",
+    locale: "en_US",
     type: "website",
   },
   alternates: {
     canonical: "https://testai.az",
+    languages: {
+      az: "https://testai.az/az",
+      en: "https://testai.az",
+      tr: "https://testai.az/tr",
+      ru: "https://testai.az/ru",
+      "x-default": "https://testai.az",
+    },
   },
 }
 
@@ -49,7 +59,7 @@ export default function RootLayout({
   const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-1166444768651699"
 
   return (
-    <html lang="az">
+    <html lang={DEFAULT_LOCALE}>
       <head>
         <meta name="google-adsense-account" content="ca-pub-1166444768651699" />
         {/* Schema.org Structured Data */}

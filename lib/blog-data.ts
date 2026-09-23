@@ -499,6 +499,483 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     },
   },
+  {
+    slug: "blooms-revised-taxonomy-ai-formative-assessment",
+    "publishDate": "2026-03-18",
+    "author": {
+      "name": "TESTAI.AZ Pedagogical Research Institute",
+      "role": "Cognitive Science & Educational Assessment Group"
+    },
+    "tags": [
+      "Bloom's Taxonomy",
+      "Cognitive Science",
+      "Formative Assessment",
+      "SİTG Methodology",
+      "Higher-Order Thinking"
+    ],
+    "translations": {
+      "en": {
+        "title": "Bloom's Revised Taxonomy in AI-Driven Formative Assessment: Bridging Theory and Classroom Practice",
+        "subtitle": "From rote memorization to higher-order cognitive verification: Measuring genuine competency through modern item-response modeling.",
+        "summary": "Traditional school assessments frequently test low-level recall (remembering facts and definitions) rather than genuine analytical competence. This paper explores how modern AI test generation implements Anderson & Krathwohl's revised Bloom taxonomy to evaluate application, analysis, and evaluative reasoning in secondary education.",
+        "category": "Educational Assessment & Research",
+        "readTime": "8 min read",
+        "keyTakeaways": [
+          "Low-level recall items fail to predict real-world problem-solving abilities or long-term retention.",
+          "Applying Bloom's Level 3 (Apply) and Level 4 (Analyze) ensures learners synthesize knowledge rather than echo verbatim textbook definitions.",
+          "Automated distractor engineering maps erroneous choices directly to documented cognitive misconceptions.",
+          "Formative feedback loops provide immediate qualitative diagnostics rather than uninformative numeric letter grades."
+        ],
+        "sections": [
+          {
+            "heading": "1. The Pedagogical Crisis of Rote Recall",
+            "content": [
+              "For decades, standardized classroom examinations have disproportionately measured lower-order cognitive skills: recognizing dates, reciting definitions, and regurgitating memorized formulas. When students are rewarded purely for rote memory, their ability to transfer foundational concepts to novel real-world situations remains severely underdeveloped.",
+              "International benchmarks such as PISA (Programme for International Student Assessment) have repeatedly demonstrated that academic achievement correlates with cognitive flexibility rather than raw factual recall. Moving towards higher cognitive tiers requires structural transformation in how test items are authored, structured, and scored."
+            ]
+          },
+          {
+            "heading": "2. The Revised Hierarchy: Anderson & Krathwohl's Framework",
+            "content": [
+              "In 2001, Lorin Anderson and David Krathwohl updated Benjamin Bloom's original 1956 taxonomy, shifting noun-based categories into dynamic cognitive process dimensions: Remembering, Understanding, Applying, Analyzing, Evaluating, and Creating.",
+              "Within the TESTAI.AZ algorithmic engine, item generation is bounded to prevent trivial Level 1 items. Instead, questions are systematically anchored at Level 3 (Applying rules, equations, and morphological conventions to unencountered scenarios) and Level 4 (Deconstructing texts, tables, and relational problems to determine structural relationships)."
+            ]
+          },
+          {
+            "heading": "3. Distractor Engineering: Transforming Mistakes into Diagnostic Signals",
+            "content": [
+              "In conventional multiple-choice tests, distractors (incorrect options) are often arbitrary, absurd, or transparently invalid, turning the test into a process of superficial elimination rather than thoughtful discrimination.",
+              "Under the SİTG standard, each incorrect distractor must represent a statistically documented cognitive slip—such as confusing an inverse mathematical relationship, misapplying a grammatical tense marker, or conflating proximate historical causes with underlying structural factors. When a learner chooses an incorrect option, the platform immediately pinpoints the exact conceptual gap."
+            ]
+          },
+          {
+            "heading": "4. Empirical Classroom Impacts and Teacher Workflow",
+            "content": [
+              "When formative diagnostics are integrated into daily practice, educators receive granulated cognitive telemetry before summative grading takes place. Instead of spending hours manually grading worksheets, teachers view automated cohort dashboards highlighting which specific concepts require re-teaching.",
+              "This shifts classroom dynamics from punitive grading to supportive mastery-oriented instruction, creating an equitable environment where every pupil progresses along an individualized learning trajectory."
+            ]
+          }
+        ]
+      },
+      "az": {
+        "title": "Yenilənmiş Bloom Taksonomiyası və AI Diaqnostik Qiymətləndirmə: Nəzəriyyədən Sinif Otağına",
+        "subtitle": "Biliyi deyil, bacarığı ölçmək: Əzbərçilikdən ali təfəkkür səviyyələrinə keçidin elmi metodologiyası.",
+        "summary": "Klassik məktəb imtahanları illərdir yalnız mexaniki yaddaşı yoxlayırdı. TESTAI.AZ-ın elmi bazası Anderson və Kratvolun yenilənmiş Bloom taksonomiyasını tətbiq edərək şagirdlərin tətbiq və təhlil qabiliyyətini ölçür.",
+        "category": "Pedaqoji Metodologiya",
+        "readTime": "8 dəqiqə",
+        "keyTakeaways": [
+          "Yalnız xatırlamağa əsaslanan suallar real həyat bacarıqlarını və məntiqi düşünməni inkişaf etdirmir.",
+          "Bloom-un 3-cü (Tətbiq) və 4-cü (Təhlil) səviyyələri şagirdi passiv yaddaşdan aktiv düşüncəyə keçirir.",
+          "Distraktorlar təsadüfi uydurulmur; şagirdlərin tipik düşüncə xətalarına əsaslanır.",
+          "Formativ diaqnostika rəqəmsal qiymət vermək deyil, zəif mövzunu anında aşkar edib aradan qaldırmaqdır."
+        ],
+        "sections": [
+          {
+            "heading": "1. Ənənəvi Qiymətləndirmənin Əsas Qüsuru",
+            "content": [
+              "Onilliklər boyu məktəblərdə keçirilən sınaqlar şagirdin düşünmə qabiliyyətini deyil, yalnız dərslikdəki mətni kəlməbəkəlmə əzbərləməsini yoxlayırdı. İmtahandan dərhal sonra unudulan bu cür faktlar şagirdin gələcək akademik inkişafına heç bir fayda vermir.",
+              "PISA kimi qlobal qiymətləndirmələr sübut edir ki, müasir dövrdə uğur qazanan şəxslər tərifi əzbər bilənlər deyil, biliyi naməlum şəraitdə tətbiq edənlərdir."
+            ]
+          },
+          {
+            "heading": "2. Bloom Taksonomiyasının Tətbiqi",
+            "content": [
+              "TESTAI.AZ platformasında test generasiyası qaydanı əzbərdən soruşmur. Qaydanın cümlədə və ya tənlikdə necə işlədiyini, mətnin daxili məntiqini və səbəb-nəticə əlaqələrini təhlil etdirir."
+            ]
+          }
+        ]
+      },
+      "tr": {
+        "title": "Yenilenmiş Bloom Taksonomisi ve Yapay Zeka Destekli Biçimlendirici Değerlendirme",
+        "subtitle": "Ezbercilikten üst düzey bilişsel becerilere: Pedagojik teori ile sınıf uygulamaları arasındaki köprü.",
+        "summary": "Geleneksel sınavlar çoğunlukla ezberlenmiş tanımları ölçer. TESTAI.AZ'ın yapay zeka standartları, Anderson ve Krathwohl'un yenilenmiş Bloom taksonomisini uygulayarak analiz ve uygulama seviyesinde ölçüm yapar.",
+        "category": "Pedagojik Araştırma",
+        "readTime": "8 dakika",
+        "keyTakeaways": [
+          "Ezber odaklı testler uzun vadeli başarıyı öngörmede yetersizdir.",
+          "Bloom Taksonomisinin Uygulama ve Analiz düzeyleri öğrenciyi aktif düşünmeye sevk eder.",
+          "Çeldiriciler rastgele oluşturulmaz, öğrencilerin yaygın kavram yanılgılarını hedefler.",
+          "Biçimlendirici değerlendirme not vermek değil, öğrenme boşluklarını anında gidermektir."
+        ],
+        "sections": [
+          {
+            "heading": "1. Ezberci Değerlendirmenin Sınırları",
+            "content": [
+              "Öğrencilerin ezberledikleri tanımları birkaç hafta içinde unuttukları pedagojik araştırmalarla kanıtlanmıştır. TESTAI.AZ, formül ezberletmek yerine öğrencinin veriyi analiz etmesini sağlar."
+            ]
+          }
+        ]
+      },
+      "ru": {
+        "title": "Обновленная таксономия Блума и формирующее оценивание с помощью ИИ",
+        "subtitle": "От механического заучивания к навыкам высшего порядка: мост между педагогической наукой и практикой.",
+        "summary": "Традиционные тесты часто измеряют лишь память. Платформа TESTAI.AZ реализует обновленную таксономию Блума, фокусируясь на уровнях применения и анализа знаний.",
+        "category": "Педагогические исследования",
+        "readTime": "8 минут",
+        "keyTakeaways": [
+          "Тесты на простое воспроизведение фактов не формируют критического мышления.",
+          "Уровни применения и анализа побуждают ученика сопоставлять данные и делать выводы.",
+          "Дистракторы отражают реальные типовые когнитивные ошибки учащихся.",
+          "Формирующее оценивание нацелено на устранение пробелов, а не на выставление ярлыков."
+        ],
+        "sections": [
+          {
+            "heading": "1. Проблема механического заучивания",
+            "content": [
+              "Современная школа должна готовить ученика к применению знаний в реальных ситуациях. Тестологический стандарт платформы исключает вопросы на простое дословное воспроизведение учебника."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "formative-vs-summative-assessment-cognitive-gap-analysis",
+    "publishDate": "2026-03-19",
+    "author": {
+      "name": "TESTAI.AZ Pedagogical Research Institute",
+      "role": "Diagnostic Analytics & Parental Guidance Unit"
+    },
+    "tags": [
+      "Formative Assessment",
+      "Cognitive Gap Analysis",
+      "Parental Support",
+      "Diagnostic Testing",
+      "K-12 Education"
+    ],
+    "translations": {
+      "en": {
+        "title": "Formative vs. Summative Assessment: How Cognitive Gap Analysis Empowers Teachers and Parents",
+        "subtitle": "Demystifying diagnostic evaluation: Moving away from high-stakes testing anxiety toward transparent learning trajectories.",
+        "summary": "Why do standard report cards fail to tell parents where their children actually struggle? This article provides an extensive breakdown of cognitive gap analysis in formative assessment, demonstrating how micro-diagnostics reduce home stress and provide educators with actionable pedagogical roadmaps.",
+        "category": "Educational Assessment & Research",
+        "readTime": "7 min read",
+        "keyTakeaways": [
+          "Summative testing is an autopsy of learning; formative assessment is a real-time health checkup.",
+          "Diagnostic reporting replaces vague numeric marks with granular sub-topic mastery metrics.",
+          "Parents can support homework constructively without pedagogical training or emotional friction.",
+          "Targeted micro-assessments dramatically shorten the feedback loop between misunderstanding and remediation."
+        ],
+        "sections": [
+          {
+            "heading": "1. The Inherent Limits of Summative Report Cards",
+            "content": [
+              "When a student brings home a '70%' or a 'C' on an end-of-term mathematics test, neither the student nor the parent knows which specific cognitive mechanism failed. Did the pupil understand linear equations but make computational errors? Did they fail to interpret word problems? Or did they run out of time?",
+              "Summative assessments occur too late in the learning cycle to enable meaningful remediation. By the time grades are published, the curriculum has already moved forward to subsequent chapters, leaving fundamental learning gaps unaddressed."
+            ]
+          },
+          {
+            "heading": "2. The Philosophy of Real-Time Micro-Diagnostics",
+            "content": [
+              "Formative assessment operates on continuous, non-punitive feedback. By breaking down unit curricula into granular cognitive indicators, an automated diagnostic platform evaluates student performance at the concept level.",
+              "Rather than declaring that a student is 'weak in science', the system identifies that the learner masters energy conservation principles but struggles with metric unit conversion. This clarity transforms remediation from overwhelming frustration into clear, manageable steps."
+            ]
+          },
+          {
+            "heading": "3. Transforming the Home Learning Dynamic",
+            "content": [
+              "Homework battles are one of the most common sources of stress between parents and school-age children. Parents often resort to lecturing or guessing where difficulties lie, creating emotional friction.",
+              "The TESTAI.AZ Parent Dashboard provides transparent analytics that clarify exactly what requires attention. Parents no longer need to be subject-matter experts; the platform provides structured, evidence-based suggestions that guide constructive family support."
+            ]
+          }
+        ]
+      },
+      "az": {
+        "title": "Formativ və Summativ Qiymətləndirmə: Koqnitiv Boşluq Analizi Valideyn və Müəllimlərə Necə Kömək Edir?",
+        "subtitle": "Diaqnostik qiymətləndirmənin sirri: İmtahan stresindən şəffaf inkişaf xəritəsinə doğru.",
+        "summary": "Rüblük qiymətlər niyə uşağın əsl çətinliyini göstərmir? Məqalədə formativ qiymətləndirmənin və koqnitiv boşluq analizinin valideyn və müəllimlər üçün əhəmiyyəti elmi cəhətdən izah olunur.",
+        "category": "Pedaqoji Metodologiya",
+        "readTime": "7 dəqiqə",
+        "keyTakeaways": [
+          "Summativ qiymət keçmişin nəticəsidir; formativ diaqnostika isə gələcəyin inkişaf bələdçisidir.",
+          "Boşluq analizi şagirdin hansı mövzuda və niyə səhv etdiyini dəqiq göstərir.",
+          "Valideynlər uşaqla dərs üstündə əsəbiləşmədən fərdi zəif nöqtələri dərhal görürlər.",
+          "Dərhal verilən pedaqoji izahat səhvlərin vərdişə çevrilməsinin qarşısını alır."
+        ],
+        "sections": [
+          {
+            "heading": "1. Rüblük Qiymətlərin Məhdudiyyətləri",
+            "content": [
+              "Uşaq '3' və ya '4' alanda valideyn bilmir ki, problem nəzəriyyədədir, hesablama səhvindədir, yoxsa diqqətsizlikdə. TESTAI.AZ Valideyn Paneli bu qeyri-müəyyənliyi aradan qaldırır."
+            ]
+          }
+        ]
+      },
+      "tr": {
+        "title": "Biçimlendirici ve Düzey Belirleyici Değerlendirme: Bilişsel Boşluk Analizi",
+        "subtitle": "Sınav stresinden öğrenme haritasına: Ebeveyn ve öğretmenler için tanısal analiz rehberi.",
+        "summary": "Dönem sonu notları öğrencinin tam olarak nerede zorlandığını açıklayamaz. Biçimlendirici değerlendirme ile bilişsel eksikliklerin anında tespiti öğrenmeyi nasıl dönüştürür?",
+        "category": "Pedagojik Araştırma",
+        "readTime": "7 dakika",
+        "keyTakeaways": [
+          "Düzey belirleyici sınavlar geç kalmış değerlendirmelerdir; tanısal analiz ise anlık teşhistir.",
+          "Ebeveyn paneli öğrencinin konu bazlı kazanımlarını şeffafça sunar.",
+          "Evde ders çalışma gerginliği yerini somut adımlara bırakır."
+        ],
+        "sections": [
+          {
+            "heading": "1. Not Odaklılığın Ötesine Geçmek",
+            "content": [
+              "Amaç öğrenciyi etiketlemek değil, eksik olduğu kavramı tespit edip hızla telafi etmektir."
+            ]
+          }
+        ]
+      },
+      "ru": {
+        "title": "Формирующее против констатирующего оценивания: анализ когнитивных пробелов",
+        "subtitle": "От стресса оценок к прозрачной траектории развития: как микродиагностика помогает родителям и учителям.",
+        "summary": "Почему четвертные оценки не дают ответа на вопрос о реальных трудностях ребенка? Разбор принципов когнитивного анализа и формирующего оценивания.",
+        "category": "Педагогические исследования",
+        "readTime": "7 минут",
+        "keyTakeaways": [
+          "Итоговая оценка констатирует факт, формирующая диагностика направляет развитие.",
+          "Точечная аналитика по темам заменяет абстрактные баллы.",
+          "Родители получают понятные рекомендации без необходимости разбираться во всех школьных предметах."
+        ],
+        "sections": [
+          {
+            "heading": "1. Почему итоговых баллов недостаточно",
+            "content": [
+              "Оценка в журнале не показывает, в каком именно логическом звене ученик допустил ошибку. Аналитика TESTAI.AZ выявляет конкретный когнитивный пробел."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "cognitive-load-theory-in-secondary-education-test-design",
+    "publishDate": "2026-03-20",
+    "author": {
+      "name": "TESTAI.AZ Pedagogical Research Institute",
+      "role": "Cognitive Ergonomics & Test Engineering Group"
+    },
+    "tags": [
+      "Cognitive Load Theory",
+      "Educational Psychology",
+      "Test Design",
+      "Ergonomics",
+      "Curriculum"
+    ],
+    "translations": {
+      "en": {
+        "title": "Mitigating Extraneous Cognitive Load in Secondary Education Through Structured Test Design",
+        "subtitle": "Applying John Sweller's cognitive architecture to assessment: Eliminating linguistic traps and focusing working memory on genuine problem solving.",
+        "summary": "When test questions contain convoluted wording or irrelevant visual noise, they measure working memory capacity and reading speed rather than subject mastery. This study explains how the SİTG standard applies Cognitive Load Theory to item authoring in secondary school assessment.",
+        "category": "Cognitive Science & Psychology",
+        "readTime": "9 min read",
+        "keyTakeaways": [
+          "Working memory is strictly limited in capacity; poorly phrased questions cause premature cognitive overload.",
+          "Extraneous load must be systematically minimized so working memory can focus on intrinsic content complexity.",
+          "Eliminating 'hidden linguistic tricks' ensures fair assessment for second-language and diverse learners.",
+          "Response latency tracking reveals whether learners solved questions through conceptual reasoning or haphazard guessing."
+        ],
+        "sections": [
+          {
+            "heading": "1. The Tripartite Architecture of Cognitive Load",
+            "content": [
+              "Formulated by educational psychologist John Sweller in the late 1980s, Cognitive Load Theory identifies three forms of mental demand placed on human working memory: Intrinsic load (the inherent difficulty of the material), Germane load (the mental effort dedicated to constructing long-term cognitive schemas), and Extraneous load (unnecessary mental friction introduced by confusing instructional or test design).",
+              "In school examinations, the goal of ethical assessment design is straightforward: optimize intrinsic load to match the student's developmental stage, maximize germane schema building, and ruthlessly eliminate extraneous load."
+            ]
+          },
+          {
+            "heading": "2. The Danger of Linguistic Traps in Assessment",
+            "content": [
+              "Many traditional test writers mistakenly confuse difficulty with obscurity. Questions loaded with triple negatives ('Which of the following is NOT untrue?'), ambiguous colloquialisms, or verbose introductory narratives do not measure scientific or mathematical capability. Instead, they unfairly penalize students who process language slightly slower or who speak a different primary home dialect.",
+              "Under the SİTG engineering framework, questions must adhere to strict syntactical clarity. The problem statement must present unambiguous parameters, allowing the student's cognitive energy to be concentrated entirely on analytical problem-solving."
+            ]
+          },
+          {
+            "heading": "3. Calibrating Item Density and Response Times",
+            "content": [
+              "Cognitive exhaustion degrades diagnostic validity as tests progress. By monitoring average response latency and response distribution curves, TESTAI.AZ's diagnostic engine ensures that assessments are paced to prevent fatigue-induced errors.",
+              "This provides educators with an authentic measure of whether an incorrect answer stems from genuine lack of understanding or end-of-test cognitive fatigue."
+            ]
+          }
+        ]
+      },
+      "az": {
+        "title": "Məktəb Testlərində Koqnitiv Yük Nəzəriyyəsi: Əlavə Yükün Azaldılması və Aydın Qiymətləndirmə",
+        "subtitle": "Con Svellerin koqnitiv arxitekturasının tətbiqi: Dil tələlərini kənarlaşdırıb diqqəti əsas biliyə yönəltmək.",
+        "summary": "Qəliz və qaranlıq dildə tərtib olunmuş suallar şagirdin biliyini deyil, yalnız oxu sürətini yoxlayır. SİTG standartı Koqnitiv Yük Nəzəriyyəsini tətbiq edərək sualları təmiz və aydın formata gətirir.",
+        "category": "Koqnitiv Psixologiya",
+        "readTime": "9 dəqiqə",
+        "keyTakeaways": [
+          "İşçi yaddaş məhduddur; qarışıq sual mətni şagirdi yersiz zehni yorğunluğa salır.",
+          "Artıq koqnitiv yük aradan qaldırılmalı, diqqət əsas mövzuya yönəldilməlidir.",
+          "Qarmaqarışıq və dolaşıq cümlələr ədalətli qiymətləndirməyə mane olur.",
+          "Sualın cavablandırılma müddəti şagirdin düşünüb, yoxsa təsadüfən seçdiyini aşkar edir."
+        ],
+        "sections": [
+          {
+            "heading": "1. Koqnitiv Yük Nəzəriyyəsi Nədir?",
+            "content": [
+              "Con Sveller tərəfindən irəli sürülən bu nəzəriyyə göstərir ki, insan beyninin qısamüddətli yaddaşı eyni anda çoxlu informasiyanı emal edə bilməz. Əgər test sualı mürəkkəb söz oyunları ilə doludursa, uşaq biliyini nümayiş etdirə bilmir."
+            ]
+          }
+        ]
+      },
+      "tr": {
+        "title": "Ortaöğretimde Bilişsel Yük Teorisi ve Yapılandırılmış Sınav Tasarımı",
+        "subtitle": "John Sweller'ın bilişsel mimarisini değerlendirmeye uygulamak: Dilsel tuzakları elemek ve saf bilgiye odaklanmak.",
+        "summary": "Karmaşık ve dolambaçlı soru kökleri konuyu değil, öğrencinin okuma hızını ölçer. Bilişsel Yük Teorisinin testolojideki kritik rolü.",
+        "category": "Bilişsel Psikoloji",
+        "readTime": "9 dakika",
+        "keyTakeaways": [
+          "Çalışma belleği sınırlıdır; gereksiz bilişsel yük elenmelidir.",
+          "Soru dili açık, net ve pedagojik hedefe doğrudan odaklı olmalıdır."
+        ],
+        "sections": [
+          {
+            "heading": "1. Bilişsel Aşırı Yüklenmenin Önlenmesi",
+            "content": [
+              "TESTAI.AZ soru mühendisliği, gereksiz kelime kalabalığını eleyerek öğrencinin doğrudan kavramsal düşünmesine imkan tanır."
+            ]
+          }
+        ]
+      },
+      "ru": {
+        "title": "Теория когнитивной нагрузки в среднем образовании и структурированное тестирование",
+        "subtitle": "Применение когнитивной архитектуры Джона Свеллера: устранение языковых ловушек и фокус на сути предмета.",
+        "summary": "Сложные и запутанные формулировки вопросов проверяют не знания предмета, а скорость чтения. Принципы снижения посторонней когнитивной нагрузки.",
+        "category": "Когнитивная психология",
+        "readTime": "9 минут",
+        "keyTakeaways": [
+          "Оперативная память человека ограничена по объему.",
+          "Посторонняя когнитивная нагрузка должна быть сведена к минимуму.",
+          "Прозрачные формулировки обеспечивают объективность проверки."
+        ],
+        "sections": [
+          {
+            "heading": "1. Архитектура когнитивной нагрузки",
+            "content": [
+              "Стандарт SİTG требует лаконичности и ясности формулировок, чтобы фокус внимания ученика был направлен на решение предметной задачи."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "standardized-foreign-language-assessment-cefr-automated-diagnostics",
+    "publishDate": "2026-03-21",
+    "author": {
+      "name": "TESTAI.AZ Foreign Language Pedagogical Taskforce",
+      "role": "Applied Linguistics & CEFR Alignment Group"
+    },
+    "tags": [
+      "Foreign Languages",
+      "CEFR Framework",
+      "English",
+      "German",
+      "French",
+      "Russian",
+      "Diagnostic Assessment"
+    ],
+    "translations": {
+      "en": {
+        "title": "Standardized Foreign Language Assessment in K-12: Aligning CEFR Framework with Automated Diagnostics",
+        "subtitle": "Multi-language competency evaluation: How textbook-grounded diagnostic modules verify language acquisition from Grade 1 to Grade 11.",
+        "summary": "Language acquisition requires continuous verification of grammatical, lexical, and discourse competencies. This paper examines the pedagogical structure of TESTAI.AZ's open language tests across English, German, French, and Russian, aligning official national curricula with the Common European Framework of Reference for Languages (CEFR).",
+        "category": "Applied Linguistics & Pedagogy",
+        "readTime": "8 min read",
+        "keyTakeaways": [
+          "Aligning school language textbooks with CEFR levels (A1 to B2) establishes internationally recognized benchmarks.",
+          "Morphological and syntactic competence must be evaluated within authentic linguistic context rather than isolated vocabulary drills.",
+          "Automated diagnostics across four foreign languages (English, German, French, Russian) broaden equal educational access across all schools.",
+          "Registration-free open testing removes barriers to initial diagnostic exploration for students and teachers."
+        ],
+        "sections": [
+          {
+            "heading": "1. The Challenge of Secondary School Language Acquisition",
+            "content": [
+              "Mastering a foreign language in a K-12 setting requires balanced progression across vocabulary acquisition, syntactic accuracy, and situational comprehension. In many secondary schools, foreign language testing is often constrained to memorizing bilingual vocabulary lists, ignoring communicative context.",
+              "To prepare learners for academic and international environments, assessment must be benchmarked against recognized global descriptors, specifically the Common European Framework of Reference for Languages (CEFR), spanning from Basic User (A1-A2) to Independent User (B1-B2)."
+            ]
+          },
+          {
+            "heading": "2. The Multi-Language Diagnostic Architecture",
+            "content": [
+              "TESTAI.AZ incorporates four major foreign languages taught within the official school system: English, German, French, and Russian, spanning Grades 1 through 11. Each module corresponds precisely to Unit 1 of official school textbooks, creating a seamless bridge between classroom instruction and independent diagnostic verification.",
+              "By evaluating morphological patterns (e.g., verb conjugations, article declensions, and modal auxiliaries) within situational sentence stems, the platform evaluates genuine linguistic comprehension rather than rote pattern matching."
+            ]
+          },
+          {
+            "heading": "3. Removing Socio-Economic Barriers Through Open Testing",
+            "content": [
+              "A core pillar of TESTAI.AZ's pedagogical mission is providing open, friction-free diagnostic access. By offering Unit 1 diagnostic assessments without mandatory registration, students from any region or socio-economic background can immediately evaluate their foreign language proficiency.",
+              "Instant diagnostic reports explain not only the correct response but the morphological rule governing it, converting an assessment event into an engaging, self-paced learning milestone."
+            ]
+          }
+        ]
+      },
+      "az": {
+        "title": "Məktəblərdə Xarici Dil Qiymətləndirilməsi: CEFR Çərçivəsi və Avtomatlaşdırılmış Dil Diaqnostikası",
+        "subtitle": "4 xarici dil üzrə universal standart: İngilis, alman, fransız və rus dillərində 1-11-ci sinif dərslik testləri.",
+        "summary": "Xarici dillərin öyrənilməsində beynəlxalq CEFR standartının (A1-B2) tətbiqi və TESTAI.AZ-ın açıq sınaqlarının metodoloji prinsipləri haqqında elmi bələdçi.",
+        "category": "Tətbiqi Dilçilik və Metodologiya",
+        "readTime": "8 dəqiqə",
+        "keyTakeaways": [
+          "Milli dərsliklərin beynəlxalq CEFR standartları ilə uzlaşdırılması tədrisin keyfiyyətini artırır.",
+          "Sözləri təcrid olunmuş şəkildə deyil, cümlə daxilində və kontekstdə öyrənmək əsasdır.",
+          "4 dil üzrə (İngilis, Alman, Fransız, Rus) açıq sınaqlar hər bir şagirdə bərabər təhsil imkanı verir.",
+          "Qeydiyyatsız açıq diaqnostika uşaqlarda xarici dilə olan ilkin marağı artırır."
+        ],
+        "sections": [
+          {
+            "heading": "1. Məktəblərdə Xarici Dil Problemi",
+            "content": [
+              "Təkcə lüğət əzbərləmək xarici dildə danışmaq və ya mətni anlamaq üçün kifayət etmir. Şagird qrammatik qaydaları canlı kontekstdə tətbiq etməyi bacarmalıdır."
+            ]
+          },
+          {
+            "heading": "2. 4 Xarici Dildə Açıq Sınaqlar",
+            "content": [
+              "TESTAI.AZ platformasında 1-ci sinifdən 11-ci sinfə qədər ingilis, alman, fransız və rus dillərində 1-ci bölmə testləri tam açıq və qeydiyyatsız təqdim edilir."
+            ]
+          }
+        ]
+      },
+      "tr": {
+        "title": "K-12 Yabancı Dil Değerlendirmesi: CEFR Çerçevesi ve Otomatik Dil Teşhisi",
+        "subtitle": "İngilizce, Almanca, Fransızca ve Rusça: Ders kitabı temelli dil yetkinliği değerlendirmesi.",
+        "summary": "Avrupa Ortak Dil Kriterleri (CEFR) ile milli ders kitaplarının uyumu ve açık teşhis sınavlarının dil edinimindeki rolü.",
+        "category": "Uygulamalı Dilbilim",
+        "readTime": "8 dakika",
+        "keyTakeaways": [
+          "Kelimeleri izole ezberlemek yerine bağlam içinde ölçmek esastır.",
+          "4 dilde 1-11. sınıflar için kayıtsız açık sınavlar fırsat eşitliği sunar."
+        ],
+        "sections": [
+          {
+            "heading": "1. İletişimsel Dil Edinimi",
+            "content": [
+              "TESTAI.AZ, öğrencilerin gramer ve kelime bilgisini gerçek cümle bağlamlarında ölçer."
+            ]
+          }
+        ]
+      },
+      "ru": {
+        "title": "Стандартизированная оценка иностранных языков в школе: согласование CEFR и автоматической диагностики",
+        "subtitle": "Английский, немецкий, французский и русский языки: диагностика языковых компетенций с 1 по 11 класс.",
+        "summary": "Интеграция общеевропейских компетенций владения иностранным языком (CEFR) с официальными школьными учебниками.",
+        "category": "Прикладная лингвистика",
+        "readTime": "8 минут",
+        "keyTakeaways": [
+          "Привязка школьной программы к уровням CEFR (A1-B2) обеспечивает мировые стандарты.",
+          "Открытые тесты без регистрации по 4 языкам создают равные стартовые возможности."
+        ],
+        "sections": [
+          {
+            "heading": "1. Компетентностный подход в изучении языков",
+            "content": [
+              "Оценка знаний должна проверять способность использовать язык в практических ситуациях, а не механическое знание отдельных слов."
+            ]
+          }
+        ]
+      }
+    }
+  }
 ]
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

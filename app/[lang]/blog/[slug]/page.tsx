@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import { getBlogPostBySlug, BLOG_POSTS } from "@/lib/blog-data"
 import { ArticleViewer } from "@/components/blog/article-viewer"
 import { Lang } from "@/components/language-dropdown"
@@ -103,8 +102,7 @@ export default function MultilingualBlogPostPage({ params }: PageProps) {
 
   return (
     <>
-      <Script
-        id={`schema-blog-${lang}-${post.slug}`}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
