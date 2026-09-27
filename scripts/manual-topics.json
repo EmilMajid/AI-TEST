@@ -11553,7 +11553,7 @@
   ],
   "informatika-11": [
     {
-      "group": "Mövzular",
+      "chapter": "I BÖLMƏ: İnformasiya sistemləri və Müasir İKT texnologiyaları",
       "topics": [
         {
           "id": "inf11-1",
@@ -11586,7 +11586,12 @@
         {
           "id": "inf11-8",
           "title": "1.8. İnformasiya cəmiyyəti və informasiya təhlükəsizliyi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Alqoritmlər və Python proqramlaşdırma dili",
+      "topics": [
         {
           "id": "inf11-9",
           "title": "2.1. Funksiyalar və Rekursiv alqoritmlər"
@@ -11614,7 +11619,12 @@
         {
           "id": "inf11-15",
           "title": "2.7. Qrafik istifadəçi interfeysi (GUI)"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Relyasiya tipli Verilənlər Bazası və SQL",
+      "topics": [
         {
           "id": "inf11-16",
           "title": "3.1. Relyasiya tipli Verilənlər Bazası (RDBMS)"
@@ -11634,7 +11644,12 @@
         {
           "id": "inf11-20",
           "title": "3.5. Verilənlər Bazasının idarəetmə sistemləri və Təhlükəsizliyi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Kompüter şəbəkələri, İnformasiya təhlükəsizliyi və Kriptoqrafiya",
+      "topics": [
         {
           "id": "inf11-21",
           "title": "4.1. Kompüter şəbəkələrinin arxitekturası və OSI modeli"
@@ -15382,7 +15397,7 @@
   ],
   "fizika-11": [
     {
-      "group": "Mövzular",
+      "chapter": "I BÖLMƏ: Elektromaqnit sahəsi və Elektrodinamika",
       "topics": [
         {
           "id": "f11-1",
@@ -15423,7 +15438,12 @@
         {
           "id": "f11-10",
           "title": "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Müxtəlif mühitlərdə elektrik cərəyanı",
+      "topics": [
         {
           "id": "f11-11",
           "title": "2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsi"
@@ -15455,7 +15475,12 @@
         {
           "id": "f11-18",
           "title": "Maqnit sahəsinin induksiyası və Amper qüvvəsi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Elektromaqnit rəqsləri və dalğaları",
+      "topics": [
         {
           "id": "f11-19",
           "title": "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti"
@@ -15487,7 +15512,12 @@
         {
           "id": "f11-26",
           "title": "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Dalğa və həndəsi optika",
+      "topics": [
         {
           "id": "f11-27",
           "title": "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan"
@@ -15523,7 +15553,12 @@
         {
           "id": "f11-35",
           "title": "İşığın difraksiyası və Difraksiya qəfəsi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kvant fizikası, Atom və Nüvə fizikası",
+      "topics": [
         {
           "id": "f11-36",
           "title": "İşığın dispersionu və polyarlaşması"
@@ -15565,7 +15600,7 @@
   ],
   "kimya-11": [
     {
-      "group": "Mövzular",
+      "chapter": "I BÖLMƏ: Oksigenli üzvi birləşmələr (Spirtlər və Fenollar)",
       "topics": [
         {
           "id": "k11-1",
@@ -15573,40 +15608,45 @@
         },
         {
           "id": "k11-2",
-          "title": "1.1.1. Adlandırılması və izomerliyi"
+          "title": "1.1.1. Doymuş biratomlu spirtlər: Adlandırılması və izomerliyi"
         },
         {
           "id": "k11-3",
-          "title": "1.1.2. Alınması"
+          "title": "1.1.2. Doymuş biratomlu spirtlərin alınması"
         },
         {
           "id": "k11-4",
-          "title": "1.1.3. Quruluşu və fiziki xassələri"
+          "title": "1.1.3. Doymuş biratomlu spirtlərin quruluşu və fiziki xassələri"
         },
         {
           "id": "k11-5",
-          "title": "1.1.4. Kimyəvi xassələri və tətbiqi"
+          "title": "1.1.4. Doymuş biratomlu spirtlərin kimyəvi xassələri və tətbiqi"
         },
         {
           "id": "k11-6",
-          "title": "1.1.5. Praktik dərs. Etanolun məhkəməsi"
+          "title": "1.1.5. Praktik dərs: Etanol və onun xassələri"
         },
         {
           "id": "k11-7",
-          "title": "1.2.1. Etilenqlikol"
+          "title": "1.2.1. Çoxatomlu spirtlər: Etilenqlikol"
         },
         {
           "id": "k11-8",
-          "title": "1.2.2. Qliserin"
+          "title": "1.2.2. Çoxatomlu spirtlər: Qliserin"
         },
         {
           "id": "k11-9",
-          "title": "1.3.1. Fenollar. Alınması, quruluşu və fiziki xassələri"
+          "title": "1.3.1. Fenollar: Alınması, quruluşu və fiziki xassələri"
         },
         {
           "id": "k11-10",
-          "title": "1.3.2. Fenolların kimyəvi xassələri və tətbiqi"
-        },
+          "title": "1.3.2. Fenollar: Kimyəvi xassələri və tətbiqi"
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Aldehidlər və Ketonlar",
+      "topics": [
         {
           "id": "k11-11",
           "title": "Aldehidlərin və ketonların quruluşu, homoloji sırası və izomerliyi"
@@ -15617,107 +15657,127 @@
         },
         {
           "id": "k11-13",
-          "title": "Aldehidlərin fiziki və kimyəvi xassələri (Gümüş-güzgü reaksiyası və oksidləşmə)"
+          "title": "Aldehidlərin fiziki və kimyəvi xassələri, tətbiqi"
         },
         {
           "id": "k11-14",
-          "title": "Formaldehid, asetaldehid və asetonun sənayedə əhəmiyyəti və tətbiqi"
-        },
+          "title": "Aseton. Alınması, xassələri və tətbiqi"
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Karbon turşuları, Mürəkkəb efirlər və Yağlar",
+      "topics": [
         {
           "id": "k11-15",
-          "title": "Aldehid və ketonlar üzrə ümumiləşdirici tapşırıqlar"
+          "title": "Karbon turşularının təsnifatı, birəsaslı doymuş karbon turşularının homoloji sırası və izomerliyi"
         },
         {
           "id": "k11-16",
-          "title": "Doymuş birəsaslı karbon turşuları: Homoloji sırası, izomerliyi və adlandırılması"
+          "title": "Birəsaslı doymuş karbon turşularının adlandırılması və alınması"
         },
         {
           "id": "k11-17",
-          "title": "Doymuş birəsaslı karbon turşularının alınması, fiziki və kimyəvi xassələri"
+          "title": "Birəsaslı doymuş karbon turşularının fiziki və kimyəvi xassələri, tətbiqi"
         },
         {
           "id": "k11-18",
-          "title": "Qarışqa turşusu və sirkə turşusunun xüsusi xassələri və tətbiqi"
+          "title": "Doymamış, aromatik və ikiəsaslı karbon turşuları"
         },
         {
           "id": "k11-19",
-          "title": "Doymamış və aromatik karbon turşuları (Akril, Olein, Benzoy turşusu)"
+          "title": "Mürəkkəb efirlər. Quruluşu, adlandırılması, izomerliyi və alınması"
         },
         {
           "id": "k11-20",
-          "title": "İkiəsaslı karbon turşuları (Oksalat, Adipin, Tereftal turşusu)"
+          "title": "Mürəkkəb efirlərin xassələri və tətbiqi"
         },
         {
           "id": "k11-21",
-          "title": "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi"
+          "title": "Yağlar. Tərkibi, quruluşu və təsnifatı"
         },
         {
           "id": "k11-22",
-          "title": "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi"
+          "title": "Yağların xassələri və tətbiqi"
         },
         {
           "id": "k11-23",
-          "title": "Sabunlar və sintetik yuyucu vasitələr (Detergentlər)"
-        },
+          "title": "Yuyucu vasitələr (Sabunlar və Sintetik Yuyucu Vasitələr)"
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Karbohidratlar (Qlükoza, Saxaroza, Nişasta, Sellüloza)",
+      "topics": [
         {
           "id": "k11-24",
-          "title": "Karbohidratların təsnifatı və fotosintez prosesi"
+          "title": "Karbohidratların təsnifatı. Qlükoza və Fruktoza"
         },
         {
           "id": "k11-25",
-          "title": "Monosaxaridlər: Qlükoza və fruktozanın quruluşu, izomerliyi və xassələri"
+          "title": "Saxaroza. Quruluşu, alınması və xassələri"
         },
         {
           "id": "k11-26",
-          "title": "Qlükozanın qıcqırma növləri və orqanizmdə rolu"
-        },
+          "title": "Nişasta və Sellüloza (Quruluşu, xassələri və tətbiqi)"
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Azotlu üzvi birləşmələr (Aminlər, Amin turşuları, Zülallar)",
+      "topics": [
         {
           "id": "k11-27",
-          "title": "Disaxaridlər: Saxaroza və maltozanın quruluşu, hidrolizi və əhəmiyyəti"
+          "title": "Aminlər. Təsnifatı, izomerliyi və adlandırılması"
         },
         {
           "id": "k11-28",
-          "title": "Polisaxaridlər: Nişasta və sellülozanın quruluş fərqləri, kimyəvi xassələri"
+          "title": "Aminlərin alınması, fiziki və kimyəvi xassələri"
         },
         {
           "id": "k11-29",
-          "title": "Süni və sintetik liflər (Asetat ipəyi, Viskoz)"
+          "title": "Anilin. Alınması, xassələri və tətbiqi"
         },
         {
           "id": "k11-30",
-          "title": "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri"
+          "title": "Amin turşuları. Tərkibi, quruluşu, izomerliyi və adlandırılması"
         },
         {
           "id": "k11-31",
-          "title": "Anilin (Aromatik amin): Alınması (Zinin reaksiyası) və kimyəvi xassələri"
+          "title": "Amin turşularının alınması, xassələri və bioloji rolu"
         },
         {
           "id": "k11-32",
-          "title": "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması"
+          "title": "Zülallar (Peptidlər). Quruluşu, təbəqələri və xassələri"
         },
         {
           "id": "k11-33",
-          "title": "Peptidlər və peptid rabitəsi"
-        },
+          "title": "Nuklein turşuları (DNT və RNT)"
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Yüksəkmolekullu birləşmələr (Polimerlər) və Tətbiqi kimya",
+      "topics": [
         {
           "id": "k11-34",
-          "title": "Zülallar: Quruluş səviyyələri, rəngli reaksiyaları və denaturasiyası"
+          "title": "İrimolekullu birləşmələr (Polimerlər). Əsas anlayışlar"
         },
         {
           "id": "k11-35",
-          "title": "Polimerləşmə və polikondensləşmə reaksiyaları"
+          "title": "Sintetik və süni liflər (Kapron, Lavsan)"
         },
         {
           "id": "k11-36",
-          "title": "Plastik kütlələr (Polietilen, Polipropilen, Polivinilxlorid, Polistirol)"
+          "title": "Plastik kütlələr və sintetik kauçuklar"
         },
         {
           "id": "k11-37",
-          "title": "Sintetik kauçuklar və rezin istehsalı"
+          "title": "Dərman maddələri və pestisidlər"
         },
         {
           "id": "k11-38",
-          "title": "Sintetik liflər (Kapron, Lavsan)"
+          "title": "Üzvi kimyanın həyatımızda və sənayedə rolu"
         },
         {
           "id": "k11-39",
@@ -15728,162 +15788,134 @@
   ],
   "azerbaycan-dili-11": [
     {
-      "chapter": "I HİSSƏ. Mətn və Fonetik-Leksik Normalar",
+      "chapter": "I HİSSƏ: Mətn və Fonetik-Leksik Normalar",
       "topics": [
         {
-          "title": "Böyük ömrün dan yeri",
-          "page": 1,
-          "path": ""
+          "id": "ad11-1",
+          "title": "Böyük ömrün dan yeri"
         },
         {
-          "title": "Şəbi-hicran",
-          "page": 5,
-          "path": ""
+          "id": "ad11-2",
+          "title": "Şəbi-hicran"
         },
         {
-          "title": "Sizin də bir basketbol səbətiniz varmı?",
-          "page": 9,
-          "path": ""
+          "id": "ad11-3",
+          "title": "Sizin də bir basketbol səbətiniz varmı?"
         },
         {
-          "title": "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq",
-          "page": 13,
-          "path": ""
+          "id": "ad11-4",
+          "title": "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq"
         },
         {
-          "title": "Gəncə Müsəlman Qız Məktəbi",
-          "page": 17,
-          "path": ""
+          "id": "ad11-5",
+          "title": "Gəncə Müsəlman Qız Məktəbi"
         },
         {
-          "title": "Mətn",
-          "page": 21,
-          "path": ""
+          "id": "ad11-6",
+          "title": "Mətn"
         },
         {
-          "title": "Doroti Meri Kroufut Hodgkin",
-          "page": 25,
-          "path": ""
+          "id": "ad11-7",
+          "title": "Doroti Meri Kroufut Hodgkin"
         }
       ]
     },
     {
-      "chapter": "II HİSSƏ. Morfoloji və Sintaktik Normalar",
+      "chapter": "II HİSSƏ: Morfoloji və Sintaktik Normalar",
       "topics": [
         {
-          "title": "Nitq hissələrinin üslubi imkanları və morfoloji norma",
-          "page": 29,
-          "path": ""
+          "id": "ad11-8",
+          "title": "Nitq hissələrinin üslubi imkanları və morfoloji norma"
         },
         {
-          "title": "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları",
-          "page": 33,
-          "path": ""
+          "id": "ad11-9",
+          "title": "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları"
         },
         {
-          "title": "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar",
-          "page": 37,
-          "path": ""
+          "id": "ad11-10",
+          "title": "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar"
         },
         {
-          "title": "Köməkçi nitq hissələrinin fərqləndirilməsi və orfoqrafiyası",
-          "page": 41,
-          "path": ""
+          "id": "ad11-11",
+          "title": "Köməkçi nitq hissələrinin fərqləndirilməsi və orfoqrafiyası"
         },
         {
-          "title": "Cümlə üzvlərinin uzlaşması və sintaktik əlaqələr",
-          "page": 45,
-          "path": ""
+          "id": "ad11-12",
+          "title": "Cümlə üzvlərinin uzlaşması və sintaktik əlaqələr"
         },
         {
-          "title": "Söz sırası və sintaktik norma",
-          "page": 49,
-          "path": ""
+          "id": "ad11-13",
+          "title": "Söz sırası və sintaktik norma"
         },
         {
-          "title": "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma",
-          "page": 53,
-          "path": ""
-        },
-        {
-          "title": "Mürəkkəb sintaktik bütövlər və dövrə",
-          "page": 57,
-          "path": ""
+          "id": "ad11-14",
+          "title": "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma"
         }
       ]
     },
     {
-      "chapter": "III HİSSƏ. Funksional Üslublar və Nitq Mədəniyyəti",
+      "chapter": "III HİSSƏ: Üslubiyyat, Funksional Üslublar və Nitq Mədəniyyəti",
       "topics": [
         {
-          "title": "Azərbaycan ədəbi dilinin funksional üslubları",
-          "page": 61,
-          "path": ""
+          "id": "ad11-15",
+          "title": "Mürəkkəb sintaktik bütövlər və dövrə"
         },
         {
-          "title": "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)",
-          "page": 65,
-          "path": ""
+          "id": "ad11-16",
+          "title": "Azərbaycan ədəbi dilinin funksional üslubları"
         },
         {
-          "title": "Elmi üslub, terminologiya və mətndə terminlərin rolu",
-          "page": 69,
-          "path": ""
+          "id": "ad11-17",
+          "title": "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)"
         },
         {
-          "title": "Publisistik üslub və onun janrları",
-          "page": 73,
-          "path": ""
+          "id": "ad11-18",
+          "title": "Elmi üslub, terminologiya və mətndə terminlərin rolu"
         },
         {
-          "title": "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)",
-          "page": 77,
-          "path": ""
+          "id": "ad11-19",
+          "title": "Publisistik üslub və onun janrları"
         },
         {
-          "title": "Məişət üslubu və dialektlərin rolu",
-          "page": 81,
-          "path": ""
+          "id": "ad11-20",
+          "title": "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)"
         },
         {
-          "title": "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)",
-          "page": 85,
-          "path": ""
+          "id": "ad11-21",
+          "title": "Məişət üslubu və dialektlərin rolu"
         }
       ]
     },
     {
-      "chapter": "IV HİSSƏ. Mətn Nəzəriyyəsi və Redaktə",
+      "chapter": "IV HİSSƏ: Mətn Üzərində İş və İmtahan Hazırlığı",
       "topics": [
         {
-          "title": "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər",
-          "page": 89,
-          "path": ""
+          "id": "ad11-22",
+          "title": "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)"
         },
         {
-          "title": "Mətnin abzas quruluşu, mikro və makromövzular",
-          "page": 93,
-          "path": ""
+          "id": "ad11-23",
+          "title": "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər"
         },
         {
-          "title": "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)",
-          "page": 97,
-          "path": ""
+          "id": "ad11-24",
+          "title": "Mətnin abzas quruluşu, mikro və makromövzular"
         },
         {
-          "title": "Mətndə məntiqi və üslubi xətaların tapılması və redaktəsi",
-          "page": 101,
-          "path": ""
+          "id": "ad11-25",
+          "title": "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)"
         },
         {
-          "title": "Esse və inşa yazma texnologiyası",
-          "page": 105,
-          "path": ""
+          "id": "ad11-26",
+          "title": "Mətndə məntiqi və üslubi xətaların tapılması və redaktəsi"
         },
         {
-          "title": "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri",
-          "page": 109,
-          "path": ""
+          "id": "ad11-27",
+          "title": "Esse və inşa yazma texnologiyası"
+        },
+        {
+          "id": "ad11-28",
+          "title": "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri"
         }
       ]
     }
@@ -16007,7 +16039,7 @@
   ],
   "azerbaycan-tarixi-11": [
     {
-      "group": "Mövzular",
+      "chapter": "I BÖLMƏ: Şimali və Cənubi Azərbaycan XIX əsrin birinci yarısında",
       "topics": [
         {
           "id": "at11-1",
@@ -16044,7 +16076,12 @@
         {
           "id": "at11-9",
           "title": "9. XIX əsrin birinci yarısında Azərbaycan mədəniyyəti və maarifçilik"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Azərbaycan XIX əsrin ikinci yarısında",
+      "topics": [
         {
           "id": "at11-10",
           "title": "10. Kəndli islahatı (1870-ci il 14 may Əsasnaməsi) və aqrar münasibətlər"
@@ -16076,7 +16113,12 @@
         {
           "id": "at11-17",
           "title": "17. 1918-ci il 31 Mart soyqırımı və milli faciə"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Azərbaycan XX əsrin əvvəllərində və AXC dövrü",
+      "topics": [
         {
           "id": "at11-18",
           "title": "18. Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi"
@@ -16108,7 +16150,12 @@
         {
           "id": "at11-25",
           "title": "25. Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ, Zəngəzur və Naxçıvan məsələsi)"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Azərbaycan sovet totalitar rejimi dövründə və İkinci Dünya müharibəsi",
+      "topics": [
         {
           "id": "at11-26",
           "title": "26. Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti"
@@ -16136,7 +16183,12 @@
         {
           "id": "at11-32",
           "title": "32. 1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Şimali və Cənubi Azərbaycan XX əsrin ikinci yarısında",
+      "topics": [
         {
           "id": "at11-33",
           "title": "33. Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin dərin böhranı"
@@ -16152,7 +16204,12 @@
         {
           "id": "at11-36",
           "title": "36. \"Əsrin müqaviləsi\" (1994) və Azərbaycanın yeni neft-qaz strategiyası"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Müstəqillik dövrü, 44 günlük Vətən müharibəsi və Böyük Qayıdış",
+      "topics": [
         {
           "id": "at11-37",
           "title": "37. Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu (1995) və ordu quruculuğu"
@@ -16965,154 +17022,184 @@
   ],
   "riyaziyyat-11": [
     {
-      "group": "Mövzular",
+      "chapter": "I BÖLMƏ: Çoxhədlilər və Kompleks ədədlər",
       "topics": [
         {
-          "id": "r11-1",
+          "id": "m11-1",
           "title": "Çoxhədlinin çoxhədliyə bölünməsi"
         },
         {
-          "id": "r11-2",
+          "id": "m11-2",
           "title": "Rasional köklərin tapılması"
         },
         {
-          "id": "r11-3",
+          "id": "m11-3",
           "title": "Qalıq haqqında teorem"
         },
         {
-          "id": "r11-4",
+          "id": "m11-4",
           "title": "Çoxhədlinin vuruqları haqqında teorem"
         },
         {
-          "id": "r11-5",
+          "id": "m11-5",
           "title": "Kompleks ədədlər haqqında"
         },
         {
-          "id": "r11-6",
+          "id": "m11-6",
           "title": "Cəbrin əsas teoremi"
         },
         {
-          "id": "r11-7",
+          "id": "m11-7",
           "title": "Çoxhədli funksiya"
         },
         {
-          "id": "r11-8",
+          "id": "m11-8",
           "title": "Rasional funksiya"
         },
         {
-          "id": "r11-9",
+          "id": "m11-9",
           "title": "Ümumiləşdirici tapşırıqlar"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Funksiyanın limiti və kəsilməzliyi",
+      "topics": [
         {
-          "id": "r11-10",
+          "id": "m11-10",
           "title": "Funksiyanın limiti və limitlər haqqında teoremlər"
         },
         {
-          "id": "r11-11",
+          "id": "m11-11",
           "title": "Görkəmli limitlər və sonsuzluqda limit"
         },
         {
-          "id": "r11-12",
+          "id": "m11-12",
           "title": "Funksiyanın kəsilməzliyi və kəsilmə nöqtələri"
         },
         {
-          "id": "r11-13",
+          "id": "m11-13",
           "title": "Əsas elementar funksiyaların xassələri və qrafikləri"
         },
         {
-          "id": "r11-14",
+          "id": "m11-14",
           "title": "Mürəkkəb və tərs funksiyalar"
         },
         {
-          "id": "r11-15",
+          "id": "m11-15",
           "title": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Törəmə və onun tətbiqləri",
+      "topics": [
         {
-          "id": "r11-16",
+          "id": "m11-16",
           "title": "Fəsil üzrə ümumiləşdirici tapşırıqlar"
         },
         {
-          "id": "r11-17",
+          "id": "m11-17",
           "title": "Törəmə anlayışı, törəmənin həndəsi və fiziki mənası"
         },
         {
-          "id": "r11-18",
+          "id": "m11-18",
           "title": "Diferensiallama qaydaları və cəmin, hasilin, nisbətin törəməsi"
         },
         {
-          "id": "r11-19",
+          "id": "m11-19",
           "title": "Mürəkkəb funksiyanın və triqonometrik funksiyaların törəməsi"
         },
         {
-          "id": "r11-20",
+          "id": "m11-20",
           "title": "Funksiyanın böhran nöqtələri, artma və azalma aralıqları"
         },
         {
-          "id": "r11-21",
+          "id": "m11-21",
           "title": "Funksiyanın ekstremumları (maksimum və minimum nöqtələri)"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: İbtidai funksiya və Müəyyən inteqral",
+      "topics": [
         {
-          "id": "r11-22",
+          "id": "m11-22",
           "title": "Funksiyanın ən böyük və ən kiçik qiymətlərinin tapılması"
         },
         {
-          "id": "r11-23",
+          "id": "m11-23",
           "title": "Əyriyə çəkilən toxunanın tənliyi"
         },
         {
-          "id": "r11-24",
+          "id": "m11-24",
           "title": "Törəmənin köməyi ilə funksiyanın tədqiqi və qrafikinin qurulması"
         },
         {
-          "id": "r11-25",
+          "id": "m11-25",
           "title": "İbtidai funksiya anlayışı və qeyri-müəyyən inteqral"
         },
         {
-          "id": "r11-26",
+          "id": "m11-26",
           "title": "Əsas inteqral düsturları və inteqrallama qaydaları"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Fəzada düz xətlər, müstəvilər və koordinatlar",
+      "topics": [
         {
-          "id": "r11-27",
+          "id": "m11-27",
           "title": "Müəyyən inteqral və Nyuton-Leybnis düsturu"
         },
         {
-          "id": "r11-28",
+          "id": "m11-28",
           "title": "Əyrixətli trapesiyanın sahəsinin inteqral vasitəsilə hesablanması"
         },
         {
-          "id": "r11-29",
+          "id": "m11-29",
           "title": "Fırlanma cisimlərinin həcminin inteqral vasitəsilə hesablanması"
         },
         {
-          "id": "r11-30",
+          "id": "m11-30",
           "title": "İnteqralın fizikada və təbiətdə tətbiqləri"
         },
         {
-          "id": "r11-31",
+          "id": "m11-31",
           "title": "Fırlanma cisimləri: Silindr, onun səthinin sahəsi və həcmi"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Fırlanma cisimləri (Silindr, Konus, Kürə)",
+      "topics": [
         {
-          "id": "r11-32",
+          "id": "m11-32",
           "title": "Konus və kəsik konus, onların səthinin sahəsi və həcmi"
         },
         {
-          "id": "r11-33",
+          "id": "m11-33",
           "title": "Kürə və sfera, kürə sektorunun və seqmentinin həcmi"
         },
         {
-          "id": "r11-34",
+          "id": "m11-34",
           "title": "Kombinatorikanın əsas prinsipləri (Permutasiya, Kombinezon, Qruplaşma)"
         },
         {
-          "id": "r11-35",
+          "id": "m11-35",
           "title": "Hadisənin ehtimalı, asılı və asılı olmayan hadisələr"
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "VII BÖLMƏ: Ehtimal nəzəriyyəsi, Statistika və Yekun təkrar",
+      "topics": [
         {
-          "id": "r11-36",
+          "id": "m11-36",
           "title": "Statistika, paylanma parametrləri və Bernulli düsturu"
         },
         {
-          "id": "r11-37",
+          "id": "m11-37",
           "title": "Yekun ümumiləşdirici təkrar"
         }
       ]
@@ -28147,41 +28234,207 @@
     }
   ],
   "Fizika 11": [
-    "Maqnit sahəsinin induksiyası və Amper qüvvəsi",
-    "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti",
-    "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)",
-    "Elektromaqnit induksiya hadisəsi və Faradey qanunu",
-    "Lens qaydası və induksiya EHQ",
-    "Öz-özünə induksiya hadisəsi və İnduktivlik",
-    "Maqnit sahəsinin enerjisi və enerji sıxlığı",
-    "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi",
-    "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
-    "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan",
-    "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
-    "Dəyişən cərəyanın gücü və Transformator",
-    "Elektromaqnit dalğaları, onların şüalanması və xassələri",
-    "Radiolokasiya, televiziya və müasir rabitə vasitələri",
-    "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları",
-    "Linzalar və optik cihazlar",
-    "İşığın interferensiyası və Koherent dalğalar",
-    "İşığın difraksiyası və Difraksiya qəfəsi",
-    "İşığın dispersionu və polyarlaşması",
-    "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi",
-    "İstilik şüalanması və Plank hipotezi",
-    "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi",
-    "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)",
-    "Atomun quruluşu: Rezerford təcrübəsi və Bor postulatları",
-    "Atom nüvəsinin quruluşu, Rabitə enerjisi və Kütlə qüsuru",
-    "Radioaktivlik, Radioaktiv çevrilmələr və Yarımparçalanma qanunu",
-    "Nüvə reaksiyaları, Nüvə energetikası və Elementar zərrəciklər",
-    "Elektrik yükü. Elektrik sahəsinin intensivliyi və potensialı",
-    "Kondensatorlar və elektrik tutumu",
-    "Sabit cərəyan qanunları və Müqavimət",
-    "Tam dövrə üçün Om qanunu və Elektrik hərəkət qüvvəsi",
-    "Metallarda və yarımkeçiricilərdə elektrik cərəyanı",
-    "Mayelərdə və qazlarda elektrik cərəyanı (Elektroliz)",
-    "Vakuumda elektrik cərəyanı və elektron şüa borusu",
-    "Elektrik cərəyanının işi, gücü və Coul-Lens qanunu"
+    {
+      "chapter": "I BÖLMƏ: Elektromaqnit sahəsi və Elektrodinamika",
+      "topics": [
+        {
+          "id": "f11-1",
+          "title": "1.1. Elektrik yükü. Elektromaqnit qarşılıqlı təsiri. Kulon qanunu"
+        },
+        {
+          "id": "f11-2",
+          "title": "1.2. Elektrik sahəsinin intensivliyi. Superpozisiya prinsipi"
+        },
+        {
+          "id": "f11-3",
+          "title": "1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik"
+        },
+        {
+          "id": "f11-4",
+          "title": "1.4. Kondensator. Elektrik tutumu"
+        },
+        {
+          "id": "f11-5",
+          "title": "1.5. Kondensatorların birləşdirilməsi"
+        },
+        {
+          "id": "f11-6",
+          "title": "1.6. Yüklü zərrəciyin elektrik və maqnit sahəsində hərəkəti"
+        },
+        {
+          "id": "f11-7",
+          "title": "1.7. Maqnit sahəsinin cərəyanlı naqilə təsiri. Amper qüvvəsi"
+        },
+        {
+          "id": "f11-8",
+          "title": "1.8. Maqnit seli. Elektromaqnit induksiyası hadisəsi"
+        },
+        {
+          "id": "f11-9",
+          "title": "1.9. Elektromaqnit induksiyası qanunu. İnduksiya EHQ"
+        },
+        {
+          "id": "f11-10",
+          "title": "1.10. Öz-özünə induksiya EHQ. Maqnit sahəsinin enerjisi"
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Müxtəlif mühitlərdə elektrik cərəyanı",
+      "topics": [
+        {
+          "id": "f11-11",
+          "title": "2.1. Metalların elektrik keçiriciliyinin elektron nəzəriyyəsi"
+        },
+        {
+          "id": "f11-12",
+          "title": "2.2. Dövrə hissəsi üçün Om qanunu. Müqavimət. İfrat keçiricilik"
+        },
+        {
+          "id": "f11-13",
+          "title": "2.3. Elektrik hərəkət qüvvəsi. Tam dövrə üçün Om qanunu"
+        },
+        {
+          "id": "f11-14",
+          "title": "2.4. Vakuumda elektrik cərəyanı. Elektron emissiyası"
+        },
+        {
+          "id": "f11-15",
+          "title": "2.5. Qazlarda elektrik cərəyanı. Qaz boşalmaları"
+        },
+        {
+          "id": "f11-16",
+          "title": "2.6. Elektrolitlərdə elektrik cərəyanı. Faradeyin elektroliz qanunları"
+        },
+        {
+          "id": "f11-17",
+          "title": "2.7. Yarımkeçiricilərdə elektrik cərəyanı. Diod və Tranzistor"
+        },
+        {
+          "id": "f11-18",
+          "title": "Maqnit sahəsinin induksiyası və Amper qüvvəsi"
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Elektromaqnit rəqsləri və dalğaları",
+      "topics": [
+        {
+          "id": "f11-19",
+          "title": "Lorens qüvvəsi və yüklü zərrəciklərin maqnit sahəsində hərəkəti"
+        },
+        {
+          "id": "f11-20",
+          "title": "Maddələrin maqnit xassələri (Diamaqnetiklər, Paramaqnetiklər, Ferromaqnetiklər)"
+        },
+        {
+          "id": "f11-21",
+          "title": "Elektromaqnit induksiya hadisəsi və Faradey qanunu"
+        },
+        {
+          "id": "f11-22",
+          "title": "Lens qaydası və induksiya EHQ"
+        },
+        {
+          "id": "f11-23",
+          "title": "Öz-özünə induksiya hadisəsi və İnduktivlik"
+        },
+        {
+          "id": "f11-24",
+          "title": "Maqnit sahəsinin enerjisi və enerji sıxlığı"
+        },
+        {
+          "id": "f11-25",
+          "title": "Elektromaqnit sahəsi və Maksvell nəzəriyyəsi"
+        },
+        {
+          "id": "f11-26",
+          "title": "Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)"
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Dalğa və həndəsi optika",
+      "topics": [
+        {
+          "id": "f11-27",
+          "title": "Məcburi elektromaqnit rəqsləri və Dəyişən cərəyan"
+        },
+        {
+          "id": "f11-28",
+          "title": "Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti"
+        },
+        {
+          "id": "f11-29",
+          "title": "Dəyişən cərəyanın gücü və Transformator"
+        },
+        {
+          "id": "f11-30",
+          "title": "Elektromaqnit dalğaları, onların şüalanması və xassələri"
+        },
+        {
+          "id": "f11-31",
+          "title": "Radiolokasiya, televiziya və müasir rabitə vasitələri"
+        },
+        {
+          "id": "f11-32",
+          "title": "İşığın həndəsi optikası: Qayıtma, sınma və tam daxili qayıtma qanunları"
+        },
+        {
+          "id": "f11-33",
+          "title": "Linzalar və optik cihazlar"
+        },
+        {
+          "id": "f11-34",
+          "title": "İşığın interferensiyası və Koherent dalğalar"
+        },
+        {
+          "id": "f11-35",
+          "title": "İşığın difraksiyası və Difraksiya qəfəsi"
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kvant fizikası, Atom və Nüvə fizikası",
+      "topics": [
+        {
+          "id": "f11-36",
+          "title": "İşığın dispersionu və polyarlaşması"
+        },
+        {
+          "id": "f11-37",
+          "title": "Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi"
+        },
+        {
+          "id": "f11-38",
+          "title": "İstilik şüalanması və Plank hipotezi"
+        },
+        {
+          "id": "f11-39",
+          "title": "Fotoeffekt hadisəsi, Fotoeffekt qanunları və Eynşteyn tənliyi"
+        },
+        {
+          "id": "f11-40",
+          "title": "Foton anlayışı, işığın korpuskulyar-dalğa dualizmi (de Broyl dalğası)"
+        },
+        {
+          "id": "f11-41",
+          "title": "Atomun quruluşu: Rezerford təcrübəsi və Bor postulatları"
+        },
+        {
+          "id": "f11-42",
+          "title": "Atom nüvəsinin quruluşu, Rabitə enerjisi və Kütlə qüsuru"
+        },
+        {
+          "id": "f11-43",
+          "title": "Radioaktivlik, Radioaktiv çevrilmələr və Yarımparçalanma qanunu"
+        },
+        {
+          "id": "f11-44",
+          "title": "Nüvə reaksiyaları, Nüvə energetikası və Elementar zərrəciklər"
+        }
+      ]
+    }
   ],
   "cografiya_11": [
     {
@@ -28641,152 +28894,126 @@
   ],
   "İnformatika 11": [
     {
-      "chapter": "I BÖLMƏ: İNFORMASİYA SİSTEMLƏRİ VƏ MÜASİR İKT TEXNOLOGİYALARI",
+      "chapter": "I BÖLMƏ: İnformasiya sistemləri və Müasir İKT texnologiyaları",
       "topics": [
         {
-          "title": "1.1. İnformasiya sistemi və onun elementləri",
-          "page": 6,
-          "path": ""
+          "id": "inf11-1",
+          "title": "1.1. İnformasiya sistemi və onun elementləri"
         },
         {
-          "title": "1.2. İnformasiya sistemlərinin təsnifatı",
-          "page": 11,
-          "path": ""
+          "id": "inf11-2",
+          "title": "1.2. İnformasiya sistemlərinin təsnifatı"
         },
         {
-          "title": "1.3. Coğrafi informasiya sistemləri (CİS / GIS)",
-          "page": 16,
-          "path": ""
+          "id": "inf11-3",
+          "title": "1.3. Coğrafi informasiya sistemləri (CİS / GIS)"
         },
         {
-          "title": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
-          "page": 21,
-          "path": ""
+          "id": "inf11-4",
+          "title": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)"
         },
         {
-          "title": "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)",
-          "page": 26,
-          "path": ""
+          "id": "inf11-5",
+          "title": "1.5. Ekspert sistemləri (Biliklər bazası, Məntiqi nəticəçıxarma mexanizmi, İzahaltı sistemi)"
         },
         {
-          "title": "1.6. Neyron şəbəkələri və Dərin öyrənmə (Perseptron, Sinaps, Aktivasiya funksiyası)",
-          "page": 31,
-          "path": ""
+          "id": "inf11-6",
+          "title": "1.6. Axtarış sistemləri və alqoritmləri (Crawler, İndeksləmə, PageRank, Sorğular)"
         },
         {
-          "title": "1.7. Əşyaların interneti (IoT) və Ağıllı sistemlər (RFID, Sensorlar, Smart City, Smart Home)",
-          "page": 36,
-          "path": ""
+          "id": "inf11-7",
+          "title": "1.7. \"Böyük verilənlər\" texnologiyası (Big Data, 5V modeli)"
         },
         {
-          "title": "1.8. Böyük verilənlər (Big Data) və Data Science (5V modeli: Volume, Velocity, Variety, Veracity, Value)",
-          "page": 41,
-          "path": ""
+          "id": "inf11-8",
+          "title": "1.8. İnformasiya cəmiyyəti və informasiya təhlükəsizliyi"
         }
       ]
     },
     {
-      "chapter": "II BÖLMƏ: VERİLƏNLƏR BAZASI VƏ SQL ƏSASLARI",
+      "chapter": "II BÖLMƏ: Alqoritmlər və Python proqramlaşdırma dili",
       "topics": [
         {
-          "title": "2.1. Verilənlər bazası anlayışı və relyasiya modeli (Cədvəllər, Sahələr, Yazılar, İlkin açar)",
-          "page": 46,
-          "path": ""
+          "id": "inf11-9",
+          "title": "2.1. Funksiyalar və Rekursiv alqoritmlər"
         },
         {
-          "title": "2.2. Verilənlər bazasının layihələndirilməsi (Normalizasiya, 1NF, 2NF, 3NF, Cədvəllərarası əlaqələr: 1:1, 1:M, M:N)",
-          "page": 51,
-          "path": ""
+          "id": "inf11-10",
+          "title": "2.2. Mürəkkəb verilən strukturları: Siyahılar, Korteclər, Çoxluqlar"
         },
         {
-          "title": "2.3. SQL-ə giriş və Verilənlərin Tərifi Dili (DDL: CREATE TABLE, ALTER TABLE, DROP TABLE)",
-          "page": 56,
-          "path": ""
+          "id": "inf11-11",
+          "title": "2.3. Lüğətlər (Dictionaries) və onların metodları"
         },
         {
-          "title": "2.4. SQL-də məlumatların manipulyasiyası (DML: INSERT INTO, UPDATE, DELETE)",
-          "page": 61,
-          "path": ""
+          "id": "inf11-12",
+          "title": "2.4. Fayllarla iş"
         },
         {
-          "title": "2.5. SQL-də mürəkkəb sorğular və filtrləmə (SELECT, WHERE, ORDER BY, LIKE, BETWEEN, IN)",
-          "page": 66,
-          "path": ""
+          "id": "inf11-13",
+          "title": "2.5. Xətaların idarə edilməsi və İstisnalar"
         },
         {
-          "title": "2.6. SQL-də aqreqat funksiyaları və qruplaşdırma (COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING)",
-          "page": 71,
-          "path": ""
+          "id": "inf11-14",
+          "title": "2.6. Çeşidləmə və Axtarış alqoritmləri"
         },
         {
-          "title": "2.7. SQL-də cədvəllərin birləşdirilməsi və alt sorğular (INNER JOIN, LEFT JOIN, Subqueries)",
-          "page": 76,
-          "path": ""
+          "id": "inf11-15",
+          "title": "2.7. Qrafik istifadəçi interfeysi (GUI)"
         }
       ]
     },
     {
-      "chapter": "III BÖLMƏ: PYTHON İLƏ OBYEKT-YÖNYÜMLÜ PROQRAMLAŞDIRMA VƏ MÜRƏKKƏB ALQORİTMLƏR",
+      "chapter": "III BÖLMƏ: Relyasiya tipli Verilənlər Bazası və SQL",
       "topics": [
         {
-          "title": "3.1. Obyektyönlü proqramlaşdırmanın (OYP / OOP) əsas prinsipləri (Class, Object, Encapsulation, Inheritance, Polymorphism)",
-          "page": 81,
-          "path": ""
+          "id": "inf11-16",
+          "title": "3.1. Relyasiya tipli Verilənlər Bazası (RDBMS)"
         },
         {
-          "title": "3.2. Python-da siniflər və obyektlərin yaradılması (class, __init__, self, Metodlar)",
-          "page": 86,
-          "path": ""
+          "id": "inf11-17",
+          "title": "3.2. Cədvəllər arasında əlaqələr"
         },
         {
-          "title": "3.3. Varislik (Inheritance) və Polimorfizm (Metodların yenidən təyini, super())",
-          "page": 91,
-          "path": ""
+          "id": "inf11-18",
+          "title": "3.3. SQL sorğu dili: Verilənlərin seçilməsi və filtrlənməsi"
         },
         {
-          "title": "3.4. İnkapsulyasiya və Məlumatların gizlənməsi (Public, Protected _, Private __ atributlar, Getter və Setter)",
-          "page": 96,
-          "path": ""
+          "id": "inf11-19",
+          "title": "3.4. SQL-də aqreqat funksiyaları və qruplaşdırma"
         },
         {
-          "title": "3.5. Xətaların tutulması və istisnaların idarə edilməsi (try, except, else, finally, raise)",
-          "page": 101,
-          "path": ""
+          "id": "inf11-20",
+          "title": "3.5. Verilənlər Bazasının idarəetmə sistemləri və Təhlükəsizliyi"
         }
       ]
     },
     {
-      "chapter": "IV BÖLMƏ: ŞƏBƏKƏ PROTOKOLLARI, KİBERTƏHLÜKƏSİZLİK VƏ WEB TEXNOLOGİYALARI",
+      "chapter": "IV BÖLMƏ: Kompüter şəbəkələri, İnformasiya təhlükəsizliyi və Kriptoqrafiya",
       "topics": [
         {
-          "title": "4.1. Şəbəkə arxitekturası və OSI/TCP-IP modelləri (7 səviyyəli OSI modeli və TCP/IP protokolları)",
-          "page": 106,
-          "path": ""
+          "id": "inf11-21",
+          "title": "4.1. Kompüter şəbəkələrinin arxitekturası və OSI modeli"
         },
         {
-          "title": "4.2. Şəbəkə marşrutlaşdırması və IP ünvanlaşdırma (IPv4, IPv6, Subnet Mask, MAC ünvan, DNS, DHCP)",
-          "page": 111,
-          "path": ""
+          "id": "inf11-22",
+          "title": "4.2. Şəbəkə ünvanlaşdırılması"
         },
         {
-          "title": "4.3. Kriptoqrafiya və Məlumatların şifrələnməsi (Simmetrik: AES, DES; Asimmetrik: RSA, Açıq və Şəxsi açarlar, Rəqəmsal imza)",
-          "page": 116,
-          "path": ""
+          "id": "inf11-23",
+          "title": "4.3. Bulud texnologiyaları"
         },
         {
-          "title": "4.4. Kiberhücum növləri və Şəbəkə təhlükəsizliyi (DDoS, Phishing, Malware, Ransomware, Man-in-the-Middle, Firewall)",
-          "page": 121,
-          "path": ""
+          "id": "inf11-24",
+          "title": "4.4. Kriptoqrafiya və İnformasiyanın şifrələnməsi"
         },
         {
-          "title": "4.5. Veb texnologiyaları və Müasir Frontend/Backend arxitekturası (HTML5, CSS3, JavaScript, Client-Server, REST API)",
-          "page": 126,
-          "path": ""
+          "id": "inf11-25",
+          "title": "4.5. Zərərverici proqramlar və Kiberhücum növləri"
         },
         {
-          "title": "4.6. Rəqəmsal etika, İntellektual mülkiyyət və İnformasiya cəmiyyəti (Müəllif hüquqları, GDPR, Rəqəmsal iz, Kibergigiyena)",
-          "page": 131,
-          "path": ""
+          "id": "inf11-26",
+          "title": "4.6. Şəbəkə təhlükəsizliyi və Müdafiə vasitələri"
         }
       ]
     }
@@ -37467,5 +37694,712 @@
     "Урок 31. Столица Азербайджана",
     "Урок 32. Музыкальные инструменты",
     "Урок 33. Обобщающие задания"
+  ],
+  "Kimya 11": [
+    {
+      "chapter": "I BÖLMƏ: Oksigenli üzvi birləşmələr (Spirtlər və Fenollar)",
+      "topics": [
+        {
+          "id": "k11-1",
+          "title": "İlkin yoxlama (Spirtlər və Fenollar)"
+        },
+        {
+          "id": "k11-2",
+          "title": "1.1.1. Doymuş biratomlu spirtlər: Adlandırılması və izomerliyi"
+        },
+        {
+          "id": "k11-3",
+          "title": "1.1.2. Doymuş biratomlu spirtlərin alınması"
+        },
+        {
+          "id": "k11-4",
+          "title": "1.1.3. Doymuş biratomlu spirtlərin quruluşu və fiziki xassələri"
+        },
+        {
+          "id": "k11-5",
+          "title": "1.1.4. Doymuş biratomlu spirtlərin kimyəvi xassələri və tətbiqi"
+        },
+        {
+          "id": "k11-6",
+          "title": "1.1.5. Praktik dərs: Etanol və onun xassələri"
+        },
+        {
+          "id": "k11-7",
+          "title": "1.2.1. Çoxatomlu spirtlər: Etilenqlikol"
+        },
+        {
+          "id": "k11-8",
+          "title": "1.2.2. Çoxatomlu spirtlər: Qliserin"
+        },
+        {
+          "id": "k11-9",
+          "title": "1.3.1. Fenollar: Alınması, quruluşu və fiziki xassələri"
+        },
+        {
+          "id": "k11-10",
+          "title": "1.3.2. Fenollar: Kimyəvi xassələri və tətbiqi"
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Aldehidlər və Ketonlar",
+      "topics": [
+        {
+          "id": "k11-11",
+          "title": "Aldehidlərin və ketonların quruluşu, homoloji sırası və izomerliyi"
+        },
+        {
+          "id": "k11-12",
+          "title": "Aldehidlərin adlandırılması və alınma üsulları"
+        },
+        {
+          "id": "k11-13",
+          "title": "Aldehidlərin fiziki və kimyəvi xassələri, tətbiqi"
+        },
+        {
+          "id": "k11-14",
+          "title": "Aseton. Alınması, xassələri və tətbiqi"
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Karbon turşuları, Mürəkkəb efirlər və Yağlar",
+      "topics": [
+        {
+          "id": "k11-15",
+          "title": "Karbon turşularının təsnifatı, birəsaslı doymuş karbon turşularının homoloji sırası və izomerliyi"
+        },
+        {
+          "id": "k11-16",
+          "title": "Birəsaslı doymuş karbon turşularının adlandırılması və alınması"
+        },
+        {
+          "id": "k11-17",
+          "title": "Birəsaslı doymuş karbon turşularının fiziki və kimyəvi xassələri, tətbiqi"
+        },
+        {
+          "id": "k11-18",
+          "title": "Doymamış, aromatik və ikiəsaslı karbon turşuları"
+        },
+        {
+          "id": "k11-19",
+          "title": "Mürəkkəb efirlər. Quruluşu, adlandırılması, izomerliyi və alınması"
+        },
+        {
+          "id": "k11-20",
+          "title": "Mürəkkəb efirlərin xassələri və tətbiqi"
+        },
+        {
+          "id": "k11-21",
+          "title": "Yağlar. Tərkibi, quruluşu və təsnifatı"
+        },
+        {
+          "id": "k11-22",
+          "title": "Yağların xassələri və tətbiqi"
+        },
+        {
+          "id": "k11-23",
+          "title": "Yuyucu vasitələr (Sabunlar və Sintetik Yuyucu Vasitələr)"
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Karbohidratlar (Qlükoza, Saxaroza, Nişasta, Sellüloza)",
+      "topics": [
+        {
+          "id": "k11-24",
+          "title": "Karbohidratların təsnifatı. Qlükoza və Fruktoza"
+        },
+        {
+          "id": "k11-25",
+          "title": "Saxaroza. Quruluşu, alınması və xassələri"
+        },
+        {
+          "id": "k11-26",
+          "title": "Nişasta və Sellüloza (Quruluşu, xassələri və tətbiqi)"
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Azotlu üzvi birləşmələr (Aminlər, Amin turşuları, Zülallar)",
+      "topics": [
+        {
+          "id": "k11-27",
+          "title": "Aminlər. Təsnifatı, izomerliyi və adlandırılması"
+        },
+        {
+          "id": "k11-28",
+          "title": "Aminlərin alınması, fiziki və kimyəvi xassələri"
+        },
+        {
+          "id": "k11-29",
+          "title": "Anilin. Alınması, xassələri və tətbiqi"
+        },
+        {
+          "id": "k11-30",
+          "title": "Amin turşuları. Tərkibi, quruluşu, izomerliyi və adlandırılması"
+        },
+        {
+          "id": "k11-31",
+          "title": "Amin turşularının alınması, xassələri və bioloji rolu"
+        },
+        {
+          "id": "k11-32",
+          "title": "Zülallar (Peptidlər). Quruluşu, təbəqələri və xassələri"
+        },
+        {
+          "id": "k11-33",
+          "title": "Nuklein turşuları (DNT və RNT)"
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Yüksəkmolekullu birləşmələr (Polimerlər) və Tətbiqi kimya",
+      "topics": [
+        {
+          "id": "k11-34",
+          "title": "İrimolekullu birləşmələr (Polimerlər). Əsas anlayışlar"
+        },
+        {
+          "id": "k11-35",
+          "title": "Sintetik və süni liflər (Kapron, Lavsan)"
+        },
+        {
+          "id": "k11-36",
+          "title": "Plastik kütlələr və sintetik kauçuklar"
+        },
+        {
+          "id": "k11-37",
+          "title": "Dərman maddələri və pestisidlər"
+        },
+        {
+          "id": "k11-38",
+          "title": "Üzvi kimyanın həyatımızda və sənayedə rolu"
+        },
+        {
+          "id": "k11-39",
+          "title": "11-ci sinif kimya fənni üzrə yekun ümumiləşdirici testlər"
+        }
+      ]
+    }
+  ],
+  "Riyaziyyat 11": [
+    {
+      "chapter": "I BÖLMƏ: Çoxhədlilər və Kompleks ədədlər",
+      "topics": [
+        {
+          "id": "m11-1",
+          "title": "Çoxhədlinin çoxhədliyə bölünməsi"
+        },
+        {
+          "id": "m11-2",
+          "title": "Rasional köklərin tapılması"
+        },
+        {
+          "id": "m11-3",
+          "title": "Qalıq haqqında teorem"
+        },
+        {
+          "id": "m11-4",
+          "title": "Çoxhədlinin vuruqları haqqında teorem"
+        },
+        {
+          "id": "m11-5",
+          "title": "Kompleks ədədlər haqqında"
+        },
+        {
+          "id": "m11-6",
+          "title": "Cəbrin əsas teoremi"
+        },
+        {
+          "id": "m11-7",
+          "title": "Çoxhədli funksiya"
+        },
+        {
+          "id": "m11-8",
+          "title": "Rasional funksiya"
+        },
+        {
+          "id": "m11-9",
+          "title": "Ümumiləşdirici tapşırıqlar"
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Funksiyanın limiti və kəsilməzliyi",
+      "topics": [
+        {
+          "id": "m11-10",
+          "title": "Funksiyanın limiti və limitlər haqqında teoremlər"
+        },
+        {
+          "id": "m11-11",
+          "title": "Görkəmli limitlər və sonsuzluqda limit"
+        },
+        {
+          "id": "m11-12",
+          "title": "Funksiyanın kəsilməzliyi və kəsilmə nöqtələri"
+        },
+        {
+          "id": "m11-13",
+          "title": "Əsas elementar funksiyaların xassələri və qrafikləri"
+        },
+        {
+          "id": "m11-14",
+          "title": "Mürəkkəb və tərs funksiyalar"
+        },
+        {
+          "id": "m11-15",
+          "title": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi"
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Törəmə və onun tətbiqləri",
+      "topics": [
+        {
+          "id": "m11-16",
+          "title": "Fəsil üzrə ümumiləşdirici tapşırıqlar"
+        },
+        {
+          "id": "m11-17",
+          "title": "Törəmə anlayışı, törəmənin həndəsi və fiziki mənası"
+        },
+        {
+          "id": "m11-18",
+          "title": "Diferensiallama qaydaları və cəmin, hasilin, nisbətin törəməsi"
+        },
+        {
+          "id": "m11-19",
+          "title": "Mürəkkəb funksiyanın və triqonometrik funksiyaların törəməsi"
+        },
+        {
+          "id": "m11-20",
+          "title": "Funksiyanın böhran nöqtələri, artma və azalma aralıqları"
+        },
+        {
+          "id": "m11-21",
+          "title": "Funksiyanın ekstremumları (maksimum və minimum nöqtələri)"
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: İbtidai funksiya və Müəyyən inteqral",
+      "topics": [
+        {
+          "id": "m11-22",
+          "title": "Funksiyanın ən böyük və ən kiçik qiymətlərinin tapılması"
+        },
+        {
+          "id": "m11-23",
+          "title": "Əyriyə çəkilən toxunanın tənliyi"
+        },
+        {
+          "id": "m11-24",
+          "title": "Törəmənin köməyi ilə funksiyanın tədqiqi və qrafikinin qurulması"
+        },
+        {
+          "id": "m11-25",
+          "title": "İbtidai funksiya anlayışı və qeyri-müəyyən inteqral"
+        },
+        {
+          "id": "m11-26",
+          "title": "Əsas inteqral düsturları və inteqrallama qaydaları"
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Fəzada düz xətlər, müstəvilər və koordinatlar",
+      "topics": [
+        {
+          "id": "m11-27",
+          "title": "Müəyyən inteqral və Nyuton-Leybnis düsturu"
+        },
+        {
+          "id": "m11-28",
+          "title": "Əyrixətli trapesiyanın sahəsinin inteqral vasitəsilə hesablanması"
+        },
+        {
+          "id": "m11-29",
+          "title": "Fırlanma cisimlərinin həcminin inteqral vasitəsilə hesablanması"
+        },
+        {
+          "id": "m11-30",
+          "title": "İnteqralın fizikada və təbiətdə tətbiqləri"
+        },
+        {
+          "id": "m11-31",
+          "title": "Fırlanma cisimləri: Silindr, onun səthinin sahəsi və həcmi"
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Fırlanma cisimləri (Silindr, Konus, Kürə)",
+      "topics": [
+        {
+          "id": "m11-32",
+          "title": "Konus və kəsik konus, onların səthinin sahəsi və həcmi"
+        },
+        {
+          "id": "m11-33",
+          "title": "Kürə və sfera, kürə sektorunun və seqmentinin həcmi"
+        },
+        {
+          "id": "m11-34",
+          "title": "Kombinatorikanın əsas prinsipləri (Permutasiya, Kombinezon, Qruplaşma)"
+        },
+        {
+          "id": "m11-35",
+          "title": "Hadisənin ehtimalı, asılı və asılı olmayan hadisələr"
+        }
+      ]
+    },
+    {
+      "chapter": "VII BÖLMƏ: Ehtimal nəzəriyyəsi, Statistika və Yekun təkrar",
+      "topics": [
+        {
+          "id": "m11-36",
+          "title": "Statistika, paylanma parametrləri və Bernulli düsturu"
+        },
+        {
+          "id": "m11-37",
+          "title": "Yekun ümumiləşdirici təkrar"
+        }
+      ]
+    }
+  ],
+  "Azərbaycan tarixi 11": [
+    {
+      "chapter": "I BÖLMƏ: Şimali və Cənubi Azərbaycan XIX əsrin birinci yarısında",
+      "topics": [
+        {
+          "id": "at11-1",
+          "title": "1. Rusiya tərəfindən Azərbaycanın şimal torpaqlarının işğalına başlanması"
+        },
+        {
+          "id": "at11-2",
+          "title": "2. Cənubi Qafqaz uğrunda Rusiya imperiyası və Qacarlar dövləti arasında müharibələr (Gülüstan və Türkmənçay)"
+        },
+        {
+          "id": "at11-3",
+          "title": "3. Rusiya imperiyasının müstəmləkə siyasəti və Komendant idarə üsulu"
+        },
+        {
+          "id": "at11-4",
+          "title": "4. XIX əsrin 30-cu illəri üsyanları (Car-Balakən, Quba, Şəki, Lənkəran)"
+        },
+        {
+          "id": "at11-5",
+          "title": "5. XIX əsrin 40-cı illərində keçirilən islahatlar (1840 İnzibati və 1846 Aqrar əsasnaməsi)"
+        },
+        {
+          "id": "at11-6",
+          "title": "6. Yeni sosial münasibətlərin meydana gəlməsi və kənd təsərrüfatı"
+        },
+        {
+          "id": "at11-7",
+          "title": "7. Şimali Azərbaycanın iqtisadi inkişaf xüsusiyyətləri (Ticarət, manufaktura və ipəkçilik)"
+        },
+        {
+          "id": "at11-8",
+          "title": "8. Cənubi Azərbaycan XIX əsrin birinci yarısında"
+        },
+        {
+          "id": "at11-9",
+          "title": "9. XIX əsrin birinci yarısında Azərbaycan mədəniyyəti və maarifçilik"
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Azərbaycan XIX əsrin ikinci yarısında",
+      "topics": [
+        {
+          "id": "at11-10",
+          "title": "10. Kəndli islahatı (1870-ci il 14 may Əsasnaməsi) və aqrar münasibətlər"
+        },
+        {
+          "id": "at11-11",
+          "title": "11. Şimali Azərbaycanda kapitalist sənayesinin inkişafı və Bakı neft bumu"
+        },
+        {
+          "id": "at11-12",
+          "title": "12. Milli burjuaziya və xeyriyyəçilik hərəkatı (Hacı Zeynalabdin Tağıyev və b.)"
+        },
+        {
+          "id": "at11-13",
+          "title": "13. Milli oyanış, mətbuat (\"Əkinçi\", Həsən bəy Zərdabi) və teatr"
+        },
+        {
+          "id": "at11-14",
+          "title": "14. 1905-1907-ci illər inqilabı dövründə Azərbaycanda ictimai-siyasi hərəkat"
+        },
+        {
+          "id": "at11-15",
+          "title": "15. Siyasi partiyalar və təşkilatlar (\"Hümmət\", \"Müsavat\", \"Qeyrət\", \"Difai\", \"İttifaq\")"
+        },
+        {
+          "id": "at11-16",
+          "title": "16. Birinci Dünya müharibəsi illərində Şimali və Cənubi Azərbaycan"
+        },
+        {
+          "id": "at11-17",
+          "title": "17. 1918-ci il 31 Mart soyqırımı və milli faciə"
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Azərbaycan XX əsrin əvvəllərində və AXC dövrü",
+      "topics": [
+        {
+          "id": "at11-18",
+          "title": "18. Milli Şuranın yaranması və 1918-ci il 28 May İstiqlal Bəyannaməsi"
+        },
+        {
+          "id": "at11-19",
+          "title": "19. Qafqaz İslam Ordusu və Bakının azad edilməsi (15 sentyabr 1918)"
+        },
+        {
+          "id": "at11-20",
+          "title": "20. AXC-nin dövlət quruculuğu, parlamenti və hökumət kabinələri"
+        },
+        {
+          "id": "at11-21",
+          "title": "21. AXC-nin daxili, sosial-iqtisadi, təhsil və hərbi siyasəti (Milli Ordu, BDU)"
+        },
+        {
+          "id": "at11-22",
+          "title": "22. AXC-nin xarici siyasəti və Paris Sülh Konfransında müstəqilliyin de-fakto tanınması"
+        },
+        {
+          "id": "at11-23",
+          "title": "23. Aprel işğalı (27-28 aprel 1920) və AXC-nin süqutu"
+        },
+        {
+          "id": "at11-24",
+          "title": "24. Azərbaycanda sovet rejiminin qurulması və milli müqavimət üsyanları (Gəncə, Qarabağ)"
+        },
+        {
+          "id": "at11-25",
+          "title": "25. Sovet dövründə ərazi bütövlüyünə qəsdlər (Qarabağ, Zəngəzur və Naxçıvan məsələsi)"
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Azərbaycan sovet totalitar rejimi dövründə və İkinci Dünya müharibəsi",
+      "topics": [
+        {
+          "id": "at11-26",
+          "title": "26. Sənayeləşdirmə və zorakı kolxozlaşdırma siyasəti"
+        },
+        {
+          "id": "at11-27",
+          "title": "27. 1930-cu illərin kütləvi repressiyaları və \"Qırmızı terror\" (Hüseyn Cavid, Mikayıl Müşfiq və b.)"
+        },
+        {
+          "id": "at11-28",
+          "title": "28. Azərbaycan İkinci Dünya müharibəsi illərində (Bakı neftinin rolu və döyüş qəhrəmanlarımız)"
+        },
+        {
+          "id": "at11-29",
+          "title": "29. Müharibədən sonrakı illərdə sosial-iqtisadi inkişaf və deportasiyalar (1948-1953)"
+        },
+        {
+          "id": "at11-30",
+          "title": "30. 1969-1982-ci illərdə Heydər Əliyevin rəhbərliyi ilə Azərbaycanın intibah dövrü"
+        },
+        {
+          "id": "at11-31",
+          "title": "31. 1980-ci illərin sonlarında erməni təcavüzü, Qərbi Azərbaycandan deportasiya və Meydan hərəkatı"
+        },
+        {
+          "id": "at11-32",
+          "title": "32. 1990-cı il 20 Yanvar faciəsi və milli iradənin oyanışı"
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Şimali və Cənubi Azərbaycan XX əsrin ikinci yarısında",
+      "topics": [
+        {
+          "id": "at11-33",
+          "title": "33. Dövlət müstəqilliyinin bərpası (18 oktyabr 1991) və ilk illərin dərin böhranı"
+        },
+        {
+          "id": "at11-34",
+          "title": "34. Birinci Qarabağ müharibəsi, Xocalı soyqırımı və torpaqlarımızın işğalı"
+        },
+        {
+          "id": "at11-35",
+          "title": "35. 1993-cü il Heydər Əliyevin hakimiyyətə qayıdışı və Milli Qurtuluş günü"
+        },
+        {
+          "id": "at11-36",
+          "title": "36. \"Əsrin müqaviləsi\" (1994) və Azərbaycanın yeni neft-qaz strategiyası"
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Müstəqillik dövrü, 44 günlük Vətən müharibəsi və Böyük Qayıdış",
+      "topics": [
+        {
+          "id": "at11-37",
+          "title": "37. Dövlət quruculuğu, ilk Milli Konstitusiyanın qəbulu (1995) və ordu quruculuğu"
+        },
+        {
+          "id": "at11-38",
+          "title": "38. İlham Əliyevin rəhbərliyi ilə Azərbaycanın dinamik inkişafı və beynəlxalq nüfuzunun artması"
+        },
+        {
+          "id": "at11-39",
+          "title": "39. Aprel döyüşləri (2016) və Tovuz döyüşləri (2020)"
+        },
+        {
+          "id": "at11-40",
+          "title": "40. 44 günlük Vətən müharibəsi (27 sentyabr - 10 noyabr 2020) və Tarixi Zəfər"
+        },
+        {
+          "id": "at11-41",
+          "title": "41. Lokal antiterror tədbirləri (19-20 sentyabr 2023) və dövlət suverenliyinin tam bərpası"
+        },
+        {
+          "id": "at11-42",
+          "title": "42. Böyük Qayıdış proqramı və Qarabağın, Şərqi Zəngəzurun bərpası"
+        }
+      ]
+    }
+  ],
+  "Azərbaycan dili 11": [
+    {
+      "chapter": "I HİSSƏ: Mətn və Fonetik-Leksik Normalar",
+      "topics": [
+        {
+          "id": "ad11-1",
+          "title": "Böyük ömrün dan yeri"
+        },
+        {
+          "id": "ad11-2",
+          "title": "Şəbi-hicran"
+        },
+        {
+          "id": "ad11-3",
+          "title": "Sizin də bir basketbol səbətiniz varmı?"
+        },
+        {
+          "id": "ad11-4",
+          "title": "Hər uşağın ən yaxşı tərəfini üzə çıxarmaq"
+        },
+        {
+          "id": "ad11-5",
+          "title": "Gəncə Müsəlman Qız Məktəbi"
+        },
+        {
+          "id": "ad11-6",
+          "title": "Mətn"
+        },
+        {
+          "id": "ad11-7",
+          "title": "Doroti Meri Kroufut Hodgkin"
+        }
+      ]
+    },
+    {
+      "chapter": "II HİSSƏ: Morfoloji və Sintaktik Normalar",
+      "topics": [
+        {
+          "id": "ad11-8",
+          "title": "Nitq hissələrinin üslubi imkanları və morfoloji norma"
+        },
+        {
+          "id": "ad11-9",
+          "title": "İsim, sifət və sayın nitqdə düzgün işlədilməsi qaydaları"
+        },
+        {
+          "id": "ad11-10",
+          "title": "Əvəzlik və fellərin işlənməsində qarşıya çıxan qüsurlar"
+        },
+        {
+          "id": "ad11-11",
+          "title": "Köməkçi nitq hissələrinin fərqləndirilməsi və orfoqrafiyası"
+        },
+        {
+          "id": "ad11-12",
+          "title": "Cümlə üzvlərinin uzlaşması və sintaktik əlaqələr"
+        },
+        {
+          "id": "ad11-13",
+          "title": "Söz sırası və sintaktik norma"
+        },
+        {
+          "id": "ad11-14",
+          "title": "Tabesiz və tabeli mürəkkəb cümlələrdə durğu işarələri və norma"
+        }
+      ]
+    },
+    {
+      "chapter": "III HİSSƏ: Üslubiyyat, Funksional Üslublar və Nitq Mədəniyyəti",
+      "topics": [
+        {
+          "id": "ad11-15",
+          "title": "Mürəkkəb sintaktik bütövlər və dövrə"
+        },
+        {
+          "id": "ad11-16",
+          "title": "Azərbaycan ədəbi dilinin funksional üslubları"
+        },
+        {
+          "id": "ad11-17",
+          "title": "Bədii üslub və onun linqvistik xüsusiyyətləri (Məcazlar sistemi)"
+        },
+        {
+          "id": "ad11-18",
+          "title": "Elmi üslub, terminologiya və mətndə terminlərin rolu"
+        },
+        {
+          "id": "ad11-19",
+          "title": "Publisistik üslub və onun janrları"
+        },
+        {
+          "id": "ad11-20",
+          "title": "Rəsmi-işgüzar üslub (Ərizə, akt, protokol, arayış, vəkalətnamə)"
+        },
+        {
+          "id": "ad11-21",
+          "title": "Məişət üslubu və dialektlərin rolu"
+        }
+      ]
+    },
+    {
+      "chapter": "IV HİSSƏ: Mətn Üzərində İş və İmtahan Hazırlığı",
+      "topics": [
+        {
+          "id": "ad11-22",
+          "title": "Nitq mədəniyyətinin əsas şərtləri (Düzgünlük, dəqiqlik, aydınlıq, zənginlik, münasiblik)"
+        },
+        {
+          "id": "ad11-23",
+          "title": "Mətndə fakt və münasibət, əsas və ikinci dərəcəli fikirlər"
+        },
+        {
+          "id": "ad11-24",
+          "title": "Mətnin abzas quruluşu, mikro və makromövzular"
+        },
+        {
+          "id": "ad11-25",
+          "title": "Mətnin kompozisiyası (Giriş, əsas hissə, nəticə)"
+        },
+        {
+          "id": "ad11-26",
+          "title": "Mətndə məntiqi və üslubi xətaların tapılması və redaktəsi"
+        },
+        {
+          "id": "ad11-27",
+          "title": "Esse və inşa yazma texnologiyası"
+        },
+        {
+          "id": "ad11-28",
+          "title": "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri"
+        }
+      ]
+    }
   ]
 }

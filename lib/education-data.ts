@@ -40,7 +40,7 @@ export const subjectsByClass: Record<string, string[]> = {
     "8": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Ortaq türk tarixi", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "9": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Zəfər tarixi", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Həyat bilgisi", "Texnologiya", "Təsviri İncəsənət", "Musiqi", "Fiziki tərbiyə"],
     "10": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"],
-    "11": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "İkinci xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya", "Fiziki tərbiyə", "Çağırışaqədərki hazırlıq"]
+    "11": ["Azərbaycan dili", "Ədəbiyyat", "Xarici dil", "Riyaziyyat", "İnformatika", "Azərbaycan tarixi", "Ümumi tarix", "Fizika", "Kimya", "Biologiya", "Coğrafiya"]
 };
 
 
