@@ -42,3 +42,21 @@ CREATE TABLE IF NOT EXISTS "ParentInvite" (
   "rejectedAt"       TIMESTAMPTZ,
   "createdAt"        TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- ============================================================
+-- 0.5: Supabase Data API Access (Oct 30 Rule Compliance)
+-- ============================================================
+
+-- NotificationLog üçün icazələr
+GRANT SELECT ON public."NotificationLog" TO anon;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public."NotificationLog" TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public."NotificationLog" TO service_role;
+
+-- ParentInvite üçün icazələr
+GRANT SELECT ON public."ParentInvite" TO anon;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public."ParentInvite" TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public."ParentInvite" TO service_role;
+
+-- SERIAL id ardıcıllıqları üçün icazələr
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO authenticated, service_role;
+

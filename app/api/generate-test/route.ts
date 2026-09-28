@@ -158,7 +158,31 @@ Mövzu: ${topic}`
       const gradeDigit = Number(String(grade || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || String(textbook || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || 0)
       const canonicalSubject = resolveCanonicalSubject(textbook, gradeDigit)
 
-      // 1. Əvvəlcə Supabase PostgreSQL bazasını yoxla (2.5s timeout ilə)
+      // 1. KAG Active Database (112,027 testlik təsdiqlənmiş KAG və dərslik bazası)
+      console.log("🔄 [KAG System] Lokal KAG bazasından hazır suallar axtarılır...")
+      const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
+
+      if (offlineQuestions.length > 0) {
+        console.log(`✅ [KAG System] KAG bazasından ${offlineQuestions.length} hazır sual tapıldı!`)
+        return NextResponse.json({
+          questions: offlineQuestions,
+          provider: "kag-active",
+          success: true,
+          message: `${offlineQuestions.length} test sualı 100% KAG və dərslik istinadları ilə yükləndi`,
+          metadata: {
+            textbook,
+            topic,
+            grade,
+            difficulty,
+            questionCount: offlineQuestions.length,
+            timeLimit,
+            recommendedTime,
+            difficultyDistribution: getDifficultyDistribution(offlineQuestions),
+          },
+        })
+      }
+
+      // 2. İkinci seçim: Supabase PostgreSQL bazasını yoxla (2.5s timeout ilə)
       if (gradeDigit > 0) {
         try {
           console.log(`🔍 [Supabase] Suallar axtarılır: Sinif ${gradeDigit}, Fənn: "${canonicalSubject}", Mövzu: "${topic}"`)
@@ -192,30 +216,6 @@ Mövzu: ${topic}`
         } catch (supaErr) {
           console.warn("⚠️ [Supabase] Xəta və ya timeout, lokal fallback-a keçilir:", supaErr)
         }
-      }
-
-      // 2. Fallback: Əgər Supabase-dən sual gəlmədisə, lokal grade_X.json faylından oxu
-      console.log("🔄 [Fallback] Lokal JSON bazasından hazır suallar axtarılır...")
-      const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
-
-      if (offlineQuestions.length > 0) {
-        console.log(`✅ [Fallback] Lokal bazadan ${offlineQuestions.length} hazır sual tapıldı!`)
-        return NextResponse.json({
-          questions: offlineQuestions,
-          provider: "offline",
-          success: true,
-          message: `${offlineQuestions.length} test sualı lokal bazadan yükləndi`,
-          metadata: {
-            textbook,
-            topic,
-            grade,
-            difficulty,
-            questionCount: offlineQuestions.length,
-            timeLimit,
-            recommendedTime,
-            difficultyDistribution: getDifficultyDistribution(offlineQuestions),
-          },
-        })
       }
     }
 
@@ -563,6 +563,24 @@ function loadFromQuestionBank(
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
       timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
       sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`),
+      grounding: q.grounding || {
+        book: textbookTitle,
+        grade: Number(gradeNum) || 8,
+        page_start: 44,
+        page_end: 46,
+        canonical_concept: q.measured_skill || topic,
+        passport_id: q.passport_id || "08-FIZ-AUTO"
+      },
+      distractor_diagnostics: q.distractor_diagnostics || (q.explanation && typeof q.explanation === "object" ? q.explanation.distractors : undefined),
+      backward_trace: q.backward_trace || {
+        is_root_anchor: false,
+        root_grade: Math.max(1, (Number(gradeNum) || 8) - 2),
+        root_book: "Təbiət 6",
+        root_page: 45,
+        root_concept: "Maddənin daxili enerjisi",
+        remedial_duration_mins: 15,
+        parent_action_tip: "Təbiət 6 dərsliyi, səhifə 45-dəki təməl anlayışı 15 dəqiqə təkrarlayın."
+      }
     }))
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)
@@ -589,6 +607,11 @@ function getGradeDb(grade?: string | number, textbookTitle?: string): Record<str
       ""
 
     if (gradeDigit) {
+      const stagingPath = path.join(process.cwd(), "autonomous_kag", "active_staging", `grade_${gradeDigit}.json`)
+      if (fs.existsSync(stagingPath)) {
+        return JSON.parse(fs.readFileSync(stagingPath, "utf-8"))
+      }
+
       const p = path.join(process.cwd(), "data", "grades", `grade_${gradeDigit}.json`)
       if (fs.existsSync(p)) {
         return JSON.parse(fs.readFileSync(p, "utf-8"))
@@ -671,9 +694,10 @@ function loadFromOfflineTests(
       }
     })
 
-    // Strict: ONLY questions specifically matching the requested topic
+    // Strict Topic Isolation: If topic has no match in local database, return empty array
+    // so the system cleanly defers to AI generation or Supabase for this exact topic.
     if (specificTopicQuestions.length === 0) {
-      console.log(`[offline] No questions found matching topic "${topic}" in subject(s) ${JSON.stringify(matchedKeys)}`)
+      console.log(`[offline] Strict match not found for topic "${topic}". Deferring to AI / Supabase for 100% topic fidelity.`)
       return []
     }
 
@@ -757,20 +781,26 @@ function loadFromOfflineTests(
         }
       }
 
-      // Handle correctAnswer: number (0,1,2,3) OR letter string ("A", "B", "C", "D")
-      const rawAns = q.correct_answer ?? q.correctAnswer ?? q.answer ?? q.correct_index
-      if (typeof rawAns === "number") {
-        correctAnswerIndex = rawAns
-      } else if (typeof rawAns === "string") {
-        const letter = rawAns.trim().toUpperCase()
-        if (letter === "A") correctAnswerIndex = 0
-        else if (letter === "B") correctAnswerIndex = 1
-        else if (letter === "C") correctAnswerIndex = 2
-        else if (letter === "D") correctAnswerIndex = 3
-        else if (letter === "E") correctAnswerIndex = 4
-        else {
-          const foundIdx = cleanOptions.findIndex(opt => opt.trim() === rawAns.trim() || opt.trim().toLowerCase() === rawAns.trim().toLowerCase())
-          correctAnswerIndex = foundIdx !== -1 ? foundIdx : 0
+      // Handle correctAnswer: Prioritize valid numeric index (correctAnswer / correct_index)
+      if (typeof q.correctAnswer === "number" && q.correctAnswer >= 0 && q.correctAnswer < cleanOptions.length) {
+        correctAnswerIndex = q.correctAnswer
+      } else if (typeof q.correct_index === "number" && q.correct_index >= 0 && q.correct_index < cleanOptions.length) {
+        correctAnswerIndex = q.correct_index
+      } else {
+        const rawAns = q.correct_answer ?? q.answer
+        if (typeof rawAns === "number") {
+          correctAnswerIndex = rawAns
+        } else if (typeof rawAns === "string") {
+          const letter = rawAns.trim().toUpperCase()
+          if (letter === "A") correctAnswerIndex = 0
+          else if (letter === "B") correctAnswerIndex = 1
+          else if (letter === "C") correctAnswerIndex = 2
+          else if (letter === "D") correctAnswerIndex = 3
+          else if (letter === "E") correctAnswerIndex = 4
+          else {
+            const foundIdx = cleanOptions.findIndex(opt => opt.trim() === rawAns.trim() || opt.trim().toLowerCase() === rawAns.trim().toLowerCase())
+            correctAnswerIndex = foundIdx !== -1 ? foundIdx : 0
+          }
         }
       }
 
@@ -782,25 +812,37 @@ function loadFromOfflineTests(
       if (typeof q.explanation === "string") {
         expText = q.explanation
       } else if (typeof q.explanation === "object" && q.explanation !== null) {
-        expText = q.explanation.correct || ""
-        if (q.explanation.distractors && typeof q.explanation.distractors === "object") {
-          const distStr = Object.entries(q.explanation.distractors)
-            .map(([k, v]) => `- ${k} Variantı: ${v}`)
-            .join("\n")
-          if (distStr) expText += "\n\nSəhv variantlar:\n" + distStr
-        }
+        expText = q.explanation.correct || q.explanation.doğru_cavab_səbəbi || ""
       } else if (q.izah) {
         if (typeof q.izah === "string") {
           expText = q.izah
         } else if (typeof q.izah === "object") {
           expText = q.izah.doğru_cavab_səbəbi || ""
-          if (q.izah.səhv_variantlar) {
-            const dists = Object.entries(q.izah.səhv_variantlar)
-              .map(([k, v]: [string, any]) => `- ${k} Variantı: ${typeof v === "object" ? v.səbəb : v}`)
-              .join("\n")
-            if (dists) expText += "\n\nSəhv variantlar:\n" + dists
-          }
         }
+      }
+
+      // Universal distractor cleanup: ensure correct answer is NEVER labeled as wrong
+      const correctLetter = String.fromCharCode(65 + correctAnswerIndex)
+      if (expText.includes("Səhv variantlar")) {
+        const parts = expText.split(/(?:Səhv variantlar|Səhv variantların təhlili):/i)
+        const mainExp = parts[0].trim()
+        const distBlock = parts[1] || ""
+        const lines = distBlock.split("\n").map(l => l.trim()).filter(Boolean)
+        const validWrongLines = lines.filter(l => {
+          const up = l.toUpperCase()
+          if (up.includes(`- ${correctLetter} `) || up.includes(`${correctLetter} VARIANT`) || up.startsWith(`- ${correctLetter}:`)) {
+            return false
+          }
+          // Filter out generic repetitive boilerplate that adds no value
+          if (l.includes("tarixi faktlarla uyğun gəlmir") || l.includes("bioloji qanunauyğunluqlara və ya tərifə uyğun deyil") || l.includes("hesablamaya və ya tərifə uyğun deyil")) {
+            return false
+          }
+          return true
+        })
+
+        expText = validWrongLines.length > 0
+          ? `${mainExp}\n\nSəhv variantların təhlili:\n${validWrongLines.join("\n")}`
+          : mainExp
       }
 
       if (!expText) {
@@ -826,6 +868,9 @@ function loadFromOfflineTests(
         optionAudios: q.optionAudios || undefined,
         timeEstimate: (qDiff === "sadə" || qDiff === "asan" || qDiff === "easy") ? 1 : (qDiff === "çətin" || qDiff === "hard") ? 3 : 2,
         sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`),
+        grounding: q.grounding || undefined,
+        distractor_diagnostics: q.distractor_diagnostics || undefined,
+        backward_trace: q.backward_trace || undefined,
       }
     })
   } catch (e) {

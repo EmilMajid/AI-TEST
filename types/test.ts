@@ -10,6 +10,31 @@ export interface Question {
   options: string[]
   correctAnswer: number
   explanation: string
+  difficulty?: string
+  topic?: string
+  bloomLevel?: string
+  sourceContext?: string
+  image?: string
+  audio?: string
+  optionAudios?: string[]
+  grounding?: {
+    book?: string
+    grade?: number
+    page_start?: number
+    page_end?: number
+    canonical_concept?: string
+    passport_id?: string
+  }
+  distractor_diagnostics?: Record<string, string>
+  backward_trace?: {
+    is_root_anchor?: boolean
+    root_grade?: number
+    root_book?: string
+    root_page?: number
+    root_concept?: string
+    remedial_duration_mins?: number
+    parent_action_tip?: string
+  }
 }
 
 export interface TestResults {

@@ -72,8 +72,8 @@ export function stripTopicPrefix(str: string): string {
   // 4. Lesson / theme indicators: "dərs 1.", "урок 1.", "stunde 1.", "leçon 1.", "mövzu 1.", "dil qaydaları:"
   s = s.replace(/^(dərs|ders|урок|urok|stunde|leçon|lesson|mövzu|dil qaydaları:?)\s*([0-9]+|[ivxlcdm]+)?[.\-:]*\s*/gi, "")
 
-  // 5. Leading number with mandatory delimiter: "1. Məktəb", "1.1. Hesabi kvadrat kök", "12) Dərs", "1 - Fiqurlar"
-  s = s.replace(/^[0-9]+(?:\.[0-9]+)*\s*[\.\)\-:]\s*/gi, "")
+  // 5. Leading number with delimiter or space: "1. Məktəb", "1.1. Hesabi kvadrat kök", "12) Dərs", "1 - Fiqurlar", "6.1 İstilik miqdarı"
+  s = s.replace(/^[0-9]+(?:\.[0-9]+)*[\s\.\)\-:]+\s*/gi, "")
 
   // 6. Leading Roman numeral ONLY with mandatory delimiter: "I. Giriş", "IV) Xassələr"
   s = s.replace(/^[ivxlcdm]+\s*[\.\)\-:]\s+/gi, "")
@@ -131,7 +131,7 @@ export function findBestTopicMatch(targetTopic: string, candidateTopics: string[
       // Avoid matching if both have distinct numbers (e.g. "13" vs "14")
       const numC = (cClean.match(/\b\d+\b/g) || []).join(",")
       const numT = (tClean.match(/\b\d+\b/g) || []).join(",")
-      if (numC !== numT) {
+      if (numC && numT && numC !== numT) {
         continue
       }
       containmentMatches.push(c)
@@ -152,7 +152,7 @@ export function findBestTopicMatch(targetTopic: string, candidateTopics: string[
 
     const numC = (cClean.match(/\b\d+\b/g) || []).join(",")
     const numT = (tClean.match(/\b\d+\b/g) || []).join(",")
-    if (numC !== numT) {
+    if (numC && numT && numC !== numT) {
       continue
     }
 

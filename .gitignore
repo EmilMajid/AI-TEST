@@ -58,3 +58,24 @@ public/textbooks/
 *.pdf
 *.traineddata
 data/cache/*.db
+
+# Isolated Backward Knowledge Mapping & Research (NEVER upload to testai.az)
+autonomous_kag/
+pilot_kag/
+data/curriculum_spiral_matrix.json
+data/clean_topics_*.json
+backups_berpa/
+data/backup_isolated_20260927/
+scratch/
+scratch_test_supabase_audit.py
+scratch_supabase_semantic_audit.py
+berpa_*.py
+execute_phases.py
+test_g1_insert.py
+trims_451.html
+verification_output.txt
+verification.log
+berpa_icra_log.txt
+berpa_log.txt
+lib/kag-pilot-adapter.ts
+Test_Generasiya_Master_Plani_*.md

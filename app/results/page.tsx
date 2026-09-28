@@ -43,6 +43,24 @@ interface Question {
   topic: string
   bloomLevel: string
   sourceContext?: string
+  grounding?: {
+    book?: string
+    grade?: number
+    page_start?: number
+    page_end?: number
+    canonical_concept?: string
+    passport_id?: string
+  }
+  distractor_diagnostics?: Record<string, string>
+  backward_trace?: {
+    is_root_anchor?: boolean
+    root_grade?: number
+    root_book?: string
+    root_page?: number
+    root_concept?: string
+    remedial_duration_mins?: number
+    parent_action_tip?: string
+  }
 }
 
 interface TestResults {
@@ -1004,6 +1022,61 @@ export default function ResultsPage() {
                               {cleanExplanation(question.explanation || questionAnalysis?.aiExplanation)}
                             </p>
                           </div>
+
+                          {/* KAG Dərslik Səhifəsi İstinadı */}
+                          {question.grounding && (
+                            <div className="bg-blue-50/60 border border-blue-200/80 px-4 py-2.5 rounded-xl flex flex-wrap items-center justify-between text-xs text-blue-900 gap-2">
+                              <span className="font-semibold flex items-center gap-1.5">
+                                <BookOpen className="h-3.5 w-3.5 text-blue-600" />
+                                <strong>KAG Dəqiq Dərslik:</strong> {question.grounding.book}
+                              </span>
+                              <span className="bg-white border border-blue-200 px-2 py-0.5 rounded font-mono font-medium text-blue-800">
+                                Səhifə: {question.grounding.page_start} - {question.grounding.page_end}
+                              </span>
+                            </div>
+                          )}
+
+                          {/* KAG Yanlış Cavab Distraktor Diaqnostikası */}
+                          {!isCorrect && userAnswer !== undefined && question.distractor_diagnostics && (
+                            (() => {
+                              const chosenLetter = String.fromCharCode(65 + Number(userAnswer));
+                              const diagText = question.distractor_diagnostics[chosenLetter] || question.distractor_diagnostics[chosenLetter.toLowerCase()];
+                              if (!diagText) return null;
+                              return (
+                                <div className="bg-red-50/70 border border-red-200 p-3.5 rounded-xl text-xs text-red-900 space-y-1">
+                                  <div className="font-bold flex items-center gap-1.5 text-red-800">
+                                    <Target className="h-3.5 w-3.5 text-red-600" />
+                                    <span>Seçdiyiniz ({chosenLetter}) variantının diaqnostik təhlili:</span>
+                                  </div>
+                                  <p className="leading-relaxed pl-5 text-red-800/90">{diagText}</p>
+                                </div>
+                              );
+                            })()
+                          )}
+
+                          {/* 🎯 KAG 15 Dəqiqəlik Valideyn Bərpa Bələdçisi */}
+                          {question.backward_trace && !isCorrect && (
+                            <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5 border border-amber-300 p-4 rounded-xl space-y-2 shadow-xs">
+                              <div className="flex items-center justify-between">
+                                <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
+                                  <Brain className="h-4 w-4 text-amber-600" />
+                                  🎯 15 Dəqiqəlik Valideyn Bərpa Bələdçisi
+                                </h4>
+                                <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
+                                  {question.backward_trace.is_root_anchor ? "Bünövrə Nöqtəsi (1-ci Sinif)" : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
+                                </Badge>
+                              </div>
+                              <p className="text-xs text-amber-900 leading-relaxed font-medium">
+                                {question.backward_trace.parent_action_tip || `Bu səhvin kök səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyinə aiddir.`}
+                              </p>
+                              <div className="text-[11px] text-amber-950/80 bg-white/80 border border-amber-200 px-3 py-1.5 rounded-lg flex items-center justify-between">
+                                <span>Tövsiyə olunan bərpa vaxtı: <strong>{question.backward_trace.remedial_duration_mins || 15} dəqiqə</strong></span>
+                                {question.backward_trace.root_concept && (
+                                  <span>Təməl mövzu: <strong>{question.backward_trace.root_concept}</strong></span>
+                                )}
+                              </div>
+                            </div>
+                          )}
 
                           {/* Dynamic AI tips if specifically provided by model */}
                           {questionAnalysis && questionAnalysis.improvementTips?.length > 0 && (

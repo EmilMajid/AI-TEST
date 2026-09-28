@@ -88,38 +88,16 @@ export function cleanExplanation(val: any): string {
 
   if (typeof obj === "object" && obj !== null && !Array.isArray(obj)) {
     const correctText = obj.correct || obj.doğru_cavab_səbəbi || obj.text || obj.izah || obj.explanation || ""
-    const distObj = obj.distractors || obj.səhv_variantlar
-    let distStr = ""
-
-    if (distObj) {
-      if (Array.isArray(distObj)) {
-        const items = distObj
-          .map((d: any) => (typeof d === "object" ? (d.reason || d.text || "") : String(d)))
-          .filter((t: string) => t && !t.includes("hesablamaya və ya tərifə uyğun deyil"))
-        if (items.length > 0) {
-          distStr = items.map((t: string) => `- ${t}`).join("\n")
-        }
-      } else if (typeof distObj === "object") {
-        const entries = Object.entries(distObj)
-          .map(([k, v]: [string, any]) => {
-            const label = isNaN(Number(k)) ? k : String.fromCharCode(65 + Number(k))
-            const text = typeof v === "object" ? (v?.reason || v?.text || v?.səbəb || "") : String(v)
-            return { label, text }
-          })
-          .filter((e) => e.text && !e.text.includes("hesablamaya və ya tərifə uyğun deyil"))
-        if (entries.length > 0) {
-          distStr = entries.map((e) => `- ${e.label} variantı: ${e.text}`).join("\n")
-        }
-      }
-    }
-
-    if (correctText && distStr) {
-      return `${formatScientificText(correctText)}\n\nSəhv variantlar:\n${distStr}`
-    }
     if (correctText) return formatScientificText(correctText)
   }
 
-  return formatScientificText(typeof val === "string" ? val : String(val))
+  let finalStr = typeof val === "string" ? val : String(val || "")
+  // If a string contains embedded "Səhv variantlar:" block, extract only the main scientific explanation
+  if (finalStr.includes("Səhv variantlar")) {
+    finalStr = finalStr.split(/(?:Səhv variantlar|Səhv variantların təhlili):/i)[0].trim()
+  }
+
+  return formatScientificText(finalStr)
 }
 
 export function formatScientificText(text: any): string {
