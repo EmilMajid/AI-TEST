@@ -52,15 +52,6 @@ interface Question {
     passport_id?: string
   }
   distractor_diagnostics?: Record<string, string>
-  backward_trace?: {
-    is_root_anchor?: boolean
-    root_grade?: number
-    root_book?: string
-    root_page?: number
-    root_concept?: string
-    remedial_duration_mins?: number
-    parent_action_tip?: string
-  }
 }
 
 interface TestResults {
@@ -1052,30 +1043,6 @@ export default function ResultsPage() {
                                 </div>
                               );
                             })()
-                          )}
-
-                          {/* 🎯 KAG 15 Dəqiqəlik Valideyn Bərpa Bələdçisi */}
-                          {question.backward_trace && !isCorrect && (
-                            <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5 border border-amber-300 p-4 rounded-xl space-y-2 shadow-xs">
-                              <div className="flex items-center justify-between">
-                                <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
-                                  <Brain className="h-4 w-4 text-amber-600" />
-                                  🎯 15 Dəqiqəlik Valideyn Bərpa Bələdçisi
-                                </h4>
-                                <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
-                                  {question.backward_trace.is_root_anchor ? "Bünövrə Nöqtəsi (1-ci Sinif)" : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
-                                </Badge>
-                              </div>
-                              <p className="text-xs text-amber-900 leading-relaxed font-medium">
-                                {question.backward_trace.parent_action_tip || `Bu səhvin kök səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyinə aiddir.`}
-                              </p>
-                              <div className="text-[11px] text-amber-950/80 bg-white/80 border border-amber-200 px-3 py-1.5 rounded-lg flex items-center justify-between">
-                                <span>Tövsiyə olunan bərpa vaxtı: <strong>{question.backward_trace.remedial_duration_mins || 15} dəqiqə</strong></span>
-                                {question.backward_trace.root_concept && (
-                                  <span>Təməl mövzu: <strong>{question.backward_trace.root_concept}</strong></span>
-                                )}
-                              </div>
-                            </div>
                           )}
 
                           {/* Dynamic AI tips if specifically provided by model */}

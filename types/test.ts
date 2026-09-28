@@ -26,15 +26,7 @@ export interface Question {
     passport_id?: string
   }
   distractor_diagnostics?: Record<string, string>
-  backward_trace?: {
-    is_root_anchor?: boolean
-    root_grade?: number
-    root_book?: string
-    root_page?: number
-    root_concept?: string
-    remedial_duration_mins?: number
-    parent_action_tip?: string
-  }
+
 }
 
 export interface TestResults {

@@ -563,24 +563,8 @@ function loadFromQuestionBank(
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
       timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
       sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`),
-      grounding: q.grounding || {
-        book: textbookTitle,
-        grade: Number(gradeNum) || 8,
-        page_start: 44,
-        page_end: 46,
-        canonical_concept: q.measured_skill || topic,
-        passport_id: q.passport_id || "08-FIZ-AUTO"
-      },
+      grounding: q.grounding || undefined,
       distractor_diagnostics: q.distractor_diagnostics || (q.explanation && typeof q.explanation === "object" ? q.explanation.distractors : undefined),
-      backward_trace: q.backward_trace || {
-        is_root_anchor: false,
-        root_grade: Math.max(1, (Number(gradeNum) || 8) - 2),
-        root_book: "Təbiət 6",
-        root_page: 45,
-        root_concept: "Maddənin daxili enerjisi",
-        remedial_duration_mins: 15,
-        parent_action_tip: "Təbiət 6 dərsliyi, səhifə 45-dəki təməl anlayışı 15 dəqiqə təkrarlayın."
-      }
     }))
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)
@@ -607,11 +591,6 @@ function getGradeDb(grade?: string | number, textbookTitle?: string): Record<str
       ""
 
     if (gradeDigit) {
-      const stagingPath = path.join(process.cwd(), "autonomous_kag", "active_staging", `grade_${gradeDigit}.json`)
-      if (fs.existsSync(stagingPath)) {
-        return JSON.parse(fs.readFileSync(stagingPath, "utf-8"))
-      }
-
       const p = path.join(process.cwd(), "data", "grades", `grade_${gradeDigit}.json`)
       if (fs.existsSync(p)) {
         return JSON.parse(fs.readFileSync(p, "utf-8"))
@@ -870,7 +849,6 @@ function loadFromOfflineTests(
         sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`),
         grounding: q.grounding || undefined,
         distractor_diagnostics: q.distractor_diagnostics || undefined,
-        backward_trace: q.backward_trace || undefined,
       }
     })
   } catch (e) {

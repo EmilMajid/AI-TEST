@@ -13,9 +13,15 @@
 # Production
 /build
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Misc
 .DS_Store
 *.pem
+*.tsbuildinfo
 
 # Debug
 npm-debug.log*
@@ -62,10 +68,20 @@ data/cache/*.db
 # Isolated Backward Knowledge Mapping & Research (NEVER upload to testai.az)
 autonomous_kag/
 pilot_kag/
+data/kag_graph.json
 data/curriculum_spiral_matrix.json
 data/clean_topics_*.json
+data/*audit*
 backups_berpa/
 data/backup_isolated_20260927/
+scripts/*kag*
+scripts/*audit*
+scripts/unified_audit_engine.py
+*audit*.json
+*audit*.py
+advanced_audit_*
+texnologiya7_audit_*
+grade6_audit_report.json
 scratch/
 scratch_test_supabase_audit.py
 scratch_supabase_semantic_audit.py
@@ -79,3 +95,4 @@ berpa_icra_log.txt
 berpa_log.txt
 lib/kag-pilot-adapter.ts
 Test_Generasiya_Master_Plani_*.md
+
