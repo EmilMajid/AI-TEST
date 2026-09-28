@@ -52,6 +52,15 @@ interface Question {
     passport_id?: string
   }
   distractor_diagnostics?: Record<string, string>
+  backward_trace?: {
+    is_root_anchor?: boolean
+    root_grade?: number | string
+    root_book?: string
+    root_page?: number | string
+    root_concept?: string
+    remedial_duration_mins?: number
+    parent_action_tip?: string
+  }
 }
 
 interface TestResults {
@@ -1043,6 +1052,58 @@ export default function ResultsPage() {
                                 </div>
                               );
                             })()
+                          )}
+
+                          {/* 🎯 KAG: Biliyin Geriyə Xəritələndirilməsi & 15 Dəqiqəlik Valideyn Bərpa Bələdçisi */}
+                          {question.backward_trace && !isCorrect && (
+                            <div className="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-500/5 border border-amber-300/80 p-4 rounded-xl space-y-3 shadow-xs">
+                              <div className="flex items-center justify-between flex-wrap gap-2">
+                                <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
+                                  <Brain className="h-4 w-4 text-amber-600 animate-pulse" />
+                                  <span>🎯 15 Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
+                                </h4>
+                                <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
+                                  {question.backward_trace.is_root_anchor
+                                    ? "Bünövrə Nöqtəsi (1-ci Sinif)"
+                                    : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
+                                </Badge>
+                              </div>
+
+                              <div className="text-xs text-amber-900 leading-relaxed font-medium bg-white/70 p-3 rounded-lg border border-amber-200/70">
+                                <div className="flex items-start gap-2">
+                                  <Target className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                                  <div>
+                                    <strong className="text-amber-950">Biliyin Geriyə Xəritələndirilməsi (Kök Səbəb):</strong>
+                                    <p className="mt-1 text-amber-900/90">
+                                      {question.backward_trace.parent_action_tip ||
+                                        `Bu səhvin təməl səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyindəki anlayışa söykənir.`}
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-amber-950/85">
+                                <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                  <span className="text-amber-800">⏱️ Tövsiyə olunan bərpa vaxtı:</span>
+                                  <strong className="text-amber-950 font-bold">{question.backward_trace.remedial_duration_mins || 15} dəqiqə</strong>
+                                </div>
+                                {question.backward_trace.root_concept && (
+                                  <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                    <span className="text-amber-800">📖 Bərpa dərsi / mövzu:</span>
+                                    <strong className="text-amber-950 font-bold truncate max-w-[140px]" title={question.backward_trace.root_concept}>
+                                      {question.backward_trace.root_concept}
+                                    </strong>
+                                  </div>
+                                )}
+                              </div>
+
+                              {question.backward_trace.root_book && (
+                                <div className="text-[11px] text-amber-900/80 flex items-center gap-1.5 px-1">
+                                  <BookOpen className="h-3.5 w-3.5 text-amber-600" />
+                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong> {question.backward_trace.root_page ? `(səh. ${question.backward_trace.root_page})` : ""}</span>
+                                </div>
+                              )}
+                            </div>
                           )}
 
                           {/* Dynamic AI tips if specifically provided by model */}

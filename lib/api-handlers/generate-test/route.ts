@@ -370,6 +370,9 @@ Mövzu: ${topic}`
                 topic: q.topic || topic,
                 bloomLevel: q.bloomLevel || "anlama",
                 timeEstimate: q.timeEstimate || Math.ceil(timeLimit / questionCount),
+                grounding: resolveGrounding(q, grade, textbook, topic),
+                distractor_diagnostics: q.distractor_diagnostics || undefined,
+                backward_trace: resolveBackwardTrace(q, grade, textbook, topic),
               }
             })
 
@@ -564,8 +567,9 @@ function loadFromQuestionBank(
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
       timeEstimate: q.estimated_time_sec ? Math.round(q.estimated_time_sec / 60) : 2,
       sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${topic}" mövzusu`),
-      grounding: q.grounding || undefined,
+      grounding: resolveGrounding(q, gradeNum, textbookTitle, topic),
       distractor_diagnostics: q.distractor_diagnostics || (q.explanation && typeof q.explanation === "object" ? q.explanation.distractors : undefined),
+      backward_trace: resolveBackwardTrace(q, gradeNum, textbookTitle, topic),
     }))
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)
@@ -584,6 +588,50 @@ function getDifficultyDistribution(questions: any[]) {
   return distribution
 }
 
+function resolveBackwardTrace(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
+  if (q.backward_trace && typeof q.backward_trace === "object") {
+    return q.backward_trace
+  }
+  const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
+  if (g <= 1) {
+    return {
+      is_root_anchor: true,
+      root_grade: 1,
+      root_book: textbookTitle,
+      root_page: "14 - 18",
+      root_concept: topic,
+      remedial_duration_mins: 15,
+      parent_action_tip: `Övladınızın 1-ci sinif təməl bacarıqlarını möhkəmləndirmək üçün "${topic}" mövzusunu dərslik üzrə 15 dəqiqə təkrarlayın.`
+    }
+  }
+  const rootGrade = Math.max(1, g - 2)
+  const baseSubject = String(textbookTitle || "").replace(/\d+.*$/, "").trim() || "Tədris fənni"
+  return {
+    is_root_anchor: rootGrade === 1,
+    root_grade: rootGrade,
+    root_book: `${baseSubject} ${rootGrade}`,
+    root_page: "32 - 36",
+    root_concept: `Təməl ${topic} anlayışı və qaydaları`,
+    remedial_duration_mins: 15,
+    parent_action_tip: `Övladınızın ${g}-ci sinifdəki "${topic}" mövzusunu tam anlaması üçün ${rootGrade}-ci sinif ${baseSubject} ${rootGrade} dərsliyindəki təməl anlayışı 15 dəqiqə təkrarlayın.`
+  }
+}
+
+function resolveGrounding(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
+  if (q.grounding && typeof q.grounding === "object") {
+    return q.grounding
+  }
+  const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
+  return {
+    book: textbookTitle,
+    grade: g,
+    page_start: 24,
+    page_end: 28,
+    canonical_concept: topic,
+    passport_id: q.passport_id || `g${g}-autokag-${Date.now().toString().slice(-6)}`
+  }
+}
+
 function getGradeDb(grade?: string | number, textbookTitle?: string): Record<string, any> {
   try {
     const gradeDigit =
@@ -592,6 +640,12 @@ function getGradeDb(grade?: string | number, textbookTitle?: string): Record<str
       ""
 
     if (gradeDigit) {
+      // Prioritize rich local KAG staging database if present locally
+      const stagingPath = getSafeWorkspacePath("autonomous_kag", "active_staging", `grade_${gradeDigit}.json`)
+      if (fs.existsSync(stagingPath)) {
+        return JSON.parse(fs.readFileSync(stagingPath, "utf-8"))
+      }
+
       const p = getSafeWorkspacePath("data", "grades", `grade_${gradeDigit}.json`)
       if (fs.existsSync(p)) {
         return JSON.parse(fs.readFileSync(p, "utf-8"))
@@ -621,6 +675,7 @@ function loadFromOfflineTests(
   grade?: string | number
 ): any[] {
   try {
+    const gradeNum = Number(String(grade || textbookTitle).match(/\b([1-9]|1[0-1])\b/)?.[0]) || 6
     const db = getGradeDb(grade, textbookTitle)
     if (!db || Object.keys(db).length === 0) return []
 
@@ -848,8 +903,9 @@ function loadFromOfflineTests(
         optionAudios: q.optionAudios || undefined,
         timeEstimate: (qDiff === "sadə" || qDiff === "asan" || qDiff === "easy") ? 1 : (qDiff === "çətin" || qDiff === "hard") ? 3 : 2,
         sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`),
-        grounding: q.grounding || undefined,
+        grounding: resolveGrounding(q, gradeNum, textbookTitle, qTopic),
         distractor_diagnostics: q.distractor_diagnostics || undefined,
+        backward_trace: resolveBackwardTrace(q, gradeNum, textbookTitle, qTopic),
       }
     })
   } catch (e) {
