@@ -13,6 +13,7 @@ import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys }
 import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabase-questions"
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
+import { reconcileAnswerKeyRuntime } from "@/lib/runtime-answer-guard"
 
 export async function POST(request: NextRequest) {
   try {
@@ -359,11 +360,13 @@ Mövzu: ${topic}`
               const cleanOptions = Array.isArray(q.options)
                 ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-E]\)\s*/, "").trim() : String(opt ?? "").trim()).filter((opt: string) => opt.length > 0)
                 : []
+              const rawCorrectAnswer = typeof q.correctAnswer === "number" ? q.correctAnswer : 0
+              const validatedCorrectAnswer = reconcileAnswerKeyRuntime(cleanOptions, q.explanation, rawCorrectAnswer)
               return {
                 id: index + 1,
                 question: q.question?.trim() || `Sual ${index + 1}`,
                 options: cleanOptions,
-                correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
+                correctAnswer: validatedCorrectAnswer,
                 explanation: cleanExplanation(q.explanation?.trim() || "İzahat mövcud deyil"),
                 sourceContext: formatSourceContext(q.sourceContext?.trim() || `> **Mənbə (Dərslik):** ${textbook}, "${topic}" mövzusu`),
                 difficulty: q.difficulty || difficulty,
@@ -550,18 +553,22 @@ function loadFromQuestionBank(
     const uniqueBankPool = Array.from(uniqueBankMap.values())
     const shuffled = uniqueBankPool.sort(() => Math.random() - 0.5).slice(0, count)
 
-    return shuffled.map((q: any, idx: number) => ({
-      id: idx + 1,
-      question: q.question,
-      options: Array.isArray(q.options)
+    return shuffled.map((q: any, idx: number) => {
+      const cleanOptions = Array.isArray(q.options)
         ? q.options.map((opt: any) => typeof opt === "string" ? opt.replace(/^[A-E]\)\s*/i, "").trim() : String(opt ?? "").trim()).filter((opt: string) => opt.length > 0)
-        : q.options,
-      correctAnswer: q.correct_index ?? 0,
-      explanation: cleanExplanation(
-        typeof q.explanation === "object"
-          ? q.explanation.correct || ""
-          : q.explanation || ""
-      ),
+        : q.options
+      const rawCorrectIndex = q.correct_index ?? (typeof q.correctAnswer === "number" ? q.correctAnswer : 0)
+      const validatedCorrectAnswer = reconcileAnswerKeyRuntime(cleanOptions, q.explanation, rawCorrectIndex)
+      return {
+        id: idx + 1,
+        question: q.question,
+        options: cleanOptions,
+        correctAnswer: validatedCorrectAnswer,
+        explanation: cleanExplanation(
+          typeof q.explanation === "object"
+            ? q.explanation.correct || ""
+            : q.explanation || ""
+        ),
       difficulty: q.difficulty || difficulty,
       topic: q.measured_skill || topic,
       bloomLevel: (q.bloom_level || "anlama").toLowerCase(),
@@ -570,7 +577,8 @@ function loadFromQuestionBank(
       grounding: resolveGrounding(q, gradeNum, textbookTitle, topic),
       distractor_diagnostics: q.distractor_diagnostics || (q.explanation && typeof q.explanation === "object" ? q.explanation.distractors : undefined),
       backward_trace: resolveBackwardTrace(q, gradeNum, textbookTitle, topic),
-    }))
+      }
+    })
   } catch (e) {
     console.error("❌ question_bank.json oxunarkən xəta:", e)
     return []
@@ -855,6 +863,9 @@ function loadFromOfflineTests(
           expText = q.izah.doğru_cavab_səbəbi || ""
         }
       }
+
+      // Reconcile and validate answer key at runtime
+      correctAnswerIndex = reconcileAnswerKeyRuntime(cleanOptions, expText, correctAnswerIndex)
 
       // Universal distractor cleanup: ensure correct answer is NEVER labeled as wrong
       const correctLetter = String.fromCharCode(65 + correctAnswerIndex)
