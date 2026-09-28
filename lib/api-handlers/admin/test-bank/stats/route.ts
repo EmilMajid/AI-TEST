@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic"
 import { NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 let cachedStats: any = null
 let cacheTime = 0
@@ -14,7 +15,7 @@ export async function GET() {
       return NextResponse.json({ success: true, stats: cachedStats })
     }
 
-    const gradesDir = path.join(process.cwd(), "data", "grades")
+    const gradesDir = getSafeWorkspacePath("data", "grades")
     const summary = {
       totalQuestions: 0,
       totalGrades: 0,

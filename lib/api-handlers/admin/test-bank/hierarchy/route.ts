@@ -2,9 +2,10 @@ export const dynamic = "force-dynamic"
 import { NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
+import { getSafeWorkspacePath } from '@/lib/safe-path'
 
-const gradesDir = path.join(process.cwd(), 'data', 'grades')
-const textbooksPath = path.join(process.cwd(), 'data', 'textbooks.json')
+const gradesDir = getSafeWorkspacePath('data', 'grades')
+const textbooksPath = getSafeWorkspacePath('data', 'textbooks.json')
 
 // In-memory cache for grade databases
 const gradeCache = new Map<string, any>()

@@ -4,8 +4,9 @@ import fs from "fs"
 import path from "path"
 import os from "os"
 import { requireAdmin } from "@/lib/auth-utils"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const SETTINGS_FILE = path.join(process.cwd(), ".data", "testai_system_settings.json")
+const SETTINGS_FILE = getSafeWorkspacePath(".data", "testai_system_settings.json")
 const TMP_SETTINGS_FILE = path.join(os.tmpdir(), "testai_system_settings.json")
 
 // Global in-memory cache for serverless runtimes

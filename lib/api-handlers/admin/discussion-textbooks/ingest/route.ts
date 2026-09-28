@@ -2,9 +2,10 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const DISC_FILE = path.join(process.cwd(), "data", "discussion_textbooks.json")
-const DISC_CHUNKS_FILE = path.join(process.cwd(), "data", "textbook-chunks-discussion.jsonl")
+const DISC_FILE = getSafeWorkspacePath("data", "discussion_textbooks.json")
+const DISC_CHUNKS_FILE = getSafeWorkspacePath("data", "textbook-chunks-discussion.jsonl")
 
 export async function POST(request: NextRequest) {
   try {

@@ -3,6 +3,7 @@ import * as fs from "fs"
 import * as path from "path"
 import * as crypto from "crypto"
 import { spawn } from "child_process"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 export const dynamic = "force-dynamic"
 
@@ -123,7 +124,7 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
   const voice = getVoice(truncatedText, lang, requestedVoice)
 
   // Keş qovluğu
-  const cacheDir = path.join(process.cwd(), "public", "audio", "cache")
+  const cacheDir = getSafeWorkspacePath("public", "audio", "cache")
   if (!fs.existsSync(cacheDir)) {
     fs.mkdirSync(cacheDir, { recursive: true })
   }
@@ -153,7 +154,7 @@ async function handleTTS(rawText: string, lang: string, requestedVoice: string, 
   // Əgər keşdə yoxdursa, edge-tts ilə yüksək keyfiyyətli MP3 yarat
   try {
     await new Promise<void>((resolve, reject) => {
-      const synthScript = path.join(process.cwd(), "scripts", "synthesize.py")
+      const synthScript = getSafeWorkspacePath("scripts", "synthesize.py")
       const py = spawn("python", [synthScript, voice, cacheFilePath], {
         env: { ...process.env, PYTHONIOENCODING: "utf-8", PYTHONUTF8: "1" },
       })

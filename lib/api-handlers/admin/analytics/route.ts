@@ -26,7 +26,8 @@ export async function GET(request: NextRequest) {
     let completedTopics = 0
     let totalQuestions = 0
     try {
-      const coveragePath = path.join(process.cwd(), "scripts", "topic-coverage.json")
+      const { getSafeWorkspacePath } = await import("@/lib/safe-path")
+      const coveragePath = getSafeWorkspacePath("scripts", "topic-coverage.json")
       if (fs.existsSync(coveragePath)) {
         const coverageData = JSON.parse(fs.readFileSync(coveragePath, "utf-8"))
         const topics = Object.values(coverageData || {})

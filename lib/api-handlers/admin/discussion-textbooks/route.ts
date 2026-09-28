@@ -2,8 +2,9 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const DISC_FILE = path.join(process.cwd(), "data", "discussion_textbooks.json")
+const DISC_FILE = getSafeWorkspacePath("data", "discussion_textbooks.json")
 
 function loadDiscussionBooks() {
   if (fs.existsSync(DISC_FILE)) {

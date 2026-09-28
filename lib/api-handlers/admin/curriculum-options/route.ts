@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 export async function GET(request: NextRequest) {
   try {
@@ -11,7 +12,7 @@ export async function GET(request: NextRequest) {
 
     // If discussion textbooks requested
     if (sourceType === "discussion") {
-      const discPath = path.join(process.cwd(), "data", "discussion_textbooks.json")
+      const discPath = getSafeWorkspacePath("data", "discussion_textbooks.json")
       if (!fs.existsSync(discPath)) {
         return NextResponse.json({ success: false, textbooks: [] }, { status: 404 })
       }
@@ -56,7 +57,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Default: official textbooks
-    const textbooksPath = path.join(process.cwd(), "data", "textbooks.json")
+    const textbooksPath = getSafeWorkspacePath("data", "textbooks.json")
     if (!fs.existsSync(textbooksPath)) {
       return NextResponse.json({ success: false, textbooks: [] }, { status: 404 })
     }

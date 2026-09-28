@@ -2,9 +2,10 @@ export const dynamic = "force-dynamic"
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { getSafeWorkspacePath } from "@/lib/safe-path";
 
-const offlinePath = path.join(process.cwd(), "data", "offline_tests.json");
-const textbooksPath = path.join(process.cwd(), "data", "textbooks.json");
+const offlinePath = getSafeWorkspacePath("data", "offline_tests.json");
+const textbooksPath = getSafeWorkspacePath("data", "textbooks.json");
 
 function getSubjectKeys(title: string, keys: string[]): string[] {
   const t = title.toLowerCase().replace(/i̇/g, "i").replace(/ı/g, "i");

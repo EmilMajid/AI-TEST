@@ -12,6 +12,7 @@ import * as path from "path"
 import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys } from "@/lib/topic-matcher"
 import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabase-questions"
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 export async function POST(request: NextRequest) {
   try {
@@ -476,7 +477,7 @@ function loadFromQuestionBank(
   difficulty: string
 ): any[] {
   try {
-    const bankPath = path.join(process.cwd(), "data", "question_bank.json")
+    const bankPath = getSafeWorkspacePath("data", "question_bank.json")
     if (!fs.existsSync(bankPath)) return []
 
     const raw = fs.readFileSync(bankPath, "utf-8")
@@ -591,18 +592,18 @@ function getGradeDb(grade?: string | number, textbookTitle?: string): Record<str
       ""
 
     if (gradeDigit) {
-      const p = path.join(process.cwd(), "data", "grades", `grade_${gradeDigit}.json`)
+      const p = getSafeWorkspacePath("data", "grades", `grade_${gradeDigit}.json`)
       if (fs.existsSync(p)) {
         return JSON.parse(fs.readFileSync(p, "utf-8"))
       }
     }
 
-    const otherPath = path.join(process.cwd(), "data", "grades", "grade_other.json")
+    const otherPath = getSafeWorkspacePath("data", "grades", "grade_other.json")
     if (fs.existsSync(otherPath)) {
       return JSON.parse(fs.readFileSync(otherPath, "utf-8"))
     }
 
-    const legacyPath = path.join(process.cwd(), "data", "offline_tests.json")
+    const legacyPath = getSafeWorkspacePath("data", "offline_tests.json")
     if (fs.existsSync(legacyPath)) {
       return JSON.parse(fs.readFileSync(legacyPath, "utf-8"))
     }

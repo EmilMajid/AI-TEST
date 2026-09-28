@@ -24,7 +24,8 @@ export async function POST(request: NextRequest) {
     const { grade = "2", textbook = "", topics = [], minThreshold = 21 } = body
     const thresholdNum = Math.max(1, Number(minThreshold) || 21)
 
-    const gradeFilePath = path.join(process.cwd(), "data", "grades", `grade_${grade}.json`)
+    const { getSafeWorkspacePath } = await import("@/lib/safe-path")
+    const gradeFilePath = getSafeWorkspacePath("data", "grades", `grade_${grade}.json`)
     let gradeDb: Record<string, any> = {}
     if (fs.existsSync(gradeFilePath)) {
       try {

@@ -3,8 +3,9 @@ import { type NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 import fs from 'fs'
 import { requireAdmin } from '@/lib/auth-utils'
+import { getSafeWorkspacePath } from '@/lib/safe-path'
 
-const accessControlPath = path.join(process.cwd(), 'data', 'access_control.json')
+const accessControlPath = getSafeWorkspacePath('data', 'access_control.json')
 
 const defaultGlobalSettings = [
   // Parent Dashboard Tabs

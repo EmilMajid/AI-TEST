@@ -2,8 +2,9 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const ORDERS_FILE = path.join(process.cwd(), "data", "antigravity_orders.json")
+const ORDERS_FILE = getSafeWorkspacePath("data", "antigravity_orders.json")
 
 export interface AntigravityOrder {
   id: string

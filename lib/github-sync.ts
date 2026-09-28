@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import { exec } from "child_process"
 import { promisify } from "util"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 const execAsync = promisify(exec)
 
@@ -54,7 +55,7 @@ function getCleanGrade(grade: string | number): string {
 export async function saveAndPushQuestions(params: PushQuestionsParams): Promise<PushResult> {
   const { grade, textbook, topic, questions } = params
   const cleanGrade = getCleanGrade(grade)
-  const filePath = path.join(process.cwd(), "data", "grades", `grade_${cleanGrade}.json`)
+  const filePath = getSafeWorkspacePath("data", "grades", `grade_${cleanGrade}.json`)
 
   if (!fs.existsSync(filePath)) {
     // If grade file doesn't exist, create it with empty object

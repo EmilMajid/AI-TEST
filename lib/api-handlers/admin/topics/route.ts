@@ -2,10 +2,10 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
-
 import os from "os"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const manualTopicsPath = path.join(process.cwd(), "scripts", "manual-topics.json")
+const manualTopicsPath = getSafeWorkspacePath("scripts", "manual-topics.json")
 const tmpManualTopicsPath = path.join(os.tmpdir(), "manual-topics.json")
 
 const g = globalThis as unknown as { __testai_manual_topics?: Record<string, any> }

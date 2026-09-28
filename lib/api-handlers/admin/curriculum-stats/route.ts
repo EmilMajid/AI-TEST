@@ -3,6 +3,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
 import { azNorm, stripTopicPrefix, findMatchingSubjectKeys } from "@/lib/topic-matcher"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 export async function GET(request: NextRequest) {
   try {
@@ -10,7 +11,7 @@ export async function GET(request: NextRequest) {
     const grade = searchParams.get("grade") || "2"
     const textbook = searchParams.get("textbook") || ""
 
-    const gradeFilePath = path.join(process.cwd(), "data", "grades", `grade_${grade}.json`)
+    const gradeFilePath = getSafeWorkspacePath("data", "grades", `grade_${grade}.json`)
     let gradeDb: Record<string, any> = {}
     if (fs.existsSync(gradeFilePath)) {
       try {
@@ -20,7 +21,7 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    const textbooksPath = path.join(process.cwd(), "data", "textbooks.json")
+    const textbooksPath = getSafeWorkspacePath("data", "textbooks.json")
     let gradeBooks: any[] = []
     if (fs.existsSync(textbooksPath)) {
       try {

@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic"
 import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 // Mapping of directory names to display names
 const SUBJECT_MAPPING: Record<string, string> = {
@@ -111,14 +112,14 @@ function loadExtractedTopics(): Record<string, TopicGroup[]> {
         const mergedTopics: Record<string, TopicGroup[]> = {};
 
         // 1. Load auto-extracted topics
-        const extractedPath = path.join(process.cwd(), "scripts", "extracted-topics.json");
+        const extractedPath = getSafeWorkspacePath("scripts", "extracted-topics.json");
         if (fs.existsSync(extractedPath)) {
             const content = fs.readFileSync(extractedPath, "utf-8");
             Object.assign(mergedTopics, JSON.parse(content));
         }
 
         // 2. Load manual topics (Overrides)
-        const manualPath = path.join(process.cwd(), "scripts", "manual-topics.json");
+        const manualPath = getSafeWorkspacePath("scripts", "manual-topics.json");
         if (fs.existsSync(manualPath)) {
             const content = fs.readFileSync(manualPath, "utf-8");
             const manualTopics = JSON.parse(content);
@@ -249,7 +250,7 @@ function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
 
 function getTopicsFromOfflineTests(bookId: string, bookSubject: string, classLevel: string): TopicGroup[] {
     try {
-        const offlinePath = path.join(process.cwd(), "data", "offline_tests.json");
+        const offlinePath = getSafeWorkspacePath("data", "offline_tests.json");
         if (!fs.existsSync(offlinePath)) return [];
         
         const db = JSON.parse(fs.readFileSync(offlinePath, "utf-8"));
@@ -324,7 +325,7 @@ export async function GET(request: NextRequest) {
         const targetBookId = searchParams.get("bookId")
         console.log(`[Topics API] Request for class: ${classLevel}, subject: ${targetSubject || 'any'}, bookId: ${targetBookId || 'any'}`)
 
-        const textbooksDataPath = path.join(process.cwd(), "data", "textbooks.json");
+        const textbooksDataPath = getSafeWorkspacePath("data", "textbooks.json");
         if (!fs.existsSync(textbooksDataPath)) {
             return NextResponse.json({ error: "Textbooks metadata not found" }, { status: 404 });
         }
@@ -413,7 +414,7 @@ export async function GET(request: NextRequest) {
             }
 
             if (bookTopics.length === 0 && book.contentPath) {
-                const subjectPath = path.join(process.cwd(), book.contentPath);
+                const subjectPath = getSafeWorkspacePath(book.contentPath);
                 let tPath = path.join(subjectPath, "OEBPS", "toc.xhtml");
                 if (!fs.existsSync(tPath)) tPath = path.join(subjectPath, "toc.xhtml");
                 if (fs.existsSync(tPath)) bookTopics = extractTopicsFromTOC(tPath);

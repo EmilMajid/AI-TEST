@@ -2,11 +2,12 @@ export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
 import * as fs from "fs"
 import * as path from "path"
+import { getSafeWorkspacePath } from "@/lib/safe-path"
 
-const DISC_FILE = path.join(process.cwd(), "data", "discussion_textbooks.json")
-const TEXTBOOKS_FILE = path.join(process.cwd(), "data", "textbooks.json")
-const ARCHIVED_FILE = path.join(process.cwd(), "data", "archived_textbooks.json")
-const BACKUP_DIR = path.join(process.cwd(), "data", "backups")
+const DISC_FILE = getSafeWorkspacePath("data", "discussion_textbooks.json")
+const TEXTBOOKS_FILE = getSafeWorkspacePath("data", "textbooks.json")
+const ARCHIVED_FILE = getSafeWorkspacePath("data", "archived_textbooks.json")
+const BACKUP_DIR = getSafeWorkspacePath("data", "backups")
 
 export async function POST(request: NextRequest) {
   try {
