@@ -28,52 +28,17 @@ const nextConfig = {
         './scripts/ocr_temp/**/*',
         './scripts/debug_images/**/*',
       ],
-      '/api/admin/access-control': [
+      '/api/admin/[...slug]': [
         './data/offline_tests.json',
         './data/offline_tests*',
         './data/grades/**/*',
       ],
-      '/api/admin/users': [
+      '/api/auth/[...slug]': [
         './data/offline_tests.json',
         './data/offline_tests*',
         './data/grades/**/*',
       ],
-      '/api/admin/users/[id]': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/discussion-textbooks': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/discussion-textbooks/**/*': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/antigravity/accounts': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/antigravity/orders': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/global-settings': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/audit-logs': [
-        './data/offline_tests.json',
-        './data/offline_tests*',
-        './data/grades/**/*',
-      ],
-      '/api/admin/analytics': [
+      '/api/[...slug]': [
         './data/offline_tests.json',
         './data/offline_tests*',
         './data/grades/**/*',
