@@ -31,6 +31,7 @@ const nextConfig = {
         './data/*_TEST_BANKI*',
         './orig_offline_tests.json',
         './public/textbooks/**/*',
+        './public/audio/**/*',
         './temp/**/*',
         './scripts/**/*',
         './autonomous_kag/**/*',

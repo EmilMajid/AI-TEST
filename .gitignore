@@ -61,8 +61,10 @@ scripts/extracted-topics.json
 
 # Large Binaries (Textbooks & Media)
 public/textbooks/
+public/audio/cache/
 *.pdf
 *.traineddata
+*.mp3
 data/cache/*.db
 
 # Isolated Backward Knowledge Mapping & Research (NEVER upload to testai.az)

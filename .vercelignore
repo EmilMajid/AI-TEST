@@ -1,6 +1,8 @@
 # Vercel Ignore File
 # Exclude heavy local scraper cache, textbooks, training data, and large OCR directories
 public/textbooks
+public/audio
+public/audio/cache
 scripts/ocr_temp
 scripts/debug_images
 scripts/ocr_output
