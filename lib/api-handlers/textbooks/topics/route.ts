@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
+import textbooksDataStatic from "@/data/textbooks.json"
+import manualTopicsDataStatic from "@/scripts/manual-topics.json"
 
 // Mapping of directory names to display names
 const SUBJECT_MAPPING: Record<string, string> = {
@@ -104,27 +106,32 @@ function isMockContent(text: string): boolean {
 }
 
 function loadExtractedTopics(): Record<string, TopicGroup[]> {
-
-    // Cache disabled temporarily to pick up new manual-topics
-    // if (extractedTopicsCache) return extractedTopicsCache;
-
     try {
         const mergedTopics: Record<string, TopicGroup[]> = {};
 
-        // 1. Load auto-extracted topics
-        const extractedPath = getSafeWorkspacePath("scripts", "extracted-topics.json");
-        if (fs.existsSync(extractedPath)) {
-            const content = fs.readFileSync(extractedPath, "utf-8");
-            Object.assign(mergedTopics, JSON.parse(content));
+        // 1. Static manual topics (compiled into bundle, guaranteed on Vercel)
+        if (manualTopicsDataStatic && typeof manualTopicsDataStatic === "object") {
+            Object.assign(mergedTopics, manualTopicsDataStatic);
         }
 
-        // 2. Load manual topics (Overrides)
-        const manualPath = getSafeWorkspacePath("scripts", "manual-topics.json");
-        if (fs.existsSync(manualPath)) {
-            const content = fs.readFileSync(manualPath, "utf-8");
-            const manualTopics = JSON.parse(content);
-            Object.assign(mergedTopics, manualTopics);
-        }
+        // 2. Load auto-extracted topics if present on disk
+        try {
+            const extractedPath = getSafeWorkspacePath("scripts", "extracted-topics.json");
+            if (fs.existsSync(extractedPath)) {
+                const content = fs.readFileSync(extractedPath, "utf-8");
+                Object.assign(mergedTopics, JSON.parse(content));
+            }
+        } catch (_) {}
+
+        // 3. Load runtime manual topics overrides if present on disk
+        try {
+            const manualPath = getSafeWorkspacePath("scripts", "manual-topics.json");
+            if (fs.existsSync(manualPath)) {
+                const content = fs.readFileSync(manualPath, "utf-8");
+                const manualTopics = JSON.parse(content);
+                Object.assign(mergedTopics, manualTopics);
+            }
+        } catch (_) {}
 
         extractedTopicsCache = mergedTopics;
         return extractedTopicsCache!;
@@ -132,7 +139,7 @@ function loadExtractedTopics(): Record<string, TopicGroup[]> {
         console.error("[Topics API] Error loading topics:", error);
     }
 
-    return {};
+    return (manualTopicsDataStatic as any) || {};
 }
 
 function extractTopicsFromTOC(tocPath: string): TopicGroup[] {
@@ -325,13 +332,15 @@ export async function GET(request: NextRequest) {
         const targetBookId = searchParams.get("bookId")
         console.log(`[Topics API] Request for class: ${classLevel}, subject: ${targetSubject || 'any'}, bookId: ${targetBookId || 'any'}`)
 
-        const textbooksDataPath = getSafeWorkspacePath("data", "textbooks.json");
-        if (!fs.existsSync(textbooksDataPath)) {
-            return NextResponse.json({ error: "Textbooks metadata not found" }, { status: 404 });
-        }
+        let allData: any = textbooksDataStatic;
+        try {
+            const textbooksDataPath = getSafeWorkspacePath("data", "textbooks.json");
+            if (fs.existsSync(textbooksDataPath)) {
+                allData = JSON.parse(fs.readFileSync(textbooksDataPath, 'utf8'));
+            }
+        } catch (_) {}
 
-        const allData = JSON.parse(fs.readFileSync(textbooksDataPath, 'utf8'));
-        const textbooksMetadata = allData[classLevel] || [];
+        const textbooksMetadata = (allData && allData[classLevel]) ? allData[classLevel] : [];
 
         const extractedTopics = loadExtractedTopics();
 

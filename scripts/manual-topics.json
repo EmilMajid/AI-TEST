@@ -4957,62 +4957,99 @@
   ],
   "cografiya-6-h1": [
     {
-      "group": "Hissə 1",
+      "chapter": "I BÖLMƏ: Məkan və onun miqyası",
       "topics": [
         {
-          "id": "cog6-h1-1",
-          "title": "1.1. Məkan"
+          "id": "cog6-1",
+          "title": "1.1. Məkan",
+          "page": 6
         },
         {
-          "id": "cog6-h1-2",
-          "title": "1.2. Məkanın miqyası"
+          "id": "cog6-2",
+          "title": "1.2. Məkanın miqyası",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Məkanın təsvir edilməsi və kodlaşdırılması",
+      "topics": [
+        {
+          "id": "cog6-3",
+          "title": "2.1. Məkanın təsvir edilməsi",
+          "page": 18
         },
         {
-          "id": "cog6-h1-3",
-          "title": "2.1. Məkanın təsvir edilməsi"
-        },
+          "id": "cog6-4",
+          "title": "2.2. Məkanın kodlaşdırılması",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Ərazidə tədqiqat",
+      "topics": [
         {
-          "id": "cog6-h1-4",
-          "title": "2.2. Məkanın kodlaşdırılması"
-        },
+          "id": "cog6-5",
+          "title": "3.1. Ərazidə tədqiqat",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Kainat və Yer kürəsi",
+      "topics": [
         {
-          "id": "cog6-h1-5",
-          "title": "3.1. Ərazidə tədqiqat"
-        },
-        {
-          "id": "cog6-h1-6",
-          "title": "4.1. Səma cisimləri və Yerin hərəkəti"
+          "id": "cog6-6",
+          "title": "4.1. Səma cisimləri və Yerin hərəkəti",
+          "page": 36
         }
       ]
     }
   ],
   "cografiya-6-h2": [
     {
-      "group": "Hissə 2",
+      "chapter": "V BÖLMƏ: Təbiət sistemləri və müxtəliflik",
       "topics": [
         {
-          "id": "cog6-h2-1",
-          "title": "5.1. Təbiətdəki müxtəliflik"
+          "id": "cog6-7",
+          "title": "5.1. Təbiətdəki müxtəliflik",
+          "page": 42
         },
         {
-          "id": "cog6-h2-2",
-          "title": "5.2. Təbiət bir sistemdir"
+          "id": "cog6-8",
+          "title": "5.2. Təbiət bir sistemdir",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Yurdumuzun təbiətinə səyahət",
+      "topics": [
+        {
+          "id": "cog6-9",
+          "title": "6.1. Ölkəmizin təbiətini tanıyaq",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "VII BÖLMƏ: Cəmiyyət və qlobal dünya",
+      "topics": [
+        {
+          "id": "cog6-10",
+          "title": "7.1. Yer kürəsinin sosial mənzərəsi",
+          "page": 60
         },
         {
-          "id": "cog6-h2-3",
-          "title": "6.1. Ölkəmizin təbiətini tanıyaq"
+          "id": "cog6-11",
+          "title": "7.2. Cəmiyyətin inkişafında qurumların rolu",
+          "page": 66
         },
         {
-          "id": "cog6-h2-4",
-          "title": "7.1. Yer kürəsinin sosial mənzərəsi"
-        },
-        {
-          "id": "cog6-h2-5",
-          "title": "7.2. Cəmiyyətin inkişafında qurumların rolu"
-        },
-        {
-          "id": "cog6-h2-6",
-          "title": "7.3. Lokal və qlobal əlaqələr"
+          "id": "cog6-12",
+          "title": "7.3. Lokal və qlobal əlaqələr",
+          "page": 72
         }
       ]
     }
@@ -10634,67 +10671,207 @@
   ],
   "kimya-8": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I BÖLMƏ: Kimyanın əsas anlayışları və stexiometriya",
       "topics": [
         {
-          "title": "1.1. Atomun elektron örtüyü",
+          "id": "k8-1",
+          "title": "1.1 Maddə miqdarı. Mol. Avoqadro sabiti",
           "page": 6
         },
         {
-          "title": "1.2. Elektronların energetik səviyyələr üzrə paylanması",
-          "page": 10
+          "id": "k8-2",
+          "title": "1.2 Molyar kütlə",
+          "page": 12
         },
         {
-          "title": "1.3. Dövri cədvəlin tarixi",
-          "page": 14
-        },
-        {
-          "title": "1.4. Müasir dövri cədvəl",
+          "id": "k8-3",
+          "title": "1.3 Qazların molyar həcmi. Avoqadro qanunu",
           "page": 18
         },
         {
-          "title": "1.5. Elementlərin xassələrinin dövriliyi",
-          "page": 22
+          "id": "k8-4",
+          "title": "1.4 Qazların nisbi sıxlığı və orta molyar kütləsi",
+          "page": 24
         },
         {
-          "title": "2.1 Kimyəvi rabitə. Oktet qaydası",
-          "page": 26
-        },
-        {
-          "title": "2.2 İon rabitəsi",
+          "id": "k8-5",
+          "title": "1.5 Kimyəvi formullar və tənliklər üzrə stexiometrik hesablamalar",
           "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Dövri qanun və dövri sistem. Atomun quruluşu",
+      "topics": [
+        {
+          "id": "k8-6",
+          "title": "2.1 Atomun tərkibi və elektron örtüyünün quruluşu",
+          "page": 36
         },
         {
-          "title": "2.3 Kovalent rabitə",
-          "page": 34
-        },
-        {
-          "title": "2.4 Metal rabitəsi",
-          "page": 38
-        },
-        {
-          "title": "2.5 Kristal qəfəsin tipləri",
+          "id": "k8-7",
+          "title": "2.2 Elektronların energetik səviyyələr və yarımsəviyyələr üzrə paylanması",
           "page": 42
         },
         {
-          "title": "3.1 Kimyəvi tənliklər",
-          "page": 46
+          "id": "k8-8",
+          "title": "2.3 D.İ.Mendeleyevin elementlərin Dövri qanunu və Dövri sistemi",
+          "page": 48
         },
         {
-          "title": "3.2 Maddə kütləsinin saxlanması qanunu",
-          "page": 50
-        },
-        {
-          "title": "3.3 Kimyəvi tənliklərin əmsallaşdırılması",
+          "id": "k8-9",
+          "title": "2.4 Dövri sistemdə elementlərin xassələrinin dəyişmə qanunauyğunluqları",
           "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Kimyəvi rabitə və maddənin quruluşu",
+      "topics": [
+        {
+          "id": "k8-10",
+          "title": "3.1 Kimyəvi rabitə. Kovalent rabitə (polyar və qeyri-polyar)",
+          "page": 60
         },
         {
-          "title": "3.4 Birləşmə, parçalanma, əvəzetmə və mübadilə reaksiyaları",
-          "page": 58
+          "id": "k8-11",
+          "title": "3.2 Donor-akseptor mexanizmi ilə yaranan kovalent rabitə",
+          "page": 66
         },
         {
-          "title": "3.5 Homogen və heterogen reaksiyalar",
-          "page": 62
+          "id": "k8-12",
+          "title": "3.3 İon rabitəsi və Metal rabitəsi",
+          "page": 72
+        },
+        {
+          "id": "k8-13",
+          "title": "3.4 Hidrogen rabitəsi və Molekullararası qarşılıqlı təsir",
+          "page": 78
+        },
+        {
+          "id": "k8-14",
+          "title": "3.5 Valentlik və Oksidləşmə dərəcəsi",
+          "page": 84
+        },
+        {
+          "id": "k8-15",
+          "title": "3.6 Kristal qəfəsin tipləri və maddələrin fiziki xassələri",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Qeyri-üzvi birləşmələrin mühüm sinifləri",
+      "topics": [
+        {
+          "id": "k8-16",
+          "title": "4.1 Oksidlər: təsnifatı və adlandırılması",
+          "page": 96
+        },
+        {
+          "id": "k8-17",
+          "title": "4.2 Oksidlərin alınma üsulları və kimyəvi xassələri",
+          "page": 102
+        },
+        {
+          "id": "k8-18",
+          "title": "4.3 Əsaslar: təsnifatı və adlandırılması",
+          "page": 108
+        },
+        {
+          "id": "k8-19",
+          "title": "4.4 Əsasların alınması və kimyəvi xassələri",
+          "page": 114
+        },
+        {
+          "id": "k8-20",
+          "title": "4.5 Turşular: təsnifatı və adlandırılması",
+          "page": 120
+        },
+        {
+          "id": "k8-21",
+          "title": "4.6 Turşuların alınma üsulları və kimyəvi xassələri",
+          "page": 126
+        },
+        {
+          "id": "k8-22",
+          "title": "4.7 Duzlar: təsnifatı və adlandırılması",
+          "page": 132
+        },
+        {
+          "id": "k8-23",
+          "title": "4.8 Duzların alınma üsulları və kimyəvi xassələri",
+          "page": 138
+        },
+        {
+          "id": "k8-24",
+          "title": "4.9 Qeyri-üzvi birləşmələrin sinifləri arasında genetik əlaqə",
+          "page": 144
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kimyəvi reaksiyaların təsnifatı və qanunauyğunluqları",
+      "topics": [
+        {
+          "id": "k8-25",
+          "title": "5.1 Kimyəvi reaksiyaların təsnifatı",
+          "page": 150
+        },
+        {
+          "id": "k8-26",
+          "title": "5.2 Kimyəvi reaksiyaların istilik effekti",
+          "page": 156
+        },
+        {
+          "id": "k8-27",
+          "title": "5.3 Termokimyəvi tənliklər üzrə hesablamalar",
+          "page": 162
+        },
+        {
+          "id": "k8-28",
+          "title": "5.4 Oksidləşmə-reduksiya reaksiyaları (ORR). Oksidləşdirici və reduksiyaedici",
+          "page": 168
+        },
+        {
+          "id": "k8-29",
+          "title": "5.5 ORR tənliklərinin elektron balansı üsulu ilə əmsallaşdırılması",
+          "page": 174
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Məhlullar",
+      "topics": [
+        {
+          "id": "k8-30",
+          "title": "6.1 Həllolma prosesi. Maddələrin suda həllolma qabiliyyəti",
+          "page": 180
+        },
+        {
+          "id": "k8-31",
+          "title": "6.2 Həllolmaya təsir edən amillər. Həllolma əmsalı (kh)",
+          "page": 186
+        },
+        {
+          "id": "k8-32",
+          "title": "6.3 Doymuş, doymamış və ifrat doymuş məhlullar",
+          "page": 192
+        },
+        {
+          "id": "k8-33",
+          "title": "6.4 Məhlulun qatılığı: Həll olan maddənin kütlə payı (ω%)",
+          "page": 198
+        },
+        {
+          "id": "k8-34",
+          "title": "6.5 Məhlulların qarışdırılması, qatılaşdırılması və durulaşdırılması",
+          "page": 204
+        },
+        {
+          "id": "k8-35",
+          "title": "6.6 Məhlulun molyar qatılığı (CM) və kristalhidratlar",
+          "page": 210
         }
       ]
     }
@@ -26733,55 +26910,97 @@
   ],
   "cografiya-6": [
     {
-      "chapter": "Bölmələr və Dərslər",
+      "chapter": "I BÖLMƏ: Məkan və onun miqyası",
       "topics": [
         {
+          "id": "cog6-1",
           "title": "1.1. Məkan",
           "page": 6
         },
         {
+          "id": "cog6-2",
           "title": "1.2. Məkanın miqyası",
-          "page": 10
-        },
+          "page": 12
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Məkanın təsvir edilməsi və kodlaşdırılması",
+      "topics": [
         {
+          "id": "cog6-3",
           "title": "2.1. Məkanın təsvir edilməsi",
-          "page": 14
-        },
-        {
-          "title": "2.2. Məkanın kodlaşdırılması",
           "page": 18
         },
         {
+          "id": "cog6-4",
+          "title": "2.2. Məkanın kodlaşdırılması",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Ərazidə tədqiqat",
+      "topics": [
+        {
+          "id": "cog6-5",
           "title": "3.1. Ərazidə tədqiqat",
-          "page": 22
-        },
-        {
-          "title": "4.1. Səma cisimləri və Yerin hərəkəti",
-          "page": 26
-        },
-        {
-          "title": "5.1. Təbiətdəki müxtəliflik",
           "page": 30
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Kainat və Yer kürəsi",
+      "topics": [
         {
-          "title": "5.2. Təbiət bir sistemdir",
-          "page": 34
-        },
+          "id": "cog6-6",
+          "title": "4.1. Səma cisimləri və Yerin hərəkəti",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Təbiət sistemləri və müxtəliflik",
+      "topics": [
         {
-          "title": "6.1. Ölkəmizin təbiətini tanıyaq",
-          "page": 38
-        },
-        {
-          "title": "7.1. Yer kürəsinin sosial mənzərəsi",
+          "id": "cog6-7",
+          "title": "5.1. Təbiətdəki müxtəliflik",
           "page": 42
         },
         {
-          "title": "7.2. Cəmiyyətin inkişafında qurumların rolu",
-          "page": 46
+          "id": "cog6-8",
+          "title": "5.2. Təbiət bir sistemdir",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Yurdumuzun təbiətinə səyahət",
+      "topics": [
+        {
+          "id": "cog6-9",
+          "title": "6.1. Ölkəmizin təbiətini tanıyaq",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "VII BÖLMƏ: Cəmiyyət və qlobal dünya",
+      "topics": [
+        {
+          "id": "cog6-10",
+          "title": "7.1. Yer kürəsinin sosial mənzərəsi",
+          "page": 60
         },
         {
+          "id": "cog6-11",
+          "title": "7.2. Cəmiyyətin inkişafında qurumların rolu",
+          "page": 66
+        },
+        {
+          "id": "cog6-12",
           "title": "7.3. Lokal və qlobal əlaqələr",
-          "page": 50
+          "page": 72
         }
       ]
     }
@@ -38398,6 +38617,724 @@
         {
           "id": "ad11-28",
           "title": "Buraxılış və qəbul imtahanı tipli kompleks mətn testləri"
+        }
+      ]
+    }
+  ],
+  "Kimya 8": [
+    {
+      "chapter": "I BÖLMƏ: Kimyanın əsas anlayışları və stexiometriya",
+      "topics": [
+        {
+          "id": "k8-1",
+          "title": "1.1 Maddə miqdarı. Mol. Avoqadro sabiti",
+          "page": 6
+        },
+        {
+          "id": "k8-2",
+          "title": "1.2 Molyar kütlə",
+          "page": 12
+        },
+        {
+          "id": "k8-3",
+          "title": "1.3 Qazların molyar həcmi. Avoqadro qanunu",
+          "page": 18
+        },
+        {
+          "id": "k8-4",
+          "title": "1.4 Qazların nisbi sıxlığı və orta molyar kütləsi",
+          "page": 24
+        },
+        {
+          "id": "k8-5",
+          "title": "1.5 Kimyəvi formullar və tənliklər üzrə stexiometrik hesablamalar",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Dövri qanun və dövri sistem. Atomun quruluşu",
+      "topics": [
+        {
+          "id": "k8-6",
+          "title": "2.1 Atomun tərkibi və elektron örtüyünün quruluşu",
+          "page": 36
+        },
+        {
+          "id": "k8-7",
+          "title": "2.2 Elektronların energetik səviyyələr və yarımsəviyyələr üzrə paylanması",
+          "page": 42
+        },
+        {
+          "id": "k8-8",
+          "title": "2.3 D.İ.Mendeleyevin elementlərin Dövri qanunu və Dövri sistemi",
+          "page": 48
+        },
+        {
+          "id": "k8-9",
+          "title": "2.4 Dövri sistemdə elementlərin xassələrinin dəyişmə qanunauyğunluqları",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Kimyəvi rabitə və maddənin quruluşu",
+      "topics": [
+        {
+          "id": "k8-10",
+          "title": "3.1 Kimyəvi rabitə. Kovalent rabitə (polyar və qeyri-polyar)",
+          "page": 60
+        },
+        {
+          "id": "k8-11",
+          "title": "3.2 Donor-akseptor mexanizmi ilə yaranan kovalent rabitə",
+          "page": 66
+        },
+        {
+          "id": "k8-12",
+          "title": "3.3 İon rabitəsi və Metal rabitəsi",
+          "page": 72
+        },
+        {
+          "id": "k8-13",
+          "title": "3.4 Hidrogen rabitəsi və Molekullararası qarşılıqlı təsir",
+          "page": 78
+        },
+        {
+          "id": "k8-14",
+          "title": "3.5 Valentlik və Oksidləşmə dərəcəsi",
+          "page": 84
+        },
+        {
+          "id": "k8-15",
+          "title": "3.6 Kristal qəfəsin tipləri və maddələrin fiziki xassələri",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Qeyri-üzvi birləşmələrin mühüm sinifləri",
+      "topics": [
+        {
+          "id": "k8-16",
+          "title": "4.1 Oksidlər: təsnifatı və adlandırılması",
+          "page": 96
+        },
+        {
+          "id": "k8-17",
+          "title": "4.2 Oksidlərin alınma üsulları və kimyəvi xassələri",
+          "page": 102
+        },
+        {
+          "id": "k8-18",
+          "title": "4.3 Əsaslar: təsnifatı və adlandırılması",
+          "page": 108
+        },
+        {
+          "id": "k8-19",
+          "title": "4.4 Əsasların alınması və kimyəvi xassələri",
+          "page": 114
+        },
+        {
+          "id": "k8-20",
+          "title": "4.5 Turşular: təsnifatı və adlandırılması",
+          "page": 120
+        },
+        {
+          "id": "k8-21",
+          "title": "4.6 Turşuların alınma üsulları və kimyəvi xassələri",
+          "page": 126
+        },
+        {
+          "id": "k8-22",
+          "title": "4.7 Duzlar: təsnifatı və adlandırılması",
+          "page": 132
+        },
+        {
+          "id": "k8-23",
+          "title": "4.8 Duzların alınma üsulları və kimyəvi xassələri",
+          "page": 138
+        },
+        {
+          "id": "k8-24",
+          "title": "4.9 Qeyri-üzvi birləşmələrin sinifləri arasında genetik əlaqə",
+          "page": 144
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kimyəvi reaksiyaların təsnifatı və qanunauyğunluqları",
+      "topics": [
+        {
+          "id": "k8-25",
+          "title": "5.1 Kimyəvi reaksiyaların təsnifatı",
+          "page": 150
+        },
+        {
+          "id": "k8-26",
+          "title": "5.2 Kimyəvi reaksiyaların istilik effekti",
+          "page": 156
+        },
+        {
+          "id": "k8-27",
+          "title": "5.3 Termokimyəvi tənliklər üzrə hesablamalar",
+          "page": 162
+        },
+        {
+          "id": "k8-28",
+          "title": "5.4 Oksidləşmə-reduksiya reaksiyaları (ORR). Oksidləşdirici və reduksiyaedici",
+          "page": 168
+        },
+        {
+          "id": "k8-29",
+          "title": "5.5 ORR tənliklərinin elektron balansı üsulu ilə əmsallaşdırılması",
+          "page": 174
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Məhlullar",
+      "topics": [
+        {
+          "id": "k8-30",
+          "title": "6.1 Həllolma prosesi. Maddələrin suda həllolma qabiliyyəti",
+          "page": 180
+        },
+        {
+          "id": "k8-31",
+          "title": "6.2 Həllolmaya təsir edən amillər. Həllolma əmsalı (kh)",
+          "page": 186
+        },
+        {
+          "id": "k8-32",
+          "title": "6.3 Doymuş, doymamış və ifrat doymuş məhlullar",
+          "page": 192
+        },
+        {
+          "id": "k8-33",
+          "title": "6.4 Məhlulun qatılığı: Həll olan maddənin kütlə payı (ω%)",
+          "page": 198
+        },
+        {
+          "id": "k8-34",
+          "title": "6.5 Məhlulların qarışdırılması, qatılaşdırılması və durulaşdırılması",
+          "page": 204
+        },
+        {
+          "id": "k8-35",
+          "title": "6.6 Məhlulun molyar qatılığı (CM) və kristalhidratlar",
+          "page": 210
+        }
+      ]
+    }
+  ],
+  "kimya-8-h1": [
+    {
+      "chapter": "I BÖLMƏ: Kimyanın əsas anlayışları və stexiometriya",
+      "topics": [
+        {
+          "id": "k8-1",
+          "title": "1.1 Maddə miqdarı. Mol. Avoqadro sabiti",
+          "page": 6
+        },
+        {
+          "id": "k8-2",
+          "title": "1.2 Molyar kütlə",
+          "page": 12
+        },
+        {
+          "id": "k8-3",
+          "title": "1.3 Qazların molyar həcmi. Avoqadro qanunu",
+          "page": 18
+        },
+        {
+          "id": "k8-4",
+          "title": "1.4 Qazların nisbi sıxlığı və orta molyar kütləsi",
+          "page": 24
+        },
+        {
+          "id": "k8-5",
+          "title": "1.5 Kimyəvi formullar və tənliklər üzrə stexiometrik hesablamalar",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Dövri qanun və dövri sistem. Atomun quruluşu",
+      "topics": [
+        {
+          "id": "k8-6",
+          "title": "2.1 Atomun tərkibi və elektron örtüyünün quruluşu",
+          "page": 36
+        },
+        {
+          "id": "k8-7",
+          "title": "2.2 Elektronların energetik səviyyələr və yarımsəviyyələr üzrə paylanması",
+          "page": 42
+        },
+        {
+          "id": "k8-8",
+          "title": "2.3 D.İ.Mendeleyevin elementlərin Dövri qanunu və Dövri sistemi",
+          "page": 48
+        },
+        {
+          "id": "k8-9",
+          "title": "2.4 Dövri sistemdə elementlərin xassələrinin dəyişmə qanunauyğunluqları",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Kimyəvi rabitə və maddənin quruluşu",
+      "topics": [
+        {
+          "id": "k8-10",
+          "title": "3.1 Kimyəvi rabitə. Kovalent rabitə (polyar və qeyri-polyar)",
+          "page": 60
+        },
+        {
+          "id": "k8-11",
+          "title": "3.2 Donor-akseptor mexanizmi ilə yaranan kovalent rabitə",
+          "page": 66
+        },
+        {
+          "id": "k8-12",
+          "title": "3.3 İon rabitəsi və Metal rabitəsi",
+          "page": 72
+        },
+        {
+          "id": "k8-13",
+          "title": "3.4 Hidrogen rabitəsi və Molekullararası qarşılıqlı təsir",
+          "page": 78
+        },
+        {
+          "id": "k8-14",
+          "title": "3.5 Valentlik və Oksidləşmə dərəcəsi",
+          "page": 84
+        },
+        {
+          "id": "k8-15",
+          "title": "3.6 Kristal qəfəsin tipləri və maddələrin fiziki xassələri",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Qeyri-üzvi birləşmələrin mühüm sinifləri",
+      "topics": [
+        {
+          "id": "k8-16",
+          "title": "4.1 Oksidlər: təsnifatı və adlandırılması",
+          "page": 96
+        },
+        {
+          "id": "k8-17",
+          "title": "4.2 Oksidlərin alınma üsulları və kimyəvi xassələri",
+          "page": 102
+        },
+        {
+          "id": "k8-18",
+          "title": "4.3 Əsaslar: təsnifatı və adlandırılması",
+          "page": 108
+        },
+        {
+          "id": "k8-19",
+          "title": "4.4 Əsasların alınması və kimyəvi xassələri",
+          "page": 114
+        },
+        {
+          "id": "k8-20",
+          "title": "4.5 Turşular: təsnifatı və adlandırılması",
+          "page": 120
+        },
+        {
+          "id": "k8-21",
+          "title": "4.6 Turşuların alınma üsulları və kimyəvi xassələri",
+          "page": 126
+        },
+        {
+          "id": "k8-22",
+          "title": "4.7 Duzlar: təsnifatı və adlandırılması",
+          "page": 132
+        },
+        {
+          "id": "k8-23",
+          "title": "4.8 Duzların alınma üsulları və kimyəvi xassələri",
+          "page": 138
+        },
+        {
+          "id": "k8-24",
+          "title": "4.9 Qeyri-üzvi birləşmələrin sinifləri arasında genetik əlaqə",
+          "page": 144
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kimyəvi reaksiyaların təsnifatı və qanunauyğunluqları",
+      "topics": [
+        {
+          "id": "k8-25",
+          "title": "5.1 Kimyəvi reaksiyaların təsnifatı",
+          "page": 150
+        },
+        {
+          "id": "k8-26",
+          "title": "5.2 Kimyəvi reaksiyaların istilik effekti",
+          "page": 156
+        },
+        {
+          "id": "k8-27",
+          "title": "5.3 Termokimyəvi tənliklər üzrə hesablamalar",
+          "page": 162
+        },
+        {
+          "id": "k8-28",
+          "title": "5.4 Oksidləşmə-reduksiya reaksiyaları (ORR). Oksidləşdirici və reduksiyaedici",
+          "page": 168
+        },
+        {
+          "id": "k8-29",
+          "title": "5.5 ORR tənliklərinin elektron balansı üsulu ilə əmsallaşdırılması",
+          "page": 174
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Məhlullar",
+      "topics": [
+        {
+          "id": "k8-30",
+          "title": "6.1 Həllolma prosesi. Maddələrin suda həllolma qabiliyyəti",
+          "page": 180
+        },
+        {
+          "id": "k8-31",
+          "title": "6.2 Həllolmaya təsir edən amillər. Həllolma əmsalı (kh)",
+          "page": 186
+        },
+        {
+          "id": "k8-32",
+          "title": "6.3 Doymuş, doymamış və ifrat doymuş məhlullar",
+          "page": 192
+        },
+        {
+          "id": "k8-33",
+          "title": "6.4 Məhlulun qatılığı: Həll olan maddənin kütlə payı (ω%)",
+          "page": 198
+        },
+        {
+          "id": "k8-34",
+          "title": "6.5 Məhlulların qarışdırılması, qatılaşdırılması və durulaşdırılması",
+          "page": 204
+        },
+        {
+          "id": "k8-35",
+          "title": "6.6 Məhlulun molyar qatılığı (CM) və kristalhidratlar",
+          "page": 210
+        }
+      ]
+    }
+  ],
+  "kimya-8-h2": [
+    {
+      "chapter": "I BÖLMƏ: Kimyanın əsas anlayışları və stexiometriya",
+      "topics": [
+        {
+          "id": "k8-1",
+          "title": "1.1 Maddə miqdarı. Mol. Avoqadro sabiti",
+          "page": 6
+        },
+        {
+          "id": "k8-2",
+          "title": "1.2 Molyar kütlə",
+          "page": 12
+        },
+        {
+          "id": "k8-3",
+          "title": "1.3 Qazların molyar həcmi. Avoqadro qanunu",
+          "page": 18
+        },
+        {
+          "id": "k8-4",
+          "title": "1.4 Qazların nisbi sıxlığı və orta molyar kütləsi",
+          "page": 24
+        },
+        {
+          "id": "k8-5",
+          "title": "1.5 Kimyəvi formullar və tənliklər üzrə stexiometrik hesablamalar",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Dövri qanun və dövri sistem. Atomun quruluşu",
+      "topics": [
+        {
+          "id": "k8-6",
+          "title": "2.1 Atomun tərkibi və elektron örtüyünün quruluşu",
+          "page": 36
+        },
+        {
+          "id": "k8-7",
+          "title": "2.2 Elektronların energetik səviyyələr və yarımsəviyyələr üzrə paylanması",
+          "page": 42
+        },
+        {
+          "id": "k8-8",
+          "title": "2.3 D.İ.Mendeleyevin elementlərin Dövri qanunu və Dövri sistemi",
+          "page": 48
+        },
+        {
+          "id": "k8-9",
+          "title": "2.4 Dövri sistemdə elementlərin xassələrinin dəyişmə qanunauyğunluqları",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Kimyəvi rabitə və maddənin quruluşu",
+      "topics": [
+        {
+          "id": "k8-10",
+          "title": "3.1 Kimyəvi rabitə. Kovalent rabitə (polyar və qeyri-polyar)",
+          "page": 60
+        },
+        {
+          "id": "k8-11",
+          "title": "3.2 Donor-akseptor mexanizmi ilə yaranan kovalent rabitə",
+          "page": 66
+        },
+        {
+          "id": "k8-12",
+          "title": "3.3 İon rabitəsi və Metal rabitəsi",
+          "page": 72
+        },
+        {
+          "id": "k8-13",
+          "title": "3.4 Hidrogen rabitəsi və Molekullararası qarşılıqlı təsir",
+          "page": 78
+        },
+        {
+          "id": "k8-14",
+          "title": "3.5 Valentlik və Oksidləşmə dərəcəsi",
+          "page": 84
+        },
+        {
+          "id": "k8-15",
+          "title": "3.6 Kristal qəfəsin tipləri və maddələrin fiziki xassələri",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Qeyri-üzvi birləşmələrin mühüm sinifləri",
+      "topics": [
+        {
+          "id": "k8-16",
+          "title": "4.1 Oksidlər: təsnifatı və adlandırılması",
+          "page": 96
+        },
+        {
+          "id": "k8-17",
+          "title": "4.2 Oksidlərin alınma üsulları və kimyəvi xassələri",
+          "page": 102
+        },
+        {
+          "id": "k8-18",
+          "title": "4.3 Əsaslar: təsnifatı və adlandırılması",
+          "page": 108
+        },
+        {
+          "id": "k8-19",
+          "title": "4.4 Əsasların alınması və kimyəvi xassələri",
+          "page": 114
+        },
+        {
+          "id": "k8-20",
+          "title": "4.5 Turşular: təsnifatı və adlandırılması",
+          "page": 120
+        },
+        {
+          "id": "k8-21",
+          "title": "4.6 Turşuların alınma üsulları və kimyəvi xassələri",
+          "page": 126
+        },
+        {
+          "id": "k8-22",
+          "title": "4.7 Duzlar: təsnifatı və adlandırılması",
+          "page": 132
+        },
+        {
+          "id": "k8-23",
+          "title": "4.8 Duzların alınma üsulları və kimyəvi xassələri",
+          "page": 138
+        },
+        {
+          "id": "k8-24",
+          "title": "4.9 Qeyri-üzvi birləşmələrin sinifləri arasında genetik əlaqə",
+          "page": 144
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Kimyəvi reaksiyaların təsnifatı və qanunauyğunluqları",
+      "topics": [
+        {
+          "id": "k8-25",
+          "title": "5.1 Kimyəvi reaksiyaların təsnifatı",
+          "page": 150
+        },
+        {
+          "id": "k8-26",
+          "title": "5.2 Kimyəvi reaksiyaların istilik effekti",
+          "page": 156
+        },
+        {
+          "id": "k8-27",
+          "title": "5.3 Termokimyəvi tənliklər üzrə hesablamalar",
+          "page": 162
+        },
+        {
+          "id": "k8-28",
+          "title": "5.4 Oksidləşmə-reduksiya reaksiyaları (ORR). Oksidləşdirici və reduksiyaedici",
+          "page": 168
+        },
+        {
+          "id": "k8-29",
+          "title": "5.5 ORR tənliklərinin elektron balansı üsulu ilə əmsallaşdırılması",
+          "page": 174
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Məhlullar",
+      "topics": [
+        {
+          "id": "k8-30",
+          "title": "6.1 Həllolma prosesi. Maddələrin suda həllolma qabiliyyəti",
+          "page": 180
+        },
+        {
+          "id": "k8-31",
+          "title": "6.2 Həllolmaya təsir edən amillər. Həllolma əmsalı (kh)",
+          "page": 186
+        },
+        {
+          "id": "k8-32",
+          "title": "6.3 Doymuş, doymamış və ifrat doymuş məhlullar",
+          "page": 192
+        },
+        {
+          "id": "k8-33",
+          "title": "6.4 Məhlulun qatılığı: Həll olan maddənin kütlə payı (ω%)",
+          "page": 198
+        },
+        {
+          "id": "k8-34",
+          "title": "6.5 Məhlulların qarışdırılması, qatılaşdırılması və durulaşdırılması",
+          "page": 204
+        },
+        {
+          "id": "k8-35",
+          "title": "6.6 Məhlulun molyar qatılığı (CM) və kristalhidratlar",
+          "page": 210
+        }
+      ]
+    }
+  ],
+  "Coğrafiya 6": [
+    {
+      "chapter": "I BÖLMƏ: Məkan və onun miqyası",
+      "topics": [
+        {
+          "id": "cog6-1",
+          "title": "1.1. Məkan",
+          "page": 6
+        },
+        {
+          "id": "cog6-2",
+          "title": "1.2. Məkanın miqyası",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "chapter": "II BÖLMƏ: Məkanın təsvir edilməsi və kodlaşdırılması",
+      "topics": [
+        {
+          "id": "cog6-3",
+          "title": "2.1. Məkanın təsvir edilməsi",
+          "page": 18
+        },
+        {
+          "id": "cog6-4",
+          "title": "2.2. Məkanın kodlaşdırılması",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "chapter": "III BÖLMƏ: Ərazidə tədqiqat",
+      "topics": [
+        {
+          "id": "cog6-5",
+          "title": "3.1. Ərazidə tədqiqat",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "IV BÖLMƏ: Kainat və Yer kürəsi",
+      "topics": [
+        {
+          "id": "cog6-6",
+          "title": "4.1. Səma cisimləri və Yerin hərəkəti",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "chapter": "V BÖLMƏ: Təbiət sistemləri və müxtəliflik",
+      "topics": [
+        {
+          "id": "cog6-7",
+          "title": "5.1. Təbiətdəki müxtəliflik",
+          "page": 42
+        },
+        {
+          "id": "cog6-8",
+          "title": "5.2. Təbiət bir sistemdir",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "chapter": "VI BÖLMƏ: Yurdumuzun təbiətinə səyahət",
+      "topics": [
+        {
+          "id": "cog6-9",
+          "title": "6.1. Ölkəmizin təbiətini tanıyaq",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "chapter": "VII BÖLMƏ: Cəmiyyət və qlobal dünya",
+      "topics": [
+        {
+          "id": "cog6-10",
+          "title": "7.1. Yer kürəsinin sosial mənzərəsi",
+          "page": 60
+        },
+        {
+          "id": "cog6-11",
+          "title": "7.2. Cəmiyyətin inkişafında qurumların rolu",
+          "page": 66
+        },
+        {
+          "id": "cog6-12",
+          "title": "7.3. Lokal və qlobal əlaqələr",
+          "page": 72
         }
       ]
     }
