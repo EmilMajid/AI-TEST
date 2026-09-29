@@ -17,7 +17,7 @@ import { reconcileAnswerKeyRuntime, sanitizeDistractorDiagnostics } from "@/lib/
 
 export async function POST(request: NextRequest) {
   try {
-    const { textbook, topic, grade, questionCount = 10, difficulty = "orta", timeLimit = 20, antigravityAccount, forceAi, thresholdDistribution } = await request.json()
+    const { textbook, topic, grade, subject, questionCount = 10, difficulty = "orta", timeLimit = 20, antigravityAccount, forceAi, thresholdDistribution } = await request.json()
 
     const getDifficultyPrompt = (difficulty: string) => {
       if (thresholdDistribution) {
@@ -158,11 +158,12 @@ Mövzu: ${topic}`
     const isForceAi = forceAi === true || request.headers.get("x-force-ai") === "true"
     if (!isForceAi) {
       const gradeDigit = Number(String(grade || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || String(textbook || "").match(/\b([1-9]|1[0-1])\b/)?.[0] || 0)
-      const canonicalSubject = resolveCanonicalSubject(textbook, gradeDigit)
+      const effectiveBook = textbook || (subject ? (String(subject).includes(String(gradeDigit)) ? String(subject) : `${subject} ${gradeDigit}`) : "Dərslik")
+      const canonicalSubject = resolveCanonicalSubject(effectiveBook, gradeDigit)
 
       // 1. KAG Active Database (112,027 testlik təsdiqlənmiş KAG və dərslik bazası)
       console.log("🔄 [KAG System] Lokal KAG bazasından hazır suallar axtarılır...")
-      const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
+      const offlineQuestions = loadFromOfflineTests(effectiveBook, topic, questionCount, difficulty, grade)
 
       if (offlineQuestions.length > 0) {
         console.log(`✅ [KAG System] KAG bazasından ${offlineQuestions.length} hazır sual tapıldı!`)
@@ -198,20 +199,30 @@ Mövzu: ${topic}`
 
           if (supabaseQuestions && supabaseQuestions.length > 0) {
             console.log(`✅ [Supabase] ${supabaseQuestions.length} sual uğurla çəkildi!`)
+            const enrichedQuestions = supabaseQuestions.map((q: any) => {
+              const qTopic = q.topic || topic || ""
+              const ansIdx = typeof q.correctAnswer === "number" ? q.correctAnswer : 0
+              return {
+                ...q,
+                grounding: resolveGrounding(q, gradeDigit, effectiveBook, qTopic),
+                distractor_diagnostics: sanitizeDistractorDiagnostics(q.distractor_diagnostics, ansIdx),
+                backward_trace: resolveBackwardTrace(q, gradeDigit, effectiveBook, qTopic),
+              }
+            })
             return NextResponse.json({
-              questions: supabaseQuestions,
+              questions: enrichedQuestions,
               provider: "supabase",
               success: true,
-              message: `${supabaseQuestions.length} test sualı Supabase bazasından yükləndi`,
+              message: `${enrichedQuestions.length} test sualı Supabase bazasından yükləndi`,
               metadata: {
                 textbook,
                 topic,
                 grade,
                 difficulty,
-                questionCount: supabaseQuestions.length,
+                questionCount: enrichedQuestions.length,
                 timeLimit,
                 recommendedTime,
-                difficultyDistribution: getDifficultyDistribution(supabaseQuestions),
+                difficultyDistribution: getDifficultyDistribution(enrichedQuestions),
               },
             })
           }
@@ -597,44 +608,81 @@ function getDifficultyDistribution(questions: any[]) {
 }
 
 function resolveBackwardTrace(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
-  if (q.backward_trace && typeof q.backward_trace === "object") {
-    return q.backward_trace
-  }
   const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
+
+  if (q.backward_trace && typeof q.backward_trace === "object") {
+    const bt = { ...q.backward_trace }
+    delete bt.root_page
+    if (bt.is_intra_grade === undefined) {
+      bt.is_intra_grade = (bt.root_grade === g)
+    }
+    if (bt.parent_action_tip && typeof bt.parent_action_tip === "string") {
+      bt.parent_action_tip = bt.parent_action_tip
+        .replace(/dərsliyi,\s*səhifə\s+\d+\s*[-–]\s*\d+[-–]?dəki/gi, "dərsliyindəki")
+        .replace(/,\s*səhifə\s+\d+\s*[-–]\s*\d+[-–]?dəki/gi, "ndəki")
+        .replace(/səhifə\s+\d+\s*[-–]\s*\d+\s*/gi, "")
+        .replace(/səh\.\s*\d+\s*[-–]\s*\d+\s*/gi, "")
+        .replace(/dərsliyi-dəki/gi, "dərsliyindəki")
+        .replace(/\s+/g, " ")
+    }
+    return bt
+  }
+
   if (g <= 1) {
     return {
       is_root_anchor: true,
+      is_intra_grade: false,
       root_grade: 1,
       root_book: textbookTitle,
-      root_page: "14 - 18",
       root_concept: topic,
+      core_rule: "Mövzunun təməl anlayış və vizual qaydaları",
       remedial_duration_mins: 15,
       parent_action_tip: `Övladınızın 1-ci sinif təməl bacarıqlarını möhkəmləndirmək üçün "${topic}" mövzusunu dərslik üzrə 15 dəqiqə təkrarlayın.`
     }
   }
-  const rootGrade = Math.max(1, g - 2)
+
+  const isLaterLesson = /^[2-9]|\b[2-9]\./.test(String(topic || "").trim())
+  if (isLaterLesson) {
+    return {
+      is_root_anchor: false,
+      is_intra_grade: true,
+      root_grade: g,
+      root_book: textbookTitle,
+      root_concept: `Əlaqəli əvvəlki dərs (${topic})`,
+      core_rule: "Mövzu daxilindəki əsas tənasüb, bərabərlik və ya proses qaydası",
+      remedial_duration_mins: 15,
+      parent_action_tip: `Övladınızın hazırda istifadə etdiyi ${g}-ci sinif ${textbookTitle} dərsliyindəki əlaqəli əvvəlki mövzunu (əsas anlayış və qaydaları) 15 dəqiqə nəzərdən keçirməsi kifayətdir.`
+    }
+  }
+
+  const rootGrade = Math.max(1, g - 1)
   const baseSubject = String(textbookTitle || "").replace(/\d+.*$/, "").trim() || "Tədris fənni"
   return {
     is_root_anchor: rootGrade === 1,
+    is_intra_grade: false,
     root_grade: rootGrade,
     root_book: `${baseSubject} ${rootGrade}`,
-    root_page: "32 - 36",
     root_concept: `Təməl ${topic} anlayışı və qaydaları`,
+    core_rule: "Bünövrə qaydaları və qanunauyğunluqlar",
     remedial_duration_mins: 15,
-    parent_action_tip: `Övladınızın ${g}-ci sinifdəki "${topic}" mövzusunu tam anlaması üçün ${rootGrade}-ci sinif ${baseSubject} ${rootGrade} dərsliyindəki təməl anlayışı 15 dəqiqə təkrarlayın.`
+    parent_action_tip: `Övladınızın təməl bacarıqlarını möhkəmləndirmək üçün ${rootGrade}-ci sinif ${baseSubject} ${rootGrade} dərsliyindəki təməl anlayışı 15 dəqiqə təkrarlayın.`
   }
 }
 
 function resolveGrounding(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
-  if (q.grounding && typeof q.grounding === "object") {
-    return q.grounding
-  }
   const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
+  if (q.grounding && typeof q.grounding === "object") {
+    const gr = { ...q.grounding }
+    delete gr.page_start
+    delete gr.page_end
+    if (!gr.canonical_concept) {
+      gr.canonical_concept = topic
+    }
+    return gr
+  }
   return {
     book: textbookTitle,
     grade: g,
-    page_start: 24,
-    page_end: 28,
     canonical_concept: topic,
     passport_id: q.passport_id || `g${g}-autokag-${Date.now().toString().slice(-6)}`
   }
