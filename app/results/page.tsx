@@ -1023,19 +1023,16 @@ export default function ResultsPage() {
                             </p>
                           </div>
 
-                          {/* KAG Dərslik İstinadı (Səhifəsiz, Dəqiq Mövzu və Kitab) */}
+                          {/* KAG Dərslik Səhifəsi İstinadı */}
                           {question.grounding && (
                             <div className="bg-blue-50/60 border border-blue-200/80 px-4 py-2.5 rounded-xl flex flex-wrap items-center justify-between text-xs text-blue-900 gap-2">
                               <span className="font-semibold flex items-center gap-1.5">
                                 <BookOpen className="h-3.5 w-3.5 text-blue-600" />
                                 <strong>KAG Dəqiq Dərslik:</strong> {question.grounding.book}
                               </span>
-                              {question.grounding.canonical_concept && (
-                                <span className="bg-white border border-blue-200 px-2.5 py-1 rounded-md font-medium text-blue-800 flex items-center gap-1">
-                                  <Target className="h-3 w-3 text-blue-600" />
-                                  <span>{question.grounding.canonical_concept}</span>
-                                </span>
-                              )}
+                              <span className="bg-white border border-blue-200 px-2 py-0.5 rounded font-mono font-medium text-blue-800">
+                                Səhifə: {question.grounding.page_start} - {question.grounding.page_end}
+                              </span>
                             </div>
                           )}
 
@@ -1065,18 +1062,10 @@ export default function ResultsPage() {
                                   <Brain className="h-4 w-4 text-amber-600 animate-pulse" />
                                   <span>🎯 15 Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
                                 </h4>
-                                <Badge className={`text-[11px] font-semibold border ${
-                                  question.backward_trace.is_intra_grade
-                                    ? "bg-emerald-100 text-emerald-900 border-emerald-300"
-                                    : question.backward_trace.is_root_anchor
-                                    ? "bg-sky-100 text-sky-900 border-sky-300"
-                                    : "bg-amber-100 text-amber-900 border-amber-300"
-                                }`}>
-                                  {question.backward_trace.is_intra_grade
-                                    ? "🟢 Cari Sinif Təməli (Çantandakı Kitab — 15 dəqiqə)"
-                                    : question.backward_trace.is_root_anchor
-                                    ? "🔵 Bünövrə Nöqtəsi (1-ci Sinif)"
-                                    : `🟡 Spiral Bünövrə (${question.backward_trace.root_grade}-ci Sinif Təməli)`}
+                                <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
+                                  {question.backward_trace.is_root_anchor
+                                    ? "Bünövrə Nöqtəsi (1-ci Sinif)"
+                                    : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
                                 </Badge>
                               </div>
 
@@ -1087,7 +1076,7 @@ export default function ResultsPage() {
                                     <strong className="text-amber-950">Biliyin Geriyə Xəritələndirilməsi (Kök Səbəb):</strong>
                                     <p className="mt-1 text-amber-900/90">
                                       {question.backward_trace.parent_action_tip ||
-                                        `Bu mövzunun təməl səbəbi ${question.backward_trace.root_book} dərsliyindəki anlayışa söykənir.`}
+                                        `Bu səhvin təməl səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyindəki anlayışa söykənir.`}
                                     </p>
                                   </div>
                                 </div>
@@ -1101,27 +1090,17 @@ export default function ResultsPage() {
                                 {question.backward_trace.root_concept && (
                                   <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
                                     <span className="text-amber-800">📖 Bərpa dərsi / mövzu:</span>
-                                    <strong className="text-amber-950 font-bold truncate max-w-[160px]" title={question.backward_trace.root_concept}>
+                                    <strong className="text-amber-950 font-bold truncate max-w-[140px]" title={question.backward_trace.root_concept}>
                                       {question.backward_trace.root_concept}
                                     </strong>
                                   </div>
                                 )}
                               </div>
 
-                              {question.backward_trace.core_rule && (
-                                <div className="text-[11px] bg-white/70 border border-amber-200/80 px-3 py-2 rounded-lg text-amber-950 flex items-start gap-1.5">
-                                  <Lightbulb className="h-3.5 w-3.5 text-amber-600 shrink-0 mt-0.5" />
-                                  <div>
-                                    <strong className="text-amber-900">💡 Təkrar edilməli əsas qayda / anlayış:</strong>{" "}
-                                    <span className="text-amber-950/90 font-medium">{question.backward_trace.core_rule}</span>
-                                  </div>
-                                </div>
-                              )}
-
                               {question.backward_trace.root_book && (
                                 <div className="text-[11px] text-amber-900/80 flex items-center gap-1.5 px-1">
                                   <BookOpen className="h-3.5 w-3.5 text-amber-600" />
-                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong></span>
+                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong> {question.backward_trace.root_page ? `(səh. ${question.backward_trace.root_page})` : ""}</span>
                                 </div>
                               )}
                             </div>
