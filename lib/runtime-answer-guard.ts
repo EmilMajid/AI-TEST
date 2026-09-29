@@ -177,3 +177,40 @@ export function reconcileAnswerKeyRuntime(
   
   return currentIdx
 }
+
+export function sanitizeDistractorDiagnostics(
+  diagnostics: Record<string, string> | undefined,
+  correctAnswerIndex: number
+): Record<string, string> | undefined {
+  if (!diagnostics || typeof diagnostics !== "object") return undefined
+  const correctLetter = String.fromCharCode(65 + correctAnswerIndex)
+  const cleaned: Record<string, string> = {}
+
+  for (const [key, rawVal] of Object.entries(diagnostics)) {
+    const kUpper = key.toUpperCase().trim()
+    if (typeof rawVal !== "string") continue
+
+    // Never diagnose the correct answer as wrong
+    if (kUpper === correctLetter) {
+      if (rawVal.toLowerCase().startsWith("yanlış") || rawVal.toLowerCase().includes("səhvdir")) {
+        continue
+      }
+      cleaned[key] = rawVal
+      continue
+    }
+
+    // Filter generic canned phrases that provide zero diagnostic value
+    if (
+      rawVal.includes("tədris standartına uyğun deyil") ||
+      rawVal.includes("tarixi faktlarla uyğun gəlmir") ||
+      rawVal.includes("bioloji qanunauyğunluqlara və ya tərifə uyğun deyil")
+    ) {
+      continue
+    }
+
+    cleaned[key] = rawVal
+  }
+
+  return Object.keys(cleaned).length > 0 ? cleaned : undefined
+}
+

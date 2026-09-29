@@ -290506,7 +290506,7 @@
           "Ce",
           "Cet"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "Düzgün cavab 'Cet'-dir. MƏNBƏ: Qrammatika qaydasında göstərilir: \"Masculin: ce / cet* (*devant une voyelle et un h muet) - Exemple: cet anorak\"",
         "difficulty": "çətin",
         "bloom_level": "bilmə",
@@ -290517,9 +290517,9 @@
           "Ce",
           "Cet"
         ],
-        "correct_answer": "B",
+        "correct_answer": "D",
         "correct_letter": "B",
-        "answer": "B",
+        "answer": "D",
         "distractor_diagnostics": {
           "A": "Yanlışdır (Ces). 'UNITÉ 6. SOIRÉES' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: 'Cette'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -290536,7 +290536,8 @@
           "grade": 7,
           "topic": "UNITÉ 6. SOIRÉES",
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı"
-        }
+        },
+        "correct_index": 3
       },
       {
         "id": "gen-883aa01f",

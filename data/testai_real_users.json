@@ -12,7 +12,8 @@
     "role": "parent",
     "isBlocked": false,
     "status": "active",
-    "source": "real"
+    "source": "real",
+    "class": "5"
   },
   {
     "id": 3,
@@ -32,7 +33,7 @@
     "isBlocked": false,
     "status": "active",
     "source": "real",
-    "profileWarningsCount": 1
+    "profileWarningsCount": 2
   },
   {
     "id": 4,

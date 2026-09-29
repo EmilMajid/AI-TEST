@@ -124,12 +124,16 @@ export function formatScientificText(text: any): string {
   s = s.replace(/\*\*([^*]+)\*\*/g, "$1")
   s = s.replace(/^\s*\*\s+(?=[A-Za-zƏəİiÖöÜüÇçŞşĞğА-Яа-я])/gm, "")
 
-  // 2. Chemical reaction arrows & conditions
+  // 2. Chemical reaction arrows, math implications & conditions
   s = s.replace(/\\xrightarrow\s*\[([^\]]+)\]\s*\{([^}]+)\}/g, " ──[$1, $2]──> ")
   s = s.replace(/\\xrightarrow\s*\{([^}]+)\}/g, " ──[$1]──> ")
   s = s.replace(/\\xrightarrow[a-zA-Z]*/g, " → ")
   s = s.replace(/\\rightleftharpoons/g, " ⇌ ")
-  s = s.replace(/\\to/g, " → ")
+  s = s.replace(/\\(?:Rightarrow|implies)\b/g, " ⇒ ")
+  s = s.replace(/\\(?:Leftarrow)\b/g, " ⇐ ")
+  s = s.replace(/\\(?:Leftrightarrow|iff)\b/g, " ⇔ ")
+  s = s.replace(/\\(?:to|rightarrow)\b/g, " → ")
+  s = s.replace(/\\(?:leftarrow)\b/g, " ← ")
   s = s.replace(/\\uparrow/g, "↑")
   s = s.replace(/\\downarrow/g, "↓")
   s = s.replace(/\\equiv/g, "≡")
@@ -160,7 +164,10 @@ export function formatScientificText(text: any): string {
   s = s.replace(/\\frac\s*\{([^}]+)\}\s*\{([^}]+)\}/g, "($1 / $2)")
 
   // 5. LaTeX text blocks: \text{...} -> ...
-  s = s.replace(/\\text\s*\{([^}]+)\}/g, "$1")
+  // Handle literal tabs and malformed \text escapes like \	ext{...} or \ ext
+  s = s.replace(/\\(?:\t|[\s])?text\s*\{([^}]+)\}/gi, "$1")
+  s = s.replace(/\\(?:\t|[\s])?ext\s*\{([^}]+)\}/gi, "$1")
+  s = s.replace(/\\(?:text|ext)\s+/gi, " ")
 
   // 6. Superscripts: ^{...} or ^...
   s = s.replace(/\^\{([^}]+)\}/g, (_, content) => {

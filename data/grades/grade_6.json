@@ -18493,7 +18493,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$24 = 2^3 \\cdot 3$, $36 = 2^2 \\cdot 3^2$. $\\\text{ƏBOB} = 2^2 \\cdot 3 = 12$.",
+        "explanation": "$24 = 2^3 \\cdot 3$, $36 = 2^2 \\cdot 3^2$. $\\text{ƏBOB} = 2^2 \\cdot 3 = 12$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '12'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (18). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18522,7 +18522,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qarşılıqlı sadə ədədlərin ortaq böləni yalnız 1-dir: $\\\text{ƏBOB}(a, b) = 1$.",
+        "explanation": "Qarşılıqlı sadə ədədlərin ortaq böləni yalnız 1-dir: $\\text{ƏBOB}(a, b) = 1$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (Onların cəminə). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: '1'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -18551,7 +18551,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Biri digərinə bölünən iki ədəddən kiçiyi onların ƏBOB-udur: $\\\text{ƏBOB}(15, 45) = 15$.",
+        "explanation": "Biri digərinə bölünən iki ədəddən kiçiyi onların ƏBOB-udur: $\\text{ƏBOB}(15, 45) = 15$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18609,7 +18609,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Hər iki ədədin ən böyük ortaq böləni 20-dir: $\\\text{ƏBOB}(40, 60) = 20$.",
+        "explanation": "Hər iki ədədin ən böyük ortaq böləni 20-dir: $\\text{ƏBOB}(40, 60) = 20$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '20'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18638,7 +18638,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$48 = 2^4 \\cdot 3$, $72 = 2^3 \\cdot 3^2$, $120 = 2^3 \\cdot 3 \\cdot 5$. $\\\text{ƏBOB} = 2^3 \\cdot 3 = 24$.",
+        "explanation": "$48 = 2^4 \\cdot 3$, $72 = 2^3 \\cdot 3^2$, $120 = 2^3 \\cdot 3 \\cdot 5$. $\\text{ƏBOB} = 2^3 \\cdot 3 = 24$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (48). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '24'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -18667,7 +18667,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Kvadratın tərəfi $\\\text{ƏBOB}(36, 24) = 12$ metr olar.",
+        "explanation": "Kvadratın tərəfi $\\text{ƏBOB}(36, 24) = 12$ metr olar.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (4 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18696,7 +18696,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "$\\\text{ƏBOB}(2a, 2b) = 2 \\cdot \\\text{ƏBOB}(a, b) = 16 \\Rightarrow \\\text{ƏBOB}(a, b) = 8$.",
+        "explanation": "$\\text{ƏBOB}(2a, 2b) = 2 \\cdot \\text{ƏBOB}(a, b) = 16 \\Rightarrow \\text{ƏBOB}(a, b) = 8$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (32). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '16'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -18726,7 +18726,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Buketlərin ən böyük sayı $\\\text{ƏBOB}(72, 108) = 36$-dır.",
+        "explanation": "Buketlərin ən böyük sayı $\\text{ƏBOB}(72, 108) = 36$-dır.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (24). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18755,7 +18755,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\\text{ƏBOB} = 2^2 \\cdot 3^2 = 4 \\cdot 9 = 36$.",
+        "explanation": "$\\text{ƏBOB} = 2^2 \\cdot 3^2 = 4 \\cdot 9 = 36$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (108). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -18842,7 +18842,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$a = 3k$, $b = 5k$. $\\\text{ƏBOB}(3k, 5k) = k = 14$. Onda $a = 42$, $b = 70$. $a + b = 42 + 70 = 112$.",
+        "explanation": "$a = 3k$, $b = 5k$. $\\text{ƏBOB}(3k, 5k) = k = 14$. Onda $a = 42$, $b = 70$. $a + b = 42 + 70 = 112$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '112'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (126). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -18871,7 +18871,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$87 - 3 = 84$, $115 - 3 = 112$. $\\\text{ƏBOB}(84, 112) = 28$. Bölən 3-dən böyük olmalıdır ($28 > 3$ doğrudur).",
+        "explanation": "$87 - 3 = 84$, $115 - 3 = 112$. $\\text{ƏBOB}(84, 112) = 28$. Bölən 3-dən böyük olmalıdır ($28 > 3$ doğrudur).",
         "distractor_diagnostics": {
           "A": "Yanlışdır (21). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '14'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -18892,15 +18892,15 @@
         "passport_id": "g6-r6-3-15-6bffb1",
         "question": "ƏBOB-un xassələrindən hansı İSTƏNİLƏN $a$ və $b$ natural ədədləri üçün HƏMİŞƏ doğrudur?",
         "options": [
-          "$\\\text{ƏBOB}(a, b) = a - b$",
-          "$\\\text{ƏBOB}(a, b) > a$",
-          "$\\\text{ƏBOB}(a, b) \\le \\min(a, b)$",
-          "$\\\text{ƏBOB}(a, b) \\ge a+b$"
+          "$\\text{ƏBOB}(a, b) = a - b$",
+          "$\\text{ƏBOB}(a, b) > a$",
+          "$\\text{ƏBOB}(a, b) \\le \\min(a, b)$",
+          "$\\text{ƏBOB}(a, b) \\ge a+b$"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "İki ədədin ən böyük ortaq böləni onların kiçiyindən böyük ola bilməz: $\\\text{ƏBOB}(a, b) \\le \\min(a, b)$.",
+        "explanation": "İki ədədin ən böyük ortaq böləni onların kiçiyindən böyük ola bilməz: $\\text{ƏBOB}(a, b) \\le \\min(a, b)$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($\\\text{ƏBOB}(a, b) = a - b$). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "Yanlışdır ($\\\text{ƏBOB}(a, b) > a$). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
@@ -19015,7 +19015,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$12 = 2^2 \\cdot 3$, $18 = 2 \\cdot 3^2$. $\\\text{ƏKOB} = 2^2 \\cdot 3^2 = 36$.",
+        "explanation": "$12 = 2^2 \\cdot 3$, $18 = 2 \\cdot 3^2$. $\\text{ƏKOB} = 2^2 \\cdot 3^2 = 36$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (72). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19044,7 +19044,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qarşılıqlı sadə ədədlərin ƏKOB-u onların hasilinə bərabərdir: $\\\text{ƏKOB}(a,b) = a \\cdot b$.",
+        "explanation": "Qarşılıqlı sadə ədədlərin ƏKOB-u onların hasilinə bərabərdir: $\\text{ƏKOB}(a,b) = a \\cdot b$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($a + b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: '$a \\cdot b$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -19073,7 +19073,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Biri digərinə bölünən ədədlərdən böyüyü onların ƏKOB-udur: $\\\text{ƏKOB}(15, 30) = 30$.",
+        "explanation": "Biri digərinə bölünən ədədlərdən böyüyü onların ƏKOB-udur: $\\text{ƏKOB}(15, 30) = 30$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (15). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19131,7 +19131,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "5 və 7 sadə ədədlərdir, $\\\text{ƏKOB}(5, 7) = 5 \\cdot 7 = 35$.",
+        "explanation": "5 və 7 sadə ədədlərdir, $\\text{ƏKOB}(5, 7) = 5 \\cdot 7 = 35$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '35'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19160,7 +19160,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$a \\cdot b = \\\text{ƏBOB}(a, b) \\cdot \\\text{ƏKOB}(a, b) = 8 \\cdot 120 = 960$.",
+        "explanation": "$a \\cdot b = \\text{ƏBOB}(a, b) \\cdot \\text{ƏKOB}(a, b) = 8 \\cdot 120 = 960$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (120). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '960'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -19189,7 +19189,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Görüşmə vaxtı $\\\text{ƏKOB}(20, 30) = 60$ dəqiqədir.",
+        "explanation": "Görüşmə vaxtı $\\text{ƏKOB}(20, 30) = 60$ dəqiqədir.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40 dəqiqə). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (50 dəqiqə). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19218,7 +19218,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "Ən kiçik ortaq məxrəc $\\\text{ƏKOB}(18, 24) = 72$-dir.",
+        "explanation": "Ən kiçik ortaq məxrəc $\\text{ƏKOB}(18, 24) = 72$-dir.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (48). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (144). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19247,7 +19247,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\\text{ƏKOB} = 2^2 \\cdot 3^2 \\cdot 5 \\cdot 7 = 4 \\cdot 9 \\cdot 35 = 1260$.",
+        "explanation": "$\\text{ƏKOB} = 2^2 \\cdot 3^2 \\cdot 5 \\cdot 7 = 4 \\cdot 9 \\cdot 35 = 1260$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '1260'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (630). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19276,7 +19276,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$20 = 2^2 \\cdot 5$, $25 = 5^2$, $30 = 2 \\cdot 3 \\cdot 5$. $\\\text{ƏKOB} = 2^2 \\cdot 3 \\cdot 5^2 = 300$.",
+        "explanation": "$20 = 2^2 \\cdot 5$, $25 = 5^2$, $30 = 2 \\cdot 3 \\cdot 5$. $\\text{ƏKOB} = 2^2 \\cdot 3 \\cdot 5^2 = 300$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (600). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '300'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -19305,7 +19305,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$\\\text{ƏKOB}(6, 8, 9) = 72$. $72 \\cdot 2 + 4 = 144 + 4 = 148$.",
+        "explanation": "$\\text{ƏKOB}(6, 8, 9) = 72$. $72 \\cdot 2 + 4 = 144 + 4 = 148$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (184). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '144'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -19335,7 +19335,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$\\\text{ƏKOB}(a,b) = \\\text{ƏBOB}(a,b) \\cdot c = 5 \\cdot 6 = 30$.",
+        "explanation": "$\\text{ƏKOB}(a,b) = \\text{ƏBOB}(a,b) \\cdot c = 5 \\cdot 6 = 30$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (60). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (150). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19414,15 +19414,15 @@
         "passport_id": "g6-r6-4-15-0dbfcc",
         "question": "Natural $a$ və $b$ ədədləri üçün $\\text{ƏKOB}(a, b)$ haqqında hansı təklif HƏMİŞƏ DOĞRUDUR?",
         "options": [
-          "$\\\text{ƏKOB}(a, b) = a + b$",
-          "$\\\text{ƏKOB}(a, b) \\le a \\cdot b$",
-          "$\\\text{ƏKOB}(a, b) \\ge \\max(a, b)$",
-          "$\\\text{ƏKOB}(a, b)$ həmişə təkdir"
+          "$\\text{ƏKOB}(a, b) = a + b$",
+          "$\\text{ƏKOB}(a, b) \\le a \\cdot b$",
+          "$\\text{ƏKOB}(a, b) \\ge \\max(a, b)$",
+          "$\\text{ƏKOB}(a, b)$ həmişə təkdir"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "İki ədədin ən kiçik ortaq bölünəni onların böyüyündən kiçik ola bilməz: $\\\text{ƏKOB}(a, b) \\ge \\max(a, b)$.",
+        "explanation": "İki ədədin ən kiçik ortaq bölünəni onların böyüyündən kiçik ola bilməz: $\\text{ƏKOB}(a, b) \\ge \\max(a, b)$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($\\\text{ƏKOB}(a, b) = a + b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "Yanlışdır ($\\\text{ƏKOB}(a, b) \\le a \\cdot b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
@@ -19624,7 +19624,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (0.04). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19711,7 +19711,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (0.3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19769,7 +19769,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -19798,7 +19798,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '2.4 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -20058,7 +20058,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$v = \\frac{s}{t} = \\frac{240}{3} = 80\\\text{ km/saat}$.",
+        "explanation": "$v = \\frac{s}{t} = \\frac{240}{3} = 80\\text{ km/saat}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '80 km/saat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (60 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20087,7 +20087,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qiymət = Məbləğ / Kütlə = $15 : 5 = 3\\\text{ manat}$.",
+        "explanation": "Qiymət = Məbləğ / Kütlə = $15 : 5 = 3\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (5 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '3 manat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -20116,7 +20116,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$v = 100 : 10 = 10\\\text{ m/san}$.",
+        "explanation": "$v = 100 : 10 = 10\\text{ m/san}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (15 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (8 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20145,7 +20145,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Məhsuldarlıq = İş / Zaman = $28 : 4 = 7\\\text{ detal/saat}$.",
+        "explanation": "Məhsuldarlıq = İş / Zaman = $28 : 4 = 7\\text{ detal/saat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (8 detal/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (6 detal/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20164,17 +20164,17 @@
       {
         "id": 61080,
         "passport_id": "g6-r6-6-5-cae6bd",
-        "question": "Həcmi $5\\\text{ sm}^3$ olan metal parçasının kütləsi 40 qramdır. Bu metalın sıxlığını tapın:",
+        "question": "Həcmi $5\\text{ sm}^3$ olan metal parçasının kütləsi 40 qramdır. Bu metalın sıxlığını tapın:",
         "options": [
-          "$8\\\text{ q/sm}^3$",
-          "$6\\\text{ q/sm}^3$",
-          "$5\\\text{ q/sm}^3$",
-          "$10\\\text{ q/sm}^3$"
+          "$8\\text{ q/sm}^3$",
+          "$6\\text{ q/sm}^3$",
+          "$5\\text{ q/sm}^3$",
+          "$10\\text{ q/sm}^3$"
         ],
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$\\rho = \\frac{m}{V} = \\frac{40}{5} = 8\\\text{ q/sm}^3$.",
+        "explanation": "$\\rho = \\frac{m}{V} = \\frac{40}{5} = 8\\text{ q/sm}^3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '$8\\\text{ q/sm}^3$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır ($6\\\text{ q/sm}^3$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20203,7 +20203,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "I fəhlə: $48 : 6 = 8\\\text{ detal/saat}$; II fəhlə: $36 : 4 = 9\\\text{ detal/saat}$. $9 > 8$.",
+        "explanation": "I fəhlə: $48 : 6 = 8\\text{ detal/saat}$; II fəhlə: $36 : 4 = 9\\text{ detal/saat}$. $9 > 8$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (Birinci fəhlənin). 'Kəmiyyətlərin nisbəti' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: 'İkinci fəhlənin (9 > 8)'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -20222,7 +20222,7 @@
       {
         "id": 61082,
         "passport_id": "g6-r6-6-7-476657",
-        "question": "Qatar $72\\\text{ km/saat}$ sürətlə hərəkət edir. Bu sürəti $\\\text{m/san}$ ilə ifadə edin:",
+        "question": "Qatar $72\\text{ km/saat}$ sürətlə hərəkət edir. Bu sürəti $\\text{m/san}$ ilə ifadə edin:",
         "options": [
           "25 m/san",
           "15 m/san",
@@ -20232,7 +20232,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$72\\\text{ km/saat} = 72 \\cdot \\frac{1000\\\text{ m}}{3600\\\text{ san}} = 72 \\cdot \\frac{5}{18} = 20\\\text{ m/san}$.",
+        "explanation": "$72\\text{ km/saat} = 72 \\cdot \\frac{1000\\text{ m}}{3600\\text{ san}} = 72 \\cdot \\frac{5}{18} = 20\\text{ m/san}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (25 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (15 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20261,7 +20261,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1\\\text{ qram} = 1.8 : 300 = 0.006\\\text{ manat}$. $1000\\\text{ qram} = 0.006 \\cdot 1000 = 6\\\text{ manat}$.",
+        "explanation": "$1\\text{ qram} = 1.8 : 300 = 0.006\\text{ manat}$. $1000\\text{ qram} = 0.006 \\cdot 1000 = 6\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6.2 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5.4 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20280,7 +20280,7 @@
       {
         "id": 61084,
         "passport_id": "g6-r6-6-9-ba5ba3",
-        "question": "Sahəsi $120\\\text{ ha}$ olan tarladan 480 ton buğda yığıldı. 1 hektarın orta məhsuldarlığı nə qədərdir?",
+        "question": "Sahəsi $120\\text{ ha}$ olan tarladan 480 ton buğda yığıldı. 1 hektarın orta məhsuldarlığı nə qədərdir?",
         "options": [
           "4 ton/ha",
           "4.5 ton/ha",
@@ -20290,7 +20290,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "$480 : 120 = 4\\\text{ ton/ha}$.",
+        "explanation": "$480 : 120 = 4\\text{ ton/ha}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '4 ton/ha'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (4.5 ton/ha). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20608,7 +20608,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$3k + 5k = 80 \\Rightarrow 8k = 80 \\Rightarrow k = 10$. Kiçik hissə: $3 \\cdot 10 = 30\\\text{ sm}$.",
+        "explanation": "$3k + 5k = 80 \\Rightarrow 8k = 80 \\Rightarrow k = 10$. Kiçik hissə: $3 \\cdot 10 = 30\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '30 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -20637,7 +20637,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1k + 4k = 100 \\Rightarrow 5k = 100 \\Rightarrow k = 20$. Böyük pay: $4 \\cdot 20 = 80\\\text{ manat}$.",
+        "explanation": "$1k + 4k = 100 \\Rightarrow 5k = 100 \\Rightarrow k = 20$. Böyük pay: $4 \\cdot 20 = 80\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (20 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (75 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20724,7 +20724,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$3k + 4k + 5k = 48 \\Rightarrow 12k = 48 \\Rightarrow k = 4$. Ən böyük tərəf: $5 \\cdot 4 = 20\\\text{ sm}$.",
+        "explanation": "$3k + 4k + 5k = 48 \\Rightarrow 12k = 48 \\Rightarrow k = 4$. Ən böyük tərəf: $5 \\cdot 4 = 20\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (24 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '20 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -20753,7 +20753,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$7k - 2k = 15 \\Rightarrow 5k = 15 \\Rightarrow k = 3$. Dəftər: $7 \\cdot 3 = 21\\\text{ manat}$.",
+        "explanation": "$7k - 2k = 15 \\Rightarrow 5k = 15 \\Rightarrow k = 3$. Dəftər: $7 \\cdot 3 = 21\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (18 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20782,7 +20782,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$17k + 3k = 60 \\Rightarrow 20k = 60 \\Rightarrow k = 3$. Mis: $17 \\cdot 3 = 51\\\text{ kq}$.",
+        "explanation": "$17k + 3k = 60 \\Rightarrow 20k = 60 \\Rightarrow k = 3$. Mis: $17 \\cdot 3 = 51\\text{ kq}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (9 kq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (45 kq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20917,17 +20917,17 @@
       {
         "id": 61103,
         "passport_id": "g6-r6-7-13-a77bce",
-        "question": "Düzbucaqlı paralelepipedin tilləri $2 : 3 : 5$ nisbətindədir və tam səthinin sahəsi $248\\\text{ sm}^2$-dir. Onun həcmini tapın:",
+        "question": "Düzbucaqlı paralelepipedin tilləri $2 : 3 : 5$ nisbətindədir və tam səthinin sahəsi $248\\text{ sm}^2$-dir. Onun həcmini tapın:",
         "options": [
-          "$240\\\text{ sm}^3$",
-          "$480\\\text{ sm}^3$",
-          "$120\\\text{ sm}^3$",
-          "$360\\\text{ sm}^3$"
+          "$240\\text{ sm}^3$",
+          "$480\\text{ sm}^3$",
+          "$120\\text{ sm}^3$",
+          "$360\\text{ sm}^3$"
         ],
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$2(6k^2 + 10k^2 + 15k^2) = 248 \\Rightarrow 62k^2 = 248 \\Rightarrow k^2 = 4 \\Rightarrow k = 2$. Tillər: 4, 6, 10. $V = 4 \\cdot 6 \\cdot 10 = 240\\\text{ sm}^3$.",
+        "explanation": "$2(6k^2 + 10k^2 + 15k^2) = 248 \\Rightarrow 62k^2 = 248 \\Rightarrow k^2 = 4 \\Rightarrow k = 2$. Tillər: 4, 6, 10. $V = 4 \\cdot 6 \\cdot 10 = 240\\text{ sm}^3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '$240\\\text{ sm}^3$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır ($480\\\text{ sm}^3$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -20956,7 +20956,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$7k + 2k + 1k = 500 \\Rightarrow 10k = 500 \\Rightarrow k = 50$. Şəkər: $2 \\cdot 50 = 100\\\text{ q}$.",
+        "explanation": "$7k + 2k + 1k = 500 \\Rightarrow 10k = 500 \\Rightarrow k = 50$. Şəkər: $2 \\cdot 50 = 100\\text{ q}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (150 q). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '100 q'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -21653,7 +21653,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$100\\,000\\\text{ sm} = 1000\\\text{ m} = 1\\\text{ km}$.",
+        "explanation": "$100\\,000\\text{ sm} = 1000\\text{ m} = 1\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (10 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '1 km'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -21682,7 +21682,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$2 \\cdot 500 = 1000\\\text{ sm} = 10\\\text{ metr}$.",
+        "explanation": "$2 \\cdot 500 = 1000\\text{ sm} = 10\\text{ metr}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (100 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21711,7 +21711,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$20\\\text{ km} = 2\\,000\\,000\\\text{ sm}$. $M = \\frac{4}{2\\,000\\,000} = \\frac{1}{500\\,000}$.",
+        "explanation": "$20\\text{ km} = 2\\,000\\,000\\text{ sm}$. $M = \\frac{4}{2\\,000\\,000} = \\frac{1}{500\\,000}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 200 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 50 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21740,7 +21740,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$5 \\cdot 1\\,000\\,000\\\text{ sm} = 5\\,000\\,000\\\text{ sm} = 50\\\text{ km}$.",
+        "explanation": "$5 \\cdot 1\\,000\\,000\\text{ sm} = 5\\,000\\,000\\text{ sm} = 50\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '50 km'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (500 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21769,7 +21769,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$360\\\text{ km} = 36\\,000\\,000\\\text{ sm}$. $x = 36\\,000\\,000 : 3\\,000\\,000 = 12\\\text{ sm}$.",
+        "explanation": "$360\\text{ km} = 36\\,000\\,000\\text{ sm}$. $x = 36\\,000\\,000 : 3\\,000\\,000 = 12\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (10 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '12 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -21790,15 +21790,15 @@
         "passport_id": "g6-r6-9-7-ae3b2e",
         "question": "Planda otağın ölçüləri 4 sm və 6 sm-dir. Planın miqyası $1 : 100$ olarsa, otağın həqiqi sahəsini kvadrat metrlə tapın:",
         "options": [
-          "$12\\\text{ m}^2$",
-          "$240\\\text{ m}^2$",
-          "$24\\\text{ m}^2$",
-          "$48\\\text{ m}^2$"
+          "$12\\text{ m}^2$",
+          "$240\\text{ m}^2$",
+          "$24\\text{ m}^2$",
+          "$48\\text{ m}^2$"
         ],
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "En = $4 \\cdot 100\\\text{ sm} = 4\\\text{ m}$, Uzunluq = $6 \\cdot 100\\\text{ sm} = 6\\\text{ m}$. $S = 4 \\cdot 6 = 24\\\text{ m}^2$.",
+        "explanation": "En = $4 \\cdot 100\\text{ sm} = 4\\text{ m}$, Uzunluq = $6 \\cdot 100\\text{ sm} = 6\\text{ m}$. $S = 4 \\cdot 6 = 24\\text{ m}^2$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($12\\\text{ m}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır ($240\\\text{ m}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21827,7 +21827,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\frac{6}{150} = \\frac{8}{x} \\Rightarrow 6x = 1200 \\Rightarrow x = 200\\\text{ km}$.",
+        "explanation": "$\\frac{6}{150} = \\frac{8}{x} \\Rightarrow 6x = 1200 \\Rightarrow x = 200\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (240 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (180 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21856,7 +21856,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$4\\\text{ sm} = 40\\\text{ mm}$. $M = 40 : 0.2 = 200 : 1$.",
+        "explanation": "$4\\text{ sm} = 40\\text{ mm}$. $M = 40 : 0.2 = 200 : 1$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '200 : 1'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (20 : 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21904,17 +21904,17 @@
       {
         "id": 61131,
         "passport_id": "g6-r6-9-11-f8f930",
-        "question": "Miqyası $1 : 50\\,000$ olan xəritədə sahəsi $12\\\text{ sm}^2$ olan meşə sahəsinin həqiqi sahəsi neçə kvadrat kilometrdir?",
+        "question": "Miqyası $1 : 50\\,000$ olan xəritədə sahəsi $12\\text{ sm}^2$ olan meşə sahəsinin həqiqi sahəsi neçə kvadrat kilometrdir?",
         "options": [
-          "$1.5\\\text{ km}^2$",
-          "$6\\\text{ km}^2$",
-          "$3\\\text{ km}^2$",
-          "$12\\\text{ km}^2$"
+          "$1.5\\text{ km}^2$",
+          "$6\\text{ km}^2$",
+          "$3\\text{ km}^2$",
+          "$12\\text{ km}^2$"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "1 sm = 0.5 km $\\Rightarrow 1\\\text{ sm}^2 = 0.25\\\text{ km}^2$. Həqiqi sahə: $12 \\cdot 0.25 = 3\\\text{ km}^2$.",
+        "explanation": "1 sm = 0.5 km $\\Rightarrow 1\\text{ sm}^2 = 0.25\\text{ km}^2$. Həqiqi sahə: $12 \\cdot 0.25 = 3\\text{ km}^2$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($1.5\\\text{ km}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır ($6\\\text{ km}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21943,7 +21943,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Həqiqi məsafə: $8 \\cdot 20\\\text{ km} = 160\\\text{ km} = 16\\,000\\,000\\\text{ sm}$. $M_2 = 16 / 16\\,000\\,000 = 1 : 1\\,000\\,000$.",
+        "explanation": "Həqiqi məsafə: $8 \\cdot 20\\text{ km} = 160\\text{ km} = 16\\,000\\,000\\text{ sm}$. $M_2 = 16 / 16\\,000\\,000 = 1 : 1\\,000\\,000$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 2 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 4 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -21962,7 +21962,7 @@
       {
         "id": 61133,
         "passport_id": "g6-r6-9-13-ef89f2",
-        "question": "Kvadrat şəkilli torpaq sahəsinin həqiqi sahəsi $36\\\text{ ha}$-dır. Miqyası $1 : 10\\,000$ olan planda bu sahənin perimetri neçə sm olar?",
+        "question": "Kvadrat şəkilli torpaq sahəsinin həqiqi sahəsi $36\\text{ ha}$-dır. Miqyası $1 : 10\\,000$ olan planda bu sahənin perimetri neçə sm olar?",
         "options": [
           "24 sm",
           "12 sm",
@@ -21972,7 +21972,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$36\\\text{ ha} = 360\\,000\\\text{ m}^2 \\Rightarrow a = 600\\\text{ m} = 60\\,000\\\text{ sm}$. Planda tərəf = $60\\,000 : 10\\,000 = 6\\\text{ sm}$. $P = 4 \\cdot 6 = 24\\\text{ sm}$.",
+        "explanation": "$36\\text{ ha} = 360\\,000\\text{ m}^2 \\Rightarrow a = 600\\text{ m} = 60\\,000\\text{ sm}$. Planda tərəf = $60\\,000 : 10\\,000 = 6\\text{ sm}$. $P = 4 \\cdot 6 = 24\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '24 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (12 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22030,7 +22030,7 @@
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$40\\,000\\\text{ km} = 4\\,000\\,000\\,000\\\text{ sm}$. $M = 80 / 4\\,000\\,000\\,000 = 1 : 50\\,000\\,000$.",
+        "explanation": "$40\\,000\\text{ km} = 4\\,000\\,000\\,000\\text{ sm}$. $M = 80 / 4\\,000\\,000\\,000 = 1 : 50\\,000\\,000$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 500 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 5 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22203,7 +22203,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$5 \\cdot 2 = 10\\\text{ manat}$ (dəftərin sayı ilə qiymət düz mütənasibdir).",
+        "explanation": "$5 \\cdot 2 = 10\\text{ manat}$ (dəftərin sayı ilə qiymət düz mütənasibdir).",
         "distractor_diagnostics": {
           "A": "Yanlışdır (7 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (8 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22232,7 +22232,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$140 : 2 = 70\\\text{ km/saat}$. $5 \\cdot 70 = 350\\\text{ km}$.",
+        "explanation": "$140 : 2 = 70\\text{ km/saat}$. $5 \\cdot 70 = 350\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (280 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (300 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22319,7 +22319,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1\\\text{ kq} = 18 : 3 = 6\\\text{ manat}$. $8 \\cdot 6 = 48\\\text{ manat}$.",
+        "explanation": "$1\\text{ kq} = 18 : 3 = 6\\text{ manat}$. $8 \\cdot 6 = 48\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (54 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22511,32 +22511,32 @@
       },
       {
         "id": 61149,
-        "passport_id": "g6-r6-10-14-872877",
-        "question": "Eyni gücə malik 5 nasos hovuzu 12 saata doldurursa, həmin hovuzu 4 saata doldurmaq üçün neçə nasos lazımdır?",
+        "passport_id": "g6-r6-10-14-sitg-direct",
+        "question": "Avtomobil 100 km yola 8 litr yanacaq sərf edir. Yanacaq sərfi ilə gedilən yol düz mütənasib olarsa, avtomobil 450 km yola neçə litr yanacaq sərf edər?",
         "options": [
-          "12 nasos",
-          "15 nasos",
-          "10 nasos",
-          "20 nasos"
+          "32 litr",
+          "36 litr",
+          "40 litr",
+          "38 litr"
         ],
         "correctAnswer": 1,
-        "difficulty": "çətin",
-        "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Nasos sayı ilə zaman tərs mütənasibdir: $5 \\cdot 12 = n \\cdot 4 \\Rightarrow n = 60 / 4 = 15$ nasos.",
+        "correct_answer": "B",
+        "answer": "B",
+        "difficulty": "orta",
+        "bloom_taxonomy": "3-Tətbiq etmək",
+        "explanation": "Gedilən yol ilə yanacaq sərfi düz mütənasibdir: 1 km üçün 8 : 100 = 0,08 litr. 450 km üçün: 450 · 0,08 = 36 litr yanacaq tələb olunur.",
         "distractor_diagnostics": {
-          "A": "Yanlışdır (12 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "DÜZGÜNDÜR: '15 nasos'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
-          "C": "Yanlışdır (10 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "Yanlışdır (20 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "Yanlışdır (32 litr). 400 km üzrə hesablama aparılıb, qalan 50 km nəzərə alınmayıb.",
+          "B": "DÜZGÜNDÜR: \"36 litr\". 450 · 0,08 = 36 litr tənliyi dərslik standartına tam uyğundur.",
+          "C": "Yanlışdır (40 litr). 500 km üçün tələb olunan yanacaq miqdarı götürülüb.",
+          "D": "Yanlışdır (38 litr). Hesablama addımında toplama/vurma xətası edilib."
         },
         "solution_steps": [
-          "Sualın şərtini diqqətlə oxuyaraq əsas anlayışı və ya qanunauyğunluğu müəyyən edin.",
-          "Dərslikdəki müvafiq mövzunu, qaydanı və ya təhlili nəzərdən keçirin.",
-          "Şərtə tam uyğun gələn doğru variantı (15 nasos) seçin."
+          "Gedilən yol ilə yanacaq sərfi arasındakı mütənasiblik əmsalını (1 km üçün sərfiyyatı) tapın: 8 / 100 = 0,08 litr.",
+          "Məsafəni vahid sərfiyyata vurun: 450 · 0,08 = 36 litr.",
+          "Düzgün variant olaraq 36 litr seçin."
         ],
-        "sourceContext": "Dərslik: Riyaziyyat 6 - 2.6. Düz mütənasib asılılıq",
-        "correct_answer": "B",
-        "answer": "B"
+        "sourceContext": "Dərslik: Riyaziyyat 6 - 2.6. Düz mütənasib asılılıq"
       },
       {
         "id": 61150,
@@ -22830,7 +22830,7 @@
       {
         "id": 61157,
         "passport_id": "g6-r6-11-7-811ffb",
-        "question": "Avtomobil $60\\\text{ km/saat}$ sürətlə yolu 4 saata gedir. Həmin yolu 3 saata qət etmək üçün sürət neçə olmalıdır?",
+        "question": "Avtomobil $60\\text{ km/saat}$ sürətlə yolu 4 saata gedir. Həmin yolu 3 saata qət etmək üçün sürət neçə olmalıdır?",
         "options": [
           "75 km/saat",
           "90 km/saat",
@@ -22840,7 +22840,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 60 \\cdot 4 = 240\\\text{ km}$. $v = 240 : 3 = 80\\\text{ km/saat}$.",
+        "explanation": "$S = 60 \\cdot 4 = 240\\text{ km}$. $v = 240 : 3 = 80\\text{ km/saat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (75 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (90 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -22917,7 +22917,7 @@
       {
         "id": 61160,
         "passport_id": "g6-r6-11-10-d9bb51",
-        "question": "Düzbucaqlının sahəsi $36\\\text{ sm}^2$-dir. Eni 4 sm-dən 9 sm-ə qədər artırılarsa, uzunluğu necə dəyişər?",
+        "question": "Düzbucaqlının sahəsi $36\\text{ sm}^2$-dir. Eni 4 sm-dən 9 sm-ə qədər artırılarsa, uzunluğu necə dəyişər?",
         "options": [
           "2 qat artar",
           "9 sm-dən 4 sm-ə enər (azalar)",
@@ -23171,6 +23171,36 @@
         "passport_id": "g6-r6-11-18-16246e",
         "correct_answer": "B",
         "answer": "B"
+      },
+      {
+        "id": 61149,
+        "passport_id": "g6-r6-10-14-872877",
+        "question": "Eyni gücə malik 5 nasos hovuzu 12 saata doldurursa, həmin hovuzu 4 saata doldurmaq üçün neçə nasos lazımdır?",
+        "options": [
+          "12 nasos",
+          "15 nasos",
+          "10 nasos",
+          "20 nasos"
+        ],
+        "correctAnswer": 1,
+        "difficulty": "çətin",
+        "bloom_taxonomy": "4-Təhlil etmək",
+        "explanation": "Nasos sayı ilə zaman tərs mütənasibdir: $5 \\cdot 12 = n \\cdot 4 \\Rightarrow n = 60 / 4 = 15$ nasos.",
+        "distractor_diagnostics": {
+          "A": "Yanlışdır (12 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "B": "DÜZGÜNDÜR: '15 nasos'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
+          "C": "Yanlışdır (10 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "D": "Yanlışdır (20 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+        },
+        "solution_steps": [
+          "Sualın şərtini diqqətlə oxuyaraq əsas anlayışı və ya qanunauyğunluğu müəyyən edin.",
+          "Dərslikdəki müvafiq mövzunu, qaydanı və ya təhlili nəzərdən keçirin.",
+          "Şərtə tam uyğun gələn doğru variantı (15 nasos) seçin."
+        ],
+        "sourceContext": "Dərslik: Riyaziyyat 6 - 2.6. Düz mütənasib asılılıq",
+        "correct_answer": "B",
+        "answer": "B",
+        "topic": "2.7. Tərs mütənasib asılılıq"
       }
     ],
     "2.8. Nisbətin faizlə ifadəsi": [
@@ -23506,7 +23536,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Duz = $200 \\cdot 0.20 = 40\\\text{ q}$. Yeni ümumi kütlə = $200 + 50 = 250\\\text{ q}$. Yeni faiz = $\\frac{40}{250} \\cdot 100\\% = 16\\%$.",
+        "explanation": "Duz = $200 \\cdot 0.20 = 40\\text{ q}$. Yeni ümumi kütlə = $200 + 50 = 250\\text{ q}$. Yeni faiz = $\\frac{40}{250} \\cdot 100\\% = 16\\%$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (15%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (18%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -23708,7 +23738,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Artım = $60 - 50 = 10\\\text{ manat}$. Faiz: $\\frac{10}{50} \\cdot 100\\% = 20\\%$.",
+        "explanation": "Artım = $60 - 50 = 10\\text{ manat}$. Faiz: $\\frac{10}{50} \\cdot 100\\% = 20\\%$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '20%'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (10%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -23737,7 +23767,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Azalma = $80 - 60 = 20\\\text{ manat}$. Faiz: $\\frac{20}{80} \\cdot 100\\% = 25\\%$.",
+        "explanation": "Azalma = $80 - 60 = 20\\text{ manat}$. Faiz: $\\frac{20}{80} \\cdot 100\\% = 25\\%$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (20%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '25%'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -24056,7 +24086,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$S_2 = 1000 \\cdot (1 + 0.10)^2 = 1000 \\cdot 1.21 = 1210\\\text{ manat}$.",
+        "explanation": "$S_2 = 1000 \\cdot (1 + 0.10)^2 = 1000 \\cdot 1.21 = 1210\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '1210 manat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (1200 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43135,7 +43165,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43225,7 +43255,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43285,7 +43315,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -43315,7 +43345,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43671,7 +43701,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43761,7 +43791,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -43821,7 +43851,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -43851,7 +43881,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44207,7 +44237,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44297,7 +44327,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44357,7 +44387,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -44387,7 +44417,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44743,7 +44773,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44833,7 +44863,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -44893,7 +44923,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -44923,7 +44953,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347059,7 +347089,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$24 = 2^3 \\cdot 3$, $36 = 2^2 \\cdot 3^2$. $\\\text{ƏBOB} = 2^2 \\cdot 3 = 12$.",
+        "explanation": "$24 = 2^3 \\cdot 3$, $36 = 2^2 \\cdot 3^2$. $\\text{ƏBOB} = 2^2 \\cdot 3 = 12$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '12'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (18). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347088,7 +347118,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qarşılıqlı sadə ədədlərin ortaq böləni yalnız 1-dir: $\\\text{ƏBOB}(a, b) = 1$.",
+        "explanation": "Qarşılıqlı sadə ədədlərin ortaq böləni yalnız 1-dir: $\\text{ƏBOB}(a, b) = 1$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (Onların cəminə). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: '1'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347117,7 +347147,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Biri digərinə bölünən iki ədəddən kiçiyi onların ƏBOB-udur: $\\\text{ƏBOB}(15, 45) = 15$.",
+        "explanation": "Biri digərinə bölünən iki ədəddən kiçiyi onların ƏBOB-udur: $\\text{ƏBOB}(15, 45) = 15$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347175,7 +347205,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Hər iki ədədin ən böyük ortaq böləni 20-dir: $\\\text{ƏBOB}(40, 60) = 20$.",
+        "explanation": "Hər iki ədədin ən böyük ortaq böləni 20-dir: $\\text{ƏBOB}(40, 60) = 20$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '20'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347204,7 +347234,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$48 = 2^4 \\cdot 3$, $72 = 2^3 \\cdot 3^2$, $120 = 2^3 \\cdot 3 \\cdot 5$. $\\\text{ƏBOB} = 2^3 \\cdot 3 = 24$.",
+        "explanation": "$48 = 2^4 \\cdot 3$, $72 = 2^3 \\cdot 3^2$, $120 = 2^3 \\cdot 3 \\cdot 5$. $\\text{ƏBOB} = 2^3 \\cdot 3 = 24$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (48). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '24'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347233,7 +347263,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Kvadratın tərəfi $\\\text{ƏBOB}(36, 24) = 12$ metr olar.",
+        "explanation": "Kvadratın tərəfi $\\text{ƏBOB}(36, 24) = 12$ metr olar.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (4 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347262,7 +347292,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "$\\\text{ƏBOB}(2a, 2b) = 2 \\cdot \\\text{ƏBOB}(a, b) = 16 \\Rightarrow \\\text{ƏBOB}(a, b) = 8$.",
+        "explanation": "$\\text{ƏBOB}(2a, 2b) = 2 \\cdot \\text{ƏBOB}(a, b) = 16 \\Rightarrow \\text{ƏBOB}(a, b) = 8$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (32). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '16'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347292,7 +347322,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Buketlərin ən böyük sayı $\\\text{ƏBOB}(72, 108) = 36$-dır.",
+        "explanation": "Buketlərin ən böyük sayı $\\text{ƏBOB}(72, 108) = 36$-dır.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (24). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347321,7 +347351,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\\text{ƏBOB} = 2^2 \\cdot 3^2 = 4 \\cdot 9 = 36$.",
+        "explanation": "$\\text{ƏBOB} = 2^2 \\cdot 3^2 = 4 \\cdot 9 = 36$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (108). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347408,7 +347438,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$a = 3k$, $b = 5k$. $\\\text{ƏBOB}(3k, 5k) = k = 14$. Onda $a = 42$, $b = 70$. $a + b = 42 + 70 = 112$.",
+        "explanation": "$a = 3k$, $b = 5k$. $\\text{ƏBOB}(3k, 5k) = k = 14$. Onda $a = 42$, $b = 70$. $a + b = 42 + 70 = 112$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '112'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (126). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347437,7 +347467,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$87 - 3 = 84$, $115 - 3 = 112$. $\\\text{ƏBOB}(84, 112) = 28$. Bölən 3-dən böyük olmalıdır ($28 > 3$ doğrudur).",
+        "explanation": "$87 - 3 = 84$, $115 - 3 = 112$. $\\text{ƏBOB}(84, 112) = 28$. Bölən 3-dən böyük olmalıdır ($28 > 3$ doğrudur).",
         "distractor_diagnostics": {
           "A": "Yanlışdır (21). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '14'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347458,15 +347488,15 @@
         "passport_id": "g6-r6p1-3-15-13e602",
         "question": "ƏBOB-un xassələrindən hansı İSTƏNİLƏN $a$ və $b$ natural ədədləri üçün HƏMİŞƏ doğrudur?",
         "options": [
-          "$\\\text{ƏBOB}(a, b) = a - b$",
-          "$\\\text{ƏBOB}(a, b) > a$",
-          "$\\\text{ƏBOB}(a, b) \\le \\min(a, b)$",
-          "$\\\text{ƏBOB}(a, b) \\ge a+b$"
+          "$\\text{ƏBOB}(a, b) = a - b$",
+          "$\\text{ƏBOB}(a, b) > a$",
+          "$\\text{ƏBOB}(a, b) \\le \\min(a, b)$",
+          "$\\text{ƏBOB}(a, b) \\ge a+b$"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "İki ədədin ən böyük ortaq böləni onların kiçiyindən böyük ola bilməz: $\\\text{ƏBOB}(a, b) \\le \\min(a, b)$.",
+        "explanation": "İki ədədin ən böyük ortaq böləni onların kiçiyindən böyük ola bilməz: $\\text{ƏBOB}(a, b) \\le \\min(a, b)$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($\\\text{ƏBOB}(a, b) = a - b$). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "Yanlışdır ($\\\text{ƏBOB}(a, b) > a$). 'Ən böyük ortaq bölən (ƏBOB)' mövzusunun tədris standartına uyğun deyil.",
@@ -347581,7 +347611,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$12 = 2^2 \\cdot 3$, $18 = 2 \\cdot 3^2$. $\\\text{ƏKOB} = 2^2 \\cdot 3^2 = 36$.",
+        "explanation": "$12 = 2^2 \\cdot 3$, $18 = 2 \\cdot 3^2$. $\\text{ƏKOB} = 2^2 \\cdot 3^2 = 36$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '36'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (72). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347610,7 +347640,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qarşılıqlı sadə ədədlərin ƏKOB-u onların hasilinə bərabərdir: $\\\text{ƏKOB}(a,b) = a \\cdot b$.",
+        "explanation": "Qarşılıqlı sadə ədədlərin ƏKOB-u onların hasilinə bərabərdir: $\\text{ƏKOB}(a,b) = a \\cdot b$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($a + b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: '$a \\cdot b$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347639,7 +347669,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Biri digərinə bölünən ədədlərdən böyüyü onların ƏKOB-udur: $\\\text{ƏKOB}(15, 30) = 30$.",
+        "explanation": "Biri digərinə bölünən ədədlərdən böyüyü onların ƏKOB-udur: $\\text{ƏKOB}(15, 30) = 30$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (15). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347697,7 +347727,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "5 və 7 sadə ədədlərdir, $\\\text{ƏKOB}(5, 7) = 5 \\cdot 7 = 35$.",
+        "explanation": "5 və 7 sadə ədədlərdir, $\\text{ƏKOB}(5, 7) = 5 \\cdot 7 = 35$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '35'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347726,7 +347756,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$a \\cdot b = \\\text{ƏBOB}(a, b) \\cdot \\\text{ƏKOB}(a, b) = 8 \\cdot 120 = 960$.",
+        "explanation": "$a \\cdot b = \\text{ƏBOB}(a, b) \\cdot \\text{ƏKOB}(a, b) = 8 \\cdot 120 = 960$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (120). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '960'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347755,7 +347785,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "Görüşmə vaxtı $\\\text{ƏKOB}(20, 30) = 60$ dəqiqədir.",
+        "explanation": "Görüşmə vaxtı $\\text{ƏKOB}(20, 30) = 60$ dəqiqədir.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40 dəqiqə). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (50 dəqiqə). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347784,7 +347814,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "Ən kiçik ortaq məxrəc $\\\text{ƏKOB}(18, 24) = 72$-dir.",
+        "explanation": "Ən kiçik ortaq məxrəc $\\text{ƏKOB}(18, 24) = 72$-dir.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (48). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (144). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347813,7 +347843,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\\text{ƏKOB} = 2^2 \\cdot 3^2 \\cdot 5 \\cdot 7 = 4 \\cdot 9 \\cdot 35 = 1260$.",
+        "explanation": "$\\text{ƏKOB} = 2^2 \\cdot 3^2 \\cdot 5 \\cdot 7 = 4 \\cdot 9 \\cdot 35 = 1260$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '1260'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (630). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347842,7 +347872,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$20 = 2^2 \\cdot 5$, $25 = 5^2$, $30 = 2 \\cdot 3 \\cdot 5$. $\\\text{ƏKOB} = 2^2 \\cdot 3 \\cdot 5^2 = 300$.",
+        "explanation": "$20 = 2^2 \\cdot 5$, $25 = 5^2$, $30 = 2 \\cdot 3 \\cdot 5$. $\\text{ƏKOB} = 2^2 \\cdot 3 \\cdot 5^2 = 300$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (600). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '300'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347871,7 +347901,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$\\\text{ƏKOB}(6, 8, 9) = 72$. $72 \\cdot 2 + 4 = 144 + 4 = 148$.",
+        "explanation": "$\\text{ƏKOB}(6, 8, 9) = 72$. $72 \\cdot 2 + 4 = 144 + 4 = 148$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (184). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '144'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -347901,7 +347931,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$\\\text{ƏKOB}(a,b) = \\\text{ƏBOB}(a,b) \\cdot c = 5 \\cdot 6 = 30$.",
+        "explanation": "$\\text{ƏKOB}(a,b) = \\text{ƏBOB}(a,b) \\cdot c = 5 \\cdot 6 = 30$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (60). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (150). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -347980,15 +348010,15 @@
         "passport_id": "g6-r6p1-4-15-88a0cc",
         "question": "Natural $a$ və $b$ ədədləri üçün $\\text{ƏKOB}(a, b)$ haqqında hansı təklif HƏMİŞƏ DOĞRUDUR?",
         "options": [
-          "$\\\text{ƏKOB}(a, b) = a + b$",
-          "$\\\text{ƏKOB}(a, b) \\le a \\cdot b$",
-          "$\\\text{ƏKOB}(a, b) \\ge \\max(a, b)$",
-          "$\\\text{ƏKOB}(a, b)$ həmişə təkdir"
+          "$\\text{ƏKOB}(a, b) = a + b$",
+          "$\\text{ƏKOB}(a, b) \\le a \\cdot b$",
+          "$\\text{ƏKOB}(a, b) \\ge \\max(a, b)$",
+          "$\\text{ƏKOB}(a, b)$ həmişə təkdir"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "İki ədədin ən kiçik ortaq bölünəni onların böyüyündən kiçik ola bilməz: $\\\text{ƏKOB}(a, b) \\ge \\max(a, b)$.",
+        "explanation": "İki ədədin ən kiçik ortaq bölünəni onların böyüyündən kiçik ola bilməz: $\\text{ƏKOB}(a, b) \\ge \\max(a, b)$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($\\\text{ƏKOB}(a, b) = a + b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
           "B": "Yanlışdır ($\\\text{ƏKOB}(a, b) \\le a \\cdot b$). 'Ən kiçik ortaq bölünən (ƏKOB)' mövzusunun tədris standartına uyğun deyil.",
@@ -348190,7 +348220,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (0.04). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348277,7 +348307,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (0.3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348335,7 +348365,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348364,7 +348394,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '2.4 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -348624,7 +348654,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$v = \\frac{s}{t} = \\frac{240}{3} = 80\\\text{ km/saat}$.",
+        "explanation": "$v = \\frac{s}{t} = \\frac{240}{3} = 80\\text{ km/saat}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '80 km/saat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (60 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348653,7 +348683,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Qiymət = Məbləğ / Kütlə = $15 : 5 = 3\\\text{ manat}$.",
+        "explanation": "Qiymət = Məbləğ / Kütlə = $15 : 5 = 3\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (5 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '3 manat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -348682,7 +348712,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$v = 100 : 10 = 10\\\text{ m/san}$.",
+        "explanation": "$v = 100 : 10 = 10\\text{ m/san}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (15 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (8 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348711,7 +348741,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Məhsuldarlıq = İş / Zaman = $28 : 4 = 7\\\text{ detal/saat}$.",
+        "explanation": "Məhsuldarlıq = İş / Zaman = $28 : 4 = 7\\text{ detal/saat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (8 detal/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (6 detal/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348730,17 +348760,17 @@
       {
         "id": 61080,
         "passport_id": "g6-r6p1-6-5-53a0bd",
-        "question": "Həcmi $5\\\text{ sm}^3$ olan metal parçasının kütləsi 40 qramdır. Bu metalın sıxlığını tapın:",
+        "question": "Həcmi $5\\text{ sm}^3$ olan metal parçasının kütləsi 40 qramdır. Bu metalın sıxlığını tapın:",
         "options": [
-          "$8\\\text{ q/sm}^3$",
-          "$6\\\text{ q/sm}^3$",
-          "$5\\\text{ q/sm}^3$",
-          "$10\\\text{ q/sm}^3$"
+          "$8\\text{ q/sm}^3$",
+          "$6\\text{ q/sm}^3$",
+          "$5\\text{ q/sm}^3$",
+          "$10\\text{ q/sm}^3$"
         ],
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$\\rho = \\frac{m}{V} = \\frac{40}{5} = 8\\\text{ q/sm}^3$.",
+        "explanation": "$\\rho = \\frac{m}{V} = \\frac{40}{5} = 8\\text{ q/sm}^3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '$8\\\text{ q/sm}^3$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır ($6\\\text{ q/sm}^3$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348769,7 +348799,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "I fəhlə: $48 : 6 = 8\\\text{ detal/saat}$; II fəhlə: $36 : 4 = 9\\\text{ detal/saat}$. $9 > 8$.",
+        "explanation": "I fəhlə: $48 : 6 = 8\\text{ detal/saat}$; II fəhlə: $36 : 4 = 9\\text{ detal/saat}$. $9 > 8$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (Birinci fəhlənin). 'Kəmiyyətlərin nisbəti' mövzusunun tədris standartına uyğun deyil.",
           "B": "DÜZGÜNDÜR: 'İkinci fəhlənin (9 > 8)'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -348788,7 +348818,7 @@
       {
         "id": 61082,
         "passport_id": "g6-r6p1-6-7-ab67dc",
-        "question": "Qatar $72\\\text{ km/saat}$ sürətlə hərəkət edir. Bu sürəti $\\\text{m/san}$ ilə ifadə edin:",
+        "question": "Qatar $72\\text{ km/saat}$ sürətlə hərəkət edir. Bu sürəti $\\text{m/san}$ ilə ifadə edin:",
         "options": [
           "25 m/san",
           "15 m/san",
@@ -348798,7 +348828,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$72\\\text{ km/saat} = 72 \\cdot \\frac{1000\\\text{ m}}{3600\\\text{ san}} = 72 \\cdot \\frac{5}{18} = 20\\\text{ m/san}$.",
+        "explanation": "$72\\text{ km/saat} = 72 \\cdot \\frac{1000\\text{ m}}{3600\\text{ san}} = 72 \\cdot \\frac{5}{18} = 20\\text{ m/san}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (25 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (15 m/san). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348827,7 +348857,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1\\\text{ qram} = 1.8 : 300 = 0.006\\\text{ manat}$. $1000\\\text{ qram} = 0.006 \\cdot 1000 = 6\\\text{ manat}$.",
+        "explanation": "$1\\text{ qram} = 1.8 : 300 = 0.006\\text{ manat}$. $1000\\text{ qram} = 0.006 \\cdot 1000 = 6\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6.2 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5.4 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -348846,7 +348876,7 @@
       {
         "id": 61084,
         "passport_id": "g6-r6p1-6-9-e17250",
-        "question": "Sahəsi $120\\\text{ ha}$ olan tarladan 480 ton buğda yığıldı. 1 hektarın orta məhsuldarlığı nə qədərdir?",
+        "question": "Sahəsi $120\\text{ ha}$ olan tarladan 480 ton buğda yığıldı. 1 hektarın orta məhsuldarlığı nə qədərdir?",
         "options": [
           "4 ton/ha",
           "4.5 ton/ha",
@@ -348856,7 +348886,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq",
-        "explanation": "$480 : 120 = 4\\\text{ ton/ha}$.",
+        "explanation": "$480 : 120 = 4\\text{ ton/ha}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '4 ton/ha'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (4.5 ton/ha). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -349174,7 +349204,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$3k + 5k = 80 \\Rightarrow 8k = 80 \\Rightarrow k = 10$. Kiçik hissə: $3 \\cdot 10 = 30\\\text{ sm}$.",
+        "explanation": "$3k + 5k = 80 \\Rightarrow 8k = 80 \\Rightarrow k = 10$. Kiçik hissə: $3 \\cdot 10 = 30\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '30 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -349203,7 +349233,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1k + 4k = 100 \\Rightarrow 5k = 100 \\Rightarrow k = 20$. Böyük pay: $4 \\cdot 20 = 80\\\text{ manat}$.",
+        "explanation": "$1k + 4k = 100 \\Rightarrow 5k = 100 \\Rightarrow k = 20$. Böyük pay: $4 \\cdot 20 = 80\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (20 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (75 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -349290,7 +349320,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$3k + 4k + 5k = 48 \\Rightarrow 12k = 48 \\Rightarrow k = 4$. Ən böyük tərəf: $5 \\cdot 4 = 20\\\text{ sm}$.",
+        "explanation": "$3k + 4k + 5k = 48 \\Rightarrow 12k = 48 \\Rightarrow k = 4$. Ən böyük tərəf: $5 \\cdot 4 = 20\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (24 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '20 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -349319,7 +349349,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$7k - 2k = 15 \\Rightarrow 5k = 15 \\Rightarrow k = 3$. Dəftər: $7 \\cdot 3 = 21\\\text{ manat}$.",
+        "explanation": "$7k - 2k = 15 \\Rightarrow 5k = 15 \\Rightarrow k = 3$. Dəftər: $7 \\cdot 3 = 21\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (6 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (18 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -349348,7 +349378,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$17k + 3k = 60 \\Rightarrow 20k = 60 \\Rightarrow k = 3$. Mis: $17 \\cdot 3 = 51\\\text{ kq}$.",
+        "explanation": "$17k + 3k = 60 \\Rightarrow 20k = 60 \\Rightarrow k = 3$. Mis: $17 \\cdot 3 = 51\\text{ kq}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (9 kq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (45 kq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -349483,17 +349513,17 @@
       {
         "id": 61103,
         "passport_id": "g6-r6p1-7-13-ddad0d",
-        "question": "Düzbucaqlı paralelepipedin tilləri $2 : 3 : 5$ nisbətindədir və tam səthinin sahəsi $248\\\text{ sm}^2$-dir. Onun həcmini tapın:",
+        "question": "Düzbucaqlı paralelepipedin tilləri $2 : 3 : 5$ nisbətindədir və tam səthinin sahəsi $248\\text{ sm}^2$-dir. Onun həcmini tapın:",
         "options": [
-          "$240\\\text{ sm}^3$",
-          "$480\\\text{ sm}^3$",
-          "$120\\\text{ sm}^3$",
-          "$360\\\text{ sm}^3$"
+          "$240\\text{ sm}^3$",
+          "$480\\text{ sm}^3$",
+          "$120\\text{ sm}^3$",
+          "$360\\text{ sm}^3$"
         ],
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$2(6k^2 + 10k^2 + 15k^2) = 248 \\Rightarrow 62k^2 = 248 \\Rightarrow k^2 = 4 \\Rightarrow k = 2$. Tillər: 4, 6, 10. $V = 4 \\cdot 6 \\cdot 10 = 240\\\text{ sm}^3$.",
+        "explanation": "$2(6k^2 + 10k^2 + 15k^2) = 248 \\Rightarrow 62k^2 = 248 \\Rightarrow k^2 = 4 \\Rightarrow k = 2$. Tillər: 4, 6, 10. $V = 4 \\cdot 6 \\cdot 10 = 240\\text{ sm}^3$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '$240\\\text{ sm}^3$'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır ($480\\\text{ sm}^3$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -349522,7 +349552,7 @@
         "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$7k + 2k + 1k = 500 \\Rightarrow 10k = 500 \\Rightarrow k = 50$. Şəkər: $2 \\cdot 50 = 100\\\text{ q}$.",
+        "explanation": "$7k + 2k + 1k = 500 \\Rightarrow 10k = 500 \\Rightarrow k = 50$. Şəkər: $2 \\cdot 50 = 100\\text{ q}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (150 q). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '100 q'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -350219,7 +350249,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$100\\,000\\\text{ sm} = 1000\\\text{ m} = 1\\\text{ km}$.",
+        "explanation": "$100\\,000\\text{ sm} = 1000\\text{ m} = 1\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (10 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '1 km'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -350248,7 +350278,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$2 \\cdot 500 = 1000\\\text{ sm} = 10\\\text{ metr}$.",
+        "explanation": "$2 \\cdot 500 = 1000\\text{ sm} = 10\\text{ metr}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (100 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (5 m). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350277,7 +350307,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$20\\\text{ km} = 2\\,000\\,000\\\text{ sm}$. $M = \\frac{4}{2\\,000\\,000} = \\frac{1}{500\\,000}$.",
+        "explanation": "$20\\text{ km} = 2\\,000\\,000\\text{ sm}$. $M = \\frac{4}{2\\,000\\,000} = \\frac{1}{500\\,000}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 200 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 50 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350306,7 +350336,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$5 \\cdot 1\\,000\\,000\\\text{ sm} = 5\\,000\\,000\\\text{ sm} = 50\\\text{ km}$.",
+        "explanation": "$5 \\cdot 1\\,000\\,000\\text{ sm} = 5\\,000\\,000\\text{ sm} = 50\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '50 km'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (500 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350335,7 +350365,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$360\\\text{ km} = 36\\,000\\,000\\\text{ sm}$. $x = 36\\,000\\,000 : 3\\,000\\,000 = 12\\\text{ sm}$.",
+        "explanation": "$360\\text{ km} = 36\\,000\\,000\\text{ sm}$. $x = 36\\,000\\,000 : 3\\,000\\,000 = 12\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (10 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '12 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -350356,15 +350386,15 @@
         "passport_id": "g6-r6p1-9-7-2c97e8",
         "question": "Planda otağın ölçüləri 4 sm və 6 sm-dir. Planın miqyası $1 : 100$ olarsa, otağın həqiqi sahəsini kvadrat metrlə tapın:",
         "options": [
-          "$12\\\text{ m}^2$",
-          "$240\\\text{ m}^2$",
-          "$24\\\text{ m}^2$",
-          "$48\\\text{ m}^2$"
+          "$12\\text{ m}^2$",
+          "$240\\text{ m}^2$",
+          "$24\\text{ m}^2$",
+          "$48\\text{ m}^2$"
         ],
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "En = $4 \\cdot 100\\\text{ sm} = 4\\\text{ m}$, Uzunluq = $6 \\cdot 100\\\text{ sm} = 6\\\text{ m}$. $S = 4 \\cdot 6 = 24\\\text{ m}^2$.",
+        "explanation": "En = $4 \\cdot 100\\text{ sm} = 4\\text{ m}$, Uzunluq = $6 \\cdot 100\\text{ sm} = 6\\text{ m}$. $S = 4 \\cdot 6 = 24\\text{ m}^2$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($12\\\text{ m}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır ($240\\\text{ m}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350393,7 +350423,7 @@
         "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$\\frac{6}{150} = \\frac{8}{x} \\Rightarrow 6x = 1200 \\Rightarrow x = 200\\\text{ km}$.",
+        "explanation": "$\\frac{6}{150} = \\frac{8}{x} \\Rightarrow 6x = 1200 \\Rightarrow x = 200\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (240 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (180 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350422,7 +350452,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$4\\\text{ sm} = 40\\\text{ mm}$. $M = 40 : 0.2 = 200 : 1$.",
+        "explanation": "$4\\text{ sm} = 40\\text{ mm}$. $M = 40 : 0.2 = 200 : 1$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '200 : 1'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (20 : 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350470,17 +350500,17 @@
       {
         "id": 61131,
         "passport_id": "g6-r6p1-9-11-6b78ee",
-        "question": "Miqyası $1 : 50\\,000$ olan xəritədə sahəsi $12\\\text{ sm}^2$ olan meşə sahəsinin həqiqi sahəsi neçə kvadrat kilometrdir?",
+        "question": "Miqyası $1 : 50\\,000$ olan xəritədə sahəsi $12\\text{ sm}^2$ olan meşə sahəsinin həqiqi sahəsi neçə kvadrat kilometrdir?",
         "options": [
-          "$1.5\\\text{ km}^2$",
-          "$6\\\text{ km}^2$",
-          "$3\\\text{ km}^2$",
-          "$12\\\text{ km}^2$"
+          "$1.5\\text{ km}^2$",
+          "$6\\text{ km}^2$",
+          "$3\\text{ km}^2$",
+          "$12\\text{ km}^2$"
         ],
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "1 sm = 0.5 km $\\Rightarrow 1\\\text{ sm}^2 = 0.25\\\text{ km}^2$. Həqiqi sahə: $12 \\cdot 0.25 = 3\\\text{ km}^2$.",
+        "explanation": "1 sm = 0.5 km $\\Rightarrow 1\\text{ sm}^2 = 0.25\\text{ km}^2$. Həqiqi sahə: $12 \\cdot 0.25 = 3\\text{ km}^2$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır ($1.5\\\text{ km}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır ($6\\\text{ km}^2$). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350509,7 +350539,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Həqiqi məsafə: $8 \\cdot 20\\\text{ km} = 160\\\text{ km} = 16\\,000\\,000\\\text{ sm}$. $M_2 = 16 / 16\\,000\\,000 = 1 : 1\\,000\\,000$.",
+        "explanation": "Həqiqi məsafə: $8 \\cdot 20\\text{ km} = 160\\text{ km} = 16\\,000\\,000\\text{ sm}$. $M_2 = 16 / 16\\,000\\,000 = 1 : 1\\,000\\,000$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 2 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 4 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350528,7 +350558,7 @@
       {
         "id": 61133,
         "passport_id": "g6-r6p1-9-13-e7fdde",
-        "question": "Kvadrat şəkilli torpaq sahəsinin həqiqi sahəsi $36\\\text{ ha}$-dır. Miqyası $1 : 10\\,000$ olan planda bu sahənin perimetri neçə sm olar?",
+        "question": "Kvadrat şəkilli torpaq sahəsinin həqiqi sahəsi $36\\text{ ha}$-dır. Miqyası $1 : 10\\,000$ olan planda bu sahənin perimetri neçə sm olar?",
         "options": [
           "24 sm",
           "12 sm",
@@ -350538,7 +350568,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$36\\\text{ ha} = 360\\,000\\\text{ m}^2 \\Rightarrow a = 600\\\text{ m} = 60\\,000\\\text{ sm}$. Planda tərəf = $60\\,000 : 10\\,000 = 6\\\text{ sm}$. $P = 4 \\cdot 6 = 24\\\text{ sm}$.",
+        "explanation": "$36\\text{ ha} = 360\\,000\\text{ m}^2 \\Rightarrow a = 600\\text{ m} = 60\\,000\\text{ sm}$. Planda tərəf = $60\\,000 : 10\\,000 = 6\\text{ sm}$. $P = 4 \\cdot 6 = 24\\text{ sm}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '24 sm'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (12 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350596,7 +350626,7 @@
         "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "$40\\,000\\\text{ km} = 4\\,000\\,000\\,000\\\text{ sm}$. $M = 80 / 4\\,000\\,000\\,000 = 1 : 50\\,000\\,000$.",
+        "explanation": "$40\\,000\\text{ km} = 4\\,000\\,000\\,000\\text{ sm}$. $M = 80 / 4\\,000\\,000\\,000 = 1 : 50\\,000\\,000$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (1 : 500 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (1 : 5 000 000). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350769,7 +350799,7 @@
         "correctAnswer": 2,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$5 \\cdot 2 = 10\\\text{ manat}$ (dəftərin sayı ilə qiymət düz mütənasibdir).",
+        "explanation": "$5 \\cdot 2 = 10\\text{ manat}$ (dəftərin sayı ilə qiymət düz mütənasibdir).",
         "distractor_diagnostics": {
           "A": "Yanlışdır (7 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (8 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350798,7 +350828,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$140 : 2 = 70\\\text{ km/saat}$. $5 \\cdot 70 = 350\\\text{ km}$.",
+        "explanation": "$140 : 2 = 70\\text{ km/saat}$. $5 \\cdot 70 = 350\\text{ km}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (280 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (300 km). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -350885,7 +350915,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1\\\text{ kq} = 18 : 3 = 6\\\text{ manat}$. $8 \\cdot 6 = 48\\\text{ manat}$.",
+        "explanation": "$1\\text{ kq} = 18 : 3 = 6\\text{ manat}$. $8 \\cdot 6 = 48\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (45 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (54 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -351074,35 +351104,6 @@
         "sourceContext": "Dərslik: Riyaziyyat 6 - 2.6. Düz mütənasib asılılıq",
         "correct_answer": "A",
         "answer": "A"
-      },
-      {
-        "id": 61149,
-        "passport_id": "g6-r6p1-10-14-d82457",
-        "question": "Eyni gücə malik 5 nasos hovuzu 12 saata doldurursa, həmin hovuzu 4 saata doldurmaq üçün neçə nasos lazımdır?",
-        "options": [
-          "12 nasos",
-          "15 nasos",
-          "10 nasos",
-          "20 nasos"
-        ],
-        "correctAnswer": 1,
-        "difficulty": "çətin",
-        "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Nasos sayı ilə zaman tərs mütənasibdir: $5 \\cdot 12 = n \\cdot 4 \\Rightarrow n = 60 / 4 = 15$ nasos.",
-        "distractor_diagnostics": {
-          "A": "Yanlışdır (12 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "DÜZGÜNDÜR: '15 nasos'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
-          "C": "Yanlışdır (10 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "Yanlışdır (20 nasos). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
-        },
-        "solution_steps": [
-          "Sualın şərtini diqqətlə oxuyaraq əsas anlayışı və ya qanunauyğunluğu müəyyən edin.",
-          "Dərslikdəki müvafiq mövzunu, qaydanı və ya təhlili nəzərdən keçirin.",
-          "Şərtə tam uyğun gələn doğru variantı (15 nasos) seçin."
-        ],
-        "sourceContext": "Dərslik: Riyaziyyat 6 - 2.6. Düz mütənasib asılılıq",
-        "correct_answer": "B",
-        "answer": "B"
       },
       {
         "id": 61150,
@@ -351396,7 +351397,7 @@
       {
         "id": 61157,
         "passport_id": "g6-r6p1-11-7-21044f",
-        "question": "Avtomobil $60\\\text{ km/saat}$ sürətlə yolu 4 saata gedir. Həmin yolu 3 saata qət etmək üçün sürət neçə olmalıdır?",
+        "question": "Avtomobil $60\\text{ km/saat}$ sürətlə yolu 4 saata gedir. Həmin yolu 3 saata qət etmək üçün sürət neçə olmalıdır?",
         "options": [
           "75 km/saat",
           "90 km/saat",
@@ -351406,7 +351407,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 60 \\cdot 4 = 240\\\text{ km}$. $v = 240 : 3 = 80\\\text{ km/saat}$.",
+        "explanation": "$S = 60 \\cdot 4 = 240\\text{ km}$. $v = 240 : 3 = 80\\text{ km/saat}$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (75 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (90 km/saat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -351483,7 +351484,7 @@
       {
         "id": 61160,
         "passport_id": "g6-r6p1-11-10-da8a3a",
-        "question": "Düzbucaqlının sahəsi $36\\\text{ sm}^2$-dir. Eni 4 sm-dən 9 sm-ə qədər artırılarsa, uzunluğu necə dəyişər?",
+        "question": "Düzbucaqlının sahəsi $36\\text{ sm}^2$-dir. Eni 4 sm-dən 9 sm-ə qədər artırılarsa, uzunluğu necə dəyişər?",
         "options": [
           "2 qat artar",
           "9 sm-dən 4 sm-ə enər (azalar)",
@@ -352072,7 +352073,7 @@
         "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
-        "explanation": "Duz = $200 \\cdot 0.20 = 40\\\text{ q}$. Yeni ümumi kütlə = $200 + 50 = 250\\\text{ q}$. Yeni faiz = $\\frac{40}{250} \\cdot 100\\% = 16\\%$.",
+        "explanation": "Duz = $200 \\cdot 0.20 = 40\\text{ q}$. Yeni ümumi kütlə = $200 + 50 = 250\\text{ q}$. Yeni faiz = $\\frac{40}{250} \\cdot 100\\% = 16\\%$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (15%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "Yanlışdır (18%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -352274,7 +352275,7 @@
         "correctAnswer": 0,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Artım = $60 - 50 = 10\\\text{ manat}$. Faiz: $\\frac{10}{50} \\cdot 100\\% = 20\\%$.",
+        "explanation": "Artım = $60 - 50 = 10\\text{ manat}$. Faiz: $\\frac{10}{50} \\cdot 100\\% = 20\\%$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '20%'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (10%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -352303,7 +352304,7 @@
         "correctAnswer": 1,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "Azalma = $80 - 60 = 20\\\text{ manat}$. Faiz: $\\frac{20}{80} \\cdot 100\\% = 25\\%$.",
+        "explanation": "Azalma = $80 - 60 = 20\\text{ manat}$. Faiz: $\\frac{20}{80} \\cdot 100\\% = 25\\%$.",
         "distractor_diagnostics": {
           "A": "Yanlışdır (20%). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
           "B": "DÜZGÜNDÜR: '25%'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -352622,7 +352623,7 @@
         "correctAnswer": 0,
         "difficulty": "çətin",
         "bloom_taxonomy": "5-Dəyərləndirmək",
-        "explanation": "$S_2 = 1000 \\cdot (1 + 0.10)^2 = 1000 \\cdot 1.21 = 1210\\\text{ manat}$.",
+        "explanation": "$S_2 = 1000 \\cdot (1 + 0.10)^2 = 1000 \\cdot 1.21 = 1210\\text{ manat}$.",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '1210 manat'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
           "B": "Yanlışdır (1200 manat). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -359710,7 +359711,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -359800,7 +359801,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -359860,7 +359861,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -359890,7 +359891,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.1. İlkin yoxlama",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360246,7 +360247,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360336,7 +360337,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360396,7 +360397,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -360426,7 +360427,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.9. Məsələ və misallar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360782,7 +360783,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360872,7 +360873,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -360932,7 +360933,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -360962,7 +360963,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "2.12. Ümumiləşdirici tapşırıqlar",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -361318,7 +361319,7 @@
         "correctAnswer": 3,
         "difficulty": "asan",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
-        "explanation": "$1\\\text{ m} = 100\\\text{ sm}$. $100 : 25 = 4$.",
+        "explanation": "$1\\text{ m} = 100\\text{ sm}$. $100 : 25 = 4$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -361408,7 +361409,7 @@
         "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$1.5\\\text{ kq} = 1500\\\text{ q}$. $1500 : 500 = 3$.",
+        "explanation": "$1.5\\text{ kq} = 1500\\text{ q}$. $1500 : 500 = 3$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (30). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
@@ -361468,7 +361469,7 @@
         "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$2\\\text{ saat} = 120\\\text{ dəqiqə}$. $120 : 40 = 3$.",
+        "explanation": "$2\\text{ saat} = 120\\text{ dəqiqə}$. $120 : 40 = 3$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "DÜZGÜNDÜR: '3'. Dərslik qayda və elmi meyarlarına tam uyğundur.",
@@ -361498,7 +361499,7 @@
         "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
-        "explanation": "$S = 8 \\cdot 12 = 96\\\text{ sm}^2$, $P = 2(8 + 12) = 40\\\text{ sm}$. $S/P = 96 / 40 = 2.4\\\text{ sm}$.",
+        "explanation": "$S = 8 \\cdot 12 = 96\\text{ sm}^2$, $P = 2(8 + 12) = 40\\text{ sm}$. $S/P = 96 / 40 = 2.4\\text{ sm}$.",
         "topic": "STEAM. Ekran nisbəti və çözümlülük",
         "distractor_diagnostics": {
           "A": "Yanlışdır (3.2 sm). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",

@@ -13,7 +13,7 @@ import { azNorm, stripTopicPrefix, findBestTopicMatch, findMatchingSubjectKeys }
 import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabase-questions"
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
-import { reconcileAnswerKeyRuntime } from "@/lib/runtime-answer-guard"
+import { reconcileAnswerKeyRuntime, sanitizeDistractorDiagnostics } from "@/lib/runtime-answer-guard"
 
 export async function POST(request: NextRequest) {
   try {
@@ -915,7 +915,7 @@ function loadFromOfflineTests(
         timeEstimate: (qDiff === "sadə" || qDiff === "asan" || qDiff === "easy") ? 1 : (qDiff === "çətin" || qDiff === "hard") ? 3 : 2,
         sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə (Dərslik):** ${textbookTitle}, "${qTopic}" mövzusu`),
         grounding: resolveGrounding(q, gradeNum, textbookTitle, qTopic),
-        distractor_diagnostics: q.distractor_diagnostics || undefined,
+        distractor_diagnostics: sanitizeDistractorDiagnostics(q.distractor_diagnostics, correctAnswerIndex),
         backward_trace: resolveBackwardTrace(q, gradeNum, textbookTitle, qTopic),
       }
     })

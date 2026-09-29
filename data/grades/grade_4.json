@@ -214742,7 +214742,7 @@
           "eine / eine",
           "eine / einen"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "'Lektion 1. Stunde 1. Wer bist du?' mövzusu üzrə tədris qaydalarına və məntiqi təhlilə əsasən düzgün cavab: 'A) eine / einen'.",
@@ -214766,8 +214766,9 @@
         },
         "topic": "Lektion 5. Stunde 2. Hast du einen Bruder?",
         "passport_id": "g4-deu4-18-13-c6c365",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2
       },
       {
         "question": "Situasiya: Səndən bacın olub-olmadığını soruşurlar. Sənin bacın yoxdur. Nə cavab verərsən?",
@@ -229553,7 +229554,7 @@
           "dessert",
           "petit déjeuner"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "'Module 1. Leçon 1. Youpiii, je revois mes camarades !' mövzusu üzrə tədris qaydalarına və məntiqi təhlilə əsasən düzgün cavab: 'C) petit déjeuner'.",
@@ -229577,8 +229578,9 @@
         },
         "topic": "Module 3. Leçon 2. Petit déjeuner à l'école",
         "passport_id": "g4-fra4-10-5-fc7522",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "À quelle heure prend-on le petit déjeuner ?",
@@ -229658,7 +229660,7 @@
           "petit déjeuner",
           "dessert"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "'Module 1. Révision' mövzusu üzrə tədris qaydalarına və məntiqi təhlilə əsasən düzgün cavab: 'C) petit déjeuner'.",
@@ -229682,8 +229684,9 @@
         },
         "topic": "Module 3. Leçon 2. Petit déjeuner à l'école",
         "passport_id": "g4-fra4-10-8-92cd01",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0
       },
       {
         "question": "Que mangeons-nous souvent au petit déjeuner ?",

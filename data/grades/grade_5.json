@@ -220089,7 +220089,7 @@
           "Dövr",
           "Könül"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "'Dövr', 'fəsl', 'qəbr' kimi sözlərə mənsubiyyət və hal şəkilçiləri artırarkən sait düşmə hadisəsi baş verir, lakin bu sözlərdə düşən sait yoxdur, onlar artıq 1 hecalıdır. Lakin yazılışda dövr, qəbr, fəsl yox, dövür, qəbir, fəsil yazılır. Deməli sualda məntiq var: dövr sözünə şəkilçi artırdıqda (dövrüm) içindəki yaranan fiktiv sait düşür. Düzgün cavab Dövr-dür çünki əsli bir hecalıdır.",
@@ -220112,8 +220112,9 @@
         },
         "topic": "1. Sözlərdə saitlərin yazılışı",
         "passport_id": "g5-az5-1-51-7a7de4",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Hansı halda iki sait yan-yana gəlsə də onlardan biri uzanmır və ya araya 'y' daxil olmur?",
@@ -402599,7 +402600,7 @@
           "10",
           "16"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Addım 1: X = 5. Addım 2: X = 5 + 3 = 8. Addım 3: X = 8 × 2 = 16. Nəticə 16-dır. Alqoritmi addım-addım izləmək düzgün cavaba gətirir.",
@@ -402621,8 +402622,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (İnformatika 5, Ramin Mahmudzadə, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-inf5-19-17-200c6a",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0
       },
       {
         "question": "Bir qurbağa hər gün 3 metr sıçrayır, amma gecə 1 metr geri düşür. Qurbağa 5 metrelik çuxurdan neçə gündə çıxa bilər?",
@@ -417972,7 +417974,7 @@
           "Təslimiyyət",
           "Qüdrət"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -417994,8 +417996,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-6-13-51c432",
-        "correct_answer": "B",
-        "answer": "B"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Ana maral (əfsanə)' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -418038,7 +418041,7 @@
           "Publisistik",
           "Bədii və təsirli"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -418060,8 +418063,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-6-15-edb731",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "«Ana maral» əfsanəsində ana maralın insanlara münasibəti necə təsvir olunur?",
@@ -418619,7 +418623,7 @@
           "Bədii və təsirli",
           "Mürəkkəb elmi terminlərlə zəngin"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -418641,8 +418645,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-7-15-5fbf8f",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Əfsanədə xalqın özünə yeni vətən axtarmasının səbəbi nə idi?",
@@ -420839,7 +420844,7 @@
           "Bayatı",
           "Dastan"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -420861,8 +420866,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-10-14-18f34e",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "'Yetim İbrahimin nağılı' əsərinin süjet xəttindəki ən böyük ziddiyyət nədir?",
@@ -421189,7 +421195,7 @@
           "Sərvət",
           "Qüdrət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -421211,8 +421217,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-7-3e4791",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Üç qardaş (özbək nağılı)' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -421255,7 +421262,7 @@
           "Düzlük və mərdlik",
           "Qüdrət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -421277,8 +421284,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-9-e96457",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Əsərin kulminasiya nöqtəsində hansı hadisə baş verir ('Üç qardaş (özbək nağılı)')?",
@@ -421321,7 +421329,7 @@
           "Sərvət",
           "Qüdrət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -421343,8 +421351,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-11-078932",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Üç qardaş (özbək nağılı)' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -421387,7 +421396,7 @@
           "Düzlük və mərdlik",
           "Sərvət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -421409,8 +421418,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-13-94461c",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Müəllifin 'Üç qardaş (özbək nağılı)' əsərində istifadə etdiyi dilin xüsusiyyəti nədir?",
@@ -421420,7 +421430,7 @@
           "Mürəkkəb elmi terminlərlə zəngin",
           "Bədii və təsirli"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -421442,8 +421452,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-14-8b83dd",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "'Üç qardaş (özbək nağılı)' əsərindəki əsas ideya ilə hansı digər əsər arasında paralel aparmaq olar?",
@@ -421453,7 +421464,7 @@
           "Bayatı",
           "Nağıl"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -421475,8 +421486,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-11-15-423f34",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "«Üç qardaş» nağılında kiçik qardaş digərlərindən hansı keyfiyyəti ilə fərqlənirdi?",
@@ -422427,7 +422439,7 @@
           "Düzlük və mərdlik",
           "Sərvət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -422449,8 +422461,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-13-9-29e23d",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Azərbaycan! Azərbaycan!' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -422592,7 +422605,7 @@
           "Nağıl",
           "Bənzər mövzulu klassik əsər"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -422614,8 +422627,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-13-14-f9891c",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Müəllifin 'Azərbaycan! Azərbaycan!' əsərində istifadə etdiyi dilin xüsusiyyəti nədir?",
@@ -422625,7 +422639,7 @@
           "Elmi",
           "Publisistik"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -422647,8 +422661,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-13-15-a5c3d9",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Əhməd Cavadın bu məşhur şeirində Vətənimiz hansı obrazda canlandırılır?",
@@ -423107,7 +423122,7 @@
           "Qüdrət",
           "Təslimiyyət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -423129,8 +423144,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-14-12-c929ef",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Yaşayanlar görəcəkdir' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -423173,7 +423189,7 @@
           "Düzlük və mərdlik",
           "Sərvət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -423195,8 +423211,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-14-14-151351",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Yaşayanlar görəcəkdir' əsərinin süjet xəttindəki ən böyük ziddiyyət nədir?",
@@ -423655,7 +423672,7 @@
           "Düzlük və mərdlik",
           "Qüdrət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -423677,8 +423694,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-15-11-2de93e",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Əsərin kulminasiya nöqtəsində hansı hadisə baş verir ('Kərpickəsən kişinin dastanı')?",
@@ -423787,7 +423805,7 @@
           "Bənzər mövzulu klassik əsər",
           "Nağıl"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -423809,8 +423827,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-15-15-f06431",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Dahi Nizaminin bu hekayətində qoca kərpickəsən kişi hansı ali dəyəri təcəssüm etdirir?",
@@ -424137,7 +424156,7 @@
           "Düzlük və mərdlik",
           "Təslimiyyət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -424159,8 +424178,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-16-8-94bc7f",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'İlan və Qurbağa' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -424850,7 +424870,7 @@
           "Təslimiyyət",
           "Sərvət"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -424872,8 +424892,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-17-12-0a9b25",
-        "correct_answer": "B",
-        "answer": "B"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Əsərin kulminasiya nöqtəsində hansı hadisə baş verir ('Oğul həsrəti')?",
@@ -424949,7 +424970,7 @@
           "Elmi",
           "Publisistik"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -424971,8 +424992,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-17-15-fe4c8d",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Xəlil Rza Ulutürkün bu əsəri hansı qəhrəman şəhid oğluna həsr olunmuşdur?",
@@ -425431,7 +425453,7 @@
           "Təslimiyyət",
           "Sərvət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -425453,8 +425475,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-18-12-71de41",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Püstə ağacı' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -425497,7 +425520,7 @@
           "Düzlük və mərdlik",
           "Qüdrət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -425519,8 +425542,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-18-14-429cc1",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Püstə ağacı' əsərindəki əsas ideya ilə hansı digər əsər arasında paralel aparmaq olar?",
@@ -425530,7 +425554,7 @@
           "Dastan",
           "Bənzər mövzulu klassik əsər"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -425552,8 +425576,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-18-15-45afee",
-        "correct_answer": "D",
-        "answer": "D"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "«Püstə ağacı» hekayəsində uşaqların xarakterində hansı xüsusiyyətlər üzə çıxır?",
@@ -425946,7 +425971,7 @@
           "Qüdrət",
           "Sərvət"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -425968,8 +425993,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-19-10-afda4a",
-        "correct_answer": "B",
-        "answer": "B"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Firuzə qaşlı xəncər' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -425979,7 +426005,7 @@
           "Düzlük və mərdlik",
           "Sərvət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -426001,8 +426027,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-19-11-17414f",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Firuzə qaşlı xəncər' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -426045,7 +426072,7 @@
           "Sərvət",
           "Qüdrət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -426067,8 +426094,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-19-13-dc2c07",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Firuzə qaşlı xəncər' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -427174,7 +427202,7 @@
           "Sərvət",
           "Təslimiyyət"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -427196,8 +427224,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-21-12-67ee2d",
-        "correct_answer": "B",
-        "answer": "B"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Fərasətli oğlan' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -427207,7 +427236,7 @@
           "Düzlük və mərdlik",
           "Qüdrət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -427229,8 +427258,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-21-13-4062e8",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Fərasətli oğlan' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -427656,7 +427686,7 @@
           "Sərvət",
           "Qüdrət"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -427678,8 +427708,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-22-9-6df9f2",
-        "correct_answer": "B",
-        "answer": "B"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Qara torpaq və sarı qızıl' əsərində müəllif hansı fikri aşılamaq istəyir?",
@@ -427689,7 +427720,7 @@
           "Düzlük və mərdlik",
           "Qüdrət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -427711,8 +427742,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-22-10-e4c7f0",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Qara torpaq və sarı qızıl' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -427821,7 +427853,7 @@
           "Bənzər mövzulu klassik əsər",
           "Bayatı"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -427843,8 +427875,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-22-14-949606",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "'Qara torpaq və sarı qızıl' əsərinin süjet xəttindəki ən böyük ziddiyyət nədir?",
@@ -428435,7 +428468,7 @@
           "Bənzər mövzulu klassik əsər",
           "Dastan"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bənzər mövzulu klassik əsər.",
@@ -428457,8 +428490,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-23-15-408fe6",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "Abdulla Şaiqin «Köç» əsərində elat həyatının hansı ənənəsi təsvir olunur?",
@@ -428851,7 +428885,7 @@
           "Qüdrət",
           "Təslimiyyət"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -428873,8 +428907,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-24-10-21eb4b",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Çinarın şikayəti' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -428917,7 +428952,7 @@
           "Düzlük və mərdlik",
           "Sərvət"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual orta çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Düzlük və mərdlik.",
@@ -428939,8 +428974,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-24-12-d19ba5",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "'Çinarın şikayəti' mövzusunda hansı bədii təsvir vasitəsindən daha çox istifadə olunub?",
@@ -428983,7 +429019,7 @@
           "Publisistik",
           "Elmi"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Bu sual çətin çətinlik səviyyəsinə uyğundur və mövzu üzrə dərslik materiallarına (Gold Standart 2.1) əsaslanır. Düzgün cavab: Bədii və təsirli.",
@@ -429005,8 +429041,9 @@
           "curriculum": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi Tədris Proqramı (Ədəbiyyat 5, Gülşən Əliyeva, Bakınəşr / Şərq-Qərb)"
         },
         "passport_id": "g5-ed5-24-14-432763",
-        "correct_answer": "A",
-        "answer": "A"
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1
       },
       {
         "question": "'Çinarın şikayəti' əsərindəki əsas ideya ilə hansı digər əsər arasında paralel aparmaq olar?",
@@ -487074,7 +487111,7 @@
           "Dövr",
           "Könül"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "çətin",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "'Dövr', 'fəsl', 'qəbr' kimi sözlərə mənsubiyyət və hal şəkilçiləri artırarkən sait düşmə hadisəsi baş verir, lakin bu sözlərdə düşən sait yoxdur, onlar artıq 1 hecalıdır. Lakin yazılışda dövr, qəbr, fəsl yox, dövür, qəbir, fəsil yazılır. Deməli sualda məntiq var: dövr sözünə şəkilçi artırdıqda (dövrüm) içindəki yaranan fiktiv sait düşür. Düzgün cavab Dövr-dür çünki əsli bir hecalıdır.",
@@ -487097,8 +487134,9 @@
         },
         "topic": "1. Sözlərdə saitlərin yazılışı",
         "passport_id": "g5-az5p1-1-51-b9e1a4",
-        "correct_answer": "C",
-        "answer": "C"
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3
       },
       {
         "question": "Hansı halda iki sait yan-yana gəlsə də onlardan biri uzanmır və ya araya 'y' daxil olmur?",
