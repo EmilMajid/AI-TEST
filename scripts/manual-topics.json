@@ -9821,7 +9821,6 @@
   ],
   "azerbaycan-dili-8": [
     {
-      "group": "Bölmələr",
       "topics": [
         {
           "id": "az8-1",
@@ -10063,12 +10062,12 @@
           "id": "az8-60",
           "title": "IV BÖLMƏ: 1. Azərbaycan teatrı"
         }
-      ]
+      ],
+      "chapter": "Bölmələr"
     }
   ],
   "edebiyyat-8": [
     {
-      "group": "Mövzular",
       "topics": [
         {
           "id": "ed8-1",
@@ -10198,7 +10197,8 @@
           "id": "ed8-32",
           "title": "İnformasiya xarakterli mətni-məruzəni necə yazmalı?"
         }
-      ]
+      ],
+      "chapter": "Mövzular"
     }
   ],
   "riyaziyyat-8": [
@@ -11619,7 +11619,6 @@
   ],
   "informatika-8": [
     {
-      "group": "Mövzular",
       "topics": [
         {
           "id": "inf8-1",
@@ -11725,7 +11724,8 @@
           "id": "inf8-26",
           "title": "26. İnternet xidmətləri"
         }
-      ]
+      ],
+      "chapter": "Mövzular"
     }
   ],
   "informatika-11": [
@@ -13869,7 +13869,6 @@
   ],
   "azerbaycan-dili-4-h1": [
     {
-      "group": "Fəsil 1. FƏRD VƏ TOPLUM",
       "topics": [
         {
           "id": "az4-h1-1-1",
@@ -13891,10 +13890,10 @@
           "id": "az4-h1-1-5",
           "title": "Ümumiləşdirici təkrar (Fəsil 1)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 1. FƏRD VƏ TOPLUM"
     },
     {
-      "group": "Fəsil 2. QARABAĞ-ANA YURDUM",
       "topics": [
         {
           "id": "az4-h1-2-1",
@@ -13916,10 +13915,10 @@
           "id": "az4-h1-2-5",
           "title": "Ümumiləşdirici təkrar (Fəsil 2)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 2. QARABAĞ-ANA YURDUM"
     },
     {
-      "group": "Fəsil 3. SEVİMLİ QƏHRƏMANLARIM",
       "topics": [
         {
           "id": "az4-h1-3-1",
@@ -13941,10 +13940,10 @@
           "id": "az4-h1-3-5",
           "title": "Ümumiləşdirici təkrar (Fəsil 3)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 3. SEVİMLİ QƏHRƏMANLARIM"
     },
     {
-      "group": "Fəsil 4. İŞARƏLƏR VƏ SİMVOLLAR",
       "topics": [
         {
           "id": "az4-h1-4-1",
@@ -13974,12 +13973,12 @@
           "id": "az4-h1-4-7",
           "title": "İzahlı sözlük"
         }
-      ]
+      ],
+      "chapter": "Fəsil 4. İŞARƏLƏR VƏ SİMVOLLAR"
     }
   ],
   "azerbaycan-dili-4-h2": [
     {
-      "group": "Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\"",
       "topics": [
         {
           "id": "az4-h2-1-1",
@@ -14001,10 +14000,10 @@
           "id": "az4-h2-1-5",
           "title": "Ümumiləşdirici təkrar (Fəsil 5)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\""
     },
     {
-      "group": "Fəsil 6. TARİXİ ŞƏXSİYYƏTLƏR",
       "topics": [
         {
           "id": "az4-h2-2-1",
@@ -14026,10 +14025,10 @@
           "id": "az4-h2-2-5",
           "title": "Ümumiləşdirici təkrar (Fəsil 6)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 6. TARİXİ ŞƏXSİYYƏTLƏR"
     },
     {
-      "group": "Fəsil 7. ELMİ FANTASTİKA",
       "topics": [
         {
           "id": "az4-h2-3-1",
@@ -14047,10 +14046,10 @@
           "id": "az4-h2-3-4",
           "title": "Ümumiləşdirici təkrar (Fəsil 7)"
         }
-      ]
+      ],
+      "chapter": "Fəsil 7. ELMİ FANTASTİKA"
     },
     {
-      "group": "Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR",
       "topics": [
         {
           "id": "az4-h2-4-1",
@@ -14080,7 +14079,8 @@
           "id": "az4-h2-4-7",
           "title": "Terminlərin izahı"
         }
-      ]
+      ],
+      "chapter": "Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR"
     }
   ],
   "informatika-4": [
@@ -14242,7 +14242,6 @@
   ],
   "texnologiya-4": [
     {
-      "group": "TEXNOLOGİYALAR VƏ TEXNOLOJİ VASİTƏLƏR",
       "topics": [
         {
           "id": "tex4-1-1",
@@ -14264,10 +14263,10 @@
           "id": "tex4-1-5",
           "title": "Dərs 5. İstehsalat müəssisələri və istehsal"
         }
-      ]
+      ],
+      "chapter": "TEXNOLOGİYALAR VƏ TEXNOLOJİ VASİTƏLƏR"
     },
     {
-      "group": "MƏİŞƏT MƏDƏNİYYƏTİ",
       "topics": [
         {
           "id": "tex4-2-1",
@@ -14285,10 +14284,10 @@
           "id": "tex4-2-4",
           "title": "Dərs 9. Özümüzə xidmət edək, sağlamlığımızı və ətraf mühiti qoruyaq"
         }
-      ]
+      ],
+      "chapter": "MƏİŞƏT MƏDƏNİYYƏTİ"
     },
     {
-      "group": "KAĞIZ VƏ KARTONUN EMALI",
       "topics": [
         {
           "id": "tex4-3-1",
@@ -14306,10 +14305,10 @@
           "id": "tex4-3-4",
           "title": "Dərs 13. Xırdavat üçün mücrü"
         }
-      ]
+      ],
+      "chapter": "KAĞIZ VƏ KARTONUN EMALI"
     },
     {
-      "group": "KAĞIZQATLAMA VƏ NAXIŞKƏSMƏ",
       "topics": [
         {
           "id": "tex4-4-1",
@@ -14323,10 +14322,10 @@
           "id": "tex4-4-3",
           "title": "Dərs 16. Ornamentlər"
         }
-      ]
+      ],
+      "chapter": "KAĞIZQATLAMA VƏ NAXIŞKƏSMƏ"
     },
     {
-      "group": "YAPMA",
       "topics": [
         {
           "id": "tex4-5-1",
@@ -14344,10 +14343,10 @@
           "id": "tex4-5-4",
           "title": "Dərs 20. Çoxqatlı cızma"
         }
-      ]
+      ],
+      "chapter": "YAPMA"
     },
     {
-      "group": "TİKMƏ VƏ NAXIŞLAMA",
       "topics": [
         {
           "id": "tex4-6-1",
@@ -14361,10 +14360,10 @@
           "id": "tex4-6-3",
           "title": "Dərs 23. İlgək tikişi"
         }
-      ]
+      ],
+      "chapter": "TİKMƏ VƏ NAXIŞLAMA"
     },
     {
-      "group": "MÜXTƏLİF MATERİALLARDAN QURAŞDIRMA",
       "topics": [
         {
           "id": "tex4-7-1",
@@ -14386,12 +14385,12 @@
           "id": "tex4-7-5",
           "title": "Dərs 28. Yarıqlı kilidi olan həcmli məmulatlar və dəridən məmulatlar"
         }
-      ]
+      ],
+      "chapter": "MÜXTƏLİF MATERİALLARDAN QURAŞDIRMA"
     }
   ],
   "rus-dili-esas-4": [
     {
-      "group": "I. Что у осени в корзинке?",
       "topics": [
         {
           "id": "rus4-1-1",
@@ -14409,10 +14408,10 @@
           "id": "rus4-1-4",
           "title": "4. Обобщающие задания"
         }
-      ]
+      ],
+      "chapter": "I. Что у осени в корзинке?"
     },
     {
-      "group": "II. Железный кулак",
       "topics": [
         {
           "id": "rus4-2-1",
@@ -14430,10 +14429,10 @@
           "id": "rus4-2-4",
           "title": "8. Обобщающие задания"
         }
-      ]
+      ],
+      "chapter": "II. Железный кулак"
     },
     {
-      "group": "III. В мире сказок",
       "topics": [
         {
           "id": "rus4-3-1",
@@ -14455,10 +14454,10 @@
           "id": "rus4-3-5",
           "title": "13. Обобщающие задания"
         }
-      ]
+      ],
+      "chapter": "III. В мире сказок"
     },
     {
-      "group": "IV. Помощь близким",
       "topics": [
         {
           "id": "rus4-4-1",
@@ -14476,10 +14475,10 @@
           "id": "rus4-4-4",
           "title": "17. Обобщающие задания"
         }
-      ]
+      ],
+      "chapter": "IV. Помощь близким"
     },
     {
-      "group": "V. Синичкин календарь",
       "topics": [
         {
           "id": "rus4-5-1",
@@ -14497,10 +14496,10 @@
           "id": "rus4-5-4",
           "title": "21. Обобщающие задания"
         }
-      ]
+      ],
+      "chapter": "V. Синичкин календарь"
     },
     {
-      "group": "VI. Умей дружить",
       "topics": [
         {
           "id": "rus4-6-1",
@@ -14518,12 +14517,12 @@
           "id": "rus4-6-4",
           "title": "25. Тык-тык ханым. Часть II"
         }
-      ]
+      ],
+      "chapter": "VI. Умей дружить"
     }
   ],
   "riyaziyyat-4-h1": [
     {
-      "group": "Bölmə 1. Ədədlər (1 000 000-a qədər)",
       "topics": [
         {
           "id": "math4-h1-1-1",
@@ -14545,10 +14544,10 @@
           "id": "math4-h1-1-5",
           "title": "Bölmə 1. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 1. Ədədlər (1 000 000-a qədər)"
     },
     {
-      "group": "Bölmə 2. Toplama və çıxma",
       "topics": [
         {
           "id": "math4-h1-2-1",
@@ -14574,10 +14573,10 @@
           "id": "math4-h1-2-6",
           "title": "Bölmə 2. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 2. Toplama və çıxma"
     },
     {
-      "group": "Bölmə 3. Vurma və bölmə",
       "topics": [
         {
           "id": "math4-h1-3-1",
@@ -14615,10 +14614,10 @@
           "id": "math4-h1-3-9",
           "title": "Bölmə 3. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 3. Vurma və bölmə"
     },
     {
-      "group": "Bölmə 4. Riyazi ifadələr. Tənlik",
       "topics": [
         {
           "id": "math4-h1-4-1",
@@ -14644,10 +14643,10 @@
           "id": "math4-h1-4-6",
           "title": "Bölmə 4. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 4. Riyazi ifadələr. Tənlik"
     },
     {
-      "group": "Bölmə 5. Vurma və bölmə",
       "topics": [
         {
           "id": "math4-h1-5-1",
@@ -14673,10 +14672,10 @@
           "id": "math4-h1-5-6",
           "title": "Bölmə 5. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 5. Vurma və bölmə"
     },
     {
-      "group": "Bölmə 6. Həndəsi fiqurlar",
       "topics": [
         {
           "id": "math4-h1-6-1",
@@ -14726,12 +14725,12 @@
           "id": "math4-h1-6-12",
           "title": "Sözlük"
         }
-      ]
+      ],
+      "chapter": "Bölmə 6. Həndəsi fiqurlar"
     }
   ],
   "riyaziyyat-4-h2": [
     {
-      "group": "Bölmə 7. Adi və onluq kəsrlər",
       "topics": [
         {
           "id": "math4-h2-1-1",
@@ -14777,10 +14776,10 @@
           "id": "math4-h2-1-11",
           "title": "Məsələ həllinin bəzi üsulları"
         }
-      ]
+      ],
+      "chapter": "Bölmə 7. Adi və onluq kəsrlər"
     },
     {
-      "group": "Bölmə 8. Pullar",
       "topics": [
         {
           "id": "math4-h2-2-1",
@@ -14798,10 +14797,10 @@
           "id": "math4-h2-2-4",
           "title": "Bölmə 8. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 8. Pullar"
     },
     {
-      "group": "Bölmə 9. Ölçmə",
       "topics": [
         {
           "id": "math4-h2-3-1",
@@ -14839,10 +14838,10 @@
           "id": "math4-h2-3-9",
           "title": "Bölmə 9. Ümumiləşdirici tapşırıqlar"
         }
-      ]
+      ],
+      "chapter": "Bölmə 9. Ölçmə"
     },
     {
-      "group": "Bölmə 10. Məlumatların təsviri",
       "topics": [
         {
           "id": "math4-h2-4-1",
@@ -14868,7 +14867,8 @@
           "id": "math4-h2-4-6",
           "title": "Sözlük"
         }
-      ]
+      ],
+      "chapter": "Bölmə 10. Məlumatların təsviri"
     }
   ],
   "musiqi-4": [
@@ -14895,7 +14895,6 @@
   ],
   "hayat-bilgisi-4": [
     {
-      "group": "Fəsil 1. İnsan və sağlamlıq",
       "topics": [
         {
           "id": "hb4-1-1",
@@ -14921,10 +14920,10 @@
           "id": "hb4-1-6",
           "title": "6. Sağlamlığımızın qayğısına qalaq"
         }
-      ]
+      ],
+      "chapter": "Fəsil 1. İnsan və sağlamlıq"
     },
     {
-      "group": "Fəsil 2. Təbiət və ətraf mühit",
       "topics": [
         {
           "id": "hb4-2-1",
@@ -14934,10 +14933,10 @@
           "id": "hb4-2-2",
           "title": "8. Ətraf mühitin qorunması"
         }
-      ]
+      ],
+      "chapter": "Fəsil 2. Təbiət və ətraf mühit"
     },
     {
-      "group": "Fəsil 3. İnsan və cəmiyyət",
       "topics": [
         {
           "id": "hb4-3-1",
@@ -14967,10 +14966,10 @@
           "id": "hb4-3-7",
           "title": "15. Dini dəyərlər"
         }
-      ]
+      ],
+      "chapter": "Fəsil 3. İnsan və cəmiyyət"
     },
     {
-      "group": "Fəsil 4. Dövlət, hüquq və iqtisadiyyat",
       "topics": [
         {
           "id": "hb4-4-1",
@@ -14988,10 +14987,10 @@
           "id": "hb4-4-4",
           "title": "19. Pullar"
         }
-      ]
+      ],
+      "chapter": "Fəsil 4. Dövlət, hüquq və iqtisadiyyat"
     },
     {
-      "group": "Fəsil 5. Təhlükəsizlik və fövqəladə hallar",
       "topics": [
         {
           "id": "hb4-5-1",
@@ -15013,10 +15012,10 @@
           "id": "hb4-5-5",
           "title": "24. Yol hərəkəti qaydaları"
         }
-      ]
+      ],
+      "chapter": "Fəsil 5. Təhlükəsizlik və fövqəladə hallar"
     },
     {
-      "group": "Fəsil 6. Yer və təbii sərvətlər",
       "topics": [
         {
           "id": "hb4-6-1",
@@ -15030,12 +15029,12 @@
           "id": "hb4-6-3",
           "title": "27. Təbii ehtiyatlar"
         }
-      ]
+      ],
+      "chapter": "Fəsil 6. Yer və təbii sərvətlər"
     }
   ],
   "ingilis-dili-4": [
     {
-      "group": "Units",
       "topics": [
         {
           "id": "eng4-1",
@@ -15069,12 +15068,12 @@
           "id": "eng4-8",
           "title": "Unit 8. All Day Long!"
         }
-      ]
+      ],
+      "chapter": "Units"
     }
   ],
   "alman-dili-esas-4": [
     {
-      "group": "LEKTION 1. KENNENLERNEN",
       "topics": [
         {
           "id": "alm4-1-1",
@@ -15092,10 +15091,10 @@
           "id": "alm4-1-4",
           "title": "Lektion 1. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 1. KENNENLERNEN"
     },
     {
-      "group": "LEKTION 2. WAS IST DEIN HOBBY?",
       "topics": [
         {
           "id": "alm4-2-1",
@@ -15113,10 +15112,10 @@
           "id": "alm4-2-4",
           "title": "Lektion 2. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 2. WAS IST DEIN HOBBY?"
     },
     {
-      "group": "LEKTION 3. WIE FINDEST DU DEUTSCH?",
       "topics": [
         {
           "id": "alm4-3-1",
@@ -15134,10 +15133,10 @@
           "id": "alm4-3-4",
           "title": "Lektion 3. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 3. WIE FINDEST DU DEUTSCH?"
     },
     {
-      "group": "LEKTION 4. WOCHENTAGE",
       "topics": [
         {
           "id": "alm4-4-1",
@@ -15155,10 +15154,10 @@
           "id": "alm4-4-4",
           "title": "Lektion 4. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 4. WOCHENTAGE"
     },
     {
-      "group": "LEKTION 5. MEINE FAMILIE",
       "topics": [
         {
           "id": "alm4-5-1",
@@ -15176,10 +15175,10 @@
           "id": "alm4-5-4",
           "title": "Lektion 5. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 5. MEINE FAMILIE"
     },
     {
-      "group": "LEKTION 6. MEINE SACHEN",
       "topics": [
         {
           "id": "alm4-6-1",
@@ -15197,12 +15196,12 @@
           "id": "alm4-6-4",
           "title": "Lektion 6. Stunde 4. Wiederholung"
         }
-      ]
+      ],
+      "chapter": "LEKTION 6. MEINE SACHEN"
     }
   ],
   "fransiz-dili-esas-4": [
     {
-      "group": "Module 1. J'aime mon école !",
       "topics": [
         {
           "id": "fr4-1-1",
@@ -15220,10 +15219,10 @@
           "id": "fr4-1-4",
           "title": "Module 1. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 1. J'aime mon école !"
     },
     {
-      "group": "Module 2. La ronde des saisons",
       "topics": [
         {
           "id": "fr4-2-1",
@@ -15241,10 +15240,10 @@
           "id": "fr4-2-4",
           "title": "Module 2. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 2. La ronde des saisons"
     },
     {
-      "group": "Module 3. J'ai faim",
       "topics": [
         {
           "id": "fr4-3-1",
@@ -15262,10 +15261,10 @@
           "id": "fr4-3-4",
           "title": "Module 3. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 3. J'ai faim"
     },
     {
-      "group": "Module 4. Nos amis: les animaux!",
       "topics": [
         {
           "id": "fr4-4-1",
@@ -15283,10 +15282,10 @@
           "id": "fr4-4-4",
           "title": "Module 4. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 4. Nos amis: les animaux!"
     },
     {
-      "group": "Module 5. Je me sens bien !",
       "topics": [
         {
           "id": "fr4-5-1",
@@ -15304,10 +15303,10 @@
           "id": "fr4-5-4",
           "title": "Module 5. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 5. Je me sens bien !"
     },
     {
-      "group": "Module 6. Je découvre la France !",
       "topics": [
         {
           "id": "fr4-6-1",
@@ -15325,7 +15324,8 @@
           "id": "fr4-6-4",
           "title": "Module 6. Révision"
         }
-      ]
+      ],
+      "chapter": "Module 6. Je découvre la France !"
     }
   ],
   "tesviri-incesenet-4": [
@@ -18384,119 +18384,134 @@
   ],
   "azerbaycan-dili-9": [
     {
-      "group": "Mövzular",
+      "chapter": "1-ci bölmə. Dil, təhsil və cəmiyyət",
       "topics": [
         {
-          "id": "az9-1",
-          "title": "1. Ana qucağı"
+          "title": "Ana qucağı",
+          "page": 6
         },
         {
-          "id": "az9-2",
-          "title": "2. Mətn: Təhsil və inkişaf"
+          "title": "Mətn. Təhsilin gücü",
+          "page": 10
         },
         {
-          "id": "az9-3",
-          "title": "3. Üçüncü il"
+          "title": "Üçüncü il",
+          "page": 14
         },
         {
-          "id": "az9-4",
-          "title": "4. “Amalım millətimi səadətə qovuşdurmaqdır”"
+          "title": "“Amalım millətimi səadətə qovuşdurmaqdır”",
+          "page": 18
         },
         {
-          "id": "az9-5",
-          "title": "5. “Sizi təbrik edirəm, qızlar!”"
+          "title": "“Sizi təbrik edirəm, qızlar!”",
+          "page": 22
         },
         {
-          "id": "az9-6",
-          "title": "6. Məhəmməd Sadıq bəy Ağabəyzadə"
+          "title": "Məhəmməd Sadıq bəy Ağabəyzadə",
+          "page": 26
         },
         {
-          "id": "az9-7",
-          "title": "7. Maarifçi fədailər - Aşurbəylilər"
+          "title": "Maarifçi fədailər - Aşurbəylilər",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "chapter": "2-ci bölmə. Müvəffəqiyyət və cəmiyyət",
+      "topics": [
+        {
+          "title": "Uğur",
+          "page": 34
         },
         {
-          "id": "az9-8",
-          "title": "8. Uğur"
+          "title": "Azərbaycanı Avropada tanıdan ilk kimyaçı alim",
+          "page": 38
         },
         {
-          "id": "az9-9",
-          "title": "9. Azərbaycanı Avropada tanıdan ilk kimyaçı alim"
+          "title": "Bir ağacın hekayəsi",
+          "page": 42
         },
         {
-          "id": "az9-10",
-          "title": "10. Bir ağacın hekayəsi"
+          "title": "Məndə ixtiyar olsa idi",
+          "page": 46
         },
         {
-          "id": "az9-11",
-          "title": "11. Məndə ixtiyar olsa idi"
+          "title": "Mətn. Zəhmətin bəhrəsi",
+          "page": 50
         },
         {
-          "id": "az9-12",
-          "title": "12. Mətn: Müvəffəqiyyətin sirri"
+          "title": "Mətn. Əmək və peşə",
+          "page": 54
         },
         {
-          "id": "az9-13",
-          "title": "13. Mətn: Zəhmət və nailiyyət"
+          "title": "Ağ göyərçin",
+          "page": 58
+        }
+      ]
+    },
+    {
+      "chapter": "3-cü bölmə. Mənəviyyat və cəmiyyət",
+      "topics": [
+        {
+          "title": "Mətn. Mənəvi dəyərlər",
+          "page": 62
         },
         {
-          "id": "az9-14",
-          "title": "14. Ağ göyərçin"
+          "title": "“Ətrafsız həyat”",
+          "page": 66
         },
         {
-          "id": "az9-15",
-          "title": "15. Mətn: Mənəvi dəyərlər"
+          "title": "Oğlum Məhəmmədə nəsihət",
+          "page": 70
         },
         {
-          "id": "az9-16",
-          "title": "16. “Ətrafsız həyat”"
+          "title": "Bir şahidin beş şəhidi",
+          "page": 74
         },
         {
-          "id": "az9-17",
-          "title": "17. Oğlum Məhəmmədə nəsihət"
+          "title": "Səyahət mənə yaşamaq stimulu verir",
+          "page": 78
         },
         {
-          "id": "az9-18",
-          "title": "18. Bir şahidin beş şəhidi"
+          "title": "Mətn. İnsanlıq dərsi",
+          "page": 82
         },
         {
-          "id": "az9-19",
-          "title": "19. Səyahət mənə yaşamaq stimulu verir"
+          "title": "Yaradıcılığı gülüş və musiqi ilə yoğrulmuş xanım",
+          "page": 86
         },
         {
-          "id": "az9-20",
-          "title": "20. Mətn: Mənəvi ucalıq"
+          "title": "Dərman",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "chapter": "4-cü bölmə. Mədəni irs və cəmiyyət",
+      "topics": [
+        {
+          "title": "Bakı tarixinin ilk tədqiqatçısı",
+          "page": 94
         },
         {
-          "id": "az9-21",
-          "title": "21. Yaradıcılığı gülüş və musiqi ilə yoğrulmuş xanım"
+          "title": "İçərişəhər məhv edilməkdən necə xilas oldu?",
+          "page": 98
         },
         {
-          "id": "az9-22",
-          "title": "22. Dərman"
+          "title": "Azərbaycanlıların qədim yaşayış məskəni",
+          "page": 102
         },
         {
-          "id": "az9-23",
-          "title": "23. Bakı tarixinin ilk tədqiqatçısı"
+          "title": "Qarı dağı",
+          "page": 106
         },
         {
-          "id": "az9-24",
-          "title": "24. İçərişəhər məhv edilməkdən necə xilas oldu?"
+          "title": "Bəyaz yelkənli teatr",
+          "page": 110
         },
         {
-          "id": "az9-25",
-          "title": "25. Azərbaycanlıların qədim yaşayış məskəni"
-        },
-        {
-          "id": "az9-26",
-          "title": "26. Qarı dağı"
-        },
-        {
-          "id": "az9-27",
-          "title": "27. Bəyaz yelkənli teatr"
-        },
-        {
-          "id": "az9-28",
-          "title": "28. Dil qaydaları və ümumiləşdirici təkrar"
+          "title": "İstifadə edilmiş ədəbiyyat",
+          "page": 114
         }
       ]
     }
@@ -20005,271 +20020,380 @@
   ],
   "riyaziyyat-9": [
     {
-      "group": "Mövzular",
+      "chapter": "1. n-ci dərəcədən kök. Rasional üstlü qüvvət",
       "topics": [
         {
-          "id": "r9-1",
-          "title": "1. Həqiqi ədədlər və onlar üzərində əməllər"
+          "title": "Həqiqi ədədlər",
+          "page": 6
         },
         {
-          "id": "r9-2",
-          "title": "2. Həqiqi ədədin mütləq qiyməti (modulu)"
+          "title": "Ədəd oxu",
+          "page": 10
         },
         {
-          "id": "r9-3",
-          "title": "3. Ədədi çoxluqlar və onların təqdim formaları"
+          "title": "Həqiqi ədədin mütləq qiyməti",
+          "page": 14
         },
         {
-          "id": "r9-4",
-          "title": "4. n-ci dərəcədən kök və onun xassələri"
+          "title": "Ədədi çoxluqlar və təqdim formaları",
+          "page": 18
         },
         {
-          "id": "r9-5",
-          "title": "5. Rasional üstlü qüvvət və onun xassələri"
+          "title": "n-ci dərəcədən kök",
+          "page": 22
         },
         {
-          "id": "r9-6",
-          "title": "6. İrrasional ifadələrin çevrilməsi və məxrəcin irrasionallıqdan azad edilməsi"
+          "title": "n-ci dərəcədən kökün xassələri",
+          "page": 26
         },
         {
-          "id": "r9-7",
-          "title": "7. Mərkəzi bucaq, daxilə çəkilmiş bucaq və çevrə qövsü"
+          "title": "Vuruğun kök işarəsi altından çıxarılması",
+          "page": 30
         },
         {
-          "id": "r9-8",
-          "title": "8. Vətər və onun xassələri"
+          "title": "Vuruğun kök işarəsi altına daxil edilməsi",
+          "page": 34
         },
         {
-          "id": "r9-9",
-          "title": "9. Çevrəyə toxunan və kəsən"
+          "title": "Rasional üstlü qüvvət",
+          "page": 38
         },
         {
-          "id": "r9-10",
-          "title": "10. Toxunanlar və kəsənlər arasındakı bucaqlar"
+          "title": "Rasional üstlü qüvvətin xassələri",
+          "page": 42
+        }
+      ]
+    },
+    {
+      "chapter": "2. Çevrə",
+      "topics": [
+        {
+          "title": "Mərkəzi bucaq. Çevrə qövsü",
+          "page": 46
+        },
+        {
+          "title": "Qövsün uzunluğu",
+          "page": 50
+        },
+        {
+          "title": "Vətərin xassələri",
+          "page": 54
+        },
+        {
+          "title": "Çevrə daxilinə çəkilmiş bucaq",
+          "page": 58
+        },
+        {
+          "title": "Çevrəyə toxunan",
+          "page": 62
+        },
+        {
+          "title": "Çevrəyə çəkilmiş toxunanlar və kəsənlər arasındakı bucaqlar",
+          "page": 66
         },
         {
-          "id": "r9-11",
-          "title": "11. Çevrədə vətər və kəsənlərin parçalarının mütənasibliyi"
+          "title": "Çevrədə vətər və kəsənlərin parçalarının mütənasibliyi",
+          "page": 70
+        }
+      ]
+    },
+    {
+      "chapter": "3. Funksiyalar. Qrafiklər",
+      "topics": [
+        {
+          "title": "Kvadratik funksiya və onun qrafiki",
+          "page": 74
+        },
+        {
+          "title": "Kvadratik funksiyanın müxtəlif formalarda təqdimi",
+          "page": 78
         },
         {
-          "id": "r9-12",
-          "title": "12. Çevrənin uzunluğu və qövsün uzunluğu düsturları"
+          "title": "y = ax² + bx + c funksiyasının qrafikinin qurulması",
+          "page": 82
         },
         {
-          "id": "r9-13",
-          "title": "13. Kvadratik funksiya və onun qrafiki"
+          "title": "y = ax² + bx + c funksiyasının araşdırılması",
+          "page": 86
         },
         {
-          "id": "r9-14",
-          "title": "14. Parabolanın təpə nöqtəsinin koordinatları və simmetriya oxu"
+          "title": "Kvadratik funksiyanın tətbiqi ilə məsələ həlli",
+          "page": 90
         },
+        {
+          "title": "y = |x| funksiyası və onun qrafiki",
+          "page": 94
+        },
+        {
+          "title": "y = x³ funksiyası və onun qrafiki",
+          "page": 98
+        }
+      ]
+    },
+    {
+      "chapter": "4. Çevrənin tənliyi",
+      "topics": [
         {
-          "id": "r9-15",
-          "title": "15. Kvadratik funksiyanın ən böyük və ən kiçik qiymətləri"
+          "title": "İki nöqtə arasındakı məsafə düsturu",
+          "page": 102
         },
         {
-          "id": "r9-16",
-          "title": "16. y = |x| funksiyası və onun qrafiki"
+          "title": "Çevrənin tənliyi",
+          "page": 106
         },
         {
-          "id": "r9-17",
-          "title": "17. Qüvvət funksiyaları və qrafikləri"
+          "title": "Çevrə üzərindəki nöqtələrin koordinatları və triqonometrik nisbətlər",
+          "page": 110
         },
         {
-          "id": "r9-18",
-          "title": "18. Müstəvidə iki nöqtə arasındakı məsafə düsturu"
+          "title": "Dairə sektoru və seqmentinin sahəsi",
+          "page": 114
+        }
+      ]
+    },
+    {
+      "chapter": "5. Tənliklər. Tənliklər sistemi",
+      "topics": [
+        {
+          "title": "Yüksək dərəcəli tənliklər",
+          "page": 118
         },
         {
-          "id": "r9-19",
-          "title": "19. Parçanın ortasının koordinatları və nisbətdə bölünməsi"
+          "title": "Rasional tənliklər. Rasional tənliklərin tətbiqi ilə məsələ həlli",
+          "page": 122
         },
         {
-          "id": "r9-20",
-          "title": "20. Çevrənin tənliyi"
+          "title": "Modullu tənliklər",
+          "page": 126
         },
         {
-          "id": "r9-21",
-          "title": "21. Dairə sektoru və seqmentinin sahəsi"
+          "title": "İrrasional tənliklər",
+          "page": 130
         },
         {
-          "id": "r9-22",
-          "title": "22. Yüksək dərəcəli tənliklər və onların həlli"
+          "title": "Tənliklər sistemi",
+          "page": 134
         },
         {
-          "id": "r9-23",
-          "title": "23. Rasional tənliklər və onların həlli"
+          "title": "Bir tənliyi birdərəcəli, digəri ikidərəcəli olan tənliklər sistemi",
+          "page": 138
         },
         {
-          "id": "r9-24",
-          "title": "24. Dəyişəni modul işarəsi daxilində olan tənliklər"
+          "title": "Tənliklər sisteminin cəbri üsulla həlli",
+          "page": 142
         },
         {
-          "id": "r9-25",
-          "title": "25. İrrasional tənliklər və onların həlli"
+          "title": "Hər iki tənliyi ikidərəcəli olan tənliklər sistemi",
+          "page": 146
         },
         {
-          "id": "r9-26",
-          "title": "26. İkidəyişənli tənliklər sistemi"
+          "title": "Tənliklər sisteminə gətirilən məsələlər həlli",
+          "page": 150
+        }
+      ]
+    },
+    {
+      "chapter": "6. Çoxbucaqlılar",
+      "topics": [
+        {
+          "title": "Çoxbucaqlılar",
+          "page": 154
         },
         {
-          "id": "r9-27",
-          "title": "27. Tənliklər sisteminə gətirilən mətnli məsələlərin həlli"
+          "title": "Qabarıq çoxbucaqlının daxili və xarici bucaqlarının cəmi",
+          "page": 158
         },
         {
-          "id": "r9-28",
-          "title": "28. Qabarıq çoxbucaqlılar və onların daxili və xarici bucaqları"
+          "title": "Çevrənin daxilinə və xaricinə çəkilmiş çoxbucaqlılar",
+          "page": 162
         },
         {
-          "id": "r9-29",
-          "title": "29. Düzgün çoxbucaqlılar və onların bucaqları"
+          "title": "Üçbucağın daxilinə və xaricinə çəkilmiş çevrələr",
+          "page": 166
         },
         {
-          "id": "r9-30",
-          "title": "30. Çevrə daxilinə və xaricinə çəkilmiş düzgün çoxbucaqlılar"
+          "title": "Çevrənin daxilinə və xaricinə çəkilmiş dördbucaqlının xassələri",
+          "page": 170
         },
         {
-          "id": "r9-31",
-          "title": "31. Düzgün çoxbucaqlının sahəsi düsturları"
+          "title": "Düzgün çoxbucaqlının daxilinə və xaricinə çəkilmiş çevrələr",
+          "page": 174
         },
+        {
+          "title": "Düzgün çoxbucaqlının sahəsi",
+          "page": 178
+        }
+      ]
+    },
+    {
+      "chapter": "7. Bərabərsizliklər",
+      "topics": [
         {
-          "id": "r9-32",
-          "title": "32. Xətti bərabərsizliklər sistemi və bərabərsizliklər heyəti"
+          "title": "Xətti bərabərsizliklər sistemi. Bərabərsizliklər heyəti",
+          "page": 182
         },
         {
-          "id": "r9-33",
-          "title": "33. Modul daxilində dəyişəni olan bərabərsizliklər"
+          "title": "Modullu bərabərsizliklər",
+          "page": 186
         },
         {
-          "id": "r9-34",
-          "title": "34. Kvadrat bərabərsizliklər və onların həlli"
+          "title": "Kvadrat bərabərsizliklər",
+          "page": 190
         },
         {
-          "id": "r9-35",
-          "title": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli"
+          "title": "İntervallar üsulu",
+          "page": 194
         },
         {
-          "id": "r9-36",
-          "title": "36. İrrasional bərabərsizliklər və onların həlli"
+          "title": "Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+          "page": 198
         },
         {
-          "id": "r9-37",
-          "title": "37. Vektor anlayışı, kollinear və bərabər vektorlar"
+          "title": "İrrasional bərabərsizliklər",
+          "page": 202
+        }
+      ]
+    },
+    {
+      "chapter": "8. Vektorlar",
+      "topics": [
+        {
+          "title": "Vektorlar",
+          "page": 206
         },
         {
-          "id": "r9-38",
-          "title": "38. Vektorların koordinatları və vektorun modulu düsturu"
+          "title": "Dekart koordinat müstəvisində vektorlar",
+          "page": 210
         },
         {
-          "id": "r9-39",
-          "title": "39. Vektorların toplanması və çıxılması qaydaları"
+          "title": "Vektorun istiqaməti. Meyil bucağı",
+          "page": 214
         },
         {
-          "id": "r9-40",
-          "title": "40. Vektorun ədədə vurulması və xassələri"
+          "title": "Triqonometrik nisbətlər və vektorun komponentləri",
+          "page": 218
         },
         {
-          "id": "r9-41",
-          "title": "41. Vektorların skalyar hasili və vektorlar arasındakı bucaq"
+          "title": "Vektorların toplanması və çıxılması",
+          "page": 222
         },
         {
-          "id": "r9-42",
-          "title": "42. Müstəvidə hərəkət, ox simmetriyası və mərkəzi simmetriya"
+          "title": "Kollinear vektorların toplanması",
+          "page": 226
         },
         {
-          "id": "r9-43",
-          "title": "43. Paralel köçürmə və dönmə hərəkətləri"
+          "title": "Kollinear olmayan vektorların toplanması və çıxılması",
+          "page": 230
         },
         {
-          "id": "r9-44",
-          "title": "44. Oxşarlıq çevrilməsi və homotetiya"
+          "title": "Vektorların komponentlərindən istifadə etməklə toplanması",
+          "page": 234
         },
         {
-          "id": "r9-45",
-          "title": "45. Ədədi ardıcıllıqlar və onların verilmə üsulları"
+          "title": "Vektorun ədədə vurulması",
+          "page": 238
         },
         {
-          "id": "r9-46",
-          "title": "46. Ədədi silsilə və onun n-ci həddinin düsturu"
+          "title": "Komponentləri ilə verilmiş vektorlar üzərində əməllər",
+          "page": 242
         },
         {
-          "id": "r9-47",
-          "title": "47. Ədədi silsilənin xarakterik xassələri"
+          "title": "Paralel köçürmə",
+          "page": 246
         },
         {
-          "id": "r9-48",
-          "title": "48. Ədədi silsilənin ilk n həddinin cəmi düsturu"
+          "title": "Hərəkət və konqruyent fiqurlar",
+          "page": 250
+        }
+      ]
+    },
+    {
+      "chapter": "9. Ədədi ardıcıllıqlar",
+      "topics": [
+        {
+          "title": "Ədədi ardıcıllıq",
+          "page": 254
         },
         {
-          "id": "r9-49",
-          "title": "49. Həndəsi silsilə və onun n-ci həddinin düsturu"
+          "title": "Ədədi silsilə",
+          "page": 258
         },
         {
-          "id": "r9-50",
-          "title": "50. Həndəsi silsilənin xarakterik xassələri"
+          "title": "Ədədi silsilənin n-ci həddinin düsturu",
+          "page": 262
         },
         {
-          "id": "r9-51",
-          "title": "51. Həndəsi silsilənin ilk n həddinin cəmi düsturu"
+          "title": "Ədədi silsilənin xassələri",
+          "page": 266
         },
         {
-          "id": "r9-52",
-          "title": "52. Sonsuz azalan həndəsi silsilənin cəmi düsturu"
+          "title": "Ədədi silsilənin ilk n həddinin cəmi düsturu",
+          "page": 270
         },
         {
-          "id": "r9-53",
-          "title": "53. İxtiyari bucağın triqonometrik funksiyaları"
+          "title": "Həndəsi silsilə",
+          "page": 274
         },
         {
-          "id": "r9-54",
-          "title": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları"
+          "title": "Həndəsi silsilənin n-ci həddinin düsturu",
+          "page": 278
         },
         {
-          "id": "r9-55",
-          "title": "55. Sinuslar teoremi və tətbiqləri"
+          "title": "Həndəsi silsilənin xassələri",
+          "page": 282
         },
         {
-          "id": "r9-56",
-          "title": "56. Kosinuslar teoremi və üçbucaqların həlli"
+          "title": "Həndəsi silsilənin ilk n həddinin cəmi düsturu",
+          "page": 286
         },
+        {
+          "title": "Sonsuz azalan həndəsi silsilənin cəmi",
+          "page": 290
+        }
+      ]
+    },
+    {
+      "chapter": "10. Məlumatın təqdimi. Birləşmələr. Ehtimal",
+      "topics": [
         {
-          "id": "r9-57",
-          "title": "57. Fəzada nöqtə, düz xətt və müstəvilərin qarşılıqlı vəziyyəti"
+          "title": "Tezlik paylanması cədvəli",
+          "page": 294
         },
         {
-          "id": "r9-58",
-          "title": "58. Prizma və düzbucaqlı paralelepiped (səth və həcm)"
+          "title": "Nisbi tezlik",
+          "page": 298
         },
         {
-          "id": "r9-59",
-          "title": "59. Piramida, düzgün piramida (yan və tam səth, həcm)"
+          "title": "Tezlik histoqramı. Tezlik poliqonu",
+          "page": 302
         },
         {
-          "id": "r9-60",
-          "title": "60. Silindr və konus fırlanma cisimləri (səth və həcm)"
+          "title": "Tezlik paylanmasına görə ədədi orta",
+          "page": 306
         },
         {
-          "id": "r9-61",
-          "title": "61. Kürə və sfera (sferanın sahəsi və kürənin həcmi)"
+          "title": "Birləşmələr",
+          "page": 310
         },
         {
-          "id": "r9-62",
-          "title": "62. Toplama və vurma qaydaları, faktorial anlayışı"
+          "title": "Permutasiya-yerdəyişmə",
+          "page": 314
         },
         {
-          "id": "r9-63",
-          "title": "63. Permutasiyalar (yerdəyişmələr) və onların hesablanması"
+          "title": "Təkrarlı permutasiyalar",
+          "page": 318
         },
         {
-          "id": "r9-64",
-          "title": "64. Qruplaşmalar, kombinzonlar və aranjemanlar"
+          "title": "Permutasiya-yerləşdirmə",
+          "page": 322
         },
         {
-          "id": "r9-65",
-          "title": "65. Hadisənin ehtimalı, klassik və həndəsi ehtimal"
+          "title": "Kombinezon",
+          "page": 326
         },
         {
-          "id": "r9-66",
-          "title": "66. Statistika: Ədədi orta, median, moda, ən böyük fərq və dispersiya"
+          "title": "Ehtimalın hesablanmasına aid məsələ həlli",
+          "page": 330
         }
       ]
     }
@@ -20811,7 +20935,6 @@
   ],
   "fransiz-dili-9": [
     {
-      "group": "Unités",
       "topics": [
         {
           "id": "fr9-1",
@@ -20921,12 +21044,12 @@
           "id": "fr9-27",
           "title": "Unité 6 - Leçon 5 / Compréhension écrite : L’histoire de la Tour Eiffel"
         }
-      ]
+      ],
+      "chapter": "Unités"
     }
   ],
   "fransiz-dili-ikinci-9": [
     {
-      "group": "Unités",
       "topics": [
         {
           "id": "fr9-2-1",
@@ -21036,7 +21159,8 @@
           "id": "fr9-2-27",
           "title": "Unité 6 - Leçon 5 / Compréhension écrite : L’histoire de la Tour Eiffel"
         }
-      ]
+      ],
+      "chapter": "Unités"
     }
   ],
   "rus-dili-9": [
@@ -23353,7 +23477,6 @@
   ],
   "edebiyyat-5": [
     {
-      "group": "Mövzular",
       "topics": [
         {
           "id": "ed5-1",
@@ -23455,7 +23578,8 @@
           "id": "ed5-25",
           "title": "7. Fikrət Qoca. Şuşa"
         }
-      ]
+      ],
+      "chapter": "Mövzular"
     }
   ],
   "i-nformatika-11": [
@@ -24435,7 +24559,6 @@
   ],
   "ortaq-turk-tarixi-8": [
     {
-      "group": "Mövzular",
       "topics": [
         {
           "id": "ott8-1",
@@ -24581,7 +24704,8 @@
           "id": "ott8-36",
           "title": "36. Ortaq Türk dastanları və mədəni irsi"
         }
-      ]
+      ],
+      "chapter": "Mövzular"
     }
   ],
   "i-nformatika-8": [

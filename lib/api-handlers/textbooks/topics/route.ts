@@ -401,11 +401,19 @@ export async function GET(request: NextRequest) {
 
 
             let bookTopics: TopicGroup[] = [];
-            if (extractedTopics[bookId] && extractedTopics[bookId].length > 0) {
-                if (typeof extractedTopics[bookId][0] === "string") {
-                    bookTopics = parseManualTopics(extractedTopics[bookId] as any);
+            const altKey1 = book.title;
+            const altKey2 = `${bookSubject} ${classLevel}`;
+            const targetTopicsData = (extractedTopics[altKey2] && Array.isArray(extractedTopics[altKey2]) && extractedTopics[altKey2][0]?.chapter)
+                ? extractedTopics[altKey2]
+                : (extractedTopics[altKey1] && Array.isArray(extractedTopics[altKey1]) && extractedTopics[altKey1][0]?.chapter)
+                    ? extractedTopics[altKey1]
+                    : extractedTopics[bookId];
+
+            if (targetTopicsData && targetTopicsData.length > 0) {
+                if (typeof targetTopicsData[0] === "string") {
+                    bookTopics = parseManualTopics(targetTopicsData as any);
                 } else {
-                    bookTopics = extractedTopics[bookId];
+                    bookTopics = targetTopicsData;
                 }
             } else if (dirName) {
                 const folderKey = `${dirName}-${classLevel}`;
@@ -429,10 +437,19 @@ export async function GET(request: NextRequest) {
                 if (fs.existsSync(tPath)) bookTopics = extractTopicsFromTOC(tPath);
             }
 
-            let cleanGroups = bookTopics
-                .filter(g => !isMockContent(g.chapter))
-                .map(g => ({ ...g, topics: g.topics.filter(t => !isMockContent(t.title)) }))
-                .filter(g => g.topics.length > 0);
+            let cleanGroups = (bookTopics || [])
+                .map(g => {
+                    const chap = g.chapter || (g as any).group || (g as any).title || "Mövzular";
+                    const rawTopics = Array.isArray(g.topics) ? g.topics : [];
+                    const validTopics = rawTopics
+                        .map((t: any) => typeof t === "string" ? { title: t, page: 1, path: "" } : t)
+                        .filter((t: any) => t && t.title && !isMockContent(t.title));
+                    return {
+                        chapter: chap,
+                        topics: validTopics
+                    };
+                })
+                .filter(g => !isMockContent(g.chapter) && g.topics.length > 0);
 
             if (cleanGroups.length === 0) {
                 cleanGroups = getTopicsFromOfflineTests(bookId, normalizedDisplayName, classLevel);
