@@ -54,12 +54,22 @@ interface Question {
   distractor_diagnostics?: Record<string, string>
   backward_trace?: {
     is_root_anchor?: boolean
+    is_intra_grade?: boolean
     root_grade?: number | string
     root_book?: string
     root_page?: number | string
     root_concept?: string
+    concept_name?: string
+    concept_type?: string
+    concept_facet?: string
     remedial_duration_mins?: number
     parent_action_tip?: string
+    cross_subject_connections?: Array<{
+      subject: string
+      grade: number
+      topic: string
+      facet: string
+    }>
   }
 }
 
@@ -123,6 +133,16 @@ interface TestAnalysis {
 import { formatScientificText, formatSourceContext, cleanExplanation } from "@/lib/format-math"
 
 // Safe helper to convert any potential object/array/primitive into safe React child
+// Helper to sanitize any legacy page references from remedial advice strings
+const cleanRemedialTip = (tip?: string): string => {
+  if (!tip || typeof tip !== "string") return tip || "";
+  return tip
+    .replace(/,?\s*səhifə\s*\d+\s*[-–]\s*\d+(-dəki)?/gi, "")
+    .replace(/\(səh\.\s*\d+\s*[-–]\s*\d+\)/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+};
+
 const renderSafe = (val: any): React.ReactNode => {
   if (val === null || val === undefined) return "";
   if (typeof val === "string") return formatScientificText(val);
@@ -1023,16 +1043,22 @@ export default function ResultsPage() {
                             </p>
                           </div>
 
-                          {/* KAG Dərslik Səhifəsi İstinadı */}
+                          {/* KAG Dəqiq Dərslik və Elmi Anlayış İstinadı */}
                           {question.grounding && (
                             <div className="bg-blue-50/60 border border-blue-200/80 px-4 py-2.5 rounded-xl flex flex-wrap items-center justify-between text-xs text-blue-900 gap-2">
                               <span className="font-semibold flex items-center gap-1.5">
                                 <BookOpen className="h-3.5 w-3.5 text-blue-600" />
                                 <strong>KAG Dəqiq Dərslik:</strong> {question.grounding.book}
                               </span>
-                              <span className="bg-white border border-blue-200 px-2 py-0.5 rounded font-mono font-medium text-blue-800">
-                                Səhifə: {question.grounding.page_start} - {question.grounding.page_end}
-                              </span>
+                              {question.backward_trace?.concept_name ? (
+                                <span className="bg-white border border-blue-200 px-2.5 py-0.5 rounded font-medium text-blue-900">
+                                  🎯 {renderSafe(question.backward_trace.concept_name)}
+                                </span>
+                              ) : question.grounding.canonical_concept ? (
+                                <span className="bg-white border border-blue-200 px-2.5 py-0.5 rounded font-medium text-blue-900">
+                                  {renderSafe(question.grounding.canonical_concept)}
+                                </span>
+                              ) : null}
                             </div>
                           )}
 
@@ -1065,6 +1091,8 @@ export default function ResultsPage() {
                                 <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
                                   {question.backward_trace.is_root_anchor
                                     ? "Bünövrə Nöqtəsi (1-ci Sinif)"
+                                    : question.backward_trace.is_intra_grade
+                                    ? "Cari Sinif Dərsi (Kumulyativ)"
                                     : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
                                 </Badge>
                               </div>
@@ -1075,7 +1103,7 @@ export default function ResultsPage() {
                                   <div>
                                     <strong className="text-amber-950">Biliyin Geriyə Xəritələndirilməsi (Kök Səbəb):</strong>
                                     <p className="mt-1 text-amber-900/90">
-                                      {question.backward_trace.parent_action_tip ||
+                                      {cleanRemedialTip(question.backward_trace.parent_action_tip) ||
                                         `Bu səhvin təməl səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyindəki anlayışa söykənir.`}
                                     </p>
                                   </div>
@@ -1100,7 +1128,23 @@ export default function ResultsPage() {
                               {question.backward_trace.root_book && (
                                 <div className="text-[11px] text-amber-900/80 flex items-center gap-1.5 px-1">
                                   <BookOpen className="h-3.5 w-3.5 text-amber-600" />
-                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong> {question.backward_trace.root_page ? `(səh. ${question.backward_trace.root_page})` : ""}</span>
+                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong></span>
+                                </div>
+                              )}
+
+                              {question.backward_trace.cross_subject_connections && question.backward_trace.cross_subject_connections.length > 0 && (
+                                <div className="text-[11px] text-indigo-900 bg-indigo-50/80 border border-indigo-200 p-2.5 rounded-lg space-y-1">
+                                  <strong className="text-indigo-950 flex items-center gap-1">
+                                    <Lightbulb className="h-3.5 w-3.5 text-indigo-600" />
+                                    Fənlərarası Əlaqə (Sinerji):
+                                  </strong>
+                                  <div className="flex flex-wrap gap-1.5 pt-0.5">
+                                    {question.backward_trace.cross_subject_connections.map((cs: any, csIdx: number) => (
+                                      <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-800 font-medium">
+                                        🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
+                                      </span>
+                                    ))}
+                                  </div>
                                 </div>
                               )}
                             </div>

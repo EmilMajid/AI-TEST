@@ -94,6 +94,31 @@ function matchesOptionInText(opt: string, text: string): boolean {
     return parts.every(p => matchesSingleToken(p, textNorm))
   }
   
+  // 2. Full exact substring match
+  if (optNorm.length >= 4 && textNorm.includes(optNorm)) return true
+  
+  // 3. Chemical / Science synonyms
+  const synonyms: Record<string, string[]> = {
+    "əhəng daşı": ["kalsium-karbonat", "caco3", "əhəngdaşı"],
+    "kalsium-karbonat": ["əhəng daşı", "caco3", "əhəngdaşı"],
+    "təbii qaz": ["metan", "ch4"],
+    "su": ["h2o"],
+    "karbon qazı": ["co2"],
+    "paslanma": ["dəmir hidroksidləri", "dəmir oksidləri", "paslanma"]
+  }
+  for (const [k, synList] of Object.entries(synonyms)) {
+    if (optNorm.includes(k) && synList.some(s => textNorm.includes(s))) {
+      return true
+    }
+  }
+
+  // 4. Substantive token stem overlap
+  const words = optNorm.split(/[\s,;]+/).filter(w => w.length >= 3)
+  if (words.length >= 2) {
+    const matchedCount = words.filter(w => textNorm.includes(w.slice(0, Math.max(3, w.length - 2)))).length
+    if (matchedCount >= Math.ceil(words.length * 0.7)) return true
+  }
+  
   return matchesSingleToken(optNorm, textNorm)
 }
 

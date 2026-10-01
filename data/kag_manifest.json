@@ -1,0 +1,24 @@
+{
+  "kag_version": "5.0",
+  "ontology_version": "5.0",
+  "build_date": "2026-09-30",
+  "platform_standard": "SİTG (Milli AI Test Generasiya Standartı)",
+  "invariants": {
+    "zero_page": true,
+    "era_guard": true,
+    "sub_strand_guard": true,
+    "relation_separation": true,
+    "grade_1_immunity": true,
+    "measured_skill_grounding": true
+  },
+  "relations": {
+    "PREREQUISITE": "Şaquli fəndaxili bərpa xətti (remediation root)",
+    "CURRICULUM_BRIDGE": "Qanuni dövlət kurikulumu fənn körpüsü (məs. Fizika 7 -> Təbiət 6)",
+    "CROSS_SUBJECT_SYNERGY": "Üfüqi fənlərarası inteqrasiya kartı (yalnız /results UI üçün)"
+  },
+  "bloom_duration_mapping": {
+    "Bilik": 10,
+    "Tətbiq": 15,
+    "Təhlil": 20
+  }
+}
