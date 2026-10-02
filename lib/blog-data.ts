@@ -836,10 +836,10 @@ export const BLOG_POSTS: BlogPost[] = [
         "category": "Diagnostic Cognitive Assessment",
         "readTime": "9 min read",
         "keyTakeaways": [
-          "A low score in higher grades is frequently driven by a single misunderstood concept from 2 or 3 grades prior.",
+          "A low score in higher grades can often be traced back to an unaddressed prerequisite concept from earlier grades.",
           "Backward mapping recursively traces incorrect distractors through the curriculum prerequisite tree.",
           "Can help reduce unfocused tutoring by identifying targeted remediation milestones.",
-          "Transforms student self-esteem by proving difficulty is a fixable knowledge gap, not innate inability."
+          "Supports student academic confidence by framing difficulties as addressable knowledge gaps rather than innate inability."
         ],
         "sections": [
           {
@@ -868,10 +868,10 @@ export const BLOG_POSTS: BlogPost[] = [
         "category": "Diaqnostik Təhsil Analitikası",
         "readTime": "9 dəqiqə",
         "keyTakeaways": [
-          "Yuxarı siniflərdəki zəif nəticələrin əksəriyyəti 1-2 il əvvəlki kiçik bir təməl boşluqdan qaynaqlanır.",
+          "Yuxarı siniflərdəki çətinliklərin bir çoxu əvvəlki illərdən qalan təməl mövzu boşluqları ilə əlaqəli ola bilər.",
           "Sistem səhvi analiz edərək zəncirin hansı sinifdə qırıldığını geriyə doğru izləyir.",
           "Hədəfli və qısa təkrarla təməl mövzu boşluqlarının aradan qaldırılmasına kömək edir.",
-          "Uşağın özünə inamını bərpa edir: 'Sən bu fənni bacarmırsan' yox, 'Sadəcə 6-cı sinifdən bir qaydanı xatırla'."
+          "Şagirdin təlim motivasiyasını və inamını dəstəkləyir: çətinliklərin qabiliyyət yox, aradan qaldırıla bilən bilik boşluğu olduğunu göstərir."
         ],
         "sections": [
           {
@@ -898,8 +898,8 @@ export const BLOG_POSTS: BlogPost[] = [
         "category": "Tanısal Değerlendirme",
         "readTime": "9 dakika",
         "keyTakeaways": [
-          "Üst sınıflardaki başarısızlıkların kökeninde genellikle önceki yıllara ait tek bir temel boşluk yatar.",
-          "Haftalarca süren genel tekrarlar yerine 15 dakikalık nokta atışı telafi sağlar."
+          "Üst sınıflardaki zorluklar çoğu zaman önceki yıllara ait temel kavram eksiklikleriyle ilişkili olabilir.",
+          "Uzun ve hedefsiz tekrarlar yerine nokta atışı telafi planı oluşturmaya yardımcı olur."
         ],
         "sections": [
           {
