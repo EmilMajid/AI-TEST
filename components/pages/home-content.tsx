@@ -18,6 +18,8 @@ import {
 } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { FAQSection } from "@/components/pages/faq-section"
+import { HomeMethodology } from "@/components/pages/home-methodology"
+import { HomeFeaturedPosts } from "@/components/pages/home-featured-posts"
 import { StructuredData } from "@/components/seo/structured-data"
 import { DEFAULT_LOCALE } from "@/lib/config"
 
@@ -579,6 +581,12 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
             ))}
           </div>
         </div>
+
+        {/* Pedaqoji Metodologiya: RAG, KAG, Biliyin Geriyə Xəritələnməsi və Valideyn Faydası */}
+        <HomeMethodology lang={lang} />
+
+        {/* Seçilmiş Elmi Məqalələr və Pedaqoji Araşdırmalar */}
+        <HomeFeaturedPosts lang={lang} />
 
         {/* FAQ Bölməsi (Tez-tez verilən suallar) */}
         <FAQSection lang={lang} />

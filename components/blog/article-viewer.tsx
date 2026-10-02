@@ -6,6 +6,7 @@ import { ArrowLeft, Clock, Calendar, Share2, BookOpen, CheckCircle2, Quote, Spar
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { BlogPost } from "@/lib/blog-data"
 import { DEFAULT_LOCALE } from "@/lib/config"
+import { AdBanner } from "@/components/ads/ad-banner"
 
 interface ArticleViewerProps {
   post: BlogPost
@@ -183,8 +184,19 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
                     {paragraph}
                   </p>
                 ))}
+
+                {idx === 0 && (
+                  <div className="pt-4">
+                    <AdBanner slot="blog-article-inline" format="horizontal" className="my-6" />
+                  </div>
+                )}
               </section>
             ))}
+          </div>
+
+          {/* Bottom Ad Banner */}
+          <div className="pt-2">
+            <AdBanner slot="blog-article-footer" format="horizontal" className="my-4" />
           </div>
 
           {/* CTA Box */}

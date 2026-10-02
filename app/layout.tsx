@@ -64,15 +64,14 @@ export default function RootLayout({
     <html lang={DEFAULT_LOCALE} className="notranslate" translate="no">
       <head>
         <meta name="google" content="notranslate" />
+        <meta name="google-adsense-account" content={adsenseId} />
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="pb-16 sm:pb-20">
-        {/* Google AdSense Script */}
-        <Script
-          id="adsbygoogle-init"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-        />
         {/* Schema.org Structured Data */}
         <Script
           id="schema-organization"
