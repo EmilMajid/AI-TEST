@@ -24,7 +24,7 @@ export function AdBanner({
   format = "horizontal",
   refreshKey,
   className = "",
-  label = "Sponsorluq və Brend Əməkdaşlığı",
+  label = "Təhsil Tərəfdaşlığı və Elanlar",
 }: AdBannerProps) {
   const adRef = useRef<HTMLDivElement>(null)
   const [sloganIndex, setSloganIndex] = useState(0)
@@ -69,7 +69,7 @@ export function AdBanner({
           {label}
         </span>
         <span className="text-[10px] text-blue-400 font-semibold uppercase tracking-wider">
-          TESTAI Partnyor
+          Tərəfdaşlıq
         </span>
       </div>
 

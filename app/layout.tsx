@@ -4,6 +4,7 @@ import Script from "next/script"
 import { DEFAULT_LOCALE } from "@/lib/config"
 import { Toaster } from "@/components/ui/toaster"
 import { StickyBottomAd } from "@/components/ads/sticky-bottom-ad"
+import { CookieConsent } from "@/components/ui/cookie-consent"
 import "./globals.css"
 
 export const viewport: Viewport = {
@@ -26,26 +27,26 @@ export const metadata: Metadata = {
     "parent dashboard",
     "formative assessment",
   ],
-  authors: [{ name: "TESTAI.AZ", url: "https://testai.az" }],
+  authors: [{ name: "TESTAI.AZ", url: "https://www.testai.az" }],
   creator: "TESTAI.AZ",
-  metadataBase: new URL("https://testai.az"),
+  metadataBase: new URL("https://www.testai.az"),
   openGraph: {
     title: "TESTAI.AZ - AI Educational & Diagnostic Testing Platform",
     description:
       "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics for students, parents, and educators.",
-    url: "https://testai.az",
+    url: "https://www.testai.az",
     siteName: "TESTAI.AZ",
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://testai.az",
+    canonical: "https://www.testai.az",
     languages: {
-      az: "https://testai.az/az",
-      en: "https://testai.az",
-      tr: "https://testai.az/tr",
-      ru: "https://testai.az/ru",
-      "x-default": "https://testai.az",
+      az: "https://www.testai.az/az",
+      en: "https://www.testai.az",
+      tr: "https://www.testai.az/tr",
+      ru: "https://www.testai.az/ru",
+      "x-default": "https://www.testai.az",
     },
   },
   other: {
@@ -65,13 +66,15 @@ export default function RootLayout({
       <head>
         <meta name="google" content="notranslate" />
         <meta name="google-adsense-account" content={adsenseId} />
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="pb-16 sm:pb-20">
+        {/* Google AdSense Script */}
+        <Script
+          id="adsbygoogle-init"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+        />
         {/* Schema.org Structured Data */}
         <Script
           id="schema-organization"
@@ -82,8 +85,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
               name: "TESTAI.AZ",
-              url: "https://testai.az",
-              logo: "https://testai.az/logo.jpg",
+              url: "https://www.testai.az",
+              logo: "https://www.testai.az/logo.jpg",
               description:
                 "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics platform grounded in official school textbooks.",
               email: "aztestai.az@gmail.com",
@@ -133,6 +136,7 @@ export default function RootLayout({
         {children}
         <Toaster />
         <StickyBottomAd />
+        <CookieConsent />
       </body>
     </html>
   )

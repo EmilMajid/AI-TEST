@@ -22,7 +22,7 @@ const METHODOLOGY_CONTENT = {
         badge: "RAG Arxitekturası",
         title: "Dərslik Əsaslı Generasiya (Dəqiq Məzmun)",
         desc: "Sistem internetdən təsadüfi və ya yoxlanılmamış məlumatlar götürmür. Bütün test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin təsdiq etdiyi rəsmi dərsliklərə (e-derslik.edu.az) semantik olaraq bağlanır. Nəticədə kurikulumdan kənar sual və AI xətaları minimuma endirilir.",
-        highlight: "100% dövlət təhsil proqramına uyğunluq",
+        highlight: "Tədris proqramına uyğunluq nəzarəti ilə dərslik əsaslı qiymətləndirmə",
       },
       {
         icon: Network,
@@ -38,7 +38,7 @@ const METHODOLOGY_CONTENT = {
         badge: "Geriyə Xəritələnmə",
         title: "Biliyin Geriyə Xəritələnməsi (Kök Səbəb Diaqnozu)",
         desc: "8-ci sinif şagirdi mürəkkəb tənlikdə və ya kimyəvi reaksiyada səhv etdikdə, problem çox vaxt həmin mövzuda deyil, 5-6-cı sinifdəki təməl kəsrlər və ya mənfi ədədlər qaydasındadır. Sistem səhvi geriyə izləyərək dəqiq hansı sinif və mövzuda boşluq olduğunu aşkar edir.",
-        highlight: "Səhvin əsl kök səbəbini tapır",
+        highlight: "Kök səbəblərin diaqnostik təhlili",
       },
       {
         icon: HeartHandshake,
@@ -67,7 +67,7 @@ const METHODOLOGY_CONTENT = {
         badge: "RAG Architecture",
         title: "Curriculum-Anchored Retrieval (Hallucination-Minimized)",
         desc: "Our engine never ingests unverified web trivia. Every diagnostic test item is semantically grounded directly in official textbooks approved by the Ministry of Science and Education (e-derslik.edu.az), significantly minimizing hallucinated distractors and out-of-syllabus tangents.",
-        highlight: "100% textbook-anchored fidelity",
+        highlight: "Textbook-grounded assessment with curriculum-alignment controls",
       },
       {
         icon: Network,
@@ -83,7 +83,7 @@ const METHODOLOGY_CONTENT = {
         badge: "Backward Mapping",
         title: "Retroactive Cognitive Diagnosis (Root Cause Analysis)",
         desc: "When an 8th-grade student fails an advanced algebra or stoichiometry problem, the core bottleneck frequently stems from a 5th-grade fractional gap. Our diagnostic engine traces back the cognitive path to identify the exact prerequisite misconception.",
-        highlight: "Pins down authentic foundational gaps",
+        highlight: "Curriculum-guided prerequisite gap identification",
       },
       {
         icon: HeartHandshake,
@@ -112,7 +112,7 @@ const METHODOLOGY_CONTENT = {
         badge: "RAG Mimarisi",
         title: "Ders Kitabı Temelli Soru Üretimi (Yüksek Doğruluk)",
         desc: "İnternetteki doğrulanmamış kaynaklar yerine doğrudan Milli Eğitim Bakanlığı onaylı resmi ders kitaplarına (e-derslik.edu.az) bağlanır. Müfredat dışı sorular ve yanılsamalar asgariye indirilir.",
-        highlight: "%100 resmi müfredat uyumu",
+        highlight: "Müfredat uyum kontrolleriyle ders kitabı temelli değerlendirme",
       },
       {
         icon: Network,
@@ -128,7 +128,7 @@ const METHODOLOGY_CONTENT = {
         badge: "Geriye Haritalama",
         title: "Geriye Doğru Kök Neden Teşhisi",
         desc: "8. sınıf öğrencisi denklem çözemiyorsa, sorun 5. veya 6. sınıftaki kesirler veya negatif sayılar eksiğinden kaynaklanabilir. Sistem hatanın gerçek kökenini tespit eder.",
-        highlight: "Gerçek öğrenme eksikliğini bulur",
+        highlight: "Önkoşul eksikliklerinin tanısal analizi",
       },
       {
         icon: HeartHandshake,
@@ -157,7 +157,7 @@ const METHODOLOGY_CONTENT = {
         badge: "Архитектура RAG",
         title: "Привязка к официальным учебникам (Точная верификация)",
         desc: "Система исключает непроверенные источники из сети. Все проверочные задания генерируются строго по официальным учебникам (e-derslik.edu.az), минимизируя риск галлюцинаций ИИ.",
-        highlight: "100% соответствие государственной программе",
+        highlight: "Оценка на базе учебников с контролем соответствия программе",
       },
       {
         icon: Network,
@@ -173,7 +173,7 @@ const METHODOLOGY_CONTENT = {
         badge: "Обратное картирование",
         title: "Ретроактивная диагностика первопричин",
         desc: "Если ученик 8 класса ошибается в сложной задаче, причина часто кроется в правилах дробей 5-6 класса. Алгоритм отслеживает ошибку до первоначального пробела.",
-        highlight: "Точное нахождение корня проблемы",
+        highlight: "Диагностический анализ первопричин",
       },
       {
         icon: HeartHandshake,

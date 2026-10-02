@@ -24,6 +24,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://testai.az/sitemap.xml",
+    sitemap: "https://www.testai.az/sitemap.xml",
   }
 }

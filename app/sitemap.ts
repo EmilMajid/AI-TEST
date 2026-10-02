@@ -3,7 +3,7 @@ import { BLOG_POSTS } from "@/lib/blog-data"
 import { DEFAULT_LOCALE } from "@/lib/config"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://testai.az"
+  const baseUrl = "https://www.testai.az"
   const now = new Date()
 
   const languages = ["az", "en", "tr", "ru"] as const

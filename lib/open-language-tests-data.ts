@@ -259,7 +259,7 @@ export const OPEN_LANGUAGE_TESTS: GradeLanguageTest[] = [
       },
       {
         id: "en-11-5",
-        question: "Which statement best synthesizes the primary objective of the National AI Diagnostic Framework?",
+        question: "Which statement best synthesizes the primary objective of modern curriculum-aligned AI diagnostic frameworks?",
         options: [
           "Transforming rote knowledge assessment into verified competency and diagnostic clarity.",
           "Maximizing student testing frequency regardless of curriculum alignment.",
@@ -268,7 +268,7 @@ export const OPEN_LANGUAGE_TESTS: GradeLanguageTest[] = [
         ],
         correctIndex: 0,
         bloomLevel: "Təhliletmə",
-        explanation: "Milli AI diaqnostika çərçivəsinin əsas məqsədi əzbərçiliyi aradan qaldıraraq bacarıq əsaslı və dəqiq diaqnostik qiymətləndirməni təmin etməkdir.",
+        explanation: "Müasir dərslik əsaslı AI diaqnostika çərçivələrinin əsas məqsədi əzbərçiliyi aradan qaldıraraq bacarıq əsaslı və dəqiq diaqnostik qiymətləndirməni təmin etməkdir.",
       },
     ],
   },

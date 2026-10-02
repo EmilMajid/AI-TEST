@@ -26,9 +26,46 @@ export interface BlogPost {
     role: string
     avatar?: string
   }
+  reviewedBy?: {
+    name: string
+    role: string
+  }
+  sources?: string[]
   tags: string[]
   translations: Record<Lang, BlogArticleLocalized>
 }
+
+export const DEFAULT_ACADEMIC_SOURCES: Record<Lang, string[]> = {
+  az: [
+    "Azərbaycan Respublikası Elm və Təhsil Nazirliyi — Fənn Kurikulumları və Qiymətləndirmə Standartları (e-derslik.edu.az)",
+    "Anderson, L. W., & Krathwohl, D. R. (2001) — A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. Longman.",
+    "OECD (2023) — PISA Assessment and Analytical Framework: Mathematics, Reading, Science and Creative Thinking.",
+    "UNESCO (2024) — Guidance for Generative AI in Education and Research.",
+    "Sweller, J. (2011) — Cognitive Load Theory: Recent Theoretical Advances. Academic Press.",
+  ],
+  en: [
+    "Ministry of Science and Education of the Republic of Azerbaijan — Curricular & Textbook Frameworks (e-derslik.edu.az)",
+    "Anderson, L. W., & Krathwohl, D. R. (2001) — A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy. Longman.",
+    "OECD (2023) — PISA Assessment and Analytical Framework: Mathematics, Reading, Science and Creative Thinking.",
+    "UNESCO (2024) — Guidance for Generative AI in Education and Research.",
+    "Sweller, J. (2011) — Cognitive Load Theory: Recent Theoretical Advances. Academic Press.",
+  ],
+  tr: [
+    "Azerbaycan Cumhuriyeti Bilim ve Eğitim Bakanlığı — Müfredat ve Ders Kitabı Standartları (e-derslik.edu.az)",
+    "Anderson, L. W., & Krathwohl, D. R. (2001) — Öğrenme, Öğretme ve Değerlendirme Taksonomisi (Bloom Revizyonu). Longman.",
+    "OECD (2023) — PISA Değerlendirme ve Analitik Çerçevesi.",
+    "UNESCO (2024) — Eğitim ve Araştırmada Üretken Yapay Zeka Rehberi.",
+    "Sweller, J. (2011) — Bilişsel Yük Teorisi ve Öğrenme Psikolojisi.",
+  ],
+  ru: [
+    "Министерство науки и образования Азербайджанской Республики — Стандарты куррикулумов и учебников (e-derslik.edu.az)",
+    "Андерсон Л., Кратволь Д. (2001) — Таксономия обучения, преподавания и оценки: пересмотр таксономии Блума. Longman.",
+    "ОЭСР (2023) — Аналитическая структура оценивания PISA: математика, чтение, естествознание.",
+    "ЮНЕСКО (2024) — Руководство по генеративному ИИ в образовании и научных исследованиях.",
+    "Свеллер Дж. (2011) — Теория когнитивной нагрузки в обучении.",
+  ],
+}
+
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -48,7 +85,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "translations": {
       "en": {
         "title": "The SİTG Standard: Transitioning from Rote Memorization to Analytical Testology",
-        "subtitle": "Measuring authentic competency rather than memory: The pedagogical philosophy and engineering principles of the National AI Test Generation Standard.",
+        "subtitle": "Measuring authentic competency rather than memory: The pedagogical philosophy and engineering principles of the TESTAI.AZ AI Test Generation Standard (SİTG).",
         "summary": "For decades, traditional assessment has measured short-term recall rather than higher-order thinking. The SİTG standard deployed by TESTAI.AZ transforms learners from passive factual memorizers into active analytical thinkers.",
         "category": "Pedagogical Methodology",
         "readTime": "8 min read",
@@ -91,7 +128,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       "az": {
         "title": "SİTG Standartı: Əzbərçilikdən Təhlil və Bacarıq Əsaslı Testologiyaya Keçid",
-        "subtitle": "Biliyi deyil, bacarığı ölçmək: Milli AI Test Generasiyası Standartının pedaqoji fəlsəfəsi və tətbiq prinsipləri.",
+        "subtitle": "Biliyi deyil, bacarığı ölçmək: TESTAI.AZ Süni İntellekt Test Generasiyası Standartının (SİTG) pedaqoji fəlsəfəsi və tətbiq prinsipləri.",
         "summary": "Uzun illərdir təhsil sistemində şagirdlərin potensialı mexaniki əzbərçiliklə ölçülürdü. TESTAI.AZ tərəfindən tətbiq edilən SİTG Standartı təhsilalanları passiv fakt yaddaşından aktiv təhlil və tətbiq mərhələsinə keçirir.",
         "category": "Pedaqoji Metodologiya",
         "readTime": "8 dəqiqə",
@@ -121,7 +158,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       "tr": {
         "title": "SİTG Standardı: Ezbercilikten Analiz ve Beceri Odaklı Testolojiye Geçiş",
-        "subtitle": "Bilgiyi değil, beceriyi ölçmek: Yapay Zeka Test Üretim Standardının pedagojik felsefesi.",
+        "subtitle": "Bilgiyi değil, beceriyi ölçmek: TESTAI.AZ Yapay Zeka Test Üretim Standardının (SİTG) pedagojik felsefesi.",
         "summary": "Geleneksel sınavların ezber odaklı yapısını aşarak Bloom Taksonomisinin analiz ve uygulama basamaklarına odaklanan SİTG testoloji standardı.",
         "category": "Pedagojik Metodoloji",
         "readTime": "8 dakika",
@@ -141,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       "ru": {
         "title": "Стандарт SİTG: От механического заучивания к аналитической тестологии",
-        "subtitle": "Оценивать навыки, а не память: педагогическая философия Национального ИИ-стандарта генерации тестов.",
+        "subtitle": "Оценивать навыки, а не память: педагогическая философия стандарта генерации тестов TESTAI.AZ (SİTG).",
         "summary": "Переход от простой проверки кратковременной памяти к оценке критического мышления, анализа и практического применения знаний.",
         "category": "Педагогическая методология",
         "readTime": "8 минут",
@@ -812,13 +849,13 @@ export const BLOG_POSTS: BlogPost[] = [
               "In reality, student reasoning is a cumulative chain. If the student understands the quadratic formula perfectly but fails to simplify negative fractional exponents (taught in Grade 6), their final answer is wrong. Conventional grading awards zero points and creates academic despair.",
               "TESTAI.AZ's Backward Knowledge Mapping examines the student's selected distractor, identifying that the error occurred during fraction reduction rather than algebraic setup."
             ],
-            "quote": "Academic difficulty is rarely a lack of intelligence; it is almost always an unaddressed prerequisite gap."
+            "quote": "In many cases, academic difficulty can be associated with an unresolved prerequisite gap rather than a lack of aptitude."
           },
           {
             "heading": "2. Algorithmic Root-Cause Traceback in Action",
             "content": [
               "By pairing distractor diagnostics with our curricular Knowledge Graph, the engine traverses edges backwards.",
-              "The resulting diagnostic report tells the student: 'Your 8th-grade quadratic reasoning was 100% accurate. Review 6th-grade Negative Fractions for 15 minutes, and your algebra score will jump to 95%.'",
+              "The resulting diagnostic report provides actionable guidance: 'Your 8th-grade quadratic conceptual reasoning is sound. Targeted prerequisite review of 6th-grade Negative Fractions for 15 minutes may substantially improve performance on related algebra problems.'",
               "This shifts educational psychology from punishment to precise, empowering remediation."
             ]
           }
@@ -843,13 +880,13 @@ export const BLOG_POSTS: BlogPost[] = [
               "8-ci sinif şagirdi kvadrat tənliklərdən zəif nəticə göstərəndə hamı elə bilir ki, o bu mövzunu bacarmır. Əslində isə uşaq tənliyin düsturunu düzgün qurub, lakin cavabda mənfi kəsrləri toplayarkən səhv edib.",
               "TESTAI.AZ-ın Geriyə Xəritələməsi aşkar edir ki, əsl problem 8-ci sinifdə deyil, 6-cı sinifdəki mənfi ədədlər mövzusundadır."
             ],
-            "quote": "Təhsildə bacarıqsızlıq yoxdur, sadəcə vaxtında aşkar edilməmiş təməl boşluqlar var."
+            "quote": "Təhsildə yaranan çətinliklərin çoxu vaxtında aşkar edilməmiş təməl bilik boşluqları ilə əlaqəli ola bilər."
           },
           {
             "heading": "2. Dəqiq Diaqnoz və Ani Həll",
             "content": [
-              "Sistem şagirdə və valideynə konkret tövsiyə verir: 'Kvadrat tənlikləri düzgün anlayırsan. 6-cı sinif Mənfi Kəsrlər mövzusunu 15 dəqiqə təkrar etsən, nəticən 95% olacaq.'",
-              "Bu yanaşma ailədəki dərs stresini və lüzumsuz xərcləri tamamilə aradan qaldırır."
+              "Sistem şagirdə və valideynə konkret tövsiyə verir: 'Kvadrat tənliklərin ümumi prinsipini düzgün anlayırsan. 6-cı sinif Mənfi Kəsrlər mövzusunu hədəfli 15 dəqiqə təkrar etdikdə, əlaqəli tapşırıqlarda nəticələrin nəzərəçarpacaq dərəcədə yüksəlməsi müşahidə olunur.'",
+              "Bu yanaşma ailədəki dərs stresini və lüzumsuz xərcləri aradan qaldırmağa kömək edir."
             ]
           }
         ]

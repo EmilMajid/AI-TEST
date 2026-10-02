@@ -73,7 +73,7 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">2. Fərdi məlumatların mülkiyyətçisi və operatoru</h2>
                 <p>
-                  Platformanın fərdi məlumatlar üzrə operatoru TESTAI.AZ Təhsil Texnologiyaları Komandasıdır. Rəsmi əlaqə e-poçtu: <strong>aztestai.az@gmail.com</strong>. Texniki xidmətlərin göstərilməsi üçün cəlb olunan infrastruktur təminatçıları qanunvericiliyin tələblərinə uyğun həcmdə texniki operator funksiyasını yerinə yetirir.
+                  Platformanın fərdi məlumatlar üzrə mülkiyyətçisi və operatoru Emil Məcidovdur (TESTAI.AZ platformasının təsisçisi və operatoru). Rəsmi əlaqə e-poçtu: <strong>aztestai.az@gmail.com</strong>. Texniki xidmətlərin göstərilməsi üçün cəlb olunan infrastruktur təminatçıları qanunvericiliyin tələblərinə uyğun həcmdə texniki operator funksiyasını yerinə yetirir.
                 </p>
               </section>
 
@@ -118,13 +118,13 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">8. Google AdSense, Üçüncü Tərəf Çərəzləri (Cookies) və Uşaq Məxfiliyi</h2>
                 <p>
-                  8.1. TESTAI.AZ platformasında açıq təhsil resurslarının davamlı fəaliyyətini təmin etmək üçün Google AdSense reklam şəbəkəsindən istifadə olunur. Üçüncü tərəf satıcılar, o cümlədən Google, istifadəçinin saytımıza və ya internetdəki digər saytlara əvvəlki daxilolmalarına əsaslanaraq reklam nümayiş etdirmək üçün çərəzlərdən (cookies) istifadə edir.
+                  8.1. TESTAI.AZ platformasında pulsuz tədris və diaqnostik resursların davamlılığını təmin etmək məqsədilə Google AdSense və əlaqəli rəqəmsal reklam texnologiyalarından istifadə oluna bilər. Üçüncü tərəf tərəfdaşlar, o cümlədən Google, istifadəçinin saytımıza və ya digər veb-resurslara əvvəlki daxilolmalarına əsaslanaraq reklam nümayiş etdirmək üçün çərəzlərdən (cookies) istifadə edir.
                 </p>
                 <p className="mt-2">
                   8.2. Google-un reklam çərəzlərindən istifadəsi ona və tərəfdaşlarına istifadəçilərin saytımıza və ya internetdəki digər veb-saytlara səfərləri əsasında reklam təqdim etməyə imkan verir. İstifadəçilər fərdiləşdirilmiş reklam nümayişini <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Parametrləri (Google Ads Settings)</a> və ya <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a> səhifəsinə daxil olaraq söndürə (opt-out) bilərlər.
                 </p>
                 <p className="mt-2">
-                  8.3. <strong>Uşaqların Məxfiliyi və Tədris Sahələrində Reklam Məhdudiyyəti (COPPA / GDPR-K / TFCD):</strong> TESTAI.AZ məktəblilər (I–XI siniflər) üçün nəzərdə tutulduğundan, Google Naşir Qaydalarına (Google Publisher Policies) və uşaq məxfiliyi standartlarına uyğun olaraq, azyaşlı şagirdlər üçün fərdiləşdirilmiş davranış izləməsi və təkrar marketinq (remarketing) həyata keçirilmir. Şagird bölmələrində reklam nümayişi yalnız kontekstual (şəxsi məlumatlara əsaslanmayan) xarakter daşıyır.
+                  8.3. <strong>Uşaqların Məxfiliyi və Tədris Sahələrində Reklam Tənzimlənməsi (COPPA / GDPR-K / Google Tag for Age Treatment - TFAT & TFCD):</strong> TESTAI.AZ məktəblilər (I–XI siniflər) üçün nəzərdə tutulduğundan, Google Naşir Qaydalarına (Google Publisher Policies) və uşaq məxfiliyi standartlarına uyğun olaraq, azyaşlı şagirdlər üçün fərdiləşdirilmiş davranış izləməsi və təkrar marketinq (remarketing) tətbiq olunmur. Şagird tədris sahələrində reklamlar yalnız kontekstual (fərdi məlumatlara əsaslanmayan) xarakter daşıyır.
                 </p>
               </section>
 
@@ -157,7 +157,7 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">2. Data Controller & Processor</h2>
                 <p>
-                  The data operator of TESTAI.AZ is the TESTAI.AZ Educational Technologies Team. Official contact: <strong>aztestai.az@gmail.com</strong>. Vetted infrastructure providers handle hosting and databases strictly as technical service processors under statutory safeguards.
+                  The data controller and operator of TESTAI.AZ is Emil Majidov, founder and operator of TESTAI.AZ. Official contact: <strong>aztestai.az@gmail.com</strong>. Vetted infrastructure providers handle hosting and databases strictly as technical service processors under statutory safeguards.
                 </p>
               </section>
 
@@ -202,13 +202,13 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">8. Google AdSense, Third-Party Cookies & Minor Protection</h2>
                 <p>
-                  8.1. TESTAI.AZ partners with Google AdSense to sustain free, high-quality educational diagnostic resources. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites across the Internet.
+                  8.1. TESTAI.AZ may deploy Google AdSense and related digital advertising technologies to support the ongoing availability of free educational diagnostic resources. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites across the Internet.
                 </p>
                 <p className="mt-2">
                   8.2. Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visits to TESTAI.AZ and other web destinations. Users may opt out of personalized advertising at any time by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Ads Settings</a> or <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a>.
                 </p>
                 <p className="mt-2">
-                  8.3. <strong>Child-Directed Treatment & Student Data Restrictions (COPPA / GDPR-K / TFCD):</strong> In compliance with Google Publisher Policies regarding child-directed applications and minors (Grades 1–11), we enforce strict restrictions against behavioral profiling or remarketing on student accounts. Advertisements displayed within learning sections are strictly non-personalized and contextual.
+                  8.3. <strong>Child-Directed Treatment & Student Protection (COPPA / GDPR-K / Google Tag for Age Treatment - TFAT & TFCD):</strong> In strict compliance with Google Publisher Policies regarding minors (Grades 1–11), we enforce protections against behavioral profiling or remarketing on student accounts. Advertisements displayed within learning sections are strictly non-personalized and contextual.
                 </p>
               </section>
 
@@ -241,7 +241,7 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">2. Veri Sorumlusu ve Toplanan Veriler</h2>
                 <p>
-                  Veri yöneticisi TESTAI.AZ Eğitim Teknolojileri Ekibidir (İletişim: <strong>aztestai.az@gmail.com</strong>). Öğrenci adı, doğum tarihi/yaş grubu, okul, sınıf düzeyi (1–11. sınıflar), veli e-postası, sınav sonuçları ve oturum belirteçleri yalnızca eğitim ve tanı amacıyla işlenir.
+                  Veri sorumlusu ve yöneticisi TESTAI.AZ kurucusu ve operatörü Emil Majidov'dur (İletişim: <strong>aztestai.az@gmail.com</strong>). Öğrenci adı, doğum tarihi/yaş grubu, okul, sınıf düzeyi (1–11. sınıflar), veli e-postası, sınav sonuçları ve oturum belirteçleri yalnızca eğitim ve tanı amacıyla işlenir.
                 </p>
               </section>
 
@@ -269,13 +269,13 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense, Üçüncü Taraf Çerezleri ve Çocuk Gizliliği</h2>
                 <p>
-                  6.1. Platformumuzda ücretsiz eğitim ve tanı araçlarının sürdürülebilirliğini sağlamak amacıyla Google AdSense kullanılmaktadır. Google dahil üçüncü taraf tedarikçiler, kullanıcıların web sitemize veya diğer sitelere daha önceki ziyaretlerine dayalı olarak reklam sunmak için çerezlerden (cookies) yararlanır.
+                  6.1. Platformumuzda ücretsiz eğitim ve tanı araçlarının sürdürülebilirliğini desteklemek amacıyla Google AdSense ve ilgili dijital reklam teknolojileri kullanılabilir. Google dahil üçüncü taraf tedarikçiler, kullanıcıların web sitemize veya diğer sitelere daha önceki ziyaretlerine dayalı olarak reklam sunmak için çerezlerden (cookies) yararlanır.
                 </p>
                 <p className="mt-2">
                   6.2. Google'ın reklam çerezlerini kullanması, kullanıcılara sitemize ve internetteki diğer sayfalara yaptıkları ziyaretlere dayalı reklamlar sunmasını sağlar. Kullanıcılar kişiselleştirilmiş reklam tercihlerini <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Ayarları</a> veya <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a> üzerinden kapatabilirler.
                 </p>
                 <p className="mt-2">
-                  6.3. <strong>Çocukların Gizliliği ve Öğrenci Güvenliği (COPPA / GDPR-K / TFCD):</strong> 1–11. sınıf öğrencileri için Google Yayıncı Politikalarına tam uyumlu olarak, reşit olmayan öğrenciler üzerinde davranışsal profil oluşturma veya yeniden pazarlama uygulanmaz; yalnızca bağlamsal ve kişiselleştirilmemiş reklamlar gösterilir.
+                  6.3. <strong>Çocukların Gizliliği ve Öğrenci Güvenliği (COPPA / GDPR-K / Google Tag for Age Treatment - TFAT & TFCD):</strong> 1–11. sınıf öğrencileri için Google Yayıncı Politikalarına tam uyumlu olarak, reşit olmayan öğrenciler üzerinde davranışsal profil oluşturma veya yeniden pazarlama uygulanmaz; yalnızca bağlamsal ve kişiselleştirilmemiş reklamlar gösterilir.
                 </p>
               </section>
 
@@ -301,7 +301,7 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">2. Оператор данных и категории</h2>
                 <p>
-                  Оператор данных: Команда образовательных технологий TESTAI.AZ (Email: <strong>aztestai.az@gmail.com</strong>). Обрабатываются: имя учащегося, дата рождения/возраст, номер школы, класс (1–11), email родителя, результаты тестов и сессионные токены.
+                  Оператор и контролер персональных данных: Эмиль Меджидов, основатель и оператор TESTAI.AZ (Email: <strong>aztestai.az@gmail.com</strong>). Обрабатываются: имя учащегося, дата рождения/возраст, номер школы, класс (1–11), email родителя, результаты тестов и сессионные токены.
                 </p>
               </section>
 
@@ -329,13 +329,13 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               <section>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense, Рекламные файлы Cookie и Защита несовершеннолетних</h2>
                 <p>
-                  6.1. На платформе используются сервисы Google AdSense для обеспечения доступности бесплатных диагностических инструментов. Сторонние поставщики, включая Google, используют файлы cookie для показа объявлений с учетом предыдущих посещений нашего и других веб-сайтов.
+                  6.1. На платформе могут использоваться сервисы Google AdSense и соответствующие рекламные технологии для поддержания доступности бесплатных диагностических инструментов. Сторонние поставщики, включая Google, используют файлы cookie для показа объявлений с учетом предыдущих посещений нашего и других веб-сайтов.
                 </p>
                 <p className="mt-2">
                   6.2. Использование файлов cookie Google позволяет показывать пользователям релевантную рекламу. Пользователи могут в любое время отключить персонализированную рекламу на странице <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Настройки рекламы Google</a> или <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a>.
                 </p>
                 <p className="mt-2">
-                  6.3. <strong>Защита детей и школьников (COPPA / GDPR-K / TFCD):</strong> Поскольку платформа предназначена для учащихся 1–11 классов, в соответствии с правилами Google для издателей в отношении несовершеннолетних, поведенческий таргетинг и ремаркетинг для школьников полностью отключены. Показ рекламы носит исключительно контекстный характер.
+                  6.3. <strong>Защита детей и школьников (COPPA / GDPR-K / Google Tag for Age Treatment - TFAT & TFCD):</strong> Поскольку платформа предназначена для учащихся 1–11 классов, в соответствии с правилами Google для издателей в отношении несовершеннолетних, поведенческий таргетинг и ремаркетинг для школьников полностью отключены. Показ рекламы носит исключительно контекстный характер.
                 </p>
               </section>
 

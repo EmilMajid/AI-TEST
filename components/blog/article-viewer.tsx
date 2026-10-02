@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowLeft, Clock, Calendar, Share2, BookOpen, CheckCircle2, Quote, Sparkles, Check } from "lucide-react"
+import { ArrowLeft, Clock, Calendar, Share2, BookOpen, CheckCircle2, Quote, Sparkles, Check, ShieldCheck } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
-import { BlogPost } from "@/lib/blog-data"
+import { BlogPost, DEFAULT_ACADEMIC_SOURCES } from "@/lib/blog-data"
 import { DEFAULT_LOCALE } from "@/lib/config"
 import { AdBanner } from "@/components/ads/ad-banner"
 
@@ -28,6 +28,11 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       copied: "Link kopyalandı!",
       explorePlatform: "Testləri Sınaqdan Keçir",
       exploreSubtitle: "SİTG Standartı ilə hazırlanmış sualları dərhal həll edin.",
+      reviewedByTitle: "Elmi və Metodoloji Yoxlama",
+      reviewedByName: "Educational Assessment Review Group",
+      reviewedByRole: "Kurikulum və Testologiya Keyfiyyət Təminatı",
+      referencesTitle: "Elmi Mənbələr və Ədəbiyyat",
+      adLabel: "Təhsil Resursları Dəstəyi",
     },
     en: {
       backToBlog: "Back to Blog",
@@ -37,6 +42,11 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       copied: "Link copied!",
       explorePlatform: "Explore Assessment Engine",
       exploreSubtitle: "Experience curriculum-aligned diagnostic tests instantly.",
+      reviewedByTitle: "Editorial & Methodological Review",
+      reviewedByName: "Educational Assessment Review Group",
+      reviewedByRole: "Curricular & Testology Quality Assurance",
+      referencesTitle: "Academic References & Sources",
+      adLabel: "Educational Resources Support",
     },
     tr: {
       backToBlog: "Bloga Dön",
@@ -46,6 +56,11 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       copied: "Bağlantı kopyalandı!",
       explorePlatform: "Platformu Dene",
       exploreSubtitle: "SİTG standardı ile hazırlanan soruları hemen çözün.",
+      reviewedByTitle: "Bilimsel ve Metodolojik İnceleme",
+      reviewedByName: "Educational Assessment Review Group",
+      reviewedByRole: "Müfredat ve Testoloji Kalite Güvencesi",
+      referencesTitle: "Akademik Kaynaklar ve Referanslar",
+      adLabel: "Eğitim Kaynakları Desteği",
     },
     ru: {
       backToBlog: "Вернуться в блог",
@@ -55,6 +70,11 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       copied: "Ссылка скопирована!",
       explorePlatform: "Попробовать тесты",
       exploreSubtitle: "Пройдите диагностические тесты по стандарту SITG прямо сейчас.",
+      reviewedByTitle: "Научно-методологическая экспертиза",
+      reviewedByName: "Educational Assessment Review Group",
+      reviewedByRole: "Контроль качества куррикулума и тестологии",
+      referencesTitle: "Академические источники и литература",
+      adLabel: "Поддержка образовательных ресурсов",
     },
   }[lang]
 
@@ -120,14 +140,24 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
               {tr.subtitle}
             </p>
 
-            {/* Author card */}
-            <div className="flex items-center gap-3 pt-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
-                AI
+            {/* Author & Editorial Reviewer Cards */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-slate-100">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
+                  AI
+                </div>
+                <div>
+                  <div className="font-bold text-slate-900 text-sm">{post.author.name}</div>
+                  <div className="text-xs text-slate-500">{post.author.role}</div>
+                </div>
               </div>
-              <div>
-                <div className="font-bold text-slate-900 text-sm">{post.author.name}</div>
-                <div className="text-xs text-slate-500">{post.author.role}</div>
+
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200/80">
+                <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                <div className="text-left">
+                  <div className="text-[11px] font-bold text-slate-900">{uiTexts.reviewedByTitle}</div>
+                  <div className="text-[10px] text-slate-500">{post.reviewedBy?.name || uiTexts.reviewedByName}</div>
+                </div>
               </div>
             </div>
           </header>
@@ -184,19 +214,29 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
                     {paragraph}
                   </p>
                 ))}
-
-                {idx === 0 && (
-                  <div className="pt-4">
-                    <AdBanner slot="blog-article-inline" format="horizontal" className="my-6" />
-                  </div>
-                )}
               </section>
             ))}
           </div>
 
-          {/* Bottom Ad Banner */}
+          {/* Academic References & Sources */}
+          <div className="border-t border-slate-200/80 pt-8 space-y-3">
+            <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
+              <BookOpen className="w-4 h-4 text-blue-600" />
+              <span>{uiTexts.referencesTitle}</span>
+            </div>
+            <ul className="space-y-2 text-xs text-slate-600 bg-slate-50/80 p-4 sm:p-5 rounded-2xl border border-slate-200/60 leading-relaxed">
+              {(post.sources || DEFAULT_ACADEMIC_SOURCES[lang] || DEFAULT_ACADEMIC_SOURCES.en).map((source, sIdx) => (
+                <li key={sIdx} className="flex items-start gap-2">
+                  <span className="text-slate-400 font-mono text-[10px] shrink-0 mt-0.5">[{sIdx + 1}]</span>
+                  <span>{source}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Bottom Ad Banner (Clean, single, below editorial content) */}
           <div className="pt-2">
-            <AdBanner slot="blog-article-footer" format="horizontal" className="my-4" />
+            <AdBanner slot="blog-article-footer" format="horizontal" label={uiTexts.adLabel} className="my-4" />
           </div>
 
           {/* CTA Box */}

@@ -10,6 +10,7 @@ import { MainLayout } from "@/components/main-layout"
 import { ProfileAvatar } from "@/components/profile-avatar"
 import { regionSymbols } from "@/lib/region-symbols"
 import { subjectsByClass, getTextbooks, type Textbook } from "@/lib/education-data"
+import { getTextbooksByClass } from "@/lib/textbook-service"
 import { logout, getUserUniqueId, type UserData } from "@/lib/profile-utils"
 import { User, LogOut, Mail, LayoutDashboard, BookOpen, FileText } from "lucide-react"
 import Link from "next/link"
@@ -303,8 +304,6 @@ export default function Dashboard() {
                             setIsForeignLanguage(isForeign)
 
                             if (isForeign) {
-                              // Dynamically import textbooks for this class
-                              const { getTextbooksByClass } = require("@/lib/textbook-service")
                               const allBooks = userData?.class ? getTextbooksByClass(userData.class) : []
                               
                               // Filter books for this foreign language subject
@@ -390,8 +389,6 @@ export default function Dashboard() {
                             onChange={(e) => {
                               const lang = e.target.value
                               setSelectedLanguage(lang)
-
-                              const { getTextbooksByClass } = require("@/lib/textbook-service")
                               const allBooks = userData?.class ? getTextbooksByClass(userData.class) : []
                               const filtered = allBooks.filter((book: any) => {
                                 const title = book.title || ""
