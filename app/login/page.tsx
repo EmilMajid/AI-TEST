@@ -15,7 +15,6 @@ import Image from "next/image"
 import { getDashboardPath, getUserUniqueId } from "@/lib/profile-utils"
 import { AdBanner } from "@/components/ads/ad-banner"
 
-export const dynamic = "force-dynamic"
 
 export default function LoginPage() {
   const router = useRouter()

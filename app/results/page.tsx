@@ -212,7 +212,6 @@ const getOptionText = (options: any, index: any): string => {
   return String(options);
 };
 
-export const dynamic = "force-dynamic"
 
 export default function ResultsPage() {
   const router = useRouter()

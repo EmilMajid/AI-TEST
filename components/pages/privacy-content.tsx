@@ -116,9 +116,15 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               </section>
 
               <section>
-                <h2 className="text-lg font-bold text-slate-900 mb-2">8. Google AdSense və Çərəzlər (Cookies)</h2>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">8. Google AdSense, Üçüncü Tərəf Çərəzləri (Cookies) və Uşaq Məxfiliyi</h2>
                 <p>
-                  Platformada pulsuz təhsil resurslarının davamlılığını təmin etmək üçün tətbiq olunduğu hallarda Google AdSense xidmətlərindən istifadə edilə bilər. Uşaqlara yönəlmiş xidmətlər üzrə reklamların nümayişi zamanı qanunvericiliyin və təminatçının uşaq məxfiliyinə dair tələbləri nəzərə alınır. İstifadəçilər fərdiləşdirilmiş reklam parametrlərini istənilən vaxt <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Parametrləri</a> səhifəsindən idarə edə bilərlər.
+                  8.1. TESTAI.AZ platformasında açıq təhsil resurslarının davamlı fəaliyyətini təmin etmək üçün Google AdSense reklam şəbəkəsindən istifadə olunur. Üçüncü tərəf satıcılar, o cümlədən Google, istifadəçinin saytımıza və ya internetdəki digər saytlara əvvəlki daxilolmalarına əsaslanaraq reklam nümayiş etdirmək üçün çərəzlərdən (cookies) istifadə edir.
+                </p>
+                <p className="mt-2">
+                  8.2. Google-un reklam çərəzlərindən istifadəsi ona və tərəfdaşlarına istifadəçilərin saytımıza və ya internetdəki digər veb-saytlara səfərləri əsasında reklam təqdim etməyə imkan verir. İstifadəçilər fərdiləşdirilmiş reklam nümayişini <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Parametrləri (Google Ads Settings)</a> və ya <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a> səhifəsinə daxil olaraq söndürə (opt-out) bilərlər.
+                </p>
+                <p className="mt-2">
+                  8.3. <strong>Uşaqların Məxfiliyi və Tədris Sahələrində Reklam Məhdudiyyəti (COPPA / GDPR-K / TFCD):</strong> TESTAI.AZ məktəblilər (I–XI siniflər) üçün nəzərdə tutulduğundan, Google Naşir Qaydalarına (Google Publisher Policies) və uşaq məxfiliyi standartlarına uyğun olaraq, azyaşlı şagirdlər üçün fərdiləşdirilmiş davranış izləməsi və təkrar marketinq (remarketing) həyata keçirilmir. Şagird bölmələrində reklam nümayişi yalnız kontekstual (şəxsi məlumatlara əsaslanmayan) xarakter daşıyır.
                 </p>
               </section>
 
@@ -194,9 +200,15 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               </section>
 
               <section>
-                <h2 className="text-lg font-bold text-slate-900 mb-2">8. Advertising & Cookie Technologies</h2>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">8. Google AdSense, Third-Party Cookies & Minor Protection</h2>
                 <p>
-                  Google AdSense may serve ads on eligible public sections to sustain free educational tools. Ads comply with applicable child privacy safeguards. Users may manage personalized advertising settings at any time via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Ads Settings</a>.
+                  8.1. TESTAI.AZ partners with Google AdSense to sustain free, high-quality educational diagnostic resources. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites across the Internet.
+                </p>
+                <p className="mt-2">
+                  8.2. Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visits to TESTAI.AZ and other web destinations. Users may opt out of personalized advertising at any time by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Ads Settings</a> or <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a>.
+                </p>
+                <p className="mt-2">
+                  8.3. <strong>Child-Directed Treatment & Student Data Restrictions (COPPA / GDPR-K / TFCD):</strong> In compliance with Google Publisher Policies regarding child-directed applications and minors (Grades 1–11), we enforce strict restrictions against behavioral profiling or remarketing on student accounts. Advertisements displayed within learning sections are strictly non-personalized and contextual.
                 </p>
               </section>
 
@@ -255,9 +267,15 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               </section>
 
               <section>
-                <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense ve Çerezler</h2>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense, Üçüncü Taraf Çerezleri ve Çocuk Gizliliği</h2>
                 <p>
-                  Sitemizde ücretsiz eğitim içeriğinin devamlılığı için Google AdSense hizmetleri kullanılabilir. Kullanıcılar kişiselleştirilmiş reklam tercihlerini <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Ayarları</a> sayfasından yönetebilir.
+                  6.1. Platformumuzda ücretsiz eğitim ve tanı araçlarının sürdürülebilirliğini sağlamak amacıyla Google AdSense kullanılmaktadır. Google dahil üçüncü taraf tedarikçiler, kullanıcıların web sitemize veya diğer sitelere daha önceki ziyaretlerine dayalı olarak reklam sunmak için çerezlerden (cookies) yararlanır.
+                </p>
+                <p className="mt-2">
+                  6.2. Google'ın reklam çerezlerini kullanması, kullanıcılara sitemize ve internetteki diğer sayfalara yaptıkları ziyaretlere dayalı reklamlar sunmasını sağlar. Kullanıcılar kişiselleştirilmiş reklam tercihlerini <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Google Reklam Ayarları</a> veya <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a> üzerinden kapatabilirler.
+                </p>
+                <p className="mt-2">
+                  6.3. <strong>Çocukların Gizliliği ve Öğrenci Güvenliği (COPPA / GDPR-K / TFCD):</strong> 1–11. sınıf öğrencileri için Google Yayıncı Politikalarına tam uyumlu olarak, reşit olmayan öğrenciler üzerinde davranışsal profil oluşturma veya yeniden pazarlama uygulanmaz; yalnızca bağlamsal ve kişiselleştirilmemiş reklamlar gösterilir.
                 </p>
               </section>
 
@@ -309,9 +327,15 @@ export function PrivacyContent({ initialLang = DEFAULT_LOCALE }: PrivacyContentP
               </section>
 
               <section>
-                <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense и файлы cookie</h2>
+                <h2 className="text-lg font-bold text-slate-900 mb-2">6. Google AdSense, Рекламные файлы Cookie и Защита несовершеннолетних</h2>
                 <p>
-                  На платформе могут использоваться сервисы Google AdSense. Пользователи вправе управлять параметрами персонализированной рекламы в разделе <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Настройки рекламы Google</a>.
+                  6.1. На платформе используются сервисы Google AdSense для обеспечения доступности бесплатных диагностических инструментов. Сторонние поставщики, включая Google, используют файлы cookie для показа объявлений с учетом предыдущих посещений нашего и других веб-сайтов.
+                </p>
+                <p className="mt-2">
+                  6.2. Использование файлов cookie Google позволяет показывать пользователям релевантную рекламу. Пользователи могут в любое время отключить персонализированную рекламу на странице <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">Настройки рекламы Google</a> или <a href="https://aboutads.info/choices" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-medium">aboutads.info</a>.
+                </p>
+                <p className="mt-2">
+                  6.3. <strong>Защита детей и школьников (COPPA / GDPR-K / TFCD):</strong> Поскольку платформа предназначена для учащихся 1–11 классов, в соответствии с правилами Google для издателей в отношении несовершеннолетних, поведенческий таргетинг и ремаркетинг для школьников полностью отключены. Показ рекламы носит исключительно контекстный характер.
                 </p>
               </section>
 

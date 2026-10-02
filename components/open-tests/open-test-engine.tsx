@@ -602,6 +602,63 @@ export function OpenTestEngine({ initialLang = DEFAULT_LOCALE }: OpenTestEngineP
             </div>
           </div>
         )}
+
+        {/* Educational Standards & Pedagogical Context Box */}
+        <div className="mt-12 bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs space-y-5">
+          <div className="flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-blue-600 shrink-0" />
+            <h3 className="text-base sm:text-lg font-bold text-slate-900">
+              {uiLang === "az" && "Bu Açıq Sınaqlar Nəyi Ölçür və Necə Qiymətləndirilir?"}
+              {uiLang === "en" && "What Do These Open Diagnostic Tests Measure?"}
+              {uiLang === "tr" && "Bu Açık Deneme Sınavları Neyi Ölçer ve Nasıl Değerlendirilir?"}
+              {uiLang === "ru" && "Что измеряют эти открытые диагностические тесты?"}
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5">
+              <h4 className="font-bold text-slate-900">
+                {uiLang === "az" && "1. CEFR & Dərslik Uyğunluğu"}
+                {uiLang === "en" && "1. CEFR & Curriculum Alignment"}
+                {uiLang === "tr" && "1. CEFR ve Müfredat Uyumu"}
+                {uiLang === "ru" && "1. CEFR и соответствие учебникам"}
+              </h4>
+              <p>
+                {uiLang === "az" && "Suallar e-derslik.edu.az portalında dərc olunan 1-11-ci sinif dərsliklərinə və Avropa Şurasının CEFR (A1-B2) beynəlxalq dil standartlarına tam uyğundur."}
+                {uiLang === "en" && "Items are calibrated to official textbooks on e-derslik.edu.az and Council of Europe CEFR (A1–B2) international language proficiency benchmarks."}
+                {uiLang === "tr" && "Sorular, e-derslik.edu.az portalındaki resmi ders kitaplarına ve Avrupa Konseyi CEFR (A1-B2) standartlarına tam uyumludur."}
+                {uiLang === "ru" && "Задания соответствуют официальным учебникам с портала e-derslik.edu.az и международной шкале владения языком CEFR (A1–B2)."}
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5">
+              <h4 className="font-bold text-slate-900">
+                {uiLang === "az" && "2. Elmi Distraktorlar (SİTG)"}
+                {uiLang === "en" && "2. Pedagogical Distractor Engineering"}
+                {uiLang === "tr" && "2. Pedagojik Çeldiriciler (SİTG)"}
+                {uiLang === "ru" && "2. Педагогические дистракторы (SITG)"}
+              </h4>
+              <p>
+                {uiLang === "az" && "Yanlış variantlar təsadüfi deyil; şagirdlərin ən çox yol verdiyi tipik qrammatik və orfoqrafik xətalara əsaslanaraq dərindən analiz aparmağa imkan verir."}
+                {uiLang === "en" && "Distractors are systematically engineered around authentic learner cognitive pitfalls and grammar confusions rather than arbitrary tricks."}
+                {uiLang === "tr" && "Yanlış seçenekler rastgele değil; öğrencilerin en sık yaptığı dilbilgisi ve imla hatalarına göre bilimsel olarak modellenmiştir."}
+                {uiLang === "ru" && "Неверные варианты ответов основаны на типичных грамматических и лексических ошибках учащихся, что обеспечивает точную диагностику."}
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5">
+              <h4 className="font-bold text-slate-900">
+                {uiLang === "az" && "3. Formativ Diaqnostika"}
+                {uiLang === "en" && "3. Formative Remediation"}
+                {uiLang === "tr" && "3. Biçimlendirici Teşhis"}
+                {uiLang === "ru" && "3. Формативная диагностика"}
+              </h4>
+              <p>
+                {uiLang === "az" && "Sınaq cəzalandırıcı qiymət deyil, şagirdin zəif tərəflərini bir neçə dəqiqə ərzində göstərib 15 dəqiqəlik hədəfli təkrar ilə nəticəni bərpa edən bələdçidir."}
+                {uiLang === "en" && "Rather than a punitive grade, the test serves as a formative mirror that isolates prerequisite gaps and prescribes 15-minute targeted remediation."}
+                {uiLang === "tr" && "Sınav cezalandırıcı bir not vermek için değil; eksik noktayı hızla tespit edip 15 dakikalık odaklı tekrarla başarıyı artırmak içindir."}
+                {uiLang === "ru" && "Тест не ставит карательную оценку, а быстро выявляет пробелы и дает ориентир для 15-минутного точечного повторения материала."}
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   )

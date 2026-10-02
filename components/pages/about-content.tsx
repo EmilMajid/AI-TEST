@@ -73,7 +73,7 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
                   2. Rəsmi Dərslik Bazasının Toxunulmazlığı (e-derslik.edu.az İnteqrasiyası)
                 </h2>
                 <p>
-                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>rəsmi dövlət təhsil proqramı və dərslik bazasına əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları birbaşa Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında təsdiq olunmuş rəsmi dərsliklər əsasında formalaşdırılır.
+                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>rəsmi dövlət təhsil proqramı və dərslik bazasına əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında yayımlanan rəsmi dərsliklərin tədris proqramı əsasında formalaşdırılır. Platforma müstəqil tədqiqat və süni intellekt təhsil təşəbbüsüdür.
                 </p>
                 <p className="mt-2">
                   RAG (Retrieval-Augmented Generation) süni intellekt arxitekturası sayəsində suallar birbaşa təsdiq olunmuş dərslik parçalarına semantik olaraq bağlanır, sistemin kənar və ya tədris olunmamış mövzulardan yayınması (süni intellekt hallüsinasiyası) elmi-texniki metodlarla minimuma endirilir. I sinifdən XI sinfə qədər baza fənlər (Riyaziyyat, Azərbaycan dili, Ədəbiyyat, Xarici dillər, Tarix, Fizika, Kimya, Biologiya, Coğrafiya, Təbiət, İnformatika və s.) dərsliklərin cari nəşrlərinə uyğunlaşdırılmışdır.
