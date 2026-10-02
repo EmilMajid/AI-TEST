@@ -116,13 +116,13 @@ const CONTENT = {
     heroBadge: "Official Curriculum-Aligned Educational & Diagnostic Platform",
     heroTitle: "Learn, Test & Excel with AI",
     heroDesc:
-      "AI-powered educational testing and diagnostic assessment platform built directly upon official curriculum textbooks approved by the Ministry of Science and Education (e-derslik.edu.az). Practice topic-aligned tests and elevate your academic performance.",
+      "Curriculum-aligned AI educational testing and diagnostic assessment platform grounded in school curriculum textbooks available on e-derslik.edu.az. Practice topic-aligned tests and elevate your academic performance.",
     startBtn: "Get Started Now",
     aboutBtn: "Learn More About Us",
     aboutSectionBadge: "PEDAGOGICAL MISSION & PURPOSE",
     aboutSectionTitle: "What is TESTAI.AZ and How Does It Help?",
     aboutSectionP1:
-      "TESTAI.AZ is the premier AI-powered educational testing and diagnostic platform built directly upon official curriculum textbooks (e-derslik.edu.az). Leveraging advanced RAG architecture, questions are semantically grounded in textbook passages to minimize deviations and hallucinations.",
+      "TESTAI.AZ is an innovative AI-powered educational testing and diagnostic platform grounded in official curriculum textbooks (e-derslik.edu.az). Leveraging advanced RAG architecture, questions are semantically grounded in textbook passages to minimize deviations and hallucinations.",
     aboutSectionP2:
       "Through real-time Parent Dashboards, parents do not have to struggle through study sessions under nervous tension; the system analyzes topic-specific strengths and weaknesses in minutes and delivers the findings directly to the parent.",
     aboutSectionReadMore: "Read Full About Us Page",

@@ -35,8 +35,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "sitg-standarti-ezbercilikden-tehlil-esasli-testologiyaya-kecid",
     "publishDate": "2026-03-15",
     "author": {
-      "name": "TESTAI.AZ Pedagogical Research Institute",
-      "role": "Scientific & Methodological Taskforce"
+      "name": "TESTAI.AZ Research & Methodology Team",
+      "role": "Scientific & Methodological Group"
     },
     "tags": [
       "SİTG Standartı",
@@ -165,7 +165,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdilesdirilmis-tedris",
     "publishDate": "2026-03-18",
     "author": {
-      "name": "TESTAI.AZ Educational Technology Center",
+      "name": "TESTAI.AZ Research & Methodology Team",
       "role": "Teacher Support & EdTech Analytics Group"
     },
     "tags": [
@@ -268,7 +268,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "blooms-revised-taxonomy-ai-formative-assessment",
     "publishDate": "2026-03-19",
     "author": {
-      "name": "TESTAI.AZ Center for Cognitive Assessment",
+      "name": "TESTAI.AZ Assessment & Methodology Team",
       "role": "Curriculum & Taxonomy Research Lab"
     },
     "tags": [
@@ -363,7 +363,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "cognitive-load-theory-in-secondary-education-test-design",
     "publishDate": "2026-03-20",
     "author": {
-      "name": "TESTAI.AZ Pedagogical Research Institute",
+      "name": "TESTAI.AZ Research & Methodology Team",
       "role": "Cognitive Ergonomics & Test Engineering Group"
     },
     "tags": [
@@ -458,7 +458,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "standardized-foreign-language-assessment-cefr-automated-diagnostics",
     "publishDate": "2026-03-21",
     "author": {
-      "name": "TESTAI.AZ Foreign Language Pedagogical Taskforce",
+      "name": "TESTAI.AZ Language & Methodology Team",
       "role": "Applied Linguistics & CEFR Alignment Group"
     },
     "tags": [
@@ -553,7 +553,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "rag-in-education-eliminating-ai-hallucinations-via-textbook-anchoring",
     "publishDate": "2026-03-24",
     "author": {
-      "name": "TESTAI.AZ AI Research & Verification Team",
+      "name": "TESTAI.AZ AI Research & Methodology Team",
       "role": "Retrieval Architecture & Pedagogical Grounding Lab"
     },
     "tags": [
@@ -565,14 +565,14 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "translations": {
       "en": {
-        "title": "RAG in Education: Eradicating AI Hallucinations Through Textbook-Grounded Retrieval",
-        "subtitle": "Beyond black-box generation: How Retrieval-Augmented Generation ensures every test question, distractor, and explanation strictly mirrors verified national curriculum texts.",
-        "summary": "Generative AI without retrieval frequently invents false rules, non-existent dates, or unverified terminology. In high-stakes educational assessment, zero hallucination is non-negotiable. This study details the engineering architecture of TESTAI.AZ's RAG pipeline, which anchors every generated item to official school textbooks.",
+        "title": "RAG in Education: Minimizing AI Hallucinations Through Textbook-Grounded Retrieval",
+        "subtitle": "Beyond black-box generation: How Retrieval-Augmented Generation ensures test items strictly mirror verified national curriculum texts.",
+        "summary": "Generative AI without retrieval frequently introduces unsupported assertions or unverified terminology. In educational assessment, minimizing hallucination is critical. This study details the engineering architecture of TESTAI.AZ's RAG pipeline, which anchors generated items to official school textbooks.",
         "category": "AI Architecture & Engineering",
         "readTime": "10 min read",
         "keyTakeaways": [
           "RAG prevents generative models from drawing unverified external facts or invented historical details.",
-          "Every assessment item maps to a cryptographic chunk ID from official ministry-approved textbooks.",
+          "Every assessment item maps to a cryptographic chunk ID from official curriculum textbooks.",
           "Semantic vector indexing retrieves the exact instructional context before generative synthesis begins.",
           "Automated pedagogical validators reject any output that introduces terminology absent from the target grade curriculum."
         ],
@@ -580,8 +580,8 @@ export const BLOG_POSTS: BlogPost[] = [
           {
             "heading": "1. The Peril of Hallucination in Educational Assessment",
             "content": [
-              "Large Language Models (LLMs) operate as probabilistic prediction engines. When prompted in open domain, they generate syntactically convincing yet factually invalid statements. In entertainment or casual conversation, this is tolerable; in secondary school physics or native grammar examinations, a single hallucinated rule can confuse thousands of students.",
-              "Traditional fine-tuning does not solve hallucination because models still extrapolate. The definitive technical solution is Retrieval-Augmented Generation (RAG): constraining generation strictly to an authorized, immutable corpus of digitized curriculum textbooks."
+              "Large Language Models (LLMs) operate as probabilistic prediction engines. When prompted in open domain, they generate syntactically convincing yet factually invalid statements. In entertainment or casual conversation, this is tolerable; in secondary school physics or native grammar examinations, an unverified rule can confuse students.",
+              "Traditional fine-tuning does not eliminate hallucination because models still extrapolate. The definitive technical solution is Retrieval-Augmented Generation (RAG): constraining generation strictly to an authorized, immutable corpus of digitized curriculum textbooks."
             ],
             "quote": "In educational AI, fluency without grounding is dangerous; truth must precede eloquence."
           },
@@ -590,7 +590,7 @@ export const BLOG_POSTS: BlogPost[] = [
             "content": [
               "In the TESTAI.AZ infrastructure, all approved textbooks from Grade 1 through 11 are parsed into semantic pedagogical chunks. Each chunk preserves chapter hierarchy, learning objectives, definitions, and worked examples.",
               "When a test is requested for Grade 7 Chemistry (e.g., 'Atoms and Molecules'), the system retrieves the exact vector-indexed paragraph from the official curriculum before the generative model receives the authoring prompt.",
-              "The model is explicitly forbidden from introducing definitions not contained within the retrieved chunk, guaranteeing absolute curriculum alignment."
+              "The model is explicitly instructed to focus strictly on definitions contained within the retrieved chunk, ensuring robust curriculum alignment."
             ]
           },
           {
@@ -603,14 +603,14 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       "az": {
-        "title": "Təhsildə RAG Arxitekturası: Dərslik Əsaslı Axtarışla Süni İntellekt Hallüsinasiyalarının Sıfırlanması",
-        "subtitle": "Uydurmalara son: Retrieval-Augmented Generation (RAG) texnologiyası hər bir test sualını və izahını rəsmi məktəb dərsliklərinə necə bağlayır?",
-        "summary": "Süni intellektin təhsildə ən böyük riski onun inandırıcı şəkildə fakt uydurmasıdır (hallüsinasiya). TESTAI.AZ rəsmi dərslikləri vektor bazasına parçalayaraq RAG texnologiyası vasitəsilə 100% dəqiq və dərslik standartlı sual generasiyası həyata keçirir.",
+        "title": "Təhsildə RAG Arxitekturası: Dərslik Əsaslı Axtarışla Süni İntellekt Xətalarının Minimuma Endirilməsi",
+        "subtitle": "Dəqiq məzmun: Retrieval-Augmented Generation (RAG) texnologiyası hər bir test sualını və izahını rəsmi məktəb dərsliklərinə necə bağlayır?",
+        "summary": "Süni intellektin təhsildə ən böyük riski onun inandırıcı şəkildə fakt uydurmasıdır (hallüsinasiya). TESTAI.AZ rəsmi dərslikləri vektor bazasına parçalayaraq RAG texnologiyası vasitəsilə yüksək dəqiqlikli və dərslik standartlı sual generasiyası həyata keçirir.",
         "category": "Süni İntellekt və Mühəndislik",
         "readTime": "10 dəqiqə",
         "keyTakeaways": [
           "RAG süni intellektin xarici və uydurma məlumatlardan istifadə etməsinin qarşısını alır.",
-          "Hər bir sual rəsmi Elm və Təhsil Nazirliyinin dərslik parçasına (çankına) əsaslanır.",
+          "Hər bir sual rəsmi kurikulum dərslik parçasına (çankına) əsaslanır.",
           "Semantik vektor axtarışı əvvəlcə dərslikdən dəqiq paraqrafı tapır, sonra sual tərtib olunur.",
           "Dərslikdə olmayan heç bir qayda və ya kənar termin şagirdin qarşısına çıxarılmır."
         ],
@@ -633,9 +633,9 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       "tr": {
-        "title": "Eğitimde RAG Mimarisi: Ders Kitabı Destekli Arama ile Yapay Zeka Halüsinasyonlarının Sıfırlanması",
-        "subtitle": "Uydurma bilgilere son: Retrieval-Augmented Generation teknolojisi sınav sorularını müfredata nasıl bağlar?",
-        "summary": "Yapay zekanın eğitimdeki en büyük riski olan uydurma bilgileri (halüsinasyon) ortadan kaldıran ve resmi ders kitaplarını referans alan RAG teknolojisi.",
+        "title": "Eğitimde RAG Mimarisi: Ders Kitabı Destekli Arama ile Yapay Zeka Halüsinasyonlarının Asgariye İndirilmesi",
+        "subtitle": "Müfredat uyumu: Retrieval-Augmented Generation teknolojisi sınav sorularını ders kitaplarına nasıl bağlar?",
+        "summary": "Yapay zekanın eğitimdeki yanılsama riskini en aza indiren ve resmi ders kitaplarını referans alan RAG mimarisi.",
         "category": "Yapay Zeka Mimarisi",
         "readTime": "10 dakika",
         "keyTakeaways": [
@@ -652,9 +652,9 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       "ru": {
-        "title": "RAG в образовании: устранение ИИ-галлюцинаций через жесткую привязку к школьным учебникам",
-        "subtitle": "Никаких выдуманных фактов: как архитектура Retrieval-Augmented Generation гарантирует 100% соответствие учебной программе.",
-        "summary": "Разбор технологии RAG в TESTAI.AZ: индексация официальных учебников в векторной базе и исключение ошибок генеративного ИИ в школьных тестах.",
+        "title": "RAG в образовании: минимизация ИИ-галлюцинаций через привязку к школьным учебникам",
+        "subtitle": "Точный контекст: как архитектура Retrieval-Augmented Generation обеспечивает строгое соответствие учебной программе.",
+        "summary": "Разбор технологии RAG в TESTAI.AZ: индексация официальных учебников в векторной базе и минимизация ошибок генеративного ИИ в школьных тестах.",
         "category": "Архитектура ИИ",
         "readTime": "10 минут",
         "keyTakeaways": [
@@ -676,7 +676,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "kag-knowledge-graphs-cross-subject-prerequisite-mapping",
     "publishDate": "2026-03-25",
     "author": {
-      "name": "TESTAI.AZ Knowledge Engineering Taskforce",
+      "name": "TESTAI.AZ Research & Methodology Team",
       "role": "Ontology & Cognitive Graph Architecture Group"
     },
     "tags": [
@@ -781,8 +781,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "backward-knowledge-mapping-retroactive-cognitive-diagnosis",
     "publishDate": "2026-03-26",
     "author": {
-      "name": "TESTAI.AZ Diagnostic Analytics Group",
-      "role": "Cognitive Remediation & Remedial Assessment Team"
+      "name": "TESTAI.AZ Assessment & Methodology Team",
+      "role": "Cognitive Remediation & Remedial Assessment Group"
     },
     "tags": [
       "Backward Mapping",
@@ -898,8 +898,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "parent-diagnostic-guide-academic-tracking-grade-anxiety",
     "publishDate": "2026-03-27",
     "author": {
-      "name": "TESTAI.AZ Parent Engagement Taskforce",
-      "role": "Family EdTech & Cognitive Growth Counseling Lab"
+      "name": "TESTAI.AZ Editorial Team",
+      "role": "Family Education & Editorial Group"
     },
     "tags": [
       "Parent Guide",
@@ -1015,8 +1015,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "pisa-2025-benchmarks-critical-thinking-scientific-inquiry",
     "publishDate": "2026-03-28",
     "author": {
-      "name": "TESTAI.AZ International Assessment Group",
-      "role": "Comparative Education & OECD Benchmarking Lab"
+      "name": "TESTAI.AZ Assessment & Methodology Team",
+      "role": "Comparative Education & OECD Benchmarking Group"
     },
     "tags": [
       "PISA 2025",
@@ -1109,8 +1109,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "distractor-engineering-turning-student-errors-into-learning",
     "publishDate": "2026-03-29",
     "author": {
-      "name": "TESTAI.AZ Psychometrics Team",
-      "role": "Distractor Diagnostics & Item Quality Lab"
+      "name": "TESTAI.AZ Assessment & Methodology Team",
+      "role": "Distractor Diagnostics & Item Quality Group"
     },
     "tags": [
       "Distractor Engineering",
@@ -1203,8 +1203,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "formative-assessment-vs-summative-testing-feedback-loops",
     "publishDate": "2026-03-30",
     "author": {
-      "name": "TESTAI.AZ Pedagogical Architecture Group",
-      "role": "Continuous Feedback & Educational Measurement Lab"
+      "name": "TESTAI.AZ Research & Methodology Team",
+      "role": "Continuous Feedback & Educational Measurement Group"
     },
     "tags": [
       "Formative Assessment",
@@ -1296,8 +1296,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "stem-pedagogical-modeling-algorithmic-thinking-mathematics",
     "publishDate": "2026-03-31",
     "author": {
-      "name": "TESTAI.AZ STEM Education Division",
-      "role": "Applied Mathematics & Computational Pedagogy Lab"
+      "name": "TESTAI.AZ STEM Methodology Team",
+      "role": "Applied Mathematics & Computational Pedagogy Group"
     },
     "tags": [
       "STEM Education",
@@ -1389,7 +1389,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "ai-ethics-student-data-privacy-coppa-gdpr-educational-standards",
     "publishDate": "2026-04-01",
     "author": {
-      "name": "TESTAI.AZ Legal & AI Ethics Taskforce",
+      "name": "TESTAI.AZ AI Ethics & Compliance Team",
       "role": "Data Protection & Educational Governance Group"
     },
     "tags": [
@@ -1503,8 +1503,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "slug": "reading-comprehension-critical-literacy-secondary-school",
     "publishDate": "2026-04-02",
     "author": {
-      "name": "TESTAI.AZ Language & Literacy Department",
-      "role": "Textual Analysis & Cognitive Reading Laboratory"
+      "name": "TESTAI.AZ Language & Methodology Team",
+      "role": "Textual Analysis & Cognitive Reading Group"
     },
     "tags": [
       "Reading Comprehension",

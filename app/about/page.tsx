@@ -12,7 +12,7 @@ const titles: Record<Lang, string> = {
 
 const descriptions: Record<Lang, string> = {
   az: "Azərbaycanın ilk dərslik əsaslı süni intellekt təhsil və diaqnostika platforması haqqında məlumat, SİTG standartı və pedaqoji missiya.",
-  en: "Learn about TESTAI.AZ, Azerbaijan's premier curriculum-aligned AI assessment platform, SITG pedagogical standard, and learning diagnostics.",
+  en: "Learn about TESTAI.AZ, an innovative curriculum-aligned AI assessment platform, SITG pedagogical standard, and learning diagnostics.",
   tr: "Azerbaycan'ın ilk müfredat odaklı yapay zeka eğitim ve teşhis platformu TESTAI.AZ, SİTG standardı ve pedagojik vizyonumuz.",
   ru: "Узнайте о TESTAI.AZ — первой ИИ-платформе тестирования и диагностики на базе официальных учебников, стандарте SITG и нашей миссии.",
 }

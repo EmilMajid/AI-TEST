@@ -339,6 +339,7 @@ export default function Dashboard() {
                               foreignBooks.forEach((book: any) => {
                                 const title = book.title || ""
                                 const subj = book.subject || ""
+                                const bookId = book.id || ""
                                 if (["İngilis dili", "Alman dili", "Fransız dili", "Rus dili"].includes(subj)) {
                                   languagesSet.add(subj)
                                 } else if (/ingilis|english|İngilis/i.test(title)) {
@@ -347,7 +348,7 @@ export default function Dashboard() {
                                   languagesSet.add("Alman dili")
                                 } else if (/fransız|fransiz|french/i.test(title)) {
                                   languagesSet.add("Fransız dili")
-                                } else if (subj === "Rus dili" || /rus|russian|русский|рус/i.test(title) || id.includes("rus")) {
+                                } else if (subj === "Rus dili" || /rus|russian|русский|рус/i.test(title) || bookId.includes("rus")) {
                                   languagesSet.add("Rus dili")
                                 }
                               })

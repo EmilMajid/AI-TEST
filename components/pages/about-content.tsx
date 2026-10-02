@@ -73,7 +73,7 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
                   2. Rəsmi Dərslik Bazasının Toxunulmazlığı (e-derslik.edu.az İnteqrasiyası)
                 </h2>
                 <p>
-                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>rəsmi dövlət təhsil proqramı və dərslik bazasına əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında yayımlanan rəsmi dərsliklərin tədris proqramı əsasında formalaşdırılır. Platforma müstəqil tədqiqat və süni intellekt təhsil təşəbbüsüdür.
+                  Platformamızın ən böyük üstünlüyü və fərqi onun <strong>rəsmi dövlət təhsil proqramı və dərslik bazasına əsaslanmasıdır</strong>. TESTAI.AZ sistemindəki bütün mövzular, anlayışlar və test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin <strong>e-derslik.edu.az</strong> portalında yayımlanan rəsmi dərsliklərin tədris proqramı əsasında formalaşdırılır. TESTAI.AZ müstəqil təhsil platformasıdır, Elm və Təhsil Nazirliyinin rəsmi dövlət xidməti və ya tabeli qurumu deyildir; dərsliklər təhsil diaqnostikası və formativ qiymətləndirmə məqsədilə istinad edilir.
                 </p>
                 <p className="mt-2">
                   RAG (Retrieval-Augmented Generation) süni intellekt arxitekturası sayəsində suallar birbaşa təsdiq olunmuş dərslik parçalarına semantik olaraq bağlanır, sistemin kənar və ya tədris olunmamış mövzulardan yayınması (süni intellekt hallüsinasiyası) elmi-texniki metodlarla minimuma endirilir. I sinifdən XI sinfə qədər baza fənlər (Riyaziyyat, Azərbaycan dili, Ədəbiyyat, Xarici dillər, Tarix, Fizika, Kimya, Biologiya, Coğrafiya, Təbiət, İnformatika və s.) dərsliklərin cari nəşrlərinə uyğunlaşdırılmışdır.
@@ -132,7 +132,7 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
                   In the contemporary era, the true essence of education lies not in rote memorization, but in the cognitive ability to synthesize, analyze, and apply knowledge in real-world scenarios. For years, students and families faced confusion navigating disparate commercial test books that deviated from school curricula.
                 </p>
                 <p className="mt-2">
-                  <strong>TESTAI.AZ</strong> is the premier AI-powered educational testing and diagnostic assessment platform built directly upon the official curriculum textbooks approved by the Ministry of Science and Education of the Republic of Azerbaijan (<strong>e-derslik.edu.az</strong>).
+                  <strong>TESTAI.AZ</strong> is an independent AI-powered educational testing and diagnostic assessment platform grounded in secondary school curriculum textbooks available on <strong>e-derslik.edu.az</strong>.
                 </p>
               </section>
 
@@ -142,7 +142,10 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
                   2. Official Curriculum Integrity (e-derslik.edu.az)
                 </h2>
                 <p>
-                  Every assessment item and conceptual metric on TESTAI.AZ is rooted in authorized Ministry textbooks. Leveraging advanced <strong>Retrieval-Augmented Generation (RAG)</strong> architecture, questions are semantically grounded in textbook passages, systematically minimizing artificial hallucination across Grades 1 through 11.
+                  Every assessment item and conceptual metric on TESTAI.AZ is rooted in curriculum textbooks available on e-derslik.edu.az. Leveraging advanced <strong>Retrieval-Augmented Generation (RAG)</strong> architecture, questions are semantically grounded in textbook passages, systematically minimizing artificial hallucination across Grades 1 through 11.
+                </p>
+                <p className="mt-2 text-xs text-slate-500 italic">
+                  TESTAI.AZ is an independent platform and is not an official branch, agency, or endorsed affiliate of the Ministry of Science and Education of the Republic of Azerbaijan; curriculum textbooks are referenced for pedagogical evaluation and student learning diagnostic purposes.
                 </p>
               </section>
 

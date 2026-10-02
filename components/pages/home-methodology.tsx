@@ -20,8 +20,8 @@ const METHODOLOGY_CONTENT = {
         icon: BookOpen,
         color: "text-emerald-600 bg-emerald-50 border-emerald-200",
         badge: "RAG Arxitekturası",
-        title: "Dərslik Əsaslı Generasiya (0% Hallüsinasiya)",
-        desc: "Sistem internetdən təsadüfi və ya yoxlanılmamış məlumatlar götürmür. Bütün test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin təsdiq etdiyi rəsmi dərsliklərə (e-derslik.edu.az) semantik olaraq bağlanır. Nəticədə kurikulumdan kənar sual və AI xətaları tam aradan qaldırılır.",
+        title: "Dərslik Əsaslı Generasiya (Dəqiq Məzmun)",
+        desc: "Sistem internetdən təsadüfi və ya yoxlanılmamış məlumatlar götürmür. Bütün test tapşırıqları Azərbaycan Respublikası Elm və Təhsil Nazirliyinin təsdiq etdiyi rəsmi dərsliklərə (e-derslik.edu.az) semantik olaraq bağlanır. Nəticədə kurikulumdan kənar sual və AI xətaları minimuma endirilir.",
         highlight: "100% dövlət təhsil proqramına uyğunluq",
       },
       {
@@ -52,7 +52,7 @@ const METHODOLOGY_CONTENT = {
     demoTitle: "Diaqnostika Necə İşləyir? Real Nümunə",
     demoStudentErr: "Şagirdin Səhvi: 8-ci sinif Fizika (Sıxlıq və Arximed Qüvvəsi düsturu hesablama tapşırığı)",
     demoRootCause: "TESTAI.AZ Diaqnozu: Şagird Arximed qanununu bilir, lakin 6-cı sinif Riyaziyyat kursunda 'onluq kəsrlərin bölünməsi' qaydasında boşluq var.",
-    demoAction: "Həll: 8-ci sinif dərsini təkrar oxumaq əvəzinə, 15 dəqiqəlik 6-cı sinif kəsr tapşırıqları ilə boşluq aradan qaldırılır.",
+    demoAction: "Həll: 8-ci sinif dərsini təkrar oxumaq əvəzinə, 15 dəqiqəlik hədəfli təkrar ilə təməl riyazi bacarıq möhkəmləndirilir.",
     readBlogBtn: "Metodologiya Haqqında Ətraflı Məqalələr",
   },
   en: {
@@ -65,8 +65,8 @@ const METHODOLOGY_CONTENT = {
         icon: BookOpen,
         color: "text-emerald-600 bg-emerald-50 border-emerald-200",
         badge: "RAG Architecture",
-        title: "Curriculum-Anchored Retrieval (0% Hallucinations)",
-        desc: "Our engine never ingests unverified web trivia. Every diagnostic test item is semantically grounded directly in official textbooks approved by the Ministry of Science and Education (e-derslik.edu.az), eliminating hallucinated distractors and out-of-syllabus tangents.",
+        title: "Curriculum-Anchored Retrieval (Hallucination-Minimized)",
+        desc: "Our engine never ingests unverified web trivia. Every diagnostic test item is semantically grounded directly in official textbooks approved by the Ministry of Science and Education (e-derslik.edu.az), significantly minimizing hallucinated distractors and out-of-syllabus tangents.",
         highlight: "100% textbook-anchored fidelity",
       },
       {
@@ -97,7 +97,7 @@ const METHODOLOGY_CONTENT = {
     demoTitle: "How Our Diagnosis Works: A Practical Case",
     demoStudentErr: "Observed Mistake: 8th Grade Physics (Buoyancy & Density computation problem)",
     demoRootCause: "TESTAI.AZ Diagnosis: The student understands Archimedes' principle, but committed an error due to a 6th Grade Math decimal division prerequisite gap.",
-    demoAction: "Targeted Action: Instead of re-reading physics chapters, 15 minutes of foundational fraction exercises permanently resolves the issue.",
+    demoAction: "Targeted Action: Instead of re-reading physics chapters, 15 minutes of targeted foundational exercises effectively strengthens the prerequisite mathematical skills.",
     readBlogBtn: "Explore Pedagogical Research Articles",
   },
   tr: {
@@ -110,8 +110,8 @@ const METHODOLOGY_CONTENT = {
         icon: BookOpen,
         color: "text-emerald-600 bg-emerald-50 border-emerald-200",
         badge: "RAG Mimarisi",
-        title: "Ders Kitabı Temelli Soru Üretimi (%0 Yanılsama)",
-        desc: "İnternetteki doğrulanmamış kaynaklar yerine doğrudan Milli Eğitim Bakanlığı onaylı resmi ders kitaplarına (e-derslik.edu.az) bağlanır. Müfredat dışı sorular tamamen engellenir.",
+        title: "Ders Kitabı Temelli Soru Üretimi (Yüksek Doğruluk)",
+        desc: "İnternetteki doğrulanmamış kaynaklar yerine doğrudan Milli Eğitim Bakanlığı onaylı resmi ders kitaplarına (e-derslik.edu.az) bağlanır. Müfredat dışı sorular ve yanılsamalar asgariye indirilir.",
         highlight: "%100 resmi müfredat uyumu",
       },
       {
@@ -142,7 +142,7 @@ const METHODOLOGY_CONTENT = {
     demoTitle: "Teşhis Sistemi Nasıl Çalışır? Pratik Örnek",
     demoStudentErr: "Öğrenci Hatası: 8. Sınıf Fizik (Kaldırma Kuvveti formül uygulaması)",
     demoRootCause: "TESTAI.AZ Teşhisi: Öğrenci fizik kanununu biliyor, ancak 6. sınıf ondalık kesirler konusunda hesaplama eksiği var.",
-    demoAction: "Çözüm: Fizik konusunu tekrar ezberlemek yerine, 15 dakikalık temel kesir alıştırması ile problem kalıcı çözülür.",
+    demoAction: "Çözüm: Fizik konusunu tekrar ezberlemek yerine, 15 dakikalık temel kesir alıştırması ile önkoşul becerisi güçlendirilir.",
     readBlogBtn: "Metodoloji Makalelerini İnceleyin",
   },
   ru: {
@@ -155,8 +155,8 @@ const METHODOLOGY_CONTENT = {
         icon: BookOpen,
         color: "text-emerald-600 bg-emerald-50 border-emerald-200",
         badge: "Архитектура RAG",
-        title: "Привязка к официальным учебникам (0% ошибок)",
-        desc: "Система исключает непроверенные источники из сети. Все проверочные задания генерируются строго по официальным учебникам (e-derslik.edu.az), исключая галлюцинации ИИ.",
+        title: "Привязка к официальным учебникам (Точная верификация)",
+        desc: "Система исключает непроверенные источники из сети. Все проверочные задания генерируются строго по официальным учебникам (e-derslik.edu.az), минимизируя риск галлюцинаций ИИ.",
         highlight: "100% соответствие государственной программе",
       },
       {
@@ -187,7 +187,7 @@ const METHODOLOGY_CONTENT = {
     demoTitle: "Как работает диагностика: Реальный пример",
     demoStudentErr: "Ошибка ученика: 8 класс, Физика (расчет силы Архимеда и плотности)",
     demoRootCause: "Диагноз TESTAI.AZ: Ученик помнит формулу, но допустил ошибку из-за пробела в делении десятичных дробей за 6 класс.",
-    demoAction: "Решение: Вместо перечитывания учебника физики, 15 минут упражнений на дроби устраняют проблему навсегда.",
+    demoAction: "Решение: Вместо перечитывания учебника физики, 15 минут точечных упражнений помогают закрыть фундаментальный пробел.",
     readBlogBtn: "Читать научные статьи по методологии",
   },
 }
