@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "formative assessment",
   ],
   alternates: {
-    canonical: "https://testai.az",
+    canonical: "https://www.testai.az",
     languages: {
-      az: "https://testai.az/az",
-      en: "https://testai.az",
-      tr: "https://testai.az/tr",
-      ru: "https://testai.az/ru",
-      "x-default": "https://testai.az",
+      az: "https://www.testai.az/az",
+      en: "https://www.testai.az",
+      tr: "https://www.testai.az/tr",
+      ru: "https://www.testai.az/ru",
+      "x-default": "https://www.testai.az",
     },
   },
 }

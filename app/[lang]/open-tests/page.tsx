@@ -37,13 +37,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: titles[lang],
     description: descriptions[lang],
     alternates: {
-      canonical: lang === "az" ? "https://testai.az/open-tests" : `https://testai.az/${lang}/open-tests`,
+      canonical: lang === "az" ? "https://www.testai.az/open-tests" : `https://www.testai.az/${lang}/open-tests`,
       languages: {
-        az: "https://testai.az/open-tests",
-        en: "https://testai.az/en/open-tests",
-        tr: "https://testai.az/tr/open-tests",
-        ru: "https://testai.az/ru/open-tests",
-        "x-default": "https://testai.az/open-tests",
+        az: "https://www.testai.az/open-tests",
+        en: "https://www.testai.az/en/open-tests",
+        tr: "https://www.testai.az/tr/open-tests",
+        ru: "https://www.testai.az/ru/open-tests",
+        "x-default": "https://www.testai.az/open-tests",
       },
     },
   }
@@ -66,7 +66,7 @@ export default function MultilingualOpenTestsPage({ params }: PageProps) {
     provider: {
       "@type": "Organization",
       name: "TESTAI.AZ",
-      url: "https://testai.az",
+      url: "https://www.testai.az",
     },
   }
 

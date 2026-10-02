@@ -47,6 +47,20 @@ const nextConfig = {
       'api/generate-test/route': commonExcludes,
     },
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdil%C9%99sdirmis-tedris',
+        destination: '/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdilesdirilmis-tedris',
+        permanent: true,
+      },
+      {
+        source: '/:lang(az|en|tr|ru)/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdil%C9%99sdirmis-tedris',
+        destination: '/:lang/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdilesdirilmis-tedris',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

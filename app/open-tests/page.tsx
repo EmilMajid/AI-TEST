@@ -28,19 +28,19 @@ export const metadata: Metadata = {
     "testai open tests",
   ],
   alternates: {
-    canonical: "https://testai.az/open-tests",
+    canonical: "https://www.testai.az/open-tests",
     languages: {
-      az: "https://testai.az/open-tests",
-      en: "https://testai.az/en/open-tests",
-      tr: "https://testai.az/tr/open-tests",
-      ru: "https://testai.az/ru/open-tests",
-      "x-default": "https://testai.az/open-tests",
+      az: "https://www.testai.az/open-tests",
+      en: "https://www.testai.az/en/open-tests",
+      tr: "https://www.testai.az/tr/open-tests",
+      ru: "https://www.testai.az/ru/open-tests",
+      "x-default": "https://www.testai.az/open-tests",
     },
   },
   openGraph: {
     title: titles[DEFAULT_LOCALE],
     description: descriptions[DEFAULT_LOCALE],
-    url: "https://testai.az/open-tests",
+    url: "https://www.testai.az/open-tests",
     siteName: "TESTAI.AZ",
     type: "website",
   },
@@ -58,7 +58,7 @@ export default function OpenTestsPage() {
     provider: {
       "@type": "Organization",
       name: "TESTAI.AZ",
-      url: "https://testai.az",
+      url: "https://www.testai.az",
     },
   }
 

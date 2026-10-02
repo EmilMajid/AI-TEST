@@ -31,19 +31,19 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
     keywords: post.tags,
     authors: [{ name: post.author.name }],
     alternates: {
-      canonical: `https://testai.az/blog/${post.slug}`,
+      canonical: `https://www.testai.az/blog/${post.slug}`,
       languages: {
-        az: `https://testai.az/blog/${post.slug}?lang=az`,
-        en: `https://testai.az/blog/${post.slug}?lang=en`,
-        tr: `https://testai.az/blog/${post.slug}?lang=tr`,
-        ru: `https://testai.az/blog/${post.slug}?lang=ru`,
-        "x-default": `https://testai.az/blog/${post.slug}`,
+        az: `https://www.testai.az/blog/${post.slug}?lang=az`,
+        en: `https://www.testai.az/blog/${post.slug}?lang=en`,
+        tr: `https://www.testai.az/blog/${post.slug}?lang=tr`,
+        ru: `https://www.testai.az/blog/${post.slug}?lang=ru`,
+        "x-default": `https://www.testai.az/blog/${post.slug}`,
       },
     },
     openGraph: {
       title: tr.title,
       description: tr.summary,
-      url: `https://testai.az/blog/${post.slug}`,
+      url: `https://www.testai.az/blog/${post.slug}`,
       siteName: "TESTAI.AZ",
       type: "article",
       publishedTime: post.publishDate,
@@ -74,20 +74,20 @@ export default function BlogPostPage({ params, searchParams }: PageProps) {
     author: {
       "@type": "Organization",
       name: post.author.name,
-      url: "https://testai.az",
+      url: "https://www.testai.az",
     },
     publisher: {
       "@type": "Organization",
       name: "TESTAI.AZ",
-      url: "https://testai.az",
+      url: "https://www.testai.az",
       logo: {
         "@type": "ImageObject",
-        url: "https://testai.az/logo.jpg",
+        url: "https://www.testai.az/logo.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://testai.az/blog/${post.slug}`,
+      "@id": `https://www.testai.az/blog/${post.slug}`,
     },
   }
 

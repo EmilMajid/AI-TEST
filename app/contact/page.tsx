@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   title: titles[DEFAULT_LOCALE],
   description: descriptions[DEFAULT_LOCALE],
   alternates: {
-    canonical: "https://testai.az/contact",
+    canonical: "https://www.testai.az/contact",
     languages: {
-      az: "https://testai.az/contact",
-      en: "https://testai.az/en/contact",
-      tr: "https://testai.az/tr/contact",
-      ru: "https://testai.az/ru/contact",
-      "x-default": "https://testai.az/contact",
+      az: "https://www.testai.az/contact",
+      en: "https://www.testai.az/en/contact",
+      tr: "https://www.testai.az/tr/contact",
+      ru: "https://www.testai.az/ru/contact",
+      "x-default": "https://www.testai.az/contact",
     },
   },
 }

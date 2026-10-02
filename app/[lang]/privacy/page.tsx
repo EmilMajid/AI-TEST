@@ -37,13 +37,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: titles[lang],
     description: descriptions[lang],
     alternates: {
-      canonical: lang === "az" ? "https://testai.az/privacy" : `https://testai.az/${lang}/privacy`,
+      canonical: lang === "az" ? "https://www.testai.az/privacy" : `https://www.testai.az/${lang}/privacy`,
       languages: {
-        az: "https://testai.az/privacy",
-        en: "https://testai.az/en/privacy",
-        tr: "https://testai.az/tr/privacy",
-        ru: "https://testai.az/ru/privacy",
-        "x-default": "https://testai.az/privacy",
+        az: "https://www.testai.az/privacy",
+        en: "https://www.testai.az/en/privacy",
+        tr: "https://www.testai.az/tr/privacy",
+        ru: "https://www.testai.az/ru/privacy",
+        "x-default": "https://www.testai.az/privacy",
       },
     },
   }

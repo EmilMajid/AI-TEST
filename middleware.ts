@@ -54,6 +54,15 @@ async function verifyAdminFromRequest(request: NextRequest): Promise<boolean> {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
+  // Handle legacy slug with Azerbaijani special characters
+  if (pathname.includes("ferdiləsdirmis") || pathname.includes("ferdil%C9%99sdirmis")) {
+    const cleanPath = pathname
+      .replace("ferdiləsdirmis", "ferdilesdirilmis")
+      .replace("ferdil%C9%99sdirmis", "ferdilesdirilmis")
+    const redirectUrl = new URL(cleanPath, request.url)
+    return NextResponse.redirect(redirectUrl, 301)
+  }
+
   // CRITICAL SECURITY GUARD: Protect /admin pages and /api/admin endpoints
   const isAdminPage = pathname === "/admin" || pathname.startsWith("/admin/")
   const isAdminApi = pathname.startsWith("/api/admin")
