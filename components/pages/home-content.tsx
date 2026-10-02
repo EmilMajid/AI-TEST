@@ -102,7 +102,7 @@ const CONTENT = {
     officialEmail: "Rəsmi E-poçt:",
     socialMedia: "Sosial Şəbəkələr:",
     supportText: "Təklif və texniki dəstək üçün həftənin hər günü bizimlə əlaqə saxlaya bilərsiniz.",
-    copyright: "© 2025 TESTAI.AZ. Bütün hüquqlar qorunur.",
+    copyright: "© 2026 TESTAI.AZ. Bütün hüquqlar qorunur.",
     tagline: "Azərbaycan AI Təhsil Platforması",
     blogLink: "Bloq və Metodologiya",
     openTestsLink: "Açıq Sınaqlar (Qeydiyyatsız)",
@@ -187,7 +187,7 @@ const CONTENT = {
     officialEmail: "Official Email:",
     socialMedia: "Social Media:",
     supportText: "Available 7 days a week for technical support and inquiries.",
-    copyright: "© 2025 TESTAI.AZ. All rights reserved.",
+    copyright: "© 2026 TESTAI.AZ. All rights reserved.",
     tagline: "Educational AI Platform",
   },
   tr: {
@@ -270,7 +270,7 @@ const CONTENT = {
     officialEmail: "Resmi E-posta:",
     socialMedia: "Sosyal Medya:",
     supportText: "Öneri ve teknik destek için haftanın her günü bizimle iletişime geçebilirsiniz.",
-    copyright: "© 2025 TESTAI.AZ. Tüm hakları saklıdır.",
+    copyright: "© 2026 TESTAI.AZ. Tüm hakları saklıdır.",
     tagline: "Eğitim Yapay Zeka Platformu",
   },
   ru: {
@@ -353,7 +353,7 @@ const CONTENT = {
     officialEmail: "Официальный e-mail:",
     socialMedia: "Социальные сети:",
     supportText: "Техническая поддержка доступна 7 дней в неделю по любым вопросам.",
-    copyright: "© 2025 TESTAI.AZ. Все права защищены.",
+    copyright: "© 2026 TESTAI.AZ. Все права защищены.",
     tagline: "Образовательная ИИ-платформа",
   },
 }

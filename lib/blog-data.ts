@@ -92,7 +92,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "keyTakeaways": [
           "Evaluates conceptual relationships and application rather than isolated historical dates or definitions.",
           "Prioritizes Bloom's Taxonomy Levels 3 and 4 (Application and Analysis) across all subject items.",
-          "The 'No Hidden Knowledge Rule' guarantees questions contain necessary parameters without requiring verbatim textbook recitation.",
+          "The 'No Hidden Knowledge Rule' ensures that questions contain all necessary context without requiring verbatim textbook recitation.",
           "Distractors are scientifically engineered around common cognitive pitfalls rather than arbitrary trickery."
         ],
         "sections": [
@@ -618,7 +618,7 @@ export const BLOG_POSTS: BlogPost[] = [
             "heading": "1. The Peril of Hallucination in Educational Assessment",
             "content": [
               "Large Language Models (LLMs) operate as probabilistic prediction engines. When prompted in open domain, they generate syntactically convincing yet factually invalid statements. In entertainment or casual conversation, this is tolerable; in secondary school physics or native grammar examinations, an unverified rule can confuse students.",
-              "Traditional fine-tuning does not eliminate hallucination because models still extrapolate. The definitive technical solution is Retrieval-Augmented Generation (RAG): constraining generation strictly to an authorized, immutable corpus of digitized curriculum textbooks."
+              "Traditional fine-tuning alone does not fully prevent hallucination because models extrapolate. For curriculum-aligned assessment, Retrieval-Augmented Generation (RAG) provides a robust mechanism: constraining generation strictly to an authorized corpus of digitized school textbooks."
             ],
             "quote": "In educational AI, fluency without grounding is dangerous; truth must precede eloquence."
           },
@@ -727,7 +727,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "en": {
         "title": "KAG & Knowledge Graphs: Structuring Conceptual Ontologies and Cross-Disciplinary Prerequisite Trees",
         "subtitle": "Beyond isolated keywords: How Knowledge-Augmented Generation understands inter-concept dependencies across grade levels and school subjects.",
-        "summary": "Text retrieval can locate paragraphs, but only a Knowledge Graph understands how concepts depend on one another. This article explores how KAG empowers TESTAI.AZ to model school curricula as an interconnected directed acyclic graph of human knowledge.",
+        "summary": "While text retrieval locates relevant passages, Knowledge Graphs model the structured prerequisite dependencies connecting curriculum concepts. This article explores how KAG empowers TESTAI.AZ to represent educational curricula as an interconnected network of knowledge.",
         "category": "Knowledge Engineering",
         "readTime": "9 min read",
         "keyTakeaways": [
@@ -757,7 +757,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "az": {
         "title": "KAG və Bilik Qrafları: Konseptual Əlaqələrin Təhlili və Fənlərarası Əlaqə Ağacları",
         "subtitle": "Təcrid olunmuş sözlərdən sistemli düşüncəyə: Knowledge-Augmented Generation anlayışların bir-biri ilə necə bağlı olduğunu necə müəyyən edir?",
-        "summary": "Sadə axtarış mətni tapa bilir, lakin yalnız Bilik Qrafı anlayışlar arasındakı zəncirvari məntiqi dərk edir. KAG texnologiyası fənlərarası inteqrasiyanı və əvvəlki siniflərin bilik bazasını vahid xəritəyə çevirir.",
+        "summary": "Sadə axtarış mətni tapa bilir, Bilik Qrafı isə anlayışlar arasındakı zəncirvari məntiqi əlaqələri modelləşdirir. KAG texnologiyası fənlərarası inteqrasiyanı və əvvəlki siniflərin bilik bazasını vahid xəritəyə çevirir.",
         "category": "Bilik Mühəndisliyi",
         "readTime": "9 dəqiqə",
         "keyTakeaways": [

@@ -33,6 +33,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Kurikulum və Testologiya Keyfiyyət Təminatı",
       referencesTitle: "Elmi Mənbələr və Ədəbiyyat",
       adLabel: "Təhsil Resursları Dəstəyi",
+      lastReviewed: "Yeniləndi: Oktyabr 2026",
     },
     en: {
       backToBlog: "Back to Blog",
@@ -47,6 +48,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Curricular & Testology Quality Assurance",
       referencesTitle: "Academic References & Sources",
       adLabel: "Educational Resources Support",
+      lastReviewed: "Peer Reviewed: October 2026",
     },
     tr: {
       backToBlog: "Bloga Dön",
@@ -61,6 +63,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Müfredat ve Testoloji Kalite Güvencesi",
       referencesTitle: "Akademik Kaynaklar ve Referanslar",
       adLabel: "Eğitim Kaynakları Desteği",
+      lastReviewed: "İncelendi: Ekim 2026",
     },
     ru: {
       backToBlog: "Вернуться в блог",
@@ -75,6 +78,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Контроль качества куррикулума и тестологии",
       referencesTitle: "Академические источники и литература",
       adLabel: "Поддержка образовательных ресурсов",
+      lastReviewed: "Обновлено: Октябрь 2026",
     },
   }[lang]
 
@@ -130,6 +134,10 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
                 <Calendar className="w-3.5 h-3.5" />
                 {post.publishDate}
               </span>
+              <span className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full font-medium text-[11px] border border-emerald-200/60">
+                <Check className="w-3 h-3 text-emerald-600" />
+                {uiTexts.lastReviewed}
+              </span>
             </div>
 
             <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -144,7 +152,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-slate-100">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
-                  AI
+                  <BookOpen className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <div className="font-bold text-slate-900 text-sm">{post.author.name}</div>

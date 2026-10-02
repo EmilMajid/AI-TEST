@@ -183,7 +183,7 @@ export function BlogListView({ initialLang = DEFAULT_LOCALE }: BlogListViewProps
                 <div className="px-6 sm:px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
-                      AI
+                      <BookOpen className="w-4 h-4 text-white" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-slate-800 leading-none">
