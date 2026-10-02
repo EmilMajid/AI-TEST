@@ -29,7 +29,24 @@ export function AdBanner({
   const adRef = useRef<HTMLDivElement>(null)
   const [sloganIndex, setSloganIndex] = useState(0)
   const [isRefreshing, setIsRefreshing] = useState(false)
+  const [isProtectedArea, setIsProtectedArea] = useState(false)
   const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || ""
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const p = window.location.pathname
+      if (
+        p.startsWith("/test") ||
+        p.startsWith("/dashboard") ||
+        p.startsWith("/parent-dashboard") ||
+        p.startsWith("/profile") ||
+        p.startsWith("/setup") ||
+        p.startsWith("/admin")
+      ) {
+        setIsProtectedArea(true)
+      }
+    }
+  }, [])
 
   // Təsadüfi cümlə seçimi (Random slogan selection)
   useEffect(() => {
@@ -39,7 +56,8 @@ export function AdBanner({
 
     const timeout = setTimeout(() => setIsRefreshing(false), 150)
 
-    if (adsenseClientId && typeof window !== "undefined") {
+    // Only invoke AdSense push on public, non-student interactive screens
+    if (adsenseClientId && !isProtectedArea && typeof window !== "undefined") {
       try {
         const adsbygoogle = (window as any).adsbygoogle || []
         adsbygoogle.push({})
@@ -49,7 +67,7 @@ export function AdBanner({
     }
 
     return () => clearTimeout(timeout)
-  }, [refreshKey, adsenseClientId])
+  }, [refreshKey, adsenseClientId, isProtectedArea])
 
   const currentSlogan = BRAND_SLOGANS[sloganIndex]
   const isVertical = format === "vertical"
@@ -69,12 +87,12 @@ export function AdBanner({
           {label}
         </span>
         <span className="text-[10px] text-blue-400 font-semibold uppercase tracking-wider">
-          Tərəfdaşlıq
+          {isProtectedArea ? "Təhsil Zonası" : "Tərəfdaşlıq"}
         </span>
       </div>
 
-      {/* AdSense İnteqrasiyası (Aktiv olduqda) və ya Rəsmi Brend Banneri */}
-      {adsenseClientId ? (
+      {/* AdSense İnteqrasiyası: YALNIZ ictimai səhifələrdə aktivdir; şagird və test ekranlarında 0 AdSense */}
+      {adsenseClientId && !isProtectedArea ? (
         <div
           className={`p-2 flex justify-center items-center w-full max-w-full overflow-hidden ${
             isVertical ? "min-h-[400px]" : isLarge ? "min-h-[220px]" : "min-h-[90px]"
@@ -100,6 +118,8 @@ export function AdBanner({
                 ? "rectangle"
                 : "horizontal"
             }
+            data-tag-for-age-treatment="1"
+            data-tag-for-child-directed-treatment="1"
             data-full-width-responsive="true"
           />
         </div>

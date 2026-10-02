@@ -29,7 +29,7 @@ const CONTENT = {
     aboutLink: "Haqqımızda (About Us)",
     login: "Giriş",
     register: "Qeydiyyat",
-    heroBadge: "Rəsmi Dərslik Əsaslı Təhsil və Diaqnostika Platforması",
+    heroBadge: "Dərslik Əsaslı Süni İntellekt Təhsil və Diaqnostika Platforması",
     heroTitle: "AI ilə Öyrən, Test Et, İnkişaf Et",
     heroDesc:
       "Azərbaycan Respublikası Elm və Təhsil Nazirliyinin təsdiq etdiyi rəsmi dərsliklər əsasında hazırlanmış süni intellekt təhsil və diaqnostika platforması. Seçdiyiniz mövzuya uyğun testlər alın və bilik səviyyənizi yoxlayın.",
@@ -114,7 +114,7 @@ const CONTENT = {
     openTestsLink: "Open Diagnostic Tests",
     login: "Sign In",
     register: "Sign Up",
-    heroBadge: "Official Curriculum-Aligned Educational & Diagnostic Platform",
+    heroBadge: "Curriculum-Aligned AI Educational & Diagnostic Platform",
     heroTitle: "Learn, Test & Excel with AI",
     heroDesc:
       "Curriculum-aligned AI educational testing and diagnostic assessment platform grounded in school curriculum textbooks available on e-derslik.edu.az. Practice topic-aligned tests and elevate your academic performance.",
@@ -197,7 +197,7 @@ const CONTENT = {
     openTestsLink: "Açık Dil Sınavları (Kayıtsız)",
     login: "Giriş Yap",
     register: "Kayıt Ol",
-    heroBadge: "Resmi Müfredat Tabanlı Eğitim ve Teşhis Platformu",
+    heroBadge: "Müfredat Odaklı Yapay Zeka Eğitim ve Teşhis Platformu",
     heroTitle: "Yapay Zeka ile Öğren, Test Et, Geliş",
     heroDesc:
       "Azerbaycan Cumhuriyeti Bilim ve Eğitim Bakanlığı onaylı resmi ders kitapları (e-derslik.edu.az) temelinde geliştirilmiş yapay zeka eğitim ve teşhis platformu. Konulara uygun testler çözün ve bilgi seviyenizi ölçün.",

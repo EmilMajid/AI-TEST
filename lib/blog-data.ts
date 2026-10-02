@@ -838,7 +838,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "keyTakeaways": [
           "A low score in higher grades is frequently driven by a single misunderstood concept from 2 or 3 grades prior.",
           "Backward mapping recursively traces incorrect distractors through the curriculum prerequisite tree.",
-          "Eliminates hours of unfocused tutoring by pinpointing 15-minute targeted remediation milestones.",
+          "Can help reduce unfocused tutoring by identifying targeted remediation milestones.",
           "Transforms student self-esteem by proving difficulty is a fixable knowledge gap, not innate inability."
         ],
         "sections": [
@@ -870,7 +870,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "keyTakeaways": [
           "Yuxarı siniflərdəki zəif nəticələrin əksəriyyəti 1-2 il əvvəlki kiçik bir təməl boşluqdan qaynaqlanır.",
           "Sistem səhvi analiz edərək zəncirin hansı sinifdə qırıldığını geriyə doğru izləyir.",
-          "Aylarla repetitor axtarışı əvəzinə 15-20 dəqiqəlik hədəfli təkrarla problemi kökündən həll edir.",
+          "Hədəfli və qısa təkrarla təməl mövzu boşluqlarının aradan qaldırılmasına kömək edir.",
           "Uşağın özünə inamını bərpa edir: 'Sən bu fənni bacarmırsan' yox, 'Sadəcə 6-cı sinifdən bir qaydanı xatırla'."
         ],
         "sections": [
@@ -954,7 +954,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "readTime": "8 min read",
         "keyTakeaways": [
           "Replaces ambiguous classroom grades with transparent, topic-by-topic concept mastery meters.",
-          "Saves families substantial financial and emotional resources on unnecessary generic tutoring.",
+          "Can help families reduce unnecessary or generic tutoring through objective concept tracking.",
           "Strengthens family harmony by shifting conversations from blame to targeted learning milestones.",
           "Real-time alerts notify parents of conceptual roadblocks before high-stakes terminal examinations."
         ],
@@ -986,7 +986,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "readTime": "8 dəqiqə",
         "keyTakeaways": [
           "Mücərrəd qiymətlər yerinə mövzular üzrə şəffaf mənimsəmə faizləri göstərilir.",
-          "Ailə büdcəsini lüzumsuz və bahalı repetitor xərclərindən xilas edir.",
+          "Ailə büdcəsinin və vaxtının daha səmərəli idarə olunmasına, hədəfli təkrara kömək edir.",
           "Valideyn-övlad münasibətlərindəki 'dərs davasını' sağlam əməkdaşlığa çevirir.",
           "İmtahana aylar qalmış boşluqları qabaqcadan xəbərdar edir."
         ],
@@ -1065,8 +1065,8 @@ export const BLOG_POSTS: BlogPost[] = [
     "translations": {
       "en": {
         "title": "PISA 2025 Benchmarks: Assessing Complex Problem Solving & Scientific Inquiry in K-12",
-        "subtitle": "Global competence in modern testing: Aligning national textbook curricula with OECD international benchmarks and cross-disciplinary inquiry.",
-        "summary": "OECD's PISA 2025 framework prioritizes scientific literacy, digital problem-solving, and creative thinking. This analysis explores how TESTAI.AZ bridges national curriculum textbooks with internationally competitive assessment methodologies.",
+        "subtitle": "Global competence in modern testing: Drawing methodological inspiration from international frameworks such as OECD PISA for analytical inquiry.",
+        "summary": "OECD's PISA 2025 framework prioritizes scientific literacy, digital problem-solving, and creative thinking. This analysis explores how TESTAI.AZ draws methodological inspiration from international assessment frameworks to enrich national textbook practice.",
         "category": "International Assessment & Benchmarks",
         "readTime": "9 min read",
         "keyTakeaways": [
@@ -1086,8 +1086,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       "az": {
         "title": "PISA 2025 Standartları və Tənqidi Mühakimə Bacarığı: Beynəlxalq Qiymətləndirmə Bələdçisi",
-        "subtitle": "Qlobal rəqabətə hazırlıq: Milli dərsliklərin OECD PISA meyarları ilə uzlaşdırılması və elmi tədqiqat təfəkkürü.",
-        "summary": "PISA 2025 qiymətləndirməsi şagirdlərdən formul əzbərləməyi deyil, real həyat problemlərini elmi üsullarla həll etməyi tələb edir. TESTAI.AZ bu yanaşmanı dərslik testlərinə necə inteqrasiya edir?",
+        "subtitle": "Qlobal rəqabətə hazırlıq: Milli dərsliklərin PISA kimi beynəlxalq metodoloji prinsiplərlə zənginləşdirilməsi və elmi tədqiqat təfəkkürü.",
+        "summary": "PISA 2025 qiymətləndirməsi şagirdlərdən formul əzbərləməyi deyil, real həyat problemlərini elmi üsullarla həll etməyi tələb edir. TESTAI.AZ beynəlxalq meyarlardan metodoloji ilham alaraq dərslik testlərini necə zənginləşdirir?",
         "category": "Beynəlxalq Qiymətləndirmə",
         "readTime": "9 dəqiqə",
         "keyTakeaways": [

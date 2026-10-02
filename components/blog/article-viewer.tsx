@@ -34,7 +34,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Kurikulum və Testologiya Keyfiyyət Təminatı",
       referencesTitle: "Elmi Mənbələr və Ədəbiyyat",
       adLabel: "Təhsil Resursları Dəstəyi",
-      lastReviewed: "Yeniləndi: Oktyabr 2026",
+      lastReviewed: "Elmi və Metodoloji Rəy: Oktyabr 2026",
     },
     en: {
       backToBlog: "Back to Blog",
@@ -49,7 +49,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Curricular & Testology Quality Assurance",
       referencesTitle: "Academic References & Sources",
       adLabel: "Educational Resources Support",
-      lastReviewed: "Peer Reviewed: October 2026",
+      lastReviewed: "Editorial & Methodological Review: October 2026",
     },
     tr: {
       backToBlog: "Bloga Dön",
@@ -64,7 +64,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Müfredat ve Testoloji Kalite Güvencesi",
       referencesTitle: "Akademik Kaynaklar ve Referanslar",
       adLabel: "Eğitim Kaynakları Desteği",
-      lastReviewed: "İncelendi: Ekim 2026",
+      lastReviewed: "Editöryal ve Metodolojik İnceleme: Ekim 2026",
     },
     ru: {
       backToBlog: "Вернуться в блог",
@@ -79,7 +79,7 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
       reviewedByRole: "Контроль качества куррикулума и тестологии",
       referencesTitle: "Академические источники и литература",
       adLabel: "Поддержка образовательных ресурсов",
-      lastReviewed: "Обновлено: Октябрь 2026",
+      lastReviewed: "Редакционно-методологическая экспертиза: Октябрь 2026",
     },
   }[lang]
 
