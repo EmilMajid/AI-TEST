@@ -32,6 +32,7 @@ import { useRouter } from "next/navigation"
 import { getDashboardPath, getCurrentUser } from "@/lib/profile-utils"
 import { Input } from "@/components/ui/input"
 import { ParentInviteForm } from "@/components/parent-invite-form"
+import { formatScientificText, formatSourceContext, cleanExplanation } from "@/lib/format-math"
 
 interface Question {
   id: number
@@ -130,8 +131,6 @@ interface TestAnalysis {
   }
 }
 
-import { formatScientificText, formatSourceContext, cleanExplanation } from "@/lib/format-math"
-
 // Safe helper to convert any potential object/array/primitive into safe React child
 // Helper to sanitize any legacy page references from remedial advice strings
 const cleanRemedialTip = (tip?: string): string => {
@@ -212,6 +211,8 @@ const getOptionText = (options: any, index: any): string => {
   
   return String(options);
 };
+
+export const dynamic = "force-dynamic"
 
 export default function ResultsPage() {
   const router = useRouter()

@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { DEFAULT_LOCALE } from "@/lib/config"
+import { Toaster } from "@/components/ui/toaster"
+import { StickyBottomAd } from "@/components/ads/sticky-bottom-ad"
 import "./globals.css"
 
 export const viewport: Viewport = {
@@ -46,10 +48,10 @@ export const metadata: Metadata = {
       "x-default": "https://testai.az",
     },
   },
+  other: {
+    "google-adsense-account": "ca-pub-1166444768651699",
+  },
 }
-
-import { Toaster } from "@/components/ui/toaster"
-import { StickyBottomAd } from "@/components/ads/sticky-bottom-ad"
 
 export default function RootLayout({
   children,
@@ -62,7 +64,15 @@ export default function RootLayout({
     <html lang={DEFAULT_LOCALE} className="notranslate" translate="no">
       <head>
         <meta name="google" content="notranslate" />
-        <meta name="google-adsense-account" content="ca-pub-1166444768651699" />
+      </head>
+      <body className="pb-16 sm:pb-20">
+        {/* Google AdSense Script */}
+        <Script
+          id="adsbygoogle-init"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+        />
         {/* Schema.org Structured Data */}
         <Script
           id="schema-organization"
@@ -75,7 +85,8 @@ export default function RootLayout({
               name: "TESTAI.AZ",
               url: "https://testai.az",
               logo: "https://testai.az/logo.jpg",
-              description: "Azərbaycan dərslikləri əsasında hazırlanmış süni intellekt dəstəkli test və bilik analiz platforması.",
+              description:
+                "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics platform grounded in official school textbooks.",
               email: "aztestai.az@gmail.com",
               sameAs: [
                 "https://www.instagram.com/testai.az/",
@@ -86,16 +97,10 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 email: "aztestai.az@gmail.com",
                 contactType: "customer support",
-                availableLanguage: "Azerbaijani",
+                availableLanguage: ["English", "Azerbaijani", "Turkish", "Russian"],
               },
             }),
           }}
-        />
-        <Script
-          id="adsbygoogle-init"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
         />
         {/* Meta Pixel Code */}
         <Script
@@ -126,9 +131,6 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-        {/* End Meta Pixel Code */}
-      </head>
-      <body className="pb-16 sm:pb-20">
         {children}
         <Toaster />
         <StickyBottomAd />

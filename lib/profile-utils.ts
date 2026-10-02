@@ -26,6 +26,7 @@ export interface UserData {
  * Get current user data from localStorage
  */
 export function getCurrentUser(): UserData | null {
+    if (typeof window === "undefined") return null
     try {
         const userData = localStorage.getItem('userData') || localStorage.getItem('user')
         if (!userData) return null
@@ -40,6 +41,7 @@ export function getCurrentUser(): UserData | null {
  * Update user data in localStorage
  */
 export function updateUserData(updates: Partial<UserData>): boolean {
+    if (typeof window === "undefined") return false
     try {
         const currentUser = getCurrentUser()
         if (!currentUser) return false

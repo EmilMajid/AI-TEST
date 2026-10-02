@@ -15,6 +15,7 @@ import { AdBanner } from "@/components/ads/ad-banner"
 import { TestInterstitialAd } from "@/components/ads/test-interstitial-ad"
 import { ProfileCompletionBanner } from "@/components/profile/profile-completion-banner"
 import { LockedResultsModal } from "@/components/profile/locked-results-modal"
+import { formatScientificText } from "@/lib/format-math"
 
 interface Question {
   id: number
@@ -40,8 +41,6 @@ interface TestConfig {
   questionCount: number
   timeLimit: number
 }
-
-import { formatScientificText } from "@/lib/format-math"
 
 const cleanFormattedText = (text: any): string => {
   return formatScientificText(text)
