@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { BookOpen, Sparkles, Target, Users, ArrowLeft, Award, ShieldCheck } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
+import { Footer } from "@/components/layout/footer"
 import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface AboutContentProps {
@@ -14,7 +15,8 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
   const [lang, setLang] = useState<Lang>(initialLang)
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col justify-between">
+      <div>
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
           <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center gap-2 text-primary font-bold text-lg hover:opacity-80 transition-opacity">
@@ -303,6 +305,9 @@ export function AboutContent({ initialLang = DEFAULT_LOCALE }: AboutContentProps
           )}
         </div>
       </main>
+      </div>
+
+      <Footer lang={lang} />
     </div>
   )
 }

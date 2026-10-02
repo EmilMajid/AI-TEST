@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, BookOpen, Clock, Tag, Sparkles, ChevronRight } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { BLOG_POSTS } from "@/lib/blog-data"
+import { Footer } from "@/components/layout/footer"
 import { DEFAULT_LOCALE } from "@/lib/config"
 
 interface BlogListViewProps {
@@ -61,7 +62,8 @@ export function BlogListView({ initialLang = DEFAULT_LOCALE }: BlogListViewProps
     : BLOG_POSTS
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col justify-between">
+      <div>
       {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
@@ -208,6 +210,9 @@ export function BlogListView({ initialLang = DEFAULT_LOCALE }: BlogListViewProps
           })}
         </div>
       </main>
+      </div>
+
+      <Footer lang={lang} />
     </div>
   )
 }

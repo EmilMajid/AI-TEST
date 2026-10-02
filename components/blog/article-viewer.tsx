@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, Clock, Calendar, Share2, BookOpen, CheckCircle2, Quote, Sparkles, Check, ShieldCheck } from "lucide-react"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { BlogPost, DEFAULT_ACADEMIC_SOURCES } from "@/lib/blog-data"
+import { Footer } from "@/components/layout/footer"
 import { DEFAULT_LOCALE } from "@/lib/config"
 import { AdBanner } from "@/components/ads/ad-banner"
 
@@ -91,7 +92,8 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col justify-between">
+      <div>
       {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-4">
@@ -262,6 +264,9 @@ export function ArticleViewer({ post, initialLang = DEFAULT_LOCALE }: ArticleVie
           </div>
         </article>
       </main>
+      </div>
+
+      <Footer lang={lang} />
     </div>
   )
 }

@@ -65,9 +65,25 @@ export default function RootLayout({
     <html lang={DEFAULT_LOCALE} className="notranslate" translate="no">
       <head>
         <meta name="google" content="notranslate" />
-        <meta name="google-adsense-account" content={adsenseId} />
       </head>
       <body className="pb-16 sm:pb-20">
+        {/* Google Consent Mode v2 Default Directive */}
+        <Script
+          id="google-consent-mode-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied'
+              });
+            `,
+          }}
+        />
         {/* Google AdSense Script */}
         <Script
           id="adsbygoogle-init"
@@ -90,6 +106,11 @@ export default function RootLayout({
               description:
                 "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics platform grounded in official school textbooks.",
               email: "aztestai.az@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Baku",
+                addressCountry: "AZ",
+              },
               sameAs: [
                 "https://www.instagram.com/testai.az/",
                 "https://www.facebook.com/profile.php?id=61594359745552",
