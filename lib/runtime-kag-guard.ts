@@ -202,6 +202,30 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     }
   }
 
+  // 5.5. PHYSICS DOMAIN FIREWALL
+  const isPhysicsSubject = /fizika/i.test(subjName)
+  if (isPhysicsSubject) {
+    const lowTopic = topicTitle.toLowerCase()
+    const lowRc = rootConcept.toLowerCase()
+    const lowCn = conceptName.toLowerCase()
+
+    // Molecular Physics & Thermodynamics -> Grade 10 intra-grade
+    if (/səthi gərilmə|kapilyar|rütubət|doyan|buxar|mkt|termodinamika|temperatur|ideal qaz/i.test(lowTopic)) {
+      if (rootBook.includes("Fizika 9") || /lorens|qaz boşalması|işığın yayılma|qüvvə momenti|arximed/i.test(lowRc) || /arximed/i.test(lowCn)) {
+        rootGrade = 10
+        isIntra = true
+        rootBook = "Fizika 10"
+        rootConcept = topicTitle
+        conceptName = topicTitle
+        bt.root_grade = 10
+        bt.root_book = rootBook
+        bt.root_concept = rootConcept
+        bt.concept_name = conceptName
+        bt.is_intra_grade = true
+      }
+    }
+  }
+
   // 6. SYNCHRONIZED PARENT ACTION TIP GENERATION
   const cleanConcept = rootConcept.replace(/^([0-9]+|[IVXLCDM]+)[\.\:\-]\s*/i, "").replace(/^elmi anlayış:\s*/i, "").trim()
   
