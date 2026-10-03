@@ -14,6 +14,7 @@ import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabas
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
 import { reconcileAnswerKeyRuntime, sanitizeDistractorDiagnostics } from "@/lib/runtime-answer-guard"
+import { sanitizeKagRuntime } from "@/lib/runtime-kag-guard"
 
 export async function POST(request: NextRequest) {
   try {
@@ -165,9 +166,9 @@ Mövzu: ${topic}`
       const offlineQuestions = loadFromOfflineTests(textbook, topic, questionCount, difficulty, grade)
 
       if (offlineQuestions.length > 0) {
-        console.log(`✅ [KAG System] KAG bazasından ${offlineQuestions.length} hazır sual tapıldı!`)
+        const safeOfflineQuestions = offlineQuestions.map(q => sanitizeKagRuntime(q, textbook, grade, topic))
         return NextResponse.json({
-          questions: offlineQuestions,
+          questions: safeOfflineQuestions,
           provider: "kag-active",
           success: true,
           message: `${offlineQuestions.length} test sualı 100% KAG və dərslik istinadları ilə yükləndi`,
@@ -197,9 +198,9 @@ Mövzu: ${topic}`
           })
 
           if (supabaseQuestions && supabaseQuestions.length > 0) {
-            console.log(`✅ [Supabase] ${supabaseQuestions.length} sual uğurla çəkildi!`)
+            const safeSupabaseQuestions = supabaseQuestions.map(q => sanitizeKagRuntime(q, textbook, grade, topic))
             return NextResponse.json({
-              questions: supabaseQuestions,
+              questions: safeSupabaseQuestions,
               provider: "supabase",
               success: true,
               message: `${supabaseQuestions.length} test sualı Supabase bazasından yükləndi`,
@@ -379,8 +380,9 @@ Mövzu: ${topic}`
               }
             })
 
+            const safeAiQuestions = questionsWithIds.map(q => sanitizeKagRuntime(q, textbook, grade, topic))
             return NextResponse.json({
-              questions: questionsWithIds,
+              questions: safeAiQuestions,
               provider: usedProvider,
               success: true,
               message: `${questionsWithIds.length} test sualı ${usedProvider} tərəfindən yaradıldı`,
@@ -405,8 +407,9 @@ Mövzu: ${topic}`
     const bankQuestions = loadFromQuestionBank(textbook, grade, topic, questionCount, difficulty)
 
     if (bankQuestions.length > 0) {
+      const safeBankQuestions = bankQuestions.map(q => sanitizeKagRuntime(q, textbook, grade, topic))
       return NextResponse.json({
-        questions: bankQuestions,
+        questions: safeBankQuestions,
         provider: "question_bank",
         success: true,
         message: `${bankQuestions.length} test sualı verilənlər bazasından götürüldü (${topic})`,

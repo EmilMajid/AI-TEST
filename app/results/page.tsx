@@ -1086,7 +1086,7 @@ export default function ResultsPage() {
                               <div className="flex items-center justify-between flex-wrap gap-2">
                                 <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
                                   <Brain className="h-4 w-4 text-amber-600 animate-pulse" />
-                                  <span>🎯 15 Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
+                                  <span>🎯 {question.backward_trace.remedial_duration_mins || 15} Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
                                 </h4>
                                 <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
                                   {question.backward_trace.is_root_anchor
