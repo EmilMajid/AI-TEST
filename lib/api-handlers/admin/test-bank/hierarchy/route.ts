@@ -7,26 +7,12 @@ import { getSafeWorkspacePath } from '@/lib/safe-path'
 const gradesDir = getSafeWorkspacePath('data', 'grades')
 const textbooksPath = getSafeWorkspacePath('data', 'textbooks.json')
 
-// In-memory cache for grade databases
-const gradeCache = new Map<string, any>()
+import { getGradeDb as getSharedGradeDb } from '@/lib/grade-db'
 
 function getGradeDb(grade: string | number): Record<string, any> | null {
-  const gStr = String(grade)
-  if (gradeCache.has(gStr)) {
-    return gradeCache.get(gStr)
-  }
-
-  const p = path.join(gradesDir, `grade_${gStr}.json`)
-  if (fs.existsSync(p)) {
-    try {
-      const data = JSON.parse(fs.readFileSync(p, 'utf8'))
-      gradeCache.set(gStr, data)
-      return data
-    } catch (e) {
-      console.error(`Error loading grade_${gStr}.json:`, e)
-    }
-  }
-  return null
+  const data = getSharedGradeDb(grade)
+  if (!data || Object.keys(data).length === 0) return null
+  return data
 }
 
 function stripTopicPrefix(name: string): string {

@@ -4,6 +4,8 @@ import fs from "fs"
 import path from "path"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
 
+import { getGradeDb } from "@/lib/grade-db"
+
 let cachedStats: any = null
 let cacheTime = 0
 const CACHE_TTL = 1000 * 60 * 30 // 30 minutes
@@ -15,7 +17,6 @@ export async function GET() {
       return NextResponse.json({ success: true, stats: cachedStats })
     }
 
-    const gradesDir = getSafeWorkspacePath("data", "grades")
     const summary = {
       totalQuestions: 0,
       totalGrades: 0,
@@ -28,11 +29,10 @@ export async function GET() {
     const uniqueSubjectsSet = new Set<string>()
 
     for (let g = 2; g <= 11; g++) {
-      const p = path.join(gradesDir, `grade_${g}.json`)
-      if (!fs.existsSync(p)) continue
+      const data = getGradeDb(g)
+      if (!data || Object.keys(data).length === 0) continue
 
       try {
-        const data = JSON.parse(fs.readFileSync(p, "utf8"))
         let gQuestions = 0
         let gTopics = 0
         const gDiff = { sadə: 0, orta: 0, çətin: 0 }

@@ -14,6 +14,7 @@ import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabas
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
 import { reconcileAnswerKeyRuntime, sanitizeDistractorDiagnostics } from "@/lib/runtime-answer-guard"
+import { getGradeDb } from "@/lib/grade-db"
 
 export async function POST(request: NextRequest) {
   try {
@@ -640,40 +641,6 @@ function resolveGrounding(q: any, gradeNum: number | string, textbookTitle: stri
   }
 }
 
-function getGradeDb(grade?: string | number, textbookTitle?: string): Record<string, any> {
-  try {
-    const gradeDigit =
-      String(grade || "").match(/\b([1-9]|1[0-1])\b/)?.[0] ||
-      String(textbookTitle || "").match(/\b([1-9]|1[0-1])\b/)?.[0] ||
-      ""
-
-    if (gradeDigit) {
-      // Prioritize rich local KAG staging database if present locally
-      const stagingPath = getSafeWorkspacePath("autonomous_kag", "active_staging", `grade_${gradeDigit}.json`)
-      if (fs.existsSync(stagingPath)) {
-        return JSON.parse(fs.readFileSync(stagingPath, "utf-8"))
-      }
-
-      const p = getSafeWorkspacePath("data", "grades", `grade_${gradeDigit}.json`)
-      if (fs.existsSync(p)) {
-        return JSON.parse(fs.readFileSync(p, "utf-8"))
-      }
-    }
-
-    const otherPath = getSafeWorkspacePath("data", "grades", "grade_other.json")
-    if (fs.existsSync(otherPath)) {
-      return JSON.parse(fs.readFileSync(otherPath, "utf-8"))
-    }
-
-    const legacyPath = getSafeWorkspacePath("data", "offline_tests.json")
-    if (fs.existsSync(legacyPath)) {
-      return JSON.parse(fs.readFileSync(legacyPath, "utf-8"))
-    }
-  } catch (e) {
-    console.error("Error reading grade questions database:", e)
-  }
-  return {}
-}
 
 function loadFromOfflineTests(
   textbookTitle: string,
