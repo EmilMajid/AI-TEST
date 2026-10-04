@@ -294,10 +294,34 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   // 6. SYNCHRONIZED PARENT ACTION TIP GENERATION
   const cleanConcept = rootConcept.replace(/^([0-9]+|[IVXLCDM]+)[\.\:\-]\s*/i, "").replace(/^elmi anlayış:\s*/i, "").trim()
   
+  const isLiteratureSubject = /ədəbiyyat|литератур/i.test(subjName)
+  const isGrammarQuestion = isLanguageSubject && (/(cümlə|nitq|isim|sifət|feil|zərf|əvəzlik|şəkilçi|morfoloj|sintaktik|orfoqraf|qrammatika|tense|grammar|noun|verb|adjective|preposition|морфолог|синтаксич|падеж|склонени|спряжени|причасти|деепричасти|глагол|существительн|прилагательн)/i.test(fullText))
+
   let skillPhrase = "təməl bacarıqları"
-  if (isLanguageSubject) {
-    if (fullText.includes("sintaktik") || fullText.includes("cümlə") || fullText.includes("nitq")) {
-      skillPhrase = "sintaktik təhlil və durğu işarələri qaydalarını"
+  let ruleSuffix = "(əsas qaydaları)"
+
+  if (isLiteratureSubject) {
+    ruleSuffix = "(bədii təhlilini)"
+    if (bloom === "Bilik") {
+      skillPhrase = "ədəbi fakt və məlumatları"
+    } else if (bloom === "Anlama") {
+      skillPhrase = "oxuyub-anlama və bədii məzmunu qavrama bacarığını"
+    } else if (bloom === "Tətbiq") {
+      skillPhrase = "bədii təhlil bacarığını"
+    } else {
+      skillPhrase = "müqayisəli ədəbi təhlil və analiz bacarığını"
+    }
+  } else if (isLanguageSubject) {
+    if (isGrammarQuestion) {
+      if (bloom === "Bilik") {
+        skillPhrase = "təməl qrammatik qaydaları"
+      } else if (bloom === "Anlama") {
+        skillPhrase = "qrammatik qaydaları anlama və qavrama bacarığını"
+      } else if (bloom === "Tətbiq") {
+        skillPhrase = "qrammatik qaydaları nitqdə tətbiq etmə bacarığını"
+      } else {
+        skillPhrase = "dil vahidlərini sintaktik/semantik təhlil etmə bacarığını"
+      }
     } else if (fullText.includes("frazeoloji") || fullText.includes("sinonim") || fullText.includes("antonim")) {
       skillPhrase = "lüğət ehtiyatı və leksik bacarıqlarını"
     } else if (bloom === "Bilik") {
@@ -305,7 +329,7 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     } else if (bloom === "Anlama") {
       skillPhrase = "oxuyub-anlama və mətni qavrama bacarığını"
     } else if (bloom === "Tətbiq") {
-      skillPhrase = "qrammatik qaydaları nitqdə tətbiq etmə bacarığını"
+      skillPhrase = "praktik tətbiq bacarığını"
     } else {
       skillPhrase = "mətni və dil vahidlərini sintaktik/semantik təhlil etmə bacarığını"
     }
@@ -327,7 +351,7 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
 
   if (isIntra || rootGrade === qGrade) {
     if (duration === 10) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu ${ruleSuffix} 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
     } else if (duration === 15) {
       tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin.`
     } else {

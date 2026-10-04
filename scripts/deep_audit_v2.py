@@ -22,11 +22,27 @@ def norm(s):
     s = re.sub(r'[«»“”„"\'`’‘()\[\]\.,:;!?—–\-]', ' ', s)
     return re.sub(r'\s+', ' ', s).strip()
 
-def base_subject(s):
-    return re.sub(r'\s*\(hissə\s*\d+\)', '', s).strip()
+def strip_parts(s):
+    return re.sub(r'\s*\(hissə\s*\d+\)', '', str(s or '')).strip()
+
+def clean_subject_name(s):
+    return re.sub(r'\s*\([^)]*\)', '', str(s or '')).strip()
 
 def subj_core(s):
-    return norm(re.sub(r'\d+', '', base_subject(s)))
+    return norm(re.sub(r'\d+', '', clean_subject_name(s)))
+
+CURRICULUM_TRACKS = {
+    'fizika': {'fizika', 'təbiət', 'həyat bilgisi'},
+    'kimya': {'kimya', 'təbiət', 'həyat bilgisi'},
+    'biologiya': {'biologiya', 'təbiət', 'həyat bilgisi'},
+    'təbiət': {'təbiət', 'həyat bilgisi'},
+    'coğrafiya': {'coğrafiya', 'təbiət', 'həyat bilgisi'},
+    'azərbaycan tarixi': {'azərbaycan tarixi', 'ümumi tarix', 'tarix', 'həyat bilgisi'},
+    'ümumi tarix': {'ümumi tarix', 'azərbaycan tarixi', 'tarix', 'həyat bilgisi'},
+    'riyaziyyat': {'riyaziyyat', 'həyat bilgisi'},
+    'informatika': {'informatika'},
+    'həyat bilgisi': {'həyat bilgisi'},
+}
 
 def cyr_ratio(t):
     letters = [c for c in t if c.isalpha()]
@@ -87,7 +103,7 @@ for fp in sorted(glob.glob('data/grades/grade_*.json')):
     base_cache = {}
     for s in subj_names:
         if '(hissə' in s:
-            bs = base_subject(s)
+            bs = strip_parts(s)
             if bs in data:
                 if bs not in base_cache:
                     base_cache[bs] = {norm(q.get('question') or q.get('q')) for qs in data[bs].values() if isinstance(qs, list) for q in qs if isinstance(q, dict)}
@@ -194,7 +210,9 @@ for fp in sorted(glob.glob('data/grades/grade_*.json')):
                 if rc_clean and rc_clean not in norm(tip):
                     flag('K3', 'KAG', 'Valideyn bələdçisi root_concept-i göstərmir (bələdçi ilə kök desinxrondur)', ctx, f"kök='{rc[:60]}' tip='{tip[:120]}'")
                 if rb and subj_core(rb) != subj_core(subj):
-                    flag('K4', 'KAG', 'root_book başqa fənnə aiddir (fənlərarası sızma)', ctx, f"root_book='{rb}'")
+                    allowed = CURRICULUM_TRACKS.get(subj_core(subj))
+                    if not (allowed and subj_core(rb) in allowed and rg is not None and rg < fgrade):
+                        flag('K4', 'KAG', 'root_book başqa fənnə aiddir (fənlərarası sızma)', ctx, f"root_book='{rb}'")
                 if rg is not None and rg > fgrade:
                     flag('K5', 'KAG', 'Kök sinif sualın sinfindən YUXARIDIR (gələcək sinfə istinad)', ctx, f"root_grade={rg}")
                 mb = re.search(r'(\d+)\s*$', rb)
@@ -208,7 +226,7 @@ for fp in sorted(glob.glob('data/grades/grade_*.json')):
                     flag('K8', 'KAG', 'remedial_duration_mins Bloom səviyyəsinə uyğun deyil', ctx, f"{bloom}->{exp_min}, field={bt.get('remedial_duration_mins')}")
                 if exp_min is None:
                     flag('K9', 'KAG', 'Bloom səviyyəsi standart 4 dəyərdən biri deyil', ctx, f"bloom='{bloom}'")
-                if is_lang and GRAMMAR.search(text) and 'oxuyub-anlama' in tip:
+                if is_lang and not ('ədəbiyyat' in az_lower(subj) or 'литератур' in az_lower(subj)) and GRAMMAR.search(text) and 'oxuyub-anlama' in tip:
                     flag('K10', 'KAG', "Qrammatika sualına 'oxuyub-anlama' bacarığı yazılıb (bacarıq tipi səhv)", ctx)
                 if 'ədəbiyyat' in az_lower(subj) and 'əsas qaydaları' in tip:
                     flag('K11', 'KAG', "Ədəbiyyat mətni üçün 'əsas qaydaları' ifadəsi (mənasız şablon)", ctx)
