@@ -5,21 +5,25 @@ import { getSafeWorkspacePath } from "@/lib/safe-path"
 
 const gradeDbCache = new Map<string, Record<string, any>>()
 
-export function findGradeFile(subpath: string): string | null {
-  const candidates = [
-    path.join(process.cwd(), subpath),
-    path.resolve(process.cwd(), subpath),
-    getSafeWorkspacePath(...subpath.split(/[\\/]/)),
-    path.join(__dirname, "..", subpath),
-    path.join(__dirname, "../..", subpath),
-    path.join("/var/task", subpath),
-  ]
-  for (const c of candidates) {
-    try {
-      if (fs.existsSync(c)) return c
-    } catch (_) {}
+function loadBundled(gradeDigit: string): string | null {
+  try {
+    switch (gradeDigit) {
+      case "1": return require("@/data/bundled/grade_1").gradeGz
+      case "2": return require("@/data/bundled/grade_2").gradeGz
+      case "3": return require("@/data/bundled/grade_3").gradeGz
+      case "4": return require("@/data/bundled/grade_4").gradeGz
+      case "5": return require("@/data/bundled/grade_5").gradeGz
+      case "6": return require("@/data/bundled/grade_6").gradeGz
+      case "7": return require("@/data/bundled/grade_7").gradeGz
+      case "8": return require("@/data/bundled/grade_8").gradeGz
+      case "9": return require("@/data/bundled/grade_9").gradeGz
+      case "10": return require("@/data/bundled/grade_10").gradeGz
+      case "11": return require("@/data/bundled/grade_11").gradeGz
+      default: return null
+    }
+  } catch (err) {
+    return null
   }
-  return null
 }
 
 export function getGradeDb(grade?: string | number, textbookTitle?: string): Record<string, any> {
@@ -35,8 +39,8 @@ export function getGradeDb(grade?: string | number, textbookTitle?: string): Rec
       }
 
       // 1. Local KAG staging if present locally
-      const stagingPath = findGradeFile(path.join("autonomous_kag", "active_staging", `grade_${gradeDigit}.json`))
-      if (stagingPath) {
+      const stagingPath = getSafeWorkspacePath("autonomous_kag", "active_staging", `grade_${gradeDigit}.json`)
+      if (fs.existsSync(stagingPath)) {
         try {
           const data = JSON.parse(fs.readFileSync(stagingPath, "utf-8"))
           gradeDbCache.set(gradeDigit, data)
@@ -44,51 +48,53 @@ export function getGradeDb(grade?: string | number, textbookTitle?: string): Rec
         } catch (_) {}
       }
 
-      // 2. Compressed .json.gz file (Vercel Serverless production bundle)
-      const gzPath = findGradeFile(path.join("data", "grades", `grade_${gradeDigit}.json.gz`))
-      if (gzPath) {
+      // 2. Uncompressed .json file if present locally
+      const localJson = getSafeWorkspacePath("data", "grades", `grade_${gradeDigit}.json`)
+      if (fs.existsSync(localJson)) {
         try {
-          const compressed = fs.readFileSync(gzPath)
-          const decompressed = zlib.gunzipSync(compressed).toString("utf-8")
+          const data = JSON.parse(fs.readFileSync(localJson, "utf-8"))
+          gradeDbCache.set(gradeDigit, data)
+          return data
+        } catch (_) {}
+      }
+
+      // 3. Bundled Webpack module (Guaranteed on Vercel runtime!)
+      const b64 = loadBundled(gradeDigit)
+      if (b64) {
+        try {
+          const decompressed = zlib.gunzipSync(Buffer.from(b64, "base64")).toString("utf-8")
           const data = JSON.parse(decompressed)
           gradeDbCache.set(gradeDigit, data)
           return data
         } catch (err) {
-          console.error(`[grade-db] Error reading compressed grade_${gradeDigit}.json.gz:`, err)
+          console.error(`[grade-db] Error unpacking bundled grade_${gradeDigit}:`, err)
         }
       }
 
-      // 3. Uncompressed .json file (local fallback)
-      const p = findGradeFile(path.join("data", "grades", `grade_${gradeDigit}.json`))
-      if (p) {
+      // 4. Compressed .json.gz file if present on disk
+      const gzPath = getSafeWorkspacePath("data", "grades", `grade_${gradeDigit}.json.gz`)
+      if (fs.existsSync(gzPath)) {
         try {
-          const data = JSON.parse(fs.readFileSync(p, "utf-8"))
+          const decompressed = zlib.gunzipSync(fs.readFileSync(gzPath)).toString("utf-8")
+          const data = JSON.parse(decompressed)
           gradeDbCache.set(gradeDigit, data)
           return data
-        } catch (err) {
-          console.error(`[grade-db] Error reading grade_${gradeDigit}.json:`, err)
-        }
+        } catch (_) {}
       }
     }
 
-    // 4. Grade Other
-    const otherGz = findGradeFile(path.join("data", "grades", "grade_other.json.gz"))
-    if (otherGz) {
-      try {
-        const decompressed = zlib.gunzipSync(fs.readFileSync(otherGz)).toString("utf-8")
+    // 5. Grade Other bundled
+    try {
+      const otherB64 = require("@/data/bundled/grade_other").gradeGz
+      if (otherB64) {
+        const decompressed = zlib.gunzipSync(Buffer.from(otherB64, "base64")).toString("utf-8")
         return JSON.parse(decompressed)
-      } catch (_) {}
-    }
-    const otherPath = findGradeFile(path.join("data", "grades", "grade_other.json"))
-    if (otherPath) {
-      try {
-        return JSON.parse(fs.readFileSync(otherPath, "utf-8"))
-      } catch (_) {}
-    }
+      }
+    } catch (_) {}
 
-    // 5. Legacy offline_tests.json (local only)
-    const legacyPath = findGradeFile(path.join("data", "offline_tests.json"))
-    if (legacyPath) {
+    // 6. Legacy offline_tests.json (local only)
+    const legacyPath = getSafeWorkspacePath("data", "offline_tests.json")
+    if (fs.existsSync(legacyPath)) {
       try {
         return JSON.parse(fs.readFileSync(legacyPath, "utf-8"))
       } catch (_) {}
