@@ -226,6 +226,59 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     }
   }
 
+  // 5.6. INFORMATICS DOMAIN FIREWALL
+  const isInformaticsSubject = /informatika/i.test(subjName)
+  if (isInformaticsSubject) {
+    const lowTopic = topicTitle.toLowerCase()
+    const lowRc = rootConcept.toLowerCase()
+
+    // 1. Modeling topics contaminated by Cybercrime / Antivirus
+    if (/model|formalizasiya|adekvatl/i.test(lowTopic)) {
+      if (/cinayət|kibertəhlükəsizlik|fişinq|spaminq|antivirus|dövri alqoritm/i.test(lowRc)) {
+        rootGrade = qGrade
+        isIntra = true
+        rootBook = `İnformatika ${qGrade}`
+        rootConcept = topicTitle
+        conceptName = topicTitle
+        bt.root_grade = qGrade
+        bt.root_book = rootBook
+        bt.root_concept = rootConcept
+        bt.concept_name = conceptName
+        bt.is_intra_grade = true
+      }
+    }
+    // 2. Algorithm / Programming topics contaminated by Cybercrime
+    else if (/alqoritm|python|proqramlaşdırma|dövr|massiv|siyahı/i.test(lowTopic)) {
+      if (/cinayət|kibertəhlükəsizlik|fişinq|spaminq|antivirus/i.test(lowRc)) {
+        rootGrade = qGrade
+        isIntra = true
+        rootBook = `İnformatika ${qGrade}`
+        rootConcept = topicTitle
+        conceptName = topicTitle
+        bt.root_grade = qGrade
+        bt.root_book = rootBook
+        bt.root_concept = rootConcept
+        bt.concept_name = conceptName
+        bt.is_intra_grade = true
+      }
+    }
+    // 3. AI / Modern Tech (Grade 11) contaminated by Phishing / Cybercrime
+    else if (/süni intellekt|maşın öyrənməsi|ai|ml/i.test(lowTopic)) {
+      if (/fişinq|spaminq|dos\/ddos/i.test(lowRc)) {
+        rootGrade = qGrade
+        isIntra = true
+        rootBook = `İnformatika ${qGrade}`
+        rootConcept = topicTitle
+        conceptName = topicTitle
+        bt.root_grade = qGrade
+        bt.root_book = rootBook
+        bt.root_concept = rootConcept
+        bt.concept_name = conceptName
+        bt.is_intra_grade = true
+      }
+    }
+  }
+
   // 6. SYNCHRONIZED PARENT ACTION TIP GENERATION
   const cleanConcept = rootConcept.replace(/^([0-9]+|[IVXLCDM]+)[\.\:\-]\s*/i, "").replace(/^elmi anlayış:\s*/i, "").trim()
   

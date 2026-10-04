@@ -59639,14 +59639,16 @@
         },
         "backward_trace": {
           "is_root_anchor": false,
-          "is_intra_grade": false,
-          "root_grade": 10,
-          "root_book": "İnformatika 10",
-          "root_concept": "Kompüter cinayətkarlığı, kibertəhlükəsizlik, fırıldaqçılıq (fişinq, spaminq, DoS/DDoS) və informasiya etikası",
+          "is_intra_grade": true,
+          "root_grade": 11,
+          "root_book": "İnformatika 11",
+          "root_concept": "Süni İntellekt sistemlərinin tətbiqində etik prinsiplər və kibertəhlükəsizlik",
           "concept_name": "4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
           "concept_type": "termin",
           "remedial_duration_mins": 10,
-          "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün 10-ci sinif İnformatika 10 dərsliyindəki 'Kompüter cinayətkarlığı, kibertəhlükəsizlik, fırıldaqçılıq (fişinq, spaminq, DoS/DDoS) və informasiya etikası' təməl mövzusunu 10 dəqiqə təkrarlayın."
+          "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif İnformatika 11 dərsliyindəki '1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir.",
+          "remedial_topic": "1.4. Süni intellekt və onun inkişaf istiqamətləri (AI, ML, Neyron şəbəkələr, Tyurinq testi)",
+          "remedial_book": "İnformatika 11"
         },
         "correct_index": 3
       },
