@@ -21,6 +21,22 @@ export async function GET() {
   const xaiPrefix = xaiKey ? xaiKey.substring(0, 8) + "..." : "Not set"
   const openaiPrefix = openaiKey ? openaiKey.substring(0, 20) + "..." : "Not set"
 
+  let fsCheck: any = {}
+  try {
+    const fs = require("fs")
+    const path = require("path")
+    const { findGradeFile } = require("@/lib/grade-db")
+    fsCheck = {
+      cwd: process.cwd(),
+      foundG10Gz: findGradeFile(path.join("data", "grades", "grade_10.json.gz")),
+      dataExists: fs.existsSync(path.join(process.cwd(), "data")),
+      gradesExists: fs.existsSync(path.join(process.cwd(), "data", "grades")),
+      gradesCount: fs.existsSync(path.join(process.cwd(), "data", "grades")) ? fs.readdirSync(path.join(process.cwd(), "data", "grades")).length : 0,
+    }
+  } catch (err: any) {
+    fsCheck = { error: err.message }
+  }
+
   return NextResponse.json({
     hasApiKeys,
     providers: {
@@ -34,6 +50,7 @@ export async function GET() {
       xaiKeyFormat,
       openaiKeyFormat,
       isRealOpenAI,
+      fsCheck,
     },
     preferredProvider: hasOpenAI ? "openai" : hasXaiKey ? "xai" : "none",
     warnings: [
