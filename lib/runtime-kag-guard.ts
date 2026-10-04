@@ -35,6 +35,18 @@ const HISTORY_TERMS = [
   "gülüstan", "türkmənçay", "atabəy", "xəlifə", "hökmdar", "feodal"
 ]
 
+export function getGradeOrdinalSuffix(grade: number | string): string {
+  const g = Number(grade) || 1
+  switch (g) {
+    case 6: return "cı"
+    case 3:
+    case 4: return "cü"
+    case 9:
+    case 10: return "cu"
+    default: return "ci"
+  }
+}
+
 export function cleanCanonicalSubjectName(subjStr: string): string {
   let s = String(subjStr || "").replace(/\s*\([^)]*\)/g, "").trim()
   s = s.replace(/[-_\s]+\d+$/g, "").trim()
@@ -310,21 +322,24 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   }
 
   let tip = ""
+  const qSuff = getGradeOrdinalSuffix(qGrade)
+  const rootSuff = getGradeOrdinalSuffix(rootGrade)
+
   if (isIntra || rootGrade === qGrade) {
     if (duration === 10) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
     } else if (duration === 15) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin.`
     } else {
-      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün hazırda istifadə etdiyi ${qGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın.`
+      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın.`
     }
   } else {
     if (duration === 10) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu 10 dəqiqə təkrarlayın.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu 10 dəqiqə təkrarlayın.`
     } else if (duration === 15) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin.`
     } else {
-      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün ${rootGrade}-ci sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın.`
+      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın.`
     }
   }
 
