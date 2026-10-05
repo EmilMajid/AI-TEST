@@ -78,7 +78,11 @@ GRAMMAR = re.compile(r'(cümlə|nitq hissə|isim|sifət|feil|şəkilçi|mübtəd
                      r'\btense\b|grammar|passive voice|plural|\bverb\b|\bnoun\b|adjective|preposition|conditional|gerund|infinitive)', re.I)
 ANALYSIS = re.compile(r'(проанализируй|сравните|сопоставьте|обоснуйте|təhlil ed|müqayisə ed|əsaslandır|\banaly[sz]e\b|\bcompare\b|\bjustify\b)', re.I)
 CALC = re.compile(r'(hesablay|вычисли|\bcalculate\b|найдите значение)', re.I)
-ALL_NONE = re.compile(r'(hamısı doğru|heç biri|bütün cavablar|all of the above|none of the above|все ответы|все перечисленн|ни один из)', re.I)
+ALL_NONE = re.compile(
+    r'^\s*(heç biri(ndə|nin|ndən)?|hamısı doğru(dur)?|bütün cavablar( doğrudur)?|'
+    r'bütün variantlar( doğrudur)?|yuxarıdakıların hamısı|all of the above|none of the above|'
+    r'все ответы|все перечисленн(ые)?|ни один из( перечисленных)?)\s*$', re.I
+)
 TEMPLATE_DIAG = re.compile(r'tədris standartına uyğun deyil|mövzusunun tədris standartına', re.I)
 PAGE = re.compile(r'\b(səh(ifə)?|s\.|page|стр\.)\s*\d+', re.I)
 LANG_SUBJ = re.compile(r'dili|ədəbiyyat|rus|ingilis|alman|fransız', re.I)
