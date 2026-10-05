@@ -1,0 +1,39 @@
+{
+  "total_read": 42130,
+  "noise_skipped": 4558,
+  "clean_written": 37572,
+  "grade_repaired": 11447,
+  "lesson_anchored": 1563,
+  "unanchored_samples": [
+    {
+      "book_id": "ingilis-dili-5",
+      "grade": 5,
+      "subj": "İngilis dili",
+      "section": "HELLO"
+    },
+    {
+      "book_id": "ingilis-dili-5",
+      "grade": 5,
+      "subj": "İngilis dili",
+      "section": "Anthony"
+    },
+    {
+      "book_id": "ingilis-dili-5",
+      "grade": 5,
+      "subj": "İngilis dili",
+      "section": "Change the words in"
+    },
+    {
+      "book_id": "ingilis-dili-5",
+      "grade": 5,
+      "subj": "İngilis dili",
+      "section": "CLASSROOM OBJECTS"
+    },
+    {
+      "book_id": "ingilis-dili-5",
+      "grade": 5,
+      "subj": "İngilis dili",
+      "section": "THE ALPHABET"
+    }
+  ]
+}
