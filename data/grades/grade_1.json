@@ -38782,8 +38782,8 @@
           "Quş tükü",
           "Kağız vərəq"
         ],
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "Doğru cavab A variantıdır. Kərpic quş tükündən qat-qat ağırdır.",
         "difficulty": "orta",
         "bloom_level": "Tətbiq",
@@ -38805,9 +38805,9 @@
           "passport_id": "01-MATH1-B01-M02-BL1-C1-010"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": true,
@@ -38820,8 +38820,8 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 1-ci sinif Riyaziyyat dərsliyindəki 'Əşyanın əlaməti' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "answer": "B",
-        "correct_index": 1
+        "answer": "A",
+        "correct_index": 0
       }
     ],
     "Ümumiləşdirici tapşırıqlar": [
@@ -64177,8 +64177,8 @@
           "Quş tükü",
           "Kağız vərəq"
         ],
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "Doğru cavab A variantıdır. Kərpic quş tükündən qat-qat ağırdır.",
         "difficulty": "orta",
         "bloom_level": "Tətbiq",
@@ -64200,9 +64200,9 @@
           "passport_id": "01-MATH1-B01-M02-BL1-C1-010"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": true,
@@ -64215,8 +64215,8 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 1-ci sinif Riyaziyyat dərsliyindəki 'Əşyanın əlaməti' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "answer": "B",
-        "correct_index": 1
+        "answer": "A",
+        "correct_index": 0
       }
     ],
     "Ümumiləşdirici tapşırıqlar": [
@@ -147462,8 +147462,8 @@
           "«C» (Clear / Təmizlə) düyməsi",
           "Z"
         ],
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "Doğru cavab A variantıdır. «C» düyməsi ekranı təmizləyir.",
         "difficulty": "orta",
         "bloom_level": "Anlama",
@@ -147485,9 +147485,9 @@
           "passport_id": "01-INFO-B04-M06-BL1-C1-007"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": true,
@@ -147500,8 +147500,8 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 1-ci sinif İnformatika dərsliyindəki 'Kompüterdə hesablayıram' mövzusunu (əsas alqoritm və anlayışları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "answer": "B",
-        "correct_index": 1
+        "answer": "A",
+        "correct_index": 0
       },
       {
         "id": 5268,

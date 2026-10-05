@@ -266676,15 +266676,15 @@
           "Yuxuya getməzdən dərhal qabaq çantadan kitabları atdıqdan sonra",
           "Səhər yeməyindən əvvəl qaranlıqda"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "Cədvələ uyğun kitabları seçmək çantanın düzgün yığılmasının ilkin şərtidir.",
         "difficulty": "çətin",
         "bloom_taxonomy": "Tətbiq",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "Sualı oxuyun",
@@ -266710,9 +266710,9 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli təhlil və elmi analiz bacarığını inkişaf etdirməsi üçün 1-ci sinif İnformatika dərsliyindəki 'Hadisələr və hərəkətlər ardıcıllığı' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Təhlil",
         "bloomLevel": "Təhlil"
       }

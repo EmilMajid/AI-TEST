@@ -9618,15 +9618,15 @@
           "12 450-yə 4000 əlavə edib, cəmdən 3 çıxardı; nəticə 16 447",
           "12 450-dən 4000 çıxıb, fərqə 3 əlavə etdi; nəticə 8 453"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Çıxılan ədəd 3997-dir. Onu 4000-ə qədər artırıb (3 vahid əlavə edib) 12450-dən çıxsaq, 3 vahid çox çıxmış olarıq. Ona görə də alınan cavaba 3 əlavə etməliyik: 12450 - 4000 + 3 = 8453.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (12 450-dən 4000 çıxıb, fərqdən yenə 3 çıxardı; nəticə 8 447). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "Yanlışdır (12 450-yə 4000 əlavə edib, cəmdən 3 çıxardı; nəticə 16 447). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 2. Toplama və çıxma - 2. Çoxrəqəmli ədədlərin toplanması').",
@@ -9659,9 +9659,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 2-ci sinif Riyaziyyat 2 (hissə 1) dərsliyindəki 'Zaman və məkan anlayışı' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -22575,15 +22575,15 @@
           "25, 4 və 17-ni toplayıb cəmi 10-a vurmaq",
           "25 ilə 17-ni vurub, alınan nəticəni 4-ə vurmaq"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Vurmanın qruplaşdırma xassəsinə görə, əvvəlcə hasili asan olan ədədləri (25 * 4 = 100) vurmaq, sonra isə nəticəni 17-yə vurmaq (100 * 17 = 1700) daha məqsədəuyğundur.",
         "distractor_diagnostics": {
-          "A": "Yanlışdır (17 ilə 4-ü vurub, sonra 25-i toplamaq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (25 ilə 17-ni vurub, alınan nəticəni 4-ə vurmaq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 3. Vurma və bölmə - 6. Çoxrəqəmli ədədin birrəqəmli ədədə bölünməsi').",
@@ -22630,9 +22630,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -71269,15 +71269,15 @@
           "$P = 2 \\cdot a + b$",
           "$P = 2 \\cdot$"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "> **Mənbə (Dərslik):** Riyaziyyat 4, «Bölmə 9. Ölçmə - 2. Perimetr» mövzusu.\n\n**Həlli:** Düzbucaqlının perimetri: $P = 2(a + b)$ və ya $P = 2a + 2b$.",
         "distractor_diagnostics": {
-          "A": "Yanlışdır ($P = a \\cdot b$). 'Perimetr' mövzusunun tədris standartına uyğun deyil.",
-          "B": "Yanlışdır ($P = a + b$). 'Perimetr' mövzusunun tədris standartına uyğun deyil.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 9. Ölçmə - 2. Perimetr').",
@@ -71310,9 +71310,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-ci sinif Riyaziyyat dərsliyindəki 'Perimetr' mövzusunu (əsas qayda və həll üsullarını) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -89278,15 +89278,15 @@
           "Düzbucaqlının sahəsi böyükdür",
           "Müqayisə etmək olmur"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "Tətbiq",
         "explanation": "Kvadratın sahəsi = 12 * 12 = 144 kv.sm. Düzbucaqlının sahəsi = 16 * 9 = 144 kv.sm. Hər ikisi 144-dür.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "Hər iki fiqurun sahəsi hesablanır.",
@@ -89326,9 +89326,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Təhlil",
         "bloomLevel": "Təhlil"
       }
@@ -93328,15 +93328,15 @@
           "İki tonqal qalayaraq təhlükəni bildirərək",
           "Çaparlar vasitəsilə məktub yollayaraq"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Mətndə açıq şəkildə yazılıb ki, qədim dövrdə təhlükə və düşmən basqını gözləniləndə xəbərdarlıq etmək üçün iki tonqal qalanırdı.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. İnformasiya prosesi və ya alqoritmik komanda təhlil edilir ('Bölmə 1. İNFORMASİYA — 2. İnformasiya texnologiyaları').",
@@ -93369,9 +93369,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-ci sinif İnformatika dərsliyindəki 'İnformasiya texnologiyaları' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -104630,15 +104630,15 @@
           "Yalnız və yalnız onu təşkil edən hər iki sadə mülahizə DOĞRU olduqda",
           "Heç vaxt doğru olmur"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Dərslik Səh. 29: 'VƏ' bağlayıcısı hər iki şərtin eyni vaxtda ödənilməsini tələb edir; biri yalan olarsa, ümumi nəticə yalandır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. İnformasiya prosesi və ya alqoritmik komanda təhlil edilir ('Bölmə 2. ALQORİTM VƏ MƏNTİQ — 9. “Və”, “və ya” sözləri olan mürəkkəb mülahizələr').",
@@ -104671,9 +104671,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün 2-ci sinif İnformatika dərsliyindəki 'Doğru və yalan mülahizələr' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -154724,15 +154724,15 @@
           "İçinə çoxlu miqdarda buz atmaq",
           "Boşqabı yelləyərək havada soyutmaq"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Xörəyi soyutmaq üçün nimçəyə və ya qaşığa üfürmək olmaz, qaşıqla yavaş-yavaş qarışdıraraq soyuması gözlənilməlidir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: verilmiş cavab mövzunun əsas qanunauyğunluğunu və ya şərtini ifadə etmir.",
-          "D": "D variantı yanlışdır: verilmiş cavab mövzunun əsas qanunauyğunluğunu və ya şərtini ifadə etmir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Materialın xassəsi, alətin təyinatı və ya emal mərhələsi təhlil edilir ('TİKMƏ VƏ NAXIŞLAMA - Çarpaz tikmə').",
@@ -154765,9 +154765,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-ci sinif Texnologiya dərsliyindəki 'Dərs 22. Çarpaz tikmə' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -168428,15 +168428,15 @@
           "Nəsimi görkəmli şairdir.",
           "Yaz gələndə ağaclar çiçəkləyir."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Üçüncü variantda \"sabah\" sözü xəbər deyil, zaman bildirən zərflikdir. Xəbər \"gedəcək\" sözüdür.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -168483,9 +168483,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -169664,15 +169664,15 @@
           "Növbəti yarış nə vaxtdır?",
           "Niyə daha tez xəbər vermədin?"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Uşaq 'Çox sağ ol' deyərək anasının təbrikinə və ya tərifinə cavab verir. Ən uyğun cümlə onu təbrik edən və qürur duyduğunu bildirən variantdır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -169719,9 +169719,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -169733,15 +169733,15 @@
           "İnsanlar yalnız danışaraq bir-biri ilə ünsiyyət qura bilərlər.",
           "Sözlərdən istifadə etmədən heç bir məlumat almaq mümkün deyil."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Cümlədən aydın olur ki, informasiya qəbulunda sözlərlə bərabər işarələr, yəni qeyri-verbal ünsiyyət də mühümdür.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -169788,9 +169788,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -170147,15 +170147,15 @@
           "28 il çox qısa bir zaman kəsiyidir.",
           "Bütün insanlar dərhal Şuşaya köçməlidirlər."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətndə Şuşanın azad edilməsindən duyulan qürurla yanaşı, əsas vurğu 'torpaqları yenidən dirçəltmək bizim ən böyük vəzifəmizdir' fikrinə yönəldilib.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (28 il çox qısa bir zaman kəsiyidir.). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "Yanlışdır (Bütün insanlar dərhal Şuşaya köçməlidirlər.). 'Ümumiləşdirici təkrar (Fəsil 1)' mövzusunun tədris standartına uyğun deyil."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -170202,9 +170202,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -172510,15 +172510,15 @@
           "Qarabağ yalnız gözəl təbii mənzərələrdən ibarətdir.",
           "Azıx mağarası dünyada mövcud olan yeganə mağaradır."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Azıx mağarasının ən qədim yaşayış məskəni olması Qarabağın qədim insan məskəni və zəngin tarixə malik olduğunu birbaşa sübut edir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 1. QARABAĞ XANLIĞI').",
@@ -172551,9 +172551,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'QARABAĞ XANLIĞI' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -177903,15 +177903,15 @@
           "Bütün kitablar insanlara yalnız nəzəri biliklər verir.",
           "Kitab oxumayan insanlar həyatda heç nəyə nail ola bilməzlər."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Yazar mətndə oxumağın öz-özlüyündə kifayət etmədiyini, əsas məsələnin oxuduğunu anlamaq və tətbiq etmək olduğunu xüsusi vurğulayır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 4. QƏHRƏMANLARIMIZI TANIYAQ').",
@@ -177952,9 +177952,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -178021,15 +178021,15 @@
           "Həqiqət və ədalət zaman alsa da, sonda mütləq bərpa olunur.",
           "Ədaləti bərpa etmək üçün mütləq illərlə gözləmək lazımdır."
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "'Haqq-ədalət öz yerini tapır' ifadəsi gec olsa belə, haqlı tərəfin qalib gəldiyini və ədalətin bərpa olunduğunu bildirir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 4. QƏHRƏMANLARIMIZI TANIYAQ').",
@@ -178062,9 +178062,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün 3-cü sinif Azərbaycan dili 3 dərsliyindəki 'Cümlə üzvləri və sintaktik təhlil' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -180511,15 +180511,15 @@
           "Dostlarla birlikdə əyləndiyimiz zaman",
           "Səhərdən axşama qədər işlədiyimiz gün"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "\"Yaman gün\" məcazi mənada insanın çətinliyə düşdüyü və köməyə ehtiyacı olduğu vaxtı bildirir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 3. SEVİMLİ QƏHRƏMANLARIM - 1. VƏFALI DOST').",
@@ -180552,9 +180552,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'VƏFALI DOST' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -186143,15 +186143,15 @@
           "Nəğmələrin yalnız bayramlarda oxunduğunu",
           "Xeyirxah insanların mütləq musiqiçi olmalı olduğunu"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu cümlədə məcazi məna işlənib, əsl gözəlliyin və sənətin yaxşı insanların qəlbində yer tapdığı vurğulanır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 4. İŞARƏLƏR VƏ SİMVOLLAR - 1. YAZIDA İŞARƏLƏR').",
@@ -186184,9 +186184,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'YAZIDA İŞARƏLƏR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -194069,15 +194069,15 @@
           "Uşaqlar kiçik yaşlarından ailələrindən ayrı yaşamağı öyrənməlidirlər.",
           "Yalnız valideynləri olan uşaqların yaşamaq hüququ var."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətnin ana xətti hər bir uşağın ailə qayğısı görməsinin və ehtiyac olduqda dövlətin bu rolu üstlənməsinin vacibliyidir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\" - 1. ŞƏRQDƏ İLK DƏFƏ...').",
@@ -194110,9 +194110,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'ŞƏRQDƏ İLK DƏFƏ...' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -197458,15 +197458,15 @@
           "İnsanların bir-birindən uzaq duraraq işlərini təkbaşına görməsi.",
           "Hər kəsin yalnız öz maraqlarını düşünərək hərəkət etməsi."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Həmrəylik eyni məqsəd, eyni fikir ətrafında sıx birləşmək və qarşılıqlı dəstək deməkdir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\" - 4. SÜRƏT,SÜRƏT,SÜRƏT').",
@@ -197499,9 +197499,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'SÜRƏT,SÜRƏT,SÜRƏT' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -202082,15 +202082,15 @@
           "Gələcək nəsillər mütləq yalnız xarici mədəniyyəti öyrənməlidir.",
           "Tarixi məlumatları yalnız kitablardan oxumalıyıq."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətndə ulu babalardan qalan mirasın, yəni milli dəyərlərin qorunması və gələcəyə ötürülməsinin vacibliyi ifadə olunur.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 6. TARİXİ ŞƏXSİYYƏTLƏR - 3. ADİL HÖKMDAR').",
@@ -202123,9 +202123,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'ADİL HÖKMDAR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -210245,15 +210245,15 @@
           "Göyərçinlər və tonqallar",
           "Uzaq və yaxın məsafələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Mətndə qədim zamanlarda xəbərləşmək (rabitə) üçün istifadə edilən vasitələr (tonqal, göyərçin) ilə müasir dövrün sürətli əlaqə vasitələri müqayisə olunur.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR - 1. COĞRAFİ KƏŞFLƏR').",
@@ -210286,9 +210286,9 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın mətni və dil vahidlərini sintaktik/semantik təhlil etmə bacarığını inkişaf etdirməsi üçün 3-cü sinif Azərbaycan dili 3 dərsliyindəki 'Cümlə üzvləri və sintaktik təhlil' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Təhlil",
         "bloomLevel": "Təhlil"
       },
@@ -210355,15 +210355,15 @@
           "Çətin vəziyyətdən çıxıb qaçmaq",
           "Boş, mənasız sözlər danışaraq vaxt itirmək"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Lüğəti mənasına görə \"cürət etmək\" bir işi görmək üçün özündə cəsarət tapmaq, çəkinməmək deməkdir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR - 1. COĞRAFİ KƏŞFLƏR').",
@@ -210396,9 +210396,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'COĞRAFİ KƏŞFLƏR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -251568,15 +251568,15 @@
           "Yaranı bağlamaq",
           "İsti su tökmək"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Soyuq su dərinin dərindən zədələnməsini dayandırır və ağrını azaldır; yağı sürtmək isə infeksiya salır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: tarixi fakt, xronoloji ardıcıllıq və ya səbəb-nəticə əlaqəsi təhrif olunub.",
-          "D": "D variantı yanlışdır: tarixi fakt, xronoloji ardıcıllıq və ya səbəb-nəticə əlaqəsi təhrif olunub."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Təbii və ya ictimai hadisə, orqanizm və ya ekoloji proses təhlil edilir ('Fəsil 5. Təhlükəsizlik və fövqəladə hallar — 23. İlk tibbi yardım').",
@@ -251609,9 +251609,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 4-ci sinif Həyat bilgisi dərsliyindəki 'İlk tibbi yardım' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -352641,15 +352641,15 @@
           "Maskulin: Vater, Opa, Bruder / Feminin: Mutter, Oma, Schwester",
           "Hamısı orta cinsdir"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "3-Tətbiq etmək",
         "explanation": "Dərslik Səh. 38-44: Kişi cinsi (der) və qadın cinsi (die) ailə üzvləri tam dəqiq ayrılmışdır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Der Satzkontext und die grammatikalische Struktur werden analysiert ('LEKTION 5. MEINE FAMILIE - Stunde 4. Wiederholung').",
@@ -352682,9 +352682,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Alman dili 4 dərsliyindəki 'Lektion 5. Stunde 4. Wiederholung' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -405129,15 +405129,15 @@
           "Nəsimi görkəmli şairdir.",
           "Yaz gələndə ağaclar çiçəkləyir."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Üçüncü variantda \"sabah\" sözü xəbər deyil, zaman bildirən zərflikdir. Xəbər \"gedəcək\" sözüdür.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -405184,9 +405184,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -406365,15 +406365,15 @@
           "Növbəti yarış nə vaxtdır?",
           "Niyə daha tez xəbər vermədin?"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Uşaq 'Çox sağ ol' deyərək anasının təbrikinə və ya tərifinə cavab verir. Ən uyğun cümlə onu təbrik edən və qürur duyduğunu bildirən variantdır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -406420,9 +406420,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -406434,15 +406434,15 @@
           "İnsanlar yalnız danışaraq bir-biri ilə ünsiyyət qura bilərlər.",
           "Sözlərdən istifadə etmədən heç bir məlumat almaq mümkün deyil."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Cümlədən aydın olur ki, informasiya qəbulunda sözlərlə bərabər işarələr, yəni qeyri-verbal ünsiyyət də mühümdür.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -406489,9 +406489,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -406848,15 +406848,15 @@
           "28 il çox qısa bir zaman kəsiyidir.",
           "Bütün insanlar dərhal Şuşaya köçməlidirlər."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətndə Şuşanın azad edilməsindən duyulan qürurla yanaşı, əsas vurğu 'torpaqları yenidən dirçəltmək bizim ən böyük vəzifəmizdir' fikrinə yönəldilib.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (28 il çox qısa bir zaman kəsiyidir.). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "Yanlışdır (Bütün insanlar dərhal Şuşaya köçməlidirlər.). 'Ümumiləşdirici təkrar (Fəsil 1)' mövzusunun tədris standartına uyğun deyil."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 1. FƏRD VƏ TOPLUM - Ümumiləşdirici təkrar').",
@@ -406903,9 +406903,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -409211,15 +409211,15 @@
           "Qarabağ yalnız gözəl təbii mənzərələrdən ibarətdir.",
           "Azıx mağarası dünyada mövcud olan yeganə mağaradır."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Azıx mağarasının ən qədim yaşayış məskəni olması Qarabağın qədim insan məskəni və zəngin tarixə malik olduğunu birbaşa sübut edir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 1. QARABAĞ XANLIĞI').",
@@ -409252,9 +409252,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'QARABAĞ XANLIĞI' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -414604,15 +414604,15 @@
           "Bütün kitablar insanlara yalnız nəzəri biliklər verir.",
           "Kitab oxumayan insanlar həyatda heç nəyə nail ola bilməzlər."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Yazar mətndə oxumağın öz-özlüyündə kifayət etmədiyini, əsas məsələnin oxuduğunu anlamaq və tətbiq etmək olduğunu xüsusi vurğulayır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 4. QƏHRƏMANLARIMIZI TANIYAQ').",
@@ -414653,9 +414653,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -414722,15 +414722,15 @@
           "Həqiqət və ədalət zaman alsa da, sonda mütləq bərpa olunur.",
           "Ədaləti bərpa etmək üçün mütləq illərlə gözləmək lazımdır."
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "'Haqq-ədalət öz yerini tapır' ifadəsi gec olsa belə, haqlı tərəfin qalib gəldiyini və ədalətin bərpa olunduğunu bildirir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 2. QARABAĞ-ANA YURDUM - 4. QƏHRƏMANLARIMIZI TANIYAQ').",
@@ -414763,9 +414763,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün 3-cü sinif Azərbaycan dili 3 dərsliyindəki 'Cümlə üzvləri və sintaktik təhlil' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -417212,15 +417212,15 @@
           "Dostlarla birlikdə əyləndiyimiz zaman",
           "Səhərdən axşama qədər işlədiyimiz gün"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "\"Yaman gün\" məcazi mənada insanın çətinliyə düşdüyü və köməyə ehtiyacı olduğu vaxtı bildirir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 3. SEVİMLİ QƏHRƏMANLARIM - 1. VƏFALI DOST').",
@@ -417253,9 +417253,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'VƏFALI DOST' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -422844,15 +422844,15 @@
           "Nəğmələrin yalnız bayramlarda oxunduğunu",
           "Xeyirxah insanların mütləq musiqiçi olmalı olduğunu"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Bu cümlədə məcazi məna işlənib, əsl gözəlliyin və sənətin yaxşı insanların qəlbində yer tapdığı vurğulanır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 4. İŞARƏLƏR VƏ SİMVOLLAR - 1. YAZIDA İŞARƏLƏR').",
@@ -422885,9 +422885,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'YAZIDA İŞARƏLƏR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -430772,15 +430772,15 @@
           "Uşaqlar kiçik yaşlarından ailələrindən ayrı yaşamağı öyrənməlidirlər.",
           "Yalnız valideynləri olan uşaqların yaşamaq hüququ var."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətnin ana xətti hər bir uşağın ailə qayğısı görməsinin və ehtiyac olduqda dövlətin bu rolu üstlənməsinin vacibliyidir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\" - 1. ŞƏRQDƏ İLK DƏFƏ...').",
@@ -430813,9 +430813,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'ŞƏRQDƏ İLK DƏFƏ...' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -434161,15 +434161,15 @@
           "İnsanların bir-birindən uzaq duraraq işlərini təkbaşına görməsi.",
           "Hər kəsin yalnız öz maraqlarını düşünərək hərəkət etməsi."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Həmrəylik eyni məqsəd, eyni fikir ətrafında sıx birləşmək və qarşılıqlı dəstək deməkdir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 5. BİRİNCİLƏR: \"İLK\" VƏ \"ƏN\" - 4. SÜRƏT,SÜRƏT,SÜRƏT').",
@@ -434202,9 +434202,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'SÜRƏT,SÜRƏT,SÜRƏT' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -438785,15 +438785,15 @@
           "Gələcək nəsillər mütləq yalnız xarici mədəniyyəti öyrənməlidir.",
           "Tarixi məlumatları yalnız kitablardan oxumalıyıq."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Mətndə ulu babalardan qalan mirasın, yəni milli dəyərlərin qorunması və gələcəyə ötürülməsinin vacibliyi ifadə olunur.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 6. TARİXİ ŞƏXSİYYƏTLƏR - 3. ADİL HÖKMDAR').",
@@ -438826,9 +438826,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'ADİL HÖKMDAR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -446948,15 +446948,15 @@
           "Göyərçinlər və tonqallar",
           "Uzaq və yaxın məsafələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "difficulty": "çətin",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "Mətndə qədim zamanlarda xəbərləşmək (rabitə) üçün istifadə edilən vasitələr (tonqal, göyərçin) ilə müasir dövrün sürətli əlaqə vasitələri müqayisə olunur.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR - 1. COĞRAFİ KƏŞFLƏR').",
@@ -446989,9 +446989,9 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın mətni və dil vahidlərini sintaktik/semantik təhlil etmə bacarığını inkişaf etdirməsi üçün 3-cü sinif Azərbaycan dili 3 dərsliyindəki 'Cümlə üzvləri və sintaktik təhlil' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Təhlil",
         "bloomLevel": "Təhlil"
       },
@@ -447058,15 +447058,15 @@
           "Çətin vəziyyətdən çıxıb qaçmaq",
           "Boş, mənasız sözlər danışaraq vaxt itirmək"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "4-Təhlil etmək",
         "explanation": "Lüğəti mənasına görə \"cürət etmək\" bir işi görmək üçün özündə cəsarət tapmaq, çəkinməmək deməkdir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Mətnin və ya cümlənin mənası və qrammatik xüsusiyyətləri təhlil edilir ('Fəsil 8. İXTİRALAR VƏ KƏŞFLƏR - 1. COĞRAFİ KƏŞFLƏR').",
@@ -447099,9 +447099,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-cü sinif Azərbaycan dili 4 dərsliyindəki 'COĞRAFİ KƏŞFLƏR' mövzusunu (əsas qaydaları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -463997,15 +463997,15 @@
           "12 450-yə 4000 əlavə edib, cəmdən 3 çıxardı; nəticə 16 447",
           "12 450-dən 4000 çıxıb, fərqə 3 əlavə etdi; nəticə 8 453"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Çıxılan ədəd 3997-dir. Onu 4000-ə qədər artırıb (3 vahid əlavə edib) 12450-dən çıxsaq, 3 vahid çox çıxmış olarıq. Ona görə də alınan cavaba 3 əlavə etməliyik: 12450 - 4000 + 3 = 8453.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (12 450-dən 4000 çıxıb, fərqdən yenə 3 çıxardı; nəticə 8 447). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "Yanlışdır (12 450-yə 4000 əlavə edib, cəmdən 3 çıxardı; nəticə 16 447). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 2. Toplama və çıxma - 2. Çoxrəqəmli ədədlərin toplanması').",
@@ -464038,9 +464038,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 2-ci sinif Riyaziyyat 2 (hissə 1) dərsliyindəki 'Zaman və məkan anlayışı' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -476954,15 +476954,15 @@
           "25, 4 və 17-ni toplayıb cəmi 10-a vurmaq",
           "25 ilə 17-ni vurub, alınan nəticəni 4-ə vurmaq"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "difficulty": "orta",
         "bloom_taxonomy": "2-Anlamaq (Qavrama)",
         "explanation": "Vurmanın qruplaşdırma xassəsinə görə, əvvəlcə hasili asan olan ədədləri (25 * 4 = 100) vurmaq, sonra isə nəticəni 17-yə vurmaq (100 * 17 = 1700) daha məqsədəuyğundur.",
         "distractor_diagnostics": {
-          "A": "Yanlışdır (17 ilə 4-ü vurub, sonra 25-i toplamaq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (25 ilə 17-ni vurub, alınan nəticəni 4-ə vurmaq). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 3. Vurma və bölmə - 6. Çoxrəqəmli ədədin birrəqəmli ədədə bölünməsi').",
@@ -477009,9 +477009,9 @@
             }
           ]
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "C",
+        "answer": "C",
+        "correct_index": 2,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -525650,15 +525650,15 @@
           "$P = 2 \\cdot a + b$",
           "$P = 2 \\cdot$"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Xatırlamaq (Bilik)",
         "explanation": "> **Mənbə (Dərslik):** Riyaziyyat 4, «Bölmə 9. Ölçmə - 2. Perimetr» mövzusu.\n\n**Həlli:** Düzbucaqlının perimetri: $P = 2(a + b)$ və ya $P = 2a + 2b$.",
         "distractor_diagnostics": {
-          "A": "Yanlışdır ($P = a \\cdot b$). 'Perimetr' mövzusunun tədris standartına uyğun deyil.",
-          "B": "Yanlışdır ($P = a + b$). 'Perimetr' mövzusunun tədris standartına uyğun deyil.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "1. Məsələnin şərti və verilən riyazi kəmiyyətlər təhlil edilir ('Bölmə 9. Ölçmə - 2. Perimetr').",
@@ -525691,9 +525691,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 4-ci sinif Riyaziyyat dərsliyindəki 'Perimetr' mövzusunu (əsas qayda və həll üsullarını) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -543659,15 +543659,15 @@
           "Düzbucaqlının sahəsi böyükdür",
           "Müqayisə etmək olmur"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "difficulty": "çətin",
         "bloom_taxonomy": "Tətbiq",
         "explanation": "Kvadratın sahəsi = 12 * 12 = 144 kv.sm. Düzbucaqlının sahəsi = 16 * 9 = 144 kv.sm. Hər ikisi 144-dür.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "solution_steps": [
           "Hər iki fiqurun sahəsi hesablanır.",
@@ -543707,9 +543707,9 @@
             }
           ]
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Təhlil",
         "bloomLevel": "Təhlil"
       }

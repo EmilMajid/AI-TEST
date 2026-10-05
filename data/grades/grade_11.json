@@ -5135,9 +5135,9 @@
           "x → ±∞ olduqda f → 0 əsasında həndəsi fiqurların metrik münasibətlərinin və sahə düsturlarının tətbiqi",
           "x → +∞ olduqda f → +∞ və x → -∞ olduqda f → +∞"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: x → +∞ olduqda f(x) → +∞ və x → -∞ olduqda f(x) → +∞. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: x → +∞ olduqda f(x) → +∞ və x → -∞ olduqda f(x) → +∞. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 7: Çoxhədli funksiya",
@@ -5148,10 +5148,10 @@
           "passport_id": "11-001-0207-11MA07-BL2-C2-002"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Dövrü olaraq dəyişir və funksional asılılıqların qrafik model üzərində analitik xassələrinin təhlili). 'Çoxhədli funksiya' mövzusunun tədris standartına uyğun deyil.",
-          "B": "Yanlışdır (x → +∞ olduqda f → -∞ və tənliklər sisteminin köklərinin həqiqi ədədlər çoxluğunda araşdırılması). 'Çoxhədli funksiya' mövzusunun tədris standartına uyğun deyil.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -5164,7 +5164,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_index": 2
+        "correct_index": 3
       },
       {
         "id": "11-001-0207-11MA07-BL2-C2-003",
@@ -5766,9 +5766,9 @@
           "(-∞; +∞)",
           "müsbət tam ədədlər sahəsi üzrə əsas xüsusiyyətlərin və proseslərin tətbiqi"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Doğru cavab: (-∞; +∞). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: (-∞; +∞). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 7: Çoxhədli funksiya",
@@ -5779,10 +5779,10 @@
           "passport_id": "11-001-0207-11MA07-BL2-C1-013"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır ([0; +∞)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "Yanlışdır ((-∞; 0]). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -5795,7 +5795,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_index": 3
+        "correct_index": 2
       },
       {
         "id": "11-001-0207-11MA07-BL3-C1-014",
@@ -6720,9 +6720,9 @@
           "(-1; 3) fərqli C",
           "(3; +∞)"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: (-∞; -1) ∪ (3; +∞). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: (-∞; -1) ∪ (3; +∞). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 8: Rasional funksiya",
@@ -6733,10 +6733,10 @@
           "passport_id": "11-001-0208-11MA08-BL3-C2-015"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (∪). Bu variant mövzunun tədris standartına uyğun deyil.",
-          "C": "Yanlışdır ((-1; 3)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -6749,7 +6749,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_index": 0
+        "correct_index": 3
       }
     ],
     "Ümumiləşdirici tapşırıqlar": [
@@ -6848,9 +6848,9 @@
           "x = 2 və x = 3",
           "Kökü yoxdur"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: x = 3. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: x = 3. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 9: Ümumiləşdirici tapşırıqlar",
@@ -6861,10 +6861,10 @@
           "passport_id": "11-001-0209-11MA09-BL3-C1-002"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (x = 2 sahəsi üzrə əsas xüsusiyyətlərin və proseslərin tətbiqi). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Kökü yoxdur). 'Ümumiləşdirici tapşırıqlar' mövzusunun tədris standartına uyğun deyil."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -6891,7 +6891,7 @@
             }
           ]
         },
-        "correct_index": 2
+        "correct_index": 1
       },
       {
         "id": "11-001-0209-11MA09-BL3-C1-003",
@@ -8390,9 +8390,9 @@
           "1 üzrə ehtimal nəzəriyyəsi və riyazi statistika qaydalarının ödənilməsi",
           "0"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: 0 (sonsuz kiçilənin məhdud funksiyaya hasili kimi). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: 0 (sonsuz kiçilənin məhdud funksiyaya hasili kimi). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 10: Funksiyanın limiti və limitlər haqqında teoremlər",
@@ -8403,10 +8403,10 @@
           "passport_id": "11-001-0210-11MA10-BL4-C2-011"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Sonsuzluq əsasında həndəsi fiqurların metrik münasibətlərinin və sahə düsturlarının tətbiqi). 'Funksiyanın limiti və limitlər haqqında teoremlər' mövzusunun tədris standartına uyğun deyil.",
-          "B": "Yanlışdır (Mövcud deyil və tənliklər sisteminin köklərinin həqiqi ədədlər çoxluğunda araşdırılması). 'Funksiyanın limiti və limitlər haqqında teoremlər' mövzusunun tədris standartına uyğun deyil.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -8419,7 +8419,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli təhlil və elmi analiz bacarığını inkişaf etdirməsi üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 2
+        "correct_index": 3
       },
       {
         "id": "11-001-0210-11MA10-BL3-C1-012",
@@ -8840,9 +8840,9 @@
           "3 əsasında həndəsi fiqurların metrik münasibətlərinin və sahə düsturlarının tətbiqi",
           "1/5 və funksional asılılıqların qrafik model üzərində analitik xassələrinin təhlili"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: 0 (məxrəcin dərəcəsi surətdən böyük olduğu üçün). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: 0 (məxrəcin dərəcəsi surətdən böyük olduğu üçün). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 11: Görkəmli limitlər və sonsuzluqda limit",
@@ -8853,10 +8853,10 @@
           "passport_id": "11-001-0211-11MA11-BL3-C1-004"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Sonsuzluq əsasında həndəsi fiqurların metrik münasibətlərinin və sahə düsturlarının tətbiqi). 'Görkəmli limitlər və sonsuzluqda limit' mövzusunun tədris standartına uyğun deyil.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (1/5 və funksional asılılıqların qrafik model üzərində analitik xassələrinin təhlili). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -8869,7 +8869,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_index": 2
+        "correct_index": 1
       },
       {
         "id": "11-001-0211-11MA11-BL3-C1-005",
@@ -11566,9 +11566,9 @@
           "f⁻¹ =³",
           "f⁻¹ = ∛ (D)"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: f⁻¹(x) = ∛(x - 2). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: f⁻¹(x) = ∛(x - 2). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 14: Mürəkkəb və tərs funksiyalar",
@@ -11579,10 +11579,10 @@
           "passport_id": "11-001-0314-11MA14-BL3-C1-007"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (f⁻¹ = ∛). 'Mürəkkəb və tərs funksiyalar' mövzusunun tədris standartına uyğun deyil.",
-          "C": "Yanlışdır (f⁻¹ =³). 'Mürəkkəb və tərs funksiyalar' mövzusunun tədris standartına uyğun deyil.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -11595,7 +11595,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-001-0314-11MA14-BL2-C2-008",
@@ -12646,9 +12646,9 @@
           "(1; 10)",
           "[0; 10) fərqli D"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: (0; 10). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: (0; 10). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 15: Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
@@ -12659,10 +12659,10 @@
           "passport_id": "11-001-0315-11MA15-BL3-C1-011"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır ((-∞; 10)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "Yanlışdır ((1; 10)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -12675,7 +12675,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 9-ci sinif Riyaziyyat dərsliyindəki 'Vektor anlayışı, kollinear və bərabər vektorlar' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_index": 3
+        "correct_index": 0
       },
       {
         "id": "11-001-0315-11MA15-BL1-C1-012",
@@ -22396,9 +22396,9 @@
           "a ∫ f dx + b ∫ g dx",
           "a · b ∫ fg dx"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: a ∫ f(x) dx + b ∫ g(x) dx. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: a ∫ f(x) dx + b ∫ g(x) dx. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 26: Əsas inteqral düsturları və inteqrallama qaydaları",
@@ -22409,10 +22409,10 @@
           "passport_id": "11-001-0526-11MA26-BL1-C1-002"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -22425,7 +22425,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Riyaziyyat dərsliyindəki 'Əsas inteqral düsturları və inteqrallama qaydaları' mövzusunu (əsas qayda və həll üsullarını) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 0
       },
       {
         "id": "11-001-0526-11MA26-BL1-C2-003",
@@ -25710,9 +25710,9 @@
           "A = F' - F'",
           "A = 1/2 F · x²"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: A = ∫ₐᵇ F(x) dx. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: A = ∫ₐᵇ F(x) dx. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 30: İnteqralın fizikada və təbiətdə tətbiqləri",
@@ -25723,10 +25723,10 @@
           "passport_id": "11-001-0530-11MA30-BL1-C1-001"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (A = F' - F'). 'İnteqralın fizikada və təbiətdə tətbiqləri' mövzusunun tədris standartına uyğun deyil.",
-          "D": "Yanlışdır (A = 1/2 F · x²). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -25739,7 +25739,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Riyaziyyat dərsliyindəki 'İnteqralın fizikada və təbiətdə tətbiqləri' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_index": 1
+        "correct_index": 0
       },
       {
         "id": "11-001-0530-11MA30-BL3-C1-002",
@@ -26130,9 +26130,9 @@
           "x_c = / 2 və riyazi münasibətlərin analitik təhlili",
           "x_c = ∫ₐᵇ x dx və riyazi münasibətlərin analitik təhlili"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Doğru cavab: x_c = (∫ₐᵇ x · ρ(x) dx) / (∫ₐᵇ ρ(x) dx). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: x_c = (∫ₐᵇ x · ρ(x) dx) / (∫ₐᵇ ρ(x) dx). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 30: İnteqralın fizikada və təbiətdə tətbiqləri",
@@ -26143,10 +26143,10 @@
           "passport_id": "11-001-0530-11MA30-BL1-C2-008"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "B": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -26159,7 +26159,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Riyaziyyat dərsliyindəki 'İnteqralın fizikada və təbiətdə tətbiqləri' mövzusunu (əsas qayda və həll üsullarını) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 2
       },
       {
         "id": "11-001-0530-11MA30-BL2-C1-009",
@@ -28674,9 +28674,9 @@
           "V_seq = πH²",
           "V_seq = 1/3 πH³"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Doğru cavab: V_seq = πH²(R - H/3). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: V_seq = πH²(R - H/3). Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 33: Kürə və sfera, kürə sektorunun və seqmentinin həcmi",
@@ -28687,10 +28687,10 @@
           "passport_id": "11-001-0633-11MA33-BL1-C2-007"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (V_seq = 2/3 πR²H). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "Yanlışdır (V_seq = πR²H). 'Kürə və sfera, kürə sektorunun və seqmentinin həcmi' mövzusunun tədris standartına uyğun deyil.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -28703,7 +28703,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Riyaziyyat dərsliyindəki 'Kürə və sfera, kürə sektorunun və seqmentinin həcmi' mövzusunu (əsas qayda və həll üsullarını) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 2
       },
       {
         "id": "11-001-0633-11MA33-BL1-C2-008",
@@ -31446,9 +31446,9 @@
           "D = p · q",
           "D = np / q"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: D(X) = n · p · q. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: D(X) = n · p · q. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Riyaziyyat dərsliyi, Mövzu 36: Statistika, paylanma parametrləri və Bernulli düsturu",
@@ -31459,10 +31459,10 @@
           "passport_id": "11-001-0636-11MA36-BL1-C1-011"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -31475,7 +31475,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Riyaziyyat dərsliyindəki 'Statistika, paylanma parametrləri və Bernulli düsturu' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_index": 1
+        "correct_index": 3
       },
       {
         "id": "11-001-0636-11MA36-BL3-C1-012",
@@ -44909,9 +44909,9 @@
           "Elmi lüğətlərdə",
           "Rəsmi-işgüzar üslubda"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: Bədii və natiqlik (publisistik) üslubunda. Dərslik qaydalarına tam uyğundur.', 'distractors': {'0': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '2': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '3': 'Bu variant qaydaya və ya kontekstə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Bədii və natiqlik (publisistik) üslubunda. Dərslik qaydalarına tam uyğundur.', 'distractors': {'0': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '2': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '3': 'Bu variant qaydaya və ya kontekstə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Azərbaycan dili dərsliyi, Mövzu 15: Mürəkkəb sintaktik bütövlər və dövrə",
@@ -44922,10 +44922,10 @@
           "passport_id": "11-002-0315-11AZ15-BL1-C1-007"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "D variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -44938,7 +44938,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl qrammatik qaydaları möhkəmləndirmək üçün 8-ci sinif Azərbaycan dili 8 dərsliyindəki 'Cümlə üzvləri və sintaktik təhlil' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-002-0315-11AZ15-BL2-C2-008",
@@ -47247,9 +47247,9 @@
           "Qafiyəli olması əsasında sözün leksik-semantik mənasının və orfoepik qaydalarının uzlaşması",
           "Birmənalılıq və emosional çalardan uzaq olmaq"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: Birmənalılıq (təkmənalılıq) və emosional çalardan uzaq olmaq. Dərslik qaydalarına tam uyğundur.', 'distractors': {'0': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '1': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '3': 'Bu variant qaydaya və ya kontekstə uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Birmənalılıq (təkmənalılıq) və emosional çalardan uzaq olmaq. Dərslik qaydalarına tam uyğundur.', 'distractors': {'0': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '1': 'Bu variant qaydaya və ya kontekstə uyğun deyil.', '3': 'Bu variant qaydaya və ya kontekstə uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Azərbaycan dili dərsliyi, Mövzu 18: Elmi üslub, terminologiya və mətndə terminlərin rolu",
@@ -47260,10 +47260,10 @@
           "passport_id": "11-002-0318-11AZ18-BL2-C1-003"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şəkilçi, leksik məna və ya sintaktik əlaqə qaydalarına uyğun gəlmir, tipik qarışıqlıqdır.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -47276,7 +47276,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və mətni qavrama bacarığını möhkəmləndirmək üçün 5-ci sinif Azərbaycan dili 5 dərsliyindəki 'Sinonimlər və antonimlər' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_index": 3
+        "correct_index": 1
       },
       {
         "id": "11-002-0318-11AZ18-BL2-C2-004",
@@ -64782,9 +64782,9 @@
           "{}",
           "{3, 4}"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: {3, 4}. Dərslik nəzəriyyəsinə, proqramlaşdırma qaydalarına və alqoritm icrasına tam uyğundur.', 'distractors': {'0': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '1': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '2': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: {3, 4}. Dərslik nəzəriyyəsinə, proqramlaşdırma qaydalarına və alqoritm icrasına tam uyğundur.', 'distractors': {'0': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '1': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '2': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.'}}",
         "sourceContext": "11-ci sinif İnformatika dərsliyi, Mövzu 10: 2.2. Mürəkkəb verilən strukturları: Siyahılar, Korteclər, Çoxluqlar",
@@ -64795,10 +64795,10 @@
           "passport_id": "11-010-0210-11IN10-BL3-C1-007"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır ({1, 2, 5, 6}). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "Yanlışdır ({}). 'Mürəkkəb verilən strukturları: Siyahılar, Korteclər, Çoxluqlar' mövzusunun tədris standartına uyğun deyil.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -64811,7 +64811,7 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 10-cu sinif İnformatika dərsliyindəki 'İnformasiya və informatika: anlayışı, növləri, formaları və xassələri (aktuallıq, tamlıq, dəqiqlik, etibarlılıq)' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-010-0210-11IN10-BL3-C1-008",
@@ -70764,9 +70764,9 @@
           "Daxili, xarici və qarışıq əsasında alqoritmik strukturların və verilənlər bazasının optimallaşdırılması",
           "Sadə, mürəkkəb və xətti üzrə məlumatların rəqəmsal emalı və şəbəkə təhlükəsizliyi protokolları"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: Birin-birə (1:1), Birin-çoxa (1:N) və Çoxun-çoxa (M:N). Dərslik nəzəriyyəsinə, proqramlaşdırma qaydalarına və alqoritm icrasına tam uyğundur.', 'distractors': {'1': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '2': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '3': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Birin-birə (1:1), Birin-çoxa (1:N) və Çoxun-çoxa (M:N). Dərslik nəzəriyyəsinə, proqramlaşdırma qaydalarına və alqoritm icrasına tam uyğundur.', 'distractors': {'1': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '2': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.', '3': 'Bu variant texniki qaydalara və ya alqoritm icrasına uyğun deyil.'}}",
         "sourceContext": "11-ci sinif İnformatika dərsliyi, Mövzu 17: 3.2. Cədvəllər arasında əlaqələr",
@@ -70777,10 +70777,10 @@
           "passport_id": "11-010-0317-11IN17-BL1-C1-001"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
-          "D": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -70793,7 +70793,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün 10-cu sinif İnformatika dərsliyindəki 'Verilənlər bazası (VB) anlayışı, təyinatı və modelləri: iyerarxik, şəbəkə və relyasiya (əlaqəli) modelləri' təməl mövzusunu 10 dəqiqə təkrarlayın."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-010-0317-11IN17-BL2-C1-002",
@@ -152695,9 +152695,9 @@
           "W_p = q · E",
           "W_p = q / φ"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: W_p = q · φ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: W_p = q · φ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 3: 1.3. Bircins elektrik sahəsinin işi. Potensial. Gərginlik",
@@ -152708,10 +152708,10 @@
           "passport_id": "11-005-0103-11FZ03-BL1-C1-015"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (W_p = q · E). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "D": "Yanlışdır (W_p = q / φ). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -152724,7 +152724,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Bircins elektrik sahəsinin işi. Potensial. Gərginlik' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 0
       }
     ],
     "1.4. Kondensator. Elektrik tutumu": [
@@ -153034,9 +153034,9 @@
           "W = q² · C / 2 üzrə zərrəciklərin kvant və mexaniki hərəkət qanunauyğunluqlarının öyrənilməsi",
           "W = C · U² və fiziki sahələrin qarşılıqlı təsiri zamanı enerjinin saxlanması qanunları"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: W = (q · U) / 2 = (C · U²) / 2 = q² / (2C). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: W = (q · U) / 2 = (C · U²) / 2 = q² / (2C). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 4: 1.4. Kondensator. Elektrik tutumu",
@@ -153047,10 +153047,10 @@
           "passport_id": "11-005-0104-11FZ04-BL1-C1-006"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (W = q · U üzrə zərrəciklərin kvant və mexaniki hərəkət qanunauyğunluqlarının öyrənilməsi). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (W = C · U² və fiziki sahələrin qarşılıqlı təsiri zamanı enerjinin saxlanması qanunları). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -153063,7 +153063,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Kondensator. Elektrik tutumu' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 0
       },
       {
         "id": "11-005-0104-11FZ04-BL4-C2-007",
@@ -163437,9 +163437,9 @@
           "k = / F",
           "k = F · M · n"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Doğru cavab: k = (1 / F) · (M / n). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: k = (1 / F) · (M / n). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 16: 2.6. Elektrolitlərdə elektrik cərəyanı. Faradeyin elektroliz qanunları",
@@ -163450,10 +163450,10 @@
           "passport_id": "11-005-0316-11FZ16-BL1-C2-007"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (k = F /). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "Yanlışdır (k = / F). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -163466,7 +163466,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Elektrolitlərdə elektrik cərəyanı. Faradeyin elektroliz qanunları' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 1
       },
       {
         "id": "11-005-0316-11FZ16-BL1-C1-008",
@@ -172297,9 +172297,9 @@
           "I_max = U_max · √ = U_max / ρ",
           "I_max = U_max · √"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: I_max = U_max · √(C / L) = U_max / ρ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: I_max = U_max · √(C / L) = U_max / ρ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 26: Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)",
@@ -172310,10 +172310,10 @@
           "passport_id": "11-005-0526-11FZ26-BL1-C3-014"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (I_max = U_max /). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "C": "Yanlışdır (I_max = U_max · √ = U_max / ρ). Bu variant mövzunun tədris standartına uyğun deyil.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -172326,7 +172326,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Sərbəst elektromaqnit rəqsləri və Rəqs konturu (Tomson düsturu)' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-005-0526-11FZ26-BL1-C1-015",
@@ -173533,9 +173533,9 @@
           "Z = R · X_L · X_C və fiziki sahələrin qarşılıqlı təsiri zamanı enerjinin saxlanması qanunları",
           "Z = √[ R² + X_L² + X_C² ] və elektromaqnit dalğalarının mühitdə yayılma xüsusiyyətlərinin riyazi təsviri"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: Z = √[ R² + (X_L - X_C)² ] = √[ R² + )² ]. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Z = √[ R² + (X_L - X_C)² ] = √[ R² + )² ]. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 28: Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti",
@@ -173546,10 +173546,10 @@
           "passport_id": "11-005-0528-11FZ28-BL1-C2-006"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Z = R · X_L · X_C və fiziki sahələrin qarşılıqlı təsiri zamanı enerjinin saxlanması qanunları). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "D": "Yanlışdır (Z = √[ R² + X_L² + X_C² ] və elektromaqnit dalğalarının mühitdə yayılma xüsusiyyətlərinin riyazi təsviri). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -173562,7 +173562,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Dəyişən cərəyan dövrəsində aktiv, induktiv və tutum müqaviməti' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 0
       },
       {
         "id": "11-005-0528-11FZ28-BL1-C1-007",
@@ -179175,9 +179175,9 @@
           "Δx = λ /",
           "Δx = · λ (D)"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Doğru cavab: Δx = (L / d) · λ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Δx = (L / d) · λ. Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 34: İşığın interferensiyası və Koherent dalğalar",
@@ -179188,10 +179188,10 @@
           "passport_id": "11-005-0634-11FZ34-BL1-C2-015"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Δx = · λ). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Δx = λ /). Fiziki kəmiyyətin tərifi və ya qanunun tələbi ödənilmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -179204,7 +179204,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'İşığın interferensiyası və Koherent dalğalar' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 3
       }
     ],
     "İşığın difraksiyası və Difraksiya qəfəsi": [
@@ -181127,9 +181127,9 @@
           "Δt = Δt0 · v / c",
           "Δt = Δt0 / √"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Doğru cavab: Δt = Δt0 / √(1 - v² / c²). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: Δt = Δt0 / √(1 - v² / c²). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'0': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Fizika dərsliyi, Mövzu 37: Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi",
@@ -181140,10 +181140,10 @@
           "passport_id": "11-005-0737-11FZ37-BL1-C1-004"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Δt = Δt0 · √). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Δt = Δt0 / √). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -181156,8 +181156,8 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Fizika dərsliyindəki 'Eynşteynin xüsusi nisbilik nəzəriyyəsinin postulatları, kütlə və enerjinin əlaqəsi' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_letter": "C",
-        "correct_index": 2
+        "correct_letter": "A",
+        "correct_index": 0
       },
       {
         "id": "11-005-0737-11FZ37-BL1-C1-005",
@@ -193730,9 +193730,9 @@
           "C6H5OH",
           "CH2-CH-CH2"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Doğru cavab: CH2(OH)-CH(OH)-CH2(OH). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "izah": "{'correct': 'Doğru cavab: CH2(OH)-CH(OH)-CH2(OH). Dərslik qayda və qanunlarına tam uyğundur.', 'distractors': {'1': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '2': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.', '3': 'Bu variant elmi tərifə, düstura və ya reaksiyaya uyğun deyil.'}}",
         "sourceContext": "11-ci sinif Kimya dərsliyi, Mövzu 8: 1.2.2. Qliserin",
@@ -193743,10 +193743,10 @@
           "passport_id": "11-006-0208-11KM08-BL1-C1-001"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (C3H7OH). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "B": "Yanlışdır (CH2-CH2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -193759,7 +193759,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Kimya dərsliyindəki 'Qliserin' mövzusunu (əsas elmi qanun və düsturları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 2
       },
       {
         "id": "11-006-0208-11KM08-BL1-C1-002",
@@ -226297,9 +226297,9 @@
           "Müasir tarixdə ilk dəfə olaraq bir Asiya dövləti böyük bir Avropa imperiyasını hərbi müharibədə darmadağın etdi",
           "Rusiya dövləti tamamilə dağıldı və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Portsmut sülhü ilə Yaponiya Cənubi Mançuriyada, Port-Arturda və Koreyada ağalığını təmin etdi; 1910-cu ildə Koreyanı rəsmən ilhaq etdi.', 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Portsmut sülhü ilə Yaponiya Cənubi Mançuriyada, Port-Arturda və Koreyada ağalığını təmin etdi; 1910-cu ildə Koreyanı rəsmən ilhaq etdi.', 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 5: 5. Hindistan, Çin və Yaponiya",
@@ -226310,10 +226310,10 @@
           "passport_id": "11-004-0105-11UT05-BL2-C2-011"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (ABŞ və Yaponiya arasında dərhal müharibə başladı və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Rusiya dövləti tamamilə dağıldı və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -226326,7 +226326,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Hindistan, Çin və Yaponiya' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 2
       },
       {
         "id": "11-004-0105-11UT05-BL1-C1-012",
@@ -229567,9 +229567,9 @@
           "Avstriyada alman dilinin qadağan olunması və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar",
           "Avstriyanın respublika elan edilməsinin qadağası və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Dərslik: Sen-Jermen müqaviləsi Avstriya-Macarıstanı parçalayaraq Avstriyanı kiçik bir respublikaya çevirdi və onun Almaniya ilə birləşməsini yasaqladı.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sen-Jermen müqaviləsi Avstriya-Macarıstanı parçalayaraq Avstriyanı kiçik bir respublikaya çevirdi və onun Almaniya ilə birləşməsini yasaqladı.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 9: 9. Versal-Vaşinqton sistemi",
@@ -229580,10 +229580,10 @@
           "passport_id": "11-004-0209-11UT09-BL1-C1-009"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Avstriyanın dəniz ticarəti ilə məşğul olmasının qadağası üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "C": "Yanlışdır (Avstriyada alman dilinin qadağan olunması və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -229596,7 +229596,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Versal-Vaşinqton sistemi' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 0
       },
       {
         "id": "11-004-0209-11UT09-BL2-C2-010",
@@ -233437,9 +233437,9 @@
           "Silahsızlaşdırılmış Reyn zonasına alman qoşunlarının daxil olması",
           "Avstriyanın bombalanması və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Fransa və Britaniyanın heç bir hərbi cavab verməməsi Hitlerin cəzasızlıq hissini artırdı və yeni təcavüzkar planlarına təkan verdi.', 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Fransa və Britaniyanın heç bir hərbi cavab verməməsi Hitlerin cəzasızlıq hissini artırdı və yeni təcavüzkar planlarına təkan verdi.', 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 14: 14. Dövlətlərarası münasibətlər",
@@ -233450,10 +233450,10 @@
           "passport_id": "11-004-0314-11UT14-BL2-C2-002"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Polşanın işğal olunması üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Avstriyanın bombalanması və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -233466,7 +233466,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Dövlətlərarası münasibətlər' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 2
       },
       {
         "id": "11-004-0314-11UT14-BL2-C2-003",
@@ -235177,9 +235177,9 @@
           "Lev Tolstoy və Fyodor Dostoyevski və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti",
           "Vilyam Şekspir və Corc Bayron və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': \"Dərslik: 'İtirilmiş nəsil' yazıçıları müharibənin saxta vətənpərvərlik şüarlarını ifşa edərək bəşəri sülh və humanizm ideyalarını müdafiə etdilər.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: 'İtirilmiş nəsil' yazıçıları müharibənin saxta vətənpərvərlik şüarlarını ifşa edərək bəşəri sülh və humanizm ideyalarını müdafiə etdilər.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 16: 16. Mədəniyyət",
@@ -235190,10 +235190,10 @@
           "passport_id": "11-004-0316-11UT16-BL2-C2-003"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "Yanlışdır (Lev Tolstoy və Fyodor Dostoyevski və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "Yanlışdır (Vilyam Şekspir və Corc Bayron və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -235206,7 +235206,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Mədəniyyət' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-004-0316-11UT16-BL1-C1-004",
@@ -235907,9 +235907,9 @@
           "Bütün Avropa ölkələrini ABŞ-a birləşdirmək üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu",
           "SSRİ ilə vahid ticarət ittifaqı qurmaq üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Dərslik: Trumen doktrinası ABŞ-ın dünyada kommunizmə qarşı qlobal liderlik öhdəliyi götürdüyünü və Soyuq müharibənin rəsmi doktrinasını elan etdi.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Trumen doktrinası ABŞ-ın dünyada kommunizmə qarşı qlobal liderlik öhdəliyi götürdüyünü və Soyuq müharibənin rəsmi doktrinasını elan etdi.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 17: 17. Amerika Birləşmiş Ştatları",
@@ -235920,10 +235920,10 @@
           "passport_id": "11-004-0317-11UT17-BL2-C2-001"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Bütün Avropa ölkələrini ABŞ-a birləşdirmək üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "Yanlışdır (SSRİ ilə vahid ticarət ittifaqı qurmaq üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -235936,7 +235936,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Amerika Birləşmiş Ştatları' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 0
       },
       {
         "id": "11-004-0317-11UT17-BL2-C2-002",
@@ -236579,9 +236579,9 @@
           "ABŞ-ın bütün xarici ticarətini dayandırması əsasında dünya dövlətlərinin iqtisadi və hərbi-siyasi inteqrasiya prosesləri",
           "Kütləvi hiperinflyasiya və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': \"Dərslik: 'Yeni iqtisadiyyat' və Silikon Vadisinin yüksəlişi Klinton dövründə ABŞ-a uzunmüddətli sabit iqtisadi rifah gətirdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: 'Yeni iqtisadiyyat' və Silikon Vadisinin yüksəlişi Klinton dövründə ABŞ-a uzunmüddətli sabit iqtisadi rifah gətirdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 17: 17. Amerika Birləşmiş Ştatları",
@@ -236592,10 +236592,10 @@
           "passport_id": "11-004-0317-11UT17-BL2-C2-013"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Ağır sənayenin iflası və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Kütləvi hiperinflyasiya və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -236608,7 +236608,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Amerika Birləşmiş Ştatları' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 0
       },
       {
         "id": "11-004-0317-11UT17-BL1-C1-014",
@@ -236861,9 +236861,9 @@
           "Bütün seçkili orqanları buraxdı və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar",
           "Dördüncü Respublikanı ləğv edərək güclü prezident hakimiyyətinə əsaslanan Beşinci Respublikanı qurdu"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: 1958-ci il Konstitusiyası prezidentə geniş səlahiyyətlər verdi və de Qoll 1962-ci ildə Evian sazişləri ilə Əlcəzairin müstəqilliyini tanıdı.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: 1958-ci il Konstitusiyası prezidentə geniş səlahiyyətlər verdi və de Qoll 1962-ci ildə Evian sazişləri ilə Əlcəzairin müstəqilliyini tanıdı.', 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 18: 18. Böyük Britaniya, Fransa və Almaniya",
@@ -236874,10 +236874,10 @@
           "passport_id": "11-004-0318-11UT18-BL2-C2-003"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Fransada monarxiyanı bərpa etdi üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Bütün seçkili orqanları buraxdı və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -236890,7 +236890,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Böyük Britaniya, Fransa və Almaniya' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 3
       },
       {
         "id": "11-004-0318-11UT18-BL2-C2-004",
@@ -236973,9 +236973,9 @@
           "Bütün zavodların dövlətləşdirilməsi və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti",
           "Hərbi xərclərin sıfırlanması əsasında dünya dövlətlərinin iqtisadi və hərbi-siyasi inteqrasiya prosesləri"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': \"Dərslik: 'Dəmir ledi' Tetçer neo-liberal islahatlarla Britaniya iqtisadiyyatını durğunluqdan çıxardı və qlobal maliyyə mərkəzi statusunu bərpa etdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: 'Dəmir ledi' Tetçer neo-liberal islahatlarla Britaniya iqtisadiyyatını durğunluqdan çıxardı və qlobal maliyyə mərkəzi statusunu bərpa etdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 18: 18. Böyük Britaniya, Fransa və Almaniya",
@@ -236986,10 +236986,10 @@
           "passport_id": "11-004-0318-11UT18-BL2-C2-005"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "Yanlışdır (Bütün zavodların dövlətləşdirilməsi və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "Yanlışdır (Hərbi xərclərin sıfırlanması əsasında dünya dövlətlərinin iqtisadi və hərbi-siyasi inteqrasiya prosesləri). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -237002,7 +237002,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Böyük Britaniya, Fransa və Almaniya' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-004-0318-11UT18-BL2-C2-006",
@@ -238601,9 +238601,9 @@
           "İxracyönümlü sərbəst bazar iqtisadiyyatına keçid, xarici ticarətin liberallaşdırılması, telekommunikasiya və turizmin sürətli inkişafı",
           "Bütün özəl mülkiyyətin dövlətləşdirilməsi üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': \"Dərslik: Turqut Özal '24 Yanvar qərarları' və Anavətən Partiyası (ANAP) ilə Türkiyəni qapalı iqtisadiyyatdan qlobal rəqabətədavamlı sənaye-ixracat ölkəsinə çevirdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: Turqut Özal '24 Yanvar qərarları' və Anavətən Partiyası (ANAP) ilə Türkiyəni qapalı iqtisadiyyatdan qlobal rəqabətədavamlı sənaye-ixracat ölkəsinə çevirdi.\", 'distractors': {'0': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 20: 20. Türkiyə və İran",
@@ -238614,10 +238614,10 @@
           "passport_id": "11-004-0420-11UT20-BL2-C2-004"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Kənd təsərrüfatının ləğvi və beynəlxalq münasibətlər sistemində yaranmış yeni geosiyasi qüvvələr nisbəti). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Bütün özəl mülkiyyətin dövlətləşdirilməsi üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -238630,7 +238630,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Türkiyə və İran' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 2
       },
       {
         "id": "11-004-0420-11UT20-BL2-C2-005",
@@ -241801,9 +241801,9 @@
           "Aya ilk insanın eniş etməsi və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar",
           "Tarixdə ilk süni Yerin peykinin orbitə buraxılması"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': \"Dərslik: Sputnik-1-in kosmosa çıxarılması 'Kosmik yarış'ın başlanğıcı oldu və texnoloji tərəqqiyə misilsiz təkan verdi.\", 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: Sputnik-1-in kosmosa çıxarılması 'Kosmik yarış'ın başlanğıcı oldu və texnoloji tərəqqiyə misilsiz təkan verdi.\", 'distractors': {'1': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '2': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.', '3': 'Dərslikdəki tarixi faktlarla uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ümumi tarix dərsliyi, Mövzu 24: 24. Mədəniyyət",
@@ -241814,10 +241814,10 @@
           "passport_id": "11-004-0424-11UT24-BL1-C1-001"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Marsa aparat göndərilməsi üzrə diplomatik danışıqların gedişatı və qlobal sülh müqavilələrinin qəbulu). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Aya ilk insanın eniş etməsi və ictimai-siyasi təbəqələşmənin dərinləşməsi ilə baş verən inqilabi hərəkatlar). Hadisənin xronoloji dövrü və ya tarixi şərtləri fərqlidir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -241830,7 +241830,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ümumi tarix dərsliyindəki 'Mədəniyyət' mövzusunu (əsas tarixi hadisələri və prosesləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 3
       },
       {
         "id": "11-004-0424-11UT24-BL1-C1-002",
@@ -243543,9 +243543,9 @@
           "Rüstəm bəy — ruspərəstliyi, Mirzə Məhəmmədəli — iranpərəstliyi , Səməd Vahid — osmanlıpərəstliyi",
           "İngilispərəstlik, fransızpərəstlik və almanpərəstlik və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Üç qardaşın fərqli xarici dillərdə danışması və milli kökdən uzaqlaşması Azərbaycan xalqının süni şəkildə ideoloji təfriqəyə salınmasını simvolizə edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Üç qardaşın fərqli xarici dillərdə danışması və milli kökdən uzaqlaşması Azərbaycan xalqının süni şəkildə ideoloji təfriqəyə salınmasını simvolizə edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 2: 2. Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası",
@@ -243556,10 +243556,10 @@
           "passport_id": "11-009-0102-11ED02-BL2-C2-002"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Müxtəlif sənət növlərini üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (İngilispərəstlik, fransızpərəstlik və almanpərəstlik və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -243572,7 +243572,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 2
       },
       {
         "id": "11-009-0102-11ED02-BL2-C2-003",
@@ -243935,9 +243935,9 @@
           "Kənddən şəhərə köçməyin və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili",
           "Qocalıq xəstəliyinin və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Dərslik: Əsərdə Ana — bütöv Azərbaycanın, onun doğma dilinin və tarixi köklərinin canlı bədii təcəssümüdür.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Əsərdə Ana — bütöv Azərbaycanın, onun doğma dilinin və tarixi köklərinin canlı bədii təcəssümüdür.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 2: 2. Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası",
@@ -243948,10 +243948,10 @@
           "passport_id": "11-009-0102-11ED02-BL4-C3-009"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Maddi yoxsulluğun əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Qocalıq xəstəliyinin və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -243964,7 +243964,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Cəlil Məmmədquluzadə. 'Anamın kitabı' tragikomediyası' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 2
+        "correct_index": 1
       },
       {
         "id": "11-009-0102-11ED02-BL4-C3-010",
@@ -245057,9 +245057,9 @@
           "Heç nə deməmişdir",
           "Mən istəyirdim ki, millətimin ucalığını görüm... Şeirlərim xalqıma ərməğandır"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Sabir bütün ömrünü millətinin azadlığı və oyanışı yolunda şam kimi əritmiş böyük fədaidir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sabir bütün ömrünü millətinin azadlığı və oyanışı yolunda şam kimi əritmiş böyük fədaidir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 3: 3. Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
@@ -245070,10 +245070,10 @@
           "passport_id": "11-009-0103-11ED03-BL1-C1-014"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Poeziyadan peşman olduğunu bildirmişdir). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (Heç nə deməmişdir). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -245086,7 +245086,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 3
       },
       {
         "id": "11-009-0103-11ED03-BL4-C1-015",
@@ -245113,9 +245113,9 @@
           "Klassik poeziyanı məhv etmişdir və ədəbi obrazın bədii-fəlsəfi təhlili",
           "Ədəbi əsərdə yalnız qəzəlxan kimi qalmışdır motivlərinin və obraz xüsusiyyətlərinin təsviri və ədəbi obrazın bədii-fəlsəfi təhlili"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Dərslik: Sabir poeziyada inqilabi dönüş yaratmış əbədiyaşar sənətkardır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sabir poeziyada inqilabi dönüş yaratmış əbədiyaşar sənətkardır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 3: 3. Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu",
@@ -245126,10 +245126,10 @@
           "passport_id": "11-009-0103-11ED03-BL4-C1-015"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Ədəbiyyata heç bir təsiri olmamışdır və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Ədəbi əsərdə yalnız qəzəlxan kimi qalmışdır motivlərinin və obraz xüsusiyyətlərinin təsviri və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -245142,7 +245142,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mirzə Ələkbər Sabir. Həyatı və yaradıcılıq yolu' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 2
+        "correct_index": 0
       }
     ],
     "4. Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri": [
@@ -245731,9 +245731,9 @@
           "Dəfn mərasimi üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması",
           "Ailə toyu əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Dərslik: Sabir sözdə ağlayıb əməldə heç bir fayda verməyən riyakar ağlaşmaları tənqid edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sabir sözdə ağlayıb əməldə heç bir fayda verməyən riyakar ağlaşmaları tənqid edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 4: 4. Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri",
@@ -245744,10 +245744,10 @@
           "passport_id": "11-009-0104-11ED04-BL2-C2-011"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Qədim dastan və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Ailə toyu əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -245760,7 +245760,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 1
       },
       {
         "id": "11-009-0104-11ED04-BL2-C2-012",
@@ -245843,9 +245843,9 @@
           "Ədəbi əsərdə yalnız əyləndirici və yüngül zarafat motivlərinin və obraz xüsusiyyətlərinin təsviri",
           "Göz yaşları içində gülüş' — xalqın faciəsinə yanan qəlbin kədərli"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Sabir gülüşü təmizləyici və oyadıcı qüvvədir; o, oxucunu güldürərkən dərindən düşündürür və ağladır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sabir gülüşü təmizləyici və oyadıcı qüvvədir; o, oxucunu güldürərkən dərindən düşündürür və ağladır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 4: 4. Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri",
@@ -245856,10 +245856,10 @@
           "passport_id": "11-009-0104-11ED04-BL4-C3-013"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (prosesin gedişatına təsir göstərən əlavə amilləri məhdudlaşdırmaq). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "Yanlışdır (Mənasız qəhqəhə). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -245872,7 +245872,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mirzə Ələkbər Sabir. 'Hophopnamə' və satirik şeirləri' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 2
+        "correct_index": 3
       },
       {
         "id": "11-009-0104-11ED04-BL1-C1-014",
@@ -247639,9 +247639,9 @@
           "bir dövrün siyasətini əks etdirməsi üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması sahəsi üzrə əsas xüsusiyyətlərin və proseslərin tətbiqi",
           "Müharibələrə, beynəlxalq təcavüzkarlığa, qan tökülməsinə qarşı barışmaz bəşəri etiraz manifesti olması"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': \"Dərslik: 'İblis' əbədi insanlıq manifestidir və dünya durduqca aktuallığını itirməyəcəkdir.\", 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: 'İblis' əbədi insanlıq manifestidir və dünya durduqca aktuallığını itirməyəcəkdir.\", 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 6: 6. Hüseyn Cavid. 'İblis' mənzum faciəsi",
@@ -247652,10 +247652,10 @@
           "passport_id": "11-009-0106-11ED06-BL4-C1-015"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Tarixi coğrafiya dərsliyi olması və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (bir dövrün siyasətini əks etdirməsi üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması sahəsi üzrə əsas xüsusiyyətlərin və proseslərin tətbiqi). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -247668,7 +247668,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Hüseyn Cavid. 'İblis' mənzum faciəsi' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 0
+        "correct_index": 3
       }
     ],
     "7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması": [
@@ -247753,9 +247753,9 @@
           "Universitetdə mühazirə oxuması üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması",
           "Könüllü olaraq Türkiyəyə gedərək 'Qafqaz könüllü dəstəsi' tərkibində Osmanlı ordusunda döyüşməsi"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Əhməd Cavad türk qardaşlarının köməyinə tələsmiş, Balkan cəbhəsində qəhrəmancasına vuruşmuşdur.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Əhməd Cavad türk qardaşlarının köməyinə tələsmiş, Balkan cəbhəsində qəhrəmancasına vuruşmuşdur.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 7: 7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
@@ -247766,10 +247766,10 @@
           "passport_id": "11-009-0207-11ED07-BL1-C1-002"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Səfir təyin olunması və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (Universitetdə mühazirə oxuması üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -247782,7 +247782,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Əhməd Cavad. Həyatı və 'Səsli qız' poeması' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-009-0207-11ED07-BL1-C1-003",
@@ -248369,9 +248369,9 @@
           "Fateh əvvəlcə onun səsinin sehrinə düşüb qürurlanır",
           "Fateh Saranı zindana atır əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Sara sənətini və gözəlliyini vətənin qisası üçün silaha çevirərək düşməni qəflət içində məhv edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sara sənətini və gözəlliyini vətənin qisası üçün silaha çevirərək düşməni qəflət içində məhv edir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 7: 7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
@@ -248382,10 +248382,10 @@
           "passport_id": "11-009-0207-11ED07-BL2-C2-013"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Fateh heç nə eşitmir və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "Yanlışdır (Fateh dərhal qaçır əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -248398,7 +248398,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Əhməd Cavad. Həyatı və 'Səsli qız' poeması' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 2
       },
       {
         "id": "11-009-0207-11ED07-BL1-C1-014",
@@ -248481,9 +248481,9 @@
           "Sadə tərcüməçidir və ədəbi obrazın bədii-fəlsəfi təhlili",
           "Ədəbi əsərdə yalnız tarixi dərslik müəllifidir motivlərinin və obraz xüsusiyyətlərinin təsviri və ədəbi obrazın bədii-fəlsəfi təhlili"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Dərslik: Əhməd Cavad adı müstəqil Azərbaycanın hər bir vətəndaşının qəlbində Dövlət Himnimizlə bərabər yaşayır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Əhməd Cavad adı müstəqil Azərbaycanın hər bir vətəndaşının qəlbində Dövlət Himnimizlə bərabər yaşayır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 7: 7. Əhməd Cavad. Həyatı və 'Səsli qız' poeması",
@@ -248494,10 +248494,10 @@
           "passport_id": "11-009-0207-11ED07-BL4-C1-015"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Ədəbi əsərdə yalnız uşaq şairidir motivlərinin və obraz xüsusiyyətlərinin təsviri və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (Sadə tərcüməçidir və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -248510,7 +248510,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Əhməd Cavad. Həyatı və 'Səsli qız' poeması' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 3
+        "correct_index": 0
       }
     ],
     "8. Məhəmmədhüseyn Şəhriyar. 'Türkün dili' və lirikası": [
@@ -249955,9 +249955,9 @@
           "Dönüş' pyesi və 'Almaz' filminin çəkilişləri üzərində",
           "Solğun çiçəklər və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Ədib gərgin yaradıcılıq işi və ürək çatışmazlığı nəticəsində qəflətən vəfat etmişdir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Ədib gərgin yaradıcılıq işi və ürək çatışmazlığı nəticəsində qəflətən vəfat etmişdir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 9: 9. Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı",
@@ -249968,10 +249968,10 @@
           "passport_id": "11-009-0209-11ED09-BL1-C1-011"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Oqtay Eloğlu əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Solğun çiçəklər və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -249984,7 +249984,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 2
       },
       {
         "id": "11-009-0209-11ED09-BL2-C2-012",
@@ -250123,9 +250123,9 @@
           "Ədəbi əsərdə yalnız kafedə verilən ad motivlərinin və obraz xüsusiyyətlərinin təsviri",
           "Mülkədar rütbəsi əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': \"Dərslik: Oqtay öz soyadından imtina edib 'Eloğlu' adını qəbul etməklə taleyini xalqa bağladığını nümayiş etdirir.\", 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': \"Dərslik: Oqtay öz soyadından imtina edib 'Eloğlu' adını qəbul etməklə taleyini xalqa bağladığını nümayiş etdirir.\", 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 9: 9. Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı",
@@ -250136,10 +250136,10 @@
           "passport_id": "11-009-0209-11ED09-BL2-C2-014"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Təsadüfi soyad əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "Yanlışdır (Mülkədar rütbəsi əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -250152,7 +250152,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Cəfər Cabbarlı. Həyatı və 'Oqtay Eloğlu' dramı' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 1
       },
       {
         "id": "11-009-0209-11ED09-BL4-C1-015",
@@ -251303,9 +251303,9 @@
           "Şəngülüm, Şüngülüm, Məngülüm",
           "Anamın kitabı"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Müşfiqin uşaq poemaları və nağılları balaca oxucularda dostluq, sədaqət və xeyirxahlıq hissləri formalaşdırır.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Müşfiqin uşaq poemaları və nağılları balaca oxucularda dostluq, sədaqət və xeyirxahlıq hissləri formalaşdırır.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 11: 11. Mikayıl Müşfiq. Həyatı və romantik lirikası",
@@ -251316,10 +251316,10 @@
           "passport_id": "11-009-0211-11ED11-BL1-C1-005"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Səsli qız). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Anamın kitabı). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -251332,7 +251332,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mikayıl Müşfiq. Həyatı və romantik lirikası' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 2
       },
       {
         "id": "11-009-0211-11ED11-BL1-C1-006",
@@ -252369,9 +252369,9 @@
           "Fəlsəfə lüğəti və ədəbi obrazın bədii-fəlsəfi təhlili",
           "Ədəbiyyatşünaslığın əsasları' dərsliyi"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Bu dərslik ədəbiyyat nəzəriyyəsi sahəsində ən mükəmməl milli elmi vəsaitlərdən biridir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Bu dərslik ədəbiyyat nəzəriyyəsi sahəsində ən mükəmməl milli elmi vəsaitlərdən biridir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 12: 12. Mehdi Hüseyn və Mir Cəlal nəsri",
@@ -252382,10 +252382,10 @@
           "passport_id": "11-009-0212-11ED12-BL1-C1-009"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Pedaqogika və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (Fəlsəfə lüğəti və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -252398,7 +252398,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Mehdi Hüseyn və Mir Cəlal nəsri' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-009-0212-11ED12-BL1-C1-010",
@@ -253337,9 +253337,9 @@
           "İlyas Əfəndiyevin 'Söyüdlü arx' povesti, Əli Vəliyevin 'Gülşən' povesti, Mir Cəlalın hekayələri",
           "Anamın kitabı əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Müharibədən qayıdan əlillərin, dul qadınların və yetimlərin dinc quruculuq həyatına qayıtması bu əsərlərin mərkəzində dayanırdı.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Müharibədən qayıdan əlillərin, dul qadınların və yetimlərin dinc quruculuq həyatına qayıtması bu əsərlərin mərkəzində dayanırdı.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 13: 13. İkinci Dünya müharibəsi dövrü ədəbiyyatı",
@@ -253350,10 +253350,10 @@
           "passport_id": "11-009-0313-11ED13-BL1-C1-011"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Oqtay Eloğlu əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Anamın kitabı əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -253366,7 +253366,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İkinci Dünya müharibəsi dövrü ədəbiyyatı' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 2
       },
       {
         "id": "11-009-0313-11ED13-BL2-C2-012",
@@ -253561,9 +253561,9 @@
           "O, sənətin xalqın taleyi ilə ən çətin anlarda bütövləşdiyini, vətənpərvərliyin ən uca zirvəyə qalxdığını sübut edən qəhrəmanlıq salnaməsidir",
           "Heç bir dəyərli əsər yaranmamışdır və ədəbi obrazın bədii-fəlsəfi təhlili"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Müharibə dövründə yaranmış şeir və nəsr inciləri milli ədəbiyyatımızın qızıl fonduna daxildir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Müharibə dövründə yaranmış şeir və nəsr inciləri milli ədəbiyyatımızın qızıl fonduna daxildir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 13: 13. İkinci Dünya müharibəsi dövrü ədəbiyyatı",
@@ -253574,10 +253574,10 @@
           "passport_id": "11-009-0313-11ED13-BL4-C1-015"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Ədəbiyyatın tənəzzül dövrüdür və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Heç bir dəyərli əsər yaranmamışdır və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -253590,7 +253590,7 @@
           "remedial_duration_mins": 20,
           "parent_action_tip": "Övladınızın müqayisəli ədəbi təhlil və analiz bacarığını inkişaf etdirməsi üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İkinci Dünya müharibəsi dövrü ədəbiyyatı' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın."
         },
-        "correct_index": 0
+        "correct_index": 2
       }
     ],
     "14. İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı": [
@@ -254179,9 +254179,9 @@
           "İnqilabçı qadınlar kimi üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması",
           "Salatın xanım — feodal ənənələrinə tabe olan"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Əsərdə qadınların məişət asılılığı və hüquqsuzluğu dərin psixologizmlə təsvir edilir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Əsərdə qadınların məişət asılılığı və hüquqsuzluğu dərin psixologizmlə təsvir edilir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 14: 14. İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı",
@@ -254192,10 +254192,10 @@
           "passport_id": "11-009-0314-11ED14-BL2-C2-011"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Xarici qonaqlar kimi əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "Yanlışdır (İnqilabçı qadınlar kimi üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -254208,7 +254208,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İsmayıl Şıxlı. Həyatı və 'Dəli Kür' romanı' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 3
       },
       {
         "id": "11-009-0314-11ED14-BL1-C1-012",
@@ -254685,9 +254685,9 @@
           "Çar canişinliyinin Qarabağ xanlığının nüfuzlu varisini Dağıstan zadəganı ilə evləndirərək nəzarətdə saxlamaq siyasəti ilə",
           "Şuşada məktəb açmaq üçün və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Knyaz Xasay ziyalı və alicənab zabit olsa da, Şuşa mühitinə yad qalır və sonralar Natəvandan ayrılaraq Tiflisə qayıdır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Knyaz Xasay ziyalı və alicənab zabit olsa da, Şuşa mühitinə yad qalır və sonralar Natəvandan ayrılaraq Tiflisə qayıdır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 15: 15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
@@ -254698,10 +254698,10 @@
           "passport_id": "11-009-0315-11ED15-BL2-C2-005"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Ticarət müqaviləsi bağlamaq üçün əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (Şuşada məktəb açmaq üçün və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -254714,7 +254714,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 2
       },
       {
         "id": "11-009-0315-11ED15-BL2-C2-006",
@@ -255077,9 +255077,9 @@
           "Qorxaqlıq və acizlik və ədəbi obrazın bədii-fəlsəfi təhlili",
           "Qisasçılıq və ədəbi obrazın bədii-fəlsəfi təhlili"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Dərslik: İlyas Əfəndiyevin qadın obrazları Azərbaycan ədəbiyyatında ən uca və təmiz mənəviyyat timsalıdır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: İlyas Əfəndiyevin qadın obrazları Azərbaycan ədəbiyyatında ən uca və təmiz mənəviyyat timsalıdır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 15: 15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
@@ -255090,10 +255090,10 @@
           "passport_id": "11-009-0315-11ED15-BL2-C2-012"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "Yanlışdır (Qorxaqlıq və acizlik və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "Yanlışdır (Qisasçılıq və ədəbi obrazın bədii-fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -255106,7 +255106,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-009-0315-11ED15-BL1-C1-013",
@@ -255189,9 +255189,9 @@
           "Şuşanı tərk edin üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması",
           "Mən ömrümü xalqıma, doğma Şuşama bağışladım... Qoy gələcək nəsillər bu torpağı göz bəbəyi kimi qorusunlar!"
         ],
-        "answer": "C",
-        "correctAnswer": 2,
-        "correct_answer": "C",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Natəvan obrazı xalqa xidmətin və vətən sevgisinin əbədi simvolu kimi yadda qalır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Natəvan obrazı xalqa xidmətin və vətən sevgisinin əbədi simvolu kimi yadda qalır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 15: 15. İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi",
@@ -255202,10 +255202,10 @@
           "passport_id": "11-009-0315-11ED15-BL2-C2-014"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Mən peşmanam əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "Yanlışdır (Məni unudun və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -255218,7 +255218,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'İlyas Əfəndiyev. Həyatı və 'Xurşidbanu Natəvan' pyesi' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 2
+        "correct_index": 3
       },
       {
         "id": "11-009-0315-11ED15-BL4-C1-015",
@@ -255807,9 +255807,9 @@
           "Araz niyə axır? və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi",
           "Balıqlar haradadır? üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması"
         ],
-        "answer": "D",
-        "correctAnswer": 3,
-        "correct_answer": "D",
+        "answer": "A",
+        "correctAnswer": 0,
+        "correct_answer": "A",
         "explanation": "{'correct': 'Dərslik: Şair Arazı təbiət hadisəsi kimi deyil, xalqın göz yaşlarından yaranmış dərd çayı kimi mənalandırır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Şair Arazı təbiət hadisəsi kimi deyil, xalqın göz yaşlarından yaranmış dərd çayı kimi mənalandırır.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 16: 16. Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması",
@@ -255820,10 +255820,10 @@
           "passport_id": "11-009-0316-11ED16-BL2-C2-010"
         },
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "B": "Yanlışdır (Dəniz nə qədər uzaqdır? və bədii əsərin ideya-məzmun xüsusiyyətləri ilə xarakterlərin fəlsəfi təhlili). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (Araz niyə axır? və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -255836,7 +255836,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 3
+        "correct_index": 0
       },
       {
         "id": "11-009-0316-11ED16-BL2-C2-011",
@@ -255975,9 +255975,9 @@
           "Anlaşılmaz qəliz sözlər",
           "Düşüncə ilə duyğunun vəhdəti, intellektual fəlsəfilik, ritorik suallar, xitablar və vətəndaşlıq pafosu"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "D",
+        "correctAnswer": 3,
+        "correct_answer": "D",
         "explanation": "{'correct': 'Dərslik: Bəxtiyar poeziyası oxucunu dərindən düşündürən, fəlsəfi suallar qarşısında qoyan müdrik sənətdir.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Bəxtiyar poeziyası oxucunu dərindən düşündürən, fəlsəfi suallar qarşısında qoyan müdrik sənətdir.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 16: 16. Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması",
@@ -255988,10 +255988,10 @@
           "passport_id": "11-009-0316-11ED16-BL2-C2-013"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "Yanlışdır (Ədəbi əsərdə yalnız təbiət təsvirləri motivlərinin və obraz xüsusiyyətlərinin təsviri). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "C": "Yanlışdır (Anlaşılmaz qəliz sözlər). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "D variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -256004,7 +256004,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın oxuyub-anlama və bədii məzmunu qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Bəxtiyar Vahabzadə. Həyatı və 'Gülüstan' poeması' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 3
       },
       {
         "id": "11-009-0316-11ED16-BL2-C2-014",
@@ -257057,9 +257057,9 @@
           "Heydərbaba, ildırımlar şaxanda, sellər, sular şaqqıldayıb axanda, qızlar ona səf bağlayıb baxanda, salam olsun şövkətizə, elizə! Mənim də bir adım gəlsin dilizə!",
           "El bilir ki, sən mənimsən üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması"
         ],
-        "answer": "B",
-        "correctAnswer": 1,
-        "correct_answer": "B",
+        "answer": "C",
+        "correctAnswer": 2,
+        "correct_answer": "C",
         "explanation": "{'correct': 'Dərslik: Bu misralar milli poeziyamızın ən həzin, musiqili və yaddaqalan bədii girişidir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Bu misralar milli poeziyamızın ən həzin, musiqili və yaddaqalan bədii girişidir.', 'distractors': {'0': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 18: 18. Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd",
@@ -257070,10 +257070,10 @@
           "passport_id": "11-009-0318-11ED18-BL1-C1-002"
         },
         "distractor_diagnostics": {
-          "A": "Yanlışdır (Yenə o bağ olaydı əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "C": "C variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "D": "Yanlışdır (El bilir ki, sən mənimsən üzrə klassik və realist ədəbi ənənələrin yaradıcılıqda sintez olunması). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -257086,7 +257086,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 1
+        "correct_index": 2
       },
       {
         "id": "11-009-0318-11ED18-BL2-C2-003",
@@ -257673,9 +257673,9 @@
           "Heç nə etməyin əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası",
           "Yadlara boyun əyin və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi"
         ],
-        "answer": "A",
-        "correctAnswer": 0,
-        "correct_answer": "A",
+        "answer": "B",
+        "correctAnswer": 1,
+        "correct_answer": "B",
         "explanation": "{'correct': 'Dərslik: Sahənd Qorqud ənənələri ilə xalqa milli mənlik və qəhrəmanlıq dərsi keçirdi.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "izah": "{'correct': 'Dərslik: Sahənd Qorqud ənənələri ilə xalqa milli mənlik və qəhrəmanlıq dərsi keçirdi.', 'distractors': {'1': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '2': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.', '3': 'Dərslikdəki ədəbi fakt və təhlillərlə uyğun gəlmir.'}}",
         "sourceContext": "11-ci sinif Ədəbiyyat dərsliyi, Mövzu 18: 18. Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd",
@@ -257686,10 +257686,10 @@
           "passport_id": "11-009-0318-11ED18-BL1-C1-013"
         },
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: mövzunun tədris faktlarına və ya şərtinə uyğun gəlmir.",
-          "C": "Yanlışdır (Heç nə etməyin əsasında qəhrəmanın daxili monoloqları və dövrün ictimai ziddiyyətlərinin inikası). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir.",
-          "D": "Yanlışdır (Yadlara boyun əyin və lirik-dramatik janrın bədii təsvir və ifadə vasitələri ilə zənginləşdirilməsi). Əsərin ideya-məzmun xəttinə və bədii konfliktinə uyğun gəlmir."
+          "A": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "D": "D variantı yanlışdır: dərslik standartına uyğun deyil."
         },
         "backward_trace": {
           "is_root_anchor": false,
@@ -257702,7 +257702,7 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın ədəbi fakt və məlumatları möhkəmləndirmək üçün hazırda istifadə etdiyi 11-ci sinif Ədəbiyyat 11 dərsliyindəki 'Məhəmmədhüseyn Şəhriyar. 'Heydərbabaya salam' poeması və Sahənd' mövzusunu (bədii təhlilini) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_index": 0
+        "correct_index": 1
       },
       {
         "id": "11-009-0318-11ED18-BL2-C2-014",
