@@ -1,8 +1,5 @@
-{"source": "math_anlayis_kvadrat_tenlik", "target": "math_teorem_viyet", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Viyet teoremini tətbiq etmək üçün kvadrat tənlik anlayışı mütləq bilinməlidir"}
-{"source": "math_teorem_pifaqor", "target": "math_dustur_heron", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Üçbucağın tərəfləri və hündürlüyü ilə sahə hesablanmasında Pifaqor teoremi təməldir"}
-{"source": "bio_proses_translyasiya", "target": "bio_proses_zulallarin_denaturasiyasi", "relation": "PRECEDES", "grade": 9, "rationale": "Zülal əvvəlcə biosintez/translyasiya olunur, sonra denaturasiyaya uğraya bilər"}
-{"source": "hist_doyus_caldiran", "target": "hist_muqavile_amasiya_1555", "relation": "PRECEDES", "grade": 10, "rationale": "Çaldıran döyüşü (1514) I Səfəvi-Osmanlı müharibəsinin başlanğıcı, Amasiya sülhü (1555) isə onun yekunudur"}
-{"source": "hist_muqavile_amasiya_1555", "target": "hist_muqavile_serab_1618", "relation": "PRECEDES", "grade": 10, "rationale": "Amasiya (1555) -> Sərab (1618) diplomatik xronologiyası"}
-{"source": "hist_muqavile_serab_1618", "target": "hist_muqavile_qesri_sirin_1639", "relation": "PRECEDES", "grade": 10, "rationale": "Sərab (1618) -> Qəsri-Şirin (1639) sərhəd sazişləri xronologiyası"}
-{"source": "hist_muqavile_rest_1732", "target": "hist_muqavile_gence_1735", "relation": "PRECEDES", "grade": 10, "rationale": "Rəşt (1732) və Gəncə (1735) müqavilələri Xəzəryanı torpaqların azad edilməsi zənciridir"}
-{"source": "hist_muqavile_gence_1735", "target": "hist_hadise_mugan_qurultayi_1736", "relation": "CAUSES", "grade": 10, "rationale": "Nadir xanın hərbi-diplomatik uğurları Muğan qurultayında şah seçilməsinə zəmin yaratdı"}
+{"source": "math_anlayis_kvadrat_tenlik", "target": "math_teorem_viyet", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Viyet teoremi birbaşa çevrilmiş kvadrat tənliyin kökləri üzərində təyin edilir"}
+{"source": "hist_doyus_caldiran", "target": "hist_muqavile_amasiya_1555", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Çaldıran döyüşü (1514) < Amasiya sülhü (1555)"}
+{"source": "hist_muqavile_amasiya_1555", "target": "hist_muqavile_serab_1618", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Amasiya (1555) < Sərab (1618)"}
+{"source": "hist_muqavile_serab_1618", "target": "hist_muqavile_qesri_sirin_1639", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Sərab (1618) < Qəsri-Şirin (1639)"}
+{"source": "hist_muqavile_rest_1732", "target": "hist_muqavile_gence_1735", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Rəşt müqaviləsi (1732) < Gəncə müqaviləsi (1735)"}
