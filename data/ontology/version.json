@@ -25,5 +25,10 @@
     "CAUSES": 1,
     "PART_OF": 1
   },
-  "last_audit_timestamp": "2026-10-06T00:25:00Z"
+  "last_audit_timestamp": "2026-10-06T00:25:00Z",
+  "nodes": 524,
+  "claims": 533,
+  "evidence": 533,
+  "edges": 20,
+  "version": "5.0-STAGE3-SCALED"
 }
