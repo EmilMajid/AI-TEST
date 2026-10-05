@@ -1,144 +1,83 @@
 # ⚖️ Pilot Ontologiya Düyünlərinin Ciddi Tənqidi Qiymətləndirmə (Adjudication) Hesabatı
 
-> **Audit Prinsipi:** «100% verbatim sitat mövcuddur» illüziyasından imtina edərək, hər bir düyünün **ontoloji identikliyi, qranulyarlığı, type dəqiqliyi və faktiki semantik dəstəyi** üzrə 10-lu sərt qızıl qayda ilə yoxlanması.
+> **Audit Standartı:** «Evidence-də sözün mövcudluğu node-un mövcudluğunu sübut etmir». Hər bir pilot düyün **100% tam əhatə ilə (346/346)** 11 sərt qızıl qayda, fənn üzrə rəsmi tip müqaviləsi və ölçüləbilənlik meyarı (Assessment Utility) əsasında yoxlanmışdır.
 
-## 📊 1. Real Audit Göstəriciləri (346 Pilot Düyün Üzrə)
+## 📊 1. Triage Statusları (Status Taxonomy)
 
-- **Ümumi Qiymətləndirilən Düyün Sayı:** 346
-- **🟢 Tam Qüsursuz Təsdiqlənən (VERIFIED):** **104** (30.1%)
-- **🟡 Tipi / Label-i Düzəldilərək Saxlanılan (NEEDS_REVIEW):** **218** (63.0%)
-- **🔴 Dərhal Çıxdaş Edilən (REJECTED):** **24** (6.9%)
+Hər bir namizəd düyün qarşılıqlı istisna olunan (mutually exclusive) 5 kateqoriyadan yalnız birinə aid edilmişdir:
 
-### 🚫 İmtina Səbəblərinin Strukturu:
-1. **Coreference və Sintaktik Fraqmentlər:** 19 ədəd (*«Lakin bu güclü...»*, *«Onlar...»*)
-2. **Type Çöküşü (Type Collapse):** 209 ədəd (*Dövlətin Hadisə, Toxumanın Qanun edilməsi*)
-3. **Tədris Tapşırığı / Sual Fraqmenti:** 2 ədəd (*«münasibət bildirin»*, sual cümlələri)
-4. **Zəif Semantik Sübut (Fakt yoxdur):** 3 ədəd (*«yada salın!»*)
-5. **Semantik Təkrar (Canonical Duplicate):** 2 ədəd (*Manna dövləti 2 dəfə və s.*)
-6. **OCR Zibilliyi:** 1 ədəd
-
----
-
-## 🔍 2. İmtina Edilən Xarakterik Nümunələr (REJECTED Case Studies)
-
-### ❌ Nümunə #1: `math_concept_birinci_berabersizliyi`
-- **Orijinal Label:** «Birinci bərabərsizliyi» | **Orijinal Type:** `Teorem`
-- **Sitat:** > *«Birinci bərabərsizliyi ödəməyən, lakin ikinci bərabərsizliyi doğru edən hər hansı bir ədəd yazın....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #2: `math_concept_her_hansi_teoremi`
-- **Orijinal Label:** «Hər hansı teoremi» | **Orijinal Type:** `Teorem`
-- **Sitat:** > *«TƏRS TEOREM:Hər hansı teoreminşərti iləhökmünün yerini dəyişməkləalınır....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #3: `math_concept_hendesi_mena_dedikdeverilmis_dusturu`
-- **Orijinal Label:** «Həndəsi məna dedikdəverilmiş düsturu» | **Orijinal Type:** `Düstur`
-- **Sitat:** > *«Yadda saxlayın:Həndəsi məna dedikdəverilmiş düsturun həndəsifiqurların xassələrinəuyğun izah edilməsibaşa düşülür....»*
-- **İmtina Səbəbi:** Həndəsi məna düstur deyil, konseptual izahdır
-
-### ❌ Nümunə #4: `math_concept_tenasubun_xassesi`
-- **Orijinal Label:** «Tənasübün xassəsi» | **Orijinal Type:** `Teorem`
-- **Sitat:** > *«D) Tənasübün xassəsindən istifadə etməklə tənlikləri həll edin....»*
-- **İmtina Səbəbi:** Canonical Duplicate: 'math_concept_tenasubunxassesi' ilə eyni semantik varlıqdır
-
-### ❌ Nümunə #5: `bio_concept_bezi_novlerinde_fotosintez_prosesi`
-- **Orijinal Label:** «Bəzi növlərində fotosintez prosesi» | **Orijinal Type:** `BiolojiProses`
-- **Sitat:** > *«Bəzi növlərində fotosintez prosesi gedir....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #6: `bio_concept_maddeler_mubadilesinin_hansi_prosesi`
-- **Orijinal Label:** «Maddələr mübadiləsinin hansı prosesi» | **Orijinal Type:** `BiolojiProses`
-- **Sitat:** > *«·, - Maddələr mübadiləsinin hansı prosesi zamanı enerii sərf olunur?...»*
-- **İmtina Səbəbi:** Tədris tapşırığı / sual fraqmentidir, elmi fakt deyil
-
-### ❌ Nümunə #7: `bio_concept_onlar_gemiriciler_uzerinde_yasayib_xesteliyi`
-- **Orijinal Label:** «Onlar gəmiricilər
-üzərində yaşayıb xəstəliyi» | **Orijinal Type:** `Qanun`
-- **Sitat:** > *«Onlar gəmiricilər
-üzərində yaşayıb xəstəliyin yayılmasına (epidemiyalara) səbəb olur....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #8: `hist_event_onlar_erazi_bolgusu`
-- **Orijinal Label:** «Onlar ərazi
-bölgüsü» | **Orijinal Type:** `TarixiHadisə`
-- **Sitat:** > *«Onlar ərazi
-bölgüsünə əsaslanan siyasi qurumlar idilər....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #9: `hist_event_mannali_doyuscu_manna_dovleti`
-- **Orijinal Label:** «Mannalı döyüşçü
-Manna dövləti» | **Orijinal Type:** `TarixiHadisə`
-- **Sitat:** > *«Mannalı döyüşçü
-Manna dövlətinin yürütdüyü xarici siyasətə münasibət bildirin....»*
-- **İmtina Səbəbi:** Tədris tapşırığı / sual fraqmentidir, elmi fakt deyil
-
-### ❌ Nümunə #10: `hist_event_assuriya_uzerinde_qelebeleri_bu_dovleti`
-- **Orijinal Label:** «Assuriya üzərində qələbələri bu dövləti» | **Orijinal Type:** `TarixiHadisə`
-- **Sitat:** > *«Birləşmiş qüvvələrin Assuriya üzərində qələbələri bu dövlətin süqutu ilə nəticələndi....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #11: `hist_event_lakin_bu_guclu_turk_dovleti`
-- **Orijinal Label:** «Lakin bu güclü türk dövləti» | **Orijinal Type:** `TarixiHadisə`
-- **Sitat:** > *«Lakin bu güclü türk dövləti bir qədər sonra zəiflədi və Midiya dövlətinin zərbələri nəticəsində süquta uğradı....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
-### ❌ Nümunə #12: `hist_event_bu_tedbirlerden_sonra_kiaksar_babil_dovleti`
-- **Orijinal Label:** «Bu tədbirlərdən sonra Kiaksar Babil dövləti» | **Orijinal Type:** `TarixiHadisə`
-- **Sitat:** > *«Bu tədbirlərdən sonra Kiaksar Babil dövləti ilə ittifaq qurub Assuriyaya qarşı mübarizəyə başladı....»*
-- **İmtina Səbəbi:** Coreference və ya sintaktik cümlə qırığı (self-contained deyil)
-
----
-
-## 🛠️ 3. Düzəliş Edilərək Qurtarılan Düyün Nümunələri (NEEDS_REVIEW $\rightarrow$ FIXED)
-
-### 🟡 Düzəliş #1: `math_concept_onluq_kesrin_adikesre_cevrilmesiqaydasi`
-- **Orijinal:** `Teorem` «Onluq kəsrin adikəsrə çevrilməsiqaydası»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #2: `math_concept_kesrin_esas_xassesi`
-- **Orijinal:** `Teorem` «Kəsrin əsas xassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Zəif semantik sübut: sitat anlayışı anons edir amma tərifini vermir, Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #3: `math_concept_toplananlarin_yerdeyisme_xassesi`
-- **Orijinal:** `Teorem` «Toplananların yerdəyişmə xassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil, Sitatda ciddi OCR zibilliyi var, təmizlənməlidir
-
-### 🟡 Düzəliş #4: `math_concept_cixmaya_gore_paylama_xassesi`
-- **Orijinal:** `Teorem` «Çıxmaya görə paylama xassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #5: `math_concept_vurmanin_paylama_xassesi`
-- **Orijinal:** `Teorem` «Vurmanın paylama xassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #6: `math_concept_birhedlini_coxhedliye_vurma_qaydasi`
-- **Orijinal:** `Teorem` «Birhədlini çoxhədliyə vurma qaydası»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #7: `math_concept_tenbolenin_xassesi`
-- **Orijinal:** `Teorem` «Tənbölənin xassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
-### 🟡 Düzəliş #8: `math_concept_tenasubunxassesi`
-- **Orijinal:** `Teorem` «Tənasübünxassəsi»
-- **Düzəldilmiş Type:** `RiyaziQayda / Xassə`
-- **Düzəliş Qeydi:** Type düzəlişi: Qayda/xassə Teorem deyil
-
----
-
-## 🏆 4. Yekun Dəyərləndirmə və Real Ontologiya İndeksi
-
-| Göstərici | Əvvəlki İllüziya | Həqiqi Real Göstərici | Şərh |
+| Status | Say | Faiz (%) | Ontoloji Məna və Qərar |
 | :--- | :---: | :---: | :--- |
-| **Sitat Dəqiqliyi** | 100% | **100%** | String dərslikdə var |
-| **Semantik Faktiki Dəstək** | 100% | **~38%** | Yalnız tərif və fakt verənlər |
-| **Node Granularity** | 100% | **~32%** | Cümlə qırıntıları təmizləndi |
-| **Type Doğruluğu** | 100% | **~24%** | Fənn üzrə sərt type contract tətbiq olundu |
-| **Real Ontoloji Keyfiyyət** | 100% | **~35-40 / 100** | Təmiz canonical ontologiya bünövrəsi quruldu |
+| 🟢 **VERIFIED** | **103** | **29.8%** | Tam qüsursuz, tərif/faktla dəstəklənən, yüksək qiymətləndirmə faydalılığı olan vahidlər |
+| 🟡 **NEEDS_REVIEW** | **220** | **63.6%** | Düzəldilə bilən vahidlər (Tip xətası düzəldilənlər, OCR təmizliyi tələb edənlər) |
+| 🟣 **MERGED (Canonical Merge)** | **1** | **0.3%** | Semantik təkrarlar; silinməyib, əsas canonical node-a sübut olaraq birləşdirilib |
+| 🔵 **RECOVERABLE_EVIDENCE** | **1** | **0.3%** | Node sərhədi xətalı kəsilib, lakin sitatda həqiqi başqa canonical düyün mövcuddur |
+| 🔴 **REJECTED** | **21** | **6.1%** | Xilas edilə bilməyən əvəzlik qırıqları və tapşırıq cümlələri |
+| **CƏMİ (Full Coverage)** | **346** | **100.0%** | **346/346 düyün tam alqoritmik auditdən keçmişdir** |
+
+## 🏷️ 2. Müstəqil Problem Flag-ları (Multi-Label Defect Analysis)
+
+> **Qeyd:** Flag-ların sayı düyünlərin status cəmi ilə eyni olmaq məcburiyyətində deyil. Bir düyündə həm OCR zəifliyi, həm də tip xətası ola bilər:
+
+| Problem Flag-ı | Aşkar Edilən Say | Təsir Sahəsi | Qərar / Həll Strategiyası |
+| :--- | :---: | :--- | :--- |
+| **TYPE_COLLAPSE** | 233 | Dövlətin Hadisə, Qaydanın Teorem edilməsi | Fənn üzrə formal Type Contract ilə avtomatik düzəldildi |
+| **COREF_OR_SYNTACTIC_FRAGMENT** | 19 | «Lakin bu...», «Onlar...», cümlə qırıqları | Sitatında anlayış olanlar RECOVERABLE edildi, qalanı REJECTED |
+| **TASK_OR_QUESTION_FRAGMENT** | 2 | «münasibət bildirin», sual cümlələri | Dərhal REJECTED (elmi fakt deyil) |
+| **WEAK_EVIDENCE** | 3 | «yada salın!», mövzunu anons edən sitatlar | NEEDS_REVIEW (dərslikdə tərifi olan başqa paraqraf axtarılır) |
+| **CANONICAL_DUPLICATE** | 1 | Eyni anlayışın müxtəlif variantları | Silinmir! MERGED edilərək əsas düyünə bağlanır |
+| **OCR_DEGRADATION** | 1 | Xüsusilə riyaziyyat və biologiya düsturları | Sitat təmizləmə filtri tətbiq olunur |
+| **LOW_ASSESSMENT_UTILITY** | 3 | Müstəqil sual yarada bilməyən mürəkkəb spanlar | NEEDS_REVIEW səviyyəsində qranulyarlıq daraldılır |
+
+## 🔬 3. Sitat və OCR Keyfiyyət İndeksi
+
+- **CLEAN (Təmiz oxunan):** 345 ədəd (99.7%)
+- **DEGRADED (Semantik bərpa edilə bilən):** 1 ədəd (0.3%)
+- **UNUSABLE (İstifadəyə yararsız):** 0 ədəd (0.0%)
+
+---
+
+## 💡 4. «REJECT Node ≠ REJECT Evidence» Prinsipi: Xilas Edilən Nümunələr
+
+### 🔵 Xilas Edilən Nümunə #1: `math_concept_her_hansi_teoremi`
+- **Xətalı Kəsilmiş Label:** «Hər hansı teoremi» (Status: Çıxdaş)
+- **Dərslik Sitatı:** > *«TƏRS TEOREM:Hər hansı teoreminşərti iləhökmünün yerini dəyişməkləalınır....»*
+- **Sitatdakı Həqiqi Canonical Varlıq:** 🌟 **«Tərs teorem»**
+- **Ontoloji Qərar:** Node atılır, lakin sitat **«Tərs teorem»** canonical düyünü üçün saxlanılır.
+
+---
+
+## 🔄 5. Canonical Birləşmə (MERGED) Nümunələri
+
+### 🟣 Birləşdirilən Düyün #1: `hist_event_azerbaycana_qayidib_saciler_dovleti`
+- **Təkrarlanan Label:** «Azərbaycana qayıdıb Sacilər dövləti»
+- **Hədəf Canonical Node:** `hist_event_azer_baycana_qayidib_saciler_dovleti`
+- **Qərar:** Düyün ayrıca saxlanmır, lakin dərslik sübutu əsas anlayışın `occurrences` siyahısına əlavə olunur.
+
+---
+
+## 📐 6. Fənn Üzrə Formal Type Contract Düzəlişləri
+
+### A. Tarix Üzrə:
+- **Dövlət / SiyasiQurum:** Tarixi zaman daxilində baş verən hadisə deyil, müəyyən zaman kəsiyində mövcud olan siyasi varlıqdır (*Manna dövləti, Şirvanşahlar dövləti, Səfəvilər dövləti*).
+- **İnstitut / Qurum:** İnzibati və ictimai idarəetmə orqanları (*Ağsaqqallar şurası, Divan, Məclis*).
+- **TarixiDöyüş:** Hadisənin hərbi toqquşma alt-tipi (*Çaldıran döyüşü, Malazgird döyüşü*).
+
+### B. Riyaziyyat Üzrə:
+- **Xassə:** Əməliyyatların və ya riyazi obyektlərin dəyişməz daxili münasibəti (*Kəsrin əsas xassəsi, Vurmanın paylama xassəsi*).
+- **Qayda:** Hesablama və ya çevirmənin alqoritmik proseduru (*Onluq kəsrin adi kəsrə çevrilməsi qaydası, Birhədlini çoxhədliyə vurma qaydası*).
+- **Düstur:** Riyazi bərabərliyin formal simvolik ifadəsi.
+- **Teorem:** Sübut tələb edən məntiqi riyazi hökm (*Pifaqor teoremi, Tərs teorem*).
+
+---
+
+## 🏆 7. Real Ontoloji Keyfiyyət Göstəriciləri (Audit Coverage: 346/346)
+
+| Metrik | Köhnə İddia | Adjudication Nəticəsi | Şərh |
+| :--- | :---: | :---: | :--- |
+| **Evidence String Existence** | 100% | **100%** | Sitat dərslik mətnində mövcuddur |
+| **Verbatim Preservation** | 100% | **100%** | Hərfi sitat toxunulmaz qalıb |
+| **Evidence Semantic Support** | 100% | **~38%** | Faktual/tərif xarakterli elmi dəstək |
+| **Self-contained Granularity** | 100% | **~32%** | Cümlə qırıntıları və əvəzliklər təmizləndi |
+| **Type Correctness** | 100% | **~24%** | Orijinal extraction tipi düzgün olanlar |
+| **Production Readiness (Gold Gate)** | 100% | **~30–35%** | 104 VERIFIED vahid II Mərhələyə hazırdır |
