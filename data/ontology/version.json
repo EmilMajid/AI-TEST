@@ -1,34 +1,12 @@
 {
-  "schema_version": "v5.0-canonical-dag",
-  "status": "production_gold_core",
-  "nodes_count": 42,
-  "claims_count": 51,
-  "evidence_count": 51,
-  "edges_count": 20,
-  "acyclicity_verified": true,
+  "version": "5.0-1500-SCALED",
+  "status": "PRODUCTION_CANONICAL_DAG",
+  "nodes": 1500,
+  "claims": 1509,
+  "evidence": 1509,
+  "edges": 1446,
   "topological_cycles": 0,
-  "gold_rules_enforced": 11,
-  "data_lineage_coverage": "100%",
-  "subjects_covered": [
-    "Azərbaycan tarixi",
-    "Riyaziyyat",
-    "Biologiya",
-    "Fizika",
-    "Kimya",
-    "Coğrafiya"
-  ],
-  "edge_relations": {
-    "PREREQUISITE_OF": 6,
-    "CONTRASTS_WITH": 6,
-    "PRECEDES": 4,
-    "SUPPORTS": 2,
-    "CAUSES": 1,
-    "PART_OF": 1
-  },
-  "last_audit_timestamp": "2026-10-06T00:25:00Z",
-  "nodes": 524,
-  "claims": 533,
-  "evidence": 533,
-  "edges": 20,
-  "version": "5.0-STAGE3-SCALED"
+  "ocr_corruptions": 0,
+  "lineage_records": 1835,
+  "last_updated": "2026-10-06T03:53:00Z"
 }
