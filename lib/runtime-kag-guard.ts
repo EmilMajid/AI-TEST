@@ -291,6 +291,28 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     }
   }
 
+  // 5.7. CANONICAL KNOWLEDGE GRAPH RESOLUTION (SİTG Gold Core v5.0)
+  const canonicalMatch = resolveCanonicalOntologyNode(fullText, subjName)
+  if (canonicalMatch) {
+    bt.canonical_node_id = canonicalMatch.id
+    bt.canonical_type = canonicalMatch.type
+    bt.first_grade_verified = canonicalMatch.firstGradeVerified
+    
+    if (canonicalMatch.prerequisiteId) {
+      bt.prerequisite_node_id = canonicalMatch.prerequisiteId
+      // Ground the root concept to the pedagogical prerequisite if cross-grade/hierarchical
+      if (canonicalMatch.prerequisiteLabel) {
+        bt.root_concept = canonicalMatch.prerequisiteLabel
+        bt.concept_name = canonicalMatch.prerequisiteLabel
+      }
+    }
+    
+    if (canonicalMatch.distractorId) {
+      bt.distractor_contrast_node_id = canonicalMatch.distractorId
+      bt.distractor_contrast_label = canonicalMatch.distractorLabel
+    }
+  }
+
   // 6. SYNCHRONIZED PARENT ACTION TIP GENERATION
   const cleanConcept = rootConcept.replace(/^([0-9]+|[IVXLCDM]+)[\.\:\-]\s*/i, "").replace(/^elmi anlayış:\s*/i, "").trim()
   
@@ -389,4 +411,672 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   bt.parent_action_tip = tip
 
   return q
+}
+
+// ============================================================================
+// CANONICAL ONTOLOGY REGISTRY & RESOLVER (SİTG Gold Core v5.0)
+// ============================================================================
+
+export interface CanonicalOntologyMatch {
+  id: string
+  label: string
+  type: string
+  subject: string
+  firstGradeVerified: number
+  prerequisiteId?: string
+  prerequisiteLabel?: string
+  distractorId?: string
+  distractorLabel?: string
+}
+
+const CANONICAL_ONTOLOGY_REGISTRY = [
+  {
+    "id": "math_teorem_ters_teorem",
+    "stem": "tərs teorem",
+    "aliases": [
+      "Hər hansı teoremi"
+    ],
+    "label": "Tərs teorem",
+    "type": "Teorem",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "math_teorem_pifaqor",
+    "distLabel": "Pifaqor teoremi"
+  },
+  {
+    "id": "math_anlayis_ikideyisenli_xetti_tenlik",
+    "stem": "i̇kidəyişənli xətti tənlik",
+    "aliases": [
+      "Dəyişənlərin ikidəyişənli xətti tənliyi"
+    ],
+    "label": "İkidəyişənli xətti tənlik",
+    "type": "Anlayış",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "math_teorem_pifaqor",
+    "stem": "pifaqor",
+    "aliases": [
+      "Rasional ifadələr Pifaqor teoremi",
+      "Z Pifaqor teoremi"
+    ],
+    "label": "Pifaqor teoremi",
+    "type": "Teorem",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "math_teorem_ters_teorem",
+    "distLabel": "Tərs teorem"
+  },
+  {
+    "id": "math_anlayis_kvadrat_tenlik",
+    "stem": "kvadrat tənlik",
+    "aliases": [
+      "Kvadrat tənliyi",
+      "D Verilmiş kvadrat tənliyi"
+    ],
+    "label": "Kvadrat tənlik",
+    "type": "Anlayış",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "math_teorem_viyet",
+    "stem": "viyet",
+    "aliases": [
+      "Onda Viyet teoremi"
+    ],
+    "label": "Viyet teoremi",
+    "type": "Teorem",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": "math_anlayis_kvadrat_tenlik",
+    "prereqLabel": "Kvadrat tənlik",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "math_dustur_heron",
+    "stem": "heron",
+    "aliases": [],
+    "label": "Heron düsturu",
+    "type": "Düstur",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "math_teorem_fales",
+    "stem": "fales",
+    "aliases": [],
+    "label": "Fales teoremi",
+    "type": "Teorem",
+    "subject": "Riyaziyyat",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_proses_zulallarin_denaturasiyasi",
+    "stem": "zülalların denaturasiyası",
+    "aliases": [
+      "Zülalların denaturasiyası prosesi"
+    ],
+    "label": "Zülalların denaturasiyası",
+    "type": "BiolojiProses",
+    "subject": "Biologiya",
+    "firstGradeVerified": 9,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_xestelik_qrip",
+    "stem": "qrip",
+    "aliases": [
+      "Qrip xəstəliyi"
+    ],
+    "label": "Qrip",
+    "type": "Xəstəlik",
+    "subject": "Biologiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "bio_xestelik_qizilca",
+    "distLabel": "Qızılca"
+  },
+  {
+    "id": "bio_xestelik_qizilca",
+    "stem": "qızılca",
+    "aliases": [
+      "Qızılca xəstəliyi"
+    ],
+    "label": "Qızılca",
+    "type": "Xəstəlik",
+    "subject": "Biologiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "bio_xestelik_qrip",
+    "distLabel": "Qrip"
+  },
+  {
+    "id": "bio_proses_translyasiya",
+    "stem": "translyasiya",
+    "aliases": [
+      "Translyasiya prosesi"
+    ],
+    "label": "Translyasiya",
+    "type": "BiolojiProses",
+    "subject": "Biologiya",
+    "firstGradeVerified": 9,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_proses_qlukozanin_oksidlesmesi",
+    "stem": "qlükozanın oksidləşməsi",
+    "aliases": [
+      "Qlükozanın oksidləşməsi prosesi"
+    ],
+    "label": "Qlükozanın oksidləşməsi",
+    "type": "BiolojiProses",
+    "subject": "Biologiya",
+    "firstGradeVerified": 9,
+    "prereqId": "chem_anlayis_oksidlesme_derecesi",
+    "prereqLabel": "Oksidləşmə dərəcəsi",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_proses_tekamul",
+    "stem": "təkamül",
+    "aliases": [
+      "Təkamül prosesi"
+    ],
+    "label": "Təkamül",
+    "type": "BiolojiProses",
+    "subject": "Biologiya",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "bio_proses_makrotekamul",
+    "distLabel": "Makrotəkamül"
+  },
+  {
+    "id": "bio_xestelik_talassemiya",
+    "stem": "talassemiya",
+    "aliases": [
+      "Talassemiya xəstəliyi"
+    ],
+    "label": "Talassemiya",
+    "type": "Xəstəlik",
+    "subject": "Biologiya",
+    "firstGradeVerified": 10,
+    "prereqId": "bio_proses_translyasiya",
+    "prereqLabel": "Translyasiya",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_xestelik_daun_sindromu",
+    "stem": "daun sindromu",
+    "aliases": [
+      "Daun sindromu xəstəliyi"
+    ],
+    "label": "Daun sindromu",
+    "type": "Xəstəlik",
+    "subject": "Biologiya",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "bio_proses_makrotekamul",
+    "stem": "makrotəkamül",
+    "aliases": [
+      "Makrotəkamül prosesi"
+    ],
+    "label": "Makrotəkamül",
+    "type": "BiolojiProses",
+    "subject": "Biologiya",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "bio_proses_tekamul",
+    "distLabel": "Təkamül"
+  },
+  {
+    "id": "bio_qanun_mendel_1",
+    "stem": "mendelin birinci",
+    "aliases": [
+      "Mendelin I qanunu"
+    ],
+    "label": "Mendelin birinci qanunu",
+    "type": "Qanun",
+    "subject": "Biologiya",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_doyus_dzirav",
+    "stem": "dzirav",
+    "aliases": [],
+    "label": "Dzirav döyüşü",
+    "type": "TarixiDöyüş",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_doyus_dendenekan",
+    "stem": "dəndənəkan",
+    "aliases": [
+      "Qəznəlilər arasında baş verən Dəndənəkan döyüşü"
+    ],
+    "label": "Dəndənəkan döyüşü",
+    "type": "TarixiDöyüş",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_doyus_didqori",
+    "stem": "didqori",
+    "aliases": [],
+    "label": "Didqori döyüşü",
+    "type": "TarixiDöyüş",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_hadise_gence_usyani",
+    "stem": "gəncə üsyanı (usta bəndər)",
+    "aliases": [
+      "Gəncə üsyanı"
+    ],
+    "label": "Gəncə üsyanı (Usta Bəndər)",
+    "type": "TarixiHadisə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_hadise_qazan_xan_islahatlari",
+    "stem": "qazan xanın islahatları",
+    "aliases": [
+      "Qazan xanın dini islahatı",
+      "Miniatür Qazan xanın vergi islahatı",
+      "Qazan xanın torpaq islahatı"
+    ],
+    "label": "Qazan xanın islahatları",
+    "type": "TarixiHadisə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_muqavile_amasiya_1555",
+    "stem": "amasiya",
+    "aliases": [
+      "Xoya hücum etməsi Amasiya sülhü"
+    ],
+    "label": "Amasiya sülhü",
+    "type": "Müqavilə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "hist_muqavile_qesri_sirin_1639",
+    "distLabel": "Qəsri-Şirin sülhü"
+  },
+  {
+    "id": "hist_muqavile_qesri_sirin_1639",
+    "stem": "qəsri-şirin",
+    "aliases": [],
+    "label": "Qəsri-Şirin sülhü",
+    "type": "Müqavilə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "hist_muqavile_amasiya_1555",
+    "distLabel": "Amasiya sülhü"
+  },
+  {
+    "id": "hist_muqavile_serab_1618",
+    "stem": "sərab",
+    "aliases": [],
+    "label": "Sərab sülhü",
+    "type": "Müqavilə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_muqavile_gence_1735",
+    "stem": "gəncə",
+    "aliases": [
+      "Gəncə sülhü"
+    ],
+    "label": "Gəncə müqaviləsi",
+    "type": "Müqavilə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_muqavile_rest_1732",
+    "stem": "rəşt",
+    "aliases": [
+      "Rəşt sülhü"
+    ],
+    "label": "Rəşt müqaviləsi",
+    "type": "Müqavilə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_hadise_mugan_qurultayi_1736",
+    "stem": "muğan qurultayı",
+    "aliases": [],
+    "label": "Muğan qurultayı",
+    "type": "TarixiHadisə",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_doyus_serdrud_1408",
+    "stem": "sərdrud",
+    "aliases": [],
+    "label": "Sərdrud döyüşü",
+    "type": "TarixiDöyüş",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "hist_doyus_caldiran",
+    "stem": "çaldıran",
+    "aliases": [
+      "A MərT məə Çaldıran döyüşü"
+    ],
+    "label": "Çaldıran döyüşü",
+    "type": "TarixiDöyüş",
+    "subject": "Azərbaycan tarixi",
+    "firstGradeVerified": 10,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "phys_qanun_paskal",
+    "stem": "paskal",
+    "aliases": [],
+    "label": "Paskal qanunu",
+    "type": "FizikiQanun",
+    "subject": "Fizika",
+    "firstGradeVerified": 7,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "phys_cihaz_ampermetr",
+    "stem": "ampermetr",
+    "aliases": [],
+    "label": "Ampermetr",
+    "type": "Cihaz/Qurğu",
+    "subject": "Fizika",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "phys_cihaz_voltmetr",
+    "distLabel": "Voltmetr"
+  },
+  {
+    "id": "phys_cihaz_voltmetr",
+    "stem": "voltmetr",
+    "aliases": [],
+    "label": "Voltmetr",
+    "type": "Cihaz/Qurğu",
+    "subject": "Fizika",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "phys_cihaz_ampermetr",
+    "distLabel": "Ampermetr"
+  },
+  {
+    "id": "phys_qanun_kulon",
+    "stem": "kulon",
+    "aliases": [],
+    "label": "Kulon qanunu",
+    "type": "FizikiQanun",
+    "subject": "Fizika",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "chem_anlayis_valentlik",
+    "stem": "valentlik",
+    "aliases": [],
+    "label": "Valentlik",
+    "type": "KimyəviAnlayış",
+    "subject": "Kimya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "chem_anlayis_oksidlesme_derecesi",
+    "stem": "oksidləşmə dərəcəsi",
+    "aliases": [],
+    "label": "Oksidləşmə dərəcəsi",
+    "type": "KimyəviAnlayış",
+    "subject": "Kimya",
+    "firstGradeVerified": 8,
+    "prereqId": "chem_qanun_dovri_qanun",
+    "prereqLabel": "Mendeleyevin dövri qanunu",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "geo_obyekt_xezer_denizi",
+    "stem": "xəzər dənizi",
+    "aliases": [],
+    "label": "Xəzər dənizi",
+    "type": "CoğrafiObyekt",
+    "subject": "Coğrafiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "geo_qanunauygunluq_enlik_zonalligi",
+    "stem": "coğrafi enlik zonallığı",
+    "aliases": [],
+    "label": "Coğrafi enlik zonallığı",
+    "type": "CoğrafiQanunauyğunluq",
+    "subject": "Coğrafiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "geo_hadise_musson",
+    "stem": "musson küləkləri",
+    "aliases": [],
+    "label": "Musson küləkləri",
+    "type": "CoğrafiHadisə",
+    "subject": "Coğrafiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "geo_hadise_passat",
+    "distLabel": "Passat küləkləri"
+  },
+  {
+    "id": "geo_hadise_passat",
+    "stem": "passat küləkləri",
+    "aliases": [],
+    "label": "Passat küləkləri",
+    "type": "CoğrafiHadisə",
+    "subject": "Coğrafiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": "geo_hadise_musson",
+    "distLabel": "Musson küləkləri"
+  },
+  {
+    "id": "geo_obyekt_kur_cayi",
+    "stem": "kür çayı",
+    "aliases": [],
+    "label": "Kür çayı",
+    "type": "CoğrafiObyekt",
+    "subject": "Coğrafiya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "phys_qanun_ohm",
+    "stem": "ohm",
+    "aliases": [
+      "Om qanunu"
+    ],
+    "label": "Ohm qanunu",
+    "type": "FizikiQanun",
+    "subject": "Fizika",
+    "firstGradeVerified": 7,
+    "prereqId": "math_anlayis_ikideyisenli_xetti_tenlik",
+    "prereqLabel": "İkidəyişənli xətti tənlik",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "chem_qanun_kutlenin_saxlanmasi",
+    "stem": "maddə kütləsinin saxlanması",
+    "aliases": [
+      "Kütlənin saxlanması qanunu"
+    ],
+    "label": "Maddə kütləsinin saxlanması qanunu",
+    "type": "KimyəviQanun",
+    "subject": "Kimya",
+    "firstGradeVerified": 8,
+    "prereqId": "chem_anlayis_valentlik",
+    "prereqLabel": "Valentlik",
+    "distId": null,
+    "distLabel": null
+  },
+  {
+    "id": "chem_qanun_dovri_qanun",
+    "stem": "mendeleyevin dövri",
+    "aliases": [
+      "Dövri qanun"
+    ],
+    "label": "Mendeleyevin dövri qanunu",
+    "type": "KimyəviQanun",
+    "subject": "Kimya",
+    "firstGradeVerified": 8,
+    "prereqId": null,
+    "prereqLabel": null,
+    "distId": null,
+    "distLabel": null
+  }
+];
+
+export function resolveCanonicalOntologyNode(text: string, subject?: string): CanonicalOntologyMatch | null {
+  if (!text) return null
+  const lowText = text.toLowerCase()
+  
+  for (const item of CANONICAL_ONTOLOGY_REGISTRY) {
+    const candidates = [item.stem, ...(item.aliases || []).map((a: string) => a.toLowerCase().trim())]
+    if (candidates.some((c: string) => c && c.length >= 2 && (lowText.includes(c) || new RegExp(`\b${c}\b`, 'i').test(lowText)))) {
+      return {
+        id: item.id,
+        label: item.label,
+        type: item.type,
+        subject: item.subject,
+        firstGradeVerified: item.firstGradeVerified,
+        prerequisiteId: item.prereqId || undefined,
+        prerequisiteLabel: item.prereqLabel || undefined,
+        distractorId: item.distId || undefined,
+        distractorLabel: item.distLabel || undefined
+      }
+    }
+  }
+  return null
 }

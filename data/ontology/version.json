@@ -1,0 +1,29 @@
+{
+  "schema_version": "v5.0-canonical-dag",
+  "status": "production_gold_core",
+  "nodes_count": 42,
+  "claims_count": 51,
+  "evidence_count": 51,
+  "edges_count": 20,
+  "acyclicity_verified": true,
+  "topological_cycles": 0,
+  "gold_rules_enforced": 11,
+  "data_lineage_coverage": "100%",
+  "subjects_covered": [
+    "Azərbaycan tarixi",
+    "Riyaziyyat",
+    "Biologiya",
+    "Fizika",
+    "Kimya",
+    "Coğrafiya"
+  ],
+  "edge_relations": {
+    "PREREQUISITE_OF": 6,
+    "CONTRASTS_WITH": 6,
+    "PRECEDES": 4,
+    "SUPPORTS": 2,
+    "CAUSES": 1,
+    "PART_OF": 1
+  },
+  "last_audit_timestamp": "2026-10-06T00:25:00Z"
+}
