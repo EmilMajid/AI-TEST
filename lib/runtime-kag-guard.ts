@@ -294,76 +294,92 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   // 6. SYNCHRONIZED PARENT ACTION TIP GENERATION
   const cleanConcept = rootConcept.replace(/^([0-9]+|[IVXLCDM]+)[\.\:\-]\s*/i, "").replace(/^elmi anlayış:\s*/i, "").trim()
   
+  // Subject-specific pedagogical phrasing
+  const isHistorySubject = /tarix|истори/i.test(subjName)
+  const isSTEMSubject = /riyaziyyat|həndəsə|cəbr|fizika|kimya|математик|геометр|физик|хими/i.test(subjName)
+  const isNatureSubject = /biologiya|coğrafiya|təbiət|həyat bilgisi|биолог|географ|естество/i.test(subjName)
   const isLiteratureSubject = /ədəbiyyat|литератур/i.test(subjName)
   const isGrammarQuestion = isLanguageSubject && (/(cümlə|nitq|isim|sifət|feil|zərf|əvəzlik|şəkilçi|morfoloj|sintaktik|orfoqraf|qrammatika|tense|grammar|noun|verb|adjective|preposition|морфолог|синтаксич|падеж|склонени|спряжени|причасти|деепричасти|глагол|существительн|прилагательн)/i.test(fullText))
 
   let skillPhrase = "təməl bacarıqları"
   let ruleSuffix = "(əsas qaydaları)"
 
-  if (isLiteratureSubject) {
+  if (isHistorySubject) {
+    ruleSuffix = "(əsas tarixi hadisələri və prosesləri)"
+    if (bloom === "Bilik") skillPhrase = "tarixi fakt və xronologiya biliklərini"
+    else if (bloom === "Anlama") skillPhrase = "tarixi səbəb-nəticə əlaqələrini anlama bacarığını"
+    else if (bloom === "Tətbiq") skillPhrase = "tarixi hadisələri dövrlərlə əlaqələndirmə bacarığını"
+    else skillPhrase = "müqayisəli tarixi təhlil və analiz bacarığını"
+  } else if (isLiteratureSubject) {
     ruleSuffix = "(bədii təhlilini)"
-    if (bloom === "Bilik") {
-      skillPhrase = "ədəbi fakt və məlumatları"
-    } else if (bloom === "Anlama") {
-      skillPhrase = "oxuyub-anlama və bədii məzmunu qavrama bacarığını"
-    } else if (bloom === "Tətbiq") {
-      skillPhrase = "bədii təhlil bacarığını"
-    } else {
-      skillPhrase = "müqayisəli ədəbi təhlil və analiz bacarığını"
-    }
+    if (bloom === "Bilik") skillPhrase = "ədəbi fakt və məlumatları"
+    else if (bloom === "Anlama") skillPhrase = "oxuyub-anlama və bədii məzmunu qavrama bacarığını"
+    else if (bloom === "Tətbiq") skillPhrase = "bədii təhlil bacarığını"
+    else skillPhrase = "müqayisəli ədəbi təhlil və analiz bacarığını"
+  } else if (isSTEMSubject) {
+    ruleSuffix = "(əsas qayda və həll üsullarını)"
+    if (bloom === "Bilik") skillPhrase = "təməl düstur və nəzəri anlayışları"
+    else if (bloom === "Anlama") skillPhrase = "riyazi/elmi məntiqi anlama bacarığını"
+    else if (bloom === "Tətbiq") skillPhrase = "məsələ və misal həlli bacarığını"
+    else skillPhrase = "mürəkkəb riyazi/elmi təhlil bacarığını"
+  } else if (isNatureSubject) {
+    ruleSuffix = "(elmi anlayış və qanunauyğunluqları)"
+    if (bloom === "Bilik") skillPhrase = "təbiət və elmi faktları"
+    else if (bloom === "Anlama") skillPhrase = "elmi hadisələri anlama və izah etmə bacarığını"
+    else if (bloom === "Tətbiq") skillPhrase = "təbiət qanunlarını tətbiq etmə bacarığını"
+    else skillPhrase = "elmi müşahidə və analiz bacarığını"
   } else if (isLanguageSubject) {
     if (isGrammarQuestion) {
-      if (bloom === "Bilik") {
-        skillPhrase = "təməl qrammatik qaydaları"
-      } else if (bloom === "Anlama") {
-        skillPhrase = "qrammatik qaydaları anlama və qavrama bacarığını"
-      } else if (bloom === "Tətbiq") {
-        skillPhrase = "qrammatik qaydaları nitqdə tətbiq etmə bacarığını"
-      } else {
-        skillPhrase = "dil vahidlərini sintaktik/semantik təhlil etmə bacarığını"
-      }
+      ruleSuffix = "(əsas qrammatik qaydaları)"
+      if (bloom === "Bilik") skillPhrase = "təməl qrammatik qaydaları"
+      else if (bloom === "Anlama") skillPhrase = "qrammatik qaydaları anlama və qavrama bacarığını"
+      else if (bloom === "Tətbiq") skillPhrase = "qrammatik qaydaları nitqdə tətbiq etmə bacarığını"
+      else skillPhrase = "dil vahidlərini sintaktik/semantik təhlil etmə bacarığını"
     } else if (fullText.includes("frazeoloji") || fullText.includes("sinonim") || fullText.includes("antonim")) {
+      ruleSuffix = "(leksik məna xüsusiyyətlərini)"
       skillPhrase = "lüğət ehtiyatı və leksik bacarıqlarını"
     } else if (bloom === "Bilik") {
+      ruleSuffix = "(dil qaydalarını)"
       skillPhrase = "lüğət ehtiyatı və faktik dil qaydalarını"
     } else if (bloom === "Anlama") {
+      ruleSuffix = "(mətnin əsas məzmununu)"
       skillPhrase = "oxuyub-anlama və mətni qavrama bacarığını"
     } else if (bloom === "Tətbiq") {
+      ruleSuffix = "(tətbiqi tapşırıqları)"
       skillPhrase = "praktik tətbiq bacarığını"
     } else {
+      ruleSuffix = "(təhlil qaydalarını)"
       skillPhrase = "mətni və dil vahidlərini sintaktik/semantik təhlil etmə bacarığını"
     }
   } else {
-    if (bloom === "Bilik") {
-      skillPhrase = "təməl anlayış və faktik bilikləri"
-    } else if (bloom === "Anlama") {
-      skillPhrase = "mövzunu anlama və qavrama bacarığını"
-    } else if (bloom === "Tətbiq") {
-      skillPhrase = "praktik tətbiq və məsələ həlli bacarığını"
-    } else {
-      skillPhrase = "müqayisəli təhlil və elmi analiz bacarığını"
-    }
+    if (bloom === "Bilik") skillPhrase = "təməl anlayış və faktik bilikləri"
+    else if (bloom === "Anlama") skillPhrase = "mövzunu anlama və qavrama bacarığını"
+    else if (bloom === "Tətbiq") skillPhrase = "praktik tətbiq və məsələ həlli bacarığını"
+    else skillPhrase = "müqayisəli təhlil və elmi analiz bacarığını"
   }
 
   let tip = ""
   const qSuff = getGradeOrdinalSuffix(qGrade)
   const rootSuff = getGradeOrdinalSuffix(rootGrade)
 
+  // Clean redundant grade from book name if present (e.g. "Azərbaycan tarixi 10" -> "Azərbaycan tarixi")
+  const cleanRootBook = rootBook.replace(new RegExp(`\\s+${rootGrade}$`), "")
+
   if (isIntra || rootGrade === qGrade) {
     if (duration === 10) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu ${ruleSuffix} 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' mövzusunu ${ruleSuffix} 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
     } else if (duration === 15) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin.`
     } else {
-      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın.`
+      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' mövzusunun dərin suallarını 20 dəqiqə dərindən araşdırın.`
     }
   } else {
     if (duration === 10) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu 10 dəqiqə təkrarlayın.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu 10 dəqiqə təkrarlayın.`
     } else if (duration === 15) {
-      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin.`
+      tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün ${rootGrade}-${rootSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin.`
     } else {
-      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün ${rootGrade}-${rootSuff} sinif ${rootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın.`
+      tip = `Övladınızın ${skillPhrase} inkişaf etdirməsi üçün ${rootGrade}-${rootSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' təməl mövzusunu və səbəb-nəticə əlaqələrini 20 dəqiqə dərindən araşdırın.`
     }
   }
 
