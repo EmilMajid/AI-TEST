@@ -3,3 +3,9 @@
 {"source": "hist_muqavile_amasiya_1555", "target": "hist_muqavile_serab_1618", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Amasiya (1555) < Sərab (1618)"}
 {"source": "hist_muqavile_serab_1618", "target": "hist_muqavile_qesri_sirin_1639", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Sərab (1618) < Qəsri-Şirin (1639)"}
 {"source": "hist_muqavile_rest_1732", "target": "hist_muqavile_gence_1735", "relation": "PRECEDES", "grade": 10, "rationale": "Xronoloji ardıcıllıq: Rəşt müqaviləsi (1732) < Gəncə müqaviləsi (1735)"}
+{"source": "phys_cihaz_ampermetr", "target": "phys_qanun_ohm", "relation": "SUPPORTS", "grade": 8, "rationale": "Ampermetr cərəyan şiddətini ölçərək Ohm qanununun eksperimental tətbiqini təmin edir"}
+{"source": "phys_cihaz_voltmetr", "target": "phys_qanun_ohm", "relation": "SUPPORTS", "grade": 8, "rationale": "Voltmetr gərginliyi ölçərək Ohm qanununun eksperimental tətbiqini təmin edir"}
+{"source": "chem_anlayis_valentlik", "target": "chem_qanun_kutlenin_saxlanmasi", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Kimyəvi tənlikləri tərtib etmək və kütlənin saxlanmasını tətbiq etmək üçün valentlik anlayışı zəruridir"}
+{"source": "chem_qanun_dovri_qanun", "target": "chem_anlayis_oksidlesme_derecesi", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Dövri sistemdə elementin qrupu onun mümkün oksidləşmə dərəcələrinin müəyyən edilməsinin əsasını təşkil edir"}
+{"source": "geo_qanunauygunluq_enlik_zonalligi", "target": "geo_hadise_passat", "relation": "CAUSES", "grade": 8, "rationale": "Enlik üzrə təzyiq qurşaqlarının paylanması daimi passat küləklərinin yaranmasına birbaşa səbəb olur"}
+{"source": "geo_obyekt_kur_cayi", "target": "geo_obyekt_xezer_denizi", "relation": "PART_OF", "grade": 8, "rationale": "Kür çayı axımına görə Xəzər dənizi qapalı su hövzəsinə aiddir"}
