@@ -1,12 +1,12 @@
 {
-  "version": "5.0-1500-SCALED",
+  "version": "5.0-3000-GOLD-FINAL",
   "status": "PRODUCTION_CANONICAL_DAG",
-  "nodes": 1500,
-  "claims": 1509,
-  "evidence": 1509,
-  "edges": 1446,
+  "nodes": 3000,
+  "claims": 3009,
+  "evidence": 3009,
+  "edges": 3376,
   "topological_cycles": 0,
   "ocr_corruptions": 0,
-  "lineage_records": 1835,
-  "last_updated": "2026-10-06T03:53:00Z"
+  "lineage_records": 3345,
+  "last_updated": "2026-10-06T04:26:00Z"
 }
