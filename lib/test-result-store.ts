@@ -41,7 +41,11 @@ export interface StoredTestResult {
     correctAnswer?: number | string
     isCorrect: boolean
     explanation?: string
+    backward_trace?: any
+    grounding?: any
+    distractor_diagnostics?: any
   }>
+  questions?: any[]
 }
 
 import { DEMO_SHOWCASE_RESULTS } from "./demo-showcase-data"

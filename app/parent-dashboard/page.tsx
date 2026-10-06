@@ -32,6 +32,13 @@ import {
   Globe,
   Lock,
   Sparkles,
+  Brain,
+  Lightbulb,
+  AlertTriangle,
+  ChevronDown,
+  ChevronUp,
+  Check,
+  ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
 import dynamic from "next/dynamic"
@@ -78,6 +85,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts"
+import { cleanRemedialTip, type KagDeficiencyItem, extractStudentKagDeficiencies } from "@/lib/kag-deficiency-extractor"
+
 
 interface LinkedStudent {
   id: number | string
@@ -211,6 +220,10 @@ export default function ParentDashboard() {
     class: "5",
     email: ""
   })
+  const [activeMainTab, setActiveMainTab] = useState<string>("overview")
+  const [expandedDeficiencyId, setExpandedDeficiencyId] = useState<string | null>(null)
+  const [kagFilterSubject, setKagFilterSubject] = useState<string>("all")
+  const [kagCopySuccess, setKagCopySuccess] = useState<string | null>(null)
   const [accessRules, setAccessRules] = useState({ 
     isPremium: true, 
     customOverrides: ['overviewTab', 'subjectsTab', 'comparisonTab', 'progressTab', 'activityTab', 'basicStats', 'itemAnalysis', 'behaviorAnalysis', 'clusterAnalysis', 'bloomAnalysis'] as string[] 
@@ -1816,13 +1829,58 @@ export default function ParentDashboard() {
                     )
                   })()}
 
+                  {/* Biliyin Geriyə Xəritələnməsi & Spiral Bərpa Xülasəsi Banneri */}
+                  {(() => {
+                    const kagDeficiencies = extractStudentKagDeficiencies(studentStats?.recentTests || [])
+                    if (kagDeficiencies.length === 0) return null
+                    return (
+                      <div className="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-500/5 border border-amber-300 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+                        <div className="flex items-center gap-3">
+                          <div className="p-2.5 bg-amber-500/20 text-amber-800 rounded-xl shrink-0">
+                            <Brain className="h-5 w-5" />
+                          </div>
+                          <div>
+                            <h4 className="text-sm font-bold text-amber-950 flex items-center gap-2">
+                              <span>🎯 Biliyin Geriyə Xəritələnməsi: {kagDeficiencies.length} Təməl Boşluq Aşkarlandı</span>
+                              <Badge className="bg-red-500 text-white text-[10px] px-1.5 py-0 border-none">Diqqət</Badge>
+                            </h4>
+                            <p className="text-xs text-amber-900/80 mt-0.5">
+                              Səhvlərin kök səbəbləri aşağı sinif dərsliklərinə bağlanır. Valideyn üçün 15 dəqiqəlik bərpa planı hazırdır.
+                            </p>
+                          </div>
+                        </div>
+                        <Button
+                          size="sm"
+                          onClick={() => setActiveMainTab("kag")}
+                          className="shrink-0 bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs h-8 px-3 gap-1.5 shadow-xs"
+                        >
+                          <span>Bərpa Planına Keç</span>
+                          <ArrowRight className="h-3.5 w-3.5" />
+                        </Button>
+                      </div>
+                    )
+                  })()}
+
                   {/* Tabs - Scrollable on mobile, full grid on xl */}
-                  <Tabs defaultValue="overview" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
+                  <Tabs value={activeMainTab} onValueChange={setActiveMainTab} className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
                     <div className="w-full max-w-full overflow-x-auto pb-1.5 scrollbar-none sticky top-14 sm:top-0 z-20 bg-slate-50/95 backdrop-blur-md py-1.5">
-                      <TabsList className="flex xl:grid xl:grid-cols-6 w-max xl:w-full min-w-full gap-1 sm:gap-1.5 p-1 bg-slate-200/80 rounded-xl shadow-xs">
+                      <TabsList className="flex xl:grid xl:grid-cols-7 w-max xl:w-full min-w-full gap-1 sm:gap-1.5 p-1 bg-slate-200/80 rounded-xl shadow-xs">
                         <TabsTrigger value="overview" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
                           <BarChart3 className="h-3.5 w-3.5" />
                           <span>Ümumi</span>
+                        </TabsTrigger>
+                        <TabsTrigger value="kag" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium bg-amber-50/80 hover:bg-amber-100/90 text-amber-950 border border-amber-300/80 data-[state=active]:bg-amber-500 data-[state=active]:text-white">
+                          <Brain className="h-3.5 w-3.5 text-amber-600 group-data-[state=active]:text-white" />
+                          <span>🎯 Spiral Bərpa (KAG)</span>
+                          {(() => {
+                            const cnt = extractStudentKagDeficiencies(studentStats?.recentTests || []).length
+                            if (cnt === 0) return null
+                            return (
+                              <Badge className="ml-1 px-1.5 py-0 text-[10px] bg-red-500 text-white border-none">
+                                {cnt}
+                              </Badge>
+                            )
+                          })()}
                         </TabsTrigger>
                         <TabsTrigger value="subjects" className="px-3.5 py-2 text-xs sm:text-sm shrink-0 whitespace-nowrap gap-1.5 flex items-center font-medium">
                           <BookOpen className="h-3.5 w-3.5" />
@@ -1945,6 +2003,292 @@ export default function ParentDashboard() {
                       </Card>
                       </>
                       )}
+                    </TabsContent>
+
+                    {/* 🎯 KAG Tab: Biliyin Geriyə Xəritələnməsi & Spiral Bərpa Mərkəzi */}
+                    <TabsContent value="kag" className="space-y-4 sm:space-y-6 w-full min-w-0 max-w-full overflow-hidden">
+                      {(() => {
+                        const kagDeficiencies = extractStudentKagDeficiencies(studentStats?.recentTests || [])
+
+                        if (kagDeficiencies.length === 0) {
+                          return (
+                            <Card className="border-green-200 bg-gradient-to-br from-green-50/70 to-emerald-50/40 p-6 text-center">
+                              <CardContent className="space-y-3 pt-4">
+                                <div className="w-16 h-16 mx-auto bg-green-100 text-green-700 rounded-full flex items-center justify-center shadow-inner">
+                                  <CheckCircle className="h-8 w-8" />
+                                </div>
+                                <h3 className="text-lg font-bold text-green-950">
+                                  Mükəmməl! Heç Bir Təməl Bilik Boşluğu Yoxdur 🎉
+                                </h3>
+                                <p className="text-sm text-green-800/90 max-w-lg mx-auto">
+                                  Şagirdin yerinə yetirdiyi sınaq testlərində heç bir aşağı sinif təməl anlayışında kritik qüsur aşkarlanmadı. Bütün bilik zəncirləri möhkəmdir.
+                                </p>
+                              </CardContent>
+                            </Card>
+                          )
+                        }
+
+                        const availableSubjects = Array.from(new Set(kagDeficiencies.map((d) => d.subject)))
+                        const filteredDeficiencies = kagDeficiencies.filter((d) => kagFilterSubject === "all" || d.subject === kagFilterSubject)
+                        const totalRemedialMins = kagDeficiencies.reduce((sum, d) => sum + (d.remedialDuration || 15), 0)
+                        const totalAffectedQ = kagDeficiencies.reduce((sum, d) => sum + d.errorCount, 0)
+
+                        return (
+                          <div className="space-y-4 sm:space-y-6">
+                            {/* KAG Overview Hero Card */}
+                            <Card className="border-amber-200/80 bg-gradient-to-br from-amber-50/90 via-orange-50/60 to-white shadow-xs overflow-hidden">
+                              <CardHeader className="p-4 sm:p-6 pb-2 sm:pb-3">
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                  <div className="flex items-center gap-3">
+                                    <div className="p-3 bg-amber-500/20 text-amber-800 rounded-2xl shrink-0">
+                                      <Brain className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                      <CardTitle className="text-base sm:text-xl font-extrabold text-amber-950 flex items-center gap-2">
+                                        <span>Biliyin Geriyə Xəritələnməsi & 15 Dəqiqəlik Bərpa Mərkəzi</span>
+                                        <Badge className="bg-amber-200 text-amber-900 border-amber-300 font-bold text-xs">
+                                          SİTG Gold Core
+                                        </Badge>
+                                      </CardTitle>
+                                      <CardDescription className="text-xs sm:text-sm text-amber-900/80 mt-0.5">
+                                        Süni intellekt şagirdin testlərdə etdiyi səhvləri təhlil edərək, problemin əsl kök səbəbinin hansı aşağı sinif dərslik anlayışına söykəndiyini aşkar edib.
+                                      </CardDescription>
+                                    </div>
+                                  </div>
+
+                                  <div className="flex items-center gap-2 shrink-0">
+                                    <Button
+                                      variant="outline"
+                                      size="sm"
+                                      onClick={() => window.print()}
+                                      className="h-8 px-2.5 text-xs gap-1.5 border-amber-300 bg-white hover:bg-amber-100 text-amber-900 shadow-xs"
+                                    >
+                                      <span>Çap et</span>
+                                    </Button>
+                                  </div>
+                                </div>
+                              </CardHeader>
+
+                              <CardContent className="p-4 sm:p-6 pt-2 sm:pt-3">
+                                {/* 3 Metric Pills */}
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3.5 mb-4">
+                                  <div className="bg-white/90 border border-amber-200/80 rounded-xl p-3 flex items-center gap-3 shadow-2xs">
+                                    <div className="h-9 w-9 rounded-lg bg-red-100 text-red-700 flex items-center justify-center shrink-0">
+                                      <AlertTriangle className="h-4 w-4" />
+                                    </div>
+                                    <div>
+                                      <div className="text-lg font-black text-gray-900 leading-none">{kagDeficiencies.length}</div>
+                                      <div className="text-[11px] text-gray-500 font-medium mt-0.5">Aşkarlanan Təməl Boşluq</div>
+                                    </div>
+                                  </div>
+
+                                  <div className="bg-white/90 border border-amber-200/80 rounded-xl p-3 flex items-center gap-3 shadow-2xs">
+                                    <div className="h-9 w-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                                      <Clock className="h-4 w-4" />
+                                    </div>
+                                    <div>
+                                      <div className="text-lg font-black text-gray-900 leading-none">
+                                        {totalRemedialMins} dəq
+                                      </div>
+                                      <div className="text-[11px] text-gray-500 font-medium mt-0.5">Ümumi Bərpa Müddəti</div>
+                                    </div>
+                                  </div>
+
+                                  <div className="bg-white/90 border border-amber-200/80 rounded-xl p-3 flex items-center gap-3 shadow-2xs">
+                                    <div className="h-9 w-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                                      <Target className="h-4 w-4" />
+                                    </div>
+                                    <div>
+                                      <div className="text-lg font-black text-gray-900 leading-none">
+                                        {totalAffectedQ}
+                                      </div>
+                                      <div className="text-[11px] text-gray-500 font-medium mt-0.5">Təsirə Məruz Qalan Sual</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                {/* Subject Filter Pills */}
+                                {availableSubjects.length > 1 && (
+                                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none mb-1">
+                                    <button
+                                      type="button"
+                                      onClick={() => setKagFilterSubject("all")}
+                                      className={`px-2.5 py-1 text-xs rounded-lg font-medium transition-all shrink-0 ${
+                                        kagFilterSubject === "all"
+                                          ? "bg-amber-600 text-white shadow-xs"
+                                          : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
+                                      }`}
+                                    >
+                                      Bütün Fənlər ({kagDeficiencies.length})
+                                    </button>
+                                    {availableSubjects.map((subj) => {
+                                      const cnt = kagDeficiencies.filter((d) => d.subject === subj).length
+                                      return (
+                                        <button
+                                          key={subj}
+                                          type="button"
+                                          onClick={() => setKagFilterSubject(subj)}
+                                          className={`px-2.5 py-1 text-xs rounded-lg font-medium transition-all shrink-0 ${
+                                            kagFilterSubject === subj
+                                              ? "bg-amber-600 text-white shadow-xs"
+                                              : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
+                                          }`}
+                                        >
+                                          {subj} ({cnt})
+                                        </button>
+                                      )
+                                    })}
+                                  </div>
+                                )}
+                              </CardContent>
+                            </Card>
+
+                            {/* Deficiency Cards List */}
+                            <div className="space-y-3.5">
+                              {filteredDeficiencies.map((deficiency) => {
+                                const isExpanded = expandedDeficiencyId === deficiency.id
+                                return (
+                                  <Card
+                                    key={deficiency.id}
+                                    className="border-slate-200 hover:border-amber-300 transition-all shadow-xs overflow-hidden"
+                                  >
+                                    {/* Header Strip */}
+                                    <div
+                                      onClick={() => setExpandedDeficiencyId(isExpanded ? null : deficiency.id)}
+                                      className="p-3.5 sm:p-4 bg-white cursor-pointer hover:bg-slate-50/70 transition-colors flex items-start sm:items-center justify-between gap-3"
+                                    >
+                                      <div className="flex-1 min-w-0">
+                                        <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                                          <Badge className="bg-amber-100 text-amber-900 border-amber-200 text-[11px] font-semibold">
+                                            {deficiency.isRootAnchor
+                                              ? "Bünövrə Nöqtəsi (1-ci Sinif)"
+                                              : deficiency.isIntraGrade
+                                              ? "Cari Sinif Dərsi"
+                                              : `${deficiency.rootGrade}-ci Sinif Təməli`}
+                                          </Badge>
+                                          <Badge variant="outline" className="text-[11px] text-gray-600 border-gray-300">
+                                            📚 {deficiency.rootBook}
+                                          </Badge>
+                                          <Badge className="bg-red-50 text-red-700 border-red-200 text-[11px]">
+                                            ❌ {deficiency.errorCount} sualda səhv
+                                          </Badge>
+                                        </div>
+
+                                        <h4 className="text-sm sm:text-base font-bold text-gray-900 truncate">
+                                          🎯 {deficiency.conceptName}
+                                        </h4>
+                                      </div>
+
+                                      <div className="flex items-center gap-2 shrink-0">
+                                        <span className="hidden sm:inline-flex items-center text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200">
+                                          ⏱️ {deficiency.remedialDuration} dəq
+                                        </span>
+                                        <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-gray-400">
+                                          {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                                        </Button>
+                                      </div>
+                                    </div>
+
+                                    {/* Expanded Details */}
+                                    {isExpanded && (
+                                      <div className="p-4 sm:p-5 bg-gradient-to-b from-slate-50/50 to-amber-50/20 border-t border-slate-100 space-y-4">
+                                        {/* Valideyn Fəaliyyət Bələdçisi */}
+                                        <div className="bg-white border border-amber-200/90 rounded-xl p-4 shadow-2xs space-y-2">
+                                          <div className="flex items-center gap-2 text-amber-950 font-bold text-xs sm:text-sm">
+                                            <Brain className="h-4 w-4 text-amber-600 shrink-0" />
+                                            <span>Valideyn üçün 15 Dəqiqəlik Spiral Bərpa Addımı:</span>
+                                          </div>
+                                          <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal pl-6">
+                                            {deficiency.parentActionTip}
+                                          </p>
+                                        </div>
+
+                                        {/* Dərslikdən Elmi Tərif / Qayda */}
+                                        {deficiency.remedialDefinition && (
+                                          <div className="bg-blue-50/70 border border-blue-200 rounded-xl p-3.5 space-y-1.5 text-xs">
+                                            <div className="flex items-center gap-1.5 font-bold text-blue-950">
+                                              <BookOpen className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+                                              <span>Dərslikdən Rəsmi Elmi Tərif ({deficiency.rootBook}):</span>
+                                            </div>
+                                            <p className="text-blue-900/90 leading-relaxed pl-5 font-normal">
+                                              {deficiency.remedialDefinition}
+                                            </p>
+                                          </div>
+                                        )}
+
+                                        {/* Fənlərarası Əlaqə */}
+                                        {deficiency.crossSubject && deficiency.crossSubject.length > 0 && (
+                                          <div className="bg-indigo-50/70 border border-indigo-200 rounded-xl p-3 space-y-1.5 text-xs">
+                                            <div className="flex items-center gap-1.5 font-bold text-indigo-950">
+                                              <Lightbulb className="h-3.5 w-3.5 text-indigo-600 shrink-0" />
+                                              <span>Fənlərarası Spiral Əlaqə:</span>
+                                            </div>
+                                            <div className="flex flex-wrap gap-1.5 pl-5">
+                                              {deficiency.crossSubject.map((cs: any, csIdx: number) => (
+                                                <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-900 font-medium text-[11px]">
+                                                  🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
+                                                </span>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        )}
+
+                                        {/* Səhv edilmiş suallar */}
+                                        <div className="space-y-2 pt-1">
+                                          <h5 className="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                                            <Target className="h-3.5 w-3.5 text-red-500" />
+                                            <span>Bu təməl boşluqla əlaqədar səhv cavablandırılmış suallar ({deficiency.failingQuestions.length}):</span>
+                                          </h5>
+
+                                          <div className="space-y-2">
+                                            {deficiency.failingQuestions.map((fq, fqIdx) => (
+                                              <div
+                                                key={fqIdx}
+                                                className="bg-white border border-slate-200 rounded-xl p-3 text-xs space-y-2"
+                                              >
+                                                <div className="flex items-start justify-between gap-2">
+                                                  <p className="font-semibold text-slate-900 leading-snug">
+                                                    {fqIdx + 1}. {fq.question}
+                                                  </p>
+                                                  {fq.testDate && (
+                                                    <Badge variant="outline" className="text-[10px] shrink-0 text-slate-500">
+                                                      {fq.testDate}
+                                                    </Badge>
+                                                  )}
+                                                </div>
+
+                                                {/* Distraktor Diaqnostikası */}
+                                                {fq.distractorDiagnostic && (
+                                                  <div className="bg-red-50/80 border border-red-200/80 rounded-lg p-2.5 text-red-900 text-[11px] space-y-1">
+                                                    <span className="font-bold flex items-center gap-1">
+                                                      <AlertTriangle className="h-3 w-3 text-red-600 shrink-0" />
+                                                      Şagirdin Səhv Cavab Diaqnostikası:
+                                                    </span>
+                                                    <p className="leading-relaxed text-red-800/90 pl-4">
+                                                      {fq.distractorDiagnostic}
+                                                    </p>
+                                                  </div>
+                                                )}
+
+                                                {/* Doğru Cavab və Dərslik İzahı */}
+                                                {fq.explanation && (
+                                                  <div className="text-slate-600 text-[11px] border-l-2 border-emerald-500 pl-2.5 py-0.5">
+                                                    <strong className="text-emerald-800">Dərslik Həlli:</strong> {fq.explanation}
+                                                  </div>
+                                                )}
+                                              </div>
+                                            ))}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    )}
+                                  </Card>
+                                )
+                              })}
+                            </div>
+                          </div>
+                        )
+                      })()}
                     </TabsContent>
 
                     {/* Subjects Tab */}
@@ -2347,13 +2691,13 @@ export default function ParentDashboard() {
                           </Button>
                         </Link>
                         <Button
-                          variant={currentView === 'messages' ? 'default' : 'outline'}
+                          variant={(currentView as string) === 'messages' ? 'default' : 'outline'}
                           size="sm"
                           className="gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-3.5 font-semibold text-xs rounded-xl"
-                          onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
+                          onClick={() => setCurrentView((currentView as string) === 'dashboard' ? 'messages' : 'dashboard')}
                         >
-                          {currentView === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
-                          {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
+                          {(currentView as string) === 'dashboard' ? <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <LayoutDashboard className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
+                          {(currentView as string) === 'dashboard' ? 'Mesajlar' : 'Panel'}
                         </Button>
                       </div>
                       <Button

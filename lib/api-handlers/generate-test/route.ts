@@ -14,6 +14,7 @@ import { getQuestionsFromSupabase, resolveCanonicalSubject } from "@/lib/supabas
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
 import { getSafeWorkspacePath } from "@/lib/safe-path"
 import { reconcileAnswerKeyRuntime, sanitizeDistractorDiagnostics } from "@/lib/runtime-answer-guard"
+import { sanitizeKagRuntime, resolveCanonicalOntologyNode } from "@/lib/runtime-kag-guard"
 import { getGradeDb } from "@/lib/grade-db"
 
 export async function POST(request: NextRequest) {
@@ -598,31 +599,42 @@ function getDifficultyDistribution(questions: any[]) {
 }
 
 function resolveBackwardTrace(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
-  if (q.backward_trace && typeof q.backward_trace === "object") {
+  if (q.backward_trace && typeof q.backward_trace === "object" && q.backward_trace.root_concept && !q.backward_trace.root_concept.startsWith("Təməl ")) {
     return q.backward_trace
   }
   const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
-  if (g <= 1) {
+  const fullText = `${q.question || ""} ${q.explanation || ""} ${topic || ""}`
+  const canonicalMatch = resolveCanonicalOntologyNode(fullText, textbookTitle)
+
+  if (canonicalMatch && canonicalMatch.prerequisiteLabel) {
+    const pGrade = canonicalMatch.prerequisiteGrade || Math.min(g, canonicalMatch.firstGradeVerified || g)
+    const pBook = canonicalMatch.prerequisiteBook || `${canonicalMatch.subject || textbookTitle} ${pGrade}`
+    const pClaim = canonicalMatch.prerequisiteClaim ? ` (${canonicalMatch.prerequisiteClaim.replace(/\.$/, "")})` : ""
     return {
-      is_root_anchor: true,
-      root_grade: 1,
-      root_book: textbookTitle,
-      root_page: "14 - 18",
-      root_concept: topic,
+      is_root_anchor: pGrade === 1,
+      is_intra_grade: pGrade === g,
+      canonical_node_id: canonicalMatch.id,
+      prerequisite_node_id: canonicalMatch.prerequisiteId,
+      root_grade: pGrade,
+      root_book: pBook,
+      root_concept: canonicalMatch.prerequisiteLabel,
+      concept_name: canonicalMatch.label,
       remedial_duration_mins: 15,
-      parent_action_tip: `Övladınızın 1-ci sinif təməl bacarıqlarını möhkəmləndirmək üçün "${topic}" mövzusunu dərslik üzrə 15 dəqiqə təkrarlayın.`
+      remedial_definition: canonicalMatch.prerequisiteClaim || undefined,
+      parent_action_tip: `Övladınızın ${g}-ci sinif "${canonicalMatch.label}" mövzusunu tam anlaması üçün ${pGrade}-ci sinif ${pBook} dərsliyindəki "${canonicalMatch.prerequisiteLabel}" anlayışını${pClaim} 15 dəqiqə təkrarlayın.`
     }
   }
-  const rootGrade = Math.max(1, g - 2)
-  const baseSubject = String(textbookTitle || "").replace(/\d+.*$/, "").trim() || "Tədris fənni"
+
+  // Grounded intra-grade fallback based on real textbook and topic (zero fake pages)
   return {
-    is_root_anchor: rootGrade === 1,
-    root_grade: rootGrade,
-    root_book: `${baseSubject} ${rootGrade}`,
-    root_page: "32 - 36",
-    root_concept: `Təməl ${topic} anlayışı və qaydaları`,
+    is_root_anchor: g === 1,
+    is_intra_grade: true,
+    root_grade: g,
+    root_book: textbookTitle,
+    root_concept: topic,
+    concept_name: topic,
     remedial_duration_mins: 15,
-    parent_action_tip: `Övladınızın ${g}-ci sinifdəki "${topic}" mövzusunu tam anlaması üçün ${rootGrade}-ci sinif ${baseSubject} ${rootGrade} dərsliyindəki təməl anlayışı 15 dəqiqə təkrarlayın.`
+    parent_action_tip: `Övladınızın ${g}-ci sinif ${textbookTitle} dərsliyindəki "${topic}" mövzusunu möhkəmləndirmək üçün əsas qaydaları 15 dəqiqə nəzərdən keçirin.`
   }
 }
 

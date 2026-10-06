@@ -31,6 +31,9 @@ interface Question {
   image?: string
   audio?: string
   optionAudios?: string[]
+  grounding?: any
+  distractor_diagnostics?: any
+  backward_trace?: any
 }
 
 interface TestConfig {
@@ -434,6 +437,9 @@ export default function TestPage() {
         difficulty: question.difficulty,
         bloomLevel: question.bloomLevel,
         sourceContext: question.sourceContext,
+        backward_trace: question.backward_trace,
+        grounding: question.grounding,
+        distractor_diagnostics: question.distractor_diagnostics,
       }
     })
 
@@ -552,6 +558,7 @@ export default function TestPage() {
           completedAt: resultsPageFormat.completedAt,
           answers: answersMap,
           detailedResults,
+          questions,
         })
       }).then(res => res.json()).then(data => {
         if (data.emailNotification?.sent) {

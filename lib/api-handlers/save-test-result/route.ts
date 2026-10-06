@@ -123,7 +123,7 @@ export async function POST(request: NextRequest) {
     // 2. Identify linked parent and send email notification to parent's real inbox
     let parentEmailToNotify = (body.parentEmail || "").trim()
     let parentName = body.parentName || "Valideyn"
-    let emailStatus = { sent: false, parentEmail: "", simulated: false }
+    let emailStatus: { sent: boolean; parentEmail: string; simulated: boolean; redirectedTo?: string } = { sent: false, parentEmail: "", simulated: false }
     let sendOnlyToStudent = false
 
     try {
@@ -259,6 +259,7 @@ export async function POST(request: NextRequest) {
       completedAt: body.completedAt || new Date().toISOString(),
       answers: body.answers,
       detailedResults: body.detailedResults,
+      questions: body.questions,
     }
     const saved = saveTestResult(storedResult)
 

@@ -1,5 +1,6 @@
 import { supabaseAdmin } from "@/lib/user-store"
 import { formatSourceContext, cleanExplanation } from "@/lib/format-math"
+import { sanitizeKagRuntime } from "@/lib/runtime-kag-guard"
 
 export interface SafeClientQuestion {
   id: number
@@ -12,6 +13,9 @@ export interface SafeClientQuestion {
   bloomLevel?: string
   timeEstimate?: number
   sourceContext?: string
+  backward_trace?: any
+  grounding?: any
+  distractor_diagnostics?: any
 }
 
 export interface EvaluatedQuestionResult {
@@ -24,6 +28,9 @@ export interface EvaluatedQuestionResult {
   difficulty: string
   bloomLevel?: string
   sourceContext?: string
+  backward_trace?: any
+  grounding?: any
+  distractor_diagnostics?: any
 }
 
 export function resolveCanonicalSubject(textbookTitle: string, gradeDigit: string | number): string {
@@ -51,7 +58,7 @@ export async function getQuestionsFromSupabase(params: {
   try {
     let query = supabaseAdmin
       .from("Question")
-      .select("id, question, options, correctAnswer, explanation, difficulty, topic, bloomLevel, sourceContext")
+      .select("id, question, options, correctAnswer, explanation, difficulty, topic, bloomLevel, sourceContext, backward_trace, grounding, distractor_diagnostics")
       .eq("grade", grade)
       .eq("status", "active")
       .ilike("subject", `%${subject}%`)
@@ -78,18 +85,24 @@ export async function getQuestionsFromSupabase(params: {
 
     const shuffled = data.sort(() => Math.random() - 0.5).slice(0, count)
 
-    return shuffled.map((q: any) => ({
-      id: q.id,
-      question: q.question,
-      options: Array.isArray(q.options) ? q.options : [],
-      correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
-      explanation: cleanExplanation(q.explanation || ""),
-      difficulty: q.difficulty || "orta",
-      topic: q.topic || topic,
-      bloomLevel: q.bloomLevel || "anlama",
-      timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan") ? 1 : (q.difficulty === "çətin") ? 3 : 2,
-      sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə:** ${subject}, "${q.topic}" mövzusu`),
-    }))
+    return shuffled.map((q: any) => {
+      const rawQuestion = {
+        id: q.id,
+        question: q.question,
+        options: Array.isArray(q.options) ? q.options : [],
+        correctAnswer: typeof q.correctAnswer === "number" ? q.correctAnswer : 0,
+        explanation: cleanExplanation(q.explanation || ""),
+        difficulty: q.difficulty || "orta",
+        topic: q.topic || topic,
+        bloomLevel: q.bloomLevel || "anlama",
+        timeEstimate: (q.difficulty === "sadə" || q.difficulty === "asan") ? 1 : (q.difficulty === "çətin") ? 3 : 2,
+        sourceContext: formatSourceContext(q.sourceContext || `> **Mənbə:** ${subject}, "${q.topic}" mövzusu`),
+        backward_trace: q.backward_trace,
+        grounding: q.grounding,
+        distractor_diagnostics: q.distractor_diagnostics,
+      }
+      return sanitizeKagRuntime(rawQuestion, subject, grade, q.topic || topic)
+    })
   } catch (err) {
     console.warn("[Supabase Questions] Query failed or timed out:", err)
     return []
@@ -113,7 +126,7 @@ export async function evaluateStudentAnswers(
   try {
     const { data: realQuestions, error } = await supabaseAdmin
       .from("Question")
-      .select("id, question, correctAnswer, explanation, difficulty, bloomLevel, sourceContext")
+      .select("id, question, correctAnswer, explanation, difficulty, bloomLevel, sourceContext, backward_trace, grounding, distractor_diagnostics, topic, subject, grade")
       .in("id", questionIds)
 
     if (error || !realQuestions) {
@@ -126,16 +139,33 @@ export async function evaluateStudentAnswers(
       const isCorrect = userAns !== undefined && userAns === rq.correctAnswer
       if (isCorrect) correctCount++
 
+      const sanitized = sanitizeKagRuntime({
+        id: rq.id,
+        question: rq.question,
+        options: [],
+        correctAnswer: rq.correctAnswer,
+        explanation: cleanExplanation(rq.explanation),
+        difficulty: rq.difficulty || "orta",
+        bloomLevel: rq.bloomLevel || "anlama",
+        sourceContext: formatSourceContext(rq.sourceContext),
+        backward_trace: rq.backward_trace,
+        grounding: rq.grounding,
+        distractor_diagnostics: rq.distractor_diagnostics,
+      }, rq.subject || "Ümumi", rq.grade || 8, rq.topic || "")
+
       return {
         questionId: rq.id,
         question: rq.question,
         userAnswer: userAns,
         correctAnswer: rq.correctAnswer,
         isCorrect,
-        explanation: cleanExplanation(rq.explanation),
+        explanation: sanitized.explanation || cleanExplanation(rq.explanation),
         difficulty: rq.difficulty || "orta",
         bloomLevel: rq.bloomLevel || "anlama",
-        sourceContext: formatSourceContext(rq.sourceContext),
+        sourceContext: sanitized.sourceContext || formatSourceContext(rq.sourceContext),
+        backward_trace: sanitized.backward_trace,
+        grounding: sanitized.grounding,
+        distractor_diagnostics: sanitized.distractor_diagnostics,
       }
     })
 
