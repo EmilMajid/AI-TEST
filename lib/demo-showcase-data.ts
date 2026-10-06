@@ -33,6 +33,54 @@ export const INCI_TEST_RESULTS: StoredTestResult[] = [
     wrongAnswers: 2,
     timeSpent: 680,
     completedAt: "2024-12-12T14:15:00.000Z",
+    detailedResults: [
+      {
+        questionId: 1,
+        question: "Cümlədə mübtədanın əsas vəzifəsi və onun ifadə vasitələri hansılardır?",
+        userAnswer: 1,
+        correctAnswer: 0,
+        isCorrect: false,
+        explanation: "Mübtəda cümlənin haqqında danışılan əşyanı və ya şəxsi bildirən baş üzvüdür.",
+        sourceContext: "Mənbə (Dərslik): Azərbaycan dili 6, Cümlə üzvləri",
+        backward_trace: {
+          canonical_node_id: "az-6-cumle",
+          prerequisite_node_id: "az-5-cumle-bas-uzv",
+          root_grade: 5,
+          root_book: "Azərbaycan dili 5",
+          root_concept: "Cümlənin baş üzvləri (Mübtəda və Xəbər)",
+          concept_name: "Cümlə üzvləri: Baş və ikinci dərəcəli üzvlər",
+          remedial_duration_mins: 15,
+          remedial_definition: "Mübtəda cümlədə hərəkət və ya əlamətin aid olduğu şəxsi/əşyanı bildirir və kim? nə? hara? sualına cavab verir.",
+          parent_action_tip: "Övladınızın 6-cı sinif 'Cümlə üzvləri' mövzusunu tam anlaması üçün 5-ci sinif Azərbaycan dili dərsliyindəki 'Cümlənin baş üzvləri (Mübtəda və Xəbər)' qaydasını 15 dəqiqə təkrarlayın."
+        },
+        distractor_diagnostics: {
+          "B": "Xəbər və mübtədanı qarışdırmaq şagirdlərin ən çox yol verdiyi tipik səhvdir."
+        }
+      },
+      {
+        questionId: 2,
+        question: "Hansı cümlədə tamamlıq ismin təsirlik halında işlənmişdir?",
+        userAnswer: 2,
+        correctAnswer: 1,
+        isCorrect: false,
+        explanation: "Təsirlik halda olan söz vasitəsiz tamamlıq rolunda çıxış edir və 'kimi?', 'nəyi?' suallarına cavab verir.",
+        sourceContext: "Mənbə (Dərslik): Azərbaycan dili 6, Tamamlıq",
+        backward_trace: {
+          canonical_node_id: "az-6-tamamliq",
+          prerequisite_node_id: "az-5-ismin-hallari",
+          root_grade: 5,
+          root_book: "Azərbaycan dili 5",
+          root_concept: "İsmin halları və şəkilçiləri",
+          concept_name: "Tamamlıq və hal şəkilçiləri",
+          remedial_duration_mins: 15,
+          remedial_definition: "Təsirlik hal şəkilçisi (-ı, -i, -u, -ü) qəbul etmiş isim cümlədə vasitəsiz tamamlıq olur.",
+          parent_action_tip: "Övladınızın 6-cı sinif 'Tamamlıq' sintaktik əlaqəsini qavraması üçün 5-ci sinif Azərbaycan dili dərsliyindəki 'İsmin halları və şəkilçiləri' bölməsini 15 dəqiqə təkrarlayın."
+        },
+        distractor_diagnostics: {
+          "C": "Yönlük hal ilə təsirlik hal şəkilçilərini qarışdırmışdır."
+        }
+      }
+    ],
   },
   {
     id: "inci-az-3",
@@ -211,6 +259,31 @@ export const INCI_TEST_RESULTS: StoredTestResult[] = [
     wrongAnswers: 2,
     timeSpent: 860,
     completedAt: "2024-11-30T16:00:00.000Z",
+    detailedResults: [
+      {
+        questionId: 1,
+        question: "Düzbucaqlının eni 4 sm, uzunluğu 9 sm olarsa, onunla eyni sahəyə malik kvadratın perimetrini tapın.",
+        userAnswer: 2,
+        correctAnswer: 0,
+        isCorrect: false,
+        explanation: "Sahə S = 4 * 9 = 36 sm². Kvadratın tərəfi a = √36 = 6 sm. Perimetr P = 4 * 6 = 24 sm.",
+        sourceContext: "Mənbə (Dərslik): Riyaziyyat 6, Sahə və Perimetr",
+        backward_trace: {
+          canonical_node_id: "mat-6-sahe",
+          prerequisite_node_id: "mat-5-kvadrat-sahe",
+          root_grade: 5,
+          root_book: "Riyaziyyat 5",
+          root_concept: "Düzbucaqlı və kvadratın sahə düsturu",
+          concept_name: "Həndəsi fiqurların perimetri və sahəsi",
+          remedial_duration_mins: 15,
+          remedial_definition: "Düzbucaqlının sahəsi eni ilə uzunluğunun hasilinə (a × b), kvadratın sahəsi isə tərəfinin kvadratına (a²) bərabərdir.",
+          parent_action_tip: "Övladınızın mürəkkəb fiqurların sahəsini hesablaya bilməsi üçün 5-ci sinif Riyaziyyat dərsliyindəki 'Düzbucaqlı və kvadratın sahə düsturu' mövzusunu 15 dəqiqə nəzərdən keçirin."
+        },
+        distractor_diagnostics: {
+          "C": "Sahəni perimetrlə qarışdıraraq tərəfi səhv hesablamışdır."
+        }
+      }
+    ],
   },
   {
     id: "inci-mat-6",
@@ -461,6 +534,31 @@ export const EMILIA_TEST_RESULTS: StoredTestResult[] = [
     wrongAnswers: 1,
     timeSpent: 360,
     completedAt: "2024-12-05T14:10:00.000Z",
+    detailedResults: [
+      {
+        questionId: 1,
+        question: "'Hündür' sözünün əksmənalı (antonim) tayı hansıdır?",
+        userAnswer: 2,
+        correctAnswer: 0,
+        isCorrect: false,
+        explanation: "'Hündür' sözünün əksmənalı tayı 'alçaq' sözüdür.",
+        sourceContext: "Mənbə (Dərslik): Azərbaycan dili 2, Əksmənalı sözlər",
+        backward_trace: {
+          canonical_node_id: "az-2-antonim",
+          prerequisite_node_id: "az-1-sozler",
+          root_grade: 1,
+          root_book: "Azərbaycan dili 1",
+          root_concept: "Sözlərin mənası və əlamət bildirən sözlər",
+          concept_name: "Əksmənalı və yaxınmənalı sözlər",
+          remedial_duration_mins: 15,
+          remedial_definition: "Əksmənalı sözlər bir-birinin tam əksini bildirən sözlərdir (məsələn: böyük-kiçik, hündür-alçaq).",
+          parent_action_tip: "Övladınızın əksmənalı sözləri dərindən anlaması üçün 1-ci sinif Azərbaycan dili dərsliyindəki 'Əlamət bildirən sözlər' bölməsini 15 dəqiqə əyani misallarla təkrarlayın."
+        },
+        distractor_diagnostics: {
+          "C": "Yaxınmənalı sözlə əksmənalı sözü qarışdırmışdır."
+        }
+      }
+    ],
   },
   {
     id: "emilia-az-5",

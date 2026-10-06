@@ -81,7 +81,38 @@ export async function GET(request: NextRequest) {
 
             if (trRows && trRows.length > 0) {
               for (const r of trRows) {
-                if (!storedResults.some((s) => String(s.id) === String(r.id) || (s.textbook === r.textbook && s.completedAt === r.completedAt))) {
+                let parsedDetailedResults: any[] | undefined = undefined
+                let parsedQuestions: any[] | undefined = undefined
+                let parsedAnswers = r.answers || {}
+
+                if (r.answers && typeof r.answers === "object") {
+                  if (Array.isArray(r.answers.detailedResults) && r.answers.detailedResults.length > 0) {
+                    parsedDetailedResults = r.answers.detailedResults
+                  }
+                  if (Array.isArray(r.answers.questions) && r.answers.questions.length > 0) {
+                    parsedQuestions = r.answers.questions
+                  }
+                  if (r.answers.userAnswers) {
+                    parsedAnswers = r.answers.userAnswers
+                  }
+                }
+
+                // Match with disk results to retrieve rich KAG detailedResults if missing
+                if (!parsedDetailedResults) {
+                  const diskMatch = storedResults.find((s) =>
+                    String(s.id) === String(r.id) ||
+                    (s.textbook === r.textbook && Math.abs(new Date(s.completedAt).getTime() - new Date(r.completedAt).getTime()) < 60000)
+                  )
+                  if (diskMatch?.detailedResults && diskMatch.detailedResults.length > 0) {
+                    parsedDetailedResults = diskMatch.detailedResults
+                  }
+                  if (diskMatch?.questions && diskMatch.questions.length > 0) {
+                    parsedQuestions = diskMatch.questions
+                  }
+                }
+
+                const existingIdx = storedResults.findIndex((s) => String(s.id) === String(r.id) || (s.textbook === r.textbook && s.completedAt === r.completedAt))
+                if (existingIdx === -1) {
                   storedResults.push({
                     id: r.id,
                     studentId: studentId,
@@ -94,10 +125,17 @@ export async function GET(request: NextRequest) {
                     completedAt: r.completedAt,
                     correctAnswers: Math.round((r.score / 100) * 10),
                     totalQuestions: 10,
+                    answers: parsedAnswers,
+                    detailedResults: parsedDetailedResults,
+                    questions: parsedQuestions,
                   })
+                } else if (!storedResults[existingIdx].detailedResults && parsedDetailedResults) {
+                  storedResults[existingIdx].detailedResults = parsedDetailedResults
+                  storedResults[existingIdx].questions = parsedQuestions
                 }
               }
             }
+
           }
         }
       } catch (err) {

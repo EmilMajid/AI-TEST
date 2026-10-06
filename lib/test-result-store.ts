@@ -134,9 +134,14 @@ export function saveTestResult(result: StoredTestResult): StoredTestResult {
             class: String(newResult.class || "6"),
             score: Number(newResult.score) || 0,
             timeSpent: Number(newResult.timeSpent) || 0,
-            answers: newResult.answers || {},
+            answers: {
+              userAnswers: newResult.answers || {},
+              detailedResults: newResult.detailedResults || [],
+              questions: newResult.questions || [],
+            },
             completedAt: newResult.completedAt || new Date().toISOString(),
           })
+
         }
       }).catch((e: any) => console.error("Supabase insert error:", e))
     }

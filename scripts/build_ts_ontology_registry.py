@@ -30,7 +30,6 @@ def format_book_title(book_id, subject, grade):
     if not book_id:
         return f"{subject} {grade}"
     b = str(book_id).replace("-h1", " (hissə 1)").replace("-h2", " (hissə 2)").replace("-", " ")
-    # Capitalize
     words = b.split()
     formatted = " ".join(w.capitalize() if not w.isdigit() else w for w in words)
     return formatted
@@ -56,12 +55,36 @@ for e in edges:
         distractor_map[e['source']] = e['target']
         distractor_map[e['target']] = e['source']
 
+BANNED_STEMS = {
+    'lar', 'lər', 'hava', 'hadisə', 'hərəkət', 'proses', 'kütlələri', 'çərşənbəsi',
+    'enerjisi', 'dərsi', 'mövzusu', 'adlanır', 'nədir', 'necə', 'vvə', 'şmə', 'rma',
+    'kök', 'oxu', 'yol', 'göl', 'şeh', 'bas', 'kod', 'üçün', 'olan', 'kimi', 'hansı',
+    'biri', 'onun', 'buna', 'belə', 'edir', 'olur', 'daha', 'eyni', 'yeni', 'bütün',
+    'hissə', 'sinif', 'məsələ', 'sual', 'cavab', 'dövr', 'qayda', 'təsnifat', 'növ'
+}
+ALLOWED_SHORT = {'ram', 'rom', 'cpu', 'dnt', 'rnt', 'bit', 'gəm', 'mhm', 'hqq', 'vahid', 'kütlə', 'hiss'}
+
 items = []
+skipped_count = 0
+
 for n in nodes:
     nid = n['id']
     lbl = n['canonical_label']
     stem = lbl.lower().replace(' döyüşü', '').replace(' sülhü', '').replace(' müqaviləsi', '').replace(' teoremi', '').replace(' qanunu', '').replace(' prosesi', '').replace(' düsturu', '').replace(' xəstəliyi', '').strip()
     
+    stem_low = stem.lower()
+    # Filter out junk stop-words and fragments
+    if stem_low in BANNED_STEMS or (len(stem_low) <= 3 and stem_low not in ALLOWED_SHORT):
+        skipped_count += 1
+        continue
+
+    # Filter aliases
+    clean_aliases = []
+    for a in n.get('aliases', []):
+        al = a.strip().lower()
+        if al and al not in BANNED_STEMS and (len(al) > 3 or al in ALLOWED_SHORT):
+            clean_aliases.append(a.strip())
+
     prereq_id = prereq_map.get(nid)
     prereq_node = node_map.get(prereq_id) if prereq_id else None
     prereq_lbl = prereq_node['canonical_label'] if prereq_node else None
@@ -76,7 +99,7 @@ for n in nodes:
     item = {
         'id': nid,
         'stem': stem,
-        'aliases': n.get('aliases', []),
+        'aliases': clean_aliases,
         'label': lbl,
         'type': n['type'],
         'subject': n['subject'],
@@ -93,7 +116,7 @@ for n in nodes:
     }
     items.append(item)
 
-print(f"Generated {len(items)} registry items with hydrated prerequisite claims & books.")
+print(f"Generated {len(items)} registry items (filtered {skipped_count} junk/stopword nodes) with hydrated prerequisite claims & books.")
 
 ts_lines = []
 ts_lines.append("\n// ============================================================================")
@@ -116,32 +139,85 @@ ts_lines.append("  distractorId?: string")
 ts_lines.append("  distractorLabel?: string")
 ts_lines.append("}\n")
 ts_lines.append("const CANONICAL_ONTOLOGY_REGISTRY = " + json.dumps(items, ensure_ascii=False, indent=2) + ";\n")
-ts_lines.append("""export function resolveCanonicalOntologyNode(text: string, subject?: string): CanonicalOntologyMatch | null {
+ts_lines.append("""
+const REGISTRY_BANNED_STEMS = new Set([
+  'lar', 'lər', 'hava', 'hadisə', 'hərəkət', 'proses', 'kütlələri', 'çərşənbəsi',
+  'enerjisi', 'dərsi', 'mövzusu', 'adlanır', 'nədir', 'necə', 'vvə', 'şmə', 'rma',
+  'kök', 'oxu', 'yol', 'göl', 'şeh', 'bas', 'kod', 'üçün', 'olan', 'kimi', 'hansı',
+  'biri', 'onun', 'buna', 'belə', 'edir', 'olur', 'daha', 'eyni', 'yeni', 'bütün',
+  'hissə', 'sinif', 'məsələ', 'sual', 'cavab', 'dövr', 'qayda', 'təsnifat', 'növ'
+])
+
+function matchWholeWordAz(text: string, term: string): boolean {
+  if (!text || !term || term.length < 3) return false
+  const escaped = term.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')
+  const regex = new RegExp(`(?:^|[^a-zçəıöüşğ0-9])${escaped}(?:[^a-zçəıöüşğ0-9]|$)`, 'i')
+  return regex.test(text)
+}
+
+export function resolveCanonicalOntologyNode(
+  text: string,
+  subject?: string,
+  maxGrade?: number
+): CanonicalOntologyMatch | null {
   if (!text) return null
   const lowText = text.toLowerCase()
-  
+  const targetSubj = normalizeOntologySubject(subject)
+  const ceilingGrade = (typeof maxGrade === 'number' && maxGrade > 0) ? maxGrade : 11
+
+  let bestMatch: CanonicalOntologyMatch | null = null
+  let bestScore = -1
+
   for (const item of CANONICAL_ONTOLOGY_REGISTRY) {
+    // Subject Isolation Firewall: If subject is provided, strict match is required!
+    if (targetSubj) {
+      const itemSubj = normalizeOntologySubject(item.subject)
+      if (itemSubj && itemSubj !== targetSubj) {
+        continue
+      }
+    }
+
+    // Grade Boundary: Cannot match verified grade beyond ceiling
+    if (item.firstGradeVerified && item.firstGradeVerified > ceilingGrade) {
+      continue
+    }
+
+    // Prerequisite Ceiling: If item has a prerequisite, prerequisite grade CANNOT exceed ceilingGrade (Strict Backward Only!)
+    if (item.prereqGrade && item.prereqGrade > ceilingGrade) {
+      continue
+    }
+
     const candidates = [item.stem, ...(item.aliases || []).map((a: string) => a.toLowerCase().trim())]
-    if (candidates.some((c: string) => c && c.length >= 2 && (lowText.includes(c) || new RegExp(`\\\\b${c}\\\\b`, 'i').test(lowText)))) {
-      return {
-        id: item.id,
-        label: item.label,
-        type: item.type,
-        subject: item.subject,
-        firstGradeVerified: item.firstGradeVerified,
-        claim: item.claim || undefined,
-        book: item.book || undefined,
-        prerequisiteId: item.prereqId || undefined,
-        prerequisiteLabel: item.prereqLabel || undefined,
-        prerequisiteGrade: item.prereqGrade || undefined,
-        prerequisiteBook: item.prereqBook || undefined,
-        prerequisiteClaim: item.prereqClaim || undefined,
-        distractorId: item.distId || undefined,
-        distractorLabel: item.distLabel || undefined
+      .filter((c: string) => c && c.length >= 3 && !REGISTRY_BANNED_STEMS.has(c))
+
+    for (const c of candidates) {
+      if (matchWholeWordAz(lowText, c)) {
+        // Score based on candidate term length (longer/more specific matches win)
+        const score = c.length + (targetSubj && normalizeOntologySubject(item.subject) === targetSubj ? 50 : 0)
+        if (score > bestScore) {
+          bestScore = score
+          bestMatch = {
+            id: item.id,
+            label: item.label,
+            type: item.type,
+            subject: item.subject,
+            firstGradeVerified: item.firstGradeVerified,
+            claim: item.claim || undefined,
+            book: item.book || undefined,
+            prerequisiteId: item.prereqId || undefined,
+            prerequisiteLabel: item.prereqLabel || undefined,
+            prerequisiteGrade: item.prereqGrade ? Math.min(item.prereqGrade, ceilingGrade) : undefined,
+            prerequisiteBook: item.prereqBook || undefined,
+            prerequisiteClaim: item.prereqClaim || undefined,
+            distractorId: item.distId || undefined,
+            distractorLabel: item.distLabel || undefined
+          }
+        }
       }
     }
   }
-  return null
+
+  return bestMatch
 }
 """)
 

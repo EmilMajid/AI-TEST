@@ -98,6 +98,12 @@ export async function POST(request: NextRequest) {
 
         // Save directly to Supabase TestResult table with AWAIT
         if (studentDbId) {
+          const answersPayload = {
+            userAnswers: body.answers || {},
+            detailedResults: body.detailedResults || [],
+            questions: body.questions || [],
+          }
+
           const { error: insertErr } = await supabaseAdmin.from("TestResult").insert({
             userId: studentDbId,
             textbook: body.textbook,
@@ -105,9 +111,10 @@ export async function POST(request: NextRequest) {
             class: testClass,
             score: testScore,
             timeSpent: timeSpentSeconds,
-            answers: body.answers || {},
+            answers: answersPayload,
             completedAt: body.completedAt || new Date().toISOString(),
           })
+
 
           if (insertErr) {
             console.error("Supabase TestResult insert error:", insertErr)

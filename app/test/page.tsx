@@ -513,14 +513,18 @@ export default function TestPage() {
         } catch (e) {}
       }
 
-      // Cache student result locally for instant parent dashboard display
+      // Cache student result locally for instant parent dashboard display (including detailed KAG traces)
       try {
-        const studentKey = `student_test_results_${currentUser?.id || "student"}`
-        const prevRes = JSON.parse(localStorage.getItem(studentKey) || "[]")
-        prevRes.unshift({
+        const studentId = currentUser?.id || "student"
+        const studentEmail = currentUser?.email
+        const uniqueId = (currentUser as any)?.uniqueId
+
+        const testItem = {
           ...resultsPageFormat,
           id: `res-${Date.now()}`,
-          studentId: currentUser?.id,
+          studentId,
+          studentEmail,
+          uniqueId,
           textbook: testConfig?.textbook || "",
           topic: testConfig?.topic || "",
           class: testConfig?.class || "",
@@ -529,9 +533,31 @@ export default function TestPage() {
           totalQuestions: questions.length,
           timeSpent,
           completedAt: resultsPageFormat.completedAt,
-        })
-        localStorage.setItem(studentKey, JSON.stringify(prevRes.slice(0, 50)))
+          answers: answersMap,
+          detailedResults, // Keep full KAG and backward_trace data
+          questions,       // Keep full question array
+        }
+
+        const sId = String(studentId)
+        const sEmail = studentEmail ? String(studentEmail).toLowerCase().trim() : ""
+        const sUid = uniqueId ? String(uniqueId).toLowerCase().trim() : ""
+
+        const keysToStore = Array.from(new Set([
+          `student_test_results_${sId}`,
+          sEmail ? `student_test_results_${sEmail}` : null,
+          sUid ? `student_test_results_${sUid}` : null,
+        ].filter(Boolean))) as string[]
+
+        for (const k of keysToStore) {
+          try {
+            const prev = JSON.parse(localStorage.getItem(k) || "[]")
+            const filtered = Array.isArray(prev) ? prev.filter((x: any) => x.id !== testItem.id) : []
+            filtered.unshift(testItem)
+            localStorage.setItem(k, JSON.stringify(filtered.slice(0, 50)))
+          } catch (_) {}
+        }
       } catch (e) {}
+
 
       fetch("/api/save-test-result", {
         method: "POST",

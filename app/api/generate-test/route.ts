@@ -101,6 +101,7 @@ export async function POST(request: NextRequest) {
 3. Sual sayı: ${questionCount}
 4. Vaxt limiti: ${timeLimit} dəqiqə (tövsiyə olunan: ${recommendedTime} dəqiqə)
 5. Azərbaycan təhsil standartlarına uyğunluq
+6. Şagirdin yaş və sinif səviyyəsinə dəqiq uyğunluq (Universitet/ali elmi terminlər, diferensial tənliklər qəti qadağandır, dərslik izahlarına tam uyğun olmalıdır)
 
 ${getDifficultyPrompt(difficulty)}
 
@@ -601,16 +602,23 @@ function getDifficultyDistribution(questions: any[]) {
 }
 
 function resolveBackwardTrace(q: any, gradeNum: number | string, textbookTitle: string, topic: string) {
-  if (q.backward_trace && typeof q.backward_trace === "object" && q.backward_trace.root_concept && !q.backward_trace.root_concept.startsWith("Təməl ")) {
-    return q.backward_trace
-  }
   const g = Number(String(gradeNum || "").match(/\d+/)?.[0]) || 6
+  if (q.backward_trace && typeof q.backward_trace === "object" && q.backward_trace.root_concept && !q.backward_trace.root_concept.startsWith("Təməl ")) {
+    const existing = { ...q.backward_trace }
+    if (typeof existing.root_grade === "number" && existing.root_grade > g) {
+      existing.root_grade = g
+      existing.is_intra_grade = true
+      existing.root_book = textbookTitle
+    }
+    return existing
+  }
   const fullText = `${q.question || ""} ${q.explanation || ""} ${topic || ""}`
-  const canonicalMatch = resolveCanonicalOntologyNode(fullText, textbookTitle)
+  const canonicalMatch = resolveCanonicalOntologyNode(fullText, textbookTitle, g)
 
   if (canonicalMatch && canonicalMatch.prerequisiteLabel) {
-    const pGrade = canonicalMatch.prerequisiteGrade || Math.min(g, canonicalMatch.firstGradeVerified || g)
-    const pBook = canonicalMatch.prerequisiteBook || `${canonicalMatch.subject || textbookTitle} ${pGrade}`
+    const rawPGrade = canonicalMatch.prerequisiteGrade || canonicalMatch.firstGradeVerified || g
+    const pGrade = Math.min(g, rawPGrade)
+    const pBook = (pGrade === g) ? textbookTitle : (canonicalMatch.prerequisiteBook || `${canonicalMatch.subject || textbookTitle} ${pGrade}`)
     const pClaim = canonicalMatch.prerequisiteClaim ? ` (${canonicalMatch.prerequisiteClaim.replace(/\.$/, "")})` : ""
     return {
       is_root_anchor: pGrade === 1,

@@ -47,6 +47,24 @@ export function getGradeOrdinalSuffix(grade: number | string): string {
   }
 }
 
+export function normalizeOntologySubject(subj?: string): string {
+  if (!subj) return ""
+  const s = subj.toLowerCase().trim()
+  if (/informatika|i̇nformatika|kompüter|informasiya/i.test(s)) return "İnformatika"
+  if (/riyaziyyat|həndəsə|cəbr/i.test(s)) return "Riyaziyyat"
+  if (/fizika/i.test(s)) return "Fizika"
+  if (/kimya/i.test(s)) return "Kimya"
+  if (/biologiya/i.test(s)) return "Biologiya"
+  if (/coğrafiya|cografiya/i.test(s)) return "Coğrafiya"
+  if (/tarix/i.test(s)) return "Tarix"
+  if (/təbiət|tebiet/i.test(s)) return "Təbiət"
+  if (/ədəbiyyat|edebiyyat/i.test(s)) return "Ədəbiyyat"
+  if (/azərbaycan dili|ana dili/i.test(s)) return "Azərbaycan dili"
+  if (/ingilis|english/i.test(s)) return "İngilis dili"
+  if (/həyat bilgisi/i.test(s)) return "Həyat bilgisi"
+  return subj.trim()
+}
+
 export function cleanCanonicalSubjectName(subjStr: string): string {
   let s = String(subjStr || "").replace(/\s*\([^)]*\)/g, "").trim()
   s = s.replace(/[-_\s]+\d+$/g, "").trim()
@@ -292,40 +310,89 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   }
 
   // 5.7. CANONICAL KNOWLEDGE GRAPH RESOLUTION (SİTG Gold Core v5.0)
-  const canonicalMatch = resolveCanonicalOntologyNode(fullText, subjName)
-  if (canonicalMatch) {
-    bt.canonical_node_id = canonicalMatch.id
-    bt.canonical_type = canonicalMatch.type
-    bt.first_grade_verified = canonicalMatch.firstGradeVerified
-    if (canonicalMatch.book) bt.canonical_book = canonicalMatch.book
-    if (canonicalMatch.claim) bt.canonical_claim = canonicalMatch.claim
-    
-    if (canonicalMatch.prerequisiteId) {
-      bt.prerequisite_node_id = canonicalMatch.prerequisiteId
-      if (canonicalMatch.prerequisiteLabel) {
-        bt.root_concept = canonicalMatch.prerequisiteLabel
-        rootConcept = canonicalMatch.prerequisiteLabel
+  const normSubj = normalizeOntologySubject(subjName)
+  const hasValidExistingTrace = Boolean(
+    bt.root_concept &&
+    !bt.root_concept.startsWith("Təməl ") &&
+    typeof bt.root_grade === "number" &&
+    bt.root_grade <= qGrade &&
+    bt.root_book &&
+    (!normSubj || normalizeOntologySubject(bt.root_book) === normSubj)
+  )
+
+  if (!hasValidExistingTrace) {
+    const canonicalMatch = resolveCanonicalOntologyNode(fullText, subjName, qGrade)
+    if (canonicalMatch) {
+      bt.canonical_node_id = canonicalMatch.id
+      bt.canonical_type = canonicalMatch.type
+      bt.first_grade_verified = canonicalMatch.firstGradeVerified
+      if (canonicalMatch.book) bt.canonical_book = canonicalMatch.book
+      if (canonicalMatch.claim) bt.canonical_claim = canonicalMatch.claim
+      
+      if (canonicalMatch.prerequisiteId) {
+        bt.prerequisite_node_id = canonicalMatch.prerequisiteId
+        if (canonicalMatch.prerequisiteLabel) {
+          bt.root_concept = canonicalMatch.prerequisiteLabel
+          rootConcept = canonicalMatch.prerequisiteLabel
+        }
+        bt.concept_name = canonicalMatch.label
+        if (canonicalMatch.prerequisiteGrade) {
+          const clampedGrade = Math.min(qGrade, canonicalMatch.prerequisiteGrade)
+          bt.root_grade = clampedGrade
+          rootGrade = clampedGrade
+        }
+        if (canonicalMatch.prerequisiteBook) {
+          bt.root_book = canonicalMatch.prerequisiteBook
+          rootBook = canonicalMatch.prerequisiteBook
+        }
+        if (canonicalMatch.prerequisiteClaim) {
+          bt.remedial_definition = canonicalMatch.prerequisiteClaim
+        }
+        isIntra = (rootGrade === qGrade)
+        bt.is_intra_grade = isIntra
+        bt.is_root_anchor = (rootGrade === 1)
       }
-      bt.concept_name = canonicalMatch.label
-      if (canonicalMatch.prerequisiteGrade) {
-        bt.root_grade = canonicalMatch.prerequisiteGrade
-        rootGrade = canonicalMatch.prerequisiteGrade
+      
+      if (canonicalMatch.distractorId) {
+        bt.distractor_contrast_node_id = canonicalMatch.distractorId
+        bt.distractor_contrast_label = canonicalMatch.distractorLabel
       }
-      if (canonicalMatch.prerequisiteBook) {
-        bt.root_book = canonicalMatch.prerequisiteBook
-        rootBook = canonicalMatch.prerequisiteBook
-      }
-      if (canonicalMatch.prerequisiteClaim) {
-        bt.remedial_definition = canonicalMatch.prerequisiteClaim
-      }
-      isIntra = (rootGrade === qGrade)
-      bt.is_intra_grade = isIntra
-      bt.is_root_anchor = (rootGrade === 1)
     }
-    
-    if (canonicalMatch.distractorId) {
-      bt.distractor_contrast_node_id = canonicalMatch.distractorId
-      bt.distractor_contrast_label = canonicalMatch.distractorLabel
+  } else {
+    // Preserve valid existing trace, optionally enrich metadata
+    const canonicalMatch = resolveCanonicalOntologyNode(fullText, subjName, qGrade)
+    if (canonicalMatch && canonicalMatch.id) {
+      bt.canonical_node_id = canonicalMatch.id
+      bt.canonical_type = canonicalMatch.type
+      if (canonicalMatch.claim) bt.canonical_claim = canonicalMatch.claim
+    }
+  }
+
+  // HARD INVARIANT 1: Strict Backward Mapping - Prerequisite grade CAN NEVER exceed Question Grade
+  if (typeof bt.root_grade === "number" && bt.root_grade > qGrade) {
+    bt.root_grade = qGrade
+    rootGrade = qGrade
+    isIntra = true
+    bt.is_intra_grade = true
+    rootBook = rawSubject ? `${subjName} ${qGrade}` : (bt.root_book || `${subjName} ${qGrade}`)
+    bt.root_book = rootBook
+  }
+
+  // HARD INVARIANT 2: Strict Subject Firewall - Root book must match question subject
+  if (normSubj && bt.root_book) {
+    const rootSubj = normalizeOntologySubject(bt.root_book)
+    if (rootSubj && rootSubj !== normSubj) {
+      // Contamination detected! Quarantine and reset to current grade textbook
+      bt.root_grade = qGrade
+      rootGrade = qGrade
+      isIntra = true
+      bt.is_intra_grade = true
+      rootBook = `${subjName} ${qGrade}`
+      bt.root_book = rootBook
+      rootConcept = topicTitle
+      bt.root_concept = topicTitle
+      conceptName = topicTitle
+      bt.concept_name = topicTitle
     }
   }
 
@@ -450,7 +517,7 @@ export interface CanonicalOntologyMatch {
   distractorLabel?: string
 }
 
-export const CANONICAL_ONTOLOGY_REGISTRY = [
+const CANONICAL_ONTOLOGY_REGISTRY = [
   {
     "id": "math_teorem_ters_teorem",
     "stem": "tərs teorem",
@@ -1218,26 +1285,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "phys_qanun_ohm",
-    "stem": "ohm",
-    "aliases": [
-      "Om qanunu"
-    ],
-    "label": "Ohm qanunu",
-    "type": "FizikiQanun",
-    "subject": "Fizika",
-    "firstGradeVerified": 7,
-    "claim": "Dövrə hissəsindəki cərəyan şiddəti həmin hissənin uclarındakı gərginliklə düz, müqaviməti ilə tərs mütənasibdir: I = U / R",
-    "book": "Fizika 7 (hissə 2)",
-    "prereqId": "math_anlayis_ikideyisenli_xetti_tenlik",
-    "prereqLabel": "İkidəyişənli xətti tənlik",
-    "prereqGrade": 7,
-    "prereqBook": "Riyaziyyat 7",
-    "prereqClaim": "ax + by = c (a və b eyni zamanda sıfır olmayan) şəklində verilən tənlik ikidəyişənli xətti tənlik adlanır",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "chem_qanun_kutlenin_saxlanmasi",
     "stem": "maddə kütləsinin saxlanması",
     "aliases": [
@@ -1332,42 +1379,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_təb_şeh_1251",
-    "stem": "şeh",
-    "aliases": [],
-    "label": "Şeh",
-    "type": "TəbiiAnlayış",
-    "subject": "Təbiət",
-    "firstGradeVerified": 5,
-    "claim": "Səhər tezdən otun üzərində gördüyümüzsu damcıları şeh adlanır.",
-    "book": "Tebiet 5 (hissə 1)",
-    "prereqId": "auto_təb_vulkanlar_1344",
-    "prereqLabel": "Vulkanlar",
-    "prereqGrade": 5,
-    "prereqBook": "Tebiet 5 (hissə 2)",
-    "prereqClaim": "Püskürmə ehtimalı olmayan vulkanlara yatmış vulkanlar deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_təb_hadisə_1257",
-    "stem": "hadisə",
-    "aliases": [],
-    "label": "Hadisə",
-    "type": "TəbiiAnlayış",
-    "subject": "Təbiət",
-    "firstGradeVerified": 5,
-    "claim": "FİZİKİ VƏ KİMYƏVİ HADİSƏLƏR FİZİKİ HADİSƏLƏR Ətrafımızda baş verən bütün dəyişikliklər hadisə adlanır.",
-    "book": "Tebiet 5 (hissə 1)",
-    "prereqId": "auto_təb_enerjisi_1305",
-    "prereqLabel": "Enerjisi",
-    "prereqGrade": 5,
-    "prereqBook": "Tebiet 5 (hissə 2)",
-    "prereqClaim": "Günəşdən alınan enerji Günəş enerjisi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_təb_hadisələr_1257",
     "stem": "hadisələr",
     "aliases": [],
@@ -1418,24 +1429,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 5,
     "prereqBook": "Tebiet 5 (hissə 2)",
     "prereqClaim": "İşığın yayıldığı maddələrə mühit deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_təb_enerjisi_1305",
-    "stem": "enerjisi",
-    "aliases": [],
-    "label": "Enerjisi",
-    "type": "TəbiiAnlayış",
-    "subject": "Təbiət",
-    "firstGradeVerified": 5,
-    "claim": "Günəşdən alınan enerji Günəş enerjisi adlanır.",
-    "book": "Tebiet 5 (hissə 2)",
-    "prereqId": "auto_təb_cisim_1316",
-    "prereqLabel": "Cisim",
-    "prereqGrade": 5,
-    "prereqBook": "Tebiet 5 (hissə 2)",
-    "prereqClaim": "Bir cisim işığı keçirmirsə, ona qeyri-şəffaf cisim deyilir.",
     "distId": null,
     "distLabel": null
   },
@@ -2448,24 +2441,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_coğ_çərşənbəsi_3456",
-    "stem": "çərşənbəsi",
-    "aliases": [],
-    "label": "Çərşənbəsi",
-    "type": "CoğrafiAnlayış",
-    "subject": "Coğrafiya",
-    "firstGradeVerified": 6,
-    "claim": "Dərinləşdirmə NOVRUZ ŞƏNLİKLƏRİ Novruz süfrəsi Üçüncü çərşənbə Yel çərşənbəsi adlanır.",
-    "book": "Cografiya 6 (hissə 2)",
-    "prereqId": "auto_coğ_təbəqəsiatmosfer_3417",
-    "prereqLabel": "Təbəqəsiatmosfer",
-    "prereqGrade": 6,
-    "prereqBook": "Cografiya 6 (hissə 2)",
-    "prereqClaim": "BÖLMƏ Təbiəti kəşf edirəmYer planetini əhatə edən hava təbəqəsiatmosfer adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_coğ_torpaqçərşənbəsi_3456",
     "stem": "torpaqçərşənbəsi",
     "aliases": [],
@@ -2754,24 +2729,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_i̇n_dövr_4070",
-    "stem": "dövr",
-    "aliases": [],
-    "label": "Dövr",
-    "type": "İnformatikaAnlayışı",
-    "subject": "İnformatika",
-    "firstGradeVerified": 6,
-    "claim": "Belə hərəkətlər ardıcıllığıdövr adlanır.",
-    "book": "Informatika 6",
-    "prereqId": "auto_i̇n_diskretlikxassəsi_4067",
-    "prereqLabel": "Diskretlikxassəsi",
-    "prereqGrade": 6,
-    "prereqBook": "Informatika 6",
-    "prereqClaim": "Alqoritmin buxassəsinə diskretlikxassəsi deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_i̇n_yaxudkonstantlar_4080",
     "stem": "yaxudkonstantlar",
     "aliases": [],
@@ -2912,24 +2869,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 7,
     "prereqBook": "Biologiya 7 (hissə 1)",
     "prereqClaim": "Beləmeyvələr şərti olaraq yalançı meyvə adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_fiz_hərəkət_5410",
-    "stem": "hərəkət",
-    "aliases": [],
-    "label": "Hərəkət",
-    "type": "FizikiAnlayış",
-    "subject": "Fizika",
-    "firstGradeVerified": 7,
-    "claim": "Cismin sürəti azalırsa, belə hərəkət yavaşıyan hərəkət adlanır.",
-    "book": "Fizika 7 (hissə 1)",
-    "prereqId": "auto_fiz_elektrostatika_5477",
-    "prereqLabel": "Elektrostatika",
-    "prereqGrade": 7,
-    "prereqBook": "Fizika 7 (hissə 2)",
-    "prereqClaim": "Elm, texnologiya, həyatSükunətdəki elektrik yükləri statik yüklər, fizikanın statikyükləriöyrənən bölməsi isə elektrostatika adlanır.",
     "distId": null,
     "distLabel": null
   },
@@ -3114,42 +3053,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_coğ_hava_5760",
-    "stem": "hava",
-    "aliases": [],
-    "label": "Hava",
-    "type": "CoğrafiAnlayış",
-    "subject": "Coğrafiya",
-    "firstGradeVerified": 7,
-    "claim": "Müəyyən temperaturda m3havada maksimum subuxarı olarsa, doymuş hava, maksimum su buxarı miqdarındanaz olarsa, doymamış hava adlanır.",
-    "book": "Cografiya 7 (hissə 2)",
-    "prereqId": "auto_coğ_çərşənbəsi_3456",
-    "prereqLabel": "Çərşənbəsi",
-    "prereqGrade": 6,
-    "prereqBook": "Cografiya 6 (hissə 2)",
-    "prereqClaim": "Dərinləşdirmə NOVRUZ ŞƏNLİKLƏRİ Novruz süfrəsi Üçüncü çərşənbə Yel çərşənbəsi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_coğ_kütlələri_5772",
-    "stem": "kütlələri",
-    "aliases": [],
-    "label": "Kütlələri",
-    "type": "CoğrafiAnlayış",
-    "subject": "Coğrafiya",
-    "firstGradeVerified": 7,
-    "claim": "Troposferdə ümumi xassələrə(temperatur, rütubət, təzyiq) malik havaaxınlarına hava kütlələri deyilir.",
-    "book": "Cografiya 7 (hissə 2)",
-    "prereqId": "auto_coğ_küləyi_5753",
-    "prereqLabel": "Küləyi",
-    "prereqGrade": 7,
-    "prereqBook": "Cografiya 7 (hissə 2)",
-    "prereqClaim": "Məsələn, şimaldancənuba əsən küləklər şimal küləyi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_coğ_ərazilərməskunlaşmaəraziləri_5785",
     "stem": "ərazilərməskunlaşmaəraziləri",
     "aliases": [],
@@ -3182,24 +3085,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 7,
     "prereqBook": "Cografiya 7 (hissə 1)",
     "prereqClaim": "Bu komponentlər təbii ehtiyatlarvə ya resurslar adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_coğ_lar_5819",
-    "stem": "lar",
-    "aliases": [],
-    "label": "Lar",
-    "type": "CoğrafiAnlayış",
-    "subject": "Coğrafiya",
-    "firstGradeVerified": 7,
-    "claim": "Bulayihələri hazırlayan insanlar startapçılar adlanır.",
-    "book": "Cografiya 7 (hissə 2)",
-    "prereqId": "auto_coğ_kütlələri_5772",
-    "prereqLabel": "Kütlələri",
-    "prereqGrade": 7,
-    "prereqBook": "Cografiya 7 (hissə 2)",
-    "prereqClaim": "Troposferdə ümumi xassələrə(temperatur, rütubət, təzyiq) malik havaaxınlarına hava kütlələri deyilir.",
     "distId": null,
     "distLabel": null
   },
@@ -3438,24 +3323,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_i̇n_rma_7657",
-    "stem": "rma",
-    "aliases": [],
-    "label": "Rma",
-    "type": "İnformatikaAnlayışı",
-    "subject": "İnformatika",
-    "firstGradeVerified": 8,
-    "claim": "İnformasiyanı saxlamaq, ötürmək, yaxud emal etmək üçün bir təqdimolunma formasından daha əlverişli başqa formaya keçirilməsinə kodlaşdırma deyilir.",
-    "book": "Informatika 8",
-    "prereqId": "auto_i̇n_pəncərəsi_7732",
-    "prereqLabel": "Pəncərəsi",
-    "prereqGrade": 8,
-    "prereqBook": "Informatika 8",
-    "prereqClaim": "Redaktorun iş sahəsi modelləşdirmə pəncərəsi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_i̇n_multimedia_7672",
     "stem": "multimedia",
     "aliases": [],
@@ -3506,24 +3373,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 8,
     "prereqBook": "Informatika 8",
     "prereqClaim": "Elektron cədvəl faylına iş kitabı , yaxud sadəcə, kitab deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_i̇n_kök_7718",
-    "stem": "kök",
-    "aliases": [],
-    "label": "Kök",
-    "type": "İnformatikaAnlayışı",
-    "subject": "İnformatika",
-    "firstGradeVerified": 8,
-    "claim": "Başlanğıc təpəyə, adi ağacda olduğu kimi, kök deyilir.",
-    "book": "Informatika 8",
-    "prereqId": "auto_i̇n_konstantlar_7695",
-    "prereqLabel": "Konstantlar",
-    "prereqGrade": 8,
-    "prereqBook": "Informatika 8",
-    "prereqClaim": "Proqramın gedişində qiyməti dəyişən kəmiyyətlərə dəyişənlər , dəyişməyənlərə isə sabitlər , yaxud konstantlar deyilir.",
     "distId": null,
     "distLabel": null
   },
@@ -3870,24 +3719,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_fiz_vvə_8684",
-    "stem": "vvə",
-    "aliases": [],
-    "label": "Vvə",
-    "type": "FizikiAnlayış",
-    "subject": "Fizika",
-    "firstGradeVerified": 8,
-    "claim": "Cisimlər arasındakı qarşılıqlı təsiri ifadə edən fiziki kəmiyyət qüvvə adlanır.",
-    "book": "Fizika 8 (hissə 1)",
-    "prereqId": "auto_fiz_təzyiq_8851",
-    "prereqLabel": "Təzyiq",
-    "prereqGrade": 8,
-    "prereqBook": "Fizika 8 (hissə 1)",
-    "prereqClaim": "Hidrostatik təzyiq Sükunətdə olan mayelərin yaratdığı təzyiq hidrostatik təzyiq adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_fiz_vvəsi_8689",
     "stem": "vvəsi",
     "aliases": [],
@@ -3902,24 +3733,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 8,
     "prereqBook": "Fizika 8 (hissə 1)",
     "prereqClaim": "Cisimlər arasındakı qarşılıqlı təsiri ifadə edən fiziki kəmiyyət qüvvə adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_fiz_şmə_8722",
-    "stem": "şmə",
-    "aliases": [],
-    "label": "Şmə",
-    "type": "FizikiAnlayış",
-    "subject": "Fizika",
-    "firstGradeVerified": 8,
-    "claim": "Cisim yalnız cazibə qüvvəsinin təsiri ilə Yerə doğru hərəkət edirsə, belə hərəkətə sərbəstdüşmə deyilir.",
-    "book": "Fizika 8 (hissə 1)",
-    "prereqId": "auto_fiz_çəki_8727",
-    "prereqLabel": "Çəki",
-    "prereqGrade": 8,
-    "prereqBook": "Fizika 8 (hissə 1)",
-    "prereqClaim": "Ağırlıq qüvvəsinin təsiri ilə cismin dayağa və ya asqıya tətbiq etdiyi qüvvə çəki adlanır.",
     "distId": null,
     "distLabel": null
   },
@@ -6318,24 +6131,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_riy_oxu_11859",
-    "stem": "oxu",
-    "aliases": [],
-    "label": "Oxu",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 9,
-    "claim": "Üzərində başlanğıc nöqtə, istiqamət və ölçü vahidi qeyd edilmiş düz xəttə ədəd oxu deyilir.",
-    "book": "Riyaziyyat 9",
-    "prereqId": "auto_riy_mərkəzi_12024",
-    "prereqLabel": "Mərkəzi",
-    "prereqGrade": 9,
-    "prereqBook": "Riyaziyyat 9",
-    "prereqClaim": "Düzgün çoxbucaqlının xaricinə (və ya daxilinə) çəkilmiş çevrənin mərkəzi düzgün çoxbucaqlının mərkəzi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_riy_ədədə_11861",
     "stem": "ədədə",
     "aliases": [],
@@ -6948,24 +6743,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_i̇n_yol_12249",
-    "stem": "yol",
-    "aliases": [],
-    "label": "Yol",
-    "type": "İnformatikaAnlayışı",
-    "subject": "İnformatika",
-    "firstGradeVerified": 9,
-    "claim": "Sonuncudan başqa hər bir tilin son təpəsi o biri tilin başlanğıc təpəsi olarsa, belə tillər ardıcıllığına yol deyilir.",
-    "book": "Informatika 9",
-    "prereqId": "auto_i̇n_uzunluğu_12215",
-    "prereqLabel": "Uzunluğu",
-    "prereqGrade": 9,
-    "prereqBook": "Informatika 9",
-    "prereqClaim": "Sətirlər' s[:5] 'Sətir' s[5:] 'lər' Sətirdə boşluq simvolları da daxil olmaqla bütün simvolların sayına sətrin uzunluğu deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_i̇n_dövrə_12249",
     "stem": "dövrə",
     "aliases": [],
@@ -7160,24 +6937,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 9,
     "prereqBook": "Cografiya 9",
     "prereqClaim": "Quruya daxil olmuş dik, sıldırım qayalı sahillərdəki bu ensiz və dərin körfəzlər fyordlar adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_coğ_göl_12803",
-    "stem": "göl",
-    "aliases": [],
-    "label": "Göl",
-    "type": "CoğrafiAnlayış",
-    "subject": "Coğrafiya",
-    "firstGradeVerified": 9,
-    "claim": "Marakaybo gölü materikin şimalında yerləşir, ensiz və dayaz kanal vasitəsilə Venesuela körfəzi və Karib dənizi ilə birləşsə də, göl adlanır.",
-    "book": "Cografiya 9",
-    "prereqId": "auto_coğ_fərqə_12759",
-    "prereqLabel": "Fərqə",
-    "prereqGrade": 9,
-    "prereqBook": "Cografiya 9",
-    "prereqClaim": "Sxem üzrə iş Orta illik temperatur amplitudu ilin ən isti ayının orta temperaturu ilə ən soyuq ayının orta temperaturu arasındakı fərqə deyilir.",
     "distId": null,
     "distLabel": null
   },
@@ -8406,24 +8165,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_kim_sinif_14543",
-    "stem": "sinif",
-    "aliases": [],
-    "label": "Sinif",
-    "type": "KimyəviAnlayış",
-    "subject": "Kimya",
-    "firstGradeVerified": 9,
-    "claim": "Tərkibində müəyyən funksional qrupun olması nəticəsində xarakterik kimyəvi xassələrə malik maddələr məcmusuna sinif deyilir.",
-    "book": "Kimya 9",
-    "prereqId": "auto_kim_sabunlaşma_14592",
-    "prereqLabel": "Sabunlaşma",
-    "prereqGrade": 9,
-    "prereqBook": "Kimya 9",
-    "prereqClaim": "Ona görə də yağların qələvi iştirakında hidrolizi sabunlaşma adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_kim_alkanlar_14546",
     "stem": "alkanlar",
     "aliases": [],
@@ -8802,24 +8543,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "auto_bio_lər_16042",
-    "stem": "lər",
-    "aliases": [],
-    "label": "Lər",
-    "type": "BiolojiAnlayış",
-    "subject": "Biologiya",
-    "firstGradeVerified": 9,
-    "claim": "Canlı orqanizmin daxil olan lər adlanır.",
-    "book": "Biologiya 9",
-    "prereqId": "auto_bio_kod_16085",
-    "prereqLabel": "Kod",
-    "prereqGrade": 9,
-    "prereqBook": "Biologiya 9",
-    "prereqClaim": "DNT və m-RNT-si molekullarında zülalın ilkin quruluşu haqqında məlumatın nukleotidlər şəklində uyğun ardıcıllıqla düzülmə qaydası genefik kod adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "auto_bio_mikroelementlər_16053",
     "stem": "mikroelementlər",
     "aliases": [],
@@ -8924,24 +8647,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 9,
     "prereqBook": "Biologiya 9",
     "prereqClaim": "İnsanın mərkəzi sinir sisteminin köməyi ilə fərdi məlumat toplamaq, onu yadda saxlamaq və lazım gəldikdə istifadə etməklə səciyyələnən proseslər məcmusu yaddaş adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "auto_bio_kod_16085",
-    "stem": "kod",
-    "aliases": [],
-    "label": "Kod",
-    "type": "BiolojiAnlayış",
-    "subject": "Biologiya",
-    "firstGradeVerified": 9,
-    "claim": "DNT və m-RNT-si molekullarında zülalın ilkin quruluşu haqqında məlumatın nukleotidlər şəklində uyğun ardıcıllıqla düzülmə qaydası genefik kod adlanır.",
-    "book": "Biologiya 9",
-    "prereqId": "auto_bio_interfaza_16106",
-    "prereqLabel": "Interfaza",
-    "prereqGrade": 9,
-    "prereqBook": "Biologiya 9",
-    "prereqClaim": "Hüceyrənin bölünməyə hazırlıq mərhələsi anafaza/interfaza adlanır.",
     "distId": null,
     "distLabel": null
   },
@@ -9972,24 +9677,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_mus_nece_1387",
-    "stem": "necə",
-    "aliases": [],
-    "label": "Necə",
-    "type": "MusiqiAnlayışı",
-    "subject": "Musiqi",
-    "firstGradeVerified": 5,
-    "claim": "Mətni olmayan mahnı necə adlanır",
-    "book": "Musiqi 5",
-    "prereqId": "can_mus_mugamlara_1390",
-    "prereqLabel": "Muğamlara",
-    "prereqGrade": 5,
-    "prereqBook": "Musiqi 5",
-    "prereqClaim": "LAR BAYATI-ŞİRAZ ŞÜŞTƏR HÜMAYUNşən, lirikəhvali-ruhiyyəməhəbbət hissihəyəcan mərdlik, gümrahlıqqəmginlik dərin kədərdaha dərin kədər hissi və qəm-qüssə Azərbaycan klassik muğamları ifa xüsusiyyətlərinə görə: instrumentalvə vokal-instrumental muğamlara bölünür.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_mus_zerbi_mugam_yaxud_ritmik_mugam_1392",
     "stem": "zərbi-muğam yaxud ritmik-muğam",
     "aliases": [],
@@ -10040,24 +9727,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 5,
     "prereqBook": "Musiqi 5",
     "prereqClaim": "Qarayev POEZİYA VƏ KANTATA Kantata — bir, yaxud çoxhissəli, təntənəli xarakterlivokal-simfonik əsərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_mus_bas_1407",
-    "stem": "bas",
-    "aliases": [],
-    "label": "Bas",
-    "type": "MusiqiAnlayışı",
-    "subject": "Musiqi",
-    "firstGradeVerified": 5,
-    "claim": "Burada qadın səsləri “soprano” və “alt”, kişi səsləri isə “tenor”, “bariton” və “bas” adlanır.",
-    "book": "Musiqi 5",
-    "prereqId": "can_mus_balet_librettosu_1429",
-    "prereqLabel": "Balet librettosu",
-    "prereqGrade": 5,
-    "prereqBook": "Musiqi 5",
-    "prereqClaim": "Balet librettosu — baletin nəsrlə yazılmış məzmunu.",
     "distId": null,
     "distLabel": null
   },
@@ -10926,24 +10595,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_aze_ucun_2578",
-    "stem": "üçün",
-    "aliases": [],
-    "label": "Üçün",
-    "type": "DilQaydası",
-    "subject": "Azərbaycan dili",
-    "firstGradeVerified": 6,
-    "claim": "Sizcə, əsər nə üçün belə adlanır",
-    "book": "Azerbaycan Dili 6 (hissə 2)",
-    "prereqId": "can_aze_topcu_destelerinden_2535",
-    "prereqLabel": "Topçu dəstələrindən",
-    "prereqGrade": 6,
-    "prereqBook": "Azerbaycan Dili 6 (hissə 1)",
-    "prereqClaim": "Piyada və topçu dəstələrindən ibarətdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_aze_metn_danisan_ilmeler_2582",
     "stem": "mətn danışan ilmələr",
     "aliases": [],
@@ -10994,24 +10645,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 6,
     "prereqBook": "Azerbaycan Dili 6 (hissə 2)",
     "prereqClaim": "Müasir əsərlərdə də belə obrazlara — qeyri-adi varlıqlara rast gəlirik.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_aze_ile_2629",
-    "stem": "ilə",
-    "aliases": [],
-    "label": "Ilə",
-    "type": "SintaktikVahid",
-    "subject": "Azərbaycan dili",
-    "firstGradeVerified": 6,
-    "claim": "Hansı cümlədə mübtəda daha yüksək intonasiya ilə deyilir",
-    "book": "Azerbaycan Dili 6 (hissə 2)",
-    "prereqId": "can_aze_icracisini_bildiren_sozsubyekt_2600",
-    "prereqLabel": "Icraçısını bildirən sözsubyekt",
-    "prereqGrade": 6,
-    "prereqBook": "Azerbaycan Dili 6 (hissə 2)",
-    "prereqClaim": "Yadda saxla Cümlədə hərəkətin icraçısını bildirən sözsubyekt adlanır",
     "distId": null,
     "distLabel": null
   },
@@ -11340,24 +10973,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_m_e_2708",
-    "stem": "m-ə",
-    "aliases": [],
-    "label": "M-ə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 6,
-    "claim": "Yəni təsvirdəki parkın planında sm məsafə həqiqətdə sm-ə və ya m-ə bərabərdir.",
-    "book": "Riyaziyyat 6 (hissə 1)",
-    "prereqId": "can_riy_kodu_qeder_geri_2690",
-    "prereqLabel": "Kodu qədər geri",
-    "prereqGrade": 6,
-    "prereqBook": "Riyaziyyat 6 (hissə 1)",
-    "prereqClaim": "Mətni deşifrləmək üçün isə hərflərin əlifbadakısıra nömrələrindən şifrləmə kodu qədər geri sayılır",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_emsalina_2717",
     "stem": "əmsalına",
     "aliases": [],
@@ -11462,42 +11077,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 6,
     "prereqBook": "Riyaziyyat 6 (hissə 1)",
     "prereqClaim": "Şaquli və ya üfüqi düz xətlər üzərində yerləşən hansınöqtələr arasındakı məsafələr bərabərdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_e_2763",
-    "stem": "–-ə",
-    "aliases": [],
-    "label": "–-ə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 6,
-    "claim": "Dörd ədədin ədədi ortası –-ə bərabərdir.",
-    "book": "Riyaziyyat 6 (hissə 1)",
-    "prereqId": "can_riy_duz_mutenasib_kemiyyetler_2787",
-    "prereqLabel": "Düz mütənasib kəmiyyətlər",
-    "prereqGrade": 6,
-    "prereqBook": "Riyaziyyat 6 (hissə 1)",
-    "prereqClaim": "Düz mütənasib kəmiyyətlər — birkəmiyyət neçə dəfə artırsa (azalırsa), digər kəmiyyət də bir o qədər dəfə artır (azalır).",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_a_2763",
-    "stem": "–-a",
-    "aliases": [],
-    "label": "–-a",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 6,
-    "claim": "İki ədədin ədədi ortası –-a bərabərdir.",
-    "book": "Riyaziyyat 6 (hissə 1)",
-    "prereqId": "can_riy_1320_ye_2703",
-    "prereqLabel": "1320-yə",
-    "prereqGrade": 6,
-    "prereqBook": "Riyaziyyat 6 (hissə 1)",
-    "prereqClaim": "Fermadakı qaz, ördək və toyuqların ümumi sayı 1320-yə bərabərdir.",
     "distId": null,
     "distLabel": null
   },
@@ -12096,24 +11675,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_ye_2905",
-    "stem": "-yə",
-    "aliases": [],
-    "label": "-yə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 6,
-    "claim": "Hansı ədədin özü ilə əksinin fərqi -yə bərabərdir",
-    "book": "Riyaziyyat 6 (hissə 2)",
-    "prereqId": "can_riy_ye_2814",
-    "prereqLabel": "−-yə",
-    "prereqGrade": 6,
-    "prereqBook": "Riyaziyyat 6 (hissə 2)",
-    "prereqClaim": "Dəyişən olan toplanandır, əmsalı −-yə bərabərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_acoxlugunun_alt_coxlugu_2910",
     "stem": "açoxluğunun alt çoxluğu",
     "aliases": [],
@@ -12146,24 +11707,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 6,
     "prereqBook": "Tebiet 6 (hissə 2)",
     "prereqClaim": "Nə üçün karbon qazı həm də istixana qazı adlanır",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_teb_ya_2947",
-    "stem": "-ya",
-    "aliases": [],
-    "label": "-ya",
-    "type": "TəbiiObyekt",
-    "subject": "Təbiət",
-    "firstGradeVerified": 6,
-    "claim": "Öyrəndiklərinizi tətbiq edin Sakit halda ortayaşlı sağlam insanlarda tənəffüsün sayı təqribən dəqiqədə -ya bərabərdir.",
-    "book": "Tebiet 6 (hissə 1)",
-    "prereqId": "can_teb_varliq_3534",
-    "prereqLabel": "Varlıq",
-    "prereqGrade": 6,
-    "prereqBook": "Hayat Bilgisi 6",
-    "prereqClaim": "İnsan nə üçün təbiəti dəyişən yeganə varlıq hesab olunur",
     "distId": null,
     "distLabel": null
   },
@@ -12596,24 +12139,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 6,
     "prereqBook": "Tebiet 6 (hissə 1)",
     "prereqClaim": "Burada F — ağırlıq qüvvəsi, m - cismin kütləsi, gisə Yer planeti üçün qiymətitəqribən Nkg olansabit kəmiyyətdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_teb_aya_3133",
-    "stem": "aya",
-    "aliases": [],
-    "label": "Aya",
-    "type": "TəbiiObyekt",
-    "subject": "Təbiət",
-    "firstGradeVerified": 6,
-    "claim": "Yerin bu hissələrində gecənin və gündüzün uzunluğu aya bərabərdir.",
-    "book": "Tebiet 6 (hissə 2)",
-    "prereqId": "can_teb_atomu_boyuk_atom_3516",
-    "prereqLabel": "Atomu böyük atom",
-    "prereqGrade": 6,
-    "prereqBook": "Hayat Bilgisi 6",
-    "prereqClaim": "Hidrogen atomu kiçik, yod atomu isə böyük atom hesab olunur.",
     "distId": null,
     "distLabel": null
   },
@@ -14958,24 +14483,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_fiz_e_5450",
-    "stem": "+-ə",
-    "aliases": [],
-    "label": "+-ə",
-    "type": "FizikiKəmiyyət",
-    "subject": "Fizika",
-    "firstGradeVerified": 7,
-    "claim": "Elementar yük vahidi ilə elektronun elektrik yükü-,protonun elektrik yükü isə +-ə bərabərdir.",
-    "book": "Fizika 7 (hissə 2)",
-    "prereqId": "can_fiz_duzxetli_berabersuretli_hereket_5403",
-    "prereqLabel": "Düzxətli bərabərsürətli hərəkət",
-    "prereqGrade": 7,
-    "prereqBook": "Fizika 7 (hissə 1)",
-    "prereqClaim": "Hansı hərəkət düzxətli bərabərsürətli hərəkət adlanır",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_fiz_misillerine_5453",
     "stem": "misillərinə",
     "aliases": [],
@@ -17298,24 +16805,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_fiz_n_a_8736",
-    "stem": "n-a",
-    "aliases": [],
-    "label": "N-a",
-    "type": "FizikiHadisə",
-    "subject": "Fizika",
-    "firstGradeVerified": 8,
-    "claim": "Qarşılıqlı təsirdə olan iki cisimdən birinə təsir edən qüvvə 5 N-a bərabərdir",
-    "book": "Fizika 8 (hissə 1)",
-    "prereqId": "can_fiz_mu_herrik_dordtaktli_mu_herrik_9036",
-    "prereqLabel": "Mühərrik dördtaktlı mühərrik",
-    "prereqGrade": 8,
-    "prereqBook": "Fizika 8 (hissə 2)",
-    "prereqClaim": "Bu səbəbdən belə mühərrik dördtaktlı mühərrik adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_fiz_qu_vvesi_8758",
     "stem": "qüvvəsi",
     "aliases": [],
@@ -17348,24 +16837,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 8,
     "prereqBook": "Fizika 8 (hissə 1)",
     "prereqClaim": "Astronavtın Yer kürəsindən apardığı çəkicin kütləsi Aydakı kütləsinə bərabərdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_fiz_s_e_8792",
-    "stem": "s-ə",
-    "aliases": [],
-    "label": "S-ə",
-    "type": "FizikiKəmiyyət",
-    "subject": "Fizika",
-    "firstGradeVerified": 8,
-    "claim": "Cismin yerdəyişməsi s-ə bərabərdir.",
-    "book": "Fizika 8 (hissə 1)",
-    "prereqId": "can_fiz_qum_u_zerindeki_tezyiqleri_8869",
-    "prereqLabel": "Qum üzərindəki təzyiqləri",
-    "prereqGrade": 8,
-    "prereqBook": "Fizika 8 (hissə 1)",
-    "prereqClaim": "Hansı hallarda cisimlərin qum üzərindəki təzyiqləri bərabərdir",
     "distId": null,
     "distLabel": null
   },
@@ -18180,24 +17651,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_0_a_11332",
-    "stem": "0-a",
-    "aliases": [],
-    "label": "0-a",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 8,
-    "claim": "C) rasional ədəddir D) 0-a bərabərdir",
-    "book": "Riyaziyyat 8",
-    "prereqId": "can_riy_vahidine_6202",
-    "prereqLabel": "Vahidinə",
-    "prereqGrade": 7,
-    "prereqBook": "Riyaziyyat 7",
-    "prereqClaim": "Bilirik ki, O nöqtəsindən A nöqtəsinəqədər məsafə: OA=|-,| = , uzunluq vahidinə, Onöqtəsindən B nöqtəsinə qədər məsafə isə: OB = |-,| = ,06uzunluq vahidinə bərabərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_12_ye_11334",
     "stem": "12-yə",
     "aliases": [],
@@ -18266,24 +17719,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 8,
     "prereqBook": "Riyaziyyat 8",
     "prereqClaim": "Natural ədədin kvadratına bərabər olan ədədə tam kvadrat ədəd deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_1_e_11362",
-    "stem": "1-ə",
-    "aliases": [],
-    "label": "1-ə",
-    "type": "CəbriStruktur",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 8,
-    "claim": "H c) x £ c 0 tənliyinin köklərindən biri 1-ə bərabərdir.",
-    "book": "Riyaziyyat 8",
-    "prereqId": "math_anlayis_ikideyisenli_xetti_tenlik",
-    "prereqLabel": "İkidəyişənli xətti tənlik",
-    "prereqGrade": 7,
-    "prereqBook": "Riyaziyyat 7",
-    "prereqClaim": "ax + by = c (a və b eyni zamanda sıfır olmayan) şəklində verilən tənlik ikidəyişənli xətti tənlik adlanır",
     "distId": null,
     "distLabel": null
   },
@@ -18486,24 +17921,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_3_e_11446",
-    "stem": "3-ə",
-    "aliases": [],
-    "label": "3-ə",
-    "type": "HəndəsiFiqur",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 8,
-    "claim": "Şəkildə verilmiş üçbucaqların oxşarlıq əmsalı 3-ə bərabərdir.",
-    "book": "Riyaziyyat 8",
-    "prereqId": "can_riy_180_ye_11373",
-    "prereqLabel": "180”-yə",
-    "prereqGrade": 8,
-    "prereqBook": "Riyaziyyat 8",
-    "prereqClaim": "Hər təpədəki daxili və xarici bucaqların cəmi 180”-yə bərabərdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_puskurmesi_qeyzer_11457",
     "stem": "püskürməsi qeyzer",
     "aliases": [],
@@ -18684,24 +18101,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_8_e_11976",
-    "stem": "8-ə",
-    "aliases": [],
-    "label": "8-ə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 9,
-    "claim": "İki müsbət ədədin harmonik ortası 6-ya, fərqi isə 8-ə bərabərdir.",
-    "book": "Riyaziyyat 9",
-    "prereqId": "can_riy_20_ye_12064",
-    "prereqLabel": "20-yə",
-    "prereqGrade": 9,
-    "prereqBook": "Riyaziyyat 9",
-    "prereqClaim": "İki tam ədədin cəmi 20-yə bərabərdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_irrasional_tenlikler_11984",
     "stem": "irrasional tənliklər",
     "aliases": [],
@@ -18734,24 +18133,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 9,
     "prereqBook": "Riyaziyyat 9",
     "prereqClaim": "Ədədi silsilənin birincidən (sonlu silsilədə həm də sonuncudan) başqa istənilən həddi, onunla qonşu olan hədlərin ədədi ortasına bərabərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_4_e_12004",
-    "stem": "4-ə",
-    "aliases": [],
-    "label": "4-ə",
-    "type": "CəbriStruktur",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 9,
-    "claim": "B) köklərinin cəmi 4-ə bərabərdir",
-    "book": "Riyaziyyat 9",
-    "prereqId": "math_teorem_viyet",
-    "prereqLabel": "Viyet teoremi",
-    "prereqGrade": 8,
-    "prereqBook": "Riyaziyyat 8",
-    "prereqClaim": "Çevrilmiş kvadrat tənliyin köklərinin cəmi əks işarə ilə ikinci əmsala, hasili isə sərbəst həddə bərabərdir (x₁ + x₂ = -p, x₁ · x₂ = q)",
     "distId": null,
     "distLabel": null
   },
@@ -19040,24 +18421,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 8,
     "prereqBook": "Informatika 8",
     "prereqClaim": "İş kitabı bir neçə iş vərəqindən ibarətdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_i̇n_5_e_12193",
-    "stem": "5-ə",
-    "aliases": [],
-    "label": "5-ə",
-    "type": "İnformasiyaTəhlükəsizliyi",
-    "subject": "İnformatika",
-    "firstGradeVerified": 9,
-    "claim": "Elektron cədvəldə =SUM(B1:B2) düsturunun qiyməti 5-ə bərabərdir.",
-    "book": "Informatika 9",
-    "prereqId": "can_i̇n_2_ye_12192",
-    "prereqLabel": "-2-yə",
-    "prereqGrade": 9,
-    "prereqBook": "Informatika 9",
-    "prereqClaim": "Elektron cədvəldə =AVERAGE (A6: C6) düsturunun qiyməti -2-yə bərabərdir.",
     "distId": null,
     "distLabel": null
   },
@@ -20444,24 +19807,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 9,
     "prereqBook": "Hayat Bilgisi 9",
     "prereqClaim": "Sizcə, bu təhlükələr nədən ibarətdir",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_teb_bele_16028",
-    "stem": "belə",
-    "aliases": [],
-    "label": "Belə",
-    "type": "TəbiiObyekt",
-    "subject": "Təbiət",
-    "firstGradeVerified": 9,
-    "claim": "Materialist fəlsəfədə belə deyilir",
-    "book": "Hayat Bilgisi 9",
-    "prereqId": "can_teb_bagli_ilk_sened_15984",
-    "prereqLabel": "Bağlı ilk sənəd",
-    "prereqGrade": 9,
-    "prereqBook": "Hayat Bilgisi 9",
-    "prereqClaim": "Vestfal sülhü dini dözümlülüklə bağlı ilk sənəd hesab olunur.",
     "distId": null,
     "distLabel": null
   },
@@ -22842,24 +22187,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_i_e_22066",
-    "stem": "i-ə",
-    "aliases": [],
-    "label": "I-ə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 10,
-    "claim": "Üçbucağın iki iti bucağının sinusları uyğun olaraq —” və i-ə bərabərdir.",
-    "book": "Riyaziyyat 10",
-    "prereqId": "can_riy_hundurlukleri_22185",
-    "prereqLabel": "Hündürlükləri",
-    "prereqGrade": 10,
-    "prereqBook": "Riyaziyyat 10",
-    "prereqClaim": "Fiqurların həcmləri və hündürlükləri bərabərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_hansi_terefinin_kvadrati_22087",
     "stem": "hansı tərəfinin kvadratı",
     "aliases": [],
@@ -23072,24 +22399,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 10,
     "prereqBook": "Riyaziyyat 10",
     "prereqClaim": "Piramidanın həcmi oturacağının sahəsi ilə hündürlüyü hasilinin üçdə birinə bərabərdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_x_e_22184",
-    "stem": "x-ə",
-    "aliases": [],
-    "label": "X-ə",
-    "type": "HəndəsiFiqur",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 10,
-    "claim": "Düzgün üçbucaqlı prizmanın bütün tillərinin uzunluqları x-ə bərabərdir.",
-    "book": "Riyaziyyat 10",
-    "prereqId": "can_riy_tetraeder_22144",
-    "prereqLabel": "Tetraeder",
-    "prereqGrade": 10,
-    "prereqBook": "Riyaziyyat 10",
-    "prereqClaim": "Üçbucaqlı piramidaya tetraeder də deyilir.",
     "distId": null,
     "distLabel": null
   },
@@ -23828,24 +23137,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 11,
     "prereqBook": "Fizika 11",
     "prereqClaim": "Gördüyü iş cismin hərəkət trayektoriyasından asılı olmayan qüvvələr konservativ qüvvələr adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_fiz_ise_24732",
-    "stem": "işə",
-    "aliases": [],
-    "label": "Işə",
-    "type": "FizikiKəmiyyət",
-    "subject": "Fizika",
-    "firstGradeVerified": 11,
-    "claim": "Klyük keçdikdə görülən işə bərabərdir",
-    "book": "Fizika 11",
-    "prereqId": "can_fiz_gerginlik_24606",
-    "prereqLabel": "Gərginlik",
-    "prereqGrade": 11,
-    "prereqBook": "Fizika 11",
-    "prereqClaim": "Elektrik sahəsinin enerji xarakteristikası elektrik gərginliyi və ya sadəcə gərginlik adlanır.",
     "distId": null,
     "distLabel": null
   },
@@ -24714,24 +24005,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_tar_yuk_28652",
-    "stem": "yük",
-    "aliases": [],
-    "label": "Yük",
-    "type": "TarixiHadisə",
-    "subject": "Tarix",
-    "firstGradeVerified": 11,
-    "claim": "İngiltərə iqtisadiyyatına yük hesab olunur",
-    "book": "Umumi Tarix 11",
-    "prereqId": "can_tar_teserrufatlar_kolxoz_27845",
-    "prereqLabel": "Təsərrüfatlar kolxoz",
-    "prereqGrade": 11,
-    "prereqBook": "Azerbaycan Tarixi 11",
-    "prereqClaim": "Belə təsərrüfatlar kolxoz adlandırılır",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_tar_dovr_durgunluq_dovru_28666",
     "stem": "dövr durğunluq dövrü",
     "aliases": [],
@@ -25340,24 +24613,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 11,
     "prereqBook": "Riyaziyyat 11",
     "prereqClaim": "T nöqtəsində əyriyə çəkilən toxunan deyilir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_r_e_31467",
-    "stem": "r-ə",
-    "aliases": [],
-    "label": "R-ə",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 11,
-    "claim": "Bərabərtərəfli konusun radiusu R-ə bərabərdir.",
-    "book": "Riyaziyyat 11",
-    "prereqId": "can_riy_ozx_koordinat_mustevileri_31382",
-    "prereqLabel": "Ozx koordinat müstəviləri",
-    "prereqGrade": 11,
-    "prereqBook": "Riyaziyyat 11",
-    "prereqClaim": "Oxy, Oyz, Ozx koordinat müstəviləri adlanır.",
     "distId": null,
     "distLabel": null
   },
@@ -26172,24 +25427,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_mus_ifa_32365",
-    "stem": "ifa",
-    "aliases": [],
-    "label": "Ifa",
-    "type": "MusiqiAnlayışı",
-    "subject": "Musiqi",
-    "firstGradeVerified": 2,
-    "claim": "Belə ifaya 1 səsli, 2 səsli və 3 səsli ifa deyilir.",
-    "book": "Musiqi 2",
-    "prereqId": "can_mus_bunlar_dinamik_isareler_32324",
-    "prereqLabel": "Bunlar dinamik işarələr",
-    "prereqGrade": 2,
-    "prereqBook": "Musiqi 2",
-    "prereqClaim": "Bunlar dinamik işarələr adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_aze_islenmesi_aheng_qanunu_32468",
     "stem": "işlənməsi ahəng",
     "aliases": [],
@@ -26406,24 +25643,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_aze_ona_32992",
-    "stem": "ona",
-    "aliases": [],
-    "label": "Ona",
-    "type": "DilQaydası",
-    "subject": "Azərbaycan dili",
-    "firstGradeVerified": 3,
-    "claim": "Cəmil bilirdi ki, bu sözlər ona deyilir.",
-    "book": "Azerbaycan Dili 3 (hissə 1)",
-    "prereqId": "can_aze_novu_adi_manqust_33046",
-    "prereqLabel": "Növü adi manqust",
-    "prereqGrade": 3,
-    "prereqBook": "Azerbaycan Dili 3 (hissə 1)",
-    "prereqClaim": "Ən geniş yayılmış növü adi manqust adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_aze_kohnelmis_sozler_32996",
     "stem": "köhnəlmiş sözlər",
     "aliases": [],
@@ -26456,24 +25675,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 3,
     "prereqBook": "Azerbaycan Dili 3 (hissə 2)",
     "prereqClaim": "D Sizcə, təkər niyə mühüm ixtira hesab olunur",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_aze_soz_33002",
-    "stem": "söz",
-    "aliases": [],
-    "label": "Söz",
-    "type": "DilQaydası",
-    "subject": "Azərbaycan dili",
-    "firstGradeVerified": 3,
-    "claim": "Belə sözlərə düzəltmə söz deyilir.",
-    "book": "Azerbaycan Dili 3 (hissə 1)",
-    "prereqId": "can_aze_sekkiz_mertebeden_33146",
-    "prereqLabel": "Səkkiz mərtəbədən",
-    "prereqGrade": 3,
-    "prereqBook": "Azerbaycan Dili 3 (hissə 2)",
-    "prereqClaim": "Qala səkkiz mərtəbədən ibarətdir.",
     "distId": null,
     "distLabel": null
   },
@@ -32540,24 +31741,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 6,
     "prereqBook": "Edebiyyat 6",
     "prereqClaim": "Carco qovunu istədi — almadım, sonra da nemsəqənnadı dükanının qabağından keçəndə şüşənin dalına düzülmüşrəngarəng konfet və şirniyyatdan istədi – almadım.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_ede_dil_3316",
-    "stem": "dil",
-    "aliases": [],
-    "label": "Dil",
-    "type": "NəzəriAnlayış",
-    "subject": "Ədəbiyyat",
-    "firstGradeVerified": 6,
-    "claim": "Bu dil — bizim ruhumuz, eşqimiz, canımızdır, Bu dil – bir-birimizlə əhdi-peymanımızdır.",
-    "book": "Edebiyyat 6",
-    "prereqId": "can_ede_derya_3331",
-    "prereqLabel": "Dərya",
-    "prereqGrade": 6,
-    "prereqBook": "Edebiyyat 6",
-    "prereqClaim": "Dərya — dəniz Dəyərləndirmək – bir adamın, şeyin və ya işin əhəmiyyətini, keyfiyyətini, dəyərini düzgün başa düşüb təqdir etmək, ona qiymətvermək; qiymətləndirmək Diraz – uzun Doqqaz – adətən, kənd yerlərində evin, həyətin, bağın və s.",
     "distId": null,
     "distLabel": null
   },
@@ -50778,24 +49961,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_tex_den_34243",
-    "stem": "dən",
-    "aliases": [],
-    "label": "Dən",
-    "type": "TexnolojiAnlayış",
-    "subject": "Texnologiya",
-    "firstGradeVerified": 4,
-    "claim": "Vinni Pux» oyuncağının hazırlanma ardıcıllığı nə dən ibarətdir",
-    "book": "Texnologiya 4",
-    "prereqId": "can_tex_cut_paralel_dodaqdan_34178",
-    "prereqLabel": "Cüt paralel dodaqdan",
-    "prereqGrade": 4,
-    "prereqBook": "Texnologiya 4",
-    "prereqClaim": "Məngənə bir cüt paralel dodaqdan ibarətdir.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_pakistanin_erazileri_teqriben_34329",
     "stem": "pakistanın əraziləri təqribən",
     "aliases": [],
@@ -50936,24 +50101,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "prereqGrade": 4,
     "prereqBook": "Riyaziyyat 4 (hissə 1)",
     "prereqClaim": "Bu şüalar bucağın tərəfləri, başlanğıc nöqtə təpəsi adlanır.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
-    "id": "can_riy_sua_34391",
-    "stem": "şüa",
-    "aliases": [],
-    "label": "Şüa",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 4,
-    "claim": "Hissələrin hər biri başlanğıcı bu nöqtədə olan şüa adlanır.",
-    "book": "Riyaziyyat 4 (hissə 1)",
-    "prereqId": "can_riy_pakistanin_erazileri_teqriben_34329",
-    "prereqLabel": "Pakistanın əraziləri təqribən",
-    "prereqGrade": 4,
-    "prereqBook": "Riyaziyyat 4 (hissə 1)",
-    "prereqClaim": "Türkiyə və Pakistanın əraziləri təqribən bərabərdir.",
     "distId": null,
     "distLabel": null
   },
@@ -54198,24 +53345,6 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
     "distLabel": null
   },
   {
-    "id": "can_riy_tam_2678",
-    "stem": "tam",
-    "aliases": [],
-    "label": "Tam",
-    "type": "RiyaziAnlayış",
-    "subject": "Riyaziyyat",
-    "firstGradeVerified": 6,
-    "claim": "Bir ədəd digərinə tam bölünür",
-    "book": "Riyaziyyat 6 (hissə 1)",
-    "prereqId": "can_riy_sozlukalt_coxluq_2910",
-    "prereqLabel": "SÖZLÜKAlt çoxluq",
-    "prereqGrade": 6,
-    "prereqBook": "Riyaziyyat 6 (hissə 2)",
-    "prereqClaim": "SÖZLÜKAlt çoxluq — B çoxluğunun hər birelementi həm də A çoxluğunun elementi olarsa, B çoxluğuna Açoxluğunun alt çoxluğu deyilir: B ⊂ A.",
-    "distId": null,
-    "distLabel": null
-  },
-  {
     "id": "can_riy_kodu_qeder_geri_2690",
     "stem": "kodu qədər geri",
     "aliases": [],
@@ -54505,30 +53634,83 @@ export const CANONICAL_ONTOLOGY_REGISTRY = [
   }
 ];
 
-export function resolveCanonicalOntologyNode(text: string, subject?: string): CanonicalOntologyMatch | null {
+
+const REGISTRY_BANNED_STEMS = new Set([
+  'lar', 'lər', 'hava', 'hadisə', 'hərəkət', 'proses', 'kütlələri', 'çərşənbəsi',
+  'enerjisi', 'dərsi', 'mövzusu', 'adlanır', 'nədir', 'necə', 'vvə', 'şmə', 'rma',
+  'kök', 'oxu', 'yol', 'göl', 'şeh', 'bas', 'kod', 'üçün', 'olan', 'kimi', 'hansı',
+  'biri', 'onun', 'buna', 'belə', 'edir', 'olur', 'daha', 'eyni', 'yeni', 'bütün',
+  'hissə', 'sinif', 'məsələ', 'sual', 'cavab', 'dövr', 'qayda', 'təsnifat', 'növ'
+])
+
+function matchWholeWordAz(text: string, term: string): boolean {
+  if (!text || !term || term.length < 3) return false
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const regex = new RegExp(`(?:^|[^a-zçəıöüşğ0-9])${escaped}(?:[^a-zçəıöüşğ0-9]|$)`, 'i')
+  return regex.test(text)
+}
+
+export function resolveCanonicalOntologyNode(
+  text: string,
+  subject?: string,
+  maxGrade?: number
+): CanonicalOntologyMatch | null {
   if (!text) return null
   const lowText = text.toLowerCase()
-  
+  const targetSubj = normalizeOntologySubject(subject)
+  const ceilingGrade = (typeof maxGrade === 'number' && maxGrade > 0) ? maxGrade : 11
+
+  let bestMatch: CanonicalOntologyMatch | null = null
+  let bestScore = -1
+
   for (const item of CANONICAL_ONTOLOGY_REGISTRY) {
+    // Subject Isolation Firewall: If subject is provided, strict match is required!
+    if (targetSubj) {
+      const itemSubj = normalizeOntologySubject(item.subject)
+      if (itemSubj && itemSubj !== targetSubj) {
+        continue
+      }
+    }
+
+    // Grade Boundary: Cannot match verified grade beyond ceiling
+    if (item.firstGradeVerified && item.firstGradeVerified > ceilingGrade) {
+      continue
+    }
+
+    // Prerequisite Ceiling: If item has a prerequisite, prerequisite grade CANNOT exceed ceilingGrade (Strict Backward Only!)
+    if (item.prereqGrade && item.prereqGrade > ceilingGrade) {
+      continue
+    }
+
     const candidates = [item.stem, ...(item.aliases || []).map((a: string) => a.toLowerCase().trim())]
-    if (candidates.some((c: string) => c && c.length >= 2 && (lowText.includes(c) || new RegExp(`\\b${c}\\b`, 'i').test(lowText)))) {
-      return {
-        id: item.id,
-        label: item.label,
-        type: item.type,
-        subject: item.subject,
-        firstGradeVerified: item.firstGradeVerified,
-        claim: item.claim || undefined,
-        book: item.book || undefined,
-        prerequisiteId: item.prereqId || undefined,
-        prerequisiteLabel: item.prereqLabel || undefined,
-        prerequisiteGrade: item.prereqGrade || undefined,
-        prerequisiteBook: item.prereqBook || undefined,
-        prerequisiteClaim: item.prereqClaim || undefined,
-        distractorId: item.distId || undefined,
-        distractorLabel: item.distLabel || undefined
+      .filter((c: string) => c && c.length >= 3 && !REGISTRY_BANNED_STEMS.has(c))
+
+    for (const c of candidates) {
+      if (matchWholeWordAz(lowText, c)) {
+        // Score based on candidate term length (longer/more specific matches win)
+        const score = c.length + (targetSubj && normalizeOntologySubject(item.subject) === targetSubj ? 50 : 0)
+        if (score > bestScore) {
+          bestScore = score
+          bestMatch = {
+            id: item.id,
+            label: item.label,
+            type: item.type,
+            subject: item.subject,
+            firstGradeVerified: item.firstGradeVerified,
+            claim: item.claim || undefined,
+            book: item.book || undefined,
+            prerequisiteId: item.prereqId || undefined,
+            prerequisiteLabel: item.prereqLabel || undefined,
+            prerequisiteGrade: item.prereqGrade ? Math.min(item.prereqGrade, ceilingGrade) : undefined,
+            prerequisiteBook: item.prereqBook || undefined,
+            prerequisiteClaim: item.prereqClaim || undefined,
+            distractorId: item.distId || undefined,
+            distractorLabel: item.distLabel || undefined
+          }
+        }
       }
     }
   }
-  return null
+
+  return bestMatch
 }

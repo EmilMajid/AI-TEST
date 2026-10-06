@@ -481,6 +481,51 @@ export default function ParentDashboard() {
       const studentUniqueId = (studentObj as any)?.uniqueId || ""
       const studentClass = studentObj?.studentClass || studentObj?.class || ""
 
+      // 0. Instant Cache Retrieval for 0ms flicker on page refresh
+      const cacheKey = `parent_cached_stats_${studentId}`
+      try {
+        const cachedRaw = localStorage.getItem(cacheKey)
+        if (cachedRaw) {
+          const cachedStats = JSON.parse(cachedRaw)
+          if (cachedStats && cachedStats.recentTests && cachedStats.recentTests.length > 0) {
+            setStudentStats(cachedStats)
+            if (!selectedSubject && cachedStats.subjectBreakdown?.length > 0) {
+              setSelectedSubject(cachedStats.subjectBreakdown[0].subject)
+            }
+          }
+        }
+      } catch (_) {}
+
+      // Collect all local rich tests from localStorage for this student
+      const keysToCheck = [
+        `student_test_results_${studentId}`,
+        studentUniqueId ? `student_test_results_${studentUniqueId}` : null,
+        resolvedStudentEmail ? `student_test_results_${resolvedStudentEmail.toLowerCase()}` : null,
+        "lastTestResults",
+        "testResults",
+      ].filter(Boolean) as string[]
+
+      let localTests: any[] = []
+      for (const key of keysToCheck) {
+        try {
+          const raw = localStorage.getItem(key)
+          if (raw) {
+            const parsed = JSON.parse(raw)
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              localTests.push(...parsed)
+            } else if (parsed && typeof parsed === "object") {
+              if (parsed.detailedResults || parsed.questions || parsed.testData) {
+                localTests.push(parsed)
+              }
+            }
+          }
+        } catch (_) {}
+      }
+
+      if (studentClass && localTests.length > 0) {
+        localTests = localTests.filter((t: any) => !t.class || String(t.class) === String(studentClass))
+      }
+
       const emailQuery = resolvedStudentEmail
         ? `&email=${encodeURIComponent(resolvedStudentEmail)}`
         : ""
@@ -494,35 +539,78 @@ export default function ParentDashboard() {
       )
       const data = await response.json()
 
-      // ── Prioritet 1: Serverdən real data gəldisə, onu göstər ──
+      // ── Prioritet 1: Serverdən real data gəldisə, yerli KAG detalları ilə zənginləşdirib göstər ──
       if (data.success && data.statistics && data.statistics.recentActivity && data.statistics.recentActivity.length > 0) {
-        setStudentStats(data.statistics)
-        if (!selectedSubject && data.statistics.subjectBreakdown.length > 0) {
-          setSelectedSubject(data.statistics.subjectBreakdown[0].subject)
+        const stats: StudentStatistics = { ...data.statistics }
+        const serverRecent = Array.isArray(stats.recentTests) ? [...stats.recentTests] : []
+
+        // Rich map from local storage (containing detailedResults with backward_trace)
+        const richMap = new Map<string, any>()
+        for (const lt of localTests) {
+          if ((lt.detailedResults && lt.detailedResults.length > 0) || (lt.questions && lt.questions.length > 0)) {
+            const kById = lt.id ? String(lt.id) : ""
+            const kByTopic = `${lt.textbook || lt.testData?.textbook || ""}-${lt.topic || lt.testData?.topic || ""}`.toLowerCase().trim()
+            if (kById) richMap.set(kById, lt)
+            if (kByTopic) richMap.set(kByTopic, lt)
+          }
+        }
+
+        const mergedRecent = serverRecent.map((st: any) => {
+          if (st.detailedResults && st.detailedResults.length > 0) return st
+          const kById = st.id ? String(st.id) : ""
+          const kByTopic = `${st.textbook || ""}-${st.topic || ""}`.toLowerCase().trim()
+          const localMatch = richMap.get(kById) || richMap.get(kByTopic)
+          if (localMatch) {
+            return {
+              ...st,
+              detailedResults: localMatch.detailedResults,
+              questions: localMatch.questions || localMatch.testData?.questions,
+              answers: localMatch.answers,
+            }
+          }
+          return st
+        })
+
+        // Also add any local tests that are not yet on the server
+        for (const lt of localTests) {
+          if ((lt.detailedResults && lt.detailedResults.length > 0) || (lt.questions && lt.questions.length > 0)) {
+            const ltTextbook = lt.textbook || lt.testData?.textbook || ""
+            const ltTopic = lt.topic || lt.testData?.topic || ""
+            const exists = mergedRecent.some((st: any) =>
+              (st.id && lt.id && String(st.id) === String(lt.id)) ||
+              (st.textbook === ltTextbook && st.topic === ltTopic)
+            )
+            if (!exists) {
+              mergedRecent.unshift({
+                id: lt.id || `local-${Date.now()}`,
+                textbook: ltTextbook,
+                topic: ltTopic,
+                score: lt.score || 0,
+                correctAnswers: lt.correctAnswers,
+                totalQuestions: lt.totalQuestions,
+                completedAt: lt.completedAt || new Date().toISOString(),
+                detailedResults: lt.detailedResults,
+                questions: lt.questions,
+                answers: lt.answers,
+              })
+            }
+          }
+        }
+
+        stats.recentTests = mergedRecent
+        setStudentStats(stats)
+        try {
+          localStorage.setItem(cacheKey, JSON.stringify(stats))
+        } catch (_) {}
+
+        if (!selectedSubject && stats.subjectBreakdown && stats.subjectBreakdown.length > 0) {
+          setSelectedSubject(stats.subjectBreakdown[0].subject)
         }
         return
       }
 
       // ── Prioritet 2: localStorage-da nəticə varsa, onu istifadə et ──
       try {
-        // Yalnız bu konkret şagirdə aid olan açarları yoxla (valideynin email-ini daxil ETMƏ!)
-        const keysToCheck = [
-          `student_test_results_${studentId}`,
-          studentUniqueId ? `student_test_results_${studentUniqueId}` : null,
-          resolvedStudentEmail ? `student_test_results_${resolvedStudentEmail}` : null,
-        ].filter(Boolean) as string[]
-
-        let localTests: any[] = []
-        for (const key of keysToCheck) {
-          const raw = localStorage.getItem(key)
-          if (raw) {
-            const parsed = JSON.parse(raw)
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              localTests = parsed
-              break
-            }
-          }
-        }
 
         // Təhlükəsizlik süzgəci: Şagirdin sinfi bəllidirsə, başqa sinif testlərini qəbul etmə
         if (studentClass && localTests.length > 0) {
