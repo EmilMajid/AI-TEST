@@ -3374,3 +3374,11 @@
 {"source": "can_i̇n_wardrobe_335", "target": "can_i̇n_baku_306", "relation": "PREREQUISITE_OF", "grade": 5, "rationale": "İngilis dili (Nitq modelləri) fənn kurikulumu üzrə konseptual pilləli ardıcıllıq"}
 {"source": "can_i̇n_baku_306", "target": "can_i̇n_nevv_delhi_303", "relation": "PREREQUISITE_OF", "grade": 5, "rationale": "İngilis dili (Nitq modelləri) fənn kurikulumu üzrə konseptual pilləli ardıcıllıq"}
 {"source": "can_i̇n_nevv_delhi_303", "target": "can_i̇n_match_4164", "relation": "PREREQUISITE_OF", "grade": 6, "rationale": "İngilis dili (Nitq modelləri) fənn kurikulumu üzrə konseptual pilləli ardıcıllıq"}
+{"source": "bio_xestelik_qrip", "target": "bio_proses_zulallarin_denaturasiyasi", "relation": "PREREQUISITE_OF", "grade": 9, "rationale": "Biologiya fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "hist_doyus_dzirav", "target": "hist_hadise_gence_usyani", "relation": "PREREQUISITE_OF", "grade": 7, "rationale": "Azərbaycan tarixi fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "hist_doyus_dzirav", "target": "hist_hadise_qazan_xan_islahatlari", "relation": "PREREQUISITE_OF", "grade": 7, "rationale": "Azərbaycan tarixi fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "hist_doyus_dzirav", "target": "hist_hadise_mugan_qurultayi_1736", "relation": "PREREQUISITE_OF", "grade": 10, "rationale": "Azərbaycan tarixi fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "phys_cihaz_ampermetr", "target": "phys_qanun_paskal", "relation": "PREREQUISITE_OF", "grade": 7, "rationale": "Fizika fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "phys_qanun_paskal", "target": "phys_qanun_kulon", "relation": "PREREQUISITE_OF", "grade": 8, "rationale": "Fizika fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "math_teorem_ters_teorem", "target": "can_riy_pifaqor_teoreminin_umumilesmesi_22088", "relation": "PREREQUISITE_OF", "grade": 10, "rationale": "Riyaziyyat fənni üzrə əsas anlayış əlaqələndirilməsi"}
+{"source": "auto_tar_dövrü_3581", "target": "can_tar_turkiyede_yeni_neft_kemeri_16404", "relation": "PREREQUISITE_OF", "grade": 9, "rationale": "Tarix fənni üzrə əsas anlayış əlaqələndirilməsi"}
