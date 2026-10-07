@@ -63,6 +63,17 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(redirectUrl, 301)
   }
 
+  // Canonicalize English locale: Redirect /en and /en/* to un-prefixed canonical routes (301)
+  if (pathname === "/en" || pathname === "/en/") {
+    const redirectUrl = new URL("/", request.url)
+    return NextResponse.redirect(redirectUrl, 301)
+  }
+  if (pathname.startsWith("/en/")) {
+    const cleanPath = pathname.replace(/^\/en/, "") || "/"
+    const redirectUrl = new URL(cleanPath, request.url)
+    return NextResponse.redirect(redirectUrl, 301)
+  }
+
   // CRITICAL SECURITY GUARD: Protect /admin pages and /api/admin endpoints
   const isAdminPage = pathname === "/admin" || pathname.startsWith("/admin/")
   const isAdminApi = pathname.startsWith("/api/admin")

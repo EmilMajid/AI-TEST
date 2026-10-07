@@ -66,6 +66,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/en',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+      {
         source: '/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdil%C9%99sdirmis-tedris',
         destination: '/blog/suni-intellekt-muellimlerin-en-guclu-komekcisi-ferdilesdirilmis-tedris',
         permanent: true,

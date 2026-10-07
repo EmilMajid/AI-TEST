@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.testai.az/open-tests",
     languages: {
-      az: "https://www.testai.az/open-tests",
-      en: "https://www.testai.az/en/open-tests",
+      az: "https://www.testai.az/az/open-tests",
+      en: "https://www.testai.az/open-tests",
       tr: "https://www.testai.az/tr/open-tests",
       ru: "https://www.testai.az/ru/open-tests",
       "x-default": "https://www.testai.az/open-tests",

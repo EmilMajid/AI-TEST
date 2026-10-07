@@ -36,21 +36,41 @@ export async function updateSession(request: NextRequest) {
     return supabaseResponse
   }
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+    try {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
 
-  if (
-    request.nextUrl.pathname !== "/" &&
-    !user &&
-    !request.nextUrl.pathname.startsWith("/login") &&
-    !request.nextUrl.pathname.startsWith("/register") &&
-    !request.nextUrl.pathname.startsWith("/api")
-  ) {
-    const url = request.nextUrl.clone()
-    url.pathname = "/login"
-    return NextResponse.redirect(url)
-  }
+      // Define public routes that must never be redirected to /login
+      const publicPrefixes = [
+        "/about",
+        "/privacy",
+        "/terms",
+        "/contact",
+        "/blog",
+        "/open-tests",
+        "/az",
+        "/tr",
+        "/ru",
+      ]
 
-  return supabaseResponse
+      const pathname = request.nextUrl.pathname
+      const isPublicRoute =
+        pathname === "/" ||
+        pathname.startsWith("/login") ||
+        pathname.startsWith("/register") ||
+        pathname.startsWith("/api") ||
+        publicPrefixes.some((prefix) => pathname === prefix || pathname.startsWith(prefix + "/"))
+
+      if (!user && !isPublicRoute) {
+        const url = request.nextUrl.clone()
+        url.pathname = "/login"
+        return NextResponse.redirect(url)
+      }
+    } catch (authError) {
+      // Gracefully continue without throwing 500 on Supabase timeouts/errors
+      console.error("[Middleware] Supabase auth check error:", authError)
+    }
+
+    return supabaseResponse
 }

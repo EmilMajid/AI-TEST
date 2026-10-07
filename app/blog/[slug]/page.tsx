@@ -33,10 +33,10 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
     alternates: {
       canonical: `https://www.testai.az/blog/${post.slug}`,
       languages: {
-        az: `https://www.testai.az/blog/${post.slug}?lang=az`,
-        en: `https://www.testai.az/blog/${post.slug}?lang=en`,
-        tr: `https://www.testai.az/blog/${post.slug}?lang=tr`,
-        ru: `https://www.testai.az/blog/${post.slug}?lang=ru`,
+        az: `https://www.testai.az/az/blog/${post.slug}`,
+        en: `https://www.testai.az/blog/${post.slug}`,
+        tr: `https://www.testai.az/tr/blog/${post.slug}`,
+        ru: `https://www.testai.az/ru/blog/${post.slug}`,
         "x-default": `https://www.testai.az/blog/${post.slug}`,
       },
     },

@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.testai.az/privacy",
     languages: {
-      az: "https://www.testai.az/privacy",
-      en: "https://www.testai.az/en/privacy",
+      az: "https://www.testai.az/az/privacy",
+      en: "https://www.testai.az/privacy",
       tr: "https://www.testai.az/tr/privacy",
       ru: "https://www.testai.az/ru/privacy",
       "x-default": "https://www.testai.az/privacy",

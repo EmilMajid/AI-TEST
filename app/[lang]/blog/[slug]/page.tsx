@@ -39,10 +39,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
     keywords: post.tags,
     authors: [{ name: post.author.name }],
     alternates: {
-      canonical: `https://www.testai.az/${lang}/blog/${post.slug}`,
+      canonical: lang === "en" ? `https://www.testai.az/blog/${post.slug}` : `https://www.testai.az/${lang}/blog/${post.slug}`,
       languages: {
-        az: `https://www.testai.az/blog/${post.slug}`,
-        en: `https://www.testai.az/en/blog/${post.slug}`,
+        az: `https://www.testai.az/az/blog/${post.slug}`,
+        en: `https://www.testai.az/blog/${post.slug}`,
         tr: `https://www.testai.az/tr/blog/${post.slug}`,
         ru: `https://www.testai.az/ru/blog/${post.slug}`,
         "x-default": `https://www.testai.az/blog/${post.slug}`,

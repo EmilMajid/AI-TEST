@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.testai.az/terms",
     languages: {
-      az: "https://www.testai.az/terms",
-      en: "https://www.testai.az/en/terms",
+      az: "https://www.testai.az/az/terms",
+      en: "https://www.testai.az/terms",
       tr: "https://www.testai.az/tr/terms",
       ru: "https://www.testai.az/ru/terms",
       "x-default": "https://www.testai.az/terms",

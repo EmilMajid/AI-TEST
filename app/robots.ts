@@ -21,7 +21,15 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Googlebot",
-        allow: "/",
+        allow: ["/", "/about", "/privacy", "/terms", "/contact", "/blog", "/open-tests", "/az/", "/tr/", "/ru/"],
+        disallow: [
+          "/admin/",
+          "/api/",
+          "/dashboard/",
+          "/parent-dashboard/",
+          "/profile/",
+          "/setup/",
+        ],
       },
     ],
     sitemap: "https://www.testai.az/sitemap.xml",
