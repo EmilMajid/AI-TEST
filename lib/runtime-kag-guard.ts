@@ -493,6 +493,78 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   tip = tip.replace(/\s{2,}/g, " ").trim()
   bt.parent_action_tip = tip
 
+  // 7. CROSS-SUBJECT SYNERGY FIREWALL
+  if (bt.cross_subject_connections && Array.isArray(bt.cross_subject_connections)) {
+    const rawCs = bt.cross_subject_connections
+    const validCs = rawCs.filter((cs: any) => {
+      if (!cs || typeof cs !== "object") return false
+      const csSubj = String(cs.subject || "").toLowerCase()
+      const csGrade = Number(cs.grade) || 0
+      const csFacet = String(cs.facet || "").toLowerCase()
+      const csTopic = String(cs.topic || "").toLowerCase()
+      const sLow = subjName.toLowerCase()
+      const combined = `${topicTitle} ${qText}`.toLowerCase()
+
+      // Informatics should never link to Tectonics, Mechanical stress, Geography or Physics
+      if (sLow.includes("informatika") || sLow.includes("informasiya")) {
+        if (
+          csFacet.includes("tektonik") ||
+          csFacet.includes("gərginlik") ||
+          csFacet.includes("deformasiya") ||
+          csFacet.includes("orogenez") ||
+          csSubj.includes("coğrafiya") ||
+          csSubj.includes("fizika")
+        ) {
+          return false
+        }
+      }
+
+      // Elementary (grades 1-5) should never link to high school (grades 9-11)
+      if (qGrade <= 5 && csGrade >= 9) {
+        return false
+      }
+
+      // Bogus Wax/Lipid connection
+      if (csFacet.includes("lipid") || csFacet.includes("mühafizə örtüyü") || csTopic.includes("mumlar")) {
+        if (!/(?:lipid|vaks|mum|mum qatı|kutikula|transpirasiya|buxarlanma|yağlar)/.test(combined)) {
+          return false
+        }
+      }
+
+      // Bogus Tectonic deformations
+      if (csFacet.includes("tektonik") || csTopic.includes("qraben") || csTopic.includes("horst")) {
+        if (!/(?:tektonik|litosfer|qraben|horst|fay|yer qabığı|orogenez|zəlzələ)/.test(combined)) {
+          return false
+        }
+      }
+
+      // Bogus Mechanical stress
+      if (csFacet.includes("mexaniki gərginlik") || csTopic.includes("qüvvə və deformasiya")) {
+        if (!/(?:qüvvə|gərginlik|mexaniki|huk|deformasiya|elastiklik|prujin)/.test(combined)) {
+          return false
+        }
+      }
+
+      // Language subjects linking to Physics or Chemistry
+      if ((sLow.includes("dili") || sLow.includes("ədəbiyyat")) && (csSubj.includes("fizika") || csSubj.includes("kimya"))) {
+        return false
+      }
+
+      // History linking to foreign language
+      if (sLow.includes("tarix") && (csSubj.includes("ingilis") || csSubj.includes("alman") || csSubj.includes("fransız") || csSubj.includes("rus"))) {
+        return false
+      }
+
+      return true
+    })
+
+    if (validCs.length > 0) {
+      bt.cross_subject_connections = validCs
+    } else {
+      delete bt.cross_subject_connections
+    }
+  }
+
   return q
 }
 
@@ -517,7 +589,7 @@ export interface CanonicalOntologyMatch {
   distractorLabel?: string
 }
 
-const CANONICAL_ONTOLOGY_REGISTRY = [
+export const CANONICAL_ONTOLOGY_REGISTRY = [
   {
     "id": "math_teorem_ters_teorem",
     "stem": "tərs teorem",
