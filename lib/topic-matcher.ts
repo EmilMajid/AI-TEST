@@ -113,6 +113,43 @@ export function stripTopicPrefix(str: string): string {
   return s
 }
 
+const TOPIC_ALIASES: Record<string, string> = {
+  // Kimya 11 legacy/descriptive aliases
+  "karbohidratların təsnifatı. qlükoza və fruktoza": "Karbohidratların təsnifatı və fotosintez prosesi",
+  "zülallar (peptidlər). quruluşu, təbəqələri və xassələri": "Zülallar: Quruluş səviyyələri, rəngli reaksiyaları və denaturasiyası",
+  "plastik kütlələr və sintetik kauçuklar": "Plastik kütlələr (Polietilen, Polipropilen, Polivinilxlorid, Polistirol)",
+  "saxaroza. quruluşu, alınması və xassələri": "Disaxaridlər: Saxaroza və maltozanın quruluşu, hidrolizi və əhəmiyyəti",
+  "nişasta və sellüloza (quruluşu, xassələri və tətbiqi)": "Polisaxaridlər: Nişasta və sellülozanın quruluş fərqləri, kimyəvi xassələri",
+  "nuklein turşuları (dnt və rnt)": "Peptidlər və peptid rabitəsi",
+  "irimolekullu birləşmələr (polimerlər). əsas anlayışlar": "Polimerləşmə və polikondensləşmə reaksiyaları",
+  "dərman maddələri və pestisidlər": "Sintetik kauçuklar və rezin istehsalı",
+  "üzvi kimyanın həyatımızda və sənayedə rolu": "Sintetik liflər (Kapron, Lavsan)",
+  "aseton. alınması, xassələri və tətbiqi": "Formaldehid, asetaldehid və asetonun sənayedə əhəmiyyəti və tətbiqi",
+  "aldehidlərin fiziki və kimyəvi xassələri, tətbiqi": "Aldehidlərin fiziki və kimyəvi xassələri (Gümüş-güzgü reaksiyası və oksidləşmə)",
+  "karbon turşularının təsnifatı, birəsaslı doymuş karbon turşularının homoloji sırası və izomerliyi": "Doymuş birəsaslı karbon turşuları: Homoloji sırası, izomerliyi və adlandırılması",
+  "birəsaslı doymuş karbon turşularının adlandırılması və alınması": "Doymuş birəsaslı karbon turşularının alınması, fiziki və kimyəvi xassələri",
+  "birəsaslı doymuş karbon turşularının fiziki və kimyəvi xassələri, tətbiqi": "Qarışqa turşusu və sirkə turşusunun xüsusi xassələri və tətbiqi",
+  "doymamış, aromatik və ikiəsaslı karbon turşuları": "Doymamış və aromatik karbon turşuları (Akril, Olein, Benzoy turşusu)",
+  "mürəkkəb efirlər. quruluşu, adlandırılması, izomerliyi və alınması": "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi",
+  "mürəkkəb efirlərin xassələri və tətbiqi": "Mürəkkəb efirlər: Efirləşmə reaksiyası, quruluşu, hidrolizi və tətbiqi",
+  "yağlar. tərkibi, quruluşu və təsnifatı": "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi",
+  "yağların xassələri və tətbiqi": "Yağlar: Quruluşu, təsnifatı, xassələri və yağların hidrogenləşdirilməsi",
+  "aminlər. təsnifatı, izomerliyi və adlandırılması": "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri",
+  "aminlərin alınması, fiziki və kimyəvi xassələri": "Aminlər: Təsnifatı, izomerliyi, adlandırılması və əsasi xassələri",
+  "anilin. alınması, xassələri və tətbiqi": "Anilin (Aromatik amin): Alınması (Zinin reaksiyası) və kimyəvi xassələri",
+  "amin turşuları. tərkibi, quruluşu, izomerliyi və adlandırılması": "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması",
+  "amin turşularının alınması, xassələri və bioloji rolu": "Aminturşular: Quruluşu, ikili təbiəti (amfoterliyi) və alınması",
+  "doymuş biratomlu spirtlər: adlandırılması və izomerliyi": "1.1.1. Adlandırılması və izomerliyi",
+  "doymuş biratomlu spirtlərin alınması": "1.1.2. Alınması",
+  "doymuş biratomlu spirtlərin quruluşu və fiziki xassələri": "1.1.3. Quruluşu və fiziki xassələri",
+  "doymuş biratomlu spirtlərin kimyəvi xassələri və tətbiqi": "1.1.4. Kimyəvi xassələri və tətbiqi",
+  "praktik dərs: etanol və onun xassələri": "1.1.5. Praktik dərs. Etanolun məhkəməsi",
+  "çoxatomlu spirtlər: etilenqlikol": "1.2.1. Etilenqlikol",
+  "çoxatomlu spirtlər: qliserin": "1.2.2. Qliserin",
+  "fenollar: alınması, quruluşu və fiziki xassələri": "1.3.1. Fenollar. Alınması, quruluşu və fiziki xassələri",
+  "fenollar: kimyəvi xassələri və tətbiqi": "1.3.2. Fenolların kimyəvi xassələri və tətbiqi",
+}
+
 /**
  * Finds the exact or best 1-to-1 topic match from a list of candidate topics.
  * Returns an array containing the matched topic (or empty array if no legitimate match).
@@ -124,10 +161,30 @@ export function findBestTopicMatch(targetTopic: string, candidateTopics: string[
   const tRaw = rawNorm(targetTopic)
   const tCleanRaw = rawNorm(tClean)
 
+  // 0. Direct alias resolution
+  for (const [aliasKey, aliasTarget] of Object.entries(TOPIC_ALIASES)) {
+    const aNorm = azNorm(aliasKey)
+    const aRaw = rawNorm(aliasKey)
+    if (aNorm === tNorm || aRaw === tRaw || aNorm === azNorm(tClean) || aRaw === tCleanRaw) {
+      const matched = candidateTopics.find(c => azNorm(c) === azNorm(aliasTarget) || rawNorm(c) === rawNorm(aliasTarget))
+      if (matched) return [matched]
+    }
+  }
+
   // 1. Exact normalized match (preserving az characters)
   for (const c of candidateTopics) {
     if (azNorm(c) === tNorm || rawNorm(c) === tRaw) {
       return [c]
+    }
+  }
+
+  // 1.5 Multi-level section numbering prefix match (e.g., "1.1.1." or "1.2.")
+  const sectionNumMatch = targetTopic.match(/^(\d+\.\d+(?:\.\d+)?)\.?/)
+  if (sectionNumMatch) {
+    const sectionPrefix = sectionNumMatch[1]
+    const prefixMatches = candidateTopics.filter(c => c.startsWith(sectionPrefix) || rawNorm(c).startsWith(sectionPrefix))
+    if (prefixMatches.length === 1) {
+      return prefixMatches
     }
   }
 

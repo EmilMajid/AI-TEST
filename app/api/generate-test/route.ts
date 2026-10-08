@@ -685,44 +685,70 @@ function loadFromOfflineTests(
     const getOfflineQKey = (q: any) => azNorm(q?.question || "").replace(/[\s\p{P}\p{S}]+/gu, "")
     const specificTopicQuestions: any[] = []
 
+    const isMixedTest = /qarı[şs]ı[qg]|qari[şs]i[qg]|qarışıq|qarisig|mixed/i.test(topic || "")
+
     matchedKeys.forEach(subjectKey => {
       const val = db[subjectKey]
       if (Array.isArray(val)) {
-        const candidateTopics = Array.from(new Set(
-          val.map((item: any) => item.topic || item.topic_key || (item.questions?.[0]?.topic)).filter(Boolean)
-        )) as string[]
-
-        const matchedTopics = findBestTopicMatch(topic, candidateTopics)
-        if (matchedTopics.length === 0) return
-
-        val.forEach((item: any) => {
-          const itemTopic = item.topic || item.topic_key || ""
-          if (item.questions && Array.isArray(item.questions)) {
-            item.questions.forEach((q: any) => {
-              const qTopic = q.topic || itemTopic
-              if (matchedTopics.includes(qTopic)) {
-                specificTopicQuestions.push({ ...q, topic: qTopic, category: q.category || subjectKey })
-              }
-            })
-          } else if (item.question) {
-            if (matchedTopics.includes(itemTopic)) {
+        if (isMixedTest) {
+          val.forEach((item: any) => {
+            const itemTopic = item.topic || item.topic_key || "Ümumi"
+            if (item.questions && Array.isArray(item.questions)) {
+              item.questions.forEach((q: any) => {
+                specificTopicQuestions.push({ ...q, topic: q.topic || itemTopic, category: q.category || subjectKey })
+              })
+            } else if (item.question) {
               specificTopicQuestions.push({ ...item, topic: itemTopic, category: item.category || subjectKey })
             }
-          }
-        })
-      } else if (typeof val === "object" && val !== null) {
-        const candidateTopics = Object.keys(val)
-        const matchedTopics = findBestTopicMatch(topic, candidateTopics)
-        if (matchedTopics.length === 0) return
+          })
+        } else {
+          const candidateTopics = Array.from(new Set(
+            val.map((item: any) => item.topic || item.topic_key || (item.questions?.[0]?.topic)).filter(Boolean)
+          )) as string[]
 
-        matchedTopics.forEach(mT => {
-          const qList = val[mT]
-          if (Array.isArray(qList)) {
-            qList.forEach((q: any) => {
-              specificTopicQuestions.push({ ...q, topic: q.topic || mT, category: q.category || subjectKey })
-            })
-          }
-        })
+          const matchedTopics = findBestTopicMatch(topic, candidateTopics)
+          if (matchedTopics.length === 0) return
+
+          val.forEach((item: any) => {
+            const itemTopic = item.topic || item.topic_key || ""
+            if (item.questions && Array.isArray(item.questions)) {
+              item.questions.forEach((q: any) => {
+                const qTopic = q.topic || itemTopic
+                if (matchedTopics.includes(qTopic)) {
+                  specificTopicQuestions.push({ ...q, topic: qTopic, category: q.category || subjectKey })
+                }
+              })
+            } else if (item.question) {
+              if (matchedTopics.includes(itemTopic)) {
+                specificTopicQuestions.push({ ...item, topic: itemTopic, category: item.category || subjectKey })
+              }
+            }
+          })
+        }
+      } else if (typeof val === "object" && val !== null) {
+        if (isMixedTest) {
+          Object.keys(val).forEach(mT => {
+            const qList = val[mT]
+            if (Array.isArray(qList)) {
+              qList.forEach((q: any) => {
+                specificTopicQuestions.push({ ...q, topic: q.topic || mT, category: q.category || subjectKey })
+              })
+            }
+          })
+        } else {
+          const candidateTopics = Object.keys(val)
+          const matchedTopics = findBestTopicMatch(topic, candidateTopics)
+          if (matchedTopics.length === 0) return
+
+          matchedTopics.forEach(mT => {
+            const qList = val[mT]
+            if (Array.isArray(qList)) {
+              qList.forEach((q: any) => {
+                specificTopicQuestions.push({ ...q, topic: q.topic || mT, category: q.category || subjectKey })
+              })
+            }
+          })
+        }
       }
     })
 
