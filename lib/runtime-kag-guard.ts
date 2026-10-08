@@ -309,7 +309,38 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     }
   }
 
-  // 5.7. CANONICAL KNOWLEDGE GRAPH RESOLUTION (SİTG Gold Core v5.0)
+  // 5.8. MATHEMATICS STRAND & VECTOR FIREWALL (Strict Curricular Decoupling)
+  if (/riyaziyyat|cəbr|həndəsə/i.test(subjName)) {
+    const isFunctionsOrCalculus =
+      /funksiya|limit|kəsilməz|törəmə|inteqral|çoxhədli|qalıq|rasional/i.test(topicTitle) ||
+      /funksiya|limit|kəsilməz|törəmə|inteqral|çoxhədli|qalıq|rasional/i.test(conceptName) ||
+      /f\^?-1|tərs funksiya|limit/i.test(fullText)
+
+    const isGeometryOrVectorPrereq =
+      /vektor|həndəsə|üçbucaq|çevrə|trapesiya|paraleloqram|pifaqor|həndəsi/i.test(rootConcept) ||
+      /vektor|həndəsə/i.test(rootBook) ||
+      (Boolean(bt.prerequisite_node_id) && String(bt.prerequisite_node_id).includes("vektor"))
+
+    if (isFunctionsOrCalculus && isGeometryOrVectorPrereq) {
+      // Cross-strand leakage detected! Strictly reject invalid prerequisite and enforce NO_VALIDATED_PREREQUISITE
+      // UNKNOWN > WRONG: Vector is wrong, and alternative graph transformation is NOT an operational prerequisite!
+      delete bt.prerequisite_node_id
+      bt.root_concept = null as any
+      bt.root_grade = null as any
+      bt.root_book = null as any
+      bt.concept_name = topicTitle || "Funksiyalar"
+      bt.strand_guard_enforced = true
+      bt.resolution_status = "NO_VALIDATED_PREREQUISITE"
+      bt.rejection_reason = "STRAND_MISMATCH"
+      bt.curriculum_anchor = topicTitle || `${subjName} ${qGrade}`
+      rootConcept = ""
+      rootBook = `${subjName} ${qGrade}`
+      rootGrade = qGrade
+      isIntra = true
+    }
+  }
+
+  // 5.9. CANONICAL KNOWLEDGE GRAPH RESOLUTION (SİTG Gold Core v5.0)
   const normSubj = normalizeOntologySubject(subjName)
   const hasValidExistingTrace = Boolean(
     bt.root_concept &&
@@ -320,7 +351,7 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
     (!normSubj || normalizeOntologySubject(bt.root_book) === normSubj)
   )
 
-  if (!hasValidExistingTrace) {
+  if (!hasValidExistingTrace && !bt.strand_guard_enforced) {
     const canonicalMatch = resolveCanonicalOntologyNode(fullText, subjName, qGrade)
     if (canonicalMatch) {
       bt.canonical_node_id = canonicalMatch.id
@@ -470,7 +501,9 @@ export function sanitizeKagRuntime(q: any, rawSubject?: string, grade?: number |
   // Clean redundant grade from book name if present (e.g. "Azərbaycan tarixi 10" -> "Azərbaycan tarixi")
   const cleanRootBook = rootBook.replace(new RegExp(`\\s+${rootGrade}$`), "")
 
-  if (isIntra || rootGrade === qGrade) {
+  if (bt.resolution_status === "NO_VALIDATED_PREREQUISITE" || !bt.root_concept) {
+    tip = `Övladınızın bu mövzunu daha yaxşı mənimsəməsi üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${cleanRootBook || subjName} dərsliyindəki '${topicTitle || "müvafiq"}' mövzusunu (qaydalar və nümunələri) nəzərdən keçirməsi tövsiyə olunur.`
+  } else if (isIntra || rootGrade === qGrade) {
     if (duration === 10) {
       tip = `Övladınızın ${skillPhrase} möhkəmləndirmək üçün hazırda istifadə etdiyi ${qGrade}-${qSuff} sinif ${cleanRootBook} dərsliyindəki '${cleanConcept}' mövzusunu ${ruleSuffix} 10 dəqiqə nəzərdən keçirməsi kifayətdir.`
     } else if (duration === 15) {

@@ -56,6 +56,21 @@ const testCases = [
       grade: 8,
       bloom_level: "Anlama"
     }
+  },
+  {
+    name: "PRODUCTION LANDMARK REGRESSION: Math 11 Inverse Function with Legacy Vector Trap",
+    question: {
+      question: "f(x) = 2x - 4 funksiyasının tərs funksiyasını tapın.",
+      subject: "Riyaziyyat",
+      grade: 11,
+      topic: "Mürəkkəb və tərs funksiyalar",
+      bloom_level: "Tətbiq",
+      backward_trace: {
+        root_concept: "Vektor anlayışı, kollinear və bərabər vektorlar",
+        root_book: "Riyaziyyat 9",
+        root_grade: 9
+      }
+    }
   }
 ]
 

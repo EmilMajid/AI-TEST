@@ -64,7 +64,12 @@ def audit_and_clean(apply_changes=False):
     total_cross_evaluated = 0
     cleaned_by_category = {}
 
-    target_patterns = ['data/grades/*.json', 'autonomous_kag/active_staging/*.json']
+    target_patterns = [
+        'data/grades/*.json',
+        'autonomous_kag/active_staging/*.json',
+        'data/offline_tests.json',
+        'data/question_bank*.json'
+    ]
     files = []
     for pat in target_patterns:
         files.extend(glob.glob(pat))

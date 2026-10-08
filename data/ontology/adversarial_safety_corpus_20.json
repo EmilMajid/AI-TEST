@@ -1,0 +1,522 @@
+[
+  {
+    "test_id": "MATH-A01",
+    "subject": "Riyaziyyat",
+    "class": "FALSE_PREREQUISITE",
+    "assessment_concept": {
+      "concept_id": "math_inverse_function_algebraic_calculation",
+      "canonical_name": "Tərs funksiyanın cəbri üsulla tapılması",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_vectors_concept",
+      "canonical_name": "Vektor anlayışı, kollinear və bərabər vektorlar",
+      "domain": "mathematics",
+      "strand": "3.1_GEOMETRY",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_GUARD_VIOLATION",
+    "description": "Inverse function must NEVER map to vectors.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "MATH-B01",
+    "subject": "Riyaziyyat",
+    "class": "CROSS_STRAND_TRAP",
+    "assessment_concept": {
+      "concept_id": "math_continuity_at_point",
+      "canonical_name": "Funksiyanın nöqtədə kəsilməzliyi",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_coordinate_geometry",
+      "canonical_name": "Koordinatlar üsulu",
+      "domain": "mathematics",
+      "strand": "3.2_ANALYTIC_GEOMETRY",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_MISMATCH",
+    "description": "Calculus continuity must not jump into coordinate geometry.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "MATH-C01",
+    "subject": "Riyaziyyat",
+    "class": "CROSS_SUBJECT_TRAP",
+    "assessment_concept": {
+      "concept_id": "math_inverse_function",
+      "canonical_name": "Tərs funksiyalar",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "geol_tectonic_fault",
+      "canonical_name": "Tektonik fay və qırılma vilayətləri",
+      "domain": "geography",
+      "strand": "1.1_LITHOSPHERE",
+      "grade": 10
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "DOMAIN_GUARD_VIOLATION",
+    "description": "Lexical 'fay' token must not map to geological fault.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "MATH-D01",
+    "subject": "Riyaziyyat",
+    "class": "NO_PROOF_CASE",
+    "assessment_concept": {
+      "concept_id": "math_function_transformation",
+      "canonical_name": "Qrafiklərin çevrilməsi",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 10
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_base_graph_concept",
+      "canonical_name": "Baza funksiyasının qrafiki",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Plausible background graph without formal dependency evidence must stay safe.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "PHYS-A01",
+    "subject": "Fizika",
+    "class": "FALSE_PREREQUISITE",
+    "assessment_concept": {
+      "concept_id": "phys_newton_second_law_calculation",
+      "canonical_name": "Nyutonun ikinci qanununun tətbiqi",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "phys_velocity_change_rate",
+      "canonical_name": "Sürət dəyişməsi və bərabərsürətli hərəkət",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 7
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Broad acceleration definition is not automatic remediation for F=ma proportional problem.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "PHYS-B01",
+    "subject": "Fizika",
+    "class": "CROSS_STRAND_TRAP",
+    "assessment_concept": {
+      "concept_id": "phys_electric_circuit_calculation",
+      "canonical_name": "Sadə elektrik dövrəsinin hesablanması",
+      "domain": "physics",
+      "strand": "2.1_ELECTRODYNAMICS",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "phys_mechanics_motion",
+      "canonical_name": "Düzxətli mexaniki hərəkət",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 7
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_MISMATCH",
+    "description": "Electrodynamics circuit must not cross into mechanics motion.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "PHYS-C01",
+    "subject": "Fizika",
+    "class": "CROSS_SUBJECT_TRAP",
+    "assessment_concept": {
+      "concept_id": "phys_force_calculation",
+      "canonical_name": "Qüvvə anlayışı və hesablanması",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 7
+    },
+    "candidate_prerequisite": {
+      "concept_id": "hist_social_force",
+      "canonical_name": "İctimai hərəkat və ictimai qüvvələr",
+      "domain": "az_history",
+      "strand": "2.1_SOCIO_POLITICAL",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "DOMAIN_GUARD_VIOLATION",
+    "description": "Physical force token must never map to historical social forces.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "PHYS-D01",
+    "subject": "Fizika",
+    "class": "NO_PROOF_CASE",
+    "assessment_concept": {
+      "concept_id": "phys_wave_interference",
+      "canonical_name": "Dalğaların interferensiyası",
+      "domain": "physics",
+      "strand": "3.1_OPTICS_WAVES",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "phys_wave_reflection",
+      "canonical_name": "Dalğaların qayıtması",
+      "domain": "physics",
+      "strand": "3.1_OPTICS_WAVES",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Contextually related wave behavior without operational proof stays unmapped.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "BIO-A01",
+    "subject": "Biologiya",
+    "class": "FALSE_PREREQUISITE",
+    "assessment_concept": {
+      "concept_id": "bio_mammal_classification",
+      "canonical_name": "Məməlilər sinfinin ümumi xarakteristikası",
+      "domain": "biology",
+      "strand": "2.1_ZOOLOGY_TAXONOMY",
+      "grade": 7
+    },
+    "candidate_prerequisite": {
+      "concept_id": "bio_bird_classification",
+      "canonical_name": "Quşlar sinfinin xüsusiyyətləri",
+      "domain": "biology",
+      "strand": "2.1_ZOOLOGY_TAXONOMY",
+      "grade": 7
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "TAXONOMIC_NOT_PREREQUISITE",
+    "description": "Taxonomic sibling similarity must never generate PREREQUISITE_OF.",
+    "dependency_archetype": "TAXONOMIC_ASSOCIATIVE",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "BIO-B01",
+    "subject": "Biologiya",
+    "class": "CROSS_STRAND_TRAP",
+    "assessment_concept": {
+      "concept_id": "bio_protein_synthesis_translation",
+      "canonical_name": "Zülal biosintezi və translyasiya",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "bio_animal_taxonomy",
+      "canonical_name": "Heyvanların təsnifatı",
+      "domain": "biology",
+      "strand": "2.1_ZOOLOGY_TAXONOMY",
+      "grade": 7
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_MISMATCH",
+    "description": "Molecular protein synthesis must not jump into zoological taxonomy.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "BIO-C01",
+    "subject": "Biologiya",
+    "class": "CROSS_SUBJECT_TRAP",
+    "assessment_concept": {
+      "concept_id": "bio_dna_structure",
+      "canonical_name": "DNT molekulunun quruluşu və komplementarlıq",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "info_computer_data_structure",
+      "canonical_name": "Verilənlər strukturu və kodlaşdırma",
+      "domain": "informatics",
+      "strand": "2.1_ALGORITHMS_DATA",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "DOMAIN_GUARD_VIOLATION",
+    "description": "Genetic code analogy must never cross into computer data structures.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "BIO-D01",
+    "subject": "Biologiya",
+    "class": "NO_PROOF_CASE",
+    "assessment_concept": {
+      "concept_id": "bio_protein_synthesis_translation",
+      "canonical_name": "Zülal biosintezinin mərhələləri",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "bio_nucleic_acid_broad_structure",
+      "canonical_name": "Nuklein turşuları haqqında ümumi anlayış",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Broad chapter title must not serve as atomic dependency root.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "AZL-A01",
+    "subject": "Azərbaycan dili",
+    "class": "FALSE_PREREQUISITE",
+    "assessment_concept": {
+      "concept_id": "lang_predicate_identification",
+      "canonical_name": "Cümlənin baş üzvü: Xəbərin müəyyən edilməsi",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "lang_parts_of_speech_broad",
+      "canonical_name": "Əsas nitq hissələri haqqında ümumi məlumat",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 6
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Broad morphology chapter must not become blanket prerequisite for syntactic predicate.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "AZL-B01",
+    "subject": "Azərbaycan dili",
+    "class": "CROSS_STRAND_TRAP",
+    "assessment_concept": {
+      "concept_id": "lang_syntactic_sentence_analysis",
+      "canonical_name": "Cümlənin sintaktik təhlili",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "lang_oral_speech_communication",
+      "canonical_name": "Şifahi nitq və ünsiyyət mədəniyyəti",
+      "domain": "az_language",
+      "strand": "1.0_DANISIQ_NITQ",
+      "grade": 5
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_MISMATCH",
+    "description": "Syntactic analysis must not jump into oral speech communication.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "AZL-C01",
+    "subject": "Azərbaycan dili",
+    "class": "CROSS_SUBJECT_TRAP",
+    "assessment_concept": {
+      "concept_id": "lang_syntactic_predicate",
+      "canonical_name": "Cümlənin xəbəri",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "info_boolean_predicate",
+      "canonical_name": "Məntiqi predikat və şərt operatorları",
+      "domain": "informatics",
+      "strand": "2.1_ALGORITHMS",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "DOMAIN_GUARD_VIOLATION",
+    "description": "Linguistic predicate must never cross with informatics boolean predicate.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "AZL-D01",
+    "subject": "Azərbaycan dili",
+    "class": "NO_PROOF_CASE",
+    "assessment_concept": {
+      "concept_id": "lang_reading_character_comprehension",
+      "canonical_name": "Mətndə bədii obrazın xarakterinin təhlili",
+      "domain": "az_language",
+      "strand": "2.0_OXU",
+      "grade": 10
+    },
+    "candidate_prerequisite": {
+      "concept_id": "lang_reading_main_idea_broad",
+      "canonical_name": "Mətnin əsas ideyasının müəyyən edilməsi",
+      "domain": "az_language",
+      "strand": "2.0_OXU",
+      "grade": 7
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Broad reading comprehension skill without atomic dependency evidence stays unmapped.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "HIST-A01",
+    "subject": "Tarix",
+    "class": "FALSE_PREREQUISITE",
+    "assessment_concept": {
+      "concept_id": "hist_adr_independence_declaration",
+      "canonical_name": "Azərbaycan Xalq Cümhuriyyətinin yaranması və İstiqlal Bəyannaməsi",
+      "domain": "az_history",
+      "strand": "2.1_MODERN_PERIOD",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "hist_world_war_I",
+      "canonical_name": "Birinci Dünya müharibəsi və Qafqaz cəbhəsi",
+      "domain": "az_history",
+      "strand": "2.1_MODERN_PERIOD",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "CONTEXTUAL_NOT_PREREQUISITE",
+    "description": "Historical causality is contextual, NOT pedagogical PREREQUISITE_OF.",
+    "dependency_archetype": "CONTEXTUAL_CHRONOLOGICAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "HIST-B01",
+    "subject": "Tarix",
+    "class": "CROSS_STRAND_TRAP",
+    "assessment_concept": {
+      "concept_id": "hist_adr_government_reforms",
+      "canonical_name": "Azərbaycan Xalq Cümhuriyyətinin daxili siyasəti və islahatları",
+      "domain": "az_history",
+      "strand": "2.1_MODERN_PERIOD",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "hist_ancient_azerbaijan_archaeology",
+      "canonical_name": "İbtidai icma quruluşu və Qobustan abidələri",
+      "domain": "az_history",
+      "strand": "1.1_ANCIENT_PERIOD",
+      "grade": 6
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "STRAND_MISMATCH",
+    "description": "Modern 20th century history must not jump into prehistoric archaeology.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "HIST-C01",
+    "subject": "Tarix",
+    "class": "CROSS_SUBJECT_TRAP",
+    "assessment_concept": {
+      "concept_id": "hist_treaty_gulistan",
+      "canonical_name": "Gülüstan müqaviləsi və Azərbaycan torpaqlarının bölünməsi",
+      "domain": "az_history",
+      "strand": "1.3_NEW_PERIOD",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "chem_chemical_bond",
+      "canonical_name": "Kovalent və ion rabitəsi",
+      "domain": "chemistry",
+      "strand": "1.1_ATOMIC_STRUCTURE",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "REJECTED",
+    "expected_reason": "DOMAIN_GUARD_VIOLATION",
+    "description": "Historical 'rabitə/bağ' must never cross into chemistry bonds.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  },
+  {
+    "test_id": "HIST-D01",
+    "subject": "Tarix",
+    "class": "NO_PROOF_CASE",
+    "assessment_concept": {
+      "concept_id": "hist_treaty_turkmenchay_fact",
+      "canonical_name": "Türkmənçay müqaviləsinin maddələri və tarixi faktlar",
+      "domain": "az_history",
+      "strand": "1.3_NEW_PERIOD",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "hist_treaty_gulistan_precedence",
+      "canonical_name": "Gülüstan müqaviləsi",
+      "domain": "az_history",
+      "strand": "1.3_NEW_PERIOD",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "expected_status": "NO_VALIDATED_PREREQUISITE",
+    "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE",
+    "description": "Chronological precedence in history does not automatically prove learning prerequisite.",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "NONE",
+    "evidence": []
+  }
+]

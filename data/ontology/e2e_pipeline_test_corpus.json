@@ -1,0 +1,246 @@
+{
+  "positive_cases": [
+    {
+      "id": "E2E-M01",
+      "subject": "Riyaziyyat",
+      "grade": 11,
+      "topic": "Funksiyanın nöqtədə kəsilməzliyi",
+      "question": "f(x) = (x^2 - 4)/(x - 2) funksiyasının x = 2 nöqtəsində kəsilməz olması üçün f(2) qiyməti neçə təyin olunmalıdır?",
+      "options": ["4", "2", "0", "Limit mövcud deyil"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Funksiyanın nöqtədə kəsilməzliyi"
+      },
+      "expected_assessment_concept": "math_continuity_at_point",
+      "expected_prerequisite": "math_limit_at_point",
+      "expected_status": "ACTIVE",
+      "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED"
+    },
+    {
+      "id": "E2E-M02",
+      "subject": "Riyaziyyat",
+      "grade": 10,
+      "topic": "Çoxhədlinin ikihədliyə bölünməsindən alınan qalıq və Bezout teoremi",
+      "question": "P(x) = 2x^3 - 3x^2 + 4x - 5 çoxhədlisini x - 2 ikihədlisinə böldükdə alınan qalıq R neçəyə bərabərdir?",
+      "options": ["7", "1", "0", "5"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Çoxhədlinin ikihədliyə bölünməsindən alınan qalıq və Bezout teoremi"
+      },
+      "expected_assessment_concept": "math_polynomial_remainder_theorem",
+      "expected_prerequisite": "math_polynomial_division_algorithm",
+      "expected_status": "ACTIVE",
+      "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED"
+    },
+    {
+      "id": "E2E-P01",
+      "subject": "Fizika",
+      "grade": 8,
+      "topic": "Dövrə hissəsi üçün Om qanunu",
+      "question": "Müqaviməti R = 6 Om olan dövrə hissəsinin uclarındakı gərginlik U = 18 V olarsa, cərəyan şiddəti I neçə amper olar?",
+      "options": ["3 A", "108 A", "0.33 A", "12 A"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Dövrə hissəsi üçün Om qanunu"
+      },
+      "expected_assessment_concept": "phys_ohms_law_circuit_part",
+      "expected_prerequisite": "phys_current_and_voltage_concepts",
+      "expected_status": "ACTIVE",
+      "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED"
+    },
+    {
+      "id": "E2E-B01",
+      "subject": "Biologiya",
+      "grade": 9,
+      "topic": "Zülal biosintezi və genetik kodun translyasiyası",
+      "question": "mRNT molekulunda AUG kodonuna zülal translyasiyası zamanı tRNT-nin hansı komplementar antikodonu uyğun gəlir?",
+      "options": ["UAC", "TAC", "AUG", "GUA"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Zülal biosintezi və genetik kodun translyasiyası"
+      },
+      "expected_assessment_concept": "bio_protein_synthesis_translation",
+      "expected_prerequisite": "bio_nucleotide_complementarity",
+      "expected_status": "ACTIVE",
+      "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED"
+    },
+    {
+      "id": "E2E-AZ01",
+      "subject": "Azərbaycan dili",
+      "grade": 5,
+      "topic": "İki və dördvariantlı şəkilçilərin yazılışı qaydaları",
+      "question": "'Kitab' və 'dəftər' sözlərinə cəm şəkilçisi qoşulduqda ahəng qanununa görə müvafiq olaraq hansı variantlar seçilməlidir?",
+      "options": ["-lar və -lər", "-lar və -lar", "-lər və -lar", "-lər və -lər"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "İki və dördvariantlı şəkilçilərin yazılışı qaydaları"
+      },
+      "expected_assessment_concept": "lang_suffix_morphophonology_rules",
+      "expected_prerequisite": "lang_vowel_harmony_law",
+      "expected_status": "ACTIVE",
+      "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED"
+    }
+  ],
+  "negative_cases": [
+    {
+      "id": "E2E-HIST-NEG",
+      "subject": "Azərbaycan tarixi",
+      "grade": 9,
+      "topic": "Azərbaycan Xalq Cümhuriyyətinin yaranması və İstiqlal Bəyannaməsi",
+      "question": "1918-ci il mayın 28-də Tiflisdə qəbul edilmiş İstiqlal Bəyannaməsinin 1-ci bəndində nə elan edilirdi?",
+      "options": ["Azərbaycanın tam hüquqlu müstəqil dövlət olması", "Sovet hakimiyyətinin qurulması", "Osmanlı ilə birləşmə", "Qafqaz Seyminin bərpası"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Azərbaycan Xalq Cümhuriyyətinin yaranması və İstiqlal Bəyannaməsi"
+      },
+      "candidate_trap_concept": "hist_world_war_I_context",
+      "candidate_archetype": "CONTEXTUAL_CHRONOLOGICAL",
+      "expected_status": "REJECTED",
+      "expected_reason": "CONTEXTUAL_NOT_PREREQUISITE"
+    },
+    {
+      "id": "E2E-BIO-NEG",
+      "subject": "Biologiya",
+      "grade": 7,
+      "topic": "Məməlilər sinfinin ümumi morfoloji xüsusiyyətləri",
+      "question": "Uçmağa uyğunlaşmış yarasa ilə göyərçinin oxşar və fərqli əlamətlərini müqayisə edin.",
+      "options": ["Yarasa balasını südlə bəsləyir, göyərçin yumurta qoyur", "Hər ikisi quşlar sinfinə aiddir", "Hər ikisi lələk örtüyünə malikdir", "Fərq yoxdur"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Məməlilər sinfinin ümumi morfoloji xüsusiyyətləri"
+      },
+      "candidate_trap_concept": "bio_bird_characteristics",
+      "candidate_archetype": "TAXONOMIC_ASSOCIATIVE",
+      "expected_status": "NO_VALIDATED_PREREQUISITE",
+      "expected_reason": "TAXONOMIC_NOT_PREREQUISITE"
+    },
+    {
+      "id": "E2E-MATH-NEG",
+      "subject": "Riyaziyyat",
+      "grade": 11,
+      "topic": "Funksiyanın təyin oblastının məhdudiyyət şərti",
+      "question": "f(x) = 1/(x - 2) funksiyasının təyin oblastı üçün məxrəcin sıfırdan fərqli olması şərti nədir?",
+      "options": ["x != 2", "x > 2", "x < 2", "x = 2"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Funksiyanın təyin oblastının məhdudiyyət şərti"
+      },
+      "candidate_trap_concept": "math_function_domain_restriction",
+      "is_constraint": true,
+      "expected_status": "REJECTED",
+      "expected_reason": "CONSTRAINT_NOT_PREREQUISITE"
+    },
+    {
+      "id": "E2E-INFO-NEG",
+      "subject": "İnformatika",
+      "grade": 9,
+      "topic": "Relyasiya verilənlər bazası və cədvəl strukturu",
+      "question": "Relyasiya verilənlər bazasında sətirlər (yazılar) və sütunlar (sahələr) hansı obyekti formalaşdırır?",
+      "options": ["Cədvəl", "Vurma cədvəli", "Diaqram", "Fayl sistemi"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Relyasiya verilənlər bazası və cədvəl strukturu"
+      },
+      "candidate_trap_concept": "math_arithmetic_multiplication_table",
+      "expected_status": "REJECTED",
+      "expected_reason": "DOMAIN_GUARD_VIOLATION"
+    },
+    {
+      "id": "E2E-AZL-NEG",
+      "subject": "Azərbaycan dili",
+      "grade": 8,
+      "topic": "Oxuyub-anlama: Mətnin əsas ideyasının təhlili",
+      "question": "Verilmiş bədii mətndə qəhrəmanın davranışlarına əsasən əsərin ideya-məzmununu müəyyən edin.",
+      "options": ["Vətənpərvərlik və fədakarlıq", "Təbiət təsviri", "Sintaktik əlaqələr", "Morfologiya"],
+      "correctAnswer": 0,
+      "grounding": {
+        "canonical_concept": "Oxuyub-anlama: Mətnin əsas ideyasının təhlili"
+      },
+      "candidate_trap_concept": "lang_reading_broad_comprehension",
+      "has_no_evidence": true,
+      "expected_status": "NO_VALIDATED_PREREQUISITE",
+      "expected_reason": "INSUFFICIENT_DEPENDENCY_EVIDENCE"
+    }
+  ],
+  "landmark_regression": {
+    "id": "E2E-REG-INV-VECTOR",
+    "subject": "Riyaziyyat",
+    "grade": 11,
+    "topic": "Tərs funksiyalar və onların cəbri tapılması",
+    "question": "f(x) = 2x - 4 funksiyasının tərs funksiyası f^-1(x)-i tapın.",
+    "options": ["(x + 4)/2", "2x + 4", "(x - 4)/2", "4 - 2x"],
+    "correctAnswer": 0,
+    "grounding": {
+      "canonical_concept": "Tərs funksiyalar və onların cəbri tapılması"
+    },
+    "expected_assessment_concept": "math_inverse_function",
+    "correct_prerequisite": "math_function_bijectivity",
+    "forbidden_prerequisite": "math_vectors_concept",
+    "expected_status_normal": "ACTIVE",
+    "expected_status_legacy_simulated": "REJECTED",
+    "expected_reason_legacy_simulated": "STRAND_MISMATCH"
+  },
+  "higher_order_mutations": [
+    {
+      "id": "MUT-COMBO-01",
+      "name": "Wrong Grade Direction (Grade 12 prerequisite proposed for Grade 11)",
+      "base_case": "E2E-M01",
+      "mutation_type": "WRONG_GRADE_DIRECTION",
+      "mutated_field": "candidate_prerequisite.grade",
+      "mutated_value": 12,
+      "expected_status": "REJECTED",
+      "expected_reason": "WRONG_GRADE_DIRECTION"
+    },
+    {
+      "id": "MUT-COMBO-02",
+      "name": "Wrong Strand Jump (Algebra concept proposed Geometry prerequisite)",
+      "base_case": "E2E-M02",
+      "mutation_type": "STRAND_MISMATCH",
+      "mutated_field": "candidate_prerequisite.strand",
+      "mutated_value": "3.1_GEOMETRY",
+      "expected_status": "REJECTED",
+      "expected_reason": "STRAND_MISMATCH"
+    },
+    {
+      "id": "MUT-COMBO-03",
+      "name": "Chronology != Prerequisite (Historical sequence treated as dependency)",
+      "base_case": "E2E-HIST-NEG",
+      "mutation_type": "CONTEXTUAL_NOT_PREREQUISITE",
+      "mutated_field": "dependency_archetype",
+      "mutated_value": "CONTEXTUAL_CHRONOLOGICAL",
+      "expected_status": "REJECTED",
+      "expected_reason": "CONTEXTUAL_NOT_PREREQUISITE"
+    },
+    {
+      "id": "MUT-COMBO-04",
+      "name": "Constraint != Prerequisite (Operational condition marked as constraint)",
+      "base_case": "E2E-M01",
+      "mutation_type": "CONSTRAINT_NOT_PREREQUISITE",
+      "mutated_field": "is_constraint",
+      "mutated_value": true,
+      "expected_status": "REJECTED",
+      "expected_reason": "CONSTRAINT_NOT_PREREQUISITE"
+    },
+    {
+      "id": "MUT-COMBO-05",
+      "name": "Lexical Cross-Domain Collision (Informatics and Mathematics token clash)",
+      "base_case": "E2E-INFO-NEG",
+      "mutation_type": "DOMAIN_GUARD_VIOLATION",
+      "mutated_field": "candidate_prerequisite.domain",
+      "mutated_value": "mathematics",
+      "expected_status": "REJECTED",
+      "expected_reason": "DOMAIN_GUARD_VIOLATION"
+    },
+    {
+      "id": "MUT-COMBO-06",
+      "name": "Cycle Invariant Violation (A -> B proposed when B -> A already exists)",
+      "base_case": "E2E-P01",
+      "mutation_type": "CYCLE_DETECTED_REJECTED",
+      "active_graph_edges": [
+        ["phys_ohms_law_circuit_part", "phys_current_and_voltage_concepts"]
+      ],
+      "expected_status": "REJECTED",
+      "expected_reason": "CYCLE_DETECTED_REJECTED"
+    }
+  ]
+}

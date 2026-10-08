@@ -1,0 +1,332 @@
+[
+  {
+    "test_id": "GOLD-M01",
+    "subject": "Riyaziyyat",
+    "category": "CALCULUS_CONTINUITY",
+    "assessment_concept": {
+      "concept_id": "math_continuity_at_point",
+      "canonical_name": "Funksiyanın nöqtədə kəsilməzliyi",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_limit_at_point",
+      "canonical_name": "Funksiyanın nöqtədə limiti",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "DEFINITIONAL_STRUCTURAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-CALC-01",
+        "type": "MATHEMATICAL_DEFINITION",
+        "claim": "lim_{x->x0} f(x) = f(x0) definition directly incorporates and requires limit existence at x0",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Calculus continuity at a point strictly requires the limit concept at that point."
+  },
+  {
+    "test_id": "GOLD-M02",
+    "subject": "Riyaziyyat",
+    "category": "NUMBER_SYSTEMS",
+    "assessment_concept": {
+      "concept_id": "math_complex_number_definition",
+      "canonical_name": "Kompleks ədədlər anlayışı və cəbri şəkli",
+      "domain": "mathematics",
+      "strand": "1.1_NUMBERS_OPERATIONS",
+      "grade": 10
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_real_number_arithmetic",
+      "canonical_name": "Həqiqi ədədlər və hesab əməlləri",
+      "domain": "mathematics",
+      "strand": "1.1_NUMBERS_OPERATIONS",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "DEFINITIONAL_STRUCTURAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-NUM-01",
+        "type": "AXIOMATIC_FOUNDATION",
+        "claim": "Complex field C extends real field R; z = a + bi where a, b in R",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Complex number definition strictly builds upon real number field operations."
+  },
+  {
+    "test_id": "GOLD-M03",
+    "subject": "Riyaziyyat",
+    "category": "ALGEBRAIC_POLYNOMIALS",
+    "assessment_concept": {
+      "concept_id": "math_polynomial_remainder_theorem",
+      "canonical_name": "Çoxhədlinin ikihədliyə bölünməsindən alınan qalıq və Bezout teoremi",
+      "domain": "mathematics",
+      "strand": "1.2_ALGEBRA_EXPRESSIONS",
+      "grade": 10
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_polynomial_division_algorithm",
+      "canonical_name": "Çoxhədlilərin bölünməsi alqoritmi",
+      "domain": "mathematics",
+      "strand": "1.2_ALGEBRA_EXPRESSIONS",
+      "grade": 10
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-ALG-04",
+        "type": "OPERATIONAL_DEPENDENCY",
+        "claim": "P(x) = Q(x)(x - a) + R operation requires polynomial division theorem",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Polynomial remainder evaluation directly requires polynomial division mechanism."
+  },
+  {
+    "test_id": "GOLD-M04",
+    "subject": "Riyaziyyat",
+    "category": "FUNCTION_THEORY",
+    "assessment_concept": {
+      "concept_id": "math_inverse_function_algebraic_calculation",
+      "canonical_name": "Tərs funksiyanın cəbri üsulla tapılması",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 11
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_function_bijectivity",
+      "canonical_name": "Birqiymətli uyğunluq və inyektivlik",
+      "domain": "mathematics",
+      "strand": "2.1_FUNCTIONS",
+      "grade": 10
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "DEFINITIONAL_STRUCTURAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-FUNC-01",
+        "type": "EXISTENCE_CONDITION",
+        "claim": "f has an inverse function iff f is bijective",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Algebraic calculation of inverse function requires bijetivity existence condition."
+  },
+  {
+    "test_id": "GOLD-M05",
+    "subject": "Riyaziyyat",
+    "category": "EQUATION_SYSTEMS",
+    "assessment_concept": {
+      "concept_id": "math_linear_system_two_variables",
+      "canonical_name": "İkidəyişənli xətti tənliklər sistemi və həlli üsulları",
+      "domain": "mathematics",
+      "strand": "1.3_EQUATIONS_INEQUALITIES",
+      "grade": 7
+    },
+    "candidate_prerequisite": {
+      "concept_id": "math_linear_equation_one_variable",
+      "canonical_name": "Birdəyişənli xətti tənliklərin həlli",
+      "domain": "mathematics",
+      "strand": "1.3_EQUATIONS_INEQUALITIES",
+      "grade": 6
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-EQ-01",
+        "type": "REDUCTION_OPERATIONAL",
+        "claim": "Elimination and substitution methods reduce 2-variable systems into 1-variable linear equations",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Solving a 2-variable system operationally reduces to solving a 1-variable linear equation."
+  },
+  {
+    "test_id": "GOLD-P01",
+    "subject": "Fizika",
+    "category": "ELECTRODYNAMICS",
+    "assessment_concept": {
+      "concept_id": "phys_ohms_law_circuit_part",
+      "canonical_name": "Dövrə hissəsi üçün Om qanunu",
+      "domain": "physics",
+      "strand": "2.1_ELECTRODYNAMICS",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "phys_current_and_voltage_concepts",
+      "canonical_name": "Cərəyan şiddəti və elektrik gərginliyi anlayışları",
+      "domain": "physics",
+      "strand": "2.1_ELECTRODYNAMICS",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-PHYS-01",
+        "type": "FORMULA_OPERATIONAL",
+        "claim": "I = U / R requires independent physical definition of I and U",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Ohm's Law formulation requires current and voltage conceptual prerequisites."
+  },
+  {
+    "test_id": "GOLD-P02",
+    "subject": "Fizika",
+    "category": "MECHANICS_KINEMATICS",
+    "assessment_concept": {
+      "concept_id": "phys_uniformly_accelerated_displacement",
+      "canonical_name": "Bərabərtəcilli hərəkətdə yerdəyişmə tənliyi və hesablanması",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "phys_acceleration_definition",
+      "canonical_name": "Təcil anlayışı və sürət dəyişməsi",
+      "domain": "physics",
+      "strand": "1.1_MECHANICS",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-PHYS-02",
+        "type": "DERIVATION_DEPENDENCY",
+        "claim": "s = v0*t + a*t^2/2 directly relies on acceleration a = Delta v / Delta t",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Kinematics displacement in accelerated motion strictly requires acceleration concept."
+  },
+  {
+    "test_id": "GOLD-B01",
+    "subject": "Biologiya",
+    "category": "MOLECULAR_GENETICS",
+    "assessment_concept": {
+      "concept_id": "bio_protein_synthesis_translation",
+      "canonical_name": "Zülal biosintezi və genetik kodun translyasiyası",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_prerequisite": {
+      "concept_id": "bio_nucleotide_complementarity",
+      "canonical_name": "Nuklein turşularının quruluşu və komplementarlıq prinsipi",
+      "domain": "biology",
+      "strand": "1.1_CELL_MOLECULAR",
+      "grade": 9
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-BIO-01",
+        "type": "MOLECULAR_MECHANISM",
+        "claim": "mRNA codon to tRNA anticodon pairing operates via nucleotide complementarity (A-U, G-C)",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Translation in protein synthesis operates on the nucleotide complementarity rule."
+  },
+  {
+    "test_id": "GOLD-AZ01",
+    "subject": "Azərbaycan dili",
+    "category": "MORPHOPHONOLOGY",
+    "assessment_concept": {
+      "concept_id": "lang_suffix_morphophonology_rules",
+      "canonical_name": "İki və dördvariantlı şəkilçilərin yazılışı qaydaları",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 5
+    },
+    "candidate_prerequisite": {
+      "concept_id": "lang_vowel_harmony_law",
+      "canonical_name": "Ahəng qanunu və saitlərin təsnifatı",
+      "domain": "az_language",
+      "strand": "4.0_DIL_QAYDALARI",
+      "grade": 5
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-LANG-01",
+        "type": "MORPHOPHONEMIC_DEPENDENCY",
+        "claim": "Grammatical suffix variants (-lar/-lər, -çı/-çi/-çu/-çü) are selected deterministically by vowel harmony",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Suffix spelling variants are governed by the law of vowel harmony."
+  },
+  {
+    "test_id": "GOLD-CH01",
+    "subject": "Kimya",
+    "category": "STOICHIOMETRY",
+    "assessment_concept": {
+      "concept_id": "chem_equation_stoichiometric_balancing",
+      "canonical_name": "Kimyəvi tənliklərin tərtibi və əmsallaşdırılması",
+      "domain": "chemistry",
+      "strand": "1.2_CHEMICAL_REACTIONS",
+      "grade": 8
+    },
+    "candidate_prerequisite": {
+      "concept_id": "chem_element_valence_rules",
+      "canonical_name": "Kimyəvi elementlərin valentliyi və formul tərtibi",
+      "domain": "chemistry",
+      "strand": "1.2_CHEMICAL_REACTIONS",
+      "grade": 8
+    },
+    "candidate_relation": "PREREQUISITE_OF",
+    "dependency_archetype": "OPERATIONAL",
+    "proof_class": "PROOF_CLASS_A",
+    "evidence": [
+      {
+        "rule_id": "RULE-CHEM-01",
+        "type": "STOICHIOMETRIC_NECESSITY",
+        "claim": "Writing formulas of reactants and products requires element valence before stoichiometric coefficient balancing",
+        "status": "VERIFIED"
+      }
+    ],
+    "expected_status": "ACTIVE",
+    "expected_reason": "GOLD_PROOF_CLASS_A_VERIFIED",
+    "description": "Reaction balancing strictly requires correct chemical formula formulation via valence."
+  }
+]
