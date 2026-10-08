@@ -54,12 +54,17 @@ interface Question {
   }
   distractor_diagnostics?: Record<string, string>
   backward_trace?: {
+    resolution_status?: "ACTIVE_GOLD" | "NO_VALIDATED_PREREQUISITE" | "CONCEPT_UNRESOLVED"
+    curriculum_anchor?: string
+    strand_guard_enforced?: boolean
+    canonical_node_id?: string
+    prerequisite_node_id?: string
     is_root_anchor?: boolean
     is_intra_grade?: boolean
-    root_grade?: number | string
-    root_book?: string
+    root_grade?: number | string | null
+    root_book?: string | null
     root_page?: number | string
-    root_concept?: string
+    root_concept?: string | null
     concept_name?: string
     concept_type?: string
     concept_facet?: string
@@ -1080,75 +1085,213 @@ export default function ResultsPage() {
                             })()
                           )}
 
-                          {/* 🎯 KAG: Biliyin Geriyə Xəritələndirilməsi & 15 Dəqiqəlik Valideyn Bərpa Bələdçisi */}
-                          {question.backward_trace && !isCorrect && (
-                            <div className="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-500/5 border border-amber-300/80 p-4 rounded-xl space-y-3 shadow-xs">
-                              <div className="flex items-center justify-between flex-wrap gap-2">
-                                <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
-                                  <Brain className="h-4 w-4 text-amber-600 animate-pulse" />
-                                  <span>🎯 {question.backward_trace.remedial_duration_mins || 15} Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
-                                </h4>
-                                <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
-                                  {question.backward_trace.is_root_anchor
-                                    ? "Bünövrə Nöqtəsi (1-ci Sinif)"
-                                    : question.backward_trace.is_intra_grade
-                                    ? "Cari Sinif Dərsi (Kumulyativ)"
-                                    : `${question.backward_trace.root_grade}-ci Sinif Təməli`}
-                                </Badge>
-                              </div>
+                          {/* 🎯 KAG V1 Tri-State Remediation UI: ACTIVE_GOLD vs NO_VALIDATED vs CONCEPT_UNRESOLVED */}
+                          {question.backward_trace && !isCorrect && (() => {
+                            const bt = question.backward_trace;
+                            let resolutionState: "ACTIVE_GOLD" | "NO_VALIDATED_PREREQUISITE" | "CONCEPT_UNRESOLVED" = "CONCEPT_UNRESOLVED";
 
-                              <div className="text-xs text-amber-900 leading-relaxed font-medium bg-white/70 p-3 rounded-lg border border-amber-200/70">
-                                <div className="flex items-start gap-2">
-                                  <Target className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                                  <div>
-                                    <strong className="text-amber-950">Biliyin Geriyə Xəritələndirilməsi (Kök Səbəb):</strong>
-                                    <p className="mt-1 text-amber-900/90">
-                                      {cleanRemedialTip(question.backward_trace.parent_action_tip) ||
-                                        `Bu səhvin təməl səbəbi ${question.backward_trace.root_grade}-ci sinif ${question.backward_trace.root_book} dərsliyindəki anlayışa söykənir.`}
-                                    </p>
+                            if (bt.resolution_status === "ACTIVE_GOLD") {
+                              resolutionState = "ACTIVE_GOLD";
+                            } else if (bt.resolution_status === "NO_VALIDATED_PREREQUISITE" || bt.strand_guard_enforced) {
+                              resolutionState = "NO_VALIDATED_PREREQUISITE";
+                            } else if (bt.resolution_status === "CONCEPT_UNRESOLVED") {
+                              resolutionState = "CONCEPT_UNRESOLVED";
+                            } else if (bt.root_concept && bt.prerequisite_node_id && bt.root_concept !== "null" && typeof bt.root_concept === "string" && bt.root_concept.trim() !== "") {
+                              resolutionState = "ACTIVE_GOLD";
+                            } else if (bt.canonical_node_id || !bt.root_concept) {
+                              resolutionState = "NO_VALIDATED_PREREQUISITE";
+                            } else {
+                              resolutionState = "CONCEPT_UNRESOLVED";
+                            }
+
+                            // 1. ACTIVE_GOLD: Verified Grounded Prerequisite (Root Cause Diagnostics)
+                            if (resolutionState === "ACTIVE_GOLD") {
+                              return (
+                                <div className="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-500/5 border border-amber-300/80 p-4 rounded-xl space-y-3 shadow-xs">
+                                  <div className="flex items-center justify-between flex-wrap gap-2">
+                                    <h4 className="font-bold text-amber-950 text-sm flex items-center gap-2">
+                                      <Brain className="h-4 w-4 text-amber-600 animate-pulse" />
+                                      <span>🎯 {bt.remedial_duration_mins || 15} Dəqiqəlik Valideyn Bərpa Bələdçisi (KAG)</span>
+                                    </h4>
+                                    <Badge className="bg-amber-100 text-amber-900 text-[11px] font-semibold border-amber-300">
+                                      {bt.is_root_anchor
+                                        ? "Bünövrə Nöqtəsi (1-ci Sinif)"
+                                        : bt.is_intra_grade
+                                        ? "Cari Sinif Təməl Bacarığı"
+                                        : `Təsdiqlənmiş Təməl Önşərt (${bt.root_grade}-ci Sinif)`}
+                                    </Badge>
+                                  </div>
+
+                                  <div className="text-xs text-amber-900 leading-relaxed font-medium bg-white/70 p-3 rounded-lg border border-amber-200/70">
+                                    <div className="flex items-start gap-2">
+                                      <Target className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                                      <div>
+                                        <strong className="text-amber-950">Biliyin Geriyə Xəritələndirilməsi (Kök Səbəb):</strong>
+                                        <p className="mt-1 text-amber-900/90">
+                                          {cleanRemedialTip(bt.parent_action_tip) ||
+                                            `Bu səhvin təməl səbəbi ${bt.root_grade ? `${bt.root_grade}-ci sinif ` : ""}${bt.root_book ? `${bt.root_book} dərsliyindəki ` : ""} "${bt.root_concept}" anlayışına söykənir.`}
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-amber-950/85">
+                                    <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                      <span className="text-amber-800">⏱️ Tövsiyə olunan bərpa vaxtı:</span>
+                                      <strong className="text-amber-950 font-bold">{bt.remedial_duration_mins || 15} dəqiqə</strong>
+                                    </div>
+                                    {bt.root_concept && (
+                                      <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                        <span className="text-amber-800">📖 Bərpa dərsi / anlayış:</span>
+                                        <strong className="text-amber-950 font-bold truncate max-w-[140px]" title={bt.root_concept}>
+                                          {bt.root_concept}
+                                        </strong>
+                                      </div>
+                                    )}
+                                  </div>
+
+                                  {bt.root_book && (
+                                    <div className="text-[11px] text-amber-900/80 flex items-center gap-1.5 px-1">
+                                      <BookOpen className="h-3.5 w-3.5 text-amber-600" />
+                                      <span>İstinad olunan dərslik: <strong>{bt.root_book}</strong></span>
+                                    </div>
+                                  )}
+
+                                  {bt.cross_subject_connections && bt.cross_subject_connections.length > 0 && (
+                                    <div className="text-[11px] text-indigo-900 bg-indigo-50/80 border border-indigo-200 p-2.5 rounded-lg space-y-1">
+                                      <strong className="text-indigo-950 flex items-center gap-1">
+                                        <Lightbulb className="h-3.5 w-3.5 text-indigo-600" />
+                                        Fənlərarası Əlaqə (Sinerji):
+                                      </strong>
+                                      <div className="flex flex-wrap gap-1.5 pt-0.5">
+                                        {bt.cross_subject_connections.map((cs: any, csIdx: number) => (
+                                          <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-800 font-medium">
+                                            🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
+                                          </span>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            }
+
+                            // 2. NO_VALIDATED_PREREQUISITE: Honest Unknown / Direct Application (No False Root Cause)
+                            if (resolutionState === "NO_VALIDATED_PREREQUISITE") {
+                              return (
+                                <div className="bg-gradient-to-r from-sky-500/10 via-blue-500/5 to-slate-50 border border-sky-200/80 p-4 rounded-xl space-y-3 shadow-xs">
+                                  <div className="flex items-center justify-between flex-wrap gap-2">
+                                    <h4 className="font-bold text-sky-950 text-sm flex items-center gap-2">
+                                      <BookOpen className="h-4 w-4 text-sky-600" />
+                                      <span>📘 Cari Mövzunun Tətbiqi və İcmalı</span>
+                                    </h4>
+                                    <Badge className="bg-sky-100 text-sky-900 text-[11px] font-semibold border-sky-200">
+                                      Önşərt Tələb Olunmur (Cari Mövzu)
+                                    </Badge>
+                                  </div>
+
+                                  <div className="text-xs text-sky-900 leading-relaxed font-medium bg-white/70 p-3 rounded-lg border border-sky-200/70">
+                                    <div className="flex items-start gap-2">
+                                      <Target className="h-4 w-4 text-sky-600 shrink-0 mt-0.5" />
+                                      <div>
+                                        <strong className="text-sky-950">Pedaqoji İzah və Tövsiyə:</strong>
+                                        <p className="mt-1 text-sky-900/90">
+                                          {cleanRemedialTip(bt.parent_action_tip) ||
+                                            `Bu sual cari mövzunun birbaşa tətbiqidir. Əvvəlki siniflərdən əlavə təməl asılılığı aşkarlanmamışdır. Sualın izahını və cari dərslikdəki qaydaları təkrar nəzərdən keçirin.`}
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-sky-950/85">
+                                    <div className="bg-white/80 border border-sky-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                      <span className="text-sky-800">⏱️ Tövsiyə olunan təkrar vaxtı:</span>
+                                      <strong className="text-sky-950 font-bold">{bt.remedial_duration_mins || 10} dəqiqə</strong>
+                                    </div>
+                                    <div className="bg-white/80 border border-sky-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                      <span className="text-sky-800">📖 Dərs / Mövzu:</span>
+                                      <strong className="text-sky-950 font-bold truncate max-w-[140px]" title={bt.curriculum_anchor || bt.concept_name || question.topic || "Cari mövzu"}>
+                                        {bt.curriculum_anchor || bt.concept_name || question.topic || "Cari mövzu"}
+                                      </strong>
+                                    </div>
+                                  </div>
+
+                                  {bt.cross_subject_connections && bt.cross_subject_connections.length > 0 && (
+                                    <div className="text-[11px] text-indigo-900 bg-indigo-50/80 border border-indigo-200 p-2.5 rounded-lg space-y-1">
+                                      <strong className="text-indigo-950 flex items-center gap-1">
+                                        <Lightbulb className="h-3.5 w-3.5 text-indigo-600" />
+                                        Fənlərarası Əlaqə (Sinerji):
+                                      </strong>
+                                      <div className="flex flex-wrap gap-1.5 pt-0.5">
+                                        {bt.cross_subject_connections.map((cs: any, csIdx: number) => (
+                                          <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-800 font-medium">
+                                            🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
+                                          </span>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            }
+
+                            // 3. CONCEPT_UNRESOLVED: Textbook Topic Support (Honest, Unpressured Backlog)
+                            return (
+                              <div className="bg-gradient-to-r from-slate-100/90 via-gray-50/80 to-slate-50 border border-slate-200 p-4 rounded-xl space-y-3 shadow-xs">
+                                <div className="flex items-center justify-between flex-wrap gap-2">
+                                  <h4 className="font-bold text-slate-800 text-sm flex items-center gap-2">
+                                    <Target className="h-4 w-4 text-slate-600" />
+                                    <span>📖 Dərslik Mövzu Dəstəyi</span>
+                                  </h4>
+                                  <Badge className="bg-slate-200 text-slate-700 text-[11px] font-semibold border-slate-300">
+                                    Mövzu İcmalı
+                                  </Badge>
+                                </div>
+
+                                <div className="text-xs text-slate-800 leading-relaxed font-medium bg-white/80 p-3 rounded-lg border border-slate-200">
+                                  <div className="flex items-start gap-2">
+                                    <BookOpen className="h-4 w-4 text-slate-500 shrink-0 mt-0.5" />
+                                    <div>
+                                      <strong className="text-slate-900">Mövzu Üzrə Fərdi Çalışma:</strong>
+                                      <p className="mt-1 text-slate-700">
+                                        {cleanRemedialTip(bt.parent_action_tip) ||
+                                          `Övladınızın bu mövzunu daha yaxşı mənimsəməsi üçün hazırda istifadə etdiyi dərslikdəki müvafiq mövzunu (qaydalar və nümunələri) nəzərdən keçirməsi tövsiyə olunur.`}
+                                      </p>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
 
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-amber-950/85">
-                                <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
-                                  <span className="text-amber-800">⏱️ Tövsiyə olunan bərpa vaxtı:</span>
-                                  <strong className="text-amber-950 font-bold">{question.backward_trace.remedial_duration_mins || 15} dəqiqə</strong>
-                                </div>
-                                {question.backward_trace.root_concept && (
-                                  <div className="bg-white/80 border border-amber-200 px-3 py-2 rounded-lg flex items-center justify-between">
-                                    <span className="text-amber-800">📖 Bərpa dərsi / mövzu:</span>
-                                    <strong className="text-amber-950 font-bold truncate max-w-[140px]" title={question.backward_trace.root_concept}>
-                                      {question.backward_trace.root_concept}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-slate-800">
+                                  <div className="bg-white/90 border border-slate-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                    <span className="text-slate-600">⏱️ Tövsiyə olunan vaxt:</span>
+                                    <strong className="text-slate-900 font-bold">{bt.remedial_duration_mins || 15} dəqiqə</strong>
+                                  </div>
+                                  <div className="bg-white/90 border border-slate-200 px-3 py-2 rounded-lg flex items-center justify-between">
+                                    <span className="text-slate-600">📖 Mövzu:</span>
+                                    <strong className="text-slate-900 font-bold truncate max-w-[140px]" title={bt.curriculum_anchor || question.topic || "Mövzu çalışmaları"}>
+                                      {bt.curriculum_anchor || question.topic || "Mövzu çalışmaları"}
                                     </strong>
+                                  </div>
+                                </div>
+
+                                {bt.cross_subject_connections && bt.cross_subject_connections.length > 0 && (
+                                  <div className="text-[11px] text-indigo-900 bg-indigo-50/80 border border-indigo-200 p-2.5 rounded-lg space-y-1">
+                                    <strong className="text-indigo-950 flex items-center gap-1">
+                                      <Lightbulb className="h-3.5 w-3.5 text-indigo-600" />
+                                      Fənlərarası Əlaqə (Sinerji):
+                                    </strong>
+                                    <div className="flex flex-wrap gap-1.5 pt-0.5">
+                                      {bt.cross_subject_connections.map((cs: any, csIdx: number) => (
+                                        <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-800 font-medium">
+                                          🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
+                                        </span>
+                                      ))}
+                                    </div>
                                   </div>
                                 )}
                               </div>
-
-                              {question.backward_trace.root_book && (
-                                <div className="text-[11px] text-amber-900/80 flex items-center gap-1.5 px-1">
-                                  <BookOpen className="h-3.5 w-3.5 text-amber-600" />
-                                  <span>İstinad olunan dərslik: <strong>{question.backward_trace.root_book}</strong></span>
-                                </div>
-                              )}
-
-                              {question.backward_trace.cross_subject_connections && question.backward_trace.cross_subject_connections.length > 0 && (
-                                <div className="text-[11px] text-indigo-900 bg-indigo-50/80 border border-indigo-200 p-2.5 rounded-lg space-y-1">
-                                  <strong className="text-indigo-950 flex items-center gap-1">
-                                    <Lightbulb className="h-3.5 w-3.5 text-indigo-600" />
-                                    Fənlərarası Əlaqə (Sinerji):
-                                  </strong>
-                                  <div className="flex flex-wrap gap-1.5 pt-0.5">
-                                    {question.backward_trace.cross_subject_connections.map((cs: any, csIdx: number) => (
-                                      <span key={csIdx} className="bg-white border border-indigo-200 px-2 py-0.5 rounded text-indigo-800 font-medium">
-                                        🔗 {cs.subject} {cs.grade}: {cs.topic} ({cs.facet})
-                                      </span>
-                                    ))}
-                                  </div>
-                                </div>
-                              )}
-                            </div>
-                          )}
+                            );
+                          })()}
 
                           {/* Dynamic AI tips if specifically provided by model */}
                           {questionAnalysis && questionAnalysis.improvementTips?.length > 0 && (
