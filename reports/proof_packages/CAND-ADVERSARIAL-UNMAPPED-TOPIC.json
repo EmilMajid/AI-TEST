@@ -1,0 +1,27 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "CAND-ADVERSARIAL-UNMAPPED-TOPIC",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_fake_invented_topic",
+  "target_node": "math_anlayis_kvadrat_tenlik",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-M01-DISC-01",
+    "artifact_type": "FORMAL_ALGEBRAIC_PROOF",
+    "method": "Closed-form Quadratic Formula Root Substitution",
+    "verified_domain": "Univariate quadratic equations in R with D >= 0"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "UNMAPPED_TOPIC",
+    "reason": "Source 'math_fake_invented_topic' or target 'math_anlayis_kvadrat_tenlik' not found in canonical 'Riyaziyyat' corpus."
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "No empirical evaluation ID provided."
+  },
+  "epistemic_verdict": "UNPROVEN",
+  "production_action": "NO_VALIDATED_PREREQUISITE_UNKNOWN_GREATER_THAN_WRONG",
+  "rationale": "Source 'math_fake_invented_topic' or target 'math_anlayis_kvadrat_tenlik' not found in canonical 'Riyaziyyat' corpus.",
+  "package_sha256": "b8274b5b03525eb2d846b81305a1adc9a06321d2443ca6fcb1ec0c60e165d75f"
+}

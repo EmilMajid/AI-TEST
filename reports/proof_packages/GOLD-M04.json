@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-M04",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_silsile_ededi",
+  "target_node": "math_silsile_hendesi",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G9-1.1.3",
+    "target_standard": "AR-MATH-G9-1.1.4",
+    "source_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 110-125",
+    "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 126-138",
+    "explicit_textbook_dependency": true,
+    "source_grade": 9,
+    "target_grade": 9
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "b19140c93725ac28444e69c5e160864ef0ff61bc7fce06cdf66b7b51047e2c4d"
+}

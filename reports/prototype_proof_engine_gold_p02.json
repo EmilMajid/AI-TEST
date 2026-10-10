@@ -1,0 +1,232 @@
+{
+  "prototype_title": "TestAI.az KAG - Formal Proof & Counter-Example Engine (GOLD-P02)",
+  "target_rule": "GOLD-P02",
+  "acceptance_contract": {
+    "claim_id": "GOLD-P02-TOPIC-PREREQUISITE",
+    "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+    "scope": "Secondary physics curriculum grade 7: Mechanical Work to Kinetic Energy",
+    "method": "Tripartite synthesis of formal proof, curriculum sequence, and empirical assessment",
+    "verification": {
+      "curriculum_source_standard": "AR-PHYS-G7-2.1.2",
+      "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+      "details": "Algorithmic and state calculation alternatives demonstrate multiple analytical approaches (E_k = mv^2/2 without work), but curriculum topic prerequisite across general physics education remains unproven without empirical student trajectory data."
+    },
+    "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+    "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+    "limitations": "Mechanical work is not universally necessary for all learning outcomes of kinetic energy; curriculum sequence does not equal strict pedagogical necessity."
+  },
+  "acceptance_contracts_all": [
+    {
+      "claim_id": "GOLD-P02-THEOREM-IDENTITY",
+      "claim_type": "PHYSICAL_THEOREM_IDENTITY",
+      "scope": "1D Classical mechanics with constant mass m > 0 and non-zero acceleration a != 0",
+      "method": "Symbolic derivation of Work-Energy theorem W_net = Delta Ek from Newton's II Law and kinematics",
+      "verification": {
+        "formal_proof_id": "CAS-P02-WORK-ENERGY-01",
+        "details": "Exact symbolic derivation that W_net - Delta Ek == 0 holds under Newton II and 1D kinematics"
+      },
+      "evidence_status": "THEOREM_DEPENDENCY_VERIFIED",
+      "prerequisite_status": "SCOPED_CANDIDATE_PENDING_MODEL_COMPLETENESS",
+      "limitations": "Valid algebraically strictly within 1D constant acceleration particle model. Does not prove general applicability of Newton's II Law, variable mass dynamics, or pedagogical curriculum necessity for students."
+    },
+    {
+      "claim_id": "GOLD-P02-STATE-CALC-COUNTEREXAMPLE",
+      "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+      "scope": "Direct kinetic energy calculation Ek = (1/2)mv^2 from state variables mass and velocity",
+      "method": "Direct formula evaluation pathway vs mechanical work pathway",
+      "verification": {
+        "formal_proof_id": "CAS-P02-STATE-01",
+        "details": "Execution trace confirming mechanical work calculation is not invoked in direct state evaluation E_k = (1/2)*m*v^2"
+      },
+      "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+      "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+      "limitations": "Demonstrates that calculating kinetic energy does not algorithmically require calculating mechanical work."
+    },
+    {
+      "claim_id": "GOLD-P02-TOPIC-PREREQUISITE",
+      "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+      "scope": "Secondary physics curriculum grade 7: Mechanical Work to Kinetic Energy",
+      "method": "Tripartite synthesis of formal proof, curriculum sequence, and empirical assessment",
+      "verification": {
+        "curriculum_source_standard": "AR-PHYS-G7-2.1.2",
+        "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+        "details": "Algorithmic and state calculation alternatives demonstrate multiple analytical approaches (E_k = mv^2/2 without work), but curriculum topic prerequisite across general physics education remains unproven without empirical student trajectory data."
+      },
+      "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+      "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+      "limitations": "Mechanical work is not universally necessary for all learning outcomes of kinetic energy; curriculum sequence does not equal strict pedagogical necessity."
+    }
+  ],
+  "physics_model_specification": {
+    "model_name": "1D_CONSTANT_ACCELERATION_CLASSICAL_PARTICLE",
+    "model_assumptions": [
+      "Kütlə sabitdir və müsbətdir: m = const > 0 (dəyişən kütləli raket dinamikası nəzərə alınmır)",
+      "Hərəkət birölçülü xətti x oxu boyunca baş verir: x(t)",
+      "Təcil sabitdir və sıfırdan fərqlidir: a = const != 0 (müsbət və mənfi təcil dəstəklənir)",
+      "Qüvvə ilə yerdəyişmə eyni düz xətt üzrədir: cos(alpha) = +-1"
+    ],
+    "physical_laws_applied": [
+      "Nyutonun II Qanunu: F_net = m * a",
+      "Birölçülü bərabərtəcilli hərəkətdə kinematik düstur: v^2 - v0^2 = 2 * a * s",
+      "Mexaniki işin tərifi: W_net = F_net * s",
+      "Kinetik enerjinin riyazi tərifi: E_k = (1/2) * m * v^2"
+    ],
+    "verified_algebraic_identity": {
+      "identity_holds": true,
+      "work_expression": "m*(v**2 - v0**2)/2",
+      "delta_k_expression": "m*v**2/2 - m*v0**2/2",
+      "symbolic_difference": "0"
+    },
+    "model_exclusions": [
+      "Dəyişən kütləli sistemlər (m = m(t), Meşşerski tənliyi)",
+      "Qeyri-sabit təcilli və inteqral tələb edən dəyişən qüvvələr: W = int F(x) dx",
+      "Üçölçülü trayektoriyalar və vektor potensial sahələr",
+      "Dissipativ qeyri-mühafizəkar qüvvələr və istilik itkiləri",
+      "Kinetik enerjinin sırf hal parametri kimi hesablanması (Ek = (1/2)mv^2)"
+    ],
+    "topic_level_prerequisite_verdict": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+    "epistemic_verdict_justification": "İş-enerji teoremi kontekstində mexaniki iş riyazi və fiziki zərurətdir (THEOREM_DEPENDENCY_VERIFIED). Lakin kinetik enerji birbaşa hal parametrlərindən hesablandıqda mexaniki iş çağırılmır (COUNTEREXAMPLE_VERIFIED). Buna görə bütöv mövzu səviyyəli asılılıq sübut olunmamış qalır."
+  },
+  "learning_outcomes": [
+    {
+      "lo_id": "LO-P02-STATE",
+      "description": "Kinetik enerjinin hərəkət halının skalyar funksiyası kimi tərifi və hesablanması: E_k = (m*v^2)/2",
+      "scope": "STATE_FUNCTION_FORMULA_CALCULATION"
+    },
+    {
+      "lo_id": "LO-P02-THEOREM",
+      "description": "Xalis qüvvənin gördüyü işin kinetik enerjinin dəyişməsinə bərabər olması (İş-enerji teoremi): W_net = Delta E_k",
+      "scope": "WORK_ENERGY_THEOREM_APPLICATION"
+    },
+    {
+      "lo_id": "LO-P02-CONCEPTUAL",
+      "description": "Enerjinin fiziki mənası: Cismin işgörmə qabiliyyəti kimi enerjinin tərifi",
+      "scope": "FOUNDATIONAL_CONCEPTUAL_DEFINITION"
+    }
+  ],
+  "channel_1_formal_proof": {
+    "channel_name": "FORMAL_PROOF_CHANNEL",
+    "target_claim_universal": "STRICT_NECESSITY(Mexaniki_iş -> Kinetik_enerji)",
+    "physics_model_specification": {
+      "model_name": "1D_CONSTANT_ACCELERATION_CLASSICAL_PARTICLE",
+      "model_assumptions": [
+        "Kütlə sabitdir və müsbətdir: m = const > 0 (dəyişən kütləli raket dinamikası nəzərə alınmır)",
+        "Hərəkət birölçülü xətti x oxu boyunca baş verir: x(t)",
+        "Təcil sabitdir və sıfırdan fərqlidir: a = const != 0 (müsbət və mənfi təcil dəstəklənir)",
+        "Qüvvə ilə yerdəyişmə eyni düz xətt üzrədir: cos(alpha) = +-1"
+      ],
+      "physical_laws_applied": [
+        "Nyutonun II Qanunu: F_net = m * a",
+        "Birölçülü bərabərtəcilli hərəkətdə kinematik düstur: v^2 - v0^2 = 2 * a * s",
+        "Mexaniki işin tərifi: W_net = F_net * s",
+        "Kinetik enerjinin riyazi tərifi: E_k = (1/2) * m * v^2"
+      ],
+      "verified_algebraic_identity": {
+        "identity_holds": true,
+        "work_expression": "m*(v**2 - v0**2)/2",
+        "delta_k_expression": "m*v**2/2 - m*v0**2/2",
+        "symbolic_difference": "0"
+      },
+      "model_exclusions": [
+        "Dəyişən kütləli sistemlər (m = m(t), Meşşerski tənliyi)",
+        "Qeyri-sabit təcilli və inteqral tələb edən dəyişən qüvvələr: W = int F(x) dx",
+        "Üçölçülü trayektoriyalar və vektor potensial sahələr",
+        "Dissipativ qeyri-mühafizəkar qüvvələr və istilik itkiləri",
+        "Kinetik enerjinin sırf hal parametri kimi hesablanması (Ek = (1/2)mv^2)"
+      ],
+      "topic_level_prerequisite_verdict": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+      "epistemic_verdict_justification": "İş-enerji teoremi kontekstində mexaniki iş riyazi və fiziki zərurətdir (THEOREM_DEPENDENCY_VERIFIED). Lakin kinetik enerji birbaşa hal parametrlərindən hesablandıqda mexaniki iş çağırılmır (COUNTEREXAMPLE_VERIFIED). Buna görə bütöv mövzu səviyyəli asılılıq sübut olunmamış qalır."
+    },
+    "methods_compared": [
+      {
+        "method_name": "STATE_PROPERTY_DIRECT_EVALUATION",
+        "target_lo": "LO-P02-STATE",
+        "invokes_mechanical_work": false,
+        "status": "COUNTEREXAMPLE_VERIFIED",
+        "details": "Hesablama xalis iş anlayışını çağırmadan aparılır (E_k = mv^2/2)."
+      },
+      {
+        "method_name": "WORK_ENERGY_TRANSFORMATION",
+        "target_lo": "LO-P02-THEOREM",
+        "invokes_mechanical_work": true,
+        "status": "THEOREM_DEPENDENCY_VERIFIED",
+        "details": "İş-enerji teoremində mexaniki iş (W_net) zəruri fiziki kəmiyyətdir."
+      },
+      {
+        "method_name": "CAPACITY_TO_DO_WORK_ONTOLOGY",
+        "target_lo": "LO-P02-CONCEPTUAL",
+        "invokes_mechanical_work": true,
+        "status": "METHOD_DEPENDENCY_DECLARED",
+        "details": "Enerjinin dərslik tərifi birbaşa mexaniki iş anlayışına istinad edir."
+      }
+    ],
+    "universal_verdict": "REFUTED_BY_COUNTEREXAMPLE",
+    "contracts": [
+      {
+        "claim_id": "GOLD-P02-THEOREM-IDENTITY",
+        "claim_type": "PHYSICAL_THEOREM_IDENTITY",
+        "scope": "1D Classical mechanics with constant mass m > 0 and non-zero acceleration a != 0",
+        "method": "Symbolic derivation of Work-Energy theorem W_net = Delta Ek from Newton's II Law and kinematics",
+        "verification": {
+          "formal_proof_id": "CAS-P02-WORK-ENERGY-01",
+          "details": "Exact symbolic derivation that W_net - Delta Ek == 0 holds under Newton II and 1D kinematics"
+        },
+        "evidence_status": "THEOREM_DEPENDENCY_VERIFIED",
+        "prerequisite_status": "SCOPED_CANDIDATE_PENDING_MODEL_COMPLETENESS",
+        "limitations": "Valid algebraically strictly within 1D constant acceleration particle model. Does not prove general applicability of Newton's II Law, variable mass dynamics, or pedagogical curriculum necessity for students."
+      },
+      {
+        "claim_id": "GOLD-P02-STATE-CALC-COUNTEREXAMPLE",
+        "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+        "scope": "Direct kinetic energy calculation Ek = (1/2)mv^2 from state variables mass and velocity",
+        "method": "Direct formula evaluation pathway vs mechanical work pathway",
+        "verification": {
+          "formal_proof_id": "CAS-P02-STATE-01",
+          "details": "Execution trace confirming mechanical work calculation is not invoked in direct state evaluation E_k = (1/2)*m*v^2"
+        },
+        "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+        "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+        "limitations": "Demonstrates that calculating kinetic energy does not algorithmically require calculating mechanical work."
+      },
+      {
+        "claim_id": "GOLD-P02-TOPIC-PREREQUISITE",
+        "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+        "scope": "Secondary physics curriculum grade 7: Mechanical Work to Kinetic Energy",
+        "method": "Tripartite synthesis of formal proof, curriculum sequence, and empirical assessment",
+        "verification": {
+          "curriculum_source_standard": "AR-PHYS-G7-2.1.2",
+          "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+          "details": "Algorithmic and state calculation alternatives demonstrate multiple analytical approaches (E_k = mv^2/2 without work), but curriculum topic prerequisite across general physics education remains unproven without empirical student trajectory data."
+        },
+        "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+        "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+        "limitations": "Mechanical work is not universally necessary for all learning outcomes of kinetic energy; curriculum sequence does not equal strict pedagogical necessity."
+      }
+    ]
+  },
+  "channel_2_curriculum_proof": {
+    "channel_name": "CURRICULUM_PROOF_CHANNEL",
+    "source_standard": "Fizika 7: Məzmun standartı 2.2.1: Mexaniki iş və güc",
+    "target_standard": "Fizika 7: Məzmun standartı 2.2.2: Kinetik və potensial enerji",
+    "textbook_progression": "Fizika 7 (R.Əliyev) - Mexaniki iş fəslindən dərhal sonra Kinetik enerji tədris olunur.",
+    "curriculum_verdict": "CURRICULUM_SUPPORTED",
+    "curriculum_relation_type": "CURRICULUM_SEQUENCE"
+  },
+  "channel_3_empirical_proof": {
+    "channel_name": "EMPIRICAL_PROOF_CHANNEL",
+    "bkt_item_response_status": "INSUFFICIENT_REAL_STUDENT_DATA_SHADOW_ONLY",
+    "empirical_verdict": "DATA_COLLECTION_PENDING"
+  },
+  "prototype_decision": {
+    "rule_id": "GOLD-P02",
+    "source_concept": "Mexaniki iş (phy_mexaniki_is)",
+    "target_concept": "Kinetik enerji (phy_kinetik_enerji)",
+    "tripartite_synthesis": {
+      "channel_1_formal": "REFUTED_BY_COUNTEREXAMPLE",
+      "channel_2_curriculum": "CURRICULUM_SUPPORTED",
+      "channel_3_empirical": "DATA_COLLECTION_PENDING"
+    },
+    "silver_graph_placement_decision": "REGISTERED_AS_SCOPED_ONLY",
+    "active_production_remediation": "BLOCKED_FOR_STATE_CALCULATION_ALLOWED_FOR_WORK_ENERGY_THEOREM"
+  }
+}

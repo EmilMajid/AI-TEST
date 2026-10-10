@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-I02",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "İnformatika",
+  "source_node": "inf_xetti_alqoritm",
+  "target_node": "inf_budaqlanan_alqoritm",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-INF-G6-2.1.1",
+    "target_standard": "AR-INF-G7-2.1.2",
+    "source_textbook_ref": "İnformatika 6-cı sinif, Fəsil 3: Alqoritmlər, Səh. 60-75",
+    "target_textbook_ref": "İnformatika 7-ci sinif, Fəsil 2: Alqoritmik strukturlar, Səh. 35-52",
+    "explicit_textbook_dependency": true,
+    "source_grade": 6,
+    "target_grade": 7
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+  "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+  "package_sha256": "277094c1ecb37357231267e00b1869d647ef4ffed4759c5d08bf397ebe311e0d"
+}

@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "isolation_method": "STRICT_SEPARATE_TEMP_FILES",
+  "pre_input_hashes": {
+    "grade_8.json": "1bec4e02445791379e72b91b36b7edd7816410ec39d9efd05890a2473b7eb13c",
+    "grade_9.json": "ded93d4a989e5b354fe61397afc4ede5f11bbd2f90e6c4f506cdf7050850154e",
+    "grade_10.json": "dfdefc0b6e754e1b56403249115f2e91dab057a721d1881cac30f43b80e44b3c",
+    "grade_11.json": "fd29c65ef1e766fe040f3bbaa2d76e28e6444463dab655d941f800739db4763e"
+  },
+  "post_input_hashes": {
+    "grade_8.json": "1bec4e02445791379e72b91b36b7edd7816410ec39d9efd05890a2473b7eb13c",
+    "grade_9.json": "ded93d4a989e5b354fe61397afc4ede5f11bbd2f90e6c4f506cdf7050850154e",
+    "grade_10.json": "dfdefc0b6e754e1b56403249115f2e91dab057a721d1881cac30f43b80e44b3c",
+    "grade_11.json": "fd29c65ef1e766fe040f3bbaa2d76e28e6444463dab655d941f800739db4763e"
+  },
+  "classifier_script_sha256": "521c7b4f881b49c98e3d8f2a38ef2b34b8dc7580aa22a8f762db878fb5c31ac1",
+  "tmp1_output_sha256": "09f94ca0918552e17dad31f06ed3fe0e03c3d82ccddd3647316d202ed599847a",
+  "tmp2_output_sha256": "09f94ca0918552e17dad31f06ed3fe0e03c3d82ccddd3647316d202ed599847a",
+  "is_bit_for_bit_identical": true
+}

@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-A03",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Azərbaycan dili",
+  "source_node": "aze_vasitesiz_nitq",
+  "target_node": "aze_dialoq_sintaksisi",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-AZE-G8-1.3.1",
+    "target_standard": "AR-AZE-G8-1.3.2",
+    "source_textbook_ref": "Azərbaycan dili 8-ci sinif, Səh. 110-122",
+    "target_textbook_ref": "Azərbaycan dili 8-ci sinif, Səh. 124-135",
+    "explicit_textbook_dependency": true,
+    "source_grade": 8,
+    "target_grade": 8
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "72da3405f68627db4f7b740234caa9b07187286d31ff78c4efba50ed0a83a632"
+}

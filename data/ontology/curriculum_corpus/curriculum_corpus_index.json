@@ -1,0 +1,15 @@
+{
+  "index_version": "1.1",
+  "charter": "KAG Universal Autonomous Curriculum Corpus Index (All 8 Ratified Gold Domains)",
+  "total_subjects": 8,
+  "subject_corpora": {
+    "Riyaziyyat": "data/ontology/curriculum_corpus/math_curriculum_corpus.json",
+    "Fizika": "data/ontology/curriculum_corpus/physics_curriculum_corpus.json",
+    "Azərbaycan dili": "data/ontology/curriculum_corpus/azerbaijani_curriculum_corpus.json",
+    "Kimya": "data/ontology/curriculum_corpus/chemistry_curriculum_corpus.json",
+    "Biologiya": "data/ontology/curriculum_corpus/biology_curriculum_corpus.json",
+    "Tarix": "data/ontology/curriculum_corpus/history_curriculum_corpus.json",
+    "Coğrafiya": "data/ontology/curriculum_corpus/geography_curriculum_corpus.json",
+    "İnformatika": "data/ontology/curriculum_corpus/informatics_curriculum_corpus.json"
+  }
+}

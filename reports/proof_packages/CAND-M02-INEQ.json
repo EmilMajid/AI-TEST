@@ -1,0 +1,34 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "CAND-M02-INEQ",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_usul_intervallar",
+  "target_node": "math_anlayis_kvadrat_berabersizlik",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-M02-INTERVAL-01",
+    "artifact_type": "METHOD_DEPENDENCY_PROOF",
+    "method": "Interval Partitioning Sign Sampling Algorithm",
+    "verified_domain": "Univariate continuous quadratic polynomials in R"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G8-1.2.3",
+    "target_standard": "AR-MATH-G9-1.2.4",
+    "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+    "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+    "explicit_textbook_dependency": true,
+    "source_grade": 8,
+    "target_grade": 9
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+  "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+  "package_sha256": "85b8cc03f787ac5a96a9eab297762fa59746baad48efb22a1d1b19ef94921c81"
+}

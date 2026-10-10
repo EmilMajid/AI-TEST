@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-P03",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Fizika",
+  "source_node": "phy_kulon_qanunu",
+  "target_node": "phy_sahe_intensivliyi",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-PHYS-G8-3.1.1",
+    "target_standard": "AR-PHYS-G8-3.1.2",
+    "source_textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 70-84",
+    "target_textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 86-98",
+    "explicit_textbook_dependency": true,
+    "source_grade": 8,
+    "target_grade": 8
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "31ed0f18df5292f82f0cb907dbd0c989465d290a329ee180e13c70ca30e95a75"
+}

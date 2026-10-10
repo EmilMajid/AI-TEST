@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-C01",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Kimya",
+  "source_node": "chm_atom_qurulusu",
+  "target_node": "chm_dovri_qanun",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-CHM-G7-1.1.1",
+    "target_standard": "AR-CHM-G8-1.2.1",
+    "source_textbook_ref": "Kimya 7-ci sinif, Fəsil 2: Atom və Molekul, Səh. 35-50",
+    "target_textbook_ref": "Kimya 8-ci sinif, Fəsil 1: Dövri sistem, Səh. 12-32",
+    "explicit_textbook_dependency": true,
+    "source_grade": 7,
+    "target_grade": 8
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "26f62dc25170e90d97538e066f824a3a7e726b4197431d16c7ac4bb0064ef0fb"
+}

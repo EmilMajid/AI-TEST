@@ -1,0 +1,371 @@
+{
+  "grade_breakdowns": {
+    "8": {
+      "total_questions": 2305,
+      "has_steps": 2305,
+      "has_exp": 2305,
+      "steps_class_dist": {
+        "TEMPLATE": 2305
+      },
+      "exp_class_dist": {
+        "AMBIGUOUS": 441,
+        "REASONED_EXPLANATION": 62,
+        "OPERATIONAL_TRACE": 1762,
+        "TEMPLATE": 24,
+        "FORMULA_REFERENCE": 16
+      },
+      "unified_class_dist": {
+        "TEMPLATE": 2305
+      }
+    },
+    "9": {
+      "total_questions": 990,
+      "has_steps": 0,
+      "has_exp": 990,
+      "steps_class_dist": {
+        "EMPTY_OR_MISSING": 990
+      },
+      "exp_class_dist": {
+        "AMBIGUOUS": 232,
+        "TEMPLATE": 119,
+        "OPERATIONAL_TRACE": 632,
+        "FORMULA_REFERENCE": 6,
+        "REASONED_EXPLANATION": 1
+      },
+      "unified_class_dist": {
+        "AMBIGUOUS": 232,
+        "TEMPLATE": 119,
+        "OPERATIONAL_TRACE": 632,
+        "FORMULA_REFERENCE": 6,
+        "REASONED_EXPLANATION": 1
+      }
+    },
+    "10": {
+      "total_questions": 360,
+      "has_steps": 0,
+      "has_exp": 360,
+      "steps_class_dist": {
+        "EMPTY_OR_MISSING": 360
+      },
+      "exp_class_dist": {
+        "OPERATIONAL_TRACE": 98,
+        "FORMULA_REFERENCE": 262
+      },
+      "unified_class_dist": {
+        "OPERATIONAL_TRACE": 98,
+        "FORMULA_REFERENCE": 262
+      }
+    },
+    "11": {
+      "total_questions": 555,
+      "has_steps": 0,
+      "has_exp": 555,
+      "steps_class_dist": {
+        "EMPTY_OR_MISSING": 555
+      },
+      "exp_class_dist": {
+        "OPERATIONAL_TRACE": 115,
+        "FORMULA_REFERENCE": 438,
+        "REASONED_EXPLANATION": 1,
+        "AMBIGUOUS": 1
+      },
+      "unified_class_dist": {
+        "OPERATIONAL_TRACE": 115,
+        "FORMULA_REFERENCE": 438,
+        "REASONED_EXPLANATION": 1,
+        "AMBIGUOUS": 1
+      }
+    }
+  },
+  "sampled_operational": [
+    {
+      "grade": 9,
+      "question_id": "900004",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "0,2(6) qarışıq dövri onluq kəsrini adi kəsrə çevirin:",
+      "content": "0,2(6) = (26-2)/90 = 24/90 = 4/15."
+    },
+    {
+      "grade": 9,
+      "question_id": "900006",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "İki irrasional ədədin cəmi haqqında hansı fikir tamamilə doğrudur?",
+      "content": "Məsələn, √2 + (-√2) = 0 (rasionaldır), lakin √2 + √3 irrasionaldır."
+    },
+    {
+      "grade": 9,
+      "question_id": "900007",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "a = 3, b = √5 olarsa, (a + b)(a - b) ifadəsinin qiymətini tapın:",
+      "content": "(a+b)(a-b) = a^2 - b^2 = 3^2 - (√5)^2 = 9 - 5 = 4."
+    },
+    {
+      "grade": 9,
+      "question_id": "900008",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "(2 - √3)^2 + 4√3 ifadəsinin qiymətini hesablayın:",
+      "content": "(2-√3)^2 + 4√3 = 4 - 4√3 + 3 + 4√3 = 7."
+    },
+    {
+      "grade": 9,
+      "question_id": "900009",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "a və b rasional ədədlər olduqda a + b√2 = 0 bərabərliyi hansı halda həmişə doğrudur?",
+      "content": "a, b ∈ Q olduqda a + b√2 = 0 yalnız a = 0 və b = 0 olduqda mümkündür."
+    },
+    {
+      "grade": 9,
+      "question_id": "900011",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "a = √3 + 1 ədədinin tərsi ilə əksinin cəmini tapın:",
+      "content": "Tərsi: 1/(√3+1) = (√3-1)/2. Əksi: -(√3+1). Cəmi: (√3-1-2√3-2)/2 = (-√3-3)/2 -> Yoxlama: (√3-1)/2 - (√3+1) = -1 - 1 = -2 (Sadələşdirmədə: 1/a - a = (1-a^2)/a)."
+    },
+    {
+      "grade": 9,
+      "question_id": "900013",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "√(7 - 4√3) ifadəsinin qiymətini tapın:",
+      "content": "7 - 4√3 = (2 - √3)^2. Kökdən: |2 - √3| = 2 - √3 (2 > √3)."
+    },
+    {
+      "grade": 9,
+      "question_id": "900014",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "x = √11 olduqda (x - 3)(x + 3)(x^2 + 9) ifadəsinin qiymətini hesablayın:",
+      "content": "(x^2 - 9)(x^2 + 9) = x^4 - 81 = (√11)^4 - 81 = 121 - 81 = 40. (Cavab: 40 -> 121-81=40). Düzəliş: 40."
+    },
+    {
+      "grade": 9,
+      "question_id": "900015",
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "active_source": "explanation",
+      "question": "a, b həqiqi ədədləri üçün a^2 + b^2 - 4a + 6b + 13 = 0 olarsa, a · b hasilini tapın:",
+      "content": "(a-2)^2 + (b+3)^2 = 0 -> a = 2, b = -3 -> ab = 2 * (-3) = -6."
+    },
+    {
+      "grade": 9,
+      "question_id": "900016",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "Həqiqi ədədin mütləq qiymətinin (modulunun) tərifi necədir?",
+      "content": "|a| = a (a >= 0 olduqda), |a| = -a (a < 0 olduqda)."
+    },
+    {
+      "grade": 9,
+      "question_id": "900017",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "|-7,5| + |3,2| - |-4,3| ifadəsinin qiymətini hesablayın:",
+      "content": "7,5 + 3,2 - 4,3 = 10,7 - 4,3 = 6,4."
+    },
+    {
+      "grade": 9,
+      "question_id": "900019",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "x < 3 olduqda |x - 3| ifadəsini modulsuz yazın:",
+      "content": "x < 3 olduqda x - 3 < 0 olur, ona görə |x - 3| = -(x - 3) = 3 - x."
+    },
+    {
+      "grade": 9,
+      "question_id": "900020",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "a < 0 olduqda |a| + a ifadəsinin qiyməti nəyə bərabərdir?",
+      "content": "a < 0 olduqda |a| = -a, beləliklə -a + a = 0."
+    },
+    {
+      "grade": 9,
+      "question_id": "900021",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "|x - 5| = 7 tənliyinin kökləri cəmini tapın:",
+      "content": "x - 5 = 7 -> x1 = 12; x - 5 = -7 -> x2 = -2. Cəm: 12 + (-2) = 10."
+    },
+    {
+      "grade": 9,
+      "question_id": "900023",
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "active_source": "explanation",
+      "question": "2 < x < 5 olduqda |x - 2| + |x - 5| ifadəsinin qiymətini tapın:",
+      "content": "x-2 > 0 -> x-2; x-5 < 0 -> 5-x. Cəm: (x-2) + (5-x) = 3."
+    }
+  ],
+  "gold_math_matches": {
+    "GOLD-M03": [
+      {
+        "id": "g8-riy8-1-4-e694b9",
+        "grade": 8,
+        "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+        "q": "Verilmiş ədədlərdən neçəsi irrasionaldır? √16; √12; 0,(5); π; -3,14"
+      },
+      {
+        "id": "g8-riy8-1-68-e6cd8e",
+        "grade": 8,
+        "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+        "q": "$\\frac{6}{\\sqrt{2}}$ kəsrinin məxrəcini irrasionallıqdan azad edin."
+      },
+      {
+        "id": "g8-riy8-1-71-a2f269",
+        "grade": 8,
+        "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+        "q": "$\\frac{10}{\\sqrt{7} - \\sqrt{2}}$ kəsrinin məxrəcini irrasionallıqdan azad edin."
+      },
+      {
+        "id": "g8-riy8-2-1-f49886",
+        "grade": 8,
+        "topic": "Həqiqi ədədlər",
+        "q": "Rasional və irrasional ədədlər haqqında hansı fikir doğrudur?"
+      },
+      {
+        "id": "g8-riy8-2-16-155250",
+        "grade": 8,
+        "topic": "Həqiqi ədədlər",
+        "q": "Aşağıdakı təkliflərdən hansı həmişə doğrudur?"
+      }
+    ],
+    "GOLD-M02": [
+      {
+        "id": "g8-riy8-2-21-13e7a3",
+        "grade": 8,
+        "topic": "Həqiqi ədədlər",
+        "q": "İrrasional ədədlərin aşkar edilməsi tarixi və pifaqorçuların yanaşması barədə de"
+      },
+      {
+        "id": "g8-riy8-7-23-1d42e0",
+        "grade": 8,
+        "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+        "q": "Sahəsi 25 olan kvadratın daxilinə çevrə çəkilmişdir. Kvadratın bir təpə nöqtəsi "
+      },
+      {
+        "id": "g8-riy8-7-24-8411c4",
+        "grade": 8,
+        "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+        "q": "Düzbucaqlı paralelepipedin (qutunun) ölçüləri 3 sm, 4 sm və 12 sm-dir. Bu qutunu"
+      },
+      {
+        "id": "g8-riy8-7-25-adf48e",
+        "grade": 8,
+        "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+        "q": "$ABCD$ trapesiyasında $AD$ və $BC$ oturacaqlar, $AB$ və $CD$ isə yan tərəflərdir"
+      },
+      {
+        "id": "g8-riy8-8-1-1bce59",
+        "grade": 8,
+        "topic": "Pifaqor teoremi",
+        "q": "Düzbucaqlı üçbucağın katetləri 6 sm və 8 sm-dir. Pifaqor teoreminə əsasən, onun "
+      }
+    ],
+    "GOLD-M01": [
+      {
+        "id": "g8-riy8-7-37-e54fbb",
+        "grade": 8,
+        "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+        "q": "x² - 9 = 0 tənliyinin köklərinin cəmini tapın."
+      },
+      {
+        "id": "g8-riy8-11-3-9320b2",
+        "grade": 8,
+        "topic": "Kvadrat tənliklər",
+        "q": "4x^2 - 12x = 0 tənliyinin köklərinin cəmini tapın."
+      },
+      {
+        "id": "g8-riy8-11-5-2b2df1",
+        "grade": 8,
+        "topic": "Kvadrat tənliklər",
+        "q": "x^2 + 7x - 10 = 0 çevrilmiş kvadrat tənliyinin kökləri cəmini və hasilini tapın."
+      },
+      {
+        "id": "g8-riy8-11-7-a2f438",
+        "grade": 8,
+        "topic": "Kvadrat tənliklər",
+        "q": "x^2 - 8x + q = 0 tənliyinin köklərindən biri 5-ə bərabərdir. Tənliyin digər kökü"
+      },
+      {
+        "id": "g8-riy8-11-8-da7736",
+        "grade": 8,
+        "topic": "Kvadrat tənliklər",
+        "q": "Kökləri 4 və -6 olan çevrilmiş kvadrat tənliyi müəyyən edin."
+      }
+    ],
+    "GOLD-M04": [
+      {
+        "id": "g8-riy8-54-9-9df199",
+        "grade": 8,
+        "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+        "q": "Düzbucaqlı vərəqin uzunluğu enindən 2 dəfə böyükdür. Vərəqin hər tərəfindən 1 sm"
+      },
+      {
+        "id": "10-001-0103-10MA03-BL4-C2-011",
+        "grade": 10,
+        "topic": "3. Qüvvət funksiyaları və hissə-hissə verilmiş funksiyalar",
+        "q": "$f(x) = \\begin{cases} -x + 4, & x < 1 \\\\ 2x + 1, & x \\ge 1 \\end{cases}$ funksiya"
+      },
+      {
+        "id": "11-001-0207-11MA07-BL2-C1-010",
+        "grade": 11,
+        "topic": "Çoxhədli funksiya",
+        "q": "Çoxhədli funksiyanın kəsilməzliyi haqqında hansı təklif doğrudur?"
+      },
+      {
+        "id": "11-001-0207-11MA07-BL2-C2-015",
+        "grade": 11,
+        "topic": "Çoxhədli funksiya",
+        "q": "Ara qiymət haqqında teoremə görə, əgər kəsilməz f(x) üçün f(a) və f(b) müxtəlif "
+      },
+      {
+        "id": "11-001-0210-11MA10-BL3-C1-001",
+        "grade": 11,
+        "topic": "Funksiyanın limiti və limitlər haqqında teoremlər",
+        "q": "lim (x → 2) (3x² - 5x + 4) limitinin qiyməti neçədir?"
+      }
+    ],
+    "GOLD-M05": [
+      {
+        "id": "11-001-0101-11MA01-BL3-C2-001",
+        "grade": 11,
+        "topic": "Çoxhədlinin çoxhədliyə bölünməsi",
+        "q": "P(x) = 2x³ - 3x² + 4x - 5 çoxhədlisini x - 2 ikihədlisinə böldükdə alınan natama"
+      },
+      {
+        "id": "11-001-0101-11MA01-BL1-C1-002",
+        "grade": 11,
+        "topic": "Çoxhədlinin çoxhədliyə bölünməsi",
+        "q": "Bölünən P(x), bölən B(x), natamam qismət Q(x) və qalıq R(x) olarsa, çoxhədliləri"
+      },
+      {
+        "id": "11-001-0101-11MA01-BL3-C1-003",
+        "grade": 11,
+        "topic": "Çoxhədlinin çoxhədliyə bölünməsi",
+        "q": "P(x) = x⁴ - 1 çoxhədlisi x - 1 ikihədlisinə bölündükdə qismət nəyə bərabərdir?"
+      },
+      {
+        "id": "11-001-0101-11MA01-BL1-C1-004",
+        "grade": 11,
+        "topic": "Çoxhədlinin çoxhədliyə bölünməsi",
+        "q": "Qorner sxemi hansı məqsədlə istifadə olunur?"
+      },
+      {
+        "id": "11-001-0101-11MA01-BL3-C2-005",
+        "grade": 11,
+        "topic": "Çoxhədlinin çoxhədliyə bölünməsi",
+        "q": "P(x) = x³ - 6x² + 11x - 6 çoxhədlisini x - 1 ikihədlisinə böldükdə natamam qismə"
+      }
+    ]
+  },
+  "gold_math_totals": {
+    "GOLD-M03": 130,
+    "GOLD-M02": 243,
+    "GOLD-M01": 92,
+    "GOLD-M04": 65,
+    "GOLD-M05": 39
+  }
+}

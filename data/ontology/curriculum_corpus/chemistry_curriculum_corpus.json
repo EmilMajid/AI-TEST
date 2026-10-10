@@ -1,0 +1,56 @@
+{
+  "corpus_version": "1.0",
+  "subject": "Kimya",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı",
+  "topics": {
+    "chm_atom_qurulusu": {
+      "standard_code": "AR-CHM-G7-1.1.1",
+      "grade": 7,
+      "topic_name": "Atomun quruluşu və elektron təbəqələri",
+      "textbook_ref": "Kimya 7-ci sinif, Fəsil 2: Atom və Molekul, Səh. 35-50",
+      "learning_outcomes": [
+        "1.1.1. Atomun nüvə və elektronlardan ibarət modelini izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "chm_madde_ve_fiziki_cisim"
+      ]
+    },
+    "chm_dovri_qanun": {
+      "standard_code": "AR-CHM-G8-1.2.1",
+      "grade": 8,
+      "topic_name": "Dövri qanun və kimyəvi elementlərin dövri sistemi",
+      "textbook_ref": "Kimya 8-ci sinif, Fəsil 1: Dövri sistem, Səh. 12-32",
+      "learning_outcomes": [
+        "1.2.1. Elementlərin xassələrinin nüvə yükündən asılı olaraq dövri dəyişməsini əsaslandırır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "chm_atom_qurulusu"
+      ]
+    },
+    "chm_oksidlesme_derecesi": {
+      "standard_code": "AR-CHM-G8-2.1.1",
+      "grade": 8,
+      "topic_name": "Elementlərin oksidləşmə dərəcəsi",
+      "textbook_ref": "Kimya 8-ci sinif, Fəsil 3: Kimyəvi rabitə, Səh. 65-78",
+      "learning_outcomes": [
+        "2.1.1. Birləşmələrdə elementlərin oksidləşmə dərəcəsini təyin edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "chm_valentlik_ve_rabite"
+      ]
+    },
+    "chm_orr_reaksiyalari": {
+      "standard_code": "AR-CHM-G8-2.1.2",
+      "grade": 8,
+      "topic_name": "Oksidləşmə-reduksiya reaksiyaları (ORR) və elektron balansı",
+      "textbook_ref": "Kimya 8-ci sinif, Fəsil 4: Kimyəvi reaksiyalar, Səh. 85-102",
+      "learning_outcomes": [
+        "2.1.2. Oksidləşmə-reduksiya reaksiyalarını elektron balansı üsulu ilə əmsallaşdırır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "chm_oksidlesme_derecesi"
+      ]
+    }
+  }
+}

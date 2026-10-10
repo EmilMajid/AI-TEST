@@ -1,0 +1,28 @@
+{
+  "manifest_version": "1.1-FROZEN",
+  "charter": "KAG Universal Remediation & Epistemik Təhlükəsizlik Konstitusiyası (Frozen v1.0)",
+  "total_active_gold": 21,
+  "canonical_rules": [
+    {"rule_id": "GOLD-M01", "subject": "Riyaziyyat", "source": "Xətti tənlik", "target": "Kvadrat tənlik", "source_grade": 7, "target_grade": 8, "canonical_source_id": "math_anlayis_ikideyisenli_xetti_tenlik", "canonical_target_id": "math_anlayis_kvadrat_tenlik"},
+    {"rule_id": "GOLD-M02", "subject": "Riyaziyyat", "source": "İntervallar metodu", "target": "Kvadrat bərabərsizlik", "source_grade": 8, "target_grade": 9, "canonical_source_id": "math_usul_intervallar", "canonical_target_id": "math_anlayis_kvadrat_berabersizlik"},
+    {"rule_id": "GOLD-M03", "subject": "Riyaziyyat", "source": "Triqonometrik eyniliklər", "target": "Triqonometrik tənliklər", "source_grade": 9, "target_grade": 10, "canonical_source_id": "math_eynilik_triqonometrik", "canonical_target_id": "math_tenlik_triqonometrik"},
+    {"rule_id": "GOLD-M04", "subject": "Riyaziyyat", "source": "Ədədi silsilə", "target": "Həndəsi silsilə", "source_grade": 9, "target_grade": 9, "canonical_source_id": "math_silsile_ededi", "canonical_target_id": "math_silsile_hendesi"},
+    {"rule_id": "GOLD-M05", "subject": "Riyaziyyat", "source": "Üstlü tənlik", "target": "Loqarifmik tənlik", "source_grade": 10, "target_grade": 11, "canonical_source_id": "math_tenlik_ustlu", "canonical_target_id": "math_tenlik_loqarifmik"},
+    {"rule_id": "GOLD-A01", "subject": "Azərbaycan dili", "source": "Söz birləşməsi", "target": "Sadə cümlə", "source_grade": 7, "target_grade": 8, "canonical_source_id": "aze_soz_birlesmesi", "canonical_target_id": "aze_sade_cumle"},
+    {"rule_id": "GOLD-A02", "subject": "Azərbaycan dili", "source": "Cümlə üzvləri", "target": "Mürəkkəb cümlə", "source_grade": 8, "target_grade": 9, "canonical_source_id": "aze_cumle_uzvleri", "canonical_target_id": "aze_murekkeb_cumle"},
+    {"rule_id": "GOLD-A03", "subject": "Azərbaycan dili", "source": "Vasitəsiz nitq", "target": "Dialoq sintaksisi", "source_grade": 8, "target_grade": 8, "canonical_source_id": "aze_vasitesiz_nitq", "canonical_target_id": "aze_dialoq_sintaksisi"},
+    {"rule_id": "GOLD-P01", "subject": "Fizika", "source": "Nyutonun birinci qanunu", "target": "Nyutonun ikinci qanunu", "source_grade": 7, "target_grade": 7, "canonical_source_id": "phy_nyuton_1", "canonical_target_id": "phy_nyuton_2"},
+    {"rule_id": "GOLD-P02", "subject": "Fizika", "source": "Mexaniki iş", "target": "Kinetik enerji", "source_grade": 7, "target_grade": 7, "canonical_source_id": "phy_mexaniki_is", "canonical_target_id": "phy_kinetik_enerji"},
+    {"rule_id": "GOLD-P03", "subject": "Fizika", "source": "Coulomb qanunu", "target": "Elektrik sahəsinin intensivliyi", "source_grade": 8, "target_grade": 8, "canonical_source_id": "phy_kulon_qanunu", "canonical_target_id": "phy_sahe_intensivliyi"},
+    {"rule_id": "GOLD-C01", "subject": "Kimya", "source": "Atom quruluşu", "target": "Dövri qanun", "source_grade": 7, "target_grade": 8, "canonical_source_id": "chm_atom_qurulusu", "canonical_target_id": "chm_dovri_qanun"},
+    {"rule_id": "GOLD-C02", "subject": "Kimya", "source": "Oksidləşmə dərəcəsi", "target": "Oksidləşmə-reduksiya reaksiyaları", "source_grade": 8, "target_grade": 8, "canonical_source_id": "chm_oksidlesme_derecesi", "canonical_target_id": "chm_orr_reaksiyalari"},
+    {"rule_id": "GOLD-B01", "subject": "Biologiya", "source": "Hüceyrə membranı", "target": "Maddələr mübadiləsi (Osmos)", "source_grade": 6, "target_grade": 7, "canonical_source_id": "bio_huceyre_membrani", "canonical_target_id": "bio_osmos"},
+    {"rule_id": "GOLD-B02", "subject": "Biologiya", "source": "Mitoz bölünmə", "target": "Meyoz bölünmə", "source_grade": 8, "target_grade": 9, "canonical_source_id": "bio_mitoz", "canonical_target_id": "bio_meyoz"},
+    {"rule_id": "GOLD-H01", "subject": "Tarix", "source": "İlk insan məskənləri", "target": "Qədim dövlət qurumları", "source_grade": 6, "target_grade": 6, "canonical_source_id": "his_ilk_meskenler", "canonical_target_id": "his_qedim_dovletler"},
+    {"rule_id": "GOLD-H02", "subject": "Tarix", "source": "Feodal münasibətləri", "target": "Səfəvilər dövləti idarəçiliyi", "source_grade": 7, "target_grade": 8, "canonical_source_id": "his_feodal_munasibetleri", "canonical_target_id": "his_sefevi_idareciliyi"},
+    {"rule_id": "GOLD-G01", "subject": "Coğrafiya", "source": "Yer kürəsinin daxili quruluşu", "target": "Litosfer tavaları", "source_grade": 6, "target_grade": 7, "canonical_source_id": "geo_yer_daxili_qurulusu", "canonical_target_id": "geo_litosfer_tavalari"},
+    {"rule_id": "GOLD-G02", "subject": "Coğrafiya", "source": "Atmosfer təzyiqi", "target": "Küləklərin yaranması", "source_grade": 6, "target_grade": 6, "canonical_source_id": "geo_atmosfer_tezyiqi", "canonical_target_id": "geo_kulleklerin_yaranmasi"},
+    {"rule_id": "GOLD-I01", "subject": "İnformatika", "source": "İnformasiya vahidləri", "target": "Məlumatın kodlaşdırılması", "source_grade": 6, "target_grade": 6, "canonical_source_id": "inf_informasiya_vahidi", "canonical_target_id": "inf_kodlasdirma"},
+    {"rule_id": "GOLD-I02", "subject": "İnformatika", "source": "Xətti alqoritm", "target": "Budaqlanan alqoritm", "source_grade": 6, "target_grade": 7, "canonical_source_id": "inf_xetti_alqoritm", "canonical_target_id": "inf_budaqlanan_alqoritm"}
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "target_rule": "GOLD-M02",
+  "acceptance_contract": {
+    "claim_id": "GOLD-M02-TOPIC-PREREQUISITE",
+    "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+    "scope": "Secondary mathematics curriculum grade 8 (Number intervals) to grade 9 (Quadratic inequalities)",
+    "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+    "verification": {
+      "curriculum_source_standard": "AR-MATH-G9-1.2.4",
+      "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+      "details": "Algorithmic alternative (parabola geometric method) demonstrates multiple CAS solution paths, but general curriculum topic prerequisite remains unproven without empirical student trajectory data."
+    },
+    "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+    "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+    "limitations": "Curriculum sequence (Grade 8 intervals -> Grade 9 inequalities) does not equal strict pedagogical necessity; pending real student empirical data."
+  },
+  "acceptance_contracts_all": [
+    {
+      "claim_id": "GOLD-M02-ALG-PARABOLA-COUNTEREXAMPLE",
+      "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+      "scope": "Univariate quadratic inequalities ax^2 + bx + c {>, >=, <, <=} 0 with exact real algebraic numbers (integers, rationals, square roots) and a != 0",
+      "method": "Closed-form Parabola Geometric Method comparison against Interval Sampling Method",
+      "verification": {
+        "formal_proof_id": "CAS-M02-PARABOLA-01",
+        "details": "100% exact symbolic solution set identity across 24-case parametric benchmark matrix with FTA root completeness"
+      },
+      "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+      "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+      "limitations": "Proves Parabola method is an alternative; refutes that Interval Method is universally necessary for quadratics."
+    },
+    {
+      "claim_id": "GOLD-M02-INTERVAL-METHOD-DEPENDENCY",
+      "claim_type": "METHOD_OPERATIONAL_DEPENDENCY",
+      "scope": "Sign evaluation across real number axis intervals for continuous quadratic polynomials",
+      "method": "Interval decomposition, interior point test evaluation, and root completeness verification",
+      "verification": {
+        "formal_proof_id": "CAS-M02-INTERVAL-01",
+        "details": "Exact symbolic verification that interval method produces identical solution sets across 24-case parametric benchmark matrix."
+      },
+      "evidence_status": "METHOD_DEPENDENCY_DECLARED",
+      "prerequisite_status": "METHOD_DEPENDENCY_ONLY",
+      "limitations": "Valid for the interval method specifically; does not establish universal necessity for solving quadratic inequalities in general."
+    },
+    {
+      "claim_id": "GOLD-M02-TOPIC-PREREQUISITE",
+      "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+      "scope": "Secondary mathematics curriculum grade 8 (Number intervals) to grade 9 (Quadratic inequalities)",
+      "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+      "verification": {
+        "curriculum_source_standard": "AR-MATH-G9-1.2.4",
+        "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+        "details": "Algorithmic alternative (parabola geometric method) demonstrates multiple CAS solution paths, but general curriculum topic prerequisite remains unproven without empirical student trajectory data."
+      },
+      "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+      "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+      "limitations": "Curriculum sequence (Grade 8 intervals -> Grade 9 inequalities) does not equal strict pedagogical necessity; pending real student empirical data."
+    }
+  ],
+  "benchmark_results": [
+    {
+      "case_name": "Case 1: D > 0, a > 0 with operator '>'",
+      "expression": "x**2 - 5*x + 6",
+      "operator": ">",
+      "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 2: D > 0, a > 0 with operator '>='",
+      "expression": "x**2 - 5*x + 6",
+      "operator": ">=",
+      "ground_truth": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "interval_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "parabola_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 3: D > 0, a > 0 with operator '<'",
+      "expression": "x**2 - 5*x + 6",
+      "operator": "<",
+      "ground_truth": "Interval.open(2, 3)",
+      "interval_solution": "Interval.open(2, 3)",
+      "parabola_solution": "Interval.open(2, 3)",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 4: D > 0, a > 0 with operator '<='",
+      "expression": "x**2 - 5*x + 6",
+      "operator": "<=",
+      "ground_truth": "Interval(2, 3)",
+      "interval_solution": "Interval(2, 3)",
+      "parabola_solution": "Interval(2, 3)",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 5: D > 0, a < 0 with operator '>'",
+      "expression": "-x**2 + 5*x - 6",
+      "operator": ">",
+      "ground_truth": "Interval.open(2, 3)",
+      "interval_solution": "Interval.open(2, 3)",
+      "parabola_solution": "Interval.open(2, 3)",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 6: D > 0, a < 0 with operator '>='",
+      "expression": "-x**2 + 5*x - 6",
+      "operator": ">=",
+      "ground_truth": "Interval(2, 3)",
+      "interval_solution": "Interval(2, 3)",
+      "parabola_solution": "Interval(2, 3)",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 7: D > 0, a < 0 with operator '<'",
+      "expression": "-x**2 + 5*x - 6",
+      "operator": "<",
+      "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 8: D > 0, a < 0 with operator '<='",
+      "expression": "-x**2 + 5*x - 6",
+      "operator": "<=",
+      "ground_truth": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "interval_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "parabola_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 9: D = 0, a > 0 with operator '>'",
+      "expression": "(x - 2)**2",
+      "operator": ">",
+      "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 10: D = 0, a > 0 with operator '>='",
+      "expression": "(x - 2)**2",
+      "operator": ">=",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 11: D = 0, a > 0 with operator '<'",
+      "expression": "(x - 2)**2",
+      "operator": "<",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 12: D = 0, a > 0 with operator '<='",
+      "expression": "(x - 2)**2",
+      "operator": "<=",
+      "ground_truth": "{2}",
+      "interval_solution": "{2}",
+      "parabola_solution": "{2}",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 13: D = 0, a < 0 with operator '>'",
+      "expression": "-(x - 2)**2",
+      "operator": ">",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 14: D = 0, a < 0 with operator '>='",
+      "expression": "-(x - 2)**2",
+      "operator": ">=",
+      "ground_truth": "{2}",
+      "interval_solution": "{2}",
+      "parabola_solution": "{2}",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 15: D = 0, a < 0 with operator '<'",
+      "expression": "-(x - 2)**2",
+      "operator": "<",
+      "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 16: D = 0, a < 0 with operator '<='",
+      "expression": "-(x - 2)**2",
+      "operator": "<=",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 17: D < 0, a > 0 with operator '>'",
+      "expression": "x**2 + 1",
+      "operator": ">",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 18: D < 0, a > 0 with operator '>='",
+      "expression": "x**2 + 1",
+      "operator": ">=",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 19: D < 0, a > 0 with operator '<'",
+      "expression": "x**2 + 1",
+      "operator": "<",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 20: D < 0, a > 0 with operator '<='",
+      "expression": "x**2 + 1",
+      "operator": "<=",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 21: D < 0, a < 0 with operator '>'",
+      "expression": "-x**2 - 1",
+      "operator": ">",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 22: D < 0, a < 0 with operator '>='",
+      "expression": "-x**2 - 1",
+      "operator": ">=",
+      "ground_truth": "EmptySet",
+      "interval_solution": "EmptySet",
+      "parabola_solution": "EmptySet",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 23: D < 0, a < 0 with operator '<'",
+      "expression": "-x**2 - 1",
+      "operator": "<",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 24: D < 0, a < 0 with operator '<='",
+      "expression": "-x**2 - 1",
+      "operator": "<=",
+      "ground_truth": "Reals",
+      "interval_solution": "Interval(-oo, oo)",
+      "parabola_solution": "Reals",
+      "all_match": true
+    },
+    {
+      "case_name": "Case 25: Exact radical Q(sqrt(2)) x^2 - 2 > 0",
+      "expression": "x**2 - 2",
+      "operator": ">",
+      "ground_truth": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+      "interval_solution": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+      "parabola_solution": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+      "all_match": true
+    }
+  ],
+  "channel_1_formal_proof": {
+    "channel_name": "FORMAL_PROOF_CHANNEL",
+    "target_claim_universal": "STRICT_NECESSITY(İntervallar_metodu -> Kvadrat_bərabərsizlik)",
+    "benchmark_cases_evaluated": 25,
+    "all_cases_independently_verified": true,
+    "benchmark_details": [
+      {
+        "case_name": "Case 1: D > 0, a > 0 with operator '>'",
+        "expression": "x**2 - 5*x + 6",
+        "operator": ">",
+        "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 2: D > 0, a > 0 with operator '>='",
+        "expression": "x**2 - 5*x + 6",
+        "operator": ">=",
+        "ground_truth": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "interval_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "parabola_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 3: D > 0, a > 0 with operator '<'",
+        "expression": "x**2 - 5*x + 6",
+        "operator": "<",
+        "ground_truth": "Interval.open(2, 3)",
+        "interval_solution": "Interval.open(2, 3)",
+        "parabola_solution": "Interval.open(2, 3)",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 4: D > 0, a > 0 with operator '<='",
+        "expression": "x**2 - 5*x + 6",
+        "operator": "<=",
+        "ground_truth": "Interval(2, 3)",
+        "interval_solution": "Interval(2, 3)",
+        "parabola_solution": "Interval(2, 3)",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 5: D > 0, a < 0 with operator '>'",
+        "expression": "-x**2 + 5*x - 6",
+        "operator": ">",
+        "ground_truth": "Interval.open(2, 3)",
+        "interval_solution": "Interval.open(2, 3)",
+        "parabola_solution": "Interval.open(2, 3)",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 6: D > 0, a < 0 with operator '>='",
+        "expression": "-x**2 + 5*x - 6",
+        "operator": ">=",
+        "ground_truth": "Interval(2, 3)",
+        "interval_solution": "Interval(2, 3)",
+        "parabola_solution": "Interval(2, 3)",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 7: D > 0, a < 0 with operator '<'",
+        "expression": "-x**2 + 5*x - 6",
+        "operator": "<",
+        "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(3, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 8: D > 0, a < 0 with operator '<='",
+        "expression": "-x**2 + 5*x - 6",
+        "operator": "<=",
+        "ground_truth": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "interval_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "parabola_solution": "Union(Interval(-oo, 2), Interval(3, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 9: D = 0, a > 0 with operator '>'",
+        "expression": "(x - 2)**2",
+        "operator": ">",
+        "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 10: D = 0, a > 0 with operator '>='",
+        "expression": "(x - 2)**2",
+        "operator": ">=",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 11: D = 0, a > 0 with operator '<'",
+        "expression": "(x - 2)**2",
+        "operator": "<",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 12: D = 0, a > 0 with operator '<='",
+        "expression": "(x - 2)**2",
+        "operator": "<=",
+        "ground_truth": "{2}",
+        "interval_solution": "{2}",
+        "parabola_solution": "{2}",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 13: D = 0, a < 0 with operator '>'",
+        "expression": "-(x - 2)**2",
+        "operator": ">",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 14: D = 0, a < 0 with operator '>='",
+        "expression": "-(x - 2)**2",
+        "operator": ">=",
+        "ground_truth": "{2}",
+        "interval_solution": "{2}",
+        "parabola_solution": "{2}",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 15: D = 0, a < 0 with operator '<'",
+        "expression": "-(x - 2)**2",
+        "operator": "<",
+        "ground_truth": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "interval_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "parabola_solution": "Union(Interval.open(-oo, 2), Interval.open(2, oo))",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 16: D = 0, a < 0 with operator '<='",
+        "expression": "-(x - 2)**2",
+        "operator": "<=",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 17: D < 0, a > 0 with operator '>'",
+        "expression": "x**2 + 1",
+        "operator": ">",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 18: D < 0, a > 0 with operator '>='",
+        "expression": "x**2 + 1",
+        "operator": ">=",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 19: D < 0, a > 0 with operator '<'",
+        "expression": "x**2 + 1",
+        "operator": "<",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 20: D < 0, a > 0 with operator '<='",
+        "expression": "x**2 + 1",
+        "operator": "<=",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 21: D < 0, a < 0 with operator '>'",
+        "expression": "-x**2 - 1",
+        "operator": ">",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 22: D < 0, a < 0 with operator '>='",
+        "expression": "-x**2 - 1",
+        "operator": ">=",
+        "ground_truth": "EmptySet",
+        "interval_solution": "EmptySet",
+        "parabola_solution": "EmptySet",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 23: D < 0, a < 0 with operator '<'",
+        "expression": "-x**2 - 1",
+        "operator": "<",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 24: D < 0, a < 0 with operator '<='",
+        "expression": "-x**2 - 1",
+        "operator": "<=",
+        "ground_truth": "Reals",
+        "interval_solution": "Interval(-oo, oo)",
+        "parabola_solution": "Reals",
+        "all_match": true
+      },
+      {
+        "case_name": "Case 25: Exact radical Q(sqrt(2)) x^2 - 2 > 0",
+        "expression": "x**2 - 2",
+        "operator": ">",
+        "ground_truth": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+        "interval_solution": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+        "parabola_solution": "Union(Interval.open(-oo, -sqrt(2)), Interval.open(sqrt(2), oo))",
+        "all_match": true
+      }
+    ],
+    "universal_verdict": "REFUTED_BY_COUNTEREXAMPLE",
+    "contracts": [
+      {
+        "claim_id": "GOLD-M02-ALG-PARABOLA-COUNTEREXAMPLE",
+        "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+        "scope": "Univariate quadratic inequalities ax^2 + bx + c {>, >=, <, <=} 0 with exact real algebraic numbers (integers, rationals, square roots) and a != 0",
+        "method": "Closed-form Parabola Geometric Method comparison against Interval Sampling Method",
+        "verification": {
+          "formal_proof_id": "CAS-M02-PARABOLA-01",
+          "details": "100% exact symbolic solution set identity across 24-case parametric benchmark matrix with FTA root completeness"
+        },
+        "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+        "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+        "limitations": "Proves Parabola method is an alternative; refutes that Interval Method is universally necessary for quadratics."
+      },
+      {
+        "claim_id": "GOLD-M02-INTERVAL-METHOD-DEPENDENCY",
+        "claim_type": "METHOD_OPERATIONAL_DEPENDENCY",
+        "scope": "Sign evaluation across real number axis intervals for continuous quadratic polynomials",
+        "method": "Interval decomposition, interior point test evaluation, and root completeness verification",
+        "verification": {
+          "formal_proof_id": "CAS-M02-INTERVAL-01",
+          "details": "Exact symbolic verification that interval method produces identical solution sets across 24-case parametric benchmark matrix."
+        },
+        "evidence_status": "METHOD_DEPENDENCY_DECLARED",
+        "prerequisite_status": "METHOD_DEPENDENCY_ONLY",
+        "limitations": "Valid for the interval method specifically; does not establish universal necessity for solving quadratic inequalities in general."
+      },
+      {
+        "claim_id": "GOLD-M02-TOPIC-PREREQUISITE",
+        "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+        "scope": "Secondary mathematics curriculum grade 8 (Number intervals) to grade 9 (Quadratic inequalities)",
+        "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+        "verification": {
+          "curriculum_source_standard": "AR-MATH-G9-1.2.4",
+          "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+          "details": "Algorithmic alternative (parabola geometric method) demonstrates multiple CAS solution paths, but general curriculum topic prerequisite remains unproven without empirical student trajectory data."
+        },
+        "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+        "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+        "limitations": "Curriculum sequence (Grade 8 intervals -> Grade 9 inequalities) does not equal strict pedagogical necessity; pending real student empirical data."
+      }
+    ]
+  },
+  "channel_2_curriculum_proof": {
+    "channel_name": "CURRICULUM_PROOF_CHANNEL",
+    "source_standard": "Riyaziyyat 8: Məzmun standartı 1.2.3: Bərabərsizliklər və ədəd oxunda aralıqlar",
+    "target_standard": "Riyaziyyat 9: Məzmun standartı 1.2.4: İkidərəcəli bərabərsizliklərin həlli",
+    "curriculum_verdict": "CURRICULUM_SUPPORTED",
+    "curriculum_relation_type": "CURRICULUM_SEQUENCE (NOT_STRICT_PREREQUISITE)"
+  },
+  "channel_3_empirical_proof": {
+    "channel_name": "EMPIRICAL_PROOF_CHANNEL",
+    "bkt_item_response_status": "INSUFFICIENT_REAL_STUDENT_DATA_SHADOW_ONLY",
+    "empirical_verdict": "DATA_COLLECTION_PENDING"
+  },
+  "prototype_decision": {
+    "rule_id": "GOLD-M02",
+    "source_concept": "İntervallar metodu (math_usul_intervallar)",
+    "target_concept": "Kvadrat bərabərsizlik (math_anlayis_kvadrat_berabersizlik)",
+    "tripartite_synthesis": {
+      "channel_1_formal": "REFUTED_BY_COUNTEREXAMPLE",
+      "channel_2_curriculum": "CURRICULUM_SUPPORTED",
+      "channel_3_empirical": "DATA_COLLECTION_PENDING"
+    },
+    "silver_graph_placement_decision": "REGISTERED_AS_SCOPED_ONLY",
+    "active_production_remediation": "BLOCKED_FOR_GENERAL_QUADRATIC_INEQUALITIES"
+  }
+}

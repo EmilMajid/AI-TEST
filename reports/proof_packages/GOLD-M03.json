@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-M03",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_eynilik_triqonometrik",
+  "target_node": "math_tenlik_triqonometrik",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G9-2.2.1",
+    "target_standard": "AR-MATH-G10-2.2.3",
+    "source_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 5: Triqonometriya, Səh. 140-158",
+    "target_textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 3: Triqonometrik tənliklər, Səh. 80-102",
+    "explicit_textbook_dependency": true,
+    "source_grade": 9,
+    "target_grade": 10
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+  "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+  "package_sha256": "aa9ef4e5a62f6f1006de884a4f47c4579f25fb84810ff55b45c8c02c90eb07d9"
+}

@@ -1,0 +1,76 @@
+{
+  "registry_version": "1.1-FROZEN",
+  "charter": "KAG Formal Proof & Evidence Artifact Registry",
+  "registered_artifacts": {
+    "CAS-M01-DISC-01": {
+      "artifact_type": "FORMAL_ALGEBRAIC_PROOF",
+      "claim_id": "GOLD-M01-ALG-COUNTEREXAMPLE",
+      "source_file": "scripts/prototype_proof_engine_gold_m01.py",
+      "source_sha256": "0418a842af3793073e29782ba46b29d9e13ce0fc4fc69ba46b9c4c0ac5997086",
+      "method": "Closed-form Quadratic Formula Root Substitution",
+      "verified_domain": "Univariate quadratic equations in R with D >= 0",
+      "status": "VERIFIED_ACTIVE"
+    },
+    "CAS-M01-FACT-01": {
+      "artifact_type": "METHOD_DEPENDENCY_PROOF",
+      "claim_id": "GOLD-M01-FACTORING-METHOD",
+      "source_file": "scripts/prototype_proof_engine_gold_m01.py",
+      "source_sha256": "0418a842af3793073e29782ba46b29d9e13ce0fc4fc69ba46b9c4c0ac5997086",
+      "method": "Linear Factor Decomposition over Q[x]",
+      "verified_domain": "Factorable quadratics in Q[x]",
+      "status": "VERIFIED_ACTIVE"
+    },
+    "CAS-M02-PARABOLA-01": {
+      "artifact_type": "FORMAL_ALGEBRAIC_PROOF",
+      "claim_id": "GOLD-M02-ALG-PARABOLA-COUNTEREXAMPLE",
+      "source_file": "scripts/prototype_proof_engine_gold_m02.py",
+      "source_sha256": "4ba9ffb4b1a66ccb78fb85dd30eea0be1c9e1cd8381da2baf2a14a436b4aa9d4",
+      "method": "Parabola Geometric Method Closed-Form Identity",
+      "verified_domain": "Quadratics with exact coefficients in Q(sqrt(d))",
+      "status": "VERIFIED_ACTIVE"
+    },
+    "CAS-M02-INTERVAL-01": {
+      "artifact_type": "METHOD_DEPENDENCY_PROOF",
+      "claim_id": "GOLD-M02-INTERVAL-METHOD-DEPENDENCY",
+      "source_file": "scripts/prototype_proof_engine_gold_m02.py",
+      "source_sha256": "4ba9ffb4b1a66ccb78fb85dd30eea0be1c9e1cd8381da2baf2a14a436b4aa9d4",
+      "method": "Interval Partitioning Sign Sampling Algorithm",
+      "verified_domain": "Univariate continuous quadratic polynomials in R",
+      "status": "VERIFIED_ACTIVE"
+    },
+    "CAS-P02-WORK-ENERGY-01": {
+      "artifact_type": "PHYSICAL_THEOREM_PROOF",
+      "claim_id": "GOLD-P02-THEOREM-IDENTITY",
+      "source_file": "scripts/prototype_proof_engine_gold_p02.py",
+      "source_sha256": "768c7dab112e112569cf4bdb7221dd9f4dea83ea675469f234201cd58ced83db",
+      "method": "1D Kinematics and Newton II Law Algebraic Derivation",
+      "verified_domain": "1D particle with constant mass m > 0 and a != 0",
+      "status": "VERIFIED_ACTIVE"
+    },
+    "CAS-P02-STATE-01": {
+      "artifact_type": "FORMAL_ALGEBRAIC_PROOF",
+      "claim_id": "GOLD-P02-STATE-CALC-COUNTEREXAMPLE",
+      "source_file": "scripts/prototype_proof_engine_gold_p02.py",
+      "source_sha256": "768c7dab112e112569cf4bdb7221dd9f4dea83ea675469f234201cd58ced83db",
+      "method": "Direct Instantaneous State Evaluation E_k = (1/2)*m*v^2",
+      "verified_domain": "Classical particle state evaluation",
+      "status": "VERIFIED_ACTIVE"
+    }
+  },
+  "curriculum_standards_registry": {
+    "AR-MATH-G7-1.2.4": "Riyaziyyat 7: Məzmun Standartı 1.2.4: Xətti tənliklər",
+    "AR-MATH-G8-1.2.5": "Riyaziyyat 8: Məzmun Standartı 1.2.5: Kvadrat tənliklər",
+    "AR-MATH-G8-1.2.3": "Riyaziyyat 8: Məzmun standartı 1.2.3: Bərabərsizliklər və ədəd oxunda aralıqlar",
+    "AR-MATH-G9-1.2.4": "Riyaziyyat 9: Məzmun standartı 1.2.4: İkidərəcəli bərabərsizliklərin həlli",
+    "AR-PHYS-G7-2.1.1": "Fizika 7: Məzmun standartı 2.1.1: Mexaniki iş",
+    "AR-PHYS-G7-2.1.2": "Fizika 7: Məzmun standartı 2.1.2: Kinetik enerji"
+  },
+  "empirical_evaluations_registry": {
+    "EMP-BKT-SHADOW-2026": {
+      "evaluation_type": "SHADOW_SIMULATION",
+      "status": "SHADOW_ONLY_NO_REAL_STUDENT_DATA",
+      "student_cohort_size": 0,
+      "certifiable_for_strict_necessity": false
+    }
+  }
+}

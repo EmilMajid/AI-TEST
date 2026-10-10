@@ -1,0 +1,12 @@
+{
+  "audit_name": "Rational Fractions 243 Items Reproducibility Audit",
+  "passed": true,
+  "total_items": 243,
+  "unique_ids": 243,
+  "distribution": {
+    "OUT_OF_SCOPE": 87,
+    "IN_SCOPE": 141,
+    "NEEDS_REVIEW": 15
+  },
+  "sha256": "7f582c62623864899ad70c509e7fbfdd30359d2b089fc5c1baf0d7629429367d"
+}

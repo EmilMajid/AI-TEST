@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-G02",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Coğrafiya",
+  "source_node": "geo_atmosfer_tezyiqi",
+  "target_node": "geo_kulleklerin_yaranmasi",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-GEO-G6-2.1.1",
+    "target_standard": "AR-GEO-G6-2.1.2",
+    "source_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 55-68",
+    "target_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 70-82",
+    "explicit_textbook_dependency": true,
+    "source_grade": 6,
+    "target_grade": 6
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "3a90dd0c95a230db68833059aa11ebbc4917b8ac48f932735a5074d3937e0ec7"
+}

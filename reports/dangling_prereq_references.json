@@ -1,0 +1,465 @@
+{
+  "total_dangling_references": 46,
+  "dangling_references": [
+    {
+      "target_node_id": "auto_təb_hadisələr_1257",
+      "target_label": "Hadisələr",
+      "target_subject": "Təbiət",
+      "target_grade": 5,
+      "missing_prereq_id": "auto_təb_hadisə_1257",
+      "prereq_label_claimed": "Hadisə",
+      "prereq_grade_claimed": 5,
+      "prereq_book_claimed": "Tebiet 5 (hissə 1)"
+    },
+    {
+      "target_node_id": "auto_təb_şikar_1310",
+      "target_label": "Şikar",
+      "target_subject": "Təbiət",
+      "target_grade": 5,
+      "missing_prereq_id": "auto_təb_şeh_1251",
+      "prereq_label_claimed": "Şeh",
+      "prereq_grade_claimed": 5,
+      "prereq_book_claimed": "Tebiet 5 (hissə 1)"
+    },
+    {
+      "target_node_id": "auto_i̇n_dəslayd_4057",
+      "target_label": "Dəslayd",
+      "target_subject": "İnformatika",
+      "target_grade": 6,
+      "missing_prereq_id": "auto_i̇n_dövr_4070",
+      "prereq_label_claimed": "Dövr",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Informatika 6"
+    },
+    {
+      "target_node_id": "auto_fiz_larda_5465",
+      "target_label": "Larda",
+      "target_subject": "Fizika",
+      "target_grade": 7,
+      "missing_prereq_id": "auto_fiz_hərəkət_5410",
+      "prereq_label_claimed": "Hərəkət",
+      "prereq_grade_claimed": 7,
+      "prereq_book_claimed": "Fizika 7 (hissə 1)"
+    },
+    {
+      "target_node_id": "auto_coğ_resurslar_5682",
+      "target_label": "Resurslar",
+      "target_subject": "Coğrafiya",
+      "target_grade": 7,
+      "missing_prereq_id": "auto_coğ_lar_5819",
+      "prereq_label_claimed": "Lar",
+      "prereq_grade_claimed": 7,
+      "prereq_book_claimed": "Cografiya 7 (hissə 2)"
+    },
+    {
+      "target_node_id": "auto_coğ_küləyi_5753",
+      "target_label": "Küləyi",
+      "target_subject": "Coğrafiya",
+      "target_grade": 7,
+      "missing_prereq_id": "auto_coğ_hava_5760",
+      "prereq_label_claimed": "Hava",
+      "prereq_grade_claimed": 7,
+      "prereq_book_claimed": "Cografiya 7 (hissə 2)"
+    },
+    {
+      "target_node_id": "auto_i̇n_multimedia_7672",
+      "target_label": "Multimedia",
+      "target_subject": "İnformatika",
+      "target_grade": 8,
+      "missing_prereq_id": "auto_i̇n_kök_7718",
+      "prereq_label_claimed": "Kök",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Informatika 8"
+    },
+    {
+      "target_node_id": "auto_i̇n_xana_7747",
+      "target_label": "Xana",
+      "target_subject": "İnformatika",
+      "target_grade": 8,
+      "missing_prereq_id": "auto_i̇n_rma_7657",
+      "prereq_label_claimed": "Rma",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Informatika 8"
+    },
+    {
+      "target_node_id": "auto_fiz_vvəsi_8689",
+      "target_label": "Vvəsi",
+      "target_subject": "Fizika",
+      "target_grade": 8,
+      "missing_prereq_id": "auto_fiz_vvə_8684",
+      "prereq_label_claimed": "Vvə",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Fizika 8 (hissə 1)"
+    },
+    {
+      "target_node_id": "auto_fiz_əks-səda_8893",
+      "target_label": "Əks-səda",
+      "target_subject": "Fizika",
+      "target_grade": 8,
+      "missing_prereq_id": "auto_fiz_şmə_8722",
+      "prereq_label_claimed": "Şmə",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Fizika 8 (hissə 1)"
+    },
+    {
+      "target_node_id": "auto_riy_parketləmə_12032",
+      "target_label": "Parketləmə",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 9,
+      "missing_prereq_id": "auto_riy_oxu_11859",
+      "prereq_label_claimed": "Oxu",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Riyaziyyat 9"
+    },
+    {
+      "target_node_id": "auto_i̇n_ədədi_12241",
+      "target_label": "Ədədi",
+      "target_subject": "İnformatika",
+      "target_grade": 9,
+      "missing_prereq_id": "auto_i̇n_yol_12249",
+      "prereq_label_claimed": "Yol",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Informatika 9"
+    },
+    {
+      "target_node_id": "auto_coğ_kriklər_12812",
+      "target_label": "Kriklər",
+      "target_subject": "Coğrafiya",
+      "target_grade": 9,
+      "missing_prereq_id": "auto_coğ_göl_12803",
+      "prereq_label_claimed": "Göl",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Cografiya 9"
+    },
+    {
+      "target_node_id": "auto_kim_spirti_14432",
+      "target_label": "Spirti",
+      "target_subject": "Kimya",
+      "target_grade": 9,
+      "missing_prereq_id": "auto_kim_sinif_14543",
+      "prereq_label_claimed": "Sinif",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Kimya 9"
+    },
+    {
+      "target_node_id": "auto_bio_mafriks_16095",
+      "target_label": "Mafriks",
+      "target_subject": "Biologiya",
+      "target_grade": 9,
+      "missing_prereq_id": "auto_bio_lər_16042",
+      "prereq_label_claimed": "Lər",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Biologiya 9"
+    },
+    {
+      "target_node_id": "can_mus_boyuk_xor_kollektivi_1407",
+      "target_label": "Böyük xor kollektivi",
+      "target_subject": "Musiqi",
+      "target_grade": 5,
+      "missing_prereq_id": "can_mus_bas_1407",
+      "prereq_label_claimed": "Bas",
+      "prereq_grade_claimed": 5,
+      "prereq_book_claimed": "Musiqi 5"
+    },
+    {
+      "target_node_id": "can_riy_ebob_na_2678",
+      "target_label": "ƏBOB-na",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_riy_e_2763",
+      "prereq_label_claimed": "–-ə",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Riyaziyyat 6 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_riy_yenisbetine_2704",
+      "target_label": "Yənisbətinə",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_riy_ye_2905",
+      "prereq_label_claimed": "-yə",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Riyaziyyat 6 (hissə 2)"
+    },
+    {
+      "target_node_id": "can_riy_acoxlugunun_alt_coxlugu_2910",
+      "target_label": "Açoxluğunun alt çoxluğu",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_riy_a_2763",
+      "prereq_label_claimed": "–-a",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Riyaziyyat 6 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_teb_bal_arilarinin_yirticilari_3097",
+      "target_label": "Bal arılarının yırtıcıları",
+      "target_subject": "Təbiət",
+      "target_grade": 6,
+      "missing_prereq_id": "can_teb_aya_3133",
+      "prereq_label_claimed": "Aya",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Tebiet 6 (hissə 2)"
+    },
+    {
+      "target_node_id": "can_teb_yanacaqlar_fosil_yanacaqlar_3109",
+      "target_label": "Yanacaqlar fosil yanacaqlar",
+      "target_subject": "Təbiət",
+      "target_grade": 6,
+      "missing_prereq_id": "can_teb_ya_2947",
+      "prereq_label_claimed": "-ya",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Tebiet 6 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_fiz_ferqine_5387",
+      "target_label": "Fərqinə",
+      "target_subject": "Fizika",
+      "target_grade": 7,
+      "missing_prereq_id": "can_fiz_e_5450",
+      "prereq_label_claimed": "+-ə",
+      "prereq_grade_claimed": 7,
+      "prereq_book_claimed": "Fizika 7 (hissə 2)"
+    },
+    {
+      "target_node_id": "can_fiz_traktorun_gordu_yu_isler_8795",
+      "target_label": "Traktorun gördüyü işlər",
+      "target_subject": "Fizika",
+      "target_grade": 8,
+      "missing_prereq_id": "can_fiz_s_e_8792",
+      "prereq_label_claimed": "S-ə",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Fizika 8 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_fiz_nyutona_8863",
+      "target_label": "Nyutona",
+      "target_subject": "Fizika",
+      "target_grade": 8,
+      "missing_prereq_id": "can_fiz_n_a_8736",
+      "prereq_label_claimed": "N-a",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Fizika 8 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_riy_12_ye_11334",
+      "target_label": "12-yə",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 8,
+      "missing_prereq_id": "can_riy_0_a_11332",
+      "prereq_label_claimed": "0-a",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Riyaziyyat 8"
+    },
+    {
+      "target_node_id": "can_riy_2_ye_11364",
+      "target_label": "2-yə",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 8,
+      "missing_prereq_id": "can_riy_1_e_11362",
+      "prereq_label_claimed": "1-ə",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Riyaziyyat 8"
+    },
+    {
+      "target_node_id": "can_riy_bucaq_emsallari_11498",
+      "target_label": "Bucaq əmsalları",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 8,
+      "missing_prereq_id": "can_riy_3_e_11446",
+      "prereq_label_claimed": "3-ə",
+      "prereq_grade_claimed": 8,
+      "prereq_book_claimed": "Riyaziyyat 8"
+    },
+    {
+      "target_node_id": "can_riy_6_ya_12004",
+      "target_label": "6-ya",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 9,
+      "missing_prereq_id": "can_riy_4_e_12004",
+      "prereq_label_claimed": "4-ə",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Riyaziyyat 9"
+    },
+    {
+      "target_node_id": "can_riy_c_ye_12123",
+      "target_label": "C-yə",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 9,
+      "missing_prereq_id": "can_riy_8_e_11976",
+      "prereq_label_claimed": "8-ə",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Riyaziyyat 9"
+    },
+    {
+      "target_node_id": "can_i̇n_ebob_a_12234",
+      "target_label": "ƏBOB-a",
+      "target_subject": "İnformatika",
+      "target_grade": 9,
+      "missing_prereq_id": "can_i̇n_5_e_12193",
+      "prereq_label_claimed": "5-ə",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Informatika 9"
+    },
+    {
+      "target_node_id": "can_teb_bendlerinde_15905",
+      "target_label": "Bəndlərində",
+      "target_subject": "Təbiət",
+      "target_grade": 9,
+      "missing_prereq_id": "can_teb_bele_16028",
+      "prereq_label_claimed": "Belə",
+      "prereq_grade_claimed": 9,
+      "prereq_book_claimed": "Hayat Bilgisi 9"
+    },
+    {
+      "target_node_id": "can_riy_komplanar_noqteler_22006",
+      "target_label": "Komplanar nöqtələr",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 10,
+      "missing_prereq_id": "can_riy_i_e_22066",
+      "prereq_label_claimed": "I-ə",
+      "prereq_grade_claimed": 10,
+      "prereq_book_claimed": "Riyaziyyat 10"
+    },
+    {
+      "target_node_id": "can_fiz_quvveler_kenar_quvveler_24745",
+      "target_label": "Qüvvələr kənar qüvvələr",
+      "target_subject": "Fizika",
+      "target_grade": 11,
+      "missing_prereq_id": "can_fiz_ise_24732",
+      "prereq_label_claimed": "Işə",
+      "prereq_grade_claimed": 11,
+      "prereq_book_claimed": "Fizika 11"
+    },
+    {
+      "target_node_id": "can_riy_sabiti_31571",
+      "target_label": "Sabiti",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 11,
+      "missing_prereq_id": "can_riy_r_e_31467",
+      "prereq_label_claimed": "R-ə",
+      "prereq_grade_claimed": 11,
+      "prereq_book_claimed": "Riyaziyyat 11"
+    },
+    {
+      "target_node_id": "can_aze_reqemler_ereb_reqemleri_33102",
+      "target_label": "Rəqəmlər ərəb rəqəmləri",
+      "target_subject": "Azərbaycan dili",
+      "target_grade": 3,
+      "missing_prereq_id": "can_aze_ona_32992",
+      "prereq_label_claimed": "Ona",
+      "prereq_grade_claimed": 3,
+      "prereq_book_claimed": "Azerbaycan Dili 3 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_aze_sozler_komekci_sozler_33111",
+      "target_label": "Sözlər köməkçi sözlər",
+      "target_subject": "Azərbaycan dili",
+      "target_grade": 3,
+      "missing_prereq_id": "can_aze_soz_33002",
+      "prereq_label_claimed": "Söz",
+      "prereq_grade_claimed": 3,
+      "prereq_book_claimed": "Azerbaycan Dili 3 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_mus_onlar_hem_seir_1388",
+      "target_label": "Onlar həm şeir",
+      "target_subject": "Musiqi",
+      "target_grade": 5,
+      "missing_prereq_id": "can_mus_nece_1387",
+      "prereq_label_claimed": "Necə",
+      "prereq_grade_claimed": 5,
+      "prereq_book_claimed": "Musiqi 5"
+    },
+    {
+      "target_node_id": "can_aze_neticedekurqanlar_2521",
+      "target_label": "Nəticədəkurqanlar",
+      "target_subject": "Azərbaycan dili",
+      "target_grade": 6,
+      "missing_prereq_id": "can_aze_ile_2629",
+      "prereq_label_claimed": "Ilə",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Azerbaycan Dili 6 (hissə 2)"
+    },
+    {
+      "target_node_id": "can_riy_tam_ededler_2788",
+      "target_label": "Tam ədədlər",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_riy_tam_2678",
+      "prereq_label_claimed": "Tam",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Riyaziyyat 6 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_riy_milli_aeronavtika_ve_kosmik_i_daresi_2863",
+      "target_label": "Milli Aeronavtika və Kosmik İdarəsi",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_riy_m_e_2708",
+      "prereq_label_claimed": "M-ə",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Riyaziyyat 6 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_ede_ehli_dinc_insanlardan_3149",
+      "target_label": "Əhli dinc insanlardan",
+      "target_subject": "Ədəbiyyat",
+      "target_grade": 6,
+      "missing_prereq_id": "can_ede_dil_3316",
+      "prereq_label_claimed": "Dil",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Edebiyyat 6"
+    },
+    {
+      "target_node_id": "can_riy_yan_uzleri_duzbucaqlilardan_22131",
+      "target_label": "Yan üzləri düzbucaqlılardan",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 10,
+      "missing_prereq_id": "can_riy_x_e_22184",
+      "prereq_label_claimed": "X-ə",
+      "prereq_grade_claimed": 10,
+      "prereq_book_claimed": "Riyaziyyat 10"
+    },
+    {
+      "target_node_id": "can_mus_muxtelif_hereket_elementlerinden_32328",
+      "target_label": "Müxtəlif hərəkət elementlərindən",
+      "target_subject": "Musiqi",
+      "target_grade": 2,
+      "missing_prereq_id": "can_mus_ifa_32365",
+      "prereq_label_claimed": "Ifa",
+      "prereq_grade_claimed": 2,
+      "prereq_book_claimed": "Musiqi 2"
+    },
+    {
+      "target_node_id": "can_tex_diger_texnika_34182",
+      "target_label": "Digər texnika",
+      "target_subject": "Texnologiya",
+      "target_grade": 4,
+      "missing_prereq_id": "can_tex_den_34243",
+      "prereq_label_claimed": "Dən",
+      "prereq_grade_claimed": 4,
+      "prereq_book_claimed": "Texnologiya 4"
+    },
+    {
+      "target_node_id": "can_riy_suanin_baslangic_noqtesi_34417",
+      "target_label": "Şüanın başlanğıc nöqtəsi",
+      "target_subject": "Riyaziyyat",
+      "target_grade": 4,
+      "missing_prereq_id": "can_riy_sua_34391",
+      "prereq_label_claimed": "Şüa",
+      "prereq_grade_claimed": 4,
+      "prereq_book_claimed": "Riyaziyyat 4 (hissə 1)"
+    },
+    {
+      "target_node_id": "can_aze_yarimbasliqlara_2650",
+      "target_label": "Yarımbaşlıqlara",
+      "target_subject": "Azərbaycan dili",
+      "target_grade": 6,
+      "missing_prereq_id": "can_aze_ucun_2578",
+      "prereq_label_claimed": "Üçün",
+      "prereq_grade_claimed": 6,
+      "prereq_book_claimed": "Azerbaycan Dili 6 (hissə 2)"
+    }
+  ]
+}

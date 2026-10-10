@@ -1,0 +1,56 @@
+{
+  "corpus_version": "1.0",
+  "subject": "Tarix",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı",
+  "topics": {
+    "his_ilk_meskenler": {
+      "standard_code": "AR-HIS-G6-1.1.1",
+      "grade": 6,
+      "topic_name": "Azərbaycan ərazisində ilk insan məskənləri və qəbilə icması",
+      "textbook_ref": "Azərbaycan tarixi 6-cı sinif, Fəsil 1: Qədim dövr, Səh. 12-28",
+      "learning_outcomes": [
+        "1.1.1. Paleolit, Mezolit və Neolit dövrlərinin məskənlərini və əmək alətlərini xarakterizə edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "his_tarixi_zaman_anlayisi"
+      ]
+    },
+    "his_qedim_dovletler": {
+      "standard_code": "AR-HIS-G6-1.2.1",
+      "grade": 6,
+      "topic_name": "Azərbaycanın ilk dövlət qurumları və qədim dövlətləri (Manna, Atropatena, Albaniya)",
+      "textbook_ref": "Azərbaycan tarixi 6-cı sinif, Fəsil 2: İlk dövlətlər, Səh. 45-70",
+      "learning_outcomes": [
+        "1.2.1. İbtidai icma quruluşunun dağılmasını və ilk dövlətlərin yaranma şəraitini təhlil edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "his_ilk_meskenler"
+      ]
+    },
+    "his_feodal_munasibetleri": {
+      "standard_code": "AR-HIS-G7-2.1.1",
+      "grade": 7,
+      "topic_name": "Azərbaycanda feodal münasibətlərinin bərqərar olması və torpaq mülkiyyəti",
+      "textbook_ref": "Azərbaycan tarixi 7-ci sinif, Fəsil 1: Erkən orta əsrlər, Səh. 15-35",
+      "learning_outcomes": [
+        "2.1.1. Orta əsrlərdə torpaq mülkiyyəti formalarını və ictimai münasibətləri izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "his_qedim_dovletler"
+      ]
+    },
+    "his_sefevi_idareciliyi": {
+      "standard_code": "AR-HIS-G8-2.2.1",
+      "grade": 8,
+      "topic_name": "Səfəvilər dövlətinin yaranması və mərkəzləşdirilmiş dövlət idarəçiliyi",
+      "textbook_ref": "Azərbaycan tarixi 8-ci sinif, Fəsil 2: Vahid Azərbaycan dövləti, Səh. 50-80",
+      "learning_outcomes": [
+        "2.2.1. Şah İsmayıl Xətainin dövlətçilik siyasətini və mərkəzi idarəçilik strukturunu təhlil edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "his_feodal_munasibetleri"
+      ]
+    }
+  }
+}

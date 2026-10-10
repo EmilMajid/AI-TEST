@@ -1,0 +1,146 @@
+{
+  "total_formal_tests": 20,
+  "status": "20_OF_20_PASSING",
+  "matrix": [
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_01_zero_active_gold_added",
+      "invariant_checked": "Test: No active gold rules have been added, count remains exactly 21.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_02_all_candidates_production_inactive",
+      "invariant_checked": "Test: 100% of candidate edges have production_status == 'INACTIVE'.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_03_falsification_survived_never_promotes_automatically",
+      "invariant_checked": "Test: FALSIFICATION_SURVIVED candidates must require human validation and remain INACTIVE.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_04_mathematical_constraints_rejected",
+      "invariant_checked": "Test: Constraint claims (e.g. D < 0, denominator != 0) are rejected per Article 6.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_05_diagnostic_misconceptions_separated",
+      "invariant_checked": "Test: Diagnostic misconceptions are classified as STUDENT_DIAGNOSTIC_GRAPH and rejected from KG.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_06_alternative_path_causes_rejection",
+      "invariant_checked": "Test: Discovering an alternative path forces REJECTED verdict.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_07_supported_operations_distinguished_from_prerequisites",
+      "invariant_checked": "Test: Procedural tools (e.g. -1 multiplication, common denom) are marked SUPPORTED_OPERATION.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Protocol Conformance (docs/KAG_FALSIFICATION_AND_PROOF_PROTOCOL.md)",
+      "test_name": "test_08_scoped_candidates_have_explicit_boundary",
+      "invariant_checked": "Test: Any SCOPED candidate strictly documents its operational boundary.",
+      "expected_behavior": "Strict compliance with protocol gates; non-conforming states blocked.",
+      "type": "POSITIVE_AND_BOUNDARY_CONFORMANCE"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_01_unknown_claim_type_rejected",
+      "invariant_checked": "Mutation Attack: Candidate with unknown claim_type 'HEURISTIC_RULE' attempts to activate.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_02_supported_operation_cannot_activate",
+      "invariant_checked": "Mutation Attack: SUPPORTED_OPERATION attempts to set production_status = 'ACTIVE'.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_03_unscoped_candidate_cannot_activate",
+      "invariant_checked": "Mutation Attack: Candidate marked UNSCOPED attempts to activate.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_04_whitespace_only_boundary_fails",
+      "invariant_checked": "Mutation Attack: Scoped candidate has boundary consisting solely of spaces.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_05_missing_grade_fails",
+      "invariant_checked": "Mutation Attack: Candidate with None as source_grade attempts to survive/activate.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_06_string_typed_grade_fails",
+      "invariant_checked": "Mutation Attack: Candidate has string '8' instead of integer 8.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_07_out_of_range_grade_fails",
+      "invariant_checked": "Mutation Attack: Candidate with target_grade 14 (out of 1..11 school range).",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_08_mathematical_constraint_cannot_activate_even_if_rejected",
+      "invariant_checked": "Mutation Attack: Constraint marked REJECTED still attempts to set production_status = 'ACTIVE'.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_09_unblock_token_required_for_active",
+      "invariant_checked": "Mutation Attack: Candidate is perfect in every field, but unblock_token is omitted.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_10_manifest_tampering_detected",
+      "invariant_checked": "Mutation Attack: Verifying manifest detection by pointing to a mock tampered manifest.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_11_manifest_missing_rule_id_fails",
+      "invariant_checked": "Mutation Attack: Manifest rule is missing mandatory 'rule_id' field.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    },
+    {
+      "suite": "Mutation & Negative Adversarial Attacks",
+      "test_name": "test_mutation_12_manifest_duplicate_rule_id_fails",
+      "invariant_checked": "Mutation Attack: Manifest contains duplicate rule_ids.",
+      "expected_behavior": "StrictInvariantViolation or RuntimeError raised; candidate rejected or activation blocked.",
+      "type": "ADVERSARIAL_MUTATION_ATTACK"
+    }
+  ]
+}

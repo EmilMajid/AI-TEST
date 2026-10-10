@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-G01",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Coğrafiya",
+  "source_node": "geo_yer_daxili_qurulusu",
+  "target_node": "geo_litosfer_tavalari",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-GEO-G6-1.1.1",
+    "target_standard": "AR-GEO-G7-1.2.1",
+    "source_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 2: Litosfer, Səh. 25-38",
+    "target_textbook_ref": "Coğrafiya 7-ci sinif, Fəsil 1: Relyef və geoloji quruluş, Səh. 14-30",
+    "explicit_textbook_dependency": true,
+    "source_grade": 6,
+    "target_grade": 7
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "98248a5c4909f5edd2d5c0d95b3a6778c79d5bf6c130200bbe8541fd2bb8e150"
+}

@@ -1,0 +1,170 @@
+{
+  "target_rule": "GOLD-M01",
+  "acceptance_contract": {
+    "claim_id": "GOLD-M01-TOPIC-PREREQUISITE",
+    "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+    "scope": "Secondary mathematics curriculum grade 7 (Linear Equations) to grade 8 (Quadratic Equations)",
+    "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+    "verification": {
+      "curriculum_source_standard": "AR-MATH-G8-1.2.5",
+      "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+      "details": "Algorithmic alternative (quadratic formula) demonstrates multiple CAS solution paths, but pedagogical scaffolding across general student cohort remains unproven without empirical student trajectory data."
+    },
+    "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+    "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+    "limitations": "Topic-level necessity across general quadratics remains unproven; curriculum sequence does not equal strict necessity."
+  },
+  "acceptance_contracts_all": [
+    {
+      "claim_id": "GOLD-M01-ALG-COUNTEREXAMPLE",
+      "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+      "scope": "Univariate quadratic equations ax^2 + bx + c = 0 with real numeric a != 0 and D >= 0",
+      "method": "Closed-form Quadratic Formula pathway comparison vs linear solver requirement",
+      "verification": {
+        "formal_proof_id": "CAS-M01-DISC-01",
+        "details": "Exact symbolic CAS root substitution P(r) == 0 without invoking linear equation solving"
+      },
+      "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+      "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+      "limitations": "Refutes the universal claim that every quadratic solution algorithm must invoke a linear solver."
+    },
+    {
+      "claim_id": "GOLD-M01-FACTORING-METHOD",
+      "claim_type": "METHOD_OPERATIONAL_DEPENDENCY",
+      "scope": "Factoring and Zero Product Property method on factorable quadratics in Q[x]",
+      "method": "Linear factor extraction and zero-product linear equation solving",
+      "verification": {
+        "formal_proof_id": "CAS-M01-FACT-01",
+        "details": "Linear factor decomposition over Q[x], zero-product solving, root substitution, and FTA polynomial reconstruction a*(x-r1)*(x-r2) == P(x)"
+      },
+      "evidence_status": "METHOD_DEPENDENCY_DECLARED",
+      "prerequisite_status": "METHOD_DEPENDENCY_ONLY",
+      "limitations": "Applies strictly to factoring method; inapplicable to non-factorable quadratics."
+    },
+    {
+      "claim_id": "GOLD-M01-TOPIC-PREREQUISITE",
+      "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+      "scope": "Secondary mathematics curriculum grade 7 (Linear Equations) to grade 8 (Quadratic Equations)",
+      "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+      "verification": {
+        "curriculum_source_standard": "AR-MATH-G8-1.2.5",
+        "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+        "details": "Algorithmic alternative (quadratic formula) demonstrates multiple CAS solution paths, but pedagogical scaffolding across general student cohort remains unproven without empirical student trajectory data."
+      },
+      "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+      "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+      "limitations": "Topic-level necessity across general quadratics remains unproven; curriculum sequence does not equal strict necessity."
+    }
+  ],
+  "channel_1_formal_proof": {
+    "channel_name": "FORMAL_PROOF_CHANNEL",
+    "target_claim_universal": "STRICT_NECESSITY(Xətti_tənlik -> Kvadrat_tənlik)",
+    "exemplar_tested": "x^2 - 5*x + 6 = 0",
+    "pathways_executed": [
+      {
+        "method_name": "QUADRATIC_FORMULA_DISCRIMINANT",
+        "discriminant": "1",
+        "discriminant_category": "POSITIVE_D",
+        "real_roots_exist": true,
+        "roots_found": [
+          "2",
+          "3"
+        ],
+        "algebraic_verification_passed": true,
+        "algebraic_status": "ALGEBRAIC_VERIFICATION_PASSED",
+        "invokes_linear_equation_solver": false,
+        "counterexample_adjudication": "CONFIRMED_ALGORITHMIC_COUNTEREXAMPLE",
+        "counterexample_status": "COUNTEREXAMPLE_VERIFIED",
+        "status": "ALGEBRAIC_VERIFICATION_PASSED"
+      },
+      {
+        "method_name": "FACTORING_AND_ZERO_PRODUCT",
+        "factored_expression": "(x - 3)*(x - 2)",
+        "linear_factors_extracted": [
+          "x - 3",
+          "x - 2"
+        ],
+        "linear_equations_solved": [
+          "x - 3 = 0",
+          "x - 2 = 0"
+        ],
+        "roots_found": [
+          "3",
+          "2"
+        ],
+        "roots_verified": true,
+        "roots_complete": true,
+        "algebraic_completeness_proof": "FTA_POLYNOMIAL_RECONSTRUCTION_IDENTITY: a*(x-r1)*(x-r2) == P(x)",
+        "invokes_linear_equation_solver": true,
+        "status": "METHOD_DEPENDENCY_DECLARED"
+      }
+    ],
+    "universal_verdict": "REFUTED_BY_COUNTEREXAMPLE",
+    "contracts": [
+      {
+        "claim_id": "GOLD-M01-ALG-COUNTEREXAMPLE",
+        "claim_type": "ALGORITHMIC_UNIVERSAL_NECESSITY",
+        "scope": "Univariate quadratic equations ax^2 + bx + c = 0 with real numeric a != 0 and D >= 0",
+        "method": "Closed-form Quadratic Formula pathway comparison vs linear solver requirement",
+        "verification": {
+          "formal_proof_id": "CAS-M01-DISC-01",
+          "details": "Exact symbolic CAS root substitution P(r) == 0 without invoking linear equation solving"
+        },
+        "evidence_status": "COUNTEREXAMPLE_VERIFIED",
+        "prerequisite_status": "REJECTED_ALTERNATIVE_PATHWAY_EXISTS",
+        "limitations": "Refutes the universal claim that every quadratic solution algorithm must invoke a linear solver."
+      },
+      {
+        "claim_id": "GOLD-M01-FACTORING-METHOD",
+        "claim_type": "METHOD_OPERATIONAL_DEPENDENCY",
+        "scope": "Factoring and Zero Product Property method on factorable quadratics in Q[x]",
+        "method": "Linear factor extraction and zero-product linear equation solving",
+        "verification": {
+          "formal_proof_id": "CAS-M01-FACT-01",
+          "details": "Linear factor decomposition over Q[x], zero-product solving, root substitution, and FTA polynomial reconstruction a*(x-r1)*(x-r2) == P(x)"
+        },
+        "evidence_status": "METHOD_DEPENDENCY_DECLARED",
+        "prerequisite_status": "METHOD_DEPENDENCY_ONLY",
+        "limitations": "Applies strictly to factoring method; inapplicable to non-factorable quadratics."
+      },
+      {
+        "claim_id": "GOLD-M01-TOPIC-PREREQUISITE",
+        "claim_type": "PEDAGOGICAL_CURRICULUM_PREREQUISITE",
+        "scope": "Secondary mathematics curriculum grade 7 (Linear Equations) to grade 8 (Quadratic Equations)",
+        "method": "Tripartite synthesis of formal proof, curriculum standards, and empirical data",
+        "verification": {
+          "curriculum_source_standard": "AR-MATH-G8-1.2.5",
+          "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
+          "details": "Algorithmic alternative (quadratic formula) demonstrates multiple CAS solution paths, but pedagogical scaffolding across general student cohort remains unproven without empirical student trajectory data."
+        },
+        "evidence_status": "INCONCLUSIVE_MODEL_INCOMPLETE",
+        "prerequisite_status": "TOPIC_LEVEL_PREREQUISITE_UNPROVEN",
+        "limitations": "Topic-level necessity across general quadratics remains unproven; curriculum sequence does not equal strict necessity."
+      }
+    ]
+  },
+  "channel_2_curriculum_proof": {
+    "channel_name": "CURRICULUM_PROOF_CHANNEL",
+    "source_standard": "Riyaziyyat 7: Məzmun Standartı 1.2.4: Xətti tənliklər",
+    "target_standard": "Riyaziyyat 8: Məzmun Standartı 1.2.5: Kvadrat tənliklər",
+    "curriculum_verdict": "CURRICULUM_SUPPORTED",
+    "curriculum_relation_type": "CURRICULUM_SEQUENCE (NOT_STRICT_PREREQUISITE)"
+  },
+  "channel_3_empirical_proof": {
+    "channel_name": "EMPIRICAL_PROOF_CHANNEL",
+    "bkt_item_response_status": "INSUFFICIENT_REAL_STUDENT_DATA_SHADOW_ONLY",
+    "empirical_verdict": "DATA_COLLECTION_PENDING"
+  },
+  "prototype_decision": {
+    "rule_id": "GOLD-M01",
+    "source_concept": "Xətti tənlik (math_anlayis_ikideyisenli_xetti_tenlik)",
+    "target_concept": "Kvadrat tənlik (math_anlayis_kvadrat_tenlik)",
+    "tripartite_synthesis": {
+      "channel_1_formal": "REFUTED_BY_COUNTEREXAMPLE",
+      "channel_2_curriculum": "CURRICULUM_SUPPORTED",
+      "channel_3_empirical": "DATA_COLLECTION_PENDING"
+    },
+    "silver_graph_placement_decision": "REGISTERED_AS_SCOPED_ONLY",
+    "active_production_remediation": "BLOCKED_FOR_GENERAL_QUADRATICS_ALLOWED_FOR_FACTORING_ONLY"
+  }
+}

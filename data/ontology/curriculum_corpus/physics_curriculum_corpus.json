@@ -1,0 +1,84 @@
+{
+  "corpus_version": "1.1",
+  "subject": "Fizika",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı (M.Murquzov və b.)",
+  "topics": {
+    "phy_nyuton_1": {
+      "standard_code": "AR-PHYS-G7-1.2.1",
+      "grade": 7,
+      "topic_name": "Ətalət qanunu (Nyutonun birinci qanunu)",
+      "textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 64-72",
+      "learning_outcomes": [
+        "1.2.1. Ətalət hadisəsini və hesablama sistemlərini şərh edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_suret_ve_hereket"
+      ]
+    },
+    "phy_nyuton_2": {
+      "standard_code": "AR-PHYS-G7-1.2.2",
+      "grade": 7,
+      "topic_name": "Nyutonun ikinci qanunu (F = m * a)",
+      "textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 74-82",
+      "learning_outcomes": [
+        "1.2.2. Qüvvə, kütlə və təcil arasındakı asılılığı kəmiyyətcə tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_nyuton_1"
+      ]
+    },
+    "phy_mexaniki_is": {
+      "standard_code": "AR-PHYS-G7-2.1.1",
+      "grade": 7,
+      "topic_name": "Mexaniki iş və güc",
+      "textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 88-96",
+      "learning_outcomes": [
+        "2.1.1. Mexaniki iş anlayışını və düsturunu (A = F * s) izah edir.",
+        "2.1.1. İşin vahidini (Coul) və güc vahidini (Vatt) tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_nyuton_2",
+        "phy_duzxetli_hereketde_yol_ve_yerdeyisme"
+      ]
+    },
+    "phy_kinetik_enerji": {
+      "standard_code": "AR-PHYS-G7-2.1.2",
+      "grade": 7,
+      "topic_name": "Mexaniki enerji: Kinetik və potensial enerji",
+      "textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 98-106",
+      "learning_outcomes": [
+        "2.1.2. Cismin hərəkət enerjisi kimi kinetik enerjini (Ek = m*v^2 / 2) hesablayır.",
+        "2.1.2. Mexaniki iş ilə kinetik enerjinin dəyişməsi arasındakı əlaqəni (İş-enerji teoremi) tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_mexaniki_is",
+        "phy_suret_ve_kutle"
+      ]
+    },
+    "phy_kulon_qanunu": {
+      "standard_code": "AR-PHYS-G8-3.1.1",
+      "grade": 8,
+      "topic_name": "Elektrik yükləri və Kulon qanunu",
+      "textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 70-84",
+      "learning_outcomes": [
+        "3.1.1. Nöqtəvi yüklər arasındakı qarşılıqlı təsir qüvvəsini hesablayır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_atom_ve_yuk_anlayisi"
+      ]
+    },
+    "phy_sahe_intensivliyi": {
+      "standard_code": "AR-PHYS-G8-3.1.2",
+      "grade": 8,
+      "topic_name": "Elektrik sahəsinin intensivliyi (E = F / q)",
+      "textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 86-98",
+      "learning_outcomes": [
+        "3.1.2. Elektrik sahəsinin qüvvə xarakteristikası kimi intensivliyi təyin edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "phy_kulon_qanunu"
+      ]
+    }
+  }
+}

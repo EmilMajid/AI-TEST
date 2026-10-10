@@ -1,0 +1,56 @@
+{
+  "corpus_version": "1.0",
+  "subject": "İnformatika",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı (İ.Sadıqov, R.Mahmudzadə)",
+  "topics": {
+    "inf_informasiya_vahidi": {
+      "standard_code": "AR-INF-G6-1.1.1",
+      "grade": 6,
+      "topic_name": "İnformasiyanın ölçü vahidləri (Bit, Bayt, KB, MB)",
+      "textbook_ref": "İnformatika 6-cı sinif, Fəsil 1: İnformasiya və onun xassələri, Səh. 10-22",
+      "learning_outcomes": [
+        "1.1.1. İnformasiyanın ölçü vahidlərini və onların bir-birinə çevrilməsini tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "inf_informasiya_anlayisi"
+      ]
+    },
+    "inf_kodlasdirma": {
+      "standard_code": "AR-INF-G6-1.1.2",
+      "grade": 6,
+      "topic_name": "Məlumatın kodlaşdırılması və ikilik say sistemi",
+      "textbook_ref": "İnformatika 6-cı sinif, Fəsil 1: İnformasiya və onun xassələri, Səh. 24-38",
+      "learning_outcomes": [
+        "1.1.2. Mətni, qrafiki və ədədi məlumatın ikilik kodlaşdırılmasını və yaddaş həcmini hesablayır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "inf_informasiya_vahidi"
+      ]
+    },
+    "inf_xetti_alqoritm": {
+      "standard_code": "AR-INF-G6-2.1.1",
+      "grade": 6,
+      "topic_name": "Alqoritm anlayışı, xassələri və xətti alqoritmlər",
+      "textbook_ref": "İnformatika 6-cı sinif, Fəsil 3: Alqoritmlər, Səh. 60-75",
+      "learning_outcomes": [
+        "2.1.1. Alqoritmin addımlarını xətti ardıcıllıqla tərtib edir və blok-sxemini qurur."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "inf_mentiqi_ardicilliq"
+      ]
+    },
+    "inf_budaqlanan_alqoritm": {
+      "standard_code": "AR-INF-G7-2.1.2",
+      "grade": 7,
+      "topic_name": "Şərt alqoritmləri: Budaqlanan alqoritmlər və blok-sxemlər",
+      "textbook_ref": "İnformatika 7-ci sinif, Fəsil 2: Alqoritmik strukturlar, Səh. 35-52",
+      "learning_outcomes": [
+        "2.1.2. Şərt blokundan istifadə edərək tam və natamam budaqlanan alqoritmlər qurur."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "inf_xetti_alqoritm"
+      ]
+    }
+  }
+}

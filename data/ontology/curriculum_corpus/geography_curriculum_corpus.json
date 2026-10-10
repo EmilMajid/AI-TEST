@@ -1,0 +1,56 @@
+{
+  "corpus_version": "1.0",
+  "subject": "Coğrafiya",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı",
+  "topics": {
+    "geo_yer_daxili_qurulusu": {
+      "standard_code": "AR-GEO-G6-1.1.1",
+      "grade": 6,
+      "topic_name": "Yerin daxili quruluşu: Yer qabığı, mantiya və nüvə",
+      "textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 2: Litosfer, Səh. 25-38",
+      "learning_outcomes": [
+        "1.1.1. Yerin daxili təbəqələrini və onların fiziki vəziyyətini izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "geo_yer_kuresi_anlayisi"
+      ]
+    },
+    "geo_litosfer_tavalari": {
+      "standard_code": "AR-GEO-G7-1.2.1",
+      "grade": 7,
+      "topic_name": "Litosfer tavalarının hərəkəti və seysmik qurşaqlar",
+      "textbook_ref": "Coğrafiya 7-ci sinif, Fəsil 1: Relyef və geoloji quruluş, Səh. 14-30",
+      "learning_outcomes": [
+        "1.2.1. Litosfer tavalarının toqquşması və aralanması nəticəsində relyef formalarının yaranmasını əsaslandırır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "geo_yer_daxili_qurulusu"
+      ]
+    },
+    "geo_atmosfer_tezyiqi": {
+      "standard_code": "AR-GEO-G6-2.1.1",
+      "grade": 6,
+      "topic_name": "Atmosfer təzyiqi və onun hündürlükdən asılılığı",
+      "textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 55-68",
+      "learning_outcomes": [
+        "2.1.1. Atmosfer təzyiqinin fərqini və barometr ilə ölçülməsini izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "geo_hava_ve_iqlim_anlayisi"
+      ]
+    },
+    "geo_kulleklerin_yaranmasi": {
+      "standard_code": "AR-GEO-G6-2.1.2",
+      "grade": 6,
+      "topic_name": "Küləklərin yaranması, növləri və istiqaməti",
+      "textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 70-82",
+      "learning_outcomes": [
+        "2.1.2. Təzyiq fərqi nəticəsində küləklərin yaranma mexanizmini və briz, musson küləklərini təhlil edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "geo_atmosfer_tezyiqi"
+      ]
+    }
+  }
+}

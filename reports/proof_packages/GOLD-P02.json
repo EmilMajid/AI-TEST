@@ -1,0 +1,34 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-P02",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Fizika",
+  "source_node": "phy_mexaniki_is",
+  "target_node": "phy_kinetik_enerji",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-P02-WORK-ENERGY-01",
+    "artifact_type": "PHYSICAL_THEOREM_PROOF",
+    "method": "1D Kinematics and Newton II Law Algebraic Derivation",
+    "verified_domain": "1D particle with constant mass m > 0 and a != 0"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-PHYS-G7-2.1.1",
+    "target_standard": "AR-PHYS-G7-2.1.2",
+    "source_textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 88-96",
+    "target_textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 98-106",
+    "explicit_textbook_dependency": true,
+    "source_grade": 7,
+    "target_grade": 7
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+  "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+  "package_sha256": "a2b44f91567d6917b611ef6cabc6b22d2f3855db09779c73a80b05a8d866f7ae"
+}

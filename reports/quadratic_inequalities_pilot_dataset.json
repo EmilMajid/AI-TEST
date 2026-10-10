@@ -1,0 +1,614 @@
+[
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Kvadrat köklər. Hesabi kvadrat kök",
+    "id": "g8-riy8-1-5-34e4e6",
+    "question": "√45 ədədi ədəd oxu üzərində hansı iki ardıcıl tam ədəd arasında yerləşir?",
+    "explanation": "45 ədədi 36 və 49 tam kvadrat ədədləri arasında yerləşir (36 < 45 < 49). Bərabərsizliyin hər tərəfindən hesabi kvadrat kök alsaq: √36 < √45 < √49, yəni 6 < √45 < 7 alarıq. Ədəd 6 və 7 arasındadır.",
+    "steps": "1. Sualın şərti və mövzusu ('Kvadrat köklər. Hesabi kvadrat kök') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 6 və 7. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Həqiqi ədədlər",
+    "id": "g8-riy8-2-18-33984f",
+    "question": "$\\sqrt{138}$ ədədi ədəd oxunda hansı iki ardıcıl tam ədəd arasında yerləşir?",
+    "explanation": "138 ədədinə ən yaxın tam kvadratlar 121 və 144-dür. $121 < 138 < 144$ bərabərsizliyinin hər tərəfindən kvadrat kök alsaq, $\\sqrt{121} < \\sqrt{138} < \\sqrt{144}$, yəni $11 < \\sqrt{138} < 12$ alınır.",
+    "steps": "1. Sualın şərti və mövzusu ('Həqiqi ədədlər') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 11 və 12. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+    "id": "g8-riy8-7-3-5f096b",
+    "question": "$A = 3\\sqrt{2}$, $B = 2\\sqrt{5}$, $C = \\sqrt{17}$ ədədlərini artan sıra ilə düzün.",
+    "explanation": "Ədədləri müqayisə etmək üçün vuruqları kök işarəsi altına salmaq lazımdır. $A = 3\\sqrt{2} = \\sqrt{9 \\cdot 2} = \\sqrt{18}$; $B = 2\\sqrt{5} = \\sqrt{4 \\cdot 5} = \\sqrt{20}$; $C = \\sqrt{17}$. Kökaltı ifadələri müqayisə etsək, $17 < 18 < 20$ olduğu üçün $C < A < B$ bərabərsizliyi alınır.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $C < A < B$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)",
+    "id": "g8-riy8-7-5-13aceb",
+    "question": "$\\sqrt{45}$ ədədi ədəd oxunda hansı iki ardıcıl tam ədəd arasında yerləşir?",
+    "explanation": "Kökaltı $45$ ədədinə ən yaxın olan və kökdən tam çıxan ədədlər $36$ və $49$-dur. $36 < 45 < 49$ bərabərsizliyindən kök alsaq, $\\sqrt{36} < \\sqrt{45} < \\sqrt{49}$, yəni $6 < \\sqrt{45} < 7$ alarıq. Beləliklə, ədəd $6$ və $7$ arasında yerləşir.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Kvadrat kök. Həqiqi ədədlər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $6$ və $7$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Pifaqor teoremi",
+    "id": "g8-riy8-8-14-593e8d",
+    "question": "Korbucaqlı üçbucağın kor bucaq qarşısındakı tərəfinin uzunluğu x tam ədəddir. Digər tərəfləri 6 sm və 8 sm olarsa, x-in ala biləcəyi qiymətlərin cəmini tapın.",
+    "explanation": "{'correct': 'İzah: Üçbucaq bərabərsizliyinə əsasən x < 6 + 8 ⟹ x < 14 olmalıdır. Eyni zamanda, bu tərəf kor bucaq qarşısında yerləşdiyinə görə, x² > 6² + 8² ⟹ x² > 100 ⟹ x > 10. Deməli, 10 < x < 14. Şərti ödəyən tam ədədlər 11, 12 və 13-dür. Onların cəmi: 11 + 12 + 13 = 36.', 'distractors': {'B': \"'21' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'C': \"'40' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'D': \"'33' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\"}}",
+    "steps": "1. Sualın şərti və mövzusu ('Pifaqor teoremi') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 36. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Kvadrat tənliklərin həlli. Kvadrat tənliyin kökləri düsturu",
+    "id": "g8-riy8-15-14-bd4c9a",
+    "question": "$m$-in hansı qiymətlərində $x^2 + (m-1)x + 9 = 0$ kvadrat tənliyinin iki müxtəlif həqiqi kökü var?",
+    "explanation": "Tənliyin iki müxtəlif həqiqi kökü olması üçün $D > 0$ olmalıdır. $D = (m-1)^2 - 4 \\cdot 1 \\cdot 9 = m^2 - 2m - 35 > 0$. $(m - 7)(m + 5) > 0$. Bərabərsizliyi həll etsək, $m \\in (-\\infty; -5) \\cup (7; +\\infty)$. Yəni $m < -5$ və ya $m > 7$.",
+    "steps": "1. Sualın şərti və mövzusu ('Kvadrat tənliklərin həlli. Kvadrat tənliyin kökləri düsturu') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $m > 7$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+    "id": "g8-riy8-49-13-77007c",
+    "question": "$a$-nın istənilən qiymətində $a^2 - 4a$ ifadəsinin $2a - 10$ ifadəsindən böyük olduğunu isbat etmək üçün onların fərqini tapsaq hansı nəticə alınar?",
+    "explanation": "İki ifadəni müqayisə etmək üçün onların fərqinə baxırıq: $(a^2 - 4a) - (2a - 10) = a^2 - 6a + 10$. Bu ifadəni tam kvadrata ayırsaq: $a^2 - 6a + 9 + 1 = (a - 3)^2 + 1$ alınır. $(a - 3)^2 \\ge 0$ olduğu üçün onun üzərinə 1 gəldikdə nəticə həmişə müsbət olur.",
+    "steps": "1. Sualın şərti və mövzusu ('Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $(a - 2)^2 - 4 > 0$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+    "id": "g8-riy8-49-17-633d95",
+    "question": "$x$-in istənilən qiymətində $x^2 - 6x$ ifadəsinin $2x - 17$ ifadəsindən böyük olduğunu isbat etmək üçün onların fərqini tapsaq hansı nəticə alınar?",
+    "explanation": "İki ifadəni müqayisə etmək üçün onların fərqinə baxırıq: $(x^2 - 6x) - (2x - 17) = x^2 - 8x + 17$. Bu ifadəni tam kvadrata ayırsaq: $x^2 - 8x + 16 + 1 = (x - 4)^2 + 1$ alınır. $(x - 4)^2 \\ge 0$ olduğu üçün onun üzərinə 1 gəldikdə nəticə həmişə müsbət olur.",
+    "steps": "1. Sualın şərti və mövzusu ('Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $(x - 4)^2 + 1 > 0$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+    "id": "g8-riy8-49-32-8ad897",
+    "question": "$1 < a < 4$ və $-2 < b < 3$ olduqda, $a^2 - 2b$ ifadəsinin ala biləcəyi tam qiymətlərin sayını tapın.",
+    "explanation": "{'correct': 'İzah: $1 < a < 4$ bərabərsizliyini kvadrata yüksəltsək $1 < a^2 < 16$ alarıq. $-2 < b < 3$ bərabərsizliyini -2-yə vurduqda işarələr dəyişir: $-6 < -2b < 4$. Bu bərabərsizlikləri hədbəhəd toplayaq: $1 + (-6) < a^2 - 2b < 16 + 4$, yəni $-5 < a^2 - 2b < 20$. Bu aralıqdakı tam ədədlər -4-dən 19-a qədərdir. Onların sayı $19 - (-4) + 1 = 24$-dür.', 'distractors': {'A': \"'25' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'B': \"'22' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'D': \"'23' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\"}}",
+    "steps": "1. Sualın şərti və mövzusu ('Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 24. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+    "id": "g8-riy8-49-37-2e3c24",
+    "question": "Ədəd oxu üzərində (-4; 5] aralığı hansı ikiqat bərabərsizliyə uyğundur?",
+    "explanation": "{'correct': 'İzah: D) 0,538, 0,674: 0,128 ədədlərinin ədəd oxu üzərindəki yerini nümunədə verilmiş qayda ilə göstərin, vahid parçaların hansı intervala aid olduğunu yazın\\nNümunə.', 'distractors': {'A': \"'-4 < x < 5' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'C': \"'-4 < x ≤ 5' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'D': \"'-4 ≤ x < 5' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\"}}",
+    "steps": "1. Sualın şərti və mövzusu ('Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: -4 ≤ x ≤ 5. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri",
+    "id": "g8-riy8-49-56-cbcdae",
+    "question": "Standarta görə qutudakı çayın kütləsi 200 q olmalıdır. Qutunun üzərində 200 q ± 5 q qeyd edilib. Bu məlumata əsasən, qutudakı çayın kütləsi (x) üçün doğru olan modullu bərabərsizliyi göstərin.",
+    "explanation": "{'correct': 'İzah: Bu məlumata görə bir qutudakı\\ndüyünün həqiqi kütləsi hansı intervalda dəyişir?', 'distractors': {'B': \"'|x + 200| ≤ 5' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'C': \"'|x - 5| ≤ 200' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'D': \"'|x - 200| > 5' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\"}}",
+    "steps": "1. Sualın şərti və mövzusu ('Bərabərsizliklər. Ədədi bərabərsizliklərin xassələri') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: |x - 200| ≤ 5. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ədədi aralıqlar",
+    "id": "g8-riy8-51-2-0a688f",
+    "question": "`(-∞; 5]` aralığına uyğun gələn bərabərsizlik hansıdır?",
+    "explanation": "`(-∞; 5]` aralığı mənfi sonsuzluqdan 5-ə qədər olan ədədləri əhatə edir. Kvadrat mötərizə olduğu üçün 5 bu aralığa daxildir. Buna görə uyğun bərabərsizlik `x ≤ 5` olar.",
+    "steps": "1. Sualın şərti və mövzusu ('Ədədi aralıqlar') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: x ≤ 5. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ədədi aralıqlar",
+    "id": "g8-riy8-51-7-b0accb",
+    "question": "`-4 ≤ x < 7` bərabərsizliyinə uyğun gələn aralıq aşağıdakılardan hansıdır?",
+    "explanation": "`≤` işarəsi sol ucun (-4) aralığa daxil olduğunu (kvadrat mötərizə), `<` işarəsi isə sağ ucun (7) daxil olmadığını (dairəvi mötərizə) göstərir. Yəni aralıq `[-4; 7)` olmalıdır.",
+    "steps": "1. Sualın şərti və mövzusu ('Ədədi aralıqlar') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: [-4; 7). 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ədədi aralıqlar",
+    "id": "g8-riy8-51-29-a9f523",
+    "question": "$1 < a < 4$ və $-2 < b < 3$ olduqda, $a^2 - 2b$ ifadəsinin ala biləcəyi tam qiymətlərin sayını tapın.",
+    "explanation": "{'correct': 'İzah: $1 < a < 4$ bərabərsizliyini kvadrata yüksəltsək $1 < a^2 < 16$ alarıq. $-2 < b < 3$ bərabərsizliyini -2-yə vurduqda işarələr dəyişir: $-6 < -2b < 4$. Bu bərabərsizlikləri hədbəhəd toplayaq: $1 + (-6) < a^2 - 2b < 16 + 4$, yəni $-5 < a^2 - 2b < 20$. Bu aralıqdakı tam ədədlər -4-dən 19-a qədərdir. Onların sayı $19 - (-4) + 1 = 24$-dür.', 'distractors': {'A': \"'25' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'B': \"'22' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\", 'D': \"'23' variantı hesablamadakı diqqətsizlik və ya formulun səhv tətbiqindən yaranan yanlış nəticədir.\"}}",
+    "steps": "1. Sualın şərti və mövzusu ('Ədədi aralıqlar') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 24. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Birdayişənli xətti bərabərsizliklərin həlli",
+    "id": "g8-riy8-52-9-f7bd01",
+    "question": "$(x - 2)^2 < x(x - 5) + 10$ bərabərsizliyini həll edin.",
+    "explanation": "Müxtəsər vurma düsturunu və paylama xassəsini tətbiq edək: $x^2 - 4x + 4 < x^2 - 5x + 10$. Hər iki tərəfdən $x^2$ islah olunur. $-4x + 5x < 10 - 4 \\implies x < 6$. Aralıq: $(-\\infty; 6)$. Müxtəsər vurma düsturunda orta həddi və ya kvadratı tətbiq edərkən edilən səhvlər distraktorlara əlavə edilib.",
+    "steps": "1. Sualın şərti və mövzusu ('Birdayişənli xətti bərabərsizliklərin həlli') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $(-\\infty; 6)$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Dəyişəni modul daxilində olan sadə bərabərsizliklər",
+    "id": "g8-riy8-53-1-067f20",
+    "question": "|x| < 5 bərabərsizliyinin həllər çoxluğunu tapın.",
+    "explanation": "|x| < a (a > 0) bərabərsizliyinin həllər çoxluğu (-a; a) intervalıdır. Yəni x ədədi -5 və 5 arasında yerləşməlidir: -5 < x < 5. Doğru cavab (-5; 5).",
+    "steps": "1. Sualın şərti və mövzusu ('Dəyişəni modul daxilində olan sadə bərabərsizliklər') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: (-5; 5). 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Dəyişəni modul daxilində olan sadə bərabərsizliklər",
+    "id": "g8-riy8-53-2-11e7fd",
+    "question": "|x| ≥ 4 bərabərsizliyinin həllər çoxluğunu tapın.",
+    "explanation": "|x| ≥ a (a > 0) bərabərsizliyinin həllər çoxluğu x ≤ -a və ya x ≥ a şərtlərini ödəyən aralıqların birləşməsidir. Ona görə də cavab (-∞; -4] U [4; +∞) olacaq. Distraktorlar ciddi bərabərsizliklərlə və ya daxili intervalla qarışdırmağa yönəlib.",
+    "steps": "1. Sualın şərti və mövzusu ('Dəyişəni modul daxilində olan sadə bərabərsizliklər') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: (-∞; -4] U [4; +∞). 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Dəyişəni modul daxilində olan sadə bərabərsizliklər",
+    "id": "g8-riy8-53-18-5a8a23",
+    "question": "$|2x + 1| < |x - 3|$ bərabərsizliyini həll edin.",
+    "explanation": "Hər iki tərəf mənfi olmadığından kvadrata yüksəldirik (işarə dəyişmir): $(2x+1)^2 < (x-3)^2$. Açaq: $4x^2 + 4x + 1 < x^2 - 6x + 9$. Sola keçirək: $3x^2 + 10x - 8 < 0$. Köklər: $D = 100 + 96 = 196 = 14^2$. $x = \\frac{-10 \\pm 14}{6}$. $x_1 = \\frac{4}{6} = \\frac{2}{3}$, $x_2 = \\frac{-24}{6} = -4$. $a = 3 > 0$, parabola yuxarı açıqdır. İfadə mənfi kökler arasındadır: $-4 < x < \\frac{2}{3}$.",
+    "steps": "1. Sualın şərti və mövzusu ('Dəyişəni modul daxilində olan sadə bərabərsizliklər') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: $-4 < x < \\frac{2}{3}$. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+    "id": "g8-riy8-54-10-e39c28",
+    "question": "Dəyişənin hansı qiymətlərində √(12 - 3x) ifadəsinin mənası var?",
+    "explanation": "Kvadrat kökün altındakı ifadə mənfi ola bilməz (həqiqi ədədlər çoxluğunda). Deməli, 12 - 3x >= 0 bərabərsizliyi ödənməlidir. Buradan 3x <= 12 və nəhayət x <= 4 alınır. İşarənin dəyişməsini yaddan çıxarmaq tez-tez edilən səhvdir.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: x <= 4. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+    "id": "g8-riy8-54-13-e4acff",
+    "question": "c-nin hansı qiymətlərində x^2 - 2x + c = 0 tənliyinin həqiqi kökü yoxdur?",
+    "explanation": "Kvadrat tənliyin həqiqi kökünün olmaması üçün diskriminantı (D) sıfırdan kiçik olmalıdır. D = (-2)^2 - 4*1*c = 4 - 4c. D < 0 yəni 4 - 4c < 0 bərabərsizliyini həll etsək, 4c > 4 => c > 1 alarıq.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: c > 1. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+    "id": "g8-riy8-54-16-3837bf",
+    "question": "k-nın hansı qiymətlərində x^2 + 4x + k = 0 tənliyinin həqiqi kökü yoxdur?",
+    "explanation": "Kvadrat tənliyin həqiqi kökünün olmaması üçün diskriminantı (D) sıfırdan kiçik olmalıdır. D = 4^2 - 4*1*k = 16 - 4k. D < 0 yəni 16 - 4k < 0 bərabərsizliyini həll etsək, 4k > 16 => k > 4 alarıq.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: k > 4. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+    "id": "g8-riy8-54-33-7f6f0d",
+    "question": "İkiqat bərabərsizlik nədir?",
+    "explanation": "İkiqat (ikili) bərabərsizlik a < x < b formasında olub iki bərabərsizliyin eyni vaxtda ödənməsini tələb edir. Həll çoxluğu (a; b) intervalıdır.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: a < x < b şəklindəki bərabərsizlik. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 8,
+    "subject": "Riyaziyyat 8",
+    "topic": "Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)",
+    "id": "g8-riy8-54-39-6026e6",
+    "question": "3 < 2x+1 < 9 bərabərsizliyini ödəyən x üçün hansı ifadə doğrudur?",
+    "explanation": "3 < 2x+1 < 9 → 2 < 2x < 8 → 1 < x < 4. Açıq interval: 1 və 4 daxil deyil.",
+    "steps": "1. Sualın şərti və mövzusu ('Ümumiləşdirici tapşırıqlar (Bərabərsizliklər)') diqqətlə təhlil edilir. 2. Fənn proqramına və dərslik qaydalarına əsasən düzgün cavab müəyyənləşdirilir: 1 < x < 4. 3. Digər yayındırıcı variantlar təhlil edilərək kənarlaşdırılır və düzgün cavab təsdiqlənir."
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+    "id": "900030",
+    "question": "|x^2 - 5x + 6| = -(x^2 - 5x + 6) bərabərsizliyini həll edin:",
+    "explanation": "|A| = -A yalnız A <= 0 olduqda: x^2 - 5x + 6 <= 0 -> (x-2)(x-3) <= 0 -> 2 <= x <= 3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "32. Xətti bərabərsizliklər sistemi və bərabərsizliklər heyəti",
+    "id": "900472",
+    "question": "{ 2x + a > 5, 3x - 1 < 8 } sisteminin həlli (1; 3) intervalı olarsa, a parametrini tapın:",
+    "explanation": "x < 3 və x > (5 - a)/2. (5 - a)/2 = 1 -> 5 - a = 2 -> a = 3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "32. Xətti bərabərsizliklər sistemi və bərabərsizliklər heyəti",
+    "id": "900479",
+    "question": "{ 2x - 1 ≥ 0, 3x - 6 < 0, x^2 ≥ 0 } sisteminin həlli hansı aralıqdır?",
+    "explanation": "x >= 0.5; x < 2; x^2 >= 0 bütün R-dir. Kəsişmə: [0.5; 2).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "33. Modul daxilində dəyişəni olan bərabərsizliklər",
+    "id": "900488",
+    "question": "|x^2 - 5| ≤ 4 bərabərsizliyini həll edin:",
+    "explanation": "-4 <= x^2 - 5 <= 4 -> 1 <= x^2 <= 9 -> x ∈ [-3; -1] ∪ [1; 3].",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "33. Modul daxilində dəyişəni olan bərabərsizliklər",
+    "id": "900495",
+    "question": "|x^2 - 4x| < 5 bərabərsizliyinin ən kiçik tam həllini tapın:",
+    "explanation": "-5 < x^2 - 4x < 5. x^2 - 4x + 5 > 0 həmişə doğrudur (D<0). x^2 - 4x - 5 < 0 -> (x - 5)(x + 1) < 0 -> -1 < x < 5. Ən kiçik tam həll 0-dır.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900496",
+    "question": "x^2 - 5x + 6 < 0 kvadrat bərabərsizliyinin həllər çoxluğunu tapın:",
+    "explanation": "(x - 2)(x - 3) < 0 -> 2 < x < 3 -> (2; 3).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900497",
+    "question": "x^2 - 9 ≥ 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "(x - 3)(x + 3) >= 0 -> x <= -3 və ya x >= 3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900498",
+    "question": "-x^2 + 4x - 3 > 0 bərabərsizliyini həll edin:",
+    "explanation": "Hər tərəfi -1-ə vursaq: x^2 - 4x + 3 < 0 -> (x - 1)(x - 3) < 0 -> (1; 3).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900499",
+    "question": "x^2 + 4 > 0 bərabərsizliyinin həllər çoxluğu hansıdır?",
+    "explanation": "x^2 >= 0 olduğundan x^2 + 4 həmişə > 0-dır (R).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900500",
+    "question": "x^2 + 2x + 5 < 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "a = 1 > 0 və D = 4 - 20 = -16 < 0 olduğundan parabola həmişə Ox-dən yuxarıdadır, mənfi qiymət ala bilməz (∅).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900501",
+    "question": "x^2 - 6x + 9 ≤ 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "(x - 3)^2 <= 0 yalnız x = 3 olduqda sıfıra bərabərdir.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900502",
+    "question": "x^2 - 8x + 12 ≤ 0 bərabərsizliyinin tam həllərinin cəmini tapın:",
+    "explanation": "(x - 2)(x - 6) <= 0 -> x ∈ [2; 6]. Tam həllər: 2, 3, 4, 5, 6. Cəm = 2 + 3 + 4 + 5 + 6 = 20.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900503",
+    "question": "2x^2 - 5x + 2 > 0 bərabərsizliyini həll edin:",
+    "explanation": "(2x - 1)(x - 2) > 0 -> x < 0.5 və ya x > 2.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900504",
+    "question": "x^2 - mx + 9 > 0 bərabərsizliyi x-in bütün həqiqi qiymətlərində ödənirsə, m hansı aralıqda yerləşməlidir?",
+    "explanation": "a = 1 > 0 olduğundan D < 0 olmalıdır: m^2 - 36 < 0 -> -6 < m < 6.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900505",
+    "question": "(x - 2)^2 < 16 bərabərsizliyinin tam həllərinin sayını tapın:",
+    "explanation": "|x - 2| < 4 -> -4 < x - 2 < 4 -> -2 < x < 6. Tam ədədlər: -1, 0, 1, 2, 3, 4, 5 (7 dənə).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900506",
+    "question": "3x^2 - 7x + 4 ≤ 0 bərabərsizliyinin ən böyük tam həllini tapın:",
+    "explanation": "(3x - 4)(x - 1) <= 0 -> x ∈ [1; 4/3]. Ən böyük tam həll 1-dir.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900507",
+    "question": "x^2 + px + q < 0 bərabərsizliyinin həlli (-2; 5) intervalı olarsa, p + q cəmini tapın:",
+    "explanation": "Köklər -2 və 5-dir: p = -( -2 + 5 ) = -3; q = -2 * 5 = -10. p + q = -3 + (-10) = -13.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900508",
+    "question": "x^2 - |x| - 6 < 0 bərabərsizliyini həll edin:",
+    "explanation": "|x|^2 - |x| - 6 < 0 -> (|x| - 3)(|x| + 2) < 0 -> |x| < 3 -> -3 < x < 3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900509",
+    "question": "ax^2 + bx + c ≤ 0 bərabərsizliyinin həlli yalnız x = 4 tək nöqtəsi olarsa, a və D haqqında nə demək olar?",
+    "explanation": "Parabolanın təpəsi Ox üzərində olub qolları yuxarı yönəlməlidir: a > 0 və D = 0.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+    "id": "900510",
+    "question": "x^2 - 4x + 3 < 0 və x^2 - 6x + 8 > 0 bərabərsizliklərinin ortaq tam həllini tapın:",
+    "explanation": "Birinci: (1; 3) (tam ədəd yalnız 2). İkinci: x < 2 və ya x > 4 (2 daxil deyil). Ortaq tam həll yoxdur.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900511",
+    "question": "(x - 2)(x - 5) / (x + 1) > 0 bərabərsizliyini intervallar üsulu ilə həll edin:",
+    "explanation": "Sıfırlar: -1, 2, 5. İşarələr: (-∞; -1) mənfi, (-1; 2) müsbət, (2; 5) mənfi, (5; +∞) müsbət -> (-1; 2) ∪ (5; +∞).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900512",
+    "question": "(x - 3) / (x + 4) ≤ 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "Məxrəc x ≠ -4 (ciddi), sürət x = 3 (qeyri-ciddi) -> (-4; 3].",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900513",
+    "question": "(x^2 - 4) / (x - 1) ≥ 0 bərabərsizliyinin ən kiçik müsbət tam həllini tapın:",
+    "explanation": "[-2; 1) ∪ [2; +∞). Ən kiçik müsbət tam həll 2-dir (x=1 məxrəci sıfır edir).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900514",
+    "question": "x / (x - 3) < 2 bərabərsizliyini həll edin:",
+    "explanation": "x/(x-3) - 2 < 0 -> (x - 2x + 6)/(x-3) < 0 -> (-x + 6)/(x-3) < 0 -> (x - 6)/(x-3) > 0 -> (-∞; 3) ∪ (6; +∞).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900515",
+    "question": "(x - 1)^2 · (x + 3) / (x - 4) ≤ 0 bərabərsizliyinin tam həllərinin sayını tapın:",
+    "explanation": "(x-1)^2 >= 0 həmişə (x=1 kökdür). (x+3)/(x-4) <= 0 -> [-3; 4). Tam həllər: -3, -2, -1, 0, 1, 2, 3 (cəmi 7 dənə). Düzəliş: 7.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900516",
+    "question": "(x + 2) / (x^2 + 1) > 0 bərabərsizliyini həll edin:",
+    "explanation": "Məxrəc x^2 + 1 həmişə müsbətdir, ona görə x + 2 > 0 -> x > -2.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900517",
+    "question": "1 / (x - 2) ≥ 1 / 3 bərabərsizliyinin tam həllərinin cəmini tapın:",
+    "explanation": "1/(x-2) - 1/3 >= 0 -> (3 - x + 2)/(3(x-2)) >= 0 -> (5 - x)/(x - 2) >= 0 -> (x - 5)/(x - 2) <= 0 -> (2; 5]. Tam: 3, 4, 5. Cəm = 12.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900518",
+    "question": "(x - 4)^3 · (x + 1)^2 · (x - 7) ≤ 0 bərabərsizliyinin ən böyük tam həllini tapın:",
+    "explanation": "(x+1)^2 >= 0 (x=-1 kökdür). (x-4)(x-7) <= 0 -> [4; 7]. Ən böyük tam həll 7-dir.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900519",
+    "question": "(x^2 - 5x + 6) / (x^2 - 1) < 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "(x-2)(x-3)/((x-1)(x+1)) < 0 -> (-1; 1) ∪ (2; 3).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900520",
+    "question": "(x - 2) / (x + 3) ≥ 1 bərabərsizliyini həll edin:",
+    "explanation": "(x-2)/(x+3) - 1 >= 0 -> (x-2-x-3)/(x+3) >= 0 -> -5/(x+3) >= 0 -> x + 3 < 0 -> x < -3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900521",
+    "question": "(x^2 + 4x + 4) / (x - 5) ≤ 0 bərabərsizliyinin həllini tapın:",
+    "explanation": "(x+2)^2/(x-5) <= 0. x = -2 üçün 0 <= 0 ödənir. x - 5 < 0 üçün x < 5. Birləşmə: (-∞; 5).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900522",
+    "question": "x^2 / (x - 3) > 0 bərabərsizliyini həll edin:",
+    "explanation": "x^2 > 0 (x ≠ 0 üçün) -> x - 3 > 0 -> x > 3.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900523",
+    "question": "(x - 1)(x - 2)(x - 3) ≤ 0 bərabərsizliyinin müsbət tam həllərinin cəmini tapın:",
+    "explanation": "(-∞; 1] ∪ [2; 3]. Müsbət tam həllər: 1, 2, 3. Cəm = 1 + 2 + 3 = 6.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900524",
+    "question": "(2x - 8) / (3 - x) ≥ 0 bərabərsizliyinin tam həllərinin hasilini tapın:",
+    "explanation": "2(x - 4) / (-(x - 3)) >= 0 -> (x - 4)/(x - 3) <= 0 -> (3; 4]. Yeganə tam həll 4-dür. Hasil = 4.",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "35. Rasional bərabərsizliklərin intervallar üsulu ilə həlli",
+    "id": "900525",
+    "question": "1 / x < 1 bərabərsizliyinin həllər çoxluğunu tapın:",
+    "explanation": "1/x - 1 < 0 -> (1 - x)/x < 0 -> (x - 1)/x > 0 -> (-∞; 0) ∪ (1; +∞).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "36. İrrasional bərabərsizliklər və onların həlli",
+    "id": "900528",
+    "question": "√(x - 5) > -2 bərabərsizliyinin həllini tapın:",
+    "explanation": "Kvadrat kök təyin olunduğu bütün oblastda >= 0 > -2-dir: x - 5 >= 0 -> [5; +∞).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "36. İrrasional bərabərsizliklər və onların həlli",
+    "id": "900531",
+    "question": "√(x + 6) > x bərabərsizliyinin həllini tapın:",
+    "explanation": "x < 0 üçün: x + 6 >= 0 -> [-6; 0). x >= 0 üçün: x + 6 > x^2 -> x^2 - x - 6 < 0 -> [0; 3). Birləşmə: [-6; 3).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "36. İrrasional bərabərsizliklər və onların həlli",
+    "id": "900534",
+    "question": "√(x^2 - 9) ≤ 4 bərabərsizliyinin tam həllərinin sayını tapın:",
+    "explanation": "x^2 - 9 >= 0 (x <= -3 və ya x >= 3); x^2 - 9 <= 16 -> x^2 <= 25 -> [-5; -3] ∪ [3; 5]. Tam ədədlər: -5, -4, -3, 3, 4, 5 (6 dənə).",
+    "steps": ""
+  },
+  {
+    "grade": 9,
+    "subject": "Riyaziyyat 9",
+    "topic": "36. İrrasional bərabərsizliklər və onların həlli",
+    "id": "900538",
+    "question": "√(x^2 - 4x + 4) > 3 bərabərsizliyini həll edin:",
+    "explanation": "|x - 2| > 3 -> x - 2 > 3 (x > 5) və ya x - 2 < -3 (x < -1).",
+    "steps": ""
+  },
+  {
+    "grade": 10,
+    "subject": "Riyaziyyat 10",
+    "topic": "23. Üstlü və loqarifmik tənliklər və bərabərsizliklər",
+    "id": "10-001-0623-10MA23-BL3-C2-002",
+    "question": "$\\log_3(x^2 - 7) = 2$ tənliyinin köklərinin hasilini tapın:",
+    "explanation": "-16 = -16$)\nHəlli və Riyazi Əsası: 10-cu sinif Riyaziyyat kurikulumuna uyğun olaraq, '23. Üstlü və loqarifmik tənliklər və bərabərsizliklər' mövzusundakı qayda və qanunauyğunluqlar tətbiq edildikdə dəqiq nəticə D bəndidir.",
+    "steps": ""
+  },
+  {
+    "grade": 10,
+    "subject": "Riyaziyyat 10",
+    "topic": "23. Üstlü və loqarifmik tənliklər və bərabərsizliklər",
+    "id": "10-001-0623-10MA23-BL3-C2-006",
+    "question": "$\\log_3 x + \\log_3(x - 2) = 1$ tənliyini həll edin:",
+    "explanation": "$x = 3$ = 3 \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow x = 3$, $x = -1$ kənar kökdür)\nHəlli və Riyazi Əsası: 10-cu sinif Riyaziyyat kurikulumuna uyğun olaraq, '23. Üstlü və loqarifmik tənliklər və bərabərsizliklər' mövzusundakı qayda və qanunauyğunluqlar tətbiq edildikdə dəqiq nəticə D bəndidir.",
+    "steps": ""
+  },
+  {
+    "grade": 10,
+    "subject": "Riyaziyyat 10",
+    "topic": "23. Üstlü və loqarifmik tənliklər və bərabərsizliklər",
+    "id": "10-001-0623-10MA23-BL3-C2-012",
+    "question": "$\\log_2(x^2 - 5x + 6) = \\log_2(2x - 4)$ tənliyini həll edin:",
+    "explanation": "$x = 5$\nHəlli və Riyazi Əsası: 10-cu sinif Riyaziyyat kurikulumuna uyğun olaraq, '23. Üstlü və loqarifmik tənliklər və bərabərsizliklər' mövzusundakı qayda və qanunauyğunluqlar tətbiq edildikdə dəqiq nəticə B bəndidir.",
+    "steps": ""
+  },
+  {
+    "grade": 11,
+    "subject": "Riyaziyyat 11",
+    "topic": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
+    "id": "11-001-0315-11MA15-BL3-C1-008",
+    "question": "log₂ (x² - 3x) = 2 tənliyinin köklərinin hasili neçədir?",
+    "explanation": "{'correct': 'Doğru cavab: -4. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
+    "steps": ""
+  },
+  {
+    "grade": 11,
+    "subject": "Riyaziyyat 11",
+    "topic": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
+    "id": "11-001-0315-11MA15-BL1-C1-012",
+    "question": "log_x (2x² - 3x - 4) = 2 tənliyində x əsası hansı şərtləri ödəməlidir?",
+    "explanation": "{'correct': 'Doğru cavab: x > 0 və x ≠ 1. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '3': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
+    "steps": ""
+  },
+  {
+    "grade": 11,
+    "subject": "Riyaziyyat 11",
+    "topic": "Loqarifmik və üstlü tənlik və bərabərsizliklərin tətbiqi",
+    "id": "11-001-0315-11MA15-BL3-C1-013",
+    "question": "5^(x² - 4) = 1 tənliyinin kökləri hansılardır?",
+    "explanation": "{'correct': 'Doğru cavab: x = ±2. Dərslik qayda və düsturlarına tam uyğundur.', 'distractors': {'0': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '1': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.', '2': 'Bu variant riyazi hesablamaya və ya tərifə uyğun deyil.'}}",
+    "steps": ""
+  }
+]

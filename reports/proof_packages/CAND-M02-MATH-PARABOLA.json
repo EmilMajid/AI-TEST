@@ -1,0 +1,33 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "CAND-M02-MATH-PARABOLA",
+  "relation_type": "MATHEMATICAL_DEPENDENCY",
+  "subject": "Riyaziyyat",
+  "source_node": "math_usul_intervallar",
+  "target_node": "math_anlayis_kvadrat_berabersizlik",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-M02-PARABOLA-01",
+    "artifact_type": "FORMAL_ALGEBRAIC_PROOF",
+    "method": "Parabola Geometric Method Closed-Form Identity",
+    "verified_domain": "Quadratics with exact coefficients in Q(sqrt(d))"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G8-1.2.3",
+    "target_standard": "AR-MATH-G9-1.2.4",
+    "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+    "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+    "explicit_textbook_dependency": true,
+    "source_grade": 8,
+    "target_grade": 9
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "No empirical evaluation ID provided."
+  },
+  "epistemic_verdict": "PROVEN",
+  "production_action": "PROMOTABLE_TO_ACTIVE_MATHEMATICAL_RULE",
+  "rationale": "Formal symbolic proof ratified in registry.",
+  "package_sha256": "8a649ec8c09d54defc2dabf5b97d8c8d21c10657c92bb84814c4854d240a054b"
+}

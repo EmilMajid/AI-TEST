@@ -1,0 +1,34 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "CAND-M01-QUAD-EQ",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_anlayis_ikideyisenli_xetti_tenlik",
+  "target_node": "math_anlayis_kvadrat_tenlik",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-M01-FACT-01",
+    "artifact_type": "METHOD_DEPENDENCY_PROOF",
+    "method": "Linear Factor Decomposition over Q[x]",
+    "verified_domain": "Factorable quadratics in Q[x]"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G7-1.2.4",
+    "target_standard": "AR-MATH-G8-1.2.5",
+    "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 3: Xətti tənliklər və tənliklər sistemi, Səh. 72-88",
+    "target_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+    "explicit_textbook_dependency": true,
+    "source_grade": 7,
+    "target_grade": 8
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+  "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+  "package_sha256": "45d11bf2d6645b4ee7cca382fdf53f4b49f5498c2c2ed5d884c97bfb24436423"
+}

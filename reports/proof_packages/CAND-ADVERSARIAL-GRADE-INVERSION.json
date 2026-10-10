@@ -1,0 +1,27 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "CAND-ADVERSARIAL-GRADE-INVERSION",
+  "relation_type": "PEDAGOGICAL_PREREQUISITE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_anlayis_kvadrat_berabersizlik",
+  "target_node": "math_anlayis_kvadrat_tenlik",
+  "tier_1_formal": {
+    "tier_1_status": "VERIFIED",
+    "proof_id": "CAS-M02-INTERVAL-01",
+    "artifact_type": "METHOD_DEPENDENCY_PROOF",
+    "method": "Interval Partitioning Sign Sampling Algorithm",
+    "verified_domain": "Univariate continuous quadratic polynomials in R"
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "GRADE_ORDER_VIOLATION",
+    "reason": "Source grade 9 > target grade 8."
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "No empirical evaluation ID provided."
+  },
+  "epistemic_verdict": "UNPROVEN",
+  "production_action": "NO_VALIDATED_PREREQUISITE_UNKNOWN_GREATER_THAN_WRONG",
+  "rationale": "Source grade 9 > target grade 8.",
+  "package_sha256": "487c5c5593fcf0a9d9ae4ea5a66d02370143fd7031c4dd3b0c21ea074bd810ec"
+}

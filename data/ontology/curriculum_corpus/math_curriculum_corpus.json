@@ -1,0 +1,138 @@
+{
+  "corpus_version": "1.1",
+  "subject": "Riyaziyyat",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı (Ş.Sadıqov, M.Kərimov və b.)",
+  "topics": {
+    "math_anlayis_ikideyisenli_xetti_tenlik": {
+      "standard_code": "AR-MATH-G7-1.2.4",
+      "grade": 7,
+      "topic_name": "Bir və ikidəyişənli xətti tənliklər",
+      "textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 3: Xətti tənliklər və tənliklər sistemi, Səh. 72-88",
+      "learning_outcomes": [
+        "1.2.4. Xətti tənliyi və ikidəyişənli xətti tənliklər sistemini həll edir.",
+        "1.2.4. Məsələ həllində xətti tənliklər modelini qurur və tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_eded_anlayisi_tam_ededler",
+        "math_cebri_ifadeler_sadelesdirme"
+      ]
+    },
+    "math_anlayis_kvadrat_tenlik": {
+      "standard_code": "AR-MATH-G8-1.2.5",
+      "grade": 8,
+      "topic_name": "Kvadrat tənliklər və onların həlli üsulları",
+      "textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+      "learning_outcomes": [
+        "1.2.5. Kvadrat tənliyin tərifini və natamam kvadrat tənlikləri bilir.",
+        "1.2.5. Kvadrat tənliyi vuruqlara ayırma, tam kvadrata ayırma və diskriminant düsturu ilə həll edir.",
+        "1.2.5. Viyet teoremini və onun tərsini tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_anlayis_ikideyisenli_xetti_tenlik",
+        "math_coxhedli_vuruqlara_ayirma",
+        "math_hesabi_kvadrat_kok"
+      ]
+    },
+    "math_usul_intervallar": {
+      "standard_code": "AR-MATH-G8-1.2.3",
+      "grade": 8,
+      "topic_name": "Ədəd oxunda aralıqlar və xətti bərabərsizliklər",
+      "textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+      "learning_outcomes": [
+        "1.2.3. Ədəd oxunda parçanı, intervalı və yarımintervalı təsvir edir.",
+        "1.2.3. Bərabərsizliklərin xassələrini tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_ededi_berabersizlik_xasseleri"
+      ]
+    },
+    "math_anlayis_kvadrat_berabersizlik": {
+      "standard_code": "AR-MATH-G9-1.2.4",
+      "grade": 9,
+      "topic_name": "İkidərəcəli bərabərsizliklər və intervallar metodu",
+      "textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+      "learning_outcomes": [
+        "1.2.4. İkidərəcəli bərabərsizliyi parabola üsulu ilə qrafik həll edir.",
+        "1.2.4. İkidərəcəli bərabərsizliyi və rasional bərabərsizlikləri intervallar metodu ilə həll edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_anlayis_kvadrat_tenlik",
+        "math_usul_intervallar",
+        "math_funksiya_parabola_qrafiki"
+      ]
+    },
+    "math_eynilik_triqonometrik": {
+      "standard_code": "AR-MATH-G9-2.2.1",
+      "grade": 9,
+      "topic_name": "Əsas triqonometrik eyniliklər",
+      "textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 5: Triqonometriya, Səh. 140-158",
+      "learning_outcomes": [
+        "2.2.1. Əsas triqonometrik eynilikləri bilir və ifadələrin sadələşdirilməsində tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_hendese_duzbucaqli_ucbucaq"
+      ]
+    },
+    "math_tenlik_triqonometrik": {
+      "standard_code": "AR-MATH-G10-2.2.3",
+      "grade": 10,
+      "topic_name": "Sadə triqonometrik tənliklər və onların həlli",
+      "textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 3: Triqonometrik tənliklər, Səh. 80-102",
+      "learning_outcomes": [
+        "2.2.3. Əsas triqonometrik tənlikləri və eynilikləri tətbiq edərək həll edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_eynilik_triqonometrik"
+      ]
+    },
+    "math_silsile_ededi": {
+      "standard_code": "AR-MATH-G9-1.1.3",
+      "grade": 9,
+      "topic_name": "Ədədi silsilə və n-ci həddin düsturu",
+      "textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 110-125",
+      "learning_outcomes": [
+        "1.1.3. Ədədi silsilənin tərifini, n-ci hədd və ilk n həddin cəmi düsturlarını tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_ardicillilar_anlayisi"
+      ]
+    },
+    "math_silsile_hendesi": {
+      "standard_code": "AR-MATH-G9-1.1.4",
+      "grade": 9,
+      "topic_name": "Həndəsi silsilə və xassələri",
+      "textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 126-138",
+      "learning_outcomes": [
+        "1.1.4. Həndəsi silsilənin tərifini, silsilə vuruğunu və ilk n həddin cəmini hesablayır."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_silsile_ededi"
+      ]
+    },
+    "math_tenlik_ustlu": {
+      "standard_code": "AR-MATH-G10-1.2.2",
+      "grade": 10,
+      "topic_name": "Üstlü funksiya və üstlü tənliklər",
+      "textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 4: Üstlü və loqarifmik funksiyalar, Səh. 112-130",
+      "learning_outcomes": [
+        "1.2.2. Üstlü tənlikləri eyni əsasa gətirmə və yeni dəyişən daxil etmə üsulları ilə həll edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_quvvet_qaydasi_hesabi"
+      ]
+    },
+    "math_tenlik_loqarifmik": {
+      "standard_code": "AR-MATH-G11-1.2.1",
+      "grade": 11,
+      "topic_name": "Loqarifmik funksiya və loqarifmik tənliklər",
+      "textbook_ref": "Riyaziyyat 11-ci sinif, Fəsil 1: Loqarifm, Səh. 14-36",
+      "learning_outcomes": [
+        "1.2.1. Ədədin loqarifminin xassələrini və loqarifmik tənliklərin həll üsullarını tətbiq edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "math_tenlik_ustlu"
+      ]
+    }
+  }
+}

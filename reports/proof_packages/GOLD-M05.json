@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-M05",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Riyaziyyat",
+  "source_node": "math_tenlik_ustlu",
+  "target_node": "math_tenlik_loqarifmik",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-MATH-G10-1.2.2",
+    "target_standard": "AR-MATH-G11-1.2.1",
+    "source_textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 4: Üstlü və loqarifmik funksiyalar, Səh. 112-130",
+    "target_textbook_ref": "Riyaziyyat 11-ci sinif, Fəsil 1: Loqarifm, Səh. 14-36",
+    "explicit_textbook_dependency": true,
+    "source_grade": 10,
+    "target_grade": 11
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "20023389730b8cef00c43fbdda97526f64f51b81719a2c76806f03ff295c5e2f"
+}

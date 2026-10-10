@@ -1,0 +1,570 @@
+{
+  "version": "1.0-VERCEL-RUNTIME",
+  "total_rules": 25,
+  "rules": {
+    "GOLD-M01": {
+      "candidate_id": "GOLD-M01",
+      "subject": "Riyaziyyat",
+      "source_node": "math_anlayis_ikideyisenli_xetti_tenlik",
+      "target_node": "math_anlayis_kvadrat_tenlik",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "a8c878e41cbcdf135ad5e6acf88e3c91d21d8c29a35e64d64aa27b337a9bedb5",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G7-1.2.4",
+        "target_standard": "AR-MATH-G8-1.2.5",
+        "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 3: Xətti tənliklər və tənliklər sistemi, Səh. 72-88",
+        "target_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+        "source_grade": 7,
+        "target_grade": 8
+      },
+      "formal_proof": {
+        "proof_id": "CAS-M01-FACT-01",
+        "method": "Linear Factor Decomposition over Q[x]",
+        "domain": "Factorable quadratics in Q[x]"
+      }
+    },
+    "GOLD-M02": {
+      "candidate_id": "GOLD-M02",
+      "subject": "Riyaziyyat",
+      "source_node": "math_usul_intervallar",
+      "target_node": "math_anlayis_kvadrat_berabersizlik",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "2ff472f793edb182e60a6395f4d3668d0880c8d7bdf8adca1b3c9bde9faae32b",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G8-1.2.3",
+        "target_standard": "AR-MATH-G9-1.2.4",
+        "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+        "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+        "source_grade": 8,
+        "target_grade": 9
+      },
+      "formal_proof": {
+        "proof_id": "CAS-M02-INTERVAL-01",
+        "method": "Interval Partitioning Sign Sampling Algorithm",
+        "domain": "Univariate continuous quadratic polynomials in R"
+      }
+    },
+    "GOLD-M03": {
+      "candidate_id": "GOLD-M03",
+      "subject": "Riyaziyyat",
+      "source_node": "math_eynilik_triqonometrik",
+      "target_node": "math_tenlik_triqonometrik",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "aa9ef4e5a62f6f1006de884a4f47c4579f25fb84810ff55b45c8c02c90eb07d9",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G9-2.2.1",
+        "target_standard": "AR-MATH-G10-2.2.3",
+        "source_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 5: Triqonometriya, Səh. 140-158",
+        "target_textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 3: Triqonometrik tənliklər, Səh. 80-102",
+        "source_grade": 9,
+        "target_grade": 10
+      },
+      "formal_proof": null
+    },
+    "GOLD-M04": {
+      "candidate_id": "GOLD-M04",
+      "subject": "Riyaziyyat",
+      "source_node": "math_silsile_ededi",
+      "target_node": "math_silsile_hendesi",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "b19140c93725ac28444e69c5e160864ef0ff61bc7fce06cdf66b7b51047e2c4d",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G9-1.1.3",
+        "target_standard": "AR-MATH-G9-1.1.4",
+        "source_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 110-125",
+        "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi ardıcıllıqlar, Səh. 126-138",
+        "source_grade": 9,
+        "target_grade": 9
+      },
+      "formal_proof": null
+    },
+    "GOLD-M05": {
+      "candidate_id": "GOLD-M05",
+      "subject": "Riyaziyyat",
+      "source_node": "math_tenlik_ustlu",
+      "target_node": "math_tenlik_loqarifmik",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "20023389730b8cef00c43fbdda97526f64f51b81719a2c76806f03ff295c5e2f",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G10-1.2.2",
+        "target_standard": "AR-MATH-G11-1.2.1",
+        "source_textbook_ref": "Riyaziyyat 10-cu sinif, Fəsil 4: Üstlü və loqarifmik funksiyalar, Səh. 112-130",
+        "target_textbook_ref": "Riyaziyyat 11-ci sinif, Fəsil 1: Loqarifm, Səh. 14-36",
+        "source_grade": 10,
+        "target_grade": 11
+      },
+      "formal_proof": null
+    },
+    "GOLD-A01": {
+      "candidate_id": "GOLD-A01",
+      "subject": "Azərbaycan dili",
+      "source_node": "aze_soz_birlesmesi",
+      "target_node": "aze_sade_cumle",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "16f07859e9ad28e167c5eb22d7bcc2985b31fc5c4477ef17698904a06307fa1e",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-AZE-G7-1.1.2",
+        "target_standard": "AR-AZE-G8-1.1.3",
+        "source_textbook_ref": "Azərbaycan dili 7-ci sinif, Sintaksis bəhsi, Səh. 30-45",
+        "target_textbook_ref": "Azərbaycan dili 8-ci sinif, Sintaksis bəhsi, Səh. 50-68",
+        "source_grade": 7,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-A02": {
+      "candidate_id": "GOLD-A02",
+      "subject": "Azərbaycan dili",
+      "source_node": "aze_cumle_uzvleri",
+      "target_node": "aze_murekkeb_cumle",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "98700b1fa10de1b584578548d9abf54dd00c382997cb1ed528a8e4da24841e5c",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-AZE-G8-1.2.1",
+        "target_standard": "AR-AZE-G9-1.2.2",
+        "source_textbook_ref": "Azərbaycan dili 8-ci sinif, Sintaksis bəhsi, Səh. 70-95",
+        "target_textbook_ref": "Azərbaycan dili 9-cu sinif, Sintaksis bəhsi, Səh. 40-62",
+        "source_grade": 8,
+        "target_grade": 9
+      },
+      "formal_proof": null
+    },
+    "GOLD-A03": {
+      "candidate_id": "GOLD-A03",
+      "subject": "Azərbaycan dili",
+      "source_node": "aze_vasitesiz_nitq",
+      "target_node": "aze_dialoq_sintaksisi",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "72da3405f68627db4f7b740234caa9b07187286d31ff78c4efba50ed0a83a632",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-AZE-G8-1.3.1",
+        "target_standard": "AR-AZE-G8-1.3.2",
+        "source_textbook_ref": "Azərbaycan dili 8-ci sinif, Səh. 110-122",
+        "target_textbook_ref": "Azərbaycan dili 8-ci sinif, Səh. 124-135",
+        "source_grade": 8,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-P01": {
+      "candidate_id": "GOLD-P01",
+      "subject": "Fizika",
+      "source_node": "phy_nyuton_1",
+      "target_node": "phy_nyuton_2",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "fc651aa48aae7a8c27e6deb4fec3a306a96b5f81184942748ef1a700f9890aaa",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-PHYS-G7-1.2.1",
+        "target_standard": "AR-PHYS-G7-1.2.2",
+        "source_textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 64-72",
+        "target_textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 74-82",
+        "source_grade": 7,
+        "target_grade": 7
+      },
+      "formal_proof": null
+    },
+    "GOLD-P02": {
+      "candidate_id": "GOLD-P02",
+      "subject": "Fizika",
+      "source_node": "phy_mexaniki_is",
+      "target_node": "phy_kinetik_enerji",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "a2b44f91567d6917b611ef6cabc6b22d2f3855db09779c73a80b05a8d866f7ae",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-PHYS-G7-2.1.1",
+        "target_standard": "AR-PHYS-G7-2.1.2",
+        "source_textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 88-96",
+        "target_textbook_ref": "Fizika 7-ci sinif, Fəsil 4: İş, Güc, Enerji, Səh. 98-106",
+        "source_grade": 7,
+        "target_grade": 7
+      },
+      "formal_proof": {
+        "proof_id": "CAS-P02-WORK-ENERGY-01",
+        "method": "1D Kinematics and Newton II Law Algebraic Derivation",
+        "domain": "1D particle with constant mass m > 0 and a != 0"
+      }
+    },
+    "GOLD-P03": {
+      "candidate_id": "GOLD-P03",
+      "subject": "Fizika",
+      "source_node": "phy_kulon_qanunu",
+      "target_node": "phy_sahe_intensivliyi",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "31ed0f18df5292f82f0cb907dbd0c989465d290a329ee180e13c70ca30e95a75",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-PHYS-G8-3.1.1",
+        "target_standard": "AR-PHYS-G8-3.1.2",
+        "source_textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 70-84",
+        "target_textbook_ref": "Fizika 8-ci sinif, Fəsil 3: Elektrostatika, Səh. 86-98",
+        "source_grade": 8,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-C01": {
+      "candidate_id": "GOLD-C01",
+      "subject": "Kimya",
+      "source_node": "chm_atom_qurulusu",
+      "target_node": "chm_dovri_qanun",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "26f62dc25170e90d97538e066f824a3a7e726b4197431d16c7ac4bb0064ef0fb",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-CHM-G7-1.1.1",
+        "target_standard": "AR-CHM-G8-1.2.1",
+        "source_textbook_ref": "Kimya 7-ci sinif, Fəsil 2: Atom və Molekul, Səh. 35-50",
+        "target_textbook_ref": "Kimya 8-ci sinif, Fəsil 1: Dövri sistem, Səh. 12-32",
+        "source_grade": 7,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-C02": {
+      "candidate_id": "GOLD-C02",
+      "subject": "Kimya",
+      "source_node": "chm_oksidlesme_derecesi",
+      "target_node": "chm_orr_reaksiyalari",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "ca3acdd3789b65360ac49f5e5314998cfee8df6d96f6e2cfef34db5acb5719e9",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-CHM-G8-2.1.1",
+        "target_standard": "AR-CHM-G8-2.1.2",
+        "source_textbook_ref": "Kimya 8-ci sinif, Fəsil 3: Kimyəvi rabitə, Səh. 65-78",
+        "target_textbook_ref": "Kimya 8-ci sinif, Fəsil 4: Kimyəvi reaksiyalar, Səh. 85-102",
+        "source_grade": 8,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-B01": {
+      "candidate_id": "GOLD-B01",
+      "subject": "Biologiya",
+      "source_node": "bio_huceyre_membrani",
+      "target_node": "bio_osmos",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "9bf0ca8d6566ba3231811c2d05408bfb57828f19bab7a2c849e137264ccb8e66",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-BIO-G6-1.1.1",
+        "target_standard": "AR-BIO-G7-1.2.1",
+        "source_textbook_ref": "Biologiya 6-cı sinif, Fəsil 1: Hüceyrə, Səh. 14-25",
+        "target_textbook_ref": "Biologiya 7-ci sinif, Fəsil 2: Maddələr mübadiləsi, Səh. 38-50",
+        "source_grade": 6,
+        "target_grade": 7
+      },
+      "formal_proof": null
+    },
+    "GOLD-B02": {
+      "candidate_id": "GOLD-B02",
+      "subject": "Biologiya",
+      "source_node": "bio_mitoz",
+      "target_node": "bio_meyoz",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "da53c13874358757575cc0924be905ba9ff9aa50de26054a7f1ed37720b53a0a",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-BIO-G8-2.1.1",
+        "target_standard": "AR-BIO-G9-2.1.2",
+        "source_textbook_ref": "Biologiya 8-ci sinif, Fəsil 3: Hüceyrə bölünməsi, Səh. 55-68",
+        "target_textbook_ref": "Biologiya 9-cu sinif, Fəsil 2: Çoxalma və inkişaf, Səh. 40-56",
+        "source_grade": 8,
+        "target_grade": 9
+      },
+      "formal_proof": null
+    },
+    "GOLD-H01": {
+      "candidate_id": "GOLD-H01",
+      "subject": "Tarix",
+      "source_node": "his_ilk_meskenler",
+      "target_node": "his_qedim_dovletler",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "cc46ef88c31ba7aeaf5d54cb5381e13c934aeea7bf7708fad5a07521145501da",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-HIS-G6-1.1.1",
+        "target_standard": "AR-HIS-G6-1.2.1",
+        "source_textbook_ref": "Azərbaycan tarixi 6-cı sinif, Fəsil 1: Qədim dövr, Səh. 12-28",
+        "target_textbook_ref": "Azərbaycan tarixi 6-cı sinif, Fəsil 2: İlk dövlətlər, Səh. 45-70",
+        "source_grade": 6,
+        "target_grade": 6
+      },
+      "formal_proof": null
+    },
+    "GOLD-H02": {
+      "candidate_id": "GOLD-H02",
+      "subject": "Tarix",
+      "source_node": "his_feodal_munasibetleri",
+      "target_node": "his_sefevi_idareciliyi",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "00f6250569b72ab846ae12afe4ff46bb62ab596e2255ea30c158a1d04b97777f",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-HIS-G7-2.1.1",
+        "target_standard": "AR-HIS-G8-2.2.1",
+        "source_textbook_ref": "Azərbaycan tarixi 7-ci sinif, Fəsil 1: Erkən orta əsrlər, Səh. 15-35",
+        "target_textbook_ref": "Azərbaycan tarixi 8-ci sinif, Fəsil 2: Vahid Azərbaycan dövləti, Səh. 50-80",
+        "source_grade": 7,
+        "target_grade": 8
+      },
+      "formal_proof": null
+    },
+    "GOLD-G01": {
+      "candidate_id": "GOLD-G01",
+      "subject": "Coğrafiya",
+      "source_node": "geo_yer_daxili_qurulusu",
+      "target_node": "geo_litosfer_tavalari",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "98248a5c4909f5edd2d5c0d95b3a6778c79d5bf6c130200bbe8541fd2bb8e150",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-GEO-G6-1.1.1",
+        "target_standard": "AR-GEO-G7-1.2.1",
+        "source_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 2: Litosfer, Səh. 25-38",
+        "target_textbook_ref": "Coğrafiya 7-ci sinif, Fəsil 1: Relyef və geoloji quruluş, Səh. 14-30",
+        "source_grade": 6,
+        "target_grade": 7
+      },
+      "formal_proof": null
+    },
+    "GOLD-G02": {
+      "candidate_id": "GOLD-G02",
+      "subject": "Coğrafiya",
+      "source_node": "geo_atmosfer_tezyiqi",
+      "target_node": "geo_kulleklerin_yaranmasi",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "3a90dd0c95a230db68833059aa11ebbc4917b8ac48f932735a5074d3937e0ec7",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-GEO-G6-2.1.1",
+        "target_standard": "AR-GEO-G6-2.1.2",
+        "source_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 55-68",
+        "target_textbook_ref": "Coğrafiya 6-cı sinif, Fəsil 3: Atmosfer, Səh. 70-82",
+        "source_grade": 6,
+        "target_grade": 6
+      },
+      "formal_proof": null
+    },
+    "GOLD-I01": {
+      "candidate_id": "GOLD-I01",
+      "subject": "İnformatika",
+      "source_node": "inf_informasiya_vahidi",
+      "target_node": "inf_kodlasdirma",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+      "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+      "package_sha256": "24c427293a15177c658cba0a2140d18b7b5f49fecab988c8343a1fd365d9dbde",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-INF-G6-1.1.1",
+        "target_standard": "AR-INF-G6-1.1.2",
+        "source_textbook_ref": "İnformatika 6-cı sinif, Fəsil 1: İnformasiya və onun xassələri, Səh. 10-22",
+        "target_textbook_ref": "İnformatika 6-cı sinif, Fəsil 1: İnformasiya və onun xassələri, Səh. 24-38",
+        "source_grade": 6,
+        "target_grade": 6
+      },
+      "formal_proof": null
+    },
+    "GOLD-I02": {
+      "candidate_id": "GOLD-I02",
+      "subject": "İnformatika",
+      "source_node": "inf_xetti_alqoritm",
+      "target_node": "inf_budaqlanan_alqoritm",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "SUPPORTED",
+      "production_action": "RECOMMENDED_PREPARATION_NO_HARD_REMEDIATION",
+      "rationale": "Textbook grounding verified; empirical necessity data pending. Non-blocking recommendation only.",
+      "package_sha256": "277094c1ecb37357231267e00b1869d647ef4ffed4759c5d08bf397ebe311e0d",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-INF-G6-2.1.1",
+        "target_standard": "AR-INF-G7-2.1.2",
+        "source_textbook_ref": "İnformatika 6-cı sinif, Fəsil 3: Alqoritmlər, Səh. 60-75",
+        "target_textbook_ref": "İnformatika 7-ci sinif, Fəsil 2: Alqoritmik strukturlar, Səh. 35-52",
+        "source_grade": 6,
+        "target_grade": 7
+      },
+      "formal_proof": null
+    },
+    "CAND-M01-MATH-IDENTITY": {
+      "candidate_id": "CAND-M01-MATH-IDENTITY",
+      "subject": "Riyaziyyat",
+      "source_node": "math_anlayis_ikideyisenli_xetti_tenlik",
+      "target_node": "math_anlayis_kvadrat_tenlik",
+      "relation_type": "MATHEMATICAL_DEPENDENCY",
+      "epistemic_verdict": "PROVEN",
+      "production_action": "PROMOTABLE_TO_ACTIVE_MATHEMATICAL_RULE",
+      "rationale": "Formal symbolic proof ratified in registry.",
+      "package_sha256": "4527e5c7e96405f104f648c837ccd1831cbac9ce84714af6d60addad480a6277",
+      "is_hard_remediation_permitted": true,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G7-1.2.4",
+        "target_standard": "AR-MATH-G8-1.2.5",
+        "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 3: Xətti tənliklər və tənliklər sistemi, Səh. 72-88",
+        "target_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+        "source_grade": 7,
+        "target_grade": 8
+      },
+      "formal_proof": {
+        "proof_id": "CAS-M01-DISC-01",
+        "method": "Closed-form Quadratic Formula Root Substitution",
+        "domain": "Univariate quadratic equations in R with D >= 0"
+      }
+    },
+    "CAND-M02-MATH-PARABOLA": {
+      "candidate_id": "CAND-M02-MATH-PARABOLA",
+      "subject": "Riyaziyyat",
+      "source_node": "math_usul_intervallar",
+      "target_node": "math_anlayis_kvadrat_berabersizlik",
+      "relation_type": "MATHEMATICAL_DEPENDENCY",
+      "epistemic_verdict": "PROVEN",
+      "production_action": "PROMOTABLE_TO_ACTIVE_MATHEMATICAL_RULE",
+      "rationale": "Formal symbolic proof ratified in registry.",
+      "package_sha256": "8a649ec8c09d54defc2dabf5b97d8c8d21c10657c92bb84814c4854d240a054b",
+      "is_hard_remediation_permitted": true,
+      "is_curriculum_supported": true,
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G8-1.2.3",
+        "target_standard": "AR-MATH-G9-1.2.4",
+        "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+        "target_textbook_ref": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+        "source_grade": 8,
+        "target_grade": 9
+      },
+      "formal_proof": {
+        "proof_id": "CAS-M02-PARABOLA-01",
+        "method": "Parabola Geometric Method Closed-Form Identity",
+        "domain": "Quadratics with exact coefficients in Q(sqrt(d))"
+      }
+    },
+    "CAND-ADVERSARIAL-GRADE-INVERSION": {
+      "candidate_id": "CAND-ADVERSARIAL-GRADE-INVERSION",
+      "subject": "Riyaziyyat",
+      "source_node": "math_anlayis_kvadrat_berabersizlik",
+      "target_node": "math_anlayis_kvadrat_tenlik",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "UNPROVEN",
+      "production_action": "NO_VALIDATED_PREREQUISITE_UNKNOWN_GREATER_THAN_WRONG",
+      "rationale": "Source grade 9 > target grade 8.",
+      "package_sha256": "487c5c5593fcf0a9d9ae4ea5a66d02370143fd7031c4dd3b0c21ea074bd810ec",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": false,
+      "curriculum_grounding": null,
+      "formal_proof": {
+        "proof_id": "CAS-M02-INTERVAL-01",
+        "method": "Interval Partitioning Sign Sampling Algorithm",
+        "domain": "Univariate continuous quadratic polynomials in R"
+      }
+    },
+    "CAND-ADVERSARIAL-UNMAPPED-TOPIC": {
+      "candidate_id": "CAND-ADVERSARIAL-UNMAPPED-TOPIC",
+      "subject": "Riyaziyyat",
+      "source_node": "math_fake_invented_topic",
+      "target_node": "math_anlayis_kvadrat_tenlik",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_verdict": "UNPROVEN",
+      "production_action": "NO_VALIDATED_PREREQUISITE_UNKNOWN_GREATER_THAN_WRONG",
+      "rationale": "Source 'math_fake_invented_topic' or target 'math_anlayis_kvadrat_tenlik' not found in canonical 'Riyaziyyat' corpus.",
+      "package_sha256": "b8274b5b03525eb2d846b81305a1adc9a06321d2443ca6fcb1ec0c60e165d75f",
+      "is_hard_remediation_permitted": false,
+      "is_curriculum_supported": false,
+      "curriculum_grounding": null,
+      "formal_proof": {
+        "proof_id": "CAS-M01-DISC-01",
+        "method": "Closed-form Quadratic Formula Root Substitution",
+        "domain": "Univariate quadratic equations in R with D >= 0"
+      }
+    }
+  }
+}

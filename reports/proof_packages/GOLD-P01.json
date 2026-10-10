@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-P01",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Fizika",
+  "source_node": "phy_nyuton_1",
+  "target_node": "phy_nyuton_2",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-PHYS-G7-1.2.1",
+    "target_standard": "AR-PHYS-G7-1.2.2",
+    "source_textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 64-72",
+    "target_textbook_ref": "Fizika 7-ci sinif, Fəsil 3: Qüvvə və Hərəkət, Səh. 74-82",
+    "explicit_textbook_dependency": true,
+    "source_grade": 7,
+    "target_grade": 7
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "fc651aa48aae7a8c27e6deb4fec3a306a96b5f81184942748ef1a700f9890aaa"
+}

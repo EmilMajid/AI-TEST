@@ -1,0 +1,56 @@
+{
+  "corpus_version": "1.0",
+  "subject": "Biologiya",
+  "national_curriculum_standard": "Azərbaycan Respublikası Ümumi Təhsil Fənn Standartları (2024)",
+  "textbook_series": "Dövlət Təhsil Nəşriyyatı",
+  "topics": {
+    "bio_huceyre_membrani": {
+      "standard_code": "AR-BIO-G6-1.1.1",
+      "grade": 6,
+      "topic_name": "Hüceyrə membranı və sitoplazma",
+      "textbook_ref": "Biologiya 6-cı sinif, Fəsil 1: Hüceyrə, Səh. 14-25",
+      "learning_outcomes": [
+        "1.1.1. Hüceyrə membranının quruluşunu və seçici keçiriciliyini izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "bio_canlilarin_qurulusu"
+      ]
+    },
+    "bio_osmos": {
+      "standard_code": "AR-BIO-G7-1.2.1",
+      "grade": 7,
+      "topic_name": "Maddələr mübadiləsi, diffuziya və osmos prosesi",
+      "textbook_ref": "Biologiya 7-ci sinif, Fəsil 2: Maddələr mübadiləsi, Səh. 38-50",
+      "learning_outcomes": [
+        "1.2.1. Membrandan maddələrin passiv və aktiv daşınmasını, osmos hadisəsini izah edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "bio_huceyre_membrani"
+      ]
+    },
+    "bio_mitoz": {
+      "standard_code": "AR-BIO-G8-2.1.1",
+      "grade": 8,
+      "topic_name": "Qeyri-cinsi çoxalma və hüceyrənin mitoz bölünməsi",
+      "textbook_ref": "Biologiya 8-ci sinif, Fəsil 3: Hüceyrə bölünməsi, Səh. 55-68",
+      "learning_outcomes": [
+        "2.1.1. Mitoz bölünmənin fazalarını və bioloji əhəmiyyətini şərh edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "bio_xromosom_qurulusu"
+      ]
+    },
+    "bio_meyoz": {
+      "standard_code": "AR-BIO-G9-2.1.2",
+      "grade": 9,
+      "topic_name": "Cinsi hüceyrələrin yaranması və meyoz bölünmə",
+      "textbook_ref": "Biologiya 9-cu sinif, Fəsil 2: Çoxalma və inkişaf, Səh. 40-56",
+      "learning_outcomes": [
+        "2.1.2. Meyoz bölünməni, qametogenezi və reduksion bölünməni mitoz ilə müqayisə edir."
+      ],
+      "explicit_curriculum_prerequisites": [
+        "bio_mitoz"
+      ]
+    }
+  }
+}

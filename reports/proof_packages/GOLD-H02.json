@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-H02",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Tarix",
+  "source_node": "his_feodal_munasibetleri",
+  "target_node": "his_sefevi_idareciliyi",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-HIS-G7-2.1.1",
+    "target_standard": "AR-HIS-G8-2.2.1",
+    "source_textbook_ref": "Azərbaycan tarixi 7-ci sinif, Fəsil 1: Erkən orta əsrlər, Səh. 15-35",
+    "target_textbook_ref": "Azərbaycan tarixi 8-ci sinif, Fəsil 2: Vahid Azərbaycan dövləti, Səh. 50-80",
+    "explicit_textbook_dependency": true,
+    "source_grade": 7,
+    "target_grade": 8
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "00f6250569b72ab846ae12afe4ff46bb62ab596e2255ea30c158a1d04b97777f"
+}

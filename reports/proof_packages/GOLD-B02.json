@@ -1,0 +1,31 @@
+{
+  "package_version": "1.0-AUTONOMOUS",
+  "candidate_id": "GOLD-B02",
+  "relation_type": "CURRICULUM_SEQUENCE",
+  "subject": "Biologiya",
+  "source_node": "bio_mitoz",
+  "target_node": "bio_meyoz",
+  "tier_1_formal": {
+    "tier_1_status": "NOT_APPLICABLE",
+    "reason": "Non-formal relation does not mandate CAS proof."
+  },
+  "tier_2_curriculum": {
+    "tier_2_status": "VERIFIED",
+    "source_standard": "AR-BIO-G8-2.1.1",
+    "target_standard": "AR-BIO-G9-2.1.2",
+    "source_textbook_ref": "Biologiya 8-ci sinif, Fəsil 3: Hüceyrə bölünməsi, Səh. 55-68",
+    "target_textbook_ref": "Biologiya 9-cu sinif, Fəsil 2: Çoxalma və inkişaf, Səh. 40-56",
+    "explicit_textbook_dependency": true,
+    "source_grade": 8,
+    "target_grade": 9
+  },
+  "tier_3_empirical": {
+    "tier_3_status": "DATA_ABSENT_PENDING_COHORT",
+    "reason": "Evaluation 'EMP-BKT-SHADOW-2026' is shadow/simulation; 0 verified student records.",
+    "cohort_size": 0
+  },
+  "epistemic_verdict": "SUPPORTED",
+  "production_action": "CURRICULUM_SEQUENCE_MAP_ONLY_NO_HARD_REMEDIATION",
+  "rationale": "Curriculum textbook sequence documented; non-blocking advisory.",
+  "package_sha256": "da53c13874358757575cc0924be905ba9ff9aa50de26054a7f1ed37720b53a0a"
+}
