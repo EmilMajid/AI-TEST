@@ -971,7 +971,18 @@ export default function ResultsPage() {
             <TabsContent value="questions" className="space-y-6">
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-semibold">Sual-cavab Təhlili</h3>
-                <Button variant="outline" onClick={() => setShowExplanations(!showExplanations)}>
+                <Button
+                  variant="outline"
+                  onClick={() => {
+                    const willShow = !showExplanations
+                    setShowExplanations(willShow)
+                    if (willShow && results?.questions) {
+                      setExpandedQuestions(new Set(results.questions.map((q) => q.id)))
+                    } else {
+                      setExpandedQuestions(new Set())
+                    }
+                  }}
+                >
                   <Eye className="h-4 w-4 mr-2" />
                   {showExplanations ? "İzahları Gizlət" : "İzahları Göstər"}
                 </Button>
