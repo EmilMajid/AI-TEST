@@ -167,3 +167,14 @@ export async function POST(request: NextRequest) {
         return errorResponse(error)
     }
 }
+
+export function addMessageDirect(msg: any) {
+    const newMessage = {
+        id: mockMessages.length + 1,
+        ...msg,
+        isRead: false,
+        createdAt: new Date().toISOString()
+    }
+    mockMessages.push(newMessage)
+    return newMessage
+}

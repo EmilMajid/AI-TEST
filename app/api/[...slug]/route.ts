@@ -17,10 +17,10 @@ import * as students_link from "@/lib/api-handlers/students/link/route"
 import * as students_results from "@/lib/api-handlers/students/results/route"
 import * as textbooks from "@/lib/api-handlers/textbooks/route"
 import * as textbooks_topics from "@/lib/api-handlers/textbooks/topics/route"
-import * as tts from "@/lib/api-handlers/tts/route"
 import * as users from "@/lib/api-handlers/users/route"
 import * as validate_key from "@/lib/api-handlers/validate-key/route"
 import * as validate_openai_key from "@/lib/api-handlers/validate-openai-key/route"
+import * as questions_report from "@/lib/api-handlers/questions/report/route"
 
 export async function GET(req: NextRequest, { params }: { params: { slug: string[] } }) {
   const slug = params.slug || []
@@ -36,8 +36,8 @@ export async function GET(req: NextRequest, { params }: { params: { slug: string
   if (path === "students/results" && students_results.GET) return students_results.GET(req)
   if (path === "textbooks" && textbooks.GET) return textbooks.GET(req)
   if (path === "textbooks/topics" && textbooks_topics.GET) return textbooks_topics.GET(req)
-  if (path === "tts" && tts.GET) return tts.GET(req)
   if (path === "users" && users.GET) return users.GET(req)
+  if (path === "questions/report" && questions_report.GET) return questions_report.GET()
 
   return NextResponse.json({ error: "Endpoint not found" }, { status: 404 })
 }
@@ -58,6 +58,7 @@ export async function POST(req: NextRequest, { params }: { params: { slug: strin
   if (path === "save-test-result" && save_test_result.POST) return save_test_result.POST(req)
   if (path === "search" && search.POST) return search.POST(req)
   if (path === "students/link" && students_link.POST) return students_link.POST(req)
+  if (path === "questions/report" && questions_report.POST) return questions_report.POST(req)
   if (path === "tts" && tts.POST) return tts.POST(req)
   if (path === "validate-key" && validate_key.POST) return validate_key.POST(req)
   if (path === "validate-openai-key" && validate_openai_key.POST) return validate_openai_key.POST(req)

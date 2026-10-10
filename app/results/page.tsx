@@ -25,6 +25,7 @@ import {
   Send,
   Loader2,
   AlertTriangle,
+  Flag,
   UserPlus,
 } from "lucide-react"
 import Link from "next/link"
@@ -243,6 +244,15 @@ export default function ResultsPage() {
   const [showInviteModal, setShowInviteModal] = useState(false)
   const [noParentLinked, setNoParentLinked] = useState(false)
   const [warnStatus, setWarnStatus] = useState<{ sent: boolean; message: string } | null>(null)
+  // Question report states
+  const [reportingQuestion, setReportingQuestion] = useState<any | null>(null)
+  const [reportIssueType, setReportIssueType] = useState<string>('wrong_key')
+  const [reportComment, setReportComment] = useState<string>('')
+  const [isSubmittingReport, setIsSubmittingReport] = useState<boolean>(false)
+  const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null)
+  const [reportErrorMsg, setReportErrorMsg] = useState<string | null>(null)
+  const [reportedQuestionIds, setReportedQuestionIds] = useState<Set<any>>(new Set())
+
 
   useEffect(() => {
     const storedResults = localStorage.getItem("testResults")
@@ -378,6 +388,63 @@ export default function ResultsPage() {
       newExpanded.add(questionId)
     }
     setExpandedQuestions(newExpanded)
+  }
+
+  
+  const handleOpenReportModal = (question: any) => {
+    setReportingQuestion(question)
+    setReportIssueType('wrong_key')
+    setReportComment('')
+    setReportSuccessMsg(null)
+    setReportErrorMsg(null)
+  }
+
+  const handleSubmitQuestionReport = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!reportingQuestion) return
+    if (!reportComment.trim() || reportComment.trim().length < 8) {
+      setReportErrorMsg('Zəhmət olmasa problemi ən azı 8 simvolla qeyd edin')
+      return
+    }
+
+    setIsSubmittingReport(true)
+    setReportErrorMsg(null)
+    try {
+      const user = getCurrentUser()
+      const res = await fetch('/api/questions/report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: reportingQuestion.id,
+          passportId: reportingQuestion.passport_id || reportingQuestion.id,
+          questionText: reportingQuestion.question,
+          subject: reportingQuestion.subject || results?.subject || 'Fənn',
+          grade: reportingQuestion.grade || results?.grade || '-',
+          topic: reportingQuestion.topic || results?.topic || '-',
+          studentId: user?.id || 'anon-student',
+          studentName: user ? `${user.firstName || ''} ${user.lastName || ''}`.trim() : 'Şagird',
+          studentEmail: user?.email,
+          issueType: reportIssueType,
+          comment: reportComment.trim()
+        })
+      })
+
+      const data = await res.json()
+      if (!res.ok) {
+        setReportErrorMsg(data.error || 'Xəta baş verdi')
+      } else {
+        setReportSuccessMsg('Müraciətiniz qeydə alındı! Metodistlərimiz yoxladıqdan sonra sizə bildiriş göndəriləcək.')
+        setReportedQuestionIds(prev => new Set(prev).add(reportingQuestion.id))
+        setTimeout(() => {
+          setReportingQuestion(null)
+          setReportSuccessMsg(null)
+        }, 2200)
+      }
+    } catch (err: any) {
+      setReportErrorMsg(err.message || 'Serverlə əlaqə qurulmadı')
+    } finally {
+      setIsSubmittingReport(false)
+    }
   }
 
   const formatTime = (seconds: number) => {
@@ -1016,6 +1083,16 @@ export default function ResultsPage() {
                           <div className="flex items-center space-x-2 ml-4">
                             <Badge className={getDifficultyColor(question.difficulty)}>{renderSafe(question.difficulty)}</Badge>
                             <Badge className={getBloomColor(question.bloomLevel)}>{renderSafe(question.bloomLevel)}</Badge>
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className={reportedQuestionIds.has(question.id) ? "text-green-600 hover:text-green-700 hover:bg-green-50" : "text-amber-600 hover:text-amber-700 hover:bg-amber-50"}
+                              title={reportedQuestionIds.has(question.id) ? "Problemli sual kimi qeydə alınıb" : "Problemli sual olduğunu bildir"}
+                              onClick={() => handleOpenReportModal(question)}
+                            >
+                              <Flag className="h-4 w-4 mr-1" />
+                              <span className="text-xs hidden sm:inline">{reportedQuestionIds.has(question.id) ? "Qeydə alınıb" : "Xəta Bildir"}</span>
+                            </Button>
                             <Button variant="ghost" size="sm" onClick={() => toggleQuestionExpansion(question.id)}>
                               {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                             </Button>
