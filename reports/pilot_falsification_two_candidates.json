@@ -1,0 +1,85 @@
+{
+  "report_version": "1.0-FALSIFICATION-EXPERIMENT",
+  "charter": "KAG Universal Remediation & Epistemic Constitution",
+  "candidates_tested_count": 2,
+  "summary": {
+    "PROVEN_NECESSITY": 0,
+    "SUPPORTED_AS_RECOMMENDATION": 2,
+    "UNPROVEN": 0,
+    "REJECTED": 0
+  },
+  "findings": [
+    {
+      "candidate_id": "CAND-PILOT-G7-LINFUN-TO-G9-ARITHSEQ",
+      "relation_name": "Xətti funksiya (7) -> Ədədi silsilə (9)",
+      "claimed_relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "mathematical_necessity_proven": false,
+      "counterexamples_count": 2,
+      "falsification_finding": "Ədədi silsilə üçün xətti funksiya zəruri önşərt deyil. Şagird funksiya anlayışı olmadan arifmetik düsturlarla bütün standart məsələləri tam həll edir.",
+      "epistemic_status": "SUPPORTED",
+      "advisory_classification": "CURRICULUM_SEQUENCE_TOWARDS_ADVANCED_SYNTHESIS",
+      "hard_remediation_permitted": false,
+      "verdict_rationale": "Dərslikdə ardıcıllıq var, fənlərarası və ya mövzulararası zənginləşdirmə kimi tövsiyə oluna bilər, lakin şagird üçün məcburi bloklayıcı PREREQUISITE deyil.",
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G7-2.1.1",
+        "source_textbook": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+        "target_standard": "AR-MATH-G9-1.1.3",
+        "target_textbook": "Riyaziyyat 9-cu sinif, Fəsil 4: Ədədi silsilə, Səh. 110-128",
+        "curriculum_relation": "Dərslik proqramında əvvəlki sinifdə tədris olunur, lakin fəsil mündəricatında silsilə təmiz arifmetik ardıcıllıq kimi daxil edilir.",
+        "curriculum_status": "VERIFIED_AS_SEQUENCE"
+      },
+      "counterexamples": [
+        {
+          "id": "CE-ARITH-01",
+          "task": "İlk həddi a_1 = 3, silsilə fərqi d = 4 olan ədədi silsilənin 5-ci həddini tapın.",
+          "solving_method_without_source": "Rekurent toplama: a_2=7, a_3=11, a_4=15, a_5=19. Və ya düstur: a_5 = 3 + 4*4 = 19.",
+          "requires_linear_function": false,
+          "required_prerequisite_instead": "Arifmetik vurma və toplama (5-ci sinif)"
+        },
+        {
+          "id": "CE-ARITH-02",
+          "task": "Ədədi silsilədə a_3 = 10, a_7 = 22 olarsa, silsilə fərqi d-ni tapın.",
+          "solving_method_without_source": "Fərq düsturu: 4d = a_7 - a_3 = 22 - 10 = 12 -> d = 3.",
+          "requires_linear_function": false,
+          "required_prerequisite_instead": "Sadə xətti tənlik (6-7-ci sinif), qrafik və ya funksiya deyil"
+        }
+      ]
+    },
+    {
+      "candidate_id": "CAND-PILOT-G8-QUADEQ-TO-G9-QUADINEQ",
+      "relation_name": "Kvadrat tənliklər (8) -> Kvadrat bərabərsizliklər (9)",
+      "claimed_relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "mathematical_necessity_proven": false,
+      "counterexamples_count": 2,
+      "falsification_finding": "Kvadrat bərabərsizliklər üçün kvadrat tənlik ümumi halda (D > 0 halında intervallar metodu üçün) çox əlverişli metodik alətdir, lakin mütləq riyazi zərurət deyil (D <= 0 və tam kvadrat hallarında tənliksiz həll olunur).",
+      "epistemic_status": "SUPPORTED",
+      "advisory_classification": "METHODOLOGICAL_TOOL_RECOMMENDED_NOT_STRICT_NECESSITY",
+      "hard_remediation_permitted": false,
+      "verdict_rationale": "Dərslikdə əsas üsul kimi öyrədilir, tövsiyə kimi çox güclüdür, lakin universal zərurət olmadığı üçün şagirdə cəzalandırıcı sərt bloklama qoyula bilməz.",
+      "curriculum_grounding": {
+        "source_standard": "AR-MATH-G8-1.2.5",
+        "source_textbook": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+        "target_standard": "AR-MATH-G9-1.2.4",
+        "target_textbook": "Riyaziyyat 9-cu sinif, Fəsil 2: Kvadrat bərabərsizliklər, Səh. 38-56",
+        "curriculum_relation": "Dərslikdə bərabərsizliklərin həllində intervallar üsulunda köklərin tapılması kvadrat tənliyin həllinə istinad edir.",
+        "curriculum_status": "VERIFIED_AS_ALGORITHMIC_METHOD"
+      },
+      "counterexamples": [
+        {
+          "id": "CE-QUADINEQ-01",
+          "task": "x^2 + 6x + 10 > 0 bərabərsizliyini həll edin.",
+          "solving_method_without_source": "Tam kvadrat ayırma: (x + 3)^2 + 1 > 0. Həmişə >= 1 > 0 olduğundan cavab (-∞; +∞). Heç bir tənlik kökü tapılmadı.",
+          "requires_quadratic_roots_algorithm": false,
+          "required_prerequisite_instead": "Müxtəsər vurma düsturu və tam kvadrat (7-ci sinif)"
+        },
+        {
+          "id": "CE-QUADINEQ-02",
+          "task": "(x - 1)^2 <= 0 bərabərsizliyini həll edin.",
+          "solving_method_without_source": "Kvadrat mənfi ola bilməz, yalnız sıfır ola bilər: x - 1 = 0 -> x = 1. Diskriminant və ya kvadrat tənlik alqoritmi tələb olunmur.",
+          "requires_quadratic_roots_algorithm": false,
+          "required_prerequisite_instead": "Kvadratın qeyri-mənfilik xassəsi (6-7-ci sinif)"
+        }
+      ]
+    }
+  ]
+}

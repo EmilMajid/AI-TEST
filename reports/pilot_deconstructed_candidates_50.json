@@ -1,0 +1,3419 @@
+{
+  "report_version": "1.0-PILOT-DECONSTRUCTION",
+  "charter": "KAG Universal Remediation & Epistemic Safety Constitution",
+  "pilot_scope": {
+    "subject": "Riyaziyyat",
+    "grade": 9,
+    "total_questions_analyzed": 50,
+    "target_topics_covered": [
+      "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "34. Kvadrat bərabərsizliklər və onların həlli",
+      "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "54. Əsas triqonometrik eyniliklər və çevirmə düsturları"
+    ],
+    "total_distractor_misconceptions_modeled": 150
+  },
+  "epistemic_invariants_enforced": {
+    "immutable_production_runtime": "lib/runtime-kag-guard.ts 0-byte diff",
+    "immutable_grade_ontologies": "data/grades/ 0-byte diff",
+    "active_gold_invariant": "NEW_ACTIVE_GOLD = 0 (STRICT HOLD)",
+    "supported_disclaimer": "SUPPORTED statusu yalnız dərsliklə əsaslandırılmış namizəd deməkdir, təsdiqlənmiş pedaqoji prerequisite deyil.",
+    "unknown_greater_than_wrong": "Sübut olunmayan heç bir əlaqə qəbul edilmir (UNKNOWN > WRONG)"
+  },
+  "statistics": {
+    "total_prerequisite_evaluations": 70,
+    "evaluation_breakdown": {
+      "SUPPORTED": 70,
+      "UNPROVEN": 0,
+      "REJECTED": 0
+    },
+    "unique_relation_candidates_count": 7
+  },
+  "unique_relation_candidates": [
+    {
+      "source_node": "math_anlayis_rasional_ededler",
+      "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+      "source_grade": 6,
+      "source_standard": "AR-MATH-G6-1.1.2",
+      "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+      "target_node": "math_anlayis_heqiqi_ededler",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.1.1",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+      "supporting_question_ids": [
+        900001,
+        900002,
+        900003,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008,
+        900009,
+        900010
+      ]
+    },
+    {
+      "source_node": "math_hesabi_kvadrat_kok",
+      "source_concept": "Hesabi kvadrat kök və xassələri",
+      "source_grade": 8,
+      "source_standard": "AR-MATH-G8-1.1.2",
+      "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+      "target_node": "math_anlayis_heqiqi_ededler",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.1.1",
+      "relation_type": "MATHEMATICAL_DEPENDENCY",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+      "supporting_question_ids": [
+        900001,
+        900002,
+        900003,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008,
+        900009,
+        900010
+      ]
+    },
+    {
+      "source_node": "math_anlayis_tam_eded_modul",
+      "source_concept": "Ədədin mütləq qiyməti (modulu)",
+      "source_grade": 6,
+      "source_standard": "AR-MATH-G6-1.1.4",
+      "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+      "target_node": "math_anlayis_ededin_modulu",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.1.2",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+      "supporting_question_ids": [
+        900016,
+        900017,
+        900018,
+        900019,
+        900020,
+        900021,
+        900022,
+        900023,
+        900024,
+        900025
+      ]
+    },
+    {
+      "source_node": "math_anlayis_kvadrat_tenlik",
+      "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+      "source_grade": 8,
+      "source_standard": "AR-MATH-G8-1.2.5",
+      "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+      "target_node": "math_anlayis_kvadrat_berabersizlik",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.2.4",
+      "relation_type": "MATHEMATICAL_DEPENDENCY",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+      "supporting_question_ids": [
+        900496,
+        900497,
+        900498,
+        900499,
+        900500,
+        900501,
+        900502,
+        900503,
+        900504,
+        900505
+      ]
+    },
+    {
+      "source_node": "math_usul_intervallar",
+      "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+      "source_grade": 8,
+      "source_standard": "AR-MATH-G8-1.2.3",
+      "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+      "target_node": "math_anlayis_kvadrat_berabersizlik",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.2.4",
+      "relation_type": "PEDAGOGICAL_PREREQUISITE",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+      "supporting_question_ids": [
+        900496,
+        900497,
+        900498,
+        900499,
+        900500,
+        900501,
+        900502,
+        900503,
+        900504,
+        900505
+      ]
+    },
+    {
+      "source_node": "math_anlayis_xetti_funksiya",
+      "source_concept": "Xətti funksiya və xətti asılılıqlar",
+      "source_grade": 7,
+      "source_standard": "AR-MATH-G7-2.1.1",
+      "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+      "target_node": "math_silsile_ededi",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-1.1.3",
+      "relation_type": "CURRICULUM_SEQUENCE",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+      "supporting_question_ids": [
+        900676,
+        900677,
+        900678,
+        900679,
+        900680,
+        900681,
+        900682,
+        900683,
+        900684,
+        900685
+      ]
+    },
+    {
+      "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+      "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+      "source_grade": 8,
+      "source_standard": "AR-MATH-G8-2.1.2",
+      "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+      "target_node": "math_eynilik_triqonometrik",
+      "target_grade": 9,
+      "target_standard": "AR-MATH-G9-2.2.1",
+      "relation_type": "MATHEMATICAL_DEPENDENCY",
+      "epistemic_status": "SUPPORTED",
+      "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)",
+      "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+      "supporting_question_ids": [
+        900796,
+        900797,
+        900798,
+        900799,
+        900800,
+        900801,
+        900802,
+        900803,
+        900804,
+        900805
+      ]
+    }
+  ],
+  "questions_deconstruction": [
+    {
+      "question_id": 900001,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "Hansı ədədlər çoxluğunun birləşməsinə həqiqi ədədlər çoxluğu (R) deyilir?",
+      "options": [
+        "Rasional ədədlər çoxluğu ilə irrasional ədədlər çoxluğunun birləşməsinə",
+        "Natural ədədlər çoxluğu ilə tam ədədlər çoxluğunun birləşməsinə",
+        "Yalnız müsbət kəsrlər ilə mənfi kəsrlərin cəminə",
+        "Mürəkkəb ədədlər ilə sadə ədədlər çoxluğunun hasilinə"
+      ],
+      "correct_answer": "A",
+      "explanation": "Həqiqi ədədlər çoxluğu rasional (Q) və irrasional (I) ədədlərin birləşməsidir: R = Q ∪ I.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900001-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900001-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Natural ədədlər çoxluğu ilə tam ədədlər çoxluğunun birləşməsinə",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Yalnız müsbət kəsrlər ilə mənfi kəsrlərin cəminə",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Mürəkkəb ədədlər ilə sadə ədədlər çoxluğunun hasilinə",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900002,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "Aşağıdakı ədədlərdən hansı irrasional ədəddir?",
+      "options": [
+        "0,(3)",
+        "√7",
+        "-5/8",
+        "√25"
+      ],
+      "correct_answer": "B",
+      "explanation": "Dövri olmayan sonsuz onluq kəsrlər və kökdən tam çıxmayan ədədlər irrasionaldır (√7 ∈ I).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900002-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900002-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "0,(3)",
+          "raw_distractor_diagnostic": "Yanlışdır (0,(3)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-5/8",
+          "raw_distractor_diagnostic": "Yanlışdır (-5/8). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "√25",
+          "raw_distractor_diagnostic": "Yanlışdır (√25). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900003,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "Dövri onluq kəsr 0,(18) hansı adi kəsrə bərabərdir?",
+      "options": [
+        "1/5",
+        "18/100",
+        "2/11",
+        "9/55"
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru cavab C variantıdır (2/11). 'Həqiqi ədədlər və onlar üzərində əməllər' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900003-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900003-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "1/5",
+          "raw_distractor_diagnostic": "Yanlışdır (1/5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "18/100",
+          "raw_distractor_diagnostic": "Yanlışdır (18/100). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "9/55",
+          "raw_distractor_diagnostic": "Yanlışdır (9/55). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900004,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "0,2(6) qarışıq dövri onluq kəsrini adi kəsrə çevirin:",
+      "options": [
+        "2/15",
+        "26/99",
+        "13/50",
+        "4/15"
+      ],
+      "correct_answer": "D",
+      "explanation": "0,2(6) = (26-2)/90 = 24/90 = 4/15.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900004-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900004-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "2/15",
+          "raw_distractor_diagnostic": "Yanlışdır (2/15). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "26/99",
+          "raw_distractor_diagnostic": "Yanlışdır (26/99). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "13/50",
+          "raw_distractor_diagnostic": "Yanlışdır (13/50). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900005,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "Rasional ədədlər (Q) və irrasional ədədlər (I) çoxluqlarının kəsişməsi nəyə bərabərdir?",
+      "options": [
+        "Boş çoxluğa: Q ∩ I = ∅",
+        "Sıfra bərabər olan bir nöqtəyə",
+        "Natural ədədlər çoxluğuna (N)",
+        "Tam ədədlər çoxluğuna (Z)"
+      ],
+      "correct_answer": "A",
+      "explanation": "Rasional və irrasional ədədlər çoxluğu ortaq elementə malik deyil, kəsişməsi boş çoxluqdur.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900005-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900005-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Sıfra bərabər olan bir nöqtəyə",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Natural ədədlər çoxluğuna (N)",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Tam ədədlər çoxluğuna (Z)",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900006,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "İki irrasional ədədin cəmi haqqında hansı fikir tamamilə doğrudur?",
+      "options": [
+        "Həmişə mütləq irrasional ədəd olmalıdır",
+        "Həm rasional, həm də irrasional ədəd ola bilər",
+        "Həmişə mütləq natural ədədə bərabərdir",
+        "Həmişə mənfi tam ədəd olmalıdır"
+      ],
+      "correct_answer": "B",
+      "explanation": "Məsələn, √2 + (-√2) = 0 (rasionaldır), lakin √2 + √3 irrasionaldır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900006-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900006-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "Həmişə mütləq irrasional ədəd olmalıdır",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Həmişə mütləq natural ədədə bərabərdir",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Həmişə mənfi tam ədəd olmalıdır",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900007,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "a = 3, b = √5 olarsa, (a + b)(a - b) ifadəsinin qiymətini tapın:",
+      "options": [
+        "9",
+        "14",
+        "4",
+        "2"
+      ],
+      "correct_answer": "C",
+      "explanation": "(a+b)(a-b) = a^2 - b^2 = 3^2 - (√5)^2 = 9 - 5 = 4.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900007-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900007-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "9",
+          "raw_distractor_diagnostic": "Yanlışdır (9). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "14",
+          "raw_distractor_diagnostic": "Yanlışdır (14). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "2",
+          "raw_distractor_diagnostic": "Yanlışdır (2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900008,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "(2 - √3)^2 + 4√3 ifadəsinin qiymətini hesablayın:",
+      "options": [
+        "7",
+        "1",
+        "7 + 8√3",
+        "4 - 4√3"
+      ],
+      "correct_answer": "D",
+      "explanation": "(2-√3)^2 + 4√3 = 4 - 4√3 + 3 + 4√3 = 7.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900008-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900008-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "7",
+          "raw_distractor_diagnostic": "Yanlışdır (7). Bu variant mövzunun tədris standartına uyğun deyil.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "1",
+          "raw_distractor_diagnostic": "Yanlışdır (1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "7 + 8√3",
+          "raw_distractor_diagnostic": "Yanlışdır (7 + 8√3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900009,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "a və b rasional ədədlər olduqda a + b√2 = 0 bərabərliyi hansı halda həmişə doğrudur?",
+      "options": [
+        "a = 0 və b = 0 olduqda",
+        "a = 2 və b = -1 olduqda",
+        "a = √2 və b = -1 olduqda",
+        "a = b = 1 olduqda"
+      ],
+      "correct_answer": "A",
+      "explanation": "a, b ∈ Q olduqda a + b√2 = 0 yalnız a = 0 və b = 0 olduqda mümkündür.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900009-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900009-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "a = 2 və b = -1 olduqda",
+          "raw_distractor_diagnostic": "Yanlışdır (a = 2 və b = -1 olduqda). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "definition_confusion",
+          "hypothesized_misconception_model": "Rasional və irrasional ədəd təriflərinin qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "a = √2 və b = -1 olduqda",
+          "raw_distractor_diagnostic": "Yanlışdır (a = √2 və b = -1 olduqda). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "a = b = 1 olduqda",
+          "raw_distractor_diagnostic": "Yanlışdır (a = b = 1 olduqda). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900010,
+      "topic": "1. Həqiqi ədədlər və onlar üzərində əməllər",
+      "question_text": "√18 - √8 + √50 ifadəsini sadələşdirin:",
+      "options": [
+        "4√2",
+        "6√2",
+        "5√2",
+        "8√2"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (6√2). 'Həqiqi ədədlər və onlar üzərində əməllər' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900010-math_anlayis_rasional_ededler",
+          "source_node": "math_anlayis_rasional_ededler",
+          "source_concept": "Rasional ədədlər və onlar üzərində əməllər",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Rasional ədədlər, Səh. 64-88",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi ədədləri mənimsəmək üçün rasional ədədlər çoxluğu (Q) və kəsr anlayışı baza şərtdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900010-math_hesabi_kvadrat_kok",
+          "source_node": "math_hesabi_kvadrat_kok",
+          "source_concept": "Hesabi kvadrat kök və xassələri",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 1: Hesabi kvadrat kök, Səh. 12-34",
+          "target_node": "math_anlayis_heqiqi_ededler",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "İrrasional ədədlərin (√a) tanınması və əməllər üçün 8-ci sinif kvadrat kök xassələri vacibdir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "4√2",
+          "raw_distractor_diagnostic": "Yanlışdır (4√2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi və müsbət ədədlərlə əməllərdə işarə xətası (6-cı sinif)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "5√2",
+          "raw_distractor_diagnostic": "Yanlışdır (5√2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_arithmetic",
+          "hypothesized_misconception_model": "Kökaltı ifadənin xassələrinin səhv tətbiqi (√(a+b) = √a + √b xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "8√2",
+          "raw_distractor_diagnostic": "Yanlışdır (8√2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "order_of_operations",
+          "hypothesized_misconception_model": "Əməllər sırasının pozulması və ya mərtəbə xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900016,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "Həqiqi ədədin mütləq qiymətinin (modulunun) tərifi necədir?",
+      "options": [
+        "Müsbət ədədin və sıfrın modulu özünə, mənfi ədədin modulu isə onun əksinə bərabərdir",
+        "İstənilən ədədin modulu həmişə mənfi ədədə bərabərdir",
+        "Ədədin modulu onun kvadratına bərabərdir",
+        "Yalnız tam ədədlər üçün modul sıfra bərabərdir"
+      ],
+      "correct_answer": "A",
+      "explanation": "|a| = a (a >= 0 olduqda), |a| = -a (a < 0 olduqda).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900016-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "İstənilən ədədin modulu həmişə mənfi ədədə bərabərdir",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Ədədin modulu onun kvadratına bərabərdir",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Yalnız tam ədədlər üçün modul sıfra bərabərdir",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900017,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "|-7,5| + |3,2| - |-4,3| ifadəsinin qiymətini hesablayın:",
+      "options": [
+        "15",
+        "6,4",
+        "0",
+        "-8,6"
+      ],
+      "correct_answer": "B",
+      "explanation": "7,5 + 3,2 - 4,3 = 10,7 - 4,3 = 6,4.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900017-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "15",
+          "raw_distractor_diagnostic": "Yanlışdır (15). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "0",
+          "raw_distractor_diagnostic": "Yanlışdır (0). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "-8,6",
+          "raw_distractor_diagnostic": "Yanlışdır (-8,6). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900018,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "Həndəsi olaraq ədədin modulu koordinat oxunda nəyi ifadə edir?",
+      "options": [
+        "Nöqtənin sağa doğru meyil bucağını",
+        "Ədədin vahid parçaya olan nisbətini",
+        "Koordinat başlanğıcından verilmiş ədədə uyğun nöqtəyə qədər olan məsafəni",
+        "Ədədin tərs qiymətinin koordinatını"
+      ],
+      "correct_answer": "C",
+      "explanation": "Ədədin mütləq qiyməti hesablama başlanğıcından həmin nöqtəyə qədər olan məsafədir.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900018-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "Nöqtənin sağa doğru meyil bucağını",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Ədədin vahid parçaya olan nisbətini",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Ədədin tərs qiymətinin koordinatını",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900019,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "x < 3 olduqda |x - 3| ifadəsini modulsuz yazın:",
+      "options": [
+        "-x - 3 fərqli D",
+        "x - 3",
+        "x + 3",
+        "3 - x"
+      ],
+      "correct_answer": "D",
+      "explanation": "x < 3 olduqda x - 3 < 0 olur, ona görə |x - 3| = -(x - 3) = 3 - x.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900019-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-x - 3 fərqli D",
+          "raw_distractor_diagnostic": "Yanlışdır (-x - 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "x - 3",
+          "raw_distractor_diagnostic": "Yanlışdır (x - 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "x + 3",
+          "raw_distractor_diagnostic": "Yanlışdır (x + 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900020,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "a < 0 olduqda |a| + a ifadəsinin qiyməti nəyə bərabərdir?",
+      "options": [
+        "0",
+        "2a",
+        "-2a fərqli C",
+        "a^2"
+      ],
+      "correct_answer": "A",
+      "explanation": "a < 0 olduqda |a| = -a, beləliklə -a + a = 0.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900020-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "2a",
+          "raw_distractor_diagnostic": "Yanlışdır (2a). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-2a fərqli C",
+          "raw_distractor_diagnostic": "Yanlışdır (-2a). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "a^2",
+          "raw_distractor_diagnostic": "Yanlışdır (a^2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900021,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "|x - 5| = 7 tənliyinin kökləri cəmini tapın:",
+      "options": [
+        "14",
+        "10",
+        "12",
+        "-2"
+      ],
+      "correct_answer": "B",
+      "explanation": "x - 5 = 7 -> x1 = 12; x - 5 = -7 -> x2 = -2. Cəm: 12 + (-2) = 10.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900021-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "14",
+          "raw_distractor_diagnostic": "Yanlışdır (14). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "12",
+          "raw_distractor_diagnostic": "Yanlışdır (12). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "-2",
+          "raw_distractor_diagnostic": "Yanlışdır (-2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900022,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "|2x + 1| = -4 tənliyinin həqiqi köklər çoxluğunu tapın:",
+      "options": [
+        "x = 1,5",
+        "x = -2,5",
+        "Boş çoxluq: ∅",
+        "x = -1,5 və x = 2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Modul mənfi qiymət ala bilməz, tənliyin həlli yoxdur.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900022-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "x = 1,5",
+          "raw_distractor_diagnostic": "Yanlışdır (x = 1,5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "x = -2,5",
+          "raw_distractor_diagnostic": "Yanlışdır (x = -2,5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "x = -1,5 və x = 2",
+          "raw_distractor_diagnostic": "Yanlışdır (x = -1,5 və x = 2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900023,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "2 < x < 5 olduqda |x - 2| + |x - 5| ifadəsinin qiymətini tapın:",
+      "options": [
+        "10",
+        "2x - 7",
+        "7 - 2x",
+        "3"
+      ],
+      "correct_answer": "D",
+      "explanation": "x-2 > 0 -> x-2; x-5 < 0 -> 5-x. Cəm: (x-2) + (5-x) = 3.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900023-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "10",
+          "raw_distractor_diagnostic": "Yanlışdır (10). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "2x - 7",
+          "raw_distractor_diagnostic": "Yanlışdır (2x - 7). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "7 - 2x",
+          "raw_distractor_diagnostic": "Yanlışdır (7 - 2x). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900024,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "|x^2 - 4| + |y + 3| = 0 olarsa, x^2 + y ifadəsinin qiymətini tapın:",
+      "options": [
+        "1",
+        "7",
+        "-1 fərqli C",
+        "4"
+      ],
+      "correct_answer": "A",
+      "explanation": "x^2 - 4 = 0 -> x^2 = 4; y + 3 = 0 -> y = -3. x^2 + y = 4 + (-3) = 1.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900024-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "7",
+          "raw_distractor_diagnostic": "Yanlışdır (7). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "radical_property",
+          "hypothesized_misconception_model": "√(x^2) = |x| eyniliyinin unudulması və x kimi çıxarılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-1 fərqli C",
+          "raw_distractor_diagnostic": "Yanlışdır (-1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "4",
+          "raw_distractor_diagnostic": "Yanlışdır (4). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900025,
+      "topic": "2. Həqiqi ədədin mütləq qiyməti (modulu)",
+      "question_text": "|x - 3| = x - 3 bərabərliyi x-in hansı qiymətlərində doğrudur?",
+      "options": [
+        "x > 3",
+        "x ≥ 3",
+        "x ≤ 3",
+        "x = 3"
+      ],
+      "correct_answer": "B",
+      "explanation": "|A| = A yalnız A >= 0 olduqda doğrudur: x - 3 >= 0 -> x >= 3.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900025-math_anlayis_tam_eded_modul",
+          "source_node": "math_anlayis_tam_eded_modul",
+          "source_concept": "Ədədin mütləq qiyməti (modulu)",
+          "source_grade": 6,
+          "source_standard": "AR-MATH-G6-1.1.4",
+          "source_textbook_ref": "Riyaziyyat 6-cı sinif, Fəsil 3: Tam ədədlər və modul, Səh. 70-76",
+          "target_node": "math_anlayis_ededin_modulu",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.2",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Həqiqi dəyişənli modul üçün ədəd oxunda məsafə və modulu tərifi 6-cı sinifdə qoyulur.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "x > 3",
+          "raw_distractor_diagnostic": "Yanlışdır (x > 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "x ≤ 3",
+          "raw_distractor_diagnostic": "Yanlışdır (x ≤ 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_split",
+          "hypothesized_misconception_model": "Dəyişənin işarəsinin nəzərə alınmaması (x < 0 halında |x| = -x)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "x = 3",
+          "raw_distractor_diagnostic": "Yanlışdır (x = 3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "sign_error",
+          "hypothesized_misconception_model": "Mənfi ədədin modulunun mənfi saxlanması və ya |-x| = -x yanlış fərziyyəsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900496,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 - 5x + 6 < 0 kvadrat bərabərsizliyinin həllər çoxluğunu tapın:",
+      "options": [
+        "(2; 3)",
+        "(-∞; 2) ∪ (3; +∞)",
+        "[-2; 3] fərqli C",
+        "[-3; -2]"
+      ],
+      "correct_answer": "A",
+      "explanation": "(x - 2)(x - 3) < 0 -> 2 < x < 3 -> (2; 3).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900496-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900496-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "(-∞; 2) ∪ (3; +∞)",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "[-2; 3] fərqli C",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "[-3; -2]",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900497,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 - 9 ≥ 0 bərabərsizliyinin həllini tapın:",
+      "options": [
+        "[-3; 3]",
+        "(-∞; -3] ∪ [3; +∞)",
+        "[3; +∞)",
+        "(-∞; -3]"
+      ],
+      "correct_answer": "B",
+      "explanation": "(x - 3)(x + 3) >= 0 -> x <= -3 və ya x >= 3.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900497-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900497-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "[-3; 3]",
+          "raw_distractor_diagnostic": "Yanlışdır ([-3; 3]). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "[3; +∞)",
+          "raw_distractor_diagnostic": "Yanlışdır ([3; +∞)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "(-∞; -3]",
+          "raw_distractor_diagnostic": "Yanlışdır ((-∞; -3]). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900498,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "-x^2 + 4x - 3 > 0 bərabərsizliyini həll edin:",
+      "options": [
+        "[-1; 3] fərqli C",
+        "(-∞; 1) ∪ (3; +∞)",
+        "(1; 3)",
+        "[-3; -1]"
+      ],
+      "correct_answer": "C",
+      "explanation": "Hər tərəfi -1-ə vursaq: x^2 - 4x + 3 < 0 -> (x - 1)(x - 3) < 0 -> (1; 3).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900498-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900498-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "[-1; 3] fərqli C",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "(-∞; 1) ∪ (3; +∞)",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "[-3; -1]",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900499,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 + 4 > 0 bərabərsizliyinin həllər çoxluğu hansıdır?",
+      "options": [
+        "Bütün həqiqi ədədlər: (-∞; +∞)",
+        "Boş çoxluq: ∅",
+        "[2; +∞)",
+        "(-2; 2)"
+      ],
+      "correct_answer": "D",
+      "explanation": "x^2 >= 0 olduğundan x^2 + 4 həmişə > 0-dır (R).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900499-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900499-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "Bütün həqiqi ədədlər: (-∞; +∞)",
+          "raw_distractor_diagnostic": "Yanlışdır (Bütün həqiqi ədədlər: (-∞; +∞)). Bu variant mövzunun tədris standartına uyğun deyil.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Boş çoxluq: ∅",
+          "raw_distractor_diagnostic": "Yanlışdır (Boş çoxluq: ∅). 'Kvadrat bərabərsizliklər və onların həlli' mövzusunun tədris standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "[2; +∞)",
+          "raw_distractor_diagnostic": "Yanlışdır ([2; +∞)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900500,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 + 2x + 5 < 0 bərabərsizliyinin həllini tapın:",
+      "options": [
+        "Boş çoxluq: ∅",
+        "(-∞; +∞)",
+        "(-5; 1)",
+        "x = -1"
+      ],
+      "correct_answer": "A",
+      "explanation": "a = 1 > 0 və D = 4 - 20 = -16 < 0 olduğundan parabola həmişə Ox-dən yuxarıdadır, mənfi qiymət ala bilməz (∅).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900500-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900500-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "(-∞; +∞)",
+          "raw_distractor_diagnostic": "Yanlışdır ((-∞; +∞)). 'Kvadrat bərabərsizliklər və onların həlli' mövzusunun tədris standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "(-5; 1)",
+          "raw_distractor_diagnostic": "Yanlışdır ((-5; 1)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "x = -1",
+          "raw_distractor_diagnostic": "Yanlışdır (x = -1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900501,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 - 6x + 9 ≤ 0 bərabərsizliyinin həllini tapın:",
+      "options": [
+        "∅",
+        "{3}",
+        "(3; +∞)",
+        "(-∞; 3]"
+      ],
+      "correct_answer": "B",
+      "explanation": "(x - 3)^2 <= 0 yalnız x = 3 olduqda sıfıra bərabərdir.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900501-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900501-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "∅",
+          "raw_distractor_diagnostic": "Yanlışdır (∅). 'Kvadrat bərabərsizliklər və onların həlli' mövzusunun tədris standartına uyğun deyil.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "(3; +∞)",
+          "raw_distractor_diagnostic": "Yanlışdır ((3; +∞)). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "(-∞; 3]",
+          "raw_distractor_diagnostic": "Yanlışdır ((-∞; 3]). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900502,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 - 8x + 12 ≤ 0 bərabərsizliyinin tam həllərinin cəmini tapın:",
+      "options": [
+        "14",
+        "18",
+        "20",
+        "24"
+      ],
+      "correct_answer": "C",
+      "explanation": "(x - 2)(x - 6) <= 0 -> x ∈ [2; 6]. Tam həllər: 2, 3, 4, 5, 6. Cəm = 2 + 3 + 4 + 5 + 6 = 20.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900502-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900502-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "14",
+          "raw_distractor_diagnostic": "Yanlışdır (14). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "18",
+          "raw_distractor_diagnostic": "Yanlışdır (18). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "24",
+          "raw_distractor_diagnostic": "Yanlışdır (24). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900503,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "2x^2 - 5x + 2 > 0 bərabərsizliyini həll edin:",
+      "options": [
+        "(-∞; 2)",
+        "(0.5; 2)",
+        "[0.5; 2] fərqli C",
+        "(-∞; 0.5) ∪ (2; +∞)"
+      ],
+      "correct_answer": "D",
+      "explanation": "(2x - 1)(x - 2) > 0 -> x < 0.5 və ya x > 2.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900503-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900503-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "(-∞; 2)",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "(0.5; 2)",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "[0.5; 2] fərqli C",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900504,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "x^2 - mx + 9 > 0 bərabərsizliyi x-in bütün həqiqi qiymətlərində ödənirsə, m hansı aralıqda yerləşməlidir?",
+      "options": [
+        "(-6; 6)",
+        "[-6; 6] fərqli B",
+        "(-∞; -6) ∪ (6; +∞)",
+        "m > 6"
+      ],
+      "correct_answer": "A",
+      "explanation": "a = 1 > 0 olduğundan D < 0 olmalıdır: m^2 - 36 < 0 -> -6 < m < 6.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900504-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900504-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "[-6; 6] fərqli B",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "boundary_inclusion",
+          "hypothesized_misconception_model": "Ciddi bərabərsizlikdə (<) sərhəd nöqtələrinin daxil edilməsi (parça ilə interval qarışması)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "(-∞; -6) ∪ (6; +∞)",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "m > 6",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900505,
+      "topic": "34. Kvadrat bərabərsizliklər və onların həlli",
+      "question_text": "(x - 2)^2 < 16 bərabərsizliyinin tam həllərinin sayını tapın:",
+      "options": [
+        "8",
+        "7",
+        "6",
+        "9"
+      ],
+      "correct_answer": "B",
+      "explanation": "|x - 2| < 4 -> -4 < x - 2 < 4 -> -2 < x < 6. Tam ədədlər: -1, 0, 1, 2, 3, 4, 5 (7 dənə).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900505-math_anlayis_kvadrat_tenlik",
+          "source_node": "math_anlayis_kvadrat_tenlik",
+          "source_concept": "Kvadrat tənliklər və onların köklərinin tapılması",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.5",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 4: Kvadrat tənliklər, Səh. 94-118",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Kvadrat bərabərsizliyi həll etmək üçün əvvəlcə uyğun kvadrat tənliyin sıfırları (kökləri) tapılmalıdır.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        },
+        {
+          "candidate_id": "CAND-Q900505-math_usul_intervallar",
+          "source_node": "math_usul_intervallar",
+          "source_concept": "Ədəd oxunda aralıqlar və intervallar üsulu",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-1.2.3",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 2: Bərabərsizliklər və aralıqlar, Səh. 45-62",
+          "target_node": "math_anlayis_kvadrat_berabersizlik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.2.4",
+          "relation_type": "PEDAGOGICAL_PREREQUISITE",
+          "pedagogical_claim": "İntervallar metodunda işarə təyini və aralıqların birləşdirilməsi 8-ci sinif bərabərsizlik bacarığına söykənir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "8",
+          "raw_distractor_diagnostic": "Yanlışdır (8). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "interval_inversion",
+          "hypothesized_misconception_model": "Bərabərsizlik işarəsi kiçikdir (<) olduqda köklərin daxili yerinə xarici aralığın seçilməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "6",
+          "raw_distractor_diagnostic": "Yanlışdır (6). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "root_factor_error",
+          "hypothesized_misconception_model": "Kvadrat üçhədlinin vuruqlara ayrılmasında işarə xətası (x-x1)(x-x2)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "9",
+          "raw_distractor_diagnostic": "Yanlışdır (9). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "leading_coefficient_neglect",
+          "hypothesized_misconception_model": "Baş əmsal mənfi (a < 0) olduqda işarənin dəyişdirilməsinin unudulması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900676,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "Ədədi silsilənin n-ci həddinin düsturu hansıdır?",
+      "options": [
+        "a_n = a_1 + (n - 1) · d",
+        "a_n = a_1 · d^{n-1}",
+        "a_n = a_1 + n · d",
+        "a_n = (a_1 + a_n) / 2"
+      ],
+      "correct_answer": "A",
+      "explanation": "Ədədi silsilənin n-ci hədd düsturu: a_n = a_1 + (n - 1)d.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900676-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "a_n = a_1 · d^{n-1}",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "a_n = a_1 + n · d",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "a_n = (a_1 + a_n) / 2",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: dərslik standartına uyğun deyil.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900677,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "İlk həddi a_1 = 3 və silsilə fərqi d = 4 olan ədədi silsilənin 10-cu həddini tapın:",
+      "options": [
+        "43",
+        "39",
+        "36",
+        "40"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (39). 'Ədədi silsilə və onun n-ci həddinin düsturu' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900677-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "43",
+          "raw_distractor_diagnostic": "Yanlışdır (43). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "36",
+          "raw_distractor_diagnostic": "Yanlışdır (36). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "40",
+          "raw_distractor_diagnostic": "Yanlışdır (40). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900678,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "Ədədi silsilə fərqi d hansı düsturla tapılır?",
+      "options": [
+        "d = a_{n+1} + a_n",
+        "d = a_{n+1} / a_n",
+        "d = a_{n+1} - a_n",
+        "d = a_n - a_1"
+      ],
+      "correct_answer": "C",
+      "explanation": "Silsilə fərqi istənilən qonşu iki həddin fərqidir: d = a_{n+1} - a_n.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900678-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "d = a_{n+1} + a_n",
+          "raw_distractor_diagnostic": "Yanlışdır (d = a_{n+1} + a_n). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "d = a_{n+1} / a_n",
+          "raw_distractor_diagnostic": "Yanlışdır (d = a_{n+1} / a_n). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "d = a_n - a_1",
+          "raw_distractor_diagnostic": "Yanlışdır (d = a_n - a_1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900679,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "a1 = 20 və d = -3 olarsa, bu ədədi silsilənin 7-ci həddini tapın:",
+      "options": [
+        "-3",
+        "-1",
+        "5",
+        "2"
+      ],
+      "correct_answer": "D",
+      "explanation": "a7 = 20 + 6*(-3) = 20 - 18 = 2.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900679-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-3",
+          "raw_distractor_diagnostic": "Yanlışdır (-3). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "-1",
+          "raw_distractor_diagnostic": "Yanlışdır (-1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "5",
+          "raw_distractor_diagnostic": "Yanlışdır (5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900680,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "Ədədi silsilədə a3 = 11 və a7 = 23 olarsa, silsilə fərqini (d) tapın:",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "6"
+      ],
+      "correct_answer": "A",
+      "explanation": "d = (a7 - a3)/(7 - 3) = (23 - 11)/4 = 12/4 = 3.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900680-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "4",
+          "raw_distractor_diagnostic": "Yanlışdır (4). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "2",
+          "raw_distractor_diagnostic": "Yanlışdır (2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "6",
+          "raw_distractor_diagnostic": "Yanlışdır (6). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900681,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "Ədədi silsilədə a5 = 18 və d = 2 olarsa, ilk həddi (a1) tapın:",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (10). 'Ədədi silsilə və onun n-ci həddinin düsturu' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900681-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "8",
+          "raw_distractor_diagnostic": "Yanlışdır (8). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "12",
+          "raw_distractor_diagnostic": "Yanlışdır (12). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "14",
+          "raw_distractor_diagnostic": "Yanlışdır (14). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900682,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "7, 11, 15, ... ədədi silsiləsinin 87-yə bərabər olan həddinin nömrəsini tapın:",
+      "options": [
+        "22",
+        "20",
+        "21",
+        "19"
+      ],
+      "correct_answer": "C",
+      "explanation": "a1 = 7, d = 4. 7 + 4(n - 1) = 87 -> 4(n - 1) = 80 -> n - 1 = 20 -> n = 21.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900682-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "22",
+          "raw_distractor_diagnostic": "Yanlışdır (22). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "20",
+          "raw_distractor_diagnostic": "Yanlışdır (20). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "19",
+          "raw_distractor_diagnostic": "Yanlışdır (19). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900683,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "d > 0 olduqda ədədi silsilə necə silsilə adlanır?",
+      "options": [
+        "Dövri silsilə",
+        "Azalan ədədi silsilə",
+        "Sabit silsilə",
+        "Artan ədədi silsilə"
+      ],
+      "correct_answer": "D",
+      "explanation": "d > 0 olduqda hər sonrakı hədd böyüyür (artan).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Bilik",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900683-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "Dövri silsilə",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Azalan ədədi silsilə",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Sabit silsilə",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900684,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "d < 0 olduqda ədədi silsilə necə silsilə adlanır?",
+      "options": [
+        "Azalan ədədi silsilə",
+        "Artan ədədi silsilə",
+        "Sonsuz silsilə",
+        "Məhdud silsilə"
+      ],
+      "correct_answer": "A",
+      "explanation": "d < 0 olduqda hər sonrakı hədd kiçilir (azalan).",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Bilik",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900684-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "Artan ədədi silsilə",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "difference_sign_error",
+          "hypothesized_misconception_model": "Silsilə fərqinin (d = a2 - a1) tapılmasında çıxılan və azalanın yerinin səhv salınması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "Sonsuz silsilə",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "Məhdud silsilə",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900685,
+      "topic": "46. Ədədi silsilə və onun n-ci həddinin düsturu",
+      "question_text": "50, 46, 42, ... ədədi silsiləsinin ilk mənfi həddini tapın:",
+      "options": [
+        "-4",
+        "-2",
+        "0",
+        "-6"
+      ],
+      "correct_answer": "B",
+      "explanation": "a1 = 50, d = -4. 50 - 4(n - 1) < 0 -> 4(n - 1) > 50 -> n - 1 > 12.5 -> n = 14. a14 = 50 - 4*13 = 50 - 52 = -2.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900685-math_anlayis_xetti_funksiya",
+          "source_node": "math_anlayis_xetti_funksiya",
+          "source_concept": "Xətti funksiya və xətti asılılıqlar",
+          "source_grade": 7,
+          "source_standard": "AR-MATH-G7-2.1.1",
+          "source_textbook_ref": "Riyaziyyat 7-ci sinif, Fəsil 2: Xətti funksiya, Səh. 48-68",
+          "target_node": "math_silsile_ededi",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-1.1.3",
+          "relation_type": "CURRICULUM_SEQUENCE",
+          "pedagogical_claim": "Ədədi silsilə natural arqumentli xətti funksiyadır (an = d*n + (a1-d)).",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-4",
+          "raw_distractor_diagnostic": "Yanlışdır (-4). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "0",
+          "raw_distractor_diagnostic": "Yanlışdır (0). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "arithmetic_computation",
+          "hypothesized_misconception_model": "Hədlərin vurulması və toplanmasında arifmetik hesablama xətası",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "-6",
+          "raw_distractor_diagnostic": "Yanlışdır (-6). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "formula_index_error",
+          "hypothesized_misconception_model": "n-ci hədd düsturunda (n-1)*d əvəzinə n*d yazılması (indeks xətası)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900796,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "Əsas triqonometrik eynilik hansıdır?",
+      "options": [
+        "sin^2 α + cos^2 α = 1",
+        "sin^2 α - cos^2 α = 1",
+        "sin α + cos α = 1",
+        "tg^2 α + 1 = cos^2 α"
+      ],
+      "correct_answer": "A",
+      "explanation": "İstənilən α üçün: sin^2 α + cos^2 α = 1.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900796-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "sin^2 α - cos^2 α = 1",
+          "raw_distractor_diagnostic": "Yanlışdır (sin^2 α - cos^2 α = 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "sin α + cos α = 1",
+          "raw_distractor_diagnostic": "Yanlışdır (sin α + cos α = 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "tg^2 α + 1 = cos^2 α",
+          "raw_distractor_diagnostic": "Yanlışdır (tg^2 α + 1 = cos^2 α). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900797,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "tg α və ctg α arasındakı əlaqə eyniliyi hansıdır?",
+      "options": [
+        "tg α + ctg α = 1",
+        "tg α · ctg α = 1",
+        "tg α / ctg α = 1",
+        "tg α - ctg α = 1"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (tg α · ctg α = 1). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900797-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "tg α + ctg α = 1",
+          "raw_distractor_diagnostic": "Yanlışdır (tg α + ctg α = 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "tg α / ctg α = 1",
+          "raw_distractor_diagnostic": "Yanlışdır (tg α / ctg α = 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "tg α - ctg α = 1",
+          "raw_distractor_diagnostic": "Yanlışdır (tg α - ctg α = 1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900798,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "sin α = 3/5 və 0° < α < 90° olarsa, cos α-nı tapın:",
+      "options": [
+        "2/5",
+        "-4/5 fərqli B",
+        "4/5",
+        "1/5"
+      ],
+      "correct_answer": "C",
+      "explanation": "cos α = √(1 - 9/25) = √(16/25) = 4/5.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900798-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "2/5",
+          "raw_distractor_diagnostic": "Yanlışdır (2/5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "-4/5 fərqli B",
+          "raw_distractor_diagnostic": "Yanlışdır (-4/5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "1/5",
+          "raw_distractor_diagnostic": "Yanlışdır (1/5). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900799,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "sin(180° - α) çevirmə düsturu nəyə bərabərdir?",
+      "options": [
+        "-cos α fərqli D",
+        "-sin α fərqli B",
+        "cos α",
+        "sin α"
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru cavab D variantıdır (sin α). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900799-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-cos α fərqli D",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "-sin α fərqli B",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "cos α",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900800,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "cos(180° - α) çevirmə düsturu nəyə bərabərdir?",
+      "options": [
+        "-cos α",
+        "cos α fərqli B",
+        "-sin α",
+        "sin α fərqli D"
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru cavab A variantıdır (-cos α). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900800-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "cos α fərqli B",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-sin α",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "sin α fərqli D",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900801,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "sin(90° - α) çevirmə düsturu nəyə bərabərdir?",
+      "options": [
+        "sin α",
+        "cos α",
+        "-cos α fərqli C",
+        "-sin α fərqli D"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (cos α). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900801-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "sin α",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-cos α fərqli C",
+          "raw_distractor_diagnostic": "C variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "-sin α fərqli D",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900802,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "cos(90° - α) çevirmə düsturu nəyə bərabərdir?",
+      "options": [
+        "-sin α fərqli C",
+        "cos α",
+        "sin α",
+        "tg α"
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru cavab C variantıdır (sin α). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900802-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-sin α fərqli C",
+          "raw_distractor_diagnostic": "A variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "cos α",
+          "raw_distractor_diagnostic": "B variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "tg α",
+          "raw_distractor_diagnostic": "D variantı yanlışdır: şagird bu kəmiyyəti və ya düsturu oxşar fiziki/riyazi xassələrlə qarışdıra bilər.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900803,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "1 + tg^2 α ifadəsi nəyə bərabərdir?",
+      "options": [
+        "sin^2 α",
+        "1 / sin^2 α",
+        "ctg^2 α",
+        "1 / cos^2 α"
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru cavab D variantıdır (1 / cos^2 α). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900803-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "sin^2 α",
+          "raw_distractor_diagnostic": "Yanlışdır (sin^2 α). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "B",
+          "distractor_value": "1 / sin^2 α",
+          "raw_distractor_diagnostic": "Yanlışdır (1 / sin^2 α). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "ctg^2 α",
+          "raw_distractor_diagnostic": "Yanlışdır (ctg^2 α). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900804,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "cos α = -5/13 və 90° < α < 180° olarsa, sin α-nı tapın:",
+      "options": [
+        "12/13",
+        "-12/13 fərqli B",
+        "5/13",
+        "1/13"
+      ],
+      "correct_answer": "A",
+      "explanation": "II rübdə sin > 0: sin α = √(1 - 25/169) = 12/13.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Tətbiq",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900804-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "B",
+          "distractor_value": "-12/13 fərqli B",
+          "raw_distractor_diagnostic": "Yanlışdır (-12/13). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "tangent_definition_inverted",
+          "hypothesized_misconception_model": "tg(a) = sin(a)/cos(a) əvəzinə cos(a)/sin(a) (ctg ilə çaşdırma)",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "5/13",
+          "raw_distractor_diagnostic": "Yanlışdır (5/13). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "1/13",
+          "raw_distractor_diagnostic": "Yanlışdır (1/13). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    },
+    {
+      "question_id": 900805,
+      "topic": "54. Əsas triqonometrik eyniliklər və çevirmə düsturları",
+      "question_text": "tg α = 2 olarsa, ctg α-nı tapın:",
+      "options": [
+        "-1/2 fərqli B",
+        "1/2",
+        "-2",
+        "1"
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru cavab B variantıdır (1/2). 'Əsas triqonometrik eyniliklər və çevirmə düsturları' mövzusunun nəzəri və praktiki qaydalarına əsasən, məsələnin şərtini və qanunauyğunluğunu dəqiq ödəyən nəticə məhz bu cavabdır.",
+      "measured_skill": "Riyazi hesablama, məntiqi mühakimə və tətbiq",
+      "bloom_level": "Anlama",
+      "solution_prerequisite_candidates": [
+        {
+          "candidate_id": "CAND-Q900805-math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+          "source_concept": "Düzbucaqlı üçbucaqda iti bucağın triqonometrik funksiyaları",
+          "source_grade": 8,
+          "source_standard": "AR-MATH-G8-2.1.2",
+          "source_textbook_ref": "Riyaziyyat 8-ci sinif, Fəsil 5: Düzbucaqlı üçbucaqda nisbətlər, Səh. 130-148",
+          "target_node": "math_eynilik_triqonometrik",
+          "target_grade": 9,
+          "target_standard": "AR-MATH-G9-2.2.1",
+          "relation_type": "MATHEMATICAL_DEPENDENCY",
+          "pedagogical_claim": "Pifaqor teoremi və düzbucaqlı üçbucaqda sin/cos tərifləri sin^2(x) + cos^2(x) = 1 bünövrəsidir.",
+          "epistemic_status": "SUPPORTED",
+          "gate_reason": "CURRICULUM_AND_TEXTBOOK_GROUNDED_CANDIDATE (Non-blocking, pedagogical prerequisite pending)"
+        }
+      ],
+      "distractor_misconceptions": [
+        {
+          "distractor_letter": "A",
+          "distractor_value": "-1/2 fərqli B",
+          "raw_distractor_diagnostic": "Yanlışdır (-1/2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "C",
+          "distractor_value": "-2",
+          "raw_distractor_diagnostic": "Yanlışdır (-2). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "quarter_sign_error",
+          "hypothesized_misconception_model": "Bucağın yerləşdiyi rübdən asılı olaraq funksiyanın işarəsinin təyin edilməməsi",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        },
+        {
+          "distractor_letter": "D",
+          "distractor_value": "1",
+          "raw_distractor_diagnostic": "Yanlışdır (1). Mərtəbə vahidləri və ya əməliyyat addımında hesablama xətası edilib.",
+          "hypothesized_misconception_key": "pythagorean_identity_error",
+          "hypothesized_misconception_model": "sin^2(a) + cos^2(a) = 1 eyniliyində dərəcə və ya işarə qarışdırılması",
+          "epistemic_note": "VARIANTIN_SECILMESI_SAGIRDIN_BU_SEHVI_ETDIYINI_SUBUT_ETMIR_YALNIZ_HIPOTEZDIR"
+        }
+      ]
+    }
+  ]
+}

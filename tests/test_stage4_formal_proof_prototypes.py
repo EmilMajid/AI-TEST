@@ -105,10 +105,16 @@ class TestStage4FormalProofPrototypes(unittest.TestCase):
                         "empirical_evaluation_id": "EMP-BKT-SHADOW-2026",
                         "details": "Verified"
                     }
-                elif c_type in {"CURRICULUM_SEQUENCE", "CROSS_SUBJECT_SYNERGY"}:
+                elif c_type in {"CURRICULUM_SEQUENCE", "PEDAGOGICAL_SUPPORT", "CROSS_SUBJECT_SYNERGY"}:
                     claim_id = "GOLD-M01-TOPIC-PREREQUISITE"
                     verif = {
                         "curriculum_source_standard": "AR-MATH-G8-1.2.5",
+                        "details": "Verified"
+                    }
+                elif c_type == "TASK_PREREQUISITE":
+                    claim_id = "GOLD-M01-FACTORING-METHOD"
+                    verif = {
+                        "formal_proof_id": "CAS-M01-FACT-01",
                         "details": "Verified"
                     }
                 elif c_type == "EMPIRICAL_ASSOCIATION":
@@ -121,10 +127,11 @@ class TestStage4FormalProofPrototypes(unittest.TestCase):
                     claim_id = "GOLD-M01-TOPIC-PREREQUISITE"
                     verif = {"details": "Default verification"}
 
+                scope_str = "Task: Specific quadratic factoring operation in Q[x]" if c_type == "TASK_PREREQUISITE" else "Standard verified operational domain for test evaluation"
                 record = {
                     "claim_id": claim_id,
                     "claim_type": c_type,
-                    "scope": "Standard verified operational domain for test evaluation",
+                    "scope": scope_str,
                     "method": "Formal algorithm verification pathway",
                     "verification": verif,
                     "evidence_status": ev_status,

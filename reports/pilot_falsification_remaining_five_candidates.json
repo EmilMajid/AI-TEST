@@ -1,0 +1,114 @@
+{
+  "report_version": "1.0-REMAINING-FIVE-FALSIFICATION",
+  "charter": "KAG Universal Remediation & Epistemic Safety Constitution",
+  "total_evaluated": 5,
+  "epistemic_invariants_enforced": {
+    "immutable_production_runtime": "lib/runtime-kag-guard.ts 0-byte diff",
+    "immutable_grade_ontologies": "data/grades/ 0-byte diff",
+    "active_gold_invariant": "NEW_ACTIVE_GOLD = 0 (STRICT HOLD)",
+    "task_level_granularity": "Mövzu səviyyəsində ümumiləşdirmə rədd edilir; sübut yalnız dar tapşırıq əhatə dairəsində keçərlidir.",
+    "hard_remediation_policy": "Universal zərurəti olmayan heç bir namizəd sərt bərpa yarada bilməz."
+  },
+  "findings": [
+    {
+      "candidate_id": "CAND-PILOT-G6-RAT-TO-G9-REAL",
+      "relation_name": "Rasional ədədlər (6) -> Həqiqi ədədlər (9)",
+      "source_node": "math_anlayis_rasional_ededler",
+      "target_node": "math_anlayis_heqiqi_ededler",
+      "claimed_universal_necessity": "Bütün həqiqi ədədlər məsələlərini həll etmək üçün 6-cı sinif kəsr və rasional ədəd əməlləri universal önşərtdir.",
+      "universal_necessity_proven": false,
+      "counterexamples": [
+        {
+          "task": "Aşağıdakılardan hansı irrasional ədəddir? Variantlar: A) pi, B) 0, C) 5, D) -2.",
+          "explanation": "Şagird kəsr hesablaması etmədən, sadəcə tərif/simvol biliyi ilə (pi və e-nin irrasional olması faktı) doğru cavabı tapır.",
+          "source_bypassed": true
+        }
+      ],
+      "granular_valid_scope": "Yalnız dövri onluq kəsrlərin adi kəsrə çevrilməsi və rasional-irrasional qarışıq hesablama tapşırıqları alt-tipi üçün zəruridir.",
+      "epistemic_status": "SUPPORTED",
+      "hard_remediation_permitted": false,
+      "pedagogical_verdict": "Mövzu səviyyəsində universal önşərt deyil; dar hesablama alt-tapşırıqları üçün metodik dayaqdır."
+    },
+    {
+      "candidate_id": "CAND-PILOT-G8-SQRT-TO-G9-REAL",
+      "relation_name": "Hesabi kvadrat kök (8) -> Həqiqi ədədlər (9)",
+      "source_node": "math_hesabi_kvadrat_kok",
+      "target_node": "math_anlayis_heqiqi_ededler",
+      "claimed_universal_necessity": "Həqiqi ədədləri tanımaq və təsnif etmək üçün mütləq 8-ci sinif kvadrat kök əməliyyatları bilinməlidir.",
+      "universal_necessity_proven": false,
+      "counterexamples": [
+        {
+          "task": "Rasional (Q) və irrasional (I) ədədlər çoxluqlarının kəsişməsini tapın.",
+          "explanation": "Q n I = boş çoxluq. Həll üçün heç bir kvadrat kök çıxarma və ya radikal hesablama tələb olunmur; yalnız çoxluqlar məntiqi kifayətdir.",
+          "source_bypassed": true
+        }
+      ],
+      "granular_valid_scope": "Yalnız kökaltı irrasional ifadələrin qiymətləndirilməsi (məs: 2 < sqrt(7) < 3) və radikalların müqayisəsi alt-tipi üçün zəruridir.",
+      "epistemic_status": "SUPPORTED",
+      "hard_remediation_permitted": false,
+      "pedagogical_verdict": "Mövzu səviyyəsində universal deyil; radikalların ədədi qiymətləndirilməsi tapşırıqlarında qüvvədədir."
+    },
+    {
+      "candidate_id": "CAND-PILOT-G6-ABS-TO-G9-ABS",
+      "relation_name": "Tam ədədin modulu (6) -> Həqiqi ədədin modulu (9)",
+      "source_node": "math_anlayis_tam_eded_modul",
+      "target_node": "math_anlayis_ededin_modulu",
+      "claimed_universal_necessity": "Dəyişənli modul ifadələrini sadələşdirmək üçün 6-cı sinif tam ədəd modulu universal önşərtdir.",
+      "universal_necessity_proven": false,
+      "counterexamples": [
+        {
+          "task": "x > 5 olduqda |x - 2| ifadəsini modulsuz yazın.",
+          "explanation": "x > 5 olduqda x - 2 > 3 > 0, birbaşa x - 2 kimi açılır. Şagird mənfi ədədin modulunu dəyişdirmə halına heç müraciət etmir.",
+          "source_bypassed": true
+        }
+      ],
+      "granular_valid_scope": "Ədəd oxunda məsafə tərifi və mənfi alt-aralıqda (|a| = -a halında) işarə açılışı tələb edən tapşırıqlar üçün zəruridir.",
+      "epistemic_status": "SUPPORTED",
+      "hard_remediation_permitted": false,
+      "pedagogical_verdict": "Tövsiyəvi metodik bünövrədir; aşkar müsbət dəyişən hallarında məcburi bloklayıcı deyil."
+    },
+    {
+      "candidate_id": "CAND-PILOT-G8-INT-TO-G9-QUADINEQ",
+      "relation_name": "İntervallar üsulu (8) -> Kvadrat bərabərsizliklər (9)",
+      "source_node": "math_usul_intervallar",
+      "target_node": "math_anlayis_kvadrat_berabersizlik",
+      "claimed_universal_necessity": "Bütün kvadrat bərabərsizlikləri həll etmək üçün intervallar üsulu universal yeganə yoldur.",
+      "universal_necessity_proven": false,
+      "counterexamples": [
+        {
+          "task": "x^2 < 9 bərabərsizliyini həll edin.",
+          "explanation": "|x| < 3 -> -3 < x < 3. İntervallar metodu çəkmədən, birbaşa modul xassəsi və ya parabola eskizi ilə həll edilir.",
+          "source_bypassed": true
+        },
+        {
+          "task": "x^2 + 5 > 0 bərabərsizliyini həll edin.",
+          "explanation": "Həmişə doğrudur, (-∞; +∞). İntervallara ayırmağa heç bir ehtiyac qalmır.",
+          "source_bypassed": true
+        }
+      ],
+      "granular_valid_scope": "İki fərqli həqiqi kökü olan (D > 0) və işarələrin dəyişməsini tələb edən ümumi üçhədlilər alt-tipi üçün zəruridir.",
+      "epistemic_status": "SUPPORTED",
+      "hard_remediation_permitted": false,
+      "pedagogical_verdict": "Metodik alətdir; xüsusi və aşkar hallarda tətbiqi zəruri deyil."
+    },
+    {
+      "candidate_id": "CAND-PILOT-G8-TRIGTRI-TO-G9-TRIGID",
+      "relation_name": "Düzbucaqlı üçbucaq triqonometriyası (8) -> Əsas triqonometrik eyniliklər (9)",
+      "source_node": "math_hendese_duzbucaqli_ucbucaq_triq",
+      "target_node": "math_eynilik_triqonometrik",
+      "claimed_universal_necessity": "Triqonometrik eynilikləri tətbiq etmək üçün şagird mütləq həndəsi düzbucaqlı üçbucaq tərəflərinin nisbətini bilməlidir.",
+      "universal_necessity_proven": false,
+      "counterexamples": [
+        {
+          "task": "(1 - sin^2 a) / cos^2 a ifadəsini sadələşdirin.",
+          "explanation": "cos^2 a / cos^2 a = 1. Şagird heç bir üçbucaq çəkmədən və katet/hipotenuz nisbətinə baxmadan, sırf cəbri əvəzetmə qaydası ilə həll edir.",
+          "source_bypassed": true
+        }
+      ],
+      "granular_valid_scope": "Triqonometrik funksiyaların həndəsi mənasının çıxarılışı və tərəf-bucaq əlaqəli həndəsi məsələlər alt-tipi üçün zəruridir.",
+      "epistemic_status": "SUPPORTED",
+      "hard_remediation_permitted": false,
+      "pedagogical_verdict": "Konseptual mənşə üçün vacibdir, lakin formal cəbri eyniliklərin sadələşdirilməsində məcburi önşərt kimi şagirdi bloklaya bilməz."
+    }
+  ]
+}
