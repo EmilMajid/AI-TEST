@@ -5,7 +5,20 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/about", "/privacy", "/terms", "/contact", "/blog", "/open-tests", "/az/", "/en/", "/tr/", "/ru/"],
+        allow: [
+          "/",
+          "/about",
+          "/privacy",
+          "/terms",
+          "/contact",
+          "/blog",
+          "/open-tests",
+          "/discoveries",
+          "/az/",
+          "/en/",
+          "/tr/",
+          "/ru/",
+        ],
         disallow: [
           "/admin/",
           "/api/",
@@ -21,7 +34,19 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Googlebot",
-        allow: ["/", "/about", "/privacy", "/terms", "/contact", "/blog", "/open-tests", "/az/", "/tr/", "/ru/"],
+        allow: [
+          "/",
+          "/about",
+          "/privacy",
+          "/terms",
+          "/contact",
+          "/blog",
+          "/open-tests",
+          "/discoveries",
+          "/az/",
+          "/tr/",
+          "/ru/",
+        ],
         disallow: [
           "/admin/",
           "/api/",

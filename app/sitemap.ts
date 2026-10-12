@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
 import { BLOG_POSTS } from "@/lib/blog-data"
+import { ALL_DISCOVERIES } from "@/lib/discoveries-data"
 import { DEFAULT_LOCALE } from "@/lib/config"
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const languages = ["az", "en", "tr", "ru"] as const
 
   // Base public pages
-  const staticRoutes = ["", "about", "privacy", "terms", "contact", "blog", "open-tests"]
+  const staticRoutes = ["", "about", "privacy", "terms", "contact", "blog", "open-tests", "discoveries"]
 
   const sitemapEntries: MetadataRoute.Sitemap = []
 
@@ -24,8 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       sitemapEntries.push({
         url,
         lastModified: now,
-        changeFrequency: route === "blog" || route === "" ? "daily" : "monthly",
-        priority: route === "" ? 1.0 : route === "blog" ? 0.9 : 0.8,
+        changeFrequency: route === "blog" || route === "discoveries" || route === "" ? "daily" : "monthly",
+        priority: route === "" ? 1.0 : route === "discoveries" || route === "blog" ? 0.9 : 0.8,
       })
     }
   }
@@ -43,6 +44,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(post.publishDate),
         changeFrequency: "weekly",
         priority: 0.85,
+      })
+    }
+  }
+
+  // Add all 50 scientific discovery pages in all languages
+  for (const discovery of ALL_DISCOVERIES) {
+    for (const lang of languages) {
+      const url =
+        lang === DEFAULT_LOCALE
+          ? `${baseUrl}/discoveries/${discovery.slug}`
+          : `${baseUrl}/${lang}/discoveries/${discovery.slug}`
+
+      sitemapEntries.push({
+        url,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: discovery.isNobel ? 0.9 : 0.85,
       })
     }
   }

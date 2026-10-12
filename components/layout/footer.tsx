@@ -14,6 +14,7 @@ const footerTexts: Record<Lang, {
   home: string
   aboutLink: string
   blogLink: string
+  discoveriesLink: string
   openTestsLink: string
   privacy: string
   terms: string
@@ -39,6 +40,7 @@ const footerTexts: Record<Lang, {
     home: "Ana Səhifə",
     aboutLink: "Haqqımızda (Missiyamız)",
     blogLink: "Bloq və Metodologiya",
+    discoveriesLink: "Elmi Kəşflər və İxtiralar (50 Kəşf)",
     openTestsLink: "Açıq Sınaqlar (Qeydiyyatsız)",
     privacy: "Məxfilik Siyasəti (Privacy Policy)",
     terms: "İstifadə Şərtləri (Terms of Service)",
@@ -64,6 +66,7 @@ const footerTexts: Record<Lang, {
     home: "Home",
     aboutLink: "About Us (Haqqımızda)",
     blogLink: "Blog & Methodology",
+    discoveriesLink: "Scientific Discoveries & Inventions (50)",
     openTestsLink: "Open Diagnostic Tests",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
@@ -89,6 +92,7 @@ const footerTexts: Record<Lang, {
     home: "Ana Sayfa",
     aboutLink: "Hakkımızda (About Us)",
     blogLink: "Blog ve Metodoloji",
+    discoveriesLink: "Bilimsel Keşifler ve İcatlar (50 Keşif)",
     openTestsLink: "Açık Dil Sınavları (Kayıtsız)",
     privacy: "Gizlilik Politikası (Privacy Policy)",
     terms: "Kullanım Şartları (Terms of Service)",
@@ -114,6 +118,7 @@ const footerTexts: Record<Lang, {
     home: "Главная страница",
     aboutLink: "О нас (About Us)",
     blogLink: "Блог и методология",
+    discoveriesLink: "Научные открытия и изобретения (50)",
     openTestsLink: "Открытые тесты (Без регистрации)",
     privacy: "Политика конфиденциальности (Privacy Policy)",
     terms: "Условия использования (Terms of Service)",
@@ -141,6 +146,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
   const homeHref = lang === DEFAULT_LOCALE ? "/" : `/${lang}`
   const aboutHref = lang === "az" ? "/about" : `/${lang}/about`
   const blogHref = lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`
+  const discoveriesHref = lang === DEFAULT_LOCALE ? "/discoveries" : `/${lang}/discoveries`
   const openTestsHref = lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`
   const privacyHref = lang === DEFAULT_LOCALE ? "/privacy" : `/${lang}/privacy`
   const termsHref = lang === DEFAULT_LOCALE ? "/terms" : `/${lang}/terms`
@@ -223,6 +229,11 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
               <li>
                 <Link href={blogHref} className="hover:text-white transition-colors text-indigo-400 font-semibold">
                   {t.blogLink}
+                </Link>
+              </li>
+              <li>
+                <Link href={discoveriesHref} className="hover:text-white transition-colors text-amber-400 font-semibold">
+                  {t.discoveriesLink}
                 </Link>
               </li>
               <li>
