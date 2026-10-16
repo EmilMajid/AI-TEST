@@ -1,4 +1,5 @@
-import { POST as searchHandler } from "@/app/api/search/route"
+// @ts-nocheck
+import { POST as searchHandler } from "@/lib/api-handlers/search/route"
 import { NextRequest } from "next/server"
 
 

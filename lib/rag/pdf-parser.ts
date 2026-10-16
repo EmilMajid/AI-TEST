@@ -1,6 +1,6 @@
 'use server'
 
-import type { RecursiveCharacterTextSplitter } from "langchain/text_splitter"
+
 
 export interface ParsedPDF {
   content: string

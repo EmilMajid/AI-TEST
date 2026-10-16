@@ -25,23 +25,37 @@ export async function POST(request: NextRequest) {
     const auth = await getAuthContext(request)
     const body = await request.json()
 
-    const studentId = auth?.user?.id || body.studentId || `student-${Date.now()}`
-    const studentEmail = (body.studentEmail || auth?.user?.email || "").trim()
-    const studentName = body.studentName || `${auth?.user?.id || "Şagird"}`
+    // Enforce student identity from authenticated session when present
+    const studentId = auth?.user?.id ? auth.user.id : (body.studentId || `student-${Date.now()}`)
+    const studentEmail = (auth?.user?.email || body.studentEmail || "").trim()
+    const studentName = body.studentName || (auth?.user?.id ? `Şagird-${auth.user.id}` : "Şagird")
     const uniqueId = body.uniqueId || ""
 
-    if (!body.textbook || body.score === undefined) {
+    if (!body.textbook) {
       return NextResponse.json(
-        { success: false, error: "Fənn və bal tələb olunur" },
+        { success: false, error: "Fənn tələb olunur" },
         { status: 400 }
       )
     }
 
-    const testScore = Math.max(0, Math.min(100, Number(body.score)))
+    // Server-side verification of answers and score
+    let totalQuestions = Number(body.totalQuestions || (body.detailedResults ? body.detailedResults.length : 10))
+    let correctAnswers = Number(body.correctAnswers || 0)
+    let testScore = Math.max(0, Math.min(100, Number(body.score || 0)))
+
+    if (Array.isArray(body.questions) && body.questions.length > 0 && body.answers && typeof body.answers === "object") {
+      let verifiedCorrect = 0
+      body.questions.forEach((q: any) => {
+        if (q && q.id !== undefined && body.answers[q.id] !== undefined && body.answers[q.id] === q.correctAnswer) {
+          verifiedCorrect++
+        }
+      })
+      totalQuestions = body.questions.length
+      correctAnswers = verifiedCorrect
+      testScore = Math.round((verifiedCorrect / totalQuestions) * 100)
+    }
     const timeSpentSeconds = Number(body.timeSpent || body.timeSpen || 60)
     const timeSpentMinutes = Math.max(1, Math.round(timeSpentSeconds / 60))
-    const totalQuestions = Number(body.totalQuestions || (body.detailedResults ? body.detailedResults.length : 10))
-    const correctAnswers = Number(body.correctAnswers || Math.round((testScore / 100) * totalQuestions))
     const testClass = String(body.class || "8")
 
     // 1. Resolve student user in Supabase

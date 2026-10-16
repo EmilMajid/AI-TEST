@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     const emailRes = await sendTestResultNotification({
       parentEmail: targetEmail,
       parentName: body.parentName || "Valideyn",
-      studentName: body.studentName || auth?.user?.firstName || "Şagird",
+      studentName: body.studentName || (auth?.user as any)?.firstName || "Şagird",
       studentClass: String(body.studentClass || body.class || ""),
       textbook: body.textbook || "Ümumi test",
       topic: body.topic || "Mövzu sınağı",

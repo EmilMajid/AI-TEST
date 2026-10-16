@@ -41,6 +41,7 @@ export interface StoredTestResult {
     correctAnswer?: number | string
     isCorrect: boolean
     explanation?: string
+    sourceContext?: string
     backward_trace?: any
     grounding?: any
     distractor_diagnostics?: any

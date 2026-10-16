@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
 import { type NextRequest, NextResponse } from "next/server"
-import { getOrCreateGoogleUser } from "@/lib/user-store"
+import { getOrCreateGoogleUser, saveUser } from "@/lib/user-store"
 import { generateAccessToken } from "@/lib/jwt"
 import { getUserUniqueId } from "@/lib/profile-utils"
 

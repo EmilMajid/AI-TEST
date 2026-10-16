@@ -21,12 +21,13 @@ import * as users from "@/lib/api-handlers/users/route"
 import * as validate_key from "@/lib/api-handlers/validate-key/route"
 import * as validate_openai_key from "@/lib/api-handlers/validate-openai-key/route"
 import * as questions_report from "@/lib/api-handlers/questions/report/route"
+import * as tts from "@/lib/api-handlers/tts/route"
 
 export async function GET(req: NextRequest, { params }: { params: { slug: string[] } }) {
   const slug = params.slug || []
   const path = slug.join("/")
 
-  if (path === "check-api-status" && check_api_status.GET) return check_api_status.GET(req)
+  if (path === "check-api-status" && check_api_status.GET) return check_api_status.GET()
   if (path === "messages" && messages.GET) return messages.GET(req)
   if (path === "parent-invite" && parent_invite.GET) return parent_invite.GET(req)
   if (path === "production-metrics" && production_metrics.GET) return production_metrics.GET(req)

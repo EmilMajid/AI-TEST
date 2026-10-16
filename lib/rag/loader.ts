@@ -1,5 +1,3 @@
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"
-
 export interface Document {
   id: string
   text: string
@@ -14,25 +12,35 @@ export interface ChunkedDocument {
 }
 
 /**
+ * Split text into chunks with size and overlap
+ */
+function splitTextIntoChunks(text: string, chunkSize: number, chunkOverlap: number): string[] {
+  if (text.length <= chunkSize) return [text]
+  const chunks: string[] = []
+  let start = 0
+  const step = Math.max(1, chunkSize - chunkOverlap)
+  while (start < text.length) {
+    const end = Math.min(start + chunkSize, text.length)
+    chunks.push(text.slice(start, end))
+    if (end >= text.length) break
+    start += step
+  }
+  return chunks
+}
+
+/**
  * Load and split documents into chunks for embedding
- * Uses RecursiveCharacterTextSplitter with customizable chunk size and overlap
  */
 export async function loadAndSplitDocuments(
   documents: Document[],
   chunkSize = 1000,
   chunkOverlap = 200,
 ): Promise<ChunkedDocument[]> {
-  const splitter = new RecursiveCharacterTextSplitter({
-    chunkSize,
-    chunkOverlap,
-    separators: ["\n\n", "\n", " ", ""],
-  })
-
   const chunkedDocs: ChunkedDocument[] = []
 
   for (const doc of documents) {
-    const chunks = await splitter.splitText(doc.text)
-    chunks.forEach((chunk, index) => {
+    const chunks = splitTextIntoChunks(doc.text, chunkSize, chunkOverlap)
+    chunks.forEach((chunk: string, index: number) => {
       chunkedDocs.push({
         id: `${doc.id}-chunk-${index}`,
         chunkIndex: index,

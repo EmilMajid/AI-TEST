@@ -14,13 +14,16 @@ import {
   supabaseAdmin
 } from "@/lib/user-store"
 
-const isDemoMode = true; // Forced for full mock mode
+const isDemoMode = process.env.NODE_ENV !== "production" && process.env.ENABLE_DEMO_MODE === "true";
 
 export async function POST(request: NextRequest) {
   try {
     const auth = await getAuthContext(request)
+    if (!auth || !auth.user) {
+      throw new AppError(ErrorCode.UNAUTHORIZED, "Giriş tələb olunur", 401)
+    }
     const body = await request.json()
-    const { studentEmail, relationshipType, studentDetails, parentId: reqParentId, parentEmail: reqParentEmail, password: reqPassword } = body
+    const { studentEmail, relationshipType, studentDetails, password: reqPassword } = body
 
     if (body.action === "sync") {
       const { parentId, parentEmail, links } = body
@@ -82,8 +85,8 @@ export async function POST(request: NextRequest) {
 
     if (isDemoMode) {
       const allUsers = getAllUsers()
-      const queryEmail = (auth && auth.user?.email) || reqParentEmail || ""
-      const queryId = (auth && auth.user?.id) || reqParentId || ""
+      const queryEmail = auth.user.email || ""
+      const queryId = auth.user.id
 
       // Find the user in allUsers by email or id
       const user = allUsers.find(
@@ -239,9 +242,10 @@ export async function POST(request: NextRequest) {
 
     // Only import Prisma when not in demo mode
     const { prisma } = await import("@/lib/db")
+    const parentIdNum = Number(auth.user.id)
 
     const parent = await prisma.user.findUnique({
-      where: { id: auth.user.id },
+      where: { id: parentIdNum },
     })
 
     if (!parent || (parent.accountType !== "parent" && !["teacher", "director"].includes(parent.role || ""))) {
@@ -259,7 +263,7 @@ export async function POST(request: NextRequest) {
     const existingLink = await prisma.parentStudentLink.findUnique({
       where: {
         parentId_studentId: {
-          parentId: auth.user.id,
+          parentId: parentIdNum,
           studentId: student.id,
         },
       },
@@ -272,7 +276,7 @@ export async function POST(request: NextRequest) {
     const link = await prisma.parentStudentLink.upsert({
       where: {
         parentId_studentId: {
-          parentId: auth.user.id,
+          parentId: parentIdNum,
           studentId: student.id,
         },
       },
@@ -281,7 +285,7 @@ export async function POST(request: NextRequest) {
         relationshipType,
       },
       create: {
-        parentId: auth.user.id,
+        parentId: parentIdNum,
         studentId: student.id,
         relationshipType,
         status: "active",
@@ -311,13 +315,12 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
-    const queryParentId = searchParams.get("parentId")
-    const queryEmail = searchParams.get("email")
-
     const auth = await getAuthContext(request)
-    const effectiveEmail = (auth?.user?.email || queryEmail || "").trim().toLowerCase()
-    const effectiveId = auth?.user?.id || queryParentId || ""
+    if (!auth || !auth.user) {
+      throw new AppError(ErrorCode.UNAUTHORIZED, "Giriş tələb olunur", 401)
+    }
+    const effectiveEmail = (auth.user.email || "").trim().toLowerCase()
+    const effectiveId = auth.user.id
 
     if (isDemoMode) {
       const allUsers = getAllUsers()
@@ -377,10 +380,11 @@ export async function GET(request: NextRequest) {
 
     // Only import Prisma when not in demo mode
     const { prisma } = await import("@/lib/db")
+    const parentIdNum = Number(auth.user.id)
 
     const links = await prisma.parentStudentLink.findMany({
       where: {
-        parentId: auth?.user?.id,
+        parentId: parentIdNum,
         status: "active",
       },
       include: {
@@ -392,7 +396,6 @@ export async function GET(request: NextRequest) {
             email: true,
             class: true,
             school: true,
-            timeSpent: true,
           },
         },
       },
@@ -404,7 +407,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      links: links.map((link: { id: number; student: { id: number; firstName: string; lastName: string; email: string; class: string; school: string | null }; relationshipType: string; linkedAt: Date }) => ({
+      links: links.map((link: any) => ({
         id: link.id,
         studentId: link.student.id,
         studentName: `${link.student.firstName} ${link.student.lastName}`,
@@ -423,6 +426,10 @@ export async function GET(request: NextRequest) {
 
 export async function DELETE(request: NextRequest) {
   try {
+    const auth = await getAuthContext(request)
+    if (!auth || !auth.user) {
+      throw new AppError(ErrorCode.UNAUTHORIZED, "Giriş tələb olunur", 401)
+    }
     const { searchParams } = new URL(request.url)
     const linkId = searchParams.get("linkId") || searchParams.get("studentId") || searchParams.get("id")
 
@@ -446,9 +453,6 @@ export async function DELETE(request: NextRequest) {
     }
 
     // Only import Prisma when not in demo mode
-    const auth = await requireAuth(request)
-    if (auth instanceof NextResponse) return auth
-
     const { prisma } = await import("@/lib/db")
 
     const link = await prisma.parentStudentLink.findUnique({
@@ -459,7 +463,7 @@ export async function DELETE(request: NextRequest) {
       throw new AppError(ErrorCode.NOT_FOUND, "Bağlantı tapılmadı", 404)
     }
 
-    if (link.parentId !== auth.user.id) {
+    if (link.parentId !== Number(auth.user.id)) {
       throw new AppError(ErrorCode.FORBIDDEN, "Bu bağlantını silməyə icazəniz yoxdur", 403)
     }
 
@@ -482,8 +486,11 @@ export async function DELETE(request: NextRequest) {
 export async function PUT(request: NextRequest) {
   try {
     const auth = await getAuthContext(request)
+    if (!auth || !auth.user) {
+      throw new AppError(ErrorCode.UNAUTHORIZED, "Giriş tələb olunur", 401)
+    }
     const body = await request.json()
-    const { linkId, studentId, parentId, parentEmail, firstName, lastName, fatherName, school, class: sClass, email } = body
+    const { linkId, studentId, firstName, lastName, fatherName, school, class: sClass, email } = body
 
     if (!studentId && !linkId) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, "Şagird ID və ya Link ID tələb olunur", 400)
@@ -491,16 +498,16 @@ export async function PUT(request: NextRequest) {
 
     if (isDemoMode) {
       const allUsers = getAllUsers()
-      const queryEmail = (auth && auth.user?.email) || parentEmail || ""
-      const queryId = (auth && auth.user?.id) || parentId || ""
+      const queryEmail = auth.user.email || ""
+      const queryId = auth.user.id
 
       const user = allUsers.find(
         (u) =>
           (queryEmail && u.email && u.email.toLowerCase() === queryEmail.toLowerCase()) ||
           (queryId && String(u.id) === String(queryId))
       )
-      const currentParentId = parentId || (user ? user.id : (queryId || "parent-1"))
-      const currentParentEmail = parentEmail || user?.email || queryEmail || ""
+      const currentParentId = user ? user.id : queryId
+      const currentParentEmail = user?.email || queryEmail
 
       const targetStudentId = studentId || `student-${Date.now()}`
 

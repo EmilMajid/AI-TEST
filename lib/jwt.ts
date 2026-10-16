@@ -14,24 +14,39 @@ export interface JWTPayload {
   role?: string
 }
 
-const KNOWN_SECRETS = [
-  JWT_SECRET,
-  "your-secret-key-change-in-production",
-  "demo-jwt-secret",
-  "demo-jwt-refresh-secret",
-  "super-secret-jwt-key-for-development-and-demo-mode-only",
-  "testai-jwt-secret-key-2024",
-]
+function getJwtSecret(): string {
+  const secret = process.env.JWT_SECRET
+  if (secret) return secret
+  if (process.env.NODE_ENV === "production") {
+    console.error("[Auth] CRITICAL: JWT_SECRET environment variable is missing in production!")
+    return ""
+  }
+  return "dev-only-fallback-jwt-secret-key-do-not-use-in-prod"
+}
+
+function getJwtRefreshSecret(): string {
+  const secret = process.env.JWT_REFRESH_SECRET
+  if (secret) return secret
+  if (process.env.NODE_ENV === "production") {
+    console.error("[Auth] CRITICAL: JWT_REFRESH_SECRET environment variable is missing in production!")
+    return ""
+  }
+  return "dev-only-fallback-refresh-secret-key-do-not-use-in-prod"
+}
 
 export function generateAccessToken(payload: JWTPayload): string {
-  return jwt.sign(payload, JWT_SECRET, {
+  const secret = getJwtSecret()
+  if (!secret) throw new Error("JWT_SECRET is not configured")
+  return jwt.sign(payload, secret, {
     expiresIn: ACCESS_TOKEN_EXPIRY,
     algorithm: "HS256",
   })
 }
 
 export function generateRefreshToken(payload: JWTPayload): string {
-  return jwt.sign(payload, JWT_REFRESH_SECRET, {
+  const secret = getJwtRefreshSecret()
+  if (!secret) throw new Error("JWT_REFRESH_SECRET is not configured")
+  return jwt.sign(payload, secret, {
     expiresIn: REFRESH_TOKEN_EXPIRY,
     algorithm: "HS256",
   })
@@ -39,24 +54,24 @@ export function generateRefreshToken(payload: JWTPayload): string {
 
 export function verifyAccessToken(token: string): JWTPayload | null {
   if (!token) return null
-  for (const s of KNOWN_SECRETS) {
-    if (!s) continue
-    try {
-      return jwt.verify(token, s) as JWTPayload
-    } catch {}
+  const secret = getJwtSecret()
+  if (!secret) return null
+  try {
+    return jwt.verify(token, secret) as JWTPayload
+  } catch {
+    return null
   }
-  return null
 }
 
 export function verifyRefreshToken(token: string): JWTPayload | null {
   if (!token) return null
-  for (const s of KNOWN_SECRETS) {
-    if (!s) continue
-    try {
-      return jwt.verify(token, s) as JWTPayload
-    } catch {}
+  const secret = getJwtRefreshSecret()
+  if (!secret) return null
+  try {
+    return jwt.verify(token, secret) as JWTPayload
+  } catch {
+    return null
   }
-  return null
 }
 
 export function decodeToken(token: string): JWTPayload | null {

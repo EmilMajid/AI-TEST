@@ -1,4 +1,4 @@
-import { POST } from "@/app/api/ingest/route"
+// @ts-nocheck
 import { NextRequest } from "next/server"
 import jest from "jest"
 

@@ -10,19 +10,7 @@ export async function POST(request: NextRequest) {
     const auth = await requireAuth(request)
     if (auth instanceof NextResponse) return auth
 
-    // Force Mock Response
     const body = await request.json()
-    console.log("[Mock Save] Saving test result:", body)
-    return NextResponse.json(
-      {
-        success: true,
-        message: "Test nəticəsi uğurla saxlanıldı (Mock)",
-        resultId: Math.floor(Math.random() * 10000),
-        savedAt: new Date(),
-      },
-      { status: 201 },
-    )
-
     const validatedData = testResultsSchema.parse(body)
 
     const testResult = await prisma.testResult.create({
@@ -61,23 +49,6 @@ export async function GET(request: NextRequest) {
   try {
     const auth = await requireAuth(request)
     if (auth instanceof NextResponse) return auth
-
-    // Force Mock Response
-    return NextResponse.json({
-      success: true,
-      results: [
-        {
-          id: 1,
-          textbook: "Mock Book",
-          topic: "Mock Topic",
-          class: "8",
-          score: 100,
-          timeSpent: 60,
-          completedAt: new Date(),
-          savedAt: new Date()
-        }
-      ],
-    })
 
     const results = await prisma.testResult.findMany({
       where: { userId: (auth as any).user.id },

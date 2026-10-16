@@ -10,6 +10,7 @@ const loginSchema = z.object({
   password: z.string().min(1, "Şifrə daxil edin"),
 })
 
+import bcrypt from "bcryptjs"
 import { MOCK_USERS } from "@/lib/mock-data"
 import { getAllUsers, saveUser, findUsers, StoredUser, supabaseAdmin, isMockUser } from "@/lib/user-store"
 
@@ -331,116 +332,82 @@ export async function POST(request: NextRequest) {
           String(user.id) === "student-inci" ||
           String(user.id) === "student-emilia";
 
-        let passwordValid = Boolean(
-          inputPassword && userPassword &&
-          (inputPassword === userPassword || inputPassword.toLowerCase() === userPassword.toLowerCase())
-        );
-
-        // 1. Admin login credentials (accepts test12345, admin123, Admin@123, admin, admin2026, 123456, etc.)
-        if (!passwordValid && isAdmin) {
-          const allowedAdminPasswords = [
-            "test12345",
-            "admin",
-            "admin123",
-            "Admin123",
-            "Admin@123",
-            "admin2026",
-            "Admin@2026",
-            "admin2025",
-            "admin2024",
-            "123456",
-            "adminadmin",
-            "Test@2026",
-          ];
-          if (
-            allowedAdminPasswords.includes(inputPassword) ||
-            inputPassword.toLowerCase() === "admin" ||
-            inputPassword.toLowerCase() === "admin123"
-          ) {
-            passwordValid = true;
+        let passwordValid = false;
+        if (inputPassword && userPassword) {
+          if (userPassword.startsWith("$2a$") || userPassword.startsWith("$2b$") || userPassword.startsWith("$2y$")) {
+            try {
+              passwordValid = bcrypt.compareSync(inputPassword, userPassword);
+            } catch {}
+          }
+          if (!passwordValid) {
+            passwordValid = (inputPassword === userPassword || inputPassword.toLowerCase() === userPassword.toLowerCase());
           }
         }
 
-        // 2. Real user Rufat Rzayev
+        // 1. Legitimate credentials for real user Rufat Rzayev
         if (!passwordValid && isRufat) {
           const allowedRufatPasswords = [
             "Rufat-141181",
             "rufat-141181",
             "Rufat141181",
-            "test12345",
-            "123456",
-            "Test@2026",
           ];
           if (allowedRufatPasswords.includes(inputPassword)) {
             passwordValid = true;
           }
         }
 
-        // 3. Real user Ayaz Rzayev
+        // 2. Legitimate credentials for real user Ayaz Rzayev
         if (!passwordValid && isAyaz) {
           const allowedAyazPasswords = [
             "Ayaz-020813",
             "ayaz-020813",
             "Ayaz020813",
-            "test12345",
-            "123456",
-            "Test@2026",
           ];
           if (allowedAyazPasswords.includes(inputPassword)) {
             passwordValid = true;
           }
         }
 
-        // 3b. Real user Araz Rzayev
+        // 3. Legitimate credentials for real user Araz Rzayev
         if (!passwordValid && isAraz) {
           const allowedArazPasswords = [
             "Araz-141115",
             "araz-141115",
             "Araz141115",
-            "test12345",
-            "123456",
-            "Test@2026",
           ];
           if (allowedArazPasswords.includes(inputPassword)) {
             passwordValid = true;
           }
         }
 
-        // 3c. Real user Jalə Qasımlı
+        // 4. Legitimate credentials for real user Jalə Qasımlı
         if (!passwordValid && isJale) {
           const allowedJalePasswords = [
             "Jale1990",
             "jale1990",
-            "test12345",
-            "123456",
-            "Test@2026",
           ];
           if (allowedJalePasswords.includes(inputPassword)) {
             passwordValid = true;
           }
         }
 
-        // 3d. Real user Mətin Qasımlı
+        // 5. Legitimate credentials for real user Mətin Qasımlı
         if (!passwordValid && isMetin) {
           const allowedMetinPasswords = [
             "Mətin2018",
             "metin2018",
             "Metin2018",
-            "test12345",
-            "123456",
-            "Test@2026",
           ];
           if (allowedMetinPasswords.includes(inputPassword)) {
             passwordValid = true;
           }
         }
 
-        // 3e. Real user Nərgiz İsmayıllı
+        // 6. Legitimate credentials for real user Nərgiz İsmayıllı
         if (!passwordValid && isNergiz) {
           const allowedNergizPasswords = [
-            "Test@2026",
-            "test12345",
-            "123456",
+            "Nergiz2026",
+            "nergiz2026",
           ];
           if (allowedNergizPasswords.includes(inputPassword)) {
             passwordValid = true;

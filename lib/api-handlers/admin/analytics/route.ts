@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
   if (auth instanceof NextResponse) return auth
 
   try {
-    const allUsers = getAllUsers(true)
+    const allUsers = getAllUsers({ includesMock: true })
     const realUsers = allUsers.filter(u => u.source === "real" || u.source === "admin")
     const students = allUsers.filter(u => u.role === "student" || u.accountType === "student")
     const parents = allUsers.filter(u => u.role === "parent" || u.accountType === "parent")

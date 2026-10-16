@@ -77,9 +77,13 @@ export async function GET(request: NextRequest) {
               )
             ) {
               allLinks.push({
+                id: sl.id || Date.now(),
                 parentId: sl.parentId,
                 parentEmail: parent?.email,
                 studentId: sl.studentId,
+                relationshipType: sl.relationshipType || "parent",
+                status: sl.status || "active",
+                linkedAt: sl.linkedAt || new Date().toISOString(),
                 student: student
                   ? {
                       id: student.id,
@@ -89,7 +93,12 @@ export async function GET(request: NextRequest) {
                       class: student.class,
                       school: student.school,
                     }
-                  : undefined,
+                  : {
+                      id: sl.studentId,
+                      email: "",
+                      firstName: "Şagird",
+                      lastName: "",
+                    },
               })
             }
           }

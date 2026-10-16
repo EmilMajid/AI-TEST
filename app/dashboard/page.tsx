@@ -275,7 +275,7 @@ export default function Dashboard() {
           </div>
 
           {currentView === 'messages' ? (
-            <MessagesTab userId={userData.id} userRole={userData.accountType} />
+            <MessagesTab userId={Number(userData.id)} userRole={userData.accountType} />
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Left Column - Test Configuration */}
@@ -623,13 +623,13 @@ export default function Dashboard() {
                             </Button>
                           </Link>
                           <Button
-                            variant={currentView === 'messages' ? 'default' : 'outline'}
+                            variant={(currentView as string) === 'messages' ? 'default' : 'outline'}
                             size="sm"
                             className="gap-2 h-10 px-3.5 font-semibold text-xs rounded-xl"
-                            onClick={() => setCurrentView(currentView === 'dashboard' ? 'messages' : 'dashboard')}
+                            onClick={() => setCurrentView((currentView as string) === 'dashboard' ? 'messages' : 'dashboard')}
                           >
-                            {currentView === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
-                            {currentView === 'dashboard' ? 'Mesajlar' : 'Panel'}
+                            {(currentView as string) === 'dashboard' ? <Mail className="h-4 w-4" /> : <LayoutDashboard className="h-4 w-4" />}
+                            {(currentView as string) === 'dashboard' ? 'Mesajlar' : 'Panel'}
                           </Button>
                         </div>
                         <Button

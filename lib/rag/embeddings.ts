@@ -1,10 +1,11 @@
+import { embed, embedMany } from "ai"
 import { embeddings } from "@/lib/ai"
 
 export async function generateEmbeddings(texts: string[]) {
   try {
-    const results = await embeddings.embedMany({
-      model: "openai/text-embedding-3-small",
-      texts,
+    const { embeddings: results } = await embedMany({
+      model: embeddings,
+      values: texts,
     })
     return results
   } catch (error) {
@@ -15,11 +16,11 @@ export async function generateEmbeddings(texts: string[]) {
 
 export async function generateEmbedding(text: string) {
   try {
-    const result = await embeddings.embed({
-      model: "openai/text-embedding-3-small",
+    const { embedding } = await embed({
+      model: embeddings,
       value: text,
     })
-    return result.embedding
+    return embedding
   } catch (error) {
     console.error("Error generating embedding:", error)
     throw error

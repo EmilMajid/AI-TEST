@@ -296,9 +296,13 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
                         (String(l.studentId) === String(sl.studentId) || (student?.email && l.student?.email?.toLowerCase() === student.email.toLowerCase()))
                     )) {
                         allLinks.push({
+                            id: sl.id || Date.now(),
                             parentId: sl.parentId,
                             parentEmail: parent?.email,
                             studentId: sl.studentId,
+                            relationshipType: sl.relationshipType || "parent",
+                            status: sl.status || "active",
+                            linkedAt: sl.linkedAt || new Date().toISOString(),
                             student: student ? {
                                 id: student.id,
                                 email: student.email,
@@ -306,7 +310,12 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
                                 lastName: student.lastName,
                                 class: student.class,
                                 school: student.school
-                            } : undefined
+                            } : {
+                                id: sl.studentId,
+                                email: "",
+                                firstName: "Şagird",
+                                lastName: ""
+                            }
                         })
                     }
                 }
