@@ -431,9 +431,9 @@ export async function POST(request: NextRequest) {
           }
         }
 
-        // 6. Generic test / demo platform password fallbacks for all active users
+        // 6. Generic fallback only for mock/demo users (source === "mock"), not real users
         const commonPasswords = ["test12345", "123456", "test123", "Test@2026", "test2026", "Test12345"];
-        if (!passwordValid && commonPasswords.includes(inputPassword)) {
+        if (!passwordValid && user.source === "mock" && commonPasswords.includes(inputPassword)) {
           passwordValid = true;
         }
 
@@ -451,10 +451,9 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        // Generate valid JWT
-        const numericId = typeof user.id === "number" ? user.id : (Number(String(user.id).replace(/\D/g, '')) || Date.now());
+        // Generate valid JWT — preserve original id (including string ids like "admin-main")
         const token = generateAccessToken({
-          id: numericId,
+          id: user.id as string | number,
           email: user.email,
           accountType: user.accountType,
           role: user.role || undefined

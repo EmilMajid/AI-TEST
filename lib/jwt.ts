@@ -4,8 +4,8 @@ import jwt from "jsonwebtoken"
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key-change-in-production"
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || "your-refresh-secret-key"
-const ACCESS_TOKEN_EXPIRY = "15m"
-const REFRESH_TOKEN_EXPIRY = "7d"
+const ACCESS_TOKEN_EXPIRY = "7d"
+const REFRESH_TOKEN_EXPIRY = "30d"
 
 export interface JWTPayload {
   id: number | string
