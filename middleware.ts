@@ -5,12 +5,6 @@ import { jwtVerify } from "jose"
 
 const KNOWN_SECRETS = [
   process.env.JWT_SECRET,
-  "testai-production-secret-jwt-key-azerbaijan-2024",
-  "dev-only-fallback-jwt-secret-key-do-not-use-in-prod",
-  "demo-jwt-secret",
-  "your-secret-key-change-in-production",
-  "super-secret-jwt-key-for-development-and-demo-mode-only",
-  "testai-jwt-secret-key-2024",
 ].filter(Boolean) as string[]
 
 async function verifyAdminFromRequest(request: NextRequest): Promise<boolean> {

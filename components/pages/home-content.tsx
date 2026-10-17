@@ -496,9 +496,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
             <span>{t.heroBadge}</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 sm:mb-5 px-2 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 sm:mb-5 px-2 tracking-tight">
             {t.heroTitle}
-          </h2>
+          </h1>
           <p className="text-sm sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2 leading-relaxed">
             {t.heroDesc}
           </p>

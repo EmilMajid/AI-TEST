@@ -1,0 +1,16 @@
+{
+  "name": "TESTAI.AZ",
+  "short_name": "TESTAI",
+  "description": "Dərslik əsaslı AI Təhsil və Diaqnostika Platforması",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
