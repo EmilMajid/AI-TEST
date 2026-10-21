@@ -169,7 +169,7 @@ export function DiscoveryViewer({
           <div className="flex items-center gap-3">
             <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center gap-2">
               <div className="relative h-8 w-8">
-                <Image src="/logo.jpg" alt="TESTAI.AZ" fill className="object-contain rounded-lg" />
+                <Image src="/logo.webp" alt="TESTAI.AZ" fill className="object-contain rounded-lg" />
               </div>
               <span className="font-bold text-slate-900 text-lg tracking-tight">TESTAI.AZ</span>
             </Link>

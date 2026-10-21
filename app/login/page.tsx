@@ -319,7 +319,7 @@ export default function LoginPage() {
             <div className="flex flex-col items-center justify-center mb-6 text-center">
               <div className="relative h-20 w-20 sm:h-24 sm:w-24 mb-3 p-1.5 rounded-2xl bg-white/95 shadow-xl border-2 border-primary/20 backdrop-blur-md overflow-hidden transition-transform hover:scale-105">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="TESTAI.AZ Logo"
                   fill
                   className="object-contain rounded-xl p-1"

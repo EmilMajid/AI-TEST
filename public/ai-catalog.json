@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/schemas/v1/ai-catalog.json",
+  "name": "TESTAI.AZ Agent Catalog",
+  "description": "Agentic discovery manifest for TESTAI.AZ — AI Educational & Diagnostic Testing Platform",
+  "url": "https://www.testai.az",
+  "version": "1.0.0",
+  "provider": {
+    "name": "TESTAI.AZ",
+    "url": "https://www.testai.az",
+    "email": "aztestai.az@gmail.com"
+  },
+  "capabilities": [
+    {
+      "id": "educational-testing",
+      "type": "diagnostic_assessment",
+      "description": "Formative and summative diagnostic assessments aligned with Azerbaijani national curriculum standards.",
+      "supportedGrades": [5, 6, 7, 8, 9, 10, 11],
+      "supportedLanguages": ["az", "en", "tr", "ru"]
+    },
+    {
+      "id": "remediation-knowledge-graph",
+      "type": "cognitive_gap_analysis",
+      "description": "Curriculum-grounded backward prerequisite diagnosis resolving student learning misconceptions."
+    }
+  ],
+  "resources": [
+    {
+      "name": "Documentation & Mission",
+      "type": "text/markdown",
+      "url": "https://www.testai.az/llms.txt"
+    },
+    {
+      "name": "Public Discoveries",
+      "type": "text/html",
+      "url": "https://www.testai.az/discoveries"
+    },
+    {
+      "name": "Pedagogical Research",
+      "type": "text/html",
+      "url": "https://www.testai.az/blog"
+    }
+  ]
+}

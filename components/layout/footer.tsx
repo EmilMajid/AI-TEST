@@ -144,7 +144,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
   const t = footerTexts[lang] || footerTexts[DEFAULT_LOCALE]
 
   const homeHref = lang === DEFAULT_LOCALE ? "/" : `/${lang}`
-  const aboutHref = lang === "az" ? "/about" : `/${lang}/about`
+  const aboutHref = lang === DEFAULT_LOCALE ? "/about" : `/${lang}/about`
   const blogHref = lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`
   const discoveriesHref = lang === DEFAULT_LOCALE ? "/discoveries" : `/${lang}/discoveries`
   const openTestsHref = lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`
@@ -161,9 +161,10 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
             <div className="flex items-center gap-3">
               <div className="relative h-9 w-9">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="TESTAI.AZ Logo"
                   fill
+                  sizes="36px"
                   className="object-contain rounded-lg"
                 />
               </div>
@@ -178,7 +179,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Səhifəsi"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
               >
                 <Instagram className="w-4 h-4" />
               </a>
@@ -187,7 +188,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Səhifəsi"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -196,14 +197,14 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube Kanalı"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#FF0000] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-[#FF0000] text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
               >
                 <Youtube className="w-4 h-4" />
               </a>
               <a
                 href="mailto:aztestai.az@gmail.com"
                 aria-label="Email Dəstək"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-xs"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -318,12 +319,12 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
               </div>
               <div>
                 <span className="block text-slate-400 text-xs mb-1">{t.socialMedia}</span>
-                <div className="space-y-1">
+                <div className="space-y-2.5 pt-0.5">
                   <a
                     href="https://www.instagram.com/testai.az/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-pink-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-pink-400 transition-colors inline-flex items-center gap-2 py-1 px-0.5"
                   >
                     <Instagram className="w-3.5 h-3.5 text-pink-500 shrink-0" />
                     <span>@testai.az</span>
@@ -332,7 +333,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                     href="https://www.facebook.com/profile.php?id=61594359745552"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-blue-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-blue-400 transition-colors inline-flex items-center gap-2 py-1 px-0.5"
                   >
                     <Facebook className="w-3.5 h-3.5 text-blue-500 shrink-0" />
                     <span>TESTAI.AZ (Facebook)</span>
@@ -341,7 +342,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                     href="https://www.youtube.com/channel/UCSsFhuYKk6MHdLna05kfJrA"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-red-400 transition-colors inline-flex items-center gap-2 py-1 px-0.5"
                   >
                     <Youtube className="w-3.5 h-3.5 text-red-500 shrink-0" />
                     <span>TESTAI.AZ (YouTube)</span>

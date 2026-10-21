@@ -347,7 +347,7 @@ export default function RegisterPage() {
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="relative h-9 w-9 sm:h-12 sm:w-12 p-0.5 rounded-xl bg-white shadow-sm border border-primary/20 overflow-hidden shrink-0">
                   <Image
-                    src="/logo.jpg"
+                    src="/logo.webp"
                     alt="TESTAI.AZ Logo"
                     fill
                     className="object-contain rounded-lg p-0.5"

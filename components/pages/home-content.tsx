@@ -386,9 +386,10 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
             <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center group shrink-0">
               <div className="relative h-8 w-8 sm:h-9 sm:w-9 mr-1.5 sm:mr-2.5 transition-transform group-hover:scale-105">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="TESTAI.AZ Logo"
                   fill
+                  sizes="(max-width: 640px) 32px, 36px"
                   className="object-contain rounded-md"
                   priority
                 />
@@ -530,9 +531,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">
                 {t.aboutSectionBadge}
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
                 {t.aboutSectionTitle}
-              </h3>
+              </h2>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 {t.aboutSectionP1}
               </p>
@@ -618,9 +619,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 text-primary text-xs font-semibold mb-3">
               {t.communityBadge}
             </span>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
               {t.communityTitle}
-            </h3>
+            </h2>
             <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
               {t.communityDesc}
             </p>
@@ -639,14 +640,14 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
                     <Instagram className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-semibold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-full group-hover:bg-pink-100 transition-colors">
+                  <span className="text-[11px] font-semibold text-pink-700 bg-pink-100/90 px-2.5 py-1 rounded-full group-hover:bg-pink-200/80 transition-colors">
                     @testai.az
                   </span>
                 </div>
                 <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-pink-600 transition-colors">
                   Instagram
                 </h4>
-                <p className="text-xs text-gray-500 mb-4 leading-relaxed">
+                <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Gündəlik test sualları, dərslik izahları və interaktiv viktorinalar."}
                   {lang === "en" && "Daily test questions, curriculum insights, and interactive stories."}
                   {lang === "tr" && "Günlük test soruları, ders kitabı özetleri ve mini sınavlar."}
@@ -671,14 +672,14 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   <div className="w-11 h-11 rounded-xl bg-[#1877F2] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
                     <Facebook className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full group-hover:bg-blue-100 transition-colors">
+                  <span className="text-[11px] font-semibold text-blue-700 bg-blue-100/90 px-2.5 py-1 rounded-full group-hover:bg-blue-200/80 transition-colors">
                     TESTAI.AZ
                   </span>
                 </div>
                 <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
                   Facebook
                 </h4>
-                <p className="text-xs text-gray-500 mb-4 leading-relaxed">
+                <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Təhsil xəbərləri, rəsmi elanlar, valideyn və müəllimlər üçün bələdçilər."}
                   {lang === "en" && "Educational news, official announcements, and parent guides."}
                   {lang === "tr" && "Eğitim haberleri, duyurular ve veli rehberleri."}
@@ -703,14 +704,14 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   <div className="w-11 h-11 rounded-xl bg-[#FF0000] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
                     <Youtube className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-semibold text-red-600 bg-red-50 px-2.5 py-1 rounded-full group-hover:bg-red-100 transition-colors">
+                  <span className="text-[11px] font-semibold text-red-700 bg-red-100/90 px-2.5 py-1 rounded-full group-hover:bg-red-200/80 transition-colors">
                     YouTube
                   </span>
                 </div>
                 <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
                   YouTube
                 </h4>
-                <p className="text-xs text-gray-500 mb-4 leading-relaxed">
+                <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Video dərslər, sınaq testlərinin video izahları və təhsil bələdçiləri."}
                   {lang === "en" && "Video tutorials, mock exam walkthroughs, and learning guides."}
                   {lang === "tr" && "Video dersler, test çözümleri ve eğitim ipuçları."}
@@ -733,7 +734,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   <div className="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full group-hover:bg-emerald-100 transition-colors">
+                  <span className="text-[11px] font-semibold text-emerald-800 bg-emerald-100/90 px-2.5 py-1 rounded-full group-hover:bg-emerald-200/80 transition-colors">
                     {lang === "az" && "Dəstək"}
                     {lang === "en" && "Support"}
                     {lang === "tr" && "Destek"}
@@ -743,7 +744,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                 <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">
                   {t.officialEmail}
                 </h4>
-                <p className="text-xs text-gray-500 mb-4 break-all leading-relaxed">
+                <p className="text-xs text-gray-600 mb-4 break-all leading-relaxed">
                   aztestai.az@gmail.com
                 </p>
               </div>

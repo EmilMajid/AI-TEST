@@ -49,9 +49,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/logo.webp" },
       { url: "/logo.jpg" },
     ],
-    apple: [{ url: "/logo.jpg" }],
+    apple: [{ url: "/logo.webp" },
+      { url: "/logo.jpg" }],
   },
   manifest: "/site.webmanifest",
   alternates: {
@@ -80,6 +82,8 @@ export default function RootLayout({
     <html lang={DEFAULT_LOCALE} className="notranslate" translate="no">
       <head>
         <meta name="google" content="notranslate" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
       </head>
       <body className="pb-16 sm:pb-20">
         {/* Google Consent Mode v2 Default Directive */}
@@ -102,7 +106,7 @@ export default function RootLayout({
         {/* Google AdSense Script */}
         <Script
           id="adsbygoogle-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
         />
@@ -143,7 +147,7 @@ export default function RootLayout({
         {/* Meta Pixel Code */}
         <Script
           id="meta-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)

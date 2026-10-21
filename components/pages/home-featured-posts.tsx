@@ -67,9 +67,9 @@ export function HomeFeaturedPosts({ lang }: HomeFeaturedPostsProps) {
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
             <span>{ui.badge}</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             {ui.title}
-          </h3>
+          </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
             {ui.subtitle}
           </p>
@@ -102,7 +102,7 @@ export function HomeFeaturedPosts({ lang }: HomeFeaturedPostsProps) {
                     <BookOpen className="w-3.5 h-3.5" />
                     {tr.category}
                   </span>
-                  <span className="inline-flex items-center gap-1 text-slate-400 text-[11px]">
+                  <span className="inline-flex items-center gap-1 text-slate-600 text-xs font-medium">
                     <Clock className="w-3.5 h-3.5" />
                     {tr.readTime}
                   </span>
@@ -120,7 +120,7 @@ export function HomeFeaturedPosts({ lang }: HomeFeaturedPostsProps) {
                   {post.tags.slice(0, 3).map((tag) => (
                     <span
                       key={tag}
-                      className="inline-flex items-center gap-1 text-[10px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-700 bg-slate-200/80 px-2 py-0.5 rounded-md"
                     >
                       <Tag className="w-2.5 h-2.5" />
                       {tag}
@@ -130,7 +130,7 @@ export function HomeFeaturedPosts({ lang }: HomeFeaturedPostsProps) {
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-[11px] text-slate-400">{post.publishDate}</span>
+                <span className="text-xs font-medium text-slate-600">{post.publishDate}</span>
                 <Link
                   href={articleUrl}
                   className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 group-hover:translate-x-0.5 transition-transform"
