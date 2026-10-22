@@ -4,21 +4,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
+        // Bütün crawlerlər: ictimai hissə açıq, privat bölmələr qapalı
         userAgent: "*",
-        allow: [
-          "/",
-          "/about",
-          "/privacy",
-          "/terms",
-          "/contact",
-          "/blog",
-          "/open-tests",
-          "/discoveries",
-          "/az/",
-          "/en/",
-          "/tr/",
-          "/ru/",
-        ],
+        allow: "/",
         disallow: [
           "/admin/",
           "/api/",
@@ -31,30 +19,6 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "Mediapartners-Google",
         allow: "/",
-      },
-      {
-        userAgent: "Googlebot",
-        allow: [
-          "/",
-          "/about",
-          "/privacy",
-          "/terms",
-          "/contact",
-          "/blog",
-          "/open-tests",
-          "/discoveries",
-          "/az/",
-          "/tr/",
-          "/ru/",
-        ],
-        disallow: [
-          "/admin/",
-          "/api/",
-          "/dashboard/",
-          "/parent-dashboard/",
-          "/profile/",
-          "/setup/",
-        ],
       },
     ],
     sitemap: "https://www.testai.az/sitemap.xml",
