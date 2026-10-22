@@ -108,9 +108,9 @@ export function HomeFeaturedPosts({ lang }: HomeFeaturedPostsProps) {
                   </span>
                 </div>
 
-                <h4 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">
                   <Link href={articleUrl}>{tr.title}</Link>
-                </h4>
+                </h3>
 
                 <p className="text-xs sm:text-sm text-slate-600 line-clamp-3 leading-relaxed">
                   {tr.summary}

@@ -161,7 +161,7 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
             <div className="flex items-center gap-3">
               <div className="relative h-9 w-9">
                 <Image
-                  src="/logo.webp"
+                  src="/logo-sm.webp"
                   alt="TESTAI.AZ Logo"
                   fill
                   sizes="36px"

@@ -386,10 +386,10 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
             <Link href={lang === DEFAULT_LOCALE ? "/" : `/${lang}`} className="flex items-center group shrink-0">
               <div className="relative h-8 w-8 sm:h-9 sm:w-9 mr-1.5 sm:mr-2.5 transition-transform group-hover:scale-105">
                 <Image
-                  src="/logo.webp"
+                  src="/logo-sm.webp"
                   alt="TESTAI.AZ Logo"
                   fill
-                  sizes="(max-width: 640px) 32px, 36px"
+                  sizes="36px"
                   className="object-contain rounded-md"
                   priority
                 />
@@ -509,7 +509,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                 {t.startBtn}
               </button>
             </Link>
-            <Link href={lang === "az" ? "/open-tests" : `/${lang}/open-tests`}>
+            <Link href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`}>
               <button className="text-sm sm:text-base px-5 sm:px-7 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl font-bold hover:opacity-95 shadow-md transition-all cursor-pointer flex items-center gap-2">
                 <span className="text-base">🇬🇧 🇩🇪 🇫🇷 🇷🇺</span>
                 <span>{t.openTestsLink}</span>
@@ -597,7 +597,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                 <div className="bg-primary/10 text-primary rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                   {step.num}
                 </div>
-                <h4 className="text-base sm:text-lg font-bold mb-2 text-slate-900">{step.title}</h4>
+                <h3 className="text-base sm:text-lg font-bold mb-2 text-slate-900">{step.title}</h3>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -644,9 +644,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                     @testai.az
                   </span>
                 </div>
-                <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-pink-600 transition-colors">
+                <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-pink-600 transition-colors">
                   Instagram
-                </h4>
+                </h3>
                 <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Gündəlik test sualları, dərslik izahları və interaktiv viktorinalar."}
                   {lang === "en" && "Daily test questions, curriculum insights, and interactive stories."}
@@ -654,7 +654,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   {lang === "ru" && "Ежедневные тесты, разборы учебных тем и викторины."}
                 </p>
               </div>
-              <div className="flex items-center text-xs font-semibold text-pink-600 group-hover:translate-x-1 transition-transform">
+              <div className="flex items-center text-xs font-bold text-pink-800 group-hover:translate-x-1 transition-transform">
                 <span>{t.socialFollow}</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </div>
@@ -676,9 +676,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                     TESTAI.AZ
                   </span>
                 </div>
-                <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
                   Facebook
-                </h4>
+                </h3>
                 <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Təhsil xəbərləri, rəsmi elanlar, valideyn və müəllimlər üçün bələdçilər."}
                   {lang === "en" && "Educational news, official announcements, and parent guides."}
@@ -686,7 +686,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   {lang === "ru" && "Новости образования, объявления и полезные руководства для родителей."}
                 </p>
               </div>
-              <div className="flex items-center text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
+              <div className="flex items-center text-xs font-bold text-blue-800 group-hover:translate-x-1 transition-transform">
                 <span>{t.socialVisit}</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </div>
@@ -708,9 +708,9 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                     YouTube
                   </span>
                 </div>
-                <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
+                <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
                   YouTube
-                </h4>
+                </h3>
                 <p className="text-xs text-gray-600 mb-4 leading-relaxed">
                   {lang === "az" && "Video dərslər, sınaq testlərinin video izahları və təhsil bələdçiləri."}
                   {lang === "en" && "Video tutorials, mock exam walkthroughs, and learning guides."}
@@ -718,7 +718,7 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                   {lang === "ru" && "Видеоуроки, подробные видеоразборы тестов и советы."}
                 </p>
               </div>
-              <div className="flex items-center text-xs font-semibold text-red-600 group-hover:translate-x-1 transition-transform">
+              <div className="flex items-center text-xs font-bold text-red-800 group-hover:translate-x-1 transition-transform">
                 <span>{t.socialSubscribe}</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </div>
@@ -741,14 +741,14 @@ export function HomeContent({ initialLang = DEFAULT_LOCALE }: { initialLang?: La
                     {lang === "ru" && "Поддержка"}
                   </span>
                 </div>
-                <h4 className="text-base font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">
+                <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-emerald-700 transition-colors">
                   {t.officialEmail}
-                </h4>
+                </h3>
                 <p className="text-xs text-gray-600 mb-4 break-all leading-relaxed">
                   aztestai.az@gmail.com
                 </p>
               </div>
-              <div className="flex items-center text-xs font-semibold text-emerald-600 group-hover:translate-x-1 transition-transform">
+              <div className="flex items-center text-xs font-bold text-emerald-800 group-hover:translate-x-1 transition-transform">
                 <span>{t.socialWrite}</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </div>

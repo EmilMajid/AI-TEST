@@ -154,9 +154,18 @@ export default function RootLayout({
               {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
               n.callMethod.apply(n,arguments):n.queue.push(arguments)};
               if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              n.queue=[];
+              var loadScript=function(){
+                t=b.createElement(e);t.async=!0;t.src=v;
+                s=b.getElementsByTagName(e)[0];
+                if(s&&s.parentNode){s.parentNode.insertBefore(t,s);}
+              };
+              if('requestIdleCallback' in window){
+                requestIdleCallback(function(){setTimeout(loadScript,1200);});
+              }else{
+                setTimeout(loadScript,1500);
+              }
+              }(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '2027404764555987');
               fbq('track', 'PageView');

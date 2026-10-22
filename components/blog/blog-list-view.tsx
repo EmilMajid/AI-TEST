@@ -141,7 +141,7 @@ export function BlogListView({ initialLang = DEFAULT_LOCALE }: BlogListViewProps
         <div className="grid md:grid-cols-2 gap-6">
           {filteredPosts.map((post) => {
             const tr = post.translations[lang] || post.translations.az
-            const articleLink = lang === "az" ? `/blog/${post.slug}` : `/${lang}/blog/${post.slug}`
+            const articleLink = lang === DEFAULT_LOCALE ? `/blog/${post.slug}` : `/${lang}/blog/${post.slug}`
             return (
               <article
                 key={post.slug}
