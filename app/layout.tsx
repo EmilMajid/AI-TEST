@@ -36,14 +36,14 @@ export const metadata: Metadata = {
       "Curriculum-aligned AI educational testing, diagnostic assessment, and personalized learning analytics for students, parents, and educators.",
     url: "https://www.testai.az",
     siteName: "TESTAI.AZ",
-    locale: "az_AZ",
+    locale: "en_US",
     type: "website",
     images: [
       {
         url: "https://www.testai.az/brand-promo.jpg",
         width: 1200,
         height: 630,
-        alt: "TESTAI.AZ — AI Təhsil və Diaqnostika Platforması",
+        alt: "TESTAI.AZ — AI Educational & Diagnostic Testing Platform",
       },
     ],
   },

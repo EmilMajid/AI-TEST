@@ -26,7 +26,7 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
   const tr = post.translations[requestedLang] || post.translations[DEFAULT_LOCALE] || post.translations.az
 
   return {
-    title: `${tr.title} | TESTAI.AZ Pedaqoji Bloq`,
+    title: `${tr.title} | ${requestedLang === "en" ? "TESTAI.AZ Educational Blog" : requestedLang === "ru" ? "TESTAI.AZ Образовательный блог" : requestedLang === "tr" ? "TESTAI.AZ Pedagojik Blog" : "TESTAI.AZ Pedaqoji Bloq"}`,
     description: tr.summary,
     keywords: post.tags,
     authors: [{ name: post.author.name }],

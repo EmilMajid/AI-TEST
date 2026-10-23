@@ -26,17 +26,22 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
   const requestedLang = (searchParams?.lang as Lang) || DEFAULT_LOCALE
   const tr = discovery.translations[requestedLang] || discovery.translations[DEFAULT_LOCALE] || discovery.translations.az
 
+  const suffixMap: Record<Lang, string> = {
+    en: "TESTAI.AZ Scientific Encyclopedia",
+    az: "TESTAI.AZ Elmi Ensiklopediya",
+    tr: "TESTAI.AZ Bilimsel Ansiklopedi",
+    ru: "TESTAI.AZ Научная энциклопедия",
+  }
+
   return {
-    title: `${tr.title} | TESTAI.AZ Elmi Ensiklopediya`,
+    title: `${tr.title} | ${suffixMap[requestedLang] || suffixMap.en}`,
     description: tr.summary,
     keywords: [
+      discovery.discoverer,
       discovery.curriculumSubject,
       discovery.curriculumTopic,
-      discovery.discoverer,
-      discovery.isNobel ? "Nobel Mükafatı" : "Elmi Kəşf",
-      "SİTG Standartı",
-      "Məktəb Kurikulumu",
-      "İnteraktiv Test",
+      requestedLang === "en" ? "Scientific Discovery" : "Elmi Kəşf",
+      requestedLang === "en" ? "Interactive Quiz" : "İnteraktiv Test",
     ],
     authors: [{ name: discovery.discoverer }],
     alternates: {
