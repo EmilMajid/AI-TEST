@@ -3,10 +3,23 @@
  * Validates and reconciles question answer keys against scientific explanations.
  */
 
+const STOP_WORDS = new Set([
+  "ve", "və", "ile", "ilə", "bir", "bu", "o", "ki", "hem", "həm", "həmçinin",
+  "daha", "cox", "çox", "az", "olan", "olur", "olurmu", "adlanir", "adlanır",
+  "ucun", "üçün", "gore", "görə", "aid", "kimi", "her", "hər", "eyni", "ferqli",
+  "fərqli", "butun", "bütün", "var", "yox", "yoxdur", "edir", "edilir", "olunan",
+  "sual", "bənd", "variant", "doğru", "düzgün", "yanlış", "səhv"
+])
+
 const SUFFIXES = [
-  "dir", "dür", "dır", "dur", "di", "dü", "dı", "du",
-  "yə", "ya", "ə", "a", "dən", "dan", "i", "ü", "ı", "u",
-  "ni", "nı", "nü", "nu", "ci", "cı", "cü", "cu"
+  "lar", "lər", "nın", "nin", "nun", "nün", "dan", "dən", "dək",
+  "da", "də", "ya", "yə", "a", "ə", "ın", "in", "un", "ün",
+  "nı", "ni", "nu", "nü", "ı", "i", "u", "ü",
+  "dır", "dir", "dur", "dür", "dıran", "dirən", "duran", "dürən",
+  "dı", "di", "du", "dü", "mış", "miş", "muş", "müş",
+  "acaq", "əcək", "malı", "məli", "ar", "ər", "ır", "ir", "ur", "ür",
+  "an", "ən", "ıcı", "ici", "ucu", "ücü",
+  "lıq", "lik", "luq", "lük", "çı", "çi", "çu", "çü", "cı", "ci", "cu", "cü"
 ]
 
 const MISTAKE_INDICATORS = [
@@ -14,45 +27,75 @@ const MISTAKE_INDICATORS = [
   "tapa bilər, lakin", "qarışdırıb", "yayğın səhv"
 ]
 
-function cleanOpt(opt: any): string {
+export function cleanOpt(opt: any): string {
   const s = String(opt ?? "").trim()
   return s.replace(/^[a-eA-E]\)\s*/, "").trim()
 }
 
-function normalizeMath(s: string): string {
+export function azStem(word: string): string {
+  let w = word.toLowerCase().trim()
+  w = w.replace(/^[(\"\'“‘]+|[)\"\'”’.,;:!?]+$/g, "")
+  if (w.length <= 3) return w
+
+  for (const sfx of SUFFIXES) {
+    if (w.length >= sfx.length + 3 && w.endsWith(sfx)) {
+      w = w.slice(0, -sfx.length)
+      break
+    }
+  }
+  return w
+}
+
+export function canonicalFormula(str: string): string {
+  let s = str.toLowerCase()
+  s = s.replace(/[\(\)]/g, "")
+  s = s.replace(/[·•\*\s]/g, "")
+  return s
+}
+
+export function normalizeMath(s: string): string {
   if (!s) return ""
   let t = s.trim().toLowerCase()
   t = t.replace(/^[a-e]\)\s*/, "").trim()
   t = t.replace(/−/g, "-").replace(/–/g, "-")
-  // Replace comma between digits: 0,5 -> 0.5
   t = t.replace(/(\d),(\d)/g, "$1.$2")
   return t
 }
 
-function extractSolutionText(expl: any): string {
+export function extractSolutionText(expl: any): string {
   if (!expl) return ""
+  let text = ""
   if (typeof expl === "string") {
     const trimmed = expl.trim()
     if (trimmed.startsWith("{") && trimmed.includes("correct")) {
       try {
         const parsed = JSON.parse(trimmed.replace(/'/g, '"'))
-        return parsed.correct || trimmed
+        text = parsed.correct || trimmed
       } catch {
-        return trimmed
+        text = trimmed
       }
+    } else {
+      text = trimmed
     }
-    return trimmed
+  } else if (typeof expl === "object") {
+    text = expl.correct || expl.doğru_cavab_səbəbi || ""
+  } else {
+    text = String(expl)
   }
-  if (typeof expl === "object") {
-    return expl.correct || expl.doğru_cavab_səbəbi || ""
+
+  // Strip distractor explanations / "Səhv variantlar" to keep pure solution
+  if (text.includes("Səhv variantlar") || text.includes("Səhv variantların")) {
+    const parts = text.split(/(?:Səhv variantlar|Səhv variantların təhlili):/i)
+    text = parts[0].trim()
   }
-  return String(expl)
+
+  return text
 }
 
 function filterNoiseAndMistakes(text: string): string {
   let t = text.replace(/\b\d+-c[iıüu]\s+sinif\b/gi, "")
   t = t.replace(/['"“]\d+\.\s+[^"'\n”]+['"”]/g, "")
-  
+
   const sentences = t.split(/[\.\!\?]\s+/)
   const valid = sentences.filter(s => {
     const low = s.toLowerCase()
@@ -61,67 +104,20 @@ function filterNoiseAndMistakes(text: string): string {
   return valid.join(". ")
 }
 
-function matchesSingleToken(tok: string, text: string): boolean {
+function matchesSingleNumberToken(tok: string, text: string): boolean {
   if (!tok || !text) return false
   const isNeg = tok.startsWith("-")
   const rawNum = tok.replace(/^-/, "")
-  
   const prefix = isNeg ? "(?:^|[^\\w\\d])\\-" : "(?:^|[^\\w\\d\\-])"
   const body = rawNum.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-  const suffixPattern = `(?:-(?:${SUFFIXES.join("|")})\\b)?`
-  const pattern = new RegExp(`${prefix}${body}${suffixPattern}(?:$|[^\\w\\d\\/])`)
+  const pattern = new RegExp(`${prefix}${body}(?:$|[^\\w\\d\\/])`)
   return pattern.test(text)
 }
 
-function matchesOptionInText(opt: string, text: string): boolean {
-  const optNorm = normalizeMath(opt)
-  const textNorm = normalizeMath(text)
-  
-  // 0. Key-value pairs e.g. "Cəmi: -7, Hasili: -10"
-  const pairMatches = Array.from(optNorm.matchAll(/([a-zA-ZçəıöğşüÇƏİÖĞŞÜ\s]+)[:=]\s*(\-?\d+(?:[\.,]\d+)?)/g))
-  if (pairMatches.length >= 2) {
-    const allFound = pairMatches.every(m => {
-      const valClean = m[2].replace(",", ".")
-      return matchesSingleToken(valClean, textNorm)
-    })
-    if (allFound) return true
-  }
-  
-  // 1. Multiple parts separated by ; , or ' və '
-  const parts = optNorm.split(/[,;]|\s+və\s+/).map(p => p.trim()).filter(Boolean)
-  if (parts.length >= 2) {
-    if (parts.every(p => textNorm.includes(p))) return true
-    return parts.every(p => matchesSingleToken(p, textNorm))
-  }
-  
-  // 2. Full exact substring match
-  if (optNorm.length >= 4 && textNorm.includes(optNorm)) return true
-  
-  // 3. Chemical / Science synonyms
-  const synonyms: Record<string, string[]> = {
-    "əhəng daşı": ["kalsium-karbonat", "caco3", "əhəngdaşı"],
-    "kalsium-karbonat": ["əhəng daşı", "caco3", "əhəngdaşı"],
-    "təbii qaz": ["metan", "ch4"],
-    "su": ["h2o"],
-    "karbon qazı": ["co2"],
-    "paslanma": ["dəmir hidroksidləri", "dəmir oksidləri", "paslanma"]
-  }
-  for (const [k, synList] of Object.entries(synonyms)) {
-    if (optNorm.includes(k) && synList.some(s => textNorm.includes(s))) {
-      return true
-    }
-  }
-
-  // 4. Substantive token stem overlap
-  const words = optNorm.split(/[\s,;]+/).filter(w => w.length >= 3)
-  if (words.length >= 2) {
-    const matchedCount = words.filter(w => textNorm.includes(w.slice(0, Math.max(3, w.length - 2)))).length
-    if (matchedCount >= Math.ceil(words.length * 0.7)) return true
-  }
-  
-  return matchesSingleToken(optNorm, textNorm)
-}
-
+/**
+ * Reconcile and validate answer key at runtime.
+ * Evaluates candidate options mathematically, syntactically, and scientifically against the explanation.
+ */
 export function reconcileAnswerKeyRuntime(
   cleanOptions: string[],
   rawExplanation: any,
@@ -129,77 +125,149 @@ export function reconcileAnswerKeyRuntime(
 ): number {
   if (!cleanOptions || cleanOptions.length === 0) return currentIdx
   if (currentIdx < 0 || currentIdx >= cleanOptions.length) currentIdx = 0
-  
+
   const sol = extractSolutionText(rawExplanation)
   if (!sol || sol.trim().length === 0) return currentIdx
-  
+
   const solLower = sol.toLowerCase()
-  
-  // 1. Explicit letter check
-  const rxLetter = /(?:dəqiq\s+nəticə|doğru\s+cavab|düzgün\s+cavab|cavab)\s*:?\s*([a-e])\b(?:\s+(?:bəndi|variant|bəndidir|variantıdır))?/i
+  const solCanon = canonicalFormula(sol)
+  const solFiltered = filterNoiseAndMistakes(sol) || sol
+  const solFilteredLower = solFiltered.toLowerCase()
+
+  // 1. Explicit letter assertion (e.g. "Doğru cavab: B" və ya "Düzgün cavab C variantıdır")
+  const rxLetter = /(?:dəqiq\s+nəticə|doğru\s+cavab|düzgün\s+cavab)\s*:?\s*([a-e])\b(?:\s+(?:bəndi|variant|bəndidir|variantıdır))?/i
   const letterMatch = sol.match(rxLetter)
+  let explicitLetterIdx = -1
   if (letterMatch && letterMatch[1]) {
     const targetIdx = letterMatch[1].toUpperCase().charCodeAt(0) - 65
     if (targetIdx >= 0 && targetIdx < cleanOptions.length) {
-      return targetIdx
+      explicitLetterIdx = targetIdx
     }
   }
-  
-  // 2. Clean noise and mistakes
-  const cleanSol = filterNoiseAndMistakes(sol) || sol
-  const cleanSolNorm = normalizeMath(cleanSol)
-  const tail = cleanSolNorm.length > 200 ? cleanSolNorm.slice(-200) : cleanSolNorm
-  const sentences = cleanSolNorm.split(/[\.\!\?]\s+/).map(s => s.trim()).filter(Boolean)
-  const lastSentence = sentences.length > 0 ? sentences[sentences.length - 1] : tail
-  
-  const currentOpt = cleanOptions[currentIdx] || ""
-  let currentDenounced = false
-  if (currentOpt) {
-    const cNorm = normalizeMath(currentOpt).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-    const rxDenounced = new RegExp(`${cNorm}[^.\\n]*?(?:səhv|yanlış|aldadıcı|diqqətsizlik)`, "i")
-    if (rxDenounced.test(solLower)) {
-      currentDenounced = true
+
+  // Count word frequencies across all options to identify distinctive discriminator terms
+  const wordFrequency = new Map<string, number>()
+  const optionWordLists = cleanOptions.map(opt => {
+    const clean = cleanOpt(opt).replace(/[()]/g, " ")
+    const words = clean.split(/[\s,;:]+/)
+      .map(w => azStem(w))
+      .filter(w => w.length >= 3 && !STOP_WORDS.has(w) && !/^\-?\d+$/.test(w))
+    const uniqueInOpt = new Set(words)
+    for (const w of uniqueInOpt) {
+      wordFrequency.set(w, (wordFrequency.get(w) || 0) + 1)
     }
-  }
-  
-  // 3. Last sentence matches (rightmost wins)
-  const lastMatches: { pos: number; idx: number }[] = []
-  cleanOptions.forEach((opt, idx) => {
-    if (matchesOptionInText(opt, lastSentence)) {
-      const tok = normalizeMath(opt).replace(/^-/, "")
-      const pos = lastSentence.lastIndexOf(tok)
-      lastMatches.push({ pos, idx })
-    }
+    return uniqueInOpt
   })
-  
-  if (lastMatches.length > 0) {
-    lastMatches.sort((a, b) => b.pos - a.pos)
-    const bestIdx = lastMatches[0].idx
-    if (bestIdx === currentIdx && !currentDenounced) {
+
+  // Evaluate candidate scores
+  const scores = cleanOptions.map((opt, idx) => {
+    let score = 0
+    const clean = cleanOpt(opt)
+    const cleanLower = clean.toLowerCase()
+    const isCurrent = idx === currentIdx
+
+    // Baseline loyalty to current index (do not switch unless challenger is overwhelmingly superior or current is contradicted)
+    if (isCurrent) {
+      score += 70
+    }
+
+    // Explicit letter confirmation
+    if (idx === explicitLetterIdx) {
+      score += 50
+    }
+
+    // A. Mathematical / Physical Formula Matching (e.g. F = m · g vs F = mg)
+    const optCanon = canonicalFormula(clean)
+    if (optCanon.includes("=") || /^[a-z][\+\-\*\/][a-z]$/i.test(optCanon)) {
+      if (solCanon.includes(optCanon)) {
+        score += 180
+      }
+    }
+
+    // B. Pure Numeric / Coordinate Matching (e.g. "-7", "14", "3.5")
+    const normNum = clean.replace(",", ".")
+    if (/^\-?\d+(?:[\.,]\d+)?$/.test(normNum)) {
+      const normText = solFilteredLower.replace(/(\d),(\d)/g, "$1.$2")
+      if (matchesSingleNumberToken(normNum, normText)) {
+        const pos = normText.lastIndexOf(normNum)
+        const relPos = normText.length > 0 ? (pos / normText.length) : 0
+        score += 80 + Math.round(relPos * 60)
+
+        // Boost if directly preceded by "cavab", "x =", etc.
+        const before = normText.slice(Math.max(0, pos - 15), pos)
+        if (/cavab[:\s]*$|[=:]\s*$/.test(before)) {
+          score += 45
+        }
+      }
+    }
+
+    // C. Exact substring match in solution
+    if (clean.length >= 4 && solFilteredLower.includes(cleanLower)) {
+      score += 90
+    }
+
+    // D. Substring match stripped of parenthetical text (e.g. "Arximed (itələmə) qüvvəsi" -> "Arximed qüvvəsi")
+    const noParen = clean.replace(/\(.*?\)/g, "").replace(/\s+/g, " ").trim().toLowerCase()
+    if (noParen.length >= 4 && solFilteredLower.includes(noParen)) {
+      score += 85
+    }
+
+    // E. Match inside parenthetical text (e.g. "itələmə" -> "itələyici")
+    const parenMatches = clean.match(/\((.*?)\)/g)
+    if (parenMatches) {
+      for (const pm of parenMatches) {
+        const inside = pm.replace(/[\(\)]/g, "").trim().toLowerCase()
+        if (inside.length >= 3) {
+          const stem = azStem(inside)
+          if (solFilteredLower.includes(stem)) {
+            score += 40
+          }
+        }
+      }
+    }
+
+    // F. Distinctive stem overlap
+    const wordsSet = optionWordLists[idx]
+    for (const stem of wordsSet) {
+      if (solFilteredLower.includes(stem)) {
+        const freq = wordFrequency.get(stem) || 1
+        if (freq === 1) {
+          // Highly distinctive: exclusive to this option!
+          score += 70
+        } else if (freq === 2 && cleanOptions.length > 2) {
+          score += 35
+        } else {
+          // Common term across multiple options
+          score += 8
+        }
+      }
+    }
+
+    // G. Denounced / Mistake Check: deduct score if option text is explicitly marked as wrong
+    const rxDenounced = new RegExp(`${cleanLower.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[^.\\n]*?(?:səhv|yanlış|aldadıcı|deyil)`, "i")
+    if (rxDenounced.test(solLower)) {
+      score -= 60
+    }
+
+    return { idx, opt, score }
+  })
+
+  const curItem = scores.find(s => s.idx === currentIdx)
+  const curScore = curItem ? curItem.score : 0
+
+  scores.sort((a, b) => b.score - a.score)
+
+  // Winner must have substantial confidence and strictly exceed next competitor
+  if (scores[0].score >= 40) {
+    if (scores[0].idx === currentIdx) {
       return currentIdx
     }
-    return bestIdx
-  }
-  
-  if (!currentDenounced && currentOpt && matchesOptionInText(currentOpt, tail)) {
-    return currentIdx
-  }
-  
-  // 4. Tail matches
-  const tailMatches: { pos: number; idx: number }[] = []
-  cleanOptions.forEach((opt, idx) => {
-    if (matchesOptionInText(opt, tail)) {
-      const tok = normalizeMath(opt).replace(/^-/, "")
-      const pos = tail.lastIndexOf(tok)
-      tailMatches.push({ pos, idx })
+    // If switching away from currentIdx, the challenger must strictly exceed currentScore by a clear margin
+    if (scores[0].score >= curScore + 25 && (scores.length === 1 || scores[0].score > scores[1].score)) {
+      return scores[0].idx
     }
-  })
-  
-  if (tailMatches.length > 0) {
-    tailMatches.sort((a, b) => b.pos - a.pos)
-    return tailMatches[0].idx
   }
-  
+
   return currentIdx
 }
 
@@ -218,24 +286,30 @@ export function sanitizeDistractorDiagnostics(
     // Never diagnose the correct answer as wrong
     if (kUpper === correctLetter) {
       if (rawVal.toLowerCase().startsWith("yanlış") || rawVal.toLowerCase().includes("səhvdir")) {
-        continue
+        cleaned[key] = `${key} bəndi dərslik qaydalarına və sualın şərtinə tam uyğun olan doğru cavabdır.`
+      } else {
+        cleaned[key] = rawVal
       }
-      cleaned[key] = rawVal
       continue
+    }
+
+    // If a distractor is wrongly marked as DÜZGÜNDÜR, fix it!
+    let distVal = rawVal
+    if (distVal.startsWith("DÜZGÜNDÜR")) {
+      distVal = `${key} variantı yanlışdır: dərslik qaydalarına və elmi qanunauyğunluqlara uyğun deyil.`
     }
 
     // Filter generic canned phrases that provide zero diagnostic value
     if (
-      rawVal.includes("tədris standartına uyğun deyil") ||
-      rawVal.includes("tarixi faktlarla uyğun gəlmir") ||
-      rawVal.includes("bioloji qanunauyğunluqlara və ya tərifə uyğun deyil")
+      distVal.includes("tədris standartına uyğun deyil") ||
+      distVal.includes("tarixi faktlarla uyğun gəlmir") ||
+      distVal.includes("bioloji qanunauyğunluqlara və ya tərifə uyğun deyil")
     ) {
       continue
     }
 
-    cleaned[key] = rawVal
+    cleaned[key] = distVal
   }
 
   return Object.keys(cleaned).length > 0 ? cleaned : undefined
 }
-

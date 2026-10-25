@@ -23905,15 +23905,15 @@
           "Ulduz simgəsi",
           "Sancaq (Kağız bəndləyən / Attachment) simgəsi"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "difficulty": "sadə",
         "bloom_taxonomy": "1-Bilmək (Xatırlamaq)",
         "explanation": "Sancaq (Paperclip) simgəsi kompüterin sərt diskindən istənilən faylı məktuba qoşmağa imkan verir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu alqoritmik addımı, aparat parametrini və ya proqram strukturunu oxşar İKT anlayışları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu alqoritmik addımı, aparat parametrini və ya proqram strukturunu oxşar İKT anlayışları ilə qarışdıra bilər.",
           "C": "C variantı yanlışdır: şagird bu alqoritmik addımı, aparat parametrini və ya proqram strukturunu oxşar İKT anlayışları ilə qarışdıra bilər.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "D": "D variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil."
         },
         "solution_steps": [
           "1. Sualın şərti və mövzusu ('25. Elektron poçtla məktublaşma') diqqətlə təhlil edilir.",
@@ -23944,9 +23944,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif İnformatika dərsliyindəki 'Elektron poçtla məktublaşma' mövzusunu (əsas alqoritm və anlayışları) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -354548,18 +354548,18 @@
           "F = m + g",
           "F = g / m"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.2 Ağırlıq qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
-          "Düzgün variantı müəyyənləşdirin: (A) F = m / g"
+          "Düzgün variantı müəyyənləşdirin: (A) F = m · g"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.2 Ağırlıq qüvvəsi",
         "passport_id": "g6-teb6-2-2-c9b731",
@@ -354580,9 +354580,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 5-ci sinif Təbiət 5 (hissə 1) dərsliyindəki 'Yediyimiz qidalar hansı prosesdən keçir?' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -356344,18 +356344,18 @@
           "Sürtünmə qüvvəsi",
           "Cazibə qüvvəsi"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
-          "Düzgün variantı müəyyənləşdirin: (C) Ağırlıq qüvvəsi"
+          "Düzgün variantı müəyyənləşdirin: (B) Arximed (itələmə) qüvvəsi"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6-4-1-67193a",
@@ -356376,9 +356376,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -356444,18 +356444,18 @@
           "Mayenin səthində üzər",
           "Mayedən bayıra tullanar"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "Cismin sıxlığı mayeninkindən böyük olduqda ağırlıq qüvvəsi Arximed qüvvəsindən çox olur və cisim batır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Cismin sıxlığı mayeninkindən böyük olduqda ağırlıq qüvvəsi Arximed qüvvəsindən çox olur və cisim batır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Mayenin səthində üzər"
+          "Düzgün variantı müəyyənləşdirin: (A) Mayenin dibinə batar"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6-4-3-f4cf92",
@@ -356476,9 +356476,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -356726,18 +356726,18 @@
           "Küləyin şarı yuxarı sovurmasına",
           "Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "Şarın daxilindəki qazın (isti hava və ya helium) sıxlığı ətraf havanın sıxlığından kiçik olduqda Arximed qüvvəsi şarı yuxarı qaldırır.",
         "distractor_diagnostics": {
           "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Şarın daxilindəki qazın (isti hava və ya helium) sıxlığı ətraf havanın sıxlığından kiçik olduqda Arximed qüvvəsi şarı yuxarı qaldırır.",
-          "Düzgün variantı müəyyənləşdirin: (B) Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
+          "Düzgün variantı müəyyənləşdirin: (D) Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6-4-8-5e953c",
@@ -356758,9 +356758,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -357272,18 +357272,18 @@
           "Sürtünmə qüvvələri",
           "Təcilverici qüvvələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Tarazlaşmayan qüvvələr"
+          "Düzgün variantı müəyyənləşdirin: (B) Tarazlaşan (kompensasiya olunan) qüvvələr"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
         "passport_id": "g6-teb6-5-1-4d1b29",
@@ -357304,9 +357304,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '5 Tarazlaşan və tarazlaşmayan qüvvələr' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -448345,18 +448345,18 @@
           "F = g / m",
           "F = m / g"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "D": "D variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.2 Ağırlıq qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
-          "Düzgün variantı müəyyənləşdirin: (A) F = m / g"
+          "Düzgün variantı müəyyənləşdirin: (A) F = m · g"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.2 Ağırlıq qüvvəsi",
         "passport_id": "g6-teb6-103-4-4458e7",
@@ -448377,9 +448377,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 5-ci sinif Təbiət 5 (hissə 1) dərsliyindəki 'Yediyimiz qidalar hansı prosesdən keçir?' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -448495,18 +448495,18 @@
           "Ağırlıq qüvvəsi",
           "Cazibə qüvvəsi"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
-          "Düzgün variantı müəyyənləşdirin: (C) Ağırlıq qüvvəsi"
+          "Düzgün variantı müəyyənləşdirin: (A) Arximed (itələmə) qüvvəsi"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6-103-7-aa7eb7",
@@ -448527,9 +448527,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -448595,18 +448595,18 @@
           "Sürtünmə qüvvələri",
           "Təcilverici qüvvələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Tarazlaşmayan qüvvələr"
+          "Düzgün variantı müəyyənləşdirin: (B) Tarazlaşan (kompensasiya olunan) qüvvələr"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
         "passport_id": "g6-teb6-103-9-852d7e",
@@ -448627,9 +448627,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -647340,18 +647340,18 @@
           "F = m + g",
           "F = g / m"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "B": "B variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.2 Ağırlıq qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
-          "Düzgün variantı müəyyənləşdirin: (A) F = m / g"
+          "Düzgün variantı müəyyənləşdirin: (A) F = m · g"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.2 Ağırlıq qüvvəsi",
         "passport_id": "g6-teb6p1-2-2-c76b5e",
@@ -647372,9 +647372,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 5-ci sinif Təbiət 5 (hissə 1) dərsliyindəki 'Yediyimiz qidalar hansı prosesdən keçir?' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "B",
-        "answer": "B",
-        "correct_index": 1,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -649136,18 +649136,18 @@
           "Sürtünmə qüvvəsi",
           "Cazibə qüvvəsi"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
-          "Düzgün variantı müəyyənləşdirin: (C) Ağırlıq qüvvəsi"
+          "Düzgün variantı müəyyənləşdirin: (B) Arximed (itələmə) qüvvəsi"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6p1-4-1-587aa6",
@@ -649168,9 +649168,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -649236,18 +649236,18 @@
           "Mayenin səthində üzər",
           "Mayedən bayıra tullanar"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "Cismin sıxlığı mayeninkindən böyük olduqda ağırlıq qüvvəsi Arximed qüvvəsindən çox olur və cisim batır.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Cismin sıxlığı mayeninkindən böyük olduqda ağırlıq qüvvəsi Arximed qüvvəsindən çox olur və cisim batır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Mayenin səthində üzər"
+          "Düzgün variantı müəyyənləşdirin: (A) Mayenin dibinə batar"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6p1-4-3-084d5e",
@@ -649268,9 +649268,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın mövzunu anlama və qavrama bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Anlama",
         "bloomLevel": "Anlama"
       },
@@ -649518,18 +649518,18 @@
           "Küləyin şarı yuxarı sovurmasına",
           "Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "Şarın daxilindəki qazın (isti hava və ya helium) sıxlığı ətraf havanın sıxlığından kiçik olduqda Arximed qüvvəsi şarı yuxarı qaldırır.",
         "distractor_diagnostics": {
           "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Şarın daxilindəki qazın (isti hava və ya helium) sıxlığı ətraf havanın sıxlığından kiçik olduqda Arximed qüvvəsi şarı yuxarı qaldırır.",
-          "Düzgün variantı müəyyənləşdirin: (B) Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
+          "Düzgün variantı müəyyənləşdirin: (D) Havanın göstərdiyi Arximed qaldırıcı qüvvəsinə"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6p1-4-8-9d38be",
@@ -649550,9 +649550,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '4 Arximed qüvvəsi' mövzusunu və nümunə situasiya tapşırıqlarını 15 dəqiqə işləyin."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "D",
+        "answer": "D",
+        "correct_index": 3,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -650064,18 +650064,18 @@
           "Sürtünmə qüvvələri",
           "Təcilverici qüvvələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Tarazlaşmayan qüvvələr"
+          "Düzgün variantı müəyyənləşdirin: (B) Tarazlaşan (kompensasiya olunan) qüvvələr"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
         "passport_id": "g6-teb6p1-5-1-9ffa10",
@@ -650096,9 +650096,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki '5 Tarazlaşan və tarazlaşmayan qüvvələr' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -694217,18 +694217,18 @@
           "F = g / m",
           "F = m / g"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "D": "D variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.2 Ağırlıq qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
-          "Düzgün variantı müəyyənləşdirin: (A) F = m / g"
+          "Düzgün variantı müəyyənləşdirin: (A) F = m · g"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.2 Ağırlıq qüvvəsi",
         "passport_id": "g6-teb6p1-53-4-e81c73",
@@ -694249,9 +694249,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 5-ci sinif Təbiət 5 (hissə 1) dərsliyindəki 'Yediyimiz qidalar hansı prosesdən keçir?' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -694367,18 +694367,18 @@
           "Ağırlıq qüvvəsi",
           "Cazibə qüvvəsi"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
-          "Düzgün variantı müəyyənləşdirin: (C) Ağırlıq qüvvəsi"
+          "Düzgün variantı müəyyənləşdirin: (A) Arximed (itələmə) qüvvəsi"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6p1-53-7-674732",
@@ -694399,9 +694399,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -694467,18 +694467,18 @@
           "Sürtünmə qüvvələri",
           "Təcilverici qüvvələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Tarazlaşmayan qüvvələr"
+          "Düzgün variantı müəyyənləşdirin: (B) Tarazlaşan (kompensasiya olunan) qüvvələr"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
         "passport_id": "g6-teb6p1-53-9-6c4e60",
@@ -694499,9 +694499,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -747445,18 +747445,18 @@
           "F = g / m",
           "F = m / g"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "D": "DÜZGÜNDÜR: D variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır."
+          "D": "D variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.2 Ağırlıq qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Ağırlıq qüvvəsi kütlə ilə sərbəstdüşmə təcilinin hasilinə bərabərdir: F = mg.",
-          "Düzgün variantı müəyyənləşdirin: (A) F = m / g"
+          "Düzgün variantı müəyyənləşdirin: (A) F = m · g"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.2 Ağırlıq qüvvəsi",
         "passport_id": "g6-teb6p2-51-4-658248",
@@ -747477,9 +747477,9 @@
           "remedial_duration_mins": 15,
           "parent_action_tip": "Övladınızın praktik tətbiq və məsələ həlli bacarığını möhkəmləndirmək üçün 5-ci sinif Təbiət 5 (hissə 1) dərsliyindəki 'Yediyimiz qidalar hansı prosesdən keçir?' təməl mövzusunu və 2-3 nümunə situasiya tapşırığını 15 dəqiqə işləyin."
         },
-        "correct_answer": "D",
-        "answer": "D",
-        "correct_index": 3,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Tətbiq",
         "bloomLevel": "Tətbiq"
       },
@@ -747595,18 +747595,18 @@
           "Ağırlıq qüvvəsi",
           "Cazibə qüvvəsi"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
         "distractor_diagnostics": {
-          "A": "A variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
-          "C": "DÜZGÜNDÜR: C variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
+          "C": "C variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.4 Arximed qüvvəsi",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Maye və qazların daxilinə salınmış cismə şaquli yuxarı yönəlmiş itələyici Arximed qüvvəsi təsir edir.",
-          "Düzgün variantı müəyyənləşdirin: (C) Ağırlıq qüvvəsi"
+          "Düzgün variantı müəyyənləşdirin: (A) Arximed (itələmə) qüvvəsi"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.4 Arximed qüvvəsi",
         "passport_id": "g6-teb6p2-51-7-fd98b1",
@@ -747627,9 +747627,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "C",
-        "answer": "C",
-        "correct_index": 2,
+        "correct_answer": "A",
+        "answer": "A",
+        "correct_index": 0,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
@@ -747695,18 +747695,18 @@
           "Sürtünmə qüvvələri",
           "Təcilverici qüvvələr"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
         "distractor_diagnostics": {
-          "A": "DÜZGÜNDÜR: A variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
-          "B": "B variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
+          "A": "A variantı yanlışdır: elmi qanunauyğunluqlara və dərslik tərifinə uyğun deyil.",
+          "B": "DÜZGÜNDÜR: B variantı sualın şərtinə və dərslik qaydalarına tam uyğun olan doğru cavabdır.",
           "C": "C variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər.",
           "D": "D variantı yanlışdır: şagird bu təbiət hadisəsini və ya canlı orqanizm xüsusiyyətini digər təbiət qanunları ilə qarışdıra bilər."
         },
         "solution_steps": [
           "Sualın tələbini və verilmiş təbiət hadisəsini/anlayışını təhlil edin: 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
           "Fiziki, kimyəvi və ya bioloji qanunauyğunluğu tətbiq edin: Əvəzləyicisi sıfır olan ($R=0$) qüvvələr bir-birini tarazlaşdıran qüvvələr adlanır.",
-          "Düzgün variantı müəyyənləşdirin: (C) Tarazlaşmayan qüvvələr"
+          "Düzgün variantı müəyyənləşdirin: (B) Tarazlaşan (kompensasiya olunan) qüvvələr"
         ],
         "sourceContext": "Təbiət 6-cı sinif dərslik proqramı — 1.5 Tarazlaşan və tarazlaşmayan qüvvələr",
         "passport_id": "g6-teb6p2-51-9-0af06d",
@@ -747727,9 +747727,9 @@
           "remedial_duration_mins": 10,
           "parent_action_tip": "Övladınızın təməl anlayış və faktik bilikləri möhkəmləndirmək üçün hazırda istifadə etdiyi 6-ci sinif Təbiət dərsliyindəki 'Xülasə' mövzusunu (əsas elmi anlayış və xüsusiyyətləri) 10 dəqiqə nəzərdən keçirməsi kifayətdir."
         },
-        "correct_answer": "A",
-        "answer": "A",
-        "correct_index": 0,
+        "correct_answer": "B",
+        "answer": "B",
+        "correct_index": 1,
         "bloom_level": "Bilik",
         "bloomLevel": "Bilik"
       },
