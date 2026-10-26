@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Add all 50 scientific discovery pages in all languages
+  // Add all 62 scientific discovery pages in all languages
   for (const discovery of ALL_DISCOVERIES) {
     for (const lang of languages) {
       const isDefault = lang === DEFAULT_LOCALE

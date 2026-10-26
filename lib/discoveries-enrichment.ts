@@ -698,7 +698,7 @@ export function getLocalizedNobelCitation(slug: string, originalCitation: string
 export function getLocalizedDiscoverer(discoverer: string, lang: Lang): string {
   if (!discoverer) return ""
   if (lang === "en") {
-    return discoverer.replace(/\s+və\s+/g, ", ").replace(/,\s*([^,]+)$/, " and $1").replace(/\bvə\b/g, "and")
+    return discoverer.replace(/\s+və\s+/g, " and ").replace(/\bvə\b/g, "and")
   }
   if (lang === "tr") {
     return discoverer.replace(/\s+və\s+/g, " ve ").replace(/\bvə\b/g, "ve")
