@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { getDiscoveryBySlug, getAllDiscoveries, getRelatedDiscoveries } from "@/lib/discoveries-data"
 import { DiscoveryViewer } from "@/components/discoveries/discovery-viewer"
 import { Lang } from "@/components/language-dropdown"
+import { getEnrichedDiscovery } from "@/lib/discoveries-enrichment"
 
 const VALID_LANGS: Lang[] = ["az", "en", "tr", "ru"]
 
@@ -27,37 +28,38 @@ export function generateMetadata({ params }: PageProps): Metadata {
     return { title: "Kəşf tapılmadı - TESTAI.AZ" }
   }
 
-  const discovery = getDiscoveryBySlug(params.slug)
-  if (!discovery) {
+  const rawDiscovery = getDiscoveryBySlug(params.slug)
+  if (!rawDiscovery) {
     return { title: "Kəşf tapılmadı - TESTAI.AZ" }
   }
 
-  const tr = discovery.translations[lang] || discovery.translations.az
+  const enriched = getEnrichedDiscovery(rawDiscovery, lang)
+  const tr = enriched.translations[lang] || enriched.translations.az
 
   return {
     title: `${tr.title} | TESTAI.AZ`,
     description: tr.summary,
     keywords: [
-      discovery.curriculumSubject,
-      discovery.curriculumTopic,
-      discovery.discoverer,
-      discovery.isNobel ? "Nobel Mükafatı" : "Elmi Kəşf",
+      enriched.curriculumSubject,
+      enriched.curriculumTopic,
+      enriched.discoverer,
+      enriched.isNobel ? "Nobel Mükafatı" : "Elmi Kəşf",
       "SİTG Standartı",
       "Məktəb Kurikulumu",
       "İnteraktiv Test",
     ],
-    authors: [{ name: discovery.discoverer }],
+    authors: [{ name: enriched.discoverer }],
     alternates: {
       canonical:
         lang === "en"
-          ? `https://www.testai.az/discoveries/${discovery.slug}`
-          : `https://www.testai.az/${lang}/discoveries/${discovery.slug}`,
+          ? `https://www.testai.az/discoveries/${rawDiscovery.slug}`
+          : `https://www.testai.az/${lang}/discoveries/${rawDiscovery.slug}`,
       languages: {
-        az: `https://www.testai.az/az/discoveries/${discovery.slug}`,
-        en: `https://www.testai.az/discoveries/${discovery.slug}`,
-        tr: `https://www.testai.az/tr/discoveries/${discovery.slug}`,
-        ru: `https://www.testai.az/ru/discoveries/${discovery.slug}`,
-        "x-default": `https://www.testai.az/discoveries/${discovery.slug}`,
+        az: `https://www.testai.az/az/discoveries/${rawDiscovery.slug}`,
+        en: `https://www.testai.az/discoveries/${rawDiscovery.slug}`,
+        tr: `https://www.testai.az/tr/discoveries/${rawDiscovery.slug}`,
+        ru: `https://www.testai.az/ru/discoveries/${rawDiscovery.slug}`,
+        "x-default": `https://www.testai.az/discoveries/${rawDiscovery.slug}`,
       },
     },
     openGraph: {
@@ -65,8 +67,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
       description: tr.summary,
       url:
         lang === "en"
-          ? `https://www.testai.az/discoveries/${discovery.slug}`
-          : `https://www.testai.az/${lang}/discoveries/${discovery.slug}`,
+          ? `https://www.testai.az/discoveries/${rawDiscovery.slug}`
+          : `https://www.testai.az/${lang}/discoveries/${rawDiscovery.slug}`,
       siteName: "TESTAI.AZ",
       type: "article",
     },
@@ -79,13 +81,28 @@ export default function MultilingualDiscoveryDetailPage({ params }: PageProps) {
     notFound()
   }
 
-  const discovery = getDiscoveryBySlug(params.slug)
-  if (!discovery) {
+  const rawDiscovery = getDiscoveryBySlug(params.slug)
+  if (!rawDiscovery) {
     notFound()
   }
 
+  const discovery = getEnrichedDiscovery(rawDiscovery, lang)
   const related = getRelatedDiscoveries(discovery.slug, 3)
   const tr = discovery.translations[lang] || discovery.translations.az
+
+  const quizTitles: Record<Lang, string> = {
+    az: `${tr.title} - Özünü Sına`,
+    en: `${tr.title} - Interactive Quiz`,
+    tr: `${tr.title} - Kendini Dene`,
+    ru: `${tr.title} - Интерактивный тест`,
+  }
+
+  const quizDescriptions: Record<Lang, string> = {
+    az: "SİTG standartı ilə hazırlanmış 3 suallıq qiymətləndirmə testi.",
+    en: "Pedagogically aligned 3-question formative assessment test.",
+    tr: "Pedagojik standartlara uygun 3 soruluk etkileşimli değerlendirme testi.",
+    ru: "Педагогический интерактивный тест из 3 вопросов по стандартам таксономии Блума.",
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -112,8 +129,8 @@ export default function MultilingualDiscoveryDetailPage({ params }: PageProps) {
       },
       {
         "@type": "Quiz",
-        name: `${tr.title} - Özünü Sına`,
-        description: `SİTG standartı ilə hazırlanmış 3 suallıq qiymətləndirmə testi.`,
+        name: quizTitles[lang] || quizTitles.en,
+        description: quizDescriptions[lang] || quizDescriptions.en,
         hasPart: discovery.quiz.map((q) => ({
           "@type": "Question",
           name: q.question,

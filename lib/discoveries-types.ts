@@ -10,7 +10,7 @@ export type DiscoveryCategory =
 
 export interface NobelPrizeInfo {
   year: number
-  category: "Fizika" | "Kimya" | "Fiziologiya və ya Tibb" | "Physics" | "Chemistry" | "Physiology or Medicine"
+  category: "Fizika" | "Kimya" | "Fiziologiya və ya Tibb" | "Physics" | "Chemistry" | "Physiology or Medicine" | string
   laureates: string[]
   citation: string
 }
@@ -26,7 +26,7 @@ export interface DiscoveryQuizQuestion {
   options: DiscoveryQuizOption[]
   correctOption: "A" | "B" | "C" | "D"
   explanation: string
-  bloomLevel: "Bilik" | "Anlama" | "Tətbiq" | "Təhlil"
+  bloomLevel: "Bilik" | "Anlama" | "Tətbiq" | "Təhlil" | string
 }
 
 export interface DiscoveryTranslation {
@@ -37,6 +37,14 @@ export interface DiscoveryTranslation {
   realWorldImpact: string
   curriculumConnection: string
   funFacts: string[]
+  quiz?: DiscoveryQuizQuestion[]
+  curriculumSubject?: string
+  curriculumGrade?: string
+  curriculumTopic?: string
+  discoverer?: string
+  readTime?: string
+  nobelCitation?: string
+  nobelCategory?: string
 }
 
 export interface ScientificDiscovery {

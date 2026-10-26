@@ -4,6 +4,7 @@ import { getDiscoveryBySlug, getAllDiscoveries, getRelatedDiscoveries } from "@/
 import { DiscoveryViewer } from "@/components/discoveries/discovery-viewer"
 import { Lang } from "@/components/language-dropdown"
 import { DEFAULT_LOCALE } from "@/lib/config"
+import { getEnrichedDiscovery } from "@/lib/discoveries-enrichment"
 
 interface PageProps {
   params: { slug: string }
@@ -24,7 +25,8 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
   }
 
   const requestedLang = (searchParams?.lang as Lang) || DEFAULT_LOCALE
-  const tr = discovery.translations[requestedLang] || discovery.translations[DEFAULT_LOCALE] || discovery.translations.az
+  const enriched = getEnrichedDiscovery(discovery, requestedLang)
+  const tr = enriched.translations[requestedLang] || enriched.translations[DEFAULT_LOCALE] || enriched.translations.az
 
   const suffixMap: Record<Lang, string> = {
     en: "TESTAI.AZ Scientific Encyclopedia",
@@ -37,13 +39,13 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
     title: `${tr.title} | ${suffixMap[requestedLang] || suffixMap.en}`,
     description: tr.summary,
     keywords: [
-      discovery.discoverer,
-      discovery.curriculumSubject,
-      discovery.curriculumTopic,
+      enriched.discoverer,
+      enriched.curriculumSubject,
+      enriched.curriculumTopic,
       requestedLang === "en" ? "Scientific Discovery" : "Elmi Kəşf",
       requestedLang === "en" ? "Interactive Quiz" : "İnteraktiv Test",
     ],
-    authors: [{ name: discovery.discoverer }],
+    authors: [{ name: enriched.discoverer }],
     alternates: {
       canonical: `https://www.testai.az/discoveries/${discovery.slug}`,
       languages: {
@@ -65,15 +67,30 @@ export function generateMetadata({ params, searchParams }: PageProps): Metadata 
 }
 
 export default function DiscoveryDetailPage({ params, searchParams }: PageProps) {
-  const discovery = getDiscoveryBySlug(params.slug)
-  if (!discovery) {
+  const rawDiscovery = getDiscoveryBySlug(params.slug)
+  if (!rawDiscovery) {
     notFound()
   }
 
   const lang = (searchParams?.lang as Lang) || DEFAULT_LOCALE
+  const discovery = getEnrichedDiscovery(rawDiscovery, lang)
   const related = getRelatedDiscoveries(discovery.slug, 3)
 
   const tr = discovery.translations[lang] || discovery.translations[DEFAULT_LOCALE] || discovery.translations.az
+
+  const quizTitles: Record<Lang, string> = {
+    az: `${tr.title} - Özünü Sına`,
+    en: `${tr.title} - Interactive Quiz`,
+    tr: `${tr.title} - Kendini Dene`,
+    ru: `${tr.title} - Интерактивный тест`,
+  }
+
+  const quizDescriptions: Record<Lang, string> = {
+    az: "SİTG standartı ilə hazırlanmış 3 suallıq qiymətləndirmə testi.",
+    en: "Pedagogically aligned 3-question formative assessment test.",
+    tr: "Pedagojik standartlara uygun 3 soruluk etkileşimli değerlendirme testi.",
+    ru: "Педагогический интерактивный тест из 3 вопросов по стандартам таксономии Блума.",
+  }
 
   // Schema.org Article & Quiz structured data
   const jsonLd = {
@@ -101,8 +118,8 @@ export default function DiscoveryDetailPage({ params, searchParams }: PageProps)
       },
       {
         "@type": "Quiz",
-        name: `${tr.title} - Özünü Sına`,
-        description: `SİTG standartı ilə hazırlanmış 3 suallıq qiymətləndirmə testi.`,
+        name: quizTitles[lang] || quizTitles.en,
+        description: quizDescriptions[lang] || quizDescriptions.en,
         hasPart: discovery.quiz.map((q) => ({
           "@type": "Question",
           name: q.question,

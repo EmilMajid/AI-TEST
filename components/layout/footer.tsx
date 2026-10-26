@@ -286,11 +286,6 @@ export function Footer({ lang = DEFAULT_LOCALE }: FooterProps) {
                   {t.analyticsPanel}
                 </Link>
               </li>
-              <li>
-                <Link href="/login" className="hover:text-white transition-colors text-slate-400">
-                  {t.teacherPanel}
-                </Link>
-              </li>
             </ul>
           </div>
 

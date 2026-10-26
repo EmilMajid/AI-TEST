@@ -8,6 +8,7 @@ import { ScientificDiscovery, DiscoveryCategory } from "@/lib/discoveries-types"
 import { LanguageDropdown, Lang } from "@/components/language-dropdown"
 import { DEFAULT_LOCALE } from "@/lib/config"
 import { Footer } from "@/components/layout/footer"
+import { getLocalizedGrade, getLocalizedReadTime } from "@/lib/discoveries-enrichment"
 
 interface DiscoveriesCatalogProps {
   discoveries: ScientificDiscovery[]
@@ -40,6 +41,9 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
         curriculumBadge: "Dərslik Mövzusu",
         resultsCount: "kəşf tapıldı",
         noResults: "Axtarışınıza uyğun elmi kəşf tapılmadı.",
+        noResultsSub: "Axtarış sözünü dəyişdirin və ya filtrləri sıfırlayın.",
+        resetFilters: "Bütün Kəşfləri Göstər",
+        readMoreLabel: "Ətraflı",
         homeLink: "Ana Səhifə",
         discoveriesLink: "Elmi Kəşflər",
       },
@@ -61,6 +65,9 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
         curriculumBadge: "Curriculum Topic",
         resultsCount: "discoveries found",
         noResults: "No scientific discoveries match your criteria.",
+        noResultsSub: "Change search keywords or reset active filters.",
+        resetFilters: "Show All Discoveries",
+        readMoreLabel: "Explore",
         homeLink: "Home",
         discoveriesLink: "Discoveries",
       },
@@ -82,6 +89,9 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
         curriculumBadge: "Müfredat Konusu",
         resultsCount: "keşif bulundu",
         noResults: "Aramanıza uygun bilimsel keşif bulunamadı.",
+        noResultsSub: "Arama terimini değiştirin veya filtreleri sıfırlayın.",
+        resetFilters: "Tüm Keşifleri Göster",
+        readMoreLabel: "İncele",
         homeLink: "Ana Sayfa",
         discoveriesLink: "Keşifler",
       },
@@ -104,6 +114,9 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
         curriculumBadge: "Тема программы",
         resultsCount: "открытий найдено",
         noResults: "По вашему запросу открытий не найдено.",
+        noResultsSub: "Измените поисковый запрос или сбросьте фильтры.",
+        resetFilters: "Показать все открытия",
+        readMoreLabel: "Подробнее",
         homeLink: "Главная",
         discoveriesLink: "Открытия",
       },
@@ -283,7 +296,7 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
           <div className="text-center py-16 bg-white rounded-2xl border border-slate-200 p-8">
             <BookOpen className="w-12 h-12 text-slate-400 mx-auto mb-3" />
             <h3 className="text-lg font-bold text-slate-800 mb-1">{t.noResults}</h3>
-            <p className="text-sm text-slate-500 mb-4">Axtarış sözünü dəyişdirin və ya filtrləri sıfırlayın.</p>
+            <p className="text-sm text-slate-500 mb-4">{t.noResultsSub}</p>
             <button
               onClick={() => {
                 setSearchQuery("")
@@ -292,7 +305,7 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
               }}
               className="px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-semibold hover:bg-blue-700 transition-colors"
             >
-              Bütün Kəşfləri Göstər
+              {t.resetFilters}
             </button>
           </div>
         ) : (
@@ -324,7 +337,7 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
                       )}
 
                       <span className="text-2xs font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200">
-                        {discovery.curriculumGrade}
+                        {getLocalizedGrade(discovery.curriculumGrade, lang)}
                       </span>
                     </div>
 
@@ -345,7 +358,7 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
                       </span>
                       <span className="flex items-center gap-1 text-slate-500">
                         <Clock className="w-3 h-3" />
-                        {discovery.readTime}
+                        {getLocalizedReadTime(discovery.readTime, lang)}
                       </span>
                     </div>
 
@@ -359,7 +372,7 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
                         href={itemHref}
                         className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-700 group-hover:translate-x-0.5 transition-all"
                       >
-                        <span>Ətraflı</span>
+                        <span>{t.readMoreLabel}</span>
                         <ChevronRight className="w-3.5 h-3.5" />
                       </Link>
                     </div>
