@@ -319,9 +319,11 @@ export function DiscoveryViewer({
                 <p className="text-xs text-amber-900 font-medium">
                   <span className="font-bold">{t.laureatesLabel}</span> {enriched.nobelPrize.laureates.join(", ")}
                 </p>
-                <p className="text-xs text-amber-800 italic leading-relaxed pt-1 border-t border-amber-200/60">
-                  &ldquo;{enriched.nobelPrize.citation}&rdquo;
-                </p>
+                {enriched.nobelPrize.citation ? (
+                  <p className="text-xs text-amber-800 italic leading-relaxed pt-1 border-t border-amber-200/60">
+                    &ldquo;{enriched.nobelPrize.citation}&rdquo;
+                  </p>
+                ) : null}
               </div>
             </div>
           </div>

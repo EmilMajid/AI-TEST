@@ -25,7 +25,10 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
     const dict = {
       az: {
         pageTitle: "Elmi Kəşflər və İxtiralar Ensiklopediyası",
-        pageSubtitle: "Bəşəriyyəti dəyişən 50 böyük elmi kəşf, 2020-2024 Nobel Mükafatları və məktəb kurikulumu ilə əlaqəli interaktiv sınaqlar.",
+        pageSubtitle: "Bəşəriyyəti dəyişən 62 böyük elmi kəşf, 2020-2024 Nobel Mükafatları və məktəb kurikulumu ilə əlaqəli interaktiv sınaqlar.",
+        heroBadge: "62 Fundamental Elmi Kəşf & Nobel İnqilabı",
+        blogLink: "Bloq",
+        openTestsLink: "Açıq Testlər",
         searchPlaceholder: "Kəşf, alim, Nobel və ya kurikulum mövzusu axtarın...",
         allCategories: "Bütün Kəşflər",
         nobelCategory: "🏆 Nobel Mükafatları",
@@ -49,7 +52,10 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
       },
       en: {
         pageTitle: "Scientific Discoveries & Inventions Encyclopedia",
-        pageSubtitle: "50 monumental discoveries that shaped civilization, featuring recent Nobel Prizes (2020-2024) and curriculum-aligned interactive quizzes.",
+        pageSubtitle: "62 monumental discoveries that shaped civilization, featuring recent Nobel Prizes (2020-2024) and curriculum-aligned interactive quizzes.",
+        heroBadge: "62 Foundational Scientific Discoveries & Nobel Breakthroughs",
+        blogLink: "Blog",
+        openTestsLink: "Open Diagnostic Tests",
         searchPlaceholder: "Search discoveries, laureates, Nobel or curriculum topics...",
         allCategories: "All Discoveries",
         nobelCategory: "🏆 Nobel Prizes",
@@ -73,7 +79,10 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
       },
       tr: {
         pageTitle: "Bilimsel Keşifler ve İcatlar Ansiklopedisi",
-        pageSubtitle: "Uygarlığı değiştiren 50 anıtsal keşif, 2020-2024 Nobel Ödülleri ve müfredatla bağlantılı etkileşimli testler.",
+        pageSubtitle: "Uygarlığı değiştiren 62 anıtsal keşif, 2020-2024 Nobel Ödülleri ve müfredatla bağlantılı etkileşimli testler.",
+        heroBadge: "62 Temel Bilimsel Keşif & Nobel Devrimi",
+        blogLink: "Blog",
+        openTestsLink: "Açık Sınavlar",
         searchPlaceholder: "Keşif, bilim insanı, Nobel veya müfredat konusu ara...",
         allCategories: "Tüm Keşifler",
         nobelCategory: "🏆 Nobel Ödülleri",
@@ -98,7 +107,10 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
       ru: {
         title: "Энциклопедия научных открытий и изобретений",
         pageTitle: "Энциклопедия научных открытий и изобретений",
-        pageSubtitle: "50 величайших открытий человечества, Нобелевские премии 2020-2024 годов и интерактивные тесты по школьной программе.",
+        pageSubtitle: "62 величайших открытия человечества, Нобелевские премии 2020-2024 годов и интерактивные тесты по школьной программе.",
+        heroBadge: "62 фундаментальных научных открытия и прорыва",
+        blogLink: "Блог",
+        openTestsLink: "Открытые тесты",
         searchPlaceholder: "Поиск открытий, лауреатов, тем школьной программы...",
         allCategories: "Все открытия",
         nobelCategory: "🏆 Нобелевские премии",
@@ -199,31 +211,32 @@ export function DiscoveriesCatalog({ discoveries, initialLang = DEFAULT_LOCALE }
               href={lang === DEFAULT_LOCALE ? "/blog" : `/${lang}/blog`}
               className="text-xs font-medium text-slate-600 hover:text-blue-600 transition-colors hidden sm:inline"
             >
-              Bloq
+              {t.blogLink}
             </Link>
             <Link
               href={lang === DEFAULT_LOCALE ? "/open-tests" : `/${lang}/open-tests`}
               className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition-all shadow-xs"
             >
-              Açıq Testlər
+              {t.openTestsLink}
             </Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <div className="bg-linear-to-b from-blue-900 via-indigo-900 to-slate-900 text-white py-12 sm:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold mb-4 border border-blue-400/30">
-            <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-            <span>50 Fundamental Elmi Kəşf &amp; Nobel İnqilabı</span>
+      <div className="relative bg-linear-to-b from-slate-950 via-slate-900 to-indigo-950 text-white py-14 sm:py-20 overflow-hidden border-b border-indigo-900/40">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-600/15 via-transparent to-transparent pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 text-blue-300 text-xs font-bold mb-5 border border-blue-400/30 shadow-xs backdrop-blur-xs">
+            <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
+            <span>{t.heroBadge}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 max-w-4xl mx-auto">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4 max-w-4xl mx-auto text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
             {t.pageTitle}
           </h1>
 
-          <p className="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed mb-8">
+          <p className="text-slate-200 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed mb-8 font-normal drop-shadow-xs">
             {t.pageSubtitle}
           </p>
 
