@@ -1,6 +1,4 @@
-// AUTO-GENERATED & HIGH-FIDELITY DISCOVERY ENRICHMENT ENGINE
-// Provides multi-lingual quiz translations, comprehensive academic paragraphs, and metadata localization
-import { ScientificDiscovery, DiscoveryQuizQuestion, DiscoveryTranslation } from "@/lib/discoveries-types"
+import { ScientificDiscovery, DiscoveryQuizQuestion, DiscoveryQuizOption, DiscoveryTranslation } from "@/lib/discoveries-types"
 import { Lang } from "@/components/language-dropdown"
 
 export const GRADE_LOCALIZATION: Record<string, Record<Lang, string>> = {
@@ -546,7 +544,7 @@ export function getEnrichedDiscovery(discovery: ScientificDiscovery, lang: Lang)
 
   // Quiz Localization: If lang is en, tr, or ru, translate questions, options, and explanations
   if (lang !== "az" && cloned.quiz && cloned.quiz.length > 0) {
-    cloned.quiz = cloned.quiz.map((q, idx) => {
+    cloned.quiz = cloned.quiz.map((q, idx): DiscoveryQuizQuestion => {
       const qBloom = getLocalizedBloom(q.bloomLevel, lang)
       
       if (lang === "en") {
@@ -623,29 +621,29 @@ function getEnglishQuestion(slug: string, idx: number, original: string, title: 
   return `What is the primary practical and technological impact of ${title} in modern science?`
 }
 
-function getEnglishOptions(slug: string, idx: number, originalOpts: { id: "A"|"B"|"C"|"D", text: string }[], correct: string) {
+function getEnglishOptions(slug: string, idx: number, originalOpts: DiscoveryQuizOption[], correct: "A" | "B" | "C" | "D"): DiscoveryQuizOption[] {
   if (slug.includes("penicillin")) {
     if (idx === 0) return [
-      { id: "A", text: "Inhibiting bacterial cell wall peptidoglycan cross-linking, causing osmotic cell lysis" },
-      { id: "B", text: "Freezing intracellular cytoplasm fluids within minutes" },
-      { id: "C", text: "Cleaving bacterial locomotive flagella" },
-      { id: "D", text: "Transforming bacteria into benign airborne viruses" }
+      { id: "A" as const, text: "Inhibiting bacterial cell wall peptidoglycan cross-linking, causing osmotic cell lysis" },
+      { id: "B" as const, text: "Freezing intracellular cytoplasm fluids within minutes" },
+      { id: "C" as const, text: "Cleaving bacterial locomotive flagella" },
+      { id: "D" as const, text: "Transforming bacteria into benign airborne viruses" }
     ]
     if (idx === 1) return [
-      { id: "A", text: "Because viruses lack a cellular structure, ribosomes, and a peptidoglycan cell wall" },
-      { id: "B", text: "Because viruses metabolize and consume antibiotics as nutrients" },
-      { id: "C", text: "Because antibiotics only function in cold environmental temperatures" },
-      { id: "D", text: "Because viruses exist exclusively inside plant tissues" }
+      { id: "A" as const, text: "Because viruses lack a cellular structure, ribosomes, and a peptidoglycan cell wall" },
+      { id: "B" as const, text: "Because viruses metabolize and consume antibiotics as nutrients" },
+      { id: "C" as const, text: "Because antibiotics only function in cold environmental temperatures" },
+      { id: "D" as const, text: "Because viruses exist exclusively inside plant tissues" }
     ]
     if (idx === 2) return [
-      { id: "A", text: "Proliferation of drug-resistant (superbug) bacterial strains through selective evolutionary pressure" },
-      { id: "B", text: "Instantaneous doubling of human body mass" },
-      { id: "C", text: "Complete loss of erythrocytes and hemoglobin in blood" },
-      { id: "D", text: "Transformation of mammalian cells into plant tissue" }
+      { id: "A" as const, text: "Proliferation of drug-resistant (superbug) bacterial strains through selective evolutionary pressure" },
+      { id: "B" as const, text: "Instantaneous doubling of human body mass" },
+      { id: "C" as const, text: "Complete loss of erythrocytes and hemoglobin in blood" },
+      { id: "D" as const, text: "Transformation of mammalian cells into plant tissue" }
     ]
   }
 
-  return originalOpts.map((opt) => {
+  return originalOpts.map((opt): DiscoveryQuizOption => {
     const isCorrect = opt.id === correct
     if (isCorrect) {
       return { id: opt.id, text: `Correctly reflects the verified empirical mechanism confirmed by international scientific consensus` }
@@ -680,29 +678,28 @@ function getTurkishQuestion(slug: string, idx: number, original: string, title: 
   return `Bu keşfin modern bilim, tıp ve mühendislik alanındaki en belirgin katkısı nedir?`
 }
 
-function getTurkishOptions(slug: string, idx: number, originalOpts: { id: "A"|"B"|"C"|"D", text: string }[], correct: string) {
+function getTurkishOptions(slug: string, idx: number, originalOpts: DiscoveryQuizOption[], correct: "A" | "B" | "C" | "D"): DiscoveryQuizOption[] {
   if (slug.includes("penicillin")) {
-    if (idx === 0) return [
-      { id: "A", text: "Bakteri hücre duvarındaki peptidoglikan sentezini engelleyerek osmotik parçalanmaya yol açar" },
-      { id: "B", text: "Bakteri kamçısını mekanik olarak keser" },
-      { id: "C", text: "Hücre içindeki sıvıyı anında dondurur" },
-      { id: "D", text: "Bakterileri zararsız virüslere dönüştürür" }
-    ]
-    if (idx === 1) return [
-      { id: "A", text: "Çünkü virüslerin hücresel yapısı, peptidoglikan duvarı ve ribozomları bulunmaz" },
-      { id: "B", text: "Çünkü virüsler antibiyotikleri besin olarak tüketir" },
-      { id: "C", text: "Çünkü antibiyotikler yalnızca bitkilerde etkilidir" },
-      { id: "D", text: "Çünkü virüsler kış aylarında uykudadır" }
-    ]
-    if (idx === 2) return [
-      { id: "A", text: "Antibiyotiklere dirençli (süper mikrop) güçlü bakteri suşlarının türemesine" },
-      { id: "B", text: "Vücut ağırlığının anında iki katına çıkmasına" },
-      { id: "C", text: "Kandaki alyuvarların tamamen yok olmasına" },
-      { id: "D", text: "Hücrelerin bitki dokusuna dönüşmesine" }
+    return [
+      idx === 0 ? { id: "A" as const, text: "Bakteri hücre duvarındaki peptidoglikan sentezini engelleyerek osmotik parçalanmaya yol açar" } :
+      idx === 1 ? { id: "A" as const, text: "Çünkü virüslerin hücresel yapısı, peptidoglikan duvarı ve ribozomları bulunmaz" } :
+      { id: "A" as const, text: "Antibiyotiklere dirençli (süper mikrop) güçlü bakteri suşlarının türemesine" },
+
+      idx === 0 ? { id: "B" as const, text: "Bakteri kamçısını mekanik olarak keser" } :
+      idx === 1 ? { id: "B" as const, text: "Çünkü virüsler antibiyotikleri besin olarak tüketir" } :
+      { id: "B" as const, text: "Vücut ağırlığının anında iki katına çıkmasına" },
+
+      idx === 0 ? { id: "C" as const, text: "Hücre içindeki sıvıyı anında dondurur" } :
+      idx === 1 ? { id: "C" as const, text: "Çünkü antibiyotikler yalnızca bitkilerde etkilidir" } :
+      { id: "C" as const, text: "Kandaki alyuvarların tamamen yok olmasına" },
+
+      idx === 0 ? { id: "D" as const, text: "Bakterileri zararsız virüslere dönüştürür" } :
+      idx === 1 ? { id: "D" as const, text: "Çünkü virüsler kış aylarında uykudadır" } :
+      { id: "D" as const, text: "Hücrelerin bitki dokusuna dönüşmesine" }
     ]
   }
 
-  return originalOpts.map((opt) => {
+  return originalOpts.map((opt): DiscoveryQuizOption => {
     const isCorrect = opt.id === correct
     if (isCorrect) {
       return { id: opt.id, text: "Uluslararası bilimsel deneylerle kanıtlanmış doğru mekanizmayı temsil eder" }
@@ -737,29 +734,28 @@ function getRussianQuestion(slug: string, idx: number, original: string, title: 
   return `Каково главное практическое и прикладное значение данного открытия в современной науке?`
 }
 
-function getRussianOptions(slug: string, idx: number, originalOpts: { id: "A"|"B"|"C"|"D", text: string }[], correct: string) {
+function getRussianOptions(slug: string, idx: number, originalOpts: DiscoveryQuizOption[], correct: "A" | "B" | "C" | "D"): DiscoveryQuizOption[] {
   if (slug.includes("penicillin")) {
-    if (idx === 0) return [
-      { id: "A", text: "Блокирует синтез пептидогликана (муреина) клеточной стенки бактерий, вызывая осмотический лизис" },
-      { id: "B", text: "Механически отсекает бактериальные жгутики" },
-      { id: "C", text: "Мгновенно замораживает цитоплазму клетки" },
-      { id: "D", text: "Превращает бактерии в безвредные вирусы" }
-    ]
-    if (idx === 1) return [
-      { id: "A", text: "Вирусы не имеют клеточного строения, муреиновой стенки и собственных рибосом" },
-      { id: "B", text: "Вирусы поглощают антибиотики в качестве источника питания" },
-      { id: "C", text: "Антибиотики действуют исключительно на ткани растений" },
-      { id: "D", text: "Вирусы активизируются исключительно в теплое время года" }
-    ]
-    if (idx === 2) return [
-      { id: "A", text: "Формированию сверхустойчивых (резистентных) бактериальных штаммов" },
-      { id: "B", text: "Внезапному удвоению массы тела пациента" },
-      { id: "C", text: "Полному исчезновению эритроцитов в плазме крови" },
-      { id: "D", text: "Трансформации клеток человека в растительные структуры" }
+    return [
+      idx === 0 ? { id: "A" as const, text: "Блокирует синтез пептидогликана (муреина) клеточной стенки бактерий, вызывая осмотический лизис" } :
+      idx === 1 ? { id: "A" as const, text: "Вирусы не имеют клеточного строения, муреиновой стенки и собственных рибосом" } :
+      { id: "A" as const, text: "Формированию сверхустойчивых (резистентных) бактериальных штаммов" },
+
+      idx === 0 ? { id: "B" as const, text: "Механически отсекает бактериальные жгутики" } :
+      idx === 1 ? { id: "B" as const, text: "Вирусы поглощают антибиотики в качестве источника питания" } :
+      { id: "B" as const, text: "Внезапному удвоению массы тела пациента" },
+
+      idx === 0 ? { id: "C" as const, text: "Мгновенно замораживает цитоплазму клетки" } :
+      idx === 1 ? { id: "C" as const, text: "Антибиотики действуют исключительно на ткани растений" } :
+      { id: "C" as const, text: "Полному исчезновению эритроцитов в плазме крови" },
+
+      idx === 0 ? { id: "D" as const, text: "Превращает бактерии в безвредные вирусы" } :
+      idx === 1 ? { id: "D" as const, text: "Вирусы активизируются исключительно в теплое время года" } :
+      { id: "D" as const, text: "Трансформации клеток человека в растительные структуры" }
     ]
   }
 
-  return originalOpts.map((opt) => {
+  return originalOpts.map((opt): DiscoveryQuizOption => {
     const isCorrect = opt.id === correct
     if (isCorrect) {
       return { id: opt.id, text: "Научно доказанный правильный ответ, подтвержденный строгими экспериментальными данными" }
